@@ -1,101 +1,115 @@
-import Image from "next/image";
+import Link from 'next/link';
+import { getAllShows } from '@/lib/data';
+import LeaderboardClient from './LeaderboardClient';
 
-export default function Home() {
+export const dynamic = 'force-static';
+
+export default async function HomePage() {
+  const shows = await getAllShows();
+
+  const totalEpisodes = shows.reduce((s, show) => s + show.total_episodes, 0);
+  const totalJokes = shows.reduce((s, show) => s + show.total_jokes_analyzed, 0);
+  const totalSeasons = shows.reduce((s, show) => s + show.total_seasons, 0);
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      {/* Hero */}
+      <section className="border-b border-brand-border bg-brand-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-4">
+            Comedy Analytics
+          </p>
+          <h1 className="text-3xl sm:text-5xl font-medium text-brand-text-primary max-w-2xl leading-tight">
+            The definitive science of what&apos;s funny.
+          </h1>
+          <p className="mt-4 text-brand-text-secondary text-base sm:text-lg max-w-xl">
+            We analyzed{' '}
+            <span className="font-mono text-brand-gold">{totalEpisodes.toLocaleString()}</span>{' '}
+            episodes,{' '}
+            <span className="font-mono text-brand-gold">{totalJokes.toLocaleString()}</span>{' '}
+            jokes, and{' '}
+            <span className="font-mono text-brand-gold">{totalSeasons}</span>{' '}
+            seasons so you don&apos;t have to argue blindly.
+          </p>
+          <div className="mt-8 flex gap-3">
+            <Link
+              href="/shows"
+              className="bg-brand-gold text-black text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-brand-gold-dim transition-colors"
+            >
+              Explore all shows →
+            </Link>
+            <Link
+              href="/methodology"
+              className="border border-brand-border text-brand-text-secondary text-sm px-5 py-2.5 rounded-lg hover:border-brand-text-muted transition-colors"
+            >
+              How we score
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Leaderboard */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+        <div className="mb-6">
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Rankings</p>
+          <h2 className="text-xl font-medium text-brand-text-primary">Top Shows</h2>
+        </div>
+        <LeaderboardClient shows={shows} />
+      </section>
+
+      {/* Latest analysis callout */}
+      {shows[0] && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-12">
+          <div className="bg-brand-gold/5 border border-brand-gold/20 rounded-xl p-6">
+            <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Latest Analysis</p>
+            <h3 className="text-lg font-medium text-brand-text-primary mb-1">{shows[0].name}</h3>
+            <p className="text-sm text-brand-text-secondary mb-4">{shows[0].description}</p>
+            <Link href={`/shows/${shows[0].slug}`} className="text-sm text-brand-gold hover:underline">
+              View full breakdown →
+            </Link>
+          </div>
+        </section>
+      )}
+
+      {/* Methodology teaser */}
+      <section className="border-t border-brand-border bg-brand-surface">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">How it works</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {[
+              {
+                abbr: 'JPM',
+                label: 'Jokes Per Minute',
+                desc: 'Raw comedic density — how many distinct jokes land per minute of runtime. Weighted by episode length.',
+                color: '#E8B931',
+              },
+              {
+                abbr: 'Craft',
+                label: 'Craft Score',
+                desc: 'Five-dimension rubric: setup quality, misdirection, subversion, character fit, and timing. Scored 1–10.',
+                color: '#378ADD',
+              },
+              {
+                abbr: 'Impact',
+                label: 'Impact Score',
+                desc: 'Audience resonance — quotability, rewatch value, cultural staying power, and callback payoff.',
+                color: '#1D9E75',
+              },
+            ].map(p => (
+              <div key={p.abbr} className="bg-brand-card border border-brand-border rounded-xl p-5">
+                <p className="font-mono text-2xl mb-2" style={{ color: p.color }}>{p.abbr}</p>
+                <p className="text-sm font-medium text-brand-text-primary mb-2">{p.label}</p>
+                <p className="text-xs text-brand-text-secondary leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6">
+            <Link href="/methodology" className="text-sm text-brand-text-muted hover:text-brand-gold transition-colors">
+              Full methodology →
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
