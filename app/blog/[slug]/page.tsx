@@ -299,26 +299,26 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             );
           }
 
-          // Handle bold markers
-          const formatted = trimmed.split(/(\*\*[^*]+\*\*)/).map((part, j) => {
-            if (part.startsWith('**') && part.endsWith('**')) {
-              return <strong key={j} className="text-brand-text-primary font-medium">{part.slice(2, -2)}</strong>;
-            }
-            // Handle italic markers
-            return part.split(/(\*[^*]+\*)/).map((sub, k) => {
-              if (sub.startsWith('*') && sub.endsWith('*') && !sub.startsWith('**')) {
-                return <em key={k} className="text-brand-text-muted">{sub.slice(1, -1)}</em>;
+          // Inline formatting: bold, italic, links
+          const formatInline = (text: string) => {
+            return text.split(/(\*\*[^*]+\*\*)/).map((part, j) => {
+              if (part.startsWith('**') && part.endsWith('**')) {
+                return <strong key={j} className="text-brand-text-primary font-medium">{part.slice(2, -2)}</strong>;
               }
-              // Handle links [text](url)
-              return sub.split(/(\[[^\]]+\]\([^)]+\))/).map((linkPart, l) => {
-                const linkMatch = linkPart.match(/\[([^\]]+)\]\(([^)]+)\)/);
-                if (linkMatch) {
-                  return <Link key={l} href={linkMatch[2]} className="text-brand-gold hover:underline">{linkMatch[1]}</Link>;
+              return part.split(/(\*[^*]+\*)/).map((sub, k) => {
+                if (sub.startsWith('*') && sub.endsWith('*') && !sub.startsWith('**')) {
+                  return <em key={k} className="text-brand-text-muted">{sub.slice(1, -1)}</em>;
                 }
-                return linkPart;
+                return sub.split(/(\[[^\]]+\]\([^)]+\))/).map((linkPart, l) => {
+                  const linkMatch = linkPart.match(/\[([^\]]+)\]\(([^)]+)\)/);
+                  if (linkMatch) {
+                    return <Link key={l} href={linkMatch[2]} className="text-brand-gold hover:underline">{linkMatch[1]}</Link>;
+                  }
+                  return linkPart;
+                });
               });
             });
-          });
+          };
 
           if (trimmed.startsWith('- ')) {
             const items = trimmed.split('\n').filter(l => l.startsWith('- '));
@@ -326,7 +326,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               <ul key={i} className="space-y-1 ml-4">
                 {items.map((item, j) => (
                   <li key={j} className="text-sm text-brand-text-secondary leading-relaxed list-disc">
-                    {item.replace(/^- /, '')}
+                    {formatInline(item.replace(/^- /, ''))}
                   </li>
                 ))}
               </ul>
@@ -335,7 +335,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
           return (
             <p key={i} className="text-sm text-brand-text-secondary leading-relaxed">
-              {formatted}
+              {formatInline(trimmed)}
             </p>
           );
         })}
