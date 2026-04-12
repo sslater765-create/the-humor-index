@@ -73,7 +73,7 @@ export default async function HomePage() {
       </section>
 
       {/* Leaderboard */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-6">
         <div className="mb-6">
           <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Rankings</p>
           <h2 className="text-xl font-medium text-brand-text-primary">Top Shows</h2>
@@ -83,17 +83,17 @@ export default async function HomePage() {
 
       {/* Latest analysis callouts */}
       {analyzedShows.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-12">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {analyzedShows.map(show => (
               <Link
                 key={show.slug}
                 href={`/shows/${show.slug}`}
-                className="bg-brand-gold/5 border border-brand-gold/20 rounded-xl p-6 hover:border-brand-gold/40 transition-colors group block"
+                className="bg-brand-gold/5 border border-brand-gold/20 rounded-xl p-5 hover:border-brand-gold/40 transition-colors group block"
               >
-                <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Fully Analyzed</p>
+                <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">Fully Analyzed</p>
                 <h3 className="text-lg font-medium text-brand-text-primary mb-1 group-hover:text-brand-gold transition-colors">{show.name}</h3>
-                <p className="text-sm text-brand-text-secondary mb-3 line-clamp-2">{show.description}</p>
+                <p className="text-sm text-brand-text-secondary mb-2 line-clamp-2">{show.description}</p>
                 <span className="text-sm text-brand-gold">
                   View full breakdown →
                 </span>
