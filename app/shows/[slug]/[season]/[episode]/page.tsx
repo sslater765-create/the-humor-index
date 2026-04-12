@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getShow, getEpisodes, getEpisodeDetail } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
@@ -110,7 +111,7 @@ export default async function EpisodePage({
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -121,53 +122,69 @@ export default async function EpisodePage({
         episode={episodeNum}
         humorIndex={detail.humor_index}
       />
-      {/* Breadcrumb */}
-      <nav className="flex items-center gap-1 text-xs text-brand-text-muted mb-6 -mx-1" aria-label="Breadcrumb">
-        <Link href="/shows" className="hover:text-brand-text-secondary transition-colors px-1 py-1.5 rounded">Shows</Link>
-        <span>/</span>
-        <Link href={`/shows/${params.slug}`} className="hover:text-brand-text-secondary transition-colors px-1 py-1.5 rounded truncate max-w-[120px]">
-          {show.name}
-        </Link>
-        <span>/</span>
-        <span className="text-brand-text-secondary px-1 py-1.5 truncate max-w-[200px]">
-          S{detail.season}E{String(detail.episode_number).padStart(2, '0')}: {detail.title}
-        </span>
-      </nav>
 
-      {/* Header */}
-      <div className="mb-6">
-        <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-2">
-          Season {detail.season}, Episode {detail.episode_number}
-          {detail.air_date && ` · ${detail.air_date}`}
-        </p>
-        <h1 className="text-2xl sm:text-3xl font-medium text-brand-text-primary">{detail.title}</h1>
-        {rank > 0 && (
-          <p className="text-sm text-brand-text-muted mt-2">
-            Ranked{' '}
-            <span className="font-mono text-brand-gold">#{rank}</span>{' '}
-            out of {episodes.length} episodes in {show.name}
-          </p>
+      {/* Hero backdrop */}
+      <div className="relative w-full h-[200px] sm:h-[260px] overflow-hidden">
+        {show.backdrop_path ? (
+          <Image
+            src={`https://image.tmdb.org/t/p/w1280${show.backdrop_path}`}
+            alt={`${show.name} backdrop`}
+            fill
+            className="object-cover"
+            priority
+          />
+        ) : (
+          <div className="absolute inset-0 bg-brand-surface" />
         )}
-        <div className="mt-3">
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/70 to-brand-dark/30" />
+
+        <div className="absolute bottom-0 left-0 right-0 max-w-4xl mx-auto px-4 sm:px-6 pb-5">
+          {/* Breadcrumb */}
+          <nav className="flex items-center gap-1 text-xs text-brand-text-muted mb-3" aria-label="Breadcrumb">
+            <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">Shows</Link>
+            <span>/</span>
+            <Link href={`/shows/${params.slug}`} className="hover:text-brand-text-secondary transition-colors truncate max-w-[120px]">
+              {show.name}
+            </Link>
+            <span>/</span>
+            <span className="text-brand-text-secondary truncate max-w-[200px]">
+              S{detail.season}E{String(detail.episode_number).padStart(2, '0')}
+            </span>
+          </nav>
+
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">
+            Season {detail.season}, Episode {detail.episode_number}
+            {detail.air_date && ` · ${detail.air_date}`}
+          </p>
+          <h1 className="text-2xl sm:text-3xl font-medium text-brand-text-primary">{detail.title}</h1>
+          {rank > 0 && (
+            <p className="text-sm text-brand-text-muted mt-1">
+              Ranked{' '}
+              <span className="font-mono text-brand-gold">#{rank}</span>{' '}
+              out of {episodes.length} episodes in {show.name}
+            </p>
+          )}
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-4 pb-8">
+        <div className="flex items-center gap-3 mb-6">
           <StreamingLinks
             showSlug={params.slug}
             episodeLabel={`S${seasonNum}E${String(episodeNum).padStart(2, '0')}`}
           />
-        </div>
-        <div className="mt-3">
           <SocialShare
             title={`${show.name} "${detail.title}" — Humor Index: ${formatIndex(detail.humor_index)}`}
             text={`"${detail.title}" scored ${formatIndex(detail.humor_index)} on The Humor Index. ${detail.total_jokes} jokes analyzed.`}
             url={`/shows/${params.slug}/${params.season}/${params.episode}`}
           />
         </div>
-      </div>
 
       {/* Score cards */}
       <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-8 sm:mb-10">
         <ScoreGauge score={detail.humor_index} size={110} label="Humor Index" />
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 flex-1 w-full">
-          <ScoreCard label="JPM" value={detail.jpm} />
+          <ScoreCard label="JPM" value={detail.jpm} sub={`${detail.total_jokes} jokes`} />
           <ScoreCard label="Craft" value={detail.avg_craft} />
           <ScoreCard label="Impact" value={detail.avg_impact} />
           {detail.imdb_rating ? (
@@ -268,6 +285,7 @@ export default async function EpisodePage({
           </div>
         </section>
       )}
+      </div>
     </div>
   );
 }
