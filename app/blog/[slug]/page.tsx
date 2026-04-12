@@ -112,6 +112,75 @@ These calibration points are fixed — they won't shift as we add more shows.
 *See our full [methodology page](/methodology) for additional details.*
     `,
   },
+  'seinfeld-vs-the-office': {
+    title: 'Seinfeld Has Better Jokes. The Office Is Funnier. Here\'s Why.',
+    description: 'Seinfeld wins on craft, impact, AND joke density. But The Office scores higher on our Humor Index. The math explains a fundamental truth about comedy.',
+    date: '2026-04-12',
+    category: 'Deep Dive',
+    content: `
+We just finished analyzing every episode of Seinfeld \u2014 all 172 of them, 8,625 jokes scored. And the first thing we did was the matchup everyone wants to see: **Seinfeld vs. The Office.**
+
+The result is genuinely surprising.
+
+## Seinfeld Wins Everything. Except the Humor Index.
+
+Here are the head-to-head numbers:
+
+- **Craft Score:** Seinfeld 7.0, The Office 6.9 \u2014 Seinfeld wins
+- **Impact Score:** Seinfeld 6.9, The Office 6.7 \u2014 Seinfeld wins
+- **Jokes Per Minute:** Seinfeld 2.6, The Office 2.4 \u2014 Seinfeld wins
+- **IMDb Average:** Seinfeld 8.3, The Office 8.1 \u2014 Seinfeld wins
+
+But the **Humor Index?** The Office 81.0, Seinfeld 77.5. The Office wins by 3.5 points.
+
+How does a show lose every individual category and still win overall?
+
+## The Consistency Gap
+
+This is where it gets interesting. The Humor Index isn't just an average of craft, impact, and JPM. It weights **consistency** and **peak density** \u2014 how often a show reaches elite levels without dropping below average.
+
+The key stat: **20% of Seinfeld episodes score below 70** on the Humor Index. For The Office, it's only **12%.**
+
+Seinfeld has higher highs on a per-joke basis. But it also has more episodes where the comedy engine stalls. The Office is more reliable \u2014 fewer clunkers, more consistent output.
+
+## The Baseball Analogy
+
+Think of it like two baseball hitters:
+
+**Seinfeld** is the power hitter who bats .280 with 45 home runs. When he connects, the ball leaves the stadium. But he also strikes out 180 times.
+
+**The Office** is the contact hitter who bats .310 with 25 home runs. Fewer highlight-reel moments, but he gets on base almost every time.
+
+The Humor Index rewards getting on base. Our formula values peak density (what percentage of jokes are elite) and consistency over raw per-joke averages. A show that delivers 8/10 comedy every episode beats one that alternates between 9/10 and 6/10.
+
+## Why Seinfeld Is More Volatile
+
+Seinfeld's format explains a lot of this. As a multi-camera sitcom, episodes are more structurally rigid \u2014 the A/B/C plot format means some storylines inevitably work better than others. When all three plots hit, you get "The Contest" or "The Marine Biologist." When one or two miss, the whole episode drags.
+
+The Office's single-camera mockumentary format is more flexible. Even weak episodes have talking heads, reaction shots, and background gags that keep the joke density up. Michael Scott can save a bad plot just by being Michael Scott. Seinfeld's characters are funnier on average, but they can't carry a weak premise the same way.
+
+## The Craft vs. System Debate
+
+This gets at a deeper question about comedy: **is it better to have funnier jokes or a funnier system?**
+
+Seinfeld has funnier jokes. Its writing staff produced some of the most technically brilliant comedy in television history. The craft scores prove this \u2014 Seinfeld's average joke is simply better-written than The Office's.
+
+But The Office built a **funnier system.** The mockumentary format, the talking heads, the Jim camera looks, the sustained cringe sequences \u2014 these create comedy infrastructure that keeps producing laughs even when the writing dips. The system compensates for weak spots in ways Seinfeld's format can't.
+
+## What This Means
+
+Neither show is "better." They're optimizing for different things:
+
+- **Seinfeld** optimizes for **peak comedy craft.** Its best moments are technically superior.
+- **The Office** optimizes for **sustained comedic output.** Its average episode is more reliably funny.
+
+The Humor Index slightly favors consistency over peaks, which is why The Office edges ahead. But reasonable people can disagree about whether a 7.0 craft score with more variance is better or worse than a 6.9 with less.
+
+That's the whole point of The Humor Index \u2014 we give you the data, you make the argument.
+
+*Explore the full data: [The Office](/shows/the-office) \u2022 [Seinfeld](/shows/seinfeld) \u2022 [Compare side by side](/compare/the-office-vs-seinfeld)*
+    `,
+  },
   'imdb-vs-humor-index': {
     title: 'IMDb Ratings vs. The Humor Index: Does "Funny" Mean "Good"?',
     description: 'We compared 186 episodes of The Office against IMDb audience ratings. The correlation? Almost zero. Here\'s what that means.',

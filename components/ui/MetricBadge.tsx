@@ -1,5 +1,5 @@
 const METRIC_STYLES: Record<string, string> = {
-  JPM: 'bg-brand-gold text-black',
+  JPM: 'bg-cyan-500 text-white',
   Craft: 'bg-blue-500 text-white',
   Impact: 'bg-emerald-500 text-white',
   IMDb: 'bg-[#F5C518] text-black',

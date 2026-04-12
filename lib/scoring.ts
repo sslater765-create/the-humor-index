@@ -55,12 +55,17 @@ export function scoreToColor(score: number): string {
 }
 
 export function scoreToGrade(score: number): string {
-  if (score >= 88) return 'S';
+  if (score >= 92) return 'S';
+  if (score >= 85) return 'A+';
   if (score >= 80) return 'A';
-  if (score >= 72) return 'B';
-  if (score >= 64) return 'C';
-  if (score >= 56) return 'D';
-  return 'F';
+  if (score >= 77) return 'A-';
+  if (score >= 74) return 'B+';
+  if (score >= 70) return 'B';
+  if (score >= 67) return 'B-';
+  if (score >= 64) return 'C+';
+  if (score >= 60) return 'C';
+  if (score >= 56) return 'C-';
+  return 'D';
 }
 
 export function formatJPM(jpm: number): string {

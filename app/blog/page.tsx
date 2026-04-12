@@ -13,6 +13,14 @@ export const metadata = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'seinfeld-vs-the-office',
+    title: 'Seinfeld Has Better Jokes. The Office Is Funnier. Here\'s Why.',
+    description: 'Seinfeld wins on craft, impact, AND joke density. But The Office scores higher on our Humor Index. The math explains a fundamental truth about comedy.',
+    date: '2026-04-12',
+    category: 'Deep Dive',
+    readTime: '6 min read',
+  },
+  {
     slug: 'imdb-vs-humor-index',
     title: 'IMDb Ratings vs. The Humor Index: Does "Funny" Mean "Good"?',
     description: 'We compared 186 episodes of The Office against IMDb audience ratings. The correlation? Almost zero. Here\'s what that means.',
