@@ -149,6 +149,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         seasons={seasons}
         episodes={episodes}
         characters={characters}
+        characterProfiles={realCharacters}
       />
     </div>
   );

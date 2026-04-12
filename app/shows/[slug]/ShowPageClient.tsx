@@ -1,7 +1,8 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ShowScore, SeasonScore, EpisodeScore, CharacterStats, JokeType } from '@/lib/types';
+import Image from 'next/image';
+import { ShowScore, SeasonScore, EpisodeScore, CharacterStats, CharacterProfile, JokeType } from '@/lib/types';
 import { JOKE_TYPE_LABELS } from '@/lib/scoring';
 import { MOCK_DNA_DATA } from '@/lib/constants';
 import Link from 'next/link';
@@ -22,9 +23,10 @@ interface Props {
   seasons: SeasonScore[];
   episodes: EpisodeScore[];
   characters: CharacterStats[];
+  characterProfiles?: CharacterProfile[];
 }
 
-export default function ShowPageClient({ show, seasons, episodes, characters }: Props) {
+export default function ShowPageClient({ show, seasons, episodes, characters, characterProfiles = [] }: Props) {
   const [activeTab, setActiveTab] = useState('overview');
   const [selectedSeason, setSelectedSeason] = useState<number | 'all'>(1);
   const [episodeSort, setEpisodeSort] = useState<'score' | 'airdate'>('score');
@@ -267,17 +269,36 @@ export default function ShowPageClient({ show, seasons, episodes, characters }: 
           <div className="bg-brand-card border border-brand-border rounded-xl p-5">
             <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">All Characters</p>
             <p className="text-base font-medium text-brand-text-primary mb-4">Explore by Character</p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-              {[...characters].sort((a, b) => b.total_jokes - a.total_jokes).map(c => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {[...characterProfiles].sort((a, b) => b.total_jokes - a.total_jokes).slice(0, 18).map(c => (
                 <Link
                   key={c.name}
                   href={`/shows/${show.slug}/characters/${encodeURIComponent(c.name)}`}
-                  className="flex items-center justify-between p-3 rounded-lg hover:bg-brand-surface transition-colors group"
+                  className="flex items-center gap-3 p-3 rounded-xl border border-brand-border hover:border-brand-gold/40 hover:bg-brand-surface transition-colors group"
                 >
-                  <span className="text-sm text-brand-text-secondary group-hover:text-brand-gold transition-colors truncate">
-                    {c.name}
-                  </span>
-                  <span className="font-mono text-xs text-brand-text-muted shrink-0 ml-2">
+                  {c.profile_path ? (
+                    <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0">
+                      <Image
+                        src={`https://image.tmdb.org/t/p/w185${c.profile_path}`}
+                        alt={c.actor || c.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-10 h-10 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center shrink-0">
+                      <span className="text-xs text-brand-text-muted">{c.name[0]}</span>
+                    </div>
+                  )}
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm text-brand-text-primary group-hover:text-brand-gold transition-colors truncate">
+                      {c.character_full_name || c.name}
+                    </p>
+                    {c.actor && (
+                      <p className="text-xs text-brand-text-muted truncate">{c.actor}</p>
+                    )}
+                  </div>
+                  <span className="font-mono text-xs text-brand-text-muted shrink-0">
                     {c.total_jokes}
                   </span>
                 </Link>
