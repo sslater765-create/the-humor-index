@@ -2,10 +2,6 @@
 import { useState, useEffect } from 'react';
 
 const SUGGESTED_SHOWS = [
-  { name: 'Friends', slug: 'friends' },
-  { name: 'Parks and Recreation', slug: 'parks-and-recreation' },
-  { name: 'Arrested Development', slug: 'arrested-development' },
-  { name: 'Brooklyn Nine-Nine', slug: 'brooklyn-nine-nine' },
   { name: 'Curb Your Enthusiasm', slug: 'curb-your-enthusiasm' },
   { name: 'Community', slug: 'community' },
   { name: 'Frasier', slug: 'frasier' },
@@ -14,9 +10,13 @@ const SUGGESTED_SHOWS = [
   { name: 'Ted Lasso', slug: 'ted-lasso' },
   { name: 'Fleabag', slug: 'fleabag' },
   { name: 'The Good Place', slug: 'the-good-place' },
-  { name: "Schitt's Creek", slug: 'schitts-creek' },
   { name: 'Modern Family', slug: 'modern-family' },
-  { name: "It's Always Sunny in Philadelphia", slug: 'its-always-sunny' },
+  { name: 'Everybody Loves Raymond', slug: 'everybody-loves-raymond' },
+  { name: 'New Girl', slug: 'new-girl' },
+  { name: 'Scrubs', slug: 'scrubs' },
+  { name: 'Malcolm in the Middle', slug: 'malcolm-in-the-middle' },
+  { name: 'Superstore', slug: 'superstore' },
+  { name: 'Abbott Elementary', slug: 'abbott-elementary' },
 ];
 
 export default function RequestClient() {
@@ -148,6 +148,20 @@ export default function RequestClient() {
             <p className="text-[10px] text-brand-text-muted mt-2">Only visible to you — stored locally on your device.</p>
           </>
         )}
+      </div>
+
+      {/* Already queued */}
+      <div className="bg-brand-card border border-brand-border rounded-xl p-4">
+        <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Already In The Queue</p>
+        <p className="text-sm text-brand-text-secondary mb-3">These shows are in our system and will be analyzed next.</p>
+        <div className="flex flex-wrap gap-2">
+          {['Friends', 'Parks and Recreation', 'Arrested Development', 'Brooklyn Nine-Nine',
+            "It's Always Sunny", "Schitt's Creek", 'Big Bang Theory', 'Two and a Half Men', '30 Rock'].map(name => (
+            <span key={name} className="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-3 py-1">
+              {name}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Voting grid */}
