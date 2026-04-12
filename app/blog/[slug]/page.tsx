@@ -112,6 +112,82 @@ These calibration points are fixed — they won't shift as we add more shows.
 *See our full [methodology page](/methodology) for additional details.*
     `,
   },
+  'imdb-vs-humor-index': {
+    title: 'IMDb Ratings vs. The Humor Index: Does "Funny" Mean "Good"?',
+    description: 'We compared 186 episodes of The Office against IMDb audience ratings. The correlation? Almost zero. Here\'s what that means.',
+    date: '2026-04-12',
+    category: 'Data Science',
+    content: `
+We just integrated IMDb episode ratings across every show on The Humor Index. And the first thing we did was the obvious data science move: **how well do audience ratings predict our comedy scores?**
+
+The answer: they don't. Not even close.
+
+## The Numbers
+
+Across 186 episodes of The Office, the Humor Index and IMDb ratings have a **Pearson correlation of r = 0.16** — barely above noise. IMDb explains just **2.7% of the variance** in our Humor Index scores.
+
+In plain English: knowing an episode's IMDb rating tells you almost nothing about how funny it actually is by our analysis.
+
+## Why This Matters
+
+IMDb ratings measure **whether audiences enjoyed an episode**. That's a cocktail of plot quality, emotional resonance, character development, guest stars, and yes — comedy. When someone gives "Casino Night" a 9.3, they're rating the Jim/Pam moment at the end as much as any joke.
+
+The Humor Index measures something narrower: **comedy craft and density**. How many jokes land? How well-constructed are they? How hard do they hit?
+
+These are genuinely different questions, and our data proves it.
+
+## The Biggest Disagreements
+
+Some episodes where our AI sees comedy gold but audiences shrug:
+
+- **"Angry Andy" (S8E21)** — Humor Index: 96.1, IMDb: 6.7. Packed with jokes, but the late-season Andy arc turned audiences off regardless of how many gags landed.
+- **"Dinner Party" (S4E13)** — Humor Index: 100.0, IMDb: 7.6. Our highest-scoring episode ever is an IMDb 7.6. This is the cringe comedy paradox: brilliantly crafted discomfort that many viewers can't rewatch without covering their eyes.
+- **"Andy's Ancestry" (S9E03)** — Humor Index: 95.0, IMDb: 7.1. Dense with character comedy, but S9 fatigue dragged audience scores down.
+
+And episodes audiences adore that don't score as high on pure comedy:
+
+- **"Casino Night" (S2E22)** — Humor Index: 71.5, IMDb: 9.3. The Jim/Pam poker scene is legendary television, but it's drama, not comedy. Our system correctly identifies this as a great episode with average joke density.
+- **"The Inner Circle" (S7E22)** — Humor Index: 75.4, IMDb: 9.8. Will Ferrell episodes got a huge audience boost. The comedy itself is solid but not spectacular.
+- **"Classy Christmas" (S7E11)** — Humor Index: 70.8, IMDb: 8.8. Holiday episodes get an emotional ratings bump that has nothing to do with joke quality.
+
+## What Predicts IMDb Ratings?
+
+We tested which of our sub-metrics best correlates with audience scores:
+
+- **Craft** (r = 0.22) — the strongest predictor, but still weak
+- **Humor Index** (r = 0.16) — the composite score
+- **Impact** (r = 0.11) — how hard jokes land
+- **JPM** (r = -0.08) — joke density has *slightly negative* correlation with IMDb
+
+That last one is fascinating. **More jokes per minute slightly predicts lower audience ratings.** This makes sense — episodes with the highest joke density often sacrifice plot and character moments. Audiences notice.
+
+## Season-by-Season Patterns
+
+The correlation varies wildly by season:
+
+- **Season 7** has the strongest correlation (r = 0.40) — during Michael's farewell arc, funnier episodes also happen to be more emotionally satisfying
+- **Seasons 3, 4, and 8** have negative correlations — audiences and our AI actively disagree about which episodes are best
+- **Season 5** shows moderate alignment (r = 0.33)
+
+## The Dinner Party Problem
+
+"Dinner Party" perfectly illustrates why these metrics diverge. It scores a perfect 100 on our Humor Index — the highest-scoring episode we've ever analyzed. Every joke is meticulously crafted. The cringe comedy is operating at peak efficiency.
+
+But on IMDb? A 7.6. Not bad, but far from The Office's best-rated episodes.
+
+This is because "Dinner Party" is *uncomfortable*. It's bottle-episode cringe comedy that makes your skin crawl. Audiences rate it lower because watching Jan's Seychelles slideshow makes them physically squirm — even though, objectively, it's comedy writing at its absolute finest.
+
+This is exactly what The Humor Index was built to measure. Not "did you enjoy this?" but "is this comedy operating at the highest possible level?"
+
+## The Bottom Line
+
+The Humor Index and IMDb are complementary, not competing metrics. IMDb tells you what audiences love. The Humor Index tells you what's actually funny.
+
+Sometimes those overlap. Often, they don't. And the disagreements are where the most interesting conversations happen.
+
+*Explore the data yourself — every episode now displays its IMDb rating alongside the Humor Index score. See where you agree with the crowd and where your taste diverges. [Start with The Office](/shows/the-office).*
+    `,
+  },
   'laugh-track-penalty': {
     title: 'Should Laugh Tracks Be Penalized? Our Data Says Yes.',
     description: 'Multi-camera sitcoms with sweetened laugh tracks score lower. Here is why.',

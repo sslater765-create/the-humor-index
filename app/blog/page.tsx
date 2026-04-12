@@ -13,6 +13,14 @@ export const metadata = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'imdb-vs-humor-index',
+    title: 'IMDb Ratings vs. The Humor Index: Does "Funny" Mean "Good"?',
+    description: 'We compared 186 episodes of The Office against IMDb audience ratings. The correlation? Almost zero. Here\'s what that means.',
+    date: '2026-04-12',
+    category: 'Data Science',
+    readTime: '7 min read',
+  },
+  {
     slug: 'is-the-office-actually-funny',
     title: 'Is The Office Actually Funny? We Analyzed Every Joke to Find Out.',
     description: 'We ran all 186 episodes of The Office through our AI comedy analyst. The results surprised us — some "classic" episodes aren\'t as funny as you think.',

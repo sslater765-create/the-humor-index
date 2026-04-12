@@ -125,9 +125,9 @@ export default function ShowPageClient({ show, seasons, episodes, characters }: 
                 </p>
               </div>
               <div className="bg-brand-card border border-brand-border rounded-xl p-5">
-                <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-2">Average Episode</p>
+                <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-2">Episode Mean</p>
                 <p className="font-mono text-3xl text-brand-text-primary font-bold">{formatIndex(avgIndex)}</p>
-                <p className="text-xs text-brand-text-muted mt-1">across {episodes.length} episodes</p>
+                <p className="text-xs text-brand-text-muted mt-1">unweighted avg · {episodes.length} episodes</p>
               </div>
               <div className="bg-brand-card border border-brand-border rounded-xl p-5">
                 <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-2">Score Range</p>
