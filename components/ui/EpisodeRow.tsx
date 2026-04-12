@@ -45,23 +45,26 @@ export default function EpisodeRow({ episode, rank, showSlug }: Props) {
         <div className="flex items-center gap-2 sm:gap-4 shrink-0">
           {episode.imdb_rating && (
             <div className="text-right hidden sm:block">
-              <p className="text-xs text-brand-text-muted"><span className="bg-[#F5C518] text-black font-bold text-[10px] px-1.5 py-0.5 rounded">IMDb</span></p>
+              <p className="text-xs text-brand-text-muted"><span className="bg-[#F5C518] text-black font-bold text-[9px] px-1 py-0.5 rounded">IMDb</span></p>
               <p className="font-mono text-xs text-brand-text-secondary">{episode.imdb_rating.toFixed(1)}</p>
             </div>
           )}
           <div className="text-right hidden sm:block">
-            <p className="text-xs uppercase tracking-widest text-brand-text-muted">JPM</p>
+            <p className="text-xs text-brand-text-muted"><span className="bg-cyan-500 text-white font-bold text-[9px] px-1 py-0.5 rounded">JPM</span></p>
             <p className="font-mono text-xs text-brand-text-secondary">{episode.jpm.toFixed(1)}</p>
           </div>
           <div className="text-right hidden sm:block">
-            <p className="text-xs uppercase tracking-widest text-brand-text-muted">Craft</p>
+            <p className="text-xs text-brand-text-muted"><span className="bg-blue-500 text-white font-bold text-[9px] px-1 py-0.5 rounded">Craft</span></p>
             <p className="font-mono text-xs text-brand-text-secondary">{episode.avg_craft.toFixed(1)}</p>
           </div>
-          <div
-            className="font-mono text-base font-medium w-12 text-right"
-            style={{ color: scoreToColor(episode.humor_index) }}
-          >
-            {formatIndex(episode.humor_index)}
+          <div className="text-right">
+            <p className="text-xs text-brand-text-muted hidden sm:block"><span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold text-[9px] px-1 py-0.5 rounded">HI</span></p>
+            <p
+              className="font-mono text-base font-medium"
+              style={{ color: scoreToColor(episode.humor_index) }}
+            >
+              {formatIndex(episode.humor_index)}
+            </p>
           </div>
           <span className="text-brand-text-muted text-xs hidden sm:inline">→</span>
         </div>

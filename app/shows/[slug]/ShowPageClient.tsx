@@ -29,15 +29,29 @@ interface Props {
 export default function ShowPageClient({ show, seasons, episodes, characters, characterProfiles = [] }: Props) {
   const [activeTab, setActiveTab] = useState('overview');
   const [selectedSeason, setSelectedSeason] = useState<number | 'all'>(1);
-  const [episodeSort, setEpisodeSort] = useState<'score' | 'airdate'>('score');
+  const [episodeSort, setEpisodeSort] = useState<'score' | 'jpm' | 'craft' | 'imdb' | 'airdate'>('score');
+
+  const SORT_OPTIONS: { key: typeof episodeSort; label: string }[] = [
+    { key: 'score', label: 'Humor Index' },
+    { key: 'jpm', label: 'JPM' },
+    { key: 'craft', label: 'Craft' },
+    { key: 'imdb', label: 'IMDb' },
+    { key: 'airdate', label: 'Air Date' },
+  ];
+
+  const sortLabel = SORT_OPTIONS.find(o => o.key === episodeSort)?.label || 'Humor Index';
 
   const seasonEpisodes = (() => {
     const filtered = selectedSeason === 'all'
       ? [...episodes]
       : episodes.filter(e => e.season === selectedSeason);
-    return episodeSort === 'score'
-      ? filtered.sort((a, b) => b.humor_index - a.humor_index)
-      : filtered.sort((a, b) => a.season - b.season || a.episode_number - b.episode_number);
+    switch (episodeSort) {
+      case 'jpm': return filtered.sort((a, b) => b.jpm - a.jpm);
+      case 'craft': return filtered.sort((a, b) => b.avg_craft - a.avg_craft);
+      case 'imdb': return filtered.sort((a, b) => (b.imdb_rating || 0) - (a.imdb_rating || 0));
+      case 'airdate': return filtered.sort((a, b) => a.season - b.season || a.episode_number - b.episode_number);
+      default: return filtered.sort((a, b) => b.humor_index - a.humor_index);
+    }
   })();
 
   const dnaData = MOCK_DNA_DATA[show.slug as keyof typeof MOCK_DNA_DATA] ?? MOCK_DNA_DATA['the-office'];
@@ -215,39 +229,32 @@ export default function ShowPageClient({ show, seasons, episodes, characters, ch
                 </button>
               ))}
             </div>
-            <div className="flex gap-1 p-1 bg-brand-surface border border-brand-border rounded-lg w-fit sm:ml-auto">
-              <button
-                onClick={() => setEpisodeSort('score')}
-                className={`text-xs px-2.5 py-1 rounded-md transition-all ${
-                  episodeSort === 'score'
-                    ? 'bg-brand-gold text-black font-medium'
-                    : 'text-brand-text-secondary hover:text-brand-text-primary'
-                }`}
-              >
-                By Score
-              </button>
-              <button
-                onClick={() => setEpisodeSort('airdate')}
-                className={`text-xs px-2.5 py-1 rounded-md transition-all ${
-                  episodeSort === 'airdate'
-                    ? 'bg-brand-gold text-black font-medium'
-                    : 'text-brand-text-secondary hover:text-brand-text-primary'
-                }`}
-              >
-                By Air Date
-              </button>
+            <div className="flex gap-1 p-1 bg-brand-surface border border-brand-border rounded-lg w-fit sm:ml-auto flex-wrap">
+              {SORT_OPTIONS.map(opt => (
+                <button
+                  key={opt.key}
+                  onClick={() => setEpisodeSort(opt.key)}
+                  className={`text-xs px-2.5 py-1 rounded-md transition-all ${
+                    episodeSort === opt.key
+                      ? 'bg-brand-gold text-black font-medium'
+                      : 'text-brand-text-secondary hover:text-brand-text-primary'
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              ))}
             </div>
           </div>
 
           <div className="bg-brand-card border border-brand-border rounded-xl overflow-hidden">
             <div className="px-4 py-3 border-b border-brand-border">
               <p className="text-xs uppercase tracking-widest text-brand-text-muted">
-                {selectedSeason === 'all' ? `All ${seasonEpisodes.length} episodes` : `Season ${selectedSeason} — ${seasonEpisodes.length} episodes`}{episodeSort === 'score' ? ', ranked by Humor Index' : ', in air date order'}
+                {selectedSeason === 'all' ? `All ${seasonEpisodes.length} episodes` : `Season ${selectedSeason} — ${seasonEpisodes.length} episodes`}{episodeSort === 'airdate' ? ', in air date order' : `, ranked by ${sortLabel}`}
               </p>
             </div>
             <div className="divide-y divide-brand-border/50">
               {seasonEpisodes.map((ep, i) => (
-                <EpisodeRow key={ep.episode_id} episode={ep} rank={episodeSort === 'score' ? i + 1 : undefined} showSlug={show.slug} />
+                <EpisodeRow key={ep.episode_id} episode={ep} rank={episodeSort !== 'airdate' ? i + 1 : undefined} showSlug={show.slug} />
               ))}
             </div>
           </div>
