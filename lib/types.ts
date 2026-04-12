@@ -104,6 +104,15 @@ export interface EpisodeDetail extends EpisodeScore {
   standout_joke_ids: number[];
 }
 
+export interface CharacterProfile {
+  name: string;
+  total_jokes: number;
+  avg_craft: number;
+  avg_impact: number;
+  episodes_appeared: number;
+  dominant_types: JokeType[];
+}
+
 export interface CharacterStats {
   name: string;
   total_jokes: number;
