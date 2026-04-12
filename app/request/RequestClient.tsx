@@ -120,32 +120,34 @@ export default function RequestClient() {
         <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-2">
           Get notified when we analyze your pick
         </p>
-        <div className="flex gap-2">
-          <input
-            type="email"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-            placeholder="you@email.com (optional)"
-            className="flex-1 bg-brand-card border border-brand-border rounded-lg px-3 py-2.5 text-sm text-brand-text-primary placeholder:text-brand-text-muted focus:outline-none focus:border-brand-gold transition-colors"
-            aria-label="Email for vote notifications"
-          />
-          <button
-            onClick={() => {
-              if (email && email.includes('@')) {
-                try { localStorage.setItem('humor_index_email', email); } catch {}
-                setEmailSaved(true);
-                setTimeout(() => setEmailSaved(false), 2000);
-              }
-            }}
-            className={`text-sm font-medium px-4 py-2.5 rounded-lg transition-colors whitespace-nowrap ${
-              emailSaved
-                ? 'bg-brand-gold text-black'
-                : 'bg-brand-surface border border-brand-border text-brand-text-secondary hover:border-brand-gold hover:text-brand-gold'
-            }`}
-          >
-            {emailSaved ? 'Saved!' : 'Save'}
-          </button>
-        </div>
+        {emailSaved ? (
+          <p className="text-sm text-brand-gold">Saved! We&apos;ll email you when your pick is analyzed.</p>
+        ) : (
+          <>
+            <div className="flex gap-2">
+              <input
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                placeholder="you@email.com (optional)"
+                className="flex-1 bg-brand-card border border-brand-border rounded-lg px-3 py-2.5 text-sm text-brand-text-primary placeholder:text-brand-text-muted focus:outline-none focus:border-brand-gold transition-colors"
+                aria-label="Email for vote notifications"
+              />
+              <button
+                onClick={() => {
+                  if (email && email.includes('@')) {
+                    try { localStorage.setItem('humor_index_email', email); } catch {}
+                    setEmailSaved(true);
+                  }
+                }}
+                className="text-sm font-medium px-4 py-2.5 rounded-lg transition-colors whitespace-nowrap bg-brand-surface border border-brand-border text-brand-text-secondary hover:border-brand-gold hover:text-brand-gold"
+              >
+                Save
+              </button>
+            </div>
+            <p className="text-[10px] text-brand-text-muted mt-2">Only visible to you — stored locally on your device.</p>
+          </>
+        )}
       </div>
 
       {/* Voting grid */}
