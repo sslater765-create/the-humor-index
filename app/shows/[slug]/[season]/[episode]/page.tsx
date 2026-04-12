@@ -213,7 +213,7 @@ export default async function EpisodePage({
           <ScoreCard label="Craft" value={detail.avg_craft} />
           <ScoreCard label="Impact" value={detail.avg_impact} />
           {detail.imdb_rating ? (
-            <ScoreCard label={<span className="bg-[#F5C518] text-black font-bold text-[10px] px-1.5 py-0.5 rounded normal-case tracking-normal">IMDb</span>} value={detail.imdb_rating} sub={`${(detail.imdb_votes ?? 0).toLocaleString()} votes`} />
+            <ScoreCard label="IMDb" value={detail.imdb_rating} sub={`${(detail.imdb_votes ?? 0).toLocaleString()} votes`} />
           ) : (
             <ScoreCard label="Total Jokes" value={detail.total_jokes} />
           )}
