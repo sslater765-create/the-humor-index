@@ -133,7 +133,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
             <ScoreCard label="Craft" value={show.avg_craft} sub="Avg craft score" />
             <ScoreCard label="Impact" value={show.avg_impact} sub="Avg impact score" />
             {show.avg_imdb_rating && (
-              <ScoreCard label="IMDb" value={show.avg_imdb_rating} sub="Avg episode rating" />
+              <ScoreCard label={<span className="bg-[#F5C518] text-black font-bold text-[10px] px-1.5 py-0.5 rounded normal-case tracking-normal">IMDb</span>} value={show.avg_imdb_rating} sub="Avg episode rating" />
             )}
             <ScoreCard
               label="Jokes Analyzed"

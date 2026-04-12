@@ -50,7 +50,7 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
             <tr className="border-b border-brand-border">
               {['Rank', 'Show', 'Format', 'Seasons', 'Humor Index', 'IMDb', 'JPM', 'Craft', 'Impact', 'Best Season'].map(h => (
                 <th key={h} className="text-left text-xs uppercase tracking-widest text-brand-text-muted font-normal pb-3 pr-4 first:pl-0">
-                  {h}
+                  {h === 'IMDb' ? <span className="bg-[#F5C518] text-black font-bold text-[10px] px-1.5 py-0.5 rounded normal-case tracking-normal">IMDb</span> : h}
                 </th>
               ))}
             </tr>
@@ -112,7 +112,7 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
                 </div>
                 <div className="flex gap-4 text-xs text-brand-text-muted">
                   {show.avg_imdb_rating && (
-                    <span>IMDb <span className="font-mono text-brand-text-secondary">{show.avg_imdb_rating.toFixed(1)}</span></span>
+                    <span><span className="bg-[#F5C518] text-black font-bold text-[10px] px-1.5 py-0.5 rounded">IMDb</span> <span className="font-mono text-brand-text-secondary">{show.avg_imdb_rating.toFixed(1)}</span></span>
                   )}
                   <span>JPM <span className="font-mono text-brand-text-secondary">{show.avg_jpm.toFixed(1)}</span></span>
                   <span>Craft <span className="font-mono text-brand-text-secondary">{show.avg_craft.toFixed(1)}</span></span>

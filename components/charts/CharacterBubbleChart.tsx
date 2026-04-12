@@ -104,7 +104,7 @@ export default function CharacterBubbleChart({ characters, showName }: Props) {
         </div>
         <ShareButton targetId="bubble-chart-wrap" filename={`${showName}-characters`} />
       </div>
-      <div id="bubble-chart-wrap" className="relative w-full h-[420px] sm:h-[480px]">
+      <div id="bubble-chart-wrap" className="relative w-full h-[350px] sm:h-[400px]">
         <canvas
           ref={canvasRef}
           role="img"

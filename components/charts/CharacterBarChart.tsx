@@ -77,7 +77,7 @@ export default function CharacterBarChart({ characters, showName }: Props) {
       <div
         id="char-bar-wrap"
         className="relative w-full"
-        style={{ height: `${sorted.length * 44 + 20}px`, minHeight: '180px' }}
+        style={{ height: `${Math.min(sorted.length * 44 + 20, 500)}px`, minHeight: '180px' }}
       >
         <canvas
           ref={canvasRef}
