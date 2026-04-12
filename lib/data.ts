@@ -42,6 +42,15 @@ export async function getEpisodeDetail(
   }
 }
 
+export async function getRecommendations(slug: string): Promise<Array<{ slug: string; name: string; score: number }>> {
+  try {
+    const all = readJson<Record<string, Array<{ slug: string; name: string; score: number }>>>('recommendations.json');
+    return all[slug] || [];
+  } catch {
+    return [];
+  }
+}
+
 export async function getCharacters(slug: string): Promise<CharacterProfile[]> {
   try {
     return readJson<CharacterProfile[]>(`${slug}/characters.json`);

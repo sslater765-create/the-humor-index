@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { getShow, getSeasons, getEpisodes, getCharacters } from '@/lib/data';
+import Link from 'next/link';
+import { getShow, getSeasons, getEpisodes, getCharacters, getRecommendations, getAllShows } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
 import { SHOW_SLUGS } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
@@ -35,10 +36,12 @@ export default async function ShowPage({ params }: { params: { slug: string } })
   const show = await getShow(params.slug);
   if (!show) notFound();
 
-  const [seasons, episodes, realCharacters] = await Promise.all([
+  const [seasons, episodes, realCharacters, recommendations, allShows] = await Promise.all([
     getSeasons(params.slug),
     getEpisodes(params.slug),
     getCharacters(params.slug),
+    getRecommendations(params.slug),
+    getAllShows(),
   ]);
 
   // Map real character data to CharacterStats format for charts
@@ -151,6 +154,61 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         characters={characters}
         characterProfiles={realCharacters}
       />
+
+      {/* If you liked this show */}
+      {recommendations.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 border-t border-brand-border">
+          <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">If You Liked {show.name}</p>
+          <p className="text-lg font-medium text-brand-text-primary mb-6">You might also enjoy</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {recommendations.map(rec => {
+              const recShow = allShows.find(s => s.slug === rec.slug);
+              if (!recShow) return null;
+              return (
+                <Link
+                  key={rec.slug}
+                  href={`/shows/${rec.slug}`}
+                  className="group block"
+                >
+                  <div className="relative bg-brand-card border border-brand-border rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors">
+                    {recShow.backdrop_path && (
+                      <div className="relative h-32 w-full">
+                        <Image
+                          src={`https://image.tmdb.org/t/p/w780${recShow.backdrop_path}`}
+                          alt={recShow.name}
+                          fill
+                          className="object-cover opacity-40 group-hover:opacity-55 transition-opacity"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-brand-card to-transparent" />
+                      </div>
+                    )}
+                    <div className="p-4">
+                      <h3 className="text-base font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-1">
+                        {recShow.name}
+                      </h3>
+                      <div className="flex items-center gap-2 text-xs text-brand-text-muted mb-2">
+                        {recShow.network && <span>{recShow.network}</span>}
+                        {recShow.aired && <span>{recShow.aired}</span>}
+                        <FormatBadge format={recShow.format} />
+                      </div>
+                      {recShow.humor_index > 0 ? (
+                        <p className="font-mono text-sm text-brand-gold">
+                          Humor Index: {formatIndex(recShow.humor_index)}
+                        </p>
+                      ) : recShow.avg_imdb_rating ? (
+                        <p className="text-xs text-brand-text-muted">
+                          <span className="bg-[#F5C518] text-black font-bold text-[10px] px-1.5 py-0.5 rounded mr-1">IMDb</span>
+                          {recShow.avg_imdb_rating.toFixed(1)} avg
+                        </p>
+                      ) : null}
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+      )}
     </div>
   );
 }
