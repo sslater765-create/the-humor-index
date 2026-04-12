@@ -40,6 +40,13 @@ export interface ShowScore {
   description: string;
   rank?: number;
   avg_imdb_rating?: number;
+  backdrop_path?: string;
+  poster_path?: string;
+  created_by?: string[];
+  stars?: string[];
+  network?: string;
+  aired?: string;
+  genres?: string[];
 }
 
 export interface SeasonScore {

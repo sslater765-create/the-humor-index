@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import { getShow, getSeasons, getEpisodes } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
 import { MOCK_CHARACTER_DATA, SHOW_SLUGS } from '@/lib/constants';
-import PageHeader from '@/components/layout/PageHeader';
 import ScoreCard from '@/components/ui/ScoreCard';
 import ScoreGauge from '@/components/ui/ScoreGauge';
 import FormatBadge from '@/components/ui/FormatBadge';
@@ -65,9 +65,54 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <PageHeader label="Show Analysis" title={show.name} subtitle={show.description}>
-        <FormatBadge format={show.format} />
-      </PageHeader>
+      {/* Hero section with backdrop */}
+      <div className="relative w-full h-[280px] sm:h-[360px] overflow-hidden">
+        {show.backdrop_path ? (
+          <Image
+            src={`https://image.tmdb.org/t/p/w1280${show.backdrop_path}`}
+            alt={`${show.name} backdrop`}
+            fill
+            className="object-cover"
+            priority
+          />
+        ) : (
+          <div className="absolute inset-0 bg-brand-surface" />
+        )}
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/70 to-brand-dark/30" />
+
+        {/* Content overlay */}
+        <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-4 sm:px-6 pb-6">
+          <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Show Analysis</p>
+          <h1 className="text-3xl sm:text-4xl font-medium text-brand-text-primary mb-2">{show.name}</h1>
+          <div className="flex flex-wrap items-center gap-2 mb-3">
+            <FormatBadge format={show.format} />
+            {show.network && (
+              <span className="text-xs bg-brand-surface/80 border border-brand-border rounded-full px-2.5 py-0.5 text-brand-text-secondary">
+                {show.network}
+              </span>
+            )}
+            {show.aired && (
+              <span className="text-xs text-brand-text-muted">{show.aired}</span>
+            )}
+            {show.genres?.map(g => (
+              <span key={g} className="text-xs text-brand-text-muted bg-brand-surface/60 rounded px-1.5 py-0.5">
+                {g}
+              </span>
+            ))}
+          </div>
+          {show.created_by && show.created_by.length > 0 && (
+            <p className="text-xs text-brand-text-muted mb-1">
+              Created by <span className="text-brand-text-secondary">{show.created_by.join(', ')}</span>
+            </p>
+          )}
+          {show.stars && show.stars.length > 0 && (
+            <p className="text-xs text-brand-text-muted">
+              Starring <span className="text-brand-text-secondary">{show.stars.join(', ')}</span>
+            </p>
+          )}
+        </div>
+      </div>
 
       {/* Score cards */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
