@@ -3,6 +3,8 @@ const METRIC_STYLES: Record<string, string> = {
   Craft: 'bg-blue-500 text-white',
   Impact: 'bg-emerald-500 text-white',
   IMDb: 'bg-[#F5C518] text-black',
+  'Humor Index': 'bg-brand-gold text-black',
+  'Best Season': 'bg-rose-500 text-white',
   'Jokes Analyzed': 'bg-purple-500 text-white',
   'Total Jokes': 'bg-purple-500 text-white',
   'Comedy Style': 'bg-orange-500 text-white',

@@ -6,6 +6,7 @@ import { ShowScore } from '@/lib/types';
 import { scoreToColor, formatIndex } from '@/lib/scoring';
 import FormatBadge from '@/components/ui/FormatBadge';
 import RankBadge from '@/components/ui/RankBadge';
+import MetricBadge from '@/components/ui/MetricBadge';
 
 type SortKey = 'humor_index' | 'avg_jpm' | 'avg_craft' | 'avg_impact';
 
@@ -48,11 +49,14 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-brand-border">
-              {['Rank', 'Show', 'Format', 'Seasons', 'Humor Index', 'IMDb', 'JPM', 'Craft', 'Impact', 'Best Season'].map(h => (
-                <th key={h} className="text-left text-xs uppercase tracking-widest text-brand-text-muted font-normal pb-3 pr-4 first:pl-0">
-                  {h === 'IMDb' ? <span className="bg-[#F5C518] text-black font-bold text-[10px] px-1.5 py-0.5 rounded normal-case tracking-normal">IMDb</span> : h}
-                </th>
-              ))}
+              {['Rank', 'Show', 'Format', 'Seasons', 'Humor Index', 'IMDb', 'JPM', 'Craft', 'Impact', 'Best Season'].map(h => {
+                const isBadge = ['Humor Index', 'IMDb', 'JPM', 'Craft', 'Impact', 'Best Season'].includes(h);
+                return (
+                  <th key={h} className="text-left text-xs uppercase tracking-widest text-brand-text-muted font-normal pb-3 pr-4 first:pl-0">
+                    {isBadge ? <MetricBadge label={h} /> : h}
+                  </th>
+                );
+              })}
             </tr>
           </thead>
           <tbody>
@@ -110,13 +114,12 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
                     {formatIndex(show.humor_index)}
                   </span>
                 </div>
-                <div className="flex gap-4 text-xs text-brand-text-muted">
+                <div className="flex gap-3 text-xs text-brand-text-muted flex-wrap">
                   {show.avg_imdb_rating && (
-                    <span><span className="bg-[#F5C518] text-black font-bold text-[10px] px-1.5 py-0.5 rounded">IMDb</span> <span className="font-mono text-brand-text-secondary">{show.avg_imdb_rating.toFixed(1)}</span></span>
+                    <span className="flex items-center gap-1"><MetricBadge label="IMDb" /> <span className="font-mono text-brand-text-secondary">{show.avg_imdb_rating.toFixed(1)}</span></span>
                   )}
-                  <span>JPM <span className="font-mono text-brand-text-secondary">{show.avg_jpm.toFixed(1)}</span></span>
-                  <span>Craft <span className="font-mono text-brand-text-secondary">{show.avg_craft.toFixed(1)}</span></span>
-                  <span>Best S<span className="font-mono text-brand-text-secondary">{show.best_season}</span></span>
+                  <span className="flex items-center gap-1"><MetricBadge label="JPM" /> <span className="font-mono text-brand-text-secondary">{show.avg_jpm.toFixed(1)}</span></span>
+                  <span className="flex items-center gap-1"><MetricBadge label="Craft" /> <span className="font-mono text-brand-text-secondary">{show.avg_craft.toFixed(1)}</span></span>
                 </div>
               </div>
             </Link>
