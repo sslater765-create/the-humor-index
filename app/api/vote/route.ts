@@ -35,11 +35,34 @@ export async function GET(req: NextRequest) {
   }
 }
 
+const RATE_LIMIT_PREFIX = 'vote_rate:';
+const RATE_LIMIT_WINDOW = 60; // seconds
+const RATE_LIMIT_MAX = 10; // max votes per window per IP
+
+function getClientIP(req: NextRequest): string {
+  return req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
+    req.headers.get('x-real-ip') ||
+    'unknown';
+}
+
 export async function POST(req: NextRequest) {
   let client;
 
   try {
     client = await getRedis();
+
+    // Rate limiting by IP
+    const ip = getClientIP(req);
+    const rateKey = `${RATE_LIMIT_PREFIX}${ip}`;
+    const currentCount = await client.incr(rateKey);
+    if (currentCount === 1) {
+      await client.expire(rateKey, RATE_LIMIT_WINDOW);
+    }
+    if (currentCount > RATE_LIMIT_MAX) {
+      await client.quit();
+      return NextResponse.json({ error: 'Too many votes. Try again in a minute.' }, { status: 429 });
+    }
+
     const { slug, email, customShow, unvote } = await req.json();
 
     if (customShow) {

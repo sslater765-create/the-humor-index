@@ -57,10 +57,9 @@ export default function EpisodeRow({ episode, rank, showSlug }: Props) {
             <p className="text-xs text-brand-text-muted"><span className="bg-blue-500 text-white font-bold text-[9px] px-1 py-0.5 rounded">Craft</span></p>
             <p className="font-mono text-xs text-brand-text-secondary">{episode.avg_craft.toFixed(1)}</p>
           </div>
-          <div className="text-right">
-            <p className="text-xs text-brand-text-muted hidden sm:block"><span className="bg-amber-500 text-white font-bold text-[9px] px-1 py-0.5 rounded">HI</span></p>
+          <div className="text-right w-12">
             <p
-              className="font-mono text-base font-medium"
+              className="font-mono text-sm font-semibold"
               style={{ color: scoreToColor(episode.humor_index) }}
             >
               {formatIndex(episode.humor_index)}
