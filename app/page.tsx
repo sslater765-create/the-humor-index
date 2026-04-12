@@ -103,6 +103,43 @@ export default async function HomePage() {
         </section>
       )}
 
+      {/* Featured insight */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-12">
+        <div className="bg-brand-card border border-brand-border rounded-xl p-6 sm:p-8">
+          <p className="text-xs uppercase tracking-widest text-brand-gold mb-3">Featured Insight</p>
+          <h3 className="text-xl sm:text-2xl font-medium text-brand-text-primary mb-3">
+            Better jokes don&apos;t always mean a funnier show.
+          </h3>
+          <p className="text-sm text-brand-text-secondary leading-relaxed mb-4 max-w-2xl">
+            Seinfeld beats The Office on craft, impact, <em>and</em> joke density.
+            But The Office scores higher on our Humor Index. Why? Because the Humor Index
+            measures the full picture — consistency, peak density, and how often a show
+            reaches elite comedy without dropping below average. A show with fewer weak
+            episodes beats one with higher highs but more clunkers.
+          </p>
+          <div className="flex flex-wrap gap-6 mb-5">
+            <div>
+              <p className="text-xs text-brand-text-muted mb-1">The Office</p>
+              <p className="font-mono text-2xl text-brand-gold">81.0</p>
+              <p className="text-[10px] text-brand-text-muted">12% episodes below 70</p>
+            </div>
+            <div>
+              <p className="text-xs text-brand-text-muted mb-1">Seinfeld</p>
+              <p className="font-mono text-2xl text-brand-text-primary">77.5</p>
+              <p className="text-[10px] text-brand-text-muted">20% episodes below 70</p>
+            </div>
+            <div>
+              <p className="text-xs text-brand-text-muted mb-1">Seinfeld Avg Craft</p>
+              <p className="font-mono text-2xl text-blue-400">7.0</p>
+              <p className="text-[10px] text-brand-text-muted">vs The Office 6.9</p>
+            </div>
+          </div>
+          <Link href="/blog/seinfeld-vs-the-office" className="text-sm text-brand-gold hover:underline">
+            Read the full analysis →
+          </Link>
+        </div>
+      </section>
+
       {/* Methodology teaser */}
       <section className="border-t border-brand-border bg-brand-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
