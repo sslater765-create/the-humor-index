@@ -27,6 +27,12 @@ export const JOKE_TYPE_LABELS: Record<JokeType, string> = {
   character_comedy: 'Character Comedy',
   irony_sarcasm: 'Irony/Sarcasm',
   meta_self_referential: 'Meta/Self-Referential',
+  escalation: 'Escalation',
+  deadpan_understatement: 'Deadpan/Understatement',
+  reaction_beat: 'Reaction Beat',
+  misdirection: 'Misdirection',
+  visual_gag: 'Visual Gag',
+  awkward_silence: 'Awkward Silence',
 };
 
 export const BRAND_COLORS = [

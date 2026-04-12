@@ -59,7 +59,7 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
             {sorted.map((show, i) => (
               <motion.tr
                 key={show.slug}
-                initial={{ opacity: 0, y: 8 }}
+                initial={false}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: i * 0.04, ease: 'easeOut' }}
                 className="border-b border-brand-border/50 hover:bg-brand-surface transition-colors"
@@ -94,7 +94,7 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
         {sorted.map((show, i) => (
           <motion.div
             key={show.slug}
-            initial={{ opacity: 0, y: 8 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: i * 0.04 }}
           >

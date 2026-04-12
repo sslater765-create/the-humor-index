@@ -11,6 +11,8 @@ export default function RankBadge({ rank }: Props) {
           ? 'border-brand-gold text-brand-gold'
           : 'border-brand-border text-brand-text-muted'
       }`}
+      aria-label={`Rank ${rank}`}
+      role="img"
     >
       {rank}
     </span>

@@ -1,260 +1,964 @@
 {
-  "episode_id": 88,
+  "show": "The Office",
   "slug": "the-office",
   "season": 4,
   "episode_number": 13,
   "title": "Dinner Party",
-  "humor_index": 93.4,
-  "jpm": 5.8,
-  "avg_craft": 8.4,
-  "avg_impact": 9.1,
-  "total_jokes": 18,
-  "dominant_joke_types": ["cringe_discomfort", "character_comedy"],
-  "air_date": "2008-04-10",
-  "weakest_section": "The wine tasting segment in the middle act drags slightly before Jan's breakdown.",
-  "standout_joke_ids": [3, 9, 14],
+  "humor_index": 100,
+  "jpm": 2.23,
+  "avg_craft": 7.8,
+  "avg_impact": 7.78,
+  "total_jokes": 49,
+  "dominant_joke_types": "[\"\\\"\", \"c\", \"e\"]",
+  "standout_joke_ids": "[5353, 5335, 5339]",
+  "weakest_section": "01:57-02:24 (subtitle glitch section)",
   "jokes": [
     {
-      "id": 1,
-      "joke_index": 1,
-      "timestamp_estimate": "02:14",
-      "text": "Michael shows off his condo by pointing to a tiny plasma TV mounted in the bedroom corner while Jan rolls her eyes.",
-      "characters": ["Michael Scott", "Jan Levinson"],
-      "joke_types": ["cringe_discomfort", "character_comedy"],
-      "setup": "Michael boasts about the 'plasma' screen in the bedroom, gesturing proudly at what appears to be a 42-inch TV awkwardly mounted in a corner.",
-      "punchline": "Jan quietly corrects: 'It's a 42 inch. The instructions said it needed to be at least six feet from the bed. There was only one option.'",
-      "craft_total": 8.2,
-      "impact_score": 8.7,
-      "quotability": 7.8,
-      "rewatch_bonus": true,
-      "is_callback": false,
-      "explanation": "The joke works on multiple levels — the size of the TV signals Michael's need to impress, while Jan's flat correction reveals the passive-aggression underlying their entire relationship."
+      "index": 1,
+      "text": "Everybody, I just got off the horn with corporate, and basically I told them where they could stick their overtime assignment.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael was just on phone complaining about overtime assignment",
+      "punchline": "Reveals he heroically 'fought' corporate when there likely was no assignment",
+      "craft_total": 6.95,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Classic Michael - creating fake heroic moment. Strong character integration with his need to be the hero."
     },
     {
-      "id": 2,
-      "joke_index": 2,
-      "timestamp_estimate": "04:47",
-      "text": "Jan unveils a candle she made in her enterprise — 'Serenity by Jan' — and makes everyone smell it.",
-      "characters": ["Jan Levinson", "Jim Halpert", "Pam Beesly"],
-      "joke_types": ["cringe_discomfort", "irony_sarcasm"],
-      "setup": "Jan proudly announces she has started a candle business called 'Serenity by Jan' from the condo.",
-      "punchline": "She thrusts the candle under Jim's nose. Jim: 'It smells like a... grandmother.' Jan: 'Cedar and vanilla.' Jim: 'Right.'",
-      "craft_total": 7.9,
-      "impact_score": 8.1,
-      "quotability": 8.4,
-      "rewatch_bonus": false,
-      "is_callback": false,
-      "explanation": "Jim's diplomatic fumble and Jan's oblivious correction perfectly captures the evening's dynamic: everyone trying not to puncture Jan's delusions."
-    },
-    {
-      "id": 3,
-      "joke_index": 3,
-      "timestamp_estimate": "08:31",
-      "text": "Michael reveals his 'workspace' is a tiny nook behind a curtain in the bedroom — essentially a closet with a laptop.",
-      "characters": ["Michael Scott", "Jim Halpert"],
-      "joke_types": ["cringe_discomfort", "character_comedy"],
-      "setup": "Michael offers to show Jim the condo's 'home office space' with clear pride.",
-      "punchline": "He pulls back a curtain to reveal a desk crammed into what is obviously a closet alcove, a string of Christmas lights the only decoration. Michael: 'I get a lot of work done in here. Mostly thinking.'",
-      "craft_total": 9.1,
-      "impact_score": 9.4,
-      "quotability": 9.0,
-      "rewatch_bonus": true,
-      "is_callback": false,
-      "explanation": "The physical reveal is the punchline — everything about the space communicates the power dynamic of their relationship without a word. Michael's oblivious pride makes it devastating."
-    },
-    {
-      "id": 4,
-      "joke_index": 4,
-      "timestamp_estimate": "11:02",
-      "text": "Jan tells the story of how she and Michael met — Michael's version is dramatically different.",
-      "characters": ["Jan Levinson", "Michael Scott", "Jim Halpert", "Pam Beesly"],
-      "joke_types": ["character_comedy", "irony_sarcasm"],
-      "setup": "Jan begins recounting how they fell in love, describing a slow burn of professional respect.",
-      "punchline": "Michael immediately interrupts with a version involving 'sparks flying instantly' and 'she couldn't keep her eyes off me in the conference room.' Jan stares at the table.",
-      "craft_total": 8.0,
-      "impact_score": 8.3,
-      "quotability": 7.5,
-      "rewatch_bonus": false,
-      "is_callback": false,
-      "explanation": "Two simultaneous reveals: that they remember the relationship completely differently, and that Jan is already defeated by the effort of correcting him."
-    },
-    {
-      "id": 5,
-      "joke_index": 5,
-      "timestamp_estimate": "14:18",
-      "text": "Hunter's music plays from the speakers — a song Jan clearly knows very well.",
-      "characters": ["Jan Levinson", "Michael Scott"],
-      "joke_types": ["callback", "cringe_discomfort"],
-      "setup": "Soft music begins playing over dinner. Michael helpfully notes it's by 'Jan's former assistant, Hunter — really talented kid.'",
-      "punchline": "Jan's face freezes. The song contains lines like 'You took me by the hand / Made me a man.' Michael bobs his head approvingly, oblivious.",
-      "craft_total": 9.3,
-      "impact_score": 9.6,
-      "quotability": 8.8,
-      "rewatch_bonus": true,
-      "is_callback": false,
-      "explanation": "The implication lands entirely through facial acting and lyrical subtext — the writing trusts the audience completely. One of the episode's best constructed moments."
-    },
-    {
-      "id": 6,
-      "joke_index": 6,
-      "timestamp_estimate": "17:44",
-      "text": "Andy and Angela's double date subplot converges: Angela ordered dry, Andy ordered wet — referring to their ribs preference.",
-      "characters": ["Andy Bernard", "Angela Martin"],
-      "joke_types": ["character_comedy", "running_gag"],
-      "setup": "Andy tries to be an attentive partner and asks about Angela's order.",
-      "punchline": "Angela's clipped 'dry' answer to everything is so monosyllabic that Jim and Pam in the car look at each other in silent concern.",
-      "craft_total": 7.4,
-      "impact_score": 7.8,
-      "quotability": 6.9,
-      "rewatch_bonus": false,
-      "is_callback": false,
-      "explanation": "Angela's comedic register is pure economy — her one-word answers are funnier than any punchline could be."
-    },
-    {
-      "id": 7,
-      "joke_index": 7,
-      "timestamp_estimate": "20:11",
-      "text": "Jan breaks out the Charades suggestion: 'Everybody knows Charades.'",
-      "characters": ["Jan Levinson", "Jim Halpert", "Pam Beesly", "Michael Scott"],
-      "joke_types": ["cringe_discomfort", "setup_punchline"],
-      "setup": "The dinner has hit an awkward lull and Jan suggests a game.",
-      "punchline": "Michael: 'I love Charades. I'm the best in the office.' Jim (to camera): 'He is. Somehow. It's disturbing.'",
-      "craft_total": 7.6,
-      "impact_score": 7.9,
-      "quotability": 7.2,
-      "rewatch_bonus": false,
-      "is_callback": false,
-      "explanation": "The talking head gives Jim permission to be complicit in Michael's absurdity, deepening the comedy of their reluctant friendship."
-    },
-    {
-      "id": 8,
-      "joke_index": 8,
-      "timestamp_estimate": "22:55",
-      "text": "Jan demands Michael put on Hunted — then sways to it alone while everyone watches.",
-      "characters": ["Jan Levinson"],
-      "joke_types": ["cringe_discomfort", "character_comedy"],
-      "setup": "Jan has refilled her wine glass for the fourth time and decides the music needs to change.",
-      "punchline": "She closes her eyes and slow-dances alone in the living room while Michael, Jim, and Pam sit frozen on the couch staring forward.",
-      "craft_total": 8.8,
-      "impact_score": 9.2,
+      "index": 2,
+      "text": "Michael has asked Pam and me to dinner at least nine times. And every time, we've been able to get out of it. But I've got to give him credit. He got me. Because I'm starting to suspect that there was no assignment from corporate.",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "observational",
+        "callback"
+      ],
+      "setup": "Jim realizes Michael's manipulation",
+      "punchline": "Michael created fake work crisis just to trap them into dinner",
+      "craft_total": 7.85,
+      "impact_score": 7.5,
       "quotability": 7.0,
-      "rewatch_bonus": true,
-      "is_callback": true,
-      "callback_reference": "Hunter's music from joke #5",
-      "explanation": "The callback to Hunter's music pays off physically — the visual of Jan dancing alone is more disturbing than anything the script could have said outright."
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent escalating realization with perfect timing. Jim's dawning horror is perfectly executed."
     },
     {
-      "id": 9,
-      "joke_index": 9,
-      "timestamp_estimate": "26:30",
-      "text": "Michael reveals the Dundie Award he won was placed as the centerpiece — the only decoration in the whole apartment.",
-      "characters": ["Michael Scott", "Pam Beesly"],
-      "joke_types": ["character_comedy", "irony_sarcasm"],
-      "setup": "Pam notices a gleaming object on the mantle and asks what it is.",
-      "punchline": "Michael: 'That is my Dundie. The Dundies are a very prestigious award. I've won it every year... because I give them out.' He says this with zero self-awareness.",
-      "craft_total": 9.0,
-      "impact_score": 9.5,
-      "quotability": 9.2,
-      "rewatch_bonus": true,
-      "is_callback": false,
-      "explanation": "The joke perfectly encapsulates Michael's character: he is simultaneously the giver and receiver of his own accolades and sees nothing unusual in this. Pam's reaction shot sells it."
+      "index": 3,
+      "text": "Does it bother me that I wasn't invited to Michael's dinner party? [long pause with no answer]",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "awkward_silence",
+        "reaction_beat"
+      ],
+      "setup": "Dwight asks rhetorical question about not being invited",
+      "punchline": "His silence reveals he's deeply bothered despite the question implying he shouldn't be",
+      "craft_total": 7.4,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect use of mockumentary format - the silence IS the punchline, showing Dwight's hurt despite his attempt at dignity."
     },
     {
-      "id": 10,
-      "joke_index": 10,
-      "timestamp_estimate": "29:14",
-      "text": "Jan throws Michael's Dundie at the plasma TV — and it shatters.",
-      "characters": ["Jan Levinson", "Michael Scott"],
-      "joke_types": ["physical_slapstick", "cringe_discomfort"],
-      "setup": "An argument escalates as Jan accuses Michael of undermining her candle business.",
-      "punchline": "Jan grabs the Dundie from the mantle and hurls it directly at the TV Michael was so proud of. The screen explodes. Michael: '...That's a 200-dollar TV, Jan.'",
-      "craft_total": 9.2,
-      "impact_score": 9.7,
-      "quotability": 9.1,
-      "rewatch_bonus": true,
-      "is_callback": true,
-      "callback_reference": "The plasma TV introduction from joke #1",
-      "explanation": "The physical comedy pays off the episode's two biggest setups simultaneously — the TV and the Dundie — in one act of destruction. Michael's understatement of the dollar amount is the final grace note."
+      "index": 5,
+      "text": "Let's see, since I saw you an hour ago? I have been getting ready, and then driving over here.",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "observational"
+      ],
+      "setup": "Michael asks what Jim's been up to as if they haven't seen each other in ages",
+      "punchline": "Jim literally describes the mundane hour since work ended",
+      "craft_total": 7.45,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfect Jim deadpan response to Michael's social overreach. Economy and timing are excellent."
     },
     {
-      "id": 11,
-      "joke_index": 11,
-      "timestamp_estimate": "31:44",
-      "text": "Jim tries to sneak out but Michael intercepts him at the door with puppy-dog eyes.",
-      "characters": ["Jim Halpert", "Michael Scott"],
-      "joke_types": ["cringe_discomfort", "character_comedy"],
-      "setup": "Jim motions to Pam that it's time to leave as Jan storms off to the bedroom.",
-      "punchline": "Michael materializes at the door: 'You're not leaving, are you? The night is young. Jan just needs a minute. She does this.' He says 'she does this' with crushing familiarity.",
-      "craft_total": 8.5,
-      "impact_score": 8.8,
-      "quotability": 8.6,
-      "rewatch_bonus": true,
-      "is_callback": false,
-      "explanation": "The line 'she does this' transforms the entire episode — this isn't an extraordinary night; this is their life. The horror and comedy land together."
+      "index": 6,
+      "text": "This will be great to cook with... really.",
+      "characters": [
+        "Jan"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "cringe_discomfort"
+      ],
+      "setup": "Jim and Pam bring wine as a gift",
+      "punchline": "Jan's passive-aggressive response suggests she's insulted by the choice",
+      "craft_total": 6.62,
+      "impact_score": 6.0,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Sets tone for Jan's hostility. The pause before 'really' sells the passive-aggression."
     },
     {
-      "id": 12,
-      "joke_index": 12,
-      "timestamp_estimate": "34:02",
-      "text": "Dwight arrives uninvited with a woman he introduces as his 'friend' — she appears to be a babysitter he's brought as a date.",
-      "characters": ["Dwight Schrute"],
-      "joke_types": ["absurdist", "character_comedy"],
-      "setup": "The doorbell rings unexpectedly. Michael, hoping for rescue, opens the door eagerly.",
-      "punchline": "Dwight stands there in his finest outfit next to a clearly bemused teenage girl he introduces as 'a woman I know from the area.'",
-      "craft_total": 7.8,
+      "index": 7,
+      "text": "So you have an office and a work space. / I do, you know. I just... I cannot create in the same space that I conduct business. I'm sure that you're the same with your odles.",
+      "characters": [
+        "Pam",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Michael shows off his pretentious dual-space setup",
+      "punchline": "Mispronounces 'doodles' as 'odles' while trying to sound sophisticated",
+      "craft_total": 7.5,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Michael malapropism while trying to appear cultured. 'Odles' is inherently funny and very quotable."
+    },
+    {
+      "index": 8,
+      "text": "Bond! Men love this one. James bond fire! I am Bond fire... James Bond fire. Michael Scott!",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Michael smells his candles and mentions bonfire scent",
+      "punchline": "Gets excited connecting 'Bond fire' to James Bond, then introduces himself like Bond",
+      "craft_total": 7.2,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Classic Michael getting carried away with wordplay. His excitement is infectious and the progression is perfectly absurd."
+    },
+    {
+      "index": 9,
+      "text": "When I get frustrated, or irritated or... angry, I come up here and I just smell all my candles! And it just goes away. Just like that.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael explains his anger management technique",
+      "punchline": "His method is literally just smelling candles, delivered with complete sincerity",
+      "craft_total": 7.58,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Absurd yet perfectly believable for Michael. The earnestness sells the ridiculousness."
+    },
+    {
+      "index": 10,
+      "text": "And these walls, they used to be, like white, like an asylum. So I wanted it to be softer so I had it painted in eggshell white. Guess what. White and eggshell white are exactly the same color.",
+      "characters": [
+        "Jan"
+      ],
+      "joke_types": [
+        "observational",
+        "cringe_discomfort"
+      ],
+      "setup": "Jan explains her sophisticated paint choice",
+      "punchline": "Admits the expensive 'upgrade' is literally identical to what was there",
+      "craft_total": 7.48,
       "impact_score": 8.0,
-      "quotability": 7.3,
-      "rewatch_bonus": false,
-      "is_callback": false,
-      "explanation": "Dwight's solution to being told there would be a dinner party is to locate a human female within 24 hours by any means necessary. The joke requires no explanation because Dwight requires no explanation."
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect setup and payoff. The asylum comparison makes it darker. Very relatable and quotable."
     },
     {
-      "id": 13,
-      "joke_index": 13,
-      "timestamp_estimate": "36:19",
-      "text": "Jan emerges from the bedroom having changed into a robe — and acts as if nothing happened.",
-      "characters": ["Jan Levinson", "Jim Halpert", "Pam Beesly"],
-      "joke_types": ["cringe_discomfort", "irony_sarcasm"],
-      "setup": "The group sits in uneasy silence after the Dundie incident.",
-      "punchline": "Jan glides out in a silk robe, pours a fresh glass of wine, and says brightly: 'Now. Who wants dessert?' The dissonance is total.",
-      "craft_total": 8.6,
+      "index": 11,
+      "text": "What a cute bench. / Thanks. That's my bed.",
+      "characters": [
+        "Pam",
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "cringe_discomfort"
+      ],
+      "setup": "Pam compliments what appears to be decorative furniture",
+      "punchline": "Michael reveals he sleeps on a tiny bench",
+      "craft_total": 8.3,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect setup/punchline structure. Four words completely recontextualize the situation. Economy is flawless."
+    },
+    {
+      "index": 12,
+      "text": "Jan has, uh, some space issues, so I curl up on that puppy.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael needs to explain why he sleeps on a bench",
+      "punchline": "Euphemistically calls sleeping on furniture 'curling up on that puppy'",
+      "craft_total": 7.33,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Michael's attempt to make his pathetic situation sound cute. 'That puppy' is endearingly delusional."
+    },
+    {
+      "index": 13,
+      "text": "I finally broke down and bought myself a plasma TV.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "setup_punchline"
+      ],
+      "setup": "Michael proudly announces his big purchase",
+      "punchline": "Visual reveals a comically small TV on the wall",
+      "craft_total": 7.42,
+      "impact_score": 8.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Classic visual contradiction between Michael's pride and the pathetic reality. Sets up the later TV destruction."
+    },
+    {
+      "index": 14,
+      "text": "Sometimes, I will just stand here and watch television for hours. I love it. I love this TV.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael describing his TV viewing habits",
+      "punchline": "His over-the-top devotion to a tiny TV while literally standing to watch it",
+      "craft_total": 7.25,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The repetition of 'I love' shows Michael trying to convince himself. Standing for hours is absurdly uncomfortable."
+    },
+    {
+      "index": 15,
+      "text": "What is that, chestnut? / No, it's either pine of nordic cherry. / It's pine.",
+      "characters": [
+        "Jim",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Jim asks about wood type, Michael tries to sound knowledgeable",
+      "punchline": "Michael confidently gives two options then immediately settles on the cheaper one",
+      "craft_total": 7.3,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's fake expertise crumbling immediately. The progression from fancy to basic is well-crafted."
+    },
+    {
+      "index": 16,
+      "text": "Yeah, he tried to set up my Tivo for me, but then I didn't have audio for a week.",
+      "characters": [
+        "Jan"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Context about Michael's handiness",
+      "punchline": "Jan reveals Michael's 'help' made things worse for a week",
+      "craft_total": 6.88,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Undercuts Michael's handy-man facade. Jan's casual cruelty is in character."
+    },
+    {
+      "index": 17,
+      "text": "They was between... the neon bier sign and the dundies. So I said, 'Honey, keep the trophies.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael explains dundies placement decision",
+      "punchline": "Reveals he chose a beer sign over his 'prestigious' awards",
+      "craft_total": 7.65,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect Michael logic - prioritizing trashy decoration over awards he claims to treasure. Good callback integration."
+    },
+    {
+      "index": 18,
+      "text": "What's up, Tuna? We gonna have some tuna for dinner? I bet you're sick of tuna. You've probably tuna every night.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Michael greets Jim with his 'Tuna' nickname",
+      "punchline": "Gets carried away with increasingly forced tuna puns, ending with verb form",
+      "craft_total": 6.55,
+      "impact_score": 6.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Classic Michael over-committing to a bit. 'You've probably tuna every night' is awkward but endearing."
+    },
+    {
+      "index": 19,
+      "text": "You know, Pam, in Spain, they often don't even start eating until midnight. / When in Rome.",
+      "characters": [
+        "Jan",
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Jan makes pretentious comment about Spanish dining customs",
+      "punchline": "Michael responds with wrong country idiom",
+      "craft_total": 8.3,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Michael malapropism. Two words completely undercut Jan's sophistication while showing Michael's eagerness to contribute."
+    },
+    {
+      "index": 20,
+      "text": "Kinda sorta an oaky afterbirth.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Michael attempts sophisticated wine tasting commentary",
+      "punchline": "Confuses 'aftertaste' with 'afterbirth' creating disturbing imagery",
+      "craft_total": 8.5,
       "impact_score": 9.0,
-      "quotability": 8.2,
-      "rewatch_bonus": true,
-      "is_callback": false,
-      "explanation": "The mood whiplash is the joke. Jan's ability to compartmentalize is both terrifying and deeply funny."
-    },
-    {
-      "id": 14,
-      "joke_index": 14,
-      "timestamp_estimate": "39:04",
-      "text": "Michael shows everyone the 'intimacy corner' — a single scented candle next to a beanbag chair.",
-      "characters": ["Michael Scott"],
-      "joke_types": ["cringe_discomfort", "character_comedy"],
-      "setup": "Michael offers a 'tour' of the condo's romantic spaces to fill the silence.",
-      "punchline": "He leads them to a corner of the living room with a beanbag chair, a battery-powered LED candle, and a framed photo of Michael. 'This is where I do my best thinking. And... romance.'",
-      "craft_total": 9.2,
-      "impact_score": 9.3,
-      "quotability": 8.9,
-      "rewatch_bonus": true,
-      "is_callback": false,
-      "explanation": "The framed photo of Michael himself in the 'romance corner' is the single funniest image of the episode. It captures his narcissism and loneliness simultaneously."
-    },
-    {
-      "id": 15,
-      "joke_index": 15,
-      "timestamp_estimate": "41:52",
-      "text": "As Jim and Pam finally leave, Michael whispers 'help me' — and then immediately turns back inside with a smile.",
-      "characters": ["Michael Scott", "Jim Halpert"],
-      "joke_types": ["character_comedy", "dark_subversive"],
-      "setup": "Jim and Pam manage to get to the door after Dwight creates a distraction.",
-      "punchline": "Michael shakes Jim's hand, then leans in and whispers 'help me.' Jim freezes. But before he can respond, Michael straightens up: 'Just kidding! Great night!' and closes the door.",
-      "craft_total": 9.4,
-      "impact_score": 9.6,
       "quotability": 9.5,
-      "rewatch_bonus": true,
-      "is_callback": false,
-      "explanation": "The moment walks a genuine tonal tightrope — is Michael joking or not? His immediate recovery makes it funny, but the ambiguity makes it haunting. A perfect Michael Scott beat."
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the most quoted Office lines ever. Perfect malapropism that creates viscerally funny imagery while showing Michael's pretensions."
+    },
+    {
+      "index": 21,
+      "text": "You took me by the hand / Made me a man / That one night / You made everything all right",
+      "characters": [
+        "Hunter (via recording)"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "setup_punchline"
+      ],
+      "setup": "Jan plays song by her former assistant",
+      "punchline": "Song reveals inappropriate relationship with obviously sexual lyrics",
+      "craft_total": 7.75,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Peak cringe comedy. The earnest amateur songwriting makes the inappropriate content even funnier."
+    },
+    {
+      "index": 22,
+      "text": "You know what? Hunter was a terrible assistant. That's why Ryan fired him. / He's probably just as reliable as Pam, because it usually takes you an afternoon to get back to me.",
+      "characters": [
+        "Michael",
+        "Jan"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Michael tries to dismiss Hunter after the song",
+      "punchline": "Jan immediately attacks Pam unprovoked, revealing her paranoia",
+      "craft_total": 7.58,
+      "impact_score": 8.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Jan's hostility escalating to include innocent Pam shows her instability. The abrupt redirect is uncomfortably funny."
+    },
+    {
+      "index": 23,
+      "text": "I don't care what they say about me. I just want to eat. Which I realize is a lot to ask for. At a dinner party.",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "observational"
+      ],
+      "setup": "Jim's talking head about the evening so far",
+      "punchline": "Sarcastically notes that wanting food at dinner party is unreasonable",
+      "craft_total": 8.2,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Jim deadpan. The pause before 'at a dinner party' sells the absurdity. Highly relatable and quotable."
+    },
+    {
+      "index": 24,
+      "text": "Michael and Jan seem to be playing their own separate game. And it's called, 'Let's see how uncomfortable we can make our guests.' And they're both winning.",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "observational",
+        "setup_punchline"
+      ],
+      "setup": "Jim observing Michael and Jan's behavior",
+      "punchline": "'They're both winning' at making guests uncomfortable",
+      "craft_total": 8.47,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Brilliant observation that reframes the chaos as competition. 'They're both winning' is perfect escalation and very quotable."
+    },
+    {
+      "index": 25,
+      "text": "You don't need two of you to do that. / That's true...",
+      "characters": [
+        "Jan",
+        "Pam"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Jim and Pam try to leave together due to apartment emergency",
+      "punchline": "Jan blocks their escape and Pam weakly agrees, abandoning Jim",
+      "craft_total": 7.22,
+      "impact_score": 7.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Jan's manipulation working and Pam's betrayal of Jim adds to the cringe. Shows how the hosts control their prisoners."
+    },
+    {
+      "index": 26,
+      "text": "You can buy new stuff, but you can't buy a new party.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Jim wants to check on his flooded apartment",
+      "punchline": "Michael's twisted logic prioritizing party over Jim's possessions",
+      "craft_total": 8.42,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Michael logic - sounds wise but is completely selfish. The phrasing makes it quotable and the logic is hilariously twisted."
+    },
+    {
+      "index": 27,
+      "text": "Rhymes with Parnold Schporzenegger. / No rhyming!",
+      "characters": [
+        "Michael",
+        "Jan"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Michael struggling at charades game",
+      "punchline": "His 'rhyme' is just mispronouncing Schwarzenegger ridiculously",
+      "craft_total": 7.98,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Classic Michael wordplay failure. 'Parnold Schporzenegger' is inherently hilarious and became highly quotable."
+    },
+    {
+      "index": 28,
+      "text": "God! Does anybody read the paper?!",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Everyone fails to guess Arnold Schwarzenegger",
+      "punchline": "Michael's frustrated outburst as if this is basic knowledge everyone should have",
+      "craft_total": 7.4,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Michael's exasperation at his own bad clues. His assumption that everyone else is stupid is perfectly in character."
+    },
+    {
+      "index": 29,
+      "text": "It's actually a really cute story. Do you wanna tell it, babe or should I tell it? / I don't like that story, babe. / Come on! It's a cute stor... Michael ran through the sliding glass door because he thought he heard the ice cream truck.",
+      "characters": [
+        "Jan",
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "cringe_discomfort"
+      ],
+      "setup": "Jan insists on telling embarrassing story despite Michael's protests",
+      "punchline": "Michael ran through glass door chasing ice cream truck like a child",
+      "craft_total": 8.28,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect cringe setup with Jan's sadistic 'cute story' framing. Michael's childish behavior is both pathetic and endearing."
+    },
+    {
+      "index": 30,
+      "text": "I mean, I like ice cream, okay? Sue me. / Oh, no, don't. I shouldn't say that jokingly because she will sue me. She loves to sue. She loves lawsuits.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Michael defends his ice cream enthusiasm",
+      "punchline": "Realizes 'sue me' joke is dangerous because Jan actually loves suing people",
+      "craft_total": 8.18,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Great escalation from innocent phrase to genuine fear. 'She loves lawsuits' reveals disturbing relationship dynamic."
+    },
+    {
+      "index": 31,
+      "text": "You are so right. You are so right! Because before I lived here, the glass was always covered in smudges. And I moved in and I cleaned it, so I guess that makes me the devil.",
+      "characters": [
+        "Jan"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael tries to defend Jan's cleaning making glass invisible",
+      "punchline": "Jan sarcastically accepts blame with victim complex",
+      "craft_total": 7.38,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Jan's passive-aggressive martyr complex on full display. The escalation to 'devil' shows her instability."
+    },
+    {
+      "index": 32,
+      "text": "You are! She is! She is the devil! I'm in hell! I'm burning. Help me.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "escalation",
+        "cringe_discomfort"
+      ],
+      "setup": "Jan calls herself the devil sarcastically",
+      "punchline": "Michael desperately agrees and begs guests for help",
+      "craft_total": 8.1,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Michael's desperate cry for help is both funny and genuinely sad. The escalation from joke to plea is masterfully done."
+    },
+    {
+      "index": 33,
+      "text": "You should see our bathroom after Michael takes a bath. / But I don't need to tell you, Pam.",
+      "characters": [
+        "Jan"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "setup_punchline"
+      ],
+      "setup": "Jan making disgusting comment about Michael's bathroom habits",
+      "punchline": "Implies Pam has seen Michael's bathroom aftermath, suggesting they dated",
+      "craft_total": 7.92,
+      "impact_score": 8.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Jan's jealousy creating false narrative about Pam and Michael. The gross-out combined with accusation maximizes discomfort."
+    },
+    {
+      "index": 34,
+      "text": "I have never, ever dated or wanted to do anything resembling dating Michael, ever. Not ever, not now, not then, not now, not ever, ever.",
+      "characters": [
+        "Pam"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Pam needs to deny Jan's implication about dating Michael",
+      "punchline": "Her denial becomes increasingly frantic and repetitive",
+      "craft_total": 7.9,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Pam's panic leading to over-denial is perfectly human. The repetition and scrambled timeline shows genuine distress."
+    },
+    {
+      "index": 35,
+      "text": "Did you know that candles are the number one fastest-growing product in the scent aroma market? $2 billion a year industry. And for only $10,000, you could become a co-owner of 'Serenity by Jan.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Michael pitching Jan's candle business with fake statistics",
+      "punchline": "Reveals the ridiculous $10,000 investment amount and pretentious business name",
+      "craft_total": 7.9,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect MLM pitch parody. 'Serenity by Jan' became iconic. The fake confidence in made-up statistics is classic Michael."
+    },
+    {
+      "index": 36,
+      "text": "Thought about it. I'm in.",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael's elaborate candle investment pitch",
+      "punchline": "Jim's instant, sarcastic agreement without any consideration",
+      "craft_total": 8.38,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Jim response - four words that completely deflate Michael's pitch. The deadpan timing is flawless."
+    },
+    {
+      "index": 37,
+      "text": "Dwight brought glasses and a person.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael explaining why Dwight couldn't come (no couple, no glasses)",
+      "punchline": "Reduces Dwight's date to simply 'a person' - completely dehumanizing",
+      "craft_total": 8.32,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Brilliant dehumanization of Dwight's date. 'A person' is hilariously reductive and shows Michael's self-centered worldview."
+    },
+    {
+      "index": 38,
+      "text": "Snip, snap! Snip, snap! Snip, snap! I did! You have no idea the physical toll that three vasectomies have on a person!",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "escalation",
+        "setup_punchline"
+      ],
+      "setup": "Michael and Jan arguing about having kids and vasectomies",
+      "punchline": "Reveals he's had THREE vasectomies with dramatic sound effects",
+      "craft_total": 9.25,
+      "impact_score": 10.0,
+      "quotability": 10.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Legendary Office moment. 'Snip snap' became cultural touchstone. Perfect escalation, shocking reveal, quotable forever. This is what a 9+ looks like."
+    },
+    {
+      "index": 39,
+      "text": "And I bought this condo to fill with children. / I am so sorry that I don't want to bring kids into this screwed-up world. / If you want to have kids, then fine, you win. Let's have a fuckin' kid!",
+      "characters": [
+        "Michael",
+        "Jan"
+      ],
+      "joke_types": [
+        "escalation",
+        "cringe_discomfort"
+      ],
+      "setup": "Fight escalating about children and Michael's sacrifices",
+      "punchline": "Jan's final explosive agreement delivered with maximum hostility",
+      "craft_total": 8.28,
+      "impact_score": 8.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Peak relationship toxicity on display. Jan's furious 'agreement' is perfectly performed rage. The escalation is masterful."
+    },
+    {
+      "index": 40,
+      "text": "I hate my life.",
+      "characters": [
+        "Jan"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael asking if she really wants kids after her outburst",
+      "punchline": "Jan's flat, honest admission of complete despair",
+      "craft_total": 8.12,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Three words that perfectly capture the evening and Jan's mental state. The delivery makes it both funny and deeply sad."
+    },
+    {
+      "index": 41,
+      "text": "The thought of popping one of your beets into my mouth makes me want to vomit.",
+      "characters": [
+        "Angela"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Dwight offering Angela beet salad, claiming she loves it",
+      "punchline": "Angela's visceral, over-the-top rejection with sexual undertones",
+      "craft_total": 8.07,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Angela disgust delivered with unintended innuendo. 'Popping one of your beets' sounds sexual and her revulsion is hilarious."
+    },
+    {
+      "index": 42,
+      "text": "I can't prove it, but I think she might be trying to poison me.",
+      "characters": [
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Pam worried about Jan's behavior",
+      "punchline": "Paranoid theory that Jan might poison her food",
+      "craft_total": 7.55,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Pam's paranoia is both reasonable and absurd given Jan's hostility. The matter-of-fact delivery sells it."
+    },
+    {
+      "index": 43,
+      "text": "I know Jan didn't poison the food. I know that. But if she was going to poison the food of someone at that table, wouldn't it be me? Michael's former lover.",
+      "characters": [
+        "Pam"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Pam trying to be rational about poisoning fear",
+      "punchline": "Convinces herself she'd be the target as 'Michael's former lover'",
+      "craft_total": 8.1,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Great escalation where Pam talks herself into greater paranoia. 'Former lover' callback to Jan's delusion is perfect."
+    },
+    {
+      "index": 44,
+      "text": "You know I have soft teeth. How could you say that?",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Jan called something Michael did disgusting",
+      "punchline": "Michael's hurt response reveals embarrassing 'soft teeth' condition",
+      "craft_total": 8.35,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Soft teeth' is inherently funny and pathetic. Michael's wounded delivery makes it both absurd and sad. Highly quotable."
+    },
+    {
+      "index": 45,
+      "text": "I was his babysitter. / And now you guys are dating? / It's purely carnal, that's all you need to know.",
+      "characters": [
+        "Mose",
+        "Pam",
+        "Mose"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "cringe_discomfort"
+      ],
+      "setup": "Pam asks how Mose and his date know each other",
+      "punchline": "Reveals inappropriate babysitter relationship now 'purely carnal'",
+      "craft_total": 8.2,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect escalation from innocent to disturbing. 'Purely carnal' delivered matter-of-factly is peak cringe comedy."
+    },
+    {
+      "index": 46,
+      "text": "At least he's an artist. / B.F.D., I'm a screenwriter. And I'm a candle maker, but you don't hear me bragging about it! / No, all you do is you get me to try to work on my rich friends.",
+      "characters": [
+        "Jan",
+        "Michael"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Jan defending Hunter as an artist",
+      "punchline": "Michael's defensive listing of his 'artistic' pursuits and Jan's cutting response",
+      "craft_total": 7.78,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Michael's pathetic attempt to compete with Hunter backfires. Jan's response reveals the MLM pressure perfectly."
+    },
+    {
+      "index": 47,
+      "text": "Man, I would love to burn your candles! / You burn it, you buy it! / Oh, good, I'll be your first customer! / You're hardly my first. / That's what she said!",
+      "characters": [
+        "Jim",
+        "Jan",
+        "Jim",
+        "Jan",
+        "Michael"
+      ],
+      "joke_types": [
+        "escalation",
+        "callback"
+      ],
+      "setup": "Argument about candle business escalating",
+      "punchline": "Michael's perfectly timed 'That's what she said' during heated fight",
+      "craft_total": 8.35,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect timing in middle of serious fight. Michael can't help himself even during relationship crisis. Great callback usage."
+    },
+    {
+      "index": 48,
+      "text": "That is a $200 plasma screen TV that you just killed! Good luck paying me back on your zero dollars a year salary plus benefits, babe!",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "escalation",
+        "callback"
+      ],
+      "setup": "Jan throws Dundie at Michael's TV during fight",
+      "punchline": "Michael's specific price point and cruel salary dig at Jan",
+      "craft_total": 7.98,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect callback to the tiny TV setup. '$200' makes it even more pathetic. Michael's cruelest moment becomes quotable."
+    },
+    {
+      "index": 49,
+      "text": "My girlfriend threw a dundie at my TV. A plasma.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Police asking about the disturbance",
+      "punchline": "Michael's matter-of-fact explanation emphasizing it's a plasma TV",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Michael's priorities perfectly clear - emphasizing 'plasma' to police. Callbacks to both dundies and TV obsession."
+    },
+    {
+      "index": 50,
+      "text": "I stole this. For you, babe.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael and Dwight at Denny's after the disaster",
+      "punchline": "Michael reveals he stole something from Denny's 'romantically'",
+      "craft_total": 7.8,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect ending showing Michael's misplaced romantic gestures. Stealing from Denny's for Dwight is perfectly pathetic."
     }
   ]
 }

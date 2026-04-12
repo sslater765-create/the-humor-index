@@ -16,7 +16,13 @@ export type JokeType =
   | 'observational'
   | 'character_comedy'
   | 'irony_sarcasm'
-  | 'meta_self_referential';
+  | 'meta_self_referential'
+  | 'escalation'
+  | 'deadpan_understatement'
+  | 'reaction_beat'
+  | 'misdirection'
+  | 'visual_gag'
+  | 'awkward_silence';
 
 export interface ShowScore {
   show_id: number;

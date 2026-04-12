@@ -23,45 +23,47 @@ export default function JokeRow({ joke, isStandout }: Props) {
         className="w-full text-left p-4"
         onClick={() => setExpanded(!expanded)}
       >
-        <div className="flex items-start gap-3">
-          <span className="font-mono text-xs text-brand-text-muted shrink-0 pt-0.5">
-            {joke.timestamp_estimate}
-          </span>
-          <div className="flex-1 min-w-0">
-            <p className="text-sm text-brand-text-primary">{joke.text}</p>
-            <div className="flex flex-wrap items-center gap-1.5 mt-2">
-              {joke.characters.map(c => (
-                <span key={c} className="text-xs text-brand-text-muted border border-brand-border rounded px-1.5 py-0.5">
-                  {c}
-                </span>
-              ))}
-              {joke.joke_types.map(t => (
-                <span key={t} className="text-xs text-brand-blue border border-brand-blue/30 rounded px-1.5 py-0.5">
-                  {JOKE_TYPE_LABELS[t]}
-                </span>
-              ))}
-              {joke.rewatch_bonus && (
-                <span className="text-xs text-brand-gold border border-brand-gold/30 rounded px-1.5 py-0.5">
-                  ★ Rewatch
-                </span>
-              )}
-              {joke.is_callback && (
-                <span className="text-xs text-brand-purple border border-brand-purple/30 rounded px-1.5 py-0.5">
-                  Callback
-                </span>
-              )}
+        <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-3">
+          <div className="flex items-start gap-2 flex-1 min-w-0">
+            <span className="font-mono text-xs text-brand-text-muted shrink-0 pt-0.5">
+              {joke.timestamp_estimate}
+            </span>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm text-brand-text-primary leading-relaxed">{joke.text}</p>
+              <div className="flex flex-wrap items-center gap-1 mt-2">
+                {joke.characters.map(c => (
+                  <span key={c} className="text-[11px] text-brand-text-muted border border-brand-border rounded px-1.5 py-0.5">
+                    {c}
+                  </span>
+                ))}
+                {joke.joke_types.map(t => (
+                  <span key={t} className="text-[11px] text-brand-blue border border-brand-blue/30 rounded px-1.5 py-0.5">
+                    {JOKE_TYPE_LABELS[t]}
+                  </span>
+                ))}
+                {!!joke.rewatch_bonus && (
+                  <span className="text-[11px] text-brand-gold border border-brand-gold/30 rounded px-1.5 py-0.5">
+                    ★ Rewatch
+                  </span>
+                )}
+                {!!joke.is_callback && (
+                  <span className="text-[11px] text-brand-purple border border-brand-purple/30 rounded px-1.5 py-0.5">
+                    Callback
+                  </span>
+                )}
+              </div>
             </div>
           </div>
-          <div className="flex gap-3 shrink-0">
-            <div className="text-right">
-              <p className="text-xs uppercase tracking-widest text-brand-text-muted">Craft</p>
+          <div className="flex items-center gap-3 shrink-0 pl-6 sm:pl-0">
+            <div className="text-center sm:text-right">
+              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Craft</p>
               <p className="font-mono text-sm text-brand-text-secondary">{joke.craft_total.toFixed(1)}</p>
             </div>
-            <div className="text-right">
-              <p className="text-xs uppercase tracking-widest text-brand-text-muted">Impact</p>
+            <div className="text-center sm:text-right">
+              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Impact</p>
               <p className="font-mono text-sm text-brand-gold">{joke.impact_score.toFixed(1)}</p>
             </div>
-            <span className="text-brand-text-muted text-xs pt-1">{expanded ? '▲' : '▼'}</span>
+            <span className="text-brand-text-muted text-xs">{expanded ? '▲' : '▼'}</span>
           </div>
         </div>
       </button>
@@ -80,7 +82,7 @@ export default function JokeRow({ joke, isStandout }: Props) {
             <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Why it works</p>
             <p className="text-sm text-brand-text-secondary">{joke.explanation}</p>
           </div>
-          {joke.is_callback && joke.callback_reference && (
+          {!!joke.is_callback && joke.callback_reference && (
             <div>
               <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Callback to</p>
               <p className="text-sm text-brand-purple">{joke.callback_reference}</p>

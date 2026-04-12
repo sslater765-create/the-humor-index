@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getAllShows } from '@/lib/data';
+import { getAllShows, getEpisodes } from '@/lib/data';
 import LeaderboardClient from './LeaderboardClient';
 
 export const dynamic = 'force-static';
@@ -7,24 +7,48 @@ export const dynamic = 'force-static';
 export default async function HomePage() {
   const shows = await getAllShows();
 
-  const totalEpisodes = shows.reduce((s, show) => s + show.total_episodes, 0);
+  const analyzedShows = shows.filter(s => s.humor_index > 0);
+  let totalEpisodesAnalyzed = 0;
+  for (const show of analyzedShows) {
+    try {
+      const eps = await getEpisodes(show.slug);
+      totalEpisodesAnalyzed += eps.length;
+    } catch { /* no episodes yet */ }
+  }
   const totalJokes = shows.reduce((s, show) => s + show.total_jokes_analyzed, 0);
-  const totalSeasons = shows.reduce((s, show) => s + show.total_seasons, 0);
+  const totalSeasons = analyzedShows.reduce((s, show) => s + (show.humor_index > 0 ? show.total_seasons : 0), 0);
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'The Humor Index',
+    url: 'https://thehumorindex.com',
+    description: 'AI-powered comedy analytics ranking every joke in television history.',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://thehumorindex.com/shows?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  };
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section className="border-b border-brand-border bg-brand-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-24">
+          <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mb-3 sm:mb-4">
             Comedy Analytics
           </p>
-          <h1 className="text-3xl sm:text-5xl font-medium text-brand-text-primary max-w-2xl leading-tight">
+          <h1 className="text-2xl sm:text-5xl font-medium text-brand-text-primary max-w-2xl leading-tight text-balance">
             The definitive science of what&apos;s funny.
           </h1>
-          <p className="mt-4 text-brand-text-secondary text-base sm:text-lg max-w-xl">
+          <p className="mt-3 sm:mt-4 text-brand-text-secondary text-sm sm:text-lg max-w-xl">
             We analyzed{' '}
-            <span className="font-mono text-brand-gold">{totalEpisodes.toLocaleString()}</span>{' '}
+            <span className="font-mono text-brand-gold">{totalEpisodesAnalyzed.toLocaleString()}</span>{' '}
             episodes,{' '}
             <span className="font-mono text-brand-gold">{totalJokes.toLocaleString()}</span>{' '}
             jokes, and{' '}
@@ -54,7 +78,7 @@ export default async function HomePage() {
           <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Rankings</p>
           <h2 className="text-xl font-medium text-brand-text-primary">Top Shows</h2>
         </div>
-        <LeaderboardClient shows={shows} />
+        <LeaderboardClient shows={shows.filter(s => s.humor_index > 0)} />
       </section>
 
       {/* Latest analysis callout */}

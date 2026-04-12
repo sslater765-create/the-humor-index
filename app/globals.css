@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,10 +12,41 @@ body {
   background: var(--background);
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Prevent horizontal overflow on mobile */
+  overflow-x: hidden;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* Smoother touch scrolling */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Prevent tap highlight flash on mobile */
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Increase touch targets — min 44px per Apple HIG */
+@media (max-width: 640px) {
+  button, a, select {
+    min-height: 44px;
+  }
+}
+
+/* Safe area padding for notched phones */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  footer {
+    padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+  }
+  nav {
+    padding-top: env(safe-area-inset-top);
+  }
 }
 
 @layer utilities {
