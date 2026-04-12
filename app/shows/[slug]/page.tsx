@@ -47,8 +47,8 @@ export default async function ShowPage({ params }: { params: { slug: string } })
     total_jokes: c.total_jokes,
     avg_craft: c.avg_craft,
     avg_impact: c.avg_impact,
-    jpm: 0,
-    screen_time_minutes: c.episodes_appeared * 22,
+    jpm: c.avg_impact,
+    screen_time_minutes: Math.round(Math.sqrt(c.total_jokes) * 5),
     dominant_types: c.dominant_types,
   }));
 
