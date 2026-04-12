@@ -43,6 +43,12 @@ export default function EpisodeRow({ episode, rank, showSlug }: Props) {
           </div>
         </div>
         <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+          {episode.imdb_rating && (
+            <div className="text-right hidden sm:block">
+              <p className="text-xs uppercase tracking-widest text-brand-text-muted">IMDb</p>
+              <p className="font-mono text-xs text-brand-text-secondary">{episode.imdb_rating.toFixed(1)}</p>
+            </div>
+          )}
           <div className="text-right hidden sm:block">
             <p className="text-xs uppercase tracking-widest text-brand-text-muted">JPM</p>
             <p className="font-mono text-xs text-brand-text-secondary">{episode.jpm.toFixed(1)}</p>

@@ -73,10 +73,13 @@ export default async function ShowPage({ params }: { params: { slug: string } })
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
         <div className="flex flex-col sm:flex-row items-center gap-6">
           <ScoreGauge score={show.humor_index} size={130} label="Humor Index" />
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 flex-1 w-full">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 flex-1 w-full">
             <ScoreCard label="JPM" value={show.avg_jpm} sub="Jokes per minute" />
             <ScoreCard label="Craft" value={show.avg_craft} sub="Avg craft score" />
             <ScoreCard label="Impact" value={show.avg_impact} sub="Avg impact score" />
+            {show.avg_imdb_rating && (
+              <ScoreCard label="IMDb" value={show.avg_imdb_rating} sub="Avg episode rating" />
+            )}
             <ScoreCard
               label="Jokes Analyzed"
               value={show.total_jokes_analyzed.toLocaleString()}

@@ -39,6 +39,7 @@ export interface ShowScore {
   total_jokes_analyzed: number;
   description: string;
   rank?: number;
+  avg_imdb_rating?: number;
 }
 
 export interface SeasonScore {
@@ -68,6 +69,8 @@ export interface EpisodeScore {
   total_jokes: number;
   dominant_joke_types: JokeType[];
   air_date?: string;
+  imdb_rating?: number;
+  imdb_votes?: number;
 }
 
 export interface Joke {

@@ -170,7 +170,11 @@ export default async function EpisodePage({
           <ScoreCard label="JPM" value={detail.jpm} />
           <ScoreCard label="Craft" value={detail.avg_craft} />
           <ScoreCard label="Impact" value={detail.avg_impact} />
-          <ScoreCard label="Total Jokes" value={detail.total_jokes} />
+          {detail.imdb_rating ? (
+            <ScoreCard label="IMDb" value={detail.imdb_rating} sub={`${(detail.imdb_votes ?? 0).toLocaleString()} votes`} />
+          ) : (
+            <ScoreCard label="Total Jokes" value={detail.total_jokes} />
+          )}
         </div>
       </div>
 

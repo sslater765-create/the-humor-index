@@ -48,7 +48,7 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-brand-border">
-              {['Rank', 'Show', 'Format', 'Seasons', 'Humor Index', 'JPM', 'Craft', 'Impact', 'Best Season'].map(h => (
+              {['Rank', 'Show', 'Format', 'Seasons', 'Humor Index', 'IMDb', 'JPM', 'Craft', 'Impact', 'Best Season'].map(h => (
                 <th key={h} className="text-left text-xs uppercase tracking-widest text-brand-text-muted font-normal pb-3 pr-4 first:pl-0">
                   {h}
                 </th>
@@ -79,6 +79,7 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
                 <td className="py-3 pr-4 font-mono font-medium" style={{ color: scoreToColor(show.humor_index) }}>
                   {formatIndex(show.humor_index)}
                 </td>
+                <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_imdb_rating?.toFixed(1) ?? '—'}</td>
                 <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_jpm.toFixed(1)}</td>
                 <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_craft.toFixed(1)}</td>
                 <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_impact.toFixed(1)}</td>
@@ -110,6 +111,9 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
                   </span>
                 </div>
                 <div className="flex gap-4 text-xs text-brand-text-muted">
+                  {show.avg_imdb_rating && (
+                    <span>IMDb <span className="font-mono text-brand-text-secondary">{show.avg_imdb_rating.toFixed(1)}</span></span>
+                  )}
                   <span>JPM <span className="font-mono text-brand-text-secondary">{show.avg_jpm.toFixed(1)}</span></span>
                   <span>Craft <span className="font-mono text-brand-text-secondary">{show.avg_craft.toFixed(1)}</span></span>
                   <span>Best S<span className="font-mono text-brand-text-secondary">{show.best_season}</span></span>
