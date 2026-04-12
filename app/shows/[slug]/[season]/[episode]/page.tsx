@@ -168,6 +168,31 @@ export default async function EpisodePage({
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-4 pb-8">
+        {/* Episode description */}
+        {(detail as any).tmdb_overview && (
+          <p className="text-sm text-brand-text-secondary leading-relaxed mb-4">
+            {(detail as any).tmdb_overview}
+          </p>
+        )}
+
+        {/* Guest stars */}
+        {(detail as any).guest_stars?.length > 0 && (
+          <div className="flex flex-wrap items-center gap-1 mb-4 text-xs text-brand-text-muted">
+            <span>Featuring</span>
+            {(detail as any).guest_stars.slice(0, 6).map((g: any, i: number) => (
+              <span key={i}>
+                <Link
+                  href={`/shows/${params.slug}/characters/${encodeURIComponent(g.character?.split(' ')[0] || g.name)}`}
+                  className="text-brand-text-secondary hover:text-brand-gold transition-colors"
+                >
+                  {g.name}
+                </Link>
+                {i < Math.min((detail as any).guest_stars.length, 6) - 1 && ','}
+              </span>
+            ))}
+          </div>
+        )}
+
         <div className="flex items-center gap-3 mb-6">
           <StreamingLinks
             showSlug={params.slug}
@@ -203,7 +228,7 @@ export default async function EpisodePage({
           </p>
           <div className="space-y-3">
             {standoutJokes.map(joke => (
-              <JokeRow key={joke.id} joke={joke} isStandout />
+              <JokeRow key={joke.id} joke={joke} isStandout showSlug={params.slug} />
             ))}
           </div>
         </section>
@@ -216,7 +241,7 @@ export default async function EpisodePage({
         </p>
         <div className="space-y-2">
           {regularJokes.map(joke => (
-            <JokeRow key={joke.id} joke={joke} />
+            <JokeRow key={joke.id} joke={joke} showSlug={params.slug} />
           ))}
         </div>
       </section>

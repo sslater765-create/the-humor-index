@@ -88,10 +88,31 @@ export default async function CharacterPage({
           </nav>
 
           <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">Character Analysis</p>
-          <h1 className="text-2xl sm:text-3xl font-medium text-brand-text-primary">{character.name}</h1>
-          <p className="text-sm text-brand-text-muted mt-1">
-            {character.total_jokes} jokes across {character.episodes_appeared} episodes of {show.name}
-          </p>
+          <div className="flex items-end gap-4">
+            {character.profile_path && (
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-brand-gold/30 shrink-0">
+                <Image
+                  src={`https://image.tmdb.org/t/p/w185${character.profile_path}`}
+                  alt={character.actor || character.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            )}
+            <div>
+              <h1 className="text-2xl sm:text-3xl font-medium text-brand-text-primary">
+                {character.character_full_name || character.name}
+              </h1>
+              {character.actor && (
+                <p className="text-sm text-brand-text-secondary mt-0.5">
+                  Played by <span className="text-brand-text-primary">{character.actor}</span>
+                </p>
+              )}
+              <p className="text-xs text-brand-text-muted mt-1">
+                {character.total_jokes} jokes across {character.episodes_appeared} episodes of {show.name}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

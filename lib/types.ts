@@ -111,6 +111,9 @@ export interface CharacterProfile {
   avg_impact: number;
   episodes_appeared: number;
   dominant_types: JokeType[];
+  actor?: string;
+  profile_path?: string;
+  character_full_name?: string;
 }
 
 export interface CharacterStats {

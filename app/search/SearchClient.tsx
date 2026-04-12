@@ -27,16 +27,17 @@ export default function SearchClient({ jokes }: { jokes: SearchableJoke[] }) {
 
   // Build suggestion index: characters, episode titles, show names
   const suggestionIndex = useMemo(() => {
-    const items = new Map<string, { label: string; type: 'character' | 'episode' | 'show'; count: number }>();
+    const items = new Map<string, { label: string; type: 'character' | 'episode' | 'show'; count: number; slug?: string }>();
     jokes.forEach(j => {
       j.characters.forEach(c => {
-        const existing = items.get(c.toLowerCase());
+        const key = `${c.toLowerCase()}-${j.showSlug}`;
+        const existing = items.get(key);
         if (existing) existing.count++;
-        else items.set(c.toLowerCase(), { label: c, type: 'character', count: 1 });
+        else items.set(key, { label: c, type: 'character', count: 1, slug: j.showSlug });
       });
       const epKey = `${j.showName} S${j.season}E${String(j.episodeNumber).padStart(2, '0')} ${j.episodeTitle}`;
       if (!items.has(epKey.toLowerCase())) {
-        items.set(epKey.toLowerCase(), { label: epKey, type: 'episode', count: 1 });
+        items.set(epKey.toLowerCase(), { label: epKey, type: 'episode', count: 1, slug: j.showSlug });
       }
     });
     return Array.from(items.values()).sort((a, b) => b.count - a.count);
@@ -113,17 +114,30 @@ export default function SearchClient({ jokes }: { jokes: SearchableJoke[] }) {
           {suggestions.length > 0 && (
             <div className="absolute z-20 left-0 right-0 top-full mt-1 bg-brand-card border border-brand-border rounded-xl overflow-hidden shadow-lg">
               {suggestions.map((s, i) => (
-                <button
-                  key={`${s.label}-${i}`}
-                  onMouseDown={e => e.preventDefault()}
-                  onClick={() => selectSuggestion(s.label)}
-                  className="w-full text-left px-4 py-2.5 text-sm hover:bg-brand-surface transition-colors flex items-center justify-between"
-                >
-                  <span className="text-brand-text-primary truncate">{s.label}</span>
-                  <span className="text-[10px] uppercase tracking-widest text-brand-text-muted shrink-0 ml-2">
-                    {s.type === 'character' ? `${s.count} jokes` : s.type}
-                  </span>
-                </button>
+                s.type === 'character' && s.slug ? (
+                  <Link
+                    key={`${s.label}-${i}`}
+                    href={`/shows/${s.slug}/characters/${encodeURIComponent(s.label)}`}
+                    className="w-full text-left px-4 py-2.5 text-sm hover:bg-brand-surface transition-colors flex items-center justify-between"
+                  >
+                    <span className="text-brand-text-primary truncate">{s.label}</span>
+                    <span className="text-[10px] uppercase tracking-widest text-brand-text-muted shrink-0 ml-2">
+                      {s.count} jokes · character
+                    </span>
+                  </Link>
+                ) : (
+                  <button
+                    key={`${s.label}-${i}`}
+                    onMouseDown={e => e.preventDefault()}
+                    onClick={() => selectSuggestion(s.label)}
+                    className="w-full text-left px-4 py-2.5 text-sm hover:bg-brand-surface transition-colors flex items-center justify-between"
+                  >
+                    <span className="text-brand-text-primary truncate">{s.label}</span>
+                    <span className="text-[10px] uppercase tracking-widest text-brand-text-muted shrink-0 ml-2">
+                      {s.type}
+                    </span>
+                  </button>
+                )
               ))}
             </div>
           )}
@@ -188,9 +202,16 @@ export default function SearchClient({ jokes }: { jokes: SearchableJoke[] }) {
                 <p className="text-sm text-brand-text-primary leading-relaxed mb-2">
                   {joke.text}
                 </p>
-                <div className="flex gap-1.5 flex-wrap">
+                <div className="flex gap-1.5 flex-wrap" onClick={e => e.preventDefault()}>
                   {joke.characters.map(c => (
-                    <span key={c} className="text-xs text-brand-text-muted">{c}</span>
+                    <Link
+                      key={c}
+                      href={`/shows/${joke.showSlug}/characters/${encodeURIComponent(c)}`}
+                      className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors"
+                      onClick={e => e.stopPropagation()}
+                    >
+                      {c}
+                    </Link>
                   ))}
                   <span className="text-brand-border">·</span>
                   {joke.joke_types.map(t => (

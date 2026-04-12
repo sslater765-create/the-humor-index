@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { getShow, getSeasons, getEpisodes } from '@/lib/data';
+import { getShow, getSeasons, getEpisodes, getCharacters } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
-import { MOCK_CHARACTER_DATA, SHOW_SLUGS } from '@/lib/constants';
+import { SHOW_SLUGS } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
 import ScoreGauge from '@/components/ui/ScoreGauge';
 import FormatBadge from '@/components/ui/FormatBadge';
@@ -35,12 +35,22 @@ export default async function ShowPage({ params }: { params: { slug: string } })
   const show = await getShow(params.slug);
   if (!show) notFound();
 
-  const [seasons, episodes] = await Promise.all([
+  const [seasons, episodes, realCharacters] = await Promise.all([
     getSeasons(params.slug),
     getEpisodes(params.slug),
+    getCharacters(params.slug),
   ]);
 
-  const characters = MOCK_CHARACTER_DATA[params.slug as keyof typeof MOCK_CHARACTER_DATA] ?? [];
+  // Map real character data to CharacterStats format for charts
+  const characters = realCharacters.slice(0, 15).map(c => ({
+    name: c.name,
+    total_jokes: c.total_jokes,
+    avg_craft: c.avg_craft,
+    avg_impact: c.avg_impact,
+    jpm: 0,
+    screen_time_minutes: c.episodes_appeared * 22,
+    dominant_types: c.dominant_types,
+  }));
 
   const jsonLd = {
     '@context': 'https://schema.org',

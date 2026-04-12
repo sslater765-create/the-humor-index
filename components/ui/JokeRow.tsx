@@ -1,14 +1,16 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import { Joke } from '@/lib/types';
 import { JOKE_TYPE_LABELS } from '@/lib/scoring';
 
 interface Props {
   joke: Joke;
   isStandout?: boolean;
+  showSlug?: string;
 }
 
-export default function JokeRow({ joke, isStandout }: Props) {
+export default function JokeRow({ joke, isStandout, showSlug }: Props) {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -32,9 +34,20 @@ export default function JokeRow({ joke, isStandout }: Props) {
               <p className="text-sm text-brand-text-primary leading-relaxed">{joke.text}</p>
               <div className="flex flex-wrap items-center gap-1 mt-2">
                 {joke.characters.map(c => (
-                  <span key={c} className="text-[11px] text-brand-text-muted border border-brand-border rounded px-1.5 py-0.5">
-                    {c}
-                  </span>
+                  showSlug ? (
+                    <Link
+                      key={c}
+                      href={`/shows/${showSlug}/characters/${encodeURIComponent(c)}`}
+                      className="text-[11px] text-brand-text-muted border border-brand-border rounded px-1.5 py-0.5 hover:text-brand-gold hover:border-brand-gold/50 transition-colors"
+                      onClick={e => e.stopPropagation()}
+                    >
+                      {c}
+                    </Link>
+                  ) : (
+                    <span key={c} className="text-[11px] text-brand-text-muted border border-brand-border rounded px-1.5 py-0.5">
+                      {c}
+                    </span>
+                  )
                 ))}
                 {joke.joke_types.map(t => (
                   <span key={t} className="text-[11px] text-brand-blue border border-brand-blue/30 rounded px-1.5 py-0.5">

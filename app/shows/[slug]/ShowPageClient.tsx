@@ -232,6 +232,28 @@ export default function ShowPageClient({ show, seasons, episodes, characters }: 
         >
           <CharacterBubbleChart characters={characters} showName={show.name} />
           <CharacterBarChart characters={characters} showName={show.name} />
+
+          {/* Clickable character list */}
+          <div className="bg-brand-card border border-brand-border rounded-xl p-5">
+            <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">All Characters</p>
+            <p className="text-base font-medium text-brand-text-primary mb-4">Explore by Character</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {[...characters].sort((a, b) => b.total_jokes - a.total_jokes).map(c => (
+                <Link
+                  key={c.name}
+                  href={`/shows/${show.slug}/characters/${encodeURIComponent(c.name)}`}
+                  className="flex items-center justify-between p-3 rounded-lg hover:bg-brand-surface transition-colors group"
+                >
+                  <span className="text-sm text-brand-text-secondary group-hover:text-brand-gold transition-colors truncate">
+                    {c.name}
+                  </span>
+                  <span className="font-mono text-xs text-brand-text-muted shrink-0 ml-2">
+                    {c.total_jokes}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
         </motion.div>
       )}
 
