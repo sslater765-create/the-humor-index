@@ -19,6 +19,10 @@ export const viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://thehumorindex.com'),
+  icons: {
+    icon: '/favicon-400.png',
+    apple: '/favicon-400.png',
+  },
   title: {
     default: "The Humor Index — The Science of What's Funny",
     template: '%s | The Humor Index',

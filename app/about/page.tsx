@@ -1,5 +1,6 @@
 import PageHeader from '@/components/layout/PageHeader';
 import Link from 'next/link';
+import { getAllShows, getEpisodes } from '@/lib/data';
 
 export const metadata = {
   title: 'About — The Humor Index',
@@ -16,7 +17,18 @@ export const metadata = {
 
 export const dynamic = 'force-static';
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const shows = await getAllShows();
+  const analyzedShows = shows.filter(s => s.humor_index > 0);
+  let totalEpisodes = 0;
+  for (const show of analyzedShows) {
+    try {
+      const eps = await getEpisodes(show.slug);
+      totalEpisodes += eps.length;
+    } catch {}
+  }
+  const totalJokes = shows.reduce((s, show) => s + show.total_jokes_analyzed, 0);
+
   return (
     <div>
       <PageHeader
@@ -30,9 +42,9 @@ export default function AboutPage() {
         {/* Stats banner */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
-            { value: '10,000+', label: 'Jokes Scored' },
-            { value: '11', label: 'Shows Tracked' },
-            { value: '186', label: 'Episodes Analyzed' },
+            { value: totalJokes.toLocaleString(), label: 'Jokes Scored' },
+            { value: String(shows.length), label: 'Shows Tracked' },
+            { value: String(totalEpisodes), label: 'Episodes Analyzed' },
             { value: '18', label: 'Joke Categories' },
           ].map(stat => (
             <div key={stat.label} className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
@@ -139,8 +151,8 @@ export default function AboutPage() {
           <h2 className="text-xl font-medium text-brand-text-primary mb-4">What&apos;s coming</h2>
           <div className="space-y-4 text-sm text-brand-text-secondary leading-relaxed">
             <p>
-              Right now we&apos;ve fully analyzed The Office and are working through Seinfeld.
-              The goal is complete coverage of 11 major sitcoms &mdash; every episode of Friends,
+              We&apos;ve fully analyzed The Office and Seinfeld, with Friends currently in progress.
+              The goal is complete coverage of 11 major sitcoms &mdash; every episode of
               Arrested Development, Parks and Rec, 30 Rock, Brooklyn Nine-Nine, It&apos;s Always
               Sunny, Schitt&apos;s Creek, The Big Bang Theory, and Two and a Half Men.
             </p>
