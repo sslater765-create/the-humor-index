@@ -112,6 +112,91 @@ These calibration points are fixed — they won't shift as we add more shows.
 *See our full [methodology page](/methodology) for additional details.*
     `,
   },
+  'comedy-war': {
+    title: 'Jerry Seinfeld Is the Most Valuable Comedy Character in Television History',
+    description: 'We built Comedy WAR — like baseball\'s WAR but for sitcom characters. Jerry Seinfeld\'s 824 WAR nearly doubles Michael Scott. Here\'s why.',
+    date: '2026-04-13',
+    category: 'Data Science',
+    content: `
+We just launched **Comedy WAR** \u2014 a new metric inspired by baseball\u2019s Wins Above Replacement. And the first thing it revealed is that Jerry Seinfeld isn\u2019t just funny. He\u2019s the most valuable comedy character we\u2019ve ever measured.
+
+## What Is Comedy WAR?
+
+In baseball, WAR measures how many wins a player adds over a \u201Creplacement-level\u201D player \u2014 a generic minor leaguer you could call up for free. It captures total value: skill multiplied by volume.
+
+Comedy WAR does the same thing. For every joke a character delivers, we calculate how much better it is than a \u201Creplacement-level\u201D joke \u2014 one with a craft score of 6.0 and an impact score of 6.0. That\u2019s competent but forgettable. The kind of joke a network sitcom writers\u2019 room produces on autopilot.
+
+The formula:
+
+**Joke WAR = (craft + impact - 12.0) / 10**
+
+A joke scoring 8.0 craft and 7.5 impact contributes 0.35 WAR. A joke scoring 5.0 and 5.5 contributes -0.15 WAR \u2014 it\u2019s actively worse than replacement level.
+
+Sum up every joke a character delivers, and you get their career Comedy WAR.
+
+## The All-Time Leaderboard
+
+Here are the most valuable comedy characters in our dataset:
+
+- **Jerry Seinfeld \u2014 824.0 WAR** (8,625 jokes across 172 episodes)
+- **George Costanza \u2014 529.9 WAR**
+- **Michael Scott \u2014 451.3 WAR** (10,044 jokes across 186 episodes)
+- **Dwight Schrute \u2014 354.5 WAR**
+- **Kramer \u2014 283.6 WAR**
+- **Jim Halpert \u2014 233.0 WAR**
+- **Elaine Benes \u2014 209.7 WAR**
+
+Jerry\u2019s 824 WAR nearly **doubles** Michael Scott. That\u2019s not a close race.
+
+## How Jerry Dominates
+
+Three factors compound in Jerry\u2019s favor:
+
+**1. Volume.** Jerry appears in every Seinfeld episode and is involved in more jokes than any other character. Michael Scott, despite being the lead of The Office, appears in fewer episodes (left after Season 7) and shares more screen time with the ensemble.
+
+**2. Per-joke quality.** Seinfeld\u2019s average joke scores higher on both craft (7.0 vs 6.9) and impact (6.9 vs 6.7) than The Office\u2019s. Jerry\u2019s personal averages are even higher than the show average.
+
+**3. The WAR multiplier.** Because WAR rewards every joke above replacement, a character who delivers 3,000+ above-average jokes accumulates massive value. It\u2019s the comedy equivalent of a player who hits .300 over 20 seasons versus one who hits .310 over 12.
+
+## Michael Scott\u2019s Case
+
+Michael Scott is undeniably iconic. His best moments \u2014 \u201CSnip snap!\u201D, the Dementors speech, \u201CThat\u2019s what she said\u201D \u2014 are some of the most quoted comedy in television history.
+
+But WAR doesn\u2019t measure memorability. It measures **total comedy output above baseline.** And Michael\u2019s cringe comedy style is a double-edged sword: his jokes hit harder when they land (higher peak impact), but he also delivers more jokes that fall below the replacement threshold. Cringe humor is inherently more volatile than observational comedy.
+
+Jerry, by contrast, is remarkably consistent. His observational style rarely produces clunkers. Almost every joke lands above replacement level, and they add up relentlessly.
+
+## The George Costanza Surprise
+
+The second-highest WAR belongs to George Costanza at 529.9 \u2014 higher than Michael Scott. George is the ultimate comedy utility player: neurotic rants, physical comedy, escalation, and some of the best-crafted dialogue exchanges in the show. His joke volume is massive, and his average quality is elite.
+
+In baseball terms, George is the Mike Trout of sitcom comedy: consistently excellent across a long career.
+
+## What WAR Tells Us That the Humor Index Doesn\u2019t
+
+The Humor Index measures episode-level quality and penalizes inconsistency. WAR measures cumulative value and rewards volume.
+
+This creates an interesting split:
+
+- **The Office has a higher Humor Index** (81.0 vs 77.9) \u2014 its episodes are more consistently good
+- **Seinfeld has higher total WAR** (1,836 vs 1,505) \u2014 its characters produce more total comedy value
+- **Seinfeld has higher WAR per episode** (10.7 vs 8.1) \u2014 more above-replacement comedy per sitting
+
+The Humor Index says The Office is the more reliable show. WAR says Seinfeld produces more comedy. Both are true. They\u2019re measuring different things.
+
+## Negative WAR Episodes
+
+Yes, they exist. \u201CCostume Contest\u201D (The Office S7E06) has a WAR of -1.3, meaning its jokes collectively scored *below* replacement level. The episode as a whole dragged the show\u2019s comedy value down.
+
+This is WAR\u2019s harshest verdict: not just \u201Cnot great,\u201D but \u201Cactively worse than what a generic writers\u2019 room would have produced.\u201D
+
+## The Bottom Line
+
+Jerry Seinfeld is the GOAT of sitcom comedy by total value. Not the funniest single moment \u2014 that might belong to Michael Scott or Dwight or George. But the most valuable? The most consistently above-replacement across the longest career? That\u2019s Jerry, and it\u2019s not close.
+
+*Explore WAR for every character: [The Office characters](/shows/the-office) \u2022 [Seinfeld characters](/shows/seinfeld)*
+    `,
+  },
   'seinfeld-vs-the-office': {
     title: 'Seinfeld Has Better Jokes. The Office Is Funnier. Here\'s Why.',
     description: 'Seinfeld wins on craft, impact, AND joke density. But The Office scores higher on our Humor Index. The math explains a fundamental truth about comedy.',
