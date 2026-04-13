@@ -126,13 +126,14 @@ export default async function RankingsPage() {
     .slice(0, 3);
 
   // Top 3 characters (100+ jokes)
+  // combined = avg craft + avg impact (same formula as funniest-characters page)
   const topCharacters: TopCharacter[] = Array.from(charMap.values())
     .filter(c => c.totalJokes >= 100)
     .map(c => ({
       name: c.name,
       showName: c.showName,
       totalJokes: c.totalJokes,
-      combined: ((c.craftSum / c.totalJokes) + (c.impactSum / c.totalJokes)) / 2,
+      combined: (c.craftSum + c.impactSum) / c.totalJokes,
     }))
     .sort((a, b) => b.combined - a.combined)
     .slice(0, 3);
@@ -245,8 +246,8 @@ export default async function RankingsPage() {
                     <p className="text-sm font-medium text-brand-text-primary">{char.name}</p>
                     <p className="text-xs text-brand-text-muted">{char.showName} &middot; {char.totalJokes} jokes</p>
                   </div>
-                  <span className="font-mono text-sm" style={{ color: scoreToColor(char.combined * 10) }}>
-                    {char.combined.toFixed(2)}
+                  <span className="font-mono text-sm text-brand-gold">
+                    {char.combined.toFixed(1)}
                   </span>
                 </div>
               ))}
