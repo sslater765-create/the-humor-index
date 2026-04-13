@@ -63,7 +63,8 @@ export default function SearchClient({ jokes }: { jokes: SearchableJoke[] }) {
     setShowSuggestions(false);
   };
 
-  const activeQuery = committed || '';
+  // Live search — update committed as user types (debounced by query length)
+  const activeQuery = query.length >= 3 ? query : committed || '';
 
   const results = useMemo(() => {
     if (!activeQuery && !filterType) return [];

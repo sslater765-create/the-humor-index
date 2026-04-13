@@ -80,7 +80,10 @@ export default async function FunniestCharactersPage() {
   const characters: CharacterData[] = [];
   charMap.forEach((data, key) => {
     const name = key.split('|||')[0];
-    if (data.jokes < 5) return; // Min 5 jokes to qualify
+    if (data.jokes < 10) return; // Min 10 jokes to qualify
+    // Skip generic non-character entries
+    const skip = ['Unknown', 'Others', 'Multiple', 'Everyone', 'Employee', 'Man', 'Woman'];
+    if (skip.includes(name)) return;
     characters.push({
       name,
       showName: data.showName,
@@ -93,14 +96,43 @@ export default async function FunniestCharactersPage() {
     });
   });
 
-  const ranked = characters.sort((a, b) => b.combined - a.combined).slice(0, 50);
+  const mainChars = characters.filter(c => c.totalJokes >= 100).sort((a, b) => b.combined - a.combined);
+  const recurringChars = characters.filter(c => c.totalJokes >= 25 && c.totalJokes < 100).sort((a, b) => b.combined - a.combined);
+  const guestChars = characters.filter(c => c.totalJokes >= 10 && c.totalJokes < 25).sort((a, b) => b.combined - a.combined);
+
+  const CharRow = ({ char, i }: { char: CharacterData; i: number }) => (
+    <Link
+      href={`/shows/${char.showSlug}/characters/${encodeURIComponent(char.name)}`}
+      className="flex items-center justify-between p-4 bg-brand-card border border-brand-border rounded-xl hover:border-brand-gold/40 transition-colors group"
+    >
+      <div className="flex items-center gap-4">
+        <span className={`font-mono text-sm w-8 text-right ${i < 3 ? 'text-brand-gold font-medium' : 'text-brand-text-muted'}`}>
+          {i + 1}
+        </span>
+        <div>
+          <div className="flex items-center gap-2">
+            <span className="text-brand-text-primary font-medium group-hover:text-brand-gold transition-colors">{char.name}</span>
+            <span className="text-xs text-brand-text-muted">{char.showName}</span>
+          </div>
+          <div className="flex gap-3 mt-1 text-xs text-brand-text-muted">
+            <span>{char.totalJokes} jokes</span>
+            <span>Craft {char.avgCraft.toFixed(1)}</span>
+            <span>Impact {char.avgImpact.toFixed(1)}</span>
+          </div>
+        </div>
+      </div>
+      <span className="font-mono text-lg text-brand-gold font-medium">
+        {char.combined.toFixed(1)}
+      </span>
+    </Link>
+  );
 
   return (
     <div>
       <PageHeader
         label="Rankings"
         title="The Funniest Characters in Sitcom History"
-        subtitle="Ranked by average joke quality. Minimum 5 jokes to qualify."
+        subtitle="Ranked by average joke quality (craft + impact). Click any character to see all their jokes."
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-6">
@@ -111,41 +143,40 @@ export default async function FunniestCharactersPage() {
           />
         </div>
 
-        <div className="space-y-2">
-          {ranked.map((char, i) => (
-            <div
-              key={`${char.name}-${char.showSlug}`}
-              className="flex items-center justify-between p-4 bg-brand-card border border-brand-border rounded-xl"
-            >
-              <div className="flex items-center gap-4">
-                <span className={`font-mono text-sm w-8 text-right ${i < 3 ? 'text-brand-gold font-medium' : 'text-brand-text-muted'}`}>
-                  {i + 1}
-                </span>
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-brand-text-primary font-medium">{char.name}</span>
-                    <Link
-                      href={`/shows/${char.showSlug}`}
-                      className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors"
-                    >
-                      {char.showName}
-                    </Link>
-                  </div>
-                  <div className="flex gap-3 mt-1 text-xs text-brand-text-muted">
-                    <span>{char.totalJokes} jokes</span>
-                    <span>Craft {char.avgCraft.toFixed(1)}</span>
-                    <span>Impact {char.avgImpact.toFixed(1)}</span>
-                  </div>
-                </div>
-              </div>
-              <span className="font-mono text-lg text-brand-gold font-medium">
-                {char.combined.toFixed(1)}
-              </span>
+        {/* Main characters (100+ jokes) */}
+        {mainChars.length > 0 && (
+          <div className="mb-10">
+            <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">Main Characters</p>
+            <p className="text-sm text-brand-text-muted mb-4">100+ jokes analyzed</p>
+            <div className="space-y-2">
+              {mainChars.map((char, i) => <CharRow key={`${char.name}-${char.showSlug}`} char={char} i={i} />)}
             </div>
-          ))}
-        </div>
+          </div>
+        )}
 
-        {ranked.length === 0 && (
+        {/* Recurring characters (25-99 jokes) */}
+        {recurringChars.length > 0 && (
+          <div className="mb-10">
+            <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Recurring Characters</p>
+            <p className="text-sm text-brand-text-muted mb-4">25–99 jokes analyzed</p>
+            <div className="space-y-2">
+              {recurringChars.map((char, i) => <CharRow key={`${char.name}-${char.showSlug}`} char={char} i={i} />)}
+            </div>
+          </div>
+        )}
+
+        {/* Guest / minor characters (10-24 jokes) */}
+        {guestChars.length > 0 && (
+          <div className="mb-10">
+            <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Guest &amp; Minor Characters</p>
+            <p className="text-sm text-brand-text-muted mb-4">10–24 jokes analyzed</p>
+            <div className="space-y-2">
+              {guestChars.map((char, i) => <CharRow key={`${char.name}-${char.showSlug}`} char={char} i={i} />)}
+            </div>
+          </div>
+        )}
+
+        {characters.length === 0 && (
           <p className="text-brand-text-muted text-center py-12">
             No character data available yet. Check back once more episodes are analyzed.
           </p>

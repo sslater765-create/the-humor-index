@@ -27,7 +27,9 @@ function generateAllMatchups() {
 const MATCHUPS = generateAllMatchups();
 
 function getMatchup(matchupSlug: string) {
-  const [slugA, , slugB] = matchupSlug.split('-vs-');
+  const parts = matchupSlug.split('-vs-');
+  const slugA = parts[0];
+  const slugB = parts[parts.length - 1];
   if (!slugA || !slugB) return null;
   return { slugA, slugB };
 }

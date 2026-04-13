@@ -125,8 +125,8 @@ export default async function HomePage() {
             </div>
             <div>
               <p className="text-xs text-brand-text-muted mb-1">Seinfeld</p>
-              <p className="font-mono text-2xl text-brand-text-primary">77.5</p>
-              <p className="text-[10px] text-brand-text-muted">20% episodes below 70</p>
+              <p className="font-mono text-2xl text-brand-text-primary">77.9</p>
+              <p className="text-[10px] text-brand-text-muted">19% episodes below 70</p>
             </div>
             <div>
               <p className="text-xs text-brand-text-muted mb-1">Seinfeld Avg Craft</p>
