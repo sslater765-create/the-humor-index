@@ -62,6 +62,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
     name: show.name,
     url: `https://thehumorindex.com/shows/${params.slug}`,
     description: show.description,
+    image: show.backdrop_path ? `https://image.tmdb.org/t/p/w1280${show.backdrop_path}` : undefined,
     numberOfSeasons: show.total_seasons,
     numberOfEpisodes: show.total_episodes,
     aggregateRating: {

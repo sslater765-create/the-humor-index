@@ -5,6 +5,14 @@ import CompareClient from './CompareClient';
 export const metadata = {
   title: 'Compare Shows — The Humor Index',
   description: 'Head-to-head comparison of comedy show Humor Index scores.',
+  alternates: {
+    canonical: 'https://thehumorindex.com/compare',
+  },
+  openGraph: {
+    title: 'Compare Shows — The Humor Index',
+    description: 'Head-to-head comparison of comedy show Humor Index scores.',
+    images: ['/og-image.png'],
+  },
 };
 
 export const dynamic = 'force-static';

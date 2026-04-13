@@ -64,17 +64,21 @@ export async function generateMetadata({ params }: { params: { matchup: string }
   };
 }
 
+function formatVal(val: number): string {
+  return Number.isInteger(val) ? val.toLocaleString() : val.toFixed(1);
+}
+
 function MetricRow({ label, valA, valB }: { label: string; valA: number; valB: number }) {
   const aWins = valA > valB;
   const bWins = valB > valA;
   return (
     <div className="flex items-center justify-between py-3 border-b border-brand-border/30">
       <span className={`font-mono text-sm ${aWins ? 'text-brand-gold font-medium' : 'text-brand-text-secondary'}`}>
-        {valA.toFixed(1)}
+        {formatVal(valA)}
       </span>
       <span className="text-xs uppercase tracking-widest text-brand-text-muted">{label}</span>
       <span className={`font-mono text-sm ${bWins ? 'text-brand-blue font-medium' : 'text-brand-text-secondary'}`}>
-        {valB.toFixed(1)}
+        {formatVal(valB)}
       </span>
     </div>
   );
@@ -176,6 +180,12 @@ export default async function MatchupPage({ params }: { params: { matchup: strin
           <MetricRow label="Total Jokes" valA={showA.total_jokes_analyzed} valB={showB.total_jokes_analyzed} />
           {showA.avg_imdb_rating && showB.avg_imdb_rating && (
             <MetricRow label="IMDb Avg" valA={showA.avg_imdb_rating} valB={showB.avg_imdb_rating} />
+          )}
+          {showA.war && showB.war && (
+            <MetricRow label="Total WAR" valA={showA.war} valB={showB.war} />
+          )}
+          {showA.war_per_episode && showB.war_per_episode && (
+            <MetricRow label="WAR / Episode" valA={showA.war_per_episode} valB={showB.war_per_episode} />
           )}
         </div>
 

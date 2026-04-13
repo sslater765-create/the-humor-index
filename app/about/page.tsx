@@ -4,6 +4,14 @@ import Link from 'next/link';
 export const metadata = {
   title: 'About — The Humor Index',
   description: 'The Humor Index was built by Sam to answer one question: which sitcom is actually the funniest? Here\'s the story.',
+  alternates: {
+    canonical: 'https://thehumorindex.com/about',
+  },
+  openGraph: {
+    title: 'About — The Humor Index',
+    description: 'The Humor Index was built by Sam to answer one question: which sitcom is actually the funniest? Here\'s the story.',
+    images: ['/og-image.png'],
+  },
 };
 
 export const dynamic = 'force-static';

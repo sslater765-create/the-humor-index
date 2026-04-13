@@ -9,6 +9,11 @@ export const metadata = {
   alternates: {
     canonical: 'https://thehumorindex.com/search',
   },
+  openGraph: {
+    title: 'Search Every Joke — Find Any Moment in Sitcom History',
+    description: 'Search through thousands of analyzed sitcom jokes. Find specific lines, characters, joke types, and moments across every show in our database.',
+    images: ['/og-image.png'],
+  },
 };
 
 export const dynamic = 'force-static';

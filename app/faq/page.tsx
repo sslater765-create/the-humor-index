@@ -3,6 +3,14 @@ import PageHeader from '@/components/layout/PageHeader';
 export const metadata = {
   title: 'FAQ — The Humor Index',
   description: 'Frequently asked questions about The Humor Index: how it works, what AI we use, and why your favorite show scored the way it did.',
+  alternates: {
+    canonical: 'https://thehumorindex.com/faq',
+  },
+  openGraph: {
+    title: 'FAQ — The Humor Index',
+    description: 'Frequently asked questions about The Humor Index: how it works, what AI we use, and why your favorite show scored the way it did.',
+    images: ['/og-image.png'],
+  },
 };
 
 export const dynamic = 'force-static';

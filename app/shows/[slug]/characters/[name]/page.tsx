@@ -34,6 +34,14 @@ export async function generateMetadata({
   return {
     title: `${name} — ${show.name} Character Analysis`,
     description: `Every joke by ${name} on ${show.name}, scored and ranked. See craft scores, impact ratings, and comedy style breakdown.`,
+    alternates: {
+      canonical: `https://thehumorindex.com/shows/${params.slug}/characters/${params.name}`,
+    },
+    openGraph: {
+      title: `${name} — ${show.name} Character Analysis`,
+      description: `Every joke by ${name} on ${show.name}, scored and ranked. See craft scores, impact ratings, and comedy style breakdown.`,
+      images: ['/og-image.png'],
+    },
   };
 }
 

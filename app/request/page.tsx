@@ -7,6 +7,11 @@ export const metadata = {
   alternates: {
     canonical: 'https://thehumorindex.com/request',
   },
+  openGraph: {
+    title: 'Request a Show — Vote for the Next Analysis',
+    description: 'Vote for which sitcom The Humor Index should analyze next. The most-requested shows get scored first.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function RequestPage() {

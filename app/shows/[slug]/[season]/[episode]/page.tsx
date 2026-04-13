@@ -98,6 +98,7 @@ export default async function EpisodePage({
     '@context': 'https://schema.org',
     '@type': 'TVEpisode',
     name: detail.title,
+    url: `https://thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}`,
     episodeNumber: detail.episode_number,
     seasonNumber: detail.season,
     partOfSeries: { '@type': 'TVSeries', name: show.name },

@@ -8,6 +8,14 @@ import PageHeader from '@/components/layout/PageHeader';
 export const metadata = {
   title: 'All Shows — The Humor Index',
   description: 'Every analyzed show ranked by Humor Index score.',
+  alternates: {
+    canonical: 'https://thehumorindex.com/shows',
+  },
+  openGraph: {
+    title: 'All Shows — The Humor Index',
+    description: 'Every analyzed show ranked by Humor Index score.',
+    images: ['/og-image.png'],
+  },
 };
 
 export const dynamic = 'force-static';
