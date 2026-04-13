@@ -14,6 +14,18 @@ interface Props {
 }
 
 export default function SeasonBarChart({ seasons, showName }: Props) {
+  const bestIdx = useMemo(() => {
+    let idx = 0;
+    seasons.forEach((s, i) => { if (s.humor_index > seasons[idx].humor_index) idx = i; });
+    return idx;
+  }, [seasons]);
+
+  const worstIdx = useMemo(() => {
+    let idx = 0;
+    seasons.forEach((s, i) => { if (s.humor_index < seasons[idx].humor_index) idx = i; });
+    return idx;
+  }, [seasons]);
+
   const config = useMemo(() => ({
     type: 'bar' as const,
     data: {
@@ -21,9 +33,17 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
       datasets: [{
         label: 'Humor Index',
         data: seasons.map(s => s.humor_index),
-        backgroundColor: seasons.map(s => scoreToColor(s.humor_index) + '99'),
-        borderColor: seasons.map(s => scoreToColor(s.humor_index)),
-        borderWidth: 1,
+        backgroundColor: seasons.map((s, i) => {
+          if (i === bestIdx) return scoreToColor(s.humor_index) + 'CC';
+          if (i === worstIdx) return '#666666AA';
+          return scoreToColor(s.humor_index) + '99';
+        }),
+        borderColor: seasons.map((s, i) => {
+          if (i === bestIdx) return scoreToColor(s.humor_index);
+          if (i === worstIdx) return '#888888';
+          return scoreToColor(s.humor_index);
+        }),
+        borderWidth: seasons.map((_, i) => (i === bestIdx || i === worstIdx) ? 2 : 1),
         borderRadius: 4,
       }],
     },
@@ -42,10 +62,11 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
           callbacks: {
             title: (ctx: any) => {
               const s = seasons[ctx[0].dataIndex];
-              return `Season ${s.season}`;
+              const label = ctx[0].dataIndex === bestIdx ? ' (Best)' : ctx[0].dataIndex === worstIdx ? ' (Worst)' : '';
+              return `Season ${s.season}${label}`;
             },
             label: (ctx: any) => {
-              const s = seasons[ctx[0].dataIndex];
+              const s = seasons[ctx.dataIndex];
               return [
                 ` Index: ${(ctx.raw as number).toFixed(1)}`,
                 ` Best: ${s.best_episode_title}`,
@@ -67,7 +88,37 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
         },
       },
     },
-  }), [seasons]);
+    plugins: [{
+      id: 'barLabels',
+      afterDatasetsDraw(chart: any) {
+        const { ctx } = chart;
+        const meta = chart.getDatasetMeta(0);
+        if (!meta?.data) return;
+
+        // Best label
+        const bestBar = meta.data[bestIdx];
+        if (bestBar) {
+          ctx.save();
+          ctx.font = 'bold 10px system-ui, sans-serif';
+          ctx.fillStyle = '#E8B931';
+          ctx.textAlign = 'center';
+          ctx.fillText('BEST', bestBar.x, bestBar.y - 8);
+          ctx.restore();
+        }
+
+        // Worst label
+        const worstBar = meta.data[worstIdx];
+        if (worstBar) {
+          ctx.save();
+          ctx.font = 'bold 10px system-ui, sans-serif';
+          ctx.fillStyle = '#888888';
+          ctx.textAlign = 'center';
+          ctx.fillText('WORST', worstBar.x, worstBar.y - 8);
+          ctx.restore();
+        }
+      },
+    }],
+  }), [seasons, bestIdx, worstIdx]);
 
   const { canvasRef, inViewRef } = useInViewChart(config);
 

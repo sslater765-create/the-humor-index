@@ -125,7 +125,7 @@ export default async function EpisodePage({
       />
 
       {/* Hero backdrop */}
-      <div className="relative w-full h-[200px] sm:h-[260px] overflow-hidden">
+      <div className="relative w-full h-[240px] sm:h-[300px] overflow-hidden">
         {show.backdrop_path ? (
           <Image
             src={`https://image.tmdb.org/t/p/w1280${show.backdrop_path}`}
@@ -221,6 +221,25 @@ export default async function EpisodePage({
           )}
         </div>
       </div>
+
+      {/* Top Jokes — best jokes first */}
+      {(() => {
+        const topJokes = [...detail.jokes]
+          .sort((a, b) => ((b.craft_total || 0) + (b.impact_score || 0)) - ((a.craft_total || 0) + (a.impact_score || 0)))
+          .slice(0, 5);
+        return topJokes.length > 0 ? (
+          <section className="mb-10">
+            <p className="text-xs uppercase tracking-widest text-brand-gold mb-3">
+              Top Jokes
+            </p>
+            <div className="space-y-3">
+              {topJokes.map(joke => (
+                <JokeRow key={joke.id} joke={joke} isStandout showSlug={params.slug} />
+              ))}
+            </div>
+          </section>
+        ) : null;
+      })()}
 
       {/* Standout moments */}
       {standoutJokes.length > 0 && (

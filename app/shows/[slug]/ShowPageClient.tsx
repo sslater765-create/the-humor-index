@@ -27,7 +27,14 @@ interface Props {
   comedyDna?: Record<string, number>;
 }
 
-export default function ShowPageClient({ show, seasons, episodes, characters, characterProfiles = [], comedyDna = {} }: Props) {
+// Clip shows and compilation episodes that shouldn't be ranked
+const EXCLUDED_EPISODES = new Set([
+  'the highlights of 100 (1)',
+  'the highlights of 100 (2)',
+]);
+
+export default function ShowPageClient({ show, seasons, episodes: rawEpisodes, characters, characterProfiles = [], comedyDna = {} }: Props) {
+  const episodes = rawEpisodes.filter(e => !EXCLUDED_EPISODES.has(e.title.toLowerCase()));
   const [activeTab, setActiveTab] = useState('overview');
   const [selectedSeason, setSelectedSeason] = useState<number | 'all'>(1);
   const [episodeSort, setEpisodeSort] = useState<'score' | 'war' | 'jpm' | 'craft' | 'imdb' | 'airdate'>('score');
