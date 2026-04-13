@@ -41,13 +41,18 @@ export default function ShowCard({ show }: Props) {
             {show.name}
           </h2>
           <p className="text-xs text-brand-text-muted mb-3 line-clamp-2">{show.description}</p>
-          <div className="flex items-center gap-2 mb-4">
+          <div className="flex items-center gap-2 mb-4 flex-wrap">
             <FormatBadge format={show.format} />
             {show.network && (
               <span className="text-xs text-brand-text-muted">{show.network}</span>
             )}
             {show.aired && (
               <span className="text-xs text-brand-text-muted">{show.aired}</span>
+            )}
+            {show.aired && (
+              parseInt(show.aired.split('\u2013')[1] || '9999') >= 2025
+                ? <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full px-2 py-0.5">On Air</span>
+                : <span className="text-[10px] bg-brand-surface text-brand-text-muted border border-brand-border rounded-full px-2 py-0.5">Ended</span>
             )}
           </div>
           <div className="grid grid-cols-3 gap-2 pt-3 border-t border-brand-border">

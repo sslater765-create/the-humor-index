@@ -113,6 +113,19 @@ export default async function BestJokesPage() {
               <p className="text-brand-text-primary leading-relaxed mb-2">
                 {'\u201C'}{joke.text}{'\u201D'}
               </p>
+              {joke.characters?.length > 0 && (
+                <div className="flex items-center gap-1.5 mb-2">
+                  {joke.characters.map(c => (
+                    <Link
+                      key={c}
+                      href={`/shows/${joke.showSlug}/characters/${encodeURIComponent(c)}`}
+                      className="text-xs text-brand-text-muted border border-brand-border rounded px-1.5 py-0.5 hover:text-brand-gold hover:border-brand-gold/50 transition-colors"
+                    >
+                      {c}
+                    </Link>
+                  ))}
+                </div>
+              )}
 
               {joke.explanation && (
                 <p className="text-xs text-brand-text-muted italic">
