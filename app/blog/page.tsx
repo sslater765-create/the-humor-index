@@ -9,6 +9,20 @@ export const metadata = {
   },
 };
 
+const CATEGORY_COLORS: Record<string, string> = {
+  'Data Science': 'from-blue-900/40 to-brand-card',
+  'Deep Dive': 'from-amber-900/40 to-brand-card',
+  'Methodology': 'from-emerald-900/40 to-brand-card',
+  'Analysis': 'from-purple-900/40 to-brand-card',
+};
+
+const CATEGORY_ACCENTS: Record<string, string> = {
+  'Data Science': 'text-blue-400',
+  'Deep Dive': 'text-brand-gold',
+  'Methodology': 'text-emerald-400',
+  'Analysis': 'text-purple-400',
+};
+
 // Blog posts are defined here — add new posts as objects
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
@@ -19,6 +33,8 @@ const POSTS = [
     date: '2026-04-13',
     category: 'Data Science',
     readTime: '7 min read',
+    stat: '451.3',
+    statLabel: 'Comedy WAR',
   },
   {
     slug: 'seinfeld-vs-the-office',
@@ -27,6 +43,8 @@ const POSTS = [
     date: '2026-04-12',
     category: 'Deep Dive',
     readTime: '6 min read',
+    stat: '81.0 vs 77.9',
+    statLabel: 'Humor Index',
   },
   {
     slug: 'imdb-vs-humor-index',
@@ -35,6 +53,8 @@ const POSTS = [
     date: '2026-04-12',
     category: 'Data Science',
     readTime: '7 min read',
+    stat: 'r = 0.16',
+    statLabel: 'Correlation',
   },
   {
     slug: 'is-the-office-actually-funny',
@@ -43,6 +63,8 @@ const POSTS = [
     date: '2026-04-10',
     category: 'Deep Dive',
     readTime: '8 min read',
+    stat: '186',
+    statLabel: 'Episodes Analyzed',
   },
   {
     slug: 'how-we-score-comedy',
@@ -51,6 +73,8 @@ const POSTS = [
     date: '2026-04-10',
     category: 'Methodology',
     readTime: '6 min read',
+    stat: '5',
+    statLabel: 'Dimensions',
   },
   {
     slug: 'laugh-track-penalty',
@@ -59,6 +83,8 @@ const POSTS = [
     date: '2026-04-10',
     category: 'Analysis',
     readTime: '5 min read',
+    stat: '-25%',
+    statLabel: 'Impact Penalty',
   },
 ];
 
@@ -70,25 +96,39 @@ export default function BlogPage() {
         title="Comedy Analytics"
         subtitle="Deep dives into what makes TV comedy work — backed by data, not opinions."
       />
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
-        <div className="space-y-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {POSTS.map(post => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold transition-colors group"
+              className="block bg-brand-card border border-brand-border rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors group"
             >
-              <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-2.5 py-0.5">
-                  {post.category}
-                </span>
-                <span className="text-xs text-brand-text-muted">{post.date}</span>
-                <span className="text-xs text-brand-text-muted">{post.readTime}</span>
+              <div className={`relative h-36 w-full bg-gradient-to-b ${CATEGORY_COLORS[post.category] || 'from-brand-surface to-brand-card'} flex items-center justify-center`}>
+                <div className="text-center">
+                  <p className={`font-mono text-3xl font-medium ${CATEGORY_ACCENTS[post.category] || 'text-brand-gold'}`}>
+                    {post.stat}
+                  </p>
+                  <p className="text-xs text-brand-text-muted mt-1 uppercase tracking-widest">
+                    {post.statLabel}
+                  </p>
+                </div>
+                <div className="absolute bottom-3 left-4 flex items-center gap-2">
+                  <span className="text-xs bg-brand-card/70 text-brand-gold border border-brand-gold/30 rounded-full px-2.5 py-0.5 backdrop-blur-sm">
+                    {post.category}
+                  </span>
+                </div>
+                <div className="absolute bottom-3 right-4">
+                  <span className="text-xs text-brand-text-muted">{post.readTime}</span>
+                </div>
               </div>
-              <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">
-                {post.title}
-              </h2>
-              <p className="text-sm text-brand-text-secondary">{post.description}</p>
+              <div className="p-5">
+                <p className="text-xs text-brand-text-muted mb-2">{post.date}</p>
+                <h2 className="text-base font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2 line-clamp-2">
+                  {post.title}
+                </h2>
+                <p className="text-sm text-brand-text-secondary line-clamp-2">{post.description}</p>
+              </div>
             </Link>
           ))}
         </div>
