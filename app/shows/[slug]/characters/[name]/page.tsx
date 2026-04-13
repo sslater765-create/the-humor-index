@@ -118,7 +118,10 @@ export default async function CharacterPage({
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-6 pb-8">
         {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
+          {character.war != null && (
+            <ScoreCard label="WAR" value={character.war} sub="Wins Above Replacement" />
+          )}
           <ScoreCard label="Total Jokes" value={character.total_jokes} sub={`${character.episodes_appeared} episodes`} />
           <ScoreCard label="Avg Craft" value={character.avg_craft} />
           <ScoreCard label="Avg Impact" value={character.avg_impact} />

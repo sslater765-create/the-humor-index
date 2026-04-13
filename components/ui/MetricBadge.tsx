@@ -11,6 +11,8 @@ const METRIC_STYLES: Record<string, string> = {
   'Avg Craft': 'bg-blue-500 text-white',
   'Avg Impact': 'bg-emerald-500 text-white',
   'Episode Mean': 'bg-gray-500 text-white',
+  'WAR': 'bg-red-500 text-white',
+  'WAR/E': 'bg-red-500 text-white',
 };
 
 interface Props {

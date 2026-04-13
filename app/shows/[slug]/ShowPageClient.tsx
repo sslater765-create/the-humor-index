@@ -30,10 +30,11 @@ interface Props {
 export default function ShowPageClient({ show, seasons, episodes, characters, characterProfiles = [], comedyDna = {} }: Props) {
   const [activeTab, setActiveTab] = useState('overview');
   const [selectedSeason, setSelectedSeason] = useState<number | 'all'>(1);
-  const [episodeSort, setEpisodeSort] = useState<'score' | 'jpm' | 'craft' | 'imdb' | 'airdate'>('score');
+  const [episodeSort, setEpisodeSort] = useState<'score' | 'war' | 'jpm' | 'craft' | 'imdb' | 'airdate'>('score');
 
   const SORT_OPTIONS: { key: typeof episodeSort; label: string }[] = [
     { key: 'score', label: 'Humor Index' },
+    { key: 'war', label: 'WAR' },
     { key: 'jpm', label: 'JPM' },
     { key: 'craft', label: 'Craft' },
     { key: 'imdb', label: 'IMDb' },
@@ -47,6 +48,7 @@ export default function ShowPageClient({ show, seasons, episodes, characters, ch
       ? [...episodes]
       : episodes.filter(e => e.season === selectedSeason);
     switch (episodeSort) {
+      case 'war': return filtered.sort((a, b) => (b.war || 0) - (a.war || 0));
       case 'jpm': return filtered.sort((a, b) => b.jpm - a.jpm);
       case 'craft': return filtered.sort((a, b) => b.avg_craft - a.avg_craft);
       case 'imdb': return filtered.sort((a, b) => (b.imdb_rating || 0) - (a.imdb_rating || 0));
@@ -191,6 +193,29 @@ export default function ShowPageClient({ show, seasons, episodes, characters, ch
                 <p className="text-[9px] text-brand-text-muted">lower = more consistent</p>
               </div>
             </div>
+
+            {/* WAR */}
+            {show.war != null && show.war > 0 && (
+              <div className="bg-brand-card border border-red-500/20 rounded-xl p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="bg-red-500 text-white font-bold text-[10px] px-1.5 py-0.5 rounded">WAR</span>
+                  <span className="text-xs text-brand-text-muted">Comedy Wins Above Replacement</span>
+                </div>
+                <div className="flex items-baseline gap-6">
+                  <div>
+                    <p className="font-mono text-3xl text-red-400 font-bold">{show.war?.toLocaleString()}</p>
+                    <p className="text-[10px] text-brand-text-muted mt-1">Total comedy value above replacement</p>
+                  </div>
+                  <div>
+                    <p className="font-mono text-2xl text-brand-text-primary font-bold">{show.war_per_episode}</p>
+                    <p className="text-[10px] text-brand-text-muted mt-1">WAR per episode</p>
+                  </div>
+                </div>
+                <p className="text-[10px] text-brand-text-muted mt-3">
+                  Like baseball&apos;s WAR — measures total comedy value above a &quot;replacement-level&quot; baseline (craft 6.0, impact 6.0). Higher = more valuable.
+                </p>
+              </div>
+            )}
 
             {/* Skip These */}
             {bottom3.length > 0 && (

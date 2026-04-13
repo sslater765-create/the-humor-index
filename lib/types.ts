@@ -40,6 +40,8 @@ export interface ShowScore {
   description: string;
   rank?: number;
   avg_imdb_rating?: number;
+  war?: number;
+  war_per_episode?: number;
   backdrop_path?: string;
   poster_path?: string;
   created_by?: string[];
@@ -78,6 +80,7 @@ export interface EpisodeScore {
   air_date?: string;
   imdb_rating?: number;
   imdb_votes?: number;
+  war?: number;
 }
 
 export interface Joke {
@@ -114,6 +117,7 @@ export interface CharacterProfile {
   actor?: string;
   profile_path?: string;
   character_full_name?: string;
+  war?: number;
 }
 
 export interface CharacterStats {
