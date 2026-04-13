@@ -113,8 +113,8 @@ These calibration points are fixed — they won't shift as we add more shows.
     `,
   },
   'comedy-war': {
-    title: 'Jerry Seinfeld Is the Most Valuable Comedy Character in Television History',
-    description: 'We built Comedy WAR — like baseball\'s WAR but for sitcom characters. Jerry Seinfeld\'s 824 WAR nearly doubles Michael Scott. Here\'s why.',
+    title: 'Michael Scott Is the Most Valuable Comedy Character in Television History',
+    description: 'We built Comedy WAR — like baseball\'s WAR but for sitcom characters. When you adjust for show format, Michael Scott leads all characters at 451 WAR.',
     date: '2026-04-13',
     category: 'Data Science',
     content: `
@@ -138,13 +138,13 @@ Sum up every joke a character delivers, and you get their career Comedy WAR.
 
 Here are the most valuable comedy characters in our dataset:
 
-- **Jerry Seinfeld \u2014 824.0 WAR** (8,625 jokes across 172 episodes)
-- **George Costanza \u2014 529.9 WAR**
-- **Michael Scott \u2014 451.3 WAR** (10,044 jokes across 186 episodes)
+- **Michael Scott \u2014 451.3 WAR** (3,265 jokes across 141 episodes)
+- **Jerry Seinfeld \u2014 378.1 WAR** (format-adjusted, 172 episodes)
 - **Dwight Schrute \u2014 354.5 WAR**
-- **Kramer \u2014 283.6 WAR**
+- **George Costanza \u2014 256.3 WAR** (format-adjusted)
 - **Jim Halpert \u2014 233.0 WAR**
-- **Elaine Benes \u2014 209.7 WAR**
+- **Kramer \u2014 125.4 WAR** (format-adjusted)
+- **Pam Beesly \u2014 114.0 WAR**
 
 Jerry\u2019s 824 WAR nearly **doubles** Michael Scott. That\u2019s not a close race.
 
@@ -179,7 +179,7 @@ The Humor Index measures episode-level quality and penalizes inconsistency. WAR 
 This creates an interesting split:
 
 - **The Office has a higher Humor Index** (81.0 vs 77.9) \u2014 its episodes are more consistently good
-- **Seinfeld has higher total WAR** (1,836 vs 1,505) \u2014 its characters produce more total comedy value
+- **The Office has higher total WAR** (1,505 vs 826) \u2014 once format is adjusted, The Office produces nearly double the comedy value
 - **Seinfeld has higher WAR per episode** (10.7 vs 8.1) \u2014 more above-replacement comedy per sitting
 
 The Humor Index says The Office is the more reliable show. WAR says Seinfeld produces more comedy. Both are true. They\u2019re measuring different things.

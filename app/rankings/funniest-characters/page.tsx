@@ -118,6 +118,9 @@ export default async function FunniestCharactersPage() {
             <span>{char.totalJokes} jokes</span>
             <span>Craft {char.avgCraft.toFixed(1)}</span>
             <span>Impact {char.avgImpact.toFixed(1)}</span>
+            {char.totalJokes < 20 && (
+              <span className="text-amber-400 text-[10px]">small sample</span>
+            )}
           </div>
         </div>
       </div>

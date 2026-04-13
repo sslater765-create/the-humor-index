@@ -14,8 +14,8 @@ export const metadata = {
 const POSTS = [
   {
     slug: 'comedy-war',
-    title: 'Jerry Seinfeld Is the Most Valuable Comedy Character in Television History',
-    description: 'We built Comedy WAR — like baseball\'s WAR but for sitcom characters. Jerry Seinfeld\'s 824 WAR nearly doubles Michael Scott.',
+    title: 'Michael Scott Is the Most Valuable Comedy Character in Television History',
+    description: 'We built Comedy WAR — like baseball\'s WAR but for sitcom characters. When you adjust for format, Michael Scott leads all characters at 451 WAR.',
     date: '2026-04-13',
     category: 'Data Science',
     readTime: '7 min read',
