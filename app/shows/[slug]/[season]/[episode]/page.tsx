@@ -131,13 +131,13 @@ export default async function EpisodePage({
             src={`https://image.tmdb.org/t/p/w1280${show.backdrop_path}`}
             alt={`${show.name} backdrop`}
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
           />
         ) : (
           <div className="absolute inset-0 bg-brand-surface" />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/70 to-brand-dark/30" />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 15%, rgba(15,15,15,0.7) 40%, rgba(15,15,15,0.1) 65%, transparent 100%)' }} />
 
         <div className="absolute bottom-0 left-0 right-0 max-w-4xl mx-auto px-4 sm:px-6 pb-5">
           {/* Breadcrumb */}
