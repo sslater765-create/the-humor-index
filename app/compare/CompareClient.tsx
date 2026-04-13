@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { ShowScore } from '@/lib/types';
 import { formatIndex } from '@/lib/scoring';
@@ -46,8 +47,17 @@ function ShowSelector({
 }
 
 export default function CompareClient({ shows }: Props) {
-  const [slugA, setSlugA] = useState(shows[0]?.slug ?? '');
-  const [slugB, setSlugB] = useState(shows[1]?.slug ?? '');
+  const searchParams = useSearchParams();
+  const preselected = searchParams.get('show');
+
+  const [slugA, setSlugA] = useState(() => {
+    if (preselected && shows.some(s => s.slug === preselected)) return preselected;
+    return shows[0]?.slug ?? '';
+  });
+  const [slugB, setSlugB] = useState(() => {
+    if (preselected && shows[0]?.slug === preselected) return shows[1]?.slug ?? '';
+    return shows[1]?.slug ?? '';
+  });
 
   const showA = shows.find(s => s.slug === slugA);
   const showB = shows.find(s => s.slug === slugB);

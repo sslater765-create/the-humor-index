@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import SocialShare from '@/components/ui/SocialShare';
+import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
 
 export const dynamicParams = false;
 
@@ -494,6 +495,8 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           );
         })}
       </article>
+
+      <InlineNewsletterCTA />
 
       <div className="mt-12 border-t border-brand-border pt-8">
         <Link href="/blog" className="text-sm text-brand-text-muted hover:text-brand-gold transition-colors">

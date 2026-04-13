@@ -1,6 +1,16 @@
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { getAllShows, getEpisodes } from '@/lib/data';
-import LeaderboardClient from './LeaderboardClient';
+
+const LeaderboardClient = dynamic(() => import('./LeaderboardClient'), {
+  loading: () => (
+    <div className="animate-pulse space-y-3">
+      {[...Array(3)].map((_, i) => (
+        <div key={i} className="h-12 bg-brand-surface rounded-lg" />
+      ))}
+    </div>
+  ),
+});
 
 export const dynamic = 'force-static';
 

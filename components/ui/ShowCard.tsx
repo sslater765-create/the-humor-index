@@ -11,8 +11,8 @@ interface Props {
 
 export default function ShowCard({ show }: Props) {
   return (
-    <Link href={`/shows/${show.slug}`}>
-      <div className="bg-brand-card border border-brand-border rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors group">
+    <div className="relative bg-brand-card border border-brand-border rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors group">
+      <Link href={`/shows/${show.slug}`} className="block">
         {show.backdrop_path && (
           <div className="relative h-36 w-full">
             <Image
@@ -30,7 +30,7 @@ export default function ShowCard({ show }: Props) {
             </div>
           </div>
         )}
-        <div className="p-5">
+        <div className="p-5 pb-3">
           {!show.backdrop_path && (
             <div className="flex items-start justify-between mb-3">
               {show.rank && <RankBadge rank={show.rank} />}
@@ -70,7 +70,20 @@ export default function ShowCard({ show }: Props) {
             </div>
           </div>
         </div>
+      </Link>
+      <div className="px-5 pb-4">
+        <Link
+          href={`/compare?show=${show.slug}`}
+          className="flex items-center justify-center gap-1.5 w-full text-xs text-brand-text-muted hover:text-brand-gold border border-brand-border hover:border-brand-gold/40 rounded-lg py-1.5 transition-colors"
+        >
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10" />
+            <line x1="12" y1="20" x2="12" y2="4" />
+            <line x1="6" y1="20" x2="6" y2="14" />
+          </svg>
+          Compare
+        </Link>
       </div>
-    </Link>
+    </div>
   );
 }
