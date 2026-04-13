@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getShow, getSeasons, getEpisodes, getCharacters, getRecommendations, getAllShows } from '@/lib/data';
+import { getShow, getSeasons, getEpisodes, getCharacters, getRecommendations, getAllShows, getComedyDna } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
 import { SHOW_SLUGS } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
@@ -36,12 +36,13 @@ export default async function ShowPage({ params }: { params: { slug: string } })
   const show = await getShow(params.slug);
   if (!show) notFound();
 
-  const [seasons, episodes, realCharacters, recommendations, allShows] = await Promise.all([
+  const [seasons, episodes, realCharacters, recommendations, allShows, comedyDna] = await Promise.all([
     getSeasons(params.slug),
     getEpisodes(params.slug),
     getCharacters(params.slug),
     getRecommendations(params.slug),
     getAllShows(),
+    getComedyDna(params.slug),
   ]);
 
   // Map real character data to CharacterStats format for charts
@@ -153,6 +154,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         episodes={episodes}
         characters={characters}
         characterProfiles={realCharacters}
+        comedyDna={comedyDna}
       />
 
       {/* If you liked this show */}

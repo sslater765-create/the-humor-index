@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { ShowScore, SeasonScore, EpisodeScore, CharacterStats, CharacterProfile, JokeType } from '@/lib/types';
 import { JOKE_TYPE_LABELS } from '@/lib/scoring';
-import { MOCK_DNA_DATA } from '@/lib/constants';
+// DNA data now passed as prop from server component
 import Link from 'next/link';
 import TabBar from '@/components/ui/TabBar';
 import EpisodeRow from '@/components/ui/EpisodeRow';
@@ -24,9 +24,10 @@ interface Props {
   episodes: EpisodeScore[];
   characters: CharacterStats[];
   characterProfiles?: CharacterProfile[];
+  comedyDna?: Record<string, number>;
 }
 
-export default function ShowPageClient({ show, seasons, episodes, characters, characterProfiles = [] }: Props) {
+export default function ShowPageClient({ show, seasons, episodes, characters, characterProfiles = [], comedyDna = {} }: Props) {
   const [activeTab, setActiveTab] = useState('overview');
   const [selectedSeason, setSelectedSeason] = useState<number | 'all'>(1);
   const [episodeSort, setEpisodeSort] = useState<'score' | 'jpm' | 'craft' | 'imdb' | 'airdate'>('score');
@@ -54,10 +55,10 @@ export default function ShowPageClient({ show, seasons, episodes, characters, ch
     }
   })();
 
-  const dnaData = MOCK_DNA_DATA[show.slug as keyof typeof MOCK_DNA_DATA] ?? MOCK_DNA_DATA['the-office'];
+  const dnaData = comedyDna;
   const dnaEntries = Object.entries(dnaData) as [string, number][];
-  const topType = dnaEntries.reduce((a, b) => (b[1] > a[1] ? b : a));
-  const bottomType = dnaEntries.reduce((a, b) => (b[1] < a[1] ? b : a));
+  const topType = dnaEntries.length > 0 ? dnaEntries.reduce((a, b) => (b[1] > a[1] ? b : a)) : ['none', 0] as [string, number];
+  const bottomType = dnaEntries.length > 0 ? dnaEntries.reduce((a, b) => (b[1] < a[1] ? b : a)) : ['none', 0] as [string, number];
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
       <div className="mb-6">
@@ -70,6 +71,14 @@ export default function ShowPageClient({ show, seasons, episodes, characters, ch
         const bottom3 = [...episodes].sort((a, b) => a.humor_index - b.humor_index).slice(0, 3);
         const avgIndex = episodes.length > 0
           ? episodes.reduce((sum, e) => sum + e.humor_index, 0) / episodes.length
+          : 0;
+        const above90 = episodes.filter(e => e.humor_index >= 90).length;
+        const above80 = episodes.filter(e => e.humor_index >= 80).length;
+        const above70 = episodes.filter(e => e.humor_index >= 70).length;
+        // below70 available if needed: episodes.filter(e => e.humor_index < 70).length
+        const scores = episodes.map(e => e.humor_index);
+        const stdDev = scores.length > 1
+          ? Math.sqrt(scores.reduce((sum, s) => sum + Math.pow(s - avgIndex, 2), 0) / scores.length)
           : 0;
 
         return (
@@ -159,6 +168,27 @@ export default function ShowPageClient({ show, seasons, episodes, characters, ch
                   <span className="font-mono text-brand-text-muted text-lg">{formatIndex(bottom3[0]?.humor_index || 0)}</span>
                 </p>
                 <p className="text-xs text-brand-text-muted mt-1">best to worst</p>
+              </div>
+            </div>
+
+            {/* Volume + Consistency */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
+                <p className="font-mono text-2xl text-brand-gold font-bold">{above90}</p>
+                <p className="text-[10px] text-brand-text-muted mt-1">Episodes 90+</p>
+              </div>
+              <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
+                <p className="font-mono text-2xl text-emerald-400 font-bold">{above80}</p>
+                <p className="text-[10px] text-brand-text-muted mt-1">Episodes 80+</p>
+              </div>
+              <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
+                <p className="font-mono text-2xl text-brand-text-primary font-bold">{above70}</p>
+                <p className="text-[10px] text-brand-text-muted mt-1">Episodes 70+</p>
+              </div>
+              <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
+                <p className="font-mono text-2xl text-brand-text-primary font-bold">{stdDev.toFixed(1)}</p>
+                <p className="text-[10px] text-brand-text-muted mt-1">Consistency (σ)</p>
+                <p className="text-[9px] text-brand-text-muted">lower = more consistent</p>
               </div>
             </div>
 

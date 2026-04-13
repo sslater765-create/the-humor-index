@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getAllShows } from '@/lib/data';
 import { formatIndex, scoreToColor } from '@/lib/scoring';
-import { MOCK_DNA_DATA } from '@/lib/constants';
+// DNA data loaded dynamically from comedy-dna.json
 import SocialShare from '@/components/ui/SocialShare';
 import { RadarCompareChart, JokeTypesCompareChart } from '@/components/charts';
 
@@ -94,8 +94,9 @@ export default async function MatchupPage({ params }: { params: { matchup: strin
   const margin = Math.abs(showA.humor_index - showB.humor_index);
   const close = margin < 5;
 
-  const dnaA = MOCK_DNA_DATA[match.slugA as keyof typeof MOCK_DNA_DATA];
-  const dnaB = MOCK_DNA_DATA[match.slugB as keyof typeof MOCK_DNA_DATA];
+  const { getComedyDna } = await import('@/lib/data');
+  const dnaA = await getComedyDna(match.slugA);
+  const dnaB = await getComedyDna(match.slugB);
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -173,6 +174,9 @@ export default async function MatchupPage({ params }: { params: { matchup: strin
           <MetricRow label="Craft" valA={showA.avg_craft} valB={showB.avg_craft} />
           <MetricRow label="Impact" valA={showA.avg_impact} valB={showB.avg_impact} />
           <MetricRow label="Total Jokes" valA={showA.total_jokes_analyzed} valB={showB.total_jokes_analyzed} />
+          {showA.avg_imdb_rating && showB.avg_imdb_rating && (
+            <MetricRow label="IMDb Avg" valA={showA.avg_imdb_rating} valB={showB.avg_imdb_rating} />
+          )}
         </div>
 
         {/* Radar chart */}

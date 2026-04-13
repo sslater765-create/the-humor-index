@@ -131,7 +131,7 @@ Here are the head-to-head numbers:
 - **Jokes Per Minute:** Seinfeld 2.6, The Office 2.4 \u2014 Seinfeld wins
 - **IMDb Average:** Seinfeld 8.3, The Office 8.1 \u2014 Seinfeld wins
 
-But the **Humor Index?** The Office 81.0, Seinfeld 77.5. The Office wins by 3.5 points.
+But the **Humor Index?** The Office 81.0, Seinfeld 77.9. The Office wins by 3.1 points.
 
 How does a show lose every individual category and still win overall?
 
