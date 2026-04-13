@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
+import nextDynamic from 'next/dynamic';
 import { getAllShows, getEpisodes } from '@/lib/data';
 
-const LeaderboardClient = dynamic(() => import('./LeaderboardClient'), {
+const LeaderboardClient = nextDynamic(() => import('./LeaderboardClient'), {
   loading: () => (
     <div className="animate-pulse space-y-3">
       {[...Array(3)].map((_, i) => (
