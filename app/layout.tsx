@@ -6,6 +6,9 @@ import { Inter, JetBrains_Mono } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import ScrollToTop from '@/components/ui/ScrollToTop';
+import NewsletterPopup from '@/components/ui/NewsletterPopup';
+import StickyNewsletterBar from '@/components/ui/StickyNewsletterBar';
+import RecentlyViewedTracker from '@/components/ui/RecentlyViewedTracker';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
@@ -92,6 +95,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
         <Footer />
         <ScrollToTop />
+        <NewsletterPopup />
+        <StickyNewsletterBar />
+        <RecentlyViewedTracker />
         <Analytics />
         <SpeedInsights />
       </body>

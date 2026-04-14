@@ -7,6 +7,7 @@ import { SHOW_SLUGS } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
 import ScoreGauge from '@/components/ui/ScoreGauge';
 import FormatBadge from '@/components/ui/FormatBadge';
+import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
 import ShowPageClient from './ShowPageClient';
 
 export const dynamic = 'force-static';
@@ -153,6 +154,11 @@ export default async function ShowPage({ params }: { params: { slug: string } })
             <div className="absolute right-0 top-0 bottom-2 w-8 bg-gradient-to-l from-brand-dark to-transparent pointer-events-none sm:hidden" />
           </div>
         </div>
+      </div>
+
+      {/* Newsletter CTA */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <InlineNewsletterCTA />
       </div>
 
       <ShowPageClient

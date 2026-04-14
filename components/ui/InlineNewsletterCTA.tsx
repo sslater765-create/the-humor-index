@@ -43,7 +43,7 @@ export default function InlineNewsletterCTA() {
             Get weekly comedy rankings
           </p>
           <p className="text-sm text-brand-text-muted mt-0.5">
-            New analyses, score drops, and the funniest moments we found this week.
+            Join comedy fans getting new analyses, score drops, and the funniest moments each week. Free, no spam.
           </p>
         </div>
         <form onSubmit={handleSubscribe} className="flex gap-2 sm:min-w-[280px]">

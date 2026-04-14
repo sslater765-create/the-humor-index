@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { getAllShows, getEpisodes } from '@/lib/data';
 import LeaderboardClient from './LeaderboardClient';
+import HeroNewsletterCTA from '@/components/ui/HeroNewsletterCTA';
+import WhatsNewPersonalized from '@/components/ui/WhatsNewPersonalized';
 
 export const dynamic = 'force-static';
 
@@ -69,6 +71,7 @@ export default async function HomePage() {
               How we score
             </Link>
           </div>
+          <HeroNewsletterCTA />
         </div>
       </section>
 
@@ -103,27 +106,8 @@ export default async function HomePage() {
         </section>
       )}
 
-      {/* What's New */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
-        <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-4">What&apos;s New</p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <Link href="/blog/comedy-war" className="bg-brand-card border border-brand-border rounded-xl p-4 hover:border-brand-gold/40 transition-colors group">
-            <p className="text-[10px] text-brand-gold mb-1">Latest Blog</p>
-            <p className="text-sm font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors line-clamp-2">Michael Scott Is the Most Valuable Comedy Character in Television History</p>
-            <p className="text-xs text-brand-text-muted mt-1">Apr 13, 2026</p>
-          </Link>
-          <Link href="/shows/seinfeld" className="bg-brand-card border border-brand-border rounded-xl p-4 hover:border-brand-gold/40 transition-colors group">
-            <p className="text-[10px] text-emerald-400 mb-1">Recently Completed</p>
-            <p className="text-sm font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors">Seinfeld — All 172 Episodes</p>
-            <p className="text-xs text-brand-text-muted mt-1">9,828 jokes analyzed</p>
-          </Link>
-          <Link href="/shows/friends" className="bg-brand-card border border-brand-border rounded-xl p-4 hover:border-brand-gold/40 transition-colors group">
-            <p className="text-[10px] text-amber-400 mb-1">In Progress</p>
-            <p className="text-sm font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors">Friends — Analysis Underway</p>
-            <p className="text-xs text-brand-text-muted mt-1">236 episodes queued</p>
-          </Link>
-        </div>
-      </section>
+      {/* What's New — personalized for return visitors */}
+      <WhatsNewPersonalized />
 
       {/* Featured insight */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-12">

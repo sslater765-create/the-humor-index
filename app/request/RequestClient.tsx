@@ -134,10 +134,18 @@ export default function RequestClient() {
                 aria-label="Email for vote notifications"
               />
               <button
-                onClick={() => {
+                onClick={async () => {
                   if (email && email.includes('@')) {
                     try { localStorage.setItem('humor_index_email', email); } catch {}
                     setEmailSaved(true);
+                    // Also subscribe to newsletter via Beehiiv
+                    try {
+                      await fetch('/api/subscribe', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ email }),
+                      });
+                    } catch { /* silent */ }
                   }
                 }}
                 className="text-sm font-medium px-4 py-2.5 rounded-lg transition-colors whitespace-nowrap bg-brand-surface border border-brand-border text-brand-text-secondary hover:border-brand-gold hover:text-brand-gold"
@@ -145,7 +153,7 @@ export default function RequestClient() {
                 Save
               </button>
             </div>
-            <p className="text-[10px] text-brand-text-muted mt-2">Only visible to you — stored locally on your device.</p>
+            <p className="text-[10px] text-brand-text-muted mt-2">We&apos;ll also add you to our weekly comedy rankings newsletter. Unsubscribe anytime.</p>
           </>
         )}
       </div>

@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import SocialShare from '@/components/ui/SocialShare';
-import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
+import EndOfArticleCTA from '@/components/ui/EndOfArticleCTA';
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr + 'T00:00:00');
@@ -519,9 +519,49 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         })}
       </article>
 
-      <InlineNewsletterCTA />
+      <EndOfArticleCTA />
 
-      <div className="mt-12 border-t border-brand-border pt-8">
+      {/* Related posts */}
+      {(() => {
+        const currentPost = POSTS[params.slug];
+        if (!currentPost) return null;
+        const related = Object.entries(POSTS)
+          .filter(([slug]) => slug !== params.slug)
+          .filter(([, p]) => p.category === currentPost.category)
+          .slice(0, 2);
+        // Fill with other posts if not enough in same category
+        if (related.length < 2) {
+          const others = Object.entries(POSTS)
+            .filter(([slug]) => slug !== params.slug && !related.some(([s]) => s === slug))
+            .slice(0, 2 - related.length);
+          related.push(...others);
+        }
+        if (related.length === 0) return null;
+        return (
+          <div className="mt-10 border-t border-brand-border pt-8">
+            <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-4">You might also like</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {related.map(([slug, p]) => (
+                <Link
+                  key={slug}
+                  href={`/blog/${slug}`}
+                  className="bg-brand-card border border-brand-border rounded-xl p-5 hover:border-brand-gold/40 transition-colors group"
+                >
+                  <span className="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-2.5 py-0.5">
+                    {p.category}
+                  </span>
+                  <h3 className="text-sm font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mt-3 mb-1 line-clamp-2">
+                    {p.title}
+                  </h3>
+                  <p className="text-xs text-brand-text-muted">{formatDate(p.date)}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        );
+      })()}
+
+      <div className="mt-8 border-t border-brand-border pt-8">
         <Link href="/blog" className="text-sm text-brand-text-muted hover:text-brand-gold transition-colors">
           ← Back to all posts
         </Link>

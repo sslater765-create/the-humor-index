@@ -6,6 +6,7 @@ import { ShowScore } from '@/lib/types';
 import { formatIndex } from '@/lib/scoring';
 import { MOCK_DNA_DATA } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
+import SocialShare from '@/components/ui/SocialShare';
 import { RadarCompareChart, JokeTypesCompareChart } from '@/components/charts';
 
 interface Props {
@@ -175,6 +176,13 @@ export default function CompareClient({ shows }: Props) {
                   <p className="text-xs text-brand-text-muted mt-0.5">
                     Wins {aWins >= bWins ? aWins : bWins} of {dims.length} dimensions
                   </p>
+                  <div className="mt-4">
+                    <SocialShare
+                      title={`${overall.name} beats ${overall === showA ? showB.name : showA.name} on The Humor Index`}
+                      text={`${overall.name} wins ${aWins >= bWins ? aWins : bWins} of ${dims.length} dimensions vs ${overall === showA ? showB.name : showA.name} on The Humor Index`}
+                      url={`/compare?show=${slugA}`}
+                    />
+                  </div>
                 </div>
               );
             })()}

@@ -38,7 +38,7 @@ export default function Footer() {
             Weekly comedy rankings
           </h3>
           <p className="text-sm text-brand-text-secondary mb-4">
-            Join comedy fans getting weekly rankings, new show analyses, and the funniest moments we found. No spam.
+            Join comedy fans getting weekly rankings, new show analyses, and the funniest moments we found each week. Free, no spam, unsubscribe anytime.
           </p>
           {subscribed ? (
             <div className="bg-brand-gold/5 border border-brand-gold/20 rounded-xl p-5">
