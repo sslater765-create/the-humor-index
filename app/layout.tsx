@@ -3,7 +3,7 @@ import './globals.css';
 import Nav from '@/components/layout/Nav';
 import Footer from '@/components/layout/Footer';
 import { Inter, JetBrains_Mono } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import ScrollToTop from '@/components/ui/ScrollToTop';
 import NewsletterPopup from '@/components/ui/NewsletterPopup';
