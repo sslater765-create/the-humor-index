@@ -82,20 +82,21 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Hero section with backdrop */}
-      <div className="relative w-full h-[320px] sm:h-[420px] overflow-hidden">
+      <div className="relative w-full h-[380px] sm:h-[480px] overflow-hidden">
         {show.backdrop_path ? (
           <Image
-            src={`https://image.tmdb.org/t/p/w1280${show.backdrop_path}`}
+            src={`https://image.tmdb.org/t/p/original${show.backdrop_path}`}
             alt={`${show.name} backdrop`}
             fill
-            className="object-cover object-center"
+            className="object-cover object-top"
             priority
+            sizes="100vw"
           />
         ) : (
           <div className="absolute inset-0 bg-brand-surface" />
         )}
-        {/* Gradient overlay — bottom half dark for text, top half shows image */}
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 15%, rgba(15,15,15,0.55) 40%, rgba(15,15,15,0.1) 60%, transparent 100%)' }} />
+        {/* Gradient overlay — keeps text readable, lets image breathe */}
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 12%, rgba(15,15,15,0.5) 35%, rgba(15,15,15,0.05) 55%, transparent 100%)' }} />
 
         {/* Content overlay */}
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-4 sm:px-6 pb-6">
@@ -189,7 +190,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
                     {recShow.backdrop_path && (
                       <div className="relative h-32 w-full">
                         <Image
-                          src={`https://image.tmdb.org/t/p/w780${recShow.backdrop_path}`}
+                          src={`https://image.tmdb.org/t/p/w1280${recShow.backdrop_path}`}
                           alt={recShow.name}
                           fill
                           className="object-cover opacity-40 group-hover:opacity-55 transition-opacity"
