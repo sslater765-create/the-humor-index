@@ -51,7 +51,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${showName} "${detail.title}" — ${detail.total_jokes} Jokes Scored`,
       description: `Humor Index: ${formatIndex(detail.humor_index)}. JPM: ${detail.jpm}. See every joke ranked.`,
-      images: ['/og-image.png'],
+      images: [`/api/og?title=${encodeURIComponent(`${showName} "${detail.title}"`)}&score=${formatIndex(detail.humor_index)}&subtitle=${encodeURIComponent(`S${detail.season}E${String(detail.episode_number).padStart(2, '0')} · ${detail.total_jokes} jokes`)}`],
     },
     alternates: {
       canonical: `https://thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}`,
@@ -116,6 +116,18 @@ export default async function EpisodePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Shows', item: 'https://thehumorindex.com/shows' },
+            { '@type': 'ListItem', position: 2, name: show.name, item: `https://thehumorindex.com/shows/${params.slug}` },
+            { '@type': 'ListItem', position: 3, name: `S${seasonNum}E${String(episodeNum).padStart(2, '0')}: ${detail.title}`, item: `https://thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}` },
+          ],
+        }) }}
       />
       <StickyEpisodeBar
         title={detail.title}

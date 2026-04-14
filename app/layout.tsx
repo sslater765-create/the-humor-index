@@ -53,6 +53,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://thehumorindex.com',
+    types: {
+      'application/rss+xml': '/feed.xml',
+    },
   },
 };
 
@@ -70,6 +73,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={`${inter.variable} ${jetbrainsMono.variable} bg-brand-dark text-brand-text-primary min-h-screen flex flex-col font-sans`}>
         <Nav />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'The Humor Index',
+            url: 'https://thehumorindex.com',
+            logo: 'https://thehumorindex.com/favicon-400.png',
+            description: 'AI-powered comedy analytics ranking every joke in television history.',
+            sameAs: [
+              'https://x.com/thehumorindex',
+              'https://instagram.com/thehumorindex',
+              'https://tiktok.com/@thehumorindex',
+            ],
+          }) }}
+        />
         <main className="flex-1">{children}</main>
         <Footer />
         <ScrollToTop />

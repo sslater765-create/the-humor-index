@@ -16,25 +16,35 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const shows = await getAllShows();
 
   const staticPages: MetadataRoute.Sitemap = [
-    { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1.0 },
-    { url: `${baseUrl}/shows`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${baseUrl}/rankings`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/rankings/funniest-episodes`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/rankings/best-jokes`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/rankings/funniest-characters`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/compare`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/search`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/methodology`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/request`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/faq`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
+    { url: baseUrl, lastModified: new Date('2026-04-13'), changeFrequency: 'weekly', priority: 1.0 },
+    { url: `${baseUrl}/shows`, lastModified: new Date('2026-04-13'), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${baseUrl}/rankings`, lastModified: new Date('2026-04-13'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${baseUrl}/rankings/funniest-episodes`, lastModified: new Date('2026-04-13'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${baseUrl}/rankings/best-jokes`, lastModified: new Date('2026-04-13'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${baseUrl}/rankings/funniest-characters`, lastModified: new Date('2026-04-13'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${baseUrl}/compare`, lastModified: new Date('2026-04-13'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${baseUrl}/blog`, lastModified: new Date('2026-04-13'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${baseUrl}/search`, lastModified: new Date('2026-04-13'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/methodology`, lastModified: new Date('2026-04-13'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/request`, lastModified: new Date('2026-04-13'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/faq`, lastModified: new Date('2026-04-13'), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/about`, lastModified: new Date('2026-04-13'), changeFrequency: 'monthly', priority: 0.5 },
   ];
 
   // Blog posts
+  // Blog post dates — keep in sync with app/blog/[slug]/page.tsx
+  const blogDates: Record<string, string> = {
+    'comedy-war': '2026-04-13',
+    'seinfeld-vs-the-office': '2026-04-12',
+    'imdb-vs-humor-index': '2026-04-12',
+    'is-the-office-actually-funny': '2026-04-10',
+    'how-we-score-comedy': '2026-04-10',
+    'laugh-track-penalty': '2026-04-10',
+  };
+
   const blogPages: MetadataRoute.Sitemap = BLOG_SLUGS.map(slug => ({
     url: `${baseUrl}/blog/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date(blogDates[slug] || '2026-04-13'),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
@@ -42,7 +52,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Show pages
   const showPages: MetadataRoute.Sitemap = shows.map(show => ({
     url: `${baseUrl}/shows/${show.slug}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-04-13'),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }));
@@ -57,7 +67,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const ep of episodes) {
         episodePages.push({
           url: `${baseUrl}/shows/${show.slug}/${ep.season}/${ep.episode_number}`,
-          lastModified: new Date(),
+          lastModified: new Date('2026-04-13'),
           changeFrequency: 'monthly' as const,
           priority: 0.6,
         });
@@ -69,7 +79,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const ch of characters.slice(0, 20)) {
         characterPages.push({
           url: `${baseUrl}/shows/${show.slug}/characters/${encodeURIComponent(ch.name)}`,
-          lastModified: new Date(),
+          lastModified: new Date('2026-04-13'),
           changeFrequency: 'monthly' as const,
           priority: 0.5,
         });
@@ -85,7 +95,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       if (a.slug !== b.slug) {
         comparePages.push({
           url: `${baseUrl}/compare/${a.slug}-vs-${b.slug}`,
-          lastModified: new Date(),
+          lastModified: new Date('2026-04-13'),
           changeFrequency: 'monthly' as const,
           priority: 0.5,
         });

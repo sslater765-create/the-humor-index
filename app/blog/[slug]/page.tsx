@@ -423,6 +423,24 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: post.title,
+          description: post.description,
+          datePublished: post.date,
+          author: { '@type': 'Person', name: 'Sam Slater' },
+          publisher: {
+            '@type': 'Organization',
+            name: 'The Humor Index',
+            logo: { '@type': 'ImageObject', url: 'https://thehumorindex.com/favicon-400.png' },
+          },
+          url: `https://thehumorindex.com/blog/${params.slug}`,
+          image: `/api/og?title=${encodeURIComponent(post.title)}&subtitle=${encodeURIComponent(post.category)}`,
+        }) }}
+      />
       <div className="flex items-center gap-2 text-xs text-brand-text-muted mb-6">
         <Link href="/blog" className="hover:text-brand-text-secondary transition-colors">Blog</Link>
         <span>/</span>
