@@ -82,13 +82,13 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Hero section with backdrop */}
-      <div className="relative w-full aspect-video max-h-[70vh] overflow-hidden">
+      <div className="relative w-full aspect-video overflow-hidden">
         {show.backdrop_path ? (
           <Image
             src={`https://image.tmdb.org/t/p/original${show.backdrop_path}`}
             alt={`${show.name} backdrop`}
             fill
-            className="object-contain object-top"
+            className="object-cover"
             priority
             sizes="100vw"
           />
