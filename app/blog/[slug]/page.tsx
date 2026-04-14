@@ -3,6 +3,11 @@ import Link from 'next/link';
 import SocialShare from '@/components/ui/SocialShare';
 import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
 
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+}
+
 export const dynamicParams = false;
 
 const POSTS: Record<string, {
@@ -429,7 +434,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           <span className="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-2.5 py-0.5">
             {post.category}
           </span>
-          <span className="text-xs text-brand-text-muted">{post.date}</span>
+          <span className="text-xs text-brand-text-muted">{formatDate(post.date)}</span>
         </div>
         <h1 className="text-2xl sm:text-3xl font-medium text-brand-text-primary leading-tight mb-4">
           {post.title}

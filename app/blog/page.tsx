@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import PageHeader from '@/components/layout/PageHeader';
 
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+}
+
 export const metadata = {
   title: 'Comedy Analytics Blog — Data-Driven Insights on TV Humor',
   description: 'Deep dives into sitcom comedy using data. Which shows are actually the funniest? What makes a joke work? We break it down with numbers.',
@@ -123,7 +128,7 @@ export default function BlogPage() {
                 </div>
               </div>
               <div className="p-5">
-                <p className="text-xs text-brand-text-muted mb-2">{post.date}</p>
+                <p className="text-xs text-brand-text-muted mb-2">{formatDate(post.date)}</p>
                 <h2 className="text-base font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2 line-clamp-2">
                   {post.title}
                 </h2>

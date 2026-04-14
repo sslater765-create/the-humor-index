@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: 'Why does The Office rank #1?',
-    a: `It's the only show with full analysis right now. As we finish scoring Seinfeld, Friends, Arrested Development, and the rest of the lineup, the rankings will shift. The Office has a genuine advantage in our system though — single-camera shows don't get the laugh track penalty that multi-camera formats receive.`,
+    a: `We've fully analyzed both The Office and Seinfeld, with Friends currently in progress. The Office leads because our Humor Index rewards consistency — it has fewer weak episodes than Seinfeld. The Office also benefits from the single-camera format, which doesn't receive the laugh track penalty that multi-camera shows like Seinfeld get.`,
   },
   {
     q: 'What is the "laugh track penalty"?',

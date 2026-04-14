@@ -63,7 +63,15 @@ export default async function CharacterPage({
     return bScore - aScore;
   });
 
-  const standouts = topJokes.slice(0, 5);
+  // Deduplicate jokes by text (same joke can appear in multiple episodes)
+  const seenTexts = new Set<string>();
+  const dedupedJokes = topJokes.filter(item => {
+    const text = (item.joke.text as string).toLowerCase().trim();
+    if (seenTexts.has(text)) return false;
+    seenTexts.add(text);
+    return true;
+  });
+  const standouts = dedupedJokes.slice(0, 5);
 
   return (
     <div>

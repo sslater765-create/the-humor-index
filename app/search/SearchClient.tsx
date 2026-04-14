@@ -2,6 +2,7 @@
 import { useState, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import { Joke } from '@/lib/types';
+import SurpriseButton from '@/components/ui/SurpriseButton';
 
 interface SearchableJoke extends Joke {
   showName: string;
@@ -240,6 +241,9 @@ export default function SearchClient({ jokes }: { jokes: SearchableJoke[] }) {
                 {suggestion}
               </button>
             ))}
+          </div>
+          <div className="mt-6">
+            <SurpriseButton />
           </div>
         </div>
       )}
