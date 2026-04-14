@@ -68,7 +68,7 @@ export default function Footer() {
                 placeholder="you@email.com"
                 required
                 aria-label="Email address for newsletter"
-                className="flex-1 bg-brand-surface border border-brand-border rounded-lg px-3 py-2 text-sm text-brand-text-primary placeholder:text-brand-text-muted focus:outline-none focus:border-brand-gold transition-colors"
+                className="flex-1 bg-brand-surface border border-brand-border rounded-lg px-3 py-2 text-sm text-brand-text-primary placeholder:text-brand-text-secondary focus:outline-none focus:border-brand-gold transition-colors"
               />
               <button
                 type="submit"
@@ -85,7 +85,7 @@ export default function Footer() {
       {/* Footer links */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-          <span className="text-xs text-brand-text-muted">
+          <span className="text-sm text-brand-text-secondary font-medium">
             THE HUMOR INDEX — comedy analytics, not corporate sponsorship
           </span>
           <span className="text-xs text-brand-text-muted">

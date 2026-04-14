@@ -49,7 +49,7 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-brand-border">
-              {['Rank', 'Show', 'Format', 'Seasons', 'Humor Index', 'IMDb', 'JPM', 'Craft', 'Impact', 'Best Season'].map(h => {
+              {['Rank', 'Show', 'Format', 'Humor Index', 'IMDb', 'JPM', 'Craft', 'Impact'].map(h => {
                 const isBadge = ['Humor Index', 'IMDb', 'JPM', 'Craft', 'Impact', 'Best Season'].includes(h);
                 return (
                   <th key={h} className="text-left text-xs uppercase tracking-widest text-brand-text-muted font-normal pb-3 pr-4 first:pl-0">
@@ -79,7 +79,6 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
                 <td className="py-3 pr-4">
                   <FormatBadge format={show.format} />
                 </td>
-                <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.total_seasons}</td>
                 <td className="py-3 pr-4 font-mono font-medium" style={{ color: scoreToColor(show.humor_index) }}>
                   {formatIndex(show.humor_index)}
                 </td>
@@ -87,7 +86,6 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
                 <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_jpm.toFixed(1)}</td>
                 <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_craft.toFixed(1)}</td>
                 <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_impact.toFixed(1)}</td>
-                <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">S{show.best_season}</td>
               </motion.tr>
             ))}
           </tbody>

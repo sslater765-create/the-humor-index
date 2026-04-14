@@ -102,10 +102,10 @@ export default function CompareClient({ shows }: Props) {
           className="space-y-8"
         >
           {/* Metric cards side by side */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
               <p className="text-xs uppercase tracking-widest text-brand-gold mb-3">{showA.name}</p>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 gap-3">
                 {dims.map(d => (
                   <ScoreCard
                     key={d.key}
@@ -118,7 +118,7 @@ export default function CompareClient({ shows }: Props) {
             </div>
             <div>
               <p className="text-xs uppercase tracking-widest text-brand-blue mb-3">{showB.name}</p>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 gap-3">
                 {dims.map(d => (
                   <ScoreCard
                     key={d.key}

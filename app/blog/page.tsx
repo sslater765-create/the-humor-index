@@ -103,7 +103,7 @@ export default function BlogPage() {
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          {POSTS.map(post => (
+          {POSTS.map((post, postIndex) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
@@ -124,11 +124,11 @@ export default function BlogPage() {
                   </span>
                 </div>
                 <div className="absolute bottom-3 right-4">
-                  <span className="text-xs text-brand-text-muted">{post.readTime}</span>
+                  <span className="text-xs text-brand-text-muted">#{postIndex + 1}</span>
                 </div>
               </div>
               <div className="p-5">
-                <p className="text-xs text-brand-text-muted mb-2">{formatDate(post.date)}</p>
+                <p className="text-xs text-brand-text-muted mb-2">{formatDate(post.date)} · {post.readTime}</p>
                 <h2 className="text-base font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2 line-clamp-2">
                   {post.title}
                 </h2>

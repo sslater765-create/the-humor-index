@@ -95,7 +95,7 @@ export default function RadarCompareChart({ showA, showB }: Props) {
         },
         scales: {
           r: {
-            min: 0,
+            min: 20,
             max: 100,
             ticks: { display: false, stepSize: 25 },
             grid: { color: 'rgba(255,255,255,0.08)' },

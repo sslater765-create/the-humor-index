@@ -64,7 +64,7 @@ export default async function HomePage() {
             </Link>
             <Link
               href="/methodology"
-              className="border border-brand-border text-brand-text-secondary text-sm px-5 py-2.5 rounded-lg hover:border-brand-text-muted transition-colors"
+              className="border border-brand-text-muted text-brand-text-secondary text-sm px-5 py-2.5 rounded-lg hover:border-brand-text-secondary transition-colors"
             >
               How we score
             </Link>

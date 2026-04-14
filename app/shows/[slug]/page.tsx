@@ -94,7 +94,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           <div className="absolute inset-0 bg-brand-surface" />
         )}
         {/* Gradient overlay — bottom half dark for text, top half shows image */}
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 15%, rgba(15,15,15,0.7) 40%, rgba(15,15,15,0.1) 65%, transparent 100%)' }} />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 15%, rgba(15,15,15,0.55) 40%, rgba(15,15,15,0.1) 60%, transparent 100%)' }} />
 
         {/* Content overlay */}
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-4 sm:px-6 pb-6">
@@ -133,18 +133,24 @@ export default async function ShowPage({ params }: { params: { slug: string } })
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
         <div className="flex flex-col sm:flex-row items-center gap-6">
           <ScoreGauge score={show.humor_index} size={130} label="Humor Index" />
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 flex-1 w-full">
-            <ScoreCard label="JPM" value={show.avg_jpm} sub="Jokes per minute" />
-            <ScoreCard label="Craft" value={show.avg_craft} sub="Avg craft score" />
-            <ScoreCard label="Impact" value={show.avg_impact} sub="Avg impact score" />
-            {show.avg_imdb_rating && (
-              <ScoreCard label="IMDb" value={show.avg_imdb_rating} sub="Avg episode rating" />
-            )}
-            <ScoreCard
-              label="Jokes Analyzed"
-              value={show.total_jokes_analyzed.toLocaleString()}
-              sub={`${episodes.length} episodes`}
-            />
+          <div className="relative flex-1 w-full">
+            <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-2 sm:pb-0 sm:grid sm:grid-cols-5 sm:overflow-visible">
+              <div className="min-w-[140px] snap-start sm:min-w-0"><ScoreCard label="JPM" value={show.avg_jpm} sub="Jokes per minute" /></div>
+              <div className="min-w-[140px] snap-start sm:min-w-0"><ScoreCard label="Craft" value={show.avg_craft} sub="Avg craft score" /></div>
+              <div className="min-w-[140px] snap-start sm:min-w-0"><ScoreCard label="Impact" value={show.avg_impact} sub="Avg impact score" /></div>
+              {show.avg_imdb_rating && (
+                <div className="min-w-[140px] snap-start sm:min-w-0"><ScoreCard label="IMDb" value={show.avg_imdb_rating} sub="Avg episode rating" /></div>
+              )}
+              <div className="min-w-[140px] snap-start sm:min-w-0">
+                <ScoreCard
+                  label="Jokes Analyzed"
+                  value={show.total_jokes_analyzed.toLocaleString()}
+                  sub={`${episodes.length} episodes`}
+                />
+              </div>
+            </div>
+            {/* Fade indicator for mobile scroll */}
+            <div className="absolute right-0 top-0 bottom-2 w-8 bg-gradient-to-l from-brand-dark to-transparent pointer-events-none sm:hidden" />
           </div>
         </div>
       </div>
