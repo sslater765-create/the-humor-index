@@ -82,7 +82,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Hero section with backdrop */}
-      <div className="relative w-full h-[400px] sm:h-[560px] overflow-hidden">
+      <div className="relative w-full h-[420px] sm:h-[600px] overflow-hidden">
         {show.backdrop_path ? (
           <Image
             src={`https://image.tmdb.org/t/p/original${show.backdrop_path}`}
@@ -96,7 +96,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           <div className="absolute inset-0 bg-brand-surface" />
         )}
         {/* Gradient overlay — keeps text readable, lets image breathe */}
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 12%, rgba(15,15,15,0.5) 35%, rgba(15,15,15,0.05) 55%, transparent 100%)' }} />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 10%, rgba(15,15,15,0.6) 25%, rgba(15,15,15,0.1) 40%, transparent 60%)' }} />
 
         {/* Content overlay */}
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-4 sm:px-6 pb-6">
