@@ -87,7 +87,6 @@ export default function SearchClient({ jokes }: { jokes: SearchableJoke[] }) {
       filtered = filtered.filter(j =>
         j.text.toLowerCase().includes(q) ||
         j.characters.some(c => c.toLowerCase().includes(q)) ||
-        j.explanation?.toLowerCase().includes(q) ||
         j.showName.toLowerCase().includes(q) ||
         j.episodeTitle.toLowerCase().includes(q)
       );
