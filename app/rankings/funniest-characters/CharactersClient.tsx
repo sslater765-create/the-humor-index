@@ -40,22 +40,39 @@ function classifyTier(c: WarCharacter): Tier {
 export default function CharactersClient({ characters }: { characters: WarCharacter[] }) {
   const [sortMode, setSortMode] = useState<SortMode>('total_war');
   const [tier, setTier] = useState<Tier>('all');
+  const [showSlug, setShowSlug] = useState<string>('all');
+
+  // Unique shows present in the data, sorted alphabetically
+  const shows = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const c of characters) {
+      if (!map.has(c.showSlug)) map.set(c.showSlug, c.showName);
+    }
+    return Array.from(map.entries())
+      .map(([slug, name]) => ({ slug, name }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+  }, [characters]);
+
+  const baseList = useMemo(() => {
+    let list = characters;
+    if (showSlug !== 'all') list = list.filter(c => c.showSlug === showSlug);
+    if (tier !== 'all') list = list.filter(c => classifyTier(c) === tier);
+    return list;
+  }, [characters, showSlug, tier]);
 
   const filtered = useMemo(() => {
-    const list = tier === 'all' ? characters : characters.filter(c => classifyTier(c) === tier);
-    const sorted = [...list].sort((a, b) =>
+    const sorted = [...baseList].sort((a, b) =>
       sortMode === 'total_war' ? b.war - a.war : b.warPerEpisode - a.warPerEpisode
     );
     return sorted.slice(0, 25);
-  }, [characters, sortMode, tier]);
+  }, [baseList, sortMode]);
 
   // Two-tower view: side-by-side leaderboards for Total WAR vs WAR/ep
   const towerList = useMemo(() => {
-    const list = tier === 'all' ? characters : characters.filter(c => classifyTier(c) === tier);
-    const byTotal = [...list].sort((a, b) => b.war - a.war).slice(0, 10);
-    const byPerEp = [...list].sort((a, b) => b.warPerEpisode - a.warPerEpisode).slice(0, 10);
+    const byTotal = [...baseList].sort((a, b) => b.war - a.war).slice(0, 10);
+    const byPerEp = [...baseList].sort((a, b) => b.warPerEpisode - a.warPerEpisode).slice(0, 10);
     return { byTotal, byPerEp };
-  }, [characters, tier]);
+  }, [baseList]);
 
   const maxValueForBar = useMemo(() => {
     if (!filtered.length) return 1;
@@ -92,6 +109,22 @@ export default function CharactersClient({ characters }: { characters: WarCharac
               {opt.label}
             </button>
           ))}
+        </div>
+
+        {/* Show filter */}
+        <div className="flex items-center gap-2 p-1 bg-brand-surface border border-brand-border rounded-lg">
+          <label htmlFor="show-filter" className="text-xs text-brand-text-muted pl-2">Show:</label>
+          <select
+            id="show-filter"
+            value={showSlug}
+            onChange={e => setShowSlug(e.target.value)}
+            className="text-xs bg-transparent text-brand-text-primary py-1 pr-2 pl-1 focus:outline-none cursor-pointer"
+          >
+            <option value="all">All shows</option>
+            {shows.map(s => (
+              <option key={s.slug} value={s.slug}>{s.name}</option>
+            ))}
+          </select>
         </div>
 
         {/* Tier */}
