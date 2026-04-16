@@ -18,7 +18,7 @@ const ALL_ITEMS: NewItem[] = [
   { href: '/blog/seinfeld-vs-the-office', label: 'Blog', labelColor: 'text-brand-gold', title: 'Seinfeld Has Better Jokes. The Office Is Funnier.', subtitle: 'Apr 12, 2026', date: '2026-04-12' },
   { href: '/blog/imdb-vs-humor-index', label: 'Blog', labelColor: 'text-brand-gold', title: 'IMDb Ratings vs. The Humor Index', subtitle: 'Apr 12, 2026', date: '2026-04-12' },
   { href: '/shows/seinfeld', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Seinfeld — All 172 Episodes', subtitle: '9,828 jokes analyzed', date: '2026-04-11' },
-  { href: '/shows/friends', label: 'In Progress', labelColor: 'text-amber-400', title: 'Friends — Analysis Underway', subtitle: '236 episodes queued', date: '2026-04-10' },
+  { href: '/shows/friends', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Friends — All 236 Episodes', subtitle: '14,227 jokes analyzed', date: '2026-04-16' },
 ];
 
 export default function WhatsNewPersonalized() {

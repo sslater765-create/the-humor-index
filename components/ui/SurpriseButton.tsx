@@ -11,6 +11,11 @@ const TOP_EPISODES = [
   '/shows/the-office/5/14',  // Stress Relief
   '/shows/seinfeld/3/17',    // The Boyfriend
   '/shows/the-office/2/1',   // The Dundies
+  '/shows/friends/8/9',      // The One With The Rumor
+  '/shows/friends/10/18',    // The Last One, Part 2
+  '/shows/friends/10/6',     // The One With Ross's Grant
+  '/shows/friends/7/6',      // The One With The Nap Partners
+  '/shows/friends/9/15',     // The One With The Mugging
 ];
 
 export default function SurpriseButton() {
