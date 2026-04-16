@@ -193,7 +193,7 @@ export default function SearchClient({ jokes }: { jokes: SearchableJoke[] }) {
           <div className="space-y-3">
             {results.map((joke) => (
               <Link
-                key={`${joke.showSlug}-${joke.season}-${joke.episodeNumber}-${joke.id}`}
+                key={`${joke.showSlug}-${joke.season}-${joke.episodeNumber}-${joke.index}`}
                 href={`/shows/${joke.showSlug}/${joke.season}/${joke.episodeNumber}`}
                 className="block bg-brand-card border border-brand-border rounded-xl p-4 hover:border-brand-gold/40 transition-colors group"
               >
