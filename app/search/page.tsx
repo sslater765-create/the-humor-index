@@ -45,7 +45,7 @@ export default async function SearchPage() {
           if (detail) {
             for (const joke of detail.jokes) {
               allJokes.push({
-                index: joke.index,
+                index: joke.joke_index,
                 text: joke.text,
                 characters: joke.characters,
                 joke_types: joke.joke_types,
