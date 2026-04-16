@@ -39,14 +39,18 @@ export default async function SearchPage() {
           if (detail) {
             for (const joke of detail.jokes) {
               allJokes.push({
-                ...joke,
+                index: joke.index,
+                text: joke.text,
+                characters: joke.characters,
+                joke_types: joke.joke_types,
+                craft_total: joke.craft_total,
+                impact_score: joke.impact_score,
                 showName: show.name,
                 showSlug: show.slug,
                 season: ep.season,
                 episodeNumber: ep.episode_number,
                 episodeTitle: ep.title,
-              });
-            }
+              } as SearchableJoke);
           }
         } catch { /* no detail */ }
       }
