@@ -1,7 +1,7 @@
 import PageHeader from '@/components/layout/PageHeader';
 import SearchClient from './SearchClient';
 import { getAllShows, getEpisodes, getEpisodeDetail } from '@/lib/data';
-import { Joke } from '@/lib/types';
+import { JokeType } from '@/lib/types';
 
 export const metadata = {
   title: 'Search Every Joke — Find Any Moment in Sitcom History',
@@ -18,7 +18,13 @@ export const metadata = {
 
 export const dynamic = 'force-static';
 
-interface SearchableJoke extends Joke {
+interface SearchableJoke {
+  index: number;
+  text: string;
+  characters: string[];
+  joke_types: JokeType[];
+  craft_total: number;
+  impact_score: number;
   showName: string;
   showSlug: string;
   season: number;
@@ -50,7 +56,7 @@ export default async function SearchPage() {
                 season: ep.season,
                 episodeNumber: ep.episode_number,
                 episodeTitle: ep.title,
-              } as SearchableJoke);
+              });
             }
           }
         } catch { /* no detail */ }

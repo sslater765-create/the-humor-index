@@ -1,10 +1,16 @@
 'use client';
 import { useState, useMemo, useRef } from 'react';
 import Link from 'next/link';
-import { Joke } from '@/lib/types';
+import { JokeType } from '@/lib/types';
 import SurpriseButton from '@/components/ui/SurpriseButton';
 
-interface SearchableJoke extends Joke {
+interface SearchableJoke {
+  index: number;
+  text: string;
+  characters: string[];
+  joke_types: JokeType[];
+  craft_total: number;
+  impact_score: number;
   showName: string;
   showSlug: string;
   season: number;
