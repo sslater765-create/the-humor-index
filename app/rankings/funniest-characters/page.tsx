@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getAllShows, getEpisodes, getEpisodeDetail } from '@/lib/data';
+import { getAllShows, getEpisodes, getEpisodeDetail, getCharacters } from '@/lib/data';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 
@@ -96,6 +96,38 @@ export default async function FunniestCharactersPage() {
     });
   });
 
+  // Build career WAR leaderboard from characters.json files
+  const warChars: Array<{
+    name: string;
+    showName: string;
+    showSlug: string;
+    war: number;
+    warPerEpisode: number;
+    totalJokes: number;
+    episodesAppeared: number;
+  }> = [];
+
+  for (const show of shows) {
+    try {
+      const chars = await getCharacters(show.slug);
+      for (const c of chars) {
+        if (c.war == null || c.war <= 0) continue;
+        const skip = ['Unknown', 'Others', 'Multiple', 'Everyone', 'Employee', 'Man', 'Woman'];
+        if (skip.includes(c.name)) continue;
+        warChars.push({
+          name: c.name,
+          showName: show.name,
+          showSlug: show.slug,
+          war: c.war,
+          warPerEpisode: c.episodes_appeared ? c.war / c.episodes_appeared : 0,
+          totalJokes: c.total_jokes,
+          episodesAppeared: c.episodes_appeared ?? 0,
+        });
+      }
+    } catch { /* no characters */ }
+  }
+  warChars.sort((a, b) => b.war - a.war);
+
   const mainChars = characters.filter(c => c.totalJokes >= 100).sort((a, b) => b.combined - a.combined);
   const recurringChars = characters.filter(c => c.totalJokes >= 25 && c.totalJokes < 100).sort((a, b) => b.combined - a.combined);
   const guestChars = characters.filter(c => c.totalJokes >= 10 && c.totalJokes < 25).sort((a, b) => b.combined - a.combined);
@@ -146,11 +178,51 @@ export default async function FunniestCharactersPage() {
           />
         </div>
 
+        {/* Career WAR leaderboard (total contribution across all episodes) */}
+        {warChars.length > 0 && (
+          <div className="mb-10">
+            <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">Most Valuable Characters of All Time</p>
+            <p className="text-sm text-brand-text-muted mb-4">
+              Career WAR (Wins Above Replacement) — total comedic value across every episode.
+            </p>
+            <div className="space-y-2">
+              {warChars.slice(0, 25).map((c, i) => (
+                <Link
+                  key={`war-${c.name}-${c.showSlug}`}
+                  href={`/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`}
+                  className="flex items-center justify-between p-4 bg-brand-card border border-brand-border rounded-xl hover:border-brand-gold/40 transition-colors group"
+                >
+                  <div className="flex items-center gap-4">
+                    <span className={`font-mono text-sm w-8 text-right ${i < 3 ? 'text-brand-gold font-medium' : 'text-brand-text-muted'}`}>
+                      {i + 1}
+                    </span>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-brand-text-primary font-medium group-hover:text-brand-gold transition-colors">{c.name}</span>
+                        <span className="text-xs text-brand-text-muted">{c.showName}</span>
+                      </div>
+                      <div className="flex gap-3 mt-1 text-xs text-brand-text-muted">
+                        <span>{c.totalJokes.toLocaleString()} jokes</span>
+                        <span>{c.episodesAppeared} eps</span>
+                        <span>{c.warPerEpisode.toFixed(2)} WAR/ep</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <span className="font-mono text-lg text-brand-gold font-medium">{c.war.toFixed(1)}</span>
+                    <p className="text-[10px] text-brand-text-muted uppercase tracking-widest">WAR</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Main characters (100+ jokes) */}
         {mainChars.length > 0 && (
           <div className="mb-10">
-            <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">Main Characters</p>
-            <p className="text-sm text-brand-text-muted mb-4">100+ jokes analyzed</p>
+            <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">Highest Average Joke Quality</p>
+            <p className="text-sm text-brand-text-muted mb-4">Main characters — ranked by per-joke quality (100+ jokes)</p>
             <div className="space-y-2">
               {mainChars.map((char, i) => <CharRow key={`${char.name}-${char.showSlug}`} char={char} i={i} />)}
             </div>
