@@ -51,6 +51,7 @@ export default async function SearchPage() {
                 episodeNumber: ep.episode_number,
                 episodeTitle: ep.title,
               } as SearchableJoke);
+            }
           }
         } catch { /* no detail */ }
       }
