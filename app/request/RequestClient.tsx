@@ -165,13 +165,17 @@ export default function RequestClient() {
         <div className="space-y-2 mb-3">
           <div className="flex items-center justify-between p-2 bg-brand-surface rounded-lg">
             <span className="text-sm text-brand-text-primary">Friends</span>
+            <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full px-2 py-0.5">Completed</span>
+          </div>
+          <div className="flex items-center justify-between p-2 bg-brand-surface rounded-lg">
+            <span className="text-sm text-brand-text-primary">Parks and Recreation</span>
             <span className="text-[10px] bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full px-2 py-0.5">In Progress</span>
           </div>
         </div>
         <p className="text-xs text-brand-text-muted mb-2">Up next:</p>
         <div className="flex flex-wrap gap-2">
-          {['Parks and Recreation', 'Arrested Development', 'Brooklyn Nine-Nine',
-            "It's Always Sunny", "Schitt's Creek", 'Big Bang Theory', 'Two and a Half Men', '30 Rock'].map(name => (
+          {['30 Rock', 'Arrested Development', 'Brooklyn Nine-Nine',
+            "It's Always Sunny", "Schitt's Creek", 'Big Bang Theory', 'Two and a Half Men'].map(name => (
             <span key={name} className="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-3 py-1">
               {name}
             </span>
