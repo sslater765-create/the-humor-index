@@ -66,19 +66,35 @@ export default function Nav() {
           </Link>
         </div>
 
-        {/* Mobile hamburger */}
-        <button
-          className="sm:hidden text-brand-text-secondary p-1"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-          aria-expanded={open}
-        >
-          <div className="w-5 h-4 flex flex-col justify-between">
-            <span className={`block h-0.5 bg-current transition-transform ${open ? 'rotate-45 translate-y-1.5' : ''}`} />
-            <span className={`block h-0.5 bg-current transition-opacity ${open ? 'opacity-0' : ''}`} />
-            <span className={`block h-0.5 bg-current transition-transform ${open ? '-rotate-45 -translate-y-1.5' : ''}`} />
-          </div>
-        </button>
+        {/* Mobile: search + hamburger */}
+        <div className="sm:hidden flex items-center gap-1">
+          <Link
+            href="/search"
+            className={`p-2 transition-colors ${
+              pathname === '/search'
+                ? 'text-brand-gold'
+                : 'text-brand-text-secondary hover:text-brand-text-primary'
+            }`}
+            aria-label="Search jokes"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </Link>
+          <button
+            className="text-brand-text-secondary p-1"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+            aria-expanded={open}
+          >
+            <div className="w-5 h-4 flex flex-col justify-between" aria-hidden="true">
+              <span className={`block h-0.5 bg-current transition-transform ${open ? 'rotate-45 translate-y-1.5' : ''}`} />
+              <span className={`block h-0.5 bg-current transition-opacity ${open ? 'opacity-0' : ''}`} />
+              <span className={`block h-0.5 bg-current transition-transform ${open ? '-rotate-45 -translate-y-1.5' : ''}`} />
+            </div>
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu panel — slides down from nav */}

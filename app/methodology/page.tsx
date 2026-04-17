@@ -167,12 +167,58 @@ export default function MethodologyPage() {
           </p>
         </section>
 
+        {/* Comedy WAR methodology */}
+        <section>
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Career Value</p>
+          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Comedy WAR (Wins Above Replacement)</h2>
+          <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
+            Career WAR ranks characters by total comedic contribution relative to a
+            &quot;replacement-level&quot; bench player. Higher WAR means more jokes at higher average
+            quality than you&apos;d get from a typical recurring character.
+          </p>
+          <div className="bg-brand-card border border-brand-border rounded-xl p-5 mb-4">
+            <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Formula (v2)</p>
+            <p className="font-mono text-sm text-brand-text-primary mb-3">
+              WAR = total_jokes × max(shrunk_quality − replacement_quality, 0)
+            </p>
+            <p className="font-mono text-xs text-brand-text-secondary">
+              shrunk_quality = (n · observed_quality + 30 · league_median) / (n + 30)
+            </p>
+            <p className="font-mono text-xs text-brand-text-secondary mt-1">
+              observed_quality = (avg_craft + avg_impact) / 2
+            </p>
+          </div>
+          <ul className="text-sm text-brand-text-secondary space-y-2 list-disc list-inside">
+            <li><span className="text-brand-text-primary">Replacement quality</span> = 25th percentile of the (craft+impact)/2 quality metric among bench-player characters (10–50 analyzed jokes). As of 2026-04-16 that level sits at 6.555.</li>
+            <li><span className="text-brand-text-primary">Bayesian shrinkage (k=30)</span> pulls small-sample estimates toward the league median (6.775), preventing a 10-joke guest star with a lucky mean from beating a 1,000-joke lead.</li>
+            <li><span className="text-brand-text-primary">WAR/Episode</span> = WAR ÷ episodes appeared. Use this for cross-era and cross-run-length comparisons.</li>
+          </ul>
+          <p className="text-xs text-brand-text-muted mt-4 leading-relaxed">
+            <span className="text-brand-text-primary">History:</span> v1 used a fixed midpoint
+            (&quot;−5&quot;) as the replacement baseline, which caused WAR to collapse to roughly 1.5 × total_jokes
+            (effectively a screen-time metric). v2 swaps in an empirical replacement level and adds
+            Bayesian shrinkage — rankings now reflect genuine quality × volume.
+          </p>
+        </section>
+
         {/* Limitations */}
         <section>
           <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Honesty</p>
           <h2 className="text-xl font-medium text-brand-text-primary mb-4">Known Limitations</h2>
           <div className="space-y-3">
             {[
+              {
+                title: 'LLM score compression',
+                desc: 'Across 594 scored episodes, average craft scores have a standard deviation of just 0.36 (nominal 0–10 scale). Most of the headline signal in the Humor Index comes from joke count and peak density, not fine-grained craft differences between episodes.',
+              },
+              {
+                title: 'Format coefficient is a thumb on the scale',
+                desc: 'The multi-cam penalty (15–25% on impact) was calibrated against a small blind sample, not learned from data. It mechanically depresses Friends and Seinfeld relative to single-camera shows. Results should be read with that in mind.',
+              },
+              {
+                title: 'Small samples and Bayesian shrinkage',
+                desc: 'Character WAR with fewer than 50 analyzed jokes is shrunk aggressively toward the league median. Rankings stabilize once a character crosses ~100 jokes.',
+              },
               {
                 title: 'Visual gags are underweighted',
                 desc: 'AI works from transcripts and scene descriptions. Physical comedy — a pratfall, a facial expression, Kramer\'s entrances — is harder to capture and likely underscored.',
@@ -186,8 +232,12 @@ export default function MethodologyPage() {
                 desc: 'Jokes referencing specific 90s or 00s cultural moments may score lower on "cultural footprint" than they should, since the model\'s resonance signals are present-weighted.',
               },
               {
+                title: 'JPM uses estimated runtime',
+                desc: 'Jokes Per Minute currently divides by an LLM-estimated episode runtime rather than an authoritative TMDB runtime. This makes JPM slightly self-correlated with joke count and format. Switching to TMDB runtime is planned.',
+              },
+              {
                 title: 'No audience data',
-                desc: 'We don\'t use ratings, streaming numbers, or social media sentiment. The scores are entirely analytical — which is a feature, not a bug, but it means popular ≠ high-scoring.',
+                desc: 'We don\'t use ratings, streaming numbers, or social media sentiment in the score itself. Across 591 episodes, the Humor Index correlates with IMDb audience ratings at r = −0.005 — they measure different things.',
               },
               {
                 title: 'Only scripted comedy',

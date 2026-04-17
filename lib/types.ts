@@ -105,6 +105,8 @@ export interface EpisodeDetail extends EpisodeScore {
   jokes: Joke[];
   weakest_section: string;
   standout_joke_ids: number[];
+  tmdb_overview?: string;
+  guest_stars?: string[];
 }
 
 export interface CharacterProfile {

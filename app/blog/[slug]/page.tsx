@@ -274,17 +274,25 @@ That's the whole point of The Humor Index \u2014 we give you the data, you make 
   },
   'imdb-vs-humor-index': {
     title: 'IMDb Ratings vs. The Humor Index: Does "Funny" Mean "Good"?',
-    description: 'We compared 186 episodes of The Office against IMDb audience ratings. The correlation? Almost zero. Here\'s what that means.',
+    description: 'We compared 591 episodes across The Office, Seinfeld, and Friends against IMDb audience ratings. Pooled correlation: r = -0.005. Audience scores and comedy craft are essentially unrelated.',
     date: '2026-04-12',
     category: 'Data Science',
     content: `
-We just integrated IMDb episode ratings across every show on The Humor Index. And the first thing we did was the obvious data science move: **how well do audience ratings predict our comedy scores?**
+We integrated IMDb episode ratings across every analyzed show on The Humor Index. And the first thing we did was the obvious data science move: **how well do audience ratings predict our comedy scores?**
 
 The answer: they don't. Not even close.
 
 ## The Numbers
 
-Across 186 episodes of The Office, the Humor Index and IMDb ratings have a **Pearson correlation of r = 0.16** — barely above noise. IMDb explains just **2.7% of the variance** in our Humor Index scores.
+Pooled across **591 episodes** of The Office, Seinfeld, and Friends, the Pearson correlation between the Humor Index and IMDb ratings is **r = −0.005** — indistinguishable from zero.
+
+Per show, here's where it lands:
+
+- **The Office** (186 eps): r = +0.164 — barely positive
+- **Seinfeld** (170 eps): r = −0.058 — slightly negative
+- **Friends** (235 eps): r = −0.013 — effectively zero
+
+Across all three, IMDb explains essentially **0% of the variance** in our Humor Index scores.
 
 In plain English: knowing an episode's IMDb rating tells you almost nothing about how funny it actually is by our analysis.
 
@@ -313,6 +321,8 @@ And episodes audiences adore that don't score as high on pure comedy:
 ## What Predicts IMDb Ratings?
 
 We tested which of our sub-metrics best correlates with audience scores:
+
+Within The Office specifically (where the correlation is highest):
 
 - **Craft** (r = 0.22) — the strongest predictor, but still weak
 - **Humor Index** (r = 0.16) — the composite score

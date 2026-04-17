@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import Link from 'next/link';
 import { getAllShows } from '@/lib/data';
 import { formatIndex, scoreToColor } from '@/lib/scoring';
@@ -13,15 +13,21 @@ export const dynamicParams = true;
 import { SHOW_SLUGS } from '@/lib/constants';
 
 function generateAllMatchups() {
+  // Generate one matchup per unordered pair (alpha-first) to avoid duplicate pages.
+  // The reverse ordering redirects via canonicalCompareUrl below.
   const matchups: { slugA: string; slugB: string }[] = [];
-  for (const a of SHOW_SLUGS) {
-    for (const b of SHOW_SLUGS) {
-      if (a !== b) {
-        matchups.push({ slugA: a, slugB: b });
-      }
+  for (let i = 0; i < SHOW_SLUGS.length; i++) {
+    for (let j = i + 1; j < SHOW_SLUGS.length; j++) {
+      const [a, b] = [SHOW_SLUGS[i], SHOW_SLUGS[j]].sort();
+      matchups.push({ slugA: a, slugB: b });
     }
   }
   return matchups;
+}
+
+// The canonical matchup URL is always alpha-first (a-vs-b where a < b).
+function canonicalPair(slugA: string, slugB: string): [string, string] {
+  return [slugA, slugB].sort() as [string, string];
 }
 
 const MATCHUPS = generateAllMatchups();
@@ -87,6 +93,12 @@ function MetricRow({ label, valA, valB }: { label: string; valA: number; valB: n
 export default async function MatchupPage({ params }: { params: { matchup: string } }) {
   const match = getMatchup(params.matchup);
   if (!match) notFound();
+
+  // Redirect reverse-ordered pair to alpha-first canonical URL
+  const [canonA, canonB] = canonicalPair(match.slugA, match.slugB);
+  if (canonA !== match.slugA || canonB !== match.slugB) {
+    redirect(`/compare/${canonA}-vs-${canonB}`);
+  }
 
   const shows = await getAllShows();
   const showA = shows.find(s => s.slug === match.slugA);

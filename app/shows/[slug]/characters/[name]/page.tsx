@@ -13,7 +13,7 @@ export async function generateStaticParams() {
   for (const slug of SHOW_SLUGS) {
     try {
       const characters = await getCharacters(slug);
-      for (const ch of characters.slice(0, 20)) {
+      for (const ch of characters) {
         params.push({ slug, name: encodeURIComponent(ch.name) });
       }
     } catch {
@@ -31,16 +31,29 @@ export async function generateMetadata({
   const show = await getShow(params.slug);
   const name = decodeURIComponent(params.name);
   if (!show) return {};
+
+  const characters = await getCharacters(params.slug);
+  const character = characters.find(c => c.name.toLowerCase() === name.toLowerCase());
+  const jokeCount = character?.total_jokes ?? 0;
+  const war = character?.war ?? 0;
+  const dominantTypes = (character?.dominant_types ?? []).slice(0, 2).map(t => t.replace(/_/g, ' ')).join(' and ');
+
+  const descBase = character
+    ? `${jokeCount.toLocaleString()} analyzed jokes, ${war.toFixed(1)} career WAR across ${character.episodes_appeared} episodes. Best at ${dominantTypes || 'comedy'}. See every joke ranked on ${show.name}.`
+    : `Every joke by ${name} on ${show.name}, scored and ranked. See craft scores, impact ratings, and comedy style breakdown.`;
+
   return {
     title: `${name} — ${show.name} Character Analysis`,
-    description: `Every joke by ${name} on ${show.name}, scored and ranked. See craft scores, impact ratings, and comedy style breakdown.`,
+    description: descBase,
     alternates: {
-      canonical: `https://thehumorindex.com/shows/${params.slug}/characters/${params.name}`,
+      canonical: `https://thehumorindex.com/shows/${params.slug}/characters/${params.name}/`,
     },
     openGraph: {
       title: `${name} — ${show.name} Character Analysis`,
-      description: `Every joke by ${name} on ${show.name}, scored and ranked. See craft scores, impact ratings, and comedy style breakdown.`,
-      images: ['/og-image.png'],
+      description: descBase,
+      images: [
+        `/api/og?title=${encodeURIComponent(name)}&score=${war.toFixed(1)}&subtitle=${encodeURIComponent(`${show.name} · ${jokeCount.toLocaleString()} jokes · ${character?.episodes_appeared ?? 0} eps`)}`,
+      ],
     },
   };
 }
@@ -73,8 +86,40 @@ export default async function CharacterPage({
   });
   const standouts = dedupedJokes.slice(0, 5);
 
+  // JSON-LD: Person (fictional character) + BreadcrumbList
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      name: character.character_full_name || character.name,
+      alternateName: character.name,
+      description: `Fictional character on ${show.name}. ${character.total_jokes.toLocaleString()} analyzed jokes across ${character.episodes_appeared} episodes.`,
+      url: `https://thehumorindex.com/shows/${params.slug}/characters/${encodeURIComponent(character.name)}/`,
+      ...(character.actor && {
+        performer: { '@type': 'Person', name: character.actor },
+      }),
+      ...(character.profile_path && {
+        image: `https://image.tmdb.org/t/p/w500${character.profile_path}`,
+      }),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Shows', item: 'https://thehumorindex.com/shows/' },
+        { '@type': 'ListItem', position: 2, name: show.name, item: `https://thehumorindex.com/shows/${params.slug}/` },
+        { '@type': 'ListItem', position: 3, name: 'Characters', item: `https://thehumorindex.com/shows/${params.slug}/` },
+        { '@type': 'ListItem', position: 4, name: character.name, item: `https://thehumorindex.com/shows/${params.slug}/characters/${encodeURIComponent(character.name)}/` },
+      ],
+    },
+  ];
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero backdrop */}
       <div className="relative w-full h-[200px] sm:h-[260px] overflow-hidden">
         {show.backdrop_path ? (

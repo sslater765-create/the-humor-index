@@ -1,21 +1,5 @@
 [
   {
-    "name": "Michael",
-    "total_jokes": 3265,
-    "avg_craft": 6.8,
-    "avg_impact": 6.58,
-    "episodes_appeared": 141,
-    "dominant_types": [
-      "character_comedy",
-      "cringe_discomfort",
-      "absurdist"
-    ],
-    "actor": "Steve Carell",
-    "character_full_name": "Michael Scott",
-    "profile_path": "/cS7Cbyff6wFVfUGem497vy9LS7A.jpg",
-    "war": 451.3
-  },
-  {
     "name": "Dwight",
     "total_jokes": 1734,
     "avg_craft": 7.12,
@@ -26,10 +10,30 @@
       "absurdist",
       "escalation"
     ],
+    "war": 807.6,
     "actor": "Rainn Wilson",
     "profile_path": "/yRTElSeC3q9nBqBuleI6OODlDMS.jpg",
     "character_full_name": "Dwight Schrute",
-    "war": 354.5
+    "war_per_episode": 4.389,
+    "quality_index": 7.02
+  },
+  {
+    "name": "Michael",
+    "total_jokes": 3265,
+    "avg_craft": 6.8,
+    "avg_impact": 6.58,
+    "episodes_appeared": 141,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "absurdist"
+    ],
+    "war": 443.3,
+    "actor": "Steve Carell",
+    "profile_path": "/cS7Cbyff6wFVfUGem497vy9LS7A.jpg",
+    "character_full_name": "Michael Scott",
+    "war_per_episode": 3.144,
+    "quality_index": 6.69
   },
   {
     "name": "Jim",
@@ -42,10 +46,12 @@
       "observational",
       "escalation"
     ],
+    "war": 330.2,
     "actor": "John Krasinski",
     "profile_path": "/pmVGDb6Yl6OyFcHVGbu1EYNfyFK.jpg",
     "character_full_name": "Jim Halpert",
-    "war": 233.0
+    "war_per_episode": 1.795,
+    "quality_index": 6.77
   },
   {
     "name": "Pam",
@@ -58,58 +64,12 @@
       "cringe_discomfort",
       "observational"
     ],
+    "war": 132.3,
     "actor": "Jenna Fischer",
     "profile_path": "/mfKRbOHTPNi9jFSthtjl4FGVZv6.jpg",
     "character_full_name": "Pam Beesly",
-    "war": 114.0
-  },
-  {
-    "name": "Andy",
-    "total_jokes": 893,
-    "avg_craft": 6.66,
-    "avg_impact": 6.45,
-    "episodes_appeared": 129,
-    "dominant_types": [
-      "character_comedy",
-      "cringe_discomfort",
-      "escalation"
-    ],
-    "actor": "Ed Helms",
-    "profile_path": "/gPZ8tZaNQGAc3KZRIPp9rgGbEnN.jpg",
-    "character_full_name": "Andy Bernard",
-    "war": 98.8
-  },
-  {
-    "name": "Kevin",
-    "total_jokes": 506,
-    "avg_craft": 6.77,
-    "avg_impact": 6.66,
-    "episodes_appeared": 152,
-    "dominant_types": [
-      "character_comedy",
-      "cringe_discomfort",
-      "escalation"
-    ],
-    "actor": "Brian Baumgartner",
-    "profile_path": "/1O7ECkD4mOKAgMAbQADBpTKBzOP.jpg",
-    "character_full_name": "Kevin Malone",
-    "war": 72.3
-  },
-  {
-    "name": "Angela",
-    "total_jokes": 336,
-    "avg_craft": 7.0,
-    "avg_impact": 6.78,
-    "episodes_appeared": 119,
-    "dominant_types": [
-      "character_comedy",
-      "cringe_discomfort",
-      "escalation"
-    ],
-    "actor": "Angela Kinsey",
-    "profile_path": "/qHFidnMcFqUWdMFyjmXufBlYckd.jpg",
-    "character_full_name": "Angela Martin",
-    "war": 59.8
+    "war_per_episode": 0.774,
+    "quality_index": 6.72
   },
   {
     "name": "Creed",
@@ -122,10 +82,30 @@
       "absurdist",
       "dark_subversive"
     ],
+    "war": 120.4,
     "actor": "Creed Bratton",
     "profile_path": "/r1VWJSP2c29qSj5PA6wMOe7RdVz.jpg",
     "character_full_name": "Creed Bratton",
-    "war": 47.2
+    "war_per_episode": 1.204,
+    "quality_index": 7.21
+  },
+  {
+    "name": "Angela",
+    "total_jokes": 336,
+    "avg_craft": 7.0,
+    "avg_impact": 6.78,
+    "episodes_appeared": 119,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "escalation"
+    ],
+    "war": 109.4,
+    "actor": "Angela Kinsey",
+    "profile_path": "/qHFidnMcFqUWdMFyjmXufBlYckd.jpg",
+    "character_full_name": "Angela Martin",
+    "war_per_episode": 0.919,
+    "quality_index": 6.88
   },
   {
     "name": "Stanley",
@@ -138,26 +118,30 @@
       "deadpan_understatement",
       "observational"
     ],
+    "war": 95.4,
     "actor": "Leslie David Baker",
     "profile_path": "/9h3xlV5IYqKinlQCW1ouU7sjwWF.jpg",
     "character_full_name": "Stanley Hudson",
-    "war": 44.6
+    "war_per_episode": 0.83,
+    "quality_index": 6.99
   },
   {
-    "name": "Ryan",
-    "total_jokes": 284,
-    "avg_craft": 6.76,
-    "avg_impact": 6.47,
-    "episodes_appeared": 96,
+    "name": "Kevin",
+    "total_jokes": 506,
+    "avg_craft": 6.77,
+    "avg_impact": 6.66,
+    "episodes_appeared": 152,
     "dominant_types": [
       "character_comedy",
       "cringe_discomfort",
       "escalation"
     ],
-    "actor": "B. J. Novak",
-    "profile_path": "/o8Xf1khxhKGTz3QAplXD35opRA8.jpg",
-    "character_full_name": "Ryan Howard",
-    "war": 35.0
+    "war": 82.7,
+    "actor": "Brian Baumgartner",
+    "profile_path": "/1O7ECkD4mOKAgMAbQADBpTKBzOP.jpg",
+    "character_full_name": "Kevin Malone",
+    "war_per_episode": 0.544,
+    "quality_index": 6.72
   },
   {
     "name": "Oscar",
@@ -170,74 +154,12 @@
       "cringe_discomfort",
       "observational"
     ],
+    "war": 47.3,
     "actor": "Oscar Nu\u00f1ez",
     "profile_path": "/UBILHiRphJdlshvsyH920QSAhk.jpg",
     "character_full_name": "Oscar Martinez",
-    "war": 34.8
-  },
-  {
-    "name": "Erin",
-    "total_jokes": 238,
-    "avg_craft": 6.76,
-    "avg_impact": 6.5,
-    "episodes_appeared": 69,
-    "dominant_types": [
-      "character_comedy",
-      "cringe_discomfort",
-      "escalation"
-    ],
-    "actor": "Ellie Kemper",
-    "profile_path": "/2rWtHAdr1lXQBzxOcVZ3CyYPDEI.jpg",
-    "character_full_name": "Erin Hannon",
-    "war": 29.9
-  },
-  {
-    "name": "Darryl",
-    "total_jokes": 202,
-    "avg_craft": 6.79,
-    "avg_impact": 6.58,
-    "episodes_appeared": 71,
-    "dominant_types": [
-      "character_comedy",
-      "escalation",
-      "cringe_discomfort"
-    ],
-    "actor": "Craig Robinson",
-    "profile_path": "/mTyTrOWUSOBJMOlDpnd4OYx7FlJ.jpg",
-    "character_full_name": "Darryl Philbin",
-    "war": 27.7
-  },
-  {
-    "name": "Kelly",
-    "total_jokes": 184,
-    "avg_craft": 6.79,
-    "avg_impact": 6.59,
-    "episodes_appeared": 69,
-    "dominant_types": [
-      "character_comedy",
-      "cringe_discomfort",
-      "escalation"
-    ],
-    "actor": "Mindy Kaling",
-    "profile_path": "/m4veWEp9TEDallTZRobb7MLkd9K.jpg",
-    "character_full_name": "Kelly Kapoor",
-    "war": 25.3
-  },
-  {
-    "name": "Meredith",
-    "total_jokes": 113,
-    "avg_craft": 6.93,
-    "avg_impact": 7.02,
-    "episodes_appeared": 55,
-    "dominant_types": [
-      "character_comedy",
-      "cringe_discomfort",
-      "escalation"
-    ],
-    "actor": "Kate Flannery",
-    "profile_path": "/wFXWKB2IUyB6Cu08PyovyBAm9WT.jpg",
-    "character_full_name": "Meredith Palmer",
-    "war": 22.0
+    "war_per_episode": 0.451,
+    "quality_index": 6.76
   },
   {
     "name": "Jan",
@@ -250,74 +172,120 @@
       "cringe_discomfort",
       "irony_sarcasm"
     ],
+    "war": 45.4,
     "actor": "Melora Hardin",
     "profile_path": "/ymH5zoBrtEfFWIkgKAhiEbtiAg4.jpg",
     "character_full_name": "Jan Levinson",
-    "war": 20.4
+    "war_per_episode": 1.419,
+    "quality_index": 7.09
   },
   {
-    "name": "Phyllis",
-    "total_jokes": 143,
-    "avg_craft": 6.79,
-    "avg_impact": 6.58,
-    "episodes_appeared": 89,
+    "name": "Meredith",
+    "total_jokes": 113,
+    "avg_craft": 6.93,
+    "avg_impact": 7.02,
+    "episodes_appeared": 55,
     "dominant_types": [
       "character_comedy",
       "cringe_discomfort",
       "escalation"
     ],
-    "actor": "Phyllis Smith",
-    "profile_path": "/h9w9pQbiderRWAC2mi7spjzuIGz.jpg",
-    "character_full_name": "Phyllis Lapin",
-    "war": 19.6
-  },
-  {
-    "name": "Toby",
-    "total_jokes": 125,
-    "avg_craft": 6.86,
-    "avg_impact": 6.54,
-    "episodes_appeared": 62,
-    "dominant_types": [
-      "character_comedy",
-      "cringe_discomfort",
-      "escalation"
-    ],
-    "actor": "Paul Lieberstein",
-    "profile_path": "/oLCaNVAw5cfE5q4e0PRsmHTuHfd.jpg",
-    "character_full_name": "Toby Flenderson",
-    "war": 17.5
+    "war": 42.7,
+    "actor": "Kate Flannery",
+    "profile_path": "/wFXWKB2IUyB6Cu08PyovyBAm9WT.jpg",
+    "character_full_name": "Meredith Palmer",
+    "war_per_episode": 0.777,
+    "quality_index": 6.93
   },
   {
     "name": "Robert",
-    "total_jokes": 110,
-    "avg_craft": 7.05,
-    "avg_impact": 6.84,
+    "total_jokes": 71,
+    "avg_craft": 7.21,
+    "avg_impact": 7.05,
     "episodes_appeared": 12,
     "dominant_types": [
       "character_comedy",
       "observational",
       "cringe_discomfort"
     ],
+    "war": 33.3,
     "actor": "James Spader",
     "profile_path": "/uET0mbf2bMkUXbRb1Oxi8Qjqcw3.jpg",
     "character_full_name": "Robert California",
-    "war": 16.0
+    "war_per_episode": 2.778,
+    "quality_index": 7.02
   },
   {
-    "name": "David",
-    "total_jokes": 126,
+    "name": "Darryl",
+    "total_jokes": 202,
     "avg_craft": 6.79,
-    "avg_impact": 6.69,
-    "episodes_appeared": 13,
+    "avg_impact": 6.58,
+    "episodes_appeared": 71,
+    "dominant_types": [
+      "character_comedy",
+      "escalation",
+      "cringe_discomfort"
+    ],
+    "war": 28.6,
+    "actor": "Craig Robinson",
+    "profile_path": "/mTyTrOWUSOBJMOlDpnd4OYx7FlJ.jpg",
+    "character_full_name": "Darryl Philbin",
+    "war_per_episode": 0.403,
+    "quality_index": 6.7
+  },
+  {
+    "name": "Kelly",
+    "total_jokes": 184,
+    "avg_craft": 6.79,
+    "avg_impact": 6.59,
+    "episodes_appeared": 69,
     "dominant_types": [
       "character_comedy",
       "cringe_discomfort",
-      "absurdist"
+      "escalation"
     ],
-    "actor": "Andy Buckley",
-    "profile_path": "/urkCCe0bizypCkQ9bZhFhDzvskE.jpg",
-    "character_full_name": "David Wallace",
-    "war": 14.6
+    "war": 27.0,
+    "actor": "Mindy Kaling",
+    "profile_path": "/m4veWEp9TEDallTZRobb7MLkd9K.jpg",
+    "character_full_name": "Kelly Kapoor",
+    "war_per_episode": 0.392,
+    "quality_index": 6.7
+  },
+  {
+    "name": "Erin",
+    "total_jokes": 238,
+    "avg_craft": 6.76,
+    "avg_impact": 6.5,
+    "episodes_appeared": 69,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "escalation"
+    ],
+    "war": 21.7,
+    "actor": "Ellie Kemper",
+    "profile_path": "/2rWtHAdr1lXQBzxOcVZ3CyYPDEI.jpg",
+    "character_full_name": "Erin Hannon",
+    "war_per_episode": 0.315,
+    "quality_index": 6.65
+  },
+  {
+    "name": "Ryan",
+    "total_jokes": 284,
+    "avg_craft": 6.76,
+    "avg_impact": 6.47,
+    "episodes_appeared": 96,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "escalation"
+    ],
+    "war": 21.4,
+    "actor": "B. J. Novak",
+    "profile_path": "/o8Xf1khxhKGTz3QAplXD35opRA8.jpg",
+    "character_full_name": "Ryan Howard",
+    "war_per_episode": 0.223,
+    "quality_index": 6.63
   },
   {
     "name": "Nellie",
@@ -330,58 +298,66 @@
       "escalation",
       "absurdist"
     ],
+    "war": 21.1,
     "actor": "Catherine Tate",
     "profile_path": "/xqaqetDBODzlm4Yky99NOOzLstL.jpg",
     "character_full_name": "Nellie Bertram",
-    "war": 12.9
+    "war_per_episode": 1.316,
+    "quality_index": 6.84
   },
   {
-    "name": "Gabe",
-    "total_jokes": 100,
-    "avg_craft": 6.63,
-    "avg_impact": 6.41,
-    "episodes_appeared": 28,
+    "name": "Phyllis",
+    "total_jokes": 143,
+    "avg_craft": 6.79,
+    "avg_impact": 6.58,
+    "episodes_appeared": 89,
     "dominant_types": [
       "character_comedy",
       "cringe_discomfort",
       "escalation"
     ],
-    "actor": "Zach Woods",
-    "profile_path": "/jolb1uMzDZGTKOKyhgeG3RIsL2W.jpg",
-    "character_full_name": "Gabe Lewis",
-    "war": 10.4
+    "war": 20.8,
+    "actor": "Phyllis Smith",
+    "profile_path": "/h9w9pQbiderRWAC2mi7spjzuIGz.jpg",
+    "character_full_name": "Phyllis Lapin",
+    "war_per_episode": 0.234,
+    "quality_index": 6.7
   },
   {
-    "name": "Holly",
-    "total_jokes": 89,
-    "avg_craft": 6.68,
-    "avg_impact": 6.49,
-    "episodes_appeared": 16,
+    "name": "Toby",
+    "total_jokes": 125,
+    "avg_craft": 6.86,
+    "avg_impact": 6.54,
+    "episodes_appeared": 62,
     "dominant_types": [
       "character_comedy",
       "cringe_discomfort",
       "escalation"
     ],
-    "actor": "Amy Ryan",
-    "profile_path": "/bItqd1QUNpdegjBXNaVuFFPEZU4.jpg",
-    "character_full_name": "Holly Flax",
-    "war": 10.4
+    "war": 19.9,
+    "actor": "Paul Lieberstein",
+    "profile_path": "/oLCaNVAw5cfE5q4e0PRsmHTuHfd.jpg",
+    "character_full_name": "Toby Flenderson",
+    "war_per_episode": 0.322,
+    "quality_index": 6.71
   },
   {
-    "name": "Deangelo",
-    "total_jokes": 88,
-    "avg_craft": 6.6,
-    "avg_impact": 6.45,
-    "episodes_appeared": 4,
+    "name": "David",
+    "total_jokes": 107,
+    "avg_craft": 6.76,
+    "avg_impact": 6.61,
+    "episodes_appeared": 10,
     "dominant_types": [
       "character_comedy",
-      "absurdist",
-      "cringe_discomfort"
+      "cringe_discomfort",
+      "absurdist"
     ],
-    "actor": "Will Ferrell",
-    "profile_path": "/yjGbyQzVjpQl8xFkFGa7JxKZWQb.jpg",
-    "character_full_name": "Deangelo Vickers",
-    "war": 9.3
+    "war": 16.0,
+    "actor": "Andy Buckley",
+    "profile_path": "/urkCCe0bizypCkQ9bZhFhDzvskE.jpg",
+    "character_full_name": "David Wallace",
+    "war_per_episode": 1.602,
+    "quality_index": 6.7
   },
   {
     "name": "Jo",
@@ -394,10 +370,30 @@
       "cringe_discomfort",
       "setup_punchline"
     ],
+    "war": 11.5,
     "actor": "Kathy Bates",
     "profile_path": "/3MsayDvY73uXGVbCFHyy1ABTacV.jpg",
     "character_full_name": "Jo Bennett",
-    "war": 7.2
+    "war_per_episode": 1.924,
+    "quality_index": 6.84
+  },
+  {
+    "name": "Holly",
+    "total_jokes": 89,
+    "avg_craft": 6.68,
+    "avg_impact": 6.49,
+    "episodes_appeared": 16,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "escalation"
+    ],
+    "war": 6.9,
+    "actor": "Amy Ryan",
+    "profile_path": "/bItqd1QUNpdegjBXNaVuFFPEZU4.jpg",
+    "character_full_name": "Holly Flax",
+    "war_per_episode": 0.433,
+    "quality_index": 6.63
   },
   {
     "name": "Clark",
@@ -410,26 +406,45 @@
       "cringe_discomfort",
       "absurdist"
     ],
+    "war": 6.6,
     "actor": "Clark Duke",
     "profile_path": "/qL7x57avA9IupsjtwnpIuJ8p8BD.jpg",
     "character_full_name": "Clark Green",
-    "war": 6.6
+    "war_per_episode": 0.506,
+    "quality_index": 6.68
   },
   {
-    "name": "Karen",
-    "total_jokes": 52,
-    "avg_craft": 6.74,
+    "name": "Andy",
+    "total_jokes": 893,
+    "avg_craft": 6.66,
     "avg_impact": 6.45,
-    "episodes_appeared": 18,
+    "episodes_appeared": 129,
     "dominant_types": [
       "character_comedy",
       "cringe_discomfort",
       "escalation"
     ],
-    "actor": "Rashida Jones",
-    "profile_path": "/cgWGm9eYCretBWeljPVtpRV7n6V.jpg",
-    "character_full_name": "Karen Filippelli",
-    "war": 6.2
+    "war": 6.4,
+    "actor": "Ed Helms",
+    "profile_path": "/gPZ8tZaNQGAc3KZRIPp9rgGbEnN.jpg",
+    "character_full_name": "Andy Bernard",
+    "war_per_episode": 0.049,
+    "quality_index": 6.56
+  },
+  {
+    "name": "David Wallace",
+    "total_jokes": 19,
+    "avg_craft": 6.93,
+    "avg_impact": 7.11,
+    "episodes_appeared": 13,
+    "dominant_types": [
+      "character_comedy",
+      "dark_subversive",
+      "absurdist"
+    ],
+    "war": 6.0,
+    "war_per_episode": 0.46,
+    "quality_index": 6.87
   },
   {
     "name": "Roy",
@@ -442,42 +457,12 @@
       "cringe_discomfort",
       "reaction_beat"
     ],
+    "war": 5.7,
     "actor": "David Denman",
     "profile_path": "/4I06ZD8SQ6pU1QYShiUXb711fJW.jpg",
     "character_full_name": "Roy Anderson",
-    "war": 5.3
-  },
-  {
-    "name": "Pete",
-    "total_jokes": 43,
-    "avg_craft": 6.56,
-    "avg_impact": 6.31,
-    "episodes_appeared": 17,
-    "dominant_types": [
-      "character_comedy",
-      "cringe_discomfort",
-      "setup_punchline"
-    ],
-    "actor": "Jake Lacy",
-    "profile_path": "/qU6n9EaesBGqhNLlj5BecUrb5LW.jpg",
-    "character_full_name": "Pete Miller",
-    "war": 3.8
-  },
-  {
-    "name": "Tim",
-    "total_jokes": 21,
-    "avg_craft": 6.86,
-    "avg_impact": 6.88,
-    "episodes_appeared": 2,
-    "dominant_types": [
-      "character_comedy",
-      "irony_sarcasm",
-      "cringe_discomfort"
-    ],
-    "actor": "Tom Yi",
-    "profile_path": "/m7nvQ2EZ1D1S500qDmYeoOdv3Ge.jpg",
-    "character_full_name": "Tim Dockery",
-    "war": 3.7
+    "war_per_episode": 0.259,
+    "quality_index": 6.69
   },
   {
     "name": "Nate",
@@ -490,23 +475,99 @@
       "absurdist",
       "escalation"
     ],
+    "war": 5.6,
     "actor": "Mark Proksch",
     "profile_path": "/5sgun1ZeWUaoz5TSvC7rvYBeWCC.jpg",
     "character_full_name": "Nate",
-    "war": 3.7
+    "war_per_episode": 0.702,
+    "quality_index": 6.85
   },
   {
-    "name": "Gareth",
-    "total_jokes": 35,
-    "avg_craft": 6.53,
-    "avg_impact": 6.14,
-    "episodes_appeared": 2,
+    "name": "Karen",
+    "total_jokes": 52,
+    "avg_craft": 6.74,
+    "avg_impact": 6.45,
+    "episodes_appeared": 18,
     "dominant_types": [
       "character_comedy",
       "cringe_discomfort",
-      "absurdist"
+      "escalation"
     ],
-    "war": 2.4
+    "war": 5.5,
+    "actor": "Rashida Jones",
+    "profile_path": "/cgWGm9eYCretBWeljPVtpRV7n6V.jpg",
+    "character_full_name": "Karen Filippelli",
+    "war_per_episode": 0.306,
+    "quality_index": 6.66
+  },
+  {
+    "name": "Tim",
+    "total_jokes": 21,
+    "avg_craft": 6.86,
+    "avg_impact": 6.88,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "irony_sarcasm",
+      "cringe_discomfort"
+    ],
+    "war": 5.4,
+    "actor": "Tom Yi",
+    "profile_path": "/m7nvQ2EZ1D1S500qDmYeoOdv3Ge.jpg",
+    "character_full_name": "Tim Dockery",
+    "war_per_episode": 2.721,
+    "quality_index": 6.81
+  },
+  {
+    "name": "Robert California",
+    "total_jokes": 39,
+    "avg_craft": 6.77,
+    "avg_impact": 6.45,
+    "episodes_appeared": 6,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "dark_subversive"
+    ],
+    "war": 4.9,
+    "war_per_episode": 0.824,
+    "quality_index": 6.68
+  },
+  {
+    "name": "Deangelo",
+    "total_jokes": 88,
+    "avg_craft": 6.6,
+    "avg_impact": 6.45,
+    "episodes_appeared": 4,
+    "dominant_types": [
+      "character_comedy",
+      "absurdist",
+      "cringe_discomfort"
+    ],
+    "war": 3.0,
+    "actor": "Will Ferrell",
+    "profile_path": "/yjGbyQzVjpQl8xFkFGa7JxKZWQb.jpg",
+    "character_full_name": "Deangelo Vickers",
+    "war_per_episode": 0.738,
+    "quality_index": 6.59
+  },
+  {
+    "name": "Gabe",
+    "total_jokes": 100,
+    "avg_craft": 6.63,
+    "avg_impact": 6.41,
+    "episodes_appeared": 28,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "escalation"
+    ],
+    "war": 2.4,
+    "actor": "Zach Woods",
+    "profile_path": "/jolb1uMzDZGTKOKyhgeG3RIsL2W.jpg",
+    "character_full_name": "Gabe Lewis",
+    "war_per_episode": 0.085,
+    "quality_index": 6.58
   },
   {
     "name": "Captain Jack",
@@ -519,23 +580,9 @@
       "cringe_discomfort",
       "escalation"
     ],
-    "war": 1.6
-  },
-  {
-    "name": "Charles",
-    "total_jokes": 26,
-    "avg_craft": 6.44,
-    "avg_impact": 6.06,
-    "episodes_appeared": 4,
-    "dominant_types": [
-      "character_comedy",
-      "cringe_discomfort",
-      "deadpan_understatement"
-    ],
-    "actor": "Idris Elba",
-    "profile_path": "/be1bVF7qGX91a6c5WeRPs5pKXln.jpg",
-    "character_full_name": "Charles Miner",
-    "war": 1.3
+    "war": 2.3,
+    "war_per_episode": 2.313,
+    "quality_index": 6.79
   },
   {
     "name": "Dawn",
@@ -548,7 +595,27 @@
       "observational",
       "irony_sarcasm"
     ],
-    "war": 1.2
+    "war": 1.8,
+    "war_per_episode": 0.888,
+    "quality_index": 6.73
+  },
+  {
+    "name": "Pete",
+    "total_jokes": 43,
+    "avg_craft": 6.56,
+    "avg_impact": 6.31,
+    "episodes_appeared": 17,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "setup_punchline"
+    ],
+    "war": 0.8,
+    "actor": "Jake Lacy",
+    "profile_path": "/qU6n9EaesBGqhNLlj5BecUrb5LW.jpg",
+    "character_full_name": "Pete Miller",
+    "war_per_episode": 0.05,
+    "quality_index": 6.57
   },
   {
     "name": "Danny",
@@ -561,10 +628,12 @@
       "cringe_discomfort",
       "observational"
     ],
+    "war": 0.4,
     "actor": "Timothy Olyphant",
     "profile_path": "/7pHmRHE2wBNC9cBgNIRCBqFLoyZ.jpg",
     "character_full_name": "Danny Cordray",
-    "war": 0.3
+    "war_per_episode": 0.223,
+    "quality_index": 6.59
   },
   {
     "name": "Mark",
@@ -577,25 +646,92 @@
       "character_comedy",
       "observational"
     ],
+    "war": 0.2,
     "actor": "Jeffrey Muller",
     "profile_path": "/pVfOvPr1eMEEkh9ENX97AJoFJnm.jpg",
     "character_full_name": "Mark",
-    "war": 0.2
+    "war_per_episode": 0.074,
+    "quality_index": 6.57
+  },
+  {
+    "name": "Todd Packer",
+    "total_jokes": 66,
+    "avg_craft": 6.08,
+    "avg_impact": 5.61,
+    "episodes_appeared": 25,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "setup_punchline"
+    ],
+    "war": 0,
+    "war_per_episode": 0.0,
+    "quality_index": 6.14
+  },
+  {
+    "name": "Gareth",
+    "total_jokes": 35,
+    "avg_craft": 6.53,
+    "avg_impact": 6.14,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "absurdist"
+    ],
+    "war": 0,
+    "war_per_episode": 0.0,
+    "quality_index": 6.54
+  },
+  {
+    "name": "Unknown character",
+    "total_jokes": 28,
+    "avg_craft": 6.17,
+    "avg_impact": 6.09,
+    "episodes_appeared": 8,
+    "dominant_types": [
+      "character_comedy",
+      "observational",
+      "absurdist"
+    ],
+    "war": 0,
+    "war_per_episode": 0.0,
+    "quality_index": 6.46
+  },
+  {
+    "name": "Charles",
+    "total_jokes": 26,
+    "avg_craft": 6.44,
+    "avg_impact": 6.06,
+    "episodes_appeared": 4,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "deadpan_understatement"
+    ],
+    "war": 0,
+    "actor": "Idris Elba",
+    "profile_path": "/be1bVF7qGX91a6c5WeRPs5pKXln.jpg",
+    "character_full_name": "Charles Miner",
+    "war_per_episode": 0.0,
+    "quality_index": 6.53
   },
   {
     "name": "Todd",
-    "total_jokes": 77,
-    "avg_craft": 6.06,
-    "avg_impact": 5.63,
-    "episodes_appeared": 25,
+    "total_jokes": 11,
+    "avg_craft": 5.94,
+    "avg_impact": 5.73,
+    "episodes_appeared": 4,
     "dominant_types": [
       "character_comedy",
       "cringe_discomfort",
       "physical_slapstick"
     ],
+    "war": 0,
     "actor": "David Koechner",
     "profile_path": "/4zp1LzIOK2ls1cIo1coZYK02YpG.jpg",
     "character_full_name": "Todd Packer",
-    "war": -0.4
+    "war_per_episode": 0.0,
+    "quality_index": 6.52
   }
 ]

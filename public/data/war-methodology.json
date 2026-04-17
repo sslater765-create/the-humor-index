@@ -1,0 +1,8 @@
+{
+  "replacement_quality": 6.555,
+  "league_median_quality": 6.775,
+  "bayesian_k": 30,
+  "formula": "WAR = total_jokes \u00d7 max(shrunk_quality \u2212 replacement_quality, 0); shrunk_quality = (n\u00b7observed + k\u00b7league_median) / (n + k)",
+  "notes": "Replacement quality is the 25th percentile of the (craft+impact)/2 quality metric among \"bench-player\" characters with 10\u201350 analyzed jokes. Bayesian shrinkage (k=30) regresses small-sample estimates toward the league median.",
+  "as_of": "2026-04-16"
+}

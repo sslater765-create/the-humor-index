@@ -182,9 +182,9 @@ export default async function EpisodePage({
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-4 pb-8">
         {/* Episode description */}
-        {(detail as any).tmdb_overview && (
+        {detail.tmdb_overview && (
           <p className="text-sm text-brand-text-secondary leading-relaxed mb-4">
-            {(detail as any).tmdb_overview}
+            {detail.tmdb_overview}
           </p>
         )}
 

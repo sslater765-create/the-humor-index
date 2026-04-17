@@ -1,6 +1,7 @@
 'use client';
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export interface WarCharacter {
   name: string;
@@ -149,50 +150,60 @@ export default function CharactersClient({ characters }: { characters: WarCharac
 
       {/* Main ranked leaderboard with horizontal bars */}
       <div className="space-y-2 mb-12">
-        {filtered.map((c, i) => {
-          const value = sortMode === 'total_war' ? c.war : c.warPerEpisode;
-          const pct = maxValueForBar > 0 ? (value / maxValueForBar) * 100 : 0;
-          return (
-            <Link
-              key={`${c.name}-${c.showSlug}`}
-              href={`/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`}
-              className="relative block bg-brand-card border border-brand-border rounded-xl p-4 hover:border-brand-gold/40 transition-colors group overflow-hidden"
-            >
-              {/* Background bar */}
-              <div
-                className="absolute inset-y-0 left-0 bg-brand-gold/5 border-r border-brand-gold/20 transition-all"
-                style={{ width: `${pct}%` }}
-                aria-hidden="true"
-              />
-              <div className="relative flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  <span className={`font-mono text-sm w-8 text-right ${i < 3 ? 'text-brand-gold font-medium' : 'text-brand-text-muted'}`}>
-                    {i + 1}
-                  </span>
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-brand-text-primary font-medium group-hover:text-brand-gold transition-colors">{c.name}</span>
-                      <span className="text-xs text-brand-text-muted">{c.showName}</span>
+        <AnimatePresence mode="popLayout">
+          {filtered.map((c, i) => {
+            const value = sortMode === 'total_war' ? c.war : c.warPerEpisode;
+            const pct = maxValueForBar > 0 ? (value / maxValueForBar) * 100 : 0;
+            return (
+              <motion.div
+                key={`${c.name}-${c.showSlug}`}
+                layout
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25, ease: 'easeOut' }}
+              >
+                <Link
+                  href={`/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`}
+                  className="relative block bg-brand-card border border-brand-border rounded-xl p-4 hover:border-brand-gold/40 transition-colors group overflow-hidden"
+                >
+                  {/* Background bar */}
+                  <div
+                    className="absolute inset-y-0 left-0 bg-brand-gold/5 border-r border-brand-gold/20 transition-all"
+                    style={{ width: `${pct}%` }}
+                    aria-hidden="true"
+                  />
+                  <div className="relative flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <span className={`font-mono text-sm w-8 text-right ${i < 3 ? 'text-brand-gold font-medium' : 'text-brand-text-muted'}`}>
+                        {i + 1}
+                      </span>
+                      <div>
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="text-brand-text-primary font-medium group-hover:text-brand-gold transition-colors">{c.name}</span>
+                          <span className="text-xs text-brand-text-muted">{c.showName}</span>
+                        </div>
+                        <div className="flex gap-3 mt-1 text-xs text-brand-text-muted">
+                          <span>{c.totalJokes.toLocaleString()} jokes</span>
+                          <span>{c.episodesAppeared} eps</span>
+                          {sortMode === 'total_war'
+                            ? <span>{c.warPerEpisode.toFixed(2)} WAR/ep</span>
+                            : <span>{c.war.toFixed(1)} total WAR</span>}
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex gap-3 mt-1 text-xs text-brand-text-muted">
-                      <span>{c.totalJokes.toLocaleString()} jokes</span>
-                      <span>{c.episodesAppeared} eps</span>
-                      {sortMode === 'total_war'
-                        ? <span>{c.warPerEpisode.toFixed(2)} WAR/ep</span>
-                        : <span>{c.war.toFixed(1)} total WAR</span>}
+                    <div className="text-right">
+                      <span className="font-mono text-lg text-brand-gold font-medium">{value.toFixed(sortMode === 'total_war' ? 1 : 2)}</span>
+                      <p className="text-[10px] text-brand-text-muted uppercase tracking-widest">
+                        {sortMode === 'total_war' ? 'WAR' : 'WAR/ep'}
+                      </p>
                     </div>
                   </div>
-                </div>
-                <div className="text-right">
-                  <span className="font-mono text-lg text-brand-gold font-medium">{value.toFixed(sortMode === 'total_war' ? 1 : 2)}</span>
-                  <p className="text-[10px] text-brand-text-muted uppercase tracking-widest">
-                    {sortMode === 'total_war' ? 'WAR' : 'WAR/ep'}
-                  </p>
-                </div>
-              </div>
-            </Link>
-          );
-        })}
+                </Link>
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
         {filtered.length === 0 && (
           <p className="text-brand-text-muted text-center py-8 text-sm">No characters match this filter.</p>
         )}

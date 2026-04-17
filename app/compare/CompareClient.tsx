@@ -4,13 +4,13 @@ import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { ShowScore } from '@/lib/types';
 import { formatIndex } from '@/lib/scoring';
-import { MOCK_DNA_DATA } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
 import SocialShare from '@/components/ui/SocialShare';
 import { RadarCompareChart, JokeTypesCompareChart } from '@/components/charts';
 
 interface Props {
   shows: ShowScore[];
+  dnaBySlug: Record<string, Record<string, number>>;
 }
 
 function ShowSelector({
@@ -47,7 +47,7 @@ function ShowSelector({
   );
 }
 
-export default function CompareClient({ shows }: Props) {
+export default function CompareClient({ shows, dnaBySlug }: Props) {
   const searchParams = useSearchParams();
   const preselected = searchParams.get('show');
 
@@ -65,8 +65,8 @@ export default function CompareClient({ shows }: Props) {
 
   const ready = showA && showB;
 
-  const dnaA = MOCK_DNA_DATA[slugA as keyof typeof MOCK_DNA_DATA];
-  const dnaB = MOCK_DNA_DATA[slugB as keyof typeof MOCK_DNA_DATA];
+  const dnaA = dnaBySlug[slugA];
+  const dnaB = dnaBySlug[slugB];
 
   const dims: { key: keyof ShowScore; label: string }[] = [
     { key: 'humor_index', label: 'Humor Index' },
