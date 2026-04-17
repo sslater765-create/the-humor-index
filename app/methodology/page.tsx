@@ -206,6 +206,54 @@ export default function MethodologyPage() {
           </p>
         </section>
 
+        {/* Bayesian credible intervals */}
+        <section>
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Bayesian Model</p>
+          <h2 className="text-xl font-medium text-brand-text-primary mb-4">What a Hierarchical Model Actually Finds</h2>
+          <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
+            We fit a hierarchical Bayesian model to 15,000 jokes (5,000 per scored show) predicting joke-level impact from show, format, joke type, episode, and character. Here&apos;s what came out.
+          </p>
+          <div className="bg-brand-card border border-brand-border rounded-xl p-5 mb-4">
+            <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Format effect</p>
+            <p className="font-mono text-sm text-brand-text-primary mb-1">Single-cam vs multi-cam: −0.052 (95% CrI: [−0.590, +0.442])</p>
+            <p className="text-xs text-brand-text-secondary mt-2">
+              The 95% credible interval straddles zero. After controlling for show, joke type, episode, and character, we cannot statistically distinguish single-cam from multi-cam on impact. This vindicates the decision to set the format coefficient to 1.0.
+            </p>
+          </div>
+          <div className="bg-brand-card border border-brand-border rounded-xl p-5 mb-4">
+            <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Show effects (impact deflection from grand mean)</p>
+            <ul className="text-sm font-mono text-brand-text-primary space-y-1">
+              <li>Seinfeld: +0.154 (95% CrI: [−0.224, +0.530])</li>
+              <li>The Office: −0.007 (95% CrI: [−0.505, +0.456])</li>
+              <li>Friends: −0.131 (95% CrI: [−0.498, +0.235])</li>
+            </ul>
+            <p className="text-xs text-brand-text-secondary mt-3">
+              All three intervals overlap. The posterior ordering (Seinfeld &gt; Office &gt; Friends) matches our Humor Index rankings, but the differences are within the statistical noise of this model.
+              Probability that Seinfeld beats Friends on show-effect is approximately 82% — better than a coin flip, but not 99%+ certain.
+            </p>
+          </div>
+          <div className="bg-brand-card border border-brand-border rounded-xl p-5">
+            <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Variance decomposition</p>
+            <ul className="text-sm text-brand-text-secondary space-y-1 list-disc list-inside">
+              <li><span className="text-brand-text-primary font-mono">63.9%</span> — within-joke residual (unexplained)</li>
+              <li><span className="text-brand-text-primary font-mono">11.8%</span> — between episodes within a show</li>
+              <li><span className="text-brand-text-primary font-mono">8.9%</span> — between joke types</li>
+              <li><span className="text-brand-text-primary font-mono">7.9%</span> — between shows</li>
+              <li><span className="text-brand-text-primary font-mono">7.5%</span> — between characters</li>
+            </ul>
+            <p className="text-xs text-brand-text-secondary mt-3">
+              Shows explain only 7.9% of total joke-level variance. Rankings between shows capture a small fraction of what makes a joke score well.
+              Two-thirds of the variance is unexplained within-joke residual — some real (same joke type executed better or worse), some LLM noise.
+            </p>
+          </div>
+          <p className="text-xs text-brand-text-muted mt-4 leading-relaxed">
+            Full Bayesian model outputs are published at{' '}
+            <a href="/data/format_posteriors.json" className="text-brand-gold hover:underline">/data/format_posteriors.json</a>,{' '}
+            <a href="/data/show_credible_intervals.json" className="text-brand-gold hover:underline">/data/show_credible_intervals.json</a>, and{' '}
+            <a href="/data/variance_decomposition.json" className="text-brand-gold hover:underline">/data/variance_decomposition.json</a>.
+          </p>
+        </section>
+
         {/* Confidence intervals & percentiles */}
         <section>
           <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Uncertainty</p>

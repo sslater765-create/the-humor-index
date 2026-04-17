@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'bayesian-credible-intervals',
+    title: 'We Fitted a Bayesian Model to 15,000 Jokes. Every Show Ranking Is Within Noise.',
+    description: 'A hierarchical Bayesian model of joke impact. Format effect: statistically zero. The three scored shows\' credible intervals all overlap. 64% of joke-level variance is unexplained within-joke noise.',
+    date: '2026-04-17',
+    category: 'Data Science',
+    readTime: '8 min read',
+    stat: '7.9%',
+    statLabel: 'Variance between shows',
+  },
+  {
     slug: 'comedy-war',
     title: 'Jerry Seinfeld Is the Most Valuable Comedy Character in Television History',
     description: 'Comedy WAR is like baseball\'s Wins Above Replacement but for sitcom characters. With a proper empirical replacement baseline, Jerry Seinfeld leads at 1,708 career WAR — nearly 4× Michael Scott.',

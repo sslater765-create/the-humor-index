@@ -3,6 +3,7 @@ import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 
 // Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
 const BLOG_SLUGS = [
+  'bayesian-credible-intervals',
   'comedy-war',
   'seinfeld-vs-the-office',
   'imdb-vs-humor-index',
@@ -36,8 +37,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Blog posts
   const blogDates: Record<string, string> = {
-    'comedy-war': '2026-04-13',
-    'seinfeld-vs-the-office': '2026-04-12',
+    'bayesian-credible-intervals': '2026-04-17',
+    'comedy-war': '2026-04-16',
+    'seinfeld-vs-the-office': '2026-04-16',
     'imdb-vs-humor-index': '2026-04-12',
     'is-the-office-actually-funny': '2026-04-10',
     'how-we-score-comedy': '2026-04-10',

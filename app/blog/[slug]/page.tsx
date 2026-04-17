@@ -118,6 +118,99 @@ These calibration points are fixed — they won't shift as we add more shows.
 *See our full [methodology page](/methodology) for additional details.*
     `,
   },
+  'bayesian-credible-intervals': {
+    title: 'We Fitted a Bayesian Model to 15,000 Jokes. Every Show Ranking Is Within Noise.',
+    description: 'A hierarchical Bayesian model of joke impact on 15,000 jokes. Format effect: statistically indistinguishable from zero. The three scored shows\u2019 credible intervals overlap completely. 64% of joke-level variance is unexplained within-joke noise.',
+    date: '2026-04-17',
+    category: 'Data Science',
+    content: `
+Earlier this week we removed a silent format coefficient that was penalizing multi-cam shows by 15\u201325%. A data-science audit had flagged it as statistically unidentifiable with only three scored shows. We agreed and pulled it.
+
+Then we went further. We fit a hierarchical Bayesian model to the entire dataset to answer the deeper question: **when you properly control for joke type, character, and episode, how much of a comedy show\u2019s ranking is actual signal vs. within-noise differences?**
+
+The answer is more humbling than we expected.
+
+## The Model
+
+We sampled 15,000 jokes across The Office, Seinfeld, and Friends (5,000 per show) and fit a model predicting each joke\u2019s impact score (the LLM\u2019s 0\u201310 audience-reaction estimate) as:
+
+\`\`\`
+impact_j = grand_mean
+         + format_effect[format(j)]         # fixed effect
+         + show_effect[show(j)]              # partially-pooled random effect
+         + joke_type_effect[type(j)]
+         + episode_effect[episode(j)]        # random intercept
+         + character_effect[char(j)]         # random intercept
+         + residual_noise
+\`\`\`
+
+Everything was sampled with PyMC using NUTS (2 chains, 500 post-warmup draws, 0 divergences). This is a textbook hierarchical-effects model \u2014 the kind of setup you\u2019d use for player effects in a sports analytics paper.
+
+## Finding 1: The format effect is statistically zero
+
+Here\u2019s the posterior for the format coefficient (single-cam vs. multi-cam baseline):
+
+| | Posterior median | 95% CrI | P(effect > 0) |
+|---|---|---|---|
+| **Single-cam** (vs. multi-cam baseline) | **\u22120.052** | **[\u22120.590, +0.442]** | 0.40 |
+
+Translation: the posterior distribution puts a 60% chance that the single-cam effect on impact is negative, 40% it\u2019s positive. **The credible interval straddles zero.** After controlling for everything else, we cannot distinguish single-cam from multi-cam on impact.
+
+This is vindication. The old 15\u201325% coefficient wasn\u2019t just poorly calibrated \u2014 it was applying a correction to an effect the data doesn\u2019t support.
+
+## Finding 2: The three shows are statistically indistinguishable
+
+Show random-effect deflections (on the 0\u201310 impact scale):
+
+| Show | Median deflection | 95% CrI |
+|---|---|---|
+| **Seinfeld** | +0.154 | [\u22120.224, +0.530] |
+| **The Office** | \u22120.007 | [\u22120.505, +0.456] |
+| **Friends** | \u22120.131 | [\u22120.498, +0.235] |
+
+All three intervals overlap. The posterior median orders them Seinfeld > Office > Friends, which matches our raw Humor Index rankings. But the **statistical story is that this ordering is within noise.** The probability that Seinfeld\u2019s show-effect really is higher than Friends\u2019 is around 82%. That\u2019s meaningfully better than a coin flip, but it\u2019s not the 99%+ certainty you\u2019d want to publish a ranking claim with.
+
+If we get three more scored shows into the dataset, these intervals will narrow. But as of today, with 3 shows and 15K sampled jokes, the shows\u2019 impact-quality differences don\u2019t clear the statistical bar.
+
+## Finding 3: 64% of variance is unexplained joke-level noise
+
+The model\u2019s variance decomposition:
+
+- **Within-joke residual (unexplained): 63.9%**
+- Between-episode within show: 11.8%
+- Between-joke-type: 8.9%
+- **Between-show: 7.9%**
+- Between-character: 7.5%
+
+Shows explain only **7.9% of total joke-level variance.** That is almost identical to the variance explained by joke type (8.9%) or individual character (7.5%), and less than variance between episodes within a show (11.8%).
+
+Two-thirds of the variance is within-joke residual \u2014 the LLM gives similar jokes meaningfully different scores. Some of this is real (the same joke type can be executed well or badly), some is LLM noise. Without an inter-rater reliability study we can\u2019t distinguish.
+
+## What This Actually Means for the Rankings
+
+The Humor Index, Comedy WAR, and every leaderboard on this site are computed from aggregates of joke-level scores. When the joke-level model can\u2019t distinguish shows, the aggregates rank them \u2014 but those ranks sit on a foundation of overlap.
+
+In practice: if you\u2019re reading *"Seinfeld has a Humor Index of 83.9 vs. The Office\u2019s 80.2,"* you should read that as *"Seinfeld scores higher on our current sample, but the difference is within the range of how much rescoring noise would move these numbers."* A 3-point Humor Index gap is bigger than the typical inter-episode bootstrap CI but smaller than the show-level credible interval.
+
+This doesn\u2019t mean the rankings are wrong. It means they\u2019re **not statistically distinguishable given current data.** That\u2019s a feature of being honest about our sample size and model, not a bug in the analysis.
+
+## What We\u2019re Changing on the Site
+
+1. **Credible interval badges** on show pages. Next to each show\u2019s Humor Index, we\u2019re surfacing the 95% credible interval from this model. A reader can see that Friends and Office have overlapping intervals and draw their own conclusion.
+
+2. **Variance decomposition on the methodology page.** The 64% within-joke noise figure is going in the Known Limitations section. Readers should know that two-thirds of what our model sees in joke-level scores is unexplained.
+
+3. **The format filter stays.** Since format doesn\u2019t have an identifiable effect on impact, the filter is just a convenience for users who want to compare multi-cam to multi-cam. It\u2019s no longer a silent correction.
+
+## The Big Picture
+
+This result aligns with what a lot of comedy writers will tell you: **there is no universally correct answer to "which show is funnier."** Our data suggests the answer is somewhere between "they\u2019re essentially the same" and "the differences we measure are small enough that the model can\u2019t confidently order them."
+
+We\u2019re publishing the full model artifacts \u2014 posterior samples, variance components, and credible intervals \u2014 in the site\u2019s \`public/data/\` directory, so anyone who wants to reanalyze is welcome to.
+
+*Model outputs: [format_posteriors.json](/data/format_posteriors.json) \u2022 [show_credible_intervals.json](/data/show_credible_intervals.json) \u2022 [variance_decomposition.json](/data/variance_decomposition.json)*
+    `,
+  },
   'comedy-war': {
     title: 'Jerry Seinfeld Is the Most Valuable Comedy Character in Television History',
     description: 'Comedy WAR is like baseball\'s Wins Above Replacement but for sitcom characters. Jerry Seinfeld leads at 1,708 career WAR — nearly 4× Michael Scott.',
