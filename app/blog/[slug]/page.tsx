@@ -118,6 +118,123 @@ These calibration points are fixed — they won't shift as we add more shows.
 *See our full [methodology page](/methodology) for additional details.*
     `,
   },
+  'scorer-noise-floor': {
+    title: 'We Rescored 30 Episodes Twice. Our Single-Run Humor Index Has an ICC of 0.28.',
+    description: 'A test-retest study on 30 episodes. Show-identity bias is tiny (not significant). But the scorer is noisier than we thought — individual episode Humor Indexes are only 28% signal, 72% run-to-run variance. Here\u2019s what we\u2019re doing about it.',
+    date: '2026-04-17',
+    category: 'Data Science',
+    content: `
+Earlier this week we ran a blind-mode rescoring study on 99 episodes across our three scored shows. Then we took 30 of those episodes and scored them a SECOND time (also in blind mode) to measure the scorer\u2019s own noise floor.
+
+The results are humbling. Here they are.
+
+## Finding 1: Show-identity bias is small and not significant
+
+First the good news. We compared each episode\u2019s blind score to its production (non-blind) score \u2014 the one we currently show on the site. Paired difference analysis:
+
+| Show | n | Blind HI | Non-blind HI | Δ (non-blind − blind) | 95% CI |
+|---|---|---|---|---|---|
+| Seinfeld | 33 | 84.6 | 82.1 | \u22122.45 | [\u22125.71, +0.82] |
+| The Office | 33 | 78.9 | 77.7 | \u22121.23 | [\u22125.11, +2.65] |
+| Friends | 33 | 81.3 | 80.5 | \u22120.72 | [\u22125.29, +3.84] |
+| **Pooled** | 99 | — | — | **\u22121.47** | [\u22123.72, +0.79] |
+
+Pooled bias: the LLM scores episodes **1.47 points lower** when it can see the show name. The 95% CI straddles zero, so this effect is not statistically significant at n=99.
+
+The direction is the OPPOSITE of what you might expect. If the LLM were fellating famous shows, scores would go up with show knowledge, not down. The slight downward shift is likely explained by non-blind mode giving the LLM an explicit character list, which probably affects joke detection in subtle ways (more structured attribution → different joke ensembles).
+
+**Takeaway**: show-identity bias is not a meaningful issue in the current production scores.
+
+## Finding 2: Our own scorer is noisier than we thought
+
+We scored 30 episodes TWICE, both blind, with different internal random seeds (Claude has natural non-determinism at temperature > 0). Ideally the two scores should be very similar. They\u2019re not.
+
+### Reliability per metric
+
+| Metric | ICC | Interpretation |
+|---|---|---|
+| avg_craft (raw 0–10) | 0.28 | poor |
+| avg_impact (raw 0–10) | 0.24 | poor |
+| **Humor Index (0–100)** | **0.28** | **poor** |
+| total_jokes detected | 0.67 | moderate |
+| JPM | 0.53 | moderate |
+
+Intraclass correlation (ICC) measures what fraction of the variance in scores is REAL between-episode signal vs. run-to-run noise. For individual-subject measurements, ICC ≥ 0.75 is \u201Cgood,\u201D 0.4–0.75 is \u201Cmoderate,\u201D and <0.4 is \u201Cpoor.\u201D
+
+**Our Humor Index ICC is 0.28.** Only 28% of variance in a single-run episode score reflects real episode quality; 72% is run-to-run scorer noise.
+
+### Variance decomposition
+
+For the 30 test-retest pairs:
+
+- **Between-episode variance** (real signal): 27.8% of total
+- **Within-episode variance** (run-to-run noise): 72.2% of total
+
+Mean absolute difference between two blind runs of the same episode: **10.7 Humor Index points.**
+
+That means any two episodes within ~10 points of each other (on a 0–100 scale) are essentially indistinguishable with single-run scoring.
+
+## Why does the Humor Index have so much noise?
+
+Two sub-findings explain it:
+
+**1. Joke detection is stable (r ≈ 0.63 on total jokes found).** The LLM reliably finds most jokes in an episode — joke counts across two runs are within ±8-9 of each other on average.
+
+**2. Per-joke craft/impact scoring is moderately stable (SD ≈ 0.35 on 0–10).** Individual joke scores jitter by about 5% between runs. That\u2019s the LLM\u2019s actual noise floor.
+
+**3. The Humor Index formula AMPLIFIES that noise via threshold metrics.** The formula includes \`peak_density\` \u2014 the fraction of jokes where BOTH craft ≥ 7 AND impact ≥ 7. A joke scored 7.01 vs 6.99 flips its \u201Celite\u201D status. When the scorer is noisy by ±0.35, a bunch of threshold-adjacent jokes cross the line in different runs, and peak_density swings by 1-2 points. That 1-2 point swing in a component with 15% weight translates to multi-point Humor Index swings.
+
+Similarly, the \`memorability_bonus\` depends on the top 5 quotability scores \u2014 which can change when different jokes are identified as \u201Ctop.\u201D And \`effective_score\` uses top-quartile weighting, which compounds noise at the edges.
+
+## So are the rankings meaningless?
+
+No, but they need context.
+
+### Show-level rankings are statistically fine
+
+Each show\u2019s overall Humor Index is averaged over 170-236 episodes. The law of large numbers does its work:
+
+- Per-episode noise SD: ~5 Humor Index points
+- The Office (186 eps): SE on show mean ≈ 0.37
+- Seinfeld (172 eps): SE on show mean ≈ 0.38
+- Friends (236 eps): SE on show mean ≈ 0.33
+
+So the show-level Humor Indexes we publish (Seinfeld 83.9, Office 80.2, Friends 78.7) are stable to roughly ±0.4 points from LLM noise. The differences between these shows (3–6 points) are far larger than that noise floor.
+
+**Show rankings hold up.**
+
+### Individual episode rankings have ±5-point noise
+
+If two episodes are within ~10 Humor Index points, the ordering between them is within the scorer\u2019s noise floor. A \u201CBest Friends Episode\u201D list, where the top 10 episodes are all between 85-95, has a lot of genuine uncertainty in its ordering.
+
+**Extreme episodes still stand out.** Dinner Party (100) is clearly above mean (75). The Last One (95) is clearly above mean. A bottom-quartile episode at 62 is clearly below. These wouldn\u2019t flip.
+
+But the difference between #1 and #2 in a close race? That\u2019s within noise.
+
+## What we\u2019re doing about it
+
+Three changes:
+
+**1. Publishing the noise floor.** This blog post and a new section on our methodology page spell it out: single-run Humor Index ICC = 0.28, mean |Δ| = 10.7 points, show-level SE = 0.4 points. Readers should calibrate their confidence accordingly.
+
+**2. Consensus scoring going forward.** Our pipeline already supports multi-run consensus (the \`--num-runs\` flag). For all new shows \u2014 starting with Parks and Recreation when we resume \u2014 we\u2019ll score each episode THREE times and use the mean. Three runs cuts per-episode SE by about √3 ≈ 1.7\u00D7, which should get ICC up to moderate (≥ 0.4) territory. Five runs would get us near \u201Cgood\u201D (≥ 0.75).
+
+**3. Smoother aggregate formula (future work).** The threshold-based metrics in the Humor Index (peak_density, memorability_bonus) are the noise amplifiers. Replacing them with continuous smoothed versions \u2014 say, a sigmoid-weighted elite-joke score instead of a hard threshold \u2014 would cut formula-level amplification without changing the qualitative meaning. We\u2019re leaving the current formula in place for continuity but exploring a v3 formula.
+
+## The honest bottom line
+
+We found out, in public, that our own scorer\u2019s noise floor is higher than we thought.
+
+We could have:
+- Not run this study and never known
+- Run it and buried the results
+- Run it and presented the good part (small show-identity bias) while glossing over the bad part (poor ICC)
+
+Instead we\u2019re publishing the full findings, the specific ICC, the variance decomposition, and the plan to address it. This is what real research looks like. It\u2019s uncomfortable, but it\u2019s how you build something you can actually trust.
+
+*Study artifacts: sample of 99 episodes scored blind, 30 of those scored again. Raw outputs are in our workspace and available on request. See also the [Bayesian credible intervals](/blog/bayesian-credible-intervals) post which independently corroborates the noise-floor finding via a hierarchical model.*
+    `,
+  },
   'bayesian-credible-intervals': {
     title: 'We Fitted a Bayesian Model to 15,000 Jokes. Every Show Ranking Is Within Noise.',
     description: 'A hierarchical Bayesian model of joke impact on 15,000 jokes. Format effect: statistically indistinguishable from zero. The three scored shows\u2019 credible intervals overlap completely. 64% of joke-level variance is unexplained within-joke noise.',

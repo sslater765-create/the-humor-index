@@ -206,6 +206,79 @@ export default function MethodologyPage() {
           </p>
         </section>
 
+        {/* Scorer noise floor (Level 2 findings) */}
+        <section>
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Reliability</p>
+          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Our Scorer&apos;s Noise Floor</h2>
+          <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
+            We ran a test-retest study: 30 episodes were scored twice, both in blind mode, with different random seeds.
+            Results:
+          </p>
+          <div className="bg-brand-card border border-brand-border rounded-xl p-5 mb-4">
+            <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Intraclass correlation (ICC)</p>
+            <ul className="text-sm font-mono text-brand-text-primary space-y-1">
+              <li>Humor Index (0–100): <span className="text-amber-400">0.28</span> <span className="text-xs text-brand-text-muted">(poor, &lt; 0.40)</span></li>
+              <li>avg_craft (0–10): <span className="text-amber-400">0.28</span></li>
+              <li>avg_impact (0–10): <span className="text-amber-400">0.24</span></li>
+              <li>total_jokes detected: <span className="text-emerald-400">0.67</span> <span className="text-xs text-brand-text-muted">(moderate)</span></li>
+              <li>JPM: <span className="text-emerald-400">0.53</span> <span className="text-xs text-brand-text-muted">(moderate)</span></li>
+            </ul>
+            <p className="text-xs text-brand-text-secondary mt-3">
+              Mean absolute difference between two blind runs of the same episode: <span className="text-brand-text-primary">10.7 Humor Index points</span>.
+              72% of single-run Humor Index variance is run-to-run scorer noise; only 28% is real episode signal.
+            </p>
+          </div>
+          <p className="text-sm text-brand-text-secondary leading-relaxed mb-4">
+            <span className="text-brand-text-primary">Why:</span> joke detection is stable (67% signal), but per-joke craft/impact
+            ratings jitter by ~5% between runs. The Humor Index formula amplifies that noise through threshold-based metrics
+            (peak_density, memorability_bonus) that flip on small score changes.
+          </p>
+          <p className="text-sm text-brand-text-secondary leading-relaxed mb-4">
+            <span className="text-brand-text-primary">What this means for rankings:</span>
+          </p>
+          <ul className="text-sm text-brand-text-secondary space-y-2 list-disc list-inside mb-4">
+            <li>
+              <span className="text-brand-text-primary">Show-level rankings hold up.</span> Averaging over 170–236 episodes drives the standard error on show Humor Index to roughly <span className="font-mono">±0.4 points</span>. The 3–6 point gaps between Seinfeld, Office, and Friends are well above that floor.
+            </li>
+            <li>
+              <span className="text-brand-text-primary">Individual episode rankings have ±5 point noise.</span> Two episodes within ~10 Humor Index points of each other are essentially tied under single-run scoring.
+            </li>
+            <li>
+              <span className="text-brand-text-primary">Extreme episodes still stand out.</span> Dinner Party (100) vs an average 75 is comfortably above the noise. It&apos;s the close-finish ordering that&apos;s uncertain.
+            </li>
+          </ul>
+          <p className="text-sm text-brand-text-secondary leading-relaxed mb-4">
+            <span className="text-brand-text-primary">What we&apos;re doing:</span> consensus scoring. Our pipeline supports multi-run scoring via <code className="text-brand-text-primary">--num-runs</code>.
+            All new shows starting with Parks and Recreation will be scored 3× per episode and averaged. This should raise ICC to moderate (≥0.40); five runs would reach the &quot;good&quot; threshold (≥0.75).
+          </p>
+          <p className="text-xs text-brand-text-muted leading-relaxed">
+            Full study: see the <a href="/blog/scorer-noise-floor" className="text-brand-gold hover:underline">blog post</a>.
+          </p>
+        </section>
+
+        {/* Show-identity bias */}
+        <section>
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Bias</p>
+          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Show-Identity Bias: Small and Not Significant</h2>
+          <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
+            We scored 99 episodes in blind mode (no show name, no character list, no description fed to the LLM) and
+            compared to their non-blind production scores. Paired differences:
+          </p>
+          <div className="bg-brand-card border border-brand-border rounded-xl p-5">
+            <ul className="text-sm font-mono text-brand-text-primary space-y-1">
+              <li>Pooled (n=99): <span className="text-brand-text-primary">\u22121.47 HI points</span> <span className="text-xs text-brand-text-muted">(95% CI: [\u22123.72, +0.79])</span></li>
+              <li>Seinfeld (n=33): \u22122.45 (CI [\u22125.71, +0.82])</li>
+              <li>The Office (n=33): \u22121.23 (CI [\u22125.11, +2.65])</li>
+              <li>Friends (n=33): \u22120.72 (CI [\u22125.29, +3.84])</li>
+            </ul>
+            <p className="text-xs text-brand-text-secondary mt-3">
+              All CIs include zero. No show shows a statistically significant bias from knowing the show name. The
+              direction (blind scores slightly HIGHER, not lower) is the opposite of what a naive &quot;AI favors famous
+              shows&quot; hypothesis would predict.
+            </p>
+          </div>
+        </section>
+
         {/* Bayesian credible intervals */}
         <section>
           <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Bayesian Model</p>

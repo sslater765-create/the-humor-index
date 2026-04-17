@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'scorer-noise-floor',
+    title: 'We Rescored 30 Episodes Twice. Our Single-Run Humor Index Has an ICC of 0.28.',
+    description: 'A test-retest study on 30 episodes. Show-identity bias is tiny (not significant). But the scorer is noisier than we thought — individual episode Humor Indexes are only 28% signal, 72% run-to-run variance. Here\'s what we\'re doing about it.',
+    date: '2026-04-17',
+    category: 'Data Science',
+    readTime: '9 min read',
+    stat: 'ICC 0.28',
+    statLabel: 'Single-run reliability',
+  },
+  {
     slug: 'bayesian-credible-intervals',
     title: 'We Fitted a Bayesian Model to 15,000 Jokes. Every Show Ranking Is Within Noise.',
     description: 'A hierarchical Bayesian model of joke impact. Format effect: statistically zero. The three scored shows\' credible intervals all overlap. 64% of joke-level variance is unexplained within-joke noise.',
