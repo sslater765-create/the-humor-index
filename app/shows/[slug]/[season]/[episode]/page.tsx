@@ -267,16 +267,22 @@ export default async function EpisodePage({
         </section>
       )}
 
-      {/* All jokes */}
+      {/* All jokes — collapsed behind <details> to avoid 80+ row DOM dump */}
       <section>
-        <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-3">
-          All Jokes — {detail.jokes.length} analyzed
-        </p>
-        <div className="space-y-2">
-          {regularJokes.map(joke => (
-            <JokeRow key={joke.id} joke={joke} showSlug={params.slug} />
-          ))}
-        </div>
+        <details className="group">
+          <summary className="list-none cursor-pointer flex items-center justify-between mb-3 select-none">
+            <p className="text-xs uppercase tracking-widest text-brand-text-muted">
+              All Jokes — {detail.jokes.length} analyzed
+            </p>
+            <span className="text-xs text-brand-gold group-open:hidden">Show all ↓</span>
+            <span className="text-xs text-brand-gold hidden group-open:inline">Hide ↑</span>
+          </summary>
+          <div className="space-y-2">
+            {regularJokes.map(joke => (
+              <JokeRow key={joke.id} joke={joke} showSlug={params.slug} />
+            ))}
+          </div>
+        </details>
       </section>
 
       {/* Weakest section note */}

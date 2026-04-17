@@ -57,23 +57,33 @@ export default async function ShowPage({ params }: { params: { slug: string } })
     dominant_types: c.dominant_types,
   }));
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'TVSeries',
-    name: show.name,
-    url: `https://thehumorindex.com/shows/${params.slug}`,
-    description: show.description,
-    image: show.backdrop_path ? `https://image.tmdb.org/t/p/w1280${show.backdrop_path}` : undefined,
-    numberOfSeasons: show.total_seasons,
-    numberOfEpisodes: show.total_episodes,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: show.humor_index,
-      bestRating: 100,
-      worstRating: 0,
-      ratingCount: show.total_jokes_analyzed,
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'TVSeries',
+      name: show.name,
+      url: `https://thehumorindex.com/shows/${params.slug}/`,
+      description: show.description,
+      image: show.backdrop_path ? `https://image.tmdb.org/t/p/w1280${show.backdrop_path}` : undefined,
+      numberOfSeasons: show.total_seasons,
+      numberOfEpisodes: show.total_episodes,
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: show.humor_index,
+        bestRating: 100,
+        worstRating: 0,
+        ratingCount: show.total_jokes_analyzed,
+      },
     },
-  };
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Shows', item: 'https://thehumorindex.com/shows/' },
+        { '@type': 'ListItem', position: 2, name: show.name, item: `https://thehumorindex.com/shows/${params.slug}/` },
+      ],
+    },
+  ];
 
   return (
     <div>
@@ -100,8 +110,20 @@ export default async function ShowPage({ params }: { params: { slug: string } })
 
         {/* Content overlay */}
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-4 sm:px-6 pb-6">
+          <nav className="flex items-center gap-1 text-xs text-brand-text-muted mb-3" aria-label="Breadcrumb">
+            <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">Shows</Link>
+            <span>/</span>
+            <span className="text-brand-text-secondary truncate max-w-[200px]">{show.name}</span>
+          </nav>
           <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Show Analysis</p>
-          <h1 className="text-3xl sm:text-4xl font-medium text-brand-text-primary mb-2">{show.name}</h1>
+          <h1 className="text-3xl sm:text-4xl font-medium text-brand-text-primary mb-2">
+            {show.name}
+            {show.humor_index > 0 && (
+              <span className="text-brand-gold font-mono text-xl sm:text-2xl ml-3 align-middle">
+                {formatIndex(show.humor_index)}
+              </span>
+            )}
+          </h1>
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <FormatBadge format={show.format} />
             {show.network && (
