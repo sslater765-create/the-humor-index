@@ -7,11 +7,14 @@ export const FORMAT_LABELS: Record<ShowFormat, string> = {
   hybrid: 'Hybrid',
 };
 
+// Format coefficients deprecated on 2026-04-16.
+// See /methodology — we no longer apply a silent multi-cam penalty.
+// Kept as all-1.0 for backward compatibility with code that imports it.
 export const FORMAT_COEFFICIENTS: Record<ShowFormat, number> = {
   single_camera: 1.00,
-  hybrid: 0.90,
-  multi_camera_live: 0.85,
-  multi_camera_sweetened: 0.75,
+  hybrid: 1.00,
+  multi_camera_live: 1.00,
+  multi_camera_sweetened: 1.00,
 };
 
 export const JOKE_TYPE_LABELS: Record<JokeType, string> = {

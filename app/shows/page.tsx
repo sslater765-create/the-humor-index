@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getAllShows } from '@/lib/data';
-import ShowCard from '@/components/ui/ShowCard';
 import FormatBadge from '@/components/ui/FormatBadge';
 import PageHeader from '@/components/layout/PageHeader';
+import ShowsGrid from './ShowsGrid';
 
 export const metadata = {
   title: 'All Shows — The Humor Index',
@@ -33,11 +33,7 @@ export default async function ShowsPage() {
         subtitle={`${scored.length} show${scored.length !== 1 ? 's' : ''} scored${upcoming.length > 0 ? `, ${upcoming.length} coming soon` : ''}`}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {scored.map(show => (
-            <ShowCard key={show.slug} show={show} />
-          ))}
-        </div>
+        <ShowsGrid shows={scored} />
 
         {upcoming.length > 0 && (
           <div className="mt-12">

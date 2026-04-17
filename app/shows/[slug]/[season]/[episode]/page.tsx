@@ -220,7 +220,21 @@ export default async function EpisodePage({
 
       {/* Score cards */}
       <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-8 sm:mb-10">
-        <ScoreGauge score={detail.humor_index} size={110} label="Humor Index" />
+        <div className="flex flex-col items-center">
+          <ScoreGauge score={detail.humor_index} size={110} label="Humor Index" />
+          <div className="flex flex-col items-center mt-2 gap-0.5">
+            {detail.ci_95_low != null && detail.ci_95_high != null && (
+              <p className="text-[10px] text-brand-text-muted font-mono">
+                95% CI: {detail.ci_95_low.toFixed(1)}–{detail.ci_95_high.toFixed(1)}
+              </p>
+            )}
+            {detail.percentile_in_show != null && (
+              <p className="text-[10px] text-brand-text-muted">
+                <span className="text-brand-gold">p{Math.round(detail.percentile_in_show)}</span> in {show.name}
+              </p>
+            )}
+          </div>
+        </div>
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 sm:gap-3 flex-1 w-full">
           <ScoreCard label="WAR" value={(detail as any).war ?? 0} sub="Wins Above Replacement" />
           <ScoreCard label="JPM" value={detail.jpm} sub={`${detail.total_jokes} jokes`} />

@@ -162,8 +162,78 @@ export default function MethodologyPage() {
             </table>
           </div>
           <p className="text-xs text-brand-text-muted mt-3 leading-relaxed">
-            The coefficients were calibrated against a blind human-rated set of 500 jokes across formats.
-            Single-camera is the baseline because it makes no structural accommodation for the audience.
+            <span className="text-amber-400">Deprecated as of 2026-04-16.</span> Coefficients have all been set to 1.0
+            (no format adjustment). The old coefficients were confounded with show identity and calibrated against
+            an opaque small sample. We now publish raw scores and let you filter by format on the shows and
+            rankings pages. See the &quot;Why we don&apos;t adjust for format&quot; section below.
+          </p>
+        </section>
+
+        {/* Format policy */}
+        <section>
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Policy</p>
+          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Why We Don&apos;t Adjust for Format</h2>
+          <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
+            An earlier version of the Humor Index silently penalized multi-cam shows (live audience, laugh track)
+            by 15–25%, on the premise that audience reaction inflated perceived impact. That adjustment had three
+            problems:
+          </p>
+          <ul className="text-sm text-brand-text-secondary space-y-2 list-disc list-inside mb-4">
+            <li>
+              <span className="text-brand-text-primary">Confounding.</span> With only three scored shows, the
+              &quot;format effect&quot; can&apos;t be statistically separated from show-level idiosyncrasies. You
+              can&apos;t identify a format coefficient with that few levels of the treatment variable.
+            </li>
+            <li>
+              <span className="text-brand-text-primary">Opaque calibration.</span> The coefficients were point
+              estimates with no published confidence interval and a sample we can&apos;t re-examine.
+            </li>
+            <li>
+              <span className="text-brand-text-primary">Silent correction.</span> Friends&apos; 72.8 and
+              Seinfeld&apos;s 77.9 partly reflected a 15% multi-cam tax, without that being visible to readers.
+            </li>
+          </ul>
+          <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
+            Our fix: <span className="text-brand-text-primary">report raw scores</span>, tag every show with its
+            format, and offer format-filtered leaderboards so you can compare like against like. Multi-cam shows
+            and single-cam shows aren&apos;t directly comparable on a single scale — they&apos;re different comedy
+            traditions with different conventions.
+          </p>
+          <p className="text-xs text-brand-text-muted leading-relaxed">
+            Score changes from the removal: Seinfeld 77.9 → 83.9, Friends 72.8 → 78.7, The Office 81.0 → 80.2.
+            The original scores are preserved on each page as <code className="text-brand-text-secondary">humor_index_v1</code> for
+            transparency.
+          </p>
+        </section>
+
+        {/* Confidence intervals & percentiles */}
+        <section>
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Uncertainty</p>
+          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Confidence Intervals &amp; Percentiles</h2>
+          <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
+            Every score on the site is a point estimate with real uncertainty. We now publish:
+          </p>
+          <ul className="text-sm text-brand-text-secondary space-y-2 list-disc list-inside">
+            <li>
+              <span className="text-brand-text-primary">95% bootstrap confidence intervals</span> on episode, season,
+              and show Humor Indexes. Episode-level CIs resample the episode&apos;s own jokes with replacement 200×
+              and take the 2.5th and 97.5th percentiles of the resulting score distribution. Season/show-level CIs
+              resample episodes.
+            </li>
+            <li>
+              <span className="text-brand-text-primary">Show-relative percentile</span> on every episode. An episode
+              at p90 in Friends means it&apos;s funnier than 90% of scored Friends episodes, independent of the
+              absolute score.
+            </li>
+            <li>
+              <span className="text-brand-text-primary">Z-scores within show and within season.</span> Useful for
+              cross-show comparisons that control for the show&apos;s overall comedy baseline.
+            </li>
+          </ul>
+          <p className="text-xs text-brand-text-muted mt-4 leading-relaxed">
+            These are model-uncertainty estimates — they capture how much the score would jitter if we resampled
+            jokes or episodes. They do <em>not</em> capture structural bias (LLM compression, format effects, etc.).
+            See the Known Limitations section.
           </p>
         </section>
 

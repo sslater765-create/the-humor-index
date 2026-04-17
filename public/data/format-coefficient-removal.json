@@ -1,0 +1,24 @@
+{
+  "format_coefficients_removed_on": "2026-04-16",
+  "reason": "Format coefficients were confounded with show identity (only 3 scored shows), calibrated against an opaque small sample, and silently penalized multi-cam formats by 15-25%. Raw scores with explicit format tagging is more statistically defensible and more transparent.",
+  "coefficients_before": {
+    "single_camera": 1.0,
+    "hybrid": 0.9,
+    "multi_camera_live": 0.85,
+    "multi_camera_sweetened": 0.75
+  },
+  "coefficients_after": {
+    "single_camera": 1.0,
+    "hybrid": 1.0,
+    "multi_camera_live": 1.0,
+    "multi_camera_sweetened": 1.0
+  },
+  "approach": "Report raw scores. Tag each show with its format. Offer format-filtered leaderboards. Let the reader interpret.",
+  "added_fields": [
+    "humor_index_v1 \u2014 the previous score with the format coefficient applied, preserved for transparency",
+    "ci_95_low / ci_95_high \u2014 bootstrap 95% confidence interval from joke-level (episode) or episode-level (season/show) resampling",
+    "percentile_in_show \u2014 episode ranked among its own show",
+    "zscore_in_show \u2014 (score - show_mean) / show_stdev",
+    "zscore_in_season \u2014 (score - season_mean) / season_stdev"
+  ]
+}

@@ -37,6 +37,7 @@ export default async function FunniestCharactersPage() {
         name: c.name,
         showName: show.name,
         showSlug: show.slug,
+        showFormat: show.format,
         war: c.war ?? 0,
         warPerEpisode: c.episodes_appeared ? (c.war ?? 0) / c.episodes_appeared : 0,
         totalJokes: c.total_jokes,

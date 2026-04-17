@@ -7,6 +7,7 @@ export interface WarCharacter {
   name: string;
   showName: string;
   showSlug: string;
+  showFormat: string;
   war: number;
   warPerEpisode: number;
   totalJokes: number;
@@ -17,6 +18,15 @@ export interface WarCharacter {
 
 type SortMode = 'total_war' | 'war_per_ep';
 type Tier = 'all' | 'main' | 'recurring' | 'guest';
+type FormatFilter = 'all' | 'single_camera' | 'multi_camera_live' | 'multi_camera_sweetened' | 'hybrid';
+
+const FORMAT_FILTER_LABEL: Record<FormatFilter, string> = {
+  all: 'All formats',
+  single_camera: 'Single-cam',
+  multi_camera_live: 'Multi-cam (live)',
+  multi_camera_sweetened: 'Multi-cam (laugh track)',
+  hybrid: 'Hybrid',
+};
 
 const TIER_LABEL: Record<Tier, string> = {
   all: 'All characters',
@@ -42,6 +52,7 @@ export default function CharactersClient({ characters }: { characters: WarCharac
   const [sortMode, setSortMode] = useState<SortMode>('total_war');
   const [tier, setTier] = useState<Tier>('all');
   const [showSlug, setShowSlug] = useState<string>('all');
+  const [formatFilter, setFormatFilter] = useState<FormatFilter>('all');
 
   // Unique shows present in the data, sorted alphabetically
   const shows = useMemo(() => {
@@ -54,12 +65,17 @@ export default function CharactersClient({ characters }: { characters: WarCharac
       .sort((a, b) => a.name.localeCompare(b.name));
   }, [characters]);
 
+  const availableFormats = useMemo(() => {
+    return Array.from(new Set(characters.map(c => c.showFormat))) as FormatFilter[];
+  }, [characters]);
+
   const baseList = useMemo(() => {
     let list = characters;
     if (showSlug !== 'all') list = list.filter(c => c.showSlug === showSlug);
+    if (formatFilter !== 'all') list = list.filter(c => c.showFormat === formatFilter);
     if (tier !== 'all') list = list.filter(c => classifyTier(c) === tier);
     return list;
-  }, [characters, showSlug, tier]);
+  }, [characters, showSlug, formatFilter, tier]);
 
   const filtered = useMemo(() => {
     const sorted = [...baseList].sort((a, b) =>
@@ -124,6 +140,22 @@ export default function CharactersClient({ characters }: { characters: WarCharac
             <option value="all">All shows</option>
             {shows.map(s => (
               <option key={s.slug} value={s.slug}>{s.name}</option>
+            ))}
+          </select>
+        </div>
+
+        {/* Format filter */}
+        <div className="flex items-center gap-2 p-1 bg-brand-surface border border-brand-border rounded-lg">
+          <label htmlFor="format-filter" className="text-xs text-brand-text-muted pl-2">Format:</label>
+          <select
+            id="format-filter"
+            value={formatFilter}
+            onChange={e => setFormatFilter(e.target.value as FormatFilter)}
+            className="text-xs bg-transparent text-brand-text-primary py-1 pr-2 pl-1 focus:outline-none cursor-pointer"
+          >
+            <option value="all">{FORMAT_FILTER_LABEL.all}</option>
+            {availableFormats.map(f => (
+              <option key={f} value={f}>{FORMAT_FILTER_LABEL[f]}</option>
             ))}
           </select>
         </div>

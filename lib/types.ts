@@ -32,6 +32,9 @@ export interface ShowScore {
   total_seasons: number;
   total_episodes: number;
   humor_index: number;
+  humor_index_v1?: number;
+  ci_95_low?: number;
+  ci_95_high?: number;
   best_season: number;
   avg_jpm: number;
   avg_craft: number;
@@ -63,6 +66,11 @@ export interface SeasonScore {
   total_jokes: number;
   best_episode_title: string;
   best_episode_index: number;
+  best_episode_score?: number;
+  avg_imdb_rating?: number;
+  ci_95_low?: number;
+  ci_95_high?: number;
+  episodes_analyzed?: number;
 }
 
 export interface EpisodeScore {
@@ -72,6 +80,7 @@ export interface EpisodeScore {
   episode_number: number;
   title: string;
   humor_index: number;
+  humor_index_v1?: number;
   jpm: number;
   avg_craft: number;
   avg_impact: number;
@@ -81,6 +90,11 @@ export interface EpisodeScore {
   imdb_rating?: number;
   imdb_votes?: number;
   war?: number;
+  percentile_in_show?: number;
+  zscore_in_show?: number;
+  zscore_in_season?: number;
+  ci_95_low?: number;
+  ci_95_high?: number;
 }
 
 export interface Joke {

@@ -156,7 +156,14 @@ export default async function ShowPage({ params }: { params: { slug: string } })
       {/* Score cards */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
         <div className="flex flex-col sm:flex-row items-center gap-6">
-          <ScoreGauge score={show.humor_index} size={130} label="Humor Index" />
+          <div className="flex flex-col items-center">
+            <ScoreGauge score={show.humor_index} size={130} label="Humor Index" />
+            {show.ci_95_low != null && show.ci_95_high != null && (
+              <p className="text-[10px] text-brand-text-muted mt-2 font-mono">
+                95% CI: {show.ci_95_low.toFixed(1)}–{show.ci_95_high.toFixed(1)}
+              </p>
+            )}
+          </div>
           <div className="relative flex-1 w-full">
             <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-2 sm:pb-0 sm:grid sm:grid-cols-5 sm:overflow-visible">
               <div className="min-w-[140px] snap-start sm:min-w-0"><ScoreCard label="JPM" value={show.avg_jpm} sub="Jokes per minute" /></div>
