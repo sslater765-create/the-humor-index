@@ -306,6 +306,10 @@ export default function MethodologyPage() {
                 desc: 'Jokes Per Minute currently divides by an LLM-estimated episode runtime rather than an authoritative TMDB runtime. This makes JPM slightly self-correlated with joke count and format. Switching to TMDB runtime is planned.',
               },
               {
+                title: 'Scoring is not blind to show identity',
+                desc: 'The LLM sees the show name and character list when scoring. This can introduce show-level priors (e.g. "this is classic Office" biasing toward higher scores). A blind-mode rescoring study is planned for a future methodology version; it would require re-running the full ~600-episode corpus.',
+              },
+              {
                 title: 'No audience data',
                 desc: 'We don\'t use ratings, streaming numbers, or social media sentiment in the score itself. Across 591 episodes, the Humor Index correlates with IMDb audience ratings at r = −0.005 — they measure different things.',
               },
