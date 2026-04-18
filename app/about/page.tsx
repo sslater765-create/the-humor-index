@@ -171,7 +171,11 @@ export default async function AboutPage() {
         <section className="border-t border-brand-border pt-8">
           <p className="text-sm text-brand-text-secondary mb-4">
             Questions, feedback, or just want to argue about whether Seinfeld is funnier
-            than The Office? Find us on social:
+            than The Office? Email{' '}
+            <a href="mailto:sam@thehumorindex.com" className="text-brand-gold hover:underline">
+              sam@thehumorindex.com
+            </a>{' '}
+            or find us on social:
           </p>
           <div className="flex items-center gap-4">
             <a href="https://x.com/thehumorindex" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-brand-text-muted hover:text-brand-gold transition-colors">
