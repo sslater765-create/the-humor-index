@@ -299,11 +299,19 @@ export default async function EpisodePage({
         </details>
       </section>
 
-      {/* Weakest section note */}
+      {/* Weakest section — surfaced as "the part you fast-forward" */}
       {detail.weakest_section && (
-        <div className="mt-8 p-4 border border-brand-border rounded-xl">
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Weakest Section</p>
-          <p className="text-sm text-brand-text-secondary">{detail.weakest_section}</p>
+        <div className="mt-8 bg-brand-surface border border-brand-border rounded-xl p-5">
+          <div className="flex items-start gap-3">
+            <span className="text-2xl leading-none select-none" aria-hidden>⏩</span>
+            <div className="flex-1">
+              <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">The part you fast-forward</p>
+              <p className="text-sm text-brand-text-secondary leading-relaxed">
+                Our scorer flagged <span className="font-mono text-brand-text-primary">{detail.weakest_section}</span>{' '}
+                as the stretch with the fewest or weakest comedic moments. Everything else lands harder.
+              </p>
+            </div>
+          </div>
         </div>
       )}
 

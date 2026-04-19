@@ -25,6 +25,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url('/shows'), lastModified: new Date('2026-04-16'), changeFrequency: 'weekly', priority: 0.9 },
     { url: url('/rankings'), lastModified: new Date('2026-04-16'), changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/funniest-episodes'), lastModified: new Date('2026-04-16'), changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/rankings/worst-episodes'), lastModified: new Date('2026-04-19'), changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/best-jokes'), lastModified: new Date('2026-04-16'), changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/funniest-characters'), lastModified: new Date('2026-04-16'), changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/compare'), lastModified: new Date('2026-04-16'), changeFrequency: 'weekly', priority: 0.8 },

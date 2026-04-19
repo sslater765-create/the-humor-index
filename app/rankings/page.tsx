@@ -284,6 +284,27 @@ export default async function RankingsPage() {
             </p>
           </Link>
 
+          {/* Worst Episodes */}
+          <Link
+            href="/rankings/worst-episodes"
+            className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
+          >
+            <p className="text-xs uppercase tracking-widest text-rose-400 mb-1">The Other End</p>
+            <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
+              The Worst Episodes of All Time
+            </h2>
+            <div className="bg-brand-surface rounded-lg p-4">
+              <p className="text-sm text-brand-text-secondary leading-relaxed">
+                Every show has them. Pilots that haven&rsquo;t found the voice. Clip shows.
+                Episodes where the plot forgot to include jokes. The 50 lowest-scoring episodes
+                in our dataset &mdash; ranked.
+              </p>
+            </div>
+            <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
+              See the bottom 50 &rarr;
+            </p>
+          </Link>
+
           {/* Search */}
           <Link
             href="/search"
