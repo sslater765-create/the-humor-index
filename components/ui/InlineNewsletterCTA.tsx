@@ -32,7 +32,7 @@ export default function InlineNewsletterCTA() {
     return (
       <div className="my-10 bg-brand-gold/5 border border-brand-gold/20 rounded-xl p-6 text-center">
         <p className="text-base font-medium text-brand-gold">You&apos;re in.</p>
-        <p className="text-sm text-brand-text-secondary mt-1">First issue drops this Friday.</p>
+        <p className="text-sm text-brand-text-secondary mt-1">Next issue drops Friday.</p>
       </div>
     );
   }

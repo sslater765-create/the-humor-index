@@ -60,7 +60,7 @@ export default function StickyNewsletterBar() {
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-brand-card/95 backdrop-blur-md border-t border-brand-border shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
         {subscribed ? (
-          <p className="text-sm text-brand-gold flex-1">Subscribed! First issue drops Friday.</p>
+          <p className="text-sm text-brand-gold flex-1">Subscribed! Next issue drops Friday.</p>
         ) : (
           <>
             <p className="text-sm text-brand-text-secondary hidden sm:block whitespace-nowrap">

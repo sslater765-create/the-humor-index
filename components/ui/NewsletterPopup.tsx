@@ -98,7 +98,7 @@ export default function NewsletterPopup() {
         {subscribed ? (
           <div className="text-center py-4">
             <p className="text-lg font-medium text-brand-gold mb-1">You&apos;re in!</p>
-            <p className="text-sm text-brand-text-secondary">First issue drops this Friday.</p>
+            <p className="text-sm text-brand-text-secondary">Next issue drops Friday.</p>
           </div>
         ) : (
           <>
