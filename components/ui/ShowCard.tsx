@@ -4,6 +4,7 @@ import { ShowScore } from '@/lib/types';
 import { scoreToGrade, formatIndex } from '@/lib/scoring';
 import FormatBadge from './FormatBadge';
 import RankBadge from './RankBadge';
+import TierBadge from './TierBadge';
 
 interface Props {
   show: ShowScore;
@@ -42,6 +43,7 @@ export default function ShowCard({ show }: Props) {
           </h2>
           <p className="text-xs text-brand-text-muted mb-3 line-clamp-2">{show.description}</p>
           <div className="flex items-center gap-2 mb-4 flex-wrap">
+            <TierBadge score={show.humor_index} ciLow={show.ci_95_low} ciHigh={show.ci_95_high} size="sm" />
             <FormatBadge format={show.format} />
             {show.network && (
               <span className="text-xs text-brand-text-muted">{show.network}</span>

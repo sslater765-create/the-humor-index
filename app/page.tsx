@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { getAllShows, getEpisodes } from '@/lib/data';
 import LeaderboardClient from './LeaderboardClient';
-import HeroNewsletterCTA from '@/components/ui/HeroNewsletterCTA';
 import WhatsNewPersonalized from '@/components/ui/WhatsNewPersonalized';
 
 export const dynamic = 'force-static';
@@ -18,7 +17,6 @@ export default async function HomePage() {
     } catch { /* no episodes yet */ }
   }
   const totalJokes = shows.reduce((s, show) => s + show.total_jokes_analyzed, 0);
-  const totalSeasons = analyzedShows.reduce((s, show) => s + (show.humor_index > 0 ? show.total_seasons : 0), 0);
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -39,49 +37,37 @@ export default async function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      {/* Hero */}
+      {/* Hero — the leaderboard IS the hero */}
       <section className="border-b border-brand-border bg-brand-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-24">
-          <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mb-3 sm:mb-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-10 sm:pt-16 pb-8">
+          <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mb-3">
             Comedy Analytics
           </p>
-          <h1 className="text-2xl sm:text-5xl font-medium text-brand-text-primary max-w-2xl leading-tight text-balance">
-            The definitive science of what&apos;s funny.
+          <h1 className="text-2xl sm:text-4xl font-medium text-brand-text-primary max-w-3xl leading-tight text-balance mb-3">
+            The science of what&apos;s funny.
           </h1>
-          <p className="mt-3 sm:mt-4 text-brand-text-secondary text-sm sm:text-lg max-w-xl">
-            We analyzed{' '}
-            <span className="font-mono text-brand-gold">{totalEpisodesAnalyzed.toLocaleString()}</span>{' '}
-            episodes,{' '}
-            <span className="font-mono text-brand-gold">{totalJokes.toLocaleString()}</span>{' '}
-            jokes, and{' '}
-            <span className="font-mono text-brand-gold">{totalSeasons}</span>{' '}
-            seasons so you don&apos;t have to argue blindly.
-          </p>
-          <div className="mt-8 flex gap-3">
-            <Link
-              href="/shows"
-              className="bg-brand-gold text-black text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-brand-gold-dim transition-colors"
-            >
-              Explore all shows →
-            </Link>
-            <Link
-              href="/methodology"
-              className="border border-brand-text-muted text-brand-text-secondary text-sm px-5 py-2.5 rounded-lg hover:border-brand-text-secondary transition-colors"
-            >
+          <p className="text-brand-text-secondary text-sm sm:text-base max-w-xl mb-8">
+            <span className="font-mono text-brand-gold">{totalEpisodesAnalyzed.toLocaleString()}</span> episodes,{' '}
+            <span className="font-mono text-brand-gold">{totalJokes.toLocaleString()}</span> jokes, scored by AI.{' '}
+            <Link href="/methodology" className="text-brand-text-muted hover:text-brand-gold underline underline-offset-2 decoration-brand-border decoration-1">
               How we score
             </Link>
+            .
+          </p>
+          {/* Leaderboard moved into hero */}
+          <div className="bg-brand-card border border-brand-border rounded-xl p-4 sm:p-6">
+            <div className="flex items-baseline justify-between mb-5">
+              <div>
+                <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-gold mb-0.5">Rankings</p>
+                <h2 className="text-lg sm:text-xl font-medium text-brand-text-primary">Top Shows</h2>
+              </div>
+              <Link href="/shows" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors">
+                All shows →
+              </Link>
+            </div>
+            <LeaderboardClient shows={shows.filter(s => s.humor_index > 0)} />
           </div>
-          <HeroNewsletterCTA />
         </div>
-      </section>
-
-      {/* Leaderboard */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-6">
-        <div className="mb-6">
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Rankings</p>
-          <h2 className="text-xl font-medium text-brand-text-primary">Top Shows</h2>
-        </div>
-        <LeaderboardClient shows={shows.filter(s => s.humor_index > 0)} />
       </section>
 
       {/* Latest analysis callouts */}
@@ -117,27 +103,28 @@ export default async function HomePage() {
             Better jokes don&apos;t always mean a funnier show.
           </h3>
           <p className="text-sm text-brand-text-secondary leading-relaxed mb-4 max-w-2xl">
-            Seinfeld beats The Office on craft, impact, <em>and</em> joke density.
-            But The Office scores higher on our Humor Index. Why? Because the Humor Index
-            measures the full picture — consistency, peak density, and how often a show
-            reaches elite comedy without dropping below average. A show with fewer weak
-            episodes beats one with higher highs but more clunkers.
+            Seinfeld beats The Office on per-joke craft and on impact.
+            But The Office edges ahead on our Humor Index. Why? Because the Humor Index
+            rewards consistency and peak density — reaching elite comedy without dropping
+            below average. A show with fewer weak episodes beats one with higher highs
+            but more clunkers. The gap is small: the top three shows cluster within
+            1.5 points, well inside each other&apos;s 95% credible intervals.
           </p>
           <div className="flex flex-wrap gap-6 mb-5">
             <div>
               <p className="text-xs text-brand-text-muted mb-1">The Office</p>
-              <p className="font-mono text-2xl text-brand-gold">81.0</p>
-              <p className="text-[10px] text-brand-text-muted">12% episodes below 70</p>
+              <p className="font-mono text-2xl text-brand-gold">80.2</p>
+              <p className="text-[10px] text-brand-text-muted">Craft 6.91 · Impact 6.72</p>
             </div>
             <div>
               <p className="text-xs text-brand-text-muted mb-1">Seinfeld</p>
-              <p className="font-mono text-2xl text-brand-text-primary">77.9</p>
-              <p className="text-[10px] text-brand-text-muted">19% episodes below 70</p>
+              <p className="font-mono text-2xl text-brand-text-primary">79.1</p>
+              <p className="text-[10px] text-brand-text-muted">Craft 7.15 · Impact 6.44</p>
             </div>
             <div>
-              <p className="text-xs text-brand-text-muted mb-1">Seinfeld Avg Craft</p>
-              <p className="font-mono text-2xl text-blue-400">7.0</p>
-              <p className="text-[10px] text-brand-text-muted">vs The Office 6.9</p>
+              <p className="text-xs text-brand-text-muted mb-1">Craft Gap</p>
+              <p className="font-mono text-2xl text-blue-400">+0.24</p>
+              <p className="text-[10px] text-brand-text-muted">Seinfeld higher per joke</p>
             </div>
           </div>
           <Link href="/blog/seinfeld-vs-the-office" className="text-sm text-brand-gold hover:underline">

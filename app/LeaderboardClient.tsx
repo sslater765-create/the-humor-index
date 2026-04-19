@@ -7,6 +7,7 @@ import { scoreToColor, formatIndex } from '@/lib/scoring';
 import FormatBadge from '@/components/ui/FormatBadge';
 import RankBadge from '@/components/ui/RankBadge';
 import MetricBadge from '@/components/ui/MetricBadge';
+import TierBadge from '@/components/ui/TierBadge';
 
 type SortKey = 'humor_index' | 'avg_jpm' | 'avg_craft' | 'avg_impact';
 
@@ -79,8 +80,13 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
                 <td className="py-3 pr-4">
                   <FormatBadge format={show.format} />
                 </td>
-                <td className="py-3 pr-4 font-mono font-medium" style={{ color: scoreToColor(show.humor_index) }}>
-                  {formatIndex(show.humor_index)}
+                <td className="py-3 pr-4">
+                  <div className="flex items-center gap-2">
+                    <TierBadge score={show.humor_index} ciLow={show.ci_95_low} ciHigh={show.ci_95_high} />
+                    <span className="font-mono text-xs text-brand-text-muted" style={{ color: scoreToColor(show.humor_index) }}>
+                      {formatIndex(show.humor_index)}
+                    </span>
+                  </div>
                 </td>
                 <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_imdb_rating?.toFixed(1) ?? '—'}</td>
                 <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_jpm.toFixed(1)}</td>
@@ -108,9 +114,12 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
                     <RankBadge rank={i + 1} />
                     <span className="font-medium text-brand-text-primary">{show.name}</span>
                   </div>
-                  <span className="font-mono font-medium" style={{ color: scoreToColor(show.humor_index) }}>
-                    {formatIndex(show.humor_index)}
-                  </span>
+                  <div className="flex flex-col items-end gap-0.5">
+                    <TierBadge score={show.humor_index} ciLow={show.ci_95_low} ciHigh={show.ci_95_high} size="sm" />
+                    <span className="font-mono text-[10px] text-brand-text-muted" style={{ color: scoreToColor(show.humor_index) }}>
+                      {formatIndex(show.humor_index)}
+                    </span>
+                  </div>
                 </div>
                 <div className="flex gap-3 text-xs text-brand-text-muted flex-wrap">
                   {show.avg_imdb_rating && (
