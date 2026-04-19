@@ -1,97 +1,114 @@
 [
   {
     "name": "Chandler",
-    "total_jokes": 2962,
+    "total_jokes": 2943,
+    "effective_jokes": 2943.0,
+    "standup_jokes": 0,
     "avg_craft": 6.85,
-    "avg_impact": 6.69,
-    "episodes_appeared": 234,
+    "avg_impact": 6.7,
+    "episodes_appeared": 232,
     "dominant_types": [
       "character_comedy",
       "escalation",
       "setup_punchline"
     ],
-    "war": 637.0,
+    "war": 646.1,
+    "war_per_episode": 2.785,
+    "quality_index": 6.77,
     "actor": "Matthew Perry",
     "profile_path": "/ecDzkLWPV1z0x31I1GTjNmLxAHk.jpg",
     "character_full_name": "Chandler Bing",
-    "war_per_episode": 2.722,
-    "quality_index": 6.77
+    "war_v1": 646.1
   },
   {
     "name": "Phoebe",
-    "total_jokes": 2036,
-    "avg_craft": 6.96,
+    "total_jokes": 2020,
+    "effective_jokes": 2020.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.95,
     "avg_impact": 6.77,
-    "episodes_appeared": 234,
+    "episodes_appeared": 232,
     "dominant_types": [
       "character_comedy",
       "escalation",
       "absurdist"
     ],
-    "war": 628.5,
+    "war": 619.0,
+    "war_per_episode": 2.668,
+    "quality_index": 6.86,
     "actor": "Lisa Kudrow",
     "profile_path": "/ziatnwJRiBJIcc8jlk6xoClhfOy.jpg",
     "character_full_name": "Phoebe Buffay",
-    "war_per_episode": 2.686,
-    "quality_index": 6.86
+    "war_v1": 619.0
   },
   {
     "name": "Joey",
-    "total_jokes": 2655,
+    "total_jokes": 2639,
+    "effective_jokes": 2639.0,
+    "standup_jokes": 0,
     "avg_craft": 6.83,
     "avg_impact": 6.68,
-    "episodes_appeared": 234,
+    "episodes_appeared": 232,
     "dominant_types": [
       "character_comedy",
       "escalation",
       "absurdist"
     ],
-    "war": 531.6,
+    "war": 521.9,
+    "war_per_episode": 2.25,
+    "quality_index": 6.75,
     "actor": "Matt LeBlanc",
     "profile_path": "/a7Fl1sLUq1UDJ4pHsnwpBdEiDEZ.jpg",
     "character_full_name": "Joey Tribbiani",
-    "war_per_episode": 2.272,
-    "quality_index": 6.76
+    "war_v1": 521.9
   },
   {
     "name": "Ross",
-    "total_jokes": 2388,
+    "total_jokes": 2364,
+    "effective_jokes": 2364.0,
+    "standup_jokes": 0,
     "avg_craft": 6.72,
     "avg_impact": 6.58,
-    "episodes_appeared": 234,
+    "episodes_appeared": 232,
     "dominant_types": [
       "character_comedy",
       "escalation",
       "cringe_discomfort"
     ],
-    "war": 230.6,
+    "war": 233.6,
+    "war_per_episode": 1.007,
+    "quality_index": 6.65,
     "actor": "David Schwimmer",
     "profile_path": "/XtKzJ9lM5Xwa7vCmE4xNHy6Owf.jpg",
     "character_full_name": "Ross Geller",
-    "war_per_episode": 0.985,
-    "quality_index": 6.65
+    "war_v1": 233.6
   },
   {
     "name": "Monica",
-    "total_jokes": 2548,
+    "total_jokes": 2533,
+    "effective_jokes": 2533.0,
+    "standup_jokes": 0,
     "avg_craft": 6.7,
     "avg_impact": 6.53,
-    "episodes_appeared": 235,
+    "episodes_appeared": 233,
     "dominant_types": [
       "character_comedy",
       "escalation",
       "setup_punchline"
     ],
-    "war": 157.6,
+    "war": 158.0,
+    "war_per_episode": 0.678,
+    "quality_index": 6.62,
     "actor": "Courteney Cox",
     "profile_path": "/cSOORhCRPJiwKghozXVXrOBi3Tp.jpg",
     "character_full_name": "Monica Geller",
-    "war_per_episode": 0.671,
-    "quality_index": 6.62
+    "war_v1": 158.0
   },
   {
     "name": "David",
     "total_jokes": 37,
+    "effective_jokes": 37.0,
+    "standup_jokes": 0,
     "avg_craft": 7.1,
     "avg_impact": 6.95,
     "episodes_appeared": 6,
@@ -101,12 +118,15 @@
       "escalation"
     ],
     "war": 13.2,
-    "war_per_episode": 2.208,
-    "quality_index": 6.91
+    "war_per_episode": 2.193,
+    "quality_index": 6.91,
+    "war_v1": 13.2
   },
   {
     "name": "Amy",
     "total_jokes": 49,
+    "effective_jokes": 49.0,
+    "standup_jokes": 0,
     "avg_craft": 7.1,
     "avg_impact": 6.6,
     "episodes_appeared": 2,
@@ -116,12 +136,15 @@
       "escalation"
     ],
     "war": 13.1,
-    "war_per_episode": 6.53,
-    "quality_index": 6.82
+    "war_per_episode": 6.562,
+    "quality_index": 6.82,
+    "war_v1": 13.1
   },
   {
     "name": "Jack",
     "total_jokes": 41,
+    "effective_jokes": 41.0,
+    "standup_jokes": 0,
     "avg_craft": 6.86,
     "avg_impact": 6.82,
     "episodes_appeared": 9,
@@ -130,28 +153,16 @@
       "escalation",
       "cringe_discomfort"
     ],
-    "war": 10.6,
-    "war_per_episode": 1.173,
-    "quality_index": 6.81
-  },
-  {
-    "name": "Frank Jr",
-    "total_jokes": 39,
-    "avg_craft": 6.87,
-    "avg_impact": 6.82,
-    "episodes_appeared": 5,
-    "dominant_types": [
-      "character_comedy",
-      "cringe_discomfort",
-      "absurdist"
-    ],
-    "war": 10.1,
-    "war_per_episode": 2.025,
-    "quality_index": 6.81
+    "war": 10.5,
+    "war_per_episode": 1.169,
+    "quality_index": 6.81,
+    "war_v1": 10.5
   },
   {
     "name": "Gunther",
     "total_jokes": 49,
+    "effective_jokes": 49.0,
+    "standup_jokes": 0,
     "avg_craft": 6.85,
     "avg_impact": 6.62,
     "episodes_appeared": 31,
@@ -160,13 +171,16 @@
       "deadpan_understatement",
       "cringe_discomfort"
     ],
-    "war": 9.6,
-    "war_per_episode": 0.309,
-    "quality_index": 6.75
+    "war": 9.5,
+    "war_per_episode": 0.308,
+    "quality_index": 6.75,
+    "war_v1": 9.5
   },
   {
     "name": "Mike",
     "total_jokes": 96,
+    "effective_jokes": 96.0,
+    "standup_jokes": 0,
     "avg_craft": 6.71,
     "avg_impact": 6.49,
     "episodes_appeared": 18,
@@ -176,15 +190,18 @@
       "escalation"
     ],
     "war": 8.3,
+    "war_per_episode": 0.46,
+    "quality_index": 6.64,
     "actor": "Paul Rudd",
     "profile_path": "/6jtwNOLKy0LdsRAKwZqgYMAfd5n.jpg",
     "character_full_name": "Mike Hannigan",
-    "war_per_episode": 0.462,
-    "quality_index": 6.64
+    "war_v1": 8.3
   },
   {
     "name": "Ben",
     "total_jokes": 24,
+    "effective_jokes": 24.0,
+    "standup_jokes": 0,
     "avg_craft": 6.96,
     "avg_impact": 7.15,
     "episodes_appeared": 7,
@@ -193,13 +210,16 @@
       "absurdist",
       "physical_slapstick"
     ],
-    "war": 8.3,
-    "war_per_episode": 1.181,
-    "quality_index": 6.9
+    "war": 8.2,
+    "war_per_episode": 1.175,
+    "quality_index": 6.9,
+    "war_v1": 8.2
   },
   {
     "name": "Will",
     "total_jokes": 18,
+    "effective_jokes": 18.0,
+    "standup_jokes": 0,
     "avg_craft": 7.3,
     "avg_impact": 7.36,
     "episodes_appeared": 1,
@@ -209,12 +229,15 @@
       "absurdist"
     ],
     "war": 7.7,
-    "war_per_episode": 7.706,
-    "quality_index": 6.98
+    "war_per_episode": 7.71,
+    "quality_index": 6.98,
+    "war_v1": 7.7
   },
   {
     "name": "Eddie",
     "total_jokes": 27,
+    "effective_jokes": 27.0,
+    "standup_jokes": 0,
     "avg_craft": 6.89,
     "avg_impact": 6.7,
     "episodes_appeared": 3,
@@ -224,12 +247,51 @@
       "escalation"
     ],
     "war": 6.2,
-    "war_per_episode": 2.065,
-    "quality_index": 6.78
+    "war_per_episode": 2.076,
+    "quality_index": 6.79,
+    "war_v1": 6.2
+  },
+  {
+    "name": "Frank Jr.",
+    "total_jokes": 17,
+    "effective_jokes": 17.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.28,
+    "avg_impact": 7.06,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "character_comedy",
+      "dark_subversive",
+      "escalation"
+    ],
+    "war": 6.2,
+    "war_per_episode": 2.051,
+    "quality_index": 6.92,
+    "war_v1": 6.2
+  },
+  {
+    "name": "RACHEL",
+    "total_jokes": 23,
+    "effective_jokes": 23.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.83,
+    "avg_impact": 6.93,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "observational",
+      "cringe_discomfort"
+    ],
+    "war": 6.1,
+    "war_per_episode": 3.062,
+    "quality_index": 6.82,
+    "war_v1": 6.1
   },
   {
     "name": "Benjamin",
     "total_jokes": 13,
+    "effective_jokes": 13.0,
+    "standup_jokes": 0,
     "avg_craft": 7.6,
     "avg_impact": 7.62,
     "episodes_appeared": 1,
@@ -239,12 +301,15 @@
       "cringe_discomfort"
     ],
     "war": 6.1,
-    "war_per_episode": 6.142,
-    "quality_index": 7.03
+    "war_per_episode": 6.125,
+    "quality_index": 7.03,
+    "war_v1": 6.1
   },
   {
     "name": "Ursula",
     "total_jokes": 20,
+    "effective_jokes": 20.0,
+    "standup_jokes": 0,
     "avg_craft": 7.05,
     "avg_impact": 6.88,
     "episodes_appeared": 6,
@@ -254,12 +319,15 @@
       "deadpan_understatement"
     ],
     "war": 5.9,
-    "war_per_episode": 0.987,
-    "quality_index": 6.85
+    "war_per_episode": 0.982,
+    "quality_index": 6.85,
+    "war_v1": 5.9
   },
   {
     "name": "Sandra Green",
     "total_jokes": 14,
+    "effective_jokes": 14.0,
+    "standup_jokes": 0,
     "avg_craft": 7.28,
     "avg_impact": 7.46,
     "episodes_appeared": 1,
@@ -269,12 +337,15 @@
       "deadpan_understatement"
     ],
     "war": 5.7,
-    "war_per_episode": 5.73,
-    "quality_index": 6.96
+    "war_per_episode": 5.746,
+    "quality_index": 6.97,
+    "war_v1": 5.7
   },
   {
     "name": "Carol",
     "total_jokes": 37,
+    "effective_jokes": 37.0,
+    "standup_jokes": 0,
     "avg_craft": 6.65,
     "avg_impact": 6.62,
     "episodes_appeared": 16,
@@ -284,12 +355,15 @@
       "character_comedy"
     ],
     "war": 5.3,
-    "war_per_episode": 0.33,
-    "quality_index": 6.7
+    "war_per_episode": 0.331,
+    "quality_index": 6.7,
+    "war_v1": 5.3
   },
   {
     "name": "Steve",
     "total_jokes": 20,
+    "effective_jokes": 20.0,
+    "standup_jokes": 0,
     "avg_craft": 6.93,
     "avg_impact": 6.85,
     "episodes_appeared": 4,
@@ -299,12 +373,15 @@
       "character_comedy"
     ],
     "war": 5.3,
-    "war_per_episode": 1.33,
-    "quality_index": 6.82
+    "war_per_episode": 1.327,
+    "quality_index": 6.82,
+    "war_v1": 5.3
   },
   {
     "name": "Jill",
     "total_jokes": 17,
+    "effective_jokes": 17.0,
+    "standup_jokes": 0,
     "avg_craft": 6.99,
     "avg_impact": 7.0,
     "episodes_appeared": 3,
@@ -314,12 +391,15 @@
       "cringe_discomfort"
     ],
     "war": 5.1,
-    "war_per_episode": 1.698,
-    "quality_index": 6.85
+    "war_per_episode": 1.693,
+    "quality_index": 6.85,
+    "war_v1": 5.1
   },
   {
     "name": "Ethan",
     "total_jokes": 15,
+    "effective_jokes": 15.0,
+    "standup_jokes": 0,
     "avg_craft": 7.14,
     "avg_impact": 7.13,
     "episodes_appeared": 2,
@@ -329,12 +409,15 @@
       "character_comedy"
     ],
     "war": 5.1,
-    "war_per_episode": 2.55,
-    "quality_index": 6.89
+    "war_per_episode": 2.551,
+    "quality_index": 6.9,
+    "war_v1": 5.1
   },
   {
     "name": "Erica",
     "total_jokes": 24,
+    "effective_jokes": 24.0,
+    "standup_jokes": 0,
     "avg_craft": 6.87,
     "avg_impact": 6.62,
     "episodes_appeared": 5,
@@ -344,12 +427,15 @@
       "deadpan_understatement"
     ],
     "war": 5.0,
-    "war_per_episode": 0.992,
-    "quality_index": 6.76
+    "war_per_episode": 1.0,
+    "quality_index": 6.76,
+    "war_v1": 5.0
   },
   {
     "name": "Mr. Heckles",
     "total_jokes": 12,
+    "effective_jokes": 12.0,
+    "standup_jokes": 0,
     "avg_craft": 7.49,
     "avg_impact": 7.33,
     "episodes_appeared": 5,
@@ -360,11 +446,14 @@
     ],
     "war": 4.8,
     "war_per_episode": 0.963,
-    "quality_index": 6.96
+    "quality_index": 6.96,
+    "war_v1": 4.8
   },
   {
     "name": "Jack Geller",
     "total_jokes": 19,
+    "effective_jokes": 19.0,
+    "standup_jokes": 0,
     "avg_craft": 6.87,
     "avg_impact": 6.82,
     "episodes_appeared": 6,
@@ -374,12 +463,15 @@
       "escalation"
     ],
     "war": 4.7,
-    "war_per_episode": 0.783,
-    "quality_index": 6.8
+    "war_per_episode": 0.778,
+    "quality_index": 6.8,
+    "war_v1": 4.7
   },
   {
     "name": "Pete",
     "total_jokes": 17,
+    "effective_jokes": 17.0,
+    "standup_jokes": 0,
     "avg_craft": 6.97,
     "avg_impact": 6.88,
     "episodes_appeared": 6,
@@ -389,12 +481,33 @@
       "deadpan_understatement"
     ],
     "war": 4.7,
-    "war_per_episode": 0.777,
-    "quality_index": 6.83
+    "war_per_episode": 0.78,
+    "quality_index": 6.83,
+    "war_v1": 4.7
+  },
+  {
+    "name": "JOEY",
+    "total_jokes": 16,
+    "effective_jokes": 16.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.99,
+    "avg_impact": 6.88,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "absurdist"
+    ],
+    "war": 4.4,
+    "war_per_episode": 2.199,
+    "quality_index": 6.83,
+    "war_v1": 4.4
   },
   {
     "name": "Frank",
     "total_jokes": 26,
+    "effective_jokes": 26.0,
+    "standup_jokes": 0,
     "avg_craft": 6.87,
     "avg_impact": 6.46,
     "episodes_appeared": 4,
@@ -404,12 +517,15 @@
       "deadpan_understatement"
     ],
     "war": 4.4,
-    "war_per_episode": 1.098,
-    "quality_index": 6.72
+    "war_per_episode": 1.099,
+    "quality_index": 6.72,
+    "war_v1": 4.4
   },
   {
     "name": "Helena",
     "total_jokes": 11,
+    "effective_jokes": 11.0,
+    "standup_jokes": 0,
     "avg_craft": 7.33,
     "avg_impact": 7.5,
     "episodes_appeared": 1,
@@ -419,12 +535,51 @@
       "observational"
     ],
     "war": 4.3,
-    "war_per_episode": 4.309,
-    "quality_index": 6.95
+    "war_per_episode": 4.302,
+    "quality_index": 6.95,
+    "war_v1": 4.3
+  },
+  {
+    "name": "PHOEBE",
+    "total_jokes": 16,
+    "effective_jokes": 16.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.99,
+    "avg_impact": 6.81,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "setup_punchline"
+    ],
+    "war": 4.2,
+    "war_per_episode": 2.108,
+    "quality_index": 6.82,
+    "war_v1": 4.2
+  },
+  {
+    "name": "ROSS",
+    "total_jokes": 24,
+    "effective_jokes": 24.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.73,
+    "avg_impact": 6.58,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "observational",
+      "cringe_discomfort"
+    ],
+    "war": 4.0,
+    "war_per_episode": 2.001,
+    "quality_index": 6.72,
+    "war_v1": 4.0
   },
   {
     "name": "Character",
     "total_jokes": 36,
+    "effective_jokes": 36.0,
+    "standup_jokes": 0,
     "avg_craft": 6.44,
     "avg_impact": 6.71,
     "episodes_appeared": 2,
@@ -434,12 +589,15 @@
       "escalation"
     ],
     "war": 4.0,
-    "war_per_episode": 1.996,
-    "quality_index": 6.67
+    "war_per_episode": 1.99,
+    "quality_index": 6.67,
+    "war_v1": 4.0
   },
   {
     "name": "Paul Stevens",
     "total_jokes": 12,
+    "effective_jokes": 12.0,
+    "standup_jokes": 0,
     "avg_craft": 7.18,
     "avg_impact": 7.08,
     "episodes_appeared": 1,
@@ -449,27 +607,15 @@
       "character_comedy"
     ],
     "war": 3.9,
-    "war_per_episode": 3.857,
-    "quality_index": 6.88
-  },
-  {
-    "name": "Elizabeth",
-    "total_jokes": 22,
-    "avg_craft": 6.54,
-    "avg_impact": 6.7,
-    "episodes_appeared": 6,
-    "dominant_types": [
-      "cringe_discomfort",
-      "character_comedy",
-      "escalation"
-    ],
-    "war": 3.4,
-    "war_per_episode": 0.566,
-    "quality_index": 6.71
+    "war_per_episode": 3.866,
+    "quality_index": 6.88,
+    "war_v1": 3.9
   },
   {
     "name": "Judy Geller",
     "total_jokes": 10,
+    "effective_jokes": 10.0,
+    "standup_jokes": 0,
     "avg_craft": 7.22,
     "avg_impact": 7.3,
     "episodes_appeared": 4,
@@ -479,12 +625,69 @@
       "cringe_discomfort"
     ],
     "war": 3.4,
-    "war_per_episode": 0.853,
-    "quality_index": 6.9
+    "war_per_episode": 0.854,
+    "quality_index": 6.9,
+    "war_v1": 3.4
+  },
+  {
+    "name": "Elizabeth",
+    "total_jokes": 22,
+    "effective_jokes": 22.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.54,
+    "avg_impact": 6.7,
+    "episodes_appeared": 6,
+    "dominant_types": [
+      "cringe_discomfort",
+      "character_comedy",
+      "escalation"
+    ],
+    "war": 3.4,
+    "war_per_episode": 0.567,
+    "quality_index": 6.71,
+    "war_v1": 3.4
+  },
+  {
+    "name": "Earl",
+    "total_jokes": 9,
+    "effective_jokes": 9.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.53,
+    "avg_impact": 7.33,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "escalation",
+      "dark_subversive",
+      "character_comedy"
+    ],
+    "war": 3.3,
+    "war_per_episode": 3.342,
+    "quality_index": 6.93,
+    "war_v1": 3.3
+  },
+  {
+    "name": "Frank Jr",
+    "total_jokes": 22,
+    "effective_jokes": 22.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.56,
+    "avg_impact": 6.64,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "absurdist"
+    ],
+    "war": 3.2,
+    "war_per_episode": 1.592,
+    "quality_index": 6.7,
+    "war_v1": 3.2
   },
   {
     "name": "Gavin",
     "total_jokes": 14,
+    "effective_jokes": 14.0,
+    "standup_jokes": 0,
     "avg_craft": 6.86,
     "avg_impact": 6.71,
     "episodes_appeared": 3,
@@ -495,26 +698,14 @@
     ],
     "war": 3.1,
     "war_per_episode": 1.042,
-    "quality_index": 6.78
-  },
-  {
-    "name": "Dr. Green",
-    "total_jokes": 19,
-    "avg_craft": 6.65,
-    "avg_impact": 6.58,
-    "episodes_appeared": 3,
-    "dominant_types": [
-      "character_comedy",
-      "escalation",
-      "observational"
-    ],
-    "war": 3.0,
-    "war_per_episode": 1.0,
-    "quality_index": 6.71
+    "quality_index": 6.78,
+    "war_v1": 3.1
   },
   {
     "name": "Susie",
     "total_jokes": 11,
+    "effective_jokes": 11.0,
+    "standup_jokes": 0,
     "avg_craft": 6.92,
     "avg_impact": 7.0,
     "episodes_appeared": 2,
@@ -524,12 +715,33 @@
       "escalation"
     ],
     "war": 3.0,
-    "war_per_episode": 1.483,
-    "quality_index": 6.82
+    "war_per_episode": 1.485,
+    "quality_index": 6.82,
+    "war_v1": 3.0
+  },
+  {
+    "name": "Dr. Green",
+    "total_jokes": 19,
+    "effective_jokes": 19.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.65,
+    "avg_impact": 6.58,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "character_comedy",
+      "escalation",
+      "observational"
+    ],
+    "war": 3.0,
+    "war_per_episode": 0.999,
+    "quality_index": 6.71,
+    "war_v1": 3.0
   },
   {
     "name": "Gene",
     "total_jokes": 10,
+    "effective_jokes": 10.0,
+    "standup_jokes": 0,
     "avg_craft": 7.02,
     "avg_impact": 7.2,
     "episodes_appeared": 1,
@@ -540,11 +752,14 @@
     ],
     "war": 3.0,
     "war_per_episode": 3.038,
-    "quality_index": 6.86
+    "quality_index": 6.86,
+    "war_v1": 3.0
   },
   {
     "name": "Kathy",
     "total_jokes": 15,
+    "effective_jokes": 15.0,
+    "standup_jokes": 0,
     "avg_craft": 6.7,
     "avg_impact": 6.7,
     "episodes_appeared": 5,
@@ -555,11 +770,32 @@
     ],
     "war": 2.9,
     "war_per_episode": 0.585,
-    "quality_index": 6.75
+    "quality_index": 6.75,
+    "war_v1": 2.9
+  },
+  {
+    "name": "Leonard",
+    "total_jokes": 7,
+    "effective_jokes": 7.0,
+    "standup_jokes": 0,
+    "avg_craft": 8.03,
+    "avg_impact": 7.64,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "escalation",
+      "character_comedy",
+      "irony_sarcasm"
+    ],
+    "war": 2.9,
+    "war_per_episode": 2.944,
+    "quality_index": 6.98,
+    "war_v1": 2.9
   },
   {
     "name": "Susan",
     "total_jokes": 22,
+    "effective_jokes": 22.0,
+    "standup_jokes": 0,
     "avg_craft": 6.52,
     "avg_impact": 6.59,
     "episodes_appeared": 9,
@@ -569,12 +805,15 @@
       "setup_punchline"
     ],
     "war": 2.8,
-    "war_per_episode": 0.31,
-    "quality_index": 6.68
+    "war_per_episode": 0.313,
+    "quality_index": 6.68,
+    "war_v1": 2.8
   },
   {
     "name": "Eric",
     "total_jokes": 15,
+    "effective_jokes": 15.0,
+    "standup_jokes": 0,
     "avg_craft": 6.7,
     "avg_impact": 6.63,
     "episodes_appeared": 3,
@@ -584,12 +823,15 @@
       "cringe_discomfort"
     ],
     "war": 2.8,
-    "war_per_episode": 0.917,
-    "quality_index": 6.74
+    "war_per_episode": 0.923,
+    "quality_index": 6.74,
+    "war_v1": 2.8
   },
   {
     "name": "Danny",
     "total_jokes": 12,
+    "effective_jokes": 12.0,
+    "standup_jokes": 0,
     "avg_craft": 6.82,
     "avg_impact": 6.83,
     "episodes_appeared": 3,
@@ -599,27 +841,15 @@
       "escalation"
     ],
     "war": 2.8,
-    "war_per_episode": 0.937,
-    "quality_index": 6.79
-  },
-  {
-    "name": "Tag",
-    "total_jokes": 24,
-    "avg_craft": 6.49,
-    "avg_impact": 6.58,
-    "episodes_appeared": 8,
-    "dominant_types": [
-      "character_comedy",
-      "misdirection",
-      "cringe_discomfort"
-    ],
-    "war": 2.7,
-    "war_per_episode": 0.34,
-    "quality_index": 6.67
+    "war_per_episode": 0.94,
+    "quality_index": 6.79,
+    "war_v1": 2.8
   },
   {
     "name": "Sandra",
     "total_jokes": 10,
+    "effective_jokes": 10.0,
+    "standup_jokes": 0,
     "avg_craft": 6.98,
     "avg_impact": 6.95,
     "episodes_appeared": 1,
@@ -630,11 +860,32 @@
     ],
     "war": 2.7,
     "war_per_episode": 2.675,
-    "quality_index": 6.82
+    "quality_index": 6.82,
+    "war_v1": 2.7
+  },
+  {
+    "name": "Tag",
+    "total_jokes": 24,
+    "effective_jokes": 24.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.49,
+    "avg_impact": 6.58,
+    "episodes_appeared": 8,
+    "dominant_types": [
+      "character_comedy",
+      "misdirection",
+      "cringe_discomfort"
+    ],
+    "war": 2.7,
+    "war_per_episode": 0.339,
+    "quality_index": 6.67,
+    "war_v1": 2.7
   },
   {
     "name": "Joshua",
     "total_jokes": 25,
+    "effective_jokes": 25.0,
+    "standup_jokes": 0,
     "avg_craft": 6.6,
     "avg_impact": 6.44,
     "episodes_appeared": 5,
@@ -644,12 +895,33 @@
       "misdirection"
     ],
     "war": 2.6,
-    "war_per_episode": 0.52,
-    "quality_index": 6.66
+    "war_per_episode": 0.519,
+    "quality_index": 6.66,
+    "war_v1": 2.6
+  },
+  {
+    "name": "Mr. Rastatter",
+    "total_jokes": 8,
+    "effective_jokes": 8.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.03,
+    "avg_impact": 7.38,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "absurdist",
+      "wordplay_pun",
+      "deadpan_understatement"
+    ],
+    "war": 2.5,
+    "war_per_episode": 2.481,
+    "quality_index": 6.87,
+    "war_v1": 2.5
   },
   {
     "name": "Janine",
     "total_jokes": 18,
+    "effective_jokes": 18.0,
+    "standup_jokes": 0,
     "avg_craft": 6.57,
     "avg_impact": 6.56,
     "episodes_appeared": 5,
@@ -659,12 +931,67 @@
       "escalation"
     ],
     "war": 2.5,
-    "war_per_episode": 0.508,
-    "quality_index": 6.7
+    "war_per_episode": 0.503,
+    "quality_index": 6.69,
+    "war_v1": 2.5
+  },
+  {
+    "name": "Chip",
+    "total_jokes": 7,
+    "effective_jokes": 7.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.47,
+    "avg_impact": 7.43,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy"
+    ],
+    "war": 2.4,
+    "war_per_episode": 2.433,
+    "quality_index": 6.9,
+    "war_v1": 2.4
+  },
+  {
+    "name": "Mackenzie",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.89,
+    "avg_impact": 7.75,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy",
+      "escalation",
+      "observational"
+    ],
+    "war": 2.4,
+    "war_per_episode": 2.363,
+    "quality_index": 6.95,
+    "war_v1": 2.4
+  },
+  {
+    "name": "MONICA",
+    "total_jokes": 15,
+    "effective_jokes": 15.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.55,
+    "avg_impact": 6.6,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "dark_subversive",
+      "reaction_beat"
+    ],
+    "war": 2.3,
+    "war_per_episode": 1.146,
+    "quality_index": 6.71,
+    "war_v1": 2.3
   },
   {
     "name": "Julie",
     "total_jokes": 12,
+    "effective_jokes": 12.0,
+    "standup_jokes": 0,
     "avg_craft": 6.73,
     "avg_impact": 6.62,
     "episodes_appeared": 6,
@@ -674,12 +1001,33 @@
       "setup_punchline"
     ],
     "war": 2.3,
-    "war_per_episode": 0.383,
-    "quality_index": 6.75
+    "war_per_episode": 0.384,
+    "quality_index": 6.75,
+    "war_v1": 2.3
+  },
+  {
+    "name": "Woman",
+    "total_jokes": 15,
+    "effective_jokes": 15.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.55,
+    "avg_impact": 6.6,
+    "episodes_appeared": 9,
+    "dominant_types": [
+      "character_comedy",
+      "physical_slapstick",
+      "setup_punchline"
+    ],
+    "war": 2.3,
+    "war_per_episode": 0.256,
+    "quality_index": 6.71,
+    "war_v1": 2.3
   },
   {
     "name": "Mindy",
     "total_jokes": 10,
+    "effective_jokes": 10.0,
+    "standup_jokes": 0,
     "avg_craft": 6.61,
     "avg_impact": 6.9,
     "episodes_appeared": 2,
@@ -689,12 +1037,33 @@
       "setup_punchline"
     ],
     "war": 2.2,
-    "war_per_episode": 1.075,
-    "quality_index": 6.77
+    "war_per_episode": 1.078,
+    "quality_index": 6.77,
+    "war_v1": 2.2
+  },
+  {
+    "name": "Duncan",
+    "total_jokes": 7,
+    "effective_jokes": 7.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.31,
+    "avg_impact": 7.21,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "irony_sarcasm",
+      "setup_punchline",
+      "escalation"
+    ],
+    "war": 2.2,
+    "war_per_episode": 2.186,
+    "quality_index": 6.87,
+    "war_v1": 2.2
   },
   {
     "name": "Cecilia",
     "total_jokes": 10,
+    "effective_jokes": 10.0,
+    "standup_jokes": 0,
     "avg_craft": 7.08,
     "avg_impact": 6.45,
     "episodes_appeared": 1,
@@ -704,12 +1073,15 @@
       "dark_subversive"
     ],
     "war": 2.2,
-    "war_per_episode": 2.175,
-    "quality_index": 6.77
+    "war_per_episode": 2.174,
+    "quality_index": 6.77,
+    "war_v1": 2.2
   },
   {
     "name": "Officer Goodbody",
     "total_jokes": 10,
+    "effective_jokes": 10.0,
+    "standup_jokes": 0,
     "avg_craft": 6.65,
     "avg_impact": 6.9,
     "episodes_appeared": 1,
@@ -720,11 +1092,68 @@
     ],
     "war": 2.2,
     "war_per_episode": 2.2,
-    "quality_index": 6.78
+    "quality_index": 6.78,
+    "war_v1": 2.2
+  },
+  {
+    "name": "All",
+    "total_jokes": 16,
+    "effective_jokes": 16.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.47,
+    "avg_impact": 6.56,
+    "episodes_appeared": 9,
+    "dominant_types": [
+      "reaction_beat",
+      "escalation",
+      "character_comedy"
+    ],
+    "war": 2.1,
+    "war_per_episode": 0.231,
+    "quality_index": 6.69,
+    "war_v1": 2.1
+  },
+  {
+    "name": "Director",
+    "total_jokes": 13,
+    "effective_jokes": 13.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.65,
+    "avg_impact": 6.5,
+    "episodes_appeared": 6,
+    "dominant_types": [
+      "escalation",
+      "cringe_discomfort",
+      "character_comedy"
+    ],
+    "war": 2.1,
+    "war_per_episode": 0.347,
+    "quality_index": 6.71,
+    "war_v1": 2.1
+  },
+  {
+    "name": "Luisa",
+    "total_jokes": 8,
+    "effective_jokes": 8.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.95,
+    "avg_impact": 6.88,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "dark_subversive",
+      "cringe_discomfort"
+    ],
+    "war": 2.0,
+    "war_per_episode": 0.994,
+    "quality_index": 6.8,
+    "war_v1": 2.0
   },
   {
     "name": "Charlie",
     "total_jokes": 43,
+    "effective_jokes": 43.0,
+    "standup_jokes": 0,
     "avg_craft": 6.51,
     "avg_impact": 6.45,
     "episodes_appeared": 11,
@@ -734,12 +1163,33 @@
       "setup_punchline"
     ],
     "war": 2.0,
-    "war_per_episode": 0.181,
-    "quality_index": 6.6
+    "war_per_episode": 0.183,
+    "quality_index": 6.6,
+    "war_v1": 2.0
+  },
+  {
+    "name": "Bully",
+    "total_jokes": 8,
+    "effective_jokes": 8.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.74,
+    "avg_impact": 6.94,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "deadpan_understatement",
+      "setup_punchline",
+      "cringe_discomfort"
+    ],
+    "war": 1.9,
+    "war_per_episode": 1.864,
+    "quality_index": 6.79,
+    "war_v1": 1.9
   },
   {
     "name": "Mona",
     "total_jokes": 11,
+    "effective_jokes": 11.0,
+    "standup_jokes": 0,
     "avg_craft": 6.54,
     "avg_impact": 6.64,
     "episodes_appeared": 4,
@@ -749,27 +1199,33 @@
       "observational"
     ],
     "war": 1.9,
-    "war_per_episode": 0.469,
-    "quality_index": 6.73
+    "war_per_episode": 0.468,
+    "quality_index": 6.73,
+    "war_v1": 1.9
   },
   {
-    "name": "Doug",
-    "total_jokes": 19,
-    "avg_craft": 6.67,
-    "avg_impact": 6.24,
-    "episodes_appeared": 3,
+    "name": "Nora",
+    "total_jokes": 7,
+    "effective_jokes": 7.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.95,
+    "avg_impact": 7.0,
+    "episodes_appeared": 2,
     "dominant_types": [
-      "setup_punchline",
       "character_comedy",
-      "dark_subversive"
+      "escalation",
+      "wordplay_pun"
     ],
     "war": 1.8,
-    "war_per_episode": 0.607,
-    "quality_index": 6.65
+    "war_per_episode": 0.901,
+    "quality_index": 6.81,
+    "war_v1": 1.8
   },
   {
     "name": "Kate",
     "total_jokes": 13,
+    "effective_jokes": 13.0,
+    "standup_jokes": 0,
     "avg_craft": 6.54,
     "avg_impact": 6.46,
     "episodes_appeared": 3,
@@ -780,11 +1236,32 @@
     ],
     "war": 1.8,
     "war_per_episode": 0.593,
-    "quality_index": 6.69
+    "quality_index": 6.69,
+    "war_v1": 1.8
+  },
+  {
+    "name": "Doug",
+    "total_jokes": 19,
+    "effective_jokes": 19.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.67,
+    "avg_impact": 6.24,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "setup_punchline",
+      "character_comedy",
+      "dark_subversive"
+    ],
+    "war": 1.8,
+    "war_per_episode": 0.602,
+    "quality_index": 6.65,
+    "war_v1": 1.8
   },
   {
     "name": "Kim",
     "total_jokes": 11,
+    "effective_jokes": 11.0,
+    "standup_jokes": 0,
     "avg_craft": 6.56,
     "avg_impact": 6.55,
     "episodes_appeared": 2,
@@ -794,12 +1271,51 @@
       "observational"
     ],
     "war": 1.8,
-    "war_per_episode": 0.885,
-    "quality_index": 6.72
+    "war_per_episode": 0.883,
+    "quality_index": 6.72,
+    "war_v1": 1.8
+  },
+  {
+    "name": "Aurora",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.03,
+    "avg_impact": 7.25,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "escalation",
+      "misdirection",
+      "deadpan_understatement"
+    ],
+    "war": 1.7,
+    "war_per_episode": 1.687,
+    "quality_index": 6.84,
+    "war_v1": 1.7
+  },
+  {
+    "name": "Doctor",
+    "total_jokes": 13,
+    "effective_jokes": 13.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.28,
+    "avg_impact": 6.69,
+    "episodes_appeared": 7,
+    "dominant_types": [
+      "deadpan_understatement",
+      "escalation",
+      "absurdist"
+    ],
+    "war": 1.7,
+    "war_per_episode": 0.247,
+    "quality_index": 6.69,
+    "war_v1": 1.7
   },
   {
     "name": "Treeger",
     "total_jokes": 13,
+    "effective_jokes": 13.0,
+    "standup_jokes": 0,
     "avg_craft": 6.49,
     "avg_impact": 6.46,
     "episodes_appeared": 3,
@@ -809,12 +1325,69 @@
       "cringe_discomfort"
     ],
     "war": 1.7,
-    "war_per_episode": 0.56,
-    "quality_index": 6.68
+    "war_per_episode": 0.562,
+    "quality_index": 6.68,
+    "war_v1": 1.7
+  },
+  {
+    "name": "Monica's Mom",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.65,
+    "avg_impact": 7.6,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "dark_subversive",
+      "misdirection",
+      "setup_punchline"
+    ],
+    "war": 1.7,
+    "war_per_episode": 1.707,
+    "quality_index": 6.9,
+    "war_v1": 1.7
+  },
+  {
+    "name": "Everyone",
+    "total_jokes": 8,
+    "effective_jokes": 8.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.48,
+    "avg_impact": 6.88,
+    "episodes_appeared": 7,
+    "dominant_types": [
+      "escalation",
+      "reaction_beat",
+      "cringe_discomfort"
+    ],
+    "war": 1.6,
+    "war_per_episode": 0.228,
+    "quality_index": 6.75,
+    "war_v1": 1.6
+  },
+  {
+    "name": "Sarah",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.89,
+    "avg_impact": 7.17,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "setup_punchline",
+      "dark_subversive",
+      "physical_slapstick"
+    ],
+    "war": 1.6,
+    "war_per_episode": 1.574,
+    "quality_index": 6.82,
+    "war_v1": 1.6
   },
   {
     "name": "Judy",
     "total_jokes": 15,
+    "effective_jokes": 15.0,
+    "standup_jokes": 0,
     "avg_craft": 6.36,
     "avg_impact": 6.5,
     "episodes_appeared": 5,
@@ -825,11 +1398,158 @@
     ],
     "war": 1.6,
     "war_per_episode": 0.315,
-    "quality_index": 6.66
+    "quality_index": 6.66,
+    "war_v1": 1.6
+  },
+  {
+    "name": "Boss",
+    "total_jokes": 11,
+    "effective_jokes": 11.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.52,
+    "avg_impact": 6.45,
+    "episodes_appeared": 4,
+    "dominant_types": [
+      "irony_sarcasm",
+      "character_comedy",
+      "deadpan_understatement"
+    ],
+    "war": 1.6,
+    "war_per_episode": 0.394,
+    "quality_index": 6.7,
+    "war_v1": 1.6
+  },
+  {
+    "name": "Richard Crosby",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.19,
+    "avg_impact": 6.92,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "visual_gag"
+    ],
+    "war": 1.6,
+    "war_per_episode": 1.597,
+    "quality_index": 6.82,
+    "war_v1": 1.6
+  },
+  {
+    "name": "Brenda",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.86,
+    "avg_impact": 7.17,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "escalation",
+      "misdirection",
+      "reaction_beat"
+    ],
+    "war": 1.6,
+    "war_per_episode": 1.558,
+    "quality_index": 6.81,
+    "war_v1": 1.6
+  },
+  {
+    "name": "Fun Bobby",
+    "total_jokes": 9,
+    "effective_jokes": 9.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.52,
+    "avg_impact": 6.56,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "dark_subversive"
+    ],
+    "war": 1.5,
+    "war_per_episode": 0.745,
+    "quality_index": 6.72,
+    "war_v1": 1.5
+  },
+  {
+    "name": "Roger",
+    "total_jokes": 8,
+    "effective_jokes": 8.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.52,
+    "avg_impact": 6.75,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy",
+      "deadpan_understatement",
+      "escalation"
+    ],
+    "war": 1.5,
+    "war_per_episode": 1.528,
+    "quality_index": 6.75,
+    "war_v1": 1.5
+  },
+  {
+    "name": "Waitress",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.89,
+    "avg_impact": 7.0,
+    "episodes_appeared": 5,
+    "dominant_types": [
+      "setup_punchline",
+      "dark_subversive",
+      "misdirection"
+    ],
+    "war": 1.5,
+    "war_per_episode": 0.298,
+    "quality_index": 6.8,
+    "war_v1": 1.5
+  },
+  {
+    "name": "Dr. Harad",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.18,
+    "avg_impact": 6.67,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "absurdist",
+      "running_gag",
+      "setup_punchline"
+    ],
+    "war": 1.5,
+    "war_per_episode": 1.466,
+    "quality_index": 6.8,
+    "war_v1": 1.5
+  },
+  {
+    "name": "Rachel or Phoebe",
+    "total_jokes": 9,
+    "effective_jokes": 9.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.4,
+    "avg_impact": 6.67,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "physical_slapstick",
+      "escalation",
+      "callback"
+    ],
+    "war": 1.5,
+    "war_per_episode": 1.478,
+    "quality_index": 6.72,
+    "war_v1": 1.5
   },
   {
     "name": "Barry",
     "total_jokes": 14,
+    "effective_jokes": 14.0,
+    "standup_jokes": 0,
     "avg_craft": 6.32,
     "avg_impact": 6.46,
     "episodes_appeared": 5,
@@ -839,12 +1559,69 @@
       "character_comedy"
     ],
     "war": 1.4,
-    "war_per_episode": 0.273,
-    "quality_index": 6.65
+    "war_per_episode": 0.276,
+    "quality_index": 6.65,
+    "war_v1": 1.4
+  },
+  {
+    "name": "Stranger",
+    "total_jokes": 9,
+    "effective_jokes": 9.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.39,
+    "avg_impact": 6.61,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "cringe_discomfort",
+      "character_comedy",
+      "escalation"
+    ],
+    "war": 1.4,
+    "war_per_episode": 0.471,
+    "quality_index": 6.71,
+    "war_v1": 1.4
+  },
+  {
+    "name": "Mark",
+    "total_jokes": 14,
+    "effective_jokes": 14.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.38,
+    "avg_impact": 6.39,
+    "episodes_appeared": 4,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "misdirection"
+    ],
+    "war": 1.4,
+    "war_per_episode": 0.339,
+    "quality_index": 6.65,
+    "war_v1": 1.4
+  },
+  {
+    "name": "Julio",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.17,
+    "avg_impact": 7.2,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "escalation",
+      "absurdist",
+      "wordplay_pun"
+    ],
+    "war": 1.4,
+    "war_per_episode": 1.393,
+    "quality_index": 6.83,
+    "war_v1": 1.4
   },
   {
     "name": "Joanna",
     "total_jokes": 12,
+    "effective_jokes": 12.0,
+    "standup_jokes": 0,
     "avg_craft": 6.32,
     "avg_impact": 6.5,
     "episodes_appeared": 4,
@@ -854,27 +1631,123 @@
       "character_comedy"
     ],
     "war": 1.4,
-    "war_per_episode": 0.347,
-    "quality_index": 6.67
+    "war_per_episode": 0.348,
+    "quality_index": 6.67,
+    "war_v1": 1.4
   },
   {
-    "name": "Mark",
-    "total_jokes": 14,
-    "avg_craft": 6.38,
-    "avg_impact": 6.39,
-    "episodes_appeared": 4,
+    "name": "Alice",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.99,
+    "avg_impact": 6.75,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "cringe_discomfort",
+      "dark_subversive",
+      "character_comedy"
+    ],
+    "war": 1.4,
+    "war_per_episode": 0.472,
+    "quality_index": 6.79,
+    "war_v1": 1.4
+  },
+  {
+    "name": "Paolo",
+    "total_jokes": 8,
+    "effective_jokes": 8.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.55,
+    "avg_impact": 6.5,
+    "episodes_appeared": 3,
     "dominant_types": [
       "character_comedy",
       "cringe_discomfort",
-      "misdirection"
+      "wordplay_pun"
     ],
     "war": 1.3,
-    "war_per_episode": 0.336,
-    "quality_index": 6.65
+    "war_per_episode": 0.446,
+    "quality_index": 6.72,
+    "war_v1": 1.3
+  },
+  {
+    "name": "Lowell",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.16,
+    "avg_impact": 6.9,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "deadpan_understatement",
+      "observational",
+      "character_comedy"
+    ],
+    "war": 1.3,
+    "war_per_episode": 0.64,
+    "quality_index": 6.81,
+    "war_v1": 1.3
+  },
+  {
+    "name": "Jade",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.84,
+    "avg_impact": 7.2,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "cringe_discomfort",
+      "character_comedy",
+      "irony_sarcasm"
+    ],
+    "war": 1.3,
+    "war_per_episode": 1.274,
+    "quality_index": 6.81,
+    "war_v1": 1.3
+  },
+  {
+    "name": "Dr. Greene",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.93,
+    "avg_impact": 6.58,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "observational",
+      "setup_punchline",
+      "absurdist"
+    ],
+    "war": 1.3,
+    "war_per_episode": 1.303,
+    "quality_index": 6.77,
+    "war_v1": 1.3
+  },
+  {
+    "name": "Estelle",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 7.08,
+    "avg_impact": 6.5,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "character_comedy",
+      "absurdist",
+      "setup_punchline"
+    ],
+    "war": 1.3,
+    "war_per_episode": 0.446,
+    "quality_index": 6.78,
+    "war_v1": 1.3
   },
   {
     "name": "Paul",
     "total_jokes": 17,
+    "effective_jokes": 17.0,
+    "standup_jokes": 0,
     "avg_craft": 6.21,
     "avg_impact": 6.5,
     "episodes_appeared": 3,
@@ -885,11 +1758,266 @@
     ],
     "war": 1.2,
     "war_per_episode": 0.386,
-    "quality_index": 6.62
+    "quality_index": 6.62,
+    "war_v1": 1.2
+  },
+  {
+    "name": "CHANDLER",
+    "total_jokes": 19,
+    "effective_jokes": 19.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.44,
+    "avg_impact": 6.29,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "irony_sarcasm",
+      "cringe_discomfort"
+    ],
+    "war": 1.2,
+    "war_per_episode": 0.583,
+    "quality_index": 6.62,
+    "war_v1": 1.2
+  },
+  {
+    "name": "Joey's Dad",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.45,
+    "avg_impact": 6.83,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "cringe_discomfort",
+      "deadpan_understatement",
+      "character_comedy"
+    ],
+    "war": 1.2,
+    "war_per_episode": 1.187,
+    "quality_index": 6.75,
+    "war_v1": 1.2
+  },
+  {
+    "name": "Mrs. Tribbiani",
+    "total_jokes": 8,
+    "effective_jokes": 8.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.56,
+    "avg_impact": 6.38,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "observational",
+      "deadpan_understatement"
+    ],
+    "war": 1.2,
+    "war_per_episode": 0.622,
+    "quality_index": 6.71,
+    "war_v1": 1.2
+  },
+  {
+    "name": "Chloe",
+    "total_jokes": 7,
+    "effective_jokes": 7.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.69,
+    "avg_impact": 6.36,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "reaction_beat"
+    ],
+    "war": 1.2,
+    "war_per_episode": 0.605,
+    "quality_index": 6.73,
+    "war_v1": 1.2
+  },
+  {
+    "name": "Guru Saj",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.84,
+    "avg_impact": 7.1,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "absurdist",
+      "misdirection",
+      "wordplay_pun"
+    ],
+    "war": 1.2,
+    "war_per_episode": 1.239,
+    "quality_index": 6.8,
+    "war_v1": 1.2
+  },
+  {
+    "name": "Larry",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.76,
+    "avg_impact": 6.58,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "setup_punchline",
+      "character_comedy",
+      "dark_subversive"
+    ],
+    "war": 1.2,
+    "war_per_episode": 1.218,
+    "quality_index": 6.76,
+    "war_v1": 1.2
+  },
+  {
+    "name": "Joey's agent",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.68,
+    "avg_impact": 6.5,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "deadpan_understatement",
+      "absurdist",
+      "escalation"
+    ],
+    "war": 1.1,
+    "war_per_episode": 0.566,
+    "quality_index": 6.74,
+    "war_v1": 1.1
+  },
+  {
+    "name": "Dr. Burke",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.35,
+    "avg_impact": 6.83,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "observational",
+      "physical_slapstick",
+      "dark_subversive"
+    ],
+    "war": 1.1,
+    "war_per_episode": 1.137,
+    "quality_index": 6.74,
+    "war_v1": 1.1
+  },
+  {
+    "name": "Tommy",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.58,
+    "avg_impact": 6.58,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy",
+      "escalation",
+      "cringe_discomfort"
+    ],
+    "war": 1.1,
+    "war_per_episode": 1.128,
+    "quality_index": 6.74,
+    "war_v1": 1.1
+  },
+  {
+    "name": "Cassie",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.9,
+    "avg_impact": 6.7,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "visual_gag"
+    ],
+    "war": 1.1,
+    "war_per_episode": 1.119,
+    "quality_index": 6.78,
+    "war_v1": 1.1
+  },
+  {
+    "name": "Jim",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.56,
+    "avg_impact": 7.1,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "cringe_discomfort",
+      "character_comedy",
+      "dark_subversive"
+    ],
+    "war": 1.1,
+    "war_per_episode": 1.14,
+    "quality_index": 6.78,
+    "war_v1": 1.1
+  },
+  {
+    "name": "Parker",
+    "total_jokes": 9,
+    "effective_jokes": 9.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.4,
+    "avg_impact": 6.33,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy",
+      "observational",
+      "escalation"
+    ],
+    "war": 1.1,
+    "war_per_episode": 1.132,
+    "quality_index": 6.68,
+    "war_v1": 1.1
+  },
+  {
+    "name": "Charity worker",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.6,
+    "avg_impact": 6.42,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "irony_sarcasm",
+      "misdirection",
+      "cringe_discomfort"
+    ],
+    "war": 1.1,
+    "war_per_episode": 1.055,
+    "quality_index": 6.73,
+    "war_v1": 1.1
+  },
+  {
+    "name": "ANGELA",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.53,
+    "avg_impact": 6.7,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "cringe_discomfort",
+      "character_comedy",
+      "setup_punchline"
+    ],
+    "war": 1.0,
+    "war_per_episode": 0.986,
+    "quality_index": 6.75,
+    "war_v1": 1.0
   },
   {
     "name": "Sandy",
     "total_jokes": 10,
+    "effective_jokes": 10.0,
+    "standup_jokes": 0,
     "avg_craft": 6.43,
     "avg_impact": 6.15,
     "episodes_appeared": 2,
@@ -899,12 +2027,573 @@
       "observational"
     ],
     "war": 1.0,
-    "war_per_episode": 0.494,
-    "quality_index": 6.65
+    "war_per_episode": 0.492,
+    "quality_index": 6.65,
+    "war_v1": 1.0
+  },
+  {
+    "name": "Russ",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.73,
+    "avg_impact": 6.4,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy",
+      "awkward_silence",
+      "irony_sarcasm"
+    ],
+    "war": 1.0,
+    "war_per_episode": 0.95,
+    "quality_index": 6.75,
+    "war_v1": 1.0
+  },
+  {
+    "name": "Mr. Geller",
+    "total_jokes": 7,
+    "effective_jokes": 7.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.32,
+    "avg_impact": 6.43,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "misdirection"
+    ],
+    "war": 1.0,
+    "war_per_episode": 0.505,
+    "quality_index": 6.7,
+    "war_v1": 1.0
+  },
+  {
+    "name": "Casting Director",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.52,
+    "avg_impact": 6.7,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "character_comedy",
+      "setup_punchline",
+      "escalation"
+    ],
+    "war": 1.0,
+    "war_per_episode": 0.327,
+    "quality_index": 6.75,
+    "war_v1": 1.0
+  },
+  {
+    "name": "Officer",
+    "total_jokes": 10,
+    "effective_jokes": 10.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.19,
+    "avg_impact": 6.4,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "escalation",
+      "absurdist",
+      "setup_punchline"
+    ],
+    "war": 1.0,
+    "war_per_episode": 0.998,
+    "quality_index": 6.65,
+    "war_v1": 1.0
+  },
+  {
+    "name": "Tom Gordon",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.8,
+    "avg_impact": 6.4,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "irony_sarcasm",
+      "character_comedy",
+      "setup_punchline"
+    ],
+    "war": 1.0,
+    "war_per_episode": 0.976,
+    "quality_index": 6.75,
+    "war_v1": 1.0
+  },
+  {
+    "name": "Terry",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.41,
+    "avg_impact": 6.6,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "character_comedy",
+      "deadpan_understatement",
+      "escalation"
+    ],
+    "war": 0.9,
+    "war_per_episode": 0.302,
+    "quality_index": 6.74,
+    "war_v1": 0.9
+  },
+  {
+    "name": "Character F",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.49,
+    "avg_impact": 6.4,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "character_comedy",
+      "irony_sarcasm",
+      "cringe_discomfort"
+    ],
+    "war": 0.9,
+    "war_per_episode": 0.289,
+    "quality_index": 6.73,
+    "war_v1": 0.9
+  },
+  {
+    "name": "Dr. Franzblau",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.26,
+    "avg_impact": 6.7,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "deadpan_understatement",
+      "observational",
+      "escalation"
+    ],
+    "war": 0.9,
+    "war_per_episode": 0.889,
+    "quality_index": 6.73,
+    "war_v1": 0.9
+  },
+  {
+    "name": "Waiter",
+    "total_jokes": 7,
+    "effective_jokes": 7.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.35,
+    "avg_impact": 6.29,
+    "episodes_appeared": 5,
+    "dominant_types": [
+      "setup_punchline",
+      "character_comedy",
+      "reaction_beat"
+    ],
+    "war": 0.9,
+    "war_per_episode": 0.187,
+    "quality_index": 6.69,
+    "war_v1": 0.9
+  },
+  {
+    "name": "Phoebe Abbott",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.4,
+    "avg_impact": 6.5,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "misdirection",
+      "escalation",
+      "observational"
+    ],
+    "war": 0.9,
+    "war_per_episode": 0.868,
+    "quality_index": 6.73,
+    "war_v1": 0.9
+  },
+  {
+    "name": "Hayley",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.65,
+    "avg_impact": 6.3,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "setup_punchline",
+      "misdirection",
+      "character_comedy"
+    ],
+    "war": 0.9,
+    "war_per_episode": 0.887,
+    "quality_index": 6.73,
+    "war_v1": 0.9
+  },
+  {
+    "name": "Nurse",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.18,
+    "avg_impact": 6.6,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "misdirection",
+      "escalation",
+      "deadpan_understatement"
+    ],
+    "war": 0.8,
+    "war_per_episode": 0.275,
+    "quality_index": 6.72,
+    "war_v1": 0.8
+  },
+  {
+    "name": "Kristin",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.51,
+    "avg_impact": 6.3,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "misdirection",
+      "callback"
+    ],
+    "war": 0.8,
+    "war_per_episode": 0.418,
+    "quality_index": 6.72,
+    "war_v1": 0.8
+  },
+  {
+    "name": "Grandma",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.5,
+    "avg_impact": 6.3,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "dark_subversive",
+      "visual_gag"
+    ],
+    "war": 0.8,
+    "war_per_episode": 0.417,
+    "quality_index": 6.72,
+    "war_v1": 0.8
+  },
+  {
+    "name": "Van Damme",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.26,
+    "avg_impact": 6.4,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "misdirection",
+      "character_comedy",
+      "escalation"
+    ],
+    "war": 0.8,
+    "war_per_episode": 0.392,
+    "quality_index": 6.71,
+    "war_v1": 0.8
+  },
+  {
+    "name": "Malcolm",
+    "total_jokes": 8,
+    "effective_jokes": 8.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.42,
+    "avg_impact": 6.0,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy",
+      "setup_punchline",
+      "cringe_discomfort"
+    ],
+    "war": 0.8,
+    "war_per_episode": 0.813,
+    "quality_index": 6.66,
+    "war_v1": 0.8
+  },
+  {
+    "name": "Coworker",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.45,
+    "avg_impact": 6.4,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "escalation",
+      "irony_sarcasm",
+      "setup_punchline"
+    ],
+    "war": 0.8,
+    "war_per_episode": 0.283,
+    "quality_index": 6.72,
+    "war_v1": 0.8
+  },
+  {
+    "name": "Katie",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.14,
+    "avg_impact": 6.42,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "setup_punchline",
+      "physical_slapstick",
+      "escalation"
+    ],
+    "war": 0.8,
+    "war_per_episode": 0.413,
+    "quality_index": 6.69,
+    "war_v1": 0.8
+  },
+  {
+    "name": "Ronni",
+    "total_jokes": 7,
+    "effective_jokes": 7.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.04,
+    "avg_impact": 6.29,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "cringe_discomfort",
+      "absurdist",
+      "deadpan_understatement"
+    ],
+    "war": 0.7,
+    "war_per_episode": 0.731,
+    "quality_index": 6.66,
+    "war_v1": 0.7
+  },
+  {
+    "name": "Character C",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.17,
+    "avg_impact": 6.08,
+    "episodes_appeared": 4,
+    "dominant_types": [
+      "escalation",
+      "deadpan_understatement",
+      "character_comedy"
+    ],
+    "war": 0.7,
+    "war_per_episode": 0.169,
+    "quality_index": 6.67,
+    "war_v1": 0.7
+  },
+  {
+    "name": "Lydia",
+    "total_jokes": 7,
+    "effective_jokes": 7.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.05,
+    "avg_impact": 6.29,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "wordplay_pun",
+      "cringe_discomfort"
+    ],
+    "war": 0.7,
+    "war_per_episode": 0.369,
+    "quality_index": 6.66,
+    "war_v1": 0.7
+  },
+  {
+    "name": "Monica's mother",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.07,
+    "avg_impact": 6.25,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "dark_subversive",
+      "escalation"
+    ],
+    "war": 0.7,
+    "war_per_episode": 0.351,
+    "quality_index": 6.67,
+    "war_v1": 0.7
+  },
+  {
+    "name": "Mrs. Geller",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.31,
+    "avg_impact": 6.2,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "setup_punchline",
+      "observational"
+    ],
+    "war": 0.7,
+    "war_per_episode": 0.364,
+    "quality_index": 6.7,
+    "war_v1": 0.7
+  },
+  {
+    "name": "Ginger",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.27,
+    "avg_impact": 6.08,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "cringe_discomfort",
+      "character_comedy",
+      "escalation"
+    ],
+    "war": 0.7,
+    "war_per_episode": 0.36,
+    "quality_index": 6.68,
+    "war_v1": 0.7
+  },
+  {
+    "name": "Steven",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.22,
+    "avg_impact": 6.2,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy",
+      "absurdist",
+      "cringe_discomfort"
+    ],
+    "war": 0.7,
+    "war_per_episode": 0.696,
+    "quality_index": 6.69,
+    "war_v1": 0.7
+  },
+  {
+    "name": "Amanda",
+    "total_jokes": 7,
+    "effective_jokes": 7.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.19,
+    "avg_impact": 6.14,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "cringe_discomfort",
+      "character_comedy",
+      "absurdist"
+    ],
+    "war": 0.7,
+    "war_per_episode": 0.736,
+    "quality_index": 6.66,
+    "war_v1": 0.7
+  },
+  {
+    "name": "Kristen",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.15,
+    "avg_impact": 6.0,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "cringe_discomfort",
+      "setup_punchline",
+      "irony_sarcasm"
+    ],
+    "war": 0.6,
+    "war_per_episode": 0.3,
+    "quality_index": 6.67,
+    "war_v1": 0.6
+  },
+  {
+    "name": "Ryan",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.42,
+    "avg_impact": 5.67,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "wordplay_pun",
+      "character_comedy",
+      "cringe_discomfort"
+    ],
+    "war": 0.6,
+    "war_per_episode": 0.587,
+    "quality_index": 6.65,
+    "war_v1": 0.6
+  },
+  {
+    "name": "Leslie",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.32,
+    "avg_impact": 5.83,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy",
+      "absurdist",
+      "cringe_discomfort"
+    ],
+    "war": 0.6,
+    "war_per_episode": 0.62,
+    "quality_index": 6.66,
+    "war_v1": 0.6
+  },
+  {
+    "name": "Lauren",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 5.98,
+    "avg_impact": 6.1,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "cringe_discomfort",
+      "character_comedy",
+      "escalation"
+    ],
+    "war": 0.6,
+    "war_per_episode": 0.287,
+    "quality_index": 6.67,
+    "war_v1": 0.6
+  },
+  {
+    "name": "Friends",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.43,
+    "avg_impact": 5.7,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "setup_punchline",
+      "observational"
+    ],
+    "war": 0.6,
+    "war_per_episode": 0.296,
+    "quality_index": 6.67,
+    "war_v1": 0.6
   },
   {
     "name": "Gary",
     "total_jokes": 21,
+    "effective_jokes": 21.0,
+    "standup_jokes": 0,
     "avg_craft": 6.39,
     "avg_impact": 6.24,
     "episodes_appeared": 4,
@@ -914,30 +2603,144 @@
       "escalation"
     ],
     "war": 0.6,
-    "war_per_episode": 0.161,
-    "quality_index": 6.59
+    "war_per_episode": 0.153,
+    "quality_index": 6.58,
+    "war_v1": 0.6
+  },
+  {
+    "name": "Kori",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.32,
+    "avg_impact": 5.75,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "setup_punchline",
+      "character_comedy",
+      "irony_sarcasm"
+    ],
+    "war": 0.6,
+    "war_per_episode": 0.581,
+    "quality_index": 6.65,
+    "war_v1": 0.6
+  },
+  {
+    "name": "Friend",
+    "total_jokes": 7,
+    "effective_jokes": 7.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.11,
+    "avg_impact": 5.86,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "cringe_discomfort",
+      "character_comedy",
+      "escalation"
+    ],
+    "war": 0.5,
+    "war_per_episode": 0.163,
+    "quality_index": 6.62,
+    "war_v1": 0.5
+  },
+  {
+    "name": "Customer",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 5.92,
+    "avg_impact": 5.6,
+    "episodes_appeared": 4,
+    "dominant_types": [
+      "irony_sarcasm",
+      "visual_gag",
+      "physical_slapstick"
+    ],
+    "war": 0.4,
+    "war_per_episode": 0.094,
+    "quality_index": 6.63,
+    "war_v1": 0.4
+  },
+  {
+    "name": "Carl",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 5.95,
+    "avg_impact": 5.7,
+    "episodes_appeared": 2,
+    "dominant_types": [
+      "character_comedy",
+      "callback",
+      "wordplay_pun"
+    ],
+    "war": 0.4,
+    "war_per_episode": 0.211,
+    "quality_index": 6.64,
+    "war_v1": 0.4
+  },
+  {
+    "name": "Megan",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 5.84,
+    "avg_impact": 5.7,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "escalation",
+      "character_comedy",
+      "cringe_discomfort"
+    ],
+    "war": 0.4,
+    "war_per_episode": 0.382,
+    "quality_index": 6.63,
+    "war_v1": 0.4
+  },
+  {
+    "name": "Max",
+    "total_jokes": 5,
+    "effective_jokes": 5.0,
+    "standup_jokes": 0,
+    "avg_craft": 5.77,
+    "avg_impact": 5.5,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "character_comedy",
+      "reaction_beat",
+      "absurdist"
+    ],
+    "war": 0.3,
+    "war_per_episode": 0.286,
+    "quality_index": 6.61,
+    "war_v1": 0.3
   },
   {
     "name": "Rachel",
-    "total_jokes": 1960,
+    "total_jokes": 1937,
+    "effective_jokes": 1937.0,
+    "standup_jokes": 0,
     "avg_craft": 6.59,
-    "avg_impact": 6.47,
-    "episodes_appeared": 224,
+    "avg_impact": 6.46,
+    "episodes_appeared": 222,
     "dominant_types": [
       "character_comedy",
       "escalation",
       "cringe_discomfort"
     ],
-    "war": 0,
+    "war": 0.0,
+    "war_per_episode": 0.0,
+    "quality_index": 6.53,
     "actor": "Jennifer Aniston",
     "profile_path": "/7sQcYpMkmZMc2pXnkmAuYzNVhXB.jpg",
     "character_full_name": "Rachel Green",
-    "war_per_episode": 0.0,
-    "quality_index": 6.53
+    "war_v1": 0.0
   },
   {
     "name": "Janice",
     "total_jokes": 69,
+    "effective_jokes": 69.0,
+    "standup_jokes": 0,
     "avg_craft": 6.37,
     "avg_impact": 6.46,
     "episodes_appeared": 17,
@@ -946,31 +2749,91 @@
       "cringe_discomfort",
       "escalation"
     ],
-    "war": 0,
+    "war": 0.0,
+    "war_per_episode": 0.0,
+    "quality_index": 6.53,
     "actor": "Maggie Wheeler",
     "profile_path": "/thTeI4FAx02X1h6a2EPWG8me9Ua.jpg",
     "character_full_name": "Janice Litman-Goralnik",
-    "war_per_episode": 0.0,
-    "quality_index": 6.52
+    "war_v1": 0.0
   },
   {
-    "name": "Unknown character",
-    "total_jokes": 51,
-    "avg_craft": 6.28,
-    "avg_impact": 6.19,
-    "episodes_appeared": 6,
+    "name": "Unknown",
+    "total_jokes": 215,
+    "effective_jokes": 215.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.11,
+    "avg_impact": 6.04,
+    "episodes_appeared": 29,
     "dominant_types": [
       "character_comedy",
       "observational",
-      "irony_sarcasm"
+      "setup_punchline"
     ],
-    "war": 0,
+    "war": 0.0,
     "war_per_episode": 0.0,
-    "quality_index": 6.44
+    "quality_index": 6.16,
+    "war_v1": 0.0
+  },
+  {
+    "name": "Unknown character",
+    "total_jokes": 38,
+    "effective_jokes": 38.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.45,
+    "avg_impact": 6.25,
+    "episodes_appeared": 5,
+    "dominant_types": [
+      "character_comedy",
+      "observational",
+      "setup_punchline"
+    ],
+    "war": 0.0,
+    "war_per_episode": 0.0,
+    "quality_index": 6.54,
+    "war_v1": 0.0
+  },
+  {
+    "name": "Character A",
+    "total_jokes": 30,
+    "effective_jokes": 30.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.41,
+    "avg_impact": 6.27,
+    "episodes_appeared": 6,
+    "dominant_types": [
+      "escalation",
+      "deadpan_understatement",
+      "observational"
+    ],
+    "war": 0.0,
+    "war_per_episode": 0.005,
+    "quality_index": 6.56,
+    "war_v1": 0.0
+  },
+  {
+    "name": "Character B",
+    "total_jokes": 16,
+    "effective_jokes": 16.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.14,
+    "avg_impact": 6.12,
+    "episodes_appeared": 6,
+    "dominant_types": [
+      "escalation",
+      "absurdist",
+      "misdirection"
+    ],
+    "war": 0.0,
+    "war_per_episode": 0.0,
+    "quality_index": 6.55,
+    "war_v1": 0.0
   },
   {
     "name": "Richard",
     "total_jokes": 41,
+    "effective_jokes": 41.0,
+    "standup_jokes": 0,
     "avg_craft": 6.4,
     "avg_impact": 6.12,
     "episodes_appeared": 9,
@@ -979,43 +2842,52 @@
       "deadpan_understatement",
       "irony_sarcasm"
     ],
-    "war": 0,
+    "war": 0.0,
     "war_per_episode": 0.0,
-    "quality_index": 6.48
+    "quality_index": 6.48,
+    "war_v1": 0.0
   },
   {
-    "name": "Emily",
-    "total_jokes": 35,
-    "avg_craft": 6.44,
-    "avg_impact": 6.26,
-    "episodes_appeared": 10,
+    "name": "Unknown friend",
+    "total_jokes": 6,
+    "effective_jokes": 6.0,
+    "standup_jokes": 0,
+    "avg_craft": 5.32,
+    "avg_impact": 5.25,
+    "episodes_appeared": 4,
     "dominant_types": [
       "character_comedy",
-      "cringe_discomfort",
-      "irony_sarcasm"
+      "observational",
+      "escalation"
     ],
-    "war": 0,
+    "war": 0.0,
     "war_per_episode": 0.0,
-    "quality_index": 6.55
+    "quality_index": 6.53,
+    "war_v1": 0.0
   },
   {
-    "name": "Unknown Friend",
-    "total_jokes": 14,
-    "avg_craft": 5.6,
-    "avg_impact": 5.46,
-    "episodes_appeared": 7,
+    "name": "unknown",
+    "total_jokes": 43,
+    "effective_jokes": 43.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.35,
+    "avg_impact": 6.44,
+    "episodes_appeared": 2,
     "dominant_types": [
-      "character_comedy",
       "setup_punchline",
-      "observational"
+      "observational",
+      "character_comedy"
     ],
-    "war": 0,
+    "war": 0.0,
     "war_per_episode": 0.0,
-    "quality_index": 6.38
+    "quality_index": 6.55,
+    "war_v1": 0.0
   },
   {
     "name": "Tim",
     "total_jokes": 14,
+    "effective_jokes": 14.0,
+    "standup_jokes": 0,
     "avg_craft": 6.03,
     "avg_impact": 5.96,
     "episodes_appeared": 3,
@@ -1024,13 +2896,52 @@
       "cringe_discomfort",
       "deadpan_understatement"
     ],
-    "war": 0,
+    "war": 0.0,
     "war_per_episode": 0.0,
-    "quality_index": 6.53
+    "quality_index": 6.53,
+    "war_v1": 0.0
+  },
+  {
+    "name": "Emily",
+    "total_jokes": 35,
+    "effective_jokes": 35.0,
+    "standup_jokes": 0,
+    "avg_craft": 6.44,
+    "avg_impact": 6.26,
+    "episodes_appeared": 10,
+    "dominant_types": [
+      "character_comedy",
+      "cringe_discomfort",
+      "irony_sarcasm"
+    ],
+    "war": 0.0,
+    "war_per_episode": 0.0,
+    "quality_index": 6.55,
+    "war_v1": 0.0
+  },
+  {
+    "name": "Unknown Friend",
+    "total_jokes": 8,
+    "effective_jokes": 8.0,
+    "standup_jokes": 0,
+    "avg_craft": 5.81,
+    "avg_impact": 5.62,
+    "episodes_appeared": 3,
+    "dominant_types": [
+      "setup_punchline",
+      "misdirection",
+      "deadpan_understatement"
+    ],
+    "war": 0.0,
+    "war_per_episode": 0.0,
+    "quality_index": 6.55,
+    "war_v1": 0.0
   },
   {
     "name": "Melissa",
     "total_jokes": 11,
+    "effective_jokes": 11.0,
+    "standup_jokes": 0,
     "avg_craft": 5.99,
     "avg_impact": 5.18,
     "episodes_appeared": 1,
@@ -1039,8 +2950,27 @@
       "cringe_discomfort",
       "escalation"
     ],
-    "war": 0,
+    "war": 0.0,
     "war_per_episode": 0.0,
-    "quality_index": 6.46
+    "quality_index": 6.46,
+    "war_v1": 0.0
+  },
+  {
+    "name": "unknown character",
+    "total_jokes": 13,
+    "effective_jokes": 13.0,
+    "standup_jokes": 0,
+    "avg_craft": 5.77,
+    "avg_impact": 6.0,
+    "episodes_appeared": 1,
+    "dominant_types": [
+      "observational",
+      "cringe_discomfort",
+      "character_comedy"
+    ],
+    "war": 0.0,
+    "war_per_episode": 0.0,
+    "quality_index": 6.51,
+    "war_v1": 0.0
   }
 ]
