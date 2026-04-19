@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getShow, getEpisodes, getEpisodeDetail } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
+import { getTier } from '@/lib/tiers';
 import { SHOW_SLUGS } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
 import ScoreGauge from '@/components/ui/ScoreGauge';
@@ -45,13 +46,40 @@ export async function generateMetadata({
   );
   if (!detail || !show) return {};
   const showName = show.name;
+  const tier = getTier(detail.humor_index);
+
+  // Pick top joke for the OG quote (highest craft+impact, with text + speaker)
+  const topJoke = [...(detail.jokes ?? [])]
+    .filter(j => j.text && j.text.length > 10 && j.text.length < 160)
+    .sort((a, b) => ((b.craft_total ?? 0) + (b.impact_score ?? 0)) - ((a.craft_total ?? 0) + (a.impact_score ?? 0)))[0];
+
+  const ogParams = new URLSearchParams({
+    show: showName,
+    title: detail.title,
+    season: String(detail.season),
+    episode: String(detail.episode_number),
+    score: formatIndex(detail.humor_index),
+    tier: tier.label,
+    craft: detail.avg_craft.toFixed(1),
+    impact: detail.avg_impact.toFixed(1),
+    jokes: String(detail.total_jokes),
+  });
+  if (topJoke?.text) ogParams.set('quote', topJoke.text);
+  if (topJoke?.characters?.[0]) ogParams.set('speaker', topJoke.characters[0]);
+
   return {
     title: `"${detail.title}" (S${detail.season}E${String(detail.episode_number).padStart(2, '0')}) — ${showName} Joke Analysis`,
-    description: `Every joke in ${showName} "${detail.title}" analyzed and scored. ${detail.total_jokes} jokes, Humor Index: ${formatIndex(detail.humor_index)}. See the funniest moments ranked.`,
+    description: `Every joke in ${showName} "${detail.title}" analyzed and scored. ${detail.total_jokes} jokes, Humor Index: ${formatIndex(detail.humor_index)} (${tier.label}). See the funniest moments ranked.`,
     openGraph: {
-      title: `${showName} "${detail.title}" — ${detail.total_jokes} Jokes Scored`,
-      description: `Humor Index: ${formatIndex(detail.humor_index)}. JPM: ${detail.jpm}. See every joke ranked.`,
-      images: [`/api/og?title=${encodeURIComponent(`${showName} "${detail.title}"`)}&score=${formatIndex(detail.humor_index)}&subtitle=${encodeURIComponent(`S${detail.season}E${String(detail.episode_number).padStart(2, '0')} · ${detail.total_jokes} jokes`)}`],
+      title: `${showName} "${detail.title}" — ${tier.label} (${formatIndex(detail.humor_index)})`,
+      description: `${detail.total_jokes} jokes scored. Craft ${detail.avg_craft.toFixed(1)} · Impact ${detail.avg_impact.toFixed(1)} · JPM ${detail.jpm}.`,
+      images: [`/api/og/episode?${ogParams.toString()}`],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${showName} "${detail.title}" — ${tier.label}`,
+      description: `Humor Index ${formatIndex(detail.humor_index)}. ${detail.total_jokes} jokes scored.`,
+      images: [`/api/og/episode?${ogParams.toString()}`],
     },
     alternates: {
       canonical: `https://thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}`,
