@@ -93,7 +93,7 @@ Every joke is scored on five dimensions:
 We use a **top-weighted average**: the top 25% of jokes count for 40% of the effective craft score. This means a show with a few brilliant jokes and some mediocre filler can still score well — as long as the peaks are genuine peaks.
 
 **Impact Score (35% weight)**
-How big a reaction would this joke get from 100 comedy-savvy viewers? This is adjusted for show format — multi-camera sitcoms with sweetened laugh tracks get a 25% penalty, because the laugh track inflates perceived reactions.
+How big a reaction would this joke get from 100 comedy-savvy viewers? *(Historical note: this used to include a 25% penalty on multi-cam sitcoms to discount laugh-track-inflated reactions. We removed it in April 2026 after a Bayesian audit showed the format effect was statistically indistinguishable from zero. See [the format coefficient removal post](/blog/format-coefficient-removal) for the full reasoning.)* Stand-up material (Jerry's monologues at The Improv) is weighted at 0.30 of a normal joke in aggregate scores, since it's polished professional material rather than sitcom comedy.
 
 **Peak Density (15% weight)**
 What percentage of jokes are genuinely excellent (scoring 7+ on BOTH craft and impact)? This replaces raw jokes-per-minute as our density metric, because it measures quality density, not just volume.
@@ -199,7 +199,7 @@ Each show\u2019s overall Humor Index is averaged over 170-236 episodes. The law 
 - Seinfeld (172 eps): SE on show mean ≈ 0.38
 - Friends (236 eps): SE on show mean ≈ 0.33
 
-So the show-level Humor Indexes we publish (Seinfeld 83.9, Office 80.2, Friends 78.7) are stable to roughly ±0.4 points from LLM noise. The differences between these shows (3–6 points) are far larger than that noise floor.
+So the show-level Humor Indexes we publish (Office 80.2, Seinfeld 79.1, Friends 78.7) are stable to roughly ±0.4 points from LLM noise. The differences between these shows (1–2 points) are within that noise floor — which is exactly what the hierarchical Bayesian model concludes. *(Seinfeld's 79.1 reflects our April 18 standup-aware rescore; earlier versions of this site had Seinfeld at 83.9.)*
 
 **Show rankings hold up.**
 
@@ -307,7 +307,9 @@ Two-thirds of the variance is within-joke residual \u2014 the LLM gives similar 
 
 The Humor Index, Comedy WAR, and every leaderboard on this site are computed from aggregates of joke-level scores. When the joke-level model can\u2019t distinguish shows, the aggregates rank them \u2014 but those ranks sit on a foundation of overlap.
 
-In practice: if you\u2019re reading *"Seinfeld has a Humor Index of 83.9 vs. The Office\u2019s 80.2,"* you should read that as *"Seinfeld scores higher on our current sample, but the difference is within the range of how much rescoring noise would move these numbers."* A 3-point Humor Index gap is bigger than the typical inter-episode bootstrap CI but smaller than the show-level credible interval.
+In practice: if you\u2019re reading *"The Office has a Humor Index of 80.2, Seinfeld 79.1, Friends 78.7,"* you should read that as *"The posterior median orders them Office > Seinfeld > Friends, but the differences are within the range of how much rescoring noise would move these numbers."* A 1\u20132 point Humor Index gap is inside the noise floor.
+
+*Note (April 2026): When this post was first published, Seinfeld led at 83.9 due to stand-up bits being scored as sitcom comedy. That was fixed with a standup-aware rescore \u2014 see the [Office vs Seinfeld reordering post](/blog/seinfeld-passes-office) for the back-and-forth. The core finding of this post \u2014 that all three shows sit within each other\u2019s credible intervals \u2014 is unchanged.*
 
 This doesn\u2019t mean the rankings are wrong. It means they\u2019re **not statistically distinguishable given current data.** That\u2019s a feature of being honest about our sample size and model, not a bug in the analysis.
 
@@ -334,6 +336,8 @@ We\u2019re publishing the full model artifacts \u2014 posterior samples, varianc
     date: '2026-04-16',
     category: 'Data Science',
     content: `
+> **\u26A0\uFE0F Update (April 19, 2026):** The numbers in this post are out of date. We later discovered that Jerry\u2019s stand-up bits were being counted at full weight in his character-level WAR. After applying our \`STANDUP_WEIGHT = 0.30\` correction (consistent with how stand-up is handled in episode aggregates), **George Costanza now leads the ranking at 1,181 WAR, with Jerry at 1,109.** Full current leaderboard: [funniest characters](/rankings/funniest-characters). The analysis below is preserved as the original April 16 argument; the methodology lesson \u2014 that fixing subtle scoring bugs can flip rankings \u2014 is part of the story.
+
 We just upgraded **Comedy WAR** \u2014 our career-value metric for sitcom characters \u2014 to use a proper empirical replacement baseline. The result: Jerry Seinfeld is the most valuable comedy character we\u2019ve ever measured, by a wide margin.
 
 ## What Is Comedy WAR?
@@ -422,6 +426,8 @@ Jerry Seinfeld: most valuable comedy character in television history, by about a
     date: '2026-04-16',
     category: 'Methodology',
     content: `
+> **\u26A0\uFE0F Update (April 19, 2026):** This post from April 16 reflects a transitional state. Two days later we rescored all 172 Seinfeld episodes with a new standup-aware prompt and 3-run consensus. The stand-up bits Jerry performs at The Improv were being scored as sitcom comedy \u2014 that inflated Seinfeld by several points. With the fix, **Seinfeld now sits at 79.1, just behind The Office (80.2) and slightly ahead of Friends (78.7)**. All three shows are statistically indistinguishable given our credible intervals \u2014 see [Every Show Ranking Is Within Noise](/blog/bayesian-credible-intervals). The analysis below is preserved as the original argument from the format-coefficient removal; the numbers cited have been superseded.
+
 For a few weeks this site had The Office ahead of Seinfeld on the Humor Index. A lot of you argued with that ordering \u2014 Seinfeld has better-written jokes, you said. You were right. We had a thumb on the scale, and we just took it off.
 
 ## The Updated Numbers
