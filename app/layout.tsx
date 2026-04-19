@@ -9,6 +9,7 @@ import ScrollToTop from '@/components/ui/ScrollToTop';
 import NewsletterPopup from '@/components/ui/NewsletterPopup';
 import StickyNewsletterBar from '@/components/ui/StickyNewsletterBar';
 import RecentlyViewedTracker from '@/components/ui/RecentlyViewedTracker';
+import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
@@ -100,6 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <RecentlyViewedTracker />
         <Analytics />
         <SpeedInsights />
+        <GoogleAnalytics />
       </body>
     </html>
   );

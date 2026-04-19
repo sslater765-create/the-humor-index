@@ -54,7 +54,14 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <strong className="text-brand-text-primary">Cookies:</strong> The site may set essential and analytics cookies
-                (for example, through Vercel Analytics). We do not use advertising or cross-site tracking cookies.
+                through <strong className="text-brand-text-primary">Vercel Analytics</strong> and{' '}
+                <strong className="text-brand-text-primary">Google Analytics 4</strong>. Google Analytics uses cookies to
+                collect aggregated information about how visitors use the Site (for example, pages visited, time on page, and
+                referral sources). We have enabled IP anonymization. We do not use advertising or cross-site tracking cookies.
+                You can opt out of Google Analytics by installing the{' '}
+                <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-brand-gold hover:underline">
+                  Google Analytics Opt-out Browser Add-on
+                </a>.
               </li>
             </ul>
           </section>
@@ -89,7 +96,10 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc ml-5 space-y-1">
               <li><strong className="text-brand-text-primary">Website Hosting Service Providers</strong> (Vercel) — to host the Site and serve requests;</li>
-              <li><strong className="text-brand-text-primary">Cloud Computing Services</strong> — for storage and delivery of static assets.</li>
+              <li><strong className="text-brand-text-primary">Cloud Computing Services</strong> — for storage and delivery of static assets;</li>
+              <li><strong className="text-brand-text-primary">Data Analytics Services</strong> (Google Analytics, Vercel Analytics) — to measure aggregated usage and improve the Site. Google Analytics is operated by Google LLC with data processed in the United States; see Google&apos;s{' '}
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-gold hover:underline">Privacy Policy</a>.
+              </li>
             </ul>
             <p className="mt-2">
               We may also disclose information when legally required, in connection with a business transfer, or to protect
