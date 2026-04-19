@@ -202,7 +202,12 @@ export default function MethodologyPage() {
           <p className="text-xs text-brand-text-muted leading-relaxed">
             Score changes from the removal: Seinfeld 77.9 → 83.9, Friends 72.8 → 78.7, The Office 81.0 → 80.2.
             The original scores are preserved on each page as <code className="text-brand-text-secondary">humor_index_v1</code> for
-            transparency.
+            transparency. <span className="text-brand-text-secondary">Subsequent update (April 18, 2026):</span> we then
+            discovered that Jerry&apos;s stand-up bits at The Improv were being scored as sitcom comedy.
+            Applying a 0.30 standup weighting and rescoring all 172 Seinfeld episodes with 3-run consensus
+            moved Seinfeld from 83.9 → <span className="text-brand-text-primary">79.1</span>. Current show
+            order: Office 80.2, Seinfeld 79.1, Friends 78.7 — statistically indistinguishable per our
+            Bayesian credible intervals.
           </p>
         </section>
 

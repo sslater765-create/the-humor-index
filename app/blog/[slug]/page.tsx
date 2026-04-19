@@ -309,7 +309,7 @@ The Humor Index, Comedy WAR, and every leaderboard on this site are computed fro
 
 In practice: if you\u2019re reading *"The Office has a Humor Index of 80.2, Seinfeld 79.1, Friends 78.7,"* you should read that as *"The posterior median orders them Office > Seinfeld > Friends, but the differences are within the range of how much rescoring noise would move these numbers."* A 1\u20132 point Humor Index gap is inside the noise floor.
 
-*Note (April 2026): When this post was first published, Seinfeld led at 83.9 due to stand-up bits being scored as sitcom comedy. That was fixed with a standup-aware rescore \u2014 see the [Office vs Seinfeld reordering post](/blog/seinfeld-passes-office) for the back-and-forth. The core finding of this post \u2014 that all three shows sit within each other\u2019s credible intervals \u2014 is unchanged.*
+*Note (April 2026): When this post was first published, Seinfeld led at 83.9 due to stand-up bits being scored as sitcom comedy. That was fixed with a standup-aware rescore \u2014 see the [Office vs Seinfeld reordering post](/blog/seinfeld-vs-the-office) for the back-and-forth. The core finding of this post \u2014 that all three shows sit within each other\u2019s credible intervals \u2014 is unchanged.*
 
 This doesn\u2019t mean the rankings are wrong. It means they\u2019re **not statistically distinguishable given current data.** That\u2019s a feature of being honest about our sample size and model, not a bug in the analysis.
 
@@ -726,6 +726,21 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                   </li>
                 ))}
               </ul>
+            );
+          }
+
+          // Blockquote — used for Editor's Note / Correction callouts
+          if (trimmed.startsWith('> ')) {
+            const lines = trimmed.split('\n').map(l => l.replace(/^>\s?/, '')).join('\n').trim();
+            return (
+              <aside
+                key={i}
+                className="my-6 border-l-4 border-brand-gold bg-brand-gold/5 px-4 py-3 rounded-r-md"
+              >
+                <p className="text-sm text-brand-text-secondary leading-relaxed">
+                  {formatInline(lines)}
+                </p>
+              </aside>
             );
           }
 
