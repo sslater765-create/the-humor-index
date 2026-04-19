@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { trackNewsletterSignup } from '@/lib/analytics';
 
 export default function HeroNewsletterCTA() {
   const [email, setEmail] = useState('');
@@ -18,6 +19,7 @@ export default function HeroNewsletterCTA() {
       });
       if (resp.ok) {
         setSubscribed(true);
+        trackNewsletterSignup('hero');
         setEmail('');
       }
     } catch {

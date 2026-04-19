@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { trackNewsletterSignup } from '@/lib/analytics';
 
 export default function InlineNewsletterCTA() {
   const [email, setEmail] = useState('');
@@ -19,6 +20,7 @@ export default function InlineNewsletterCTA() {
       if (resp.ok) {
         setSubscribed(true);
         setEmail('');
+        trackNewsletterSignup('inline');
       }
     } catch {
       // Silently fail

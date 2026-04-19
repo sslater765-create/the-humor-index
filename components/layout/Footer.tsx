@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { trackNewsletterSignup } from '@/lib/analytics';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -21,6 +22,7 @@ export default function Footer() {
       if (resp.ok) {
         setSubscribed(true);
         setEmail('');
+        trackNewsletterSignup('footer');
       }
     } catch {
       // Silently fail — better than showing an error for newsletter

@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { trackNewsletterSignup } from '@/lib/analytics';
 
 const DISMISS_KEY = 'humor_index_sticky_dismissed';
 
@@ -46,6 +47,7 @@ export default function StickyNewsletterBar() {
       if (resp.ok) {
         setSubscribed(true);
         setEmail('');
+        trackNewsletterSignup('sticky_bar');
         setTimeout(handleDismiss, 3000);
       }
     } catch { /* ignore */ }

@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { trackNewsletterSignup } from '@/lib/analytics';
 
 export default function EndOfArticleCTA() {
   const [email, setEmail] = useState('');
@@ -19,6 +20,7 @@ export default function EndOfArticleCTA() {
       if (resp.ok) {
         setSubscribed(true);
         setEmail('');
+        trackNewsletterSignup('end_of_article');
       }
     } catch { /* ignore */ }
     setLoading(false);

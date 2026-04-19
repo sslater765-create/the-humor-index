@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { trackNewsletterSignup } from '@/lib/analytics';
 
 const DISMISS_KEY = 'humor_index_popup_dismissed';
 const DISMISS_DAYS = 30;
@@ -68,6 +69,7 @@ export default function NewsletterPopup() {
       if (resp.ok) {
         setSubscribed(true);
         setEmail('');
+        trackNewsletterSignup('popup');
         setTimeout(dismiss, 3000);
       }
     } catch { /* ignore */ }
