@@ -91,6 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               'https://x.com/thehumorindex',
               'https://instagram.com/thehumorindex',
               'https://tiktok.com/@thehumorindex',
+              'https://www.reddit.com/user/thehumorindex',
             ],
           }) }}
         />
