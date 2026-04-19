@@ -116,10 +116,16 @@ export default async function ShowPage({ params }: { params: { slug: string } })
             <span className="text-brand-text-secondary truncate max-w-[200px]">{show.name}</span>
           </nav>
           <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Show Analysis</p>
-          <h1 className="text-3xl sm:text-4xl font-medium text-brand-text-primary mb-2">
-            {show.name}
+          <h1 className={`font-medium text-brand-text-primary mb-2 flex flex-wrap items-baseline gap-x-3 gap-y-1 ${
+            show.name.length > 22
+              ? 'text-2xl sm:text-3xl md:text-4xl'
+              : show.name.length > 14
+                ? 'text-3xl sm:text-4xl'
+                : 'text-3xl sm:text-4xl md:text-5xl'
+          }`}>
+            <span>{show.name}</span>
             {show.humor_index > 0 && (
-              <span className="text-brand-gold font-mono text-xl sm:text-2xl ml-3 align-middle">
+              <span className="text-brand-gold font-mono text-xl sm:text-2xl md:text-3xl">
                 {formatIndex(show.humor_index)}
               </span>
             )}
