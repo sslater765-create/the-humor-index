@@ -38,9 +38,9 @@ const TIER_LABEL: Record<Tier, string> = {
 
 const TIER_DESCRIPTION: Record<Tier, string> = {
   all: 'Every character with at least 10 jokes analyzed.',
-  main: 'In 80%+ of the show\'s episodes — the core ensemble.',
-  recurring: '30–80% of episodes — regular supporting roles.',
-  guest: 'Under 30% of episodes — one-offs and short arcs.',
+  main: 'Appears in 80%+ of a show\'s episodes — the core ensemble.',
+  recurring: 'Appears in 30–80% of episodes — regular supporting players.',
+  guest: 'Appears in under 30% of episodes — one-offs and short arcs.',
 };
 
 function classifyTier(c: WarCharacter): Tier {
