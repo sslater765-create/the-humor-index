@@ -38,18 +38,19 @@ const TIER_LABEL: Record<Tier, string> = {
 
 const TIER_DESCRIPTION: Record<Tier, string> = {
   all: 'Every character with at least 10 jokes analyzed.',
-  main: 'Appears in 80%+ of a show\'s episodes — the core ensemble.',
-  recurring: 'Appears in 30–80% of episodes — regular supporting players.',
+  main: 'Appears in 70%+ of a show\'s episodes — the core ensemble.',
+  recurring: 'Appears in 30–70% of episodes — regular supporting players.',
   guest: 'Appears in under 30% of episodes — one-offs and short arcs.',
 };
 
 function classifyTier(c: WarCharacter): Tier {
-  // Show-proportional: anyone in 80%+ of the show's episodes is main cast.
+  // Show-proportional: anyone in 70%+ of the show's episodes is main cast.
+  // (Michael Scott left The Office in S7 — 149/201 = 74% — still main cast.)
   // Falls back to absolute thresholds when we don't know show total.
   const total = c.showTotalEpisodes;
   if (total > 0) {
     const ratio = c.episodesAppeared / total;
-    if (ratio >= 0.8) return 'main';
+    if (ratio >= 0.7) return 'main';
     if (ratio >= 0.3) return 'recurring';
     return 'guest';
   }
