@@ -40,6 +40,8 @@ interface BottomCharacter {
   quality: number;
   peakQuality: number | null;
   eliteRate: number | null;
+  vsCastmates: number | null;
+  vsCastmatesEps: number;
   actor?: string;
   profilePath?: string;
 }
@@ -84,6 +86,8 @@ export default async function LeastFunnyCharactersPage() {
           quality: q,
           peakQuality: c.peak_quality ?? null,
           eliteRate: c.elite_rate ?? null,
+          vsCastmates: c.vs_castmates_delta ?? null,
+          vsCastmatesEps: c.vs_castmates_episodes ?? 0,
           actor: c.actor,
           profilePath: c.profile_path,
         });
@@ -91,21 +95,23 @@ export default async function LeastFunnyCharactersPage() {
     } catch { /* skip */ }
   }
 
-  // Only show characters whose quality sits at or below the league median.
-  // Anything above the median is, by definition, not "below average" — so it
-  // shouldn't appear on a least-funny list at all.
+  // PRIMARY CUT: characters who rate below their own cast in the same episodes.
+  // This is the strongest signal — controlled comparison with same prompt, same
+  // LLM, same show context. Cross-show averages are biased by show/runtime/format;
+  // within-show vs-castmates is not.
   const ranked = all
-    .filter(c => c.quality < LEAGUE_MEDIAN)
-    .sort((a, b) => a.quality - b.quality);
+    .filter(c => c.vsCastmates !== null && c.vsCastmates < 0 && c.vsCastmatesEps >= 5)
+    .sort((a, b) => (a.vsCastmates ?? 0) - (b.vsCastmates ?? 0));
 
-  const belowReplacement = ranked.filter(c => c.quality < REPLACEMENT).length;
+  const belowMedian = all.filter(c => c.quality < LEAGUE_MEDIAN).length;
+  const belowReplacement = all.filter(c => c.quality < REPLACEMENT).length;
 
   return (
     <div>
       <PageHeader
         label="Rankings"
-        title="Below-Average Sitcom Characters"
-        subtitle="Main and recurring characters (30%+ of show episodes, 100+ jokes analyzed) whose joke scores sit below the league median. This measures the bits, not the character's value."
+        title="Characters Who Rate Below Their Own Castmates"
+        subtitle="For each episode, we compare a character's average joke quality to the rest of their cast in that same episode. Same prompt, same show, same LLM — the cleanest controlled comparison we can run. These are the recurring characters who trail their ensemble."
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-6">
@@ -116,33 +122,46 @@ export default async function LeastFunnyCharactersPage() {
           />
         </div>
 
-        {/* Context card */}
+        {/* Context cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
           <div className="bg-brand-surface border border-brand-border rounded-lg p-4">
-            <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">League median</p>
-            <p className="font-mono text-lg text-brand-text-primary mt-1">{LEAGUE_MEDIAN.toFixed(2)}</p>
-            <p className="text-xs text-brand-text-muted mt-1">Average joke quality across all characters.</p>
+            <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Below castmates</p>
+            <p className="font-mono text-lg text-brand-text-primary mt-1">{ranked.length}</p>
+            <p className="text-xs text-brand-text-muted mt-1">Characters who trail their own cast in same-episode head-to-head.</p>
           </div>
           <div className="bg-brand-surface border border-amber-500/30 rounded-lg p-4">
-            <p className="text-[10px] uppercase tracking-widest text-amber-400">Below median</p>
-            <p className="font-mono text-lg text-amber-400 mt-1">{ranked.length - belowReplacement}</p>
-            <p className="text-xs text-brand-text-muted mt-1">Quality between {REPLACEMENT.toFixed(2)} and {LEAGUE_MEDIAN.toFixed(2)}.</p>
+            <p className="text-[10px] uppercase tracking-widest text-amber-400">Below league median</p>
+            <p className="font-mono text-lg text-amber-400 mt-1">{belowMedian}</p>
+            <p className="text-xs text-brand-text-muted mt-1">Avg quality under {LEAGUE_MEDIAN.toFixed(2)} (global cross-show cut).</p>
           </div>
           <div className="bg-brand-surface border border-rose-500/30 rounded-lg p-4">
-            <p className="text-[10px] uppercase tracking-widest text-rose-400">Below replacement</p>
+            <p className="text-[10px] uppercase tracking-widest text-rose-400">Below WAR replacement</p>
             <p className="font-mono text-lg text-rose-400 mt-1">{belowReplacement}</p>
-            <p className="text-xs text-brand-text-muted mt-1">Quality under {REPLACEMENT.toFixed(2)} — the WAR floor.</p>
+            <p className="text-xs text-brand-text-muted mt-1">Avg quality under {REPLACEMENT.toFixed(2)} — WAR floors at zero here.</p>
           </div>
         </div>
 
-        <div className="bg-brand-surface/60 border border-brand-border rounded-lg p-4 mb-8 text-sm text-brand-text-secondary leading-relaxed">
-          <strong className="text-brand-text-secondary">Reading this chart:</strong> <span className="text-brand-text-primary">Avg quality</span> is
-          every joke averaged equally; <span className="text-brand-text-primary">peak quality</span> is
-          the top 20% of their bits. A character can sit below median on average and still have elite
-          peaks — that&rsquo;s the high-volume character archetype (Michael Scott, 3,265 jokes: avg
-          6.69, peak 7.83). Straight men and plot-drivers typically rate lower than scene-stealers
-          because they deliver setups for others to punch off of. This measures the bits, not the
-          character.
+        <div className="bg-brand-surface/60 border border-brand-border rounded-lg p-4 mb-8 text-sm text-brand-text-secondary leading-relaxed space-y-2">
+          <p>
+            <strong className="text-brand-text-primary">Headline metric: vs castmates.</strong>{' '}
+            For every episode a character is in, we average their joke scores and compare to the
+            rest of the cast in that same episode. A delta of{' '}
+            <span className="font-mono text-rose-400">&minus;0.15</span> means their jokes rate 0.15
+            points lower than their own castmates on a 10-point scale, averaged across all shared
+            episodes. Same LLM, same prompt, same show context — you&rsquo;re controlling for
+            show/format/era.
+          </p>
+          <p>
+            <strong className="text-brand-text-primary">Avg and peak</strong> give more context:
+            peak is the top 20% of their jokes. A character can trail castmates on average and still
+            have elite peaks (Michael Scott: &minus;0.126 vs cast, 6.69 avg, 7.83 peak — the
+            high-volume-character archetype).
+          </p>
+          <p>
+            Straight men and plot-drivers typically trail the scene-stealers because they deliver
+            the setups others punch off of. This measures the bits, not the character&rsquo;s value
+            to the show.
+          </p>
         </div>
 
         <div className="space-y-2">
@@ -197,13 +216,22 @@ export default async function LeastFunnyCharactersPage() {
                     />
                   </div>
                 </div>
-                <div className="text-right shrink-0 flex items-center gap-4">
-                  <div className="w-16">
+                <div className="text-right shrink-0 flex items-center gap-3 sm:gap-4">
+                  {c.vsCastmates != null && (
+                    <div className="w-20">
+                      <p className={`font-mono text-sm ${c.vsCastmates <= -0.15 ? 'text-rose-400' : c.vsCastmates < 0 ? 'text-amber-400' : 'text-brand-text-primary'}`}>
+                        {c.vsCastmates >= 0 ? '+' : ''}{c.vsCastmates.toFixed(3)}
+                      </p>
+                      <p className="text-[10px] text-brand-text-muted">vs cast</p>
+                      <p className="text-[10px] text-brand-text-muted">{c.vsCastmatesEps} eps</p>
+                    </div>
+                  )}
+                  <div className="w-14 hidden sm:block">
                     <p className={`font-mono text-sm ${t.color}`}>{c.quality.toFixed(2)}</p>
                     <p className="text-[10px] text-brand-text-muted">avg</p>
                   </div>
                   {c.peakQuality != null && (
-                    <div className="w-16">
+                    <div className="w-14 hidden sm:block">
                       <p className={`font-mono text-sm ${c.peakQuality >= 7.75 ? 'text-emerald-400' : c.peakQuality >= 7.5 ? 'text-brand-gold' : 'text-brand-text-primary'}`}>
                         {c.peakQuality.toFixed(2)}
                       </p>
@@ -218,24 +246,32 @@ export default async function LeastFunnyCharactersPage() {
 
         {ranked.length === 0 && (
           <div className="text-center py-12 text-brand-text-muted">
-            No main/recurring characters currently score below the league median.
+            No recurring characters currently trail their own castmates.
           </div>
         )}
 
-        <div className="mt-12 border-t border-brand-border pt-8">
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-3">Methodology</p>
-          <p className="text-sm text-brand-text-secondary leading-relaxed max-w-2xl">
-            Quality index = (average craft score + average impact score) / 2, averaged across every
-            joke attributed to the character. Only main and recurring characters appear
-            ({'>'}30% of a show&rsquo;s episodes, 100+ jokes analyzed) — so bit-part guests
-            can&rsquo;t skew the list. The league median and replacement floor come from the same
-            constants used for our{' '}
-            <Link href="/rankings/funniest-characters" className="text-brand-gold hover:underline">
-              WAR ranking
-            </Link>
-            . See the{' '}
-            <Link href="/methodology" className="text-brand-gold hover:underline">full methodology</Link>.
-          </p>
+        <div className="mt-12 border-t border-brand-border pt-8 space-y-4 max-w-2xl">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-2">vs castmates — how it&rsquo;s computed</p>
+            <p className="text-sm text-brand-text-secondary leading-relaxed">
+              For every episode a character appears in, we take the mean quality (craft + impact / 2)
+              of their jokes and compare it to the mean of everyone else&rsquo;s jokes in that same
+              episode. We average those per-episode deltas across all shared episodes (minimum 5
+              for stability). This design cancels out show-level, season-level, and prompt-level
+              biases because both sides are scored by the same model in the same call.
+            </p>
+          </div>
+          <div>
+            <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-2">Supporting metrics</p>
+            <p className="text-sm text-brand-text-secondary leading-relaxed">
+              Avg quality is every joke weighted equally; peak quality is the top 20% of the
+              character&rsquo;s jokes. Only main and recurring characters appear ({'>'}30% of a
+              show&rsquo;s episodes, 100+ jokes analyzed). See the{' '}
+              <Link href="/rankings/funniest-characters" className="text-brand-gold hover:underline">WAR ranking</Link>
+              {' '}and{' '}
+              <Link href="/methodology" className="text-brand-gold hover:underline">full methodology</Link> for context.
+            </p>
+          </div>
         </div>
       </div>
     </div>

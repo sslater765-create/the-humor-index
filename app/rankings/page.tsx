@@ -40,6 +40,7 @@ interface TopCharacter {
   totalJokes: number;
   war: number;
   quality: number;
+  vsCastmates: number | null;
   episodesAppeared: number;
   showTotalEpisodes: number;
 }
@@ -117,6 +118,7 @@ export default async function RankingsPage() {
           totalJokes: c.total_jokes,
           war: c.war ?? 0,
           quality: ((c.avg_craft ?? 0) + (c.avg_impact ?? 0)) / 2,
+          vsCastmates: c.vs_castmates_delta ?? null,
           episodesAppeared: c.episodes_appeared ?? 0,
           showTotalEpisodes: show.total_episodes || 0,
         });
@@ -126,11 +128,17 @@ export default async function RankingsPage() {
   const topCharacters: TopCharacter[] = [...allCharacters]
     .sort((a, b) => b.war - a.war)
     .slice(0, 3);
-  // Least-funny: restrict to meaningful screen time (main/recurring — 30%+ of show's episodes)
-  // so we don't rank bit-part guests as "worst"
+  // Least-funny: same-episode head-to-head against the rest of the cast.
+  // Negative vsCastmates = rates lower than teammates in episodes they share.
+  // This is the cleanest signal (controlled comparison) vs. global quality cuts.
   const bottomCharacters: TopCharacter[] = allCharacters
-    .filter(c => c.showTotalEpisodes > 0 && c.episodesAppeared / c.showTotalEpisodes >= 0.3)
-    .sort((a, b) => a.quality - b.quality)
+    .filter(c =>
+      c.showTotalEpisodes > 0 &&
+      c.episodesAppeared / c.showTotalEpisodes >= 0.3 &&
+      c.vsCastmates !== null &&
+      c.vsCastmates < 0
+    )
+    .sort((a, b) => (a.vsCastmates ?? 0) - (b.vsCastmates ?? 0))
     .slice(0, 3);
 
   // Show matchup data
@@ -305,9 +313,9 @@ export default async function RankingsPage() {
             href="/rankings/least-funny-characters"
             className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
           >
-            <p className="text-xs uppercase tracking-widest text-rose-400 mb-1">Below Average</p>
+            <p className="text-xs uppercase tracking-widest text-rose-400 mb-1">Below Their Cast</p>
             <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
-              Characters Below the League Median
+              Who Trails Their Own Ensemble
             </h2>
             <div className="space-y-2.5">
               {bottomCharacters.map((char, i) => (
@@ -315,10 +323,10 @@ export default async function RankingsPage() {
                   <RankBadge rank={i + 1} />
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-medium text-brand-text-primary">{char.name}</p>
-                    <p className="text-xs text-brand-text-muted">{char.showName} &middot; {char.totalJokes} jokes</p>
+                    <p className="text-xs text-brand-text-muted">{char.showName} &middot; vs castmates</p>
                   </div>
                   <span className="font-mono text-sm text-rose-400">
-                    {char.quality.toFixed(2)}
+                    {char.vsCastmates != null ? `${char.vsCastmates.toFixed(3)}` : '—'}
                   </span>
                 </div>
               ))}

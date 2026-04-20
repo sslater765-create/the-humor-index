@@ -136,6 +136,8 @@ export interface CharacterProfile {
   war?: number;
   peak_quality?: number | null;
   elite_rate?: number | null;
+  vs_castmates_delta?: number | null;
+  vs_castmates_episodes?: number;
 }
 
 export interface CharacterStats {
