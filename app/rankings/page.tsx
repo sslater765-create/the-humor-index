@@ -39,6 +39,9 @@ interface TopCharacter {
   showName: string;
   totalJokes: number;
   war: number;
+  quality: number;
+  episodesAppeared: number;
+  showTotalEpisodes: number;
 }
 
 export default async function RankingsPage() {
@@ -101,7 +104,7 @@ export default async function RankingsPage() {
     .sort((a, b) => b.humor_index - a.humor_index)
     .slice(0, 3);
 
-  // Top 3 characters — pull from canonical characters.json per show (already de-duped + merged)
+  // Top + bottom characters — pull from canonical characters.json per show (already de-duped + merged)
   const allCharacters: TopCharacter[] = [];
   for (const show of analyzedShows) {
     try {
@@ -113,12 +116,21 @@ export default async function RankingsPage() {
           showName: show.name,
           totalJokes: c.total_jokes,
           war: c.war ?? 0,
+          quality: ((c.avg_craft ?? 0) + (c.avg_impact ?? 0)) / 2,
+          episodesAppeared: c.episodes_appeared ?? 0,
+          showTotalEpisodes: show.total_episodes || 0,
         });
       }
     } catch { /* skip show without characters.json */ }
   }
-  const topCharacters: TopCharacter[] = allCharacters
+  const topCharacters: TopCharacter[] = [...allCharacters]
     .sort((a, b) => b.war - a.war)
+    .slice(0, 3);
+  // Least-funny: restrict to meaningful screen time (main/recurring — 30%+ of show's episodes)
+  // so we don't rank bit-part guests as "worst"
+  const bottomCharacters: TopCharacter[] = allCharacters
+    .filter(c => c.showTotalEpisodes > 0 && c.episodesAppeared / c.showTotalEpisodes >= 0.3)
+    .sort((a, b) => a.quality - b.quality)
     .slice(0, 3);
 
   // Show matchup data
@@ -285,6 +297,34 @@ export default async function RankingsPage() {
             </div>
             <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
               See the bottom 50 &rarr;
+            </p>
+          </Link>
+
+          {/* Least Funny Characters */}
+          <Link
+            href="/rankings/least-funny-characters"
+            className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
+          >
+            <p className="text-xs uppercase tracking-widest text-rose-400 mb-1">The Other End</p>
+            <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
+              The Least Funny Characters
+            </h2>
+            <div className="space-y-2.5">
+              {bottomCharacters.map((char, i) => (
+                <div key={char.name} className="flex items-center gap-3 bg-brand-surface rounded-lg px-3 py-2.5">
+                  <RankBadge rank={i + 1} />
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-medium text-brand-text-primary">{char.name}</p>
+                    <p className="text-xs text-brand-text-muted">{char.showName} &middot; {char.totalJokes} jokes</p>
+                  </div>
+                  <span className="font-mono text-sm text-rose-400">
+                    {char.quality.toFixed(2)}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
+              See full list &rarr;
             </p>
           </Link>
 

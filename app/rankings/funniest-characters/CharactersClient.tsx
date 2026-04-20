@@ -59,7 +59,7 @@ function classifyTier(c: WarCharacter): Tier {
   return 'guest';
 }
 
-export default function CharactersClient({ characters }: { characters: WarCharacter[] }) {
+export default function CharactersClient({ characters, ascending = false }: { characters: WarCharacter[]; ascending?: boolean }) {
   const [sortMode, setSortMode] = useState<SortMode>('total_war');
   const [tier, setTier] = useState<Tier>('all');
   const [showSlug, setShowSlug] = useState<string>('all');
@@ -89,11 +89,18 @@ export default function CharactersClient({ characters }: { characters: WarCharac
   }, [characters, showSlug, formatFilter, tier]);
 
   const filtered = useMemo(() => {
-    const sorted = [...baseList].sort((a, b) =>
-      sortMode === 'total_war' ? b.war - a.war : b.warPerEpisode - a.warPerEpisode
-    );
+    const sorted = [...baseList].sort((a, b) => {
+      if (ascending) {
+        // Sort by quality (craft+impact)/2 ascending — least funny first.
+        // WAR is 0-floored so it's useless for ranking the bottom.
+        const qa = (a.avgCraft + a.avgImpact) / 2;
+        const qb = (b.avgCraft + b.avgImpact) / 2;
+        return qa - qb;
+      }
+      return sortMode === 'total_war' ? b.war - a.war : b.warPerEpisode - a.warPerEpisode;
+    });
     return sorted.slice(0, 25);
-  }, [baseList, sortMode]);
+  }, [baseList, sortMode, ascending]);
 
   // Two-tower view: side-by-side leaderboards for Total WAR vs WAR/ep
   const towerList = useMemo(() => {
