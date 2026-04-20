@@ -38,6 +38,8 @@ interface BottomCharacter {
   avgCraft: number;
   avgImpact: number;
   quality: number;
+  peakQuality: number | null;
+  eliteRate: number | null;
   actor?: string;
   profilePath?: string;
 }
@@ -80,6 +82,8 @@ export default async function LeastFunnyCharactersPage() {
           avgCraft: c.avg_craft ?? 0,
           avgImpact: c.avg_impact ?? 0,
           quality: q,
+          peakQuality: c.peak_quality ?? null,
+          eliteRate: c.elite_rate ?? null,
           actor: c.actor,
           profilePath: c.profile_path,
         });
@@ -132,13 +136,13 @@ export default async function LeastFunnyCharactersPage() {
         </div>
 
         <div className="bg-brand-surface/60 border border-brand-border rounded-lg p-4 mb-8 text-sm text-brand-text-secondary leading-relaxed">
-          <strong className="text-brand-text-secondary">Reading this chart:</strong> Quality index =
-          average craft + average impact, /2. Characters above the league median aren&rsquo;t shown —
-          they&rsquo;re, by definition, not below average. Characters below replacement have joke
-          scores under the WAR baseline (which is why they show a total WAR of zero).
-          &ldquo;Below average&rdquo; is a measurement of the bits, not the character: plot-drivers,
-          straight men, and romantic leads often rate lower because they deliver setups the others
-          punch off of.
+          <strong className="text-brand-text-secondary">Reading this chart:</strong> <span className="text-brand-text-primary">Avg quality</span> is
+          every joke averaged equally; <span className="text-brand-text-primary">peak quality</span> is
+          the top 20% of their bits. A character can sit below median on average and still have elite
+          peaks — that&rsquo;s the high-volume character archetype (Michael Scott, 3,265 jokes: avg
+          6.69, peak 7.83). Straight men and plot-drivers typically rate lower than scene-stealers
+          because they deliver setups for others to punch off of. This measures the bits, not the
+          character.
         </div>
 
         <div className="space-y-2">
@@ -193,9 +197,19 @@ export default async function LeastFunnyCharactersPage() {
                     />
                   </div>
                 </div>
-                <div className="text-right shrink-0 w-24">
-                  <p className={`font-mono text-sm ${t.color}`}>{c.quality.toFixed(2)}</p>
-                  <p className="text-[10px] text-brand-text-muted">{t.label}</p>
+                <div className="text-right shrink-0 flex items-center gap-4">
+                  <div className="w-16">
+                    <p className={`font-mono text-sm ${t.color}`}>{c.quality.toFixed(2)}</p>
+                    <p className="text-[10px] text-brand-text-muted">avg</p>
+                  </div>
+                  {c.peakQuality != null && (
+                    <div className="w-16">
+                      <p className={`font-mono text-sm ${c.peakQuality >= 7.75 ? 'text-emerald-400' : c.peakQuality >= 7.5 ? 'text-brand-gold' : 'text-brand-text-primary'}`}>
+                        {c.peakQuality.toFixed(2)}
+                      </p>
+                      <p className="text-[10px] text-brand-text-muted">peak</p>
+                    </div>
+                  )}
                 </div>
               </Link>
             );

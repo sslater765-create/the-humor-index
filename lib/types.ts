@@ -134,6 +134,8 @@ export interface CharacterProfile {
   profile_path?: string;
   character_full_name?: string;
   war?: number;
+  peak_quality?: number | null;
+  elite_rate?: number | null;
 }
 
 export interface CharacterStats {
