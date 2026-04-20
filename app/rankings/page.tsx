@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getAllShows, getEpisodes, getEpisodeDetail } from '@/lib/data';
+import { getAllShows, getEpisodes, getEpisodeDetail, getCharacters } from '@/lib/data';
 import { formatIndex, scoreToGrade, scoreToColor } from '@/lib/scoring';
 import PageHeader from '@/components/layout/PageHeader';
 import RankBadge from '@/components/ui/RankBadge';
@@ -41,11 +41,6 @@ interface TopCharacter {
   combined: number;
 }
 
-const EXCLUDED_CHARACTERS = new Set([
-  'Unknown', 'Others', 'Multiple', 'Everyone', 'Employee',
-  'Man', 'Woman', 'Narrator', 'All', 'Group', 'Various',
-]);
-
 export default async function RankingsPage() {
   const shows = await getAllShows();
   const analyzedShows = shows.filter(s => s.humor_index > 0);
@@ -54,7 +49,6 @@ export default async function RankingsPage() {
   const allEpisodes: RankedEpisode[] = [];
   let topJoke: TopJoke | null = null;
   let topJokeScore = 0;
-  const charMap = new Map<string, { name: string; showName: string; totalJokes: number; craftSum: number; impactSum: number }>();
   let totalJokesScored = 0;
 
   for (const show of analyzedShows) {
@@ -95,25 +89,7 @@ export default async function RankingsPage() {
               };
             }
 
-            // Character aggregation
-            for (const char of (joke.characters || [])) {
-              if (EXCLUDED_CHARACTERS.has(char)) continue;
-              const key = `${char}::${show.name}`;
-              const existing = charMap.get(key);
-              if (existing) {
-                existing.totalJokes++;
-                existing.craftSum += joke.craft_total || 0;
-                existing.impactSum += joke.impact_score || 0;
-              } else {
-                charMap.set(key, {
-                  name: char,
-                  showName: show.name,
-                  totalJokes: 1,
-                  craftSum: joke.craft_total || 0,
-                  impactSum: joke.impact_score || 0,
-                });
-              }
-            }
+            // (character aggregation moved below — uses canonical characters.json instead of raw joke strings)
           }
         } catch { /* skip episode */ }
       }
@@ -125,16 +101,23 @@ export default async function RankingsPage() {
     .sort((a, b) => b.humor_index - a.humor_index)
     .slice(0, 3);
 
-  // Top 3 characters (100+ jokes)
-  // combined = avg craft + avg impact (same formula as funniest-characters page)
-  const topCharacters: TopCharacter[] = Array.from(charMap.values())
-    .filter(c => c.totalJokes >= 100)
-    .map(c => ({
-      name: c.name,
-      showName: c.showName,
-      totalJokes: c.totalJokes,
-      combined: (c.craftSum + c.impactSum) / c.totalJokes,
-    }))
+  // Top 3 characters — pull from canonical characters.json per show (already de-duped + merged)
+  const allCharacters: TopCharacter[] = [];
+  for (const show of analyzedShows) {
+    try {
+      const chars = await getCharacters(show.slug);
+      for (const c of chars) {
+        if (c.total_jokes < 100) continue;
+        allCharacters.push({
+          name: c.character_full_name || c.name,
+          showName: show.name,
+          totalJokes: c.total_jokes,
+          combined: (c.avg_craft ?? 0) + (c.avg_impact ?? 0),
+        });
+      }
+    } catch { /* skip show without characters.json */ }
+  }
+  const topCharacters: TopCharacter[] = allCharacters
     .sort((a, b) => b.combined - a.combined)
     .slice(0, 3);
 

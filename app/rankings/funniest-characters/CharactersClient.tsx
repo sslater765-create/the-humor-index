@@ -12,6 +12,7 @@ export interface WarCharacter {
   warPerEpisode: number;
   totalJokes: number;
   episodesAppeared: number;
+  showTotalEpisodes: number;
   avgCraft: number;
   avgImpact: number;
 }
@@ -37,12 +38,21 @@ const TIER_LABEL: Record<Tier, string> = {
 
 const TIER_DESCRIPTION: Record<Tier, string> = {
   all: 'Every character with at least 10 jokes analyzed.',
-  main: '200+ episodes or 1,000+ jokes — the show\'s core ensemble.',
-  recurring: '25–200 episodes — regular supporting roles.',
-  guest: 'Under 25 episodes — one-offs and short arcs.',
+  main: 'In 80%+ of the show\'s episodes — the core ensemble.',
+  recurring: '30–80% of episodes — regular supporting roles.',
+  guest: 'Under 30% of episodes — one-offs and short arcs.',
 };
 
 function classifyTier(c: WarCharacter): Tier {
+  // Show-proportional: anyone in 80%+ of the show's episodes is main cast.
+  // Falls back to absolute thresholds when we don't know show total.
+  const total = c.showTotalEpisodes;
+  if (total > 0) {
+    const ratio = c.episodesAppeared / total;
+    if (ratio >= 0.8) return 'main';
+    if (ratio >= 0.3) return 'recurring';
+    return 'guest';
+  }
   if (c.episodesAppeared >= 200 || c.totalJokes >= 1000) return 'main';
   if (c.episodesAppeared >= 25) return 'recurring';
   return 'guest';

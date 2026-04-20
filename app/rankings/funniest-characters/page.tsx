@@ -31,6 +31,7 @@ export default async function FunniestCharactersPage() {
       chars = await getCharacters(show.slug);
     } catch { continue; }
 
+    const showTotalEpisodes = show.total_episodes || 0;
     for (const c of chars) {
       if (c.total_jokes < 10) continue;
       warChars.push({
@@ -42,6 +43,7 @@ export default async function FunniestCharactersPage() {
         warPerEpisode: c.episodes_appeared ? (c.war ?? 0) / c.episodes_appeared : 0,
         totalJokes: c.total_jokes,
         episodesAppeared: c.episodes_appeared ?? 0,
+        showTotalEpisodes,
         avgCraft: c.avg_craft ?? 0,
         avgImpact: c.avg_impact ?? 0,
       });
