@@ -305,9 +305,9 @@ export default async function RankingsPage() {
             href="/rankings/least-funny-characters"
             className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
           >
-            <p className="text-xs uppercase tracking-widest text-rose-400 mb-1">The Other End</p>
+            <p className="text-xs uppercase tracking-widest text-rose-400 mb-1">Below Average</p>
             <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
-              The Least Funny Characters
+              Characters Below the League Median
             </h2>
             <div className="space-y-2.5">
               {bottomCharacters.map((char, i) => (
