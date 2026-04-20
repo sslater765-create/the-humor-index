@@ -31,7 +31,7 @@ export interface RankedEpisode {
   ci_95_high?: number;
 }
 
-export default function EpisodesClient({ episodes }: { episodes: RankedEpisode[] }) {
+export default function EpisodesClient({ episodes, ascending = false }: { episodes: RankedEpisode[]; ascending?: boolean }) {
   const [format, setFormat] = useState<'all' | ShowFormat>('all');
   const [showSlug, setShowSlug] = useState<string>('all');
 
@@ -49,8 +49,8 @@ export default function EpisodesClient({ episodes }: { episodes: RankedEpisode[]
     let list = episodes;
     if (format !== 'all') list = list.filter(e => e.showFormat === format);
     if (showSlug !== 'all') list = list.filter(e => e.showSlug === showSlug);
-    return [...list].sort((a, b) => b.humor_index - a.humor_index).slice(0, 50);
-  }, [episodes, format, showSlug]);
+    return [...list].sort((a, b) => ascending ? a.humor_index - b.humor_index : b.humor_index - a.humor_index).slice(0, 50);
+  }, [episodes, format, showSlug, ascending]);
 
   return (
     <div>

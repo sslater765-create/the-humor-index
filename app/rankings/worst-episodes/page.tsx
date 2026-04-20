@@ -109,7 +109,7 @@ export default async function WorstEpisodesPage() {
           context.
         </div>
 
-        <EpisodesClient episodes={ranked} />
+        <EpisodesClient episodes={ranked} ascending />
 
         <div className="mt-12 border-t border-brand-border pt-8">
           <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-3">Methodology</p>
