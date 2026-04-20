@@ -77,7 +77,7 @@ export default function ShowsGrid({ shows }: { shows: ShowScore[] }) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <AnimatePresence mode="popLayout">
-          {filtered.map(show => (
+          {filtered.map((show, i) => (
             <motion.div
               key={show.slug}
               layout
@@ -86,7 +86,7 @@ export default function ShowsGrid({ shows }: { shows: ShowScore[] }) {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25, ease: 'easeOut' }}
             >
-              <ShowCard show={show} />
+              <ShowCard show={{ ...show, rank: show.humor_index > 0 ? i + 1 : undefined }} />
             </motion.div>
           ))}
         </AnimatePresence>
