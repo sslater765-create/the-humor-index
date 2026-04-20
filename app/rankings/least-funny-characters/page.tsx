@@ -42,6 +42,7 @@ interface BottomCharacter {
   eliteRate: number | null;
   vsCastmates: number | null;
   vsCastmatesEps: number;
+  vsCastmatesCiHalf: number | null;
   actor?: string;
   profilePath?: string;
 }
@@ -88,6 +89,7 @@ export default async function LeastFunnyCharactersPage() {
           eliteRate: c.elite_rate ?? null,
           vsCastmates: c.vs_castmates_delta ?? null,
           vsCastmatesEps: c.vs_castmates_episodes ?? 0,
+          vsCastmatesCiHalf: c.vs_castmates_ci_half ?? null,
           actor: c.actor,
           profilePath: c.profile_path,
         });
@@ -95,13 +97,27 @@ export default async function LeastFunnyCharactersPage() {
     } catch { /* skip */ }
   }
 
-  // PRIMARY CUT: characters who rate below their own cast in the same episodes.
-  // This is the strongest signal — controlled comparison with same prompt, same
-  // LLM, same show context. Cross-show averages are biased by show/runtime/format;
-  // within-show vs-castmates is not.
+  // PRIMARY CUT: characters whose vs-castmates delta is STATISTICALLY significant
+  // at 95% — i.e. delta + CI half-width < 0. Controlled comparison with same
+  // prompt, same LLM, same show context; the CI catches small-sample flukes.
   const ranked = all
-    .filter(c => c.vsCastmates !== null && c.vsCastmates < 0 && c.vsCastmatesEps >= 5)
+    .filter(c =>
+      c.vsCastmates !== null &&
+      c.vsCastmatesCiHalf !== null &&
+      c.vsCastmates + c.vsCastmatesCiHalf < 0 && // upper bound of CI still negative
+      c.vsCastmatesEps >= 5
+    )
     .sort((a, b) => (a.vsCastmates ?? 0) - (b.vsCastmates ?? 0));
+
+  // Characters with a negative point-estimate but CI crossing zero — suggestive but not conclusive
+  const suggestive = all
+    .filter(c =>
+      c.vsCastmates !== null &&
+      c.vsCastmates < 0 &&
+      c.vsCastmatesCiHalf !== null &&
+      c.vsCastmates + c.vsCastmatesCiHalf >= 0 &&
+      c.vsCastmatesEps >= 5
+    ).length;
 
   const belowMedian = all.filter(c => c.quality < LEAGUE_MEDIAN).length;
   const belowReplacement = all.filter(c => c.quality < REPLACEMENT).length;
@@ -124,32 +140,33 @@ export default async function LeastFunnyCharactersPage() {
 
         {/* Context cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
-          <div className="bg-brand-surface border border-brand-border rounded-lg p-4">
-            <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Below castmates</p>
-            <p className="font-mono text-lg text-brand-text-primary mt-1">{ranked.length}</p>
-            <p className="text-xs text-brand-text-muted mt-1">Characters who trail their own cast in same-episode head-to-head.</p>
+          <div className="bg-brand-surface border border-rose-500/30 rounded-lg p-4">
+            <p className="text-[10px] uppercase tracking-widest text-rose-400">Statistically below cast</p>
+            <p className="font-mono text-lg text-rose-400 mt-1">{ranked.length}</p>
+            <p className="text-xs text-brand-text-muted mt-1">95% CI on their vs-cast delta stays negative — real finding.</p>
           </div>
           <div className="bg-brand-surface border border-amber-500/30 rounded-lg p-4">
-            <p className="text-[10px] uppercase tracking-widest text-amber-400">Below league median</p>
-            <p className="font-mono text-lg text-amber-400 mt-1">{belowMedian}</p>
-            <p className="text-xs text-brand-text-muted mt-1">Avg quality under {LEAGUE_MEDIAN.toFixed(2)} (global cross-show cut).</p>
+            <p className="text-[10px] uppercase tracking-widest text-amber-400">Suggestive but noisy</p>
+            <p className="font-mono text-lg text-amber-400 mt-1">{suggestive}</p>
+            <p className="text-xs text-brand-text-muted mt-1">Point estimate negative but CI crosses zero — within noise.</p>
           </div>
-          <div className="bg-brand-surface border border-rose-500/30 rounded-lg p-4">
-            <p className="text-[10px] uppercase tracking-widest text-rose-400">Below WAR replacement</p>
-            <p className="font-mono text-lg text-rose-400 mt-1">{belowReplacement}</p>
+          <div className="bg-brand-surface border border-brand-border rounded-lg p-4">
+            <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Below WAR replacement</p>
+            <p className="font-mono text-lg text-brand-text-primary mt-1">{belowReplacement}</p>
             <p className="text-xs text-brand-text-muted mt-1">Avg quality under {REPLACEMENT.toFixed(2)} — WAR floors at zero here.</p>
           </div>
         </div>
 
         <div className="bg-brand-surface/60 border border-brand-border rounded-lg p-4 mb-8 text-sm text-brand-text-secondary leading-relaxed space-y-2">
           <p>
-            <strong className="text-brand-text-primary">Headline metric: vs castmates.</strong>{' '}
-            For every episode a character is in, we average their joke scores and compare to the
-            rest of the cast in that same episode. A delta of{' '}
-            <span className="font-mono text-rose-400">&minus;0.15</span> means their jokes rate 0.15
-            points lower than their own castmates on a 10-point scale, averaged across all shared
-            episodes. Same LLM, same prompt, same show context — you&rsquo;re controlling for
-            show/format/era.
+            <strong className="text-brand-text-primary">Headline metric: vs castmates, with a 95% CI.</strong>{' '}
+            For every episode a character appears in, we compare their average joke quality to the
+            rest of the cast in that same episode, then average across episodes. Same LLM, same
+            prompt, same show context. The <span className="font-mono">± value</span> next to each
+            delta is the 95% confidence interval half-width — <em>only characters whose upper
+            bound is still negative appear here</em>. Small-sample flukes (Erin Hannon, Toby
+            Flenderson) are automatically filtered out even though their point estimates are
+            negative.
           </p>
           <p>
             <strong className="text-brand-text-primary">Avg and peak</strong> give more context:
@@ -218,12 +235,14 @@ export default async function LeastFunnyCharactersPage() {
                 </div>
                 <div className="text-right shrink-0 flex items-center gap-3 sm:gap-4">
                   {c.vsCastmates != null && (
-                    <div className="w-20">
-                      <p className={`font-mono text-sm ${c.vsCastmates <= -0.15 ? 'text-rose-400' : c.vsCastmates < 0 ? 'text-amber-400' : 'text-brand-text-primary'}`}>
+                    <div className="w-28">
+                      <p className={`font-mono text-sm ${c.vsCastmates <= -0.15 ? 'text-rose-400' : 'text-amber-400'}`}>
                         {c.vsCastmates >= 0 ? '+' : ''}{c.vsCastmates.toFixed(3)}
+                        {c.vsCastmatesCiHalf != null && (
+                          <span className="text-brand-text-muted"> ±{c.vsCastmatesCiHalf.toFixed(2)}</span>
+                        )}
                       </p>
-                      <p className="text-[10px] text-brand-text-muted">vs cast</p>
-                      <p className="text-[10px] text-brand-text-muted">{c.vsCastmatesEps} eps</p>
+                      <p className="text-[10px] text-brand-text-muted">vs cast · {c.vsCastmatesEps} eps</p>
                     </div>
                   )}
                   <div className="w-14 hidden sm:block">

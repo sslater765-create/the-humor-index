@@ -138,6 +138,7 @@ export interface CharacterProfile {
   elite_rate?: number | null;
   vs_castmates_delta?: number | null;
   vs_castmates_episodes?: number;
+  vs_castmates_ci_half?: number | null;
 }
 
 export interface CharacterStats {
