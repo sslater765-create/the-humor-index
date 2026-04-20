@@ -38,7 +38,7 @@ interface TopCharacter {
   name: string;
   showName: string;
   totalJokes: number;
-  combined: number;
+  war: number;
 }
 
 export default async function RankingsPage() {
@@ -112,13 +112,13 @@ export default async function RankingsPage() {
           name: c.character_full_name || c.name,
           showName: show.name,
           totalJokes: c.total_jokes,
-          combined: (c.avg_craft ?? 0) + (c.avg_impact ?? 0),
+          war: c.war ?? 0,
         });
       }
     } catch { /* skip show without characters.json */ }
   }
   const topCharacters: TopCharacter[] = allCharacters
-    .sort((a, b) => b.combined - a.combined)
+    .sort((a, b) => b.war - a.war)
     .slice(0, 3);
 
   // Show matchup data
@@ -230,7 +230,7 @@ export default async function RankingsPage() {
                     <p className="text-xs text-brand-text-muted">{char.showName} &middot; {char.totalJokes} jokes</p>
                   </div>
                   <span className="font-mono text-sm text-brand-gold">
-                    {char.combined.toFixed(1)}
+                    {char.war.toFixed(0)}
                   </span>
                 </div>
               ))}
