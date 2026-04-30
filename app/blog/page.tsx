@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'parks-passes-office',
+    title: 'Parks and Recreation Just Took the #1 Spot. The Office Held It for Six Months.',
+    description: 'After scoring all 126 Parks and Rec episodes, Pawnee edges Scranton 80.55 to 80.22. The margin is inside our noise floor — but every secondary metric points the same direction, and Ron Swanson is now the highest-quality lead character on the site.',
+    date: '2026-04-30',
+    category: 'Analysis',
+    readTime: '7 min read',
+    stat: '80.55',
+    statLabel: 'Parks Humor Index (#1)',
+  },
+  {
     slug: 'scorer-noise-floor',
     title: 'We Rescored 30 Episodes Twice. Our Single-Run Humor Index Has an ICC of 0.28.',
     description: 'A test-retest study on 30 episodes. Show-identity bias is tiny (not significant). But the scorer is noisier than we thought — individual episode Humor Indexes are only 28% signal, 72% run-to-run variance. Here\'s what we\'re doing about it.',

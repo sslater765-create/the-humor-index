@@ -17,6 +17,84 @@ const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'parks-passes-office': {
+    title: 'Parks and Recreation Just Took the #1 Spot. The Office Held It for Six Months.',
+    description: 'After scoring all 126 Parks and Rec episodes, Pawnee edges Scranton 80.55 to 80.22. The margin is inside our noise floor — but every secondary metric points the same direction, and Ron Swanson is now the highest-quality lead character on the site.',
+    date: '2026-04-30',
+    category: 'Analysis',
+    content: `
+For six months, the leaderboard at the top of this site has read the same way. The Office was the funniest sitcom we'd measured. Seinfeld was second, Friends third, everything else was a placeholder waiting on transcripts.
+
+Last week we finished scoring all 126 episodes of Parks and Recreation. **Parks is now #1 with a Humor Index of 80.55. The Office is #2 at 80.22.**
+
+The margin is 0.33 points. We've published two separate posts ([here](/blog/scorer-noise-floor) and [here](/blog/bayesian-credible-intervals)) explaining that a gap that small is well inside the run-to-run noise of our scorer. We are not claiming Parks is provably funnier than The Office. What we are claiming is that the show that has been quietly second-place in every "best sitcom of the 2010s" conversation for a decade now has, by every metric we can put numbers on, caught up.
+
+## The headline numbers
+
+Side by side:
+
+- **Parks and Recreation:** 80.55 HI · 126 episodes · 7,296 jokes · 7.0 craft · 6.71 impact · 2.28 JPM
+- **The Office:** 80.22 HI · 201 episodes · 10,044 jokes · 6.87 craft · 6.67 impact · 2.38 JPM
+
+The Office has more episodes (and almost 3,000 more jokes) because it ran two and a half more seasons. But the per-joke quality numbers favor Parks across the board: higher craft (7.0 vs 6.87), higher impact (6.71 vs 6.67), and effectively identical joke density (the 0.10 JPM gap is one extra joke every ten minutes).
+
+If you simulate "what if Parks had run as long as The Office" — extrapolating its rate of joke production over another 75 episodes — Parks ends up with roughly 11,400 analyzed jokes at the same craft and impact. The volume gap closes, the quality gap doesn't.
+
+## The Season 8 problem
+
+Here is the part of the argument that the data makes uncomfortably clear.
+
+The Office's average is dragged down by the post-Carell era. Seasons 8 and 9 are the lowest-scoring seasons of the show, and they account for 47 of its 201 episodes — almost a quarter of the run. If you cut The Office at "Goodbye, Michael" and average only the first seven seasons, the show's Humor Index lands somewhere north of 82. That version of The Office beats Parks comfortably.
+
+But that's not the show that aired. The show that aired is 201 episodes including James Spader and the warehouse-couples-arc and the Andy-on-a-boat. We have to score the show that exists.
+
+Parks does not have this problem. **Parks Season 7, the final season, scores 82.89 — the highest single-season average we've measured on any show.** It went out at the top. The show's worst season was its 6-episode pilot run in 2009, which we should arguably not even be counting (Season 1 of Parks is famously where the writers were still figuring out the tone — the show people remember basically starts in Season 2).
+
+If you exclude the 6-episode pilot season from Parks, its Humor Index climbs to 80.93. If you exclude Seasons 8 and 9 from The Office, its Humor Index climbs to ~82. Both shows look better when you let them off the hook for their weakest year. The difference is that Parks' weakest year is a half-season; The Office's weakest years are 25% of the show.
+
+## Ron Swanson is the best-written lead character on the site
+
+The Comedy WAR table for characters with at least 200 analyzed jokes now looks like this at the top:
+
+- **Ron Swanson** — 7.30 quality · 839 jokes · 5.13 WAR/episode
+- **April Ludgate** — 7.00 quality · 677 jokes · 2.84 WAR/episode
+- **Dwight Schrute** — 7.02 quality · 1,734 jokes · 4.36 WAR/episode
+- **Stanley Hudson** — 7.00 quality · 217 jokes · 0.83 WAR/episode
+- **Leslie Knope** — 6.80 quality · 1,972 jokes · 4.55 WAR/episode
+
+A few things to chew on. **Ron's 7.30 quality index is the highest of any main cast member of any show we've scored.** Higher than Dwight (7.02), Jerry Seinfeld (6.96), George Costanza (6.83), Michael Scott (6.69). The number is built on 839 jokes across 118 episodes — not a small-sample fluke.
+
+What's driving it is that Ron's joke profile is unusually clean. He doesn't have throwaway lines. The character is built around economy — short declarative sentences, perfect comic timing, a face Nick Offerman can hold for ten seconds longer than seems possible. Our scorer rewards economy heavily because it correlates with craft, and Ron is the platonic example.
+
+**April clears every Office co-lead on quality.** April Ludgate's 7.00 quality matches Stanley Hudson and beats Jim, Pam, Andy Bernard, Kevin, and Erin. She has the lowest joke volume of any Parks main, but the per-joke quality is elite.
+
+**Leslie Knope is The Volume Play.** 1,972 jokes is the most for any character on the site. Michael Scott has more screen time but only 3,265 jokes across 141 episodes — Leslie does 1,972 in 118 because the show is denser around her. Her quality (6.80) is lower than Ron's, but she carries an enormous share of the show's joke volume at consistent quality, which is the textbook definition of a workhorse lead.
+
+## So why did The Office hold the top spot for six months?
+
+Two reasons, in honest descending order of how much I believe them.
+
+**1. We hadn't scored Parks yet.** The Office was first because it's the first show we ran the pipeline on. Seinfeld and Friends followed. Parks waited because the transcript pipeline took longer than expected. The leaderboard wasn't telling you Parks was worse — it was telling you Parks wasn't in the running. Now it is.
+
+**2. The Office is the more meme-able show.** Cringe comedy generates clips. "Parkour!" "I declare bankruptcy!" "Have you ever seen a documentary?" are all over TikTok. Parks is more diffuse — its best moments are character beats inside scenes, harder to extract as a 15-second video. If you're sampling sitcom comedy through social media, you see The Office five times more often. The Humor Index doesn't sample through social media. It samples every joke in every episode. Different selection function, different result.
+
+## What this changes on the site
+
+The home page has Parks on top now. The comparison tool now defaults to "Parks vs Office" instead of "Office vs Seinfeld." The Comedy WAR character leaderboard has Ron at #1 among single-show leads.
+
+What it doesn't change: the [statistical caveats from the noise-floor study](/blog/scorer-noise-floor) still apply. A 0.33-point gap is not a confident ordering. If we rescored both shows tomorrow with consensus runs, there's a non-trivial chance The Office takes the top back. The honest read of this leaderboard is: *Parks and Office are tied at the top, with Parks getting the headline because the per-joke quality favors it.*
+
+## The bottom line
+
+Parks and Recreation has always been the show that gets passed over in these conversations. It came after The Office in NBC's mockumentary lineage, it ended before the streaming canonization wave hit, it has the Pawnee setting that doesn't generate the same office-cringe shorthand. Critics liked it. Fans loved it. It was never the cultural object The Office was.
+
+But it might be the better-written one. The data we have right now says it is, by a small enough margin that you should hold the claim loosely, and by every secondary metric that you should hold it confidently.
+
+Welcome to the top of the index, Pawnee.
+
+*Explore the data: [Parks and Recreation show page](/shows/parks-and-recreation) · [The Office](/shows/the-office) · [Compare side by side](/compare/parks-and-recreation-vs-the-office) · [Funniest characters ranking](/rankings/funniest-characters)*
+    `,
+  },
   'is-the-office-actually-funny': {
     title: 'Is The Office Actually Funny? We Analyzed Every Joke to Find Out.',
     description: 'We ran all 186 episodes of The Office through our AI comedy analyst. The results may surprise you.',
