@@ -33,7 +33,7 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 const POSTS = [
   {
     slug: 'parks-passes-office',
-    title: 'Parks and Recreation Just Took the #1 Spot. The Office Held It for Six Months.',
+    title: 'Parks and Recreation Just Took the #1 Spot from The Office.',
     description: 'After scoring all 126 Parks and Rec episodes, Pawnee edges Scranton 80.55 to 80.22. The margin is inside our noise floor — but every secondary metric points the same direction, and Ron Swanson is now the highest-quality lead character on the site.',
     date: '2026-04-30',
     category: 'Analysis',

@@ -18,14 +18,14 @@ const POSTS: Record<string, {
   content: string;
 }> = {
   'parks-passes-office': {
-    title: 'Parks and Recreation Just Took the #1 Spot. The Office Held It for Six Months.',
+    title: 'Parks and Recreation Just Took the #1 Spot from The Office.',
     description: 'After scoring all 126 Parks and Rec episodes, Pawnee edges Scranton 80.55 to 80.22. The margin is inside our noise floor — but every secondary metric points the same direction, and Ron Swanson is now the highest-quality lead character on the site.',
     date: '2026-04-30',
     category: 'Analysis',
     content: `
-For six months, the leaderboard at the top of this site has read the same way. The Office was the funniest sitcom we'd measured. Seinfeld was second, Friends third, everything else was a placeholder waiting on transcripts.
+Since this site launched, the top of the leaderboard has read the same way. The Office was the funniest sitcom we'd measured. Seinfeld was second, Friends third, everything else was a placeholder waiting on transcripts.
 
-Last week we finished scoring all 126 episodes of Parks and Recreation. **Parks is now #1 with a Humor Index of 80.55. The Office is #2 at 80.22.**
+This week we finished scoring all 126 episodes of Parks and Recreation. **Parks is now #1 with a Humor Index of 80.55. The Office is #2 at 80.22.**
 
 The margin is 0.33 points. We've published two separate posts ([here](/blog/scorer-noise-floor) and [here](/blog/bayesian-credible-intervals)) explaining that a gap that small is well inside the run-to-run noise of our scorer. We are not claiming Parks is provably funnier than The Office. What we are claiming is that the show that has been quietly second-place in every "best sitcom of the 2010s" conversation for a decade now has, by every metric we can put numbers on, caught up.
 
@@ -70,7 +70,7 @@ What's driving it is that Ron's joke profile is unusually clean. He doesn't have
 
 **Leslie Knope is The Volume Play.** 1,972 jokes is the most for any character on the site. Michael Scott has more screen time but only 3,265 jokes across 141 episodes — Leslie does 1,972 in 118 because the show is denser around her. Her quality (6.80) is lower than Ron's, but she carries an enormous share of the show's joke volume at consistent quality, which is the textbook definition of a workhorse lead.
 
-## So why did The Office hold the top spot for six months?
+## So why was The Office in the top spot at all?
 
 Two reasons, in honest descending order of how much I believe them.
 
