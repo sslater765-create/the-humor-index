@@ -119,7 +119,6 @@ export default async function LeastFunnyCharactersPage() {
       c.vsCastmatesEps >= 5
     ).length;
 
-  const belowMedian = all.filter(c => c.quality < LEAGUE_MEDIAN).length;
   const belowReplacement = all.filter(c => c.quality < REPLACEMENT).length;
 
   return (
