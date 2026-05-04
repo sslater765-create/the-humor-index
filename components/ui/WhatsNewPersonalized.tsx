@@ -20,6 +20,7 @@ const ALL_ITEMS: NewItem[] = [
   { href: '/shows/seinfeld', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Seinfeld — All 172 Episodes', subtitle: '9,828 jokes analyzed', date: '2026-04-11' },
   { href: '/shows/friends', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Friends — All 236 Episodes', subtitle: '14,227 jokes analyzed', date: '2026-04-16' },
   { href: '/shows/schitts-creek', label: 'Recently Completed', labelColor: 'text-emerald-400', title: "Schitt's Creek — All 80 Episodes", subtitle: '4,239 jokes analyzed', date: '2026-05-02' },
+  { href: '/shows/arrested-development', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Arrested Development — All 84 Episodes', subtitle: '4,908 jokes analyzed', date: '2026-05-04' },
 ];
 
 export default function WhatsNewPersonalized() {
