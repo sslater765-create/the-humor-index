@@ -3,6 +3,8 @@ import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 
 // Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
 const BLOG_SLUGS = [
+  'character-comedy-spectrum',
+  'schitts-creek-last-on-board-first-on-impact',
   'arrested-development-takes-the-crown',
   'scorer-noise-floor',
   'bayesian-credible-intervals',
@@ -40,6 +42,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Blog posts
   const blogDates: Record<string, string> = {
+    'character-comedy-spectrum': '2026-05-03',
+    'schitts-creek-last-on-board-first-on-impact': '2026-05-02',
     'arrested-development-takes-the-crown': '2026-05-04',
     'scorer-noise-floor': '2026-04-17',
     'bayesian-credible-intervals': '2026-04-17',
