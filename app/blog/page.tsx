@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'arrested-development-takes-the-crown',
+    title: "Arrested Development Just Took the #1 Spot. The Gap to #2 Is the Biggest on the Board.",
+    description: "Arrested Development debuts at 85.2 \u2014 4.65 points clear of Parks. That's twice the size of the gaps between #2 and #6 combined. Here's what's actually inside the gap.",
+    date: '2026-05-04',
+    category: 'Analysis',
+    readTime: '8 min read',
+    stat: "85.2",
+    statLabel: "AD Humor Index (#1)",
+  },
+  {
     slug: 'parks-passes-office',
     title: 'Parks and Recreation Just Took the #1 Spot from The Office.',
     description: 'After scoring all 126 Parks and Rec episodes, Pawnee edges Scranton 80.55 to 80.22. The margin is inside our noise floor — but every secondary metric points the same direction, and Ron Swanson is now the highest-quality lead character on the site.',
