@@ -17,6 +17,97 @@ const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'arrested-development-takes-the-crown': {
+    title: "Arrested Development Just Took the #1 Spot. The Gap to #2 Is the Biggest on the Board.",
+    description: "Arrested Development debuts at 85.2 \u2014 4.65 points clear of Parks. That's twice the size of the gaps between #2 and #6 combined. Here's what's actually inside the gap.",
+    date: '2026-05-04',
+    category: 'Analysis',
+    content: `
+When the Humor Index added Arrested Development this week, it didn't just take the top spot. It opened a gap.
+
+The current leaderboard:
+
+- **Arrested Development:** 85.2 HI · #1 · gap to #2 = **4.65 points**
+- **Parks and Recreation:** 80.55 HI · #2 · gap to #3 = 0.33
+- **The Office:** 80.22 HI · #3 · gap to #4 = 1.12
+- **Seinfeld:** 79.1 HI · #4 · gap to #5 = 0.44
+- **Friends:** 78.66 HI · #5 · gap to #6 = 0.36
+- **Schitt's Creek:** 78.3 HI · #6
+
+Five of those six gaps are inside the Humor Index's noise floor — about 0.4 points of run-to-run scorer noise per show. The gap from AD to Parks isn't. It's nearly a *standard deviation* above the cluster everyone else is sitting in. That's an unusual shape for any taste-driven ranking, and it demands an explanation. Here's the honest one.
+
+## Mechanically: AD wins on Craft and Impact
+
+The Humor Index is a weighted composite. JPM is 30% of the score. Craft is 40%. Impact is 30%. So the things that move the needle most aren't joke density — they're per-joke quality and per-joke resonance.
+
+AD wins both:
+
+- **Craft:** AD 7.24 · best of the rest (Seinfeld) 7.15 · gap +0.09
+- **Impact:** AD 6.94 · best of the rest (Schitt's) 6.73 · gap +0.21
+- **JPM:** AD 1.94 · the lowest on the board · Friends tells 61% more jokes per minute
+
+AD's secret isn't that it tells more jokes. It tells *fewer* than any other show on the leaderboard. It just gets more out of each one.
+
+Which raises the obvious follow-up: more out of each one *how?*
+
+## Structurally: layered jokes
+
+AD's central comedic move is to put four or five separate joke mechanisms inside the same line.
+
+Take "I just blue myself." Tobias says it. He has painted himself blue. The line lands as character comedy (only Tobias would say it), wordplay pun (blue means sad and means literally blue), visual gag (he is, on screen, painted blue), callback (sets up a later Blue Man Group plotline that cashes in twice more this season), and cringe (he's oblivious to the second meaning). Five comedic dimensions. One sentence.
+
+Our scorer tags each of those independently. Most jokes on most shows pull on one or two dimensions. The Office's "Bears, beets, Battlestar Galactica" is character comedy and absurdist surprise. Seinfeld's "yada yada yada" is observational and running-gag. Both work. Both score well. Neither pulls on five things at once.
+
+You can see the pattern in the comedy DNA percentages. Three of the eighteen joke-type tags reward exactly the kind of layering AD does — *callback*, *wordplay_pun*, and *visual_gag*. AD is the only show on the index that scores in double digits on all three:
+
+- **Arrested Development:** Callback 10.1% · Wordplay 11.9% · Visual gag 8.5% — triple-double
+- **The Office:** Callback 1.8% · Wordplay 3.2% · Visual gag 1.4%
+- **Seinfeld:** Callback 4.4% · Wordplay 3.2% · Visual gag 1.9%
+- **Friends:** Callback 4.2% · Wordplay 3.1% · Visual gag 2.2%
+- **Parks and Rec:** Callback 2.0% · Wordplay 3.4% · Visual gag 1.8%
+- **Schitt's Creek:** Callback 3.4% · Wordplay 7.4% · Visual gag 2.7%
+
+AD's wordplay rate is **3.7× The Office's**. Its callback rate is **5.6× Parks and Rec's**. These aren't subtle differences. The Bluths are doing something the rest of the cast aren't.
+
+## The narrator advantage
+
+Every other show on the index gets jokes only from on-screen dialogue. Arrested Development gets a parallel joke track running on top.
+
+Ron Howard's voiceover is *itself* a joke vector. "Michael had no idea who his uncle Jack actually was, which would become important later." "On the next Arrested Development." "It was Carl Weathers." Each of those clips is independently scored as a joke. None of them came out of a character's mouth on screen.
+
+We tagged 494 jokes to the Narrator across 84 episodes — about 5.9 narrator-jokes per episode, on average, that no other show on the index has access to. Take those out and AD's joke count drops 10%. The narrator alone moves the needle by something like 1–1.5 Humor Index points.
+
+That's not cheating. It's a structural feature of the show. The Humor Index measures comedy, the show delivers comedy via voiceover, the score reflects it. But it does mean a 4.65-point gap is partly an architectural advantage — AD has access to a vehicle the others don't.
+
+## The callback advantage
+
+Callbacks are the other place AD pulls away. Our scoring rubric rewards "callback that pays off earlier setups, especially across episodes." AD is the most callback-dense show in television history; it's the central reason the show rewards rewatching.
+
+But it's also a structural feature that interacts with how our scorer reads jokes. A callback is, by definition, a joke that's funnier the second time. We score it once with the payoff context. So AD's joke economy is double-dipping in a sense — once when the seed is planted, again when it's harvested. Both score independently, but one wouldn't exist without the other.
+
+It's still the way the show is built. We're just being honest about why it advantages this kind of show specifically.
+
+## The honest methodological caveat
+
+A scoring system measures what it can measure. The craft rubric we use rewards five things explicitly: setup quality, misdirection, surprise, character fit, and timing. The taxonomy we tag against has eighteen joke types, and several of them — callback, wordplay_pun, meta_self_referential, running_gag, visual_gag — are exactly the kind of mechanisms Arrested Development was built around.
+
+The result is real, but it's also narrowly scoped: **AD is the densest match between joke architecture and our scoring rubric on the index.** A show that's just as funny but uses simpler joke architecture — one strong joke per beat, no callbacks, no visual layering — would score lower against this rubric. That doesn't make our rubric wrong. It does mean readers should hold the score with the right kind of grip.
+
+You can see the same caveat from the other side, looking at Schitt's Creek. Schitt's has the highest character_comedy concentration on the index (69%) and the highest Impact-per-joke. But it scored #5 because its joke architecture is *flat*. The Roses are vivid; their jokes pull on one or two dimensions, not five. The show feels great because the dimensions it does have are strong, but the rubric doesn't have anywhere to put "this is funnier than the math says."
+
+That's a real limitation. The Humor Index is a measurement, not a verdict.
+
+## The headline, with footnote
+
+If you want the takeaway in one line: **Arrested Development's joke architecture is the densest match between what shows do and what our rubric scores.** It earns its 85.2 — but it earns it on a methodology that rewards layered, callback-heavy, multi-dimensional jokes specifically.
+
+Schitt's Creek's score is also real. Friends's score is also real. They're earning their points on a different geometry. The 4.65-point gap to #1 is a measurement of structure as much as it's a measurement of funniness, and the honest read is that both things are doing work.
+
+If you've felt for years that Arrested Development was the most architecturally dense comedy ever made, here's the receipt. It's also the only show on the index where you can pause any frame and find a sight gag in the background, while the dialogue is doing wordplay, while the voiceover is foreshadowing the callback two scenes from now. Five things at once. Almost nobody else is even trying.
+
+The leaderboard says AD is #1. The Humor Index measures one specific thing very well. Both can be true.
+`,
+  },
   'parks-passes-office': {
     title: 'Parks and Recreation Just Took the #1 Spot from The Office.',
     description: 'After scoring all 126 Parks and Rec episodes, Pawnee edges Scranton 80.55 to 80.22. The margin is inside our noise floor — but every secondary metric points the same direction, and Ron Swanson is now the highest-quality lead character on the site.',

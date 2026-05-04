@@ -3,6 +3,7 @@ import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 
 // Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
 const BLOG_SLUGS = [
+  'arrested-development-takes-the-crown',
   'scorer-noise-floor',
   'bayesian-credible-intervals',
   'comedy-war',
@@ -39,6 +40,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Blog posts
   const blogDates: Record<string, string> = {
+    'arrested-development-takes-the-crown': '2026-05-04',
     'scorer-noise-floor': '2026-04-17',
     'bayesian-credible-intervals': '2026-04-17',
     'comedy-war': '2026-04-16',
