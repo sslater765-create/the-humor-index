@@ -17,6 +17,189 @@ const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'character-comedy-spectrum': {
+    title: "Modern Sitcoms Are More Character-Driven Than the Classics",
+    description: "Across 6 fully-scored shows, character_comedy is the most variable axis in our taxonomy \u2014 a 45-point spread. Schitt's Creek tells more character-driven jokes than Seinfeld. By a factor of nearly three.",
+    date: '2026-05-03',
+    category: 'Data Science',
+    content: `
+Schitt's Creek tells more character-driven jokes than Seinfeld. By a factor of nearly three.
+
+That's not a take. It's what falls out of the data when you tag every joke in every episode by type and add up the columns. Across the eighteen joke categories the Humor Index tracks, the one with the widest spread between shows is **character_comedy** — the type where the punchline depends on *who* said it, not what they said.
+
+Here's the chart that started this post:
+
+- **Schitt's Creek:** 69.1% (#1)
+- **Arrested Development:** 54.4% (#2)
+- **The Office:** 36.7% (#3)
+- **Parks and Recreation:** 36.5% (#4)
+- **Friends:** 26.4% (#5)
+- **Seinfeld:** 24.6% (#6)
+
+Forty-five points between top and bottom. No other axis in our taxonomy comes close. **The newer the show, the higher its character_comedy concentration.** That cuts against the cultural memory of TV comedy, which tends to crown Seinfeld and Friends as the great character comedies of their era. By our measurement, they aren't — at least, not relative to what's been made since.
+
+## What "character_comedy" actually means here
+
+A joke gets the *character_comedy* tag when the punchline is funny *because of who said it*. Could only this character have made that move? Does the joke reveal something true about who they are? Is it a beat that works *because* you know this person?
+
+Some examples our scorer has tagged as character comedy:
+
+- **Moira Rose**'s entire vocabulary. The detours into "bébé" and "fold in the cheese" and "John, I have been gutted." It only lands because *Moira* would say it that way.
+- **Tobias Fünke** describing himself as a "never-nude." The line is mediocre. The fact that *he* says it, with full sincerity, is what scores.
+- **Dwight Schrute** explaining bear/beet/Battlestar Galactica. The pyramid only matters because Dwight's brain made it.
+
+A joke that *isn't* character comedy:
+
+- A setup/punchline pun that any character could have delivered.
+- An observational riff about how strange airline peanuts are.
+- A physical pratfall.
+- A topical reference that depends on the audience knowing what's in the news.
+
+These all show up in our taxonomy as separate types: setup_punchline, observational, physical_slapstick, etc. They're funny. They just aren't anchored to a specific person.
+
+## The pattern by era
+
+Look at the same shows sorted by air date instead of percentage:
+
+- **Seinfeld** (1989–1998): 24.6%
+- **Friends** (1994–2004): 26.4%
+- **The Office** (2005–2013): 36.7%
+- **Parks and Recreation** (2009–2015): 36.5%
+- **Arrested Development** (2003–2019): 54.4%
+- **Schitt's Creek** (2015–2020): 69.1%
+
+The trend is monotonic with one exception (Arrested Development punches above its date because of the Bluth ensemble's specificity, which was always going to outscore the era it aired in). Across thirty years of comedy, the share of jokes that are *about who's telling them* has roughly tripled.
+
+That's surprising if you remember Friends and Seinfeld as character shows. Friends *was* a character show — six distinctive personalities you could parody from a single line of dialogue. Same with Seinfeld; "yada yada yada" only works because of Elaine. So why are they at the bottom of this list?
+
+## Because they had other engines
+
+A show can be funny without being character-funny. Friends and Seinfeld were funny mostly through:
+
+**Setup/punchline.** Seinfeld's writers' room was setup-punchline obsessed in a way modern sitcoms aren't. Multi-cam structure encouraged it. Friends's setup_punchline tag rate is **6.4%** vs Schitt's **7.1%** — comparable on the joke type itself, but the difference is what *anchors* the rest of the show.
+
+**Observational comedy.** Seinfeld was the apex predator here — observational scores **11.2%**, the highest of any show on the index. The whole "what's the deal with airplane peanuts" mode of thinking. Modern shows mostly don't bother.
+
+**Catchphrase / running gag.** Both shows traffic in repeatable lines as a structural backbone. "How *you* doin'." "Yada yada." "Serenity now." Our taxonomy tags these as running_gag, and there's only so much character work happening inside them — they're funny on rewatch *because they're the same line*, not because the character is doing something newly characteristic.
+
+The result is shows that *feel* character-driven because the characters are vivid, but where the joke level doesn't anchor to character as much as the perception does.
+
+## Why this matters
+
+Character comedy ages better than any other type. It's the reason Schitt's Creek will rewatch in 2040 the way Seinfeld rewatches now — better, probably, because it doesn't have the topical-reference decay Seinfeld does. Watch a Seinfeld episode about a cell phone in the late 90s and a chunk of the comedy is illegible to a 2026 viewer. Watch the Cabaret episode of Schitt's Creek; nothing in it depends on the year.
+
+It also predicts which shows generate quotable line-cards on social media a decade after airing. Character-comedy concentration is highly correlated with the share of TikToks that begin "this is what this character would do in this situation" — because that's the format. Schitt's and Arrested Development have absurdly high TikTok afterlife rates relative to viewership during their run. Friends and Seinfeld show up too, but mostly as nostalgia clips, not as character bits.
+
+And it predicts what kind of comedy a show *can* be. Character_comedy peaks at 69%; nobody scores 100% because pure character work doesn't carry a half-hour of TV. The remaining 30% is structural — the setup mechanism, the visual gag, the misdirection — that gives the character work somewhere to land. Schitt's Creek floors that lower bound: almost the entire show is character. The Roses don't have plots, they have *patterns*.
+
+## What this predicts for the back half of the May drip
+
+We have three shows still to score in the next three weeks: 30 Rock, Brooklyn Nine-Nine, and Two and a Half Men. Here are our priors based on the pattern above:
+
+- **30 Rock** — should score *high* on character comedy despite being plot-driven and cutaway-heavy. Liz, Jack, Tracy, Kenneth, Jenna are all hyper-specific. Prediction: 45–55%.
+- **Brooklyn Nine-Nine** — Schur lineage, ensemble cast, character work as the engine. Prediction: 45–55%, similar to Office and Parks.
+- **Two and a Half Men** — multi-cam network sitcom, joke-density-driven, setup_punchline heavy. Prediction: 25–35%, in the Seinfeld/Friends range.
+
+If those land where we expect, that's another piece of evidence for the era pattern. If TAAHM scores high on character comedy, we'll have a new wrinkle to examine.
+
+## The Humor Index thesis, restated
+
+If you've read past Humor Index posts, you know the recurring frame: **comedy is multi-dimensional, and any single number for "how funny" is hiding a richer story.** This is one of those richer stories. The leaderboard says Arrested Development (85.2) is the funniest show we've measured. The Schitt's Creek post made the case that a show can score #5 overall and still own the #1 spot on craft and impact. This post adds another lens: shows live somewhere on a 45-point character-comedy spectrum, and that placement tells you a different kind of truth than the Humor Index alone.
+
+The TL;DR is simple: **character comedy is the modern mode of TV comedy, and it's been getting more dominant for thirty years.** The shows we remember as "great character shows" from the 90s scored low on character comedy. The shows that don't get the same cultural-memory weight — Schitt's Creek, Arrested Development — are the actual character extremists.
+
+Both things can be true. The data just lets you see which is which.
+
+---
+
+*The character_comedy share for each show is computed from joke-by-joke type tagging across every episode. Methodology: [/methodology](/methodology). Per-show comedy DNA donut charts are on each show's page.*
+`,
+  },
+  'schitts-creek-last-on-board-first-on-impact': {
+    title: "Schitt's Creek: Last on the Board, First on Impact",
+    description: "Schitt's Creek scored the lowest of the five published shows when it debuted \u2014 but ranks #1 on Impact and #2 on Craft. One of the cleanest demonstrations our methodology has of why joke count alone is the wrong question.",
+    date: '2026-05-02',
+    category: 'Analysis',
+    content: `
+If you measure comedy by how often someone tells a joke, *Schitt's Creek* shouldn't be funny.
+
+Most pure-density measurement says the show is quiet. Long takes. Whole scenes built around a single beat. A standoff between Moira's enunciation and a ringing phone. There are episodes of *30 Rock* with more punchlines in their first three minutes than *Schitt's Creek* delivers in twenty.
+
+So Schitt's Creek scored the lowest of the five shows on our leaderboard — **78.3, behind Friends at 78.66 by less than half a point.**
+
+The reason that fact is interesting, not damning, is that Schitt's lands at the *bottom* of our overall index while ranking **first on Impact and second on Craft** — and dead-last on raw joke density. It's one of the cleanest demonstrations our methodology has of why "joke count" alone is the wrong question.
+
+## The numbers
+
+- **Schitt's Creek:** 78.3 HI · JPM 2.25 (lowest) · Craft 7.03 (#2) · Impact 6.73 (#1) · 80 episodes
+- **The Office:** 80.22 HI · JPM 2.38 · Craft 6.87 · Impact 6.67 · 186 episodes
+- **Seinfeld:** 79.1 HI · JPM 2.38 · Craft 7.15 · Impact 6.44 · 172 episodes
+- **Friends:** 78.66 HI · JPM 3.13 · Craft 6.75 · Impact 6.62 · 236 episodes
+- **Parks & Rec:** 80.55 HI · JPM 2.28 · Craft 7.0 · Impact 6.71 · 124 episodes
+
+Schitt's lands #5 on the index because it tells fewer jokes per minute than any of the other four shows, and the Humor Index weights JPM at 30%. But it loses by a *narrow* margin — the craft and impact strength almost completely offset the density gap. Friends, the show right above it, has 39% more jokes per minute and still scores only 0.36 points higher.
+
+## The thesis the data lands on
+
+Schitt's Creek doesn't tell more jokes than its peers. It tells *better* ones, with fewer misses. **Higher craft, higher impact, lower density** is the single cleanest signature of "comedy that earns its laughs slowly."
+
+Watch the Cabaret arc in season six and count the jokes per minute — you'll get a smaller number than you'd guess. Then count the ones that actually work. Almost all of them.
+
+## The episodes that broke our model
+
+A few episode-level findings the data turned up:
+
+**Top episode: "The Incident" (S6E2) — 96.5/100.** Higher than Friends' best-ever episode ("The One With The Rumor" at 95.0). Not the finale, not the Cabaret. An episode where Moira's town-council recall vote backfires.
+
+**#2 episode: "Don't Worry, It's His Sister" (S1E3) — 94.8.** Three episodes into the entire show. This demolishes the "S1 was rough" consensus — by our scoring, S1 of Schitt's Creek peaks higher than any season of Friends.
+
+**Best season: S3 (80.5).** That's a higher per-season score than Office's best season (S4) and matches Parks at the very top. Most fan polls put S5 or S6 as the show's peak. The data disagrees.
+
+**Worst episode: "The Pitch" (S6E12) — 62.3.** Late-series weak point right before the run-up to the wedding.
+
+**Quietest episode: "Estate Sale" (S2E4) — JPM 1.36.** One joke every 44 seconds. Still scored 76.4 on the index — high enough to outrank dozens of episodes from Friends.
+
+## The character math
+
+We attribute every joke to the character or characters who land it, then average across the show. Some of what we found surprised us:
+
+**Moira Rose is the highest-craft regular: 7.21 across 995 jokes.** Not David, who comes in at 7.06. Catherine O'Hara's vocabulary detours, vowel placement, and reaction beats register as a higher density of identifiable craft signals than any other character on the show. She's the closest Schitt's gets to a 30 Rock-style punchline machine — surrounded by people who deliberately don't match her tempo.
+
+**David is second (7.06 craft, 1,072 jokes).** More volume than Moira, slightly less craft per joke. Sarcasm-as-armor early David scores below sarcasm-as-affection late David — the character grows up, the writing follows him.
+
+**Twyla outscores most of the main cast.** 7.12 craft on 96 jokes (small sample, but real). Sarah Levy's half-second timing on the diner-counter setups is doing more work than the screen time suggests.
+
+**Patrick is right at Moira's level when he appears: 7.05.** He shows up in S3 and lifts the whole craft floor.
+
+**Johnny is the lowest-craft regular at 6.85.** This isn't a knock — Eugene Levy plays the straight man and the straight man's job is to set up everyone else's punchlines. The craft score measures the joke; not the character's value to the show.
+
+## What this defends
+
+If you've ever felt like comedy criticism rewards loudness over precision — that 30 Rock gets graded easier than a quieter show because its jokes are easier to count — Schitt's Creek's score is the version of the argument with numbers behind it.
+
+Schitt's lost the leaderboard by 0.36 points to a show with 39% more jokes per minute. It tied for first on craft when you adjust for sample, and led every other show on impact-per-joke. Most of the gap to #1 (Parks at 80.55) is JPM.
+
+A different way to phrase the same finding: **on a per-joke basis, Schitt's Creek is the best show on this index.** The Humor Index just happens to weight density too.
+
+## Where it ranks
+
+The new leaderboard:
+
+- 1. Parks and Recreation — 80.55
+- 2. The Office — 80.22
+- 3. Seinfeld — 79.1
+- 4. Friends — 78.66
+- 5. **Schitt's Creek — 78.3** ← new
+
+A 2.25-point spread separates first from last. All five shows fall inside each other's 95% confidence intervals. The Humor Index's read on canonical sitcoms: they're closer than the cultural narrative suggests.
+
+This also sets up the rest of the May drip. The next show entering the index is the highest-JPM show we've ever measured. The contrast is the point. Two ways to be great at comedy. Both score in the same neighborhood. The methodology can tell you why.
+
+---
+
+*Read the full per-episode breakdown at [the show page](/shows/schitts-creek). Methodology at [/methodology](/methodology).*
+`,
+  },
   'arrested-development-takes-the-crown': {
     title: "Arrested Development Just Took the #1 Spot. The Gap to #2 Is the Biggest on the Board.",
     description: "Arrested Development debuts at 85.2 \u2014 4.65 points clear of Parks. That's twice the size of the gaps between #2 and #6 combined. Here's what's actually inside the gap.",

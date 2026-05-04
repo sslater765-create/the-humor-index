@@ -32,6 +32,26 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'character-comedy-spectrum',
+    title: "Modern Sitcoms Are More Character-Driven Than the Classics",
+    description: "Across 6 fully-scored shows, character_comedy is the most variable axis in our taxonomy \u2014 a 45-point spread. Schitt's Creek tells more character-driven jokes than Seinfeld. By a factor of nearly three.",
+    date: '2026-05-03',
+    category: 'Data Science',
+    readTime: '7 min read',
+    stat: "69.1%",
+    statLabel: "Schitt's character comedy share",
+  },
+  {
+    slug: 'schitts-creek-last-on-board-first-on-impact',
+    title: "Schitt's Creek: Last on the Board, First on Impact",
+    description: "Schitt's Creek scored the lowest of the five published shows when it debuted \u2014 but ranks #1 on Impact and #2 on Craft. One of the cleanest demonstrations our methodology has of why joke count alone is the wrong question.",
+    date: '2026-05-02',
+    category: 'Analysis',
+    readTime: '7 min read',
+    stat: "78.3",
+    statLabel: "Schitt's Creek HI (#5)",
+  },
+  {
     slug: 'arrested-development-takes-the-crown',
     title: "Arrested Development Just Took the #1 Spot. The Gap to #2 Is the Biggest on the Board.",
     description: "Arrested Development debuts at 85.2 \u2014 4.65 points clear of Parks. That's twice the size of the gaps between #2 and #6 combined. Here's what's actually inside the gap.",
