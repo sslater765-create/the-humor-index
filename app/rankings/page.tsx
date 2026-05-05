@@ -142,8 +142,8 @@ export default async function RankingsPage() {
     .slice(0, 3);
 
   // Show matchup data
-  const office = analyzedShows.find(s => s.slug === 'the-office');
-  const seinfeld = analyzedShows.find(s => s.slug === 'seinfeld');
+  const arrestedDev = analyzedShows.find(s => s.slug === 'arrested-development');
+  const parks = analyzedShows.find(s => s.slug === 'parks-and-recreation');
 
   const PODIUM_COLORS = ['text-brand-gold', 'text-gray-300', 'text-amber-600'];
   const PODIUM_LABELS = ['#1', '#2', '#3'];
@@ -260,30 +260,30 @@ export default async function RankingsPage() {
             </p>
           </Link>
 
-          {/* Head-to-Head */}
+          {/* Head-to-Head — AD vs Parks (top 2 on the board, 4.65-pt gap) */}
           <Link
-            href="/compare/the-office-vs-seinfeld"
+            href="/compare/arrested-development-vs-parks-and-recreation"
             className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
           >
             <p className="text-xs uppercase tracking-widest text-purple-400 mb-1">Head-to-Head</p>
             <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
-              The Office vs Seinfeld
+              Arrested Development vs Parks and Rec
             </h2>
-            {office && seinfeld && (
+            {arrestedDev && parks && (
               <div className="flex items-center gap-4">
                 <div className="flex-1 bg-brand-surface rounded-lg p-4 text-center">
-                  <p className="font-mono text-2xl text-brand-gold">{formatIndex(office.humor_index)}</p>
-                  <p className="text-xs text-brand-text-muted mt-1">The Office</p>
+                  <p className="font-mono text-2xl text-brand-gold">{formatIndex(arrestedDev.humor_index)}</p>
+                  <p className="text-xs text-brand-text-muted mt-1">Arrested Development</p>
                 </div>
                 <span className="text-lg text-brand-text-muted font-medium">vs</span>
                 <div className="flex-1 bg-brand-surface rounded-lg p-4 text-center">
-                  <p className="font-mono text-2xl text-blue-400">{formatIndex(seinfeld.humor_index)}</p>
-                  <p className="text-xs text-brand-text-muted mt-1">Seinfeld</p>
+                  <p className="font-mono text-2xl text-blue-400">{formatIndex(parks.humor_index)}</p>
+                  <p className="text-xs text-brand-text-muted mt-1">Parks and Rec</p>
                 </div>
               </div>
             )}
             <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
-              See full comparison →
+              The biggest gap on the board · See full comparison →
             </p>
           </Link>
 
