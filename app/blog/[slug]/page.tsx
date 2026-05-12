@@ -17,6 +17,134 @@ const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'funniest-characters-cross-show': {
+    title: "George Costanza Just Beat Jerry Seinfeld for the Funniest Character in TV Comedy. Here's the Full Cross-Show Leaderboard.",
+    description: "We finally have six shows scored under v2 consensus. George Costanza tops the cross-show WAR leaderboard at 1,181.9 — narrowly edging Jerry Seinfeld. Ron Swanson has the highest per-joke Craft score of any character on the index. Here's what the top 25 looks like.",
+    date: '2026-05-12',
+    category: 'Analysis',
+    content: `
+When we built [Comedy WAR](/blog/comedy-war) in April, we only had three fully-scored shows: Seinfeld, The Office, Friends. The leaderboard then was a useful proof of concept, but with only three rosters in the pool, "the best comedy character on TV" was really "the best of these three shows." We knew it. We said it. We waited.
+
+We have six shows now: Seinfeld, The Office, Friends, Parks and Recreation, Schitt's Creek, and Arrested Development. 499 characters with at least 50 jokes each. 59,000 jokes total. That's enough roster to do this properly.
+
+Here's the answer.
+
+## The top 25
+
+| # | Character | Show | WAR | Jokes |
+|---:|---|---|---:|---:|
+| 1 | **George Costanza** | Seinfeld | 1,181.9 | 2,632 |
+| 2 | Jerry Seinfeld | Seinfeld | 1,109.5 | 4,339 |
+| 3 | Dwight Schrute | The Office | 802.6 | 1,734 |
+| 4 | Chandler Bing | Friends | 651.6 | 2,962 |
+| 5 | Phoebe Buffay | Friends | 618.5 | 2,036 |
+| 6 | Ron Swanson | Parks and Recreation | 605.8 | 839 |
+| 7 | Cosmo Kramer | Seinfeld | 555.2 | 1,547 |
+| 8 | Leslie Knope | Parks and Recreation | 550.4 | 1,972 |
+| 9 | Joey Tribbiani | Friends | 531.6 | 2,655 |
+| 10 | Michael Scott | The Office | 447.1 | 3,265 |
+| 11 | Jim Halpert | The Office | 331.7 | 1,501 |
+| 12 | April Ludgate | Parks and Recreation | 324.0 | 677 |
+| 13 | Elaine Benes | Seinfeld | 317.7 | 1,316 |
+| 14 | Andy Dwyer | Parks and Recreation | 248.2 | 863 |
+| 15 | Ross Geller | Friends | 230.6 | 2,388 |
+| 16 | Michael Bluth | Arrested Development | 219.7 | 1,029 |
+| 17 | Moira Rose | Schitt's Creek | 210.2 | 995 |
+| 18 | David Rose | Schitt's Creek | 191.6 | 1,072 |
+| 19 | Monica Geller | Friends | 157.6 | 2,548 |
+| 20 | Gob Bluth | Arrested Development | 140.2 | 700 |
+| 21 | Ben Wyatt | Parks and Recreation | 137.2 | 563 |
+| 22 | Alexis Rose | Schitt's Creek | 134.3 | 788 |
+| 23 | Pam Beesly | The Office | 131.9 | 792 |
+| 24 | Tom Haverford | Parks and Recreation | 131.4 | 1,029 |
+| 25 | Narrator | Arrested Development | 121.2 | 494 |
+
+George at #1 is a reversal from the April Comedy WAR post, which had Jerry at the top by about 600 WAR. The flip happened during the standup-aware rescoring on April 18 — Jerry's stand-up bits at The Improv had been counting as sitcom comedy, inflating his impact scores by roughly 15%. Once those got weighted at 30% of a normal joke (because they aren't sitcom jokes — they're polished professional material), Jerry's per-joke quality dropped just enough for George to pull ahead. The gap is now 72.4 WAR, which is small but the order is stable across all three consensus runs.
+
+So: **George is funnier than Jerry by a hair.** This is the kind of finding the Humor Index exists to surface. The cultural memory of Seinfeld treats Jerry as the comic engine and the other three as the supporting cast. The data says it's George. He has fewer jokes (2,632 vs 4,339), but each one is sharper, and the cringe-density of the character's writing converts into Impact at a higher rate than Jerry's observational stand-up material.
+
+## Three things the leaderboard tells us
+
+### 1. The top 10 is mostly volume
+
+| Show | Characters in top 10 | Show's total episodes |
+|---|---:|---:|
+| Seinfeld | 3 | 172 |
+| Friends | 3 | 235 |
+| The Office | 2 | 186 |
+| Parks and Recreation | 2 | 124 |
+| Arrested Development | 0 | 84 |
+| Schitt's Creek | 0 | 80 |
+
+The four shows with 100+ episodes claim every slot in the top 10. Arrested Development and Schitt's Creek don't appear until #16 and #17. That's not because their characters are worse — it's because **WAR is a counting stat.** It's analogous to career home runs, not OPS. Ten years of merely-good production beats four years of brilliant production every time.
+
+Michael Bluth (#16, WAR 219.7) and Ron Swanson (#6, WAR 605.8) tell the story. Ron has a higher Craft score (7.43 vs 7.23) and a higher Impact score (7.16 vs 6.90). On a per-joke basis, Michael is producing higher-craft material. But Ron has 84 more episodes to do it across, and that gap is wide enough to put him three slots higher on the cross-show board.
+
+We'll publish a separate per-joke and per-episode leaderboard soon for the readers who think this is the more interesting view. It is. It's just a different question.
+
+### 2. Ron Swanson has the highest per-joke craft on the index
+
+If we filter to characters with at least 100 jokes and rank by **average craft score per joke**, the top 10 looks completely different:
+
+| # | Character | Show | Craft | Jokes |
+|---:|---|---|---:|---:|
+| 1 | **Ron Swanson** | Parks and Recreation | 7.43 | 839 |
+| 2 | Narrator | Arrested Development | 7.40 | 494 |
+| 3 | Buster Bluth | Arrested Development | 7.38 | 358 |
+| 4 | Creed Bratton | The Office | 7.34 | 184 |
+| 5 | Lucille Bluth | Arrested Development | 7.32 | 468 |
+| 6 | Tobias Fünke | Arrested Development | 7.30 | 442 |
+| 7 | Michael Bluth | Arrested Development | 7.23 | 1,029 |
+| 8 | Gob Bluth | Arrested Development | 7.22 | 700 |
+| 9 | George Sr. | Arrested Development | 7.22 | 386 |
+| 10 | George Michael Bluth | Arrested Development | 7.21 | 425 |
+
+Seven of the top ten are Arrested Development characters. The eighth (Creed) is from The Office. The ninth and tenth are Ron Swanson and Ron Howard's voiceover. **Per-joke, Arrested Development is the densest writers' room on the index.** Their characters average 7.22+ on craft across hundreds of analyzed jokes. The next show with multiple representatives in the top 10 is The Office, which has one (Creed, who appears in only ~30 episodes and gets 184 jokes).
+
+Ron Swanson at #1 is also fascinating from a sample-size standpoint. He's the only Parks and Rec character in the craft top 10, and he beats every Arrested Development character despite the AD writers' room being recognized as one of the most joke-dense in television history. Three things drive it: he's almost always the deadpan straight man (his craft scores load on structure and economy, not misdirection), he has fewer total jokes than a normal lead (839, vs Leslie's 1,972), and the show writes the rest of its ensemble for warmth rather than precision. He gets the punchlines other characters can't sell.
+
+### 3. Each show has a clear #1, and they aren't always who you'd guess
+
+The show-by-show #1 characters by WAR:
+
+- **Seinfeld:** George Costanza (1,181.9). Not Jerry. (See above.)
+- **The Office:** Dwight Schrute (802.6). Not Michael Scott. Dwight has fewer episodes as a central focus but the absurdism + character-fit dimensions reward him heavily.
+- **Friends:** Chandler Bing (651.6). Beat out Phoebe by 33 WAR. Joey is #3. Monica and Ross are mid-table. Rachel surprisingly does not make the show's top 5.
+- **Parks and Recreation:** Ron Swanson (605.8). Beat Leslie Knope by 55 WAR despite Leslie having more than twice as many jokes. The Craft + Impact gap closes the volume gap.
+- **Schitt's Creek:** Moira Rose (210.2). Edged David by 19. Both are inside the noise floor — the rank between them probably flips on any given rescoring.
+- **Arrested Development:** Michael Bluth (219.7). Gob is #2. The Narrator (Ron Howard) somehow makes the Top 25 with only 494 lines, which is its own statement about how much comedy is in the framing.
+
+## A note on what WAR is and isn't
+
+Comedy WAR is built like baseball's Wins Above Replacement, with one important caveat: **the "replacement" character isn't a major character on another show.** It's a bench player. Specifically, the median quality score of all characters with 50–100 analyzed jokes — the 25th-percentile recurring character across our six shows. That bench-player baseline is 6.555 on a 0–10 scale.
+
+A character's WAR is then: \`n_jokes × max(shrunk_quality − 6.555, 0)\`. The \`shrunk_quality\` uses Bayesian shrinkage with k=30, which means a 100-joke character is mostly themselves and a 30-joke character is half themselves, half league-average. This penalizes small-sample showboating — you can't claim to be the funniest character in television on the strength of 12 great jokes.
+
+It also means WAR rewards three things at once: **volume, quality, and quality-relative-to-bench.** A character on a long-running show with a high quality score will dominate. That's the bias built in. We think it's the right bias for "career value" but it isn't the right bias for "best on a per-shift basis" — that's per-episode WAR and per-joke quality, which we'll publish next.
+
+## Where the leaderboard hits its noise floor
+
+The single-run ICC for our scoring is 0.28 (see [the scorer noise floor post](/blog/scorer-noise-floor)). We score each episode three times under consensus, which roughly halves the per-episode variance, but a character's full-career WAR still inherits some of that noise. Two examples of where the rankings probably aren't stable:
+
+- **Moira vs David in Schitt's Creek.** WAR 210.2 vs 191.6, gap of 19. Both have ~1,000 jokes. The bootstrap 95% CI for either character's WAR is roughly ±60. Whether Moira is #1 in Schitt's or David is depends on which rescore run you trust most. We're confident neither would fall behind Alexis (#3 in the show) but their internal order is essentially a coin flip.
+- **Phoebe (#5) vs Ron Swanson (#6) at the cross-show level.** Gap of 12.7 WAR, with CIs at least three times that. Either could be #5 on a rescoring.
+
+We're not going to redo this analysis weekly to chase the rankings. The point of WAR is to tell you which characters are clearly in the elite tier across shows, not to pick rank 5 from rank 6 with false precision.
+
+## What's next
+
+Two follow-ons that fall out of this dataset:
+
+1. **Per-episode WAR.** Same metric, normalized by appearances. Ron Swanson and Michael Bluth move up. Jerry and Chandler stay around the top but are less dominant.
+2. **Per-joke quality (Craft × Impact).** The "best craftsperson" leaderboard. Arrested Development takes seven of the top ten. Worth its own post.
+
+If you want to compare your favorite character against any other on the index, the character pages are live now: [Funniest Characters](/rankings/funniest-characters).
+
+---
+
+*Methodology details and known limitations are at [/methodology](/methodology). The full ranked list of 499 characters (filtered to 50+ jokes) is at [/rankings/funniest-characters](/rankings/funniest-characters).*
+`,
+  },
   'character-comedy-spectrum': {
     title: "Modern Sitcoms Are More Character-Driven Than the Classics",
     description: "Across 6 fully-scored shows, character_comedy is the most variable axis in our taxonomy \u2014 a 45-point spread. Schitt's Creek tells more character-driven jokes than Seinfeld. By a factor of nearly three.",

@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 
 const POSTS = [
+  { slug: 'funniest-characters-cross-show', title: "George Costanza Just Beat Jerry Seinfeld for the Funniest Character in TV Comedy. Here's the Full Cross-Show Leaderboard.", description: "Six shows fully scored. George Costanza tops cross-show WAR at 1,181.9, edging Jerry Seinfeld. Ron Swanson has the highest per-joke craft on the index.", date: '2026-05-12' },
   { slug: 'arrested-development-takes-the-crown', title: 'Arrested Development Just Took the #1 Spot. The Gap to #2 Is the Biggest on the Board.', description: "Arrested Development opens at 85.2 — a 4.7-point lead over Parks and Rec, larger than the entire 80.55–78.30 gap between #2 and #5.", date: '2026-05-04' },
   { slug: 'character-comedy-spectrum', title: 'Modern Sitcoms Are More Character-Driven Than the Classics', description: "Across six fully-scored shows, character-driven jokes account for 35–55% of every laugh. The newer the show, the higher that share runs.", date: '2026-05-03' },
   { slug: 'schitts-creek-last-on-board-first-on-impact', title: "Schitt's Creek: Last on the Board, First on Impact", description: "Schitt's Creek lands at #5 on the Humor Index, but on per-joke Impact it's tied for #1. Density vs. depth, explained.", date: '2026-05-02' },

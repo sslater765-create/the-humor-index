@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'funniest-characters-cross-show',
+    title: "George Costanza Just Beat Jerry Seinfeld for the Funniest Character in TV Comedy. Here's the Full Cross-Show Leaderboard.",
+    description: "We finally have six shows scored under v2 consensus. George Costanza tops the cross-show WAR leaderboard at 1,181.9 — narrowly edging Jerry Seinfeld. Ron Swanson has the highest per-joke Craft score of any character on the index. Here's the top 25.",
+    date: '2026-05-12',
+    category: 'Analysis',
+    readTime: '8 min read',
+    stat: "1,181.9",
+    statLabel: "George Costanza's career WAR",
+  },
+  {
     slug: 'character-comedy-spectrum',
     title: "Modern Sitcoms Are More Character-Driven Than the Classics",
     description: "Across 6 fully-scored shows, character_comedy is the most variable axis in our taxonomy \u2014 a 45-point spread. Schitt's Creek tells more character-driven jokes than Seinfeld. By a factor of nearly three.",
