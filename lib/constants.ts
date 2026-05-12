@@ -1,5 +1,3 @@
-import { CharacterStats } from './types';
-
 export const SHOW_SLUGS = [
   'the-office',
   'seinfeld',
@@ -15,7 +13,11 @@ export const SHOW_SLUGS = [
 ] as const;
 export type ShowSlug = (typeof SHOW_SLUGS)[number];
 
-export const MOCK_CHARACTER_DATA: Record<string, CharacterStats[]> = {
+// Dead code as of 2026-05-12 — no consumers. Kept in case a future test or
+// storybook setup wants seed data. The pipeline serves real character data
+// from public/data/<slug>/characters.json now.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _MOCK_CHARACTER_DATA: Record<string, Array<{name: string; total_jokes: number; avg_craft: number; avg_impact: number; jpm: number; screen_time_minutes: number; dominant_types: string[]}>> = {
   'the-office': [
     { name: 'Michael Scott', total_jokes: 3267, avg_craft: 6.8, avg_impact: 6.6, jpm: 5.8, screen_time_minutes: 142, dominant_types: ['character_comedy', 'cringe_discomfort'] },
     { name: 'Dwight Schrute', total_jokes: 1734, avg_craft: 7.1, avg_impact: 6.9, jpm: 4.6, screen_time_minutes: 118, dominant_types: ['character_comedy', 'absurdist'] },
@@ -38,7 +40,10 @@ export const MOCK_CHARACTER_DATA: Record<string, CharacterStats[]> = {
   ],
 };
 
-export const MOCK_DNA_DATA: Record<string, Record<string, number>> = {
+// Dead code (see _MOCK_CHARACTER_DATA above). Real DNA data is in
+// public/data/comedy-dna.json now.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _MOCK_DNA_DATA: Record<string, Record<string, number>> = {
   'the-office': {
     character_comedy: 37,
     cringe_discomfort: 11,

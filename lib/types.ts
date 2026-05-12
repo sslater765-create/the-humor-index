@@ -146,7 +146,11 @@ export interface CharacterStats {
   total_jokes: number;
   avg_craft: number;
   avg_impact: number;
-  jpm: number;
+  // Per-character JPM is not currently computed by the pipeline. Optional so
+  // callers can omit it; charts that want it should fall back to a related
+  // metric (e.g. avg_impact) explicitly rather than receiving a misleading
+  // stand-in.
+  jpm?: number;
   screen_time_minutes: number;
   dominant_types: JokeType[];
 }

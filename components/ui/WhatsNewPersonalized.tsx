@@ -14,13 +14,17 @@ interface NewItem {
 
 // These are the site's content items with their publish dates
 const ALL_ITEMS: NewItem[] = [
-  { href: '/blog/comedy-war', label: 'Latest Blog', labelColor: 'text-brand-gold', title: 'Michael Scott Is the Most Valuable Comedy Character in Television History', subtitle: 'Apr 13, 2026', date: '2026-04-13' },
-  { href: '/blog/seinfeld-vs-the-office', label: 'Blog', labelColor: 'text-brand-gold', title: 'Seinfeld Has Better Jokes. The Office Is Funnier.', subtitle: 'Apr 12, 2026', date: '2026-04-12' },
-  { href: '/blog/imdb-vs-humor-index', label: 'Blog', labelColor: 'text-brand-gold', title: 'IMDb Ratings vs. The Humor Index', subtitle: 'Apr 12, 2026', date: '2026-04-12' },
-  { href: '/shows/seinfeld', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Seinfeld — All 172 Episodes', subtitle: '9,828 jokes analyzed', date: '2026-04-11' },
-  { href: '/shows/friends', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Friends — All 236 Episodes', subtitle: '14,227 jokes analyzed', date: '2026-04-16' },
-  { href: '/shows/schitts-creek', label: 'Recently Completed', labelColor: 'text-emerald-400', title: "Schitt's Creek — All 80 Episodes", subtitle: '4,239 jokes analyzed', date: '2026-05-02' },
+  { href: '/blog/arrested-development-takes-the-crown', label: 'Latest Blog', labelColor: 'text-brand-gold', title: 'Arrested Development Just Took the #1 Spot.', subtitle: 'May 4, 2026', date: '2026-05-04' },
+  { href: '/blog/character-comedy-spectrum', label: 'Blog', labelColor: 'text-brand-gold', title: 'Modern Sitcoms Are More Character-Driven Than the Classics', subtitle: 'May 3, 2026', date: '2026-05-03' },
+  { href: '/blog/schitts-creek-last-on-board-first-on-impact', label: 'Blog', labelColor: 'text-brand-gold', title: "Schitt's Creek: Last on the Board, First on Impact", subtitle: 'May 2, 2026', date: '2026-05-02' },
+  { href: '/blog/parks-passes-office', label: 'Blog', labelColor: 'text-brand-gold', title: 'Parks and Rec Just Took the #1 Spot from The Office.', subtitle: 'Apr 30, 2026', date: '2026-04-30' },
+  { href: '/blog/comedy-war', label: 'Blog', labelColor: 'text-brand-gold', title: 'Jerry Seinfeld Is the Most Valuable Comedy Character in Television History', subtitle: 'Apr 16, 2026', date: '2026-04-16' },
+  { href: '/blog/seinfeld-vs-the-office', label: 'Blog', labelColor: 'text-brand-gold', title: "Seinfeld Just Passed The Office on Our Humor Index.", subtitle: 'Apr 16, 2026', date: '2026-04-16' },
   { href: '/shows/arrested-development', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Arrested Development — All 84 Episodes', subtitle: '4,908 jokes analyzed', date: '2026-05-04' },
+  { href: '/shows/schitts-creek', label: 'Recently Completed', labelColor: 'text-emerald-400', title: "Schitt's Creek — All 80 Episodes", subtitle: '4,239 jokes analyzed', date: '2026-05-02' },
+  { href: '/shows/parks-and-recreation', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Parks and Recreation — All 124 Episodes', subtitle: 'Now ranked #2', date: '2026-04-30' },
+  { href: '/shows/friends', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Friends — All 235 Episodes', subtitle: '14,227 jokes analyzed', date: '2026-04-16' },
+  { href: '/shows/seinfeld', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Seinfeld — All 172 Episodes', subtitle: '9,828 jokes analyzed', date: '2026-04-11' },
 ];
 
 export default function WhatsNewPersonalized() {

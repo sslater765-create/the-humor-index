@@ -3,6 +3,7 @@ import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 
 // Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
 const BLOG_SLUGS = [
+  'parks-passes-office',
   'character-comedy-spectrum',
   'schitts-creek-last-on-board-first-on-impact',
   'arrested-development-takes-the-crown',
@@ -23,25 +24,29 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Canonicals use trailing slash; keep sitemap consistent with canonical tags.
   const url = (path: string) => `${baseUrl}${path}${path.endsWith('/') ? '' : '/'}`;
 
+  // Use a single rolling "freshness" date for pages that are refreshed every
+  // time the underlying data is. Update this when major changes ship.
+  const SITE_REFRESHED = new Date('2026-05-12');
   const staticPages: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/`, lastModified: new Date('2026-05-04'), changeFrequency: 'weekly', priority: 1.0 },
-    { url: url('/shows'), lastModified: new Date('2026-05-04'), changeFrequency: 'weekly', priority: 0.9 },
-    { url: url('/rankings'), lastModified: new Date('2026-05-04'), changeFrequency: 'weekly', priority: 0.8 },
-    { url: url('/rankings/funniest-episodes'), lastModified: new Date('2026-04-16'), changeFrequency: 'weekly', priority: 0.8 },
-    { url: url('/rankings/worst-episodes'), lastModified: new Date('2026-04-19'), changeFrequency: 'weekly', priority: 0.8 },
-    { url: url('/rankings/best-jokes'), lastModified: new Date('2026-04-16'), changeFrequency: 'weekly', priority: 0.8 },
-    { url: url('/rankings/funniest-characters'), lastModified: new Date('2026-04-16'), changeFrequency: 'weekly', priority: 0.8 },
-    { url: url('/compare'), lastModified: new Date('2026-04-16'), changeFrequency: 'weekly', priority: 0.8 },
-    { url: url('/blog'), lastModified: new Date('2026-04-16'), changeFrequency: 'weekly', priority: 0.8 },
-    { url: url('/search'), lastModified: new Date('2026-04-16'), changeFrequency: 'monthly', priority: 0.7 },
-    { url: url('/methodology'), lastModified: new Date('2026-04-16'), changeFrequency: 'monthly', priority: 0.7 },
-    { url: url('/request'), lastModified: new Date('2026-04-16'), changeFrequency: 'monthly', priority: 0.6 },
-    { url: url('/faq'), lastModified: new Date('2026-04-16'), changeFrequency: 'monthly', priority: 0.5 },
-    { url: url('/about'), lastModified: new Date('2026-04-16'), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/`, lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 1.0 },
+    { url: url('/shows'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.9 },
+    { url: url('/rankings'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/rankings/funniest-episodes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/rankings/worst-episodes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/rankings/best-jokes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/rankings/funniest-characters'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/compare'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/blog'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/search'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.7 },
+    { url: url('/methodology'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.7 },
+    { url: url('/request'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.6 },
+    { url: url('/faq'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.5 },
+    { url: url('/about'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.5 },
   ];
 
   // Blog posts
   const blogDates: Record<string, string> = {
+    'parks-passes-office': '2026-04-30',
     'character-comedy-spectrum': '2026-05-03',
     'schitts-creek-last-on-board-first-on-impact': '2026-05-02',
     'arrested-development-takes-the-crown': '2026-05-04',
@@ -71,7 +76,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const show of shows) {
     showPages.push({
       url: url(`/shows/${show.slug}`),
-      lastModified: new Date('2026-04-16'),
+      lastModified: SITE_REFRESHED,
       changeFrequency: 'weekly',
       priority: 0.8,
     });
@@ -80,7 +85,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     if (show.humor_index > 0) {
       arcPages.push({
         url: url(`/shows/${show.slug}/arc`),
-        lastModified: new Date('2026-04-16'),
+        lastModified: SITE_REFRESHED,
         changeFrequency: 'monthly',
         priority: 0.6,
       });
@@ -91,7 +96,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const ep of episodes) {
         episodePages.push({
           url: url(`/shows/${show.slug}/${ep.season}/${ep.episode_number}`),
-          lastModified: new Date('2026-04-16'),
+          lastModified: SITE_REFRESHED,
           changeFrequency: 'monthly',
           priority: 0.6,
         });
@@ -103,7 +108,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const ch of characters) {
         characterPages.push({
           url: url(`/shows/${show.slug}/characters/${encodeURIComponent(ch.name)}`),
-          lastModified: new Date('2026-04-16'),
+          lastModified: SITE_REFRESHED,
           changeFrequency: 'monthly',
           priority: 0.5,
         });
@@ -118,7 +123,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (let j = i + 1; j < analyzed.length; j++) {
       comparePages.push({
         url: url(`/compare/${analyzed[i]}-vs-${analyzed[j]}`),
-        lastModified: new Date('2026-04-16'),
+        lastModified: SITE_REFRESHED,
         changeFrequency: 'monthly',
         priority: 0.5,
       });

@@ -54,7 +54,12 @@ export async function getComedyDna(slug: string): Promise<Record<string, number>
 export async function getRecommendations(slug: string): Promise<Array<{ slug: string; name: string; score: number }>> {
   try {
     const all = readJson<Record<string, Array<{ slug: string; name: string; score: number }>>>('recommendations.json');
-    return all[slug] || [];
+    const raw = all[slug] || [];
+    // Filter out recommendations pointing at shows that haven't been scored yet —
+    // otherwise the card renders with a 0.0 Humor Index, which reads as broken.
+    const shows = readJson<Array<{ slug: string; humor_index: number }>>('shows.json');
+    const scored = new Set(shows.filter(s => s.humor_index > 0).map(s => s.slug));
+    return raw.filter(r => scored.has(r.slug));
   } catch {
     return [];
   }

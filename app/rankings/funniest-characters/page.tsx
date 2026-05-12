@@ -82,7 +82,7 @@ export default async function FunniestCharactersPage() {
               '@context': 'https://schema.org',
               '@type': 'ItemList',
               name: 'Funniest Sitcom Characters of All Time',
-              itemListElement: warChars
+              itemListElement: [...warChars]
                 .sort((a, b) => b.war - a.war)
                 .slice(0, 25)
                 .map((c, i) => ({

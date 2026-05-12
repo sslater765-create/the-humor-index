@@ -114,7 +114,7 @@ export default async function HomePage() {
             <div>
               <p className="text-xs text-brand-text-muted mb-1">The Office</p>
               <p className="font-mono text-2xl text-brand-gold">80.2</p>
-              <p className="text-[10px] text-brand-text-muted">Craft 6.91 · Impact 6.72</p>
+              <p className="text-[10px] text-brand-text-muted">Craft 6.87 · Impact 6.67</p>
             </div>
             <div>
               <p className="text-xs text-brand-text-muted mb-1">Seinfeld</p>
@@ -123,7 +123,7 @@ export default async function HomePage() {
             </div>
             <div>
               <p className="text-xs text-brand-text-muted mb-1">Craft Gap</p>
-              <p className="font-mono text-2xl text-blue-400">+0.24</p>
+              <p className="font-mono text-2xl text-blue-400">+0.28</p>
               <p className="text-[10px] text-brand-text-muted">Seinfeld higher per joke</p>
             </div>
           </div>

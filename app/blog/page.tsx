@@ -84,7 +84,7 @@ const POSTS = [
   {
     slug: 'bayesian-credible-intervals',
     title: 'We Fitted a Bayesian Model to 15,000 Jokes. Every Show Ranking Is Within Noise.',
-    description: 'A hierarchical Bayesian model of joke impact. Format effect: statistically zero. The three scored shows\' credible intervals all overlap. 64% of joke-level variance is unexplained within-joke noise.',
+    description: 'A hierarchical Bayesian model of joke impact on 15,000 jokes. Format effect: statistically zero. Top-tier shows\' credible intervals all overlap. 64% of joke-level variance is unexplained within-joke noise.',
     date: '2026-04-17',
     category: 'Data Science',
     readTime: '8 min read',
