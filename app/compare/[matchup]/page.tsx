@@ -41,9 +41,13 @@ function getMatchup(matchupSlug: string) {
 }
 
 export async function generateStaticParams() {
-  return MATCHUPS.map(m => ({
-    matchup: `${m.slugA}-vs-${m.slugB}`,
-  }));
+  // Only pre-build matchups between shows that have been scored. Unscored shows
+  // would render as a 0-vs-0 "tie" with no real content.
+  const shows = await getAllShows();
+  const scoredSlugs = new Set(shows.filter(s => s.humor_index > 0).map(s => s.slug));
+  return MATCHUPS
+    .filter(m => scoredSlugs.has(m.slugA) && scoredSlugs.has(m.slugB))
+    .map(m => ({ matchup: `${m.slugA}-vs-${m.slugB}` }));
 }
 
 export async function generateMetadata({ params }: { params: { matchup: string } }) {
@@ -104,6 +108,9 @@ export default async function MatchupPage({ params }: { params: { matchup: strin
   const showA = shows.find(s => s.slug === match.slugA);
   const showB = shows.find(s => s.slug === match.slugB);
   if (!showA || !showB) notFound();
+  // If either show hasn't been scored yet, the matchup is meaningless — 404 instead
+  // of rendering a "winner" card with both sides at 0.
+  if (showA.humor_index <= 0 || showB.humor_index <= 0) notFound();
 
   const winner = showA.humor_index >= showB.humor_index ? showA : showB;
   const loser = winner === showA ? showB : showA;

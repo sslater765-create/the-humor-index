@@ -163,23 +163,17 @@ export default function RequestClient() {
         <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Analysis Pipeline</p>
         <p className="text-sm text-brand-text-secondary mb-3">Shows currently being analyzed or in the queue.</p>
         <div className="space-y-2 mb-3">
-          <div className="flex items-center justify-between p-2 bg-brand-surface rounded-lg">
-            <span className="text-sm text-brand-text-primary">Friends</span>
-            <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full px-2 py-0.5">Completed</span>
-          </div>
-          <div className="flex items-center justify-between p-2 bg-brand-surface rounded-lg">
-            <span className="text-sm text-brand-text-primary">Parks and Recreation</span>
-            <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full px-2 py-0.5">Completed</span>
-          </div>
-          <div className="flex items-center justify-between p-2 bg-brand-surface rounded-lg">
-            <span className="text-sm text-brand-text-primary">Schitt&apos;s Creek</span>
-            <span className="text-[10px] bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full px-2 py-0.5">In Progress</span>
-          </div>
+          {['The Office', 'Seinfeld', 'Friends', 'Parks and Recreation', "Schitt's Creek", 'Arrested Development'].map(name => (
+            <div key={name} className="flex items-center justify-between p-2 bg-brand-surface rounded-lg">
+              <span className="text-sm text-brand-text-primary">{name}</span>
+              <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full px-2 py-0.5">Completed</span>
+            </div>
+          ))}
         </div>
         <p className="text-xs text-brand-text-muted mb-2">Up next:</p>
         <div className="flex flex-wrap gap-2">
-          {['30 Rock', 'Arrested Development', 'Brooklyn Nine-Nine',
-            "It's Always Sunny", 'Big Bang Theory', 'Two and a Half Men'].map(name => (
+          {['30 Rock', 'Brooklyn Nine-Nine', 'Two and a Half Men',
+            "It's Always Sunny in Philadelphia", 'The Big Bang Theory'].map(name => (
             <span key={name} className="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-3 py-1">
               {name}
             </span>

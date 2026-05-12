@@ -152,9 +152,10 @@ export default async function AboutPage() {
           <div className="space-y-4 text-sm text-brand-text-secondary leading-relaxed">
             <p>
               We&apos;ve fully analyzed The Office, Seinfeld, Friends, Parks and Rec,
-              Schitt&apos;s Creek, and Arrested Development. Next up: 30 Rock, Brooklyn Nine-Nine,
-              It&apos;s Always Sunny, The Big Bang Theory, and Two and a Half Men. Long term,
-              the goal is every show, ever.
+              Schitt&apos;s Creek, and Arrested Development. Next up on the May 2026 drip:
+              30 Rock, Brooklyn Nine-Nine, and Two and a Half Men. After that, It&apos;s
+              Always Sunny in Philadelphia and The Big Bang Theory are in the queue.
+              Long term, the goal is every show, ever.
             </p>
             <p>
               We&apos;re also building a recommender &mdash; a way to find your comedy archetype

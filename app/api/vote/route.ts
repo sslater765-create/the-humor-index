@@ -77,7 +77,13 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'slug required' }, { status: 400 });
     }
 
-    const newCount = await client.hIncrBy(VOTES_KEY, slug, unvote ? -1 : 1);
+    let newCount = await client.hIncrBy(VOTES_KEY, slug, unvote ? -1 : 1);
+    if (newCount < 0) {
+      // Defensive: a client unvoting a slug it never voted for (e.g. cleared
+      // localStorage) shouldn't push the counter below zero.
+      await client.hSet(VOTES_KEY, slug, 0);
+      newCount = 0;
+    }
 
     if (email && !unvote) {
       const existing = await client.hGet(VOTERS_KEY, slug);

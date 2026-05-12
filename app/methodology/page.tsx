@@ -40,13 +40,13 @@ export default function MethodologyPage() {
             {[
               {
                 abbr: 'JPM',
-                weight: '30%',
-                label: 'Jokes Per Minute',
+                weight: '25%',
+                label: 'Density (JPM + Peak)',
                 color: '#E8B931',
-                desc: `Raw comedic density. We count every distinct joke that lands — setups with identifiable punchlines,
-                       physical gags, callbacks, and running gags — then divide by the episode's net comedy runtime
-                       (total runtime minus cold opens, credits, and drama-only scenes). Higher JPM reflects a tighter,
-                       more consistently funny script.`,
+                desc: `Raw comedic density across the episode plus peak density across its best runs. We count every distinct joke that lands —
+                       setups with identifiable punchlines, physical gags, callbacks, and running gags — then divide by the episode's net
+                       comedy runtime. The peak-density component (15% of the final score) rewards episodes that hit elite stretches; the
+                       weighted-JPM component (10%) rewards sustained density over the full episode.`,
               },
               {
                 abbr: 'Craft',
@@ -60,13 +60,14 @@ export default function MethodologyPage() {
               },
               {
                 abbr: 'Impact',
-                weight: '30%',
+                weight: '35%',
                 label: 'Impact Score',
                 color: '#1D9E75',
                 desc: `Resonance and staying power. Quotability (does this line get repeated?),
                        rewatch value (is it funnier the second time?), cultural footprint,
                        and callback payoff. Impact captures what pure craft analysis misses —
-                       a technically average joke that becomes a catchphrase scores higher here.`,
+                       a technically average joke that becomes a catchphrase scores higher here.
+                       A small memorability bonus is added on top for episodes packed with iconic moments.`,
               },
             ].map(p => (
               <div key={p.abbr} className="bg-brand-card border border-brand-border rounded-xl p-6">
@@ -273,10 +274,10 @@ export default function MethodologyPage() {
           </p>
           <div className="bg-brand-card border border-brand-border rounded-xl p-5">
             <ul className="text-sm font-mono text-brand-text-primary space-y-1">
-              <li>Pooled (n=99): <span className="text-brand-text-primary">\u22121.47 HI points</span> <span className="text-xs text-brand-text-muted">(95% CI: [\u22123.72, +0.79])</span></li>
-              <li>Seinfeld (n=33): \u22122.45 (CI [\u22125.71, +0.82])</li>
-              <li>The Office (n=33): \u22121.23 (CI [\u22125.11, +2.65])</li>
-              <li>Friends (n=33): \u22120.72 (CI [\u22125.29, +3.84])</li>
+              <li>Pooled (n=99): <span className="text-brand-text-primary">−1.47 HI points</span> <span className="text-xs text-brand-text-muted">(95% CI: [−3.72, +0.79])</span></li>
+              <li>Seinfeld (n=33): −2.45 (CI [−5.71, +0.82])</li>
+              <li>The Office (n=33): −1.23 (CI [−5.11, +2.65])</li>
+              <li>Friends (n=33): −0.72 (CI [−5.29, +3.84])</li>
             </ul>
             <p className="text-xs text-brand-text-secondary mt-3">
               All CIs include zero. No show shows a statistically significant bias from knowing the show name. The
@@ -410,10 +411,6 @@ export default function MethodologyPage() {
                 desc: 'Across 594 scored episodes, average craft scores have a standard deviation of just 0.36 (nominal 0–10 scale). Most of the headline signal in the Humor Index comes from joke count and peak density, not fine-grained craft differences between episodes.',
               },
               {
-                title: 'Format coefficient is a thumb on the scale',
-                desc: 'The multi-cam penalty (15–25% on impact) was calibrated against a small blind sample, not learned from data. It mechanically depresses Friends and Seinfeld relative to single-camera shows. Results should be read with that in mind.',
-              },
-              {
                 title: 'Small samples and Bayesian shrinkage',
                 desc: 'Character WAR with fewer than 50 analyzed jokes is shrunk aggressively toward the league median. Rankings stabilize once a character crosses ~100 jokes.',
               },
@@ -435,7 +432,7 @@ export default function MethodologyPage() {
               },
               {
                 title: 'Scoring is not blind to show identity',
-                desc: 'The LLM sees the show name and character list when scoring. This can introduce show-level priors (e.g. "this is classic Office" biasing toward higher scores). A blind-mode rescoring study is planned for a future methodology version; it would require re-running the full ~600-episode corpus.',
+                desc: 'The LLM sees the show name and character list when scoring. This can introduce show-level priors. We ran a 99-episode blind-mode study (above): pooled difference was −1.47 HI points, 95% CI [−3.72, +0.79] — no statistically significant bias, and the direction was opposite to what a naive "AI favors famous shows" hypothesis would predict. A full-corpus rescoring is still future work.',
               },
               {
                 title: 'No audience data',

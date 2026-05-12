@@ -25,12 +25,12 @@ const faqs = [
     a: `It's a fair question. AI doesn't "laugh" — but it can reliably identify joke structures, setups, punchlines, callbacks, and misdirection. Our validation tests against manually-scored episodes show strong alignment on joke detection and scoring. Where AI struggles most is with purely visual gags or delivery-dependent humor, which is why we work from transcripts and apply format-based adjustments.`,
   },
   {
-    q: 'Why does The Office rank #1?',
-    a: `We've fully analyzed both The Office and Seinfeld, with Friends currently in progress. The Office leads because our Humor Index rewards consistency — it has fewer weak episodes than Seinfeld. The Office also benefits from the single-camera format, which doesn't receive the laugh track penalty that multi-camera shows like Seinfeld get.`,
+    q: 'Which show currently ranks #1?',
+    a: `Arrested Development sits at the top of the Humor Index at 85.2, with Parks and Recreation (80.55) and The Office (80.22) close behind. The top three shows cluster within 1.5 points and their 95% credible intervals overlap — small per-episode differences move the order. We've now fully scored six shows: Seinfeld, The Office, Friends, Parks and Recreation, Schitt's Creek, and Arrested Development.`,
   },
   {
-    q: 'What is the "laugh track penalty"?',
-    a: `Multi-camera sitcoms filmed with a live audience or sweetened laugh track receive an Impact score adjustment. The reasoning: laugh tracks artificially inflate perceived joke impact. A joke that gets a big audience reaction isn't necessarily better-crafted than one that lands in silence on a single-camera show. The coefficients are: Single Camera (1.0x), Hybrid (0.9x), Multi-Camera Live (0.85x), Multi-Camera Sweetened (0.75x).`,
+    q: 'Do you penalize multi-camera shows or laugh tracks?',
+    a: `No longer. Earlier versions of the Humor Index applied a format coefficient (a 15–25% reduction on Impact for multi-cam and laugh-track shows). We removed it on 2026-04-16 after concluding it was a thumb on the scale rather than a data-driven adjustment. All shows now use a coefficient of 1.0. Read the full reasoning on our Methodology page and in the "Seinfeld vs. The Office" blog post.`,
   },
   {
     q: 'What does "Craft" measure?',
@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: 'What does "Impact" measure?',
-    a: `Impact estimates the audience reaction to each joke — how hard it lands. It factors in quotability (will people repeat this line?), rewatch bonus (is it funnier the second time?), and emotional weight. Impact is adjusted by show format to account for laugh track inflation.`,
+    a: `Impact estimates the audience reaction to each joke — how hard it lands. It factors in quotability (will people repeat this line?), rewatch bonus (is it funnier the second time?), and cultural footprint. Impact is no longer adjusted by show format (see the laugh-track question above).`,
   },
   {
     q: 'Why do some shows show 0.0 scores?',

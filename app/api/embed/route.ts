@@ -4,11 +4,12 @@ import { formatIndex } from '@/lib/scoring';
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
-  const limit = parseInt(searchParams.get('limit') || '5');
+  const rawLimit = parseInt(searchParams.get('limit') || '5', 10);
+  const limit = Number.isFinite(rawLimit) && rawLimit > 0 ? Math.min(rawLimit, 50) : 5;
   const theme = searchParams.get('theme') || 'dark';
 
   const shows = await getAllShows();
-  const top = shows.slice(0, limit);
+  const top = shows.filter(s => s.humor_index > 0).slice(0, limit);
 
   const bg = theme === 'light' ? '#FFFFFF' : '#0F0F0F';
   const text = theme === 'light' ? '#1A1A1A' : '#E5E5E5';

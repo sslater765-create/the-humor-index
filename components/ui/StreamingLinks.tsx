@@ -50,7 +50,7 @@ export default function StreamingLinks({ showSlug, episodeLabel }: Props) {
           key={link.platform}
           href={link.url}
           target="_blank"
-          rel="noopener noreferrer sponsored"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-xs border border-brand-border rounded-lg px-3 py-2.5 text-brand-text-muted hover:text-brand-gold hover:border-brand-gold transition-colors active:scale-95"
         >
           {link.label}

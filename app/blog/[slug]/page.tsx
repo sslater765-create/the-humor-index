@@ -183,7 +183,7 @@ A different way to phrase the same finding: **on a per-joke basis, Schitt's Cree
 
 ## Where it ranks
 
-The new leaderboard:
+The leaderboard at publication (May 2):
 
 - 1. Parks and Recreation — 80.55
 - 2. The Office — 80.22
@@ -191,7 +191,11 @@ The new leaderboard:
 - 4. Friends — 78.66
 - 5. **Schitt's Creek — 78.3** ← new
 
-A 2.25-point spread separates first from last. All five shows fall inside each other's 95% confidence intervals. The Humor Index's read on canonical sitcoms: they're closer than the cultural narrative suggests.
+A 2.25-point spread separates first from last. All five shows fall inside each other's 95% confidence intervals.
+
+> *Update (May 4): Arrested Development entered the index at 85.2, taking the #1 spot by the largest gap on the board. See [the AD launch post](/blog/arrested-development-takes-the-crown). Schitt's now sits at #6 overall but is still tied for first on per-joke Impact.*
+
+The Humor Index's read on canonical sitcoms: they're closer than the cultural narrative suggests.
 
 This also sets up the rest of the May drip. The next show entering the index is the highest-JPM show we've ever measured. The contrast is the point. Two ways to be great at comedy. Both score in the same neighborhood. The methodology can tell you why.
 
@@ -445,7 +449,7 @@ Every joke is scored on five dimensions:
 We use a **top-weighted average**: the top 25% of jokes count for 40% of the effective craft score. This means a show with a few brilliant jokes and some mediocre filler can still score well — as long as the peaks are genuine peaks.
 
 **Impact Score (35% weight)**
-How big a reaction would this joke get from 100 comedy-savvy viewers? *(Historical note: this used to include a 25% penalty on multi-cam sitcoms to discount laugh-track-inflated reactions. We removed it in April 2026 after a Bayesian audit showed the format effect was statistically indistinguishable from zero. See [the format coefficient removal post](/blog/format-coefficient-removal) for the full reasoning.)* Stand-up material (Jerry's monologues at The Improv) is weighted at 0.30 of a normal joke in aggregate scores, since it's polished professional material rather than sitcom comedy.
+How big a reaction would this joke get from 100 comedy-savvy viewers? *(Historical note: this used to include a 25% penalty on multi-cam sitcoms to discount laugh-track-inflated reactions. We removed it in April 2026 after a Bayesian audit showed the format effect was statistically indistinguishable from zero. See [the Seinfeld vs. The Office post](/blog/seinfeld-vs-the-office) for the full reasoning.)* Stand-up material (Jerry's monologues at The Improv) is weighted at 0.30 of a normal joke in aggregate scores, since it's polished professional material rather than sitcom comedy.
 
 **Peak Density (15% weight)**
 What percentage of jokes are genuinely excellent (scoring 7+ on BOTH craft and impact)? This replaces raw jokes-per-minute as our density metric, because it measures quality density, not just volume.
@@ -684,7 +688,7 @@ We\u2019re publishing the full model artifacts \u2014 posterior samples, varianc
   },
   'comedy-war': {
     title: 'Jerry Seinfeld Is the Most Valuable Comedy Character in Television History',
-    description: 'Comedy WAR is like baseball\'s Wins Above Replacement but for sitcom characters. Jerry Seinfeld leads at 1,708 career WAR — nearly 4× Michael Scott.',
+    description: 'Comedy WAR is like baseball\'s Wins Above Replacement but for sitcom characters. Originally led by Jerry Seinfeld; after rescoring, George Costanza now sits at #1.',
     date: '2026-04-16',
     category: 'Data Science',
     content: `
@@ -924,6 +928,10 @@ Sometimes those overlap. Often, they don't. And the disagreements are where the 
     date: '2026-04-10',
     category: 'Analysis',
     content: `
+> **Editor's note (April 16, 2026): This post has been retracted.** We removed the format coefficient described below after a Bayesian audit found the effect was statistically indistinguishable from zero. With only three multi-cam shows in the corpus, the "penalty" was confounded with show-level idiosyncrasies rather than driven by format. See [Seinfeld vs. The Office](/blog/seinfeld-vs-the-office) for the reasoning behind the removal, and the [Methodology page](/methodology) for current policy. The original argument is preserved below for transparency.
+
+---
+
 This is the most controversial part of our methodology, and we expect pushback. Here's our reasoning.
 
 ## The Format Coefficients

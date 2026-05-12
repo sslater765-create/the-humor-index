@@ -46,13 +46,15 @@ export default async function ShowPage({ params }: { params: { slug: string } })
     getComedyDna(params.slug),
   ]);
 
-  // Map real character data to CharacterStats format for charts
+  // Map real character data to CharacterStats format for charts. We deliberately
+  // omit `jpm` here — per-character JPM isn't computed by the pipeline, and the
+  // previous stand-in (avg_impact masquerading as JPM) was a footgun. The type
+  // marks `jpm` optional; consumers handle its absence.
   const characters = realCharacters.slice(0, 15).map(c => ({
     name: c.name,
     total_jokes: c.total_jokes,
     avg_craft: c.avg_craft,
     avg_impact: c.avg_impact,
-    jpm: c.avg_impact,
     screen_time_minutes: Math.round(Math.sqrt(c.total_jokes) * 5),
     dominant_types: c.dominant_types,
   }));
