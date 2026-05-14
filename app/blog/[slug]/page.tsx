@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import SocialShare from '@/components/ui/SocialShare';
 import EndOfArticleCTA from '@/components/ui/EndOfArticleCTA';
+import { getAllShows } from '@/lib/data';
+import { formatIndex } from '@/lib/scoring';
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr + 'T00:00:00');
@@ -1258,9 +1260,16 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: { params: { slug: string } }) {
   const post = POSTS[params.slug];
   if (!post) notFound();
+
+  // Top 3 scored shows for the in-post "explore the rankings" CTA block.
+  const allShows = await getAllShows();
+  const topShows = allShows
+    .filter(s => s.humor_index > 0)
+    .sort((a, b) => b.humor_index - a.humor_index)
+    .slice(0, 3);
 
   // Simple markdown-like rendering
   const paragraphs = post.content.trim().split('\n\n');
@@ -1379,6 +1388,39 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       </article>
 
       <EndOfArticleCTA />
+
+      {/* Explore the rankings — 3 show page links for internal traffic flow */}
+      {topShows.length > 0 && (
+        <section className="mt-10 border-t border-brand-border pt-8">
+          <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Explore the rankings</p>
+          <p className="text-sm text-brand-text-secondary mb-5">
+            See the full per-episode breakdown of the highest-ranked sitcoms on the Humor Index.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {topShows.map((s, i) => (
+              <Link
+                key={s.slug}
+                href={`/shows/${s.slug}`}
+                className="block p-4 rounded-xl bg-brand-surface border border-brand-border hover:border-brand-gold/40 transition-colors group"
+              >
+                <p className="text-xs text-brand-text-muted font-mono mb-1">#{i + 1}</p>
+                <p className="text-sm font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors">
+                  {s.name}
+                </p>
+                <p className="text-xs text-brand-text-muted mt-1">
+                  Humor Index <span className="text-brand-gold font-mono">{formatIndex(s.humor_index)}</span>
+                </p>
+              </Link>
+            ))}
+          </div>
+          <Link
+            href="/rankings"
+            className="inline-block mt-4 text-xs text-brand-text-muted hover:text-brand-gold transition-colors"
+          >
+            See every show ranked →
+          </Link>
+        </section>
+      )}
 
       {/* Related posts */}
       {(() => {

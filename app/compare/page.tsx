@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getAllShows, getComedyDna } from '@/lib/data';
+import { formatIndex } from '@/lib/scoring';
 import PageHeader from '@/components/layout/PageHeader';
 import CompareClient from './CompareClient';
 
@@ -46,6 +47,42 @@ export default async function ComparePage() {
           </Link>
         </div>
         <CompareClient shows={shows} dnaBySlug={dnaBySlug} />
+
+        {/* Static matchup grid for SEO + direct navigation */}
+        <section className="mt-16 pt-10 border-t border-brand-border">
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-4">
+            Every Head-to-Head Matchup
+          </p>
+          <p className="text-sm text-brand-text-secondary mb-6">
+            Direct links to every two-show comparison. Each page scores the matchup across Humor Index, craft, impact, peak density, and comedy DNA.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+            {(() => {
+              const scored = shows.filter(s => s.humor_index > 0);
+              const pairs: Array<{ a: typeof scored[0]; b: typeof scored[0] }> = [];
+              for (let i = 0; i < scored.length; i++) {
+                for (let j = i + 1; j < scored.length; j++) {
+                  const [a, b] = [scored[i], scored[j]].sort((x, y) => x.slug.localeCompare(y.slug));
+                  pairs.push({ a, b });
+                }
+              }
+              return pairs.map(({ a, b }) => (
+                <Link
+                  key={`${a.slug}-${b.slug}`}
+                  href={`/compare/${a.slug}-vs-${b.slug}`}
+                  className="flex items-center justify-between p-3 rounded-lg bg-brand-surface border border-brand-border hover:border-brand-gold/40 hover:bg-brand-card transition-colors group"
+                >
+                  <span className="text-sm text-brand-text-primary group-hover:text-brand-gold transition-colors truncate">
+                    {a.name} vs {b.name}
+                  </span>
+                  <span className="font-mono text-xs text-brand-text-muted ml-2 flex-shrink-0">
+                    {formatIndex(a.humor_index)} · {formatIndex(b.humor_index)}
+                  </span>
+                </Link>
+              ));
+            })()}
+          </div>
+        </section>
       </div>
     </div>
   );

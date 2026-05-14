@@ -208,6 +208,58 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         comedyDna={comedyDna}
       />
 
+      {/* Head-to-head matchups — internal links for SEO + discovery */}
+      {(() => {
+        const otherScored = allShows.filter(s => s.slug !== show.slug && s.humor_index > 0);
+        if (otherScored.length === 0) return null;
+        // Two best peers: closest score + the #1 show overall
+        const byScoreDistance = [...otherScored].sort(
+          (a, b) => Math.abs(a.humor_index - show.humor_index) - Math.abs(b.humor_index - show.humor_index)
+        );
+        const topRanked = [...otherScored].sort((a, b) => b.humor_index - a.humor_index)[0];
+        const closestPeer = byScoreDistance[0];
+        const peers = closestPeer.slug === topRanked.slug
+          ? [closestPeer, byScoreDistance[1]].filter(Boolean)
+          : [closestPeer, topRanked];
+        const matchups = peers.map(peer => {
+          const [a, b] = [show.slug, peer.slug].sort();
+          return { peer, slug: `${a}-vs-${b}` };
+        });
+        return (
+          <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 border-t border-brand-border">
+            <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-2">Head-to-Head</p>
+            <p className="text-lg font-medium text-brand-text-primary mb-5">
+              How {show.name} stacks up
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {matchups.map(({ peer, slug }) => (
+                <Link
+                  key={slug}
+                  href={`/compare/${slug}`}
+                  className="flex items-center justify-between p-4 rounded-xl bg-brand-surface border border-brand-border hover:border-brand-gold/40 transition-colors group"
+                >
+                  <div>
+                    <p className="text-sm text-brand-text-primary group-hover:text-brand-gold transition-colors">
+                      {show.name} vs {peer.name}
+                    </p>
+                    <p className="text-xs text-brand-text-muted mt-0.5">
+                      {formatIndex(show.humor_index)} · {formatIndex(peer.humor_index)}
+                    </p>
+                  </div>
+                  <span className="text-brand-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                </Link>
+              ))}
+            </div>
+            <Link
+              href="/compare"
+              className="inline-block mt-4 text-xs text-brand-text-muted hover:text-brand-gold transition-colors"
+            >
+              See all matchups →
+            </Link>
+          </section>
+        );
+      })()}
+
       {/* If you liked this show */}
       {recommendations.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 border-t border-brand-border">

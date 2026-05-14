@@ -12,6 +12,7 @@ import SocialShare from '@/components/ui/SocialShare';
 import StreamingLinks from '@/components/ui/StreamingLinks';
 import StickyEpisodeBar from '@/components/ui/StickyEpisodeBar';
 import EpisodeDeepViewTracker from '@/components/analytics/EpisodeDeepViewTracker';
+import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
 
 export const dynamic = 'force-static';
 
@@ -68,9 +69,11 @@ export async function generateMetadata({
   if (topJoke?.text) ogParams.set('quote', topJoke.text);
   if (topJoke?.characters?.[0]) ogParams.set('speaker', topJoke.characters[0]);
 
+  const epLabel = `S${detail.season}E${String(detail.episode_number).padStart(2, '0')}`;
+  const scoreNum = formatIndex(detail.humor_index);
   return {
-    title: `"${detail.title}" (S${detail.season}E${String(detail.episode_number).padStart(2, '0')}) — ${showName} Joke Analysis`,
-    description: `Every joke in ${showName} "${detail.title}" analyzed and scored. ${detail.total_jokes} jokes, Humor Index: ${formatIndex(detail.humor_index)} (${tier.label}). See the funniest moments ranked.`,
+    title: `"${detail.title}" (${showName} ${epLabel}) — Every Joke Ranked · Humor Index ${scoreNum}`,
+    description: `${detail.total_jokes} jokes from ${showName} "${detail.title}" ${epLabel} analyzed and scored. Humor Index ${scoreNum} (${tier.label}). Top jokes ranked, craft and impact scores, the part you fast-forward.`,
     openGraph: {
       title: `${showName} "${detail.title}" — ${tier.label} (${formatIndex(detail.humor_index)})`,
       description: `${detail.total_jokes} jokes scored. Craft ${detail.avg_craft.toFixed(1)} · Impact ${detail.avg_impact.toFixed(1)} · JPM ${detail.jpm}.`,
@@ -123,14 +126,26 @@ export default async function EpisodePage({
     .filter(e => !(e.season === seasonNum && e.episode_number === episodeNum))
     .slice(0, 5);
 
-  const jsonLd = {
+  const epOgParams = new URLSearchParams({
+    show: show.name,
+    title: detail.title,
+    season: String(detail.season),
+    episode: String(detail.episode_number),
+    score: formatIndex(detail.humor_index),
+  });
+  const jsonLd: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'TVEpisode',
     name: detail.title,
     url: `https://thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}`,
     episodeNumber: detail.episode_number,
     seasonNumber: detail.season,
-    partOfSeries: { '@type': 'TVSeries', name: show.name },
+    partOfSeries: {
+      '@type': 'TVSeries',
+      name: show.name,
+      url: `https://thehumorindex.com/shows/${params.slug}`,
+    },
+    image: `https://thehumorindex.com/api/og/episode?${epOgParams.toString()}`,
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: detail.humor_index,
@@ -139,6 +154,8 @@ export default async function EpisodePage({
       ratingCount: detail.total_jokes,
     },
   };
+  if (detail.tmdb_overview) jsonLd.description = detail.tmdb_overview;
+  if (detail.air_date) jsonLd.datePublished = detail.air_date;
 
   return (
     <div>
@@ -282,6 +299,9 @@ export default async function EpisodePage({
         </div>
       </div>
 
+      {/* Newsletter CTA — above the fold */}
+      <InlineNewsletterCTA />
+
       {/* Top Jokes — best jokes first */}
       {(() => {
         const topJokes = [...detail.jokes]
@@ -402,6 +422,20 @@ export default async function EpisodePage({
                 <span className="font-mono text-sm text-brand-gold">{formatIndex(ep.humor_index)}</span>
               </Link>
             ))}
+          </div>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link
+              href={`/shows/${params.slug}`}
+              className="inline-flex items-center gap-1.5 text-xs text-brand-gold hover:text-brand-gold-bright border border-brand-gold/30 hover:border-brand-gold rounded-lg px-3 py-2 transition-colors"
+            >
+              See every {show.name} episode ranked →
+            </Link>
+            <Link
+              href="/compare"
+              className="inline-flex items-center gap-1.5 text-xs text-brand-text-secondary hover:text-brand-gold border border-brand-border hover:border-brand-gold/40 rounded-lg px-3 py-2 transition-colors"
+            >
+              Compare {show.name} to other shows →
+            </Link>
           </div>
         </section>
       )}
