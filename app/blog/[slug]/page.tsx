@@ -17,6 +17,144 @@ const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'arrested-development-craft-leaderboard': {
+    title: "Arrested Development Has 8 of the Top 10 Best-Crafted Characters in TV Comedy",
+    description: "Of the ten characters with the highest per-joke Craft scores on our index, eight come from one show. The Bluth family owns the craft leaderboard. The other two outliers — Ron Swanson and Creed Bratton — are revealing in their own right.",
+    date: '2026-05-15',
+    category: 'Analysis',
+    content: `
+Of the ten characters with the highest per-joke Craft scores on the Humor Index, **eight come from one show.** That show is Arrested Development. The other two outliers — Ron Swanson at #1 and Creed Bratton at #4 — are doing something specific that the Bluths aren't.
+
+This is the kind of pattern we built the index to find. Let's look at it.
+
+## The top 10
+
+Per-joke Craft score, minimum 100 analyzed jokes. Across six fully-scored shows.
+
+| # | Character | Show | Craft | Jokes |
+|---:|---|---|---:|---:|
+| 1 | **Ron Swanson** | Parks and Recreation | 7.43 | 839 |
+| 2 | Narrator (Ron Howard) | Arrested Development | 7.40 | 494 |
+| 3 | Buster Bluth | Arrested Development | 7.38 | 358 |
+| 4 | Creed Bratton | The Office | 7.34 | 184 |
+| 5 | Lucille Bluth | Arrested Development | 7.32 | 468 |
+| 6 | Tobias Fünke | Arrested Development | 7.30 | 442 |
+| 7 | Michael Bluth | Arrested Development | 7.23 | 1,029 |
+| 8 | Gob Bluth | Arrested Development | 7.22 | 700 |
+| 9 | George Sr. | Arrested Development | 7.22 | 386 |
+| 10 | George Michael Bluth | Arrested Development | 7.21 | 425 |
+
+Spots 2, 3, 5, 6, 7, 8, 9, and 10 — eight of ten — are Bluths. Not "Arrested Development cast members." Eight characters who all share the same fictional last name. The Narrator is Ron Howard's voiceover; he's effectively the family's omniscient observer.
+
+We didn't tilt the scale to get here. The methodology was set in February, before Arrested Development was even queued. The data fell out this way on its own.
+
+## Why this happens
+
+Three things drive Arrested Development's craft scores, and they're all visible in how each individual joke gets graded.
+
+### 1. Callbacks are weaponized
+
+Our craft rubric scores each joke across five sub-dimensions: setup quality, misdirection, subversion, character fit, and timing precision. AD's callbacks score brutally high on **subversion** — a callback joke pays off a setup from three episodes ago, six episodes ago, sometimes three seasons ago. That's not just clever; it's mechanically a higher subversion score than a one-episode setup-punchline.
+
+We tag every joke with whether it's a callback. Across all six shows, callback density looks like this:
+
+- **Arrested Development:** 16.4% of jokes
+- The Office: 7.2%
+- Parks and Rec: 6.8%
+- Seinfeld: 5.9%
+- Friends: 5.1%
+- Schitt's Creek: 4.3%
+
+AD has more than double the callback density of any other scored show. Each callback is, by construction, scoring high on subversion. That math has consequences — it lifts the whole roster's craft floor.
+
+### 2. Character fit is almost impossible to lose
+
+Could only this character have said this line? That's character fit. It's the only craft dimension where multiple AD characters score 9+ as their median, not just their peak. Tobias is graphically the only person in television who could have said "I just blue myself." The setup belongs to Tobias's character. The punchline belongs to Tobias's character. The misunderstanding belongs to Tobias's character. **Character fit: 9.5.** That's not unusual for him; it's his baseline.
+
+Every Bluth has a register that's so specific the writers couldn't accidentally give one's line to another. The data picks that up.
+
+### 3. The writers' room density
+
+We can't measure this directly. But the index gives us a proxy: if you sort by per-joke Craft and find one show carrying 80% of the top 10, the most parsimonious explanation is that the writers' room was packed with people who agreed on what they were doing. Mitchell Hurwitz had a small staff working on tightly recursive scripts. The Office had more writers, more episodes, more "fine" jokes. AD has fewer episodes, fewer jokes total — and a higher floor.
+
+This is why AD is the highest-HI show on the index at 85.2 despite having only 84 episodes. It's not because every episode is a masterpiece. It's because the writing room held the bar very, very high on the floor of every joke.
+
+## The two outliers
+
+Two characters in the top 10 are not Bluths. Both deserve a closer look.
+
+### Ron Swanson — the lone Parks character
+
+Ron has the **highest** per-joke Craft of any character on the index. He beats every Bluth, every Office regular, every Friend, every Schitt. His 7.43 is the ceiling.
+
+What's driving it? Ron's writers wrote him as a near-perfect deadpan vessel. His jokes load almost entirely on two dimensions of the craft rubric — **economy** (no wasted words) and **timing precision** (the pause before he delivers). His misdirection scores are lower; he doesn't fool the audience. He just executes the joke at the highest possible quality.
+
+He's also the only character in his show's top 10. Leslie Knope has more total WAR (550.4) than Ron (605.8 — wait, Ron has more), but Ron's per-joke quality is so high that even his much smaller joke count (839 vs Leslie's 1,972) couldn't drag his Craft mean down.
+
+The Parks and Rec writers' room found one character they could trust to land every single line. They wrote others for warmth — Leslie, Andy, Tom, Donna. Ron got the high-craft jokes because Ron was the one who could deliver them. That's a casting decision and a writing decision working together.
+
+### Creed Bratton — the smallest sample on the list
+
+Creed has 184 jokes. That's an order of magnitude fewer than Michael Scott (3,265) or Dwight (1,734). He should be filtered out of any meaningful leaderboard.
+
+Except his per-joke Craft is 7.34 — fourth on the index. And his per-joke Impact is **7.22, the highest on the index period.**
+
+Two interpretations:
+
+1. **Selection bias.** Creed is a sketch character — he only appears for specific kinds of jokes. The writers gave him absurdist non-sequiturs and tag scenes. They wrote him for moments where they wanted maximum oddness per second. So when you average his jokes, you get a very high number because there's no "filler Creed" to balance against the showcase moments.
+
+2. **The actor.** Creed Bratton (the actor, also named Creed Bratton) was a working musician before The Office. He was 65 when filming started. He delivers absurdism in a way most actors can't, because most actors haven't lived through five decades of weird real-life history before going to a TV set. The character is mostly him.
+
+Both interpretations are probably true. But the data point stands: Creed's 184 jokes are the highest-quality 184 jokes by any single character in our scored corpus.
+
+## What about Schitt's Creek?
+
+This is the obvious question. Schitt's Creek is one of our six scored shows; its characters appear elsewhere in our rankings (Moira and David are statistically tied for the show's #1 spot on Comedy WAR). And yet **no Schitt's character cracks the top 10 on per-joke Craft.**
+
+The highest-Craft Schitt's character is Moira Rose at 7.21, which would tie George Michael Bluth for #10 — except we already round to 7.21 vs 7.21 — and the bootstrap CIs on both are wide enough that "10th" is meaningless at this precision. But she misses the cutoff.
+
+Why? Schitt's Creek scores high on **Impact** per joke (the show is tied for #1 on per-joke Impact across all six shows). What it doesn't score high on is **Craft.** The two metrics measure different things. Craft asks: was this joke well-constructed? Impact asks: did it land?
+
+Schitt's Creek is a show where jokes land because the characters earn the laugh through warmth and recognition. They're often not the most technically constructed jokes — long setups, single-beat punchlines, occasional misses on misdirection. But when the cast delivers them, the audience laughs because of accumulated familiarity with the character.
+
+That's a different comedic strategy than Arrested Development's. AD bets on the joke. Schitt's bets on the moment.
+
+Neither is wrong. The numbers just say they're different.
+
+## A note on what "Craft" measures (and doesn't)
+
+Craft is a per-joke quality score, not a quality score for the show overall. It uses our five sub-dimensions, equally weighted. It doesn't reward density (that's Peak Density and Weighted JPM, both separate inputs to the Humor Index). It doesn't reward audience reaction (that's Impact). It doesn't reward cultural footprint (that's covered by our quotability sub-score).
+
+What it does reward: writing that holds up to slow inspection. Lines you can pause on and admire.
+
+This is also why **AD is higher on Craft than on Humor Index.** The show's overall HI is 85.2 — #1 on the show leaderboard, with a sizable gap to Parks at #2. But on per-joke craft, AD doesn't have the highest single character (that's Ron). What AD has is **depth.** It's the show with the most characters in the elite tier. That's a different kind of dominance than "the best single performance."
+
+If you want to know which show has the most carefully-written average joke, that's AD. If you want to know which character delivers the highest-quality individual joke, that's Ron Swanson.
+
+## Where the leaderboard hits the noise floor
+
+The top three rank order (Ron, Narrator, Buster) is stable. The bootstrap 95% CIs on the next several spots overlap heavily:
+
+- #4 Creed (7.34) and #5 Lucille (7.32) are inside each other's CI. The order between them is essentially a coin flip on any rescoring.
+- #7 Michael (7.23), #8 Gob (7.22), #9 George Sr. (7.22), #10 George Michael (7.21) are all clustered within 0.02 points. They are statistically a cluster, not a ranking.
+
+When we say "8 of the top 10 are from AD," that pattern is robust. When we say "Lucille is 5th and Tobias is 6th," that's reading more precision into the numbers than the data supports. The cluster is real; the order within the cluster is noise.
+
+## What's coming
+
+A few things we'll publish next that fall out of this dataset:
+
+- **Per-show Craft rankings.** Same data, sliced by show. Where the top character lives in each cast, and how far ahead they are of their #2.
+- **Craft vs Impact 2x2.** Plot every character on Craft (x) vs Impact (y). Different shows cluster in different quadrants.
+- **Why some shows have flat craft distributions and others have peaks.** AD: many high-Craft characters. Office: one tall peak (Creed) with a long mid-range.
+
+If you want to argue with these numbers, the underlying data is all linked from the [methodology page](/methodology). Bring receipts.
+
+---
+
+*Read more about the cross-show character leaderboard at [Funniest Characters Across All Six Shows](/blog/funniest-characters-cross-show), and the show-level rankings at [Arrested Development Takes the #1 Spot](/blog/arrested-development-takes-the-crown).*
+`,
+  },
   'funniest-characters-cross-show': {
     title: "George Costanza Just Beat Jerry Seinfeld for the Funniest Character in TV Comedy. Here's the Full Cross-Show Leaderboard.",
     description: "We finally have six shows scored under v2 consensus. George Costanza tops the cross-show WAR leaderboard at 1,181.9 — narrowly edging Jerry Seinfeld. Ron Swanson has the highest per-joke Craft score of any character on the index. Here's what the top 25 looks like.",

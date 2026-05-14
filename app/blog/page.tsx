@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'arrested-development-craft-leaderboard',
+    title: "Arrested Development Has 8 of the Top 10 Best-Crafted Characters in TV Comedy",
+    description: "Of the ten characters with the highest per-joke Craft scores on our index, eight come from one show. The Bluth family owns the craft leaderboard. The other two outliers — Ron Swanson and Creed Bratton — are revealing in their own right.",
+    date: '2026-05-15',
+    category: 'Analysis',
+    readTime: '8 min read',
+    stat: "8 of 10",
+    statLabel: "AD characters in the craft top 10",
+  },
+  {
     slug: 'funniest-characters-cross-show',
     title: "George Costanza Just Beat Jerry Seinfeld for the Funniest Character in TV Comedy. Here's the Full Cross-Show Leaderboard.",
     description: "We finally have six shows scored under v2 consensus. George Costanza tops the cross-show WAR leaderboard at 1,181.9 — narrowly edging Jerry Seinfeld. Ron Swanson has the highest per-joke Craft score of any character on the index. Here's the top 25.",

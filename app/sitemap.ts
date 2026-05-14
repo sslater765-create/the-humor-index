@@ -3,6 +3,7 @@ import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 
 // Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
 const BLOG_SLUGS = [
+  'arrested-development-craft-leaderboard',
   'funniest-characters-cross-show',
   'parks-passes-office',
   'character-comedy-spectrum',
@@ -47,6 +48,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Blog posts
   const blogDates: Record<string, string> = {
+    'arrested-development-craft-leaderboard': '2026-05-15',
     'funniest-characters-cross-show': '2026-05-12',
     'parks-passes-office': '2026-04-30',
     'character-comedy-spectrum': '2026-05-03',
