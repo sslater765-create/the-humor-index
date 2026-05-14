@@ -11,6 +11,7 @@ import JokeRow from '@/components/ui/JokeRow';
 import SocialShare from '@/components/ui/SocialShare';
 import StreamingLinks from '@/components/ui/StreamingLinks';
 import StickyEpisodeBar from '@/components/ui/StickyEpisodeBar';
+import EpisodeDeepViewTracker from '@/components/analytics/EpisodeDeepViewTracker';
 
 export const dynamic = 'force-static';
 
@@ -156,6 +157,11 @@ export default async function EpisodePage({
             { '@type': 'ListItem', position: 3, name: `S${seasonNum}E${String(episodeNum).padStart(2, '0')}: ${detail.title}`, item: `https://thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}` },
           ],
         }) }}
+      />
+      <EpisodeDeepViewTracker
+        show={params.slug}
+        season={seasonNum}
+        episode={episodeNum}
       />
       <StickyEpisodeBar
         title={detail.title}

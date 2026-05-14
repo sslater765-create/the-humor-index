@@ -5,6 +5,7 @@ import { formatIndex, scoreToColor } from '@/lib/scoring';
 // DNA data loaded dynamically from comedy-dna.json
 import SocialShare from '@/components/ui/SocialShare';
 import { RadarCompareChart, JokeTypesCompareChart } from '@/components/charts';
+import CompareViewTracker from '@/components/analytics/CompareViewTracker';
 
 export const dynamic = 'force-static';
 export const dynamicParams = true;
@@ -135,6 +136,7 @@ export default async function MatchupPage({ params }: { params: { matchup: strin
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <CompareViewTracker showA={showA.slug} showB={showB.slug} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         {/* Breadcrumb */}

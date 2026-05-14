@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { trackShareClick } from '@/lib/analytics';
 
 interface Props {
   title: string;
@@ -17,12 +18,14 @@ export default function SocialShare({ title, text, url }: Props) {
     navigator.clipboard.writeText(fullUrl);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+    trackShareClick('copy_link', fullUrl);
   };
 
   const handleNativeShare = async () => {
     if (typeof navigator !== 'undefined' && 'share' in navigator) {
       try {
         await navigator.share({ title, text, url: fullUrl });
+        trackShareClick('native', fullUrl);
       } catch {
         // User cancelled
       }
@@ -50,6 +53,7 @@ export default function SocialShare({ title, text, url }: Props) {
         href={`https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}&via=thehumorindex`}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackShareClick('twitter', fullUrl)}
         className={`${buttonClass} hidden sm:inline-flex`}
         aria-label="Share on X"
       >
@@ -64,6 +68,7 @@ export default function SocialShare({ title, text, url }: Props) {
         href={`https://reddit.com/submit?url=${encodedUrl}&title=${encodeURIComponent(title)}`}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackShareClick('reddit', fullUrl)}
         className={`${buttonClass} hidden sm:inline-flex`}
         aria-label="Share on Reddit"
       >
