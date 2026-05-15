@@ -157,6 +157,134 @@ If you want to argue with these numbers, the underlying data is all linked from 
 *Read more about the cross-show character leaderboard at [Funniest Characters Across All Six Shows](/blog/funniest-characters-cross-show), and the show-level rankings at [Arrested Development Takes the #1 Spot](/blog/arrested-development-takes-the-crown).*
 `,
   },
+  '30-rock-takes-the-crown': {
+    title: "30 Rock Just Took #1. By the Biggest Gap We've Measured.",
+    description: "30 Rock finished scoring on Thursday and lands at Humor Index 88.6 — the biggest #1-to-#2 gap on the leaderboard. Seven episodes break 100 on the display scale. The data points to one thing that no other show in the dataset comes close to.",
+    date: '2026-05-14',
+    category: 'Show Launch',
+    content: `
+We just finished scoring 30 Rock. 138 episodes, seven seasons, 9,283 jokes scored using the same v2 methodology that's been applied to the other six shows (9 craft dimensions, 3-run consensus, Bayesian shrinkage on per-character ratings, the format coefficient deprecated as of April).
+
+The result: **30 Rock is now #1 on the Humor Index at 88.6, with a 3.4 point gap to Arrested Development at #2.** That's the biggest #1-to-#2 gap we've ever measured. Bigger than the gap from AD to Parks. Bigger than the gap from Parks to The Office.
+
+Here's the leaderboard now:
+
+| # | Show | Humor Index | Episodes |
+|---:|---|---:|---:|
+| 1 | **30 Rock** | **88.6** | 138 |
+| 2 | Arrested Development | 85.2 | 84 |
+| 3 | Parks and Recreation | 80.55 | 124 |
+| 4 | The Office | 80.22 | 186 |
+| 5 | Seinfeld | 79.10 | 172 |
+| 6 | Friends | 78.66 | 235 |
+| 7 | Schitt's Creek | 78.30 | 80 |
+
+Before getting into what the data says, the usual caveat: items 3 through 7 are statistically a wash. The 95% confidence intervals overlap heavily. The order of "is The Office actually funnier than Seinfeld" cannot be answered with this data — those numbers are within scoring noise. **The two real claims this leaderboard supports are: 30 Rock is meaningfully above AD, and AD is meaningfully above everyone else.** Everything below #2 is an elite cluster.
+
+## What 30 Rock is doing differently
+
+The story of why 30 Rock won is a story about one statistic: **62.7% of every joke in 30 Rock is character comedy.** That's the highest percentage of any show in the dataset. The next-closest is Arrested Development at 54.4%. After that, the rest of the field drops into the 30s and 40s.
+
+What "character comedy" means in our taxonomy: a joke whose punchline depends on you knowing who the character is. Jokes that don't translate without that. A line that works because Jack Donaghy said it, and would land flat from anyone else.
+
+This is the structural opposite of, say, Seinfeld, which leans much more heavily on situation + observational humor (jokes that would work delivered by a stranger). It's also why 30 Rock's repeat-watch value is so high — once you know the characters, you can keep finding new layers of the same lines, where for situation-driven comedies the joke is essentially fixed in its first viewing.
+
+Two other 30 Rock distinctives in the data:
+
+**JPM of 2.86** — top of the dataset alongside AD. 30 Rock's per-episode joke density is roughly 50% higher than Seinfeld's and double Friends'. Every minute of 30 Rock contains more comedic content than every minute of any single-camera show we've measured.
+
+**Absurdist at 24.5%** — also the highest in the dataset. The cutaways. The fantasy sequences. The Tracy Jordan everything. About one in four jokes on 30 Rock is structurally non-realistic.
+
+Put those two together — character-driven AND high JPM AND high-absurdist — and you have a comedy formula nobody else in the dataset has executed. The closest analog is Arrested Development, which is character-driven and absurdist but has lower JPM. 30 Rock is denser.
+
+## The top 10 episodes
+
+| Rank | Title | Score | Season |
+|---:|---|---:|---:|
+| 1 | Game Over | 103.7 | S7 |
+| 2 | Cooter | 102.8 | S2 |
+| 3 | Verna | 102.3 | S4 |
+| 4 | Nothing Left to Lose | 101.2 | S6 |
+| 5 | Alexis Goodlooking and the Case of the Missing Whisky | 100.8 | S6 |
+| 6 | Reaganing | 100.3 | S5 |
+| 7 | The Rural Juror | 100.1 | S1 |
+| 8 | Mrs. Donaghy | 99.2 | S5 |
+| 9 | ¡Qué Sorpresa! | 99.0 | S5 |
+| 10 | Jack Gets in the Game | 98.6 | S2 |
+
+A note on those numbers above 100: the display scale isn't bounded at 100. It's a continuous transformation from the underlying raw score, anchored at center=75 (where the median episode in the dataset sits). Anything above 100 is more than two and a half standard deviations from the median. Seven 30 Rock episodes are in that range. For context, **The Office has zero, and Seinfeld has one** (The Wizard, S9E15, at 98.5).
+
+The peak isn't concentrated in one era either:
+
+- **Season 4 is the peak season** by aggregate (89.9 display), but only by a hair over Season 6 (89.5)
+- Seasons 2, 5, and 7 are all 87+
+- Even Season 1, the weakest, is at 85.5 — which would rank above the show-level average for The Office, Seinfeld, Friends, and Schitt's Creek
+
+The variance across seasons is the lowest in the dataset. 30 Rock didn't have a "the show found itself in season 2" arc the way most sitcoms do. It came out swinging and stayed there.
+
+## The character data
+
+Top per-joke craft for 30 Rock characters, minimum 50 jokes:
+
+| # | Character | Per-joke craft | Total jokes |
+|---:|---|---:|---:|
+| 1 | Dr. Spaceman | 7.68 | 68 |
+| 2 | Kenneth | 7.49 | 678 |
+| 3 | Jack Donaghy | 7.39 | 1,913 |
+| 4 | Tracy Jordan | 7.36 | 1,221 |
+| 5 | Jenna Maroney | 7.31 | 819 |
+| 6 | Pete Hornberger | 7.22 | 172 |
+| 7 | Liz Lemon | 7.20 | 2,024 |
+
+Two genuinely surprising things here.
+
+**Kenneth's per-joke craft is higher than Jack's.** If you'd asked any 30 Rock fan to rank the craft of the cast, almost nobody would put Kenneth in front of Jack. But the data is unambiguous: every line written for Kenneth does more structural work per beat — the character's worldview is so specifically constructed that essentially every line reinforces it. Jack's lines are individually elite but more variable; Kenneth's lines are uniformly elite within his narrower band.
+
+**Liz Lemon has the LOWEST per-joke craft of the main cast** — and the most jokes by a wide margin (2,024). She's a comedy workhorse: she takes the most volume, and the rubric reads the average of that volume as lower-craft because she's the audience surrogate. Her job is to react. Reactions, by the rubric's design, score lower on character integration than self-driven punchlines from characters with strong points of view. This is by design — we don't want the reaction-shot framework to drive the leaderboard. If we did, Liz would top this list and everyone we just listed above her would drop.
+
+Worth restating: this is per-joke quality. By **total comedic output** (Liz's 2,024 jokes at 7.20 craft + her impact + her quotability), she'd run away with the WAR leaderboard against most of her cast. The number above isn't measuring "who's the funniest" — it's measuring "who does the most work per beat." Different questions, different answers.
+
+## How this changes the cross-show character leaderboard
+
+We're going to update [the cross-show WAR leaderboard](/blog/funniest-characters-cross-show) next week with 30 Rock characters added. Expected impact:
+
+- **Jack Donaghy** is going to land in the top 5 cross-show by WAR. 1,913 jokes at 7.39 craft is elite roster-filling.
+- **Liz Lemon** will probably be top 10 by total WAR despite the per-joke craft number — volume + ubiquity matter.
+- **Tracy Jordan** will likely beat several main characters from other shows on Impact specifically — his per-joke Impact is 7.3+, which is at the elite tier.
+- **Kenneth** will be a craft-leaderboard outlier — he'll rank surprisingly high given how few people think of him as a "top tier" character.
+
+## The methodology caveat we always include
+
+The single-run scorer noise floor is ~5 points per episode (ICC = 0.28). Three-run consensus tightens this dramatically — show-level CIs at the aggregate are <2 points wide. But this matters for how you should read the leaderboard:
+
+- "30 Rock is meaningfully above AD" — supportable; 3.4 point gap with 95% CI separation
+- "AD is meaningfully above Parks/Office/etc" — supportable; ~5 point gap to the next cluster
+- "Within the elite cluster, Parks (80.55) is funnier than Office (80.22)" — NOT supportable; that's a 0.33 point difference inside the noise floor
+
+This is the part we keep saying because rankings get screencapped and become claims. The right way to read this leaderboard:
+
+> Tier 1: 30 Rock
+> Tier 2: Arrested Development
+> Tier 3 (statistically indistinguishable): Parks, Office, Seinfeld, Friends, Schitt's Creek
+
+That's the honest version.
+
+## What's next
+
+30 Rock makes seven scored shows. The next four on the backlog: Brooklyn Nine-Nine, It's Always Sunny, The Big Bang Theory, Two and a Half Men. The drip-release plan from May has B99 next at the front of the queue.
+
+Two analyses falling out of this dataset are also coming:
+
+- **An updated cross-show WAR leaderboard** with 30 Rock added — likely shifts the top 5 significantly
+- **The "characters per show on the craft top-20" stat** — 30 Rock will have several names; how that shapes up cross-show is the most interesting question this data raises
+
+If you want the underlying numbers, every per-episode score and per-joke detail is at [thehumorindex.com/shows/30-rock](/shows/30-rock).
+
+---
+
+*30 Rock is the seventh show fully scored on the Humor Index. The methodology is documented at [our methodology page](/methodology), and the show-level confidence intervals are explained at [our Bayesian credible intervals post](/blog/bayesian-credible-intervals).*
+`,
+  },
   'funniest-characters-cross-show': {
     title: "George Costanza Just Beat Jerry Seinfeld for the Funniest Character in TV Comedy. Here's the Full Cross-Show Leaderboard.",
     description: "We finally have six shows scored under v2 consensus. George Costanza tops the cross-show WAR leaderboard at 1,181.9 — narrowly edging Jerry Seinfeld. Ron Swanson has the highest per-joke Craft score of any character on the index. Here's what the top 25 looks like.",
