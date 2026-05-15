@@ -14,6 +14,7 @@ interface NewItem {
 
 // These are the site's content items with their publish dates
 const ALL_ITEMS: NewItem[] = [
+  { href: '/shows/30-rock', label: 'Recently Completed', labelColor: 'text-emerald-400', title: '30 Rock — All 138 Episodes', subtitle: '9,283 jokes analyzed · Now ranked #1', date: '2026-05-14' },
   { href: '/blog/arrested-development-takes-the-crown', label: 'Latest Blog', labelColor: 'text-brand-gold', title: 'Arrested Development Just Took the #1 Spot.', subtitle: 'May 4, 2026', date: '2026-05-04' },
   { href: '/blog/character-comedy-spectrum', label: 'Blog', labelColor: 'text-brand-gold', title: 'Modern Sitcoms Are More Character-Driven Than the Classics', subtitle: 'May 3, 2026', date: '2026-05-03' },
   { href: '/blog/schitts-creek-last-on-board-first-on-impact', label: 'Blog', labelColor: 'text-brand-gold', title: "Schitt's Creek: Last on the Board, First on Impact", subtitle: 'May 2, 2026', date: '2026-05-02' },
