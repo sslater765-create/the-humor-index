@@ -157,6 +157,106 @@ If you want to argue with these numbers, the underlying data is all linked from 
 *Read more about the cross-show character leaderboard at [Funniest Characters Across All Six Shows](/blog/funniest-characters-cross-show), and the show-level rankings at [Arrested Development Takes the #1 Spot](/blog/arrested-development-takes-the-crown).*
 `,
   },
+  'war-reconciliation': {
+    title: "We Found a WAR Methodology Drift. Jerry Seinfeld Is Now #1 Cross-Show. Here's What We Fixed.",
+    description: "Some shows' WAR was being computed against a higher replacement value than documented. Jerry, AD characters, and Schitt's characters were under-counted by hundreds of points. After applying the documented formula uniformly, the cross-show leaderboard reshuffles. Jerry overtakes George. AD's top tier moves up where it belongs.",
+    date: '2026-05-15',
+    category: 'Methodology',
+    content: `
+On May 15, 2026 we audited every character's WAR (Wins Above Replacement) score after a reader noticed a result that didn't add up. The audit found that some shows were computed against a non-standard replacement value, suppressing their characters' WAR by several hundred points. After applying the documented formula uniformly, the cross-show leaderboard order changes meaningfully.
+
+## What WAR is supposed to be
+
+WAR measures the total comedic value a character contributes above a "replacement-level" sitcom character. The formula, documented at our [methodology page](/methodology):
+
+\`WAR = n_eff × max(shrunk_quality − replacement_quality, 0)\`
+
+Where:
+- \`n_eff\` is the effective joke count (with stand-up jokes downweighted at 30%)
+- \`shrunk_quality\` is the per-character mean of (craft + impact) / 2, Bayesian-shrunk with k=30 toward the league median
+- \`replacement_quality\` = **6.555** — the 25th percentile across recurring sitcom characters in the dataset
+
+Each piece of that has a published rationale. The replacement value of 6.555 is the bench-player threshold; quality above that adds positive WAR, quality below that contributes zero (max-floored at 0).
+
+## What we found
+
+We have characters.json files for seven scored shows. We back-calculated the implicit replacement value each show's WAR was using.
+
+| Show | Implied replacement | Matches documented (6.555)? |
+|---|---|---|
+| The Office | 6.555 | ✓ |
+| Seinfeld (George, Kramer, Elaine) | 6.555 | ✓ |
+| Seinfeld (Jerry only) | ~6.66 | ✗ |
+| Friends | 6.555 | ✓ |
+| Parks and Recreation | 6.555 | ✓ |
+| Arrested Development | ~6.86 | ✗ |
+| Schitt's Creek | ~6.86 | ✗ |
+| 30 Rock | 6.555 | ✓ |
+
+Four shows used the right replacement. Three didn't. The deviations weren't random — they fell along clean show boundaries. The most plausible cause is that AD and Schitt's were scored during an interim period when the replacement value was set differently in the WAR-computation script, and Jerry was the only Seinfeld character whose WAR was recomputed after the April 17 stand-up correction without the replacement value being reset.
+
+## What the fix changes
+
+Top 15 cross-show leaderboard, before and after applying the documented formula uniformly:
+
+| # | Character | Show | Old WAR | New WAR | Δ |
+|---:|---|---|---:|---:|---:|
+| 1 | Jerry Seinfeld | Seinfeld | 1,109.5 | **1,499.5** | +390 |
+| 2 | Jack Donaghy | 30 Rock | 1,319.2 | 1,319.2 | — |
+| 3 | George Costanza | Seinfeld | 1,181.9 | 1,181.3 | — |
+| 4 | Liz Lemon | 30 Rock | 987.5 | 987.5 | — |
+| 5 | Dwight Schrute | The Office | 802.6 | **811.3** | +9 |
+| 6 | Tracy Jordan | 30 Rock | 808.6 | 808.6 | — |
+| 7 | Chandler Bing | Friends | 651.6 | 655.4 | +4 |
+| 8 | Phoebe Buffay | Friends | 618.5 | 622.2 | +4 |
+| 9 | Ron Swanson | Parks and Rec | 605.8 | 609.4 | +4 |
+| 10 | Cosmo Kramer | Seinfeld | 555.2 | 564.1 | +9 |
+| 11 | Leslie Knope | Parks and Rec | 550.4 | 554.1 | +4 |
+| 12 | Joey Tribbiani | Friends | 531.6 | 535.3 | +4 |
+| 13 | **Michael Bluth** | Arrested Dev | 219.7 | **520.0** | **+300** |
+| 14 | Kenneth Parcell | 30 Rock | 506.6 | 506.6 | — |
+| 15 | **Moira Rose** | Schitt's Creek | 210.2 | **493.0** | **+283** |
+
+The two-line summary:
+- Jerry passes Jack and George for the #1 spot cross-show.
+- AD and Schitt's characters move up significantly. Michael Bluth and Moira Rose specifically jump 280-300 points into the top 15.
+
+## Why this matches intuition better — and where it still won't
+
+The AD shift is the one that always bothered me about the old numbers. We published [a piece](/blog/arrested-development-craft-leaderboard) showing that 8 of the top 10 per-joke craft characters in TV comedy come from Arrested Development. But on the old WAR leaderboard, only one AD character (Michael Bluth at #16) made the top 20. That was a real contradiction in our data — the same characters that were elite per-joke were ranked below Friends supporting players on total WAR. The fix resolves it: AD characters now show up where their craft scores said they should be.
+
+Where the fix won't match every reader's intuition: **Jerry passing George.** Most Seinfeld fans say George is the funnier character. The data supports that on a per-joke basis (George has slightly higher craft AND slightly higher impact). What the data shows is that Jerry, who has 44% more eligible jokes than George (3,800 vs 2,632 after stand-up downweighting), contributes more *aggregate* comedic output. Both are true. Both matter. Which one is "funniest" is a definition question, not a data question.
+
+To make that clearer, we've added a new sort on the [/rankings/funniest-characters](/rankings/funniest-characters) page: **Per-joke Quality**. It ranks by quality_index (the shrunk per-joke score) instead of total WAR. Sort by that, and George tops Seinfeld. Sort by Total WAR, and Jerry tops Seinfeld. The two leaderboards together tell a more honest story than either alone.
+
+## What didn't change
+
+To be very explicit:
+
+- **Per-joke craft and impact scores are unchanged.** Every individual joke's score is identical to what it was yesterday. The fix is in how those scores aggregate to character-level WAR, not in the scores themselves.
+- **The methodology was already documented correctly.** This wasn't a methodology change. It was reconciling data files that had drifted from the documented formula. The formula stays the same.
+- **The shows that were already correct stayed correct.** Office, Friends, Parks, 30 Rock, and most of Seinfeld saw shifts of less than 10 WAR (rounding-level drift from the league median moving slightly with 30 Rock added).
+- **Internal show rankings are unchanged.** Within each show, the same characters are still at the top. Dwight is still #1 on Office. George is still #1 on Seinfeld by per-joke quality. The fix only reshuffles cross-show positions.
+
+## What this means for the published cross-show post
+
+Our [original cross-show leaderboard post](/blog/funniest-characters-cross-show) from May 12 was titled "George Costanza Just Beat Jerry Seinfeld." Under the fix, that title's claim reverses on total WAR. We've added a note to that post pointing readers here. We're not deleting the original — the analysis was correct given the data available at the time. We're documenting the correction.
+
+## Lessons learned
+
+Two things we'd do differently:
+
+1. **Verify replacement values consistently when adding shows.** Each show should be exported through the same script with the same replacement constant. We should have caught the AD/Schitt's drift during launch QA. Adding a one-line assertion to the export pipeline will prevent this from recurring.
+
+2. **Publish reproducible methodology code.** The WAR formula is documented in CLAUDE.md and on the methodology page, but the script that computed the characters.json files isn't in the public repo. We'll publish the WAR computation script alongside the data so anyone can reproduce the numbers and catch drift like this earlier.
+
+If you want the underlying numbers and re-run the math yourself, the per-show characters.json files are at \`thehumorindex.com/data/{show-slug}/characters.json\`. Every field is documented. Math is yours to check.
+
+---
+
+*Full methodology: [thehumorindex.com/methodology](/methodology). The display scale recalibration on May 14 is separately documented [here](/blog/display-scale-recalibration). Questions: hello@thehumorindex.com.*
+`,
+  },
   'display-scale-recalibration': {
     title: "We Just Recalibrated the Humor Index Display Scale. Here's Why and What Changed.",
     description: "Adding 30 Rock to the dataset pushed multiple episodes past the 100-display ceiling. The underlying scores were correct; the display math wasn't. We recalibrated so the all-time top episode anchors near 100. All shows shifted slightly. Rank order is unchanged.",
@@ -388,8 +488,8 @@ If you want the underlying numbers, every per-episode score and per-joke detail 
 `,
   },
   'funniest-characters-cross-show': {
-    title: "George Costanza Just Beat Jerry Seinfeld for the Funniest Character in TV Comedy. Here's the Full Cross-Show Leaderboard.",
-    description: "We finally have six shows scored under v2 consensus. George Costanza tops the cross-show WAR leaderboard at 1,181.9 — narrowly edging Jerry Seinfeld. Ron Swanson has the highest per-joke Craft score of any character on the index. Here's what the top 25 looks like.",
+    title: "The Cross-Show Funniest Character Leaderboard — Original Take. (See update note.)",
+    description: "Original analysis from May 12, 2026 using the v2 consensus methodology applied at the time. Subsequent WAR reconciliation on May 15 corrected stale replacement values for several shows. The conclusion of this post (George > Jerry on TOTAL WAR) reversed after the fix. See the [WAR Reconciliation post](/blog/war-reconciliation) for what changed and why.",
     date: '2026-05-12',
     category: 'Analysis',
     content: `

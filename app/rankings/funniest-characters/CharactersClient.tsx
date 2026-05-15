@@ -15,9 +15,10 @@ export interface WarCharacter {
   showTotalEpisodes: number;
   avgCraft: number;
   avgImpact: number;
+  qualityIndex: number;
 }
 
-type SortMode = 'total_war' | 'war_per_ep';
+type SortMode = 'total_war' | 'war_per_ep' | 'quality_index';
 type Tier = 'all' | 'main' | 'recurring' | 'guest';
 type FormatFilter = 'all' | 'single_camera' | 'multi_camera_live' | 'multi_camera_sweetened' | 'hybrid';
 
@@ -97,6 +98,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
         const qb = (b.avgCraft + b.avgImpact) / 2;
         return qa - qb;
       }
+      if (sortMode === 'quality_index') return b.qualityIndex - a.qualityIndex;
       return sortMode === 'total_war' ? b.war - a.war : b.warPerEpisode - a.warPerEpisode;
     });
     return sorted.slice(0, 25);
@@ -111,6 +113,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
 
   const maxValueForBar = useMemo(() => {
     if (!filtered.length) return 1;
+    if (sortMode === 'quality_index') return filtered[0].qualityIndex;
     return sortMode === 'total_war' ? filtered[0].war : filtered[0].warPerEpisode;
   }, [filtered, sortMode]);
 
@@ -131,6 +134,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
           {([
             { key: 'total_war', label: 'Total WAR' },
             { key: 'war_per_ep', label: 'WAR / Episode' },
+            { key: 'quality_index', label: 'Per-joke Quality' },
           ] as const).map(opt => (
             <button
               key={opt.key}
@@ -202,7 +206,9 @@ export default function CharactersClient({ characters, ascending = false }: { ch
       <div className="space-y-2 mb-12">
         <AnimatePresence mode="popLayout">
           {filtered.map((c, i) => {
-            const value = sortMode === 'total_war' ? c.war : c.warPerEpisode;
+            const value = sortMode === 'total_war' ? c.war
+              : sortMode === 'war_per_ep' ? c.warPerEpisode
+              : c.qualityIndex;
             const pct = maxValueForBar > 0 ? (value / maxValueForBar) * 100 : 0;
             return (
               <motion.div
@@ -236,16 +242,16 @@ export default function CharactersClient({ characters, ascending = false }: { ch
                         <div className="flex gap-3 mt-1 text-xs text-brand-text-muted">
                           <span>{c.totalJokes.toLocaleString()} jokes</span>
                           <span>{c.episodesAppeared} eps</span>
-                          {sortMode === 'total_war'
-                            ? <span>{c.warPerEpisode.toFixed(2)} WAR/ep</span>
-                            : <span>{c.war.toFixed(1)} total WAR</span>}
+                          {sortMode === 'total_war' && <span>{c.warPerEpisode.toFixed(2)} WAR/ep</span>}
+                          {sortMode === 'war_per_ep' && <span>{c.war.toFixed(1)} total WAR</span>}
+                          {sortMode === 'quality_index' && <span>{c.war.toFixed(1)} total WAR</span>}
                         </div>
                       </div>
                     </div>
                     <div className="text-right">
                       <span className="font-mono text-lg text-brand-gold font-medium">{value.toFixed(sortMode === 'total_war' ? 1 : 2)}</span>
                       <p className="text-[10px] text-brand-text-muted uppercase tracking-widest">
-                        {sortMode === 'total_war' ? 'WAR' : 'WAR/ep'}
+                        {sortMode === 'total_war' ? 'WAR' : sortMode === 'war_per_ep' ? 'WAR/ep' : 'Quality'}
                       </p>
                     </div>
                   </div>

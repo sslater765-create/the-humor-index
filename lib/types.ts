@@ -134,6 +134,7 @@ export interface CharacterProfile {
   profile_path?: string;
   character_full_name?: string;
   war?: number;
+  quality_index?: number;
   peak_quality?: number | null;
   elite_rate?: number | null;
   vs_castmates_delta?: number | null;

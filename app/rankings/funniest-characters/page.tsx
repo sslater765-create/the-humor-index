@@ -46,6 +46,7 @@ export default async function FunniestCharactersPage() {
         showTotalEpisodes,
         avgCraft: c.avg_craft ?? 0,
         avgImpact: c.avg_impact ?? 0,
+        qualityIndex: c.quality_index ?? ((c.avg_craft ?? 0) + (c.avg_impact ?? 0)) / 2,
       });
     }
   }

@@ -3,6 +3,7 @@ import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 
 // Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
 const BLOG_SLUGS = [
+  'war-reconciliation',
   'display-scale-recalibration',
   '30-rock-takes-the-crown',
   'arrested-development-craft-leaderboard',
@@ -50,6 +51,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Blog posts
   const blogDates: Record<string, string> = {
+    'war-reconciliation': '2026-05-15',
     'display-scale-recalibration': '2026-05-15',
     '30-rock-takes-the-crown': '2026-05-14',
     'arrested-development-craft-leaderboard': '2026-05-15',
