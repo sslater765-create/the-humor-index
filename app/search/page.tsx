@@ -1,7 +1,6 @@
 import PageHeader from '@/components/layout/PageHeader';
 import SearchClient from './SearchClient';
-import { getAllShows, getEpisodes, getEpisodeDetail } from '@/lib/data';
-import { JokeType } from '@/lib/types';
+import { getAllShows } from '@/lib/data';
 
 export const metadata = {
   title: 'Search Every Joke — Find Any Moment in Sitcom History',
@@ -18,61 +17,24 @@ export const metadata = {
 
 export const dynamic = 'force-static';
 
-interface SearchableJoke {
-  index: number;
-  text: string;
-  characters: string[];
-  joke_types: JokeType[];
-  craft_total: number;
-  impact_score: number;
-  showName: string;
-  showSlug: string;
-  season: number;
-  episodeNumber: number;
-  episodeTitle: string;
-}
-
 export default async function SearchPage() {
+  // Page renders only the shell + an approximate count.
+  // The full joke index is fetched client-side from /data/search-index.json
+  // — keeps the RSC payload small enough to fit Vercel's 19MB ISR limit while
+  // the search index itself can grow without bound as a normal static asset.
   const shows = await getAllShows();
-
-  const allJokes: SearchableJoke[] = [];
-  for (const show of shows) {
-    try {
-      const episodes = await getEpisodes(show.slug);
-      for (const ep of episodes) {
-        try {
-          const detail = await getEpisodeDetail(show.slug, ep.season, ep.episode_number);
-          if (detail) {
-            for (const joke of detail.jokes) {
-              allJokes.push({
-                index: joke.joke_index,
-                text: joke.text,
-                characters: joke.characters,
-                joke_types: joke.joke_types,
-                craft_total: joke.craft_total,
-                impact_score: joke.impact_score,
-                showName: show.name,
-                showSlug: show.slug,
-                season: ep.season,
-                episodeNumber: ep.episode_number,
-                episodeTitle: ep.title,
-              });
-            }
-          }
-        } catch { /* no detail */ }
-      }
-    } catch { /* no episodes */ }
-  }
+  const scoredShows = shows.filter(s => s.humor_index > 0);
+  const approxJokes = scoredShows.reduce((sum, s) => sum + (s.total_jokes_analyzed ?? 0), 0);
 
   return (
     <div>
       <PageHeader
         label="Search"
         title="Search Every Joke"
-        subtitle={`${allJokes.length.toLocaleString()} jokes across ${shows.length} shows. Find any moment.`}
+        subtitle={`${approxJokes.toLocaleString()} jokes across ${scoredShows.length} shows. Find any moment.`}
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
-        <SearchClient jokes={allJokes} />
+        <SearchClient />
       </div>
     </div>
   );

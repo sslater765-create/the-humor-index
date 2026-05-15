@@ -1,5 +1,5 @@
 'use client';
-import { useState, useMemo, useRef } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { JokeType } from '@/lib/types';
 import SurpriseButton from '@/components/ui/SurpriseButton';
@@ -18,13 +18,63 @@ interface SearchableJoke {
   episodeTitle: string;
 }
 
-export default function SearchClient({ jokes }: { jokes: SearchableJoke[] }) {
+// On-disk shape uses short keys to keep /data/search-index.json small.
+interface CompactJoke {
+  i: number;
+  t: string;
+  c: string[];
+  jt: JokeType[];
+  cr: number;
+  im: number;
+  sn: string;
+  ss: string;
+  s: number;
+  e: number;
+  et: string;
+}
+
+function expand(j: CompactJoke): SearchableJoke {
+  return {
+    index: j.i,
+    text: j.t,
+    characters: j.c,
+    joke_types: j.jt,
+    craft_total: j.cr,
+    impact_score: j.im,
+    showName: j.sn,
+    showSlug: j.ss,
+    season: j.s,
+    episodeNumber: j.e,
+    episodeTitle: j.et,
+  };
+}
+
+export default function SearchClient() {
+  const [jokes, setJokes] = useState<SearchableJoke[]>([]);
+  const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
   const [committed, setCommitted] = useState('');
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [sortBy, setSortBy] = useState<'relevance' | 'craft' | 'impact'>('relevance');
   const [filterType, setFilterType] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Fetch the joke index once on mount. Browser cache handles repeat visits.
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/data/search-index.json')
+      .then(r => r.json())
+      .then((data: CompactJoke[]) => {
+        if (cancelled) return;
+        setJokes(data.map(expand));
+        setLoading(false);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setLoading(false);
+      });
+    return () => { cancelled = true; };
+  }, []);
 
   const allTypes = useMemo(() => {
     const types = new Set<string>();
@@ -113,8 +163,9 @@ export default function SearchClient({ jokes }: { jokes: SearchableJoke[] }) {
             onChange={e => { setQuery(e.target.value); setShowSuggestions(true); }}
             onFocus={() => setShowSuggestions(true)}
             onKeyDown={e => { if (e.key === 'Enter') handleSubmit(); }}
-            placeholder="Search jokes, characters, episodes..."
-            className="w-full bg-brand-surface border border-brand-border rounded-xl px-4 py-3 text-brand-text-primary placeholder:text-brand-text-muted focus:outline-none focus:border-brand-gold transition-colors"
+            placeholder={loading ? 'Loading joke index…' : 'Search jokes, characters, episodes...'}
+            disabled={loading}
+            className="w-full bg-brand-surface border border-brand-border rounded-xl px-4 py-3 text-brand-text-primary placeholder:text-brand-text-muted focus:outline-none focus:border-brand-gold transition-colors disabled:opacity-60"
             aria-label="Search jokes"
             autoComplete="off"
           />
@@ -199,7 +250,7 @@ export default function SearchClient({ jokes }: { jokes: SearchableJoke[] }) {
               >
                 <div className="flex items-start justify-between mb-2">
                   <span className="text-xs text-brand-text-muted group-hover:text-brand-gold transition-colors">
-                    {joke.showName} · S{joke.season}E{String(joke.episodeNumber).padStart(2, '0')} {'\u201C'}{joke.episodeTitle}{'\u201D'}
+                    {joke.showName} · S{joke.season}E{String(joke.episodeNumber).padStart(2, '0')} {'“'}{joke.episodeTitle}{'”'}
                   </span>
                   <div className="flex gap-2 font-mono text-xs">
                     <span className="text-brand-blue">C:{joke.craft_total.toFixed(1)}</span>
@@ -234,7 +285,9 @@ export default function SearchClient({ jokes }: { jokes: SearchableJoke[] }) {
       ) : (
         <div className="text-center py-16">
           <p className="text-brand-text-muted text-sm">
-            Start typing to search across {jokes.length.toLocaleString()} analyzed jokes
+            {loading
+              ? 'Loading joke index…'
+              : `Start typing to search across ${jokes.length.toLocaleString()} analyzed jokes`}
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
             {['Michael Scott', 'that\'s what she said', 'cringe', 'callback', 'sarcasm'].map(suggestion => (
