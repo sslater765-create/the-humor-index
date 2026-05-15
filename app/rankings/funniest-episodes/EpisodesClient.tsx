@@ -130,9 +130,6 @@ export default function EpisodesClient({ episodes, ascending = false }: { episod
                 </div>
                 <div className="text-right shrink-0 ml-3">
                   <span className="font-mono text-lg text-brand-gold font-medium">{formatIndex(ep.humor_index)}</span>
-                  {ep.ci_95_low != null && (
-                    <p className="text-[10px] text-brand-text-muted">±{((ep.ci_95_high! - ep.ci_95_low) / 2).toFixed(1)}</p>
-                  )}
                 </div>
               </Link>
             </motion.div>

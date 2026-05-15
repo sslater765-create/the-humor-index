@@ -108,8 +108,7 @@ export default async function FunniestEpisodesPage() {
           <p className="text-sm text-brand-text-secondary leading-relaxed max-w-2xl">
             Episodes are ranked by the Humor Index, which weights peak joke density (15%),
             effective craft score (40%), raw impact (35%), weighted jokes-per-minute (10%),
-            plus a memorability bonus for highly quotable moments. Scores include a 95% bootstrap
-            confidence interval (±) and a show-relative percentile.{' '}
+            plus a memorability bonus for highly quotable moments.{' '}
             <Link href="/methodology" className="text-brand-gold hover:underline">
               Full methodology →
             </Link>
