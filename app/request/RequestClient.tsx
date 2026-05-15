@@ -172,8 +172,9 @@ export default function RequestClient() {
         </div>
         <p className="text-xs text-brand-text-muted mb-2">Up next:</p>
         <div className="flex flex-wrap gap-2">
-          {['Brooklyn Nine-Nine', 'Two and a Half Men',
-            "It's Always Sunny in Philadelphia", 'The Big Bang Theory'].map(name => (
+          {['Taxi', 'Brooklyn Nine-Nine', 'All in the Family', 'M*A*S*H', 'The Jeffersons',
+            "It's Always Sunny in Philadelphia", 'The Mary Tyler Moore Show', 'WKRP in Cincinnati',
+            'Sanford and Son', 'Barney Miller', 'Two and a Half Men', 'The Big Bang Theory'].map(name => (
             <span key={name} className="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-3 py-1">
               {name}
             </span>
