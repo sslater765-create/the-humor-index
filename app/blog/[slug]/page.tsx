@@ -157,27 +157,129 @@ If you want to argue with these numbers, the underlying data is all linked from 
 *Read more about the cross-show character leaderboard at [Funniest Characters Across All Six Shows](/blog/funniest-characters-cross-show), and the show-level rankings at [Arrested Development Takes the #1 Spot](/blog/arrested-development-takes-the-crown).*
 `,
   },
+  'display-scale-recalibration': {
+    title: "We Just Recalibrated the Humor Index Display Scale. Here's Why and What Changed.",
+    description: "Adding 30 Rock to the dataset pushed multiple episodes past the 100-display ceiling. The underlying scores were correct; the display math wasn't. We recalibrated so the all-time top episode anchors near 100. All shows shifted slightly. Rank order is unchanged.",
+    date: '2026-05-15',
+    category: 'Methodology',
+    content: `
+On May 15, 2026 we made a methodology change to the Humor Index: we recalibrated the display formula. Show-level scores shifted down between 0.7 and 4.3 points. The rank order didn't change.
+
+If you saw scores before today and you're seeing different numbers now, this post explains why.
+
+## What changed
+
+The raw Humor Index — the underlying score we compute from per-joke craft, impact, density, and consistency — is **unchanged**. Every per-joke and per-episode raw score in our database is exactly what it was yesterday.
+
+What we changed is the formula that maps that raw 0–10 score to the 0–100 display value you see on the site.
+
+**Old display formula:**
+
+\`display = 75 + (raw − 6.5) ÷ 0.55 × 10\`
+
+**New display formula:**
+
+\`display = 75 + (raw − 6.5) ÷ 0.80 × 10\`
+
+The only change is the spread parameter — 0.55 → 0.80. The slope of the scale flattened by about 31%. Center stays at 75 (median episode = 75). What changes is how aggressively a high-or-low raw score gets stretched into the display range.
+
+## Why we had to do this
+
+The previous calibration was set in April 2026 when we had six shows in the dataset. The implicit assumption was that "raw 8.0 ≈ display 100" — i.e., a raw score of 8 would represent an "essentially flawless" episode, calibrated against the absolute best episode in the dataset at that time.
+
+When we added 30 Rock on May 14, that assumption broke.
+
+The all-time top episode in the dataset — **The Office, "Dinner Party" (S04E13)** — has a raw HI of 8.34. Under the old display formula, that converts to display 108.45. **Above 100.** That's not what 100 is supposed to mean.
+
+It got worse with 30 Rock. Seven 30 Rock episodes scored above raw 7.875, which translated to display > 100 under the old formula. The clamp in the code caught them at exactly 100.0, but that masked real differences (Game Over at raw 8.08 and Reaganing at raw 7.91 were both being displayed as the same "100" even though they're meaningfully different scores).
+
+When the ceiling stops being a ceiling, the scale stops being useful.
+
+## The recalibration
+
+We picked the new spread (0.80) so that **raw 8.5 = display 100 exactly.** Why 8.5 instead of 8.34 (the current max)?
+
+- It gives us a small buffer above the current dataset max. The next few shows we score (Brooklyn Nine-Nine, It's Always Sunny, Big Bang Theory, Two and a Half Men) could surface a higher-scored episode. We don't want to re-recalibrate every time a new show ships.
+- 8.5 is a clean number. The methodology page is easier to defend with "raw 8.5 = ceiling" than with "raw 8.34 = ceiling, locked to whatever the current Office score is."
+
+Under the new formula, the all-time top episode (Dinner Party) lands at display 98.0. Nothing is at exactly 100 yet. There's room above the current ceiling for future episodes that we might score higher.
+
+## What every show shifted to
+
+| Show | Old | New | Δ |
+|---|---:|---:|---:|
+| 30 Rock | 88.6 | 84.3 | −4.3 |
+| Arrested Development | 85.2 | 82.0 | −3.2 |
+| Parks and Recreation | 80.55 | 78.8 | −1.75 |
+| The Office | 80.22 | 78.6 | −1.6 |
+| Seinfeld | 79.10 | 77.8 | −1.3 |
+| Friends | 78.66 | 77.5 | −1.2 |
+| Schitt's Creek | 78.30 | 77.3 | −1.0 |
+
+Shows that were higher under the old scale shifted down more. That's the entire point of the recalibration — the old scale was over-rewarding the top end of the distribution. The median (anywhere near 75) barely moved.
+
+## What did NOT change
+
+To be very explicit about this:
+
+- **Every raw HI is unchanged.** If you query our database directly, the per-joke craft scores, per-joke impact scores, per-episode raw HI, and per-season raw HI are all exactly what they were before this update.
+- **The rank order is identical.** 30 Rock is still #1. AD is still #2. The mid-cluster (Parks, Office, Seinfeld, Friends, Schitt's) is in the same relative order.
+- **The methodology that produces the raw scores is unchanged.** Same 9-dimension craft rubric. Same 3-run consensus. Same Bayesian shrinkage for per-character WAR. Same format-coefficient-deprecated approach.
+
+## What this means for prior content
+
+A handful of our prior blog posts and social posts cite specific display scores ("Seinfeld at 79.1", "Parks at 80.55", etc.). Those references are now slightly off from the live site. They're not wrong about the conclusions they drew — the rank order and the relative gaps are intact — but the absolute display numbers in those posts are from the old scale.
+
+We're not going back to edit historical posts. The "as of when" date on each post documents what scale was live at the time. If you want to compare a number from an old post to a number on the current site, multiply the old display by approximately 0.69 to get the new display: \`new = 75 + (old − 75) × 0.6875\`.
+
+The 30 Rock launch post from yesterday has been updated to reflect the new scale.
+
+## What we'd do differently next time
+
+The honest read on this incident: **we should have recalibrated the display scale when we set up the methodology page in April, not waited for 30 Rock to expose the problem.** The display formula was set in February 2026 against a much smaller dataset and was never re-anchored as the dataset grew. The clamp at 100 in the code papered over the issue for a while but eventually a high-scoring show was going to break it visibly.
+
+Going forward:
+
+- The display scale will be re-anchored whenever a new show pushes the raw maximum above 8.5. We'll document each recalibration in a methodology post like this one.
+- The methodology page (/methodology) now states the current display formula and the anchor (raw 8.5 = display 100) explicitly.
+- We'll publish a "what shifted" comparison post like this one alongside any future recalibration. Public methodology, public revisions.
+
+## Why we're telling you
+
+We could have done this silently. Most analytics products quietly tune their scales.
+
+The reason we're publishing this instead is that the brand is built around methodology transparency. We publish the ICC noise floor. We publish confidence intervals on show rankings. We publish the fact that the Office/Seinfeld/Friends/Parks/Schitt's cluster is statistically a wash. The Humor Index isn't useful if we hide what's actually happening inside it.
+
+A scoring system that adjusts itself without saying so isn't really a scoring system. It's a vibes engine with numbers.
+
+---
+
+*The full display formula is documented at our [methodology page](/methodology). The technical write-up of why 0.55 was wrong and 0.80 is right is at [our scorer-noise-floor post](/blog/scorer-noise-floor) under the calibration section. Questions: hello@thehumorindex.com.*
+`,
+  },
   '30-rock-takes-the-crown': {
     title: "30 Rock Just Took #1. By the Biggest Gap We've Measured.",
-    description: "30 Rock finished scoring on Thursday and lands at Humor Index 88.6 — the biggest #1-to-#2 gap on the leaderboard. Seven episodes break 100 on the display scale. The data points to one thing that no other show in the dataset comes close to.",
+    description: "30 Rock finished scoring on Thursday and lands at Humor Index 84.3 — the biggest #1-to-#2 gap on the leaderboard. Multiple episodes punch well above the median. The data points to one thing that no other show in the dataset comes close to.",
     date: '2026-05-14',
     category: 'Show Launch',
     content: `
 We just finished scoring 30 Rock. 138 episodes, seven seasons, 9,283 jokes scored using the same v2 methodology that's been applied to the other six shows (9 craft dimensions, 3-run consensus, Bayesian shrinkage on per-character ratings, the format coefficient deprecated as of April).
 
-The result: **30 Rock is now #1 on the Humor Index at 88.6, with a 3.4 point gap to Arrested Development at #2.** That's the biggest #1-to-#2 gap we've ever measured. Bigger than the gap from AD to Parks. Bigger than the gap from Parks to The Office.
+The result: **30 Rock is now #1 on the Humor Index at 84.3, with a 2.3 point gap to Arrested Development at #2.** That's the biggest #1-to-#2 gap we've ever measured. Bigger than the gap from AD to Parks. Bigger than the gap from Parks to The Office.
 
 Here's the leaderboard now:
 
 | # | Show | Humor Index | Episodes |
 |---:|---|---:|---:|
-| 1 | **30 Rock** | **88.6** | 138 |
-| 2 | Arrested Development | 85.2 | 84 |
-| 3 | Parks and Recreation | 80.55 | 124 |
-| 4 | The Office | 80.22 | 186 |
-| 5 | Seinfeld | 79.10 | 172 |
-| 6 | Friends | 78.66 | 235 |
-| 7 | Schitt's Creek | 78.30 | 80 |
+| 1 | **30 Rock** | **84.3** | 138 |
+| 2 | Arrested Development | 82.0 | 84 |
+| 3 | Parks and Recreation | 78.8 | 124 |
+| 4 | The Office | 78.6 | 186 |
+| 5 | Seinfeld | 77.8 | 172 |
+| 6 | Friends | 77.5 | 235 |
+| 7 | Schitt's Creek | 77.3 | 80 |
+
+(All shows shifted slightly downward on May 15 when we recalibrated the display scale so the all-time top episode caps at 100 instead of clamping. Rank order is unchanged. [More on the recalibration here](/blog/display-scale-recalibration).)
 
 Before getting into what the data says, the usual caveat: items 3 through 7 are statistically a wash. The 95% confidence intervals overlap heavily. The order of "is The Office actually funnier than Seinfeld" cannot be answered with this data — those numbers are within scoring noise. **The two real claims this leaderboard supports are: 30 Rock is meaningfully above AD, and AD is meaningfully above everyone else.** Everything below #2 is an elite cluster.
 
@@ -201,18 +303,18 @@ Put those two together — character-driven AND high JPM AND high-absurdist — 
 
 | Rank | Title | Score | Season |
 |---:|---|---:|---:|
-| 1 | Game Over | 103.7 | S7 |
-| 2 | Cooter | 102.8 | S2 |
-| 3 | Verna | 102.3 | S4 |
-| 4 | Nothing Left to Lose | 101.2 | S6 |
-| 5 | Alexis Goodlooking and the Case of the Missing Whisky | 100.8 | S6 |
-| 6 | Reaganing | 100.3 | S5 |
-| 7 | The Rural Juror | 100.1 | S1 |
-| 8 | Mrs. Donaghy | 99.2 | S5 |
-| 9 | ¡Qué Sorpresa! | 99.0 | S5 |
-| 10 | Jack Gets in the Game | 98.6 | S2 |
+| 1 | Game Over | 94.8 | S7 |
+| 2 | Cooter | 94.1 | S2 |
+| 3 | Verna | 93.8 | S4 |
+| 4 | Nothing Left to Lose | 93.0 | S6 |
+| 5 | Alexis Goodlooking and the Case of the Missing Whisky | 92.8 | S6 |
+| 6 | Reaganing | 92.4 | S5 |
+| 7 | The Rural Juror | 92.3 | S1 |
+| 8 | Mrs. Donaghy | 91.6 | S5 |
+| 9 | ¡Qué Sorpresa! | 91.5 | S5 |
+| 10 | Jack Gets in the Game | 91.3 | S2 |
 
-A note on those numbers above 100: the display scale isn't bounded at 100. It's a continuous transformation from the underlying raw score, anchored at center=75 (where the median episode in the dataset sits). Anything above 100 is more than two and a half standard deviations from the median. Seven 30 Rock episodes are in that range. For context, **The Office has zero, and Seinfeld has one** (The Wizard, S9E15, at 98.5).
+A note on the top of the scale: the display formula was recalibrated on May 15, 2026 so that the all-time top episode in our dataset — Office Dinner Party at raw 8.34 — anchors near 100. Under the previous calibration, 30 Rock had seven episodes scoring above 100 on the old display scale (along with one Office and one Parks episode), which made the scale lose its meaning. The recalibration preserved all rank order and just compressed the slope. ([Full writeup of the recalibration.](/blog/display-scale-recalibration))
 
 The peak isn't concentrated in one era either:
 
@@ -257,7 +359,7 @@ We're going to update [the cross-show WAR leaderboard](/blog/funniest-characters
 
 The single-run scorer noise floor is ~5 points per episode (ICC = 0.28). Three-run consensus tightens this dramatically — show-level CIs at the aggregate are <2 points wide. But this matters for how you should read the leaderboard:
 
-- "30 Rock is meaningfully above AD" — supportable; 3.4 point gap with 95% CI separation
+- "30 Rock is meaningfully above AD" — supportable; 2.3 point gap with 95% CI separation
 - "AD is meaningfully above Parks/Office/etc" — supportable; ~5 point gap to the next cluster
 - "Within the elite cluster, Parks (80.55) is funnier than Office (80.22)" — NOT supportable; that's a 0.33 point difference inside the noise floor
 

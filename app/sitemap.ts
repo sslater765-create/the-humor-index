@@ -3,6 +3,7 @@ import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 
 // Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
 const BLOG_SLUGS = [
+  'display-scale-recalibration',
   '30-rock-takes-the-crown',
   'arrested-development-craft-leaderboard',
   'funniest-characters-cross-show',
@@ -29,7 +30,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Use a single rolling "freshness" date for pages that are refreshed every
   // time the underlying data is. Update this when major changes ship.
-  const SITE_REFRESHED = new Date('2026-05-14');
+  const SITE_REFRESHED = new Date('2026-05-15');
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 1.0 },
     { url: url('/shows'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.9 },
@@ -49,6 +50,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Blog posts
   const blogDates: Record<string, string> = {
+    'display-scale-recalibration': '2026-05-15',
     '30-rock-takes-the-crown': '2026-05-14',
     'arrested-development-craft-leaderboard': '2026-05-15',
     'funniest-characters-cross-show': '2026-05-12',
