@@ -3,6 +3,7 @@ import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 
 // Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
 const BLOG_SLUGS = [
+  'humor-index-vs-imdb-three-ways',
   'taxi-launch',
   'war-reconciliation',
   'display-scale-recalibration',
@@ -52,6 +53,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Blog posts
   const blogDates: Record<string, string> = {
+    'humor-index-vs-imdb-three-ways': '2026-05-16',
     'taxi-launch': '2026-05-16',
     'war-reconciliation': '2026-05-15',
     'display-scale-recalibration': '2026-05-15',

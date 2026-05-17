@@ -14,7 +14,8 @@ interface NewItem {
 
 // These are the site's content items with their publish dates
 const ALL_ITEMS: NewItem[] = [
-  { href: '/blog/taxi-launch', label: 'Latest Blog', labelColor: 'text-brand-gold', title: 'Taxi Lands at 77.4 — A 1978 Show Inside the Same Tier as Seinfeld', subtitle: 'May 16, 2026', date: '2026-05-16' },
+  { href: '/blog/humor-index-vs-imdb-three-ways', label: 'Latest Blog', labelColor: 'text-brand-gold', title: "We Recomputed Our IMDb Correlation Three Ways. At the Show Level, It's Negative.", subtitle: 'May 16, 2026', date: '2026-05-16' },
+  { href: '/blog/taxi-launch', label: 'Blog', labelColor: 'text-brand-gold', title: 'Taxi Lands at 77.4 — A 1978 Show Inside the Same Tier as Seinfeld', subtitle: 'May 16, 2026', date: '2026-05-16' },
   { href: '/shows/taxi', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Taxi — All 114 Episodes', subtitle: '4,776 jokes analyzed · Debuts at #7', date: '2026-05-16' },
   { href: '/blog/war-reconciliation', label: 'Blog', labelColor: 'text-brand-gold', title: 'WAR Reconciliation: Jerry Seinfeld Is Now #1 Cross-Show', subtitle: 'May 15, 2026', date: '2026-05-15' },
   { href: '/blog/display-scale-recalibration', label: 'Blog', labelColor: 'text-brand-gold', title: "We Just Recalibrated the Display Scale. Here's What Changed.", subtitle: 'May 15, 2026', date: '2026-05-15' },

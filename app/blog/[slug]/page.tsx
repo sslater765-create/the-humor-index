@@ -357,6 +357,127 @@ A scoring system that adjusts itself without saying so isn't really a scoring sy
 *The full display formula is documented at our [methodology page](/methodology). The technical write-up of why 0.55 was wrong and 0.80 is right is at [our scorer-noise-floor post](/blog/scorer-noise-floor) under the calibration section. Questions: hello@thehumorindex.com.*
 `,
   },
+  'humor-index-vs-imdb-three-ways': {
+    title: "We Recomputed Our IMDb Correlation Three Ways. At the Show Level, It's Negative.",
+    description: "Our April post reported r = -0.005 between the Humor Index and IMDb. We dug back in. Within-show correlations span -0.115 to +0.392. The show-level correlation is -0.287. HI's top 10 and IMDb's top 10 overlap 6 of 80 across the catalog — exactly chance. The disagreement isn't noise. It's structured.",
+    date: '2026-05-16',
+    category: 'Data Science',
+    content: `
+Last month we [ran a quick correlation](/blog/imdb-vs-humor-index) of episode-level IMDb ratings against the Humor Index across three shows and reported r = -0.005 pooled. The headline at the time was "audience ratings and comedy craft are essentially unrelated." Comments asked what that meant. We dug back in across all eight scored shows now (1,105 episodes), and the three-level answer is much more interesting than the one-line headline.
+
+Three findings, going in the same direction.
+
+## Finding 1: Top-10 episode overlap is at chance
+
+For each show, take HI's top 10 episodes and IMDb's top 10 episodes. Count how many appear in both lists.
+
+| Show | HI top-10 ∩ IMDb top-10 | HI top-20 ∩ IMDb top-20 |
+|---|---:|---:|
+| The Office | 0 / 10 | 4 / 20 |
+| Seinfeld | 0 / 10 | 1 / 20 |
+| Friends | 2 / 10 | 3 / 20 |
+| Parks and Recreation | 1 / 10 | 5 / 20 |
+| Arrested Development | 2 / 10 | 7 / 20 |
+| Schitt's Creek | 1 / 10 | 2 / 20 |
+| 30 Rock | 0 / 10 | 3 / 20 |
+| Taxi | 0 / 10 | 5 / 20 |
+| **Pooled** | **6 / 80 (7.5%)** | **30 / 160 (18.8%)** |
+
+A random pick of 10 episodes out of ~100 would overlap with another random 10-pick at roughly 10%. **HI and IMDb agree on "the best episodes" at chance level.** For Seinfeld and Taxi specifically, the agreement is so low it's actively striking — one or zero overlapping titles in their top 10.
+
+Arrested Development has the strongest agreement (2/10, 7/20), consistent with its also being the only show with a moderate per-episode correlation. We'll come back to AD.
+
+## Finding 2: Per-show correlations are a mixed-sign cluster
+
+| Show | N | HI mean | IMDb mean | Pearson r | Spearman ρ |
+|---|---:|---:|---:|---:|---:|
+| Arrested Development | 84 | 81.92 | 8.02 | **+0.392** | +0.379 |
+| Parks and Recreation | 98 | 78.32 | 7.99 | +0.201 | +0.184 |
+| Taxi | 114 | 77.52 | 7.49 | +0.182 | +0.176 |
+| The Office | 186 | 78.20 | 8.08 | +0.158 | +0.172 |
+| 30 Rock | 138 | 84.93 | 7.93 | +0.007 | +0.022 |
+| Friends | 235 | 73.14 | 8.29 | -0.013 | -0.059 |
+| Seinfeld | 170 | 77.25 | 8.25 | -0.058 | -0.004 |
+| Schitt's Creek | 80 | 77.93 | 7.97 | -0.115 | -0.077 |
+
+The range is -0.115 to +0.392. Five shows are positive, three are negative. The weighted mean of within-show correlations is about +0.07. Even within a single show — where everything except the individual episode is held constant — the AI and the audience are measuring almost-uncorrelated things, and *which one leads can flip sign show-to-show.*
+
+Why does AD have such a strong positive while Schitt's Creek has a negative? We're not entirely sure, but a working hypothesis: AD is unusually joke-dense and the IMDb voters self-selected for AD fans who weight craft heavily. Schitt's Creek is more emotion-driven, and IMDb voters reward late-series finales and emotional reveals that the joke-density rubric doesn't see. That hypothesis is testable; we'll come back to it in a future post.
+
+## Finding 3: At the show level, the correlation is *negative*
+
+This is the strangest finding and probably the headline.
+
+Plot each show as one point: mean HI on the x-axis, mean IMDb on the y-axis. Across the 8 shows, **r = -0.287 (rho = -0.476).**
+
+The shows the AI rates funniest tend to be the shows IMDb audiences rate *lowest* on average. 30 Rock is the cleanest example: highest HI in the dataset (84.9), middling IMDb (7.93). Friends is the cleanest counter: lowest HI (73.1), highest mean IMDb (8.29). Seinfeld and Friends sit at the top of the IMDb axis while sitting in the middle of the HI axis; 30 Rock and Arrested Development sit at the top of the HI axis while sitting in the middle of the IMDb axis.
+
+This is consistent with a known divide in comedy: audience love is built on relationship and emotional payoff, which is a different thing from per-joke craft. The AI is measuring per-joke craft. IMDb is measuring how-much-this-show-meant-to-me. Across our catalog, those two things are mildly anti-correlated.
+
+## The disagreement is structured
+
+The disagreement between the two rating systems isn't random — it's interpretable. Here are the 10 episodes where HI rates much higher than IMDb (within-show z-score gap):
+
+| Show | S | E | Title | HI | IMDb |
+|---|---:|---:|---|---:|---:|
+| Seinfeld | 6 | 14 | The Highlights Of 100 (1) | 91.1 | 6.9 |
+| Seinfeld | 1 | 4 | Male Unbonding | 91.6 | 7.2 |
+| Friends | 7 | 21 | The One With The Vows | 83.0 | 7.2 |
+| Friends | 4 | 21 | The One With The Invitation | 77.9 | 6.9 |
+| The Office | 8 | 21 | Angry Andy | 89.5 | 6.7 |
+| The Office | 4 | 13 | Dinner Party | 98.0 | 7.6 |
+| Seinfeld | 1 | 1 | The Seinfeld Chronicles | 86.4 | 7.3 |
+| 30 Rock | 1 | 1 | Pilot | 90.1 | 7.2 |
+| The Office | 9 | 17 | The Farm | 91.9 | 7.3 |
+| Schitt's Creek | 1 | 3 | Don't Worry, It's His Sister | 88.6 | 7.5 |
+
+Pattern: **clip shows, pilots, recap episodes, and episodes that fans actively disliked.** The AI is reading them as joke-dense without seeing that the audience was already over them. Note "Dinner Party" appearing here even at a 7.6 IMDb — A.V. Club gave it an A, HI agrees (98.0), but its IMDb is "only" 7.6 because many viewers find it too painful to enjoy.
+
+Now the reverse — the 10 episodes where IMDb rates much higher than HI:
+
+| Show | S | E | Title | HI | IMDb |
+|---|---:|---:|---|---:|---:|
+| Friends | 6 | 25 | The One With The Proposal (2) | 59.0 | 9.2 |
+| Schitt's Creek | 6 | 12 | The Pitch | 66.2 | 8.7 |
+| Taxi | 3 | 20 | Latka The Playboy | 67.2 | 8.5 |
+| Seinfeld | 9 | 8 | The Betrayal | 62.9 | 8.9 |
+| 30 Rock | 5 | 4 | Live Show | 77.9 | 8.6 |
+| Schitt's Creek | 6 | 13 | Start Spreading The News | 73.2 | 9.2 |
+| 30 Rock | 1 | 12 | Black Tie | 77.0 | 8.5 |
+| 30 Rock | 6 | 14 | Kidnapped By Danger | 74.5 | 8.3 |
+| Seinfeld | 5 | 21 | The Hamptons | 73.4 | 9.5 |
+| 30 Rock | 7 | 12 | Hogcock! | 83.1 | 8.9 |
+
+Pattern: **series finales, emotional payoff episodes, format-experiment episodes, and stunt-character showcases.** "Start Spreading The News" is the Schitt's Creek finale. "The One With The Proposal" is the Chandler-Monica proposal. "The Betrayal" is Seinfeld's reverse-chronology episode. "Live Show" is 30 Rock's live-broadcast experiment. "Hogcock!" is 30 Rock's series finale.
+
+The audience is rewarding what the AI cannot see: ending, weight, format risk, and the cumulative emotional debt of a long-running show paying off. These are *events*, not jokes. HI scores them as merely competent on craft because they're not joke-dense; IMDb scores them as transcendent because of what they represent.
+
+## What this means for what we publish
+
+The site has been positioned around the claim that HI measures "comedy craft, not popularity." This analysis gives that claim empirical backbone instead of leaving it as a hedge:
+
+- At the show level, HI is *anti*-correlated with audience popularity. Funnier-per-craft and more-loved are not the same thing.
+- At the episode level within a show, the two axes are at chance to weakly positive — and the disagreement is structured: audiences reward emotional climax; HI rewards joke density.
+- Our earlier r = -0.005 pooled result understated this. It averaged opposing show-level and episode-level effects to a single deceptively quiet number.
+
+The right way to read the Humor Index is now this: it measures what a writers' room would mean by "this episode is well-crafted comedy." It does not measure what an audience means by "this is my favorite episode." Those two things diverge in interpretable ways, and we can show you exactly where.
+
+## Methodology caveats
+
+- **IMDb ratings drift over time.** This snapshot is whatever was in our episode JSONs at scoring time; ratings on long-running shows like Friends and Seinfeld have probably shifted slightly upward since their early days.
+- **IMDb's per-episode rating mixes signal sources.** Pilots and finales get massively more votes than mid-season filler. That sample-size imbalance is real but doesn't change the direction of the findings.
+- **The pre-1985 era is represented by only one show (Taxi).** The show-level negative correlation could partly reflect era effects we haven't measured yet. As we score Mary Tyler Moore, All in the Family, M*A*S*H, and Barney Miller, this comparison will get more robust.
+- **This is one external source.** Audience ratings on IMDb are a *signal* of episode quality, not the truth about it. A complementary critic-side validation (A.V. Club letter grades) is coming next. Both together is the right calibration.
+
+## Data
+
+If you want to pull the underlying joined dataset — every episode with its HI, IMDb rating, and within-show z-scores — it's available on request. Email hello@thehumorindex.com and we'll send it. The full per-show breakdown is also visible on each show's page on the site.
+
+---
+
+*This post extends the earlier [IMDb vs Humor Index](/blog/imdb-vs-humor-index) analysis from April with the full eight-show dataset. The methodology is documented at [our methodology page](/methodology). Questions or pushback: hello@thehumorindex.com.*
+`,
+  },
   'taxi-launch': {
     title: "Taxi Lands at 77.4 — A 1978 Show Inside the Same Tier as Seinfeld",
     description: "We just scored all 114 episodes of Taxi. It lands at Humor Index 77.4 — statistically indistinguishable from Seinfeld, Friends, and Schitt's Creek. The format we used to penalize for is the format every modern character comedy descends from. And Louie De Palma cracks the top 10 cross-show.",

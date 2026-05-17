@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'humor-index-vs-imdb-three-ways',
+    title: "We Recomputed Our IMDb Correlation Three Ways. At the Show Level, It's Negative.",
+    description: "Our April post reported r = -0.005 between the Humor Index and IMDb. We dug back in. Within-show correlations span -0.115 to +0.392. The show-level correlation is -0.287. HI's top 10 and IMDb's top 10 overlap 6 of 80 across the catalog — exactly chance.",
+    date: '2026-05-16',
+    category: 'Data Science',
+    readTime: '8 min read',
+    stat: "6 / 80",
+    statLabel: "HI ∩ IMDb top-10 across catalog",
+  },
+  {
     slug: 'taxi-launch',
     title: "Taxi Lands at 77.4 — A 1978 Show Inside the Same Tier as Seinfeld",
     description: "We just scored all 114 episodes of Taxi. It lands at Humor Index 77.4 — statistically indistinguishable from Seinfeld, Friends, and Schitt's Creek. The format we used to penalize for is the format every modern character comedy descends from. And Louie De Palma cracks the top 10 cross-show.",
