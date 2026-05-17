@@ -113,12 +113,12 @@ export default async function HomePage() {
           <div className="flex flex-wrap gap-6 mb-5">
             <div>
               <p className="text-xs text-brand-text-muted mb-1">The Office</p>
-              <p className="font-mono text-2xl text-brand-gold">80.2</p>
+              <p className="font-mono text-2xl text-brand-gold">78.6</p>
               <p className="text-[10px] text-brand-text-muted">Craft 6.87 · Impact 6.67</p>
             </div>
             <div>
               <p className="text-xs text-brand-text-muted mb-1">Seinfeld</p>
-              <p className="font-mono text-2xl text-brand-text-primary">79.1</p>
+              <p className="font-mono text-2xl text-brand-text-primary">77.8</p>
               <p className="text-[10px] text-brand-text-muted">Craft 7.15 · Impact 6.44</p>
             </div>
             <div>
