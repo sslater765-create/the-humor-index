@@ -30,6 +30,9 @@ export default function TierBadge({
   const padding = size === 'sm' ? 'px-1.5 py-0.5' : 'px-2.5 py-1';
   const textSize = size === 'sm' ? 'text-[10px]' : 'text-xs';
 
+  // The CI-boundary uncertainty (formerly rendered as a trailing `~`) is still
+  // disclosed in the hover title, but kept out of the visible label so the
+  // leaderboard reads consistently. Methodology blog covers the noise floor.
   const title = uncertain
     ? `${tier.description} (tier boundary is inside this show's 95% CI)`
     : tier.description;
@@ -40,7 +43,6 @@ export default function TierBadge({
       title={title}
     >
       {tier.label}
-      {uncertain && <span className="opacity-60" aria-label="tier boundary inside CI">~</span>}
       {showNumber && score != null && (
         <span className="text-brand-text-muted normal-case font-normal tracking-normal ml-0.5">
           · {score.toFixed(1)}
