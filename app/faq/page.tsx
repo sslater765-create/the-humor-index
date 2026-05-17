@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: 'Which show currently ranks #1?',
-    a: `Arrested Development sits at the top of the Humor Index at 85.2, with Parks and Recreation (80.55) and The Office (80.22) close behind. The top three shows cluster within 1.5 points and their 95% credible intervals overlap — small per-episode differences move the order. We've now fully scored six shows: Seinfeld, The Office, Friends, Parks and Recreation, Schitt's Creek, and Arrested Development.`,
+    a: `30 Rock sits at the top of the Humor Index at 84.3, with Arrested Development (82.0), Parks and Recreation (78.8), and The Office (78.6) close behind. The top eight shows cluster within about seven points and their 95% credible intervals overlap significantly — small per-episode differences move the order, especially below the top two. We've now fully scored eight shows: 30 Rock, Arrested Development, Parks and Recreation, The Office, Seinfeld, Friends, Taxi, and Schitt's Creek.`,
   },
   {
     q: 'Do you penalize multi-camera shows or laugh tracks?',

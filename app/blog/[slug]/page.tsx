@@ -357,6 +357,135 @@ A scoring system that adjusts itself without saying so isn't really a scoring sy
 *The full display formula is documented at our [methodology page](/methodology). The technical write-up of why 0.55 was wrong and 0.80 is right is at [our scorer-noise-floor post](/blog/scorer-noise-floor) under the calibration section. Questions: hello@thehumorindex.com.*
 `,
   },
+  'taxi-launch': {
+    title: "Taxi Lands at 77.4 — A 1978 Show Inside the Same Tier as Seinfeld",
+    description: "We just scored all 114 episodes of Taxi. It lands at Humor Index 77.4 — statistically indistinguishable from Seinfeld, Friends, and Schitt's Creek. The format we used to penalize for is the format every modern character comedy descends from. And Louie De Palma cracks the top 10 cross-show.",
+    date: '2026-05-16',
+    category: 'Show Launch',
+    content: `
+We just finished scoring Taxi. 114 episodes across five seasons, 4,776 jokes scored using v2 methodology — same nine craft dimensions, same three-run consensus, same Bayesian shrinkage on per-character ratings that we've now run on seven other shows.
+
+The result: **Taxi lands at Humor Index 77.4.** That's the eighth show on the leaderboard and it sits inside the Great tier alongside Seinfeld (77.8), Friends (77.5), and Schitt's Creek (77.3). The four-show spread from #5 to #8 is half a point — well inside our noise floor. The honest read is that those four shows are statistically indistinguishable.
+
+Here's the leaderboard now:
+
+| # | Show | Humor Index | Episodes |
+|---:|---|---:|---:|
+| 1 | 30 Rock | 84.3 | 138 |
+| 2 | Arrested Development | 82.0 | 84 |
+| 3 | Parks and Recreation | 78.8 | 124 |
+| 4 | The Office | 78.6 | 186 |
+| 5 | Seinfeld | 77.8 | 172 |
+| 6 | Friends | 77.5 | 235 |
+| 7 | **Taxi** | **77.4** | **114** |
+| 8 | Schitt's Creek | 77.3 | 80 |
+
+Taxi originally aired 1978–1983. Twelve years before Seinfeld. Twenty-four before Schitt's Creek. It is the oldest show we've fully scored, and it is in the same statistical tier as both of them.
+
+That's the result. The interesting question is why.
+
+## The format we used to penalize for
+
+When we built the first version of the Humor Index, we shipped with a format coefficient — a 15–25% reduction on Impact for multi-camera shows with laugh tracks. The theory was that the laugh track did emotional work the writing wasn't doing on its own. We removed that coefficient on April 16 after a Bayesian audit showed the effect was statistically zero. ([Full reasoning here.](/blog/seinfeld-vs-the-office))
+
+Taxi is the first show we've scored that would have been hit hardest by that old coefficient. Three-camera shoot. Studio audience. Live laughs. By the old methodology, this score would have been roughly 65 — bottom of the Mixed tier. By the corrected methodology, it's 77.4 — middle of the Great tier.
+
+That's a 12-point swing produced entirely by removing a thumb we shouldn't have had on the scale. It is the clearest single-show demonstration our methodology has of why that coefficient was wrong.
+
+## The character roster
+
+Top per-joke craft and total WAR for Taxi characters:
+
+| # | Character | WAR | Jokes |
+|---:|---|---:|---:|
+| 1 | **Louie De Palma** | 461.8 | 1,302 |
+| 2 | Reverend Jim Ignatowski | 290.2 | 584 |
+| 3 | Alex Reiger | 240.9 | 953 |
+| 4 | Latka Gravas | 130.8 | 390 |
+| 5 | Tony Banta | 123.0 | 521 |
+| 6 | Bobby Wheeler | 58.0 | 298 |
+| 7 | Simka Gravas | 42.9 | 89 |
+| 8 | Elaine Nardo | 41.0 | 303 |
+
+Louie De Palma at 461.8 WAR lands him just outside the cross-show top 10 — between Joey Tribbiani (531.6) and Michael Scott (447.1). He has the third-highest WAR of any show's #1 character on the index, behind only George Costanza and Jerry Seinfeld. Danny DeVito's dispatcher is the most valuable comedy character produced before 1985 that the index has scored. The runner-up, Jim Ignatowski, is the second-most-valuable.
+
+Two distinctives in the character data worth flagging.
+
+**Louie does it on volume AND quality.** 1,302 jokes is a heavy load for a supporting role. His Impact scores are the highest of any character on the show — the role is built for it. He gets the dispatcher cage, the elevation, the captive audience. The writers' room knew what they had. Every episode rotates him in.
+
+**Jim Ignatowski is the highest-Impact character on the roster.** 584 jokes is a small sample, but each one is doing more punch-per-beat than anyone else's. The character is built as a delivery vehicle for surrealism — and even with our absurdist density penalty (which Christopher Lloyd's character would lose to without it), he scores at the top of the show on raw Impact.
+
+## The episode peaks
+
+| Rank | Title | Score | Season |
+|---:|---|---:|---:|
+| 1 | Zena's Honeymoon | 91.5 | S5 |
+| 2 | Jim's Mario's | 90.4 | S5 |
+| 3 | Scenskees From A Marriage (Part 2) | 87.1 | S5 |
+| 4 | Alex The Gofer | 86.6 | S5 |
+| 5 | On The Job (Part 1) | 86.0 | S3 |
+| 6 | Thy Boss's Wife | 85.9 | S3 |
+| 7 | Louie's Revenge | 85.6 | S5 |
+| 8 | Louie And The Nice Girl | 85.5 | S2 |
+
+Six of the top eight episodes are from Season 5. That's the NBC season — Taxi was cancelled by ABC after Season 4 and picked up by NBC for one final year. The conventional wisdom is that Taxi declined in its last season, particularly in ratings. The Humor Index says the writing peaked there. Season 5 aggregate is 79.8, the highest of any season; Season 1 sits at 74.5.
+
+This is a pattern we've seen elsewhere. Schitt's Creek peaks in its final season too. Comedies built around ensembles tend to reward their writers' room time — characters get sharper, callbacks accumulate, the cast knows their beats. A show being cancelled doesn't automatically mean a show that lost its way.
+
+## The comedy DNA
+
+Per-joke distribution across the 18 categories in our taxonomy:
+
+| Category | Taxi | Median (other 7 shows) |
+|---|---:|---:|
+| Character comedy | 30.7% | 36.6% |
+| Escalation | 8.3% | 11.4% |
+| Irony/sarcasm | 7.8% | ~8% |
+| Setup/punchline | 7.4% | ~6% |
+| Absurdist | 6.9% | 9.9% |
+| Observational | 6.2% | 7.2% |
+| Deadpan understatement | 6.2% | 5.6% |
+| Cringe/discomfort | 5.2% | 7.8% |
+
+Two things stand out.
+
+**Setup/punchline is higher than the median.** This is the multi-cam fingerprint. Taxi is the only ensemble single-location workplace comedy in the dataset that runs an old-fashioned setup-and-pause structure for a meaningful percentage of its jokes. Modern character comedies pack jokes inside scenes — the joke happens because of who the character is, not because someone gave another character a setup line. Taxi does some of that. But it also does the older format on a meaningful fraction of its jokes, and the format still scores reasonably well on the craft rubric.
+
+**Character comedy at 30.7% is lower than every modern character comedy.** 30 Rock 62.7%. Schitt's 69.1%. AD 54.4%. Office 36.7%. Parks 36.5%. Taxi is closer to Seinfeld (24.6%) and Friends (26.4%) on this axis — heavier on situation, lighter on character-driven punchlines than the modern ensemble shows. This is the actual structural difference between a 1978 workplace comedy and a 2010 one. The 1978 show is funnier *to* the audience; the 2010 show is funnier *because* of the audience knowing the characters.
+
+You can see why this matters in the WAR data. Taxi's #1 character (Louie) has 461.8 WAR. 30 Rock's #1 (Jack Donaghy) does similar work on more volume. But Taxi's character economy is shallower — Louie carries a much bigger share of the craft than Jack does on his show. Taxi's roster looks more like Seinfeld's (one or two outliers, then a steep drop) than Schitt's Creek's (most of the cast scoring within a tight band).
+
+## The methodology caveat we always include
+
+The single-run scorer noise floor is ~5 points per episode (ICC = 0.28). Three-run consensus tightens this to show-level CIs roughly ±1.2 points. With that in mind, here's how to read this leaderboard:
+
+- "Taxi is meaningfully below 30 Rock and AD" — supportable; 5+ point gap with no CI overlap
+- "Taxi is meaningfully below Parks and The Office" — borderline; 1.2 to 1.4 point gaps that are at the edge of the noise floor
+- "Taxi vs Seinfeld vs Friends vs Schitt's" — NOT supportable as a ranking; 0.5 point spread across four shows is squarely inside the noise floor
+
+The defensible claim is that Taxi joined the Great tier on the strength of one of the strongest character rosters we've scored, and that the score is in the same statistical band as three modern shows. The defensible claim is *not* that Taxi is funnier than Schitt's Creek, even though 77.4 > 77.3.
+
+## What this changes
+
+A few things fall out of this dataset that are worth noting before the next post:
+
+1. **The cross-show character leaderboard needs Louie De Palma added.** He'll land somewhere between #9 and #11 on total WAR. We'll update [the cross-show post](/blog/funniest-characters-cross-show) when we have B99 scored too.
+
+2. **The pre-1985 era is now represented in the index.** Until now, the oldest scored show was Seinfeld (1989). Taxi at 77.4 is evidence that the methodology produces sensible scores for shows from earlier eras when format effects are properly handled. The next pre-1985 candidates on the backlog are All in the Family, Mary Tyler Moore, Barney Miller, and M*A*S*H.
+
+3. **The Great tier is now crowded.** Four shows (Seinfeld, Friends, Taxi, Schitt's Creek) all within 0.5 points of each other in the 77.3–77.8 band. The Office at 78.6 is only barely above this cluster; if it slips a half point on a future rescore it could drop into this group too. The tier line at 78 is doing meaningful work on the leaderboard.
+
+## What's next
+
+Taxi is the eighth show fully scored on the index. The drip-release schedule from May had Brooklyn Nine-Nine coming after 30 Rock; Taxi was inserted ahead of B99 because the transcripts came together faster than expected. B99 is now the active show in the pipeline. After that, the queue is Two and a Half Men, It's Always Sunny, and The Big Bang Theory.
+
+If you want the underlying numbers, every per-episode score and per-joke detail is at [thehumorindex.com/shows/taxi](/shows/taxi).
+
+---
+
+*Taxi is the eighth show fully scored on the Humor Index. The methodology is documented at [our methodology page](/methodology), and the show-level confidence intervals are explained at [our Bayesian credible intervals post](/blog/bayesian-credible-intervals). Questions: hello@thehumorindex.com.*
+`,
+  },
   '30-rock-takes-the-crown': {
     title: "30 Rock Just Took #1. By the Biggest Gap We've Measured.",
     description: "30 Rock finished scoring on Thursday and lands at Humor Index 84.3 — the biggest #1-to-#2 gap on the leaderboard. Multiple episodes punch well above the median. The data points to one thing that no other show in the dataset comes close to.",

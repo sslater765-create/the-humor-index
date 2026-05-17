@@ -14,7 +14,9 @@ interface NewItem {
 
 // These are the site's content items with their publish dates
 const ALL_ITEMS: NewItem[] = [
-  { href: '/blog/war-reconciliation', label: 'Latest Blog', labelColor: 'text-brand-gold', title: 'WAR Reconciliation: Jerry Seinfeld Is Now #1 Cross-Show', subtitle: 'May 15, 2026', date: '2026-05-15' },
+  { href: '/blog/taxi-launch', label: 'Latest Blog', labelColor: 'text-brand-gold', title: 'Taxi Lands at 77.4 — A 1978 Show Inside the Same Tier as Seinfeld', subtitle: 'May 16, 2026', date: '2026-05-16' },
+  { href: '/shows/taxi', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Taxi — All 114 Episodes', subtitle: '4,776 jokes analyzed · Debuts at #7', date: '2026-05-16' },
+  { href: '/blog/war-reconciliation', label: 'Blog', labelColor: 'text-brand-gold', title: 'WAR Reconciliation: Jerry Seinfeld Is Now #1 Cross-Show', subtitle: 'May 15, 2026', date: '2026-05-15' },
   { href: '/blog/display-scale-recalibration', label: 'Blog', labelColor: 'text-brand-gold', title: "We Just Recalibrated the Display Scale. Here's What Changed.", subtitle: 'May 15, 2026', date: '2026-05-15' },
   { href: '/blog/30-rock-takes-the-crown', label: 'Blog', labelColor: 'text-brand-gold', title: "30 Rock Just Took #1. By the Biggest Gap We've Measured.", subtitle: 'May 14, 2026', date: '2026-05-14' },
   { href: '/shows/30-rock', label: 'Recently Completed', labelColor: 'text-emerald-400', title: '30 Rock — All 138 Episodes', subtitle: '9,283 jokes analyzed · Now ranked #1', date: '2026-05-14' },

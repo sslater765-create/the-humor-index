@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'taxi-launch',
+    title: "Taxi Lands at 77.4 — A 1978 Show Inside the Same Tier as Seinfeld",
+    description: "We just scored all 114 episodes of Taxi. It lands at Humor Index 77.4 — statistically indistinguishable from Seinfeld, Friends, and Schitt's Creek. The format we used to penalize for is the format every modern character comedy descends from. And Louie De Palma cracks the top 10 cross-show.",
+    date: '2026-05-16',
+    category: 'Analysis',
+    readTime: '9 min read',
+    stat: "77.4",
+    statLabel: "Taxi Humor Index (#7)",
+  },
+  {
     slug: 'arrested-development-craft-leaderboard',
     title: "Arrested Development Has 8 of the Top 10 Best-Crafted Characters in TV Comedy",
     description: "Of the ten characters with the highest per-joke Craft scores on our index, eight come from one show. The Bluth family owns the craft leaderboard. The other two outliers — Ron Swanson and Creed Bratton — are revealing in their own right.",
@@ -128,7 +138,7 @@ const POSTS = [
     date: '2026-04-16',
     category: 'Methodology',
     readTime: '6 min read',
-    stat: '80.2 vs 79.1',
+    stat: '78.6 vs 77.8',
     statLabel: 'Office vs Seinfeld (current)',
   },
   {
