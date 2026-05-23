@@ -134,12 +134,12 @@ export default function SearchClient() {
 
     if (activeQuery) {
       const q = activeQuery.toLowerCase();
-      filtered = filtered.filter(j =>
-        j.text.toLowerCase().includes(q) ||
-        j.characters.some(c => c.toLowerCase().includes(q)) ||
-        j.showName.toLowerCase().includes(q) ||
-        j.episodeTitle.toLowerCase().includes(q)
-      );
+      const norm = (str) => str.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+    const _tokens = norm(q).split(" ").filter(Boolean);
+    filtered = filtered.filter(j => {
+      const hay = norm(`${j.text} ${j.characters.join(" ")} ${j.showName} ${j.episodeTitle}`);
+      return _tokens.every(t => hay.includes(t));
+    });
     }
 
     if (sortBy === 'craft') {
