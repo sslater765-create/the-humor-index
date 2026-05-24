@@ -58,7 +58,7 @@ export default async function BestJokesPage() {
     byShow.set(j.showSlug, arr);
   }
   const pool: RankedJoke[] = [];
-  for (const arr of byShow.values()) {
+  for (const arr of Array.from(byShow.values())) {
     arr.sort((a, b) => (b.craft_total + b.impact_score) - (a.craft_total + a.impact_score));
     pool.push(...arr.slice(0, 40));
   }
