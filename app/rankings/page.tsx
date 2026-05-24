@@ -49,6 +49,7 @@ export default async function RankingsPage() {
   const shows = await getAllShows();
   const analyzedShows = shows.filter(s => s.humor_index > 0);
   const searchableJokes = await getSearchableJokeCount();
+  const topJpmShows = [...analyzedShows].sort((a, b) => (b.avg_jpm || 0) - (a.avg_jpm || 0)).slice(0, 3);
 
   // Gather all episodes + find top joke + aggregate characters
   const allEpisodes: RankedEpisode[] = [];
@@ -200,6 +201,30 @@ export default async function RankingsPage() {
 
         {/* 2-column grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+          {/* Jokes Per Minute */}
+          <Link
+            href="/rankings/jokes-per-minute"
+            className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
+          >
+            <p className="text-xs uppercase tracking-widest text-amber-400 mb-1">Joke Density</p>
+            <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
+              Jokes Per Minute, Ranked
+            </h2>
+            <div className="space-y-2.5">
+              {topJpmShows.map((s, i) => (
+                <div key={s.slug} className="flex items-center gap-3 bg-brand-surface rounded-lg px-3 py-2.5">
+                  <span className="font-mono text-sm text-brand-text-muted w-4">{i + 1}</span>
+                  <span className="text-sm text-brand-text-primary flex-1 truncate">{s.name}</span>
+                  <span className="font-mono text-brand-gold">{s.avg_jpm}</span>
+                  <span className="text-[10px] text-brand-text-muted uppercase tracking-widest">/min</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
+              See the full density ranking →
+            </p>
+          </Link>
 
           {/* Best Jokes */}
           <Link
