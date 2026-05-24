@@ -3,7 +3,7 @@ import { FORMAT_COEFFICIENTS, FORMAT_LABELS } from '@/lib/scoring';
 import { ShowFormat } from '@/lib/types';
 
 export const metadata = {
-  title: 'How We Score Comedy — The Humor Index Methodology',
+  title: 'How We Score Comedy: JPM, Craft, Impact & WAR',
   description: 'How we calculate the Humor Index: jokes per minute, craft, impact, and why we no longer adjust for format. The full scoring methodology.',
   alternates: {
     canonical: 'https://thehumorindex.com/methodology/',
