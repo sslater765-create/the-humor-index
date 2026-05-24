@@ -3,6 +3,7 @@ import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 
 // Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
 const BLOG_SLUGS = [
+  'community-gas-leak-year',
   'humor-index-vs-imdb-three-ways',
   'taxi-launch',
   'war-reconciliation',
@@ -33,7 +34,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Use a single rolling "freshness" date for pages that are refreshed every
   // time the underlying data is. Update this when major changes ship.
-  const SITE_REFRESHED = new Date('2026-05-15');
+  const SITE_REFRESHED = new Date('2026-05-24');
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 1.0 },
     { url: url('/shows'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.9 },
@@ -53,6 +54,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Blog posts
   const blogDates: Record<string, string> = {
+    'community-gas-leak-year': '2026-05-24',
     'humor-index-vs-imdb-three-ways': '2026-05-16',
     'taxi-launch': '2026-05-16',
     'war-reconciliation': '2026-05-15',

@@ -19,6 +19,110 @@ const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'community-gas-leak-year': {
+    title: "You Can See Exactly When Dan Harmon Left Community",
+    description: "We scored all 110 episodes of Community. It lands at Humor Index 77.9 — fifth of nine shows. But the real story is the season curve: it tracks the show's behind-the-scenes history almost to the decimal. The gas-leak year is real, the Harmon rebound is real, and the season everyone defends is quietly the weakest.",
+    date: '2026-05-24',
+    category: 'Show Launch',
+    content: `
+Community fans have an asterisk on Season 4. They call it the "gas-leak year" — the run of episodes made after creator Dan Harmon was forced out as showrunner, before he came back. The consensus is that you can feel his absence.
+
+We scored all 110 episodes — 6,565 jokes, v2 methodology, three-run consensus, the same pipeline we've run on eight other shows. The consensus is right, and you can see it in the numbers almost to the episode.
+
+**Community lands at Humor Index 77.9** — fifth of the nine shows we've fully scored, sitting between The Office (78.6) and Seinfeld (77.8). Here's the board now:
+
+| # | Show | Humor Index | Episodes |
+|---:|---|---:|---:|
+| 1 | 30 Rock | 84.3 | 138 |
+| 2 | Arrested Development | 82.0 | 84 |
+| 3 | Parks and Recreation | 78.8 | 124 |
+| 4 | The Office | 78.6 | 186 |
+| 5 | **Community** | **77.9** | **110** |
+| 6 | Seinfeld | 77.8 | 172 |
+| 7 | Friends | 77.5 | 235 |
+| 8 | Taxi | 77.4 | 114 |
+| 9 | Schitt's Creek | 77.3 | 80 |
+
+A mid-pack finish for a show this beloved deserves an explanation. The explanation is the season curve.
+
+## The curve tracks the credits
+
+| Season | Humor Index | JPM | |
+|---|---:|---:|---|
+| S1 | 78.6 | 2.80 | |
+| S2 | 79.7 | 2.74 | peak |
+| S3 | 79.3 | 2.74 | Harmon's last (original run) |
+| S4 | 75.4 | 2.37 | **Harmon out — the floor** |
+| S5 | 79.5 | 2.63 | Harmon returns |
+| S6 | 76.7 | 2.32 | Yahoo revival |
+
+Read it top to bottom against the show's history. Dan Harmon ran Seasons 1 through 3. He was removed before Season 4. He was rehired for Season 5. Season 6 moved to Yahoo after NBC cancelled it.
+
+- Seasons 2 and 3 (Harmon, at his peak): 79.7 and 79.3
+- Season 4 (without him): 75.4 — the floor, 4.3 points below the peak
+- Season 5 (with him back): 79.5 — a +4.1 rebound
+
+The dip and the recovery are almost exactly the same size. This is the cleanest showrunner fingerprint we've found in the entire dataset. We'll call it correlation rather than proof — but it is a remarkably clean one.
+
+## What actually changed in Season 4
+
+Season 4 didn't just feel off. Two measurable things dropped, and one didn't.
+
+**Joke density fell to 2.37 per minute**, down from a ~2.74 plateau across Seasons 1–3 — roughly 14% fewer jokes. **Impact fell to the lowest of any season.** But **craft barely moved** (the season still constructs jokes competently). The signature of the gas-leak year, in the numbers, is fewer jokes that land softer — not dumber jokes.
+
+## Season 4 wasn't a uniform disaster
+
+The data won't support a pile-on, and we won't pretend it does. Season 4's best episodes are genuinely strong: "Cooperative Escapism in Familial Relations" scores 82.0, and the puppet episode, "Intro to Felt Surrogacy," has the **highest craft score of the entire season** — better-built than most of the show.
+
+The season's problem isn't a low ceiling. It's a low floor: "Economics of Marine Biology" (69.5), "Basic Human Anatomy" (71.0), "Intro to Knots" (71.4), and the premiere "History 101" (71.6) drag the average down. More weak episodes, not worse best ones.
+
+## The season nobody blames
+
+Here's the part fans don't talk about. **Season 6 — the Yahoo revival — scores 76.7**, only barely above the gas-leak year. And it owns the **two single lowest-scoring episodes of the entire series**: "Laws of Robotics and Party Rights" (68.4) and "Intro to Recycled Cinema" (69.0). Of Community's fifteen weakest episodes, Seasons 4 and 6 contribute five each. The gas-leak year gets the reputation; the Yahoo year quietly matches it and bottoms out lower.
+
+## The character roster
+
+Total WAR (wins above replacement) for Community's main cast:
+
+| # | Character | WAR | Jokes | Craft |
+|---:|---|---:|---:|---:|
+| 1 | **Abed** | 499.1 | 903 | 7.32 |
+| 2 | Jeff | 478.3 | 1,449 | 7.05 |
+| 3 | Troy | 236.9 | 774 | 7.02 |
+| 4 | Annie | 184.2 | 700 | 6.97 |
+| 5 | Britta | 142.0 | 519 | 6.98 |
+| 6 | Pierce | 111.8 | 710 | 6.86 |
+| 7 | Shirley | 105.1 | 318 | 7.04 |
+| 8 | Chang | 65.3 | 339 | 6.86 |
+
+The headline is the top of it: **Abed leads in WAR despite Jeff telling 60% more jokes.** Jeff Winger has the volume — 1,449 jokes, the most on the show, all those speeches — but Abed wins on quality per joke (7.32 craft vs 7.05). The character built as the show's meta-engine, the one narrating its genre in real time, is also the one the rubric rates highest beat-for-beat. The data agrees with the fans who think Abed is the soul of the show.
+
+## The comedy DNA
+
+Per-joke distribution across our taxonomy. Character comedy leads, as it does for every modern ensemble, but escalation and absurdist both run high:
+
+| Category | Community |
+|---|---:|
+| Character comedy | 31.6% |
+| Escalation | 9.4% |
+| Absurdist | 8.7% |
+| Observational | 7.8% |
+
+## The caveat we always include, and a specific one
+
+Single-camera, so v1 equals v2 — no format coefficient, no laugh-track adjustment. The score you see is the score you'd compute either way. The single-run scorer noise floor is ~5 points per episode; three-run consensus tightens the show-level interval to roughly ±1.2 points. So "Community is below 30 Rock and AD" is supportable; "Community beats Seinfeld because 77.9 > 77.8" is not.
+
+The Community-specific caveat is worth stating plainly: our scorer reads jokes — lines. A real share of Community's best comedy is *structural* — the joke is the episode's entire form (the multiverse, the bottle episode, the documentary, the Dungeons & Dragons game). A line-level scorer can't fully see that. It's why the show's highest-scoring episodes are quiet character pieces like "Beginner Pottery" and "Asian Population Studies" rather than the celebrated concept episodes. The concept episodes score well; they just don't score *exceptionally*, because the thing that makes them special doesn't live in any single line. If anything, the rubric understates Community — and the gap is widest exactly where the show is most ambitious.
+
+## What's next
+
+Community is the ninth show fully scored on the Humor Index. Every per-episode score and per-joke breakdown is at [thehumorindex.com/shows/community](/shows/community). Next up: more — and long term, every show ever.
+
+---
+
+*Community is the ninth show fully scored on the Humor Index. The methodology is documented at [our methodology page](/methodology). Season figures reflect the per-season averages shown on the show page. Questions: hello@thehumorindex.com.*
+`,
+  },
   'arrested-development-craft-leaderboard': {
     title: "Arrested Development Has 8 of the Top 10 Best-Crafted Characters in TV Comedy",
     description: "Of the ten characters with the highest per-joke Craft scores on our index, eight come from one show. The Bluth family owns the craft leaderboard. The other two outliers — Ron Swanson and Creed Bratton — are revealing in their own right.",
