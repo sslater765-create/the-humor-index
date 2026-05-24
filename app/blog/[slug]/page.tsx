@@ -2035,6 +2035,42 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             });
           };
 
+          // Markdown tables: header row | --- | separator | data rows
+          const tableLines = trimmed.split('\n');
+          if (
+            tableLines.length >= 2 &&
+            tableLines[0].trim().startsWith('|') &&
+            tableLines[1].includes('-') &&
+            /^\s*\|?[\s:|-]+\|?\s*$/.test(tableLines[1])
+          ) {
+            const parseRow = (line: string) =>
+              line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => c.trim());
+            const headers = parseRow(tableLines[0]);
+            const rows = tableLines.slice(2).filter(l => l.trim()).map(parseRow);
+            return (
+              <div key={i} className="overflow-x-auto my-4">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="border-b border-brand-border">
+                      {headers.map((h, j) => (
+                        <th key={j} className="text-left font-medium text-brand-text-primary py-2 px-3 whitespace-nowrap">{formatInline(h)}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {rows.map((row, r) => (
+                      <tr key={r} className="border-b border-brand-border/40">
+                        {row.map((cell, c) => (
+                          <td key={c} className="py-2 px-3 text-brand-text-secondary align-top">{formatInline(cell)}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            );
+          }
+
           if (trimmed.startsWith('- ')) {
             const items = trimmed.split('\n').filter(l => l.startsWith('- '));
             return (

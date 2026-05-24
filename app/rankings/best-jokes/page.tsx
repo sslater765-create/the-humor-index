@@ -1,8 +1,7 @@
-import Link from 'next/link';
 import { getAllShows, getEpisodes, getEpisodeDetail } from '@/lib/data';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
-import { Joke } from '@/lib/types';
+import BestJokesClient, { RankedJoke } from './BestJokesClient';
 
 export const dynamic = 'force-static';
 
@@ -19,14 +18,6 @@ export const metadata = {
     canonical: 'https://thehumorindex.com/rankings/best-jokes',
   },
 };
-
-interface RankedJoke extends Joke {
-  showName: string;
-  showSlug: string;
-  season: number;
-  episodeNumber: number;
-  episodeTitle: string;
-}
 
 export default async function BestJokesPage() {
   const shows = await getAllShows();
@@ -59,9 +50,18 @@ export default async function BestJokesPage() {
     }
   }
 
-  const ranked = allJokes
-    .sort((a, b) => (b.craft_total + b.impact_score) - (a.craft_total + a.impact_score))
-    .slice(0, 100);
+  // Pool: top 40 jokes per show, so filtering by a single show always has content.
+  const byShow = new Map<string, RankedJoke[]>();
+  for (const j of allJokes) {
+    const arr = byShow.get(j.showSlug) ?? [];
+    arr.push(j);
+    byShow.set(j.showSlug, arr);
+  }
+  const pool: RankedJoke[] = [];
+  for (const arr of byShow.values()) {
+    arr.sort((a, b) => (b.craft_total + b.impact_score) - (a.craft_total + a.impact_score));
+    pool.push(...arr.slice(0, 40));
+  }
 
   return (
     <div>
@@ -80,83 +80,7 @@ export default async function BestJokesPage() {
           />
         </div>
 
-        <div className="space-y-4">
-          {ranked.map((joke, i) => (
-            <div
-              key={`${joke.showSlug}-${joke.season}-${joke.episodeNumber}-${joke.id}`}
-              className="bg-brand-card border border-brand-border rounded-xl p-5"
-            >
-              <div className="flex items-start justify-between mb-3">
-                <div className="flex items-center gap-3">
-                  <span
-                    className={`font-mono text-sm w-8 text-center ${
-                      i < 3 ? 'text-brand-gold font-bold text-lg' : i < 10 ? 'text-brand-gold' : 'text-brand-text-muted'
-                    }`}
-                  >
-                    {i + 1}
-                  </span>
-                  <div>
-                    <Link
-                      href={`/shows/${joke.showSlug}/${joke.season}/${joke.episodeNumber}`}
-                      className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors"
-                    >
-                      {joke.showName} · S{joke.season}E{String(joke.episodeNumber).padStart(2, '0')} {'\u201C'}{joke.episodeTitle}{'\u201D'}
-                    </Link>
-                  </div>
-                </div>
-                <div className="flex gap-3 font-mono text-sm">
-                  <span className="text-brand-blue" title="Craft score">C:{joke.craft_total.toFixed(1)}</span>
-                  <span className="text-brand-teal" title="Impact score">I:{joke.impact_score.toFixed(1)}</span>
-                </div>
-              </div>
-
-              <p className="text-brand-text-primary leading-relaxed mb-2">
-                {'\u201C'}{joke.text}{'\u201D'}
-              </p>
-              {joke.characters?.length > 0 && (
-                <div className="flex items-center gap-1.5 mb-2">
-                  {joke.characters.map(c => (
-                    <Link
-                      key={c}
-                      href={`/shows/${joke.showSlug}/characters/${encodeURIComponent(c)}`}
-                      className="text-xs text-brand-text-muted border border-brand-border rounded px-1.5 py-0.5 hover:text-brand-gold hover:border-brand-gold/50 transition-colors"
-                    >
-                      {c}
-                    </Link>
-                  ))}
-                </div>
-              )}
-
-              {joke.explanation && (
-                <p className="text-xs text-brand-text-muted italic">
-                  {joke.explanation}
-                </p>
-              )}
-
-              <div className="flex gap-2 mt-3 flex-wrap">
-                {joke.joke_types.map(t => (
-                  <span
-                    key={t}
-                    className="text-xs bg-brand-surface border border-brand-border rounded-full px-2 py-0.5 text-brand-text-muted"
-                  >
-                    {t.replace(/_/g, ' ')}
-                  </span>
-                ))}
-                {joke.quotability >= 7 && (
-                  <span className="text-xs bg-brand-gold/10 border border-brand-gold/30 rounded-full px-2 py-0.5 text-brand-gold">
-                    highly quotable
-                  </span>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {ranked.length === 0 && (
-          <p className="text-brand-text-muted text-center py-12">
-            No joke data available yet. Check back soon.
-          </p>
-        )}
+        <BestJokesClient jokes={pool} />
       </div>
     </div>
   );

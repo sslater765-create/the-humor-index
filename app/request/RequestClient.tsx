@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 
 const SUGGESTED_SHOWS = [
   { name: 'Curb Your Enthusiasm', slug: 'curb-your-enthusiasm' },
-  { name: 'Community', slug: 'community' },
   { name: 'Frasier', slug: 'frasier' },
   { name: 'How I Met Your Mother', slug: 'how-i-met-your-mother' },
   { name: 'Veep', slug: 'veep' },
@@ -163,7 +162,7 @@ export default function RequestClient() {
         <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Analysis Pipeline</p>
         <p className="text-sm text-brand-text-secondary mb-3">Shows currently being analyzed or in the queue.</p>
         <div className="space-y-2 mb-3">
-          {['The Office', 'Seinfeld', 'Friends', 'Parks and Recreation', "Schitt's Creek", 'Arrested Development', '30 Rock', 'Taxi'].map(name => (
+          {['The Office', 'Seinfeld', 'Friends', 'Parks and Recreation', "Schitt's Creek", 'Arrested Development', '30 Rock', 'Taxi', 'Community'].map(name => (
             <div key={name} className="flex items-center justify-between p-2 bg-brand-surface rounded-lg">
               <span className="text-sm text-brand-text-primary">{name}</span>
               <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full px-2 py-0.5">Completed</span>

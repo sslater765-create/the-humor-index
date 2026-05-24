@@ -129,7 +129,7 @@ export default async function WorstEpisodesPage() {
           context.
         </div>
 
-        <EpisodesClient episodes={ranked} ascending />
+        <EpisodesClient episodes={sortedAsc} ascending />
 
         {/* Worst per show — every show represented, even those with no episode below 70 */}
         <section className="mt-16 border-t border-brand-border pt-8">

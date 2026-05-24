@@ -15,6 +15,15 @@ export async function getAllShows(): Promise<ShowScore[]> {
     .map((s, i) => ({ ...s, rank: i + 1 }));
 }
 
+// Actual number of jokes in the search index (what's genuinely searchable).
+export async function getSearchableJokeCount(): Promise<number> {
+  try {
+    return readJson<unknown[]>('search-index.json').length;
+  } catch {
+    return 0;
+  }
+}
+
 export async function getShow(slug: string): Promise<ShowScore | null> {
   const shows = await getAllShows();
   return shows.find(s => s.slug === slug) ?? null;

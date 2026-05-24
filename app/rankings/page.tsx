@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getAllShows, getEpisodes, getEpisodeDetail, getCharacters } from '@/lib/data';
+import { getAllShows, getEpisodes, getEpisodeDetail, getCharacters, getSearchableJokeCount } from '@/lib/data';
 import { formatIndex, scoreToGrade, scoreToColor } from '@/lib/scoring';
 import PageHeader from '@/components/layout/PageHeader';
 import RankBadge from '@/components/ui/RankBadge';
@@ -48,6 +48,7 @@ interface TopCharacter {
 export default async function RankingsPage() {
   const shows = await getAllShows();
   const analyzedShows = shows.filter(s => s.humor_index > 0);
+  const searchableJokes = await getSearchableJokeCount();
 
   // Gather all episodes + find top joke + aggregate characters
   const allEpisodes: RankedEpisode[] = [];
@@ -346,7 +347,7 @@ export default async function RankingsPage() {
               Search Every Joke
             </h2>
             <div className="bg-brand-surface rounded-lg p-4 text-center">
-              <p className="font-mono text-3xl text-brand-gold">{totalJokesScored.toLocaleString()}</p>
+              <p className="font-mono text-3xl text-brand-gold">{searchableJokes.toLocaleString()}</p>
               <p className="text-xs text-brand-text-muted mt-1 uppercase tracking-widest">Jokes Searchable</p>
             </div>
             <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
