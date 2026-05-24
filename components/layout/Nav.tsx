@@ -52,6 +52,7 @@ export default function Nav() {
           ))}
           <Link
             href="/search"
+            prefetch={false}
             className={`transition-colors ${
               pathname === '/search'
                 ? 'text-brand-gold'
@@ -70,6 +71,7 @@ export default function Nav() {
         <div className="sm:hidden flex items-center gap-1">
           <Link
             href="/search"
+            prefetch={false}
             className={`p-2 transition-colors ${
               pathname === '/search'
                 ? 'text-brand-gold'
