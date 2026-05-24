@@ -49,6 +49,7 @@ function expand(j: CompactJoke): SearchableJoke {
   };
 }
 
+// search-rev: relevance ranking + token filter (v3) — bump forces fresh chunk/build
 export default function SearchClient() {
   const [jokes, setJokes] = useState<SearchableJoke[]>([]);
   const [loading, setLoading] = useState(true);
