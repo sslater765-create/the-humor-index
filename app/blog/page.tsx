@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'community-gas-leak-year',
+    title: "You Can See Exactly When Dan Harmon Left Community",
+    description: "We scored all 110 episodes of Community. It lands at Humor Index 77.9 — fifth of nine shows. But the real story is the season curve: it tracks the show's behind-the-scenes history almost to the decimal. The gas-leak year is real, the Harmon rebound is real, and the season everyone defends is quietly the weakest.",
+    date: '2026-05-24',
+    category: 'Show Launch',
+    readTime: '8 min read',
+    stat: "77.9",
+    statLabel: "Community Humor Index (#5)",
+  },
+  {
     slug: 'humor-index-vs-imdb-three-ways',
     title: "We Recomputed Our IMDb Correlation Three Ways. At the Show Level, It's Negative.",
     description: "Our April post reported r = -0.005 between the Humor Index and IMDb. We dug back in. Within-show correlations span -0.115 to +0.392. The show-level correlation is -0.287. HI's top 10 and IMDb's top 10 overlap 6 of 80 across the catalog — exactly chance.",
