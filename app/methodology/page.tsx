@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Methodology — The Humor Index',
   description: 'How we calculate the Humor Index: JPM, Craft, Impact, and the format adjustment.',
   alternates: {
-    canonical: 'https://thehumorindex.com/methodology',
+    canonical: 'https://thehumorindex.com/methodology/',
   },
   openGraph: {
     title: 'Methodology — The Humor Index',

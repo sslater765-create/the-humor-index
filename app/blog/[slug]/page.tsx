@@ -1939,7 +1939,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       images: [`/api/og?title=${encodeURIComponent(post.title)}&subtitle=${encodeURIComponent(post.category)}`],
     },
     alternates: {
-      canonical: `https://thehumorindex.com/blog/${params.slug}`,
+      canonical: `https://thehumorindex.com/blog/${params.slug}/`,
     },
   };
 }

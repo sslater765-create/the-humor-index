@@ -86,7 +86,7 @@ export async function generateMetadata({
       images: [`/api/og/episode?${ogParams.toString()}`],
     },
     alternates: {
-      canonical: `https://thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}`,
+      canonical: `https://thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}/`,
     },
   };
 }

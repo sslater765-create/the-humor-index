@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: { params: { matchup: string }
       images: [`/api/og?title=${encodeURIComponent(`${a.name} vs ${b.name}`)}&score=${formatIndex(winner.humor_index)}&subtitle=${encodeURIComponent(`${winner.name} wins · Head-to-head comparison`)}`],
     },
     alternates: {
-      canonical: `https://thehumorindex.com/compare/${params.matchup}`,
+      canonical: `https://thehumorindex.com/compare/${params.matchup}/`,
     },
   };
 }

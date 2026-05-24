@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Privacy Policy — The Humor Index',
   description: 'How The Humor Index collects, uses, and protects your data.',
   alternates: {
-    canonical: 'https://thehumorindex.com/privacy',
+    canonical: 'https://thehumorindex.com/privacy/',
   },
 };
 

@@ -16,7 +16,7 @@ export const metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://thehumorindex.com/rankings/funniest-characters',
+    canonical: 'https://thehumorindex.com/rankings/funniest-characters/',
   },
 };
 

@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://thehumorindex.com',
+    canonical: 'https://thehumorindex.com/',
     types: {
       'application/rss+xml': '/feed.xml',
     },

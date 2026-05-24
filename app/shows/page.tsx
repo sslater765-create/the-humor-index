@@ -9,7 +9,7 @@ export const metadata = {
   title: 'All Shows — The Humor Index',
   description: 'Every analyzed show ranked by Humor Index score.',
   alternates: {
-    canonical: 'https://thehumorindex.com/shows',
+    canonical: 'https://thehumorindex.com/shows/',
   },
   openGraph: {
     title: 'All Shows — The Humor Index',

@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     title: `${show.name} Season-by-Season Arc — When Did It Peak?`,
     description: `Track how ${show.name} evolved over ${show.total_seasons} seasons. See exactly when it peaked, when it declined, and which seasons are worth rewatching.`,
     alternates: {
-      canonical: `https://thehumorindex.com/shows/${params.slug}/arc`,
+      canonical: `https://thehumorindex.com/shows/${params.slug}/arc/`,
     },
   };
 }

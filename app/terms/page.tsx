@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Terms of Use — The Humor Index',
   description: 'Terms of Use for The Humor Index website.',
   alternates: {
-    canonical: 'https://thehumorindex.com/terms',
+    canonical: 'https://thehumorindex.com/terms/',
   },
 };
 

@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const show = await getShow(params.slug);
   if (!show) return {};
   return {
-    title: `${show.name} Comedy Analysis — Humor Score ${formatIndex(show.humor_index)}/100`,
+    title: `Is ${show.name} Funny? Humor Index ${formatIndex(show.humor_index)}/100 — Every Joke Scored`,
     description: `Is ${show.name} actually funny? We analyzed ${show.total_jokes_analyzed.toLocaleString()} jokes across ${show.total_seasons} seasons. Humor Index: ${formatIndex(show.humor_index)}. ${show.description}`,
     openGraph: {
       title: `${show.name} — Humor Index: ${formatIndex(show.humor_index)}`,
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       images: [`/api/og?title=${encodeURIComponent(show.name)}&score=${formatIndex(show.humor_index)}&subtitle=${encodeURIComponent(`${show.total_jokes_analyzed.toLocaleString()} jokes analyzed`)}`],
     },
     alternates: {
-      canonical: `https://thehumorindex.com/shows/${params.slug}`,
+      canonical: `https://thehumorindex.com/shows/${params.slug}/`,
     },
   };
 }

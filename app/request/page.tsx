@@ -5,7 +5,7 @@ export const metadata = {
   title: 'Request a Show — Vote for the Next Analysis',
   description: 'Vote for which sitcom The Humor Index should analyze next. The most-requested shows get scored first.',
   alternates: {
-    canonical: 'https://thehumorindex.com/request',
+    canonical: 'https://thehumorindex.com/request/',
   },
   openGraph: {
     title: 'Request a Show — Vote for the Next Analysis',

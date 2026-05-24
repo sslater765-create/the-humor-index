@@ -15,7 +15,7 @@ export const metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://thehumorindex.com/rankings/best-jokes',
+    canonical: 'https://thehumorindex.com/rankings/best-jokes/',
   },
 };
 
