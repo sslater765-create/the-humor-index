@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getAllShows, getEpisodes } from '@/lib/data';
 import LeaderboardClient from './LeaderboardClient';
 import WhatsNewPersonalized from '@/components/ui/WhatsNewPersonalized';
@@ -78,14 +79,27 @@ export default async function HomePage() {
               <Link
                 key={show.slug}
                 href={`/shows/${show.slug}`}
-                className="bg-brand-gold/5 border border-brand-gold/20 rounded-xl p-5 hover:border-brand-gold/40 transition-colors group block"
+                className="relative bg-brand-gold/5 border border-brand-gold/20 rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors group block"
               >
-                <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">Fully Analyzed</p>
-                <h3 className="text-lg font-medium text-brand-text-primary mb-1 group-hover:text-brand-gold transition-colors">{show.name}</h3>
-                <p className="text-sm text-brand-text-secondary mb-2 line-clamp-2">{show.description}</p>
-                <span className="text-sm text-brand-gold">
-                  View full breakdown →
-                </span>
+                {show.backdrop_path && (
+                  <div className="relative h-32 w-full">
+                    <Image
+                      src={`https://image.tmdb.org/t/p/w780${show.backdrop_path}`}
+                      alt={show.name}
+                      fill
+                      className="object-cover opacity-40 group-hover:opacity-50 transition-opacity"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-card to-transparent" />
+                  </div>
+                )}
+                <div className="p-5">
+                  <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">Fully Analyzed</p>
+                  <h3 className="text-lg font-medium text-brand-text-primary mb-1 group-hover:text-brand-gold transition-colors">{show.name}</h3>
+                  <p className="text-sm text-brand-text-secondary mb-2 line-clamp-2">{show.description}</p>
+                  <span className="text-sm text-brand-gold">
+                    View full breakdown →
+                  </span>
+                </div>
               </Link>
             ))}
           </div>

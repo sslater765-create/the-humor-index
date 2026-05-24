@@ -2,6 +2,7 @@ import { getAllShows, getEpisodes, getEpisodeDetail } from '@/lib/data';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 import BestJokesClient, { RankedJoke } from './BestJokesClient';
+import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 
 export const dynamic = 'force-static';
 
@@ -65,6 +66,13 @@ export default async function BestJokesPage() {
 
   return (
     <div>
+      <BreadcrumbJsonLd
+        crumbs={[
+          { name: 'Home', path: '/' },
+          { name: 'Rankings', path: '/rankings' },
+          { name: 'Best Jokes', path: '/rankings/best-jokes' },
+        ]}
+      />
       <PageHeader
         label="Rankings"
         title="The Best Sitcom Jokes Ever Written"

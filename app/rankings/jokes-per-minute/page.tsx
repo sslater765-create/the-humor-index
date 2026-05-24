@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { getAllShows } from '@/lib/data';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
+import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 
 export const dynamic = 'force-static';
 
@@ -76,6 +77,13 @@ export default async function JokesPerMinutePage() {
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <BreadcrumbJsonLd
+        crumbs={[
+          { name: 'Home', path: '/' },
+          { name: 'Rankings', path: '/rankings' },
+          { name: 'Jokes Per Minute', path: '/rankings/jokes-per-minute' },
+        ]}
+      />
       <PageHeader
         label="Rankings"
         title="Jokes Per Minute, Ranked"

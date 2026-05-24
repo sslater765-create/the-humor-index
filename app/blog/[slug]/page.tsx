@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import SocialShare from '@/components/ui/SocialShare';
 import EndOfArticleCTA from '@/components/ui/EndOfArticleCTA';
+import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import { getAllShows } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
 
@@ -1977,6 +1978,13 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           url: `https://thehumorindex.com/blog/${params.slug}`,
           image: `/api/og?title=${encodeURIComponent(post.title)}&subtitle=${encodeURIComponent(post.category)}`,
         }) }}
+      />
+      <BreadcrumbJsonLd
+        crumbs={[
+          { name: 'Home', path: '/' },
+          { name: 'Blog', path: '/blog' },
+          { name: post.title, path: `/blog/${params.slug}` },
+        ]}
       />
       <div className="flex items-center gap-2 text-xs text-brand-text-muted mb-6">
         <Link href="/blog" className="hover:text-brand-text-secondary transition-colors">Blog</Link>

@@ -3,6 +3,7 @@ import { getAllShows, getCharacters } from '@/lib/data';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 import CharactersClient, { type WarCharacter } from './CharactersClient';
+import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 
 export const dynamic = 'force-static';
 
@@ -53,6 +54,13 @@ export default async function FunniestCharactersPage() {
 
   return (
     <div>
+      <BreadcrumbJsonLd
+        crumbs={[
+          { name: 'Home', path: '/' },
+          { name: 'Rankings', path: '/rankings' },
+          { name: 'Funniest Characters', path: '/rankings/funniest-characters' },
+        ]}
+      />
       <PageHeader
         label="Rankings"
         title="The Funniest Characters in Sitcom History"

@@ -3,6 +3,7 @@ import { getAllShows, getCharacters } from '@/lib/data';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 import LeastFunnyClient from './LeastFunnyClient';
+import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 
 export const dynamic = 'force-static';
 
@@ -110,6 +111,13 @@ export default async function LeastFunnyCharactersPage() {
 
   return (
     <div>
+      <BreadcrumbJsonLd
+        crumbs={[
+          { name: 'Home', path: '/' },
+          { name: 'Rankings', path: '/rankings' },
+          { name: 'Least Funny Characters', path: '/rankings/least-funny-characters' },
+        ]}
+      />
       <PageHeader
         label="Rankings"
         title="Characters Who Rate Below Their Own Castmates"

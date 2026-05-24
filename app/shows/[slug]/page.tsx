@@ -208,6 +208,66 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         comedyDna={comedyDna}
       />
 
+      {/* Intent sections — server-rendered for SEO: "funniest [show] episodes" + "is [show] worth watching" */}
+      {(() => {
+        const scored = episodes.filter(e => e.humor_index > 0);
+        if (scored.length === 0) return null;
+        const topEpisodes = [...scored].sort((a, b) => b.humor_index - a.humor_index).slice(0, 5);
+        const scoredShows = allShows
+          .filter(s => s.humor_index > 0)
+          .sort((a, b) => b.humor_index - a.humor_index);
+        const rank = scoredShows.findIndex(s => s.slug === show.slug) + 1;
+        const total = scoredShows.length;
+        return (
+          <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 border-t border-brand-border">
+            <h2 className="text-xl font-medium text-brand-text-primary mb-2">
+              The Funniest {show.name} Episodes
+            </h2>
+            <p className="text-sm text-brand-text-secondary mb-5 max-w-2xl leading-relaxed">
+              Of the {scored.length} {show.name} episode{scored.length !== 1 ? 's' : ''} we scored, these
+              rate highest on the Humor Index — our blend of joke density, craft, and impact. Tap any
+              episode for the full joke-by-joke breakdown.
+            </p>
+            <div className="space-y-2 mb-12">
+              {topEpisodes.map((ep, i) => (
+                <Link
+                  key={`${ep.season}-${ep.episode_number}`}
+                  href={`/shows/${show.slug}/${ep.season}/${ep.episode_number}`}
+                  className="flex items-center gap-4 p-4 bg-brand-card border border-brand-border rounded-xl hover:border-brand-gold/40 transition-colors group"
+                >
+                  <span className={`font-mono text-sm w-6 text-right ${i === 0 ? 'text-brand-gold' : 'text-brand-text-muted'}`}>
+                    {i + 1}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm text-brand-text-primary group-hover:text-brand-gold transition-colors truncate">
+                      {ep.title}
+                    </p>
+                    <p className="text-xs text-brand-text-muted mt-0.5">
+                      S{ep.season}E{String(ep.episode_number).padStart(2, '0')} · {ep.total_jokes} jokes
+                    </p>
+                  </div>
+                  <span className="font-mono text-lg text-brand-gold shrink-0">{formatIndex(ep.humor_index)}</span>
+                </Link>
+              ))}
+            </div>
+
+            <h2 className="text-xl font-medium text-brand-text-primary mb-2">
+              Is {show.name} Worth Watching?
+            </h2>
+            <p className="text-sm text-brand-text-secondary max-w-2xl leading-relaxed">
+              By the data: {show.name} earns a Humor Index of {formatIndex(show.humor_index)} out of 100
+              {rank > 0 ? `, placing it #${rank} of ${total} fully-scored shows here` : ''}. Across{' '}
+              {scored.length} analyzed episode{scored.length !== 1 ? 's' : ''} it averages{' '}
+              {show.avg_jpm.toFixed(1)} jokes per minute, a craft score of {show.avg_craft.toFixed(1)}, and
+              an impact score of {show.avg_impact.toFixed(1)}. Those numbers reflect one AI analyst&rsquo;s
+              judgment applied consistently — and the top shows cluster closely enough that small gaps
+              aren&rsquo;t meaningful rankings. Scroll up for the season-by-season trend and the characters
+              carrying the comedy.
+            </p>
+          </section>
+        );
+      })()}
+
       {/* Head-to-head matchups — internal links for SEO + discovery */}
       {(() => {
         const otherScored = allShows.filter(s => s.slug !== show.slug && s.humor_index > 0);

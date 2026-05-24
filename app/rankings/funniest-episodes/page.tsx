@@ -3,6 +3,7 @@ import { getAllShows, getEpisodes } from '@/lib/data';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 import EpisodesClient, { type RankedEpisode } from './EpisodesClient';
+import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 
 export const dynamic = 'force-static';
 
@@ -78,6 +79,13 @@ export default async function FunniestEpisodesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <BreadcrumbJsonLd
+        crumbs={[
+          { name: 'Home', path: '/' },
+          { name: 'Rankings', path: '/rankings' },
+          { name: 'Funniest Episodes', path: '/rankings/funniest-episodes' },
+        ]}
       />
       <PageHeader
         label="Rankings"
