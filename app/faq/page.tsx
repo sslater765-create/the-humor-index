@@ -1,7 +1,7 @@
 import PageHeader from '@/components/layout/PageHeader';
 
 export const metadata = {
-  title: 'FAQ — The Humor Index',
+  title: 'Frequently Asked Questions About Comedy Scoring',
   description: 'Frequently asked questions about The Humor Index: how it works, what AI we use, and why your favorite show scored the way it did.',
   alternates: {
     canonical: 'https://thehumorindex.com/faq/',

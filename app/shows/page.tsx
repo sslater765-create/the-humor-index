@@ -6,14 +6,15 @@ import PageHeader from '@/components/layout/PageHeader';
 import ShowsGrid from './ShowsGrid';
 
 export const metadata = {
-  title: 'All Shows — The Humor Index',
-  description: 'Every analyzed show ranked by Humor Index score.',
+  title: 'Every Sitcom Ranked by Humor Index Score',
+  description:
+    'Every sitcom we’ve scored, ranked by Humor Index — The Office, Seinfeld, Parks and Rec, Community, Arrested Development and more. AI-analyzed joke density, craft, and impact for each show.',
   alternates: {
     canonical: 'https://thehumorindex.com/shows/',
   },
   openGraph: {
-    title: 'All Shows — The Humor Index',
-    description: 'Every analyzed show ranked by Humor Index score.',
+    title: 'Every Sitcom Ranked by Humor Index Score',
+    description: 'AI-scored comedy rankings: joke density, craft, and impact for every analyzed sitcom.',
     images: ['/og-image.png'],
   },
 };
@@ -29,8 +30,8 @@ export default async function ShowsPage() {
     <div>
       <PageHeader
         label="Comedy Rankings"
-        title="All Shows"
-        subtitle={`${scored.length} show${scored.length !== 1 ? 's' : ''} scored${upcoming.length > 0 ? `, ${upcoming.length} coming soon` : ''}`}
+        title="Every Sitcom, Ranked"
+        subtitle={`${scored.length} show${scored.length !== 1 ? 's' : ''} scored${upcoming.length > 0 ? `, ${upcoming.length} coming soon` : ''} — by Humor Index, joke density, craft, and impact.`}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
         <ShowsGrid shows={scored} />

@@ -62,6 +62,15 @@ export const metadata: Metadata = {
       'application/rss+xml': '/feed.xml',
     },
   },
+  // Search Console / Bing verification. Set these env vars in Vercel (Project →
+  // Settings → Environment Variables) and the tags render automatically. DNS
+  // TXT verification (Vercel → Domains) is an alternative that needs no code.
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+    other: process.env.BING_SITE_VERIFICATION
+      ? { 'msvalidate.01': process.env.BING_SITE_VERIFICATION }
+      : undefined,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

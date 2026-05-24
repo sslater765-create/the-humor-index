@@ -43,13 +43,13 @@ export async function generateMetadata({
     : `Every joke by ${name} on ${show.name}, scored and ranked. See craft scores, impact ratings, and comedy style breakdown.`;
 
   return {
-    title: `${name} — ${show.name} Character Analysis`,
+    title: `${name}'s Funniest Lines & Comedy Score (${show.name})`,
     description: descBase,
     alternates: {
       canonical: `https://thehumorindex.com/shows/${params.slug}/characters/${params.name}/`,
     },
     openGraph: {
-      title: `${name} — ${show.name} Character Analysis`,
+      title: `${name} — Funniest Lines & Comedy Score · ${show.name}`,
       description: descBase,
       images: [
         `/api/og?title=${encodeURIComponent(name)}&score=${war.toFixed(1)}&subtitle=${encodeURIComponent(`${show.name} · ${jokeCount.toLocaleString()} jokes · ${character?.episodes_appeared ?? 0} eps`)}`,
@@ -193,12 +193,24 @@ export default async function CharacterPage({
           />
         </div>
 
+        {/* Data-driven summary — unique per character (SEO: "is X funny") */}
+        <p className="text-sm text-brand-text-secondary leading-relaxed mb-8 max-w-2xl">
+          {character.name} delivers <span className="text-brand-text-primary">{character.total_jokes} scored jokes</span> across{' '}
+          {character.episodes_appeared} episodes of {show.name}, averaging {character.avg_craft.toFixed(1)} on craft and{' '}
+          {character.avg_impact.toFixed(1)} on impact
+          {character.war != null ? <> for a career WAR of <span className="text-brand-text-primary">{character.war.toFixed(1)}</span></> : ''}.
+          {character.dominant_types[0] && JOKE_TYPE_LABELS[character.dominant_types[0]]
+            ? <> Their comedy leans toward {JOKE_TYPE_LABELS[character.dominant_types[0]].toLowerCase()}.</>
+            : ''}
+          {standouts[0] ? <> The highest-scoring line is below.</> : ''}
+        </p>
+
         {/* Standout jokes */}
         {standouts.length > 0 && (
           <section className="mb-10">
-            <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-3">
-              Best Jokes by {character.name}
-            </p>
+            <h2 className="text-xs uppercase tracking-widest text-brand-text-muted mb-3">
+              Funniest {character.name} Lines
+            </h2>
             <div className="space-y-3">
               {standouts.map((item, i) => (
                 <Link

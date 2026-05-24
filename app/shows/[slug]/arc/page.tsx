@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getShow, getSeasons, getEpisodes } from '@/lib/data';
 import { SHOW_SLUGS } from '@/lib/constants';
 import PageHeader from '@/components/layout/PageHeader';
+import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import ArcClient from './ArcClient';
 
 export const dynamic = 'force-static';
@@ -15,8 +16,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const show = await getShow(params.slug);
   if (!show) return {};
   return {
-    title: `${show.name} Season-by-Season Arc — When Did It Peak?`,
-    description: `Track how ${show.name} evolved over ${show.total_seasons} seasons. See exactly when it peaked, when it declined, and which seasons are worth rewatching.`,
+    title: `${show.name} Seasons Ranked — Which Is the Best Season?`,
+    description: `Which is the best season of ${show.name}? We ranked all ${show.total_seasons} seasons by Humor Index and tracked exactly when the show peaked and declined. See the season-by-season data.`,
     alternates: {
       canonical: `https://thehumorindex.com/shows/${params.slug}/arc/`,
     },
@@ -38,10 +39,18 @@ export default async function ArcPage({ params }: { params: { slug: string } }) 
 
   return (
     <div>
+      <BreadcrumbJsonLd
+        crumbs={[
+          { name: 'Home', path: '/' },
+          { name: 'Shows', path: '/shows' },
+          { name: show.name, path: `/shows/${params.slug}` },
+          { name: 'Seasons Ranked', path: `/shows/${params.slug}/arc` },
+        ]}
+      />
       <PageHeader
-        label="Season Arc"
-        title={`${show.name}: The Rise and Fall`}
-        subtitle={`${show.total_seasons} seasons tracked. See where it peaked.`}
+        label="Seasons Ranked"
+        title={`${show.name} Seasons, Ranked`}
+        subtitle={`All ${show.total_seasons} seasons ranked by Humor Index — see which is the best season of ${show.name} and exactly where it peaked.`}
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">

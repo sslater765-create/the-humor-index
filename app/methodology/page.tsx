@@ -3,8 +3,8 @@ import { FORMAT_COEFFICIENTS, FORMAT_LABELS } from '@/lib/scoring';
 import { ShowFormat } from '@/lib/types';
 
 export const metadata = {
-  title: 'Methodology — The Humor Index',
-  description: 'How we calculate the Humor Index: JPM, Craft, Impact, and the format adjustment.',
+  title: 'How We Score Comedy — The Humor Index Methodology',
+  description: 'How we calculate the Humor Index: jokes per minute, craft, impact, and why we no longer adjust for format. The full scoring methodology.',
   alternates: {
     canonical: 'https://thehumorindex.com/methodology/',
   },
@@ -446,6 +446,40 @@ export default function MethodologyPage() {
               <div key={i} className="bg-brand-card border border-brand-border rounded-xl p-5">
                 <p className="text-sm font-medium text-brand-text-primary mb-1">{item.title}</p>
                 <p className="text-sm text-brand-text-secondary leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Glossary — targets definitional queries ("what is jokes per minute", "comedy WAR") */}
+        <section>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
+                { '@type': 'Question', name: 'What is jokes per minute (JPM)?', acceptedAnswer: { '@type': 'Answer', text: 'Jokes per minute (JPM) is the number of distinct, separately identifiable jokes a show lands per minute of runtime. The Humor Index counts gradeable jokes — not every comedic line or laugh-track beat — so the figure is lower than informal counts but consistent across every show.' } },
+                { '@type': 'Question', name: 'What is the Humor Index?', acceptedAnswer: { '@type': 'Answer', text: 'The Humor Index is a 0–100 score combining four signals: peak joke density, craft (writing quality), impact (audience resonance), and weighted jokes per minute. Every joke in an episode is scored by AI, then aggregated to episode, season, and show level.' } },
+                { '@type': 'Question', name: 'What is comedy WAR (Wins Above Replacement)?', acceptedAnswer: { '@type': 'Answer', text: 'WAR adapts baseball’s Wins Above Replacement to comedy: a character’s joke count multiplied by how much their shrunk average quality exceeds a replacement-level baseline (the 25th-percentile bench character). It rewards both volume and quality, so high-output stars rank above one-line scene-stealers.' } },
+                { '@type': 'Question', name: 'What do craft and impact mean?', acceptedAnswer: { '@type': 'Answer', text: 'Craft is the writing quality of a joke across five sub-dimensions (originality, structure, character integration, economy, earned-vs-cheap). Impact is audience resonance — quotability, rewatch value, cultural footprint, and callback payoff. Both are scored 1–10 per joke.' } },
+              ],
+            }) }}
+          />
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Glossary</p>
+          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Key Terms, Defined</h2>
+          <div className="space-y-3">
+            {[
+              { term: 'Jokes Per Minute (JPM)', def: 'The number of distinct, gradeable jokes per minute of runtime. We count separable jokes a viewer could point to — not every comedic line — so JPM is comparable across every show.' },
+              { term: 'Humor Index', def: 'A 0–100 composite of peak joke density, craft, impact, and weighted JPM. Every joke is scored, then rolled up to episode, season, and show level.' },
+              { term: 'Craft', def: 'The writing quality of a joke, scored 1–10 across originality, structure, character integration, economy, and earned-vs-cheap.' },
+              { term: 'Impact', def: 'Audience resonance of a joke (1–10): quotability, rewatch value, cultural footprint, and callback payoff.' },
+              { term: 'WAR (Wins Above Replacement)', def: 'A character’s joke count × how far their shrunk average quality exceeds a replacement-level baseline. Rewards both volume and per-joke quality.' },
+              { term: 'Replacement level', def: 'The quality of a 25th-percentile "bench" character. WAR measures value above this floor, so merely showing up doesn’t accrue value.' },
+            ].map((g) => (
+              <div key={g.term} className="bg-brand-card border border-brand-border rounded-xl p-5">
+                <p className="text-sm font-medium text-brand-text-primary mb-1">{g.term}</p>
+                <p className="text-sm text-brand-text-secondary leading-relaxed">{g.def}</p>
               </div>
             ))}
           </div>

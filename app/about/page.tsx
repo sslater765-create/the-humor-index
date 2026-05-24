@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { getAllShows, getEpisodes } from '@/lib/data';
 
 export const metadata = {
-  title: 'About — The Humor Index',
+  title: 'About — The Story Behind the Comedy Data',
   description: 'The Humor Index was built by Sam to answer one question: which sitcom is actually the funniest? Here\'s the story.',
   alternates: {
     canonical: 'https://thehumorindex.com/about/',

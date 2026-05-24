@@ -218,17 +218,49 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           .sort((a, b) => b.humor_index - a.humor_index);
         const rank = scoredShows.findIndex(s => s.slug === show.slug) + 1;
         const total = scoredShows.length;
+        const best = topEpisodes[0];
+        const faqLd = {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: `Is ${show.name} funny?`,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: `${show.name} earns a Humor Index of ${formatIndex(show.humor_index)} out of 100${rank > 0 ? `, ranking #${rank} of ${total} fully-scored shows on The Humor Index` : ''}. We scored every joke across ${scored.length} episodes — it averages ${show.avg_jpm.toFixed(1)} jokes per minute with a craft score of ${show.avg_craft.toFixed(1)} and impact of ${show.avg_impact.toFixed(1)}.`,
+              },
+            },
+            ...(best ? [{
+              '@type': 'Question',
+              name: `What is the funniest ${show.name} episode?`,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: `"${best.title}" (S${best.season}E${String(best.episode_number).padStart(2, '0')}) is the funniest ${show.name} episode by Humor Index, scoring ${formatIndex(best.humor_index)} with ${best.total_jokes} scored jokes.`,
+              },
+            }] : []),
+            {
+              '@type': 'Question',
+              name: `How many jokes per minute does ${show.name} have?`,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: `${show.name} averages ${show.avg_jpm.toFixed(1)} distinct scored jokes per minute across ${scored.length} analyzed episodes.`,
+              },
+            },
+          ],
+        };
         return (
           <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 border-t border-brand-border">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
             <h2 className="text-xl font-medium text-brand-text-primary mb-2">
-              The Funniest {show.name} Episodes
+              The Funniest {show.name.replace(/^The /, '')} Episodes
             </h2>
             <p className="text-sm text-brand-text-secondary mb-5 max-w-2xl leading-relaxed">
               Of the {scored.length} {show.name} episode{scored.length !== 1 ? 's' : ''} we scored, these
               rate highest on the Humor Index — our blend of joke density, craft, and impact. Tap any
               episode for the full joke-by-joke breakdown.
             </p>
-            <div className="space-y-2 mb-12">
+            <div className="space-y-2 mb-4">
               {topEpisodes.map((ep, i) => (
                 <Link
                   key={`${ep.season}-${ep.episode_number}`}
@@ -249,6 +281,14 @@ export default async function ShowPage({ params }: { params: { slug: string } })
                   <span className="font-mono text-lg text-brand-gold shrink-0">{formatIndex(ep.humor_index)}</span>
                 </Link>
               ))}
+            </div>
+            <div className="mb-12">
+              <Link
+                href={`/shows/${params.slug}/episodes-ranked`}
+                className="text-sm text-brand-gold hover:underline"
+              >
+                See all {scored.length} {show.name} episodes ranked →
+              </Link>
             </div>
 
             <h2 className="text-xl font-medium text-brand-text-primary mb-2">

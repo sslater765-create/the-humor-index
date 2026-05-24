@@ -44,6 +44,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url('/rankings/worst-episodes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/best-jokes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/funniest-characters'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/rankings/least-funny-characters'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.7 },
     { url: url('/compare'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/blog'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/search'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.7 },
@@ -98,13 +99,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     });
 
-    // Arc page only exists for shows with data
+    // Arc + episodes-ranked pages only exist for shows with data
     if (show.humor_index > 0) {
       arcPages.push({
         url: url(`/shows/${show.slug}/arc`),
         lastModified: SITE_REFRESHED,
         changeFrequency: 'monthly',
         priority: 0.6,
+      });
+      arcPages.push({
+        url: url(`/shows/${show.slug}/episodes-ranked`),
+        lastModified: SITE_REFRESHED,
+        changeFrequency: 'weekly',
+        priority: 0.7,
       });
     }
 

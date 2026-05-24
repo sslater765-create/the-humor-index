@@ -1,7 +1,7 @@
 import PageHeader from '@/components/layout/PageHeader';
 
 export const metadata = {
-  title: 'Privacy Policy — The Humor Index',
+  title: 'Privacy Policy',
   description: 'How The Humor Index collects, uses, and protects your data.',
   alternates: {
     canonical: 'https://thehumorindex.com/privacy/',

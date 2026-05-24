@@ -44,9 +44,12 @@ export default async function HomePage() {
           <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mb-3">
             Comedy Analytics
           </p>
-          <h1 className="text-2xl sm:text-4xl font-medium text-brand-text-primary max-w-3xl leading-tight text-balance mb-3">
-            The science of what&apos;s funny.
+          <h1 className="text-2xl sm:text-4xl font-medium text-brand-text-primary max-w-3xl leading-tight text-balance mb-2">
+            Every Sitcom Joke, Scored and Ranked
           </h1>
+          <p className="text-base sm:text-lg text-brand-text-secondary/90 italic max-w-xl mb-4">
+            The science of what&apos;s funny.
+          </p>
           <p className="text-brand-text-secondary text-sm sm:text-base max-w-xl mb-8">
             <span className="font-mono text-brand-gold">{totalEpisodesAnalyzed.toLocaleString()}</span> episodes,{' '}
             <span className="font-mono text-brand-gold">{totalJokes.toLocaleString()}</span> jokes, scored by AI.{' '}

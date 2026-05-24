@@ -62,8 +62,8 @@ export async function generateMetadata({ params }: { params: { matchup: string }
   const winner = a.humor_index >= b.humor_index ? a : b;
 
   return {
-    title: `${a.name} vs ${b.name} — Which Is Funnier? Data Analysis`,
-    description: `We analyzed every joke in ${a.name} and ${b.name} to settle the debate. ${winner.name} scores ${formatIndex(winner.humor_index)} vs ${formatIndex(winner === a ? b.humor_index : a.humor_index)}. See the full breakdown.`,
+    title: `Is ${a.name} Funnier Than ${b.name}? The Data`,
+    description: `Is ${a.name} funnier than ${b.name}? We analyzed every joke in both to settle the debate. ${winner.name} scores ${formatIndex(winner.humor_index)} vs ${formatIndex(winner === a ? b.humor_index : a.humor_index)}. See the full ${a.name} vs ${b.name} breakdown.`,
     openGraph: {
       title: `${a.name} vs ${b.name} — The Data Settles It`,
       description: `${winner.name} wins with a Humor Index of ${formatIndex(winner.humor_index)}. See why.`,

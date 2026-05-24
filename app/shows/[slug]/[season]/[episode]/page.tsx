@@ -121,6 +121,14 @@ export default async function EpisodePage({
   const standoutJokes = detail.jokes.filter(j => detail.standout_joke_ids.includes(j.id));
   const regularJokes = detail.jokes.filter(j => !detail.standout_joke_ids.includes(j.id));
 
+  // Unique, data-driven comedy summary for each episode (SEO + thin-content fix).
+  const epTier = getTier(detail.humor_index);
+  const charCounts = new Map<string, number>();
+  for (const j of detail.jokes) {
+    for (const c of (j.characters ?? [])) charCounts.set(c, (charCounts.get(c) ?? 0) + 1);
+  }
+  const topChar = Array.from(charCounts.entries()).sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
+
   // Top 5 episodes for "more from this show"
   const topEpisodes = allEpisodes
     .filter(e => !(e.season === seasonNum && e.episode_number === episodeNum))
@@ -298,6 +306,16 @@ export default async function EpisodePage({
           )}
         </div>
       </div>
+
+      {/* Data-driven comedy summary — unique per episode */}
+      <p className="text-sm text-brand-text-secondary leading-relaxed mb-8">
+        {rank > 0 ? (
+          <>&ldquo;{detail.title}&rdquo; ranks <span className="text-brand-text-primary">#{rank} of {episodes.length}</span> {show.name} episodes on the Humor Index, scoring <span className="text-brand-gold font-mono">{formatIndex(detail.humor_index)}</span> — {epTier.label}. </>
+        ) : (
+          <>&ldquo;{detail.title}&rdquo; scores <span className="text-brand-gold font-mono">{formatIndex(detail.humor_index)}</span> on the Humor Index — {epTier.label}. </>
+        )}
+        The episode packs <span className="text-brand-text-primary">{detail.total_jokes} scored jokes</span> at {detail.jpm.toFixed(1)} per minute, averaging {detail.avg_craft.toFixed(1)} on craft and {detail.avg_impact.toFixed(1)} on impact{topChar ? <>, with <span className="text-brand-text-primary">{topChar}</span> landing the most laughs</> : ''}. Every joke is ranked below with its individual craft and impact scores.
+      </p>
 
       {/* Newsletter CTA — above the fold */}
       <InlineNewsletterCTA />
