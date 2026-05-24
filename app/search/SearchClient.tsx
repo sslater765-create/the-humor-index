@@ -133,13 +133,29 @@ export default function SearchClient() {
     }
 
     if (activeQuery) {
-      const q = activeQuery.toLowerCase();
       const norm = (str: string) => str.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-      const tokens = norm(q).split(" ").filter(Boolean);
+      const nq = norm(activeQuery);
+      const tokens = nq.split(" ").filter(Boolean);
+      const tokenRes = tokens.map(t => new RegExp(`\\b${t}\\b`));
       filtered = filtered.filter(j => {
         const hay = norm(`${j.text} ${j.characters.join(" ")} ${j.showName} ${j.episodeTitle}`);
         return tokens.every(t => hay.includes(t));
       });
+      // Relevance: exact-phrase match ranks far above scattered token hits,
+      // and whole-word matches beat substring noise (e.g. "lie" inside "believe").
+      if (sortBy !== 'craft' && sortBy !== 'impact') {
+        const rel = new WeakMap<object, number>();
+        for (const j of filtered) {
+          const hay = norm(`${j.text} ${j.characters.join(" ")} ${j.showName} ${j.episodeTitle}`);
+          let s = hay.includes(nq) ? 1000 : 0;
+          for (const re of tokenRes) if (re.test(hay)) s += 1;
+          rel.set(j as object, s);
+        }
+        filtered = [...filtered].sort((a, b) =>
+          (rel.get(b as object) ?? 0) - (rel.get(a as object) ?? 0) ||
+          (b.craft_total + b.impact_score) - (a.craft_total + a.impact_score)
+        );
+      }
     }
 
     if (sortBy === 'craft') {
