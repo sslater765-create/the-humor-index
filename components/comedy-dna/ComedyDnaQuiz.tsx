@@ -45,7 +45,7 @@ function manhattan(a: number[], b: number[]) { let d = 0; for (let i = 0; i < a.
 function encodeResult(r: ResultPayload): string { try { return btoa(unescape(encodeURIComponent(JSON.stringify(r)))).replace(/=+$/, ''); } catch { return ''; } }
 function decodeResult(s: string): ResultPayload | null { try { return JSON.parse(decodeURIComponent(escape(atob(s)))) as ResultPayload; } catch { return null; } }
 
-export default function ComedyDnaQuiz({ quiz, fingerprints }: { quiz: QuizData; fingerprints: ShowFingerprint[] }) {
+export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [] }: { quiz: QuizData; fingerprints: ShowFingerprint[]; comingSoon?: { slug: string; name: string }[] }) {
   // precomputed math inputs
   const normFps = useMemo(() => normalizeFingerprints(fingerprints), [fingerprints]);
   const baseline = useMemo(() => buildBaseline(quiz.pool), [quiz.pool]);
@@ -61,6 +61,9 @@ export default function ComedyDnaQuiz({ quiz, fingerprints }: { quiz: QuizData; 
   const [revealed, setRevealed] = useState(false);
   const [challenger, setChallenger] = useState<ResultPayload | null>(null);
   const [emailDone, setEmailDone] = useState(false);
+  const [emailValue, setEmailValue] = useState('');
+  const [voted, setVoted] = useState<Set<string>>(new Set());
+  const [suggestDone, setSuggestDone] = useState(false);
   const [note, setNote] = useState('');
   const confettiRef = useRef<HTMLCanvasElement>(null);
   const cardRef = useRef<HTMLCanvasElement>(null);
@@ -246,9 +249,22 @@ export default function ComedyDnaQuiz({ quiz, fingerprints }: { quiz: QuizData; 
     e.preventDefault();
     const input = (e.currentTarget.elements.namedItem('email') as HTMLInputElement);
     const v = input?.value.trim(); if (!v) return;
-    trackEvent('cdna_email');
+    setEmailValue(v); trackEvent('cdna_email');
     try { await fetch('/api/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: v }) }); } catch { /* non-blocking */ }
     setEmailDone(true);
+  }
+
+  async function voteShow(slug: string) {
+    if (voted.has(slug)) return;
+    setVoted(prev => new Set(prev).add(slug)); trackEvent('cdna_vote', { slug });
+    try { await fetch('/api/vote', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ slug, email: emailValue || undefined }) }); } catch { /* non-blocking */ }
+  }
+  async function suggestShow(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const input = (e.currentTarget.elements.namedItem('suggest') as HTMLInputElement);
+    const v = input?.value.trim(); if (!v) return;
+    setSuggestDone(true); trackEvent('cdna_vote_custom');
+    try { await fetch('/api/vote', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ customShow: v, email: emailValue || undefined }) }); } catch { /* non-blocking */ }
   }
 
   const kicker = 'text-brand-gold text-xs font-extrabold tracking-[0.14em] uppercase';
@@ -439,6 +455,36 @@ export default function ComedyDnaQuiz({ quiz, fingerprints }: { quiz: QuizData; 
               <p className="text-[13px] text-brand-text-muted mt-2 min-h-[1.2em]">{note || 'A weekly comedy drop from The Humor Index. No spam.'}</p>
             </div>
           </div>
+
+          {/* vote for next show */}
+          {comingSoon.length > 0 && (
+            <div className="mt-8 bg-brand-card border border-brand-border rounded-2xl px-6 py-7 text-center">
+              <span className={kicker}>Help pick what&apos;s next</span>
+              <h2 className="text-xl font-extrabold mt-2 mb-1">Which show should we score next?</h2>
+              <p className="text-brand-text-secondary max-w-md mx-auto mb-4">We&apos;re adding shows all the time. Vote for the ones you want in the mix.</p>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {comingSoon.map(s => {
+                  const v = voted.has(s.slug);
+                  return (
+                    <button key={s.slug} onClick={() => voteShow(s.slug)} disabled={v}
+                      className={`text-sm font-semibold px-3.5 py-2 rounded-full border transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold ${v ? 'border-brand-teal text-brand-teal bg-brand-teal/10' : 'border-brand-border text-brand-text-primary hover:border-brand-gold'}`}>
+                      {v ? '✓ ' : ''}{s.name}
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="mt-4">
+                {suggestDone ? (
+                  <p className="text-brand-teal font-semibold text-sm">Thanks — we&apos;ll add it to the list.</p>
+                ) : (
+                  <form className="flex gap-2 max-w-sm mx-auto" onSubmit={suggestShow}>
+                    <input name="suggest" type="text" placeholder="Don't see it? Suggest a show" aria-label="Suggest a show" className="flex-1 px-4 py-2.5 rounded-full bg-brand-surface border border-brand-border text-brand-text-primary placeholder:text-brand-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold text-sm" />
+                    <button className={`${btnLine} !py-2.5`} type="submit">Add</button>
+                  </form>
+                )}
+              </div>
+            </div>
+          )}
 
           <div className="text-center mt-9"><button className={btnLine} onClick={() => { setScreen('intro'); setPicks([]); setCur(0); }}>Play again</button></div>
 

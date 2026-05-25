@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { getComedyDnaQuiz, getComedyDnaFingerprints } from '@/lib/data';
+import { getComedyDnaQuiz, getComedyDnaFingerprints, getAllShows } from '@/lib/data';
 import ComedyDnaQuiz from '@/components/comedy-dna/ComedyDnaQuiz';
 
 const OG_IMAGE =
@@ -28,14 +28,18 @@ export const metadata: Metadata = {
 };
 
 export default async function ComedyDnaPage() {
-  const [quiz, fingerprints] = await Promise.all([
+  const [quiz, fingerprints, shows] = await Promise.all([
     getComedyDnaQuiz(),
     getComedyDnaFingerprints(),
+    getAllShows(),
   ]);
+  const comingSoon = shows
+    .filter(s => s.humor_index <= 0)
+    .map(s => ({ slug: s.slug, name: s.name }));
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10 md:py-14">
-      <ComedyDnaQuiz quiz={quiz} fingerprints={fingerprints} />
+      <ComedyDnaQuiz quiz={quiz} fingerprints={fingerprints} comingSoon={comingSoon} />
     </main>
   );
 }
