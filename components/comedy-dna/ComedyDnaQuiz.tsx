@@ -5,7 +5,7 @@ import { trackEvent } from '@/lib/analytics';
 import {
   DNA_TYPES, ARCHES, AXES, EMBLEMS, emblemSVG, showStyle, tileText,
   buildBaseline, normalizeFingerprints, meanFingerprint, buildWeights,
-  rankArchetypes, rankShows, whyText, dot, axisValue,
+  rankArchetypes, rankShows, whyText, dot, axisValue, wcos,
   type QuizData, type QuizJoke, type ShowFingerprint,
 } from '@/lib/comedyDna';
 
@@ -64,6 +64,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
   const [voted, setVoted] = useState<Set<string>>(new Set());
   const [suggestDone, setSuggestDone] = useState(false);
   const [note, setNote] = useState('');
+  const [episodes, setEpisodes] = useState<{ slug: string; s: number; e: number; t: string; fp: number[] }[] | null>(null);
   const confettiRef = useRef<HTMLCanvasElement>(null);
   const cardRef = useRef<HTMLCanvasElement>(null);
 
@@ -179,6 +180,32 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
     const payload: ResultPayload = { archeIdx: ARCHES.indexOf(best), axes: axisVals.map(a => +a.pr.toFixed(2)), shows: shows.slice(0, 3).map(s => ({ name: s.name, slug: s.slug, pct: s.pct })) };
     return { best, second, margin, conf, axisVals, compare, shows, sig, payload };
   }, [screen, pref, winCounts, weights, normFps, meanFp, baseline, quiz.reco, quiz.pool, seenIds, cleanMode]);
+
+  // Lazy-load episode fingerprints once the user reaches results (keeps initial load light).
+  useEffect(() => {
+    if (screen !== 'results' || episodes) return;
+    let on = true;
+    fetch('/data/comedy-dna-episodes.json').then(r => r.ok ? r.json() : []).then(d => { if (on) setEpisodes(Array.isArray(d) ? d : []); }).catch(() => { if (on) setEpisodes([]); });
+    return () => { on = false; };
+  }, [screen, episodes]);
+
+  // Episodes whose joke mix best matches the user's taste (max 2 per show, top 5).
+  const epRecs = useMemo(() => {
+    if (!episodes || !episodes.length || screen !== 'results') return [];
+    const base = DNA_TYPES.map((_, d) => episodes.reduce((s, ep) => s + (ep.fp[d] || 0), 0) / episodes.length);
+    const nameOf: Record<string, string> = Object.fromEntries(fingerprints.map(f => [f.slug, f.name]));
+    const scored = episodes.map(ep => ({ ep, s: wcos(pref, ep.fp.map((v, d) => v - base[d]), weights) })).sort((a, b) => b.s - a.s);
+    const out: { slug: string; s: number; e: number; t: string; show: string }[] = [];
+    const per: Record<string, number> = {};
+    for (const r of scored) {
+      const sl = r.ep.slug;
+      if ((per[sl] || 0) >= 2) continue;
+      per[sl] = (per[sl] || 0) + 1;
+      out.push({ slug: r.ep.slug, s: r.ep.s, e: r.ep.e, t: r.ep.t, show: nameOf[sl] || sl });
+      if (out.length >= 5) break;
+    }
+    return out;
+  }, [episodes, pref, weights, fingerprints, screen]);
 
   // fire analytics + confetti + reveal on entering results
   useEffect(() => {
@@ -452,6 +479,25 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
               ))}
             </div>
           </div>
+
+          {/* episodes for your taste */}
+          {epRecs.length > 0 && (
+            <div className="mt-8">
+              <span className={`${kicker} block mb-1`}>Episodes for your taste</span>
+              <p className="text-brand-text-secondary text-sm mb-3.5">Episodes whose joke mix best matches your picks — a place to start watching.</p>
+              <div className="bg-brand-card border border-brand-border rounded-2xl px-5 py-1">
+                {epRecs.map(ep => (
+                  <a key={`${ep.slug}-${ep.s}-${ep.e}`} href={`https://thehumorindex.com/shows/${ep.slug}/${ep.s}/${ep.e}/`} target="_blank" rel="noopener noreferrer"
+                    onClick={() => trackEvent('cdna_ep_click', { slug: ep.slug, s: ep.s, e: ep.e })}
+                    className="flex items-center gap-3.5 py-2.5 border-b border-brand-border last:border-0 hover:bg-brand-surface -mx-3 px-3 rounded transition">
+                    <Tile slug={ep.slug} size={30} />
+                    <span className="flex-1 min-w-0"><span className="font-bold text-brand-text-primary block truncate">{ep.t}</span><span className="text-xs text-brand-text-muted">{ep.show} · S{ep.s} E{ep.e}</span></span>
+                    <span className="text-brand-gold text-sm shrink-0">Watch &rarr;</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* share / capture */}
           <div className="mt-8 bg-brand-card border border-brand-border rounded-2xl px-6 py-7 text-center">
