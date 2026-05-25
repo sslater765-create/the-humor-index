@@ -424,10 +424,22 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
             {result.margin <= 0.18 && <div className="text-sm text-brand-text-secondary mt-1">…with a {result.second.name.replace(/^The /, '')} streak.</div>}
             <p className="max-w-xl mx-auto text-brand-text-secondary mt-3">{result.best.blurb}</p>
             <div className="flex gap-1.5 flex-wrap justify-center mt-3">{result.best.tags.map(t => <span key={t} className="text-[11px] font-semibold text-brand-text-secondary bg-brand-surface border border-brand-border px-2.5 py-1 rounded-full">{t}</span>)}</div>
+            {result.shows[0] && (
+              <div className="mt-4 pt-4 border-t border-brand-border text-[15px] text-brand-text-secondary">
+                Top match: <a href={SHOW_URL(result.shows[0].slug)} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('cdna_show_click', { slug: result.shows[0].slug, from: 'hero' })} className="text-brand-teal font-bold hover:underline">{result.shows[0].name}</a>
+                {result.compare && <> · you lean more <b className="text-brand-text-primary">{result.compare.label}</b> than {result.compare.n} of {result.compare.total} shows</>}
+              </div>
+            )}
+            <div className="flex gap-2.5 justify-center flex-wrap mt-4">
+              <button className={btnPrimary} onClick={shareCard}>Share my card</button>
+              <button className={`${btnLine} !border-brand-teal`} onClick={challenge}>Copy my link</button>
+            </div>
           </div>
 
+          <div className="mt-10 mb-1 text-center"><span className="text-[11px] uppercase tracking-[0.14em] text-brand-text-muted">The full breakdown</span></div>
+
           {/* axes */}
-          <div className="mt-8">
+          <div className="mt-3">
             <span className={`${kicker} block mb-3.5`}>Your taste, on four axes</span>
             {result.compare && (
               <p className="text-brand-text-secondary mb-4 -mt-1">You lean more <b className="text-brand-text-primary">{result.compare.label}</b> than {result.compare.n} of the {result.compare.total} shows we&apos;ve scored.</p>
@@ -501,13 +513,11 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
 
           {/* share / capture */}
           <div className="mt-8 bg-brand-card border border-brand-border rounded-2xl px-6 py-7 text-center">
-            <span className={kicker}>Take it with you</span>
-            <h2 className="text-xl font-extrabold mt-2 mb-1">Share your Comedy DNA</h2>
-            <p className="text-brand-text-secondary max-w-md mx-auto mb-3.5">Save the card, post it, or challenge a friend to see if your taste matches.</p>
+            <span className={kicker}>Keep exploring</span>
+            <h2 className="text-xl font-extrabold mt-2 mb-1">Get the shows that match your taste</h2>
+            <p className="text-brand-text-secondary max-w-md mx-auto mb-3.5">Dive into your top match, or have the shows built for your comedy DNA sent to your inbox.</p>
             <div className="flex gap-3 justify-center flex-wrap">
-              <button className={btnPrimary} onClick={shareCard}>Share my card</button>
-              <button className={`${btnLine} !border-brand-teal`} onClick={challenge}>Copy my link</button>
-              <a className={btnLine} href={SHOW_URL(result.shows[0].slug)} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('cdna_show_click', { slug: result.shows[0].slug, from: 'cta' })}>Explore {result.shows[0].name} &rarr;</a>
+              <a className={btnPrimary} href={SHOW_URL(result.shows[0].slug)} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('cdna_show_click', { slug: result.shows[0].slug, from: 'cta' })}>Explore {result.shows[0].name} &rarr;</a>
             </div>
             <div className="mt-5">
               {emailDone ? (
