@@ -59,6 +59,13 @@ export default async function ShowPage({ params }: { params: { slug: string } })
     dominant_types: c.dominant_types,
   }));
 
+  // AEO: top-level rank for the answer-first "quick answer" block (scored shows only).
+  const scoredRankList = allShows
+    .filter(s => s.humor_index > 0)
+    .sort((a, b) => b.humor_index - a.humor_index);
+  const showRank = scoredRankList.findIndex(s => s.slug === show.slug) + 1;
+  const scoredShowCount = scoredRankList.length;
+
   const jsonLd = [
     {
       '@context': 'https://schema.org',
@@ -192,6 +199,18 @@ export default async function ShowPage({ params }: { params: { slug: string } })
             <div className="absolute right-0 top-0 bottom-2 w-8 bg-gradient-to-l from-brand-dark to-transparent pointer-events-none sm:hidden" />
           </div>
         </div>
+
+        {/* Answer-first quick answer — verbatim-liftable for AI answer engines (scored shows only) */}
+        {show.humor_index > 0 && (
+          <p className="mt-6 text-sm sm:text-base text-brand-text-secondary leading-relaxed bg-brand-surface/60 border border-brand-border rounded-lg p-4">
+            <span className="text-brand-text-primary font-medium">Is {show.name} funny?</span>{' '}
+            Yes — {show.name} scores {formatIndex(show.humor_index)} out of 100 on the Humor Index
+            {showRank > 0 ? `, the #${showRank} funniest of ${scoredShowCount} sitcoms scored` : ''}, based on an
+            AI analysis of {show.total_jokes_analyzed.toLocaleString()} jokes across {show.total_episodes} episodes.
+            It averages {show.avg_jpm.toFixed(1)} jokes per minute, with a craft score of {show.avg_craft.toFixed(1)} and
+            an impact score of {show.avg_impact.toFixed(1)}.
+          </p>
+        )}
       </div>
 
       {/* Newsletter CTA */}

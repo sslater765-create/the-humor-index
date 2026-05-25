@@ -18,6 +18,7 @@ export default async function HomePage() {
     } catch { /* no episodes yet */ }
   }
   const totalJokes = shows.reduce((s, show) => s + show.total_jokes_analyzed, 0);
+  const asOf = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -51,6 +52,7 @@ export default async function HomePage() {
             The science of what&apos;s funny.
           </p>
           <p className="text-brand-text-secondary text-sm sm:text-base max-w-xl mb-8">
+            As of {asOf}:{' '}
             <span className="font-mono text-brand-gold">{totalEpisodesAnalyzed.toLocaleString()}</span> episodes,{' '}
             <span className="font-mono text-brand-gold">{totalJokes.toLocaleString()}</span> jokes, scored by AI.{' '}
             <Link href="/methodology" className="text-brand-text-muted hover:text-brand-gold underline underline-offset-2 decoration-brand-border decoration-1">
