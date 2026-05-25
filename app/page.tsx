@@ -149,18 +149,19 @@ export default async function HomePage() {
             But The Office edges ahead on our Humor Index. Why? Because the Humor Index
             rewards consistency and peak density — reaching elite comedy without dropping
             below average. A show with fewer weak episodes beats one with higher highs
-            but more clunkers. The gap is small: the top three shows cluster within
-            1.5 points, well inside each other&apos;s 95% credible intervals.
+            but more clunkers. And the gap that matters is small: from The Office down,
+            the chasing pack sits within about two points — well inside each
+            other&apos;s 95% intervals.
           </p>
           <div className="flex flex-wrap gap-6 mb-5">
             <div>
               <p className="text-xs text-brand-text-muted mb-1">The Office</p>
-              <p className="font-mono text-2xl text-brand-gold">78.6</p>
+              <p className="font-mono text-2xl text-brand-gold">79.2</p>
               <p className="text-[10px] text-brand-text-muted">Craft 6.87 · Impact 6.67</p>
             </div>
             <div>
               <p className="text-xs text-brand-text-muted mb-1">Seinfeld</p>
-              <p className="font-mono text-2xl text-brand-text-primary">77.8</p>
+              <p className="font-mono text-2xl text-brand-text-primary">77.0</p>
               <p className="text-[10px] text-brand-text-muted">Craft 7.15 · Impact 6.44</p>
             </div>
             <div>

@@ -301,7 +301,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
                 </Link>
               ))}
             </div>
-            <div className="mb-12">
+            <div className="mb-8">
               <Link
                 href={`/shows/${params.slug}/episodes-ranked`}
                 className="text-sm text-brand-gold hover:underline"
@@ -309,6 +309,24 @@ export default async function ShowPage({ params }: { params: { slug: string } })
                 See all {scored.length} {show.name} episodes ranked →
               </Link>
             </div>
+
+            <Link
+              href={`/shows/${params.slug}/explore`}
+              className="block mb-12 bg-brand-card border border-brand-border rounded-2xl p-5 hover:border-brand-gold/40 transition-colors group"
+            >
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <span className="text-xs uppercase tracking-widest text-brand-text-muted">Humor Index Explorer</span>
+                  <p className="text-base font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mt-0.5">
+                    Build your own cut of {show.name}
+                  </p>
+                  <p className="text-sm text-brand-text-secondary mt-1 max-w-xl">
+                    Pick any seasons or episodes and see how funny that slice scores — compare eras, isolate a hot streak, or drop a weak season.
+                  </p>
+                </div>
+                <span className="text-brand-gold text-sm shrink-0">Explore →</span>
+              </div>
+            </Link>
 
             <h2 className="text-xl font-medium text-brand-text-primary mb-2">
               Is {show.name} Worth Watching?

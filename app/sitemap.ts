@@ -39,6 +39,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 1.0 },
     { url: url('/shows'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.9 },
+    { url: url('/explore'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/funniest-episodes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/jokes-per-minute'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
@@ -112,6 +113,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       });
       arcPages.push({
         url: url(`/shows/${show.slug}/episodes-ranked`),
+        lastModified: SITE_REFRESHED,
+        changeFrequency: 'weekly',
+        priority: 0.7,
+      });
+      arcPages.push({
+        url: url(`/shows/${show.slug}/explore`),
         lastModified: SITE_REFRESHED,
         changeFrequency: 'weekly',
         priority: 0.7,
