@@ -20,30 +20,31 @@ export interface QuizData { types: JokeType[]; pool: QuizJoke[]; reco: QuizJoke[
 export interface ShowFingerprint { slug: string; name: string; fp: number[]; n: number; }
 
 export interface Archetype {
-  name: string; tag: string; blurb: string;
+  name: string; tag: string; blurb: string; slug: string;
   weights: Partial<Record<JokeType, number>>; tags: string[]; emblem: number;
 }
 
 export const ARCHES: Archetype[] = [
-  { name: 'The Wordsmith', tag: 'Language doing backflips.',
+  { name: 'The Wordsmith', tag: 'Language doing backflips.', slug: 'wordsmith',
     blurb: 'You live for the perfectly engineered line — wordplay, irony, a setup that snaps shut like a trap. The funniest thing in the room is usually a sentence.',
     weights: { wordplay_pun: 3, irony_sarcasm: 2, observational: 2, misdirection: 2, setup_punchline: 1.5, deadpan_understatement: 1 }, tags: ['wordplay', 'irony', 'tight writing'], emblem: 0 },
-  { name: 'The Absurdist', tag: 'The weirder, the better.',
+  { name: 'The Absurdist', tag: 'The weirder, the better.', slug: 'absurdist',
     blurb: "Logic is optional. You're drawn to comedy that escalates into the surreal, breaks its own reality, and commits fully to the bit no matter how strange it gets.",
     weights: { absurdist: 3, escalation: 2, meta_self_referential: 2, visual_gag: 1.5, physical_slapstick: 1 }, tags: ['absurd', 'escalation', 'meta'], emblem: 1 },
-  { name: 'The Cringe Connoisseur', tag: 'Comedy from behind a pillow.',
+  { name: 'The Cringe Connoisseur', tag: 'Comedy from behind a pillow.', slug: 'cringe-connoisseur',
     blurb: "You savor the squirm. The longer the silence, the more painful the misstep, the better — discomfort is the whole point and you wouldn't look away for anything.",
     weights: { cringe_discomfort: 3, awkward_silence: 2.5, dark_subversive: 1.5, character_comedy: 1 }, tags: ['cringe', 'awkward', 'second-hand embarrassment'], emblem: 2 },
-  { name: 'The Character Devotee', tag: "It's about who's saying it.",
+  { name: 'The Character Devotee', tag: "It's about who's saying it.", slug: 'character-devotee',
     blurb: "The line only kills because of who delivers it. You're loyal to comedy that grows out of character — callbacks, running gags, people being exactly themselves.",
     weights: { character_comedy: 3, callback: 2, running_gag: 2, reaction_beat: 1 }, tags: ['character', 'callbacks', 'running gags'], emblem: 3 },
-  { name: 'The Deadpan Purist', tag: 'Dry as the Sahara.',
+  { name: 'The Deadpan Purist', tag: 'Dry as the Sahara.', slug: 'deadpan-purist',
     blurb: 'No mugging, no winking. You like it underplayed — the throwaway delivery, the observation so dry it takes a beat to land. Understatement is the highest form.',
     weights: { deadpan_understatement: 3, observational: 2.2, irony_sarcasm: 2, misdirection: 1 }, tags: ['deadpan', 'dry wit', 'understated'], emblem: 4 },
-  { name: 'The Anarchist', tag: 'No line uncrossed.',
+  { name: 'The Anarchist', tag: 'No line uncrossed.', slug: 'anarchist',
     blurb: "You want it loud, dark, and a little dangerous — comedy that escalates into chaos and isn't afraid to go to the bad place. Polite is boring.",
     weights: { dark_subversive: 3, escalation: 2, physical_slapstick: 2, absurdist: 1.5 }, tags: ['dark', 'subversive', 'chaos'], emblem: 5 },
 ];
+export function archetypeBySlug(slug: string): Archetype | undefined { return ARCHES.find(a => a.slug === slug); }
 
 export const AXES: Array<{ left: string; right: string; l: JokeType[]; r: JokeType[] }> = [
   { left: 'Verbal', right: 'Physical', l: ['wordplay_pun', 'irony_sarcasm', 'observational', 'deadpan_understatement', 'misdirection', 'setup_punchline'], r: ['visual_gag', 'physical_slapstick', 'reaction_beat', 'escalation'] },
@@ -189,4 +190,20 @@ export function archetypeExemplars(fps: ShowFingerprint[]): { arche: Archetype; 
   });
 
   return ARCHES.map((a, ai) => ({ arche: a, slug: picked[ai]!.slug, name: picked[ai]!.name }));
+}
+
+// Position on one taste axis (0=left .. 1=right), widened for readability. Works
+// for a user's win-fractions or a show's normalized fingerprint — same formula.
+export function axisValue(frac: number[], axis: { l: JokeType[]; r: JokeType[] }): number {
+  const ls = axis.l.reduce((s, t) => s + frac[TI[t]], 0);
+  const rs = axis.r.reduce((s, t) => s + frac[TI[t]], 0);
+  let pr = (ls + rs) > 0 ? rs / (ls + rs) : 0.5;
+  pr = 0.5 + (pr - 0.5) * 1.5;
+  return Math.max(0.06, Math.min(0.94, pr));
+}
+
+// Top-N pool jokes that best match an archetype (for per-archetype pages).
+export function archetypeExampleJokes<T extends { vec: number[] }>(a: Archetype, pool: T[], n: number): T[] {
+  const av = DNA_TYPES.map(t => a.weights[t] || 0);
+  return [...pool].map(j => ({ j, s: dot(j.vec, av) })).sort((x, y) => y.s - x.s).slice(0, n).map(x => x.j);
 }

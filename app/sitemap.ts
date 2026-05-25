@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
+import { ARCHES } from '@/lib/comedyDna';
 
 // Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
 const BLOG_SLUGS = [
@@ -47,6 +48,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url('/rankings/least-funny-characters'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.7 },
     { url: url('/compare'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/comedy-dna'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.8 },
+    ...ARCHES.map(a => ({ url: url(`/comedy-dna/${a.slug}`), lastModified: SITE_REFRESHED, changeFrequency: 'monthly' as const, priority: 0.6 })),
     { url: url('/blog'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/search'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.7 },
     { url: url('/methodology'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.7 },

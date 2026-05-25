@@ -64,7 +64,9 @@ export default async function ComedyDnaPage() {
                 dangerouslySetInnerHTML={{ __html: emblemSVG(arche.emblem, 34) }}
               />
               <div>
-                <h3 className="font-bold text-lg text-brand-text-primary">{arche.name}</h3>
+                <h3 className="font-bold text-lg text-brand-text-primary">
+                  <Link href={`/comedy-dna/${arche.slug}/`} className="hover:text-brand-gold">{arche.name}</Link>
+                </h3>
                 <p className="text-brand-gold text-sm font-semibold mb-1">{arche.tag}</p>
                 <p className="text-sm text-brand-text-secondary mb-2">{arche.blurb}</p>
                 {slug && (

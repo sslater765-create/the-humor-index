@@ -5,7 +5,7 @@ import { trackEvent } from '@/lib/analytics';
 import {
   DNA_TYPES, ARCHES, AXES, EMBLEMS, emblemSVG, showStyle, tileText,
   buildBaseline, normalizeFingerprints, meanFingerprint, buildWeights,
-  rankArchetypes, rankShows, whyText, dot,
+  rankArchetypes, rankShows, whyText, dot, axisValue,
   type QuizData, type QuizJoke, type ShowFingerprint,
 } from '@/lib/comedyDna';
 
@@ -158,8 +158,19 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
       const ls = ax.l.reduce((s, t) => s + frac[DNA_TYPES.indexOf(t)], 0);
       const rs = ax.r.reduce((s, t) => s + frac[DNA_TYPES.indexOf(t)], 0);
       let pr = (ls + rs) > 0 ? rs / (ls + rs) : 0.5; pr = 0.5 + (pr - 0.5) * 1.5;
-      return { ...ax, pr: Math.max(0.06, Math.min(0.94, pr)) };
+      pr = Math.max(0.06, Math.min(0.94, pr));
+      const avg = normFps.length ? normFps.reduce((s, f) => s + axisValue(f.fp, ax), 0) / normFps.length : 0.5;
+      return { ...ax, pr, avg };
     });
+    // Comparative headline vs. the scored shows, on the user's most pronounced axis.
+    let compare: { label: string; n: number; total: number } | null = null;
+    if (normFps.length) {
+      const ext = axisVals.reduce((b, a) => Math.abs(a.pr - 0.5) > Math.abs(b.pr - 0.5) ? a : b, axisVals[0]);
+      const right = ext.pr >= 0.5;
+      const sp = normFps.map(f => axisValue(f.fp, ext));
+      const n = right ? sp.filter(p => p < ext.pr).length : sp.filter(p => p > ext.pr).length;
+      compare = { label: (right ? ext.right : ext.left).toLowerCase(), n, total: normFps.length };
+    }
     const shows = rankShows(pref, normFps, meanFp, weights);
     // signature jokes
     const cands = [...quiz.reco, ...quiz.pool.filter(j => !seenIds.has(j.id))].filter(j => !cleanMode || !isEdgy(j));
@@ -167,7 +178,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
     const sig: QuizJoke[] = []; const per: Record<string, number> = {};
     for (const r of ranked) { if ((per[r.j.slug] || 0) >= 1) continue; per[r.j.slug] = 1; sig.push(r.j); if (sig.length >= 4) break; }
     const payload: ResultPayload = { archeIdx: ARCHES.indexOf(best), axes: axisVals.map(a => +a.pr.toFixed(2)), shows: shows.slice(0, 3).map(s => ({ name: s.name, slug: s.slug, pct: s.pct })) };
-    return { best, second, margin, conf, axisVals, shows, sig, payload };
+    return { best, second, margin, conf, axisVals, compare, shows, sig, payload };
   }, [screen, pref, winCounts, weights, normFps, meanFp, baseline, quiz.reco, quiz.pool, seenIds, cleanMode]);
 
   // fire analytics + confetti + reveal on entering results
@@ -386,15 +397,22 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
           {/* axes */}
           <div className="mt-8">
             <span className={`${kicker} block mb-3.5`}>Your taste, on four axes</span>
+            {result.compare && (
+              <p className="text-brand-text-secondary mb-4 -mt-1">You lean more <b className="text-brand-text-primary">{result.compare.label}</b> than {result.compare.n} of the {result.compare.total} shows we&apos;ve scored.</p>
+            )}
             {result.axisVals.map(ax => {
               const leftOn = ax.pr < 0.5;
               return (
                 <div key={ax.left} className="my-4">
                   <div className="flex justify-between text-[13px] font-bold text-brand-text-secondary mb-1.5"><span className={leftOn ? 'text-brand-text-primary' : ''}>{ax.left}</span><span className={!leftOn ? 'text-brand-text-primary' : ''}>{ax.right}</span></div>
-                  <div className="relative h-2.5 bg-brand-border rounded-full"><div className="absolute top-1/2 w-[18px] h-[18px] rounded-full bg-brand-gold -translate-x-1/2 -translate-y-1/2 transition-all duration-700" style={{ left: `${(revealed ? ax.pr : 0.5) * 100}%` }} /></div>
+                  <div className="relative h-2.5 bg-brand-border rounded-full">
+                    <span className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 w-px h-3.5 bg-brand-text-muted" style={{ left: `${ax.avg * 100}%` }} title="Average scored show" />
+                    <div className="absolute top-1/2 w-[18px] h-[18px] rounded-full bg-brand-gold -translate-x-1/2 -translate-y-1/2 transition-all duration-700" style={{ left: `${(revealed ? ax.pr : 0.5) * 100}%` }} />
+                  </div>
                 </div>
               );
             })}
+            <p className="text-[11px] text-brand-text-muted mt-2">Gold dot = you · faint marker = average scored show</p>
           </div>
 
           {/* shows */}
