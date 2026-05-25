@@ -18,6 +18,13 @@ const SORT_OPTIONS: { key: SortKey; label: string }[] = [
   { key: 'avg_impact', label: 'Impact' },
 ];
 
+// 95% confidence interval as text, shown only where the pipeline has computed it.
+// (Some shows are missing ci_95 fields until the pipeline backfills them.)
+function ciText(s: ShowScore): string | null {
+  if (s.ci_95_low == null || s.ci_95_high == null) return null;
+  return `95% CI ${s.ci_95_low.toFixed(1)}–${s.ci_95_high.toFixed(1)}`;
+}
+
 export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
   const [sortKey, setSortKey] = useState<SortKey>('humor_index');
 
@@ -87,6 +94,9 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
                       {formatIndex(show.humor_index)}
                     </span>
                   </div>
+                  {sortKey === 'humor_index' && ciText(show) && (
+                    <div className="font-mono text-[10px] text-brand-text-muted mt-0.5">{ciText(show)}</div>
+                  )}
                 </td>
                 <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_imdb_rating?.toFixed(1) ?? '—'}</td>
                 <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_jpm.toFixed(1)}</td>
@@ -119,6 +129,9 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
                     <span className="font-mono text-[10px] text-brand-text-muted" style={{ color: scoreToColor(show.humor_index) }}>
                       {formatIndex(show.humor_index)}
                     </span>
+                    {sortKey === 'humor_index' && ciText(show) && (
+                      <span className="font-mono text-[9px] text-brand-text-muted">{ciText(show)}</span>
+                    )}
                   </div>
                 </div>
                 <div className="flex gap-3 text-xs text-brand-text-muted flex-wrap">
@@ -133,6 +146,14 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
           </motion.div>
         ))}
       </div>
+
+      {/* Honest-uncertainty note — only meaningful when ranking by Index. */}
+      {sortKey === 'humor_index' && (
+        <p className="mt-4 text-xs text-brand-text-muted leading-relaxed">
+          Scores within about ±1.2 points are statistically tied — the cluster below the top two is closer than the order suggests.{' '}
+          <Link href="/methodology" className="text-brand-gold hover:underline">How we score →</Link>
+        </p>
+      )}
     </div>
   );
 }
