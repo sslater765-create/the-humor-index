@@ -42,7 +42,6 @@ function Tile({ slug, size = 34 }: { slug: string; size?: number }) {
 function shuffle<T>(arr: T[]): T[] { const a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function manhattan(a: number[], b: number[]) { let d = 0; for (let i = 0; i < a.length; i++) d += Math.abs(a[i] - b[i]); return d; }
 
-function encodeResult(r: ResultPayload): string { try { return btoa(unescape(encodeURIComponent(JSON.stringify(r)))).replace(/=+$/, ''); } catch { return ''; } }
 function decodeResult(s: string): ResultPayload | null { try { return JSON.parse(decodeURIComponent(escape(atob(s)))) as ResultPayload; } catch { return null; } }
 
 export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jokeCount = 0 }: { quiz: QuizData; fingerprints: ShowFingerprint[]; comingSoon?: { slug: string; name: string }[]; jokeCount?: number }) {
@@ -250,9 +249,15 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
     }, 'image/png');
   }
   async function challenge() {
-    if (!result) return; trackEvent('cdna_challenge');
-    const link = `${window.location.origin}${window.location.pathname}#c=${encodeResult(result.payload)}`;
-    try { await navigator.clipboard.writeText(link); flash('Challenge link copied — send it to a friend!'); } catch { window.prompt('Copy this challenge link:', link); }
+    if (!result) return; trackEvent('cdna_share_link');
+    const d = encodeURIComponent(JSON.stringify({
+      a: result.payload.archeIdx,
+      c: result.conf,
+      x: result.payload.axes,
+      s: result.payload.shows.map(s => [s.slug, s.name, s.pct]),
+    }));
+    const link = `${window.location.origin}/comedy-dna/p?d=${d}`;
+    try { await navigator.clipboard.writeText(link); flash('Your Comedy DNA link is copied — share it!'); } catch { window.prompt('Copy your Comedy DNA link:', link); }
   }
   function flash(msg: string) { setNote(msg); setTimeout(() => setNote(''), 3500); }
 
@@ -455,7 +460,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
             <p className="text-brand-text-secondary max-w-md mx-auto mb-3.5">Save the card, post it, or challenge a friend to see if your taste matches.</p>
             <div className="flex gap-3 justify-center flex-wrap">
               <button className={btnPrimary} onClick={shareCard}>Share my card</button>
-              <button className={`${btnLine} !border-brand-teal`} onClick={challenge}>Challenge a friend</button>
+              <button className={`${btnLine} !border-brand-teal`} onClick={challenge}>Copy my link</button>
               <a className={btnLine} href={SHOW_URL(result.shows[0].slug)} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('cdna_show_click', { slug: result.shows[0].slug, from: 'cta' })}>Explore {result.shows[0].name} &rarr;</a>
             </div>
             <div className="mt-5">
