@@ -158,3 +158,35 @@ export function whyText(show: ShowRank, pref: number[], w: number[], meanFp: num
   const phrase = use.length === 2 ? `${use[0]} and ${use[1]}` : (use[0] || 'this exact mix');
   return `You leaned into ${phrase} — that's right in ${show.name}'s wheelhouse.`;
 }
+
+// For each archetype, the live show whose joke-type fingerprint matches it most
+// (same weighted-cosine the recommender uses). Greedy-unique assignment so the
+// public archetype section shows distinct shows when the catalog allows.
+export function archetypeExemplars(fps: ShowFingerprint[]): { arche: Archetype; slug: string; name: string }[] {
+  if (!fps.length) return ARCHES.map(a => ({ arche: a, slug: '', name: '' }));
+  const norm = normalizeFingerprints(fps);
+  const mean = meanFingerprint(norm);
+  const w = buildWeights(mean);
+  const cen = norm.map(f => centeredShow(f, mean));
+  const archeVecs = ARCHES.map(a => DNA_TYPES.map(t => a.weights[t] || 0));
+
+  const pairs: { ai: number; fi: number; s: number }[] = [];
+  archeVecs.forEach((av, ai) => norm.forEach((_, fi) => pairs.push({ ai, fi, s: wcos(av, cen[fi], w) })));
+  pairs.sort((a, b) => b.s - a.s);
+
+  const picked: (ShowFingerprint | null)[] = ARCHES.map(() => null);
+  const usedShow = new Set<number>();
+  for (const p of pairs) {
+    if (picked[p.ai] || usedShow.has(p.fi)) continue;
+    picked[p.ai] = norm[p.fi]; usedShow.add(p.fi);
+  }
+  // Fallback if there are fewer shows than archetypes: allow the best (possibly reused).
+  picked.forEach((sel, ai) => {
+    if (sel) return;
+    let best = norm[0], bestS = -Infinity;
+    norm.forEach((f, fi) => { const s = wcos(archeVecs[ai], cen[fi], w); if (s > bestS) { bestS = s; best = f; } });
+    picked[ai] = best;
+  });
+
+  return ARCHES.map((a, ai) => ({ arche: a, slug: picked[ai]!.slug, name: picked[ai]!.name }));
+}

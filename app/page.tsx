@@ -76,6 +76,29 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Comedy DNA teaser — the flagship interactive, surfaced on the homepage */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-8">
+        <Link
+          href="/comedy-dna"
+          className="group block bg-brand-gold/5 border border-brand-gold/20 rounded-xl p-6 sm:p-8 hover:border-brand-gold/40 transition-colors"
+        >
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-gold mb-2">New · Interactive</p>
+              <h2 className="text-xl sm:text-2xl font-medium text-brand-text-primary mb-2 group-hover:text-brand-gold transition-colors">
+                What&apos;s your Comedy DNA?
+              </h2>
+              <p className="text-sm text-brand-text-secondary max-w-xl">
+                Pick which joke is funnier, about 18 times. We&apos;ll map your comedy archetype and the shows built for your taste — from {totalJokes.toLocaleString()} scored jokes.
+              </p>
+            </div>
+            <span className="shrink-0 inline-flex items-center justify-center rounded-full bg-brand-gold text-brand-dark font-medium px-5 py-3 text-sm">
+              Find your type →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* Latest analysis callouts */}
       {analyzedShows.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">

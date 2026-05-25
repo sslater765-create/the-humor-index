@@ -44,7 +44,17 @@ ${leaderboard}
 - [Rankings hub](https://thehumorindex.com/rankings/): funniest episodes, best jokes, funniest characters, jokes-per-minute, worst episodes.
 - [Jokes per minute ranking](https://thehumorindex.com/rankings/jokes-per-minute/): sitcoms ranked by joke density.
 - [Compare shows](https://thehumorindex.com/compare/): head-to-head "is X funnier than Y" data.
+- [Comedy DNA](https://thehumorindex.com/comedy-dna/): an interactive quiz — pick which joke is funnier to find your comedy archetype and the shows that match your taste.
 - [Blog](https://thehumorindex.com/blog/): data-driven comedy analysis (e.g., the measurable Dan Harmon effect on Community).
+
+## Comedy archetypes (from the Comedy DNA quiz)
+Six comedy-taste archetypes, assigned from which jokes a person prefers:
+- The Wordsmith: prefers wordplay, irony, and tightly engineered setup-punchlines.
+- The Absurdist: prefers surreal, escalating, meta humor that breaks its own reality.
+- The Cringe Connoisseur: prefers discomfort, awkward silence, and second-hand embarrassment.
+- The Character Devotee: prefers character-driven jokes, callbacks, and running gags.
+- The Deadpan Purist: prefers dry, understated, observational delivery.
+- The Anarchist: prefers dark, subversive, chaotic, and physical comedy.
 
 ## Shows
 ${showLinks}

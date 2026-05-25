@@ -45,7 +45,7 @@ function manhattan(a: number[], b: number[]) { let d = 0; for (let i = 0; i < a.
 function encodeResult(r: ResultPayload): string { try { return btoa(unescape(encodeURIComponent(JSON.stringify(r)))).replace(/=+$/, ''); } catch { return ''; } }
 function decodeResult(s: string): ResultPayload | null { try { return JSON.parse(decodeURIComponent(escape(atob(s)))) as ResultPayload; } catch { return null; } }
 
-export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [] }: { quiz: QuizData; fingerprints: ShowFingerprint[]; comingSoon?: { slug: string; name: string }[] }) {
+export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jokeCount = 0 }: { quiz: QuizData; fingerprints: ShowFingerprint[]; comingSoon?: { slug: string; name: string }[]; jokeCount?: number }) {
   // precomputed math inputs
   const normFps = useMemo(() => normalizeFingerprints(fingerprints), [fingerprints]);
   const baseline = useMemo(() => buildBaseline(quiz.pool), [quiz.pool]);
@@ -297,7 +297,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [] }: {
           </label>
           <div><button className={btnPrimary} onClick={start}>Start the face-offs</button></div>
           <div className="flex gap-7 mt-8 flex-wrap">
-            {[[`${N_BASE}`, 'quick face-offs'], ['71,919', 'jokes scored'], [`${fingerprints.length}`, 'shows ranked']].map(([b, s]) => (
+            {[[`${N_BASE}`, 'quick face-offs'], [jokeCount ? jokeCount.toLocaleString() : '70,000+', 'jokes scored'], [`${fingerprints.length}`, 'shows ranked']].map(([b, s]) => (
               <div key={s} className="flex flex-col"><b className="text-2xl font-black">{b}</b><span className="text-xs text-brand-text-muted uppercase tracking-wider font-semibold">{s}</span></div>
             ))}
           </div>
