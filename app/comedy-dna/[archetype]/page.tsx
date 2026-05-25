@@ -41,7 +41,7 @@ export default async function ArchetypePage({ params }: { params: { archetype: s
       { '@type': 'Question', name: `What is the ${arche.name.replace(/^The /, '')} comedy type?`,
         acceptedAnswer: { '@type': 'Answer', text: `${arche.name} — ${arche.tag} ${arche.blurb}` } },
       ...(exemplar?.name ? [{ '@type': 'Question', name: `Which sitcom is the most ${arche.name.replace(/^The /, '').toLowerCase()}?`,
-        acceptedAnswer: { '@type': 'Answer', text: `Among the sitcoms scored by The Humor Index, ${exemplar.name} best embodies the ${arche.name} — its joke mix matches this archetype most closely.` } }] : []),
+        acceptedAnswer: { '@type': 'Answer', text: `Among the sitcoms scored by The Humor Index, ${exemplar.name} best embodies ${arche.name} — its joke mix matches this archetype most closely.` } }] : []),
     ],
   };
 
@@ -73,7 +73,7 @@ export default async function ArchetypePage({ params }: { params: { archetype: s
       {exemplar?.name && (
         <div className="bg-brand-card border border-brand-border rounded-xl p-5 mb-8">
           <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">Most exemplified by</p>
-          <p className="text-brand-text-secondary">The sitcom whose joke mix matches the {arche.name} most closely is{' '}
+          <p className="text-brand-text-secondary">The sitcom whose joke mix matches {arche.name} most closely is{' '}
             <Link href={`/shows/${exemplar.slug}/`} className="text-brand-gold hover:underline font-semibold">{exemplar.name}</Link>.</p>
         </div>
       )}
