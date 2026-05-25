@@ -7,6 +7,7 @@ const links = [
   { href: '/shows', label: 'Shows' },
   { href: '/rankings', label: 'Rankings' },
   { href: '/compare', label: 'Compare' },
+  { href: '/comedy-dna', label: 'Comedy DNA' },
   { href: '/blog', label: 'Blog' },
   { href: '/methodology', label: 'Methodology' },
   { href: '/request', label: 'Request' },
