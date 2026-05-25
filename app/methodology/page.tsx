@@ -206,11 +206,13 @@ export default function MethodologyPage() {
             transparency. <span className="text-brand-text-secondary">Subsequent update (April 18, 2026):</span> we then
             discovered that Jerry&apos;s stand-up bits at The Improv were being scored as sitcom comedy.
             Applying a 0.30 standup weighting and rescoring all 172 Seinfeld episodes with 3-run consensus
-            moved Seinfeld from 83.9 → <span className="text-brand-text-primary">77.8</span>. Current published
-            order: 30 Rock 84.3, Arrested Development 82.0, Parks and Recreation 78.8, The Office 78.6,
-            Seinfeld 77.8, Friends 77.5, Taxi 77.4, Schitt&apos;s Creek 77.3. 30 Rock currently sits at the top
-            after launching in May with a 95% CI that pulls clear of the lower seven shows, which all cluster
-            inside each other&apos;s credible intervals.
+            moved Seinfeld from 83.9 → 77.8. <span className="text-brand-text-secondary">Reconciliation (May 25, 2026):</span> as
+            new shows were added the live leaderboard drifted from the canonical aggregation, so we re-aggregated
+            all nine scored shows with one consistent method and added bootstrap 95% confidence intervals.
+            Current published order: 30 Rock 84.4, Arrested Development 82.0, The Office <span className="text-brand-text-primary">79.2</span>,
+            Community 77.9, Parks and Recreation 77.7, Taxi 77.3, Schitt&apos;s Creek 77.3, Seinfeld 77.0,
+            Friends 73.3. 30 Rock and Arrested Development pull clear at the top; the middle six cluster inside
+            each other&apos;s intervals; Friends now sits clearly below the pack.
           </p>
         </section>
 

@@ -433,7 +433,7 @@ To be very explicit about this:
 
 ## What this means for prior content
 
-A handful of our prior blog posts and social posts cite specific display scores ("Seinfeld at 79.1", "Parks at 80.55", etc.). Those references are now slightly off from the live site. They're not wrong about the conclusions they drew — the rank order and the relative gaps are intact — but the absolute display numbers in those posts are from the old scale.
+A handful of our prior blog posts and social posts cite specific display scores ("Seinfeld at 79.1", "Parks at 80.55", etc.). Those numbers are snapshots from their publication date and no longer match the live leaderboard. A May 2026 reconciliation re-aggregated all nine scored shows on one consistent method and added bootstrap 95% intervals — which also shifted the order, most notably Friends, which now sits clearly below the chasing pack (≈73) rather than inside it. Treat the figures in dated posts as accurate-as-of-publication; the live leaderboard and the methodology page are the current source of truth.
 
 We're not going back to edit historical posts. The "as of when" date on each post documents what scale was live at the time. If you want to compare a number from an old post to a number on the current site, multiply the old display by approximately 0.69 to get the new display: \`new = 75 + (old − 75) × 0.6875\`.
 
