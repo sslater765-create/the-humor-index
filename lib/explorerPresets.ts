@@ -54,6 +54,45 @@ export const EXPLORER_CONFIG: Record<string, ExplorerConfig> = {
       { id: 'no-ld', label: 'After Larry David (S8–9)', blurb: 'The two seasons made after Larry David left', pick: ep => ep.season >= 8 },
     ],
   },
+  // Steve Carell (Michael Scott) was the lead through S7, then left; S8–9 ran without him.
+  'the-office': {
+    eras: { 1: 'Carell', 2: 'Carell', 3: 'Carell', 4: 'Carell', 5: 'Carell', 6: 'Carell', 7: 'Carell', 8: 'no Carell', 9: 'no Carell' },
+    signature: 'after-carell',
+    storyPresets: [
+      { id: 'with-carell', label: 'With Michael Scott (S1–7)', blurb: 'The Steve Carell seasons', pick: ep => ep.season <= 7 },
+      { id: 'after-carell', label: 'After Michael Scott (S8–9)', blurb: 'The seasons made after Steve Carell left — do they actually fall off?', pick: ep => ep.season >= 8 },
+      { id: 'skip-s1', label: 'Skip Season 1', blurb: 'Drop the short, rough six-episode first season', pick: ep => ep.season !== 1 },
+    ],
+  },
+  // Mark Brendanawicz (Paul Schneider) was written out after S2; the show is
+  // also famous for outgrowing its short first season once the ensemble settled.
+  'parks-and-recreation': {
+    signature: 'skip-s1',
+    storyPresets: [
+      { id: 'skip-s1', label: 'Skip the rocky Season 1', blurb: 'Drop the short first season the show is famous for outgrowing', pick: ep => ep.season !== 1 },
+      { id: 'with-mark', label: 'Before Mark leaves (S1–2)', blurb: 'The Mark Brendanawicz seasons, before he was written out', pick: ep => ep.season <= 2 },
+      { id: 'after-mark', label: 'After Mark leaves (S3+)', blurb: 'Once Ben & Chris arrive and the ensemble locks in', pick: ep => ep.season >= 3 },
+    ],
+  },
+  // Original Fox run (S1–3, 2003–06) vs the Netflix revival (S4 in 2013, S5 in 2018–19).
+  'arrested-development': {
+    eras: { 1: 'Fox', 2: 'Fox', 3: 'Fox', 4: 'Netflix', 5: 'Netflix' },
+    signature: 'netflix',
+    storyPresets: [
+      { id: 'fox', label: 'Original Fox run (S1–3)', blurb: 'The original 2003–06 run', pick: ep => ep.season <= 3 },
+      { id: 'netflix', label: 'Netflix revival (S4–5)', blurb: 'The 2013 + 2018 revival seasons fans argue about', pick: ep => ep.season >= 4 },
+    ],
+  },
+  // Schitt's Creek is popularly remembered as a "glow-up" — but the joke scores
+  // are remarkably flat across all six seasons, which is itself the finding.
+  'schitts-creek': {
+    signature: 'final',
+    storyPresets: [
+      { id: 'skip-s1', label: 'Skip Season 1', blurb: 'Drop the first season — does the famous glow-up show up in the scores?', pick: ep => ep.season !== 1 },
+      { id: 'early', label: 'Early seasons (S1–3)', blurb: 'Before the Emmy sweep', pick: ep => ep.season <= 3 },
+      { id: 'final', label: 'Final seasons (S4–6)', blurb: 'The award-winning later era', pick: ep => ep.season >= 4 },
+    ],
+  },
 };
 
 export function getExplorerConfig(slug: string): ExplorerConfig {
