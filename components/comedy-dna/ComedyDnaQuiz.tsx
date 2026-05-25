@@ -265,8 +265,8 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
     e.preventDefault();
     const input = (e.currentTarget.elements.namedItem('email') as HTMLInputElement);
     const v = input?.value.trim(); if (!v) return;
-    setEmailValue(v); trackEvent('cdna_email');
-    try { await fetch('/api/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: v }) }); } catch { /* non-blocking */ }
+    setEmailValue(v); trackEvent('cdna_email', { archetype: result?.best.slug });
+    try { await fetch('/api/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: v, archetype: result?.best.slug, source: 'comedy-dna' }) }); } catch { /* non-blocking */ }
     setEmailDone(true);
   }
 

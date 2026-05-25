@@ -1,11 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req: NextRequest) {
-  const { email } = await req.json();
+  const { email, archetype, source } = await req.json();
 
   if (!email || !email.includes('@')) {
     return NextResponse.json({ error: 'Valid email required' }, { status: 400 });
   }
+
+  // Sanitize the optional Comedy DNA archetype slug so it's safe as a UTM value.
+  const archetypeTag = typeof archetype === 'string' ? archetype.replace(/[^a-z0-9-]/gi, '').slice(0, 40) : '';
 
   // Beehiiv API integration
   // Set BEEHIIV_API_KEY and BEEHIIV_PUBLICATION_ID in your Vercel env vars
@@ -14,7 +17,7 @@ export async function POST(req: NextRequest) {
 
   if (!apiKey || !pubId) {
     // Fallback: just log the email (no Beehiiv configured yet)
-    console.log(`[Newsletter signup] ${email}`);
+    console.log(`[Newsletter signup] ${email}${archetypeTag ? ` (archetype: ${archetypeTag})` : ''}`);
     return NextResponse.json({ success: true, message: 'Subscribed (local mode)' });
   }
 
@@ -31,8 +34,12 @@ export async function POST(req: NextRequest) {
           email,
           reactivate_existing: true,
           send_welcome_email: true,
-          utm_source: 'website',
-          utm_medium: 'footer_signup',
+          // archetype signups are tagged via UTM so the list can be segmented in
+          // Beehiiv (e.g. send Wordsmiths the Seinfeld/AD deep dives) — no custom
+          // field setup required.
+          utm_source: (typeof source === 'string' && source) ? source.replace(/[^a-z0-9-]/gi, '').slice(0, 40) : 'website',
+          utm_medium: archetypeTag ? 'comedy_dna' : 'footer_signup',
+          ...(archetypeTag ? { utm_campaign: archetypeTag } : {}),
         }),
       }
     );
