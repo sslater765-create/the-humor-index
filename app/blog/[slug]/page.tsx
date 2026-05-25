@@ -20,6 +20,51 @@ const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'humor-index-explorer': {
+    title: "We Re-Cut Five Sitcoms by the Numbers — and Busted Two Fan Theories",
+    description: "Our new Humor Index Explorer lets you rebuild any sitcom — drop a season, keep an era — and see how funny that cut scores. We tested five famous fan theories: the Arrested Development revival really was worse, but The Office didn't fall off after Steve Carell, and the Schitt's Creek glow-up doesn't show up in the jokes.",
+    date: '2026-05-25',
+    category: 'Analysis',
+    content: `
+Every comedy fan has a theory about where their favorite show went wrong — or where it was secretly at its best. *The revival doesn't count. It was never the same after that actor left. Just skip the first season.*
+
+We built something that lets you test those theories instead of just arguing about them. The new [Humor Index Explorer](/explore) lets you rebuild any sitcom we've scored — drop a season, keep a hot streak, isolate an era — and instantly see the average Humor Index of that exact cut, with a confidence interval so you know how seriously to take it.
+
+We pointed it at five of the most-argued-about shows on the site. Three famous fan theories held up. Two didn't. (Every figure below is the average of the per-episode scores in that cut, on our 0–100 scale.)
+
+## Did The Office really fall off after Steve Carell left?
+
+**No — at least not on joke quality.** The two seasons made after Steve Carell's exit (Seasons 8–9) average **79.1**, slightly *above* the full-series average of 78.2. The real slump came earlier: Seasons 6–7, while Carell was still there, are the weakest stretch of the show. The "it died when Michael left" consensus is, by the numbers, aimed at the wrong target. [Build the cut yourself →](/shows/the-office/explore)
+
+## Was the Arrested Development revival actually worse?
+
+**Yes — this is the one the data fully backs.** The original Fox run (Seasons 1–3) averages **83.5**. The Netflix revival (Seasons 4–5) drops to **79.3** — a 4+ point fall, the biggest era gap of any show we tested. The revival truthers were right. [See the split →](/shows/arrested-development/explore)
+
+## How much does Community's "gas-leak year" really hurt the show?
+
+**Less than you'd think.** Season 4 — made after Dan Harmon was fired as showrunner — is a genuine low point at **75.4**. But delete it from the series entirely and the average barely moves: 78.5 to **78.9**. Thirteen weak episodes can't sink 110 good ones. The gas-leak year is real; its drag on the show as a whole is mostly a feeling. [Drop Season 4 →](/shows/community/explore)
+
+## Can you see Larry David leave Seinfeld in the jokes?
+
+**Faintly, yes.** With co-creator Larry David (Seasons 1–7): **77.6**. The two seasons after he left (8–9): **76.5**. It's a real, measurable showrunner fingerprint — about a quarter the size of the Harmon swing on Community, but it's there. [Compare the eras →](/shows/seinfeld/explore)
+
+## Did Schitt's Creek really "glow up"?
+
+**Not in the jokes.** The show is beloved for getting better every year — but Season 1 scores **78.1**, and Season 6 scores… **78.1**. Across all six seasons it's the flattest, most consistent show we've measured. The glow-up was the characters and the warmth, not the gag rate. [See for yourself →](/shows/schitts-creek/explore)
+
+## Try it yourself
+
+Every show we've scored has its own explorer. Build a cut of Community that beats peak Seinfeld. Find the exact run where your favorite show was at its best. Drop the season you always skip and see if the numbers agree with you. Start at [the Explorer hub](/explore).
+
+## How it works (and what to trust)
+
+The Explorer averages the per-episode Humor Index of whatever you select and shows a 95% confidence interval next to it. Pick a handful of episodes and that interval gets wide fast — episode-level scores are noisy, and we flag it on screen when a cut is too small to lean on. Whole-season and era cuts pool dozens of episodes, so that's where the numbers are trustworthy — which happens to be exactly where the fan theories live. As always: this is one AI's judgment applied consistently, not the last word.
+
+---
+
+*Explore any show at [thehumorindex.com/explore](/explore). Full methodology at [our methodology page](/methodology). Questions: hello@thehumorindex.com.*
+`,
+  },
   'community-gas-leak-year': {
     title: "You Can See Exactly When Dan Harmon Left Community",
     description: "We scored all 110 episodes of Community. It lands at Humor Index 77.9 — fifth of nine shows. But the real story is the season curve: it tracks the show's behind-the-scenes history almost to the decimal. The gas-leak year is real, the Harmon rebound is real, and the season everyone defends is quietly the weakest.",

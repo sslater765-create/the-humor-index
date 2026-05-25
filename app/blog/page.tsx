@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'humor-index-explorer',
+    title: "We Re-Cut Five Sitcoms by the Numbers — and Busted Two Fan Theories",
+    description: "Our new Explorer lets you rebuild any sitcom and see how funny that cut scores. The Arrested Development revival really was worse — but The Office didn't fall off after Steve Carell, and the Schitt's Creek glow-up doesn't show up in the jokes.",
+    date: '2026-05-25',
+    category: 'Analysis',
+    readTime: '5 min read',
+    stat: "5",
+    statLabel: "fan theories, tested",
+  },
+  {
     slug: 'community-gas-leak-year',
     title: "You Can See Exactly When Dan Harmon Left Community",
     description: "We scored all 110 episodes of Community. It lands at Humor Index 77.9 — fifth of nine shows. But the real story is the season curve: it tracks the show's behind-the-scenes history almost to the decimal. The gas-leak year is real, the Harmon rebound is real, and the season everyone defends is quietly the weakest.",
