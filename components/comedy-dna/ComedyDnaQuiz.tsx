@@ -8,6 +8,7 @@ import {
   rankArchetypes, rankShows, whyText, dot, axisValue, wcos,
   type QuizData, type QuizJoke, type ShowFingerprint,
 } from '@/lib/comedyDna';
+import { MemeScene } from './MemeScene';
 
 const N_BASE = 18, N_MAX = 28;
 const SHOW_URL = (slug: string) => `https://thehumorindex.com/shows/${slug}/`;
@@ -369,14 +370,27 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {(['a', 'b'] as const).map((side, idx) => {
               const j = pairs[cur][side]; const chosen = picks[cur]?.winner === side;
+              const st = showStyle(j.slug);
               return (
                 <button key={side} onClick={() => choose(side)}
-                  aria-label={`Option ${idx + 1}: ${j.text}`}
-                  className={`relative text-center rounded-2xl p-7 min-h-[200px] flex items-center justify-center bg-brand-surface border-[1.5px] transition shadow-lg hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold ${chosen ? 'border-brand-teal' : 'border-brand-border hover:border-brand-gold'}`}>
-                  <span className="absolute top-3 left-3.5 w-[22px] h-[22px] rounded-md border-[1.5px] border-brand-border text-brand-text-muted text-xs font-extrabold flex items-center justify-center">{idx + 1}</span>
-                  <span className="text-lg md:text-[1.4rem] font-semibold leading-snug">
-                    <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
-                  </span>
+                  aria-label={`Option ${idx + 1}: "${j.text}" — ${j.speaker ? j.speaker + ', ' : ''}${j.show ?? ''}`}
+                  className={`relative text-left rounded-2xl overflow-hidden flex flex-col bg-brand-surface border-[1.5px] transition shadow-lg hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold ${chosen ? 'border-brand-teal' : 'border-brand-border hover:border-brand-gold'}`}>
+                  <div className="relative">
+                    <MemeScene scene={j.scene} color={st.c} mono={st.m} className="block w-full h-[116px]" />
+                    <span className="absolute top-2.5 left-2.5 w-[22px] h-[22px] rounded-md bg-black/45 backdrop-blur-sm border border-white/25 text-white text-xs font-extrabold flex items-center justify-center">{idx + 1}</span>
+                    {j.speaker && (
+                      <span className="absolute bottom-2 right-2.5 flex items-center gap-1.5 bg-black/55 backdrop-blur-sm border border-white/15 rounded-full pl-1 pr-2.5 py-1 text-white text-xs font-semibold">
+                        <span className="w-[18px] h-[18px] rounded-full flex items-center justify-center text-[9px] font-black" style={{ background: st.c, color: tileText(st.c) }}>{st.m}</span>
+                        {j.speaker}
+                      </span>
+                    )}
+                  </div>
+                  <div className="p-4 sm:p-5 flex flex-col gap-2 flex-1">
+                    <span className="text-[11px] font-bold uppercase tracking-wide text-brand-text-muted">{j.show}{j.ep ? ` · ${j.ep}` : ''}</span>
+                    <span className="text-base md:text-lg font-semibold leading-snug">
+                      <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
+                    </span>
+                  </div>
                 </button>
               );
             })}
