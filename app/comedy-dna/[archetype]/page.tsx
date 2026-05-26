@@ -4,8 +4,18 @@ import { notFound } from 'next/navigation';
 import { getComedyDnaQuiz, getComedyDnaFingerprints } from '@/lib/data';
 import {
   ARCHES, archetypeBySlug, archetypeExemplars, archetypeExampleJokes,
-  emblemSVG, EMBLEMS,
+  emblemSVG, EMBLEMS, DNA_TYPES, normalizeFingerprints,
 } from '@/lib/comedyDna';
+
+// Human-readable labels for the 18 joke types — used in the quantified stats panel.
+const TYPE_LABELS: Record<string, string> = {
+  character_comedy: 'Character-driven', escalation: 'Escalation', absurdist: 'Absurdism',
+  cringe_discomfort: 'Cringe', observational: 'Observational', irony_sarcasm: 'Irony & sarcasm',
+  setup_punchline: 'Setup–punchline', deadpan_understatement: 'Deadpan', wordplay_pun: 'Wordplay & puns',
+  dark_subversive: 'Dark & subversive', callback: 'Callbacks', misdirection: 'Misdirection',
+  reaction_beat: 'Reaction beats', visual_gag: 'Visual gags', physical_slapstick: 'Slapstick',
+  meta_self_referential: 'Meta', running_gag: 'Running gags', awkward_silence: 'Awkward silence',
+};
 
 export function generateStaticParams() {
   return ARCHES.map(a => ({ archetype: a.slug }));
@@ -33,6 +43,26 @@ export default async function ArchetypePage({ params }: { params: { archetype: s
   const [quiz, fingerprints] = await Promise.all([getComedyDnaQuiz(), getComedyDnaFingerprints()]);
   const exemplar = archetypeExemplars(fingerprints).find(e => e.arche.slug === arche.slug);
   const jokes = archetypeExampleJokes(arche, quiz.pool, 3);
+
+  // Quantified stats: how much this type leans into its top joke types vs. the wider pool baseline.
+  // Compares share-of-joke-moments (L1-normalized) so the units match the show fingerprint.
+  const normFps = normalizeFingerprints(fingerprints);
+  const exemplarFp = exemplar ? normFps.find(f => f.slug === exemplar.slug)?.fp ?? null : null;
+  const poolApp = DNA_TYPES.map((_, i) => quiz.pool.reduce((s, j) => s + (j.vec[i] || 0), 0));
+  const poolTotal = poolApp.reduce((a, b) => a + b, 0);
+  const poolShare = poolApp.map(n => (poolTotal ? n / poolTotal : 0));
+  const top3 = (Object.entries(arche.weights) as [string, number | undefined][])
+    .sort((a, b) => (b[1] || 0) - (a[1] || 0))
+    .slice(0, 3)
+    .map(([type]) => {
+      const i = DNA_TYPES.indexOf(type as (typeof DNA_TYPES)[number]);
+      if (i < 0) return null;
+      const ex = exemplarFp ? exemplarFp[i] : 0;
+      const base = poolShare[i];
+      const lift = base > 0 ? ex / base : 0;
+      return { type, label: TYPE_LABELS[type] || type, exShare: ex, baseShare: base, lift };
+    })
+    .filter((x): x is { type: string; label: string; exShare: number; baseShare: number; lift: number } => !!x);
 
   const faqLd = {
     '@context': 'https://schema.org',
@@ -75,6 +105,32 @@ export default async function ArchetypePage({ params }: { params: { archetype: s
           <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">Most exemplified by</p>
           <p className="text-brand-text-secondary">The sitcom whose joke mix matches {arche.name} most closely is{' '}
             <Link href={`/shows/${exemplar.slug}/`} className="text-brand-gold hover:underline font-semibold">{exemplar.name}</Link>.</p>
+        </div>
+      )}
+
+      {top3.length > 0 && exemplar?.name && (
+        <div className="bg-brand-card border border-brand-border rounded-xl p-5 mb-8">
+          <p className="text-xs uppercase tracking-widest text-brand-gold mb-3">By the numbers</p>
+          <p className="text-sm text-brand-text-secondary mb-4">How concentrated this archetype&apos;s signature joke types are in <b className="text-brand-text-primary">{exemplar.name}</b>, vs the baseline share across every joke we&apos;ve scored.</p>
+          <div className="space-y-3.5">
+            {top3.map(s => (
+              <div key={s.type}>
+                <div className="flex justify-between items-baseline mb-1.5 text-sm">
+                  <span className="font-bold">{s.label}</span>
+                  <span className="text-brand-text-secondary tabular-nums">
+                    <b className="text-brand-gold">{(s.exShare * 100).toFixed(0)}%</b>
+                    <span className="mx-1.5 text-brand-text-muted">·</span>
+                    {s.lift >= 1.05 ? `${s.lift.toFixed(1)}× the baseline` : s.lift <= 0.95 && s.lift > 0 ? `${(1 / s.lift).toFixed(1)}× below baseline` : 'about average'}
+                  </span>
+                </div>
+                <div className="relative h-2 bg-brand-border rounded-full overflow-hidden" aria-hidden>
+                  <div className="absolute inset-y-0 left-0 bg-brand-text-muted/40" style={{ width: `${Math.min(100, s.baseShare * 350)}%` }} />
+                  <div className="absolute inset-y-0 left-0 bg-brand-gold" style={{ width: `${Math.min(100, s.exShare * 350)}%` }} />
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-[11px] text-brand-text-muted mt-3.5"><span className="inline-block w-2 h-2 rounded-full bg-brand-gold mr-1.5 align-middle" />Share in {exemplar.name}  <span className="inline-block w-2 h-2 rounded-full bg-brand-text-muted/40 mx-1.5 ml-3 align-middle" />Baseline across all jokes</p>
         </div>
       )}
 
