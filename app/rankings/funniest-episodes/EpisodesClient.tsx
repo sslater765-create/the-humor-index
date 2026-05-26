@@ -11,6 +11,7 @@ const FORMAT_LABELS: Record<'all' | ShowFormat, string> = {
   multi_camera_live: 'Multi-cam (live)',
   multi_camera_sweetened: 'Multi-cam (laugh track)',
   hybrid: 'Hybrid',
+  animation: 'Animation',
 };
 
 export interface RankedEpisode {
