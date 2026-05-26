@@ -10,6 +10,7 @@ const FORMAT_COLORS: Record<ShowFormat, string> = {
   multi_camera_live: 'bg-brand-blue/20 text-brand-blue border-brand-blue/30',
   multi_camera_sweetened: 'bg-brand-purple/20 text-brand-purple border-brand-purple/30',
   hybrid: 'bg-brand-coral/20 text-brand-coral border-brand-coral/30',
+  animation: 'bg-brand-gold/20 text-brand-gold border-brand-gold/30',
 };
 
 export default function FormatBadge({ format }: Props) {
