@@ -44,7 +44,7 @@ const PROP_SLOTS: Record<string, [{ x: number; y: number }, { x: number; y: numb
 // ---- bespoke per-joke scenes (the iconic ones whose ART IS THE JOKE) ----
 // When the joke's id matches, this overrides the scene template + props entirely.
 // Add new bespoke scenes by joke id; keep the visual centered on the gag itself.
-function bespokeSVG(jokeId: number, color: string, mid: string, dark: string, _light: string): ReactNode {
+function bespokeSVG(jokeId: number, color: string, mid: string, dark: string): ReactNode {
   switch (jokeId) {
     // Seinfeld — Soup Nazi: "No soup for you! Come back, one year."
     case 18628: return (<>
@@ -503,7 +503,7 @@ export function MemeScene({ scene = 'default', color, mono, props: jokeProps, jo
   const mid = shade(color, 0.6), dark = shade(color, 0.26), light = shade(color, 1.65);
 
   // Bespoke scene overrides the template entirely (and skips prop overlay).
-  const bespoke = jokeId != null ? bespokeSVG(jokeId, color, mid, dark, light) : null;
+  const bespoke = jokeId != null ? bespokeSVG(jokeId, color, mid, dark) : null;
 
   const inner = bespoke ?? (() => {
     switch (scene) {
