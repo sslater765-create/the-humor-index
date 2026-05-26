@@ -22,8 +22,7 @@ const SORT_OPTIONS: { key: SortKey; label: string }[] = [
 // (Some shows are missing ci_95 fields until the pipeline backfills them.)
 function ciText(s: ShowScore): string | null {
   if (s.ci_95_low == null || s.ci_95_high == null) return null;
-  return `95% CI ${s.ci_95_low.toFixed(1)}–${s.ci_95_high.toFixed(1)}`;
-}
+      return null;}
 
 export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
   const [sortKey, setSortKey] = useState<SortKey>('humor_index');
