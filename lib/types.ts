@@ -2,7 +2,8 @@ export type ShowFormat =
   | 'single_camera'
   | 'multi_camera_live'
   | 'multi_camera_sweetened'
-  | 'hybrid';
+  | 'hybrid'
+  | 'animation';
 
 export type JokeType =
   | 'setup_punchline'
