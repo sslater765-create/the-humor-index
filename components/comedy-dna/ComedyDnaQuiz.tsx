@@ -494,7 +494,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                       props={j.props}
                       muted={!revealing}
                       ariaLabel={sceneLabel}
-                      className={`block w-full transition-all duration-300 motion-reduce:transition-none ${revealing ? 'h-[160px]' : 'h-[124px]'}`} />
+                      className={`block w-full transition-all duration-300 motion-reduce:transition-none ${revealing ? 'h-[240px]' : 'h-[200px]'}`} />
 
                     {/* Option number chip during vote; chosen badge during reveal */}
                     {!revealing && (
@@ -519,7 +519,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                   {/* Body: VOTE shows only the joke (vertical-centered, big). REVEAL shows show + ep + why-it-lands. */}
                   <div className="px-4 sm:px-5 py-4 flex flex-col flex-1 justify-center min-h-[150px]">
                     {!revealing ? (
-                      <p className="text-[17px] md:text-[19px] font-semibold leading-snug">
+                      <p className="text-[15px] md:text-[16.5px] font-semibold leading-snug">
                         <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
                       </p>
                     ) : (
