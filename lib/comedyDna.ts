@@ -15,7 +15,7 @@ export const DNA_TYPES: JokeType[] = [
 const N = DNA_TYPES.length;
 const TI: Record<string, number> = Object.fromEntries(DNA_TYPES.map((t, i) => [t, i]));
 
-export interface QuizJoke { id: number; text: string; slug: string; show?: string; vec: number[]; quot?: number; speaker?: string; ep?: string; etitle?: string; scene?: string; }
+export interface QuizJoke { id: number; text: string; slug: string; show?: string; vec: number[]; quot?: number; speaker?: string; ep?: string; etitle?: string; scene?: string; props?: string[]; why?: string; }
 export interface QuizData { types: JokeType[]; pool: QuizJoke[]; reco: QuizJoke[]; }
 export interface ShowFingerprint { slug: string; name: string; fp: number[]; n: number; }
 

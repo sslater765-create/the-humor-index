@@ -59,6 +59,10 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
   const [cur, setCur] = useState(0);
   const [picks, setPicks] = useState<Pick[]>([]);
   const [revealed, setRevealed] = useState(false);
+  // Reveal beat: after a pick, hold for ~2.4s on the reveal card (episode + why) before advancing.
+  // A second click/key skips the dwell. Driven by the chosen card's transition.
+  const [revealing, setRevealing] = useState(false);
+  const revealTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [challenger, setChallenger] = useState<ResultPayload | null>(null);
   const [emailDone, setEmailDone] = useState(false);
   const [emailValue, setEmailValue] = useState('');
@@ -109,7 +113,8 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
 
   const start = useCallback(() => {
     const ps = buildPairs(cleanMode);
-    setPairs(ps); setTotalRounds(Math.min(N_BASE, ps.length)); setCur(0); setPicks([]); setRevealed(false);
+    setPairs(ps); setTotalRounds(Math.min(N_BASE, ps.length)); setCur(0); setPicks([]); setRevealed(false); setRevealing(false);
+    if (revealTimer.current) { clearTimeout(revealTimer.current); revealTimer.current = null; }
     setScreen('battle'); trackEvent('cdna_start', { clean: cleanMode });
   }, [buildPairs, cleanMode]);
 
@@ -120,32 +125,56 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
     } else setCur(nextCur);
   }, [totalRounds, pairs.length]);
 
+  const advanceClearReveal = useCallback((nextCur: number) => {
+    if (revealTimer.current) { clearTimeout(revealTimer.current); revealTimer.current = null; }
+    setRevealing(false);
+    advance(nextCur);
+  }, [advance]);
+
   const choose = useCallback((side: 'a' | 'b') => {
+    if (revealing) { advanceClearReveal(cur + 1); return; } // tap-through during reveal
     const R = pairs[cur]; if (!R) return;
     setPicks(prev => { const next = [...prev]; next[cur] = { a: R.a, b: R.b, winner: side }; return next; });
     trackEvent('cdna_pick', { round: cur + 1, winner: (side === 'a' ? R.a : R.b).slug });
-    setTimeout(() => advance(cur + 1), 180);
-  }, [pairs, cur, advance]);
+    setRevealing(true);
+    revealTimer.current = setTimeout(() => advanceClearReveal(cur + 1), 2400);
+  }, [pairs, cur, revealing, advanceClearReveal]);
 
   const skip = useCallback(() => {
+    if (revealing) { advanceClearReveal(cur + 1); return; }
     const R = pairs[cur]; if (!R) return;
     setPicks(prev => { const next = [...prev]; next[cur] = { a: R.a, b: R.b, winner: null }; return next; });
     advance(cur + 1);
-  }, [pairs, cur, advance]);
+  }, [pairs, cur, revealing, advance, advanceClearReveal]);
 
-  const back = useCallback(() => { if (cur === 0) return; setPicks(prev => { const n = [...prev]; n[cur - 1] = undefined as unknown as Pick; return n; }); setCur(cur - 1); }, [cur]);
+  const back = useCallback(() => {
+    if (revealTimer.current) { clearTimeout(revealTimer.current); revealTimer.current = null; }
+    setRevealing(false);
+    if (cur === 0) return;
+    setPicks(prev => { const n = [...prev]; n[cur - 1] = undefined as unknown as Pick; return n; });
+    setCur(cur - 1);
+  }, [cur]);
+
+  // Clear any pending reveal timer on unmount.
+  useEffect(() => () => { if (revealTimer.current) clearTimeout(revealTimer.current); }, []);
 
   // keyboard
   useEffect(() => {
     if (screen !== 'battle') return;
     const h = (e: KeyboardEvent) => {
+      if (revealing) {
+        if (e.key === ' ' || e.key === 'Enter' || e.key === 'ArrowRight' || e.key === '1' || e.key === '2') {
+          e.preventDefault(); advanceClearReveal(cur + 1);
+        }
+        return;
+      }
       if (e.key === '1' || e.key === 'ArrowLeft') choose('a');
       else if (e.key === '2' || e.key === 'ArrowRight') choose('b');
       else if (e.key === 'Backspace') { e.preventDefault(); back(); }
     };
     window.addEventListener('keydown', h);
     return () => window.removeEventListener('keydown', h);
-  }, [screen, choose, back]);
+  }, [screen, choose, back, revealing, cur, advanceClearReveal]);
 
   // ---- results derivations ----
   const result = useMemo(() => {
@@ -363,21 +392,76 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
             <div className="flex-1 h-1.5 rounded-full bg-brand-border overflow-hidden"><div className="h-full bg-brand-gold transition-all duration-300" style={{ width: `${(cur / totalRounds) * 100}%` }} /></div>
             <span className="text-sm font-extrabold tabular-nums whitespace-nowrap">{cur + 1} / {totalRounds}</span>
           </div>
-          <div className="text-center mb-5">
-            <span className={`${kicker} block mb-1.5`}>Round {cur + 1}</span>
-            <h2 className="text-2xl md:text-3xl font-extrabold">Which one&apos;s funnier to you?</h2>
+
+          {/* Mid-battle archetype peek every 6 picks — light checkpoint so the result feels like it's building. */}
+          {!revealing && totalPicks > 0 && totalPicks % 6 === 0 && (() => {
+            const lead = rankArchetypes(pref, weights)[0]?.arche; if (!lead) return null;
+            const li = ARCHES.indexOf(lead);
+            return (
+              <div className="mb-5 bg-brand-card border border-brand-border rounded-xl px-4 py-3 flex items-center gap-3">
+                <Emblem i={li} size={40} />
+                <div className="flex-1 min-w-0">
+                  <span className="text-[10px] font-bold uppercase tracking-wide text-brand-text-muted">{totalPicks} picks in</span>
+                  <p className="text-[14px] mt-0.5 leading-snug">So far you&apos;re leaning <b style={{ color: EMBLEMS[li]?.c }}>{lead.name}</b></p>
+                </div>
+              </div>
+            );
+          })()}
+
+          <div className="text-center mb-5 min-h-[70px]">
+            {!revealing ? (
+              <>
+                <span className={`${kicker} block mb-1.5`}>Round {cur + 1}</span>
+                <h2 className="text-2xl md:text-3xl font-extrabold">Which one&apos;s funnier to you?</h2>
+              </>
+            ) : (
+              <>
+                <span className={`${kicker} block mb-1.5 text-brand-teal`}>Locked in</span>
+                <h2 className="text-xl md:text-2xl font-extrabold">Tap any card to continue &rarr;</h2>
+              </>
+            )}
           </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {(['a', 'b'] as const).map((side, idx) => {
-              const j = pairs[cur][side]; const chosen = picks[cur]?.winner === side;
+              const j = pairs[cur][side];
+              const chosen = picks[cur]?.winner === side;
+              const isLoser = revealing && !chosen;
               const st = showStyle(j.slug);
+              const sceneLabel = `${j.scene || 'scene'} backdrop · ${j.show ?? ''}`;
               return (
                 <button key={side} onClick={() => choose(side)}
-                  aria-label={`Option ${idx + 1}: "${j.text}" — ${j.speaker ? j.speaker + ', ' : ''}${j.show ?? ''}`}
-                  className={`relative text-left rounded-2xl overflow-hidden flex flex-col bg-brand-surface border-[1.5px] transition shadow-lg hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold ${chosen ? 'border-brand-teal' : 'border-brand-border hover:border-brand-gold'}`}>
+                  aria-label={revealing
+                    ? `${chosen ? 'Your pick' : 'Other option'}: ${j.text}${j.show ? ` — ${j.show}` : ''}${j.ep ? `, ${j.ep}` : ''}`
+                    : `Option ${idx + 1}: "${j.text}"${j.speaker ? `, said by ${j.speaker}` : ''}`}
+                  className={`group relative text-left rounded-2xl overflow-hidden flex flex-col bg-brand-surface border-[1.5px] shadow-lg
+                    transition-all duration-300 ease-out motion-reduce:transition-none
+                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold
+                    ${chosen ? 'border-brand-teal shadow-[0_0_0_2px_rgba(29,158,117,.25)]' : isLoser ? 'border-brand-border opacity-55' : 'border-brand-border hover:border-brand-gold motion-safe:hover:-translate-y-0.5'}`}>
+
+                  {/* Scene art: smaller + muted during the vote (joke wins the eye); larger + full-color on reveal. */}
                   <div className="relative">
-                    <MemeScene scene={j.scene} color={st.c} mono={st.m} className="block w-full h-[116px]" />
-                    <span className="absolute top-2.5 left-2.5 w-[22px] h-[22px] rounded-md bg-black/45 backdrop-blur-sm border border-white/25 text-white text-xs font-extrabold flex items-center justify-center">{idx + 1}</span>
+                    <MemeScene
+                      scene={j.scene}
+                      color={st.c}
+                      mono={st.m}
+                      props={j.props}
+                      muted={!revealing}
+                      ariaLabel={sceneLabel}
+                      className={`block w-full transition-all duration-300 motion-reduce:transition-none ${revealing ? 'h-[110px]' : 'h-[80px]'}`} />
+
+                    {/* Option number chip during vote; chosen badge during reveal */}
+                    {!revealing && (
+                      <span className="absolute top-2 left-2.5 w-[22px] h-[22px] rounded-md bg-black/55 backdrop-blur-sm border border-white/25 text-white text-xs font-extrabold flex items-center justify-center">{idx + 1}</span>
+                    )}
+                    {chosen && (
+                      <span className="absolute top-2 left-2.5 inline-flex items-center gap-1 px-2 h-[22px] rounded-md bg-brand-teal text-white text-[10px] font-extrabold tracking-wide uppercase">
+                        <svg width="10" height="10" viewBox="0 0 12 12" aria-hidden><path d="M1 6l3 3 7-7" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                        Your pick
+                      </span>
+                    )}
+
+                    {/* Speaker chip — always visible (character context aids comprehension without revealing the show) */}
                     {j.speaker && (
                       <span className="absolute bottom-2 right-2.5 flex items-center gap-1.5 bg-black/55 backdrop-blur-sm border border-white/15 rounded-full pl-1 pr-2.5 py-1 text-white text-xs font-semibold">
                         <span className="w-[18px] h-[18px] rounded-full flex items-center justify-center text-[9px] font-black" style={{ background: st.c, color: tileText(st.c) }}>{st.m}</span>
@@ -385,21 +469,54 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                       </span>
                     )}
                   </div>
-                  <div className="p-4 sm:p-5 flex flex-col gap-2 flex-1">
-                    <span className="text-[11px] font-bold uppercase tracking-wide text-brand-text-muted">{j.show}{j.ep ? ` · ${j.ep}` : ''}</span>
-                    <span className="text-base md:text-lg font-semibold leading-snug">
-                      <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
-                    </span>
+
+                  {/* Body: VOTE shows only the joke (vertical-centered, big). REVEAL shows show + ep + why-it-lands. */}
+                  <div className="px-4 sm:px-5 py-4 flex flex-col flex-1 justify-center min-h-[150px]">
+                    {!revealing ? (
+                      <p className="text-[17px] md:text-[19px] font-semibold leading-snug">
+                        <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
+                      </p>
+                    ) : (
+                      <div className="flex flex-col gap-2">
+                        <span className="text-[10.5px] font-bold uppercase tracking-wide text-brand-text-muted">
+                          {j.show}{j.ep ? ` · ${j.ep}` : ''}{j.etitle ? ` · “${j.etitle}”` : ''}
+                        </span>
+                        <p className="text-[14px] md:text-[15px] font-semibold leading-snug line-clamp-3">
+                          <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
+                        </p>
+                        {chosen && j.why ? (
+                          <div className="mt-1 pt-2 border-t border-brand-border">
+                            <span className="text-[10px] font-bold uppercase tracking-wide text-brand-teal block mb-1">Why it lands</span>
+                            <p className="text-[12.5px] text-brand-text-secondary leading-relaxed">{j.why}</p>
+                          </div>
+                        ) : null}
+                      </div>
+                    )}
                   </div>
                 </button>
               );
             })}
           </div>
-          <div className="flex items-center justify-center my-3.5">
-            <svg width={48} height={48} viewBox="0 0 64 64" aria-hidden><rect x="14" y="14" width="36" height="36" rx="9" transform="rotate(45 32 32)" fill="#E8B931" /><text x="32" y="38" textAnchor="middle" fontSize="17" fontWeight="900" fill="#0F0F0F" fontFamily="Inter,sans-serif">VS</text></svg>
-          </div>
-          <div className="text-center"><button className="text-brand-text-secondary font-semibold py-2.5" onClick={skip}>Too close to call — skip &rarr;</button></div>
-          <p className="text-center text-brand-text-muted text-sm mt-2.5" aria-hidden>Tip: press <b>1</b> or <b>2</b> (or &larr; / &rarr;) to choose</p>
+
+          {/* Between cards: VS + promoted skip — only during vote */}
+          {!revealing && (
+            <div className="flex flex-col items-center my-5 gap-3">
+              <div className="flex items-center gap-3 w-full max-w-xs">
+                <span className="h-px flex-1 bg-brand-border" />
+                <svg width={40} height={40} viewBox="0 0 64 64" aria-hidden><rect x="14" y="14" width="36" height="36" rx="9" transform="rotate(45 32 32)" fill="#E8B931" /><text x="32" y="38" textAnchor="middle" fontSize="17" fontWeight="900" fill="#0F0F0F" fontFamily="Inter,sans-serif">VS</text></svg>
+                <span className="h-px flex-1 bg-brand-border" />
+              </div>
+              <button onClick={skip}
+                className="text-brand-text-secondary font-semibold text-[13.5px] hover:text-brand-text-primary px-3.5 py-2 rounded-lg border border-brand-border hover:border-brand-text-muted transition">
+                Too close to call &mdash; skip &rarr;
+              </button>
+            </div>
+          )}
+
+          {/* Keyboard hint stays only during vote */}
+          {!revealing && (
+            <p className="text-center text-brand-text-muted text-sm mt-1.5" aria-hidden>Tip: press <b>1</b> or <b>2</b> (or &larr; / &rarr;) to choose</p>
+          )}
         </section>
       )}
 

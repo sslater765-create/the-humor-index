@@ -1,4 +1,5 @@
 import { useId } from 'react';
+import type { ReactNode } from 'react';
 
 /**
  * MemeScene — illustrated, face-free scene backdrops for Comedy DNA battle cards.
@@ -7,8 +8,10 @@ import { useId } from 'react';
  * iconic props + a spotlight, in a flat screen-print style. The dominant tint
  * is driven by the show's brand color so a card instantly reads as "from show X".
  *
- * Scene tags MUST stay in sync with the pipeline classifier in
- * build_comedy_dna_data.py (SCENES / SHOW_SCENE / SCENE_KW).
+ * Per-joke specificity is layered via `props` — up to two small decals
+ * (soup-bowl, chess-set, ring, microphone, etc.) overlaid at scene-specific
+ * slot positions. Prop names MUST stay in sync with PROP_KW in
+ * build_comedy_dna_data.py (pipeline).
  */
 
 const clamp = (x: number) => Math.max(0, Math.min(255, Math.round(x)));
@@ -25,9 +28,265 @@ function relLum(hex: string): number {
 }
 const inkFor = (hex: string) => (relLum(hex) > 0.45 ? '#16130f' : '#ffffff');
 
-export interface MemeSceneProps { scene?: string; color: string; mono: string; className?: string; }
+// ---- per-scene prop placement slots (x, y in 320x150 viewBox) ----
+const PROP_SLOTS: Record<string, [{ x: number; y: number }, { x: number; y: number }]> = {
+  office:    [{ x: 88,  y: 88 },  { x: 226, y: 86 }],
+  diner:     [{ x: 96,  y: 86 },  { x: 226, y: 88 }],
+  livingroom:[{ x: 92,  y: 86 },  { x: 240, y: 86 }],
+  courtroom: [{ x: 92,  y: 104 }, { x: 256, y: 104 }],
+  stage:     [{ x: 96,  y: 108 }, { x: 246, y: 108 }],
+  nursery:   [{ x: 90,  y: 108 }, { x: 256, y: 108 }],
+  bar:       [{ x: 96,  y: 92 },  { x: 220, y: 90 }],
+  outdoors:  [{ x: 96,  y: 124 }, { x: 232, y: 122 }],
+  default:   [{ x: 88,  y: 118 }, { x: 232, y: 118 }],
+};
 
-export function MemeScene({ scene = 'default', color, mono, className }: MemeSceneProps) {
+// ---- prop SVGs (centered at origin; ~40-50px footprint) ----
+function propSVG(name: string): ReactNode {
+  switch (name) {
+    case 'soup-bowl': return (<g>
+      <ellipse cx="0" cy="10" rx="22" ry="5" fill="#000" opacity="0.32" />
+      <path d="M-22 0 q22 -12 44 0 q-4 14 -22 16 q-18 -2 -22 -16z" fill="#dcd3c1" />
+      <ellipse cx="0" cy="0" rx="22" ry="5" fill="#b88a4a" />
+      <ellipse cx="-6" cy="-1" rx="6" ry="2" fill="#e6c182" />
+      <path d="M-8 -8 q3 -7 0 -14 M4 -8 q3 -7 0 -14" stroke="#dcd3c1" strokeWidth="2" fill="none" opacity="0.6" />
+    </g>);
+    case 'chess-set': return (<g>
+      <ellipse cx="0" cy="14" rx="22" ry="4" fill="#000" opacity="0.32" />
+      <rect x="-22" y="-4" width="44" height="18" fill="#d9c7a3" />
+      <g fill="#4a3522"><rect x="-22" y="-4" width="11" height="9" /><rect x="0" y="-4" width="11" height="9" /><rect x="-11" y="5" width="11" height="9" /><rect x="11" y="5" width="11" height="9" /></g>
+      <path d="M6 -22 q-1 -10 7 -12 q8 2 7 12z" fill="#f4f0e6" /><rect x="12" y="-30" width="2" height="6" fill="#f4f0e6" /><rect x="9" y="-28" width="8" height="2" fill="#f4f0e6" />
+      <g transform="translate(-12 -2) rotate(72)"><path d="M-7 16 q-1 -12 7 -14 q8 2 7 14z" fill="#3a1612" /></g>
+    </g>);
+    case 'ring': return (<g>
+      <ellipse cx="0" cy="7" rx="14" ry="3" fill="#000" opacity="0.3" />
+      <ellipse cx="0" cy="0" rx="14" ry="6" fill="none" stroke="#f0c75a" strokeWidth="4" />
+      <path d="M0 -10 l5 6 -5 5 -5 -5z" fill="#cfe7f0" />
+      <path d="M-2 -8 l3 3" stroke="#fff" strokeWidth="1.5" />
+    </g>);
+    case 'wedding-cake': return (<g>
+      <ellipse cx="0" cy="20" rx="22" ry="4" fill="#000" opacity="0.32" />
+      <rect x="-20" y="6" width="40" height="14" rx="2" fill="#f4f1ea" />
+      <rect x="-14" y="-6" width="28" height="12" rx="2" fill="#f4f1ea" />
+      <rect x="-9" y="-16" width="18" height="10" rx="2" fill="#f4f1ea" />
+      <path d="M-20 6 q20 -4 40 0 M-14 -6 q14 -3 28 0 M-9 -16 q9 -2 18 0" stroke="#e0d9c3" strokeWidth="1.5" fill="none" />
+      <g transform="translate(0 -20) scale(0.55)"><path d="M0 12 q-9 -8 -9 -16 q0 -6 6 -6 q3 0 3 4 q0 -4 3 -4 q6 0 6 6 q0 8 -9 16z" fill="#e24b4a" /></g>
+    </g>);
+    case 'trophy': return (<g>
+      <ellipse cx="0" cy="20" rx="14" ry="3" fill="#000" opacity="0.32" />
+      <rect x="-10" y="14" width="20" height="6" rx="1" fill="#caa030" />
+      <rect x="-4" y="6" width="8" height="9" fill="#caa030" />
+      <path d="M-10 -16 q10 -8 20 0 q-1 18 -10 22 q-9 -4 -10 -22z" fill="#ffd24a" />
+      <path d="M-10 -14 q-7 0 -7 6 q0 7 7 8" fill="none" stroke="#ffd24a" strokeWidth="3" />
+      <path d="M10 -14 q7 0 7 6 q0 7 -7 8" fill="none" stroke="#ffd24a" strokeWidth="3" />
+      <ellipse cx="0" cy="-12" rx="6" ry="2" fill="#fff" opacity="0.6" />
+    </g>);
+    case 'microphone': return (<g>
+      <ellipse cx="0" cy="16" rx="10" ry="3" fill="#000" opacity="0.32" />
+      <rect x="-3" y="-2" width="6" height="18" rx="2" fill="#7a7a83" />
+      <circle cx="0" cy="-10" r="9" fill="#2b2b33" />
+      <circle cx="0" cy="-10" r="6" fill="#4a4f58" />
+      <g stroke="#5a5f68" strokeWidth="1" fill="none"><line x1="-6" y1="-10" x2="6" y2="-10" /><line x1="0" y1="-16" x2="0" y2="-4" /></g>
+    </g>);
+    case 'top-hat': return (<g>
+      <ellipse cx="0" cy="14" rx="22" ry="4" fill="#000" opacity="0.35" />
+      <ellipse cx="0" cy="6" rx="22" ry="6" fill="#14141a" />
+      <rect x="-13" y="-22" width="26" height="28" rx="2" fill="#17171e" />
+      <rect x="-13" y="-4" width="26" height="6" fill="#7a2520" />
+      <ellipse cx="0" cy="-22" rx="13" ry="3" fill="#2c2c36" />
+      <ellipse cx="-6" cy="-19" rx="6" ry="1.5" fill="#fff" opacity="0.25" />
+    </g>);
+    case 'dove': return (<g>
+      <path d="M0 0 q-18 -14 -34 -3 q16 3 15 16 q12 -10 18 -3 q5 -14 1 -10z" fill="#f4f1ea" />
+      <path d="M-4 8 q-12 9 -22 6" stroke="#f4f1ea" strokeWidth="2" fill="none" opacity="0.6" />
+    </g>);
+    case 'gavel': return (<g transform="rotate(-22)">
+      <ellipse cx="-2" cy="32" rx="16" ry="3" fill="#000" opacity="0.32" />
+      <rect x="-22" y="-6" width="44" height="14" rx="5" fill="#c79a48" />
+      <rect x="-22" y="-6" width="11" height="14" rx="4" fill="#a87c38" />
+      <rect x="14" y="-6" width="10" height="14" rx="4" fill="#a87c38" />
+      <rect x="-2" y="8" width="7" height="24" rx="3" fill="#c79a48" />
+      <ellipse cx="0" cy="-6" rx="20" ry="2.5" fill="#fff" opacity="0.25" />
+    </g>);
+    case 'handcuffs': return (<g>
+      <ellipse cx="0" cy="14" rx="22" ry="3" fill="#000" opacity="0.3" />
+      <circle cx="-11" cy="0" r="10" fill="none" stroke="#a5acb5" strokeWidth="4" />
+      <circle cx="11" cy="0" r="10" fill="none" stroke="#a5acb5" strokeWidth="4" />
+      <rect x="-2" y="-2" width="4" height="4" fill="#a5acb5" />
+      <circle cx="-11" cy="0" r="2" fill="#2b2b33" />
+      <circle cx="11" cy="0" r="2" fill="#2b2b33" />
+    </g>);
+    case 'baseball-bat': return (<g transform="rotate(-30)">
+      <ellipse cx="-2" cy="6" rx="26" ry="2" fill="#000" opacity="0.3" />
+      <path d="M-26 -2 q22 -2 44 0 q0 4 -44 4z" fill="#caa06a" />
+      <rect x="22" y="-2" width="6" height="4" fill="#a87c38" />
+      <line x1="-22" y1="-2" x2="-22" y2="2" stroke="#a87c38" strokeWidth="1.5" />
+    </g>);
+    case 'basketball': return (<g>
+      <ellipse cx="0" cy="14" rx="14" ry="3" fill="#000" opacity="0.32" />
+      <circle cx="0" cy="0" r="13" fill="#d97a30" />
+      <path d="M0 -13 v26 M-13 0 q13 -8 26 0 M-13 0 q13 8 26 0" stroke="#2a1d12" strokeWidth="1.5" fill="none" />
+    </g>);
+    case 'guitar': return (<g transform="rotate(-15)">
+      <ellipse cx="0" cy="20" rx="14" ry="3" fill="#000" opacity="0.3" />
+      <ellipse cx="0" cy="6" rx="12" ry="14" fill="#9c5a28" />
+      <ellipse cx="0" cy="-10" rx="8" ry="10" fill="#9c5a28" />
+      <rect x="-2" y="-22" width="4" height="22" fill="#7a4220" />
+      <circle cx="0" cy="6" r="3.5" fill="#1c1008" />
+      <g stroke="#caa030" strokeWidth="0.5"><line x1="-1" y1="-22" x2="-1" y2="18" /><line x1="1" y1="-22" x2="1" y2="18" /></g>
+    </g>);
+    case 'phone': return (<g>
+      <ellipse cx="0" cy="20" rx="11" ry="3" fill="#000" opacity="0.3" />
+      <rect x="-10" y="-18" width="20" height="36" rx="3" fill="#1c2530" />
+      <rect x="-8" y="-15" width="16" height="26" rx="1" fill="#5aa0d6" opacity="0.9" />
+      <circle cx="0" cy="15" r="1.5" fill="#5a5f68" />
+    </g>);
+    case 'briefcase': return (<g>
+      <ellipse cx="0" cy="16" rx="20" ry="3" fill="#000" opacity="0.3" />
+      <rect x="-20" y="-6" width="40" height="22" rx="2" fill="#6b4a26" />
+      <rect x="-20" y="-2" width="40" height="2" fill="#8a6532" />
+      <rect x="-4" y="-13" width="8" height="8" rx="1" fill="none" stroke="#6b4a26" strokeWidth="2.5" />
+      <rect x="-2" y="4" width="4" height="3" fill="#caa030" />
+    </g>);
+    case 'pizza': return (<g transform="rotate(-12)">
+      <ellipse cx="0" cy="16" rx="20" ry="3" fill="#000" opacity="0.3" />
+      <path d="M0 -14 L20 14 L-20 14 Z" fill="#e58a44" />
+      <path d="M0 -14 L20 14 L-20 14 Z" fill="none" stroke="#a85a22" strokeWidth="1.5" />
+      <path d="M-13 12 q13 -6 26 0" fill="#f4e0a8" />
+      <circle cx="-6" cy="6" r="2" fill="#d23b32" />
+      <circle cx="4" cy="3" r="2" fill="#d23b32" />
+      <circle cx="-2" cy="10" r="2" fill="#d23b32" />
+    </g>);
+    case 'sandwich': return (<g>
+      <ellipse cx="0" cy="14" rx="22" ry="3" fill="#000" opacity="0.3" />
+      <path d="M-20 8 q20 -10 40 0 l0 6 q-20 6 -40 0z" fill="#e8c98a" />
+      <path d="M-18 2 q18 -6 36 0 l-1 4 q-17 5 -34 0z" fill="#bfe6b0" />
+      <path d="M-17 -3 q17 -6 34 0 l-1 4 q-16 4 -32 0z" fill="#d23b32" />
+      <path d="M-18 -10 q18 -10 36 0 l-1 5 q-17 5 -34 0z" fill="#e8c98a" />
+      <circle cx="-12" cy="-12" r="1.2" fill="#caa06a" />
+      <circle cx="6" cy="-12" r="1.2" fill="#caa06a" />
+    </g>);
+    case 'beer-mug': return (<g>
+      <ellipse cx="0" cy="22" rx="14" ry="3" fill="#000" opacity="0.3" />
+      <rect x="-12" y="-12" width="22" height="34" rx="3" fill="#cfe1ef" opacity="0.55" />
+      <rect x="-12" y="-12" width="22" height="34" rx="3" fill="none" stroke="#7faecf" strokeWidth="2" />
+      <rect x="-10" y="-6" width="18" height="28" fill="#e8b045" />
+      <path d="M-12 -14 q11 -8 22 0 l0 4 q-11 6 -22 0z" fill="#fff" />
+      <ellipse cx="-6" cy="-14" rx="5" ry="2.5" fill="#fff" />
+      <path d="M10 -4 q9 0 9 10 q0 10 -9 10" fill="none" stroke="#7faecf" strokeWidth="3" />
+    </g>);
+    case 'liquor-glass': return (<g>
+      <ellipse cx="0" cy="14" rx="14" ry="3" fill="#000" opacity="0.3" />
+      <path d="M-12 -8 L12 -8 L10 12 L-10 12 Z" fill="#cfe1ef" opacity="0.5" />
+      <path d="M-12 -8 L12 -8 L10 12 L-10 12 Z" fill="none" stroke="#bfd0e0" strokeWidth="1.5" />
+      <path d="M-10 0 L10 0 L8.5 12 L-8.5 12 Z" fill="#caa040" />
+      <rect x="-5" y="-3" width="4" height="6" fill="#fff" opacity="0.5" />
+      <rect x="2" y="-1" width="3" height="4" fill="#fff" opacity="0.7" />
+    </g>);
+    case 'pills': return (<g>
+      <ellipse cx="0" cy="16" rx="20" ry="3" fill="#000" opacity="0.3" />
+      <rect x="-7" y="-10" width="14" height="22" rx="2" fill="#e8a8a0" />
+      <rect x="-7" y="-12" width="14" height="5" fill="#a83b32" />
+      <ellipse cx="-13" cy="14" rx="4" ry="2" fill="#dfe1ef" />
+      <ellipse cx="11" cy="15" rx="4" ry="2" fill="#dfe1ef" />
+      <ellipse cx="16" cy="10" rx="3.5" ry="2" fill="#cfd1df" />
+    </g>);
+    case 'bandage': return (<g transform="rotate(20)">
+      <ellipse cx="0" cy="9" rx="18" ry="2.5" fill="#000" opacity="0.3" />
+      <rect x="-18" y="-6" width="36" height="12" rx="3" fill="#f4d2a8" />
+      <rect x="-3" y="-5" width="6" height="10" fill="#dcb888" opacity="0.5" />
+      <g fill="#dcb888"><circle cx="-12" cy="-2" r="1.2" /><circle cx="12" cy="-2" r="1.2" /><circle cx="-12" cy="2" r="1.2" /><circle cx="12" cy="2" r="1.2" /></g>
+    </g>);
+    case 'tattoo-gun': return (<g transform="rotate(20)">
+      <ellipse cx="0" cy="10" rx="20" ry="2.5" fill="#000" opacity="0.3" />
+      <rect x="-14" y="-6" width="26" height="12" rx="3" fill="#2b2b33" />
+      <rect x="-18" y="-3" width="6" height="6" rx="2" fill="#7a7a83" />
+      <rect x="12" y="-3" width="11" height="6" rx="2" fill="#9aa0aa" />
+      <rect x="23" y="-2" width="4" height="4" fill="#cfcfcf" />
+      <line x1="23" y1="0" x2="34" y2="-5" stroke="#9aa0aa" strokeWidth="2" />
+      <circle cx="-4" cy="0" r="2" fill="#7f77dd" />
+    </g>);
+    case 'baby-bottle': return (<g>
+      <ellipse cx="0" cy="22" rx="11" ry="3" fill="#000" opacity="0.3" />
+      <rect x="-10" y="-8" width="20" height="30" rx="3" fill="#dfe9f2" opacity="0.65" />
+      <rect x="-10" y="-8" width="20" height="30" rx="3" fill="none" stroke="#bfd0e0" strokeWidth="1.5" />
+      <rect x="-8" y="2" width="16" height="18" rx="2" fill="#f4f0e6" />
+      <rect x="-7" y="-14" width="14" height="6" rx="3" fill="#e8c98a" />
+      <path d="M-4 -22 q4 -5 8 0 q0 4 -4 6 q-4 -2 -4 -6z" fill="#e8c98a" />
+    </g>);
+    case 'cake': return (<g>
+      <ellipse cx="0" cy="20" rx="22" ry="4" fill="#000" opacity="0.32" />
+      <rect x="-20" y="6" width="40" height="14" rx="2" fill="#f4f1ea" />
+      <path d="M-20 6 q20 -8 40 0" stroke="#d4537e" strokeWidth="2" fill="none" />
+      <path d="M-20 12 q20 -8 40 0" stroke="#d4537e" strokeWidth="2" fill="none" />
+      <rect x="-2" y="-8" width="4" height="14" fill="#d4537e" />
+      <path d="M0 -14 q-4 -5 0 -10 q4 5 0 10z" fill="#ffc740" />
+    </g>);
+    case 'heart': return (<g>
+      <path d="M0 14 q-16 -10 -16 -22 q0 -8 8 -8 q4 0 8 6 q4 -6 8 -6 q8 0 8 8 q0 12 -16 22z" fill="#e24b4a" />
+      <path d="M-6 -10 q4 -3 8 0" stroke="#fff" strokeWidth="1.8" fill="none" opacity="0.55" />
+    </g>);
+    case 'gift-box': return (<g>
+      <ellipse cx="0" cy="16" rx="18" ry="3" fill="#000" opacity="0.3" />
+      <rect x="-16" y="-4" width="32" height="20" rx="1" fill="#d4537e" />
+      <rect x="-16" y="-6" width="32" height="6" fill="#b04267" />
+      <rect x="-3" y="-6" width="6" height="22" fill="#ffd24a" />
+      <path d="M0 -6 q-8 -10 -14 -2 q4 4 14 2z M0 -6 q8 -10 14 -2 q-4 4 -14 2z" fill="#ffd24a" />
+    </g>);
+    case 'money-stack': return (<g>
+      <ellipse cx="0" cy="14" rx="22" ry="3" fill="#000" opacity="0.3" />
+      <rect x="-20" y="2" width="40" height="12" rx="1" fill="#6fbf8e" transform="rotate(-4 0 8)" />
+      <rect x="-20" y="-4" width="40" height="12" rx="1" fill="#7fc99e" />
+      <text x="0" y="6" textAnchor="middle" fontFamily="Inter,Arial Black,Arial" fontSize="11" fontWeight="900" fill="#1d4a30">$</text>
+    </g>);
+    case 'clothes-stack': return (<g>
+      <ellipse cx="0" cy="22" rx="22" ry="3" fill="#000" opacity="0.3" />
+      <rect x="-20" y="12" width="40" height="10" rx="2" fill="#5aa0d6" />
+      <rect x="-18" y="2" width="36" height="10" rx="2" fill="#e24b4a" />
+      <rect x="-16" y="-8" width="32" height="10" rx="2" fill="#caa030" />
+      <rect x="-14" y="-18" width="28" height="10" rx="2" fill="#6fbf8e" />
+    </g>);
+    case 'dog': return (<g>
+      <ellipse cx="0" cy="14" rx="20" ry="3" fill="#000" opacity="0.32" />
+      <ellipse cx="-2" cy="4" rx="18" ry="9" fill="#8a6532" />
+      <circle cx="-16" cy="-2" r="8" fill="#8a6532" />
+      <path d="M-22 -8 q-2 -6 4 -6 q3 4 0 8z" fill="#7a5a28" />
+      <circle cx="-18" cy="-2" r="1.4" fill="#1c1008" />
+      <rect x="-12" y="11" width="3" height="6" fill="#8a6532" />
+      <rect x="-2" y="11" width="3" height="6" fill="#8a6532" />
+      <path d="M14 0 q4 -8 8 -6" stroke="#8a6532" strokeWidth="3" fill="none" strokeLinecap="round" />
+    </g>);
+    case 'cat': return (<g>
+      <ellipse cx="0" cy="14" rx="18" ry="3" fill="#000" opacity="0.3" />
+      <ellipse cx="-2" cy="4" rx="16" ry="8" fill="#3a3a3a" />
+      <circle cx="-14" cy="-2" r="7" fill="#3a3a3a" />
+      <path d="M-20 -10 l3 -6 3 6z M-10 -10 l3 -6 3 6z" fill="#3a3a3a" />
+      <circle cx="-16" cy="-2" r="1.2" fill="#caa030" />
+      <circle cx="-12" cy="-2" r="1.2" fill="#caa030" />
+      <path d="M14 -2 q6 -4 8 -10" stroke="#3a3a3a" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+    </g>);
+    case 'key': return (<g transform="rotate(-15)">
+      <ellipse cx="0" cy="6" rx="18" ry="2.5" fill="#000" opacity="0.3" />
+      <circle cx="-14" cy="0" r="8" fill="none" stroke="#caa030" strokeWidth="3" />
+      <circle cx="-14" cy="0" r="3" fill="#1c1008" />
+      <rect x="-6" y="-2" width="22" height="4" fill="#caa030" />
+      <rect x="10" y="2" width="3" height="4" fill="#caa030" />
+      <rect x="14" y="2" width="3" height="6" fill="#caa030" />
+    </g>);
+    case 'coffee-cup': return (<g>
+      <ellipse cx="0" cy="18" rx="14" ry="3" fill="#000" opacity="0.32" />
+      <path d="M-12 -8 L12 -8 L10 16 L-10 16 Z" fill="#7a3b22" />
+      <rect x="-13" y="-10" width="26" height="6" rx="1" fill="#3a1c10" />
+      <rect x="-3" y="-14" width="6" height="4" fill="#fff" />
+      <path d="M-4 -22 q3 -6 0 -10 M4 -22 q3 -6 0 -10" stroke="#cfcfcf" strokeWidth="1.5" fill="none" opacity="0.6" />
+    </g>);
+    default: return null;
+  }
+}
+
+export interface MemeSceneProps { scene?: string; color: string; mono: string; props?: string[]; muted?: boolean; ariaLabel?: string; className?: string; }
+
+export function MemeScene({ scene = 'default', color, mono, props: jokeProps, muted = false, ariaLabel, className }: MemeSceneProps) {
   const raw = useId().replace(/[^a-zA-Z0-9]/g, '');
   const bg = `b${raw}`, vig = `v${raw}`;
   const mid = shade(color, 0.6), dark = shade(color, 0.26), light = shade(color, 1.65);
@@ -45,7 +304,6 @@ export function MemeScene({ scene = 'default', color, mono, className }: MemeSce
           <rect x="-7" y="14" width="34" height="24" rx="5" fill="#efe7d6" /><path d="M27 18 q13 0 13 11 q0 11 -13 11" fill="none" stroke="#efe7d6" strokeWidth="4.5" />
           <ellipse cx="10" cy="16" rx="17" ry="3.6" fill="#6b3b22" />
         </g>
-        <g transform="translate(94 80)"><rect x="0" y="6" width="13" height="22" rx="3" fill="#d23b32" /><rect x="3" y="0" width="7" height="8" rx="2" fill="#b32d25" /></g>
       </>);
       case 'livingroom': return (<>
         <rect x="208" y="16" width="94" height="66" rx="3" fill={light} opacity="0.12" />
@@ -54,7 +312,6 @@ export function MemeScene({ scene = 'default', color, mono, className }: MemeSce
         <rect x="30" y="96" width="260" height="40" rx="12" fill="#c96a28" />
         <rect x="24" y="72" width="34" height="52" rx="10" fill="#d9772e" /><rect x="262" y="72" width="34" height="52" rx="10" fill="#d9772e" />
         <rect x="70" y="80" width="78" height="26" rx="8" fill="#e08b46" /><rect x="172" y="80" width="78" height="26" rx="8" fill="#e08b46" />
-        <rect x="92" y="82" width="26" height="24" rx="7" fill={color} transform="rotate(-8 105 94)" />
         <rect x="292" y="64" width="4" height="58" fill="#6a5a48" /><path d="M282 64 l20 0 6 -18 -32 0z" fill="#ffd76b" />
       </>);
       case 'courtroom': return (<>
@@ -84,22 +341,19 @@ export function MemeScene({ scene = 'default', color, mono, className }: MemeSce
           <g transform="translate(166 112)"><rect x="-16" y="-16" width="32" height="32" rx="4" fill="#5aa0d6" /><text y="6" fill="#fff">B</text></g>
           <g transform="translate(149 80)"><rect x="-16" y="-16" width="32" height="32" rx="4" fill="#6fbf8e" /><text y="6" fill="#fff">C</text></g>
         </g>
-        <g transform="translate(232 92) rotate(18)"><circle cx="0" cy="0" r="11" fill="#f4d06a" stroke="#caa030" strokeWidth="2" /><circle cx="-4" cy="-3" r="2.4" fill="#fff" /><rect x="-3" y="9" width="6" height="20" rx="3" fill="#e58a44" /></g>
       </>);
       case 'bar': return (<>
         <rect x="206" y="18" width="86" height="26" rx="13" fill="none" stroke={light} strokeWidth="3" opacity="0.85" /><text x="249" y="36" textAnchor="middle" fontFamily="Arial Black,Arial" fontSize="14" fontWeight="900" fill={light} letterSpacing="2">BAR</text>
         <rect x="22" y="52" width="120" height="5" rx="2" fill={mid} />
         <g><rect x="30" y="30" width="12" height="22" rx="3" fill="#6fbf8e" /><rect x="50" y="26" width="11" height="26" rx="3" fill="#d23b32" /><rect x="68" y="34" width="13" height="18" rx="3" fill="#caa030" /><rect x="90" y="28" width="11" height="24" rx="3" fill="#5aa0d6" /><rect x="110" y="33" width="12" height="19" rx="3" fill="#b07fd6" /></g>
         <rect x="0" y="112" width="320" height="20" fill={shade(color, 0.45)} />
-        <g transform="translate(160 74)"><path d="M-22 0 L22 0 L2 26 L-2 26 Z" fill="#bfe6b0" stroke="#9fce8e" strokeWidth="1.5" /><ellipse cx="0" cy="0" rx="23" ry="4" fill="#dff0d2" /><rect x="-2" y="26" width="4" height="20" fill="#cdd6c8" /><ellipse cx="0" cy="47" rx="13" ry="3" fill={dark} /><circle cx="13" cy="-2" r="4" fill="#d23b32" /></g>
       </>);
       case 'outdoors': return (<>
         <circle cx="56" cy="38" r="17" fill="#ffd76b" opacity="0.8" />
         <g fill="#ffffff" opacity="0.22"><ellipse cx="220" cy="34" rx="26" ry="11" /><ellipse cx="244" cy="30" rx="18" ry="9" /><ellipse cx="198" cy="32" rx="14" ry="8" /></g>
         <ellipse cx="70" cy="156" rx="130" ry="44" fill={shade(color, 0.5)} />
         <ellipse cx="256" cy="160" rx="120" ry="46" fill={shade(color, 0.4)} />
-        <g><rect x="92" y="84" width="8" height="34" rx="2" fill="#6b4a28" /><circle cx="96" cy="78" r="18" fill="#4e8c5a" /><circle cx="84" cy="86" r="12" fill="#5a9c66" /><circle cx="108" cy="86" r="12" fill="#5a9c66" /></g>
-        <g transform="translate(196 104)"><rect x="0" y="0" width="60" height="6" rx="2" fill="#7a5a3a" /><rect x="0" y="10" width="60" height="6" rx="2" fill="#7a5a3a" /><rect x="4" y="6" width="5" height="20" fill="#5a4128" /><rect x="51" y="6" width="5" height="20" fill="#5a4128" /></g>
+        <g><rect x="172" y="78" width="8" height="38" rx="2" fill="#6b4a28" /><circle cx="176" cy="72" r="18" fill="#4e8c5a" /></g>
       </>);
       case 'office': return (<>
         <circle cx="44" cy="18" r="6" fill="#ffd76b" /><circle cx="44" cy="18" r="15" fill="#ffe9a8" opacity="0.16" />
@@ -107,9 +361,6 @@ export function MemeScene({ scene = 'default', color, mono, className }: MemeSce
         <ellipse cx="160" cy="132" rx="128" ry="14" fill={dark} />
         <rect x="40" y="104" width="240" height="18" rx="4" fill={mid} />
         <rect x="182" y="60" width="58" height="40" rx="4" fill="#1c2530" /><rect x="187" y="65" width="48" height="30" rx="2" fill={light} opacity="0.9" /><rect x="205" y="100" width="12" height="6" fill="#1c2530" />
-        <g transform="translate(70 86)"><rect x="0" y="0" width="18" height="18" rx="3" fill="#e8e2d6" /><path d="M18 3 q8 0 8 6 q0 6 -8 6" fill="none" stroke="#e8e2d6" strokeWidth="3" /></g>
-        <rect x="104" y="92" width="42" height="12" rx="2" fill="#cfc8ba" transform="rotate(-4 125 98)" />
-        <g transform="translate(252 88)"><rect x="0" y="4" width="14" height="12" rx="2" fill="#7a4a28" /><circle cx="7" cy="0" r="9" fill="#4e8c5a" /></g>
       </>);
       default: return (<>
         <polygon points="160,2 206,150 114,150" fill="#ffffff" opacity="0.07" />
@@ -120,8 +371,20 @@ export function MemeScene({ scene = 'default', color, mono, className }: MemeSce
     }
   })();
 
+  const slots = PROP_SLOTS[scene] ?? PROP_SLOTS.default;
+  const propEls = (jokeProps ?? []).slice(0, 2).map((p, i) => {
+    const node = propSVG(p);
+    if (!node) return null;
+    const s = slots[i];
+    return <g key={`p${i}-${p}`} transform={`translate(${s.x} ${s.y})`}>{node}</g>;
+  });
+
+  // Accessibility: announce the scene to screen readers; otherwise mark decorative.
+  const a11y = ariaLabel
+    ? { role: 'img' as const, 'aria-label': ariaLabel }
+    : { 'aria-hidden': true as const };
   return (
-    <svg viewBox="0 0 320 150" className={className} preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden focusable="false">
+    <svg viewBox="0 0 320 150" className={className} preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" focusable="false" {...a11y}>
       <defs>
         <radialGradient id={bg} cx="50%" cy="24%" r="95%">
           <stop offset="0%" stopColor={color} /><stop offset="55%" stopColor={mid} /><stop offset="100%" stopColor={dark} />
@@ -133,6 +396,9 @@ export function MemeScene({ scene = 'default', color, mono, className }: MemeSce
       <rect width="320" height="150" fill={`url(#${bg})`} />
       {inner}
       <rect width="320" height="150" fill={`url(#${vig})`} />
+      {propEls}
+      {/* Mute mode: dark overlay so dual-card show colors don't clash visually; color survives as accent. */}
+      {muted && <rect width="320" height="150" fill="#000" opacity="0.42" />}
     </svg>
   );
 }
