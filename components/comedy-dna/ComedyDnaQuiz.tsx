@@ -63,6 +63,8 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
   // A second click/key skips the dwell. Driven by the chosen card's transition.
   const [revealing, setRevealing] = useState(false);
   const revealTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [shareCopied, setShareCopied] = useState(false);
+  const shareTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [challenger, setChallenger] = useState<ResultPayload | null>(null);
   const [emailDone, setEmailDone] = useState(false);
   const [emailValue, setEmailValue] = useState('');
@@ -96,27 +98,33 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
     return { pref: p, winCounts: wc, totalPicks: n, seenIds: seen };
   }, [picks, baseline]);
 
-  const buildPairs = useCallback((clean: boolean) => {
+  const buildPairs = useCallback((clean: boolean, hard = false) => {
     const src = shuffle(clean ? quiz.pool.filter(j => !isEdgy(j)) : quiz.pool);
     const used = new Set<number>();
     const out: { a: QuizJoke; b: QuizJoke }[] = [];
     const cap = Math.min(N_MAX, Math.floor(src.length / 2));
     for (let r = 0; r < cap; r++) {
       const A = src.find(j => !used.has(j.id)); if (!A) break; used.add(A.id);
-      let best: QuizJoke | null = null, bd = -1;
-      for (const j of src) { if (used.has(j.id)) continue; const d = manhattan(A.vec, j.vec) + Math.random() * 0.6; if (d > bd) { bd = d; best = j; } }
+      // Default: pair with most-dissimilar joke (clearer choice). Hard mode: pair with most-similar (tighter face-off).
+      let best: QuizJoke | null = null, bd = hard ? Infinity : -1;
+      for (const j of src) {
+        if (used.has(j.id)) continue;
+        const d = manhattan(A.vec, j.vec) + Math.random() * 0.6;
+        if (hard ? d < bd : d > bd) { bd = d; best = j; }
+      }
       if (!best) break; used.add(best.id);
       out.push(Math.random() < 0.5 ? { a: A, b: best } : { a: best, b: A });
     }
     return out;
   }, [quiz.pool]);
 
-  const start = useCallback(() => {
-    const ps = buildPairs(cleanMode);
-    setPairs(ps); setTotalRounds(Math.min(N_BASE, ps.length)); setCur(0); setPicks([]); setRevealed(false); setRevealing(false);
+  const startWith = useCallback((rounds: number, hard: boolean) => {
+    const ps = buildPairs(cleanMode, hard);
+    setPairs(ps); setTotalRounds(Math.min(rounds, ps.length)); setCur(0); setPicks([]); setRevealed(false); setRevealing(false);
     if (revealTimer.current) { clearTimeout(revealTimer.current); revealTimer.current = null; }
-    setScreen('battle'); trackEvent('cdna_start', { clean: cleanMode });
+    setScreen('battle'); trackEvent('cdna_start', { clean: cleanMode, hard, rounds });
   }, [buildPairs, cleanMode]);
+  const start = useCallback(() => startWith(N_BASE, false), [startWith]);
 
   const advance = useCallback((nextCur: number) => {
     if (nextCur >= totalRounds) {
@@ -156,7 +164,26 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
   }, [cur]);
 
   // Clear any pending reveal timer on unmount.
-  useEffect(() => () => { if (revealTimer.current) clearTimeout(revealTimer.current); }, []);
+  useEffect(() => () => { if (revealTimer.current) clearTimeout(revealTimer.current); if (shareTimer.current) clearTimeout(shareTimer.current); }, []);
+
+  // Share "I picked A over B" — Web Share API on mobile, clipboard fallback elsewhere.
+  // Called from the reveal-state chosen card; stops propagation so it doesn't tap-through to advance.
+  const shareThisPick = useCallback((e: React.MouseEvent, winner: QuizJoke, loser: QuizJoke) => {
+    e.stopPropagation(); e.preventDefault();
+    const trim = (s: string, n = 90) => (s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s);
+    const txt = `I picked "${trim(winner.text)}" over "${trim(loser.text)}" — which one would you pick? https://thehumorindex.com/comedy-dna`;
+    const nav = typeof navigator !== 'undefined' ? navigator : null;
+    if (nav?.share) {
+      nav.share({ text: txt, url: 'https://thehumorindex.com/comedy-dna' }).catch(() => { /* user dismissed */ });
+    } else if (nav?.clipboard?.writeText) {
+      nav.clipboard.writeText(txt).then(() => {
+        setShareCopied(true);
+        if (shareTimer.current) clearTimeout(shareTimer.current);
+        shareTimer.current = setTimeout(() => setShareCopied(false), 1900);
+      }).catch(() => { /* clipboard denied */ });
+    }
+    trackEvent('cdna_share_pick', { round: cur + 1, winner: winner.slug });
+  }, [cur]);
 
   // keyboard
   useEffect(() => {
@@ -360,9 +387,28 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
         <section className="mt-8">
           <span className={kicker}>Find your comedy DNA</span>
           <h1 className="text-4xl md:text-5xl font-black tracking-tight mt-3 mb-3">Which joke is funnier?</h1>
-          <p className="text-lg text-brand-text-secondary max-w-xl mb-5">
+          <p className="text-lg text-brand-text-secondary max-w-xl mb-3">
             You&apos;ll see two real jokes from the funniest sitcoms ever scored. Pick whichever lands harder for <em>you</em> — no wrong answers. After a quick run of face-offs, we&apos;ll map your taste and the shows and jokes built for it.
           </p>
+          <p className="text-sm text-brand-text-muted max-w-xl mb-6">
+            Every joke scored 3 times by Claude for consensus, on craft + impact + memorability. <a href="/methodology" className="text-brand-gold hover:text-brand-text-primary font-semibold underline-offset-2 hover:underline">How we did it &rarr;</a>
+          </p>
+
+          {/* The 6 archetypes preview — anchors the experience by showing what you're working toward */}
+          <div className="mb-7">
+            <span className={`${kicker} block mb-2.5`}>One of these is you</span>
+            <div className="grid grid-cols-3 sm:grid-cols-6 gap-2.5">
+              {ARCHES.map((a, i) => (
+                <a key={a.slug} href={`/comedy-dna/${a.slug}`} title={a.tag}
+                   className="bg-brand-card border border-brand-border hover:border-brand-gold transition rounded-xl p-2.5 flex flex-col items-center gap-1.5 text-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold">
+                  <Emblem i={i} size={36} />
+                  <span className="text-[11px] font-bold leading-tight">{a.name.replace(/^The /, '')}</span>
+                  <span className="text-[10px] text-brand-text-muted leading-tight hidden sm:block">{a.tag}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+
           <label className="inline-flex items-center gap-3 mb-6 cursor-pointer text-brand-text-secondary font-semibold select-none">
             <input type="checkbox" className="peer sr-only" checked={cleanMode} onChange={e => setCleanMode(e.target.checked)} />
             <span className="w-11 h-6 rounded-full bg-brand-border relative transition peer-checked:bg-brand-teal after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-5 after:h-5 after:rounded-full after:bg-white after:transition peer-checked:after:translate-x-5" />
@@ -393,8 +439,8 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
             <span className="text-sm font-extrabold tabular-nums whitespace-nowrap">{cur + 1} / {totalRounds}</span>
           </div>
 
-          {/* Mid-battle archetype peek every 6 picks — light checkpoint so the result feels like it's building. */}
-          {!revealing && totalPicks > 0 && totalPicks % 6 === 0 && (() => {
+          {/* Mid-battle archetype peek — first peek at round 3 (early engagement reward), then every 6. */}
+          {!revealing && (totalPicks === 3 || (totalPicks >= 6 && totalPicks % 6 === 0)) && (() => {
             const lead = rankArchetypes(pref, weights)[0]?.arche; if (!lead) return null;
             const li = ARCHES.indexOf(lead);
             return (
@@ -490,6 +536,18 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                             <p className="text-[12.5px] text-brand-text-secondary leading-relaxed">{j.why}</p>
                           </div>
                         ) : null}
+                        {chosen && (
+                          <button type="button"
+                            onClick={(e) => shareThisPick(e, j, side === 'a' ? pairs[cur].b : pairs[cur].a)}
+                            className="mt-2 inline-flex items-center gap-1.5 self-start text-[10.5px] font-bold uppercase tracking-wide text-brand-text-muted hover:text-brand-gold transition px-2.5 py-1.5 rounded-md border border-brand-border hover:border-brand-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
+                            aria-label="Share this matchup">
+                            {shareCopied ? (
+                              <><svg width="11" height="11" viewBox="0 0 12 12" aria-hidden><path d="M1 6l3 3 7-7" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>Copied to clipboard</>
+                            ) : (
+                              <><svg width="11" height="11" viewBox="0 0 16 16" aria-hidden><path d="M8 1v9M4 5l4-4 4 4M2 11v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-2" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>Share this matchup</>
+                            )}
+                          </button>
+                        )}
                       </div>
                     )}
                   </div>
@@ -563,8 +621,9 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
             )}
             <div className="flex gap-2.5 justify-center flex-wrap mt-4">
               <button className={btnPrimary} onClick={shareCard}>Share my card</button>
-              <button className={`${btnLine} !border-brand-teal`} onClick={challenge}>Copy my link</button>
+              <button className={`${btnLine} !border-brand-teal`} onClick={challenge}>Challenge a friend &rarr;</button>
             </div>
+            <p className="text-xs text-brand-text-muted mt-2.5">The challenge link plays them through the same face-offs — see how your tastes differ.</p>
           </div>
 
           <div className="mt-10 mb-1 text-center"><span className="text-[11px] uppercase tracking-[0.14em] text-brand-text-muted">The full breakdown</span></div>
@@ -696,7 +755,14 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
             </div>
           )}
 
-          <div className="text-center mt-9"><button className={btnLine} onClick={() => { setScreen('intro'); setPicks([]); setCur(0); }}>Play again</button></div>
+          <div className="mt-10 pt-6 border-t border-brand-border text-center">
+            <span className={`${kicker} block mb-2`}>Keep going</span>
+            <p className="text-brand-text-secondary text-sm max-w-md mx-auto mb-4">Liked it? Try the tougher cut — face-offs between jokes with similar comedic DNA, so every pick is a real call.</p>
+            <div className="flex gap-2.5 justify-center flex-wrap">
+              <button className={btnPrimary} onClick={() => startWith(10, true)}>Play 10 more &mdash; hard mode</button>
+              <button className={btnLine} onClick={() => { setScreen('intro'); setPicks([]); setCur(0); }}>Start over</button>
+            </div>
+          </div>
 
           <p className="mt-6 text-xs text-brand-text-muted text-center leading-relaxed max-w-2xl mx-auto">
             Taste profile inferred from your {totalPicks} picks across a balanced pool of {quiz.pool.length} jokes. Show matches use each show&apos;s joke-type fingerprint vs. your preference vector (inverse-frequency-weighted cosine, with small-sample shrinkage). A just-for-fun entertainment tool, not any kind of assessment. Jokes are short quotations from their respective series, shown for commentary and criticism.
