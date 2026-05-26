@@ -10,7 +10,7 @@ import {
 } from '@/lib/comedyDna';
 import { MemeScene } from './MemeScene';
 
-const N_BASE = 18, N_MAX = 28;
+const N_BASE = 10, N_MAX = 30, N_STEP = 10;
 const SHOW_URL = (slug: string) => `https://thehumorindex.com/shows/${slug}/`;
 
 const DARK_IDX = DNA_TYPES.indexOf('dark_subversive');
@@ -580,19 +580,31 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
       )}
 
       {/* EXTEND */}
-      {screen === 'extend' && (
-        <section className="mt-8">
-          <div className="bg-brand-card border border-brand-border rounded-2xl text-center px-7 py-9">
-            <span className={kicker}>Nice picks</span>
-            <h2 className="text-2xl font-extrabold mt-2.5 mb-2">Want a sharper read?</h2>
-            <p className="text-brand-text-secondary max-w-md mx-auto mb-5">We&apos;ve got enough to map your taste now — or do <b>10 more</b> tougher face-offs to tighten the result.</p>
-            <div className="flex gap-3 justify-center flex-wrap">
-              <button className={btnPrimary} onClick={() => setScreen('results')}>See my results</button>
-              <button className={btnLine} onClick={() => { setTotalRounds(Math.min(N_MAX, pairs.length)); setScreen('battle'); }}>10 sharper face-offs</button>
+      {screen === 'extend' && (() => {
+        // Stepped extend: each "Keep going" adds N_STEP rounds, capped at min(N_MAX, available pairs).
+        const nextTotal = Math.min(N_MAX, pairs.length, totalRounds + N_STEP);
+        const moreRounds = nextTotal - totalRounds;
+        const canExtend = moreRounds > 0;
+        return (
+          <section className="mt-8">
+            <div className="bg-brand-card border border-brand-border rounded-2xl text-center px-7 py-9">
+              <span className={kicker}>Nice picks</span>
+              <h2 className="text-2xl font-extrabold mt-2.5 mb-2">Want a sharper read?</h2>
+              <p className="text-brand-text-secondary max-w-md mx-auto mb-5">
+                {totalRounds} picks in — enough to map your taste now. {canExtend ? <>Or play <b>{moreRounds} more</b> to refine it further.</> : null}
+              </p>
+              <div className="flex gap-3 justify-center flex-wrap">
+                <button className={btnPrimary} onClick={() => setScreen('results')}>See my results</button>
+                {canExtend && (
+                  <button className={btnLine} onClick={() => { setTotalRounds(nextTotal); setScreen('battle'); }}>
+                    {moreRounds} more face-offs &rarr;
+                  </button>
+                )}
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        );
+      })()}
 
       {/* RESULTS */}
       {screen === 'results' && result && (
