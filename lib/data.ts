@@ -19,8 +19,7 @@ export async function getAllShows(): Promise<ShowScore[]> {
 // Actual number of jokes in the search index (what's genuinely searchable).
 export async function getSearchableJokeCount(): Promise<number> {
   try {
-    return readJson<unknown[]>('search-index.json').length;
-  } catch {
+    return (await getAllShows()).reduce((sum, s) => sum + (s.total_jokes_analyzed || 0), 0);  } catch {
     return 0;
   }
 }
