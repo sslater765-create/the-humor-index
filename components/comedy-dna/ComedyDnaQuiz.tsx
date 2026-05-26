@@ -494,7 +494,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                       props={j.props}
                       muted={!revealing}
                       ariaLabel={sceneLabel}
-                      className={`block w-full transition-all duration-300 motion-reduce:transition-none ${revealing ? 'h-[110px]' : 'h-[80px]'}`} />
+                      className={`block w-full transition-all duration-300 motion-reduce:transition-none ${revealing ? 'h-[160px]' : 'h-[124px]'}`} />
 
                     {/* Option number chip during vote; chosen badge during reveal */}
                     {!revealing && (
