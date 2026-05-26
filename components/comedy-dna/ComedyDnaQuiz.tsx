@@ -492,6 +492,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                       color={st.c}
                       mono={st.m}
                       props={j.props}
+                      jokeId={j.id}
                       muted={!revealing}
                       ariaLabel={sceneLabel}
                       className={`block w-full transition-all duration-300 motion-reduce:transition-none ${revealing ? 'h-[240px]' : 'h-[200px]'}`} />

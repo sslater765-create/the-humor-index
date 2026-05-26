@@ -93,6 +93,35 @@ export const EXPLORER_CONFIG: Record<string, ExplorerConfig> = {
       { id: 'final', label: 'Final seasons (S4–6)', blurb: 'The award-winning later era', pick: ep => ep.season >= 4 },
     ],
   },
+  // Stable cast/crew (Tina Fey ran all 7 seasons), so no era split — but two
+  // documented structural facts: it won the Outstanding Comedy Emmy three years
+  // running for S1–3, and S7 was a shortened 13-episode farewell.
+  '30-rock': {
+    signature: 'emmy',
+    storyPresets: [
+      { id: 'emmy', label: 'The Emmy-winning run (S1–3)', blurb: 'The three straight years 30 Rock won Outstanding Comedy Series', pick: ep => ep.season <= 3 },
+      { id: 'final', label: 'The final season (S7)', blurb: 'The shortened 13-episode farewell run', pick: ep => ep.season === 7 },
+    ],
+  },
+  // ABC aired Taxi for S1–4 then cancelled it; NBC picked it up for a fifth and
+  // final season (1982–83) — a clean, documented network change.
+  taxi: {
+    eras: { 1: 'ABC', 2: 'ABC', 3: 'ABC', 4: 'ABC', 5: 'NBC' },
+    signature: 'nbc',
+    storyPresets: [
+      { id: 'abc', label: 'The ABC run (S1–4)', blurb: 'The original ABC seasons, before the network cancelled it', pick: ep => ep.season <= 4 },
+      { id: 'nbc', label: 'The NBC revival (S5)', blurb: 'The final season after NBC rescued the cancelled show', pick: ep => ep.season === 5 },
+    ],
+  },
+  // Same creators (Kauffman/Crane) and six leads across all 10 seasons — no
+  // showrunner/cast era to split on, so these cuts are structural only.
+  friends: {
+    signature: 'final',
+    storyPresets: [
+      { id: 'final', label: 'The final season (S10)', blurb: 'The shortened 18-episode farewell season', pick: ep => ep.season === 10 },
+      { id: 'skip-s1', label: 'Skip Season 1', blurb: 'Drop the first season and see how flat the rest stays', pick: ep => ep.season !== 1 },
+    ],
+  },
 };
 
 export function getExplorerConfig(slug: string): ExplorerConfig {

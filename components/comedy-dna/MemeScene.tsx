@@ -41,6 +41,217 @@ const PROP_SLOTS: Record<string, [{ x: number; y: number }, { x: number; y: numb
   default:   [{ x: 88,  y: 118 }, { x: 232, y: 118 }],
 };
 
+// ---- bespoke per-joke scenes (the iconic ones whose ART IS THE JOKE) ----
+// When the joke's id matches, this overrides the scene template + props entirely.
+// Add new bespoke scenes by joke id; keep the visual centered on the gag itself.
+function bespokeSVG(jokeId: number, color: string, mid: string, dark: string, _light: string): ReactNode {
+  switch (jokeId) {
+    // Seinfeld — Soup Nazi: "No soup for you! Come back, one year."
+    case 18628: return (<>
+      <rect x="0" y="110" width="320" height="40" fill={dark} />
+      <rect x="0" y="106" width="320" height="6" fill={mid} />
+      <ellipse cx="160" cy="118" rx="78" ry="10" fill="#000" opacity="0.4" />
+      <rect x="92" y="62" width="136" height="56" rx="8" fill="#2a1808" />
+      <rect x="92" y="62" width="136" height="56" rx="8" fill="none" stroke="#5a3a18" strokeWidth="2" />
+      <ellipse cx="160" cy="62" rx="68" ry="14" fill="#a85a22" />
+      <ellipse cx="160" cy="60" rx="64" ry="11" fill="#caa030" />
+      <ellipse cx="146" cy="58" rx="22" ry="4" fill="#e8c98a" opacity="0.65" />
+      <path d="M130 46 q-6 -10 0 -22 q6 -10 0 -22" stroke="#e7c8a8" strokeWidth="2.5" fill="none" opacity="0.55" />
+      <path d="M160 42 q-6 -12 0 -24 q6 -12 0 -24" stroke="#e7c8a8" strokeWidth="2.5" fill="none" opacity="0.7" />
+      <path d="M188 46 q-6 -10 0 -22 q6 -10 0 -22" stroke="#e7c8a8" strokeWidth="2.5" fill="none" opacity="0.55" />
+      <g transform="translate(214 80) rotate(20)"><rect x="0" y="-2" width="4" height="46" fill="#cfcfcf" /><ellipse cx="2" cy="42" rx="10" ry="3" fill="#9aa0aa" /></g>
+      <g transform="translate(258 24)">
+        <rect x="-36" y="-14" width="72" height="34" rx="4" fill="#fff" />
+        <rect x="-36" y="-14" width="72" height="34" rx="4" fill="none" stroke="#1c1008" strokeWidth="2" />
+        <text x="0" y="2" textAnchor="middle" fontFamily="Arial Black,Arial" fontSize="13" fontWeight="900" fill="#1c1008" letterSpacing="1">SOUP</text>
+        <line x1="-32" y1="-12" x2="32" y2="18" stroke="#e24b4a" strokeWidth="5" />
+        <line x1="-32" y1="18" x2="32" y2="-12" stroke="#e24b4a" strokeWidth="5" />
+      </g>
+      <g>
+        <path d="M-10 92 q44 -8 64 -10" stroke="#1c1008" strokeWidth="22" fill="none" strokeLinecap="round" />
+        <path d="M-10 92 q44 -8 64 -10" stroke="#e6b48c" strokeWidth="16" fill="none" strokeLinecap="round" />
+        <ellipse cx="58" cy="82" rx="10" ry="9" fill="#e6b48c" stroke="#1c1008" strokeWidth="1.5" />
+        <rect x="64" y="78" width="20" height="7" rx="3" fill="#e6b48c" stroke="#1c1008" strokeWidth="1.5" />
+      </g>
+      <g transform="translate(252 116)">
+        <ellipse cx="0" cy="3" rx="16" ry="3" fill="#000" opacity="0.3" />
+        <path d="M-16 -2 q16 -9 32 0 q-3 9 -16 11 q-13 -2 -16 -11z" fill="#dcd3c1" stroke="#1c1008" strokeWidth="1.2" />
+      </g>
+    </>);
+    // The Office — Pam at the Dundies: "I feel God in this Chili's tonight"
+    case 595: return (<>
+      <circle cx="44" cy="14" r="8" fill="#ffd76b" /><circle cx="44" cy="14" r="22" fill="#ffe9a8" opacity="0.18" />
+      <circle cx="276" cy="14" r="8" fill="#ffd76b" /><circle cx="276" cy="14" r="22" fill="#ffe9a8" opacity="0.18" />
+      <polygon points="160,8 220,150 100,150" fill="#ffe7ad" opacity="0.13" />
+      <rect x="78" y="22" width="164" height="26" rx="5" fill="#143a5c" />
+      <rect x="78" y="22" width="164" height="26" rx="5" fill="none" stroke="#2f6fb0" strokeWidth="2" />
+      <text x="160" y="40" textAnchor="middle" fontFamily="Arial Black,Arial" fontSize="15" fontWeight="900" fill="#ffd76b" letterSpacing="3.5">DUNDIES</text>
+      <rect x="0" y="62" width="320" height="18" fill="#9c3b30" opacity="0.45" />
+      <rect x="0" y="62" width="320" height="3" fill="#b8483a" opacity="0.6" />
+      <ellipse cx="160" cy="142" rx="138" ry="11" fill="#000" opacity="0.35" />
+      <rect x="24" y="124" width="272" height="14" rx="4" fill="#1c3f60" />
+      <rect x="24" y="120" width="272" height="6" fill="#2a5582" />
+      <g>
+        <path d="M148 124 q-4 -22 12 -26 q16 4 12 26z" fill="#1c2a3e" />
+        <circle cx="160" cy="92" r="10" fill="#1c2a3e" />
+        <path d="M168 96 q12 -6 14 -22" stroke="#1c2a3e" strokeWidth="6" fill="none" strokeLinecap="round" />
+      </g>
+      <g transform="translate(186 56)">
+        <circle cx="0" cy="0" r="20" fill="#ffd76b" opacity="0.2" />
+        <path d="M-18 -8 q18 -10 36 0 q-3 24 -18 30 q-15 -6 -18 -30z" fill="#ffd24a" />
+        <path d="M-18 -8 q-13 0 -13 12 q0 10 13 12" fill="none" stroke="#ffd24a" strokeWidth="5" />
+        <path d="M18 -8 q13 0 13 12 q0 10 -13 12" fill="none" stroke="#ffd24a" strokeWidth="5" />
+        <rect x="-4" y="22" width="8" height="10" fill="#caa030" />
+        <rect x="-14" y="32" width="28" height="6" rx="2" fill="#caa030" />
+        <ellipse cx="-8" cy="-2" rx="9" ry="3" fill="#fff" opacity="0.7" />
+        <path d="M22 -16 l1.5 4 4 1.5 -4 1.5 -1.5 4 -1.5 -4 -4 -1.5 4 -1.5z" fill="#fff" />
+        <path d="M-26 -10 l1.5 4 4 1.5 -4 1.5 -1.5 4 -1.5 -4 -4 -1.5 4 -1.5z" fill="#fff" />
+      </g>
+      <g transform="translate(70 96)">
+        <path d="M-18 0 L18 0 L4 26 L-4 26 Z" fill="#bfe6b0" />
+        <path d="M-18 0 L18 0 L4 26 L-4 26 Z" fill="none" stroke="#9fce8e" strokeWidth="1.5" />
+        <ellipse cx="0" cy="0" rx="19" ry="3.4" fill="#dff0d2" />
+        <rect x="-1.5" y="26" width="3" height="16" fill="#cdd6c8" />
+        <circle cx="14" cy="-3" r="4" fill="#8fbf66" />
+      </g>
+      <g>
+        <rect x="50" y="56" width="5" height="5" fill="#e24b4a" transform="rotate(20 52 58)" />
+        <rect x="260" y="48" width="5" height="5" fill="#7f77dd" transform="rotate(-15 262 50)" />
+        <rect x="120" y="64" width="4" height="4" fill="#3fb6a8" transform="rotate(35 122 66)" />
+        <circle cx="106" cy="48" r="2.5" fill="#ffd76b" />
+        <circle cx="218" cy="72" r="2.5" fill="#ffd76b" />
+        <circle cx="58" cy="80" r="2" fill="#e24b4a" />
+      </g>
+    </>);
+    // Friends — Joey wearing all of Chandler's clothes
+    case 20897: return (<>
+      <rect x="220" y="6" width="92" height="72" rx="3" fill="#ffd0e4" opacity="0.18" />
+      <g stroke="#ffd0e4" strokeWidth="2.5" opacity="0.3" fill="none">
+        <rect x="220" y="6" width="92" height="72" rx="3" />
+        <line x1="266" y1="6" x2="266" y2="78" />
+        <line x1="220" y1="42" x2="312" y2="42" />
+      </g>
+      <rect x="14" y="98" width="292" height="46" rx="14" fill="#c96a28" />
+      <rect x="6" y="74" width="38" height="60" rx="12" fill="#d9772e" />
+      <rect x="278" y="74" width="38" height="60" rx="12" fill="#d9772e" />
+      <rect x="58" y="82" width="92" height="30" rx="9" fill="#e08b46" />
+      <rect x="170" y="82" width="92" height="30" rx="9" fill="#e08b46" />
+      <g>
+        <ellipse cx="160" cy="146" rx="98" ry="8" fill="#000" opacity="0.25" />
+        <path d="M80 134 q-16 -110 80 -116 q96 6 80 116 z" fill="#1d2740" />
+        <path d="M96 104 q64 28 128 0" stroke="#2c3a5c" strokeWidth="3" fill="none" />
+        <path d="M88 72 q72 32 144 0" stroke="#2c3a5c" strokeWidth="3" fill="none" />
+        <path d="M100 42 q60 26 120 0" stroke="#2c3a5c" strokeWidth="3" fill="none" />
+        <path d="M84 52 q-36 -2 -54 22" stroke="#1d2740" strokeWidth="26" fill="none" strokeLinecap="round" />
+        <path d="M236 52 q36 -2 54 22" stroke="#1d2740" strokeWidth="26" fill="none" strokeLinecap="round" />
+        <circle cx="30" cy="74" r="11" fill="#1d2740" />
+        <circle cx="290" cy="74" r="11" fill="#1d2740" />
+        <circle cx="160" cy="20" r="22" fill="#1d2740" />
+        <path d="M80 134 q-16 -110 80 -116 q44 1 64 24" stroke="#ffd0e4" strokeWidth="3" opacity="0.5" fill="none" />
+      </g>
+      <path d="M194 12 q6 8 0 14 q-6 -6 0 -14z" fill="#bfe2f0" stroke="#7f9fc0" strokeWidth="1.2" />
+      <path d="M126 18 q4 6 0 10 q-4 -4 0 -10z" fill="#bfe2f0" stroke="#7f9fc0" strokeWidth="1" />
+    </>);
+    // Arrested Development — Tobias: "I'm afraid I just blue myself"
+    case 46254: return (<>
+      <rect x="0" y="0" width="320" height="100" fill={mid} />
+      <rect x="0" y="100" width="320" height="50" fill={dark} />
+      <rect x="0" y="98" width="320" height="3" fill="#7a3520" />
+      <g transform="translate(232 50)">
+        <rect x="-22" y="-32" width="44" height="56" rx="3" fill="#1a0905" stroke="#7a3520" strokeWidth="3" />
+        <rect x="-19" y="-29" width="38" height="50" rx="2" fill="#2a4a6a" opacity="0.4" />
+        <circle cx="0" cy="-12" r="6" fill="#5aa0d6" />
+        <path d="M-7 -6 q0 -2 7 -3 q7 1 7 3 q-1 18 -7 22 q-6 -4 -7 -22z" fill="#5aa0d6" />
+      </g>
+      <g>
+        <ellipse cx="140" cy="132" rx="40" ry="6" fill="#000" opacity="0.35" />
+        <path d="M114 132 q-18 -64 26 -68 q44 4 26 68 z" fill="#5aa0d6" />
+        <path d="M114 132 q-18 -64 26 -68 q12 1 18 8" stroke="#7fbbe0" strokeWidth="3" fill="none" opacity="0.7" />
+        <circle cx="140" cy="56" r="20" fill="#5aa0d6" />
+        <path d="M120 50 q20 -16 40 0 q-2 -10 -20 -10 q-18 0 -20 10z" fill="#3a82b8" />
+        <path d="M114 72 q-8 22 -2 42" stroke="#5aa0d6" strokeWidth="14" fill="none" strokeLinecap="round" />
+        <path d="M166 72 q8 22 2 42" stroke="#5aa0d6" strokeWidth="14" fill="none" strokeLinecap="round" />
+        <ellipse cx="108" cy="114" rx="7" ry="6" fill="#5aa0d6" />
+        <ellipse cx="172" cy="114" rx="7" ry="6" fill="#5aa0d6" />
+        <circle cx="125" cy="90" r="2" fill="#3a6f9c" />
+        <ellipse cx="155" cy="110" rx="2" ry="4" fill="#3a6f9c" />
+        <circle cx="145" cy="78" r="1.5" fill="#3a6f9c" />
+        <ellipse cx="135" cy="124" rx="1.5" ry="3" fill="#3a6f9c" />
+      </g>
+      <g transform="translate(58 122)">
+        <ellipse cx="0" cy="9" rx="38" ry="5" fill="#5aa0d6" />
+        <ellipse cx="-8" cy="9" rx="20" ry="3" fill="#7fbbe0" />
+        <g transform="translate(-2 -6) rotate(-55)">
+          <rect x="-18" y="-9" width="36" height="18" rx="2" fill="#9aa0aa" stroke="#1c1008" strokeWidth="1.5" />
+          <rect x="-20" y="-11" width="40" height="4" rx="1" fill="#7a7a83" stroke="#1c1008" strokeWidth="1" />
+          <path d="M-12 -11 q12 -8 24 0" fill="none" stroke="#1c1008" strokeWidth="2" />
+          <rect x="-12" y="-4" width="24" height="8" fill="#5aa0d6" />
+          <text x="0" y="2" textAnchor="middle" fontFamily="Arial Black,Arial" fontSize="6" fontWeight="900" fill="#fff">BLUE</text>
+        </g>
+      </g>
+      <g>
+        <circle cx="78" cy="48" r="4" fill="#5aa0d6" />
+        <ellipse cx="86" cy="56" rx="2.5" ry="1.5" fill="#5aa0d6" />
+        <circle cx="178" cy="34" r="3" fill="#5aa0d6" />
+        <circle cx="190" cy="46" r="2" fill="#5aa0d6" />
+      </g>
+    </>);
+    // Parks & Rec — Leslie: "You're all I need. I love you and I like you."
+    case 39411: return (<>
+      <ellipse cx="160" cy="-20" rx="200" ry="100" fill="#ffe7ad" opacity="0.12" />
+      <rect x="0" y="128" width="320" height="22" fill={dark} />
+      <rect x="120" y="128" width="80" height="22" fill="#a85a22" opacity="0.45" />
+      <rect x="120" y="126" width="80" height="3" fill="#caa040" opacity="0.7" />
+      <path d="M70 130 q0 -100 90 -100 q90 0 90 100" stroke="#caa040" strokeWidth="5" fill="none" />
+      <g>
+        <circle cx="78" cy="80" r="6" fill="#e2705a" /><circle cx="74" cy="84" r="2" fill="#a83b32" />
+        <circle cx="86" cy="60" r="5" fill="#e2705a" />
+        <circle cx="96" cy="44" r="6" fill="#d4537e" />
+        <circle cx="112" cy="32" r="5" fill="#e2705a" />
+        <circle cx="160" cy="22" r="6" fill="#d4537e" />
+        <circle cx="150" cy="24" r="5" fill="#e2705a" />
+        <circle cx="170" cy="24" r="5" fill="#e2705a" />
+        <circle cx="208" cy="32" r="5" fill="#e2705a" />
+        <circle cx="224" cy="44" r="6" fill="#d4537e" />
+        <circle cx="234" cy="60" r="5" fill="#e2705a" />
+        <circle cx="242" cy="80" r="6" fill="#e2705a" />
+        <g fill="#4e8c5a">
+          <ellipse cx="82" cy="76" rx="4" ry="2.5" />
+          <ellipse cx="92" cy="50" rx="3" ry="2" />
+          <ellipse cx="160" cy="18" rx="3.5" ry="2" />
+          <ellipse cx="228" cy="50" rx="3" ry="2" />
+          <ellipse cx="238" cy="76" rx="4" ry="2.5" />
+        </g>
+      </g>
+      <g>
+        <ellipse cx="125" cy="134" rx="22" ry="4" fill="#000" opacity="0.3" />
+        <path d="M104 132 q0 -38 21 -42 q21 4 21 42 z" fill="#1c3f3a" />
+        <path d="M104 132 q0 -38 21 -42 q9 2 14 8" stroke="#3fb6a8" strokeWidth="2" fill="none" opacity="0.5" />
+        <circle cx="125" cy="80" r="13" fill="#1c3f3a" />
+        <path d="M113 76 q12 -14 24 0 q-1 22 -12 26 q-11 -4 -12 -26z" fill="#0c2521" />
+        <path d="M137 80 q12 6 18 22 q-8 -4 -14 -6" fill="#fff" opacity="0.35" />
+        <ellipse cx="195" cy="134" rx="22" ry="4" fill="#000" opacity="0.3" />
+        <path d="M174 132 q0 -42 21 -46 q21 4 21 46 z" fill="#14141a" />
+        <path d="M188 95 l7 10 7 -10 z" fill="#e9e2cf" />
+        <path d="M195 100 l-3 22 3 6 3 -6z" fill="#3fb6a8" />
+        <circle cx="195" cy="82" r="13" fill="#14141a" />
+      </g>
+      <g>
+        <g transform="translate(160 70) scale(0.7)"><path d="M0 12 q-15 -10 -15 -22 q0 -8 8 -8 q4 0 7 6 q3 -6 7 -6 q8 0 8 8 q0 12 -15 22z" fill="#e24b4a" /></g>
+        <g transform="translate(146 92) scale(0.4)"><path d="M0 12 q-15 -10 -15 -22 q0 -8 8 -8 q4 0 7 6 q3 -6 7 -6 q8 0 8 8 q0 12 -15 22z" fill="#e24b4a" opacity="0.7" /></g>
+        <g transform="translate(176 96) scale(0.45)"><path d="M0 12 q-15 -10 -15 -22 q0 -8 8 -8 q4 0 7 6 q3 -6 7 -6 q8 0 8 8 q0 12 -15 22z" fill="#e24b4a" opacity="0.75" /></g>
+      </g>
+      <g fill="#ffd76b">
+        <path d="M40 60 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" />
+        <path d="M280 70 l1.6 4 4 1.6 -4 1.6 -1.6 4 -1.6 -4 -4 -1.6 4 -1.6z" />
+        <path d="M280 110 l1.2 3 3 1.2 -3 1.2 -1.2 3 -1.2 -3 -3 -1.2 3 -1.2z" />
+        <path d="M40 110 l1.2 3 3 1.2 -3 1.2 -1.2 3 -1.2 -3 -3 -1.2 3 -1.2z" />
+      </g>
+    </>);
+    default: return null;
+  }
+}
+
 // ---- prop SVGs (centered at origin; ~40-50px footprint) ----
 function propSVG(name: string): ReactNode {
   switch (name) {
@@ -284,14 +495,17 @@ function propSVG(name: string): ReactNode {
   }
 }
 
-export interface MemeSceneProps { scene?: string; color: string; mono: string; props?: string[]; muted?: boolean; ariaLabel?: string; className?: string; }
+export interface MemeSceneProps { scene?: string; color: string; mono: string; props?: string[]; jokeId?: number; muted?: boolean; ariaLabel?: string; className?: string; }
 
-export function MemeScene({ scene = 'default', color, mono, props: jokeProps, muted = false, ariaLabel, className }: MemeSceneProps) {
+export function MemeScene({ scene = 'default', color, mono, props: jokeProps, jokeId, muted = false, ariaLabel, className }: MemeSceneProps) {
   const raw = useId().replace(/[^a-zA-Z0-9]/g, '');
   const bg = `b${raw}`, vig = `v${raw}`;
   const mid = shade(color, 0.6), dark = shade(color, 0.26), light = shade(color, 1.65);
 
-  const inner = (() => {
+  // Bespoke scene overrides the template entirely (and skips prop overlay).
+  const bespoke = jokeId != null ? bespokeSVG(jokeId, color, mid, dark, light) : null;
+
+  const inner = bespoke ?? (() => {
     switch (scene) {
       case 'diner': return (<>
         <rect x="0" y="42" width="320" height="46" fill={shade(color, 0.42)} opacity="0.6" />
@@ -372,7 +586,8 @@ export function MemeScene({ scene = 'default', color, mono, props: jokeProps, mu
   })();
 
   const slots = PROP_SLOTS[scene] ?? PROP_SLOTS.default;
-  const propEls = (jokeProps ?? []).slice(0, 2).map((p, i) => {
+  // Bespoke scenes are self-contained — skip the prop overlay so they aren't double-decorated.
+  const propEls = bespoke ? null : (jokeProps ?? []).slice(0, 2).map((p, i) => {
     const node = propSVG(p);
     if (!node) return null;
     const s = slots[i];
