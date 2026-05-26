@@ -5,6 +5,7 @@ export const FORMAT_LABELS: Record<ShowFormat, string> = {
   multi_camera_live: 'Multi-Camera (Live)',
   multi_camera_sweetened: 'Multi-Camera (Sweetened)',
   hybrid: 'Hybrid',
+    animation: 'Animation',
 };
 
 // Format coefficients deprecated on 2026-04-16.
@@ -15,6 +16,7 @@ export const FORMAT_COEFFICIENTS: Record<ShowFormat, number> = {
   hybrid: 1.00,
   multi_camera_live: 1.00,
   multi_camera_sweetened: 1.00,
+  animation: 1.00,
 };
 
 export const JOKE_TYPE_LABELS: Record<JokeType, string> = {
