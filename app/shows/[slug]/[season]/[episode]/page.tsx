@@ -242,8 +242,32 @@ export default async function EpisodePage({
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-4 pb-8">
         {/* Episode description */}
         {detail.tmdb_overview && (
-          <p className="text-sm text-brand-text-secondary leading-relaxed mb-4">
+          <p className="text-sm text-brand-text-secondary leading-relaxed mb-3">
             {detail.tmdb_overview}
+          </p>
+        )}
+
+        {/* AI insight one-liner */}
+        {(detail as any).insight && (
+          <p className="text-sm italic text-brand-gold/90 leading-relaxed mb-4 border-l-2 border-brand-gold/40 pl-3">
+            {(detail as any).insight}
+          </p>
+        )}
+
+        {/* Crew: director + writers */}
+        {((detail as any).director?.length > 0 || (detail as any).writers?.length > 0) && (
+          <p className="text-xs text-brand-text-muted mb-3">
+            {(detail as any).director?.length > 0 && (
+              <>
+                Directed by <span className="text-brand-text-secondary">{(detail as any).director.join(', ')}</span>
+              </>
+            )}
+            {(detail as any).director?.length > 0 && (detail as any).writers?.length > 0 && ' · '}
+            {(detail as any).writers?.length > 0 && (
+              <>
+                Written by <span className="text-brand-text-secondary">{(detail as any).writers.slice(0, 3).join(', ')}</span>
+              </>
+            )}
           </p>
         )}
 
