@@ -143,9 +143,14 @@ export default async function RankingsPage() {
     .sort((a, b) => (a.vsCastmates ?? 0) - (b.vsCastmates ?? 0))
     .slice(0, 3);
 
-  // Show matchup data
-  const arrestedDev = analyzedShows.find(s => s.slug === 'arrested-development');
-  const parks = analyzedShows.find(s => s.slug === 'parks-and-recreation');
+  // Show matchup data — dynamic top-2 of the current leaderboard.
+  // (Was hardcoded AD vs Parks; Parks isn't scored yet, so the card rendered empty.)
+  const sortedByHI = [...analyzedShows].sort((a, b) => b.humor_index - a.humor_index);
+  const topShow = sortedByHI[0];
+  const runnerUp = sortedByHI[1];
+  const topGap = topShow && runnerUp
+    ? Math.round((topShow.humor_index - runnerUp.humor_index) * 10) / 10
+    : 0;
 
   const PODIUM_COLORS = ['text-brand-gold', 'text-gray-300', 'text-amber-600'];
   const PODIUM_LABELS = ['#1', '#2', '#3'];
@@ -286,32 +291,32 @@ export default async function RankingsPage() {
             </p>
           </Link>
 
-          {/* Head-to-Head — AD vs Parks (top 2 on the board, 4.65-pt gap) */}
+          {/* Head-to-Head — current #1 vs #2 (dynamic). */}
+          {topShow && runnerUp && (
           <Link
-            href="/compare/arrested-development-vs-parks-and-recreation"
+            href={`/compare/${topShow.slug}-vs-${runnerUp.slug}`}
             className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
           >
             <p className="text-xs uppercase tracking-widest text-purple-400 mb-1">Head-to-Head</p>
             <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
-              Arrested Development vs Parks and Rec
+              {topShow.name} vs {runnerUp.name}
             </h2>
-            {arrestedDev && parks && (
-              <div className="flex items-center gap-4">
-                <div className="flex-1 bg-brand-surface rounded-lg p-4 text-center">
-                  <p className="font-mono text-2xl text-brand-gold">{formatIndex(arrestedDev.humor_index)}</p>
-                  <p className="text-xs text-brand-text-muted mt-1">Arrested Development</p>
-                </div>
-                <span className="text-lg text-brand-text-muted font-medium">vs</span>
-                <div className="flex-1 bg-brand-surface rounded-lg p-4 text-center">
-                  <p className="font-mono text-2xl text-blue-400">{formatIndex(parks.humor_index)}</p>
-                  <p className="text-xs text-brand-text-muted mt-1">Parks and Rec</p>
-                </div>
+            <div className="flex items-center gap-4">
+              <div className="flex-1 bg-brand-surface rounded-lg p-4 text-center">
+                <p className="font-mono text-2xl text-brand-gold">{formatIndex(topShow.humor_index)}</p>
+                <p className="text-xs text-brand-text-muted mt-1 truncate">{topShow.name}</p>
               </div>
-            )}
+              <span className="text-lg text-brand-text-muted font-medium">vs</span>
+              <div className="flex-1 bg-brand-surface rounded-lg p-4 text-center">
+                <p className="font-mono text-2xl text-blue-400">{formatIndex(runnerUp.humor_index)}</p>
+                <p className="text-xs text-brand-text-muted mt-1 truncate">{runnerUp.name}</p>
+              </div>
+            </div>
             <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
-              The biggest gap on the board · See full comparison →
+              Top of the board · {topGap}-pt gap · See full comparison →
             </p>
           </Link>
+          )}
 
           {/* Worst Episodes */}
           <Link
