@@ -101,13 +101,13 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Hero section with backdrop */}
-      <div className="relative w-full h-[340px] sm:h-[500px] overflow-hidden">
+      <div className="relative w-full aspect-[16/9] min-h-[340px] max-h-[78vh] overflow-hidden">
         {show.backdrop_path ? (
           <Image
             src={`https://image.tmdb.org/t/p/original${show.backdrop_path}`}
             alt={`${show.name} backdrop`}
             fill
-            className="object-cover object-[50%_20%]"
+            className="object-cover object-[50%_45%]"
             priority
             sizes="100vw"
           />
@@ -115,7 +115,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           <div className="absolute inset-0 bg-brand-surface" />
         )}
         {/* Gradient overlay — keeps text readable, lets image breathe */}
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 10%, rgba(15,15,15,0.6) 25%, rgba(15,15,15,0.1) 40%, transparent 60%)' }} />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 8%, rgba(15,15,15,0.75) 22%, rgba(15,15,15,0.2) 38%, transparent 55%)' }} />
 
         {/* Content overlay */}
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-4 sm:px-6 pb-6">
