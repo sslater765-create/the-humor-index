@@ -32,6 +32,18 @@ const STREAMING_DATA: Record<string, { platform: string; url: string; label: str
   'two-and-a-half-men': [
     { platform: 'Peacock', url: 'https://www.peacocktv.com/watch/asset/tv/two-and-a-half-men/5312185', label: 'Watch on Peacock' },
   ],
+  'community': [
+    { platform: 'Netflix', url: 'https://www.netflix.com/title/70155589', label: 'Watch on Netflix' },
+  ],
+  'taxi': [
+    { platform: 'Paramount+', url: 'https://www.paramountplus.com/shows/taxi/', label: 'Watch on Paramount+' },
+  ],
+  'the-simpsons': [
+    { platform: 'Disney+', url: 'https://www.disneyplus.com/series/the-simpsons/3ZoBZ3WPGUNg', label: 'Watch on Disney+' },
+  ],
+  'veep': [
+    { platform: 'Max', url: 'https://www.max.com/shows/veep/c3343cba-4dc6-4263-b357-72c1c0b65a45', label: 'Watch on Max' },
+  ],
 };
 
 interface Props {
