@@ -5,6 +5,11 @@ import { scoreToColor, formatIndex } from '@/lib/scoring';
 import { getTier } from '@/lib/tiers';
 import { getExplorerConfig } from '@/lib/explorerPresets';
 import ShareButton from '@/components/ui/ShareButton';
+import {
+  trackExplorerPresetApplied,
+  trackExplorerLinkCopied,
+  trackExplorerCutChanged,
+} from '@/lib/analytics';
 
 interface Props {
   slug: string;
@@ -102,6 +107,18 @@ export default function HumorIndexExplorer({ slug, showName, episodes }: Props) 
     history.replaceState(null, '', enc ? `#sel=${enc}` : ' ');
   }, [selected]);
 
+  // Fire one `explorer_cut_changed` event per (session, show) the first time
+  // the user moves off the default "everything selected" cut. Keeps event
+  // volume sane while still flagging real interaction.
+  const cutTracked = useRef(false);
+  useEffect(() => {
+    if (!hydrated.current || cutTracked.current) return;
+    if (selected.size !== eps.length) {
+      cutTracked.current = true;
+      trackExplorerCutChanged(slug, selected.size);
+    }
+  }, [selected, eps.length, slug]);
+
   // Global pointerup resolves a click (toggle one) vs a drag (select a run).
   useEffect(() => {
     const onUp = (e: PointerEvent) => {
@@ -183,6 +200,7 @@ export default function HumorIndexExplorer({ slug, showName, episodes }: Props) 
       navigator.clipboard.writeText(window.location.href);
       setCopied(true);
       setTimeout(() => setCopied(false), 1800);
+      trackExplorerLinkCopied(slug, selected.size);
     }
   };
 
@@ -292,7 +310,7 @@ export default function HumorIndexExplorer({ slug, showName, episodes }: Props) 
         <span className="text-[11.5px] uppercase tracking-wide text-brand-text-muted mr-1">Quick views</span>
         <button onClick={selectAll} className="font-medium text-[12.5px] px-3 py-1.5 rounded-lg bg-brand-gold text-brand-dark">Full series</button>
         {(config.storyPresets ?? []).map(p => (
-          <button key={p.id} onClick={() => applyPick(p.pick)} title={p.blurb}
+          <button key={p.id} onClick={() => { applyPick(p.pick); trackExplorerPresetApplied(slug, p.id); }} title={p.blurb}
             className="font-medium text-[12.5px] px-3 py-1.5 rounded-lg bg-brand-surface border border-brand-border text-brand-text-primary hover:border-brand-text-muted">
             {p.label}
           </button>

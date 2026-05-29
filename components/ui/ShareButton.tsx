@@ -1,4 +1,5 @@
 'use client';
+import { trackShareClick } from '@/lib/analytics';
 
 interface Props {
   targetId: string;
@@ -7,6 +8,9 @@ interface Props {
 
 export default function ShareButton({ targetId, filename }: Props) {
   async function handleShare() {
+    if (typeof window !== 'undefined') {
+      trackShareClick('image_download', window.location.href);
+    }
     const { default: html2canvas } = await import('html2canvas');
     const el = document.getElementById(targetId);
     if (!el) return;

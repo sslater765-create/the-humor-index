@@ -27,3 +27,19 @@ export const trackEpisodeViewDeep = (show: string, season: number, episode: numb
 
 export const trackShareClick = (platform: string, url: string) =>
   trackEvent('share_click', { platform, page_url: url });
+
+// Explorer-specific. These signal someone is actually using the cut-builder,
+// which is the single best engagement quality signal /explore can produce.
+export const trackExplorerPresetApplied = (slug: string, presetId: string) =>
+  trackEvent('explorer_preset_applied', { show: slug, preset: presetId });
+
+export const trackExplorerLinkCopied = (slug: string, episodeCount: number) =>
+  trackEvent('explorer_link_copied', { show: slug, episodes: episodeCount });
+
+export const trackExplorerShareImage = (slug: string, episodeCount: number) =>
+  trackEvent('explorer_share_image', { show: slug, episodes: episodeCount });
+
+// Marketed as a "real" interaction: someone actively changed the cut at least once.
+// Fire once per session per show to keep volume sane.
+export const trackExplorerCutChanged = (slug: string, episodeCount: number) =>
+  trackEvent('explorer_cut_changed', { show: slug, episodes: episodeCount });
