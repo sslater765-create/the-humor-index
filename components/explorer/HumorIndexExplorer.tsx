@@ -104,7 +104,7 @@ export default function HumorIndexExplorer({ slug, showName, episodes }: Props) 
   useEffect(() => {
     if (!hydrated.current) return;
     const enc = encodeSel(selected);
-    history.replaceState(null, '', enc ? `#sel=${enc}` : ' ');
+    history.replaceState(null, '', enc ? `${window.location.pathname}#sel=${enc}` : window.location.pathname);
   }, [selected]);
 
   // Fire one `explorer_cut_changed` event per (session, show) the first time
