@@ -10,6 +10,23 @@ interface Props {
   showSlug?: string;
 }
 
+type DialogueLine = { speaker?: string; line: string };
+
+function Dialogue({ lines, className = '' }: { lines: DialogueLine[]; className?: string }) {
+  return (
+    <div className={`space-y-1 ${className}`}>
+      {lines.map((d, i) => (
+        <p key={i} className="text-sm leading-relaxed">
+          {d.speaker && (
+            <span className="text-brand-gold font-medium mr-1.5">{d.speaker}:</span>
+          )}
+          <span className="text-brand-text-primary">{d.line}</span>
+        </p>
+      ))}
+    </div>
+  );
+}
+
 export default function JokeRow({ joke, isStandout, showSlug }: Props) {
   const [expanded, setExpanded] = useState(false);
 
@@ -31,7 +48,7 @@ export default function JokeRow({ joke, isStandout, showSlug }: Props) {
               {joke.timestamp_estimate}
             </span>
             <div className="flex-1 min-w-0">
-              <p className="text-sm text-brand-text-primary leading-relaxed">{joke.text}</p>
+              {(joke as any).dialogue?.length > 0 ? <Dialogue lines={(joke as any).dialogue} /> : <p className="text-sm text-brand-text-primary leading-relaxed">{joke.text}</p>}
               <div className="flex flex-wrap items-center gap-1 mt-2">
                 {joke.characters.map(c => (
                   showSlug ? (
@@ -89,7 +106,7 @@ export default function JokeRow({ joke, isStandout, showSlug }: Props) {
           </div>
           <div>
             <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Punchline</p>
-            <p className="text-sm text-brand-text-primary">{joke.punchline}</p>
+            {(joke as any).dialogue?.length > 0 ? <Dialogue lines={(joke as any).dialogue} /> : <p className="text-sm text-brand-text-primary">{joke.punchline}</p>}
           </div>
           <div>
             <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Why it works</p>
