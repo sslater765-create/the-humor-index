@@ -115,7 +115,7 @@ export default async function LeastFunnyCharactersPage() {
         crumbs={[
           { name: 'Home', path: '/' },
           { name: 'Rankings', path: '/rankings' },
-          { name: 'Least Funny Characters', path: '/rankings/least-funny-characters' },
+          { name: 'Below Cast Average', path: '/rankings/least-funny-characters' },
         ]}
       />
       <PageHeader
@@ -135,7 +135,7 @@ export default async function LeastFunnyCharactersPage() {
         {/* Context cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
           <div className="bg-brand-surface border border-rose-500/30 rounded-lg p-4">
-            <p className="text-[10px] uppercase tracking-widest text-rose-400">Statistically below cast</p>
+            <p className="text-[10px] uppercase tracking-widest text-rose-400">Below cast average · dialogue only</p>
             <p className="font-mono text-lg text-rose-400 mt-1">{ranked.length}</p>
             <p className="text-xs text-brand-text-muted mt-1">95% CI on their vs-cast delta stays negative — real finding.</p>
           </div>
