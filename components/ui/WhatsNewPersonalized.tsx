@@ -14,6 +14,7 @@ interface NewItem {
 
 // These are the site's content items with their publish dates
 const ALL_ITEMS: NewItem[] = [
+  { href: '/shows/its-always-sunny', label: 'Recently Completed', labelColor: 'text-emerald-400', title: "It's Always Sunny in Philadelphia — All 177 Episodes (S1–S17)", subtitle: '8,786 jokes analyzed · Debuts at #5', date: '2026-05-30' },
   { href: '/shows/veep', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Veep — All 65 Episodes', subtitle: '4,873 jokes analyzed · Debuts tied at #3 (79.9)', date: '2026-05-28' },
   { href: '/shows/the-simpsons', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'The Simpsons — All 226 Episodes (S1–S10)', subtitle: '14,352 jokes analyzed · Debuts at #3', date: '2026-05-26' },
   { href: '/blog/community-gas-leak-year', label: 'Latest Blog', labelColor: 'text-brand-gold', title: 'You Can See Exactly When Dan Harmon Left Community', subtitle: 'May 24, 2026', date: '2026-05-24' },
