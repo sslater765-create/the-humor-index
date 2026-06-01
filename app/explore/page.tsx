@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { getAllShows, getEpisodes } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
 import { getExplorerConfig } from '@/lib/explorerPresets';
-import PageHeader from '@/components/layout/PageHeader';
 
 export const dynamic = 'force-static';
 
@@ -91,66 +90,106 @@ export default async function ExploreHub() {
 
   return (
     <div>
-      <PageHeader
-        label="Explorer"
-        title="What's the funniest cut of your favorite sitcom?"
-        subtitle="Drop a weak season. Isolate a hot streak. Compare eras. Every episode scored by AI — pick your cut and see the Humor Index, with 95% confidence intervals."
-      />
+      {/* Editorial hero */}
+      <section className="relative border-b border-brand-border">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-10 sm:pt-16 sm:pb-14">
+          <p className="text-xs uppercase tracking-[0.25em] text-brand-gold mb-4">The Explorer</p>
+          <h1 className="font-serif italic text-4xl sm:text-6xl text-brand-text-primary leading-[1.05] mb-5 max-w-3xl">
+            What&apos;s the funniest cut<br />
+            <span className="text-brand-text-secondary">of your favorite sitcom?</span>
+          </h1>
+          <p className="text-base sm:text-lg text-brand-text-secondary max-w-2xl leading-relaxed">
+            Drop a weak season. Isolate a hot streak. Compare eras. Every episode scored by Claude —
+            pick your cut and see the Humor Index, with 95% confidence intervals.
+          </p>
+        </div>
+      </section>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 space-y-12">
+        {/* Hero pick — magazine cover treatment */}
         {hero && hero.delta != null && hero.signatureAvg != null && (
           <Link
             href={`/shows/${hero.slug}/explore`}
-            className="relative block bg-brand-card border border-brand-gold/40 rounded-2xl overflow-hidden mb-6 hover:border-brand-gold transition-colors group"
+            className="relative block bg-brand-card border border-brand-gold/40 rounded-2xl overflow-hidden hover:border-brand-gold transition-colors group"
           >
             {hero.backdrop_path && (
-              <div className="relative h-32 sm:h-40 w-full">
+              <div className="relative h-44 sm:h-56 w-full">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`https://image.tmdb.org/t/p/w1280${hero.backdrop_path}`} alt="" className="w-full h-full object-cover opacity-40" />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/70 to-transparent" />
-              </div>
-            )}
-            <div className="p-5 sm:p-6">
-              <div className="text-[11px] uppercase tracking-wider text-brand-gold/80 mb-1.5">Most dramatic cut on the site</div>
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                <span className="text-xl sm:text-2xl font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors">{hero.name}: {hero.signatureLabel}</span>
-                <span className="font-mono text-base sm:text-lg text-brand-gold">{formatIndex(hero.signatureAvg)}</span>
-                <span className={`font-mono text-sm ${hero.delta >= 0 ? 'text-brand-teal' : 'text-brand-text-muted'}`}>
-                  {hero.delta >= 0 ? '+' : ''}{hero.delta.toFixed(1)} vs full series
+                <img src={`https://image.tmdb.org/t/p/w1280${hero.backdrop_path}`} alt="" className="w-full h-full object-cover opacity-50" />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/60 to-transparent" />
+                <span className="absolute top-5 left-6 text-[10px] uppercase tracking-[0.25em] text-brand-gold">
+                  Most dramatic cut on the site
                 </span>
               </div>
-              <p className="text-sm text-brand-text-secondary mt-2 leading-snug">
+            )}
+            <div className="px-6 sm:px-8 pb-7 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-4 sm:gap-8 items-end">
+                <div>
+                  <h2 className="font-serif italic text-3xl sm:text-5xl text-brand-text-primary group-hover:text-brand-gold transition-colors leading-tight">
+                    {hero.name}:
+                  </h2>
+                  <p className="font-serif italic text-2xl sm:text-3xl text-brand-text-secondary mt-1 leading-tight">
+                    {hero.signatureLabel}
+                  </p>
+                </div>
+                <div className="text-right">
+                  <p className="font-serif italic text-5xl sm:text-6xl text-brand-gold leading-none">
+                    {formatIndex(hero.signatureAvg)}
+                  </p>
+                  <p className={`text-sm font-medium mt-2 ${hero.delta >= 0 ? 'text-emerald-400' : 'text-brand-text-muted'}`}>
+                    {hero.delta >= 0 ? '+' : ''}{hero.delta.toFixed(1)} vs full series
+                  </p>
+                </div>
+              </div>
+              <p className="text-sm text-brand-text-secondary mt-5 leading-relaxed">
                 See how this cut was built — then build your own.
               </p>
-              <span className="inline-block text-xs text-brand-gold mt-3">Open this cut in the Explorer →</span>
+              <span className="inline-block text-xs uppercase tracking-widest text-brand-gold mt-4">
+                Open this cut in the Explorer →
+              </span>
             </div>
           </Link>
         )}
 
-        <div className="grid sm:grid-cols-2 gap-4">
-          {rest.map(t => (
-            <Link
-              key={t.slug}
-              href={`/shows/${t.slug}/explore`}
-              className="relative block bg-brand-card border border-brand-border rounded-2xl overflow-hidden hover:border-brand-gold/40 transition-colors group"
-            >
-              {t.backdrop_path && (
-                <div className="relative h-24 w-full">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={`https://image.tmdb.org/t/p/w780${t.backdrop_path}`} alt="" className="w-full h-full object-cover opacity-30" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-card to-transparent" />
+        {/* Section header */}
+        <div className="pt-2">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Every Show, Recut</p>
+          <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
+            Build your own cut.
+          </h2>
+          <p className="text-sm text-brand-text-secondary max-w-xl mb-8 leading-relaxed">
+            Each show has its own preset cuts — Golden eras, Renaissance arcs, hot streaks. Or build a custom slice and see how it scores.
+          </p>
+
+          <div className="grid sm:grid-cols-2 gap-5">
+            {rest.map(t => (
+              <Link
+                key={t.slug}
+                href={`/shows/${t.slug}/explore`}
+                className="relative block bg-brand-card border border-brand-border rounded-2xl overflow-hidden hover:border-brand-gold/40 transition-colors group"
+              >
+                {t.backdrop_path && (
+                  <div className="relative h-32 w-full">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`https://image.tmdb.org/t/p/w780${t.backdrop_path}`} alt="" className="w-full h-full object-cover opacity-40 group-hover:opacity-55 transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/50 to-transparent" />
+                    <span className="absolute top-3 right-4 font-serif italic text-xl text-brand-gold drop-shadow-md">
+                      {formatIndex(t.humor_index)}
+                    </span>
+                  </div>
+                )}
+                <div className="p-5">
+                  <h3 className="font-serif italic text-xl text-brand-text-primary group-hover:text-brand-gold transition-colors leading-tight mb-2">
+                    {t.name}
+                  </h3>
+                  <p className="text-sm text-brand-text-secondary mb-3 leading-relaxed">{t.line}</p>
+                  <span className="inline-block text-[10px] uppercase tracking-widest text-brand-gold">
+                    Open the explorer →
+                  </span>
                 </div>
-              )}
-              <div className="p-5">
-                <div className="flex items-baseline justify-between gap-3">
-                  <span className="text-base font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors">{t.name}</span>
-                  <span className="font-mono text-sm text-brand-gold shrink-0">{formatIndex(t.humor_index)}</span>
-                </div>
-                <p className="text-sm text-brand-text-secondary mt-1.5 leading-snug">{t.line}</p>
-                <span className="inline-block text-xs text-brand-gold mt-3">Open the explorer →</span>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>
