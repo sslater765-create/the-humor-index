@@ -37,6 +37,9 @@ interface TopJoke {
 interface TopCharacter {
   name: string;
   showName: string;
+  showSlug: string;
+  actorOrProfile?: string;
+  profilePath?: string;
   totalJokes: number;
   war: number;
   quality: number;
@@ -147,6 +150,9 @@ export default async function RankingsPage() {
         allCharacters.push({
           name: c.character_full_name || c.name,
           showName: show.name,
+          showSlug: show.slug,
+          actorOrProfile: (c as any).actor,
+          profilePath: (c as any).profile_path,
           totalJokes: c.total_jokes,
           war: c.war ?? 0,
           quality: ((c.avg_craft ?? 0) + (c.avg_impact ?? 0)) / 2,
@@ -181,6 +187,11 @@ export default async function RankingsPage() {
   const topGap = topShow && runnerUp
     ? Math.round((topShow.humor_index - runnerUp.humor_index) * 10) / 10
     : 0;
+
+  // Worst episodes — bottom 3 from the same allEpisodes list, ascending HI.
+  const worstEpisodes = [...allEpisodes]
+    .sort((a, b) => a.humor_index - b.humor_index)
+    .slice(0, 3);
 
   const PODIUM_COLORS = ['text-brand-gold', 'text-gray-300', 'text-amber-600'];
   const PODIUM_LABELS = ['#1', '#2', '#3'];
@@ -286,188 +297,236 @@ export default async function RankingsPage() {
           View the full episode leaderboard — all {allEpisodes.length} ranked →
         </Link>
 
-        {/* 2-column grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        {/* SECTION DIVIDER — magazine-y page break */}
+        <div className="flex items-center gap-4 pt-4">
+          <span className="h-px flex-1 bg-brand-border" />
+          <span className="text-[10px] uppercase tracking-[0.3em] text-brand-text-muted">More from the index</span>
+          <span className="h-px flex-1 bg-brand-border" />
+        </div>
 
-          {/* Jokes Per Minute */}
-          <Link
-            href="/rankings/jokes-per-minute"
-            className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
-          >
-            <p className="text-xs uppercase tracking-widest text-amber-400 mb-1">Joke Density</p>
-            <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
-              Jokes Per Minute, Ranked
-            </h2>
-            <div className="space-y-2.5">
-              {topJpmShows.map((s, i) => (
-                <div key={s.slug} className="flex items-center gap-3 bg-brand-surface rounded-lg px-3 py-2.5">
-                  <span className="font-mono text-sm text-brand-text-muted w-4">{i + 1}</span>
-                  <span className="text-sm text-brand-text-primary flex-1 truncate">{s.name}</span>
-                  <span className="font-mono text-brand-gold">{s.avg_jpm}</span>
-                  <span className="text-[10px] text-brand-text-muted uppercase tracking-widest">/min</span>
-                </div>
-              ))}
-            </div>
-            <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
-              See the full density ranking →
-            </p>
-          </Link>
-
-          {/* Best Jokes */}
+        {/* BEST JOKE EVER — full-width pull-quote treatment, the page's editorial centerpiece */}
+        {topJoke && (
           <Link
             href="/rankings/best-jokes"
-            className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
+            className="block relative bg-brand-card border border-brand-border rounded-xl p-8 sm:p-12 hover:border-brand-gold/40 transition-colors group overflow-hidden"
           >
-            <p className="text-xs uppercase tracking-widest text-blue-400 mb-1">Jokes Scored</p>
-            <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
-              The Best Jokes Ever Written
-            </h2>
-            {topJoke && (
-              <div className="bg-brand-surface rounded-lg p-4">
-                <p className="text-sm text-brand-text-secondary italic leading-relaxed line-clamp-3 mb-3">
-                  &ldquo;{topJoke.text}&rdquo;
-                </p>
-                <div className="flex items-center justify-between">
-                  <p className="text-xs text-brand-text-muted">
-                    {topJoke.characters[0] && <span className="text-brand-text-secondary">{topJoke.characters[0]}</span>}
-                    {topJoke.characters[0] && ' — '}{topJoke.showName}
+            <div className="absolute top-6 left-6 sm:top-10 sm:left-10 font-serif text-7xl sm:text-9xl text-brand-gold/15 leading-none select-none pointer-events-none">&ldquo;</div>
+            <div className="relative">
+              <p className="text-[10px] uppercase tracking-[0.3em] text-blue-400 font-medium mb-4">The Single Best Joke We&rsquo;ve Scored</p>
+              <blockquote className="font-serif italic text-2xl sm:text-3xl text-white leading-snug mb-6 max-w-3xl">
+                {topJoke.text}
+              </blockquote>
+              <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                <div>
+                  <p className="text-sm text-brand-text-primary">
+                    {topJoke.characters[0] && <span className="text-brand-gold font-medium">{topJoke.characters[0]}</span>}
+                    {topJoke.characters[0] && <span className="text-brand-text-muted"> · </span>}
+                    <span className="text-brand-text-secondary">{topJoke.showName}</span>
+                    <span className="text-brand-text-muted"> · </span>
+                    <span className="text-brand-text-muted italic">&ldquo;{topJoke.episodeTitle}&rdquo;</span>
                   </p>
-                  <div className="flex items-center gap-2 text-xs">
-                    <span className="text-brand-gold font-mono">{topJoke.craft_total.toFixed(1)}</span>
-                    <span className="text-brand-text-muted">/</span>
-                    <span className="text-emerald-400 font-mono">{topJoke.impact_score.toFixed(1)}</span>
+                </div>
+                <div className="flex items-center gap-6 text-sm">
+                  <div>
+                    <p className="font-mono text-2xl text-brand-gold">{topJoke.craft_total.toFixed(1)}</p>
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Craft</p>
+                  </div>
+                  <div>
+                    <p className="font-mono text-2xl text-emerald-400">{topJoke.impact_score.toFixed(1)}</p>
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Impact</p>
                   </div>
                 </div>
               </div>
-            )}
-            <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
-              View top 100 jokes →
-            </p>
-          </Link>
-
-          {/* Funniest Characters */}
-          <Link
-            href="/rankings/funniest-characters"
-            className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
-          >
-            <p className="text-xs uppercase tracking-widest text-emerald-400 mb-1">Characters Ranked</p>
-            <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
-              The Funniest Characters of All Time
-            </h2>
-            <div className="space-y-2.5">
-              {topCharacters.map((char, i) => (
-                <div key={char.name} className="flex items-center gap-3 bg-brand-surface rounded-lg px-3 py-2.5">
-                  <RankBadge rank={i + 1} />
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-brand-text-primary">{char.name}</p>
-                    <p className="text-xs text-brand-text-muted">{char.showName} &middot; {char.totalJokes} jokes</p>
-                  </div>
-                  <span className="font-mono text-sm text-brand-gold">
-                    {char.war.toFixed(0)}
-                  </span>
-                </div>
-              ))}
-            </div>
-            <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
-              View all characters →
-            </p>
-          </Link>
-
-          {/* Head-to-Head — current #1 vs #2 (dynamic). */}
-          {topShow && runnerUp && (
-          <Link
-            href={`/compare/${topShow.slug}-vs-${runnerUp.slug}`}
-            className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
-          >
-            <p className="text-xs uppercase tracking-widest text-purple-400 mb-1">Head-to-Head</p>
-            <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
-              {topShow.name} vs {runnerUp.name}
-            </h2>
-            <div className="flex items-center gap-4">
-              <div className="flex-1 bg-brand-surface rounded-lg p-4 text-center">
-                <p className="font-mono text-2xl text-brand-gold">{formatIndex(topShow.humor_index)}</p>
-                <p className="text-xs text-brand-text-muted mt-1 truncate">{topShow.name}</p>
-              </div>
-              <span className="text-lg text-brand-text-muted font-medium">vs</span>
-              <div className="flex-1 bg-brand-surface rounded-lg p-4 text-center">
-                <p className="font-mono text-2xl text-blue-400">{formatIndex(runnerUp.humor_index)}</p>
-                <p className="text-xs text-brand-text-muted mt-1 truncate">{runnerUp.name}</p>
-              </div>
-            </div>
-            <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
-              Top of the board · {topGap}-pt gap · See full comparison →
-            </p>
-          </Link>
-          )}
-
-          {/* Worst Episodes */}
-          <Link
-            href="/rankings/worst-episodes"
-            className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
-          >
-            <p className="text-xs uppercase tracking-widest text-rose-400 mb-1">The Other End</p>
-            <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
-              The Worst Episodes of All Time
-            </h2>
-            <div className="bg-brand-surface rounded-lg p-4">
-              <p className="text-sm text-brand-text-secondary leading-relaxed">
-                Every show has them. Pilots that haven&rsquo;t found the voice. Clip shows.
-                Episodes where the plot forgot to include jokes. The 50 lowest-scoring episodes
-                in our dataset &mdash; ranked.
+              <p className="text-xs text-brand-text-muted mt-6 group-hover:text-brand-gold transition-colors">
+                Read the top 100 jokes ever scored →
               </p>
             </div>
-            <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
-              See the bottom 50 &rarr;
-            </p>
           </Link>
+        )}
 
-          {/* Least Funny Characters */}
+        {/* TWO-COLUMN: People (funniest + below cast) — character portraits make this section sing */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+          {/* Funniest Characters — portrait stack with WAR as the editorial number */}
           <Link
-            href="/rankings/least-funny-characters"
-            className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
+            href="/rankings/funniest-characters"
+            className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group"
           >
-            <p className="text-xs uppercase tracking-widest text-rose-400 mb-1">Below Their Cast</p>
-            <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
-              Who Trails Their Own Ensemble
-            </h2>
-            <div className="space-y-2.5">
-              {bottomCharacters.map((char, i) => (
-                <div key={char.name} className="flex items-center gap-3 bg-brand-surface rounded-lg px-3 py-2.5">
-                  <RankBadge rank={i + 1} />
+            <div className="flex items-baseline justify-between mb-5">
+              <div>
+                <p className="text-[10px] uppercase tracking-[0.3em] text-emerald-400 font-medium mb-1">Characters Ranked</p>
+                <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">The Funniest Characters of All Time</h2>
+              </div>
+            </div>
+            <div className="space-y-3">
+              {topCharacters.map((char, i) => (
+                <div key={`${char.showSlug}-${char.name}`} className="flex items-center gap-4">
+                  {char.profilePath ? (
+                    <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 bg-brand-surface ring-1 ring-brand-border">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={`https://image.tmdb.org/t/p/w185${char.profilePath}`} alt={char.actorOrProfile || char.name} className="object-cover w-full h-full" />
+                    </div>
+                  ) : (
+                    <div className="w-14 h-14 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center shrink-0">
+                      <span className="text-base text-brand-text-muted">{char.name[0]}</span>
+                    </div>
+                  )}
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-brand-text-primary">{char.name}</p>
-                    <p className="text-xs text-brand-text-muted">{char.showName} &middot; vs castmates</p>
+                    <p className="flex items-baseline gap-2">
+                      <span className={`font-mono text-xs ${PODIUM_COLORS[i]}`}>#{i + 1}</span>
+                      <span className="text-base font-medium text-brand-text-primary truncate">{char.name}</span>
+                    </p>
+                    <p className="text-xs text-brand-text-muted">{char.showName} · {char.totalJokes.toLocaleString()} jokes</p>
                   </div>
-                  <span className="font-mono text-sm text-rose-400">
-                    {char.vsCastmates != null ? `${char.vsCastmates.toFixed(3)}` : '—'}
-                  </span>
+                  <div className="text-right">
+                    <p className="font-mono text-xl text-brand-gold">{char.war.toFixed(0)}</p>
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">WAR</p>
+                  </div>
                 </div>
               ))}
             </div>
-            <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
-              See full list &rarr;
-            </p>
+            <p className="text-xs text-brand-text-muted mt-5 group-hover:text-brand-gold transition-colors">All characters, ranked →</p>
           </Link>
 
-          {/* Search */}
+          {/* Below Their Cast — portraits with rose vs-cast numbers */}
           <Link
-            href="/search"
-            className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
+            href="/rankings/least-funny-characters"
+            className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group"
           >
-            <p className="text-xs uppercase tracking-widest text-amber-400 mb-1">Search</p>
-            <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4">
-              Search Every Joke
-            </h2>
-            <div className="bg-brand-surface rounded-lg p-4 text-center">
-              <p className="font-mono text-3xl text-brand-gold">{searchableJokes.toLocaleString()}</p>
-              <p className="text-xs text-brand-text-muted mt-1 uppercase tracking-widest">Jokes Searchable</p>
+            <div className="flex items-baseline justify-between mb-5">
+              <div>
+                <p className="text-[10px] uppercase tracking-[0.3em] text-rose-400 font-medium mb-1">Below Their Cast</p>
+                <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">Who Trails Their Own Ensemble</h2>
+              </div>
             </div>
-            <p className="text-xs text-brand-text-muted mt-3 group-hover:text-brand-gold transition-colors">
-              Find any joke, character, or moment →
-            </p>
+            <div className="space-y-3">
+              {bottomCharacters.map((char, i) => (
+                <div key={`${char.showSlug}-${char.name}`} className="flex items-center gap-4">
+                  {char.profilePath ? (
+                    <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 bg-brand-surface ring-1 ring-brand-border">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={`https://image.tmdb.org/t/p/w185${char.profilePath}`} alt={char.actorOrProfile || char.name} className="object-cover w-full h-full" />
+                    </div>
+                  ) : (
+                    <div className="w-14 h-14 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center shrink-0">
+                      <span className="text-base text-brand-text-muted">{char.name[0]}</span>
+                    </div>
+                  )}
+                  <div className="flex-1 min-w-0">
+                    <p className="flex items-baseline gap-2">
+                      <span className="font-mono text-xs text-rose-400">#{i + 1}</span>
+                      <span className="text-base font-medium text-brand-text-primary truncate">{char.name}</span>
+                    </p>
+                    <p className="text-xs text-brand-text-muted">{char.showName} · vs castmates</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="font-mono text-xl text-rose-400">{char.vsCastmates != null ? char.vsCastmates.toFixed(3) : '—'}</p>
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">delta</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-brand-text-muted mt-5 group-hover:text-brand-gold transition-colors">See the full list →</p>
+          </Link>
+        </div>
+
+        {/* HEAD-TO-HEAD — full-width split-screen with show backdrops as background strips */}
+        {topShow && runnerUp && (
+          <Link
+            href={`/compare/${topShow.slug}-vs-${runnerUp.slug}`}
+            className="block relative rounded-xl overflow-hidden border border-brand-border hover:border-brand-gold/40 transition-colors group min-h-[260px]"
+          >
+            <div className="absolute inset-0 grid grid-cols-2">
+              {topShow.backdrop_path && (
+                <div className="bg-cover bg-center" style={{ backgroundImage: `url(https://image.tmdb.org/t/p/original${topShow.backdrop_path})` }} />
+              )}
+              {runnerUp.backdrop_path && (
+                <div className="bg-cover bg-center" style={{ backgroundImage: `url(https://image.tmdb.org/t/p/original${runnerUp.backdrop_path})` }} />
+              )}
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/40 via-[#0A0A0A]/85 to-[#0A0A0A]" />
+            <div className="relative z-10 p-6 sm:p-8 h-full flex flex-col justify-end">
+              <p className="text-[10px] uppercase tracking-[0.3em] text-purple-400 font-medium mb-2">Head to Head</p>
+              <p className="text-xs text-brand-text-muted uppercase tracking-widest mb-4">Top of the board · {topGap}-pt gap</p>
+              <div className="grid grid-cols-[1fr_auto_1fr] items-end gap-4 sm:gap-6">
+                <div>
+                  <p className="font-serif italic text-xl sm:text-2xl text-white mb-1 group-hover:text-brand-gold transition-colors">{topShow.name}</p>
+                  <p className="font-mono font-bold text-5xl sm:text-6xl text-brand-gold leading-none">{formatIndex(topShow.humor_index)}</p>
+                </div>
+                <span className="font-serif italic text-2xl text-brand-text-muted/70 pb-3">vs</span>
+                <div className="text-right">
+                  <p className="font-serif italic text-xl sm:text-2xl text-white mb-1 group-hover:text-brand-gold transition-colors">{runnerUp.name}</p>
+                  <p className="font-mono font-bold text-5xl sm:text-6xl text-blue-400 leading-none">{formatIndex(runnerUp.humor_index)}</p>
+                </div>
+              </div>
+              <p className="text-xs text-brand-text-muted mt-4 group-hover:text-brand-gold transition-colors">See the full breakdown →</p>
+            </div>
+          </Link>
+        )}
+
+        {/* TWO-COLUMN: Density + Worst — paired as "the extremes" */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+          {/* Joke Density — three-show podium with editorial numbers */}
+          <Link
+            href="/rankings/jokes-per-minute"
+            className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group"
+          >
+            <p className="text-[10px] uppercase tracking-[0.3em] text-amber-400 font-medium mb-1">Joke Density</p>
+            <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-5">Jokes Per Minute, Ranked</h2>
+            <div className="space-y-4">
+              {topJpmShows.map((s, i) => (
+                <div key={s.slug} className="flex items-end gap-4 pb-3 border-b border-brand-border last:border-b-0 last:pb-0">
+                  <span className={`font-mono text-2xl font-bold ${PODIUM_COLORS[i]} w-10`}>#{i + 1}</span>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-serif italic text-xl text-brand-text-primary truncate">{s.name}</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="font-mono text-3xl text-brand-gold leading-none">{s.avg_jpm}</p>
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">/min</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-brand-text-muted mt-5 group-hover:text-brand-gold transition-colors">Full density ranking →</p>
           </Link>
 
+          {/* Worst Episodes — same editorial podium but in rose */}
+          <Link
+            href="/rankings/worst-episodes"
+            className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group"
+          >
+            <p className="text-[10px] uppercase tracking-[0.3em] text-rose-400 font-medium mb-1">The Other End</p>
+            <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-5">The Worst Episodes of All Time</h2>
+            <div className="space-y-4">
+              {worstEpisodes.map((ep, i) => (
+                <div key={`${ep.showSlug}-${ep.season}-${ep.episode_number}`} className="flex items-end gap-4 pb-3 border-b border-brand-border last:border-b-0 last:pb-0">
+                  <span className="font-mono text-2xl font-bold text-rose-400 w-10">↓{i + 1}</span>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-serif italic text-lg text-brand-text-primary truncate leading-tight">{ep.title}</p>
+                    <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-0.5">{ep.showName} · S{ep.season}E{ep.episode_number}</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="font-mono text-3xl text-rose-400 leading-none">{formatIndex(ep.humor_index)}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-brand-text-muted mt-5 group-hover:text-brand-gold transition-colors">See the bottom 50 →</p>
+          </Link>
         </div>
+
+        {/* SEARCH — full-width minimal closer */}
+        <Link
+          href="/search"
+          className="block bg-brand-card border border-brand-border rounded-xl p-8 hover:border-brand-gold/40 transition-colors group text-center"
+        >
+          <p className="text-[10px] uppercase tracking-[0.3em] text-amber-400 font-medium mb-3">Search</p>
+          <p className="font-mono font-bold text-5xl sm:text-6xl text-brand-gold mb-2 leading-none">{searchableJokes.toLocaleString()}</p>
+          <p className="font-serif italic text-xl text-brand-text-primary mb-2">jokes, searchable, indexed and ranked</p>
+          <p className="text-xs text-brand-text-muted group-hover:text-brand-gold transition-colors">Find any joke, character, or moment →</p>
+        </Link>
+
       </div>
     </div>
   );
