@@ -51,12 +51,15 @@ export default function JokeRow({ joke, isStandout, showSlug }: Props) {
               {(() => {
                 const dialogue = (joke as any).dialogue as DialogueLine[] | undefined;
                 if (dialogue?.length) return <Dialogue lines={dialogue} />;
-                // No dialogue field → fall back to a single-line render. If the joke has
-                // exactly one tagged speaker, prefix the text with their name so it reads
-                // like a Sunny-style "Speaker: line" beat. (30 Rock and most non-IASIP
-                // shows have one-character jokes that previously rendered as bare text.)
-                if (joke.characters?.length === 1) {
-                  return <Dialogue lines={[{ speaker: joke.characters[0], line: joke.text }]} />;
+                // No dialogue field → fall back to a single-line render with the tagged
+                // speaker(s) prefixed. Sunny multi-speaker jokes get the proper dialogue
+                // split via the field above; other shows' joke.text is a single beat from
+                // the tagged characters (often one, sometimes two — Michael + Narrator,
+                // Tobias on tape, etc.). Show all tagged speakers joined to avoid the
+                // bare-text fallback that read as "no name attached."
+                if (joke.characters?.length) {
+                  const speaker = joke.characters.join(' · ');
+                  return <Dialogue lines={[{ speaker, line: joke.text }]} />;
                 }
                 return <p className="text-sm text-brand-text-primary leading-relaxed">{joke.text}</p>;
               })()}
@@ -120,8 +123,9 @@ export default function JokeRow({ joke, isStandout, showSlug }: Props) {
             {(() => {
               const dialogue = (joke as any).dialogue as DialogueLine[] | undefined;
               if (dialogue?.length) return <Dialogue lines={dialogue} />;
-              if (joke.characters?.length === 1) {
-                return <Dialogue lines={[{ speaker: joke.characters[0], line: joke.punchline }]} />;
+              if (joke.characters?.length) {
+                const speaker = joke.characters.join(' · ');
+                return <Dialogue lines={[{ speaker, line: joke.punchline }]} />;
               }
               return <p className="text-sm text-brand-text-primary">{joke.punchline}</p>;
             })()}

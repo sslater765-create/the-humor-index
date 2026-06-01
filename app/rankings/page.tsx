@@ -107,6 +107,36 @@ export default async function RankingsPage() {
     .sort((a, b) => b.humor_index - a.humor_index)
     .slice(0, 3);
 
+  // Hero data: the #1 episode's backdrop + its single best joke (for pull quote).
+  // We already loaded episode detail above to build the global top joke; do the
+  // same for #1 specifically so the hero quote is FROM the headlining episode
+  // rather than just the global craft+impact leader.
+  const heroEp = topEpisodes[0];
+  const heroShow = heroEp ? analyzedShows.find(s => s.slug === heroEp.showSlug) : null;
+  let heroTopJoke: TopJoke | null = null;
+  if (heroEp) {
+    try {
+      const detail = await getEpisodeDetail(heroEp.showSlug, heroEp.season, heroEp.episode_number);
+      if (detail?.jokes?.length) {
+        let bestScore = 0;
+        for (const j of detail.jokes) {
+          const s = (j.craft_total || 0) + (j.impact_score || 0);
+          if (s > bestScore && j.text) {
+            bestScore = s;
+            heroTopJoke = {
+              text: j.text,
+              characters: j.characters || [],
+              craft_total: j.craft_total,
+              impact_score: j.impact_score,
+              showName: heroEp.showName,
+              episodeTitle: heroEp.title,
+            };
+          }
+        }
+      }
+    } catch { /* fall back to no pull quote */ }
+  }
+
   // Top + bottom characters — pull from canonical characters.json per show (already de-duped + merged)
   const allCharacters: TopCharacter[] = [];
   for (const show of analyzedShows) {
@@ -164,44 +194,96 @@ export default async function RankingsPage() {
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-5">
 
-        {/* Hero: Top Episodes */}
-        <Link
-          href="/rankings/funniest-episodes"
-          className="block bg-brand-card border border-brand-border rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors group"
-        >
-          <div className="p-6 pb-4">
-            <div className="flex items-center justify-between mb-5">
-              <div>
-                <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">Episodes Ranked</p>
-                <h2 className="text-lg font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors">
-                  The Funniest Episodes of All Time
-                </h2>
+        {/* HERO — magazine-cover treatment for the #1 episode of all time. */}
+        {heroEp && (
+          <Link
+            href={`/shows/${heroEp.showSlug}/${heroEp.season}/${heroEp.episode_number}`}
+            className="relative block rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/50 transition-colors group min-h-[440px] sm:min-h-[520px]"
+          >
+            {/* Backdrop image (the host show's TMDB backdrop, dark + zoomed for editorial feel) */}
+            {heroShow?.backdrop_path && (
+              <div
+                className="absolute inset-0 bg-cover bg-center scale-105 group-hover:scale-110 transition-transform duration-700"
+                style={{ backgroundImage: `url(https://image.tmdb.org/t/p/original${heroShow.backdrop_path})` }}
+              />
+            )}
+            {/* Triple-stack overlay: solid bottom, dark gradient up, gold tint */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/85 to-[#0A0A0A]/30" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/70 via-transparent to-transparent" />
+
+            <div className="relative z-10 h-full flex flex-col justify-end p-6 sm:p-10">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-medium">#1 Episode of All Time</span>
+                <span className="h-px flex-1 bg-gradient-to-r from-brand-gold/40 to-transparent" />
               </div>
-              <span className="text-sm text-brand-text-muted group-hover:text-brand-gold transition-colors hidden sm:block">
-                View all {allEpisodes.length} →
-              </span>
+
+              <p className="text-xs sm:text-sm text-brand-text-muted uppercase tracking-widest mb-2">
+                {heroEp.showName} · S{heroEp.season}E{heroEp.episode_number}
+              </p>
+
+              <h2 className="font-serif italic text-4xl sm:text-6xl text-white mb-6 max-w-3xl leading-[1.05] group-hover:text-brand-gold transition-colors">
+                {heroEp.title}
+              </h2>
+
+              <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-6 sm:gap-10 items-end">
+                {heroTopJoke && (
+                  <blockquote className="border-l-2 border-brand-gold/70 pl-4 max-w-2xl">
+                    <p className="text-sm sm:text-base text-white/85 italic leading-relaxed line-clamp-3">
+                      &ldquo;{heroTopJoke.text}&rdquo;
+                    </p>
+                    <footer className="mt-2 text-[11px] text-brand-text-muted uppercase tracking-widest">
+                      {heroTopJoke.characters[0] || 'Top joke'} · craft {heroTopJoke.craft_total.toFixed(1)} · impact {heroTopJoke.impact_score.toFixed(1)}
+                    </footer>
+                  </blockquote>
+                )}
+
+                <div className="text-right">
+                  <p className="font-mono font-bold text-6xl sm:text-7xl leading-none" style={{ color: scoreToColor(heroEp.humor_index) }}>
+                    {formatIndex(heroEp.humor_index)}
+                  </p>
+                  <p className="text-[11px] text-brand-text-muted uppercase tracking-[0.25em] mt-2">Humor Index · {scoreToGrade(heroEp.humor_index)} · {heroEp.total_jokes} jokes</p>
+                </div>
+              </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {topEpisodes.map((ep, i) => (
-                <div
-                  key={`${ep.showSlug}-${ep.season}-${ep.episode_number}`}
-                  className={`bg-brand-surface rounded-lg p-4 ${i === 0 ? 'sm:ring-1 sm:ring-brand-gold/30' : ''}`}
-                >
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className={`font-mono text-lg font-bold ${PODIUM_COLORS[i]}`}>{PODIUM_LABELS[i]}</span>
-                    <span className="font-mono text-2xl font-medium" style={{ color: scoreToColor(ep.humor_index) }}>
-                      {formatIndex(ep.humor_index)}
-                    </span>
-                    <span className="font-mono text-sm text-brand-text-muted ml-auto">{scoreToGrade(ep.humor_index)}</span>
-                  </div>
-                  <p className="text-sm font-medium text-brand-text-primary mb-0.5">{ep.title}</p>
-                  <p className="text-xs text-brand-text-muted">
-                    {ep.showName} &middot; S{ep.season}E{ep.episode_number} &middot; {ep.total_jokes} jokes
+          </Link>
+        )}
+
+        {/* Runners-up — #2 and #3 in a sleek 2-column row that feels like editorial sidebars */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {topEpisodes.slice(1, 3).map((ep, idx) => {
+            const i = idx + 1;
+            return (
+              <Link
+                key={`${ep.showSlug}-${ep.season}-${ep.episode_number}`}
+                href={`/shows/${ep.showSlug}/${ep.season}/${ep.episode_number}`}
+                className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <span className={`text-[10px] uppercase tracking-[0.3em] font-medium ${PODIUM_COLORS[i]}`}>{PODIUM_LABELS[i]} Episode</span>
+                  <span className="h-px flex-1 bg-brand-border" />
+                </div>
+                <p className="text-xs text-brand-text-muted uppercase tracking-widest mb-1">
+                  {ep.showName} · S{ep.season}E{ep.episode_number}
+                </p>
+                <h3 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4 leading-tight">
+                  {ep.title}
+                </h3>
+                <div className="flex items-end justify-between">
+                  <p className="text-xs text-brand-text-muted">{ep.total_jokes} jokes scored</p>
+                  <p className="font-mono font-bold text-4xl" style={{ color: scoreToColor(ep.humor_index) }}>
+                    {formatIndex(ep.humor_index)}
                   </p>
                 </div>
-              ))}
-            </div>
-          </div>
+              </Link>
+            );
+          })}
+        </div>
+
+        <Link
+          href="/rankings/funniest-episodes"
+          className="block text-center text-sm text-brand-text-muted hover:text-brand-gold transition-colors py-2"
+        >
+          View the full episode leaderboard — all {allEpisodes.length} ranked →
         </Link>
 
         {/* 2-column grid */}
