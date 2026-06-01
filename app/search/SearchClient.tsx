@@ -275,20 +275,26 @@ export default function SearchClient() {
                   </div>
                 </div>
                 <p className="text-sm text-brand-text-primary leading-relaxed mb-2">
+                  {joke.characters && joke.characters.length > 0 && (
+                    <span className="font-medium mr-1.5">
+                      {joke.characters.map((c, i) => (
+                        <span key={c}>
+                          {i > 0 && <span className="text-brand-text-muted"> · </span>}
+                          <Link
+                            href={`/shows/${joke.showSlug}/characters/${encodeURIComponent(c)}`}
+                            className="text-brand-gold hover:underline"
+                            onClick={e => e.stopPropagation()}
+                          >
+                            {c}
+                          </Link>
+                        </span>
+                      ))}
+                      <span className="text-brand-gold">:</span>
+                    </span>
+                  )}
                   {joke.text}
                 </p>
-                <div className="flex gap-1.5 flex-wrap" onClick={e => e.preventDefault()}>
-                  {joke.characters.map(c => (
-                    <Link
-                      key={c}
-                      href={`/shows/${joke.showSlug}/characters/${encodeURIComponent(c)}`}
-                      className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors"
-                      onClick={e => e.stopPropagation()}
-                    >
-                      {c}
-                    </Link>
-                  ))}
-                  <span className="text-brand-border">·</span>
+                <div className="flex gap-1.5 flex-wrap items-center" onClick={e => e.preventDefault()}>
                   {joke.joke_types.map(t => (
                     <span key={t} className="text-xs text-brand-text-muted bg-brand-surface rounded-full px-2 py-0.5">
                       {t.replace(/_/g, ' ')}
