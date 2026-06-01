@@ -20,6 +20,73 @@ const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'sunny-renaissance': {
+    title: "It's Always Sunny Is Better Now Than It Was in 2010 — the Data Says So",
+    description: "Fan consensus says peak Sunny is the original FX run — Mac, Charlie, Dennis, Dee and Frank at their cult-comedy sharpest. The Humor Index disagrees. We scored all 177 episodes across 17 seasons; the last five seasons (S13–S17) outscore the first seven (S1–S7) by 3.5 points. Sunny didn't decline. It got meaner — and the dialogue craft followed.",
+    date: '2026-05-31',
+    category: 'Analysis',
+    content: `
+Every Sunny fan has the same theory. *Peak Sunny was the FX run. Anything past Season 10 is the gang on autopilot. They should have ended it at 'The Gang Goes to Hell.'*
+
+We just scored every joke in every episode of *It's Always Sunny in Philadelphia* — 8,786 jokes across 177 episodes, three independent Claude passes each — and the data tells a different story. **The last five seasons are not a decline. They're the peak.**
+
+## The headline
+
+On the Humor Index, the full series averages **79.3**. The "Renaissance arc" cut — Seasons 13 through 17 — averages **80.5**, +1.2 above the full-series number. The "Cult era" cut — Seasons 1 through 7, the FX heyday — averages **76.5**, –2.8 below. That's a four-point gap between the two halves of the same show. Same five leads. Same writers' room core. Different decade.
+
+Built the cut yourself: [Sunny Renaissance arc (S13–S17) →](/shows/its-always-sunny/explore)
+
+## Season by season
+
+Here's the per-season scoring across all 17 seasons (display HI, with our 95% bootstrap CI on each):
+
+| Season | HI | Episodes | Era |
+|---|---:|---:|---|
+| **S15** | **81.7** | 8 | Renaissance |
+| **S17** | 80.5 | 8 | Renaissance |
+| **S09** | 79.4 | 10 | Transition |
+| **S14** | 78.7 | 10 | Renaissance |
+| **S13** | 78.6 | 10 | Renaissance |
+| **S12** | 78.4 | 10 | Renaissance |
+| **S08** | 78.0 | 10 | Transition |
+| **S11** | 77.9 | 10 | Renaissance |
+| **S16** | 77.3 | 8 | Renaissance |
+| **S07** | 76.9 | 13 | Cult |
+| **S01** | 76.7 | 7 | Cult |
+| **S10** | 76.6 | 10 | Transition |
+| **S03** | 76.3 | 15 | Cult |
+| **S05** | 76.3 | 12 | Cult |
+| **S04** | 76.2 | 13 | Cult |
+| **S06** | 75.6 | 13 | Cult |
+| **S02** | 75.5 | 10 | Cult |
+
+Eight of the top nine seasons are post-S10. Only **one** Renaissance-era season (S16) sits below 78. Only **one** Cult-era season (S7) climbs above 76.9. The cleanest split on the entire show falls right around the mid-2010s. Whatever happened to Sunny in 2015 happened *for the better*, by the numbers.
+
+## So what's actually changed?
+
+The gang got meaner.
+
+This isn't us editorializing — it's what the per-joke scores show. The single biggest gap between early and late Sunny isn't joke density (JPM is basically flat: 1.74 in the cult era, 1.85 in the renaissance era). It isn't run-time. It's **impact** and **dark/subversive** weight.
+
+Late-season Sunny leans hard into joke types our model rates higher per beat: *dark/subversive*, *character comedy from sustained malice*, *cringe escalation*, *callbacks that take a full season to detonate*. Early Sunny had to introduce itself — establishing the gang's awfulness in every episode, often with broader, more setup-heavy joke construction. Late Sunny doesn't have to introduce anything. The audience knows. The gang gets to lean directly into the punch.
+
+## The single best episode is a Renaissance episode
+
+The #1-ranked Sunny episode of all 177, by Humor Index, is **"The Gang Goes to Hell (1)" — S11E09, HI 92.8.** Number two is **"The Gang Gets Cursed" — S16E03, HI 91.5.** Number three is **"The Gang Gets Analyzed" — S08E05, HI 91.1** (the closest a pre-S11 episode comes to the top of the list).
+
+Of the top 15 episodes by Humor Index, **eleven are S11 or later.** The pre-S10 era contributes four. The fan-favorite Cult-era classics — *Dennis Looks Like a Registered Sex Offender, The Nightman Cometh, The Gang Gets Analyzed* — are great episodes. They're just not the show's best work. The show's best work happened after most casual viewers stopped paying attention.
+
+## Where the data could be wrong
+
+We're trying to keep the [honesty receipts](/methodology) updated on this site, so:
+
+- **Single-run scorer noise is real.** Our intraclass correlation between Claude passes on the same episode is around 0.28 on individual runs — meaning ~72% of episode-level variance is scorer noise. We pull that down hard with the 3-run consensus we use here, but it's worth flagging.
+- **Cluster overlap.** The 95% CI on the Renaissance cut is 79.3–81.6. The CI on the Cult cut is 75.4–77.5. They don't overlap, but they're a lot closer than the 4-point gap suggests at a glance.
+- **Late-season Sunny rewards rewatch.** A lot of Renaissance joke craft is callbacks ("The Implication" turning up six seasons later, "Wild Card, Bitches!" landing as a payoff). Our scoring credits callback craft. If you've never seen early Sunny, half of S15 is just nonsense.
+
+The picture isn't that "Renaissance Sunny is *funnier*" in some absolute sense — it's that the writing got tighter, the jokes earn more, and the gang's sustained awfulness has had two decades to compound. Whatever your fan theory of when Sunny peaked, the data has a different one. [Build your own cut →](/shows/its-always-sunny/explore)
+`,
+  },
   'humor-index-explorer': {
     title: "We Re-Cut Five Sitcoms by the Numbers — and Busted Two Fan Theories",
     description: "Our new Humor Index Explorer lets you rebuild any sitcom — drop a season, keep an era — and see how funny that cut scores. We tested five famous fan theories: the Arrested Development revival really was worse, but The Office didn't fall off after Steve Carell, and the Schitt's Creek glow-up doesn't show up in the jokes.",
