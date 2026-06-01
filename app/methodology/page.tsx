@@ -1,4 +1,3 @@
-import PageHeader from '@/components/layout/PageHeader';
 import { FORMAT_COEFFICIENTS, FORMAT_LABELS } from '@/lib/scoring';
 import { ShowFormat } from '@/lib/types';
 
@@ -20,18 +19,43 @@ export const dynamic = 'force-static';
 export default function MethodologyPage() {
   return (
     <div>
-      <PageHeader
-        label="Transparency"
-        title="How We Score"
-        subtitle="Every number on this site is derived from the same pipeline. Here's exactly how it works."
-      />
+      {/* Editorial hero */}
+      <section className="relative border-b border-brand-border">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-10 sm:pt-16 sm:pb-14">
+          <p className="text-xs uppercase tracking-[0.25em] text-brand-gold mb-4">The Show Your Work</p>
+          <h1 className="font-serif italic text-4xl sm:text-6xl text-brand-text-primary leading-[1.05] mb-5 max-w-3xl">
+            How we turn jokes into numbers.
+          </h1>
+          <p className="text-base sm:text-lg text-brand-text-secondary max-w-2xl leading-relaxed mb-6">
+            Every score on this site comes from the same pipeline — Claude reading the whole transcript,
+            tagging every laugh, rating each on a five-axis craft rubric, then aggregating up to the episode,
+            season, and show. Here&apos;s the math, the rubric, and the noise floor we&apos;ve measured against it.
+          </p>
+
+          {/* The three numbers at a glance */}
+          <div className="grid grid-cols-3 gap-4 max-w-2xl">
+            <div>
+              <p className="font-serif italic text-3xl sm:text-4xl text-brand-gold leading-none">25<span className="text-2xl">%</span></p>
+              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">Density</p>
+            </div>
+            <div>
+              <p className="font-serif italic text-3xl sm:text-4xl text-brand-blue leading-none">40<span className="text-2xl">%</span></p>
+              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">Craft</p>
+            </div>
+            <div>
+              <p className="font-serif italic text-3xl sm:text-4xl text-emerald-400 leading-none">35<span className="text-2xl">%</span></p>
+              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">Impact</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 space-y-16">
 
         {/* The three pillars */}
         <section>
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">The Formula</p>
-          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Three Pillars</h2>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Formula</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Three Pillars</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-8">
             The Humor Index is a weighted composite of three independently scored dimensions.
             Each episode is analyzed at the joke level, then aggregated to season and show level.
@@ -88,8 +112,8 @@ export default function MethodologyPage() {
 
         {/* Craft rubric */}
         <section>
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Craft Breakdown</p>
-          <h2 className="text-xl font-medium text-brand-text-primary mb-4">The Craft Rubric</h2>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Craft Breakdown</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">The Craft Rubric</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-6">
             Craft is scored 1–10 across five sub-dimensions, equally weighted. Each is assessed per joke,
             then averaged across the episode.
@@ -133,8 +157,8 @@ export default function MethodologyPage() {
 
         {/* Format adjustment */}
         <section>
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Format Adjustment</p>
-          <h2 className="text-xl font-medium text-brand-text-primary mb-4">The Laugh Track Correction</h2>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Format Adjustment</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">The Laugh Track Correction</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-6">
             Multi-camera shows with sweetened laugh tracks structurally inflate joke density —
             the laugh track signals joke boundaries that a single-camera show leaves implicit.
@@ -172,8 +196,8 @@ export default function MethodologyPage() {
 
         {/* Format policy */}
         <section>
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Policy</p>
-          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Why We Don&apos;t Adjust for Format</h2>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Policy</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Why We Don&apos;t Adjust for Format</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             An earlier version of the Humor Index silently penalized multi-cam shows (live audience, laugh track)
             by 15–25%, on the premise that audience reaction inflated perceived impact. That adjustment had three
@@ -218,8 +242,8 @@ export default function MethodologyPage() {
 
         {/* Scorer noise floor (Level 2 findings) */}
         <section>
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Reliability</p>
-          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Our Scorer&apos;s Noise Floor</h2>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Reliability</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Our Scorer&apos;s Noise Floor</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             We ran a test-retest study: 30 episodes were scored twice, both in blind mode, with different random seeds.
             Results:
@@ -268,8 +292,8 @@ export default function MethodologyPage() {
 
         {/* Show-identity bias */}
         <section>
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Bias</p>
-          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Show-Identity Bias: Small and Not Significant</h2>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Bias</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Show-Identity Bias: Small and Not Significant</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             We scored 99 episodes in blind mode (no show name, no character list, no description fed to the LLM) and
             compared to their non-blind production scores. Paired differences:
@@ -291,8 +315,8 @@ export default function MethodologyPage() {
 
         {/* Bayesian credible intervals */}
         <section>
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Bayesian Model</p>
-          <h2 className="text-xl font-medium text-brand-text-primary mb-4">What a Hierarchical Model Actually Finds</h2>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Bayesian Model</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">What a Hierarchical Model Actually Finds</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             We fit a hierarchical Bayesian model to 15,000 jokes (5,000 per scored show) predicting joke-level impact from show, format, joke type, episode, and character. Here&apos;s what came out.
           </p>
@@ -339,8 +363,8 @@ export default function MethodologyPage() {
 
         {/* Confidence intervals & percentiles */}
         <section>
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Uncertainty</p>
-          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Confidence Intervals &amp; Percentiles</h2>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Uncertainty</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Confidence Intervals &amp; Percentiles</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             Every score on the site is a point estimate with real uncertainty. We now publish:
           </p>
@@ -370,8 +394,8 @@ export default function MethodologyPage() {
 
         {/* Comedy WAR methodology */}
         <section>
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Career Value</p>
-          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Comedy WAR (Wins Above Replacement)</h2>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Career Value</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Comedy WAR (Wins Above Replacement)</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             Career WAR ranks characters by total comedic contribution relative to a
             &quot;replacement-level&quot; bench player. Higher WAR means more jokes at higher average
@@ -404,8 +428,8 @@ export default function MethodologyPage() {
 
         {/* Limitations */}
         <section>
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Honesty</p>
-          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Known Limitations</h2>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Honesty</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Known Limitations</h2>
           <div className="space-y-3">
             {[
               {
@@ -468,8 +492,8 @@ export default function MethodologyPage() {
               ],
             }) }}
           />
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-6">Glossary</p>
-          <h2 className="text-xl font-medium text-brand-text-primary mb-4">Key Terms, Defined</h2>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Glossary</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Key Terms, Defined</h2>
           <div className="space-y-3">
             {[
               { term: 'Jokes Per Minute (JPM)', def: 'The number of distinct, gradeable jokes per minute of runtime. We count separable jokes a viewer could point to — not every comedic line — so JPM is comparable across every show.' },
