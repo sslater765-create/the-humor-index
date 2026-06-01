@@ -219,7 +219,20 @@ export default async function CharacterPage({
                   className="block"
                 >
                   <div className="bg-brand-card border border-brand-gold/20 rounded-xl p-4 hover:border-brand-gold/50 transition-colors">
-                    <p className="text-sm text-brand-text-primary mb-2">{item.joke.text as string}</p>
+                    <p className="text-sm text-brand-text-primary mb-2 leading-relaxed">
+                      {(() => {
+                        const chars = (item.joke.characters as string[] | undefined) || [];
+                        if (chars.length > 0) {
+                          return (
+                            <>
+                              <span className="text-brand-gold font-medium mr-1.5">{chars.join(' · ')}:</span>
+                              {item.joke.text as string}
+                            </>
+                          );
+                        }
+                        return item.joke.text as string;
+                      })()}
+                    </p>
                     <div className="flex items-center gap-3 text-xs text-brand-text-muted">
                       <span className="font-mono">S{item.season}E{String(item.episode_number).padStart(2, '0')}</span>
                       <span>{item.episode}</span>
@@ -252,8 +265,19 @@ export default async function CharacterPage({
                   <span className="font-mono text-xs text-brand-text-muted shrink-0 mt-0.5">
                     S{item.season}E{String(item.episode_number).padStart(2, '0')}
                   </span>
-                  <p className="text-sm text-brand-text-secondary flex-1 group-hover:text-brand-text-primary transition-colors">
-                    {item.joke.text as string}
+                  <p className="text-sm text-brand-text-secondary flex-1 group-hover:text-brand-text-primary transition-colors leading-relaxed">
+                    {(() => {
+                      const chars = (item.joke.characters as string[] | undefined) || [];
+                      if (chars.length > 0) {
+                        return (
+                          <>
+                            <span className="text-brand-gold font-medium mr-1.5">{chars.join(' · ')}:</span>
+                            {item.joke.text as string}
+                          </>
+                        );
+                      }
+                      return item.joke.text as string;
+                    })()}
                   </p>
                   <div className="flex gap-2 shrink-0 font-mono text-xs">
                     <span className="text-brand-text-muted">{(item.joke.craft_total as number).toFixed(1)}</span>
