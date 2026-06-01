@@ -1,4 +1,3 @@
-import PageHeader from '@/components/layout/PageHeader';
 import RequestClient from './RequestClient';
 
 export const metadata = {
@@ -17,12 +16,22 @@ export const metadata = {
 export default function RequestPage() {
   return (
     <div>
-      <PageHeader
-        label="Community"
-        title="Request a Show"
-        subtitle="Vote for the next show we analyze. Top requests get scored first."
-      />
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10">
+      {/* Editorial hero */}
+      <section className="relative border-b border-brand-border">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-10 sm:pt-16 sm:pb-12">
+          <p className="text-xs uppercase tracking-[0.25em] text-brand-gold mb-4">You Pick. We Score.</p>
+          <h1 className="font-serif italic text-4xl sm:text-6xl text-brand-text-primary leading-[1.05] mb-4 max-w-3xl">
+            What should we analyze next?
+          </h1>
+          <p className="text-base sm:text-lg text-brand-text-secondary max-w-2xl leading-relaxed">
+            Every show on the index started as a vote. Cast yours below — the most-requested sitcoms get scored first.
+            One show takes <span className="text-brand-text-primary">several hours</span> of analysis, three Claude passes,
+            thousands of jokes. Choose wisely.
+          </p>
+        </div>
+      </section>
+
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <RequestClient />
       </div>
     </div>
