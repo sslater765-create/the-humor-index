@@ -1,10 +1,10 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { ShowScore } from '@/lib/types';
 import { formatIndex } from '@/lib/scoring';
-import ScoreCard from '@/components/ui/ScoreCard';
 import SocialShare from '@/components/ui/SocialShare';
 import { RadarCompareChart, JokeTypesCompareChart } from '@/components/charts';
 
@@ -76,23 +76,31 @@ export default function CompareClient({ shows, dnaBySlug }: Props) {
   ];
 
   return (
-    <div className="space-y-8">
-      {/* Selectors */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <ShowSelector
-          label="Show A"
-          shows={shows}
-          value={slugA}
-          onChange={setSlugA}
-          exclude={slugB}
-        />
-        <ShowSelector
-          label="Show B"
-          shows={shows}
-          value={slugB}
-          onChange={setSlugB}
-          exclude={slugA}
-        />
+    <div className="space-y-10">
+      {/* Selectors — framed as "The Matchup" */}
+      <div className="bg-brand-card border border-brand-border rounded-2xl p-5 sm:p-6">
+        <div className="flex items-center gap-3 mb-4">
+          <span className="font-serif italic text-brand-gold text-lg">Pick your matchup.</span>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] gap-4 items-end">
+          <ShowSelector
+            label="Show A"
+            shows={shows}
+            value={slugA}
+            onChange={setSlugA}
+            exclude={slugB}
+          />
+          <div className="hidden sm:flex items-center justify-center pb-2">
+            <span className="font-serif italic text-brand-text-muted text-xl">vs</span>
+          </div>
+          <ShowSelector
+            label="Show B"
+            shows={shows}
+            value={slugB}
+            onChange={setSlugB}
+            exclude={slugA}
+          />
+        </div>
       </div>
 
       {ready && (
@@ -100,93 +108,223 @@ export default function CompareClient({ shows, dnaBySlug }: Props) {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="space-y-8"
+          className="space-y-10"
         >
-          {/* Metric cards side by side */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div>
-              <p className="text-xs uppercase tracking-widest text-brand-gold mb-3">{showA.name}</p>
-              <div className="grid grid-cols-2 gap-3">
-                {dims.map(d => (
-                  <ScoreCard
-                    key={d.key}
-                    label={d.label}
-                    value={showA[d.key] as number}
-                    highlight={d.key === 'humor_index'}
-                  />
-                ))}
+          {/* Editorial split-screen hero */}
+          {(() => {
+            const diff = Math.abs(showA.humor_index - showB.humor_index);
+            const tied = diff < 1.5;
+            const winner = showA.humor_index >= showB.humor_index ? showA : showB;
+            const loser = winner === showA ? showB : showA;
+            return (
+              <div className="relative rounded-2xl overflow-hidden border border-brand-border">
+                {/* Backdrops split */}
+                <div className="relative h-[260px] sm:h-[320px] grid grid-cols-2">
+                  <div className="relative overflow-hidden">
+                    {showA.backdrop_path ? (
+                      <Image
+                        src={`https://image.tmdb.org/t/p/w780${showA.backdrop_path}`}
+                        alt={showA.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 50vw, 600px"
+                        priority
+                      />
+                    ) : (
+                      <div className="absolute inset-0 bg-brand-surface" />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/40 via-brand-dark/20 to-brand-dark/80" />
+                  </div>
+                  <div className="relative overflow-hidden">
+                    {showB.backdrop_path ? (
+                      <Image
+                        src={`https://image.tmdb.org/t/p/w780${showB.backdrop_path}`}
+                        alt={showB.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 50vw, 600px"
+                        priority
+                      />
+                    ) : (
+                      <div className="absolute inset-0 bg-brand-surface" />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-l from-brand-dark/40 via-brand-dark/20 to-brand-dark/80" />
+                  </div>
+                  {/* Center VS pillar */}
+                  <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-brand-gold/40" />
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-brand-dark border border-brand-gold/60 flex items-center justify-center shadow-lg">
+                      <span className="font-serif italic text-brand-gold text-xl sm:text-2xl">vs</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Names + HI numbers */}
+                <div className="bg-brand-card border-t border-brand-border grid grid-cols-2">
+                  <div className="p-5 sm:p-7 text-right border-r border-brand-border">
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">Show A</p>
+                    <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight mb-3">
+                      {showA.name}
+                    </h2>
+                    <p className="font-serif italic text-5xl sm:text-6xl text-brand-gold leading-none">
+                      {formatIndex(showA.humor_index)}
+                    </p>
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-2">Humor Index</p>
+                  </div>
+                  <div className="p-5 sm:p-7">
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">Show B</p>
+                    <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight mb-3">
+                      {showB.name}
+                    </h2>
+                    <p className="font-serif italic text-5xl sm:text-6xl text-brand-blue leading-none">
+                      {formatIndex(showB.humor_index)}
+                    </p>
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-2">Humor Index</p>
+                  </div>
+                </div>
+
+                {/* Editorial caption */}
+                <div className="bg-brand-surface border-t border-brand-border px-5 sm:px-7 py-4 text-center">
+                  {tied ? (
+                    <p className="text-sm text-brand-text-secondary font-serif italic">
+                      Within the noise floor — {diff.toFixed(1)} points separates them. Statistically tied.
+                    </p>
+                  ) : (
+                    <p className="text-sm text-brand-text-secondary font-serif italic">
+                      <span className="text-brand-text-primary not-italic font-medium">{winner.name}</span>
+                      {' '}clears{' '}
+                      <span className="text-brand-text-primary not-italic font-medium">{loser.name}</span>
+                      {' '}by{' '}
+                      <span className="text-brand-gold not-italic font-medium">{diff.toFixed(1)} points</span>.
+                    </p>
+                  )}
+                </div>
               </div>
-            </div>
-            <div>
-              <p className="text-xs uppercase tracking-widest text-brand-blue mb-3">{showB.name}</p>
-              <div className="grid grid-cols-2 gap-3">
-                {dims.map(d => (
-                  <ScoreCard
-                    key={d.key}
-                    label={d.label}
-                    value={showB[d.key] as number}
-                    highlight={d.key === 'humor_index'}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
+            );
+          })()}
 
-          {/* Radar */}
-          <RadarCompareChart showA={showA} showB={showB} />
-
-          {/* Joke types compare */}
-          {dnaA && dnaB && (
-            <JokeTypesCompareChart
-              showAName={showA.name}
-              showBName={showB.name}
-              distA={dnaA}
-              distB={dnaB}
-            />
-          )}
-
-          {/* Verdict */}
-          <div className="bg-brand-card border border-brand-border rounded-xl p-6">
-            <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-4">Verdict</p>
-            <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 mb-6">
-              {dims.map(d => {
+          {/* Sub-metrics in a clean 4-up row */}
+          <section>
+            <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-4">By the Numbers</p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {dims.filter(d => d.key !== 'humor_index').map(d => {
                 const aVal = showA[d.key] as number;
                 const bVal = showB[d.key] as number;
-                const winner = aVal >= bVal ? showA : showB;
-                const color = aVal >= bVal ? '#E8B931' : '#378ADD';
+                const aWins = aVal >= bVal;
                 return (
-                  <div key={d.key} className="bg-brand-surface rounded-lg p-3">
-                    <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">{d.label}</p>
-                    <p className="text-sm font-medium" style={{ color }}>{winner.name}</p>
-                    <p className="font-mono text-xs text-brand-text-muted">
-                      {aVal.toFixed(1)} vs {bVal.toFixed(1)}
-                    </p>
+                  <div key={d.key} className="bg-brand-card border border-brand-border rounded-xl p-4">
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-3">{d.label}</p>
+                    <div className="flex items-baseline justify-between mb-2">
+                      <span className="font-mono text-xs text-brand-text-muted truncate mr-2">{showA.name}</span>
+                      <span className={`font-mono text-base ${aWins ? 'text-brand-gold font-medium' : 'text-brand-text-secondary'}`}>
+                        {aVal.toFixed(1)}
+                      </span>
+                    </div>
+                    <div className="flex items-baseline justify-between">
+                      <span className="font-mono text-xs text-brand-text-muted truncate mr-2">{showB.name}</span>
+                      <span className={`font-mono text-base ${!aWins ? 'text-brand-blue font-medium' : 'text-brand-text-secondary'}`}>
+                        {bVal.toFixed(1)}
+                      </span>
+                    </div>
                   </div>
                 );
               })}
             </div>
-            {(() => {
-              const aWins = dims.filter(d => (showA[d.key] as number) >= (showB[d.key] as number)).length;
-              const bWins = dims.length - aWins;
-              const overall = aWins >= bWins ? showA : showB;
-              return (
-                <div className="border-t border-brand-border pt-4">
-                  <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Overall Winner</p>
-                  <p className="text-lg font-medium text-brand-gold">{overall.name}</p>
-                  <p className="text-xs text-brand-text-muted mt-0.5">
-                    Wins {aWins >= bWins ? aWins : bWins} of {dims.length} dimensions
+          </section>
+
+          {/* Radar */}
+          <section>
+            <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-2">Comedy Shape</p>
+            <p className="font-serif italic text-xl text-brand-text-primary mb-5">
+              How each show distributes its laughs across the four axes.
+            </p>
+            <RadarCompareChart showA={showA} showB={showB} />
+          </section>
+
+          {/* Joke types compare */}
+          {dnaA && dnaB && (
+            <section>
+              <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-2">Comedy DNA</p>
+              <p className="font-serif italic text-xl text-brand-text-primary mb-5">
+                The joke-type fingerprint — what each show is actually made of.
+              </p>
+              <JokeTypesCompareChart
+                showAName={showA.name}
+                showBName={showB.name}
+                distA={dnaA}
+                distB={dnaB}
+              />
+            </section>
+          )}
+
+          {/* The Verdict — pull-quote treatment */}
+          {(() => {
+            const aWins = dims.filter(d => (showA[d.key] as number) >= (showB[d.key] as number)).length;
+            const bWins = dims.length - aWins;
+            const winsCount = aWins >= bWins ? aWins : bWins;
+            const overall = aWins >= bWins ? showA : showB;
+            const other = overall === showA ? showB : showA;
+            const sweep = winsCount === dims.length;
+            return (
+              <section className="relative bg-gradient-to-b from-brand-card to-brand-surface border border-brand-border rounded-2xl px-6 sm:px-10 py-10 sm:py-12 overflow-hidden">
+                {/* Decorative quote mark */}
+                <div className="absolute top-4 left-6 font-serif italic text-brand-gold/20 text-7xl leading-none select-none">
+                  &ldquo;
+                </div>
+
+                <div className="relative max-w-2xl mx-auto text-center">
+                  <p className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted mb-5">The Final Word</p>
+                  <h3 className="font-serif italic text-2xl sm:text-4xl text-brand-text-primary leading-snug mb-5">
+                    {sweep ? (
+                      <>
+                        <span className="text-brand-gold">{overall.name}</span> sweeps{' '}
+                        <span className="text-brand-text-secondary">{other.name}</span>.
+                      </>
+                    ) : (
+                      <>
+                        <span className="text-brand-gold">{overall.name}</span> takes it,{' '}
+                        <span className="font-mono not-italic text-brand-gold">{winsCount}–{dims.length - winsCount}</span>.
+                      </>
+                    )}
+                  </h3>
+                  <p className="text-sm text-brand-text-secondary leading-relaxed mb-2">
+                    Across {dims.length} dimensions of comedy — Humor Index, jokes-per-minute, craft, and impact —
+                    {' '}<span className="text-brand-text-primary">{overall.name}</span> wins {winsCount}.
                   </p>
-                  <div className="mt-4">
+
+                  {/* Per-dimension chips */}
+                  <div className="flex flex-wrap justify-center gap-2 mt-6 mb-7">
+                    {dims.map(d => {
+                      const aVal = showA[d.key] as number;
+                      const bVal = showB[d.key] as number;
+                      const winner = aVal >= bVal ? showA : showB;
+                      const isA = winner === showA;
+                      return (
+                        <span
+                          key={d.key}
+                          className={`text-xs px-3 py-1.5 rounded-full border ${
+                            isA
+                              ? 'border-brand-gold/40 bg-brand-gold/10 text-brand-gold'
+                              : 'border-brand-blue/40 bg-brand-blue/10 text-brand-blue'
+                          }`}
+                        >
+                          {d.label}: <span className="font-medium">{winner.name}</span>
+                        </span>
+                      );
+                    })}
+                  </div>
+
+                  <div className="flex justify-center">
                     <SocialShare
-                      title={`${overall.name} beats ${overall === showA ? showB.name : showA.name} on The Humor Index`}
-                      text={`${overall.name} wins ${aWins >= bWins ? aWins : bWins} of ${dims.length} dimensions vs ${overall === showA ? showB.name : showA.name} on The Humor Index`}
+                      title={`${overall.name} beats ${other.name} on The Humor Index`}
+                      text={`${overall.name} wins ${winsCount} of ${dims.length} dimensions vs ${other.name} on The Humor Index`}
                       url={`/compare?show=${slugA}`}
                     />
                   </div>
                 </div>
-              );
-            })()}
-          </div>
+              </section>
+            );
+          })()}
         </motion.div>
       )}
     </div>
