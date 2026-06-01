@@ -122,6 +122,33 @@ export const EXPLORER_CONFIG: Record<string, ExplorerConfig> = {
       { id: 'skip-s1', label: 'Skip Season 1', blurb: 'Drop the first season and see how flat the rest stays', pick: ep => ep.season !== 1 },
     ],
   },
+  // 17 seasons; the back half (post-S12) consistently outscores the cult era.
+  'its-always-sunny': {
+    signature: 'renaissance',
+    storyPresets: [
+      { id: 'renaissance', label: 'Renaissance arc (S13–S17)', blurb: 'Mac, Dennis, Charlie, Dee, Frank at their meanest — five seasons that outscore the full 17-season run', pick: ep => ep.season >= 13 },
+      { id: 'cult', label: 'Cult era (S1–S7)', blurb: 'Before the show was on every best-of list — the original FX run that defined the gang', pick: ep => ep.season <= 7 },
+      { id: 'skip-s2', label: 'Skip the rocky Season 2', blurb: 'Drop the lowest-scoring season and watch the average jump', pick: ep => ep.season !== 2 },
+    ],
+  },
+  // Golden era is the most-litigated cut in TV — S4 to S8 is where every list lands.
+  'the-simpsons': {
+    signature: 'golden',
+    storyPresets: [
+      { id: 'golden', label: 'Golden era (S4–S8)', blurb: 'Conan-Mirkin-Oakley-Weinstein. The five seasons every list calls peak Simpsons — and the math agrees', pick: ep => ep.season >= 4 && ep.season <= 8 },
+      { id: 'peak', label: 'Peak Simpsons (S5–S6)', blurb: 'The tightest possible cut — the two seasons most cited as the show’s absolute peak', pick: ep => ep.season === 5 || ep.season === 6 },
+      { id: 'pre-decline', label: 'Pre-decline (S1–S8)', blurb: 'Through the Oakley/Weinstein run, before the consensus drop-off', pick: ep => ep.season <= 8 },
+    ],
+  },
+  // Selina's downward spiral peaks after she loses the presidency.
+  veep: {
+    signature: 'spiral',
+    storyPresets: [
+      { id: 'spiral', label: "Selina's downward spiral (S5–S7)", blurb: 'After she loses the presidency. The cruelty curve goes up; the dialogue craft follows', pick: ep => ep.season >= 5 },
+      { id: 'iannucci', label: 'The Iannucci years (S1–S4)', blurb: 'Armando Iannucci’s seasons before David Mandel took over', pick: ep => ep.season <= 4 },
+      { id: 'skip-s1', label: 'Skip Season 1', blurb: 'Drop the rough first season before the writers found the voice', pick: ep => ep.season !== 1 },
+    ],
+  },
 };
 
 export function getExplorerConfig(slug: string): ExplorerConfig {
