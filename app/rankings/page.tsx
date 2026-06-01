@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { getAllShows, getEpisodes, getEpisodeDetail, getCharacters, getSearchableJokeCount } from '@/lib/data';
 import { formatIndex, scoreToGrade, scoreToColor } from '@/lib/scoring';
 import PageHeader from '@/components/layout/PageHeader';
-import RankBadge from '@/components/ui/RankBadge';
 
 export const dynamic = 'force-static';
 
