@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'sunny-renaissance',
+    title: "It's Always Sunny Is Better Now Than It Was in 2010 — the Data Says So",
+    description: "Fan consensus says peak Sunny is the original FX run. The Humor Index disagrees. We scored all 177 episodes across 17 seasons; the last five (S13–S17) outscore the first seven (S1–S7) by 3.5 points. Sunny didn't decline. It got meaner — and the dialogue craft followed.",
+    date: '2026-05-31',
+    category: 'Analysis',
+    readTime: '8 min read',
+    stat: '+3.5',
+    statLabel: 'S13–S17 vs S1–S7 (HI points)',
+  },
+  {
     slug: 'humor-index-explorer',
     title: "We Re-Cut Five Sitcoms by the Numbers — and Busted Two Fan Theories",
     description: "Our new Explorer lets you rebuild any sitcom and see how funny that cut scores. The Arrested Development revival really was worse — but The Office didn't fall off after Steve Carell, and the Schitt's Creek glow-up doesn't show up in the jokes.",
