@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import PageHeader from '@/components/layout/PageHeader';
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr + 'T00:00:00');
@@ -224,48 +223,107 @@ const POSTS = [
 ];
 
 export default function BlogPage() {
+  const [hero, ...rest] = POSTS;
   return (
     <div>
-      <PageHeader
-        label="Blog"
-        title="Comedy Analytics"
-        subtitle="Deep dives into what makes TV comedy work — backed by data, not opinions."
-      />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          {POSTS.map((post, postIndex) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="block bg-brand-card border border-brand-border rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors group"
-            >
-              <div className={`relative h-36 w-full bg-gradient-to-b ${CATEGORY_COLORS[post.category] || 'from-brand-surface to-brand-card'} flex items-center justify-center`}>
+      {/* Editorial hero */}
+      <section className="relative border-b border-brand-border">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-10 sm:pt-16 sm:pb-14">
+          <p className="text-xs uppercase tracking-[0.25em] text-brand-gold mb-4">Comedy Analytics, Read Out Loud</p>
+          <h1 className="font-serif italic text-4xl sm:text-6xl text-brand-text-primary leading-[1.05] mb-5 max-w-3xl">
+            The dispatches.
+          </h1>
+          <p className="text-base sm:text-lg text-brand-text-secondary max-w-2xl leading-relaxed">
+            Deep dives, methodology updates, fan-theory autopsies, and show-launch analyses —
+            every post backed by the same data that powers the index.
+          </p>
+        </div>
+      </section>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 space-y-12">
+        {/* Above-the-fold lead story */}
+        {hero && (
+          <Link
+            href={`/blog/${hero.slug}`}
+            className="block group"
+          >
+            <article className={`relative grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-0 rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/40 transition-colors`}>
+              <div className={`relative min-h-[260px] sm:min-h-[320px] bg-gradient-to-br ${CATEGORY_COLORS[hero.category] || 'from-brand-surface to-brand-card'} flex items-center justify-center p-8`}>
                 <div className="text-center">
-                  <p className={`font-mono text-3xl font-medium ${CATEGORY_ACCENTS[post.category] || 'text-brand-gold'}`}>
-                    {post.stat}
+                  <p className={`font-serif italic text-6xl sm:text-7xl ${CATEGORY_ACCENTS[hero.category] || 'text-brand-gold'} leading-none`}>
+                    {hero.stat}
                   </p>
-                  <p className="text-xs text-brand-text-muted mt-1 uppercase tracking-widest">
-                    {post.statLabel}
+                  <p className="text-[10px] text-brand-text-muted mt-3 uppercase tracking-[0.25em]">
+                    {hero.statLabel}
                   </p>
                 </div>
-                <div className="absolute bottom-3 left-4 flex items-center gap-2">
-                  <span className="text-xs bg-brand-card/70 text-brand-gold border border-brand-gold/30 rounded-full px-2.5 py-0.5 backdrop-blur-sm">
+                <span className="absolute top-4 left-5 text-[10px] uppercase tracking-[0.25em] text-brand-gold">
+                  The Latest
+                </span>
+              </div>
+              <div className="p-7 sm:p-9 bg-brand-card flex flex-col justify-center">
+                <div className="flex items-center gap-3 text-[10px] uppercase tracking-widest text-brand-text-muted mb-4">
+                  <span className={`${CATEGORY_ACCENTS[hero.category] || 'text-brand-gold'}`}>{hero.category}</span>
+                  <span>·</span>
+                  <span>{formatDate(hero.date)}</span>
+                  <span>·</span>
+                  <span>{hero.readTime}</span>
+                </div>
+                <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary group-hover:text-brand-gold transition-colors leading-tight mb-4">
+                  {hero.title}
+                </h2>
+                <p className="text-sm text-brand-text-secondary leading-relaxed line-clamp-4">
+                  {hero.description}
+                </p>
+                <p className="text-xs uppercase tracking-widest text-brand-gold mt-5">Read the piece →</p>
+              </div>
+            </article>
+          </Link>
+        )}
+
+        {/* Section header */}
+        <div className="border-t border-brand-border pt-10">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Archive</p>
+          <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
+            Every post on the index.
+          </h2>
+          <p className="text-sm text-brand-text-secondary max-w-xl mb-8">
+            {rest.length} more dispatches — show launches, methodology audits, leaderboards, retractions, the lot.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {rest.map((post, postIndex) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="block bg-brand-card border border-brand-border rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors group"
+              >
+                <div className={`relative h-40 w-full bg-gradient-to-b ${CATEGORY_COLORS[post.category] || 'from-brand-surface to-brand-card'} flex items-center justify-center`}>
+                  <div className="text-center px-4">
+                    <p className={`font-serif italic text-3xl sm:text-4xl ${CATEGORY_ACCENTS[post.category] || 'text-brand-gold'} leading-none`}>
+                      {post.stat}
+                    </p>
+                    <p className="text-[10px] text-brand-text-muted mt-2 uppercase tracking-widest leading-tight">
+                      {post.statLabel}
+                    </p>
+                  </div>
+                  <span className={`absolute bottom-3 left-4 text-[10px] uppercase tracking-widest ${CATEGORY_ACCENTS[post.category] || 'text-brand-gold'}`}>
                     {post.category}
                   </span>
+                  <span className="absolute bottom-3 right-4 font-mono text-[10px] text-brand-text-muted">
+                    №{String(postIndex + 2).padStart(2, '0')}
+                  </span>
                 </div>
-                <div className="absolute bottom-3 right-4">
-                  <span className="text-xs text-brand-text-muted">#{postIndex + 1}</span>
+                <div className="p-5">
+                  <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">{formatDate(post.date)} · {post.readTime}</p>
+                  <h3 className="font-serif italic text-lg text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2 line-clamp-3 leading-snug">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm text-brand-text-secondary line-clamp-2 leading-relaxed">{post.description}</p>
                 </div>
-              </div>
-              <div className="p-5">
-                <p className="text-xs text-brand-text-muted mb-2">{formatDate(post.date)} · {post.readTime}</p>
-                <h2 className="text-base font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2 line-clamp-2">
-                  {post.title}
-                </h2>
-                <p className="text-sm text-brand-text-secondary line-clamp-2">{post.description}</p>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>
