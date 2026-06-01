@@ -48,7 +48,18 @@ export default function JokeRow({ joke, isStandout, showSlug }: Props) {
               {joke.timestamp_estimate}
             </span>
             <div className="flex-1 min-w-0">
-              {(joke as any).dialogue?.length > 0 ? <Dialogue lines={(joke as any).dialogue} /> : <p className="text-sm text-brand-text-primary leading-relaxed">{joke.text}</p>}
+              {(() => {
+                const dialogue = (joke as any).dialogue as DialogueLine[] | undefined;
+                if (dialogue?.length) return <Dialogue lines={dialogue} />;
+                // No dialogue field → fall back to a single-line render. If the joke has
+                // exactly one tagged speaker, prefix the text with their name so it reads
+                // like a Sunny-style "Speaker: line" beat. (30 Rock and most non-IASIP
+                // shows have one-character jokes that previously rendered as bare text.)
+                if (joke.characters?.length === 1) {
+                  return <Dialogue lines={[{ speaker: joke.characters[0], line: joke.text }]} />;
+                }
+                return <p className="text-sm text-brand-text-primary leading-relaxed">{joke.text}</p>;
+              })()}
               <div className="flex flex-wrap items-center gap-1 mt-2">
                 {joke.characters.map(c => (
                   showSlug ? (
@@ -106,7 +117,14 @@ export default function JokeRow({ joke, isStandout, showSlug }: Props) {
           </div>
           <div>
             <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Punchline</p>
-            {(joke as any).dialogue?.length > 0 ? <Dialogue lines={(joke as any).dialogue} /> : <p className="text-sm text-brand-text-primary">{joke.punchline}</p>}
+            {(() => {
+              const dialogue = (joke as any).dialogue as DialogueLine[] | undefined;
+              if (dialogue?.length) return <Dialogue lines={dialogue} />;
+              if (joke.characters?.length === 1) {
+                return <Dialogue lines={[{ speaker: joke.characters[0], line: joke.punchline }]} />;
+              }
+              return <p className="text-sm text-brand-text-primary">{joke.punchline}</p>;
+            })()}
           </div>
           <div>
             <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">Why it works</p>
