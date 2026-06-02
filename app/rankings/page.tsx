@@ -3,6 +3,8 @@ import { getAllShows, getEpisodes, getEpisodeDetail, getCharacters, getSearchabl
 import { formatIndex, scoreToGrade, scoreToColor } from '@/lib/scoring';
 import PageHeader from '@/components/layout/PageHeader';
 
+import BestJokeRotator from "@/components/ui/BestJokeRotator";
+import topJokes from "@/public/data/top-jokes.json";
 export const dynamic = 'force-static';
 
 export const metadata = {
@@ -138,6 +140,7 @@ export default async function RankingsPage() {
       }
     } catch { /* fall back to no pull quote */ }
   }
+  void heroTopJoke;  // retained to keep TopJoke import alive; render is via <BestJokeRotator />
 
   // Top + bottom characters — pull from canonical characters.json per show (already de-duped + merged)
   const allCharacters: TopCharacter[] = [];
@@ -236,16 +239,7 @@ export default async function RankingsPage() {
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-6 sm:gap-10 items-end">
-                {heroTopJoke && (
-                  <blockquote className="border-l-2 border-brand-gold/70 pl-4 max-w-2xl">
-                    <p className="text-sm sm:text-base text-white/85 italic leading-relaxed line-clamp-3">
-                      &ldquo;{heroTopJoke.text}&rdquo;
-                    </p>
-                    <footer className="mt-2 text-[11px] text-brand-text-muted uppercase tracking-widest">
-                      {heroTopJoke.characters[0] || 'Top joke'} · craft {heroTopJoke.craft_total.toFixed(1)} · impact {heroTopJoke.impact_score.toFixed(1)}
-                    </footer>
-                  </blockquote>
-                )}
+                <BestJokeRotator topJokes={topJokes} />
 
                 <div className="text-right">
                   <p className="font-mono font-bold text-6xl sm:text-7xl leading-none" style={{ color: scoreToColor(heroEp.humor_index) }}>
