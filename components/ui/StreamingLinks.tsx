@@ -44,6 +44,9 @@ const STREAMING_DATA: Record<string, { platform: string; url: string; label: str
   'veep': [
     { platform: 'Max', url: 'https://www.max.com/shows/veep/c3343cba-4dc6-4263-b357-72c1c0b65a45', label: 'Watch on Max' },
   ],
+  'flight-of-the-conchords': [
+    { platform: 'Max', url: 'https://www.max.com/shows/flight-of-the-conchords/b69d6a06-9d2d-43e8-a87e-6f5bf9a2d8e3', label: 'Watch on Max' },
+  ],
 };
 
 interface Props {
