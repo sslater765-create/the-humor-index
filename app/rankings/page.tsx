@@ -105,6 +105,7 @@ export default async function RankingsPage() {
       }
     } catch { /* skip show */ }
   }
+  void topJoke;  // retained — orphaned by <BestJokeRotator /> swap above
 
   // Top 3 episodes
   const topEpisodes = allEpisodes
@@ -140,7 +141,6 @@ export default async function RankingsPage() {
       }
     } catch { /* fall back to no pull quote */ }
   }
-  void heroTopJoke;  // retained to keep TopJoke import alive; render is via <BestJokeRotator />
 
   // Top + bottom characters — pull from canonical characters.json per show (already de-duped + merged)
   const allCharacters: TopCharacter[] = [];
@@ -239,7 +239,16 @@ export default async function RankingsPage() {
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-6 sm:gap-10 items-end">
-                <BestJokeRotator topJokes={topJokes} />
+                {heroTopJoke && (
+            <blockquote className="border-l-2 border-brand-gold/70 pl-4 max-w-2xl">
+              <p className="text-sm sm:text-base text-white/85 italic leading-relaxed line-clamp-3">
+                &ldquo;{heroTopJoke.text}&rdquo;
+              </p>
+              <footer className="mt-2 text-[11px] text-brand-text-muted uppercase tracking-widest">
+                {heroTopJoke.characters[0] || 'Top joke'} &middot; craft {heroTopJoke.craft_total.toFixed(1)} &middot; impact {heroTopJoke.impact_score.toFixed(1)}
+              </footer>
+            </blockquote>
+          )}
 
                 <div className="text-right">
                   <p className="font-mono font-bold text-6xl sm:text-7xl leading-none" style={{ color: scoreToColor(heroEp.humor_index) }}>
@@ -298,44 +307,7 @@ export default async function RankingsPage() {
         </div>
 
         {/* BEST JOKE EVER — full-width pull-quote treatment, the page's editorial centerpiece */}
-        {topJoke && (
-          <Link
-            href="/rankings/best-jokes"
-            className="block relative bg-brand-card border border-brand-border rounded-xl p-8 sm:p-12 hover:border-brand-gold/40 transition-colors group overflow-hidden"
-          >
-            <div className="absolute top-6 left-6 sm:top-10 sm:left-10 font-serif text-7xl sm:text-9xl text-brand-gold/15 leading-none select-none pointer-events-none">&ldquo;</div>
-            <div className="relative">
-              <p className="text-[10px] uppercase tracking-[0.3em] text-blue-400 font-medium mb-4">The Single Best Joke We&rsquo;ve Scored</p>
-              <blockquote className="font-serif italic text-2xl sm:text-3xl text-white leading-snug mb-6 max-w-3xl">
-                {topJoke.text}
-              </blockquote>
-              <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-                <div>
-                  <p className="text-sm text-brand-text-primary">
-                    {topJoke.characters[0] && <span className="text-brand-gold font-medium">{topJoke.characters[0]}</span>}
-                    {topJoke.characters[0] && <span className="text-brand-text-muted"> · </span>}
-                    <span className="text-brand-text-secondary">{topJoke.showName}</span>
-                    <span className="text-brand-text-muted"> · </span>
-                    <span className="text-brand-text-muted italic">&ldquo;{topJoke.episodeTitle}&rdquo;</span>
-                  </p>
-                </div>
-                <div className="flex items-center gap-6 text-sm">
-                  <div>
-                    <p className="font-mono text-2xl text-brand-gold">{topJoke.craft_total.toFixed(1)}</p>
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Craft</p>
-                  </div>
-                  <div>
-                    <p className="font-mono text-2xl text-emerald-400">{topJoke.impact_score.toFixed(1)}</p>
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Impact</p>
-                  </div>
-                </div>
-              </div>
-              <p className="text-xs text-brand-text-muted mt-6 group-hover:text-brand-gold transition-colors">
-                Read the top 100 jokes ever scored →
-              </p>
-            </div>
-          </Link>
-        )}
+        <BestJokeRotator topJokes={topJokes} />
 
         {/* TWO-COLUMN: People (funniest + below cast) — character portraits make this section sing */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
