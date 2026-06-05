@@ -31,6 +31,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'larry-sanders-launch',
+    title: "The Show That Invented Cringe Lands at #13 \u2014 and the Sidekick Outscores the Host",
+    description: "We scored all 90 episodes of The Larry Sanders Show, the first HBO comedy in the dataset. It ran cringe at The Office's rate a decade before The Office existed, its best player wasn't its star, and one of its episodes technically didn't exist until this week. Hey now.",
+    date: '2026-06-05',
+    category: 'Show Launch',
+    readTime: '9 min read',
+    stat: "338 vs 322",
+    statLabel: "Artie vs Larry, career WAR",
+  },
+  {
     slug: 'sunny-renaissance',
     title: "It's Always Sunny Is Better Now Than It Was in 2010 — the Data Says So",
     description: "Fan consensus says peak Sunny is the original FX run. The Humor Index disagrees. We scored all 177 episodes across 17 seasons; the last five (S13–S17) outscore the first seven (S1–S7) by 3.5 points. Sunny didn't decline. It got meaner — and the dialogue craft followed.",
