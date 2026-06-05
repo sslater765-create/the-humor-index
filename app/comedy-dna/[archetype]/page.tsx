@@ -141,7 +141,7 @@ export default async function ArchetypePage({ params }: { params: { archetype: s
             {jokes.map(j => (
               <div key={j.id} className="bg-brand-surface border border-brand-border rounded-xl p-4">
                 <p className="text-base"><span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span></p>
-                <p className="text-xs uppercase tracking-wider text-brand-text-muted mt-2">— {j.show}</p>
+                <p className="text-xs uppercase tracking-wider text-brand-text-muted mt-2">— {j.speaker ? `${j.speaker}, ${j.show}` : j.show}</p>
               </div>
             ))}
           </div>
