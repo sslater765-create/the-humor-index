@@ -55,6 +55,29 @@ export default async function FunniestEpisodesPage() {
 
   const ranked = [...allEpisodes].sort((a, b) => b.humor_index - a.humor_index).slice(0, 50);
 
+  // Client pool = global top 50 + every show's top 10, deduped. The dropdown
+  // derives its options from this pool, so every scored show is selectable —
+  // picking a show surfaces its own best episodes even when none crack the
+  // global top 50 (e.g. Larry Sanders, whose best episode ranks ~#108).
+  const seen = new Set(ranked.map(e => `${e.showSlug}-${e.season}-${e.episode_number}`));
+  const pool = [...ranked];
+  const byShow = new Map<string, RankedEpisode[]>();
+  for (const ep of allEpisodes) {
+    const arr = byShow.get(ep.showSlug) ?? [];
+    arr.push(ep);
+    byShow.set(ep.showSlug, arr);
+  }
+  for (const arr of Array.from(byShow.values())) {
+    arr.sort((a, b) => b.humor_index - a.humor_index);
+    for (const ep of arr.slice(0, 10)) {
+      const key = `${ep.showSlug}-${ep.season}-${ep.episode_number}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        pool.push(ep);
+      }
+    }
+  }
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -109,7 +132,7 @@ export default async function FunniestEpisodesPage() {
           into a single score. Here are the episodes that came out on top.
         </p>
 
-        <EpisodesClient episodes={ranked} />
+        <EpisodesClient episodes={pool} />
 
         <div className="mt-12 border-t border-brand-border pt-8">
           <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-3">Methodology</p>
