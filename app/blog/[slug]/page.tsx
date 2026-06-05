@@ -20,6 +20,99 @@ const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'larry-sanders-launch': {
+    title: "The Show That Invented Cringe Lands at #13 \u2014 and the Sidekick Outscores the Host",
+    description: "We scored all 90 episodes of The Larry Sanders Show, the first HBO comedy in the dataset. It ran cringe at The Office's rate a decade before The Office existed, its best player wasn't its star, and one of its episodes technically didn't exist until this week. Hey now.",
+    date: '2026-06-05',
+    category: 'Show Launch',
+    content: `
+Every single-camera comedy we've scored owes this show money. No laugh track in 1992, when the laugh track was the law. A talk show inside a TV show inside a satire of the people who make both. The Office's documentary squirm, 30 Rock's backstage chaos, Veep's flop-sweat vanity, Curb's everything — the family tree runs through one HBO show that aired before most of its descendants' writers had jobs.
+
+So we scored it. All six seasons of The Larry Sanders Show, 90 episodes, 4,486 jokes. It's the first HBO comedy in the dataset and the second-oldest show we've analyzed, after Taxi.
+
+It landed at **76.5**. That's #13 out of 14 — between Seinfeld (77.0) and Friends (73.5). We'll get to why that number is both honest and a floor. But first, a confession about episode 90.
+
+## The episode that didn't exist until Tuesday
+
+When the batch run finished, the season table said 89 episodes. TMDB says the show has 90. The missing one was S02E02, "The Breakdown (2)" — the back half of the season-two opener, a two-parter.
+
+The subtitle archive had returned NO RESULTS for it, which usually means a transcript simply doesn't exist. It turned out to be stranger than that: **every available rip of the two-parter is one combined 45-minute file**, and our pipeline had ingested it as a single episode. So "S02E01" had been scored across both parts — one episode wearing two episodes' worth of jokes.
+
+We found the seam at 25:52 — a duplicated stretch of recap dialogue, then a second "live on tape from Hollywood" cold open — split the transcript there, and rescored both halves with the usual 3-run consensus. Part 1 came in at **70.0**, Part 2 at **76.9**. The combined file had scored 79.1, which tells you something about averaging: the two-parter's strongest material is back-loaded, and lumping it together had been quietly flattering Part 1 for weeks.
+
+Aggregates recomputed, 90 of 90 on the books. This is the second time a title-level audit has caught corrupted data before launch (30 Rock's Castle Rock subtitles were the first). The lesson keeps being the same lesson: diff your data against a canonical source before you publish it.
+
+## About that 76.5
+
+A score in the bottom third for one of the most acclaimed comedies ever made deserves an explanation, not a shrug.
+
+Part of it is real and worth saying plainly: Larry Sanders is not a dense show. Its JPM is **2.02** — bottom third of the leaderboard, half of what The Simpsons runs. It will let a scene breathe for ninety seconds to earn one devastating line. The index pays for jokes, and this show deliberately tells fewer of them.
+
+Part of it is the transcript ceiling, and Larry Sanders may be the most extreme case of it we've scored. The funniest things in this show are not lines. They're Garry Shandling's face deciding whether to be hurt. Jeffrey Tambor recalibrating his dignity in real time. Rip Torn watching both of them like a man guarding a casino. None of that survives into a subtitle file. We've said "treat the score as a floor" about animation and about musical numbers; for a show whose comedy is this behavioral, the gap between floor and ceiling is probably the widest in the dataset.
+
+And part of it is the tax every pioneer pays. The moves this show invented — the cringe pause, the backstage A-plot, celebrities playing rancid versions of themselves — have been strip-mined by thirty years of television. The model scores the jokes as they read today, next to the shows that absorbed them. Seinfeld sits one slot up at 77.0 with the same problem.
+
+## Cringe comedy, ten years early
+
+Here's the finding we'd frame and hang on the wall. Share of comedy DNA that is cringe_discomfort:
+
+- **The Larry Sanders Show (1992): 10.4%**
+- **The Office (2005): 11.4%**
+- **Seinfeld (1992): 6.5%**
+
+Larry Sanders ran cringe at statistically The Office's rate, a decade before The Office existed in either country. Its exact contemporary Seinfeld ran 6.5%. Nobody else in the early '90s was building this much comedy out of social pain; the show was doing it weekly while everyone else still had a laugh track telling audiences when to feel safe.
+
+And the observational number is its own little headline: 11.0%, in a dead heat with Seinfeld's 11.2% — the show that defines the category. Larry Sanders observed show business the way Seinfeld observed everything else.
+
+The full DNA profile: character_comedy 28.6%, observational 11.0%, cringe_discomfort 10.4%, escalation 9.0%, absurdist 5.7%, deadpan_understatement 5.1%.
+
+## Artie out-WARs the host of the show
+
+Character WAR across 90 episodes:
+
+- **Artie (Rip Torn): WAR 338.0** on 897 jokes
+- **Larry (Garry Shandling): WAR 322.1** on 1,691 jokes
+- **Hank (Jeffrey Tambor): WAR 211.9** on 976 jokes
+- Phil (Wallace Langham): WAR 15.2 on 196 jokes
+
+Read that again: **Rip Torn generated more wins-above-replacement than the title character, on barely half the joke volume.** Artie's vs-castmates delta is +0.211 — the highest in the cast, sustained across 89 of 90 episodes. When Artie speaks, the line is simply better than what anyone else in the room is getting.
+
+Larry's 1,691 jokes lead the cast by a mile, but his per-joke quality sits almost exactly at the show's average — which is fitting, because Larry is the show's straight man to his own ego. Hank is the volume cringe machine. Artie is the precision instrument. Every "you fat bastard" was load-bearing.
+
+The Humor Index has never had a show where the #1 WAR belongs to the third-billed cast member. It does now.
+
+## The show took two seasons to become itself
+
+Season by season (avg display HI · avg JPM):
+
+- S1: 71.7 · 2.19
+- S2: 75.5 · 2.18
+- **S3: 79.2 · 1.94**
+- S4: 77.0 · 2.03
+- S5: 76.4 · 1.89
+- S6: 77.2 · 1.90
+
+S1 is the weakest season we've scored for any show currently above Friends on the leaderboard — 71.7, with the pilot ("The Garden Weasel," 64.8) as the show's lowest-scoring episode. Then the line goes up and stays up: a 7.5-point climb to the S3 peak, and four straight seasons parked between 76 and 79.
+
+Notice the JPM numbers while the score climbs: density goes *down* as the show gets *better*. S3 tells fewer jokes per minute than S1 and scores eight points higher. The show got funnier by trusting silence more. That's the whole Larry Sanders thesis in one list.
+
+## The top five
+
+1. S05E04 — Ellen, or Isn't She? — **87.9**
+2. S03E06 — Hank's Night in the Sun — 87.2
+3. S02E14 — The Performance Artist — 86.0
+4. S02E07 — Life Behind Larry — 84.6
+5. S03E10 — Like No Business I Know — 84.2
+
+The winner is the Ellen DeGeneres episode — guest-driven, identity-panic cringe, vintage Larry insecurity. "Hank's Night in the Sun," at #2, is the purest proof of the bench: Hank guest-hosts, the show hands the wheel to its most fragile ego, and the episode nearly takes the crown. Two of the top five come from S2 — the season the leaderboard says was still warming up. Even the worst episodes hold the mid-60s; the show's floor was professional even before its ceiling showed up.
+
+## What's next
+
+The dataset now runs from Taxi (1978) to the present, and Larry Sanders fills in the missing link: the exact moment American TV comedy learned it didn't need the laugh track. The obvious next stop on this branch of the family tree is Curb Your Enthusiasm — Larry Sanders' most direct descendant, and a test of whether improvised comedy reads differently in a subtitle file than scripted comedy does. After that, the proto-cringe lineage has one more ancestor we haven't touched: NewsRadio, the other '90s show that critics swear was funnier than its ratings.
+
+Hey now. 14 shows, 1,849 episodes, 103,448 jokes. The index grows.
+`,
+  },
   'sunny-renaissance': {
     title: "It's Always Sunny Is Better Now Than It Was in 2010 — the Data Says So",
     description: "Fan consensus says peak Sunny is the original FX run — Mac, Charlie, Dennis, Dee and Frank at their cult-comedy sharpest. The Humor Index disagrees. We scored all 177 episodes across 17 seasons; the last five seasons (S13–S17) outscore the first seven (S1–S7) by 3.5 points. Sunny didn't decline. It got meaner — and the dialogue craft followed.",
