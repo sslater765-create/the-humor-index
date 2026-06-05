@@ -93,7 +93,7 @@ export default async function FunniestCharactersPage() {
               name: 'Funniest Sitcom Characters of All Time',
               itemListElement: [...warChars]
                 .sort((a, b) => b.war - a.war)
-                .slice(0, 25)
+                .slice(0, 30)
                 .map((c, i) => ({
                   '@type': 'ListItem',
                   position: i + 1,

@@ -113,7 +113,7 @@ export default function RequestClient() {
 
   const totalVotes = Object.values(votes).reduce<number>((a, b) => a + Number(b || 0), 0);
   const topShow = sorted.find(s => (votes[s.slug] || 0) > 0);
-  const completed = ['The Office', 'Seinfeld', 'Friends', 'Parks and Recreation', "Schitt's Creek", 'Arrested Development', '30 Rock', 'Taxi', 'Community', 'The Simpsons', 'Veep', "It's Always Sunny in Philadelphia"];
+  const completed = ['The Office', 'Seinfeld', 'Friends', 'Parks and Recreation', "Schitt's Creek", 'Arrested Development', '30 Rock', 'Taxi', 'Community', 'The Simpsons', 'Veep', "It's Always Sunny in Philadelphia", 'Flight of the Conchords', 'The Larry Sanders Show'];
   const upNext = ['Brooklyn Nine-Nine', 'All in the Family', 'M*A*S*H', 'The Jeffersons',
     'The Mary Tyler Moore Show', 'WKRP in Cincinnati',
     'Sanford and Son', 'Barney Miller', 'Two and a Half Men', 'The Big Bang Theory'];
