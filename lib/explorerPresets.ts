@@ -140,6 +140,18 @@ export const EXPLORER_CONFIG: Record<string, ExplorerConfig> = {
       { id: 'pre-decline', label: 'Pre-decline (S1–S8)', blurb: 'Through the Oakley/Weinstein run, before the consensus drop-off', pick: ep => ep.season <= 8 },
     ],
   },
+  // Documented structural facts only: the 13-episode 1992 first season scores
+  // 7.5 display points below the S3 peak (the show famously took time to find
+  // its no-laugh-track rhythm), and S6 was the farewell season ending in the
+  // hour-long finale "Flip" (split as S6E11+E12 per TMDB).
+  'the-larry-sanders-show': {
+    signature: 'voice',
+    storyPresets: [
+      { id: 'voice', label: 'After it found its voice (S2–S6)', blurb: 'Drop the 1992 rookie season — the show that taught HBO comedy how to feel real, once it learned it itself', pick: ep => ep.season >= 2 },
+      { id: 'peak', label: 'The peak (S3)', blurb: 'The highest-scoring season — Hank guest-hosts, Artie holds the fort', pick: ep => ep.season === 3 },
+      { id: 'farewell', label: 'The farewell season (S6)', blurb: 'The final 12 episodes, ending with the hour-long finale "Flip"', pick: ep => ep.season === 6 },
+    ],
+  },
   // Selina's downward spiral peaks after she loses the presidency.
   veep: {
     signature: 'spiral',

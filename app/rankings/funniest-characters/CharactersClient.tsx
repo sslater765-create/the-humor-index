@@ -101,7 +101,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
       if (sortMode === 'quality_index') return b.qualityIndex - a.qualityIndex;
       return sortMode === 'total_war' ? b.war - a.war : b.warPerEpisode - a.warPerEpisode;
     });
-    return sorted.slice(0, 25);
+    return sorted.slice(0, 30);
   }, [baseList, sortMode, ascending]);
 
   // Two-tower view: side-by-side leaderboards for Total WAR vs WAR/ep
