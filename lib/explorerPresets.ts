@@ -152,6 +152,18 @@ export const EXPLORER_CONFIG: Record<string, ExplorerConfig> = {
       { id: 'farewell', label: 'The farewell season (S6)', blurb: 'The final 12 episodes, ending with the hour-long finale "Flip"', pick: ep => ep.season === 6 },
     ],
   },
+  // Famous mid-run recast: Janet Hubert played Aunt Viv S1-3, Daphne Maxwell
+  // Reid took over S4-6. The data's twist is that S4 (the first new-Viv season)
+  // is the show's HIGHEST-scoring season; the real decline is the final two.
+  'the-fresh-prince-of-bel-air': {
+    eras: { 1: 'Hubert', 2: 'Hubert', 3: 'Hubert', 4: 'Maxwell Reid', 5: 'Maxwell Reid', 6: 'Maxwell Reid' },
+    signature: 'recast',
+    storyPresets: [
+      { id: 'recast', label: 'After the Aunt Viv recast (S4–S6)', blurb: 'Daphne Maxwell Reid takes over from Janet Hubert — and the very next season is the show’s best', pick: ep => ep.season >= 4 },
+      { id: 'original-viv', label: 'Original Aunt Viv (S1–S3)', blurb: 'The Janet Hubert seasons, before the recast', pick: ep => ep.season <= 3 },
+      { id: 'skip-finale-season', label: 'Skip the final season (S6)', blurb: 'Drop the lowest-scoring season and watch the average jump', pick: ep => ep.season !== 6 },
+    ],
+  },
   // Selina's downward spiral peaks after she loses the presidency.
   veep: {
     signature: 'spiral',
