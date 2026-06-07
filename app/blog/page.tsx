@@ -31,6 +31,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'fresh-prince-geoffrey-butler',
+    title: "The Funniest Person in the Fresh Prince Mansion Is the Butler",
+    description: "We scored all 148 episodes of The Fresh Prince of Bel-Air. Will Smith leads the cast in total Comedy WAR \u2014 but only because he says four times as many jokes as anyone else. Per joke, the funniest Banks-household voice is Geoffrey, the butler with 14 lines an episode and the sharpest one in the room.",
+    date: '2026-06-07',
+    category: 'Analysis',
+    readTime: '8 min read',
+    stat: "+0.30",
+    statLabel: "Geoffrey's vs-castmates edge (best in cast)",
+  },
+  {
     slug: 'larry-sanders-launch',
     title: "The Show That Invented Cringe Lands at #13 \u2014 and the Sidekick Outscores the Host",
     description: "We scored all 90 episodes of The Larry Sanders Show, the first HBO comedy in the dataset. It ran cringe at The Office's rate a decade before The Office existed, its best player wasn't its star, and one of its episodes technically didn't exist until this week. Hey now.",

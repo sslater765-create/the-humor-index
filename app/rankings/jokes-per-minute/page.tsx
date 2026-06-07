@@ -36,7 +36,7 @@ export default async function JokesPerMinutePage() {
       itemListElement: shows.map((s, i) => ({
         '@type': 'ListItem',
         position: i + 1,
-        name: `${s.name} — ${s.avg_jpm} jokes per minute`,
+        name: `${s.name} — ${(s.avg_jpm || 0).toFixed(2)} jokes per minute`,
         url: `https://thehumorindex.com/shows/${s.slug}`,
       })),
     },
@@ -49,7 +49,7 @@ export default async function JokesPerMinutePage() {
           name: 'Which sitcom has the most jokes per minute?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: `Of the shows we've fully scored, ${leader?.name} has the highest joke density at ${leader?.avg_jpm} jokes per minute — counting distinct, identifiable jokes rather than every laugh-track beat.`,
+            text: `Of the shows we've fully scored, ${leader?.name} has the highest joke density at ${(leader?.avg_jpm || 0).toFixed(2)} jokes per minute — counting distinct, identifiable jokes rather than every laugh-track beat.`,
           },
         },
         {
@@ -103,7 +103,7 @@ export default async function JokesPerMinutePage() {
           Jokes per minute (JPM) is the simplest measure of comedy density: how many distinct jokes a
           show lands in each minute of runtime. We detected and scored every joke across{' '}
           {shows.length} fully-analyzed sitcoms — {leader?.name} comes out on top at{' '}
-          <strong className="text-brand-text-primary">{leader?.avg_jpm} jokes per minute</strong>.
+          <strong className="text-brand-text-primary">{(leader?.avg_jpm || 0).toFixed(2)} jokes per minute</strong>.
           Density isn&rsquo;t the same as quality (our <Link href="/rankings" className="text-brand-gold hover:underline">Humor Index</Link>{' '}
           weighs craft and impact too), but it&rsquo;s the stat people argue about most.
         </p>
@@ -130,7 +130,7 @@ export default async function JokesPerMinutePage() {
                 </div>
               </div>
               <div className="text-right shrink-0">
-                <span className="font-mono text-lg text-brand-gold font-medium">{s.avg_jpm}</span>
+                <span className="font-mono text-lg text-brand-gold font-medium">{(s.avg_jpm || 0).toFixed(2)}</span>
                 <div className="text-[10px] text-brand-text-muted uppercase tracking-widest">jokes / min</div>
               </div>
             </Link>

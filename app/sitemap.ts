@@ -4,6 +4,7 @@ import { ARCHES } from '@/lib/comedyDna';
 
 // Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
 const BLOG_SLUGS = [
+  'fresh-prince-geoffrey-butler',
   'larry-sanders-launch',
   'humor-index-explorer',
   'community-gas-leak-year',
@@ -62,6 +63,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Blog posts
   const blogDates: Record<string, string> = {
+    'fresh-prince-geoffrey-butler': '2026-06-07',
     'larry-sanders-launch': '2026-06-05',
     'humor-index-explorer': '2026-05-25',
     'community-gas-leak-year': '2026-05-24',

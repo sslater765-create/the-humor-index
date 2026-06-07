@@ -20,6 +20,71 @@ const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'fresh-prince-geoffrey-butler': {
+    title: "The Funniest Person in the Fresh Prince Mansion Is the Butler",
+    description: "We scored all 148 episodes of The Fresh Prince of Bel-Air. Will Smith leads the cast in total Comedy WAR \u2014 but only because he says four times as many jokes as anyone else. Per joke, the funniest Banks-household voice is Geoffrey, the butler with 14 lines an episode and the sharpest one in the room.",
+    date: '2026-06-07',
+    category: 'Analysis',
+    content: `
+The Fresh Prince of Bel-Air joined the Humor Index this week — all 148 episodes, 8,222 jokes, six seasons of West Philadelphia energy crashing into a Bel-Air mansion. The show lands at a Humor Index of **76.0**, mid-pack, which is a perfectly respectable number for a broad multi-cam sitcom built around a movie star who hadn't made movies yet.
+
+But the show-level score isn't the interesting finding. The interesting finding is *who* is carrying the comedy — and it isn't who the opening credits say it is.
+
+## Will Smith leads the cast. He also drags it down per-joke.
+
+Here's the cast ranked by total Comedy WAR — our wins-above-replacement stat, which rewards both how many jokes a character lands and how good those jokes are:
+
+- **Will** (Will Smith) — WAR 275.3 · 3,839 jokes
+- **Carlton** (Alfonso Ribeiro) — WAR 254.2 · 1,245 jokes
+- **Philip / Uncle Phil** (James Avery) — WAR 177.5 · 834 jokes
+- **Hilary** (Karyn Parsons) — WAR 162.8 · 675 jokes
+- **Geoffrey** (Joseph Marcell) — WAR 162.1 · 500 jokes
+
+Will wins. Of course Will wins — it's his show, his name in the title, and he says **3,839 jokes**, more than triple anyone else in the house. Volume is a real comedic contribution and WAR counts it.
+
+But WAR is volume *times* quality, and when you pull the two apart, the picture flips. Will's per-joke quality index is **6.63** — the *lowest* of the five leads. And his vs-castmates score — how his jokes rate against everyone else's jokes in the same episode — is **−0.133**. Negative. In the average Fresh Prince episode, the line coming out of Will's mouth is slightly *below* the room average.
+
+That's not a knock on Will Smith. It's the mechanical signature of a lead who is *on screen constantly*, carrying every plot, delivering the connective tissue — the "what's up, big guy" and the "yo, Carlton" and the hundred small lines that move a scene. The star says everything, so the star says a lot of ordinary things.
+
+## The butler is the sharpest voice in the mansion
+
+Now look at the other end of the table. Geoffrey the butler — Joseph Marcell — says only **500 jokes** across the whole series — under four an episode. But:
+
+- His quality index of **6.88** is the **highest of any character on the show.**
+- His vs-castmates score is **+0.295** — also the highest in the cast, by a wide margin.
+
+Read that second number carefully. +0.295 means that when Geoffrey speaks, his line rates nearly a third of a point higher than the average joke in that same episode — the single biggest per-line edge of anyone in the household. The butler walks in, delivers one withering aside about the family's nonsense, and walks out, and that one line beats whatever the leads were doing.
+
+This is the dry-sidekick pattern the index keeps surfacing. We just saw it with Rip Torn's Artie out-WARing the host of The Larry Sanders Show. Fresh Prince is the cleaner version of it: the show's funniest-per-joke character is its most peripheral one. Geoffrey exists to puncture the room, and the math says he never missed.
+
+Carlton, for the record, sits in between — 1,245 jokes at quality 6.76, the second-most-valuable character and arguably the show's true comedic engine once you weight for how much heavy lifting the Carlton-dance, the prep-school primness, and the Tom Jones devotion did. But the butler is the efficiency king.
+
+## The season curve, and the recast that didn't matter
+
+Fresh Prince has one of the most-told backstage stories in sitcom history: Janet Hubert, the original Aunt Viv, left after Season 3 amid public tension with Will Smith, and Daphne Maxwell Reid took over for Seasons 4 through 6. Fan lore treats the recast as the moment the show changed.
+
+The Humor Index by season:
+
+- S1: 76.5
+- S2: 77.3
+- S3: 77.5
+- **S4: 77.8 — the peak**
+- S5: 75.6
+- S6: 72.5
+
+The recast happens going *into* Season 4 — which is the **highest-scoring season the show ever had.** Whatever the off-screen story was, the jokes did not get worse when Aunt Viv changed. They got, fractionally, better, and stayed strong for a full season after.
+
+The actual decline is later and steeper: Seasons 5 and 6, with the finale stretch (S6) falling to 72.5, the show's weakest by a clear margin. The bottom three episodes all live in Season 6, led by the 60.6 of "I, Whoops, There It Is." If you want to know when Fresh Prince ran out of gas, the data points at the very end — not at the recast everyone remembers.
+
+## What we still can't see
+
+The usual caveat, and it matters more for this show than most: we score the words in the subtitle file. Fresh Prince is a *physical* comedy — the Carlton dance, Will's mugging straight into the lens, Geoffrey's slow-burn reaction shots, the door-slam timing of a live multi-cam stage. None of that survives into a transcript. Will Smith's gift was always as much face and body as line delivery, and a dialogue-only model is structurally blind to it. Treat 76.0 as a floor, and treat Will's per-joke number as "per *spoken* joke" — the camera-look tax is real and it falls hardest on the star.
+
+## What's next
+
+Fifteen shows on the board now, 1,997 episodes, just under 112,000 jokes. The Fresh Prince slots in at #14 — between The Larry Sanders Show and Friends, in the dense cluster where most well-loved sitcoms land once you strip away nostalgia and count the actual jokes. The butler, meanwhile, retires undefeated on a per-line basis. Geoffrey would have a withering aside about that, and it would score higher than this sentence.
+`,
+  },
   'larry-sanders-launch': {
     title: "The Show That Invented Cringe Lands at #13 \u2014 and the Sidekick Outscores the Host",
     description: "We scored all 90 episodes of The Larry Sanders Show, the first HBO comedy in the dataset. It ran cringe at The Office's rate a decade before The Office existed, its best player wasn't its star, and one of its episodes technically didn't exist until this week. Hey now.",
