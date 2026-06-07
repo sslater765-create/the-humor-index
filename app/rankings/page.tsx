@@ -447,7 +447,7 @@ export default async function RankingsPage() {
                     <p className="font-serif italic text-xl text-brand-text-primary truncate">{s.name}</p>
                   </div>
                   <div className="text-right">
-                    <p className="font-mono text-3xl text-brand-gold leading-none">{s.avg_jpm}</p>
+                    <p className="font-mono text-3xl text-brand-gold leading-none">{(s.avg_jpm || 0).toFixed(2)}</p>
                     <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">/min</p>
                   </div>
                 </div>
