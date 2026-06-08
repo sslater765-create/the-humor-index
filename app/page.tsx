@@ -54,8 +54,12 @@ export default async function HomePage() {
                 <span className="text-brand-text-secondary">scored and ranked.</span>
               </h1>
               <p className="text-base sm:text-xl text-brand-text-secondary max-w-2xl leading-relaxed">
-                The science of what&apos;s funny — Claude reads every transcript, rates every laugh on a five-axis rubric,
+                The science of what&apos;s funny — AI reads every transcript, rates every laugh on a five-axis rubric,
                 and we publish the receipts.
+              </p>
+              <p className="text-base sm:text-lg text-brand-text-muted max-w-2xl leading-relaxed mt-4">
+                No laugh tracks, no nostalgia — every show measured the same way, so the comparisons are fair.
+                Browse the rankings, compare any two shows, or dig into a single episode&apos;s funniest moments.
               </p>
 
               {/* Big numbers — magazine cover stats */}
