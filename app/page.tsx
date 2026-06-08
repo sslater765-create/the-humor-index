@@ -44,8 +44,8 @@ export default async function HomePage() {
       <section className="border-b border-brand-border bg-brand-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 sm:pt-20 pb-10">
           {/* Two-column hero: copy left, "how it works" loop right */}
-          <div className="grid lg:grid-cols-[1fr_380px] gap-8 lg:gap-14 items-start mb-12">
-            <div>
+          <div className="grid lg:grid-cols-[1fr_380px] gap-8 lg:gap-14 mb-12">
+            <div className="flex flex-col">
               <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-brand-gold mb-5">
                 Comedy, Quantified
               </p>
@@ -59,7 +59,7 @@ export default async function HomePage() {
               </p>
 
               {/* Big numbers — magazine cover stats */}
-              <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-xl mt-10">
+              <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-xl mt-10 lg:mt-auto lg:pt-8">
                 <div>
                   <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
                     {analyzedShows.length}
