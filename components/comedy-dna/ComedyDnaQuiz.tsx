@@ -495,7 +495,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                       jokeId={j.id}
                       muted={!revealing}
                       ariaLabel={sceneLabel}
-                      className={`block w-full transition-all duration-300 motion-reduce:transition-none ${revealing ? 'h-[240px]' : 'h-[200px]'}`} />
+                      className={`block w-full transition-all duration-300 motion-reduce:transition-none ${revealing ? 'h-[340px]' : 'h-[320px]'}`} />
 
                     {/* Show chip (top-left) — full-card context during the vote */}
                     {!revealing && j.show && (

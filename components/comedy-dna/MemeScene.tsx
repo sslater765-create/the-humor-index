@@ -506,14 +506,23 @@ export function MemeScene({ scene = 'default', color, mono, props: jokeProps, jo
   const bg = `b${raw}`, vig = `v${raw}`;
   const mid = shade(color, 0.6), dark = shade(color, 0.26), light = shade(color, 1.65);
 
-  // Signature illustrated card (PNG) overrides everything else when present.
+  // Signature illustrated card (PNG): render the FULL character art (object-top
+  // so heads aren't cut), not the 320x150 banner crop. Early return.
   const cardHref = jokeId != null && CARD_IDS.has(jokeId) ? `/cards/${jokeId}.png` : null;
+  if (cardHref) {
+    const a11yImg = ariaLabel ? { role: 'img' as const, 'aria-label': ariaLabel } : { 'aria-hidden': true as const };
+    return (
+      <div className={`relative overflow-hidden ${className ?? ''}`} {...a11yImg}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={cardHref} alt="" className="absolute inset-0 h-full w-full object-cover object-top" />
+        {muted && <div className="absolute inset-0 bg-black/35" />}
+      </div>
+    );
+  }
   // Bespoke scene overrides the template entirely (and skips prop overlay).
   const bespoke = jokeId != null ? bespokeSVG(jokeId, color, mid, dark) : null;
 
-  const inner = cardHref ? (
-    <image href={cardHref} x={0} y={0} width={320} height={150} preserveAspectRatio="xMidYMid slice" />
-  ) : bespoke ?? (() => {
+  const inner = bespoke ?? (() => {
     switch (scene) {
       case 'diner': return (<>
         <rect x="0" y="42" width="320" height="46" fill={shade(color, 0.42)} opacity="0.6" />
@@ -594,8 +603,8 @@ export function MemeScene({ scene = 'default', color, mono, props: jokeProps, jo
   })();
 
   const slots = PROP_SLOTS[scene] ?? PROP_SLOTS.default;
-  // Bespoke scenes / signature cards are self-contained — skip the prop overlay.
-  const propEls = (bespoke || cardHref) ? null : (jokeProps ?? []).slice(0, 2).map((p, i) => {
+  // Bespoke scenes are self-contained — skip the prop overlay.
+  const propEls = bespoke ? null : (jokeProps ?? []).slice(0, 2).map((p, i) => {
     const node = propSVG(p);
     if (!node) return null;
     const s = slots[i];
