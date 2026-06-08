@@ -73,7 +73,7 @@ export default function HeroLoop({ className = '' }: { className?: string }) {
       <Link
         href={BREAKDOWN_HREF}
         aria-label="See the breakdown — how the Humor Index is scored"
-        className="absolute bottom-[4.5%] left-1/2 z-20 h-[8%] w-[62%] -translate-x-1/2 rounded-full"
+        className="absolute inset-x-0 bottom-0 z-30 h-[18%]"
       />
     </div>
   );
