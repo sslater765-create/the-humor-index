@@ -44,7 +44,7 @@ export default async function HomePage() {
       <section className="border-b border-brand-border bg-brand-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 sm:pt-20 pb-10">
           {/* Two-column hero: copy left, "how it works" loop right */}
-          <div className="grid lg:grid-cols-[1fr_380px] gap-8 lg:gap-14 items-center mb-12">
+          <div className="grid lg:grid-cols-[1fr_380px] gap-8 lg:gap-14 items-start mb-12">
             <div>
               <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-brand-gold mb-5">
                 Comedy, Quantified

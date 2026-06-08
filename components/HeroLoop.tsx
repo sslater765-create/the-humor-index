@@ -51,15 +51,15 @@ export default function HeroLoop({ className = '' }: { className?: string }) {
           type="button"
           onClick={play}
           aria-label="Play: how the Humor Index works"
-          className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/10 transition-colors hover:bg-black/0"
+          className="absolute inset-0 flex items-center justify-center bg-black/35 transition-colors hover:bg-black/25"
         >
           <span className="flex h-16 w-16 items-center justify-center rounded-full bg-brand-gold shadow-lg transition-transform group-hover:scale-105">
             <svg width="22" height="24" viewBox="0 0 22 24" aria-hidden="true">
               <path d="M2 2 L20 12 L2 22 Z" fill="#0F0F0F" />
             </svg>
           </span>
-          <span className="text-xs uppercase tracking-[0.2em] text-brand-text-primary">
-            How it works
+          <span className="absolute inset-x-0 bottom-4 text-center text-xs uppercase tracking-[0.2em] text-brand-text-primary/90">
+            Watch how it works
           </span>
         </button>
       )}
