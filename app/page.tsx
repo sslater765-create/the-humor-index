@@ -43,20 +43,23 @@ export default async function HomePage() {
       {/* Editorial hero — the leaderboard IS the hero */}
       <section className="border-b border-brand-border bg-brand-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 sm:pt-20 pb-10">
-          <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-brand-gold mb-5">
-            Comedy, Quantified
-          </p>
-          <h1 className="font-serif italic text-4xl sm:text-7xl text-brand-text-primary max-w-4xl leading-[1.02] mb-5">
-            Every sitcom joke,<br />
-            <span className="text-brand-text-secondary">scored and ranked.</span>
-          </h1>
-          <p className="text-base sm:text-xl text-brand-text-secondary max-w-2xl leading-relaxed mb-8">
-            The science of what&apos;s funny — Claude reads every transcript, rates every laugh on a five-axis rubric,
-            and we publish the receipts.
-          </p>
-
-          {/* Hero loop — Steamed Hams scored in real time */}
-          <HeroLoop className="mb-10 max-w-3xl" />
+          {/* Two-column hero: copy left, "how it works" loop right */}
+          <div className="grid lg:grid-cols-[1fr_380px] gap-8 lg:gap-14 items-center mb-12">
+            <div>
+              <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-brand-gold mb-5">
+                Comedy, Quantified
+              </p>
+              <h1 className="font-serif italic text-4xl sm:text-7xl text-brand-text-primary leading-[1.02] mb-5">
+                Every sitcom joke,<br />
+                <span className="text-brand-text-secondary">scored and ranked.</span>
+              </h1>
+              <p className="text-base sm:text-xl text-brand-text-secondary max-w-2xl leading-relaxed">
+                The science of what&apos;s funny — Claude reads every transcript, rates every laugh on a five-axis rubric,
+                and we publish the receipts.
+              </p>
+            </div>
+            <HeroLoop className="w-full max-w-[380px] mx-auto lg:mx-0" />
+          </div>
 
           {/* Big numbers — magazine cover stats */}
           <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-3xl mb-10 pb-10 border-b border-brand-border">
