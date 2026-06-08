@@ -3,20 +3,20 @@
   "slug": "the-office",
   "season": 6,
   "episode_number": 5,
-  "title": "Niagara (2)",
-  "humor_index": 79.8,
-  "jpm": 2.06,
-  "avg_craft": 6.89,
-  "avg_impact": 6.92,
-  "total_jokes": 48,
-  "war": 43.4,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"absurdist\"]",
-  "standout_joke_ids": "[17, 15, 36]",
-  "weakest_section": "06:00-07:00",
+  "title": "Mafia",
+  "humor_index": 76.8,
+  "jpm": 2.45,
+  "avg_craft": 6.79,
+  "avg_impact": 6.63,
+  "total_jokes": 57,
+  "war": 40.5,
+  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"escalation\"]",
+  "standout_joke_ids": "[20, 25, 40]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "The fundamentals of business. Mental is a part of the word. I have underlined it. Because you're mental if you don't have a good time.",
+      "text": "The fundamentals of business. Mental is a part of the word. I have underlined it.",
       "characters": [
         "Michael"
       ],
@@ -24,36 +24,55 @@
         "wordplay_pun",
         "absurdist"
       ],
-      "setup": "Michael analyzing the word 'fundamentals' as if it contains deep wisdom",
-      "punchline": "The forced connection between 'mental' and being crazy if you don't have fun",
-      "craft_total": 5.4,
-      "impact_score": 6.0,
+      "setup": "Michael is giving a business presentation about fundamentals",
+      "punchline": "He literally underlines 'mental' in 'fundamentals' as if it's meaningful",
+      "craft_total": 5.75,
+      "impact_score": 5.67,
       "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Michael Scott pseudo-intellectual analysis with forced wordplay. Shows his character perfectly - trying to sound deep but being absurd."
+      "explanation": "Classic Michael Scott pseudo-intellectual wordplay that reveals his lack of business acumen while maintaining his confidence"
     },
     {
       "index": 2,
-      "text": "Small things... Peas, ball bearings, dimes.",
+      "text": "Because you're mental if you don't have a good time. You have to enjoy it. The fun is in it.",
       "characters": [
-        "Unknown employee"
+        "Michael"
       ],
       "joke_types": [
-        "absurdist",
-        "misdirection"
+        "wordplay_pun",
+        "character_comedy"
       ],
-      "setup": "Michael asking for small talk topics",
-      "punchline": "Employee takes 'small talk' literally and lists physically small objects",
-      "craft_total": 6.5,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Continuing the 'mental' explanation",
+      "punchline": "He doubles down on the nonsensical wordplay connection",
+      "craft_total": 5.81,
+      "impact_score": 5.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant literal interpretation that subverts expectations. Perfect economy and unexpectedly specific items make it memorable."
+      "explanation": "Extension of the mental/fundamental joke but slightly weaker on its own"
     },
     {
       "index": 3,
+      "text": "Small things... Peas, ball bearings, dimes.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "misdirection",
+        "absurdist"
+      ],
+      "setup": "Asked what topics can be used for small talk",
+      "punchline": "Instead of conversation topics, he lists literally small objects",
+      "craft_total": 7.41,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect misdirection with economy of language - audience expects conversation topics but gets physical objects"
+    },
+    {
+      "index": 4,
       "text": "I caught my son taking a dump on the upper part of the toilet. He calls it an upper-decker.",
       "characters": [
         "Meredith"
@@ -62,38 +81,38 @@
         "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Michael asking Meredith about her weekend for a sales training example",
-      "punchline": "Meredith shares deeply inappropriate personal information",
-      "craft_total": 7.3,
-      "impact_score": 8.0,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Meredith moment - shocking overshare that completely derails Michael's training. Great character integration and cringe factor."
-    },
-    {
-      "index": 4,
-      "text": "What you people don't know about business I could fill a book with. - Then do it. - What? Write a book.",
-      "characters": [
-        "Michael",
-        "Unknown employee"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "deadpan_understatement"
-      ],
-      "setup": "Michael boasting about his business knowledge",
-      "punchline": "Employee's matter-of-fact suggestion to actually write the book",
-      "craft_total": 6.85,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Michael asks Meredith about her weekend for a business demonstration",
+      "punchline": "She shares inappropriate bathroom story in professional setting",
+      "craft_total": 6.54,
+      "impact_score": 7.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clean setup/punchline with perfect timing. The employee's deadpan response deflates Michael's ego efficiently."
+      "explanation": "Perfect Meredith character moment - inappropriate overshare that derails Michael's professional demonstration"
     },
     {
       "index": 5,
-      "text": "The fundamentals of business by Michael Scott. Over 1 billion sold. More than the Bible. I'm not surprised.",
+      "text": "What you people don't know about business I could fill a book with. Then do it. Write a book.",
+      "characters": [
+        "Michael",
+        "Jim"
+      ],
+      "joke_types": [
+        "misdirection",
+        "character_comedy"
+      ],
+      "setup": "Michael brags about his business knowledge using a common expression",
+      "punchline": "Jim takes it literally and suggests he actually write the book",
+      "craft_total": 6.54,
+      "impact_score": 6.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good straight-man response that exposes the emptiness of Michael's boast"
+    },
+    {
+      "index": 6,
+      "text": "Over 1 billion sold. More than the Bible. I'm not surprised.",
       "characters": [
         "Michael"
       ],
@@ -101,115 +120,76 @@
         "absurdist",
         "character_comedy"
       ],
-      "setup": "Michael imagining his hypothetical business book",
-      "punchline": "His delusional belief it would outsell the Bible and his lack of surprise at this",
-      "craft_total": 6.9,
-      "impact_score": 7.0,
+      "setup": "Michael imagining his hypothetical business book's success",
+      "punchline": "He claims it would outsell the Bible and acts unsurprised by this",
+      "craft_total": 6.97,
+      "impact_score": 6.75,
       "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Peak Michael Scott delusion. The escalation from book to Bible comparison to casual acceptance is perfectly in character."
-    },
-    {
-      "index": 6,
-      "text": "Your schedule just says nine till noon is creative space. - Do you know how creative space works?",
-      "characters": [
-        "Erin",
-        "Michael"
-      ],
-      "joke_types": [
-        "observational",
-        "character_comedy"
-      ],
-      "setup": "Erin apologizing for interrupting Michael's valuable time",
-      "punchline": "His schedule is just 'creative space' which sounds made-up and self-important",
-      "craft_total": 6.8,
-      "impact_score": 6.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Reveals Michael's pretentious work habits. 'Creative space' is a perfect Michael-ism - sounds important but is meaningless."
+      "explanation": "Michael's delusional self-importance perfectly captured in his casual confidence about outselling the Bible"
     },
     {
       "index": 7,
-      "text": "You don't have anything in the afternoon. It just says, 'free play.' - Push 'free play' till tomorrow morning.",
+      "text": "Your schedule just says nine till noon is creative space. Do you know how creative space works?",
       "characters": [
         "Erin",
         "Michael"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Michael's afternoon schedule being revealed",
-      "punchline": "It's literally just 'free play' like a kindergarten schedule, but he treats it seriously",
-      "craft_total": 7.8,
-      "impact_score": 8.0,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Erin questions Michael's schedule being interrupted",
+      "punchline": "Michael acts like 'creative space' is a sophisticated business concept when it's just empty time",
+      "craft_total": 6.74,
+      "impact_score": 6.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant escalation from 'creative space' to 'free play' - Michael's schedule is literally childlike but he maintains complete seriousness."
+      "explanation": "Michael's pretentious reaction to being called out on his empty schedule"
     },
     {
       "index": 8,
-      "text": "You're seeing how the sausage gets made. Come in the conference room, and I will show you a finished sausage.",
+      "text": "You don't have anything in the afternoon. It just says, 'free play.'",
+      "characters": [
+        "Erin"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Michael claims to cancel his afternoon",
+      "punchline": "Erin reveals his schedule literally says 'free play' like a kindergartener's",
+      "craft_total": 7.62,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Free play' perfectly captures Michael's childish approach to management while Erin delivers it matter-of-factly"
+    },
+    {
+      "index": 9,
+      "text": "Sorry, crazy day. You're seeing how the sausage gets made. Come in the conference room, and I will show you a finished sausage.",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "character_comedy",
         "absurdist"
       ],
-      "setup": "Michael using the idiom about seeing how something is made",
-      "punchline": "Taking the sausage metaphor literally and promising to show an actual 'finished sausage'",
-      "craft_total": 6.2,
-      "impact_score": 5.5,
-      "quotability": 7.0,
+      "setup": "Michael trying to impress the insurance salesman",
+      "punchline": "He misuses the 'sausage making' metaphor and promises to show a 'finished sausage'",
+      "craft_total": 6.67,
+      "impact_score": 6.17,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael misunderstanding idioms is classic, but this one feels a bit forced. The setup works but payoff is predictable."
-    },
-    {
-      "index": 9,
-      "text": "Jim's gone on his honeymoon. So I started borrowing his office to fart in. Then one day, I came in, and I just stayed. 'cause this place is awesome.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Dwight explaining why he's in Jim's office",
-      "punchline": "Started using it as a fart room, then just moved in permanently",
-      "craft_total": 7.8,
-      "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Dwight logic and gross overshare. The escalation from borrowing to farting to permanent residence is beautifully absurd."
+      "explanation": "Michael's attempt to sound sophisticated backfires with awkward metaphor extension"
     },
     {
       "index": 10,
-      "text": "Even better than my home. My home sucks.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
-      ],
-      "setup": "Dwight praising Jim's office as feeling like home",
-      "punchline": "His casual admission that his actual home sucks",
-      "craft_total": 6.65,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Simple but effective. Dwight's matter-of-fact delivery of sad information creates the humor."
-    },
-    {
-      "index": 11,
-      "text": "Think you're right. Definitely looks suspicious. And his southern italian heritage raises some flags.",
+      "text": "Jim's gone on his honeymoon. So I started borrowing his office to fart in. Then one day, I came in, and I just stayed.",
       "characters": [
         "Dwight"
       ],
@@ -217,77 +197,134 @@
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Discussing whether the insurance salesman seems suspicious",
-      "punchline": "Dwight's casual ethnic profiling",
-      "craft_total": 5.2,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Dwight explaining why he's in Jim's office",
+      "punchline": "He admits he originally used it just for farting but then moved in",
+      "craft_total": 7.53,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Dwight logic progression from inappropriate office use to full occupation"
+    },
+    {
+      "index": 11,
+      "text": "My home sucks.",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Dwight explaining why he likes Jim's office better than his home",
+      "punchline": "Simple, matter-of-fact admission about his living situation",
+      "craft_total": 6.87,
+      "impact_score": 6.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Dwight's inappropriate assumptions but feels a bit lazy - relying on stereotypes without much craft."
+      "explanation": "Dwight's blunt honesty delivered with perfect economy"
     },
     {
       "index": 12,
-      "text": "Guys, I drive an SUV. Does that mean I'm in the mob? - No, not that by itself. But look at all the facts.",
+      "text": "Think you're right. Definitely looks suspicious. And his southern italian heritage raises some flags.",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Discussing whether the insurance salesman seems suspicious",
+      "punchline": "Dwight immediately jumps to ethnic profiling",
+      "craft_total": 5.83,
+      "impact_score": 5.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dwight's casual prejudice fits his character but relies on stereotypes"
+    },
+    {
+      "index": 13,
+      "text": "There is no such thing as monsters. Mobsters are.",
       "characters": [
         "Michael",
         "Dwight"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "wordplay_pun",
+        "misdirection"
       ],
-      "setup": "Michael trying to use himself as counter-example to SUV = mob theory",
-      "punchline": "Dwight's implication that other factors might make Michael mob-worthy",
-      "craft_total": 7.15,
-      "impact_score": 7.0,
+      "setup": "Dwight says mobsters are threats, Michael mishears as monsters",
+      "punchline": "Michael corrects about monsters while Dwight clarifies mobsters",
+      "craft_total": 6.83,
+      "impact_score": 6.5,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirection - Michael expects vindication but Dwight leaves room for him to still be suspicious."
+      "explanation": "Simple misunderstanding creates brief confusion"
     },
     {
-      "index": 13,
-      "text": "All Mobsters have a front. Sometimes it's selling insurance. Sometimes, it's waste management or sanitation.",
+      "index": 14,
+      "text": "More trunk space. Or should I say corpse space?",
       "characters": [
         "Dwight"
       ],
       "joke_types": [
-        "observational",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Explaining why the insurance salesman could still be mob",
-      "punchline": "Dwight's confident expertise on mob operations from watching movies",
-      "craft_total": 4.8,
-      "impact_score": 4.0,
-      "quotability": 3.0,
+      "setup": "Discussing why the insurance salesman drives an SUV",
+      "punchline": "Dwight immediately connects it to corpse transportation",
+      "craft_total": 6.37,
+      "impact_score": 6.33,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Generic mob movie knowledge presented as expertise. Lacks originality and feels like filler."
-    },
-    {
-      "index": 14,
-      "text": "Buy my insurance, or I burn your warehouse down. - He did talk about a fire in the warehouse. And he also vaguely threatened me with testicular cancer.",
-      "characters": [
-        "Andy",
-        "Michael"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Andy sarcastically paraphrasing the insurance threat",
-      "punchline": "Michael's completely serious addition about testicular cancer threat",
-      "craft_total": 7.6,
-      "impact_score": 8.5,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant escalation from warehouse fire to testicular cancer. Michael's paranoid interpretation of normal insurance talk is perfectly absurd."
+      "explanation": "Dwight's morbid interpretation fits his character's conspiracy mindset"
     },
     {
       "index": 15,
-      "text": "Pam and Jim are on their honeymoon, so there's not the usual balance between sane and others. Toby has mentally checked out since June. The coalition for reason is extremely weak.",
+      "text": "Guys, I drive an SUV. Does that mean I'm in the mob? No, not that by itself.",
+      "characters": [
+        "Michael",
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Michael tries to disprove the SUV theory using himself as example",
+      "punchline": "Dwight's response suggests other evidence makes Michael suspicious",
+      "craft_total": 7.23,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Dwight's implication that Michael could be mobster based on other factors"
+    },
+    {
+      "index": 16,
+      "text": "And he also vaguely threatened me with testicular cancer.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "absurdist",
+        "misdirection"
+      ],
+      "setup": "Michael listing the insurance salesman's threats",
+      "punchline": "He misinterprets insurance coverage mention as a threat",
+      "craft_total": 7.11,
+      "impact_score": 7.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Michael's paranoid misinterpretation of insurance sales pitch as personal threat"
+    },
+    {
+      "index": 17,
+      "text": "Pam and Jim are on their honeymoon, so there's not the usual balance between sane and others. The coalition for reason is extremely weak.",
       "characters": [
         "Oscar"
       ],
@@ -295,175 +332,188 @@
         "observational",
         "meta_self_referential"
       ],
-      "setup": "Oscar analyzing the office dynamics in talking head",
-      "punchline": "Clinical description of sanity as a political coalition that's currently undermanned",
-      "craft_total": 8.35,
-      "impact_score": 8.0,
-      "quotability": 9.5,
+      "setup": "Oscar explaining the office dynamic in talking head",
+      "punchline": "He describes the office as needing a 'coalition for reason' against the others",
+      "craft_total": 7.77,
+      "impact_score": 7.33,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant political metaphor for office sanity. Oscar's analytical perspective creates perfect comedy through treating chaos as a governance problem."
+      "explanation": "Brilliant meta-commentary on the show's character dynamics with military-style language"
     },
     {
-      "index": 16,
-      "text": "John Gotti, you idiot. It's a completely different name. - So he won't get caught. - It's pretty close. What mobster would change his name from Gotti to Grotti? It weakens it.",
+      "index": 18,
+      "text": "First of all, there's no such thing as 'the mafia.' What you have are specific families.",
       "characters": [
-        "Ryan",
-        "Andy"
+        "Ryan"
       ],
       "joke_types": [
-        "absurdist",
-        "setup_punchline"
+        "character_comedy"
       ],
-      "setup": "Discussion of whether Grotti/Gotti connection means anything",
-      "punchline": "Andy's logic that changing Gotti to Grotti would be a bad rebrand",
-      "craft_total": 6.4,
-      "impact_score": 6.5,
+      "setup": "Ryan being asked about mafia knowledge from living in New York",
+      "punchline": "He immediately acts like an expert with pretentious corrections",
+      "craft_total": 7.15,
+      "impact_score": 7.0,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Funny debate about mob branding strategy. Andy's marketing perspective on name changes is absurdly logical."
+      "explanation": "Perfect Ryan character moment - pretentious expertise about organized crime"
     },
     {
-      "index": 17,
+      "index": 19,
+      "text": "John Gotti, you idiot. It's a completely different name. What mobster would change his name from Gotti to Grotti?",
+      "characters": [
+        "Ryan",
+        "Kevin"
+      ],
+      "joke_types": [
+        "character_comedy"
+      ],
+      "setup": "Kevin suggests Grotti sounds like Gotti",
+      "punchline": "Ryan's condescending logic about why a mobster wouldn't make that name change",
+      "craft_total": 6.04,
+      "impact_score": 5.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Ryan's arrogant dismissal with sound logic about criminal name changes"
+    },
+    {
+      "index": 20,
       "text": "'R' is among the most menacing of sounds. That's why they call it murder, not 'mukduk.'",
       "characters": [
         "Dwight"
       ],
       "joke_types": [
         "absurdist",
-        "wordplay_pun"
+        "character_comedy"
       ],
-      "setup": "Dwight defending why 'Grotti' is more menacing than 'Gotti'",
-      "punchline": "His linguistic theory using the made-up word 'mukduk'",
-      "craft_total": 8.6,
-      "impact_score": 9.0,
+      "setup": "Dwight defending that Grotti is more menacing than Gotti",
+      "punchline": "His made-up linguistic theory with invented word 'mukduk'",
+      "craft_total": 8.36,
+      "impact_score": 8.67,
       "quotability": 9.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Absolutely brilliant Dwight pseudo-science. The confident delivery of completely made-up linguistic theory with 'mukduk' is comedy gold."
+      "explanation": "Absolutely brilliant Dwight logic with perfect invented word 'mukduk' - shows his weird intelligence and complete confidence in absurd theories"
     },
     {
-      "index": 18,
+      "index": 21,
       "text": "Too many different words coming at me from too many different sentences.",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "deadpan_understatement"
+        "cringe_discomfort"
       ],
-      "setup": "Everyone talking at once with mob theories",
-      "punchline": "Michael's overwhelmed description of basic conversation",
-      "craft_total": 7.1,
-      "impact_score": 7.0,
-      "quotability": 8.0,
+      "setup": "Multiple people giving Michael contradictory advice about the mafia situation",
+      "punchline": "Michael's overwhelmed, childish way of expressing confusion",
+      "craft_total": 6.86,
+      "impact_score": 6.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Michael overload moment. His childlike description of being confused by multiple people talking is endearingly pathetic."
-    },
-    {
-      "index": 19,
-      "text": "Unless someone very close to us is in immediate physical danger, you should not be calling us. - You're right. Sorry.",
-      "characters": [
-        "Jim",
-        "Oscar"
-      ],
-      "joke_types": [
-        "reaction_beat",
-        "setup_punchline"
-      ],
-      "setup": "Oscar calling Jim on his honeymoon about Michael's mob situation",
-      "punchline": "Jim's firm boundary-setting immediately makes Oscar back down",
-      "craft_total": 6.5,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Jim's growth and Oscar's immediate deflation when confronted with reasonable boundaries."
-    },
-    {
-      "index": 20,
-      "text": "Not only that, but if they find out you snitched, you get a dead horse's chopped-off head in your bed. - That's not gonna happen. - That's an exaggeration.",
-      "characters": [
-        "Dwight",
-        "Andy",
-        "Oscar"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Dwight warning against calling police on the 'mob'",
-      "punchline": "His over-the-top movie reference and others' mild corrections",
-      "craft_total": 5.25,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard Dwight movie knowledge presented as fact. Others' understated corrections provide mild humor."
-    },
-    {
-      "index": 21,
-      "text": "Criminals are like raccoons. You give them a taste of cat food, pretty soon, they'll back for the whole cat.",
-      "characters": [
-        "Andy"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Andy explaining why giving in to criminals is bad",
-      "punchline": "His completely nonsensical raccoon/cat food/cat metaphor",
-      "craft_total": 7.15,
-      "impact_score": 7.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Wonderfully confused metaphor that makes no sense but sounds profound. Andy's confident delivery of nonsense is perfect."
+      "explanation": "Michael's inability to process multiple inputs expressed like a child"
     },
     {
       "index": 22,
-      "text": "If I'm gonna back you up, I need a weapon without drawing suspicion. And I have to justify it somehow, so I'm a mechanic with a tire thing.",
+      "text": "Unless someone very close to us is in immediate physical danger, you should not be calling us.",
       "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "visual_gag"
-      ],
-      "setup": "Dwight explaining his disguise for the meeting",
-      "punchline": "His logic about needing a cover story for carrying a tire iron",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Dwight over-preparation. His detailed logic for what should be a simple backup plan shows his tactical mindset."
-    },
-    {
-      "index": 23,
-      "text": "Do you know how to use it? - To change tires? No. But... it's metal. I could hit somebody.",
-      "characters": [
-        "Michael",
-        "Dwight"
+        "Jim"
       ],
       "joke_types": [
         "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Michael questioning Dwight's tire iron plan",
-      "punchline": "Dwight admitting he can't actually change tires but could use it as a weapon",
-      "craft_total": 7.35,
-      "impact_score": 7.5,
+      "setup": "Oscar calls Jim and Pam on their honeymoon about Michael's mafia fears",
+      "punchline": "Jim sets very specific boundaries for honeymoon interruptions",
+      "craft_total": 6.78,
+      "impact_score": 6.33,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Dwight logic - elaborate plan with obvious flaw. His matter-of-fact admission about not knowing tire changing is funny."
+      "explanation": "Jim's reasonable but firm boundary-setting shows his maturity vs office chaos"
+    },
+    {
+      "index": 23,
+      "text": "That is the stupidest thing you could do right now.",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Michael suggests calling the police about the mafia threat",
+      "punchline": "Dwight's immediate, definitive rejection shows his mob movie knowledge",
+      "craft_total": 6.45,
+      "impact_score": 6.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dwight's expertise from mob movies treating situation as real"
     },
     {
       "index": 24,
-      "text": "The bathroom checks out clean. Nothing behind the toilet except this roach motel.",
+      "text": "Not only that, but if they find out you snitched, you get a dead horse's chopped-off head in your bed.",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Dwight explaining why not to call police",
+      "punchline": "He misremembers the famous Godfather scene with added gruesome details",
+      "craft_total": 6.05,
+      "impact_score": 6.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Dwight's garbled pop culture reference with unnecessary gore addition"
+    },
+    {
+      "index": 25,
+      "text": "Criminals are like raccoons. You give them a taste of cat food, pretty soon, they'll be back for the whole cat.",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Dwight explaining why giving in to criminals is bad",
+      "punchline": "His animal analogy escalates from cat food to eating the whole cat",
+      "craft_total": 8.0,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Brilliant Dwight analogy that starts logical but veers into absurdist territory with perfect confidence"
+    },
+    {
+      "index": 26,
+      "text": "Trust me, I have bullied a lot of people.",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Dwight giving advice about standing up to bullies",
+      "punchline": "He casually admits to being a bully himself as credentials",
+      "craft_total": 7.5,
+      "impact_score": 7.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Dwight moment - complete lack of self-awareness about his own behavior while giving advice"
+    },
+    {
+      "index": 27,
+      "text": "If I'm gonna back you up, I need a weapon without drawing suspicion. So I'm a mechanic with a tire thing.",
       "characters": [
         "Dwight"
       ],
@@ -471,78 +521,95 @@
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Dwight doing reconnaissance at the restaurant",
-      "punchline": "His military-style report about bathroom surveillance",
-      "craft_total": 6.7,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dwight treating a casual lunch like a military operation. The formal language for mundane observation is characteristic."
-    },
-    {
-      "index": 25,
-      "text": "You want to separate the head from the thorax. - Cool it.",
-      "characters": [
-        "Dwight",
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Dwight giving advice about killing roaches",
-      "punchline": "His scientific approach to pest control and Michael's uncomfortable reaction",
-      "craft_total": 6.7,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Dwight over-expertise on random topics. Michael's 'cool it' shows his discomfort with Dwight's intensity."
-    },
-    {
-      "index": 26,
-      "text": "383 Linden Ave., Scranton, PA. - And May I have the last four digits of your social security? - 6650.",
-      "characters": [
-        "Jim",
-        "Identity thief (Creed)"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "character_comedy"
-      ],
-      "setup": "'Identity theft department' calling Jim on his honeymoon",
-      "punchline": "Jim freely giving out personal information to obvious scammer",
-      "craft_total": 7.05,
+      "setup": "Dwight preparing for the meeting with the insurance salesman",
+      "punchline": "His elaborate disguise plan involving tire iron and mechanic identity",
+      "craft_total": 7.23,
       "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good setup with Jim being surprisingly naive. The irony of giving info to prevent identity theft works well."
-    },
-    {
-      "index": 27,
-      "text": "I think that we should let the criminal use the card a little longer. - Very funny, sir.",
-      "characters": [
-        "Jim",
-        "Identity thief (Creed)"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "misdirection"
-      ],
-      "setup": "Jim realizing it's a scam",
-      "punchline": "His sarcastic suggestion and the scammer taking it as a joke",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Jim's dry humor meets clueless scammer. The mutual misunderstanding creates mild comedy."
+      "explanation": "Dwight's overly complex plan for simple backup role shows his tactical overthinking"
     },
     {
       "index": 28,
-      "text": "I'll have linguini, red sauce on the side. If the sauce does not come on the side, I will send it back. I want garlic bread, toasted, not burnt. If it comes burnt, I will send it back.",
+      "text": "Do you know how to use it? To change tires? No. But... it's metal. I could hit somebody.",
+      "characters": [
+        "Michael",
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Michael asks if Dwight knows how to use the tire iron",
+      "punchline": "Dwight admits no mechanical knowledge but sees violent potential",
+      "craft_total": 6.92,
+      "impact_score": 6.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dwight's honest admission about his real intentions with the tool"
+    },
+    {
+      "index": 29,
+      "text": "The bathroom checks out clean. Nothing behind the toilet except this roach motel.",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "visual_gag"
+      ],
+      "setup": "Dwight scouting the restaurant for security",
+      "punchline": "His military-style reconnaissance of a normal restaurant bathroom",
+      "craft_total": 6.9,
+      "impact_score": 6.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dwight treating casual lunch meeting like military operation"
+    },
+    {
+      "index": 30,
+      "text": "You want to separate the head from the thorax.",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Someone mentions killing a roach",
+      "punchline": "Dwight gives overly technical advice about insect anatomy",
+      "craft_total": 6.89,
+      "impact_score": 6.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dwight's unnecessary expertise applied to simple pest control"
+    },
+    {
+      "index": 31,
+      "text": "Hello, Mr. Halpert? I'm calling from The identity theft department at Capital One.",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Dwight calling Jim while he's on his honeymoon",
+      "punchline": "He's pretending to be from credit card fraud department",
+      "craft_total": 6.89,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Classic Dwight prank continuing their rivalry even during Jim's honeymoon"
+    },
+    {
+      "index": 32,
+      "text": "I'll have linguini, red sauce on the side. If the sauce does not come on the side, I will send it back.",
       "characters": [
         "Michael"
       ],
@@ -550,18 +617,18 @@
         "character_comedy",
         "escalation"
       ],
-      "setup": "Michael ordering at the restaurant to seem intimidating",
-      "punchline": "His overly specific demands presented as threats",
-      "craft_total": 7.45,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Michael ordering at the restaurant",
+      "punchline": "His unnecessarily specific demands with threats to send food back",
+      "craft_total": 6.38,
+      "impact_score": 6.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael trying to be intimidating through restaurant orders is perfectly pathetic. The escalating specificity builds well."
+      "explanation": "Michael trying to appear tough through aggressive restaurant ordering"
     },
     {
-      "index": 29,
-      "text": "I will have the gabba-gool. - The what? - The gabba-gool. - I don't really know what that is.",
+      "index": 33,
+      "text": "I will have the gabba-gool. The what? The gabba-gool.",
       "characters": [
         "Michael",
         "Waitress"
@@ -570,331 +637,326 @@
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Michael trying to order something that sounds Italian/mob-like",
-      "punchline": "His pronunciation is so wrong that nobody understands what he wants",
-      "craft_total": 6.8,
-      "impact_score": 7.0,
+      "setup": "Michael trying to order Italian food to fit in",
+      "punchline": "His mispronunciation of capicola as 'gabba-gool' confuses waitress",
+      "craft_total": 7.31,
+      "impact_score": 7.33,
       "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Michael cultural appropriation fail. His attempt to seem Italian through butchered pronunciation creates perfect cringe."
-    },
-    {
-      "index": 30,
-      "text": "Bring him the gabba-gool! - I will have the spaghetti.",
-      "characters": [
-        "Dwight",
-        "Michael"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Michael's gabba-gool order failing",
-      "punchline": "Dwight aggressively demanding the nonsense order, Michael giving up",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dwight's loyal but misguided support escalates the embarrassment before Michael retreats to basic spaghetti."
-    },
-    {
-      "index": 31,
-      "text": "With a side salad. If the salad is on top, I send it back.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "running_gag",
-        "escalation"
-      ],
-      "setup": "Michael continuing his intimidating ordering style",
-      "punchline": "Another overly specific demand about salad placement",
-      "craft_total": 6.1,
-      "impact_score": 6.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Continues the ordering intimidation bit but with diminishing returns. Still in character but less impactful."
-    },
-    {
-      "index": 32,
-      "text": "Why would you cancel Jim's credit cards? - I usually can think quick on my feet. But they were so fast on the phone.",
-      "characters": [
-        "Oscar",
-        "Creed"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
-      ],
-      "setup": "Oscar questioning Creed's identity theft",
-      "punchline": "Creed's matter-of-fact admission that he was outsmarted by his own scam",
-      "craft_total": 7.7,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Creed moment - casual admission of criminal activity with the excuse that he was outmaneuvered. Classic Creed logic."
-    },
-    {
-      "index": 33,
-      "text": "You would love jail. - Why would I love jail? - Because... You would love it.",
-      "characters": [
-        "Kevin",
-        "Oscar"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Kevin suggesting Oscar would like jail",
-      "punchline": "Kevin's inability to explain his reasoning beyond repetition",
-      "craft_total": 5.85,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Uncomfortable moment that feels like it's heading toward stereotypes. Kevin's inability to articulate creates some humor but feels off."
+      "explanation": "Perfect Michael Scott cultural appropriation attempt with confident mispronunciation"
     },
     {
       "index": 34,
-      "text": "Sorry to bother you. Are you a mechanic? My battery's dead. I've got my kid. Can you please help? - Yes, I can.",
+      "text": "Bring him the gabba-gool!",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Waitress doesn't understand Michael's order",
+      "punchline": "Dwight aggressively demands the nonexistent dish",
+      "craft_total": 6.89,
+      "impact_score": 6.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Dwight's aggressive support of Michael's embarrassing mistake"
+    },
+    {
+      "index": 35,
+      "text": "If the salad is on top, I send it back.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Michael continuing his specific restaurant demands",
+      "punchline": "Another arbitrary rule about food presentation",
+      "craft_total": 6.25,
+      "impact_score": 5.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Continuation of Michael's trying-to-be-tough restaurant behavior"
+    },
+    {
+      "index": 36,
+      "text": "I wouldn't last in jail, Oscar. I'm not like you. You would love jail.",
+      "characters": [
+        "Dwight",
+        "Oscar"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Dwight worried about jail time for identity fraud",
+      "punchline": "His awkward implication about Oscar's sexuality and prison",
+      "craft_total": 5.22,
+      "impact_score": 5.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dwight's awkward stereotyping creates uncomfortable moment"
+    },
+    {
+      "index": 37,
+      "text": "My battery's dead. I've got my kid. Can you please help? Yes, I can.",
       "characters": [
         "Woman",
         "Dwight"
       ],
       "joke_types": [
-        "setup_punchline",
-        "visual_gag"
-      ],
-      "setup": "Woman asking for help from 'mechanic' Dwight",
-      "punchline": "Dwight confidently accepting despite being completely fake",
-      "craft_total": 6.85,
-      "impact_score": 7.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good setup for Dwight's fake mechanic competence. His confident acceptance despite being a fraud creates anticipation."
-    },
-    {
-      "index": 35,
-      "text": "Black goes on the red with the... If we... Positive... It being a motor drive, it's just probably... down.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
         "character_comedy",
-        "physical_slapstick"
+        "irony_sarcasm"
       ],
-      "setup": "Dwight attempting to jump-start a car",
-      "punchline": "His complete incompetence disguised with technical-sounding nonsense",
+      "setup": "Woman asks Dwight (in mechanic costume) for car help",
+      "punchline": "Dwight immediately agrees despite having no mechanical knowledge",
       "craft_total": 6.8,
-      "impact_score": 7.5,
-      "quotability": 6.0,
+      "impact_score": 6.75,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Dwight's fake expertise crumbling under pressure. His attempt to sound knowledgeable while clearly failing is classic character comedy."
+      "is_callback": 1,
+      "explanation": "Dwight's commitment to his fake identity despite complete incompetence"
     },
     {
-      "index": 36,
+      "index": 38,
       "text": "You got a leaky spark tube. So your car's totaled. You're just gonna want to get a refund on that.",
       "characters": [
         "Dwight"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Dwight failing at car repair",
-      "punchline": "His completely made-up diagnosis that the entire car is worthless",
-      "craft_total": 7.75,
-      "impact_score": 8.5,
-      "quotability": 9.0,
+      "setup": "Dwight trying to diagnose car problems",
+      "punchline": "His completely made-up diagnosis and ridiculous conclusion",
+      "craft_total": 7.28,
+      "impact_score": 7.17,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant escalation from minor issue to total loss. 'Leaky spark tube' is perfect made-up car part. Dwight's confident delivery makes it funnier."
+      "explanation": "Brilliant fake mechanical terminology ('leaky spark tube') with absurd conclusion about totaled car"
     },
     {
-      "index": 37,
+      "index": 39,
       "text": "I work exclusively on motorcycles.",
       "characters": [
         "Dwight"
       ],
       "joke_types": [
-        "escalation",
-        "misdirection"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Woman asking Dwight to fix her car after his terrible diagnosis",
-      "punchline": "His sudden claim of motorcycle specialization to avoid responsibility",
-      "craft_total": 7.75,
-      "impact_score": 7.5,
+      "setup": "Dwight failing to help with car",
+      "punchline": "He creates another layer of his fake mechanic identity",
+      "craft_total": 6.6,
+      "impact_score": 6.17,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Dwight escape strategy - suddenly becoming hyper-specialized to avoid helping. Great economy and timing."
-    },
-    {
-      "index": 38,
-      "text": "I had this car, 'cause... This Italian car. And I was driving it, and it kept telling me how much it needed oil. But I wouldn't give it any oil. And then, one day, it exploded. And it killed everyone.",
-      "characters": [
-        "Andy"
-      ],
-      "joke_types": [
-        "absurdist",
-        "dark_subversive"
-      ],
-      "setup": "Andy attempting to create an intimidating story",
-      "punchline": "His completely ridiculous car metaphor ending in mass death",
-      "craft_total": 6.7,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Andy's attempt at menacing parable is wonderfully absurd. The escalation to everyone dying is perfectly over-the-top."
-    },
-    {
-      "index": 39,
-      "text": "Aren't you a mechanic? Why wouldn't you put oil in the car? - It was before my technical training.",
-      "characters": [
-        "Grotti",
-        "Andy"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "absurdist"
-      ],
-      "setup": "Grotti pointing out the flaw in Andy's metaphor",
-      "punchline": "Andy's ridiculous excuse for the story's logical hole",
-      "craft_total": 7.4,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good callback to the mechanic disguise with Andy's desperate attempt to maintain story logic through more absurdity."
+      "explanation": "Dwight's desperate attempt to maintain credibility by narrowing his fake expertise"
     },
     {
       "index": 40,
-      "text": "You were man enough to back down, michael. I'm proud of you. - I had to make a snap decision. - It wasn't a snap. You were sitting there for an hour.",
+      "text": "This Italian car. And I was driving it, and it kept telling me how much it needed oil. But I wouldn't give it any oil. And then, one day, it exploded. And it killed everyone.",
       "characters": [
-        "Andy",
-        "Michael",
         "Dwight"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Andy praising Michael for backing down, Michael defending it as decisive",
-      "punchline": "Dwight's matter-of-fact correction about the timing",
-      "craft_total": 7.15,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good deflation of Michael's attempt to reframe his indecision as quick thinking. Dwight's literal correction works well."
-    },
-    {
-      "index": 41,
-      "text": "How did you get this number? - We're on a catamaran. - It wasn't easy. I had to tell the hotel that it was a medical emergency. I chose massive coronary, 'cause you told me that your dad... had a bad heart.",
-      "characters": [
-        "Jim",
-        "Kevin"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Kevin somehow reaching Jim on his honeymoon",
-      "punchline": "His elaborate lie using Jim's family medical history",
-      "craft_total": 7.05,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Kevin's inappropriate use of personal information for his convenience is perfectly in character. The escalation is believable for him."
-    },
-    {
-      "index": 42,
-      "text": "Accounting-wise, no. But phone-wise, just call up and cancel it.",
-      "characters": [
-        "Oscar"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "observational"
-      ],
-      "setup": "Michael asking about accounting tricks to avoid paying for insurance",
-      "punchline": "Oscar's matter-of-fact suggestion to just cancel it normally",
-      "craft_total": 7.25,
-      "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Oscar response - cutting through Michael's overcomplicated thinking with simple logic. The 'phone-wise' construction is funny."
-    },
-    {
-      "index": 43,
-      "text": "Are you saying... that we surgically remove the fear center from Michael's brain?",
-      "characters": [
-        "Kevin"
-      ],
-      "joke_types": [
-        "absurdist",
-        "misdirection"
-      ],
-      "setup": "Andy suggesting they help Michael feel no fear",
-      "punchline": "Kevin's interpretation that this requires brain surgery",
-      "craft_total": 7.8,
+      "setup": "Dwight trying to tell a threatening story to the insurance salesman",
+      "punchline": "His bizarre metaphor about a car that talks and mass death",
+      "craft_total": 7.78,
       "impact_score": 8.0,
       "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant Kevin moment - taking psychological concept to its most literal extreme. Perfect character integration with his simplistic thinking."
+      "explanation": "Completely unhinged Dwight intimidation attempt with talking car and mass casualties"
     },
     {
-      "index": 44,
-      "text": "I have a buddy who's a fed, and we did a background check on the guy. - I have friends still on the force. Checked with them. - Ran his fed friend up the flagpole to make sure he wasn't on the take.",
+      "index": 41,
+      "text": "Aren't you a mechanic? Why wouldn't you put oil in the car? It was before my technical training.",
       "characters": [
-        "Andy",
+        "Insurance Salesman",
         "Dwight"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Andy and Dwight explaining their 'investigation' of Grotti",
-      "punchline": "Their increasingly elaborate fake law enforcement connections",
-      "craft_total": 6.3,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Insurance salesman questions Dwight's mechanic story logic",
+      "punchline": "Dwight has to invent timeline for his fake expertise",
+      "craft_total": 6.88,
+      "impact_score": 6.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Dwight's quick thinking to maintain his cover story despite obvious plot hole"
+    },
+    {
+      "index": 42,
+      "text": "It wasn't a snap decision. You were sitting there for an hour. Do you know what snap decision means? It means like this.",
+      "characters": [
+        "Dwight",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Michael claims he made a snap decision",
+      "punchline": "Dwight corrects him with literal demonstration of 'snap'",
+      "craft_total": 6.72,
+      "impact_score": 6.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of fake authority but feels a bit drawn out. The 'ran up the flagpole' language is appropriately procedural."
+      "explanation": "Dwight's literal interpretation with finger snap demonstration"
+    },
+    {
+      "index": 43,
+      "text": "I had to tell the hotel that it was a medical emergency. I chose massive coronary, because you told me that your dad had a bad heart.",
+      "characters": [
+        "Kevin"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Kevin explaining how he got Jim's hotel number",
+      "punchline": "His elaborate lie using Jim's family medical history",
+      "craft_total": 7.33,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Kevin's disturbing use of personal information for deception shows his questionable judgment"
+    },
+    {
+      "index": 44,
+      "text": "Bermuda Triangle.",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Jim can't hear Kevin due to bad phone connection",
+      "punchline": "He blames supernatural phenomenon rather than technology",
+      "craft_total": 6.86,
+      "impact_score": 6.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jim's dry humor about phone problems with perfect economy"
     },
     {
       "index": 45,
+      "text": "What about this cash for clunkers thing?",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy"
+      ],
+      "setup": "Michael asking Oscar about getting out of insurance payments",
+      "punchline": "He randomly mentions unrelated government program",
+      "craft_total": 6.17,
+      "impact_score": 5.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's desperate grasping at any government program for financial help"
+    },
+    {
+      "index": 46,
+      "text": "We have let Michael down. And it's 85% your fault.",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Dwight and Andy discussing Michael's situation",
+      "punchline": "Dwight's precise percentage blame assignment",
+      "craft_total": 6.37,
+      "impact_score": 6.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dwight's mathematical precision applied to emotional situations"
+    },
+    {
+      "index": 47,
+      "text": "Look at his life. Broke. Living in fear. No friends, dead end job. Some of that existed before.",
+      "characters": [
+        "Dwight",
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Dwight listing what's wrong with Michael's life",
+      "punchline": "Andy's honest admission that most problems pre-existed",
+      "craft_total": 7.17,
+      "impact_score": 7.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Brutal honest assessment of Michael's life with perfect timing"
+    },
+    {
+      "index": 48,
+      "text": "Are you saying that we surgically remove the fear center from Michael's brain?",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Dwight suggesting making Michael fearless",
+      "punchline": "Andy's literal interpretation involves brain surgery",
+      "craft_total": 7.48,
+      "impact_score": 7.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Andy's immediate jump to extreme medical procedure as solution"
+    },
+    {
+      "index": 49,
       "text": "If there is one thing I hate more than the mafia, it is a liar. I wish the mafia would go out and kill all the liars. And bury them in my yard.",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Michael expressing anger at being deceived by pushy salesman",
-      "punchline": "His wish for the mafia to commit murders in his yard",
-      "craft_total": 7.05,
-      "impact_score": 7.5,
+      "setup": "Michael learning the insurance salesman was just pushy, not mafia",
+      "punchline": "His convoluted logic about preferring mafia to liars",
+      "craft_total": 5.72,
+      "impact_score": 5.67,
       "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Michael's moral confusion is perfect - hating liars more than murderers and wanting violence in his yard. Great character moment."
+      "explanation": "Michael's twisted moral hierarchy with casual murder fantasy"
     },
     {
-      "index": 46,
-      "text": "So I looked him in the eye, and I said, 'Not today, Grotti. Not today. And not tomorrow. And not the next day or the day after that. And you can tell all your friends that if I see them, then they are already dead.' I said something like that. Very close.",
+      "index": 50,
+      "text": "You suck! And I won't buy your stupid insurance.",
       "characters": [
         "Michael"
       ],
@@ -902,56 +964,149 @@
         "character_comedy",
         "escalation"
       ],
-      "setup": "Michael recounting his confrontation with Grotti",
-      "punchline": "His obviously fabricated tough-guy speech followed by admission it wasn't exact",
-      "craft_total": 6.85,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Michael continues his confrontation",
+      "punchline": "His insults remain at elementary school level",
+      "craft_total": 6.25,
+      "impact_score": 6.33,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Michael revisionist history. His elaborate fake quote followed by hedge about accuracy is perfectly in character."
+      "explanation": "Continuation of Michael's childish insults. Shows his limitations in confrontation but not particularly clever."
     },
     {
-      "index": 47,
+      "index": 51,
+      "text": "You suck! And I won't buy your stupid insurance.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Michael confronting the insurance salesman on phone",
+      "punchline": "His childish insults when he thinks he has upper hand",
+      "craft_total": 5.93,
+      "impact_score": 6.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's immature response when feeling powerful, fairly predictable"
+    },
+    {
+      "index": 52,
+      "text": "We just told you he wasn't mafia so you wouldn't be scared. You successfully backed down the mob.",
+      "characters": [
+        "Dwight",
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael feeling proud about standing up to salesman",
+      "punchline": "They reveal they lied to give him confidence, then lie again about his success",
+      "craft_total": 7.13,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Office moment - they immediately create new lie to maintain Michael's confidence"
+    },
+    {
+      "index": 53,
+      "text": "Just to be clear, he backed down an insurance agent from Mutual of Harrisburg.",
+      "characters": [
+        "Oscar"
+      ],
+      "joke_types": [
+        "deadpan_understatement"
+      ],
+      "setup": "Michael bragging about his mafia confrontation",
+      "punchline": "Oscar deflates the story with mundane truth",
+      "craft_total": 7.33,
+      "impact_score": 7.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Oscar moment - deflating Michael's fantasy with precise, boring reality"
+    },
+    {
+      "index": 54,
+      "text": "Coffee. Not from the kitchen. Stop and shop. If it's not stop and shop, I send it back.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Michael ordering coffee with new confidence",
+      "punchline": "He applies his restaurant demanding behavior to coffee orders",
+      "craft_total": 6.51,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Callback to Michael's demanding restaurant behavior but with diminishing returns"
+    },
+    {
+      "index": 55,
       "text": "Coffee. Not from the kitchen. Stop and shop. If it's not stop and shop, I send it back. Large. If it's a medium, I send it back. If it's an extra-large, I send it back.",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "running_gag",
-        "escalation"
-      ],
-      "setup": "Michael continuing his intimidating ordering behavior",
-      "punchline": "Absurdly specific coffee demands including rejecting both smaller AND larger sizes",
-      "craft_total": 6.85,
-      "impact_score": 7.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Strong callback that escalates the absurdity. Rejecting extra-large as well as medium creates perfect Michael logic."
-    },
-    {
-      "index": 48,
-      "text": "Listen, Our credit card has been canceled, and we have to deal with that, and I really can't handle the fact that you're calling us here! - That sounds good. I'll let you go.",
-      "characters": [
-        "Pam",
-        "Kevin"
-      ],
-      "joke_types": [
-        "reaction_beat",
         "character_comedy"
       ],
-      "setup": "Pam finally losing patience with office calls on her honeymoon",
-      "punchline": "Kevin's complete obliviousness to her anger",
-      "craft_total": 6.55,
-      "impact_score": 6.5,
+      "setup": "Michael orders coffee back at the office",
+      "punchline": "Returns to his impossibly demanding ordering style from the restaurant",
+      "craft_total": 5.6,
+      "impact_score": 5.5,
       "quotability": 5.0,
       "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Callback to earlier demanding orders but less effective without the intimidation context. Shows Michael's continued control issues."
+    },
+    {
+      "index": 56,
+      "text": "Our credit card has been canceled, and we have to deal with that, and I really can't handle the fact that you're calling us here!",
+      "characters": [
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Kevin calls Jim and Pam again on honeymoon",
+      "punchline": "Pam's frustrated explanation of their actual problems vs office nonsense",
+      "craft_total": 6.79,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Pam's justified frustration at office chaos interrupting their honeymoon"
+    },
+    {
+      "index": 57,
+      "text": "I will make that my top priority.",
+      "characters": [
+        "Pam"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Kevin asks Pam to tell Jim 'hi'",
+      "punchline": "Pam's sarcastic response while clearly annoyed",
+      "craft_total": 6.41,
+      "impact_score": 6.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Kevin's inability to read emotional cues. His casual response to obvious anger is typical."
+      "explanation": "Pam's perfectly delivered sarcasm showing her irritation"
     }
   ],
-  "air_date": "2009-10-15",
   "imdb_rating": 9.4,
   "imdb_votes": 9929
 }
