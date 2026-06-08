@@ -6,7 +6,12 @@ import ComedyDnaQuiz from '@/components/comedy-dna/ComedyDnaQuiz';
 
 // Hero illustrated card per show (the most quotable joke's art), shown as the
 // banner on each archetype card so it matches the "exemplified by" show.
-const HERO_BY_SLUG: Record<string, number> = { "30-rock": 54940, "arrested-development": 45683, "community": 68764, "flight-of-the-conchords": 99310, "friends": 20897, "its-always-sunny": 92162, "parks-and-recreation": 39411, "schitts-creek": 43543, "seinfeld": 9626, "taxi": 60857, "the-fresh-prince-of-bel-air": 109663, "the-larry-sanders-show": 102932, "the-office": 738, "veep": 87155 };
+const HERO_BY_SLUG: Record<string, string> = { "30-rock": "54940", "arrested-development": "45683", "community": "68764", "flight-of-the-conchords": "99310", "friends": "20897", "its-always-sunny": "92162", "parks-and-recreation": "39411", "schitts-creek": "43543", "seinfeld": "9626", "taxi": "60857", "the-fresh-prince-of-bel-air": "109663", "the-larry-sanders-show": "102932", "the-office": "office-bankruptcy", "veep": "87155" };
+
+// Manual exemplar overrides (archetype slug -> show) where the auto-pick reads off.
+const EXEMPLAR_OVERRIDE: Record<string, { slug: string; name: string }> = {
+  wordsmith: { slug: 'seinfeld', name: 'Seinfeld' },
+};
 
 const OG_IMAGE =
   '/api/og?title=' + encodeURIComponent("What's Your Comedy DNA?") +
@@ -44,7 +49,9 @@ export default async function ComedyDnaPage() {
     .map(s => ({ slug: s.slug, name: s.name }));
   // Same joke-count computation the homepage uses, so the numbers always match.
   const jokeCount = shows.reduce((sum, s) => sum + (s.total_jokes_analyzed || 0), 0);
-  const exemplars = archetypeExemplars(fingerprints);
+  const exemplars = archetypeExemplars(fingerprints).map(e =>
+    EXEMPLAR_OVERRIDE[e.arche.slug] ? { ...e, ...EXEMPLAR_OVERRIDE[e.arche.slug] } : e
+  );
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10 md:py-14">
