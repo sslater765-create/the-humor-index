@@ -520,9 +520,14 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                   {/* Body: VOTE shows only the joke (vertical-centered, big). REVEAL shows show + ep + why-it-lands. */}
                   <div className="px-4 sm:px-5 py-4 flex flex-col flex-1 justify-center min-h-[150px]">
                     {!revealing ? (
-                      <p className="text-[15px] md:text-[16.5px] font-semibold leading-snug">
-                        <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
-                      </p>
+                      <>
+                        <span className="text-[10.5px] font-bold uppercase tracking-wide text-brand-gold mb-1.5 block">
+                          {j.show}{j.ep ? ` · ${j.ep}` : ''}
+                        </span>
+                        <p className="text-[15px] md:text-[16.5px] font-semibold leading-snug">
+                          <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
+                        </p>
+                      </>
                     ) : (
                       <div className="flex flex-col gap-2">
                         <span className="text-[10.5px] font-bold uppercase tracking-wide text-brand-text-muted">
