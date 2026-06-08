@@ -57,33 +57,33 @@ export default async function HomePage() {
                 The science of what&apos;s funny — Claude reads every transcript, rates every laugh on a five-axis rubric,
                 and we publish the receipts.
               </p>
+
+              {/* Big numbers — magazine cover stats */}
+              <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-xl mt-10">
+                <div>
+                  <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
+                    {analyzedShows.length}
+                  </p>
+                  <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Shows scored</p>
+                </div>
+                <div>
+                  <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
+                    {totalEpisodesAnalyzed.toLocaleString()}
+                  </p>
+                  <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Episodes analyzed</p>
+                </div>
+                <div>
+                  <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
+                    {totalJokes.toLocaleString()}
+                  </p>
+                  <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Jokes rated</p>
+                </div>
+              </div>
             </div>
             <HeroLoop className="w-full max-w-[380px] mx-auto lg:mx-0" />
           </div>
 
-          {/* Big numbers — magazine cover stats */}
-          <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-3xl mb-10 pb-10 border-b border-brand-border">
-            <div>
-              <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
-                {analyzedShows.length}
-              </p>
-              <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Shows scored</p>
-            </div>
-            <div>
-              <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
-                {totalEpisodesAnalyzed.toLocaleString()}
-              </p>
-              <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Episodes analyzed</p>
-            </div>
-            <div>
-              <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
-                {totalJokes.toLocaleString()}
-              </p>
-              <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Jokes rated</p>
-            </div>
-          </div>
-
-          <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mb-6">
+          <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mb-6 pt-10 border-t border-brand-border">
             As of {asOf} ·{' '}
             <Link href="/methodology" className="text-brand-gold hover:underline">
               How we score
