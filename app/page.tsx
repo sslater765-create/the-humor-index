@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { getAllShows, getEpisodes } from '@/lib/data';
 import LeaderboardClient from './LeaderboardClient';
 import WhatsNewPersonalized from '@/components/ui/WhatsNewPersonalized';
+import HeroLoop from '@/components/HeroLoop';
 
 export const dynamic = 'force-static';
 
@@ -53,6 +54,9 @@ export default async function HomePage() {
             The science of what&apos;s funny — Claude reads every transcript, rates every laugh on a five-axis rubric,
             and we publish the receipts.
           </p>
+
+          {/* Hero loop — Steamed Hams scored in real time */}
+          <HeroLoop className="mb-10 max-w-3xl" />
 
           {/* Big numbers — magazine cover stats */}
           <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-3xl mb-10 pb-10 border-b border-brand-border">
