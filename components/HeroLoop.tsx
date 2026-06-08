@@ -8,6 +8,11 @@
 
 import { useRef, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+
+// Where the baked-in "See the breakdown" CTA (final frame of the explainer)
+// should link. Change this one value to repoint it.
+const BREAKDOWN_HREF = '/methodology';
 
 export default function HeroLoop({ className = '' }: { className?: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -62,6 +67,14 @@ export default function HeroLoop({ className = '' }: { className?: string }) {
           </span>
         </button>
       )}
+
+      {/* Real, transparent link over the baked-in "See the breakdown" pill in the
+          final frame, so that CTA is actually clickable (sits above the play overlay). */}
+      <Link
+        href={BREAKDOWN_HREF}
+        aria-label="See the breakdown — how the Humor Index is scored"
+        className="absolute bottom-[4.5%] left-1/2 z-20 h-[8%] w-[62%] -translate-x-1/2 rounded-full"
+      />
     </div>
   );
 }
