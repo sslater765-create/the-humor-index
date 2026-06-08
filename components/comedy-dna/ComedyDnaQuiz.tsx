@@ -497,9 +497,13 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                       ariaLabel={sceneLabel}
                       className={`block w-full transition-all duration-300 motion-reduce:transition-none ${revealing ? 'h-[240px]' : 'h-[200px]'}`} />
 
+                    {/* Show chip (top-left) — full-card context during the vote */}
+                    {!revealing && j.show && (
+                      <span className="absolute top-2 left-2.5 inline-flex items-center px-2.5 h-[22px] rounded-md text-[10px] font-extrabold tracking-wide uppercase shadow-sm" style={{ background: st.c, color: tileText(st.c) }}>{j.show}</span>
+                    )}
                     {/* Option number chip during vote; chosen badge during reveal */}
                     {!revealing && (
-                      <span className="absolute top-2 left-2.5 w-[22px] h-[22px] rounded-md bg-black/55 backdrop-blur-sm border border-white/25 text-white text-xs font-extrabold flex items-center justify-center">{idx + 1}</span>
+                      <span className="absolute top-2 right-2.5 w-[22px] h-[22px] rounded-md bg-black/55 backdrop-blur-sm border border-white/25 text-white text-xs font-extrabold flex items-center justify-center">{idx + 1}</span>
                     )}
                     {chosen && (
                       <span className="absolute top-2 left-2.5 inline-flex items-center gap-1 px-2 h-[22px] rounded-md bg-brand-teal text-white text-[10px] font-extrabold tracking-wide uppercase">
@@ -520,14 +524,9 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                   {/* Body: VOTE shows only the joke (vertical-centered, big). REVEAL shows show + ep + why-it-lands. */}
                   <div className="px-4 sm:px-5 py-4 flex flex-col flex-1 justify-center min-h-[150px]">
                     {!revealing ? (
-                      <>
-                        <span className="text-[10.5px] font-bold uppercase tracking-wide text-brand-gold mb-1.5 block">
-                          {j.show}{j.ep ? ` · ${j.ep}` : ''}
-                        </span>
-                        <p className="text-[15px] md:text-[16.5px] font-semibold leading-snug">
-                          <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
-                        </p>
-                      </>
+                      <p className="text-[15px] md:text-[16.5px] font-semibold leading-snug">
+                        <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
+                      </p>
                     ) : (
                       <div className="flex flex-col gap-2">
                         <span className="text-[10.5px] font-bold uppercase tracking-wide text-brand-text-muted">
