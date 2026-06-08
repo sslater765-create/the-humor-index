@@ -75,7 +75,7 @@ export default async function ComedyDnaPage() {
               <div className="p-5 flex gap-4">
                 <span
                   className="shrink-0 inline-flex items-center justify-center rounded-full border-[2.5px] bg-brand-surface"
-                  style={{ borderColor: c, width: 56, height: 56, marginTop: hero ? -46 : 0, boxShadow: hero ? '0 6px 16px rgba(0,0,0,0.55)' : undefined }}
+                  style={{ borderColor: c, width: 56, height: 56 }}
                   aria-hidden
                   dangerouslySetInnerHTML={{ __html: emblemSVG(arche.emblem, 34) }}
                 />
