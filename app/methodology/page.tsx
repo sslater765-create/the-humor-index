@@ -27,7 +27,7 @@ export default function MethodologyPage() {
             How we turn jokes into numbers.
           </h1>
           <p className="text-base sm:text-lg text-brand-text-secondary max-w-2xl leading-relaxed mb-6">
-            Every score on this site comes from the same pipeline — Claude reading the whole transcript,
+            Every score on this site comes from the same pipeline — AI reading the whole transcript,
             tagging every laugh, rating each on a five-axis craft rubric, then aggregating up to the episode,
             season, and show. Here&apos;s the math, the rubric, and the noise floor we&apos;ve measured against it.
           </p>

@@ -18,7 +18,7 @@ export const dynamic = 'force-static';
 const faqs = [
   {
     q: 'Is this scored by AI?',
-    a: `Yes. Every episode is analyzed by Claude (Anthropic's AI) using a structured two-phase process: first detecting every joke in the transcript, then scoring each one across multiple dimensions. The AI reads the full transcript and identifies comedic moments — dialogue jokes, physical comedy cues, reaction beats, cringe sequences, and more.`,
+    a: `Yes. Every episode is analyzed by AI using a structured two-phase process: first detecting every joke in the transcript, then scoring each one across multiple dimensions. The AI reads the full transcript and identifies comedic moments — dialogue jokes, physical comedy cues, reaction beats, cringe sequences, and more.`,
   },
   {
     q: 'Can AI actually understand comedy?',

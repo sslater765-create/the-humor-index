@@ -391,7 +391,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
             You&apos;ll see two real jokes from the funniest sitcoms ever scored. Pick whichever lands harder for <em>you</em> — no wrong answers. After a quick run of face-offs, we&apos;ll map your taste and the shows and jokes built for it.
           </p>
           <p className="text-sm text-brand-text-muted max-w-xl mb-6">
-            Every joke scored 3 times by Claude for consensus, on craft + impact + memorability. <a href="/methodology" className="text-brand-gold hover:text-brand-text-primary font-semibold underline-offset-2 hover:underline">How we did it &rarr;</a>
+            Every joke scored 3 times by AI for consensus, on craft + impact + memorability. <a href="/methodology" className="text-brand-gold hover:text-brand-text-primary font-semibold underline-offset-2 hover:underline">How we did it &rarr;</a>
           </p>
 
           {/* The 6 archetypes preview — anchors the experience by showing what you're working toward */}

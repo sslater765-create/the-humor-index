@@ -74,7 +74,7 @@ export default async function ShowsPage() {
               Coming soon.
             </h2>
             <p className="text-sm text-brand-text-secondary max-w-xl mb-8 leading-relaxed">
-              {upcoming.length} shows in the queue — transcripts collected, episodes counted, awaiting their three Claude passes.
+              {upcoming.length} shows in the queue — transcripts collected, episodes counted, awaiting their three AI passes.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {upcoming.map(show => (

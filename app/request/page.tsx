@@ -25,7 +25,7 @@ export default function RequestPage() {
           </h1>
           <p className="text-base sm:text-lg text-brand-text-secondary max-w-2xl leading-relaxed">
             Every show on the index started as a vote. Cast yours below — the most-requested sitcoms get scored first.
-            One show takes <span className="text-brand-text-primary">several hours</span> of analysis, three Claude passes,
+            One show takes <span className="text-brand-text-primary">several hours</span> of analysis, three AI passes,
             thousands of jokes. Choose wisely.
           </p>
         </div>

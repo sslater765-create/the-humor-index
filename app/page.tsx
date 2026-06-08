@@ -236,7 +236,7 @@ export default async function HomePage() {
             How a joke becomes a number.
           </h2>
           <p className="text-sm text-brand-text-secondary max-w-xl mb-8 leading-relaxed">
-            Every score on this site is a weighted composite of three dimensions, each rated by Claude on a per-joke basis.
+            Every score on this site is a weighted composite of three dimensions, each rated by AI on a per-joke basis.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[

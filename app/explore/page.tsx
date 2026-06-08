@@ -99,7 +99,7 @@ export default async function ExploreHub() {
             <span className="text-brand-text-secondary">of your favorite sitcom?</span>
           </h1>
           <p className="text-base sm:text-lg text-brand-text-secondary max-w-2xl leading-relaxed">
-            Drop a weak season. Isolate a hot streak. Compare eras. Every episode scored by Claude —
+            Drop a weak season. Isolate a hot streak. Compare eras. Every episode scored by AI —
             pick your cut and see the Humor Index, with 95% confidence intervals.
           </p>
         </div>

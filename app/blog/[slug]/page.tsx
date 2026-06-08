@@ -186,7 +186,7 @@ Hey now. 14 shows, 1,849 episodes, 103,448 jokes. The index grows.
     content: `
 Every Sunny fan has the same theory. *Peak Sunny was the FX run. Anything past Season 10 is the gang on autopilot. They should have ended it at 'The Gang Goes to Hell.'*
 
-We just scored every joke in every episode of *It's Always Sunny in Philadelphia* — 8,786 jokes across 177 episodes, three independent Claude passes each — and the data tells a different story. **The last five seasons are not a decline. They're the peak.**
+We just scored every joke in every episode of *It's Always Sunny in Philadelphia* — 8,786 jokes across 177 episodes, three independent AI passes each — and the data tells a different story. **The last five seasons are not a decline. They're the peak.**
 
 ## The headline
 
@@ -238,7 +238,7 @@ Of the top 15 episodes by Humor Index, **eleven are S11 or later.** The pre-S10 
 
 We're trying to keep the [honesty receipts](/methodology) updated on this site, so:
 
-- **Single-run scorer noise is real.** Our intraclass correlation between Claude passes on the same episode is around 0.28 on individual runs — meaning ~72% of episode-level variance is scorer noise. We pull that down hard with the 3-run consensus we use here, but it's worth flagging.
+- **Single-run scorer noise is real.** Our intraclass correlation between AI passes on the same episode is around 0.28 on individual runs — meaning ~72% of episode-level variance is scorer noise. We pull that down hard with the 3-run consensus we use here, but it's worth flagging.
 - **Cluster overlap.** The 95% CI on the Renaissance cut is 79.3–81.6. The CI on the Cult cut is 75.4–77.5. They don't overlap, but they're a lot closer than the 4-point gap suggests at a glance.
 - **Late-season Sunny rewards rewatch.** A lot of Renaissance joke craft is callbacks ("The Implication" turning up six seasons later, "Wild Card, Bitches!" landing as a payoff). Our scoring credits callback craft. If you've never seen early Sunny, half of S15 is just nonsense.
 
@@ -1726,7 +1726,7 @@ The direction is the OPPOSITE of what you might expect. If the LLM were fellatin
 
 ## Finding 2: Our own scorer is noisier than we thought
 
-We scored 30 episodes TWICE, both blind, with different internal random seeds (Claude has natural non-determinism at temperature > 0). Ideally the two scores should be very similar. They\u2019re not.
+We scored 30 episodes TWICE, both blind, with different internal random seeds (the AI has natural non-determinism at temperature > 0). Ideally the two scores should be very similar. They\u2019re not.
 
 ### Reliability per metric
 
