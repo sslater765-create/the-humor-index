@@ -35,7 +35,6 @@ export default function HeroLoop({ className = '' }: { className?: string }) {
 
       <video
         ref={videoRef}
-        loop
         playsInline
         preload="none"
         className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${
