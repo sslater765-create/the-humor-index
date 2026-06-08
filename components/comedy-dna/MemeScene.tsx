@@ -14,6 +14,10 @@ import type { ReactNode } from 'react';
  * build_comedy_dna_data.py (pipeline).
  */
 
+// Illustrated "signature card" joke ids — these render a flat-vector character
+// illustration (public/cards/<id>.png) instead of the procedural scene.
+const CARD_IDS = new Set<number>([738, 4532, 9626, 11619, 12007, 12267, 12596, 14933, 15330, 20897, 22634, 22649, 23274, 26739, 30082, 32853, 34697, 35613, 35736, 36818, 37610, 37664, 38616, 39411, 39441, 42309, 42622, 42788, 43543, 44176, 44299, 45379, 45473, 45529, 45683, 45803, 45859, 46489, 46731, 47793, 47794, 49579, 51101, 51488, 52104, 53123, 54437, 54594, 54937, 54940, 55306, 59224, 60100, 60857, 63734, 63818, 65766, 66151, 67687, 67789, 68022, 68111, 68764, 68940, 69618, 71081, 71094, 87155, 87662, 88102, 89018, 92162, 92565, 92717, 92794, 95234, 95860, 96224, 97210, 98960, 99310, 99314, 99450, 99665, 99748, 100445, 100460, 100584, 102932, 104075, 104487, 109221, 109241, 109402, 109663, 110275, 110816]);
+
 const clamp = (x: number) => Math.max(0, Math.min(255, Math.round(x)));
 function shade(hex: string, f: number): string {
   const n = parseInt(hex.slice(1), 16);
@@ -502,10 +506,14 @@ export function MemeScene({ scene = 'default', color, mono, props: jokeProps, jo
   const bg = `b${raw}`, vig = `v${raw}`;
   const mid = shade(color, 0.6), dark = shade(color, 0.26), light = shade(color, 1.65);
 
+  // Signature illustrated card (PNG) overrides everything else when present.
+  const cardHref = jokeId != null && CARD_IDS.has(jokeId) ? `/cards/${jokeId}.png` : null;
   // Bespoke scene overrides the template entirely (and skips prop overlay).
   const bespoke = jokeId != null ? bespokeSVG(jokeId, color, mid, dark) : null;
 
-  const inner = bespoke ?? (() => {
+  const inner = cardHref ? (
+    <image href={cardHref} x={0} y={0} width={320} height={150} preserveAspectRatio="xMidYMid slice" />
+  ) : bespoke ?? (() => {
     switch (scene) {
       case 'diner': return (<>
         <rect x="0" y="42" width="320" height="46" fill={shade(color, 0.42)} opacity="0.6" />
@@ -586,8 +594,8 @@ export function MemeScene({ scene = 'default', color, mono, props: jokeProps, jo
   })();
 
   const slots = PROP_SLOTS[scene] ?? PROP_SLOTS.default;
-  // Bespoke scenes are self-contained — skip the prop overlay so they aren't double-decorated.
-  const propEls = bespoke ? null : (jokeProps ?? []).slice(0, 2).map((p, i) => {
+  // Bespoke scenes / signature cards are self-contained — skip the prop overlay.
+  const propEls = (bespoke || cardHref) ? null : (jokeProps ?? []).slice(0, 2).map((p, i) => {
     const node = propSVG(p);
     if (!node) return null;
     const s = slots[i];
