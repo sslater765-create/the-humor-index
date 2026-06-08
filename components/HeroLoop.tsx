@@ -41,8 +41,8 @@ export default function HeroLoop({ className = '' }: { className?: string }) {
           started ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <source src="/hero/hero-explainer.webm" type="video/webm" />
         <source src="/hero/hero-explainer.mp4" type="video/mp4" />
+        <source src="/hero/hero-explainer.webm" type="video/webm" />
       </video>
 
       {!started && (
