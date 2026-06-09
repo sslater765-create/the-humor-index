@@ -26,6 +26,10 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
     return idx;
   }, [seasons]);
 
+  // Best/Worst only make sense with 2+ seasons. For a single-season show the
+  // same bar is both best and worst, which stacked the two labels into garble.
+  const multi = seasons.length > 1;
+
   const config = useMemo(() => ({
     type: 'bar' as const,
     data: {
@@ -34,16 +38,15 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
         label: 'Humor Index',
         data: seasons.map(s => s.humor_index),
         backgroundColor: seasons.map((s, i) => {
-          if (i === bestIdx) return scoreToColor(s.humor_index) + 'CC';
-          if (i === worstIdx) return '#666666AA';
+          if (multi && i === bestIdx) return scoreToColor(s.humor_index) + 'CC';
+          if (multi && i === worstIdx) return '#666666AA';
           return scoreToColor(s.humor_index) + '99';
         }),
         borderColor: seasons.map((s, i) => {
-          if (i === bestIdx) return scoreToColor(s.humor_index);
-          if (i === worstIdx) return '#888888';
+          if (multi && i === worstIdx) return '#888888';
           return scoreToColor(s.humor_index);
         }),
-        borderWidth: seasons.map((_, i) => (i === bestIdx || i === worstIdx) ? 2 : 1),
+        borderWidth: seasons.map((_, i) => (multi && (i === bestIdx || i === worstIdx)) ? 2 : 1),
         borderRadius: 4,
       }],
     },
@@ -62,7 +65,7 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
           callbacks: {
             title: (ctx: any) => {
               const s = seasons[ctx[0].dataIndex];
-              const label = ctx[0].dataIndex === bestIdx ? ' (Best)' : ctx[0].dataIndex === worstIdx ? ' (Worst)' : '';
+              const label = !multi ? '' : ctx[0].dataIndex === bestIdx ? ' (Best)' : ctx[0].dataIndex === worstIdx ? ' (Worst)' : '';
               return `Season ${s.season}${label}`;
             },
             label: (ctx: any) => {
@@ -94,6 +97,7 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
         const { ctx } = chart;
         const meta = chart.getDatasetMeta(0);
         if (!meta?.data) return;
+        if (!multi) return; // single-season: no Best/Worst labels (avoids overlap)
 
         // Best label
         const bestBar = meta.data[bestIdx];
@@ -118,7 +122,7 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
         }
       },
     }],
-  }), [seasons, bestIdx, worstIdx]);
+  }), [seasons, bestIdx, worstIdx, multi]);
 
   const { canvasRef, inViewRef } = useInViewChart(config);
 
