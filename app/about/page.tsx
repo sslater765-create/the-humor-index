@@ -6,7 +6,7 @@ export const metadata = {
   title: 'About — The Story Behind the Comedy Data',
   description: 'The Humor Index was built by Sam to answer one question: which sitcom is actually the funniest? Here\'s the story.',
   alternates: {
-    canonical: 'https://thehumorindex.com/about/',
+    canonical: 'https://www.thehumorindex.com/about/',
   },
   openGraph: {
     title: 'About — The Humor Index',
@@ -43,7 +43,7 @@ export default async function AboutPage() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
             { value: totalJokes.toLocaleString(), label: 'Jokes Scored' },
-            { value: String(shows.length), label: 'Shows Tracked' },
+            { value: String(analyzedShows.length), label: 'Shows Scored' },
             { value: String(totalEpisodes), label: 'Episodes Analyzed' },
             { value: '18', label: 'Joke Categories' },
           ].map(stat => (

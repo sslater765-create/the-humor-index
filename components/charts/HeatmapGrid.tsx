@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { EpisodeScore, SeasonScore } from '@/lib/types';
-import { scoreToColor } from '@/lib/scoring';
+import { scoreToColor, formatIndex } from '@/lib/scoring';
 import ShareButton from '../ui/ShareButton';
 
 interface Props {
@@ -43,15 +43,22 @@ export default function HeatmapGrid({ episodes, seasons, showName }: Props) {
               <span className="font-mono text-xs text-brand-text-muted w-5 shrink-0">S{s.season}</span>
               <div className="flex gap-0.5 flex-wrap">
                 {eps.map(ep => (
-                  <div
+                  <button
+                    type="button"
                     key={ep.episode_id}
-                    className="w-4 h-4 rounded-sm cursor-pointer transition-transform hover:scale-125"
+                    aria-label={`S${ep.season}E${ep.episode_number} ${ep.title}, Humor Index ${formatIndex(ep.humor_index)}`}
+                    className="w-5 h-5 rounded-sm cursor-pointer transition-transform hover:scale-125 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
                     style={{ backgroundColor: scoreToColor(ep.humor_index) + 'AA' }}
                     onMouseEnter={e => {
-                      const rect = (e.target as HTMLElement).getBoundingClientRect();
+                      const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
                       setTooltip({ episode: ep, x: rect.left, y: rect.top });
                     }}
                     onMouseLeave={() => setTooltip(null)}
+                    onClick={e => {
+                      // Tap-to-toggle the tooltip on touch devices (no hover).
+                      const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+                      setTooltip(prev => prev?.episode.episode_id === ep.episode_id ? null : { episode: ep, x: rect.left, y: rect.top });
+                    }}
                   />
                 ))}
               </div>

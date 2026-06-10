@@ -16,7 +16,7 @@ export const metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://thehumorindex.com/rankings/jokes-per-minute/',
+    canonical: 'https://www.thehumorindex.com/rankings/jokes-per-minute/',
   },
 };
 
@@ -37,7 +37,7 @@ export default async function JokesPerMinutePage() {
         '@type': 'ListItem',
         position: i + 1,
         name: `${s.name} — ${(s.avg_jpm || 0).toFixed(2)} jokes per minute`,
-        url: `https://thehumorindex.com/shows/${s.slug}`,
+        url: `https://www.thehumorindex.com/shows/${s.slug}`,
       })),
     },
     {

@@ -11,7 +11,7 @@ export async function generateMetadata() {
   return {
     title: 'Humor Index Explorer — Score Any Cut of Any Sitcom',
     description: 'Pick any seasons or episodes of a sitcom and see the average Humor Index of that cut. Compare eras — like Community with vs without Dan Harmon, or Seinfeld with vs without Larry David — every episode scored by AI.',
-    alternates: { canonical: 'https://thehumorindex.com/explore/' },
+    alternates: { canonical: 'https://www.thehumorindex.com/explore/' },
   };
 }
 

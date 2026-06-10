@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getShow, getSeasons, getEpisodes, getCharacters, getRecommendations, getAllShows, getComedyDna } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
-import { SHOW_SLUGS } from '@/lib/constants';
+import { ALL_SHOW_SLUGS } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
 import ScoreGauge from '@/components/ui/ScoreGauge';
 import FormatBadge from '@/components/ui/FormatBadge';
@@ -13,22 +13,46 @@ import ShowPageClient from './ShowPageClient';
 export const dynamic = 'force-static';
 
 export async function generateStaticParams() {
-  return SHOW_SLUGS.map(slug => ({ slug }));
+  // Pre-render every show page, including queued "coming soon" teasers.
+  return ALL_SHOW_SLUGS.map(slug => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const show = await getShow(params.slug);
   if (!show) return {};
+  const canonical = `https://www.thehumorindex.com/shows/${params.slug}/`;
+
+  // Queued / not-yet-scored shows get a "coming soon" treatment (no 0.0/100).
+  if (!show.humor_index || show.humor_index <= 0) {
+    const title = `${show.name} — Coming Soon | Humor Index Queue`;
+    const description = `${show.name}${show.aired ? ` (${show.aired})` : ''} is queued for scoring on The Humor Index${show.total_episodes ? ` — ${show.total_episodes} episodes` : ''}. ${show.description ?? ''}`.trim();
+    const ogImg = `/api/og?title=${encodeURIComponent(show.name)}&score=${encodeURIComponent('Soon')}&subtitle=${encodeURIComponent('Queued for scoring')}`;
+    return {
+      title,
+      description,
+      openGraph: { title: `${show.name} — Coming Soon`, description, images: [ogImg] },
+      twitter: { card: 'summary_large_image', title: `${show.name} — Coming Soon`, description, images: [ogImg] },
+      alternates: { canonical },
+    };
+  }
+
+  const ogImg = `/api/og?title=${encodeURIComponent(show.name)}&score=${formatIndex(show.humor_index)}&subtitle=${encodeURIComponent(`${show.total_jokes_analyzed.toLocaleString()} jokes analyzed`)}`;
   return {
     title: `Is ${show.name} Funny? Humor Index ${formatIndex(show.humor_index)}/100 — Every Joke Scored`,
     description: `Is ${show.name} actually funny? We analyzed ${show.total_jokes_analyzed.toLocaleString()} jokes across ${show.total_seasons} seasons. Humor Index: ${formatIndex(show.humor_index)}. ${show.description}`,
     openGraph: {
       title: `${show.name} — Humor Index: ${formatIndex(show.humor_index)}`,
       description: `${show.total_jokes_analyzed.toLocaleString()} jokes analyzed across ${show.total_seasons} seasons. See the data.`,
-      images: [`/api/og?title=${encodeURIComponent(show.name)}&score=${formatIndex(show.humor_index)}&subtitle=${encodeURIComponent(`${show.total_jokes_analyzed.toLocaleString()} jokes analyzed`)}`],
+      images: [ogImg],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${show.name} — Humor Index: ${formatIndex(show.humor_index)}`,
+      description: `${show.total_jokes_analyzed.toLocaleString()} jokes analyzed across ${show.total_seasons} seasons.`,
+      images: [ogImg],
     },
     alternates: {
-      canonical: `https://thehumorindex.com/shows/${params.slug}/`,
+      canonical,
     },
   };
 }
@@ -36,6 +60,51 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 export default async function ShowPage({ params }: { params: { slug: string } }) {
   const show = await getShow(params.slug);
   if (!show) notFound();
+
+  // Queued / not-yet-scored shows: render a teaser instead of the full dashboard.
+  // Crucially this returns before loading season/episode data dirs that don't
+  // exist for queued shows (which previously threw an unhandled 500).
+  if (!show.humor_index || show.humor_index <= 0) {
+    return (
+      <div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org', '@type': 'TVSeries', name: show.name,
+          url: `https://www.thehumorindex.com/shows/${params.slug}/`, description: show.description,
+          image: show.backdrop_path ? `https://image.tmdb.org/t/p/w1280${show.backdrop_path}` : undefined,
+          numberOfSeasons: show.total_seasons, numberOfEpisodes: show.total_episodes,
+        }) }} />
+        <div className="relative w-full aspect-[16/9] min-h-[300px] max-h-[60vh] overflow-hidden">
+          {show.backdrop_path ? (
+            <Image src={`https://image.tmdb.org/t/p/original${show.backdrop_path}`} alt={`${show.name} backdrop`} fill className="object-cover object-[50%_45%]" priority sizes="100vw" />
+          ) : <div className="absolute inset-0 bg-brand-surface" />}
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 8%, rgba(15,15,15,0.75) 28%, rgba(15,15,15,0.25) 50%, transparent 70%)' }} />
+          <div className="absolute bottom-0 left-0 right-0">
+            <div className="max-w-3xl mx-auto px-6 sm:px-6 pb-6 sm:pb-8">
+              <span className="inline-block text-[11px] uppercase tracking-widest text-brand-gold border border-brand-gold/40 rounded-full px-3 py-1 mb-3">Coming soon · queued for scoring</span>
+              <h1 className="font-serif italic text-4xl sm:text-6xl text-brand-text-primary">{show.name}</h1>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-3xl mx-auto px-6 py-10">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-brand-text-muted mb-6">
+            <FormatBadge format={show.format} />
+            {show.network && <span>{show.network}</span>}
+            {show.aired && <span>· {show.aired}</span>}
+            {show.total_episodes ? <span>· {show.total_episodes} episodes</span> : null}
+            {show.avg_imdb_rating ? <span>· IMDb {show.avg_imdb_rating}</span> : null}
+          </div>
+          {show.description && <p className="text-brand-text-secondary leading-relaxed mb-8">{show.description}</p>}
+          <p className="text-brand-text-secondary leading-relaxed mb-8">
+            {show.name} is in the queue — transcripts collected, waiting on its three AI scoring passes. Once scored, the full Humor Index, every-episode breakdown, and character rankings land here.
+          </p>
+          <InlineNewsletterCTA />
+          <p className="mt-8 text-sm text-brand-text-muted">
+            Want it scored sooner? <Link href="/request/" className="text-brand-gold hover:underline">Request it</Link> · <Link href="/shows/" className="text-brand-gold hover:underline">browse scored shows</Link>
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   const [seasons, episodes, realCharacters, recommendations, allShows, comedyDna] = await Promise.all([
     getSeasons(params.slug),
@@ -71,7 +140,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
       '@context': 'https://schema.org',
       '@type': 'TVSeries',
       name: show.name,
-      url: `https://thehumorindex.com/shows/${params.slug}/`,
+      url: `https://www.thehumorindex.com/shows/${params.slug}/`,
       description: show.description,
       image: show.backdrop_path ? `https://image.tmdb.org/t/p/w1280${show.backdrop_path}` : undefined,
       numberOfSeasons: show.total_seasons,
@@ -81,15 +150,17 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         ratingValue: show.humor_index,
         bestRating: 100,
         worstRating: 0,
-        ratingCount: show.total_jokes_analyzed,
+        // ratingCount = number of scored episodes that produced the aggregate
+        // (NOT joke count — that misused the schema as a review count).
+        ratingCount: episodes.length || show.total_seasons,
       },
     },
     {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Shows', item: 'https://thehumorindex.com/shows/' },
-        { '@type': 'ListItem', position: 2, name: show.name, item: `https://thehumorindex.com/shows/${params.slug}/` },
+        { '@type': 'ListItem', position: 1, name: 'Shows', item: 'https://www.thehumorindex.com/shows/' },
+        { '@type': 'ListItem', position: 2, name: show.name, item: `https://www.thehumorindex.com/shows/${params.slug}/` },
       ],
     },
   ];
@@ -226,6 +297,23 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         characterProfiles={realCharacters}
         comedyDna={comedyDna}
       />
+
+      {/* Screen-reader / crawler-only full episode score table. The visible
+          per-episode arc is a <canvas> (invisible to answer engines), so we
+          mirror the underlying numbers here in real HTML. */}
+      {episodes.length > 0 && (
+        <table className="sr-only">
+          <caption>{show.name} — Humor Index for every scored episode</caption>
+          <thead><tr><th>Season</th><th>Episode</th><th>Title</th><th>Humor Index</th></tr></thead>
+          <tbody>
+            {episodes.map(e => (
+              <tr key={`${e.season}-${e.episode_number}`}>
+                <td>{e.season}</td><td>{e.episode_number}</td><td>{e.title}</td><td>{formatIndex(e.humor_index)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
 
       {/* Intent sections — server-rendered for SEO: "funniest [show] episodes" + "is [show] worth watching" */}
       {(() => {

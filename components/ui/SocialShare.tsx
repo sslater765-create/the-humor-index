@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function SocialShare({ title, text, url }: Props) {
-  const fullUrl = `https://thehumorindex.com${url}`;
+  const fullUrl = `https://www.thehumorindex.com${url}`;
   const encodedText = encodeURIComponent(text);
   const encodedUrl = encodeURIComponent(fullUrl);
   const [copied, setCopied] = useState(false);

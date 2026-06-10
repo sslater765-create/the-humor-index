@@ -17,7 +17,7 @@ export const metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://thehumorindex.com/rankings/funniest-characters/',
+    canonical: 'https://www.thehumorindex.com/rankings/funniest-characters/',
   },
 };
 
@@ -98,7 +98,7 @@ export default async function FunniestCharactersPage() {
                   '@type': 'ListItem',
                   position: i + 1,
                   name: `${c.name} — ${c.showName}`,
-                  url: `https://thehumorindex.com/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`,
+                  url: `https://www.thehumorindex.com/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`,
                 })),
             }),
           }}

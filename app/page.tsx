@@ -25,11 +25,11 @@ export default async function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'The Humor Index',
-    url: 'https://thehumorindex.com',
+    url: 'https://www.thehumorindex.com',
     description: 'AI-powered comedy analytics ranking every joke in television history.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://thehumorindex.com/shows?q={search_term_string}',
+      target: 'https://www.thehumorindex.com/shows?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };
@@ -205,8 +205,8 @@ export default async function HomePage() {
             <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto mb-8 pb-8 border-b border-brand-border">
               <div className="text-center">
                 <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">The Office</p>
-                <p className="font-serif italic text-3xl sm:text-4xl text-brand-gold leading-none">79.2</p>
-                <p className="text-[10px] text-brand-text-muted mt-2">Craft 6.87 · Impact 6.67</p>
+                <p className="font-serif italic text-3xl sm:text-4xl text-brand-gold leading-none">79.3</p>
+                <p className="text-[10px] text-brand-text-muted mt-2">Craft 6.88 · Impact 6.69</p>
               </div>
               <div className="text-center">
                 <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Seinfeld</p>

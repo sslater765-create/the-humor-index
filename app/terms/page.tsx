@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Terms of Use — The Humor Index',
   description: 'Terms of Use for The Humor Index website.',
   alternates: {
-    canonical: 'https://thehumorindex.com/terms/',
+    canonical: 'https://www.thehumorindex.com/terms/',
   },
 };
 
@@ -30,8 +30,8 @@ export default function TermsPage() {
             </p>
             <p className="mb-2">
               We operate the website{' '}
-              <a href="https://thehumorindex.com" className="text-brand-gold hover:underline">
-                https://thehumorindex.com
+              <a href="https://www.thehumorindex.com" className="text-brand-gold hover:underline">
+                https://www.thehumorindex.com
               </a>{' '}
               (the &quot;<strong>Site</strong>&quot;), as well as any other related products and services that refer or link
               to these legal terms (the &quot;<strong>Legal Terms</strong>&quot;) (collectively, the

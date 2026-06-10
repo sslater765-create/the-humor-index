@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: { params: { matchup: string }
       images: [`/api/og?title=${encodeURIComponent(`${a.name} vs ${b.name}`)}&score=${formatIndex(winner.humor_index)}&subtitle=${encodeURIComponent(`${winner.name} wins · Head-to-head comparison`)}`],
     },
     alternates: {
-      canonical: `https://thehumorindex.com/compare/${params.matchup}/`,
+      canonical: `https://www.thehumorindex.com/compare/${params.matchup}/`,
     },
   };
 }
@@ -127,7 +127,7 @@ export default async function MatchupPage({ params }: { params: { matchup: strin
     '@type': 'Article',
     headline: `${showA.name} vs ${showB.name}: Which Is Funnier?`,
     description: `Data-driven comparison of ${showA.name} and ${showB.name} comedy scores.`,
-    url: `https://thehumorindex.com/compare/${params.matchup}`,
+    url: `https://www.thehumorindex.com/compare/${params.matchup}`,
   };
 
   return (

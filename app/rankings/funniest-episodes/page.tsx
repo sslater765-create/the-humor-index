@@ -17,7 +17,7 @@ export const metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://thehumorindex.com/rankings/funniest-episodes/',
+    canonical: 'https://www.thehumorindex.com/rankings/funniest-episodes/',
   },
 };
 

@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title: `${show.name} Humor Index Explorer — Score Any Season or Episode Cut`,
     description: `Pick any seasons or episodes of ${show.name} and see the average Humor Index of that cut, with 95% confidence intervals. Compare eras, isolate a hot streak, or drop a weak season — every episode scored by AI.`,
-    alternates: { canonical: `https://thehumorindex.com/shows/${params.slug}/explore/` },
+    alternates: { canonical: `https://www.thehumorindex.com/shows/${params.slug}/explore/` },
     openGraph: {
       title: `${show.name} Humor Index Explorer`,
       description: `Build any cut of ${show.name} and see how funny it scores.`,
@@ -68,8 +68,8 @@ export default async function ExplorePage({ params }: { params: { slug: string }
     '@type': 'Dataset',
     name: `${show.name} — per-episode Humor Index scores`,
     description: `AI-scored comedy ratings (Humor Index, 0–100) for all ${episodes.length} episodes of ${show.name}, with IMDb audience ratings and joke counts.`,
-    creator: { '@type': 'Organization', name: 'The Humor Index', url: 'https://thehumorindex.com' },
-    url: `https://thehumorindex.com/shows/${params.slug}/explore`,
+    creator: { '@type': 'Organization', name: 'The Humor Index', url: 'https://www.thehumorindex.com' },
+    url: `https://www.thehumorindex.com/shows/${params.slug}/explore`,
     variableMeasured: ['Humor Index', 'IMDb rating', 'jokes per minute', 'total jokes'],
     isAccessibleForFree: true,
   };

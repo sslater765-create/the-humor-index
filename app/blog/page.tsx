@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Comedy Analytics Blog — Data-Driven Insights on TV Humor',
   description: 'Deep dives into sitcom comedy using data. Which shows are actually the funniest? What makes a joke work? We break it down with numbers.',
   alternates: {
-    canonical: 'https://thehumorindex.com/blog/',
+    canonical: 'https://www.thehumorindex.com/blog/',
   },
 };
 

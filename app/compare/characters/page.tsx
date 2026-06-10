@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "Pick any two sitcom characters and see how they stack up on jokes, craft, impact, WAR, and per-episode output. Michael Scott vs. George Costanza vs. Chandler Bing — settled by data.",
   alternates: {
-    canonical: 'https://thehumorindex.com/compare/characters/',
+    canonical: 'https://www.thehumorindex.com/compare/characters/',
   },
 };
 

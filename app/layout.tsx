@@ -23,7 +23,7 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://thehumorindex.com'),
+  metadataBase: new URL('https://www.thehumorindex.com'),
   icons: {
     icon: '/favicon-400.png',
     apple: '/favicon-400.png',
@@ -33,18 +33,18 @@ export const metadata: Metadata = {
     template: '%s | The Humor Index',
   },
   description: 'AI-powered comedy analytics ranking every joke in television history. Data-driven leaderboards for the funniest shows, episodes, and characters.',
-  keywords: ['comedy analytics', 'funniest sitcoms ranked', 'sitcom rankings', 'best TV comedy', 'joke analysis', 'humor score', 'funniest episodes'],
   openGraph: {
     title: 'The Humor Index',
     description: "The definitive science of what's funny. AI-analyzed rankings of every joke in sitcom history.",
-    url: 'https://thehumorindex.com',
+    url: 'https://www.thehumorindex.com',
     siteName: 'The Humor Index',
     type: 'website',
     images: [
       {
-        url: '/og-image.png',
-        width: 1500,
-        height: 500,
+        // Dynamic OG card renders at the correct 1.91:1 (1200×630) social aspect.
+        url: "/api/og?title=The%20Humor%20Index&subtitle=" + encodeURIComponent("The science of what's funny"),
+        width: 1200,
+        height: 630,
         alt: 'The Humor Index — Comedy Analytics',
       },
     ],
@@ -54,10 +54,10 @@ export const metadata: Metadata = {
     site: '@thehumorindex',
     title: 'The Humor Index',
     description: "The definitive science of what's funny.",
-    images: ['/og-image.png'],
+    images: ["/api/og?title=The%20Humor%20Index&subtitle=" + encodeURIComponent("The science of what's funny")],
   },
   alternates: {
-    canonical: 'https://thehumorindex.com/',
+    canonical: 'https://www.thehumorindex.com/',
     types: {
       'application/rss+xml': '/feed.xml',
     },
@@ -93,8 +93,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'The Humor Index',
-            url: 'https://thehumorindex.com',
-            logo: 'https://thehumorindex.com/favicon-400.png',
+            url: 'https://www.thehumorindex.com',
+            logo: 'https://www.thehumorindex.com/favicon-400.png',
             description: 'AI-powered comedy analytics ranking every joke in television history.',
             sameAs: [
               'https://x.com/thehumorindex',

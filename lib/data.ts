@@ -30,11 +30,20 @@ export async function getShow(slug: string): Promise<ShowScore | null> {
 }
 
 export async function getSeasons(slug: string): Promise<SeasonScore[]> {
-  return readJson<SeasonScore[]>(`${slug}/seasons.json`);
+  // Queued/unscored shows have no data dir — return [] instead of throwing a 500.
+  try {
+    return readJson<SeasonScore[]>(`${slug}/seasons.json`);
+  } catch {
+    return [];
+  }
 }
 
 export async function getEpisodes(slug: string): Promise<EpisodeScore[]> {
-  return readJson<EpisodeScore[]>(`${slug}/episodes.json`);
+  try {
+    return readJson<EpisodeScore[]>(`${slug}/episodes.json`);
+  } catch {
+    return [];
+  }
 }
 
 export async function getEpisodeDetail(

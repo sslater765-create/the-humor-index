@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     title: `${show.name} Seasons Ranked — Which Is the Best Season?`,
     description: `Which is the best season of ${show.name}? We ranked all ${show.total_seasons} seasons by Humor Index and tracked exactly when the show peaked and declined. See the season-by-season data.`,
     alternates: {
-      canonical: `https://thehumorindex.com/shows/${params.slug}/arc/`,
+      canonical: `https://www.thehumorindex.com/shows/${params.slug}/arc/`,
     },
   };
 }

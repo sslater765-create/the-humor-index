@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Frequently Asked Questions About Comedy Scoring',
   description: 'Frequently asked questions about The Humor Index: how it works, what AI we use, and why your favorite show scored the way it did.',
   alternates: {
-    canonical: 'https://thehumorindex.com/faq/',
+    canonical: 'https://www.thehumorindex.com/faq/',
   },
   openGraph: {
     title: 'FAQ — The Humor Index',
@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: 'Which show currently ranks #1?',
-    a: `30 Rock sits at the top of the Humor Index at 84.4, with Arrested Development (82.0) close behind. Then The Office (79.2), Community (77.9), Parks and Recreation (77.7), Taxi (77.3), Schitt's Creek (77.3), and Seinfeld (77.0) form a tight chasing pack whose 95% confidence intervals overlap heavily — small per-episode differences move the order there. Friends (73.3) sits clearly below the pack. We've fully scored nine shows: 30 Rock, Arrested Development, The Office, Community, Parks and Recreation, Taxi, Schitt's Creek, Seinfeld, and Friends.`,
+    a: `30 Rock sits at the top of the Humor Index at 84.4, with Arrested Development (82.0) close behind. Then a tight chasing pack — Veep (80.0), The Simpsons (79.4), The Office (79.3), It's Always Sunny in Philadelphia (79.3), Flight of the Conchords (78.3), Community (77.9), Parks and Recreation (77.7), Taxi (77.3), Schitt's Creek (77.3), and Seinfeld (77.0) — whose 95% confidence intervals overlap heavily, so small per-episode differences move the order. Below them sit The Larry Sanders Show (76.5), The Fresh Prince of Bel-Air (76.0), Friends (73.3), and Freaks and Geeks (70.4). We've fully scored 16 shows so far — about 2,230 episodes and 126,000+ jokes — with more in the queue.`,
   },
   {
     q: 'Do you penalize multi-camera shows or laugh tracks?',

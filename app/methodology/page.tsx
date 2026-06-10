@@ -5,7 +5,7 @@ export const metadata = {
   title: 'How We Score Comedy: JPM, Craft, Impact & WAR',
   description: 'How we calculate the Humor Index: jokes per minute, craft, impact, and why we no longer adjust for format. The full scoring methodology.',
   alternates: {
-    canonical: 'https://thehumorindex.com/methodology/',
+    canonical: 'https://www.thehumorindex.com/methodology/',
   },
   openGraph: {
     title: 'Methodology — The Humor Index',
@@ -164,8 +164,8 @@ export default function MethodologyPage() {
             the laugh track signals joke boundaries that a single-camera show leaves implicit.
             To compare across formats fairly, we apply a format coefficient to the raw Humor Index.
           </p>
-          <div className="bg-brand-card border border-brand-border rounded-xl overflow-hidden">
-            <table className="w-full text-sm">
+          <div className="bg-brand-card border border-brand-border rounded-xl overflow-x-auto">
+            <table className="w-full text-sm min-w-[28rem]">
               <thead>
                 <tr className="border-b border-brand-border">
                   <th className="text-left text-xs uppercase tracking-widest text-brand-text-muted font-normal px-5 py-3">Format</th>
@@ -232,11 +232,13 @@ export default function MethodologyPage() {
             Applying a 0.30 standup weighting and rescoring all 172 Seinfeld episodes with 3-run consensus
             moved Seinfeld from 83.9 → 77.8. <span className="text-brand-text-secondary">Reconciliation (May 25, 2026):</span> as
             new shows were added the live leaderboard drifted from the canonical aggregation, so we re-aggregated
-            all nine scored shows with one consistent method and added bootstrap 95% confidence intervals.
-            Current published order: 30 Rock 84.4, Arrested Development 82.0, The Office <span className="text-brand-text-primary">79.2</span>,
+            every scored show with one consistent method and added bootstrap 95% confidence intervals.
+            Current published order (16 shows): 30 Rock 84.4, Arrested Development 82.0, Veep 80.0, The Simpsons 79.4,
+            The Office <span className="text-brand-text-primary">79.3</span>, It&apos;s Always Sunny 79.3, Flight of the Conchords 78.3,
             Community 77.9, Parks and Recreation 77.7, Taxi 77.3, Schitt&apos;s Creek 77.3, Seinfeld 77.0,
-            Friends 73.3. 30 Rock and Arrested Development pull clear at the top; the middle six cluster inside
-            each other&apos;s intervals; Friends now sits clearly below the pack.
+            The Larry Sanders Show 76.5, The Fresh Prince of Bel-Air 76.0, Friends 73.3, Freaks and Geeks 70.4.
+            30 Rock and Arrested Development pull clear at the top; the broad middle clusters inside each other&apos;s
+            intervals; Friends and the single-season Freaks and Geeks sit below the pack.
           </p>
         </section>
 

@@ -20,7 +20,7 @@ export const metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://thehumorindex.com/rankings/least-funny-characters/',
+    canonical: 'https://www.thehumorindex.com/rankings/least-funny-characters/',
   },
 };
 

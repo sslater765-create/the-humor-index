@@ -264,7 +264,9 @@ export default function HumorIndexExplorer({ slug, showName, episodes }: Props) 
         )}
 
         {/* heatmap */}
-        <div className="bg-brand-card border border-brand-border rounded-2xl p-4 overflow-x-auto" onPointerMove={onGridMove}>
+        {/* touch-none: lets a touch DRAG select a run of episodes instead of
+            being eaten by native scroll (cells flex-wrap, so no h-scroll lost). */}
+        <div className="bg-brand-card border border-brand-border rounded-2xl p-4 touch-none select-none" onPointerMove={onGridMove}>
           {seasons.map(s => (
             <div key={s} className="flex items-center gap-1.5 mb-1.5">
               <span className="font-mono text-xs text-brand-text-muted w-7 shrink-0">S{s}</span>

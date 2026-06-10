@@ -4,7 +4,7 @@ interface Crumb {
   path: string;
 }
 
-const SITE = 'https://thehumorindex.com';
+const SITE = 'https://www.thehumorindex.com';
 
 function toUrl(path: string): string {
   if (path.startsWith('http')) return path;

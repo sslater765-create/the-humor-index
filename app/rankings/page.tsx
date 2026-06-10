@@ -12,7 +12,7 @@ export const metadata = {
   description:
     'Data-driven comedy rankings: the funniest sitcom episodes ever, the best jokes scored by AI, and head-to-head show comparisons. All based on our Humor Index methodology.',
   alternates: {
-    canonical: 'https://thehumorindex.com/rankings/',
+    canonical: 'https://www.thehumorindex.com/rankings/',
   },
 };
 

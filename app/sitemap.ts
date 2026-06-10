@@ -1,36 +1,10 @@
 import type { MetadataRoute } from 'next';
 import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 import { ARCHES } from '@/lib/comedyDna';
-
-// Blog post slugs — keep in sync with app/blog/[slug]/page.tsx
-const BLOG_SLUGS = [
-  'fresh-prince-geoffrey-butler',
-  'larry-sanders-launch',
-  'humor-index-explorer',
-  'community-gas-leak-year',
-  'humor-index-vs-imdb-three-ways',
-  'taxi-launch',
-  'war-reconciliation',
-  'display-scale-recalibration',
-  '30-rock-takes-the-crown',
-  'arrested-development-craft-leaderboard',
-  'funniest-characters-cross-show',
-  'parks-passes-office',
-  'character-comedy-spectrum',
-  'schitts-creek-last-on-board-first-on-impact',
-  'arrested-development-takes-the-crown',
-  'scorer-noise-floor',
-  'bayesian-credible-intervals',
-  'comedy-war',
-  'seinfeld-vs-the-office',
-  'imdb-vs-humor-index',
-  'is-the-office-actually-funny',
-  'how-we-score-comedy',
-  'laugh-track-penalty',
-];
+import { POSTS } from '@/app/blog/posts';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://thehumorindex.com';
+  const baseUrl = 'https://www.thehumorindex.com';
   const shows = await getAllShows();
 
   // Canonicals use trailing slash; keep sitemap consistent with canonical tags.
@@ -38,7 +12,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Use a single rolling "freshness" date for pages that are refreshed every
   // time the underlying data is. Update this when major changes ship.
-  const SITE_REFRESHED = new Date('2026-06-05');
+  const SITE_REFRESHED = new Date('2026-06-09');
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 1.0 },
     { url: url('/shows'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.9 },
@@ -61,36 +35,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url('/about'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.5 },
   ];
 
-  // Blog posts
-  const blogDates: Record<string, string> = {
-    'fresh-prince-geoffrey-butler': '2026-06-07',
-    'larry-sanders-launch': '2026-06-05',
-    'humor-index-explorer': '2026-05-25',
-    'community-gas-leak-year': '2026-05-24',
-    'humor-index-vs-imdb-three-ways': '2026-05-16',
-    'taxi-launch': '2026-05-16',
-    'war-reconciliation': '2026-05-15',
-    'display-scale-recalibration': '2026-05-15',
-    '30-rock-takes-the-crown': '2026-05-14',
-    'arrested-development-craft-leaderboard': '2026-05-15',
-    'funniest-characters-cross-show': '2026-05-12',
-    'parks-passes-office': '2026-04-30',
-    'character-comedy-spectrum': '2026-05-03',
-    'schitts-creek-last-on-board-first-on-impact': '2026-05-02',
-    'arrested-development-takes-the-crown': '2026-05-04',
-    'scorer-noise-floor': '2026-04-17',
-    'bayesian-credible-intervals': '2026-04-17',
-    'comedy-war': '2026-04-16',
-    'seinfeld-vs-the-office': '2026-04-16',
-    'imdb-vs-humor-index': '2026-04-12',
-    'is-the-office-actually-funny': '2026-04-10',
-    'how-we-score-comedy': '2026-04-10',
-    'laugh-track-penalty': '2026-04-10',
-  };
-
-  const blogPages: MetadataRoute.Sitemap = BLOG_SLUGS.map(slug => ({
+  // Blog posts — derived from the POSTS source of truth (no parallel slug/date list).
+  const blogPages: MetadataRoute.Sitemap = Object.entries(POSTS).map(([slug, post]) => ({
     url: url(`/blog/${slug}`),
-    lastModified: new Date(blogDates[slug] || '2026-04-16'),
+    lastModified: new Date(post.date || '2026-04-16'),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
@@ -146,6 +94,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     try {
       const characters = await getCharacters(show.slug);
       for (const ch of characters) {
+        // Skip thin/bit-part character pages (e.g. "Warehouse worker", one-liners)
+        // — they dilute crawl budget and read as thin content at scale.
+        if ((ch.total_jokes ?? 0) < 20 || (ch.episodes_appeared ?? 0) < 3) continue;
         characterPages.push({
           url: url(`/shows/${show.slug}/characters/${encodeURIComponent(ch.name)}`),
           lastModified: SITE_REFRESHED,

@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Privacy Policy',
   description: 'How The Humor Index collects, uses, and protects your data.',
   alternates: {
-    canonical: 'https://thehumorindex.com/privacy/',
+    canonical: 'https://www.thehumorindex.com/privacy/',
   },
 };
 
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
               &quot;<strong>us</strong>,&quot; &quot;<strong>our</strong>&quot;) describes how and why we might collect, store,
               use, and/or share (&quot;<strong>process</strong>&quot;) your information when you use our services
               (&quot;<strong>Services</strong>&quot;), such as when you visit our website at{' '}
-              <a href="https://thehumorindex.com" className="text-brand-gold hover:underline">https://thehumorindex.com</a>.
+              <a href="https://www.thehumorindex.com" className="text-brand-gold hover:underline">https://www.thehumorindex.com</a>.
               Humor Index Media LLC is registered in Florida, United States, at 4932 Native Dancer Ln, Orlando, FL 32826.
             </p>
           </section>

@@ -91,7 +91,7 @@ export default function ProfilePage({ searchParams }: { searchParams: { d?: stri
                 <div key={slug} className={`flex items-center gap-3.5 py-2.5 ${i < p.s!.length - 1 ? 'border-b border-brand-border' : ''}`}>
                   <span className="tabular-nums font-black text-brand-text-muted w-6 text-[15px]">{i + 1}</span>
                   <span className="inline-flex items-center justify-center rounded-[9px] font-black shrink-0" style={{ background: st.c, color: tileText(st.c), width: 34, height: 34, fontSize: 13 }}>{st.m}</span>
-                  <a href={`https://thehumorindex.com/shows/${slug}/`} className={`font-bold flex-1 hover:underline ${i === 0 ? 'text-brand-teal' : 'text-brand-text-primary'}`}>{name}</a>
+                  <a href={`https://www.thehumorindex.com/shows/${slug}/`} className={`font-bold flex-1 hover:underline ${i === 0 ? 'text-brand-teal' : 'text-brand-text-primary'}`}>{name}</a>
                   <span className="tabular-nums font-black w-12 text-right text-[15px]">{pct}%</span>
                 </div>
               );

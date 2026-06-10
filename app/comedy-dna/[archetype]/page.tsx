@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: { params: { archetype: string
   return {
     title,
     description: desc,
-    alternates: { canonical: `https://thehumorindex.com/comedy-dna/${a.slug}/` },
-    openGraph: { title, description: a.tag, url: `https://thehumorindex.com/comedy-dna/${a.slug}/`, type: 'article', images: [{ url: og, width: 1200, height: 630, alt: a.name }] },
+    alternates: { canonical: `https://www.thehumorindex.com/comedy-dna/${a.slug}/` },
+    openGraph: { title, description: a.tag, url: `https://www.thehumorindex.com/comedy-dna/${a.slug}/`, type: 'article', images: [{ url: og, width: 1200, height: 630, alt: a.name }] },
     twitter: { card: 'summary_large_image', title, description: a.tag, images: [og] },
   };
 }

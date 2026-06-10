@@ -86,7 +86,7 @@ export async function generateMetadata({
       images: [`/api/og/episode?${ogParams.toString()}`],
     },
     alternates: {
-      canonical: `https://thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}/`,
+      canonical: `https://www.thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}/`,
     },
   };
 }
@@ -145,15 +145,15 @@ export default async function EpisodePage({
     '@context': 'https://schema.org',
     '@type': 'TVEpisode',
     name: detail.title,
-    url: `https://thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}`,
+    url: `https://www.thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}/`,
     episodeNumber: detail.episode_number,
     seasonNumber: detail.season,
     partOfSeries: {
       '@type': 'TVSeries',
       name: show.name,
-      url: `https://thehumorindex.com/shows/${params.slug}`,
+      url: `https://www.thehumorindex.com/shows/${params.slug}/`,
     },
-    image: `https://thehumorindex.com/api/og/episode?${epOgParams.toString()}`,
+    image: `https://www.thehumorindex.com/api/og/episode?${epOgParams.toString()}`,
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: detail.humor_index,
@@ -177,9 +177,9 @@ export default async function EpisodePage({
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Shows', item: 'https://thehumorindex.com/shows' },
-            { '@type': 'ListItem', position: 2, name: show.name, item: `https://thehumorindex.com/shows/${params.slug}` },
-            { '@type': 'ListItem', position: 3, name: `S${seasonNum}E${String(episodeNum).padStart(2, '0')}: ${detail.title}`, item: `https://thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}` },
+            { '@type': 'ListItem', position: 1, name: 'Shows', item: 'https://www.thehumorindex.com/shows/' },
+            { '@type': 'ListItem', position: 2, name: show.name, item: `https://www.thehumorindex.com/shows/${params.slug}/` },
+            { '@type': 'ListItem', position: 3, name: `S${seasonNum}E${String(episodeNum).padStart(2, '0')}: ${detail.title}`, item: `https://www.thehumorindex.com/shows/${params.slug}/${params.season}/${params.episode}/` },
           ],
         }) }}
       />

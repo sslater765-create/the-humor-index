@@ -14,6 +14,8 @@ export async function generateStaticParams() {
     try {
       const characters = await getCharacters(slug);
       for (const ch of characters) {
+        // Skip thin/bit-part characters — don't pre-render thin pages.
+        if ((ch.total_jokes ?? 0) < 20 || (ch.episodes_appeared ?? 0) < 3) continue;
         params.push({ slug, name: encodeURIComponent(ch.name) });
       }
     } catch {
@@ -42,18 +44,27 @@ export async function generateMetadata({
     ? `${jokeCount.toLocaleString()} analyzed jokes, ${war.toFixed(1)} career WAR across ${character.episodes_appeared} episodes. Best at ${dominantTypes || 'comedy'}. See every joke ranked on ${show.name}.`
     : `Every joke by ${name} on ${show.name}, scored and ranked. See craft scores, impact ratings, and comedy style breakdown.`;
 
+  // Thin/bit-part characters: keep reachable but noindex (avoid thin-content pages).
+  const thin = jokeCount < 20 || (character?.episodes_appeared ?? 0) < 3;
+  const ogImg = `/api/og?title=${encodeURIComponent(name)}&score=${war.toFixed(1)}&subtitle=${encodeURIComponent(`${show.name} · ${jokeCount.toLocaleString()} jokes · ${character?.episodes_appeared ?? 0} eps`)}`;
+
   return {
     title: `${name}'s Funniest Lines & Comedy Score (${show.name})`,
     description: descBase,
+    ...(thin ? { robots: { index: false, follow: true } } : {}),
     alternates: {
-      canonical: `https://thehumorindex.com/shows/${params.slug}/characters/${params.name}/`,
+      canonical: `https://www.thehumorindex.com/shows/${params.slug}/characters/${params.name}/`,
     },
     openGraph: {
       title: `${name} — Funniest Lines & Comedy Score · ${show.name}`,
       description: descBase,
-      images: [
-        `/api/og?title=${encodeURIComponent(name)}&score=${war.toFixed(1)}&subtitle=${encodeURIComponent(`${show.name} · ${jokeCount.toLocaleString()} jokes · ${character?.episodes_appeared ?? 0} eps`)}`,
-      ],
+      images: [ogImg],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${name} — Funniest Lines & Comedy Score · ${show.name}`,
+      description: descBase,
+      images: [ogImg],
     },
   };
 }
@@ -94,7 +105,7 @@ export default async function CharacterPage({
       name: character.character_full_name || character.name,
       alternateName: character.name,
       description: `Fictional character on ${show.name}. ${character.total_jokes.toLocaleString()} analyzed jokes across ${character.episodes_appeared} episodes.`,
-      url: `https://thehumorindex.com/shows/${params.slug}/characters/${encodeURIComponent(character.name)}/`,
+      url: `https://www.thehumorindex.com/shows/${params.slug}/characters/${encodeURIComponent(character.name)}/`,
       ...(character.actor && {
         performer: { '@type': 'Person', name: character.actor },
       }),
@@ -106,10 +117,10 @@ export default async function CharacterPage({
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Shows', item: 'https://thehumorindex.com/shows/' },
-        { '@type': 'ListItem', position: 2, name: show.name, item: `https://thehumorindex.com/shows/${params.slug}/` },
-        { '@type': 'ListItem', position: 3, name: 'Characters', item: `https://thehumorindex.com/shows/${params.slug}/` },
-        { '@type': 'ListItem', position: 4, name: character.name, item: `https://thehumorindex.com/shows/${params.slug}/characters/${encodeURIComponent(character.name)}/` },
+        { '@type': 'ListItem', position: 1, name: 'Shows', item: 'https://www.thehumorindex.com/shows/' },
+        { '@type': 'ListItem', position: 2, name: show.name, item: `https://www.thehumorindex.com/shows/${params.slug}/` },
+        { '@type': 'ListItem', position: 3, name: 'Characters', item: `https://www.thehumorindex.com/shows/${params.slug}/` },
+        { '@type': 'ListItem', position: 4, name: character.name, item: `https://www.thehumorindex.com/shows/${params.slug}/characters/${encodeURIComponent(character.name)}/` },
       ],
     },
   ];

@@ -21,7 +21,7 @@ export async function GET(req: NextRequest) {
     <tr style="border-bottom:1px solid ${border}">
       <td style="padding:8px 12px;font-family:monospace;color:${i < 3 ? gold : muted};font-size:13px">${i + 1}</td>
       <td style="padding:8px 12px">
-        <a href="https://thehumorindex.com/shows/${s.slug}" target="_blank" style="color:${text};text-decoration:none;font-size:14px;font-weight:500">${s.name}</a>
+        <a href="https://www.thehumorindex.com/shows/${s.slug}" target="_blank" style="color:${text};text-decoration:none;font-size:14px;font-weight:500">${s.name}</a>
       </td>
       <td style="padding:8px 12px;font-family:monospace;color:${gold};font-size:14px;font-weight:600;text-align:right">${formatIndex(s.humor_index)}</td>
     </tr>
@@ -35,7 +35,7 @@ export async function GET(req: NextRequest) {
 <div style="padding:16px;max-width:400px">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
     <span style="font-size:11px;text-transform:uppercase;letter-spacing:2px;color:${muted}">Humor Index</span>
-    <a href="https://thehumorindex.com" target="_blank" style="font-size:10px;color:${gold};text-decoration:none">thehumorindex.com</a>
+    <a href="https://www.thehumorindex.com" target="_blank" style="font-size:10px;color:${gold};text-decoration:none">thehumorindex.com</a>
   </div>
   <table style="width:100%;border-collapse:collapse">
     <thead>
@@ -48,7 +48,7 @@ export async function GET(req: NextRequest) {
     <tbody>${rows}</tbody>
   </table>
   <div style="margin-top:8px;text-align:center">
-    <a href="https://thehumorindex.com/shows" target="_blank" style="font-size:11px;color:${muted};text-decoration:none">View all rankings →</a>
+    <a href="https://www.thehumorindex.com/shows" target="_blank" style="font-size:11px;color:${muted};text-decoration:none">View all rankings →</a>
   </div>
 </div>
 </body>

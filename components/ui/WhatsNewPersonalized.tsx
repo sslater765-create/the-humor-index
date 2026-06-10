@@ -14,12 +14,13 @@ interface NewItem {
 
 // These are the site's content items with their publish dates
 const ALL_ITEMS: NewItem[] = [
+  { href: '/shows/freaks-and-geeks', label: 'Just Launched', labelColor: 'text-emerald-400', title: 'Freaks and Geeks — All 18 Episodes (S1)', subtitle: '1,231 jokes analyzed · First dramedy in the dataset · Debuts at #16', date: '2026-06-09' },
+  { href: '/shows/the-simpsons', label: 'Now Complete', labelColor: 'text-emerald-400', title: 'The Simpsons — Full Classic Run S1–S20 (441 Episodes)', subtitle: '28,170 jokes analyzed · Now #4 overall', date: '2026-06-09' },
   { href: '/shows/the-fresh-prince-of-bel-air', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'The Fresh Prince of Bel-Air — All 148 Episodes (S1–S6)', subtitle: '8,222 jokes analyzed · Debuts at #14', date: '2026-06-05' },
   { href: '/shows/the-larry-sanders-show', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'The Larry Sanders Show — All 90 Episodes (S1–S6)', subtitle: '4,486 jokes analyzed · First HBO comedy in the dataset', date: '2026-06-05' },
   { href: '/shows/flight-of-the-conchords', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Flight of the Conchords — All 22 Episodes (S1–S2)', subtitle: '1,322 jokes analyzed · Debuts at #7', date: '2026-06-02' },
   { href: '/shows/its-always-sunny', label: 'Recently Completed', labelColor: 'text-emerald-400', title: "It's Always Sunny in Philadelphia — All 177 Episodes (S1–S17)", subtitle: '8,786 jokes analyzed · Debuts at #5', date: '2026-05-30' },
   { href: '/shows/veep', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Veep — All 65 Episodes', subtitle: '4,873 jokes analyzed · Debuts tied at #3 (79.9)', date: '2026-05-28' },
-  { href: '/shows/the-simpsons', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'The Simpsons — All 226 Episodes (S1–S10)', subtitle: '14,352 jokes analyzed · Debuts at #3', date: '2026-05-26' },
   { href: '/blog/community-gas-leak-year', label: 'Latest Blog', labelColor: 'text-brand-gold', title: 'You Can See Exactly When Dan Harmon Left Community', subtitle: 'May 24, 2026', date: '2026-05-24' },
   { href: '/shows/community', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'Community — All 110 Episodes', subtitle: '6,565 jokes analyzed · Debuts at #5', date: '2026-05-24' },
   { href: '/blog/humor-index-vs-imdb-three-ways', label: 'Latest Blog', labelColor: 'text-brand-gold', title: "We Recomputed Our IMDb Correlation Three Ways. At the Show Level, It's Negative.", subtitle: 'May 16, 2026', date: '2026-05-16' },

@@ -21,12 +21,12 @@ export const metadata: Metadata = {
   title: "What's Your Comedy DNA?",
   description:
     "Pick which joke is funnier and we'll map your comedy taste — your archetype, the shows built for you, and the jokes you'll love. A face-off through the funniest sitcoms ever scored.",
-  alternates: { canonical: 'https://thehumorindex.com/comedy-dna/' },
+  alternates: { canonical: 'https://www.thehumorindex.com/comedy-dna/' },
   openGraph: {
     title: "What's Your Comedy DNA?",
     description:
       "A 1v1 'which joke is funnier' game that maps your comedy taste and the shows built for it.",
-    url: 'https://thehumorindex.com/comedy-dna/',
+    url: 'https://www.thehumorindex.com/comedy-dna/',
     type: 'website',
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "What's Your Comedy DNA?" }],
   },
@@ -55,6 +55,7 @@ export default async function ComedyDnaPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10 md:py-14">
+      <h1 className="sr-only">What&apos;s Your Comedy DNA? — A Comedy-Taste Quiz</h1>
       <ComedyDnaQuiz quiz={quiz} fingerprints={fingerprints} comingSoon={comingSoon} jokeCount={jokeCount} />
 
       {/* Static, crawlable archetype content — citable by search + AI answer engines,

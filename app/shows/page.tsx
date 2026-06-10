@@ -9,7 +9,7 @@ export const metadata = {
   description:
     'Every sitcom we’ve scored, ranked by Humor Index — The Office, Seinfeld, Parks and Rec, Community, Arrested Development and more. AI-analyzed joke density, craft, and impact for each show.',
   alternates: {
-    canonical: 'https://thehumorindex.com/shows/',
+    canonical: 'https://www.thehumorindex.com/shows/',
   },
   openGraph: {
     title: 'Every Sitcom Ranked by Humor Index Score',

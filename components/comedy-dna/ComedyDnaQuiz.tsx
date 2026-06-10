@@ -11,7 +11,7 @@ import {
 import { MemeScene } from './MemeScene';
 
 const N_BASE = 10, N_MAX = 30, N_STEP = 10;
-const SHOW_URL = (slug: string) => `https://thehumorindex.com/shows/${slug}/`;
+const SHOW_URL = (slug: string) => `https://www.thehumorindex.com/shows/${slug}/`;
 
 const DARK_IDX = DNA_TYPES.indexOf('dark_subversive');
 const AWK_IDX = DNA_TYPES.indexOf('awkward_silence');
@@ -171,10 +171,10 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
   const shareThisPick = useCallback((e: React.MouseEvent, winner: QuizJoke, loser: QuizJoke) => {
     e.stopPropagation(); e.preventDefault();
     const trim = (s: string, n = 90) => (s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s);
-    const txt = `I picked "${trim(winner.text)}" over "${trim(loser.text)}" — which one would you pick? https://thehumorindex.com/comedy-dna`;
+    const txt = `I picked "${trim(winner.text)}" over "${trim(loser.text)}" — which one would you pick? https://www.thehumorindex.com/comedy-dna`;
     const nav = typeof navigator !== 'undefined' ? navigator : null;
     if (nav?.share) {
-      nav.share({ text: txt, url: 'https://thehumorindex.com/comedy-dna' }).catch(() => { /* user dismissed */ });
+      nav.share({ text: txt, url: 'https://www.thehumorindex.com/comedy-dna' }).catch(() => { /* user dismissed */ });
     } else if (nav?.clipboard?.writeText) {
       nav.clipboard.writeText(txt).then(() => {
         setShareCopied(true);
@@ -706,7 +706,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
               <p className="text-brand-text-secondary text-sm mb-3.5">Episodes whose joke mix best matches your picks — a place to start watching.</p>
               <div className="bg-brand-card border border-brand-border rounded-2xl px-5 py-1">
                 {epRecs.map(ep => (
-                  <a key={`${ep.slug}-${ep.s}-${ep.e}`} href={`https://thehumorindex.com/shows/${ep.slug}/${ep.s}/${ep.e}/`} target="_blank" rel="noopener noreferrer"
+                  <a key={`${ep.slug}-${ep.s}-${ep.e}`} href={`https://www.thehumorindex.com/shows/${ep.slug}/${ep.s}/${ep.e}/`} target="_blank" rel="noopener noreferrer"
                     onClick={() => trackEvent('cdna_ep_click', { slug: ep.slug, s: ep.s, e: ep.e })}
                     className="flex items-center gap-3.5 py-2.5 border-b border-brand-border last:border-0 hover:bg-brand-surface -mx-3 px-3 rounded transition">
                     <Tile slug={ep.slug} size={30} />

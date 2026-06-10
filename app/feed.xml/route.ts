@@ -21,8 +21,8 @@ export async function GET() {
   const items = POSTS.map(post => `
     <item>
       <title><![CDATA[${post.title}]]></title>
-      <link>https://thehumorindex.com/blog/${post.slug}/</link>
-      <guid>https://thehumorindex.com/blog/${post.slug}/</guid>
+      <link>https://www.thehumorindex.com/blog/${post.slug}/</link>
+      <guid>https://www.thehumorindex.com/blog/${post.slug}/</guid>
       <description><![CDATA[${post.description}]]></description>
       <pubDate>${new Date(post.date + 'T12:00:00Z').toUTCString()}</pubDate>
     </item>`).join('');
@@ -31,11 +31,11 @@ export async function GET() {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Humor Index</title>
-    <link>https://thehumorindex.com</link>
+    <link>https://www.thehumorindex.com</link>
     <description>AI-powered comedy analytics ranking every joke in television history.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    <atom:link href="https://thehumorindex.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://www.thehumorindex.com/feed.xml" rel="self" type="application/rss+xml"/>
     ${items}
   </channel>
 </rss>`;
