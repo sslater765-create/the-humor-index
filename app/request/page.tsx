@@ -1,5 +1,6 @@
 import RequestClient from './RequestClient';
 import { SITE_URL } from '@/lib/site';
+import { getAllShows } from '@/lib/data';
 
 export const metadata = {
   title: 'Request a Show — Vote for the Next Analysis',
@@ -14,7 +15,11 @@ export const metadata = {
   },
 };
 
-export default function RequestPage() {
+export default async function RequestPage() {
+  const shows = await getAllShows();
+  const completed = shows.filter(s => s.humor_index > 0).map(s => s.name);
+  const upNext = shows.filter(s => s.humor_index <= 0).map(s => s.name);
+
   return (
     <div>
       {/* Editorial hero */}
@@ -33,7 +38,7 @@ export default function RequestPage() {
       </section>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
-        <RequestClient />
+        <RequestClient completed={completed} upNext={upNext} />
       </div>
     </div>
   );

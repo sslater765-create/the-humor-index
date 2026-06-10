@@ -9,9 +9,10 @@ const links = [
   { href: '/rankings', label: 'Rankings' },
   { href: '/compare', label: 'Compare' },
   { href: '/comedy-dna', label: 'Comedy DNA' },
+  { href: '/agree', label: 'Agree?' },
+  { href: '/my', label: 'My Index' },
   { href: '/blog', label: 'Blog' },
   { href: '/methodology', label: 'Methodology' },
-  { href: '/request', label: 'Request' },
 ];
 
 export default function Nav() {
@@ -38,7 +39,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden sm:flex items-center gap-6">
+        <div className="hidden sm:flex items-center gap-4 lg:gap-5">
           {links.map(l => (
             <Link
               key={l.href}

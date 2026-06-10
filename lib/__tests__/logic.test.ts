@@ -63,7 +63,7 @@ describe('tiers', () => {
 describe('comedy archetypes', () => {
   it('round-trips every archetype slug', () => {
     for (const a of ARCHES) {
-      expect(archetypeBySlug(a.slug)?.key).toBe(a.key);
+      expect(archetypeBySlug(a.slug)?.slug).toBe(a.slug);
     }
   });
   it('returns undefined for an unknown slug', () => {

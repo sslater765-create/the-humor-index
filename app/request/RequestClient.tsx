@@ -17,7 +17,7 @@ const SUGGESTED_SHOWS = [
   { name: 'Abbott Elementary', slug: 'abbott-elementary' },
 ];
 
-export default function RequestClient() {
+export default function RequestClient({ completed, upNext }: { completed?: string[]; upNext?: string[] } = {}) {
   const [votes, setVotes] = useState<Record<string, number>>({});
   const [voted, setVoted] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
@@ -113,8 +113,10 @@ export default function RequestClient() {
 
   const totalVotes = Object.values(votes).reduce<number>((a, b) => a + Number(b || 0), 0);
   const topShow = sorted.find(s => (votes[s.slug] || 0) > 0);
-  const completed = ['The Office', 'Seinfeld', 'Friends', 'Parks and Recreation', "Schitt's Creek", 'Arrested Development', '30 Rock', 'Taxi', 'Community', 'The Simpsons', 'Veep', "It's Always Sunny in Philadelphia", 'Flight of the Conchords', 'The Larry Sanders Show', 'The Fresh Prince of Bel-Air'];
-  const upNext = ['Brooklyn Nine-Nine', 'All in the Family', 'M*A*S*H', 'The Jeffersons',
+  // Derived from live show data (passed by the server) so these never go stale;
+  // fall back to a static list if rendered without props.
+  const completedList = completed?.length ? completed : ['The Office', 'Seinfeld', 'Friends', 'Parks and Recreation', "Schitt's Creek", 'Arrested Development', '30 Rock', 'Taxi', 'Community', 'The Simpsons', 'Veep', "It's Always Sunny in Philadelphia", 'Flight of the Conchords', 'The Larry Sanders Show', 'The Fresh Prince of Bel-Air'];
+  const upNextList = upNext?.length ? upNext : ['Brooklyn Nine-Nine', 'All in the Family', 'M*A*S*H', 'The Jeffersons',
     'The Mary Tyler Moore Show', 'WKRP in Cincinnati',
     'Sanford and Son', 'Barney Miller', 'Two and a Half Men', 'The Big Bang Theory'];
 
@@ -277,14 +279,14 @@ export default function RequestClient() {
             <h2 className="font-serif italic text-2xl text-brand-text-primary">What we&apos;ve scored. What&apos;s coming.</h2>
           </div>
           <div className="text-right shrink-0 ml-3">
-            <p className="font-serif italic text-3xl text-brand-gold leading-none">{completed.length}</p>
+            <p className="font-serif italic text-3xl text-brand-gold leading-none">{completedList.length}</p>
             <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">shows live</p>
           </div>
         </div>
 
         <p className="text-[10px] uppercase tracking-widest text-emerald-400/80 mb-3">Completed</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 mb-7">
-          {completed.map(name => (
+          {completedList.map(name => (
             <div key={name} className="flex items-center gap-2 px-3 py-2 bg-brand-surface rounded-lg">
               <span className="text-emerald-400 text-sm leading-none">✓</span>
               <span className="text-sm text-brand-text-primary truncate">{name}</span>
@@ -294,7 +296,7 @@ export default function RequestClient() {
 
         <p className="text-[10px] uppercase tracking-widest text-brand-gold/80 mb-3">Up Next on the Slate</p>
         <div className="flex flex-wrap gap-2">
-          {upNext.map(name => (
+          {upNextList.map(name => (
             <span key={name} className="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-3 py-1.5">
               {name}
             </span>

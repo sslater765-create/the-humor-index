@@ -115,15 +115,27 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex gap-6">
+        <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center">
           <Link href="/shows" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Shows
           </Link>
+          <Link href="/agree" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            Agree?
+          </Link>
+          <Link href="/my" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            My Index
+          </Link>
+          <Link href="/cards" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            Share Cards
+          </Link>
+          <Link href="/data" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            The Data
+          </Link>
+          <Link href="/request" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            Request
+          </Link>
           <Link href="/methodology" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Methodology
-          </Link>
-          <Link href="/compare" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
-            Compare Shows
           </Link>
           <Link href="/faq" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             FAQ

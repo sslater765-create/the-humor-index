@@ -47,6 +47,8 @@ ${leaderboard}
 - [Compare shows](${SITE_URL}/compare/): head-to-head "is X funnier than Y" data.
 - [Comedy DNA](${SITE_URL}/comedy-dna/): an interactive quiz — pick which joke is funnier to find your comedy archetype and the shows that match your taste.
 - [Blog](${SITE_URL}/blog/): data-driven comedy analysis (e.g., the measurable Dan Harmon effect on Community).
+- [Open data](${SITE_URL}/data/): downloadable JSON for show, episode, and joke scores; an embeddable live-leaderboard badge; and citation guidance.
+- [Do you agree with the Index?](${SITE_URL}/agree/): a blind test where humans pick the funnier of two real jokes, used to measure how often human judgment agrees with the algorithm.
 
 ## Comedy archetypes (from the Comedy DNA quiz)
 Six comedy-taste archetypes, assigned from which jokes a person prefers:
