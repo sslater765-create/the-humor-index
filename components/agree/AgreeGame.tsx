@@ -1,5 +1,7 @@
 'use client';
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { syncProfile, saveAgree } from '@/lib/profile/sync';
+import { createClient, supabaseConfigured } from '@/lib/supabase/client';
 
 // Kept local (not imported from lib/data) so this client bundle never pulls in fs.
 interface AgreeJoke {
@@ -7,15 +9,7 @@ interface AgreeJoke {
   who: string; show: string; slug: string; se: number; ep: number; et: string; jt: string | null;
 }
 
-const LS_KEY = 'humor_index_agree';
 const MIN_GAP = 1.0; // ensure there's a defensible "funnier" answer
-
-function loadLocal(): { agree: number; total: number; streak: number } {
-  try {
-    const r = JSON.parse(localStorage.getItem(LS_KEY) || '{}');
-    return { agree: Number(r.agree || 0), total: Number(r.total || 0), streak: Number(r.streak || 0) };
-  } catch { return { agree: 0, total: 0, streak: 0 }; }
-}
 
 // Deterministic avatar color per show, drawn from the brand palette.
 const AVATAR_COLORS = ['#378ADD', '#1D9E75', '#D85A30', '#7F77DD', '#D4537E', '#E8B931', '#E24B4A'];
@@ -36,6 +30,7 @@ export default function AgreeGame({ pool, jokeCount }: { pool: AgreeJoke[]; joke
   const [picked, setPicked] = useState<number | null>(null);
   const [recent, setRecent] = useState<number[]>([]);
   const [local, setLocal] = useState({ agree: 0, total: 0, streak: 0 });
+  const [uid, setUid] = useState<string | null>(null);
   const [globalPct, setGlobalPct] = useState<number | null>(null);
   const [globalTotal, setGlobalTotal] = useState<number>(0);
 
@@ -59,12 +54,34 @@ export default function AgreeGame({ pool, jokeCount }: { pool: AgreeJoke[]; joke
   }, [pool]);
 
   useEffect(() => {
-    setLocal(loadLocal());
+    let active = true;
+    syncProfile().then(({ uid, data }) => {
+      if (!active) return;
+      setUid(uid);
+      setLocal(data.agree);
+    });
     draw([]);
     fetch('/api/agree').then(r => r.json()).then(d => {
       if (typeof d.pct === 'number') setGlobalPct(d.pct);
       if (typeof d.total === 'number') setGlobalTotal(d.total);
     }).catch(() => {});
+
+    // Re-sync the tally when the user signs in or out mid-session.
+    let unsub = () => {};
+    if (supabaseConfigured) {
+      const supabase = createClient();
+      const { data: sub } = supabase.auth.onAuthStateChange((event) => {
+        if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
+          syncProfile().then(({ uid, data }) => {
+            if (!active) return;
+            setUid(uid);
+            setLocal(data.agree);
+          });
+        }
+      });
+      unsub = () => sub.subscription.unsubscribe();
+    }
+    return () => { active = false; unsub(); };
   }, [draw]);
 
   const winnerId = useMemo(() => {
@@ -82,7 +99,7 @@ export default function AgreeGame({ pool, jokeCount }: { pool: AgreeJoke[]; joke
       streak: agreed ? local.streak + 1 : 0,
     };
     setLocal(next);
-    try { localStorage.setItem(LS_KEY, JSON.stringify(next)); } catch {}
+    void saveAgree(uid, next);
     setRecent(r => [...r, pair[0].id, pair[1].id]);
     fetch('/api/agree', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },

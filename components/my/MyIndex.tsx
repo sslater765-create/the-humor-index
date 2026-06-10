@@ -6,18 +6,11 @@ import {
   showStyle, tileText, TYPE_LABEL, DNA_TYPES,
   type ShowFingerprint,
 } from '@/lib/comedyDna';
+import { syncProfile, saveRating, saveWatch, type Rating } from '@/lib/profile/sync';
+import { createClient, supabaseConfigured } from '@/lib/supabase/client';
 
 interface MyShow { slug: string; name: string; hi: number; poster: string | null; eps: number; network: string; }
 interface FpLite { slug: string; fp: number[]; n: number; }
-
-const R_KEY = 'humor_index_ratings';   // { slug: 'love' | 'meh' }
-const W_KEY = 'humor_index_watchlist'; // string[]
-
-type Rating = 'love' | 'meh';
-
-function load<T>(key: string, fallback: T): T {
-  try { const v = localStorage.getItem(key); return v ? JSON.parse(v) as T : fallback; } catch { return fallback; }
-}
 
 function Tile({ slug, size = 44 }: { slug: string; size?: number }) {
   const st = showStyle(slug);
@@ -37,11 +30,35 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
   const [ratings, setRatings] = useState<Record<string, Rating>>({});
   const [watch, setWatch] = useState<string[]>([]);
   const [ready, setReady] = useState(false);
+  const [uid, setUid] = useState<string | null>(null);
 
   useEffect(() => {
-    setRatings(load<Record<string, Rating>>(R_KEY, {}));
-    setWatch(load<string[]>(W_KEY, []));
-    setReady(true);
+    let active = true;
+    syncProfile().then(({ uid, data }) => {
+      if (!active) return;
+      setUid(uid);
+      setRatings(data.ratings);
+      setWatch(data.watchlist);
+      setReady(true);
+    });
+
+    // Re-sync when the user signs in or out mid-session.
+    let unsub = () => {};
+    if (supabaseConfigured) {
+      const supabase = createClient();
+      const { data: sub } = supabase.auth.onAuthStateChange((event) => {
+        if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
+          syncProfile().then(({ uid, data }) => {
+            if (!active) return;
+            setUid(uid);
+            setRatings(data.ratings);
+            setWatch(data.watchlist);
+          });
+        }
+      });
+      unsub = () => sub.subscription.unsubscribe();
+    }
+    return () => { active = false; unsub(); };
   }, []);
 
   const showBySlug = useMemo(() => Object.fromEntries(shows.map(s => [s.slug, s])), [shows]);
@@ -54,15 +71,18 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
   function rate(slug: string, r: Rating) {
     setRatings(prev => {
       const next = { ...prev };
-      if (next[slug] === r) delete next[slug]; else next[slug] = r;
-      try { localStorage.setItem(R_KEY, JSON.stringify(next)); } catch {}
+      let verdict: Rating | null;
+      if (next[slug] === r) { delete next[slug]; verdict = null; }
+      else { next[slug] = r; verdict = r; }
+      void saveRating(uid, slug, verdict);
       return next;
     });
   }
   function toggleWatch(slug: string) {
     setWatch(prev => {
-      const next = prev.includes(slug) ? prev.filter(s => s !== slug) : [...prev, slug];
-      try { localStorage.setItem(W_KEY, JSON.stringify(next)); } catch {}
+      const onList = !prev.includes(slug);
+      const next = onList ? [...prev, slug] : prev.filter(s => s !== slug);
+      void saveWatch(uid, slug, onList);
       return next;
     });
   }
