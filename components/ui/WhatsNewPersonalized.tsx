@@ -14,6 +14,7 @@ interface NewItem {
 
 // These are the site's content items with their publish dates
 const ALL_ITEMS: NewItem[] = [
+  { href: '/shows/chappelles-show', label: 'Just Launched', labelColor: 'text-emerald-400', title: "Chappelle's Show — All 27 Episodes (S1–S3)", subtitle: '1,148 jokes analyzed · First sketch show in the dataset · Debuts at #1 (85.6)', date: '2026-06-10' },
   { href: '/shows/freaks-and-geeks', label: 'Just Launched', labelColor: 'text-emerald-400', title: 'Freaks and Geeks — All 18 Episodes (S1)', subtitle: '1,231 jokes analyzed · First dramedy in the dataset · Debuts at #16', date: '2026-06-09' },
   { href: '/shows/the-simpsons', label: 'Now Complete', labelColor: 'text-emerald-400', title: 'The Simpsons — Full Classic Run S1–S20 (441 Episodes)', subtitle: '28,170 jokes analyzed · Now #4 overall', date: '2026-06-09' },
   { href: '/shows/the-fresh-prince-of-bel-air', label: 'Recently Completed', labelColor: 'text-emerald-400', title: 'The Fresh Prince of Bel-Air — All 148 Episodes (S1–S6)', subtitle: '8,222 jokes analyzed · Debuts at #14', date: '2026-06-05' },
