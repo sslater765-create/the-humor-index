@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
+import AccountMenu from '@/components/auth/AccountMenu';
 
 const links = [
   { href: '/shows', label: 'Shows' },
@@ -68,6 +69,7 @@ export default function Nav() {
               <path d="m21 21-4.3-4.3" />
             </svg>
           </Link>
+          <AccountMenu />
         </div>
 
         {/* Mobile: search + hamburger */}
@@ -120,6 +122,7 @@ export default function Nav() {
                 {l.label}
               </Link>
             ))}
+            <AccountMenu mobile />
           </div>
         </div>
       )}
