@@ -6,6 +6,7 @@ import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import { getAllShows } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
 import { POSTS } from '../posts';
+import { SITE_URL } from '@/lib/site';
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr + 'T00:00:00');
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       images: [`/api/og?title=${encodeURIComponent(post.title)}&subtitle=${encodeURIComponent(post.category)}`],
     },
     alternates: {
-      canonical: `https://www.thehumorindex.com/blog/${params.slug}/`,
+      canonical: `${SITE_URL}/blog/${params.slug}/`,
     },
   };
 }
@@ -65,9 +66,9 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           publisher: {
             '@type': 'Organization',
             name: 'The Humor Index',
-            logo: { '@type': 'ImageObject', url: 'https://www.thehumorindex.com/favicon-400.png' },
+            logo: { '@type': 'ImageObject', url: `${SITE_URL}/favicon-400.png` },
           },
-          url: `https://www.thehumorindex.com/blog/${params.slug}`,
+          url: `${SITE_URL}/blog/${params.slug}`,
           image: `/api/og?title=${encodeURIComponent(post.title)}&subtitle=${encodeURIComponent(post.category)}`,
         }) }}
       />

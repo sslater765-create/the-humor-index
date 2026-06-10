@@ -5,6 +5,7 @@ import PageHeader from '@/components/layout/PageHeader';
 
 import BestJokeRotator from "@/components/ui/BestJokeRotator";
 import topJokes from "@/public/data/top-jokes.json";
+import { SITE_URL } from '@/lib/site';
 export const dynamic = 'force-static';
 
 export const metadata = {
@@ -12,7 +13,7 @@ export const metadata = {
   description:
     'Data-driven comedy rankings: the funniest sitcom episodes ever, the best jokes scored by AI, and head-to-head show comparisons. All based on our Humor Index methodology.',
   alternates: {
-    canonical: 'https://www.thehumorindex.com/rankings/',
+    canonical: `${SITE_URL}/rankings/`,
   },
 };
 

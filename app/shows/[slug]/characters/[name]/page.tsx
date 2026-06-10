@@ -5,6 +5,7 @@ import { getShow, getCharacters, getCharacterJokes } from '@/lib/data';
 import { SHOW_SLUGS } from '@/lib/constants';
 import { JOKE_TYPE_LABELS } from '@/lib/scoring';
 import ScoreCard from '@/components/ui/ScoreCard';
+import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
@@ -53,7 +54,7 @@ export async function generateMetadata({
     description: descBase,
     ...(thin ? { robots: { index: false, follow: true } } : {}),
     alternates: {
-      canonical: `https://www.thehumorindex.com/shows/${params.slug}/characters/${params.name}/`,
+      canonical: `${SITE_URL}/shows/${params.slug}/characters/${params.name}/`,
     },
     openGraph: {
       title: `${name} — Funniest Lines & Comedy Score · ${show.name}`,
@@ -105,7 +106,7 @@ export default async function CharacterPage({
       name: character.character_full_name || character.name,
       alternateName: character.name,
       description: `Fictional character on ${show.name}. ${character.total_jokes.toLocaleString()} analyzed jokes across ${character.episodes_appeared} episodes.`,
-      url: `https://www.thehumorindex.com/shows/${params.slug}/characters/${encodeURIComponent(character.name)}/`,
+      url: `${SITE_URL}/shows/${params.slug}/characters/${encodeURIComponent(character.name)}/`,
       ...(character.actor && {
         performer: { '@type': 'Person', name: character.actor },
       }),
@@ -117,10 +118,10 @@ export default async function CharacterPage({
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Shows', item: 'https://www.thehumorindex.com/shows/' },
-        { '@type': 'ListItem', position: 2, name: show.name, item: `https://www.thehumorindex.com/shows/${params.slug}/` },
-        { '@type': 'ListItem', position: 3, name: 'Characters', item: `https://www.thehumorindex.com/shows/${params.slug}/` },
-        { '@type': 'ListItem', position: 4, name: character.name, item: `https://www.thehumorindex.com/shows/${params.slug}/characters/${encodeURIComponent(character.name)}/` },
+        { '@type': 'ListItem', position: 1, name: 'Shows', item: `${SITE_URL}/shows/` },
+        { '@type': 'ListItem', position: 2, name: show.name, item: `${SITE_URL}/shows/${params.slug}/` },
+        { '@type': 'ListItem', position: 3, name: 'Characters', item: `${SITE_URL}/shows/${params.slug}/` },
+        { '@type': 'ListItem', position: 4, name: character.name, item: `${SITE_URL}/shows/${params.slug}/characters/${encodeURIComponent(character.name)}/` },
       ],
     },
   ];

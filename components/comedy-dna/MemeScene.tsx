@@ -48,7 +48,7 @@ const PROP_SLOTS: Record<string, [{ x: number; y: number }, { x: number; y: numb
 // ---- bespoke per-joke scenes (the iconic ones whose ART IS THE JOKE) ----
 // When the joke's id matches, this overrides the scene template + props entirely.
 // Add new bespoke scenes by joke id; keep the visual centered on the gag itself.
-function bespokeSVG(jokeId: number, color: string, mid: string, dark: string): ReactNode {
+function bespokeSVG(jokeId: number, _color: string, mid: string, dark: string): ReactNode {
   switch (jokeId) {
     // Seinfeld — Soup Nazi: "No soup for you! Come back, one year."
     case 18628: return (<>

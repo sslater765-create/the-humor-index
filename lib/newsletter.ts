@@ -1,6 +1,7 @@
 import { getAllShows, getEpisodes, getCharacters, getSeasons } from './data';
 import { formatIndex } from './scoring';
 import type { ShowScore, EpisodeScore } from './types';
+import { SITE_URL } from './site';
 
 // ---- Types ----
 
@@ -69,7 +70,7 @@ async function generateShowSpotlight(shows: ShowScore[]): Promise<NewsletterSect
     heading: `${show.name}: ${formatIndex(show.humor_index)} Humor Index`,
     body,
     buttonText: `See the full ${show.name} analysis`,
-    buttonUrl: `https://www.thehumorindex.com/shows/${show.slug}`,
+    buttonUrl: `${SITE_URL}/shows/${show.slug}`,
   };
 }
 
@@ -103,7 +104,7 @@ async function generateHeadToHead(shows: ShowScore[]): Promise<NewsletterSection
     heading: `${showA.name} vs ${showB.name}`,
     body,
     buttonText: `Compare them head to head`,
-    buttonUrl: `https://www.thehumorindex.com/compare?shows=${showA.slug},${showB.slug}`,
+    buttonUrl: `${SITE_URL}/compare?shows=${showA.slug},${showB.slug}`,
   };
 }
 
@@ -133,7 +134,7 @@ async function generateCharacterSpotlight(shows: ShowScore[]): Promise<Newslette
     heading: `Character Spotlight: ${topChar.name}`,
     body,
     buttonText: `See ${topChar.name}'s full profile`,
-    buttonUrl: `https://www.thehumorindex.com/shows/${show.slug}`,
+    buttonUrl: `${SITE_URL}/shows/${show.slug}`,
   };
 }
 
@@ -252,7 +253,7 @@ function generateVoteCTA(): NewsletterSection {
     heading: 'Vote on What We Analyze Next',
     body: "We're building the largest comedy analytics database ever made. Want to see your favorite show analyzed? Vote on what we cover next — the community decides our pipeline.",
     buttonText: 'Vote now',
-    buttonUrl: 'https://www.thehumorindex.com/request',
+    buttonUrl: `${SITE_URL}/request`,
   };
 }
 

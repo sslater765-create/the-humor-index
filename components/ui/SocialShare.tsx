@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { trackShareClick } from '@/lib/analytics';
+import { SITE_URL } from '@/lib/site';
 
 interface Props {
   title: string;
@@ -9,7 +10,7 @@ interface Props {
 }
 
 export default function SocialShare({ title, text, url }: Props) {
-  const fullUrl = `https://www.thehumorindex.com${url}`;
+  const fullUrl = `${SITE_URL}${url}`;
   const encodedText = encodeURIComponent(text);
   const encodedUrl = encodeURIComponent(fullUrl);
   const [copied, setCopied] = useState(false);

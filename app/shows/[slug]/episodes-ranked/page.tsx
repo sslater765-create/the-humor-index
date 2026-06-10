@@ -6,6 +6,7 @@ import { SHOW_SLUGS } from '@/lib/constants';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
+import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     title: `All ${count} ${show.name} Episodes, Ranked Best to Worst`,
     description: `Every ${show.name} episode ranked from funniest to worst by the Humor Index — joke density, craft, and impact scored across all ${count} episodes. See the best ${show.name} episodes and the ones to skip.`,
     alternates: {
-      canonical: `https://www.thehumorindex.com/shows/${params.slug}/episodes-ranked/`,
+      canonical: `${SITE_URL}/shows/${params.slug}/episodes-ranked/`,
     },
     openGraph: {
       title: `${show.name} Episodes Ranked by Humor Index`,
@@ -71,7 +72,7 @@ export default async function EpisodesRankedPage({ params }: { params: { slug: s
         episodeNumber: ep.episode_number,
         partOfSeason: { '@type': 'TVSeason', seasonNumber: ep.season },
         partOfSeries: { '@type': 'TVSeries', name: show.name },
-        url: `https://www.thehumorindex.com/shows/${params.slug}/${ep.season}/${ep.episode_number}/`,
+        url: `${SITE_URL}/shows/${params.slug}/${ep.season}/${ep.episode_number}/`,
       },
     })),
   };

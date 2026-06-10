@@ -99,7 +99,7 @@ export function sameTier(a: number, b: number): boolean {
  * Given a score + CI, does the CI cross a tier boundary?
  * If so, the tier assignment is fuzzy — we can surface that uncertainty.
  */
-export function tierIsUncertain(score: number, ciLow?: number, ciHigh?: number): boolean {
+export function tierIsUncertain(_score: number, ciLow?: number, ciHigh?: number): boolean {
   if (ciLow == null || ciHigh == null) return false;
   return getTier(ciLow).key !== getTier(ciHigh).key;
 }

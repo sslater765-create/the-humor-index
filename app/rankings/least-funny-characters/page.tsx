@@ -4,6 +4,7 @@ import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 import LeastFunnyClient from './LeastFunnyClient';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
+import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
@@ -20,7 +21,7 @@ export const metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://www.thehumorindex.com/rankings/least-funny-characters/',
+    canonical: `${SITE_URL}/rankings/least-funny-characters/`,
   },
 };
 

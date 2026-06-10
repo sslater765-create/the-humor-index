@@ -1,10 +1,11 @@
 import RequestClient from './RequestClient';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata = {
   title: 'Request a Show — Vote for the Next Analysis',
   description: 'Vote for which sitcom The Humor Index should analyze next. The most-requested shows get scored first.',
   alternates: {
-    canonical: 'https://www.thehumorindex.com/request/',
+    canonical: `${SITE_URL}/request/`,
   },
   openGraph: {
     title: 'Request a Show — Vote for the Next Analysis',

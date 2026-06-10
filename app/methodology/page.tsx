@@ -1,11 +1,13 @@
-import { FORMAT_COEFFICIENTS, FORMAT_LABELS } from '@/lib/scoring';
+import { FORMAT_COEFFICIENTS, FORMAT_LABELS, formatIndex } from '@/lib/scoring';
 import { ShowFormat } from '@/lib/types';
+import { SITE_URL } from '@/lib/site';
+import { getSiteStats } from '@/lib/siteStats';
 
 export const metadata = {
   title: 'How We Score Comedy: JPM, Craft, Impact & WAR',
   description: 'How we calculate the Humor Index: jokes per minute, craft, impact, and why we no longer adjust for format. The full scoring methodology.',
   alternates: {
-    canonical: 'https://www.thehumorindex.com/methodology/',
+    canonical: `${SITE_URL}/methodology/`,
   },
   openGraph: {
     title: 'Methodology — The Humor Index',
@@ -16,7 +18,9 @@ export const metadata = {
 
 export const dynamic = 'force-static';
 
-export default function MethodologyPage() {
+export default async function MethodologyPage() {
+  const { leaderboard, showCount } = await getSiteStats();
+  const publishedOrder = leaderboard.map(s => `${s.name} ${formatIndex(s.humor_index)}`).join(', ');
   return (
     <div>
       {/* Editorial hero */}
@@ -233,10 +237,7 @@ export default function MethodologyPage() {
             moved Seinfeld from 83.9 → 77.8. <span className="text-brand-text-secondary">Reconciliation (May 25, 2026):</span> as
             new shows were added the live leaderboard drifted from the canonical aggregation, so we re-aggregated
             every scored show with one consistent method and added bootstrap 95% confidence intervals.
-            Current published order (16 shows): 30 Rock 84.4, Arrested Development 82.0, Veep 80.0, The Simpsons 79.4,
-            The Office <span className="text-brand-text-primary">79.3</span>, It&apos;s Always Sunny 79.3, Flight of the Conchords 78.3,
-            Community 77.9, Parks and Recreation 77.7, Taxi 77.3, Schitt&apos;s Creek 77.3, Seinfeld 77.0,
-            The Larry Sanders Show 76.5, The Fresh Prince of Bel-Air 76.0, Friends 73.3, Freaks and Geeks 70.4.
+            Current published order ({showCount} shows): {publishedOrder}.
             30 Rock and Arrested Development pull clear at the top; the broad middle clusters inside each other&apos;s
             intervals; Friends and the single-season Freaks and Geeks sit below the pack.
           </p>

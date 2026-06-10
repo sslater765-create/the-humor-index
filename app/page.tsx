@@ -4,6 +4,7 @@ import { getAllShows, getEpisodes } from '@/lib/data';
 import LeaderboardClient from './LeaderboardClient';
 import WhatsNewPersonalized from '@/components/ui/WhatsNewPersonalized';
 import HeroLoop from '@/components/HeroLoop';
+import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
@@ -25,11 +26,11 @@ export default async function HomePage() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'The Humor Index',
-    url: 'https://www.thehumorindex.com',
+    url: `${SITE_URL}`,
     description: 'AI-powered comedy analytics ranking every joke in television history.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://www.thehumorindex.com/shows?q={search_term_string}',
+      target: `${SITE_URL}/shows?q={search_term_string}`,
       'query-input': 'required name=search_term_string',
     },
   };

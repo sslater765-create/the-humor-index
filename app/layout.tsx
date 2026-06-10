@@ -9,6 +9,7 @@ import ScrollToTop from '@/components/ui/ScrollToTop';
 import StickyNewsletterBar from '@/components/ui/StickyNewsletterBar';
 import RecentlyViewedTracker from '@/components/ui/RecentlyViewedTracker';
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
+import { SITE_URL } from '@/lib/site';
 // NewsletterPopup removed 2026-04-19 — audit found 4 CTAs/page was oppressive.
 // Remaining surfaces: footer form, HeroNewsletterCTA, StickyNewsletterBar, EndOfArticleCTA, InlineNewsletterCTA.
 
@@ -23,7 +24,7 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.thehumorindex.com'),
+  metadataBase: new URL(`${SITE_URL}`),
   icons: {
     icon: '/favicon-400.png',
     apple: '/favicon-400.png',
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The Humor Index',
     description: "The definitive science of what's funny. AI-analyzed rankings of every joke in sitcom history.",
-    url: 'https://www.thehumorindex.com',
+    url: `${SITE_URL}`,
     siteName: 'The Humor Index',
     type: 'website',
     images: [
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
     images: ["/api/og?title=The%20Humor%20Index&subtitle=" + encodeURIComponent("The science of what's funny")],
   },
   alternates: {
-    canonical: 'https://www.thehumorindex.com/',
+    canonical: `${SITE_URL}/`,
     types: {
       'application/rss+xml': '/feed.xml',
     },
@@ -93,8 +94,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'The Humor Index',
-            url: 'https://www.thehumorindex.com',
-            logo: 'https://www.thehumorindex.com/favicon-400.png',
+            url: `${SITE_URL}`,
+            logo: `${SITE_URL}/favicon-400.png`,
             description: 'AI-powered comedy analytics ranking every joke in television history.',
             sameAs: [
               'https://x.com/thehumorindex',

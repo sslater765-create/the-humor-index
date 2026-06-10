@@ -2,9 +2,10 @@ import type { MetadataRoute } from 'next';
 import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 import { ARCHES } from '@/lib/comedyDna';
 import { POSTS } from '@/app/blog/posts';
+import { SITE_URL } from '@/lib/site';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://www.thehumorindex.com';
+  const baseUrl = `${SITE_URL}`;
   const shows = await getAllShows();
 
   // Canonicals use trailing slash; keep sitemap consistent with canonical tags.

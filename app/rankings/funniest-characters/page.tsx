@@ -4,6 +4,7 @@ import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 import CharactersClient, { type WarCharacter } from './CharactersClient';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
+import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
@@ -17,7 +18,7 @@ export const metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://www.thehumorindex.com/rankings/funniest-characters/',
+    canonical: `${SITE_URL}/rankings/funniest-characters/`,
   },
 };
 
@@ -98,7 +99,7 @@ export default async function FunniestCharactersPage() {
                   '@type': 'ListItem',
                   position: i + 1,
                   name: `${c.name} — ${c.showName}`,
-                  url: `https://www.thehumorindex.com/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`,
+                  url: `${SITE_URL}/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`,
                 })),
             }),
           }}

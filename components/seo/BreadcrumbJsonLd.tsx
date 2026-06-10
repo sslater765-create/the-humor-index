@@ -1,10 +1,11 @@
+import { SITE_URL } from '@/lib/site';
 interface Crumb {
   name: string;
   /** Absolute or root-relative path; will be normalized to an absolute URL with a trailing slash. */
   path: string;
 }
 
-const SITE = 'https://www.thehumorindex.com';
+const SITE = `${SITE_URL}`;
 
 function toUrl(path: string): string {
   if (path.startsWith('http')) return path;

@@ -2,12 +2,13 @@ import Link from 'next/link';
 import { getAllShows, getComedyDna } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
 import CompareClient from './CompareClient';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata = {
   title: 'Compare Shows — The Humor Index',
   description: 'Head-to-head comparison of comedy show Humor Index scores.',
   alternates: {
-    canonical: 'https://www.thehumorindex.com/compare/',
+    canonical: `${SITE_URL}/compare/`,
   },
   openGraph: {
     title: 'Compare Shows — The Humor Index',

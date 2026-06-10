@@ -12,6 +12,7 @@ export const dynamicParams = true;
 
 // Auto-generate every possible A-vs-B matchup from available shows
 import { SHOW_SLUGS } from '@/lib/constants';
+import { SITE_URL } from '@/lib/site';
 
 function generateAllMatchups() {
   // Generate one matchup per unordered pair (alpha-first) to avoid duplicate pages.
@@ -70,7 +71,7 @@ export async function generateMetadata({ params }: { params: { matchup: string }
       images: [`/api/og?title=${encodeURIComponent(`${a.name} vs ${b.name}`)}&score=${formatIndex(winner.humor_index)}&subtitle=${encodeURIComponent(`${winner.name} wins · Head-to-head comparison`)}`],
     },
     alternates: {
-      canonical: `https://www.thehumorindex.com/compare/${params.matchup}/`,
+      canonical: `${SITE_URL}/compare/${params.matchup}/`,
     },
   };
 }
@@ -127,7 +128,7 @@ export default async function MatchupPage({ params }: { params: { matchup: strin
     '@type': 'Article',
     headline: `${showA.name} vs ${showB.name}: Which Is Funnier?`,
     description: `Data-driven comparison of ${showA.name} and ${showB.name} comedy scores.`,
-    url: `https://www.thehumorindex.com/compare/${params.matchup}`,
+    url: `${SITE_URL}/compare/${params.matchup}`,
   };
 
   return (

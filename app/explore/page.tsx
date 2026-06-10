@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { getAllShows, getEpisodes } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
 import { getExplorerConfig } from '@/lib/explorerPresets';
+import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
@@ -11,7 +12,7 @@ export async function generateMetadata() {
   return {
     title: 'Humor Index Explorer — Score Any Cut of Any Sitcom',
     description: 'Pick any seasons or episodes of a sitcom and see the average Humor Index of that cut. Compare eras — like Community with vs without Dan Harmon, or Seinfeld with vs without Larry David — every episode scored by AI.',
-    alternates: { canonical: 'https://www.thehumorindex.com/explore/' },
+    alternates: { canonical: `${SITE_URL}/explore/` },
   };
 }
 

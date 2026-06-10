@@ -1,12 +1,13 @@
 import PageHeader from '@/components/layout/PageHeader';
 import Link from 'next/link';
 import { getAllShows, getEpisodes } from '@/lib/data';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata = {
   title: 'About — The Story Behind the Comedy Data',
   description: 'The Humor Index was built by Sam to answer one question: which sitcom is actually the funniest? Here\'s the story.',
   alternates: {
-    canonical: 'https://www.thehumorindex.com/about/',
+    canonical: `${SITE_URL}/about/`,
   },
   openGraph: {
     title: 'About — The Humor Index',

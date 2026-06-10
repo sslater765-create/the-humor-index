@@ -1,3 +1,4 @@
+import { cache } from 'react';
 import { ShowScore, SeasonScore, EpisodeScore, EpisodeDetail, CharacterProfile } from './types';
 import { DNA_TYPES, type QuizData, type ShowFingerprint } from './comedyDna';
 import path from 'path';
@@ -9,12 +10,14 @@ function readJson<T>(relativePath: string): T {
   return JSON.parse(raw) as T;
 }
 
-export async function getAllShows(): Promise<ShowScore[]> {
+// `cache()` dedupes these reads within a single render — shows.json/episodes
+// are read by many components per page (leaderboard, recs, siteStats, JSON-LD).
+export const getAllShows = cache(async (): Promise<ShowScore[]> => {
   const data = readJson<ShowScore[]>('shows.json');
   return data
     .sort((a, b) => b.humor_index - a.humor_index)
     .map((s, i) => ({ ...s, rank: i + 1 }));
-}
+});
 
 // Actual number of jokes in the search index (what's genuinely searchable).
 export async function getSearchableJokeCount(): Promise<number> {
@@ -38,13 +41,13 @@ export async function getSeasons(slug: string): Promise<SeasonScore[]> {
   }
 }
 
-export async function getEpisodes(slug: string): Promise<EpisodeScore[]> {
+export const getEpisodes = cache(async (slug: string): Promise<EpisodeScore[]> => {
   try {
     return readJson<EpisodeScore[]>(`${slug}/episodes.json`);
   } catch {
     return [];
   }
-}
+});
 
 export async function getEpisodeDetail(
   slug: string,
@@ -83,13 +86,13 @@ export async function getRecommendations(slug: string): Promise<Array<{ slug: st
   }
 }
 
-export async function getCharacters(slug: string): Promise<CharacterProfile[]> {
+export const getCharacters = cache(async (slug: string): Promise<CharacterProfile[]> => {
   try {
     return readJson<CharacterProfile[]>(`${slug}/characters.json`);
   } catch {
     return [];
   }
-}
+});
 
 export async function getCharacterJokes(
   slug: string,

@@ -6,6 +6,7 @@ import {
   ARCHES, archetypeBySlug, archetypeExemplars, archetypeExampleJokes,
   emblemSVG, EMBLEMS, DNA_TYPES, normalizeFingerprints,
 } from '@/lib/comedyDna';
+import { SITE_URL } from '@/lib/site';
 
 // Human-readable labels for the 18 joke types — used in the quantified stats panel.
 const TYPE_LABELS: Record<string, string> = {
@@ -30,8 +31,8 @@ export async function generateMetadata({ params }: { params: { archetype: string
   return {
     title,
     description: desc,
-    alternates: { canonical: `https://www.thehumorindex.com/comedy-dna/${a.slug}/` },
-    openGraph: { title, description: a.tag, url: `https://www.thehumorindex.com/comedy-dna/${a.slug}/`, type: 'article', images: [{ url: og, width: 1200, height: 630, alt: a.name }] },
+    alternates: { canonical: `${SITE_URL}/comedy-dna/${a.slug}/` },
+    openGraph: { title, description: a.tag, url: `${SITE_URL}/comedy-dna/${a.slug}/`, type: 'article', images: [{ url: og, width: 1200, height: 630, alt: a.name }] },
     twitter: { card: 'summary_large_image', title, description: a.tag, images: [og] },
   };
 }

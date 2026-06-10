@@ -9,6 +9,8 @@ import ScoreGauge from '@/components/ui/ScoreGauge';
 import FormatBadge from '@/components/ui/FormatBadge';
 import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
 import ShowPageClient from './ShowPageClient';
+import { SITE_URL } from '@/lib/site';
+import { tvSeriesJsonLd, breadcrumbJsonLd } from '@/lib/seo';
 
 export const dynamic = 'force-static';
 
@@ -20,7 +22,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const show = await getShow(params.slug);
   if (!show) return {};
-  const canonical = `https://www.thehumorindex.com/shows/${params.slug}/`;
+  const canonical = `${SITE_URL}/shows/${params.slug}/`;
 
   // Queued / not-yet-scored shows get a "coming soon" treatment (no 0.0/100).
   if (!show.humor_index || show.humor_index <= 0) {
@@ -69,7 +71,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
       <div>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org', '@type': 'TVSeries', name: show.name,
-          url: `https://www.thehumorindex.com/shows/${params.slug}/`, description: show.description,
+          url: `${SITE_URL}/shows/${params.slug}/`, description: show.description,
           image: show.backdrop_path ? `https://image.tmdb.org/t/p/w1280${show.backdrop_path}` : undefined,
           numberOfSeasons: show.total_seasons, numberOfEpisodes: show.total_episodes,
         }) }} />
@@ -136,33 +138,12 @@ export default async function ShowPage({ params }: { params: { slug: string } })
   const scoredShowCount = scoredRankList.length;
 
   const jsonLd = [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'TVSeries',
-      name: show.name,
-      url: `https://www.thehumorindex.com/shows/${params.slug}/`,
-      description: show.description,
-      image: show.backdrop_path ? `https://image.tmdb.org/t/p/w1280${show.backdrop_path}` : undefined,
-      numberOfSeasons: show.total_seasons,
-      numberOfEpisodes: show.total_episodes,
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: show.humor_index,
-        bestRating: 100,
-        worstRating: 0,
-        // ratingCount = number of scored episodes that produced the aggregate
-        // (NOT joke count — that misused the schema as a review count).
-        ratingCount: episodes.length || show.total_seasons,
-      },
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Shows', item: 'https://www.thehumorindex.com/shows/' },
-        { '@type': 'ListItem', position: 2, name: show.name, item: `https://www.thehumorindex.com/shows/${params.slug}/` },
-      ],
-    },
+    // ratingCount = scored-episode count (the aggregate's sample), not joke count.
+    tvSeriesJsonLd(show, episodes.length),
+    breadcrumbJsonLd([
+      { name: 'Shows', path: '/shows' },
+      { name: show.name, path: `/shows/${params.slug}` },
+    ]),
   ];
 
   return (

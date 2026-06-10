@@ -5,6 +5,7 @@ import { SHOW_SLUGS } from '@/lib/constants';
 import PageHeader from '@/components/layout/PageHeader';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import ArcClient from './ArcClient';
+import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     title: `${show.name} Seasons Ranked — Which Is the Best Season?`,
     description: `Which is the best season of ${show.name}? We ranked all ${show.total_seasons} seasons by Humor Index and tracked exactly when the show peaked and declined. See the season-by-season data.`,
     alternates: {
-      canonical: `https://www.thehumorindex.com/shows/${params.slug}/arc/`,
+      canonical: `${SITE_URL}/shows/${params.slug}/arc/`,
     },
   };
 }

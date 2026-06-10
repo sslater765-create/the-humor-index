@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getComedyDnaQuiz, getComedyDnaFingerprints, getAllShows } from '@/lib/data';
 import { archetypeExemplars, emblemSVG, EMBLEMS } from '@/lib/comedyDna';
 import ComedyDnaQuiz from '@/components/comedy-dna/ComedyDnaQuiz';
+import { SITE_URL } from '@/lib/site';
 
 // Hero illustrated card per show (the most quotable joke's art), shown as the
 // banner on each archetype card so it matches the "exemplified by" show.
@@ -21,12 +22,12 @@ export const metadata: Metadata = {
   title: "What's Your Comedy DNA?",
   description:
     "Pick which joke is funnier and we'll map your comedy taste — your archetype, the shows built for you, and the jokes you'll love. A face-off through the funniest sitcoms ever scored.",
-  alternates: { canonical: 'https://www.thehumorindex.com/comedy-dna/' },
+  alternates: { canonical: `${SITE_URL}/comedy-dna/` },
   openGraph: {
     title: "What's Your Comedy DNA?",
     description:
       "A 1v1 'which joke is funnier' game that maps your comedy taste and the shows built for it.",
-    url: 'https://www.thehumorindex.com/comedy-dna/',
+    url: `${SITE_URL}/comedy-dna/`,
     type: 'website',
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "What's Your Comedy DNA?" }],
   },

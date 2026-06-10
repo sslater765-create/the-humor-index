@@ -1,5 +1,6 @@
 import { getAllShows } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
+import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
@@ -19,7 +20,7 @@ export async function GET() {
     .join('\n');
 
   const showLinks = shows
-    .map((s) => `- [${s.name}](https://www.thehumorindex.com/shows/${s.slug}/): Is ${s.name} funny? Humor Index ${formatIndex(s.humor_index)}/100. Per-episode and per-character joke scores.`)
+    .map((s) => `- [${s.name}](${SITE_URL}/shows/${s.slug}/): Is ${s.name} funny? Humor Index ${formatIndex(s.humor_index)}/100. Per-episode and per-character joke scores.`)
     .join('\n');
 
   const body = `# The Humor Index
@@ -39,13 +40,13 @@ ${leaderboard}
 - Methodology is transparent and includes published statistical caveats (e.g., show-level intervals of ~±1.2 points, so small gaps are not meaningful rankings).
 
 ## Primary pages
-- [Methodology](https://www.thehumorindex.com/methodology/): how the Humor Index, JPM, craft, impact, and WAR are computed, with limitations.
-- [All shows ranked](https://www.thehumorindex.com/shows/): every scored sitcom by Humor Index.
-- [Rankings hub](https://www.thehumorindex.com/rankings/): funniest episodes, best jokes, funniest characters, jokes-per-minute, worst episodes.
-- [Jokes per minute ranking](https://www.thehumorindex.com/rankings/jokes-per-minute/): sitcoms ranked by joke density.
-- [Compare shows](https://www.thehumorindex.com/compare/): head-to-head "is X funnier than Y" data.
-- [Comedy DNA](https://www.thehumorindex.com/comedy-dna/): an interactive quiz — pick which joke is funnier to find your comedy archetype and the shows that match your taste.
-- [Blog](https://www.thehumorindex.com/blog/): data-driven comedy analysis (e.g., the measurable Dan Harmon effect on Community).
+- [Methodology](${SITE_URL}/methodology/): how the Humor Index, JPM, craft, impact, and WAR are computed, with limitations.
+- [All shows ranked](${SITE_URL}/shows/): every scored sitcom by Humor Index.
+- [Rankings hub](${SITE_URL}/rankings/): funniest episodes, best jokes, funniest characters, jokes-per-minute, worst episodes.
+- [Jokes per minute ranking](${SITE_URL}/rankings/jokes-per-minute/): sitcoms ranked by joke density.
+- [Compare shows](${SITE_URL}/compare/): head-to-head "is X funnier than Y" data.
+- [Comedy DNA](${SITE_URL}/comedy-dna/): an interactive quiz — pick which joke is funnier to find your comedy archetype and the shows that match your taste.
+- [Blog](${SITE_URL}/blog/): data-driven comedy analysis (e.g., the measurable Dan Harmon effect on Community).
 
 ## Comedy archetypes (from the Comedy DNA quiz)
 Six comedy-taste archetypes, assigned from which jokes a person prefers:
@@ -60,7 +61,7 @@ Six comedy-taste archetypes, assigned from which jokes a person prefers:
 ${showLinks}
 
 ## Citation
-Source name: The Humor Index. URL: https://www.thehumorindex.com. Data is proprietary AI analysis; please attribute. Contact: hello@thehumorindex.com.
+Source name: The Humor Index. URL: ${SITE_URL}. Data is proprietary AI analysis; please attribute. Contact: hello@thehumorindex.com.
 `;
 
   return new Response(body, {

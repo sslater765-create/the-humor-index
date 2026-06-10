@@ -3,6 +3,7 @@ import { getAllShows } from '@/lib/data';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
+import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
@@ -16,7 +17,7 @@ export const metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://www.thehumorindex.com/rankings/jokes-per-minute/',
+    canonical: `${SITE_URL}/rankings/jokes-per-minute/`,
   },
 };
 
@@ -37,7 +38,7 @@ export default async function JokesPerMinutePage() {
         '@type': 'ListItem',
         position: i + 1,
         name: `${s.name} — ${(s.avg_jpm || 0).toFixed(2)} jokes per minute`,
-        url: `https://www.thehumorindex.com/shows/${s.slug}`,
+        url: `${SITE_URL}/shows/${s.slug}`,
       })),
     },
     {

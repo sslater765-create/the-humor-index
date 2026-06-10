@@ -1,10 +1,12 @@
 import PageHeader from '@/components/layout/PageHeader';
+import { SITE_URL } from '@/lib/site';
+import { leaderboardSentence } from '@/lib/siteStats';
 
 export const metadata = {
   title: 'Frequently Asked Questions About Comedy Scoring',
   description: 'Frequently asked questions about The Humor Index: how it works, what AI we use, and why your favorite show scored the way it did.',
   alternates: {
-    canonical: 'https://www.thehumorindex.com/faq/',
+    canonical: `${SITE_URL}/faq/`,
   },
   openGraph: {
     title: 'FAQ — The Humor Index',
@@ -26,7 +28,9 @@ const faqs = [
   },
   {
     q: 'Which show currently ranks #1?',
-    a: `30 Rock sits at the top of the Humor Index at 84.4, with Arrested Development (82.0) close behind. Then a tight chasing pack — Veep (80.0), The Simpsons (79.4), The Office (79.3), It's Always Sunny in Philadelphia (79.3), Flight of the Conchords (78.3), Community (77.9), Parks and Recreation (77.7), Taxi (77.3), Schitt's Creek (77.3), and Seinfeld (77.0) — whose 95% confidence intervals overlap heavily, so small per-episode differences move the order. Below them sit The Larry Sanders Show (76.5), The Fresh Prince of Bel-Air (76.0), Friends (73.3), and Freaks and Geeks (70.4). We've fully scored 16 shows so far — about 2,230 episodes and 126,000+ jokes — with more in the queue.`,
+    // Answer is generated from live data at build time (see FAQPage) so it can
+    // never go stale; this is just a fallback.
+    a: 'See the live leaderboard on the rankings page.',
   },
   {
     q: 'Do you penalize multi-camera shows or laugh tracks?',
@@ -74,7 +78,12 @@ const faqs = [
   },
 ];
 
-export default function FAQPage() {
+export default async function FAQPage() {
+  // Generate the ranking answer from live data so it never goes stale.
+  const rankAnswer = await leaderboardSentence();
+  const resolvedFaqs = faqs.map(faq =>
+    faq.q === 'Which show currently ranks #1?' ? { ...faq, a: rankAnswer } : faq
+  );
   return (
     <div>
       <script
@@ -82,7 +91,7 @@ export default function FAQPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
-          mainEntity: faqs.map(faq => ({
+          mainEntity: resolvedFaqs.map(faq => ({
             '@type': 'Question',
             name: faq.q,
             acceptedAnswer: {
@@ -100,7 +109,7 @@ export default function FAQPage() {
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
         <div className="space-y-8">
-          {faqs.map((faq, i) => (
+          {resolvedFaqs.map((faq, i) => (
             <div key={i} className="border-b border-brand-border pb-8 last:border-0">
               <h2 className="text-base font-medium text-brand-text-primary mb-3">
                 {faq.q}

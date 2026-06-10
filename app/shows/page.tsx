@@ -3,13 +3,14 @@ import Link from 'next/link';
 import { getAllShows } from '@/lib/data';
 import FormatBadge from '@/components/ui/FormatBadge';
 import ShowsGrid from './ShowsGrid';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata = {
   title: 'Every Sitcom Ranked by Humor Index Score',
   description:
     'Every sitcom we’ve scored, ranked by Humor Index — The Office, Seinfeld, Parks and Rec, Community, Arrested Development and more. AI-analyzed joke density, craft, and impact for each show.',
   alternates: {
-    canonical: 'https://www.thehumorindex.com/shows/',
+    canonical: `${SITE_URL}/shows/`,
   },
   openGraph: {
     title: 'Every Sitcom Ranked by Humor Index Score',
