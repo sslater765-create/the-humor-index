@@ -34,9 +34,9 @@ export default async function AgreePage() {
           Do you agree with the Index?
         </h1>
         <p className="text-sm text-brand-text-secondary max-w-xl mx-auto leading-relaxed">
-          The Humor Index is one AI’s aesthetic, applied systematically. So here’s the honest test:
-          two real jokes, blind. You pick the funnier one — then we reveal which one the algorithm
-          scored higher. See how often your gut matches the machine.
+          Two real jokes, both fully credited — character, show, and the score our pipeline gave
+          them. You pick the funnier one. We tell you whether your gut matched the machine, and keep
+          the tally honest.
         </p>
       </header>
 
