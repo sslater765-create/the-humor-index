@@ -16,7 +16,7 @@ export default function PrivacyPage() {
       <PageHeader
         label="Legal"
         title="Privacy Policy"
-        subtitle="Last updated: April 18, 2026"
+        subtitle="Last updated: June 9, 2026"
       />
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
@@ -36,9 +36,9 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-base font-medium text-brand-text-primary mb-3">Data We Collect</h2>
             <p className="mb-2">
-              The Humor Index is a read-only analytics site. We do not offer user accounts, and we do not collect personal
-              information directly from you through forms, sign-ups, or registrations on this site. We do, however, collect
-              certain technical information automatically when you visit:
+              The Humor Index is primarily a read-only analytics site. You can browse, use the blind test, and build a taste
+              profile without any account — that activity is stored only in your browser. We collect certain technical
+              information automatically when you visit:
             </p>
             <ul className="list-disc ml-5 space-y-1">
               <li>
@@ -63,6 +63,18 @@ export default function PrivacyPage() {
                   Google Analytics Opt-out Browser Add-on
                 </a>.
               </li>
+              <li>
+                <strong className="text-brand-text-primary">Account information (optional):</strong> If you choose to create
+                an account, we collect your email address (for magic-link sign-in) or the basic profile your provider returns
+                if you sign in with Google (name and email). We also store the activity you save while signed in — your show
+                ratings, watchlist, and blind-test (&quot;Agree?&quot;) tally — so it syncs across your devices. You can use the
+                entire site without an account; accounts are entirely opt-in.
+              </li>
+              <li>
+                <strong className="text-brand-text-primary">Local browser storage:</strong> When you rate shows, build a
+                watchlist, or play the blind test without an account, that data is stored only in your browser&apos;s local
+                storage on your device and is not sent to us. Clearing your browser data removes it.
+              </li>
             </ul>
           </section>
 
@@ -71,13 +83,16 @@ export default function PrivacyPage() {
             <p className="mb-2">We process the information described above to:</p>
             <ul className="list-disc ml-5 space-y-1">
               <li>Deliver and maintain the website (render pages, serve static assets);</li>
+              <li>Authenticate you and provide account features, including syncing your ratings, watchlist, and blind-test tally across your devices;</li>
               <li>Identify usage trends and improve the Services;</li>
               <li>Protect the Services from abuse, fraud, or security incidents;</li>
               <li>Comply with legal obligations.</li>
             </ul>
             <p className="mt-2">
               Under the EU/UK GDPR, our lawful bases for processing are <em>legitimate interests</em> (to understand usage
-              trends and protect the Services) and, where applicable, <em>legal obligation</em>.
+              trends and protect the Services), <em>performance of a contract</em> and <em>consent</em> (where you create an
+              account and ask us to store your saved activity), and, where applicable, <em>legal obligation</em>. You may
+              withdraw consent at any time by deleting your account.
             </p>
           </section>
 
@@ -100,6 +115,14 @@ export default function PrivacyPage() {
               <li><strong className="text-brand-text-primary">Data Analytics Services</strong> (Google Analytics, Vercel Analytics) — to measure aggregated usage and improve the Site. Google Analytics is operated by Google LLC with data processed in the United States; see Google&apos;s{' '}
                 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-gold hover:underline">Privacy Policy</a>.
               </li>
+              <li><strong className="text-brand-text-primary">Authentication &amp; Database</strong> (Supabase) — if you create an account, we use Supabase to authenticate you and store your account data (email, ratings, watchlist, blind-test tally). See Supabase&apos;s{' '}
+                <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-gold hover:underline">Privacy Policy</a>.
+              </li>
+              <li><strong className="text-brand-text-primary">Transactional Email</strong> (Resend) — to send magic-link sign-in emails to the address you provide. See Resend&apos;s{' '}
+                <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-brand-gold hover:underline">Privacy Policy</a>.
+              </li>
+              <li><strong className="text-brand-text-primary">Sign-in with Google</strong> (Google LLC) — if you choose Google sign-in, Google shares your name and email with us to create your account.
+              </li>
             </ul>
             <p className="mt-2">
               We may also disclose information when legally required, in connection with a business transfer, or to protect
@@ -119,9 +142,15 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-base font-medium text-brand-text-primary mb-3">Data Retention</h2>
-            <p>
+            <p className="mb-2">
               We retain technical log and usage data only as long as necessary for the purposes described above, and in any
               case no longer than 12 months, unless a longer retention period is required by law.
+            </p>
+            <p>
+              If you have an account, we retain your account data until you delete it. You can permanently delete your account
+              and all associated data at any time from your{' '}
+              <a href="/account" className="text-brand-gold hover:underline">account page</a>; deletion is immediate and
+              irreversible.
             </p>
           </section>
 
@@ -147,7 +176,11 @@ export default function PrivacyPage() {
               <li>Lodge a complaint with your local data protection authority.</li>
             </ul>
             <p className="mt-2">
-              To exercise any of these rights, email us at{' '}
+              If you have an account, you can access your saved data on your{' '}
+              <a href="/my" className="text-brand-gold hover:underline">My Index</a> page and permanently delete your account
+              and all associated data yourself from your{' '}
+              <a href="/account" className="text-brand-gold hover:underline">account page</a> at any time. To exercise any
+              other right, email us at{' '}
               <a href="mailto:privacy@thehumorindex.com" className="text-brand-gold hover:underline">
                 privacy@thehumorindex.com
               </a>

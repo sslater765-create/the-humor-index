@@ -178,6 +178,21 @@ export async function saveWatch(uid: string | null, slug: string, onList: boolea
   }
 }
 
+/** Wipe the device-local profile cache (used after account deletion). */
+export function clearLocalProfile(): void {
+  try {
+    localStorage.removeItem(R_KEY);
+    localStorage.removeItem(W_KEY);
+    localStorage.removeItem(A_KEY);
+    for (let i = localStorage.length - 1; i >= 0; i--) {
+      const k = localStorage.key(i);
+      if (k && k.startsWith('humor_index_agree_merged_')) localStorage.removeItem(k);
+    }
+  } catch {
+    /* ignore */
+  }
+}
+
 /** Persist the agree tally after a pick. */
 export async function saveAgree(uid: string | null, stats: AgreeStats): Promise<void> {
   lsSet(A_KEY, stats);

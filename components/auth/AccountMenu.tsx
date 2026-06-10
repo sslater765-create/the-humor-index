@@ -60,6 +60,9 @@ export default function AccountMenu({ mobile = false }: { mobile?: boolean }) {
         <Link href="/my" className="block px-3 py-3 rounded-lg text-base font-medium text-brand-text-primary active:bg-brand-surface">
           My Index
         </Link>
+        <Link href="/account" className="block px-3 py-3 rounded-lg text-base font-medium text-brand-text-primary active:bg-brand-surface">
+          Account
+        </Link>
         <button onClick={signOut} className="block w-full text-left px-3 py-3 rounded-lg text-base font-medium text-brand-text-secondary active:bg-brand-surface">
           Sign out
         </button>
@@ -85,6 +88,9 @@ export default function AccountMenu({ mobile = false }: { mobile?: boolean }) {
             <p className="px-3 py-2 text-[11px] text-brand-text-muted truncate border-b border-brand-border">{email}</p>
             <Link href="/my" onClick={() => setOpen(false)} className="block px-3 py-2.5 text-sm text-brand-text-primary hover:bg-brand-card">
               My Index
+            </Link>
+            <Link href="/account" onClick={() => setOpen(false)} className="block px-3 py-2.5 text-sm text-brand-text-primary hover:bg-brand-card">
+              Account
             </Link>
             <button onClick={signOut} className="block w-full text-left px-3 py-2.5 text-sm text-brand-text-secondary hover:bg-brand-card">
               Sign out
