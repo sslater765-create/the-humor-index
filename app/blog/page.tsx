@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'chappelles-show-launch',
+    title: "Chappelle's Show Just Debuted at #1 \u2014 and It Barely Tells a Joke a Minute",
+    description: "All 27 episodes of Chappelle's Show, our first sketch show \u2014 1,148 jokes. It enters tied for #1 at 85.6 with the highest per-joke craft and impact on the board, despite one of the lowest joke densities we've measured. Dave Chappelle owns the most lopsided WAR chart we've published.",
+    date: '2026-06-10',
+    category: 'Show Launch',
+    readTime: '7 min read',
+    stat: "85.6",
+    statLabel: "Debuts tied for #1",
+  },
+  {
     slug: 'the-simpsons-all-20-seasons',
     title: "We Scored All 20 Seasons of The Simpsons. The Golden Age Is Real \u2014 and the Decline Is Smaller Than You Think.",
     description: "All 441 episodes and 28,170 jokes, scored. The golden age is statistically real \u2014 Season 6 peaks at 81.5 \u2014 but the post-classic decline is gentler than the memes: seasons 11\u201320 never drop below 75, and the single highest-scoring episode is from Season 16.",

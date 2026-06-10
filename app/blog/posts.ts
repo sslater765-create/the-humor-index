@@ -5,6 +5,61 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'chappelles-show-launch': {
+    title: "Chappelle's Show Just Debuted at #1 \u2014 and It Barely Tells a Joke a Minute",
+    description: "We scored all 27 episodes of Chappelle's Show \u2014 our first sketch show \u2014 1,148 jokes. It enters tied for #1 at 85.6 with the highest per-joke craft and impact on the board, despite one of the lowest joke densities we've measured. Scored by character, Dave Chappelle owns the most lopsided WAR chart we've published.",
+    date: '2026-06-10',
+    category: 'Show Launch',
+    content: `
+![Chappelle's Show — Humor Index 85.6](/blog/chappelles-show-hero.png)
+
+Chappelle's Show is the first **sketch** show on the Humor Index. We scored all 27 episodes — Seasons 1, 2, and the three "Lost Episodes" — 1,148 jokes in all. It debuts at a Humor Index of **85.6**, the single highest number on our entire board. A sketch show, with no continuing story and no recurring sitcom cast, just walked in and outscored every sitcom we have ever measured.
+
+That deserves an asterisk, and we'll give it one. But first, the strange part.
+
+## The least joke-dense show on the board is also the best
+
+Here's the paradox. Chappelle's Show fires roughly **2.2 jokes per minute** — one of the lowest rates we've ever recorded, because sketches are long runners. A single Rick James bit unspools for ten minutes off one premise. By raw volume, this show looks lazy.
+
+By quality, it's untouchable. Its craft-per-joke (**7.18**) and impact-per-joke (**7.22**) are the **highest of any show on the Humor Index** — sitcom or otherwise. And our formula weights quality far more heavily than volume, because a show that lands almost every swing is rarer and harder than one that throws a hundred and connects on half.
+
+We saw the exact same shape last week with Freaks and Geeks: low joke density, high craft. But F&G's quality, while strong, wasn't high enough to overcome its restraint, so it landed near the bottom. Chappelle's Show is the inversion. Its hit rate is so absurd that the low volume stops mattering. Same curve, opposite end of the leaderboard.
+
+## The asterisk: it's a tie at the top, not a runaway
+
+We bootstrapped a 95% confidence interval on the show score: **84.6 to 88.5.** The current #1, 30 Rock, sits at 84.4 — inside that band. So the honest read isn't "Chappelle's Show is the funniest show ever made." It's "Chappelle's Show is in a statistical dead heat at the very top of an elite tier." The decimal places say #1; the error bars say *tied for #1.* We'll take it either way.
+
+## We scored it by character — and one man owns the board
+
+![Comedy WAR by character](/blog/chappelles-show-characters.png)
+
+Most of our shows have a cast. This one has Dave Chappelle and a hundred costumes. We made a deliberate call to score it **by character** rather than collapsing everything into "Dave Chappelle" — so Tyrone Biggums, Clayton Bigsby, Black Bush, and the rest each stand as their own entry.
+
+The result is the most lopsided WAR chart we've ever published. **Dave Chappelle, as himself and host, posts a Comedy WAR of 153** — more than three times the next name. And the next name is *also* him: Tyrone Biggums, the crack-addled everyman, at 41. Black Bush, Rick James, Lil' Jon, Prince, Clayton Bigsby — almost every entry on that board is the same man in different makeup. The co-stars who carried real weight are Charlie Murphy (whose "True Hollywood Stories" are some of the show's sharpest material) and Paul Mooney. But make no mistake: the data agrees with the credits. This is a one-man show, and the one man is operating at a level the format had never seen.
+
+## The episodes that scored highest
+
+![Top-scoring episodes](/blog/chappelles-show-top-episodes.png)
+
+The single best-scoring episode in the run is **"The Wayne Brady Show" (S2) — a 97.0**, one of the highest episode scores anywhere on the site, powered by the infamous "Is Wayne Brady gonna have to choke a—?" runner that detonated a wholesome TV image in real time. Right behind it: the **Prince** edition of Charlie Murphy's True Hollywood Stories (93.9), **Making da Band** (92.6), and **Black Bush** (92.1). Season 2 is a murderer's row.
+
+A sampler of the cleanest elite-tier lines, by the numbers our model loved most:
+
+- **Prince: "Game… blouses."** — three words, and an entire sketch's worth of impact.
+- **Prince again: "Why don't you purify yourself in the waters of Lake Minnetonka."**
+- **Tyrone Biggums: "Let he who is without sin throweth the first rock — and I shalt smoketh it."**
+- **Ashy Larry: "White people love Wayne Brady because he makes Bryant Gumbel look like Malcolm X."**
+- **Wu-Tang Financial: "You need to diversify your bonds."** — investment advice, delivered by the Wu.
+
+## A note on what we measured
+
+Chappelle's Show is the most provocative material on the Humor Index by a distance — it posts the highest "dark / subversive" share of any show we've scored. Our model rates joke *construction* — setup, economy, escalation, payoff — not subject matter, and a high score is a measure of craft, not an endorsement of any individual bit. Much of the show's highest-rated material is racial satire built to make its target squirm; that was the entire design, and the craft of the design is what the numbers reflect.
+
+## The verdict
+
+One comedian. A hundred characters. Twenty-seven episodes that almost never reach for a cheap joke and almost never miss the expensive ones. Chappelle's Show enters the Humor Index tied for #1 at **85.6**, with the best per-joke craft and impact we have ever recorded — proof, one more time, that the funniest thing on television is rarely the one telling the most jokes.
+`,
+  },
   'the-simpsons-all-20-seasons': {
     title: "We Scored All 20 Seasons of The Simpsons. The Golden Age Is Real \u2014 and the Decline Is Smaller Than You Think.",
     description: "All 441 episodes and 28,170 jokes, scored. The golden age is statistically real \u2014 Season 6 peaks at 81.5 \u2014 but the post-classic decline is gentler than the memes: seasons 11\u201320 never drop below 75, and the single highest-scoring episode is from Season 16.",
