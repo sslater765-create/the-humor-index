@@ -5,6 +5,118 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'the-simpsons-all-20-seasons': {
+    title: "We Scored All 20 Seasons of The Simpsons. The Golden Age Is Real \u2014 and the Decline Is Smaller Than You Think.",
+    description: "All 441 episodes and 28,170 jokes, scored. The golden age is statistically real \u2014 Season 6 peaks at 81.5 \u2014 but the post-classic decline is gentler than the memes: seasons 11\u201320 never drop below 75, and the single highest-scoring episode is from Season 16.",
+    date: '2026-06-09',
+    category: 'Analysis',
+    content: `
+![The Simpsons — Humor Index 79.4](/blog/simpsons-hero.png)
+
+We just finished the biggest single ingest in Humor Index history: **all 20 seasons of *The Simpsons*. 441 episodes. 28,170 individual jokes**, each one read, rated for craft and impact, and folded into one number.
+
+That number is **79.4** — good enough to sit near the very top of our leaderboard, where it has been since the day we added it. But the headline score was never the interesting part. The interesting part is what happens when you line up two decades of the show season by season and let the data settle a thirty-year-old argument: *when, exactly, did The Simpsons fall off?*
+
+The short version: it didn't fall off a cliff. It stepped down a few stairs and then stood there, still funny, for another decade.
+
+## The golden age isn't nostalgia. It's in the numbers.
+
+![Humor Index by season, S1–20](/blog/simpsons-season-curve.png)
+
+Fans have argued for years that seasons four through eight are the show's peak. The data agrees, almost to the season. The Humor Index climbs steadily out of the rougher first three years, breaks 80 in **Season 4 (80.5)**, and tops out at **Season 6 — 81.5**, the highest any season scores across the entire run.
+
+It's not a coincidence that this window holds the densest concentration of all-timers: *Treehouse of Horror V*, *Who Shot Mr. Burns?*, *Homer's Enemy*, *You Only Move Twice*. When craft and impact are both running this hot for this long, you get a golden age. Ours is a translucent gold band on the chart above, and it earns its color.
+
+## The "Zombie Simpsons" decline is real — and gentler than the memes claim.
+
+Here's where the data pushes back on the internet.
+
+The drop is real. After Season 8 the line bends down, and it bottoms out at the show's true floor: **Season 10 — 75.4**. If you stopped reading the chart there, you'd have your tidy "it died at the millennium" narrative.
+
+But the line doesn't keep falling. It *recovers*. Seasons 11 through 20 settle into a remarkably stable band — never dropping below 75, drifting back up toward **78 around Seasons 13–15**, and closing out Season 20 at a perfectly respectable 77.5. Across ten "post-classic" seasons, the show's worst year is still funnier than the average sitcom's best.
+
+That's the part the "Zombie Simpsons" crowd skips. The show stopped being *transcendent*. It never stopped being *good*.
+
+## The plot twist: the single best episode is from Season 16.
+
+![Top-scoring episodes](/blog/simpsons-top-episodes.png)
+
+If the golden age were the whole story, every top-scoring episode would come from the mid-90s. It doesn't.
+
+The highest-scoring single episode in the entire 441-episode run is **"The Father, the Son, and the Holy Guest Star" — Season 16, a 93.2.** Right behind the classics on our episode board sits **"Tales From the Public Domain" (Season 13, 92.5).** Two of our top three episodes aired *after* the supposed death of the show.
+
+It turns out a great Simpsons episode can show up in any era. The classics just clustered.
+
+## The jokes that scored highest
+
+The elite tier skews exactly where you'd expect — the mid-90s, when the writers' room was operating at a level television rarely reaches:
+
+- **Marge, "You'll always have them to remind you of the time when you were the whole world's special little guy."** (S5) — our single highest-rated joke in the entire series: craft 9.4, impact 9.5.
+- **Skinner: "Aurora borealis? At this time of year, at this time of day, in this part of the country, localized entirely within your kitchen?"** (S7)
+- **Ralph: "Me fail English? That's unpossible."** (S6)
+- **Homer: "To alcohol! The cause of — and solution to — all of life's problems."** (S8)
+- **The cardiac doctor: "You've had what we call a cardiac episode. Worst. Episode. Ever."** (S12) — proof the show could still land a perfect meta-joke a decade in.
+
+## The verdict
+
+Twenty seasons. 441 episodes. 28,170 jokes. One Humor Index of **79.4.**
+
+The receipts confirm the legend — Season 6 is the peak, the mid-90s are untouchable — but they complicate the obituary. The Simpsons didn't collapse. It came down off an impossible high and then did something almost as hard: it stayed funny for another ten years.
+`,
+  },
+  'freaks-and-geeks-launch': {
+    title: "Freaks and Geeks Scored a 70.4. Here's Why One of the Best Shows We've Measured Ranks Near the Bottom.",
+    description: "All 18 episodes, 1,231 jokes. Freaks and Geeks lands at 70.4 \u2014 one of the lowest on the board \u2014 because it's among the least joke-dense shows we've measured. But its highest-rated moments are gut-punches, not laughs: the show where funniest and saddest are the same scene.",
+    date: '2026-06-09',
+    category: 'Show Launch',
+    content: `
+![Freaks and Geeks — Humor Index 70.4](/blog/freaks-and-geeks-hero.png)
+
+*Freaks and Geeks* lasted **18 episodes**. One season, canceled in 2000, beloved forever. We ran every one of those episodes through the Humor Index — **1,231 jokes** — and the show landed a **70.4**, one of the lowest scores on our entire leaderboard.
+
+If you love this show, that number probably feels wrong. It isn't. It's just measuring something *Freaks and Geeks* was never trying to win.
+
+## The Humor Index rewards joke machines. This isn't one.
+
+![Volume versus craft](/blog/freaks-and-geeks-craft-vs-volume.png)
+
+The Humor Index is built from three things: how *often* a show goes for a joke, how well-*crafted* those jokes are, and how hard they *land*. Most great comedies are dense — they fire a punchline every fifteen or twenty seconds.
+
+*Freaks and Geeks* fires one roughly **every thirty-two seconds.** Its joke density — 1.85 jokes per minute — is among the lowest of any show we've scored, less than half the rate of a vintage *Simpsons* episode. This is a show that will happily let a scene breathe for a full minute of awkward silence in a high-school hallway because the silence *is* the point.
+
+So it gives up a lot of ground on volume. What it keeps is everything else: a craft-per-joke of **6.63** and an impact-per-joke of **6.45**, both well above the league floor. When Paul Feig and Judd Apatow's writers decided to go for it, they connected. They just didn't go for it very often — and the index, which counts swings as well as hits, marks them down for the restraint.
+
+That's the whole paradox in one line: **the lowest-volume show on the board is also one of the highest-quality, and the metric can only see one of those things at a time.**
+
+## The strangest stat: its funniest moments are its saddest.
+
+Here's what really separates *Freaks and Geeks* from everything else we've scored.
+
+Pull up the highest-rated "jokes" in the series and almost none of them are jokes. The single best-scoring beat in all 18 episodes is **Daniel's confession about being labeled "Track 3 — the dumb kids" at age eleven** (craft 8.8, impact 9.0). Right behind it: **Lindsay's grandmother on her deathbed admitting there's nothing waiting on the other side — "No. There's nothing."** (craft 8.6, impact 9.0).
+
+These are gut-punches. Our model rated them as the show's comic high points because in *Freaks and Geeks* the line between the funniest moment and the most devastating one barely exists. The humor and the heartbreak are the same scene. No other show on the leaderboard does this.
+
+When it *does* play things straight-funny, it's lethally dry:
+
+- **Ken: "I had my appendix out, so, you know, I've been there."** (craft 8.4, impact 8.8) — the best deadpan in the series.
+- **Bill: "What are you gonna do, call my mom?"** (craft 8.4) — the geek who accidentally lands the most awkward threat possible on the gym teacher dating his mother.
+- **Bill again: "Sam, our bodies are merely a shell which conceal our heavenly souls. Try not to get too uptight. Auf wiedersehen."**
+
+## Who actually carries it
+
+![Who carries the show](/blog/freaks-and-geeks-characters.png)
+
+By raw volume, **Sam** narrowly leads the show with 177 attributed jokes. But the craft MVP of the geek trio is **Bill** — 167 jokes at a 6.75 craft rating, the highest of the three, which tracks with him becoming the show's breakout cult favorite.
+
+The quieter story is in the supporting ranks. The two characters who punch hardest per line aren't kids at all — **Mr. Rosso**, the well-meaning guidance counselor (craft 6.80), and **Harold Weir**, the doom-saying dad (craft 6.73), land the heaviest hits in the cast. In a show about teenagers, the adults get some of the best material.
+
+## The verdict
+
+A 70.4 makes *Freaks and Geeks* look like a weak comedy. It's the opposite. It's the show our index is *worst* at measuring — and that's the compliment. The Humor Index is excellent at finding the joke machines. *Freaks and Geeks* was never a machine. It was 18 episodes that valued one true, mortifying, perfect moment over a hundred easy laughs, and the math simply can't reward that.
+
+Some shows you score. This one you just rewatch.
+`,
+  },
   'fresh-prince-geoffrey-butler': {
     title: "The Funniest Person in the Fresh Prince Mansion Is the Butler",
     description: "We scored all 148 episodes of The Fresh Prince of Bel-Air. Will Smith leads the cast in total Comedy WAR \u2014 but only because he says four times as many jokes as anyone else. Per joke, the funniest Banks-household voice is Geoffrey, the butler with 14 lines an episode and the sharpest one in the room.",

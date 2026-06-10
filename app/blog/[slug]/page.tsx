@@ -115,6 +115,22 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             );
           }
 
+          // Standalone image: a paragraph that is just ![alt](src)
+          const imgMatch = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+          if (imgMatch) {
+            return (
+              <figure key={i} className="my-6">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={imgMatch[2]}
+                  alt={imgMatch[1]}
+                  className="w-full rounded-xl border border-brand-border"
+                  loading="lazy"
+                />
+              </figure>
+            );
+          }
+
           // Inline formatting: bold, italic, links
           const formatInline = (text: string) => {
             return text.split(/(\*\*[^*]+\*\*)/).map((part, j) => {

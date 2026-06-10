@@ -32,6 +32,26 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'the-simpsons-all-20-seasons',
+    title: "We Scored All 20 Seasons of The Simpsons. The Golden Age Is Real \u2014 and the Decline Is Smaller Than You Think.",
+    description: "All 441 episodes and 28,170 jokes, scored. The golden age is statistically real \u2014 Season 6 peaks at 81.5 \u2014 but the post-classic decline is gentler than the memes: seasons 11\u201320 never drop below 75, and the single highest-scoring episode is from Season 16.",
+    date: '2026-06-09',
+    category: 'Analysis',
+    readTime: '7 min read',
+    stat: "81.5",
+    statLabel: "Season 6 \u2014 the peak season",
+  },
+  {
+    slug: 'freaks-and-geeks-launch',
+    title: "Freaks and Geeks Scored a 70.4. Here's Why One of the Best Shows We've Measured Ranks Near the Bottom.",
+    description: "All 18 episodes, 1,231 jokes. Freaks and Geeks lands at 70.4 \u2014 one of the lowest on the board \u2014 because it's among the least joke-dense shows we've measured. But its highest-rated moments are gut-punches, not laughs: the show where funniest and saddest are the same scene.",
+    date: '2026-06-09',
+    category: 'Show Launch',
+    readTime: '6 min read',
+    stat: "1.85",
+    statLabel: "Jokes per minute (among the lowest)",
+  },
+  {
     slug: 'fresh-prince-geoffrey-butler',
     title: "The Funniest Person in the Fresh Prince Mansion Is the Butler",
     description: "We scored all 148 episodes of The Fresh Prince of Bel-Air. Will Smith leads the cast in total Comedy WAR \u2014 but only because he says four times as many jokes as anyone else. Per joke, the funniest Banks-household voice is Geoffrey, the butler with 14 lines an episode and the sharpest one in the room.",
