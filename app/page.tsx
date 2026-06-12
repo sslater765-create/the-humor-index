@@ -1,3 +1,4 @@
+import NewsletterCTA from '@/components/NewsletterCTA';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllShows, getEpisodes } from '@/lib/data';
@@ -111,6 +112,16 @@ export default async function HomePage() {
             <LeaderboardClient shows={shows.filter(s => s.humor_index > 0)} />
           </div>
         </div>
+      </section>
+
+      {/* Newsletter capture — Phase 1 subscriber rail */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-12">
+        <NewsletterCTA
+          variant="banner"
+          source="homepage"
+          headline="Get the 50 funniest episodes of all time — ranked."
+          sub="The weekly Humor Index: a new show breakdown and ranking every Friday. Free, no spam."
+        />
       </section>
 
       {/* Comedy DNA teaser — flagship interactive, magazine cover treatment */}
