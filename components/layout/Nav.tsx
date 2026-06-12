@@ -14,6 +14,7 @@ const links = [
   { href: '/my', label: 'My Index' },
   { href: '/blog', label: 'Blog' },
   { href: '/methodology', label: 'Methodology' },
+  { href: '/request', label: 'Request' },
 ];
 
 export default function Nav() {
