@@ -11,6 +11,7 @@ const FORMAT_LABELS: Record<'all' | ShowFormat, string> = {
   multi_camera_sweetened: 'Multi-cam (laugh track)',
   hybrid: 'Hybrid',
   animation: 'Animation',
+  sketch: 'Sketch',
 };
 
 export default function ShowsGrid({ shows }: { shows: ShowScore[] }) {
