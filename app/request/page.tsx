@@ -37,7 +37,7 @@ export default async function RequestPage() {
         </div>
       </section>
 
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-10 pb-2">
         <RequestClient completed={completed} upNext={upNext} />
       </div>
     </div>
