@@ -1,3 +1,4 @@
+import WhereToWatch from '@/components/WhereToWatch';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -263,6 +264,11 @@ export default async function ShowPage({ params }: { params: { slug: string } })
             an impact score of {show.avg_impact.toFixed(1)}.
           </p>
         )}
+      </div>
+
+      {/* Where to watch — affiliate (Phase 1) */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <WhereToWatch show={show.name} />
       </div>
 
       {/* Newsletter CTA */}
