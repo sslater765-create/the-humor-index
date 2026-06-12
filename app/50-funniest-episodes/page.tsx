@@ -14,7 +14,7 @@ export async function generateMetadata() {
   const canonical = `${SITE_URL}/50-funniest-episodes/`;
   const ogImg = `/api/og?title=${encodeURIComponent('50 Funniest Episodes of All Time')}&score=${encodeURIComponent('Ranked')}&subtitle=${encodeURIComponent('Every joke scored')}`;
   return {
-    title: `${TITLE} | The Humor Index`,
+    title: TITLE,
     description: DESC,
     alternates: { canonical },
     openGraph: { title: TITLE, description: DESC, images: [ogImg] },
