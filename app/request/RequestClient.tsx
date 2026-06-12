@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 
 const SUGGESTED_SHOWS = [
-  { name: 'Curb Your Enthusiasm', slug: 'curb-your-enthusiasm' },
   { name: 'Frasier', slug: 'frasier' },
   { name: 'How I Met Your Mother', slug: 'how-i-met-your-mother' },
   { name: 'Ted Lasso', slug: 'ted-lasso' },

@@ -6,6 +6,7 @@ import PageHeader from '@/components/layout/PageHeader';
 import BestJokeRotator from "@/components/ui/BestJokeRotator";
 import topJokes from "@/public/data/top-jokes.json";
 import { SITE_URL } from '@/lib/site';
+import { charImageSrc } from '@/lib/charImage';
 export const dynamic = 'force-static';
 
 export const metadata = {
@@ -330,7 +331,7 @@ export default async function RankingsPage() {
                   {char.profilePath ? (
                     <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 bg-brand-surface ring-1 ring-brand-border">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={`https://image.tmdb.org/t/p/w185${char.profilePath}`} alt={char.actorOrProfile || char.name} className="object-cover w-full h-full" />
+                      <img src={charImageSrc(char.profilePath)} alt={char.actorOrProfile || char.name} className="object-cover w-full h-full" />
                     </div>
                   ) : (
                     <div className="w-14 h-14 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center shrink-0">
@@ -371,7 +372,7 @@ export default async function RankingsPage() {
                   {char.profilePath ? (
                     <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 bg-brand-surface ring-1 ring-brand-border">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={`https://image.tmdb.org/t/p/w185${char.profilePath}`} alt={char.actorOrProfile || char.name} className="object-cover w-full h-full" />
+                      <img src={charImageSrc(char.profilePath)} alt={char.actorOrProfile || char.name} className="object-cover w-full h-full" />
                     </div>
                   ) : (
                     <div className="w-14 h-14 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center shrink-0">

@@ -3,6 +3,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import SocialShare from '@/components/ui/SocialShare';
+import { charImageSrc } from '@/lib/charImage';
 
 export interface CharacterCompareItem {
   name: string;
@@ -183,7 +184,7 @@ function CharacterSlot({
       {character?.profile_path ? (
         <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-brand-surface">
           <Image
-            src={`https://image.tmdb.org/t/p/w185${character.profile_path}`}
+            src={charImageSrc(character.profile_path)!}
             alt={character.name}
             fill
             className="object-cover"

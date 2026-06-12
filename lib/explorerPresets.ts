@@ -173,6 +173,19 @@ export const EXPLORER_CONFIG: Record<string, ExplorerConfig> = {
       { id: 'skip-s1', label: 'Skip Season 1', blurb: 'Drop the rough first season before the writers found the voice', pick: ep => ep.season !== 1 },
     ],
   },
+  // Curb ran S1–S8 (2000–2011), then went on a ~6-year hiatus before the S9
+  // revival (2017); S9–S12 (through 2024) are the post-hiatus return. The data's
+  // twist: the revival is funnier than the original run — S9 is the peak season,
+  // and every late season outscores every early one.
+  'curb-your-enthusiasm': {
+    eras: { 1: 'original', 2: 'original', 3: 'original', 4: 'original', 5: 'original', 6: 'original', 7: 'original', 8: 'original', 9: 'revival', 10: 'revival', 11: 'revival', 12: 'revival' },
+    signature: 'comeback',
+    storyPresets: [
+      { id: 'comeback', label: 'The post-hiatus revival (S9–S12)', blurb: 'The four seasons made after Curb’s six-year break — and they outscore the original run, led by the peak season, S9', pick: ep => ep.season >= 9 },
+      { id: 'original', label: 'The original run (S1–S8)', blurb: 'The 2000–2011 seasons, before the long hiatus', pick: ep => ep.season <= 8 },
+      { id: 'skip-s1', label: 'Skip the rookie season (S1)', blurb: 'Drop the lowest-scoring first season, before the escalation rhythm clicked', pick: ep => ep.season !== 1 },
+    ],
+  },
 };
 
 export function getExplorerConfig(slug: string): ExplorerConfig {

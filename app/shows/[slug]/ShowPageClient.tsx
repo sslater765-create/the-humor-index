@@ -9,6 +9,7 @@ import Link from 'next/link';
 import TabBar from '@/components/ui/TabBar';
 import EpisodeRow from '@/components/ui/EpisodeRow';
 import { formatIndex, scoreToColor } from '@/lib/scoring';
+import { charImageSrc } from '@/lib/charImage';
 import { EpisodeArcChart, SeasonBarChart, CharacterBubbleChart, CharacterBarChart, ComedyDNADonut, HeatmapGrid } from '@/components/charts';
 
 const TABS = [
@@ -348,7 +349,7 @@ export default function ShowPageClient({ show, seasons, episodes: rawEpisodes, c
                   {c.profile_path ? (
                     <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0">
                       <Image
-                        src={`https://image.tmdb.org/t/p/w185${c.profile_path}`}
+                        src={charImageSrc(c.profile_path)!}
                         alt={c.actor || c.name}
                         fill
                         className="object-cover"

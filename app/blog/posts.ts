@@ -5,6 +5,45 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'curb-your-enthusiasm-launch': {
+    title: "Curb Your Enthusiasm Debuts at #4 — and It Escalates Harder Than Anything We've Scored",
+    description: "We scored all 120 episodes of Curb Your Enthusiasm — 6,538 jokes across twelve seasons. It debuts at #4 with a Humor Index of 80.8, the highest-ranked HBO show on the board. And 17.2% of its jokes are escalations — the highest share of any show in our dataset, ahead of the Seinfeld Larry David co-created.",
+    date: '2026-06-11',
+    category: 'Show Launch',
+    content: `
+We scored all 120 episodes of *Curb Your Enthusiasm* — twelve seasons, 6,538 jokes, three consensus passes each — and Larry David's monument to social friction lands at **#4 on the Humor Index with a score of 80.8**. That puts it directly between Arrested Development (82.0) and Veep (79.9), and makes it the highest-ranked HBO comedy we've measured, ahead of its own ancestor, *The Larry Sanders Show* (76.5).
+
+But the rank isn't the interesting number. This one is: **17.2% of every joke Curb tells is an escalation.** That's the highest share of any show in our dataset — a full 3.7 points clear of second-place Seinfeld (13.5%), and Seinfeld is the show Larry David co-created. Curb didn't inherit the escalation engine. It rebuilt it bigger.
+
+## The restraint-then-detonation shape
+
+Curb's joke-per-minute rate is just **1.36** — quiet, by our numbers. That's down in the same low-density tier as Arrested Development and Seinfeld, and a fraction of a saturation show like 30 Rock. Curb is not trying to make you laugh every twelve seconds. It's doing something slower and more dangerous: it sets a tiny social transgression — a "stop and chat," a wrong-sized tip, a pre-emptive "thank you for your service" — and then refuses to let it go until it has metastasized into catastrophe.
+
+Our scoring rubric captures that shape as escalation, and Curb is saturated with it. Pair the escalation share with its cringe-discomfort rate (**10.0%, top-five on the index**) and its character-comedy share (**25.0%, the Larry engine**), and you have a fingerprint that belongs to no other show: low volume, maximum consequence, all of it routed through one man's inability to absorb a minor indignity.
+
+## It got funnier as it went
+
+The conventional wisdom on Curb is that it never declined. Our season curve agrees, and then some — it says the show *improved*. Season 1 scores a **76.1**; Season 4, an **80.0**; and Season 9 — the post-hiatus comeback season — peaks at **85.4**, the funniest run in the whole series by our scoring. Even the final season, Season 12, holds at **83.4**. Every late season outscores every early one. After a roughly six-year break between Season 8 (2011) and Season 9 (2017), the show came back *sharper*. Curb is one of the rare comedies whose arc points up and to the right.
+
+The single funniest episode on our board is **S9E5, "Thank You For Your Service" (93.8)**, followed by **S11E4, "The Watermelon" (92.2)** and **S6E7, "The TiVo Guy" (90.6)**. The weakest is the series premiere, **S1E7 "AAMCO" (66.0)** — before the format fully found the detonation rhythm.
+
+## Leon is the most valuable role player in the cast
+
+Running our WAR model (wins above replacement, our per-character value metric) over the cast, Larry David is — obviously — the engine, at a WAR of **2,306** across all 120 episodes. No surprise. The surprise is who's second.
+
+**Leon Black (J.B. Smoove) posts a WAR of 234 in just 53 episodes.** Jeff Greene (Jeff Garlin) appears in nearly twice as many episodes — 102 — and lands at 196. Per appearance, Leon is more than twice as valuable as anyone else in the supporting cast. He shows up in Season 6 and immediately becomes the show's highest-leverage non-Larry presence. Susie Greene (98), Cheryl (55), Richard Lewis (47), and Marty Funkhouser (22) round out the recurring grid.
+
+## Sidebar: how do you score an improvised show?
+
+*Curb* is the first largely **improvised** comedy on the Humor Index. The cast works from Larry David's seven-page outlines, not a script — the dialogue is invented on the day. That raises a fair question: does a craft rubric built on scripted comedy even apply?
+
+We made a deliberate call: **score Curb exactly as-is, with no methodology change.** Same rubric, same five craft dimensions, same impact weighting. No "improv bonus," no discount.
+
+The result is a small piece of evidence that the rubric measures *structure*, not *stagecraft*. A show with no written punchlines still posts a top-five craft tier and the highest escalation share in the dataset — because escalation, callback, and earned payoff are properties of how a scene is built, and a great improviser builds them in real time just as a great writer builds them on the page. Curb's craft score isn't rewarding Larry David for memorizing lines. There were none to memorize. It's rewarding the architecture of the disaster — and that architecture scores the same whether it was outlined in a writers' room or invented in a parking lot.
+
+Curb is the cleanest test the index has had of whether we're measuring jokes or measuring scripts. The answer, at #4, is jokes.
+`,
+  },
   'chappelles-show-launch': {
     title: "Chappelle's Show Just Debuted at #1 \u2014 and It Barely Tells a Joke a Minute",
     description: "We scored all 27 episodes of Chappelle's Show \u2014 our first sketch show \u2014 1,148 jokes. It enters tied for #1 at 85.6 with the highest per-joke craft and impact on the board, despite one of the lowest joke densities we've measured. Scored by character, Dave Chappelle owns the most lopsided WAR chart we've published.",

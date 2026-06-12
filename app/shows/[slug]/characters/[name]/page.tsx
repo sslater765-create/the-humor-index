@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { getShow, getCharacters, getCharacterJokes } from '@/lib/data';
 import { SHOW_SLUGS } from '@/lib/constants';
 import { JOKE_TYPE_LABELS } from '@/lib/scoring';
+import { charImageSrc } from '@/lib/charImage';
 import ScoreCard from '@/components/ui/ScoreCard';
 import { SITE_URL } from '@/lib/site';
 
@@ -165,7 +166,7 @@ export default async function CharacterPage({
             {character.profile_path && (
               <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-brand-gold/30 shrink-0">
                 <Image
-                  src={`https://image.tmdb.org/t/p/w185${character.profile_path}`}
+                  src={charImageSrc(character.profile_path)!}
                   alt={character.actor || character.name}
                   fill
                   className="object-cover"

@@ -2,6 +2,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { charImageSrc } from '@/lib/charImage';
 
 const LEAGUE_MEDIAN = 6.775;
 const REPLACEMENT = 6.555;
@@ -117,7 +118,7 @@ export default function LeastFunnyClient({ characters }: { characters: BottomCha
               {c.profilePath ? (
                 <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0 bg-brand-surface">
                   <Image
-                    src={`https://image.tmdb.org/t/p/w185${c.profilePath}`}
+                    src={charImageSrc(c.profilePath)!}
                     alt={c.actor || c.fullName}
                     fill
                     className="object-cover"

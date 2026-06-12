@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'curb-your-enthusiasm-launch',
+    title: "Curb Your Enthusiasm Debuts at #4 — and It Escalates Harder Than Anything We've Scored",
+    description: "All 120 episodes, 6,538 jokes. Curb debuts at #4 (80.8), the highest-ranked HBO show on the board — and 17.2% of its jokes are escalations, the highest share of any show we've measured, ahead of the Seinfeld Larry David co-created.",
+    date: '2026-06-11',
+    category: 'Show Launch',
+    readTime: '6 min read',
+    stat: "17.2%",
+    statLabel: "Escalation share — highest on the index",
+  },
+  {
     slug: 'chappelles-show-launch',
     title: "Chappelle's Show Just Debuted at #1 \u2014 and It Barely Tells a Joke a Minute",
     description: "All 27 episodes of Chappelle's Show, our first sketch show \u2014 1,148 jokes. It enters tied for #1 at 85.6 with the highest per-joke craft and impact on the board, despite one of the lowest joke densities we've measured. Dave Chappelle owns the most lopsided WAR chart we've published.",
