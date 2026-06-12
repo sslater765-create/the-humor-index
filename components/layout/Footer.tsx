@@ -149,7 +149,10 @@ export default function Footer() {
           <Link href="/terms" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Terms
           </Link>
-          <a href="mailto:sam@thehumorindex.com" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+          <a href="mailto:press@thehumorindex.com" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            Press
+          </a>
+          <a href="mailto:hello@thehumorindex.com" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Contact
           </a>
         </div>
