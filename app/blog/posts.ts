@@ -5,6 +5,56 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'futurama-launch': {
+    title: "Futurama Out-Scores the Show It Roasted",
+    description: "We scored all 170 episodes of Futurama — 1999 to 2025, 11,042 jokes. It lands at 77.6 (#12 of 19), the Hulu revival held up almost perfectly, and yes, it outranks the Friends episode Lrrr made fun of.",
+    date: '2026-06-14',
+    category: 'Show Launch',
+    content: `
+In a 2002 episode of *Futurama*, an alien warlord named Lrrr settles in to watch an episode of *Friends*, grows visibly confused, and asks the only question that makes sense to him: **"Why does Ross, the largest friend, not simply eat the other five?"**
+
+Twenty-two years later, we scored that joke. It landed a **9.0 for impact and a 9.5 for quotability** — one of the highest-rated lines in the entire series.
+
+Then we scored *Friends* too. It sits at **73.5** on the Humor Index. Futurama — the show that paused, mid-episode, to mock it — comes in at **77.6**. The robot won.
+
+We ran all **170 episodes** of Futurama through our pipeline: every episode from the 1999 Fox debut through the 2025 Hulu revival, **11,042 jokes** in total, each graded three times and averaged for consistency. Here's what the data says.
+
+## The headline number
+
+Futurama scores **77.6**, good for **#12 of the 19 shows** we've scored — slotting between Parks & Recreation (77.8) and Taxi (77.4). A respectable mid-pack finish for a show whose reputation rests as much on heartbreak as on punchlines.
+
+It comes with the caveat we always make for animation: our scoring reads dialogue, so Futurama's dense visual comedy — Bender's sight gags, the background signage, the throwaway alien designs — goes largely uncounted. The 77.6 is a floor, not a ceiling.
+
+## The real story: the revival held up
+
+Here's the finding that surprised us. The Hulu revival (2023–2025) is **statistically indistinguishable** from classic Futurama. Across the original 140-episode run (1999–2013), the show averaged **6.82 craft** and **6.53 impact**. Across the 30 revival episodes, it averaged **6.79 craft** and **6.48 impact** — a 0.03 gap in craft, a 0.05 gap in impact.
+
+That almost never happens. Revivals are where beloved shows go to disappoint — the cast is older, the cultural moment has passed, the magic doesn't reignite. Futurama's revival simply… kept being Futurama. The new seasons gave us "The Numberland Gap" (81.2) and "Destroy Tall Monsters" (80.8), both of which would sit comfortably among the show's all-time best.
+
+## The single best joke is 24 years old
+
+Of all 11,042 jokes, exactly one earned a perfect **10.0 for impact and 10.0 for quotability**: Zapp Brannigan's account of his military strategy in Season 1's "Love's Labours Lost in Space."
+
+> "You see, killbots have a preset kill limit. Knowing their weakness, I sent wave after wave of my own men at them until they reached their limit and shut down."
+
+It's sci-fi-specific absurdity that doubles as a perfect joke about bureaucratic incompetence — the exact register Futurama lives in better than any other show on the index.
+
+## A few more for the highlight reel
+
+- **"Shut up and take my money!"** — Fry. The line that escaped the show entirely and became a permanent piece of internet vocabulary.
+- **"When you do things right, people won't be sure you've done anything at all."** — the God-entity in "Godfellas," the franchise's most quietly profound line.
+- **"I'd always whisper 'except one.' Fry was that one — and I never told him so."** — Bender, in "The Sting."
+- **"She's built like a steak house, but she handles like a bistro."** — Zapp Brannigan, naturally.
+
+## Why this is the Humor Index thesis in one show
+
+170 episodes. Four eras. Twenty-six years. Two networks and a streamer. And across all of it, the comedy never meaningfully dropped — not after the Fox cancellation, not through the direct-to-DVD movies, not in the Comedy Central run, not in the Hulu return.
+
+That's the whole idea behind what we do here: great comedy isn't a lightning strike, it's a craft — and craft is repeatable. Futurama is the proof.
+
+**See the full breakdown — every episode, every season, scored — on the [Futurama show page](/shows/futurama).**
+`,
+  },
   'curb-your-enthusiasm-launch': {
     title: "Curb Your Enthusiasm Debuts at #4 — and It Escalates Harder Than Anything We've Scored",
     description: "We scored all 120 episodes of Curb Your Enthusiasm — 6,538 jokes across twelve seasons. It debuts at #4 with a Humor Index of 80.8, the highest-ranked HBO show on the board. And 17.2% of its jokes are escalations — the highest share of any show in our dataset, ahead of the Seinfeld Larry David co-created.",

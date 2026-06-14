@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'futurama-launch',
+    title: "Futurama Out-Scores the Show It Roasted",
+    description: "All 170 episodes, 1999–2025, 11,042 jokes. Futurama lands at 77.6 (#12 of 19) — and the Hulu revival held up almost perfectly (craft 6.79 vs 6.82). Its most-quoted joke roasts Friends, the show it now outranks.",
+    date: '2026-06-14',
+    category: 'Show Launch',
+    readTime: '4 min read',
+    stat: "77.6",
+    statLabel: "Futurama Humor Index (#12)",
+  },
+  {
     slug: 'curb-your-enthusiasm-launch',
     title: "Curb Your Enthusiasm Debuts at #4 — and It Escalates Harder Than Anything We've Scored",
     description: "All 120 episodes, 6,538 jokes. Curb debuts at #4 (80.8), the highest-ranked HBO show on the board — and 17.2% of its jokes are escalations, the highest share of any show we've measured, ahead of the Seinfeld Larry David co-created.",
