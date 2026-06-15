@@ -25,6 +25,11 @@ export default function HeatmapGrid({ episodes, seasons, showName }: Props) {
     bySeasonMap.get(ep.season)!.push(ep);
   }
 
+  // Size every row to the longest season so cells stay uniform squares,
+  // columns align, and no row wraps (the half-width card can't fit 25
+  // fixed-width cells on one line — flex-wrap was spilling them into stub rows).
+  const maxEps = Math.max(1, ...Array.from(bySeasonMap.values(), eps => eps.length));
+
   return (
     <div className="bg-brand-card border border-brand-border rounded-xl p-5 relative">
       <div className="flex items-start justify-between mb-4">
@@ -41,13 +46,16 @@ export default function HeatmapGrid({ episodes, seasons, showName }: Props) {
           return (
             <div key={s.season} className="flex items-center gap-2">
               <span className="font-mono text-xs text-brand-text-muted w-5 shrink-0">S{s.season}</span>
-              <div className="flex gap-0.5 flex-wrap">
+              <div
+                className="grid gap-0.5 flex-1 min-w-0"
+                style={{ gridTemplateColumns: `repeat(${maxEps}, minmax(0, 1fr))` }}
+              >
                 {eps.map(ep => (
                   <button
                     type="button"
                     key={ep.episode_id}
                     aria-label={`S${ep.season}E${ep.episode_number} ${ep.title}, Humor Index ${formatIndex(ep.humor_index)}`}
-                    className="w-5 h-5 rounded-sm cursor-pointer transition-transform hover:scale-125 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
+                    className="aspect-square w-full rounded-sm cursor-pointer transition-transform hover:scale-125 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
                     style={{ backgroundColor: scoreToColor(ep.humor_index) + 'AA' }}
                     onMouseEnter={e => {
                       const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
