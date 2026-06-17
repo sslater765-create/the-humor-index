@@ -14,6 +14,7 @@ interface NewItem {
 
 // These are the site's content items with their publish dates
 const ALL_ITEMS: NewItem[] = [
+  { href: '/shows/broad-city', label: 'New #1', labelColor: 'text-amber-400', title: 'Broad City — All 50 Episodes (S1–S5)', subtitle: '3,737 jokes analyzed · Debuts at #1 — the new funniest show', date: '2026-06-17' },
   { href: '/shows/chappelles-show', label: 'Just Launched', labelColor: 'text-emerald-400', title: "Chappelle's Show — All 27 Episodes (S1–S3)", subtitle: '1,148 jokes analyzed · First sketch show in the dataset · Debuts at #1 (85.6)', date: '2026-06-10' },
   { href: '/shows/freaks-and-geeks', label: 'Just Launched', labelColor: 'text-emerald-400', title: 'Freaks and Geeks — All 18 Episodes (S1)', subtitle: '1,231 jokes analyzed · First dramedy in the dataset · Debuts at #16', date: '2026-06-09' },
   { href: '/shows/the-simpsons', label: 'Now Complete', labelColor: 'text-emerald-400', title: 'The Simpsons — Full Classic Run S1–S20 (441 Episodes)', subtitle: '28,170 jokes analyzed · Now #4 overall', date: '2026-06-09' },

@@ -13,7 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Use a single rolling "freshness" date for pages that are refreshed every
   // time the underlying data is. Update this when major changes ship.
-  const SITE_REFRESHED = new Date('2026-06-10');
+  const SITE_REFRESHED = new Date('2026-06-17');
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 1.0 },
     { url: url('/shows'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.9 },
