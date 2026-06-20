@@ -4,6 +4,7 @@ import { EpisodeScore } from '@/lib/types';
 import { scoreToColor, formatIndex } from '@/lib/scoring';
 import { getTier } from '@/lib/tiers';
 import { getExplorerConfig } from '@/lib/explorerPresets';
+import { cutHumorIndex } from '@/lib/explorerScore';
 import ShareButton from '@/components/ui/ShareButton';
 import {
   trackExplorerPresetApplied,
@@ -15,6 +16,10 @@ interface Props {
   slug: string;
   showName: string;
   episodes: EpisodeScore[];
+  /** Official show-level Humor Index (composite) — used for the full-series cut. */
+  seriesIndex: number;
+  /** Official per-season Humor Index, keyed by season number. */
+  seasonIndex: Record<number, number>;
 }
 
 // t critical values (two-sided 95%) by degrees of freedom — avoids a stats dep.
@@ -61,7 +66,7 @@ function decodeSel(str: string, max: number): Set<number> {
   return s;
 }
 
-export default function HumorIndexExplorer({ slug, showName, episodes }: Props) {
+export default function HumorIndexExplorer({ slug, showName, episodes, seriesIndex, seasonIndex }: Props) {
   const config = getExplorerConfig(slug);
 
   // Stable airing order → index used for ranges + selection.
@@ -70,7 +75,9 @@ export default function HumorIndexExplorer({ slug, showName, episodes }: Props) 
     [episodes]
   );
   const seasons = useMemo(() => Array.from(new Set(eps.map(e => e.season))).sort((a, b) => a - b), [eps]);
-  const seriesAvg = useMemo(() => mean(eps.map(e => e.humor_index)), [eps]);
+  // Full-series baseline is the show's OFFICIAL Humor Index (not the episode
+  // mean), so the Explorer agrees with the show page and leaderboard.
+  const seriesAvg = seriesIndex;
   const idxBySeason = useMemo(() => {
     const m = new Map<number, number[]>();
     eps.forEach((e, i) => { if (!m.has(e.season)) m.set(e.season, []); m.get(e.season)!.push(i); });
@@ -184,7 +191,9 @@ export default function HumorIndexExplorer({ slug, showName, episodes }: Props) 
     const v = idx.map(i => eps[i].humor_index);
     const n = v.length;
     if (!n) return null;
-    const avg = mean(v);
+    // Official score where one exists (full series / whole season / single
+    // episode); plain episode-mean for custom mixed cuts.
+    const avg = cutHumorIndex(idx.map(i => eps[i]), eps, seriesIndex, seasonIndex);
     const ci = n > 1 ? tval(n - 1) * stdev(v) / Math.sqrt(n) : null;
     const jpm = mean(idx.map(i => eps[i].jpm));
     const imv = idx.map(i => eps[i].imdb_rating).filter((x): x is number => x != null);
@@ -193,7 +202,7 @@ export default function HumorIndexExplorer({ slug, showName, episodes }: Props) 
     idx.forEach(i => { if (eps[i].humor_index > eps[bi].humor_index) bi = i; if (eps[i].humor_index < eps[wi].humor_index) wi = i; });
     const pct = Math.round(100 * eps.filter(e => e.humor_index <= avg).length / eps.length);
     return { n, avg, ci, jpm, imdb, best: eps[bi], worst: eps[wi], delta: avg - seriesAvg, tier: getTier(avg), pct };
-  }, [selected, eps, seriesAvg]);
+  }, [selected, eps, seriesAvg, seriesIndex, seasonIndex]);
 
   const copyLink = () => {
     if (typeof navigator !== 'undefined' && navigator.clipboard) {

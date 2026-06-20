@@ -199,6 +199,20 @@ export const EXPLORER_CONFIG: Record<string, ExplorerConfig> = {
       { id: 'skip-s1', label: 'Skip the rookie season (S1)', blurb: 'Drop the lowest-scoring first season, before the escalation rhythm clicked', pick: ep => ep.season !== 1 },
     ],
   },
+  // Created by and starring Abbi Jacobson & Ilana Glazer across all five
+  // seasons (Comedy Central, 2014–2019), adapted from their 2009–2011 web
+  // series — stable creators/cast, so no showrunner era to split on. The data
+  // story is structural: S1 (the web-series-to-TV adaptation season) is the
+  // only season under 88, and the show is the rare one whose highest-scoring
+  // season is its last (S5).
+  'broad-city': {
+    signature: 'skip-s1',
+    storyPresets: [
+      { id: 'skip-s1', label: 'Skip the rookie season (S1)', blurb: 'Drop the web-series-to-TV first season — the only one that scores under 88 — and watch the average settle into its true level', pick: ep => ep.season !== 1 },
+      { id: 'finale-peak', label: 'It peaked at the finish (S5)', blurb: 'Most shows fade out; Broad City’s highest-scoring season is its last one', pick: ep => ep.season === 5 },
+      { id: 'victory-lap', label: 'Peak Broad City (S4–S5)', blurb: 'The two highest-scoring seasons — Abbi and Ilana’s victory lap', pick: ep => ep.season >= 4 },
+    ],
+  },
 };
 
 export function getExplorerConfig(slug: string): ExplorerConfig {

@@ -32,6 +32,16 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // In the future, this could pull from a CMS or markdown files
 const POSTS = [
   {
+    slug: 'broad-city-launch',
+    title: "Broad City Is the Funniest Show We've Ever Scored",
+    description: "All 50 episodes, 3,737 jokes. Broad City debuts at #1 with a Humor Index of 86.8 — the first show to clear 86, knocking Chappelle's Show off the top. It's the densest live-action show on the board (3.52 jokes/min) at near-top craft, and the rare show whose highest-scoring season is its last.",
+    date: '2026-06-20',
+    category: 'Show Launch',
+    readTime: '5 min read',
+    stat: "86.8",
+    statLabel: "Debuts at #1 — the new funniest show",
+  },
+  {
     slug: 'futurama-launch',
     title: "Futurama Out-Scores the Show It Roasted",
     description: "All 170 episodes, 1999–2025, 11,042 jokes. Futurama lands at 77.6 (#12 of 19) — and the Hulu revival held up almost perfectly (craft 6.79 vs 6.82). Its most-quoted joke roasts Friends, the show it now outranks.",

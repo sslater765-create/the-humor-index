@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import { getAllShows, getEpisodes } from '@/lib/data';
+import { getAllShows, getEpisodes, getSeasons } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
 import { getExplorerConfig } from '@/lib/explorerPresets';
+import { cutHumorIndex } from '@/lib/explorerScore';
 import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
-
-const mean = (a: number[]) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
 
 export async function generateMetadata() {
   return {
@@ -43,7 +42,14 @@ export default async function ExploreHub() {
     if (episodes.length === 0) continue;
 
     const config = getExplorerConfig(show.slug);
-    const seriesAvg = mean(episodes.map(e => e.humor_index));
+    let seasonIndex: Record<number, number> = {};
+    try {
+      const seasons = await getSeasons(show.slug);
+      seasonIndex = Object.fromEntries(seasons.map(s => [s.season, s.humor_index]));
+    } catch {
+      /* no season data */
+    }
+    const seriesAvg = show.humor_index;
     let line = 'Build your own cut — isolate a hot streak or drop a weak season.';
     let signatureLabel: string | undefined;
     let signatureAvg: number | undefined;
@@ -52,8 +58,7 @@ export default async function ExploreHub() {
 
     const sig = config.storyPresets?.find(p => p.id === config.signature);
     if (sig) {
-      const v = episodes.filter(sig.pick).map(e => e.humor_index);
-      const avg = mean(v);
+      const avg = cutHumorIndex(episodes.filter(sig.pick), episodes, show.humor_index, seasonIndex);
       delta = avg - seriesAvg;
       line = `${sig.label}: ${formatIndex(avg)} (${delta >= 0 ? '+' : ''}${delta.toFixed(1)} vs the full series).`;
       signatureLabel = sig.label;

@@ -1,9 +1,10 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getShow, getEpisodes } from '@/lib/data';
+import { getShow, getEpisodes, getSeasons } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
 import { SHOW_SLUGS } from '@/lib/constants';
 import { getExplorerConfig } from '@/lib/explorerPresets';
+import { cutHumorIndex } from '@/lib/explorerScore';
 import { EpisodeScore } from '@/lib/types';
 import PageHeader from '@/components/layout/PageHeader';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
@@ -11,8 +12,6 @@ import HumorIndexExplorer from '@/components/explorer/HumorIndexExplorer';
 import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
-
-const mean = (a: number[]) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
 
 export async function generateStaticParams() {
   const out: { slug: string }[] = [];
@@ -55,13 +54,26 @@ export default async function ExplorePage({ params }: { params: { slug: string }
   if (episodes.length === 0) notFound();
 
   const config = getExplorerConfig(params.slug);
-  const seriesAvg = mean(episodes.map(e => e.humor_index));
+
+  // Official per-season Humor Index, so the Explorer agrees with the rest of
+  // the site (the full series and whole-season cuts read the canonical scores;
+  // only custom mixed cuts use a plain episode average).
+  let seasonIndex: Record<number, number> = {};
+  try {
+    const seasons = await getSeasons(params.slug);
+    seasonIndex = Object.fromEntries(seasons.map(s => [s.season, s.humor_index]));
+  } catch {
+    /* no season data */
+  }
+  const seriesIndex = show.humor_index;
+  const seriesAvg = seriesIndex;
   const ranked = [...episodes].sort((a, b) => b.humor_index - a.humor_index);
 
   // Server-rendered, crawlable summaries of each story preset (SEO + AEO).
   const presetFacts = (config.storyPresets ?? []).map(p => {
-    const v = episodes.filter(p.pick).map(e => e.humor_index);
-    return { label: p.label, blurb: p.blurb, avg: mean(v), n: v.length, delta: mean(v) - seriesAvg };
+    const picked = episodes.filter(p.pick);
+    const avg = cutHumorIndex(picked, episodes, seriesIndex, seasonIndex);
+    return { label: p.label, blurb: p.blurb, avg, n: picked.length, delta: avg - seriesAvg };
   });
 
   const datasetLd = {
@@ -101,7 +113,13 @@ export default async function ExplorePage({ params }: { params: { slug: string }
           <span className="text-brand-text-secondary">Explorer</span>
         </div>
 
-        <HumorIndexExplorer slug={params.slug} showName={show.name} episodes={episodes} />
+        <HumorIndexExplorer slug={params.slug} showName={show.name} episodes={episodes} seriesIndex={seriesIndex} seasonIndex={seasonIndex} />
+
+        <p className="text-xs text-brand-text-muted mt-4 leading-relaxed">
+          Cut scores use {show.name}&apos;s official Humor Index for the full series and for
+          whole seasons; a custom mix of episodes shows the average of those episodes&apos; scores.
+          A show&apos;s headline score weights its best season, so a custom cut can differ slightly.
+        </p>
 
         {/* Notable cuts — server-rendered prose for SEO/AEO */}
         {presetFacts.length > 0 && (
