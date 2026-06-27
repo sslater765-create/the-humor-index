@@ -4,36 +4,35 @@
   "season": 1,
   "episode_number": 6,
   "title": "Bowie",
-  "humor_index": 77.6,
-  "jpm": 1.95,
-  "avg_craft": 6.98,
-  "avg_impact": 6.81,
-  "total_jokes": 63,
-  "war": 56.4,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"cringe_discomfort\"]",
-  "standout_joke_ids": "[35, 33, 56]",
+  "humor_index": 97.6,
+  "jpm": 1.98,
+  "avg_craft": 7.83,
+  "avg_impact": 7.8,
+  "total_jokes": 64,
+  "war": 116.2,
+  "dominant_joke_types": "[\"character_comedy\", \"deadpan_understatement\", \"absurdist\"]",
+  "standout_joke_ids": "[57, 47, 52]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Jemaine: Yes. Murray: Yes. Bret? Bret: No. Murray: What do you mean no? Bret: I'm not here. Murray: You're not here? Bret: No. Murray: Where are you? Bret: No, I was just joking.",
+      "text": "Bret refuses roll call by saying 'No' and 'I'm not here' while visibly sitting in the meeting",
       "characters": [
         "Bret",
-        "Murray",
-        "Jemaine"
+        "Murray"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "deadpan_understatement",
+        "absurdist"
       ],
-      "setup": "Standard roll call procedure",
-      "punchline": "Bret claims he's not present while obviously being there",
-      "craft_total": 6.27,
-      "impact_score": 5.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "setup": "Murray calls roll call as if it's a serious bureaucratic procedure",
+      "punchline": "Bret says 'No' and 'I'm not here' \u2014 refusing to participate in the most basic formality while obviously present",
+      "craft_total": 7.45,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Bret-style deadpan absurdity - perfectly in character and well-structured",
+      "explanation": "Pure deadpan from Bret \u2014 the absurdity of denying your own presence while present is perfectly Conchords. Simple, economical, character-specific (Bret's passive resistance to Murray's bureaucracy).",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -79,22 +78,24 @@
     },
     {
       "index": 2,
-      "text": "Murray explaining he's carried on band meetings without the band members being there",
+      "text": "Murray reveals he has held band meetings without the band present and marked them 'absent'",
       "characters": [
-        "Murray"
+        "Murray",
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
         "absurdist",
         "character_comedy"
       ],
-      "setup": "Discussion about attendance at band meetings",
-      "punchline": "Murray reveals he's held meetings for the band without the band",
-      "craft_total": 6.49,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Murray defends the roll call because there have been times the band wasn't there",
+      "punchline": "He confirms he just carried on with the meeting without them \u2014 the meeting has no purpose without the band, making its continuation meaningless bureaucracy",
+      "craft_total": 8.33,
+      "impact_score": 8.17,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Murray character moment - bureaucratic absurdity that could only come from him",
+      "explanation": "Exceptional character comedy. Murray's compulsive adherence to procedure over function is the core joke of his entire character \u2014 holding a band meeting without the band perfectly encapsulates his bureaucratic absurdity. High on character integration because only Murray would do this and find it perfectly reasonable. The follow-up 'they didn't go very well' is a beautiful understated add-on.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -104,23 +105,24 @@
     },
     {
       "index": 3,
-      "text": "We're at a band meeting. We haven't been here? - Yeah, twice. I mean... - When? Well, it doesn't matter when. They didn't go very well.",
+      "text": "The band photo turns out to be of Gemma's 21st birthday with neither Bret nor Jemaine in it, and Murray has circled their cousins",
       "characters": [
-        "Jemaine",
-        "Murray"
+        "Murray",
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
-        "absurdist",
+        "visual_gag",
         "character_comedy"
       ],
-      "setup": "Murray claiming they've missed band meetings",
-      "punchline": "The impossibility of missing meetings they're always at",
-      "craft_total": 6.62,
-      "impact_score": 6.17,
-      "quotability": 6.0,
+      "setup": "Murray presents the band's official photo as inadequate \u2014 he's had to circle where they are",
+      "punchline": "The photo is from someone's 21st birthday party, neither band member is in it, and Murray has circled the wrong people entirely",
+      "craft_total": 7.97,
+      "impact_score": 8.17,
+      "quotability": 5.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfectly captures Murray's bureaucratic absurdity and the band's confused relationship with his management.",
+      "explanation": "Escalating reveal structure \u2014 first we learn he had to circle them, then that neither is in it, then that he circled the wrong people, then that the photographer was Bret himself. Each beat lands. Visual comedy enhanced by the audience actually seeing the photo.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -142,21 +144,23 @@
     },
     {
       "index": 4,
-      "text": "But I've had to circle where you two are.",
+      "text": "'I think I took this photo.' / 'Yeah, I took it.' \u2014 Bret realizes neither band member is in their own promo photo because Bret was the photographer",
       "characters": [
-        "Murray"
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
-        "visual_gag"
+        "setup_punchline",
+        "deadpan_understatement"
       ],
-      "setup": "Murray showing what he thinks is a good band photo",
-      "punchline": "Visual reveal that he had to circle the band members in the photo",
-      "craft_total": 6.35,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "setup": "Murray asks where Bret and Jemaine are in the photo",
+      "punchline": "They gradually realize Bret took the photo \u2014 so neither is in it",
+      "craft_total": 6.99,
+      "impact_score": 6.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Visual gag that effectively shows Murray's misguided management approach",
+      "explanation": "The slow dawning realization delivered with complete deadpan works well. The gradual 'I think... yeah' acknowledgment is funnier than an instant reveal would be.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -166,24 +170,22 @@
     },
     {
       "index": 5,
-      "text": "Photo of Gemma's 21st birthday with Murray circling random cousins thinking they're the band",
+      "text": "'It's got a good energy.' Murray responds to being told the photo has no band members in it",
       "characters": [
-        "Murray",
-        "Bret",
-        "Jemaine"
+        "Murray"
       ],
       "joke_types": [
-        "visual_gag",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Murray trying to use existing photos for band promotion",
-      "punchline": "The 'band photo' is actually strangers at a birthday party",
-      "craft_total": 6.38,
-      "impact_score": 6.75,
-      "quotability": 4.0,
-      "rewatch_bonus": 1,
+      "setup": "The photo has been revealed to contain neither band member",
+      "punchline": "Murray's defense is that it has 'a good energy' \u2014 a PR/management clich\u00e9 applied to a completely useless band photo",
+      "craft_total": 7.11,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Visual comedy that builds beautifully - multiple reveals make it funnier",
+      "explanation": "Murray's stubborn defense of a clearly useless photo using hollow industry language is a perfect three-word gag. His follow-up 'I know, I tell people that' confirms he's been actively using this terrible photo.",
       "dialogue": [
         {
           "speaker": "",
@@ -193,24 +195,25 @@
     },
     {
       "index": 6,
-      "text": "Photo of Jemaine with ex-girlfriend Clea but with Bret's head superimposed",
+      "text": "The second photo: Murray has superimposed Bret's head over Jemaine's ex-girlfriend Clea's head on a personal photo \u2014 and Murray made it himself",
       "characters": [
         "Murray",
-        "Bret",
-        "Jemaine"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
+        "absurdist",
+        "character_comedy",
+        "visual_gag"
       ],
-      "setup": "Murray's attempts at creating band photos",
-      "punchline": "Bizarre photoshopped romantic photo with inappropriate head replacement",
-      "craft_total": 7.48,
-      "impact_score": 7.83,
+      "setup": "Murray presents the only other available band photo as an alternative",
+      "punchline": "It's Jemaine's ex-girlfriend's photo with Bret's head glued over hers \u2014 and Murray created it himself and considers it a viable promo option",
+      "craft_total": 8.24,
+      "impact_score": 8.5,
       "quotability": 6.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Deeply uncomfortable and hilariously specific visual gag that's perfectly absurd",
+      "explanation": "A genuinely original absurdist gag \u2014 the photo is bizarre on multiple levels: stolen from Jemaine's personal collection, involves his ex-girlfriend, and features a crude head-swap. Murray presenting it as a legitimate option reveals the depths of his incompetence. 'I loved that photo' from Jemaine adds a layer of pathos. Scores high because the absurdity is earned and specific.",
       "dialogue": [
         {
           "speaker": "",
@@ -220,23 +223,22 @@
     },
     {
       "index": 7,
-      "text": "I made it. I made this one. You can't take my personal photos and stick other people's heads over... I loved that photo.",
+      "text": "'This one here, you're not in. And this one here you're in, but you shouldn't be.'",
       "characters": [
-        "Bret",
-        "Jemaine"
+        "Murray"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "setup_punchline"
       ],
-      "setup": "Bret admitting he made the weird photo",
-      "punchline": "Jemaine's hurt about his romantic photo being defaced",
-      "craft_total": 6.37,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect character moment showing the band's dysfunction and Jemaine's sensitivity.",
+      "setup": "Murray summarizing their two photo options",
+      "punchline": "The perfectly parallel construction highlights the absurdity of both situations with deadpan symmetry",
+      "craft_total": 8.05,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "One of the best-structured lines in the episode. The parallel construction \u2014 'not in' vs 'shouldn't be' \u2014 is elegant, economical, and perfectly captures both photo failures in one breath. High structure and economy scores are justified; this is the kind of line a good comedy writer is proud of.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -250,22 +252,22 @@
     },
     {
       "index": 8,
-      "text": "Murray: 'this one here, you're not in. And this one here you're in, but you shouldn't be'",
+      "text": "Murray calls the photo shoot a 'photo shoot' with a dramatic pause as if it's an exciting revelation",
       "characters": [
         "Murray"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Explaining the photo problems",
-      "punchline": "Matter-of-fact summary of the absurd photo situation",
-      "craft_total": 6.97,
-      "impact_score": 6.67,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Murray builds to announcing his solution",
+      "punchline": "After the buildup of '...what's called a...' the answer is just the obvious and mundane 'photo shoot'",
+      "craft_total": 7.12,
+      "impact_score": 7.0,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan delivery of absurd logic - economical and quotable",
+      "explanation": "Mild anti-climax joke \u2014 Murray dramatizes saying the obvious. Works as character comedy (Murray's self-importance) but not particularly original or sharp.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -275,22 +277,24 @@
     },
     {
       "index": 9,
-      "text": "So those are you options. This one here, you're not in. And this one here you're in, but you shouldn't be.",
+      "text": "The photo shoot is happening in the New Zealand consulate hallway with a passport camera that only Greg is allowed to touch \u2014 even Murray can't touch it",
       "characters": [
-        "Murray"
+        "Murray",
+        "Bret"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "setup_punchline"
+        "absurdist",
+        "character_comedy",
+        "visual_gag"
       ],
-      "setup": "Murray summarizing the photo options",
-      "punchline": "Both options are terrible in opposite ways",
-      "craft_total": 6.58,
-      "impact_score": 6.25,
-      "quotability": 7.0,
+      "setup": "Murray conducts the 'professional' photo shoot",
+      "punchline": "It's a government passport camera, Greg is the designated toucher, and this is the extent of their photographic resources",
+      "craft_total": 7.44,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan summary with excellent economy. Classic Murray logic.",
+      "explanation": "The detail that Murray himself is not permitted to touch the camera \u2014 and defers to Greg \u2014 is a lovely absurdist touch. Establishes that the entire 'photo shoot' is a charmingly shambolic affair run on government property with borrowed equipment.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -300,22 +304,24 @@
     },
     {
       "index": 10,
-      "text": "Murray refusing to let them look through passport camera because it's 'New Zealand government property'",
+      "text": "Murray insists musicians smile and put their hands in the air, confusing this with what gymnasts do",
       "characters": [
-        "Murray"
+        "Murray",
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Photo shoot with professional equipment",
-      "punchline": "Overly bureaucratic protection of a simple camera",
-      "craft_total": 6.86,
-      "impact_score": 6.33,
-      "quotability": 5.5,
-      "rewatch_bonus": 1,
+      "setup": "Jemaine adopts the 'cool depressed' band look; Murray wants smiles and raised arms",
+      "punchline": "Jemaine and Bret correct Murray \u2014 that's what gymnasts do, not musicians. Murray asks Greg for confirmation and accepts this.",
+      "craft_total": 7.15,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Murray bureaucratic mindset applied absurdly",
+      "explanation": "Murray's cluelessness about rock aesthetics is a solid character beat. The escalation of asking Greg \u2014 a third-party office worker \u2014 to adjudicate between musicians and gymnasts is a nice absurdist flourish.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -325,23 +331,22 @@
     },
     {
       "index": 11,
-      "text": "Murray: 'Who wants to hear a sad band?' Jemaine: 'This is the cool look for a band.' Murray: 'But what about your hands in the air and smile?' Jemaine: 'That's gymnasts, Murray.'",
+      "text": "'Jemaine, you look like an ogre that works in the library.'",
       "characters": [
-        "Murray",
-        "Jemaine"
+        "Murray"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Disagreement about proper band photo poses",
-      "punchline": "Murray confusing band photos with gymnastics",
-      "craft_total": 6.64,
-      "impact_score": 6.33,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Murray is trying to explain why the photo sizing looks off \u2014 Bret appears small",
+      "punchline": "Rather than technical feedback, Murray delivers this specific, absurdly precise insult about Jemaine's appearance",
+      "craft_total": 7.83,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Murray's cultural confusion played perfectly straight",
+      "explanation": "A highly quotable, precision-crafted insult. The specificity of 'an ogre that works in the library' elevates this above a generic size joke \u2014 the juxtaposition of menacing mythological creature with the mundane professional setting of a library is genuinely funny and imaginative. Economy is near-perfect.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -363,22 +368,24 @@
     },
     {
       "index": 12,
-      "text": "That's gymnasts, Murray.",
+      "text": "Bret trying to fill conversational silence by bringing up penguins, then abandoning the subject \u2014 'Bret, I'm kind of doing all the work in this conversation.'",
       "characters": [
-        "Jemaine"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "observational"
+        "awkward_silence",
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Murray suggesting bands put their hands in the air and smile",
-      "punchline": "Jemaine's correction that Murray is thinking of gymnasts",
-      "craft_total": 6.75,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Jemaine can tell something is wrong with Bret and tries to engage him",
+      "punchline": "Bret floats the non-sequitur topic of penguins then drops it entirely, leaving Jemaine doing all conversational labor",
+      "craft_total": 7.37,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan correction that highlights Murray's cluelessness about music",
+      "explanation": "The penguin non-sequitur ('Sometimes I'm glad we don't live in New Zealand anymore. 'Cause of all those penguins.') is perfectly absurdist and the meta-comment on the failed conversation is self-aware and funny. Captures the particular social texture of two people who have run out of small talk.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -388,22 +395,23 @@
     },
     {
       "index": 13,
-      "text": "Jemaine: 'you look like an ogre that works in the library'",
+      "text": "Jemaine repeatedly suggests Bret is bulimic when Bret says he just feels like he needs to eat more",
       "characters": [
-        "Jemaine"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "running_gag",
+        "deadpan_understatement"
       ],
-      "setup": "Critiquing the photo results",
-      "punchline": "Oddly specific and creative insult",
-      "craft_total": 6.99,
-      "impact_score": 7.33,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Bret says he has body image issues and just needs compliments and food",
+      "punchline": "Jemaine keeps re-diagnosing this as bulimia and citing a drunken birthday party bathroom incident as evidence",
+      "craft_total": 7.29,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliantly specific and unexpected insult - highly quotable",
+      "explanation": "The running insistence on bulimia \u2014 and particularly 'being a little bit bulimic' as if it's a spectrum \u2014 plus citing the birthday party bathroom as medical evidence is solid character comedy. Jemaine's clinical confidence about something he's clearly wrong about is characteristic of the show's deadpan.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -413,23 +421,23 @@
     },
     {
       "index": 14,
-      "text": "Sometimes I'm glad that we don't live in New Zealand anymore. 'Cause of all those penguins. - Remember how there'd be penguins?",
+      "text": "Bret asks for compliments; Jemaine refuses because 'it'd be weird,' then immediately agrees it'd be weird",
       "characters": [
-        "Bret",
-        "Jemaine"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "absurdist",
-        "observational"
+        "character_comedy",
+        "awkward_silence"
       ],
-      "setup": "Random conversation about penguins",
-      "punchline": "Acting like penguins were a major daily nuisance in New Zealand",
-      "craft_total": 6.68,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Bret needs reassurance and asks Jemaine directly for compliments",
+      "punchline": "Jemaine refuses on the grounds of social weirdness; Bret immediately agrees and gives up; Jemaine doesn't even try",
+      "craft_total": 7.22,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Absurdist humor about New Zealand. Fits their characters but not exceptional.",
+      "explanation": "The emotional texture of male friendship \u2014 unable to give or receive direct affirmation \u2014 is the whole engine of the upcoming song. The setup here is efficient and the mutual awkwardness is true to the characters.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -443,21 +451,23 @@
     },
     {
       "index": 15,
-      "text": "Yeah... no.",
+      "text": "Jemaine appears as 1972 David Bowie from the Ziggy Stardust tour in Bret's dream",
       "characters": [
+        "Jemaine",
         "Bret"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "absurdist",
+        "visual_gag"
       ],
-      "setup": "Jemaine asking if Bret likes penguins",
-      "punchline": "Bret's confused/contradictory response",
-      "craft_total": 6.18,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Bret goes to sleep dejected; we cut to a dream sequence",
+      "punchline": "Jemaine in full Ziggy Stardust costume \u2014 makeup, lightning bolt \u2014 appears as the visitation of David Bowie to boost Bret's confidence",
+      "craft_total": 7.99,
+      "impact_score": 8.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple but characteristic Bret response showing his uncertainty",
+      "explanation": "The central high-concept gag of the episode \u2014 Jemaine playing David Bowie as a dream-guide for Bret's body image issues is an inspired premise. The show's form (Jemaine IS a tall, dark, vaguely exotic presence) makes the casting commentary meta and funny. High character integration because only in this specific show would this specific casting choice make sense.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -467,23 +477,23 @@
     },
     {
       "index": 16,
-      "text": "Jemaine repeatedly asking if Bret is bulimic when Bret just wants to eat more",
+      "text": "'Wow, you look a lot like Jemaine.' / 'No, I'm David Bowie.'",
       "characters": [
-        "Jemaine",
-        "Bret"
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
-        "character_comedy",
-        "misdirection"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Bret explains he feels small and needs to eat more",
-      "punchline": "Jemaine misinterprets everything as bulimia",
-      "craft_total": 6.72,
-      "impact_score": 6.25,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "setup": "Jemaine appears in full Bowie costume in Bret's dream",
+      "punchline": "Bret points out the obvious resemblance; Jemaine flatly denies it",
+      "craft_total": 7.77,
+      "impact_score": 7.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Running gag that builds through repetition and misunderstanding",
+      "explanation": "The flat denial of the obvious is very New Zealand deadpan. The joke is economical and the 'no, I'm David Bowie' is delivered with total sincerity. Classic straight-faced absurdism.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -513,22 +523,23 @@
     },
     {
       "index": 17,
-      "text": "Jemaine claiming he heard Bret being 'a little bit bulimic' in the bathroom after his mom's birthday",
+      "text": "Bret interrupts David Bowie's dream-vision to describe his own previous guinea pig and giraffe dreams at length",
       "characters": [
+        "Bret",
         "Jemaine"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "deadpan_understatement"
       ],
-      "setup": "Discussion of Bret's supposed eating disorder",
-      "punchline": "Treating being drunk and throwing up as 'being bulimic'",
-      "craft_total": 6.59,
-      "impact_score": 6.33,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Escalates the bulimia running gag with specific absurd example",
+      "setup": "Jemaine-as-Bowie asks if he's freaking Bret out with the dream",
+      "punchline": "Rather than acknowledge the supernatural event, Bret veers into describing his own more interesting past dreams \u2014 'I had one where I was a guinea pig, but with my face'",
+      "craft_total": 7.43,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The specificity of 'a guinea pig but with my face' is a great absurdist detail. Bret's total lack of appropriate awe at David Bowie's supernatural visitation \u2014 instead trying to one-up the encounter with his own dream inventory \u2014 is perfect character comedy.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -538,23 +549,23 @@
     },
     {
       "index": 18,
-      "text": "Bret asking for compliments and Jemaine refusing because 'it'd be weird'",
+      "text": "David Bowie's advice: 'Get an eye patch, man.' / 'I'm sorry?' / 'Get an eye patch.'",
       "characters": [
-        "Bret",
-        "Jemaine"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "absurdist",
+        "setup_punchline"
       ],
-      "setup": "Bret's vulnerability about needing validation",
-      "punchline": "Jemaine's immediate rejection of showing emotional support",
-      "craft_total": 7.21,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "setup": "Bowie has spoken about breaking through false barriers; Bret expects meaningful wisdom",
+      "punchline": "The grand cosmic advice is simply to wear an eye patch",
+      "craft_total": 8.15,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect character moment - their emotional awkwardness",
+      "explanation": "Classic misdirection \u2014 after pseudo-profound mystical language ('the plastic pantomime'), the advice bottoms out into something completely mundane and practical. The repetition ('I'm sorry?' / 'Get an eye patch.') delivered without any justification is excellent deadpan.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -568,23 +579,22 @@
     },
     {
       "index": 19,
-      "text": "Jemaine dressed as David Bowie claiming 'It's 1972 David Bowie from the Ziggy Stardust tour'",
+      "text": "'# Wear the eye patch, Bret / Wear the funky funky eye patch. #' \u2014 Bowie's two-line dream song",
       "characters": [
-        "Jemaine",
-        "Bret"
+        "Jemaine"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "absurdist",
+        "setup_punchline"
       ],
-      "setup": "Bret wakes up to find someone in his room",
-      "punchline": "Jemaine's elaborate Bowie costume and character commitment",
-      "craft_total": 7.24,
-      "impact_score": 7.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Bowie has delivered his wisdom; the dream should end",
+      "punchline": "Instead, he delivers a tiny impromptu two-line song to reinforce the eye patch advice before departing",
+      "craft_total": 8.07,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Unexpected visual gag that establishes the dream sequence premise",
+      "explanation": "Micro-song as punchline is a FOTC specialty and this two-liner is executed perfectly. The Bowie-esque 'funky funky' is a great pastiche detail. The brevity is the joke \u2014 it's a full musical commitment to a completely trivial piece of advice.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -594,23 +604,23 @@
     },
     {
       "index": 20,
-      "text": "Bret: 'Wow, you look a lot like Jemaine' Jemaine: 'No, I'm David Bowie'",
+      "text": "'Watch out for the table!' / 'Sorry about the table, Bret.' \u2014 Bowie exits by walking into furniture",
       "characters": [
         "Bret",
         "Jemaine"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "meta_self_referential"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Obvious disguise pretending to be someone else",
-      "punchline": "Bret's matter-of-fact observation and Jemaine's denial",
-      "craft_total": 6.82,
-      "impact_score": 6.33,
+      "setup": "Bowie makes a mystical exit from the dream",
+      "punchline": "He immediately walks into a table; Bret warns him too late; Bowie apologizes for the table",
+      "craft_total": 7.49,
+      "impact_score": 7.5,
       "quotability": 6.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Meta-humor that acknowledges the absurdity while staying in character",
+      "explanation": "The deflation of the mystical dream visitation by a mundane collision is perfectly timed. The polite 'Sorry about the table, Bret' from someone playing the rock god David Bowie is a brilliant anticlimax. Seeds the later payoff when the eye patch causes identical depth-perception problems for both Bret and real Bowie.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -624,22 +634,22 @@
     },
     {
       "index": 21,
-      "text": "Bret's guinea pig and giraffe dream descriptions",
+      "text": "Murray on the phone: 'No, he's not a midget. He's just... he's thin.'",
       "characters": [
-        "Bret"
+        "Murray"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Discussion about freaky dreams",
-      "punchline": "Mundane animal transformations described matter-of-factly",
-      "craft_total": 6.15,
-      "impact_score": 5.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 1,
+      "setup": "Murray is apparently on the phone talking about the photo of the band",
+      "punchline": "Someone on the other end has mistaken Bret's small appearance in the photo for dwarfism; Murray's correction focuses entirely on Bret's thinness rather than challenging the framing",
+      "craft_total": 7.52,
+      "impact_score": 7.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typically Bret non-sequitur that derails the conversation",
+      "explanation": "A good in medias res gag \u2014 we drop into this phone call without context and Murray's matter-of-fact explanation ('there's the full range') is deadpan gold. Continues the episode's running thread of Bret's body image via external perception.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -649,22 +659,24 @@
     },
     {
       "index": 22,
-      "text": "Yeah, okay. Listen, Bret, I don't have much time, man.",
+      "text": "Bret arrives wearing an eye patch to the meeting about the magazine feature",
       "characters": [
-        "Jemaine/Bowie"
+        "Bret",
+        "Jemaine",
+        "Murray"
       ],
       "joke_types": [
-        "character_comedy",
-        "reaction_beat"
+        "visual_gag",
+        "callback"
       ],
-      "setup": "Bret rambling about his dreams",
-      "punchline": "Dream Bowie cutting him off impatiently",
-      "craft_total": 6.42,
-      "impact_score": 6.0,
+      "setup": "Dream Bowie advised wearing the eye patch; Bret has taken this seriously",
+      "punchline": "Bret arrives wearing it as his 'new look' in a mundane daytime context",
+      "craft_total": 7.34,
+      "impact_score": 7.17,
       "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good reaction beat to Bret's rambling. Efficient character work.",
+      "is_callback": 1,
+      "explanation": "The callback to the dream advice playing out in reality. The casual acceptance of the eye patch as a 'new look' while the magazine feature reveals they've already made it into print is a good layered moment.",
       "dialogue": [
         {
           "speaker": "Bowie",
@@ -674,23 +686,24 @@
     },
     {
       "index": 23,
-      "text": "Bowie's advice: 'Get an eye patch, man' and Bret already having one",
+      "text": "Murray outs Bret as bulimic in the middle of the pitch meeting setup \u2014 'Bret's bulimic.'",
       "characters": [
-        "Jemaine",
-        "Bret"
+        "Murray",
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
-        "absurdist",
-        "setup_punchline"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Mysterious advice from dream Bowie",
-      "punchline": "Bret coincidentally already owns the suggested accessory",
-      "craft_total": 7.45,
-      "impact_score": 7.5,
+      "setup": "Murray is giving a pep talk before their big meeting",
+      "punchline": "He casually mentions Bret's 'bulimia' as if it's a relevant action item, despite Bret's repeated denials",
+      "craft_total": 7.18,
+      "impact_score": 7.17,
       "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfectly timed reveal that makes the advice both prophetic and mundane",
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The running bulimia gag escalates \u2014 now Murray has absorbed the misdiagnosis and is treating it as official band business, including it in the pre-meeting briefing. 'He's not now, he's fine now' / 'It's cleared up' while Bret protests is good cringe.",
       "dialogue": [
         {
           "speaker": "Bowie",
@@ -700,22 +713,23 @@
     },
     {
       "index": 24,
-      "text": "Murray describing them as 'two different sizes there. There's the full range.'",
+      "text": "'Is that a music term, \"Rock it out\"?' / 'Yeah, that's one.'",
       "characters": [
+        "Jemaine",
         "Murray"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Murray promoting the band to someone",
-      "punchline": "Describing the band's height difference as a 'full range'",
-      "craft_total": 7.03,
-      "impact_score": 6.75,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Murray says 'let's rock it out' as a motivational close to the meeting",
+      "punchline": "Jemaine sincerely asks if it's a music industry term; Murray confirms it is, as if he's citing a technical term",
+      "craft_total": 7.9,
+      "impact_score": 7.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Murray's bizarre promotional spin on an obvious physical fact",
+      "explanation": "A brief but well-executed exchange. Jemaine's genuine curiosity about whether a common phrase is technical jargon \u2014 and Murray's confident affirmation \u2014 is typical of the show's dry absurdism about music-industry naivety.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -725,22 +739,24 @@
     },
     {
       "index": 25,
-      "text": "No no, he's not a midget. He's just... he's thin.",
+      "text": "Jemaine asks Mel if she prefers him over Bret \u2014 and she says yes with no hesitation \u2014 while her husband Doug sits right there",
       "characters": [
-        "Murray"
+        "Jemaine",
+        "Mel",
+        "Doug"
       ],
       "joke_types": [
-        "character_comedy",
-        "setup_punchline"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Murray on phone describing the band",
-      "punchline": "Correcting misconception about Bret's size",
-      "craft_total": 6.45,
-      "impact_score": 6.17,
-      "quotability": 5.0,
+      "setup": "Jemaine wants to enlist Mel to compliment Bret and needs to confirm she prefers him first",
+      "punchline": "Mel confirms her preference for Jemaine immediately and enthusiastically, not remotely troubled by Doug's presence",
+      "craft_total": 7.36,
+      "impact_score": 7.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Murray's awkward phone manner. Functional but not exceptional.",
+      "explanation": "Mel's obsession with the band \u2014 to the exclusion of basic marital propriety \u2014 is the core of her character. The 'Happy anniversary, by the way' exchange in the middle of her confirming she prefers another man is perfect cringe. Doug's passive acceptance is equally funny.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -750,22 +766,23 @@
     },
     {
       "index": 26,
-      "text": "Greeting cards with hidden music technology - Murray's confused explanations",
+      "text": "Jemaine refuses to compliment Bret himself because 'it might be gay' \u2014 then the conversation with Mel escalates into graphic descriptions of gay sex",
       "characters": [
-        "Murray"
+        "Jemaine",
+        "Mel"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "escalation",
+        "cringe_discomfort"
       ],
-      "setup": "Explaining the greeting card business opportunity",
-      "punchline": "Murray's complete inability to understand simple technology",
-      "craft_total": 6.78,
-      "impact_score": 6.75,
-      "quotability": 5.0,
+      "setup": "Jemaine says complimenting Bret would be weird / might be gay",
+      "punchline": "Mel corrects him \u2014 complimenting a friend isn't gay \u2014 but then proceeds to elaborate increasingly specifically on what WOULD be gay: 'two men touching each other physically and emotionally, erotically caressing each other on the hood of a car, in the back of a movie theater'",
+      "craft_total": 7.47,
+      "impact_score": 7.5,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Murray's technological confusion played as character trait",
+      "explanation": "The escalation from Jemaine's mild homophobia to Mel's increasingly specific and enthusiastic descriptions of gay encounters is perfectly structured. Jemaine's attempts to wrap up the conversation ('Hey, thanks for your help anyway') while Mel continues ('...in the back of a movie theater') is excellent cringe comedy. The joke is also on Jemaine \u2014 his nervousness about a simple compliment has led to this. High scores across structure, character integration, and earned-vs-cheap.",
       "dialogue": [
         {
           "speaker": "",
@@ -775,24 +792,24 @@
     },
     {
       "index": 27,
-      "text": "It's a company that sells greeting cards. - Greeting cards? - But you know those ones that open up and they have a tune in them?",
+      "text": "Mel reveals she's the junior professor of psychology; Doug was the senior professor but was fired and 'just hangs around here'",
       "characters": [
-        "Murray",
-        "Jemaine",
-        "Bret"
+        "Mel",
+        "Doug",
+        "Jemaine"
       ],
       "joke_types": [
         "setup_punchline",
-        "character_comedy"
+        "deadpan_understatement"
       ],
-      "setup": "Murray building up a big meeting",
-      "punchline": "It's just greeting cards, not a record deal",
-      "craft_total": 6.57,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Jemaine asks what they do at the university to close the awkward conversation",
+      "punchline": "Doug was the senior psychology professor but was fired \u2014 and now just haunts the university campus",
+      "craft_total": 7.96,
+      "impact_score": 7.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic deflation of expectations. Murray's overhype vs. reality.",
+      "explanation": "'And now I just hang around here' delivered flatly by Doug is a beautifully sad and funny character beat. The passive acceptance of his demotion, his wife's embarrassing behavior, and his general life circumstances is played completely straight. The psychology background makes the couple's dynamic additionally ironic.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -810,22 +827,23 @@
     },
     {
       "index": 28,
-      "text": "Jemaine asking the woman to flirt with Bret because 'I think it might be gay' to compliment him himself",
+      "text": "Jemaine attempts compliments: 'Your beard is good.' / 'It's just a compliment for you... your beard.'",
       "characters": [
-        "Jemaine"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Trying to help Bret's confidence",
-      "punchline": "Jemaine's fear of appearing gay prevents basic friendship",
-      "craft_total": 6.69,
-      "impact_score": 6.25,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Escalates the earlier compliment refusal with added homophobia anxiety",
+      "setup": "Jemaine has decided to give Bret compliments after all",
+      "punchline": "The best he can manage is 'your beard is good' \u2014 and he over-explains it as if clarifying the social function of what he's doing",
+      "craft_total": 7.71,
+      "impact_score": 7.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The follow-up self-explanation ('just a compliment about your beard being good') reveals Jemaine's profound discomfort with male affirmation. The second compliment \u2014 'you're good at finding shortcuts around this part of town' \u2014 is an equally brilliant choice: deeply impersonal, geographically specific, and completely unrelated to Bret's self-esteem issues.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -835,22 +853,22 @@
     },
     {
       "index": 29,
-      "text": "Mel's elaborate description of gay activities: 'Erotically caressing each other on the hood of a car... in the back of a movie theater'",
+      "text": "'You're good at finding shortcuts around this part of town.'",
       "characters": [
-        "Mel"
+        "Jemaine"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Explaining what would actually be gay",
-      "punchline": "Increasingly specific and bizarre sexual scenarios",
-      "craft_total": 7.23,
-      "impact_score": 7.75,
-      "quotability": 7.0,
+      "setup": "Jemaine is trying to give Bret compliments to improve his self-esteem",
+      "punchline": "The compliment offered is about Bret's navigational skills in their local neighborhood \u2014 completely irrelevant to body image or personal worth",
+      "craft_total": 8.3,
+      "impact_score": 8.5,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Unexpected escalation from helpful explanation to vivid scenarios",
+      "explanation": "One of the best jokes in the episode. The extraordinary specificity and irrelevance of this compliment \u2014 geographic, hyper-local, banal \u2014 perfectly captures both Jemaine's inability to offer genuine affirmation AND his fundamental affection for Bret. It's funnier than any insult could be. Near-perfect economy. Very quotable. This is what a high-craft joke looks like in low-key comedy: unexpected specificity delivering genuine character truth.",
       "dialogue": [
         {
           "speaker": "Mel",
@@ -860,22 +878,23 @@
     },
     {
       "index": 30,
-      "text": "Doug was fired as senior professor but still hangs around the university",
+      "text": "'Would it be gay to write you a song to cheer you up?' / 'No.'",
       "characters": [
-        "Doug"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Asking what Doug does at the university",
-      "punchline": "Casual admission of being fired but refusing to leave",
-      "craft_total": 7.02,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Having offered two inadequate compliments, Jemaine escalates to a song",
+      "punchline": "He frames writing a song for his bandmate as a potential gay act and seeks prior consent; Bret's flat 'No' gives him the green light",
+      "craft_total": 7.68,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark humor delivered with perfect casualness",
+      "explanation": "Efficient bridge to the song. The framing of a musical gesture as potentially gay \u2014 while also being fundamentally what they do professionally \u2014 is a nice irony. The deadpan exchange captures the show's voice perfectly.",
       "dialogue": [
         {
           "speaker": "Doug",
@@ -885,22 +904,24 @@
     },
     {
       "index": 31,
-      "text": "Jemaine's awkward compliments: 'Your beard is good' and 'You're good at finding shortcuts'",
+      "text": "'Bret, You Got It Going On' \u2014 the full song, particularly the 'not in a gay way' verse and the revelation that Jemaine put a wig on Bret while he slept on tour",
       "characters": [
-        "Jemaine"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "escalation",
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Attempting to give Bret compliments",
-      "punchline": "Extremely weak and specific non-compliments",
-      "craft_total": 7.06,
-      "impact_score": 6.75,
-      "quotability": 6.5,
+      "setup": "Jemaine writes a song to boost Bret's confidence about his looks and romantic prospects",
+      "punchline": "The song escalates from genuine-ish compliments ('sure you're weedy and kinda shy') through an extended 'not in a gay way' disclaimer verse, to the revelation that Jemaine put a wig on Bret while he slept and 'just lay there and spooned you' on tour",
+      "craft_total": 8.62,
+      "impact_score": 8.67,
+      "quotability": 9.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect execution of awkward male friendship - Jemaine's discomfort palpable",
+      "is_callback": 0,
+      "explanation": "The centerpiece of the episode and one of the show's best songs. It earns its high score through structural perfection: the song begins as a heartfelt compliment, immediately pivots into defensive heterosexual disclaimers ('not in a gay way, just in a hey, man, I wanted to say'), continues to escalate those disclaimers ('I don't want to bum you'), and then \u2014 in a jaw-dropping reveal \u2014 admits Jemaine put a wig on Bret and spooned him while he slept. The song's purpose (to make Bret feel better) is completely subverted by what it reveals. This is character-integrated comedy at its finest: the song only works coming from Jemaine, it reveals something true about his character (deep affection masked by denial), and it functions as comedic escalation, relationship comedy, and surreal musical parody simultaneously. 'If one of us was lucky enough to be born a lady' / 'I put a wig on you when you were sleeping / I just lay there and spooned you' is television comedy writing at a very high level.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -914,22 +935,22 @@
     },
     {
       "index": 32,
-      "text": "Your beard is good. It's just a compliment for you... your beard. Just a compliment about your beard being good.",
+      "text": "Bret asks to look at the lyrics after the song",
       "characters": [
-        "Jemaine"
+        "Bret"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "reaction_beat",
+        "deadpan_understatement"
       ],
-      "setup": "Jemaine trying to give Bret compliments",
-      "punchline": "Awkward over-explanation of the compliment",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Jemaine has just performed an intimate, revealing song to Bret",
+      "punchline": "Bret's first response is to request the written lyrics \u2014 treating it as a document to be reviewed, not a personal confession",
+      "craft_total": 7.74,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Jemaine's social awkwardness in giving compliments. Good character consistency.",
+      "explanation": "Perfect beat after the song \u2014 the shift from emotional revelation to bureaucratic review is classically Conchords. Pure economy: four words, big laugh. The deadpan request to audit the song that just emotionally exposed Jemaine is very funny.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -939,22 +960,23 @@
     },
     {
       "index": 33,
-      "text": "'Bret, you got it going on' song - the entire musical number",
+      "text": "Jemaine denies having said anything about a wig despite it being in the song he literally just performed",
       "characters": [
-        "Jemaine"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Jemaine decides to write a song to cheer up Bret",
-      "punchline": "Song becomes increasingly homoerotic despite constant denials",
-      "craft_total": 8.24,
-      "impact_score": 8.83,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Bret confronts Jemaine about the wig lyric",
+      "punchline": "Jemaine insists he didn't say anything like that \u2014 despite having just sung it \u2014 and pivots to 'I think sometimes you hear what you want to hear'",
+      "craft_total": 7.62,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Masterpiece of musical comedy - escalates from innocent to deeply uncomfortable while maintaining character logic",
+      "explanation": "Jemaine's immediate gaslighting of Bret about lyrics he literally just sang is a beautiful character beat. 'I think sometimes you hear what you want to hear' applied to a song he composed is surreal and very funny. The follow-up \u2014 'It wouldn't be gay to put a wig on a man and pretend they're a woman. How could that be gay if you were pretending they're a woman?' \u2014 delivered as a genuine philosophical defense is excellent.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -996,21 +1018,22 @@
     },
     {
       "index": 34,
-      "text": "'Not in a gay way, just in a hey, man, I wanted to say / That you're looking okay, man, why can't a heterosexual guy / Tell a heterosexual guy that he thinks his booty is fly?'",
+      "text": "'Not that I did it.' \u2014 Jemaine's brief, isolated disclaimer after philosophically defending the non-gayness of wig-spooning",
       "characters": [
         "Jemaine"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Song attempting to avoid gay implications",
-      "punchline": "Immediately sexualizes with 'booty is fly' while claiming heterosexuality",
-      "craft_total": 7.42,
-      "impact_score": 7.17,
-      "quotability": 9.5,
+      "setup": "Jemaine has just argued that putting a wig on a man and pretending he's a woman isn't gay",
+      "punchline": "A beat of silence, then: 'Not that I did it.'",
+      "craft_total": 8.11,
+      "impact_score": 8.25,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Peak moment of the song - perfectly constructed ironic contradiction that became a cultural touchstone",
+      "explanation": "The funniest single line in the episode. After a lengthy and earnest philosophical defense of an act he just described in a song, Jemaine delivers this four-word non-denial denial after a beat of silence. Perfect comedic timing, perfect character \u2014 his complete inability to actually deny something he already confessed to is pure Jemaine. Economy score of 10 is warranted: there is literally not a single word that could be added or removed. This is what a 9+ joke looks like.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -1020,22 +1043,23 @@
     },
     {
       "index": 35,
-      "text": "'I put a wig on you when you were sleeping / I put a wig on you... you-hoo-hoo-hoo / And I just lay there and spooned you'",
+      "text": "Second dream: 1980 Bowie from 'Ashes to Ashes' video appears \u2014 Jemaine in a different Bowie-era costume",
       "characters": [
-        "Jemaine"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "running_gag",
+        "visual_gag"
       ],
-      "setup": "Song supposedly about friendship and confidence",
-      "punchline": "Reveals actual sexual fantasy enacted while Bret slept",
-      "craft_total": 8.42,
-      "impact_score": 8.83,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Bret has a second dream visitation from Bowie",
+      "punchline": "This time Bowie identifies himself by specific era and music video \u2014 played with complete sincerity \u2014 establishing the running structure of the episode",
+      "craft_total": 7.52,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Shocking escalation that crosses every line while remaining musically beautiful - comedy gold",
+      "explanation": "The running structure of Jemaine playing different Bowie eras \u2014 each one more specific \u2014 is a solid running gag. The humor compounds with each visit.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -1045,22 +1069,22 @@
     },
     {
       "index": 36,
-      "text": "Jemaine denying he said anything about wigs: 'I think sometimes you hear what you want to hear'",
+      "text": "'Actually, come to think of it, the same thing happened to me when I wore an eye patch. It was always, \"Bowie's bumped into a door.\"'",
       "characters": [
         "Jemaine"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "callback",
+        "deadpan_understatement"
       ],
-      "setup": "Bret questioning the wig lyrics",
-      "punchline": "Gaslighting about something we just heard him sing",
-      "craft_total": 7.49,
-      "impact_score": 7.33,
-      "quotability": 7.0,
+      "setup": "Bowie is sympathizing about Bret's depth perception problems",
+      "punchline": "Bowie reveals the exact same thing happened to him \u2014 undermining any authority the advice had and retroactively explaining his own table collision in the previous dream",
+      "craft_total": 8.2,
+      "impact_score": 8.5,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect follow-up that maintains Jemaine's denial despite obvious evidence",
+      "explanation": "A beautifully constructed two-episode callback that retroactively recontextualizes Bowie's table collision as chronic eye-patch-related door bumping. The structure is excellent: the advice given turns out to be advice Bowie couldn't follow himself. The reported speech ('Bowie's bumped into a door') with its third-person formulation is a very funny detail \u2014 as if it was notable enough to become a news item.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -1070,22 +1094,23 @@
     },
     {
       "index": 37,
-      "text": "'It wouldn't be gay to put a wig on a man and pretend they're a woman. How could that be gay if you were pretending they're a woman?'",
+      "text": "Bret asks Bowie if a friend putting a wig on you while lonely and pretending you're a woman is gay",
       "characters": [
+        "Bret",
         "Jemaine"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Defending the wig action",
-      "punchline": "Twisted logic that makes it sound worse",
-      "craft_total": 6.42,
-      "impact_score": 6.33,
+      "setup": "Bret is seeking external validation about Jemaine's wig behavior",
+      "punchline": "He's consulting his dream David Bowie for a ruling on whether his bandmate's wig-spooning constitutes a gay act",
+      "craft_total": 8.58,
+      "impact_score": 8.83,
       "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Jemaine's warped logic making the situation even more disturbing",
+      "explanation": "The callback structure is elegantly handled \u2014 Bret uses his access to a dream deity to resolve a real dispute from waking life. Bowie's long pause before ruling 'No, that's not gay. Are you sure? Totally fine.' has the weight of an official judgment. The absurdity of this being the philosophical question brought to David Bowie is very funny.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -1095,22 +1120,23 @@
     },
     {
       "index": 38,
-      "text": "Not that I did it.",
+      "text": "Bowie's second piece of advice: 'It doesn't hurt to do something absolutely outrageous.' / 'Like what?' / 'Well, you'll know what to do, Bret. And you'll know exactly when the time is right.'",
       "characters": [
-        "Jemaine"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "reaction_beat",
-        "cringe_discomfort"
+        "misdirection",
+        "setup_punchline"
       ],
-      "setup": "Jemaine explaining why the wig thing wouldn't be gay",
-      "punchline": "Weak attempt to backtrack from his implicit admission",
-      "craft_total": 7.47,
-      "impact_score": 7.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Bowie delivers profound-sounding advice about being outrageous",
+      "punchline": "When asked for specifics, he offers nothing \u2014 'you'll know what to do' \u2014 setting up Bret to take wildly inappropriate action",
+      "craft_total": 7.66,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect comic timing with minimal dialogue maximum impact",
+      "explanation": "This line functions as a plant for the episode's climax \u2014 'you'll know exactly when the time is right' pays off when Bret decides to expose himself to the greeting card executive. The vagueness of the advice is the joke, and the structure of 'I don't know, I just don't give specifics, trust yourself' as cosmic guidance is satirically sharp about inspirational-speak.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -1120,23 +1146,25 @@
     },
     {
       "index": 39,
-      "text": "1980 David Bowie confirming that putting a wig on a sleeping friend isn't gay",
+      "text": "Mel's compliment session for Bret: 'Hotter than Jemaine.' / 'You have a refined bone structure whereas Jemaine's facial features are too deep-set to be classically handsome.' / 'You're a better singer too. Yeah, Jemaine's often flat.'",
       "characters": [
-        "Jemaine",
-        "Bret"
+        "Mel",
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
-        "absurdist",
-        "callback"
+        "escalation",
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Bret asking dream Bowie about the wig situation",
-      "punchline": "Even imaginary Bowie validates the bizarre behavior",
-      "craft_total": 7.0,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Mel has been enlisted to compliment Bret; she begins warmly",
+      "punchline": "Each compliment for Bret becomes an increasingly specific and devastating putdown of Jemaine \u2014 the mission to boost Bret inadvertently destroys Jemaine's confidence",
+      "craft_total": 8.03,
+      "impact_score": 8.0,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Absurd validation from authority figure in Bret's subconscious",
+      "is_callback": 0,
+      "explanation": "A masterfully constructed escalation sequence. The irony is exquisite \u2014 the plan to fix Bret's confidence ends up destroying Jemaine's. Each comparative compliment is more specific and cutting than the last: 'hotter than Jemaine' \u2192 'too deep-set to be classically handsome' \u2192 'Jemaine's often flat.' Jemaine's growing distress while Bret basks is perfectly played. The structure (every compliment is really an insult to someone else) is elegant and the character integration is excellent: this could only work with Mel's obsessive comparative ranking of the band members.",
       "dialogue": [
         {
           "speaker": "",
@@ -1146,22 +1174,23 @@
     },
     {
       "index": 40,
-      "text": "Hey, it's 1980 David Bowie, from the music video 'Ashes to Ashes.'",
+      "text": "After Mel leaves, Jemaine says 'What's her problem?' \u2014 completely unaware that he engineered the whole thing",
       "characters": [
-        "Jemaine/Bowie"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "character_comedy",
-        "callback"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Second Bowie dream appearance",
-      "punchline": "Specific era and video reference",
-      "craft_total": 6.6,
-      "impact_score": 6.25,
+      "setup": "Mel has just delivered a barrage of compliments to Bret and comparative insults to Jemaine, at Jemaine's own request",
+      "punchline": "Jemaine asks 'What's her problem?' with apparent sincerity, having apparently forgotten that he set this up",
+      "craft_total": 7.56,
+      "impact_score": 7.5,
       "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Good callback to dream Bowie with different era. Shows consistency in the absurd premise.",
+      "explanation": "A clean irony gag. Jemaine's complete lack of self-awareness is the through-line of this sequence. The follow-up \u2014 him asking Bret if his facial features are 'too deep-set to be considered classically handsome' \u2014 is a nice additional beat of wounded vanity.",
       "dialogue": [
         {
           "speaker": "Bowie",
@@ -1171,22 +1200,23 @@
     },
     {
       "index": 41,
-      "text": "Actually, come to think of it, the same thing happened to me when I wore an eye patch. It was... oh, it was always, 'Bowie's bumped into a door.'",
+      "text": "Jemaine worriedly asks if his facial features are too deep-set to be classically handsome; Bret says 'I've got no idea'",
       "characters": [
-        "Jemaine/Bowie"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
         "character_comedy",
-        "meta_self_referential"
+        "irony_sarcasm"
       ],
-      "setup": "Bowie relating to the eye patch problems",
-      "punchline": "Imagining paparazzi coverage of Bowie's clumsiness",
-      "craft_total": 6.78,
-      "impact_score": 6.5,
-      "quotability": 7.5,
+      "setup": "The plan was to fix Bret's confidence; it has backfired and now Jemaine has the insecurity",
+      "punchline": "Jemaine earnestly asks Bret to validate his appearance; Bret offers nothing useful",
+      "craft_total": 7.91,
+      "impact_score": 8.17,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Funny headline and humanizes the rock star. Good absurdist touch.",
+      "is_callback": 1,
+      "explanation": "A perfect role-reversal callback \u2014 Jemaine now needs the same reassurance Bret needed, completing the ironic arc of the plan. Bret's unhelpful 'I've got no idea' mirrors Jemaine's original refusal, but without even the excuse of weirdness \u2014 he just doesn't know.",
       "dialogue": [
         {
           "speaker": "Bowie",
@@ -1196,23 +1226,25 @@
     },
     {
       "index": 42,
-      "text": "Do something absolutely outrageous. - Like what? - Well, you'll know what to do, Bret. And you'll know exactly when the time is right.",
+      "text": "The meeting with the greeting card company \u2014 Murray explaining what a greeting card with music is to the executive who makes them",
       "characters": [
-        "Jemaine/Bowie",
-        "Bret"
+        "Murray",
+        "Bret",
+        "Jemaine",
+        "David Armstrong"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Bowie giving vague advice",
-      "punchline": "Cryptic non-advice that sets up future disaster",
-      "craft_total": 6.7,
-      "impact_score": 6.0,
+      "setup": "Murray and the band meet David Armstrong of the greeting card company",
+      "punchline": "Murray and Bret/Jemaine pepper Armstrong with increasingly basic questions about how musical greeting cards work \u2014 'Is it a CD?' / 'Like headphones?' / 'Like a Walkman?' \u2014 forcing the man who invented them to repeatedly explain basic technology",
+      "craft_total": 7.69,
+      "impact_score": 7.67,
       "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sets up the penis reveal disaster. Good foreshadowing as comedy.",
+      "explanation": "The sustained sequence of extremely basic technology questions escalating to 'like a Walkman?' is a good cringe comedy sequence. Armstrong's mounting frustration while trying to maintain a professional meeting is well-played. The 'I guess you could say its second function is turning off' explanation is a particularly good beat.",
       "dialogue": [
         {
           "speaker": "Jemaine/Bowie",
@@ -1230,23 +1262,25 @@
     },
     {
       "index": 43,
-      "text": "Well, you're looking good today, Bret. Very hot. - Thank you. - Hotter than Jemaine.",
+      "text": "Mr. Armstrong patiently explains three times how musical greeting card chips work \u2014 each time Bret/Jemaine compare it to something wrong (CD, headphones, Walkman)",
       "characters": [
-        "Mel",
-        "Bret"
+        "Murray",
+        "Bret",
+        "Jemaine",
+        "Mr. Armstrong"
       ],
       "joke_types": [
-        "character_comedy",
-        "callback"
+        "running_gag",
+        "character_comedy"
       ],
-      "setup": "Mel giving compliments as planned",
-      "punchline": "Going overboard and comparing to Jemaine",
-      "craft_total": 6.45,
-      "impact_score": 6.25,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Mr. Armstrong is explaining the technology in greeting cards to Murray, who previously described it as 'magic'",
+      "punchline": "Every explanation is met with a wrong analogy. First 'Is it a CD?' then 'Like headphones?' then 'Like a Walkman?' \u2014 with Mr. Armstrong patiently saying 'No, not like a Walkman at all' after a full explanation",
+      "craft_total": 7.3,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Pays off the compliment plan but Mel goes too far. Good escalation.",
+      "explanation": "A nice slow-burn running gag. The comedy of the band/manager being completely unable to grasp chip technology (which Mr. Armstrong explains with considerable effort) also pays off Murray's 'magic card' joke. Each wrong answer is slightly worse than the last: CD \u2192 headphones \u2192 Walkman is a declining arc of tech sophistication.",
       "dialogue": [
         {
           "speaker": "Mel",
@@ -1260,22 +1294,24 @@
     },
     {
       "index": 44,
-      "text": "You have a refined bone structure whereas Jemaine's facial features are too deep-set to be classically handsome.",
+      "text": "'Um, David, when will this meeting actually begin?' / 'Well it's... it has begun.' / 'They didn't do a roll call.'",
       "characters": [
-        "Mel"
+        "Jemaine",
+        "Murray",
+        "David Armstrong"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Mel giving compliments to Bret",
-      "punchline": "Detailed critique of Jemaine's face",
-      "craft_total": 6.73,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Mel's inappropriate over-analysis. Gets specific in funny way.",
+      "setup": "They are already in the middle of the business meeting",
+      "punchline": "Jemaine doesn't recognize it as a meeting because it didn't begin with roll call \u2014 mirroring and completing Murray's opening roll-call obsession",
+      "craft_total": 8.3,
+      "impact_score": 8.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "An excellent callback with perfect structural payoff \u2014 the episode opened with Bret mocking roll call as pointless bureaucracy; now Jemaine (having absorbed Murray's meeting protocols) actually requires it to recognize a meeting as legitimate. The joke rewards viewers who remember the opening and demonstrates that the band has fully internalized Murray's absurd meeting formalism. High scores on structure and callback execution.",
       "dialogue": [
         {
           "speaker": "Mel",
@@ -1285,22 +1321,23 @@
     },
     {
       "index": 45,
-      "text": "Like headphones? No, this is a computer chip... Like a Walkman. No it's not... not like a Walkman at all.",
+      "text": "The deal: 1\u00a2 per card. Murray: 'Woah... we're talking serious money.' / 'Yes, we're talking serious money, and a lot of it too.'",
       "characters": [
+        "Murray",
         "David Armstrong"
       ],
       "joke_types": [
-        "running_gag",
-        "character_comedy"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Attempts to explain greeting card technology",
-      "punchline": "Executive's frustration with constant wrong analogies",
-      "craft_total": 6.33,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Armstrong reveals the payment rate of 1\u00a2 per card",
+      "punchline": "Murray immediately treats this as a significant financial development; Armstrong matches his enthusiasm",
+      "craft_total": 7.35,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good running gag about technological misunderstanding",
+      "is_callback": 0,
+      "explanation": "The 1\u00a2 per card deal being treated as serious money is a running joke about the band's financial situation. Armstrong genuinely also calling it serious money is an interesting detail \u2014 either he too considers 50\u00a2 significant, or he's just a good salesman.",
       "dialogue": [
         {
           "speaker": "",
@@ -1310,23 +1347,24 @@
     },
     {
       "index": 46,
-      "text": "David Armstrong's elaborate technical explanation constantly compared to a Walkman",
+      "text": "Murray describing Bret to the executive: 'You're the smaller one... you're into animals... you were bulimic recently... little touch of that... it's cleared up.'",
       "characters": [
-        "David Armstrong",
-        "Murray"
+        "Murray",
+        "Bret"
       ],
       "joke_types": [
+        "cringe_discomfort",
         "character_comedy",
-        "running_gag"
+        "escalation"
       ],
-      "setup": "Trying to explain greeting card technology",
-      "punchline": "Murray reducing everything to 'like a Walkman'",
-      "craft_total": 7.21,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Armstrong asks Murray to tell him about Bret",
+      "punchline": "Murray's 'pitch' of Bret to a potential business partner includes 'he's the smaller one,' a possible eating disorder, and an animal interest \u2014 while Bret protests each characterization",
+      "craft_total": 8.09,
+      "impact_score": 8.5,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Murray's technological confusion manifested as running gag",
+      "explanation": "The convergence of the episode's running threads \u2014 Bret's size, the bulimia misdiagnosis \u2014 into a professional pitch moment is a well-executed comedy escalation. Murray's breezy 'It's cleared up' in response to a 'medical condition' he invented is very funny. Bret's repeated 'I wasn't bulimic' being steamrolled is good cringe structure. High character integration \u2014 only Murray would pitch a band this way.",
       "dialogue": [
         {
           "speaker": "David Armstrong",
@@ -1336,23 +1374,23 @@
     },
     {
       "index": 47,
-      "text": "Um, you were bulimic recently. - I wasn't... I wasn't bulimic. - He's not now, he's fine now. - I'm not bulimic. - Little touch of that. - I wasn't bulimic. - It's cleared up.",
+      "text": "'Were there supposed to be lightning bolts on the side of it?' / 'Yeah, looked pretty good, eh?'",
       "characters": [
         "Murray",
         "Bret"
       ],
       "joke_types": [
-        "running_gag",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "callback"
       ],
-      "setup": "Murray introducing Bret to client",
-      "punchline": "Bringing up bulimia in professional meeting",
-      "craft_total": 6.55,
-      "impact_score": 6.75,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Murray is furious about the exposure incident",
+      "punchline": "Murray's only specific inquiry is about the lightning bolt decoration \u2014 treating it as an aesthetic question rather than a legal/professional catastrophe",
+      "craft_total": 8.85,
+      "impact_score": 9.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Pays off running gag in worst possible context. Murray's social incompetence.",
+      "explanation": "Tied with 'Not that I did it' as the best line in the episode. Murray's instinct to treat genital decoration as an aesthetic review item \u2014 'Were there supposed to be lightning bolts?' \u2014 is perfectly Murray: his concerns are always procedural and visual rather than human. 'Yeah, looked pretty good, eh?' from Bret completes it with equal deadpan pride. The lightning bolt callback to Ziggy Stardust adds a layer for attentive viewers. Near-perfect economy and character integration.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -1386,22 +1424,23 @@
     },
     {
       "index": 48,
-      "text": "Whoo-hoo! Whoo! Waha!",
+      "text": "'David Bowie told me to do it in a dream.' / 'Oh yeah, right, Bret. David Bowie in a dream.'",
       "characters": [
-        "Bret"
+        "Bret",
+        "Murray"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "absurdist"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Tense business meeting moment",
-      "punchline": "Bret's sudden outrageous display (penis reveal)",
-      "craft_total": 7.45,
-      "impact_score": 8.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "setup": "Murray confronts Bret about why he exposed himself",
+      "punchline": "Bret's explanation \u2014 David Bowie's dream advice \u2014 is met with Murray's flat disbelief, which from the audience's perspective is funny because we've seen the dreams",
+      "craft_total": 7.47,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Perfectly timed disaster paying off Bowie's advice. Shocking and absurd.",
+      "explanation": "The line works as a meta-joke \u2014 the audience knows Bret is telling the truth; Murray's dismissal of a literally true explanation creates dramatic irony. The 'that's typical of you' from Murray is a nice character beat.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -1411,42 +1450,42 @@
     },
     {
       "index": 49,
-      "text": "Lightning bolts painted on Bret's penis",
+      "text": "Murray's self-flagellating speech about being a bad manager: 'I could have stopped you before you revealed it, or turned it into some sort of thing, like I could have said it was a cultural New Zealand greeting.'",
       "characters": [
-        "Bret",
         "Murray"
       ],
       "joke_types": [
-        "visual_gag",
+        "character_comedy",
         "absurdist"
       ],
-      "setup": "Bret's 'outrageous' act",
-      "punchline": "He decorated his genitals with Bowie-style lightning bolts",
-      "craft_total": 7.64,
-      "impact_score": 8.17,
-      "quotability": 8.5,
+      "setup": "Murray blames himself for the meeting disaster",
+      "punchline": "His alternative crisis management plan was to claim genital exposure as a cultural New Zealand greeting \u2014 which he could have said 'we all could have done'",
+      "craft_total": 8.2,
+      "impact_score": 8.5,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Brilliant detail that makes the absurd act even more ridiculous"
+      "is_callback": 0,
+      "explanation": "Murray's instinct is not 'that was wrong' but 'I should have spun it better.' The specific alternative spin \u2014 claiming genital exhibition is a cultural New Zealand greeting, and that they could have all participated \u2014 is an inspired absurdist detail. This is extremely Murray: his management theory is essentially that any disaster can be rebranded. 'We could have all done it' is the perfect escalation of this already-absurd premise."
     },
     {
       "index": 50,
-      "text": "'I meant on your face, Bret. On your face.' regarding the lightning bolt makeup",
+      "text": "Third dream: 1986 Bowie from 'Labyrinth' \u2014 Jemaine now in a third distinct Bowie costume",
       "characters": [
-        "Jemaine"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "misdirection",
-        "callback"
+        "running_gag",
+        "visual_gag"
       ],
-      "setup": "Bret's penis lightning bolts",
-      "punchline": "Clarification of where the makeup should have gone",
-      "craft_total": 7.1,
-      "impact_score": 6.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Bret has a third dream",
+      "punchline": "Bowie appears in his most visually outrageous Labyrinth-era look \u2014 completing the trilogy of Bowie incarnations",
+      "craft_total": 7.53,
+      "impact_score": 7.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Perfect clarification that emphasizes the misunderstanding",
+      "explanation": "The running gag of increasingly elaborate Bowie costumes reaches its apex. The Labyrinth look (likely including the famous tight pants) is the most visually extravagant and provides a strong visual payoff for the trilogy.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -1456,22 +1495,23 @@
     },
     {
       "index": 51,
-      "text": "Actually, I've totally lost confidence in my ability to help people. I'm useless.",
+      "text": "'So you showed your penis to the man from the greeting-card company?' / 'That was your idea.' / 'I didn't mean something like that.'",
       "characters": [
-        "Jemaine/Bowie"
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "character_comedy",
-        "meta_self_referential"
+        "deadpan_understatement",
+        "callback"
       ],
-      "setup": "Dream Bowie realizing his advice backfired",
-      "punchline": "Even imaginary Bowie has low self-esteem",
-      "craft_total": 7.2,
-      "impact_score": 6.75,
-      "quotability": 6.0,
+      "setup": "Dream Bowie confronts Bret about what he did with his advice",
+      "punchline": "Even Bowie is taken aback \u2014 clarifying that 'outrageous' didn't mean this specific kind of outrageous",
+      "craft_total": 8.19,
+      "impact_score": 8.5,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Meta joke about the episode's theme through dream character. Self-aware writing.",
+      "is_callback": 1,
+      "explanation": "The confrontation between dream-guide and dreamer about the interpretation of vague advice is a great comedic premise. Bowie's 'I only meant something like...I don't know, wear makeup or...' followed by Bret: 'I was wearing makeup. I had lightning bolts on my wanger.' \u2014 this exchange is excellent. The word 'wanger' delivered deadpan is a perfect New Zealand comedy touch.",
       "dialogue": [
         {
           "speaker": "Bowie",
@@ -1481,23 +1521,22 @@
     },
     {
       "index": 52,
-      "text": "I'm going to a party. I'm already 20 minutes late. - Sounds cool. Where's the party? In space, Bret. In space.",
+      "text": "'I was wearing makeup. I had lightning bolts on my wanger.'",
       "characters": [
-        "Jemaine/Bowie",
         "Bret"
       ],
       "joke_types": [
-        "absurdist",
-        "setup_punchline"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Bowie leaving for a party",
-      "punchline": "The party is in space",
-      "craft_total": 7.6,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Bowie says he only meant outrageous like wearing makeup",
+      "punchline": "Bret points out he WAS wearing makeup \u2014 on his genitals \u2014 delivered with complete seriousness as if this is a reasonable clarification",
+      "craft_total": 8.75,
+      "impact_score": 9.25,
+      "quotability": 9.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Sets up the space song perfectly. Absurd but delivered matter-of-factly.",
+      "is_callback": 1,
+      "explanation": "One of the most quotable lines of the episode. The deadpan insistence that lightning bolt makeup on one's genitals satisfies the 'wear makeup' criterion is inspired. The New Zealand colloquial 'wanger' delivers the punchline with maximum charm. Perfect economy, perfect character \u2014 Bret's literal-minded good faith in following advice is his entire personality. This is very close to a 9-level joke.",
       "dialogue": [
         {
           "speaker": "Jemaine/Bowie",
@@ -1515,22 +1554,22 @@
     },
     {
       "index": 53,
-      "text": "Bowie going to a party 'in space'",
+      "text": "Bowie: 'I meant on your face, Bret. On your face.'",
       "characters": [
         "Jemaine"
       ],
       "joke_types": [
-        "absurdist",
+        "deadpan_understatement",
         "setup_punchline"
       ],
-      "setup": "Bowie leaving the dream",
-      "punchline": "Casual mention of space party as social obligation",
-      "craft_total": 7.1,
-      "impact_score": 6.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Sets up the space song with perfect absurdist logic",
+      "setup": "Bret has just argued that lightning bolt penile makeup counts as wearing makeup",
+      "punchline": "Bowie's clarification \u2014 on your face \u2014 is delivered with the weary patience of someone who has made a catastrophic error in giving vague advice",
+      "craft_total": 8.12,
+      "impact_score": 8.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The repetition of 'On your face' \u2014 the second one for emphasis \u2014 is the perfectly calibrated comedic beat. Bowie's tone shifts from mystical advisor to exasperated teacher. Six words, pure punch. The economy is near-perfect.",
       "dialogue": [
         {
           "speaker": "",
@@ -1540,41 +1579,42 @@
     },
     {
       "index": 54,
-      "text": "'Bowie's in Space' song - entire musical number",
+      "text": "Bowie admits he's totally lost confidence in his ability to help people and calls himself useless",
+      "characters": [
+        "Jemaine"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Bret asks for more advice after the disaster",
+      "punchline": "Dream Bowie, having given advice that led to public indecency, declares himself useless and loses all confidence",
+      "craft_total": 7.78,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The ironic reversal \u2014 the confidence advisor who came to boost Bret's self-esteem has now lost his own confidence \u2014 is a lovely structural echo. Bowie experiencing the same confidence crisis as Bret is the thematic joke of the episode completed. 'I might as well be' (responding to 'maybe you're just a figment of my imagination') is also a very good line."
+    },
+    {
+      "index": 55,
+      "text": "'Jemaine actually thinks that maybe you're a figment of my imagination.' / 'I might as well be, Bret. I might as well be.'",
       "characters": [
         "Bret",
         "Jemaine"
       ],
       "joke_types": [
-        "absurdist",
-        "wordplay_pun"
+        "meta_self_referential",
+        "deadpan_understatement"
       ],
-      "setup": "Bowie going to space party",
-      "punchline": "Elaborate space-themed song with multiple puns and absurd questions",
-      "craft_total": 7.53,
-      "impact_score": 7.5,
-      "quotability": 9.5,
-      "rewatch_bonus": 1,
+      "setup": "Bret relays Jemaine's skepticism about the dreams",
+      "punchline": "Bowie's deflated 'I might as well be' is a self-deprecating acknowledgment of his complete failure as a supernatural guide",
+      "craft_total": 8.23,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Masterful musical comedy with brilliant wordplay like 'groovatational' and 'Mick Jaggernauts'"
-    },
-    {
-      "index": 55,
-      "text": "'Do you want to borrow my jumper, Bowie? / Does the space cold make your nipples go pointy, Bowie?'",
-      "characters": [
-        "Bret"
-      ],
-      "joke_types": [
-        "absurdist"
-      ],
-      "setup": "Practical concerns about space travel",
-      "punchline": "Oddly specific and childlike questions about space physics",
-      "craft_total": 7.61,
-      "impact_score": 7.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect Bret-style innocent questions that become unexpectedly sexual",
+      "explanation": "The 'I might as well be' line does double duty \u2014 it's a meta acknowledgment that Bowie IS a figment (Jemaine in costume) and simultaneously a character beat of a defeated advisor. The line exists in two registers at once: absurdist meta-commentary and character comedy. Well-constructed.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -1584,22 +1624,23 @@
     },
     {
       "index": 56,
-      "text": "'Do you use your pointy nipples / As telescopic antennae to transmit data back to Earth?'",
+      "text": "'I'm going to a party.' / 'Sounds cool. Where's the party?' / 'In space, Bret. In space.'",
       "characters": [
+        "Jemaine",
         "Bret"
       ],
       "joke_types": [
         "absurdist",
-        "escalation"
+        "deadpan_understatement"
       ],
-      "setup": "Pointy nipples question",
-      "punchline": "Elaborate scientific purpose for nipples as communication device",
-      "craft_total": 7.98,
-      "impact_score": 8.25,
-      "quotability": 9.0,
+      "setup": "Bowie announces he has to leave",
+      "punchline": "The party is in space \u2014 delivered as matter-of-factly as if it's a Brooklyn loft",
+      "craft_total": 8.02,
+      "impact_score": 8.0,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Brilliant escalation that turns innocent question into absurd sci-fi concept",
+      "is_callback": 0,
+      "explanation": "A beautifully absurdist setup for the final song. 'Sounds cool. Where's the party?' from Bret is the perfect straight man response \u2014 he'd go if he could. The plant for 'Bowie's in Space' is elegant. The deadpan delivery of 'In space, Bret. In space' \u2014 with the repetition for gravity \u2014 is very well-timed.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -1609,22 +1650,24 @@
     },
     {
       "index": 57,
-      "text": "'Do you have one really funky sequined space suit / Or do you have several ch-changes?'",
+      "text": "'Bowie's in Space' \u2014 the full closing song, particularly 'Does the space cold make your nipples go pointy, Bowie?' and 'Do you use your pointy nipples as telescopic antennae to transmit data back to Earth?'",
       "characters": [
         "Bret",
         "Jemaine"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "absurdist",
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Questions about Bowie's space wardrobe",
-      "punchline": "Pun on Bowie's song 'Changes' incorporated naturally",
-      "craft_total": 8.1,
-      "impact_score": 8.0,
-      "quotability": 8.0,
+      "setup": "Bret and Jemaine sing a song about Bowie being in space, imagining his experience",
+      "punchline": "The song escalates from genuine wonder ('Isn't it cold out in space?') through concern ('Do you want to borrow my jumper?') to completely insane imagery: nipples as data-transmitting antennae, 'Mick Jaggernauts,' 'Afronauts,' 'groovatational pull,' and the two Bowies communicating with each other across space",
+      "craft_total": 9.06,
+      "impact_score": 9.5,
+      "quotability": 9.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Clever wordplay that references Bowie's catalog while maintaining song narrative",
+      "explanation": "The show's centerpiece musical achievement in this episode. The song is a masterwork of comedic escalation \u2014 it begins with the mundane concern of a New Zealand kid ('isn't it cold?', 'do you want to borrow my jumper?') and ascends through increasingly bizarre cosmic imagery. The structural genius: the song reaches 'Bowie to Bowie' (Jemaine playing both Bowie and a second Bowie communicating with the first), 'groovatational pull' as a portmanteau, 'Mick Jaggernauts' as a pun, and nipple antennae as data transmission hardware. The FOTC musical voice is at its most distinctive here: sweet, na\u00efve, absurdist, and deeply specific. 'Bet you do, you freaky old bastard, you' is the perfect tonal pivot from wonder to affectionate irreverence. Scores at the same level as 'Bret, You Got It Going On' for different reasons \u2014 where that song is character-driven, this one is pure comedic escalation and wordplay at a very high level.",
       "dialogue": [
         {
           "speaker": "",
@@ -1634,22 +1677,23 @@
     },
     {
       "index": 58,
-      "text": "'Do you smoke grass out in space, Bowie? / Or do they smoke... / AstroTurf?'",
+      "text": "'Do you smoke grass out in space, Bowie? / Or do they smoke... AstroTurf?'",
       "characters": [
         "Bret",
         "Jemaine"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "wordplay_pun",
+        "absurdist"
       ],
-      "setup": "Question about drug use in space",
-      "punchline": "Pun substituting artificial grass for marijuana",
-      "craft_total": 7.04,
-      "impact_score": 6.67,
-      "quotability": 8.0,
+      "setup": "The song speculates about Bowie's activities in space",
+      "punchline": "The grass/AstroTurf pun \u2014 smoking 'AstroTurf' as the space-appropriate equivalent of marijuana",
+      "craft_total": 7.86,
+      "impact_score": 7.5,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Solid pun with good setup and payoff timing",
+      "is_callback": 0,
+      "explanation": "One of the sharpest wordplay gags in the episode. 'Grass' (marijuana slang) \u2192 'AstroTurf' (synthetic grass) as the space-environment upgrade is elegant, quick, and genuinely clever. The comedic pause before 'AstroTurf' is musically timed perfectly. A great pun that earns its laugh rather than just being silly.",
       "dialogue": [
         {
           "speaker": "",
@@ -1667,21 +1711,23 @@
     },
     {
       "index": 59,
-      "text": "'I'm picking it up on my L.S.D. Screen'",
+      "text": "'Drawn in by its groovatational pull' and 'I'm jamming out with the Mick Jaggernauts'",
       "characters": [
+        "Bret",
         "Jemaine"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "wordplay_pun",
+        "absurdist"
       ],
-      "setup": "Space communication technology",
-      "punchline": "L.S.D. instead of standard radar/sonar abbreviations",
-      "craft_total": 6.88,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "The song describes Bowie orbiting Pluto",
+      "punchline": "Two portmanteau coinages: 'groovatational' (groove + gravitational) and 'Mick Jaggernauts' (Mick Jagger + Juggernauts) delivered with total seriousness",
+      "craft_total": 8.54,
+      "impact_score": 8.75,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Subtle drug reference that works as both technical term and hallucinogen",
+      "is_callback": 0,
+      "explanation": "Two exceptional portmanteaus in quick succession. 'Groovatational' \u2014 gravitational pull with groove \u2014 is a genuinely ingenious coinage that captures Bowie's aesthetic perfectly. 'Mick Jaggernauts' is even better: rock star name + mythological giant robots + space context, all in one word. These are the kinds of coinages that demonstrate real comedic wordcraft \u2014 they're funny, specific, and couldn't exist in any other song about any other subject.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -1691,42 +1737,42 @@
     },
     {
       "index": 60,
-      "text": "Bret's innocent conclusion about confidence after the space song",
+      "text": "Episode coda: Bret concludes that if dream-Bowie lacks confidence, 'maybe most people aren't that confident... I'm not gonna worry about being confident.' Jemaine: 'Yeah, we don't need to worry about being confident.' Then: 'But it's not really him though. It's a dream.'",
+      "characters": [
+        "Bret",
+        "Jemaine"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "The episode's emotional resolution \u2014 Bret has found peace with his body image",
+      "punchline": "His reasoning is that Bowie (a figment) lacked confidence, therefore confidence is overrated. Jemaine agrees, then immediately undermines the entire logic: 'It's not really him though. It's a dream.'",
+      "craft_total": 7.85,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A very good episode button \u2014 the resolution of Bret's arc is based on completely invalid reasoning (a dream character's confidence doesn't prove anything about real people) and Jemaine immediately and quietly notes this. The joke is that Bret's recovery is real even though its basis is logically absurd, and Jemaine's 'but it's not really him though' destroys the argument while Bret maintains his peace. Classic Conchords episodic resolution."
+    },
+    {
+      "index": 61,
+      "text": "Bret says 'I'm not eating anymore. I'm a bit too fat.' \u2014 immediately after claiming his body image issues are resolved",
       "characters": [
         "Bret"
       ],
       "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Epic space adventure song",
-      "punchline": "Bret's simple takeaway about not worrying about confidence",
-      "craft_total": 7.76,
+      "setup": "Bret has just announced he's over his body image issues",
+      "punchline": "He immediately refuses Jemaine's request for his biscuit, citing being 'a bit too fat' \u2014 the resolution is immediately contradicted",
+      "craft_total": 7.73,
       "impact_score": 7.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Bret moment - reducing epic journey to simple life lesson"
-    },
-    {
-      "index": 61,
-      "text": "Is it a really big biscuit? - It's not a biscuit! I said no biscuit. It's not gonna be another kind, is it?",
-      "characters": [
-        "Bret",
-        "Murray"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Murray's guessing game about what's in his hand",
-      "punchline": "Bret's literal interpretation ruins the game",
-      "craft_total": 6.62,
-      "impact_score": 6.33,
-      "quotability": 5.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing how Bret's literal thinking frustrates Murray.",
+      "is_callback": 1,
+      "explanation": "A perfect ironic button \u2014 Bret's 'resolution' lasted approximately thirty seconds. The show doesn't actually resolve its characters' issues; it circles them. This is an honest and funny ending to the body image arc.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -1740,23 +1786,24 @@
     },
     {
       "index": 62,
-      "text": "Can I get a copy of that, Murray? - No no, 'cause that would cost more than 50\u00a2, and then we'd... we'd be down, wouldn't we?",
+      "text": "Murray's 'guess what's in my hand' game: guesses are 'a biscuit' and 'another kind of biscuit' and 'a really big biscuit'",
       "characters": [
-        "Bret",
-        "Murray"
+        "Murray",
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "deadpan_understatement"
       ],
-      "setup": "Bret wanting a copy of their card",
-      "punchline": "Murray's paranoid accounting over tiny amounts",
-      "craft_total": 7.82,
-      "impact_score": 7.75,
-      "quotability": 6.0,
+      "setup": "Murray arrives with exciting news and wants to build suspense with a guessing game",
+      "punchline": "The band's guesses all escalate within the biscuit category; Murray's 'It's not gonna be another kind, is it?' / 'Is it a really big biscuit?' is the perfect escalation of the gag",
+      "craft_total": 7.93,
+      "impact_score": 8.0,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Murray's business paranoia over microscopic amounts. Good character consistency.",
+      "explanation": "A beautifully absurd guessing-game sequence. The failure mode of the guessing game \u2014 Jemaine guessing 'another kind of biscuit' after 'a biscuit' was explicitly ruled out \u2014 and Bret's escalation to 'a really big biscuit' captures the deadpan absurdism of the band perfectly. Murray's exasperation: 'You've ruined this game. I'll just show you.' is the right button.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -1770,33 +1817,54 @@
     },
     {
       "index": 63,
-      "text": "Final reprise of 'Bowie's in Space' with vocal flourishes",
+      "text": "The greeting card deal: half a million cards speculated, but only 50 are being made. 'We've got 50\u00a2, so how much are your coffees?' / '60\u00a2.' \u2014 they can't afford coffee",
       "characters": [
+        "Murray",
         "Bret",
         "Jemaine"
       ],
       "joke_types": [
-        "callback"
+        "setup_punchline",
+        "deadpan_understatement"
       ],
-      "setup": "Episode ending",
-      "punchline": "Returning to the space song as musical conclusion",
-      "craft_total": 6.78,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Murray announced 'serious money' from the greeting card deal",
+      "punchline": "Total earnings: 50\u00a2. Coffee costs 60\u00a2. They are 10\u00a2 short of being able to afford coffee from their creative achievement.",
+      "craft_total": 8.0,
+      "impact_score": 8.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Solid musical conclusion that reinforces the episode's signature song",
+      "explanation": "The arithmetic is the joke and it's executed perfectly. The cascade: 1\u00a2 per card \u2192 half a million cards (serious money!) \u2192 only 50 cards printed \u2192 50\u00a2 total \u2192 coffee costs 60\u00a2 \u2192 they cannot afford coffee. The deflation from financial fantasy to inability to buy a 60\u00a2 coffee is an elegant structural joke about the band's situation. 'We'd be down, wouldn't we? The whole thing would be a waste' from Murray treating 50\u00a2 as a meaningful budget is characteristically deadpan.",
       "dialogue": [
         {
           "speaker": "",
           "line": "Final reprise of 'Bowie's in Space' with vocal flourishes"
         }
       ]
+    },
+    {
+      "index": 64,
+      "text": "Jemaine can't get a copy of the card because 'that would cost more than 50\u00a2, and then we'd be down, wouldn't we? The whole thing would be a waste.'",
+      "characters": [
+        "Murray",
+        "Jemaine"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Jemaine asks if he can get a copy of the greeting card featuring their song",
+      "punchline": "Murray does the math: one card costs more than their entire earnings from the deal. The whole deal's profit margin cannot absorb one copy for the artist.",
+      "craft_total": 7.8,
+      "impact_score": 7.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The perfectly logical extension of the 50\u00a2 joke. Murray's concern that buying one copy of the card 'would be a waste' \u2014 meaning they'd net less than zero \u2014 is the show's commentary on the band's career trajectory. The financial math is actually correct, which makes it funnier."
     }
   ],
   "imdb_rating": 8.0,
   "imdb_votes": 830,
   "tmdb_overview": "After a photo session, Bret develops body image issues and gets some dream advice from his idol, David Bowie. Jemaine plots to cheer him up and Murray tries to get one of the band's tunes used for a musical greeting card.",
-  "still_path": "/l4ZU4GWHMaAoDv6YzqSA6coXtLp.jpg",
-  "air_date": "2007-07-22"
+  "still_path": "/l4ZU4GWHMaAoDv6YzqSA6coXtLp.jpg"
 }
