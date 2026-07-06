@@ -4,19 +4,39 @@
   "season": 1,
   "episode_number": 7,
   "title": "Full Disclosure",
-  "humor_index": 79.2,
-  "jpm": 2.28,
-  "avg_craft": 7.16,
-  "avg_impact": 6.81,
-  "total_jokes": 71,
-  "war": 69.9,
-  "dominant_joke_types": "[\"escalation\", \"character_comedy\", \"cringe_discomfort\"]",
-  "standout_joke_ids": "[28, 59, 3]",
+  "humor_index": 84.0,
+  "jpm": 2.77,
+  "avg_craft": 7.05,
+  "avg_impact": 7.03,
+  "total_jokes": 86,
+  "war": 89.4,
+  "dominant_joke_types": "[\"character_comedy\", \"setup_punchline\", \"irony_sarcasm\"]",
+  "standout_joke_ids": "[32, 83, 57]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "I have a black belt in Mike Kwan Do",
+      "text": "Radio hosts discussing the VP fired a secret service man for smiling; correction that he was 'reassigned' as if that changes anything",
+      "characters": [
+        "Radio Hosts",
+        "Amy"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "setup_punchline"
+      ],
+      "setup": "Radio hosts report the VP fired a secret service man for smiling, which sounds absurd",
+      "punchline": "The correction that he was merely 'reassigned' is treated as a meaningful distinction but underscores how petty the original act was",
+      "craft_total": 6.39,
+      "impact_score": 5.83,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A solid cold-open comedic framing device. The split-second correction makes the whole situation more ridiculous rather than less. Functional and efficient exposition-as-comedy."
+    },
+    {
+      "index": 2,
+      "text": "'I have a black belt in Mike Kwan Do.'",
       "characters": [
         "Mike"
       ],
@@ -24,75 +44,498 @@
         "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "Mike claims he can 'bust some moves' in town, suggesting political savvy",
-      "punchline": "Reveals it's actually a martial arts pun on his own name",
-      "craft_total": 7.07,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Mike says he can 'bust some moves in this town' \u2014 already a cringeworthy boast",
+      "punchline": "He invents a martial art named after himself to back it up",
+      "craft_total": 7.03,
+      "impact_score": 6.67,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect character moment for Mike - self-aggrandizing but ultimately revealing his dorky nature. Clean wordplay with good economy."
+      "explanation": "A near-perfect little joke. 'Mike Kwan Do' is a coined word that captures Mike's delusional self-regard in four syllables. It escalates his 'bust some moves' boast in a perfectly absurd way that is uniquely character-specific \u2014 no other character in this show could land this joke. High quotability. Nearly earns an 8 but is too slight a moment to reach that tier."
     },
     {
-      "index": 2,
-      "text": "Hands off the suit",
+      "index": 3,
+      "text": "Amy's flat 'All right, sir, no.' in response to Mike Kwan Do",
+      "characters": [
+        "Amy"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Mike has just declared himself a black belt in 'Mike Kwan Do'",
+      "punchline": "Amy's total, exhausted refusal in three words is funnier than any actual counter-argument",
+      "craft_total": 6.99,
+      "impact_score": 6.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Amy's straight-woman exhaustion is a recurring comedic engine. 'All right, sir, no.' is maximally economical \u2014 three words covering dismissal, hierarchy acknowledgment, and utter exasperation. The 'sir' is the killer detail."
+    },
+    {
+      "index": 4,
+      "text": "'Hey, hey, easy, dough boy. Hands off the suit.'",
       "characters": [
         "Mike"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "physical_slapstick"
       ],
-      "setup": "Mike just made a martial arts boast",
-      "punchline": "Immediately deflates when physically confronted, protecting his suit instead of fighting",
-      "craft_total": 6.67,
-      "impact_score": 6.0,
+      "setup": "Amy presumably touches or grabs Mike physically to stop him from dancing/boasting",
+      "punchline": "Mike calls her 'dough boy' \u2014 a fat joke \u2014 while protesting his suit being touched, a wildly disproportionate response",
+      "craft_total": 5.31,
+      "impact_score": 5.0,
       "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good follow-up that undercuts Mike's bravado, showing his priorities are appearance over action."
+      "explanation": "A serviceable insult that's a bit lazy \u2014 'dough boy' is generic. The humor mostly comes from Mike's obliviousness and misplaced vanity about his suit, which is character-consistent but not sharp writing."
     },
     {
-      "index": 3,
-      "text": "You must have a huge schadenboner over this Amy flack",
+      "index": 5,
+      "text": "Dan on phone: 'Oh, I take no pleasure in my colleague's very public, brutal...' \u2014 then interrupted by Jonah telling him to move away from the TV",
+      "characters": [
+        "Dan",
+        "Jonah"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "reaction_beat"
+      ],
+      "setup": "Dan is performing false sympathy for Amy's humiliation on the phone",
+      "punchline": "He's so flagrantly lying that he can't even finish the sentence before being physically interrupted by Jonah, who has no interest in his performance",
+      "craft_total": 7.11,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dan's performative fake-sympathy is a consistent character beat and the interruption cuts it perfectly. The joke is in the architecture: Dan crafting a show of magnanimity while being cut off by someone who doesn't care."
+    },
+    {
+      "index": 6,
+      "text": "'You must have a huge schadenboner over this Amy flack.'",
+      "characters": [
+        "Jonah"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Dan is pretending not to enjoy Amy's humiliation",
+      "punchline": "Jonah coins 'schadenboner' \u2014 a portmanteau of schadenfreude and erection \u2014 cutting right through the pretense",
+      "craft_total": 7.77,
+      "impact_score": 7.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's standout coined words. 'Schadenboner' is genuinely brilliant \u2014 it does exactly what great portmanteau insults should do: compress a complex psychological observation (taking sexual pleasure in another's downfall) into a single vulgar, precise, and memorable word. Highly quotable, instantly understood, and characteristically crude in the way Veep does best. Justifies the 8+ score."
+    },
+    {
+      "index": 7,
+      "text": "'God, she is gonna go ape-shit menstrual over this.' / 'Hey, I'm on the phone with AT&T. Can you stop shouting \"menstrual\"?'",
+      "characters": [
+        "Dan",
+        "Jonah"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "escalation"
+      ],
+      "setup": "Dan uses the phrase 'ape-shit menstrual' \u2014 already an absurdly vivid compound insult",
+      "punchline": "Someone nearby (Jonah/Dan's roommate) is on the phone with AT&T customer service and objects specifically to the word 'menstrual' being shouted",
+      "craft_total": 6.79,
+      "impact_score": 6.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The escalation structure is clean: absurd insult \u2192 mundane domestic interruption \u2192 the specific objection to 'menstrual' rather than the whole phrase is what makes it land. The AT&T detail grounds the absurdity in recognizable reality."
+    },
+    {
+      "index": 8,
+      "text": "Dan's extended metaphor: 'broken fucking condom' pregnancy rumor / 'dead Dan walk' \u2014 punctuated by the sound of something breaking in the apartment",
       "characters": [
         "Dan"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "dark_subversive"
+        "escalation",
+        "physical_slapstick"
       ],
-      "setup": "Dan calling about Amy's public humiliation",
-      "punchline": "Combines 'schadenfreude' with 'boner' to create a vulgar portmanteau about taking pleasure in others' pain",
-      "craft_total": 7.87,
+      "setup": "Dan is listing all the reasons Jonah is more screwed than Amy \u2014 building an elaborate metaphorical case",
+      "punchline": "He reaches his grand conclusion ('dead Dan walk') just as something physically breaks in the apartment, deflating his rhetorical momentum completely",
+      "craft_total": 6.73,
+      "impact_score": 6.67,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedic deflation of Dan's speechifying by a mundane domestic accident is a solid anti-climax gag. Dan's rhetorical pomposity interrupted by something breaking mid-crescendo is structurally satisfying."
+    },
+    {
+      "index": 9,
+      "text": "'This is going in with the dirty dishes, man. For fuck's sake. If this is broken, I'm adding it to your fucking rent.'",
+      "characters": [
+        "Jonah"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Something has broken in the apartment \u2014 implicitly a shared item between Dan and Jonah",
+      "punchline": "The reveal that Dan and Jonah are roommates, implied by the rent threat \u2014 two political rivals sharing domestic life",
+      "craft_total": 7.0,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The joke isn't in the line itself but in the world-building reveal: Dan and Jonah are roommates. This recontextualizes their entire dynamic \u2014 sworn political frenemies forced into domestic cohabitation. The banality of 'I'm adding it to your rent' underscores the absurdity magnificently."
+    },
+    {
+      "index": 10,
+      "text": "'I was gonna say that brings a smile to my face, but that would be safe, wouldn't it, ma'am?' \u2014 police official making a smiling joke to Selina",
+      "characters": [
+        "Bill",
+        "Selina"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "irony_sarcasm"
+      ],
+      "setup": "Selina is famous today for firing someone for smiling; the police official is wrapping up a meeting",
+      "punchline": "He almost says 'brings a smile to my face' \u2014 catches himself \u2014 makes the meta-joke about not smiling being 'safe' in her presence",
+      "craft_total": 6.78,
+      "impact_score": 6.75,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A competent in-world joke that the episode's premise enables. The police chief's self-aware humor is a nice touch \u2014 someone from outside the VP bubble commenting on the absurdity. Functional but not exceptional."
+    },
+    {
+      "index": 11,
+      "text": "'That's very funny, Bill. You're fired. I'm kidding. I'm kidding, I'm kidding.'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Bill has just made a light joke about not smiling",
+      "punchline": "Selina reflexively says 'you're fired' \u2014 the exact thing she's in trouble for \u2014 then has to rapidly walk it back",
+      "craft_total": 7.11,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Selina's self-defeating behavior is the core of her character \u2014 she literally re-enacts the thing she's in trouble for. The triple 'I'm kidding' is perfect escalating panic. Strong character integration: only Selina would be this obliviously self-sabotaging."
+    },
+    {
+      "index": 12,
+      "text": "'Hey, ma'am, it's leave o'clock.'",
+      "characters": [
+        "Gary"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Selina has been in the meeting too long; Gary needs to signal departure",
+      "punchline": "'Leave o'clock' \u2014 Gary's infantilizing, overly cute way of telling the VP it's time to go, as if she were a child",
+      "craft_total": 6.73,
+      "impact_score": 6.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Gary's infantilizing coddling of Selina is a running character comedy engine, and 'leave o'clock' perfectly encapsulates his obsequious, baby-talk relationship to her. High character integration score \u2014 this is utterly Gary."
+    },
+    {
+      "index": 13,
+      "text": "'Secret' as in shut the fuck up. And 'service' as in you work for me, okay? So why don't you shut the fuck up?",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Selina is raging about the secret service leak",
+      "punchline": "She does a pseudo-dictionary breakdown of 'Secret Service' that reduces to 'shut the fuck up' twice \u2014 the second leg weaker than the first",
+      "craft_total": 7.23,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A solid Selina rage-speech with a neat rhetorical structure \u2014 she deconstructs the phrase to extract her preferred meaning. The second leg ('service as in you work for me') is a slight letdown after the first, but the overall delivery and structure work."
+    },
+    {
+      "index": 14,
+      "text": "'We have an enemy and I want a name and a severed head that answers to that name, or would if it could still talk.'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "escalation"
+      ],
+      "setup": "Selina demands accountability for the leak",
+      "punchline": "The escalating demand for a severed head \u2014 then the logical self-correction that it couldn't answer if severed \u2014 which she includes anyway",
+      "craft_total": 7.75,
       "impact_score": 7.83,
       "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant neologism that captures both Dan's character and the show's linguistic creativity. Economical and memorable."
+      "explanation": "This is exceptional writing. The joke has a three-part structure: (1) hyperbolic medieval demand for a severed head, (2) the bizarrely literal qualification 'that answers to that name,' (3) the self-undermining correction 'or would if it could still talk.' The self-aware absurdist logic \u2014 she realizes mid-sentence the severed head can't answer and just... keeps going \u2014 is what elevates this from a standard rage-hyperbole to something genuinely brilliant. Quotable, character-perfect, and structurally elegant. Justifies the 8+ score."
     },
     {
-      "index": 4,
-      "text": "God, she is gonna go ape-shit menstrual over this",
+      "index": 15,
+      "text": "'Ooh, Gary, did the veep just bitch-slap you with a door?'",
       "characters": [
-        "Dan"
+        "Unnamed Staffer"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "cringe_discomfort"
+        "physical_slapstick",
+        "reaction_beat"
       ],
-      "setup": "Dan describing Amy's potential reaction to the news",
-      "punchline": "Uses 'menstrual' as an intensifier, creating uncomfortable gender-based humor",
-      "craft_total": 6.41,
-      "impact_score": 6.0,
+      "setup": "Selina storms into her office and presumably slams the door, hitting Gary who was too close",
+      "punchline": "A bystander narrates the physical indignity with a cheerful 'ooh' \u2014 the visual gag of Gary being door-slapped by the woman he adores",
+      "craft_total": 6.44,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A physical comedy beat that relies on the visual \u2014 Gary being literally hit by Selina's door is a perfect metaphor for his relationship with her. The narrator's cheerful 'ooh' is the right comedic tone. Works well as a transitional beat."
+    },
+    {
+      "index": 16,
+      "text": "Gary: 'She didn't mean that. She's got a lot on her mind today.' / Staffer: 'Oh, yeah, you mean like firing Amy? Or someone who's undermining the president...'",
+      "characters": [
+        "Gary"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Gary reflexively defends Selina after she literally hits him with a door",
+      "punchline": "His defense is met with a list of all the things on Selina's mind \u2014 none of which Gary acknowledges because his loyalty is absolute and blind",
+      "craft_total": 5.69,
+      "impact_score": 5.0,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Gary's Stockholm-syndrome loyalty to Selina is consistently funny. The joke is in the gap between Gary's unconditional defense and the obvious reality everyone else sees. Solid character work."
+    },
+    {
+      "index": 17,
+      "text": "'Oh, what, is she out of hand sanitizer again?'",
+      "characters": [
+        "Unnamed Staffer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Gary says he needs to tell the team something important",
+      "punchline": "The staffer guesses Selina's 'crisis' is running out of hand sanitizer \u2014 implying this is a thing that has happened",
+      "craft_total": 7.29,
+      "impact_score": 7.5,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Veep vulgarity that reveals character callousness, though somewhat lazy gender-based humor."
+      "explanation": "A quick character detail joke that does a lot with a little \u2014 it implies a whole backstory of Selina's neurotic high-maintenance demands treated as office crises. Economy is the joke's strength."
     },
     {
-      "index": 5,
-      "text": "Hey, I'm on the phone with AT&T. Can you stop shouting 'menstrual'?",
+      "index": 18,
+      "text": "'Gary, why are you talking in cliffhangers?'",
+      "characters": [
+        "Amy"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Gary is dramatically building up to something, clearly struggling to say it",
+      "punchline": "Amy cuts through his drama with a perfectly precise meta-observation about his speech pattern",
+      "craft_total": 6.93,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Talking in cliffhangers' is a sharp, quotable observation that perfectly captures Gary's dramatic, enabling style. Amy's deadpan frustration is her comic signature and this is one of her better lines in the episode."
+    },
+    {
+      "index": 19,
+      "text": "Gary reveals: 'Selina's had a miscarriage.' \u2014 followed immediately by Dan: 'Well, this is good for us.'",
+      "characters": [
+        "Gary",
+        "Dan"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Gary has dramatically revealed the VP's deeply personal miscarriage to the staff",
+      "punchline": "Dan's instant, unsentimental political calculation: 'Well, this is good for us.'",
+      "craft_total": 7.34,
+      "impact_score": 7.25,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The best pure beat in the episode. The structural genius is in the timing: Gary delivers the genuine emotional gut-punch of a miscarriage, the expected beat is a moment of human response, and Dan immediately converts it to political calculus with four words. 'Well, this is good for us' is both funny and character-defining \u2014 it tells you everything about Dan in one sentence. The 'nicely done, Dandroid' follow-up confirms everyone clocked the darkness. The pivot speed is what creates the laugh: zero processing time, zero humanity. Justifies the 8+ score."
+    },
+    {
+      "index": 20,
+      "text": "'How is she?' / 'Free from a major fucking political headache, I'd say.'",
+      "characters": [
+        "Amy",
+        "Dan"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Amy asks the humane question \u2014 how is Selina after her miscarriage?",
+      "punchline": "Dan answers with a purely political assessment, not even acknowledging the emotional register of Amy's question",
+      "craft_total": 7.72,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfect callback and escalation of joke 19. Dan doubling down on the political-only framing when directly asked a human question is the comedy of his sociopathy. 'Free from a major fucking political headache' is the exact wrong answer delivered with total confidence. Strong craft and impact \u2014 Dan's character at its darkest and funniest."
+    },
+    {
+      "index": 21,
+      "text": "'That's deep space cold, Dan. Explains why you piss liquid nitrogen.'",
+      "characters": [
+        "Unnamed Staffer (Ted?)"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Someone calls Dan's response 'deep space cold'",
+      "punchline": "The follow-up line escalates to the physical: he pisses liquid nitrogen \u2014 a vivid, absurdist articulation of Dan's coldness",
+      "craft_total": 7.15,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Piss liquid nitrogen' is a strong insult that extends the 'deep space cold' metaphor with a viscerally funny physical image. The escalation from abstract (deep space) to bodily function is good comedy craft. Quotable."
+    },
+    {
+      "index": 22,
+      "text": "Gary, having just revealed the VP's miscarriage to the room, pivots to pretend he was telling them about his riding mower",
+      "characters": [
+        "Gary"
+      ],
+      "joke_types": [
+        "misdirection",
+        "character_comedy"
+      ],
+      "setup": "A colleague walks in and asks what's going on mid-conversation about the miscarriage",
+      "punchline": "Gary instantly invents 'I was telling the guys about my riding mower I got' \u2014 the most mundane possible cover story",
+      "craft_total": 7.32,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedic gap between 'Vice President had a miscarriage' and 'riding mower' is enormous, and the specificity of the riding mower (not just 'a mower') makes it funnier. Gary's complete non-sequitur competence at damage control is a strong character beat."
+    },
+    {
+      "index": 23,
+      "text": "'Wow, Gary. That was quick. Look at that.'",
+      "characters": [
+        "Amy"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "deadpan_understatement"
+      ],
+      "setup": "Gary has just implausibly pivoted from the miscarriage to riding mowers",
+      "punchline": "Amy's flat acknowledgment \u2014 not impressed, not amused, just clinically noting the speed of the lie",
+      "craft_total": 6.4,
+      "impact_score": 6.0,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Serviceable reaction beat that punctuates joke 22. Amy's flat delivery is reliable but this particular line doesn't add much beyond acknowledging the previous gag."
+    },
+    {
+      "index": 24,
+      "text": "'White House is in the house. * Everybody say way-o! *' \u2014 presumably Jonah singing/announcing his own entrance",
+      "characters": [
+        "Jonah"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "The White House liaison enters the VP's office",
+      "punchline": "Jonah announces himself with a hip-hop/call-and-response entrance, completely unaware of or unbothered by how embarrassing this is",
+      "craft_total": 6.63,
+      "impact_score": 6.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Pure Jonah \u2014 oblivious, self-aggrandizing, and mortifying. His self-announced entrance with a call-and-response he expects others to join perfectly captures his delusion. 'Everybody say way-o' landing into silence is a cringe comedy beat that the show does well."
+    },
+    {
+      "index": 25,
+      "text": "'The skyscraper of shit has arrived.'",
+      "characters": [
+        "Amy"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Jonah enters with his embarrassing announcement",
+      "punchline": "Amy's sotto voce description: not just a pile of shit but a 'skyscraper' of it \u2014 architecture-scale contempt",
+      "craft_total": 7.21,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Skyscraper of shit' is a good Veep insult \u2014 it has the right scale and absurdist specificity. The architectural upgrade from the standard 'pile of shit' is what makes it. Quotable, efficient, character-perfect from Amy."
+    },
+    {
+      "index": 26,
+      "text": "The viral video tagged 'Selina Sell-Outta' \u2014 a compilation of her contradictions including firing someone for smiling",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "cringe_discomfort"
+      ],
+      "setup": "Jonah shows Selina a viral video about her",
+      "punchline": "The video cuts together her contradictions with pointed editorial framing \u2014 'Selina Sell-Outta' as the tag",
+      "craft_total": 5.58,
+      "impact_score": 5.5,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The video-within-show is a solid satirical device \u2014 the show doing political satire within the show's political satire. 'Sell-Outta' is a decent pun. The extended clip creates cringe discomfort for Selina that drives the scene forward."
+    },
+    {
+      "index": 27,
+      "text": "'I am Selina Meyer. And I don't have any idea what's going on in my office.'",
+      "characters": [
+        "Selina (from viral video)"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "meta_self_referential"
+      ],
+      "setup": "The viral video has been editorializing about Selina's contradictions",
+      "punchline": "The video cuts to Selina directly saying she doesn't know what's going on in her own office \u2014 the most damning clip possible, played for maximum irony",
+      "craft_total": 7.14,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke operates on multiple levels: it's funny as a clip, it's funnier because Selina is watching it, and it's funniest because it's true. Selina watching herself confess her incompetence in a viral video while her incompetence is actively unfolding is strong structural comedy."
+    },
+    {
+      "index": 28,
+      "text": "'I love this part.' \u2014 Jonah's reaction while watching the video",
       "characters": [
         "Jonah"
       ],
@@ -100,776 +543,327 @@
         "reaction_beat",
         "cringe_discomfort"
       ],
-      "setup": "Dan keeps saying 'menstrual' loudly",
-      "punchline": "Jonah's mundane phone call interrupted by inappropriate shouting",
-      "craft_total": 6.57,
-      "impact_score": 6.5,
-      "quotability": 4.0,
+      "setup": "The viral video is clearly humiliating for Selina; she's watching it surrounded by her staff",
+      "punchline": "Jonah cheerfully announces his enjoyment \u2014 in her presence \u2014 while she watches",
+      "craft_total": 6.79,
+      "impact_score": 6.75,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of the menstrual bit, showing how the office dysfunction affects even mundane tasks."
-    },
-    {
-      "index": 6,
-      "text": "like the contents of a broken fucking condom",
-      "characters": [
-        "Dan"
-      ],
-      "joke_types": [
-        "setup_punchline"
-      ],
-      "setup": "Dan describing how rumors are flying around",
-      "punchline": "Vivid, crude metaphor for uncontrolled spread",
-      "craft_total": 7.58,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Excellent crude metaphor that's both vivid and thematically relevant given the pregnancy subplot."
-    },
-    {
-      "index": 7,
-      "text": "This is going in with the dirty dishes, man. For fuck's sake. If this is broken, I'm adding it to your fucking rent",
-      "characters": [
-        "Dan",
-        "Jonah"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "escalation"
-      ],
-      "setup": "Background domestic chaos during important phone call",
-      "punchline": "Mundane roommate concerns interrupting political crisis",
-      "craft_total": 6.69,
-      "impact_score": 6.33,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good juxtaposition of high-stakes political talk with petty roommate drama, showing character priorities."
-    },
-    {
-      "index": 8,
-      "text": "Well, I was gonna say that brings a smile to my face, but that would be unsafe, wouldn't it, ma'am?",
-      "characters": [
-        "Bill"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "callback"
-      ],
-      "setup": "Previous context about Secret Service agent being reassigned for smiling",
-      "punchline": "Self-aware joke about the absurdity of the situation",
-      "craft_total": 6.97,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Clever self-referential humor that acknowledges the absurdity of the central premise."
-    },
-    {
-      "index": 9,
-      "text": "That's very funny, Bill. You're fired. I'm kidding. I'm kidding, I'm kidding",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "escalation",
-        "misdirection"
-      ],
-      "setup": "Bill makes a joke about the firing situation",
-      "punchline": "Selina pretends to fire him for joking, then immediately backtracks",
-      "craft_total": 7.31,
-      "impact_score": 7.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character beat showing Selina's power anxiety and her tendency to overreact then retreat."
-    },
-    {
-      "index": 10,
-      "text": "'Secret' as in shut the fuck up. And 'service' as in you work for me",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "escalation"
-      ],
-      "setup": "Selina angry about Secret Service leak",
-      "punchline": "Breaks down 'Secret Service' into aggressive commands",
-      "craft_total": 7.7,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent wordplay that shows Selina's linguistic creativity when angry. Clean structure and good character voice."
-    },
-    {
-      "index": 11,
-      "text": "I want a name and a severed head that answers to that name, or would if it could still talk",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "escalation"
-      ],
-      "setup": "Selina demanding consequences for the leak",
-      "punchline": "Extends violent metaphor to absurd logical conclusion",
-      "craft_total": 7.4,
-      "impact_score": 7.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark humor that escalates a common metaphor to absurdist heights, showing Selina's verbal creativity under pressure."
-    },
-    {
-      "index": 12,
-      "text": "Ooh, Gary, did the veep just bitch-slap you with a door?",
-      "characters": [
-        "Dan"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
-      ],
-      "setup": "Selina slammed her office door, presumably hitting Gary",
-      "punchline": "Dan's cruel observation of Gary's physical and emotional pain",
-      "craft_total": 6.83,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Dan cruelty, capitalizing on others' misfortune. Good visual gag inference and character consistency."
-    },
-    {
-      "index": 13,
-      "text": "Oh, what, is she out of hand sanitizer again?",
-      "characters": [
-        "Dan"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Gary says he can't tell them something important",
-      "punchline": "Dan dismisses it as another mundane Gary concern",
-      "craft_total": 6.47,
-      "impact_score": 5.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character beat showing how the staff views Gary's typical concerns as trivial."
-    },
-    {
-      "index": 14,
-      "text": "Gary, why are you talking in cliffhangers?",
-      "characters": [
-        "Amy"
-      ],
-      "joke_types": [
-        "observational",
-        "character_comedy"
-      ],
-      "setup": "Gary being evasive about important information",
-      "punchline": "Amy's perfect description of his dramatic hesitation",
-      "craft_total": 7.02,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Excellent observational humor that perfectly captures Gary's dramatic tendencies in TV terminology."
-    },
-    {
-      "index": 15,
-      "text": "Well, this is good for us. Nicely done, Dandroid",
-      "characters": [
-        "Mike",
-        "Amy"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "Learning about Selina's miscarriage",
-      "punchline": "Mike's immediate political calculation and Amy's robotic nickname for Dan",
-      "craft_total": 7.51,
-      "impact_score": 7.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark humor showing the characters' immediate pivot to political advantage, plus a good nickname for Dan."
-    },
-    {
-      "index": 16,
-      "text": "Free from a major fucking political headache, I'd say. That's deep space cold, Dan. Explains why you piss liquid nitrogen",
-      "characters": [
-        "Dan",
-        "Mike"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "escalation"
-      ],
-      "setup": "Dan's callous response to the miscarriage news",
-      "punchline": "Mike's vivid metaphor for Dan's coldness",
-      "craft_total": 7.62,
-      "impact_score": 7.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant escalating metaphor from 'deep space cold' to the liquid nitrogen punchline. Creative and character-revealing."
-    },
-    {
-      "index": 17,
-      "text": "Uh, I was telling the guys about my riding mower I got",
-      "characters": [
-        "Gary"
-      ],
-      "joke_types": [
-        "misdirection",
-        "awkward_silence"
-      ],
-      "setup": "Gary clearly just revealed something shocking about Selina",
-      "punchline": "Pathetic attempt to cover with mundane lawn equipment story",
-      "craft_total": 7.19,
-      "impact_score": 6.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Gary moment - terrible at covering his tracks with the most mundane possible deflection."
-    },
-    {
-      "index": 18,
-      "text": "White House is in the house. * Everybody say way-o! *",
-      "characters": [
-        "Jonah"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "White House staff arriving for serious meeting",
-      "punchline": "Jonah's inappropriate party announcement",
-      "craft_total": 6.64,
-      "impact_score": 6.33,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Jonah inappropriateness - completely tone-deaf announcement for a crisis situation."
-    },
-    {
-      "index": 19,
-      "text": "The skyscraper of shit has arrived",
-      "characters": [
-        "Amy"
-      ],
-      "joke_types": [
-        "observational",
-        "escalation"
-      ],
-      "setup": "White House representatives arriving with bad news",
-      "punchline": "Amy's architectural metaphor for their problems",
-      "craft_total": 7.43,
-      "impact_score": 6.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great metaphor that captures both the scale and nature of their incoming problems with economy."
-    },
-    {
-      "index": 20,
-      "text": "It's tagged 'Selina Sell-Outta'",
-      "characters": [
-        "White House aide"
-      ],
-      "joke_types": [
-        "wordplay_pun"
-      ],
-      "setup": "Describing a viral video about Selina",
-      "punchline": "Hashtag that plays on her name with 'sellout'",
-      "craft_total": 6.42,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent political wordplay, though feels like something that would actually happen in politics."
-    },
-    {
-      "index": 21,
-      "text": "I am Selina Meyer. And I don't have any idea what's going on in my office",
-      "characters": [
-        "Video Selina"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "cringe_discomfort"
-      ],
-      "setup": "Viral video mocking Selina",
-      "punchline": "Brutal honest assessment delivered as if by Selina herself",
-      "craft_total": 7.35,
-      "impact_score": 7.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Effective political satire that hits at the core criticism of the character - competence."
-    },
-    {
-      "index": 22,
-      "text": "All right, pack up your limbs and get the fuck out, Jonah",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Selina angry at Jonah for showing the video",
-      "punchline": "Bizarre instruction to 'pack up your limbs' instead of normal dismissal",
-      "craft_total": 7.58,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Wonderfully absurd variation on 'pack your things and leave' that's both funny and memorably strange."
-    },
-    {
-      "index": 23,
-      "text": "I have a much longer reach",
-      "characters": [
-        "Jonah"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
-      ],
-      "setup": "Someone asks if punching is allowed",
-      "punchline": "Jonah's confidence based purely on his height advantage",
-      "craft_total": 6.7,
-      "impact_score": 5.83,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Jonah - reducing fighting prowess to pure physical measurement, showing his simple-minded approach to conflict."
-    },
-    {
-      "index": 24,
-      "text": "And technically this is a fully functioning office, too",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "irony_sarcasm"
-      ],
-      "setup": "Amy pointing out technical accuracies in the video",
-      "punchline": "Selina sarcastically includes their dysfunctional office in the 'technically true' list",
-      "craft_total": 7.18,
-      "impact_score": 6.67,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good self-aware humor that acknowledges the office's dysfunction while maintaining the 'technically' pattern."
-    },
-    {
-      "index": 25,
-      "text": "You are the closest to normal we've got going in this office right now",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
-      ],
-      "setup": "Selina needs someone to handle the Secret Service situation",
-      "punchline": "Mike is their 'most normal' option, which is damning",
-      "craft_total": 6.77,
-      "impact_score": 6.33,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great backhanded compliment that reveals how dysfunctional everyone else is if Mike is the normal one."
-    },
-    {
-      "index": 26,
-      "text": "I don't read half the stuff I'm supposed to",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "observational"
-      ],
-      "setup": "Explaining that people won't read all their released documents",
-      "punchline": "Selina admits she doesn't even read her own required materials",
-      "craft_total": 6.95,
-      "impact_score": 6.83,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character revelation showing Selina's casual admission of her own professional negligence."
-    },
-    {
-      "index": 27,
-      "text": "Just because this isn't your baby, you don't... God, I am so sorry",
-      "characters": [
-        "Dan",
-        "Selina"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "escalation"
-      ],
-      "setup": "Dan criticizing the plan using 'baby' metaphor, forgetting about the miscarriage",
-      "punchline": "Immediate horrified realization of the poor word choice",
-      "craft_total": 7.45,
-      "impact_score": 7.83,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect cringe moment where casual metaphor becomes deeply inappropriate given recent events."
-    },
-    {
-      "index": 28,
-      "text": "I mean, it was like a heavy period. Don't worry about it",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "deadpan_understatement"
-      ],
-      "setup": "Dan's mortified apology for the baby reference",
-      "punchline": "Selina's brutal minimization of her miscarriage",
-      "craft_total": 7.66,
-      "impact_score": 8.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Darkly brilliant moment showing Selina's coping mechanism and political instincts overriding personal trauma. Economical and shocking."
+      "explanation": "Jonah's social obliviousness is his comedic engine, and 'I love this part' while standing next to the person being humiliated is a clean expression of it. High character integration, economical delivery."
     },
     {
       "index": 29,
-      "text": "Why would you be writing that down?",
+      "text": "'All right, pack up your limbs and get the fuck out, Jonah.' / 'Is punching allowed?' / 'Oh, you wouldn't stand a chance. I have a much longer reach.'",
       "characters": [
-        "Mike"
+        "Selina",
+        "Amy",
+        "Jonah"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Mike listing things they need to hide from full disclosure",
-      "punchline": "Realizes someone is creating the exact paper trail they're trying to avoid",
-      "craft_total": 7.08,
-      "impact_score": 7.17,
-      "quotability": 3.0,
+      "setup": "Selina throws Jonah out; someone asks if punching is allowed",
+      "punchline": "Jonah's response isn't 'no' or 'please don't' \u2014 it's a confident assessment of his physical advantage ('I have a much longer reach'), as if accepting the challenge",
+      "craft_total": 6.81,
+      "impact_score": 6.67,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of the cover-up incompetence, showing how they create their own problems."
+      "explanation": "Jonah's physical self-confidence is funny because it's simultaneously probably true (he is very tall) and completely wrong-headed \u2014 he treats a potential assault as a competition he can win. 'Pack up your limbs' is also a nice Selina insult."
     },
     {
       "index": 30,
-      "text": "So it doesn't look as if we've just airbrushed the nipples out of this fucking thing",
+      "text": "'You are the closest to normal we've got going in this office right now.' / 'Thanks, I think.'",
       "characters": [
+        "Selina",
         "Mike"
       ],
       "joke_types": [
-        "observational"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Explaining why they need some embarrassing content in the release",
-      "punchline": "Compares document sanitization to airbrushing nude photos",
-      "craft_total": 7.41,
-      "impact_score": 7.17,
-      "quotability": 7.0,
+      "setup": "Selina assigns Mike to talk to the reassigned secret service agent as the most normal person in the office",
+      "punchline": "Mike's 'thanks, I think' \u2014 the correct response to a backhanded compliment that implies everyone else is abnormal",
+      "craft_total": 6.38,
+      "impact_score": 6.0,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Creative metaphor that perfectly captures the idea of making something too clean to be believable."
+      "explanation": "A solid ironic compliment exchange. The joke is in the institutional dysfunction it implies \u2014 Mike is the baseline for normal in this room. His uncertainty about whether to be flattered is exactly right."
     },
     {
       "index": 31,
-      "text": "Your back facials. Oh. Back facials? What? Yeah, I get back acne. Backne",
-      "characters": [
-        "Mike",
-        "Selina"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Discussing embarrassing details to include in the release",
-      "punchline": "Selina's mortifying personal grooming revelation and portmanteau",
-      "craft_total": 6.63,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good cringe comedy showing the embarrassing personal details that become political fodder."
-    },
-    {
-      "index": 32,
-      "text": "I do know that I can't know what you know or you don't know. You know?",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "escalation"
-      ],
-      "setup": "Selina trying to maintain plausible deniability about Dan's activities",
-      "punchline": "Verbal pretzel of knowledge and ignorance",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent verbal confusion joke showing political double-speak, though somewhat convoluted."
-    },
-    {
-      "index": 33,
-      "text": "The nod of my head is like I'm buffering",
-      "characters": [
-        "Amy"
-      ],
-      "joke_types": [
-        "observational",
-        "character_comedy"
-      ],
-      "setup": "Selina asking what Amy's nodding means",
-      "punchline": "Amy compares her thinking process to computer loading",
-      "craft_total": 7.5,
-      "impact_score": 6.83,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good tech metaphor for human thinking that feels natural and character-appropriate for Amy."
-    },
-    {
-      "index": 34,
-      "text": "You've got to put black marker over all the words",
-      "characters": [
-        "Mike"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Mike checking document redactions",
-      "punchline": "Instruction to redact everything, defeating the purpose entirely",
-      "craft_total": 6.83,
-      "impact_score": 6.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation of their transparency incompetence, showing how they defeat their own purpose."
-    },
-    {
-      "index": 35,
-      "text": "I know, who'd have thought transparent government would take up so much of your field of vision?",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "wordplay_pun"
-      ],
-      "setup": "Press conference about document release",
-      "punchline": "Visual pun on 'transparency' and 'field of vision'",
-      "craft_total": 7.09,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent visual pun, though feels slightly forced. Shows Selina trying to be clever under pressure."
-    },
-    {
-      "index": 36,
-      "text": "Yes, sir. Went to Iraq with the veep. Presented a Thanksgiving turkey. I was there. No fire as I recall. No, but the line was there",
-      "characters": [
-        "Mike",
-        "Agent"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Agent asking if Mike has been 'in the line of fire'",
-      "punchline": "Mike's pathetic attempt to claim combat experience from a ceremonial turkey presentation",
-      "craft_total": 7.48,
-      "impact_score": 7.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Mike moment - trying to claim military credibility from the most civilian possible experience."
-    },
-    {
-      "index": 37,
-      "text": "Does he ever say anything funny?",
-      "characters": [
-        "Mike"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "cringe_discomfort"
-      ],
-      "setup": "Learning the agent cares for uncle with dementia",
-      "punchline": "Mike's inappropriate attempt to find humor in dementia",
-      "craft_total": 6.71,
-      "impact_score": 6.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Shows Mike's inappropriate social instincts, though relies on cheap shock value rather than clever construction."
-    },
-    {
-      "index": 38,
-      "text": "Security guys are supposed to be like wallpaper. They're not supposed to be grinning like some ape",
-      "characters": [
-        "Mike"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Mike trying to justify the agent's reassignment",
-      "punchline": "Doubles down with an even more offensive comparison",
-      "craft_total": 6.38,
-      "impact_score": 6.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Shows Mike's tendency to make bad situations worse, though the ape comparison is fairly lazy humor."
-    },
-    {
-      "index": 39,
-      "text": "They're calling it an e-nami",
-      "characters": [
-        "Amy"
-      ],
-      "joke_types": [
-        "wordplay_pun"
-      ],
-      "setup": "Press describing their document dump strategy",
-      "punchline": "Portmanteau of 'email' and 'tsunami'",
-      "craft_total": 6.84,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent media portmanteau that feels like real political coverage, though not particularly creative."
-    },
-    {
-      "index": 40,
-      "text": "Hey, gimme a 'J'!",
-      "characters": [
-        "Jonah"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Jonah entering during a crisis meeting",
-      "punchline": "Inappropriate cheerleader enthusiasm during serious discussion",
-      "craft_total": 7.13,
-      "impact_score": 6.67,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Jonah tone-deafness, though the cheerleader bit is somewhat predictable for his character."
-    },
-    {
-      "index": 41,
-      "text": "A cake in the shape of a dick. A smart new hat in the shape of a dick",
-      "characters": [
-        "Amy"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Reading birthday gift suggestions from leaked emails",
-      "punchline": "Escalating absurdity of dick-shaped gift suggestions",
-      "craft_total": 6.42,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation structure, though relies on juvenile humor. The 'smart new hat' addition makes it more absurd."
-    },
-    {
-      "index": 42,
-      "text": "And they are whispering 'Dick Cake'",
-      "characters": [
-        "Jonah"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Jonah complaining about people recognizing him from the leaked email",
-      "punchline": "His mortification at being known as 'Dick Cake'",
-      "craft_total": 6.92,
-      "impact_score": 6.67,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good payoff to the earlier dick cake setup, showing consequences of the leak in personal terms for Jonah."
-    },
-    {
-      "index": 43,
-      "text": "Uh, Dick Cake",
-      "characters": [
-        "Ryan"
-      ],
-      "joke_types": [
-        "callback",
-        "deadpan_understatement"
-      ],
-      "setup": "Amy asking who DC refers to in their system",
-      "punchline": "Ryan's matter-of-fact confirmation of Jonah's embarrassing nickname",
-      "craft_total": 6.55,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Perfect deadpan delivery that makes the nickname official. Great economy in just two words."
-    },
-    {
-      "index": 44,
-      "text": "Mike, can't you make me not have been pregnant?",
+      "text": "The Full Disclosure scheme: 'by showing that we have nothing to hide, then we can actually hide some stuff.'",
       "characters": [
         "Selina"
       ],
       "joke_types": [
         "absurdist",
-        "cringe_discomfort"
+        "character_comedy"
       ],
-      "setup": "Complications from the pregnancy rumors and overnight visits",
-      "punchline": "Selina's desperate request to retroactively change reality",
-      "craft_total": 7.81,
-      "impact_score": 7.67,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "The team is panicking about releasing records; Selina proposes releasing everything",
+      "punchline": "Her explicit statement of the cynical logic \u2014 transparency as cover for opacity \u2014 delivered with total confidence",
+      "craft_total": 7.32,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant absurdist moment showing Selina's complete desperation and magical thinking about spin."
+      "explanation": "This is strong political satire with real comedic craft. Selina articulates a real political tactic (information overload as concealment) out loud in the most brazenly cynical possible way. It's funny as a joke and sharp as satire. 'You can't read everything. I don't read half the stuff I'm supposed to' is a perfect supporting beat. Quotable and rewatch-worthy."
     },
     {
-      "index": 45,
-      "text": "This is what happens when you tell the truth. Nothing good comes of it",
+      "index": 32,
+      "text": "Selina: 'Oh, it's fine. I mean, it was like a heavy period. Don't worry about it.'",
       "characters": [
-        "Mike"
+        "Selina"
       ],
       "joke_types": [
-        "observational"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Their transparency initiative backfiring spectacularly",
-      "punchline": "Mike's cynical but accurate assessment of honesty in politics",
-      "craft_total": 7.31,
+      "setup": "Someone has accidentally referenced 'baby' in front of Selina after her miscarriage; everyone is mortified",
+      "punchline": "Selina waves it off with startling clinical casualness \u2014 'like a heavy period' \u2014 to end the awkward moment, immediately returning to business",
+      "craft_total": 8.08,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Selina's self-protective deflection of genuine personal pain with a blunt, clinical, slightly shocking phrase is one of the most character-specific jokes in the episode. Only Selina \u2014 a politician who has subordinated everything personal to the political \u2014 would minimize her own miscarriage to keep a meeting moving. 'Like a heavy period' is the exact phrase that makes this land: too specific, too clinical, too casual. Justifies the 8+ score."
+    },
+    {
+      "index": 33,
+      "text": "The 'partial disclosure light' scene \u2014 Selina immediately explains they will NOT be doing full disclosure",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "setup_punchline"
+      ],
+      "setup": "Selina has just dramatically announced 'Full disclosure is now the name of the game'",
+      "punchline": "The very next beat (different room, same meeting presumably): 'All right, obviously it is not gonna be full disclosure. Okay? It's gonna be partial disclosure light.'",
+      "craft_total": 6.8,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The instant reversal of the full disclosure declaration is a perfect Veep beat: the gap between public posture and private reality is the whole show. 'Partial disclosure light' is a great phrase \u2014 it's got the absurd corporate modifier ('light') and the frank admission of limitation."
+    },
+    {
+      "index": 34,
+      "text": "'There can be no... Are you writing that down? Why would you be writing that down?'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "reaction_beat"
+      ],
+      "setup": "Selina is listing things to hide from the disclosure; a staffer apparently takes notes",
+      "punchline": "The absurdity of someone writing down the list of things they're supposed to not have written down",
+      "craft_total": 7.05,
       "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The institutional incompetence joke \u2014 someone is actively creating a paper trail of the things they're trying to hide. The meta-absurdity of the cover-up undoing itself in real time is good Veep material."
+    },
+    {
+      "index": 35,
+      "text": "'We have to check Sue's calendar, make sure there are no meetings there that I did-didn't have.'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Selina is listing things to scrub from the disclosure",
+      "punchline": "Her self-correction mid-sentence reveals the cover: she's looking for meetings that she DID have but needs to pretend she DIDN'T \u2014 the stutter exposing the deception",
+      "craft_total": 7.35,
+      "impact_score": 7.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Freudian slip mid-sentence is a nice subtle joke \u2014 Selina almost says the true thing before correcting herself. The stutter ('did-didn't') captures politicians' practiced self-censorship failing in private."
+    },
+    {
+      "index": 36,
+      "text": "'The accidentally racist brochure that we had to shred.'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Selina is listing things to redact from the disclosure",
+      "punchline": "The casual mention of 'the accidentally racist brochure' as if it's a routine administrative matter",
+      "craft_total": 7.52,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Six words that imply an entire catastrophic backstory: someone in this office produced and shredded a racist brochure, and the most notable thing about it is the modifier 'accidentally.' The economy is superb \u2014 it's a whole episode's worth of scandal compressed into a throwaway. Very quotable and very Veep."
+    },
+    {
+      "index": 37,
+      "text": "'So it doesn't look as if we've just airbrushed the nipples out of this fucking thing.'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Selina wants something genuinely embarrassing in the disclosure so the scrubbing isn't obvious",
+      "punchline": "Her metaphor for sanitizing the disclosure: airbrushing nipples \u2014 specific, vivid, absurd, and slightly disturbing in context",
+      "craft_total": 7.24,
+      "impact_score": 7.17,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sharp political commentary delivered with perfect cynicism. Captures the show's view of political honesty."
+      "explanation": "The 'airbrushed nipples' metaphor is characteristically Selina \u2014 vivid, unexpected, slightly vulgar, and actually precise. It communicates the exact idea (visible sanitization is worse than no transparency) in an arresting way."
     },
     {
-      "index": 46,
-      "text": "This is gonna cause a total potal meltdown",
+      "index": 38,
+      "text": "Selina's convoluted non-denial about Macauley: 'I don't know what you did or didn't do, but I do know that I can't know what you know or you don't know. You know?'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Selina is trying to give Dan plausible deniability (and herself) about the Macauley amendment dealings",
+      "punchline": "The sentence becomes a recursive knot of 'know/don't know' that ends with 'you know?' \u2014 asking if he understands her incomprehensible statement",
+      "craft_total": 7.81,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is a masterclass in political language parody. Selina's tortured attempt to establish mutual deniability collapses into a grammatical oroboros that's genuinely hard to parse \u2014 and then she asks 'you know?' as if it were perfectly clear. It's both a joke about political doublespeak and a character joke about Selina's self-deception. 'I do know that I can't know what you know or you don't know' is brilliant in its recursive meaninglessness. Justifies the 8+ score."
+    },
+    {
+      "index": 39,
+      "text": "'I mean, I don't know what you did or didn't do, but I do know that I can't know what you know or you don't know.' \u2014 Dan's reply: 'I know.'",
+      "characters": [
+        "Dan"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Selina has delivered her incomprehensible 'know/don't know' speech",
+      "punchline": "Dan's 'I know' \u2014 which is both the linguistically correct response to 'you know?' and an absurd claim that he understood any of it",
+      "craft_total": 7.8,
+      "impact_score": 7.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Two words that do enormous work. Dan's 'I know' is simultaneously: (1) the expected response to 'you know?' (2) an absurdist claim of comprehension (3) confirmation that he does know what she's covering up (4) the mutual conspiratorial signal they needed. Maximum economy. The joke is entirely in the gap between the complexity of what Selina said and the simplicity of Dan's answer. Justifies the 8+ score."
+    },
+    {
+      "index": 40,
+      "text": "'I'm sorry to hear that you lost... that you're no longer pregnant.'",
+      "characters": [
+        "Amy"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "awkward_silence"
+      ],
+      "setup": "Selina apologizes for snapping at Amy; Amy responds with condolences on the miscarriage",
+      "punchline": "Amy's fumbled, self-correcting condolence \u2014 she can't say 'lost the baby' because that's exactly what happened but it sounds wrong \u2014 ending on the bizarrely clinical 'no longer pregnant'",
+      "craft_total": 7.15,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Amy's verbal fumbling over how to express condolences for a miscarriage is acutely observed \u2014 everyone has struggled with this exact social situation. The mid-sentence self-correction and the landing on 'no longer pregnant' (accurate but inhuman) is good cringe comedy grounded in real awkwardness."
+    },
+    {
+      "index": 41,
+      "text": "Amy's 'buffering' nod \u2014 'The nod of my head is like I'm buffering.'",
+      "characters": [
+        "Amy",
+        "Selina"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Selina reveals Ted is about to dump her; Amy nods in a way that Selina notices and questions",
+      "punchline": "Amy explains the nod is 'like I'm buffering' \u2014 using a tech metaphor to describe her brain processing information she can't respond to honestly",
+      "craft_total": 7.46,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Buffering' as a metaphor for diplomatic information processing is sharp and contemporary. Amy's self-description of her own face managing Selina's revelations is a precise character observation \u2014 Amy is constantly managing the gap between what she thinks and what she can say. The tech metaphor is well-chosen and quotable."
+    },
+    {
+      "index": 42,
+      "text": "'Okay, I think you'd better get out of my office.' \u2014 Selina's response to Amy's unfinished sentence",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "Amy has stopped herself mid-sentence, but the implication hangs in the air",
+      "punchline": "Selina doesn't ask Amy to finish \u2014 she already knows what comes next and ejects her before she has to hear it",
+      "craft_total": 7.35,
+      "impact_score": 7.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Selina's pre-emptive ejection of Amy is a perfect reaction beat \u2014 she understands exactly what Amy didn't say and acts on the unspoken truth. The comedic and emotional beats work simultaneously here, which is rare and valuable."
+    },
+    {
+      "index": 43,
+      "text": "'I know, who'd have thought transparent government would take up so much of your field of vision?'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "observational"
+      ],
+      "setup": "Press corps is gathered to receive the disclosed documents",
+      "punchline": "Selina's sardonic greeting frames the entire exercise as a visual spectacle \u2014 'field of vision' suggesting the paperwork/screens as a literal obstruction",
+      "craft_total": 6.67,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A functional Selina quip that comments on the exercise's absurdity. The irony is appropriate \u2014 'transparent government' is blocking everyone's view. Decent but not a standout line."
+    },
+    {
+      "index": 44,
+      "text": "Mike claims going to Iraq with the VP to 'present a Thanksgiving turkey' counts as being 'in the line of fire'",
+      "characters": [
+        "Mike",
+        "Martin Collins (reassigned Secret Service agent)"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Collins challenges Mike about being 'in the line of fire'; Mike claims he's been to Iraq with the VP",
+      "punchline": "The nature of his Iraq service: presenting a Thanksgiving turkey. Not combat. Not even close to a fire line.",
+      "craft_total": 6.77,
+      "impact_score": 6.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Mike's credibility bluster punctured by the most peacetime possible form of military adjacency \u2014 turkey presentation. The addition 'I was there. No fire as I recall.' from Collins is the killer follow-up. Good character comedy for Mike."
+    },
+    {
+      "index": 45,
+      "text": "'No, but the line was there.' \u2014 Mike's comeback about the turkey-presenting 'line of fire'",
       "characters": [
         "Mike"
       ],
@@ -877,494 +871,811 @@
         "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "Describing the President's likely reaction",
-      "punchline": "Rhyming abbreviation for 'President of the United States'",
-      "craft_total": 6.56,
-      "impact_score": 6.0,
-      "quotability": 5.5,
+      "setup": "Collins points out there was no fire in Mike's Iraq turkey-presenting trip",
+      "punchline": "Mike insists 'the line was there' \u2014 parsing 'line of fire' as merely requiring the existence of a line, not actual fire",
+      "craft_total": 7.06,
+      "impact_score": 7.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Brilliant comedic logic. Mike's literal parsing of 'line of fire' \u2014 claiming the metaphor is satisfied if just the 'line' element is present (a food line, presumably) \u2014 is both wordplay and character comedy. It's Mike's delusional self-regard expressed as linguistic sophistry. 'No, but the line was there' is five words that do everything. Highly quotable, justifies 8+."
+    },
+    {
+      "index": 46,
+      "text": "'So how's the place been over at Arlington Cemetery going? I hear it's pretty nice there.' \u2014 Mike asks Collins about Arlington Cemetery",
+      "characters": [
+        "Mike"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Mike is trying to make small talk with Collins, who has been reassigned to Arlington Cemetery",
+      "punchline": "'I hear it's pretty nice there' \u2014 commenting on a cemetery like it's a resort; the vacancy of his social skills on full display",
+      "craft_total": 7.05,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Decent wordplay showing Mike's tendency to create unnecessary abbreviations and rhymes."
+      "explanation": "Mike's complete social obliviousness \u2014 treating Arlington Cemetery as a pleasant posting to chitchat about \u2014 is pure character comedy. The cheerful 'I hear it's pretty nice there' about a military cemetery is a lovely dark/oblivious blend."
     },
     {
       "index": 47,
-      "text": "Yeah, why don't you run along and see if you can suck your own cake?",
+      "text": "'Does he ever say anything funny?' \u2014 Mike asks Collins about his uncle with dementia",
       "characters": [
-        "Dan"
-      ],
-      "joke_types": [
-        "escalation",
-        "wordplay_pun"
-      ],
-      "setup": "Dan dismissing Jonah after the dick cake revelation",
-      "punchline": "Turns 'suck your own dick' into cake-based insult",
-      "craft_total": 7.08,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Clever transformation of a crude insult using the established cake motif. Good callback integration."
-    },
-    {
-      "index": 48,
-      "text": "Remind me, who did you blackmail to get this job?",
-      "characters": [
-        "Amy"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Mike's bungled handling of the Secret Service situation",
-      "punchline": "Amy's sarcastic question about his qualifications",
-      "craft_total": 7.05,
-      "impact_score": 6.67,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character beat showing Amy's frustration with Mike's incompetence in a memorable way."
-    },
-    {
-      "index": 49,
-      "text": "Hey, suck-up isn't gonna fix a fuck-up, Dan",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "escalation"
-      ],
-      "setup": "Dan trying to blame others for the crisis",
-      "punchline": "Selina's rhyming dismissal of his attempt",
-      "craft_total": 7.57,
-      "impact_score": 7.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great rhyming put-down that perfectly captures Selina's frustration with Dan's political maneuvering."
-    },
-    {
-      "index": 50,
-      "text": "I'll give you a fucking deal on all three of them, too, if you want",
-      "characters": [
-        "Selina"
+        "Mike"
       ],
       "joke_types": [
         "dark_subversive",
-        "escalation"
+        "character_comedy"
       ],
-      "setup": "Ted complaining about not having staff support",
-      "punchline": "Selina offering to sell her entire team like used cars",
-      "craft_total": 7.44,
-      "impact_score": 7.0,
-      "quotability": 5.0,
+      "setup": "Collins mentions he's also caring for an uncle with dementia as part of his burdens",
+      "punchline": "Mike's response \u2014 'does he ever say anything funny?' \u2014 treating a dementia patient as a potential comedy source, utterly unaware of the inappropriateness",
+      "craft_total": 7.55,
+      "impact_score": 7.5,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark humor showing Selina's complete disillusionment with her staff, treating them as disposable commodities."
+      "explanation": "Mike's social tone-deafness reaching its peak. 'Does he ever say anything funny?' applied to a dementia patient is dark, unexpected, and completely character-specific \u2014 Mike's discomfort with serious conversations manifesting as desperately hunting for a joke. The question is asked with genuine curiosity, which makes it worse and funnier. Justifies 8+."
     },
     {
-      "index": 51,
-      "text": "So why don't you just take your beak and shove it up some corpse's ass, okay, you vulture motherfucker?",
+      "index": 48,
+      "text": "'No, you were transferred for being jocular and overfamiliar. Security guys are supposed to be like wallpaper. They're not supposed to be grinning like some ape.'",
       "characters": [
-        "Selina"
+        "Mike"
       ],
       "joke_types": [
-        "escalation",
-        "dark_subversive"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Selina angry at persistent journalist",
-      "punchline": "Elaborate vulture metaphor with escalating vulgarity",
-      "craft_total": 7.5,
+      "setup": "Collins says he was 'fucking transferred for nothing'",
+      "punchline": "Mike defending the transfer by calling Collins an 'ape' \u2014 the exact language that has become a PR crisis for the office, which Mike is there to defuse",
+      "craft_total": 7.26,
       "impact_score": 7.67,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Creative extended metaphor showing Selina's verbal creativity when truly enraged. Strong visual imagery."
+      "explanation": "Mike being sent to smooth things over, then immediately calling Collins an 'ape' \u2014 the exact slur that has already made the news (as we learn in the next scene) \u2014 is a perfect ironic blunder. The joke is structural: Mike is there to de-escalate and immediately escalates. 'Wallpaper' as the ideal secret service metaphor is a nicely observed detail."
     },
     {
-      "index": 52,
-      "text": "You can't tell him to fuck his mother. Her mother, actually",
+      "index": 49,
+      "text": "The press is calling the disclosure strategy an 'e-nami'",
       "characters": [
-        "Ted",
-        "Selina"
+        "Jonah"
       ],
       "joke_types": [
         "wordplay_pun",
-        "escalation"
+        "character_comedy"
       ],
-      "setup": "Ted criticizing Selina's vulgar outburst",
-      "punchline": "Selina's pedantic gender correction while missing the bigger point",
-      "craft_total": 7.51,
-      "impact_score": 7.33,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Selina's tendency to focus on irrelevant details when criticized."
-    },
-    {
-      "index": 53,
-      "text": "I'm gonna be the dumper. He's gonna be the dumpee",
-      "characters": [
-        "Selina"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Selina explaining why Gary needs to break up with Ted for her",
-      "punchline": "Reducing relationship dynamics to simple dumper/dumpee categories",
-      "craft_total": 6.97,
+      "setup": "The Times is saying the disclosure is a 'deluge' strategy",
+      "punchline": "Jonah reports the paper is calling it an 'e-nami' \u2014 e-tsunami, an email tsunami",
+      "craft_total": 6.87,
       "impact_score": 6.67,
-      "quotability": 5.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Selina's need to control narratives even in personal relationships."
+      "is_callback": 1,
+      "explanation": "A decent portmanteau joke \u2014 'e-nami' as e-mail tsunami is clean and efficient. The joke is that Selina's scheme has already been named and satirized by the press, which is a nice escalation of the episode's plot."
     },
     {
-      "index": 54,
-      "text": "I don't want to end up with a horse's head in my bed. Though there's room for one now",
+      "index": 50,
+      "text": "'Is anybody picking up on the back facials? The press was supposed to pick on those damn back facials.'",
       "characters": [
         "Selina"
       ],
       "joke_types": [
         "callback",
-        "dark_subversive"
+        "cringe_discomfort"
       ],
-      "setup": "Selina needing to meet with gaming association (Godfather reference)",
-      "punchline": "Darkly references her now-empty bed after Ted",
-      "craft_total": 7.76,
-      "impact_score": 7.5,
+      "setup": "The press disclosure has generated stories but not the intended ones",
+      "punchline": "Selina is upset that her backne isn't the big story \u2014 she sacrificed her dermatological dignity for nothing",
+      "craft_total": 6.86,
+      "impact_score": 7.0,
       "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant dark humor connecting Godfather reference to her personal situation. Great economy and timing."
-    },
-    {
-      "index": 55,
-      "text": "Wait a second. Did you just call me buddy?",
-      "characters": [
-        "Gary"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Dan being unusually nice to Gary",
-      "punchline": "Gary immediately suspicious of uncharacteristic kindness",
-      "craft_total": 7.25,
-      "impact_score": 6.5,
-      "quotability": 3.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing how unusual kindness is in this office that it's immediately suspicious."
+      "is_callback": 1,
+      "explanation": "Good callback that pays off the backne setup. The frustration that the back facials didn't work as planned \u2014 Selina having exposed her personal embarrassment for nothing \u2014 is a nice escalation of the earlier joke."
     },
     {
-      "index": 56,
-      "text": "Let's pretend there's a female farmer and she's got a horse, a sheep, and a pig, okay? The pig",
+      "index": 51,
+      "text": "The 'Washington Post' disclosure: emails suggesting a birthday gift of 'a cake in the shape of a dick' and 'a smart new hat in the shape of a dick'",
       "characters": [
-        "Dan",
-        "Gary"
+        "Amy",
+        "Jonah"
       ],
       "joke_types": [
         "setup_punchline",
-        "character_comedy"
+        "escalation"
       ],
-      "setup": "Dan creating elaborate metaphor to get information about firings",
-      "punchline": "Gary's immediate answer reveals the plan",
-      "craft_total": 7.37,
-      "impact_score": 6.83,
-      "quotability": 4.0,
+      "setup": "The Post has found an embarrassing email in the disclosure \u2014 gift suggestions for a White House aide",
+      "punchline": "Suggestion 1: cake shaped like a dick. Suggestion 2: a hat \u2014 specifically described as 'smart new' \u2014 shaped like a dick. The second item's incongruous formal modifier ('smart new') makes it funnier.",
+      "craft_total": 7.34,
+      "impact_score": 8.0,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever setup showing Dan's manipulative skills and Gary's inability to keep secrets even in metaphor."
+      "explanation": "The escalation from 'dick cake' to 'smart new hat in the shape of a dick' is where this joke earns its keep \u2014 the second suggestion's incongruous formality ('smart new') applied to a phallic hat is a nice comedic escalation. 'Oh, that made it in there!' as a reaction is also good."
     },
     {
-      "index": 57,
-      "text": "I'd rather be a pig than an ass-monkey up on his high horse",
+      "index": 52,
+      "text": "Jonah: 'Oh, that made it in there!' \u2014 realizing the dick hat email was released",
       "characters": [
-        "Gary"
+        "Jonah"
       ],
       "joke_types": [
-        "escalation",
-        "wordplay_pun"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Continuation of the animal metaphor conversation",
-      "punchline": "Gary mixing multiple animal metaphors in defiant response",
-      "craft_total": 7.12,
+      "setup": "Mike's email about dick-shaped gifts has been released",
+      "punchline": "Jonah's delighted 'Oh, that made it in there!' \u2014 confirming he was the intended recipient and had seen the original email; his glee is completely disproportionate",
+      "craft_total": 6.85,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Jonah's reaction reveals the backstory (he was the birthday boy) while demonstrating his complete political obliviousness (he's delighted that his humiliating gift suggestions are now public record). Good character beat that extends the previous joke."
+    },
+    {
+      "index": 53,
+      "text": "'Everybody knows this is me, guys.' \u2014 Jonah",
+      "characters": [
+        "Jonah"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "The dick cake email has been published; Amy says 'everybody knows this is me'",
+      "punchline": "Jonah confidently claims the dick cake email \u2014 apparently having sent it, and apparently comfortable asserting this as common knowledge",
+      "craft_total": 6.45,
       "impact_score": 6.33,
-      "quotability": 5.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Good payoff to the animal metaphor with Gary showing unexpected wit in combining multiple animal references."
+      "explanation": "Jonah's complete lack of shame about the dick cake email being attributed to him \u2014 in fact, his confidence that everyone already knows \u2014 is pure character comedy. His obliviousness to why this is bad is the joke."
     },
     {
-      "index": 58,
-      "text": "Did you just sidle?",
-      "characters": [
-        "Amy"
-      ],
-      "joke_types": [
-        "observational",
-        "character_comedy"
-      ],
-      "setup": "Dan approaching Amy in a sneaky manner",
-      "punchline": "Amy's precise identification of his movement style",
-      "craft_total": 7.51,
-      "impact_score": 6.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Excellent observational humor with perfect economy. Amy's precision with language is character-perfect."
-    },
-    {
-      "index": 59,
-      "text": "One condition... I watch you die first and I get to stab you repeatedly to make sure.",
-      "characters": [
-        "Dan"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "Agreeing to the suicide pact",
-      "punchline": "Adding sadistic conditions to the metaphor",
-      "craft_total": 8.05,
-      "impact_score": 7.75,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect Dan - even in cooperation, he's finding ways to be cruel and self-serving."
-    },
-    {
-      "index": 60,
-      "text": "Not with testicles",
+      "index": 54,
+      "text": "'There are 3,000 people on the White House payroll, Jonah.'",
       "characters": [
         "Amy"
       ],
       "joke_types": [
         "deadpan_understatement",
-        "escalation"
+        "irony_sarcasm"
       ],
-      "setup": "Mike saying 'three is better than two'",
-      "punchline": "Amy's blunt anatomical correction",
-      "craft_total": 7.18,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Jonah insists 'everybody' knows the dick cake email is his",
+      "punchline": "Amy points out that 3,000 people working there means 'everybody' is not the intimate circle Jonah imagines \u2014 the scale deflates his notoriety-pride",
+      "craft_total": 6.91,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan delivery with maximum economy. Amy's directness cutting through meaningless platitude."
+      "explanation": "A good deflation of Jonah's self-importance. The specific number (3,000) grounds the abstract and makes the correction feel real. Functional but not exceptional."
     },
     {
-      "index": 61,
-      "text": "Do you mean un-redacting? Taking the black off",
+      "index": 55,
+      "text": "'West Wing, Jonah.' / 'No, who is DC?' / '...Uh, Dick Cake.'",
       "characters": [
         "Amy",
-        "Mike"
+        "Jonah"
       ],
       "joke_types": [
         "wordplay_pun",
-        "character_comedy"
+        "setup_punchline"
       ],
-      "setup": "Mike claiming to be good at 'redacting' (putting black on)",
-      "punchline": "Amy correcting his backwards understanding, Mike's simple explanation",
+      "setup": "Amy tells Jonah to go to the West Wing; he asks 'who is DC?' as an acronym question",
+      "punchline": "Someone (presumably Ryan) reveals DC = Dick Cake",
       "craft_total": 7.0,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "impact_score": 7.17,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Mike's fundamental misunderstanding of his own claimed expertise."
+      "is_callback": 1,
+      "explanation": "The DC = Dick Cake acronym reveal is a tight running gag callback. The economy is excellent \u2014 the joke lands on three short lines. Washington DC / Dick Cake is the kind of layered wordplay Veep specializes in."
     },
     {
-      "index": 62,
-      "text": "Oh, we got fired",
+      "index": 56,
+      "text": "'Every time Ted stayed overnight at the residence has been fully disclosed.' \u2014 the accidental outing of Selina's relationship",
       "characters": [
-        "Mike"
+        "Amy"
       ],
       "joke_types": [
-        "escalation",
+        "cringe_discomfort",
         "irony_sarcasm"
       ],
-      "setup": "Explaining what happened with his previous suicide pact",
-      "punchline": "Casual revelation that their strategy completely failed",
-      "craft_total": 7.25,
-      "impact_score": 7.0,
-      "quotability": 4.0,
+      "setup": "The disclosure has accidentally revealed Ted's overnight stays",
+      "punchline": "'Oh, Ted's gonna love that.' \u2014 immediate recognition that this is a privacy disaster for Selina's relationship on top of everything else",
+      "craft_total": 6.53,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deflation of their master plan with Mike's casual delivery revealing total failure."
+      "explanation": "A nice ironic twist \u2014 the full disclosure backfires in personal as well as political terms. The unintended consequences of the scheme rippling into Selina's private life is good plot-comedy integration."
     },
     {
-      "index": 63,
-      "text": "What's her shoe size? Seven. Seven and a half.",
-      "characters": [
-        "Gary",
-        "Sue"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Gary and Sue competing over who knows Selina better",
-      "punchline": "Sue winning with more precise shoe size knowledge",
-      "craft_total": 7.54,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good character beat showing the absurd level of detail in their competition."
-    },
-    {
-      "index": 64,
-      "text": "Like when you bought pregnancy tests for the veep wearing your staff ID?",
-      "characters": [
-        "Sue"
-      ],
-      "joke_types": [
-        "escalation",
-        "cringe_discomfort"
-      ],
-      "setup": "Gary claiming to be infallible about Selina knowledge",
-      "punchline": "Sue's devastating revelation of his major security breach",
-      "craft_total": 7.54,
-      "impact_score": 7.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great escalation that completely undercuts Gary's smugness while revealing the source of their problems."
-    },
-    {
-      "index": 65,
-      "text": "High-pathetic.",
+      "index": 57,
+      "text": "'Mike, can't you make me not have been pregnant?'",
       "characters": [
         "Selina"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Mike calling the suicide pact 'hypothetical'",
-      "punchline": "Selina's cruel pun on 'hypothetical'",
-      "craft_total": 7.85,
-      "impact_score": 7.25,
-      "quotability": 8.0,
+      "setup": "Bloggers are linking Ted's overnighters to the pregnancy rumors; Selina is drowning",
+      "punchline": "Selina asks Mike to retroactively un-make her pregnant \u2014 as if PR spin has the power to rewrite biology",
+      "craft_total": 7.91,
+      "impact_score": 8.17,
+      "quotability": 9.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent wordplay combining 'hypothetical' with 'pathetic.' Very Selina wit."
+      "explanation": "One of the episode's best lines. 'Can't you make me not have been pregnant?' is a perfect encapsulation of Selina's worldview: that reality is a PR problem that press officers can fix. The absurdist logic is completely character-specific \u2014 only someone who has spent their life managing narratives would make this request with apparent sincerity. Grammatically tortured ('not have been') in a way that perfectly mirrors the impossibility being requested. Highly quotable, justifies 8+."
     },
     {
-      "index": 66,
-      "text": "Well, equally, 'cause it's been my life",
+      "index": 58,
+      "text": "'This is what happens when you tell the truth. Nothing good comes of it.'",
+      "characters": [
+        "Gary"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "The disclosure has backfired catastrophically",
+      "punchline": "Gary's sincere philosophical conclusion that truth-telling is simply a bad strategy \u2014 spoken as pure moral advice, not satire",
+      "craft_total": 7.1,
+      "impact_score": 7.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Gary's deadpan delivery of an anti-honesty moral lesson as if it's received wisdom is sharp dark comedy and sharp political satire simultaneously. 'Nothing good comes of it' said about truth-telling in a government office is both funny and depressing. Quotable."
+    },
+    {
+      "index": 59,
+      "text": "'Okay, I'm gonna get you a cup of rose hip tea.' \u2014 Gary's solution to all crises",
       "characters": [
         "Gary"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "deadpan_understatement"
       ],
-      "setup": "Gary saying he's loved the job more than life itself",
-      "punchline": "Immediate clarification revealing his complete lack of outside life",
-      "craft_total": 7.52,
-      "impact_score": 7.33,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Gary moment revealing his complete devotion and lack of personal life outside Selina."
-    },
-    {
-      "index": 67,
-      "text": "we say some of us mishandled things because you were pregnant? I mean... no, no. No, stupid idea.",
-      "characters": [
-        "Amy"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Amy desperately pitching ideas to save herself",
-      "punchline": "Immediately realizing how terrible her own suggestion is",
-      "craft_total": 7.18,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good desperation moment. Amy's brain working and rejecting ideas in real time."
-    },
-    {
-      "index": 68,
-      "text": "Could say the pregnancy test was for me",
-      "characters": [
-        "Amy"
-      ],
-      "joke_types": [
-        "escalation",
-        "cringe_discomfort"
-      ],
-      "setup": "Amy desperately trying to find solutions to their crisis",
-      "punchline": "Offering to sacrifice her own reputation with fake pregnancy story",
-      "craft_total": 7.32,
+      "setup": "The VP's office is in full crisis meltdown",
+      "punchline": "Gary's response to institutional chaos: offer tea \u2014 his total subordination of real problems to Selina's personal comfort",
+      "craft_total": 6.95,
       "impact_score": 6.83,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Shows Amy's complete desperation and willingness to sacrifice herself for the team, revealing character depth."
-    },
-    {
-      "index": 69,
-      "text": "Knockity knock knock knock. Peep you later",
-      "characters": [
-        "Mike"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Mike interrupting serious interview with muffin offer",
-      "punchline": "His completely inappropriate casual language and timing",
-      "craft_total": 6.63,
-      "impact_score": 6.5,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Mike tone-deafness, though the 'peep you later' feels slightly forced even for his character."
+      "explanation": "A reliable Gary character beat \u2014 his value system has Selina's physical comfort as the highest priority regardless of context. The tea offer in the midst of actual political crisis is a running character joke."
     },
     {
-      "index": 70,
-      "text": "From the place that we like eight blocks away",
+      "index": 60,
+      "text": "'This is gonna cause a total potal meltdown.'",
+      "characters": [
+        "Jonah"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Jonah is warning that POTUS will be unhappy",
+      "punchline": "'Potal' \u2014 POTUS + total, meaning a Presidential-scale total meltdown. Jonah's attempt at a portmanteau is slightly mangled.",
+      "craft_total": 6.52,
+      "impact_score": 6.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jonah coining 'potal meltdown' is a decent piece of Washington insider wordplay \u2014 the blending of 'POTUS' and 'total' into a crisis descriptor. Slightly clumsy but appropriate for Jonah's character (he tries to be clever and mostly gets there)."
+    },
+    {
+      "index": 61,
+      "text": "'Yeah, why don't you run along and see if you can suck your own cake?'",
+      "characters": [
+        "Dan"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Dan is dismissing Jonah after the crisis meeting",
+      "punchline": "'Suck your own cake' \u2014 a riff on the dick cake situation, telling Jonah to go perform an anatomically improbable act on his own infamous baked good",
+      "craft_total": 7.35,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A sharp callback that weaponizes the episode's running gag as an insult. 'Suck your own cake' is both a creative dismissal and a precise character humiliation that references Jonah's specific situation. Good economy and quotability."
+    },
+    {
+      "index": 62,
+      "text": "'Ace play, Shakespeare. Really. When in doubt, call a vet an ape.'",
+      "characters": [
+        "Amy"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Mike has apparently called Collins (a veteran) an 'ape' in the press interaction",
+      "punchline": "Amy's sarcastic 'Ace play, Shakespeare' \u2014 grading his crisis management skills while summarizing his blunder with devastating economy",
+      "craft_total": 6.95,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Amy's 'Ace play, Shakespeare' is a sharp double-insult: sarcastic compliment + elevated literary reference to underscore how stupid the move was. The callback to the ape comment payoffs nicely."
+    },
+    {
+      "index": 63,
+      "text": "'Exactly. We are gonna fire someone.' \u2014 the group's answer to 'what are we gonna do?'",
       "characters": [
         "Selina"
       ],
       "joke_types": [
-        "escalation",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Dan offering to get iced tea during fake interview",
-      "punchline": "Selina making the errand unnecessarily difficult as punishment",
-      "craft_total": 7.14,
-      "impact_score": 6.5,
-      "quotability": 3.0,
+      "setup": "Selina asks what they're going to do about the crisis",
+      "punchline": "The group's immediate consensus is to fire someone \u2014 not fix anything, but sacrifice a person",
+      "craft_total": 6.86,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Selina's petty revenge and how she punishes staff through inconvenience."
+      "explanation": "A sharp political satire beat \u2014 the office's problem-solving instinct is purely sacrificial rather than corrective. 'Does anybody have a better idea?' underlines that this is the consensus default, not a desperate last resort."
     },
     {
-      "index": 71,
-      "text": "Is he the father? Oh, no, no. Father, no. He can't",
+      "index": 64,
+      "text": "Selina about who to fire: 'Sue.' Others: 'Oh, Sue.' Selina: 'That's funny, you guys. But seriously, Sue's not important enough.'",
       "characters": [
-        "Reporter",
-        "Amy"
+        "Selina",
+        "Team"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The team is trying to identify who to fire as the fall guy",
+      "punchline": "Everyone agrees on Sue as if it's obvious \u2014 then Selina dismisses it not because Sue is valuable but because she's not important enough to make the firing newsworthy",
+      "craft_total": 6.74,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sue's invisibility turned into a specific kind of institutional powerlessness \u2014 she can't even be fired for PR value. The team's immediate 'Oh, Sue' consensus is a perfect group comedy beat."
+    },
+    {
+      "index": 65,
+      "text": "'Suck-up isn't gonna fix a fuck-up, Dan.'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Dan tries to blame his colleagues while distancing himself from responsibility",
+      "punchline": "Selina's rhyming rebuke \u2014 'suck-up isn't gonna fix a fuck-up' \u2014 cutting and economical",
+      "craft_total": 7.76,
+      "impact_score": 8.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A near-perfect Veep one-liner. The rhyme is tight ('suck-up' / 'fuck-up'), the meaning is precise, the character application is perfect (Dan is exactly this kind of political animal), and it's completely Selina in tone \u2014 no nonsense, rhythmically satisfying, vulgar but not gratuitously so. Highly quotable. Justifies 8+."
+    },
+    {
+      "index": 66,
+      "text": "'Shut?' / 'Of course shut!' \u2014 the door interaction",
+      "characters": [
+        "Selina",
+        "Gary"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Everyone leaves the office; presumably Gary lingers at the door",
+      "punchline": "Gary asks if he should shut the door; Selina's exasperated 'of course shut!' \u2014 her total control over even this smallest decision",
+      "craft_total": 6.41,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A small character beat that captures Gary's constant need to check with Selina on everything. Brief but character-consistent."
+    },
+    {
+      "index": 67,
+      "text": "The rose hip tea with honey and Fig Newton ceremony",
+      "characters": [
+        "Gary",
+        "Selina"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "visual_gag"
+      ],
+      "setup": "Selina is in her office dealing with a cascade of crises",
+      "punchline": "Gary presents the tea with honey (as specified) plus an unsolicited Fig Newton \u2014 the infantilizing attention to detail of her snack presentation",
+      "craft_total": 6.61,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The Fig Newton addition \u2014 Gary going beyond his brief to add a cookie, the VP accepting it with 'outstanding' \u2014 is a portrait of their codependent relationship. 'Outstanding, Gary' about a cookie in the middle of a political storm is a nice tonal juxtaposition."
+    },
+    {
+      "index": 68,
+      "text": "Ted's reaction to press attention on his overnights: 'I thought I was fucking you in private.'",
+      "characters": [
+        "Ted"
       ],
       "joke_types": [
         "cringe_discomfort",
-        "escalation"
+        "character_comedy"
       ],
-      "setup": "Reporter asking about Dan's relationship to Amy's fake pregnancy",
-      "punchline": "Amy's flustered denial implying Dan's impotence/sterility",
-      "craft_total": 7.13,
-      "impact_score": 7.17,
-      "quotability": 4.0,
+      "setup": "Ted is angry that his relationship with Selina has been disclosed",
+      "punchline": "'I thought I was fucking you in private' \u2014 his complaint is accurate but phrased with a complete lack of romantic euphemism",
+      "craft_total": 6.99,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of the fake interview going wrong, with Amy accidentally creating new problems while solving others."
+      "explanation": "Ted's blunt complaint cuts through any romantic framing of their relationship. The joke is in the phrasing \u2014 'fucking you in private' as a relationship expectation rather than a desire. Characteristically Veep in its refusal of romantic language."
+    },
+    {
+      "index": 69,
+      "text": "Selina: 'I love to fuck you in private.' \u2014 her attempt to calm Ted",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Ted says he thought he was being fucked in private; Selina agrees she loves this",
+      "punchline": "Her validation of his complaint becomes accidentally farcical \u2014 'I love to fuck you in private' said as reassurance in a completely unromantic context",
+      "craft_total": 6.86,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Selina's attempt at reassurance landing as a clinical declaration is a nice absurdist beat. The scene's cringe escalation continues effectively."
+    },
+    {
+      "index": 70,
+      "text": "'Hey, you know what? Thanks for returning my call. The message was, \"please don't fucking call me again.\"'",
+      "characters": [
+        "Ted"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "A journalist apparently calls in the middle of the argument",
+      "punchline": "Ted's response to the journalist \u2014 quoting the previous message as a reminder \u2014 then escalating to 'take your beak and shove it up some corpse's ass, okay, you vulture motherfucker?'",
+      "craft_total": 6.8,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The escalation from professional callback-reminder to 'shove it up some corpse's ass, you vulture motherfucker' is excellent. The extended metaphor (beak, corpse, vulture) is vivid and sustained. The 'corpse' detail \u2014 specifying the ass being a dead person's \u2014 is an absurdist escalation that elevates this above a generic insult."
+    },
+    {
+      "index": 71,
+      "text": "'Was that a journalist?' / 'Yes.' / 'Oh, God!' / 'What are you doing, Ted? You can't tell him to fuck his mother.' / 'Her mother, actually.'",
+      "characters": [
+        "Selina",
+        "Ted"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "cringe_discomfort"
+      ],
+      "setup": "Selina is horrified that Ted has told a journalist to shove it up a corpse's ass",
+      "punchline": "Selina's 'you can't tell him to fuck his mother' is corrected by Ted: it was a woman journalist \u2014 'her mother, actually' \u2014 Ted defending his specific accuracy while being completely wrong about everything else",
+      "craft_total": 7.74,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The structure here is excellent \u2014 Selina's actual crisis (Ted insulted a journalist) is immediately displaced by a gender-specificity correction ('her mother, actually') that Ted delivers with total calm. The absurdity of correcting the gender of the hypothetical mother while having just committed a PR catastrophe is a perfect comic non-sequitur that feels completely believable. Justifies 8+."
+    },
+    {
+      "index": 72,
+      "text": "Selina asking Gary to break up with Ted for her \u2014 'I want you to let him go'",
+      "characters": [
+        "Selina",
+        "Gary"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Selina needs to end the relationship but doesn't want to do it herself",
+      "punchline": "She delegates the breakup to Gary \u2014 as if it's an administrative task \u2014 and Gary has to process this assignment",
+      "craft_total": 6.92,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Selina treating her romantic breakup as an administrative delegation to Gary is a perfect character moment \u2014 it reveals both her avoidance of personal consequences and her total instrumentalization of Gary. Gary's barely suppressed 'wouldn't it be better if it came from you?' is the appropriate reaction."
+    },
+    {
+      "index": 73,
+      "text": "'Because I think that he is about to dump me. So I'm not gonna be the dumpee. I'm gonna be the dumper. Okay? He's gonna be the dumpee.'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Gary asks why Selina can't break up with Ted herself",
+      "punchline": "Selina's elaborate 'dumper/dumpee' logic \u2014 she can't risk being dumped so she's pre-emptively dumping via proxy \u2014 the childish vanity expressed in political terms",
+      "craft_total": 7.34,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The dumper/dumpee taxonomy applied with Selina's full political self-interest is sharp character comedy. The repetition of 'dumpee' \u2014 clarifying three times who the dumpee is \u2014 escalates nicely. The VP of the United States explaining relationship power dynamics like a middle schooler is the joke."
+    },
+    {
+      "index": 74,
+      "text": "Gary telling Ted it's over: 'She can go off, can't she?' / 'Yeah, sorry about that.' / 'That's okay. So maybe it's a good thing.' / 'What? What's a good thing?' / 'That she doesn't want to see you anymore.'",
+      "characters": [
+        "Gary",
+        "Ted"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "awkward_silence"
+      ],
+      "setup": "Gary arrives at Ted's house to break up with Selina on her behalf; there's small talk about Selina's temper",
+      "punchline": "Gary's transition from pleasantries to 'that she doesn't want to see you anymore' \u2014 the abruptness of the actual message after the 'nice house' courtesy",
+      "craft_total": 7.49,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Gary's proxy-breakup conversation is perfectly handled. The small talk about Selina going off, the awkward transition, the moment of confusion before the actual message lands \u2014 it's cringe comedy with good structural timing. 'Your house is so nice. Oh, thank you' as preamble to being dumped by a third party is pitch-perfect."
+    },
+    {
+      "index": 75,
+      "text": "Ted's long stunned silence after being told Selina doesn't want to see him \u2014 16 seconds of dead air before Gary speaks",
+      "characters": [
+        "Ted",
+        "Gary"
+      ],
+      "joke_types": [
+        "awkward_silence",
+        "cringe_discomfort"
+      ],
+      "setup": "Gary has just told Ted that Selina doesn't want to see him anymore",
+      "punchline": "An extended silence \u2014 Ted processing being dumped by his girlfriend's bag carrier",
+      "craft_total": 7.77,
+      "impact_score": 7.75,
+      "quotability": 0.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Non-verbal comedy is often the hardest to execute. This silence is working on multiple levels simultaneously: Gary's awkwardness at having just delivered a breakup, Ted's humiliation at being dumped by a proxy, the absurdity of the whole situation. The silence IS the joke \u2014 it's the sound of a man processing the most undignified romantic rejection possible. Economy score 10/10 because it uses zero words. Justifies 8+."
+    },
+    {
+      "index": 76,
+      "text": "'Oh, ma'am. You've been off radar for over an hour. Oh, did I miss anything? Did the president ride through on a lion or something?'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "A staffer notes Selina has been off radar",
+      "punchline": "'Did the president ride through on a lion or something?' \u2014 Selina's hyperbolic benchmark for what would justify a missed call",
+      "craft_total": 7.07,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A fun Selina absurdist image \u2014 the President on a lion as the threshold for urgency. The specificity of the lion (not just 'horse' or 'elephant') is the right comedic choice. Light and clean."
+    },
+    {
+      "index": 77,
+      "text": "'All right. I don't want to end up with a horse's head in my bed. Though there's room for one now.'",
+      "characters": [
+        "Selina"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "setup_punchline"
+      ],
+      "setup": "Selina is told she needs to drop in on the gaming association",
+      "punchline": "Godfather reference + immediate self-deprecating addition: 'though there's room for one now' \u2014 acknowledging Ted has just left/been dumped",
+      "craft_total": 7.21,
+      "impact_score": 7.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The Godfather reference is standard, but the pivot \u2014 'though there's room for one now' \u2014 elevates it dramatically. Selina making a darkly comic quip about the absence of her recently-dumped boyfriend within seconds of him leaving is character-perfect. The joke acknowledges real emotional loss through deflective humor, which is quintessential Selina. Justifies 8+."
+    },
+    {
+      "index": 78,
+      "text": "Gary using a farm animal fable to tell Dan and Amy who's getting fired: horse, sheep, pig \u2014 'Who does she get rid of?'",
+      "characters": [
+        "Dan",
+        "Amy",
+        "Gary"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Dan and Amy want to know who's being fired; Gary says he won't tell them anything",
+      "punchline": "Gary immediately offers a thinly veiled fable \u2014 'let's pretend there's a female farmer...' \u2014 as if this is meaningfully different from just telling them",
+      "craft_total": 7.68,
+      "impact_score": 8.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Gary's complete failure to understand that a parable with an obvious solution isn't actually keeping a secret is a nice character beat. His loyalty to Selina combined with his inability to resist being helpful creates this funny contradiction."
+    },
+    {
+      "index": 79,
+      "text": "Gary: 'What? What? Did you just call me buddy? You don't listen to me. You never listen to me. What's going on? You want something from me.'",
+      "characters": [
+        "Gary",
+        "Dan/Amy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Someone (Dan or Amy) has called Gary 'buddy' while fishing for information about who's being fired.",
+      "punchline": "Gary immediately recognizes the manipulation \u2014 being called 'buddy' has never happened, so it's transparently fake \u2014 and calls it out with wounded accuracy.",
+      "craft_total": 6.6,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Gary's self-awareness here is a nice break from his usual obliviousness. 'You want something from me' is accurate and a bit sad. His radar for being used is sharp even if his radar for everything else is dim."
+    },
+    {
+      "index": 80,
+      "text": "'I'd rather be a pig than an ass-monkey up on his high horse. There, that's three animals for you.'",
+      "characters": [
+        "Gary"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Gary has answered 'the pig' to his own fable question, then realizes he's given them information",
+      "punchline": "He tries to recover with more animal metaphors, mixing idioms, then counts 'that's three animals for you' as if the number itself neutralizes what he said",
+      "craft_total": 7.45,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "'Ass-monkey up on his high horse' is a good mixed-metaphor insult, and Gary counting 'that's three animals for you' as a deflection is funny in its logic-failure. The whole sequence of Gary accidentally revealing everything while trying not to is well-structured."
+    },
+    {
+      "index": 81,
+      "text": "The suicide pact proposal: Dan proposes they all threaten to resign together so Selina can't fire any of them",
+      "characters": [
+        "Dan",
+        "Amy"
+      ],
+      "joke_types": [
+        "absurdist",
+        "dark_subversive"
+      ],
+      "setup": "Dan wants protection against being fired",
+      "punchline": "His solution is a 'suicide pact' \u2014 a mutually assured destruction of employment that he frames with complete seriousness",
+      "craft_total": 7.22,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'suicide pact' framing for a mutual resignation threat is a nice dark-absurdist coinage. Dan's political cynicism expressed as a genuine strategic proposal. The logic is actually sound (she can't fire all of them without a crisis) which makes it funnier."
+    },
+    {
+      "index": 82,
+      "text": "'One condition... I watch you die first and I get to stab you repeatedly to make sure.'",
+      "characters": [
+        "Amy"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Amy agrees to the suicide pact with conditions",
+      "punchline": "Her condition: she gets to watch Dan die first and repeatedly stab him \u2014 maintaining the suicide metaphor while expressing her genuine desire to harm Dan",
+      "craft_total": 7.29,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A perfect escalation of the suicide pact metaphor. Amy's condition \u2014 she gets to stab Dan repeatedly to confirm death \u2014 is funny because it simultaneously plays the metaphor straight and reveals her genuine hostility to Dan. 'Repeatedly to make sure' is the killer addition. Very Amy, very quotable."
+    },
+    {
+      "index": 83,
+      "text": "'Why would we let you in on our suicide pact?' / 'Because three is better than two.' / 'Not with testicles.'",
+      "characters": [
+        "Dan",
+        "Mike",
+        "Amy"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Mike wants to join the suicide pact; Dan and Amy question why",
+      "punchline": "Mike says 'three is better than two'; Amy's comeback: 'Not with testicles' \u2014 implying adding Mike (a testicle metaphor) degrades rather than improves the pact",
+      "craft_total": 8.05,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Amy's 'Not with testicles' is one of the episode's best one-liners. The comeback works on two levels: (1) the obvious anatomical reference to Mike, (2) the implicit argument that testicles impede rather than help (hanging, dragging things down). Three words, maximum insult, perfect economy. The structure is textbook \u2014 Mike's reasonable-sounding 'three is better than two' is set up perfectly for the subversion. Justifies 8+."
+    },
+    {
+      "index": 84,
+      "text": "Mike reveals he was part of a suicide pact in the '90s with Congressman Hartigan. Dan: 'What happened?' Mike: 'Oh, we got fired.'",
+      "characters": [
+        "Mike",
+        "Dan"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Mike presents his experience with a '90s suicide pact as evidence he should be admitted.",
+      "punchline": "The pact failed immediately and everyone got fired \u2014 making his reference experience an anti-recommendation.",
+      "craft_total": 7.47,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfect Mike joke structure. He presents his experience as authority; the reveal is that his experience is proof of failure. 'Oh, we got fired' delivered as if it's a neutral fact rather than disqualifying evidence is completely Mike. The brevity and timing are excellent. Well above average \u2014 character-integrated, economical, perfectly structured."
+    },
+    {
+      "index": 85,
+      "text": "Jonah reveals an email from Dan to Macauley's chief of staff: 'the senator says, \"thanks, buddy\"'",
+      "characters": [
+        "Jonah",
+        "Dan"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Jonah has been unredacting documents and claims to have found incriminating evidence against Dan",
+      "punchline": "The 'incriminating' email is just 'the senator says thanks, buddy' \u2014 so mild that Dan correctly identifies it as 'hardly incriminating'",
+      "craft_total": 6.76,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jonah's big reveal being 'thanks, buddy' is a good deflation of his dramatic buildup. But the line 'there's probably more where that came from' correctly implies the danger is real, which gives this a plot-comedy double function."
+    },
+    {
+      "index": 86,
+      "text": "Mike about unredacting: 'I'm getting really good at dacting.' Dan: 'Do you mean un-redacting?' Mike: 'Taking the black off.'",
+      "characters": [
+        "Mike",
+        "Dan"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Mike is removing redactions from documents",
+      "punchline": "Mike has coined 'dacting' for un-redacting \u2014 eliminating the prefix and creating a new, wronger word; 'taking the black off' as a clarification is somehow worse",
+      "craft_total": 7.08,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Dacting' is a wonderful Mike coinage \u2014 he's eliminated the 'un-re' prefix and produced a new word that sounds wrong but follows a logic. 'Taking the black off' as an explanation is the right Mike clarification: literally accurate, completely unhelpful. This is Mike at his most specifically Mike."
     }
   ],
   "air_date": "2012-06-03",
