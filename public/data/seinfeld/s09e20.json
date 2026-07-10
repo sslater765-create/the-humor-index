@@ -4,33 +4,35 @@
   "season": 9,
   "episode_number": 20,
   "title": "The Puerto Rican Day",
-  "humor_index": 63.5,
-  "jpm": 3.12,
-  "avg_craft": 6.17,
-  "avg_impact": 5.87,
-  "total_jokes": 63,
-  "war": 1.3,
-  "dominant_joke_types": "[\"character_comedy\", \"observational\", \"escalation\"]",
-  "standout_joke_ids": "[20, 3, 21]",
-  "weakest_section": "19:00-20:00 range with laser pointer resolution",
+  "humor_index": 92.1,
+  "jpm": 4.11,
+  "avg_craft": 7.35,
+  "avg_impact": 7.23,
+  "total_jokes": 83,
+  "war": 107.1,
+  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[32, 17, 81]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Because ballpark food doesn't count as real food. Right. It's just an activity.",
+      "text": "Ballpark food doesn't count as real food. Right. It's just an activity. Like that paddle with the ball and rubber band.",
       "characters": [
-        "Jerry"
+        "Jerry",
+        "George"
       ],
       "joke_types": [
-        "observational"
+        "observational",
+        "absurdist"
       ],
-      "setup": "Character claims to be hungry after eating at baseball game",
-      "punchline": "Ballpark food is redefined as an activity rather than actual food",
-      "craft_total": 6.2,
-      "impact_score": 6.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "George can't believe Jerry is hungry after eating at the Mets game",
+      "punchline": "Ballpark food is reframed as an 'activity' rather than sustenance, then extended absurdly to the paddle-ball analogy",
+      "craft_total": 6.89,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Seinfeld observational humor - reframing common experience in unexpected way",
+      "explanation": "A genuinely clever observational pivot \u2014 treating ballpark food as an 'activity' is an original reframe. The paddle-ball extension is a nice absurdist escalation that earns its laugh without overstaying.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -48,22 +50,22 @@
     },
     {
       "index": 2,
-      "text": "Like that paddle with the ball and rubber band.",
+      "text": "Bob Saccamano made a fortune off of those. He came up with the idea for the rubber band. Before that, people would just hit the ball and it would fly away.",
       "characters": [
-        "Jerry"
+        "Kramer"
       ],
       "joke_types": [
-        "observational",
-        "callback"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Comparing ballpark food to other 'activities'",
-      "punchline": "References toy paddle ball as another meaningless activity",
-      "craft_total": 5.2,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "The group is discussing the paddle-ball as an activity",
+      "punchline": "Kramer's mythologized off-screen friend Saccamano is credited with inventing the rubber band \u2014 a piece of absurd pseudo-history delivered with total sincerity",
+      "craft_total": 7.81,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Sets up the Bob Saccamano story nicely but not particularly memorable on its own",
+      "explanation": "A quintessential Kramer/Saccamano joke. The deadpan rewrite of history ('before that, people would just hit the ball and it would fly away') is brilliant absurdist logic \u2014 Kramer treats it like common knowledge. High character integration because only Kramer could deliver this. Earns its 8+ by being genuinely surprising and tightly constructed.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -73,22 +75,23 @@
     },
     {
       "index": 3,
-      "text": "You know, my friend Bob Saccamano made a fortune off of those. See, he came up with the idea for the rubber band. Before that, people would just hit the ball and it would fly away.",
+      "text": "Those nachos are killing me. I thought you were hungry. It's complicated.",
       "characters": [
-        "Kramer"
+        "George",
+        "Jerry"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "deadpan_understatement"
       ],
-      "setup": "Reference to paddle ball toy",
-      "punchline": "Absurd claim that someone invented the rubber band attachment and got rich from obvious solution",
-      "craft_total": 7.5,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect Kramer moment - completely serious delivery of absurd backstory for mundane object",
+      "setup": "George complained about leaving the game early, then says the nachos are killing him",
+      "punchline": "'It's complicated' \u2014 George's body is at war with itself and he reduces it to the most dismissive possible non-answer",
+      "craft_total": 6.25,
+      "impact_score": 5.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A small but effective exchange. 'It's complicated' applied to stomach discomfort is economical and character-appropriate for George's perpetual martyrdom. Not exceptional but functional.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -106,22 +109,23 @@
     },
     {
       "index": 4,
-      "text": "Those nachos are killing me. I thought you were hungry. It's complicated.",
+      "text": "Kramer directing Jerry in traffic: 'I'll tell you when you can go. Wait, wait, wait. Now, now, now. No, no, no. Now. Go, go. No, no. Wait. Wait. Now, now, now. Jerry, go--'",
       "characters": [
-        "George",
+        "Kramer",
         "Jerry"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "George complaining about nachos after claiming to be hungry",
-      "punchline": "George's relationship with food is 'complicated'",
-      "craft_total": 5.3,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Kramer takes charge of navigating Jerry's car out of the lane",
+      "punchline": "Kramer's increasingly frantic and contradictory directions build to chaos \u2014 the joke is the uselessness of his confident leadership",
+      "craft_total": 6.78,
+      "impact_score": 6.5,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic George neurosis about food, though not particularly clever",
+      "explanation": "Works as a physical/verbal comedy beat because Kramer's incompetent confidence is so on-brand. The escalating contradictions ('Now, now, now. No, no, no.') are funny as a rhythm gag. Solid mid-tier.",
       "dialogue": [
         {
           "speaker": "George",
@@ -147,22 +151,22 @@
     },
     {
       "index": 5,
-      "text": "I'll tell you when you can go. Wait, wait, wait. Now, now, now. No, no, no. Now. Go, go. No, no. Wait. Wait. Now, now, now. Jerry, go--",
+      "text": "You want me to moon him? Let's moon him. Roll up your window. Let's do a pressed ham under glass.",
       "characters": [
-        "George"
+        "Kramer"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "George trying to help Jerry navigate traffic",
-      "punchline": "Increasingly frantic and contradictory directions",
-      "craft_total": 6.3,
-      "impact_score": 6.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
+      "setup": "The maroon Golf driver is giving them the finger after being cut off",
+      "punchline": "Kramer immediately escalates to mooning, and names the act 'a pressed ham under glass' \u2014 a weirdly specific slang term delivered with casual expertise",
+      "craft_total": 7.62,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalation and very George-like anxiety, though the concept is familiar",
+      "explanation": "'Pressed ham under glass' is a genuinely funny coinage \u2014 the specificity of the term and Kramer's breezy familiarity with it elevates what could be a cheap joke. High character integration: only Kramer has a name for this maneuver ready to deploy.",
       "dialogue": [
         {
           "speaker": "George",
@@ -188,22 +192,23 @@
     },
     {
       "index": 6,
-      "text": "You want me to moon him? Let's moon him. Roll up your window. Let's do a pressed ham under glass.",
+      "text": "Blimp: The Hindenburg Story. I found it morose. Why dwell on these negative themes? They should make a movie about all the Hindenburg flights that made it.",
       "characters": [
-        "Kramer"
+        "George",
+        "Jerry"
       ],
       "joke_types": [
-        "physical_slapstick",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Road rage situation with another driver",
-      "punchline": "Kramer suggests elaborate mooning technique with specific terminology",
-      "craft_total": 6.8,
-      "impact_score": 7.0,
+      "setup": "George saw a movie about the Hindenburg disaster",
+      "punchline": "George objects to 'dwelling on negative themes' and suggests a movie about all the successful Hindenburg flights \u2014 an absurd inversion of disaster-movie logic",
+      "craft_total": 8.18,
+      "impact_score": 8.17,
       "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Kramer's enthusiasm for crude behavior elevated by creative terminology 'pressed ham under glass'",
+      "explanation": "One of the episode's best jokes. The movie title 'Blimp: The Hindenburg Story' is already funny in its clunky literalism. George's complaint about 'negative themes' applied to one of history's most famous disasters is perfect character comedy \u2014 his oblivious self-centeredness projected onto a historical tragedy. 'They should make a movie about all the Hindenburg flights that made it' is a genuinely brilliant inversion. Earns 8+ easily.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -213,22 +218,23 @@
     },
     {
       "index": 7,
-      "text": "Blimp: The Hindenberg Story.",
+      "text": "'That's gotta hurt.' The place went nuts. Imagine the laugh you could have gotten if you had yelled that out at the actual disaster.",
       "characters": [
-        "Elaine"
+        "George",
+        "Jerry"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "absurdist"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Asked about the name of Hindenberg movie",
-      "punchline": "Ridiculous oversimplified movie title",
-      "craft_total": 5.5,
-      "impact_score": 5.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "George reveals he yelled 'That's gotta hurt' during the Hindenburg explosion scene in the theater",
+      "punchline": "Jerry escalates the dark logic: imagine yelling it at the ACTUAL disaster \u2014 acknowledging that the joke works on a horrifying real level",
+      "craft_total": 7.73,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple but effective - captures Hollywood's tendency toward obvious titles",
+      "explanation": "A sharp dark-comedy escalation. George's theater stunt is funny, but Jerry's response \u2014 calmly noting it would have been even better at the real disaster \u2014 is the real joke. The casual nihilism is very Seinfeld. Strong structure and economy.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -238,22 +244,24 @@
     },
     {
       "index": 8,
-      "text": "They should make a movie about all the Hindenberg flights that made it.",
+      "text": "It's the Puerto Rican Day parade! (said simultaneously by multiple characters)",
       "characters": [
-        "Elaine"
+        "Jerry",
+        "George",
+        "Kramer"
       ],
       "joke_types": [
-        "observational",
-        "irony_sarcasm"
+        "reaction_beat",
+        "running_gag"
       ],
-      "setup": "Complaining about dwelling on negative themes",
-      "punchline": "Suggests movie about successful (boring) flights instead",
-      "craft_total": 6.6,
+      "setup": "The group is wondering why there's music and flags everywhere",
+      "punchline": "The simultaneous exclamation \u2014 establishing the parade as the episode's central comedic premise",
+      "craft_total": 5.88,
       "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever inversion of disaster movie concept - what if nothing went wrong?",
+      "explanation": "A functional premise-establishing beat. The simultaneous delivery is a classic sitcom moment. Not exceptionally crafted but serves its structural purpose.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -275,22 +283,23 @@
     },
     {
       "index": 9,
-      "text": "I yelled out, 'That's gotta hurt.' The place went nuts.",
+      "text": "I think every Puerto Rican in the world is out here. Well, it is our day.",
       "characters": [
-        "Elaine"
+        "Kramer",
+        "Unknown Parade-goer"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "irony_sarcasm",
+        "reaction_beat"
       ],
-      "setup": "Describing tense moment in Hindenberg disaster movie",
-      "punchline": "Elaine disrupted serious moment with inappropriate comedy",
-      "craft_total": 6.2,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Kramer scouts the parade and reports back",
+      "punchline": "A Puerto Rican bystander overhears Kramer's comment and responds with quiet dignity \u2014 'Well, it is our day' \u2014 making Kramer's obliviousness the joke",
+      "craft_total": 6.96,
+      "impact_score": 6.67,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good setup for Elaine's inappropriate timing, though the line itself isn't particularly clever",
+      "explanation": "The straight-faced 'Well, it is our day' response to Kramer's clueless observation is economical and sharp. Works as a deadpan corrective to Kramer's outsider obliviousness.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -300,22 +309,22 @@
     },
     {
       "index": 10,
-      "text": "Imagine the laugh you could have gotten if you had yelled that out at the actual disaster.",
+      "text": "Wrong car. Sorry.",
       "characters": [
-        "Jerry"
+        "Kramer"
       ],
       "joke_types": [
-        "dark_subversive",
-        "escalation"
+        "reaction_beat",
+        "deadpan_understatement"
       ],
-      "setup": "Elaine's story about disrupting movie",
-      "punchline": "Jerry escalates to suggesting she do it at the real historical tragedy",
-      "craft_total": 7.25,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Kramer climbs into a car that isn't Jerry's",
+      "punchline": "The breezy, utterly un-embarrassed 'Wrong car. Sorry.' \u2014 Kramer's casual shamelessness",
+      "craft_total": 6.95,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Jerry escalation - takes premise to darkly logical extreme",
+      "explanation": "Three words doing a lot of work. Kramer's complete lack of embarrassment is the joke. Perfect economy score \u2014 couldn't be funnier with more words.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -337,22 +346,23 @@
     },
     {
       "index": 11,
-      "text": "It's the Puerto Rican Day parade. It's the Puerto Rican Day parade. The city shuts down Fifth Avenue. They never let anyone through.",
+      "text": "I'm gonna miss 60 Minutes. You know I hate to miss 60 Minutes. It's part of my Sunday weekend wind-down. How can you unwind with that clock ticking? It makes me anxious.",
       "characters": [
-        "Jerry",
-        "Elaine"
+        "George",
+        "Jerry"
       ],
       "joke_types": [
+        "character_comedy",
         "observational"
       ],
-      "setup": "Characters stuck in unexpected traffic",
-      "punchline": "Simultaneous realization and explanation of their predicament",
-      "craft_total": 4.45,
-      "impact_score": 4.0,
-      "quotability": 3.0,
+      "setup": "The group is lamenting being stuck in traffic",
+      "punchline": "Jerry punctures George's ritual by noting the ticking clock makes him anxious \u2014 a perfect observational subversion of the 'winding down' concept",
+      "craft_total": 7.04,
+      "impact_score": 6.67,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "More plot setup than joke, though the simultaneous delivery has some comedic timing",
+      "explanation": "A genuinely clever observational joke \u2014 the ticking clock on 60 Minutes is antithetical to 'winding down.' Jerry's callback to the literal meaning of the show's sonic signature is sharp. George's attachment to the ritual is perfectly in character.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -398,23 +408,22 @@
     },
     {
       "index": 12,
-      "text": "I think every Puerto Rican in the world is out here. Well, it is our day.",
+      "text": "Hey, Jerry. You know who the grand marshal is of this thing? None other than Miss Chita Rivera... No, no, no. It was Maria Conchita Alonso.",
       "characters": [
-        "Jerry",
-        "Unknown"
+        "Kramer"
       ],
       "joke_types": [
-        "observational",
-        "reaction_beat"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Jerry's exaggerated observation about crowd size",
-      "punchline": "Jerry gets into wrong car and receives matter-of-fact response from stranger",
-      "craft_total": 5.4,
+      "setup": "Kramer returns with intel on the parade",
+      "punchline": "He confidently announces Chita Rivera, then casually corrects himself to Maria Conchita Alonso \u2014 both are real Latina celebrities, and the breezy self-correction deflates his authority",
+      "craft_total": 6.63,
       "impact_score": 6.0,
-      "quotability": 4.0,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good physical comedy setup with Jerry in wrong car, stranger's casual response works well",
+      "explanation": "Kramer's confident wrongness followed by a casual, unembarrassed correction is perfectly in character. The specific celebrity name-drops ground the absurdity in reality.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -428,22 +437,24 @@
     },
     {
       "index": 13,
-      "text": "Wrong car. Sorry.",
+      "text": "This guy's giving me the stare-ahead. The stare-ahead, I hate that. I use it all the time.",
       "characters": [
+        "George",
         "Jerry"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "awkward_silence"
+        "observational",
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Jerry's continued conversation in wrong car",
-      "punchline": "Awkward realization and exit",
-      "craft_total": 4.9,
-      "impact_score": 5.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
+      "setup": "George complains about the driver ahead giving them the 'stare-ahead'",
+      "punchline": "'I use it all the time' \u2014 George immediately reveals his hypocrisy without any self-awareness",
+      "craft_total": 8.05,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple physical comedy payoff, economical but not particularly inventive",
+      "explanation": "A beautifully constructed character joke. The term 'stare-ahead' is a genuine Seinfeldian neologism \u2014 specific, instantly recognizable, and coinable. George's immediate self-incrimination ('I use it all the time') is classic Costanza: complaining about behavior he himself exhibits. The structure \u2014 complaint, then confession in the same breath \u2014 is tight and funny. Earns 8+ for the neologism, character specificity, and economy.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -469,22 +480,22 @@
     },
     {
       "index": 14,
-      "text": "How you can unwind with that clock ticking? It makes me anxious.",
+      "text": "Look at me. I am man. I am you.",
       "characters": [
-        "George"
+        "Kramer"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "George complaining about missing 60 Minutes",
-      "punchline": "The show's signature ticking clock makes him anxious instead of relaxed",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Kramer suggests they need to show a human face to get let into the lane",
+      "punchline": "Kramer leans out and delivers this primal, absurdist declaration to a stranger as if it will work",
+      "craft_total": 7.78,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment - George's anxiety extends even to watching TV",
+      "explanation": "One of the episode's most quotable moments. 'I am man. I am you.' is pure absurdist Kramer \u2014 he sincerely believes this primal appeal will work. The economy is exceptional (five words, huge laugh). The character specificity is perfect: only Kramer tries to forge human connection through caveman-level oratory.",
       "dialogue": [
         {
           "speaker": "George",
@@ -498,22 +509,22 @@
     },
     {
       "index": 15,
-      "text": "You know, you should make yourself throw up. You know you're going to.",
+      "text": "Oh, I know who it is. Stacy Keach.",
       "characters": [
-        "Jerry"
+        "George"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "absurdist",
+        "deadpan_understatement"
       ],
-      "setup": "George complaining about nausea from nachos",
-      "punchline": "Jerry's matter-of-fact advice to get it over with",
-      "craft_total": 5.75,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "After Kramer's 'I am man' plea works and they get let into the lane, the group reacts",
+      "punchline": "George randomly identifies the driver as Stacy Keach \u2014 a specific, left-field celebrity identification with zero setup",
+      "craft_total": 6.71,
+      "impact_score": 6.17,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Jerry's practical but crude logic, decent character moment",
+      "explanation": "The randomness of 'Stacy Keach' is the joke \u2014 an oddly specific B-list celebrity name deployed with total confidence. Functional absurdism but not deeply crafted.",
       "dialogue": [
         {
           "speaker": "George",
@@ -527,22 +538,22 @@
     },
     {
       "index": 16,
-      "text": "You know who the grand marshal is of this thing? None other than Miss Chita Rivera. No, no, no. It was Maria Conchita Alonso. Oh, I know who it is. Stacy Keach.",
+      "text": "Oh, look who's here. My old buddy. Black Saab. Maroon Golf.",
       "characters": [
-        "Kramer"
+        "Jerry"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Kramer announcing parade grand marshal",
-      "punchline": "Keeps changing his answer with equal confidence each time",
-      "craft_total": 6.65,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Jerry gets stuck again and finds himself surrounded by the same cars from earlier",
+      "punchline": "Jerry greets the cars like old acquaintances \u2014 personifying them as recurring antagonists in a private drama",
+      "craft_total": 6.67,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Kramer - confident about information he clearly doesn't have, escalating certainty",
+      "is_callback": 1,
+      "explanation": "A satisfying callback that rewards attention. Jerry's mock-fond greeting of the cars as 'old buddies' captures the claustrophobic absurdity of being circling in the same traffic prison.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -564,23 +575,22 @@
     },
     {
       "index": 17,
-      "text": "This guy's giving me the stare-ahead. The stare-ahead, I hate that. I use it all the time.",
+      "text": "I've been trying to leave this group for 10 years.",
       "characters": [
-        "George",
         "Jerry"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "meta_self_referential",
+        "character_comedy"
       ],
-      "setup": "George complaining about another driver's behavior",
-      "punchline": "Jerry admits he does the same thing George hates",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Someone in traffic complains that Jerry can't just leave the group (of cars)",
+      "punchline": "Jerry's response applies to both the traffic situation and, meta-textually, to his friendship with George and Kramer \u2014 a line that operates on two levels simultaneously",
+      "craft_total": 8.32,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good coining of term 'stare-ahead' and Jerry's casual admission of hypocrisy",
+      "explanation": "The episode's best joke. 'I've been trying to leave this group for 10 years' works perfectly on both the literal traffic level and as the show's thesis statement about Jerry's relationship with his friends. It's the series finale season (S9), making it even more resonant. Perfect economy, maximum character integration \u2014 only Jerry Seinfeld on this specific show could say this line. The meta-awareness is earned, not cheap. Genuinely exceptional.",
       "dialogue": [
         {
           "speaker": "George",
@@ -602,22 +612,23 @@
     },
     {
       "index": 18,
-      "text": "Look at me. I am man. I am you.",
+      "text": "The movies. Blimp is playing right there. You're going to that again? To do that stupid line? It's a performance, Jerry. Like what you do. That's not what I do. Isn't it? Maybe a little. Hell, I guess it is.",
       "characters": [
-        "George"
+        "George",
+        "Jerry"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "meta_self_referential"
       ],
-      "setup": "George demonstrating the 'stare-ahead'",
-      "punchline": "Pseudo-philosophical declaration while glaring",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
+      "setup": "George announces he's leaving to see Blimp again to yell his line at the explosion",
+      "punchline": "Jerry reluctantly admits that George's audience-participation theater stunt is essentially the same as his stand-up comedy",
+      "craft_total": 7.3,
+      "impact_score": 6.83,
       "quotability": 7.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent George moment - takes simple staring to absurd existential level",
+      "is_callback": 1,
+      "explanation": "A smart meta-moment where Jerry is forced to reckon with the fact that his stand-up is structurally similar to George's disruptive theater behavior. The slow capitulation ('Maybe a little. Hell, I guess it is.') is excellent character work. High marks for character integration and structure.",
       "dialogue": [
         {
           "speaker": "George",
@@ -627,22 +638,22 @@
     },
     {
       "index": 19,
-      "text": "You seem to be a tad askew.",
+      "text": "You know, actually, Jerry, you haven't worked a room that big in a while.",
       "characters": [
-        "Jerry"
+        "George"
       ],
       "joke_types": [
-        "observational",
-        "deadpan_understatement"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Addressing driver whose car is blocking traffic",
-      "punchline": "Polite understatement for obvious problem",
-      "craft_total": 5.5,
-      "impact_score": 5.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Jerry's characteristically polite way of pointing out someone's mistake",
+      "setup": "Jerry has half-admitted that George's theater stunt is like his comedy",
+      "punchline": "George twists the knife: Jerry's career has declined to the point where a movie theater crowd is bigger than his venues",
+      "craft_total": 7.69,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A sharp follow-up jab. George's ability to wound Jerry with casual observations is perfect Costanza behavior. The implication that Jerry's stand-up career is failing enough that a movie audience would be a step up is genuinely funny and mean in the right way.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -656,22 +667,23 @@
     },
     {
       "index": 20,
-      "text": "I've been trying to leave this group for 10 years.",
+      "text": "Look at that guy's dog. I hate it when their ears get flipped inside out like that. Why doesn't he fix it? Hey! Fold your dog's ear back!",
       "characters": [
-        "Elaine"
+        "Jerry"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "character_comedy"
+        "observational",
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "George saying she can't just leave the group",
-      "punchline": "Elaine's admission she's wanted to escape her friends for a decade",
-      "craft_total": 7.75,
-      "impact_score": 8.0,
-      "quotability": 8.0,
+      "setup": "Jerry spots a dog with its ear flipped inside out",
+      "punchline": "Unable to contain himself, Jerry shouts at a stranger to fix his dog's ear \u2014 a perfect encapsulation of Jerry's petty obsessions taken to social breaking point",
+      "craft_total": 8.05,
+      "impact_score": 8.17,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant meta-joke about the show itself and character dynamics, perfectly delivered",
+      "explanation": "Classic Jerry Seinfeld comedy DNA \u2014 a hyperspecific, universally relatable observation (flipped dog ears ARE annoying) escalated past reasonable social behavior. The escalation from internal complaint to public shouting is perfectly paced. High character integration: Jerry's petty gripes becoming social incidents is his signature move.",
       "dialogue": [
         {
           "speaker": "George",
@@ -685,23 +697,24 @@
     },
     {
       "index": 21,
-      "text": "It's a performance, Jerry. Like what you do. That's not what I do. Isn't it? Maybe a little. Hell, I guess it is.",
+      "text": "I could walk faster than this. No, you can't. Yes, I can. Here. [George gets out and walks] Now it's moving. Oh, yeah, I knew it. Hey! Hey!",
       "characters": [
-        "Kramer",
+        "George",
         "Jerry"
       ],
       "joke_types": [
-        "meta_self_referential",
+        "physical_slapstick",
+        "escalation",
         "character_comedy"
       ],
-      "setup": "Kramer defending his movie disruption as performance",
-      "punchline": "Jerry slowly realizes his stand-up is similar behavior",
-      "craft_total": 7.45,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "George bets he can walk faster than the traffic and exits the car to prove it",
+      "punchline": "The traffic immediately starts moving the moment he gets out, leaving him stranded outside \u2014 a perfect cosmic punishment for George's hubris",
+      "craft_total": 7.05,
+      "impact_score": 7.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great meta moment where Jerry realizes he's also performing for audiences, good character insight",
+      "explanation": "A well-structured situational comedy beat. The universe punishing George immediately upon his act of hubris is satisfying and very on-brand for the show's karmic comedy. The 'Hey! Hey!' as the car pulls away is a good visual beat.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -727,22 +740,23 @@
     },
     {
       "index": 22,
-      "text": "You know, actually, Jerry, you haven't worked a room that big in a while.",
+      "text": "Where to? That's cute. That's really cute.",
       "characters": [
+        "Jerry",
         "George"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "reaction_beat"
       ],
-      "setup": "Discussion of Jerry's stand-up career",
-      "punchline": "George's backhanded dig at Jerry's career status",
-      "craft_total": 6.3,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "George is left standing in traffic after getting out of the car; he flags down the car like a taxi",
+      "punchline": "Jerry addresses him as if he's a cab passenger \u2014 'Where to?' \u2014 then immediately breaks and calls it cute",
+      "craft_total": 6.54,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic George - manages to be supportive and insulting simultaneously",
+      "explanation": "A quick, functional bit. Jerry's taxi-driver bit is a nice light comedic jab. 'That's cute. That's really cute.' as self-commentary is a funny topper.",
       "dialogue": [
         {
           "speaker": "George",
@@ -752,22 +766,22 @@
     },
     {
       "index": 23,
-      "text": "I hate it when their ears get flipped inside out like that. Why doesn't he fix it?",
+      "text": "Elaine in a store, buying random items while waiting for the parade to pass",
       "characters": [
-        "Jerry"
+        "Elaine"
       ],
       "joke_types": [
-        "observational",
+        "visual_gag",
         "character_comedy"
       ],
-      "setup": "Jerry notices dog with inside-out ear",
-      "punchline": "Bothered by owner's inaction on trivial problem",
-      "craft_total": 5.95,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Elaine is stuck in the street and wanders into a store",
+      "punchline": "She's casually shopping out of boredom and circumstance \u2014 the visual of buying laser pointers etc. while stuck in a parade is absurd",
+      "craft_total": 5.53,
+      "impact_score": 5.25,
+      "quotability": 3.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Jerry observational moment - getting annoyed by something trivial",
+      "explanation": "A contextual visual moment \u2014 Elaine's opportunistic shopping mid-parade is mildly funny but not well developed in the transcript. Functional setup for the laser pointer subplot.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -801,22 +815,22 @@
     },
     {
       "index": 24,
-      "text": "Hey! Fold your dog's ear back!",
+      "text": "The laser's not funny. I'm funny.",
       "characters": [
-        "Jerry"
+        "Stranger at movie theater"
       ],
       "joke_types": [
-        "escalation",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Jerry's internal annoyance about dog's ear",
-      "punchline": "Actually yells instruction to stranger",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Elaine approaches a man she thinks has a funny laser pointer",
+      "punchline": "The man corrects her \u2014 the laser isn't the funny part, HE is \u2014 a weirdly defensive and specific distinction",
+      "craft_total": 7.33,
+      "impact_score": 7.33,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation from internal observation to public outburst",
+      "explanation": "An unexpectedly sharp line. The stranger's insistence on credit \u2014 the laser is just a tool, I am the artist \u2014 is funny in its oddly earnest pride. Economy score is very high: six words, big laugh.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -830,23 +844,23 @@
     },
     {
       "index": 25,
-      "text": "I could walk faster than this. No, you can't. Yes, I can. Here. I'm out of here.",
+      "text": "Elaine asks the movie theater laser man to leave her 'a little window' in the explosion scene for her own zinger",
       "characters": [
-        "George",
-        "Jerry"
+        "Elaine",
+        "Laser Man"
       ],
       "joke_types": [
         "character_comedy",
-        "physical_slapstick"
+        "absurdist"
       ],
-      "setup": "George claiming he can walk faster than traffic",
-      "punchline": "Actually gets out to prove his point",
-      "craft_total": 5.8,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "George's stubborn commitment to proving trivial point, leads to separation",
+      "setup": "Elaine has her own zinger she wants to use at the Hindenburg explosion moment in the movie",
+      "punchline": "She approaches a stranger to negotiate performance real estate in a movie theater \u2014 treating it like a showbiz booking conflict",
+      "craft_total": 7.56,
+      "impact_score": 7.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback to the Hindenburg movie joke is well-earned, and the absurdity of Elaine negotiating 'a little window' in the explosion scene is delightfully specific. The convergence of multiple characters wanting to do comedy bits at the same movie is great absurdist plotting.",
       "dialogue": [
         {
           "speaker": "George",
@@ -864,22 +878,22 @@
     },
     {
       "index": 26,
-      "text": "Now it's moving. Oh, yeah, I knew it.",
+      "text": "You know, my aunt had a thing removed with a laser.",
       "characters": [
-        "Jerry"
+        "Elaine"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "awkward_silence"
       ],
-      "setup": "George gets out claiming traffic is too slow",
-      "punchline": "Traffic immediately starts moving after George leaves",
-      "craft_total": 5.0,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Elaine is trying to negotiate with the laser man and fills dead air with small talk",
+      "punchline": "The non-sequitur overshare about her aunt's laser surgery \u2014 a perfect Elaine moment of social desperation",
+      "craft_total": 6.92,
+      "impact_score": 6.33,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Predictable timing gag but Jerry's knowing response is characteristic",
+      "explanation": "A classic Elaine overshare non-sequitur. 'My aunt had a thing removed with a laser' fills awkward silence in exactly the wrong way \u2014 it's specific enough to be weird ('a thing') without being specific enough to be sensible. Efficient and character-true.",
       "dialogue": [
         {
           "speaker": "George",
@@ -913,22 +927,23 @@
     },
     {
       "index": 27,
-      "text": "I think someone has one of those funny laser pointers.",
+      "text": "We leave the car here. We take the plates off, we scratch the serial number off the engine block and we walk away. Walk away? Well, you've got insurance. You tell them the car was stolen, and then you get another one free.",
       "characters": [
-        "Elaine"
+        "Kramer",
+        "Jerry"
       ],
       "joke_types": [
-        "observational",
-        "setup_punchline"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Noticing dot on someone in movie theater",
-      "punchline": "Innocent interpretation of laser pointer harassment",
-      "craft_total": 4.4,
-      "impact_score": 4.0,
-      "quotability": 3.0,
+      "setup": "The group is stuck in traffic and Kramer proposes a solution",
+      "punchline": "Kramer's 'solution' is elaborate insurance fraud delivered as if it's a perfectly sensible plan \u2014 and he keeps going when questioned",
+      "craft_total": 7.4,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sets up laser pointer subplot but not particularly funny on its own",
+      "explanation": "Classic Kramer: an elaborate, illegal plan presented with complete earnestness. The specificity of 'scratch the serial number off the engine block' shows Kramer has thought about this before. Character integration is high.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -954,22 +969,23 @@
     },
     {
       "index": 28,
-      "text": "The laser's not funny. I'm funny.",
+      "text": "Isn't there a deductible? All right, what is your deductible? I don't know. Yes. Because they've already deducted it. From what? The car. Which we're leaving, so the net is zero.",
       "characters": [
-        "Laser Guy"
+        "Jerry",
+        "Kramer"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Elaine asking about 'funny' laser pointer",
-      "punchline": "Pretentious distinction between prop and performer",
-      "craft_total": 6.3,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character establishment - pompous about his 'art,' economical delivery",
+      "setup": "Jerry pokes a hole in Kramer's insurance fraud scheme by asking about the deductible",
+      "punchline": "Kramer's pseudo-logical financial reasoning \u2014 'they've already deducted it... from the car... which we're leaving, so the net is zero' \u2014 is complete nonsense delivered with total confidence",
+      "craft_total": 8.32,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Kramer's fake financial logic is brilliantly constructed. The reasoning sounds almost plausible for a split second \u2014 'deducted... from the car' \u2014 before collapsing into complete nonsense. This is a high-craft absurdist joke: it has internal logic, it escalates, and it's deeply character-specific. Earns 8+ because the pseudo-math is genuinely inventive.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -983,22 +999,22 @@
     },
     {
       "index": 29,
-      "text": "You know, my aunt had a thing removed with a laser.",
+      "text": "All right. If you refuse to grow up and scam your insurance company...",
       "characters": [
-        "Laser Guy"
+        "Kramer"
       ],
       "joke_types": [
-        "absurdist",
-        "awkward_silence"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Elaine trying to negotiate laser pointer timing",
-      "punchline": "Completely irrelevant personal medical information",
-      "craft_total": 4.95,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Jerry refuses to abandon his car",
+      "punchline": "Kramer frames insurance fraud as the 'grown-up' option \u2014 refusing to do it is childish",
+      "craft_total": 7.69,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Random oversharing creates awkward moment, typical Seinfeld secondary character",
+      "is_callback": 1,
+      "explanation": "The inversion of maturity \u2014 'refuse to grow up and scam your insurance company' \u2014 is a sharp comedic reversal. Kramer's moral framework is so inverted that fraud equals adulthood. Excellent economy and character integration.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -1020,23 +1036,23 @@
     },
     {
       "index": 30,
-      "text": "We leave the car here. We take the plates off, we scratch the serial number off the engine block and we walk away. Walk away? Well, you've got insurance.",
+      "text": "I never meet anyone funny. I know. A sense of humor is so much more important to me than looks or hair.",
       "characters": [
-        "Kramer",
-        "Jerry"
+        "Elaine",
+        "Laser Man"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Kramer suggesting solution to traffic problem",
-      "punchline": "Elaborate insurance fraud scheme presented as simple solution",
-      "craft_total": 7.25,
-      "impact_score": 7.0,
+      "setup": "Elaine is bonding with the laser man over their shared appreciation for comedy",
+      "punchline": "'...than looks or hair' \u2014 the 'hair' addition implies the laser man is bald and Elaine is diplomatically including it as a distinct category she's transcended caring about",
+      "craft_total": 6.58,
+      "impact_score": 6.0,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Kramer - criminal activity presented as reasonable problem-solving, detailed planning",
+      "explanation": "The 'or hair' addition is the joke's key move \u2014 it signals bald man in the room without saying it, and Elaine's attempt at diplomatic inclusion is charmingly awkward. Solid construction.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -1062,23 +1078,24 @@
     },
     {
       "index": 31,
-      "text": "All right, what is your deductible? I don't know. Yes. Because they've already deducted it. From what? The car. Which we're leaving, so the net is zero.",
+      "text": "George yells 'That's gotta hurt!' at the Hindenburg explosion in the theater \u2014 but the laser man gets there first with a laser dot, stealing George's moment",
       "characters": [
-        "Kramer",
-        "Jerry"
+        "George",
+        "Laser Man"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "callback",
+        "escalation",
+        "misdirection"
       ],
-      "setup": "Jerry questioning the insurance fraud logic",
-      "punchline": "Kramer's completely nonsensical but confident mathematical explanation",
-      "craft_total": 7.4,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "George has set up to deliver his zinger at the explosion scene in the movie",
+      "punchline": "The laser man's visual gag preempts and overshadows George's verbal joke \u2014 George's carefully planned performance is stolen",
+      "craft_total": 7.55,
+      "impact_score": 7.5,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant Kramer logic - completely wrong but delivered with mathematical confidence",
+      "is_callback": 1,
+      "explanation": "A beautifully plotted payoff. The multiple plotlines (George's theater bit, Elaine's negotiation, the laser man) converge in this moment. George having his big comedic moment ruined is deeply satisfying as a structural comedy beat. The escalation from setup to payoff across the whole episode earns a strong score.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -1100,22 +1117,22 @@
     },
     {
       "index": 32,
-      "text": "If you refuse to grow up and scam your insurance company, you'll have to work this out with maroon Golf.",
+      "text": "Damn you, laser guy! You had to grab it all with your lowbrow laser shtick. You're just a prop comic. Where's the craft?",
       "characters": [
-        "Kramer"
+        "George"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "meta_self_referential"
       ],
-      "setup": "Jerry rejecting insurance fraud scheme",
-      "punchline": "Kramer frames insurance fraud as the mature choice",
-      "craft_total": 7.2,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great Kramer inversion - criminal behavior as sign of maturity",
+      "setup": "George's zinger has been stolen by the laser man",
+      "punchline": "George rails against 'prop comedy' and demands to know 'where's the craft?' \u2014 a man who was going to yell a one-liner at a movie judging someone else's comedy as lowbrow",
+      "craft_total": 8.54,
+      "impact_score": 8.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's comedic crown jewel alongside joke #17. George's furious complaint about a lack of 'craft' while himself attempting to disrupt a film with a one-liner is magnificent hypocrisy. 'Where's the craft?' becomes instantly quotable. The meta-commentary on comedy \u2014 with a man who has no standing to offer it \u2014 is perfectly constructed and deeply character-integrated. Earns 8.5+ for the brilliant ironic inversion and perfect character voice.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -1133,22 +1150,23 @@
     },
     {
       "index": 33,
-      "text": "That's gotta hurt! It's gotta hurt! Hurt! Because.... Damn you, laser guy!",
+      "text": "Look, it's on the bald guy. I am so glad we came to this showing.",
       "characters": [
+        "Audience Member",
         "Elaine"
       ],
       "joke_types": [
-        "callback",
-        "escalation"
+        "visual_gag",
+        "reaction_beat"
       ],
-      "setup": "Elaine trying to deliver her Hindenberg line",
-      "punchline": "Escalating frustration as laser guy interrupts her timing",
-      "craft_total": 6.2,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "The audience reacts as the laser dot lands on a bald man's head",
+      "punchline": "Elaine, who negotiated with the laser man, watches his prop comedy succeed brilliantly and expresses delight \u2014 undercutting her earlier high-mindedness about wanting 'craft'",
+      "craft_total": 6.13,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Good payoff to earlier setup, Elaine's escalating frustration works well",
+      "explanation": "A satisfying visual beat \u2014 Elaine's delight in exactly the lowbrow humor she'd been trying to insert herself into is mildly ironic. The bald man laser payoff is a classic visual gag. Functional and fun.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -1182,22 +1200,22 @@
     },
     {
       "index": 34,
-      "text": "You're just a prop comic. Where's the craft?",
+      "text": "'Hallelujah. Praise the Lord.' But I'll take it.",
       "characters": [
-        "Elaine"
+        "Maroon Golf driver"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Elaine's conflict with laser pointer guy",
-      "punchline": "Elaine critiques his comedy on artistic grounds",
-      "craft_total": 6.75,
-      "impact_score": 6.0,
-      "quotability": 7.0,
+      "setup": "Jerry gives the maroon Golf driver the 'I'm sorry wave' as negotiated",
+      "punchline": "The maroon Golf driver accepts the half-hearted apology with exaggerated spiritual relief \u2014 'Hallelujah. Praise the Lord.' \u2014 then immediately deflates it with 'But I'll take it'",
+      "craft_total": 6.89,
+      "impact_score": 6.67,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Meta commentary on comedy itself, Elaine as serious critic of performance art",
+      "is_callback": 1,
+      "explanation": "The religious escalation followed by the pragmatic deflation ('But I'll take it') is a nice two-beat joke. The character of the maroon Golf driver \u2014 who has clearly been stewing for twenty minutes \u2014 gets a satisfying comedic resolution.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -1215,22 +1233,22 @@
     },
     {
       "index": 35,
-      "text": "You raise the hand, lower the head. 'I'm sorry. The buttons are really big on the car. I don't understand. I haven't read the manual.' You get my drift.",
+      "text": "Stay away from my breasts-- Chest!",
       "characters": [
-        "Kramer"
+        "Jerry"
       ],
       "joke_types": [
         "character_comedy",
-        "physical_slapstick"
+        "misdirection"
       ],
-      "setup": "Explaining apology gesture to Jerry",
-      "punchline": "Elaborate choreographed apology with specific dialogue",
-      "craft_total": 7.05,
+      "setup": "George is using a laser pointer on Jerry while he's trying to drive",
+      "punchline": "Jerry starts to say 'breasts' when asking George to stop shining the laser on his chest \u2014 catching himself and correcting to 'chest' \u2014 a Freudian slip that exposes his fluster",
+      "craft_total": 7.03,
       "impact_score": 7.0,
-      "quotability": 6.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Kramer's detailed script for fake apology, physical comedy with specific instructions",
+      "explanation": "A quick, funny slip that works well. The self-correction emphasizes the slip rather than covering it \u2014 very relatable and sharp. Economy is high.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -1252,22 +1270,23 @@
     },
     {
       "index": 36,
-      "text": "Hey, Jerry, crank up the Floyd, it's a George Laserium.",
+      "text": "And by the way, that was an 'I'm not sorry' wave. I'm glad I cut you off, because black Saab rules. So long, jackass.",
       "characters": [
-        "Kramer"
+        "Jerry"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm",
+        "callback"
       ],
-      "setup": "George being targeted by laser pointer",
-      "punchline": "Combines Pink Floyd laser show with George's name",
-      "craft_total": 6.75,
-      "impact_score": 6.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Clever wordplay combining laser show reference with George's predicament",
+      "setup": "Jerry just gave the maroon Golf driver an 'I'm sorry wave' as agreed \u2014 but now that he's free, he takes it back",
+      "punchline": "Jerry reveals it was an 'I'm not sorry wave' \u2014 pure spite once he no longer needs the other driver's cooperation",
+      "craft_total": 7.45,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A deeply satisfying callback payoff. Jerry's instant reversal \u2014 the moment he no longer needs the guy, he takes back the apology \u2014 is perfect character comedy. 'That was an I'm not sorry wave' is very quotable. High character integration: Jerry's petty pride is a core character trait.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -1285,22 +1304,23 @@
     },
     {
       "index": 37,
-      "text": "Stay away from my breasts-- Chest!",
+      "text": "Elaine? Jerry? Jackass. So I'm a jackass now?",
       "characters": [
-        "George"
+        "Jerry",
+        "Elaine"
       ],
       "joke_types": [
-        "character_comedy",
-        "physical_slapstick"
+        "callback",
+        "reaction_beat"
       ],
-      "setup": "George being harassed by laser pointer",
-      "punchline": "Freudian slip while protecting himself",
-      "craft_total": 5.95,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "George's neurosis manifesting in slip of tongue under stress",
+      "setup": "Jerry has just called the maroon Golf driver a 'jackass' \u2014 and pulls forward to find Elaine's cab blocking the intersection",
+      "punchline": "Elaine is the one who just got called a jackass \u2014 and she heard it",
+      "craft_total": 7.98,
+      "impact_score": 8.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfectly constructed comedic convergence \u2014 the multiple storylines collide in the most awkward way possible. The audience sees it coming slightly but the timing and staging make it land hard. Structure score is high for the multi-storyline payoff.",
       "dialogue": [
         {
           "speaker": "George",
@@ -1314,22 +1334,22 @@
     },
     {
       "index": 38,
-      "text": "And by the way, that was an 'I'm not sorry' wave. I'm glad I cut you off because black Saab rules. So long, jackass.",
+      "text": "So if everyone would just put their cars in reverse at the same time... on the count of three. Can everyone hear me? Hey, Amigo, are you paying attention? Buenos d\u00edas, my friend. Not you. The guy in the Amigo.",
       "characters": [
-        "Jerry"
+        "Kramer"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Jerry giving fake apology wave",
-      "punchline": "Reveals true defiant message and insults the other driver",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Kramer appoints himself traffic coordinator and begins attempting to orchestrate a mass reverse maneuver",
+      "punchline": "He calls out 'Amigo' to get attention, then has to specify he means the person in the AMC Amigo vehicle, not the Spanish-speaking man \u2014 a beautifully clumsy correction",
+      "craft_total": 8.08,
+      "impact_score": 8.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good escalation and subversion of Kramer's apology plan",
+      "is_callback": 0,
+      "explanation": "Kramer as self-appointed authority is one of the show's great recurring character notes. The 'Amigo' confusion is genuinely funny and well-constructed \u2014 the specificity of 'the guy in the Amigo' lands perfectly. High character integration.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -1343,22 +1363,23 @@
     },
     {
       "index": 39,
-      "text": "So if everyone would just put their cars in reverse at the same time, we can do this. All right, on the count of three. Can everyone hear me?",
+      "text": "Oh, yeah, sure. Now I'm gonna be stuck here. But you knew the way to go. You went to college. Hey, I went to Tufts. It was my safety school. So don't talk to me about hardship.",
       "characters": [
-        "George"
+        "Elaine",
+        "Cab Driver"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "irony_sarcasm"
       ],
-      "setup": "George trying to solve traffic jam",
-      "punchline": "Attempts to coordinate dozens of random strangers in elaborate maneuver",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Elaine's cab is stuck and a stranger blames her for the route choice",
+      "punchline": "The cab driver or bystander invokes Tufts as his safety school as a badge of honor \u2014 as if attending a top-30 university as a 'safety school' and then driving a cab somehow constitutes a hardship perspective",
+      "craft_total": 6.44,
+      "impact_score": 6.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic George - overly complicated solution requiring impossible cooperation",
+      "explanation": "The Tufts-as-safety-school detail is a sharp class comedy beat. The implied gap between this person's academic background and their current circumstances is rich and specific. 'So don't talk to me about hardship' is the perfectly absurd topper.",
       "dialogue": [
         {
           "speaker": "George",
@@ -1380,22 +1401,24 @@
     },
     {
       "index": 40,
-      "text": "Hey, Amigo, are you paying attention? Buenos d\u00edas, my friend. Not you. The guy in the Amigo.",
+      "text": "Hey, George, I think there's a sniper looking to pop you. This thing can't hurt me, can it? I mean, it is a laser. What if it hits my eye? I don't know. I can't be blind, Jerry. The blind are courageous. You'll be fine, as long as it doesn't hit you in the pupil...because then the whole ball will go up like the Death Star.",
       "characters": [
+        "Jerry",
         "George"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "dark_subversive",
+        "absurdist",
+        "escalation"
       ],
-      "setup": "George trying to get attention of specific driver",
-      "punchline": "Confusion between greeting person and car model name",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "George is paranoid about the laser pointer targeting him",
+      "punchline": "Jerry escalates George's eye-laser fear by explaining that the eyeball would 'go up like the Death Star' \u2014 a wildly specific sci-fi comparison delivered with complete authority",
+      "craft_total": 7.81,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good wordplay with car model name creating linguistic confusion",
+      "explanation": "'The blind are courageous' and 'go up like the Death Star' are both excellent lines. The Death Star comparison is the high point \u2014 Jerry's bizarre technical authority combined with the absurd image of an eyeball exploding like a space station is genuinely funny. High originality for the specific image. George's 'I can't be blind, the blind are courageous' is also a great character beat.",
       "dialogue": [
         {
           "speaker": "George",
@@ -1405,22 +1428,23 @@
     },
     {
       "index": 41,
-      "text": "Hey, I went to Tufts. It was my safety school. So don't talk to me about hardship.",
+      "text": "Oh, he's giving you a mustache. Where is this guy? / No, don't. Don't look around. That's what he wants.",
       "characters": [
-        "George"
+        "George",
+        "Jerry"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "visual_gag",
+        "running_gag"
       ],
-      "setup": "George being abandoned by taxi driver",
-      "punchline": "Claims attending safety school as evidence of suffering",
-      "craft_total": 7.15,
-      "impact_score": 7.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect George - turning educational opportunity into victimization, perfectly delivered",
+      "setup": "The laser is back, now drawing a mustache on George's face",
+      "punchline": "Jerry warns not to look \u2014 'That's what he wants' \u2014 personifying the laser operator as an adversary with intentions",
+      "craft_total": 7.27,
+      "impact_score": 7.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Continued escalation of the laser running gag \u2014 moving from targeting to now artistically 'decorating' George. Jerry's 'that's what he wants' treats it as a strategic game, which is a good angle.",
       "dialogue": [
         {
           "speaker": "George",
@@ -1430,22 +1454,22 @@
     },
     {
       "index": 42,
-      "text": "I can't be blind, Jerry. The blind are courageous. You'll be fine, as long as it doesn't hit you in the pupil, because then the whole ball will go up like the Death Star.",
+      "text": "Hold it, George. Don't move. It's right between your eyes.",
       "characters": [
-        "George",
         "Jerry"
       ],
       "joke_types": [
-        "character_comedy"
+        "dark_subversive",
+        "reaction_beat"
       ],
-      "setup": "George worried about laser hitting his eye",
-      "punchline": "Jerry's Death Star reference for eye explosion",
-      "craft_total": 5.85,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "George needs to find a bathroom and wants to leave the car",
+      "punchline": "Jerry stops him \u2014 not out of concern but because the laser is dramatically positioned between his eyes, treating the situation like a sniper standoff",
+      "craft_total": 6.32,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "George's fear paired with Jerry's pop culture comparison, solid but not exceptional",
+      "is_callback": 1,
+      "explanation": "A functional beat that extends the laser sniper gag. Jerry's deadpan treatment of the laser as a real threat is funny but less sharp than the Death Star line.",
       "dialogue": [
         {
           "speaker": "George",
@@ -1459,22 +1483,22 @@
     },
     {
       "index": 43,
-      "text": "They are a very festive people.",
+      "text": "Hey, jackass, get me a Diet Dr Pepper.",
       "characters": [
-        "George"
+        "Jerry"
       ],
       "joke_types": [
-        "observational",
-        "deadpan_understatement"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Discussion of how long parade might last",
-      "punchline": "George's understated cultural observation",
-      "craft_total": 4.5,
-      "impact_score": 4.0,
-      "quotability": 4.0,
+      "setup": "George is being targeted by the laser in a sniper-like fashion; the soda vendor happens by",
+      "punchline": "Jerry casually orders a soda from the 'soda guy' while George is 'under fire' \u2014 the mundane consumer desire puncturing the mock-drama",
+      "craft_total": 6.83,
+      "impact_score": 6.67,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Mild cultural observation, not particularly clever but fits George's character",
+      "explanation": "The bathos of ordering a Diet Dr Pepper during a mock-sniper situation is a good comic deflation. Also: Jerry calls the soda guy 'jackass' \u2014 an accidental echo of the running 'jackass' theme.",
       "dialogue": [
         {
           "speaker": "George",
@@ -1484,22 +1508,22 @@
     },
     {
       "index": 44,
-      "text": "None of us saw the nylon flap. That might mean something.",
+      "text": "They are a very festive people. All I know is that it's Sunday night, and I have got to unwind. Now, who's with me?",
       "characters": [
-        "George"
+        "Jerry"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "irony_sarcasm"
       ],
-      "setup": "George leading group through construction area",
-      "punchline": "Ominous interpretation of missing safety barrier",
-      "craft_total": 5.35,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Jerry is rallying the group to try to cut through an alley to escape the parade",
+      "punchline": "'They are a very festive people' is an absurdly diplomatic understatement while stuck in the parade; 'I have got to unwind' as the motivating war cry is a perfect deflation of the heroic rally",
+      "craft_total": 7.07,
+      "impact_score": 6.67,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "George's paranoia about mundane details, decent character moment",
+      "explanation": "The contrast between the life-or-death framing of Jerry's rally ('Now, who's with me?') and the completely trivial motivation ('I have got to unwind') is a sharp comedic inversion. 'They are a very festive people' is also a nice diplomatic hedge in a chaotic situation.",
       "dialogue": [
         {
           "speaker": "George",
@@ -1513,22 +1537,22 @@
     },
     {
       "index": 45,
-      "text": "I'm H. E. Pennypacker. I'm a wealthy industrialist and philanthropist and a bicyclist.",
+      "text": "Father? None of us saw the nylon flap. That might mean something.",
       "characters": [
         "Kramer"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "absurdist",
+        "deadpan_understatement"
       ],
-      "setup": "Kramer pretending to look at apartment",
-      "punchline": "Elaborate fake identity with incongruous final detail",
-      "craft_total": 7.4,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Kramer is rallying people to follow Jerry through an alley; a priest appears",
+      "punchline": "Kramer assigns spiritual significance to everyone missing the nylon flap \u2014 as if it's a miracle/omen \u2014 in response to seeing a priest",
+      "craft_total": 7.24,
+      "impact_score": 6.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Kramer persona - grandiose claims ending with mundane hobby",
+      "explanation": "A nicely absurd beat. Kramer's instinct to find cosmic meaning in a minor logistical observation ('none of us saw the nylon flap') when confronted with a priest is perfect Kramer \u2014 spiritual and grandiose about nothing. The line is cryptic and funny.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -1546,22 +1570,22 @@
     },
     {
       "index": 46,
-      "text": "I'm looking for a place where I can settle down with my peculiar habits and the women that I frequent with.",
+      "text": "Delicious to meet you.",
       "characters": [
-        "Kramer"
+        "Kramer as H.E. Pennypacker"
       ],
       "joke_types": [
         "character_comedy",
         "wordplay_pun"
       ],
-      "setup": "Kramer explaining his housing needs",
-      "punchline": "Awkward phrasing of romantic arrangements",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Kramer is posing as wealthy industrialist H.E. Pennypacker to tour an apartment",
+      "punchline": "'Delicious to meet you' instead of 'delighted' \u2014 Kramer's slightly-off deployment of sophisticated vocabulary",
+      "craft_total": 7.57,
+      "impact_score": 7.17,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Kramer's pretentious but awkward way of describing lifestyle",
+      "explanation": "A classic Kramer malapropism. 'Delicious to meet you' is just wrong enough to be hilarious while staying in the right phonetic/semantic neighborhood. The economy is exceptional \u2014 three words reveal the entire character. Kramer playing at sophistication while getting it slightly wrong is perfect.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -1587,7 +1611,7 @@
     },
     {
       "index": 47,
-      "text": "I spend that much on aftershave. Yes, I buy and sell men like myself every day.",
+      "text": "Yes, I'm H. E. Pennypacker. I'm a wealthy industrialist and philanthropist and a bicyclist.",
       "characters": [
         "Kramer"
       ],
@@ -1595,33 +1619,33 @@
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Asked about million-dollar asking price",
-      "punchline": "Absurd wealth claims with bizarre business description",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Kramer introduces his alter ego to the apartment broker",
+      "punchline": "'And a bicyclist' \u2014 tacked onto the grandiose list of credentials, a completely mundane hobby presented as equally impressive",
+      "craft_total": 8.32,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great Kramer exaggeration with mysterious business that makes no sense"
+      "explanation": "One of the episode's best lines. The list 'wealthy industrialist and philanthropist' sets up gravitas, and 'and a bicyclist' destroys it perfectly. The bathos of placing bicycling alongside industrial wealth and philanthropy as a third credential is beautifully timed. Very quotable. Earns 8+."
     },
     {
       "index": 48,
-      "text": "All right, we can move faster without Father O'Gimpy.",
+      "text": "I'm looking for a place where I can settle down with my peculiar habits and the women that I frequent with.",
       "characters": [
-        "George"
+        "Kramer as Pennypacker"
       ],
       "joke_types": [
         "character_comedy",
-        "dark_subversive"
+        "wordplay_pun"
       ],
-      "setup": "Elderly priest can't keep up in construction tunnel",
-      "punchline": "George's callous nickname for abandoned priest",
-      "craft_total": 6.55,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Pennypacker describes what he's looking for in an apartment",
+      "punchline": "'The women that I frequent with' \u2014 malapropism/misuse of 'frequent' as a verb describing social companions",
+      "craft_total": 7.44,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "George's characteristic lack of empathy with memorable cruel nickname",
+      "explanation": "Another Kramer/Pennypacker malapropism \u2014 'frequent with' for 'associate with' or 'have relationships with' is a funny wrong-word that reveals both Kramer's linguistic stretch and Pennypacker's implication of kept women. Works on multiple levels.",
       "dialogue": [
         {
           "speaker": "George",
@@ -1631,23 +1655,22 @@
     },
     {
       "index": 49,
-      "text": "I don't think I've ever seen a man driving a Saab convertible. Still haven't.",
+      "text": "Mombasa, huh? The asking price is a million and a half dollars. I spend that much on aftershave.",
       "characters": [
-        "Woman",
-        "Jerry"
+        "Kramer as Pennypacker"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Woman's observation about Saab drivers",
-      "punchline": "Jerry's denial of his masculinity",
-      "craft_total": 6.15,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "The broker mentions the apartment's asking price",
+      "punchline": "Pennypacker casually dismisses $1.5M as equivalent to his aftershave budget",
+      "craft_total": 7.51,
+      "impact_score": 7.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good setup/punchline structure, Jerry's self-deprecating response",
+      "explanation": "A classic 'wealthy eccentric' joke \u2014 the extreme wealth dismissal is a well-worn trope but delivered with Kramer's specific energy. Functional but not the freshest construction.",
       "dialogue": [
         {
           "speaker": "Woman",
@@ -1685,22 +1708,22 @@
     },
     {
       "index": 50,
-      "text": "Wouldn't it bounce back and forth between your cornea and the mirror? Faster and faster, getting more intense, until--",
+      "text": "Yes, I buy and sell men like myself every day.",
       "characters": [
-        "Jerry"
+        "Kramer as Pennypacker"
       ],
       "joke_types": [
-        "escalation",
-        "visual_gag"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Discussing laser hitting George's mirrored sunglasses",
-      "punchline": "Jerry's increasingly intense description of laser pinball effect",
-      "craft_total": 6.25,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Pennypacker is establishing his enormous wealth and power",
+      "punchline": "The phrase 'buy and sell men like myself' implies human trafficking of wealthy industrialists \u2014 a nonsensical power boast",
+      "craft_total": 7.68,
+      "impact_score": 7.5,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good visual comedy description with escalating tension",
+      "explanation": "A beautifully absurd power statement \u2014 'buy and sell men like myself' is simultaneously a clich\u00e9 about business acumen and, if taken literally, a description of human trafficking of wealthy industrialists. The deadpan delivery makes it land. High economy.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -1714,22 +1737,23 @@
     },
     {
       "index": 51,
-      "text": "I'm into this Puerto Rican Day. The sights, the sounds. The hot, spicy flavor of it all. It's caliente, Jerry.",
+      "text": "Now, I assume that there's a waterfall grotto? No. How about a bathroom? It has four. Yes. And where would the absolute nearest one be?",
       "characters": [
-        "Kramer"
+        "Kramer as Pennypacker",
+        "Broker"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "misdirection"
       ],
-      "setup": "Kramer experiencing parade while others are frustrated",
-      "punchline": "Over-the-top cultural appreciation with Spanish flourish",
-      "craft_total": 5.4,
-      "impact_score": 5.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Pennypacker asks about apartment amenities, leading with a waterfall grotto",
+      "punchline": "Failing the grotto, he immediately pivots to finding the nearest bathroom \u2014 the grandiose questions collapse into urgent biological need, revealing Kramer's real concern",
+      "craft_total": 8.03,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Typical Kramer enthusiasm for experience everyone else hates",
+      "explanation": "Excellent structural comedy \u2014 the waterfall grotto frames Pennypacker as extravagant and eccentric, then the pivot to 'How about a bathroom?' and asking for the NEAREST one reveals Kramer's urgent real motivation. The crash from grandiosity to basic bodily function is perfectly timed. High character integration: the dual nature of Kramer (grand ambitions, immediate physical needs) is on full display.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -1743,23 +1767,23 @@
     },
     {
       "index": 52,
-      "text": "Not Pennypacker. You know him? I wish I didn't. Brace yourself, madam, for an all-out bidding war. But this time, advantage Varnsen.",
+      "text": "Oh, don't worry, we'll get you home to your husband real soon. I'm not married. Well, l, for one, really respect that. Thank you. Hey. Guess who's not married.",
       "characters": [
-        "Jerry",
-        "Christine"
+        "Kramer as Pennypacker",
+        "Broker"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "setup_punchline"
       ],
-      "setup": "Jerry as Varnsen hearing about competing bidder",
-      "punchline": "Jerry pretending to know his own alter ego with dramatic declaration",
-      "craft_total": 6.45,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Pennypacker patronizingly reassures the broker about getting home to her husband",
+      "punchline": "She's unmarried; Pennypacker immediately pivots to hitting on her, announcing the news to an unseen presence ('Hey. Guess who's not married')",
+      "craft_total": 7.28,
+      "impact_score": 7.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good setup for multiple identity confusion, Jerry's dramatic delivery works",
+      "explanation": "The 'Guess who's not married' line addressed to an unseen party is a perfect Kramer beat \u2014 presumably calling through the wall or to the bathroom. The rapid pivot from patronizing concern to flirtatious opportunity is very in character. Well-structured.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -1777,22 +1801,24 @@
     },
     {
       "index": 53,
-      "text": "Now the hunted becomes the hunter.",
+      "text": "Come on, Father, you can make it. No, I can't. I've got a bad hip. Go on without me. No, I won't. Leave me. You must. All right. Take it easy. All right, we can move faster without Father O'Gimpy.",
       "characters": [
-        "George"
+        "Jerry",
+        "Father (Priest)",
+        "Kramer"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "George planning to confront laser pointer guy",
-      "punchline": "Overly dramatic framing of minor confrontation",
-      "craft_total": 5.95,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "The group is trying to move through a dark alley; the priest with the bad hip can't keep up",
+      "punchline": "Jerry immediately agrees to leave the priest ('You must' / 'All right. Take it easy.') and Kramer nicknames him 'Father O'Gimpy' within earshot",
+      "craft_total": 7.18,
+      "impact_score": 7.0,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "George's tendency to dramatize mundane situations",
+      "explanation": "The war-movie parody ('Leave me. You must.') deflating into immediate acceptance is well-constructed. 'Father O'Gimpy' as a nickname, overheard by the priest, is a classic Kramer cruelty. The group's complete willingness to abandon a priest is very on-brand for this show's moral universe.",
       "dialogue": [
         {
           "speaker": "George",
@@ -1818,22 +1844,22 @@
     },
     {
       "index": 54,
-      "text": "Let us out. There's an unmarried pregnant woman down here. Don't judge me.",
+      "text": "I heard that.",
       "characters": [
-        "Elaine"
+        "Father (Priest)"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "reaction_beat",
+        "deadpan_understatement"
       ],
-      "setup": "Group trapped underground calling for help",
-      "punchline": "Elaine's defensive addition after using pregnancy for sympathy",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Kramer calls the priest 'Father O'Gimpy' while walking away",
+      "punchline": "The priest's quiet, dignified 'I heard that' \u2014 a perfect understatement that makes the moment funnier",
+      "craft_total": 6.98,
+      "impact_score": 6.67,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment - Elaine's social anxiety even in crisis",
+      "is_callback": 1,
+      "explanation": "Three words, maximum economy. The priest's dignified 'I heard that' is funnier than any angry response would be. The understatement is perfectly calibrated.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -1847,22 +1873,23 @@
     },
     {
       "index": 55,
-      "text": "That wasn't a laser pen. No. It's just a pen.",
+      "text": "You know, I don't think I've ever seen a man driving a Saab convertible. Still haven't.",
       "characters": [
-        "George",
-        "Laser Guy"
+        "Stranger",
+        "Elaine"
       ],
       "joke_types": [
-        "misdirection"
+        "setup_punchline",
+        "irony_sarcasm"
       ],
-      "setup": "George's elaborate hunt for laser pointer harassment",
-      "punchline": "Reveals simple pen caused all the confusion",
-      "craft_total": 5.55,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "A stranger observes they've never seen a man driving a Saab convertible",
+      "punchline": "'Still haven't' \u2014 Elaine confirms she is not a man, delivered as a deadpan gender observation",
+      "craft_total": 7.84,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Decent misdirection payoff though somewhat anticlimactic",
+      "explanation": "A sharp two-beat joke. The setup implies a gendered observation about Saab drivers; 'Still haven't' confirms both that Elaine isn't a man AND that the car stereotype holds. Excellent economy \u2014 two words carry the full punch. The structure is clean.",
       "dialogue": [
         {
           "speaker": "George",
@@ -1904,23 +1931,23 @@
     },
     {
       "index": 56,
-      "text": "Oh, that's funny? No, you have, like, a dot on your face. Whoever's doing that is very clever.",
+      "text": "What seems to be the problem, officer? They're for protection, Jerry. Can you tell where I'm looking? At me? No.",
       "characters": [
-        "Pen Guy",
-        "George"
+        "George",
+        "Jerry"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "reaction_beat"
+        "visual_gag",
+        "character_comedy"
       ],
-      "setup": "George confronting wrong person about laser",
-      "punchline": "Guy points out George still has dot while praising mystery person",
-      "craft_total": 5.4,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "George has acquired large mirrored sunglasses to protect his eyes from the laser",
+      "punchline": "George addresses Jerry as 'officer' because the glasses make him look like a cop \u2014 and asks if Jerry can tell where he's looking (he can't, which is the point)",
+      "craft_total": 6.79,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Continues George's futile quest, mild irony in praising unknown harasser",
+      "explanation": "A solid visual gag \u2014 George in comically large mirrored sunglasses is an inherently funny image. The 'officer' misidentification adds a layer. Functional mid-tier comedy.",
       "dialogue": [
         {
           "speaker": "George",
@@ -1958,22 +1985,24 @@
     },
     {
       "index": 57,
-      "text": "Because it's Puerto Rican Day. Maybe we should stomp you like you stomp the flag.",
+      "text": "Well, it's back. Bring it on, baby. What if it gets in the side? Side? Wouldn't it bounce back and forth between your cornea and the mirror? Faster and faster, getting more intense, until-- All right. It's in your eye now. What?",
       "characters": [
-        "Angry Man"
+        "George",
+        "Jerry"
       ],
       "joke_types": [
         "escalation",
-        "cringe_discomfort"
+        "dark_subversive",
+        "absurdist"
       ],
-      "setup": "Kramer accidentally appears to burn Puerto Rican flag",
-      "punchline": "Crowd's threat matches perceived offense",
-      "craft_total": 4.8,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "The laser is targeting George again despite his mirrored sunglasses",
+      "punchline": "Jerry theorizes the laser could bounce between cornea and mirror at increasing intensity \u2014 another elaborate fake science horror scenario \u2014 then casually announces 'It's in your eye now'",
+      "craft_total": 7.35,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sets up chase scene but not particularly clever as joke",
+      "is_callback": 1,
+      "explanation": "A solid escalation of the laser paranoia thread. Jerry's pseudo-scientific laser-bounce theory is absurdist in the same vein as the Death Star line. 'It's in your eye now' as a casual announcement is a nice dark deadpan topper.",
       "dialogue": [
         {
           "speaker": "Angry Man",
@@ -1991,22 +2020,22 @@
     },
     {
       "index": 58,
-      "text": "I just have one thing to say to you boys. Mama!",
+      "text": "I'm into this Puerto Rican Day. The sights, the sounds. The hot, spicy flavor of it all. It's caliente, Jerry.",
       "characters": [
         "Kramer"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Kramer confronted by angry crowd",
-      "punchline": "Calls for his mother instead of fighting",
-      "craft_total": 5.95,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Kramer has apparently been exploring the parade and returns enthusiastic",
+      "punchline": "'It's caliente, Jerry' \u2014 Kramer's adoption of parade spirit expressed through comically generic pan-Latino clich\u00e9s",
+      "craft_total": 6.64,
+      "impact_score": 6.33,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Kramer cowardice moment, sets up chase sequence",
+      "explanation": "Kramer's enthusiastic cultural tourism is in character, but the 'hot, spicy flavor' and 'caliente' riff relies on generic stereotyping. The joke is more about Kramer's guileless enthusiasm than any sharp comedic construction. Functional but not crafted.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -2016,25 +2045,22 @@
     },
     {
       "index": 59,
-      "text": "Mr. Pennypacker, if you're here, and Mr. Vandelay is also here, then who's watching the factory? The factory? The Saab factory? Jerry, that's in Sweden.",
+      "text": "Varnsen. Kel Varnsen. Actually, this room intrigues me. Why is it called the TV room? Well, it's-- Balk? How was that a balk?",
       "characters": [
-        "Christine",
-        "Kramer",
-        "Jerry",
-        "George"
+        "George as Kel Varnsen"
       ],
       "joke_types": [
-        "callback",
-        "escalation"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Multiple fake identities meeting at apartment",
-      "punchline": "George's logical question exposes the absurdity, Jerry's geographical correction",
-      "craft_total": 7.0,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Great convergence of running gags with George's inadvertent logic exposing the setup",
+      "setup": "George is posing as apartment prospect Kel Varnsen while watching the Mets game on TV",
+      "punchline": "George abandons the sophisticated apartment-viewer persona mid-sentence to argue with the TV about a baseball call",
+      "craft_total": 7.51,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A perfect character break \u2014 Varnsen's facade collapses instantly at the baseball call. 'Balk? How was that a balk?' shattering the sophisticated persona is very funny and deeply in character for George, whose sports obsessions override everything.",
       "dialogue": [
         {
           "speaker": "George",
@@ -2084,23 +2110,25 @@
     },
     {
       "index": 60,
-      "text": "How do you suppose they did that? Well, there's no logical explanation.",
+      "text": "Not Pennypacker. You know him? I wish I didn't. Brace yourself, madam, for an all-out bidding war. But this time, advantage Varnsen.",
       "characters": [
-        "Jerry",
-        "George"
+        "George as Varnsen",
+        "Kramer as Pennypacker (referenced)",
+        "Broker"
       ],
       "joke_types": [
-        "observational",
-        "deadpan_understatement"
+        "character_comedy",
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Looking at Jerry's destroyed car in building",
-      "punchline": "George's matter-of-fact acceptance of impossible situation",
-      "craft_total": 5.35,
-      "impact_score": 5.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Typical Seinfeld acceptance of absurd circumstances",
+      "setup": "The broker mentions she's had interest from a wealthy industrialist \u2014 Pennypacker",
+      "punchline": "George (as Varnsen) recognizes Pennypacker as his alter ego's rival, and dramatically declares a bidding war \u2014 two fake identities of the same friend group competing",
+      "craft_total": 8.07,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The convergence of the multiple fake identities is a brilliantly constructed running gag payoff. The idea that Varnsen and Pennypacker \u2014 both fake identities of the same social circle \u2014 are now rivals in a bidding war is deeply absurd and perfectly constructed. 'Advantage Varnsen' has great quotability. Earns 8+ for the multi-storyline comedic architecture.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -2122,22 +2150,24 @@
     },
     {
       "index": 61,
-      "text": "Well, Jerry, you can't deduct it now.",
+      "text": "It's a dead end. Oh, no. I thought-- You thought? We're gonna die in the dark. I knew it.",
       "characters": [
-        "George"
+        "Jerry",
+        "George",
+        "Kramer"
       ],
       "joke_types": [
-        "callback",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Jerry's car destroyed in building",
-      "punchline": "George references Kramer's earlier insurance fraud logic",
-      "craft_total": 5.9,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Jerry leads the group through an alley shortcut",
+      "punchline": "'You thought?' followed by George's dramatic 'We're gonna die in the dark. I knew it.' \u2014 George's catastrophizing plays perfectly against the mundane situation",
+      "craft_total": 6.66,
+      "impact_score": 6.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Nice callback to earlier insurance discussion, George applying Kramer logic",
+      "is_callback": 0,
+      "explanation": "George's 'We're gonna die in the dark. I knew it.' is a good catastrophizing beat \u2014 the 'I knew it' suggests he's been waiting for this moment. 'You thought?' is a sharp cut from someone else. Solid character comedy.",
       "dialogue": [
         {
           "speaker": "George",
@@ -2147,23 +2177,23 @@
     },
     {
       "index": 62,
-      "text": "Hey, black Saab. Looks like that building cut you off. See you around. Well, at least he didn't-- Jackass.",
+      "text": "Somebody help us! Mira, mira, Stacy Keach! We're down here. Help.",
       "characters": [
-        "Maroon Golf Driver",
-        "Jerry"
+        "Kramer"
       ],
       "joke_types": [
         "callback",
-        "escalation"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Maroon Golf driver sees Jerry's car in building",
-      "punchline": "Uses Jerry's earlier insult against him, still calls him jackass",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "The group is trapped in a dark alley and calling for help",
+      "punchline": "Kramer calls for help by invoking 'Stacy Keach' as bait \u2014 referencing his earlier identification of a driver as the actor",
+      "craft_total": 7.63,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good payoff to road rage subplot, ironic reversal of fortune",
+      "explanation": "A strong callback \u2014 Kramer thinks the best way to attract rescue is to shout 'Stacy Keach!' as celebrity-bait. The absurdity of this rescue strategy combined with the callback makes it land well. Kramer's logic is impeccably wrong.",
       "dialogue": [
         {
           "speaker": "Maroon Golf Driver",
@@ -2181,22 +2211,22 @@
     },
     {
       "index": 63,
-      "text": "Well, this was a fun day. It's nice to get out.",
+      "text": "Let us out. There's an unmarried pregnant woman down here. Don't judge me.",
       "characters": [
-        "Jerry"
+        "Elaine"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "deadpan_understatement"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "After day of complete disaster and chaos",
-      "punchline": "Jerry's sarcastic positive spin on terrible experience",
-      "craft_total": 5.25,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Elaine is calling up for help from the alley",
+      "punchline": "She invokes 'unmarried pregnant woman' for sympathy \u2014 then immediately appends 'Don't judge me' as if the pregnancy is the shameful part, not being trapped in an alley",
+      "craft_total": 7.52,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic ending understatement, typical Jerry wrap-up irony",
+      "explanation": "A very strong joke. 'Don't judge me' immediately undermines her own sympathy play \u2014 she's worried about social judgment while stuck in an alley. The inversion (is she pregnant? Is that the point? Is she embarrassed about THAT while shouting for help?) creates a perfect comedic ambiguity. Highly quotable. Economy is excellent.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -2211,6 +2241,417 @@
           "line": "That's something, right?"
         }
       ]
+    },
+    {
+      "index": 64,
+      "text": "Wanna make out some more? Oh, God! Let us out!",
+      "characters": [
+        "Father (Priest)",
+        "Jerry/Group"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "The group has been trapped with Father O'Gimpy in a dark alley waiting for rescue",
+      "punchline": "The priest propositions someone for more making out \u2014 implying that while trapped, he and someone else were making out in the dark",
+      "craft_total": 7.48,
+      "impact_score": 7.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's biggest laugh moments. The priest asking 'Wanna make out some more?' is a complete and utterly unexpected reversal \u2014 the character established as a dignified victim ('I heard that') turns out to have been taking full advantage of the darkness. The 'Oh, God! Let us out!' response is perfect. Maximum surprise, excellent structure, perfectly timed dark subversion."
+    },
+    {
+      "index": 65,
+      "text": "That wasn't a laser pen. No. It's just a pen.",
+      "characters": [
+        "Elaine",
+        "Someone"
+      ],
+      "joke_types": [
+        "misdirection",
+        "deadpan_understatement"
+      ],
+      "setup": "Elaine (or George) has been targeting someone with what they thought was a laser pointer",
+      "punchline": "It was just a regular pen \u2014 meaning all the laser paranoia and dramatic reactions were caused by an ordinary writing instrument",
+      "craft_total": 7.32,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A satisfying deflation of the laser paranoia subplot. 'It's just a pen' is a perfect anticlimactic reveal \u2014 all that anxiety and theatrics over a Bic. Good structure as a running gag payoff."
+    },
+    {
+      "index": 66,
+      "text": "Yeah, it's like this every day in Puerto Rico.",
+      "characters": [
+        "Puerto Rican Parade-goer"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "irony_sarcasm"
+      ],
+      "setup": "Jerry is commenting that the parade only feels this festive once a year",
+      "punchline": "A Puerto Rican parade-goer gently corrects him \u2014 this chaos and festivity is normal daily life in Puerto Rico \u2014 delivered deadpan",
+      "craft_total": 6.9,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A nice deadpan corrective with good economy. The 'like this every day' line subverts the outsider's view of Puerto Rican festivity as exceptional. Understated and effective."
+    },
+    {
+      "index": 67,
+      "text": "Hey. There's a guy burning the Puerto Rican flag. Who? Who is burning the flag? Oh, no. Him? That's not very nice. It was an accident.",
+      "characters": [
+        "Kramer",
+        "Parade-goers"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Kramer spots someone burning the Puerto Rican flag during the parade",
+      "punchline": "'That's not very nice. It was an accident.' \u2014 the understatement of the century as a mob begins to form",
+      "craft_total": 6.72,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The setup for a consequential escalation. 'That's not very nice' applied to accidental flag-burning during the Puerto Rican Day parade is a solid understatement. The escalation that follows (mob chasing) is the bigger comedy beat."
+    },
+    {
+      "index": 68,
+      "text": "Because it's Puerto Rican Day. Maybe we should stomp you like you stomp the flag. What do you think? All right, look. I just have one thing to say to you boys. Mama!",
+      "characters": [
+        "Parade-goer",
+        "Kramer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation",
+        "misdirection"
+      ],
+      "setup": "An angry crowd confronts Kramer about the flag burning",
+      "punchline": "Kramer builds to 'I just have one thing to say to you boys' as if delivering a big speech \u2014 and then screams 'Mama!' and runs",
+      "craft_total": 7.8,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Excellent misdirection structure. The buildup to 'I just have one thing to say to you boys' creates expectation of a witty stand, a zinger, or a brave confrontation \u2014 then 'Mama!' completely deflates it into pure cowardice and flight. Kramer's bravado evaporating in an instant is perfect character comedy. The 'Mama!' specifically (not 'run!' or anything sensible) is the right absurdist choice. Earns 8+."
+    },
+    {
+      "index": 69,
+      "text": "All right, look. I just have one thing to say to you boys. / Mama! / Get him.",
+      "characters": [
+        "Kramer",
+        "Crowd"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Kramer faces an angry mob after burning the Puerto Rican flag; he promises one final statement",
+      "punchline": "The promised statement is just 'Mama!' \u2014 a panic cry \u2014 followed by him running",
+      "craft_total": 7.29,
+      "impact_score": 7.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect misdirection structure. 'I just have one thing to say' sets up any number of possible statements \u2014 bravado, an apology, a wise observation. 'Mama!' as the chosen word is maximally funny because it's pure survival instinct and total cowardice delivered with Kramer's physical energy. Economy is nearly perfect. 'Get him' as the crowd's immediate response is the ideal button. One of the episode's best moments."
+    },
+    {
+      "index": 70,
+      "text": "Right this way, Mr. Vandelay. Lovely, this is a lovely apartment. Lovely. The kids are gonna go crazy. I wonder if I could see the bathrooms. Preferably one with some paint thinner and some rags?",
+      "characters": [
+        "George as Art Vandelay"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "George enters the apartment as his third fake identity: Art Vandelay",
+      "punchline": "'Preferably one with some paint thinner and some rags' \u2014 the fake apartment-viewer facade breaks immediately into a suspicious practical request",
+      "craft_total": 7.7,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Art Vandelay appearing is a series-wide callback with enormous rewatch value for fans. 'Paint thinner and some rags' is a perfect detail \u2014 implying George is covered in something from the flag-burning/mob chase aftermath. The specificity of the request is excellent. High character integration for Vandelay specifically."
+    },
+    {
+      "index": 71,
+      "text": "Oh, hello, Art. Mr. Vandelay, of course. You two know each other? Mr. Pennypacker. Yes. Oh, yeah, I wanted to stop by and make sure my shark tank fits-- Hello.",
+      "characters": [
+        "Kramer as Pennypacker",
+        "George as Vandelay",
+        "Broker"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation",
+        "absurdist"
+      ],
+      "setup": "Pennypacker and Vandelay recognize each other in the apartment",
+      "punchline": "Pennypacker casually mentions needing to check if his shark tank fits \u2014 an absurdist luxury amenity dropped mid-sentence before greetings even finish",
+      "craft_total": 8.11,
+      "impact_score": 8.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The convergence of the fake identities is the main comedic engine here. The shark tank detail is the best individual element \u2014 Pennypacker's needs are escalating from waterfall grotto to literal shark. Good absurdist escalation."
+    },
+    {
+      "index": 72,
+      "text": "Varnsen. Pennypacker. Vandelay. Pennypacker. Varnsen. Vandelay. Wait a second. Mr. Pennypacker, if you're here...and Mr. Vandelay is also here, then who's watching the factory?",
+      "characters": [
+        "George as Varnsen",
+        "Kramer as Pennypacker",
+        "George as Vandelay",
+        "Broker"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "escalation"
+      ],
+      "setup": "The broker realizes three wealthy industrialists are all simultaneously in her apartment",
+      "punchline": "Her solution to the gathering mystery: 'Then who's watching the factory?' \u2014 as if that's the coherent question to ask when three tycoons appear in one apartment",
+      "craft_total": 8.26,
+      "impact_score": 8.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's structural comedy peak. The three-way name exchange ('Varnsen. Pennypacker. Vandelay.' back and forth) is a perfectly choreographed comedy of errors beat. 'Then who's watching the factory?' is the brilliant payoff \u2014 the broker accepts the impossible situation and asks the only question that somehow makes sense within its own absurd logic. The specificity of 'the factory' (which one? all of them?) is perfect. This is among the episode's finest moments for structural comedy architecture. Earns 8.8 easily."
+    },
+    {
+      "index": 73,
+      "text": "The factory? The Saab factory? Jerry, that's in Sweden. The guy in here.... My car.",
+      "characters": [
+        "George",
+        "Jerry"
+      ],
+      "joke_types": [
+        "callback",
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "The conversation about the factory leads Jerry to realize: if the 'Saab factory' is in Sweden and there's a guy in his car...",
+      "punchline": "Jerry processes the converging logic and realizes someone has stolen (or is in) his car while he was upstairs",
+      "craft_total": 7.55,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A beautifully constructed multi-thread payoff. The factory/Saab/guy-in-the-car logic chain is perfectly absurd \u2014 the conversation about a fictional factory triggers Jerry's realization about his very real car. The dots connecting is the joke. High structure score."
+    },
+    {
+      "index": 74,
+      "text": "Wait a second. Mr. Pennypacker, if you're here, and Mr. Vandelay is also here, then who's watching the factory? / The factory? / The Saab factory?",
+      "characters": [
+        "Realtor",
+        "Jerry",
+        "Kramer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "setup_punchline"
+      ],
+      "setup": "The realtor has been observing the three 'wealthy industrialists' and puts together a question",
+      "punchline": "The realtor logically concludes someone must be watching the factory while the owners are here \u2014 but the factory in question turns out to be (apparently) a Saab factory, which is in Sweden, making the concern absurd",
+      "craft_total": 7.81,
+      "impact_score": 7.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A very good payoff that connects the apartment fake-alias subplot with the Saab car thread. 'The Saab factory' as the factory in question, with the implication it's in Sweden (making the concern completely moot), is a neat convergence. The realtor's innocent logic perfectly punctures the aliases."
+    },
+    {
+      "index": 75,
+      "text": "Yeah. You know, it's like this every day in Puerto Rico. Jerry, the Mets lost. I love a parade.",
+      "characters": [
+        "Parade-goer",
+        "George",
+        "Kramer"
+      ],
+      "joke_types": [
+        "callback",
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "The episode approaches its end \u2014 the car is gone, the Mets lost, the day is ruined",
+      "punchline": "Kramer: 'I love a parade.' \u2014 cheerful, unironic, completely indifferent to the disaster of the day",
+      "craft_total": 6.86,
+      "impact_score": 6.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Kramer's 'I love a parade' as the episode's emotional summary \u2014 delivered after the car is stolen, the Mets lost, and they're all stranded \u2014 is perfect Kramer. His capacity to enjoy himself regardless of consequences is beautifully captured in four words. The callback to 'it's like this every day in Puerto Rico' adds resonance."
+    },
+    {
+      "index": 76,
+      "text": "Yeah. You know, it's like this every day in Puerto Rico.",
+      "characters": [
+        "Kramer"
+      ],
+      "joke_types": [
+        "callback",
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "The chaos of the episode's climax",
+      "punchline": "Kramer, having just fled an angry mob and been in multiple crises, casually echoes the Puerto Rican Day line \u2014 now as his own sincere assessment",
+      "craft_total": 7.54,
+      "impact_score": 7.25,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback of the bystander's line, now delivered by Kramer \u2014 who has just accidentally burned a flag, been chased by a mob, and caused general chaos \u2014 saying this wistfully is perfect. It recontextualizes the line as an accurate description of Kramer's entire life. Economy is nearly perfect."
+    },
+    {
+      "index": 77,
+      "text": "Jerry, the Mets lost. / I love a parade.",
+      "characters": [
+        "George",
+        "Jerry"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "irony_sarcasm"
+      ],
+      "setup": "The episode's chaos has concluded with the Mets losing their comeback game",
+      "punchline": "Jerry's 'I love a parade' \u2014 completely incongruous with the day's events \u2014 is a perfectly deadpan button",
+      "craft_total": 7.62,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Four words as an episode closer \u2014 deeply ironic given the parade has ruined their entire day. 'I love a parade' is a trite expression used in the most anti-ironic context possible. Perfect Seinfeld non-conclusion: nothing learned, everything dismissed."
+    },
+    {
+      "index": 78,
+      "text": "All right, shall we go home? Well, what about my car? Well, Jerry, you can't deduct it now.",
+      "characters": [
+        "Jerry",
+        "George",
+        "Kramer"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Jerry's car has apparently been taken \u2014 possibly as Kramer's insurance fraud plan accidentally came true",
+      "punchline": "Kramer notes that the deduction doesn't apply now \u2014 a reference back to his elaborate insurance pseudo-math",
+      "craft_total": 7.81,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A satisfying callback to the deductible pseudo-logic. The car is gone \u2014 but not through the planned insurance fraud \u2014 so the fake financial reasoning doesn't apply. Kramer treating the distinction as meaningful is perfect character comedy. Strong callback structure."
+    },
+    {
+      "index": 79,
+      "text": "How do you suppose they did that? / Well, there's no logical explanation.",
+      "characters": [
+        "George",
+        "Jerry"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "deadpan_understatement"
+      ],
+      "setup": "The group is reviewing some feat of the episode's chaos",
+      "punchline": "'There's no logical explanation' \u2014 a winking acknowledgment that the episode's plotting was inherently absurd",
+      "craft_total": 7.12,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A meta moment that winks at the audience about the episode's contrivances. Functional self-aware humor, though not among the episode's strongest."
+    },
+    {
+      "index": 80,
+      "text": "Well, you look relaxed. Well, it is Sunday night, and you know how I like to unwind.",
+      "characters": [
+        "Jerry",
+        "Elaine"
+      ],
+      "joke_types": [
+        "callback",
+        "irony_sarcasm"
+      ],
+      "setup": "Jerry reunites with Elaine after the chaos of the day",
+      "punchline": "Elaine is genuinely relaxed and unwound \u2014 despite (or because of?) everything \u2014 mirroring George's 60 Minutes winding-down ritual from the start of the episode",
+      "craft_total": 7.81,
+      "impact_score": 7.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A strong bookend callback. Elaine having actually succeeded at the 'unwinding' goal that drove the entire episode is a satisfying ironic payoff. The 'you know how I like to unwind' mirrors the episode's central anxiety perfectly."
+    },
+    {
+      "index": 81,
+      "text": "Hey, black Saab. Looks like that building cut you off. See you around. Well, at least he didn't-- Jackass.",
+      "characters": [
+        "Maroon Golf Driver",
+        "George"
+      ],
+      "joke_types": [
+        "callback",
+        "running_gag"
+      ],
+      "setup": "The maroon Golf driver spots Jerry's abandoned/stolen Saab",
+      "punchline": "He taunts the car as if it's a person ('Looks like that building cut you off') \u2014 and then gets in the final 'jackass' after George sets up the expectation that he won't",
+      "craft_total": 8.3,
+      "impact_score": 8.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A superb episode-closing callback. George's setup ('Well, at least he didn't--') is a classic misdirection that makes the 'Jackass' landing hit harder. The maroon Golf driver getting the last word, having also personified the car ('Looks like that building cut you off'), is a perfect mirror of Jerry's earlier behavior. The structure \u2014 anticipation, subverted expectation, payoff \u2014 is textbook comedy. One of the episode's best structural jokes."
+    },
+    {
+      "index": 82,
+      "text": "Somebody remember where we parked.",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "The group is scattered across the street, carless, after a disastrous day",
+      "punchline": "George asks someone to remember where they parked \u2014 the car is almost certainly gone, making this either oblivious or darkly resigned",
+      "craft_total": 7.62,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A solid closing beat. 'Somebody remember where we parked' after the car is clearly gone or abandoned is a perfectly Costanza line \u2014 either delusionally optimistic or weaponized understatement. Economy is high."
+    },
+    {
+      "index": 83,
+      "text": "Well, this was a fun day. It's nice to get out.",
+      "characters": [
+        "Kramer"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The episode ends with the group stranded, carless, after a completely disastrous Sunday",
+      "punchline": "Kramer's cheerful summary: 'Well, this was a fun day. It's nice to get out.' \u2014 perfect ironic understatement as the final line of a nightmare day",
+      "craft_total": 7.72,
+      "impact_score": 7.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A perfect episode-ending line. 'Well, this was a fun day. It's nice to get out.' summarizes the entire Seinfeld ethos \u2014 a completely catastrophic day viewed through Kramer's boundless, unjustifiable positivity. The character integration is maximum: only Kramer ends this day with genuine satisfaction. Highly quotable as a life philosophy. Earns 8+ for being a perfectly crafted closing note."
     }
   ],
   "air_date": "1998-05-07",

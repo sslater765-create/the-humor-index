@@ -4,34 +4,35 @@
   "season": 9,
   "episode_number": 9,
   "title": "The Apology",
-  "humor_index": 83.6,
-  "jpm": 1.45,
-  "avg_craft": 7.61,
-  "avg_impact": 7.27,
-  "total_jokes": 33,
-  "war": 47.5,
-  "dominant_joke_types": "[\"character_comedy\", \"observational\", \"absurdist\"]",
-  "standout_joke_ids": "[32, 31, 28]",
-  "weakest_section": "15:30-17:00",
+  "humor_index": 94.2,
+  "jpm": 4.32,
+  "avg_craft": 7.34,
+  "avg_impact": 7.38,
+  "total_jokes": 98,
+  "war": 133.3,
+  "dominant_joke_types": "[\"character_comedy\", \"setup_punchline\", \"irony_sarcasm\"]",
+  "standout_joke_ids": "[25, 68, 57]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "She ate breakfast naked? She didn't even want a napkin.",
+      "text": "Melissa eats breakfast completely naked \u2014 Jerry watches in stunned fascination as she doesn't even want a napkin",
       "characters": [
-        "Jerry"
+        "Jerry",
+        "Melissa"
       ],
       "joke_types": [
-        "observational",
-        "absurdist"
+        "visual_gag",
+        "observational"
       ],
-      "setup": "Jerry describing his girlfriend eating breakfast naked",
-      "punchline": "The detail about refusing a napkin makes it absurdly committed to nudity",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Jerry has made waffles; a woman (Melissa) comes to breakfast",
+      "punchline": "She's completely naked and entirely unbothered, eating breakfast as if it's normal",
+      "craft_total": 6.71,
+      "impact_score": 6.83,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Strong observational comedy with perfect economy - the napkin detail elevates it from mundane to absurd",
+      "explanation": "The cold open visual gag of a woman casually eating breakfast naked is an effective scene-setter. The comedy is in the mundanity \u2014 waffles, napkins \u2014 colliding with the shocking nudity. The 'didn't even want a napkin' detail adds a nice specificity. Not exceptional writing but a strong comedic premise that launches the episode's A-plot.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -41,22 +42,22 @@
     },
     {
       "index": 2,
-      "text": "I've had bedroom naked, I've had walk-to-the-bathroom naked. I have never had living-room naked.",
+      "text": "Jerry's taxonomy of naked: 'I've had bedroom naked, I've had walk-to-the-bathroom naked. I have never had living-room naked.'",
       "characters": [
         "Jerry"
       ],
       "joke_types": [
         "observational",
-        "escalation"
+        "character_comedy"
       ],
-      "setup": "Jerry categorizing different types of nudity",
-      "punchline": "The progression from private to semi-public to public nudity",
-      "craft_total": 7.95,
-      "impact_score": 7.5,
-      "quotability": 8.5,
+      "setup": "Jerry tells George about Melissa eating breakfast naked",
+      "punchline": "He has a detailed taxonomy of nudity types, and living-room naked is an entirely new category he's never encountered",
+      "craft_total": 8.31,
+      "impact_score": 8.5,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Seinfeld categorization humor with perfect escalation and high quotability - this became a cultural reference",
+      "explanation": "This is exceptional Seinfeld observational writing. The comedy comes from Jerry treating domestic nudity as a rigorous taxonomic system with distinct, named categories \u2014 as if he's a naturalist classifying species. The escalating list structure (bedroom \u2192 walk-to-bathroom \u2192 living room) is perfectly constructed with 'living-room naked' as the payoff. It's highly quotable, completely original as a framing device, and only Jerry Seinfeld's neurotic specificity makes this work. Comparable in quality to the 8.0 anchor example.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -66,23 +67,22 @@
     },
     {
       "index": 3,
-      "text": "Did she...? Did she frolic? I don't have enough room.",
+      "text": "'Oh, it's a scene. It's like you're living in the Playboy Mansion.'",
       "characters": [
-        "George",
-        "Jerry"
+        "George"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "observational",
+        "irony_sarcasm"
       ],
-      "setup": "George asking if the naked woman frolicked",
-      "punchline": "Jerry's matter-of-fact response about apartment size limitations",
-      "craft_total": 7.3,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Jerry describes Melissa's living-room nakedness with wonder",
+      "punchline": "George compares Jerry's apartment to the Playboy Mansion as the logical extreme",
+      "craft_total": 5.5,
+      "impact_score": 5.5,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "George's word choice 'frolic' is perfect, Jerry's practical response is very in-character",
+      "explanation": "A functional comic response that amplifies the situation with a familiar cultural reference. The Playboy Mansion comparison is a bit obvious \u2014 it's the first place your mind goes \u2014 but George's delivery of 'it's a scene' as deadpan commentary saves it from being entirely lazy.",
       "dialogue": [
         {
           "speaker": "George",
@@ -96,22 +96,23 @@
     },
     {
       "index": 4,
-      "text": "'Stanky' Hanke? What did he want?",
+      "text": "'Did she...? Did she frolic?' / 'I don't have enough room.'",
       "characters": [
+        "George",
         "Jerry"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "George mentions Jason Hanke called",
-      "punchline": "Jerry immediately uses an insulting nickname",
-      "craft_total": 6.08,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "George is enthralled by the naked breakfast story and pushes for details",
+      "punchline": "Jerry's practical apartment-size objection to frolicking is the anti-romantic deflation",
+      "craft_total": 7.39,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple but effective nickname humor, economical delivery",
+      "explanation": "The word 'frolic' is doing enormous work here \u2014 it's an absurdly elevated, almost Victorian word for what George is imagining, which is funny in itself. Jerry's deadpan practical reply ('I don't have enough room') perfectly deflates the fantasy with New York City apartment reality. The economy of both lines is excellent, and the juxtaposition of George's romantic imagination against Jerry's spatial pragmatism is very character-specific.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -121,22 +122,24 @@
     },
     {
       "index": 5,
-      "text": "Still with the neck hole?",
+      "text": "Elaine arrives with Puddy \u2014 'Back together? / His apartment was being fumigated. We thought we'd give it another shot.'",
       "characters": [
-        "Jerry"
+        "Jerry",
+        "Elaine",
+        "Puddy"
       ],
       "joke_types": [
-        "callback",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Jerry immediately knowing what George is still upset about",
-      "punchline": "The casual way he references this old grievance",
-      "craft_total": 7.08,
+      "setup": "Elaine and Puddy arrive together, implying reconciliation",
+      "punchline": "The romance is entirely circumstantial \u2014 fumigation, not feelings, got them back together",
+      "craft_total": 6.65,
       "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect economy and character knowledge - Jerry knows George's petty grievances",
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Elaine/Puddy dynamic \u2014 their relationship is purely practical and they both know it. 'We thought we'd give it another shot' delivered as a shrug after the fumigation excuse is perfectly in character. The comedy is in how unsentimental Elaine is about it, which is a consistent and well-mined character trait.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -166,22 +169,23 @@
     },
     {
       "index": 6,
-      "text": "I said, preferably cashmere. For warmth.",
+      "text": "George's grievance about the neck hole on Hanke's sweater from five years ago, still unresolved",
       "characters": [
-        "George"
+        "George",
+        "Jerry"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "setup_punchline"
       ],
-      "setup": "George recounting asking to borrow a sweater",
-      "punchline": "His pretentious specification and weak justification",
-      "craft_total": 7.25,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Hanke is doing Step 9 apologies; George is excited to receive one",
+      "punchline": "George's specific and deeply held grievance is about a sweater neck hole at a party years ago \u2014 the pettiness is the comedy",
+      "craft_total": 8.0,
+      "impact_score": 8.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect George behavior - making demands while trying to sound reasonable",
+      "explanation": "The neck-hole grievance is a masterclass in George Costanza characterization. The specificity of the wound (cashmere, draughty apartment, the MetLife Windbreaker as consolation prize) reveals a man who has nursed this petty slight for years. The comedy is entirely earned by character \u2014 this is 100% what George would fixate on. 'I can't wait for Hanke to come crawling back to me' over a sweater is perfectly George.",
       "dialogue": [
         {
           "speaker": "George",
@@ -191,22 +195,23 @@
     },
     {
       "index": 7,
-      "text": "Well, it's funny. I mean, you have a big head.",
+      "text": "'In front of the whole party, he says: No. I don't want you stretching out the neck hole.' Then: 'Oh, yeah, sure, laugh it up. Everybody else did.'",
       "characters": [
+        "George",
         "Jerry"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "George complaining about the neck hole comment",
-      "punchline": "Jerry's blunt agreement with the original insult",
-      "craft_total": 7.25,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "George recounts the sweater incident with genuine pain",
+      "punchline": "His acknowledgment that 'everybody else laughed' reveals he's been holding this humiliation for years, and his delivery of it is itself funny",
+      "craft_total": 7.03,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfectly economical and brutally honest - classic Jerry move to agree with the insulter",
+      "explanation": "George reliving a public humiliation with full emotional weight, while the audience (and Jerry) can see how disproportionate the reaction is, is classic Seinfeld cringe. The self-awareness in 'everybody else did' (laugh) \u2014 he knows it looked funny, which makes his continued outrage even funnier.",
       "dialogue": [
         {
           "speaker": "George",
@@ -220,23 +225,23 @@
     },
     {
       "index": 8,
-      "text": "I really think it's the size of your neck. It's my head.",
+      "text": "'Well, it's funny. I mean, you have a big head.' / 'Or is it because of your neck?' / 'No, I think the head does most of the stretching.'",
       "characters": [
         "Jerry",
         "George"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Debate about what would stretch the sweater",
-      "punchline": "The ridiculous specificity of the anatomical argument",
-      "craft_total": 7.12,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "George is offended by the neck-hole incident; Jerry tries to understand it logically",
+      "punchline": "Jerry and George have a completely earnest anatomical debate about whether George's head or neck is responsible for the sweater stretching",
+      "craft_total": 7.21,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Absurd argument taken seriously by both parties - classic Seinfeld minutiae",
+      "explanation": "The bit where they debate the anatomical mechanics of neck-hole stretching is wonderful because neither character questions whether this conversation is worth having. Jerry's 'I think the head does most of the stretching' as a genuine scientific opinion is perfectly deadpan. The comedy comes from treating an absurd question with total seriousness \u2014 a Seinfeld hallmark.",
       "dialogue": [
         {
           "speaker": "George",
@@ -262,22 +267,23 @@
     },
     {
       "index": 9,
-      "text": "That's kooky talk.",
+      "text": "'I really think it's the size of your neck.' / 'It's my head.' \u2014 the debate continues",
       "characters": [
-        "Kramer"
+        "Jerry",
+        "George"
       ],
       "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
+        "running_gag",
+        "character_comedy"
       ],
-      "setup": "Discussion about 10-minute showers",
-      "punchline": "Kramer's dismissal using old-fashioned slang",
-      "craft_total": 6.85,
-      "impact_score": 6.0,
-      "quotability": 7.5,
+      "setup": "They already had the head-vs-neck debate",
+      "punchline": "They are STILL debating it, each holding their position \u2014 the persistence of this meaningless argument is the joke",
+      "craft_total": 6.78,
+      "impact_score": 6.5,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Kramer vocabulary choice - 'kooky talk' is wonderfully dated and character-specific",
+      "is_callback": 1,
+      "explanation": "The extension of the head/neck debate earns points for commitment. The comedy is that neither man will drop it \u2014 George insisting it's his head (weirdly defending his head over his neck?) is a funny detail. Functions as a brief running gag that caps the neck-hole story.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -295,23 +301,23 @@
     },
     {
       "index": 10,
-      "text": "Let me smell you. All right. Whiff away.",
+      "text": "Newman is excited to have the office bathroom to himself now that 'the nerds in Accounting moved' \u2014 Jerry's unenthusiastic 'Yeah. Great.'",
       "characters": [
-        "Elaine",
+        "Newman",
         "Jerry"
       ],
       "joke_types": [
-        "absurdist",
-        "cringe_discomfort"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Elaine questioning if ten minutes is enough shower time",
-      "punchline": "Jerry's casual agreement to be sniffed for cleanliness",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Newman excitedly tells Jerry that they now share a private bathroom at work",
+      "punchline": "Jerry's flat 'Yeah. Great.' \u2014 the least enthusiastic response to something Newman finds wonderful \u2014 captures their entire relationship",
+      "craft_total": 5.94,
+      "impact_score": 5.33,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Absurd situation handled matter-of-factly - 'whiff away' is a great line",
+      "explanation": "Jerry's deadpan 'Yeah. Great.' to Newman's excitement is a perfectly economic bit of character comedy. The fact that Newman views sharing a bathroom with Jerry as a perk while Jerry views it as a curse is inherent in the line reading. The setup is functional but the payoff is efficient.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -333,22 +339,23 @@
     },
     {
       "index": 11,
-      "text": "The damage is probably already done.",
+      "text": "Kramer has been in the shower so long that Jerry went to the coffee shop and came back \u2014 'That's an hour ago. What were you doing in there?' / 'Showering. How long does it take you?' / 'Ten minutes.' / 'Ten minutes? That's kooky talk.'",
       "characters": [
-        "Jerry"
+        "Jerry",
+        "Kramer"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "observational"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Discussion about using toilet seat protectors with roommates",
-      "punchline": "Jerry's fatalistic assessment of germ exposure",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Kramer has been showering for over an hour; Jerry is baffled",
+      "punchline": "'Ten minutes? That's kooky talk.' \u2014 Kramer finds the idea of a ten-minute shower absurdly short",
+      "craft_total": 7.03,
+      "impact_score": 7.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good deadpan delivery, realistic cynical worldview",
+      "explanation": "'That's kooky talk' is a genuinely funny, highly quotable line. The comedy is in Kramer's complete inversion of normal \u2014 he's been in there an hour and considers ten minutes absurdly insufficient. The phrase 'kooky talk' is perfectly Kramer: slightly archaic, dismissive, utterly confident. Strong character integration \u2014 this line could only come from Kramer.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -358,22 +365,23 @@
     },
     {
       "index": 12,
-      "text": "I'd accuse you of cheating, but where would you hide the tiles?",
+      "text": "'Elaine, how long do you spend in the shower?' / 'Ten minutes.' / 'Let me smell you.' / 'All right. Whiff away.'",
       "characters": [
-        "Jerry"
+        "Kramer",
+        "Elaine"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Playing Scrabble with naked girlfriend",
-      "punchline": "Logical assessment of cheating impossibility due to nudity",
-      "craft_total": 7.98,
-      "impact_score": 7.5,
-      "quotability": 7.5,
+      "setup": "Kramer disputes that ten minutes is enough to get clean",
+      "punchline": "'Let me smell you.' / 'All right. Whiff away.' \u2014 the casual intimacy of Elaine's consent to being smelled, and Kramer's matter-of-fact sniffing",
+      "craft_total": 7.82,
+      "impact_score": 8.0,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant observational humor - finds the logical upside to an awkward situation",
+      "explanation": "Brilliantly economic exchange. 'Let me smell you' is a bizarre but completely in-character Kramer move \u2014 direct, unselfconscious, treating smell as empirical evidence. Elaine's 'Whiff away' is the perfect response: she barely blinks. The comedy is in the casual normality with which both treat an objectively weird request. High quotability, great economy, strong character work for both.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -383,41 +391,42 @@
     },
     {
       "index": 13,
-      "text": "It's like watching a fat guy catch a cannonball in his stomach in slow motion.",
+      "text": "'It's not bad at all.' / 'That's it.' \u2014 Kramer's underwhelmed verdict on Elaine's cleanliness",
       "characters": [
-        "Jerry"
+        "Kramer",
+        "Elaine"
       ],
       "joke_types": [
-        "observational",
-        "absurdist"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Describing the unpleasant visual of naked coughing",
-      "punchline": "Extremely specific and vivid visual metaphor",
-      "craft_total": 7.97,
-      "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Incredibly vivid and original metaphor that perfectly captures the grotesque visual"
+      "setup": "Kramer smells Elaine to evaluate her shower technique",
+      "punchline": "His verdict 'It's not bad at all' is faint praise \u2014 she passes, barely \u2014 and Elaine's 'That's it?' shows she expected more",
+      "craft_total": 7.1,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A good button to the smell exchange. Kramer's understated verdict and Elaine's slight indignation at receiving only a 'not bad' is a nice small beat. Not as strong as the setup but rounds the bit off well."
     },
     {
       "index": 14,
-      "text": "Naked hair brushing, good. Naked crouching, bad.",
+      "text": "Elaine's story about Peggy using a seat protector \u2014 'We're the only women on the floor. I mean, we're like roommates. Would you use a seat protector if you had a roommate?'",
       "characters": [
-        "Jerry"
+        "Elaine"
       ],
       "joke_types": [
         "observational",
-        "setup_punchline"
+        "character_comedy"
       ],
-      "setup": "Explaining good naked vs bad naked theory",
-      "punchline": "Simple, clear examples that illustrate the concept perfectly",
-      "craft_total": 8.57,
-      "impact_score": 8.0,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Elaine is bothered that her coworker Peggy uses a toilet seat protector when they share a bathroom",
+      "punchline": "Elaine frames it as a personal affront by using the roommate analogy \u2014 the implication is Peggy thinks Elaine is dirty",
+      "craft_total": 6.66,
+      "impact_score": 6.17,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect economy and structure - became a widely quoted cultural reference about relationships",
+      "explanation": "A solid setup for the B-plot. The roommate analogy is a reasonable comedic logic \u2014 workplace bathroom as shared domestic space \u2014 and Elaine's wounded pride is very in-character. Functional comedy that plants the story's conflict clearly.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -435,22 +444,22 @@
     },
     {
       "index": 15,
-      "text": "Well, I just got out of a 27-minute shower. I made some good cuts and I didn't lose anything I needed.",
+      "text": "'The damage is probably already done.' \u2014 Peggy's implied view of Elaine's germs",
       "characters": [
-        "Kramer"
+        "George"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Kramer trying to shorten his shower time",
-      "punchline": "Treating shower routine like film editing",
-      "craft_total": 7.65,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Elaine defends herself; others try to rationalize Peggy's behavior",
+      "punchline": "George's aside that 'the damage is probably already done' implies Elaine has already contaminated Peggy \u2014 a casual insult disguised as a practical observation",
+      "craft_total": 6.14,
+      "impact_score": 5.5,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Kramer logic - applying professional terminology to mundane activities",
+      "explanation": "A quick, slightly mean throwaway from George that works as a casual aside. Not particularly original but lands as a decent background chuckle. The economy is good \u2014 one line that implies a whole assessment.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -468,22 +477,23 @@
     },
     {
       "index": 16,
-      "text": "Well, that's how cats do it. But when you have a faucet instead of a tongue... you wanna use gravity.",
+      "text": "'Maybe she just practises good hygiene.' 'Yeah, you're right. She's probably one of those neurotic clean freaks.' \u2014 Elaine's logic concluding Peggy is the problem",
       "characters": [
-        "Jerry"
+        "Jerry",
+        "Elaine"
       ],
       "joke_types": [
-        "observational",
-        "absurdist"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Jerry explaining shower technique to Kramer",
-      "punchline": "Comparing human bathing to cat grooming with logical conclusion",
-      "craft_total": 7.68,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Jerry offers a charitable interpretation of Peggy's seat-protector use",
+      "punchline": "Elaine agrees and immediately reframes it as a character flaw in Peggy \u2014 being clean is 'neurotic'",
+      "craft_total": 7.4,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Clever biological comparison with practical application - good observational humor",
+      "explanation": "Elaine's ability to take a charitable reading and immediately convert it into a condemnation of the other person is sharp character writing. The irony of declaring someone a 'neurotic clean freak' as an insult, while being the one who is apparently unclean, is a nice subversion. Good character integration \u2014 this is very Elaine.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -501,22 +511,22 @@
     },
     {
       "index": 17,
-      "text": "I'm so sorry that I didn't want your rather bulbous head struggling to find its way into the normal-size neck hole of my finely knit sweater.",
+      "text": "Kramer's shower improvement plan: 'Get washcloth mittens and maybe some liquid soap and just... focus.'",
       "characters": [
-        "Jason Hanke"
+        "Kramer"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "absurdist"
       ],
-      "setup": "George forcing Hanke to apologize for the sweater incident",
-      "punchline": "Hanke's elaborate, insulting 'apology' that's worse than the original offense",
-      "craft_total": 7.88,
-      "impact_score": 8.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Brilliant escalation - the forced apology becomes more insulting than the original slight",
+      "setup": "Kramer shares his plan to improve his shower routine",
+      "punchline": "The plan \u2014 washcloth mittens, liquid soap, 'just... focus' \u2014 is absurdly specific yet comically vague at the same time",
+      "craft_total": 7.16,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Washcloth mittens are a funny, specific image. Kramer approaching his shower like an athlete strategizing for a game ('just... focus') is perfectly in character with his self-aggrandizing entrepreneurial personality. The beat before 'focus' sells it.",
       "dialogue": [
         {
           "speaker": "George Costanza",
@@ -530,22 +540,23 @@
     },
     {
       "index": 18,
-      "text": "That wasn't really necessary. I don't ride it. It's just for show.",
+      "text": "Scrabble game: 'Zephyr? That is not a word.' / 'Do you challenge?' / 'No, I do not challenge.' / 'Sixty-six points.'",
       "characters": [
-        "Jerry"
+        "George",
+        "Kramer"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Kramer fixing Jerry's bike",
-      "punchline": "Jerry admitting his bike is purely decorative",
-      "craft_total": 7.3,
+      "setup": "Kramer plays 'Zephyr' in Scrabble",
+      "punchline": "George suspects it's not a word but won't challenge \u2014 Kramer gets 66 points. The comedy is George's cowardice and the possibility Kramer might be bluffing",
+      "craft_total": 6.77,
       "impact_score": 6.5,
-      "quotability": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Jerry character moment - superficial urban lifestyle revealed",
+      "explanation": "A quick but effective bit. George's indignation vs. his unwillingness to challenge is a nice character beat. The fact that 'zephyr' IS a real word (meaning a gentle breeze) adds a layer \u2014 George is wrong to doubt it, making his bluster even more self-defeating.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -571,22 +582,22 @@
     },
     {
       "index": 19,
-      "text": "Please don't crouch.",
+      "text": "'I'd accuse you of cheating, but where would you hide the tiles?'",
       "characters": [
-        "Jerry"
+        "George"
       ],
       "joke_types": [
-        "callback",
-        "cringe_discomfort"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Naked girlfriend crouching down to fix bike",
-      "punchline": "Jerry's plea referencing his earlier 'bad naked' theory",
-      "craft_total": 7.9,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "George suspects Kramer of cheating at Scrabble",
+      "punchline": "His accusation pivots to a backhanded observation about Kramer's clothing/lack of pockets \u2014 implying Kramer is in a robe or undressed",
+      "craft_total": 7.81,
+      "impact_score": 7.83,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect callback that shows the theory in practice - economical and character-consistent",
+      "is_callback": 0,
+      "explanation": "This is one of the episode's best lines. In nine words, it (1) accuses Kramer of cheating, (2) immediately undermines its own accusation, (3) implies Kramer is barely dressed, and (4) is a perfectly formed observation. The economy is outstanding \u2014 the joke does four things at once. 'Where would you hide the tiles?' will get replayed in the mind after viewing. High quotability.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -596,22 +607,22 @@
     },
     {
       "index": 20,
-      "text": "Peggy, we gotta talk. What is it about me that you find so offensive?",
+      "text": "Wrong pipe. [pause/cough after drinking iced tea]",
       "characters": [
-        "Elaine"
+        "Kramer"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "physical_slapstick",
+        "setup_punchline"
       ],
-      "setup": "Elaine confronting Peggy about the toilet seat protectors",
-      "punchline": "Her aggressive approach to what should be a delicate conversation",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 5.5,
+      "setup": "Kramer accepts iced tea mid-conversation",
+      "punchline": "He immediately goes down the wrong pipe \u2014 innocent physical comedy that sets up the 'bad naked' coughing discussion",
+      "craft_total": 4.64,
+      "impact_score": 4.5,
+      "quotability": 2.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment - Elaine's confrontational nature creating awkwardness",
+      "explanation": "Basic physical bit. Works mostly as a transition device that motivates the next joke about coughing while naked. Not particularly clever on its own.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -637,23 +648,23 @@
     },
     {
       "index": 21,
-      "text": "You want an apology for the apology plus the original apology? That's right. I'm two in the hole.",
+      "text": "'Everything goes with naked.' vs. 'But the thing you don't realise is there's good naked and bad naked.'",
       "characters": [
-        "Jerry",
-        "George"
+        "George",
+        "Jerry"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "observational",
+        "setup_punchline"
       ],
-      "setup": "George explaining he needs two apologies now",
-      "punchline": "Mathematical framing of his grievance deficit",
-      "craft_total": 7.98,
-      "impact_score": 7.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Jerry is bothered that Melissa coughed while naked; George insists nudity is always good",
+      "punchline": "Jerry introduces the concept of 'good naked and bad naked' as a formal framework",
+      "craft_total": 7.54,
+      "impact_score": 7.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect George logic - treating social slights like accounting - 'two in the hole' is great phrasing",
+      "explanation": "The 'good naked/bad naked' framework is a bona fide Seinfeld concept \u2014 the kind of observation that feels obvious in retrospect but no one had articulated it before. George's counterpoint 'everything goes with naked' sets it up perfectly, and Jerry's rebuttal ('there's good naked and bad naked') is the kind of simple-but-true observation that becomes a cultural shorthand. The economy is excellent; the originality is high. This is the episode's thesis statement.",
       "dialogue": [
         {
           "speaker": "George",
@@ -671,22 +682,23 @@
     },
     {
       "index": 22,
-      "text": "Where am I gonna get a fat guy and a cannonball?",
+      "text": "Coughing? Naked? It's a turnoff, man. Everything goes with naked.",
       "characters": [
-        "Jerry"
+        "Jerry",
+        "Kramer"
       ],
       "joke_types": [
-        "callback",
-        "absurdist"
+        "setup_punchline",
+        "observational"
       ],
-      "setup": "Jerry wanting to demonstrate bad naked to his girlfriend",
-      "punchline": "The literal impossibility of recreating his earlier metaphor",
-      "craft_total": 7.73,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Great callback that shows Jerry taking his own metaphor too literally",
+      "setup": "Kramer coughs while the scene establishes the context of naked Melissa coughing",
+      "punchline": "Kramer's incredulous 'everything goes with naked' \u2014 he can't conceive of naked being a bad thing under any circumstances",
+      "craft_total": 6.79,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Everything goes with naked' is a quotable Kramer-ism. His absolutism about nudity is perfectly in character. Sets up the good/bad naked taxonomy coming next.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -712,22 +724,22 @@
     },
     {
       "index": 23,
-      "text": "I ordered a pair of chinos from J. Crew.",
+      "text": "'When you cough, there are thousands of unseen muscles that suddenly spring into action. It's like watching a fat guy catch a cannonball in his stomach in slow motion.'",
       "characters": [
-        "Kramer"
+        "Jerry"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "observational",
+        "setup_punchline"
       ],
-      "setup": "Kramer calling from his shower with a waterproof phone",
-      "punchline": "Taking shower productivity to commercial extremes",
-      "craft_total": 7.65,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "George says everything goes with naked; Jerry explains why coughing naked is a turnoff",
+      "punchline": "The cannonball metaphor \u2014 elaborately specific, grotesque, oddly precise \u2014 is the image that makes the abstract complaint vivid",
+      "craft_total": 8.2,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Kramer escalation - turning shower efficiency into a lifestyle",
+      "explanation": "The cannonball metaphor is vividly original. It takes the abstract idea of 'coughing looks bad' and renders it in an almost cinematic image that's both disgusting and funny. 'In slow motion' as the final detail tips it into absurdism. This is the kind of extended metaphor that only a gifted joke writer produces \u2014 it's unexpected, specific, and creates a clear mental image. Comparing to the 8.0 anchor, this is arguably stronger on originality.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -745,22 +757,22 @@
     },
     {
       "index": 24,
-      "text": "She thinks I made her sick because I coughed on her doorknob, rubbed her stapler in my armpit and put her keyboard on my butt. Yeah. She's a wacko.",
+      "text": "'Oh, you spoiled, spoiled man. You know how much mental energy I expend trying to picture women naked?'",
       "characters": [
-        "Elaine"
+        "George"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "escalation"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Elaine explaining why Peggy thinks she's making her sick",
-      "punchline": "The escalating list of disgusting things followed by calling Peggy crazy",
-      "craft_total": 8.1,
-      "impact_score": 8.0,
-      "quotability": 7.5,
+      "setup": "Jerry complains about bad-naked moments with his girlfriend",
+      "punchline": "George, who struggles to attract women, is indignant that Jerry has a girlfriend who walks around naked and is STILL complaining",
+      "craft_total": 7.39,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect irony - Elaine is completely oblivious to how disgusting her behavior is",
+      "explanation": "George's 'you spoiled, spoiled man' and his complaint about the mental energy spent imagining women naked is perfect George characterization \u2014 simultaneously pathetic, relatable, and funny. The specificity of 'mental energy' as the resource being spent is a nice touch. The double 'spoiled, spoiled' is good comedic rhythm.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -774,22 +786,22 @@
     },
     {
       "index": 25,
-      "text": "Instead of an apology he was bebopping and scatting all over me.",
+      "text": "'Naked hair brushing, good. Naked crouching, bad.'",
       "characters": [
-        "George"
+        "Jerry"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "observational",
+        "setup_punchline"
       ],
-      "setup": "George complaining about Hanke's non-apology",
-      "punchline": "Using jazz terminology to describe being insulted",
-      "craft_total": 8.07,
-      "impact_score": 7.5,
-      "quotability": 8.5,
+      "setup": "Jerry has introduced the good naked/bad naked theory",
+      "punchline": "He illustrates with specific examples \u2014 'naked hair brushing' is sensual; 'naked crouching' is grotesque",
+      "craft_total": 8.72,
+      "impact_score": 9.0,
+      "quotability": 9.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant and original metaphor - 'bebopping and scatting all over me' is pure poetry",
+      "is_callback": 1,
+      "explanation": "This is the episode's best joke. 'Naked hair brushing, good. Naked crouching, bad.' is perfectly constructed: a two-item list with a beautiful sonic rhythm (parallel structure, three-word phrases), the contrast between sensual and grotesque, and the specificity of 'crouching' as the chosen bad-naked example (it IS a particularly unflattering position). Maximum funny per word \u2014 6 words deliver a complete philosophical point. This is the kind of line that gets quoted for decades. Among the best jokes in the episode by a clear margin.",
       "dialogue": [
         {
           "speaker": "George",
@@ -803,23 +815,24 @@
     },
     {
       "index": 26,
-      "text": "No, not that. Why are you naked? I thought naked is good. This isn't good naked.",
+      "text": "Hanke's Step 9 apology to Jerry \u2014 apologizing for calling him 'Gary' a couple of times, years ago",
       "characters": [
-        "Melissa",
-        "Jerry"
+        "Hanke",
+        "Jerry",
+        "George"
       ],
       "joke_types": [
-        "callback",
-        "visual_gag"
+        "setup_punchline",
+        "irony_sarcasm"
       ],
-      "setup": "Jerry naked with belt sander to demonstrate bad naked",
-      "punchline": "His girlfriend immediately understanding the distinction",
-      "craft_total": 7.65,
-      "impact_score": 7.5,
+      "setup": "George has been waiting for a major apology; Hanke's Step 9 finally arrives",
+      "punchline": "Hanke's apology is to Jerry, for occasionally calling him 'Gary' \u2014 an apology of almost cosmic triviality that Jerry graciously accepts",
+      "craft_total": 7.8,
+      "impact_score": 8.25,
       "quotability": 6.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect visual demonstration of the theory with immediate recognition from girlfriend",
+      "explanation": "The comedic payoff of the Step 9 setup: after all the anticipation, Hanke's apology goes to Jerry (not George) for something hilariously trivial. The juxtaposition with George's massive, specific, years-old grievance is perfect. Jerry's formal 'I appreciate you rectifying it' makes it funnier \u2014 he takes it seriously. This is good structural comedy \u2014 the audience knows George is watching this and getting more agitated.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -833,22 +846,23 @@
     },
     {
       "index": 27,
-      "text": "Excuse me. Am I talking to you, pinhead? Am I?",
+      "text": "Anyway, Jerry, you know, this may sound dumb, but when we first met, I thought your name was Gary. I think I may even have called you Gary a couple of times. I don't know if you noticed, but I always felt bad. So I'm sorry.",
       "characters": [
-        "George"
+        "Jason",
+        "Jerry"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "escalation"
+        "misdirection",
+        "setup_punchline"
       ],
-      "setup": "George at Rage-aholics Anonymous meeting",
-      "punchline": "Immediately demonstrating the exact behavior he's supposed to be treating",
-      "craft_total": 8.15,
-      "impact_score": 8.0,
-      "quotability": 7.0,
+      "setup": "George has demanded his apology and stepped back \u2014 now Jason Hanke delivers his Step 9 apology",
+      "punchline": "The apology is for Jerry, not George \u2014 and it's for the trivial offense of calling him 'Gary' a couple of times",
+      "craft_total": 6.79,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect irony - George's rage problem immediately manifesting at rage therapy",
+      "explanation": "Beautifully structured misdirection. We've been built up to think George is getting his neck-hole apology, and instead Hanke apologizes to Jerry for the microscopic offense of occasionally calling him Gary. The triviality of the offense vs. the solemnity of the Step 9 apology is the core joke of the episode's engine. Excellent.",
       "dialogue": [
         {
           "speaker": "George",
@@ -878,22 +892,23 @@
     },
     {
       "index": 28,
-      "text": "The male body is utilitarian. It's for getting around. It's like a Jeep.",
+      "text": "Reaction beat: George's face as Hanke leaves without apologizing to him at all",
       "characters": [
-        "Elaine"
+        "George",
+        "Hanke"
       ],
       "joke_types": [
-        "observational",
-        "setup_punchline"
+        "reaction_beat",
+        "character_comedy"
       ],
-      "setup": "Discussion about male vs female body aesthetics",
-      "punchline": "Comparing male body to a utilitarian vehicle",
-      "craft_total": 8.3,
-      "impact_score": 8.5,
-      "quotability": 9.0,
+      "setup": "George has been eagerly waiting for HIS apology; Hanke apologizes to Jerry and leaves",
+      "punchline": "Hanke doesn't even address George \u2014 implied extended stunned silence from George as Hanke walks away",
+      "craft_total": 7.36,
+      "impact_score": 7.5,
+      "quotability": 3.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant and memorable metaphor that became widely quoted - perfect economy and structure",
+      "is_callback": 1,
+      "explanation": "The delayed punchline of the Hanke setup: George gets absolutely nothing. The scene transition at 05:22-05:28 with 'Well, I'll see you guys later' and the implied sustained beat of George's silent fury is a perfect structural payoff. Jason Alexander could do more with this silent reaction than most actors could with pages of dialogue.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -919,22 +934,23 @@
     },
     {
       "index": 29,
-      "text": "It's hideous. The hair, the lumpiness. It's simian.",
+      "text": "Kramer exits the shower lathered \u2014 'You've got some suds over here.' / 'Oh, man. Jeez. Look at that. I'm all lathery.'",
       "characters": [
-        "Elaine"
+        "Jerry",
+        "Kramer"
       ],
       "joke_types": [
-        "observational",
-        "escalation"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Continuing description of male body unattractiveness",
-      "punchline": "Escalating to comparing men to apes",
-      "craft_total": 7.55,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "Kramer claimed he had improved his shower routine to 27 minutes",
+      "punchline": "He comes out of the shower still covered in soap \u2014 the 'improvement' hasn't worked",
+      "craft_total": 6.66,
+      "impact_score": 6.83,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation with vivid descriptors, 'simian' is a perfect word choice",
+      "is_callback": 1,
+      "explanation": "A solid visual/physical callback \u2014 Kramer's grand shower plan has resulted in him walking around lathered. The self-satisfaction of 'I think what I kept is even stronger now' immediately before the reveal of the soap suds is good structure. Physical comedy that pays off the setup efficiently.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -952,23 +968,23 @@
     },
     {
       "index": 30,
-      "text": "I still have trouble looking at those disgusting old bedroom slippers she slobs around in. Hey, I've had those since college. They're bunnies.",
+      "text": "'You promise you'll never come in here again?' / 'Well, Jerry, you know I can't do that.'",
       "characters": [
-        "Puddy",
-        "Elaine"
+        "Jerry",
+        "Kramer"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "running_gag"
       ],
-      "setup": "Puddy describing his germaphobia recovery",
-      "punchline": "Elaine's defensive response about her 'bunny' slippers",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Jerry reluctantly agrees to teach Kramer how to shower properly (in Jerry's shower)",
+      "punchline": "Jerry asks for a promise Kramer will never come back; Kramer acknowledges he literally cannot commit to that",
+      "craft_total": 7.41,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character dynamics - Puddy's bluntness vs Elaine's defensiveness",
+      "explanation": "A very Kramer/Jerry exchange. Kramer's honest self-knowledge \u2014 'you know I can't do that' \u2014 is both a callback to every episode where he invades Jerry's apartment and a genuine moment of self-awareness. The comedy is in how accurate and unembarrassed the statement is. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Puddy",
@@ -998,23 +1014,23 @@
     },
     {
       "index": 31,
-      "text": "You have a garbage disposal in your bathtub? Oh, yeah, and I use it all the time. I made this whole meal in there.",
+      "text": "Jerry's shower tutorial: 'My sense of it is you're probably wasting time working piecemeal.' / 'Well, that's how cats do it.' / 'But when you have a faucet instead of a tongue, you wanna use gravity.'",
       "characters": [
-        "Elaine",
+        "Jerry",
         "Kramer"
       ],
       "joke_types": [
         "absurdist",
-        "cringe_discomfort"
+        "character_comedy"
       ],
-      "setup": "Kramer revealing he has a garbage disposal in his bathtub",
-      "punchline": "Casually admitting he cooked the meal they're eating in the shower",
-      "craft_total": 8.6,
-      "impact_score": 9.0,
-      "quotability": 8.0,
+      "setup": "Jerry gives Kramer a dry-run shower tutorial",
+      "punchline": "Kramer's defense of his cat-style piecemeal approach vs. Jerry's gravity-based counter-argument \u2014 both treating showering as a technical discipline requiring expert consultation",
+      "craft_total": 7.53,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Peak Kramer absurdity - the casual reveal of completely disgusting behavior is perfectly timed",
+      "explanation": "'That's how cats do it' is a delightfully absurd defense of a shower technique. Jerry's counter \u2014 'when you have a faucet instead of a tongue, you wanna use gravity' \u2014 is unexpectedly elegant and logical. Two men have a completely earnest technical discussion about showering methodology. Classic Seinfeld treating mundane topics with unwarranted expertise.",
       "dialogue": [
         {
           "speaker": "Kramer",
@@ -1040,23 +1056,23 @@
     },
     {
       "index": 32,
-      "text": "This food was in the shower with you? I prepared it as I bathed.",
+      "text": "'Okay, let's turn the water on now.' / 'No, I told you. It's just a dry run.'",
       "characters": [
-        "Elaine",
-        "Kramer"
+        "Kramer",
+        "Jerry"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Elaine's horrified realization",
-      "punchline": "Kramer's matter-of-fact confirmation of the worst possible scenario",
-      "craft_total": 8.67,
-      "impact_score": 9.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Jerry is giving Kramer a shower tutorial in Jerry's shower",
+      "punchline": "Jerry refuses to actually use water \u2014 it's a 'dry run' of showering, which is an absurd concept in itself",
+      "craft_total": 7.41,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect escalation and payoff - 'prepared it as I bathed' is beautifully euphemistic yet horrifying",
+      "explanation": "The comedy of a 'dry run' shower is inherent \u2014 it's a completely oxymoronic concept. Jerry's delivery of it as if it's perfectly reasonable is great deadpan. The absurdism of two grown men doing a waterless shower rehearsal is very Seinfeld.",
       "dialogue": [
         {
           "speaker": "Elaine",
@@ -1070,22 +1086,24 @@
     },
     {
       "index": 33,
-      "text": "Take a look at his neck, not to mention the melon sitting on top of it. I don't know if I'd trust him with a V-neck.",
+      "text": "Hanke is already on Step 10; George is furious \u2014 'Come on, Jerry, how about a baggy swimsuit?' / 'No. You're not getting any skin, Kramer.' / 'Well, this has all been one big tease.'",
       "characters": [
-        "Anonymous group member"
+        "Kramer",
+        "Jerry",
+        "George"
       ],
       "joke_types": [
-        "escalation",
-        "wordplay_pun"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Group member commenting on George's head size",
-      "punchline": "Escalating from neck to 'melon' and the V-neck concern",
-      "craft_total": 7.48,
-      "impact_score": 7.5,
-      "quotability": 7.5,
+      "setup": "The shower tutorial is going on; simultaneously George fumes about the Step 9 situation",
+      "punchline": "Kramer's complaint about the dry-run shower ('this has all been one big tease') runs parallel to George's frustration about Hanke \u2014 both are being denied what they want",
+      "craft_total": 6.67,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "'Melon' is a perfect escalation from 'bulbous head' and the V-neck concern shows it's a universal problem",
+      "is_callback": 0,
+      "explanation": "Kramer's 'this has all been one big tease' is a funny complaint about a shower tutorial with no water. The scene juggles multiple storylines and Kramer's running commentary on being denied a proper shower is a good running undercurrent.",
       "dialogue": [
         {
           "speaker": "Group Member",
@@ -1108,6 +1126,1273 @@
           "line": "You can't wear V-necks."
         }
       ]
+    },
+    {
+      "index": 34,
+      "text": "'Guys, there's no doubt that the pay is good. But I just don't know if I see myself working with ice cream.' / 'You get pretty buff forearms.'",
+      "characters": [
+        "Kramer",
+        "George"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Kramer is considering a job at an ice cream shop",
+      "punchline": "George's job recruitment pitch is 'you get pretty buff forearms' \u2014 the only selling point he can think of",
+      "craft_total": 6.13,
+      "impact_score": 5.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick absurdist exchange. 'You get pretty buff forearms' as a literal job perk of ice cream work is a funny observation \u2014 the specificity of the forearm buff (from scooping) makes it funnier. Kramer's 'I don't know if I'm into that' is a good deadpan response to being offered forearm muscles as a job benefit."
+    },
+    {
+      "index": 35,
+      "text": "George confronts Hanke about his missing apology: 'A draughty apartment. A sweaterless friend. A ball-game-giveaway MetLife Windbreaker.'",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "George approaches Hanke demanding his Step 9 apology",
+      "punchline": "George's itemized grievance list \u2014 draughty apartment, sweaterless, ball-game-giveaway MetLife Windbreaker \u2014 is the formal accusation, each item more specific and pathetic than the last",
+      "craft_total": 7.77,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The escalating three-part grievance list is excellent George comedy. 'Ball-game-giveaway MetLife Windbreaker' is a beautiful specificity \u2014 it's not just any windbreaker, it's a cheap promotional giveaway from a baseball game. The indignation with which George delivers this corporate-insurance-branded fashion insult is peak Costanza. The word 'sweaterless' is also a great George coinage."
+    },
+    {
+      "index": 36,
+      "text": "'You're an alcoholic. You have to apologise. Step 9. Step 9.'",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Hanke refuses to apologize; George is desperate",
+      "punchline": "George using the 12-step program as a coercive tool \u2014 demanding apologies as a program requirement \u2014 is both hilarious and morally dubious",
+      "craft_total": 6.77,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "George invoking Step 9 as leverage \u2014 'you're an alcoholic, you HAVE to apologize' \u2014 is darkly funny. He's weaponizing a recovery program for personal vengeance. The repetition of 'Step 9. Step 9.' like a chant is a perfect George desperation beat. Strong character integration and dark-subversive edge."
+    },
+    {
+      "index": 37,
+      "text": "Hanke's sarcastic apology: 'I'm so sorry that I didn't want your rather bulbous head struggling to find its way into the normal-size neck hole of my finely knit sweater.'",
+      "characters": [
+        "Hanke"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "setup_punchline"
+      ],
+      "setup": "George has forced Hanke to apologize",
+      "punchline": "The 'apology' is an elaborate, eloquent insult \u2014 'bulbous head,' 'struggling to find its way,' 'finely knit sweater' \u2014 each word layered with contempt",
+      "craft_total": 8.32,
+      "impact_score": 8.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's strongest moments. The sarcastic apology is perfectly constructed \u2014 it gives George exactly what he asked for (an apology) while delivering a devastating insult. 'Bulbous head' is a genuinely funny word choice. 'Struggling to find its way' is mockingly sympathetic. The whole speech is a comedy of manners \u2014 technically fulfilling the social contract while violating its spirit. The writing is exceptional here."
+    },
+    {
+      "index": 38,
+      "text": "'Now, see, that's smart. Constant motion.' \u2014 Jerry coaching Kramer in the shower while Kramer watches something/someone else",
+      "characters": [
+        "Jerry",
+        "Kramer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "The shower tutorial is ongoing",
+      "punchline": "Jerry's earnest coaching of 'constant motion' as a shower technique while the scene has jumped to new context shows the absurd dedication both bring to the exercise",
+      "craft_total": 6.34,
+      "impact_score": 6.17,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A brief continuation of the shower tutorial that functions mainly as a transitional joke. 'Constant motion' as a shower principle is mildly funny but the scene is more about narrative bridging than strong comedy."
+    },
+    {
+      "index": 39,
+      "text": "Kramer is watching something while receiving shower advice \u2014 'Oh, yeah. I'm watching you too... but this guy's really showing me something.'",
+      "characters": [
+        "Kramer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Jerry is trying to give Kramer his full attention for the shower tutorial",
+      "punchline": "Kramer is simultaneously watching someone else (a street scene, a performer) who is also 'showing him something' \u2014 his attention is divided between two tutorials",
+      "craft_total": 6.57,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Kramer's casual multi-tasking \u2014 watching a stranger while also getting a shower tutorial \u2014 is good character comedy. His 'this guy's really showing me something' as if he's always finding impromptu mentors is very Kramer. The economy is good."
+    },
+    {
+      "index": 40,
+      "text": "'You got a steak?' / 'What happened to you?' / 'People in this city are crazy.' \u2014 Kramer encounters someone on the street with a raw steak",
+      "characters": [
+        "Kramer"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "An unexplained scene: someone appears with an injury and a steak",
+      "punchline": "'People in this city are crazy' \u2014 an absurdist NYC slice of life where someone is apparently using a steak as an ice pack and Kramer treats it as mildly notable at best",
+      "craft_total": 6.87,
+      "impact_score": 6.83,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A classic Seinfeld NYC absurdism \u2014 someone's using a steak for something unclear (presumably an eye injury) and Kramer's reaction is mild bemusement plus an offer of A.1. sauce. 'People in this city are crazy' as a casual observation is a good line. The comedy depends heavily on the visual \u2014 hard to fully judge from transcript alone."
+    },
+    {
+      "index": 41,
+      "text": "'Oh, yes. Yeah, you got any A.1., because I'm cooking a steak.' / 'A different one.'",
+      "characters": [
+        "Kramer"
+      ],
+      "joke_types": [
+        "absurdist",
+        "setup_punchline"
+      ],
+      "setup": "Kramer encounters someone using a steak; he then reveals he's also cooking a steak",
+      "punchline": "'A different one.' \u2014 the clarification that it's a different steak is both completely obvious and absurdly necessary",
+      "craft_total": 7.89,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'A different one.' \u2014 two words, maximum absurdist comedy. The fact that this clarification is necessary implies the audience (or someone in-scene) might need reassurance that Kramer isn't planning to take the injury-steak, season it, and cook it. The economy is outstanding. The casual confidence of the clarification is very Kramer."
+    },
+    {
+      "index": 42,
+      "text": "'That wasn't really necessary. I don't ride it. It's just for show.' \u2014 Jerry reveals his bike is purely decorative",
+      "characters": [
+        "Jerry"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Kramer announces he fixed Jerry's bike as a favor",
+      "punchline": "Jerry has a bike he doesn't ride \u2014 it's a prop, purely aesthetic \u2014 which is a perfect New York apartment absurdism",
+      "craft_total": 6.96,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jerry having a 'show bike' \u2014 a purely decorative bicycle \u2014 is a funny character detail that resonates as genuine NYC apartment behavior. The deadpan delivery 'it's just for show' is great. It both reveals something about Jerry's character (aesthetic over function) and creates a good absurdist premise."
+    },
+    {
+      "index": 43,
+      "text": "'Please don't crouch.' \u2014 Jerry to Kramer as Kramer crouches with bike grease",
+      "characters": [
+        "Jerry"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Kramer crouches down to clean bicycle bearings while apparently in a state of undress (or at minimum informal dress)",
+      "punchline": "Jerry's 'please don't crouch' directly references the 'naked crouching = bad' discussion from earlier",
+      "craft_total": 7.11,
+      "impact_score": 7.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A brilliant callback \u2014 three words that land with perfect economy because they reference the earlier 'naked crouching, bad' joke. The audience makes the connection instantly and it doubles the laugh. The fact that it's delivered as a polite request rather than outrage makes it funnier. This is expert callback construction \u2014 the callback is better than the original (rare) because it adds visual dimension to an abstract concept. Very close to the 8.0+ anchor in quality."
+    },
+    {
+      "index": 44,
+      "text": "The chain gets caught in Kramer's skin \u2014 'It caught my skin. / Oh, that's bad. / Especially that area.' \u2014 followed by Kramer struggling painfully with the bicycle chain",
+      "characters": [
+        "Kramer",
+        "Jerry"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "physical_slapstick"
+      ],
+      "setup": "Kramer is crouching to clean bicycle bearings in a state of undress",
+      "punchline": "The bicycle chain catches his skin 'in that area' \u2014 an implied groin/inner-thigh injury that both men react to with horror",
+      "craft_total": 6.95,
+      "impact_score": 7.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The physical comedy consequence of the crouch \u2014 chain catching skin 'in that area' \u2014 is a well-executed cringe moment. 'Especially that area' is a perfect understated addition that the audience fills in horrifically. The chain-in-skin imagery sells the physical discomfort without being gratuitous."
+    },
+    {
+      "index": 45,
+      "text": "'It's gonna leave a welt. Look at that.' / 'I can't. I can't look anymore. I've seen too much.'",
+      "characters": [
+        "Kramer",
+        "Jerry"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "cringe_discomfort"
+      ],
+      "setup": "Kramer's skin has been caught by the bicycle chain",
+      "punchline": "'I've seen too much' \u2014 Jerry's traumatized response encapsulates the entire bad-naked-plus-injury sequence",
+      "craft_total": 7.46,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "'I've seen too much' is a highly quotable, perfectly economical line that works as a callback to the entire naked/bad-naked arc. Jerry's horror is the culmination of everything \u2014 the shower tutorial, the crouching, the chain injury. 'I can't. I can't look anymore' as a theatrical build before 'I've seen too much' has good rhythm."
+    },
+    {
+      "index": 46,
+      "text": "Elaine confronts Peggy: 'What is it about me that you find so offensive?' / 'You seem to be with a lot of men.'",
+      "characters": [
+        "Elaine",
+        "Peggy"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Elaine expects Peggy to address the hygiene/germ concerns",
+      "punchline": "Peggy's response is completely unexpected \u2014 she thinks Elaine sleeps around, which is a totally different kind of offense",
+      "craft_total": 7.48,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A strong misdirection \u2014 we and Elaine expect this to be about germs, but Peggy is judging Elaine for a completely different reason (apparent promiscuity). The pivot reveals both characters' misunderstanding of each other and is a good comedic turn."
+    },
+    {
+      "index": 47,
+      "text": "Elaine's defensive oversharing: 'I happen to have a very steady boyfriend. You know, I mean, we broke up a few times, and there has been an occasional guy here or there, but...'",
+      "characters": [
+        "Elaine"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Elaine denies having 'a lot of men'",
+      "punchline": "Her defense immediately contradicts itself \u2014 'we broke up a few times... occasional guy here or there' \u2014 she's proving Peggy's point while trying to refute it",
+      "craft_total": 7.33,
+      "impact_score": 7.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Elaine inadvertently making Peggy's case while trying to refute it is well-constructed irony. The 'occasional guy here or there' admission while claiming a steady boyfriend is sharp character writing \u2014 it's very true to Elaine's character and relationship history with Puddy."
+    },
+    {
+      "index": 48,
+      "text": "I happen to have a very steady boyfriend. You know, I mean, we broke up a few times... and there has been an occasional guy here or there...",
+      "characters": [
+        "Peggy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Peggy is defending herself from what she thinks is an accusation about her dating life",
+      "punchline": "Her 'very steady boyfriend' immediately undercut by 'we broke up a few times... occasional guy here or there' \u2014 self-defeating oversharing",
+      "craft_total": 6.94,
+      "impact_score": 7.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good self-undermining comedy. The instant collapse of 'very steady boyfriend' is a nice character beat. Classic oversharing."
+    },
+    {
+      "index": 49,
+      "text": "Elaine licks Peggy's doorknob, rubs her stapler on her armpit, and puts her keyboard on her butt in retaliation \u2014 later described: 'I coughed on her doorknob, rubbed her stapler in my armpit and put her keyboard on my butt.'",
+      "characters": [
+        "Elaine"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "escalation"
+      ],
+      "setup": "Peggy is a germaphobe who has offended Elaine; Elaine retaliates",
+      "punchline": "The three-part escalating germ attack: doorknob (cough), stapler (armpit), keyboard (butt) \u2014 each more violating than the last",
+      "craft_total": 8.13,
+      "impact_score": 8.75,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is a perfectly constructed escalating sequence. The three-part germ attack follows a clear escalation arc: doorknob (passive, just a cough) \u2192 stapler (armpit \u2014 more intimate, more gross) \u2192 keyboard (butt \u2014 the most violating). The final item, 'put her keyboard on my butt,' is a spectacular comedic peak \u2014 you can see Elaine actually doing this in your mind. The callback description 'Yeah. She's a wacko.' makes it even funnier. Strong originality, perfect structure."
+    },
+    {
+      "index": 50,
+      "text": "Oh, all right. You think I've got germs? I'll give you some germs. How about some for your keyboard, huh? How about that? Yeah? Oh, how about for your stapler? That's good, isn't it? You have a happy and a healthy.",
+      "characters": [
+        "Elaine"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Elaine snaps after Peggy's dismissal and decides to get revenge by contaminating Peggy's office items with her 'germs'",
+      "punchline": "The escalating contamination tour \u2014 keyboard, stapler \u2014 culminating in the absurd 'You have a happy and a healthy' as a sarcastic farewell",
+      "craft_total": 8.11,
+      "impact_score": 8.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is a standout physical comedy sequence. Elaine deliberately rubbing her germs on Peggy's office supplies is deranged and perfectly in character. The escalation from keyboard to stapler is great. 'You have a happy and a healthy' as a parting curse is inspired \u2014 it sounds like a blessing but delivered as a threat. Big laugh moment."
+    },
+    {
+      "index": 51,
+      "text": "'Jerry, I felt like a straight man in some horrible sketch. He was riffing. Riffing. On my pain.'",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "character_comedy"
+      ],
+      "setup": "George describes Hanke's sarcastic 'apology'",
+      "punchline": "'He was riffing on my pain' \u2014 George's description of the apology in showbiz terms is both meta (a character on a comedy show calling something a sketch) and perfectly self-aware",
+      "craft_total": 7.93,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "'He was riffing on my pain' is a great George line \u2014 theatrical, specific, self-pitying in a precise way. The meta quality of a character on a sketch comedy show calling their experience a 'horrible sketch' is subtle but present. 'Riffing. Riffing.' with the repetition for emphasis is good comedic rhythm. High quotability."
+    },
+    {
+      "index": 52,
+      "text": "'You want an apology for the apology plus the original apology?' / 'That's right. I'm two in the hole.'",
+      "characters": [
+        "Jerry",
+        "George"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "George is now owed TWO apologies: the original neck-hole apology AND an apology for the sarcastic apology",
+      "punchline": "'I'm two in the hole.' \u2014 George's accounting of his apology debt is delivered with complete sincerity",
+      "craft_total": 7.93,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "'I'm two in the hole' is an excellent Seinfeld line \u2014 George applying a financial/gambling metaphor to the apology debt with utter seriousness. The economy is outstanding (five words that perfectly capture his situation). The callback structure (we know the original apology, we just saw the sarcastic one, so 'two in the hole' lands immediately) is very well-constructed. One of the episode's most quotable moments."
+    },
+    {
+      "index": 53,
+      "text": "'Well, I hit the wall yesterday with Lady Godiva. She did a full-body flex on a pickle jar.'",
+      "characters": [
+        "Jerry"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Jerry and George compare notes on their naked-related problems",
+      "punchline": "Melissa's full-body flex trying to open a pickle jar \u2014 the muscular exertion of that specific act rendered in slow-motion grotesque \u2014 is the latest bad-naked offense",
+      "craft_total": 7.99,
+      "impact_score": 8.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The pickle-jar full-body flex is a perfect addition to the bad-naked taxonomy \u2014 specific, vivid, immediately grotesque in the imagination. 'Lady Godiva' as a nickname for Melissa is a funny touch. The specificity of a pickle jar (not just 'a jar' \u2014 a pickle jar, which is notoriously hard to open) is great detail. Good callback to the cannonball metaphor."
+    },
+    {
+      "index": 54,
+      "text": "'Where am I gonna get a fat guy and a cannonball?'",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "callback",
+        "absurdist"
+      ],
+      "setup": "George asks about the bad-naked concept; Jerry mentions the cannonball metaphor",
+      "punchline": "George takes the cannonball metaphor literally \u2014 as if he needs the actual props to explain bad-naked to his girlfriend",
+      "craft_total": 7.57,
+      "impact_score": 7.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's best one-liners. George taking the metaphor literally \u2014 genuinely asking where he'd source a fat guy and a cannonball \u2014 is peak Costanza. The economy is near-perfect: nine words that deliver an absurdist image, a character insight, and a great callback all at once. The specificity of asking for BOTH items (he needs both for the demonstration, apparently) is the extra detail that makes it sublime."
+    },
+    {
+      "index": 55,
+      "text": "Jerry's suggestion: 'You still got that belt sander? Well, you on all fours, that thing vibrating, kicking up sawdust. She'll get the picture.'",
+      "characters": [
+        "Jerry"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Jerry suggests George demonstrate bad-naked to his girlfriend",
+      "punchline": "The belt-sander bad-naked demonstration \u2014 George on all fours, sweaty, vibrating with machinery, covered in sawdust \u2014 is a perfectly grotesque image",
+      "craft_total": 7.6,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Jerry's elaborate prescription for George's bad-naked demonstration is vividly rendered. 'Kicking up sawdust' is the detail that sells the image. The comedy is in Jerry's matter-of-fact delivery of an objectively insane suggestion. Good callback weaving belt sander + bad-naked concept."
+    },
+    {
+      "index": 56,
+      "text": "Kramer calls Jerry from his shower \u2014 'Jerry, guess where I'm calling from.' / 'World War I plane?' / 'No, I'm in my shower.'",
+      "characters": [
+        "Jerry",
+        "Kramer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Jerry gets a phone call and has to guess where Kramer is calling from",
+      "punchline": "Jerry guesses 'World War I plane' \u2014 an absurdist non-sequitur \u2014 before the mundane reveal of 'my shower'",
+      "craft_total": 7.89,
+      "impact_score": 8.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'World War I plane?' is a wonderfully random Jerry guess that implies Kramer could plausibly be calling from a biplane cockpit. The joke is in the fact that (a) Jerry doesn't guess the obvious and (b) for Kramer, it might not be entirely implausible. Good character-specific absurdism."
+    },
+    {
+      "index": 57,
+      "text": "Kramer has moved into his shower permanently: waterproof phone, shaved, brushed teeth, ordered chinos from J. Crew \u2014 'When are you getting out?' / 'I'm not. I'll see you later, buddy.'",
+      "characters": [
+        "Kramer",
+        "Jerry"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Kramer initially wanted to shower faster; now he's decided the shower is where he wants to be",
+      "punchline": "The complete escalation: Kramer has set up a full life inside the shower \u2014 communication, grooming, SHOPPING \u2014 and has no intention of leaving",
+      "craft_total": 8.37,
+      "impact_score": 8.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The escalation of Kramer's shower obsession to its logical extreme \u2014 he's moved in \u2014 is perfectly realized. The detail of ordering chinos from J. Crew while in the shower is the peak absurdist specific detail. 'I'm not. I'll see you later, buddy.' delivered with total contentment is a great character beat. This is the Kramer plotline at its best: absurdist escalation fully committed to. Strong candidate for standout moment."
+    },
+    {
+      "index": 58,
+      "text": "'Bad news, people. Peggy is home sick.' / 'Oh, please.' / 'She's stuffed up, achy and suffering from intense malaise.' / 'Oh, come on. We all have intense malaise, right?'",
+      "characters": [
+        "Elaine"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Elaine hears that the coworker she infected is actually sick",
+      "punchline": "Elaine dismisses 'intense malaise' as something universal and unworthy of sick leave \u2014 while knowing she caused it",
+      "craft_total": 6.81,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "'We all have intense malaise, right?' is a great line \u2014 the deflection of a real illness she caused into a universal condition shared by all is perfect Elaine self-justification. The comedy is in the audacity of her dismissiveness given what she did."
+    },
+    {
+      "index": 59,
+      "text": "Elaine explaining to the boss: 'She's insane. She thinks I made her sick because I coughed on her doorknob, rubbed her stapler in my armpit and put her keyboard on my butt.' / 'Yeah. She's a wacko.'",
+      "characters": [
+        "Elaine"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "callback"
+      ],
+      "setup": "Elaine dismisses Peggy's illness claim to her boss",
+      "punchline": "Elaine describes EXACTLY what she did \u2014 perfectly accurately \u2014 while calling Peggy insane for believing it. The audience knows every item is true.",
+      "craft_total": 8.15,
+      "impact_score": 8.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's funniest structural moments. Elaine recounting her own crimes in exact detail as evidence of Peggy's paranoia is a masterpiece of comedic dramatic irony. The audience knows the truth; Elaine's boss doesn't; the list (doorknob/armpit/butt) lands again with full force because we know it's entirely accurate. 'Yeah. She's a wacko.' as the button is perfectly timed self-righteous closure. The structure here \u2014 using the callback to amplify dramatic irony \u2014 is excellent writing."
+    },
+    {
+      "index": 60,
+      "text": "George goes to Hanke's AA sponsor and asks him to 'drop Hanke down to Step 2' \u2014 'Admit there's a higher power? Yeah, let him chew on that for a while.'",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "George approaches Hanke's sponsor to complain about the non-apology",
+      "punchline": "George tries to weaponize the 12-step program administration \u2014 specifically requesting Hanke be demoted to Step 2 as punishment",
+      "craft_total": 6.78,
+      "impact_score": 6.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "George treating the 12-step program as a bureaucratic system he can manipulate \u2014 'you shouldn't let him move up,' 'drop him down to Step 2' \u2014 is outrageously in-character. The Cub Scouts/Pinewood Derby analogy is a perfect George digression that reveals his entire psychology: he's been accumulating grievances against authority systems his whole life. 'Let him chew on that for a while' about admitting a higher power is darkly funny."
+    },
+    {
+      "index": 61,
+      "text": "George's Cub Scout/Webelos digression: 'When I was in Cub Scouts, I got stuck on Webelos for three years because I kept losing the Pinewood Derby.'",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "George is explaining his grievance about Hanke's step-skipping to the AA sponsor",
+      "punchline": "He reveals that he was held back in Cub Scouts due to Pinewood Derby losses \u2014 a detail so specific and so George that it reveals everything about his character",
+      "craft_total": 7.76,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is pure George Costanza character comedy. The Pinewood Derby grievance \u2014 held back in Cub Scouts for three years over model car races \u2014 is perfectly specific. That George considers this precedent relevant to an AA program step discussion shows his lifelong pattern of turning personal failures into institutional grievances. 'You're quite upset' from the sponsor is the perfect deadpan response to this revelation."
+    },
+    {
+      "index": 62,
+      "text": "'Instead of an apology he was bebopping and scatting all over me.'",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "George explains Hanke's sarcastic apology to the sponsor",
+      "punchline": "'Bebopping and scatting' \u2014 using jazz improvisation terminology to describe someone riffing sarcastically \u2014 is a highly specific and funny phrase",
+      "craft_total": 8.35,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Bebopping and scatting all over me' is one of the episode's great coinages. Using jazz improvisation vocabulary to describe someone's sarcastic riffing is unexpectedly elegant \u2014 it's exactly the right metaphor for what Hanke did (improvising within a structure, playing with the form). The phrase is original, economical, and wildly quotable. It also returns later as a callback. This is a strong candidate for the episode's best line."
+    },
+    {
+      "index": 63,
+      "text": "Sponsor suggests George come to a meeting to help \u2014 George agrees, then adds: 'By the way, my uncle was an alcoholic.'",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The sponsor offers to help George by inviting him to a meeting",
+      "punchline": "'By the way, my uncle was an alcoholic.' \u2014 a completely irrelevant personal disclosure George volunteers as if it establishes his credentials",
+      "craft_total": 7.57,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A great throwaway George moment \u2014 he volunteers irrelevant personal information as if it contextualizes or legitimizes his presence. The non-sequitur quality of 'my uncle was an alcoholic' as a closing credential is very George. It implies he thinks this makes him an insider."
+    },
+    {
+      "index": 64,
+      "text": "Kramer on the phone mid-shower: 'Jeez. Hey, hold on a second. I got a clog. I'll call you back.'",
+      "characters": [
+        "Kramer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Kramer is living in his shower, conducting business by phone",
+      "punchline": "He's gotten a drain clog \u2014 a consequence of his shower-habitation \u2014 and treats it as a routine interruption mid-call",
+      "craft_total": 7.25,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The drain clog as a consequence of Kramer's shower apartment is a good escalation beat. 'I got a clog. I'll call you back.' delivered as a perfectly casual interruption is very Kramer \u2014 it seeds the garbage disposal subplot and shows the shower-living lifestyle has real-world maintenance problems."
+    },
+    {
+      "index": 65,
+      "text": "Lomez, you're not listening. Jerry likes the naked. It's just some of the things that she does when she's naked.",
+      "characters": [
+        "Kramer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Kramer is on the phone with someone named Lomez, presumably discussing Jerry's naked situation",
+      "punchline": "Kramer's patient explanation \u2014 'Jerry likes the naked. It's just some of the things that she does when she's naked.' \u2014 a completely unnecessary phone consultation on Jerry's behalf",
+      "craft_total": 6.38,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Kramer consulting 'Lomez' on Jerry's personal life is classic Kramer \u2014 spreading everyone's business to his network of off-screen characters. 'Jerry likes the naked' as a characterization is mildly funny."
+    },
+    {
+      "index": 66,
+      "text": "Melissa is naked in Jerry's kitchen using a belt sander on the floor \u2014 'What are you doing?' / 'I found a spot on the kitchen floor. I thought I'd polish it up with this belt sander I have here.' / 'No, not that. Why are you naked?' / 'I thought naked is good.'",
+      "characters": [
+        "Jerry",
+        "Melissa"
+      ],
+      "joke_types": [
+        "callback",
+        "setup_punchline"
+      ],
+      "setup": "Jerry suggested using the belt sander as a bad-naked demonstration; Melissa has taken the naked philosophy to heart",
+      "punchline": "'I thought naked is good.' \u2014 Melissa has internalized George's position from the debate ('everything goes with naked') and applied it incorrectly; Jerry has to tell her 'This isn't good naked.'",
+      "craft_total": 7.41,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A superb convergence of multiple plotlines. Melissa with the belt sander is (1) the execution of Jerry's own suggestion to demonstrate bad-naked, (2) a callback to the good/bad naked debate, (3) a demonstration that Melissa has absorbed 'naked is good' from the universe's prevailing wisdom. 'I thought naked is good' is a perfect callback punchline. Jerry's 'This isn't good naked' is the correct application of his own framework against himself. Excellent structural comedy."
+    },
+    {
+      "index": 67,
+      "text": "George arrives at what he thinks is a regular AA meeting \u2014 'Welcome to Rage-aholics Anonymous.' / 'What? Rage-aholics?'",
+      "characters": [
+        "George",
+        "Sponsor"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "The sponsor invited George to 'a meeting'; George assumes it's to confront Hanke",
+      "punchline": "It's not an AA meeting \u2014 it's Rage-aholics Anonymous, and George is clearly there as a patient, not a spectator",
+      "craft_total": 7.89,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "'Rage-aholics Anonymous' is a great Seinfeld coinage \u2014 the perfect invented support group for George. The reveal that he's been brought here as a member, not a petitioner, is a beautiful comedic turn. The sponsor saw through George's performance to the seething rage beneath. Strong structural payoff."
+    },
+    {
+      "index": 68,
+      "text": "'Hey, I am not here for rage. I'm here for revenge.' \u2014 George at Rage-aholics Anonymous",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "George is informed he's at a rage support group",
+      "punchline": "His correction \u2014 'I'm here for revenge, not rage' \u2014 while delivered with rage, completely proves the point of his being there",
+      "craft_total": 8.42,
+      "impact_score": 8.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'I'm not here for rage. I'm here for revenge.' is a brilliantly self-unaware line. George insisting revenge and rage are categorically different \u2014 while clearly in a rage \u2014 is perfect dramatic irony. The distinction he makes also reveals his genuine psychology: he doesn't experience his anger as rage, he experiences it as justified grievance-seeking. Economy is outstanding. Very high quotability. Strong candidate for one of the episode's best lines."
+    },
+    {
+      "index": 69,
+      "text": "'Excuse me. We have a no-yelling policy at these meetings.' \u2014 followed by George yelling at the facilitator: 'Excuse me. Am I talking to you, pinhead? Am I?'",
+      "characters": [
+        "George",
+        "Facilitator"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "George is told about the no-yelling policy at Rage-aholics",
+      "punchline": "He immediately violates it by yelling at the person who told him, calling them 'pinhead'",
+      "craft_total": 8.19,
+      "impact_score": 8.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The perfect comedic logic: announcing a no-yelling policy triggers an immediate yelling violation. 'Am I talking to you, pinhead? Am I?' has great rhythm and the callback on 'pinhead' (related to his whole head-size anxiety from the sweater incident) is a nice accidental thematic resonance. George's total inability to contain the behavior that got him sent there is beautifully constructed."
+    },
+    {
+      "index": 70,
+      "text": "'Please don't call me pinhead.' / 'I'm losing it.'",
+      "characters": [
+        "Facilitator",
+        "George"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "George has just called the Rage-aholics facilitator a pinhead",
+      "punchline": "'Please don't call me pinhead' is the understated, weary response of someone used to this; George's 'I'm losing it' is oddly self-aware in context",
+      "craft_total": 6.93,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The facilitator's gentle 'please don't call me pinhead' is a wonderfully understated response to George's outburst \u2014 perfect deadpan that contrasts with George's explosion. 'I'm losing it' from George as self-aware commentary works because it's accurate but he has zero capacity to stop."
+    },
+    {
+      "index": 71,
+      "text": "'He took you to Rage-aholics? Why?' / 'Probably because this whole universe is against me.'",
+      "characters": [
+        "Jerry",
+        "George"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Jerry asks why George was taken to Rage-aholics",
+      "punchline": "George's explanation \u2014 'this whole universe is against me' \u2014 is delivered as a perfectly sincere cosmic grievance",
+      "craft_total": 7.71,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Probably because this whole universe is against me.' is a quintessential George Costanza statement \u2014 grandiose, paranoid, completely sincere, and delivered with the resignation of a man who's made peace with cosmic persecution. The economy is excellent. High quotability because it perfectly encapsulates George's worldview in one sentence."
+    },
+    {
+      "index": 72,
+      "text": "'You got a little rage.' / 'I know. And now they want me to bottle it up. It makes me so mad.'",
+      "characters": [
+        "Jerry",
+        "George"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "irony_sarcasm"
+      ],
+      "setup": "Jerry gently notes George has some rage",
+      "punchline": "'They want me to bottle it up. It makes me so mad.' \u2014 getting angry about being told not to be angry",
+      "craft_total": 7.49,
+      "impact_score": 7.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'They want me to bottle it up. It makes me so mad.' is a nearly perfect joke. The irony is completely self-contained and undeniable: the suggestion to suppress his rage makes him rageful. The structure is immaculate \u2014 setup (bottling it up) immediately produces its own contradiction (it makes me mad). Economy is outstanding. George delivers this with complete sincerity, which is what makes it transcendent. One of the episode's best jokes."
+    },
+    {
+      "index": 73,
+      "text": "'By the way, my bad-naked demo didn't quite work.' \u2014 George on belt sander attempt",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "callback",
+        "deadpan_understatement"
+      ],
+      "setup": "Jerry had suggested George use the belt sander to demonstrate bad-naked",
+      "punchline": "The offhand 'it didn't quite work' report implies the demonstration was either too effective or a disaster",
+      "craft_total": 6.68,
+      "impact_score": 6.5,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A brief callback that functions mainly as a transitional beat. The understatement of 'didn't quite work' is mildly funny but we don't get enough detail to maximize the comedy. Adequate but underdeveloped."
+    },
+    {
+      "index": 74,
+      "text": "'This bread has nuts in it.' \u2014 Elaine's non-sequitur complaint mid-serious conversation",
+      "characters": [
+        "Elaine"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The group is discussing serious topics (bad-naked, rage, etc.)",
+      "punchline": "Elaine completely breaks the conversational thread to complain about bread having nuts in it",
+      "craft_total": 6.22,
+      "impact_score": 5.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The pure non-sequitur of 'this bread has nuts in it' is a Seinfeld specialty \u2014 a completely mundane complaint dropped into a charged moment. It's the show's philosophy in miniature: the trivial intrudes on everything. The economy is perfect. Works as a character beat for Elaine."
+    },
+    {
+      "index": 75,
+      "text": "'What is wrong with my body?' / 'Chicken-wing shoulder blades.' / 'That's it?' / 'No, but that's one problem.'",
+      "characters": [
+        "Jerry",
+        "Elaine"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Jerry has been walking around naked; he asks Elaine what's wrong with his body",
+      "punchline": "'Chicken-wing shoulder blades' \u2014 a very specific and unflattering body-part assessment \u2014 followed by the implication there are MORE problems",
+      "craft_total": 7.52,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Chicken-wing shoulder blades' is a vivid, specific, and instantly imageable body insult. The structure is excellent: 'That's it?' sets up the devastating 'No, but that's one problem.' \u2014 implying a much longer list exists. Elaine's casual delivery of this verdict makes it funnier. The economy is very good."
+    },
+    {
+      "index": 76,
+      "text": "'The female body is a work of art. The male body is utilitarian. It's for getting around. It's like a Jeep.'",
+      "characters": [
+        "Elaine"
+      ],
+      "joke_types": [
+        "observational",
+        "setup_punchline"
+      ],
+      "setup": "Jerry asks why walking around naked isn't good for men like it is for women",
+      "punchline": "'It's like a Jeep.' \u2014 the male body as a vehicle of utility rather than aesthetic pleasure, and specifically compared to a Jeep",
+      "craft_total": 7.99,
+      "impact_score": 8.33,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is one of the episode's truly great jokes. The Jeep metaphor for the male body is original, exactly right, and lands with perfect economy. 'It's for getting around' builds the logic; 'It's like a Jeep' delivers it with an unexpected specificity that makes it perfect. Jeep specifically \u2014 not a Ferrari, not a tank \u2014 Jeep, which is functional but not beautiful. The joke has become a genuine cultural touchstone. This is comparable in quality to the 8.0+ calibration anchor and arguably exceeds it. Among the episode's top 3 moments."
+    },
+    {
+      "index": 77,
+      "text": "'It's hideous. The hair, the lumpiness. It's simian.' / 'Well, some women like it.' / 'Sickies.'",
+      "characters": [
+        "Elaine",
+        "Jerry"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Elaine has compared the male body to a Jeep",
+      "punchline": "'Sickies.' \u2014 Elaine's one-word dismissal of all women who find the male body attractive",
+      "craft_total": 7.52,
+      "impact_score": 7.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Sickies.' is a perfect one-word punchline. The escalating assessment of the male body ('hideous... lumpiness... simian') builds to Jerry's face-saving 'some women like it,' and Elaine's flat 'Sickies.' is the ideal deflation. One word, total dismissal. Economy at its absolute peak. Very high quotability \u2014 this is the kind of line that gets remembered."
+    },
+    {
+      "index": 78,
+      "text": "Kramer calls Puddy for garbage disposal installation help \u2014 Puddy says it's a misprint on 'main line' vs. 'auxiliary line'",
+      "characters": [
+        "Kramer",
+        "Puddy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Kramer is trying to install a garbage disposal, following instructions",
+      "punchline": "Puddy immediately declares the instructions have a misprint \u2014 with total confidence, as if he wrote them",
+      "craft_total": 6.69,
+      "impact_score": 6.33,
+      "quotability": 4.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Puddy's confident declaration that the instructions have a misprint \u2014 with no evidence, pure mechanic authority \u2014 is a good Puddy character beat. The setup for the garbage-disposal-in-bathtub reveal later. Functional comedy."
+    },
+    {
+      "index": 79,
+      "text": "You gotta dismantle the latch hasp from the auxiliary drainage line. / No, it says main line. / It's a misprint.",
+      "characters": [
+        "Puddy",
+        "Kramer"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Kramer is installing a garbage disposal with Puddy's phone guidance",
+      "punchline": "Puddy's casual 'It's a misprint' when confronted with the manual contradicting him \u2014 absolute automotive confidence misapplied to plumbing",
+      "craft_total": 7.07,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Puddy's confident 'it's a misprint' is a good character beat \u2014 his mechanic certainty applied to written instructions he can't see is characterful and mildly absurd."
+    },
+    {
+      "index": 80,
+      "text": "Puddy is at Elaine's apartment and tells her about the balloon bouquet for Peggy: 'Yeah, he says you can just give it to him tomorrow when you see him.' / 'Balloon bouquet for who?' / 'Peggy took a turn for the worse.'",
+      "characters": [
+        "Puddy",
+        "Elaine"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "setup_punchline"
+      ],
+      "setup": "Elaine's boss called; Puddy relays a message about a balloon bouquet for a sick coworker",
+      "punchline": "The sick coworker is Peggy \u2014 whom Elaine infected \u2014 and now they're sending a get-well balloon bouquet Elaine must contribute to",
+      "craft_total": 6.82,
+      "impact_score": 6.83,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A good ironic beat \u2014 Elaine who caused Peggy's illness is now being asked to contribute to her get-well gesture. The comedy is in the situational irony and the mundane domesticity of Puddy relaying office messages. Works well as a plot development joke."
+    },
+    {
+      "index": 81,
+      "text": "Puddy reveals he's a recovering germaphobe \u2014 10 years \u2014 with a tattoo of a germ on his chest",
+      "characters": [
+        "Puddy",
+        "Elaine"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Elaine says Peggy is a germaphobe; Puddy says 'I know what that's about'",
+      "punchline": "Puddy is a 10-year recovering germaphobe \u2014 with a recovery tattoo (a germ) on his chest \u2014 completely at odds with his established character",
+      "craft_total": 7.72,
+      "impact_score": 7.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The reveal of Puddy as a recovering germaphobe is a great absurdist character expansion \u2014 completely unexpected but immediately funny. The recovery tattoo of a germ is a particularly inspired detail. Puddy's earnest sobriety about his germaphobia recovery ('Ten years') is played straight, which makes it funnier."
+    },
+    {
+      "index": 82,
+      "text": "'Ten years ago, waking up next to a woman like this would have sent me running for the pHisoHex.'",
+      "characters": [
+        "Puddy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Puddy is explaining his germaphobia recovery to Elaine's therapist/boss",
+      "punchline": "'Running for the pHisoHex' \u2014 a specific antibacterial soap brand used as the comedic detail that makes Puddy's past germaphobia vividly real",
+      "craft_total": 7.28,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'pHisoHex' as the specific soap is a good detail \u2014 it's a real product name (a medicated cleanser) that sounds clinical and slightly obsessive. Puddy's deadpan delivery of waking up next to Elaine being a germaphobic nightmare is both a compliment and an insult. Good character comedy."
+    },
+    {
+      "index": 83,
+      "text": "'I still have trouble looking at those disgusting old bedroom slippers she slobs around in.' / 'Hey, I've had those since college. They're bunnies.'",
+      "characters": [
+        "Puddy",
+        "Elaine"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Puddy is explaining he's mostly recovered from germaphobia",
+      "punchline": "His one remaining trigger is Elaine's old bunny slippers, which he still finds intolerable \u2014 and Elaine's defensive 'they're bunnies' is the perfect non-argument",
+      "craft_total": 7.58,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'They're bunnies' as Elaine's defense of her bacteria-trap slippers is a great character moment \u2014 she's defending them on the grounds of aesthetics (they're cute) not cleanliness. Puddy's 'bacteria traps' and 'slobs around' are good specific character language. The Elaine/Puddy dynamic is very well-served here."
+    },
+    {
+      "index": 84,
+      "text": "'Okay. We're broken up for the rest of the day.'",
+      "characters": [
+        "Elaine"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Puddy has criticized Elaine's bunny slippers",
+      "punchline": "Elaine breaks up with Puddy 'for the rest of the day' \u2014 a timed relationship suspension, not a real breakup",
+      "craft_total": 8.03,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'We're broken up for the rest of the day' is a brilliantly Elaine line \u2014 the specificity of 'for the rest of the day' suggests this is a recurring mechanism in their relationship. Breaking up has become a temporary measure, like a time-out. Economy is excellent. Very high quotability and character integration."
+    },
+    {
+      "index": 85,
+      "text": "Okay. We're broken up for the rest of the day.",
+      "characters": [
+        "Elaine"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Puddy has just called Elaine's cherished bunny slippers bacteria traps in front of everyone",
+      "punchline": "Elaine's time-limited breakup \u2014 'for the rest of the day' \u2014 a hilariously small and specific punishment",
+      "craft_total": 7.3,
+      "impact_score": 7.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Excellent Elaine/Puddy joke. 'We're broken up for the rest of the day' is a perfect encapsulation of their relationship \u2014 casual, temporary, relationship-as-scheduling. It's deeply in character for both of them, original in its specificity, and brilliantly economical. Very quotable."
+    },
+    {
+      "index": 86,
+      "text": "Jerry and Melissa talking with clothes on \u2014 'Yes, clothes. This is normal.' \u2014 as if both are surprised by this realization",
+      "characters": [
+        "Jerry",
+        "Melissa"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Jerry and Melissa's relationship has been dominated by nudity-related issues",
+      "punchline": "They observe that being clothed together is 'normal' \u2014 the fact they have to note this shows how far the naked dynamic has taken over",
+      "craft_total": 7.02,
+      "impact_score": 6.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A good callback beat. The couple observing that being clothed is 'normal' shows how much the naked dynamic has distorted their relationship. Economy is good; it works as a transitional character beat."
+    },
+    {
+      "index": 87,
+      "text": "Jerry and Melissa break up \u2014 'We couldn't carry on a conversation. I kept trying to picture her naked, she kept trying to not picture me naked.'",
+      "characters": [
+        "Jerry"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jerry explains the breakup",
+      "punchline": "The exact inversion of normal romantic dynamics \u2014 he wants to see her naked, she actively doesn't want to see him naked \u2014 collapsed the relationship",
+      "craft_total": 7.9,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The breakup summary is beautifully constructed. 'I kept trying to picture her naked, she kept trying to not picture me naked' \u2014 the asymmetry is the joke, and it closes the A-plot with a perfect thematic summary. The episode is, ultimately, about how nudity is asymmetrically desired. Economy is very good."
+    },
+    {
+      "index": 88,
+      "text": "Kramer is making radish roses \u2014 'How do you make those radish roses?' / 'Insert a knife into the centre and twist. Then to make it bloom, soak it in water for 30 to 40 minutes.' / 'No problem there.'",
+      "characters": [
+        "Kramer",
+        "George"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Kramer is making a thank-you meal for Puddy",
+      "punchline": "'No problem there.' \u2014 Kramer's casual acknowledgment that soaking something in water for 30-40 minutes is trivial, implying he still has abundant shower time",
+      "craft_total": 6.81,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A subtle callback to Kramer's shower-living \u2014 'no problem there' about soaking in water implies he's still in the shower. The economy is great: three words that reference the entire shower subplot without spelling it out. Good structural comedy."
+    },
+    {
+      "index": 89,
+      "text": "George's ice cream shop confrontation with Hanke \u2014 Hanke starts a new apology but says 'you're welcome' instead of 'I'm sorry'",
+      "characters": [
+        "George",
+        "Hanke"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Hanke has sought George out to give a proper apology",
+      "punchline": "He delivers 'you're welcome' as the climax \u2014 technically acknowledging receipt of George's grievance, not apologizing for it",
+      "craft_total": 7.51,
+      "impact_score": 7.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Hanke accidentally saying 'you're welcome' instead of 'I'm sorry' after a setup about admitting wrong is a good comedic mistake \u2014 the Freudian slip of someone who doesn't actually feel sorry. George's analysis ('All you said was you're welcome, which is nice, it's very nice, but I feel I gotta get the apology') is perfectly George: pedantic, demanding, technically correct."
+    },
+    {
+      "index": 90,
+      "text": "The ice cream shop chaos \u2014 Hanke reaches his breaking point: 'I'm not sorry. I was never sorry. It was cashmere. I hate Step 9.'",
+      "characters": [
+        "Hanke"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "George has pushed Hanke to the breaking point over the apology in a busy ice cream shop",
+      "punchline": "'I hate Step 9.' \u2014 Hanke finally snaps, reveals he has never been sorry, and condemns the entire recovery step that put him in this situation",
+      "craft_total": 8.02,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The climax of the Step 9 arc is excellent. 'I hate Step 9' is the perfect cathartic breakdown \u2014 a man in recovery finally cracking under George Costanza's relentless grievance. 'It was cashmere' as his justification for never being sorry is perfect: the sweater's quality was reason enough. The escalation of Hanke then searching frantically for a drink ('Where's that Rum Raisin?') while George watches him relapse is darkly funny and structurally satisfying."
+    },
+    {
+      "index": 91,
+      "text": "Hanke looks for a drink in the ice cream shop: 'Daiquiri Ice. Here we go.' / 'What are you looking at? Get out. Come on. Can't you see we're closed?'",
+      "characters": [
+        "Hanke"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "escalation"
+      ],
+      "setup": "Hanke has snapped and is searching frantically for alcohol in an ice cream shop",
+      "punchline": "He finds 'Daiquiri Ice' (an ice cream flavor, not alcohol) and begins chasing customers out of the shop \u2014 he's relapsed emotionally if not literally",
+      "craft_total": 6.9,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The dark comedy of someone relapsing while searching an ice cream shop for alcohol \u2014 and finding 'Daiquiri Ice' (a real ice cream flavor) \u2014 is very well-constructed. Chasing customers out of the shop completes the character's breakdown. The callback that George essentially caused a recovering alcoholic to relapse over a sweater neck hole is the darkest joke in the episode."
+    },
+    {
+      "index": 92,
+      "text": "Kramer's thank-you dinner reveal: 'Here's to David Puddy for helping me install a much-needed and much-appreciated garbage disposal in my bathtub.' / 'You have a garbage disposal in your bathtub?' / 'Oh, yeah, and I use it all the time. I made this whole meal in there.'",
+      "characters": [
+        "Kramer",
+        "Elaine",
+        "George"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "escalation"
+      ],
+      "setup": "Kramer has made a thank-you dinner; they toast Puddy for helping with the installation",
+      "punchline": "The garbage disposal is in the BATHTUB; Kramer has cooked the entire meal in the shower/bathtub",
+      "craft_total": 7.28,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's comedic peak. The convergence of multiple subplots \u2014 Kramer living in the shower, the garbage disposal, the thank-you dinner \u2014 into the reveal that Kramer has cooked an entire meal in his shower is a masterfully constructed long-game joke. The structure is exceptional: every piece was planted (the shower obsession, the clog, Puddy's help, the radish roses soaked 'no problem') and the payoff connects all of them. 'I prepared it as I bathed' is the perfect button. This is the Seinfeld multi-plot convergence at its best."
+    },
+    {
+      "index": 93,
+      "text": "'This food was in the shower with you?' / 'I prepared it as I bathed.'",
+      "characters": [
+        "Elaine",
+        "Kramer"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "callback"
+      ],
+      "setup": "Elaine learns the meal was prepared in the shower",
+      "punchline": "'I prepared it as I bathed.' \u2014 Kramer's dignified, formal phrasing of something completely disgusting",
+      "craft_total": 8.18,
+      "impact_score": 8.5,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "'I prepared it as I bathed.' is a line for the ages. The formal, almost Masterchef-ish construction ('prepared it as I bathed' rather than 'cooked it in the shower') elevates the grotesque to the dignified. Kramer's complete sincerity \u2014 he sees nothing wrong \u2014 makes it perfect. Economy: six words that summarize an entire character's life philosophy. One of the episode's two or three best individual lines."
+    },
+    {
+      "index": 94,
+      "text": "Peggy's germaphobia reaction to learning the food was prepared in the shower: 'Oh, germs. Germs. Germs!'",
+      "characters": [
+        "Peggy"
+      ],
+      "joke_types": [
+        "callback",
+        "escalation"
+      ],
+      "setup": "Peggy has been brought to Kramer's dinner party; she learns the food was shower-prepared",
+      "punchline": "After supposedly recovering from germaphobia (per Puddy's intervention), Peggy immediately relapses: 'Oh, germs. Germs. Germs!'",
+      "craft_total": 8.02,
+      "impact_score": 8.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The triple callback: Peggy's germaphobia + Puddy's recovery intervention + shower meal all collide in one moment. Peggy relapsing immediately upon learning where the food was prepared is a perfect structural payoff. The repetition of 'germs, germs, germs' captures the total breakdown. Works as a parallel to Hanke's relapse in the ice cream shop \u2014 both characters were pushed to their breaking points by the main cast's behavior."
+    },
+    {
+      "index": 95,
+      "text": "'Excuse me? Is this Rage-aholics?' / 'No. Germaphobes.' / 'Thanks.' / 'What are you guys doing here?' / 'Kramer.' / 'Right.'",
+      "characters": [
+        "Hanke",
+        "Peggy",
+        "George",
+        "Elaine"
+      ],
+      "joke_types": [
+        "callback",
+        "setup_punchline"
+      ],
+      "setup": "Hanke arrives looking for Rage-aholics Anonymous",
+      "punchline": "He's stumbled into the wrong support group \u2014 Germaphobes Anonymous \u2014 and it turns out this group contains everyone from the various storylines",
+      "craft_total": 7.9,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The convergence scene where all the episode's storylines collide in the wrong support group is a textbook Seinfeld ending. The 'Kramer. Right.' exchange \u2014 everyone immediately understanding that Kramer is the common thread \u2014 is perfect economy. The structure of all these people ending up in the same room because of Kramer's cooking is an excellent multi-plot convergence."
+    },
+    {
+      "index": 96,
+      "text": "'Hi, I'm Jason.' / 'I'm a Rage-aholic.' / 'Hi, Jason.' / 'Step-skipper. That man is a step-skipper. He skips Step 9.'",
+      "characters": [
+        "Hanke",
+        "George"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Hanke introduces himself at what he thinks might be a support group",
+      "punchline": "George immediately begins his Step 9 agitation even in this new context \u2014 unable to let it go regardless of setting",
+      "craft_total": 7.75,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "George's inability to let go of the Step 9 grievance, even in a random support group meeting he stumbled into, is perfect character comedy. 'Step-skipper. That man is a step-skipper.' delivered with righteous indignation in a completely inappropriate context is beautifully George. The echo of 'Step 9. Step 9.' from earlier in the episode lands as a satisfying callback."
+    },
+    {
+      "index": 97,
+      "text": "'He never apologised to me for saying that I would stretch out the neck hole on his sweater.' / 'It wasn't funny. It was a very nice sweater.' / 'Take a look at his neck, not to mention the melon sitting on top of it. I don't know if I'd trust him with a V-neck.'",
+      "characters": [
+        "George",
+        "Hanke"
+      ],
+      "joke_types": [
+        "escalation",
+        "callback"
+      ],
+      "setup": "George rehashes his grievance before the Germaphobes group",
+      "punchline": "Hanke's counter-argument \u2014 'take a look at his neck, not to mention the melon sitting on top of it... I don't know if I'd trust him with a V-neck' \u2014 is a perfectly delivered callback insult that adds new specificity ('melon,' 'V-neck')",
+      "craft_total": 7.22,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The final escalation of the sweater neck-hole dispute \u2014 now before a random support group audience \u2014 is excellent. 'Melon' as the new word for George's head is a great escalation from 'bulbous' (from the earlier sarcastic apology). 'I don't know if I'd trust him with a V-neck' extends the sweater logic perfectly and gets the last word. The whole group hearing this as if it's a legitimate support group grievance is the scene's structural comedy."
+    },
+    {
+      "index": 98,
+      "text": "'He's bebopping and scatting, and I'm losing it.' \u2014 George's final word to the support group",
+      "characters": [
+        "George"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "George is describing Hanke's behavior to the support group",
+      "punchline": "'He's bebopping and scatting' returns as the episode's closing George line \u2014 his preferred vocabulary for being riffed on \u2014 while 'and I'm losing it' closes the rage arc",
+      "craft_total": 8.09,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's final joke \u2014 George's closing statement to the Germaphobes support group \u2014 is a perfect synthesis of two callbacks: 'bebopping and scatting' (his coined phrase for Hanke's riffing) and 'I'm losing it' (his earlier Rage-aholics moment). The double callback on the closing line demonstrates exceptional structural writing. The audience gets a double-payoff and the episode ends on George's indignation \u2014 perfectly appropriate for the character. This is how you close an episode."
     }
   ],
   "air_date": "1997-12-11",
