@@ -4,893 +4,1842 @@
   "season": 2,
   "episode_number": 9,
   "title": "Burning Love",
-  "humor_index": 81.0,
-  "jpm": 1.91,
-  "avg_craft": 7.14,
-  "avg_impact": 6.94,
-  "total_jokes": 52,
-  "war": 54.1,
-  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"cringe_discomfort\"]",
-  "standout_joke_ids": "[41, 39, 5]",
+  "humor_index": 93.8,
+  "jpm": 3.6,
+  "avg_craft": 7.52,
+  "avg_impact": 7.31,
+  "total_jokes": 98,
+  "war": 138.7,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[77, 72, 2]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "OH, NO. IT'S NOT... IT'S NOT A \"CHRISTIAN MUSIC\" BONFIRE. IT'S A CHRISTIAN \"MUSIC BONFIRE.\" YOU KNOW, WE BURN ALL SATANIC MUSIC.",
+      "text": "George Michael asks if anyone would miss the 'Peter and the Wolf read-along record,' Michael says no, it's part of the model home decorations.",
       "characters": [
-        "George Michael"
+        "George Michael",
+        "Michael"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "observational",
         "character_comedy"
       ],
-      "setup": "Michael assumes it's a bonfire featuring Christian music",
-      "punchline": "George Michael corrects him - they're burning non-Christian music, not celebrating Christian music",
-      "craft_total": 7.64,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "George Michael asks if the record would be missed, implying it has value.",
+      "punchline": "Michael casually confirms it's just cheap prop decoration \u2014 the Bluth family's model home is so fake even the records are decorative.",
+      "craft_total": 7.12,
+      "impact_score": 6.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent wordplay misdirection with perfect economy. The quotation mark emphasis creates the joke structure, and it fits George Michael's earnest character perfectly."
+      "explanation": "Establishes the Bluth model home's artificiality and also sets up the Peter and the Wolf record as a recurring sound gag. The 'model home decorations' detail is funny in its specificity and pays off throughout the episode."
     },
     {
       "index": 2,
-      "text": "THE THING IS, THOUGH, THE ONLY MUSIC I HAVE IS EITHER INSTRUCTIONAL OR HUMOR.",
+      "text": "George Michael corrects 'Christian Music Bonfire' \u2014 it's not a 'Christian Music' bonfire, it's a Christian 'Music Bonfire' \u2014 they burn satanic music.",
       "characters": [
-        "George Michael"
+        "George Michael",
+        "Michael"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "wordplay_pun",
+        "setup_punchline"
       ],
-      "setup": "George Michael needs music to burn",
-      "punchline": "His music collection is pathetically limited to instructional and comedy records",
-      "craft_total": 6.88,
-      "impact_score": 6.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Michael hears 'Christian Music Bonfire' and assumes they'll play Christian music around a bonfire.",
+      "punchline": "The comma placement reveals it's actually a religiously motivated book-burning style event \u2014 they burn non-Christian music.",
+      "craft_total": 8.6,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect character comedy - shows George Michael's sheltered, innocent nature through his hilariously limited music taste."
+      "explanation": "This is a masterclass in linguistic misdirection. The joke hinges entirely on spoken punctuation \u2014 the stress pattern of the phrase changes its meaning completely. It's original, economical, brilliantly structured, and perfectly in character for the religiously zealous Ann subplot. The delayed beat where Michael processes the correction makes it land even harder. Ranks among the episode's best."
     },
     {
       "index": 3,
-      "text": "HEY, GEORGE MICHAEL. JESUS CALLED. HE WANTS YOUR THRILLER ALBUM.",
+      "text": "Michael's only music is 'either instructional or humor,' and he's particularly fond of the Jerky Boys.",
       "characters": [
-        "Gob"
+        "Michael",
+        "Narrator"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "George Michael says they burn satanic music; Michael notes the only music he has is instructional or humor.",
+      "punchline": "The narrator reveals Michael is 'particularly fond' of the Jerky Boys \u2014 a prank call novelty act \u2014 positioning this buttoned-up businessman as a secret Jerky Boys devotee.",
+      "craft_total": 7.45,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Strong character comedy \u2014 the gap between Michael's stiff authority figure image and his secret love of prank call comedy is funny and humanizing. Also seeds the Jerky Boys callback that pays off at the end. The narrator's 'particularly fond' framing is perfectly deadpan."
+    },
+    {
+      "index": 4,
+      "text": "The Jerky Boys clip plays: 'I wanna buy a house, Dad. It's gotta be big. You said Dad, buddy. Shut up, Jerky.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "meta_self_referential"
+      ],
+      "setup": "We hear the Jerky Boys CD that Michael is fond of \u2014 a prank call novelty act.",
+      "punchline": "The clip plays and it's aggressively stupid \u2014 a reminder that this dignified man treasures this juvenile content.",
+      "craft_total": 6.22,
+      "impact_score": 6.0,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The clip itself isn't hilarious but the framing is \u2014 hearing this dumb prank call in Michael's house is funny because of the character contrast. Also sets up the callback at the bonfire."
+    },
+    {
+      "index": 5,
+      "text": "GOB to George Michael: 'Hey George Michael, Jesus called. He wants your Thriller album.'",
+      "characters": [
+        "GOB",
+        "George Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "There's talk of burning satanic music at a Christian bonfire.",
+      "punchline": "GOB riffs on the theme by telling George Michael that Jesus called and wants his Thriller album \u2014 a deliberately dumb twist on the 'called, they want their ___ back' format.",
+      "craft_total": 6.79,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A competent joke \u2014 the premise is clever (Michael Jackson / Jesus / satanic music crossover) and it's in GOB's register of dumb bravado humor. Not exceptional but gets the laugh."
+    },
+    {
+      "index": 6,
+      "text": "George Michael asks GOB to cover his shift at the banana stand; GOB eagerly agrees; George Michael's parting shot: 'It's the only way we're ever gonna get it air-conditioned.'",
+      "characters": [
+        "George Michael",
+        "GOB"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "George Michael asks GOB to cover him, and GOB agrees eagerly to be helpful.",
+      "punchline": "George Michael's passive-aggressive aside reveals his true motivation \u2014 he just wants to force an incompetent person into the stand so management has to install AC.",
+      "craft_total": 6.99,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sharp character moment \u2014 George Michael's usually good-natured persona hiding a cunning manipulation is both funny and revealing. The banana stand's long-running status as a miserable work environment makes this land for rewatchers."
+    },
+    {
+      "index": 7,
+      "text": "Lucille opens with: 'Michael! How would you like me to owe you a favor?' \u2014 then immediately asks him to bid on her at the charity auction.",
+      "characters": [
+        "Lucille",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Lucille frames the interaction as if she's offering Michael something valuable.",
+      "punchline": "Her 'favor' is actually just asking him to spend money on her \u2014 the 'owing a favor' is a transparent manipulation.",
+      "craft_total": 7.42,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Pure Lucille character comedy \u2014 the inversion of favor-giving as a form of extraction is completely in her DNA. The immediate pivot reveals the manipulation before Michael can even process the offer."
+    },
+    {
+      "index": 8,
+      "text": "Michael: 'Okay. Now I'd like to use up my favor and decline.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "setup_punchline"
+      ],
+      "setup": "Lucille offers to owe Michael a favor in exchange for bidding on her.",
+      "punchline": "Michael immediately 'spends' the nonexistent favor to get out of the obligation \u2014 a perfectly timed legal/transactional response to an emotional manipulation.",
+      "craft_total": 8.24,
+      "impact_score": 8.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "One of the episode's sharpest lines. Michael weaponizes Lucille's own transactional language against her \u2014 using the 'favor' currency she just created to immediately opt out. It's economical, character-specific, and has the structure of a perfectly closed loop. Quotability is high because the line works completely out of context."
+    },
+    {
+      "index": 9,
+      "text": "Flashback: Buster inadvertently bid $10,000 on Lucille 2 at last year's auction.",
+      "characters": [
+        "Buster",
+        "Lucille 2"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Lucille says she can't have a 'replay of last year' regarding Buster bidding on her.",
+      "punchline": "The flashback reveals Buster accidentally bid $10,000 on Lucille 2 \u2014 his mother's romantic rival and his own complicated object of desire.",
+      "craft_total": 7.67,
+      "impact_score": 7.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Deeply layered for Arrested Development \u2014 it rewards knowledge of Buster's psychology (attracted to mother substitutes, terrible with money, no agency). The flashback is funny as a standalone but funnier as character revelation."
+    },
+    {
+      "index": 10,
+      "text": "Michael: 'And you're embarrassed to have Oscar bid on you.' Lucille: 'With his two pair of pants? You bet.'",
+      "characters": [
+        "Michael",
+        "Lucille"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael points out Oscar could bid on Lucille instead.",
+      "punchline": "Lucille's dismissal of Oscar is based entirely on his having only two pairs of pants \u2014 a specific, petty, and perfectly Lucille form of class snobbery.",
+      "craft_total": 7.67,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Lucille snobbery compressed to maximum efficiency. The specificity of 'two pair of pants' is what makes this \u2014 it's not just 'he's poor,' it's a granular, petty detail that reveals her character completely."
+    },
+    {
+      "index": 11,
+      "text": "Lucille asks: 'Did nothing cancel?' when Michael says he has the afternoon free.",
+      "characters": [
+        "Lucille",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael mentions he has the afternoon free.",
+      "punchline": "Lucille's immediate assumption is that free time means all his appointments canceled \u2014 she can't conceive of him having time that isn't disappointment-derived.",
+      "craft_total": 8.17,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Efficient, devastating character joke. Lucille's worldview is that nobody would choose to spend time with Michael \u2014 her 'compliment' is actually an insult. One of her best quick moments in the episode."
+    },
+    {
+      "index": 12,
+      "text": "Lindsay claims she 'stopped by' the protest but 'hadn't chosen a side' \u2014 then we see her shouting 'MURDERERS! YOU'RE ALL MURDERERS!' while someone else advocates for gun rules.",
+      "characters": [
+        "Lindsay",
+        "Narrator"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "visual_gag"
+      ],
+      "setup": "Lindsay claims she was at the anti-gun protest but hadn't taken a side.",
+      "punchline": "The flashback immediately shows her screaming 'Murderers!' \u2014 she's clearly taken a side, she just lacks self-awareness.",
+      "craft_total": 7.84,
+      "impact_score": 7.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Arrested Development structure \u2014 character makes a claim, immediate visual contradiction. Lindsay's total lack of self-awareness is perfectly rendered. The simultaneous protest scene with pro-gun person talking about existing rules while Lindsay shouts past them is also politically observational."
+    },
+    {
+      "index": 13,
+      "text": "The protester turns out to be 'People's Choice nominated actor Moses Taylor, famous for his portrayal of the rule-abiding detective Stop Sign, Frank Wrench, star of the television show Wrench.'",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "absurdist",
+        "setup_punchline"
+      ],
+      "setup": "A reasonable-sounding man advocates for existing gun laws at the protest.",
+      "punchline": "He's 'People's Choice nominated' (not winner), his character is named 'Stop Sign, Frank Wrench' on a show called 'Wrench' \u2014 a cascade of absurd specificity.",
+      "craft_total": 7.39,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The layers of absurdity compound each other \u2014 'People's Choice nominated' (loser), his TV character is literally named after a road sign, the show is called 'Wrench.' Each detail is funnier than the last. This is Arrested Development's brand of dense, fast-moving absurdism."
+    },
+    {
+      "index": 14,
+      "text": "Moses Taylor/Frank Wrench's catchphrase after talking about gun rules: 'Well, that's one rule I'm not gonna follow.' \u2014 then he fires his gun in the air.",
+      "characters": [
+        "Moses Taylor"
       ],
       "joke_types": [
         "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "George Michael is worried about the Christian bonfire",
-      "punchline": "Gob sarcastically suggests even Jesus wants Michael Jackson's Thriller burned",
-      "craft_total": 6.89,
-      "impact_score": 6.67,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sharp, quotable line with great economy. The absurdity of Jesus personally requesting a specific album fits Gob's irreverent character."
-    },
-    {
-      "index": 4,
-      "text": "IT'S THE ONLY WAY WE'RE EVER GONNA GET IT AIR-CONDITIONED.",
-      "characters": [
-        "George Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Gob offers to work at the banana stand",
-      "punchline": "George Michael reveals the family's financial desperation - they need Gob's incompetence to justify air conditioning",
-      "craft_total": 6.98,
-      "impact_score": 6.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Clever setup-punchline that reveals family dysfunction and financial desperation through practical logic."
-    },
-    {
-      "index": 5,
-      "text": "OKAY. NOW I'D LIKE TO USE UP MY FAVOR AND DECLINE.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "character_comedy"
-      ],
-      "setup": "Lucille asks how Michael would like her to owe him a favor",
-      "punchline": "Michael immediately uses the theoretical favor to decline her actual request",
-      "craft_total": 7.93,
-      "impact_score": 7.83,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect setup-punchline structure with excellent economy. Michael's quick thinking and the logical absurdity make it quotable."
-    },
-    {
-      "index": 6,
-      "text": "When Buster inadvertently bid on Lucille 2. - $10,000! - Buster.",
-      "characters": [
-        "Lucille",
-        "Buster",
-        "Lucille 2"
-      ],
-      "joke_types": [
-        "callback",
-        "cringe_discomfort"
-      ],
-      "setup": "Lucille explains why Buster can't bid on her",
-      "punchline": "Flashback shows Buster enthusiastically bidding on the wrong woman",
-      "craft_total": 7.08,
-      "impact_score": 6.75,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good character-based humor showing Buster's bumbling nature and complicated family dynamics."
-    },
-    {
-      "index": 7,
-      "text": "REALLY? DID NOTHING CANCEL?",
-      "characters": [
-        "Lucille"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
-      ],
-      "setup": "Gob says he has the afternoon free",
-      "punchline": "Lucille's deadpan surprise that Gob isn't busy, revealing her low opinion of him",
-      "craft_total": 6.87,
-      "impact_score": 6.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Lucille character moment - her casual cruelty delivered with perfect deadpan timing."
-    },
-    {
-      "index": 8,
-      "text": "I STOPPED BY. I HADN'T CHOSEN A SIDE.",
-      "characters": [
-        "Lindsay"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Michael asks if Lindsay was protesting hunters",
-      "punchline": "Lindsay reveals she attended a protest without knowing which side she was on",
-      "craft_total": 7.67,
-      "impact_score": 7.33,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfectly captures Lindsay's vapid, unfocused activism. The casual admission of complete ignorance is very funny."
-    },
-    {
-      "index": 9,
-      "text": "YOU'RE NOT EVEN ALLOWED TO FIRE YOUR GUN IN THE AIR... IS THAT FRANK WRENCH?",
-      "characters": [
-        "Lindsay"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Lindsay is listing gun regulations seriously",
-      "punchline": "She gets completely distracted mid-sentence by spotting a celebrity",
-      "craft_total": 7.11,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good misdirection that shows Lindsay's shallow priorities and short attention span."
-    },
-    {
-      "index": 10,
-      "text": "WELL, THAT'S ONE RULE I'M NOT GONNA FOLLOW.",
-      "characters": [
-        "Moses Taylor"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
-      ],
-      "setup": "Moses Taylor plays a rule-abiding detective",
-      "punchline": "He immediately breaks character to dismiss the Second Amendment",
-      "craft_total": 6.59,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Simple irony joke about the actor contradicting his TV character. Functional but not exceptional."
-    },
-    {
-      "index": 11,
-      "text": "AND I'M GONNA SEE IF I CAN GET A WRENCH TO STRIP MY NUTS.",
-      "characters": [
-        "Lindsay"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "cringe_discomfort"
-      ],
-      "setup": "Lindsay is talking about her date with Moses Taylor",
-      "punchline": "Double entendre using his character name 'Frank Wrench' in a sexual context",
-      "craft_total": 6.55,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Obvious sexual innuendo that's more cringe than clever. The follow-up admission makes it slightly better."
-    },
-    {
-      "index": 12,
-      "text": "I WAS TRYING TO BE SEXY. IT JUST GOT AWAY FROM ME.",
-      "characters": [
-        "Lindsay"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Lindsay's awkward sexual innuendo",
-      "punchline": "She admits the line failed and explains her intention",
-      "craft_total": 6.78,
-      "impact_score": 6.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good recovery that acknowledges the failed innuendo and makes it funnier through self-awareness."
-    },
-    {
-      "index": 13,
-      "text": "SEEMS THEY DON'T APPRECIATE COMPETITION.",
-      "characters": [
-        "Tobias"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
-      ],
-      "setup": "Tobias got a cease and desist from Blue Man Group",
-      "punchline": "He frames being legally threatened as professional rivalry",
-      "craft_total": 7.22,
-      "impact_score": 6.83,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Tobias's delusional self-importance and inability to read situations."
-    },
-    {
-      "index": 14,
-      "text": "JESUS! IT'S THE WOLF! THAT IS THE WOLF! THE WOLF IS UPSTAIRS!",
-      "characters": [
-        "Tobias"
-      ],
-      "joke_types": [
-        "absurdist",
-        "misdirection"
-      ],
-      "setup": "Talk about proving masculinity",
-      "punchline": "Tobias panics at children's record sound effects",
-      "craft_total": 7.16,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect contradiction of Tobias's masculinity claims. His terror at a children's record undermines everything he just said."
-    },
-    {
-      "index": 15,
-      "text": "I THOUGHT THAT WAS A HOMEFILL.",
-      "characters": [
-        "Tobias"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Michael explains it's Peter and the Wolf record",
-      "punchline": "Tobias uses 'homefill' instead of 'home decoration' or similar word",
-      "craft_total": 6.73,
-      "impact_score": 6.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Tobias malapropism. His tendency to invent words fits his pretentious character."
-    },
-    {
-      "index": 16,
-      "text": "YES, THERE IS A WOLF ON THE LOOSE. HIS NAME IS OSCAR.",
-      "characters": [
-        "George Sr."
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "character_comedy"
-      ],
-      "setup": "George Sr. is asked about the wolf reports around town",
-      "punchline": "He reveals he's the 'wolf' and he's talking about his brother Oscar",
-      "craft_total": 7.62,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good revelation that reframes the wolf reports as George Sr.'s jealousy calls about Oscar dating Lucille."
-    },
-    {
-      "index": 17,
-      "text": "HOPE THAT WAS FORCED.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "deadpan_understatement"
-      ],
-      "setup": "George Sr. mentions he hasn't had a massage since prison",
-      "punchline": "Michael hopes his father wasn't willingly intimate with other inmates",
-      "craft_total": 6.67,
-      "impact_score": 6.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark prison humor delivered with Michael's characteristic deadpan discomfort about his father's situation."
-    },
-    {
-      "index": 18,
-      "text": "AND THOSE, UH, PREMADE BOIL-IN-BAG MEALS... YOU JUST TOSS THOSE IN THERE.",
-      "characters": [
-        "George Sr."
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "George Sr. explains hot tub benefits",
-      "punchline": "He wants to cook frozen dinners in the hot tub water he'll also bathe in",
-      "craft_total": 7.26,
-      "impact_score": 7.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Gross and absurd plan that shows George Sr.'s complete disconnection from normal hygiene standards."
-    },
-    {
-      "index": 19,
-      "text": "IT LOOKS LIKE MY BOY IS GONNA BE STICKING IT TO YOUR DAUGHTER, SITWELL.",
-      "characters": [
-        "George Sr."
-      ],
-      "joke_types": [
-        "callback"
-      ],
-      "setup": "Flashback to young Michael and Sally",
-      "punchline": "George Sr. uses crude sexual language about his young son and Sally",
-      "craft_total": 6.27,
-      "impact_score": 6.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Establishes the running gag of inappropriate sexual competition between the fathers that affects Michael."
-    },
-    {
-      "index": 20,
-      "text": "NO, WE'RE NOT GONNA BE STICKING ANYTHING. NOT-NOT GONNA STICK A THING.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "escalation"
-      ],
-      "setup": "Sally mentions going or sticking around",
-      "punchline": "Michael overreacts to innocent use of 'stick', creating awkwardness",
-      "craft_total": 6.91,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Shows how his father's inappropriate comments traumatized Michael, making him overreact to innocent words."
-    },
-    {
-      "index": 21,
-      "text": "IT'S LIGHTER FLUID. DIDN'T PUT IN A NEW FLINT.",
-      "characters": [
-        "Gob"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
-      ],
-      "setup": "Gob does a magic trick with fire",
-      "punchline": "His lighter malfunctions and sprays Sally with lighter fluid instead of producing flame",
-      "craft_total": 7.23,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Gob magic failure. His incompetence creates an awkward and potentially dangerous situation."
-    },
-    {
-      "index": 22,
-      "text": "SMOOTH, MICHAEL, LIKE HER FATHER'S HEAD, CHEST, ARMS, LEGS AND ASS.",
-      "characters": [
-        "Gob"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "escalation"
-      ],
-      "setup": "Gob calls Michael smooth sarcastically",
-      "punchline": "Reveals Sally's father is completely hairless in an overly detailed way",
-      "craft_total": 7.14,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalating description that builds the absurdity through anatomical detail. The unexpected information is funny."
-    },
-    {
-      "index": 23,
-      "text": "JUST SO YOU CAN SHOW UP AND SAY, 'CAR TROUBLES?'",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "callback",
-        "character_comedy"
-      ],
-      "setup": "Michael describes Gob's predatory dating tactics",
-      "punchline": "The overly smooth, predictable line Gob would use",
-      "craft_total": 7.69,
-      "impact_score": 7.33,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Sets up a running gag and perfectly captures Gob's sleazy confidence. Very quotable line that will pay off later."
-    },
-    {
-      "index": 24,
-      "text": "LUPE WASHED THEM, AND THEY SPROUTED. I THREW THEM OUT.",
-      "characters": [
-        "Oscar"
-      ],
-      "joke_types": [
-        "absurdist",
-        "visual_gag"
-      ],
-      "setup": "Oscar looking for his other pair of pants",
-      "punchline": "His pants literally grew like plants when washed",
-      "craft_total": 7.74,
-      "impact_score": 7.67,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliantly absurd visual that suggests Oscar's pants are made of organic material. Perfectly economical and surreal."
-    },
-    {
-      "index": 25,
-      "text": "I PUT UP ONE TO GET IT. AS LONG AS IT GETS FRANK WRENCH TO BID ON ME.",
-      "characters": [
-        "Lindsay"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "Lindsay talking about her fur coat acquisition",
-      "punchline": "She fought an animal to get the fur and wants to use it to attract a man",
-      "craft_total": 7.28,
+      "setup": "The actor who plays a 'rule-abiding detective' has been talking about gun rules.",
+      "punchline": "He immediately violates the rule he just cited by firing his gun in the air \u2014 his character's ethos completely contradicted by his real-world behavior.",
+      "craft_total": 7.36,
       "impact_score": 7.0,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark humor about Lindsay's hypocrisy - fighting animals for fashion after protesting hunting."
+      "explanation": "Tight ironic payoff \u2014 the joke is built on the gap between the character (Stop Sign, the rule-abiding detective) and the actor (who immediately breaks a rule for dramatic flair). The structure is clean and the irony is earned."
     },
     {
-      "index": 26,
-      "text": "SHOUT OUT, 'I GET HER 364 DAYS A YEAR FOR FREE!' OR SOMETHING.",
+      "index": 15,
+      "text": "Lindsay: 'And I'm gonna see if I can get a Wrench to strip my nuts.'",
       "characters": [
-        "Lucille"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "Michael agrees to bid on Lucille at auction",
-      "punchline": "Lucille suggests a cruel exit line about their mother-son relationship",
-      "craft_total": 7.72,
-      "impact_score": 7.83,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfectly cruel Lucille line that reduces their relationship to a business transaction. Very quotable dark humor."
-    },
-    {
-      "index": 27,
-      "text": "THEY'RE LITERALLY BLUE, NOT SAD.",
-      "characters": [
-        "Tobias"
+        "Lindsay"
       ],
       "joke_types": [
         "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "Tobias sees a Blue Man Group audition flyer",
-      "punchline": "He clarifies the literal blueness vs. emotional state",
-      "craft_total": 6.76,
-      "impact_score": 6.17,
+      "setup": "Lindsay is trying to get Moses Taylor (who plays Frank Wrench) to bid on her at the auction.",
+      "punchline": "Lindsay's statement is an unintentional double entendre \u2014 'get a Wrench to strip my nuts' sounds sexually explicit while only meaning (barely) the tool/actor.",
+      "craft_total": 7.07,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Bluth family's unintentional sexual wordplay is a series hallmark. This one is well-crafted \u2014 it requires the show's established character name (Wrench) to land. The follow-up 'I was trying to be sexy / it just got away from me' is the perfect self-aware kicker."
+    },
+    {
+      "index": 16,
+      "text": "Lindsay's talking head: 'I was trying to be sexy. It just got away from me.'",
+      "characters": [
+        "Lindsay"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Lindsay just delivered the 'get a Wrench to strip my nuts' line.",
+      "punchline": "Her confessional acknowledges the malfunction \u2014 she intended to be seductive but produced accidental mechanical innuendo instead.",
+      "craft_total": 7.67,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Perfect capper to the prior joke. 'It just got away from me' is a brilliant phrase for describing an unintended double entendre \u2014 the idea that language can escape your control is very Lindsay. High quotability because it works as a standalone confession."
+    },
+    {
+      "index": 17,
+      "text": "TV news: 'Plus, another wolf sighting in the park. What that means for your weekend...'",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "running_gag",
+        "irony_sarcasm"
+      ],
+      "setup": "George Sr. is hiding in the attic and making wolf sounds to communicate.",
+      "punchline": "His wolf calls have caused genuine local news wolf sighting coverage, treated with full local news gravitas.",
+      "craft_total": 7.19,
+      "impact_score": 6.75,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The escalation of George Sr.'s wolf calls into actual local news segments is a delightful piece of world-building absurdism. 'What that means for your weekend' is pitch-perfect local news parody."
+    },
+    {
+      "index": 18,
+      "text": "News broadcast teaser: 'Another wolf sighting in the park. What that means for your weekend...'",
+      "characters": [
+        "Narrator",
+        "News Anchor"
+      ],
+      "joke_types": [
+        "running_gag",
+        "irony_sarcasm"
+      ],
+      "setup": "The show has established George Sr. is hiding in the attic and making wolf calls",
+      "punchline": "The news has mistaken his calls for actual wolf sightings \u2014 and is treating it as a lifestyle segment ('what that means for your weekend')",
+      "craft_total": 7.19,
+      "impact_score": 6.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Layers two jokes: the absurdity of the wolf panic being caused by a fugitive in an attic, and the local news format comedy of treating a 'wolf sighting' as a weekend lifestyle story. Compact and efficient."
+    },
+    {
+      "index": 19,
+      "text": "Tobias: 'I'm afraid the Blue Man Group and I have parted ways. Seems I'm officially no longer a standby understudy. Cease and desist. Seems they don't appreciate competition.'",
+      "characters": [
+        "Tobias"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Tobias has been trying to join the Blue Man Group.",
+      "punchline": "He received a cease-and-desist letter but interprets it as them being threatened by his talent rather than a legal threat to stop him from impersonating them.",
+      "craft_total": 7.72,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfectly Tobias \u2014 his grandiose self-delusion reframes legal action as competitive jealousy. Only Tobias could receive a cease-and-desist and conclude the organization 'doesn't appreciate competition.' High character integration score because no other character would interpret this situation this way."
+    },
+    {
+      "index": 20,
+      "text": "Cease and desist letter shown: 'Seems they don't appreciate competition.'",
+      "characters": [
+        "Tobias F\u00fcnke"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "The Blue Man Group has sent Tobias a cease and desist letter",
+      "punchline": "Tobias interprets a legal threat as fear of his competitive threat \u2014 a complete inversion of reality",
+      "craft_total": 7.34,
+      "impact_score": 7.0,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple wordplay that shows Tobias's literal-minded thinking and explains his Blue Man Group obsession."
+      "explanation": "Tobias's delusion is the engine of his character comedy. Reinterpreting a cease-and-desist as fear of competition is exactly the kind of self-flattering misreading that defines him."
+    },
+    {
+      "index": 21,
+      "text": "Tobias: 'I need to prove to her that I'm not just a man, but a man's man.' Michael: 'I think she knows that.'",
+      "characters": [
+        "Tobias",
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Tobias wants to prove his masculinity to Lindsay.",
+      "punchline": "Michael's 'I think she knows that' is loaded with double meaning \u2014 Lindsay certainly knows Tobias is a 'man's man' in the gay-coded sense of the phrase.",
+      "craft_total": 8.14,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's finest examples of Arrested Development's layered Tobias humor. 'Man's man' carries its conventional meaning (masculine) AND its gay slang meaning simultaneously. Michael's deadpan 'I think she knows that' can be read as innocent agreement or knowing acknowledgment of Tobias's latent homosexuality. The ambiguity is perfectly calibrated \u2014 Michael may or may not be in on the joke."
+    },
+    {
+      "index": 22,
+      "text": "GOB screams 'JESUS! IT'S THE WOLF! THAT IS THE WOLF! THE WOLF IS UPSTAIRS!' \u2014 it's just the Peter and the Wolf record.",
+      "characters": [
+        "GOB",
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "running_gag"
+      ],
+      "setup": "Throughout the episode, wolf sounds have been heard and reported in the neighborhood.",
+      "punchline": "GOB's terrified reaction is to a children's record player \u2014 the 'wolf' everyone fears is a narrated fairy tale album.",
+      "craft_total": 6.88,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Satisfying payoff to the dual setup \u2014 the record established in scene 1 and the wolf sightings from the news report. GOB's complete meltdown about a children's record is in character, and the callback structure works well."
+    },
+    {
+      "index": 23,
+      "text": "Michael: 'I think it's just my son's Peter and the Wolf record.' Tobias: 'I thought that was a homefill.'",
+      "characters": [
+        "Michael",
+        "Tobias"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "The record is a model home decoration, so Tobias has presumably seen it displayed.",
+      "punchline": "Tobias uses 'homefill' \u2014 a malapropism combining 'model home' and 'filler' \u2014 suggesting he's aware it's decorative but has invented his own word for it.",
+      "craft_total": 7.17,
+      "impact_score": 6.67,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Minor word invention joke. 'Homefill' is an odd enough coinage to earn a chuckle, but it's not a standout moment."
+    },
+    {
+      "index": 24,
+      "text": "George Sr. from the attic: 'Yes, there is a wolf on the loose. His name is Oscar.'",
+      "characters": [
+        "George Sr."
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "running_gag"
+      ],
+      "setup": "Michael says people think there's a wolf on the loose because of George Sr.'s calls.",
+      "punchline": "George Sr. confirms the wolf metaphor \u2014 his twin brother Oscar is the 'wolf' circling his wife.",
+      "craft_total": 7.57,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Clever recontextualization \u2014 the literal wolf sightings are revealed to be George Sr.'s emotional metaphor made real. 'His name is Oscar' lands cleanly. Good economy."
+    },
+    {
+      "index": 25,
+      "text": "George Sr.: 'My back is in knots. I haven't had a massage since prison.' Then: 'Hope that was forced.'",
+      "characters": [
+        "George Sr.",
+        "Michael"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "deadpan_understatement"
+      ],
+      "setup": "George Sr. complains about his back and mentions his last massage was in prison.",
+      "punchline": "Michael immediately says 'Hope that was forced' \u2014 a blunt acknowledgment of prison sexual assault presented as deadpan fatherly concern.",
+      "craft_total": 7.65,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Three words ('Hope that was forced') do an enormous amount of work \u2014 implying the dark scenario, revealing Michael's bleak relationship with his father, and landing as dark comedy. The economy is exceptional."
+    },
+    {
+      "index": 26,
+      "text": "George Sr. wants a hot tub in the attic \u2014 'for water supply' and to boil bag-in-bag frozen meals in.",
+      "characters": [
+        "George Sr."
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "George Sr. is living secretly in the attic and says his back needs hydrotherapy.",
+      "punchline": "His actual planned uses for the hot tub are utility-based (water supply, cooking) \u2014 the luxury item is being repurposed as survival equipment by a formerly wealthy man.",
+      "craft_total": 7.4,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The rich-man-reduced-to-attic-living comedy is well-executed. The specific detail of boil-in-bag meals and 'water supply' shows creative absurdism applied to a character's desperate situation. Pays off brilliantly later when the tub bursts."
+    },
+    {
+      "index": 27,
+      "text": "Michael says 'We're done pampering ourselves in this family' \u2014 cut to him immediately calling to order the biggest air conditioner available for the banana stand.",
+      "characters": [
+        "Michael",
+        "Narrator"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "visual_gag"
+      ],
+      "setup": "Michael lectures George Sr. about the family being done with unnecessary luxuries.",
+      "punchline": "Immediate cut to Michael ordering an air conditioner \u2014 the exact hypocrisy he just condemned.",
+      "craft_total": 7.36,
+      "impact_score": 7.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Arrested Development juxtaposition cut \u2014 the comedy is entirely structural. Michael's hypocrisy is revealed with maximum efficiency by the edit itself. No dialogue needed for the punchline. The structure earns a high score because it's perfectly executed sitcom craft."
     },
     {
       "index": 28,
-      "text": "I CAN'T WEAR THIS. I LOOK LIKE I'M 16.",
+      "text": "Flashback to young Michael at the golf course: George Sr. shouts 'IT LOOKS LIKE MY BOY IS GONNA BE STICKING IT TO YOUR DAUGHTER, SITWELL. STICK IT TO HER. STICK IT TO HER.'",
+      "characters": [
+        "George Sr.",
+        "Narrator"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "The narrator explains Michael was always awkward around Sally because of his father's competitive attitude toward her father.",
+      "punchline": "The 'competition' was George Sr. sexually taunting Stan Sitwell about Michael dating his daughter \u2014 extreme, inappropriate parental behavior that scarred Michael's romantic life.",
+      "craft_total": 7.24,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This flashback recontextualizes Michael's entire awkward history with Sally \u2014 his childhood was poisoned by his father competitively shouting sexual taunts at her father. It's dark, absurd, and character-defining. The phrase 'sticking it to her' then echoes through the subsequent scene as Michael tries to say normal things."
+    },
+    {
+      "index": 29,
+      "text": "Adult Michael, after the flashback, desperately says: 'We're not gonna be sticking anything. Not-not gonna stick a thing.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "visual_gag",
+        "callback",
         "character_comedy"
       ],
-      "setup": "Michael gets a country club outfit",
-      "punchline": "The preppy clothes make the adult Michael look juvenile",
-      "craft_total": 6.75,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Visual gag about country club dress code making Michael look childish when trying to impress Sally."
-    },
-    {
-      "index": 29,
-      "text": "I DIDN'T EVEN WANNA HAVE LUNCH WITH HER IN THE FIRST PLACE.",
-      "characters": [
-        "Gob"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Gob is caught having lunch with Lucille 2",
-      "punchline": "He protests too much about not wanting to be there",
-      "craft_total": 6.87,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Shows Gob's embarrassment about his relationship with Lucille 2. His overprotesting reveals his feelings."
+      "setup": "George Sr.'s 'stick it to her' flashback has just played.",
+      "punchline": "Michael is so conditioned by his father's behavior that even as an adult he nervously disclaims 'sticking' when he just means 'should we stay?'",
+      "craft_total": 7.5,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent escalation of the 'stick' wordplay \u2014 Michael is so traumatized by his father's behavior that normal language triggers his anxiety. The desperation in 'not-not gonna stick a thing' is both sad and funny."
     },
     {
       "index": 30,
-      "text": "PROBABLY FORGOT HER OLD LADY GLASSES.",
+      "text": "Michael, working at the banana stand, trying to look impressive to Sally: 'No, no, no. Filling in for my son.'",
       "characters": [
-        "Gob"
+        "Michael"
       ],
       "joke_types": [
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Gob is reading the menu to Lucille 2",
-      "punchline": "He makes a cruel age-related comment about her eyesight",
+      "setup": "Michael is working the banana stand (a teenager's job) when Sally arrives.",
+      "punchline": "He explains he's filling in for his teenage son \u2014 which is actually worse than just working there normally. He's not even the regular banana stand employee.",
       "craft_total": 6.68,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "impact_score": 6.5,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Cruel but character-appropriate line showing Gob's inability to be genuinely romantic even when trying."
+      "explanation": "Good cringe comedy \u2014 Michael's attempt to explain makes him look worse. The gap between his self-image (successful businessman) and his reality (covering for his kid at a frozen banana stand) is the core joke."
     },
     {
       "index": 31,
-      "text": "I OVERDID IT.",
+      "text": "Michael calling Sally 'Sally Stickwell' instead of Sitwell.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Michael is around Sally and has been conditioned to associate her name with 'sticking.'",
+      "punchline": "His Freudian slip turns 'Sitwell' into 'Stickwell' \u2014 his father's 'stick it to her' obsession has linguistically contaminated his brain.",
+      "craft_total": 7.82,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the episode's single best joke. The payoff of the 'stick' running thread reaches its logical absurd apex \u2014 Michael's father has so thoroughly colonized his brain that a Freudian slip turns his love interest's name into 'Stickwell.' It's original, structurally perfect, deeply character-specific, maximally economical (a single word), and completely earned through multiple setups. Comparable to the best callbacks in the series."
+    },
+    {
+      "index": 32,
+      "text": "GOB to Sally: 'Because the guys wanted to stick it to me.' Michael: 'What? No. I never\u2014' GOB: 'Michael used to say that.' Michael: 'No, I didn't.' GOB: 'You said other stuff.' Michael: 'I absolutely did not say that.'",
+      "characters": [
+        "GOB",
+        "Michael",
+        "Sally"
+      ],
+      "joke_types": [
+        "callback",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael is mortified by the 'stick' association; GOB now publicly attributes 'stick it to me' language to Michael in front of Sally.",
+      "punchline": "GOB's casual implication that Michael talked about Sally in sexual terms \u2014 and Michael's increasingly frantic denials \u2014 escalate the cringe. The exchange ends ambiguously: 'You said other stuff.'",
+      "craft_total": 7.28,
+      "impact_score": 7.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The 'stick' gag continues to pay dividends. GOB weaponizing Michael's embarrassment (perhaps deliberately, perhaps not) is excellent brotherly cringe. 'You said other stuff' is a perfect non-answer that's somehow more damning than specifics."
+    },
+    {
+      "index": 33,
+      "text": "GOB: 'Are you still doing your little tricks?' \u2014 then squirts Sally with lighter fluid and explains there's no flint. 'But still, where did the lighter fluid come from?'",
+      "characters": [
+        "GOB",
+        "Sally"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "physical_slapstick"
+      ],
+      "setup": "Sally politely asks if GOB is still doing magic tricks.",
+      "punchline": "GOB squirts her with lighter fluid \u2014 his trick failed but the lighter fluid still deployed. The final question ('where did it come from?') is actually funny because it's a real magic question answered with incompetence.",
+      "craft_total": 7.66,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good GOB incompetence comedy \u2014 his magic trick injures/inconveniences an innocent bystander while the mechanics of the failure are absurdly explained. 'Where did the lighter fluid come from?' subverts the magic question (how did it disappear?) with the failure version."
+    },
+    {
+      "index": 34,
+      "text": "GOB: 'Smooth, Michael, like her father's head, chest, arms, legs and ass.' Michael: 'What are you talking about?' GOB: 'He's hairless, Michael. It's a condition.'",
+      "characters": [
+        "GOB",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Michael has just fumbled his goodbye with Sally.",
+      "punchline": "GOB's 'smooth' insult cascades into a full-body inventory of Stan Sitwell's alopecia \u2014 his hatred of Sitwell combined with detailed knowledge of his body hair situation is deeply weird.",
+      "craft_total": 7.83,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Stan Sitwell's alopecia is a recurring Arrested Development gag. GOB's comprehensive body-hair inventory is a funny escalation ('head, chest, arms, legs AND ass'), and 'He's hairless, Michael. It's a condition' is delivered with perfect condescension as if Michael should know this already."
+    },
+    {
+      "index": 35,
+      "text": "GOB: 'I hate the guy, but at least he's got...' Michael: 'Satiny and smooth probably.' GOB: 'I'm just different than you, GOB.'",
+      "characters": [
+        "GOB",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "They're discussing Stan Sitwell's full-body hairlessness.",
+      "punchline": "Michael finishes GOB's sentence with 'Satiny and smooth probably' \u2014 then appears to accidentally call himself GOB.",
+      "craft_total": 7.08,
+      "impact_score": 6.5,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'satiny and smooth' beat is funny as continuation of the hairlessness gag. The accidental self-name confusion is a mild character beat. Not the strongest moment in the sequence."
+    },
+    {
+      "index": 36,
+      "text": "Michael reveals GOB's high school scheme: siphoning gas from a girl's car, then showing up to say 'Car troubles?' and driving her in his car.",
+      "characters": [
+        "Michael",
+        "GOB"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Michael says he won't take advantage of Sally the way GOB takes advantage of women.",
+      "punchline": "The specific con is revealed: GOB would drain their gas tank, then appear as the hero. It's simultaneously a pickup technique and a crime.",
+      "craft_total": 7.64,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Excellent character backstory joke \u2014 this is exactly what GOB would do. The specific mechanics of the scheme (you have to drain the tank first, then show up) makes it funnier. Also sets up the later fireball callback."
+    },
+    {
+      "index": 37,
+      "text": "GOB: 'It's called taking advantage. It's what gets you ahead in life.' Michael: 'Like you did with our biggest shareholder, Lucille Austero.'",
+      "characters": [
+        "Michael",
+        "GOB"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "callback"
+      ],
+      "setup": "GOB defends his siphoning scheme as getting ahead.",
+      "punchline": "Michael immediately applies GOB's own logic to his relationship with Lucille 2 \u2014 revealing GOB uses the same predatory strategy on wealthy older women.",
+      "craft_total": 7.73,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Clean structural reversal \u2014 GOB's own philosophy immediately applied to his romantic situation. The specificity of 'our biggest shareholder' adds a business dimension that makes it funnier."
+    },
+    {
+      "index": 38,
+      "text": "Cut to Lucille 2's apartment: 'Shall I put the Posturepedic in the down position? Elevate the knees this time?'",
+      "characters": [
+        "Lucille 2"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "visual_gag"
+      ],
+      "setup": "GOB claims his relationship with Lucille 2 is 'a one-time thing' and 'it's over.'",
+      "punchline": "Immediate cut to Lucille 2's bedroom, where she's asking about adjusting the mattress position \u2014 implying a very established domestic/sexual routine.",
+      "craft_total": 7.78,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The cut itself is the punchline \u2014 GOB's denial is immediately contradicted by visual evidence of deep domestic familiarity. 'Elevate the knees this time' suggests a level of established routine that's both funny and slightly sad."
+    },
+    {
+      "index": 39,
+      "text": "GOB: 'You just let Sally Sitwell slip away right when she was ready to go.' \u2014 then: 'You were scared.' Michael: 'What are you talking about?' Buster falls off his Segway or stumbles. 'I hurt my ankle yesterday shooting hoops or something.'",
+      "characters": [
+        "GOB",
+        "Michael",
+        "Buster"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "physical_slapstick"
+      ],
+      "setup": "GOB is psychoanalyzing Michael's romantic cowardice.",
+      "punchline": "Buster's injury interruption \u2014 including the vague 'shooting hoops or something' \u2014 is classic Buster uselessness.",
+      "craft_total": 6.21,
+      "impact_score": 6.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Shooting hoops or something' is a mild character beat \u2014 Buster doing sporty things unconvincingly. Not a highlight but functional physical comedy that uses his character well."
+    },
+    {
+      "index": 40,
+      "text": "Oscar asks about his pants: 'Lupe washed them, and they sprouted. I threw them out.' / 'Well, that puts a lot of pressure on this pair.'",
+      "characters": [
+        "Oscar",
+        "Lucille"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Oscar asks where his other pair of pants is (Lucille already mocked his 'two pair of pants').",
+      "punchline": "The pants sprouted (grew plants?) because Lupe washed them \u2014 an absurd detail that makes Oscar's poverty even more pathetic. 'That puts a lot of pressure on this pair' is the perfectly deadpan response.",
+      "craft_total": 7.74,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The pants sprouting is a wonderfully specific absurd detail \u2014 Oscar's clothes are apparently so old they contain dormant seeds. 'That puts a lot of pressure on this pair' is an understatement delivering maximum comedy. The callback to Lucille's pants joke lands cleanly."
+    },
+    {
+      "index": 41,
+      "text": "Lucille on the fur outfit: 'I think this one's good. Looks like it would've put up a fight.' / 'I put up one to get it.'",
+      "characters": [
+        "Lucille",
+        "Oscar"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Lucille and Oscar are evaluating a fur coat she wants to wear to attract Frank Wrench at the auction.",
+      "punchline": "The fur 'looks like it would have put up a fight' \u2014 darkly implying the animal was notably combative \u2014 and Oscar confirms he fought for it, a dark boast about obtaining fur.",
+      "craft_total": 7.02,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Mildly dark fur joke playing on Lucille's callousness. The escalation from 'looks like it fought' to 'I put up one to get it' is slightly funny but not particularly sharp."
+    },
+    {
+      "index": 42,
+      "text": "Michael to Lucille re: the auction: 'Start at five grand. If there are other bidders, back off gracefully. Shout out, I get her 364 days a year for free, or something.' Lucille: 'You're not gonna hear that phrase.'",
+      "characters": [
+        "Michael",
+        "Lucille"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael has agreed to bid on Lucille and is giving instructions.",
+      "punchline": "Lucille's cold correction \u2014 'you're not gonna hear that phrase' \u2014 rejects any notion that their relationship is warm or voluntary. The implication: Michael does NOT willingly spend time with her.",
+      "craft_total": 6.94,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sharp Lucille self-awareness \u2014 she rejects the premise that Michael spends voluntary time with her, cutting off his attempt at a tender auction line. The coldness is the joke and it's well-delivered."
+    },
+    {
+      "index": 43,
+      "text": "Narrator: 'Tobias came across a flyer that promised to improve both his masculine self-image and his financial standing. They're literally blue, not sad.'",
+      "characters": [
+        "Narrator",
+        "Tobias"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "wordplay_pun"
+      ],
+      "setup": "Tobias, fired by the Blue Man Group, needs both money and masculine validation.",
+      "punchline": "The narrator clarifies the Blue Man Group members 'are literally blue, not sad' \u2014 a disambiguation that acknowledges Tobias might confuse the idiom.",
+      "craft_total": 7.6,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The narrator's dry clarification is a nice meta-beat \u2014 explaining the obvious as if Tobias needs it. Part of the show's running joke about Tobias's emotional investment in a literally-colored performance group."
+    },
+    {
+      "index": 44,
+      "text": "Michael shows up at the country club and is forced to wear the club jacket \u2014 'I can't wear this. I look like I'm 16.' \u2014 then Sally arrives.",
+      "characters": [
+        "Michael",
+        "Sally"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "visual_gag"
+      ],
+      "setup": "Michael's 'accidental encounter' plan requires him to look like a suave adult.",
+      "punchline": "He's forced into a child-sized blazer (or one that makes him look teenage) right as his love interest arrives \u2014 maximum humiliation.",
+      "craft_total": 6.66,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic romantic comedy embarrassment setup, executed competently. The 'I look like I'm 16' line is funny for Michael's vanity. The timing of Sally's arrival maximizes the cringe."
+    },
+    {
+      "index": 45,
+      "text": "GOB orders from the club menu: 'Fried cheese with club sauce.' / 'Popcorn shrimp with club sauce.' / 'Chicken fingers... with spicy club sauce.' / 'Stop it. You're making me dizzy.'",
+      "characters": [
+        "GOB",
+        "Lucille 2"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Lucille 2 is reading GOB the menu because he apparently can't/won't read it himself.",
+      "punchline": "Every item has 'club sauce' \u2014 a made-up condiment applied to everything \u2014 and GOB's reaction ('you're making me dizzy') is a non-sequitur that suggests the food descriptions are overwhelming him.",
+      "craft_total": 7.45,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The repetition of 'club sauce' builds absurdly \u2014 it's a running gag within a single scene. GOB being read to (and getting dizzy from food descriptions) is great character comedy that reveals his infantilizing relationship with Lucille 2 and his own incapacity."
+    },
+    {
+      "index": 46,
+      "text": "GOB: 'Oh, stop it. You're making me dizzy.' / (Lucille 2 reads 'Chicken fingers with spicy club sauce') / GOB: 'No! I mean stop it.'",
+      "characters": [
+        "GOB",
+        "Lucille 2"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "GOB seems overwhelmed by the menu reading",
+      "punchline": "He says 'stop it' but means 'stop making me want food' \u2014 then has to clarify he also means 'stop reading,' revealing he's simultaneously helpless and hungry",
+      "craft_total": 7.12,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A small character beat that reveals GOB's relationship with Lucille 2 through food \u2014 he's genuinely swept up in her attentions. The correction 'No! I mean stop it' is funnily redundant."
+    },
+    {
+      "index": 47,
+      "text": "GOB: 'I didn't even wanna have lunch with her in the first place. I just... or... I ju...' \u2014 trails off into silence.",
+      "characters": [
+        "GOB"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "awkward_silence"
+      ],
+      "setup": "GOB has been caught having a cozy lunch with Lucille 2, who reads him the menu.",
+      "punchline": "His denial collapses mid-sentence into incoherence \u2014 he can't even construct a plausible cover story.",
+      "craft_total": 7.02,
+      "impact_score": 6.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "GOB's verbal self-destruction is funny and humanizing. The trailing-off is the punchline \u2014 he's caught and he knows it. Character integration is high because only GOB would manage to incriminate himself this completely with a denial."
+    },
+    {
+      "index": 48,
+      "text": "Narrator: 'And so lunch continued with both Bluth boys trying to prove they weren't interested in the women they were interested in.'",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "observational",
+        "irony_sarcasm"
+      ],
+      "setup": "Both Michael and GOB have been caught in obvious lies about their feelings for Sally and Lucille 2 respectively.",
+      "punchline": "The narrator summarizes the entire subplot with perfect ironic clarity \u2014 the comedy is that both men are performing indifference badly.",
+      "craft_total": 7.95,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The narrator's editorial voice is one of Arrested Development's best tools. This line does the work of summarizing and ironizing the scene in one sentence. The parallel construction ('both Bluth boys') is elegant."
+    },
+    {
+      "index": 49,
+      "text": "Sally at lunch: 'Did you have too much club sauce on your calamari?' / GOB: 'Read me the desserts.'",
+      "characters": [
+        "Sally",
+        "GOB",
+        "Lucille 2"
+      ],
+      "joke_types": [
+        "running_gag",
+        "character_comedy"
+      ],
+      "setup": "The 'club sauce' running gag within the scene continues.",
+      "punchline": "GOB, losing the thread of the adult conversation, demands Lucille 2 read him the dessert menu \u2014 confirming his domestically dependent relationship with her.",
+      "craft_total": 6.88,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Continuation of the menu-reading relationship gag. GOB's dismissal of the adult conversation to focus on dessert is funny and in-character."
+    },
+    {
+      "index": 50,
+      "text": "Lucille 2 can't read the dessert menu. GOB: 'She P... probably forgot her old lady glasses.'",
+      "characters": [
+        "GOB"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Lucille 2 seems unable to read the dessert menu",
+      "punchline": "GOB's cover story \u2014 she forgot her 'old lady glasses' \u2014 is both insulting and a transparent attempt to minimize her condition (she has vertigo, or something more serious is implied)",
+      "craft_total": 6.29,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke is in GOB's fumbling protectiveness \u2014 he insults Lucille 2 while defending her. 'Old lady glasses' is a casually cruel characterization. The 'She P...' trailing off before he pivots reveals he's improvising."
+    },
+    {
+      "index": 51,
+      "text": "Stan Sitwell reading the dessert menu to Lucille 2: 'An assortment of ice creams and sorbets.' / 'You all right with him reading to your girl?' / 'Not my girl.'",
+      "characters": [
+        "Stan Sitwell",
+        "Michael",
+        "GOB"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "GOB demanded Lucille 2 read him the menu; now Stan Sitwell has taken over reading to her.",
+      "punchline": "The menu-reading dynamic has transferred to a new character \u2014 now both Lucille 2 and GOB are being read to, and Michael's 'Not my girl' denial mirrors GOB's.",
+      "craft_total": 6.53,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The menu-reading gag spreads to a third character while both brothers perform simultaneous denial. The parallel structure is satisfying and the escalation of who gets read to is absurd."
+    },
+    {
+      "index": 52,
+      "text": "Michael's credit card is declined at the club \u2014 'In fact, the increased activity on Michael's card was his father's.' \u2014 cut to George Sr. having a hot tub installed in the attic.",
+      "characters": [
+        "Michael",
+        "Narrator",
+        "George Sr."
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "callback"
+      ],
+      "setup": "Michael's card is declined while trying to impress Sally at the club.",
+      "punchline": "George Sr. bought a hot tub on Michael's credit card \u2014 the specific luxury item Michael refused him just scenes ago.",
+      "craft_total": 7.58,
+      "impact_score": 7.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Strong structural payoff \u2014 the thing Michael explicitly refused funds for has been purchased on his credit card, humiliating him in front of Sally. The cut from denial to reveal is classically executed."
+    },
+    {
+      "index": 53,
+      "text": "'Somebody order a case of bag & boil frozen dinners?' \u2014 the delivery arrives at the attic hot tub installation.",
+      "characters": [
+        "George Sr.",
+        "delivery person"
+      ],
+      "joke_types": [
+        "callback",
+        "absurdist"
+      ],
+      "setup": "George Sr. planned to use the hot tub for cooking bag-in-bag meals.",
+      "punchline": "He actually ordered an entire case \u2014 confirming he intends to run a full cooking operation in the attic hot tub.",
+      "craft_total": 7.33,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good callback with escalation \u2014 the plan was funny, the execution is funnier. A case of boil-in-bag frozen dinners confirms George Sr. has fully committed to attic hot tub cuisine."
+    },
+    {
+      "index": 54,
+      "text": "Michael at the club: 'Can you put this on my mother's card?' Clerk: 'Your mother? No. She's a pool member only.' / Sally: 'You'll excuse me if my tone is not polite, but this is more polite than she has ever talked to me.'",
+      "characters": [
+        "Michael",
+        "Sally",
+        "club clerk"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael's card is declined and he desperately tries his mother's membership.",
+      "punchline": "The clerk's tone is not polite; Sally notes it's still more polite than Lucille has ever spoken to her \u2014 a damning character indictment of Lucille delivered as casual aside.",
+      "craft_total": 7.66,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Economical character joke \u2014 Lucille's universal rudeness is exposed through Sally's comparison. The clerk's rude tone as a 'polite' baseline for Lucille is a nicely calibrated insult."
+    },
+    {
+      "index": 55,
+      "text": "George Sr. has installed the hot tub in the attic; it's now cooking teriyaki chicken: 'I tried to drink some of the water, and it was too hot, and it tasted like soy sauce. I think the teriyaki chicken burst.'",
+      "characters": [
+        "George Sr.",
+        "Michael"
+      ],
+      "joke_types": [
+        "absurdist",
+        "escalation"
+      ],
+      "setup": "George Sr. bought a hot tub to use as a water supply and for cooking boil-in-bag meals.",
+      "punchline": "The hot tub is now a teriyaki disaster \u2014 exploded bag-in-bag chicken has contaminated the water, and George Sr. tried to drink it.",
+      "craft_total": 8.04,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the perfect payoff to multiple setups \u2014 the hot tub plan, the bag meals, the attic living. 'I think the teriyaki chicken burst' is an exceptional line \u2014 the casual uncertainty ('I think') combined with the specific flavor detail ('soy sauce') is both visually funny and absurdly plausible given the established setup. One of the episode's best escalations."
+    },
+    {
+      "index": 56,
+      "text": "Michael: 'That's why people typically don't cook in these things or install them in attics.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "George Sr.'s hot tub has become a teriyaki cooking disaster.",
+      "punchline": "Michael's response is to calmly explain the TWO errors simultaneously \u2014 neither cooking in hot tubs NOR installing them in attics \u2014 delivered as if he's correcting a minor procedural mistake.",
+      "craft_total": 7.63,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The double correction is perfectly economical \u2014 Michael addresses both absurd violations (cooking in a hot tub AND the attic installation) in one mild sentence. His tone of patient corrective explanation in the face of chaos is a great Michael character beat."
+    },
+    {
+      "index": 57,
+      "text": "Michael: 'Is that veal marsala stuck in the intake?' George Sr.: 'They all look so good on the boxes.'",
+      "characters": [
+        "Michael",
+        "George Sr."
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "The hot tub is malfunctioning from boil-in-bag meals.",
+      "punchline": "Multiple varieties of frozen meals have been deployed in the hot tub; George Sr.'s defense is that the packaging was appetizing \u2014 he was seduced by box art.",
+      "craft_total": 7.64,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'They all look so good on the boxes' is an exceptional line \u2014 it's the defense of a child being caught with a candy stash, delivered by a formerly powerful patriarch who has ruined a hot tub with frozen entr\u00e9es. The gap between who George Sr. was and who he is now is crystallized here."
+    },
+    {
+      "index": 58,
+      "text": "George Sr.: 'You know, it's good you backed off Sally. I don't need that guy saying his daughter's sticking it to my loser son.'",
+      "characters": [
+        "George Sr.",
+        "Michael"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "The 'stick it to her' running gag; George Sr. is obliviously reinjecting the same traumatic phrasing.",
+      "punchline": "George Sr. uses the same 'sticking it' language that has haunted Michael's romantic life \u2014 completely unaware he's the source of Michael's problems, and now calling him a 'loser son.'",
+      "craft_total": 7.7,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This closes the running 'stick' gag with a devastating revelation \u2014 George Sr. is still doing the exact thing that damaged Michael, while simultaneously insulting him. The lack of self-awareness is perfect character work, and 'loser son' is a casually cruel aside that reveals their entire dynamic."
+    },
+    {
+      "index": 59,
+      "text": "Michael: 'The reason I never went after her is because you're always pushing me. But now that I know that I don't have your approval, I think I'll finally go for it.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "George Sr. has just called Michael a loser and implied he'd embarrass the family by dating Sally.",
+      "punchline": "Michael's logic inverts \u2014 he's now motivated to pursue Sally precisely BECAUSE he doesn't have his father's approval. The psychology is dysfunctional in a very recognizable way.",
+      "craft_total": 7.67,
+      "impact_score": 7.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sharp character psychology joke \u2014 Michael's anti-father impulse means he needs parental disapproval to act. It's also a meta-joke about the show: the Bluth children are all defined by their relationship to George Sr."
+    },
+    {
+      "index": 60,
+      "text": "George Sr., surrounded by a teriyaki-smelling attic hot tub disaster: 'This isn't turning into the party hangout I hoped.'",
       "characters": [
         "George Sr."
       ],
       "joke_types": [
         "deadpan_understatement",
-        "physical_slapstick"
+        "character_comedy"
       ],
-      "setup": "Michael asks what George Sr. did to max out the credit card",
-      "punchline": "Massive understatement while sitting in a hot tub disaster in an attic",
-      "craft_total": 6.78,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "The attic hot tub has exploded with various frozen meals and George Sr. is suffering the consequences.",
+      "punchline": "His assessment is that it's 'not turning into the party hangout he hoped' \u2014 the gap between his vision (glamorous attic pool party) and reality (teriyaki disaster zone) is enormous.",
+      "craft_total": 8.31,
+      "impact_score": 8.25,
+      "quotability": 8.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan understatement. Two words that completely fail to capture the absurd disaster he's created."
+      "explanation": "One of the episode's best understated lines. George Sr. had a genuine vision for an attic party hangout with a hot tub, and 'isn't turning into the party hangout I hoped' is a masterpiece of understatement applied to utter disaster. The line only works because of everything that preceded it \u2014 the setup is earned."
     },
     {
-      "index": 32,
-      "text": "I TRIED TO DRINK SOME OF THE WATER, AND IT WAS TOO HOT, AND IT TASTED LIKE SOY SAUCE.",
-      "characters": [
-        "George Sr."
-      ],
-      "joke_types": [
-        "absurdist",
-        "physical_slapstick"
-      ],
-      "setup": "George Sr. installed a hot tub in the attic",
-      "punchline": "He tried to drink the cooking/bathing water and got burned",
-      "craft_total": 7.27,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Gross and absurd consequence of his terrible hot tub cooking plan. The casual delivery makes it funnier."
-    },
-    {
-      "index": 33,
-      "text": "DID YOU STICK IT TO HER?",
-      "characters": [
-        "George Sr."
-      ],
-      "joke_types": [
-        "callback"
-      ],
-      "setup": "George Sr. asks about Michael's encounter with Sally",
-      "punchline": "Uses the same crude language that traumatized Michael as a child",
-      "craft_total": 6.91,
-      "impact_score": 6.67,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Callback to the childhood trauma, showing George Sr. hasn't learned anything and still talks this way."
-    },
-    {
-      "index": 34,
-      "text": "Is that veal marsala stuck in the intake?",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "escalation"
-      ],
-      "setup": "Hot tub disasters continuing",
-      "punchline": "Fancy frozen dinner clogging the hot tub machinery",
-      "craft_total": 7.04,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation of the cooking disaster with specific food item adding to the absurdity."
-    },
-    {
-      "index": 35,
-      "text": "YOU KNOW SOMETHING? THE REASON I NEVER WENT AFTER HER IS BECAUSE YOU'RE ALWAYS PUSHING ME.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "setup_punchline"
-      ],
-      "setup": "George Sr. continues his crude comments about Sally",
-      "punchline": "Michael realizes he's been rebelling against his father's pushing by not pursuing her",
-      "craft_total": 7.31,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character revelation showing Michael's psychology and his complicated relationship with his father's influence."
-    },
-    {
-      "index": 36,
-      "text": "BUT, YOU KNOW, I DON'T KNOW. SOMEBODY'S GOTTA BURN, RIGHT?",
+      "index": 61,
+      "text": "George Michael: 'I was thinking Eminem for a while. But everyone is gonna be burning Eminem.' / 'And then I got this Pat Boone album, but the guy is Christian. But somebody's gotta burn, right?'",
       "characters": [
         "George Michael"
       ],
       "joke_types": [
-        "character_comedy",
-        "dark_subversive"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "George Michael can't decide what music to burn",
-      "punchline": "He decides someone has to be sacrificed regardless of guilt",
-      "craft_total": 7.47,
-      "impact_score": 7.5,
+      "setup": "George Michael is selecting which artist's music to burn at Ann's Christian Music Bonfire.",
+      "punchline": "His dilemma is that Eminem is 'too obvious' for burning, so he got Pat Boone \u2014 a Christian artist \u2014 for burning. His shrug ('somebody's gotta burn') is the perfect teenage logic.",
+      "craft_total": 7.83,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Beautifully observed teenage logic \u2014 George Michael has approached the religious music burning with the same contrarian consumerist logic he'd apply to, say, which band to like. Burning a Christian artist at a Christian bonfire because 'somebody's gotta burn' is absurdist gold with real character specificity."
+    },
+    {
+      "index": 62,
+      "text": "Buster arrives at the house with a tranquilizer rifle: 'I got some looks on the bus 'cause of this.'",
+      "characters": [
+        "Buster"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Buster plans to catch the 'wolf' for the reward money so he can bid on Lucille at the auction.",
+      "punchline": "Buster's only concern about carrying a large tranquilizer rifle on public transportation is that he 'got some looks' \u2014 a massive understatement of the obvious social problem.",
+      "craft_total": 8.13,
+      "impact_score": 8.17,
       "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark humor showing George Michael's innocent acceptance of illogical persecution. Very quotable line."
+      "explanation": "Excellent Buster character joke \u2014 his complete social obliviousness means a tranquilizer rifle on the bus produces only mild self-consciousness ('got some looks'). The economy is exceptional \u2014 three words convey an enormous amount of character."
     },
     {
-      "index": 37,
-      "text": "I GOT SOME LOOKS ON THE BUS 'CAUSE OF THIS.",
+      "index": 63,
+      "text": "Michael asks if there's a waiting period for the tranquilizer rifle. Buster: 'It turns out there is. Two weeks?' / 'There is a gun show loophole. What timing, huh? Right out back they were having one.'",
       "characters": [
-        "Tobias"
+        "Buster",
+        "Michael"
       ],
       "joke_types": [
-        "visual_gag",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Tobias enters with a large tranquilizer gun",
-      "punchline": "He rode public transportation while carrying what looks like a weapon",
-      "craft_total": 7.51,
-      "impact_score": 7.5,
+      "setup": "Buster somehow has acquired a tranquilizer rifle.",
+      "punchline": "He circumvented the waiting period via the gun show loophole \u2014 a real political loophole deployed in an absurd context. The deadpan 'What timing, huh?' suggests this was pure luck rather than planning.",
+      "craft_total": 7.71,
+      "impact_score": 7.67,
       "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good visual comedy imagining Tobias casually carrying a large gun on public transport, oblivious to how threatening he looks."
+      "explanation": "The gun show loophole joke is sharp political satire wrapped in absurdist character comedy \u2014 Buster accidentally executed a real legislative workaround with no understanding of what he did. 'What timing, huh?' is the perfect Buster tone of guileless coincidence. The loophole joke also connects thematically to the Moses Taylor gun rights protest subplot."
     },
     {
-      "index": 38,
-      "text": "What timing, huh? I mean, right out back they were having one.",
+      "index": 64,
+      "text": "GOB's 'Car troubles?' scheme re-enacted \u2014 'Probably shouldn't do the fireball when you siphon the gas.' / 'I guess this flint's still got a little life left in it, huh?'",
       "characters": [
-        "Tobias"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "absurdist"
-      ],
-      "setup": "Tobias mentioning the gun show loophole",
-      "punchline": "Conveniently there was a gun show happening right there",
-      "craft_total": 6.51,
-      "impact_score": 6.25,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good absurdist coincidence showing how easy it is to circumvent gun laws in the show's universe."
-    },
-    {
-      "index": 39,
-      "text": "CAR TROUBLES?",
-      "characters": [
-        "Gob"
+        "GOB",
+        "Michael"
       ],
       "joke_types": [
         "callback",
+        "dark_subversive"
+      ],
+      "setup": "GOB is going to siphon Sally's gas and 'rescue' her with Michael's Corvette.",
+      "punchline": "GOB accidentally ignites the gas with his lighter \u2014 the same lighter that earlier sprayed fluid on Sally with 'no flint.' The flint apparently works intermittently, making this a running equipment-failure gag.",
+      "craft_total": 8.15,
+      "impact_score": 8.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent callback payoff \u2014 the flint that 'wasn't in' at the banana stand is now intermittently working at the worst possible moment. The structural symmetry between the two scenes is beautifully engineered, and the escalation from 'sprays lighter fluid' to 'blows up a car' is perfectly calibrated."
+    },
+    {
+      "index": 65,
+      "text": "Moses Taylor at the park: 'Sorry I'm late. Fans. Sometimes it takes a while to jar their memories.'",
+      "characters": [
+        "Moses Taylor"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Moses Taylor (a moderately famous 'People's Choice nominated' actor) arrives late to his date with Lindsay.",
+      "punchline": "His fans need to have their memories 'jarred' \u2014 he's so marginally famous that people need a moment to recognize him. He presents this as a normal celebrity problem.",
+      "craft_total": 7.75,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Precisely observed C-list celebrity comedy \u2014 'jar their memories' captures the specific humiliation of being almost-but-not-quite famous. He can't be ignored (fans exist) but also can't be immediately recognized. The delivery as a normal celebrity complaint is perfect."
+    },
+    {
+      "index": 66,
+      "text": "Moses Taylor: 'Nice fur. You know, there are some nuts out there who'd wanna throw red paint all over you. Wait a minute. I think there's one right over there.'",
+      "characters": [
+        "Moses Taylor",
+        "Lindsay F\u00fcnke"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "irony_sarcasm"
+      ],
+      "setup": "Moses compliments the fur and mentions anti-fur activists who throw paint",
+      "punchline": "He spots what turns out to be Tobias with a tranquilizer gun \u2014 who he mistakes for a paint-throwing activist",
+      "craft_total": 7.14,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A decent setup for the physical comedy that follows. The turn from polite observation to 'I think there's one right over there' is a functional comedy beat."
+    },
+    {
+      "index": 67,
+      "text": "Lindsay's heel breaks, Tobias shoots her with a tranquilizer dart trying to 'catch the wolf,' Moses Taylor runs away \u2014 'I'm being saved by Frank Wrench. No, you're not.'",
+      "characters": [
+        "Lindsay",
+        "Tobias",
+        "Moses Taylor"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "escalation"
+      ],
+      "setup": "Tobias is hunting the 'wolf' with a tranquilizer gun; Lindsay is on a date with Moses Taylor in the park; red paint is thrown at Lindsay's fur.",
+      "punchline": "The chaos converges: heel breaks, dart flies, famous person flees. Lindsay thinks she's being heroically rescued by 'Frank Wrench' but he's just running away from the scandal.",
+      "craft_total": 7.62,
+      "impact_score": 7.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Complex physical comedy scene where multiple plot threads collide simultaneously \u2014 gun loophole, wolf hunt, date, fur protest, celebrity scandal. The narrator's 'No, you're not' correcting Lindsay's romantic delusion is the perfect button."
+    },
+    {
+      "index": 68,
+      "text": "Lindsay, dazed: 'I'm being saved by Frank Wrench.' Narrator: 'No, you're not.'",
+      "characters": [
+        "Lindsay F\u00fcnke",
+        "Narrator"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Lindsay is being helped up, believes Moses Taylor (Frank Wrench) is heroically saving her",
+      "punchline": "The narrator flatly corrects her: 'No, you're not' \u2014 Moses is just trying to get away from the scandal",
+      "craft_total": 7.8,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The narrator's flat 'No, you're not' is a masterclass in comedic economy. Two words demolish Lindsay's romantic fantasy while also providing the exposition. The AD narrator's willingness to directly contradict a character is one of the show's signature moves, and this is an excellent execution."
+    },
+    {
+      "index": 69,
+      "text": "Narrator reveals Moses Taylor was 'just trying to distance himself from the outlandish Moses Taylor Hunts People scandal that had been started by a rabid anti-gun fanatic.'",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
         "setup_punchline"
       ],
-      "setup": "Gob sabotages Sally's car and shows up to help",
-      "punchline": "Uses the exact smooth line Michael predicted he would say",
-      "craft_total": 7.93,
+      "setup": "Moses Taylor fled the scene of Lindsay getting shot with a tranquilizer dart.",
+      "punchline": "The scandal of 'Moses Taylor Hunts People' \u2014 started by Lindsay's shouting at the protest \u2014 is now being accidentally confirmed by this exact scene where he's fleeing Tobias shooting Lindsay.",
+      "craft_total": 7.89,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is a sophisticated structural joke \u2014 the chaos Lindsay caused with her protest (accusing Taylor of hunting people) is now being visually confirmed by an unrelated accident. Reality has conformed to her absurd accusation. The irony is multi-layered and rewards attention."
+    },
+    {
+      "index": 70,
+      "text": "Narrator: 'Michael did look heroic as he went to put out the fire. Unfortunately, Sally arrived too late to see him that way.'",
+      "characters": [
+        "Narrator",
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "GOB blew up Sally's car; Michael heroically rushed to put out the fire.",
+      "punchline": "Michael's one moment of genuine heroism is unseen by the person who needed to see it \u2014 the narrator confirms the tragedy with deadpan timing.",
+      "craft_total": 7.61,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The narrator's dry announcement of Michael's comedic misfortune ('Unfortunately, Sally arrived too late to see him that way') is perfectly calibrated irony. The universe conspires against Michael's one good moment."
+    },
+    {
+      "index": 71,
+      "text": "Sally arrives at the burning car. Michael's explanation: 'Car trouble.'",
+      "characters": [
+        "Michael",
+        "Sally"
+      ],
+      "joke_types": [
+        "callback",
+        "deadpan_understatement"
+      ],
+      "setup": "GOB's entire siphoning scheme was built around the 'Car troubles?' pickup line; the scheme exploded the car.",
+      "punchline": "Michael's only explanation to Sally for the burning car is 'Car trouble' \u2014 the phrase that started the whole scheme, now delivered as a profound understatement of disaster.",
+      "craft_total": 7.83,
       "impact_score": 8.0,
       "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect callback payoff. Gob says exactly what Michael predicted, confirming his predictable sleaziness. Extremely quotable."
+      "explanation": "This is the episode's best callback and one of its highest-scoring jokes. The phrase 'car trouble' has been carefully set up as GOB's pickup scheme hook ('Car troubles?'). Now it returns as Michael's only explanation for a catastrophically destroyed vehicle \u2014 maximum economy (two words), perfect structural payoff across the entire episode's B-plot, and deeply earned through multiple layers of setup. The two words do the work of a full scene."
     },
     {
-      "index": 40,
-      "text": "I'M BEING SAVED BY FRANK WRENCH.",
+      "index": 72,
+      "text": "GOB to Lucille 2: 'No! I was ashamed to be seen with you. I like being with you.' \u2014 then hears a noise and says: 'Sshh. I thought I heard my mom.'",
       "characters": [
-        "Lindsay"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Lindsay falls and Moses Taylor runs away",
-      "punchline": "She thinks the actor running away is heroically saving her",
-      "craft_total": 6.72,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good irony showing Lindsay's delusion. She misreads his cowardly retreat as heroic rescue."
-    },
-    {
-      "index": 41,
-      "text": "CAR TROUBLE.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "callback",
-        "irony_sarcasm"
-      ],
-      "setup": "Sally finds Michael after Gob's plan backfired spectacularly",
-      "punchline": "Michael uses Gob's smooth line after the car exploded",
-      "craft_total": 8.11,
-      "impact_score": 8.33,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Excellent callback that becomes ironic - the line is literally true now but delivered after disaster rather than smooth sabotage."
-    },
-    {
-      "index": 42,
-      "text": "NO! I WAS ASHAMED TO BE SEEN WITH YOU. I LIKE BEING WITH YOU.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "misdirection"
-      ],
-      "setup": "Sally accuses Michael of being ashamed to be with her",
-      "punchline": "Michael clarifies he likes her privately but is ashamed publicly",
-      "craft_total": 7.39,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Michael's honesty and awkward attempts to explain his feelings."
-    },
-    {
-      "index": 43,
-      "text": "I'M SORRY, SIR. YOUR BLUE CROSS BLUE SHIELD WAS DENIED. WE'VE CALLED YOUR MOTHER.",
-      "characters": [
-        "Hospital Worker"
+        "GOB",
+        "Lucille 2"
       ],
       "joke_types": [
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Tobias is injured and needs medical care",
-      "punchline": "His insurance is denied and they called his mother like he's a child",
-      "craft_total": 6.9,
-      "impact_score": 7.0,
+      "setup": "Lucille 2 confronts GOB about being ashamed of her at lunch.",
+      "punchline": "GOB makes the distinction ('ashamed to be SEEN, not to be WITH') \u2014 which is both honest and insulting \u2014 then immediately reverts to child-mode upon thinking he heard his mom.",
+      "craft_total": 8.51,
+      "impact_score": 8.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Exceptional character moment with two layers of comedy landing simultaneously. First: GOB's 'correction' ('ashamed to be SEEN, not to BE with you') is simultaneously the most honest and most insulting thing he could say \u2014 he accidentally reveals the exact nature of his shame. Second: his immediate 'Sshh, I thought I heard my mom' reveals he's essentially still a child hiding something from his mother. Both moments are character-defining and back-to-back. High quotability for 'ashamed to be seen with you / I like being with you' as a delivery."
+    },
+    {
+      "index": 73,
+      "text": "GOB says 'I have no courage'; then immediately whispers 'I thought I heard my mom' when he hears a sound. On the other side of the wall, Lucille is indeed there, finalizing plans.",
+      "characters": [
+        "GOB",
+        "Lucille"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "irony_sarcasm"
+      ],
+      "setup": "GOB is being called cowardly; he whispers about potentially hearing his mom.",
+      "punchline": "Lucille IS on the other side of the wall \u2014 the narrator reveals this with a cut \u2014 proving GOB's paranoid mommy-radar is functional even in adult romantic crises.",
+      "craft_total": 7.82,
+      "impact_score": 7.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The Arrested Development cut between 'I thought I heard my mom' and the reveal that Lucille IS there is a brilliant structural joke. It validates GOB's maternal paranoia and deepens the irony \u2014 he's more attuned to his mother than to his actual romantic situation. The rewatch bonus is high because you can appreciate the spatial arrangement (the wall) once you know the layout."
+    },
+    {
+      "index": 74,
+      "text": "At the hospital, Sally tells Michael she has to go to the charity auction. Hospital clerk: 'I'm sorry, sir. Your Blue Cross Blue Shield was denied. We've called your mother.'",
+      "characters": [
+        "Sally",
+        "Michael",
+        "hospital clerk"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "GOB is being treated at the hospital after the car explosion.",
+      "punchline": "GOB's insurance \u2014 like his life \u2014 ultimately routes back to his mother. The clerk calling Lucille for a grown adult is simultaneously humiliating and entirely on-brand.",
+      "craft_total": 7.55,
+      "impact_score": 7.25,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good emasculation of Tobias. After trying to prove his masculinity, he's treated like a child with no insurance."
+      "explanation": "Clean character joke \u2014 GOB's infantile dependency on Lucille is institutionally confirmed. The hospital calling his mother for his insurance is absurd but totally consistent with who he is."
     },
     {
-      "index": 44,
-      "text": "YEAH, I HOPE I DIDN'T CONFUSE PEOPLE BY SAYING IT WAS A CD BURNING PARTY.",
+      "index": 75,
+      "text": "Michael tells someone to start draining the hot tub \u2014 'It's going back.'",
       "characters": [
-        "George Michael"
+        "Michael"
       ],
       "joke_types": [
-        "misdirection",
+        "deadpan_understatement",
+        "callback"
+      ],
+      "setup": "Michael needs money to bid on Sally at the auction",
+      "punchline": "His solution is to return the hot tub his father illegally installed in the attic, presumably full of teriyaki residue",
+      "craft_total": 7.02,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The hot tub's fate is efficient and funny. The image of that soy-sauce hot tub being 'returned' after the teriyaki disaster is a good offscreen joke."
+    },
+    {
+      "index": 76,
+      "text": "Narrator: 'And GOB was just depressed enough to do so.' \u2014 after Lucille asks him to bid on her.",
+      "characters": [
+        "Narrator",
+        "GOB",
+        "Lucille"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "George Michael's Christian music bonfire attracts many people",
-      "punchline": "He accidentally invited people to burn any CDs, not just non-Christian music",
-      "craft_total": 7.3,
-      "impact_score": 7.5,
+      "setup": "Lucille has run out of options and asks GOB to bid on her.",
+      "punchline": "The narrator confirms GOB's emotional state as the sole reason he'll comply \u2014 he's not doing this out of filial love, just general despair.",
+      "craft_total": 6.99,
+      "impact_score": 6.5,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirection showing George Michael's innocent mistake in his invitation wording creating the wrong kind of party."
+      "explanation": "The narrator's editorial efficiency is excellent here \u2014 'just depressed enough' captures the precise calibration of GOB's misery required for this moment. It's both sad and funny."
     },
     {
-      "index": 45,
-      "text": "STICK A WRENCH IN ME. I'M DONE.",
+      "index": 77,
+      "text": "George Michael about the bonfire: 'I hope I didn't confuse people by saying it was a CD burning party.' Cut to: a massive rave-like party with people burning CDs they just made.",
+      "characters": [
+        "George Michael",
+        "Narrator"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "visual_gag"
+      ],
+      "setup": "Ann's Christian Music Bonfire was supposed to be a small religious gathering burning sinful albums.",
+      "punchline": "George Michael called it a 'CD burning party' \u2014 the tech slang for copying music \u2014 so people arrived to pirate and burn music onto discs rather than burn sinful music in a fire.",
+      "craft_total": 8.58,
+      "impact_score": 9.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is a masterpiece of structural comedy that mirrors the episode's opening joke. The first joke was about misplaced stress in 'Christian Music Bonfire.' This callback creates an entirely new misunderstanding using a DIFFERENT ambiguity in the same event \u2014 'CD burning party' can mean either burning CDs (religious destruction) or burning CDs (pirating music). The show has now squeezed two entirely different jokes from the same premise. Exceptional craft."
+    },
+    {
+      "index": 78,
+      "text": "Maeby: 'Great party! I burned like 10 CDs from somebody's MP3 player.' Ann: 'This is a disaster.' George Michael: 'Maybe you should just try listening to some of the music. Some of the artists are kind of talented. I don't know if you've heard of the Jerky Boys...'",
+      "characters": [
+        "Maeby",
+        "Ann",
+        "George Michael"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "The Christian Music Bonfire has become a CD pirating party.",
+      "punchline": "George Michael earnestly recommends the Jerky Boys (prank call novelty act) to Ann as 'kind of talented' \u2014 and he has 'accidentally' not burned the tape.",
+      "craft_total": 7.98,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Beautiful callback threading \u2014 the Jerky Boys CD planted in scene one returns as George Michael is now bonding with Ann over it. His 'I accidentally didn't burn it yet' is both a confession and a perfectly calibrated teenage hedge. The generational transmission of Michael's embarrassing taste to his son is a sweet ironic touch."
+    },
+    {
+      "index": 79,
+      "text": "Auction MC re: Lindsay: 'Next up, we've got last year's charity case, Lindsay F\u00fcnke.'",
+      "characters": [
+        "Auction MC"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "dark_subversive"
+      ],
+      "setup": "Lindsay is about to be auctioned as a bachelorette.",
+      "punchline": "The MC calls her 'last year's charity case' \u2014 a devastating double meaning (she was literally in the auction last year AND she is, in general, a charity case).",
+      "craft_total": 7.81,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent double meaning delivered with complete deadpan sincerity \u2014 the MC probably means just 'returning participant' but the other meaning is perfectly apt. 'Last year's charity case' is both an insult and a description. Economy is near-perfect."
+    },
+    {
+      "index": 80,
+      "text": "Lindsay staggers onto stage still under the effect of the tranquilizer dart, slurring: 'Hundred dollars, folks? Stick a wrench in me. I'm done.'",
       "characters": [
         "Lindsay"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "physical_slapstick",
         "character_comedy"
       ],
-      "setup": "Lindsay is being auctioned while under tranquilizer effects",
-      "punchline": "She makes a sexual pun about Moses Taylor's character name while high",
-      "craft_total": 7.17,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sexual pun playing on both 'stick a fork in me' and Frank Wrench. Made funnier by her drugged state."
+      "setup": "Lindsay was shot with horse tranquilizer by Tobias.",
+      "punchline": "She's incoherent on stage \u2014 'Stick a wrench in me. I'm done.' collapses her earlier double entendre ('get a Wrench to strip my nuts'), her tranquilized state, and her general life-weariness into one garbled sentence.",
+      "craft_total": 7.82,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's best moments. 'Stick a wrench in me. I'm done.' simultaneously: (1) callbacks the 'wrench' sexual double entendre, (2) is what a tranquilized person might slur, and (3) works as Lindsay's genuine life motto. The line lands on multiple levels and Lindsay's physical state makes it a great performance joke too. High quotability."
     },
     {
-      "index": 46,
-      "text": "YOU SHOT HER IN THE ASS WITH ABOUT FOUR OUNCES OF HORSE TRANQUILIZER.",
+      "index": 81,
+      "text": "The bidding for tranquilized Lindsay: 'Hundred dollars? Anybody got 50? My wife is humiliated.' / 'Twenty?' / 'Ten? Does anybody have 10?'",
       "characters": [
-        "Michael"
+        "Auction MC",
+        "Tobias"
       ],
       "joke_types": [
         "escalation",
         "dark_subversive"
       ],
-      "setup": "Tobias calls shooting Lindsay a 'small wrong'",
-      "punchline": "Michael details exactly how dangerous and wrong Tobias's action was",
-      "craft_total": 7.41,
+      "setup": "Lindsay is being auctioned while visibly tranquilized.",
+      "punchline": "The bid drops catastrophically from $100 to the MC desperately seeking $10 \u2014 her value crashing in real time.",
+      "craft_total": 7.85,
+      "impact_score": 8.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The descending auction is a clean escalation joke \u2014 the reverse of what should happen at an auction. 'My wife is humiliated' from Tobias is a perfect understated interjection."
+    },
+    {
+      "index": 82,
+      "text": "Tobias: 'I haven't been the perfect husband. I admit that. But now is my chance to be a hero.' \u2014 then begs Michael for money to bid, describing why: 'You shot her in the ass with about four ounces of horse tranquilizer.'",
+      "characters": [
+        "Tobias",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Tobias wants to 'rescue' Lindsay by bidding on her at the auction.",
+      "punchline": "The heroic rescue is from a situation he created \u2014 he's bidding on his tranquilized wife whom he shot in the ass with horse tranquilizer.",
+      "craft_total": 7.52,
       "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Tobias's grand gesture of 'being a hero' to his wife is immediately undercut by the fact that he's the reason she needs saving. 'Four ounces of horse tranquilizer' as casual specification is excellently dark. Character integration is high \u2014 only Tobias would frame this as romantic heroism."
+    },
+    {
+      "index": 83,
+      "text": "Tobias: 'You shot her in the ass with about four ounces of horse tranquilizer.'",
+      "characters": [
+        "Tobias F\u00fcnke"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Tobias admits he shot Lindsay",
+      "punchline": "The clinical specificity \u2014 'about four ounces of horse tranquilizer,' 'in the ass' \u2014 makes this a more precise and therefore funnier admission than a vague apology",
+      "craft_total": 7.73,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The exactness of 'about four ounces' combined with the location ('the ass') is delivered with the precision of a medical report. Tobias narrating his own spousal assault as if filing an incident report is perfectly character-consistent."
+    },
+    {
+      "index": 84,
+      "text": "Michael accidentally bids $5,000 on Lindsay when trying to help Tobias",
+      "characters": [
+        "Michael",
+        "Tobias",
+        "Auctioneer"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Tobias begs Michael for some of his $5,000 (meant for Sally's auction); Michael refuses but the auctioneer sees him and reads it as a bid",
+      "punchline": "Michael's money \u2014 intended for Sally \u2014 goes to buying Lindsay at $5,000",
+      "craft_total": 7.37,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The accidental bid is a well-worn sitcom device, but it's executed cleanly and the consequences are consequential for the rest of the episode. 'For that? Sold.' from the auctioneer is a good beat."
+    },
+    {
+      "index": 85,
+      "text": "Michael accidentally bids $5,000 on the tranquilized Lindsay \u2014 'I've got $5,000 and I need that for Sally, but if you wanna make a low bid...' \u2014 MC: 'Five thousand dollars. For that? Sold.'",
+      "characters": [
+        "Michael",
+        "Auction MC"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Michael is trying to suggest Tobias make a low bid; he inadvertently names his own budget.",
+      "punchline": "The MC immediately gavels the sale \u2014 'For that? Sold' \u2014 the MC's 'for that?' expressing visible disbelief that someone paid so much for tranquilized Lindsay.",
+      "craft_total": 8.05,
+      "impact_score": 8.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Clean misdirection \u2014 Michael intends to suggest a budget, accidentally sets the bid. The MC's 'For that? Sold' adds a perfect insult to the injury. Tobias's likely 'I think you overpaid' capper works well."
+    },
+    {
+      "index": 86,
+      "text": "Tobias: 'I think you overpaid.'",
+      "characters": [
+        "Tobias"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "dark_subversive"
+      ],
+      "setup": "Michael has just accidentally paid $5,000 for the tranquilized Lindsay.",
+      "punchline": "Tobias's only comment \u2014 from the man who shot her \u2014 is that Michael overpaid for his wife.",
+      "craft_total": 7.82,
+      "impact_score": 8.0,
       "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation that specifies the absurd danger of Tobias's 'mistake.' The clinical detail makes it funnier."
+      "explanation": "Maximum economy \u2014 four words from Tobias contain an insult to his wife, obliviousness about his role in her condition, and a perfect button on the auction scene. Only Tobias would say this."
     },
     {
-      "index": 47,
-      "text": "You're not bidding? I was hoping you would. You were? You're a good kid. You always have been.",
+      "index": 87,
+      "text": "At the bonfire-party, Ann and George Michael make prank calls together: 'Let me try. Hey, Rubberneck.' \u2014 Ann: 'He knows it was us.'",
+      "characters": [
+        "Ann",
+        "George Michael"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "The Jerky Boys tape (prank calls) has been introduced at the bonfire party.",
+      "punchline": "Ann has embraced prank calling \u2014 a 'worldly' teen activity she presumably would have condemned \u2014 and her first attempt is immediately identified by the target.",
+      "craft_total": 8.17,
+      "impact_score": 8.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Sweet character reversal \u2014 Ann, the most religiously conservative character, is now enthusiastically prank calling. Her immediate failure ('he knows it was us') is funny. The Jerky Boys callback thread completes here."
+    },
+    {
+      "index": 88,
+      "text": "Ann: 'Hey, Rubberneck.' Narrator: 'He knows it was us.' George Michael: 'What?'",
+      "characters": [
+        "Ann Veal",
+        "George Michael",
+        "Narrator"
+      ],
+      "joke_types": [
+        "callback",
+        "escalation"
+      ],
+      "setup": "George Michael and Ann are making prank calls",
+      "punchline": "The call recipient ('Rubberneck') has already figured out who called \u2014 the prank is immediately exposed",
+      "craft_total": 7.51,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A quick tag on the prank call sequence. The immediate exposure of their 'prank' (calling someone 'Rubberneck' is barely a prank) and Ann's 'He knows it was us' is a small, funny beat about the failure of their scheme."
+    },
+    {
+      "index": 89,
+      "text": "Stan Sitwell at the auction bids on Sally. Michael says: 'You're not bidding? I was hoping you would.' Sitwell: 'You're a good kid. You always have been. Not like that showboat of a father of yours, if you don't mind me saying.' Michael: 'I've called him so much worse.'",
+      "characters": [
+        "Stan Sitwell",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael is bidding to win Sally at the auction; her father Stan Sitwell is also bidding.",
+      "punchline": "Sitwell bonds with Michael over hating George Sr., and Michael's 'I've called him so much worse' confirms the father-son dynamic while building an unlikely alliance.",
+      "craft_total": 7.3,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Character-grounded moment \u2014 Michael bonding with Sally's father over mutual George Sr. contempt is both sweet and funny. 'I've called him so much worse' is an economical character line."
+    },
+    {
+      "index": 90,
+      "text": "Sitwell: 'I need one. Mine got torched today.' \u2014 referring to why he needs the Corvette Michael just won. The car that was torched is the one GOB blew up.",
+      "characters": [
+        "Stan Sitwell"
+      ],
+      "joke_types": [
+        "callback",
+        "irony_sarcasm"
+      ],
+      "setup": "Sitwell mentions he needs Michael's Corvette because his car got torched.",
+      "punchline": "His car was Sally's car, which GOB torched as part of his scheme to help Michael. The punchline circles back \u2014 GOB's scheme to help Michael win Sally has now cost Sitwell his car, and Sitwell is using this to bond with Michael.",
+      "craft_total": 7.58,
+      "impact_score": 7.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Elegant structural callback \u2014 the destroyed car feeds back into the auction scene. Sitwell bonding with Michael over a car that GOB destroyed (trying to help Michael) is ironic layering at its best. Rewatch bonus high."
+    },
+    {
+      "index": 91,
+      "text": "Michael bids $15,000 on Sally. Sally is stunned; Sitwell says: 'This puts a lot of pressure on me.' / 'It's for a good cause. I heard it was to reseed the greens.' / 'Gonna be a lot of shifts for you at the banana stand, huh?'",
+      "characters": [
+        "Michael",
+        "Stan Sitwell",
+        "Sally"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael dramatically overbids on Sally to impress her.",
+      "punchline": "Sitwell's 'it was to reseed the greens' deflates the grand romantic gesture to a golf course maintenance fund. The banana stand reference then reminds everyone Michael is working a teenage job.",
+      "craft_total": 7.24,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good deflation of Michael's romantic moment \u2014 the cause is literally grass-seeding, and the reminder that he funds his life through a frozen banana stand punctures any grandeur. The banana stand callback is satisfying."
+    },
+    {
+      "index": 92,
+      "text": "Michael bids $15,000 on Sally; Sally's reaction: 'This puts a lot of pressure on me.'",
+      "characters": [
+        "Michael",
+        "Sally",
+        "Auctioneer"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Michael bids dramatically high on Sally at the auction",
+      "punchline": "Sally's response is about the pressure on her \u2014 not gratitude or excitement but the awkwardness of the bid's size",
+      "craft_total": 7.42,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sally's framing of a romantic bid as a source of pressure is a neat subversion of the expected 'swept away' reaction. Mild but functional."
+    },
+    {
+      "index": 93,
+      "text": "Michael reveals he sold the Corvette to cover the bid \u2014 to Sally's father. 'My father can't drive a convertible.' / 'Mind if I open it up?' \u2014 and Sitwell immediately takes it for a joyride.",
       "characters": [
         "Michael",
         "Stan Sitwell"
@@ -899,110 +1848,111 @@
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Stan asking why Michael isn't bidding",
-      "punchline": "Stan wanted Michael to bid on his daughter all along",
-      "craft_total": 7.28,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good character reversal showing Stan's approval undermining Michael's rebellion against his father."
-    },
-    {
-      "index": 48,
-      "text": "DROP IT OFF WHEN YOU DROP MY DAUGHTER OFF TONIGHT.",
-      "characters": [
-        "Stan Sitwell"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "setup_punchline"
-      ],
-      "setup": "Michael needs money and Stan needs a car",
-      "punchline": "Stan casually arranges to trade his daughter for Michael's car temporarily",
-      "craft_total": 7.25,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Michael admits he sold the Corvette to get auction money; the buyer is revealed to be Sitwell.",
+      "punchline": "Sitwell's concern about whether Michael's father can drive the car is immediately dropped as he zooms off in it \u2014 he just bought the car and is already driving it away during this conversation.",
+      "craft_total": 6.99,
+      "impact_score": 6.67,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good setup showing Stan's business-like approach to his daughter's dating life. Treats it like a car rental."
+      "explanation": "Mild situational comedy \u2014 the Corvette transaction happening mid-scene is funny, and Sitwell gleefully driving off is a nice visual button."
     },
     {
-      "index": 49,
-      "text": "MIND IF I OPEN IT UP?",
+      "index": 94,
+      "text": "Sally: 'I'd almost rather date someone my father doesn't approve of.' Then she walks away from Michael \u2014 who her father DOES approve of.",
       "characters": [
-        "Stan Sitwell"
-      ],
-      "joke_types": [
-        "misdirection",
-        "absurdist"
-      ],
-      "setup": "Stan is driving Michael's convertible",
-      "punchline": "He asks permission to open the already-open convertible top",
-      "craft_total": 7.25,
-      "impact_score": 7.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good absurdist moment. Stan doesn't understand how convertibles work or is being overly polite about the obvious."
-    },
-    {
-      "index": 50,
-      "text": "I'D ALMOST RATHER DATE SOMEONE MY FATHER DOESN'T APPROVE OF.",
-      "characters": [
-        "Sally"
+        "Sally",
+        "Michael"
       ],
       "joke_types": [
         "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Sally discovers her father approves of Michael",
-      "punchline": "She prefers dating men her father disapproves of",
-      "craft_total": 7.42,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character revelation showing Sally's rebellious nature mirrors Michael's psychology about parental approval."
+      "setup": "Michael spent the episode motivated to pursue Sally BECAUSE his father disapproves; Sitwell explicitly approves.",
+      "punchline": "Sally wants the opposite of what her father approves of \u2014 mirroring Michael's own anti-approval psychology \u2014 and Sitwell just enthusiastically approved of Michael, disqualifying him.",
+      "craft_total": 8.25,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is a conceptually perfect thematic callback. The entire episode has been about Michael pursuing Sally because of parental disapproval dynamics. The resolution \u2014 Sally rejecting him for the mirror-image reason \u2014 is a structurally complete ironic loop. Two dysfunctional children of controlling fathers, unable to date anyone their parents like. The symmetry is elegant, the character psychology is earned, and the joke works on both comedic and dramatic levels simultaneously. One of the episode's top moments."
     },
     {
-      "index": 51,
-      "text": "THAT-THAT-THAT IS LIKE ME. THAT'S EXACTLY LIKE ME!",
+      "index": 95,
+      "text": "Michael, alone after Sally leaves: 'That-that-that is like me. That's exactly like me!'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "reaction_beat"
       ],
-      "setup": "Sally says she'd rather date someone her father disapproves of",
-      "punchline": "Michael realizes this describes his exact psychology and gets excited",
-      "craft_total": 7.06,
-      "impact_score": 6.75,
-      "quotability": 6.5,
+      "setup": "Sally has just rejected Michael for the same psychological reason he pursued her.",
+      "punchline": "Michael's delayed recognition that Sally's behavior mirrors his own \u2014 delivered with three 'that's' of dawning horror \u2014 is both funny and psychologically resonant.",
+      "craft_total": 7.83,
+      "impact_score": 7.83,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment where Michael recognizes their shared psychology about parental approval."
+      "explanation": "Michael's self-recognition is both funny and sad \u2014 the 'that-that-that' stutter conveys his struggle to process being the victim of his own psychological pattern. Strong character beat that closes the episode's theme."
     },
     {
-      "index": 52,
-      "text": "$10,000. OH, HOW GRAND.",
+      "index": 96,
+      "text": "GOB, bidding on Lucille at the auction, sees Sitwell bidding on Lucille 2: 'First he fires me, then he steals my...' \u2014 pause \u2014 'mother's best friend.'",
       "characters": [
-        "Gob",
-        "Lucille"
+        "GOB"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "awkward_silence"
       ],
-      "setup": "Gob bids $10,000 on Lucille 2",
-      "punchline": "Lucille makes a pun on 'grand' meaning both $1000 and magnificent",
-      "craft_total": 6.71,
-      "impact_score": 6.67,
-      "quotability": 7.0,
+      "setup": "GOB sees Sitwell bidding on Lucille 2, his secret girlfriend.",
+      "punchline": "GOB's jealousy is about to reveal his true feelings ('steals my...') but he catches himself and substitutes 'mother's best friend' \u2014 a transparently thin cover.",
+      "craft_total": 7.81,
+      "impact_score": 7.67,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple pun that fits Lucille's character. The wordplay is obvious but delivered with her typical dryness."
+      "explanation": "The paused denial is executed perfectly \u2014 the beat where GOB almost says 'girlfriend' before landing on 'mother's best friend' is transparent to everyone including the audience. 'First he fires me, then he steals my... mother's best friend' is a great line because the pause does all the work. High character integration \u2014 only GOB would think this cover was remotely convincing."
+    },
+    {
+      "index": 97,
+      "text": "The MC at the end: 'Wow. You guys really want a new golf course. And all from nonmembers.'",
+      "characters": [
+        "Auction MC"
+      ],
+      "joke_types": [
+        "observational",
+        "irony_sarcasm"
+      ],
+      "setup": "The auction has just concluded with unexpectedly high bids from all the Bluth family drama.",
+      "punchline": "The MC's summary notes that the passion driving the bidding was entirely emotional/personal (the Bluths and their rivalry/love interests) with zero connection to the golf course charity.",
+      "craft_total": 6.98,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Clean ironic button on the episode's chaos \u2014 the MC's bewildered summary of nonmember bidding fury over a golf course the bidders have no stake in is a nice observational closer."
+    },
+    {
+      "index": 98,
+      "text": "On the next Arrested Development: George Sr. shows up to bid on Lucille, but 'the sound of his wolf call and the smell of chicken teriyaki interfere.'",
+      "characters": [
+        "Narrator",
+        "George Sr."
+      ],
+      "joke_types": [
+        "callback",
+        "running_gag"
+      ],
+      "setup": "George Sr. has been making wolf calls and cooking teriyaki in the attic hot tub all episode.",
+      "punchline": "The teaser for the next episode is that George Sr.'s two absurd signature elements \u2014 wolf call and chicken teriyaki smell \u2014 will blow his cover at the charity auction.",
+      "craft_total": 7.94,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The 'On the next...' teaser is itself a joke \u2014 the two ridiculous elements introduced this episode (wolf calls and attic teriyaki cooking) are announced as the exact cause of next episode's disaster. It's a perfect integration of the episode's absurdist details into a forward-facing callback. 'The smell of chicken teriyaki interfere' is the funniest three words in the teaser."
     }
   ],
   "air_date": "2005-01-30",

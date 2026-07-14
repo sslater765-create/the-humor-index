@@ -4,19 +4,80 @@
   "season": 2,
   "episode_number": 14,
   "title": "The Immaculate Election",
-  "humor_index": 79.5,
-  "jpm": 2.25,
-  "avg_craft": 7.13,
-  "avg_impact": 6.89,
-  "total_jokes": 60,
-  "war": 60.6,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"visual_gag\"]",
-  "standout_joke_ids": "[50, 17, 33]",
+  "humor_index": 97.0,
+  "jpm": 3.33,
+  "avg_craft": 7.76,
+  "avg_impact": 7.57,
+  "total_jokes": 89,
+  "war": 148.2,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"dark_subversive\"]",
+  "standout_joke_ids": "[89, 59, 16]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
+      "text": "Michael was surprised to find the house still a mess a week after the fumigation \u2014 narrator reveals Michael was hiding his father in the attic, making his request to clean up self-sabotaging",
+      "characters": [
+        "Michael",
+        "Narrator"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "misdirection"
+      ],
+      "setup": "Michael complains the house is still a mess after fumigation and scolds Lindsay for not cleaning up",
+      "punchline": "The narrator reveals Michael himself was hiding his father in the attic, making the fumigation call dangerous and his complaints hypocritical",
+      "craft_total": 7.98,
+      "impact_score": 7.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Classic AD structure: the narrator's dry reveal recontextualizes the entire scene. Michael's moral high ground collapses instantly. The joke rewards attentive viewers with layered irony and is a perfect example of the show's signature narrator-as-comedian technique. Rewatch bonus because on first viewing you miss how completely Michael is hoist by his own petard."
+    },
+    {
+      "index": 2,
       "text": "If you weren't all the way on the other side of the room, I'd slap your face.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael is scolding Lindsay for being lazy",
+      "punchline": "His threat of physical punishment is undermined by his own admission that he's too lazy to cross the room to carry it out \u2014 mirroring Lindsay's laziness",
+      "craft_total": 7.58,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Economical and sharp. Michael's complaint about Lindsay's laziness is punctured by his own identical laziness in the same breath, creating self-own irony. High quotability because the line is perfectly constructed \u2014 the conditional clause does all the work."
+    },
+    {
+      "index": 3,
+      "text": "Lindsay intercepting Lupe (her mother's housekeeper) as she arrives for work and taking her to the Bluth house to clean \u2014 'Can I take you the rest of the way? Almost done. Yours... or Mister's?'",
+      "characters": [
+        "Lindsay",
+        "Lupe",
+        "Narrator"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Narrator says Lindsay had only cleaned the house once; we expect a flashback of Lindsay cleaning",
+      "punchline": "She 'cleaned' by poaching her mother Lucille's housekeeper mid-journey and having Lupe clean instead \u2014 confirmed by Lupe's detail-oriented question about whose mess she's cleaning",
+      "craft_total": 7.34,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A beautifully constructed bit that uses the narrator's setup, a physical flashback, and a perfect closing line ('Lupe never accepted a ride from Lindsay again') to deliver a complete comedic short story in under 30 seconds. Deeply character-specific \u2014 this is exactly Lindsay. The 'Yours or Mister's?' detail grounds the absurdity in plausible domestic reality."
+    },
+    {
+      "index": 4,
+      "text": "You didn't even notice he'd gone, did you? / I did notice we'd stopped TiVoing the Christopher Lowell show.",
       "characters": [
         "Michael",
         "Lindsay"
@@ -25,115 +86,18 @@
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Michael calling Lindsay lazy for not cleaning up after fumigation",
-      "punchline": "Too lazy to even walk across room to slap her",
-      "craft_total": 6.86,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "Lindsay tells Michael that Tobias moving out hasn't been easy for any of them",
+      "punchline": "Michael's sole evidence that he noticed Tobias was gone is the absence of a TiVo recording of an interior decorating show \u2014 implicitly revealing Tobias's effeminate interests and Michael's obliviousness",
+      "craft_total": 7.6,
+      "impact_score": 7.25,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Efficient character moment showing Michael's frustration and Lindsay's laziness in one line"
-    },
-    {
-      "index": 2,
-      "text": "Michael had asked her to do this, but that was long before he began hiding his father in the attic.",
-      "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "dark_subversive"
-      ],
-      "setup": "Lindsay complaining about cleaning request",
-      "punchline": "Reveals Michael's priorities have shifted to hiding fugitive father",
-      "craft_total": 7.43,
-      "impact_score": 7.17,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Classic AD narrator reveal that recontextualizes the entire domestic dispute"
-    },
-    {
-      "index": 3,
-      "text": "What the...? Oh, God! Polly, cover your mouth!",
-      "characters": [
-        "George Sr.",
-        "Polly"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "absurdist"
-      ],
-      "setup": "Fumigation happening with family unaware George Sr. is in attic",
-      "punchline": "George Sr. trying to protect parrot from poison gas meant to kill insects",
-      "craft_total": 6.55,
-      "impact_score": 6.25,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Physical comedy from hiding scenario, though somewhat predictable"
-    },
-    {
-      "index": 4,
-      "text": "She hadn't even done it that time, but instead, intercepted her mother's housekeeper",
-      "characters": [
-        "Narrator",
-        "Lindsay"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Michael saying Lindsay cleaned once",
-      "punchline": "She didn't even do it then - stole credit from intercepting Lupe",
-      "craft_total": 7.8,
-      "impact_score": 7.17,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect character moment showing Lindsay's extreme laziness and deception"
+      "is_callback": 1,
+      "explanation": "Sharp economy \u2014 the Christopher Lowell reference (a real interior design TV host) does double duty: it's Michael's oblivious one-data-point 'noticing' and a gentle dig at Tobias's sexuality. Works on multiple levels without belaboring any of them."
     },
     {
       "index": 5,
-      "text": "Lupe never accepted a ride from Lindsay again.",
-      "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "callback"
-      ],
-      "setup": "Lindsay's elaborate deception to avoid cleaning",
-      "punchline": "Understatement of Lupe's reasonable reaction",
-      "craft_total": 6.78,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic AD narrator understatement button on the sequence"
-    },
-    {
-      "index": 6,
-      "text": "I did notice we'd stopped TiVoing the Christopher Lowell show. What happened?",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Lindsay asking if Michael noticed Tobias moved out",
-      "punchline": "Only noticed absence through domestic TV viewing patterns",
-      "craft_total": 7.27,
-      "impact_score": 6.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Michael's obliviousness to family dynamics"
-    },
-    {
-      "index": 7,
-      "text": "You're going to stretch them out. That's all you can say? Well, excuse me for liking the way they shape my junk.",
+      "text": "Tobias in Lindsay's lingerie: 'Well, excuse me for liking the way they shape my junk.'",
       "characters": [
         "Tobias",
         "Lindsay"
@@ -142,37 +106,37 @@
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Tobias trying on Lindsay's underwear",
-      "punchline": "His casual defense of cross-dressing for comfort",
-      "craft_total": 7.14,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Tobias is wearing Lindsay's underwear; she tells him he's going to stretch them out",
+      "punchline": "His defensive response casually mentions 'my junk' \u2014 normalizing cross-dressing with a bluntly masculine justification, absurdly blending hyper-masculine language with the context",
+      "craft_total": 7.82,
+      "impact_score": 7.75,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Tobias obliviousness to social norms, perfectly in character"
+      "explanation": "The collision of Tobias's oblivious self-presentation and the crudely masculine 'junk' makes this a classic Tobias line. Could ONLY be Tobias \u2014 perfectly character-integrated. High quotability because it works out of context."
     },
     {
-      "index": 8,
+      "index": 6,
       "text": "You can pack your junk and get out.",
       "characters": [
         "Lindsay"
       ],
       "joke_types": [
         "wordplay_pun",
-        "escalation"
+        "setup_punchline"
       ],
-      "setup": "Tobias talking about his 'junk' in underwear",
-      "punchline": "Lindsay using his word choice in kicking him out",
-      "craft_total": 6.77,
-      "impact_score": 6.33,
-      "quotability": 7.5,
+      "setup": "Tobias says the underwear 'shapes my junk'",
+      "punchline": "Lindsay uses 'junk' in the double sense \u2014 the underwear/body AND his belongings \u2014 as her divorce ultimatum",
+      "craft_total": 7.91,
+      "impact_score": 7.83,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Efficient wordplay callback that serves story function"
+      "explanation": "A perfectly constructed wordplay payoff to joke #5. The double meaning is set up naturally by Tobias's own word choice, so it feels earned rather than forced. Maximum economy \u2014 four words do everything."
     },
     {
-      "index": 9,
-      "text": "At the beginning of pilot season?",
+      "index": 7,
+      "text": "You're kicking me out? At the beginning of pilot season?",
       "characters": [
         "Tobias"
       ],
@@ -180,327 +144,413 @@
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Tobias being kicked out of house",
-      "punchline": "His concern is about TV pilot season timing, not homelessness",
-      "craft_total": 7.6,
+      "setup": "Lindsay has just kicked Tobias out of the house",
+      "punchline": "Tobias's primary concern about being kicked out is not the marriage ending but the professional timing \u2014 'pilot season' \u2014 revealing his delusion about his acting career as more urgent than his marriage",
+      "craft_total": 7.73,
       "impact_score": 7.17,
-      "quotability": 6.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect character priorities - more worried about career than marriage"
+      "explanation": "Classic Tobias priority inversion \u2014 his delusional acting career concerns trump his marriage. 'Pilot season' is a real industry term deployed absurdly. Character-specific and efficient."
     },
     {
-      "index": 10,
-      "text": "took up residence in the apartment of Detective Frank Wrench on the set of the television show: Wrench.",
+      "index": 8,
+      "text": "Tobias takes up residence in Detective Frank Wrench's apartment on the set of the TV show 'Wrench.'",
       "characters": [
+        "Tobias",
         "Narrator"
       ],
       "joke_types": [
         "absurdist",
         "visual_gag"
       ],
-      "setup": "Tobias needs somewhere to live",
-      "punchline": "Living in fake TV apartment on soundstage",
-      "craft_total": 7.52,
-      "impact_score": 7.33,
+      "setup": "Tobias has nowhere to go after being kicked out",
+      "punchline": "He moves into a fictional TV set apartment as if it were real housing \u2014 the narrator delivers this with complete deadpan matter-of-factness",
+      "craft_total": 7.88,
+      "impact_score": 7.5,
       "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Absurdist escalation that's perfectly logical for Tobias's delusions"
+      "explanation": "The absurdist premise is sold entirely by the narrator's deadpan delivery and the specificity of 'Detective Frank Wrench on the set of the television show: Wrench.' The setup for later jokes about Tobias on a fake set. Rewatch bonus for paying off in the bathroom scene."
     },
     {
-      "index": 11,
-      "text": "Did he take the good video camera with him?",
+      "index": 9,
+      "text": "Gob's magic video: 'I'm making a magic video. I'm going to tape myself doing tricks around the office. I'm calling it Tricks... let me finish \u2014 Around the Office.'",
       "characters": [
         "Gob"
       ],
       "joke_types": [
         "character_comedy",
-        "reaction_beat"
+        "setup_punchline"
       ],
-      "setup": "Family discussing Tobias moving out",
-      "punchline": "Gob's only concern is material possessions",
-      "craft_total": 6.87,
-      "impact_score": 6.33,
-      "quotability": 5.0,
+      "setup": "Gob says he's figured out a way to make money while working",
+      "punchline": "His 'idea' is literally just filming himself doing magic tricks at work, which he's pre-defensively protecting with 'let me finish' before finishing with the most obvious possible title completion",
+      "craft_total": 7.92,
+      "impact_score": 7.83,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Gob selfishness in emotional family moment"
+      "explanation": "The 'let me finish' preemption before a completely unsurprising finish is a perfect Gob construction. His grandiosity meets the most trivial content. The beat of him protecting an anti-climax is the joke's engine."
     },
     {
-      "index": 12,
-      "text": "I'm calling it Tricks... let me finish-- Around the Office.",
-      "characters": [
-        "Gob"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "misdirection"
-      ],
-      "setup": "Gob explaining his magic video concept",
-      "punchline": "Defensive about obvious title being interrupted",
-      "craft_total": 7.32,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Gob's pride in obvious ideas"
-    },
-    {
-      "index": 13,
-      "text": "That is what we call working.",
+      "index": 10,
+      "text": "That is what we call working. Something you might want to try next time you're at the office.",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "deadpan_understatement",
-        "irony_sarcasm"
+        "character_comedy"
       ],
-      "setup": "Gob saying he'll make money while working",
-      "punchline": "Michael pointing out that's just 'working'",
-      "craft_total": 6.9,
+      "setup": "Gob says he's found a way to make money while working",
+      "punchline": "Michael points out that what Gob described IS working \u2014 a burn delivered with characteristic Michael dry condescension",
+      "craft_total": 6.94,
       "impact_score": 6.5,
-      "quotability": 5.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple but effective deflation of Gob's 'brilliant' plan"
+      "explanation": "Solid straight-man burn. Michael's dismissal of Gob's 'innovation' as simply 'working' is clean and efficient, but not exceptional \u2014 it's the kind of line Michael delivers every episode."
     },
     {
-      "index": 14,
-      "text": "Is that Qusay Hussein at the omelet bar?",
+      "index": 11,
+      "text": "Home video reveals: 'Is that Qusay Hussein at the omelet bar?' / 'Look at this. These guys move, they don't get paid.'",
       "characters": [
-        "Family member"
+        "Family members",
+        "Narrator"
       ],
       "joke_types": [
         "dark_subversive",
         "observational"
       ],
-      "setup": "Watching company anniversary party video",
-      "punchline": "Casual identification of war criminal at corporate event",
-      "craft_total": 7.28,
-      "impact_score": 7.75,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark humor about company's corrupt international dealings"
+      "setup": "Family watches what seems like a lavish 40th anniversary party",
+      "punchline": "The party featured Qusay Hussein as a guest \u2014 revealing the Bluth family's corrupt international dealings \u2014 and the workers weren't being paid, suggesting illicit labor practices",
+      "craft_total": 7.67,
+      "impact_score": 7.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Densely packed comedy \u2014 a single party scene reveals Bluth corruption (Qusay Hussein), unpaid labor, and casual obliviousness to all of it. The specificity of 'Qusay Hussein at the omelet bar' is darkly hilarious. Rewatch bonus for the season context."
     },
     {
-      "index": 15,
-      "text": "George Michael had been heavily influenced by the Star Wars films, and had endeavored to recreate his favorite moments.",
+      "index": 12,
+      "text": "George Michael's home video turns out to be a Star Wars reenactment \u2014 narrator: 'as a 13-year-old, George Michael had been heavily influenced by the Star Wars films and had endeavored to recreate his favorite moments'",
       "characters": [
-        "Narrator",
-        "George Michael"
+        "George Michael",
+        "Narrator"
       ],
       "joke_types": [
         "visual_gag",
         "character_comedy"
       ],
-      "setup": "Family watching embarrassing home video",
-      "punchline": "Teenager's earnest Star Wars reenactment on tape",
-      "craft_total": 6.83,
-      "impact_score": 6.5,
+      "setup": "The family gathers to watch what appears to be a significant home video",
+      "punchline": "It's a low-budget Star Wars reenactment filmed by a dorky 13-year-old George Michael with a lightsaber",
+      "craft_total": 7.33,
+      "impact_score": 7.33,
       "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Relatable teenage embarrassment played for family cringe"
+      "explanation": "A visual gag that works through accumulation \u2014 the buildup of family watching, Michael's horror, and then the payoff at the end of the episode when Ann finds it endearing. Sets up a runner. The content itself is a reliable 'embarrassing nerdy kid' joke elevated by the show's investment in George Michael's arc."
     },
     {
-      "index": 16,
-      "text": "Even you have to admit that that was the lamest thing ever put on tape. Not so.",
+      "index": 13,
+      "text": "George Sr. reacts to the Star Wars video: 'I spent $2.1 million of company money and end up with this?'",
       "characters": [
-        "Family member",
+        "George Sr."
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "The family watches George Michael's dorky Star Wars video, expecting embarrassment",
+      "punchline": "George Sr.'s objection is not the content but the return on investment \u2014 revealing he embezzled $2.1 million to fund a party featuring Qusay Hussein, and THIS is what he got",
+      "craft_total": 7.52,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfectly character-specific \u2014 George Sr.'s only concern is the corporate financial loss from a children's party, not the adorable/embarrassing content. The number ($2.1 million) makes it funnier by being specific. Also quietly furthers the criminal subplot."
+    },
+    {
+      "index": 14,
+      "text": "Buster videotaped himself recreating moments from Chicago \u2014 then also liked Star Wars \u2014 visual of Buster in a full dance costume, then presumably with a lightsaber",
+      "characters": [
+        "Buster",
         "Narrator"
       ],
       "joke_types": [
-        "setup_punchline",
+        "visual_gag",
+        "character_comedy",
         "escalation"
       ],
-      "setup": "Calling George Michael's video the lamest ever",
-      "punchline": "Narrator promising something even worse exists",
-      "craft_total": 7.13,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Someone says even worse videos exist; narrator sets up Buster's tape",
+      "punchline": "Buster recreated Chicago dance numbers \u2014 deeply specific and absurd \u2014 AND Star Wars, the 'he also liked Star Wars' delivered as a deadpan afterthought",
+      "craft_total": 8.31,
+      "impact_score": 8.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good setup for Buster callback, creates anticipation"
+      "explanation": "One of the episode's standout moments. The Chicago reveal is already absurd and deeply Buster-specific (his arrested development, his mother's dominance, his theatrical helplessness). Then 'He also liked Star Wars' lands as a perfectly timed, tonally flat afterthought that doubles the absurdity. The two-beat structure is textbook AD: unexpected specificity followed by a deadpan capper. High character integration \u2014 this joke is unrepeatable with any other character."
     },
     {
-      "index": 17,
-      "text": "Buster had once videotaped himself recreating moments from his then favorite film, Chicago.",
+      "index": 15,
+      "text": "His self-esteem is low enough as it is, and I have no idea why. He's such a great kid, you know. And everybody loves him. He's George Michael.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael talks about George Michael's low self-esteem",
+      "punchline": "His genuine bafflement that everyone loves a kid named 'George Michael' \u2014 oblivious to the social liability of sharing a name with a pop star \u2014 is the joke, though the show trusts the audience to see it without spelling it out",
+      "craft_total": 7.27,
+      "impact_score": 6.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The name joke is a running gag throughout the series. Michael's sincere pride in the name 'George Michael' \u2014 delivered without irony \u2014 is the gap between character and audience awareness that drives the humor. Functional but not a peak moment."
+    },
+    {
+      "index": 16,
+      "text": "Narrator: 'He also liked Star Wars.' \u2014 after showing Buster's elaborate Chicago dance video",
       "characters": [
         "Narrator",
         "Buster"
       ],
       "joke_types": [
-        "callback",
-        "character_comedy",
-        "visual_gag"
+        "deadpan_understatement",
+        "callback"
       ],
-      "setup": "Promise of something lamer than Star Wars reenactment",
-      "punchline": "Buster doing Chicago musical numbers",
-      "craft_total": 7.92,
-      "impact_score": 8.0,
-      "quotability": 6.0,
+      "setup": "Buster's Chicago recreation has just been shown as an example of something potentially lamer than George Michael's Star Wars video",
+      "punchline": "The narrator casually adds that Buster also liked Star Wars, implying there's MORE footage \u2014 and inviting the audience to imagine it",
+      "craft_total": 8.55,
+      "impact_score": 9.0,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect character callback that escalates the embarrassment while being completely in character for Buster"
+      "explanation": "Five words that earn an outsized laugh through pure economy and implication. The deadpan matter-of-fact delivery, the devastating implication of more footage, and the perfect narrative structure (counterpoint collapsed into its own punchline) make this one of the episode's tightest jokes. The audience has to do the imaginative work, which makes it land harder."
+    },
+    {
+      "index": 17,
+      "text": "Unless he knocks her up like you did with his mother. Plus, she's religious. That one gets pregnant, it stays pregnant.",
+      "characters": [
+        "Lucille"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Michael says he's not crazy about Ann because she's religious and he hopes George Michael will move on",
+      "punchline": "Lucille casually invokes pregnancy as a relationship trap and then makes a dark joke about religious women not getting abortions",
+      "craft_total": 7.3,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfectly Lucille \u2014 cold, calculating, darkly practical. 'That one gets pregnant, it stays pregnant' is a withering encapsulation of her worldview. The follow-up 'Believe me, I dated a chick like that once in high school / No, I didn't' adds a self-correction that implies something even darker about Lucille's past."
     },
     {
       "index": 18,
-      "text": "He also liked Star Wars.",
+      "text": "Lucille's self-correction: 'Believe me, I dated a chick like that once in high school. / No, I didn't.'",
       "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "escalation"
-      ],
-      "setup": "Buster's Chicago obsession",
-      "punchline": "Casual addition that he mixed in Star Wars too",
-      "craft_total": 7.54,
-      "impact_score": 7.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect economy - suggests even more embarrassing mashup content"
-    },
-    {
-      "index": 19,
-      "text": "That one gets pregnant, it stays pregnant. Believe me, I dated a chick like that once in high school. No, I didn't.",
-      "characters": [
-        "Gob"
+        "Lucille"
       ],
       "joke_types": [
         "character_comedy",
         "misdirection"
       ],
-      "setup": "Gob making crude comment about religious girls",
-      "punchline": "Immediately retracting his false bravado",
-      "craft_total": 7.33,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Lucille is elaborating on her warning about religious girls",
+      "punchline": "She begins to claim personal experience dating a religious girl in high school, then immediately retracts it \u2014 the retraction implying she's hiding something more interesting than the claim itself",
+      "craft_total": 8.17,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Gob moment - false confidence immediately undercut by honesty"
+      "explanation": "A genuinely exceptional joke. The structure is a perfect trap: the audience processes the surprising claim (Lucille dated a girl?) and then before they can react, she retracts it \u2014 leaving the implication hanging. The retraction IS the joke. The brevity is surgical. Could only be Lucille \u2014 her iron control over her own narrative, mid-slip. High quotability, high rewatch bonus because the implication deepens on reflection."
     },
     {
-      "index": 20,
-      "text": "Don't start. Smoking. It's a killer. That Sammy Davis, Jr. should still be performing.",
+      "index": 19,
+      "text": "Ann convinces George Michael to run: 'George Michael, I want you to do it.' / 'But I don't think I'm ready.' / 'Of course you are.' / 'I'm going to lose it before I start.' \u2014 all misread as sexual innuendo before 'Don't start. Smoking.'",
       "characters": [
-        "Ann"
+        "Ann",
+        "George Michael"
       ],
       "joke_types": [
         "misdirection",
-        "character_comedy"
+        "setup_punchline"
       ],
-      "setup": "Michael overhearing 'Don't start' conversation",
-      "punchline": "Ann's anti-smoking PSA with odd Sammy Davis Jr. reference",
-      "craft_total": 7.19,
-      "impact_score": 6.5,
-      "quotability": 6.5,
+      "setup": "Ann and George Michael's dialogue is staged to sound like they're discussing losing George Michael's virginity",
+      "punchline": "'Don't start. Smoking. It's a killer.' \u2014 the conversation was about smoking all along, with Ann delivering an anti-smoking speech",
+      "craft_total": 7.39,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Classic double-entendre misdirection, executed cleanly. The line readings and word choices ('I'm going to lose it before I start') are carefully chosen to sustain the misread. The reveal \u2014 anti-smoking, not virginity \u2014 is perfectly absurd given Ann's character. The Sammy Davis Jr. non-sequitur adds another layer of odd charm."
+    },
+    {
+      "index": 20,
+      "text": "Michael claims to have been student body president; it emerges he lost \u2014 'Who remembers?' / 'I know I would remember.' / 'I didn't say I won. I said I can't remember.' / 'Good memory.'",
+      "characters": [
+        "Michael",
+        "Ann",
+        "George Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "escalation"
+      ],
+      "setup": "Michael encourages George Michael by saying he was student body president himself",
+      "punchline": "He progressively reveals he didn't win \u2014 retreating from claim to obfuscation to 'I can't remember' while Ann's 'Good memory' closes it perfectly",
+      "craft_total": 8.01,
+      "impact_score": 7.75,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirect that shows Ann's earnest but awkward personality"
+      "explanation": "A masterfully escalating exchange. Each retreat from Michael's original claim is funnier than the last, and Ann's final 'Good memory' is a perfectly timed deadpan close from a character usually treated as the butt of the joke. The structure mirrors the episode's election theme. 'Who remembers?' as denial is great character writing."
     },
     {
       "index": 21,
-      "text": "You are George Michael! Who's cooler than you?",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "George Michael saying only cool kids win elections",
-      "punchline": "Michael's earnest belief his dorky son is cool",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sweet but deluded parental support, establishes Michael's blind spot"
-    },
-    {
-      "index": 22,
-      "text": "I said, 'Let's, do not... Let's not put the school through that.' You know, I haven't thought about that for years.",
+      "text": "Michael's account of losing the election: 'the other guy won the actual title, although there were plenty in the school that wanted to overturn the decision. I said, Let's not put the school through that.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "irony_sarcasm"
       ],
-      "setup": "Michael claiming he can't remember high school election",
-      "punchline": "Detailed 'memory' of his magnanimous response to losing",
-      "craft_total": 7.17,
-      "impact_score": 6.5,
+      "setup": "Michael is explaining why he doesn't remember whether he won",
+      "punchline": "He lost but retroactively reframes his concession as a noble sacrifice for the school \u2014 transparently self-serving revisionism played completely straight",
+      "craft_total": 7.92,
+      "impact_score": 7.5,
       "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great character moment showing Michael's self-serving memory"
+      "is_callback": 1,
+      "explanation": "Michael's self-justifying narrative \u2014 that he CHOSE to lose for the greater good \u2014 is a perfect encapsulation of his character. The language ('I didn't want to put the school through that') echoes presidential concession speeches, making the high-school election both satirize politics and reveal Michael's ego. Character-specific and efficiently delivered."
     },
     {
-      "index": 23,
-      "text": "And then that first time, after waiting and waiting, it's gonna be so awesome! Because it's not just gonna be my love and George Michael's, but God's love, as well. God, it's gonna be incredible!",
+      "index": 22,
+      "text": "Ann's ecstatic description of their future wedding night: 'that first time, after waiting and waiting, it's gonna be so awesome! Because it's not just gonna be my love and George Michael's, but God's love, as well. God, it's gonna be incredible!'",
       "characters": [
         "Ann"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Ann talking about waiting for marriage",
-      "punchline": "Increasingly sexual enthusiasm about divine threesome",
-      "craft_total": 7.56,
+      "setup": "Michael mentions not rushing a physical relationship; Ann eagerly agrees they're both waiting",
+      "punchline": "Ann's increasingly enthusiastic description of their eventual first time \u2014 invoking 'God's love' in the bedroom with mounting excitement \u2014 is deeply uncomfortable and absurd, culminating in 'God, it's gonna be incredible!'",
+      "craft_total": 8.11,
       "impact_score": 8.17,
-      "quotability": 7.0,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant escalation of religious rhetoric into inappropriate territory"
+      "explanation": "Ann's character comedy reaches a peak here. Her religious fervor applied to sexual anticipation creates maximum cringe \u2014 it's earnest, weird, and escalating. 'God, it's gonna be incredible!' with the double meaning of invoking God in an exclamation is the perfect button. The joke is that she's excited in a way that's simultaneously devout and accidentally sensual. Deeply character-specific \u2014 this is ONLY Ann."
+    },
+    {
+      "index": 23,
+      "text": "George Michael: 'All right, I'll do it! I'm in.' \u2014 immediately misread as a response to Ann's sex speech before clarifying 'Campaign. I'm pumped.'",
+      "characters": [
+        "George Michael"
+      ],
+      "joke_types": [
+        "misdirection",
+        "setup_punchline"
+      ],
+      "setup": "Ann has just delivered an ecstatic speech about their future wedding night",
+      "punchline": "George Michael's 'All right, I'll do it!' sounds like he's agreeing to sex before he clarifies it's about the campaign",
+      "craft_total": 7.55,
+      "impact_score": 7.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A quick callback to the episode's earlier virginity misdirection. Not as well-constructed as the first iteration since the audience now expects the device, but 'I'm pumped' landing after the sex implications still earns a laugh. The word 'pumped' adds a small extra layer."
     },
     {
       "index": 24,
-      "text": "Oh, God! Oh, God!",
+      "text": "Buster using a hook hand to do a puzzle: 'Oh, God. I can't put the aorta in with this thing.' / Buster yells dramatically: 'I'm sorry I'm an inconvenience to you, Mother.'",
       "characters": [
         "Buster"
       ],
       "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
+        "character_comedy",
+        "physical_slapstick"
       ],
-      "setup": "Buster trying to use prosthetic hand for medical work",
-      "punchline": "Clearly struggling with basic manipulation",
-      "craft_total": 7.07,
-      "impact_score": 6.67,
-      "quotability": 3.0,
+      "setup": "Buster lost his hand to a seal; he's trying to manage daily tasks with his hook",
+      "punchline": "He's doing a heart puzzle \u2014 a darkly ironic detail \u2014 and his dramatic self-pity about being an inconvenience escalates his suffering into theatrical martyrdom",
+      "craft_total": 7.3,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Physical comedy from Buster's disability, somewhat predictable"
+      "is_callback": 1,
+      "explanation": "The hook hand gag is well-established; this particular iteration adds the ironic detail of an aorta puzzle (he's doing a heart! with a hook!) and Buster's characteristic over-dramatic martyrdom. Solid but not the best hook hand joke in the series."
     },
     {
       "index": 25,
-      "text": "Unfortunately, it was a new friend to George, Senior. Polly!",
+      "text": "Lupe feels sorry for Buster's loss of a hand; Lindsay feels sorry for her loss of Lupe \u2014 visual of Lindsay dramatically mourning without a housekeeper",
       "characters": [
-        "Narrator",
-        "George Sr."
+        "Lindsay",
+        "Lupe",
+        "Narrator"
       ],
       "joke_types": [
-        "setup_punchline",
-        "visual_gag"
+        "irony_sarcasm",
+        "reaction_beat"
       ],
-      "setup": "Lindsay discovering eBay as 'old friend'",
-      "punchline": "George Sr. panicking about parrot discovering computer",
-      "craft_total": 6.99,
-      "impact_score": 6.5,
-      "quotability": 4.5,
+      "setup": "Lupe has sympathy for Buster's physical disability",
+      "punchline": "The narrator equates Lindsay's loss of her housekeeper with Buster's loss of a hand \u2014 treating Lindsay's trivial inconvenience as equivalent to dismemberment",
+      "craft_total": 8.22,
+      "impact_score": 7.83,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good parallel structure contrasting Lindsay's discovery with George Sr.'s panic"
+      "explanation": "The narrator's parallel construction \u2014 Lupe's sympathy for Buster / Lindsay's equivalent grief \u2014 is a small gem of comedic juxtaposition. The structural joke here is entirely in the edit and the narrator's framing, not the dialogue. Perfect economy from the show's signature narrator-as-ironist technique."
     },
     {
       "index": 26,
-      "text": "Sometimes it's as simple as turning 10:45 in the morning into... lunch time!",
+      "text": "Lindsay cleaned one room and now has a garbage problem \u2014 visual of her trying to hide garbage bags and accidentally finding George Sr. in the attic",
+      "characters": [
+        "Lindsay",
+        "George Sr."
+      ],
+      "joke_types": [
+        "visual_gag",
+        "escalation"
+      ],
+      "setup": "Lindsay finally cleaned something; now she has garbage to dispose of",
+      "punchline": "Her search for a garbage spot leads her to the attic where a fugitive is being hidden \u2014 comic escalation from domestic laziness to federal crime",
+      "craft_total": 7.48,
+      "impact_score": 7.0,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Nicely constructed situational escalation \u2014 Lindsay's mundane domesticity collision with the season's main criminal subplot. Rewatch bonus for the layered irony: the one time Lindsay attempts housework, she uncovers a federal fugitive."
+    },
+    {
+      "index": 27,
+      "text": "Lindsay finds Polly the parrot (George Sr.'s only friend in the attic) and thinks of eBay: 'I haven't seen this in ages. Ebay!' \u2014 narrator: 'Unfortunately, it was a new friend to George, Senior. Polly!'",
+      "characters": [
+        "Lindsay",
+        "George Sr.",
+        "Narrator"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "irony_sarcasm"
+      ],
+      "setup": "Lindsay finds old items stashed in the attic; George Sr. is hiding there with a parrot",
+      "punchline": "Lindsay's delight at finding something to sell on eBay (the parrot) is George Sr.'s only companion being taken away \u2014 the cut between her commercial excitement and his desperate cry of 'Polly!' is the joke",
+      "craft_total": 7.33,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The joke is built on the gap between Lindsay's oblivious greed and George Sr.'s genuine isolation. 'Polly!' is a great button \u2014 the parrot named Polly (a classic joke in itself), and his desperate attachment to a bird as his only friend is both funny and darkly sad. The structural parallel works perfectly."
+    },
+    {
+      "index": 28,
+      "text": "Gob films office magic: transforming '10:45 in the morning' into lunch time \u2014 then producing a live chicken in a meeting",
       "characters": [
         "Gob"
       ],
@@ -508,77 +558,77 @@
         "physical_slapstick",
         "character_comedy"
       ],
-      "setup": "Gob explaining office magic",
-      "punchline": "Dramatic reveal of basic time passage",
-      "craft_total": 6.82,
-      "impact_score": 6.33,
+      "setup": "Gob has been given the camera and arrives at a serious business meeting to film his magic video",
+      "punchline": "He disrupts a formal investor meeting with a magic trick that conjures a chicken \u2014 derailing the vote Michael needed",
+      "craft_total": 7.38,
+      "impact_score": 7.33,
       "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Gob delusion - treating mundane events as magic"
-    },
-    {
-      "index": 27,
-      "text": "Well, you kind of have to, guy. I'm the president. No, no. I'm the president.",
-      "characters": [
-        "Gob",
-        "Michael"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Michael trying to fire Gob",
-      "punchline": "Confusion over who holds what office",
-      "craft_total": 6.61,
-      "impact_score": 6.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sibling rivalry over corporate hierarchy, moderately effective"
-    },
-    {
-      "index": 28,
-      "text": "Pound is tic-tac-toe, right? Yeah, pound is this one here.",
-      "characters": [
-        "Gob",
-        "Security"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Gob trying to call security to fire Michael",
-      "punchline": "Can't figure out basic phone operation",
-      "craft_total": 6.59,
-      "impact_score": 6.0,
-      "quotability": 4.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard incompetence gag, though in character for Gob"
+      "explanation": "Classic Gob chaos. His inability to separate personal projects from professional responsibilities (and his total obliviousness to context) is well-drawn. The chicken is a good physical gag and ties to Gob's specific magic iconography."
     },
     {
       "index": 29,
-      "text": "But the guard had recently lost half his tie to office magic.",
+      "text": "Michael tries to fire Gob but doesn't know how to call security: 'How do you call security on this thing?' / 'You hit pound-0-0.' / 'Pound is tic-tac-toe, right?'",
       "characters": [
+        "Michael",
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael fires Gob and tries to have security remove him",
+      "punchline": "The authority of the firing dissolves as Michael can't figure out how to work his own phone \u2014 Gob has to walk him through it while being fired",
+      "craft_total": 7.65,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke is structural: the power dynamic of the firing collapses as Michael needs his fired employee's help to complete the firing. 'Pound is tic-tac-toe, right?' is a specific and believable moment of phone confusion that sells the bit. The ending \u2014 Gob coaching him through it \u2014 is a great reversal."
+    },
+    {
+      "index": 30,
+      "text": "The security guard who escorts Gob out 'had recently lost half his tie to office magic.' / Guard: 'Oh, I don't mind.'",
+      "characters": [
+        "Security Guard",
         "Narrator"
       ],
       "joke_types": [
         "callback",
         "visual_gag"
       ],
-      "setup": "Security guard willing to escort Michael out",
-      "punchline": "Motivated by Gob's earlier magic trick going wrong",
-      "craft_total": 7.29,
-      "impact_score": 7.0,
-      "quotability": 5.0,
+      "setup": "The security guard arrives to remove Gob from the office",
+      "punchline": "The narrator reveals the guard's tie was already half-destroyed by Gob's magic \u2014 and the guard's cheerful 'Oh, I don't mind' suggests he's relieved to see Gob go",
+      "craft_total": 7.89,
+      "impact_score": 7.67,
+      "quotability": 5.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Nice payoff to earlier setup, explains guard's motivation"
+      "explanation": "A tiny perfect runner. The visual of a guard with half a tie tells a whole story of Gob's prior office chaos without a word. 'Oh, I don't mind' delivers the guard's full characterization in three words. AD at its most efficient."
     },
     {
-      "index": 30,
-      "text": "Your Uncle Gob doesn't not-work here anymore.",
+      "index": 31,
+      "text": "Gob filming his own removal: 'Get this. Are you getting this? Cheat out. You have to cheat out a little.'",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "meta_self_referential"
+      ],
+      "setup": "Gob is being escorted out of the building by security",
+      "punchline": "He treats his own firing/removal as a scene to be filmed, directing the cameraman during his own humiliation",
+      "craft_total": 8.12,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Gob's narcissism reaches a new expression: he's so committed to filming his magic video that he sees his own ejection as content. 'Cheat out' (a real filmmaking term for actors adjusting their eyeline toward camera) is a specific detail that rewards film-savvy audiences. Deeply Gob."
+    },
+    {
+      "index": 32,
+      "text": "Michael to Maeby: 'Your Uncle Gob doesn't not-work here anymore.'",
       "characters": [
         "Michael"
       ],
@@ -586,190 +636,255 @@
         "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "George Michael asking about office situation",
-      "punchline": "Michael's confused double negative about Gob's employment",
-      "craft_total": 6.92,
+      "setup": "Michael is explaining to Maeby that Gob has been fired",
+      "punchline": "The double negative 'doesn't not-work here anymore' is Michael's tangled attempt to be accurate (Gob never really worked) while still firing him \u2014 creating a grammatical and logical knot",
+      "craft_total": 7.81,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "One of the episode's most quotable lines. The double negative perfectly captures the absurdity of Gob's employment status and Michael's exasperation with it. Economy is excellent \u2014 eight words do the work of a paragraph."
+    },
+    {
+      "index": 33,
+      "text": "Maeby learns about her parents' separation from Michael by accident and says: 'Maybe I should just start keeping some secrets of my own.'",
+      "characters": [
+        "Maeby",
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Michael accidentally reveals Tobias moved out; Maeby is upset neither parent told her anything",
+      "punchline": "Maeby's threat to 'keep secrets' is darkly ironic given that she's already been secretly posing as a movie executive for the whole season \u2014 the joke is entirely in the dramatic irony",
+      "craft_total": 7.87,
+      "impact_score": 7.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The comedy is entirely in the dramatic irony for attentive viewers \u2014 Maeby is already the most secret-keeping character on the show. Rewatch bonus because the gap between Maeby's complaint and reality is funnier the more you know."
+    },
+    {
+      "index": 34,
+      "text": "Maeby to Michael: 'Marry me!' then immediately: 'I'm so sorry. I forgot who I was talking to.'",
+      "characters": [
+        "Maeby",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael tells Maeby he's sorry he let something slip accidentally",
+      "punchline": "Maeby reflexively says 'Marry me!' \u2014 her standard response to being charmed by a man \u2014 then catches herself because Michael is her uncle",
+      "craft_total": 7.91,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A strong running gag deployment. The immediate self-correction \u2014 and its specific reason \u2014 is the payoff. 'I forgot who I was talking to' implies she uses 'Marry me' so automatically with men that she has to consciously filter for relatives. Dark undertone, perfect economy."
+    },
+    {
+      "index": 35,
+      "text": "Ann is using the Bluth company copier to make campaign posters for George Michael \u2014 Michael asks 'How do you know Steve Holt? Are you in AA?'",
+      "characters": [
+        "Michael",
+        "Ann"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Ann mentions Steve Holt; Michael assumes she knows him from AA (Alcoholics Anonymous)",
+      "punchline": "The assumption that a religious teenage girl would know someone from AA is both a commentary on Michael's biases and an absurd non-sequitur \u2014 the joke is that AA is his first explanation for how teens know each other",
+      "craft_total": 6.83,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A decent joke that doesn't quite reach the show's best. The AA assumption is funny but not especially character-specific to Michael \u2014 it could be said by several characters. The misdirection is mild."
+    },
+    {
+      "index": 36,
+      "text": "Steve Holt has won 'three years in a row. Every year after his first junior year.'",
+      "characters": [
+        "Ann"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "dark_subversive"
+      ],
+      "setup": "Ann describes Steve Holt as the most popular guy in school who wins every election",
+      "punchline": "The parenthetical 'every year after his first junior year' reveals Steve has repeated 11th grade multiple times \u2014 he's a much older student among teens",
+      "craft_total": 7.69,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A perfectly embedded throwaway that rewards careful listening. The information is delivered without emphasis \u2014 'every year after his first junior year' \u2014 and the implication (he's been in high school for years) unfolds in the listener's mind a beat later. AD at its best: the joke trusts the audience completely."
+    },
+    {
+      "index": 37,
+      "text": "'That's like comparing apples and some fruit nobody's ever heard of.' / 'He might even finish after the Indian kid.'",
+      "characters": [
+        "Ann"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Michael asks if Steve Holt is more popular than George Michael",
+      "punchline": "Ann's 'apples and some fruit nobody's ever heard of' idiom variant, followed by George Michael potentially placing third behind 'the Indian kid' \u2014 compounding the insult",
+      "craft_total": 8.07,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The idiom mutation is sharp \u2014 'apples and some fruit nobody's ever heard of' elevates 'apples and oranges' into something funnier by replacing the recognizable fruit with anonymous obscurity. The double-blow structure (terrible comparison + might lose to third place) is efficient escalation."
+    },
+    {
+      "index": 38,
+      "text": "After Michael reluctantly agrees to go to the school, Ann hands him campaign posters to put up: 'And do you think you could put up a couple of these when you're there? 'Cause I was really not in the mood to go down there.'",
+      "characters": [
+        "Ann",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ann has been asking Michael to help George Michael's campaign",
+      "punchline": "Having leveraged Michael into going to school, Ann reveals she was using him to avoid going herself \u2014 a reversal where the supposedly passive Ann has just outsourced her campaign work",
+      "craft_total": 6.97,
       "impact_score": 6.33,
       "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Verbal confusion that reflects Michael's own confusion about the situation"
+      "explanation": "A small but satisfying character reversal. Ann's blandness conceals a surprisingly effective manipulator \u2014 this is a seed of the more active role she takes later in the episode. Not a big laugh but a rewarding character beat."
     },
     {
-      "index": 31,
-      "text": "Marry me! I'm so sorry. I forgot who I was talking to.",
+      "index": 39,
+      "text": "Lucille fires Lupe: 'You're fired!' / Buster: 'You can't fire me, I'm your son.' / Lucille: 'I'm firing Lupe.' / Buster: 'Well, that makes more sense.'",
       "characters": [
-        "Ann"
+        "Lucille",
+        "Buster"
       ],
       "joke_types": [
-        "character_comedy",
-        "reaction_beat"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Ann excited about campaign posters",
-      "punchline": "Accidentally proposes to Michael, then realizes mistake",
-      "craft_total": 7.32,
-      "impact_score": 7.17,
-      "quotability": 6.5,
+      "setup": "Lucille says 'You're fired!' \u2014 Buster assumes it's directed at him",
+      "punchline": "Buster's protest ('You can't fire me, I'm your son') and his resigned acceptance that being fired as an employee makes more sense than being fired as a son reveals his complete resignation to his mother's dominance",
+      "craft_total": 8.22,
+      "impact_score": 8.17,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good awkward moment showing Ann's enthusiasm and subsequent embarrassment"
+      "explanation": "A beautifully constructed three-beat joke. The misunderstanding, Buster's protest, Lucille's clarification, and then Buster's 'Well, that makes more sense' is a complete comedic argument in four lines. The final line is the key: Buster accepts being fired by his mother as a MORE reasonable outcome than not being fired \u2014 perfect characterization of their relationship. High character integration and economy."
     },
     {
-      "index": 32,
-      "text": "And he's won three years in a row. Every year after his first junior year.",
+      "index": 40,
+      "text": "'I no does Buster anymore.' / Lindsay: 'Fine. I'll Dustbuster.'",
       "characters": [
-        "Ann"
-      ],
-      "joke_types": [
-        "observational",
-        "deadpan_understatement"
-      ],
-      "setup": "Describing Steve Holt's election dominance",
-      "punchline": "Matter-of-fact description of him being held back",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Efficient reveal of Steve's academic failures disguised as success"
-    },
-    {
-      "index": 33,
-      "text": "Well, that's like comparing apples and some fruit nobody's ever heard of.",
-      "characters": [
-        "Ann"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
-      ],
-      "setup": "Comparing Steve Holt's popularity to George Michael's",
-      "punchline": "Brutal assessment disguised as helpful analogy",
-      "craft_total": 7.88,
-      "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant subversion of clich\u00e9 phrase to deliver devastating comparison"
-    },
-    {
-      "index": 34,
-      "text": "You can't fire me. I'm your son. I'm firing you! I was firing Lupe.",
-      "characters": [
-        "Buster",
-        "Lucille"
-      ],
-      "joke_types": [
-        "escalation",
-        "misdirection"
-      ],
-      "setup": "Confusion over who's being fired",
-      "punchline": "Multiple people firing each other simultaneously",
-      "craft_total": 6.99,
-      "impact_score": 6.67,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation of family dysfunction with efficient resolution"
-    },
-    {
-      "index": 35,
-      "text": "I no does Buster anymore.",
-      "characters": [
-        "Lupe"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Lindsay asking Lupe to continue working",
-      "punchline": "Lupe's broken English refusing Buster specifically",
-      "craft_total": 6.56,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Character-specific speech pattern creates double meaning"
-    },
-    {
-      "index": 36,
-      "text": "Also, I don't think this is a real toilet.",
-      "characters": [
-        "Tobias"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "absurdist"
-      ],
-      "setup": "Tobias calling from set bathroom",
-      "punchline": "Discovering TV set bathroom isn't functional",
-      "craft_total": 7.21,
-      "impact_score": 7.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Logical consequence of living on TV set that Tobias discovers too late"
-    },
-    {
-      "index": 37,
-      "text": "You're a dirty cop, so Frank Wrench is going to clean you.",
-      "characters": [
-        "TV Show"
+        "Lupe",
+        "Lindsay"
       ],
       "joke_types": [
         "wordplay_pun",
-        "visual_gag"
+        "character_comedy"
       ],
-      "setup": "Tobias hiding in TV show bathroom",
-      "punchline": "Show dialogue about 'cleaning' criminals while Tobias needs actual cleaning",
-      "craft_total": 6.38,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Clever layering of show dialogue with Tobias's actual situation"
+      "setup": "Lindsay asks Lupe if she can at least come over to Dustbuster or something",
+      "punchline": "Lupe refuses, saying 'I no does Buster anymore' \u2014 a pun on 'Dustbuster' vs. 'Buster' (Lucille's son) \u2014 and Lindsay, missing the pun, takes 'Dustbuster' literally as a verb",
+      "craft_total": 8.36,
+      "impact_score": 8.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's best wordplay jokes. Lupe's 'I no does Buster anymore' functions simultaneously as refusing to clean (Dustbuster = vacuum verb) AND refusing involvement with Buster (the man), while Lindsay hears only the literal cleaning meaning. The economy is extraordinary \u2014 five words carry multiple meanings and land as a perfect button. Rewatch bonus because the Buster/Lupe implication is funnier with context."
     },
     {
-      "index": 38,
-      "text": "Four more years! Four more years!",
+      "index": 41,
+      "text": "Tobias calls from the fake TV set bathroom: 'Hey, I can't talk loudly. I'm in the bathroom of the Wrench set and they've started shooting. Also, I don't think this is a real toilet.'",
       "characters": [
-        "George Michael"
+        "Tobias"
       ],
       "joke_types": [
         "absurdist",
         "character_comedy"
       ],
-      "setup": "George Michael getting excited about running",
-      "punchline": "Using presidential re-election chant for student government",
-      "craft_total": 6.61,
-      "impact_score": 6.25,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Endearing overenthusiasm with inappropriate political reference"
+      "setup": "Tobias has been living on a TV set; he calls Lindsay",
+      "punchline": "He's discovered mid-call that the toilet in his 'apartment' is a prop \u2014 the casual 'also' making it a secondary concern after the filming schedule",
+      "craft_total": 8.02,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A payoff to the absurd setup of Tobias living on a TV set. The implication of what Tobias has been doing with a prop toilet is horrifying and funny in equal measure. 'Also, I don't think this is a real toilet' is a perfect afterthought \u2014 the casual 'also' makes it funnier by treating a significant discovery as secondary news. High quotability."
     },
     {
-      "index": 39,
-      "text": "It's a robot. I hate it. I miss Lupe.",
+      "index": 42,
+      "text": "Tobias, mid-call, says a line from the TV show he's on set for: 'You're a dirty cop, so Frank Wrench is going to clean you.' \u2014 then is discovered on set.",
       "characters": [
+        "Tobias"
+      ],
+      "joke_types": [
+        "absurdist",
+        "meta_self_referential"
+      ],
+      "setup": "Tobias is on the phone with Lindsay while hiding in the bathroom of a TV set during filming",
+      "punchline": "He speaks a line of the in-show TV dialogue mid-conversation \u2014 collapsing the boundary between his real life and the fictional TV show he's secretly living inside",
+      "craft_total": 7.59,
+      "impact_score": 7.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A meta joke about Tobias accidentally method-acting his way into a TV show. The line is amusing but the setup is better than the specific payoff here \u2014 it's the concept that's funny more than the specific line chosen."
+    },
+    {
+      "index": 43,
+      "text": "George Michael's campaign poster \u2014 'We're going to use your idea, and really highlight being chaste.' \u2014 the poster is shown to be deeply weird/explicitly religious in content",
+      "characters": [
+        "Ann",
+        "George Michael",
+        "Michael"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy"
+      ],
+      "setup": "Michael suggests the campaign shouldn't focus on the virgin angle",
+      "punchline": "Ann has already made a poster highlighting abstinence/Christianity that Michael can see is going to be disastrous \u2014 his horrified reaction to the poster is the visual beat",
+      "craft_total": 6.75,
+      "impact_score": 6.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke rests on Michael's visible horror at the poster and the gap between Ann's earnestness and how the poster will be received. Works as visual comedy and character beat, but we don't see the poster itself in transcript form, limiting its score."
+    },
+    {
+      "index": 44,
+      "text": "Gob to Lucille: 'Guess who's been fired.' / Lucille: 'Michael fired you?' / Gob: 'No, I fired him. But as a result, I'm no longer welcome in the office.'",
+      "characters": [
+        "Gob",
         "Lucille"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "irony_sarcasm"
       ],
-      "setup": "Lucille showing off robot replacement for Lupe",
-      "punchline": "Immediate regret and longing for fired employee",
-      "craft_total": 7.79,
-      "impact_score": 7.25,
-      "quotability": 6.0,
+      "setup": "Gob arrives at Lucille's having been removed from the office",
+      "punchline": "Gob's reframing \u2014 he fired Michael, therefore he's 'no longer welcome' \u2014 is pure face-saving revisionism that immediately collapses under its own logic. 'As a result' is the key: he acknowledges the causality while refusing the narrative",
+      "craft_total": 7.96,
+      "impact_score": 7.5,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Efficient character moment showing Lucille's impulsive decisions and immediate regret"
+      "is_callback": 1,
+      "explanation": "A superb Gob self-delusion joke. 'No, I fired him. But as a result, I'm no longer welcome in the office' is perfect logic-twisting \u2014 he accepts the factual outcome while insisting on his own narrative. The 'as a result' is the comedic engine: he knows what happened but refuses to name it correctly. Could only be Gob. High quotability."
     },
     {
-      "index": 40,
-      "text": "It's a robot. I hate it. I miss Lupe.",
+      "index": 45,
+      "text": "Lucille has replaced Lupe with a Roomba robot vacuum: 'It's a robot. I hate it. I miss Lupe.'",
       "characters": [
         "Lucille"
       ],
@@ -777,56 +892,77 @@
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Lucille introducing her new robotic housekeeper",
-      "punchline": "Immediate hatred and nostalgia for human help",
-      "craft_total": 6.9,
-      "impact_score": 6.75,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good character moment showing Lucille's immediate regret. The economy is perfect - three short sentences tell the whole story."
-    },
-    {
-      "index": 41,
-      "text": "My name is Phyllida Featherbottom, and I can cook and I can clean and I can take care of the little ones.",
-      "characters": [
-        "Tobias"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "absurdist"
-      ],
-      "setup": "New housekeeper at the door",
-      "punchline": "Obviously Tobias in drag with terrible accent",
-      "craft_total": 6.57,
-      "impact_score": 7.5,
-      "quotability": 6.5,
+      "setup": "Lucille says she's found a replacement for Lupe",
+      "punchline": "She's bought a robot vacuum, hates it, and immediately misses Lupe \u2014 her emotional attachment to a housekeeper revealed through the failure of the replacement",
+      "craft_total": 6.87,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Mrs. Doubtfire parody setup, relies on recognition but fits character perfectly"
+      "explanation": "Three sentences: reveal, reaction, admission. Perfectly economical. Lucille's cold exterior cracking slightly for Lupe is a tiny humanizing moment delivered as comedy. The Roomba visual gag (a very early reference to the then-novel product) adds texture."
     },
     {
-      "index": 42,
-      "text": "When you put a squirt of frosting down your throat before we take our medications...",
+      "index": 46,
+      "text": "Gob to Lucille about Lupe: 'I want you to be strong, and you don't need the comfort of an immigrant in Mother's old stirrup pants to make you feel that way.'",
       "characters": [
-        "Tobias"
+        "Gob"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Lucille says she misses Lupe; Gob tries to comfort her",
+      "punchline": "Gob's 'comfort' is a bizarre, condescending speech culminating in the specific visual detail of 'Mother's old stirrup pants' \u2014 inadvertently revealing what Lupe's work uniform actually looked like",
+      "craft_total": 7.46,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke is in the specificity: 'Mother's old stirrup pants' as Lupe's work uniform is both darkly funny (the indignity of the job) and tells a whole story about the Bluth household. Gob's condescension makes it worse while he thinks he's being supportive."
+    },
+    {
+      "index": 47,
+      "text": "Gob feeds/interacts with the Roomba as if it's a pet: 'Oh, you're hungry. There you go.'",
+      "characters": [
+        "Gob"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "absurdist"
       ],
-      "setup": "Tobias singing as Mary Poppins-style nanny",
-      "punchline": "Inappropriate lyrics about pills and frosting",
-      "craft_total": 6.95,
+      "setup": "The Roomba is moving around Lucille's apartment",
+      "punchline": "Gob anthropomorphizes the robot vacuum, apparently feeding it \u2014 possibly dropping something in its path \u2014 treating the machine like a pet",
+      "craft_total": 7.61,
       "impact_score": 7.17,
-      "quotability": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark twist on wholesome nanny songs, perfectly uncomfortable"
+      "explanation": "A quick visual absurdist beat that works off the Roomba's movement. Gob's childlike confusion about the machine is on-brand. 'Oh, you're hungry' is sweetly stupid."
     },
     {
-      "index": 43,
-      "text": "It was the exact plot of the film Mrs. Doubtfire. There was also some Mary Poppins in there.",
+      "index": 48,
+      "text": "Tobias arrives as 'Mrs. Featherbottom' \u2014 a female housekeeper from 'Blackstool' \u2014 wearing drag and a British accent",
+      "characters": [
+        "Tobias",
+        "Lindsay",
+        "Narrator"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "visual_gag"
+      ],
+      "setup": "Lindsay needs a new housekeeper; the agency apparently sends someone",
+      "punchline": "It's Tobias in elaborate drag \u2014 an explicit parody of Mrs. Doubtfire \u2014 with the name 'Featherbottom' (a barely-coded Tobias surname reference) and 'Blackstool' (a dark pun on Robin Williams' character's origin)",
+      "craft_total": 7.27,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A big character comedy moment. 'Featherbottom' (Tobias's name phonetically scrambled into something feminine and bird-like) and 'Blackstool' (a crude play on 'Shropshire' or similar British place names, but unmistakably scatological) signal that Tobias has committed fully to this. The narrator's deadpan acknowledgment \u2014 'It was the exact plot of Mrs. Doubtfire' \u2014 is the perfect self-aware button. High visual impact."
+    },
+    {
+      "index": 49,
+      "text": "Narrator: 'It was the exact plot of the film Mrs. Doubtfire. There was also some Mary Poppins in there.'",
       "characters": [
         "Narrator"
       ],
@@ -834,191 +970,214 @@
         "meta_self_referential",
         "deadpan_understatement"
       ],
-      "setup": "Tobias's elaborate disguise plan",
-      "punchline": "Narrator acknowledging the obvious movie references",
-      "craft_total": 6.99,
-      "impact_score": 6.83,
-      "quotability": 5.5,
+      "setup": "Tobias has arrived in drag as Mrs. Featherbottom, positioned to infiltrate his own family",
+      "punchline": "The narrator completely abandons any pretense of the show being original, flatly acknowledging two films being plagiarized and adding 'There was also some Mary Poppins in there' as a dry bonus",
+      "craft_total": 8.41,
+      "impact_score": 8.83,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Meta-commentary acknowledges the derivative nature, makes it intentional"
+      "explanation": "A genuinely great meta joke. The narrator's willingness to break the fourth wall and simply say 'this is exactly Mrs. Doubtfire' is more honest and funnier than trying to disguise the reference. 'There was also some Mary Poppins in there' as a throwaway addition is the perfect capper \u2014 it acknowledges complexity in the plagiarism. Maximum economy, high originality in the meta-comedic approach."
     },
     {
-      "index": 44,
-      "text": "From Blackstool. I'm charmed, I'm sure.",
+      "index": 50,
+      "text": "Michael: 'I'm not that perfect. I pushed George Michael into running for office and I think he's going to get crushed by this kid Steve Holt.' / Lindsay: 'Yeah, I'd vote for him.' / Michael: 'Well, too bad Dad's on the lam.'",
       "characters": [
-        "Tobias",
-        "Michael"
+        "Michael",
+        "Lindsay"
       ],
       "joke_types": [
         "character_comedy",
-        "wordplay_pun"
+        "dark_subversive"
       ],
-      "setup": "Introducing housekeeper's background",
-      "punchline": "Crude fake location name with overly formal response",
-      "craft_total": 6.66,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Michael and Lindsay are discussing parental failures",
+      "punchline": "Lindsay's immediate readiness to vote for the hot kid over her own nephew, and Michael's casual 'too bad Dad's on the lam' \u2014 normalizing a fugitive father as a voting inconvenience",
+      "craft_total": 7.33,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Juvenile place name humor, though the formal response adds character"
+      "is_callback": 1,
+      "explanation": "Two quick character beats: Lindsay's shallow vote and Michael's matter-of-fact fugitive reference. Both work as character comedy but the scene doesn't build to anything exceptional \u2014 it's connective tissue that earns decent laughs through character specificity."
     },
     {
-      "index": 45,
-      "text": "You and Gob were like those biblical brothers, Gallant and, um... Goofuth.",
+      "index": 51,
+      "text": "George Sr. has a religious awakening in the attic and tells Michael: 'Our Heavenly Father let his son die so that our sins could be absolved.' / Michael: 'Great, so you're a Christian now.'",
+      "characters": [
+        "George Sr.",
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Michael goes to ask George Sr. for help with dirty political tricks",
+      "punchline": "George Sr. \u2014 a man who committed massive fraud and is hiding from the law \u2014 has had a religious awakening; Michael's deadpan 'Great, so you're a Christian now' deflates it perfectly",
+      "craft_total": 7.59,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's flat dismissal of his fugitive criminal father's sudden Christianity is a great deadpan beat. The irony is layered \u2014 George Sr. citing 'letting his son die' to a son he's asking for help while hiding is rich, but it's Michael's 'Great, so you're a Christian now' that lands the laugh."
+    },
+    {
+      "index": 52,
+      "text": "Michael: 'I'll call the warden for you. You can ask him yourself.' / George Sr.: 'Well, I think that's for fresh crimes.'",
+      "characters": [
+        "Michael",
+        "George Sr."
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "deadpan_understatement"
+      ],
+      "setup": "George Sr. says he needs to seek forgiveness; Michael suggests calling the warden",
+      "punchline": "George Sr.'s logic that divine forgiveness is 'for fresh crimes' while his existing crimes are too established \u2014 casual acceptance of his criminality as a fixed condition",
+      "craft_total": 7.25,
+      "impact_score": 6.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "George Sr.'s casual legal taxonomy \u2014 'fresh crimes' vs. established ones \u2014 is darkly funny character comedy. His matter-of-fact acceptance of being a criminal while still parsing the spiritual mathematics of forgiveness is perfectly in character."
+    },
+    {
+      "index": 53,
+      "text": "George Sr. says Michael and Gob were like 'those biblical brothers, Gallant and... Goofuth.'",
       "characters": [
         "George Sr."
       ],
       "joke_types": [
+        "wordplay_pun",
         "character_comedy",
-        "wordplay_pun"
+        "absurdist"
       ],
-      "setup": "George Sr. making biblical comparison",
-      "punchline": "Confusing children's magazine with Bible, making up 'Goofuth'",
-      "craft_total": 7.73,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant confusion of cultural references creating absurd biblical name"
-    },
-    {
-      "index": 46,
-      "text": "See, the mere fact that you think you can says to me that I shouldn't let you.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
-      ],
-      "setup": "Gob offering to help with election campaign",
-      "punchline": "Michael's circular logic about Gob's confidence",
-      "craft_total": 7.33,
-      "impact_score": 6.75,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good sibling dynamic showing Michael's conflicted feelings about Gob's abilities"
-    },
-    {
-      "index": 47,
-      "text": "What do you expect, Mother? I'm half machine! I'm a monster!",
-      "characters": [
-        "Buster"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Robot maid not working properly",
-      "punchline": "Buster's melodramatic identification with broken machinery",
-      "craft_total": 7.57,
+      "setup": "George Sr. is having a religious awakening and draws a biblical parallel between Michael and Gob",
+      "punchline": "'Gallant and Goofuth' \u2014 a made-up biblical name that sounds like 'Goofus,' from the children's comic 'Highlights' magazine, mixed with biblical naming conventions \u2014 George Sr.'s religious knowledge is clearly makeshift",
+      "craft_total": 7.92,
       "impact_score": 7.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Buster dramatics connecting his prosthetic to the broken robot"
+      "explanation": "One of the episode's best jokes. 'Goofuth' perfectly captures George Sr.'s improvised religiosity \u2014 he's cobbling together Highlights magazine (Goofus & Gallant) with biblical name suffixes. The joke rewards cultural literacy (knowing Goofus & Gallant) while working on pure sound alone ('Goofuth' sounds inherently funny). George Sr.'s complete confidence in his invented biblical name is the final touch. High originality, high quotability, strong character integration \u2014 this is the kind of specific, layered joke AD is celebrated for."
     },
     {
-      "index": 48,
-      "text": "We hand out rubbers that say, 'We salute George Michael.'",
+      "index": 54,
+      "text": "Narrator: 'Michael realized that he had lived like Gallant, and if he wanted some dirty tricks to help his son's election, he would have to find Goofuth.'",
       "characters": [
-        "Gob"
+        "Narrator"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "callback",
+        "deadpan_understatement"
       ],
-      "setup": "Gob suggesting campaign strategy",
-      "punchline": "Completely inappropriate condom giveaway idea",
-      "craft_total": 6.91,
-      "impact_score": 6.83,
-      "quotability": 7.5,
+      "setup": "'Goofuth' has just been introduced as Gob's biblical parallel",
+      "punchline": "The narrator adopts 'Goofuth' as if it's an established term, using it as Gob's actual name in the narration \u2014 fully committing to George Sr.'s made-up mythology",
+      "craft_total": 8.0,
+      "impact_score": 8.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Gob inappropriate suggestion that misses the point entirely"
+      "is_callback": 1,
+      "explanation": "The narrator's immediate adoption of 'Goofuth' as legitimate terminology is a perfect comedic commitment. It doubles the joke \u2014 the first time is George Sr.'s invention, the second time is the show's narrator treating it as real. The structure of 'lived like Gallant / would have to find Goofuth' is elegant."
     },
     {
-      "index": 49,
-      "text": "2%, huh? Is that how little I lost by? Lost by? It was close. That's all you got.",
+      "index": 55,
+      "text": "Michael apologizes to Gob and manipulates him into helping: 'The guy that he's running against is basically a young you.' / Gob: 'Wow. Won't be easy to win a race against myself. Of course, if anyone can do it, I can.'",
       "characters": [
         "Michael",
         "Gob"
       ],
       "joke_types": [
-        "callback",
-        "escalation"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Gob calling Michael 'Two Percent'",
-      "punchline": "Michael fixating on the exact margin of his high school loss",
-      "craft_total": 7.01,
-      "impact_score": 6.75,
-      "quotability": 6.0,
+      "setup": "Michael needs Gob's help running George Michael's campaign against Steve Holt",
+      "punchline": "Gob's narcissism processes the opponent being 'a young him' as simultaneously a compliment (Steve is great-looking!) and a challenge (he must compete against his own greatness), concluding with self-congratulatory confidence",
+      "craft_total": 7.88,
+      "impact_score": 7.33,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback showing Michael's lingering sensitivity about old failure"
+      "is_callback": 0,
+      "explanation": "'Won't be easy to win a race against myself. Of course, if anyone can do it, I can' is a perfect Gob spiral \u2014 his narcissism trapping him in a logical loop that he resolves through more narcissism. The construction is elegant: the paradox set up and immediately resolved by Gob's unwavering self-belief."
     },
     {
-      "index": 50,
-      "text": "I'm sure wherever your father is right now, she loves you very, very much.",
+      "index": 56,
+      "text": "Michael: 'He just needs to beat the Indian kid.' \u2014 treating third place as the realistic campaign goal",
       "characters": [
-        "Tobias"
+        "Michael"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael is briefing Gob on the campaign strategy",
+      "punchline": "The campaign's entire ambition has been downgraded from 'win' to 'beat one specific person' \u2014 revealing how low George Michael's prospects actually are",
+      "craft_total": 7.18,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A callback to Ann's earlier assessment, now adopted as official campaign strategy. The joke is in the resigned specificity \u2014 not 'win' but 'beat the Indian kid' \u2014 which tracks with the episode's running thread of spectacularly lowered expectations."
+    },
+    {
+      "index": 57,
+      "text": "Michael: 'The mere fact that you think you can says to me that I shouldn't let you. Of course, we both need the work.'",
+      "characters": [
+        "Michael"
       ],
       "joke_types": [
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Tobias as nanny talking to Maeby about her father",
-      "punchline": "Gender confusion while being the absent father",
-      "craft_total": 7.99,
-      "impact_score": 8.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant irony - Tobias unknowingly counseling his own daughter about his absence while in disguise"
-    },
-    {
-      "index": 51,
-      "text": "Drought, starvation... these are the things my family has had to deal with for generations, although, fortunately, not since we moved to Corona del Mar.",
-      "characters": [
-        "Indian student"
-      ],
-      "joke_types": [
-        "misdirection",
-        "escalation"
-      ],
-      "setup": "Seemingly serious speech about hardship",
-      "punchline": "Reveals privileged Southern California upbringing",
-      "craft_total": 7.55,
-      "impact_score": 7.5,
+      "setup": "Gob says confidently 'if anyone can do it, I can'",
+      "punchline": "Michael's logic: Gob's confidence is itself evidence he should NOT be trusted, but financial necessity overrides good judgment. The self-aware concession 'we both need the work' is a rare Michael moment of honest pragmatism",
+      "craft_total": 7.78,
+      "impact_score": 7.25,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent misdirect subverting expectations about immigrant hardship narrative"
+      "explanation": "Michael's self-aware analysis \u2014 'his confidence is the problem' \u2014 followed immediately by capitulating anyway is a quietly excellent bit of character writing. It acknowledges Michael's intelligence while showing his compromise. The structure is sharp."
     },
     {
-      "index": 52,
-      "text": "Go home, you terrorist!",
+      "index": 58,
+      "text": "Lucille yells for 'Robot' (the Roomba) to answer the door: 'Robot'll get it. Where the hell is my maid? Robot!'",
       "characters": [
-        "Student"
+        "Lucille"
       ],
       "joke_types": [
-        "dark_subversive",
-        "cringe_discomfort"
+        "character_comedy",
+        "running_gag"
       ],
-      "setup": "Indian student's heartfelt campaign speech",
-      "punchline": "Racist heckling from student audience",
-      "craft_total": 6.29,
-      "impact_score": 6.5,
-      "quotability": 4.0,
+      "setup": "Lucille has replaced Lupe with a Roomba",
+      "punchline": "She's treating the Roomba as a fully functional servant, calling it 'Robot' and expecting it to answer the door",
+      "craft_total": 7.29,
+      "impact_score": 6.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark humor about prejudice, though somewhat predictable"
+      "is_callback": 1,
+      "explanation": "Lucille calling the Roomba 'Robot' as if it's a servant's name is a solid runner. Her complete inability to accept the Roomba's limitations as a door-answering butler captures her character well."
     },
     {
-      "index": 53,
-      "text": "This kid's popular? Looks like a chick I did once in high school.",
+      "index": 59,
+      "text": "Buster is vacuuming with the Roomba strapped to his hook arm: 'What do you expect, Mother? I'm half machine! I'm a monster!'",
+      "characters": [
+        "Buster"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Lucille calls for 'Robot' to do chores; the Roomba is elsewhere",
+      "punchline": "Buster has attached the Roomba to his hook hand \u2014 becoming a cyborg vacuum cleaner \u2014 and is having an existential crisis about being 'half machine'",
+      "craft_total": 8.6,
+      "impact_score": 9.17,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's single best joke. Two running gags from the episode (Buster's hook hand and Lucille's Roomba) collide to create something entirely new: Buster as a literal man-machine hybrid, having a melodramatic breakdown about his monstrousness. 'I'm half machine! I'm a monster!' is perfectly calibrated Buster \u2014 his theatrical self-pity applied to a genuinely absurd physical situation. The visual (a grown man with a vacuum robot attached to a hook arm) is pure AD DNA: specific, escalating, character-rooted. High quotability, high rewatch value, and it works on every level from pure slapstick to character tragedy. This approaches the caliber of the vasectomy anchor joke."
+    },
+    {
+      "index": 60,
+      "text": "Campaign strategy meeting \u2014 Gob suggests handing out condoms labeled 'We salute George Michael': 'We hand out rubbers that say, We salute George Michael.'",
       "characters": [
         "Gob"
       ],
@@ -1026,148 +1185,587 @@
         "character_comedy",
         "dark_subversive"
       ],
-      "setup": "Watching Steve Holt's campaign video",
-      "punchline": "Gob's crude assessment and boast",
-      "craft_total": 6.93,
-      "impact_score": 6.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Classic Gob crudeness that will have major payoff later in series"
-    },
-    {
-      "index": 54,
-      "text": "Steve Holt is a bastard. He doesn't even know who his real father is.",
-      "characters": [
-        "Campaign video"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "escalation"
-      ],
-      "setup": "Attack ad against Steve Holt",
-      "punchline": "Using literal definition of 'bastard' as attack",
-      "craft_total": 7.53,
-      "impact_score": 7.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Clever use of word's dual meaning for political attack, sets up series-long arc"
-    },
-    {
-      "index": 55,
-      "text": "The girls like him just fine. Young and old, it doesn't matter... in the dark.",
-      "characters": [
-        "Campaign video"
-      ],
-      "joke_types": [
-        "escalation",
-        "cringe_discomfort"
-      ],
-      "setup": "Positive campaign message about George Michael",
-      "punchline": "Increasingly inappropriate implications about age and darkness",
-      "craft_total": 6.8,
-      "impact_score": 7.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Uncomfortable escalation that makes innocent campaign sound creepy"
-    },
-    {
-      "index": 56,
-      "text": "Uh-oh... I couldn't find another tape.",
-      "characters": [
-        "George Michael"
-      ],
-      "joke_types": [
-        "escalation",
-        "cringe_discomfort"
-      ],
-      "setup": "Embarrassing campaign video",
-      "punchline": "Forced to show the Star Wars footage",
-      "craft_total": 7.2,
-      "impact_score": 7.75,
-      "quotability": 4.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Callback to earlier embarrassment creates maximum cringe moment"
-    },
-    {
-      "index": 57,
-      "text": "No, I tied with 'Bart Simpson' and 'School Sucks.'",
-      "characters": [
-        "George Michael"
-      ],
-      "joke_types": [
-        "escalation",
-        "deadpan_understatement"
-      ],
-      "setup": "George Michael saying he did better than his dad",
-      "punchline": "Tied with joke write-in candidates",
-      "craft_total": 7.28,
-      "impact_score": 7.17,
+      "setup": "Michael and Gob are planning George Michael's campaign; Gob has ideas",
+      "punchline": "Gob's first campaign idea is distributing condoms \u2014 a near-perfect inversion of the campaign's Christian abstinence message, and also using 'salute' with condoms creates an implicit crude visual",
+      "craft_total": 7.78,
+      "impact_score": 7.67,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deflation of any pride in beating his father's record"
+      "explanation": "Gob's complete obliviousness to the campaign's Christian messaging, combined with the phallic double meaning of 'salute,' makes this a tight Gob joke. The specific phrasing 'We salute George Michael' as a condom tagline is bizarre and funny."
     },
     {
-      "index": 58,
-      "text": "George Michael... was that really you doing those light saber moves? You were incredible.",
+      "index": 61,
+      "text": "'Uh, good point, Two Percent.' / '2%, huh? Is that how little I lost by?' / 'Lost by?' / 'It was close.' / 'That's all you got.'",
       "characters": [
-        "Student"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Expected mockery after embarrassing video",
-      "punchline": "Genuine admiration for the Star Wars skills",
-      "craft_total": 7.27,
-      "impact_score": 7.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Excellent subversion - embarrassment becomes source of admiration"
-    },
-    {
-      "index": 59,
-      "text": "Yoo-hoo! I'll take you the rest of the way!",
-      "characters": [
-        "Lindsay"
+        "Gob",
+        "Michael"
       ],
       "joke_types": [
         "callback",
-        "visual_gag"
+        "character_comedy"
       ],
-      "setup": "Episode ending with various resolutions",
-      "punchline": "Lindsay still trying to trick people into cleaning",
-      "craft_total": 7.13,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Gob dismisses Michael as 'Two Percent' as a jab about his earlier admission",
+      "punchline": "Michael immediately interprets '2%' as the margin of his lost election (revealing he does remember details) \u2014 Gob's 'That's all you got' is a devastating close",
+      "craft_total": 8.15,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good callback showing Lindsay learned nothing from earlier experience"
+      "explanation": "A brilliant callback payoff. Michael spent the earlier scene insisting he 'can't remember' whether he won \u2014 now '2%' triggers an immediate, precise memory of the exact margin. He DOES remember; he was lying. Gob's 'That's all you got' is a perfect closer that acknowledges the pathos. The structural callback to an earlier scene is executed with economy and character precision."
     },
     {
-      "index": 60,
-      "text": "Well, we got some bad news. Wow. Is that what's going to happen to my hair?",
+      "index": 62,
+      "text": "Ann storms out of the campaign meeting: 'I can't support this.' / Gob: 'And neither can the Christian kids that were going to make you president.' / Michael: 'She's wh... Ann?' / 'I think she's really upset about this.' / 'She'll forgive you. You're George Michael!'",
       "characters": [
-        "Lab worker",
+        "Ann",
+        "Gob",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "The campaign team is discussing going negative against Steve Holt; Ann objects",
+      "punchline": "Gob's immediate political calculation about the Christian vote, Michael's failure to even recognize Ann at first ('She's wh... Ann?'), and then Gob's confidence that Ann will forgive because 'You're George Michael' \u2014 a running joke about his name",
+      "craft_total": 7.25,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A multi-beat scene with several smaller jokes: Michael's 'She's wh...' reaction beat (he literally doesn't recognize her), Gob's cold political calculus about Christian voters, and the 'You're George Michael!' name joke runner. Competent ensemble comedy."
+    },
+    {
+      "index": 63,
+      "text": "Mrs. Featherbottom gives Maeby 'fun-fun' (phen-phen): 'Now take your fun-fun.' / Maeby: 'This is my mom's. And it's Phen-phen. And it's been banned by the FDA.'",
+      "characters": [
+        "Tobias",
+        "Maeby"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Tobias/Mrs. Featherbottom is acting as the family's nanny",
+      "punchline": "He's dosing Maeby with Lindsay's banned diet drug while calling it 'fun-fun' \u2014 Maeby has to correct him on both the name and the drug's legal status",
+      "craft_total": 7.82,
+      "impact_score": 7.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke layers multiple comedic elements: Tobias in drag giving controlled substances to a minor, the FDA-banned drug belonging to Lindsay (character detail), and Maeby's exhausted correction. Dark but well-constructed."
+    },
+    {
+      "index": 64,
+      "text": "Mrs. Featherbottom sings a song about reading medication labels \u2014 a Mary Poppins-style number about a mundane FDA topic",
+      "characters": [
+        "Tobias"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Tobias is playing the role of a singing nanny (Mrs. Doubtfire/Mary Poppins pastiche)",
+      "punchline": "The song is about reading prescription drug labels \u2014 a grimly practical topic delivered with full musical theater enthusiasm",
+      "craft_total": 7.08,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The gap between the whimsical musical delivery and the mundane/dark subject (FDA-banned diet drugs) is the joke. Tobias's theatrical instincts applied to a deeply inappropriate context is classic character comedy. The specific content isn't quoted at length but the concept is solid."
+    },
+    {
+      "index": 65,
+      "text": "Tobias as Mrs. Featherbottom: 'I'm sure wherever your father is right now, she loves you very, very much.' / Maeby: 'Not enough to be honest with me.'",
+      "characters": [
+        "Tobias",
+        "Maeby"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Tobias (disguised as a female housekeeper) is talking to Maeby about her absent father",
+      "punchline": "He refers to 'your father' as 'she' \u2014 his disguise identity bleeding into his description of himself \u2014 while Maeby's response is genuinely cutting and he doesn't realize she's talking TO him",
+      "craft_total": 8.09,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. Tobias accidentally uses 'she' for 'your father' \u2014 either a slip of his disguise, a deep ambiguity about his gender identity, or both. Then Maeby's genuinely painful response ('Not enough to be honest with me') hits him directly without him understanding it's aimed at him. The cringe layers perfectly: dramatic irony, gender comedy, and real emotional pain in the same breath. Only possible with these specific characters in this specific situation."
+    },
+    {
+      "index": 66,
+      "text": "Tobias as Mrs. Featherbottom to Maeby: 'I'm sure wherever your father is right now, she loves you very, very much.'",
+      "characters": [
+        "Tobias",
+        "Maeby"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Tobias is trying to connect with Maeby while in disguise; he refers to her absent father in third person",
+      "punchline": "He accidentally uses 'she' for the father \u2014 either because he's slipping out of character or because of his gender presentation issues \u2014 and neither of them reacts to the pronoun slip",
+      "craft_total": 8.16,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's finest moments. The pronoun slip 'she loves you very, very much' \u2014 referring to the father \u2014 is either Tobias's subconscious femininity breaking through or him accidentally breaking character, or both simultaneously. The show doesn't explain it; it trusts the audience. Perfect character integration and exceptional rewatch value."
+    },
+    {
+      "index": 67,
+      "text": "George Michael's campaign video features him as an immigrant child \u2014 set in a famine \u2014 in Corona del Mar: 'Drought, starvation \u2014 these are the things my family has had to deal with for generations, although, fortunately, not since we moved to Corona del Mar.'",
+      "characters": [
+        "George Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "George Michael's campaign video begins with a dramatic portrayal of generational hardship",
+      "punchline": "The hardship claim is immediately undercut by the 'not since we moved to Corona del Mar' qualifier \u2014 the Bluths are fabulously wealthy, and the qualification destroys any attempt at pathos",
+      "craft_total": 7.96,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A beautifully constructed self-undermining statement. The setup creates the false impression of genuine hardship; the qualifier blows it up. 'Although, fortunately, not since we moved to Corona del Mar' is precisely the right amount of specific (a wealthy Orange County enclave) to maximize the irony. The confidence of the delivery as if it's still a moving claim is perfect."
+    },
+    {
+      "index": 68,
+      "text": "Audience member yells 'Go home, you terrorist!' at George Michael's immigrant-themed campaign video",
+      "characters": [
+        "Audience member"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "reaction_beat"
+      ],
+      "setup": "George Michael's campaign video presents him with an immigrant backstory",
+      "punchline": "An audience member's immediate, offensive non-sequitur response reveals the campaign video has backfired spectacularly",
+      "craft_total": 7.06,
+      "impact_score": 7.0,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A dark joke about the video's reception, but relies on audience members being casually racist rather than any genuine wit. The character integration is low (it's a nameless audience member). It works as escalating disaster comedy but isn't particularly original."
+    },
+    {
+      "index": 69,
+      "text": "Gob: 'How stupid do you have to be to say something like that?' \u2014 immediately after yelling offensive comments at the screen himself",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "An audience member yells 'Go home, you terrorist!' at George Michael's video",
+      "punchline": "Gob, who has apparently been making similar or worse comments, criticizes the person for saying it \u2014 completely unaware of his own hypocrisy",
+      "craft_total": 8.13,
+      "impact_score": 8.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Gob's total lack of self-awareness \u2014 immediately criticizing someone for doing exactly what he's been doing \u2014 is perfectly Gob. The joke is in the gap between his moral pronouncement and his own behavior, implied by context."
+    },
+    {
+      "index": 70,
+      "text": "Gob to Michael: 'Sure you didn't make that video in a cave?!'",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "George Michael's campaign video has been revealed to be a disaster; Michael confronts Gob about it",
+      "punchline": "Gob's criticism of the video is to insult Michael for producing something that looks like terrorist propaganda \u2014 again, without noting that he produced it",
+      "craft_total": 7.28,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A decent line but relies on post-9/11 'cave' imagery that dates the joke. The Gob hypocrisy is funnier in concept than in this specific line."
+    },
+    {
+      "index": 71,
+      "text": "Steve Holt's campaign video was produced by Ann Veal \u2014 revealed as a surprise",
+      "characters": [
+        "Narrator",
+        "Ann"
+      ],
+      "joke_types": [
+        "misdirection",
+        "irony_sarcasm"
+      ],
+      "setup": "Ann stormed out of George Michael's campaign over ethics; we expect her to be sidelined",
+      "punchline": "Ann immediately pivoted to managing the opposing campaign \u2014 her moral objection was less about values than about picking a winner",
+      "craft_total": 7.83,
+      "impact_score": 7.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A great character revelation \u2014 Ann's principled departure was actually strategic positioning. It retroactively reframes her as more calculating than her bland exterior suggests, which is one of the show's favorite moves with 'background' characters. Rewatch bonus because her 'I can't support this' now reads as negotiation, not ethics."
+    },
+    {
+      "index": 72,
+      "text": "Steve Holt's campaign video begins \u2014 'Hi, I'm Steve Holt' \u2014 and everyone's reaction: 'This kid's popular? / Looks like a chick I did once in high school. / Get a haircut!'",
+      "characters": [
+        "Steve Holt",
+        "Gob",
+        "Audience"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Steve Holt has been built up as the most popular kid in school",
+      "punchline": "Steve Holt looks nothing like a traditional heartthrob \u2014 the audience reactions (including Gob recognizing him as resembling someone he 'did') are the joke",
+      "craft_total": 8.46,
+      "impact_score": 8.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The subverted expectation (most popular kid doesn't look the part) is enhanced by Gob's recognition line \u2014 which will pay off immediately as a major plot point. Gob's 'Looks like a chick I did once in high school' is darkly funny and seeds the revelation."
+    },
+    {
+      "index": 73,
+      "text": "Steve Holt's video: '...but recently I've been dealing with the fact that I've never known my father. But I finally found a new father. You're probably wondering what these footsteps are. Well, this is my second take. It's kind of like a second chance.'",
+      "characters": [
         "Steve Holt"
       ],
       "joke_types": [
-        "visual_gag",
-        "escalation"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Steve Holt getting DNA results about his father",
-      "punchline": "More concerned about inherited baldness than identity",
-      "craft_total": 7.26,
-      "impact_score": 7.5,
-      "quotability": 6.0,
+      "setup": "Steve's heartfelt campaign video about not knowing his father",
+      "punchline": "The video includes an accidental meta-commentary \u2014 'This is my second take. It's kind of like a second chance' \u2014 treating a filmmaking slip as profound metaphor, revealing Steve's accidental poetry",
+      "craft_total": 7.77,
+      "impact_score": 7.75,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Steve's vanity over deeper concerns, sets up series arc"
+      "explanation": "Steve's accidental profundity \u2014 turning 'this is my second take' into a metaphor for second chances \u2014 is sweetly absurd. It also seeds the fatherhood revelation. The video is clearly terrible and yet lands better than George Michael's. Rewatch bonus for the Gob connection."
+    },
+    {
+      "index": 74,
+      "text": "Michael: 'Yeah, okay. We need to pull the videotape.' / Gob: 'My tape? Why?' / Michael: 'I made a huge mistake.' \u2014 George Michael's tape has already gone out; Steve Holt's video has revealed he doesn't know his father",
+      "characters": [
+        "Michael",
+        "Gob"
+      ],
+      "joke_types": [
+        "escalation",
+        "irony_sarcasm"
+      ],
+      "setup": "Steve's video reveals he's searching for his unknown father; Michael panics about the attack video",
+      "punchline": "Michael's realization that attacking a kid searching for his absent father will look monstrous \u2014 the moral panic of a political mistake \u2014 while it's too late to stop it",
+      "craft_total": 7.2,
+      "impact_score": 6.83,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A solid escalation beat that drives the plot while being funny. The political instinct ('pull the tape') colliding with too-late realization is functionally comedic but not exceptional as a standalone joke \u2014 it's structural comedy."
+    },
+    {
+      "index": 75,
+      "text": "George Michael's attack video: 'Steve Holt is a bastard. He doesn't even know who his real father is.' \u2014 while his video plays, the audience sees Steve Holt's genuine emotion from his own video",
+      "characters": [
+        "George Michael (video)"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "dark_subversive"
+      ],
+      "setup": "George Michael's negative attack ad runs after Steve's heartfelt video about his unknown father",
+      "punchline": "The attack ad accidentally uses the word 'bastard' in the literal sense (unknown father) immediately after Steve's video made his fatherlessness sympathetic \u2014 the timing is spectacularly cruel and catastrophic",
+      "craft_total": 8.19,
+      "impact_score": 8.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A beautifully timed catastrophic escalation. The word 'bastard' landing immediately after Steve's video about never knowing his father makes it simultaneously cruel and technically accurate \u2014 the gap between intent and reception at its comedic peak. The structure is perfect cringe comedy."
+    },
+    {
+      "index": 76,
+      "text": "George Michael's video: 'His dad is a powerful executive, working for this man.' \u2014 followed by footage of George Bluth Sr., a federal fugitive",
+      "characters": [
+        "George Michael (video)",
+        "George Sr."
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "irony_sarcasm"
+      ],
+      "setup": "George Michael's attack video is trying to make HIM look good by citing his father's connections",
+      "punchline": "The 'powerful executive' turns out to be a federal fugitive wanted for fraud and treason \u2014 the positive credential instantly becomes a negative one",
+      "craft_total": 7.69,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Another self-undermining credential. George Michael's endorsement by association with 'a powerful executive' immediately collapses when the executive is revealed to be a wanted man. Rewatch bonus because of how the season's arc enriches the joke."
+    },
+    {
+      "index": 77,
+      "text": "George Michael's video: 'The girls like him just fine. Young and old, it doesn't matter... in the dark.'",
+      "characters": [
+        "George Michael (video)"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "cringe_discomfort"
+      ],
+      "setup": "George Michael's video is trying to make him seem sexually appealing to voters",
+      "punchline": "'In the dark' as a qualifier to girls liking him regardless of age suggests something much darker \u2014 the campaign video has apparently descended into something deeply inappropriate",
+      "craft_total": 8.09,
+      "impact_score": 8.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'in the dark' qualifier transforms an already-strange boast into something genuinely sinister. Gob's creative vision applied to a high school election produces something that would end careers. Economy is good \u2014 the implication is maximally dark for three words."
+    },
+    {
+      "index": 78,
+      "text": "Gob: 'That's why you had me do that?' \u2014 Gob apparently didn't realize the intended purpose of the scenes he shot",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "George Michael's attack video has been playing to horrified reactions",
+      "punchline": "Gob's question implies he filmed the content under a different pretense \u2014 he didn't know what it was for, which raises the question of what he thought he WAS doing",
+      "craft_total": 7.24,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick reaction beat that implies more than it states. The implication that Gob filmed 'in the dark' footage without understanding its purpose (or understanding it all too well) is funny but underdeveloped."
+    },
+    {
+      "index": 79,
+      "text": "The Star Wars footage appears mid-attack-video: 'Uh-oh... I couldn't find another tape.'",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "callback",
+        "escalation"
+      ],
+      "setup": "George Michael's attack video is already a disaster; there's a further escalation",
+      "punchline": "The George Michael Star Wars reenactment footage (from the episode's opening) has been accidentally spliced into the attack ad \u2014 the most embarrassing possible addition to an already catastrophic video",
+      "craft_total": 8.48,
+      "impact_score": 8.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A masterful callback payoff. The Star Wars footage \u2014 established 16 minutes earlier as George Michael's most embarrassing secret \u2014 resurfaces in the worst possible context (a political attack ad). 'I couldn't find another tape' is a deadpan explanation that makes it worse. The narrative economy is exceptional: one detail planted at the top of the episode pays off at the climax. Structure is near-perfect \u2014 setup, forgetting, devastating return. This earns its high score."
+    },
+    {
+      "index": 80,
+      "text": "The assembly audience's reaction: 'I liked Steve's more.'",
+      "characters": [
+        "Audience member"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "George Michael's catastrophically embarrassing attack video (ending with Star Wars footage) has just finished",
+      "punchline": "An audience member's flat, polite preference for the opposing video is the understatement that summarizes the disaster",
+      "craft_total": 7.31,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfect deadpan economy. Four words describing the scale of the campaign disaster with maximum understatement. Character integration is low (anonymous audience member) but the timing and restraint are excellent."
+    },
+    {
+      "index": 81,
+      "text": "Post-election results: Steve got 'Steve dropped out of the race. He wants to spend time finding his real father.' / Rav Nadir wins with 97% / 'That leaves 3%.' / 'You did better than I did when I ran.' / 'No, I tied with Bart Simpson and School Sucks.'",
+      "characters": [
+        "Michael",
+        "George Michael"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "The election results are delivered after the video disaster",
+      "punchline": "A cascade of humiliations: Steve drops out (making the negative campaign pointless), the Indian kid wins 97%, George Michael gets 3%, Michael claims this is better than his own run, George Michael reveals he tied with protest votes 'Bart Simpson' and 'School Sucks'",
+      "craft_total": 8.34,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's climactic joke sequence. Each beat escalates the disaster: Steve's exit makes the campaign pointless; 97% for Rav Nadir is shocking; Michael's consolation ('you did better than I did') is immediately punctured by 'I tied with Bart Simpson and School Sucks.' The protest vote specificity \u2014 two culturally perfect protest votes \u2014 is the peak of the sequence. Masterful escalating structure that pays off multiple episode threads simultaneously."
+    },
+    {
+      "index": 82,
+      "text": "As George Michael laments, a kid walks by and says: 'Hey, Star Dork!' / Michael: 'Hey, he knows you now.'",
+      "characters": [
+        "Michael",
+        "George Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Michael has been trying to raise George Michael's self-esteem by running for office",
+      "punchline": "The only result of the entire campaign is that George Michael is now known as 'Star Dork' \u2014 Michael's positive spin on this is simultaneously loving and delusional",
+      "craft_total": 7.91,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A perfect closing beat for the episode's main story. Michael's delusional optimism \u2014 'Hey, he knows you now' \u2014 as consolation for the worst possible nickname is quintessential AD: the gap between Michael's good intentions and catastrophic outcomes, delivered with his characteristic spin. 'Hey, he knows you now' is one of the episode's most quotable lines."
+    },
+    {
+      "index": 83,
+      "text": "Ann finds the Star Wars footage endearing and asks George Michael to 'grab a current rod' and come over",
+      "characters": [
+        "Ann",
+        "George Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "George Michael thinks the Star Wars footage has destroyed his life",
+      "punchline": "Ann \u2014 the only person who finds it attractive \u2014 uses it to invite George Michael over; 'grab a current rod' (a lightsaber) reveals she wants to do Star Wars reenactments with him",
+      "craft_total": 7.67,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A sweet and funny payoff for George Michael's arc. Ann's enthusiasm for the lightsaber footage \u2014 treating it as attractive rather than embarrassing \u2014 is a perfect character note that recontextualizes her. 'Current rod' (a term for lightsaber that Ann apparently knows) reveals her own nerd credentials."
+    },
+    {
+      "index": 84,
+      "text": "Ann watches George Michael's Star Wars moves and says: 'You were incredible. I've only gotten better.' George Michael casually confirms he's still doing lightsaber choreography",
+      "characters": [
+        "Ann",
+        "George Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "George Michael is humiliated by the Star Wars video playing at school",
+      "punchline": "Ann \u2014 his devout religious girlfriend \u2014 is genuinely moved by his lightsaber moves; and George Michael admits he's continued practicing \u2014 at his age",
+      "craft_total": 8.25,
+      "impact_score": 8.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A warm and funny resolution. The joke is that the thing George Michael was most ashamed of is what makes Ann fall more in love with him \u2014 and that he's still doing it. 'I've only gotten better' is both dorky and endearing. Perfect character integration for both characters."
+    },
+    {
+      "index": 85,
+      "text": "Ann: 'So, you want to grab a current rod and go over to my place?' \u2014 clearly referring to lightsaber practice equipment; George Michael: 'Wow, I'd love that.'",
+      "characters": [
+        "Ann",
+        "George Michael"
+      ],
+      "joke_types": [
+        "misdirection",
+        "cringe_discomfort"
+      ],
+      "setup": "Ann has just praised George Michael's lightsaber moves",
+      "punchline": "'Grab a current rod and go over to my place' sounds like a sexual invitation but refers to lightsaber/neon practice equipment \u2014 a callback to the episode's sexual misdirection motif with these characters",
+      "craft_total": 8.0,
+      "impact_score": 7.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good callback to the episode's running misdirection gag with Ann and George Michael. 'Current rod' sounds suggestive but is actually a prop weapon. The show has been doing this all episode, and this is a satisfying closing beat on that motif."
+    },
+    {
+      "index": 86,
+      "text": "Michael watches George Michael and Ann depart and says to himself: 'Got to do something about that kid's self-esteem.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "George Michael is happy because Ann likes his Star Wars video; Michael has just watched the entire election disaster unfold",
+      "punchline": "Michael's conclusion \u2014 delivered after a successful resolution for George Michael \u2014 is still 'I need to fix his self-esteem,' missing that George Michael is fine and the problem was Michael's own interference",
+      "craft_total": 8.37,
+      "impact_score": 8.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A perfect episode button. The line calls back to Michael's opening mission ('I've got to work on that boy's self-esteem') and closes the circle: despite the entire election disaster being Michael's fault, he still arrives at the same conclusion. His inability to see that he's the problem is a key Michael character flaw, delivered with maximum economy. Bookending the episode's theme with the identical sentiment is elegant writing."
+    },
+    {
+      "index": 87,
+      "text": "Michael watching them leave: 'Got to do something about that kid's self-esteem.' \u2014 the very problem he set out to fix, now worse",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "callback",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael began the episode wanting to help George Michael's self-esteem; his intervention has caused humiliation",
+      "punchline": "Michael ends up back where he started \u2014 George Michael's self-esteem still a problem, now compounded by public humiliation \u2014 and Michael hasn't learned anything",
+      "craft_total": 7.96,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The closing button perfectly mirrors the episode's opening concern, but Michael has made everything worse and learned nothing. This is classic sitcom structure used with AD's characteristic irony \u2014 the hero fails, nothing changes, and he still doesn't get it. Good economy."
+    },
+    {
+      "index": 88,
+      "text": "Lucille calls to Lupe: 'Yoo-hoo! I'll take you the rest of the way!' \u2014 reprising Lindsay's intercepting move from the opening",
+      "characters": [
+        "Lucille"
+      ],
+      "joke_types": [
+        "callback",
+        "running_gag"
+      ],
+      "setup": "Narrator: 'Lucille finds a housekeeper that she won't lose her son to'",
+      "punchline": "Lucille is now intercepting Lupe herself \u2014 having fired her and then decided she needs her back \u2014 with the exact same ruse Lindsay used at the episode's opening",
+      "craft_total": 8.42,
+      "impact_score": 8.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A structural callback that rewards the attentive viewer. The exact scenario from the episode's cold open \u2014 intercepting Lupe mid-journey \u2014 is now reversed and reprised by Lucille. The narrator's 'a housekeeper she won't lose her son to' is a pointed reference to the Buster/Lupe revelation. Perfect structural symmetry and strong character comedy: Lucille adopts Lindsay's exact petty move."
+    },
+    {
+      "index": 89,
+      "text": "Steve Holt tracks down his real father \u2014 the scene cuts to Gob. Steve: 'I've been wondering my whole life who he is. A scientist, a doctor, a senator...' / Narrator: 'Well, we got some bad news.'",
+      "characters": [
+        "Steve Holt",
+        "Gob",
+        "Narrator"
+      ],
+      "joke_types": [
+        "misdirection",
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Steve Holt has been searching for his father after his video; he finally finds him",
+      "punchline": "His father is Gob \u2014 a revelation set up by Gob's 'looks like a chick I did once in high school' reaction. 'We got some bad news' is the perfect deadpan close from the narrator. Steve's list of what his father might be (scientist, doctor, senator) makes the reality of 'Gob' maximally deflating",
+      "craft_total": 9.02,
+      "impact_score": 9.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's best joke and one of the best in the series. A perfectly planted and executed revelation: Gob's throwaway line ('looks like a chick I did once in high school') was simultaneously a recognition and a parentage confession \u2014 paid off here. Steve's aspirational list of what his father might be (scientist, doctor, senator) lands against the cut to Gob with maximum impact. The narrator's 'Well, we got some bad news' is a 10/10 button. The joke rewards attentive viewers across 40 minutes while working as an immediate gut-punch. Everything about this is earned: the foreshadowing, the escalation through Steve's video, the reveal structure. Approaches the vasectomy benchmark."
     }
   ],
   "air_date": "2005-03-20",

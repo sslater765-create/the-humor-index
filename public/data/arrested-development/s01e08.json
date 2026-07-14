@@ -4,97 +4,138 @@
   "season": 1,
   "episode_number": 8,
   "title": "My Mother, The Car",
-  "humor_index": 83.8,
-  "jpm": 2.62,
-  "avg_craft": 7.36,
-  "avg_impact": 6.89,
-  "total_jokes": 63,
-  "war": 70.9,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"deadpan_understatement\"]",
-  "standout_joke_ids": "[7, 16, 25]",
+  "humor_index": 97.2,
+  "jpm": 3.33,
+  "avg_craft": 7.78,
+  "avg_impact": 7.49,
+  "total_jokes": 80,
+  "war": 130.8,
+  "dominant_joke_types": "[\"character_comedy\", \"setup_punchline\", \"irony_sarcasm\"]",
+  "standout_joke_ids": "[24, 71, 63]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "I enjoy bicentennials as much as the next guy, Mom, but we're not doing that.",
+      "text": "Narrator: 'Michael Bluth was fed up with his mother's extravagant spending.' Cut to Lucille asking for a yacht crew to throw the most lavish party this town has ever seen.",
       "characters": [
-        "Michael"
+        "Narrator",
+        "Michael",
+        "Lucille"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "absurdist"
+        "irony_sarcasm",
+        "setup_punchline"
       ],
-      "setup": "Lucille wants to throw the most lavish birthday party ever",
-      "punchline": "Michael treats it like it's a 200-year celebration instead of her birthday",
-      "craft_total": 7.43,
+      "setup": "Narrator frames Michael as trying to cut back on spending.",
+      "punchline": "Lucille immediately reveals she wants a yacht crew for the most lavish party this town has ever seen \u2014 the opposite of cutting back.",
+      "craft_total": 7.05,
       "impact_score": 6.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan misunderstanding that reveals Michael's exasperation. The word 'bicentennial' is so specific and absurd in this context, and delivered with Michael's characteristic dry precision."
+      "explanation": "A classic AD structural joke: the narrator sets up an expectation that the scene immediately obliterates. Strong character integration for Lucille \u2014 this is entirely her brand of oblivious excess. Not a standout but efficiently sets the episode's comic engine."
     },
     {
       "index": 2,
-      "text": "Buster had been avoiding Lucille Austero since he accidentally flirted with her while not wearing his glasses. And then accidentally bid on her at a charity bachelorette auction. And then accidentally entered her apartment, thinking it was his mother's.",
-      "characters": [
-        "Narrator",
-        "Buster"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Narrator explains why Buster is avoiding Lucille 2",
-      "punchline": "Three escalating 'accidents' that clearly weren't accidents",
-      "craft_total": 7.55,
-      "impact_score": 6.83,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Classic AD escalation structure with perfect character specificity. The repeated 'accidentally' becomes funnier with each implausible scenario."
-    },
-    {
-      "index": 3,
-      "text": "Ten thousand dollars! Buster.",
-      "characters": [
-        "Buster",
-        "Lucille Austero"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
-      ],
-      "setup": "Flashback to the charity auction",
-      "punchline": "Buster's shocked reaction to his own astronomical bid",
-      "craft_total": 7.44,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Visual comedy gold - Buster's panicked realization paired with the absurd amount makes this land perfectly."
-    },
-    {
-      "index": 4,
-      "text": "Oh, here comes the 10:15 conniption, right on time.",
+      "text": "'To throw the most lavish party this town has ever seen for my birthday.'",
       "characters": [
         "Lucille"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "deadpan_understatement"
       ],
-      "setup": "Buster starts panicking",
-      "punchline": "Lucille treats his panic attacks like scheduled appointments",
-      "craft_total": 7.84,
-      "impact_score": 7.17,
-      "quotability": 8.5,
+      "setup": "Michael has been explaining financial cuts and responsible budgeting.",
+      "punchline": "Lucille's response is entirely self-absorbed and ignores everything Michael said \u2014 delivered with total earnestness.",
+      "craft_total": 7.07,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Pure Lucille - clinical precision applied to maternal neglect. The specific time makes it even more coldly funny."
+      "explanation": "Pure Lucille character comedy \u2014 the joke is in the complete disconnect from any awareness of Michael's point. The grandiosity ('most lavish party this town has ever seen') is perfectly calibrated to her self-image."
+    },
+    {
+      "index": 3,
+      "text": "'I enjoy bicentennials as much as the next guy, Mom, but we're not doing that.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "irony_sarcasm"
+      ],
+      "setup": "Lucille wants a lavish party for her birthday.",
+      "punchline": "Michael treats her desire for a 'lavish' party as equivalent to a once-in-200-years civic event, using absurd hyperbole to deflate it.",
+      "craft_total": 7.65,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Clever and economical. The bicentennial comparison is a perfect absurdist escalation of the 'lavish party' concept. It's a sharp Michael line that plays on his weary practicality. High quotability."
+    },
+    {
+      "index": 4,
+      "text": "Narrator describes Buster accidentally flirting with Lucille 2 while not wearing glasses, then accidentally bidding $10,000 on her at a charity auction, then accidentally entering her apartment thinking it was his mother's.",
+      "characters": [
+        "Narrator",
+        "Buster",
+        "Lucille 2"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Buster is avoiding Lucille Austero (Lucille 2).",
+      "punchline": "The three 'accidents' escalate in absurdity and romantic implication, each one more committed than the last \u2014 accidentally entering her apartment saying 'I need you right now.'",
+      "craft_total": 8.6,
+      "impact_score": 8.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's strongest structural jokes. The triple-escalation of Buster's 'accidents' is brilliantly built: each one is worse and more mortifying than the last, and all delivered via narrator with the same dry tone. 'I need you right now / Fellas, take a powder' implies Lucille 2 had guests and Buster burst in declaring need \u2014 deeply embarrassing and perfectly in character. The rule of three is used masterfully here with genuine escalation rather than a lazy third beat."
     },
     {
       "index": 5,
-      "text": "I have no idea where you get that from. Get away from that stove. You're going to light your hair on fire.",
+      "text": "'I need you right now. Fellas, take a powder.'",
+      "characters": [
+        "Buster",
+        "Lucille 2"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "cringe_discomfort"
+      ],
+      "setup": "Buster accidentally entered Lucille 2's apartment thinking it was his mother's.",
+      "punchline": "'I need you right now' \u2014 romantic/desperate \u2014 followed by Lucille 2 apparently having guests she must dismiss ('Fellas, take a powder'), making the intrusion even more mortifying.",
+      "craft_total": 7.75,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The 'Fellas, take a powder' response is funny on its own \u2014 the archaic phrasing Lucille 2 uses implies she has male company she must shoo away. The layering of Buster's neediness landing in that specific context is excellent."
+    },
+    {
+      "index": 6,
+      "text": "'Oh, here comes the 10:15 conniption, right on time.'",
+      "characters": [
+        "Lucille"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Buster is described as having panic attacks; he's clearly anxious.",
+      "punchline": "Lucille has catalogued Buster's anxiety attacks by time of day, treating his mental health crisis like a train schedule.",
+      "craft_total": 8.15,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Exceptional line. 'The 10:15 conniption, right on time' tells us everything about Lucille's relationship to Buster's anxiety \u2014 she's so unsympathetic she's turned it into a schedule. 'Conniption' is the perfect word choice. High quotability. Strong character integration \u2014 this could only be Lucille."
+    },
+    {
+      "index": 7,
+      "text": "'Honest to God, Buster, it's like every little thing makes you seize up in terror lately. I have no idea where you get that from.'",
       "characters": [
         "Lucille"
       ],
@@ -102,532 +143,610 @@
         "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Lucille claims ignorance about Buster's anxiety",
-      "punchline": "Immediately demonstrates the exact paranoid behavior that causes it",
-      "craft_total": 7.96,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "Lucille is criticizing Buster's anxiety and fearfulness.",
+      "punchline": "She immediately, with zero self-awareness, demonstrates she has no idea she is the cause \u2014 a perfect ironic denial.",
+      "craft_total": 8.58,
+      "impact_score": 8.33,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect ironic structure - the punchline immediately contradicts the setup, revealing Lucille's complete lack of self-awareness."
+      "explanation": "The joke's punchline is the sincere bafflement \u2014 she genuinely cannot connect her own controlling behavior to Buster's anxiety. This is peak Lucille characterization. The audience has just watched her run the 'conniption schedule,' which makes the irony hit even harder."
     },
     {
-      "index": 6,
-      "text": "Protein bars for your father. He's pumping up in prison.",
+      "index": 8,
+      "text": "'Get away from that stove. You're going to light your hair on fire.'",
       "characters": [
         "Lucille"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Michael asks what's in the heavy bag",
-      "punchline": "George Sr. is apparently bodybuilding in prison",
-      "craft_total": 7.23,
-      "impact_score": 6.5,
-      "quotability": 7.5,
+      "setup": "Lucille just claimed she has no idea why Buster is so anxious.",
+      "punchline": "She immediately panics at Buster near a stove, proving she is the anxiety source within seconds of denying it.",
+      "craft_total": 7.34,
+      "impact_score": 7.0,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Absurd image of George Sr. getting swole in prison, delivered with Lucille's matter-of-fact tone. Sets up the later Krugerrand reveal."
+      "is_callback": 1,
+      "explanation": "This is the instant callback that makes joke #7 land at its full potential. The structure is near-perfect: the denial and the evidence come back-to-back with no pause. 'You're going to light your hair on fire' is gloriously specific \u2014 not just 'get hurt' but a vivid, Lucille-specific fear. One of the episode's tightest joke constructions."
     },
     {
-      "index": 7,
-      "text": "You're my third least-favorite child. I can live with that.",
+      "index": 9,
+      "text": "'He's weak.'",
+      "characters": [
+        "Lucille"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Lucille has just demonstrated she smothers Buster with anxiety-inducing overprotection.",
+      "punchline": "Her summary verdict on Buster is delivered without any self-awareness that she manufactured the weakness.",
+      "craft_total": 7.66,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Two words that encapsulate an entire abusive dynamic. Economy is nearly perfect \u2014 the brevity makes it land like a punctuation mark. The casual cruelty is very Lucille."
+    },
+    {
+      "index": 10,
+      "text": "'Speaking of weak, Mom, what do you got in there, gold bars?'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Lucille calls Buster weak. Michael pivots to commenting on how heavy her bag is.",
+      "punchline": "Michael jokes 'gold bars?' as an absurd exaggeration \u2014 but the audience will later learn it is literally gold (Krugerrands). The joke pays off retroactively.",
+      "craft_total": 7.87,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is quintessential Arrested Development: a throwaway joke that is literally true in hindsight. On first viewing it's a mild quip; on rewatch it's a perfectly planted clue. The rewatch bonus is enormous. The line also transitions naturally from Lucille calling Buster 'weak' \u2014 'speaking of weak' is a clever connector. Among the episode's best constructed jokes precisely because of its layered function."
+    },
+    {
+      "index": 11,
+      "text": "'Protein bars for your father. He's pumping up in prison.'",
+      "characters": [
+        "Lucille"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Michael asks what's in the heavy bag.",
+      "punchline": "Lucille is sneaking protein bars to her imprisoned husband who is 'pumping up in prison' \u2014 absurdly mundane prison detail delivered casually.",
+      "craft_total": 6.63,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Funny detail \u2014 George Sr. lifting weights in prison is an absurd image \u2014 but the real value is as misdirection covering the Krugerrand reveal later. Works fine on its own, much better on rewatch."
+    },
+    {
+      "index": 12,
+      "text": "'You're my third least-favorite child.'",
+      "characters": [
+        "Lucille"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael says 'No more parties' and declares he can live with being disliked.",
+      "punchline": "Lucille ranks her children's disfavor with bureaucratic precision \u2014 third least-favorite implies she has a full ordered list.",
+      "craft_total": 8.19,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent joke. 'Third least-favorite' is the perfect formulation \u2014 not 'third favorite' but third from the bottom of the dislike ranking. The precision implies she has thought deeply about this hierarchy of disappointment. Extremely quotable, pure Lucille, and lands hard. One of the episode's most memorable lines."
+    },
+    {
+      "index": 13,
+      "text": "Narrator: 'Michael came home to find his mother's fourth least-favorite child.'",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Lucille just ranked Michael as 'third least-favorite.'",
+      "punchline": "The narrator immediately uses the same ranking framework to identify Gob \u2014 implying Gob ranks even lower in Lucille's esteem.",
+      "craft_total": 8.55,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Brilliant immediate callback. The narrator adopts Lucille's ranking system and weaponizes it against Gob before we even see him, which tells us everything about Gob's status and Lucille's pathology simultaneously. The speed of the callback (literally the next line) is what makes it exceptional. One of the episode's best jokes."
+    },
+    {
+      "index": 14,
+      "text": "George Michael walks into the yacht and finds Gob with two women in bikinis. 'Well, they got the Asian right. \"Hotties\" might be a stretch.'",
+      "characters": [
+        "George Michael",
+        "Gob"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Gob is living on the yacht illegally. George Michael walks in to find Gob has company.",
+      "punchline": "Gob has apparently made some kind of flyer or ad calling for 'Asian hotties' and critiques the results clinically \u2014 both the racism of the request and his disappointment are equally appalling.",
+      "craft_total": 6.71,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Gob sleaziness, but this one ages poorly and relies somewhat on shock value. The character specificity (only Gob would do this and be casually offensive about it) saves it from being merely cheap, but the earned_vs_cheap score reflects the reliance on Gob's awfulness rather than genuine wit."
+    },
+    {
+      "index": 15,
+      "text": "'Well, let's start with the little one.'",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Gob has two women on the yacht. George Michael is standing there.",
+      "punchline": "Gob addresses one of the women to 'start' with \u2014 implying a sequence \u2014 in front of his young nephew, with zero filter.",
+      "craft_total": 6.27,
+      "impact_score": 5.75,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional cringe comedy. The humor is in Gob's complete obliviousness to George Michael's presence. Consistent with character but not a standout moment."
+    },
+    {
+      "index": 16,
+      "text": "'I'm sure there'd be somebody else out there that would appreciate her.' / Narrator: 'In fact, Michael felt that man was himself.'",
+      "characters": [
+        "Michael",
+        "Narrator"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Gob suggests Michael tell him to break up with Marta.",
+      "punchline": "Michael's 'someone else' is revealed by the narrator to be Michael himself \u2014 he's subtly advocating for his own romantic interest in his brother's girlfriend.",
+      "craft_total": 7.66,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The narrator's intervention here is excellent \u2014 it catches Michael in a self-serving suggestion he's trying to disguise as advice. The dramatic irony is well-constructed and character-specific."
+    },
+    {
+      "index": 17,
+      "text": "'Michael, do you have any idea what would happen if I were to visit prison? It would be pandemonium.'",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael suggests Gob visit their father in prison.",
+      "punchline": "Gob genuinely believes his presence at a prison would cause pandemonium \u2014 he's that grandiose about his own celebrity/magnetism.",
+      "craft_total": 7.37,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfect Gob delusion. 'Pandemonium' is the exact right word for his self-image \u2014 he doesn't say 'it'd be awkward' or 'I'd be mobbed,' he says 'pandemonium' as if his arrival at a federal prison would be chaos. Pure character comedy."
+    },
+    {
+      "index": 18,
+      "text": "'It'd just give Dad one more reason to think that I've got nothing to offer but my looks.' / 'Yeah, I got some of that... except he also didn't like my looks.'",
+      "characters": [
+        "Gob",
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Gob worries his father thinks he's just a pretty face.",
+      "punchline": "Michael notes he has the same problem \u2014 except George Sr. also didn't like his looks. Michael gets no credit at all.",
+      "craft_total": 7.6,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's self-deprecating correction is well-timed and reveals something sad-funny about the Bluth family dynamic: even the competent son gets no respect. Good economy, good character work."
+    },
+    {
+      "index": 19,
+      "text": "Narrator: 'Lucille had recently been featured on Fox's World's Worst Drivers.'",
+      "characters": [
+        "Narrator",
+        "Lucille"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Lindsay claims Lucille is the world's worst driver.",
+      "punchline": "The narrator confirms this is literally true \u2014 she was on a Fox TV program about it. The absurd specificity of 'Fox's World's Worst Drivers' lands the joke.",
+      "craft_total": 7.8,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke works on multiple levels: it confirms Lindsay's hyperbole as literal fact, it mocks Fox's programming, and it sets up the later accident perfectly. The specificity of 'Fox's World's Worst Drivers' over a generic show title is the right comedic choice."
+    },
+    {
+      "index": 20,
+      "text": "'She didn't. I dummied her up a new one. Not my best work though. She wanted to look 48. I nearly airbrushed her into oblivion. We ended up checking \"Albino\" on the form.'",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Michael can't believe Lucille got her license renewed.",
+      "punchline": "Gob forged it \u2014 and the details of the forgery are their own escalating joke: she wanted to look 48 (she's much older), he airbrushed her 'into oblivion,' and they ended up marking her as albino on the form.",
+      "craft_total": 8.4,
+      "impact_score": 8.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "This is one of the episode's best jokes. Each element escalates perfectly: Gob forged it (surprising) \u2192 she wanted to look 48 (vain and delusional) \u2192 he nearly airbrushed her into oblivion (vivid and absurd) \u2192 they checked 'Albino' (the perfect escalating absurdist endpoint). It's also deeply character-specific: only Gob would do this and describe it with this clinical pride. 'Airbrushed her into oblivion' is an exceptional phrase. High quotability."
+    },
+    {
+      "index": 21,
+      "text": "'For Gangy?' (George Michael asks how he knew about the surprise party) / 'She called and invited us.'",
+      "characters": [
+        "George Michael",
+        "Gob"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Michael announces they'll throw a surprise party for his mother.",
+      "punchline": "Lucille already called and invited the grandkids \u2014 she planned her own 'surprise' party.",
+      "craft_total": 7.49,
+      "impact_score": 7.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good joke that reveals Lucille's manipulation \u2014 she's always ten steps ahead and has no genuine desire to be surprised. Also works as a structural joke on the whole 'surprise party' premise."
+    },
+    {
+      "index": 22,
+      "text": "'Come on. This is a Bluth family celebration. It's no place for children.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "dark_subversive"
+      ],
+      "setup": "George Michael and Maeby ask if they have to go to the family party.",
+      "punchline": "Michael's reassurance is itself the dark joke \u2014 implying Bluth family events are so dysfunctional they're genuinely not suitable for children.",
+      "craft_total": 7.53,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sharp line. The inversion \u2014 celebrating by saying kids shouldn't be there \u2014 lands well. It's both an accurate description of the Bluths and a self-aware joke about the show's premise."
+    },
+    {
+      "index": 23,
+      "text": "Lindsay visits prison to tell George Sr. she's been undervalued for her intellect \u2014 but 'didn't get the reception she was expecting.' No heads turn in prison when she walks through.",
+      "characters": [
+        "Narrator",
+        "Lindsay"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "setup_punchline"
+      ],
+      "setup": "Lindsay believes she turns heads everywhere she goes because of her looks.",
+      "punchline": "In prison, surrounded by men who haven't seen women in months, she still fails to attract any attention \u2014 the ultimate defeat of her vanity.",
+      "craft_total": 8.04,
+      "impact_score": 7.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Beautifully constructed premise joke. The setup is perfect: if any place should validate an attractive woman's vanity, it's a men's prison. That it doesn't is the ideal comedic subversion of Lindsay's self-image. The narrator's 'but didn't get the reception she was expecting' does excellent work framing the visual."
+    },
+    {
+      "index": 24,
+      "text": "'Gob's got the charm, Buster's got the...' [long pause] 'High-fastening pants.'",
+      "characters": [
+        "Lindsay",
+        "George Sr."
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "awkward_silence"
+      ],
+      "setup": "Lindsay is listing what each sibling is 'known for' \u2014 Michael has brains, Gob has charm, Buster has...",
+      "punchline": "After a long pause, neither can think of anything for Buster beyond 'high-fastening pants.' The pause IS the joke \u2014 it signals how empty Buster's existence is.",
+      "craft_total": 9.03,
+      "impact_score": 9.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. The awkward silence before 'high-fastening pants' is doing enormous work \u2014 it signals there is genuinely nothing positive to say about Buster. 'High-fastening pants' is the perfect absurdist detail: not a talent, not a trait, not even an achievement \u2014 just a sartorial quirk. 'Have you said that?' / 'No. I'm saying that now.' adds another beat. Extremely quotable. Could only work for Buster."
+    },
+    {
+      "index": 25,
+      "text": "Narrator: 'Lindsay was surprised once again that no heads were turned.'",
+      "characters": [
+        "Narrator",
+        "Lindsay"
+      ],
+      "joke_types": [
+        "callback",
+        "irony_sarcasm"
+      ],
+      "setup": "Lindsay's prison visit was meant to show she could generate intellectual respect, not just turn heads.",
+      "punchline": "The narrator reduces her quest for intellectual validation back to the 'heads turned' metric \u2014 she still failed by that measure too.",
+      "craft_total": 7.61,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The narrator's callback to 'no heads turned' is sharp \u2014 it ties the subplot together and adds a layer. The word 'once again' implies this is a pattern. Good economy from the narrator."
+    },
+    {
+      "index": 26,
+      "text": "Narrator: 'George Michael was finally moving beyond his crush on Maeby and felt happy to have a cousin he could just see a movie with. It was a love between two cousins that the world thought was wrong. But it was the world that was wrong.'",
+      "characters": [
+        "Narrator",
+        "George Michael",
+        "Maeby"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "dark_subversive"
+      ],
+      "setup": "George Michael is described as 'moving beyond' his romantic feelings for his cousin.",
+      "punchline": "The narrator editorializes that cousin romantic love is not wrong \u2014 which is a darkly absurd endorsement of incest framed as earnest narration. The joke is in the narrator taking a position.",
+      "craft_total": 8.02,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The narrator's tone shift into advocacy for cousin love is perfectly deadpan and deeply wrong. 'But it was the world that was wrong' is the kind of line that gets quoted. The AD narrator has always been unreliable/editorial, but this is one of its more subversive moments. High quotability."
+    },
+    {
+      "index": 27,
+      "text": "George Michael and Maeby try to get into a movie. They are carded and turned away. Cut to: they are watching the movie with an elderly audience after an old man used his AARP card to get them in as 'guests.'",
+      "characters": [
+        "George Michael",
+        "Maeby",
+        "AARP Man"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "escalation"
+      ],
+      "setup": "George Michael and Maeby are too young to see the movie 'Les Cousins Dangereux' (Dangerous Cousins \u2014 a French film, itself a meta-joke about their situation).",
+      "punchline": "They get in anyway via an old man's AARP guest pass \u2014 suggesting the movie's audience is entirely elderly.",
+      "craft_total": 8.09,
+      "impact_score": 7.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The film title 'Les Cousins Dangereux' is a meta-joke about George Michael and Maeby's actual relationship situation \u2014 they ARE the dangerous cousins. This joke rewards close attention. The AARP solution is absurd and funny in its own right."
+    },
+    {
+      "index": 28,
+      "text": "'Mom, you've already got two strikes on your record. You strike one more person, and it's technically a spree.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "dark_subversive"
+      ],
+      "setup": "Michael is reluctantly driving Lucille while she suggests she could drive.",
+      "punchline": "Michael uses 'strike' as a double meaning \u2014 the bowling/legal 'three strikes' law AND physically striking pedestrians with the car. Calling it a 'spree' (as in killing spree) is the dark escalation.",
+      "craft_total": 8.56,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Exceptional joke. 'Strike' doing double duty (three-strikes law + striking pedestrians) is clever wordplay that is also character-specific and dark. The escalation to 'technically a spree' is perfect \u2014 it treats vehicular assault as a sports statistic. Very quotable. One of the episode's top jokes."
+    },
+    {
+      "index": 29,
+      "text": "Buster recently brought home a large rock from an archeological dig but 'had yet to find a way to get it out of the car.'",
+      "characters": [
+        "Narrator",
+        "Buster"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy"
+      ],
+      "setup": "Lucille complains about 'Buster's stupid rock' being behind her in the car.",
+      "punchline": "Narrator reveals Buster has an archaeological dig rock he brought home and simply left in the car because he couldn't figure out how to remove it.",
+      "craft_total": 7.5,
+      "impact_score": 6.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A planted detail that pays off during the accident reconstruction \u2014 the rock is what hit Michael on the back of the head. On first viewing it's a mild Buster character joke (incompetent, can't even unload a car). On rewatch it's a well-laid piece of mystery furniture."
+    },
+    {
+      "index": 30,
+      "text": "Surprise party #1: Michael arrives with Lucille at the restaurant. 'Surprise!' \u2014 and she was surprised that her family didn't show up.",
+      "characters": [
+        "Narrator",
+        "Michael",
+        "Lucille"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael has orchestrated a surprise party for Lucille.",
+      "punchline": "Nobody came. The family who orchestrated the party is not there. The 'surprise' is their absence.",
+      "craft_total": 7.78,
+      "impact_score": 7.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Well-executed structural joke. The twist on 'surprise' \u2014 meaning the family didn't show rather than the guest being surprised \u2014 is clean and lands well. Sets up the emotional beat of Lucille's humiliation, which then drives the next act."
+    },
+    {
+      "index": 31,
+      "text": "'What about you? Neiman's?' / 'Prison. Then Neiman's. But only because I'm going back to prison, and they've seen me in this.'",
+      "characters": [
+        "Michael",
+        "Lindsay"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Michael confronts the family about missing the party. Lindsay claims she was at prison.",
+      "punchline": "Lindsay was at prison AND Neiman Marcus \u2014 but only went to Neiman's to get a new outfit because prison people have seen her current clothes.",
+      "craft_total": 8.3,
+      "impact_score": 8.25,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent character joke. Lindsay's justification \u2014 she needs new clothes because prison people have seen her outfit \u2014 is perfectly Lindsay: completely self-absorbed, treating prison visits as fashion events. 'They've seen me in this' could only be Lindsay. Highly quotable."
+    },
+    {
+      "index": 32,
+      "text": "Buster was so worried about running into Lucille 2 he never left his mother's apartment. Lucille 2 was waiting for Buster to emerge. They were in a mutual standoff neither knew about.",
+      "characters": [
+        "Narrator",
+        "Buster",
+        "Lucille 2"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "absurdist"
+      ],
+      "setup": "Buster avoided the party out of fear of Lucille 2.",
+      "punchline": "Lucille 2 was also waiting to attend \u2014 waiting for Buster to come out first. They deadlocked each other's social lives simultaneously.",
+      "craft_total": 8.26,
+      "impact_score": 7.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A clever situational irony \u2014 both characters trapped by the same dynamic, neither aware of the other's parallel imprisonment. This is the kind of structural comedy AD does exceptionally well: the information is delivered through the narrator and requires the audience to hold both facts simultaneously."
+    },
+    {
+      "index": 33,
+      "text": "'What frail act got you this time, Michael? She couldn't open a jar? What, did a clump of her hair come out in your hands?'",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Michael explains he was moved by something Lucille said at dinner.",
+      "punchline": "Gob's list of possible 'frail acts' \u2014 jar-opening failure, hair falling out \u2014 is both prescient of the fake-frailty plot and funny in its specificity.",
+      "craft_total": 7.64,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This joke retroactively becomes more interesting \u2014 Gob is correctly diagnosing the manipulation before we know there IS manipulation. 'A clump of her hair come out in your hands' is a vivid, specific escalation. On rewatch, Gob's cynicism is validated."
+    },
+    {
+      "index": 34,
+      "text": "At dinner, Lucille delivers her guilting monologue \u2014 'It's dry' / 'I've been a horrible mother' \u2014 and Michael immediately capitulates.",
       "characters": [
         "Lucille",
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "deadpan_understatement"
-      ],
-      "setup": "Lucille threatens Michael with a ranking",
-      "punchline": "Michael accepts third-worst as reasonable",
-      "craft_total": 8.34,
-      "impact_score": 8.17,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant character moment - Lucille's casual cruelty met by Michael's resigned pragmatism. The specificity of 'third least-favorite' is perfect."
-    },
-    {
-      "index": 8,
-      "text": "Michael came home to find his mother's fourth least-favorite child.",
-      "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
-        "callback",
-        "character_comedy"
-      ],
-      "setup": "Previous ranking joke",
-      "punchline": "Narrator immediately establishes GOB's position in the hierarchy",
-      "craft_total": 7.52,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Immediate callback that extends the ranking system. The narrator's clinical tone makes it funnier."
-    },
-    {
-      "index": 9,
-      "text": "Well, they got the Asian right. 'Hotties' might be a stretch.",
-      "characters": [
-        "GOB"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "GOB heard about yacht buyers being described as 'Asian hotties'",
-      "punchline": "Admits one descriptor is accurate while dismissing the other",
-      "craft_total": 6.31,
-      "impact_score": 5.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "GOB's shallow assessment reveals his character while being unexpectedly honest about his judgment."
-    },
-    {
-      "index": 10,
-      "text": "Well, let's start with the little one.",
-      "characters": [
-        "GOB"
-      ],
-      "joke_types": [
-        "visual_gag",
         "cringe_discomfort"
       ],
-      "setup": "GOB commenting on potential yacht buyers",
-      "punchline": "Implies he's ranking women like he's shopping",
-      "craft_total": 5.27,
-      "impact_score": 4.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Character-consistent sleaziness from GOB, but not particularly clever or surprising."
-    },
-    {
-      "index": 11,
-      "text": "I know, Michael. That's why this is the perfect opportunity to throw her a surprise party. She'd never suspect it.",
-      "characters": [
-        "GOB"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Michael just told his mother no more parties",
-      "punchline": "GOB thinks this makes it the perfect time for a party",
-      "craft_total": 7.56,
-      "impact_score": 6.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "GOB's twisted logic is perfectly in character - he sees Michael's prohibition as providing cover for his scheme."
-    },
-    {
-      "index": 12,
-      "text": "Michael, do you have any idea what would happen if I were to visit prison? It would be pandemonium.",
-      "characters": [
-        "Lindsay"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
-      ],
-      "setup": "Michael suggests Lindsay visit their father",
-      "punchline": "Lindsay thinks her presence would cause chaos due to her looks",
-      "craft_total": 6.72,
-      "impact_score": 5.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Lindsay's narcissistic delusion is perfectly captured. Sets up the prison scenes where she's completely ignored."
-    },
-    {
-      "index": 13,
-      "text": "Yeah, I got some of that... except he also didn't like my looks.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "deadpan_understatement"
-      ],
-      "setup": "Lindsay complains their father only values her looks",
-      "punchline": "Michael reveals he got neither praise for looks nor anything else",
-      "craft_total": 7.61,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Michael moment - dry, self-aware, and revealing the family's complete emotional dysfunction."
-    },
-    {
-      "index": 14,
-      "text": "Come on. That would never happen.",
-      "characters": [
-        "GOB"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
-      ],
-      "setup": "Lindsay suggests Michael would take their mother to dinner",
-      "punchline": "GOB finds this completely implausible",
-      "craft_total": 6.63,
-      "impact_score": 5.67,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Reveals how unusual kindness is in the Bluth family that even basic gestures seem impossible."
-    },
-    {
-      "index": 15,
-      "text": "Lindsay was not exaggerating. Lucille had recently been featured on Fox's World's Worst Drivers.",
-      "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Lindsay claims their mother is the world's worst driver",
-      "punchline": "She literally appeared on a TV show about terrible drivers",
-      "craft_total": 7.75,
-      "impact_score": 7.33,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Takes Lindsay's hyperbole and makes it literally true. The Fox branding adds specificity that makes it funnier."
-    },
-    {
-      "index": 16,
-      "text": "She didn't. I dummied her up a new one. Not my best work though. She wanted to look 48. I nearly airbrushed her into oblivion. We ended up checking 'Albino' on the form.",
-      "characters": [
-        "GOB"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Discussion of Lucille's driving",
-      "punchline": "GOB made a fake license with increasingly absurd details",
-      "craft_total": 8.27,
-      "impact_score": 8.17,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect escalation from vanity to complete absurdity. 'Nearly airbrushed her into oblivion' is beautifully specific, and the albino conclusion is perfectly insane."
-    },
-    {
-      "index": 17,
-      "text": "For Gangy? Yeah, how did you know? She called and invited us.",
-      "characters": [
-        "George Michael",
-        "Michael"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "irony_sarcasm"
-      ],
-      "setup": "Michael agrees to surprise party",
-      "punchline": "Reveals it's not a surprise because Lucille invited them herself",
-      "craft_total": 7.46,
-      "impact_score": 7.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic misdirection that deflates Michael's plan and reveals Lucille's manipulation in one quick exchange."
-    },
-    {
-      "index": 18,
-      "text": "Come on. This is a Bluth family celebration. It's no place for children.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "George Michael asks if they have to go to the party",
-      "punchline": "Michael warns him away from his own family's gathering",
+      "setup": "Michael was trying to get Lucille to understand that she needs to be nicer if she wants her kids around.",
+      "punchline": "Lucille immediately turns the criticism into a performance of self-flagellation ('I've been a horrible mother') and Michael immediately folds, reassuring her. The manipulation is instant and complete.",
       "craft_total": 7.72,
-      "impact_score": 7.33,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark humor about family toxicity delivered as protective parental advice. Perfectly captures Michael's awareness of his family's dysfunction."
-    },
-    {
-      "index": 19,
-      "text": "But didn't get the reception she was expecting.",
-      "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "irony_sarcasm"
-      ],
-      "setup": "Lindsay visits prison for the first time",
-      "punchline": "Sets up that her expectation of causing 'pandemonium' won't happen",
-      "craft_total": 7.22,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Narrator setup that calls back to Lindsay's delusion about causing chaos with her beauty."
-    },
-    {
-      "index": 20,
-      "text": "High-fastening pants.",
-      "characters": [
-        "George Sr."
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "George Sr. lists what each child is known for",
-      "punchline": "Buster's defining characteristic is his pants height",
-      "craft_total": 7.98,
-      "impact_score": 7.83,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliantly specific and absurd character detail. The formal phrasing makes it even funnier, and it's perfectly Buster."
-    },
-    {
-      "index": 21,
-      "text": "Lindsay was surprised once again that no heads were turned.",
-      "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "visual_gag"
-      ],
-      "setup": "Lindsay's belief she causes pandemonium",
-      "punchline": "Complete indifference from other prisoners",
-      "craft_total": 7.47,
       "impact_score": 7.0,
       "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Payoff to Lindsay's narcissistic expectations. The visual of complete disinterest is the perfect deflation."
-    },
-    {
-      "index": 22,
-      "text": "It was a love between two cousins that the world thought was wrong. But it was the world that was wrong.",
-      "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "misdirection"
-      ],
-      "setup": "George Michael moving beyond his crush on Maeby",
-      "punchline": "Narrator frames it like a forbidden romance that should be accepted",
-      "craft_total": 8.02,
-      "impact_score": 7.67,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark comedy that takes innocent cousin friendship and frames it as society-defying romance. The earnest narrator voice makes it even more absurd."
+      "explanation": "The speed of Lucille's 180 (from inscrutable dinner scene to 'I've been a horrible mother') and Michael's immediate betrayal of his own position is classic dysfunctional family comedy. The dinner context \u2014 a single word 'dry' \u2014 is a great setup."
     },
     {
-      "index": 23,
-      "text": "It's better than sitting here with Buster's stupid rock behind me.",
+      "index": 35,
+      "text": "'Well, you know she's been a horrible mother, right?' / 'You don't have to tell me. But what was I gonna say?'",
       "characters": [
-        "Lucille"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "character_comedy"
-      ],
-      "setup": "Lucille offers to drive",
-      "punchline": "Reveals random archaeological rock is just sitting in the car",
-      "craft_total": 6.97,
-      "impact_score": 6.25,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Sets up the rock detail that becomes important later. Casual mention of absurd situation is classic AD."
-    },
-    {
-      "index": 24,
-      "text": "Buster had recently brought the rock home from an archeological dig, but had yet to find a way to get it out of the car.",
-      "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Reference to Buster's rock",
-      "punchline": "He somehow got it in but can't get it out",
-      "craft_total": 7.53,
-      "impact_score": 6.83,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Buster logic - academic achievement that creates practical problems. The absurdity of the logistics makes it funnier."
-    },
-    {
-      "index": 25,
-      "text": "You strike one more person, and it's technically a spree.",
-      "characters": [
+        "Gob",
         "Michael"
       ],
       "joke_types": [
-        "dark_subversive",
-        "wordplay_pun"
-      ],
-      "setup": "Lucille has hit two people with her car",
-      "punchline": "One more hit makes it a crime spree by definition",
-      "craft_total": 8.18,
-      "impact_score": 8.17,
-      "quotability": 9.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant dark comedy that treats vehicular violence like collecting baseball cards. The word 'technically' makes it even more absurdly clinical."
-    },
-    {
-      "index": 26,
-      "text": "And she was surprised that her family didn't show up.",
-      "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
         "irony_sarcasm",
-        "visual_gag"
-      ],
-      "setup": "Second 'surprise' party",
-      "punchline": "Empty restaurant showing family's complete disinterest",
-      "craft_total": 7.19,
-      "impact_score": 6.83,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Visual gag of the empty party reinforces the family's dysfunction. The surprised reaction adds to the pathos."
-    },
-    {
-      "index": 27,
-      "text": "So this is what my children think of me.",
-      "characters": [
-        "Lucille"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Empty surprise party",
-      "punchline": "Lucille's rare moment of self-awareness about her relationships",
-      "craft_total": 6.8,
-      "impact_score": 6.0,
+      "setup": "Michael has just told Lucille she's a 'great mother.'",
+      "punchline": "Both brothers immediately agree privately that she is, in fact, a horrible mother \u2014 while having just told her the opposite.",
+      "craft_total": 7.46,
+      "impact_score": 7.0,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Uncharacteristic vulnerability from Lucille creates uncomfortable comedy. The moment of clarity is both sad and funny."
+      "explanation": "Honest and relatable family comedy moment. The quick sibling agreement that they both know the truth \u2014 but neither will say it \u2014 captures a universal dynamic. Works well."
     },
     {
-      "index": 28,
-      "text": "In fact, Buster was worried about running into Lucille 2. So he never left his mother's apartment. Lucille 2 was also supposed to go, but was waiting until she saw Buster emerge.",
+      "index": 36,
+      "text": "'Um, is it okay if I do it for Mom and not you? 'Cause I really like Mom.' / 'We know.'",
       "characters": [
-        "Narrator"
+        "Gob",
+        "Michael"
       ],
       "joke_types": [
-        "absurdist",
+        "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Explanation for why Buster missed the party",
-      "punchline": "Both Buster and Lucille 2 are trapped by trying to avoid each other",
-      "craft_total": 7.81,
-      "impact_score": 7.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect sitcom irony - both characters' avoidance strategies cancel each other out. Classic setup for future plot developments."
-    },
-    {
-      "index": 29,
-      "text": "Well, it was kind of funny.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
-      ],
-      "setup": "Describing Lucille's emotional journey at the party",
-      "punchline": "Michael admits her devastation was amusing",
-      "craft_total": 7.2,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's honest admission of finding his mother's pain amusing reveals the family's dark dynamics."
-    },
-    {
-      "index": 30,
-      "text": "I've been a horrible mother.",
-      "characters": [
-        "Lucille"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Michael suggests she should be nicer",
-      "punchline": "Lucille actually admits fault for once",
-      "craft_total": 6.87,
-      "impact_score": 6.33,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Rare moment of Lucille self-awareness that's immediately undermined by Michael's automatic contradiction."
-    },
-    {
-      "index": 31,
-      "text": "Um, is it okay if I do it for Mom and not you?",
-      "characters": [
-        "GOB"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
-      ],
-      "setup": "Michael asks GOB to help with the party",
-      "punchline": "GOB wants to clarify his motivation excludes Michael",
-      "craft_total": 7.14,
+      "setup": "Michael asks Gob to throw the party for him even if not for Mom.",
+      "punchline": "Gob's sincere admission that he 'really likes Mom' \u2014 delivered with puppy-like earnestness \u2014 is funny because of everything we've just seen Lucille do. 'We know' is the perfect deadpan acknowledgment of Gob's Oedipal attachment.",
+      "craft_total": 7.38,
       "impact_score": 6.83,
-      "quotability": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect GOB - unnecessarily specific about his dislike for Michael while being helpful. The politeness makes it funnier."
+      "explanation": "Gob's sincere declaration that he 'really likes Mom' is both funny and slightly disturbing given the context. Michael's 'We know' is perfectly calibrated \u2014 it's not dismissive, it's resigned. Strong character integration for both."
     },
     {
-      "index": 32,
-      "text": "I've already got a Lucille in my life.",
+      "index": 37,
+      "text": "Buster breaks up with Lucille 2: 'I've already got a Lucille in my life.' / 'I understand. That's healthy.'",
       "characters": [
-        "Buster"
+        "Buster",
+        "Lucille 2"
       ],
       "joke_types": [
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Buster trying to break up with Lucille 2",
-      "punchline": "Treats his mother and romantic interest as interchangeable Lucilles",
-      "craft_total": 7.67,
-      "impact_score": 7.5,
+      "setup": "Buster is trying to end his accidental relationship with Lucille 2.",
+      "punchline": "Buster's reason for breaking up is that he already has one Lucille \u2014 implying the two are interchangeable. Lucille 2's therapist-speak response ('That's healthy') makes it stranger.",
+      "craft_total": 8.68,
+      "impact_score": 8.67,
       "quotability": 8.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant encapsulation of Buster's psychological issues. The clinical tone about his mother complex is perfectly Buster."
+      "explanation": "One of the episode's best jokes. Buster's reasoning \u2014 he can't handle two Lucilles \u2014 perfectly captures his mother-fixation without spelling it out. 'That's healthy' as Lucille 2's response is beautifully ironic: she's affirming a breakup based on him being over-Lucille'd. Both characters are pitch-perfect here. Highly quotable."
     },
     {
-      "index": 33,
-      "text": "Yes. I'm foolish and I'm funny and I'm needy. Am I needy? Are you sure I'm not needy? 'Cause I feel needy sometimes.",
+      "index": 38,
+      "text": "'Am I needy? Are you sure I'm not needy? 'Cause I feel needy sometimes.'",
       "characters": [
         "Lucille 2"
       ],
@@ -635,586 +754,852 @@
         "character_comedy",
         "escalation"
       ],
-      "setup": "Lucille 2 feeling embarrassed",
-      "punchline": "Demonstrates the exact neediness she's asking about",
-      "craft_total": 7.43,
-      "impact_score": 7.17,
-      "quotability": 7.0,
+      "setup": "Lucille 2 says she's 'foolish and funny and needy.'",
+      "punchline": "Buster denies she's needy. She immediately demonstrates neediness by asking three times in a row if she's needy.",
+      "craft_total": 8.09,
+      "impact_score": 7.83,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect self-defeating behavior - asking repeatedly if she's needy while being intensely needy. The escalation makes it funnier."
+      "explanation": "Self-refuting joke executed perfectly. The moment Buster says she's not needy, she proves she is by immediately asking for reassurance about whether she's needy \u2014 twice more. The escalation structure is clean and the self-awareness she lacks makes it funnier."
     },
     {
-      "index": 34,
-      "text": "You and I. Is it 'I' or is it 'me'?",
-      "characters": [
-        "Lucille 2"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Emotional conversation about their connection",
-      "punchline": "Gets distracted by grammar mid-sentiment",
-      "craft_total": 7.63,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect character moment showing Lucille 2's tendency to overthink everything, even romantic declarations."
-    },
-    {
-      "index": 35,
-      "text": "Buster, it's us. Yes. It is us. Us.",
+      "index": 39,
+      "text": "'You know, we're probably not that different, you and me.' / 'You and I. Is it \"I\" or is it \"me\"?' / 'Buster, it's us.' / 'Yes. It is us. Us.'",
       "characters": [
         "Lucille 2",
         "Buster"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Grammar confusion during emotional moment",
-      "punchline": "Both get caught up in the word choice instead of the emotion",
-      "craft_total": 7.44,
-      "impact_score": 6.75,
+      "setup": "Lucille 2 tries to connect with Buster emotionally before parting.",
+      "punchline": "Buster corrects her grammar pedantically. Lucille 2 reframes to 'us' \u2014 which Buster takes not as romantic inclusion but as a literal grammar agreement. The long, mutual 'Us' echo is absurd.",
+      "craft_total": 8.25,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Layered joke: Buster's grammar correction is both pedantic and character-perfect (academically trained but emotionally oblivious). Lucille 2's pivot to 'us' is meant romantically but Buster takes it grammatically. The shared 'Us... us' repetition descends into absurdism. Rich character integration."
+    },
+    {
+      "index": 40,
+      "text": "Surprise party #2: Michael arrives again with Lucille at the restaurant. 'Surprise!' \u2014 and once again, no one showed up.",
+      "characters": [
+        "Narrator",
+        "Michael",
+        "Lucille"
+      ],
+      "joke_types": [
+        "running_gag",
+        "escalation"
+      ],
+      "setup": "The first surprise party failed because no one came. Michael has now re-done it.",
+      "punchline": "The exact same thing happens \u2014 no one showed up again. The repetition and Michael's apparent inability to prevent the same failure elevates it.",
+      "craft_total": 7.16,
+      "impact_score": 7.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The running gag of the failed surprise party works because the repetition is absurd \u2014 Michael tries again without solving the underlying problem. The episode's B-plot (family not showing up) continues to ironically mirror its A-plot premise."
+    },
+    {
+      "index": 41,
+      "text": "'You did that for me?' / 'I let you drive, didn't I?'",
+      "characters": [
+        "Lucille",
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "dark_subversive"
+      ],
+      "setup": "Lucille is touched that Michael spoke up for her to the family.",
+      "punchline": "Michael's 'proof' of his devotion is letting Lucille drive \u2014 an act of insane generosity given she's the world's worst driver.",
+      "craft_total": 7.73,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Funny callback that also foreshadows the accident that's about to happen. Letting Lucille drive is treated as an act of loving sacrifice \u2014 which, given what we know, it essentially is."
+    },
+    {
+      "index": 42,
+      "text": "'Hey. Is that Gob? It's an idiot on a scooter at night? It's gotta be Gob.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael and Lucille are driving at night and spot someone on a scooter.",
+      "punchline": "Michael's logic: idiot on a scooter at night = statistically must be Gob. The reasoning is both an insult to Gob and funny because it's probably right.",
+      "craft_total": 7.72,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Efficient character joke. The syllogism \u2014 idiot + scooter + night = Gob \u2014 is both an insult and a narrative setup. The confident identification based on pure idiocy is funny. Highly quotable as a character-defining line for Gob."
+    },
+    {
+      "index": 43,
+      "text": "Lucille leans out the window yelling at the scooter rider \u2014 turns out it's not Gob \u2014 and hits him with the car.",
+      "characters": [
+        "Lucille",
+        "Michael",
+        "Random Man"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "dark_subversive"
+      ],
+      "setup": "Michael tells Lucille not to scare the scooter rider. She does it anyway. 'Mom, that is not Gob. Mom! Mom!'",
+      "punchline": "Lucille strikes \u2014 literally \u2014 a third person with her car. The 'spree' joke from earlier pays off.",
+      "craft_total": 7.92,
+      "impact_score": 8.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The payoff to the 'spree' joke. Lucille completing her hat trick of pedestrian strikes is both absurd and darkly funny. The physical comedy of Michael helplessly saying 'Mom! Mom!' while it happens is well-executed. Strong callback reward."
+    },
+    {
+      "index": 44,
+      "text": "'Yeah. I guess. How's my mom? She's so frail.' / 'I'm fine. I'm fine. I was thrown clear.' / 'I only care about you.'",
+      "characters": [
+        "Random Man",
+        "Lucille",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael asks if the man Lucille hit is okay.",
+      "punchline": "The man Lucille hit asks about Lucille first. Lucille immediately declares she 'only cares about' the man \u2014 while having just hit him with her car.",
+      "craft_total": 7.34,
+      "impact_score": 6.83,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Both characters getting caught up in linguistics during what should be an emotional breakthrough is perfectly awkward."
+      "explanation": "The man calling Lucille 'frail' (she's not) and worrying about her is a nice inversion. Lucille's 'I only care about you' \u2014 the most manipulative statement possible from someone who just hit someone \u2014 is perfectly in character."
     },
     {
-      "index": 36,
-      "text": "I hate to tell you, Mom, but they don't support me either.",
+      "index": 45,
+      "text": "'What did you give me?' / 'Your mother asked me to pump you full of... Children's aspirin.'",
+      "characters": [
+        "Michael",
+        "Doctor"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Michael wakes up in a hospital-like setting and asks what he was given.",
+      "punchline": "The setup implies something strong; the answer is children's aspirin \u2014 the most ineffectual medicine possible.",
+      "craft_total": 7.3,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good misdirection \u2014 the beat before 'Children's aspirin' implies a painkiller or sedative. The reveal is both anticlimactic (funny) and consistent with Lucille's penny-pinching or incompetence. Works well."
+    },
+    {
+      "index": 46,
+      "text": "Michael can't remember the accident due to short-term memory loss. 'Scoot... Scooter. Was there a scooter involved?'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Lucille complaining about lack of family support",
-      "punchline": "Michael reveals he's equally unsupported despite holding family together",
-      "craft_total": 7.67,
+      "setup": "Michael has memory loss from head trauma. He's trying to reconstruct what happened.",
+      "punchline": "'Scoot' triggers 'scooter' \u2014 his trauma-addled brain reconstructs the accident in real time through word association.",
+      "craft_total": 7.92,
+      "impact_score": 7.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Cute word-association joke. The 'scoot up' \u2192 'scooter' trigger is a nice bit of comedic writing. Functions as an engine for the plot's mystery reconstruction."
+    },
+    {
+      "index": 47,
+      "text": "Michael: 'I can't believe I did this. My insurance rates are gonna go through the roof.' Lucille: 'That's not what matters now.'",
+      "characters": [
+        "Michael Bluth",
+        "Lucille Bluth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael has just been in a car accident, has memory loss, and is in a hospital bed.",
+      "punchline": "His primary concern is insurance rates. Lucille tells him that's not what matters \u2014 she's the one who actually caused the accident and is now managing Michael's belief that he drove.",
+      "craft_total": 7.31,
       "impact_score": 7.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Michael's middle-management anxiety about insurance rates in the middle of a medical crisis is funny and in character. Lucille's 'That's not what matters now' is darkly ironic \u2014 she's consoling him for an accident she caused while allowing him to take the blame. Rewatch bonus for the conspiracy layer."
+    },
+    {
+      "index": 48,
+      "text": "Buster and Lucille 2, in bed together. 'Buster, you remember when we were kissing last night? It was a wild, wild ride. But is this something we can do? Is this something society will allow?'",
+      "characters": [
+        "Lucille 2",
+        "Buster"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Buster has just broken up with Lucille 2, but apparently they got together again after.",
+      "punchline": "They're now apparently in a romantic/sexual situation despite just having broken up, and Lucille 2's concern is 'will society allow this?' \u2014 as if their age-gap romance is the transgressive issue when the real transgression (it being his mother's close friend/doppelganger) is ignored.",
+      "craft_total": 7.28,
+      "impact_score": 7.17,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael's rare moment of self-advocacy, delivered with characteristic understatement despite the deeper pain."
+      "explanation": "Funny beat because it ignores the ACTUAL weirdness (she's his mother's friend/name twin) in favor of worrying about a relatively normal age-gap concern. 'Wild, wild ride' applied to Buster is inherently absurd."
     },
     {
-      "index": 37,
-      "text": "I let you drive, didn't I?",
+      "index": 49,
+      "text": "'I don't care what other people think. My God, for the first time in years I felt like I was standing on solid ground. My panic attacks have decreased. I feel confident. I'm feeling proud even...'",
+      "characters": [
+        "Buster"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Buster is describing how the relationship with Lucille 2 has made him more confident.",
+      "punchline": "The speech builds toward something \u2014 then Buster presumably falls or has some physical mishap (the scene cuts or he collapses), undercutting his claim of newfound confidence and pride.",
+      "craft_total": 6.84,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic escalation undercut. The speech builds pompously toward pride and confidence and is immediately punctured by reality (implied physical failure). Character integration is strong \u2014 only Buster's confidence arc would be this fragile."
+    },
+    {
+      "index": 50,
+      "text": "'Rest up, sweetie. You gave me quite a scare.' / [Michael processes] 'Scare. Did somebody say, \"Let's give him a sc...\"' / 'What is the matter with me? Clumsy Clara.'",
+      "characters": [
+        "Lucille",
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Michael has partial memory loss. Lucille says the word 'scare,' which triggers his memory of the accident ('Let's give him a scare').",
+      "punchline": "He's about to put it together \u2014 then Lucille immediately deflects with 'Clumsy Clara,' taking blame for whatever Michael almost remembered. The deflection IS the confirmation of guilt.",
+      "craft_total": 7.91,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's best-constructed moments. Lucille's word 'scare' almost cracks Michael's amnesia \u2014 and she immediately self-incriminates by calling herself 'Clumsy Clara' and deflecting before he finishes the thought. On rewatch, you can see exactly what she's doing: managing his memory recovery. The structure is nearly perfect."
+    },
+    {
+      "index": 51,
+      "text": "'Totally cool. Didn't feel a thing. You know, Mom, I'm crazy about this aspirin. I can't believe we give it to children.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Lucille thanking Michael for doing something nice",
-      "punchline": "His gesture of love was letting her operate a deadly weapon",
-      "craft_total": 7.33,
+      "setup": "Michael was given children's aspirin for his head injury.",
+      "punchline": "He's apparently responding very strongly to the children's aspirin \u2014 implying he's either very drug-sensitive or in denial about his pain.",
+      "craft_total": 7.16,
       "impact_score": 6.83,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Perfect dark comedy - treating potentially lethal enabling as an act of love. References her terrible driving record for added irony."
+      "explanation": "'I can't believe we give it to children' is a great line \u2014 the implication that it's too powerful for adult Michael is absurd and funny. Good callback that pays off the children's aspirin plant."
     },
     {
-      "index": 38,
-      "text": "It's an idiot on a scooter at night? It's gotta be Gob.",
+      "index": 52,
+      "text": "Gob's yacht. George Michael visits to get fake IDs. A woman emerges: 'She's an Olympian... hopeful. Swimming and some coaching.'",
       "characters": [
-        "Lucille"
+        "Gob",
+        "George Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Gob has a different woman on the yacht now. George Michael notices her.",
+      "punchline": "Gob describes her as an 'Olympian \u2014 hopeful' with the qualification 'swimming and some coaching' \u2014 implying she's not actually an Olympian but a coaching-adjacent hopeful. Gob's vagueness about her status is funnier than any specific detail.",
+      "craft_total": 7.28,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Olympian hopeful' is a great qualifier. Gob is trying to impress but keeps undermining himself with qualifications. Classic Gob self-sabotage."
+    },
+    {
+      "index": 53,
+      "text": "George Michael tells Gob that Michael can't use the phone or go anywhere \u2014 he's trapped at Lucille's. 'That's when Gob decided to take the yacht to South America for the summer.'",
+      "characters": [
+        "Narrator",
+        "Gob",
+        "George Michael"
       ],
       "joke_types": [
         "character_comedy",
         "setup_punchline"
       ],
-      "setup": "Seeing someone on a scooter",
-      "punchline": "Immediately identifies GOB by his poor choices",
-      "craft_total": 7.81,
-      "impact_score": 7.5,
-      "quotability": 8.0,
+      "setup": "George Michael innocently explains Michael is laid up and can't enforce anything.",
+      "punchline": "Gob immediately interprets 'Michael is incapacitated' as his cue to flee to South America on the yacht \u2014 treating his brother's injury as an opportunity.",
+      "craft_total": 7.61,
+      "impact_score": 7.17,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect maternal recognition - knowing your child by their bad judgment. The casual cruelty is perfectly Lucille."
+      "explanation": "The logic is pure Gob: his brother's vulnerability is his opportunity. The specificity of 'South America for the summer' \u2014 so casual and immediate \u2014 is funny. Good character integration."
     },
     {
-      "index": 39,
-      "text": "I was thrown clear.",
+      "index": 54,
+      "text": "'I gotta alert this boat's crew.' [Cut to crew's devastated reaction.] 'They'll be devastated.'",
       "characters": [
-        "Lucille"
+        "Narrator",
+        "Gob"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "absurdist"
-      ],
-      "setup": "Car accident with Michael concerned about frail mother",
-      "punchline": "Lucille casually describes being ejected from vehicle",
-      "craft_total": 6.95,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Casual delivery of dramatic physical trauma is perfectly Lucille. The matter-of-fact tone makes the absurd situation funnier."
-    },
-    {
-      "index": 40,
-      "text": "Your mother asked me to pump you full of... Children's aspirin.",
-      "characters": [
-        "Doctor"
-      ],
-      "joke_types": [
-        "misdirection",
+        "visual_gag",
         "deadpan_understatement"
       ],
-      "setup": "Ominous phrasing about what Michael was given",
-      "punchline": "It's just kid's aspirin",
-      "craft_total": 6.97,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "Gob announces he needs to tell the crew about the South America trip.",
+      "punchline": "The narrator's prediction ('They'll be devastated') is followed (or accompanied) by the crew's reaction \u2014 presumably thrilled or indifferent, not devastated. Gob thinks his crew adores him.",
+      "craft_total": 7.31,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic misdirection that makes something innocent sound sinister, then deflates. The pause adds to the effect."
+      "explanation": "The joke is in the gap between Gob's self-importance and the crew's actual reaction. Works as a quick visual beat."
     },
     {
-      "index": 41,
-      "text": "I hardly felt it. In fact, actually, uh, I didn't feel it.",
+      "index": 55,
+      "text": "'I just jumped through a plate glass window on a date.' / 'Oh. Well, women love to laugh.'",
       "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "escalation"
-      ],
-      "setup": "Michael apologizing for the scooter accident",
-      "punchline": "Victim admits he couldn't feel the impact, implying paralysis",
-      "craft_total": 6.94,
-      "impact_score": 6.75,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark escalation from reassurance to alarming revelation. The delivery makes the horrible implication funnier."
-    },
-    {
-      "index": 42,
-      "text": "It was a wild, wild ride.",
-      "characters": [
+        "Dr. Miller",
         "Buster"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "wordplay_pun"
+        "setup_punchline",
+        "deadpan_understatement"
       ],
-      "setup": "Lucille 2 asking about their kissing",
-      "punchline": "Buster describes it like an amusement park attraction",
-      "craft_total": 7.11,
-      "impact_score": 6.17,
-      "quotability": 7.0,
+      "setup": "Dr. Miller has apparently just come from an extremely eventful date involving a plate glass window.",
+      "punchline": "'Women love to laugh' \u2014 treating self-defenestration as a valid dating strategy, delivered completely deadpan.",
+      "craft_total": 8.02,
+      "impact_score": 8.25,
+      "quotability": 9.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Buster's awkward attempt at romance talk reveals his inexperience. The enthusiasm is endearingly inappropriate."
+      "explanation": "Exceptional throwaway joke. 'Women love to laugh' as justification for jumping through plate glass on a date is bizarre and perfect. It's delivered so casually that it takes a beat to land. Maximum economy \u2014 the joke is entirely in those four words. One of the episode's most quotable lines."
     },
     {
-      "index": 43,
-      "text": "Totally cool. Didn't feel a thing. You know, Mom, I'm crazy about this aspirin. I can't believe we give it to children.",
+      "index": 56,
+      "text": "'Nothing. Gob was just teaching me how to hit it with a hammer.'",
       "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "irony_sarcasm"
-      ],
-      "setup": "Michael on children's aspirin after head injury",
-      "punchline": "Loves the medication while being concerned about giving it to kids",
-      "craft_total": 7.32,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Ironic commentary on medication safety from someone who's clearly impaired by it. Michael's earnestness makes it funnier."
-    },
-    {
-      "index": 44,
-      "text": "Oh, and, uh, preferably French. I like the way they think.",
-      "characters": [
-        "George Michael"
+        "Buster"
       ],
       "joke_types": [
         "character_comedy",
         "absurdist"
       ],
-      "setup": "George Michael asking for fake passports",
-      "punchline": "Wants to be French because he admires their worldview",
-      "craft_total": 7.44,
-      "impact_score": 7.0,
+      "setup": "Michael asks what happened to Buster's head.",
+      "punchline": "Buster's explanation \u2014 Gob was teaching him to hit his own head with a hammer \u2014 is so casually bizarre it implies this is a normal thing they do.",
+      "craft_total": 7.95,
+      "impact_score": 7.67,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect George Michael naivety - treating fake identity as cultural exploration. The earnestness is endearing and funny."
+      "explanation": "Great absurdist line. The extreme casualness \u2014 'Gob was just teaching me' \u2014 makes it funnier than any elaborate joke could. 'Teaching me how to hit it with a hammer' implies there's a right and wrong way, which adds another layer of absurdity."
     },
     {
-      "index": 45,
-      "text": "She's an Olympian... hopeful. Swimming and some coaching. Yes, I will make the I.D.'s for you.",
+      "index": 57,
+      "text": "Michael pieces together the accident: 'Gob was there. Gob was on his scooter. I think I wanted to hit Gob.' / Lucille (Bluth): 'Yes. That is exactly what happened. You wanted to give Gob a scare.'",
       "characters": [
-        "GOB"
+        "Michael",
+        "Lucille"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "wordplay_pun"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Woman in GOB's bedroom during conversation",
-      "punchline": "Awkward explanation that she's an 'athlete' who does 'coaching'",
-      "craft_total": 6.42,
-      "impact_score": 6.0,
+      "setup": "Michael is reconstructing the accident via fragmented memory. Lucille is feeding him the version that makes her innocent.",
+      "punchline": "Lucille's eager, rapid confirmation \u2014 'Yes. That is exactly what happened' \u2014 is suspicious precisely because of its enthusiasm. She's coaching his memory in real time.",
+      "craft_total": 7.81,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is where the manipulation plot becomes most explicit without Michael realizing it. On rewatch, Lucille's 'yes, exactly' reads as obviously suspicious. Good structural work connecting the mystery to the character."
+    },
+    {
+      "index": 58,
+      "text": "Buster: 'I think I do.' [Knowing why Michael wanted to scare Gob \u2014 implying he knows Lucille orchestrated it.] Then pregnant pause before: 'Thanks, Mom.'",
+      "characters": [
+        "Buster Bluth",
+        "Lucille Bluth"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "Michael says he doesn't know why he wanted to scare Gob. Buster says he thinks he knows why.",
+      "punchline": "A long pause followed by 'Thanks, Mom' \u2014 implying Buster has figured out Lucille's manipulation but is too dependent on her to call it out, or is thanking her for some unspoken reason.",
+      "craft_total": 8.3,
+      "impact_score": 7.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The ambiguity of 'Thanks, Mom' after a knowing pause is an excellent awkward silence beat. It's unclear if Buster is thanking Lucille for the manipulation (approvingly) or has simply decided gratitude is the appropriate response to any Lucille behavior. The pause is where the comedy lives. Strong economy and character integration."
+    },
+    {
+      "index": 59,
+      "text": "'It is obvious I'm not wearing a bra, right?'",
+      "characters": [
+        "Lindsay"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Lindsay wants to cause a stir in prison with her looks.",
+      "punchline": "She asks if her braless state is 'obvious' \u2014 completely tone-deaf in a prison environment, obsessively focused on her own effect.",
+      "craft_total": 7.49,
+      "impact_score": 7.17,
       "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical GOB sleaziness with transparent euphemisms. Not particularly clever but consistent with character."
+      "explanation": "Character-consistent joke for Lindsay but not particularly clever. The absurdity of the prison context saves it from being entirely one-note."
     },
     {
-      "index": 46,
-      "text": "That's when Gob decided to take the yacht to South America for the summer.",
+      "index": 60,
+      "text": "'I haven't even been remotely harassed.' / 'That is not what I'm paying for.'",
       "characters": [
+        "Lindsay",
+        "George Sr."
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Lindsay is distressed that she hasn't been harassed in prison. George Sr. responds he's paying to prevent harassment.",
+      "punchline": "They are at cross-purposes: she WANTS to be harassed (as validation of her attractiveness); he's PAYING to prevent it. The dark comedy is in Lindsay's desire for prison harassment as a compliment.",
+      "craft_total": 8.51,
+      "impact_score": 8.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. The reversal is perfect: Lindsay wants prison harassment as a self-esteem boost; George Sr. is spending gold to prevent it. The parallel miscommunication \u2014 and the dark premise of 'I WANT to be harassed' \u2014 is both character-perfect and genuinely surprising. Highly quotable."
+    },
+    {
+      "index": 61,
+      "text": "'Have I lost it? Did I ever even have it?'",
+      "characters": [
+        "Lindsay"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Lindsay learns George Sr. has been paying to prevent her from being harassed in prison.",
+      "punchline": "Lindsay's existential crisis \u2014 'have I lost it?' \u2014 reveals she was relying on prison harassment as proof of her attractiveness. The question 'Did I ever even have it?' is unexpectedly poignant and funny.",
+      "craft_total": 7.5,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The existential 'did I ever even have it?' applied to prison harassment is a great comedy beat. It's self-aware enough to be funny and specific enough to be character-perfect for Lindsay."
+    },
+    {
+      "index": 62,
+      "text": "'Your mother snuck 'em in here stuffed in energy bar wrappers to keep me from getting strangled in the shower or worse.' / 'Stabbed?' / 'In a way.'",
+      "characters": [
+        "George Sr.",
+        "Lindsay"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "misdirection"
+      ],
+      "setup": "George Sr. explains he has Krugerrands (gold coins) in prison.",
+      "punchline": "George Sr. says 'or worse' than strangled. Lindsay guesses 'stabbed?' George Sr. confirms 'in a way' \u2014 implying the 'worse' is sexual assault, which Lindsay completely misses.",
+      "craft_total": 7.88,
+      "impact_score": 7.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dark and clever. 'Stabbed?' / 'In a way' is a beautifully economical way to imply prison rape without stating it. Lindsay's obliviousness to the subtext is in character. The 'in a way' carries enormous weight in two words."
+    },
+    {
+      "index": 63,
+      "text": "'But you keep coming back here, honey, and I'm going broke.' / 'That's all I ever wanted from you, Daddy. For you to spend money on me.'",
+      "characters": [
+        "George Sr.",
+        "Lindsay"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "George Sr. explains his financial sacrifice to protect Lindsay.",
+      "punchline": "Lindsay's father-daughter revelation moment is not about love or recognition \u2014 it's that she's glad he finally spent money on her. The emotional breakthrough is entirely transactional.",
+      "craft_total": 8.59,
+      "impact_score": 8.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes and one of the show's great character moments. The entire Lindsay prison subplot has been building to what seems like a father-daughter emotional breakthrough \u2014 and it pays off as pure materialism. 'For you to spend money on me' is the perfect subversion: her deepest desire isn't love or respect, it's financial attention. Character integration is a 9.5 \u2014 this could only be Lindsay. Very high quotability."
+    },
+    {
+      "index": 64,
+      "text": "Michael tells Gob to move back onto the yacht: 'What makes you think I'd want to now?' Gob reacts with suspicion to the offer.",
+      "characters": [
+        "Gob",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael, still concussed and being manipulated, generously offers Gob use of the yacht indefinitely.",
+      "punchline": "Gob's response \u2014 'What makes you think I'd want to now?' \u2014 is funny because he was literally about to flee to South America on it. His pride prevents him from accepting even beneficial offers.",
+      "craft_total": 6.91,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good character comedy for Gob \u2014 his contrarianism and pride mean he resists even things he wants if they're offered. Functional but not standout."
+    },
+    {
+      "index": 65,
+      "text": "'Wow. How hard did you hit that steering wheel?' / 'I actually hit the back of my head.' / 'The back of your head?'",
+      "characters": [
+        "Gob",
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Michael is describing the accident while under Lucille's narrative about what happened.",
+      "punchline": "Gob catches the inconsistency \u2014 if Michael was driving and hit his head, it should be the front, not the back. This is the clue that unravels the mystery.",
+      "craft_total": 7.92,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Clever structural joke \u2014 Gob (of all people) is the one who notices the logical inconsistency. It's funny that Gob is the detective here, and it's well-structured as a mystery-comedy beat."
+    },
+    {
+      "index": 66,
+      "text": "'I was halfway to South America, but I couldn't let you get away with it, because we're brothers, Mom, and we kind of like each other.'",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Gob confronts Lucille on Michael's behalf.",
+      "punchline": "'We kind of like each other' \u2014 the extreme understatement of sibling love as motivation is both touching and funny. Also, addressing Lucille as 'Mom' mid-sentence after 'we're brothers' is a funny grammatical slip Gob doesn't notice.",
+      "craft_total": 7.97,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The callback to 'kind of like each other' as the emotional climax is well-earned and touching while still being funny. Gob's fraternal feeling expressed as 'kind of like' is a perfect Gob register."
+    },
+    {
+      "index": 67,
+      "text": "'But \"skiff\" is appropriate, right?'",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "meta_self_referential"
+      ],
+      "setup": "Gob dramatically orders the yacht to 'turn this skiff around.' The response is 'we haven't even left the dock.'",
+      "punchline": "Gob's follow-up \u2014 'but \"skiff\" is appropriate, right?' \u2014 shows he's more concerned about using the right nautical vocabulary than the situation itself.",
+      "craft_total": 7.89,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Wonderful character joke. Gob has delivered a dramatic command, been deflated (haven't left the dock), and his response is to seek validation for his nautical terminology. It punctures the moment perfectly and reveals his vanity. Very quotable."
+    },
+    {
+      "index": 68,
+      "text": "Gob rushes back. Michael: 'What are you doing?' Gob: 'Hey. Open this door.' [Banging.] 'You've been set up.' Michael: 'There's no way you were trying to hurt me. You don't hate me. Mom hates me. You kind of like me.'",
+      "characters": [
+        "Gob Bluth",
+        "Michael Bluth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Gob rushes to tell Michael he's been set up by Lucille.",
+      "punchline": "Gob's version of brotherly reassurance: 'You don't hate me. Mom hates me. You kind of like me.' \u2014 damning with faint praise in both directions, but genuinely moving from a Bluth.",
+      "craft_total": 7.73,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Mom hates me. You kind of like me.' is an outstanding line for the Bluth universe \u2014 the emotional ceiling is 'kind of like,' which is treated as a meaningful and moving statement. The escalating negatives ('you don't hate me... Mom hates me... you kind of like me') land the punchline beautifully. Only in this family does 'kind of like' constitute an emotional declaration. Highly quotable, excellent character integration."
+    },
+    {
+      "index": 69,
+      "text": "'Mom must have clubbed you with a champagne bottle or something so she could drive.' / 'Gob, how'd you figure it out?' / 'It's funny you should ask that...' / 'No. He didn't figure anything out.'",
+      "characters": [
+        "Gob",
+        "Michael",
         "Narrator"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "meta_self_referential"
       ],
-      "setup": "GOB learning Michael is incommunicado",
-      "punchline": "Immediately plans elaborate yacht theft for vacation",
-      "craft_total": 7.35,
-      "impact_score": 6.75,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect GOB logic - any opportunity becomes a scheme. The casual way he escalates to international yacht theft is perfectly in character."
-    },
-    {
-      "index": 47,
-      "text": "I just jumped through a plate glass window on a date.",
-      "characters": [
-        "Buster"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "absurdist"
-      ],
-      "setup": "Buster on phone with Dr. Miller",
-      "punchline": "Casual mention of dramatic self-injury during romance",
-      "craft_total": 7.77,
-      "impact_score": 7.67,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Buster physical comedy delivered as casual conversation. The matter-of-fact tone makes the absurd action funnier."
-    },
-    {
-      "index": 48,
-      "text": "Oh. Well, women love to laugh.",
-      "characters": [
-        "Dr. Miller"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "absurdist"
-      ],
-      "setup": "Buster describing jumping through window",
-      "punchline": "Doctor treats serious injury as comedy attempt",
-      "craft_total": 7.62,
-      "impact_score": 7.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfectly dry response that treats self-harm as romantic strategy. The clinical delivery makes it funnier."
-    },
-    {
-      "index": 49,
-      "text": "Gob was just teaching me how to hit it with a hammer.",
-      "characters": [
-        "Buster"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Buster explaining his head injury",
-      "punchline": "GOB was giving lessons in self-inflicted head trauma",
-      "craft_total": 7.41,
-      "impact_score": 7.33,
+      "setup": "Gob presents a theory about Lucille clubbing Michael to take the wheel.",
+      "punchline": "Michael asks how Gob figured it out, seemingly impressed. The narrator immediately undercuts: 'No. He didn't figure anything out.' \u2014 deflating Gob's detective moment.",
+      "craft_total": 8.62,
+      "impact_score": 8.67,
       "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliantly absurd explanation that makes perfect Bluth family sense. The casual delivery of insane content is gold."
+      "explanation": "Exceptional narrator joke. Gob has a moment of apparent cleverness \u2014 his theory happens to be right \u2014 but the narrator immediately clarifies he 'didn't figure anything out,' meaning it was a lucky guess or coincidence. It's meta (the narrator corrects the character) and it perfectly preserves Gob's idiot status. One of the episode's best structural jokes."
     },
     {
-      "index": 50,
-      "text": "It is obvious I'm not wearing a bra, right?",
+      "index": 70,
+      "text": "'Hey, big shot!' [Flashback to Lucille yelling out the window.] Which was behind the passenger seat. Which means that she picked you up and dragged you over to the driver's seat.",
       "characters": [
-        "Lindsay"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Lindsay trying to get attention in prison",
-      "punchline": "Directly asks guard to notice her sexuality",
-      "craft_total": 6.84,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Lindsay's desperate attempt to get the attention she expected. The directness makes it more cringe than clever."
-    },
-    {
-      "index": 51,
-      "text": "Your mother snuck 'em in here stuffed in energy bar wrappers to keep me from getting strangled in the shower or worse.",
-      "characters": [
-        "George Sr."
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "setup_punchline"
-      ],
-      "setup": "George Sr. explaining why he pays other inmates",
-      "punchline": "Reveals the 'protein bars' were actually gold smuggled for protection",
-      "craft_total": 7.71,
-      "impact_score": 7.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Brilliant payoff to the protein bar setup. Dark prison humor with perfect AD-style reveal that recontextualizes earlier scenes."
-    },
-    {
-      "index": 52,
-      "text": "But you keep coming back here, honey, and I'm going broke.",
-      "characters": [
-        "George Sr."
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "irony_sarcasm"
-      ],
-      "setup": "George Sr. paying for Lindsay's protection",
-      "punchline": "Her beauty is literally bankrupting him",
-      "craft_total": 7.35,
-      "impact_score": 6.75,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Dark irony that Lindsay's vanity visits are financially ruining her father. Subverts her expectation of being harassed."
-    },
-    {
-      "index": 53,
-      "text": "That's all I ever wanted from you, Daddy. For you to spend money on me.",
-      "characters": [
-        "Lindsay"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "George Sr. revealing he's paying for her safety",
-      "punchline": "Lindsay treats financial protection as emotional validation",
-      "craft_total": 7.62,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Lindsay moment - turning genuine paternal sacrifice into materialistic satisfaction. Dark and perfectly character-specific."
-    },
-    {
-      "index": 54,
-      "text": "But 'skiff' is appropriate, right?",
-      "characters": [
-        "GOB"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Just used nautical terminology",
-      "punchline": "Seeks validation for his word choice",
-      "craft_total": 7.08,
-      "impact_score": 6.33,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic GOB insecurity about appearing sophisticated. His need for approval about vocabulary is endearingly pathetic."
-    },
-    {
-      "index": 55,
-      "text": "Which was behind the passenger seat. Which means that she picked you up and dragged you over to the driver's seat.",
-      "characters": [
-        "GOB"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "escalation"
-      ],
-      "setup": "Explaining how Michael got hit on back of head",
-      "punchline": "Reveals Lucille's elaborate cover-up involving moving Michael's body",
-      "craft_total": 7.49,
-      "impact_score": 7.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good detective work that reveals the absurd lengths Lucille went to for her deception. Sets up the final confrontation."
-    },
-    {
-      "index": 56,
-      "text": "Mom can't pick me up. She could barely pick up that bag of protein bars.",
-      "characters": [
+        "Narrator",
+        "Gob",
         "Michael"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "callback"
+        "callback",
+        "setup_punchline"
       ],
-      "setup": "GOB suggesting Lucille moved Michael",
-      "punchline": "Michael references her supposed frailty with the heavy bag",
-      "craft_total": 7.24,
-      "impact_score": 6.75,
-      "quotability": 6.0,
+      "setup": "The brothers reconstruct how Lucille framed Michael for the accident.",
+      "punchline": "The rock from Buster's archaeological dig \u2014 planted early as a throwaway \u2014 turns out to be the weapon Lucille used, and she physically dragged Michael to the driver's seat. The absurdity of the logistics is the joke.",
+      "craft_total": 7.6,
+      "impact_score": 7.25,
+      "quotability": 5.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Callback to the protein bars that sets up GOB's reveal about the Krugerrands. Michael's trust in his mother's frailty act."
+      "explanation": "The payoff to multiple planted jokes. Buster's rock (established as a throwaway early in the episode) becomes the instrument of Lucille's frame-up. The absurdist logistics \u2014 frail Lucille knocking out Michael, dragging him to the driver's seat \u2014 are played completely straight, which makes it funnier. The structure across the episode is what earns the high score. Massive rewatch bonus."
     },
     {
-      "index": 57,
-      "text": "Guess what? They weren't protein bars. They were gold Krugerrands. And Dad finally paid attention to my intellect.",
+      "index": 71,
+      "text": "'Mom can't pick me up. She could barely pick up that bag of protein bars.' / 'Guess what? They weren't protein bars. They were gold Krugerrands.'",
+      "characters": [
+        "Michael",
+        "Gob"
+      ],
+      "joke_types": [
+        "callback",
+        "setup_punchline"
+      ],
+      "setup": "Michael argues Lucille couldn't have moved him because she could barely lift the bag of protein bars.",
+      "punchline": "The protein bars were Krugerrands \u2014 solid gold. The bag was actually extremely heavy, which means Lucille is much stronger than she appears. Multiple planted jokes pay off simultaneously.",
+      "craft_total": 8.81,
+      "impact_score": 9.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's best joke by structure. Every planted detail converges: Michael's joke about 'gold bars' (which he meant sarcastically) was literally true. The 'protein bars' were Krugerrands, which means the bag WAS extremely heavy, which means Lucille IS strong enough to have moved him. Lindsay's prison subplot (the Krugerrands paying off George Sr.'s protection) connects here too. The structure across the entire episode is masterful \u2014 this is a 9+ moment because it's exactly what the anchor describes: multiple jokes paying off simultaneously, rewarding attentive viewers."
+    },
+    {
+      "index": 72,
+      "text": "Michael: 'Mom, you and I were getting along so well. I was thinking so highly of you. How could you make me think this was all my fault?' Lucille: 'Because if you knew it was my fault, you would've turned against me. And I had finally gotten you on my side.'",
+      "characters": [
+        "Lucille Bluth",
+        "Michael Bluth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael confronts Lucille about the cover-up.",
+      "punchline": "Lucille's confession is completely unapologetic and strategically rational: she manipulated Michael because it worked and she wanted his approval. Her honesty about the manipulation is somehow more disturbing than the manipulation itself.",
+      "craft_total": 7.58,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Lucille's matter-of-fact explanation of her manipulation strategy is dark comedy at its best \u2014 she's not apologizing, she's explaining her logic as if it's reasonable. 'I had finally gotten you on my side' treats Michael's approval as a resource she was trying to capture. Strong character integration."
+    },
+    {
+      "index": 73,
+      "text": "'And Dad finally paid attention to my intellect.' (Lindsay celebrates that the Krugerrand scheme proves George Sr. valued her mind.)",
       "characters": [
         "Lindsay"
       ],
       "joke_types": [
-        "setup_punchline",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Mystery of the heavy protein bars",
-      "punchline": "Reveals gold smuggling and Lindsay's pride in being smart for once",
-      "craft_total": 7.74,
+      "setup": "Lindsay has been desperate for her father to value her intellect over her looks.",
+      "punchline": "The 'evidence' of George Sr.'s respect for her intellect is that he hid gold coins in protein bar wrappers \u2014 Lucille's scheme, not Lindsay's. Lindsay takes credit for something she had nothing to do with.",
+      "craft_total": 7.97,
       "impact_score": 7.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Perfect payoff to multiple setups with Lindsay's rare moment of intellectual pride. Recontextualizes several earlier scenes."
+      "explanation": "Nice callback to Lindsay's subplot. Her misreading of the Krugerrand situation as validation of her intellect is very in character \u2014 she's taken the wrong lesson from every event in this episode."
     },
     {
-      "index": 58,
-      "text": "because we're brothers, Mom, and we kind of like each other.",
+      "index": 74,
+      "text": "'Mom, you and I were getting along so well. I was thinking so highly of you. How could you make me think this was all my fault?' / 'Because if you knew it was my fault, you would've turned against me. And I had finally gotten you on my side. You were sticking up for me. I don't even remember you ever doing that before.'",
       "characters": [
-        "GOB"
+        "Michael",
+        "Lucille"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Lucille is confronted with her manipulation scheme.",
+      "punchline": "Her explanation is completely sincere and self-pitying \u2014 she framed her son for a car accident because she wanted him to like her. The logic is both monstrous and pathetic, which is the joke.",
+      "craft_total": 7.84,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The reveal of Lucille's motivation is both comedic and genuinely uncomfortable. She's a monster who just wants to be loved \u2014 and she expresses it through increasingly extreme manipulation. The comedy is in the gap between the crime (framing her son) and the motive (wanting him to stick up for her). Very Lucille."
+    },
+    {
+      "index": 75,
+      "text": "Michael: 'Stop lying. Stop manipulating. Just be nicer.' / Lucille: 'But...' / [long pause] / 'You're right.'",
+      "characters": [
+        "Michael",
+        "Lucille"
       ],
       "joke_types": [
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "GOB explaining why he came back to help",
-      "punchline": "Admits to minimal fraternal affection",
-      "craft_total": 7.58,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Touching moment of brotherly affection delivered in the most understated way possible. Callbacks to earlier 'kind of like' exchange."
-    },
-    {
-      "index": 59,
-      "text": "I'm a horrible mother.",
-      "characters": [
-        "Lucille"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "callback"
-      ],
-      "setup": "Caught in her deception",
-      "punchline": "Returns to her earlier admission of being awful",
-      "craft_total": 6.83,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Callback to earlier self-awareness moment. Less funny the second time but shows some character growth."
-    },
-    {
-      "index": 60,
-      "text": "That's crazy talk. You're a fantastic mother.",
-      "characters": [
-        "Michael",
-        "GOB"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Lucille admitting to being horrible",
-      "punchline": "Sons immediately contradict obvious truth",
-      "craft_total": 7.17,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Michael confronts Lucille and demands she be nicer.",
+      "punchline": "After a long pause, Lucille concedes: 'You're right.' \u2014 which is the most shocking thing she's ever said. The pause before it does the comedic work.",
+      "craft_total": 8.26,
+      "impact_score": 8.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Bluth family dysfunction - enabling terrible behavior through denial. The automatic responses are perfectly coded."
+      "explanation": "The joke is entirely in the delivery and pause \u2014 Lucille saying 'you're right' is so out of character that it lands as a comedic shock. The pause 'But...' sets up that she's about to argue, making the capitulation funnier."
     },
     {
-      "index": 61,
-      "text": "You know what? I knew society would never accept this. And they never will.",
+      "index": 76,
+      "text": "'I'm a horrible mother.' / 'No, no, Mom. You're great.' / 'That's crazy talk.' / 'You're a fantastic mother.' / 'I can't believe what I'm hearing, Mother.'",
+      "characters": [
+        "Lucille",
+        "Michael",
+        "Gob",
+        "Lindsay"
+      ],
+      "joke_types": [
+        "callback",
+        "irony_sarcasm"
+      ],
+      "setup": "Lucille repeats her 'I've been a horrible mother' performance from earlier in the episode.",
+      "punchline": "This time, instead of just Michael reassuring her, ALL her children compete to reassure her \u2014 including Gob and Lindsay who privately admitted she's been a horrible mother. The manipulation has been completely successful.",
+      "craft_total": 8.01,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Perfect structural callback. Earlier we saw just Michael cave to this move; now all three children are rushing to reassure her. The episode ends with Lucille having successfully manipulated everyone despite being exposed. 'That's crazy talk' is a funny line for Gob. The circularity \u2014 she wins anyway \u2014 is both funny and slightly dark."
+    },
+    {
+      "index": 77,
+      "text": "'On the next Arrested Development': George Michael and Maeby sneak back into 'Les Cousins Dangereux.' The ticket collector tells an elderly AARP member that they 'will not be starting Les Cousins Dangereux until you leave.' The AARP man protests his card covers 'one and a guest.'",
+      "characters": [
+        "George Michael",
+        "Maeby",
+        "AARP Man",
+        "Ticket Collector"
+      ],
+      "joke_types": [
+        "callback",
+        "running_gag"
+      ],
+      "setup": "'On the next' segment continues the Les Cousins Dangereux subplot.",
+      "punchline": "The AARP man insisting his card covers him 'and a guest' for a film called Dangerous Cousins implies the elderly man is also there with an inappropriate companion \u2014 mirroring George Michael and Maeby's situation.",
+      "craft_total": 8.0,
+      "impact_score": 8.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "'You know what? I knew society would never accept this.' \u2014 the AARP man's exit line mirrors the Maeby/George Michael situation perfectly. The parallel is very well-constructed and rewards attentive viewers."
+    },
+    {
+      "index": 78,
+      "text": "'You know what? I knew society would never accept this. And they never will.'",
       "characters": [
         "George Michael"
       ],
       "joke_types": [
         "callback",
-        "cringe_discomfort"
+        "irony_sarcasm"
       ],
-      "setup": "Theater refusing to let them see the movie",
-      "punchline": "George Michael thinks it's about cousin relationships",
-      "craft_total": 7.57,
-      "impact_score": 7.33,
+      "setup": "George Michael and Maeby are once again thrown out of Les Cousins Dangereux.",
+      "punchline": "George Michael's declaration \u2014 that society will never accept their love \u2014 mirrors the narrator's earlier editorial that 'it was the world that was wrong.' The cousin-love theme becomes the episode's final comedic note.",
+      "craft_total": 7.73,
+      "impact_score": 7.67,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Callback to narrator's framing of their relationship. George Michael's misunderstanding of the rejection is perfectly cringe."
+      "explanation": "Good closing callback for the subplot. George Michael's grandiose framing of his situation ('society will never accept this') is both funny in isolation and a callback to the narrator's editorial earlier."
     },
     {
-      "index": 62,
-      "text": "I was definitely driving that time.",
+      "index": 79,
+      "text": "TAG: Michael's insurance takes another hit. Michael is in another accident. 'Ow!' Then: 'I was definitely driving that time.'",
       "characters": [
-        "Lucille"
+        "Michael Bluth",
+        "Narrator"
       ],
       "joke_types": [
         "callback",
-        "deadpan_understatement"
+        "running_gag"
       ],
-      "setup": "Another car accident in the preview",
-      "punchline": "Lucille admits fault for once",
-      "craft_total": 7.13,
-      "impact_score": 6.5,
-      "quotability": 6.5,
+      "setup": "The episode has been built around Michael being blamed for an accident he didn't cause.",
+      "punchline": "In the tag, Michael is in another accident \u2014 and this time he definitively confirms he was driving, making the distinction from the Lucille-caused crash clear and funny.",
+      "craft_total": 7.93,
+      "impact_score": 8.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Callback to her driving problems with rare honesty. The casual admission makes her terrible driving record funnier."
+      "explanation": "'I was definitely driving that time' is a perfect closer \u2014 the specific, pedantic clarification that this crash (unlike the episode's central crash) was genuinely his fault. It's a sharp episode button that also seeds the next episode's insurance subplot. The economy is excellent and the callback structure earns it."
     },
     {
-      "index": 63,
-      "text": "I was definitely driving that time.",
+      "index": 80,
+      "text": "Michael's insurance teaser: car crash #2. 'Ow! I was definitely driving that time.'",
       "characters": [
-        "Lucille"
+        "Michael"
       ],
       "joke_types": [
         "callback",
-        "escalation"
+        "dark_subversive"
       ],
-      "setup": "Lucille in another car accident",
-      "punchline": "She admits culpability this time",
-      "craft_total": 7.11,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "'On the next' \u2014 Michael gets in another car accident.",
+      "punchline": "'I was definitely driving that time' \u2014 clarifying that unlike the first accident (where he wasn't), this one is his fault. The contrast between the framed accident and the real one is the joke.",
+      "craft_total": 7.57,
+      "impact_score": 7.25,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Good callback that shows patterns repeating with slight variation"
+      "explanation": "Perfect economy in the callback. 'I was definitely driving that time' resolves the episode's central mystery (was he driving?) by contrast. A good final punchline for the episode."
     }
   ],
   "air_date": "2003-12-21",

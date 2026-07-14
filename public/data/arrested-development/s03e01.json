@@ -4,18 +4,58 @@
   "season": 3,
   "episode_number": 1,
   "title": "The Cabin Show",
-  "humor_index": 92.4,
-  "jpm": 2.4,
-  "avg_craft": 7.64,
-  "avg_impact": 7.36,
-  "total_jokes": 64,
-  "war": 96.0,
-  "dominant_joke_types": "[\"character_comedy\", \"deadpan_understatement\", \"irony_sarcasm\"]",
-  "standout_joke_ids": "[13, 37, 3]",
+  "humor_index": 100,
+  "jpm": 3.48,
+  "avg_craft": 7.88,
+  "avg_impact": 7.71,
+  "total_jokes": 93,
+  "war": 166.9,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[45, 19, 16]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
+      "text": "Stock analyst upgrades Bluth Company from 'Triple Sell' to 'Don't Buy' as if it's good news",
+      "characters": [
+        "Stock Analyst",
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "setup_punchline"
+      ],
+      "setup": "Michael is hearing 'good things' about the Bluth Company for the first time \u2014 the narrator sets up genuine optimism",
+      "punchline": "The 'upgrade' is from 'Triple Sell' to 'Don't Buy' \u2014 still catastrophically bad, but delivered as a triumph",
+      "craft_total": 7.96,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The joke works on multiple levels: the absurdist logic of treating 'Don't Buy' as an upgrade is perfectly constructed, and it immediately establishes the Bluth Company's catastrophic state while subverting the narrator's optimistic framing. The structure of 'good news' leading to something objectively terrible is sharp writing. It also seeds a callback used repeatedly throughout the episode."
+    },
+    {
+      "index": 2,
+      "text": "Michael says he's going to the prison to 'gloat' rather than 'visit'",
+      "characters": [
+        "Michael",
+        "Lucille"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Lucille says 'I thought you said we shouldn't visit him'",
+      "punchline": "'Visit, no. Gloat, yes.'",
+      "craft_total": 7.8,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Extremely economical \u2014 four words perfectly encapsulating Michael's complicated relationship with his father. The distinction between 'visit' and 'gloat' is funny precisely because Michael considers it a meaningful moral distinction while it reveals his pettiness. High quotability, perfect character integration."
+    },
+    {
+      "index": 3,
       "text": "Visit, no. Gloat, yes.",
       "characters": [
         "Michael"
@@ -24,18 +64,217 @@
         "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Michael explaining why he's going to see his imprisoned father",
-      "punchline": "The honest admission of petty motivation",
-      "craft_total": 7.52,
-      "impact_score": 6.75,
-      "quotability": 8.5,
+      "setup": "Lucille says she thought Michael said they shouldn't visit George Sr. in prison",
+      "punchline": "Michael clarifies the distinction: visiting is out, gloating is the actual purpose",
+      "craft_total": 8.32,
+      "impact_score": 8.0,
+      "quotability": 9.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect character moment - Michael's self-awareness about his pettiness. Maximum economy."
+      "explanation": "Four words, perfectly structured. The joke's economy is nearly flawless \u2014 it sets up and delivers the entire joke in one breath. It's also deeply character-specific: Michael presents himself as the moral center of the family but immediately reveals a petty, vindictive streak. The distinction between 'visit' and 'gloat' is delivered with deadpan precision. Highly quotable and emblematic of Arrested Development's ability to reveal character through compression."
     },
     {
-      "index": 2,
-      "text": "You seem more villainous than usual, Mom. Are you sober?",
+      "index": 4,
+      "text": "This sink hole spread a little bit more last night? Anyway, I'm gonna go to the prison.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "The family's housing development is literally sinking into the earth",
+      "punchline": "Michael treats catastrophic sinkholes with breezy nonchalance, pivoting immediately to other plans",
+      "craft_total": 7.33,
+      "impact_score": 6.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The casual 'anyway' pivot after acknowledging a geological disaster is perfectly Michael \u2014 competent enough to notice problems, too beleaguered to be surprised by them. Economy is excellent."
+    },
+    {
+      "index": 5,
+      "text": "Lucille says she wants Buster to come live with Michael \u2014 'and it's not because he has that horrible hook for a hand now'",
+      "characters": [
+        "Lucille"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Lucille is trying to offload Buster onto Michael by framing it as a generous offer",
+      "punchline": "Her parenthetical disclaimer about the hook hand is the buried real reason, delivered with classic Lucille denial",
+      "craft_total": 7.74,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The joke is entirely in Lucille's character \u2014 the denial that contradicts itself in the same breath is quintessential Lucille Bluth. The callback to Buster's hook hand rewards returning viewers. 'That horrible hook for a hand NOW' \u2014 the 'now' does heavy lifting, acknowledging how wild the show's continuity is."
+    },
+    {
+      "index": 6,
+      "text": "Lucille plays a recording she made of Buster snoring, labeled 'Buster snoring, Wednesday night'",
+      "characters": [
+        "Lucille"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy"
+      ],
+      "setup": "Lucille is trying to convince Michael that Buster's snoring is unbearable",
+      "punchline": "The fact that she has a labeled recording implies she has catalogued multiple instances \u2014 it's such a specific, bureaucratic level of grievance",
+      "craft_total": 7.37,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The specificity of 'Wednesday night' implies an archive of recordings, which reveals Lucille's controlling nature in an absurdist way. The formality of the label versus the petty domestic grievance is a solid character-comedy beat."
+    },
+    {
+      "index": 7,
+      "text": "Michael: 'You seem more villainous than usual, Mom. Are you sober?' Lucille: 'Michael, it's 8:00 a.m.' Michael: 'So, it's not that.'",
+      "characters": [
+        "Michael",
+        "Lucille"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Michael notices Lucille is acting strangely villainous and asks if she's sober \u2014 implying sobriety would be the unusual state",
+      "punchline": "Lucille's indignant 'it's 8 a.m.' and Michael's immediate 'so it's not that' confirms she drinks constantly and sobriety is not the explanation",
+      "craft_total": 8.45,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "One of the episode's best exchanges. The structure is flawless: Michael's question (is she sober?) already implies she's normally drunk. Lucille's deflection with the time confirms it without admitting it. Michael's immediate 'so it's not that' closes it perfectly. Three beats, zero wasted words, total character specificity. Lucille's alcoholism is character-integrated comedy at its finest \u2014 could only work with this exact mother-son dynamic."
+    },
+    {
+      "index": 8,
+      "text": "Lucille went off her postpartum medication \u2014 'You had Buster 32 years ago.' 'And that's how long I've been depressed about him.'",
+      "characters": [
+        "Michael",
+        "Lucille"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Michael is incredulous that Lucille is still on postpartum medication decades later",
+      "punchline": "Lucille confirms she's been depressed about Buster specifically for 32 years \u2014 not about giving birth, but about the specific child",
+      "craft_total": 8.5,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A top-tier joke for this episode. The setup is Michael being reasonably appalled at 32-year-old postpartum medication. The punchline is Lucille reframing it: she's not depressed ABOUT giving birth \u2014 she's depressed ABOUT BUSTER. The specificity and the matter-of-fact delivery transform a dark joke into a perfect character moment. It's Arrested Development at its best: terrible parenting played completely straight. Highly quotable, pure Lucille."
+    },
+    {
+      "index": 9,
+      "text": "Narrator describes young Lucille releasing the emergency brake to roll her car into a lake, and Lucille responds 'Good for her'",
+      "characters": [
+        "Lucille",
+        "Narrator"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Lucille claims she went off the medication in the early 90s but 'didn't like what happened' \u2014 narrator describes the attempted vehicular self-destruction",
+      "punchline": "Lucille's response to the story about her own past near-suicidal act: 'Good for her' \u2014 as if talking about a different person doing something admirable",
+      "craft_total": 8.36,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The joke operates on two levels: the absurdity of the narrator describing Lucille's breakdown in clinical, almost admiring terms, then Lucille's dissociated 'Good for her' \u2014 she's simultaneously talking about herself and distancing herself from it. The dissociation IS the character. Dark as hell but perfectly earned through Lucille's established emotional detachment."
+    },
+    {
+      "index": 10,
+      "text": "'I must have gained three pounds' \u2014 Lucille's non-sequitur response after the car-in-lake story",
+      "characters": [
+        "Lucille"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Immediately after the narrator describes her rolling a car into a lake",
+      "punchline": "Lucille's only concern is that she gained three pounds, revealing complete narcissistic detachment from what just happened",
+      "craft_total": 7.76,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfect economy \u2014 five words of pure Lucille character. The total non-sequitur, focused entirely on vanity immediately after a discussion of psychological collapse, is so specific to her it couldn't come from any other character. The mismatch in emotional scale is the joke."
+    },
+    {
+      "index": 11,
+      "text": "Lucille says mood-altering medication leads to street drugs because 'this very handsome young doctor said so on The Today Show' \u2014 that doctor was Tom Cruise",
+      "characters": [
+        "Lucille",
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Lucille cites a 'very handsome young doctor' on The Today Show as her medical authority for going off psychiatric medication",
+      "punchline": "Michael clarifies it was Tom Cruise, the actor \u2014 Lucille's defense is 'They said he was some kind of scientist'",
+      "craft_total": 7.9,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A timely but now-evergreen joke referencing Tom Cruise's famous Today Show anti-psychiatry rant (2005). The joke works on multiple layers: Lucille's vanity (she noticed he was handsome), her gullibility (calling him a scientist), and the real-world absurdity of the actual event. The 'some kind of scientist' line is the gem \u2014 her half-defense of her source. Strong character integration since only a shallow, credulous Lucille would accept this."
+    },
+    {
+      "index": 12,
+      "text": "'That was Tom Cruise, the actor.' / 'They said he was some kind of scientist.'",
+      "characters": [
+        "Michael",
+        "Lucille"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "irony_sarcasm"
+      ],
+      "setup": "Lucille trusted a 'handsome young doctor' on the Today Show who warned against medication",
+      "punchline": "Michael reveals it was Tom Cruise (during his famous Scientology/anti-psychiatry phase); Lucille defends her credulity: 'They said he was some kind of scientist'",
+      "craft_total": 8.07,
+      "impact_score": 8.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A two-beat joke with a strong cultural reference that doesn't rely solely on the reference for the laugh. Lucille's defense \u2014 'some kind of scientist' \u2014 is the real punchline, revealing she took Scientology-adjacent claims at face value and stopped her medication as a result. This is topical satire woven through character comedy. Lucille's willful credulity toward a handsome man is perfect characterization. The joke rewards viewers who remember Tom Cruise's Today Show appearance."
+    },
+    {
+      "index": 13,
+      "text": "Michael asks 'How am I supposed to find someone willing to go into that musty old claptrap?' \u2014 he is talking about the cabin but the line lands as an insult to Lucille",
+      "characters": [
+        "Michael",
+        "Lucille"
+      ],
+      "joke_types": [
+        "misdirection",
+        "wordplay_pun"
+      ],
+      "setup": "Lucille suggests Michael take a date to the cabin. Michael asks how he'd find someone to go into 'that musty old claptrap'",
+      "punchline": "The narrator confirms 'The cabin. Yes. Yeah, that, well, that would be difficult, too' \u2014 the double meaning lands: the line applies to Lucille herself",
+      "craft_total": 7.94,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A classic AD misdirection/double-entendre. Michael is genuinely talking about the cabin, the audience hears it as an insult to Lucille, and the narrator's conspiratorial 'Yes. Yeah, that, well, that would be difficult too' confirms the double meaning without being explicit. The structure \u2014 leave the audience to make the connection, then confirm it \u2014 is textbook AD writing. Rewatch bonus: even funnier knowing the narrator is in on it."
+    },
+    {
+      "index": 14,
+      "text": "'Please get back on the meds, Mom. We miss the old, old you.'",
       "characters": [
         "Michael"
       ],
@@ -43,454 +282,410 @@
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Michael notices his mother acting strangely",
-      "punchline": "He assumes sobriety is the cause of her being worse",
-      "craft_total": 8.15,
-      "impact_score": 8.0,
-      "quotability": 9.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect family dysfunction joke - sobriety making someone worse, not better. Excellent character integration."
-    },
-    {
-      "index": 3,
-      "text": "And that's how long I've been depressed about him.",
-      "characters": [
-        "Lucille"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "Michael points out she's been on postpartum medication for 32 years",
-      "punchline": "She's been depressed about having Buster for his entire life",
-      "craft_total": 8.49,
-      "impact_score": 8.33,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Devastatingly dark maternal rejection delivered matter-of-factly. Peak Lucille character work."
-    },
-    {
-      "index": 4,
-      "text": "Claiming she could take it no more, the young mother released the emergency brake, allowing her car to roll backwards into the nearby lake.",
-      "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "dark_subversive"
-      ],
-      "setup": "Lucille mentions not liking what happened when she went off medication in the early '90s",
-      "punchline": "Dramatic suicide attempt via emergency brake release",
-      "craft_total": 7.82,
-      "impact_score": 8.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Absurdly overwrought flashback to mundane medication side effects. Visual comedy through contrast."
-    },
-    {
-      "index": 5,
-      "text": "Narrator describes Lucille's 90s suicide attempt, followed by her dismissive 'Good for her'",
-      "characters": [
-        "Narrator",
-        "Lucille"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "reaction_beat"
-      ],
-      "setup": "Dramatic description of young mother's suicide attempt",
-      "punchline": "Lucille casually approves of her past self's actions",
-      "craft_total": 8.28,
-      "impact_score": 8.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Masterful dark comedy - tragic suicide attempt treated as reasonable response to Buster. The casual approval is perfectly in character."
-    },
-    {
-      "index": 6,
-      "text": "Good for her.",
-      "characters": [
-        "Lucille"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
-      ],
-      "setup": "Narrator describes her dramatic suicide attempt",
-      "punchline": "Lucille approves of her own past suicide attempt",
-      "craft_total": 7.93,
-      "impact_score": 8.0,
+      "setup": "The conversation has established Lucille's erratic behavior \u2014 both on and off medication",
+      "punchline": "Michael specifies the 'old, OLD you' \u2014 meaning the medicated version is still not great, but the double-medicated version was preferable",
+      "craft_total": 7.58,
+      "impact_score": 7.0,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan response to her own melodrama. Maximum economy with dark twist."
+      "explanation": "The repetition of 'old' does precise comedic work \u2014 it signals that even the medicated Lucille is bad, but the double-medicated Lucille was apparently the best version. Economy is high, character integration is excellent (Michael's resigned relationship with his mother)."
     },
     {
-      "index": 7,
-      "text": "I must have gained three pounds.",
-      "characters": [
-        "Lucille"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "After describing her suicide attempt as the consequence of going off medication",
-      "punchline": "The real problem was minor weight gain",
-      "craft_total": 8.46,
-      "impact_score": 8.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant misdirection - the 'consequences' were actually vanity concerns, not mental health. Peak Lucille."
-    },
-    {
-      "index": 8,
-      "text": "That was Tom Cruise, the actor.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "observational"
-      ],
-      "setup": "Lucille mentions a handsome young doctor on The Today Show",
-      "punchline": "It was Tom Cruise during his anti-psychiatry phase",
-      "craft_total": 7.0,
-      "impact_score": 6.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Timely reference to Tom Cruise's Scientology anti-drug stance, but somewhat dated now."
-    },
-    {
-      "index": 9,
-      "text": "How am I supposed to find someone willing to go into that musty old claptrap?",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "wordplay_pun"
-      ],
-      "setup": "Michael asking about finding someone for the cabin",
-      "punchline": "Could refer to either the cabin or a woman",
-      "craft_total": 7.49,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic double entendre setup for Lucille's response. Good structure and wordplay."
-    },
-    {
-      "index": 10,
-      "text": "Hey, pal, something's come up. This nice young lady has lost her puppy, and your dad's got to help her find him.",
-      "characters": [
-        "George Sr."
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Young Gob waiting to go to the cabin with his father",
-      "punchline": "Transparent excuse involving a lost puppy",
-      "craft_total": 6.73,
-      "impact_score": 6.25,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic bad father excuse, establishes pattern but not particularly original."
-    },
-    {
-      "index": 11,
-      "text": "Mine's sadder.",
+      "index": 15,
+      "text": "Gob: 'I didn't even know that we had a cabin.'",
       "characters": [
         "Gob"
       ],
       "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Michael and Lucille have just had an entire conversation about selling and relocating the family cabin",
+      "punchline": "Gob's blissful ignorance \u2014 he wasn't part of the conversation and only now learns a basic family fact",
+      "craft_total": 7.32,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Simple Gob-is-oblivious joke, well-executed. Sets up the Gob-cabin subplot efficiently. Not exceptional but does real narrative work while getting a laugh."
+    },
+    {
+      "index": 16,
+      "text": "Narrator reveals through flashback that young Gob was repeatedly ditched by George Sr. with escalating absurd excuses, ending in 'Come on, you're old enough to figure this out. I'm nailing this broad.'",
+      "characters": [
+        "George Sr.",
+        "Young Gob",
+        "Narrator"
+      ],
+      "joke_types": [
+        "escalation",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Michael and Gob comparing childhood disappointments about the cabin",
-      "punchline": "Gob competitively claims his story is sadder",
-      "craft_total": 7.5,
+      "setup": "Gob says his father at least promised to take him to the cabin, even if he didn't. Narrator provides context via flashback montage of George Sr.'s excuses.",
+      "punchline": "The excuses escalate from plausible (lost puppy) to absurd (sick girl's dad), ending with George Sr. dropping the pretense entirely: 'I'm nailing this broad'",
+      "craft_total": 8.58,
+      "impact_score": 8.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The escalation structure is immaculate \u2014 each excuse is worse than the last, building to a punchline where George Sr. abandons even the pretense of a lie. The 'I'm nailing this broad' payoff works because it's delivered to a child, it's shockingly direct, and it perfectly characterizes George Sr. as someone who eventually stops even trying. One of the episode's strongest jokes \u2014 great structure, high character integration, very quotable."
+    },
+    {
+      "index": 17,
+      "text": "'Mine's sadder.' / 'I don't see you crying, robot.' / 'You taste these tears. Taste my sadness.'",
+      "characters": [
+        "Michael",
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "escalation"
+      ],
+      "setup": "Michael and Gob are comparing their childhood deprivations regarding the cabin",
+      "punchline": "Gob demands Michael literally lick his eye to taste his sadness \u2014 the absurdist escalation of a petty sibling argument into physical proof of emotion",
+      "craft_total": 7.75,
       "impact_score": 7.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Taste my sadness' is one of the most quotable lines in the episode \u2014 absurdist, character-specific, and funny on its own. The build from 'mine's sadder' to 'robot' to demanding eye-licking is a perfect comedic escalation. Gob's emotional neediness expressed through the most bizarre possible demand is peak Gob Bluth."
+    },
+    {
+      "index": 18,
+      "text": "Michael flatly refuses to lick Gob's eye: 'No. Not gonna lick your eye, okay?'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "deadpan_understatement"
+      ],
+      "setup": "Gob has demanded Michael taste his tears/lick his eye",
+      "punchline": "Michael's refusal is so matter-of-fact that it treats the request as a routine thing to decline",
+      "craft_total": 7.69,
+      "impact_score": 7.75,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Gob character moment - making trauma into competition. Great economy."
+      "explanation": "Michael as the straight man is the show's backbone. His refusal lands because of the contrast with Gob's genuine emotional desperation. The 'okay?' at the end suggests mild exasperation rather than horror, which is tonally perfect."
     },
     {
-      "index": 12,
-      "text": "Gob and Michael compete over who had the sadder childhood regarding the cabin",
+      "index": 19,
+      "text": "Gob's speech about what he'll do if he has a son: will take him to the cabin / will promise to take him but not / but will never NOT tell him he's taking him and then NOT take him",
+      "characters": [
+        "Gob",
+        "Narrator"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "deadpan_understatement"
+      ],
+      "setup": "Gob is drawing life lessons from his childhood deprivation about the cabin",
+      "punchline": "His triple-negative 'lesson' reveals he has no idea what the right behavior is \u2014 the joke is that all three options are bad, and the one he's ruled out is bafflingly specific",
+      "craft_total": 8.61,
+      "impact_score": 8.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A masterclass in character comedy and absurdist logic. Gob's speech sounds like he's growing and arriving at wisdom, but each option he considers is as bad as the last, and his final 'rule' is a triple-negative that rules out only one very specific terrible option. The narrator's deadpan 'Gob was growing up' caps it perfectly. This could only be Gob \u2014 no other character would draw these 'lessons' from this trauma. One of the episode's standout moments."
+    },
+    {
+      "index": 20,
+      "text": "Gob: 'Taste the happy, Michael. Taste it.' Michael: 'Tastes kind of like sad.'",
       "characters": [
         "Gob",
         "Michael"
       ],
       "joke_types": [
+        "callback",
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Both brothers were disappointed about the cabin",
-      "punchline": "They literally compete over whose disappointment was worse",
-      "craft_total": 7.48,
-      "impact_score": 7.25,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good sibling rivalry moment - turning childhood trauma into competition. Very true to their characters."
-    },
-    {
-      "index": 13,
-      "text": "You taste these tears. Taste my sadness.",
-      "characters": [
-        "Gob"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "absurdist"
-      ],
-      "setup": "Gob trying to prove he's sadder than Michael",
-      "punchline": "Literally offering his tears for Michael to taste",
-      "craft_total": 8.44,
-      "impact_score": 8.5,
-      "quotability": 9.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliantly absurd escalation - literalizing emotion sharing. Peak Gob weirdness."
-    },
-    {
-      "index": 14,
-      "text": "But the one thing that I will never do is not tell him that I'm taking him to a cabin in the woods and then not take him.",
-      "characters": [
-        "Gob"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "escalation"
-      ],
-      "setup": "Gob's convoluted promise about how he'll treat his hypothetical son",
-      "punchline": "The triple negative creates confusing logic",
-      "craft_total": 7.0,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Gob has just learned the cabin will be nearby and is ecstatic",
+      "punchline": "Michael's 'tastes kind of like sad' callbacks the earlier 'taste my sadness' exchange, inverting it",
+      "craft_total": 8.25,
+      "impact_score": 8.17,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Deliberately confusing wordplay that reveals Gob's twisted logic. Low economy but character-appropriate."
-    },
-    {
-      "index": 15,
-      "text": "Gob's convoluted logic about what he'll do with his hypothetical son regarding cabin trips",
-      "characters": [
-        "Gob"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Gob declares what he would do differently as a father",
-      "punchline": "Unnecessarily complex logic about cabin promises vs. actual cabin trips",
-      "craft_total": 6.98,
-      "impact_score": 6.75,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Very Gob - overthinking simple concepts into incomprehensible rules. Foreshadows his actual parenting situation."
-    },
-    {
-      "index": 16,
-      "text": "Taste the happy, Michael. Taste it.",
-      "characters": [
-        "Gob"
-      ],
-      "joke_types": [
-        "callback",
-        "physical_slapstick"
-      ],
-      "setup": "Gob excited about going to the cabin",
-      "punchline": "Reverses the earlier 'taste my sadness' bit",
-      "craft_total": 7.48,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Nice callback that shows Gob's consistency in weird behavior patterns."
+      "explanation": "A tight callback that works on its own AND rewards those who caught the earlier joke. Michael's deadpan inversion ('tastes kind of like sad') is perfect \u2014 the cabin trip is already complicated, and he can't even let Gob have his moment. Economy is excellent. Rewatch bonus because the callback layer becomes richer."
     },
     {
-      "index": 17,
-      "text": "Michael had never been so touched by something his son had said, but it wasn't true.",
+      "index": 21,
+      "text": "Narrator reveals George Michael slept outside NOT to see Michael but to hide from his cousin after 'an awkward incident' \u2014 they share a bunk bed",
       "characters": [
+        "George Michael",
         "Narrator"
       ],
       "joke_types": [
         "misdirection",
-        "irony_sarcasm"
+        "cringe_discomfort",
+        "dark_subversive"
       ],
-      "setup": "George Michael claiming he slept outside to see his father",
-      "punchline": "Narrator immediately undercuts the touching moment",
-      "craft_total": 7.89,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant narrative misdirection that immediately deflates sentiment. Classic AD structure."
-    },
-    {
-      "index": 18,
-      "text": "He was hiding from his cousin after an awkward incident.",
-      "characters": [
-        "Narrator"
-      ],
-      "joke_types": [
-        "cringe_discomfort"
-      ],
-      "setup": "Revealing why George Michael was really outside",
-      "punchline": "The uncomfortable truth about cousin attraction",
-      "craft_total": 7.84,
-      "impact_score": 7.33,
+      "setup": "Michael is deeply touched that his son slept outside just to see him before he left",
+      "punchline": "Narrator reveals it was actually about hiding from his cousin (Maeby) after an awkward incident \u2014 and they share a bunk bed, making avoidance impossible",
+      "craft_total": 8.07,
+      "impact_score": 8.17,
       "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sets up major running plot thread while explaining the misdirection. Good character work."
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The narrator structure is used perfectly here \u2014 Michael's emotional moment is immediately undercut by the truth. The bunk bed detail is the kicker: they're forced into maximum proximity while trying to avoid each other. The incest-adjacent discomfort is played completely straight, which is what makes it land. Rewatch bonus because the 'awkward incident' is both vague enough to be funnier than if specified and specific enough to be understood."
     },
     {
-      "index": 19,
-      "text": "- Hi. - Hi. - I'm off to the car. - I'll be in the crawl space.",
+      "index": 22,
+      "text": "Narrator: 'They'd since been trying to avoid each other, which was difficult considering they shared a bunk bed.'",
       "characters": [
+        "Narrator",
         "George Michael",
         "Maeby"
       ],
       "joke_types": [
-        "awkward_silence",
-        "physical_slapstick"
+        "dark_subversive",
+        "deadpan_understatement"
       ],
-      "setup": "The cousins awkwardly encountering each other",
-      "punchline": "They immediately flee in opposite directions to uncomfortable places",
-      "craft_total": 7.88,
-      "impact_score": 7.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect awkwardness captured in minimal dialogue. Great economy showing their avoidance."
-    },
-    {
-      "index": 20,
-      "text": "I think the President of a 'Don't Buy' company can afford to take a day off.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "callback",
-        "irony_sarcasm"
-      ],
-      "setup": "George Michael asking if Michael can skip work",
-      "punchline": "References the earlier stock rating joke",
-      "craft_total": 7.3,
-      "impact_score": 7.17,
+      "setup": "George Michael and Maeby are avoiding each other after an awkward (romantic) incident",
+      "punchline": "They share a bunk bed \u2014 making avoidance structurally impossible and the discomfort constant",
+      "craft_total": 7.93,
+      "impact_score": 7.75,
       "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback showing Michael's ability to laugh at their situation."
-    },
-    {
-      "index": 21,
-      "text": "There's only one sleeping bag, so we're gonna have to double up. Pigs in a blanket.",
-      "characters": [
-        "George Michael"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "cringe_discomfort"
-      ],
-      "setup": "Father-son camping preparation",
-      "punchline": "Innocent food metaphor becomes awkward given the circumstances",
-      "craft_total": 7.11,
-      "impact_score": 6.67,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Food metaphor creates slight discomfort in father-son context. Mild wordplay."
-    },
-    {
-      "index": 22,
-      "text": "It is worse to know.",
-      "characters": [
-        "George Michael"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
-      ],
-      "setup": "Michael's fear of becoming his father",
-      "punchline": "George Michael's wise but devastating observation",
-      "craft_total": 8.11,
-      "impact_score": 8.0,
-      "quotability": 9.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Profound wisdom delivered with perfect economy. Captures the generational trauma theme."
+      "explanation": "The joke is in the juxtaposition of 'trying to avoid each other' with 'shared a bunk bed.' The physical impossibility of their avoidance strategy, layered on top of the inappropriate nature of cousins sharing sleeping quarters, generates both cringe and comedy. The narrator's flat delivery amplifies the absurdity."
     },
     {
       "index": 23,
-      "text": "Unfortunately for Oscar, 'You've got the wrong twin' was a very popular alibi.",
+      "text": "George Michael: 'I'll be in the crawl space.' \u2014 his response when Lindsay says hi",
       "characters": [
-        "Narrator"
+        "George Michael",
+        "Lindsay"
       ],
       "joke_types": [
-        "running_gag",
-        "absurdist"
+        "character_comedy",
+        "cringe_discomfort",
+        "reaction_beat"
       ],
-      "setup": "Oscar claiming mistaken identity",
-      "punchline": "Apparently this is a common criminal excuse",
-      "craft_total": 7.63,
-      "impact_score": 7.67,
-      "quotability": 7.5,
+      "setup": "George Michael and Maeby are awkwardly avoiding each other after their incident",
+      "punchline": "When Lindsay says hi and Michael says he's off to the car, George Michael's immediate plan is the crawl space \u2014 the most extreme avoidance possible",
+      "craft_total": 7.89,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Funny undermining of Oscar's legitimate claim by making it seem like a clich\u00e9."
+      "explanation": "Pure economy \u2014 'I'll be in the crawl space' is four words that convey enormous desperation. The specificity of 'crawl space' (not the car, not his room, but the crawl space) escalates the avoidance to absurdity. Very much a George Michael joke."
     },
     {
       "index": 24,
-      "text": "We're quadruplets. You got the wrong two.",
-      "characters": [
-        "Larry and Dave"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Examples of the 'wrong twin' alibi",
-      "punchline": "Escalates to quadruplets with mathematical precision",
-      "craft_total": 7.97,
-      "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant escalation of the alibi concept. The precision of 'wrong two' is perfect."
-    },
-    {
-      "index": 25,
-      "text": "Oh, my God, you're Oscar. Dot com.",
+      "text": "Michael: 'I think the President of a Don't Buy company can afford to take a day off.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "callback",
-        "wordplay_pun"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Michael finally believing Oscar's story",
-      "punchline": "Adds 'dot com' as if it's part of his name",
-      "craft_total": 7.43,
-      "impact_score": 7.17,
-      "quotability": 7.5,
+      "setup": "George Michael asks if Michael can afford to skip work",
+      "punchline": "Michael reminds them the company is rated 'Don't Buy' \u2014 his self-deprecating callback to the opening joke",
+      "craft_total": 7.59,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Nice callback that treats the domain as part of his identity. Good economy."
+      "explanation": "Solid callback that also does character work \u2014 Michael is self-aware about the company's dire state even while celebrating. Good economy, nice structural callback to the opening."
+    },
+    {
+      "index": 25,
+      "text": "'There's only one sleeping bag, so we're gonna have to double up. Pigs in a blanket.' \u2014 immediately cut to: 'Sorry, pal, something came up.'",
+      "characters": [
+        "Michael",
+        "Narrator"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "running_gag",
+        "misdirection"
+      ],
+      "setup": "Michael is enthusiastically planning the cabin trip with George Michael, talking about sharing a sleeping bag",
+      "punchline": "The scene immediately cuts to Michael canceling \u2014 'Sorry, pal, something came up' \u2014 before they even leave. The narrator comments: 'It is worse to know.'",
+      "craft_total": 7.21,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The structure here is brilliant \u2014 the episode barely lets Michael build up the trip before cutting to him canceling it. 'It is worse to know' is the narrator functioning as a Greek chorus, adding a layer of tragic irony. The callback to Gob's childhood flashbacks ('he let me blindly enjoy my childhood') is implicit. The speed of the whiplash from excitement to abandonment is the joke. Very strong structural comedy."
     },
     {
       "index": 26,
-      "text": "We're super rich again. And I'm gonna buy a car, the Volvo.",
+      "text": "Michael visits prison to gloat at his father \u2014 but it's Oscar, his father's twin, who no one believes",
+      "characters": [
+        "Michael",
+        "Oscar"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "irony_sarcasm",
+        "running_gag"
+      ],
+      "setup": "Michael goes to prison to tell off his father about how well the company is doing without him",
+      "punchline": "It's Oscar, his father's identical twin \u2014 a man wrongly imprisoned and completely ignored as Michael delivers his triumphant speech over the prison phone",
+      "craft_total": 7.86,
+      "impact_score": 7.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The comedy is structural \u2014 Michael's triumphant speech falls on a completely different (innocent) person, and the show uses this to both advance plot and get laughs from Michael's obliviousness. The talking-past-each-other dialogue is a classic AD device."
+    },
+    {
+      "index": 27,
+      "text": "Oscar's 'wrong twin' alibi is dismissed because 'You've got the wrong twin' is a popular alibi \u2014 other inmates chime in: 'We're quadruplets. You got the wrong two.' 'We're Larry and Dave, you want Curtis and Jeff.'",
+      "characters": [
+        "Oscar",
+        "Other Inmates"
+      ],
+      "joke_types": [
+        "absurdist",
+        "escalation",
+        "running_gag"
+      ],
+      "setup": "Oscar insists the prison got the wrong twin, but no one believes him",
+      "punchline": "Other inmates immediately offer their own 'wrong twin/quadruplet' alibis, escalating to quadruplets \u2014 making Oscar's genuine claim look like a common con",
+      "craft_total": 8.52,
+      "impact_score": 8.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A genuinely inventive joke \u2014 the idea that 'wrong twin' is so common an alibi that legitimate victims of the scheme would be disbelieved is dark, original, and perfectly constructed. The escalation to quadruplets ('We're Larry and Dave, you want Curtis and Jeff') is the ideal topper \u2014 specific enough to be hilarious, absurd enough to be obviously fake. One of the episode's best standalone jokes."
+    },
+    {
+      "index": 28,
+      "text": "Oscar keeps saying 'imoscar.com' after his name as if it's a domain name",
+      "characters": [
+        "Oscar"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag",
+        "absurdist"
+      ],
+      "setup": "Oscar is desperately trying to prove his identity to Michael",
+      "punchline": "He keeps appending 'dot com' to his name \u2014 as if having a website proves innocence",
+      "craft_total": 7.62,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'dot com' verbal tic is both funny as a character detail (Oscar's naive faith in the internet as a legitimizing force) and as a running gag through the scene. 'I even started a website, imoscar.com' followed by Michael still not believing him is a layered joke about both Oscar's desperation and Michael's closed-mindedness."
+    },
+    {
+      "index": 29,
+      "text": "Michael: 'There's nothing you can say to make me believe that you are not my father.' Oscar: 'I understand. Your child comes first.'",
+      "characters": [
+        "Michael",
+        "Oscar"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael is refusing to believe Oscar's claim that he's not George Sr.",
+      "punchline": "Oscar, resigned to being disbelieved, responds with 'Your child comes first' \u2014 agreeing with Michael abandoning him in prison to go camping, which is both kind and heartbreaking",
+      "craft_total": 7.58,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The joke is in Oscar's gentle, resigned acceptance of being wrongfully imprisoned \u2014 he's so defeated that he prioritizes Michael's camping trip over his own freedom. Dark comedy through character, played straight."
+    },
+    {
+      "index": 30,
+      "text": "Michael returns to the office and sees the 'Don't Buy' news \u2014 employees celebrate \u2014 then Michael sees the ticker on Lucille's butt from the copier",
+      "characters": [
+        "Michael",
+        "Lindsay",
+        "Lucille"
+      ],
+      "joke_types": [
+        "callback",
+        "visual_gag",
+        "running_gag"
+      ],
+      "setup": "The stock ticker is running 'Don't Buy' as positive news \u2014 employees are celebrating",
+      "punchline": "The 'Don't Buy' ticker appears on Lindsay's rear end from sitting on the copier \u2014 'That's from sitting on the copier. Thank God I didn't spring for colour.'",
+      "craft_total": 7.36,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The visual gag of the stock ticker on Lindsay's rear is good physical comedy, but 'Thank God I didn't spring for colour' is the real punchline \u2014 it adds a layer of self-awareness to the absurdity. The callback to the 'Don't Buy' motif running through the episode rewards attentive viewers."
+    },
+    {
+      "index": 31,
+      "text": "Michael finally realizes: 'Oh my God, you're Oscar.' Oscar: 'Dot com.'",
+      "characters": [
+        "Michael",
+        "Oscar"
+      ],
+      "joke_types": [
+        "callback",
+        "running_gag"
+      ],
+      "setup": "Michael has been dismissing Oscar's claims throughout the conversation",
+      "punchline": "Michael's dawning horror is immediately undercut by Oscar reflexively appending 'Dot com' to his own name",
+      "craft_total": 8.34,
+      "impact_score": 8.75,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A near-perfect callback payoff. Michael's recognition moment is a genuine story beat, but Oscar's automatic 'Dot com' response reduces the gravity to absurdity. The 'dot com' has become so habitual that Oscar can't even receive a dramatic moment without the verbal tic firing. This is the episode's best version of the running gag \u2014 the repetition is now funny because it's compulsive."
+    },
+    {
+      "index": 32,
+      "text": "My husband dumped me and ran off to Vegas with Kitty, that bleached blonde whore. / Well, he's definitely got a type.",
+      "characters": [
+        "Lindsay",
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "deadpan_understatement"
+      ],
+      "setup": "Lindsay is devastated that Tobias left with Kitty, a 'bleached blonde whore'",
+      "punchline": "Michael's dry observation that Tobias 'has a type' suggests Lindsay and Kitty are similar \u2014 an insult Lindsay seems to miss entirely",
+      "craft_total": 7.56,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's deadpan is perfectly calibrated \u2014 he's insulting his own sister while technically just agreeing with her. 'He's definitely got a type' is highly quotable because the implication is unstated but unmistakable."
+    },
+    {
+      "index": 33,
+      "text": "Lindsay gestures to 'this and these and this' as proof Tobias shouldn't have left \u2014 one of 'these' turns out to be the car on the lot",
+      "characters": [
+        "Lindsay"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Lindsay is listing her physical attributes as reasons why Tobias shouldn't have left her",
+      "punchline": "One of the gestures points at a car on the lot \u2014 the visual reveal that she's accidentally included the car in her list of her own assets",
+      "craft_total": 8.21,
+      "impact_score": 8.25,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A visual gag that requires the camera to do work \u2014 Lindsay's hand gesture sweeps to include a car in her list of physical assets. Michael's 'That's the car' is the deadpan confirmation. Character-specific: Lindsay's vanity and obliviousness make this feel earned."
+    },
+    {
+      "index": 34,
+      "text": "Lindsay gesturing to her body: 'I can't believe he left me. I mean, this and these, and this.' Then points at a car.",
       "characters": [
         "Lindsay"
       ],
@@ -498,733 +693,1228 @@
         "visual_gag",
         "character_comedy"
       ],
-      "setup": "Lindsay excited about the company's stock improvement",
-      "punchline": "She's sitting on what looks like a Volvo logo from copying",
-      "craft_total": 7.94,
-      "impact_score": 7.5,
+      "setup": "Lindsay is expressing disbelief that Tobias left her",
+      "punchline": "She gestures vaguely to her body parts ('this and these') and then accidentally includes a car in her inventory of desirable attributes",
+      "craft_total": 7.9,
+      "impact_score": 7.83,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever visual gag playing with copying machine patterns and brand recognition."
+      "explanation": "Lindsay's obliviousness is perfectly character-integrated \u2014 she gestures to her assets and then a car in the lot in the same breath. The visual beat (pointing at the car as part of her list of attributes) is funny because it reveals her as both vain and accidentally absurd. Michael's 'That's the car' correction is the button."
     },
     {
-      "index": 27,
-      "text": "That's from sitting on the copier.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "deadpan_understatement"
-      ],
-      "setup": "Lindsay pointing to what she thinks is a Volvo",
-      "punchline": "Michael matter-of-factly explains the copier pattern",
-      "craft_total": 7.63,
-      "impact_score": 7.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect straight-man delivery explaining the visual gag. Michael's matter-of-fact tone sells it."
-    },
-    {
-      "index": 28,
-      "text": "All right, maybe you're right. Maybe we should get you this car. Yeah, I don't know. It's so boxy.",
+      "index": 35,
+      "text": "Michael tries reverse psychology on Lindsay: 'The only reason you want Tobias is because you can't have him' \u2014 Lindsay immediately proves him right by not wanting the car once she can have it",
       "characters": [
         "Michael",
         "Lindsay"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "setup_punchline"
       ],
-      "setup": "Michael testing Lindsay's want vs. have theory",
-      "punchline": "Lindsay immediately loses interest when offered what she wanted",
-      "craft_total": 7.96,
-      "impact_score": 7.5,
+      "setup": "Michael accuses Lindsay of only wanting things she can't have. He then offers to buy her the car to prove a point.",
+      "punchline": "'Yeah, I don't know. It's so boxy.' \u2014 Lindsay immediately doesn't want it the moment she can have it",
+      "craft_total": 7.92,
+      "impact_score": 7.67,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect demonstration of Michael's psychology theory. Lindsay's instant reversal is character-perfect."
+      "explanation": "Beautifully structured \u2014 Michael diagnoses the problem, then immediately demonstrates it in a different context, and Lindsay doesn't even notice the irony. 'It's so boxy' is perfect: a real observation about a Volvo that's hilariously beside the point. Strong character integration for both Michael (over-explains) and Lindsay (totally lacks self-awareness)."
     },
     {
-      "index": 29,
-      "text": "Yeah, like I'd ever hear from that son of a bitch.",
+      "index": 36,
+      "text": "Gob says 'Yeah, like I'd ever hear from that son of a bitch' \u2014 cut to narrator revealing Gob received a letter from S.A.D. (a father-son reunion group) earlier that day",
       "characters": [
-        "Gob"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "misdirection"
-      ],
-      "setup": "Michael asking if George Sr. contacted Gob",
-      "punchline": "Gob denies it right before we learn he did",
-      "craft_total": 7.47,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Classic setup for immediate contradiction. Gob's bitterness contrasts with his secret hope."
-    },
-    {
-      "index": 30,
-      "text": "Earlier that day, Gob received a letter from a group that reunited abandoned sons with their fathers, called S.A.D.",
-      "characters": [
+        "Gob",
         "Narrator"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "misdirection",
+        "character_comedy"
       ],
-      "setup": "Narrator revealing Gob did hear from his father",
-      "punchline": "The organization acronym perfectly describes the situation",
-      "craft_total": 7.55,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Michael asks if their dad has tried to contact Gob. Gob dismisses the idea with bravado.",
+      "punchline": "Narrator immediately reveals Gob DID receive a letter from his father through a group called S.A.D. \u2014 'that son of a bitch' now has double meaning (both dismissal and reading the letter's implications)",
+      "craft_total": 7.83,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect acronym that captures both the service and emotional state. Smart wordplay."
+      "explanation": "Classic AD narrator structure: character states false bravado, narrator immediately undercuts with truth. The group being named 'S.A.D.' (Sons And Dads presumably) with the narrator delivering it flatly is a nice touch. Gob's repeated 'that son of a bitch' \u2014 first as dismissal, then as betrayal \u2014 is good character work."
     },
     {
-      "index": 31,
-      "text": "Barry says a lot of things he doesn't mean.",
+      "index": 37,
+      "text": "Barry's assistant reveals Barry 'says a lot of things he doesn't mean' \u2014 including that he's been visiting George Sr. in prison when he's actually been in Reno",
       "characters": [
-        "Barry's secretary"
+        "Barry's Assistant",
+        "Michael"
       ],
       "joke_types": [
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Michael asking about Barry's location",
-      "punchline": "Secretary's matter-of-fact assessment of Barry's dishonesty",
-      "craft_total": 7.4,
-      "impact_score": 6.83,
-      "quotability": 7.5,
+      "setup": "Michael calls Barry's office to confirm he's been visiting George Sr. in prison",
+      "punchline": "Assistant matter-of-factly: 'Barry says a lot of things he doesn't mean' \u2014 delivered as if this is normal and well-known",
+      "craft_total": 7.12,
+      "impact_score": 6.67,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect character moment for Barry's incompetence. Secretary's resigned tone is key."
+      "explanation": "Good economy, solid character joke for Barry (the incompetent lawyer). The assistant's casual delivery of devastating information about her boss is a nice deadpan beat."
     },
     {
-      "index": 32,
-      "text": "Kind of feel like that kid who found the severed hand.",
+      "index": 38,
+      "text": "'Good luck, favourite son.' \u2014 Lucille's passive-aggressive farewell to Michael",
       "characters": [
-        "Steve Holt"
+        "Lucille"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Steve Holt being stood up by his father",
-      "punchline": "Bizarre comparison to a traumatic discovery",
-      "craft_total": 7.86,
-      "impact_score": 8.0,
-      "quotability": 8.5,
+      "setup": "Michael says he's going to Reno to find his father",
+      "punchline": "'Good luck, favourite son' \u2014 dripping with Lucille irony, simultaneously a genuine compliment and an undercutting jab depending on delivery",
+      "craft_total": 7.5,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Bizarrely dark but character-appropriate comparison. Shows Steve's warped perspective on disappointment."
+      "explanation": "A solid Lucille line \u2014 her 'favourite son' designation is always loaded. Economy is excellent. Doesn't transcend the character type but delivers what's expected cleanly."
     },
     {
-      "index": 33,
-      "text": "If Steve had had a father, he would've warned him not to go into the woods with strange men. But he didn't.",
+      "index": 39,
+      "text": "Narrator: 'So once again Michael went after the father who'd once again abandoned him, only to find he was about to do the same thing to his own son.'",
       "characters": [
         "Narrator"
       ],
       "joke_types": [
-        "dark_subversive",
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "observational"
       ],
-      "setup": "Gob inviting Steve to the cabin",
-      "punchline": "Lack of father figure creates dangerous naivety",
-      "craft_total": 8.29,
-      "impact_score": 8.17,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
+      "setup": "Michael is righteously going after his absent father",
+      "punchline": "The narrator points out that Michael is literally recreating the pattern right now with George Michael \u2014 the irony is structural and thematic",
+      "craft_total": 7.93,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliantly dark irony about parental protection. The circular logic is perfect."
+      "explanation": "The narrator as ironic observer is one of AD's signature moves. The joke is structural \u2014 the entire episode's theme is Michael repeating his father's pattern, and the narrator names it directly. It's not a traditional joke but it functions as one through pure ironic framing. The self-awareness elevates the comedy."
     },
     {
-      "index": 34,
-      "text": "Michael, meanwhile, arrived in Reno, a city competing with Las Vegas' successful 'What happens in Vegas stays in Vegas' campaign",
+      "index": 40,
+      "text": "George Michael: 'It's not happening, is it?' Michael: 'Something came up.' \u2014 The second cancellation",
+      "characters": [
+        "George Michael",
+        "Michael"
+      ],
+      "joke_types": [
+        "running_gag",
+        "cringe_discomfort",
+        "callback"
+      ],
+      "setup": "Michael has just built up the cabin trip again after the first cancellation",
+      "punchline": "Exact same structure: George Michael's resigned question, Michael's identical excuse",
+      "craft_total": 8.24,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The running gag structure is deliberate \u2014 the identical exchange lands harder the second time because it reveals the pattern so quickly. George Michael's 'It's not happening, is it?' shows he already expected it, which is sadder and funnier. The economy is extraordinary: three words, 'something came up,' does all the work."
+    },
+    {
+      "index": 41,
+      "text": "Lindsay tells George Michael to 'rub off on' Maeby \u2014 followed by a reaction beat",
+      "characters": [
+        "Lindsay",
+        "George Michael"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "cringe_discomfort",
+        "reaction_beat"
+      ],
+      "setup": "George Michael and Maeby are trying to avoid each other due to their awkward incident; Lindsay blithely tells George Michael to 'rub off on' his cousin",
+      "punchline": "The double entendre lands as deeply inappropriate given the unspoken tension \u2014 George Michael's horrified reaction (inferred) is the comedy",
+      "craft_total": 7.69,
+      "impact_score": 7.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The joke operates entirely on dramatic irony \u2014 the audience knows about the incident, Lindsay doesn't, and her accidental double entendre is maximally inappropriate. 'Rub off on' is chosen precisely for this effect. Lindsay's obliviousness is pure character. This is AD's signature cringe-through-dramatic-irony mode."
+    },
+    {
+      "index": 42,
+      "text": "Lindsay to George Michael: 'Hi. Why don't you pop a tent in front with your cousin Maeby?' Michael: 'What? No!'",
+      "characters": [
+        "Lindsay",
+        "George Michael"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "misdirection"
+      ],
+      "setup": "Lindsay is suggesting the kids camp outside while the adults take the room",
+      "punchline": "'Pop a tent' in front with his cousin is an inadvertently loaded phrase given the George Michael/Maeby subplot; George Michael's horrified 'What? No!' reads as alarm at the double meaning",
+      "craft_total": 7.31,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A neat double entendre that works on both its innocent level (pitching a tent) and its inappropriate level (the George Michael/Maeby romantic tension). Lindsay is oblivious; George Michael is mortified. The joke is character-appropriate for both parties."
+    },
+    {
+      "index": 43,
+      "text": "Steve Holt: 'Kind of feel like that kid who found the severed hand.' Gob: 'Hey, Dad, look what I found.'",
+      "characters": [
+        "Steve Holt",
+        "Gob"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "callback",
+        "absurdist"
+      ],
+      "setup": "Steve Holt is commiserating about waiting for his dad and not knowing if he'll show",
+      "punchline": "He uses the metaphor of the kid who found a severed hand \u2014 then the narrator cuts to Gob's flashback: a child Gob showing his dad a severed hand, still seeking approval",
+      "craft_total": 8.47,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the episode's best joke. Steve Holt uses 'the kid who found the severed hand' as a metaphor for a confusing emotional situation. The narrator then cuts to a literal flashback of young Gob holding up an actual severed hand to his father for approval \u2014 'Hey, Dad, look what I found' \u2014 and the narrator adds 'Anything for his father's approval.' The joke layers: (1) the severed hand as absurdist image, (2) the callback to Buster's season arc, (3) the location being 'where the little boy found the arm,' (4) young Gob's desperate need for approval rendered in the darkest possible image, (5) 'Heartbreaking' as the narrator's coda. It's dark, original, perfectly structured, and rewards multiple rewatches. One of the finest jokes in the episode."
+    },
+    {
+      "index": 44,
+      "text": "Flashback visual: a boy with a severed hand saying 'Hey Dad, look what I found.' / 'Anything for his father's approval.'",
+      "characters": [
+        "Young Steve Holt",
+        "Narrator"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "visual_gag"
+      ],
+      "setup": "Gob mentioned 'that kid who found the severed hand'",
+      "punchline": "We actually see the kid holding the severed hand up to his father as a trophy, followed by the narrator's 'Anything for his father's approval' \u2014 which will retroactively apply to Steve Holt",
+      "craft_total": 8.38,
+      "impact_score": 8.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is one of the episode's standout moments. The joke works on three levels: (1) the immediate visual absurdity of a child presenting a severed hand to a parent with pride, (2) the narrator's dry 'Anything for his father's approval' as universal commentary on father-son dynamics, and (3) the retroactive reveal that this is Steve Holt's backstory, making Gob's offhand comment not random at all. The foreshadowing of Steve Holt's parentage makes this a rewatch essential. Approaches the top of the episode's comedy scale."
+    },
+    {
+      "index": 45,
+      "text": "Narrator reveals Steve Holt IS Gob's son through a montage of 'these girls got pregnant, this one had a baby, and that baby would grow up to be... Steve Holt!'",
+      "characters": [
+        "Gob",
+        "Steve Holt",
+        "Narrator"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Steve Holt looks familiar to Gob; Gob thinks it's because they look alike",
+      "punchline": "The narrator delivers a rapid-fire montage: Gob slept with girls in high school \u2192 one got pregnant \u2192 that baby became Steve Holt. Steve Holt then shouts his own name.",
+      "craft_total": 8.65,
+      "impact_score": 9.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The narrator's clipped delivery \u2014 'In high school, Gob became intimate with these girls. These girls got pregnant. This one had a baby.' \u2014 builds to the obvious reveal with maximum efficiency, then Steve Holt punctuates it by shouting his own name as is his habit. The self-announcement callback as punctuation is perfectly deployed. One of the most satisfying reveals in the episode."
+    },
+    {
+      "index": 46,
+      "text": "Heartbreaking. / You look familiar. / I think that's because we actually kind of look alike.",
+      "characters": [
+        "Narrator",
+        "Gob",
+        "Steve Holt"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Gob is waiting at the park, sad; a young man approaches him",
+      "punchline": "The narrator says 'heartbreaking' about Gob's abandonment, then Gob immediately notes the resemblance \u2014 setting up the reveal that this is his own son",
+      "craft_total": 7.44,
+      "impact_score": 7.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The structural joke is that Gob, a man mourning his absent father, is unknowingly looking at his own abandoned son \u2014 and they both note the resemblance without making the connection. Rewatch bonus is strong as the dramatic irony is richer on second viewing."
+    },
+    {
+      "index": 47,
+      "text": "Remember when I said Gob had a son? / I'm Gob. / I wasn't just saying that.",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "setup_punchline"
+      ],
+      "setup": "The narrator starts to reveal Gob's son backstory",
+      "punchline": "The narrator breaks from past-tense narration to directly address the show's own earlier exposition ('I wasn't just saying that'), treating his own narrative function as a conversational act",
+      "craft_total": 7.95,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The narrator speaking to the audience as if they'd doubted him ('I wasn't just saying that') is a brilliant piece of meta-comedy. It weaponizes the narrator's omniscient voice by making him seem defensive about his own earlier narration. Highly original, economical, and structurally sophisticated."
+    },
+    {
+      "index": 48,
+      "text": "Narrator: 'If Steve had had a father, he would've warned him not to go into the woods with strange men. But he didn't.' Steve Holt: 'Sure, let's go! Yeah, baby. Steve Holt!'",
+      "characters": [
+        "Steve Holt",
+        "Narrator"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Gob invites Steve Holt (his unknown son) to go to the cabin together",
+      "punchline": "The narrator notes that a father would have warned Steve about going into the woods with a strange man \u2014 Steve's own father IS the strange man he's going with",
+      "craft_total": 8.37,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A genuinely sophisticated dark joke \u2014 the narrator points out that Steve lacks the father who would warn him about this exact scenario, and the reason he lacks that father IS the man currently inviting him into the woods. The self-referential circularity is very well constructed. Steve Holt's enthusiastic 'Yeah, baby!' (oblivious as ever) is the perfect button."
+    },
+    {
+      "index": 49,
+      "text": "Reno is competing with Vegas's 'What happens in Vegas' campaign \u2014 the Reno version is implied to be much sadder",
       "characters": [
         "Narrator"
       ],
       "joke_types": [
         "observational",
-        "meta_self_referential"
+        "deadpan_understatement"
       ],
-      "setup": "Michael arriving in Reno",
-      "punchline": "Reno's inferior marketing compared to Vegas",
-      "craft_total": 6.49,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Michael arrives in Reno",
+      "punchline": "The narrator describes Reno as 'a city competing with Las Vegas' successful What happens in Vegas stays in Vegas campaign' \u2014 implying Reno's version is a sad imitation",
+      "craft_total": 6.55,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Mild observational humor about city marketing. Not particularly character-specific."
+      "explanation": "A solid narrator observational joke \u2014 Reno's lesser status compared to Vegas is a well-worn comic premise, but the framing ('competing with') is dry enough to work. Less original than the show's best material."
     },
     {
-      "index": 35,
-      "text": "The Christian League had the Seedy Underbelly shut down. Now it's a Swallows.",
+      "index": 50,
+      "text": "Michael asks for 'the seedy underbelly' of Reno \u2014 'The Christian League had the Seedy Underbelly shut down. Now it's a Swallows.'",
       "characters": [
-        "Reno local"
+        "Michael",
+        "Person in Reno"
       ],
       "joke_types": [
+        "setup_punchline",
         "wordplay_pun",
-        "irony_sarcasm"
+        "absurdist"
       ],
-      "setup": "Michael looking for seedy underbelly of Reno",
-      "punchline": "Replacement name 'Swallows' is equally suggestive",
-      "craft_total": 7.15,
-      "impact_score": 7.0,
+      "setup": "Michael asks where to find the seedy underbelly of Reno",
+      "punchline": "The Seedy Underbelly (an actual venue name) was shut down and replaced by 'Swallows' \u2014 a name that turns out to be even more suggestive",
+      "craft_total": 8.12,
+      "impact_score": 8.17,
       "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good double entendre joke about moral crusades missing the point. Solid wordplay."
+      "explanation": "Excellent layered wordplay: the 'Seedy Underbelly' is played as a literal venue name, and its replacement 'Swallows' is even more provocative \u2014 meaning the Christian League's intervention made things worse. The joke doesn't explain itself, trusting the audience to get there. Strong economy."
     },
     {
-      "index": 36,
-      "text": "Swallows was a family-style restaurant by day, and an anything-goes pan-sexual bazaar by night.",
+      "index": 51,
+      "text": "Swallows is 'a family-style restaurant by day and an anything-goes pan-sexual bazaar by night'",
       "characters": [
         "Narrator"
       ],
       "joke_types": [
+        "deadpan_understatement",
         "absurdist"
       ],
-      "setup": "Description of Swallows restaurant",
-      "punchline": "Extreme contrast between day and night activities",
-      "craft_total": 7.13,
-      "impact_score": 6.83,
+      "setup": "We need to understand what Swallows is",
+      "punchline": "The juxtaposition of 'family-style restaurant' with 'anything-goes pan-sexual bazaar' \u2014 and the matter-of-fact narrator delivery \u2014 is the joke",
+      "craft_total": 7.38,
+      "impact_score": 7.5,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good contrast joke about dual-purpose establishments. The formal tone makes it funnier."
+      "explanation": "The deadpan narrator delivery of 'anything-goes pan-sexual bazaar' in the same tone as 'family-style restaurant' is very funny. Not the sharpest joke but well executed."
     },
     {
-      "index": 37,
-      "text": "That is until he choked on a marshmallow and almost died when no one noticed he turned blue.",
+      "index": 52,
+      "text": "Tobias is working at Swallows as a waiter \u2014 having 'destroyed his life' to join Blue Man Group, only to find the role was already cast",
       "characters": [
+        "Tobias",
+        "Michael",
         "Narrator"
       ],
       "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "running_gag"
+      ],
+      "setup": "Tobias was supposedly in Vegas with Kitty and the Blue Man Group",
+      "punchline": "He's working as a waiter at Swallows in Reno \u2014 'the part I'd destroyed my life to get had already been cast'",
+      "craft_total": 7.37,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Tobias's delusion cycle \u2014 catastrophic sacrifice for an acting role that goes nowhere \u2014 is perfectly on-brand. The further irony that George Sr. got the role (to hide in plain sight as a Blue Man) adds another layer."
+    },
+    {
+      "index": 53,
+      "text": "George Sr. hid as a Blue Man \u2014 'until he choked on a marshmallow and almost died when no one noticed he turned blue'",
+      "characters": [
+        "George Sr.",
+        "Narrator"
+      ],
+      "joke_types": [
+        "dark_subversive",
         "irony_sarcasm",
         "absurdist"
       ],
-      "setup": "George Sr. hiding as Blue Man",
-      "punchline": "Can't show distress because he's supposed to be blue",
-      "craft_total": 8.38,
-      "impact_score": 8.5,
+      "setup": "The narrator explains how George Sr. used the Blue Man Group as a hiding place",
+      "punchline": "He nearly died because no one noticed he turned blue \u2014 when you're a Blue Man, turning blue from choking is invisible",
+      "craft_total": 8.55,
+      "impact_score": 8.83,
       "quotability": 8.5,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant irony - the disguise prevents rescue. Perfect situational comedy with dark edge."
+      "explanation": "An exceptionally clever joke \u2014 the disguise that worked too well. The irony is elegant and multi-layered: the Blue Man disguise perfectly conceals the danger signal of turning blue, so it nearly kills him. The economy is extraordinary. This is original, well-constructed, character-integrated (George Sr.'s comeuppance), and completely earned. One of the episode's finest moments."
     },
     {
-      "index": 38,
-      "text": "Leaving Lindsay was the biggest little mistake I've ever made.",
+      "index": 54,
+      "text": "Tobias: 'Leaving Lindsay was the biggest little mistake I've ever made.' Then: 'Damn this pride of mine!' \u2014 immediately followed by his boss telling him to flip cushions in the grind room",
       "characters": [
         "Tobias"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort",
+        "irony_sarcasm"
       ],
-      "setup": "Tobias reflecting on his marriage",
-      "punchline": "Contradictory description of the mistake's size",
-      "craft_total": 7.19,
-      "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Typical Tobias wordplay that reveals his confusion about the situation's importance."
-    },
-    {
-      "index": 39,
-      "text": "Say goodbye to these!",
-      "characters": [
-        "Kitty"
-      ],
-      "joke_types": [
-        "callback",
-        "visual_gag"
-      ],
-      "setup": "Kitty breaking up with Tobias",
-      "punchline": "Her signature move of flashing, but they're blue from paint",
-      "craft_total": 7.64,
+      "setup": "Tobias is expressing regret about leaving Lindsay and dramatic declarations about his pride",
+      "punchline": "His dramatic moment is deflated by his boss immediately calling him back to work \u2014 'Tuna melt's up' \u2014 and Tobias's worry that he'll 'smell to high heaven like a tuna melt'",
+      "craft_total": 7.75,
       "impact_score": 7.33,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback to established character trait with visual twist of blue paint."
-    },
-    {
-      "index": 40,
-      "text": "Those are blue too.",
-      "characters": [
-        "Narrator/Michael"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "deadpan_understatement"
-      ],
-      "setup": "Kitty's dramatic flashing exit",
-      "punchline": "Matter-of-fact observation about the blue paint",
-      "craft_total": 7.31,
-      "impact_score": 7.0,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deflation of dramatic moment with practical observation. Great economy."
+      "explanation": "The comedy is in the deflation \u2014 Tobias's grandiose declaration ('Damn this pride of mine!') immediately undercut by the mundane reality of his job. The 'smelling to high heaven like a tuna melt' is a very Tobias concern \u2014 his actor's vanity about scent. Solid character work."
     },
     {
-      "index": 41,
-      "text": "What's a leather pony?",
+      "index": 55,
+      "text": "Lindsay reveals Kitty's blue handprints \u2014 Tobias: 'Say goodbye to these!' \u2014 the handprints are also blue",
       "characters": [
-        "Tobias"
+        "Kitty",
+        "Tobias",
+        "Michael"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "visual_gag",
+        "callback",
+        "setup_punchline"
       ],
-      "setup": "Tobias mentioning setting up the leather pony",
-      "punchline": "His innocent question about sexual equipment",
-      "craft_total": 7.28,
-      "impact_score": 6.83,
+      "setup": "Tobias's line 'Say goodbye to these!' references Kitty's Season 2 habit of flashing people. The camera reveals blue handprints.",
+      "punchline": "The handprints on Kitty are blue \u2014 pointing to George Sr. (the Blue Man) as her new lover",
+      "craft_total": 8.05,
+      "impact_score": 8.33,
       "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Tobias naivety about sexual topics. His innocent delivery makes it funnier."
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The joke works on multiple levels: the callback to Kitty's signature line (earned for fans), the visual reveal of the blue handprints as a clue, and the logical chain Michael immediately draws. The economy of the visual evidence pointing to George Sr. is elegant. The callback is earned and the new information it delivers is genuinely plot-advancing, which is how AD's best callbacks work."
     },
     {
-      "index": 42,
-      "text": "I don't know. We don't have that at lunch.",
+      "index": 56,
+      "text": "Michael's rapid deduction: 'Dad's in Reno, Kitty's in Reno, Dad's in Kitty, and he must be a Blue Man.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "cringe_discomfort"
+        "setup_punchline",
+        "wordplay_pun",
+        "character_comedy"
       ],
-      "setup": "Tobias asking about leather pony",
-      "punchline": "Michael's matter-of-fact response about restaurant timing",
-      "craft_total": 7.51,
-      "impact_score": 7.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Michael is piecing together the clues about George Sr.'s whereabouts",
+      "punchline": "'Dad's in Kitty' \u2014 a sudden double meaning that Michael delivers completely unaware",
+      "craft_total": 8.36,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect straight-man response treating sexual equipment like a menu item."
+      "explanation": "One of the most quotable lines in the episode. The rapid-fire logical chain \u2014 Reno, Kitty, Dad \u2014 leads to 'Dad's in Kitty,' which functions both as a location statement and as the most concise possible description of the affair. Michael's complete obliviousness to the double meaning makes it even funnier. Perfect economy, high originality in the construction."
     },
     {
-      "index": 43,
-      "text": "And the kids found themselves closer than ever on the bumpy road to Reno.",
+      "index": 57,
+      "text": "'I just have to break down the salad bar and set up the leather pony.' \u2014 Michael: 'What's a leather pony?' Tobias: 'I don't know. We don't have that at lunch.'",
       "characters": [
-        "Narrator"
+        "Tobias",
+        "Michael"
       ],
       "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
+        "absurdist",
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "George Michael and Maeby in car together",
-      "punchline": "Physical bumping forces unwanted intimacy",
-      "craft_total": 7.18,
-      "impact_score": 6.67,
+      "setup": "Tobias says he'll meet Michael at the theatre once he finishes his waiter duties",
+      "punchline": "'Set up the leather pony' \u2014 a deeply suggestive phrase that Tobias accepts innocently, and his defense ('we don't have that at lunch') makes it worse",
+      "craft_total": 8.37,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is quintessential Tobias \u2014 his total obliviousness to sexual innuendo is his defining character trait, and 'leather pony' is an inspired piece of writing. The exchange with Michael (who is just as perplexed) and Tobias's innocent reasoning ('we don't have that at lunch') is perfect character comedy. Could ONLY be Tobias. Highly quotable."
+    },
+    {
+      "index": 58,
+      "text": "Michael tells Lindsay he found Tobias \u2014 'I'll just bring him back with me. Against his will. Well, knock him out if you have to. He's my husband.'",
+      "characters": [
+        "Michael",
+        "Lindsay"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "escalation"
+      ],
+      "setup": "Michael says he'll bring Tobias back with him",
+      "punchline": "Lindsay's escalating desperation: 'against his will' \u2192 'knock him out if you have to' \u2014 from 'I want him back' to immediate physical violence authorization",
+      "craft_total": 7.39,
+      "impact_score": 7.17,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good setup for their awkward situation. The narrator's knowing tone adds to the discomfort."
+      "explanation": "The rapid escalation to 'knock him out' is funny because it reveals that Lindsay's romantic desire for Tobias is about possession, not love \u2014 which is consistent with her character. 'He's my husband' as justification for assault is a nice button."
     },
     {
-      "index": 44,
-      "text": "What if Kitty's not there and I'm less of a Blue Man and more of a cocktail waitress?",
+      "index": 59,
+      "text": "Narrator: 'The kids found themselves closer than ever on the bumpy road to Reno.'",
       "characters": [
-        "Tobias"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Tobias planning to meet Lindsay at Blue Man show",
-      "punchline": "Suggests he might be working as cocktail waitress",
-      "craft_total": 7.56,
-      "impact_score": 7.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Tobias gender confusion delivered as casual aside. Character-perfect obliviousness."
-    },
-    {
-      "index": 45,
-      "text": "You're my only client. What am I supposed to do now? Turn tricks on the street?",
-      "characters": [
-        "Barry"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "dark_subversive"
-      ],
-      "setup": "Michael firing Barry as lawyer",
-      "punchline": "Barry considers prostitution as career alternative",
-      "craft_total": 7.83,
-      "impact_score": 7.75,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Typical Barry inappropriate response. His casual consideration of prostitution is character-perfect."
-    },
-    {
-      "index": 46,
-      "text": "How much do you think I can get for that, by way? $50, or is that just L.A.?",
-      "characters": [
-        "Barry"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Barry considering prostitution",
-      "punchline": "He's actually pricing it out geographically",
-      "craft_total": 7.54,
-      "impact_score": 7.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant escalation - Barry treating prostitution like market research. Perfect character work."
-    },
-    {
-      "index": 47,
-      "text": "Let's get it out of the way.",
-      "characters": [
+        "Narrator",
         "George Michael",
         "Maeby"
       ],
       "joke_types": [
+        "irony_sarcasm",
         "cringe_discomfort",
-        "escalation"
-      ],
-      "setup": "Cousins discussing their awkward kiss situation",
-      "punchline": "They decide to finish the kiss like a chore",
-      "craft_total": 7.47,
-      "impact_score": 7.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect awkwardness - treating romantic gesture like an obligation. Great character development."
-    },
-    {
-      "index": 48,
-      "text": "Isn't it behind you?",
-      "characters": [
-        "Maeby"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "visual_gag"
-      ],
-      "setup": "George Michael claiming to watch Reno sunset",
-      "punchline": "Maeby points out he's facing the wrong direction",
-      "craft_total": 7.5,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good visual gag about his obvious excuse-making. Maeby's practical observation deflates his drama."
-    },
-    {
-      "index": 49,
-      "text": "You're the dad.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
         "deadpan_understatement"
       ],
-      "setup": "Gob not realizing his relationship to Steve Holt",
-      "punchline": "Michael's simple statement of obvious truth",
-      "craft_total": 7.48,
-      "impact_score": 7.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect economy in delivering major realization. Michael's matter-of-fact tone is key."
-    },
-    {
-      "index": 50,
-      "text": "I've made a huge tiny mistake.",
-      "characters": [
-        "Gob"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Gob realizing he's about to abandon his son",
-      "punchline": "Contradictory description of mistake size",
-      "craft_total": 7.89,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Nice variation on 'huge mistake' catchphrase. The contradiction shows Gob's confusion."
-    },
-    {
-      "index": 51,
-      "text": "No, I'm better.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
-      ],
-      "setup": "Michael comparing himself to his father",
-      "punchline": "Simple assertion of moral superiority",
-      "craft_total": 7.77,
-      "impact_score": 7.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Michael self-awareness and determination. Maximum economy in character development."
-    },
-    {
-      "index": 52,
-      "text": "It's never happening.",
-      "characters": [
-        "Maeby"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "irony_sarcasm"
-      ],
-      "setup": "George Michael saying camping is 'finally happening'",
-      "punchline": "Maeby's pessimistic but accurate assessment",
-      "craft_total": 7.28,
-      "impact_score": 6.67,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Maeby cynicism delivered with maximum economy. Contrasts with George Michael's hope."
-    },
-    {
-      "index": 53,
-      "text": "Although, I was very close. I almost had Pop-pop in Reno.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Michael prioritizing family time over finding father",
-      "punchline": "Uses George Michael's pet name for his grandfather",
-      "craft_total": 7.92,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Nice character moment showing Michael adopting his son's perspective and language."
-    },
-    {
-      "index": 54,
-      "text": "Me, too.",
-      "characters": [
-        "George Michael"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Michael saying he almost had grandfather in Reno",
-      "punchline": "George Michael's innocent agreement with different meaning",
-      "craft_total": 7.66,
-      "impact_score": 7.25,
+      "setup": "George Michael and Maeby refused to be together, but circumstances force them into a car to Reno",
+      "punchline": "'Closer than ever' \u2014 with the double meaning of physical proximity on a bumpy road and their unresolved romantic tension",
+      "craft_total": 7.85,
+      "impact_score": 7.5,
       "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect double meaning - George Michael referring to different kind of 'having' with cousin. Great economy."
+      "explanation": "The narrator's double meaning \u2014 'closer than ever' physically and emotionally/romantically \u2014 is delivered with perfect deadpan. The 'bumpy road' adds physical comedy implication to the tension. Very AD in its use of the narrator as ironic observer."
     },
     {
-      "index": 55,
-      "text": "Well, that was a freebie.",
-      "characters": [
-        "Lucille"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "Lucille arriving at cabin to find Buster's hook accidentally caused damage",
-      "punchline": "She treats accidental destruction as a bonus",
-      "craft_total": 7.78,
-      "impact_score": 7.33,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Lucille darkness - finding silver lining in destruction. Character-perfect callousness."
-    },
-    {
-      "index": 56,
-      "text": "If this tableau I recreate, perhaps I can re-snare my mate.",
+      "index": 60,
+      "text": "Tobias calls Lindsay from Swallows: 'I can't leave Kitty. Just with, all the sexual intercourse and whatnot.'",
       "characters": [
         "Tobias"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Tobias planning to fake being with Kitty",
-      "punchline": "Overly flowery rhyming speech",
-      "craft_total": 7.46,
-      "impact_score": 6.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Typical Tobias pretentious language. The forced rhyme scheme is character-appropriate."
-    },
-    {
-      "index": 57,
-      "text": "I decided to sleep in the car so my snoring wouldn't bother you, and I left that recording of my snoring so you wouldn't know I'm gone.",
-      "characters": [
-        "Buster"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Buster explaining his consideration for others",
-      "punchline": "Convoluted logic using recording of the problem",
-      "craft_total": 7.72,
-      "impact_score": 7.33,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Brilliant callback with twisted Buster logic. The solution creates the original problem."
-    },
-    {
-      "index": 58,
-      "text": "This is just like when we used to live up in the attic.",
-      "characters": [
-        "Buster"
-      ],
-      "joke_types": [
         "character_comedy",
-        "dark_subversive"
+        "cringe_discomfort",
+        "deadpan_understatement"
       ],
-      "setup": "Buster enjoying cabin time with mother",
-      "punchline": "References inappropriate living situation",
-      "craft_total": 7.75,
-      "impact_score": 7.25,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Buster oversharing about inappropriate mother-son closeness. Dark family dysfunction."
-    },
-    {
-      "index": 59,
-      "text": "Well, every problem has an answer. You're probably just confused because you're going through all of this alone.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "George Michael's cousin attraction problem",
-      "punchline": "Michael's innocent advice about not going through things alone",
-      "craft_total": 8.09,
-      "impact_score": 7.75,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant dramatic irony - Michael's well-meaning advice is exactly wrong for this situation."
-    },
-    {
-      "index": 60,
-      "text": "That and cheating on Gangy.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "callback"
-      ],
-      "setup": "Michael explaining what the cabin is for",
-      "punchline": "Casual admission of grandfather's infidelity",
-      "craft_total": 7.56,
-      "impact_score": 7.33,
+      "setup": "Tobias has called Lindsay saying he misses her \u2014 Lindsay is softening",
+      "punchline": "'I can't leave Kitty. Just with, all the sexual intercourse and whatnot.' \u2014 the absurdly clinical phrasing and the 'whatnot' button",
+      "craft_total": 8.15,
+      "impact_score": 8.33,
       "quotability": 8.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Perfect casual delivery of dark family history. Explains the cabin's real purpose."
+      "is_callback": 0,
+      "explanation": "'All the sexual intercourse and whatnot' is peak Tobias \u2014 the hyper-formal clinical language for sex combined with the throwaway 'whatnot' is his voice completely. Only he would phrase an affair this way. High character integration."
     },
     {
       "index": 61,
-      "text": "There's no cabin.",
+      "text": "Lindsay assumes the person on the phone is Kitty \u2014 'What if Kitty's not there and I'm less of a Blue Man and more of a cocktail waitress?'",
       "characters": [
-        "Lucille"
+        "Tobias",
+        "Lindsay"
       ],
       "joke_types": [
-        "visual_gag"
+        "character_comedy",
+        "misdirection",
+        "irony_sarcasm"
       ],
-      "setup": "Characters arriving at cabin location",
-      "punchline": "The cabin is literally gone",
-      "craft_total": 8.07,
-      "impact_score": 8.0,
-      "quotability": 7.5,
+      "setup": "Lindsay says she'll be backstage 'whether Kitty likes it or not' \u2014 she's talking to Tobias but thinks she might be talking to Kitty",
+      "punchline": "Tobias's clarification that he's 'less of a Blue Man and more of a cocktail waitress' \u2014 undercutting his own masculine mystique",
+      "craft_total": 7.69,
+      "impact_score": 7.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deflation of episode's central goal. Maximum economy in delivering the disappointment."
+      "explanation": "Tobias's hapless self-correction \u2014 'less of a Blue Man, more of a cocktail waitress' \u2014 is character comedy about his constant failure to maintain any identity. The deflation of his romantic rivalry into mundane waiter status is funny."
     },
     {
       "index": 62,
-      "text": "Oh, my God! Are you still doing breakfast burritos?",
+      "text": "Barry shows up with $250,000 and a passport for George Sr. \u2014 '...Just a passport.' 'Well, I was up for so long.'",
       "characters": [
-        "Maeby"
+        "Barry",
+        "Michael"
       ],
       "joke_types": [
-        "misdirection",
-        "character_comedy"
+        "character_comedy",
+        "escalation",
+        "setup_punchline"
       ],
-      "setup": "Maeby finding someone at the hotel to help forget her cousin",
-      "punchline": "She recognizes him as a breakfast burrito vendor",
-      "craft_total": 7.89,
-      "impact_score": 7.75,
+      "setup": "Barry says he was going to give George Sr. something \u2014 then reveals it's $250,000 and a passport",
+      "punchline": "Michael's stare forces Barry to correct himself: '...Just a passport.' His defense: 'I was up for so long.' \u2014 Barry's incompetence as a lawyer is his entire character",
+      "craft_total": 7.66,
+      "impact_score": 7.33,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirection - what seemed like romantic encounter is actually food service recognition."
+      "explanation": "Barry's haplessness \u2014 inadvertently confessing to having $250,000 ready for a fugitive, then walking it back to 'just a passport' \u2014 is consistent character comedy. 'I was up for so long' as the explanation for his failure is funny in its inadequacy."
     },
     {
       "index": 63,
-      "text": "I want a divorce.",
+      "text": "Michael fires Barry. Barry: 'You're my only client. What am I supposed to do now? Turn tricks on the street? How much do you think I can get for that? What about making out? $50, or is that just L.A.?'",
       "characters": [
-        "Lindsay"
+        "Barry",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation",
+        "absurdist"
+      ],
+      "setup": "Michael fires Barry for helping George Sr. escape",
+      "punchline": "Barry's immediate pivot to asking how much he could charge as a sex worker \u2014 and his market research question about making out rates in different cities",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Barry's rapid pivot from fired lawyer to musing about his sex worker market value is absurdist character comedy of a high order. The specificity of '$50 for making out \u2014 or is that just L.A.?' elevates it: he's genuinely thinking through the business model. This is Barry as a completely broken person, and it's hilarious. High quotability."
+    },
+    {
+      "index": 64,
+      "text": "Barry continues: 'What about making out? $50, or is that just L.A.? Am I just...'",
+      "characters": [
+        "Barry"
       ],
       "joke_types": [
         "escalation",
         "character_comedy"
       ],
-      "setup": "Lindsay catching Tobias with fake Kitty",
-      "punchline": "Immediate escalation to divorce",
-      "craft_total": 7.63,
-      "impact_score": 7.5,
-      "quotability": 6.5,
+      "setup": "Barry has pivoted to prostitution pricing",
+      "punchline": "He begins negotiating downward \u2014 from full prostitution to 'just making out' \u2014 and wonders if $50 is geographically specific to LA",
+      "craft_total": 7.75,
+      "impact_score": 8.0,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Lindsay dramatic overreaction. Perfect character response to perceived betrayal."
+      "is_callback": 1,
+      "explanation": "The escalation (downward) from street prostitution to 'just making out' is a nice addition to the Barry beat. The geographic specificity ('is that just L.A.?') implies market research has been conducted previously, which makes Barry both funnier and more disturbing."
     },
     {
-      "index": 64,
-      "text": "And I would be thrilled to represent either one of you. That'll be $50.",
+      "index": 65,
+      "text": "George Michael and Maeby discuss finishing the half-kiss 'to get it out of the way' \u2014 then Lindsay arrives: 'Kids, bring the bags. We're sharing a room.'",
       "characters": [
-        "Barry"
+        "George Michael",
+        "Maeby",
+        "Lindsay"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "running_gag",
+        "irony_sarcasm"
+      ],
+      "setup": "George Michael and Maeby are building toward completing their awkward kiss when Lindsay arrives and assigns them a shared room",
+      "punchline": "They are once again thrust into maximum proximity by completely oblivious parents",
+      "craft_total": 7.69,
+      "impact_score": 7.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The timing of Lindsay's arrival and the shared room assignment is the joke \u2014 the universe conspires to keep them together while they try to get their feelings resolved. Good structural comedy through circumstance."
+    },
+    {
+      "index": 66,
+      "text": "George Michael claims he's watching the Reno sunset: 'Isn't it behind you?' 'There's... Yeah, but there's mirrors. It'll actually look closer.'",
+      "characters": [
+        "George Michael",
+        "Steve Holt"
       ],
       "joke_types": [
         "character_comedy",
-        "callback"
+        "cringe_discomfort",
+        "deadpan_understatement"
       ],
-      "setup": "Lindsay declaring divorce",
-      "punchline": "Barry immediately offering legal services with pricing",
-      "craft_total": 7.75,
+      "setup": "George Michael is avoiding the shared hotel room by watching the sunset from outside",
+      "punchline": "When told the sunset is literally behind him, he claims mirrors make it look closer \u2014 a completely nonsensical excuse",
+      "craft_total": 7.83,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "George Michael's flustered excuse \u2014 'there's mirrors, it'll look closer' \u2014 is both nonsensical and completely in character for his panicked social awkwardness. The fact that he commits to the excuse rather than backing down is what makes it funny. Pure George Michael cringe."
+    },
+    {
+      "index": 67,
+      "text": "Gob and Steve Holt are both at the hotel getting cabin keys, calling each other 'son' \u2014 'I'll go buy some fishing stuff, son.' 'Where did you get this kid?'",
+      "characters": [
+        "Gob",
+        "Steve Holt",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "running_gag"
+      ],
+      "setup": "Gob and Steve Holt have bonded as pseudo father-son; Michael arrives and is confused",
+      "punchline": "'Where did you get this kid?' \u2014 Michael treats Steve Holt as an acquisition rather than understanding the relationship",
+      "craft_total": 7.9,
+      "impact_score": 7.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Transitional joke advancing the Gob-Steve Holt plot. Michael's framing of Steve as something Gob 'got' is consistent with the Bluth family's transactional view of relationships. Functional rather than exceptional."
+    },
+    {
+      "index": 68,
+      "text": "Gob describes meeting Steve Holt 'at the garden where the little boy found the arm'",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "callback",
+        "deadpan_understatement"
+      ],
+      "setup": "Gob is explaining how he met Steve Holt",
+      "punchline": "The casual reference to 'the garden where the little boy found the arm' \u2014 delivered as if it's a landmark everyone knows",
+      "craft_total": 7.68,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The matter-of-fact reference to this specific, horrible local landmark is perfectly deadpan. It also retroactively adds context to the earlier severed hand joke \u2014 this is apparently a real place with a real history in the show's universe."
+    },
+    {
+      "index": 69,
+      "text": "Gob: 'I wish he could be my dad.' Michael: 'Okay, your dad's not trying to find you, your son is. That kid's your son. You're the dad.'",
+      "characters": [
+        "Gob",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline",
+        "irony_sarcasm"
+      ],
+      "setup": "Gob is emotionally bonding with Steve Holt, saying he wishes Steve could be his dad",
+      "punchline": "Michael has to spell out that Steve is Gob's SON \u2014 Gob has been so emotionally needy that he's been playing the child role with his actual child",
+      "craft_total": 8.2,
+      "impact_score": 8.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Gob's emotional confusion \u2014 wishing his son were his father because he never had a good father \u2014 is both a great character joke and genuinely touching/pathetic. Michael having to patiently explain the situation ('You're the dad') is perfect. This is the emotional payoff of the entire Gob subplot this episode."
+    },
+    {
+      "index": 70,
+      "text": "'I've made a huge tiny mistake.'",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun",
+        "absurdist"
+      ],
+      "setup": "Gob has just realized Steve Holt is his son, not a potential father figure",
+      "punchline": "'I've made a huge tiny mistake' \u2014 referencing the old AD joke while applying it to a genuinely large mistake",
+      "craft_total": 7.78,
+      "impact_score": 7.83,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the most quotable lines in the episode. The modification of the standard 'I've made a huge mistake' (an AD running gag) to 'huge tiny' is absurdist oxymoron that works on multiple levels \u2014 the mistake is objectively enormous (he didn't know he had a son), but in scale of his usual disasters it registers as 'tiny.' Or he's simply confused. Either way, it's perfect Gob. Maximum economy."
+    },
+    {
+      "index": 71,
+      "text": "Michael sees his own son in the parking lot in Reno and says 'He drove all the way up here to be with me. Wow.' Then: 'Well, I guess I'm no better than...' [pause] '...No, I'm better.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "reaction_beat"
+      ],
+      "setup": "Michael has just chided Gob for abandoning his son in a parking lot \u2014 then sees George Michael abandoned in the parking lot",
+      "punchline": "Michael starts to acknowledge the parallel, then immediately rejects it: '...No, I'm better.' He drives away.",
+      "craft_total": 8.48,
+      "impact_score": 8.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A near-perfect moment of character comedy and self-delusion. The entire episode has been building to this \u2014 Michael repeating his father's pattern of abandonment while telling himself he's different. His mid-sentence self-correction ('No, I'm better') and apparent departure is the show's thesis statement delivered as a punchline. The pause before the realization is the beat that makes it. Could only be Michael. One of the episode's standout moments."
+    },
+    {
+      "index": 72,
+      "text": "George Michael wakes up in the car \u2014 'You were out like a light, pal. Our dreams are about to come true.' He thinks it's Maeby: 'Definitely. We are going camping.'",
+      "characters": [
+        "Michael",
+        "George Michael"
+      ],
+      "joke_types": [
+        "misdirection",
+        "cringe_discomfort",
+        "setup_punchline"
+      ],
+      "setup": "George Michael wakes in a moving vehicle and his first word is 'Maeby' \u2014 revealing who he was thinking about",
+      "punchline": "Michael cheerfully confirms they're going camping, oblivious to what his son just revealed",
+      "craft_total": 7.58,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "George Michael's first word being 'Maeby' \u2014 said in a tone that reveals his preoccupation \u2014 is a great piece of comedy through dramatic irony. Michael's enthusiastic response to the wrong meaning of 'definitely' is classic AD misdirection. The cringe-discomfort of the Maeby situation is maintained efficiently."
+    },
+    {
+      "index": 73,
+      "text": "'It's finally happening.' / 'It's never happening.' \u2014 Narrator's deadpan response to George Michael's excitement",
+      "characters": [
+        "George Michael",
+        "Narrator"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "running_gag",
+        "deadpan_understatement"
+      ],
+      "setup": "George Michael is finally excited that the cabin trip is happening",
+      "punchline": "Narrator immediately: 'It's never happening.' \u2014 the audience knows Michael has a pattern, the narrator gives the verdict",
+      "craft_total": 7.62,
       "impact_score": 7.25,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Perfect Barry opportunism with callback to his pricing discussions. Character-consistent greed."
+      "explanation": "Three words from the narrator do maximum damage \u2014 having established the pattern twice already, the narrator's definitive 'it's never happening' is both a running gag payoff and a genuine character statement. Very economical, high impact."
+    },
+    {
+      "index": 74,
+      "text": "Michael promises to tell the cops about Oscar 'before' taking his son camping \u2014 framed as a moral concession \u2014 'Your uncle Oscar can stay in prison one more day, right?'",
+      "characters": [
+        "Michael",
+        "Narrator"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Michael is justifying the camping trip even though Oscar is wrongly imprisoned",
+      "punchline": "'Your uncle Oscar can stay in prison one more day, right?' \u2014 framed as a minor inconvenience, delivered to his son as if seeking agreement",
+      "craft_total": 7.71,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The breezy phrasing of leaving an innocent man in prison as 'one more day' and asking his son to sign off on it is darkly funny Michael Bluth behavior. His self-justification mode is perfectly rendered."
+    },
+    {
+      "index": 75,
+      "text": "Narrator: 'Not according to that day's blog on imoscar.com'",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "callback",
+        "running_gag",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael says Oscar can wait one more day",
+      "punchline": "The narrator checks imoscar.com's blog as a legitimate news source \u2014 playing Oscar's desperate website straight",
+      "craft_total": 7.78,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback to imoscar.com gets funnier in context: the narrator treats Oscar's blog as a reliable source. The idea that an innocent man's prison blog is being monitored by the narrator is absurdist and perfectly AD."
+    },
+    {
+      "index": 76,
+      "text": "George Michael: 'Me, too.' \u2014 in response to Michael saying he was 'very close' to finding Pop-pop in Reno",
+      "characters": [
+        "George Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "cringe_discomfort",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael says he was close to catching George Sr. in Reno",
+      "punchline": "George Michael's 'Me too' \u2014 he was also close to something in Reno (finishing the kiss with Maeby), but says it with the same gravity as a fugitive hunt",
+      "craft_total": 7.72,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Two words, maximum impact through dramatic irony. The audience knows George Michael's 'me too' refers to nearly kissing his cousin, not finding his grandfather. Michael's obliviousness makes it work. Excellent economy and character integration."
+    },
+    {
+      "index": 77,
+      "text": "Me, too.",
+      "characters": [
+        "George Michael"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael says he was 'very close' to catching George Sr. in Reno",
+      "punchline": "George Michael's 'Me, too' \u2014 he was also in Reno and also nearly found his grandfather, for completely different and unbeknownst reasons",
+      "craft_total": 8.05,
+      "impact_score": 8.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Two words revealing a completely parallel subplot Michael doesn't know about. The understatement is perfect \u2014 George Michael casually drops that he was also hunting his grandfather. Rewatch bonus because the full context of George Michael's Reno trip (fleeing Maeby) adds layers."
+    },
+    {
+      "index": 78,
+      "text": "Narrator: 'As Michael was forcibly taking his son out to the cabin, Lucille was ready to forcibly throw hers out.'",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "observational",
+        "character_comedy"
+      ],
+      "setup": "Transitional narration between Michael's cabin trip and Lucille's subplot",
+      "punchline": "The parallel between Michael 'forcibly taking' George Michael and Lucille 'forcibly throwing out' Buster \u2014 two kinds of force, both parental",
+      "craft_total": 7.82,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A solid narrator transition joke \u2014 the structural parallel between Michael and Lucille's different forms of parental force is well-observed. Economy is good."
+    },
+    {
+      "index": 79,
+      "text": "'Well, that was a freebie.' \u2014 After Lucille presumably accidentally hits/hurts Buster (the narrator's commentary on off-screen slapstick)",
+      "characters": [
+        "Lucille",
+        "Narrator"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Lucille is upset about Buster and the narrator says she 'didn't trust herself' to be home when he returned",
+      "punchline": "'Well, that was a freebie.' \u2014 implying Lucille accidentally hurt Buster and considers herself lucky/pleased, delivered as if incidental",
+      "craft_total": 8.02,
+      "impact_score": 7.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The 'freebie' line implies physical harm to Buster delivered as a sports term \u2014 as if violence against her son has a quota. Extremely dark, perfectly Lucille. The economy of one word ('freebie') doing this much work is impressive."
+    },
+    {
+      "index": 80,
+      "text": "Tobias stages a fake tableau with a Kitty lookalike to make Lindsay jealous using the Blue Man makeup \u2014 delivered with a rhyming couplet: 'If this tableau I recreate, perhaps I can re-snare my mate.'",
+      "characters": [
+        "Tobias"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "wordplay_pun"
+      ],
+      "setup": "Tobias wants to make Lindsay jealous by recreating the blue-handprint scene",
+      "punchline": "He finds a Kitty lookalike and delivers his plan in a rhyming couplet \u2014 completely earnest, completely absurd",
+      "craft_total": 8.14,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Tobias delivering his plan in an unprompted rhyming couplet ('re-snare my mate') is so specifically him \u2014 his actor's flair for dramatic language applied to deeply unromantic situations. The narrator's 'Gee, why wouldn't she want him back?' adds perfect deadpan commentary. Highly character-integrated."
+    },
+    {
+      "index": 81,
+      "text": "Narrator: 'Gee, why wouldn't she want him back?' \u2014 after the Tobias tableau reveal",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Tobias has just planned to win back his wife by staging a scene with a lookalike using Blue Man body paint",
+      "punchline": "The narrator's flat sarcasm undercuts the already-absurd plan",
+      "craft_total": 7.68,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The narrator's editorial sarcasm is well-deployed here \u2014 five words that perfectly undercut without over-explaining. The joke is in the restraint."
+    },
+    {
+      "index": 82,
+      "text": "The cabin has had its bedrooms 'trucked off' \u2014 Michael and George Michael are in an empty living room shell of a cabin",
+      "characters": [
+        "Michael",
+        "George Michael",
+        "Narrator"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "absurdist",
+        "running_gag"
+      ],
+      "setup": "Michael has been hyping the cabin trip as the family cabin experience",
+      "punchline": "The cabin is gutted \u2014 bedrooms removed (trucked away as part of the cabin relocation), leaving just the shell. 'Maybe we'll just set up some sleeping bags right here in the living room.'",
+      "craft_total": 8.12,
+      "impact_score": 7.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The physical comedy of the stripped cabin is a good visual payoff for all the build-up \u2014 the Bluth family's financial disaster rendered in architectural form. The matter-of-fact adjustment ('maybe we'll just set up sleeping bags') is very Michael."
+    },
+    {
+      "index": 83,
+      "text": "Lucille discovers Buster has been sleeping in the car the whole trip \u2014 having made a recording of his own snoring to avoid detection",
+      "characters": [
+        "Lucille",
+        "Buster"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Earlier, Lucille played a recording of Buster's snoring as evidence he should leave. Buster didn't want to stay at Lucille's.",
+      "punchline": "Buster made a RECORDING of himself snoring so Lucille wouldn't know he'd left \u2014 the same technology used against him earlier is now deployed by him",
+      "craft_total": 8.47,
+      "impact_score": 8.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A beautifully constructed callback \u2014 the snoring recording that Lucille used as a grievance becomes the tool Buster uses for his own freedom. The symmetry is perfect: she complained about the snoring, he weaponizes it to escape her. This rewards rewatching and is the most satisfying structural callback in the episode. The irony that they were both in the car heading to the same place adds another layer."
+    },
+    {
+      "index": 84,
+      "text": "Lucille offers to drop Buster 'by this light' \u2014 Buster: 'Or I could come with you.'",
+      "characters": [
+        "Lucille",
+        "Buster"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort",
+        "deadpan_understatement"
+      ],
+      "setup": "Lucille discovers Buster in the car and immediately offers to dump him at a traffic light",
+      "punchline": "Buster suggests coming along instead \u2014 treated as a reasonable alternative by both",
+      "craft_total": 7.33,
+      "impact_score": 6.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The casual nature of Lucille's offer to abandon Buster at a traffic light, and Buster's equally casual counter-offer, is very Bluth family. Neither treats this as unusual parental behavior. Good character integration for both."
+    },
+    {
+      "index": 85,
+      "text": "Lucille and Buster's cabin car scene: 'This is just like when we used to live up in the attic.'",
+      "characters": [
+        "Buster"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive",
+        "deadpan_understatement"
+      ],
+      "setup": "Buster is enjoying the closeness of the car ride",
+      "punchline": "His point of comparison is when they 'used to live in the attic' \u2014 a deeply strange domestic arrangement delivered with total nostalgia",
+      "craft_total": 7.64,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The casual mention that they 'used to live in the attic' together as mother and son is delivered as a warm memory \u2014 which is exactly the problem. It implies a level of enmeshment that explains Buster's entire personality. Pure character comedy, completely specific to Buster and Lucille."
+    },
+    {
+      "index": 86,
+      "text": "George Michael says his problem is 'about a girl' \u2014 Michael: 'Is it about Ann?' George Michael: 'No.' Michael: 'Of course I'm gonna like it. I like Ann.'",
+      "characters": [
+        "Michael",
+        "George Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag",
+        "irony_sarcasm"
+      ],
+      "setup": "George Michael has a problem about a girl \u2014 Michael immediately guesses Ann (his approved girlfriend)",
+      "punchline": "Michael's relief/enthusiasm about Ann ('Of course I'm gonna like it, I like Ann') is the joke \u2014 his enthusiasm for Ann is itself a running gag about how much he prefers Ann to any hint of the Maeby situation",
+      "craft_total": 7.94,
+      "impact_score": 7.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Michael's enthusiasm for Ann reads as comedy because Ann is typically regarded as aggressively unremarkable \u2014 his 'I like Ann' is an endorsement that implies the alternative is worse. The running gag subtext (Michael prefers boring Ann over Maeby) is well-maintained."
+    },
+    {
+      "index": 87,
+      "text": "Michael: 'That and cheating on Gangy.' \u2014 George Michael's explanation of what the cabin is for",
+      "characters": [
+        "George Michael"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael is explaining the cabin's purpose \u2014 bonding, problem-solving",
+      "punchline": "George Michael adds 'and cheating on Gangy' \u2014 delivered matter-of-factly as if this is established family lore",
+      "craft_total": 7.55,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "George Michael's deadpan addendum \u2014 'and cheating on Gangy' \u2014 is the perfect button on a warm father-son bonding scene. The family's corruption casually acknowledged by the most wholesome member, as if it's just cabin facts. High economy ('Gangy' = grandmother, making even the delivery economical). One of the episode's strongest single-line jokes."
+    },
+    {
+      "index": 88,
+      "text": "Narrator: 'And the next morning, Michael rose early to spend the day with his son, only to find himself, once again, dragged away by his family.'",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "running_gag",
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael has declared he won't let the family drag him away this time",
+      "punchline": "The narrator immediately confirms he is, in fact, dragged away \u2014 'once again' doing heavy ironic work",
+      "craft_total": 7.74,
+      "impact_score": 7.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The running gag of Michael's declaration followed immediately by its negation gets its final iteration here. The narrator's 'once again' confirms the loop is closed. Well-structured running gag payoff."
+    },
+    {
+      "index": 89,
+      "text": "George Sr. appears from under the cabin floor: 'Dad, what the hell are you doing?' 'Sorry. I can't let you let Oscar out of prison or they'll come for me. How do you like the cabin?'",
+      "characters": [
+        "George Sr.",
+        "Michael"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Michael is at the cabin \u2014 George Sr. is supposedly a fugitive in Reno",
+      "punchline": "George Sr. emerges from under the cabin floor where he's been hiding \u2014 his explanation manages to be both self-serving AND include the social nicety 'How do you like the cabin?'",
+      "craft_total": 7.98,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "George Sr. appearing from under the cabin floor is a great physical comedy moment (inferred from transcript). But the joke is in the delivery \u2014 after explaining he's been blocking Oscar's release for self-preservation, he pivots to 'How do you like the cabin?' as if this is a normal host moment. The social facade maintained through absurd circumstances is classic George Sr."
+    },
+    {
+      "index": 90,
+      "text": "Lucille arrives at what she thinks is the cabin: 'There's no cabin.' \u2014 The cabin she expected is not there (it's been relocated/is now occupied by Michael)",
+      "characters": [
+        "Lucille"
+      ],
+      "joke_types": [
+        "running_gag",
+        "setup_punchline",
+        "visual_gag"
+      ],
+      "setup": "Lucille was told she could use the cabin. Michael took it instead.",
+      "punchline": "'There's no cabin.' \u2014 Lucille arrives to find nothing where she expected the cabin to be",
+      "craft_total": 7.19,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A solid callback payoff \u2014 the cabin that everyone wanted and nobody got is now literally absent for Lucille. It's the episode's central object rendered unavailable one final time. Functional running gag closure."
+    },
+    {
+      "index": 91,
+      "text": "Lucille reacts to seeing Michael at the cabin: 'Oh, my God! Are you still doing breakfast burritos?'",
+      "characters": [
+        "Lucille"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Lucille arrives to find Michael at the cabin \u2014 a surprise for both parties",
+      "punchline": "Instead of addressing the situation, Lucille's first reaction is outrage/excitement about breakfast burritos \u2014 a completely non-sequitur priority",
+      "craft_total": 7.85,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Lucille's complete non-sequitur \u2014 ignoring the awkwardness of finding Michael at the cabin she expected to be empty and going straight to breakfast burritos \u2014 is perfectly Lucille. Her priorities are always absurdly off-center. Very high character integration."
+    },
+    {
+      "index": 92,
+      "text": "Maeby finds someone to help her forget her cousin \u2014 it turns out to be her cousin George Michael. 'Stood up.' 'Yeah, me too.' 'Wanna make out?' 'Yeah, sure. Why not?'",
+      "characters": [
+        "Maeby",
+        "George Michael"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "dark_subversive",
+        "running_gag"
+      ],
+      "setup": "Both George Michael and Maeby are stood up by their respective would-be companions",
+      "punchline": "They immediately agree to make out \u2014 both having forgotten/abandoned the thing they were just wrestling with, and landing back on each other",
+      "craft_total": 8.34,
+      "impact_score": 8.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The payoff of the George Michael/Maeby thread is perfectly structured: they spent the whole episode trying to resolve or avoid their situation, and in the end they land right back on each other with a casual 'Wanna make out?' / 'Yeah, sure, why not?' The resigned casualness of 'Why not?' is the darkest and funniest version of the punchline. Great episode closer for this subplot."
+    },
+    {
+      "index": 93,
+      "text": "Lindsay catches Tobias with (fake) Kitty: 'Get your hands off my husband, Kitty.' Then: 'I want a divorce.' Barry: 'And I would be thrilled to represent either one of you. That'll be $50.'",
+      "characters": [
+        "Lindsay",
+        "Tobias",
+        "Barry"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback",
+        "setup_punchline"
+      ],
+      "setup": "Lindsay arrives to reclaim Tobias \u2014 Tobias's scheme works, she's jealous. Then she announces divorce.",
+      "punchline": "Barry immediately offers to represent either party for $50 \u2014 just fired by Michael but already working, at sex-worker rates",
+      "craft_total": 8.18,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The $50 callback is a perfect button on the episode. Barry, who earlier wondered how much he could charge for making out, now charges the exact same amount for legal representation \u2014 confirming his assessment of his own market value. The timing (immediately after the jealousy scheme pays off and immediately backfires) is impeccable. Three characters, maximum plot advancement, maximum comedy, zero wasted words."
     }
   ],
   "air_date": "2005-09-19",

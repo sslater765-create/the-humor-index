@@ -4,90 +4,93 @@
   "season": 3,
   "episode_number": 5,
   "title": "Mr. F",
-  "humor_index": 75.9,
-  "jpm": 2.27,
-  "avg_craft": 7.0,
-  "avg_impact": 6.58,
-  "total_jokes": 61,
-  "war": 48.2,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"irony_sarcasm\"]",
-  "standout_joke_ids": "[59, 55, 35]",
+  "humor_index": 91.2,
+  "jpm": 3.35,
+  "avg_craft": 7.59,
+  "avg_impact": 7.23,
+  "total_jokes": 90,
+  "war": 126.9,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"misdirection\"]",
+  "standout_joke_ids": "[87, 67, 38]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
       "text": "I hate it when they hire Yanks to play Brits. You can always tell.",
       "characters": [
-        "Rita"
+        "Narrator"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "meta_self_referential"
       ],
-      "setup": "Rita, who is British, complains about Americans playing British characters poorly",
-      "punchline": "The irony that she herself is likely not who she appears to be",
-      "craft_total": 7.08,
-      "impact_score": 6.0,
-      "quotability": 6.5,
+      "setup": "Narrator describes Michael watching a British film with his British girlfriend Rita.",
+      "punchline": "The narrator complains about Americans playing British people \u2014 immediately before we meet Rita, who is played by Charlize Theron, a South African-American actress playing a British woman.",
+      "craft_total": 7.66,
+      "impact_score": 7.0,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Early foreshadowing with perfect irony - Rita complaining about fake accents while being revealed later as not who she seems"
+      "explanation": "Exceptional meta-joke: the narrator ironically complains about exactly what the show is doing \u2014 casting a non-British actress as British. The joke operates on multiple levels simultaneously (film criticism, self-aware commentary, foreshadowing of Rita's true nature) and lands perfectly in retrospect. Earns high scores for structural elegance and originality."
     },
     {
       "index": 2,
-      "text": "Besides, I already got him his big present for his birthday. A suit! Dad, it's a Jack Welch. I want you to look under the pants.",
+      "text": "A suit! Dad, it's a Jack Welch. I want you to look under the pants.",
       "characters": [
+        "George Sr.",
         "Michael"
       ],
       "joke_types": [
-        "absurdist",
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Michael proudly announces he got George Michael a suit as a birthday present",
-      "punchline": "The awkward phrasing 'look under the pants' and giving a business suit to a teenager",
-      "craft_total": 5.82,
-      "impact_score": 5.17,
-      "quotability": 4.0,
+      "setup": "George Sr. proudly announces he got George Michael a suit for his birthday \u2014 a Jack Welch brand suit.",
+      "punchline": "He tells Michael to 'look under the pants,' which sounds inappropriate but refers to checking the brand label or the receipt hidden in the suit.",
+      "craft_total": 7.13,
+      "impact_score": 6.67,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Michael trying to be a good dad but completely missing what a teenager would want"
+      "explanation": "Mild double entendre that works through George Sr.'s obliviousness. The 'Jack Welch' brand name is a real-world joke (GE CEO turned businessman brand) layered onto the birthday gift absurdity. Not exceptional but competently executed character comedy."
     },
     {
       "index": 3,
-      "text": "Quicken! Premier. Dad, I hope you kept the receipt. - You wanna return that? - No, I wanna deduct it.",
+      "text": "Dad, I hope you kept the receipt. \u2014 You wanna return that? \u2014 No, I wanna deduct it.",
       "characters": [
-        "Michael"
+        "Michael",
+        "George Sr."
       ],
       "joke_types": [
         "character_comedy",
-        "wordplay_pun"
+        "setup_punchline"
       ],
-      "setup": "Michael discovers the suit comes with business software, mentions keeping receipt",
-      "punchline": "His immediate thought is tax deduction rather than returning inappropriate gift",
-      "craft_total": 6.87,
-      "impact_score": 6.0,
-      "quotability": 5.5,
+      "setup": "Michael says he hopes his father kept the receipt for a birthday gift suit.",
+      "punchline": "George Sr. assumes Michael wants to return it; Michael clarifies he wants to deduct it as a business expense \u2014 perfectly in character for George Sr.",
+      "craft_total": 7.86,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Michael character moment - turning even gift-giving into business"
+      "explanation": "The misdirection (return vs. deduct) is tight and perfectly character-specific. Only George Sr. would want to deduct his son's birthday gift. The economy is excellent \u2014 three short lines do a lot of work establishing both characters' worldviews."
     },
     {
       "index": 4,
-      "text": "Really, he would only like it for the receipt.",
+      "text": "He would only like it for the receipt.",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "deadpan_understatement"
       ],
-      "setup": "Discussion about getting George Michael a train",
-      "punchline": "Michael's cynical but accurate assessment of his business-minded son",
-      "craft_total": 6.78,
-      "impact_score": 6.67,
+      "setup": "Michael suggests getting George Michael a toy train instead of the suit.",
+      "punchline": "Michael notes George Michael would only like the train for its receipt \u2014 i.e., to deduct it \u2014 continuing the tax-deduction absurdity and implying the apple doesn't fall far from the tree.",
+      "craft_total": 7.23,
+      "impact_score": 6.33,
       "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sad but funny truth about how George Michael has absorbed the family's business obsession"
+      "is_callback": 1,
+      "explanation": "Tight callback that extends the receipt/deduction joke while also characterizing the entire Bluth family's pathological relationship with money. The economy is near-perfect \u2014 it's one punchy line."
     },
     {
       "index": 5,
@@ -99,1090 +102,1760 @@
         "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Michael and Rita apparently just fell through unstable ground",
-      "punchline": "Michael's matter-of-fact understatement about a construction disaster",
-      "craft_total": 6.99,
-      "impact_score": 6.5,
-      "quotability": 5.5,
+      "setup": "Michael and Rita have apparently just had an adventure on the property that ended with the ground collapsing under them.",
+      "punchline": "Michael's understated conclusion that the ground collapsing 'probably shouldn't have' happened is a perfect deadpan recovery \u2014 he's awkwardly trying to maintain the fun tone while acknowledging a real disaster.",
+      "craft_total": 6.97,
+      "impact_score": 6.33,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic deadpan delivery treating a serious construction failure as minor inconvenience"
+      "explanation": "Michael's understated delivery of an absurd situation is very much in his character \u2014 he's the straight man trying to spin a catastrophe as a fun afternoon. The hedged understatement ('probably shouldn't have') is well-calibrated."
     },
     {
       "index": 6,
-      "text": "I won't tattle.",
+      "text": "if they find out about this... that we haven't started building... they might not come through with their investments. \u2014 I won't tattle.",
       "characters": [
+        "Michael",
         "Rita"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Michael worried about Japanese investors finding out about construction problems",
-      "punchline": "Rita's childish word choice 'tattle' in adult business context",
-      "craft_total": 6.6,
-      "impact_score": 5.5,
-      "quotability": 5.0,
+      "setup": "Michael anxiously explains the serious business consequences of the Japanese investors finding out about the construction delay.",
+      "punchline": "Rita responds with 'I won't tattle' \u2014 a childlike, oddly innocent phrase that is completely incongruous with the gravity of the situation, foreshadowing her MRF status.",
+      "craft_total": 7.94,
+      "impact_score": 6.5,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Another hint at Rita's true nature through inappropriate childish language"
+      "explanation": "A masterfully planted joke. On first viewing it reads as charming British innocence; on rewatch it's a devastating tell of Rita's intellectual disability. The word 'tattle' is doing enormous character work in one syllable. Earns high rewatch bonus."
     },
     {
       "index": 7,
-      "text": "- Whee! - And Rita was falling for Michael too. But that wasn't part of the plan.",
+      "text": "Whee! \u2014 And Rita was falling for Michael too.",
       "characters": [
         "Rita",
         "Narrator"
       ],
       "joke_types": [
         "visual_gag",
-        "wordplay_pun"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Rita literally falling down the hill",
-      "punchline": "Narrator's pun on 'falling' both physically and romantically, plus hint of conspiracy",
-      "craft_total": 6.76,
-      "impact_score": 6.5,
-      "quotability": 6.5,
+      "setup": "Narrator says 'Rita was falling for Michael too' as a romantic statement.",
+      "punchline": "Rita simultaneously yells 'Whee!' \u2014 implying she has literally fallen (physically) while the narrator uses 'falling' romantically. The dual meaning lands visually.",
+      "craft_total": 8.03,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Clever visual/verbal pun that also advances the spy plot - classic AD layered humor"
+      "explanation": "Textbook Arrested Development construction: the narrator's romantic metaphor is literalized simultaneously by Rita's action. The 'Whee!' is perfectly childlike (another MRF hint) and the double meaning of 'falling' is structurally tight. One of the episode's best-constructed gags."
     },
     {
       "index": 8,
-      "text": "I'm a woman too! Not some robot you get to tell everything to.",
-      "characters": [
-        "Rita"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Rita arguing with her handler about falling in love with Michael",
-      "punchline": "Childish tantrum language mixed with spy drama",
-      "craft_total": 6.79,
-      "impact_score": 6.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Rita's emotional outburst reveals both spy plot and her mental limitations"
-    },
-    {
-      "index": 9,
       "text": "'You do the math, Rita.' Well, no, you do the math.",
       "characters": [
         "Rita"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "misdirection"
       ],
-      "setup": "Rita's angry rant about her handler's instructions",
-      "punchline": "Childish 'no you' comeback in spy context",
-      "craft_total": 6.65,
-      "impact_score": 5.83,
-      "quotability": 7.0,
+      "setup": "Rita is in an apparent confrontation with her handler, complaining about her spy missions and assignments.",
+      "punchline": "Rita rebels against being told to 'do the math' \u2014 a totally mundane instruction that she treats as an unbearable demand, subtly hinting she genuinely cannot do the math.",
+      "craft_total": 7.42,
+      "impact_score": 6.33,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect childish response that hints at Rita's true mental state"
+      "explanation": "Another plant for the MRF reveal. What sounds like a petulant spy rebelling against her handler is actually a mentally disabled woman genuinely objecting to being asked to do arithmetic. Strong rewatch value."
     },
     {
-      "index": 10,
-      "text": "I'm a big girl.",
-      "characters": [
-        "Rita"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Handler asking if Rita can handle removing Michael from the picture",
-      "punchline": "Childish phrase used to assert adult capability",
-      "craft_total": 7.07,
-      "impact_score": 5.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Another perfectly childish phrase that undermines her supposed spy competence"
-    },
-    {
-      "index": 11,
-      "text": "- Hey, what happened to you? - Oh, I got highlights. - It'll blend in about a week.",
-      "characters": [
-        "Michael",
-        "Gob"
-      ],
-      "joke_types": [
-        "misdirection",
-        "visual_gag"
-      ],
-      "setup": "Michael asks what happened, expecting answer about construction collapse",
-      "punchline": "Gob thinks he's asking about his hair highlights",
-      "craft_total": 7.13,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good misdirection gag playing on Gob's vanity and obliviousness"
-    },
-    {
-      "index": 12,
+      "index": 9,
       "text": "It probably has something to do with the 4,000 hair plugs I had in one sitting.",
       "characters": [
-        "Gob"
+        "George Sr."
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "absurdist",
+        "deadpan_understatement"
       ],
-      "setup": "Discussion of Gob's appearance issues",
-      "punchline": "Absurdly excessive number of hair plugs in one session",
-      "craft_total": 6.77,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Gob excess and vanity taken to absurd extremes"
-    },
-    {
-      "index": 13,
-      "text": "Yeah, but he's too busy going to the gym to see his friend Frank. Oh, we're more than friends. I'm kind of his spotter. Missed a spot.",
-      "characters": [
-        "Gob"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Gob talking about his gym relationship with Frank",
-      "punchline": "Pun on 'spotter' (gym term) and 'missed a spot' (hair plugs)",
-      "craft_total": 7.02,
-      "impact_score": 6.33,
+      "setup": "Michael asks George Sr. what happened to him (referring to a physical collapse/incident).",
+      "punchline": "George Sr. matter-of-factly attributes it to having 4,000 hair plugs in one sitting \u2014 an absurd medical procedure delivered with complete nonchalance.",
+      "craft_total": 7.33,
+      "impact_score": 7.0,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever wordplay connecting gym terminology to his hair transplant issues"
+      "explanation": "The number '4,000' does significant comedic work \u2014 it's specific enough to feel absurd rather than vague. George Sr.'s vanity about his hair is consistent characterization. Solid Arrested Development deadpan."
     },
     {
-      "index": 14,
-      "text": "- You're blowing my mind, Frank. - I'm an agent, and I'd like to work with you. Oh. Oh!",
+      "index": 10,
+      "text": "Well, maybe you oughta see a doctor. \u2014 Yeah, but he's too busy going to the gym to see his friend Frank. \u2014 Oh, we're more than friends. I'm kind of his spotter. \u2014 Missed a spot.",
       "characters": [
-        "Gob",
+        "Michael",
+        "George Sr.",
+        "Tobias"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection",
+        "character_comedy"
+      ],
+      "setup": "George Sr. mentions his doctor is too busy at the gym to see him; Tobias reveals he is the 'spotter' for that doctor.",
+      "punchline": "Michael deadpans 'Missed a spot' \u2014 a gym-spotter joke that simultaneously references the hair plug conversation (missing a spot of hair) and gym spotting.",
+      "craft_total": 7.01,
+      "impact_score": 6.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The double meaning of 'missed a spot' (hair plug gap + gym spotting) is efficient and well-timed. The setup through the Frank/spotter confusion is good but the payoff is the real highlight."
+    },
+    {
+      "index": 11,
+      "text": "I've been wanting to have my own awkward talk as well. I think we can be more than just gym buddies.",
+      "characters": [
+        "Tobias",
+        "Frank"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Michael says he needs to have an 'awkward talk.' Tobias says he also needs to have an awkward talk and delivers what sounds like a romantic overture to Frank at the gym.",
+      "punchline": "Tobias's declaration 'I think we can be more than just gym buddies' sounds like a romantic/sexual proposition \u2014 consistent with Tobias's never-nude/closeted characterization.",
+      "craft_total": 7.63,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Another entry in the long-running Tobias-is-closeted running gag. The character integration is near-perfect \u2014 only Tobias could turn a business relationship inquiry into an apparent romantic proposition. The misdirection (agent vs. lover) mirrors the CIA/CAA confusion."
+    },
+    {
+      "index": 12,
+      "text": "You're blowing my mind, Frank. \u2014 I'm an agent, and I'd like to work with you. \u2014 Oh. Oh! Well, that is great news.",
+      "characters": [
+        "Tobias",
         "Frank"
       ],
       "joke_types": [
         "misdirection",
-        "cringe_discomfort"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Gob thinks Frank is making romantic advances",
-      "punchline": "Frank reveals he's a talent agent, deflating Gob's assumption",
-      "craft_total": 6.53,
-      "impact_score": 6.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good misdirection playing on Gob's narcissism and the double meaning setup"
+      "setup": "Tobias thinks Frank is about to reciprocate romantic feelings; Frank reveals he's a talent agent who wants to work with Tobias.",
+      "punchline": "Tobias's relief and excitement ('Oh. Oh! Well, that is great news. I'm so glad you went first.') reveals he was terrified of the conversation going the other way \u2014 and his own mixed-up desires.",
+      "craft_total": 7.9,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "'I'm so glad you went first' is a perfectly constructed line \u2014 it retroactively reveals Tobias's anxiety about his own feelings while pivoting the scene on a dime. Strong character integration and excellent payoff structure."
     },
     {
-      "index": 15,
+      "index": 13,
       "text": "Frank said CIA, a government agency that was responsible for this catastrophe. But Tobias thought he said CAA, a talent agency that was responsible for this one.",
       "characters": [
         "Narrator"
       ],
       "joke_types": [
         "wordplay_pun",
-        "visual_gag"
+        "irony_sarcasm",
+        "meta_self_referential"
       ],
-      "setup": "Narrator explains the miscommunication between Frank and Tobias",
-      "punchline": "Visual joke showing terrible movie poster, implying CAA's responsibility for bad entertainment",
-      "craft_total": 7.72,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Frank tells Tobias he's with an agency \u2014 ambiguously stated.",
+      "punchline": "The narrator disambiguates with two parallel constructions: CIA caused a geopolitical catastrophe, CAA (Hollywood talent agency) caused a Hollywood catastrophe \u2014 implying both are equally disastrous in their domains.",
+      "craft_total": 8.57,
+      "impact_score": 8.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant dual-catastrophe joke connecting spy agencies and Hollywood agencies as equally destructive"
+      "explanation": "One of the episode's finest jokes. The parallel structure (CIA/catastrophe :: CAA/catastrophe) is structurally immaculate, the implication that a Hollywood talent agency is as catastrophic as the CIA is darkly funny, and it works as a standalone observation, a character joke, and a plot mechanism simultaneously. The economy \u2014 two sentences doing this much work \u2014 is exceptional. Justifies a 9+ craft score."
     },
     {
-      "index": 16,
-      "text": "Actually, she'd already gotten one... as the movie she'd released in her secret life as a studio executive was losing money.",
+      "index": 14,
+      "text": "Her grades are terrible. She's gonna start getting F's. \u2014 Actually, she'd already gotten one...",
       "characters": [
+        "Tobias",
         "Narrator"
       ],
       "joke_types": [
-        "callback",
-        "irony_sarcasm"
+        "wordplay_pun",
+        "running_gag",
+        "misdirection"
       ],
-      "setup": "Michael worried Maeby will start getting F's",
-      "punchline": "She already got an F - her movie flopped as a studio executive",
-      "craft_total": 7.76,
-      "impact_score": 7.17,
-      "quotability": 6.0,
+      "setup": "Tobias worries Maeby is going to start getting F's (failing grades).",
+      "punchline": "The narrator reveals she'd already gotten an 'F' \u2014 but means the movie that flopped as a studio executive (titled or referred to as 'F'), not a failing grade.",
+      "craft_total": 8.23,
+      "impact_score": 7.83,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect callback connecting school grades to her secret Hollywood career"
+      "is_callback": 0,
+      "explanation": "Elegant double meaning that is quintessentially Arrested Development: the concerned-parent framing (bad grades) is instantly undercut by a narrative reveal that means something entirely different. The title 'Mr. F' is itself a callback to this setup. Structurally tight with excellent economy."
     },
     {
-      "index": 17,
-      "text": "- But didn't some people die in Hell Tunnel? - That is an urban legend. Two elderly people got badly scalded...",
+      "index": 15,
+      "text": "But didn't some people die in Hell Tunnel? \u2014 That is an urban legend. Two elderly people got badly scalded when they tried to climb into the lava cauldron, but I've got that covered.",
+      "characters": [
+        "Unnamed exec",
+        "Maeby"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Maeby proposes converting the deadly 'Hell Tunnel' ride into the 'Tunnel of Love, Indubitably.'",
+      "punchline": "The deaths are dismissed as an urban legend, but Maeby immediately confirms two people were scalded in a lava cauldron \u2014 directly contradicting her denial \u2014 while breezily claiming she 'has it covered.'",
+      "craft_total": 7.97,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The self-contradiction ('urban legend' / 'two elderly people got badly scalded') is perfectly structured and Maeby's breezy confidence about covering it up is great dark comedy. The specificity ('lava cauldron') elevates it above generic dark humor."
+    },
+    {
+      "index": 16,
+      "text": "Just like the poster!",
       "characters": [
         "Maeby"
       ],
       "joke_types": [
-        "escalation",
-        "deadpan_understatement"
-      ],
-      "setup": "Maeby dismisses deaths as urban legend",
-      "punchline": "Immediately describes serious injuries in detail while maintaining it's just a legend",
-      "craft_total": 7.34,
-      "impact_score": 7.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect contradiction joke - denying deaths while describing serious injuries"
-    },
-    {
-      "index": 18,
-      "text": "- You know, she was in the Olympics? - She wasn't. - Wasn't she on the cover of Newsweek? - No. - Yes. - Michael was thinking of this man.",
-      "characters": [
-        "Michael",
-        "Gob",
-        "Narrator"
-      ],
-      "joke_types": [
         "visual_gag",
-        "misdirection"
+        "dark_subversive"
       ],
-      "setup": "Michael insisting Rita was on Newsweek cover",
-      "punchline": "Visual of male athlete, showing Michael's complete confusion",
-      "craft_total": 7.25,
-      "impact_score": 7.0,
-      "quotability": 5.5,
+      "setup": "Maeby explains how she's handling the lava cauldron safety issue, apparently by covering it \u2014 like the promotional poster for the tunnel.",
+      "punchline": "'Just like the poster!' implies the poster either shows someone covered by lava or depicts the cover-up itself \u2014 the visual parallel between the deadly hazard and its promotional branding is the joke.",
+      "craft_total": 6.92,
+      "impact_score": 6.17,
+      "quotability": 5.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great visual gag showing how completely wrong Michael is about Rita's supposed achievements"
+      "explanation": "Works as a visual gag (we presumably see the poster) and as dark comedy, though its full impact depends on the visual we can't fully appreciate in transcript form. Functional but relies heavily on the visual."
     },
     {
-      "index": 19,
-      "text": "The whole backside has moles. That's Frank's problem too.",
+      "index": 17,
+      "text": "You know what, you're one to talk. You've completely ignored this family since that British bird flew into your life.",
       "characters": [
-        "Michael",
-        "Gob"
+        "Tobias"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "callback"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Michael mentions property has mole problem",
-      "punchline": "Gob connects it to Frank's physical moles",
-      "craft_total": 6.58,
-      "impact_score": 5.83,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Simple but effective pun connecting two different meanings of 'mole'"
-    },
-    {
-      "index": 20,
-      "text": "Hey, I didn't say that.",
-      "characters": [
-        "Larry"
-      ],
-      "joke_types": [
-        "reaction_beat"
-      ],
-      "setup": "George Sr. (through Larry) saying the surrogate is worth every penny",
-      "punchline": "Larry breaking character to deny saying something positive about himself",
-      "craft_total": 7.08,
-      "impact_score": 6.5,
+      "setup": "Tobias accuses Michael of ignoring the family for Rita.",
+      "punchline": "Tobias \u2014 who chronically neglects his wife and daughter in pursuit of acting \u2014 calls out Michael for family neglect. The irony is rich given Tobias's own track record.",
+      "craft_total": 6.2,
+      "impact_score": 5.5,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing the absurdity of the surrogate system and Larry's limitations."
+      "explanation": "Situational irony that works through character knowledge. 'British bird' is a nice British-slang choice. Not the sharpest joke in the episode but functional."
     },
     {
-      "index": 21,
-      "text": "- Typical. - Delicious.",
+      "index": 18,
+      "text": "She's that Rita Leeds? Wasn't she on the cover of Newsweek? \u2014 No. \u2014 Yes. \u2014 Michael was thinking of this man.",
       "characters": [
-        "Lucille",
-        "Gob"
+        "Tobias",
+        "Michael",
+        "Narrator"
       ],
       "joke_types": [
         "misdirection",
+        "visual_gag",
         "character_comedy"
       ],
-      "setup": "Lucille's disgusted 'typical' response to Michael's British girlfriend comment",
-      "punchline": "Gob misunderstands and thinks she's talking about food",
-      "craft_total": 6.88,
-      "impact_score": 6.25,
+      "setup": "Tobias excitedly asks if Rita is the famous 'Rita Leeds' from Newsweek.",
+      "punchline": "The narrator reveals Michael was thinking of a completely different person (presumably shown on screen) \u2014 a man \u2014 meaning no one is on the same page and Michael's romantic idealization has no factual basis.",
+      "craft_total": 7.44,
+      "impact_score": 6.83,
       "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Quick misdirection gag showing Gob's obliviousness to context"
+      "explanation": "The narrator's cutaway reveal ('Michael was thinking of this man') is a great visual gag that punctures Michael's romanticism. The Yes/No/Yes exchange is well-paced and the visual payoff is entirely dependent on what we see on screen, making it a strong rewatch moment."
     },
     {
-      "index": 22,
-      "text": "- I need a drink. - I'll take an English muffin.",
+      "index": 19,
+      "text": "The whole backside has moles. \u2014 That's Frank's problem too.",
       "characters": [
-        "Lucille",
-        "Gob"
+        "Michael",
+        "Tobias"
       ],
       "joke_types": [
-        "misdirection",
-        "character_comedy"
+        "wordplay_pun",
+        "character_comedy",
+        "running_gag"
       ],
-      "setup": "Lucille asking for alcohol",
-      "punchline": "Gob treating it like a restaurant order, connecting to British theme",
-      "craft_total": 6.94,
-      "impact_score": 6.0,
+      "setup": "Michael mentions the construction site's 'mole problem' on the backside of the hill.",
+      "punchline": "Tobias non-sequiturs that 'Frank' (his CIA contact) also has a mole problem \u2014 referring to the actual mole (birthmark/growth) on Frank's thigh he mentioned earlier, not the burrowing animal.",
+      "craft_total": 7.42,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The 'mole' wordplay (burrowing animal / skin mole / spy terminology) is central to the episode's architecture. This particular instance is efficient and pays off across multiple meanings simultaneously. The episode-level 'mole' pun is one of Arrested Development's finest running wordplays."
+    },
+    {
+      "index": 20,
+      "text": "So I've hired this guy to be my eyes and ears. \u2014 You know, Dad, this guy costs us a fortune. \u2014 He's worth every penny. \u2014 Hey, I didn't say that.",
+      "characters": [
+        "George Sr.",
+        "Michael",
+        "Larry (surrogate)"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement",
+        "visual_gag"
+      ],
+      "setup": "George Sr. has hired Larry the surrogate to act as his proxy; Michael protests the cost.",
+      "punchline": "Larry \u2014 who is being fed lines by George Sr. through an earpiece \u2014 denies saying 'He's worth every penny,' breaking the puppet dynamic and revealing his own agency.",
+      "craft_total": 7.23,
+      "impact_score": 6.67,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Another quick Gob misunderstanding, this time connecting British girlfriend to British food"
+      "explanation": "The Larry/George Sr. puppet dynamic is a great running gag. 'Hey, I didn't say that' perfectly punctures the illusion and gets Larry's own personality into the joke. The surrogate premise is inherently funny and this is one of its better payoffs."
     },
     {
-      "index": 23,
-      "text": "And Godzilla! - Godzirra! - Just sit down. - Okay, guys. - Godzirra!",
+      "index": 21,
+      "text": "Somebody tipped them off that the property wasn't ready for building. Which it would have been if Michael hadn't been so busy with his English muffin. \u2014 Typical. \u2014 Delicious. \u2014 I need a drink. \u2014 I'll take an English muffin.",
       "characters": [
-        "Gob",
-        "Lucille"
+        "George Sr.",
+        "Michael",
+        "Lucille",
+        "Tobias"
       ],
       "joke_types": [
-        "escalation",
-        "physical_slapstick"
+        "wordplay_pun",
+        "character_comedy",
+        "running_gag"
       ],
-      "setup": "Discussion of respecting Japanese culture",
-      "punchline": "Family immediately doing racist Godzilla impressions",
-      "craft_total": 5.51,
-      "impact_score": 6.0,
+      "setup": "George Sr. blames Michael for being distracted by his 'English muffin' (meaning Rita, the British woman).",
+      "punchline": "The family responds to 'English muffin' completely literally: Lucille wants a drink, Tobias orders an English muffin \u2014 each character's response perfectly reflecting their personality.",
+      "craft_total": 8.09,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A beautifully layered joke. 'English muffin' works as innuendo, as a nickname, and is then literalized by three different characters each revealing their personalities (Lucille's alcoholism, Tobias's obliviousness, George Sr.'s frustration). The chain of responses is perfectly orchestrated."
+    },
+    {
+      "index": 22,
+      "text": "They, uh, come from a culture that values honor and respect. And Godzilla!",
+      "characters": [
+        "Michael",
+        "Gob"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Michael earnestly explains that the Japanese investors come from a culture valuing honor and respect.",
+      "punchline": "Gob enthusiastically adds 'And Godzilla!' \u2014 reducing a sincere cultural observation to a cheap stereotype with cheerful ignorance.",
+      "craft_total": 6.77,
+      "impact_score": 6.67,
       "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Cringe humor showing family's immediate cultural insensitivity despite good intentions"
+      "explanation": "The joke works primarily through Gob's character (cheerful, oblivious racism) rather than any originality in the punchline itself. The Godzilla stereotype is pretty well-worn but the character specificity and delivery elevate it above pure clich\u00e9. Earned vs. cheap score is lower because the joke leans on the stereotype."
+    },
+    {
+      "index": 23,
+      "text": "Godzirra! \u2014 Just sit down. \u2014 Okay, guys. \u2014 Godzirra!",
+      "characters": [
+        "Buster",
+        "Michael",
+        "Lucille"
+      ],
+      "joke_types": [
+        "running_gag",
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Gob yells 'Godzilla' and others pile on despite Michael trying to shut it down.",
+      "punchline": "The Godzirra pronunciation escalates as different family members join in despite Michael's repeated attempts to stop it, culminating in Lucille's reveal she was just calling for vodka.",
+      "craft_total": 6.11,
+      "impact_score": 6.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The escalation works through the family's collective ignoring of Michael's authority, which is a recurring theme. Functional but the cultural stereotype at its core limits the craft ceiling."
     },
     {
       "index": 24,
-      "text": "- What? We're out of vodka. - Sorry. I thought you were doing Godzilla.",
+      "text": "What? We're out of vodka. \u2014 Sorry. I thought you were doing Godzilla.",
       "characters": [
         "Lucille",
         "Michael"
       ],
       "joke_types": [
         "misdirection",
-        "character_comedy"
+        "character_comedy",
+        "running_gag"
       ],
-      "setup": "Lucille makes monster noise",
-      "punchline": "She's actually just expressing alcohol withdrawal, not doing impression",
-      "craft_total": 7.42,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Michael yells at Lucille to stop doing the Godzilla bit.",
+      "punchline": "Lucille reveals she was actually crying out because the vodka ran out \u2014 not doing Godzilla. The running Lucille-alcoholism gag lands with perfect timing as the apparent punchline of the Godzilla escalation.",
+      "craft_total": 8.25,
+      "impact_score": 8.17,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Lucille moment - her alcoholism mistaken for racist impression"
+      "is_callback": 1,
+      "explanation": "This is one of the episode's best jokes. The misdirection is perfect: we (and Michael) assume Lucille is joining the Godzilla bit, but her actual reason for shouting is alcoholism-related \u2014 which is simultaneously more mundane and more devastating. The character integration is near-perfect (only Lucille would yell about running out of vodka with the same urgency as a monster attack). Michael's apologetic 'Sorry, I thought you were doing Godzilla' is the perfect straight-man button."
     },
     {
       "index": 25,
-      "text": "Build a miniature city. Put it outside their window. Tell them it's far away. It'll look real if you squint. God knows they're squinters.",
+      "text": "Maybe we should do to the Japanese what they do in their movies. Build a miniature city. Put it outside their window. Tell them it's far away. It'll look real if you squint. God knows they're squinters.",
       "characters": [
         "Gob"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "character_comedy",
+        "absurdist",
+        "dark_subversive"
       ],
-      "setup": "Gob suggests building miniature city to fool Japanese investors",
-      "punchline": "Racist assumption about Asian people squinting will make deception work",
-      "craft_total": 6.04,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "The family is trying to figure out how to deceive the Japanese investors about the unbuilt property.",
+      "punchline": "Gob proposes an elaborate Godzilla-movie-inspired scheme to build a miniature city, culminating in the racist 'God knows they're squinters' aside.",
+      "craft_total": 7.1,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Absurd plan made worse by casual racism, typical Gob obliviousness"
+      "explanation": "The brilliance here is that this absurd plan ACTUALLY WORKS later in the episode, making it a setup for one of the episode's biggest payoffs. The internal logic of the scheme (Godzilla movies use miniatures, therefore trick real Japanese people with miniatures) is perfect Gob-style reasoning. The racist punchline is uncomfortable but attributed to Gob's character rather than the show's endorsement."
     },
     {
       "index": 26,
-      "text": "- Another brilliant idea, Einstein. - Really? - Larry really never knows how to sell the sarcasm.",
+      "text": "Another brilliant idea, Einstein. \u2014 Really?",
       "characters": [
         "George Sr.",
-        "Gob",
-        "Narrator"
+        "Gob"
       ],
       "joke_types": [
         "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "George Sr. sarcastically calls Gob 'Einstein'",
-      "punchline": "Gob takes it as genuine compliment, narrator explains Larry's poor sarcasm delivery",
-      "craft_total": 7.08,
-      "impact_score": 6.67,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great meta-joke about the surrogate's inability to convey tone, plus Gob's obliviousness"
-    },
-    {
-      "index": 27,
-      "text": "Oh, great. That's another brilliant idea, Steinberg.",
-      "characters": [
-        "George Sr."
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "George Sr. being sarcastic again",
-      "punchline": "Accidentally uses Jewish surname instead of Einstein, revealing his casual antisemitism",
-      "craft_total": 6.48,
-      "impact_score": 5.67,
+      "setup": "George Sr. sarcastically calls Gob's Tiny Town plan a 'brilliant idea, Einstein.'",
+      "punchline": "Gob \u2014 through Larry the surrogate \u2014 genuinely takes the sarcasm as a compliment and responds 'Really?' with apparent delight.",
+      "craft_total": 7.84,
+      "impact_score": 7.33,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Reveals George Sr.'s prejudices through his confused attempt at sarcasm"
+      "explanation": "Gob's inability to detect sarcasm from his father is perfectly in character. The joke's economy is excellent \u2014 two words ('Really?') do the entire lifting. Larry the surrogate adds an extra layer since George Sr. is managing Gob at a remove."
+    },
+    {
+      "index": 27,
+      "text": "You like to build it with me? \u2014 Larry really never knows how to sell the sarcasm.",
+      "characters": [
+        "Larry (surrogate)",
+        "Narrator"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "meta_self_referential"
+      ],
+      "setup": "George Sr. (through Larry) says 'You like to build it with me?' as a follow-up sarcastic jab at Gob.",
+      "punchline": "The narrator breaks in to note that 'Larry really never knows how to sell the sarcasm' \u2014 critiquing the surrogate's acting ability mid-scene.",
+      "craft_total": 7.57,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The narrator critiquing the surrogate's acting is a wonderfully meta joke. It operates on three levels: (1) Larry the character is bad at acting, (2) the show is commenting on its own staging device, (3) it's genuinely funny that the hired proxy can't deliver sarcasm convincingly. The economy is excellent and the narrator's casual aside format makes it land perfectly."
     },
     {
       "index": 28,
-      "text": "Life is not some cheesy Japanese movie... where the hero pulls on a pair of jet pants and... flies off the balcony like Astroboy.",
+      "text": "Life is not some cheesy Japanese movie where the hero pulls on a pair of jet pants and flies off the balcony like Astroboy.",
       "characters": [
-        "George Sr."
+        "Bob Loblaw"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "setup_punchline"
+        "setup_punchline",
+        "misdirection",
+        "absurdist"
       ],
-      "setup": "George Sr. dismissing unrealistic Japanese movie scenarios",
-      "punchline": "Specific description of jet pants that will literally happen later",
-      "craft_total": 7.2,
-      "impact_score": 6.33,
-      "quotability": 7.5,
+      "setup": "Bob Loblaw is making a serious point about not committing fraud by pretending the property is further along.",
+      "punchline": "He illustrates with an absurdly specific metaphor: 'jet pants' and 'Astroboy' \u2014 which is funny in isolation but also perfectly sets up George Sr.'s Google search for 'jet pants.'",
+      "craft_total": 8.36,
+      "impact_score": 8.33,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect foreshadowing disguised as dismissive comment about unrealistic scenarios"
+      "explanation": "The joke works on multiple levels: it's absurdist in isolation, it sets up the jet pack subplot perfectly, and 'jet pants' is an extremely funny specific wrong word (they're a jet pack, not pants). The transition to George Sr. immediately Googling 'jet pants' is one of the episode's best structural jokes."
     },
     {
       "index": 29,
       "text": "And that's when George Sr. Did a Web search for the words, 'Jet pants.'",
       "characters": [
-        "Narrator"
+        "Narrator",
+        "George Sr."
       ],
       "joke_types": [
-        "callback",
-        "escalation"
+        "setup_punchline",
+        "character_comedy",
+        "visual_gag"
       ],
-      "setup": "George Sr. just dismissed jet pants as unrealistic",
-      "punchline": "Immediately searches for them online",
-      "craft_total": 7.65,
-      "impact_score": 7.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Bob Loblaw uses 'jet pants' as a throwaway metaphor in a serious speech about fraud.",
+      "punchline": "George Sr. immediately does a web search for 'jet pants' \u2014 missing the entire point of Bob's speech and latching onto the one absurd detail.",
+      "craft_total": 8.41,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect immediate callback showing George Sr.'s hypocrisy and desperation"
+      "explanation": "This is among the episode's best jokes. The setup (Bob's earnest metaphor) is immediately hijacked by George Sr.'s obsessive, childlike response. The narrator's precise diction ('Did a Web search for the words, Jet pants') adds to the comedy. It plants the jet pack subplot while being independently hilarious. George Sr.'s inability to absorb practical advice is perfectly captured in a single action."
     },
     {
       "index": 30,
-      "text": "Let's start with my family's misdemeanors... and then push right on through to the lighter treasons.",
+      "text": "You need to find that leak and plug it.",
       "characters": [
-        "Michael"
+        "Bob Loblaw"
       ],
       "joke_types": [
-        "escalation",
-        "wordplay_pun"
+        "wordplay_pun",
+        "running_gag"
       ],
-      "setup": "Michael casually discussing his family's crimes with Rita",
-      "punchline": "'Lighter treasons' as if treason comes in different weights",
-      "craft_total": 7.8,
-      "impact_score": 7.83,
-      "quotability": 9.0,
-      "rewatch_bonus": 0,
+      "setup": "Bob Loblaw uses 'leak' in the espionage/business sense (an informant) and tells them to 'plug it.'",
+      "punchline": "The 'mole' theme of the episode means 'plug it' also refers to the literal mole tunnels under the property \u2014 the wordplay is unspoken but resonant within the episode's architecture.",
+      "craft_total": 6.86,
+      "impact_score": 6.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant escalation joke treating serious crimes casually, with perfect word choice 'lighter'"
+      "explanation": "The multi-meaning 'leak/mole/plug' wordplay is part of the episode's dense wordplay architecture. In isolation this line isn't a huge laugh but contributes to the overall mole/spy/leak theme that rewards rewatching."
     },
     {
       "index": 31,
-      "text": "Do you know any other songs?",
+      "text": "And she's 'Britishish.' \u2014 She's a spy. \u2014 I haven't told Rita anything. \u2014 This was not strictly true.",
       "characters": [
-        "Michael"
+        "Lucille",
+        "family members",
+        "Narrator"
       ],
       "joke_types": [
-        "reaction_beat",
-        "cringe_discomfort"
+        "irony_sarcasm",
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Michael has been sharing family crimes while Rita plays banjo",
-      "punchline": "His casual request for different music during confession of serious crimes",
-      "craft_total": 7.28,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Michael defends Rita, insisting he hasn't told her anything sensitive.",
+      "punchline": "The narrator immediately contradicts him: 'This was not strictly true' \u2014 then we cut to Michael apparently having narrated his entire family's criminal history to Rita.",
+      "craft_total": 7.32,
+      "impact_score": 7.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect cringe moment - treating serious confession like dinner entertainment"
+      "explanation": "The narrator's dry contradiction of a character's self-serving claim is an AD staple, and this is a well-executed instance. The setup of Michael's sincere denial followed immediately by evidence he told Rita everything is good ironic structure."
     },
     {
       "index": 32,
-      "text": "- And it could be an alias. - Alias is a show about a spy!",
+      "text": "Let's start with my family's misdemeanors and then push right on through to the lighter treasons.",
       "characters": [
-        "Bob Loblaw",
         "Michael"
-      ],
-      "joke_types": [
-        "meta_self_referential",
-        "wordplay_pun"
-      ],
-      "setup": "Discussion of 'Mr. F' possibly being an alias",
-      "punchline": "Michael's connection to the TV show Alias",
-      "craft_total": 6.61,
-      "impact_score": 6.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Meta reference to actual TV show fits naturally into spy plot discussion"
-    },
-    {
-      "index": 33,
-      "text": "Hell Tunnel takes another name. Will it take another life?",
-      "characters": [
-        "TV Announcer"
       ],
       "joke_types": [
         "dark_subversive",
-        "wordplay_pun"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "TV promo for dangerous studio attraction",
-      "punchline": "Ominous pun on 'taking' a name vs taking a life",
-      "craft_total": 7.04,
-      "impact_score": 6.67,
-      "quotability": 7.5,
+      "setup": "Michael has apparently been telling Rita about his family's crimes, framing them as a kind of romantic story.",
+      "punchline": "The phrase 'lighter treasons' is a darkly comic inversion \u2014 treasons are categorically not 'light,' but Michael treats them as an afterthought on a spectrum that starts with misdemeanors.",
+      "craft_total": 8.19,
+      "impact_score": 8.0,
+      "quotability": 8.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark humor treating deadly attraction as entertainment, with clever wordplay"
+      "explanation": "'The lighter treasons' is a perfectly coined phrase \u2014 highly quotable, economical, and darkly funny. It reveals that Michael is so normalized to his family's crimes that treason ranks below misdemeanor in his mental hierarchy. This is sharp character writing compressed into a single memorable phrase."
+    },
+    {
+      "index": 33,
+      "text": "Then he siphoned off the entire pension fund into a dummy corporation, filed for bankruptcy, and used... Do you know any other songs?",
+      "characters": [
+        "Michael",
+        "Rita"
+      ],
+      "joke_types": [
+        "misdirection",
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael is apparently narrating his father's crimes to Rita as though telling a story (or singing?).",
+      "punchline": "Rita interrupts asking if he knows 'any other songs' \u2014 suggesting she's been experiencing his crime-narration as a kind of musical performance, or simply that she's bored/confused by the lengthy recitation.",
+      "craft_total": 8.1,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Another great MRF plant: Rita calling a recitation of crimes a 'song' is both charming and a tell. The joke also works as pure absurdism \u2014 Michael reciting crimes so fluently it sounds like a ballad. Strong rewatch value as it recontextualizes Rita completely."
     },
     {
       "index": 34,
-      "text": "I'd wear it to school, but who needs a Welch wedge, right? That's when they... Enough business.",
+      "text": "What doesn't make any sense is why she's dating you. \u2014 No, that's a good point.",
       "characters": [
-        "George Michael",
+        "Buster",
         "Michael"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline",
+        "deadpan_understatement"
       ],
-      "setup": "George Michael about to explain financial terminology",
-      "punchline": "Michael cutting him off before he gets too deep into business talk",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Michael says Rita being a spy 'doesn't make any sense.'",
+      "punchline": "Buster pivots the 'doesn't make sense' to why Rita would date Michael at all \u2014 and Michael immediately concedes 'No, that's a good point,' agreeing with the insult.",
+      "craft_total": 6.87,
+      "impact_score": 6.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good character moment showing how business-obsessed George Michael has become."
+      "is_callback": 0,
+      "explanation": "Michael's immediate self-deprecating agreement with the insult is funnier than the insult itself. Two-line exchange that maximizes economy. The 'No, that's a good point' button is excellent."
     },
     {
       "index": 35,
+      "text": "Ah, Mister F. Rita's not a man. \u2014 As far as you know.",
+      "characters": [
+        "Gob",
+        "Lucille"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Bob Loblaw says the spy goes by 'Mr. F.' Gob protests that Rita is not a man.",
+      "punchline": "Lucille adds 'As far as you know' \u2014 implying Rita might be trans/secretly male, delivered with Lucille's signature cruelty.",
+      "craft_total": 6.88,
+      "impact_score": 6.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The rewatch value is high because 'Mr. F' turns out to refer to something else entirely (Tobias F\u00fcnke / the F movie). Lucille's 'as far as you know' is perfectly in character \u2014 withering, pointed, casually cruel. The ambiguity of 'Mr. F' is the engine of the episode's mystery."
+    },
+    {
+      "index": 36,
+      "text": "Alias is a show about a spy!",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "meta_self_referential",
+        "absurdist"
+      ],
+      "setup": "Michael argues that 'Mr. F' could be 'an alias.'",
+      "punchline": "Gob protests that Alias is a show about a spy \u2014 confusing the common noun 'alias' (false identity) with the TV show 'Alias' \u2014 while inadvertently making a meta point that is kind of correct.",
+      "craft_total": 7.55,
+      "impact_score": 7.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A genuinely great joke. Gob's malapropism (confusing a common noun for a proper noun, a TV show title) is perfectly stupid and perfectly timed. The meta-layer (it IS a show about a spy and they ARE talking about a spy) makes it resonate. Short, sharp, highly quotable. Comparable to the 8.0 anchor example in wit and economy."
+    },
+    {
+      "index": 37,
+      "text": "Gob, I'm sending you a package. You'll know what to do with it.",
+      "characters": [
+        "George Sr.",
+        "Gob"
+      ],
+      "joke_types": [
+        "misdirection",
+        "setup_punchline"
+      ],
+      "setup": "George Sr. cryptically tells Gob he's sending a package and Gob will 'know what to do with it.'",
+      "punchline": "The package turns out to be a jet pack \u2014 something Gob absolutely does not know what to do with, and which ends up with George Michael causing chaos.",
+      "craft_total": 7.17,
+      "impact_score": 6.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Primarily a setup joke \u2014 its comedy is fully realized later when we see the chain of miscommunication leading to George Michael's jet pack disaster. The confidence of 'You'll know what to do with it' directed at Gob is darkly funny in context."
+    },
+    {
+      "index": 38,
       "text": "'Fun' and 'Failure' both start out the same way.",
       "characters": [
         "George Michael"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement",
+        "observational"
       ],
-      "setup": "Michael encouraging George Michael to have fun",
-      "punchline": "George Michael's pessimistic wordplay observation",
-      "craft_total": 8.02,
-      "impact_score": 7.83,
-      "quotability": 9.5,
+      "setup": "Michael tells George Michael he's bought him a present and it's time for them to start having fun.",
+      "punchline": "George Michael responds with 'Fun and Failure both start out the same way' \u2014 a deeply pessimistic, almost philosophical observation from a teenage boy.",
+      "craft_total": 8.95,
+      "impact_score": 8.83,
+      "quotability": 10.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect George Michael line - innocent observation revealing deep pessimism and Bluth family damage"
+      "explanation": "This is the episode's single best line. 'Fun and Failure both start out the same way' is a perfectly constructed, deeply quotable piece of character comedy. It's true (both start with F-U), it reveals George Michael's anxiety and damaged relationship with joy, and it's genuinely profound while being absurdly funny coming from a teenager. The economy is flawless \u2014 eleven words that do the work of a character study. Comparable to 'Snip, snap' in quotability and character specificity. Justifies a 9+ craft score."
     },
     {
-      "index": 36,
-      "text": "- I'm never gonna find my way... - past that hallway sensor.",
+      "index": 39,
+      "text": "And Larry, the surrogate, showed up to pick up the jet pack... What is that, a train set? Look down, Larry. \u2014 No, not down at your feet. \u2014 Left. \u2014 My left, your right.",
       "characters": [
-        "Larry",
+        "Narrator",
+        "George Sr.",
+        "Larry (surrogate)"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "George Sr. is directing Larry via earpiece to pick up the jet pack he sent to the model home.",
+      "punchline": "Larry cannot find the jet pack, looking at his feet and in wrong directions while George Sr. micromanages through the earpiece \u2014 a comedy of remote control incompetence.",
+      "craft_total": 7.09,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Larry puppet dynamic is inherently funny and the physical comedy of him looking in wrong directions while George Sr. panics in his hiding spot is solid. The directions ('my left, your right') is a well-worn bit but it earns its place here."
+    },
+    {
+      "index": 40,
+      "text": "What is the matter with this guy? \u2014 saying all that too.",
+      "characters": [
+        "George Sr.",
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag",
+        "reaction_beat"
+      ],
+      "setup": "George Sr. complains about Larry's incompetence through the earpiece.",
+      "punchline": "Gob notes that Larry is saying George Sr.'s complaints out loud too \u2014 Larry is broadcasting everything George Sr. says including the criticism of Larry himself.",
+      "craft_total": 7.19,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The recursive comedy of Larry broadcasting George Sr.'s criticism of Larry is a nice escalation of the surrogate premise. Well-constructed in a small space."
+    },
+    {
+      "index": 41,
+      "text": "Actually, George Sr. was in the kitchen trying to soothe himself with an ice cream sandwich. And that's when he discovered a way to possibly slip by the sensors.",
+      "characters": [
+        "Narrator",
         "George Sr."
       ],
       "joke_types": [
-        "callback",
-        "character_comedy"
+        "visual_gag",
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Larry expressing frustration",
-      "punchline": "George Sr. finishing his sentence about the security system",
-      "craft_total": 6.63,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Everyone thinks George Sr. is in the bathroom ('in the can').",
+      "punchline": "He's actually in the kitchen eating an ice cream sandwich for comfort \u2014 a deeply undignified image for a supposedly powerful patriarch \u2014 and the ice cream sandwich somehow inspires his sensor-evasion plan.",
+      "craft_total": 7.26,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Another example of Larry's inability to sync with George Sr.'s intended words"
+      "is_callback": 0,
+      "explanation": "The image of the convicted fraudster patriarch soothing himself with an ice cream sandwich is perfectly bathetic. The causal connection (ice cream sandwich \u2192 sensor evasion plan) is wonderfully absurd."
     },
     {
-      "index": 37,
+      "index": 42,
       "text": "If mother sees this, she will blow a cow.",
       "characters": [
         "Buster"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "wordplay_pun"
       ],
-      "setup": "Buster worried about Lucille's reaction",
-      "punchline": "Mixes up 'blow a gasket' and 'have a cow'",
-      "craft_total": 6.81,
-      "impact_score": 6.33,
+      "setup": "Buster reacts to the train set (or possibly George Sr.'s sensor evasion apparatus) with concern about Lucille's reaction.",
+      "punchline": "'Blow a cow' is Buster's mangled version of 'blow a gasket' \u2014 a malapropism that reveals his childlike relationship with idioms and with Lucille.",
+      "craft_total": 7.79,
+      "impact_score": 7.17,
       "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Buster malapropism combining two common expressions incorrectly"
+      "explanation": "'Blow a cow' is a perfect Buster line \u2014 his mangled idiom is immediately identifiable as character-specific and funny on its own terms. The image it conjures is absurd. High character integration: only Buster would say this."
     },
     {
-      "index": 38,
-      "text": "Goody! Yeah. I do want to. Yea. I do want to. Goody.",
+      "index": 43,
+      "text": "Maybe we could build our Tiny Town together. Do you want to, Dad? \u2014 Buster had always wanted to do the same with Gob.",
       "characters": [
-        "Buster"
+        "Buster",
+        "Narrator"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "irony_sarcasm",
+        "reaction_beat"
       ],
-      "setup": "Buster excited about building model town with Gob",
-      "punchline": "Childish enthusiasm with repeated awkward phrasing",
-      "craft_total": 6.73,
-      "impact_score": 6.5,
+      "setup": "Gob enthusiastically agrees to build Tiny Town with Buster.",
+      "punchline": "The narrator reveals that Buster always wanted to do this WITH GOB \u2014 not with whoever he thinks he's bonding with (apparently the surrogate Larry, thinking it's George Sr.). The emotional misdirection is played completely straight.",
+      "craft_total": 7.63,
+      "impact_score": 6.83,
       "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Buster moment showing his childlike excitement and awkward speech patterns"
+      "explanation": "The reveal that Buster's emotional moment of connection (building with his 'dad') is actually happening with the wrong person (a hired surrogate, or possibly Gob himself through the surrogate confusion) is sad and funny simultaneously. The layered identity confusion is quintessential AD."
     },
     {
-      "index": 39,
+      "index": 44,
       "text": "Only Larry was disappointed. But he was such a pro you'd never know it.",
       "characters": [
         "Narrator"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "visual_gag"
+        "deadpan_understatement",
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Narrator praising Larry's professionalism",
-      "punchline": "Visual presumably shows Larry's obvious disappointment despite claim",
-      "craft_total": 6.98,
-      "impact_score": 6.17,
-      "quotability": 5.5,
+      "setup": "Buster and Gob are bonding emotionally over the train set.",
+      "punchline": "The narrator notes Larry's disappointment that he didn't get to participate in the Tiny Town bonding \u2014 while the 'such a pro you'd never know it' is ironic given Larry has been consistently terrible at his job.",
+      "craft_total": 7.71,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sarcastic narrator comment about Larry's obvious lack of professionalism"
+      "is_callback": 1,
+      "explanation": "The narrator's dry praise of Larry as 'such a pro' directly contradicts everything we've seen of Larry's ineptitude. The callback to the sarcasm-selling failure makes this land harder. Classic AD narrator irony."
     },
     {
-      "index": 40,
+      "index": 45,
       "text": "I shall be a bigger, hairier mole than the one on your inner left thigh.",
       "characters": [
         "Tobias"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "wordplay_pun",
+        "cringe_discomfort"
       ],
-      "setup": "Frank asking Tobias to be a mole (spy)",
-      "punchline": "Tobias's overly theatrical commitment and specific mole reference",
-      "craft_total": 7.27,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Frank (CIA agent) tells Tobias he needs him to be a 'mole' \u2014 meaning a spy infiltrating the Bluth family.",
+      "punchline": "Tobias, interpreting 'mole' as an animal or perhaps thinking of Frank's skin blemish, commits to being 'a bigger, hairier mole than the one on your inner left thigh' \u2014 a line that is both deeply weird and reveals uncomfortable knowledge of Frank's body.",
+      "craft_total": 8.57,
+      "impact_score": 8.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect Tobias over-the-top commitment with callback to earlier mole reference"
+      "explanation": "One of the episode's funniest lines. The triple meaning of 'mole' (spy/animal/skin growth) converges here in Tobias's uniquely inappropriate way. The specificity of 'inner left thigh' is perfect \u2014 it implies an intimacy with Frank that Tobias doesn't seem to register as strange. This is also a plant for Tobias's literal mole costume later. Highly quotable, deeply character-specific. Justifies a high craft score."
     },
     {
-      "index": 41,
-      "text": "!@%$# Tantamount.",
+      "index": 46,
+      "text": "Look! It's Malcolm in the Middle! In the middle of shooting, I guess. Oh, that's okay. It's more important to show how we make the show than actually make it.",
       "characters": [
-        "Actor"
+        "Tour guide",
+        "Rita",
+        "Michael"
       ],
       "joke_types": [
         "meta_self_referential",
-        "character_comedy"
+        "irony_sarcasm",
+        "observational"
       ],
-      "setup": "Actor frustrated about studio prioritizing tour over filming",
-      "punchline": "Breaking character to curse the studio by name",
-      "craft_total": 6.18,
-      "impact_score": 5.67,
+      "setup": "Michael and Rita's studio tour tram encounters a TV show filming in progress.",
+      "punchline": "The show being filmed is 'Malcolm in the Middle' (a Fox show, like Arrested Development) \u2014 and the observation that it's 'more important to show how we make the show than actually make it' is a meta-commentary on the studio tour format and possibly on reality TV/behind-the-scenes content.",
+      "craft_total": 6.96,
+      "impact_score": 6.67,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Meta joke about Hollywood business priorities interrupting creative work"
+      "explanation": "The Fox/Malcolm in the Middle name-drop is meta but not purely self-referential since it's a different show. The observation about showing the making of the show has some sharpness. Decent but not remarkable."
     },
     {
-      "index": 42,
-      "text": "- Well, what if I crash it? - That's half the fun.",
+      "index": 47,
+      "text": "!@%$# Tantamount.",
+      "characters": [
+        "Actor (Malcolm in the Middle)"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "observational",
+        "meta_self_referential"
+      ],
+      "setup": "The Tantamount Studios tour tram has interrupted the Malcolm in the Middle shoot.",
+      "punchline": "The child actor (implied) curses at the studio itself \u2014 delivering a bleeped profanity that serves as a dark joke about child actors and studio politics.",
+      "craft_total": 6.37,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The bleeped child-actor profanity is an efficient shock-comedy moment. Dark and quick. Not deeply crafted but lands well."
+    },
+    {
+      "index": 48,
+      "text": "They dropped off the package you sent, but I don't think I'm old enough for it. \u2014 Of course you are. I want you to have a little fun. You're not gonna break anything. \u2014 But of course, Michael thought he was talking about the train set. Not the extremely dangerous jet pack the boy had just found at the front door.",
+      "characters": [
+        "George Michael",
+        "Michael",
+        "Narrator"
+      ],
+      "joke_types": [
+        "misdirection",
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "George Michael calls Michael about the dangerous package delivered to the house.",
+      "punchline": "The narrator reveals the gap between what Michael thinks he's encouraging (playing with a train set) and what George Michael actually has (an extremely dangerous jet pack). Michael's reassurances are catastrophically wrong.",
+      "craft_total": 7.76,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The parallel phone call structure (each party thinking they're talking about something different) is a classic comedy device executed very well here. 'You're not gonna break anything' is perfectly ironic given what's about to happen. The dark subversion of parental encouragement being catastrophically misapplied is excellent."
+    },
+    {
+      "index": 49,
+      "text": "Well, what if I crash it? \u2014 That's half the fun.",
       "characters": [
         "George Michael",
         "Michael"
       ],
       "joke_types": [
-        "dark_subversive"
+        "misdirection",
+        "dark_subversive",
+        "setup_punchline"
       ],
-      "setup": "George Michael worried about crashing what he thinks is a train set",
-      "punchline": "Michael encouraging dangerous behavior not knowing it's a jet pack",
-      "craft_total": 6.89,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Dark dramatic irony - Michael unwittingly encouraging son to risk his life"
+      "setup": "George Michael expresses concern about crashing the package.",
+      "punchline": "Michael cheerfully says 'That's half the fun' \u2014 about a jet pack that could seriously injure or kill his son, because he thinks they're talking about a toy train.",
+      "craft_total": 7.69,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The absolute economy here is impressive \u2014 five words that are simultaneously wholesome advice about toy trains and recklessly dangerous advice about jet packs. Perfect ironic gap between intention and effect."
     },
     {
-      "index": 43,
-      "text": "Oh! Me!@%s are wet.",
+      "index": 50,
+      "text": "Michael had just noticed that Rita was wearing a suspicious bracelet.",
       "characters": [
-        "Rita"
+        "Narrator"
       ],
       "joke_types": [
-        "character_comedy"
+        "setup_punchline",
+        "misdirection"
       ],
-      "setup": "Dramatic confrontation in tunnel ride",
-      "punchline": "Rita's childish complaint about water instead of addressing serious situation",
-      "craft_total": 6.66,
-      "impact_score": 6.17,
+      "setup": "Michael notices Rita's bracelet in the Tunnel of Love, Indubitably.",
+      "punchline": "The bracelet says 'Mr. F' \u2014 which Michael interprets as evidence of espionage but is actually a Medical Research Foundation bracelet indicating she's an MRF (mentally retarded female). The word 'suspicious' is doing ironic work here.",
+      "craft_total": 7.98,
+      "impact_score": 7.5,
       "quotability": 6.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Rita moment - childish priorities during dramatic spy confrontation"
+      "explanation": "The 'Mr. F' bracelet is the episode's central McGuffin and misdirection device. The word 'suspicious' is perfectly ironic \u2014 the bracelet is medically informative, not espionage-related. Strong rewatch value as the entire episode recontextualizes."
     },
     {
-      "index": 44,
+      "index": 51,
+      "text": "You lied to me, Rita! You made me turn against my family. But it's over now.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Michael confronts Rita in the tunnel, believing she's a spy.",
+      "punchline": "Michael dramatically declares Rita 'made him turn against his family' \u2014 when in fact he turned against them the moment he met her, and his family routinely deserves to be turned against. The self-righteous indignation is deeply ironic.",
+      "craft_total": 6.33,
+      "impact_score": 5.75,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional character irony but not a standout comedic moment. The joke is in the dramatic wrongness of Michael's accusation given what we've seen. Plays more as plot beat than pure comedy."
+    },
+    {
+      "index": 52,
+      "text": "Oh! Me!@%s are wet.",
+      "characters": [
+        "Maeby"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "dark_subversive"
+      ],
+      "setup": "The chaos in the Tunnel of Love apparently involves water (possibly from the lava cauldron area).",
+      "punchline": "Maeby's bleeped complaint about her wet clothes is a quick character beat \u2014 she's a teenage executive dealing with real physical consequences of her bad decisions.",
+      "craft_total": 6.09,
+      "impact_score": 6.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick physical comedy beat, functional but not crafted. The bleeped profanity gets a laugh but it's a cheap mechanism."
+    },
+    {
+      "index": 53,
+      "text": "And Maeby received a call about the latest lava cauldron accident. Already? It's only been an hour.",
+      "characters": [
+        "Narrator",
+        "Maeby"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "deadpan_understatement",
+        "callback"
+      ],
+      "setup": "Earlier, Maeby claimed she had the lava cauldron covered.",
+      "punchline": "One hour later there's already another accident \u2014 Maeby's 'having it covered' was worthless. Her 'Already? It's only been an hour' implies previous accidents happened on a longer timeline, making this one unusually quick.",
+      "craft_total": 7.93,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "'Already? It's only been an hour' is a perfect deadpan line that implies a whole history of lava cauldron accidents and makes this new one funnier by comparison. The implication is that accidents happen routinely \u2014 this one is just faster than usual. Excellent dark comedy."
+    },
+    {
+      "index": 54,
+      "text": "I'm gonna lose this job. Maybe I should let Mort take me out to dinner.",
+      "characters": [
+        "Maeby"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Maeby faces losing her fraudulently obtained studio executive position.",
+      "punchline": "She considers letting an older man (Mort) take her out to dinner \u2014 implying a transactional relationship to save her career, from a teenage girl. The dark comedy of a kid navigating adult corruption is central to Maeby's arc.",
+      "craft_total": 6.95,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dark comedy from Maeby's situation. The joke is in the implicit transactionality, which is funny given she's a teenager but relies on audience knowledge of Maeby's ongoing studio storyline."
+    },
+    {
+      "index": 55,
+      "text": "Rita set me up. She set us all up. This beautiful, funny, brilliant woman was a spy. Everybody was right. It was too good to be true. And I... am turning her in. Let me tell you something else. I would not want to be the next woman who tries to fool me.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "setup_punchline"
+      ],
+      "setup": "Michael delivers a dramatic speech about being fooled by Rita.",
+      "punchline": "'I would not want to be the next woman who tries to fool me' \u2014 Michael's self-righteous warning is immediately undercut by the audience's knowledge that he's still being fooled (Rita is not a spy).",
+      "craft_total": 7.1,
+      "impact_score": 6.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's dramatic confidence at the exact moment he's most wrong is good ironic character comedy. The warning about future women fools is foreshadowing AND a punchline simultaneously."
+    },
+    {
+      "index": 56,
       "text": "Well, that was a freebie.",
       "characters": [
         "Maeby"
       ],
       "joke_types": [
         "deadpan_understatement",
+        "character_comedy",
         "dark_subversive"
       ],
-      "setup": "Michael just gave impassioned speech about being fooled by women",
-      "punchline": "Maeby's casual response treating his emotional moment as throwaway",
-      "craft_total": 7.58,
-      "impact_score": 7.67,
-      "quotability": 8.0,
+      "setup": "Michael delivers his dramatic speech about Rita fooling him, in front of Maeby.",
+      "punchline": "Maeby's 'Well, that was a freebie' implies she regularly bilks Michael or others but this particular lecture came at no cost to her. The casualness about manipulation is Maeby in a nutshell.",
+      "craft_total": 7.44,
+      "impact_score": 6.83,
+      "quotability": 8.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan response deflating Michael's dramatic moment with business casual terminology"
+      "explanation": "Five words that do extraordinary character work. 'That was a freebie' reveals Maeby's entire transactional worldview \u2014 she categorizes Michael's dramatic moral speech as a commodity with a price she didn't have to pay this time. Maximum economy, perfect character integration."
     },
     {
-      "index": 45,
-      "text": "The jet pack... had come with an instructional DVD that seemed to confuse more than clarify.",
+      "index": 57,
+      "text": "George Michael, meanwhile, was trying to solve a mystery of his own. The jet pack had come with an instructional DVD that seemed to confuse more than clarify.",
+      "characters": [
+        "Narrator",
+        "George Michael"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "deadpan_understatement",
+        "absurdist"
+      ],
+      "setup": "George Michael has found an extremely dangerous jet pack and is trying to figure out how to use it.",
+      "punchline": "The instructional DVD 'seemed to confuse more than clarify' \u2014 an understated note about the absurdity of a teenager trying to learn jet pack operation from a bad instructional video.",
+      "craft_total": 7.15,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The image of a teenager confusedly studying a jet pack instruction video is inherently absurd. The narrator's deadpan note about the DVD's quality is well-placed."
+    },
+    {
+      "index": 58,
+      "text": "And it did seem like a lot of work for a little payoff.",
       "characters": [
         "Narrator"
       ],
       "joke_types": [
-        "observational"
-      ],
-      "setup": "George Michael trying to understand the jet pack",
-      "punchline": "Narrator's observation about unhelpful instructions",
-      "craft_total": 6.14,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Relatable observation about confusing product instructions. Functional but not exceptional."
-    },
-    {
-      "index": 46,
-      "text": "And it did seem like a lot of work... for a little payoff. - Have fun! - Have fun.",
-      "characters": [
-        "Narrator",
-        "DVD"
-      ],
-      "joke_types": [
-        "meta_self_referential",
+        "deadpan_understatement",
         "visual_gag"
       ],
-      "setup": "George Michael struggling with jet pack instructions",
-      "punchline": "Narrator's commentary applies to both jet pack and the show itself",
-      "craft_total": 6.87,
-      "impact_score": 6.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant meta-commentary that works on multiple levels - jet pack instructions and show's complexity"
-    },
-    {
-      "index": 47,
-      "text": "And it did seem like a lot of work... for a little payoff. Have fun! Have fun.",
-      "characters": [
-        "Narrator",
-        "DVD"
-      ],
-      "joke_types": [
-        "irony_sarcasm"
-      ],
-      "setup": "Narrator noting the work-to-payoff ratio of the jet pack",
-      "punchline": "DVD's enthusiastic encouragement contrasting with the reality",
-      "craft_total": 6.89,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "George Michael struggles with the jet pack's instruction DVD.",
+      "punchline": "The narrator's assessment 'a lot of work for a little payoff' applies to learning to use a jet pack from a bad DVD \u2014 but also darkly foreshadows that the actual payoff (George Michael flying) will be catastrophic.",
+      "craft_total": 6.81,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good ironic contrast between marketing promises and actual experience."
+      "explanation": "Understated narrator foreshadowing. The economy is high but the joke itself is fairly light \u2014 more of a transitional beat than a major laugh."
     },
     {
-      "index": 48,
-      "text": "We're like a couple of girls on the last day of camp.",
+      "index": 59,
+      "text": "Where the hell am I? \u2014 He was actually somewhere between the linen closet and the guest room.",
       "characters": [
-        "Gob"
+        "George Sr.",
+        "Narrator"
+      ],
+      "joke_types": [
+        "absurdist",
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "George Sr. is lost inside the walls of the model home.",
+      "punchline": "The narrator provides an unhelpfully precise location: 'between the linen closet and the guest room' \u2014 which tells us exactly where he is within the walls but is also funny as a domestic-scale description of a fugitive's predicament.",
+      "craft_total": 7.43,
+      "impact_score": 6.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedy comes from the contrast between George Sr.'s existential confusion and the narrator's extremely domestic precision. 'Between the linen closet and the guest room' is funny because it's such a mundane way to describe a fugitive patriarch's location."
+    },
+    {
+      "index": 60,
+      "text": "I'm really glad that we're doing this together. I've never felt so close to you. \u2014 Oh! I feel the same way. \u2014 He's crying now. \u2014 Oh, God, look at us. We're like a couple of girls on the last day of camp.",
+      "characters": [
+        "Buster",
+        "Gob",
+        "Narrator"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Buster and Gob are having an unexpected emotional bonding moment over the train set.",
+      "punchline": "Gob compares them to 'a couple of girls on the last day of camp' \u2014 which is both self-aware about the sentimentality and a typically Gob-ish gendered dismissal of his own feelings.",
+      "craft_total": 7.36,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The unexpected sincerity of Buster and Gob's bonding is played well, and Gob's 'girls on the last day of camp' line is a good character-specific deflection of genuine feeling. Warm comedy."
+    },
+    {
+      "index": 61,
+      "text": "We need to capture George Sr. \u2014 Capture George Sr.? What... Is that what you hired me to do? \u2014 You didn't realize that? \u2014 No. But it does make perfect sense. I have played him before.",
+      "characters": [
+        "Frank (CIA)",
+        "Tobias"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "misdirection",
+        "irony_sarcasm"
       ],
-      "setup": "Gob and Buster having emotional moment building model town",
-      "punchline": "Gob's surprisingly tender and specific comparison",
-      "craft_total": 7.14,
-      "impact_score": 7.0,
+      "setup": "Frank reveals to Tobias that the 'mole' mission is actually to capture George Sr.",
+      "punchline": "Tobias is surprised \u2014 he thought he was being hired as an actor \u2014 but immediately rationalizes it: 'I have played him before.' His logic is that acting experience qualifies him to capture the real person.",
+      "craft_total": 7.99,
+      "impact_score": 7.67,
       "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Unexpected emotional vulnerability from Gob with oddly specific feminine comparison"
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Tobias's actor-logic ('I played him, therefore I can capture him') is a perfect expression of his delusional relationship with his craft. The Scandalmakers callback adds depth. 'It does make perfect sense' as a straight-faced reaction to an absurd situation is great Tobias."
     },
     {
-      "index": 49,
+      "index": 62,
       "text": "He had, in the poorly narrated reality series, Scandalmakers.",
       "characters": [
         "Narrator"
       ],
       "joke_types": [
         "meta_self_referential",
-        "callback"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Narrator explaining Tobias has played George Sr. before",
-      "punchline": "Self-aware dig at show's own poor quality",
-      "craft_total": 7.35,
-      "impact_score": 6.75,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Self-deprecating meta-humor about show's own production quality"
+      "setup": "Tobias says he's played George Sr. before.",
+      "punchline": "The narrator confirms this but characterizes Scandalmakers as 'poorly narrated' \u2014 the narrator of Arrested Development critiquing another show's narrator.",
+      "craft_total": 8.07,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The narrator self-referentially critiquing another show's narrator quality is a wonderfully meta joke. 'Poorly narrated' is a casual aside that manages to be both a callback and a meta-commentary. The economy (three words) for the amount of comedy generated is impressive."
     },
     {
-      "index": 50,
-      "text": "Ishiro said, 'I am reassured. And they treat us with respect this time.'",
+      "index": 63,
+      "text": "It's gonna be tough to work that into the character and it's going to fight the costume I rented, but I didn't take six weeks of improv classes at the Groundlings for nothing.",
       "characters": [
-        "Narrator"
+        "Tobias"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "callback"
+        "character_comedy",
+        "cringe_discomfort",
+        "irony_sarcasm"
       ],
-      "setup": "Japanese investors seeing the fake model city",
-      "punchline": "Ironic comment about respect after all the racist behavior",
-      "craft_total": 6.94,
-      "impact_score": 6.75,
+      "setup": "Tobias agrees to go undercover as a 'mole' to capture his own father-in-law.",
+      "punchline": "He frames the entire covert intelligence operation as an acting challenge \u2014 worried about character consistency and costume conflicts. The Groundlings reference adds to the comedy of his absurd self-seriousness.",
+      "craft_total": 7.91,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Tobias treating a CIA operation as an improv challenge is character-perfect comedy. The specificity of 'six weeks of improv classes at the Groundlings' is funny in its humility \u2014 the Groundlings is prestigious but six weeks is barely anything."
+    },
+    {
+      "index": 64,
+      "text": "but if you stand absolutely still right there and just squint in-into the light, and behold, Sudden Hill!",
+      "characters": [
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "setup_punchline"
+      ],
+      "setup": "Gob is presenting the 'Tiny Town' miniature to the Japanese investors, telling them the roads are out so they can't visit in person.",
+      "punchline": "Gob directs the investors to squint into the light to see 'Sudden Hill' \u2014 the absurd presentation of a tiny model as a real construction site works as comedy through sheer audacity.",
+      "craft_total": 7.38,
+      "impact_score": 7.17,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Ironic that they feel respected after all the Godzilla impressions and squinting comments"
+      "explanation": "The payoff on the Tiny Town plan is satisfying. 'Sudden Hill' as a property name is funny, and Gob's salesmanship confidence in a transparently absurd scheme is perfectly in character."
     },
     {
-      "index": 51,
-      "text": "Motoyoshi said, 'I thought the woman was pretending as a monster... but she was just out of vodka.'",
+      "index": 65,
+      "text": "Motoyoshi said, 'I thought the woman was pretending as a monster but she was just out of vodka.'",
       "characters": [
         "Narrator"
       ],
       "joke_types": [
         "callback",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Japanese investor's observation about Lucille",
-      "punchline": "Connecting her earlier monster noise to alcohol withdrawal rather than racism",
-      "craft_total": 7.6,
-      "impact_score": 7.5,
-      "quotability": 7.5,
+      "setup": "The Godzilla/Lucille's vodka joke from earlier in the episode.",
+      "punchline": "The Japanese investor has now also processed the Lucille vodka incident \u2014 and interpreted it as monster-related performance art \u2014 completing the full comedic arc of the Godzilla sequence.",
+      "craft_total": 8.57,
+      "impact_score": 8.67,
+      "quotability": 9.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Perfect payoff to earlier gag, showing outsider's perspective on Lucille's alcoholism"
+      "explanation": "This is one of the episode's best jokes. The callback to the Lucille vodka moment is perfect: the Japanese investor observed the same thing but arrived at the most charitable possible interpretation (monster performance art). The gap between 'pretending as a monster' and 'just out of vodka' is enormous and the investor's generous reading is funnier than the original joke. Near-flawless callback construction."
     },
     {
-      "index": 52,
-      "text": "- I'm a mole! - Not the village!",
-      "characters": [
-        "Tobias",
-        "Gob"
-      ],
-      "joke_types": [
-        "escalation",
-        "physical_slapstick"
-      ],
-      "setup": "Tobias appearing in mole costume during presentation",
-      "punchline": "Accidentally destroying the model village they just built",
-      "craft_total": 7.48,
-      "impact_score": 7.83,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect escalation where multiple plot threads collide destructively"
-    },
-    {
-      "index": 53,
-      "text": "Hard to breathe in this thing. It's really hot. I'm sweating all over myself. I can't stop this thing!",
-      "characters": [
-        "George Michael"
-      ],
-      "joke_types": [
-        "escalation",
-        "physical_slapstick"
-      ],
-      "setup": "George Michael flying in jet pack",
-      "punchline": "Panicked complaints while supposedly having 'fun'",
-      "craft_total": 6.68,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Payoff to jet pack setup with George Michael's typical anxiety in extreme situation"
-    },
-    {
-      "index": 54,
-      "text": "- You're blowing my audition! - I ache with embarrassment.",
-      "characters": [
-        "Tobias",
-        "Gob"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Chaos destroying the presentation",
-      "punchline": "Tobias and Gob's theatrical responses to disaster",
-      "craft_total": 6.93,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect character-specific responses to disaster - Tobias theatrical, Gob dramatic"
-    },
-    {
-      "index": 55,
-      "text": "Oh, my God. Tobias F\u00fcnke. You're Mr. F.",
+      "index": 66,
+      "text": "Let's go ahead and close the curtains, and not accept any money while we're ahead.",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "character_comedy",
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Mystery of who Mr. F is throughout episode",
-      "punchline": "Tobias F\u00fcnke's initials spell out the spy code name",
-      "craft_total": 8.17,
+      "setup": "The Tiny Town scheme has miraculously worked and the investors seem reassured.",
+      "punchline": "Michael recommends closing the curtains and NOT taking any money \u2014 recognizing that accepting money from the deluded investors would be fraud, but framing it as 'while we're ahead' rather than as the ethical reason.",
+      "craft_total": 7.32,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's legal/ethical instinct expressed as game-theory ('while we're ahead') rather than morality is a nice character touch. Good economy."
+    },
+    {
+      "index": 67,
+      "text": "So, as you can see, any rumor of a mole problem is completely untrue. But, unfortunately, this was just as Tobias appeared in his rented mole outfit.",
+      "characters": [
+        "Narrator",
+        "Tobias"
+      ],
+      "joke_types": [
+        "callback",
+        "visual_gag",
+        "setup_punchline"
+      ],
+      "setup": "Michael is assuring the Japanese investors there is no mole problem.",
+      "punchline": "Tobias immediately appears in a rented mole costume, destroying the assurance. The 'mole' wordplay (spy mole / animal mole / burrowing mole problem) converges perfectly at this moment.",
+      "craft_total": 8.83,
+      "impact_score": 9.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the episode's structural comedy masterpiece. Three simultaneous meanings of 'mole' (spy, burrowing animal, skin growth) have been building all episode and they all converge at the exact worst moment. The timing of Tobias appearing in a rented mole costume precisely as Michael denies a mole problem is structurally flawless. The 'rented' qualifier is the perfect comedy detail \u2014 Tobias committed to the bit but only so far. Justifies a 9+ craft score."
+    },
+    {
+      "index": 68,
+      "text": "I'm a mole! \u2014 Not the village! \u2014 Families can come... Ow! Ow! \u2014 I'm very particular about building codes. \u2014 The water tower.",
+      "characters": [
+        "Tobias",
+        "Gob",
+        "others"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "visual_gag",
+        "escalation"
+      ],
+      "setup": "Tobias in his mole costume charges into the Tiny Town miniature.",
+      "punchline": "Tobias destroys the miniature village ('Not the village!'), knocking over the water tower that Gob and Buster bonded over building ('The water tower'), while screaming 'I'm very particular about building codes' \u2014 a non-sequitur that implies the mole character cares about zoning.",
+      "craft_total": 7.84,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The Tiny Town destruction is a great escalating physical comedy sequence. 'I'm very particular about building codes' is a bizarrely specific line that suggests Tobias has committed to a mole character who also has opinions on construction \u2014 absurdist character detail. The callback to Buster and Gob's bonding water tower makes the destruction emotionally resonant and funnier."
+    },
+    {
+      "index": 69,
+      "text": "Families can come... Ow! Ow! \u2014 I'm very particular about building codes. \u2014 The water tower. \u2014 And this water tower does not pass muster.",
+      "characters": [
+        "Tobias",
+        "Gob"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "Tobias in the mole costume is crashing through Tiny Town",
+      "punchline": "Gob, indignant about the destruction of his miniature water tower, invokes 'building codes' and declares the tower 'does not pass muster' \u2014 treating the demolition of a prop as a legitimate civic concern",
+      "craft_total": 7.57,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Gob's righteous indignation about miniature building codes during a chaotic CIA infiltration is excellent character comedy. The absurdist civic concern amid chaos works because of Gob's complete sincerity."
+    },
+    {
+      "index": 70,
+      "text": "Lucille! \u2014 Who can save our village? \u2014 Michael! \u2014 As it turned out, it was George Michael who had finally gotten his grandfather's jet pack to work.",
+      "characters": [
+        "Narrator",
+        "Gob",
+        "Lucille"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "escalation",
+        "misdirection"
+      ],
+      "setup": "The Tiny Town is being destroyed and family members cry out for Michael to save it.",
+      "punchline": "The narrator reveals it was actually George Michael \u2014 on a jet pack \u2014 who 'saves' (i.e., catastrophically intervenes in) the situation, making everything worse.",
+      "craft_total": 8.12,
       "impact_score": 8.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The convergence of all the episode's plot threads \u2014 the jet pack, the Tiny Town, the mole costume \u2014 into one chaotic climax is well-constructed. The misdirection of naming 'Michael' as the savior before revealing it's George Michael is a nice beat."
+    },
+    {
+      "index": 71,
+      "text": "Hard to breathe in this thing. It's really hot. I'm sweating all over myself.",
+      "characters": [
+        "George Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement",
+        "physical_slapstick"
+      ],
+      "setup": "George Michael is flying a jet pack over the Tiny Town catastrophe.",
+      "punchline": "His main complaints are about comfort and temperature \u2014 not about the fact that he is piloting a dangerous jet pack uncontrollably over a group of people. The mundane complaints in an extreme situation are perfectly George Michael.",
+      "craft_total": 7.72,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "George Michael complaining about heat and breathing while riding a jet pack out of control is perfect \u2014 it's exactly how his earnest, anxious character would process this situation. The mundane-in-the-extreme is classic character comedy."
+    },
+    {
+      "index": 72,
+      "text": "I can't stop this thing! \u2014 You're blowing my audition! \u2014 I ache with embarrassment.",
+      "characters": [
+        "George Michael",
+        "Tobias"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort",
+        "escalation"
+      ],
+      "setup": "George Michael is flying uncontrollably on the jet pack; Tobias is in his mole costume.",
+      "punchline": "Tobias screams 'You're blowing my audition!' \u2014 he still thinks this is a theatrical performance and that George Michael's jet pack is ruining his acting career. 'I ache with embarrassment' is his theatrical response to the chaos.",
+      "craft_total": 8.14,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'You're blowing my audition!' during a jet pack disaster is peak Tobias \u2014 his delusion that everything is theater and his primary concern in a physical catastrophe is his acting career. 'I ache with embarrassment' as an affected theatrical response adds perfectly. High character integration."
+    },
+    {
+      "index": 73,
+      "text": "The Japanese were never to be heard from again.",
+      "characters": [
+        "Narrator"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "dark_subversive",
+        "irony_sarcasm"
+      ],
+      "setup": "The entire Tiny Town scheme to reassure Japanese investors has just been destroyed by a mole costume and a jet pack.",
+      "punchline": "The narrator's matter-of-fact 'The Japanese were never to be heard from again' disposes of the entire investor subplot in nine words \u2014 treating a business catastrophe as a brief unfortunate footnote.",
+      "craft_total": 7.92,
+      "impact_score": 7.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfect narrator deadpan. 'Never to be heard from again' applied to a group of business investors is darkly funny \u2014 the casualness of the dismissal, the finality, and the implied complete destruction of the Bluth company's Japanese investment all compressed into one sentence. Extremely quotable and economical."
+    },
+    {
+      "index": 74,
+      "text": "Okay, that's no surprise. George Michael? \u2014 Dad, I-I'm sorry. I can't fly it very well, all right? I think I would rather have the Welch.",
+      "characters": [
+        "Michael",
+        "George Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael surveys the devastation caused by George Michael's jet pack flight.",
+      "punchline": "George Michael apologizes for his flying ability and says he'd rather have 'the Welch' \u2014 the Jack Welch business suit he thought was a bad birthday gift \u2014 now that he's experienced the jet pack.",
+      "craft_total": 7.82,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The callback to the opening Jack Welch suit is well-placed \u2014 George Michael's preference for a boring business suit over a jet pack is perfect character comedy and completes the birthday gift arc neatly."
+    },
+    {
+      "index": 75,
+      "text": "I didn't buy you that. I bought you the train set, which you guys just destroyed.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "misdirection",
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "George Michael thanks Michael for the jet pack (the dangerous package).",
+      "punchline": "Michael reveals he bought the train set \u2014 not the jet pack \u2014 completing the miscommunication chain and revealing the full absurdity of the situation.",
+      "craft_total": 8.15,
+      "impact_score": 8.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The reveal that closes the phone call miscommunication is satisfying. The train set being destroyed (by Tobias's mole rampage) adds a dark irony \u2014 Michael bought a wholesome gift that was destroyed by the same chaos triggered by the dangerous gift he didn't buy."
+    },
+    {
+      "index": 76,
+      "text": "Did you keep the receipt?",
+      "characters": [
+        "George Michael"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Michael tells George Michael the train set he bought has been destroyed.",
+      "punchline": "George Michael immediately asks 'Did you keep the receipt?' \u2014 echoing the exact receipt/deduction conversation from the episode's opening, completing the receipt running gag.",
+      "craft_total": 8.59,
+      "impact_score": 8.75,
       "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Brilliant revelation that character's name was the answer all along - perfect AD misdirection"
+      "explanation": "Five words that close the episode's receipt running gag perfectly. George Michael asking about the receipt of a destroyed train set \u2014 in the middle of a jet pack disaster \u2014 shows that (1) the apple doesn't fall far, (2) the Bluth family's financial pathology is generational, and (3) the callback structure is immaculate. The economy is perfect (five words), the character integration is perfect (only a Bluth would ask this), and the timing couldn't be better. One of the episode's top jokes."
     },
     {
-      "index": 56,
-      "text": "No, I'm not, Mother. I mean lover. - I like making love to Mother. - I mean lover!",
+      "index": 77,
+      "text": "What is that? It's feedback. Is someone else wired? \u2014 Oh, that's me. My friend Frank wired me.",
+      "characters": [
+        "Michael",
+        "Tobias"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "In the aftermath of the chaos, audio feedback is heard.",
+      "punchline": "Tobias reveals Frank (the CIA agent) wired him \u2014 meaning the CIA has been listening to everything, including the Tiny Town scheme, the Godzilla bit, and all the family's confessions. Tobias's casual revelation is devastating.",
+      "craft_total": 7.1,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The revelation that Tobias was wired the whole time is a good payoff on the CIA/CAA confusion. The casualness of Tobias saying 'Oh, that's me' is perfectly oblivious."
+    },
+    {
+      "index": 78,
+      "text": "Oh, my God. Tobias F\u00fcnke. You're Mr. F. Which means that man was Rita's uncle. What have I done?",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "irony_sarcasm",
+        "misdirection"
+      ],
+      "setup": "Michael discovers via the wire feedback that Tobias is 'Mr. F' (F\u00fcnke).",
+      "punchline": "The entire 'Mr. F' spy mystery resolves to Tobias F\u00fcnke \u2014 not a spy, just a hapless actor. The 'Mr. F' stands for F\u00fcnke, not a secret codename. Michael's dramatic 'What have I done?' is the straight-man reaction to his own paranoid mistake.",
+      "craft_total": 8.26,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the episode's central revelation and comedic payoff. 'Mr. F' = Tobias F\u00fcnke is the perfect resolution: it's obvious in retrospect, impossible to predict on first viewing, and recontextualizes the entire episode. The episode title, the failing movie, the spy mystery, Maeby's grades, the bracelet \u2014 all of it collapses into Tobias's last name. This is premium Arrested Development construction. Justifies a high craft score."
+    },
+    {
+      "index": 79,
+      "text": "I have to get this suit back.",
+      "characters": [
+        "Tobias"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael has just had the devastating realization that he reported Rita to the CIA based on a total misunderstanding.",
+      "punchline": "Tobias's only concern is returning his rented mole costume. The contrast between Michael's emotional crisis and Tobias's logistics is perfect.",
+      "craft_total": 7.98,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Five words of pure character comedy. Tobias's priority of getting the costume deposit back while Michael has an emotional breakdown is perfect \u2014 and the detail that it's a rental (not owned) adds to the comedy. Maximum economy."
+    },
+    {
+      "index": 80,
+      "text": "They destroyed our town. \u2014 But they can't take away our memories.",
+      "characters": [
+        "Gob",
+        "Buster"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "cringe_discomfort"
+      ],
+      "setup": "Buster and Gob look at the ruins of their Tiny Town.",
+      "punchline": "Gob's earnest 'But they can't take away our memories' is sincere \u2014 delivered by a man who typically has no emotional depth \u2014 about a miniature fake town they built for fraud.",
+      "craft_total": 7.88,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The unexpected sincerity from Gob about memories of a fraudulent miniature is touching and funny simultaneously. The contrast between what they built (a fake city) and the real emotional bond they formed doing it is bittersweet comedy."
+    },
+    {
+      "index": 81,
+      "text": "Oh! I've had... the time of my life. \u2014 I think he's being sarcastic, Gob. \u2014 No, I'm not, Mother. I mean lover.",
+      "characters": [
+        "Buster",
+        "Lucille",
+        "Gob"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort",
+        "running_gag"
+      ],
+      "setup": "Buster enthusiastically declares he's had 'the time of his life' \u2014 which Lucille interprets as sarcastic.",
+      "punchline": "Buster corrects 'Mother' to 'lover' \u2014 the eternal Buster/Lucille dynamic in one horrifying slip. The Buster/Lucille quasi-incestuous codependency running gag lands hard here.",
+      "craft_total": 8.39,
+      "impact_score": 8.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The Mother/lover slip is one of the most reliable running gags in the series and this is a solid instance. The cringe discomfort of Buster sincerely correcting 'Mother' to 'lover' in front of Gob is maximum character-specific comedy."
+    },
+    {
+      "index": 82,
+      "text": "I like making love to Mother. \u2014 I mean lover!",
       "characters": [
         "Buster"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "running_gag",
+        "escalation"
       ],
-      "setup": "Buster accidentally calling Gob 'Mother'",
-      "punchline": "Making it infinitely worse with 'making love to Mother' clarification",
-      "craft_total": 7.37,
-      "impact_score": 7.83,
-      "quotability": 8.0,
+      "setup": "Buster already slipped with 'Mother/lover' \u2014 now tries to correct himself.",
+      "punchline": "His correction attempt makes it worse: 'I like making love to Mother' before catching himself \u2014 the escalation of the slip into explicit territory is perfectly uncomfortable.",
+      "craft_total": 7.78,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect escalation where Buster's attempt to clarify makes everything infinitely worse"
+      "is_callback": 1,
+      "explanation": "The escalation of the Mother/lover error into 'I like making love to Mother' before catching himself is a perfect cringe escalation. Character integration is near-perfect \u2014 only Buster could make this mistake repeatedly in the same breath."
     },
     {
-      "index": 57,
+      "index": 83,
       "text": "It took some idiot parrot man with a camera in his hat to bring us together.",
       "characters": [
         "Gob"
       ],
       "joke_types": [
         "character_comedy",
-        "callback"
+        "absurdist",
+        "deadpan_understatement"
       ],
-      "setup": "Gob reflecting on bonding with Buster",
-      "punchline": "Insults Larry while acknowledging the positive outcome",
-      "craft_total": 7.3,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Gob reflects on how the Larry surrogate situation led to his bonding with Buster.",
+      "punchline": "'Parrot man with a camera in his hat' is Gob's characterization of Larry \u2014 a description that is somehow both accurate and deeply strange, summarizing the entire surrogate subplot in one absurd image.",
+      "craft_total": 6.9,
+      "impact_score": 6.17,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Typical Gob - can't express gratitude without also being insulting"
+      "is_callback": 0,
+      "explanation": "'Parrot man with a camera in his hat' is Gob's wonderfully wrong but somehow apt description of Larry (an earpiece-wearing surrogate). The specificity of 'parrot man' is great \u2014 Gob sees the earpiece setup as similar to a parrot on a shoulder, a ventriloquist's dummy, which is actually not a bad metaphor."
     },
     {
-      "index": 58,
+      "index": 84,
       "text": "But even a pro like Larry has a breaking point.",
       "characters": [
         "Narrator"
       ],
       "joke_types": [
         "irony_sarcasm",
-        "visual_gag"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Continued mockery of Larry's 'professional' acting",
-      "punchline": "Larry finally breaking character and leaving",
-      "craft_total": 6.95,
-      "impact_score": 6.25,
+      "setup": "Larry has been praised sarcastically as a 'pro' throughout the episode.",
+      "punchline": "The narrator notes 'even a pro like Larry has a breaking point' \u2014 implying Larry is finally expressing genuine emotion after his professional mask slips. The irony is that Larry has been terrible throughout.",
+      "craft_total": 7.34,
+      "impact_score": 6.5,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Satisfying conclusion to the Larry subplot, good payoff to running gag."
+      "explanation": "The callback to the earlier Larry-as-pro irony lands well here. The reveal of Larry's breaking point is a good payoff on his consistent ineptitude."
     },
     {
-      "index": 59,
-      "text": "- MRF? What's that? - Mentally retarded female.",
+      "index": 85,
+      "text": "Marry me. \u2014 What? \u2014 Let me marry you. You can get a green card, you can stay and we can just see if this works, you know? It sounds crazy, but this will give us a chance to get away from both of our families and see if this works. Might be fun.",
       "characters": [
-        "CIA Agents"
+        "Michael",
+        "Rita"
       ],
       "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
         "dark_subversive"
       ],
-      "setup": "CIA agents discussing Rita's classification",
-      "punchline": "Reveals Rita's true condition, recontextualizing entire relationship",
-      "craft_total": 8.15,
-      "impact_score": 9.0,
-      "quotability": 7.0,
+      "setup": "Rita is about to leave England with her uncle. Michael has just realized he was completely wrong about her.",
+      "punchline": "Michael proposes marriage as a solution \u2014 framing it as 'might be fun' (returning to the episode's fun theme) and as an escape from 'both of our families,' which is ironic given Rita's 'family' is her guardian uncle and Michael's is the Bluth disaster.",
+      "craft_total": 7.14,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Massive revelation that recontextualizes Rita's entire character and all her childish behavior"
+      "is_callback": 1,
+      "explanation": "More of a plot moment than a pure comedy beat, but the absurdity of Michael proposing marriage after knowing Rita for a short time while believing her to be a spy is inherently funny. The 'might be fun' callback is nice but the scene plays more dramatically than comedically."
     },
     {
-      "index": 60,
-      "text": "- That explains what she's doing with him. - And the hats.",
+      "index": 86,
+      "text": "Yes, yes, yes! But let's go right now, okay? Before my uncle gets out of the shower for some more cigarettes.",
       "characters": [
-        "CIA Agents"
+        "Rita"
       ],
       "joke_types": [
-        "callback",
-        "character_comedy"
+        "character_comedy",
+        "misdirection",
+        "absurdist"
       ],
-      "setup": "Agents explaining Rita's condition",
-      "punchline": "Casual mention of her hat collection as evidence of mental disability",
-      "craft_total": 6.9,
+      "setup": "Rita enthusiastically agrees to Michael's marriage proposal.",
+      "punchline": "'Before my uncle gets out of the shower for some more cigarettes' \u2014 a deeply strange detail that Rita delivers completely naturally. An uncle who showers and then goes for cigarettes is an oddly specific and funny image.",
+      "craft_total": 7.25,
       "impact_score": 6.67,
       "quotability": 6.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Retroactively makes innocent detail sinister - her hats were indicators of her condition"
+      "is_callback": 0,
+      "explanation": "The specific detail of the cigarettes-after-shower uncle ritual is funny and character-revealing \u2014 Rita is used to navigating around her uncle's unpredictable routine, suggesting a caretaking relationship. Also an MRF hint (the specific, slightly strange observation)."
     },
     {
-      "index": 61,
-      "text": "- What's that? - A prize. A lovely, lovely prize.",
+      "index": 87,
+      "text": "Don't even think about it, Jay. She's an MRF. \u2014 MRF? What's that? \u2014 Mentally retarded female. \u2014 That explains what she's doing with him. And the hats.",
       "characters": [
-        "Rita",
-        "Michael"
+        "CIA agent",
+        "Jay",
+        "another agent"
       ],
       "joke_types": [
-        "dark_subversive",
-        "irony_sarcasm"
+        "setup_punchline",
+        "misdirection",
+        "dark_subversive"
       ],
-      "setup": "Michael and Rita starting new life together",
-      "punchline": "Rita's childish excitement about marriage certificate as 'prize'",
-      "craft_total": 7.05,
-      "impact_score": 6.83,
-      "quotability": 7.0,
+      "setup": "CIA agents observing Rita and Michael are apparently interested in recruiting Rita.",
+      "punchline": "The reveal that Rita is an 'MRF' (Mentally Retarded Female) \u2014 and that this 'explains what she's doing with him' (dating Michael) \u2014 is the episode's central twist. 'And the hats' as an afterthought detail is perfect.",
+      "craft_total": 8.91,
+      "impact_score": 9.5,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's climactic reveal \u2014 Rita's entire arc recontextualizes perfectly. Every line she's delivered ('I won't tattle,' 'do you know any other songs,' 'and the hats') clicks into place. The throwaway 'And the hats' as an additional confirming detail is perfectly calibrated \u2014 understated and devastating. This is the kind of layered revelation that defines Arrested Development at its best. Justifies a 9+ craft score. The full impact is only felt on rewatch when every Rita moment becomes a crystal-clear tell."
+    },
+    {
+      "index": 88,
+      "text": "Oh, my God! She's gonna marry him.",
+      "characters": [
+        "CIA agent"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "setup_punchline"
+      ],
+      "setup": "CIA agents have just established Rita is mentally disabled and Michael is about to marry her.",
+      "punchline": "The CIA agent's horrified reaction \u2014 not at a national security threat, but at Michael's romantic situation \u2014 is the button on the reveal.",
+      "craft_total": 7.07,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark irony as Rita treats serious legal document like game show prize, given her condition"
+      "explanation": "A solid button on the reveal. The CIA agent's concern being for Michael rather than national security is a good ironic inversion. The economy is strong."
+    },
+    {
+      "index": 89,
+      "text": "George Sr., disoriented in the walls, almost makes contact with a new mole. \u2014 Not that one. Wait for it.",
+      "characters": [
+        "Narrator",
+        "George Sr."
+      ],
+      "joke_types": [
+        "running_gag",
+        "visual_gag",
+        "wordplay_pun"
+      ],
+      "setup": "The 'On the next Arrested Development' tag shows George Sr. still lost in the walls.",
+      "punchline": "He nearly touches an actual burrowing mole \u2014 the animal \u2014 in the walls. 'Not that one. Wait for it' implies another mole (person/spy/skin growth) is coming. The mole wordplay gets one final button.",
+      "craft_total": 8.02,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The 'On the next' tag using an actual animal mole to close the episode's mole wordplay is perfectly Arrested Development. 'Not that one. Wait for it.' as a narrator tease is great \u2014 it acknowledges the layered mole joke while promising more. Strong episode-capper."
+    },
+    {
+      "index": 90,
+      "text": "What's that? \u2014 A prize. A lovely, lovely prize.",
+      "characters": [
+        "Michael",
+        "Rita"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection",
+        "dark_subversive"
+      ],
+      "setup": "Michael and Rita begin their new life together in the 'On the next' tag.",
+      "punchline": "Rita calls something a 'lovely, lovely prize' \u2014 the repetition of 'lovely' and the childlike enthusiasm about an unidentified object is another MRF characterization beat, ending the episode on the note of Michael's total ignorance of his situation.",
+      "craft_total": 7.81,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A final MRF character beat that ends the episode on Michael's unknowing darkness. 'A lovely, lovely prize' is perfectly childlike and the ambiguity of what the prize is adds intrigue. Good closing moment."
     }
   ],
   "air_date": "2005-11-07",
