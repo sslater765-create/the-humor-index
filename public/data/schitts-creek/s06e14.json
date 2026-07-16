@@ -4,35 +4,34 @@
   "season": 6,
   "episode_number": 14,
   "title": "Happy Ending",
-  "humor_index": 85.6,
-  "jpm": 2.01,
-  "avg_craft": 7.43,
-  "avg_impact": 7.16,
-  "total_jokes": 46,
-  "war": 59.6,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"observational\"]",
-  "standout_joke_ids": "[42, 25, 28]",
+  "humor_index": 89.5,
+  "jpm": 3.14,
+  "avg_craft": 7.46,
+  "avg_impact": 7.17,
+  "total_jokes": 72,
+  "war": 94.7,
+  "dominant_joke_types": "[\"character_comedy\", \"deadpan_understatement\", \"irony_sarcasm\"]",
+  "standout_joke_ids": "[39, 12, 46]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "What happened? Who died? - Who died? Did Patrick die? No, Patrick didn't die, David. Then why did you startle me awake like this? My mind went straight to some kind of unthinkable tragedy.",
+      "text": "Who died? Did Patrick die?",
       "characters": [
-        "David",
-        "Moira"
+        "David"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "setup_punchline"
       ],
-      "setup": "David being woken up and immediately assuming the worst",
-      "punchline": "His catastrophic thinking specifically jumping to Patrick dying from being woken up",
-      "craft_total": 7.47,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "David is startled awake and his first panicked thought is that someone has died",
+      "punchline": "He immediately and specifically names Patrick \u2014 his fianc\u00e9 \u2014 as the most likely deceased, revealing both his catastrophizing nature and deep attachment",
+      "craft_total": 7.43,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect David Rose neurotic escalation - his anxious mind immediately jumps from being woken up to his fianc\u00e9 dying. Shows his character's catastrophic thinking pattern beautifully.",
+      "explanation": "Deeply character-specific: David's immediate assumption of worst-case scenario AND his specific fixation on Patrick tells us everything about him in two lines. The economy is excellent \u2014 pure David Rose panic in six words.",
       "dialogue": [
         {
           "speaker": "David",
@@ -50,7 +49,7 @@
     },
     {
       "index": 2,
-      "text": "Well, the day did have a slight singultus - What is she talking about? - A hiccup.",
+      "text": "A hiccup. / What hiccup? Who's hiccupping?",
       "characters": [
         "Moira",
         "David"
@@ -59,14 +58,14 @@
         "character_comedy",
         "wordplay_pun"
       ],
-      "setup": "Moira using an unnecessarily fancy word for a simple concept",
-      "punchline": "David's immediate translation showing he's used to this behavior",
-      "craft_total": 7.22,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Moira uses the obscure medical term 'singultus' to describe a problem with the wedding",
+      "punchline": "David has no idea what 'singultus' means and assumes someone is literally hiccupping, leading to confused panic",
+      "craft_total": 7.62,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Moira vocabulary pretension with David's practiced translation. Shows their established dynamic perfectly.",
+      "explanation": "A perfect Moira joke \u2014 she uses an absurdly elevated word when 'hiccup' would do, and David's literal misinterpretation ('Who's hiccupping?') compounds the comedy. Character integration is exceptional: only Moira would say 'singultus' and only David would respond this way.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -80,23 +79,22 @@
     },
     {
       "index": 3,
-      "text": "Oh my God. To where? Bob's Garage? No, his roof was no match for the cumulus clouds.",
+      "text": "Oh. Imagine. (in response to David saying something really, really bad happened)",
       "characters": [
-        "David",
         "Moira"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "David sarcastically suggesting Bob's Garage as a venue",
-      "punchline": "Moira's overly dramatic meteorological explanation for why even that won't work",
-      "craft_total": 6.92,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "David dramatically declares that his mind went to 'some kind of unthinkable tragedy, something really, really bad'",
+      "punchline": "Moira's dry 'Oh. Imagine.' \u2014 confirming the wedding IS in fact a disaster without saying so",
+      "craft_total": 8.03,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "David's sarcastic desperation paired with Moira's unnecessarily poetic weather reporting creates good character contrast.",
+      "explanation": "Two words doing enormous work. Moira's withering economy here is peak character comedy \u2014 she confirms the disaster without drama, which is ironic given that she IS drama. The misdirection is subtle: we expect her to deny it, she sardonically confirms it.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -114,22 +112,22 @@
     },
     {
       "index": 4,
-      "text": "I've woken up in a 'Black Mirror' episode.",
+      "text": "Oh my God. To where? Bob's Garage?",
       "characters": [
         "David"
       ],
       "joke_types": [
-        "observational",
-        "meta_self_referential"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "David processing the wedding disaster",
-      "punchline": "Reference to dystopian TV show captures his sense of reality breaking down",
-      "craft_total": 6.88,
-      "impact_score": 6.83,
-      "quotability": 7.5,
+      "setup": "The family reveals they need to change the wedding venue due to storm damage",
+      "punchline": "David's first panicked alternative is 'Bob's Garage' \u2014 a hilariously specific, low-status guess that reveals his social snobbery",
+      "craft_total": 7.13,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sharp pop culture reference that perfectly captures David's dramatic worldview. Economy is excellent - captures his mental state in four words.",
+      "explanation": "The specificity of 'Bob's Garage' is the joke \u2014 David doesn't say 'somewhere random,' he names the actual worst-case local option. It's character comedy that works because it establishes the stakes of David's aesthetic anxiety.",
       "dialogue": [
         {
           "speaker": "David",
@@ -139,23 +137,22 @@
     },
     {
       "index": 5,
-      "text": "What kind of adult man rides a penny-farthing? He's a haikuist!",
+      "text": "No, his roof was no match for the cumulus clouds.",
       "characters": [
-        "David",
         "Moira"
       ],
       "joke_types": [
-        "absurdist",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "David questioning the officiant's transportation choice",
-      "punchline": "Moira's explanation that being a haikuist somehow justifies this",
-      "craft_total": 7.73,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "David suggests Bob's Garage as a backup venue",
+      "punchline": "Moira dismisses it with meteorological precision \u2014 'cumulus clouds' \u2014 as if this is normal vocabulary for explaining why a garage is unavailable",
+      "craft_total": 7.46,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Beautifully absurd logic - Moira treats being a poetry writer as sufficient explanation for riding an antique bicycle. The non-sequitur reasoning is peak Moira.",
+      "explanation": "Classic Moira elevated diction deployed for mundane information. 'Cumulus clouds' instead of 'rain' is a perfect character beat \u2014 she can't help being theatrical even in a crisis.",
       "dialogue": [
         {
           "speaker": "David",
@@ -169,23 +166,22 @@
     },
     {
       "index": 6,
-      "text": "You can barely get through this without crying, so that's a no.",
+      "text": "I've woken up in a 'Black Mirror' episode.",
       "characters": [
-        "David",
-        "Johnny"
+        "David"
       ],
       "joke_types": [
         "character_comedy",
-        "reaction_beat"
+        "observational"
       ],
-      "setup": "Johnny offering to officiate the wedding",
-      "punchline": "David immediately shutting him down for being too emotional",
-      "craft_total": 7.22,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "The cascade of wedding disasters keeps mounting",
+      "punchline": "David frames his real-world stress through a prestige TV dystopia reference, which is exactly how a self-dramatizing millennial would process chaos",
+      "craft_total": 6.53,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "David's practical assessment of his father's emotional state. Shows family dynamics and David's need for control on his wedding day.",
+      "explanation": "A functional pop-culture joke that works because it's character-appropriate for David, but it leans on name-dropping rather than pure wit. Serviceable.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -199,22 +195,22 @@
     },
     {
       "index": 7,
-      "text": "A note, I did bring the house down at Pat Sajak's first wedding. 'Can I buy a vow.' I had the studio audience wrapped around my finger.",
+      "text": "This might be a stupid question because there is like literally nothing you can do about it, but why didn't you guys get a tent?",
       "characters": [
-        "Johnny"
+        "Alexis"
       ],
       "joke_types": [
         "character_comedy",
-        "wordplay_pun"
+        "irony_sarcasm"
       ],
-      "setup": "Johnny defending his ability to officiate by citing past performance",
-      "punchline": "Wheel of Fortune pun at a celebrity wedding - absurdly specific boast",
-      "craft_total": 7.28,
-      "impact_score": 7.17,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "The family is in crisis mode about the rained-out outdoor wedding",
+      "punchline": "Alexis's pre-emptive self-awareness ('this might be a stupid question') followed immediately by asking the most unhelpful possible question",
+      "craft_total": 7.19,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant specific callback to Johnny's entertainment industry past with a clever Wheel of Fortune wordplay. The absurd specificity makes it memorable.",
+      "explanation": "Alexis's self-aware obliviousness is pitch-perfect: she knows she's being useless and does it anyway. The structure is strong \u2014 the disclaimer makes the question funnier.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -224,22 +220,22 @@
     },
     {
       "index": 8,
-      "text": "We have money now and the last thing I want is to leave town with some cheap-ass, soggy wedding.",
+      "text": "Because I wanted the wood-fired pizza oven and we couldn't afford both.",
       "characters": [
-        "Alexis"
+        "David"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "setup_punchline"
       ],
-      "setup": "Family discussing wedding solutions",
-      "punchline": "Alexis's blunt description combining the family's new wealth with the practical problem",
-      "craft_total": 7.28,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Alexis asks why they didn't get a tent for the outdoor wedding",
+      "punchline": "David admits he prioritized a pizza oven over weather protection \u2014 a perfectly David Rose luxury-over-practicality choice",
+      "craft_total": 7.42,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment for Alexis showing her direct nature and family loyalty. 'Cheap-ass, soggy' is funny phrasing.",
+      "explanation": "This is an excellent joke. The specific detail \u2014 wood-fired pizza oven \u2014 is not just any luxury, it's the most David Rose luxury: artisanal, food-related, impractical. It instantly reveals everything about his priorities while being genuinely funny. The economy is superb; one sentence does enormous character work.",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -249,24 +245,24 @@
     },
     {
       "index": 9,
-      "text": "Fuck! Fuck! Fuck! Fuck! - Yep. - Mhmm. Where are you going?! Somewhere safe.",
+      "text": "What happened to Fabian?! / He cancelled because of the rain. / What kind of adult man rides a penny-farthing? / He's a haikuist!",
       "characters": [
-        "David",
-        "Patrick",
-        "Alexis"
+        "Johnny",
+        "Moira",
+        "David"
       ],
       "joke_types": [
         "character_comedy",
-        "reaction_beat"
+        "absurdist"
       ],
-      "setup": "David having a complete meltdown",
-      "punchline": "Everyone's casual acceptance of his breakdown and his need to flee to safety",
-      "craft_total": 6.46,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "The officiant has cancelled due to the rain",
+      "punchline": "David's bafflement that the officiant (Fabian) rides a penny-farthing is immediately explained by Moira as 'He's a haikuist!' \u2014 as if this explains everything",
+      "craft_total": 7.87,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic David stress response with everyone matter-of-factly accepting his breakdown. The calm reactions make his panic funnier.",
+      "explanation": "A genuinely excellent absurdist exchange. 'What kind of adult man rides a penny-farthing?' is a great line on its own, but 'He's a haikuist!' as if that's a complete explanation is inspired. The two details together \u2014 penny-farthing + haikuist \u2014 paint a vivid portrait of a person we never see. High originality for the specificity of the absurdist combo.",
       "dialogue": [
         {
           "speaker": "David",
@@ -296,23 +292,22 @@
     },
     {
       "index": 10,
-      "text": "Wow, let's not get crazy. No, we should have gotten married indoors. You said indoor weddings are tacky. No. I said most weddings are tacky. And they often take place indoors.",
+      "text": "Well, David, I-I-I could easily step in here. I have a lot to say about my son getting married.",
       "characters": [
-        "Patrick",
-        "David"
+        "Johnny"
       ],
       "joke_types": [
         "character_comedy",
-        "wordplay_pun"
+        "setup_punchline"
       ],
-      "setup": "David admitting they should have had an indoor wedding",
-      "punchline": "His convoluted logic to avoid admitting he was wrong about indoor weddings",
-      "craft_total": 7.42,
-      "impact_score": 6.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "The officiant has cancelled and someone needs to step in",
+      "punchline": "Johnny volunteers with heartfelt confidence, but David immediately shuts him down before he can finish the sentence",
+      "craft_total": 6.38,
+      "impact_score": 5.75,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect David logic - he can't admit he was wrong so he creates a distinction that technically makes him still right. Shows his need to maintain superiority even in crisis.",
+      "explanation": "A functional setup for the better joke that follows. The comedy is mostly in the anticipation of David's dismissal.",
       "dialogue": [
         {
           "speaker": "David",
@@ -338,22 +333,22 @@
     },
     {
       "index": 11,
-      "text": "Besides those carpets do not photograph well.",
+      "text": "You can barely get through this without crying, so that's a no.",
       "characters": [
         "David"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "deadpan_understatement"
       ],
-      "setup": "David explaining why Roland's living room won't work",
-      "punchline": "His superficial concern about carpet aesthetics in photos",
-      "craft_total": 7.66,
-      "impact_score": 7.17,
-      "quotability": 7.0,
+      "setup": "Johnny volunteers to officiate the wedding",
+      "punchline": "David coldly and correctly points out that Johnny is already too emotional to get through a speech \u2014 delivered as a matter-of-fact assessment, not cruelty",
+      "craft_total": 7.23,
+      "impact_score": 6.67,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect David concern - focusing on photo aesthetics rather than practical issues. Shows his character priorities clearly.",
+      "explanation": "Sharp and affectionate simultaneously \u2014 which is very Schitt's Creek. David isn't being cruel; he's making a practical assessment that also reveals Johnny's emotional tenderness. The 'that's a no' delivery is perfectly brusque.",
       "dialogue": [
         {
           "speaker": "David",
@@ -363,22 +358,23 @@
     },
     {
       "index": 12,
-      "text": "Oh no, all this was planned weeks ago. Just had a hunch you wouldn't handle stress well today.",
+      "text": "A note, I did bring the house down at Pat Sajak's first wedding. 'Can I buy a vow.' I had the studio audience wrapped around my finger.",
       "characters": [
-        "Patrick"
+        "Moira"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "absurdist",
+        "wordplay_pun"
       ],
-      "setup": "David asking how Patrick booked a massage last-minute",
-      "punchline": "Patrick's prescient understanding of David's stress patterns",
-      "craft_total": 7.63,
-      "impact_score": 7.67,
-      "quotability": 8.0,
+      "setup": "David has shot down Johnny for officiating; Moira inserts herself into the conversation",
+      "punchline": "Moira claims she attended Pat Sajak's FIRST wedding (implying multiple) and delivered the line 'Can I buy a vow' \u2014 a Wheel of Fortune wordplay pun \u2014 to a studio audience",
+      "craft_total": 8.52,
+      "impact_score": 8.5,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent relationship humor showing Patrick knows David perfectly. Great setup and punchline structure.",
+      "explanation": "This is one of the episode's best jokes. Multiple layers working simultaneously: (1) 'Pat Sajak's FIRST wedding' implies there were multiple, a throwaway detail that's hilarious; (2) 'Can I buy a vow' is a genuinely clever Wheel of Fortune pun that fits Moira's showbiz world; (3) 'I had the studio audience wrapped around my finger' \u2014 at a wedding \u2014 is pure absurdist Moira logic. Only Moira Rose could deliver this line. High originality, exceptional character integration, and the pun is actually witty rather than groan-worthy.",
       "dialogue": [
         {
           "speaker": "Patrick",
@@ -392,23 +388,25 @@
     },
     {
       "index": 13,
-      "text": "How did you book a massage so last-minute? Oh no, all this was planned weeks ago. Just had a hunch you wouldn't handle stress well today.",
+      "text": "What if the sun comes out and everything's fine. / [02:00] Fuck! Fuck! Fuck! Fuck!",
       "characters": [
-        "David",
-        "Patrick"
+        "Alexis",
+        "Moira",
+        "Johnny",
+        "David"
       ],
       "joke_types": [
-        "character_comedy",
-        "setup_punchline"
+        "setup_punchline",
+        "physical_slapstick"
       ],
-      "setup": "David wondering how Patrick arranged last-minute stress relief",
-      "punchline": "Patrick revealing he planned for David's inevitable breakdown weeks in advance",
-      "craft_total": 7.86,
-      "impact_score": 7.5,
-      "quotability": 7.5,
+      "setup": "Alexis optimistically suggests the sun might come out; everyone turns to look outside",
+      "punchline": "Immediately, the full extent of the storm damage is visible \u2014 multiple characters curse in unison, Moira/Johnny/David all saying 'Fuck!' repeatedly",
+      "craft_total": 7.14,
+      "impact_score": 6.83,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant character moment showing Patrick knows David so well he planned for his wedding day meltdown. Sweet and funny relationship dynamic.",
+      "explanation": "Perfect sitcom structure: optimistic setup, instant brutal punchline. The fact that even prim Moira joins in the 'Fuck!'s is the extra comedic layer. The economy is exceptional \u2014 the setup is one hopeful line, the punchline is pure reaction. High impact because it's a release of tension that's been building.",
       "dialogue": [
         {
           "speaker": "David",
@@ -422,23 +420,23 @@
     },
     {
       "index": 14,
-      "text": "You had like three bagels in half an hour. - They were a mistake.",
+      "text": "We should've gotten a tent. / I didn't need pizza that badly. / Wow, let's not get crazy.",
       "characters": [
         "Patrick",
         "David"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Patrick providing evidence of David's stress eating",
-      "punchline": "David's weak defense of his bagel consumption as unintentional",
-      "craft_total": 7.61,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Relatable stress-eating joke with David's ridiculous justification. The word 'mistake' for eating bagels is perfectly absurd.",
+      "setup": "After seeing the storm damage, the reality of the tent/pizza oven decision lands",
+      "punchline": "Patrick generously concedes ('I didn't need pizza that badly') but David immediately backtracks ('let's not get crazy') \u2014 defending his pizza oven even now",
+      "craft_total": 7.86,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "An excellent callback that deepens the original joke. Patrick being willing to give up the pizza is sweet and funny; David refusing to concede even in disaster is peak David Rose. 'Let's not get crazy' lands as a big laugh because it's so perfectly his priorities laid bare. The callback structure is tight and the character integration couldn't be better.",
       "dialogue": [
         {
           "speaker": "Patrick",
@@ -460,21 +458,23 @@
     },
     {
       "index": 15,
-      "text": "'Hello, you. Are-are we all ready to spin the wheel of life today?' Even Vanna White didn't laugh at that one.",
+      "text": "You said indoor weddings are tacky. / No. I said most weddings are tacky. And they often take place indoors.",
       "characters": [
-        "Johnny"
+        "Patrick",
+        "David"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Johnny practicing wedding jokes with Wheel of Fortune references",
-      "punchline": "His self-aware admission that even Vanna White wouldn't find it funny",
-      "craft_total": 7.19,
-      "impact_score": 6.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Johnny's self-deprecating humor about his bad wedding jokes, with a callback to his Wheel of Fortune connections. Shows he knows his material isn't great.",
+      "setup": "Patrick points out that David had previously dismissed indoor weddings as 'tacky'",
+      "punchline": "David makes a pedantic distinction \u2014 'most weddings are tacky' and they happen to often be indoors \u2014 refusing to admit any logical inconsistency",
+      "craft_total": 7.49,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "David's logical gymnastics to avoid admitting he was wrong are perfectly executed. The distinction he draws is absurd but delivered with complete sincerity. Strong character integration \u2014 this is exactly how David Rose defends himself.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -488,21 +488,22 @@
     },
     {
       "index": 16,
-      "text": "Even Vanna White didn't laugh at that one.",
+      "text": "Besides those carpets do not photograph well.",
       "characters": [
-        "Johnny"
+        "David"
       ],
       "joke_types": [
-        "callback"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Johnny realizing his line didn't work",
-      "punchline": "Using Vanna White as the standard for tough audience",
-      "craft_total": 8.07,
-      "impact_score": 8.25,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Clever self-aware humor that extends the game show callback. Vanna as comedy barometer is inspired.",
+      "setup": "David agrees not to get married in Roland's living room but needs a practical reason",
+      "punchline": "His stated objection is purely aesthetic \u2014 the carpets won't photograph well \u2014 not that it's someone's living room or undignified",
+      "craft_total": 7.67,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A sharp one-liner that is pure David. The objection is photographic, not ethical or social. Perfect economy and high character integration.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -512,23 +513,22 @@
     },
     {
       "index": 17,
-      "text": "A part of me feels like... I'm almost glad that we lost the money. Well, I'm happy you and your feeling are so well acquainted.",
+      "text": "I have arranged for a massage to chill you out a little bit... Oh no, all this was planned weeks ago. Just had a hunch you wouldn't handle stress well today.",
       "characters": [
-        "Alexis",
-        "Moira"
+        "Patrick"
       ],
       "joke_types": [
         "character_comedy",
-        "deadpan_understatement"
+        "setup_punchline"
       ],
-      "setup": "Alexis expressing genuine emotion about their situation",
-      "punchline": "Moira's dismissive comment about Alexis being in touch with her feelings",
-      "craft_total": 7.37,
-      "impact_score": 6.83,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Patrick reveals he pre-booked a massage for David's wedding morning",
+      "punchline": "He admits it was planned 'weeks ago' \u2014 knowing in advance that David would be a disaster \u2014 which is a loving but devastating assessment of David's personality",
+      "craft_total": 7.53,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Moira deflection of genuine emotion with a witty putdown that treats feelings like an acquaintance. Shows her discomfort with sentiment.",
+      "explanation": "Works on two levels: it's funny that Patrick planned for David's meltdown in advance, and it's sweet that he did. The comedy is in the casual delivery of 'just had a hunch' \u2014 understated and affectionate.",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -542,22 +542,23 @@
     },
     {
       "index": 18,
-      "text": "But you wouldn't be the first hostage to fall in love with their captor.",
+      "text": "You had like three bagels in half an hour. / They were a mistake.",
       "characters": [
-        "Moira"
+        "Patrick",
+        "David"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Alexis expressing fondness for their situation in Schitt's Creek",
-      "punchline": "Moira comparing their circumstances to Stockholm Syndrome",
-      "craft_total": 8.26,
-      "impact_score": 8.0,
-      "quotability": 9.0,
+      "setup": "David claims he's been handling the stress 'just fine'",
+      "punchline": "Patrick casually notes the three bagels consumed in thirty minutes; David's resigned 'they were a mistake' is the perfect admission",
+      "craft_total": 7.8,
+      "impact_score": 7.67,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant dark comedy metaphor - Moira treats their forced stay in town like a kidnapping situation. Perfectly captures her dramatic worldview while being unexpectedly insightful.",
+      "explanation": "Excellent joke. 'Three bagels in half an hour' is perfectly specific and visual; 'they were a mistake' is one of those deadpan admissions that lands perfectly because it's so resigned and self-aware. The economy is superb \u2014 four words that contain a whole character moment. Highly quotable.",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -579,23 +580,23 @@
     },
     {
       "index": 19,
-      "text": "- Boop. - Oh.",
+      "text": "Don't neglect the lighting. / Okay. Love you, too.",
       "characters": [
-        "Alexis",
-        "Moira"
+        "David",
+        "Patrick"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "reaction_beat"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Tender mother-daughter moment between Alexis and Moira",
-      "punchline": "Alexis booping Moira's nose, Moira's surprised reaction to physical affection",
-      "craft_total": 7.0,
-      "impact_score": 6.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "setup": "Patrick says goodbye and 'love you' as David is being sent off to his massage",
+      "punchline": "David's parting instruction is about wedding venue lighting, not an 'I love you back' \u2014 until a beat later when he adds it almost as an afterthought",
+      "craft_total": 7.84,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sweet physical comedy moment showing Alexis's playful affection and Moira's awkwardness with physical intimacy. Simple but character-appropriate.",
+      "explanation": "A nice beat that shows David's priorities (logistics first, love second) while also being genuinely warm. The comedic rhythm depends on the pause between the lighting note and 'Love you, too.'",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -617,23 +618,22 @@
     },
     {
       "index": 20,
-      "text": "Are we sure that's not just muscle - Yes. - All right, you answered that too quickly.",
+      "text": "'Hello, you. Are-are we all ready to spin the wheel of life today?'",
       "characters": [
-        "David",
-        "Masseur"
+        "Johnny"
       ],
       "joke_types": [
         "character_comedy",
-        "setup_punchline"
+        "wordplay_pun"
       ],
-      "setup": "David questioning if his neck tension might just be muscle",
-      "punchline": "His paranoia about how quickly the masseur dismissed his theory",
-      "craft_total": 7.15,
-      "impact_score": 6.5,
+      "setup": "Johnny is practicing his officiant speech",
+      "punchline": "His opening line is a clumsy Wheel of Fortune reference ('spin the wheel of life') that he's clearly proud of, directly mirroring Moira's earlier 'Can I buy a vow' joke but with far less polish",
+      "craft_total": 7.79,
+      "impact_score": 7.75,
       "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "David's neurotic overthinking of a simple massage interaction. Shows his tendency to find conspiracy in innocent moments.",
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Works as a callback to Moira's slicker 'Can I buy a vow' \u2014 Johnny's version is clunkier and less polished, which is itself the joke. His self-conscious stammer ('Are-are we') shows he knows it's not quite landing. Good character contrast between the two parents' comedic sensibilities.",
       "dialogue": [
         {
           "speaker": "David",
@@ -659,22 +659,22 @@
     },
     {
       "index": 21,
-      "text": "Johnny, when I say I know the florist, I mean, I know the florist. - Oh. - Yes! Ronnie! That's great!",
+      "text": "Even Vanna White didn't laugh at that one.",
       "characters": [
-        "Ronnie",
         "Johnny"
       ],
       "joke_types": [
-        "reaction_beat"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Ronnie offering to get extra flowers through her connections",
-      "punchline": "Her emphasis implying a sexual relationship with the florist, Johnny's awkward realization",
-      "craft_total": 7.0,
-      "impact_score": 6.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic innuendo joke with Ronnie's sexual frankness making Johnny uncomfortable. Straightforward but character-appropriate humor.",
+      "setup": "Johnny apparently delivers the line 'Are we ready to spin the wheel of life today?' \u2014 a Wheel of Fortune riff echoing Moira's earlier 'Can I buy a vow' joke",
+      "punchline": "Johnny's self-deprecating review of his own joke: 'Even Vanna White didn't laugh at that one' \u2014 acknowledging it fell flat before anyone else could",
+      "craft_total": 7.63,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A callback to the Wheel of Fortune theme and a self-aware meta-joke about joke quality. Johnny's self-deprecation is endearing and the Vanna White specificity is strong. Works as a standalone and as a callback.",
       "dialogue": [
         {
           "speaker": "Ronnie",
@@ -688,22 +688,23 @@
     },
     {
       "index": 22,
-      "text": "I mean, David's gonna have a heart attack, but it... it could work.",
+      "text": "Alexis, have I ever told you how bewitching you are. [pause] It's a compliment.",
       "characters": [
-        "Johnny"
+        "Moira",
+        "Alexis"
       ],
       "joke_types": [
         "character_comedy",
-        "deadpan_understatement"
+        "reaction_beat"
       ],
-      "setup": "Discussing Town Hall as wedding venue",
-      "punchline": "Johnny's accurate assessment of David's likely reaction",
-      "craft_total": 7.13,
-      "impact_score": 6.67,
-      "quotability": 7.0,
+      "setup": "Moira unexpectedly compliments Alexis on an emotional morning",
+      "punchline": "The pause and then 'It's a compliment' \u2014 implying Alexis's reaction was confusion or suspicion, which Moira has to clarify",
+      "craft_total": 6.53,
+      "impact_score": 5.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character understanding - Johnny knows exactly how David will react but proceeds anyway.",
+      "explanation": "The joke is in the implied reaction: Moira's compliments are so rare or so oddly worded that Alexis doesn't know what to do with one. 'It's a compliment' is the perfect clarification from a mother whose praise is historically unrecognizable.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -713,22 +714,22 @@
     },
     {
       "index": 23,
-      "text": "Uh, yeah. That was the first time I've ever received a happy ending. Sorry, what did you just say? The happy ending that the masseur gave me.",
+      "text": "He can be very cruel, but it's all fear-based, Dear. So please don't take it personally.",
       "characters": [
-        "David",
-        "Patrick"
+        "Moira"
       ],
       "joke_types": [
-        "setup_punchline"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "David innocently mentioning his massage experience",
-      "punchline": "Sexual misunderstanding about 'happy ending' massage services",
-      "craft_total": 7.24,
-      "impact_score": 7.83,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Alexis is emotional and mentions David; Moira thinks she's upset by something David said",
+      "punchline": "Moira's assessment of her son \u2014 'very cruel, but it's all fear-based' \u2014 delivered as unsolicited parenting insight with therapist-speak vocabulary",
+      "craft_total": 7.33,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic sexual misunderstanding comedy. While not particularly original, the setup and David's innocence make it work well for the characters.",
+      "explanation": "Moira casually calling David 'very cruel' while trying to comfort Alexis is darkly funny. The 'fear-based' psychology speak is peak Moira \u2014 she knows the right words but deploys them in the wrong order.",
       "dialogue": [
         {
           "speaker": "David",
@@ -754,22 +755,22 @@
     },
     {
       "index": 24,
-      "text": "just because I didn't have the Town Hall on my mood board doesn't mean we still can't have fun.",
+      "text": "Unless it was the year I booked that international campaign for Looky-Loo Binoculars.",
       "characters": [
-        "David"
+        "Moira"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "absurdist"
       ],
-      "setup": "David accepting the Town Hall venue",
-      "punchline": "His reference to having a 'mood board' for wedding venues",
-      "craft_total": 7.33,
-      "impact_score": 6.75,
-      "quotability": 8.5,
+      "setup": "Moira claims she and Alexis never went a full year without seeing each other",
+      "punchline": "She immediately walks it back with the caveat of the Looky-Loo Binoculars campaign \u2014 an absurdly named, clearly low-rent international gig that Moira treats as prestigious",
+      "craft_total": 7.89,
+      "impact_score": 7.33,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect David reference - of course he has a mood board for wedding venues. Shows his character even when medicated.",
+      "explanation": "The invented brand name 'Looky-Loo Binoculars' is inspired \u2014 it's hilariously tacky for something Moira would call 'international.' The specificity and absurdity of the detail is excellent. High originality and perfect character integration: only Moira's career would have this particular low point treated as a high point.",
       "dialogue": [
         {
           "speaker": "David",
@@ -783,22 +784,23 @@
     },
     {
       "index": 25,
-      "text": "He gave you a happy ending?! On our wedding day?!",
+      "text": "Well, I'm happy you and your feeling are so well acquainted. But you wouldn't be the first hostage to fall in love with their captor.",
       "characters": [
-        "Patrick"
+        "Moira"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "character_comedy",
+        "dark_subversive",
+        "irony_sarcasm"
       ],
-      "setup": "The growing misunderstanding",
-      "punchline": "Patrick's horror at what he believes happened",
-      "craft_total": 8.24,
-      "impact_score": 8.83,
-      "quotability": 8.0,
+      "setup": "Alexis says she's almost glad the family lost their money because it brought them together",
+      "punchline": "Moira responds with Stockholm Syndrome as the explanation for Alexis's attachment to the family \u2014 wickedly dark while still being a form of love",
+      "craft_total": 8.32,
+      "impact_score": 8.17,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Peak comedy escalation. Patrick's outrage at the perceived betrayal on their wedding day is perfectly played.",
+      "explanation": "One of the episode's best jokes. The Stockholm Syndrome reference is both perfectly mean and perfectly loving \u2014 Moira's way of acknowledging that their family bond is real while refusing to be sentimental. The setup line ('I'm happy you and your feeling are so well acquainted') is itself beautifully constructed. Dark, witty, specific, quotable \u2014 this is exceptional Schitt's Creek writing.",
       "dialogue": [
         {
           "speaker": "Patrick",
@@ -816,22 +818,22 @@
     },
     {
       "index": 26,
-      "text": "I thought you wanted that?!",
+      "text": "Thank you, I needed a moment of levity today.",
       "characters": [
-        "David"
+        "Alexis"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Patrick's accusatory tone",
-      "punchline": "David's confused defense making the misunderstanding worse",
-      "craft_total": 7.42,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Moira has just told Alexis she has Stockholm Syndrome",
+      "punchline": "Alexis thanks her for it \u2014 treating the Stockholm Syndrome quip as 'levity' \u2014 revealing either her own dark humor or her complete desensitization to Moira",
+      "craft_total": 7.75,
+      "impact_score": 7.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "David's innocent confusion escalates the comedy. His defense makes Patrick think he wanted sexual services.",
+      "explanation": "A nice button on joke #24 \u2014 Alexis's equanimity about the Stockholm comment reveals her character. Works as a topper.",
       "dialogue": [
         {
           "speaker": "Patrick",
@@ -853,24 +855,22 @@
     },
     {
       "index": 27,
-      "text": "He gave you a happy ending?! On our wedding day?! I thought you wanted that?! See, this is what Ray should be filming.",
+      "text": "I think you're very good at this, or the half pill I just took kicked in. Or both.",
       "characters": [
-        "Patrick",
-        "David",
-        "Ray"
+        "David"
       ],
       "joke_types": [
-        "escalation",
-        "meta_self_referential"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Patrick's shock at the misunderstood massage situation",
-      "punchline": "David's confusion and Ray being called out for filming the wrong moments",
-      "craft_total": 6.4,
-      "impact_score": 5.83,
-      "quotability": 6.5,
+      "setup": "David is getting a massage and feeling calm for the first time all morning",
+      "punchline": "He acknowledges he can't tell if the masseur is skilled or if the pill he took is responsible \u2014 delivered with perfect 'or both' hedging",
+      "craft_total": 7.03,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of the misunderstanding with meta-commentary on what should be documented. Ray's presence adds another layer to the comedy.",
+      "explanation": "Funny oversharing from David \u2014 'the half pill I just took' is casually dropped as if it's entirely normal. Good character comedy.",
       "dialogue": [
         {
           "speaker": "Patrick",
@@ -916,22 +916,23 @@
     },
     {
       "index": 28,
-      "text": "All I did, was leave an envelope full of cash and a note that said to take very good care of you.",
+      "text": "Well, that's good, because your neck is like a block of granite. / Okay. Are we sure that's not just muscle? / Yes. / All right, you answered that too quickly.",
       "characters": [
-        "Patrick"
+        "Masseur",
+        "David"
       ],
       "joke_types": [
-        "setup_punchline",
-        "irony_sarcasm"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Patrick explaining what he arranged",
-      "punchline": "Realizing how his innocent instructions could be misinterpreted",
-      "craft_total": 8.12,
-      "impact_score": 8.25,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "The masseur comments on David's neck tension",
+      "punchline": "David's hopeful 'are we sure that's not just muscle?' is immediately shut down; his 'you answered that too quickly' is the perfect wounded comeback",
+      "craft_total": 7.76,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect setup that shows how innocent instructions created the misunderstanding. Great structure and payoff.",
+      "explanation": "The three-beat structure (insult/defense/shutdown/comeback) is efficient and funny. 'You answered that too quickly' is a very good line \u2014 David's wounded vanity expressed with characteristic indignation.",
       "dialogue": [
         {
           "speaker": "Patrick",
@@ -953,22 +954,22 @@
     },
     {
       "index": 29,
-      "text": "This is gonna make for a very strange story one day.",
+      "text": "Our living room is yours, Johnny. And we still have some baby sprinkle decorations gathering dust.",
       "characters": [
-        "Patrick"
+        "Roland"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "observational"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "The entire happy ending misunderstanding",
-      "punchline": "Patrick's meta commentary on their wedding day story",
-      "craft_total": 7.84,
-      "impact_score": 7.67,
-      "quotability": 7.5,
+      "setup": "Johnny is asking the group not to suggest Roland's living room as a venue",
+      "punchline": "Roland immediately offers exactly that \u2014 and sweetens the deal with leftover 'baby sprinkle decorations'",
+      "craft_total": 6.95,
+      "impact_score": 6.5,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good meta humor that acknowledges the absurdity of their situation. Provides nice closure to the sequence.",
+      "explanation": "Decent joke \u2014 'baby sprinkle decorations gathering dust' is a funny specific detail. Roland's obliviousness to being pre-rejected is good character comedy.",
       "dialogue": [
         {
           "speaker": "Patrick",
@@ -986,23 +987,22 @@
     },
     {
       "index": 30,
-      "text": "I was both shocked and impressed! Okay, Marcia Clark? Court's adjourned for the day.",
+      "text": "Oh, as David's Maid-of-Honour, I'm gonna shut that down on his behalf.",
       "characters": [
-        "David",
-        "Patrick"
+        "Stevie"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "deadpan_understatement"
       ],
-      "setup": "David admitting he was impressed by the supposed sexual service",
-      "punchline": "Patrick comparing David to OJ Simpson prosecutor, ending the interrogation",
-      "craft_total": 7.71,
-      "impact_score": 7.33,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Roland offers his living room as the wedding venue",
+      "punchline": "Stevie, as Maid-of-Honour, officially vetoes it on David's behalf \u2014 the formality of invoking her title to reject a living room wedding is the joke",
+      "craft_total": 6.98,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sharp pop culture reference comparing Patrick's questioning to a famous prosecutor. Shows Patrick's wit and David's tendency to overshare.",
+      "explanation": "The procedural invocation of her Maid-of-Honour title to veto a living room venue is a nice joke. Stevie's deadpan authority is well-deployed.",
       "dialogue": [
         {
           "speaker": "David",
@@ -1016,21 +1016,24 @@
     },
     {
       "index": 31,
-      "text": "All I did, was leave an envelope full of cash and a note that said to take very good care of you. And now that I've said those words out loud, I can see how a certain kind of person would interpret that the wrong way.",
+      "text": "Ray, you don't need to be documenting this. / I was told to capture the day. / Ray, I don't think this is a part of the day that anybody is gonna wanna remember. / Can you say that again for the camera?",
       "characters": [
-        "Patrick"
+        "Johnny",
+        "Ray"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm",
+        "meta_self_referential"
       ],
-      "setup": "Patrick explaining his innocent massage booking instructions",
-      "punchline": "His dawning realization of how his words could be misinterpreted",
-      "craft_total": 7.77,
-      "impact_score": 7.83,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Johnny tells the wedding videographer Ray to stop filming the chaotic planning session",
+      "punchline": "Ray, oblivious or deliberately ironic, asks Johnny to repeat the statement about not wanting it filmed \u2014 for the camera",
+      "craft_total": 6.84,
+      "impact_score": 6.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great character moment showing Patrick's innocence and self-awareness. The realization beat works well to resolve the misunderstanding comedically.",
+      "explanation": "A well-structured meta-joke: the request not to film is itself filmed. Ray's cheerful obtuseness ('Can you say that again for the camera?') is perfectly executed.",
       "dialogue": [
         {
           "speaker": "Patrick",
@@ -1048,22 +1051,22 @@
     },
     {
       "index": 32,
-      "text": "Something can fall from the ceiling and just go Bffggghhh! I'm dead! Okay. - Not me though, I'm prepared.",
+      "text": "Johnny, when I say I know the florist, I mean, I know the florist.",
       "characters": [
-        "Roland"
+        "Ronnie"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Roland making morbid jokes about Town Hall safety",
-      "punchline": "His confidence that he personally would survive any ceiling collapse",
-      "craft_total": 7.11,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "Johnny dismisses Ronnie's offer to get extra flowers from the florist",
+      "punchline": "Ronnie's meaningful repetition implies a romantic/personal connection to the florist \u2014 the comedy is in what's unsaid and the long pause implied",
+      "craft_total": 7.43,
+      "impact_score": 7.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Roland inappropriate humor with his inexplicable confidence in his own survival skills. The sound effect adds to the absurdity.",
+      "explanation": "Economy is perfect \u2014 the repetition does all the work. The implication is clear and the deadpan delivery makes it funnier. A well-known structure (the meaningful double-statement) executed with precision.",
       "dialogue": [
         {
           "speaker": "Roland",
@@ -1077,23 +1080,23 @@
     },
     {
       "index": 33,
-      "text": "It's white. You're wearing a white dress. Duh. It's black and white themed. What was I supposed to show up in pink? Or black! You're wearing a wedding dress to my wedding!",
+      "text": "Yes! Ronnie! That's great! Thank you so much. / I'm doing this for David.",
       "characters": [
-        "David",
-        "Alexis"
+        "Johnny",
+        "Ronnie"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "David realizing Alexis is wearing white to his wedding",
-      "punchline": "Alexis's oblivious defense and David's horror at the wedding dress situation",
-      "craft_total": 7.53,
-      "impact_score": 7.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Johnny thanks Ronnie effusively for using her connection to the florist",
+      "punchline": "Ronnie's flat 'I'm doing this for David' \u2014 refusing to let Johnny take any credit or warmth from the gesture",
+      "craft_total": 7.4,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic wedding faux pas comedy with great sibling dynamic. Alexis's fashion obliviousness vs. David's horror creates good tension.",
+      "explanation": "Ronnie's characteristic bluntness \u2014 refusing to give Johnny any credit \u2014 is good character comedy. The 'Of course you are' response implies Johnny is slightly wounded, which adds a layer.",
       "dialogue": [
         {
           "speaker": "David",
@@ -1127,23 +1130,22 @@
     },
     {
       "index": 34,
-      "text": "It came with like a white, tulle, headdress, but I thought it overwhelmed the dress so I decided not to wear it. You're walking me down the aisle in a wedding dress.",
+      "text": "Yeah, I guess we could use the garage for parking. We just have to keep a space clear in case Gwen comes back.",
       "characters": [
-        "Alexis",
-        "David"
+        "Bob"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Alexis casually mentioning the dress came with a veil",
-      "punchline": "David's realization that she's literally wearing a complete wedding ensemble",
-      "craft_total": 7.47,
-      "impact_score": 7.33,
+      "setup": "The group is organizing logistics for the new venue",
+      "punchline": "Bob casually mentions keeping a space for 'Gwen' \u2014 implying his wife may have left him but he's keeping her parking spot just in case, delivered with complete normalcy",
+      "craft_total": 7.49,
+      "impact_score": 7.17,
       "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect escalation - not only is it white, it came with a veil. Alexis's casual mention of rejecting the veil for aesthetic reasons makes it worse.",
+      "explanation": "A darkly funny throwaway that implies a whole tragic domestic situation in seven words. The comedy is in what's NOT said \u2014 Bob's complete emotional normalcy about a potentially devastating circumstance.",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -1165,22 +1167,22 @@
     },
     {
       "index": 35,
-      "text": "Everyone is gonna think we're getting married to each other.",
+      "text": "I mean, David's gonna have a heart attack, but it... it could work.",
       "characters": [
-        "David"
+        "Johnny"
       ],
       "joke_types": [
-        "observational",
-        "cringe_discomfort"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "David realizing the optics of Alexis in a wedding dress walking him down the aisle",
-      "punchline": "His horror at the perceived sibling wedding implication",
-      "craft_total": 7.44,
-      "impact_score": 7.25,
-      "quotability": 7.5,
+      "setup": "Someone suggests Town Hall as the venue",
+      "punchline": "Johnny's practical assessment: David will be medically destabilized, but logistically it's fine",
+      "craft_total": 6.62,
+      "impact_score": 6.0,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good cringe comedy recognizing the awkward visual. David's horror is perfectly in character.",
+      "explanation": "A functional joke that works because it's a perfectly accurate prediction of David's reaction \u2014 treated as a minor inconvenience rather than a reason to change plans.",
       "dialogue": [
         {
           "speaker": "David",
@@ -1206,23 +1208,22 @@
     },
     {
       "index": 36,
-      "text": "I don't think it's gonna look like a wedding dress unless you guys are standing next to each other. She's walking me down the aisle!",
+      "text": "You are shockingly calm for David Rose on his wedding day.",
       "characters": [
-        "Stevie",
-        "David"
+        "Patrick"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "reaction_beat"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Stevie trying to minimize the wedding dress problem",
-      "punchline": "David pointing out they will literally be standing next to each other",
-      "craft_total": 7.51,
-      "impact_score": 7.17,
-      "quotability": 6.0,
+      "setup": "Patrick calls David to tell him about the Town Hall venue, bracing for an explosion",
+      "punchline": "David is inexplicably serene \u2014 the opposite of every expectation \u2014 which Patrick immediately notes with genuine shock",
+      "craft_total": 6.83,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good logical comedy - Stevie's attempt to help backfires when David points out the obvious flaw in her reasoning.",
+      "explanation": "The comedic value is in the subverted expectation \u2014 after all the David panic, the massage has rendered him almost unrecognizable. Sets up the happy ending reveal.",
       "dialogue": [
         {
           "speaker": "Stevie",
@@ -1236,23 +1237,23 @@
     },
     {
       "index": 37,
-      "text": "- Is that a bow in the back? - Don't, David.",
+      "text": "An indoor parking garage? / Those were all full.",
       "characters": [
         "David",
-        "Stevie"
+        "Patrick"
       ],
       "joke_types": [
-        "escalation",
-        "reaction_beat"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "David discovering even more wedding dress details",
-      "punchline": "Stevie cutting him off before he can spiral further",
-      "craft_total": 7.31,
-      "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Simple but effective escalation of the wedding dress crisis. Stevie's protective intervention shows she knows David well.",
+      "setup": "David calmly asks about the new venue",
+      "punchline": "His first guess \u2014 indoor parking garage \u2014 is again hilariously specific; Patrick's deadpan 'those were all full' treats it as a serious alternative that was legitimately researched",
+      "craft_total": 7.98,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent callback and comedic escalation. The indoor parking garage is a funnier venue than Bob's Garage, and Patrick playing it completely straight \u2014 'those were all full' \u2014 implies he actually looked into it. The deadpan commitment to the absurd premise makes this land very well.",
       "dialogue": [
         {
           "speaker": "David",
@@ -1266,23 +1267,22 @@
     },
     {
       "index": 38,
-      "text": "I really wanted to impress you today. And now I feel like I'm ruining your wedding. I think you're giving yourself a lot of credit. My wedding was already ruined.",
+      "text": "Just because I didn't have the Town Hall on my mood board doesn't mean we still can't have fun.",
       "characters": [
-        "Alexis",
         "David"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Alexis feeling bad about ruining David's wedding",
-      "punchline": "David's matter-of-fact statement that it was already ruined before she helped",
-      "craft_total": 7.21,
-      "impact_score": 6.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "David is being remarkably calm about the venue change to Town Hall",
+      "punchline": "He casually reveals he had a 'mood board' for his wedding \u2014 of course he did \u2014 and Town Hall wasn't on it, delivered with zen acceptance",
+      "craft_total": 7.4,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect David Rose deadpan pessimism. His matter-of-fact delivery of devastating news while also being oddly reassuring to Alexis.",
+      "explanation": "The mood board detail is pure David Rose \u2014 of course he has a wedding mood board. The resigned acceptance that Town Hall wasn't on it, but they'll try anyway, is funny because it's such an understated capitulation from someone who cares deeply about aesthetics.",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -1296,22 +1296,23 @@
     },
     {
       "index": 39,
-      "text": "Is it me, or do they look like husband and wife? Kind of.",
+      "text": "Wow. That massage really did a number, huh? / Uh, yeah. That was the first time I've ever received a happy ending.",
       "characters": [
-        "Wedding Guest"
+        "Patrick",
+        "David"
       ],
       "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
+        "setup_punchline",
+        "misdirection"
       ],
-      "setup": "David and Alexis walking down the aisle together",
-      "punchline": "Wedding guests thinking they're the couple getting married due to Alexis's white dress",
-      "craft_total": 7.09,
-      "impact_score": 7.17,
-      "quotability": 6.0,
+      "setup": "Patrick is surprised by David's unusual calm; David attributes it to the massage",
+      "punchline": "'That was the first time I've ever received a happy ending' \u2014 David uses the phrase completely innocently to mean his stress was resolved, not knowing (or not meaning) the sexual connotation",
+      "craft_total": 8.2,
+      "impact_score": 9.0,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect payoff to the wedding dress setup. The visual confusion David feared actually happens, validating his concerns.",
+      "is_callback": 0,
+      "explanation": "The inciting joke of the episode's funniest sequence. The misdirection is perfectly executed: David's sincere, innocent delivery of 'happy ending' sends the scene into chaos. The episode title itself is the punchline. Structure is near-perfect \u2014 the setup (David's unusual calm, Patrick's question) makes the line land perfectly.",
       "dialogue": [
         {
           "speaker": "Wedding Guest 1",
@@ -1337,22 +1338,23 @@
     },
     {
       "index": 40,
-      "text": "Our lives are like little b\u00e9b\u00e9 crows, carried upon a curious wind.",
+      "text": "Sorry, what did you just say? / The happy ending that the masseur gave me. I've always heard of things like that, but I've never actually gotten one.",
       "characters": [
-        "Johnny"
+        "Patrick",
+        "David"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "escalation",
+        "cringe_discomfort"
       ],
-      "setup": "Johnny attempting to give a poetic wedding ceremony",
-      "punchline": "His bizarre metaphor comparing lives to baby crows",
-      "craft_total": 7.66,
-      "impact_score": 7.33,
+      "setup": "David has just said he received a 'happy ending' from his massage",
+      "punchline": "Patrick's stunned 'sorry, what?' prompts David to elaborate \u2014 making it worse \u2014 with 'I've always heard of things like that, but I've never actually gotten one'",
+      "craft_total": 7.18,
+      "impact_score": 6.83,
       "quotability": 8.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Wonderfully absurd Johnny attempt at profundity. The specific choice of 'b\u00e9b\u00e9 crows' and 'curious wind' creates a memorably weird metaphor.",
+      "is_callback": 1,
+      "explanation": "The escalation makes the original joke even better. David's clarification digs the hole deeper while still being completely sincere. 'I've always heard of things like that' implies he thought masseurs routinely did this \u2014 the innocence is the engine of the comedy.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -1362,23 +1364,22 @@
     },
     {
       "index": 41,
-      "text": "Okay. I think we're good. Okay.",
+      "text": "Did you have to pay extra for that?",
       "characters": [
-        "David",
-        "Johnny"
+        "Patrick"
       ],
       "joke_types": [
-        "reaction_beat",
-        "deadpan_understatement"
+        "escalation",
+        "cringe_discomfort"
       ],
-      "setup": "Johnny's rambling poetic ceremony speech",
-      "punchline": "David politely but firmly cutting off his father's officiating",
-      "craft_total": 7.29,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "Patrick is processing that David got a 'happy ending' from a masseur",
+      "punchline": "Patrick's brain, apparently, goes immediately to economics \u2014 his first question is about the surcharge",
+      "craft_total": 7.56,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect understated interruption. David's polite but firm shutdown of Johnny's rambling shows his need for control while being respectful.",
+      "is_callback": 1,
+      "explanation": "Patrick's reaction being 'did you pay extra?' rather than jealousy or outrage is a perfect character choice \u2014 and funnier than either of those options. The economy is superb. It escalates the absurdity while revealing Patrick's practical mind even in crisis.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -1400,22 +1401,23 @@
     },
     {
       "index": 42,
-      "text": "Patrick Brewer, you are my happy ending.",
+      "text": "I didn't pay for a happy ending! I paid for a massage! He gave you a happy ending?! On our wedding day?!",
       "characters": [
-        "David"
+        "David",
+        "Patrick"
       ],
       "joke_types": [
-        "callback",
-        "wordplay_pun"
+        "escalation",
+        "cringe_discomfort"
       ],
-      "setup": "David's wedding vows reaching their emotional climax",
-      "punchline": "Callback to the massage misunderstanding earlier in the episode",
-      "craft_total": 8.52,
-      "impact_score": 8.67,
-      "quotability": 9.5,
+      "setup": "Patrick asks if David paid extra; David protests his innocence",
+      "punchline": "The realization cascades: David insisting he paid for a 'massage' while Patrick's 'He gave you a happy ending?! On our WEDDING DAY?!' escalates the indignation",
+      "craft_total": 8.07,
+      "impact_score": 8.83,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Brilliant callback that transforms a sexual innuendo into a beautiful romantic declaration. Perfect economy and emotional payoff that recontextualizes the earlier comedy.",
+      "explanation": "The 'on our wedding day?!' indignation is perfect Patrick comedy. He's not upset about the act as much as the timing. The cross-purpose arguing (David denying payment, Patrick emphasizing the occasion) creates great comic rhythm.",
       "dialogue": [
         {
           "speaker": "David",
@@ -1433,22 +1435,24 @@
     },
     {
       "index": 43,
-      "text": "There's a time and place for sentimentality, and your only son's wedding day is hardly the moment.",
+      "text": "I thought you wanted that?! / Why would I want you to get a happy ending from a stranger on our wedding day, David? / You tell me!",
       "characters": [
-        "Moira"
+        "David",
+        "Patrick"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "escalation",
+        "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Moira appearing to have held it together at the wedding",
-      "punchline": "Her backward logic that a son's wedding is not the time for sentimentality",
-      "craft_total": 8.06,
-      "impact_score": 7.67,
-      "quotability": 9.0,
+      "setup": "Patrick is incredulous that David let the happy ending happen",
+      "punchline": "David's 'I thought you wanted that?!' implies Patrick requested it, followed by the equally absurd 'you tell me!' when Patrick asks why he would want that",
+      "craft_total": 7.79,
+      "impact_score": 8.0,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Moira logic inversion - treating her son's wedding as an inappropriate time for emotion. Classic character denial and emotional deflection.",
+      "is_callback": 1,
+      "explanation": "The 'YOU TELL ME!' is a great moment of David's defensive logic collapsing on itself. He can't explain why Patrick would want this but doubles down anyway. The absurdist circularity of the argument is classic David.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -1458,23 +1462,22 @@
     },
     {
       "index": 44,
-      "text": "I personally would not have missed this for the whole wide world. Okay. You're only saying that 'cause you haven't gone to bed yet.",
+      "text": "See, this is what Ray should be filming.",
       "characters": [
-        "Stevie",
-        "David"
+        "Stevie"
       ],
       "joke_types": [
-        "character_comedy",
+        "meta_self_referential",
         "deadpan_understatement"
       ],
-      "setup": "Stevie expressing sentimental feelings about the family leaving",
-      "punchline": "David's practical explanation that she's only emotional because she's drunk/tired",
-      "craft_total": 7.46,
-      "impact_score": 6.75,
+      "setup": "Patrick and David are having an absurd argument about the happy ending; Stevie and others are present",
+      "punchline": "Stevie dryly notes that THIS is the moment that should be captured on film \u2014 referencing the earlier joke about Ray not filming the crisis planning",
+      "craft_total": 7.61,
+      "impact_score": 7.5,
       "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "David deflecting genuine sentiment with practical observations. Shows his discomfort with emotional moments while being somewhat affectionate.",
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfect Stevie observation \u2014 her calm detachment from the chaos and ability to find the absurdity is well-deployed. The callback to Ray filming makes it better.",
       "dialogue": [
         {
           "speaker": "Stevie",
@@ -1496,23 +1499,22 @@
     },
     {
       "index": 45,
-      "text": "Yes, just as sweet as the liqueur wafting off your breath. I also didn't go to bed last night.",
+      "text": "Okay, Marcia Clark? Court's adjourned for the day.",
       "characters": [
-        "Moira",
-        "Stevie"
+        "David"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "irony_sarcasm"
       ],
-      "setup": "Moira commenting on the alcohol smell from Stevie",
-      "punchline": "Stevie's matter-of-fact admission that she also didn't sleep, just partied",
-      "craft_total": 7.26,
-      "impact_score": 6.75,
-      "quotability": 6.0,
+      "setup": "Patrick is cross-examining David about whether he stopped the happy ending from happening",
+      "punchline": "David shuts down the interrogation by calling Patrick 'Marcia Clark' \u2014 the O.J. Simpson trial prosecutor \u2014 and declaring court adjourned",
+      "craft_total": 7.75,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple humor about post-wedding drinking with Moira's typical vocabulary pretension. Stevie's deadpan response works well.",
+      "explanation": "A sharp pop-culture reference with genuine wit behind it \u2014 Marcia Clark as a prosecutor is specific and fitting for Patrick's cross-examination behavior. 'Court's adjourned for the day' is a good topper. The reference feels earned rather than gratuitous.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -1526,23 +1528,23 @@
     },
     {
       "index": 46,
-      "text": "Make sure the girls are shipped in a... - Temperature controlled - Temperature controlled - cargo container. Aha. - Cargo container. Aha.",
+      "text": "And you told me that you wanted to de-stress me. I just assumed you knew what you were paying for! I was both shocked and impressed!",
       "characters": [
-        "Moira",
-        "Johnny"
+        "David"
       ],
       "joke_types": [
+        "cringe_discomfort",
         "character_comedy",
-        "absurdist"
+        "escalation"
       ],
-      "setup": "Moira giving instructions about shipping something valuable",
-      "punchline": "Referring to her wigs as 'the girls' and treating them like precious cargo",
-      "craft_total": 7.15,
-      "impact_score": 6.67,
-      "quotability": 7.5,
+      "setup": "David continues defending his acceptance of the happy ending",
+      "punchline": "'I was both shocked and impressed!' is the perfect topper \u2014 David admits he was surprised AND complimentary of the masseur's work",
+      "craft_total": 8.25,
+      "impact_score": 8.75,
+      "quotability": 9.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Moira wig obsession humor. Her treating the wigs like living beings that need special care perfectly captures her priorities.",
+      "explanation": "The highest quotability score in the episode. 'I was both shocked and impressed!' as David's summary of receiving an unexpected happy ending from a wedding-day masseur is perfect. It's not a defense, not an apology \u2014 it's an aesthetic review. David Rose would absolutely rate the quality of an unexpected sexual experience on his own wedding day. This line will outlive the episode. The 'both' doing structural work to separate his two emotional responses is the final touch.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -1561,6 +1563,519 @@
           "line": "I'll... make a note of that."
         }
       ]
+    },
+    {
+      "index": 47,
+      "text": "All I did was leave an envelope full of cash and a note that said to take very good care of you. And now that I've said those words out loud, I can see how a certain kind of person would interpret that the wrong way.",
+      "characters": [
+        "Patrick"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation",
+        "misdirection"
+      ],
+      "setup": "Patrick explains what instructions he left for the masseur",
+      "punchline": "As Patrick speaks the words aloud \u2014 'envelope full of cash... take very good care of you' \u2014 he realizes in real time that he accidentally hired a sex worker for David on their wedding day",
+      "craft_total": 7.64,
+      "impact_score": 7.5,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the episode's best joke. The structure is exceptional: Patrick explaining his entirely innocent intentions only to hear himself say 'envelope full of cash... take very good care of you' and realizing the terrible implication IN REAL TIME is comedy perfection. 'A certain kind of person' as the euphemism for an adult service industry client is perfectly chosen. The earned-vs-cheap score is near-perfect because the whole sequence was set up honestly and this punchline was completely earned through character logic. This is comparable to the anchor examples for 8+ quality."
+    },
+    {
+      "index": 48,
+      "text": "Okay, but was it good at least? / Do not answer that. Was it? Don't.",
+      "characters": [
+        "Stevie",
+        "David",
+        "Patrick"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "The happy ending situation has been revealed and explained",
+      "punchline": "Stevie, who has been observing, asks the only logical next question ('was it good?'); Patrick immediately vetoes it but then can't help asking himself",
+      "craft_total": 7.94,
+      "impact_score": 8.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "An outstanding topper to the sequence. Three beats working perfectly: (1) Stevie asking the question everyone is thinking, (2) Patrick shutting it down, (3) Patrick immediately asking it himself. 'Do not answer that. Was it? Don't.' is a beautifully compressed three-beat joke that reveals Patrick's conflict. Highly quotable and gets a huge laugh from the room."
+    },
+    {
+      "index": 49,
+      "text": "I think Stevie and I should probably go get ready. Leave you to put your little suit on. Nothing compares to you. My husband-to-be.",
+      "characters": [
+        "Patrick"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "After the happy ending debacle, Patrick needs to exit gracefully",
+      "punchline": "His departure is a collection of loving non-sequiturs: 'your little suit,' 'nothing compares to you' \u2014 both tender and dismissive simultaneously",
+      "craft_total": 7.07,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Your little suit' is a funny and affectionate detail; 'nothing compares to you' as a sincere and somewhat absurd declaration post-happy-ending scandal gives the scene a warm landing."
+    },
+    {
+      "index": 50,
+      "text": "Oh my God. [reaction beat after Patrick and Stevie leave]",
+      "characters": [
+        "David"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "Patrick and Stevie have just left after the happy ending revelation",
+      "punchline": "David's quiet 'Oh my God' \u2014 alone, processing what just happened on his wedding morning",
+      "craft_total": 6.54,
+      "impact_score": 6.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A button on the sequence \u2014 David's processing of the chaos he's created. Works as a comedic exhale after the escalation."
+    },
+    {
+      "index": 51,
+      "text": "Something can fall from the ceiling and just go Bffggghhh! I'm dead! / Not me though, I'm prepared.",
+      "characters": [
+        "Roland"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Roland is giving a speech about Johnny leaving town and the preciousness of life",
+      "punchline": "Roland demonstrates a hypothetical death by falling ceiling debris with a sound effect, then immediately exempts himself because he's 'prepared'",
+      "craft_total": 7.61,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Pure Roland comedy \u2014 his mortality monologue derails into a death demonstration with sound effects. 'Not me though, I'm prepared' as a tag is perfectly Roland's self-importance. The sound effect ('Bffggghhh!') works as physical absurdism even in text form."
+    },
+    {
+      "index": 52,
+      "text": "And according to the wedding schedule, you're supposed to be dressed and ready to greet me. Greet you?",
+      "characters": [
+        "David",
+        "Alexis"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "David arrives to find Alexis not prepared to walk him down the aisle",
+      "punchline": "David expects to be 'greeted' per his wedding schedule; Alexis's incredulous 'Greet you?' reveals she had no idea this was a thing",
+      "craft_total": 6.84,
+      "impact_score": 6.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The detail that David has a 'wedding schedule' with greeting protocols is funny, and Alexis's bafflement is a good character reaction."
+    },
+    {
+      "index": 53,
+      "text": "You look very expensive and gorgeous too. / It's-it's white. You're wearing a white dress.",
+      "characters": [
+        "Alexis",
+        "David"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "David and Alexis compliment each other \u2014 David is in his wedding suit; Alexis is in what she considers appropriate attire",
+      "punchline": "David notices Alexis is wearing white \u2014 potentially upstaging him at his own wedding \u2014 his horror is the punchline",
+      "craft_total": 7.03,
+      "impact_score": 6.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic sibling comedy \u2014 Alexis's oblivious style choice creating a crisis for David. The 'you look very expensive' compliment followed immediately by horror is a good comedic beat."
+    },
+    {
+      "index": 54,
+      "text": "Duh. It's black and white themed. What was I supposed to show up in pink? / Or black! You're wearing a wedding dress to my wedding!",
+      "characters": [
+        "Alexis",
+        "David"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "David is horrified that Alexis is wearing white",
+      "punchline": "Alexis's 'Duh, it's black and white themed' is delivered with perfect Alexis logic; David's 'or BLACK!' reveals the obvious alternative she missed",
+      "craft_total": 7.68,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Alexis's complete sincerity about the logic ('it's black and white themed!') makes the joke work. David pointing out the obvious alternative \u2014 she could have worn the other color in the theme \u2014 is a perfectly structured retort."
+    },
+    {
+      "index": 55,
+      "text": "This is not a wedding dress. It's a white, floor-length gown. It's very different. / Did it come with a veil? / No. It came with a headdress.",
+      "characters": [
+        "Alexis",
+        "David"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Alexis insists her white floor-length gown is not a wedding dress",
+      "punchline": "David's perfectly targeted question ('did it come with a veil?') is answered with 'No. It came with a headdress.' \u2014 which somehow makes it worse",
+      "craft_total": 7.72,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. The structure is perfect: David tests the wedding dress hypothesis with the most targeted possible question (veil), gets denied \u2014 but then the answer (headdress) is somehow worse. The joke escalates rather than resolves. Alexis's complete sincerity ('It came with a headdress') delivered as a distinction rather than a condemnation is inspired character writing."
+    },
+    {
+      "index": 56,
+      "text": "You're walking me down the aisle in a wedding dress. Everyone is gonna think we're getting married to each other.",
+      "characters": [
+        "David"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Alexis has revealed the dress came with a headdress she chose not to wear",
+      "punchline": "David's horror reaches its peak: the combination of white dress + him in a suit + walking the aisle = they'll look like a couple getting married",
+      "craft_total": 6.69,
+      "impact_score": 6.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A logical escalation of the Alexis-dress situation that works because it's true. The absurdity of David and Alexis visually appearing to marry each other is funny, though the joke is somewhat telegraphed."
+    },
+    {
+      "index": 57,
+      "text": "Now, Stevie, as my Maid-of-Honour, does it not look like Alexis is wearing a wedding dress? Or just like a dress that happens to be white? / I don't wanna get involved.",
+      "characters": [
+        "David",
+        "Stevie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "David tries to get Stevie to arbitrate the wedding dress dispute",
+      "punchline": "Stevie flatly refuses to take sides: 'I don't wanna get involved' \u2014 exactly the response of anyone who knows both David and Alexis",
+      "craft_total": 7.26,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Stevie's self-preservation instinct ('I don't wanna get involved') is perfectly in character. The absurdity of invoking the Maid-of-Honour title to force a fashion verdict makes her refusal funnier."
+    },
+    {
+      "index": 58,
+      "text": "So much for the massage.",
+      "characters": [
+        "Stevie"
+      ],
+      "joke_types": [
+        "callback",
+        "deadpan_understatement"
+      ],
+      "setup": "David is spiraling about the wedding dress situation despite the massage meant to calm him",
+      "punchline": "Stevie's dry callback to the massage \u2014 and by extension, the happy ending \u2014 lands with maximum economy and multiple layers of meaning",
+      "craft_total": 8.19,
+      "impact_score": 8.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Four words doing the work of three scenes. The callback is perfectly timed \u2014 Stevie, who witnessed the happy ending drama, gets to land the callback with maximum economy. The line means both 'the massage didn't calm him' and 'despite everything that happened in that massage room.' Rewatch value high."
+    },
+    {
+      "index": 59,
+      "text": "You don't have a choice. You work for me today. / So much for the massage.",
+      "characters": [
+        "David",
+        "Stevie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Stevie refuses to arbitrate the wedding dress dispute",
+      "punchline": "David insists she works for him as Maid-of-Honour; Stevie's 'so much for the massage' is a callback to David's zen state being destroyed",
+      "craft_total": 7.38,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Stevie's dry callback to the massage \u2014 noting that the calm didn't survive contact with Alexis's dress \u2014 is a sharp comedic observation. 'So much for the massage' is economical and Stevie-accurate."
+    },
+    {
+      "index": 60,
+      "text": "I don't think you should worry about it. I'm sure this town has seen far weirder things.",
+      "characters": [
+        "Stevie"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "observational"
+      ],
+      "setup": "David is panicking about Alexis appearing to be in a wedding dress for the processional",
+      "punchline": "Stevie's reassurance \u2014 'I'm sure this town has seen far weirder things' \u2014 implies Schitt's Creek has a rich history of public weirdness that makes Alexis's outfit unremarkable",
+      "craft_total": 6.77,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Stevie's dry reassurance works because of the implication \u2014 Schitt's Creek is a town where stranger things than a brother being walked down the aisle by a sister in a white gown have happened. The show's entire premise is in that subtext. Functional and warm."
+    },
+    {
+      "index": 61,
+      "text": "Is that a bow in the back? / Don't, David.",
+      "characters": [
+        "David",
+        "Alexis"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "David is still scrutinizing Alexis's dress after being told to drop it",
+      "punchline": "He spots a bow on the back of the dress \u2014 further wedding dress evidence \u2014 Alexis's flat 'Don't, David' is a pre-emptive shutdown of the spiral",
+      "craft_total": 7.31,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A perfect button on the dress sequence. David can't help himself \u2014 his eye catches the bow \u2014 and Alexis's 'Don't, David' pre-empts the escalation she knows is coming. Two words that shut down a whole argument. Excellent economy."
+    },
+    {
+      "index": 62,
+      "text": "Right, Stevie? Right? / Hm.",
+      "characters": [
+        "Alexis",
+        "Stevie"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "deadpan_understatement"
+      ],
+      "setup": "Alexis enthusiastically affirms that they love David and seeks Stevie's confirmation",
+      "punchline": "Stevie's response is a single non-committal 'Hm' \u2014 neither confirming nor denying her love for David",
+      "craft_total": 7.29,
+      "impact_score": 6.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Stevie's 'Hm' is the joke \u2014 she won't even commit to loving her best friend on his wedding day, which is both completely in character and deeply funny. The economy is absolute maximum (one syllable) and the character integration is perfect for Stevie's emotional reticence. The fact that this is clearly the most she'll say is the warmth underneath."
+    },
+    {
+      "index": 63,
+      "text": "I think you're giving yourself a lot of credit. My wedding was already ruined.",
+      "characters": [
+        "David"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Alexis feels terrible about wearing the white dress and thinks she's ruining the wedding",
+      "punchline": "David dismisses her self-blame by pointing out the wedding was already ruined \u2014 the dress is merely the latest in a long list of disasters",
+      "craft_total": 7.03,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A nice comedic callback that summarizes the episode's disaster-chain. David being generous to Alexis by contextualizing the dress within the broader catastrophe is both funny and touching."
+    },
+    {
+      "index": 64,
+      "text": "Is it me, or do they look like husband and wife? / Kind of.",
+      "characters": [
+        "Wedding Guest 1",
+        "Wedding Guest 2"
+      ],
+      "joke_types": [
+        "callback",
+        "visual_gag"
+      ],
+      "setup": "David (in dark suit) and Alexis (in white floor-length gown) walk down the aisle together",
+      "punchline": "A wedding guest observes exactly what David predicted \u2014 they look like they're getting married to each other",
+      "craft_total": 7.53,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The payoff to David's prediction is executed perfectly. The outside observer confirming his fear, with the guest's casual 'Kind of' as a hedge, is funnier than a full confirmation would be. The visual gag (Alexis in white walking a groom down the aisle) lands beautifully."
+    },
+    {
+      "index": 65,
+      "text": "And David... / Brewer. / Brewer.",
+      "characters": [
+        "Moira",
+        "Patrick"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Moira is officiating the wedding and goes to name the grooms",
+      "punchline": "She forgets Patrick's last name and has to be corrected by the groom himself at the altar \u2014 at the most solemn moment of the ceremony",
+      "craft_total": 7.35,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Moira moment \u2014 she's so self-involved that she doesn't know her son's partner's last name, and must be corrected by Patrick himself in the middle of the ceremony. The economy is exceptional: three words (David... / Brewer. / Brewer.) contain a complete character joke. The repetition of 'Brewer' as Moira recovers without apology is a wonderful detail."
+    },
+    {
+      "index": 66,
+      "text": "In this little town. In the middle of nowhere. Okay. I think we're good.",
+      "characters": [
+        "Moira"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Moira is building to a heartfelt conclusion about her family finding solid ground",
+      "punchline": "After the beautiful build \u2014 'this little town, in the middle of nowhere' \u2014 she abruptly deflates it with 'Okay. I think we're good.' as if checking off a box",
+      "craft_total": 7.24,
+      "impact_score": 6.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The emotional whiplash is perfectly executed. Moira builds genuine warmth and then immediately punctures it with a brisk 'Okay. I think we're good.' \u2014 as if she's finished a task rather than delivered a speech. It's funny AND emotionally resonant, which is Schitt's Creek at its best."
+    },
+    {
+      "index": 67,
+      "text": "And now I will ask David Rose and Patrick... / Brewer. / Brewer.",
+      "characters": [
+        "Moira",
+        "Johnny"
+      ],
+      "joke_types": [
+        "running_gag",
+        "character_comedy"
+      ],
+      "setup": "Moira continues the ceremony",
+      "punchline": "She forgets Patrick's last name this time \u2014 requiring another assist from Johnny \u2014 and then repeats it as though she knew it all along",
+      "craft_total": 7.71,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The running gag of Moira requiring prompted last names now covers both groom's surnames \u2014 she forgot David's, now she's forgotten Patrick's. Johnny's consistent prompt (one word) and Moira's instant adoption as though she said it herself ('Brewer') is perfect. The pattern is funnier the second time. Only Moira could be this confidently incompetent."
+    },
+    {
+      "index": 68,
+      "text": "Well, you did such a great job, sweetheart. I don't know how you do it. / Oh, someone has to hold it together? There's a time and place for sentimentality, and your only son's wedding day is hardly the moment.",
+      "characters": [
+        "Johnny",
+        "Moira"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "The ceremony is over; Johnny praises Moira for holding together",
+      "punchline": "Moira explains that a son's wedding is NOT the time for sentimentality \u2014 delivered with complete conviction, despite it being the most obvious occasion for it",
+      "craft_total": 7.89,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Moira's inverted emotional logic \u2014 'your only son's wedding day is hardly the moment' for sentimentality \u2014 is excellent. It's dark, it's wrong, and it's completely Moira. The irony is rich: she just delivered a sincere ceremony speech but now claims immunity from feelings."
+    },
+    {
+      "index": 69,
+      "text": "Yes, just as sweet as the liqueur wafting off your breath. / I also didn't go to bed last night.",
+      "characters": [
+        "Moira",
+        "Stevie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Stevie says she'll miss the Roses; Moira thanks her for the sweet sentiment",
+      "punchline": "Moira notes the liqueur on Stevie's breath; Stevie's non-defensive 'I also didn't go to bed last night' is a perfect deadpan admission",
+      "craft_total": 7.6,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A warm and funny final Stevie moment. 'I also didn't go to bed last night' delivered without shame or apology is perfectly Stevie. The 'also' implies others didn't sleep either, which adds a communal chaos layer."
+    },
+    {
+      "index": 70,
+      "text": "And uh, if you get the chance, Room 7 needs a turndown.",
+      "characters": [
+        "Johnny"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Johnny is saying his final goodbye to Stevie at the motel he has run for years",
+      "punchline": "In his last words before leaving forever, he asks her to turn down Room 7 \u2014 reverting to motel manager mode as a way of expressing love through work",
+      "craft_total": 8.39,
+      "impact_score": 8.25,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's most quietly perfect jokes. Johnny's emotional defense mechanism \u2014 retreating into motel manager professionalism at the most sentimental possible moment \u2014 is deeply in character and genuinely moving. 'Room 7 needs a turndown' as a final goodbye is both funny and heartbreaking. The economy is exceptional. This is comparable to the 8.0 anchor joke in quality, and arguably surpasses it in emotional resonance."
+    },
+    {
+      "index": 71,
+      "text": "Okay. Make sure the girls are shipped in a temperature controlled cargo container. / Temperature controlled cargo container.",
+      "characters": [
+        "Moira",
+        "Johnny"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "The Roses are packing up to leave; Moira's wigs ('the girls') need transport",
+      "punchline": "Moira's concern about the climate-controlled transport of her wigs \u2014 referred to as 'the girls' \u2014 and Johnny's dutiful repetition as if confirming a shipping manifest",
+      "craft_total": 7.78,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The wigs ('the girls') as precious cargo requiring temperature-controlled shipping is a long-running character joke for Moira. Johnny's deadpan repetition like a checklist is funny. Works well for fans of the series."
+    },
+    {
+      "index": 72,
+      "text": "Make sure the girls are shipped in a... / Temperature controlled / Temperature controlled / cargo container. Aha. / Cargo container. Aha.",
+      "characters": [
+        "Moira",
+        "Johnny"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "The Roses are saying their final goodbyes and coordinating moving logistics",
+      "punchline": "Moira and Johnny perfectly finish each other's sentences about shipping her wigs ('the girls') in a temperature-controlled cargo container \u2014 the absurdity of treating wigs with this level of logistical care",
+      "craft_total": 7.26,
+      "impact_score": 6.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The synchronized finishing of each other's sentences about wig logistics shows how perfectly attuned Moira and Johnny are \u2014 they've had this conversation enough times that it's choreography. The comedy is both in the absurdity of the wig logistics AND in the warmth of their partnership. 'The girls' as a term for wigs requiring temperature-controlled shipping is perfect Moira."
     }
   ],
   "air_date": "2020-04-07",

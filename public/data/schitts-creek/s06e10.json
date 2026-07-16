@@ -4,34 +4,35 @@
   "season": 6,
   "episode_number": 10,
   "title": "Sunrise, Sunset",
-  "humor_index": 78.4,
-  "jpm": 1.94,
-  "avg_craft": 7.18,
-  "avg_impact": 6.74,
-  "total_jokes": 49,
-  "war": 47.0,
-  "dominant_joke_types": "[\"character_comedy\", \"wordplay_pun\", \"absurdist\"]",
-  "standout_joke_ids": "[31, 48, 12]",
+  "humor_index": 87.0,
+  "jpm": 3.97,
+  "avg_craft": 7.05,
+  "avg_impact": 7.03,
+  "total_jokes": 100,
+  "war": 104.0,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[85, 19, 47]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "It's just the more you keep mentioning that it's a gift, the less and less it feels like a gift.",
+      "text": "John orders just the 'little farmer's breakfast' to save his appetite for the wedding tasting, framing it as virtuous restraint.",
       "characters": [
-        "David"
+        "John Rose",
+        "Twyla"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Johnny keeps emphasizing that the wedding food is his 'gift' to David",
-      "punchline": "David points out the contradiction - over-emphasizing generosity negates the generosity",
-      "craft_total": 7.52,
-      "impact_score": 7.0,
-      "quotability": 8.0,
+      "setup": "John orders a small breakfast, claiming he doesn't want to spoil his appetite for the wedding tasting.",
+      "punchline": "The joke seeds his later gluttony at the tasting \u2014 the 'restraint' is immediately undercut by his inability to resist food.",
+      "craft_total": 5.59,
+      "impact_score": 4.83,
+      "quotability": 3.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect David Rose character moment - neurotic but astute observation about social dynamics, delivered with his characteristic directness",
+      "explanation": "Mild but effective character setup. John's self-deceiving frugality is a running theme and this plants the seed for his tasting behavior. The rewatch value is high because the payoff comes later.",
       "dialogue": [
         {
           "speaker": "David",
@@ -41,22 +42,23 @@
     },
     {
       "index": 2,
-      "text": "Look at you, John, doling out gift after gift this morning like the Turkish Saint Nikolaas.",
+      "text": "Moira pointedly asks 'Yes, John. Why wouldn't you have Twyla cater David's big day?' \u2014 dripping with sarcasm about John's cheapness.",
       "characters": [
-        "Moira"
+        "Moira Rose",
+        "John Rose"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Johnny has just inadvertently invited Twyla to the wedding",
-      "punchline": "Moira's overwrought comparison to Turkish Saint Nicholas for minor acts of generosity",
-      "craft_total": 7.31,
-      "impact_score": 6.33,
-      "quotability": 7.0,
+      "setup": "Twyla asks why the caf\u00e9 isn't catering the wedding; John awkwardly deflects.",
+      "punchline": "Moira zeroes in with theatrical sarcasm, exposing John's frugality in front of everyone.",
+      "craft_total": 6.19,
+      "impact_score": 6.0,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Moira - unnecessarily ornate language for mundane situations, with the specific 'Turkish' detail being perfectly random",
+      "explanation": "Very Moira \u2014 she weaponizes politeness as a knife. The sarcasm is character-specific and lands cleanly. The joke does real comedic work by exposing the family dynamic.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -66,23 +68,22 @@
     },
     {
       "index": 3,
-      "text": "David, I didn't know she wasn't invited to the wedding. / Well, you certainly fixed that problem for yourself.",
+      "text": "'It's just the more you keep mentioning that it's a gift, the less and less it feels like a gift.'",
       "characters": [
-        "Johnny",
-        "David"
+        "David Rose"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Johnny accidentally invited Twyla while trying to be diplomatic",
-      "punchline": "David's dry acknowledgment that Johnny created more problems while solving one",
-      "craft_total": 6.97,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "John has been repeatedly emphasizing that the wedding food is 'his gift to David.'",
+      "punchline": "David dryly punctures the performative generosity \u2014 the more you advertise a gift, the less generous it seems.",
+      "craft_total": 7.52,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Sharp character interplay showing David's exasperation with his father's well-meaning blunders",
+      "explanation": "This is a sharp, well-structured observation delivered with perfect David deadpan. It captures a genuine social truth (performative generosity undermines itself) and is entirely character-specific \u2014 only David would say this so precisely and dryly. High quotability and great economy.",
       "dialogue": [
         {
           "speaker": "David",
@@ -92,22 +93,23 @@
     },
     {
       "index": 4,
-      "text": "Tippy always had his fingers in a few fires.",
+      "text": "John's awkward pivot: 'I-I was just thinking that, you know, how can Twyla enjoy herself at the wedding if she's-if she's working?' \u2014 a transparent rationalization.",
       "characters": [
-        "Moira"
+        "John Rose",
+        "Twyla"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Discussion of Tippy Bernstein wanting a meeting",
-      "punchline": "Moira mangles the idiom 'fingers in many pies' with 'irons in the fire'",
-      "craft_total": 6.67,
-      "impact_score": 5.83,
-      "quotability": 6.0,
+      "setup": "Caught by David's observation and Moira's sarcasm, John scrambles for a reason why Twyla wasn't invited.",
+      "punchline": "His stammering, obviously reverse-engineered justification is more damning than silence would have been.",
+      "craft_total": 6.11,
+      "impact_score": 6.17,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Moira malapropism - attempts sophisticated language but muddles common idioms",
+      "explanation": "Good character comedy \u2014 John's 'generous' explanations always dig him deeper. The stammering delivery implied by the text adds to it. Solid but not exceptional.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -117,23 +119,22 @@
     },
     {
       "index": 5,
-      "text": "Oh, you're looking so natural and peppy. / A bit of a rough night actually. / Well, you're fooling everyone, dear.",
+      "text": "'I'm invited to the wedding?' \u2014 Twyla's genuinely surprised, innocent reaction to learning she's invited.",
       "characters": [
-        "Moira",
-        "Alexis"
+        "Twyla"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "visual_gag"
+        "reaction_beat",
+        "character_comedy"
       ],
-      "setup": "Moira compliments Alexis on looking good",
-      "punchline": "Alexis admits she looks terrible, Moira doubles down on the obvious lie",
-      "craft_total": 6.18,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "John's improvised excuse inadvertently implies Twyla IS invited.",
+      "punchline": "Twyla's completely guileless surprise \u2014 she had no idea \u2014 makes John's original slight even worse retroactively.",
+      "craft_total": 7.15,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Standard mother-daughter dynamic with Moira's characteristic inability to read situations",
+      "explanation": "Twyla's oblivious warmth is perfectly deployed. Four words does tremendous work: it reveals she wasn't invited, makes John's lie more absurd, and gets a genuine laugh from Twyla's unguarded sweetness. High economy score justified.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -151,22 +152,22 @@
     },
     {
       "index": 6,
-      "text": "It's printed right here on the cover of the book that he's handing out to all of you.",
+      "text": "'Look at you, John, doling out gift after gift this morning like the Turkish Saint Nikolaas.'",
       "characters": [
-        "Roland"
+        "Moira Rose"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Johnny formally introduces himself to new motel staff",
-      "punchline": "Roland points out the redundancy since Johnny's name is on the books he's distributing",
-      "craft_total": 7.04,
-      "impact_score": 6.25,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "John has accidentally extended an invitation to Twyla on top of paying for the food.",
+      "punchline": "Moira's grandiose, oddly specific 'Turkish Saint Nikolaas' comparison is both praise and mockery \u2014 and the specificity of 'Turkish' is pure Moira absurdism.",
+      "craft_total": 7.52,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Roland's anti-corporate attitude undermining Johnny's attempts at professionalism",
+      "explanation": "Only Moira Rose would say 'Turkish Saint Nikolaas.' The specificity is the joke \u2014 it's not Santa Claus, it's not even Saint Nicholas, it's the Turkish variant, delivered with utter conviction. This is peak Moira: simultaneously complimenting and condescending, wrapped in absurd erudition. High character integration and originality are fully justified.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -180,22 +181,22 @@
     },
     {
       "index": 7,
-      "text": "And I'm the boss you're gonna come to when you don't understand why this guy is making you read about VHS tapes.",
+      "text": "Moira dramatically announces 'I must attend to some good news of my own' and exits, leaving everyone hanging.",
       "characters": [
-        "Roland"
+        "Moira Rose"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Roland introducing himself as co-owner to new staff",
-      "punchline": "Immediately undermines Johnny's authority while misunderstanding the business book content",
-      "craft_total": 7.23,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "David asks Moira what her good news is.",
+      "punchline": "Rather than sharing, Moira makes her exit into a theatrical event, treating her departure as performance.",
+      "craft_total": 6.07,
+      "impact_score": 5.5,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Roland moment - completely missing the point while asserting dominance",
+      "explanation": "Solid Moira character beat \u2014 her inability to share the spotlight even with her own good news is funny. Not a standout but contributes to her characterization.",
       "dialogue": [
         {
           "speaker": "Roland",
@@ -225,22 +226,23 @@
     },
     {
       "index": 8,
-      "text": "Not exactly the united front we had discussed, Roland.",
+      "text": "Upon seeing Alexis looking rough: 'Oh, you're looking so natural and peppy.' \u2014 Moira's performative compliment that is clearly a lie.",
       "characters": [
-        "Johnny"
+        "Moira Rose",
+        "Alexis Rose"
       ],
       "joke_types": [
-        "deadpan_understatement",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Roland just completely undermined Johnny in front of new employees",
-      "punchline": "Johnny's understated response to being sabotaged",
-      "craft_total": 6.77,
-      "impact_score": 5.83,
-      "quotability": 5.0,
+      "setup": "Alexis arrives looking terrible after a rough night.",
+      "punchline": "Moira deploys an obviously false compliment with complete sincerity, which is somehow more insulting.",
+      "craft_total": 5.85,
+      "impact_score": 5.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Johnny's passive-aggressive politeness in the face of Roland's chaos",
+      "explanation": "Moira's backhanded compliments are a reliable comedic device. 'Natural and peppy' is a funny choice of words. Functional and character-specific but not a standout.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -250,22 +252,22 @@
     },
     {
       "index": 9,
-      "text": "Ronnie found termite damage in Room Six and apparently the entire foundation is about to collapse.",
+      "text": "Well, you're fooling everyone, dear.",
       "characters": [
-        "Stevie"
+        "Moira Rose"
       ],
       "joke_types": [
-        "escalation",
+        "irony_sarcasm",
         "deadpan_understatement"
       ],
-      "setup": "Stevie wants to speak privately about motel issues",
-      "punchline": "Casually delivers catastrophic news about structural collapse",
-      "craft_total": 7.23,
-      "impact_score": 7.17,
-      "quotability": 6.5,
+      "setup": "Alexis confirms she had a rough night; Johnny tried to compliment her.",
+      "punchline": "Moira's response acknowledges the lie while framing it as genuine encouragement \u2014 delivered with total sincerity that makes it more cutting.",
+      "craft_total": 6.7,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Stevie's characteristic deadpan delivery of terrible news during the worst possible moment",
+      "explanation": "Short, devastating, perfectly Moira. She delivers a non-compliment as if it's a compliment, and the economy is exceptional. Four words that say everything about Moira's relationship with artifice.",
       "dialogue": [
         {
           "speaker": "Stevie",
@@ -283,22 +285,23 @@
     },
     {
       "index": 10,
-      "text": "Well, I gave one of my kidneys to my cousin Bruce. Uh, we can see how I run on an empty tank.",
+      "text": "John notices something in Alexis's hair and awkwardly pulls it out \u2014 the visual beat of Alexis asking 'Is it gone?' and the moment of shared discomfort.",
       "characters": [
-        "Roland"
+        "John Rose",
+        "Alexis Rose"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "physical_slapstick",
+        "cringe_discomfort"
       ],
-      "setup": "Discussion of how to cover termite repair costs",
-      "punchline": "Roland casually mentions organ donation as if it's a business expense, then complains about performance",
-      "craft_total": 7.42,
-      "impact_score": 7.33,
-      "quotability": 7.5,
+      "setup": "Alexis has had a rough night; something is in her hair.",
+      "punchline": "The physical awkwardness of a parent picking something out of their adult daughter's hair in public, followed by her forlorn 'Is it gone?'",
+      "craft_total": 5.94,
+      "impact_score": 5.83,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Absurd Roland logic treating major surgery like a casual business transaction",
+      "explanation": "Gentle physical comedy. The pathos of Alexis's messy state and John's quiet dad-care gives it warmth. Not a big laugh but a charming character moment.",
       "dialogue": [
         {
           "speaker": "Roland",
@@ -316,22 +319,22 @@
     },
     {
       "index": 11,
-      "text": "I went to school with a guy who starts 'accidental' fires. I mean, worse comes to worst, we could collect the insurance money.",
+      "text": "Roland interrupting Johnny's introduction: 'It's printed right here on the cover of the book that he's handing out to all of you.'",
       "characters": [
-        "Roland"
+        "Roland Schitt"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Continuing discussion of financial solutions",
-      "punchline": "Roland casually suggests insurance fraud with air quotes around 'accidental'",
-      "craft_total": 7.3,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Johnny formally introduces himself to new motel staff.",
+      "punchline": "Roland undercuts the moment by literally pointing out his name is already on the materials \u2014 making the introduction feel pompous.",
+      "craft_total": 6.78,
+      "impact_score": 6.67,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Roland's casual criminality delivered with small-town matter-of-factness",
+      "explanation": "Classic Roland deflation. It's both rude and technically accurate \u2014 a good combination. Shows the motel partnership dynamic efficiently.",
       "dialogue": [
         {
           "speaker": "Roland",
@@ -341,22 +344,22 @@
     },
     {
       "index": 12,
-      "text": "because Bruce told me my kidney was garbage.",
+      "text": "Roland introduces himself as 'the boss you're gonna come to when you don't understand why this guy is making you read about VHS tapes.'",
       "characters": [
-        "Roland"
+        "Roland Schitt"
       ],
       "joke_types": [
-        "callback",
-        "absurdist"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Johnny says they're not selling organs",
-      "punchline": "Roland reveals his kidney donation was rejected, adding insult to injury",
-      "craft_total": 7.73,
-      "impact_score": 8.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect callback that makes the previous absurd situation even more pathetic and funny",
+      "setup": "Roland introduces himself after undermining Johnny.",
+      "punchline": "He positions himself as the anti-Johnny while simultaneously confessing his own ignorance about VHS tapes and Johnny's business philosophy.",
+      "craft_total": 6.73,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The VHS tapes detail is a funny specific \u2014 Johnny's business book references outdated media metaphors and Roland is gleefully ignorant of it. Good character work that also plants a payoff joke later.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -370,23 +373,22 @@
     },
     {
       "index": 13,
-      "text": "Take the pills, Vivian. / A 'please' might be nice!",
+      "text": "'Not exactly the united front we had discussed, Roland.'",
       "characters": [
-        "TV Show",
-        "Moira"
+        "Johnny Rose"
       ],
       "joke_types": [
-        "reaction_beat",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Watching Sunrise Bay on TV",
-      "punchline": "Moira critiques her own character's rudeness as if watching someone else",
-      "craft_total": 6.61,
-      "impact_score": 5.67,
+      "setup": "Roland has completely sabotaged Johnny's staff orientation.",
+      "punchline": "Johnny's masterfully restrained, passive-aggressive understatement.",
+      "craft_total": 6.38,
+      "impact_score": 6.17,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Moira's disconnect from her own past performance, treating herself as a separate entity",
+      "explanation": "Johnny's long-suffering politeness is a reliable source of comedy. 'Not exactly' is doing tremendous work \u2014 it's the absolute minimum protest, which makes it funnier.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -396,22 +398,24 @@
     },
     {
       "index": 14,
-      "text": "Oh, suddenly she's the director.",
+      "text": "Stevie reveals the termite damage and foundation collapse in front of all the new staff.",
       "characters": [
-        "Moira"
+        "Stevie Budd",
+        "Johnny Rose",
+        "Roland Schitt"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "cringe_discomfort",
+        "escalation"
       ],
-      "setup": "Alexis questions plot logic of Sunrise Bay",
-      "punchline": "Moira dismisses her daughter's valid criticism with sarcasm",
-      "craft_total": 6.8,
-      "impact_score": 6.17,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Johnny tries to redirect Stevie to speak privately; she says 'Okay' and then immediately announces the crisis out loud.",
+      "punchline": "The catastrophic news is delivered to the entire assembled staff who were just being welcomed to the 'Rosebud Motel family.'",
+      "craft_total": 6.9,
+      "impact_score": 7.17,
+      "quotability": 4.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Moira's defensive reaction to criticism of her professional work",
+      "explanation": "The timing is excellent \u2014 Johnny's 'we're all family here' line sets it up perfectly, and Stevie's unsentimental honesty demolishes the orientation's positive energy. Stevie as the anti-pretension voice is well-used.",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -425,23 +429,22 @@
     },
     {
       "index": 15,
-      "text": "Well, I feel like your publicist should be there if you're meeting with Tickle Bernstein. / Tippy. It's Tippy",
+      "text": "Johnny sends the new staff to the vending machine while a crisis meeting happens \u2014 'Why don't we take five, and feel free to help yourself to one of our vending machine over there.'",
       "characters": [
-        "Alexis",
-        "Moira"
+        "Johnny Rose"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Alexis wants to accompany Moira to the meeting",
-      "punchline": "Gets the producer's name wrong in an unfortunately childish way",
-      "craft_total": 6.72,
-      "impact_score": 5.83,
-      "quotability": 5.0,
+      "setup": "Johnny needs to salvage the orientation while managing a financial disaster.",
+      "punchline": "The grand 'Rosebud Motel family welcome' devolves to pointing people toward a vending machine.",
+      "craft_total": 6.31,
+      "impact_score": 6.0,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple name confusion that plays into Alexis's sometimes childish perspective",
+      "explanation": "Good deflation gag. The visual of new employees shuffling to a vending machine while management argues about organ sales is funny context, but this specific line is just the setup vehicle.",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -467,22 +470,22 @@
     },
     {
       "index": 16,
-      "text": "How dare you make me kill my father twice!",
+      "text": "'Well, I gave one of my kidneys to my cousin Bruce. Uh, we can see how I run on an empty tank.'",
       "characters": [
-        "TV Show"
+        "Roland Schitt"
       ],
       "joke_types": [
         "absurdist",
-        "observational"
+        "character_comedy"
       ],
-      "setup": "Watching melodramatic soap opera dialogue",
-      "punchline": "The inherently ridiculous nature of soap opera plotting",
-      "craft_total": 6.37,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "The team is brainstorming how to cover the cost of the foundation repairs.",
+      "punchline": "Roland casually reveals he already donated a kidney and uses it as a financial reference point \u2014 framing organ donation as an asset class.",
+      "craft_total": 7.43,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Standard soap opera parody highlighting the absurd melodrama of the genre",
+      "explanation": "Classic Roland \u2014 the casual reveal that he already gave away a kidney (to cousin Bruce!) is wonderfully absurd and specific. 'Run on an empty tank' is a perfect piece of misapplied idiom. Only Roland would frame organ donation as a business resource he already spent.",
       "dialogue": [
         {
           "speaker": "",
@@ -492,22 +495,22 @@
     },
     {
       "index": 17,
-      "text": "David would understand. I mean, not at first, but deep down he's not a total monster.",
+      "text": "'I went to school with a guy who starts \"accidental\" fires.'",
       "characters": [
-        "Johnny"
+        "Stevie Budd"
       ],
       "joke_types": [
-        "character_comedy",
+        "dark_subversive",
         "deadpan_understatement"
       ],
-      "setup": "Johnny considering backing out of paying for David's wedding food",
-      "punchline": "Backhanded compliment suggesting David is mostly monstrous but not totally",
-      "craft_total": 7.22,
-      "impact_score": 6.67,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "They need money fast; options are running out.",
+      "punchline": "Stevie casually floats arson as a financial solution, the air quotes around 'accidental' making it even more incriminating.",
+      "craft_total": 7.37,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect father-son dynamic where love comes through insults and qualifications",
+      "explanation": "Excellent Stevie joke. The deadpan delivery of what is essentially a confession of arson connections, the air quotes doing all the work, and the casual 'went to school with' framing \u2014 this is peak Stevie nihilism. High economy, high originality for the show, and perfectly character-integrated. Genuinely memorable line.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -525,22 +528,22 @@
     },
     {
       "index": 18,
-      "text": "So we're two minutes late and if this were the actual wedding, the doors would be closed and you would be locked out.",
+      "text": "'We're not burning anything down and we're not selling any organs.' \u2014 Johnny having to explicitly rule out arson and organ trafficking.",
       "characters": [
-        "David"
+        "Johnny Rose"
       ],
       "joke_types": [
         "escalation",
         "character_comedy"
       ],
-      "setup": "Arriving at wedding food tasting",
-      "punchline": "David immediately catastrophizing minor lateness with extreme wedding etiquette",
-      "craft_total": 7.01,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Roland and Stevie have each offered genuinely illegal/inadvisable solutions.",
+      "punchline": "Johnny has to formally veto two criminal acts as if they were legitimate boardroom proposals.",
+      "craft_total": 7.16,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "David's perfectionism and anxiety manifesting in wedding planning extremes",
+      "explanation": "The escalation pays off beautifully \u2014 the fact that both arson and organ sales need to be vetoed in one breath is the joke. Johnny as the reasonable straight man vetoing insane proposals is a great recurring device.",
       "dialogue": [
         {
           "speaker": "David",
@@ -558,22 +561,23 @@
     },
     {
       "index": 19,
-      "text": "Stevie is my Maid of Honour, she's just here to eat.",
+      "text": "'That's good, because Bruce told me my kidney was garbage.'",
       "characters": [
-        "David"
+        "Roland Schitt"
       ],
       "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
+        "callback",
+        "escalation",
+        "absurdist"
       ],
-      "setup": "David introducing everyone to the caterer",
-      "punchline": "Reducing Stevie's presence to pure freeloading",
-      "craft_total": 6.78,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "David's blunt assessment of Stevie's motivations, which probably isn't wrong",
+      "setup": "Johnny has ruled out organ selling; Roland's kidney donation was established earlier.",
+      "punchline": "Roland reveals his kidney was rejected \u2014 with the specific, humanizing detail that 'Bruce told me my kidney was garbage.'",
+      "craft_total": 8.31,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the standout joke of the episode's first half. The callback structure is perfect: plant the kidney in joke #17, let Johnny veto it in #19, then detonate the callback with Bruce's verdict. 'My kidney was garbage' is an extraordinarily specific, absurd, and quotable piece of character writing. The specificity of Bruce personally critiquing the kidney quality is inspired. This comfortably reaches the 8+ threshold \u2014 it's comparable to the 'Snip snap' anchor in escalation and quotability, though not quite as iconic.",
       "dialogue": [
         {
           "speaker": "David",
@@ -583,23 +587,23 @@
     },
     {
       "index": 20,
-      "text": "Poor thing. / That's the garnish for the lobster roll.",
+      "text": "Alexis watching 'Sunrise Bay' on the box set: 'Take the pills, Vivian. / A \"please\" might be nice!'",
       "characters": [
-        "Johnny",
-        "Penelope"
+        "Alexis Rose",
+        "Moira Rose (on TV)"
       ],
       "joke_types": [
-        "setup_punchline",
-        "cringe_discomfort"
+        "meta_self_referential",
+        "character_comedy"
       ],
-      "setup": "Johnny sympathetically comments on what he thinks is a small, sad salad",
-      "punchline": "It's revealed to be just garnish, making his comment inappropriately emotional",
-      "craft_total": 7.0,
-      "impact_score": 6.5,
+      "setup": "Alexis is watching her mother's old soap opera on DVD.",
+      "punchline": "The soap opera dialogue is deliberately melodramatic, and 'a please might be nice' adds a whiff of Moira's real personality into the fictional character.",
+      "craft_total": 6.12,
+      "impact_score": 5.83,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic misunderstanding humor where Johnny's empathy is misdirected",
+      "explanation": "Fun meta moment \u2014 the soap dialogue is a gentle parody of the genre, and the demanding attitude bleeds between Vivian and Moira nicely.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -621,22 +625,22 @@
     },
     {
       "index": 21,
-      "text": "Lobster! Ah. Are we inviting The Vanderbilts?",
+      "text": "'You really think you'd be head of surgery at Sunrise General if you weren't possessed by your father? Who also happened to be the former head of surgery at Sunrise General?'",
       "characters": [
-        "Johnny"
+        "Alexis Rose (reading TV dialogue)"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "absurdist",
+        "meta_self_referential"
       ],
-      "setup": "Learning the appetizer is lobster rolls",
-      "punchline": "Johnny's sticker shock expressed through reference to extreme wealth",
-      "craft_total": 6.71,
-      "impact_score": 6.0,
+      "setup": "The show-within-a-show soap opera dialogue is being watched on DVD.",
+      "punchline": "The gleefully convoluted soap opera logic \u2014 nepotism even in supernatural possession \u2014 is a sharp parody of the genre's ridiculous escalation.",
+      "craft_total": 6.51,
+      "impact_score": 6.67,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Johnny's attempt at humor to mask his anxiety about wedding costs",
+      "explanation": "The soap opera parody lands well \u2014 the logic of 'possessed by nepotism' is genuinely funny and a good send-up of how soaps work. The nested absurdity (supernatural career advancement) is a smart comedic concept.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -646,22 +650,22 @@
     },
     {
       "index": 22,
-      "text": "if we're not using the lettuce under the lobster roll can we just not make a side salad out of this lettuce?",
+      "text": "'Oh, enjoying the box set, are we? This season is weird. You're great in it, but I forgot how bad Clifton Sparks was.'",
       "characters": [
-        "Johnny"
+        "Moira Rose"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Fancy salad options being discussed",
-      "punchline": "Johnny desperately trying to repurpose garnish into a full dish to save money",
-      "craft_total": 6.96,
-      "impact_score": 6.33,
+      "setup": "Moira enters to find Alexis watching Sunrise Bay.",
+      "punchline": "Moira's casual self-praise ('you're great in it') paired with her dismissal of a co-star she's about to meet \u2014 creating dramatic irony since we know Clifton is about to reappear.",
+      "craft_total": 7.1,
+      "impact_score": 7.0,
       "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Johnny's penny-pinching desperation reaching embarrassing levels",
+      "explanation": "Excellent dramatic irony \u2014 Moira casually trashing Clifton when he's literally coming to see her today creates a lovely dramatic irony payoff. Her reflexive self-complimenting ('you're great in it') is perfectly in character.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -679,22 +683,22 @@
     },
     {
       "index": 23,
-      "text": "And speaking of, we are adding eight more plates. I was finally allowed to invite some friends from New York, they're a caviar crowd.",
+      "text": "'Oh, it's Uncle Sparky to you, Dear.' \u2014 Moira defending Clifton Sparks as 'Uncle Sparky' after dismissing him.",
       "characters": [
-        "David"
+        "Moira Rose"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Johnny just learned the high per-plate cost",
-      "punchline": "David immediately adds expensive guests who expect expensive food",
-      "craft_total": 7.04,
-      "impact_score": 6.83,
-      "quotability": 6.5,
+      "setup": "Alexis calls Clifton Sparks bad; Moira has just agreed.",
+      "punchline": "Moira pivots to mild defensiveness by invoking his family nickname \u2014 revealing deeper complexity/history while staying in character.",
+      "craft_total": 6.97,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect timing and character work - David's obliviousness to his father's financial stress",
+      "explanation": "'Uncle Sparky' is a great character detail \u2014 implies a long, complicated history. Moira's pivot from critique to fond nickname in one breath is funny.",
       "dialogue": [
         {
           "speaker": "David",
@@ -712,22 +716,22 @@
     },
     {
       "index": 24,
-      "text": "Oh, you know what they say about tenderloin; always... a risky option. It's gotta be done just, just right.",
+      "text": "Alexis's soap opera plot confusion: 'Why is Vivian the only one who gets possessed when Trystan also played the Ouija game?'",
       "characters": [
-        "Johnny"
+        "Alexis Rose"
       ],
       "joke_types": [
-        "character_comedy",
-        "misdirection"
+        "absurdist",
+        "meta_self_referential"
       ],
-      "setup": "Tasting the beef tenderloin",
-      "punchline": "Johnny making up food wisdom to mask that he's worried about the cost",
-      "craft_total": 7.03,
-      "impact_score": 6.33,
+      "setup": "Alexis is deep in the Sunrise Bay box set and engaging earnestly with its plot logic.",
+      "punchline": "The sincere application of logical scrutiny to soap opera supernatural nonsense is funny; Alexis treating it like a solvable mystery.",
+      "craft_total": 6.94,
+      "impact_score": 6.67,
       "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Johnny trying to sound sophisticated while actually being cheap",
+      "explanation": "Fun meta commentary. Alexis engaging with soap opera logic like it's a real mystery is character-appropriate and the Ouija detail is delightfully specific.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -741,23 +745,23 @@
     },
     {
       "index": 25,
-      "text": "Well, you don't want people coming to your wedding and only talking about the food. / That is literally the only thing I want them talking about. What is wrong with you?",
+      "text": "Moira insists Alexis shouldn't come to the Tippy Bernstein meeting: 'not necessary, dear. Not in your condition.'",
       "characters": [
-        "Johnny",
-        "David"
+        "Moira Rose",
+        "Alexis Rose"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Johnny suggests people shouldn't focus on the food",
-      "punchline": "David's horror at this suggestion and questioning his father's sanity",
-      "craft_total": 7.34,
-      "impact_score": 7.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Alexis, who looks terrible after a rough night, wants to come as Moira's publicist.",
+      "punchline": "Moira's 'not in your condition' is simultaneously caring and brutally honest \u2014 she's protecting Moira's image by keeping Alexis hidden.",
+      "craft_total": 6.3,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect character clash - Johnny's practical concerns vs David's perfectionism, with great escalation",
+      "explanation": "Good Moira-Alexis dynamic. The line reveals Moira's priorities (her image over her daughter's feelings) without being cruel \u2014 she frames it as caring.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -771,22 +775,22 @@
     },
     {
       "index": 26,
-      "text": "Why not, it's not like we're paying for the samples.",
+      "text": "'What's important is that you stay here where no one can see you and focus on your critical self-care.'",
       "characters": [
-        "Johnny"
+        "Moira Rose"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Being offered more expensive food to sample",
-      "punchline": "Johnny's bitter sarcasm about 'free' samples leading to expensive choices",
-      "craft_total": 7.19,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Moira is trying to keep the disheveled Alexis away from her important meeting.",
+      "punchline": "'Where no one can see you' is the actual reason, barely dressed up as concern for Alexis's wellbeing.",
+      "craft_total": 6.96,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good sarcastic moment showing Johnny's understanding of the sales tactic while being powerless to stop it.",
+      "explanation": "The tell is 'where no one can see you' \u2014 Moira's true concern slips through her performance of maternal care. Funny and revealing of character simultaneously.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -804,22 +808,22 @@
     },
     {
       "index": 27,
-      "text": "Cured that vertigo years ago. I hired a hynotherapist. Then I married her. And then I divorced her. You-are-getting-very... broke.",
+      "text": "'How dare you make me kill my father twice!' \u2014 Moira reacting dramatically to Sunrise Bay on TV.",
       "characters": [
-        "Tippy"
+        "Moira Rose"
       ],
       "joke_types": [
-        "escalation",
-        "wordplay_pun"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Tippy mentioning his vertigo cure",
-      "punchline": "Rapid-fire relationship saga ending with financial ruin pun on hypnosis",
-      "craft_total": 7.6,
-      "impact_score": 7.67,
-      "quotability": 8.0,
+      "setup": "Moira is watching Sunrise Bay while preparing to leave.",
+      "punchline": "The soap opera apparently has Moira's character killing her own father, twice, and she's outraged at the writing.",
+      "craft_total": 7.63,
+      "impact_score": 8.0,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great escalation structure and clever wordplay combining hypnosis with divorce financial consequences",
+      "explanation": "Brief but brilliant. The outrage is directed at the writing, not the act \u2014 Moira's problem is not 'patricide twice' but that the writers put her through it. The word 'twice' is doing enormous work. It tells us everything about both Sunrise Bay and Moira's relationship with the show. High economy, high character integration, genuinely quotable.",
       "dialogue": [
         {
           "speaker": "Tippy",
@@ -837,23 +841,22 @@
     },
     {
       "index": 28,
-      "text": "You're looking fresh and dewy. / Gave up the drink. Strictly a wine and scotch man now.",
+      "text": "'You'll pay for this one day.' \u2014 Moira threatening... the television? A character on screen?",
       "characters": [
-        "Moira",
-        "Clifton"
+        "Moira Rose"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Moira compliments Clifton's appearance",
-      "punchline": "Clifton's definition of sobriety is absurdly narrow",
-      "craft_total": 7.18,
-      "impact_score": 6.83,
-      "quotability": 7.5,
+      "setup": "Moira is watching and reacting to Sunrise Bay drama.",
+      "punchline": "It's unclear if she's reacting to the show's plot or making a real-life threat \u2014 the ambiguity is the joke.",
+      "craft_total": 5.54,
+      "impact_score": 5.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect alcoholic logic - technically giving up 'drink' while keeping alcohol",
+      "explanation": "Moira's dramatic pronouncements bleeding between fiction and reality is a recurring device; this instance is concise and ambiguous enough to work.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -875,22 +878,23 @@
     },
     {
       "index": 29,
-      "text": "Oh, that was an actual court case. My daughter wanted to emancipate and the press couldn't get enough.",
+      "text": "The visual of Johnny and Stevie eating the wedding tasting food in a back room \u2014 Stevie caught still eating the tenderloin.",
       "characters": [
-        "Clifton"
+        "Johnny Rose",
+        "Stevie Budd"
       ],
       "joke_types": [
-        "dark_subversive",
-        "misdirection"
+        "visual_gag",
+        "character_comedy"
       ],
-      "setup": "Moira praising what she thinks is Clifton's acting work",
-      "punchline": "Reveals it was his real life family dysfunction, not acting",
-      "craft_total": 7.62,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "The wedding tasting is presented as a grand, stressful affair for John.",
+      "punchline": "Stevie, as Maid of Honour 'just here to eat,' is later found privately still eating the tenderloin.",
+      "craft_total": 6.12,
+      "impact_score": 5.83,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark comedy misdirection - Hollywood dysfunction being real rather than fictional",
+      "explanation": "Good character-consistent visual. Stevie's unabashed mercenary attendance is funny.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -912,22 +916,22 @@
     },
     {
       "index": 30,
-      "text": "I can't wait for the screener.",
+      "text": "David arrives two minutes late and declares the wedding doors would have been closed",
       "characters": [
-        "Clifton"
+        "David Rose"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Discussion of Moira's acclaimed 'Crows' movie",
-      "punchline": "Clifton admits he hasn't seen her successful film",
-      "craft_total": 7.21,
-      "impact_score": 6.83,
-      "quotability": 4.0,
+      "setup": "David arrives slightly late to the wedding tasting",
+      "punchline": "He immediately turns his own lateness into a lesson about the rules, punishing himself theoretically while being the offender",
+      "craft_total": 6.31,
+      "impact_score": 6.25,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Reveals Clifton's insincerity and jealousy - he won't even watch her success",
+      "explanation": "David's self-righteousness applied to himself is a nice character moment. The fact that he's lecturing about punctuality while being the late one is classic David cognitive dissonance.",
       "dialogue": [
         {
           "speaker": "Clifton",
@@ -937,22 +941,23 @@
     },
     {
       "index": 31,
-      "text": "You vomited a demon into a toilet, and then fell in and drowned.",
+      "text": "Johnny takes and eats what turns out to be the garnish, remarking it's 'a little side salad' \u2014 'Poor thing. That's the garnish for the lobster roll.'",
       "characters": [
-        "Alexis"
+        "Johnny Rose",
+        "David Rose"
       ],
       "joke_types": [
-        "absurdist",
+        "character_comedy",
         "visual_gag"
       ],
-      "setup": "Discussion of how Moira's character was killed off",
-      "punchline": "Absurdly undignified death sequence for a soap opera character",
-      "craft_total": 7.88,
-      "impact_score": 8.25,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Johnny is trying to show engagement with the food while also watching the prices.",
+      "punchline": "He enthusiastically eats garnish as a course, mistaking presentation for food.",
+      "craft_total": 6.69,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliantly absurd and specific death scene that perfectly parodies soap opera excess",
+      "explanation": "Classic fish-out-of-water comedy. Johnny's budget anxiety makes him overcompensate into ignorance. 'Poor thing' from David is a nice reaction beat.",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -974,22 +979,22 @@
     },
     {
       "index": 32,
-      "text": "Well, the writers insisted it was symbolic.",
+      "text": "'Are we inviting The Vanderbilts?' \u2014 Johnny's alarmed reaction to the lobster roll.",
       "characters": [
-        "Moira"
+        "Johnny Rose"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Alexis describing the ridiculous death scene",
-      "punchline": "Moira's attempt to find artistic merit in obvious humiliation",
-      "craft_total": 6.99,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "David has ordered lobster rolls for the wedding menu.",
+      "punchline": "Johnny's incredulous Vanderbilt reference \u2014 a man who used to charter jets for weddings \u2014 now finding lobster extravagant.",
+      "craft_total": 6.88,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Moira's characteristic self-deception about her professional treatment",
+      "explanation": "Excellent character joke because of the dramatic fall it implies. This man who used to actually hobnob with the Vanderbilt tier is now shocked by a lobster roll. The reference does a lot of biographical work. High character integration justified.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -999,22 +1004,22 @@
     },
     {
       "index": 33,
-      "text": "She had a good run. But let's just say 'someone' reminded the producers that there's only room for one head of surgery at Sunrise General.",
+      "text": "'if we're not using the lettuce under the lobster roll can we just not make a side salad out of this lettuce?' \u2014 Johnny's budget-saving suggestion.",
       "characters": [
-        "Clifton (on video)"
+        "Johnny Rose"
       ],
       "joke_types": [
         "character_comedy",
-        "meta_self_referential"
+        "deadpan_understatement"
       ],
-      "setup": "Interview about Moira's departure from the show",
-      "punchline": "Barely concealed admission of sabotaging her career with air quotes",
-      "craft_total": 7.21,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great meta moment revealing industry politics and Clifton's pettiness",
+      "setup": "The caterer has suggested a premium parmesan and black truffle salad; David enthusiastically agrees.",
+      "punchline": "Johnny proposes recycling the garnish as the salad course \u2014 peak frugality that would horrify any wedding caterer.",
+      "craft_total": 7.33,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback to the garnish mistake gives this extra punch \u2014 now he's not just eating garnish, he's proposing to serve garnish as a course at his son's wedding. The line is long but every word earns its place. This perfectly captures Johnny's arc from extravagance to desperate frugality.",
       "dialogue": [
         {
           "speaker": "Clifton Powell",
@@ -1024,22 +1029,23 @@
     },
     {
       "index": 34,
-      "text": "Adriana had that DUI last year. Popped a breasts, poor dear",
+      "text": "'Are these prices per table?' / 'Um, per plate.' \u2014 John's horrified clarification.",
       "characters": [
-        "Moira"
+        "Johnny Rose",
+        "Penelope"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Discussing other cast members making headlines",
-      "punchline": "Moira's malapropism turning 'breast implants' into 'popped a breasts'",
-      "craft_total": 7.0,
-      "impact_score": 6.75,
-      "quotability": 7.0,
+      "setup": "Johnny is anxiously watching costs at the tasting.",
+      "punchline": "The pause before Penelope's 'per plate' and Johnny's implied devastation.",
+      "craft_total": 6.16,
+      "impact_score": 6.17,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Moira malapropism with unfortunate grammatical construction",
+      "explanation": "A reliable joke type (cost sticker shock) executed adequately. The beat works but it's a familiar gag.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -1049,22 +1055,22 @@
     },
     {
       "index": 35,
-      "text": "Perhaps a little more housework and little less mouse work might do you some good, Alexis.",
+      "text": "'And speaking of, we are adding eight more plates. I was finally allowed to invite some friends from New York, they're a caviar crowd.'",
       "characters": [
-        "Moira"
+        "David Rose"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Alexis has been doing internet research",
-      "punchline": "Moira's dismissive pun on 'mouse' (computer) vs housework",
-      "craft_total": 7.28,
+      "setup": "Johnny is already alarmed by the per-plate pricing.",
+      "punchline": "David immediately adds eight more plates and describes the guests as 'a caviar crowd' \u2014 implying even higher expectations.",
+      "craft_total": 6.58,
       "impact_score": 6.5,
-      "quotability": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever wordplay showing Moira's generational divide and dismissiveness",
+      "explanation": "Good escalation \u2014 just as Johnny starts processing the base cost, David piles on. 'A caviar crowd' is a funny, specific detail that implies David still lives mentally in his old world.",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -1078,22 +1084,22 @@
     },
     {
       "index": 36,
-      "text": "Penelope asked if you wanted to crack the top of the creme brul\u00e9e and you asked, 'If we break it, do we buy it?'",
+      "text": "Johnny tastes the beef tenderloin and offers a pained 'it's fine,' then immediately pivots to 'it's the best thing I've ever tasted.'",
       "characters": [
-        "David"
+        "Johnny Rose"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "David noticing Johnny's awkwardness at the tasting",
-      "punchline": "Johnny treating gourmet food tasting like browsing in a gift shop",
-      "craft_total": 7.6,
-      "impact_score": 7.5,
-      "quotability": 7.5,
+      "setup": "Johnny tries to steer David away from expensive beef tenderloin by pretending it's mediocre.",
+      "punchline": "He can't sustain the lie for even five seconds \u2014 'it's fine' shatters instantly into rapturous honesty.",
+      "craft_total": 7.32,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect character observation showing Johnny's fish-out-of-water status with fine dining",
+      "explanation": "Well-structured misdirection. The setup is Johnny's obvious strategy; the punchline is his immediate, complete failure at it. The rapid collapse from strained 'it's fine' to 'best thing I've ever tasted' is great physical/verbal comedy. Character-specific: Johnny Rose cannot lie about food.",
       "dialogue": [
         {
           "speaker": "David",
@@ -1111,22 +1117,23 @@
     },
     {
       "index": 37,
-      "text": "Apparently there is some nest egg they set aside for Patrick and his ex-fianc\u00e9e.",
+      "text": "'Well, you don't want people coming to your wedding and only talking about the food.' / 'That is literally the only thing I want them talking about. What is wrong with you?'",
       "characters": [
-        "David"
+        "Johnny Rose",
+        "David Rose"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "David explaining why Patrick's parents gave extra money",
-      "punchline": "Casual mention that David is benefiting from his fianc\u00e9's failed previous engagement",
-      "craft_total": 6.95,
-      "impact_score": 6.25,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Johnny tries to spin the amazing food as a reason NOT to serve it at the wedding.",
+      "punchline": "David's response reveals the disconnect: for Johnny food is a distraction; for David it IS the point.",
+      "craft_total": 6.54,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "David's matter-of-fact delivery of slightly uncomfortable information",
+      "explanation": "A perfect two-hander. Johnny's folksy wisdom is completely wrong-headed and David's exasperated correction ('What is wrong with you?') lands hard. The joke reveals both characters' values simultaneously.",
       "dialogue": [
         {
           "speaker": "David",
@@ -1136,22 +1143,22 @@
     },
     {
       "index": 38,
-      "text": "You know, we had a sizable nest egg set aside for David's wedding. He was talking about Bali for a while. We were gonna charter some jets. Fly everybody.",
+      "text": "'Why not, it's not like we're paying for the samples.' / [pause] 'We're not paying for the samples, are we?'",
       "characters": [
-        "Johnny"
+        "Johnny Rose"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Johnny reflecting on their reduced circumstances",
-      "punchline": "Wistful description of the extravagant wedding they can no longer afford",
-      "craft_total": 7.15,
-      "impact_score": 6.67,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Johnny encourages himself to try the duck confit because samples are free.",
+      "punchline": "He immediately second-guesses this assumption in front of the caterer \u2014 the panic arrives mid-bite.",
+      "craft_total": 7.02,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Touching moment showing Johnny's grief over their financial loss and what it means for his son",
+      "explanation": "Excellent timing joke. The self-permission followed immediately by self-doubt is a perfect comedic rhythm. The structure \u2014 declaration, pause, horrified question \u2014 is classic and executed crisply. When Penelope confirms samples are free, his immediate request for 'a bit more tenderloin' is the cherry on top.",
       "dialogue": [
         {
           "speaker": "Johnny",
@@ -1161,41 +1168,42 @@
     },
     {
       "index": 39,
-      "text": "Hey, tell that cute bartender I'd love a sex on the beach. If she has time, I need another scotch.",
+      "text": "'Oh. Then do you wanna put a bit more tenderloin on there, please.' \u2014 Johnny's shameless request once samples are confirmed free.",
       "characters": [
-        "Tippy"
+        "Johnny Rose"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Tippy ordering drinks",
-      "punchline": "Ambiguous phrasing that could be interpreted as sexual proposition or drink order",
-      "craft_total": 6.43,
-      "impact_score": 6.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard double entendre playing on cocktail name vs sexual proposition"
-    },
-    {
-      "index": 40,
-      "text": "It was even more vicious than Vivian's getting trampled while honeymooning in Pamplona.",
-      "characters": [
-        "Moira"
-      ],
-      "joke_types": [
-        "absurdist",
-        "callback"
-      ],
-      "setup": "Moira describing her character's previous death",
-      "punchline": "Another ridiculous soap opera death involving running of the bulls",
-      "craft_total": 7.37,
-      "impact_score": 7.25,
+      "setup": "Johnny has been anxious about costs all through the tasting.",
+      "punchline": "The instant the samples are confirmed free, he shamelessly requests more of the most expensive item.",
+      "craft_total": 7.51,
+      "impact_score": 8.0,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Builds on the running gag of ridiculous soap deaths with specific cultural reference",
+      "explanation": "The payoff to both the samples anxiety and the suppressed tenderloin love. Johnny's character clarity is perfect here \u2014 he wants to save money AND get the best food. Confirmed free? Load up. Good callback."
+    },
+    {
+      "index": 40,
+      "text": "'Moira Fucking Rose.' \u2014 Tippy Bernstein's awestruck greeting.",
+      "characters": [
+        "Tippy Bernstein",
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Moira enters the caf\u00e9 for her power lunch meeting.",
+      "punchline": "Tippy's explosive greeting \u2014 the middle name is not Rose's middle name but his exclamation \u2014 is both tribute and absurdist character establishment.",
+      "craft_total": 6.64,
+      "impact_score": 7.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A great introduction for a new character. Establishes Tippy as theatrical, industry-insider, and genuinely wowed by Moira. The profanity as superlative is a well-worn device but executed with gusto.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -1205,22 +1213,23 @@
     },
     {
       "index": 41,
-      "text": "Think of it as a compliment. Your star was rising, and I was maybe jealous.",
+      "text": "'You are just as gorgeous as the day I discovered you.' / 'Oh Tippy. You're as alive as ever!'",
       "characters": [
-        "Clifton"
+        "Tippy Bernstein",
+        "Moira Rose"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Moira confronting Clifton about sabotaging her career",
-      "punchline": "Clifton's attempt to reframe career sabotage as a backhanded compliment",
-      "craft_total": 7.17,
-      "impact_score": 6.75,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Tippy pays Moira a flattering compliment.",
+      "punchline": "Moira's return compliment is 'You're as alive as ever' \u2014 which is simultaneously a compliment and a low bar. The subtext (he looks terrible but is still breathing) is the joke.",
+      "craft_total": 7.1,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Clifton's manipulative attempt to minimize his harmful actions",
+      "explanation": "Pure Moira \u2014 she can't quite bring herself to call him gorgeous so she settles for 'alive.' The politeness-as-shade device is perfectly executed. High character integration: only Moira would say this.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -1242,22 +1251,22 @@
     },
     {
       "index": 42,
-      "text": "And-and that season that you played your own brother we submitted you for Best Actress and Actor.",
+      "text": "Tippy's vertigo cure story: 'Cured that vertigo years ago. I hired a hypnotherapist. Then I married her. And then I divorced her. You-are-getting-very... broke.'",
       "characters": [
-        "Tippy"
+        "Tippy Bernstein"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "setup_punchline",
+        "escalation"
       ],
-      "setup": "Tippy claiming they submitted Moira for awards every year",
-      "punchline": "Reveals the absurd soap plot where she played her own brother",
-      "craft_total": 7.73,
-      "impact_score": 7.75,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Tippy explains he cured his vertigo by hiring a hypnotherapist.",
+      "punchline": "The escalating life events (hired, married, divorced) culminate in Tippy's punch line doing a hypnotist bit: 'You are getting very... broke.'",
+      "craft_total": 8.27,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant absurdist soap opera plotting that's somehow believable for the genre",
+      "explanation": "One of the best jokes in the episode. The structure is near-perfect: the story escalates through three life stages (employee, wife, ex-wife) and lands on a hypnotist punchline that reframes all of it as a joke about the divorce costing him money. The callback to hypnosis as the delivery mechanism for the punchline is structurally elegant. Highly quotable, completely original in its specific execution, and the character of Tippy is fully established in one joke. Comparable to the 8.0 anchor or above.",
       "dialogue": [
         {
           "speaker": "Tippy",
@@ -1279,22 +1288,22 @@
     },
     {
       "index": 43,
-      "text": "I mean at this point, I'm willing to sell my baseball signed by Geena Davis.",
+      "text": "'Tippy, I have missed that vaudevillian charm.'",
       "characters": [
-        "Roland"
+        "Moira Rose"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Roland trying to come up with valuable items to sell",
-      "punchline": "Oddly specific celebrity signature that probably isn't very valuable",
-      "craft_total": 7.51,
-      "impact_score": 7.17,
-      "quotability": 7.0,
+      "setup": "Tippy has just delivered his hypnotherapist joke.",
+      "punchline": "'Vaudevillian charm' is a polite way of saying old-fashioned and slightly corny \u2014 Moira appreciates it while subtly insulting it.",
+      "craft_total": 7.16,
+      "impact_score": 6.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Roland randomness - completely unexpected celebrity reference that makes no sense",
+      "explanation": "Moira's vocabulary as comedy. 'Vaudevillian' is precisely the word she'd use. It flatters and slightly condescends in equal measure.",
       "dialogue": [
         {
           "speaker": "Roland",
@@ -1308,22 +1317,23 @@
     },
     {
       "index": 44,
-      "text": "What if we bought 30 more motels? Right now.",
+      "text": "Clifton Sparks enters and greets Moira as 'Muffy.'",
       "characters": [
-        "Roland"
+        "Clifton Sparks",
+        "Moira Rose"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Discussion of selling the failing second motel",
-      "punchline": "Roland's solution is to dramatically increase their problems",
-      "craft_total": 7.81,
-      "impact_score": 7.5,
-      "quotability": 6.5,
+      "setup": "After Moira has been called 'Moira Fucking Rose,' a grand figure.",
+      "punchline": "Clifton's nickname 'Muffy' completely deflates the mystique \u2014 implying a more embarrassing, familiar version of Moira that predates her star persona.",
+      "craft_total": 7.39,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Roland's backwards logic presented with complete confidence",
+      "explanation": "Good deflation joke. 'Muffy' undercuts everything that came before and gives Clifton an instant character beat.",
       "dialogue": [
         {
           "speaker": "Roland",
@@ -1341,22 +1351,22 @@
     },
     {
       "index": 45,
-      "text": "A wise man once wrote: 'You miss 100% of the tapes you don't play'.",
+      "text": "'Oh, had I known you were both coming, I'd have dressed for the occasion.' \u2014 Moira, fully done up.",
       "characters": [
-        "Roland"
+        "Moira Rose"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "callback"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Roland trying to inspire Johnny with his own business wisdom",
-      "punchline": "Mangled version of Wayne Gretzky quote but with 'tapes' instead of 'shots'",
-      "craft_total": 7.43,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Clever callback combining famous quote with the VHS business theme",
+      "setup": "Clifton arrives unexpectedly alongside Tippy.",
+      "punchline": "Moira is clearly dressed to the nines; claiming she'd have dressed up is pure theatrical false modesty.",
+      "craft_total": 6.58,
+      "impact_score": 6.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Moira false modesty \u2014 she's always 'dressed for the occasion' and everyone knows it. Solid character joke.",
       "dialogue": [
         {
           "speaker": "Roland",
@@ -1374,23 +1384,22 @@
     },
     {
       "index": 46,
-      "text": "That's just the dedication, Roland. / That's as far as I got, Johnny. I'm sorry, I'm partial to historical fiction.",
+      "text": "'Gave up the drink. Strictly a wine and scotch man now.' \u2014 Clifton's sobriety claim.",
       "characters": [
-        "Johnny",
-        "Roland"
+        "Clifton Sparks"
       ],
       "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
+        "irony_sarcasm",
+        "setup_punchline"
       ],
-      "setup": "Roland quoting from Johnny's book",
-      "punchline": "Reveals Roland only read the dedication and has completely wrong genre expectations",
-      "craft_total": 7.55,
-      "impact_score": 7.25,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Moira compliments Clifton on looking 'fresh and dewy'; he attributes it to sobriety.",
+      "punchline": "He immediately undermines his sobriety by listing wine and scotch as things he still drinks.",
+      "craft_total": 7.59,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Roland moment showing his complete lack of engagement with Johnny's work",
+      "explanation": "A beautifully constructed self-contradiction. The joke is in the absolute confidence with which Clifton delivers his own paradox \u2014 he has no idea he's been funny. Highly quotable and very economical.",
       "dialogue": [
         {
           "speaker": "Roland",
@@ -1416,23 +1425,23 @@
     },
     {
       "index": 47,
-      "text": "But on the condition that Clifton be written off the show - death of my choosing. And I asked for more money. / And a diamond tennis bracelet.",
+      "text": "'Cliffy! Cliffy, I have not seen you since you starred in that electrifying courtroom drama about the potty mouth, feral child.' / 'Oh, that was an actual court case. My daughter wanted to emancipate and the press couldn't get enough.'",
       "characters": [
-        "Moira",
-        "Alexis"
+        "Moira Rose",
+        "Clifton Sparks"
       ],
       "joke_types": [
-        "escalation",
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Moira describing her negotiation demands",
-      "punchline": "Escalating from reasonable to petty revenge to pure material greed",
-      "craft_total": 7.62,
-      "impact_score": 7.25,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Moira remembers Clifton's 'electrifying courtroom drama about the potty mouth feral child.'",
+      "punchline": "It wasn't a movie \u2014 it was his real daughter trying to legally escape him, covered live by press.",
+      "craft_total": 8.31,
+      "impact_score": 8.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great escalation showing Moira's vengeful side with perfect absurd specificity",
+      "explanation": "Exceptional joke. The misdirection is perfect: 'courtroom drama about the potty mouth, feral child' sounds like a soap opera plot but is his actual child. The detail that 'the press couldn't get enough' and the breezy way Clifton recounts it makes him instantly hilarious as a character. Comparable to the 8.0 anchor and arguably above it. High marks across all categories.",
       "dialogue": [
         {
           "speaker": "Moira",
@@ -1462,22 +1471,22 @@
     },
     {
       "index": 48,
-      "text": "I made them an offer they had to refuse.",
+      "text": "'Lucky you!' \u2014 Moira's response to hearing Clifton's daughter tried to legally emancipate from him.",
       "characters": [
-        "Moira"
+        "Moira Rose"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "deadpan_understatement",
+        "dark_subversive"
       ],
-      "setup": "Alexis asking if Moira is doing the reboot",
-      "punchline": "Clever twist on Godfather quote - she intentionally made impossible demands",
-      "craft_total": 8.28,
-      "impact_score": 7.83,
-      "quotability": 9.0,
+      "setup": "Clifton has just described his daughter's legal emancipation attempt.",
+      "punchline": "Moira's cheerful 'Lucky you!' \u2014 congratulating him on generating press from his family trauma.",
+      "craft_total": 7.83,
+      "impact_score": 8.0,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant wordplay on famous movie quote that perfectly captures Moira's strategy and dignity",
+      "explanation": "Two words doing maximal comedic work. 'Lucky you!' is an extraordinary response to learning a child tried to legally escape their parent \u2014 Moira reduces it entirely to a PR win. Perfect character integration (only Moira), perfect economy (two words), dark and funny. The cheerfulness of delivery makes it land harder.",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -1499,22 +1508,22 @@
     },
     {
       "index": 49,
-      "text": "Okay, how is it that your daughter is also trapped in the cave but has never looked up once. You've been hanging over her for three straight episodes.",
+      "text": "'I can't wait for the screener.' \u2014 Clifton's response when asked what he thought of Moira's Crows movie.",
       "characters": [
-        "Alexis"
+        "Clifton Sparks"
       ],
       "joke_types": [
-        "observational",
-        "absurdist"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Continuing to watch Sunrise Bay",
-      "punchline": "Pointing out ridiculous blocking where character ignores obvious presence above",
-      "craft_total": 7.06,
-      "impact_score": 6.5,
-      "quotability": 5.5,
+      "setup": "Moira mentions her 'Crow picture' and asks Clifton's opinion.",
+      "punchline": "He hasn't seen it \u2014 a perfectly industry-insider response that implies he's been meaning to but hasn't gotten around to supporting her work.",
+      "craft_total": 7.21,
+      "impact_score": 7.17,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good observation about soap opera production absurdities and lazy staging",
+      "explanation": "Sharp and specific to the entertainment industry \u2014 everyone says they're 'waiting for the screener.' The delivery as if it's a compliment is perfectly calibrated. High economy.",
       "dialogue": [
         {
           "speaker": "Alexis",
@@ -1529,6 +1538,991 @@
           "line": "But he's like, directly in her line of sight. How do you not see that?"
         }
       ]
+    },
+    {
+      "index": 50,
+      "text": "'They wanna reboot Sunrise Bay!' / '...And I was believing you both up till now.' \u2014 Moira's incredulous reaction to Nicole Kidman being attached.",
+      "characters": [
+        "Moira Rose",
+        "Tippy Bernstein"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Tippy and Clifton progressively reveal an exciting reboot opportunity, culminating in Nicole Kidman.",
+      "punchline": "The absurdity of the escalating good news causes Moira to assume it's a lie \u2014 the best news is too good to believe.",
+      "craft_total": 7.28,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good escalation payoff. Moira's disbelief at Nicole Kidman is a nice beat \u2014 and her 'I was believing you both up till now' is a funny, measured way to express it."
+    },
+    {
+      "index": 51,
+      "text": "Tippy produces the contract offer: 'Oops, oops. What do we have here? What is that? Is this maybe a very generous offer for a direct to-series primetime Emmy contender.'",
+      "characters": [
+        "Tippy Bernstein"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Moira is skeptical; Tippy needs to close the deal.",
+      "punchline": "Tippy's theatrical 'discovery' of the contract he clearly had ready \u2014 the worst pretense of improvisation \u2014 is a character-perfect moment for a showbiz veteran.",
+      "craft_total": 6.32,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The performance of discovering something he obviously brought is a good Tippy character moment. A bit long in the delivery but the showbiz phoniness is well-captured."
+    },
+    {
+      "index": 52,
+      "text": "'It's a simple answer, Vivian. Say yes.' \u2014 Clifton calls Moira by her character name.",
+      "characters": [
+        "Clifton Sparks",
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "meta_self_referential"
+      ],
+      "setup": "Moira is hesitating over the offer.",
+      "punchline": "Clifton slides into calling her by her character's name \u2014 whether as a manipulation or habit \u2014 is a funny blurring of actor and role.",
+      "craft_total": 6.97,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Nice subtle meta moment. The blurring of Vivian and Moira is the episode's theme, and this small beat captures it."
+    },
+    {
+      "index": 53,
+      "text": "Alexis's comprehensive recap of Moira's character's death: 'you vomited a demon into a toilet, and then fell in and drowned.'",
+      "characters": [
+        "Alexis Rose"
+      ],
+      "joke_types": [
+        "absurdist",
+        "meta_self_referential"
+      ],
+      "setup": "Moira claims her death wasn't humiliating.",
+      "punchline": "Alexis's detailed, matter-of-fact recap of demon vomiting and toilet drowning \u2014 delivered as if it's merely factual \u2014 is the joke.",
+      "craft_total": 7.84,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Wonderfully specific soap opera parody. The specificity of 'vomited a demon into a toilet, and then fell in and drowned' is the gift \u2014 each element is funnier than the last. The matter-of-fact delivery (inferred from Alexis's character) is perfect. Strong originality in the detail selection."
+    },
+    {
+      "index": 54,
+      "text": "'Well, the writers insisted it was symbolic.' \u2014 Moira defending the demon toilet death.",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Alexis has just described the undeniably ridiculous circumstances of Moira's character death.",
+      "punchline": "Moira defends it earnestly as 'symbolic' \u2014 the actor who has convinced herself the soap opera death was Art.",
+      "craft_total": 8.04,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect Moira self-delusion. Only Moira Rose would claim the demon toilet death was symbolic and say it with complete conviction. High character integration and economy. The contrast between the absurd death and Moira's dignity in describing it is the joke."
+    },
+    {
+      "index": 55,
+      "text": "'I should have seen that coming after the contract demands' \u2014 Moira briefly acknowledging she possibly negotiated herself off the show.",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The conspiracy theory that Clifton had Moira written off.",
+      "punchline": "Moira half-admits her own role in a completely matter-of-fact aside.",
+      "craft_total": 6.56,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Small but telling character beat. Moira's self-awareness appears in flashes and this is a good one."
+    },
+    {
+      "index": 56,
+      "text": "Alexis reveals she fell 'down a dark Sunrise fan-hole' and found conspiracy theories on message boards",
+      "characters": [
+        "Alexis Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Alexis has been watching all day and researching",
+      "punchline": "The image of Alexis deep in soap opera fan conspiracy theory forums \u2014 the juxtaposition of her glamorous exterior with internet rabbit-holing",
+      "craft_total": 6.0,
+      "impact_score": 5.75,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional character comedy \u2014 Alexis going down the fan theory rabbit hole is consistent and mildly funny but doesn't have a particularly sharp punchline."
+    },
+    {
+      "index": 57,
+      "text": "The fan forum conspiracy video: Clifton saying 'She had a good run. But let's just say \"someone\" reminded the producers that there's only room for one head of surgery at Sunrise General. And I think all you housewives at home know who that should be.'",
+      "characters": [
+        "Clifton Sparks (archival footage)"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "dark_subversive"
+      ],
+      "setup": "Alexis has found a video where Clifton apparently confesses to having Moira written off the show.",
+      "punchline": "The footage is so incriminating that the air quotes, the 'housewives' dig, and the self-congratulation make Clifton look guilty without actually admitting anything \u2014 and the soap opera logic (head of surgery) bleeds into reality.",
+      "craft_total": 7.33,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The joke has layers: Clifton using the fictional hierarchy ('head of surgery') to describe real showbiz power plays is funny, and the 'housewives' patronizing dig is a perfect period-piece detail. Good structural writing."
+    },
+    {
+      "index": 58,
+      "text": "'See, he's basically admitting to having you written off the show.' / 'No. He's drunk there. No. That's not... No.'",
+      "characters": [
+        "Alexis Rose",
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "The video appears damning.",
+      "punchline": "Moira's first instinct is total denial ('He's drunk there') \u2014 she needs to believe her own narrative rather than confront the betrayal.",
+      "craft_total": 6.6,
+      "impact_score": 6.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Moira's denial reaction is character-consistent and the rapid-fire 'No's are good rhythm comedy."
+    },
+    {
+      "index": 59,
+      "text": "'Adriana had that DUI last year. Popped a breast, poor dear.' \u2014 Moira dismissing competition for headlines.",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Alexis says Moira is the only one making headlines in the cast.",
+      "punchline": "Moira concedes Adriana made news but only due to a DUI and a wardrobe malfunction \u2014 and delivers 'poor dear' with zero actual sympathy.",
+      "craft_total": 7.92,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Popped a breast, poor dear' is a fantastic line \u2014 the specificity, the casual dismissal, and the fake sympathy of 'poor dear' (classic Moira) all land. The economy is excellent and it's very quotable."
+    },
+    {
+      "index": 60,
+      "text": "Moira: 'Alexis, he drove all this way just to personally beg me to acquiesce.' / Alexis: 'Hm. Of course he did.'",
+      "characters": [
+        "Moira Rose",
+        "Alexis Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Moira frames Clifton's presence as desperate begging",
+      "punchline": "Alexis's 'of course he did' \u2014 she now knows it's because Clifton sabotaged Moira and needs her back, but Moira reads it as straightforward admiration of her star power",
+      "craft_total": 7.01,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A nice dramatic irony joke \u2014 Alexis knows why he's really there (guilt/manipulation) while Moira thinks it's pure admiration. The two characters interpret 'of course he did' completely differently."
+    },
+    {
+      "index": 61,
+      "text": "'Perhaps a little more housework and a little less mouse work might do you some good, Alexis.'",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Alexis has been doing online research on the fan forum.",
+      "punchline": "Moira's malapropism: 'mouse work' for internet research (computer mouse) combined with 'housework' \u2014 delivered as if it's a coherent piece of wisdom.",
+      "craft_total": 7.62,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Moira's invented compound idioms are one of the show's signatures and 'mouse work' is a great addition to the lexicon. The dismissal of online research as 'mouse work' via a pun on computer mouse is both original and completely character-specific. 'Housework and mouse work' has a satisfying sonic quality too."
+    },
+    {
+      "index": 62,
+      "text": "Good news about Phil the fumigator: 'He's got a lot of two-star reviews, but that's one more star than the other guys.'",
+      "characters": [
+        "Roland Schitt"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Roland reports good news about a cheaper fumigator.",
+      "punchline": "The 'good news' is a two-star professional being the BEST option available.",
+      "craft_total": 7.27,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good Roland logic. The framing of two stars as a positive ('one more than the other guys') is funny and perfectly Roland \u2014 optimism built on catastrophically low standards."
+    },
+    {
+      "index": 63,
+      "text": "'Well, they were just gonna throw it out, David.' \u2014 Johnny explaining why he's still eating wedding tasting tenderloin.",
+      "characters": [
+        "Johnny Rose",
+        "David Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "David finds Johnny still eating tenderloin after the tasting.",
+      "punchline": "Johnny's justification \u2014 'they were going to throw it out' \u2014 is the universal excuse for eating something one shouldn't.",
+      "craft_total": 7.14,
+      "impact_score": 7.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good callback payoff \u2014 after all the tasting comedy, Johnny is still eating the tenderloin. The excuse is universal and delivered with appropriate sheepishness."
+    },
+    {
+      "index": 64,
+      "text": "Penelope asked if Johnny wanted to crack the cr\u00e8me br\u00fbl\u00e9e and he asked 'If we break it, do we buy it?'",
+      "characters": [
+        "David Rose",
+        "Johnny Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "David is trying to understand what happened to make Johnny uncomfortable at the tasting.",
+      "punchline": "The offscreen cr\u00e8me br\u00fbl\u00e9e incident \u2014 Johnny applying pottery barn rules to dessert \u2014 is funnier for being revealed secondhand.",
+      "craft_total": 7.81,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent offscreen callback. 'If we break it, do we buy it?' applied to cr\u00e8me br\u00fbl\u00e9e is a perfect encapsulation of Johnny's mindset \u2014 shopkeeper anxiety applied to a dessert course. Revealed in David's retelling makes it land even harder."
+    },
+    {
+      "index": 65,
+      "text": "'Well, I think that was a perfectly legitimate question considering I wasn't even hungry after the beef.'",
+      "characters": [
+        "Johnny Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "David points out the cr\u00e8me br\u00fbl\u00e9e question was embarrassing.",
+      "punchline": "Johnny's defense \u2014 using his excessive beef eating as an alibi \u2014 only highlights how much he ate for free.",
+      "craft_total": 6.52,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good defensive rationalization joke. The beef alibi inadvertently reveals how much free food Johnny consumed."
+    },
+    {
+      "index": 66,
+      "text": "David reveals Patrick's ex-fianc\u00e9e's nest egg will cover the extra table: 'Apparently there is some nest egg they set aside for Patrick and his ex-fianc\u00e9e.'",
+      "characters": [
+        "David Rose"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "David is reassuring Johnny he doesn't have to cover the extra table",
+      "punchline": "The source of funds is money saved for Patrick's previous engagement \u2014 a slightly dark comedic irony that the broken engagement is funding the current one",
+      "craft_total": 6.61,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A nicely dark irony \u2014 the ex-fianc\u00e9e's misfortune (the broken engagement) becomes the financial windfall for the current wedding. David delivering this without apparent awareness of the awkwardness is mildly funny."
+    },
+    {
+      "index": 67,
+      "text": "'David, I said I would cover the food... Okay. But if the Brewers wanna pay for the extra table, then I think that's a wonderful gesture from the Brewers.'",
+      "characters": [
+        "Johnny Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "David offers to remove the cost pressure by noting Patrick's parents will cover the extra table.",
+      "punchline": "Johnny's grateful, dignified pivot \u2014 first insisting, then immediately accepting \u2014 is a perfect comedy beat of paternal pride yielding to relief.",
+      "craft_total": 6.76,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The beat between the pride and the acceptance is the joke \u2014 and then 'a wonderful gesture from the Brewers' is a perfectly diplomatic way to accept charity."
+    },
+    {
+      "index": 68,
+      "text": "'Great. What did I tell you about that beef?' \u2014 Johnny immediately pivoting to the tenderloin after his money stress is relieved.",
+      "characters": [
+        "Johnny Rose",
+        "Stevie Budd"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "The financial pressure has just lifted slightly.",
+      "punchline": "Johnny's first reaction is to revisit the tenderloin \u2014 revealing food was the real emotional concern all along.",
+      "craft_total": 7.52,
+      "impact_score": 7.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good tag on the tasting sequence. The immediate return to tenderloin appreciation shows Johnny's priorities in a funny light."
+    },
+    {
+      "index": 69,
+      "text": "Johnny's emotional confessional to Stevie about their former wealth: 'He was talking about Bali for a while. We were gonna charter some jets. Fly everybody.'",
+      "characters": [
+        "Johnny Rose",
+        "Stevie Budd"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Johnny shares that they had a nest egg set aside for David's wedding.",
+      "punchline": "The specific, vivid details of the old life \u2014 Bali, chartered jets \u2014 that are now completely out of reach make the gap between then and now funny and sad simultaneously.",
+      "craft_total": 6.76,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Warm, bittersweet comedy. The specifics (chartered jets to Bali for 'everybody') paint a vivid picture of the Rose family's former excess. The comedy is in the contrast, which is the show's fundamental engine."
+    },
+    {
+      "index": 70,
+      "text": "'Tell that cute bartender I'd love a sex on the beach. If she has time, I need another scotch.'",
+      "characters": [
+        "Tippy Bernstein"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "The group is celebrating at a bar; Tippy addresses drink orders.",
+      "punchline": "Tippy manages to make a pass at the bartender and order his actual drink in the same breath, prioritizing the flirtation as primary and the scotch as an afterthought.",
+      "craft_total": 6.36,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Fun Tippy character beat. The ordering priority (flirtation > scotch) tells us who he is efficiently."
+    },
+    {
+      "index": 71,
+      "text": "'Oh no, this doctor would rather nurse her potable, if you don't mind. Best to stay lucid for our congress.'",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Tippy encourages Moira to drink.",
+      "punchline": "Moira uses 'potable' (liquid/drink) and 'congress' (meeting) in their most formal, archaic senses \u2014 playing 'the doctor' of their fictional show in real life while making even drinking sound like a diplomatic summit.",
+      "craft_total": 7.02,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Moiraism \u2014 'nurse her potable' and 'our congress' are exactly the words Moira Rose would use. The character is performing the role even in casual conversation."
+    },
+    {
+      "index": 72,
+      "text": "'Hey. Remember how you entered that time machine you discovered in the hospital's broom closet? Season Three? What if we bring you back that way?'",
+      "characters": [
+        "Tippy Bernstein"
+      ],
+      "joke_types": [
+        "absurdist",
+        "meta_self_referential"
+      ],
+      "setup": "The group is trying to figure out how to resurrect Moira's character for the reboot.",
+      "punchline": "A broom closet time machine in a hospital is presented as a viable, precedented plot mechanism \u2014 said casually as a normal industry consideration.",
+      "craft_total": 7.17,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The specificity of 'broom closet' time machine is great soap opera parody. That they're casually workshopping this as if it's a reasonable logistical solution is the comedic engine."
+    },
+    {
+      "index": 73,
+      "text": "'It's not easy to disremember my final demise.'",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Tippy asks Moira to move past how her character was killed.",
+      "punchline": "'Disremember' \u2014 Moira's invented word that conflates 'disregard' and 'remember' \u2014 used with total confidence.",
+      "craft_total": 7.06,
+      "impact_score": 6.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Disremember' is a beautiful Moiraism \u2014 a word that shouldn't exist but somehow makes sense in context, delivered with utter conviction. This is one of the defining character comedy devices of the show. High character integration (9.5) is absolutely justified \u2014 this is one of those words that belongs to Moira and only Moira."
+    },
+    {
+      "index": 74,
+      "text": "Clifton describing Vivian's death: 'It was even more vicious than Vivian's getting trampled while honeymooning in Pamplona.'",
+      "characters": [
+        "Clifton Sparks"
+      ],
+      "joke_types": [
+        "absurdist",
+        "escalation"
+      ],
+      "setup": "The group is comparing Vivian's death to Clifton's character's death.",
+      "punchline": "Vivian being trampled while honeymooning in Pamplona (the running of the bulls, implied) is presented as the benchmark for vicious deaths \u2014 and Moira's demon toilet death is apparently worse.",
+      "craft_total": 7.31,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent soap opera absurdism. The Pamplona honeymoon trampling is a wonderfully specific soap opera death, and using it as the baseline that the demon toilet death apparently surpassed is funny escalation."
+    },
+    {
+      "index": 75,
+      "text": "'Oh Moira! Get over it! Contract negotiations go sour all the time!'",
+      "characters": [
+        "Clifton Sparks"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Moira is upset about how she was written off the show.",
+      "punchline": "Clifton's blunt, self-incriminating dismissal of Moira's complaint \u2014 especially given what we suspect he did \u2014 is darkly funny.",
+      "craft_total": 6.31,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The dramatic irony makes this land \u2014 we suspect Clifton sabotaged her, so his 'get over it' is doubly funny."
+    },
+    {
+      "index": 76,
+      "text": "'Think of it as a compliment. Your star was rising, and I was maybe jealous.'",
+      "characters": [
+        "Clifton Sparks"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Clifton confirms he was partly responsible for Moira being written off.",
+      "punchline": "'Think of it as a compliment' \u2014 reframing career sabotage as admiration is an audacious, funny spin.",
+      "craft_total": 7.52,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A great line. The brass of reframing sabotage as tribute, delivered with apparent sincerity, is very funny and very specific to Hollywood sociopathy."
+    },
+    {
+      "index": 77,
+      "text": "Tippy is getting texts from Nicole Kidman's office: 'Serves me right for sharing EP credit. These people...'",
+      "characters": [
+        "Tippy Bernstein"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Clifton and Moira are having an intense moment of reconciliation.",
+      "punchline": "Tippy derails the emotional gravity with a casual, industry-insider complaint about Nicole Kidman's management.",
+      "craft_total": 6.88,
+      "impact_score": 6.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good tonal contrast \u2014 the gravitas of Clifton's confession is interrupted by showbiz triviality. Tippy as the mercenary producer unaware of emotional weight is a good character beat."
+    },
+    {
+      "index": 78,
+      "text": "'That season that you played your own brother, we submitted you for Best Actress and Actor.'",
+      "characters": [
+        "Tippy Bernstein"
+      ],
+      "joke_types": [
+        "absurdist",
+        "meta_self_referential"
+      ],
+      "setup": "Tippy is defending his track record of supporting Moira's awards submissions.",
+      "punchline": "The casual reveal that Moira played her own brother at some point \u2014 and was submitted for both gendered acting categories \u2014 is a wonderfully absurd soap opera detail.",
+      "craft_total": 7.84,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Exceptional soap opera absurdism. The dual submission for playing her own brother is an inspired piece of background worldbuilding. The deadpan delivery of 'Best Actress and Actor' implies the logic was completely sound to everyone involved. Highly quotable and a great laugh."
+    },
+    {
+      "index": 79,
+      "text": "'You did what?' / 'Oh, Tippy, I did not negotiate myself out of the job, did I?'",
+      "characters": [
+        "Moira Rose",
+        "Tippy Bernstein"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Moira hears she was submitted for both acting categories simultaneously.",
+      "punchline": "The revelation that Tippy submitted her for both awards \u2014 which only happens if you play a character of another gender \u2014 triggers Moira's realization that maybe she was also wrong about being driven off the show.",
+      "craft_total": 7.16,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good structural payoff. The moment connects the dual submission to Moira's self-examination. Well-played narrative comedy."
+    },
+    {
+      "index": 80,
+      "text": "Moira at the bar: 'Now, Mr. Bernstein, I have a few demands.'",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Moira has decided to negotiate rather than simply accept.",
+      "punchline": "The formality of 'Mr. Bernstein' combined with 'a few demands' \u2014 the shift to power negotiation \u2014 is pure Moira.",
+      "craft_total": 6.61,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good transition moment. The pivot to power mode is character-consistent and funny."
+    },
+    {
+      "index": 81,
+      "text": "'I'm willing to sell my baseball signed by Geena Davis.'",
+      "characters": [
+        "Roland Schitt"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Roland is brainstorming how to raise money for the motel.",
+      "punchline": "A baseball signed by Geena Davis is Roland's most prized asset \u2014 and the specificity of Geena Davis (not a sports figure, an actress known for baseball movie A League of Their Own) is the joke.",
+      "craft_total": 7.29,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent absurdist detail. A baseball signed by Geena Davis is a wonderfully specific piece of Roland's world \u2014 the crossover of athlete signage with an actress who played a baseball player is either ignorance or extremely niche fandom, both of which are funny. It tells you everything about Roland."
+    },
+    {
+      "index": 82,
+      "text": "'And by \"situation\" he means that money-pit of a motel we bought.'",
+      "characters": [
+        "Roland Schitt"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Johnny uses the diplomatic word 'situation' to describe their financial crisis.",
+      "punchline": "Roland translates it bluntly, with the added specificity of 'money-pit.'",
+      "craft_total": 7.06,
+      "impact_score": 6.83,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional Roland-as-blunt-translator joke. Gets the job done efficiently."
+    },
+    {
+      "index": 83,
+      "text": "'What if we bought 30 more motels? Right now.'",
+      "characters": [
+        "Stevie Budd"
+      ],
+      "joke_types": [
+        "absurdist",
+        "setup_punchline"
+      ],
+      "setup": "The team is stuck between selling the second motel or finding another way out.",
+      "punchline": "Stevie's counterintuitive, seemingly insane escalation \u2014 solving a financial crisis by buying 30 more things \u2014 delivered with complete deadpan.",
+      "craft_total": 7.75,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Excellent Stevie deadpan. The addition of 'Right now' is the comedic masterstroke \u2014 the urgency applied to the ridiculous is perfect. The idea is absurd but actually correct (as the scene reveals), making it even funnier in retrospect."
+    },
+    {
+      "index": 84,
+      "text": "'Stevie, where did you come up with this?' / 'Oh, it was in a book I was given. I don't know, maybe you read it.'",
+      "characters": [
+        "Johnny Rose",
+        "Stevie Budd"
+      ],
+      "joke_types": [
+        "callback",
+        "deadpan_understatement"
+      ],
+      "setup": "Johnny is impressed by Stevie's business expansion plan.",
+      "punchline": "Stevie reveals it came from the book Johnny gave to all the new staff at orientation \u2014 meaning the plan came from Johnny's own playbook, which he apparently didn't review closely himself.",
+      "craft_total": 7.41,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent callback with a structural payoff. The book distributed at the orientation becomes the source of the solution, and 'maybe you read it' is a perfect dry dig \u2014 implying Johnny didn't study his own material. The structure is tight: setup at 01:55, pay off here. High scores across the board are justified."
+    },
+    {
+      "index": 85,
+      "text": "'A wise man once wrote: \"You miss 100% of the tapes you don't play\".'",
+      "characters": [
+        "Roland Schitt"
+      ],
+      "joke_types": [
+        "callback",
+        "wordplay_pun"
+      ],
+      "setup": "Johnny is inspired by the expansion plan and wants to build momentum.",
+      "punchline": "Roland quotes from Johnny's book, but the Wayne Gretzky hockey quote is mangled through VHS tape metaphors \u2014 consistent with Roland's earlier confusion about the book.",
+      "craft_total": 8.38,
+      "impact_score": 8.75,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the best jokes in the episode. 'You miss 100% of the tapes you don't play' is a masterful rewriting of the Wayne Gretzky quote filtered through VHS tape confusion \u2014 which callbacks Roland's earlier 'why is he making us read about VHS tapes' joke. The quote now sounds like genuine wisdom while being completely wrong. It's quotable, structurally elegant, and a perfect payoff to both the book setup and Roland's confusion. High scores justified."
+    },
+    {
+      "index": 86,
+      "text": "'I did write that.' \u2014 Johnny accepting credit for the mangled quote.",
+      "characters": [
+        "Johnny Rose"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Roland has quoted 'You miss 100% of the tapes you don't play' as Johnny's wisdom.",
+      "punchline": "Johnny claims authorship of what is obviously a corrupted Gretzky quote \u2014 either playing along or genuinely believing it.",
+      "craft_total": 7.02,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect tag. Three words, maximal implication. Johnny's instant ownership of the corrupted wisdom is either magnificent confidence or complete unawareness \u2014 both are funny."
+    },
+    {
+      "index": 87,
+      "text": "'And I know that a wise man once wrote: \"Thank you to my wife, Moira.\"' / 'That's just the dedication, Roland.'",
+      "characters": [
+        "Roland Schitt",
+        "Johnny Rose"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Roland continues to quote from the book.",
+      "punchline": "Roland has only read the dedication \u2014 confirming he never got past the first page.",
+      "craft_total": 8.01,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent structural payoff. The escalating 'wise man' structure (quote, then dedication) beautifully reveals that Roland's entire engagement with the book was the dedication. 'That's just the dedication, Roland' is a perfectly dry Johnny line. The joke has great structure and character integration \u2014 Roland would absolutely quote the dedication as wisdom."
+    },
+    {
+      "index": 88,
+      "text": "'That's as far as I got, Johnny. I'm sorry, I'm partial to historical fiction.'",
+      "characters": [
+        "Roland Schitt"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Johnny points out that Roland has only read the dedication.",
+      "punchline": "Roland's completely unembarrassed admission, further explained by his preference for historical fiction \u2014 as if that's a reasonable excuse for not reading a business book given to him.",
+      "craft_total": 8.23,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Great tag. Roland's complete lack of shame combined with the specific and irrelevant explanation ('I'm partial to historical fiction') is perfect character comedy. The non-sequitur literary preference makes it funnier."
+    },
+    {
+      "index": 89,
+      "text": "'Oh Alexis, has our quarantine been lifted?' \u2014 Moira greeting Alexis who emerges from bed.",
+      "characters": [
+        "Moira Rose",
+        "Alexis Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Moira told Alexis to stay hidden; Alexis has now emerged.",
+      "punchline": "Describing Alexis's bed rest as a 'quarantine' \u2014 treating her appearance as a public health event.",
+      "craft_total": 6.78,
+      "impact_score": 6.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good callback. The 'quarantine' framing is a nice escalation of Moira's 'where no one can see you' earlier."
+    },
+    {
+      "index": 90,
+      "text": "'Yeah, I was scared I was gonna get bed sores, so I'm going for a run.'",
+      "characters": [
+        "Alexis Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Alexis explains why she's emerged from her room.",
+      "punchline": "The extreme (bed sores from a few hours' rest) stated as a real medical concern is funny, especially delivered casually.",
+      "craft_total": 6.46,
+      "impact_score": 6.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Mild but functional. Alexis's health paranoia (bed sores from a nap) is character-consistent and delivered with appropriate casualness."
+    },
+    {
+      "index": 91,
+      "text": "'eight hours of watching \"Sunrise Bay\" made me feel a little not-right in the head.' / 'It had that effect. The New England Journal of Medicine did a fascinating study on it.'",
+      "characters": [
+        "Alexis Rose",
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Alexis reports feeling off after binge-watching the soap opera.",
+      "punchline": "Moira confirms Sunrise Bay is medically documented to cause neurological effects \u2014 said completely straight.",
+      "craft_total": 7.33,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent Moira line. The New England Journal of Medicine studying Sunrise Bay's effect on viewers is a wonderfully absurd detail, delivered with complete seriousness. It's both self-aggrandizing (her show was notable enough to be studied) and self-aware (it made people feel 'not-right')."
+    },
+    {
+      "index": 92,
+      "text": "'Will you be trapped in this crystal the entire episode? Best to skip ahead.'",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "character_comedy"
+      ],
+      "setup": "Alexis sees Moira's character trapped in a crystal on the TV screen.",
+      "punchline": "Moira casually advises skipping ahead through her own storyline \u2014 either because it's boring or because she remembers it's a bad stretch.",
+      "craft_total": 7.47,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Wonderfully meta. Moira directing the viewing experience of her own old work ('best to skip ahead') is funny and adds to the soap opera parody. The 'trapped in a crystal' detail is inspired absurdist worldbuilding."
+    },
+    {
+      "index": 93,
+      "text": "'But on the condition that Clifton be written off the show \u2014 death of my choosing.'",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Moira reveals she agreed to do the reboot.",
+      "punchline": "Moira's condition is revenge by proxy \u2014 she's not just accepting the deal, she's engineering Clifton's fictional death, and the 'death of my choosing' is perfectly dramatic.",
+      "craft_total": 6.88,
+      "impact_score": 6.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's standout moments. The revenge condition is petty, specific, and utterly Moira \u2014 'death of my choosing' has the ring of a queen sentencing someone. It's funny, character-defining, and deeply satisfying dramatically. High scores across the board are justified."
+    },
+    {
+      "index": 94,
+      "text": "'And I asked for more money.' / 'Okay. Yass, Mom.' / 'And a diamond tennis bracelet.' / 'Okay. Well, that seems like a bit much.'",
+      "characters": [
+        "Moira Rose",
+        "Alexis Rose"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Moira lists her demands: death for Clifton, more money.",
+      "punchline": "Alexis is on board for the first two, but the diamond tennis bracelet is a bridge too far \u2014 the escalation to pure luxury demand as a non-negotiable breaks even Alexis.",
+      "craft_total": 7.7,
+      "impact_score": 7.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good escalation. Alexis's 'Yass, Mom' is great \u2014 she endorses Clifton's death and a pay raise but balks at the bracelet. The joke is in what crosses the line for Alexis (not the revenge killing, but the jewelry)."
+    },
+    {
+      "index": 95,
+      "text": "'Oh, God no. I made them an offer they had to refuse.' / 'So, you're not doing it then?'",
+      "characters": [
+        "Moira Rose",
+        "Alexis Rose"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Alexis asks if Moira got 'what she's worth.'",
+      "punchline": "Moira's response inverts the Godfather line ('offer they couldn't refuse') to mean she deliberately asked for too much \u2014 a deliberate sabotage of the deal.",
+      "craft_total": 8.09,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Excellent structural joke. The Godfather inversion ('offer they had to refuse') is a clean, elegant piece of wordplay that also reveals character \u2014 Moira is protecting herself from a world that hurt her, using her own theatrical language to do it. It earns its impact score. One of the most quotable lines of the episode."
+    },
+    {
+      "index": 96,
+      "text": "'No. Thank you, Alexis. Thank you for removing my rosy lunettes, so that I might see Clifton for who he really is.'",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Moira explains why she turned down the offer.",
+      "punchline": "'Rosy lunettes' \u2014 rose-colored glasses, literally translated into a Moira-ism combining her surname ('Rose') with the French word for glasses.",
+      "craft_total": 7.99,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Brilliant Moiraism. 'Rosy lunettes' is the best invented expression in the episode \u2014 it translates 'rose-colored glasses' but: (1) uses the French 'lunettes' for glasses, (2) 'rosy' connects to her actual surname, (3) it's delivered as if it's a real idiom. The density of meaning per syllable is exceptional. High character integration is fully warranted \u2014 this could only be Moira."
+    },
+    {
+      "index": 97,
+      "text": "'If you did all that without getting out of bed, imagine what you're capable of doing.'",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Moira is complimenting Alexis's sleuthing work.",
+      "punchline": "The backhanded nature of the compliment \u2014 'without getting out of bed' implies the standard of getting out of bed is the real achievement threshold for Alexis.",
+      "craft_total": 6.9,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Warm but subtly cutting Moira compliment. The subtext (the bar for Alexis is merely being ambulatory) is the joke."
+    },
+    {
+      "index": 98,
+      "text": "'Okay, how is it that your daughter is also trapped in the cave but has never looked up once. You've been hanging over her for three straight episodes.'",
+      "characters": [
+        "Alexis Rose"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "absurdist"
+      ],
+      "setup": "They're watching Sunrise Bay again; the show resumes.",
+      "punchline": "Alexis applies the same logical scrutiny to Sunrise Bay that she applied to the Ouija question \u2014 the cave plot hole is enormous and she catalogues it with specific episode count.",
+      "craft_total": 6.99,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good callback to Alexis's earlier soap opera logical scrutiny. 'Three straight episodes' of Moira hanging in a cave unnoticed is a wonderful absurdist detail."
+    },
+    {
+      "index": 99,
+      "text": "'Oh, you know, children, this is where the season picks up. When the cave starts talking back to me. Voiced by the wonderful Peter Falk.'",
+      "characters": [
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "absurdist",
+        "meta_self_referential"
+      ],
+      "setup": "Alexis and the audience are skeptical of the cave plot.",
+      "punchline": "Moira dismisses the plot hole by revealing the cave talks back \u2014 voiced by Peter Falk. The name drop adds a layer of absurdist credibility to completely insane soap opera plotting.",
+      "craft_total": 8.11,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Exceptional closing joke. The escalation of Sunrise Bay absurdism culminates in a talking cave voiced by Peter Falk \u2014 a real, prestigious actor being deployed in the most ridiculous possible context. The confidence of the name drop ('the wonderful Peter Falk') is perfect Moira. High originality and character integration. A memorable episode capper."
+    },
+    {
+      "index": 100,
+      "text": "'I was gonna go for a run.' / 'Shh. She's about to look up.'",
+      "characters": [
+        "Alexis Rose",
+        "Moira Rose"
+      ],
+      "joke_types": [
+        "running_gag",
+        "character_comedy"
+      ],
+      "setup": "Alexis tries to leave and actually go for her run.",
+      "punchline": "Moira shushes her for the key soap opera moment \u2014 reversing their earlier dynamic and proving Moira is now more invested in Sunrise Bay than Alexis.",
+      "craft_total": 7.49,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect episode button. The reversal is clean \u2014 Alexis wanted to watch from the start, Moira was indifferent, and now their positions have swapped completely. 'She's about to look up' implies they've been waiting three episodes for this moment. Great structural close."
     }
   ],
   "air_date": "2020-03-10",
