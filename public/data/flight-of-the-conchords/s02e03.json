@@ -4,34 +4,35 @@
   "season": 2,
   "episode_number": 3,
   "title": "The Tough Brets",
-  "humor_index": 70.5,
-  "jpm": 1.89,
-  "avg_craft": 6.81,
-  "avg_impact": 6.45,
-  "total_jokes": 58,
-  "war": 36.5,
+  "humor_index": 95.6,
+  "jpm": 2.61,
+  "avg_craft": 7.62,
+  "avg_impact": 7.53,
+  "total_jokes": 80,
+  "war": 126.0,
   "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"deadpan_understatement\"]",
-  "standout_joke_ids": "[26, 57, 42]",
+  "standout_joke_ids": "[25, 65, 11]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "\u00b6 eminem is not very good \u00b6 \u00b6 50 cent is not very good \u00b6 \u00b6 Snoop dogg is not very good \u00b6 \u00b6 mos def is not very good \u00b6 \u00b6 but the rhymenoceros is very very good... \u00b6",
+      "text": "Opening rap song dissing every major rapper by name: 'Eminem is not very good / 50 Cent is not very good / Snoop Dogg is not very good...' followed by 'bass solo. Bass solo over.'",
       "characters": [
         "Bret"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "setup_punchline",
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Bret systematically dissing famous rappers in his rap",
-      "punchline": "Declares himself ('rhymenoceros') superior to all established rap legends",
-      "craft_total": 6.99,
-      "impact_score": 6.67,
-      "quotability": 8.0,
+      "setup": "Bret performs what sounds like it might be a hype rap, naming famous rappers",
+      "punchline": "Every line is simply '[rapper name] is not very good' \u2014 the entire song is just a list of disses, then 'bass solo. Bass solo over.' deflates any remaining energy",
+      "craft_total": 8.12,
+      "impact_score": 8.0,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Strong character comedy - perfectly captures Bret's delusional confidence. 'Rhymenoceros' is genuinely clever wordplay.",
+      "explanation": "The joke earns its score through perfect economy \u2014 the entire rap is just '[name] is not very good' repeated. The bathetic simplicity of the diss, combined with Bret's total sincerity, is quintessential Flight of the Conchords. 'Bass solo. Bass solo over.' is a masterful little button that deflates the moment completely. Character-specific: only these two could perform this with a straight face.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -57,21 +58,22 @@
     },
     {
       "index": 2,
-      "text": "bass solo. Bass solo over.",
+      "text": "Murray taking band meeting attendance: 'Uh, well, Jemaine? Present. Who else have we got here? Bret? Yup. And who else? Mu... mur Ray. Oh.'",
       "characters": [
-        "Bret"
+        "Murray"
       ],
       "joke_types": [
+        "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Epic bass solo announcement in middle of rap",
-      "punchline": "Immediate anticlimatic declaration that it's over",
-      "craft_total": 7.22,
-      "impact_score": 6.83,
-      "quotability": 7.5,
+      "setup": "Murray runs roll call as if he doesn't know who's in the band",
+      "punchline": "He has to slowly read his own name off the list and is mildly surprised to find himself on it",
+      "craft_total": 7.7,
+      "impact_score": 7.75,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect economy and timing. The deadpan delivery makes the anticlimax funnier.",
+      "explanation": "Beautifully Murray-specific moment. The joke works on multiple levels: he's incompetent enough to put himself on the attendance list, he struggles to read his own name, and then is mildly baffled by finding it there. The hesitation 'Mu... mur Ray. Oh.' is perfectly paced deadpan.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -81,22 +83,22 @@
     },
     {
       "index": 3,
-      "text": "Greg's written this. He's put the rs too far apart.",
+      "text": "Murray: 'Greg's written this. He's put the Rs too far apart.'",
       "characters": [
         "Murray"
       ],
       "joke_types": [
-        "observational",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Murray looking at something Greg wrote",
-      "punchline": "Complaint about letter spacing rather than content",
-      "craft_total": 6.23,
-      "impact_score": 5.33,
-      "quotability": 6.0,
+      "setup": "Murray is baffled by his own name on the attendance list",
+      "punchline": "He blames Greg's handwriting for putting the Rs too far apart \u2014 as if 'MurRay' with separated Rs is the real issue, not that he forgot his own name",
+      "craft_total": 7.65,
+      "impact_score": 7.25,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character detail showing Murray's petty managerial focus on trivial issues.",
+      "is_callback": 1,
+      "explanation": "Perfect escalation button on the previous joke. Murray deflects from his own absurdity by blaming Greg's letter spacing. Classic Murray: never acknowledging his own incompetence, always finding an external explanation.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -106,22 +108,24 @@
     },
     {
       "index": 4,
-      "text": "Texas, Lexus... two rhyming words. Do you think you could use those?",
+      "text": "Texas/Lexus as rhyming words for the band to use: 'Item one: Texas, Lexus... two rhyming words. Do you think you could use those?' \u2014 'No.' \u2014 'Maybe.'",
       "characters": [
-        "Murray"
+        "Murray",
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "deadpan_understatement"
       ],
-      "setup": "Murray offering songwriting help",
-      "punchline": "Suggests random unconnected rhyming words as if that's songwriting",
-      "craft_total": 6.86,
-      "impact_score": 6.0,
+      "setup": "Murray presents agenda items to the band as their manager",
+      "punchline": "His first agenda item is two rhyming words he'd like them to incorporate, delivered with complete bureaucratic seriousness; Jemaine's flat 'No' and Bret's qualified 'Maybe' are perfect",
+      "craft_total": 7.75,
+      "impact_score": 7.25,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfectly captures Murray's clueless enthusiasm and complete misunderstanding of creativity.",
+      "explanation": "Sharp bit of absurdist character comedy. Murray's complete sincerity about presenting 'Texas, Lexus' as a formal agenda item, and then logging Bret's 'Maybe' as an official response, captures the show's deadpan bureaucratic absurdism perfectly.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -131,22 +135,25 @@
     },
     {
       "index": 5,
-      "text": "You can make sound, just make it so that people can't hear you.",
+      "text": "The band has been playing gigs in a library and complains: 'It's so hard to play there because everyone wants us to be quiet. They're shushing us constantly.' Murray: 'You can make sound, just make it so that people can't hear you.'",
       "characters": [
+        "Bret",
+        "Jemaine",
         "Murray"
       ],
       "joke_types": [
         "absurdist",
+        "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Band complaining they can't play loudly in library",
-      "punchline": "Murray's illogical solution to make sound that's unhearable",
-      "craft_total": 7.27,
-      "impact_score": 7.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "The band complains that library patrons shush them during performances",
+      "punchline": "Murray's solution \u2014 play, but make it inaudible \u2014 is delivered as if it's perfectly reasonable advice",
+      "craft_total": 7.64,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant absurdist logic delivered with complete sincerity. Highly quotable nonsense.",
+      "explanation": "Escalating absurdist logic. The premise (a band booked into a library) is already funny; Bret's complaint that people 'want us to be quiet' escalates it; Murray's Zen-like solution ('make sound people can't hear') is the logical endpoint of their collective obliviousness. Well-structured three-beat joke.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -156,22 +163,22 @@
     },
     {
       "index": 6,
-      "text": "No, it was Snoop dogg. - I know he's a dog, Bret.",
+      "text": "Murray: 'I don't know what that means. Does that make any sense to you?' about the word 'dissing' in his own manager's notes.",
       "characters": [
-        "Bret",
         "Murray"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Murray mishearing 'Snoop Dogg' as 'Snoopy'",
-      "punchline": "Murray thinks Bret dissed the cartoon dog Snoopy",
-      "craft_total": 7.11,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Murray reads his own notes about the gig",
+      "punchline": "He doesn't know what 'dissing' means, even though he presumably wrote it down",
+      "craft_total": 6.32,
+      "impact_score": 5.75,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great character moment showing Murray's cultural disconnect and stubborn confidence.",
+      "explanation": "Functional character comedy establishing Murray's cluelessness about hip-hop culture. Not exceptional on its own but serves the episode's setup well.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -185,22 +192,24 @@
     },
     {
       "index": 7,
-      "text": "He's lovable. Leave him alone.",
+      "text": "Murray: 'The only one I could make out was Snoopy. What's your problem with him?' Bret: 'No, it was Snoop Dogg.' Murray: 'I know he's a dog, Bret. I'm not totally in the dark ages. I do go out once in a while. He's lovable. Leave him alone.'",
       "characters": [
-        "Murray"
+        "Murray",
+        "Bret"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "misdirection",
+        "escalation"
       ],
-      "setup": "Murray defending Snoopy from Bret's 'diss'",
-      "punchline": "Sincere protection of a cartoon character from rap beef",
-      "craft_total": 7.03,
-      "impact_score": 6.67,
-      "quotability": 7.5,
+      "setup": "Murray tries to identify who Bret was dissing in the rap",
+      "punchline": "He conflates Snoop Dogg with Snoopy the cartoon dog, then doubles down by insisting he knows Snoop Dogg is a dog (the cartoon kind), that he's 'lovable,' and that Bret should 'leave him alone'",
+      "craft_total": 8.3,
+      "impact_score": 8.5,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect escalation of Murray's misunderstanding with genuine emotional investment.",
+      "explanation": "This is the episode's strongest dialogue joke. Murray's confusion of Snoop Dogg with Snoopy is already funny, but the escalation \u2014 'I know he's a dog, Bret. I'm not totally in the dark ages' \u2014 is masterful. He takes the wrong interpretation and defends it with wounded dignity, as if Bret is the one being condescending. 'He's lovable. Leave him alone.' is perfectly economical and quotable. Could only be Murray.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -210,22 +219,24 @@
     },
     {
       "index": 8,
-      "text": "All year.",
+      "text": "Murray's intercom to Greg has been broken \u2014 Greg has been hearing everything Murray says about him all year. 'You're only supposed to hear when I have the button down. Can you hear that?' \u2014 'It is broken, Murray.' \u2014 'Broken? How long have you been hearing me?' \u2014 'All year.'",
       "characters": [
+        "Murray",
         "Greg"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "cringe_discomfort"
+        "setup_punchline",
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Murray asking how long Greg has been hearing him",
-      "punchline": "Devastating simple answer revealing scope of embarrassment",
-      "craft_total": 7.0,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Murray discovers Greg can hear him through the intercom",
+      "punchline": "'All year' \u2014 delivered flatly by Greg, implying Murray has been disparaging Greg to his face all year without realizing it",
+      "craft_total": 8.28,
+      "impact_score": 8.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect economy - two words that devastate Murray. Great deadpan delivery.",
+      "explanation": "Beautifully structured slow-burn reveal. The comedy builds through the realization: Murray's private diss sessions have been completely public for a year. 'All year' is a perfectly economical punchline \u2014 maximum damage, minimum words. Greg's flat delivery makes it land harder. Strong structure and character integration.",
       "dialogue": [
         {
           "speaker": "Greg",
@@ -235,22 +246,23 @@
     },
     {
       "index": 9,
-      "text": "What's wrong with that guy? Useless. What does he do all day? You didn't hear that, did you, greg? Good, so he didn't hear that last bit.",
+      "text": "Murray, after realizing Greg heard him, immediately disparages Greg again: 'What's wrong with that guy? Useless. What does he do all day?' then asks 'You didn't hear that, did you, Greg?' \u2014 then celebrates: 'Good, so he didn't hear that last bit. That's how you diss someone.'",
       "characters": [
         "Murray"
       ],
       "joke_types": [
+        "character_comedy",
         "irony_sarcasm",
-        "cringe_discomfort"
+        "escalation"
       ],
-      "setup": "Murray complaining about Greg while Greg is listening",
-      "punchline": "Murray thinks Greg didn't hear his insult when Greg clearly did",
-      "craft_total": 6.86,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Extends the intercom gag effectively, showing Murray's obliviousness.",
+      "setup": "Murray just learned Greg can hear everything through the broken intercom",
+      "punchline": "He immediately disses Greg again, then is relieved when he thinks Greg didn't hear \u2014 not understanding the irony, and tutoring the boys on 'proper' dissing technique",
+      "craft_total": 8.15,
+      "impact_score": 8.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Brilliant escalation on the intercom bit. Murray learns nothing from the revelation and immediately repeats the exact behavior, then presents it as wisdom: 'That's how you diss someone.' The audience knows Greg almost certainly heard, making Murray's self-congratulation maximally cringeworthy. Pure Murray character comedy.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -268,22 +280,25 @@
     },
     {
       "index": 10,
-      "text": "That's how you diss someone. Did you see what I did there? I didn't start a fight with greg, I didn't hurt his feelings. Greg's got feelings.",
+      "text": "Murray to Bret: 'Have you thought about these rappers that you're dissing? You might hurt their feelings.' Then breaks into song.",
       "characters": [
-        "Murray"
+        "Murray",
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "setup_punchline",
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Murray explaining proper dissing technique",
-      "punchline": "Claiming he protected Greg's feelings while openly insulting him",
-      "craft_total": 6.45,
-      "impact_score": 6.17,
-      "quotability": 7.0,
+      "setup": "Murray is warning Bret about the dangerous consequences of dissing rappers",
+      "punchline": "His concern isn't their violent retaliation but their hurt feelings \u2014 and this absurd pivot triggers a full musical number",
+      "craft_total": 7.19,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character comedy showing Murray's complete lack of self-awareness.",
+      "explanation": "Effective pivot that sets up the song. The joke is the complete inversion of expected rap-feud stakes: not bodily harm but feelings. Functions as a perfect song introduction.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -293,22 +308,24 @@
     },
     {
       "index": 11,
-      "text": "\u00b6 some people say that rappers don't have feelings \u00b6 \u00b6 we have feelings \u00b6",
+      "text": "'Hurt Feelings' song \u2014 opening verses: 'Some people say that rappers don't have feelings / We have feelings / Some people say that we are not rappers / We're rappers / That hurts our feelings'",
       "characters": [
-        "Jemaine",
-        "Bret"
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
+        "setup_punchline",
+        "character_comedy",
         "absurdist"
       ],
-      "setup": "Song premise about rappers having feelings",
-      "punchline": "Overly sincere declaration of having feelings",
-      "craft_total": 7.25,
-      "impact_score": 6.83,
+      "setup": "The song opens with declarations about rappers having feelings",
+      "punchline": "The meta-complaint 'some people say that we are not rappers / that hurts our feelings' \u2014 their credibility as rappers is itself questioned within the rap about their feelings",
+      "craft_total": 8.34,
+      "impact_score": 8.5,
       "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great song concept that perfectly fits the show's style of sincere parody.",
+      "explanation": "The song's opening gambit is self-undermining in the best way. 'We're vincible' is a perfect coined word \u2014 the opposite of 'invincible,' used with complete confidence. The meta-complaint about not being recognized as rappers, within the rap, is clever layering.",
       "dialogue": [
         {
           "speaker": "",
@@ -322,22 +339,24 @@
     },
     {
       "index": 12,
-      "text": "\u00b6 we're vincible \u00b6",
+      "text": "'I feel like a prize asshole / No one even mentions my casserole'",
       "characters": [
-        "Jemaine",
-        "Bret"
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "setup_punchline",
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "People say rappers are invincible",
-      "punchline": "Claiming to be 'vincible' - vulnerable to being conquered",
-      "craft_total": 7.34,
-      "impact_score": 7.0,
-      "quotability": 8.5,
+      "setup": "Verse about cooking a meal for friends and no one complimenting it",
+      "punchline": "'I feel like a prize asshole / No one even mentions my casserole' \u2014 the rhyme of 'asshole/casserole' and the specific grievance (uncomplimenting a casserole) is the joke",
+      "craft_total": 8.3,
+      "impact_score": 8.5,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant wordplay that's both funny and reveals character vulnerability. Very quotable.",
+      "explanation": "The asshole/casserole rhyme is an all-timer. The specific choice of 'casserole' as the grievance \u2014 so domestic, so un-gangster \u2014 is perfectly calibrated. The rhyme itself is surprising and satisfying. One of the most quotable lines in the episode.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -347,21 +366,24 @@
     },
     {
       "index": 13,
-      "text": "\u00b6 I feel like a prize asshole, no one even mentions my casserole \u00b6",
+      "text": "'You could've said something nice about my profiteroles'",
       "characters": [
-        "Bret"
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Hurt feelings about unappreciated cooking",
-      "punchline": "Rhyming 'asshole' with 'casserole' while expressing genuine hurt",
-      "craft_total": 7.27,
-      "impact_score": 7.0,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect blend of crude humor and sincere emotion. The rhyme is unexpected and memorable.",
+      "setup": "Rapper laments no one praised his casserole",
+      "punchline": "Escalates to profiteroles \u2014 an even more unlikely gangster grievance, and a French pastry at that",
+      "craft_total": 7.54,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Nice escalation from casserole to profiteroles \u2014 the Frenchness of 'profiteroles' adds another layer of incongruity. A gangster rapper complaining about unrecognized profiteroles is inherently funny.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -371,21 +393,24 @@
     },
     {
       "index": 14,
-      "text": "\u00b6 you could've said something nice about my profita rolls \u00b6",
+      "text": "Wetsuit verse: 'I was shopping for a wetsuit to scuba dive / but every suit I tried was too big around the thighs / and the assistant suggested I try a ladies' size / I'm not gonna wear a ladies' wetsuit, I'm a man / Get me a small man's wetsuit, please'",
       "characters": [
-        "Bret"
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "absurdist",
+        "observational"
       ],
-      "setup": "Continuing complaints about unappreciated cooking",
-      "punchline": "Mispronouncing 'profiteroles' as 'profita rolls'",
-      "craft_total": 6.32,
-      "impact_score": 5.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Verse about a humiliating shopping experience",
+      "punchline": "'I'm not gonna wear a ladies' wetsuit, I'm a man / Get me a small man's wetsuit, please' \u2014 the plaintive 'please' at the end, and the specificity of 'small man's wetsuit,' is the joke",
+      "craft_total": 8.3,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character detail showing Bret's attempt at sophistication gone wrong.",
+      "explanation": "The specificity of 'too big around the thighs' and 'small man's wetsuit' is superb. This reads as genuinely autobiographical (possibly is) which makes it funnier. The polite, deflated 'please' at the end of a rap lyric is a perfect tonal subversion. Very strong character integration \u2014 this is Bret's insecurity made musical.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -395,21 +420,24 @@
     },
     {
       "index": 15,
-      "text": "\u00b6 and the assistant suggested I try a ladies' size \u00b6",
+      "text": "Birthday verse: 'It's my birthday, 2003 / Waiting for a call from my family / They forgot about me' / 'The day after my birthday is not my birthday, mom'",
       "characters": [
+        "Bret",
         "Jemaine"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "character_comedy",
+        "deadpan_understatement",
+        "absurdist"
       ],
-      "setup": "Wetsuit shopping story",
-      "punchline": "Humiliating suggestion to try women's wetsuit",
-      "craft_total": 6.58,
-      "impact_score": 6.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Rapper's family forgot his birthday",
+      "punchline": "'The day after my birthday is not my birthday, mom' \u2014 the exasperated, childlike specificity of having to explain this concept to one's mother",
+      "craft_total": 8.09,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good cringe moment that feels authentic to the character's awkward experiences.",
+      "explanation": "The specificity of '2003' grounds it hilariously. But the punchline \u2014 'The day after my birthday is not my birthday, mom' \u2014 is the standout. It's the kind of sentence only a genuinely wounded person would need to articulate, and that earnestness is what makes it so funny and quotable.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -419,21 +447,24 @@
     },
     {
       "index": 16,
-      "text": "\u00b6 I'm not gonna wear a ladies' wetsuit, I'm a man \u00b6",
+      "text": "Friends-in-town verse: 'I call my friends, say let's go into town / but they're all too busy to go into town / So I go by myself, I go into town / Then I see all my friends, they're all in town / They're all lined up to watch that movie Maid in Manhattan'",
       "characters": [
+        "Bret",
         "Jemaine"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Rejection of ladies' wetsuit suggestion",
-      "punchline": "Overly defensive assertion of masculinity",
-      "craft_total": 6.26,
-      "impact_score": 5.67,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Friends claim to be too busy to go into town",
+      "punchline": "They're all in town anyway \u2014 watching 'Maid in Manhattan,' which is the specific detail that makes the betrayal even more pathetic",
+      "craft_total": 8.04,
+      "impact_score": 8.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Solid character moment showing Jemaine's wounded pride.",
+      "explanation": "The repetition of 'into town' is rhythmically hypnotic and funny. The slow build \u2014 he goes alone, sees them all there \u2014 is perfectly structured. 'Maid in Manhattan' is the devastating specific detail: they'd rather see a Jennifer Lopez romcom than hang out with you. Excellent economy and structure.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -443,21 +474,24 @@
     },
     {
       "index": 17,
-      "text": "\u00b6 get me a small man's wetsuit, please \u00b6",
+      "text": "Rapid-fire questions verse: 'Have you ever been told that your ass is too big? / Have you ever been asked if your hair is a wig? / Have you ever been told you're mediocre in bed? / Have you ever been told you've got a weird-shaped head?'",
       "characters": [
+        "Bret",
         "Jemaine"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "escalation",
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Demanding alternative to ladies' wetsuit",
-      "punchline": "Awkward specific request that undermines his masculinity protest",
-      "craft_total": 7.1,
-      "impact_score": 6.75,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Call-and-response questions about personal humiliations",
+      "punchline": "Each question is more specific and personal than the last, escalating from physical insults to 'mediocre in bed' to 'weird-shaped head'",
+      "craft_total": 7.46,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect punchline that undercuts his masculine protest with specific awkward request.",
+      "explanation": "Good escalation sequence. 'Mediocre in bed' is particularly good \u2014 not catastrophically bad, just middling, which is somehow more humiliating. 'Weird-shaped head' is a classic FOTC specificity move.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -467,21 +501,24 @@
     },
     {
       "index": 18,
-      "text": "\u00b6 they forgot about me \u00b6",
+      "text": "'Has your family ever forgotten you and driven away? / Once again, they forgot about J'",
       "characters": [
+        "Bret",
         "Jemaine"
       ],
       "joke_types": [
+        "callback",
+        "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Waiting for birthday call from family",
-      "punchline": "Simple, devastatingly sad statement",
-      "craft_total": 7.04,
-      "impact_score": 6.83,
-      "quotability": 7.0,
+      "setup": "Escalating list of humiliations",
+      "punchline": "'Once again, they forgot about J' \u2014 'once again' implies this is a pattern, not an isolated incident",
+      "craft_total": 7.79,
+      "impact_score": 7.25,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfectly economical expression of genuine sadness that's funny through understatement.",
+      "is_callback": 1,
+      "explanation": "'Once again' is doing tremendous work. The family abandonment is a callback to the birthday verse, and 'once again' suggests chronic neglect. The rapper abbreviating himself to 'J' while describing being literally abandoned by his family is a perfect tonal mix of bravado and pathos.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -491,21 +528,24 @@
     },
     {
       "index": 19,
-      "text": "\u00b6 the day after my birthday is not my birthday, mom \u00b6",
+      "text": "'Were you ever called homo because at school you took Drama? / Have you ever been told that you look like a llama?'",
       "characters": [
+        "Bret",
         "Jemaine"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "wordplay_pun",
+        "absurdist"
       ],
-      "setup": "Mom calling late for birthday",
-      "punchline": "Obvious statement delivered as profound complaint",
-      "craft_total": 7.23,
-      "impact_score": 7.17,
-      "quotability": 8.0,
+      "setup": "Continuing list of humiliations",
+      "punchline": "'Look like a llama' \u2014 the specificity of llama, the drama/llama near-rhyme scheme, and the escalation from social cruelty to animal comparison",
+      "craft_total": 7.84,
+      "impact_score": 8.0,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great line that captures hurt through stating the obvious with genuine emotion.",
+      "explanation": "The llama comparison is perfectly chosen \u2014 not a conventionally insulting animal, just a weird one with an odd face. 'Drama/llama' rhyme scheme is fun. The Drama class homophobia is a knowing wink at the performers' own theatrical backgrounds.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -515,21 +555,24 @@
     },
     {
       "index": 20,
-      "text": "\u00b6 they're all lined up to watch that movie 'maid in Manhattan' \u00b6",
+      "text": "'Tears of a rapper / I'm crying tears of a rapper' \u2014 song outro with both performers",
       "characters": [
-        "Bret"
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
-        "observational"
+        "character_comedy",
+        "deadpan_understatement",
+        "absurdist"
       ],
-      "setup": "Finding friends who said they were too busy",
-      "punchline": "They're all seeing a particularly bad romantic comedy",
-      "craft_total": 6.46,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "Song has catalogued extensive humiliations",
+      "punchline": "'Tears of a rapper' as the closing refrain \u2014 presenting their weeping as a distinct genre of tears worthy of documentation",
+      "craft_total": 7.89,
+      "impact_score": 7.75,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Specific movie choice adds to the betrayal but not particularly clever.",
+      "explanation": "Functional outro that lands without being exceptional. 'Tears of a rapper' as a concept \u2014 implying these tears are categorically different \u2014 is a nice bit of absurd self-seriousness.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -539,22 +582,22 @@
     },
     {
       "index": 21,
-      "text": "\u00b6 they're all lined up to watch that movie 'maid in Manhattan' \u00b6",
+      "text": "Murray after the song: 'Yes, well, all good examples.' Then continues warning about rappers hurting Bret's 'pretty little brain.'",
       "characters": [
-        "Bret"
+        "Murray"
       ],
       "joke_types": [
-        "observational",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Friends excluding him from group activity",
-      "punchline": "Specific mundane rom-com they chose over hanging with him",
-      "craft_total": 6.45,
-      "impact_score": 6.0,
-      "quotability": 6.5,
+      "setup": "A full musical number just occurred detailing emotional humiliations",
+      "punchline": "Murray responds as if they were literally useful supporting examples in a meeting presentation: 'All good examples'",
+      "craft_total": 7.58,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good specific detail that adds to the hurt feelings narrative",
+      "explanation": "Perfect post-song deflation. Murray treats the entire musical number as a PowerPoint slide, validating it bureaucratically. 'All good examples' is Murray at his most oblivious-manager best.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -564,21 +607,23 @@
     },
     {
       "index": 22,
-      "text": "\u00b6 once again, they forgot about j \u00b6",
+      "text": "Murray's escalating warning about rappers: 'You hurt their feelings and kaboom... they'll hurt you more than your feelings... they'll hurt your pretty little brain, Bret. It'll be gone, then you'll have no feelings.'",
       "characters": [
-        "Jemaine"
+        "Murray"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "character_comedy",
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Family forgetting about him again",
-      "punchline": "Referring to himself as 'J' in third person",
-      "craft_total": 6.93,
-      "impact_score": 6.33,
-      "quotability": 6.5,
+      "setup": "Murray warning Bret about consequences of dissing rappers",
+      "punchline": "The logic spiral: hurt feelings \u2192 hurt brain \u2192 no feelings. Murray trying to sound threatening but producing only confused circular reasoning",
+      "craft_total": 6.58,
+      "impact_score": 6.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Nice character touch - Jemaine's awkward attempt at rap slang.",
+      "explanation": "Murray attempts menace and produces only bafflement. 'Pretty little brain' is an odd, slightly maternal turn of phrase. The logic collapses on itself entertainingly.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -588,21 +633,24 @@
     },
     {
       "index": 23,
-      "text": "\u00b6 were you ever called 'homo' because at school you took Drama? \u00b6",
+      "text": "Murray: 'Here in the United States, rivalries between rappers usually result in death or worse.' Bret: 'Death?' Murray: 'Yeah, or worse.'",
       "characters": [
+        "Murray",
         "Bret"
       ],
       "joke_types": [
-        "character_comedy"
+        "setup_punchline",
+        "deadpan_understatement",
+        "absurdist"
       ],
-      "setup": "Series of hurt feelings questions",
-      "punchline": "Very specific, personal question about taking drama class",
-      "craft_total": 6.65,
-      "impact_score": 6.25,
-      "quotability": 6.0,
+      "setup": "Murray warns about rapper rivalries resulting in 'death or worse'",
+      "punchline": "When Bret questions 'death?', Murray confirms it \u2014 but doesn't clarify what could be worse than death, leaving the 'worse' hanging as an unknown",
+      "craft_total": 7.85,
+      "impact_score": 7.75,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character detail revealing Bret's specific insecurities about his artistic interests.",
+      "explanation": "Classic deadpan absurdist construct. The phrase 'death or worse' implies something worse than death exists, and Murray's straight-faced confirmation without elaboration is perfect. Maximum comedy per syllable.",
       "dialogue": [
         {
           "speaker": "",
@@ -612,21 +660,24 @@
     },
     {
       "index": 24,
-      "text": "\u00b6 have you ever been told that you look like a llama? \u00b6",
+      "text": "Bret: 'Isn't it the same way with rappers back in Newfoundland?' Jemaine: 'New Zealand.'",
       "characters": [
-        "Bret"
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
-        "absurdist"
+        "running_gag",
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Continuing hurt feelings questions",
-      "punchline": "Oddly specific animal comparison",
-      "craft_total": 6.47,
-      "impact_score": 6.0,
-      "quotability": 7.0,
+      "setup": "Bret asks about rapper culture back home",
+      "punchline": "He says 'Newfoundland' instead of New Zealand; Jemaine's flat one-word correction has the weariness of someone who corrects this constantly",
+      "craft_total": 7.17,
+      "impact_score": 6.75,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Random but memorable animal comparison that suggests another personal insecurity.",
+      "explanation": "A quick, efficient joke about American ignorance of New Zealand, but interestingly it's Bret (a New Zealander) who makes the error. Jemaine's weary 'New Zealand.' does good work in one word.",
       "dialogue": [
         {
           "speaker": "",
@@ -636,24 +687,24 @@
     },
     {
       "index": 25,
-      "text": "Death? - Yeah, or worse. Isn't it the same way with rappers back in newfoundland? - I'm not sure. - New zealand.",
+      "text": "Murray's urban legend about rappers: 'I heard of one rapper... he chopped this guy's whole body off, just left the dick behind.' Bret: 'Don't you mean they chopped off his dick?' Murray: 'No, I mean they held his dick and chopped his whole body off. That's all he was in the end... a dick.'",
       "characters": [
-        "Jemaine",
         "Murray",
         "Bret"
       ],
       "joke_types": [
+        "dark_subversive",
         "character_comedy",
-        "deadpan_understatement"
+        "absurdist"
       ],
-      "setup": "Murray warning about rapper rivalries resulting in 'death or worse'",
-      "punchline": "Bret casually correcting Murray's geography mistake",
-      "craft_total": 6.63,
-      "impact_score": 6.25,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Murray tells a cautionary tale about rapper violence",
+      "punchline": "The inversion \u2014 not removing the dick from the body, but removing the body from the dick \u2014 and the philosophical conclusion 'That's all he was in the end... a dick'",
+      "craft_total": 8.66,
+      "impact_score": 9.0,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good running gag about confusion over New Zealand geography during serious conversation.",
+      "explanation": "One of the episode's best jokes, possibly one of the show's best. The inversion of the expected mutilation story (body removed FROM the dick rather than dick removed from body) is a genuinely original comedic concept. Murray delivers it with complete earnestness. The philosophical kicker 'That's all he was in the end... a dick' works as both literal description of the scenario and as a moral judgment. Dark, surprising, brilliantly structured, and utterly quotable. Justifies 8+ easily \u2014 comparable in structure and surprise to the vasectomy anchor joke.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -675,23 +726,24 @@
     },
     {
       "index": 26,
-      "text": "I heard of one rapper... he chopped this guy's whole body off, just left the dick behind. Don't you mean they... they chopped off his dick? No, I mean they held his dick and chopped his whole body off. That's all he was in the end... a dick.",
+      "text": "Johnnyboy's gang resum\u00e9: 'Do I have gang experience? I was in the snake eyes, the duckies, the cuckoos, the vampires, the pharaohs, the ballroom dancers, the hobo lords, the little enchanters...' then 'I was a navy seal for 15 years. I'm officially AWOL, so don't ask them about my existence.'",
       "characters": [
-        "Murray",
-        "Jemaine"
+        "Johnnyboy",
+        "Bret"
       ],
       "joke_types": [
-        "absurdist",
-        "wordplay_pun"
+        "character_comedy",
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Murray describing violent rapper revenge",
-      "punchline": "Absurd logistics of chopping off entire body while holding onto dick, ending with unintended pun",
-      "craft_total": 7.92,
-      "impact_score": 8.17,
-      "quotability": 9.0,
+      "setup": "Bret holds gang tryouts and asks about experience",
+      "punchline": "The list of gang names escalates from tough-sounding to increasingly absurd ('ballroom dancers,' 'little enchanters'), then the Navy SEAL revelation is delivered with complete paranoid sincerity",
+      "craft_total": 7.95,
+      "impact_score": 8.0,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant absurdist logic that builds to an unintended but perfect pun. Murray's earnest delivery makes it funnier.",
+      "explanation": "The gang name list is a masterclass in comedic escalation. It starts realistically ('snake eyes') and slides into the absurd ('ballroom dancers,' 'little enchanters'). The Navy SEAL non-sequitur with the 'don't ask them about my existence' paranoia is an excellent payoff. The list structure is well-paced.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -709,22 +761,25 @@
     },
     {
       "index": 27,
-      "text": "Do I have gang experience? I was in the snake eyes, the duckies, the cuckoos, the vampires, the pharaohs, the ballroom dancers, the hobo lords, the little enchanters...",
+      "text": "Mr. and Mrs. Li's reason for wanting to join the gang: 'We run the internet cafe downstairs. Vandals graffiti our store window. We want to stop them.' Followed by 'He says you have a kind face.'",
       "characters": [
-        "Dave"
+        "Mr. Li",
+        "Mrs. Li",
+        "Bret"
       ],
       "joke_types": [
-        "escalation",
+        "character_comedy",
+        "deadpan_understatement",
         "absurdist"
       ],
-      "setup": "Bret asking about Dave's gang experience",
-      "punchline": "Increasingly ridiculous list of gang names including 'ballroom dancers' and 'little enchanters'",
-      "craft_total": 7.11,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Bret's gang tryouts \u2014 asking why candidates want to join",
+      "punchline": "The Lis want gang membership purely as a practical solution to a shopkeeping problem; 'He says you have a kind face' is a disarming non-sequitur",
+      "craft_total": 7.15,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great escalation from tough-sounding to absurd gang names. 'Little enchanters' is particularly memorable.",
+      "explanation": "Good subversion of gang-movie tropes. The Lis approach gang membership as a practical consumer decision \u2014 'we have a problem, you seem nice, let's do business.' 'He says you have a kind face' as the final reason is a lovely non-sequitur.",
       "dialogue": [
         {
           "speaker": "Dave",
@@ -734,23 +789,23 @@
     },
     {
       "index": 28,
-      "text": "I was a navy seal for 15 years. - Okay. - I'm officially awol, so don't ask them about my existence, 'cause they'll deny it.",
+      "text": "Dave's special skills: 'I can make a weapon out of pretty much anything that's lying around. Like when I'm gardening, some a-hole tries to sneak up and take me out... watering can tied to a hose. Pop! Cops show up, what's that, officer? No, just watering the geraniums.'",
       "characters": [
-        "Dave",
-        "Bret"
+        "Dave"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "absurdist",
+        "escalation"
       ],
-      "setup": "Dave adding to his credentials",
-      "punchline": "Paranoid claim about being AWOL navy seal whose existence is denied",
-      "craft_total": 6.72,
-      "impact_score": 6.33,
+      "setup": "Bret asks about special skills for the gang",
+      "punchline": "Dave's survival scenario involves gardening, a watering can weapon, and then seamlessly returning to horticultural normalcy while the cops watch",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character development showing Dave's paranoid delusions mixed with genuine belief.",
+      "explanation": "Classic Dave: hyper-specific tactical thinking applied to completely mundane scenarios. The geraniums detail is perfect \u2014 not just any flowers, geraniums specifically. Good character-specific comedy.",
       "dialogue": [
         {
           "speaker": "Dave",
@@ -768,22 +823,24 @@
     },
     {
       "index": 29,
-      "text": "He says you have a kind face.",
+      "text": "Dave's extended gang resum\u00e9 continues: 'And in '54 I joined the monkey lords. After that, the rockers, the gentleman jims, the tsars, the stars, the might midgets from Queens.' Bret: 'So you've had a lot of gang experience, basically.' Dave: 'They're all gangs, big daddy!'",
       "characters": [
-        "Mrs. Li"
+        "Dave",
+        "Bret"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Mrs. Li explaining why they want to join gang",
-      "punchline": "Husband's reason is Bret has a kind face (opposite of intimidating)",
-      "craft_total": 6.67,
-      "impact_score": 6.33,
-      "quotability": 6.5,
+      "setup": "Dave continues listing his gang affiliations",
+      "punchline": "'The might midgets from Queens' is the absurd peak of the list; Bret's masterfully understated summary 'So you've had a lot of gang experience, basically'; Dave's 'They're all gangs, big daddy!'",
+      "craft_total": 7.37,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect undermining of Bret's tough guy aspirations through innocent observation.",
+      "is_callback": 1,
+      "explanation": "Mirrors Johnnyboy's list with Dave's own roster. 'The might midgets from Queens' is a great gang name. 'They're all gangs, big daddy!' \u2014 Dave's defensive pride \u2014 is a nice button.",
       "dialogue": [
         {
           "speaker": "Mrs. Li",
@@ -793,22 +850,23 @@
     },
     {
       "index": 30,
-      "text": "watering can tied to a hose. Pop! Cops show up, 'what's that, officer? No, just watering the geraniums.'",
+      "text": "Murray meets Australians in the lift: 'Are you a kiwi?' / 'Yes, hello.' / 'Oh no. A kiwi?' / 'Oh no.' / 'Uh-oh. Australian. Uh-oh.'",
       "characters": [
-        "Dave"
+        "Murray",
+        "Australian Consulate staff"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "irony_sarcasm"
       ],
-      "setup": "Dave describing makeshift weapons",
-      "punchline": "Elaborate scenario of disguising murder weapon as gardening tool",
-      "craft_total": 7.12,
-      "impact_score": 6.67,
-      "quotability": 7.5,
+      "setup": "Murray gets in a lift and is recognized as a New Zealander",
+      "punchline": "Both parties perform symmetric dismay at each other's nationality \u2014 both say 'Oh no' and 'Uh-oh' \u2014 revealing that the New Zealand/Australia rivalry is mutual and equally petty",
+      "craft_total": 7.62,
+      "impact_score": 7.75,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Dave's bizarre but detailed paranoid thinking.",
+      "explanation": "Good comedic economy in the symmetric dismay. The NZ/Australia rivalry is well-worn territory but the mutual 'uh-oh' is a nice structural detail. Sets up the Australian consulate running gag.",
       "dialogue": [
         {
           "speaker": "Dave",
@@ -818,22 +876,24 @@
     },
     {
       "index": 31,
-      "text": "Oh no. A kiwi? Oh no. Uh-oh. Australian. Uh-oh.",
+      "text": "'Just pulling your tit.' / 'Yeah, just pulling your boob.' \u2014 Australians apologize for the mineral exports joke using increasingly odd euphemisms for 'pulling your leg'",
       "characters": [
-        "Australians"
+        "Australian diplomats",
+        "Murray"
       ],
       "joke_types": [
+        "wordplay_pun",
         "character_comedy",
-        "observational"
+        "absurdist"
       ],
-      "setup": "Murray meeting Australians in elevator",
-      "punchline": "Mutual fake dismay about nationalities",
-      "craft_total": 6.5,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Australians tease Murray then apologize",
+      "punchline": "'Just pulling your tit' then 'Just pulling your boob' \u2014 escalating from leg to increasingly inappropriate body parts as euphemisms",
+      "craft_total": 7.22,
+      "impact_score": 7.25,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sets up Australia/New Zealand rivalry dynamic",
+      "explanation": "Nice little joke about Australian vernacular being pushed beyond its limits. 'Pulling your leg' \u2192 'pulling your tit' \u2192 'pulling your boob' is a clean escalation. Quotable and efficiently delivered.",
       "dialogue": [
         {
           "speaker": "Australian",
@@ -851,22 +911,24 @@
     },
     {
       "index": 32,
-      "text": "Murray, I think you dropped new zealand's mineral exports for '08-'09.",
+      "text": "Dave at gang defense meeting: 'I'm available most days after 6:00 but not weekends... and I can't say why.' Murray: 'Dinner with your parents?' Dave: 'Huh! No.'",
       "characters": [
-        "Australian"
+        "Dave",
+        "Murray"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement",
+        "setup_punchline"
       ],
-      "setup": "Australians teasing Murray about his work",
-      "punchline": "Absurd suggestion that he carries around the entire country's mineral exports",
-      "craft_total": 6.65,
-      "impact_score": 6.17,
-      "quotability": 7.0,
+      "setup": "Dave announces he can't do weekends but won't explain why",
+      "punchline": "Murray's guess of 'dinner with your parents' \u2014 which Dave dismisses with wounded indignation \u2014 implies it's probably exactly that",
+      "craft_total": 7.21,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good absurdist humor that plays on Murray's bureaucratic role and gullibility.",
+      "explanation": "Quick efficient joke. Dave's tough-guy persona is undermined by the perfectly plausible guess. His excessive 'Huh! No.' protests too much.",
       "dialogue": [
         {
           "speaker": "Australian",
@@ -876,22 +938,23 @@
     },
     {
       "index": 33,
-      "text": "Just pulling your tit. Yeah, just pulling your boob.",
+      "text": "Bret's gang schedule offer: 'I'm available all the time, but I like to go to bed by 8:00 at night so I can build up my Zs for the next day. Otherwise I get real tired. Oh, and I got to take toilet breaks. I have a bladder thing.'",
       "characters": [
-        "Australians"
+        "Bret"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement",
+        "absurdist"
       ],
-      "setup": "Australians explaining they were joking",
-      "punchline": "Awkward variation on 'pulling your leg' using chest terminology",
-      "craft_total": 6.01,
-      "impact_score": 5.67,
-      "quotability": 6.5,
+      "setup": "Bret, the gang leader, announces his scheduling constraints",
+      "punchline": "8pm bedtime plus a bladder condition \u2014 not exactly menacing gang-leader qualities",
+      "craft_total": 7.62,
+      "impact_score": 7.75,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Mildly clever wordplay but not particularly sophisticated humor.",
+      "explanation": "Beautifully anti-gangster. The gang leader's primary logistical constraints are his bedtime and bladder. 'Build up my Zs' is an endearingly dorky phrase. Strong character integration \u2014 Bret's meekness constantly undermining his aspirations.",
       "dialogue": [
         {
           "speaker": "",
@@ -905,22 +968,23 @@
     },
     {
       "index": 34,
-      "text": "I'm available most days after 6:00 but not weekends... and I can't say why. Dinner with your parents? Huh! No.",
+      "text": "Gang member shows off handmade item: 'If anyone wants me to make them a pair of these bad boys, I'll need about a week's notice.' \u2014 visual beat of showing whatever craft project he's made",
       "characters": [
-        "Dave",
-        "Bret"
+        "Johnnyboy"
       ],
       "joke_types": [
-        "character_comedy"
+        "visual_gag",
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Dave giving his availability with mysterious restriction",
-      "punchline": "Dismissive reaction to innocent suggestion, maintaining mystery",
-      "craft_total": 6.76,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Wrapping up gang scheduling meeting, Johnnyboy adds a note",
+      "punchline": "He's apparently been knitting or crafting something during the gang meeting and is offering his services \u2014 the 'bad boys' are presumably some domestic craft item",
+      "craft_total": 6.83,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Dave's mysterious past and defensive reactions.",
+      "explanation": "Visual gag that works better on screen. The tough gang veteran offering handcrafted goods with a week's lead time is a nice absurdist character beat. Rewatch bonus for the visual.",
       "dialogue": [
         {
           "speaker": "Dave",
@@ -938,21 +1002,24 @@
     },
     {
       "index": 35,
-      "text": "I have a bladder thing.",
+      "text": "Mel presents fan art of Jemaine to him at his door. Jemaine: 'What is it?' Mel: 'You don't like it.' Jemaine: 'I do.' Mel: 'No, you don't. You practically admitted that you don't like it.' Jemaine: 'I... did I?'",
       "characters": [
-        "Bret"
+        "Mel",
+        "Jemaine"
       ],
       "joke_types": [
-        "character_comedy"
+        "cringe_discomfort",
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Bret explaining need for toilet breaks",
-      "punchline": "TMI medical information in gang context",
-      "craft_total": 6.34,
-      "impact_score": 5.75,
-      "quotability": 6.0,
+      "setup": "Mel gives Jemaine fan art she painted of him",
+      "punchline": "She interprets 'What is it?' as an admission he doesn't like it, then escalates her distress while he scrambles to backtrack \u2014 trapped in an inescapable logic loop",
+      "craft_total": 7.53,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character detail showing Bret's inappropriate oversharing in tough guy context.",
+      "explanation": "Classic Mel cringe comedy. Her hypersensitivity traps Jemaine before he's even said anything wrong. The escalation from 'You don't like it' to 'You practically admitted' in seconds is well-paced. Strong Mel character integration.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -962,22 +1029,23 @@
     },
     {
       "index": 36,
-      "text": "You don't like it. No, you don't. You practically admitted that you don't like it.",
+      "text": "Mel's dramatic swing to joy: 'You love it! I can't believe he loves it! Oh God, you should hang it on your wall so you can see how strong and powerful you are, like the God Ra... the sun God Ra... or like a pharaoh.'",
       "characters": [
         "Mel"
       ],
       "joke_types": [
         "character_comedy",
+        "escalation",
         "cringe_discomfort"
       ],
-      "setup": "Mel showing Jemaine her fan art",
-      "punchline": "Mel's insecure overinterpretation of Jemaine's polite response",
-      "craft_total": 6.43,
-      "impact_score": 6.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Jemaine grudgingly says he likes the painting",
+      "punchline": "Mel's instant swing from devastation to ecstatic hyperbole \u2014 comparing Jemaine to Egyptian sun gods \u2014 reveals the painting is an idealized muscular warrior version of him",
+      "craft_total": 7.64,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Mel character moment showing her neurotic interpretation of social cues.",
+      "explanation": "Mel's emotional range from zero to hundred in seconds is her defining character trait. The painting being a warrior-pharaoh version of Jemaine (who is not muscular) is revealed here. 'Like the God Ra... the sun God Ra' \u2014 the clarification that Ra is a sun god makes it funnier.",
       "dialogue": [
         {
           "speaker": "Mel",
@@ -987,21 +1055,25 @@
     },
     {
       "index": 37,
-      "text": "so you can see how strong and powerful you are, like the God ra... the sun God ra... or like a pharaoh.",
+      "text": "Jemaine: 'I'm not as muscley as that.' Mel: 'Yeah, that's what I said.' Doug (quietly): 'Be quiet, Doug.'",
       "characters": [
-        "Mel"
+        "Jemaine",
+        "Mel",
+        "Doug"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Mel explaining the artistic vision",
-      "punchline": "Grandiose comparisons to Egyptian deities for awkward Jemaine",
-      "craft_total": 6.72,
-      "impact_score": 6.5,
-      "quotability": 6.5,
+      "setup": "Jemaine notes the painting is more muscular than he is",
+      "punchline": "Mel agrees ('that's what I said'), inadvertently confirming she painted a better-looking version of him; Doug is pre-emptively silenced",
+      "craft_total": 7.45,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character comedy showing Mel's delusional perception of Jemaine.",
+      "explanation": "Three beats in quick succession. Mel's unselfconscious confirmation that the painting is better-looking than Jemaine, then Doug being silenced before he can say anything, is economically funny.",
       "dialogue": [
         {
           "speaker": "Mel",
@@ -1011,21 +1083,23 @@
     },
     {
       "index": 38,
-      "text": "I made one of Bret, but it came out a little weird, so don't tell him, okay? It came out x-rated, actually... some shadowing on the crotch got out of hand",
+      "text": "Mel: 'Anyways, I made one of Bret, but it came out a little weird, so don't tell him, okay? It came out x-rated, actually... some shadowing on the crotch got out of hand.'",
       "characters": [
         "Mel"
       ],
       "joke_types": [
+        "dark_subversive",
+        "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Mel mentioning Bret painting",
-      "punchline": "Inappropriate sexual details about 'accidental' crotch emphasis",
-      "craft_total": 6.78,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Mel has painted both band members",
+      "punchline": "The Bret painting came out X-rated due to 'shadowing on the crotch getting out of hand' \u2014 delivered as a completely casual artistic mishap",
+      "craft_total": 8.34,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect cringe comedy showing Mel's inappropriate obsession masked as artistic accident.",
+      "explanation": "Brilliant Mel joke. 'Some shadowing on the crotch got out of hand' is the episode's funniest line about Mel \u2014 she treats the accidental creation of X-rated fan art as a minor artistic inconvenience. The euphemism 'got out of hand' is perfectly chosen. Strong character integration; only Mel would say this with zero embarrassment.",
       "dialogue": [
         {
           "speaker": "Mel",
@@ -1035,22 +1109,25 @@
     },
     {
       "index": 39,
-      "text": "We were just expecting missy Elliot was gonna come and chop my body off.",
+      "text": "Bret's gang mistakes Jemaine for an enemy: 'Bret! Bret! Bret! We got him good!' then 'False alarm. It's Jemaine.' followed by Dave attacking anyway: 'Can attack!'",
       "characters": [
-        "Bret"
+        "Gang",
+        "Dave",
+        "Jemaine"
       ],
       "joke_types": [
-        "callback",
-        "absurdist"
+        "physical_slapstick",
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Explaining gang's attack preparation",
-      "punchline": "Referencing Murray's bizarre body-chopping description with wrong rapper",
-      "craft_total": 6.7,
-      "impact_score": 6.33,
-      "quotability": 7.5,
+      "setup": "Gang is on high alert waiting for enemies to arrive",
+      "punchline": "They attack Jemaine (Bret's own flatmate) by mistake; even after the false alarm is called, Dave still hits him ('Can attack!')",
+      "craft_total": 7.01,
+      "impact_score": 7.5,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good callback to Murray's absurd body-chopping story with added humor of wrong rapper name.",
+      "is_callback": 0,
+      "explanation": "Good physical comedy beat. 'False alarm' being immediately followed by 'Can attack!' suggests Dave operates on his own tactical logic regardless of instructions. The rewatch bonus is for the physical execution of the attack on Jemaine.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -1060,23 +1137,24 @@
     },
     {
       "index": 40,
-      "text": "This gang is disbandoned. - No. Dis... what? - Disbandoned. - Disbanded you mean? - Abandoned? Yup, all of those things.",
+      "text": "Jemaine asks Bret about his day. Bret: 'How was your day?' Jemaine: 'Uh, it was good.' Bret: 'I've been in the ceiling most of the day.'",
       "characters": [
-        "Murray",
+        "Jemaine",
         "Bret"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "deadpan_understatement",
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Murray trying to disband the gang",
-      "punchline": "Murray's malapropism 'disbandoned' and doubling down when corrected",
-      "craft_total": 7.18,
-      "impact_score": 6.83,
-      "quotability": 8.0,
+      "setup": "Normal conversational exchange about how the day went",
+      "punchline": "Bret has spent the day in the ceiling \u2014 delivered as a completely unremarkable detail in polite conversation",
+      "craft_total": 8.04,
+      "impact_score": 7.75,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great malapropism that Murray commits to, showing his stubborn pride when corrected.",
+      "explanation": "Perfect deadpan. The extreme incongruity of 'I've been in the ceiling most of the day' delivered as casual small talk \u2014 with no elaboration and no reaction from Jemaine \u2014 is a textbook FOTC absurdist beat. Economical to a fault.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -1102,22 +1180,24 @@
     },
     {
       "index": 41,
-      "text": "Yes. Who was in your gang, you and your mom? No, Jemaine. It was me, my brother graeme, and my dad Gordon. Mom wasn't even allowed in it. No one knew why.",
+      "text": "Murray's confusion: 'Right, Bret, what's this I hear from one of the band about you starting up a gang?' \u2014 Bret: 'You told me to start up a gang.' Murray: 'I said rappers have gangs and you shouldn't hassle rappers.' Bret: 'No, you said rappers have gangs, so I should start a gang.' Murray: 'Typical... you didn't listen.'",
       "characters": [
         "Murray",
-        "Jemaine"
+        "Bret"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Jemaine mocking Murray's gang claim",
-      "punchline": "Murray's earnest description of family bike gang with mysterious mom exclusion",
-      "craft_total": 6.92,
-      "impact_score": 6.75,
-      "quotability": 7.5,
+      "setup": "Murray confronts Bret about the gang",
+      "punchline": "Murray says 'typical, you didn't listen' \u2014 when actually Bret's interpretation ('I should start a gang') is a plausible reading of Murray's original warning",
+      "craft_total": 6.95,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great character backstory that's both innocent and mysteriously dysfunctional.",
+      "explanation": "Good Murray moment. He accuses Bret of not listening when in fact the miscommunication is attributable to his own garbled warning. Murray's certainty in his own correctness is perfectly in character.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -1131,22 +1211,25 @@
     },
     {
       "index": 42,
-      "text": "Dad was the leader, graeme found nice places for us to ride to and I was the guy that looked after the bags.",
+      "text": "Murray: 'This gang is disbandoned.' Bret: 'No. Dis... what?' Murray: 'Disbandoned.' Jemaine: 'Disbanded?' Murray: 'Abandoned?' Murray: 'Yup, all of those things.'",
       "characters": [
-        "Murray"
+        "Murray",
+        "Bret",
+        "Jemaine"
       ],
       "joke_types": [
+        "wordplay_pun",
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Murray explaining family gang roles",
-      "punchline": "Murray's role was the least tough - bag carrier",
-      "craft_total": 7.35,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Murray tries to formally dissolve Bret's gang",
+      "punchline": "'Disbandoned' \u2014 a portmanteau of 'disbanded' and 'abandoned,' which Murray defends by accepting both component words as equally valid",
+      "craft_total": 8.16,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect character detail showing Murray's position in family hierarchy.",
+      "explanation": "A wonderful Murray malapropism. 'Disbandoned' is a perfect blend word \u2014 it sounds exactly like something Murray would say with complete authority. His response when challenged \u2014 accepting both 'disbanded' and 'abandoned' as equivalent \u2014 shows Murray's strategy of doubling down rather than correcting. High quotability, strong character integration.",
       "dialogue": [
         {
           "speaker": "Murray",
@@ -1156,22 +1239,24 @@
     },
     {
       "index": 43,
-      "text": "I had to throw it away! Because Bret was jealous. Really? Was he going apeshit? He went apeshit.",
+      "text": "Murray's yes/no loop with Bret: 'Yes. / No. / Yes! / No. / How about yes? / How about no? / Well, I'd rather you say yes. / No.'",
       "characters": [
-        "Jemaine",
-        "Mel"
+        "Murray",
+        "Bret"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Jemaine explaining why he discarded the painting",
-      "punchline": "Making up story about Bret's jealousy to spare Mel's feelings",
-      "craft_total": 6.53,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Murray tries to get Bret to agree to disband the gang",
+      "punchline": "The negotiation devolves into pure monosyllabic repetition, with Murray trying the negotiating tactic 'How about yes?' and offering 'I'd rather you say yes' as if it's a compelling argument",
+      "craft_total": 7.47,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Jemaine's awkward attempt at kindness through deception.",
+      "explanation": "The escalation to pure yes/no trading is funny, but the killer detail is 'I'd rather you say yes' \u2014 Murray deploying his feelings as a negotiating tool. Economical and rhythmically satisfying.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -1189,22 +1274,23 @@
     },
     {
       "index": 44,
-      "text": "I swear on Doug's life I will fix this rift.",
+      "text": "Murray completes the pivot back: 'Nice guy, isn't he... Greg?' \u2014 after previously dissing Greg constantly, including seconds ago",
       "characters": [
-        "Mel"
+        "Murray"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "irony_sarcasm",
+        "callback"
       ],
-      "setup": "Mel promising to resolve conflict",
-      "punchline": "Swearing on her boyfriend's life for minor issue",
-      "craft_total": 6.84,
-      "impact_score": 6.25,
-      "quotability": 7.0,
+      "setup": "Murray has been secretly disparaging Greg all episode",
+      "punchline": "Now that Greg has secured him a plus-two, Murray is warmly complimentary: 'Nice guy, isn't he... Greg?'",
+      "craft_total": 7.47,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Mel's dramatic overreaction to minor issues",
+      "is_callback": 1,
+      "explanation": "Satisfying callback to the Greg-dissing thread. Murray's complete reversal based purely on the plus-two is well-observed character comedy.",
       "dialogue": [
         {
           "speaker": "Mel",
@@ -1214,21 +1300,25 @@
     },
     {
       "index": 45,
-      "text": "Miss new zealand... best looking Sheila in the whole country. Sorry, I didn't recognize you without the crown and sash.",
+      "text": "Murray reveals he used to be in a gang: 'It was me, my brother Graeme, and my dad Gordon. Mom wasn't even allowed in it. No one knew why.'",
       "characters": [
-        "Australian"
+        "Murray",
+        "Jemaine",
+        "Bret"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "character_comedy",
+        "deadpan_understatement",
+        "absurdist"
       ],
-      "setup": "Australian identifying Jemaine at party",
-      "punchline": "Mistaking male Jemaine for female beauty pageant winner",
-      "craft_total": 6.43,
-      "impact_score": 6.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Murray claims moral authority on gangs because he was in one",
+      "punchline": "His gang was him, his brother, and his dad \u2014 a family bike gang \u2014 and his mom was excluded for unknown reasons",
+      "craft_total": 8.07,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good setup for later hurt feelings song reference about being called Miss New Zealand.",
+      "explanation": "Superb Murray backstory joke. The gang being a dad-led family bicycle group is already funny; 'Mom wasn't even allowed in it. No one knew why' is the perfect detail \u2014 the arbitrary exclusion, the family mystery, the child Murray apparently compliant with Dad's gang rules. Very Murray.",
       "dialogue": [
         {
           "speaker": "Australian",
@@ -1238,21 +1328,23 @@
     },
     {
       "index": 46,
-      "text": "But I thought flossy the sheep won miss new zealand every year.",
+      "text": "Murray describes his gang role: 'Dad was the leader, Graeme found nice places for us to ride to, and I was the guy that looked after the bags.'",
       "characters": [
-        "Ambassador"
+        "Murray"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "character_comedy",
+        "deadpan_understatement",
+        "escalation"
       ],
-      "setup": "Ambassador seemingly apologizing for staff behavior",
-      "punchline": "Reveals he's just as bad with sheep joke",
-      "craft_total": 6.5,
-      "impact_score": 6.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Effective misdirection but relies on tired stereotypes about New Zealand.",
+      "setup": "Murray describes the hierarchy of his biker gang",
+      "punchline": "Murray's role was... bag-keeper. His brother found 'nice places' for rides. His dad led. Murray looked after the bags.",
+      "craft_total": 8.15,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Beautiful escalation on the family gang joke. The roles are hilariously mundane: finding 'nice places,' keeping bags. Murray's gang role \u2014 not navigator, not enforcer, not even the one who finds nice places \u2014 is bag-keeper. It's a perfect degradation that's also unmistakably Murray. One of the episode's strongest character comedy moments.",
       "dialogue": [
         {
           "speaker": "Ambassador",
@@ -1262,21 +1354,24 @@
     },
     {
       "index": 47,
-      "text": "\u00b6 have you ever been told that you're miss new zealand? \u00b6",
+      "text": "Jemaine: 'Murray, is there anything band-related in today's meeting?' Murray: 'Yes, there is, actually, but I haven't finished my gang stories.'",
       "characters": [
-        "Jemaine"
+        "Jemaine",
+        "Murray"
       ],
       "joke_types": [
-        "callback"
+        "character_comedy",
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Continuation of hurt feelings song",
-      "punchline": "Direct reference to embassy party humiliation",
-      "craft_total": 6.99,
-      "impact_score": 6.75,
+      "setup": "Murray has spent an entire meeting on non-band topics",
+      "punchline": "He acknowledges there ARE band-related items but refuses to get to them because his gang reminiscences take priority",
+      "craft_total": 7.06,
+      "impact_score": 6.5,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good callback that ties the song to recent plot events effectively.",
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good Murray inefficiency joke. The acknowledgment that band business exists but is being actively deprioritized for gang nostalgia is perfectly Murray.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -1286,22 +1381,23 @@
     },
     {
       "index": 48,
-      "text": "Mos def, the guy from 'law & order: SUV'? No, that's ice cube, but keep an eye out for him.",
+      "text": "Murray's final agenda item: 'Bret, Murray, curry. Any use to you?' \u2014 offering another rhyming word set as they leave",
       "characters": [
-        "Bret",
-        "Dave"
+        "Murray"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "callback",
+        "absurdist"
       ],
-      "setup": "Looking for dangerous rappers",
-      "punchline": "Confusing rappers with TV actors and getting show name wrong ('SUV' not 'SVU')",
-      "craft_total": 6.44,
-      "impact_score": 5.83,
-      "quotability": 6.5,
+      "setup": "Meeting is ending chaotically",
+      "punchline": "Murray's parting shot is the Texas/Lexus bit again, now with 'Bret/Murray/curry' \u2014 shouting rhyming words at retreating band members",
+      "craft_total": 7.46,
+      "impact_score": 7.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character detail showing their cultural confusion and pop culture mix-ups.",
+      "is_callback": 1,
+      "explanation": "Nice callback to the Texas/Lexus bit. Murray's dedication to the rhyming-words project even as the meeting collapses is funny. 'Bret, Murray, curry' \u2014 including his own name in the rhyme set \u2014 is a lovely absurdist touch.",
       "dialogue": [
         {
           "speaker": "Dave",
@@ -1311,22 +1407,24 @@
     },
     {
       "index": 49,
-      "text": "he was the voice of lightning the racehorse.",
+      "text": "Mel confronts Jemaine about painting being on the stoop. Jemaine: 'I had to throw it away!' Mel: 'Why?' Jemaine: 'Because Bret was jealous.' Mel: 'Really? Was he going apeshit?' Jemaine: 'He went apeshit.'",
       "characters": [
-        "Dave"
+        "Mel",
+        "Jemaine"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm",
+        "cringe_discomfort"
       ],
-      "setup": "Dave listing Snoop Dogg movie appearances",
-      "punchline": "Bizarre claim about Snoop voicing a racehorse",
-      "craft_total": 7.28,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Mel finds her painting by the trash; Jemaine tries to explain",
+      "punchline": "Jemaine lies about Bret being jealous; Mel's intense investment in the fiction ('Was he going apeshit?') and Jemaine's immediate amplification ('He went apeshit') creates a mutual fabrication",
+      "craft_total": 7.66,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good absurd detail that feels specific enough to be believable from Dave's character.",
+      "explanation": "The Mel-Jemaine dynamic at its best. Mel's enthusiastic adoption of 'going apeshit' as a phrase, and her delight at the idea of Bret's jealousy, reveals her obsessiveness. Jemaine's weak lie spiraling into 'he went apeshit' is a nice comedic escalation driven by character.",
       "dialogue": [
         {
           "speaker": "Dave",
@@ -1336,21 +1434,23 @@
     },
     {
       "index": 50,
-      "text": "\u00b6 Bret, cool your jets, don't sweat \u00b6 \u00b6 don't flip, don't get upset \u00b6",
+      "text": "Mel: 'I swear on Doug's life I will fix this rift.'",
       "characters": [
-        "Jemaine"
+        "Mel"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "dark_subversive",
+        "deadpan_understatement"
       ],
-      "setup": "Confronting graffiti kids",
-      "punchline": "Jemaine's advice song with forced rhymes and dated slang",
-      "craft_total": 6.78,
-      "impact_score": 6.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Mel commits to resolving the (fictional) jealousy between Bret and Jemaine",
+      "punchline": "She swears on Doug's life \u2014 not her own \u2014 treating her husband's existence as a disposable oath object",
+      "craft_total": 8.18,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good musical moment showing Jemaine's attempt to defuse situation through song.",
+      "explanation": "Exceptional economy and character integration. The joke is entirely in 'Doug's life' \u2014 four words that tell you everything about how Mel regards her husband relative to her obsession with the band. She doesn't swear on her own life; Doug's is more expendable. Could only be Mel. Justifies the high score.",
       "dialogue": [
         {
           "speaker": "Jemaine",
@@ -1364,21 +1464,24 @@
     },
     {
       "index": 51,
-      "text": "\u00b6 not gonna sleep till I found him \u00b6 \u00b6 I'll pound him, I'll bet he regrets \u00b6 \u00b6 he ever messed with Bret from the tough brets! \u00b6",
+      "text": "Mel insists on standing uncomfortably close to Jemaine: 'Jemaine, stay close.' 'I am close. You're too close now.' 'No, but... closer. Put your feet next to mine... that's it. We're together, all right?'",
       "characters": [
-        "Bret"
+        "Mel",
+        "Jemaine"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "cringe_discomfort",
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Bret responding to Jemaine's calming advice",
-      "punchline": "Escalating to violent threats in sing-song delivery",
-      "craft_total": 6.83,
-      "impact_score": 6.5,
-      "quotability": 7.5,
+      "setup": "Mel escorts Jemaine to the consulate party",
+      "punchline": "Her definition of 'together' involves feet touching; Jemaine's increasingly alarmed objections",
+      "craft_total": 7.11,
+      "impact_score": 6.75,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good contrast between Jemaine's peace-making and Bret's escalation in musical form.",
+      "explanation": "Good cringe beat. Mel's escalating physical proximity requirements are a nice expression of her obsessiveness. Stronger visually than in transcript form.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -1388,21 +1491,25 @@
     },
     {
       "index": 52,
-      "text": "\u00b6 what's the hurry? \u00b6 \u00b6 hello, Murray, glad I caught ya \u00b6 \u00b6 who's this? Your daughter? \u00b6",
+      "text": "Mel at the party: 'You said there was gonna be cheese. You said there was gonna be free cheese.' Murray: 'There will be cheese. Over there. Look.' Mel: 'Right, let's go and get some cheese together, okay? All right, go. No, you're too close.' \u2014 the physical proximity joke inverted",
       "characters": [
-        "Australians"
+        "Mel",
+        "Murray",
+        "Jemaine"
       ],
       "joke_types": [
+        "callback",
+        "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Australians joining the musical confrontation",
-      "punchline": "Mocking Murray through song, mistaking Jemaine for his daughter",
-      "craft_total": 6.34,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Mel was demanding closeness from Jemaine; now Murray is apparently too close",
+      "punchline": "The proximity complaint inverted \u2014 she was insisting on closeness with Jemaine, now she tells Murray he's 'too close'",
+      "craft_total": 6.76,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Serviceable musical expansion but not particularly clever beyond established character dynamics.",
+      "is_callback": 1,
+      "explanation": "Functional callback. The inversion of the proximity joke works but isn't as sharp as the original.",
       "dialogue": [
         {
           "speaker": "",
@@ -1420,23 +1527,25 @@
     },
     {
       "index": 53,
-      "text": "Sorry. You could get 10 years for that.",
+      "text": "Australian diplomat at the party: 'Who's this, Murray... your wife? No, his wife... his wife left him.' Murray: 'Jemaine!' \u2014 Jemaine has just told everyone Murray's marriage failed",
       "characters": [
-        "Bret",
-        "Dave"
+        "Australian diplomat",
+        "Jemaine",
+        "Murray"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort",
+        "dark_subversive"
       ],
-      "setup": "Bret accidentally kicking a kid during confrontation",
-      "punchline": "Dave's wildly exaggerated legal consequences",
-      "craft_total": 6.73,
-      "impact_score": 6.17,
-      "quotability": 6.0,
+      "setup": "Murray is greeted by the Australian diplomats he met in the elevator",
+      "punchline": "Jemaine immediately and helpfully informs everyone that Murray's wife left him, when asked if Mel was Murray's wife",
+      "craft_total": 7.51,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good absurd escalation showing Dave's paranoid worldview about legal consequences.",
+      "explanation": "Good cringe beat. Jemaine volunteering Murray's divorce as relevant information \u2014 completely socially unaware \u2014 is well-played. Murray's wounded 'Jemaine!' is the button.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -1450,21 +1559,25 @@
     },
     {
       "index": 54,
-      "text": "Where's the dapper dukes' hideout? It was right here. You know, we laid low for three straight months back in '58.",
+      "text": "Australian diplomat: 'Miss New Zealand... best looking Sheila in the whole country. Sorry, I didn't recognize you without the crown and sash.' \u2014 referring to Jemaine (a man) as Miss New Zealand",
       "characters": [
-        "Dave"
+        "Australian diplomat",
+        "Jemaine",
+        "Murray"
       ],
       "joke_types": [
-        "character_comedy"
+        "irony_sarcasm",
+        "character_comedy",
+        "running_gag"
       ],
-      "setup": "Dave looking for old gang hideout",
-      "punchline": "Specific details about 1950s gang with classy name 'dapper dukes'",
-      "craft_total": 6.88,
+      "setup": "Australians are ribbing Murray's friend",
+      "punchline": "They suggest Jemaine \u2014 who is a man \u2014 must be Miss New Zealand, implying he's the best-looking woman in the country",
+      "craft_total": 6.5,
       "impact_score": 6.25,
-      "quotability": 7.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "'Dapper dukes' is a great gang name that fits Dave's delusional nostalgia perfectly.",
+      "explanation": "Standard beauty-pageant-for-a-man joke, elevated slightly by Jemaine's specific deadpan reaction and the Australian-NZ rivalry context. Sets up the ambassador payoff.",
       "dialogue": [
         {
           "speaker": "Dave",
@@ -1474,21 +1587,23 @@
     },
     {
       "index": 55,
-      "text": "Maybe you're right, lil Louie. I'm getting old. This game ain't no good for me no more. I'm sorry, Louie. I'm out. So long, lil Louie.",
+      "text": "Murray: 'Let's just get all their cheese and grapes and get out of here.' \u2014 retaliation plan is stealing the party food",
       "characters": [
-        "Dave"
+        "Murray"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement",
+        "absurdist"
       ],
-      "setup": "Dave having emotional breakdown about gang life",
-      "punchline": "Calling Bret 'lil Louie' and dramatic exit from toy gang",
-      "craft_total": 7.06,
-      "impact_score": 6.75,
-      "quotability": 7.0,
+      "setup": "Murray is humiliated and wants to respond",
+      "punchline": "His revenge is maximum food acquisition \u2014 'all their cheese and grapes'",
+      "craft_total": 7.51,
+      "impact_score": 7.25,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect dramatic exit that treats the silly gang with noir movie seriousness.",
+      "explanation": "Murray's petty revenge consisting entirely of cheese and grape confiscation is a very Murray plan. The specificity of 'grapes' alongside cheese is funnier than just cheese alone.",
       "dialogue": [
         {
           "speaker": "Dave",
@@ -1498,22 +1613,23 @@
     },
     {
       "index": 56,
-      "text": "How come I'm wearing gumboots?",
+      "text": "Ambassador, after apologizing: 'But I thought Flossy the sheep won Miss New Zealand every year.' \u2014 the Australian Ambassador himself makes a sheep joke",
       "characters": [
-        "Bret"
+        "Ambassador"
       ],
       "joke_types": [
-        "visual_gag",
-        "character_comedy"
+        "irony_sarcasm",
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Bret looking at Mel's painting of him",
-      "punchline": "Confused by specific footwear choice in heroic portrait",
-      "craft_total": 6.57,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "The Australian Ambassador has just apologized for his staff's behavior and promised to take it seriously",
+      "punchline": "He immediately makes a worse sheep-shagger joke himself \u2014 the person Murray went to for justice is worse than the offenders",
+      "craft_total": 7.62,
+      "impact_score": 7.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good specific detail question that undermines the heroic portrait concept.",
+      "explanation": "Well-structured misdirection. The setup \u2014 Murray escalates to the Ambassador for justice \u2014 creates an expectation of vindication. The subversion is that the most senior Australian official is the worst offender. 'Flossy the sheep' is a specific enough detail to make the joke land. Good structure.",
       "dialogue": [
         {
           "speaker": "Bret",
@@ -1523,21 +1639,24 @@
     },
     {
       "index": 57,
-      "text": "Well, in the future, I suggest you don't kick children. we'll let this go because we don't like that particular kid, but we've got our eyes on you.",
+      "text": "Murray: 'Greg, what are you laughing for?' \u2014 Greg (presumably on the intercom) has been laughing at the sheep joke",
       "characters": [
-        "Police Officer"
+        "Murray",
+        "Greg"
       ],
       "joke_types": [
-        "absurdist"
+        "callback",
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Police investigating child-kicking incident",
-      "punchline": "Police admitting they also dislike the specific kid but still warning Bret",
-      "craft_total": 7.24,
-      "impact_score": 7.33,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant subversion of authority - police being unprofessional in perfectly professional tone.",
+      "setup": "Murray has just been publicly humiliated by the Australian Ambassador",
+      "punchline": "Greg, miles away on the intercom, is apparently laughing at Murray's humiliation",
+      "craft_total": 7.5,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Nice callback to the broken intercom thread. Greg \u2014 who has been quietly absorbing Murray's disses all year \u2014 gets his moment of schadenfreude, apparently tuned into whatever is happening and laughing. Murray's outraged 'Greg, what are you laughing for?' is perfect.",
       "dialogue": [
         {
           "speaker": "Police Officer",
@@ -1547,29 +1666,498 @@
     },
     {
       "index": 58,
-      "text": "As you can see, I pretty much got the handsomeness. That's Jemaine. If you don't believe it, he can take his shirt off and you can be sure about it.",
+      "text": "Reprise of 'Hurt Feelings' instrumental \u2014 Murray walking alone, dejected, through the party",
       "characters": [
-        "Mel"
+        "Murray"
       ],
       "joke_types": [
-        "character_comedy"
+        "callback",
+        "visual_gag",
+        "deadpan_understatement"
       ],
-      "setup": "Mel showing painting to strangers",
-      "punchline": "Inappropriate suggestion that Jemaine strip to verify artistic accuracy",
-      "craft_total": 6.72,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Mel moment showing her complete lack of appropriate boundaries.",
+      "setup": "Murray has just been publicly humiliated by the Australian Ambassador",
+      "punchline": "The 'Hurt Feelings' melody plays as Murray walks dejectedly \u2014 the song's theme now applies to Murray himself, making it meta-commentary on his situation",
+      "craft_total": 8.19,
+      "impact_score": 8.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Elegant structural joke. The episode's central song about hurt feelings now becomes Murray's theme as he wanders humiliated. It's a callback, a visual gag, and meta-commentary all in one. The show's musical form being used to comment on the character situation is a sophisticated comedy move that rewards rewatching.",
       "dialogue": [
         {
           "speaker": "Mel",
           "line": "As you can see, I pretty much got the handsomeness. That's Jemaine. If you don't believe it, he can take his shirt off and you can be sure about it."
         }
       ]
+    },
+    {
+      "index": 59,
+      "text": "Mel offers to pose for Jemaine's portrait; Jemaine declines without hesitation. Doug: 'Mel, I could pose for you.' Mel: 'Oh, no thanks.' \u2014 Doug shut down instantly",
+      "characters": [
+        "Doug",
+        "Mel",
+        "Jemaine"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Mel wants Jemaine to paint her; the painting situation lingers",
+      "punchline": "Doug offering to pose and being immediately dismissed \u2014 Mel doesn't even need a moment to consider",
+      "craft_total": 7.16,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Efficient character comedy. Doug's gentle attempt to be included in the creative process is immediately crushed. 'Oh, no thanks' \u2014 Mel doesn't even have to think about it. Doug's marginalization is a consistent background joke of the show."
+    },
+    {
+      "index": 60,
+      "text": "Song reprise verse: 'Have you ever been dissed over the intercom? / Have you ever found a gift you've given thrown away? / Have you ever been told that you're Miss New Zealand?'",
+      "characters": [
+        "Bret",
+        "Jemaine",
+        "Murray"
+      ],
+      "joke_types": [
+        "callback",
+        "meta_self_referential",
+        "character_comedy"
+      ],
+      "setup": "The 'Hurt Feelings' song returns with new verses",
+      "punchline": "The new verses directly reference events from THIS episode \u2014 the intercom dissing, the thrown-away painting, the Miss NZ insult \u2014 making the song a recap of the episode's humiliations",
+      "craft_total": 8.26,
+      "impact_score": 8.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Structurally smart. The show uses the song reprise to tie together the episode's comedic threads \u2014 the broken intercom, Mel's art, the Australian diplomats \u2014 into a meta-summary sung as if they're generic rap grievances. 'Have you ever been dissed over the intercom?' is specific enough to be funny while fitting perfectly into the song's rhetorical framework. Strong episode-level craft."
+    },
+    {
+      "index": 61,
+      "text": "Post-party small talk: 'Thanks for bringing me to the party, Murray.' 'That's all right. Good cheese, wasn't it?'",
+      "characters": [
+        "Jemaine",
+        "Murray"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "They've just returned from a deeply humiliating evening",
+      "punchline": "Murray's consolation is that the cheese was good \u2014 his petty cheese-acquisition plan was at least partially successful",
+      "craft_total": 7.36,
+      "impact_score": 6.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Perfect button on the evening. Murray's silver lining is entirely cheese-based. 'Good cheese, wasn't it?' delivered with complete sincerity after a night of national humiliation is economical and very Murray."
+    },
+    {
+      "index": 62,
+      "text": "Bret and Dave on watch: 'We're looking for, basically, all rappers.' Dave: 'Mos Def, all the guys.' Bret: 'Mos Def, the guy from Law & Order: SVU?' Dave: 'No, that's Ice Cube, but keep an eye out for him.'",
+      "characters": [
+        "Bret",
+        "Dave"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "escalation"
+      ],
+      "setup": "Bret and Dave are on lookout for enemy rappers",
+      "punchline": "Bret confuses Mos Def (rapper) with Ice Cube (who was apparently on Law & Order: SVU in this fiction), and Dave corrects him with equal misinformation",
+      "craft_total": 7.3,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good escalating confusion sequence. The characters' complete inability to correctly identify any rapper, while being deadly serious about it, is a nice extension of the show's NZ-outsider perspective on American hip-hop culture."
+    },
+    {
+      "index": 63,
+      "text": "Extended rapper-filmography confusion: Ice Cube was in 'Are We There Yet?' and 'Are We Done Yet?', Method Man from 'Meet the Spartans,' Snoop Dogg 'was the voice of Lightning the racehorse.' 'Yeah, you don't want him on your ass.'",
+      "characters": [
+        "Bret",
+        "Dave"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation",
+        "absurdist"
+      ],
+      "setup": "Bret and Dave try to establish which rappers are dangerous based on their movie credits",
+      "punchline": "Their threat assessment is based entirely on film roles: Snoop Dogg's danger level is determined by him voicing a racehorse; Dave concludes 'You don't want him on your ass' \u2014 a horse-related double meaning",
+      "craft_total": 7.84,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The rapper filmography discussion escalates beautifully. 'Lightning the racehorse' is a perfectly absurd detail (if it's even real). 'You don't want him on your ass' as both a threat assessment and an accidental horse-racing double entendre is strong. The logic of judging rapper danger level by movie r\u00e9sum\u00e9 is genuinely original."
+    },
+    {
+      "index": 64,
+      "text": "Bret confronts the teen graffiti artists: 'Well, on behalf of the tough Brets, I'd like you to stop graffitiing Mr. and Mrs. Li's internet shop.' Teens: 'Who are you?' / 'Yeah, get lost.'",
+      "characters": [
+        "Bret",
+        "teenagers"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement",
+        "cringe_discomfort"
+      ],
+      "setup": "Bret has assembled his gang to confront dangerous vandals",
+      "punchline": "His formal, polite speech ('on behalf of the tough Brets') is instantly dismissed by teenagers who tell him to get lost",
+      "craft_total": 7.42,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good setup for the song. Bret's polite gang-spokesperson mode ('I'd like you to stop graffitiing') is completely deflated by immediate dismissal from teenagers. The formality of 'on behalf of the Tough Brets' against the teens' casual contempt is well-calibrated."
+    },
+    {
+      "index": 65,
+      "text": "'Stay Cool, Bret' song \u2014 Jemaine and Murray trying to calm Bret, then pivoting to their own anxieties: 'Not gonna sleep till I found him / I'll pound him, I'll bet he regrets / He ever messed with Bret from the tough Brets!'",
+      "characters": [
+        "Jemaine",
+        "Murray",
+        "Bret"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection",
+        "escalation"
+      ],
+      "setup": "Jemaine tries to calm Bret down with a song advising restraint",
+      "punchline": "The 'stay cool' song escalates into its own aggressive revenge fantasy \u2014 the people telling Bret to stay cool are not staying cool themselves",
+      "craft_total": 8.59,
+      "impact_score": 8.75,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The episode's best song. The conceit \u2014 a calm-down song that spirals into rage \u2014 is perfectly structured. Jemaine instructs Bret to stay cool while simultaneously promising to pound the kid until he regrets it. The contradiction is the joke, and it's executed with perfect musical escalation. 'He ever messed with Bret from the tough Brets' as the aggressive conclusion of a de-escalation song is a top-tier FOTC construction. Justifies 8.5+ \u2014 the structural subversion is comparable to the best moments of the show."
+    },
+    {
+      "index": 66,
+      "text": "'Stay Cool, Murray' \u2014 verse addressed to Murray: 'What's the hurry? / Hello, Murray, glad I caught ya / Who's this? Your daughter? / Your girlfriend looks great, do you want a date? / Just pulling your tit, mate...'",
+      "characters": [
+        "Jemaine",
+        "Murray",
+        "Australian diplomats"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy",
+        "meta_self_referential"
+      ],
+      "setup": "The Stay Cool song expands to include Murray, who apparently encounters the Australians mid-song",
+      "punchline": "The Australian diplomats' 'just pulling your tit' catchphrase is incorporated into the musical number, and Murray apparently needs to be told to stay cool as well",
+      "craft_total": 7.41,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Smart integration of the episode's Australian subplot into the musical number. 'Just pulling your tit, mate' being sung in the context of the stay-cool song is a callback that earns its place. Murray needing his own 'stay cool' verse implies he's about to confront the Australians again."
+    },
+    {
+      "index": 67,
+      "text": "Mid-song fight sound effects: 'Bam! / Pow!' interspersed with 'Stay / Cool' \u2014 the song literally represents a street fight in musical form",
+      "characters": [
+        "Bret",
+        "Jemaine",
+        "Murray"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "absurdist",
+        "meta_self_referential"
+      ],
+      "setup": "The Stay Cool song has been escalating toward confrontation",
+      "punchline": "Comic-book fight sounds ('Bam!' 'Pow!') set to music, while the refrain insists they're staying cool \u2014 the violence and the message are in direct contradiction, musicalized",
+      "craft_total": 8.18,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The musical fight sequence is a brilliant use of the form. Having 'Bam!' and 'Pow!' as song lyrics while 'Stay cool' plays over the top is perfectly absurd. It's both a parody of '60s Batman sound effects and a commentary on the characters' inability to actually stay cool. Strong structural commitment."
+    },
+    {
+      "index": 68,
+      "text": "Bret explains confrontation to teens: 'So you should respect other people's property.' Then accidentally kicks a kid. 'Bret, you just kicked a kid!' 'Sorry.' 'You could get 10 years for that.'",
+      "characters": [
+        "Bret",
+        "Jemaine",
+        "Dave"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Bret delivers a moral lecture to the teens about property",
+      "punchline": "Mid-lecture, he kicks one of the kids. Then Dave's legal threat: '10 years.'",
+      "craft_total": 7.33,
+      "impact_score": 7.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Classic escalation. Bret is doing his moral-authority speech and physically assaults a minor. Dave's immediate '10 years' assessment is perfectly deadpan. The accident-then-apology-then-legal-consequence structure works well."
+    },
+    {
+      "index": 69,
+      "text": "Dave, fleeing the scene: 'Let's haul ass fast. I know a place we can hide till this blows over. Come on. You dig?' Bret: 'I think so.'",
+      "characters": [
+        "Dave",
+        "Bret"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "deadpan_understatement"
+      ],
+      "setup": "They need to flee after Bret kicks the kid",
+      "punchline": "Dave's 1950s/60s slang ('haul ass,' 'blows over,' 'you dig?') signals that his criminal experience is entirely from a different era; Bret's cautious 'I think so' is the button",
+      "craft_total": 7.19,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good Dave character moment. His old-school vernacular reveals his gang era. 'You dig?' as a genuine question \u2014 not ironically \u2014 shows Dave is a time-displaced figure. Bret's unsure 'I think so' is a nice button."
+    },
+    {
+      "index": 70,
+      "text": "Dave leads them to a building that used to be 'the dapper dukes' hideout' in 1958 \u2014 now it's presumably gone or replaced. 'Where's the dapper dukes' hideout? It was right here. You know, we laid low for three straight months back in '58.' Bret: 'Johnny, I think they've probably all retired by now.'",
+      "characters": [
+        "Dave",
+        "Bret"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "deadpan_understatement"
+      ],
+      "setup": "Dave leads the group to a safe house",
+      "punchline": "The safe house is from 1958 and no longer exists; Bret has to gently inform Dave that the gang members have 'probably all retired'",
+      "craft_total": 7.83,
+      "impact_score": 7.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of Dave's best moments. The revelation that his entire gang knowledge is from the 1950s \u2014 hideouts, slang, tactics \u2014 is a late-episode payoff on his character. Bret's gentle 'they've probably all retired' manages to be both the obvious observation and oddly poignant. Strong character specificity."
+    },
+    {
+      "index": 71,
+      "text": "Dave's retirement speech: 'I'm getting old. This game ain't no good for me no more. I'm sorry, Louie. I'm out. So long, lil Louie.' \u2014 addressed to Bret, whom he's calling 'lil Louie'",
+      "characters": [
+        "Dave"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "deadpan_understatement"
+      ],
+      "setup": "Dave's 1950s hideout no longer exists",
+      "punchline": "Dave delivers a full gangster-retirement speech to Bret, whom he addresses as 'lil Louie' \u2014 a completely different name \u2014 treating the moment with total dramatic sincerity",
+      "craft_total": 7.93,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Superb Dave moment. He delivers a full cinematic gangster-retirement monologue, names Bret 'lil Louie' (a completely different name, uncommented upon), and exits with theatrical gravity. Dave fully inhabiting a 1950s gang film while standing in contemporary New York is perfectly absurd. 'So long, lil Louie' as a farewell to someone named Bret is quietly hilarious."
+    },
+    {
+      "index": 72,
+      "text": "Bret brings home the X-rated Mel painting and Jemaine reacts: 'I found that on the steps downstairs. I thought you painted it.' Bret: 'How come I'm wearing gumboots?'",
+      "characters": [
+        "Bret",
+        "Jemaine"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "The X-rated Bret painting (with crotch shadowing that 'got out of hand') has made its way home",
+      "punchline": "Bret's only question about an apparently very explicit painting of himself is why he's wearing gumboots \u2014 the wrong detail to fixate on",
+      "craft_total": 7.48,
+      "impact_score": 7.75,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's best lines. Given an apparently very explicit painting of himself, Bret's fixation is on the footwear. 'How come I'm wearing gumboots?' is maximally economical and maximally character-specific \u2014 Bret's oblivious practicality, his complete lack of vanity about the explicit content, his preoccupation with an irrelevant detail. Outstanding payoff on the painting setup from earlier."
+    },
+    {
+      "index": 73,
+      "text": "Mel walks Jemaine's portrait around the block 'to get people's reactions.' Jemaine: trapped carrying a heroic nude-ish painting of himself around his neighborhood",
+      "characters": [
+        "Mel",
+        "Jemaine"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "visual_gag",
+        "character_comedy"
+      ],
+      "setup": "Mel wants to share the Jemaine portrait with the world",
+      "punchline": "Jemaine is now obligated to walk around his neighborhood carrying a flattering idealized portrait of himself, with Mel narrating reactions",
+      "craft_total": 7.2,
+      "impact_score": 7.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Good cringe visual. The embarrassment of being forced to tour your own flattering portrait is a nice escalation on the Mel plot. Stronger as a visual gag than on the page."
+    },
+    {
+      "index": 74,
+      "text": "Police knock. Dave: 'Look, if my mom... I'm not going back to the big house, all right? I'm out of here. Stall 'em.' \u2014 flees at the sound of police",
+      "characters": [
+        "Dave"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "escalation"
+      ],
+      "setup": "Police arrive at the flat after the kid-kicking incident",
+      "punchline": "Dave starts to say something about his mom, pivots to 'the big house,' and immediately flees \u2014 his reaction disproportionate even to his actual crime",
+      "craft_total": 7.23,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good Dave beat. 'If my mom...' aborted mid-sentence suggests an unresolved maternal legal situation. 'The big house' \u2014 again vintage crime slang \u2014 confirms his self-image as a career criminal. The mom reference is an intriguing dangling thread."
+    },
+    {
+      "index": 75,
+      "text": "Police to Bret: 'We'll let this go because we don't like that particular kid, but we've got our eyes on you.'",
+      "characters": [
+        "Police officer",
+        "Bret"
+      ],
+      "joke_types": [
+        "absurdist",
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Police confront Bret about kicking a child",
+      "punchline": "The police personally dislike the kid and are willing to let it slide for that reason \u2014 entirely unprofessional and absurdly matter-of-fact about it",
+      "craft_total": 7.88,
+      "impact_score": 8.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sharp absurdist joke. The police casually admitting personal bias against the victim as the reason for non-prosecution, delivered in official cop cadence, is excellent. 'We don't like that particular kid' as formal law enforcement reasoning is very funny."
+    },
+    {
+      "index": 76,
+      "text": "Murray reveals the Lis have gone to Taiwan: 'They've gone to Taiwan to visit their son Phang. He just graduated dental school.' \u2014 casual epilogue delivered as if it's completely expected timing",
+      "characters": [
+        "Murray"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement",
+        "absurdist"
+      ],
+      "setup": "Bret asks where his gang members have gone",
+      "punchline": "Murray knows an oddly specific amount of detail about the Li family's dental-school son, and the timing \u2014 during a gang crisis \u2014 is presented as a completely normal reason to leave",
+      "craft_total": 7.19,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional absurdist beat. The specificity of 'Phang, dental school' is a nice detail. Murray knowing this is mildly funny. Not a standout."
+    },
+    {
+      "index": 77,
+      "text": "Jemaine and Murray reveal they were hurt not to be asked: 'Someone whom you haven't asked. Who? Jemaine's talking about Jemaine, Bret. You could've asked him... or me... but you didn't.' Bret: 'Do you guys want to be in the gang?' Both: 'Yes! Yeah, I'd like to, yeah.'",
+      "characters": [
+        "Jemaine",
+        "Murray",
+        "Bret"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback",
+        "irony_sarcasm"
+      ],
+      "setup": "Bret is told his gang can have one more member",
+      "punchline": "Both Jemaine and Murray were hurt at not being asked \u2014 despite having spent the entire episode objecting to the gang",
+      "craft_total": 7.5,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good callback and character moment. Both characters' genuine eagerness to join after spending the episode either objecting or ignoring the gang reveals their underlying desire to be included. 'Yes! Yeah, I'd like to, yeah' \u2014 their enthusiasm is touching and funny."
+    },
+    {
+      "index": 78,
+      "text": "The gang immediately disbands again: Dave quits, so does Jemaine, then Murray: 'Well, if you're out and you're out, then I'm out. Really? Yeah, I'm out.' Bret: 'You're out as well? Well, I'm not leaving.' Bret alone: 'So that's it... I'm in. I'm the gang. I'm the Tough Brets.'",
+      "characters": [
+        "Bret",
+        "Dave",
+        "Jemaine",
+        "Murray"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation",
+        "absurdist"
+      ],
+      "setup": "The gang has just reformed with four members",
+      "punchline": "All three members quit in rapid succession, leaving Bret alone as the entire gang",
+      "craft_total": 7.89,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect episode button on the gang plot. The gang forms and dissolves in about 30 seconds. Bret's dignified 'I'm the gang. I'm the Tough Brets.' \u2014 a one-person gang \u2014 is the ideal conclusion. The escalating defection sequence is well-paced."
+    },
+    {
+      "index": 79,
+      "text": "Mel shows off the Jemaine portrait to strangers: 'This is a painting I did of Jemaine. As you can see, I pretty much got the handsomeness. That's Jemaine. If you don't believe it, he can take his shirt off and you can be sure about it.'",
+      "characters": [
+        "Mel"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort",
+        "escalation"
+      ],
+      "setup": "Mel is parading the portrait around the neighborhood",
+      "punchline": "'He can take his shirt off and you can be sure about it' \u2014 Mel casually offering to strip Jemaine as proof of artistic accuracy to strangers",
+      "craft_total": 7.83,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Mel at her most Mel. The escalation from 'I got the handsomeness' to offering to strip Jemaine as verification to strangers is perfectly unhinged. The casual authority with which she offers this \u2014 'he can take his shirt off' \u2014 as if Jemaine has consented to this is very strong character comedy."
+    },
+    {
+      "index": 80,
+      "text": "Mel: 'He is my muse and my joy. People don't appreciate art, do you? Unbelievable.' \u2014 delivered as an exasperated closing statement to strangers",
+      "characters": [
+        "Mel"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Mel presents the portrait to strangers who presumably don't react as she hopes",
+      "punchline": "'People don't appreciate art, do they? Unbelievable.' \u2014 Mel's self-righteous conclusion that the problem is everyone else's artistic ignorance",
+      "craft_total": 7.16,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good Mel button. Her certainty that unappreciative strangers are the problem \u2014 not the unsolicited exhibition of obsessive fan art \u2014 is perfectly in character. 'Unbelievable' as the final word is a nice touch."
     }
   ],
+  "air_date": "2009-02-01",
   "imdb_rating": 8.5,
   "imdb_votes": 685,
   "tmdb_overview": "Bret organizes a gang to protect himself from rappers he dissed in a song; Murray and Jemaine confront a group of Aussie bullies; Mel paints a portrait Jemaine can't get rid of.",
