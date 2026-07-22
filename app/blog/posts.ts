@@ -5,51 +5,6 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
-  'broad-city-launch': {
-    title: "Broad City Is the Funniest Show We've Ever Scored",
-    description: "We scored all 50 episodes of Broad City — 3,737 jokes across five seasons. It debuts at #1 with a Humor Index of 86.8, knocking Chappelle's Show off the top spot. It's the densest live-action show on the board (3.52 jokes per minute) at near-top craft — and it's the rare show whose highest-scoring season is its last.",
-    date: '2026-06-20',
-    category: 'Show Launch',
-    content: `
-The funniest show we've ever scored isn't a prestige HBO half-hour or a beloved network institution. It's a scrappy Comedy Central two-hander about two broke women turning a New York errand into a citywide disaster.
-
-We ran all **50 episodes** of *Broad City* through our pipeline — five seasons, **3,737 jokes**, each graded three times and averaged — and Abbi Jacobson and Ilana Glazer's friendship comedy lands at **#1 on the Humor Index with a score of 86.8**. That edges out *Chappelle's Show* (85.6) and *30 Rock* (84.4), and makes Broad City the first show in our dataset to clear 86. The web series that started on YouTube in 2009 now sits at the top of the board.
-
-## The headline number
-
-Broad City scores **86.8**, the highest Humor Index we've published. What's striking is *how* it gets there. Most shows climb the rankings one of two ways: enormous joke volume (the saturation comedies) or quiet, high-craft restraint (the HBO tier). Broad City does both at once.
-
-Its joke density is **3.52 jokes per minute** — the highest of any live-action show we've scored, ahead of Friends (3.13), 30 Rock (2.86), and Seinfeld (2.58). Only the animated shows (Futurama, The Simpsons) pack more in. And it sustains that pace at **7.16 craft and 7.07 impact**, both near the top of the board. Volume usually costs you quality. Broad City refuses the trade: it's firing constantly *and* landing.
-
-## It never had an off year — and peaked at the finish
-
-Here's the finding that almost never shows up in the data. Broad City's season scores go **82.5 → 88.5 → 87.5 → 88.6 → 88.9.** After a rookie season — the web-series-to-TV adaptation year, the only season under 88 — the show locks into a tight, blistering band and simply stays there.
-
-And then it does the rarest thing a comedy can do: it ends on its best season. **Season 5 (88.9) is the highest-scoring season of the run.** Shows are supposed to fade — the cast is tired, the premise is exhausted, the finale limps. Broad City went out at its absolute peak. You can watch the whole arc on the [Broad City Explorer](/shows/broad-city/explore): drop Season 1 and the average jumps; isolate the final season and it climbs again.
-
-## The jokes
-
-Of all 3,737 jokes, the single highest-impact line is also one of the most Broad City things imaginable — Abbi, after a one-night stand, in Season 1's "The Last Supper":
-
-> "I just peed out a condom."
-
-It scored a **9.33 for impact** — a five-word summary of the show's entire sensibility. A few more from the highlight reel:
-
-- **"We'll take those two molten lava cakes to go."** — the series' unofficial motto, weaponized politeness in the face of total chaos.
-- **"Wait, I thought Little Richard was gay." / "Bisexual alien."** — the kind of throwaway exchange ("Knockoffs," 8.67 impact) the show buries three to a scene.
-- Ilana's improvised rapper names — *Lil' Two-Ply, Lil' Nap Time* — from the finale's stretch of pure riffing.
-
-The peak episodes back up the spread: "Along Came Molly" (95.1), "Knockoffs" (94.5, and its 9.1 is the show's best IMDb episode), and "The Last Supper" (94.5).
-
-## Funniest isn't the same as most prestigious
-
-One number cuts against the trophy. Broad City's average IMDb rating is **8.08** — solid, but mid-pack on our board, well behind It's Always Sunny (8.35) and Seinfeld (8.26). The audience that hands out lifetime-achievement scores never quite crowned it.
-
-That gap is the whole reason we score jokes instead of counting stars. IMDb measures affection, legacy, and how a show is *remembered*. The Humor Index measures one thing — how relentlessly and how well a show actually makes the jokes — and on that axis, a five-season Comedy Central buddy comedy beats every prestige darling we've put through the machine.
-
-**See the full breakdown — every episode, every season, every joke scored — on the [Broad City show page](/shows/broad-city).**
-`,
-  },
   'futurama-launch': {
     title: "Futurama Out-Scores the Show It Roasted",
     description: "We scored all 170 episodes of Futurama — 1999 to 2025, 11,042 jokes. It lands at 77.6 (#12 of 19), the Hulu revival held up almost perfectly, and yes, it outranks the Friends episode Lrrr made fun of.",
