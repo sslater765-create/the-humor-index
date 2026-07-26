@@ -4,209 +4,174 @@
   "season": 7,
   "episode_number": 1,
   "title": "The Beginning Of The End",
-  "humor_index": 81.4,
-  "jpm": 3.17,
-  "avg_craft": 7.04,
-  "avg_impact": 6.86,
-  "total_jokes": 82,
-  "war": 77.9,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"absurdist\"]",
-  "standout_joke_ids": "[19, 73, 6]",
+  "humor_index": 100,
+  "jpm": 4.02,
+  "avg_craft": 7.83,
+  "avg_impact": 7.62,
+  "total_jokes": 104,
+  "war": 179.4,
+  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"setup_punchline\"]",
+  "standout_joke_ids": "[18, 59, 92]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Hey! One-percent d-bag! Can't park here. You don't own the sidewalk.",
+      "text": "After all these years, I finally have it all. / I'm gonna miss this place. / That's how you do it. It's two lines.",
       "characters": [
-        "Liz"
+        "Jack"
       ],
       "joke_types": [
-        "character_comedy"
+        "meta_self_referential",
+        "deadpan_understatement"
       ],
-      "setup": "Liz confronts someone parking improperly",
-      "punchline": "Calling them a 'one-percent d-bag' with righteous indignation",
-      "craft_total": 5.93,
-      "impact_score": 5.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "The season premiere opens with what sounds like a character having a profound emotional farewell moment \u2014 'After all these years, I finally have it all. I'm gonna miss this place.'",
+      "punchline": "Jack immediately reveals he was coaching someone on how to deliver a two-line speech, deflating any emotional weight and pulling back the curtain on the artificiality of the opening.",
+      "craft_total": 8.22,
+      "impact_score": 7.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Liz Lemon character moment - her social awkwardness manifesting as class warfare rhetoric over parking"
+      "explanation": "A brilliant cold-open misdirection. The audience expects a season-premiere emotional beat, only to find it's Jack performing a coaching exercise. Extremely economical \u2014 the joke lands in 15 seconds with no wasted words. The meta quality of opening a final season with 'I'm gonna miss this place' has extra resonance. High rewatch value once you know the arc."
     },
     {
       "index": 2,
-      "text": "despite our tiny, un-American sodas",
+      "text": "Well, I feel like New York City is one of the characters on our show. / That's idiotic.",
       "characters": [
+        "Liz",
         "Jack"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "meta_self_referential",
+        "deadpan_understatement"
       ],
-      "setup": "Jack praising New York City",
-      "punchline": "Casual dismissal of NYC's soda size regulations as un-American",
-      "craft_total": 7.19,
-      "impact_score": 6.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Liz, returning from hiatus, offers a clich\u00e9d showbiz observation about New York City being 'one of the characters on our show' \u2014 a sentiment earnestly expressed by countless TV writers.",
+      "punchline": "Jack's instant, flat dismissal: 'That's idiotic.'",
+      "craft_total": 7.91,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Jack Donaghy - turning a compliment into a political dig with perfect economy and character voice"
+      "explanation": "Perfectly calibrated joke. The meta-referential layer \u2014 a TV character saying the city is a character 'on our show' \u2014 already has comic potential, and Jack's blunt, two-word deflation is a perfect expression of his character. The economy is exceptional: four words, the joke is complete. Could only be Jack. Earns 8+ because the structure is textbook and the character integration is near-perfect."
     },
     {
       "index": 3,
-      "text": "That's idiotic. So, how was your hiatus? Start with what puzzles you did.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "misdirection"
-      ],
-      "setup": "Someone says NYC is a character on their show",
-      "punchline": "Jack's immediate dismissal followed by assumption Liz does puzzles during hiatus",
-      "craft_total": 6.72,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Jack's blunt dismissal plus his specific assumption about Liz's leisure activities shows his condescending familiarity"
-    },
-    {
-      "index": 4,
-      "text": "Venice. Solar system. Unicorn. The cast of 'L.A. Law'. That one took me awhile. So much white.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "escalation",
-        "dark_subversive"
-      ],
-      "setup": "Liz listing puzzles she completed",
-      "punchline": "The L.A. Law cast puzzle was hard because 'so much white'",
-      "craft_total": 7.43,
-      "impact_score": 7.17,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant escalation from innocent puzzle talk to sharp racial observation. Perfect 30 Rock absurdist logic with social commentary"
-    },
-    {
-      "index": 5,
-      "text": "Oh, really, Lemon? You can't even say 'trying'? What positions are you using? The one. There's only one.",
+      "text": "So, how was your hiatus? Start with what puzzles you did. / Venice. Solar system. Unicorn. / The cast of 'L.A. Law'. / That one took me awhile. So much white.",
       "characters": [
         "Jack",
         "Liz"
       ],
       "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Jack asks Liz about her hiatus by asking what puzzles she did \u2014 establishing that jigsaw puzzles are Liz's leisure activity. Liz lists them: Venice, Solar System, Unicorn.",
+      "punchline": "The fourth puzzle \u2014 'The cast of L.A. Law' \u2014 is the absurd escalation. Jack's follow-up, 'That one took me awhile. So much white,' is the double-punchline, revealing he also did it and delivering a sharp racial observation as casual small talk.",
+      "craft_total": 7.83,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A beautifully structured escalating list joke. The first three puzzles are normal and perfectly in character for Liz; the fourth is an absurdly specific celebrity puzzle that subverts the pattern. Jack's capper lands on two levels \u2014 the shared activity (unexpectedly humanizing) and the throwaway racial observation. 'So much white' is a genuinely sharp line delivered with perfect deadpan. Earns 8+ for the layered structure and dual character integration."
+    },
+    {
+      "index": 4,
+      "text": "We are... trying. / Oh, really, Lemon? You can't even say 'trying'? / What positions are you using? / The one. There's only one. Talk about something else.",
+      "characters": [
+        "Liz",
+        "Jack"
+      ],
+      "joke_types": [
         "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Liz awkwardly says she and Criss are 'trying' for a baby",
-      "punchline": "Jack's invasive questioning met with Liz's mortified admission there's only one position",
-      "craft_total": 6.87,
-      "impact_score": 7.17,
+      "setup": "Liz mentions she and Criss are 'trying' (to have a baby), but visibly struggles to even say the word, implying embarrassment about fertility/sex.",
+      "punchline": "Jack immediately pivots to asking 'What positions are you using?' Liz's answer \u2014 'The one. There's only one.' \u2014 is both a character joke (Liz's uptightness) and a self-deprecating fertility joke.",
+      "craft_total": 7.48,
+      "impact_score": 7.5,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Jack-Liz dynamic - his inappropriate boundary-crossing met with her TMI response"
+      "explanation": "Classic Jack-Liz dynamic at its best \u2014 Jack's complete lack of social filter deployed against Liz's hypersensitivity. 'The one. There's only one.' is perfectly in character and lands as a genuine laugh. The joke works on character integration alone."
     },
     {
-      "index": 6,
-      "text": "thanks to a round of golf with Archbishop Dolan, I was never married",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Jack saying his divorce went smoothly",
-      "punchline": "He got the Catholic Church to retroactively annul his existence as married through golf networking",
-      "craft_total": 8.22,
-      "impact_score": 7.83,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Peak 30 Rock absurdism - Jack's corporate networking extending to religious annulment. Perfectly captures his character and the show's satirical worldview"
-    },
-    {
-      "index": 7,
-      "text": "Liddy won a bronze in Horsey-Jumpy at the Baby Olympics",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "absurdist",
-        "wordplay_pun"
-      ],
-      "setup": "Jack continuing to brag about his life",
-      "punchline": "His baby won a medal in 'Horsey-Jumpy' at Baby Olympics",
-      "craft_total": 7.22,
-      "impact_score": 6.83,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Absurd child-speak name 'Horsey-Jumpy' plus the concept of competitive baby athletics fits Jack's hyper-achieving mindset"
-    },
-    {
-      "index": 8,
-      "text": "If you're tired of sexy vampires, then you'll love 'Hunchbacks', starring Jonathan Silverman as Dr. Fantastico",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "absurdist",
-        "setup_punchline"
-      ],
-      "setup": "Jack pitching a show as alternative to vampire shows",
-      "punchline": "Hunchbacks starring B-list actor Jonathan Silverman as 'Dr. Fantastico'",
-      "craft_total": 6.45,
-      "impact_score": 6.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good bad-TV satire with specific casting choice making it funnier. Dr. Fantastico as a character name adds absurdity"
-    },
-    {
-      "index": 9,
-      "text": "do you like the information channel you get when you stay in a hotel? Well, Thursdays is just that now",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "observational",
-        "setup_punchline"
-      ],
-      "setup": "Jack asking if she likes hotel info channels",
-      "punchline": "That's what NBC Thursdays has become",
-      "craft_total": 7.04,
-      "impact_score": 6.83,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sharp metaphor for boring television with perfect specificity - hotel info channels are universally recognized as dull"
-    },
-    {
-      "index": 10,
-      "text": "Yes, little big man discovered the grass isn't always greener on the other side and came crawling back",
+      "index": 5,
+      "text": "And my divorce went smoothly. In fact, thanks to a round of golf with Archbishop Dolan, I was never married.",
       "characters": [
         "Jack"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "absurdist"
       ],
-      "setup": "Jonathan returns to work",
-      "punchline": "Jack's condescending 'little big man' and dramatic metaphor for a simple job return",
-      "craft_total": 6.17,
-      "impact_score": 5.75,
-      "quotability": 6.0,
+      "setup": "Jack mentions his divorce went smoothly.",
+      "punchline": "A round of golf with an actual Archbishop got his marriage annulled entirely \u2014 'I was never married.' The Catholic-WASP elite network used for petty personal gain is classic Jack.",
+      "craft_total": 7.95,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Jack's typical condescension toward Jonathan, treating mundane employment like epic narrative"
+      "explanation": "The joke encapsulates Jack's entire social world \u2014 elite Catholic networks, privilege, and moral gymnastics \u2014 in one throwaway line. 'I was never married' as the consequence of golf is absurdly specific and perfectly Jack. High character integration makes this punch above its weight."
     },
     {
-      "index": 11,
-      "text": "My grandmother was seriously ill. I went to Salinas to feed and bathe her. - I'm sorry. - I still don't like you.",
+      "index": 6,
+      "text": "Liddy won a bronze in Horsey-Jumpy at the Baby Olympics.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Jack is rattling off how great his life is.",
+      "punchline": "His infant daughter competed in 'Horsey-Jumpy' at 'the Baby Olympics' \u2014 a completely made-up absurdist institution treated as real.",
+      "craft_total": 7.28,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick absurdist aside that works because of the specificity \u2014 not just 'Baby Olympics' but 'Horsey-Jumpy' and 'a bronze.' The precision of the nonsense is the joke. Good economy, doesn't overstay its welcome."
+    },
+    {
+      "index": 7,
+      "text": "If you're tired of sexy vampires, then you'll love 'Hunchbacks', starring Jonathan Silverman as Dr. Fantastico.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "absurdist",
+        "irony_sarcasm"
+      ],
+      "setup": "Jack is pitching his new fall shows to Liz, framing them as network counter-programming.",
+      "punchline": "The show 'Hunchbacks' starring Jonathan Silverman (a real, moderately obscure actor) as 'Dr. Fantastico' is the punchline \u2014 a transparently terrible concept delivered with genuine enthusiasm.",
+      "craft_total": 7.52,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The specificity of 'Jonathan Silverman' as a casting choice is what makes this \u2014 it's not a generic actor, it's someone real and recognizable but not A-list, which makes the concept feel even more doomed. 'Dr. Fantastico' is great naming. Works as NBC self-parody."
+    },
+    {
+      "index": 8,
+      "text": "And do you like the information channel you get when you stay in a hotel? Well, Thursdays is just that now.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "absurdist",
+        "irony_sarcasm"
+      ],
+      "setup": "Jack continues pitching shows, comparing a new Thursday block to hotel information channels.",
+      "punchline": "The hotel info channel \u2014 notoriously boring, just static local info \u2014 is now NBC's entire Thursday night lineup. A devastating self-own about network quality.",
+      "craft_total": 7.9,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sharp observational premise \u2014 everyone knows exactly what the hotel info channel is \u2014 turned into a precise, devastating NBC critique. The specificity of 'hotel information channel' is inspired. Works on its own and gains resonance knowing Jack is secretly tanking the network."
+    },
+    {
+      "index": 9,
+      "text": "My grandmother was seriously ill. I went to Salinas to feed and bathe her. / I'm sorry. / I still don't like you.",
       "characters": [
         "Jonathan",
         "Jack"
@@ -215,17 +180,17 @@
         "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Jonathan explains his absence with touching family obligation",
-      "punchline": "Jack's immediate return to petty dislike despite the sympathy moment",
-      "craft_total": 7.37,
-      "impact_score": 7.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Jack dismisses Jonathan's reason for being away as 'coming crawling back,' calling him 'little big man.'",
+      "punchline": "Jonathan explains he left to care for his seriously ill grandmother. Jack says 'I'm sorry' \u2014 a moment of apparent humanity \u2014 then immediately: 'I still don't like you.'",
+      "craft_total": 7.79,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Jack moment - briefly showing humanity before immediately reverting to pettiness. Great character consistency"
+      "explanation": "Classic Jack. The rhythm is perfect: sympathy acknowledged, immediately retracted. The beat of 'I'm sorry' followed by 'I still don't like you' is maximally efficient cruelty. Jonathan's earnest explanation makes Jack's dismissal land harder. Great economy."
     },
     {
-      "index": 12,
+      "index": 10,
       "text": "'God Cop.' Crime just got a new worst friend.",
       "characters": [
         "Jack"
@@ -234,133 +199,154 @@
         "wordplay_pun",
         "absurdist"
       ],
-      "setup": "Jack reading a show title/tagline",
-      "punchline": "'Worst friend' instead of 'worst enemy' for God as police partner",
-      "craft_total": 6.47,
-      "impact_score": 6.17,
-      "quotability": 7.0,
+      "setup": "The title card/tagline for Jack's new show 'God Cop' is revealed.",
+      "punchline": "'Crime just got a new worst friend' \u2014 a mangling of the standard cop-show tagline 'crime just got a new best friend,' inverting it to suggest God is crime's WORST friend, which is... theologically nonsensical as a selling point.",
+      "craft_total": 7.33,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever subversion of the typical 'worst enemy' tagline structure, plus absurd premise of God as cop partner"
+      "explanation": "A tight, clever inversion of a genre clich\u00e9 that simultaneously parodies bad network promo copy and the absurd premise of 'God Cop.' Short, punchy, and self-sufficient."
     },
     {
-      "index": 13,
-      "text": "It's all explained in the end by the wise black man played by Karl Malone",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "absurdist",
-        "meta_self_referential"
-      ],
-      "setup": "Explaining the God Cop show concept",
-      "punchline": "The 'wise black man' trope filled by basketball player Karl Malone",
-      "craft_total": 7.22,
-      "impact_score": 7.33,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Meta commentary on TV tropes combined with absurd celebrity casting. References Hollywood's problematic racial archetypes"
-    },
-    {
-      "index": 14,
-      "text": "But it's not a yacht for corporate parties and hooker disposal. It's a two-man fishing boat.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "escalation"
-      ],
-      "setup": "Jack explaining his boss bought a boat",
-      "punchline": "Casually mentioning yacht uses include 'hooker disposal' before the innocent fishing boat reveal",
-      "craft_total": 7.64,
-      "impact_score": 7.67,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Dark corporate satire delivered as casual aside. The contrast between sinister yacht activities and innocent fishing makes both funnier"
-    },
-    {
-      "index": 15,
-      "text": "I believe that is called a skiff. I will not have you telling me boat names in my own office!",
+      "index": 11,
+      "text": "So, God just tells him who did it? / God can't just tell him who did it. / Why not? / Watch the pilot, Lemon. It's all explained in the end by the wise black man played by Karl Malone.",
       "characters": [
         "Liz",
         "Jack"
       ],
       "joke_types": [
+        "absurdist",
+        "setup_punchline"
+      ],
+      "setup": "Liz asks the obvious question about 'God Cop': if God is the partner, why doesn't he just solve crimes instantly?",
+      "punchline": "Jack's indignant 'Watch the pilot, Lemon' followed by the revelation that Karl Malone (actual NBA legend, not an actor) plays 'the wise black man' who explains everything at the end.",
+      "craft_total": 8.08,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Multiple layers working simultaneously: the absurdity of 'God Cop' needing narrative justification, the 'wise black man' trope explicitly named as a trope, and Karl Malone \u2014 who is neither an actor nor typically wise \u2014 cast in that role. 'Watch the pilot' as a defensive deflection from a network executive is great character work. This earns 8+ for density of ideas per line, originality, and character integration. One of the episode's best constructed jokes."
+    },
+    {
+      "index": 12,
+      "text": "It's a two-man fishing boat. / I believe that is called a skiff. / I will not have you telling me boat names in my own office!",
+      "characters": [
+        "Jack",
+        "Liz"
+      ],
+      "joke_types": [
         "character_comedy",
         "escalation"
       ],
-      "setup": "Liz correcting Jack about boat terminology",
-      "punchline": "Jack's explosive reaction to being corrected about boats in his office",
-      "craft_total": 7.02,
-      "impact_score": 6.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Jack explains Hank's boat is not a yacht but a humble two-man fishing boat, implying retirement.",
+      "punchline": "Liz casually corrects Jack by naming the boat type ('skiff'). Jack's explosion \u2014 'I will not have you telling me boat names in my own office!' \u2014 is wildly disproportionate to the offense.",
+      "craft_total": 7.85,
+      "impact_score": 7.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Jack ego moment - his authority threatened by basic nautical vocabulary. The specificity of 'boat names' makes it funnier"
+      "explanation": "An extremely quotable line. Jack's territorial rage about boat nomenclature is funny on its own, but the deeper joke is about masculine pride and domain-knowledge-as-power \u2014 Jack cannot tolerate being corrected on anything, even boat names, in his own space. 'In my own office!' is the perfect intensifier. Scores 8 on craft because the character integration is exceptional and the quotability is among the episode's highest."
     },
     {
-      "index": 16,
-      "text": "'Oh, Brother'. A comedy about two jive-talking con men hiding out in a monastery.",
+      "index": 13,
+      "text": "That's where shows like 'God Cop', 'O.J. Simpson Live', and 'Rule of Threes' come in. / Oh, brother. / 'Oh, Brother'. A comedy about two jive-talking con men hiding out in a monastery.",
       "characters": [
-        "Jack"
+        "Jack",
+        "Liz"
       ],
       "joke_types": [
         "setup_punchline",
         "absurdist"
       ],
-      "setup": "Jack pitching show concepts",
-      "punchline": "Ridiculous premise combining jive-talking con men with monastery setting",
-      "craft_total": 6.87,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Jack lists his terrible shows. Liz says 'Oh, brother' as an exasperated expression.",
+      "punchline": "Jack mishears it as the title of another show and immediately pitches 'Oh, Brother: A comedy about two jive-talking con men hiding out in a monastery.'",
+      "craft_total": 8.33,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Standard bad-TV satire. The incongruous elements (jive talk + monastery) create decent absurdity but feels somewhat generic"
+      "explanation": "A beautifully constructed joke on two levels: (1) the verbal misdirection of turning an idiom into a show title, and (2) 'jive-talking con men hiding out in a monastery' is an inspired absurdist concept that sounds simultaneously terrible and specific enough to be real. The structure is airtight \u2014 setup, subversion, extension. 'Jive-talking' specifically is a dated, inappropriate descriptor that makes the fictional show feel authentically bad. One of the episode's top jokes."
     },
     {
-      "index": 17,
-      "text": "The doves I ordered for the wedding came, and they're all dead! One of them touched my tongue!",
+      "index": 14,
+      "text": "Jonathan, bring me my green light.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy"
+      ],
+      "setup": "Jack has been pitching shows and wants to approve them.",
+      "punchline": "Rather than metaphorically 'green-lighting' projects, Jack has a literal physical green light that Jonathan brings him \u2014 an object that exists to make the metaphor real.",
+      "craft_total": 7.7,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A classic 30 Rock literalization gag \u2014 taking a business metaphor and making it physical. High rewatch bonus because the visual payoff (Jonathan presumably bringing a traffic-style green light) requires imagination from transcript alone but is clearly a strong visual gag. Jack's total commitment to the bit is on-brand."
+    },
+    {
+      "index": 15,
+      "text": "The doves I ordered for the wedding came, and they're all dead! / One of them touched my tongue!",
       "characters": [
         "Jenna"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Jenna panicking about dead doves for her wedding",
-      "punchline": "The specific horror detail that one touched her tongue",
-      "craft_total": 6.71,
-      "impact_score": 6.67,
+      "setup": "Jenna bursts in, panicking about her wedding doves being dead.",
+      "punchline": "'One of them touched my tongue!' \u2014 an absurdly specific detail that escalates the panic from general disaster to intimate physical horror, implying Jenna was attempting mouth-to-mouth on a dead dove.",
+      "craft_total": 7.68,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The specificity of 'one of them touched my tongue' is inspired \u2014 it's not enough to say the doves are dead; Jenna's specific intimate contact with the deceased bird tells us everything about her. The image is visceral and absurd. High character integration: only Jenna would (a) have wedding doves, (b) get that close to them, and (c) lead with the tongue detail. Earns 8+ for originality and character specificity."
+    },
+    {
+      "index": 16,
+      "text": "I'll show you that video of Taylor Swift getting hit in the face with a foul ball.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Liz tries to calm Jenna down.",
+      "punchline": "Her comfort method is showing Jenna a video of Taylor Swift being hit in the face with a foul ball \u2014 implying Jenna's comfort/schadenfreude comes from celebrity injury.",
+      "craft_total": 7.59,
+      "impact_score": 7.33,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation from wedding disaster to personal gross-out. The tongue detail adds visceral comedy to Jenna's drama"
+      "explanation": "The specificity of Taylor Swift (not a generic celebrity) and the very specific scenario (foul ball to the face) makes this work. It also characterizes both Jenna (celebrity-obsessed, soothed by others' misfortune) and Liz (pragmatic, uses whatever works). Solid construction."
     },
     {
-      "index": 18,
+      "index": 17,
       "text": "Oh, I'm fine, Liz. The doves were just a drill. Everyone needs to be on their toes for my wedding year.",
       "characters": [
         "Jenna"
       ],
       "joke_types": [
-        "misdirection",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Liz trying to comfort Jenna about the dead doves",
-      "punchline": "Jenna reveals it was a fake emergency drill for her 'wedding year'",
-      "craft_total": 7.61,
-      "impact_score": 7.25,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Liz is calming Jenna down from the dove emergency.",
+      "punchline": "It was a drill. Jenna has instituted a 'wedding year' \u2014 not just a day \u2014 with mandatory drills for her wedding party.",
+      "craft_total": 7.8,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Jenna narcissism - staging fake emergencies for wedding preparation. The 'wedding year' concept shows her total self-absorption"
+      "explanation": "The escalation from 'wedding day' to 'wedding year' is perfectly Jenna \u2014 her narcissism inflated to a temporal scale. The dead-dove-as-drill is both disturbing and hilarious. Only Jenna would conduct military-style readiness drills for her wedding."
     },
     {
-      "index": 19,
-      "text": "Wait, if that was a drill, did you kill those doves? No, I bought them at the dead-dove store. Grow up, Liz.",
+      "index": 18,
+      "text": "Wait, if that was a drill, did you kill those doves? / No, I bought them at the dead-dove store. Grow up, Liz.",
       "characters": [
         "Liz",
         "Jenna"
@@ -369,362 +355,372 @@
         "absurdist",
         "deadpan_understatement"
       ],
-      "setup": "Liz questioning the logistics of the dove drill",
-      "punchline": "Jenna casually mentioning a 'dead-dove store' and telling Liz to grow up",
-      "craft_total": 8.12,
-      "impact_score": 8.17,
-      "quotability": 9.0,
+      "setup": "Liz raises the logical question of whether Jenna killed doves for the drill.",
+      "punchline": "'No, I bought them at the dead-dove store.' Delivered with complete sincerity, as if dead-dove stores are a normal retail establishment. 'Grow up, Liz' adds the perfect condescension.",
+      "craft_total": 8.86,
+      "impact_score": 8.83,
+      "quotability": 9.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant absurdist logic - 'dead-dove store' as if it's perfectly normal, plus Jenna's condescension for not knowing about it. Peak 30 Rock weirdness"
+      "explanation": "Among the best jokes in the episode and one of 30 Rock's finest constructions. 'The dead-dove store' is inspired \u2014 it treats an absurd premise with complete mundane confidence, as if specialty dead-animal retail is entirely normal. 'Grow up, Liz' is the killer capper: Jenna's condescension toward the person asking a perfectly reasonable question. The joke is both original and perfectly character-integrated. Maximum economy. Deserves 9+ \u2014 this is the kind of absurdist escalation that becomes a fan-favorite quote."
     },
     {
-      "index": 20,
+      "index": 19,
       "text": "I prefer soul-sucking monster.",
       "characters": [
         "Jenna"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Liz calling Jenna a high-strung perfectionist",
-      "punchline": "Jenna's preference for the more extreme descriptor",
-      "craft_total": 6.81,
-      "impact_score": 6.33,
-      "quotability": 7.5,
+      "setup": "Liz tactfully calls Jenna a 'high-strung perfectionist.'",
+      "punchline": "Jenna corrects her preferred self-description: 'I prefer soul-sucking monster.' Delivered with pride.",
+      "craft_total": 7.76,
+      "impact_score": 7.33,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Jenna self-awareness about her terrible personality, delivered with pride rather than shame"
+      "explanation": "A four-word joke that does exactly what it needs to. Jenna's self-awareness about her monstrousness \u2014 embraced rather than denied \u2014 is peak character comedy. Maximum economy. The joke requires no setup beyond 'high-strung perfectionist.' Quotable."
+    },
+    {
+      "index": 20,
+      "text": "You know, I have a lot of really good friends I could ask to be my maid of honor \u2014 Paz de la Huerta, the former Mrs. Jon Cryer, Honey Boo Boo's mom. / June. / But you're my oldest friend. And, also, I've known you for a long time.",
+      "characters": [
+        "Jenna",
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Jenna name-drops her celebrity friends as maid-of-honor candidates: Paz de la Huerta (actress known for erratic behavior), the former Mrs. Jon Cryer (comic obscurity), Honey Boo Boo's mom.",
+      "punchline": "Liz corrects 'Honey Boo Boo's mom' to 'June' (her actual name), humanizing her. Then Jenna's reason for choosing Liz \u2014 'you're my oldest friend. And, also, I've known you for a long time' \u2014 is a redundant tautology delivered as deep sentiment.",
+      "craft_total": 7.45,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Two good jokes bundled: the celebrity name-drop list (each name perfectly chosen for comic grotesquerie) and Jenna's tautological compliment. The tautology \u2014 'you're my oldest friend... I've known you for a long time' \u2014 is the sharper of the two, showing how thin Jenna's genuine affection actually is."
     },
     {
       "index": 21,
-      "text": "Beyonc\u00e9, J. Lo, Natalie Portman, whose real last name is Hershlag, by the way. Okay, that's not relevant. I just think people should know.",
+      "text": "Jenna twists her hand, causing Liz extreme pain to force her to agree to be maid of honor.",
       "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Jenna listing celebrities who had surprise weddings",
-      "punchline": "Random factoid about Natalie Portman's real name with immediate acknowledgment of irrelevance",
-      "craft_total": 6.72,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Jenna's scattered celebrity gossip brain and her compulsion to share random trivia"
-    },
-    {
-      "index": 22,
-      "text": "Paz de la Huerta, the former Mrs. Jon Cryer, Honey Boo Boo's mom.",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Jenna listing potential maids of honor",
-      "punchline": "Increasingly questionable celebrity connections ending with Honey Boo Boo's mom",
-      "craft_total": 6.58,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent escalation showing Jenna's diminishing celebrity connections, ending with reality TV bottom-feeding"
-    },
-    {
-      "index": 23,
-      "text": "But you're my oldest friend. And, also, I've known you for a long time.",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Jenna explaining why she wants Liz as maid of honor",
-      "punchline": "Saying the same thing twice in slightly different words without realizing it",
-      "craft_total": 6.29,
-      "impact_score": 5.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Jenna's airheaded redundancy, thinking she's being comprehensive"
-    },
-    {
-      "index": 24,
-      "text": "Oh, God, my hands! Please! I'll do it! I'd love to do it! You're my best friend!",
-      "characters": [
+        "Jenna",
         "Liz"
       ],
       "joke_types": [
         "physical_slapstick",
-        "cringe_discomfort"
+        "character_comedy"
       ],
-      "setup": "Liz trying to decline being maid of honor",
-      "punchline": "Jenna apparently physically threatening Liz's hands to force agreement",
-      "craft_total": 6.58,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Liz declines being maid of honor, citing being busy.",
+      "punchline": "Jenna physically tortures Liz (hand/wrist twist) until she agrees, screaming. Liz capitulates immediately.",
+      "craft_total": 7.98,
+      "impact_score": 8.0,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good physical comedy moment showing Jenna's manipulation tactics and Liz's immediate capitulation under pressure"
+      "explanation": "Physical comedy that works because it's so matter-of-fact \u2014 Jenna uses physical coercion like a normal social tool. The immediate capitulation from Liz is the joke. Loses some points because physical coercion-to-agreement is a common comedy beat, but the character specificity saves it."
     },
     {
-      "index": 25,
-      "text": "Make sure you have a stripper there from every race. Stan looking for Indian now. It's a tough booking.",
+      "index": 22,
+      "text": "Oh, you're in charge of the bachelorette party. Make sure you have a stripper there from every race. Stan looking for Indian now. It's a tough booking.",
       "characters": [
         "Jenna"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Jenna giving instructions for bachelorette party",
-      "punchline": "Casual racism in stripper booking logistics, delivered matter-of-factly",
-      "craft_total": 6.43,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Jenna assigns Liz the bachelorette party, then specifies her stripper requirements.",
+      "punchline": "'A stripper from every race' escalates to 'Stan looking for Indian now. It's a tough booking.' \u2014 implying Jenna has a booking agent (Stan) actively working on diversity-inclusive male revue logistics.",
+      "craft_total": 7.49,
+      "impact_score": 7.0,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Uncomfortable comedy showing Jenna's oblivious casual racism through entertainment industry logistics"
+      "explanation": "The joke escalates perfectly: 'stripper from every race' is already absurdist, but giving Jenna a booking agent named Stan who is actively struggling to find an Indian stripper makes it specific enough to feel real. 'It's a tough booking' is delivered as legitimate industry knowledge. Great character integration \u2014 this is absolutely something Jenna would have organized already."
     },
     {
-      "index": 26,
-      "text": "You mean a threesome with Robinson Cano? No! I mean sharing a yogurt",
+      "index": 23,
+      "text": "I need some advice. / I recommend you get it from Liz Lemon or an owl who wears glasses.",
       "characters": [
-        "Tracy",
-        "Kenneth"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Kenneth saying he and Hazel reached second base",
-      "punchline": "Tracy's baseball player interpretation vs Kenneth's innocent yogurt sharing",
-      "craft_total": 7.54,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect character contrast - Tracy's celebrity/sexual worldview vs Kenneth's innocent interpretation. Great misdirection structure"
-    },
-    {
-      "index": 27,
-      "text": "Hazel says she's saving herself for a Grade-A pork machine. And those are expensive.",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Kenneth explaining Hazel's saving herself",
-      "punchline": "She's saving for a meat-grinding machine, not marriage, and Kenneth's concern about cost",
-      "craft_total": 7.51,
-      "impact_score": 7.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent misdirection - subverting expectation of sexual saving with literal machinery. Kenneth's practical concern about appliance costs"
-    },
-    {
-      "index": 28,
-      "text": "You're in the kitchen naked, cooking chili. You feed it to her out of your hands. Make her act like a bird.",
-      "characters": [
+        "Kenneth",
         "Tracy"
       ],
       "joke_types": [
-        "escalation",
+        "character_comedy",
         "absurdist"
       ],
-      "setup": "Tracy giving relationship advice to Kenneth",
-      "punchline": "Increasingly bizarre romantic scenario ending with bird feeding behavior",
-      "craft_total": 7.52,
+      "setup": "Kenneth approaches Tracy for advice.",
+      "punchline": "Tracy recommends getting advice from 'Liz Lemon or an owl who wears glasses' \u2014 the owl is a wisdom symbol wearing a further wisdom symbol (glasses), making it a double symbol. Tracy genuinely believes this is helpful.",
+      "craft_total": 8.08,
       "impact_score": 7.67,
       "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of absurd romantic advice. The bird feeding element adds surreal Tracy logic"
+      "explanation": "Classic Tracy absurdism. The construction is tight: Liz Lemon paired with 'an owl who wears glasses' as equivalent wisdom sources. The specificity (the owl must wear glasses) elevates it from generic absurdism. Strong character integration \u2014 Tracy's stream-of-consciousness logic feels earned for this character. Earns 8+ for originality and economy."
     },
     {
-      "index": 29,
-      "text": "That's half as long as it felt like 'Arliss' was on TV.",
+      "index": 24,
+      "text": "I've been living with Hazel for the past few months, and while we have gotten to second base \u2014 / You mean a threesome with Robinson Cano? / No! I mean sharing a yogurt.",
       "characters": [
+        "Kenneth",
         "Tracy"
       ],
       "joke_types": [
-        "observational",
-        "meta_self_referential"
-      ],
-      "setup": "Tracy saying he's been married 22 years",
-      "punchline": "Comparing it to how long the HBO show Arliss felt like it lasted",
-      "craft_total": 7.07,
-      "impact_score": 6.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Sharp TV industry inside joke about a notoriously long-running, little-watched HBO series"
-    },
-    {
-      "index": 30,
-      "text": "If she wants to have a dinner party, you go fry up some dolphin.",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "dark_subversive",
+        "misdirection",
         "character_comedy"
       ],
-      "setup": "Tracy giving domestic advice about supporting your woman",
-      "punchline": "Casually suggesting cooking dolphin for dinner party",
-      "craft_total": 6.92,
-      "impact_score": 6.83,
+      "setup": "Kenneth mentions getting to 'second base' with Hazel, a phrase with obvious sexual connotations.",
+      "punchline": "Tracy's interpretation \u2014 'a threesome with Robinson Cano' \u2014 is an absurdist leap that (a) skips entirely past normal baseball metaphors, (b) specifies a real person (Yankees second baseman), and (c) is corrected by Kenneth who means 'sharing a yogurt.'",
+      "craft_total": 8.53,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. Three-layer construction: (1) 'second base' as baseball metaphor for sex, (2) Tracy's jump to 'threesome with Robinson Cano' which literalizes the baseball metaphor in the most unexpected way (an actual baseball player, at second base), (3) Kenneth's correction \u2014 'sharing a yogurt' \u2014 which reveals Kenneth's total innocence. The Robinson Cano specificity is genius; it's not just 'a baseball player' but the actual second baseman. Could only come from Tracy's mind. Earns the highest craft score in the episode."
+    },
+    {
+      "index": 25,
+      "text": "I'm saving myself for marriage, and Hazel says she's saving herself for a Grade-A pork machine. / And those are expensive.",
+      "characters": [
+        "Kenneth",
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Kenneth explains the sexual tension with Hazel \u2014 he's saving himself for marriage.",
+      "punchline": "Hazel's stated condition \u2014 'saving herself for a Grade-A pork machine' \u2014 is delivered as equivalent to Kenneth's. Tracy's addition: 'And those are expensive,' treating 'Grade-A pork machine' as an actual product you can buy.",
+      "craft_total": 8.24,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Grade-A pork machine' is a great piece of invented slang, and Tracy treating it as a literal purchasable item with a price point is on-brand. The deadpan 'and those are expensive' is the capper that earns the biggest laugh."
+    },
+    {
+      "index": 26,
+      "text": "I'll tell you how to make a woman happy. You take charge. She comes home one night, you're in the kitchen naked, cooking chili. You feed it to her out of your hands. Make her act like a bird.",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Kenneth asks Tracy for relationship advice.",
+      "punchline": "Tracy's romantic advice escalates from 'take charge' to a naked chili scenario that ends with 'make her act like a bird' \u2014 an image with no clear meaning, delivered with total confidence.",
+      "craft_total": 8.3,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A beautifully escalating absurdist set piece. Each element is weirder than the last: being naked \u2192 cooking chili \u2192 feeding by hand \u2192 'make her act like a bird.' The final image is deliberately inexplicable and that's the joke \u2014 Tracy's confidence in advice that makes no logical sense. High character integration; only Tracy gives relationship advice that ends in bird simulation. Among the episode's most memorable moments."
+    },
+    {
+      "index": 27,
+      "text": "Damn it, I don't know! I've been married for 22 years! / That's half as long as it felt like 'Arliss' was on TV.",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "deadpan_understatement"
+      ],
+      "setup": "Tracy admits he has no idea how to make a woman happy after 22 years of marriage.",
+      "punchline": "'That's half as long as it felt like Arliss was on TV.' \u2014 invoking the HBO sports comedy 'Arliss' (1996-2002, actually 7 seasons) as a reference point for 'something that felt eternal and unpleasant.' Treating a mediocre cable show as a unit of temporal suffering.",
+      "craft_total": 7.97,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A highly specific, bold cultural reference \u2014 'Arliss' is obscure enough to feel insider but recognizable to the target audience. Using a mediocre TV show as a unit of misery measurement is an original construction. The self-correction from romantic advice-giver to confused husband is also good character work. The specificity of 'Arliss' over any other bad show is what elevates this."
+    },
+    {
+      "index": 28,
+      "text": "The women in our lives are queens. Honor your queen, Kenneth. If she wants to look at new window treatments, you go to Crate Barn. If she wants to have a dinner party, you go fry up some dolphin.",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Tracy pivots to giving Kenneth serious relationship advice: 'listen to her, she's always right, honor your queen.'",
+      "punchline": "The examples escalate from normal-but-wrong ('Crate Barn' \u2014 not a real store) to completely unhinged ('fry up some dolphin' \u2014 both illegal and absurd). The confidence with which these are delivered as equivalent domestic duties is the joke.",
+      "craft_total": 7.71,
+      "impact_score": 7.5,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark comedy from Tracy's celebrity excess mindset - treating endangered species as dinner party option"
+      "explanation": "'Crate Barn' (not Crate & Barrel or Pottery Barn, but a merged amalgamation) and 'fry up some dolphin' are both great Tracy-isms. The escalation from domestic store to marine mammal cookery is characteristically absurd. 'Crate Barn' alone is a good joke \u2014 it sounds so plausible."
     },
     {
-      "index": 31,
+      "index": 29,
       "text": "Speaking of which, Angie's been in the hospital for a week. Could you go find out why?",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Tracy talking about supporting women",
-      "punchline": "Casually asking Kenneth to check on his hospitalized wife as an afterthought",
-      "craft_total": 7.47,
+      "setup": "Tracy finishes his impassioned speech about honoring your woman and the women in your life.",
+      "punchline": "Tracy's wife has been hospitalized for a week and he hasn't inquired why. 'Could you go find out why?' \u2014 offloading even basic spousal concern to his assistant.",
+      "craft_total": 7.86,
       "impact_score": 7.67,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Tracy self-centeredness - giving marriage advice while neglecting his own wife's hospitalization"
-    },
-    {
-      "index": 32,
-      "text": "Can I have a hot wife? If you gain 50 pounds. Yeah.",
-      "characters": [
-        "Frank",
-        "Jack"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "observational"
-      ],
-      "setup": "Frank asking about having a hot wife in his sitcom",
-      "punchline": "Jack's TV trope requirement that fat guys get hot wives",
-      "craft_total": 7.44,
-      "impact_score": 7.33,
-      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sharp TV trope observation delivered with perfect economy. Frank's immediate acceptance shows how normalized this is"
+      "is_callback": 1,
+      "explanation": "A perfect ironic callback \u2014 immediately after lecturing Kenneth on honoring his queen, Tracy reveals he's been ignoring his own hospitalized wife for a week. The hypocrisy lands hard because the speech was so earnest. Economy is excellent; no wasted words in the reveal."
     },
     {
-      "index": 33,
-      "text": "It's about a boy who befriends a talking panda, and they're allowed to sleep in the same bed.",
+      "index": 30,
+      "text": "Frank, you do stand-up. How would you like to have your own sitcom? / Can I have a hot wife? / If you gain 50 pounds. / Yeah.",
       "characters": [
+        "Jack",
         "Frank"
       ],
       "joke_types": [
-        "dark_subversive",
-        "cringe_discomfort"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Frank pitching a show idea",
-      "punchline": "Innocent premise turned creepy with the bed-sharing detail",
-      "craft_total": 6.5,
-      "impact_score": 6.17,
-      "quotability": 6.0,
+      "setup": "Jack approaches Frank about having his own sitcom.",
+      "punchline": "Frank's condition \u2014 'Can I have a hot wife?' \u2014 is the classic sitcom trope. Jack's condition \u2014 'If you gain 50 pounds' \u2014 is a meta-commentary on how sitcoms pair unattractive men with beautiful women only when the man is heavy. Frank's immediate 'Yeah' shows complete willingness.",
+      "craft_total": 7.81,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark turn on innocent children's show concept. The creepy implication shows Frank's inappropriate mind"
+      "explanation": "Sharp meta-commentary on the 'fat husband, hot wife' sitcom formula (King of Queens, According to Jim, etc.) delivered as a matter-of-fact negotiation. 'If you gain 50 pounds' treats the trope as an industry rule. Frank's enthusiastic 'Yeah' \u2014 no hesitation \u2014 is the perfect button. Great economy."
     },
     {
-      "index": 34,
-      "text": "I wish. Then I could just solve it with the Schwartzfeld Tesseract.",
+      "index": 31,
+      "text": "Hey! I have an idea for a show. It's about a boy who befriends a talking panda, and they're allowed to sleep in the same bed. / Have it on my desk tomorrow.",
       "characters": [
+        "unnamed writer",
         "Jack"
       ],
       "joke_types": [
         "absurdist",
-        "character_comedy"
+        "dark_subversive"
       ],
-      "setup": "Liz saying Jack sees NBC as a business matrix",
-      "punchline": "Jack's reference to made-up mathematical solution method",
-      "craft_total": 6.82,
-      "impact_score": 6.17,
-      "quotability": 7.0,
+      "setup": "A writer pitches a show concept.",
+      "punchline": "'They're allowed to sleep in the same bed' \u2014 a detail that's both innocuous and subtly inappropriate when involving a child and an animal. Jack immediately greenlights it without question.",
+      "craft_total": 7.24,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Jack character moment - his corporate jargon extending to made-up mathematical concepts"
+      "explanation": "The joke works on the level of Jack's desperation \u2014 he's greenlighting literally anything. The 'allowed to sleep in the same bed' detail is odd enough to register but the joke doesn't land as hard as the surrounding material. Functional rather than exceptional."
     },
     {
-      "index": 35,
-      "text": "Xerox, Alcoa, PAAS. The Easter egg company? They own their market. When was the last time you bought a non-PAAS egg-dyeing kit?",
+      "index": 32,
+      "text": "I know you think fixing NBC is just another negative synergy dynamics matrix. / I wish. Then I could just solve it with the Schwartzfeld Tesseract.",
+      "characters": [
+        "Liz",
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Liz uses corporate jargon \u2014 'negative synergy dynamics matrix' \u2014 to describe Jack's problem.",
+      "punchline": "Jack responds with an even more ridiculous piece of invented corporate/mathematical terminology \u2014 'the Schwartzfeld Tesseract' \u2014 delivered with complete sincerity as a real thing he would use.",
+      "craft_total": 7.94,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic 30 Rock jargon-inflation joke. 'Schwartzfeld Tesseract' sounds real enough to be plausible (Schwarzschild radius + tesseract) but is clearly invented. Jack's sincere wish that this were his problem \u2014 implying he has a toolkit for such problems \u2014 is great character work."
+    },
+    {
+      "index": 33,
+      "text": "Every day I wish some other company had bought NBC. Xerox, Alcoa, PAAS. / The Easter egg company? / They own their market. When was the last time you bought a non-PAAS egg-dyeing kit? Try never. PAAS is the best. Their wire egg-dipper is tops in the industry with the thinnest egg-loop to reduce dye lines.",
       "characters": [
         "Jack",
         "Liz"
       ],
       "joke_types": [
-        "escalation",
-        "observational"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Jack wishing other companies had bought NBC",
-      "punchline": "His passionate defense of PAAS Easter egg dye market dominance",
-      "craft_total": 7.38,
-      "impact_score": 7.33,
+      "setup": "Jack wishes another company owned NBC and names options: Xerox, Alcoa, and PAAS.",
+      "punchline": "Jack launches into a passionate, granular defense of PAAS Easter egg kits \u2014 including specific product details ('wire egg-dipper,' 'thinnest egg-loop to reduce dye lines') \u2014 with the same intensity he brings to corporate strategy. Liz's 'The Easter egg company?' is the straight-man beat.",
+      "craft_total": 8.57,
+      "impact_score": 8.67,
       "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant escalation from major corporations to obscure Easter product company. Jack's detailed knowledge of egg-dyeing market share"
+      "explanation": "One of the episode's standout extended jokes. Jack's expertise in PAAS Easter egg kits \u2014 delivered with his characteristic authority on business matters \u2014 is absurdly specific. 'Thinnest egg-loop to reduce dye lines' is inspired product knowledge for a completely trivial domain. The joke also works as character comedy: Jack applies maximum competence to minimum stakes, which is his entire personality. Earns 8+ for originality and character integration."
+    },
+    {
+      "index": 34,
+      "text": "The 'Homonym' game show cutaway: contestants repeatedly guess the wrong definition of every word, always 'the other one.'",
+      "characters": [
+        "Game show host",
+        "Contestants"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "running_gag",
+        "escalation"
+      ],
+      "setup": "Liz mentions a terrible new game show called 'Homonym.' We see it in action: host gives a word, contestants guess wrong definitions.",
+      "punchline": "Every word produces the same exchange \u2014 correct-sounding definition, 'Sorry, it's the other one' \u2014 escalating to absurdity with 'meat'/'meet' and 'stare'/'stair,' culminating in the host refusing to show the card ('No! Never!') when a contestant demands to verify.",
+      "craft_total": 8.1,
+      "impact_score": 8.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A beautifully constructed escalating gag about a game show that is fundamentally unfair. The running 'it's the other one' works because we quickly understand the pattern and each iteration confirms the absurdity. The host's 'No! Never!' refusal to show the card is the inspired capper that makes the whole thing feel like a genuine corrupt game show. Strong structure; the escalation is perfectly paced for a cutaway."
+    },
+    {
+      "index": 35,
+      "text": "Your next word is 'meat.' / Oh, boy. / Like when two people run into each other. / Sorry, it's the other one.",
+      "characters": [
+        "Game Show Host",
+        "Contestant"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "setup_punchline"
+      ],
+      "setup": "A game show contestant is given the word 'meat' and tries to demonstrate it.",
+      "punchline": "The contestant demonstrates 'meet' (the homophone) and is wrong \u2014 'it's the other one' \u2014 a joke about how useless a 'homonym' game show would be.",
+      "craft_total": 6.96,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Homonym game show is a solid bit. The inherent problem with a homonym game show (how do you know which one?) is the joke, and the show leans into it by having contestants always guess the wrong one. Good satirical concept, decent execution, but the character integration is lower since these are generic game show characters."
     },
     {
       "index": 36,
-      "text": "Their wire egg-dipper is tops in the industry with the thinnest egg-loop to reduce dye lines.",
+      "text": "Will I ever finish reading 'The Corrections'?",
       "characters": [
-        "Jack"
+        "Liz"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Jack defending PAAS market dominance",
-      "punchline": "Detailed technical knowledge of egg-dyeing equipment specifications",
-      "craft_total": 7.68,
+      "setup": "Liz is listing her various life anxieties \u2014 biological clock, show's future \u2014 as evidence of universal time pressure.",
+      "punchline": "Slipped in alongside existential concerns: 'Will I ever finish reading The Corrections?' \u2014 a famously long, acclaimed but demanding novel. The trivial mixed with the profound.",
+      "craft_total": 7.96,
       "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Jack character moment - applying his corporate expertise to ridiculous niche products with complete sincerity"
+      "explanation": "The joke is in the bathetic list \u2014 major existential fears alongside a specific middlebrow reading anxiety. 'The Corrections' is a perfect choice because it's a book people start with intention and rarely finish; it signals Liz's intellectual aspirations and her failure to follow through. Short, perfectly placed."
     },
     {
       "index": 37,
-      "text": "Like when two people run into each other. Sorry, it's the other one. Your next word is 'stare.' Okay, the things you climb to get -- No, it's the other one. It's always the other one!",
-      "characters": [
-        "Game show contestants",
-        "Host"
-      ],
-      "joke_types": [
-        "escalation",
-        "setup_punchline"
-      ],
-      "setup": "Game show contestants trying to guess homonyms",
-      "punchline": "Pattern of always guessing wrong homonym with frustrated realization",
-      "craft_total": 6.67,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation showing the fundamental flaw in the game show format - there's always another homonym"
-    },
-    {
-      "index": 38,
-      "text": "So, you don't peacock them. I don't... think so.",
+      "text": "Well, thank you for your feedback, Lemon, but I'm not panicking. I know exactly what I'm doing. / So, good peacock to you. / But, Jack... / I said, 'Good peacock.'",
       "characters": [
         "Jack",
         "Liz"
@@ -733,284 +729,367 @@
         "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "Jack asking if Liz likes his shows",
-      "punchline": "Using 'peacock' as a verb (NBC's logo) with Liz's confused response",
-      "craft_total": 6.78,
-      "impact_score": 6.25,
-      "quotability": 7.0,
+      "setup": "Jack dismisses Liz and says 'good peacock to you' \u2014 a riff on 'good day to you' using the network's name (NBC's parent is Comcast/NBCU; NBC's logo is the peacock).",
+      "punchline": "The pompous dismissal 'good peacock to you' followed by the doubled-down 'I said, Good peacock' mirrors the 'good day to you, I SAID GOOD DAY' comedic trope but substitutes the corporate branding for the idiom.",
+      "craft_total": 7.62,
+      "impact_score": 7.33,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Decent corporate jargon joke using NBC's peacock logo as verb. Liz's confusion shows how forced it is"
+      "explanation": "A reliable recurring gag (Jack's NBC-branded language) executed with good structure. The repetition 'I said, Good peacock' sells the pomposity. The meta NBC self-reference adds a layer. Solid but not the episode's sharpest."
     },
     {
-      "index": 39,
-      "text": "Yes, and I thought we'd have a little f\u00e9te chez nous ce soir.",
+      "index": 38,
+      "text": "Yes, and I thought we'd have a little f\u00e9te chez nous ce soir. / Oh, how nice to meet a woman who speaks the language of the Nazis' most enthusiastic collaborators. What a kind invitation.",
       "characters": [
-        "Hazel"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Hazel responding to Tracy about dinner party",
-      "punchline": "Over-the-top French for simple dinner invitation",
-      "craft_total": 5.83,
-      "impact_score": 5.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard pretentious character bit. Shows Hazel's trying-too-hard personality but not particularly clever"
-    },
-    {
-      "index": 40,
-      "text": "Oh, how nice to meet a woman who speaks the language of the Nazis' most enthusiastic collaborators.",
-      "characters": [
-        "Tracy"
+        "Tracy",
+        "Jack"
       ],
       "joke_types": [
         "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Hazel speaking French pretentiously",
-      "punchline": "Tracy's historically inaccurate but cutting response about French collaboration",
-      "craft_total": 6.93,
-      "impact_score": 6.67,
+      "setup": "Hazel speaks French to announce a dinner party.",
+      "punchline": "Jack's response to her French \u2014 'the language of the Nazis' most enthusiastic collaborators' \u2014 is an aggressively historical reference that he deploys as casual social commentary, followed immediately by 'What a kind invitation.'",
+      "craft_total": 8.09,
+      "impact_score": 8.0,
       "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sharp historical reference delivered with Tracy's blunt hostility. Dark but effective put-down of pretentious French"
+      "explanation": "Classic Jack WASP-elite condescension channeled through historical knowledge. The jump from 'she speaks French' to 'Nazi collaborators' is startling and specific \u2014 a dark historical fact deployed as social snobbery. The immediate pivot to 'What a kind invitation' makes it land even harder. Could only be Jack."
     },
     {
-      "index": 41,
+      "index": 39,
       "text": "I do enjoy seeing the homes of poor whites.",
       "characters": [
-        "Tracy"
+        "Jack"
       ],
       "joke_types": [
         "character_comedy",
         "dark_subversive"
       ],
-      "setup": "Tracy being invited to Kenneth and Hazel's home",
-      "punchline": "Classist anthropological attitude toward 'poor whites'",
-      "craft_total": 7.5,
-      "impact_score": 7.25,
+      "setup": "Kenneth invites Jack to the dinner party.",
+      "punchline": "Jack accepts by noting he 'enjoys seeing the homes of poor whites' \u2014 framing slumming it as anthropological tourism.",
+      "craft_total": 7.95,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Four words of elite class snobbery perfectly compressed. 'Poor whites' as a distinct species Jack observes is both a class joke and a race joke \u2014 the racialized qualifier 'whites' is what gives it an edge. Could absolutely only be Jack Donaghy. Maximum economy."
+    },
+    {
+      "index": 40,
+      "text": "Kenneth tells me that you started your own movie studio this summer. / Yes, I'm sort of the black Tyler Perry.",
+      "characters": [
+        "Jack",
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Jack mentions Tracy's movie studio.",
+      "punchline": "'I'm sort of the black Tyler Perry' \u2014 Tracy describing himself in relation to another Black filmmaker, essentially saying 'I'm the Black version of a Black man.'",
+      "craft_total": 8.13,
+      "impact_score": 8.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A brilliantly constructed absurdist one-liner. Tracy defining himself as 'the black Tyler Perry' \u2014 when Tyler Perry is already Black \u2014 is a tautology that Tracy delivers with complete sincerity. It suggests a parallel universe where Tyler Perry is somehow not Black and Tracy is. Short, quotable, completely original. Among the episode's most quotable lines."
+    },
+    {
+      "index": 41,
+      "text": "I'm an aspiring actress whose most recent credits include running onstage during 'Sister Act'.",
+      "characters": [
+        "Hazel"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Hazel introduces herself to Tracy as an aspiring actress.",
+      "punchline": "Her most recent credit \u2014 'running onstage during Sister Act' \u2014 is not a credit at all but an incident, yet she lists it with professional pride.",
+      "craft_total": 7.68,
+      "impact_score": 7.33,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Tracy character moment showing his celebrity condescension expressed through racial/class dynamics"
+      "explanation": "A good character-establishment joke for Hazel. The specificity of 'Sister Act' (a musical stage adaptation) and 'running onstage' (an audience disruption) as a listed credit is funny and character-defining. Short and efficient."
     },
     {
       "index": 42,
-      "text": "Yes, I'm sort of the black Tyler Perry.",
+      "text": "This is wonderful! Tracy Jordan is coming to dinner. Just like in that episode of 'Family Matters' when Tracy Jordan came to dinner. / You know, I wasn't scripted to be in that episode. I just wandered onto set because Reginald Vel Johnson owed me $40.",
       "characters": [
-        "Hazel"
+        "Kenneth",
+        "Tracy"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Hazel describing her movie studio",
-      "punchline": "Calling herself 'the black Tyler Perry' despite being white",
-      "craft_total": 7.03,
-      "impact_score": 7.0,
-      "quotability": 8.0,
+      "setup": "Kenneth excitedly compares Tracy's dinner visit to a TV show episode.",
+      "punchline": "Tracy matter-of-factly reveals he genuinely appeared in Family Matters but only because he wandered onto set to collect a $40 debt from Reginald Vel Johnson (the show's star). The specificity of $40 \u2014 not $40,000 \u2014 and 'Reginald Vel Johnson' is what makes it.",
+      "craft_total": 8.53,
+      "impact_score": 8.5,
+      "quotability": 8.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Absurd self-description showing Hazel's delusion and cultural insensitivity. Good character-revealing moment"
+      "explanation": "A brilliant absurdist backstory joke. The $40 debt is the comedy \u2014 not thousands of dollars but forty \u2014 and 'Reginald Vel Johnson' (Carl Winslow himself) as the debtor is perfectly chosen. Tracy's delivery implies this is completely normal. The joke also blurs Tracy Jordan the character with real show business in a way that's uniquely 30 Rock. Earns 8+ for originality and the specificity of details."
     },
     {
       "index": 43,
-      "text": "whose most recent credits include running onstage during 'Sister Act'",
+      "text": "If you're thinking about Vegas for the bachelorette party, we can't stay at the Palms. One of the Maloofs wants me dead, and the other one loves me. I don't remember which is which.",
       "characters": [
-        "Hazel"
+        "Jenna"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Hazel describing herself as an aspiring actress",
-      "punchline": "Her 'credit' is disrupting a Broadway show",
-      "craft_total": 6.65,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good cringe character moment showing Hazel's delusional view of her disruptive behavior as legitimate acting credit"
-    },
-    {
-      "index": 44,
-      "text": "You know, I wasn't scripted to be in that episode. I just wandered onto set because Reginald Vel Johnson owed me $40.",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Reference to Tracy being on Family Matters",
-      "punchline": "He wasn't actually cast, just collecting debt from Carl Winslow actor",
-      "craft_total": 7.52,
-      "impact_score": 7.17,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant Tracy backstory explaining random TV appearance through mundane debt collection. Perfect character logic"
-    },
-    {
-      "index": 45,
-      "text": "Oh, my God. I'm the most stable adult here.",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Tracy realizing everyone's asking him for advice",
-      "punchline": "The realization that he's somehow the most stable person",
-      "craft_total": 7.73,
-      "impact_score": 7.83,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent character irony - Tracy Jordan as voice of reason is perfectly absurd but somehow true"
-    },
-    {
-      "index": 46,
-      "text": "She wants her something borrowed to be Jessica Biel's youth.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Liz complaining about being Jenna's maid of honor",
-      "punchline": "Jenna wants to borrow youth from a celebrity for wedding tradition",
-      "craft_total": 7.48,
-      "impact_score": 7.33,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Jenna absurdity - treating abstract concepts like youth as borrowable wedding items. Great celebrity specificity"
-    },
-    {
-      "index": 47,
-      "text": "Thank you for saying that in dated urban slang so that I'll understand you.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "meta_self_referential",
-        "character_comedy"
-      ],
-      "setup": "Tracy suggesting Liz should 'tank it'",
-      "punchline": "Liz's sarcastic acknowledgment of Tracy's attempt at relatability",
-      "craft_total": 7.4,
-      "impact_score": 6.83,
+      "setup": "Jenna discusses bachelorette party venue options.",
+      "punchline": "She can't go to the Palms (owned by the Maloof family) because of this specific situation \u2014 one Maloof wants her dead, one loves her \u2014 and she doesn't know which is which.",
+      "craft_total": 7.93,
+      "impact_score": 7.67,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good meta joke about Tracy's condescending attempt to connect with Liz through outdated slang"
+      "explanation": "The Maloof specificity (a real Vegas-celebrity family) and the perfect symmetry of the two possibilities \u2014 love/death threat from two siblings \u2014 is great. 'I don't remember which is which' is the capper that makes it feel genuinely dangerous. Strong character integration."
     },
     {
-      "index": 48,
-      "text": "Because you're terrified of her, the way most white ladies are with their best friends? That is racist and only pan true.",
+      "index": 44,
+      "text": "Why is everyone asking me for advice? I'm Tracy Jordan. Father of three, married 22 years. I run my own business. / Oh, my God. / I'm the most stable adult here.",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Tracy complains about being asked for advice, listing his credentials.",
+      "punchline": "The punchline is the dawning realization \u2014 shared by Tracy and played for audience shock \u2014 that he IS the most stable adult in this workplace. An ironic commentary on TGS's general dysfunction.",
+      "craft_total": 8.34,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A great meta-character moment. The joke works on two levels: (1) Tracy Jordan, the most chaotic character in the show, being the most stable adult, which is genuinely true of the TGS workplace, and (2) Tracy's own horrified realization. 'I'm the most stable adult here' as an existential crisis delivered by Tracy is perfect irony. Earns 8+ for the structural elegance of the ironic inversion and character integration."
+    },
+    {
+      "index": 45,
+      "text": "She wants her something borrowed to be Jessica Biel's youth. / I don't know how to get that.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Liz complains about Jenna's impossible maid-of-honor demands.",
+      "punchline": "'Jessica Biel's youth' as the 'something borrowed' \u2014 a wedding tradition item \u2014 is both specific and impossible. 'I don't know how to get that' treats it as a logistical problem rather than a conceptual impossibility.",
+      "craft_total": 7.98,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The specificity of 'Jessica Biel's youth' \u2014 not just 'youth' but a specific person's youth \u2014 is perfectly absurd. The wedding tradition context makes it work as a structural joke (something borrowed). Liz treating it as a booking problem rather than an impossibility is the capper."
+    },
+    {
+      "index": 46,
+      "text": "That's what I do when I want to get out of something, like a sketch or a parent-teacher conference or this boring conversation.",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "meta_self_referential"
+      ],
+      "setup": "Tracy advises Liz to 'tank it' to get out of Jenna's maid-of-honor duties.",
+      "punchline": "Tracy lists examples of things he tanks: 'a sketch or a parent-teacher conference or this boring conversation' \u2014 the third item being self-referential, calling the current conversation boring while still in it.",
+      "craft_total": 7.46,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A good rule-of-three list where the third item breaks the fourth wall. 'Or this boring conversation' is well-timed and characterful. Solid rather than exceptional."
+    },
+    {
+      "index": 47,
+      "text": "Thank you for saying that in dated urban slang so that I'll understand you. / Word.",
       "characters": [
         "Tracy",
         "Liz"
       ],
       "joke_types": [
         "character_comedy",
-        "wordplay_pun"
+        "irony_sarcasm"
       ],
-      "setup": "Tracy asking why Liz won't disappoint Jenna",
-      "punchline": "Liz's malapropism 'pan true' instead of 'partially true' while denying racism",
-      "craft_total": 6.83,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Liz says 'That's not how I roll' \u2014 using dated slang.",
+      "punchline": "Tracy thanks her for using 'dated urban slang so that I'll understand you' \u2014 inverting the racial stereotype of who uses such slang \u2014 then immediately responds 'Word,' using equally dated slang himself.",
+      "craft_total": 7.72,
+      "impact_score": 7.25,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment with Liz's nervous malapropism undermining her denial of Tracy's accurate observation"
+      "explanation": "A beautifully constructed ironic inversion. Tracy accuses Liz of using dated urban slang 'so he'll understand,' subverting the assumption that Black men use slang (it's actually Liz using it). Then Tracy immediately says 'Word' \u2014 confirming he does use that slang \u2014 which undermines his own point in the best possible way. The self-contradiction in one beat is excellent structure."
     },
     {
-      "index": 49,
+      "index": 48,
       "text": "Tonight on NBC, Joe Rogan is 'Mandela'. And, if it's Wednesday, it must be 'Cricket Night in America'. Then, on 'Jay', a full hour of Gary Sinise's band.",
       "characters": [
-        "Jack"
+        "TV Announcer / NBC Promo"
       ],
       "joke_types": [
         "absurdist",
-        "escalation"
+        "irony_sarcasm"
       ],
-      "setup": "Jack announcing NBC programming",
-      "punchline": "Increasingly terrible show concepts culminating in Gary Sinise's band",
-      "craft_total": 7.26,
-      "impact_score": 7.5,
+      "setup": "The audience sees NBC's actual fall schedule as a cutaway.",
+      "punchline": "Joe Rogan playing Nelson Mandela is the first escalating absurdity; 'Cricket Night in America' (cricket being the least American sport) is the second; 'a full hour of Gary Sinise's band' \u2014 the actor known for serious dramatic roles, not music \u2014 is the third.",
+      "craft_total": 8.18,
+      "impact_score": 8.5,
       "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent escalation of terrible TV concepts. Gary Sinise's band as a full hour of programming is beautifully specific and absurd"
+      "explanation": "A beautifully escalating list of terrible NBC shows, each one worse than the last. Joe Rogan as Mandela is an inspired casting choice for absurdity \u2014 completely wrong in every dimension. 'Cricket Night in America' is the middle escalation. 'A full hour of Gary Sinise's band' is the killer \u2014 the specificity and modesty (a full hour, not a special) makes it feel real. Each choice is independently sharp, and together they build. Earns 8+ for the quality and escalation of each individual element."
+    },
+    {
+      "index": 49,
+      "text": "Oh, my God. Jack's tanking NBC!",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "setup_punchline"
+      ],
+      "setup": "Liz watches the terrible NBC schedule.",
+      "punchline": "Liz's realization is the punchline of the entire preceding sequence \u2014 she puts together the terrible shows as intentional. The reaction beat punctuates the comedy of the terrible schedule.",
+      "craft_total": 7.05,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Functional plot-beat-as-punchline. Works because it names the episode's title in the NBC show 'Tank It' and lets the audience feel smart for connecting the dots with Liz. Not a great joke on its own but serves as the button on the cutaway sequence."
     },
     {
       "index": 50,
-      "text": "Hang on. Did you cast yourself in this show? What can I say? We saw hundreds of actors for God. Finally the network executive said I should just play him. You're the network executive.",
+      "text": "Jack's tanking NBC! [Liz's sudden realization]",
+      "characters": [
+        "Liz Lemon"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "misdirection"
+      ],
+      "setup": "The episode has been building that Jack's shows are terrible; Liz pieces together the pattern",
+      "punchline": "The audience has likely suspected this, but watching the moment land for Liz is the comedic payoff \u2014 her horror at understanding the conspiracy",
+      "craft_total": 7.3,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The comedic satisfaction here is structural \u2014 the episode has been seeding the terrible shows as jokes, and this moment recontextualizes them as a conspiracy. The rewatch bonus is significant because viewers will look for the planted gags."
+    },
+    {
+      "index": 51,
+      "text": "Turning around on 'God Cop' scene 24.",
+      "characters": [
+        "Production assistant"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "meta_self_referential"
+      ],
+      "setup": "The scene transitions to 'God Cop' being filmed.",
+      "punchline": "We see Jack on set \u2014 in character as God \u2014 having apparently cast himself in the show he created. The production call of 'Turning around on God Cop scene 24' is the mundane framing of something ridiculous.",
+      "craft_total": 7.32,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Works as a transition gag \u2014 the absurdity of Jack casting himself as God is the joke, and the mundane production language frames it. Gains resonance from the preceding scenes but isn't strong as a standalone moment."
+    },
+    {
+      "index": 52,
+      "text": "I know what you're doing, Jack. You are purposely tanking the network. / Good God, Lemon, what is it with you liberals and your conspiracy theories? I've got bad news for you. The CIA did not invent crack cocaine, the levees blew themselves up in New Orleans, and no one is trying to destroy NBC.",
       "characters": [
         "Liz",
         "Jack"
       ],
       "joke_types": [
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Liz questioning Jack's God Cop casting",
-      "punchline": "Jack's circular justification where he cast himself based on his own recommendation",
-      "craft_total": 7.3,
-      "impact_score": 6.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Liz confronts Jack with her conspiracy theory that he's tanking NBC.",
+      "punchline": "Jack denies it by listing it alongside actual conspiracy theories \u2014 CIA/crack cocaine, Katrina levees \u2014 implying NBC-tanking is as absurd as those. The irony is that those first two are rooted in real documented concerns, making his dismissal inadvertently self-undermining.",
+      "craft_total": 8.1,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good circular logic joke showing Jack's self-serving decision-making disguised as professional process"
+      "explanation": "Sharp political joke embedded in the denial. The CIA-crack cocaine and New Orleans levees references aren't random \u2014 they're conspiracy theories with documented real-world basis, making Jack's 'denial' undercut itself for informed viewers. The structure of denial-by-comparison is classic Jack misdirection."
     },
     {
-      "index": 51,
-      "text": "I have an investor lined up who will buy the network and keep me in charge. I can't tell you who it is, but his word is as good as the color consistency on one of his Easter eggs.",
+      "index": 53,
+      "text": "Hang on. Did you cast yourself in this show? / What can I say? We saw hundreds of actors for God. Finally the network executive said I should just play him. / You're the network executive.",
+      "characters": [
+        "Liz",
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Liz notices Jack is dressed as a character in 'God Cop' \u2014 as God.",
+      "punchline": "Jack explains he only took the role because 'the network executive' recommended him \u2014 then Liz points out he IS the network executive. Jack has cast himself as God by consulting himself.",
+      "craft_total": 8.09,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Classic 30 Rock structure: Jack's self-deception requiring an outside party (Liz) to name it plainly. Jack consulting himself as 'the network executive' and acting on that recommendation as an actor is perfectly absurd and perfectly Jack \u2014 his ego is so large it has its own separate identity. The straight-man correction 'You're the network executive' lands perfectly. Earns 8+ for character integration and structure."
+    },
+    {
+      "index": 54,
+      "text": "Fine. You got me. I'm steering the Titanic into the iceberg.",
       "characters": [
         "Jack"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Jack admits he's tanking NBC.",
+      "punchline": "The Titanic metaphor \u2014 but inverted, where Jack is deliberately steering INTO the iceberg rather than trying to avoid it \u2014 is a neat subversion. He owns the destruction.",
+      "craft_total": 7.46,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A solid metaphor inversion but not exceptional \u2014 the Titanic iceberg metaphor is very well-worn. The subversion (deliberately steering into it) is the only fresh element. Functional."
+    },
+    {
+      "index": 55,
+      "text": "I have an investor lined up who will buy the network and keep me in charge. I can't tell you who it is, but his word is as good as the color consistency on one of his Easter eggs. / Adolf Paas?",
+      "characters": [
+        "Jack",
+        "Liz"
       ],
       "joke_types": [
         "callback",
         "character_comedy"
       ],
-      "setup": "Jack explaining his secret investor",
-      "punchline": "Obvious reference to PAAS Easter egg company through quality metaphor",
-      "craft_total": 7.07,
-      "impact_score": 6.83,
-      "quotability": 7.0,
+      "setup": "Jack hints at his mystery investor using a very specific qualifier about Easter egg color consistency.",
+      "punchline": "Liz immediately guesses 'Adolf Paas' \u2014 completing the callback to the earlier PAAS Easter egg conversation and giving the PAAS founder a darkly comic first name ('Adolf').",
+      "craft_total": 8.47,
+      "impact_score": 8.67,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good callback to the PAAS obsession with Jack's attempt at subtle hint through quality metaphor"
+      "explanation": "Among the episode's best jokes and a masterclass in callback construction. The setup at 07:00 (the PAAS conversation) was itself funny but also planted the seed for this. The payoff works on multiple levels: (1) Liz correctly identifies the investor from a coded Easter-egg clue, (2) the founder's name is 'Adolf' \u2014 an extremely dark first name for someone Jack admires, (3) Liz guessing correctly implies she was paying more attention to the PAAS lecture than she let on. The name 'Adolf Paas' is an inspired invention. Earns the highest callback score in the episode."
     },
     {
-      "index": 52,
-      "text": "Adolf Paas?",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "dark_subversive"
-      ],
-      "setup": "Liz guessing the Easter egg company investor",
-      "punchline": "Adding 'Adolf' to make PAAS sound like a Nazi name",
-      "craft_total": 6.7,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent wordplay connecting PAAS to Adolf Hitler, though somewhat lazy Nazi reference"
-    },
-    {
-      "index": 53,
-      "text": "I cannot go to another business-school reunion and sit at the non-CEO table with the... women and nice men.",
+      "index": 56,
+      "text": "Lemon, I cannot go to another business-school reunion and sit at the non-CEO table with the... women and nice men.",
       "characters": [
         "Jack"
       ],
@@ -1018,566 +1097,958 @@
         "character_comedy",
         "dark_subversive"
       ],
-      "setup": "Jack explaining his motivation for the NBC scheme",
-      "punchline": "His casual sexism and dismissal of 'nice men' as failures",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
+      "setup": "Jack explains his motivation for the scheme \u2014 professional status.",
+      "punchline": "'...women and nice men' \u2014 delivered after a careful pause, implying these categories are equally diminished in Jack's worldview. The pause before 'women' signals his awareness that it's offensive but his commitment to saying it anyway.",
+      "craft_total": 8.33,
+      "impact_score": 8.17,
       "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Jack character moment showing his corporate masculinity anxiety and casual discrimination"
+      "explanation": "The pause structure is key \u2014 it signals Jack's self-awareness about his sexism while confirming it. 'Nice men' as the parallel category to 'women' at the non-CEO table is the real subversion: being 'nice' is the male equivalent of being female in Jack's social hierarchy. Perfectly character-integrated."
     },
     {
-      "index": 54,
-      "text": "Before this, I ran an all-women's theater company. Everyone was vice president.",
+      "index": 57,
+      "text": "That's true. Before this, I ran an all-women's theater company. Everyone was vice president.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Liz saying she's never worked at a properly managed company",
-      "punchline": "Her previous company's egalitarian title structure",
-      "craft_total": 7.23,
-      "impact_score": 6.75,
+      "setup": "Jack says Liz has never worked at a properly managed company.",
+      "punchline": "Liz confirms this \u2014 she ran an all-women's theater company where everyone was vice president. The joke satirizes both feminist organizational structures (flat hierarchy taken too far) and Liz's career trajectory.",
+      "craft_total": 7.85,
+      "impact_score": 7.33,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character detail showing Liz's liberal/feminist background through workplace structure comedy"
-    },
-    {
-      "index": 55,
-      "text": "Look at Sherman's march to the sea. Or what my good friend Bane tried to do to Gotham.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Jack giving historical examples of destruction for renewal",
-      "punchline": "Comparing Civil War history to Batman villain, calling Bane his 'good friend'",
-      "craft_total": 7.73,
-      "impact_score": 7.75,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant escalation from real history to fictional supervillainy. Jack's casual friendship with comic book terrorist perfect character beat"
-    },
-    {
-      "index": 56,
-      "text": "Who do you think you are? God? We're ready for you.",
-      "characters": [
-        "Liz",
-        "Crew member"
-      ],
-      "joke_types": [
-        "irony_sarcasm"
-      ],
-      "setup": "Liz asking Jack who he thinks he is",
-      "punchline": "Perfect timing as crew calls for Jack (playing God) to set",
-      "craft_total": 7.77,
-      "impact_score": 8.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect comedic timing with the crew call interrupting at exactly the right moment for maximum irony"
-    },
-    {
-      "index": 57,
-      "text": "If there is one thing I have realized from being God, it's that the more you know, the more you realize you do not... know.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Jack delivering lines as God in his show",
-      "punchline": "Pseudo-philosophical wisdom delivered with dramatic pause",
-      "craft_total": 6.59,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Generic pseudo-profound dialogue typical of bad TV. Shows Jack's pretentious writing and self-importance"
+      "explanation": "'Everyone was vice president' is a tight, efficient joke about non-hierarchical organizations taking equality to an absurd extreme. It characterizes Liz's pre-TGS history and is specific enough to feel true to her character. Good economy."
     },
     {
       "index": 58,
+      "text": "Or what my good friend Bane tried to do to Gotham. / Join me, Lemon. Help me tank NBC.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Jack compares his plan to historical precedents \u2014 Sherman's March \u2014 then adds a fictional villain.",
+      "punchline": "'My good friend Bane' \u2014 the Batman villain from The Dark Knight Rises (2012, released the same year) \u2014 as a personal friend and precedent for Jack's plan. Jack identifies with Bane's 'blow it up and rebuild' philosophy.",
+      "craft_total": 7.91,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A timely pop culture reference (Dark Knight Rises was recent at time of airing) that works because Jack earnestly treats a fictional villain as a personal acquaintance whose methods he endorses. Loses some points for being a pop-culture name-drop without a full twist, but the 'good friend' framing adds character specificity."
+    },
+    {
+      "index": 59,
+      "text": "Never. / You're playing with people's lives here. Who do you think you are? / God? We're ready for you.",
+      "characters": [
+        "Liz",
+        "Jack",
+        "Production Assistant"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "meta_self_referential"
+      ],
+      "setup": "Liz says 'Who do you think you are?' to Jack, rhetorically.",
+      "punchline": "A PA immediately calls out 'God? We're ready for you' \u2014 summoning Jack the actor to his role as God on 'God Cop.' The perfect accidental answer to Liz's rhetorical question.",
+      "craft_total": 8.65,
+      "impact_score": 9.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfectly constructed situational punchline. Liz's rhetorical 'Who do you think you are?' is answered literally by the universe \u2014 'God' \u2014 because Jack has actually cast himself as God. The timing of the PA's call is everything. This is the kind of joke that could only exist in 30 Rock's specific world. Near-perfect structure, very high economy. One of the episode's best constructed moments."
+    },
+    {
+      "index": 60,
+      "text": "If there is one thing I have realized from being God, it's that the more you know, the more you realize you do not... know.",
+      "characters": [
+        "Jack (as God)"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jack, playing God on the 'God Cop' set, delivers a line of dialogue.",
+      "punchline": "Jack's 'God' is delivering a Socratic aphorism \u2014 'the more you know, the more you realize you do not know' \u2014 which is a famous philosophical observation being credited to God, and which also incidentally describes Jack's own predicament.",
+      "craft_total": 7.59,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Works as a character beat \u2014 Jack performing pseudo-wisdom \u2014 but the joke isn't quite sharp enough on its own. The irony of Jack-as-God delivering borrowed philosophy is good but not exceptional."
+    },
+    {
+      "index": 61,
       "text": "Why is he learning anything? He's supposed to be God.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
         "observational",
-        "setup_punchline"
+        "character_comedy"
       ],
-      "setup": "Watching Jack's God character deliver learning-based wisdom",
-      "punchline": "Logical objection to omniscient deity having revelations",
-      "craft_total": 7.07,
-      "impact_score": 6.75,
-      "quotability": 6.5,
+      "setup": "Jack delivers his God Cop dialogue about learning.",
+      "punchline": "Liz's practical critique of the show's theology \u2014 'Why is he learning anything? He's supposed to be God.' \u2014 is a perfectly reasonable script note that exposes the show's conceptual absurdity.",
+      "craft_total": 7.9,
+      "impact_score": 7.83,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good logical comedy pointing out the theological flaw in Jack's God character having character development"
+      "is_callback": 1,
+      "explanation": "Liz's writer-brain critique of God Cop's terrible theology is perfectly in character \u2014 she can't help giving notes even when she should be confronting Jack. Also a legitimate callback to her earlier question about why God can't just solve crimes. The economy is strong and the character integration is excellent."
     },
     {
-      "index": 59,
+      "index": 62,
       "text": "Well, it's not technically a home, because no one's supposed to be living here, but welcome to our condemned site of the Candyman murders.",
       "characters": [
         "Hazel"
       ],
       "joke_types": [
-        "escalation",
+        "character_comedy",
         "dark_subversive"
       ],
-      "setup": "Hazel welcoming Tracy to their home",
-      "punchline": "Reveal that it's an illegal residence at a murder site",
-      "craft_total": 7.12,
-      "impact_score": 7.17,
+      "setup": "Tracy arrives at Hazel and Kenneth's home.",
+      "punchline": "Hazel reveals their home is (a) condemned and (b) the site of the 'Candyman murders' \u2014 a horror film reference \u2014 presented as a casual domestic disclosure.",
+      "craft_total": 7.81,
+      "impact_score": 7.33,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation from housing confession to murder site revelation. Shows Hazel's poor life choices"
+      "explanation": "The casual revelation of living in a condemned Candyman murder site is perfectly in character for Kenneth, whose innocent naivety about his own circumstances is a running character trait. Hazel delivering it as a welcome-mat speech is a good touch."
     },
     {
-      "index": 60,
+      "index": 63,
       "text": "If you put this in the oven at about 200 degrees, my snake should be very comfortable while she gives birth.",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Kenneth hands Tracy something as a hostess gift or appetizer tray.",
+      "punchline": "It's actually a heated container for Kenneth's pregnant snake \u2014 delivered as casual domestic information. The contrast of the formal dinner setting and snake maternity ward.",
+      "craft_total": 7.52,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A solid Kenneth-absurdism gag. The pregnant snake as a dinner party element is unusual enough to land. Works better with the visual of whatever Kenneth is holding."
+    },
+    {
+      "index": 64,
+      "text": "Thank you. Your home is terrible. / Shall we conversation? / Yes. We're having weather. / Much weather.",
+      "characters": [
+        "Tracy",
+        "Hazel",
+        "Kenneth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "awkward_silence"
+      ],
+      "setup": "Tracy arrives and the party begins with small talk.",
+      "punchline": "'Shall we conversation?' (using 'conversation' as a verb) followed by the two hosts exchanging 'We're having weather' / 'Much weather' \u2014 a parody of meaningless party small talk reduced to its barest, most absurd form.",
+      "craft_total": 7.96,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Elegant deconstruction of social awkwardness. 'Conversation' as a verb suggests Kenneth and Hazel have rehearsed how parties work without quite grasping it. 'We're having weather / Much weather' strips small talk to its atomic level \u2014 pure phatic communication with no content. Highly quotable in its absurdist simplicity. 'Your home is terrible' from Tracy as an honest opener is also a great character beat."
+    },
+    {
+      "index": 65,
+      "text": "Do you ever have any roles for white women who've been described by 'The Hollywood Reporter' as 'some lady who ruined the premiere of ParaNorman'?",
       "characters": [
         "Hazel"
       ],
       "joke_types": [
-        "absurdist",
-        "cringe_discomfort"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Hazel giving cooking instructions",
-      "punchline": "It's actually for her pregnant snake, not food",
-      "craft_total": 7.12,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Hazel tries to pitch herself to Tracy as an actress.",
+      "punchline": "Her credential is a Hollywood Reporter description of her as 'some lady who ruined the premiere of ParaNorman' \u2014 a real-sounding negative review that she uses as a promotional quote.",
+      "craft_total": 8.0,
+      "impact_score": 8.0,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirection from cooking to reptile birth assistance. Shows Hazel's unconventional lifestyle priorities"
+      "explanation": "The specificity of ParaNorman (real 2012 animated film) and 'some lady who ruined the premiere' as a Hollywood Reporter quote that Hazel uses as a credit is inspired. The self-awareness gap \u2014 she thinks this is a selling point \u2014 is perfect character comedy. The 'some lady' phrasing makes it feel like an actual publication quote."
     },
     {
-      "index": 61,
-      "text": "Thank you. Your home is terrible.",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
-      ],
-      "setup": "Tracy being offered appetizers in the terrible living situation",
-      "punchline": "His blunt honesty about their home while accepting hospitality",
-      "craft_total": 6.97,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Tracy character moment - his brutal honesty delivered with complete sincerity and no self-awareness"
-    },
-    {
-      "index": 62,
-      "text": "Oh, I always have one white person in all my movies. We have to have a villain. Oh, and who's worse than us whites, right? I mean, look at slavery. That was bananas!",
+      "index": 66,
+      "text": "Oh, I always have one white person in all my movies. We have to have a villain. / Oh, and who's worse than us whites, right? I mean, look at slavery. That was bananas!",
       "characters": [
         "Tracy",
         "Hazel"
       ],
       "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Tracy discusses his casting practices.",
+      "punchline": "Tracy needs a white villain \u2014 Hazel's enthusiastic agreement that whites are terrible ('Look at slavery. That was bananas!') is both the punchline and an unexpected inversion where the white character enthusiastically endorses the critique.",
+      "craft_total": 8.07,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'That was bananas!' as a summary of slavery is a characteristically inappropriate understatement that works because of Hazel's desperation to agree with Tracy. The racial role-reversal (white woman enthusiastically endorsing anti-white casting) is sharp. Tracy's matter-of-fact casting policy is good character work."
+    },
+    {
+      "index": 67,
+      "text": "That sturgeon just will not die. / Excuse me a moment.",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "absurdist",
+        "deadpan_understatement"
+      ],
+      "setup": "Mid-dinner-party conversation, Kenneth excuses himself.",
+      "punchline": "'That sturgeon just will not die' \u2014 an offhand reference to a fish Kenneth is presumably trying to kill in the kitchen, delivered as the most normal reason to excuse oneself from a dinner table.",
+      "craft_total": 7.89,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "One of the episode's most efficient jokes. Six words, perfectly placed mid-conversation, with maximum absurdist impact. The sturgeon \u2014 a noble, enormous fish \u2014 'will not die' implies Kenneth is engaged in a struggle with a live fish in the kitchen while hosting a dinner party. 'Just will not die' is particularly good \u2014 the 'just' implies this has been going on for some time. High quotability."
+    },
+    {
+      "index": 68,
+      "text": "Oh, I also do accents. Oh, me a Cockney person.",
+      "characters": [
+        "Hazel"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Hazel continues pitching herself to Tracy.",
+      "punchline": "'Oh, me a Cockney person' \u2014 a completely wrong attempt at a Cockney accent that doesn't even use Cockney phrasing correctly, while also misphrasing the transition 'do me a Cockney person.'",
+      "craft_total": 7.19,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional cringe-comedy about Hazel's terrible acting abilities. The double failure (wrong syntax AND wrong accent) is on-brand for the character but not the episode's sharpest."
+    },
+    {
+      "index": 69,
+      "text": "And this is your Uncle Bob. [Photo of a creepy man revealed]",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "dark_subversive"
+      ],
+      "setup": "Kenneth returns from dealing with the sturgeon and shows Tracy something.",
+      "punchline": "The photo of 'Uncle Bob' is apparently disturbing enough to require noting as a visual gag \u2014 an unsettling character photo revealed mid-dinner-party.",
+      "craft_total": 6.79,
+      "impact_score": 6.5,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A visual gag that is hard to fully evaluate from transcript alone. The joke depends entirely on what 'Uncle Bob' looks like. Scored conservatively because the setup and punchline are thin without the visual payoff."
+    },
+    {
+      "index": 70,
+      "text": "FYI, Paul's family dog is gonna be the ring bearer. Zoltan is an 18-year-old German shepherd who cannot walk. / So, you're gonna be in charge of him. / No, Jenna, I'm allergic to dogs. / Oh, don't worry. He's hairless because of his insanity medication.",
+      "characters": [
+        "Jenna",
+        "Liz"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Jenna describes the ring-bearer dog situation.",
+      "punchline": "Each detail escalates: 18-year-old (ancient for a dog) \u2192 German shepherd \u2192 cannot walk \u2192 Liz is responsible \u2192 she's allergic \u2192 'he's hairless because of his insanity medication.' The hairless-from-insanity-medication detail is the perfect peak.",
+      "craft_total": 7.89,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A beautifully constructed escalating details joke. Each new piece of information about Zoltan is worse than the last. 'Hairless because of his insanity medication' is the perfect cap \u2014 the dog is old, immobile, allergenic, AND mentally ill. Jenna's dismissal of Liz's allergy with 'oh don't worry, he's hairless because of his insanity medication' treats this as good news. Earns 8+ for the escalation structure and originality of the final detail."
+    },
+    {
+      "index": 71,
+      "text": "Also, since this is a surprise wedding, you're gonna want to carry around your bridesmaid's dress with you at all times.",
+      "characters": [
+        "Jenna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Jenna explains the logistics of her surprise wedding.",
+      "punchline": "Liz must carry a formal bridesmaid's dress with her at all times because the wedding could happen at any moment \u2014 a practical absurdity of the 'surprise wedding' concept.",
+      "craft_total": 7.05,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A solid logical consequence joke \u2014 if the wedding is a surprise, the logistics break down completely. Works as character comedy for Jenna's obliviousness. Not the episode's sharpest."
+    },
+    {
+      "index": 72,
+      "text": "You know I can't wear green, Jenna. The Clinique lady says I have witch undertones.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Jenna shows Liz the green bridesmaid's dress.",
+      "punchline": "'The Clinique lady says I have witch undertones' \u2014 Liz has received a beauty counter diagnosis of literally having witch undertones, stated as if this is an established cosmetic category.",
+      "craft_total": 7.91,
+      "impact_score": 7.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "An inspired piece of character writing. 'Witch undertones' sounds like an actual skin tone category (warm/cool undertones are a real cosmetic concept), and Liz's total acceptance of this diagnosis from a department store beauty advisor is perfectly in character. Extremely quotable. The specificity of 'the Clinique lady' adds authenticity. Earns 8+ for originality of the concept and quotability."
+    },
+    {
+      "index": 73,
+      "text": "Tonight on NBC, 'Tank It,' the reality event of the year, where we make grandpas put on tank tops and then laugh at them.",
+      "characters": [
+        "NBC Announcer"
+      ],
+      "joke_types": [
+        "absurdist",
+        "irony_sarcasm"
+      ],
+      "setup": "Another NBC show is promoted.",
+      "punchline": "'Tank It' \u2014 the show's title works as a literal description of both the show's content (making grandpas wear tank tops) and Jack's strategy for NBC (tanking it). The concept of 'grandpa tank tops' as a reality show is also independently absurd.",
+      "craft_total": 7.5,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The double meaning of 'Tank It' \u2014 both the grandpa tank-top concept and the literal strategy \u2014 is elegant wordplay. The show concept itself (elderly men in tank tops as spectacle) is absurd enough to feel real as a terrible reality pitch. Good structural callback."
+    },
+    {
+      "index": 74,
+      "text": "You know what? I can't do anything tonight. Because tonight is your surprise bachelorette party! Aah!",
+      "characters": [
+        "Liz",
+        "Jenna"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Jenna has been piling demands on Liz. Liz starts to say she can't do anything tonight.",
+      "punchline": "Liz reveals a surprise bachelorette party she's already planned \u2014 but the reveal is the joke: Liz is so desperate to escape Jenna's other demands that she's using the bachelorette party as an excuse, even though it means more work for herself.",
+      "craft_total": 7.66,
+      "impact_score": 7.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Works as character comedy \u2014 Liz's desperation to avoid one thing leading her into another thing \u2014 but the joke structure is functional rather than sharp. The 'Aah!' exclamation punctuating the announcement is good timing."
+    },
+    {
+      "index": 75,
+      "text": "Sure, and you should get your hopes way up. / See you at my apartment at eight. / Your apartment? Why? / It's a surprise. / And there's nothing worse than a surprise Lemon party.",
+      "characters": [
+        "Liz",
+        "Jenna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Liz promotes the bachelorette party while revealing it'll be at her apartment.",
+      "punchline": "'And there's nothing worse than a surprise Lemon party' \u2014 a callback to 30 Rock's long-running 'Lemon party' gag / internet reference, delivered with dread by Jenna who knows what a Lemon party will be: depressing, low-key, probably cheese-based.",
+      "craft_total": 7.78,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Works on two levels for 30 Rock fans: 'Lemon party' as a show-specific dread concept and the broader internet reference. Jenna's dread is well-placed and characterful. 'Get your hopes way up' is also a good deadpan reversal."
+    },
+    {
+      "index": 76,
+      "text": "Oh, but we have government ice cream. / And that's what you're gonna serve to Tracy Jordan? / I'm as shocked as anybody.",
+      "characters": [
+        "Kenneth",
+        "Hazel"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Hazel asks Kenneth to get dessert and he offers 'government ice cream.'",
+      "punchline": "'Government ice cream' \u2014 a completely unexplained category of ice cream that apparently exists in Kenneth's world, which he was planning to serve to Tracy Jordan. His 'I'm as shocked as anybody' implies he recognizes this is inadequate but genuinely didn't see the problem before Hazel raised it.",
+      "craft_total": 8.12,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Government ice cream' is one of the best single-concept jokes in the episode. It requires no explanation \u2014 the phrase alone creates a complete image (surplus institutional dairy product) while being entirely unexplained. 'I'm as shocked as anybody' is a perfectly timed self-awareness beat. Earns 8+ for the economy and originality of 'government ice cream' as a concept."
+    },
+    {
+      "index": 77,
+      "text": "Maybe the nice vending machine at the prison is working again.",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Kenneth offers an alternative source for dessert.",
+      "punchline": "'The nice vending machine at the prison' \u2014 Kenneth has a specific prison vending machine he rates positively, implying he visits prison regularly enough to have a preferred machine and know its operational status.",
+      "craft_total": 8.06,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfectly Kenneth. The specificity \u2014 'the nice vending machine' (implying there's a worse one), 'at the prison,' and 'working again' \u2014 implies a whole backstory. Kenneth is so innocent that his connections to the prison system are framed as a positive resource. Good economy."
+    },
+    {
+      "index": 78,
+      "text": "You're a real man, Tracy Jordan. Playing it cool all night while I rubbed your foot under the table. / My foot? / No, that's shoe stuffing. It helps keep the shape of my shoes. / Why was you rubbing my foot, anyway?",
+      "characters": [
+        "Hazel",
+        "Tracy"
+      ],
+      "joke_types": [
         "cringe_discomfort",
+        "misdirection"
+      ],
+      "setup": "Hazel makes a pass at Tracy, complimenting him for 'playing it cool' while she rubbed his foot \u2014 implying she thinks he's been enjoying a flirtatious interaction.",
+      "punchline": "Tracy reveals she was rubbing his shoe stuffing, not his foot \u2014 he had no idea anything was happening. Hazel's seduction attempt was directed at an inanimate foot shaper. Then Tracy's 'Why was you rubbing my foot, anyway?' shows he absorbed the information but missed the implication entirely.",
+      "craft_total": 7.88,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A layered cringe comedy moment. The misdirection is solid: we expect Tracy to have noticed the seduction, but he was oblivious. 'I never know what's happening anywhere' as his follow-up self-description is great character integration. Tracy's obliviousness as a recurring trait is well-deployed here."
+    },
+    {
+      "index": 79,
+      "text": "Okay, let's get this party started! / Ooh, I smell Italian guys.",
+      "characters": [
+        "Liz",
+        "Jenna"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Liz kicks off the bachelorette party.",
+      "punchline": "Jenna's immediate sensory recognition of Italian men ('I smell Italian guys') before any are even seen implies she's so attuned to this demographic that she can detect them by scent.",
+      "craft_total": 7.61,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A good quick character joke \u2014 Jenna's olfactory relationship with Italian men is a perfectly absurd character trait. Short and efficient."
+    },
+    {
+      "index": 80,
+      "text": "It's your bachelorette party. Bethany from work is here and a bunch of my neighbors. A clown. And there's a 'God Cop' marathon on NBC.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
         "escalation"
       ],
-      "setup": "Tracy saying he always casts white villains",
-      "punchline": "Hazel's enthusiastic agreement escalating to inappropriate slavery comment",
-      "craft_total": 6.73,
+      "setup": "Jenna expected a party with 'Italian guys' \u2014 presumably a stripper-based extravaganza.",
+      "punchline": "Liz's actual party: a coworker, some neighbors, a clown, and NBC's God Cop marathon. The escalating lameness of the party lineup, capped with 'a clown' (both sadder and more alarming than a stripper) and the God Cop callback.",
+      "craft_total": 7.78,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A good payoff on the 'nothing worse than a surprise Lemon party' setup. The specific list \u2014 coworker, neighbors, a clown \u2014 escalates in the wrong direction from what was expected. 'A clown' as its own line item is particularly good. The God Cop callback adds a layer."
+    },
+    {
+      "index": 81,
+      "text": "I think Esposito lied to us. / What do you mean you think? You're God.",
+      "characters": [
+        "God Cop detective",
+        "Jack as God"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "absurdist"
+      ],
+      "setup": "The God Cop marathon is playing in the background; we hear dialogue from it.",
+      "punchline": "The detective says 'I think Esposito lied to us' (hedged). God's response \u2014 'What do you mean you think? You're God' \u2014 wait, no: the detective calls out God's uncertainty, since God should know. This is a logic critique of the show's premise playing out within the show.",
+      "craft_total": 7.79,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A nice running callback \u2014 the same theological problem Liz identified (why can't God just know things?) plays out in the actual show's dialogue. Works as a joke within a joke within a joke."
+    },
+    {
+      "index": 82,
+      "text": "Let us pray. / To whom?!",
+      "characters": [
+        "Unknown party guest",
+        "Party guest"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "absurdist"
+      ],
+      "setup": "At the bachelorette party, someone says 'Let us pray.'",
+      "punchline": "'To whom?!' \u2014 the obvious theological problem of praying at a bachelorette party watching God Cop, where God is being played by Jack Donaghy.",
+      "craft_total": 7.81,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick, efficient absurdist beat. Two lines, economical. The theological confusion is good but slightly disconnected from the God Cop metafiction. Works better as a background party gag."
+    },
+    {
+      "index": 83,
+      "text": "Listen up, ladies. You're all in a lot of trouble if you don't protect yourselves against identity theft. Please take a pamphlet.",
+      "characters": [
+        "'Stripper' (actually a police officer)"
+      ],
+      "joke_types": [
+        "misdirection",
+        "setup_punchline"
+      ],
+      "setup": "Jenna expected a stripper-in-cop-costume for the bachelorette party.",
+      "punchline": "The 'cop stripper' is an actual police officer doing actual identity theft outreach, handing out pamphlets. The identical opening (uniform, commanding presence) subverts the expectation completely.",
+      "craft_total": 7.84,
+      "impact_score": 7.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A solid misdirection gag \u2014 the classic 'cop stripper' expectation subverted by a genuine public safety officer. Works well as a Lemon party payoff. 'Please take a pamphlet' is the perfectly deflating punchline."
+    },
+    {
+      "index": 84,
+      "text": "Okay, you're upset. But this is what you get when you choose Liz Lemon as your maid of honor. / So, let's get this over with. / I mean, you know, what's the worst you could possibly...?",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Liz acknowledges the terrible party. She trails off asking 'what's the worst that could happen?'",
+      "punchline": "The trailing off sets up whatever horror is revealed next \u2014 structurally, this is a teed-up setup for a visual payoff that escalates the party's awfulness.",
+      "craft_total": 7.07,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "This is more of a setup for the next joke than a joke itself. 'This is what you get when you choose Liz Lemon as your maid of honor' is a decent self-aware line but the trailing off is functional bridgework. Scored lower accordingly."
+    },
+    {
+      "index": 85,
+      "text": "Tracy, I will do anything to play a villain in one of your movies. / Oh, and the camera loves me. Especially when I flash my baby blues. / Why are they blue?",
+      "characters": [
+        "Hazel",
+        "Tracy"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Hazel makes a more brazen pitch to Tracy \u2014 'I will do anything.'",
+      "punchline": "Hazel flashes blue eyes she apparently has (or contacts?), and Tracy's straight response 'Why are they blue?' deflates the seduction with a practical question, revealing he notices the wrong thing entirely.",
+      "craft_total": 7.11,
       "impact_score": 6.67,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Cringe escalation showing Hazel's desperate pandering through inappropriate historical commentary"
+      "explanation": "Tracy's obliviousness continues as a running gag. 'Why are they blue?' is a good capper that shows Tracy noticing the wrong thing. Solid but not exceptional."
     },
     {
-      "index": 63,
-      "text": "That sturgeon just will not die. Excuse me a moment. Oh, I also do accents. Oh, me a Cockney person.",
+      "index": 86,
+      "text": "No! I'm married, Hazel. / So am I. And if he ever wakes up from that coma, I'm dead! That's why I live for today.",
       "characters": [
-        "Hazel"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Hazel trying to impress Tracy with her acting skills",
-      "punchline": "Interrupted by fish-killing duty, terrible accent demonstration",
-      "craft_total": 6.04,
-      "impact_score": 5.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Hazel's poor priorities (impressing guest vs killing fish) and terrible acting ability"
-    },
-    {
-      "index": 64,
-      "text": "Zoltan is an 18-year-old German shepherd who cannot walk. So, you're gonna be in charge of him. No, Jenna, I'm allergic to dogs. Oh, don't worry. He's hairless because of his insanity medication.",
-      "characters": [
-        "Jenna",
-        "Liz"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Jenna explaining ring bearer duties with elderly dog",
-      "punchline": "Dog can't walk, is hairless from mental health medication",
-      "craft_total": 7.67,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent escalation of wedding nightmare details. 'Insanity medication' for dogs is perfect absurd specificity"
-    },
-    {
-      "index": 65,
-      "text": "The cake is a tasteless foam. There's no cake?",
-      "characters": [
-        "Jenna",
-        "Liz"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Jenna explaining molecular gastronomy wedding cake",
-      "punchline": "Liz's horror at literal interpretation of 'tasteless foam'",
-      "craft_total": 7.11,
-      "impact_score": 6.75,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent wordplay on 'tasteless' with Liz's practical concern about actual cake absence"
-    },
-    {
-      "index": 66,
-      "text": "'Tank It,' the reality event of the year, where we make grandpas put on tank tops and then laugh at them.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "dark_subversive"
-      ],
-      "setup": "Jack announcing another NBC show",
-      "punchline": "Show concept based on tank/tank top pun, elderly humiliation",
-      "craft_total": 7.03,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent pun-based show concept with uncomfortable elder abuse undertones typical of reality TV"
-    },
-    {
-      "index": 67,
-      "text": "And there's nothing worse than a surprise Lemon party.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Liz explaining surprise bachelorette party",
-      "punchline": "Unintentional sexual reference through her last name",
-      "craft_total": 6.39,
-      "impact_score": 6.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Double entendre playing on Liz's name and internet slang. Works for character obliviousness"
-    },
-    {
-      "index": 68,
-      "text": "My foot? No, that's shoe stuffing. It helps keep the shape of my shoes. Why was you rubbing my foot, anyway?",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Hazel claiming she was rubbing Tracy's foot",
-      "punchline": "Tracy's confusion about shoe maintenance being mistaken for foot",
-      "craft_total": 7.1,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent misdirection about shoe care vs seduction. Tracy's practical confusion about the situation"
-    },
-    {
-      "index": 69,
-      "text": "Ooh, I smell Italian guys.",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Jenna arriving at her bachelorette party",
-      "punchline": "Her ethnic fetishization of male strippers",
-      "craft_total": 6.27,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard Jenna inappropriate comment showing her objectifying mindset at bachelorette party"
-    },
-    {
-      "index": 70,
-      "text": "Bethany from work is here and a bunch of my neighbors. A clown. And there's a 'God Cop' marathon on NBC.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Liz revealing the actual bachelorette party",
-      "punchline": "Increasingly sad party elements ending with Jack's terrible show",
-      "craft_total": 6.65,
-      "impact_score": 6.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good escalation showing Liz's sad party planning culminating in callback to Jack's awful programming"
-    },
-    {
-      "index": 71,
-      "text": "Listen up, ladies. You're all in a lot of trouble if you don't protect yourselves against identity theft. Please take a pamphlet. Pass them along.",
-      "characters": [
-        "Police officer"
-      ],
-      "joke_types": [
-        "misdirection"
-      ],
-      "setup": "Police officer arriving at bachelorette party",
-      "punchline": "Instead of stripping, he's doing identity theft education",
-      "craft_total": 7.03,
-      "impact_score": 7.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good misdirection subverting stripper cop expectation with mundane public service announcement"
-    },
-    {
-      "index": 72,
-      "text": "So am I. And if he ever wakes up from that coma, I'm dead! That's why I live for today.",
-      "characters": [
+        "Tracy",
         "Hazel"
       ],
       "joke_types": [
         "dark_subversive",
-        "escalation"
+        "character_comedy"
       ],
-      "setup": "Hazel responding to Tracy saying he's married",
-      "punchline": "Her husband is in a coma and she's apparently done something terrible",
-      "craft_total": 7.03,
-      "impact_score": 7.0,
+      "setup": "Tracy rejects Hazel by citing his marriage.",
+      "punchline": "Hazel reveals she's married too \u2014 but her husband is in a coma, and if he wakes up, she's dead (presumably because of some transgression). 'That's why I live for today.'",
+      "craft_total": 7.94,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A dark escalation that develops Hazel's character rapidly \u2014 she has a comatose husband whose awakening represents an existential threat to her. 'That's why I live for today' as a consequence of 'my husband will kill me when he wakes from his coma' is a great dark punchline."
+    },
+    {
+      "index": 87,
+      "text": "You're just using Kenneth! And I'm telling him everything! / Whatever. Go ahead and try. / I'm gonna have to try?",
+      "characters": [
+        "Tracy",
+        "Hazel"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Tracy threatens to tell Kenneth everything about Hazel's advances.",
+      "punchline": "Hazel says 'Go ahead and try' \u2014 implying Kenneth is so obtuse or so credulous of her that Tracy won't be able to make him understand. Tracy's response \u2014 'I'm gonna have to try?' \u2014 reveals he assumed it would be easy and is now worried.",
+      "craft_total": 7.22,
+      "impact_score": 6.75,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good dark comedy revealing Hazel's criminal past and using philosophical clich\u00e9 to justify bad behavior"
+      "explanation": "A clever structural moment \u2014 Tracy's realization that the simple act of telling Kenneth something will require effort. Kenneth's established credulity makes 'I'm gonna have to try?' a genuine comedic insight. Good economy."
     },
     {
-      "index": 73,
-      "text": "Because you're not famous! You think I want someone up there with me that other people are looking at? I wanted you because you're nothing!",
+      "index": 88,
+      "text": "Just ask one of your famous friends to be maid of honor. / Why do you think I asked you in the first place? Because you're not famous! You think I want someone up there with me that other people are looking at? I wanted you because you're nothing!",
+      "characters": [
+        "Liz",
+        "Jenna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "After the terrible bachelorette party, Jenna suggests Liz find someone else for the maid of honor role.",
+      "punchline": "Jenna's reason for wanting Liz all along: Liz is 'nothing' \u2014 no fame, no competing spotlight. She was chosen because she's the least interesting person Jenna knows.",
+      "craft_total": 7.87,
+      "impact_score": 7.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jenna's logic is perfect and devastating: she chose Liz not out of friendship but out of strategic nothingness. 'I wanted you because you're nothing!' is a spectacular Jenna line \u2014 both awful and completely honest. This is Jenna's character essence in one speech. High quotability, excellent character integration. Earns 8+ because Jenna's logic is internally coherent and perfectly character-specific."
+    },
+    {
+      "index": 89,
+      "text": "I get it. You didn't want to get Pippa Middleton-ed. / Why would you even mention her?!",
+      "characters": [
+        "Liz",
+        "Jenna"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Liz understands Jenna's logic \u2014 Jenna didn't want to be upstaged at her own wedding.",
+      "punchline": "'You didn't want to get Pippa Middleton-ed' \u2014 referencing Kate Middleton's sister whose wedding guest appearance upstaged the bride. Jenna's reaction \u2014 'Why would you even mention her?!' \u2014 confirms both the accuracy of the reference AND Jenna's particular sensitivity about it.",
+      "craft_total": 7.75,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Pippa Middleton-ed' as a newly coined verb for 'upstaged at your own event' is genuinely clever wordplay. Jenna's violent reaction to the name confirms the fear is real. The cultural reference is well-deployed rather than gratuitous."
+    },
+    {
+      "index": 90,
+      "text": "Nobody will be your maid of honor, because there's only one person who can be \u2014 you. / What? That's crazy. / Think about it. There would be nobody to steal your spotlight. In fact, you would have two spotlights.",
+      "characters": [
+        "Liz",
+        "Jenna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Liz tries to solve the maid-of-honor problem.",
+      "punchline": "Jenna as her own maid of honor \u2014 'you would have two spotlights' \u2014 is absurd as a concept but immediately appealing to Jenna, whose narcissism would genuinely be served by this. The 'two spotlights' argument is what sells it.",
+      "craft_total": 8.23,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'You would have two spotlights' as the selling point for self-maid-of-honor is perfectly calibrated to Jenna's vanity. Liz understands exactly what argument will work and it's both cynical and hilarious. Strong character integration."
+    },
+    {
+      "index": 91,
+      "text": "I think the maid of honor should sing at my wedding. Sure. / And she can do a fashion show that takes the audience all the way through the wedding night. / And what if she came in in a wheelchair and then stood up and everyone applauded and cried?",
       "characters": [
         "Jenna"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Jenna explaining why she chose Liz as maid of honor",
-      "punchline": "Brutal honesty about wanting Liz specifically because she's unremarkable",
-      "craft_total": 7.95,
-      "impact_score": 8.25,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Jenna narcissism moment with devastating honesty about her friendship motivations. Excellent character revelation"
-    },
-    {
-      "index": 74,
-      "text": "I get it. You didn't want to get Pippa Middleton-ed. Why would you even mention her?!",
-      "characters": [
-        "Liz",
-        "Jenna"
-      ],
-      "joke_types": [
-        "callback",
         "escalation"
       ],
-      "setup": "Liz understanding Jenna's fear of being upstaged",
-      "punchline": "Jenna's horror at mention of famous maid of honor who upstaged bride",
-      "craft_total": 6.96,
-      "impact_score": 6.83,
-      "quotability": 7.0,
+      "setup": "Jenna begins developing the maid-of-honor (herself) vision.",
+      "punchline": "Each suggestion escalates: singing \u2192 fashion show through the wedding night \u2192 arriving in a wheelchair and miraculously standing up. The wheelchair miracle is the peak \u2014 Jenna has invented a fake disability for maximum emotional manipulation.",
+      "craft_total": 7.77,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good celebrity reference joke about maid of honor upstaging with Jenna's visceral reaction to the concept"
+      "explanation": "Beautiful escalating narcissism. Each element is worse than the last, but the wheelchair-to-miraculous-standing is the perfect cap \u2014 Jenna staging a fake recovery for audience sympathy at her own wedding. Pure Jenna. Strong character integration."
     },
     {
-      "index": 75,
-      "text": "And what if she came in in a wheelchair and then stood up and everyone applauded and cried?",
+      "index": 92,
+      "text": "I think the maid of honor should sing at my wedding. Sure. And she can do a fashion show that takes the audience all the way through the wedding night. And what if she came in in a wheelchair and then stood up and everyone applauded and cried?",
       "characters": [
-        "Jenna"
+        "Jenna Maroney"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Jenna getting excited about being her own maid of honor",
-      "punchline": "Fake disability reveal for wedding drama attention",
-      "craft_total": 7.05,
-      "impact_score": 6.75,
-      "quotability": 7.0,
+      "setup": "Jenna begins planning her own maid of honor performance",
+      "punchline": "The plan escalates from singing to a fashion show to faking disability for a miraculous recovery moment",
+      "craft_total": 8.7,
+      "impact_score": 8.75,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Jenna moment showing her willingness to fake disability for attention. Cringe but character-accurate"
+      "explanation": "The escalation is pure Jenna: each step compounds the spectacle and shamelessness. The wheelchair/miraculous recovery moment \u2014 faking disability at your own wedding for applause \u2014 is the peak of her narcissism and perfectly in character. 'Everyone applauded and cried' as a stated goal is delivered with complete sincerity."
     },
     {
-      "index": 76,
-      "text": "You just called me 'Liz'! We can fix that in the cutting room.",
+      "index": 93,
+      "text": "I know you doubted me, but now you see my plan can work. So, what do you say? Are you on board, Liz? / You just called me 'Liz'! / We can fix that in the cutting room.",
       "characters": [
-        "Liz",
-        "Jack"
+        "Jack",
+        "Liz"
       ],
       "joke_types": [
         "meta_self_referential",
         "character_comedy"
       ],
-      "setup": "Liz noticing Jack called her by her first name instead of 'Lemon'",
-      "punchline": "Jack's response treating real life like a TV production",
-      "craft_total": 7.25,
-      "impact_score": 6.75,
-      "quotability": 7.0,
+      "setup": "Jack asks Liz if she's on board with his plan, using 'Liz' instead of 'Lemon.'",
+      "punchline": "Liz notes that Jack has broken character \u2014 he always calls her 'Lemon.' Jack's response: 'We can fix that in the cutting room.' \u2014 a production/editing reference breaking the fourth wall, treating their lives as a show being edited.",
+      "craft_total": 7.99,
+      "impact_score": 8.17,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good meta joke with Jack's TV industry mindset bleeding into real conversation. Character-appropriate confusion"
+      "explanation": "A brilliant meta-joke on multiple levels: (1) Jack calling Liz by her first name is a genuine character slip that Liz correctly identifies, (2) Jack's response \u2014 'we can fix that in the cutting room' \u2014 breaks the fourth wall by treating their real interaction as a show that can be edited, (3) it also works as Jack using production language because he's literally on a TV set (God Cop). One of the episode's best meta moments. Earns 8+ for the layers and perfect economy."
     },
     {
-      "index": 77,
-      "text": "Not! What I said was I would never sleep with Tracy for a pan in a movie.",
+      "index": 94,
+      "text": "Kenneth, I have something I need to tell you. / Last night, when you left, Hazel came on to me 'cause she wants me to put her in a movie. / Hazel, is this true? / Yeah. It is true. / Not!",
       "characters": [
+        "Tracy",
+        "Kenneth",
         "Hazel"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Hazel denying she came on to Tracy",
-      "punchline": "Using 'not' joke + saying 'pan' instead of 'part' in movie",
-      "craft_total": 6.2,
-      "impact_score": 5.75,
-      "quotability": 5.0,
+      "setup": "Tracy tries to warn Kenneth about Hazel. Hazel is asked directly and confirms \u2014 then adds 'Not!'",
+      "punchline": "'Not!' \u2014 the Borat/90s slang reversal, delivered by Hazel as a sincere denial strategy. It's both an outdated pop culture reference and an absurd non-defense.",
+      "craft_total": 7.55,
+      "impact_score": 7.17,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard malapropism humor with dated 'not' joke structure. Shows character but not particularly clever"
+      "explanation": "'Not!' as a denial strategy is a dated but deliberately dated joke \u2014 Hazel using it sincerely makes her seem more desperate and foolish. Functional rather than exceptional."
     },
     {
-      "index": 78,
-      "text": "Come on, Kenmore washers and dryers, who are you gonna believe here?",
+      "index": 95,
+      "text": "Oh, please, you would love for me to fall asleep on top of you. / Come on, Kenmore washers and dryers, who are you gonna believe here?",
       "characters": [
+        "Tracy",
+        "Hazel"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "The three-way confrontation continues \u2014 Tracy accuses Hazel, she deflects.",
+      "punchline": "'Come on, Kenmore washers and dryers' \u2014 Tracy uses a brand name as a term of address/exasperation, the way someone might say 'Come on, people!' The non-sequitur brand invocation is pure Tracy.",
+      "craft_total": 7.78,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Kenmore washers and dryers' as an address term is quintessential Tracy Jordan \u2014 the completely inappropriate brand-name non-sequitur used as if it were normal speech. High character integration. 'You would love for me to fall asleep on top of you' is also a good Tracy-ism."
+    },
+    {
+      "index": 96,
+      "text": "My best friend. / And my girlfriend. / Well, I always believe you, sir, because you're on television. / And webisodes.",
+      "characters": [
+        "Kenneth",
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Kenneth must choose who to believe \u2014 Tracy or Hazel.",
+      "punchline": "Kenneth believes Tracy because 'you're on television' \u2014 his metric for credibility is TV fame. Tracy's correction: 'And webisodes' \u2014 defending the legitimacy of webisode content with complete seriousness.",
+      "craft_total": 8.09,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'I always believe you because you're on television' is a perfect Kenneth line \u2014 his worldview is entirely TV-mediated. Tracy's indignant defense of webisodes as a legitimate credential is the capper that makes it great. 'And webisodes' is one of the episode's most quotable lines. Strong character integration for both characters simultaneously. Earns 8+."
+    },
+    {
+      "index": 97,
+      "text": "Yesterday you told me our women are queens, and they're always right, which means I should believe Hazel. But that would make you wrong, Mr. Jordan, and you've never been wrong about anything before. / It's a blessing and a purse.",
+      "characters": [
+        "Kenneth",
         "Tracy"
       ],
       "joke_types": [
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Tracy asking Kenneth to choose who to believe",
-      "punchline": "Addressing Kenneth by appliance brand instead of name",
-      "craft_total": 7.7,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Kenneth works through the logical contradiction: Tracy said women are always right, but Tracy (a man) should be believed.",
+      "punchline": "Kenneth's paradox-recognition is itself the setup; Tracy's resolution: 'It's a blessing and a purse' \u2014 a non-sequitur that uses 'purse' where 'curse' should be, creating an accidentally meaningful new idiom.",
+      "craft_total": 8.18,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent Tracy absurdism using appliance brand as nickname. Shows his scattered celebrity brain"
+      "explanation": "'It's a blessing and a purse' is a great Tracy malapropism \u2014 replacing 'curse' with 'purse' creates a new idiom that somehow almost makes sense (a purse is carried; burdens are carried). The misquotation is funnier than the original phrase. High quotability. Kenneth's logic paradox setup is also nicely constructed."
     },
     {
-      "index": 79,
-      "text": "It's a blessing and a purse.",
+      "index": 98,
+      "text": "Unless Hazel is always right, but only because you said so, Mr. Jordan, which means you're right, too. / And both sides being right is like kissing your sister. / A wonderful treat!",
       "characters": [
+        "Kenneth",
         "Tracy"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Kenneth finds a logical resolution to the paradox \u2014 both can be right.",
+      "punchline": "Tracy uses the idiom 'like kissing your sister' (implying something distasteful/awkward). Kenneth completes it with 'A wonderful treat!' \u2014 revealing that for Kenneth, kissing his sister is literally a wonderful treat, either through Southern tradition or something darker.",
+      "craft_total": 8.2,
+      "impact_score": 8.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's finest jokes. The setup \u2014 Tracy uses 'like kissing your sister' as a pejorative \u2014 and Kenneth's completion \u2014 'A wonderful treat!' \u2014 is a perfect dark-subversive punchline. It simultaneously characterizes Kenneth as someone from such a different background that the idiom doesn't register as negative, and lands as a dark implication about Appalachian family dynamics. The innocent delivery is what makes it devastating rather than merely offensive. This earns 8.7+ \u2014 it's the kind of joke that makes rooms gasp and then laugh harder."
+    },
+    {
+      "index": 99,
+      "text": "Bad move, Jordan. We'll see who's still working here in six months. / My hearing is bad because of firecrackers, but we'll see who's still working here in six months. / That's what I just said. / What?",
+      "characters": [
+        "Hazel",
+        "Tracy"
+      ],
+      "joke_types": [
+        "running_gag",
         "character_comedy"
       ],
-      "setup": "Tracy saying he's never wrong",
-      "punchline": "Saying 'purse' instead of 'curse' for being always right",
-      "craft_total": 6.45,
-      "impact_score": 6.25,
+      "setup": "Hazel issues a threat to Tracy.",
+      "punchline": "Tracy repeats her threat back verbatim as if it's his own threat, explaining his deafness from firecrackers. When Liz points out it's what she said, he mishears again with 'What?'",
+      "craft_total": 7.63,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A solid character gag \u2014 Tracy's firecracker-induced hearing loss causing him to repeat others' lines as his own is a good comedic beat. The triple payoff (threaten \u2192 repeat \u2192 'What?') is well-structured. 'Because of firecrackers' is the specific detail that elevates it."
+    },
+    {
+      "index": 100,
+      "text": "Okay, I get it. Sometimes tanking it is the only option. What did you do, fake a sprained ankle to get out of that breast health 5K? No, I did that. I forgot my sports bra, so, ironically -- It doesn't matter, Lemon.",
+      "characters": [
+        "Liz Lemon",
+        "Jack Donaghy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Liz says she understands tanking now",
+      "punchline": "Jack assumes she tanked the breast health 5K with a fake sprained ankle; Liz reveals she legitimately forgot her sports bra and uses 'ironically' \u2014 which Jack cuts off before she can explain",
+      "craft_total": 7.17,
+      "impact_score": 6.5,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Tracy malapropism turning 'curse' into feminine accessory. Character-appropriate word confusion"
+      "explanation": "The joke is layered: Jack assumes the worst (fake injury), Liz reveals something worse (forgot sports bra at a breast health event \u2014 the irony is she's opted out of a breast health event due to breast-related equipment failure), and Jack cuts her off before the full irony lands. The cut-off is the comedy \u2014 we never get the full ironic explanation."
     },
     {
-      "index": 80,
-      "text": "And both sides being right is like kissing your sister. A wonderful treat!",
+      "index": 101,
+      "text": "Sometimes tanking it is the only option. What did you do, fake a sprained ankle to get out of that breast health 5K? / No, I did that. I forgot my sports bra, so, ironically -- / It doesn't matter, Lemon.",
       "characters": [
-        "Kenneth"
+        "Liz",
+        "Jack"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Kenneth trying to resolve Tracy-Hazel conflict logically",
-      "punchline": "Innocent enthusiasm about incestuous comparison",
-      "craft_total": 7.47,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Liz says she understands tanking. Jack asks if she faked a sprained ankle for a charity 5K.",
+      "punchline": "Jack reveals HE faked the sprained ankle. Then Liz says she actually forgot her sports bra and the irony of that situation \u2014 Jack cuts her off before she can finish. The cut-off 'it doesn't matter, Lemon' treats the story as irrelevant.",
+      "craft_total": 7.56,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Kenneth innocence about inappropriate sayings. Dark humor from his enthusiastic misunderstanding"
+      "explanation": "The reversal \u2014 Jack faked the ankle, not Liz \u2014 is a good misdirection. 'I forgot my sports bra, so, ironically\u2014' promises a funny follow-up that Jack deliberately denies us, which is itself a structural joke. The breast health 5K context makes the sports bra story funnier without needing the ending."
     },
     {
-      "index": 81,
-      "text": "I forgot my sports bra, so, ironically --",
+      "index": 102,
+      "text": "Jack, it's 9:30 in the morning. / We're not trying to do a good job here, Lemon.",
+      "characters": [
+        "Liz",
+        "Jack"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Jack offers Liz a drink (implied) to celebrate their partnership.",
+      "punchline": "Liz objects to drinking at 9:30am. Jack's response: 'We're not trying to do a good job here, Lemon.' \u2014 reframing the entire moral framework of their working day as intentional underperformance.",
+      "craft_total": 8.17,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'We're not trying to do a good job here, Lemon' is a highly quotable reframing of professional nihilism. Jack's logic \u2014 the time constraint on drinking only applies when you're trying to succeed \u2014 is perfectly in character. Strong economy, great delivery potential."
+    },
+    {
+      "index": 103,
+      "text": "Let's take this mother down.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Liz explaining she actually hurt herself at breast health 5K",
-      "punchline": "The irony of getting breast injury at breast health event",
-      "craft_total": 6.72,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Jack asks if Liz is in on the plan to tank NBC.",
+      "punchline": "Liz's agreement \u2014 'Let's take this mother down' \u2014 is funny because (a) it's the most badass thing Liz Lemon has ever said, (b) she's talking about destroying her own workplace/home, and (c) the profanity-adjacent phrasing from Liz is completely out of character.",
+      "craft_total": 7.23,
+      "impact_score": 7.0,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Decent ironic humor about injury at health event. Shows Liz's physical incompetence"
+      "explanation": "A good button for the scene. The incongruity of Liz using the tough-guy vernacular is the joke. Works as a season-premiere statement of intent with comic self-awareness."
     },
     {
-      "index": 82,
-      "text": "No! You forgot it could also be an exclamation about a fruit, as in, 'Oh, pear!'",
+      "index": 104,
+      "text": "The extended 'Homonym' game show sequence: 'sent/cent/scent' confusion culminating in 'au pair' being defined as 'Oh, pear!' an exclamation about a fruit.",
       "characters": [
-        "Game show host"
+        "Game show host",
+        "Contestants"
       ],
       "joke_types": [
-        "absurdist",
-        "wordplay_pun"
+        "escalation",
+        "running_gag",
+        "absurdist"
       ],
-      "setup": "Contestant correctly identifying 'au pair' on homonym show",
-      "punchline": "Host revealing ridiculous third interpretation as fruit exclamation",
-      "craft_total": 7.28,
-      "impact_score": 7.5,
-      "quotability": 8.0,
+      "setup": "The Homonym game show returns for its second cutaway, now featuring 'sent.'",
+      "punchline": "The pattern from earlier is confirmed and escalated: every answer is wrong, it's always 'the other one.' The peak absurdity is 'au pair' \u2014 the host insists it has a second meaning: 'Oh, pear!' as an exclamation about a fruit. This is clearly made up and the rules are completely arbitrary.",
+      "craft_total": 8.2,
+      "impact_score": 9.0,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant absurdist game show logic creating impossible homonym through forced fruit exclamation"
+      "is_callback": 1,
+      "explanation": "A strong escalation of the earlier Homonym bit. 'Oh, pear!' as an 'alternate definition' of 'au pair' is inspired because it breaks the homonym premise entirely \u2014 it's not even a real homonym, it's a pun. The host's insistence that 'What you are doing here is not right!' is subverted by his own game's impossible standards. The running gag's final-episode payoff is satisfying. Earns 8+ as a callback because it expands and improves on the original."
     }
   ],
   "air_date": "2012-10-04",

@@ -4,76 +4,96 @@
   "season": 5,
   "episode_number": 23,
   "title": "Respawn",
-  "humor_index": 85.9,
-  "jpm": 2.91,
-  "avg_craft": 7.21,
-  "avg_impact": 7.1,
-  "total_jokes": 67,
-  "war": 77.4,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"escalation\"]",
-  "standout_joke_ids": "[30, 29, 43]",
+  "humor_index": 98.1,
+  "jpm": 4.3,
+  "avg_craft": 7.64,
+  "avg_impact": 7.52,
+  "total_jokes": 99,
+  "war": 156.4,
+  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"irony_sarcasm\"]",
+  "standout_joke_ids": "[33, 51, 34]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "All right, now that the popsicle's melted, we've got ourselves a tongue depressor.",
+      "text": "Doctor uses a melted popsicle as a tongue depressor",
       "characters": [
         "Doctor"
       ],
       "joke_types": [
         "absurdist",
-        "observational"
+        "visual_gag"
       ],
-      "setup": "Medical examination setting, expecting proper medical tools",
-      "punchline": "Doctor improvises medical equipment from melted candy",
-      "craft_total": 6.57,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "A medical appointment is established with the doctor needing a tongue depressor.",
+      "punchline": "The tongue depressor was improvised from a melted popsicle \u2014 implying the doctor ate a popsicle mid-exam and repurposed the stick.",
+      "craft_total": 6.87,
+      "impact_score": 6.67,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever subversion of medical professionalism with absurd improvisation"
+      "explanation": "A tight cold open gag \u2014 the casual matter-of-fact delivery of something absurd (improvised medical equipment from a snack) sets the tone immediately. Good economy; the joke is in the specificity of the detail."
     },
     {
       "index": 2,
-      "text": "I get them from prostitutes.",
+      "text": "I get them when I'm stressed out. / They're nothing to be ashamed of. / I get them from prostitutes.",
       "characters": [
+        "Liz",
         "Doctor"
       ],
       "joke_types": [
-        "dark_subversive",
-        "misdirection"
+        "misdirection",
+        "setup_punchline"
       ],
-      "setup": "Patient mentions cold sores from stress",
-      "punchline": "Doctor casually admits getting them from prostitutes",
-      "craft_total": 6.71,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Liz says she gets cold sores from stress. The doctor offers reassurance.",
+      "punchline": "The doctor's reassurance is undercut by his own confession that he gets them from prostitutes \u2014 revealing a non-judgmental stance born of personal experience rather than clinical compassion.",
+      "craft_total": 7.68,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect deadpan delivery subverts medical authority with shocking overshare"
+      "explanation": "A near-perfect short joke. Three lines, three beats: setup, false comfort, self-incriminating twist. The structure is immaculate \u2014 the doctor's reassurance is genuine AND comes from personal experience with prostitutes, which makes it funnier than a pure non-sequitur. High economy, strong misdirection."
     },
     {
       "index": 3,
-      "text": "Sounds like you could use a little R and R, rum and Ritalin.",
+      "text": "Sounds like you could use a little R and R \u2014 rum and Ritalin.",
       "characters": [
         "Doctor"
       ],
       "joke_types": [
         "wordplay_pun",
-        "dark_subversive"
+        "character_comedy"
       ],
-      "setup": "Standard medical advice of 'rest and relaxation'",
-      "punchline": "Subverted to recommend alcohol and prescription drugs",
-      "craft_total": 7.3,
+      "setup": "Liz describes her stressful few months.",
+      "punchline": "The doctor redefines 'R and R' (rest and relaxation) as 'rum and Ritalin' \u2014 a medically irresponsible but casually delivered prescription.",
+      "craft_total": 7.42,
       "impact_score": 7.33,
       "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant wordplay that maintains the R&R structure while completely subverting medical ethics"
+      "explanation": "A very clean wordplay joke. The expansion of the acronym is unexpected and perfectly wrong \u2014 rum (depressant) plus Ritalin (stimulant) is both medically absurd and darkly specific. High quotability. The doctor-dispensing-bad-advice character is efficiently established."
     },
     {
       "index": 4,
-      "text": "There are four things I want to do this summer, but they're roommates, so it's tricky.",
+      "text": "Gross! (in response to Liz asking for a mouth ointment)",
+      "characters": [
+        "Doctor"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "Liz clarifies she just wants ointment for her cold sores.",
+      "punchline": "The doctor, who just admitted getting cold sores from prostitutes, reacts with disgust at the mundane request.",
+      "craft_total": 6.7,
+      "impact_score": 6.75,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A tight callback beat. The doctor's hypocrisy (disgusted by mouth ointment after disclosing his own more sordid cold sore source) lands because of the contrast established moments earlier."
+    },
+    {
+      "index": 5,
+      "text": "Doctor's four summer goals: 'but they're roommates, so it's tricky.'",
       "characters": [
         "Doctor"
       ],
@@ -81,37 +101,77 @@
         "misdirection",
         "dark_subversive"
       ],
-      "setup": "Patient lists wholesome summer activities",
-      "punchline": "Doctor reveals his four things are people in a sexual context",
-      "craft_total": 7.43,
-      "impact_score": 7.17,
-      "quotability": 6.5,
+      "setup": "Mirroring Liz's four-item summer plan list, the doctor also has four summer plans.",
+      "punchline": "His four items are implied to be women (or people), not activities \u2014 they're roommates, making the situation logistically complicated.",
+      "craft_total": 7.85,
+      "impact_score": 7.83,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect structural parallel that completely subverts wholesome expectations"
+      "is_callback": 1,
+      "explanation": "A structurally elegant callback to Liz's list. The parallelism sets up the expectation of a similar innocent list, then the word 'roommates' reframes the entire thing. Tight, dark, efficient."
     },
     {
-      "index": 5,
-      "text": "That's my brother Randy! Tomorrow he's going to jail for the rest of his life.",
+      "index": 6,
+      "text": "Here's a prescription for your cold sores, and here's a blank one for the weekend.",
       "characters": [
         "Doctor"
       ],
       "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Doctor wraps up the appointment professionally.",
+      "punchline": "He hands Liz a blank prescription \u2014 implying he casually dispenses pre-signed blanks for personal use.",
+      "craft_total": 7.28,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A great button on the incompetent/corrupt doctor character. The structure mirrors legitimate medical practice so closely that the punchline (blank prescription) lands as a perfect escalation of his established moral flexibility."
+    },
+    {
+      "index": 7,
+      "text": "Why aren't you wearing pants? / The other doctor told me to take them off. / Other doctor? That's my brother Randy! Tomorrow he's going to jail for the rest of his life.",
+      "characters": [
+        "Doctor",
+        "Liz"
+      ],
+      "joke_types": [
+        "escalation",
         "absurdist",
         "dark_subversive"
       ],
-      "setup": "Patient confused about pants removal, other doctor mentioned",
-      "punchline": "Casually reveals brother is criminal going to prison",
-      "craft_total": 6.99,
-      "impact_score": 7.17,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "The doctor notices Liz isn't wearing pants and asks why.",
+      "punchline": "She was told to by 'another doctor' \u2014 who turns out to be the real doctor's brother Randy, an unlicensed practitioner headed to jail for life. The doctor's cheerful 'Good one, Randy!' makes it worse.",
+      "craft_total": 7.94,
+      "impact_score": 8.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Absurd casual mention of serious crime fits 30 Rock's style of throwaway darkness"
+      "explanation": "This is the standout joke of the cold open. The escalation is rapid and each beat adds new horror: (1) no pants, (2) another 'doctor' told her to remove them, (3) that man is the real doctor's non-doctor brother, (4) going to jail for life, (5) the doctor responds with cheerful brotherly affection. The 'Good one, Randy!' is a perfect button \u2014 it implies this is not Randy's first pants-related offense and that his brother finds it charming. Very close to the 8.0 anchor in quality."
     },
     {
-      "index": 6,
-      "text": "I know that people are feeling sorry for me because my wife was kidnapped by Kim Jong-il",
+      "index": 8,
+      "text": "You want to go to Taco Bell for lunch? (immediately after learning Randy goes to jail for life)",
+      "characters": [
+        "Doctor"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "The revelation that Randy is going to prison for life is a seemingly significant moment.",
+      "punchline": "The doctor immediately pivots to a mundane Taco Bell lunch invitation \u2014 treating the life sentence as a non-issue.",
+      "craft_total": 7.31,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A tight tag on the Randy joke. The pivot to Taco Bell is perfectly banal. Works because it implies the doctor has fully processed his brother's permanent incarceration and moved on to lunch plans in under two seconds."
+    },
+    {
+      "index": 9,
+      "text": "I know that people are feeling sorry for me because my wife was kidnapped by Kim Jong-il \u2014 but I do not need your pity.",
       "characters": [
         "Jack"
       ],
@@ -119,17 +179,17 @@
         "absurdist",
         "character_comedy"
       ],
-      "setup": "Character addressing workplace sympathy",
-      "punchline": "Reveals absurdly specific and international crisis",
-      "craft_total": 7.67,
-      "impact_score": 7.83,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Jack addresses Liz about the tone people use with him.",
+      "punchline": "The revelation that his wife was kidnapped by Kim Jong-il is delivered as context-setting exposition, not as the punchline \u2014 the absurdity of the situation treated as mundane is the joke.",
+      "craft_total": 7.5,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfectly integrates Jack's character with absurd high-stakes personal drama"
+      "explanation": "30 Rock at its best \u2014 treating an insane premise (Kim Jong-il kidnapping) as unremarkable background information. The joke is entirely in Jack's patrician refusal to let the circumstance define him, even though the circumstance is objectively extraordinary."
     },
     {
-      "index": 7,
+      "index": 10,
       "text": "Hey, I know what you're going through. I once kidnapped a woman.",
       "characters": [
         "Tracy"
@@ -138,56 +198,57 @@
         "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Character offering sympathy for kidnapping situation",
-      "punchline": "Reveals he was the perpetrator, not victim",
-      "craft_total": 7.78,
-      "impact_score": 7.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Someone tries to empathize with Jack about his kidnapped wife.",
+      "punchline": "Tracy's empathy comes from the other side \u2014 he has personally kidnapped a woman.",
+      "craft_total": 8.13,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Tracy Jordan logic - completely misses the point while revealing criminal past"
+      "explanation": "A near-perfect Tracy joke. The character integration is exceptional \u2014 this could only come from Tracy Jordan, whose chaotic past and complete lack of social filters makes this credible within the show's universe. The economy is flawless: six words deliver a complete dark revelation. The attempt at empathy that reveals a far worse personal history is a classic 30 Rock structure executed perfectly."
     },
     {
-      "index": 8,
-      "text": "Last night I sat in front of the TV and ate an entire carton of foie gras.",
+      "index": 11,
+      "text": "Stop talking like that, Lemon. / I'm trying to, but I'm kind of locked in, sweetie.",
       "characters": [
-        "Jack"
+        "Jack",
+        "Liz"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "reaction_beat"
       ],
-      "setup": "Character describing depression eating",
-      "punchline": "Instead of ice cream, he stress-eats expensive delicacy",
-      "craft_total": 7.36,
-      "impact_score": 7.17,
-      "quotability": 7.5,
+      "setup": "Jack tells Liz to stop using the pitying tone. She agrees she's trying.",
+      "punchline": "She admits she's 'locked in' to the condescending sweetie-tone \u2014 the habit has taken over involuntarily.",
+      "craft_total": 7.01,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Jack Donaghy character moment - even his depression is wealthy and sophisticated"
+      "explanation": "A nice character moment \u2014 Liz's self-awareness without self-control is a recurring trait. The 'sweetie' at the end is a good button that confirms she really is stuck."
     },
     {
-      "index": 9,
+      "index": 12,
       "text": "I can hardly drink my morning-shower Scotch.",
       "characters": [
         "Jack"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "deadpan_understatement"
       ],
-      "setup": "Character describing inability to function normally",
-      "punchline": "His normal includes drinking alcohol while showering",
-      "craft_total": 8.04,
-      "impact_score": 8.0,
+      "setup": "Jack describes how badly he's coping with Avery's absence.",
+      "punchline": "His sign of being off his game is that he can barely manage his morning shower Scotch \u2014 a routine that is itself already extravagant and alcoholic.",
+      "craft_total": 8.62,
+      "impact_score": 8.67,
       "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Instantly quotable line that perfectly encapsulates Jack's excessive lifestyle as casual routine"
+      "explanation": "One of the episode's best jokes. 'Morning-shower Scotch' as a concept is both absurdly specific to Jack Donaghy and delivered with complete earnestness \u2014 the joke isn't that he drinks Scotch in the shower, it's that his INABILITY to enjoy this ritual is the metric for how badly he's suffering. The character integration is exceptional: this couldn't come from anyone but Jack. Highly quotable. Close to the 8.0 anchor and arguably above it."
     },
     {
-      "index": 10,
-      "text": "we would go to Strawberry Fields in Central Park and kick hippies' hacky sacks into the bushes",
+      "index": 13,
+      "text": "We would go to Strawberry Fields in Central Park and kick hippies' hacky sacks into the bushes.",
       "characters": [
         "Jack"
       ],
@@ -195,94 +256,96 @@
         "character_comedy",
         "dark_subversive"
       ],
-      "setup": "Romantic memory of time with wife",
-      "punchline": "Their bonding activity was harassing peaceful people",
-      "craft_total": 8.04,
+      "setup": "Jack describes the little things he misses about his relationship with Avery.",
+      "punchline": "Their romantic activity was deliberately antagonizing hippies at a peace memorial.",
+      "craft_total": 8.11,
       "impact_score": 8.0,
       "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant character work showing how Jack and Avery's elitism manifests as casual cruelty"
+      "explanation": "A beautifully specific detail that tells you everything about Jack and Avery's relationship in one image. The romance of the memory is real \u2014 he genuinely misses this \u2014 which makes the activity (targeted harassment of hippies at a John Lennon memorial) even funnier. High character integration. The specificity ('hacky sacks into the bushes') elevates it above a simple 'Jack hates hippies' joke."
     },
     {
-      "index": 11,
-      "text": "Normal is a woman and a woman getting married and having a child.",
+      "index": 14,
+      "text": "Normal? I don't know what normal is anymore. / Normal is a woman and a woman getting married and having a child.",
       "characters": [
-        "Jack"
+        "Jack",
+        "Liz"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Character confused about what normal means",
-      "punchline": "His idea of normal is same-sex marriage (progressive but wrong context)",
-      "craft_total": 6.66,
-      "impact_score": 6.33,
+      "setup": "Jack says he doesn't know what 'normal' is anymore.",
+      "punchline": "Liz's example of 'normal' \u2014 a same-sex couple \u2014 is her genuine answer, which Jack finds baffling.",
+      "craft_total": 6.52,
+      "impact_score": 5.83,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Jack's confusion and privileged perspective but lands as more confused than funny"
+      "explanation": "A decent character-contrast joke \u2014 Jack and Liz's different definitions of normalcy are well-established. Functional but not especially inventive."
     },
     {
-      "index": 12,
-      "text": "Bush is a war criminal! There's so much texting going on these days and no communicating!",
+      "index": 15,
+      "text": "Bush is a war criminal! There's so much texting going on these days and no communicating! / Carbon tax! / Please leave! / That's the spirit!",
       "characters": [
+        "Liz",
         "Jack"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Jack trying to act like a hippie to feel normal",
-      "punchline": "His version of hippie complaints are random political/social grievances",
-      "craft_total": 6.75,
-      "impact_score": 6.5,
+      "setup": "Liz tries to help Jack feel normal by being annoying \u2014 doing the things that would normally irritate him.",
+      "punchline": "Her provocations are generic liberal talking points and millennial-bashing \u2014 and Jack's 'Please leave!' shows it's working, as he snaps back to himself.",
+      "craft_total": 7.36,
+      "impact_score": 7.17,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Jack's attempt to role-play as a hippie shows his complete disconnect from that culture"
+      "explanation": "A smart structural joke \u2014 Liz weaponizing her annoying qualities as therapy. The escalation through the clich\u00e9d talking points is rapid and Jack's recovery ('That's the spirit!') is a good button."
     },
     {
-      "index": 13,
-      "text": "You can't spell 'America' Without w-o-o-I",
+      "index": 16,
+      "text": "The Wool Bowl on ESPN 34, with the lyric 'You can't spell America without W-O-O-L'",
       "characters": [
         "Jenna"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "absurdist"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Patriotic song performance",
-      "punchline": "Forced inclusion of wool in patriotic anthem",
-      "craft_total": 6.61,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Jenna brags about performing at halftime of the 'Wool Bowl.'",
+      "punchline": "The Wool Bowl is on ESPN 34, indicating the extreme niche of the sport/event. Then the halftime lyric \u2014 'You can't spell America without wool' \u2014 is factually wrong (wool is not in 'America').",
+      "craft_total": 7.86,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Weak wordplay but fits Jenna's desperate attempts to make everything about her current gig"
+      "explanation": "A layered absurdist joke with multiple independent components that all land. ESPN 34 is a great specific detail implying infinite cable channel proliferation. The song lyric is the real gem: 'You can't spell America without W-O-O-L' is demonstrably false and that's the entire joke \u2014 Jenna performed this with apparent sincerity. A great piece of 30 Rock nonsense logic."
     },
     {
-      "index": 14,
+      "index": 17,
       "text": "Every year, my aunt sends me a wool sweater for Christmas. We get it, Aunt Alice, you're a sheep.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "observational",
-        "deadpan_understatement"
+        "setup_punchline",
+        "absurdist"
       ],
-      "setup": "Story about relative's predictable gift-giving",
-      "punchline": "Treating aunt like she's literally identifying as a sheep",
-      "craft_total": 6.91,
-      "impact_score": 6.67,
+      "setup": "Liz reacts to Jenna's wool sponsorship news.",
+      "punchline": "Her non-sequitur about Aunt Alice being a sheep \u2014 a statement of bizarre logic (wool = sheep identity) delivered with complete seriousness.",
+      "craft_total": 7.23,
+      "impact_score": 7.0,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sharp, unexpected escalation of gift annoyance to absurd identity assumption"
+      "explanation": "Odd and funny. The leap from 'wool sweater' to 'you're a sheep' is unexpected enough to land. 30 Rock's brand of confident non-sequitur absurdism. Quotable out of context."
     },
     {
-      "index": 15,
-      "text": "Paul and I can finally buy that time-share in Betasten Bos, Amsterdam's premier private sex garden.",
+      "index": 18,
+      "text": "Paul and I can finally buy that time-share in Betasten Bos, Amsterdam's premier private sex garden. There have genetically-altered men there with minotaur heads that chase you through the brambles.",
       "characters": [
         "Jenna"
       ],
@@ -290,322 +353,269 @@
         "absurdist",
         "character_comedy"
       ],
-      "setup": "Character discussing lucrative endorsement deal",
-      "punchline": "Money will fund bizarre sexual tourism investment",
-      "craft_total": 7.72,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Jenna mentions the financial upside of the wool sponsorship.",
+      "punchline": "The dream purchase is a time-share at a sex garden featuring genetically altered minotaur men who chase guests through brambles.",
+      "craft_total": 8.41,
+      "impact_score": 8.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfectly absurd and specific to Jenna's sexual adventurousness and poor financial priorities"
+      "explanation": "One of the episode's standout jokes. The specificity is extraordinary \u2014 not just a sex club, but one with a name ('Betasten Bos'), a location (Amsterdam), an elite designation ('premier'), and a specific attraction involving genetic engineering and classical mythology. The 'brambles' is the detail that pushes it over the edge. Only Jenna could describe this as a romantic aspiration. Exceptional character integration and originality."
     },
     {
-      "index": 16,
-      "text": "There have genetically-altered men there with minotaur heads that chase you through the brambles.",
+      "index": 19,
+      "text": "Okay. Well, good-bye, my closest female friend.",
       "characters": [
-        "Jenna"
+        "Liz"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Jenna has just described a sex garden with minotaur men.",
+      "punchline": "Liz's only response is a formal, slightly detached farewell \u2014 'my closest female friend' \u2014 that acknowledges the relationship without engaging with any of the content.",
+      "craft_total": 7.33,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A perfect reaction beat. The formality of 'my closest female friend' as a term of address is Liz's way of ending the conversation without engaging with the minotaur sex garden details. The joke is in what she doesn't say."
+    },
+    {
+      "index": 20,
+      "text": "Frank, you have a girlfriend. / And Lynn wants me to give up video games 'cause she thinks I need to grow up. / How's this for grown up? Last night, for dinner, I put milk in my Apple Jacks.",
+      "characters": [
+        "Liz",
+        "Frank"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Frank is told he has a girlfriend and should have summer plans.",
+      "punchline": "His proof of maturity is adding milk to Apple Jacks \u2014 a 'grown up' version of the cereal that is still extremely childish.",
+      "craft_total": 8.15,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent Frank joke. The bar he sets for 'grown up' behavior \u2014 adding milk to cereal \u2014 is perfectly calibrated to his arrested development. The joke is in the sincerity with which he presents this as evidence of maturity. Strong character integration."
+    },
+    {
+      "index": 21,
+      "text": "I distracted you, and you died. Game over. / No, I shot my bazooka at the ground to kill myself 'cause Toofer had me cornered. Now I respawn and start over.",
+      "characters": [
+        "Frank",
+        "Toofer"
       ],
       "joke_types": [
         "absurdist",
         "escalation"
       ],
-      "setup": "Already established bizarre sex garden premise",
-      "punchline": "Escalates to mythological genetic modification fantasy",
-      "craft_total": 7.97,
-      "impact_score": 8.17,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "The writers are playing a video game. Frank thinks he's won.",
+      "punchline": "Toofer clarifies he killed himself deliberately to avoid losing \u2014 a strategy that has apparently produced 18 hours of a 0-0-0 score.",
+      "craft_total": 6.88,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Incredibly specific and bizarre escalation that feels both shocking and somehow logical for Jenna"
+      "explanation": "A clever escalating absurdist premise. The self-kill-to-respawn strategy is logically consistent but produces a completely meaningless game state (18 hours, all zeros). Works as a thematic parallel to Liz's own later epiphany about 'respawning.' Good internal logic."
     },
     {
-      "index": 17,
-      "text": "Well, David Eggers and I are designing a new font...",
+      "index": 22,
+      "text": "So you're killing yourself rather than let someone else win? That's why everyone has zero kills and we've been playing for 18 hours.",
+      "characters": [
+        "Frank"
+      ],
+      "joke_types": [
+        "escalation",
+        "absurdist"
+      ],
+      "setup": "The respawning strategy is explained.",
+      "punchline": "The scale of the absurdity: the entire game has been ongoing for 18 hours with a total score of zero, because every player refuses to be beaten.",
+      "craft_total": 7.18,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The 18-hour detail is the payoff that scales the earlier absurdist premise into something epic. Good escalation structure."
+    },
+    {
+      "index": 23,
+      "text": "I'm wearing a diaper, like a baby would.",
       "characters": [
         "Toofer"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
-      ],
-      "setup": "Writer character asked about summer plans",
-      "punchline": "Pretentious literary collaboration on typography",
-      "craft_total": 6.89,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Toofer pretension but predictable for his character type"
-    },
-    {
-      "index": 18,
-      "text": "Last night, for dinner, I put milk in my Apple Jacks.",
-      "characters": [
-        "Frank"
-      ],
-      "joke_types": [
-        "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Character proving his maturity to girlfriend",
-      "punchline": "His version of grown-up behavior is eating cereal properly",
-      "craft_total": 7.33,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "The 18-hour gaming session is revealed.",
+      "punchline": "The logical conclusion of 18 hours of continuous gaming: adult diaper use, described with clinical detachment and the unnecessary clarification 'like a baby would.'",
+      "craft_total": 7.82,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfectly captures Frank's childish perspective on what constitutes adult behavior"
+      "explanation": "The qualifier 'like a baby would' is the comedy. It's unnecessary \u2014 everyone knows what a diaper is \u2014 but its inclusion implies Toofer felt the need to distinguish his diaper use from some other context. The deadpan delivery from Toofer specifically (the most educated, pretentious writer) makes it funnier."
     },
     {
-      "index": 19,
-      "text": "No, I shot my bazooka at the ground to kill myself 'cause Toofer had me cornered.",
+      "index": 24,
+      "text": "Hi, neighbor. I'm Ina Garten. My husband, Jeffrey, is away... / I'm alive!",
       "characters": [
-        "Frank"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Liz thinks Frank died accidentally in game",
-      "punchline": "Frank strategically committed suicide to avoid losing",
-      "craft_total": 7.03,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation of gaming obsession and introduces the respawn concept central to episode"
-    },
-    {
-      "index": 20,
-      "text": "I'm wearing a diaper, like a baby would.",
-      "characters": [
-        "Frank"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Writers have been gaming for 18 hours straight",
-      "punchline": "Frank has abandoned basic human dignity for gaming",
-      "craft_total": 6.15,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Gross-out humor that works for character but not particularly clever"
-    },
-    {
-      "index": 21,
-      "text": "Hi, neighbor. I'm Ina Garten. My husband, Jeffrey, is away, and I've got some bruschetta and a white wine opened.",
-      "characters": [
+        "Ina Garten",
         "Liz"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "absurdist",
+        "reaction_beat"
       ],
-      "setup": "Liz fantasizing about her Hamptons vacation",
-      "punchline": "Dreams of being approached by Food Network celebrity",
-      "craft_total": 7.0,
-      "impact_score": 7.0,
+      "setup": "Liz arrives at her Hamptons rental and a neighbor appears at the door.",
+      "punchline": "The neighbor is literally Ina Garten (Barefoot Contessa), who makes a domestic social call. Liz's response is an existential 'I'm alive!' \u2014 not a greeting but a declaration of relief at the vacation starting.",
+      "craft_total": 7.42,
+      "impact_score": 7.5,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Specific pop culture reference that captures Liz's domestic fantasy life"
+      "explanation": "A celebrity cameo used effectively \u2014 Ina Garten's warm food-and-hospitality persona is deployed as a fantasy of relaxation, and Liz's 'I'm alive!' is an emotionally honest but contextually absurd response to being greeted by a neighbor."
     },
     {
-      "index": 22,
-      "text": "committing a hate crime against what the city is now claiming was a Jewish tree",
+      "index": 25,
+      "text": "All I have left is to pay the fine that I incurred for committing a hate crime against what the city is now claiming was a Jewish tree.",
       "characters": [
-        "Jack"
+        "Liz"
       ],
       "joke_types": [
         "absurdist",
         "dark_subversive"
       ],
-      "setup": "Character casually mentioning legal troubles",
-      "punchline": "Absurd hate crime charges against plant with religious identity",
-      "craft_total": 7.87,
-      "impact_score": 8.33,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliantly absurd concept that satirizes both hate crime laws and religious persecution"
-    },
-    {
-      "index": 23,
-      "text": "I was the face of Clinique, a French-Canadian anal-rejuvenation clinic",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Jenna mentioning past endorsement for cosmetics brand",
-      "punchline": "Reveals it was actually a sexual medical procedure clinic",
-      "craft_total": 7.84,
-      "impact_score": 7.67,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect misdirection that plays on brand name recognition while revealing Jenna's desperate career"
-    },
-    {
-      "index": 24,
-      "text": "and I was the feet of FilthyLittleFeet.Com",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Already established inappropriate past endorsements",
-      "punchline": "Escalates to fetish website involvement",
-      "craft_total": 7.22,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation showing Jenna's career desperation, though predictable direction"
-    },
-    {
-      "index": 25,
-      "text": "Paul is a gender-dysmorphic bigenitalian pansexualle",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Explaining Paul's identity to conservative wool executive",
-      "punchline": "Over-complicated sexual identity description",
-      "craft_total": 6.63,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "String of made-up sexual terms that's more absurd than funny"
-    },
-    {
-      "index": 26,
-      "text": "love, warmth, chafed skin",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "escalation",
-        "misdirection"
-      ],
-      "setup": "Listing romantic qualities wool represents",
-      "punchline": "Ends with uncomfortable physical side effect",
-      "craft_total": 7.18,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good structure building to unexpected uncomfortable detail"
-    },
-    {
-      "index": 27,
-      "text": "whose parents were killed in front of her while an episode of 'Three's Company' was...",
-      "characters": [
-        "Eugene Gremby"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "absurdist"
-      ],
-      "setup": "Warning about wife's traumatic past",
-      "punchline": "Trauma specifically connected to innocent sitcom",
-      "craft_total": 7.27,
-      "impact_score": 7.33,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark humor connecting innocent TV to trauma, very 30 Rock style"
-    },
-    {
-      "index": 28,
-      "text": "I know your wife was kidnapped by some convenience-store owners",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Kenneth offering sympathy about Jack's situation",
-      "punchline": "Completely wrong understanding of North Korea/Kim Jong-il",
-      "craft_total": 7.4,
-      "impact_score": 7.25,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Kenneth naivety reducing international dictator to local business owner"
-    },
-    {
-      "index": 29,
-      "text": "Mumps, Hill People attacks, cave collapses... both business and residential",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Kenneth explaining how people lose spouses in his hometown",
-      "punchline": "Escalates from disease to feudal violence to specific cave distinctions",
-      "craft_total": 8.31,
+      "setup": "Liz wraps up her pre-vacation tasks.",
+      "punchline": "Among her remaining tasks: a hate crime fine against a tree \u2014 specifically a tree the city retroactively declared Jewish.",
+      "craft_total": 8.01,
       "impact_score": 8.17,
       "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant escalation revealing Kenneth's absurd rural background with perfect specificity"
+      "explanation": "A layered absurdist joke delivered as casual exposition. 'Jewish tree' is delightfully specific \u2014 the joke requires the city to have (a) a hate crime statute covering trees, and (b) the administrative capacity to assign religious identity to flora. The specificity and delivery make this a standout line. Highly quotable."
+    },
+    {
+      "index": 26,
+      "text": "Lutz, what are you doing? / Don't look at me!",
+      "characters": [
+        "Liz",
+        "Lutz"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "visual_gag"
+      ],
+      "setup": "Liz is in the middle of a goodbye.",
+      "punchline": "Lutz is doing something embarrassing and shameful enough that he yells 'Don't look at me!' \u2014 the audience doesn't see what, which makes it funnier.",
+      "craft_total": 6.39,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick Lutz gag relying on implied visual comedy. Works on the strength of Lutz's established pathetic-but-unknowable quality. Brief and functional."
+    },
+    {
+      "index": 27,
+      "text": "In the past, I was the face of Clinique, a French-Canadian anal-rejuvenation clinic, and I was the feet of FilthyLittleFeet.com.",
+      "characters": [
+        "Jenna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Jenna lists her past brand endorsements to establish credentials.",
+      "punchline": "Her past clients include: Clinique (the cosmetics brand, but she means a French-Canadian anal clinic of the same name), and a website called FilthyLittleFeet.com for which she modeled her feet.",
+      "craft_total": 8.32,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The Clinique joke is expertly constructed \u2014 the name collision between the real cosmetics brand and the fake anal-rejuvenation clinic is the setup, 'French-Canadian' is the perfect weird modifier. Then the escalation to 'feet of FilthyLittleFeet.com' adds a second layer. The distinction between 'face' and 'feet' in modeling credits is a beautiful structural detail. Very Jenna."
+    },
+    {
+      "index": 28,
+      "text": "Paul is a gender-dysmorphic bigenitalian pansexualle.",
+      "characters": [
+        "Jenna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "The Wool Council rep asks if Paul is a cross-dresser.",
+      "punchline": "Jenna insists 'goodness, no!' and offers a more precise label that is so elaborate it barely qualifies as a recognized term.",
+      "craft_total": 8.07,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The made-up pseudo-clinical compound term 'gender-dysmorphic bigenitalian pansexualle' is a great bit of wordplay and absurdist character comedy. The French-inflected spelling of 'pansexualle' and 'bigenitalian' as a word are both gems. Jenna using it to correct the 'cross-dresser' label \u2014 indignantly \u2014 is character-perfect."
+    },
+    {
+      "index": 29,
+      "text": "Our relationship is everything that wool is about... love, warmth, chafed skin.",
+      "characters": [
+        "Jenna"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Jenna sells their relationship to the Wool Council using the fabric's positive qualities.",
+      "punchline": "After 'love' and 'warmth,' the list ends with 'chafed skin' \u2014 an honestly accurate but unflattering property of wool.",
+      "craft_total": 7.91,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A perfect rule-of-three joke with a list structure. The third item ('chafed skin') is genuinely funny because it's TRUE about wool \u2014 making it simultaneously a product criticism and an accidentally honest relationship metaphor. Good economy."
     },
     {
       "index": 30,
-      "text": "I like to replace the Union-soldier meat with boiled potatoes",
+      "text": "No high jinks, no farce \u2014 not just for the sake of your relationship with the National Wool Council, but for the sake of my wife, whose parents were killed in front of her while an episode of Three's Company was... You know what? I'll let her tell the story at dinner.",
       "characters": [
-        "Kenneth"
+        "Eugene"
       ],
       "joke_types": [
+        "setup_punchline",
         "dark_subversive",
-        "character_comedy"
+        "misdirection"
       ],
-      "setup": "Kenneth describing family recipe modification",
-      "punchline": "Casually mentions cannibalistic Civil War ingredient",
-      "craft_total": 8.41,
-      "impact_score": 8.33,
-      "quotability": 9.0,
+      "setup": "Eugene warns Jenna the dinner must be normal because his wife had a traumatic experience.",
+      "punchline": "He begins to reveal his wife's parents were murdered during Three's Company \u2014 connecting a traumatic death to a classic sitcom farce \u2014 and then stops himself to let the wife tell the full story, which we never get.",
+      "craft_total": 7.73,
+      "impact_score": 7.83,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Incredibly dark throwaway line delivered with Kenneth's innocent cheerfulness - perfect contrast"
+      "explanation": "A brilliantly structured joke where the comedy escalates in layers: (1) he wants a normal dinner, (2) his reason involves a traumatic family murder, (3) said murder occurred during a farce-based sitcom \u2014 making it doubly ironic that he's worried about 'farce' at dinner. The choice to cut off before we get the full story is perfect restraint \u2014 the imagination fills in something funnier than any script could provide."
     },
     {
       "index": 31,
-      "text": "You two have similar-shaped buttocks",
+      "text": "Wool-come, Jenna.",
       "characters": [
-        "Jack"
+        "Wool Council Rep"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "wordplay_pun"
       ],
-      "setup": "Jack explaining why Kenneth should sit in Avery's chair",
-      "punchline": "Inappropriate physical comparison with his missing wife",
-      "craft_total": 6.7,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "Someone opens the door for Jenna.",
+      "punchline": "A 'welcome' pun replacing the W with 'Wool.'",
+      "craft_total": 5.0,
+      "impact_score": 4.67,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Appropriately uncomfortable for Jack's grief state but not particularly clever"
+      "explanation": "A weak pun \u2014 the lowest-effort form of wordplay. The only 30 Rock bonus is that it's delivered without self-congratulation, making it land as an embarrassing dad-joke rather than a winking pun. Still, there's nothing clever about swapping one W-word for another."
     },
     {
       "index": 32,
-      "text": "Deer God, thank you for this venison. Onion God, thank you for these onions. Carrot God, thank you for the carrots.",
+      "text": "I know your wife was kidnapped by some convenience-store owners...",
       "characters": [
         "Kenneth"
       ],
@@ -613,17 +623,154 @@
         "absurdist",
         "character_comedy"
       ],
-      "setup": "Kenneth saying grace before meal",
-      "punchline": "Polytheistic thanksgiving to individual food gods",
-      "craft_total": 8.17,
-      "impact_score": 8.0,
-      "quotability": 8.0,
+      "setup": "Kenneth tries to empathize with Jack about his missing wife.",
+      "punchline": "Kenneth has fundamentally misunderstood the geopolitical situation \u2014 reducing Kim Jong-il to 'convenience-store owners' \u2014 a detail that reflects Kenneth's rural Georgia worldview.",
+      "craft_total": 7.94,
+      "impact_score": 7.75,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant Kenneth religious confusion creating systematic absurdity with perfect logic"
+      "is_callback": 1,
+      "explanation": "A masterful Kenneth joke. His misidentification of Kim Jong-il as 'convenience-store owners' is both a commentary on his isolation from global current events AND an unfortunately recognizable stereotype. The character integration is exceptional \u2014 this only works because Kenneth is an unreliable interpreter of the wider world. One of the stronger jokes of the episode."
     },
     {
       "index": 33,
+      "text": "Back in Stone Mountain, people lose their spouses all the time. Mumps, Hill People attacks, cave collapses... both business and residential.",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Kenneth contextualizes Jack's loss using his rural hometown experience.",
+      "punchline": "The causes of spousal death in Stone Mountain include: mumps (archaic), 'Hill People attacks' (implies an ongoing tribal conflict), and 'cave collapses \u2014 both business and residential' (implies caves are a primary form of commerce and housing).",
+      "craft_total": 8.88,
+      "impact_score": 9.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The standout joke of the episode. The escalating list of Stone Mountain causes of death is perfectly constructed: mumps (medieval), Hill People attacks (implies an ongoing unresolved tribal conflict), then 'cave collapses' \u2014 and then the devastating parenthetical 'both business and residential' implying caves serve as commercial real estate. Each element builds on the previous, and the list form creates a rhythm that the final detail perfectly breaks. The joke does exceptional world-building in under 15 words. Approaches the highest anchor in quality."
+    },
+    {
+      "index": 34,
+      "text": "It's an old Parcell family recipe. But I like to replace the Union-soldier meat with boiled potatoes.",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Kenneth describes a home-cooked meal he's made using a family recipe.",
+      "punchline": "The original recipe called for Union soldier meat. Kenneth has modernized it by substituting potatoes \u2014 treating the source of the original protein as a casually noted historical detail.",
+      "craft_total": 8.81,
+      "impact_score": 9.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "An extraordinary Kenneth joke. The implication that the Parcell family historically ate Union soldiers \u2014 and that this is a normalized substitutable ingredient \u2014 is dark, specific, historically flavored, and completely in character. The word 'replace' is perfect: Kenneth frames this as a casual dietary preference, not a moral reckoning with his family's cannibalistic Civil War history. One of the episode's best."
+    },
+    {
+      "index": 35,
+      "text": "That was her chair. / Oh, I'm sorry. / No, please sit. You two have similar-shaped buttocks.",
+      "characters": [
+        "Jack",
+        "Kenneth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "awkward_silence"
+      ],
+      "setup": "Kenneth accidentally sits in Avery's chair. Jack says it was hers. Kenneth apologizes and moves to get up.",
+      "punchline": "Jack tells him to stay \u2014 and his justification is that Kenneth has a similar butt shape to Avery.",
+      "craft_total": 8.08,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A perfect cringe beat. Jack's grief is expressing itself in increasingly strange ways, and the buttocks comparison is an accidentally intimate detail that reveals how far he's sliding. The discomfort is the comedy. The word 'similar-shaped' is funnier than 'same' \u2014 it implies careful comparative analysis."
+    },
+    {
+      "index": 36,
+      "text": "Deer God, thank you for this venison.",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Kenneth says grace before the meal.",
+      "punchline": "He addresses a 'Deer God' \u2014 a pun on 'Dear God' \u2014 when thanking for venison (deer meat), implying he worships a species-specific deity.",
+      "craft_total": 8.22,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A tight pun elevated by its context \u2014 Kenneth praying to a 'Deer God' while eating deer is both a pun and potentially a literal theological position for Kenneth. The joke is economical and the grace continues with separate gods for each vegetable, which builds perfectly."
+    },
+    {
+      "index": 37,
+      "text": "Onion God, thank you for these onions. Carrot God, thank you for the carrots.",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "escalation",
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Kenneth's prayer began with 'Deer God' for venison.",
+      "punchline": "He prays to individual gods for each ingredient \u2014 a polytheistic grace that suggests he worships a pantheon organized by vegetable type.",
+      "craft_total": 8.03,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The escalation of the prayer joke is where it fully lands. The repetition of the format across multiple ingredients commits to a bizarre theological worldview where Kenneth has a separate deity for every food item. The callback structure and the deadpan repetition make this funnier than the original 'Deer God' alone."
+    },
+    {
+      "index": 38,
+      "text": "Spanish for Older Women, Lesson 12, Emergencies. / Disaster approaching. Desastre inminente.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Liz is on vacation trying to learn Spanish. We see/hear her study materials.",
+      "punchline": "The lesson she's on is Lesson 12 (implying she's been at it a while) and it's specifically 'Emergencies' \u2014 and the example phrase 'Disaster approaching' is immediately followed by a golf ball hitting her.",
+      "craft_total": 8.1,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A beautifully timed structural joke. The course title ('Spanish for Older Women') and lesson number (12) are already funny as background details. But the lesson topic ('Emergencies') directly predicting the incoming golf ball is perfect comedic irony \u2014 the audio cue 'Disaster approaching / Desastre inminente' is literally prescient. This is sharp sitcom writing."
+    },
+    {
+      "index": 39,
+      "text": "Fore! / Oh, my God! Liz? It's Tracy, from work!",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "setup_punchline"
+      ],
+      "setup": "Liz's relaxing vacation is interrupted by a golf ball.",
+      "punchline": "The golfer is Tracy \u2014 her chaotic coworker who has apparently bought property nearby.",
+      "craft_total": 7.54,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Tracy's 'It's Tracy, from work!' self-identification to someone who obviously knows him is a perfectly useless introduction that reveals his social incompetence. Solid but the joke mostly depends on the physical setup."
+    },
+    {
+      "index": 40,
       "text": "I just bought everything around this house. It's supposed to be a nice area, except for the 'new element' everyone keeps talking about.",
       "characters": [
         "Tracy"
@@ -632,18 +779,18 @@
         "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Tracy explaining his real estate purchases",
-      "punchline": "He doesn't realize he IS the 'new element' people complain about",
-      "craft_total": 7.18,
-      "impact_score": 7.17,
+      "setup": "Tracy explains how he ended up as Liz's neighbor.",
+      "punchline": "He is the 'new element' everyone is worried about \u2014 he's bought surrounding properties without realizing (or caring) that he himself is the disruption.",
+      "craft_total": 7.81,
+      "impact_score": 7.83,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character obliviousness about his own disruptive impact on neighborhoods"
+      "explanation": "A clever dramatic irony joke \u2014 the audience immediately understands Tracy IS the new element, and his obliviousness to this while citing it as a concern is a great character beat. 'New element' as a coded phrase also carries an undercurrent the show doesn't shy away from."
     },
     {
-      "index": 34,
-      "text": "I got a long night of shooting guns in the air ahead of me",
+      "index": 41,
+      "text": "Look, I got a long night of shooting guns in the air ahead of me. Do you mind if I take a nap here?",
       "characters": [
         "Tracy"
       ],
@@ -651,208 +798,286 @@
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Tracy casually mentioning evening plans",
-      "punchline": "Dangerous and illegal activity treated as routine",
-      "craft_total": 6.58,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "Tracy describes his plans for the evening.",
+      "punchline": "His plan (shooting guns in the air all night) requires a pre-emptive nap at Liz's house \u2014 the routine is presented as a normal scheduling consideration.",
+      "craft_total": 7.6,
+      "impact_score": 7.33,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Tracy casual mention of dangerous behavior as normal routine"
+      "explanation": "Tracy treating celebratory gunfire as an exhausting nighttime obligation that requires energy management is perfectly in character. The casualness of 'you mind if I take a nap here?' as a corollary to 'I'm going to shoot guns all night' is a great structural juxtaposition."
     },
     {
-      "index": 35,
+      "index": 42,
       "text": "If I start screaming in my sleep, do not wake me up. I will attack you.",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Tracy asking to nap at Liz's place",
-      "punchline": "Warning about violent sleep disturbances",
-      "craft_total": 6.94,
+      "setup": "Tracy is settling in to nap at Liz's house.",
+      "punchline": "A practical warning delivered as polite houseguest protocol \u2014 if he screams, it is less dangerous to leave him.",
+      "craft_total": 7.4,
       "impact_score": 6.83,
-      "quotability": 6.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Characteristic Tracy mental health issues delivered as casual warning"
+      "explanation": "A quick and efficient Tracy line. The concern isn't whether he'll be okay \u2014 it's the danger he poses to others if disturbed. The deadpan practicality is the joke."
     },
     {
-      "index": 36,
+      "index": 43,
       "text": "Wake me up! Free me from this!",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
-        "callback",
-        "escalation"
+        "escalation",
+        "physical_slapstick"
       ],
-      "setup": "Previous warning not to wake him from nightmares",
-      "punchline": "Immediately contradicts himself while having nightmare",
-      "craft_total": 6.8,
-      "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Tracy immediately warned Liz not to wake him up or he would attack.",
+      "punchline": "Seconds after falling asleep, he immediately starts screaming to be freed \u2014 making the prior warning moot and suggesting his sleep terrors are instantaneous.",
+      "craft_total": 8.13,
+      "impact_score": 8.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Quick payoff to setup but predictable contradiction"
+      "explanation": "A near-perfect callback and escalation. The fact that Tracy immediately contradicts his own warning by immediately screaming is a great structural payoff. The desperation of 'Free me from this!' is funnier than a simple scream. Tight, fast, effective."
     },
     {
-      "index": 37,
-      "text": "It was nice to hear a woman's laugh in the house again",
+      "index": 44,
+      "text": "There's a lot of drawings of Ms. Maroney eating celery that men are giving to her with their hips.",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Kenneth explains why he's busy spring cleaning the studio.",
+      "punchline": "Among the items requiring cleaning: erotic fan art of Jenna \u2014 described by Kenneth with complete innocence as 'drawings men are giving to her with their hips.'",
+      "craft_total": 8.54,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. The euphemism 'giving to her with their hips' is a Kenneth-specific construction \u2014 he clearly understands what he's describing but cannot or will not name it directly. The specificity of 'eating celery' as the subject of the erotic art adds an extra absurd layer. This is exceptional character-dependent comedy: the joke does not work without Kenneth's particular voice."
+    },
+    {
+      "index": 45,
+      "text": "My house is full of white cockroaches.",
       "characters": [
         "Jack"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "visual_gag"
       ],
-      "setup": "Jack thanking Kenneth for dinner",
-      "punchline": "Treating Kenneth as feminine replacement for his wife",
-      "craft_total": 6.95,
-      "impact_score": 6.75,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Jack's grief making him project gender onto Kenneth - uncomfortable but fits character"
-    },
-    {
-      "index": 38,
-      "text": "There's a lot of drawings of Ms. Maroney eating celery that men are giving to her with their hips",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Kenneth explaining why he can't have dinner again",
-      "punchline": "Innocent description of obviously sexual graffiti",
-      "craft_total": 7.66,
-      "impact_score": 7.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Kenneth innocence describing obviously sexual content in completely naive terms"
-    },
-    {
-      "index": 39,
-      "text": "My house is full of white cockroaches",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Jack complaining about house full of memories",
-      "punchline": "Kenneth's house has different but worse problems",
-      "craft_total": 7.41,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfectly timed understated response that reveals Kenneth's terrible living conditions"
-    },
-    {
-      "index": 40,
-      "text": "I got you an early anniversary present. It's a new leash for when I walk you through the park like a dog.",
-      "characters": [
-        "Paul"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "dark_subversive"
-      ],
-      "setup": "Romantic gesture between partners",
-      "punchline": "Gift is for humiliating public sexual roleplay",
-      "craft_total": 7.07,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Establishes Paul and Jenna's extreme sexual dynamic that creates main conflict"
-    },
-    {
-      "index": 41,
-      "text": "I'll cancel the sitter for tonight, tell him he won't need to come sit on us after all",
-      "characters": [
-        "Paul"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Paul mentioning canceling a sitter",
-      "punchline": "Sitter's job is sexual, not childcare",
-      "craft_total": 7.65,
-      "impact_score": 7.25,
+      "setup": "Jack's talking-head style comment on his situation at home.",
+      "punchline": "The 'white cockroaches' are presumably Kenneth's family members who have been brought in to clean \u2014 Jack describes them in the most alienating possible terms.",
+      "craft_total": 6.87,
+      "impact_score": 6.33,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirection playing on normal domestic language for sexual arrangements"
+      "explanation": "A concise Jack Donaghy image \u2014 his complete inability to relate to working-class people manifests as describing Kenneth's extended family as 'white cockroaches.' The matter-of-fact delivery is the joke."
     },
     {
-      "index": 42,
-      "text": "Oh, you've just made a very dangerous enemy, Kenneth",
+      "index": 46,
+      "text": "I got you an early anniversary present. It's a new leash for when I walk you through the park like a dog. Weather's supposed to be nice and muddy tomorrow.",
       "characters": [
-        "Jonathan"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Kenneth taking over Jonathan's cleaning duties",
-      "punchline": "Jonathan treats workplace rivalry as serious threat",
-      "craft_total": 6.38,
-      "impact_score": 6.25,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment for Jonathan's dramatic personality"
-    },
-    {
-      "index": 43,
-      "text": "Can I borrow a cup of sugar? I'm trying to get a hummingbird to drink out of my penis",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Normal neighborly request",
-      "punchline": "Sugar is for bizarre sexual/animal interaction",
-      "craft_total": 8.18,
-      "impact_score": 8.17,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Tracy line - starts normal then goes completely insane with perfect logic"
-    },
-    {
-      "index": 44,
-      "text": "How many times have I come over and painted your apartment? Three. And by the way, stop doing that.",
-      "characters": [
-        "Tracy",
-        "Liz"
+        "Paul"
       ],
       "joke_types": [
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Tracy listing things he's done for Liz",
-      "punchline": "Liz reveals she never wanted him to paint her apartment",
-      "craft_total": 7.44,
+      "setup": "Paul gives Jenna an anniversary gift.",
+      "punchline": "The gift is a leash \u2014 for Jenna to be walked like a dog. Paul has clearly thought through the logistics (muddy weather is ideal) and presents it with romantic enthusiasm.",
+      "craft_total": 7.51,
       "impact_score": 7.0,
-      "quotability": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good reveal about Tracy's unwanted 'help' and Liz's inability to stop him"
+      "explanation": "A Paul-and-Jenna relationship joke that establishes the dynamic \u2014 their mutual embrace of unusual practices, delivered with total sincerity. The weather logistics detail is what elevates it."
     },
     {
-      "index": 45,
+      "index": 47,
+      "text": "I hate to be the stereotypical man, but this is my home, and I want to wear this blouse.",
+      "characters": [
+        "Paul"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Jenna asks Paul to change his outfit before the conservative dinner guests arrive.",
+      "punchline": "Paul invokes 'I hate to be the stereotypical man' \u2014 a phrase typically used to defend masculine domestic privilege \u2014 to defend his right to wear a blouse.",
+      "craft_total": 7.84,
+      "impact_score": 7.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "An exceptional joke. The structure is perfect: a conventionally masculine complaint ('I hate to be the stereotypical man, but this is my home') set up to deliver a conventionally masculine punchline \u2014 then subverted by 'I want to wear this blouse.' It works on multiple levels simultaneously: gender commentary, character comedy, and a genuinely clever subversion of the familiar 'man of the house' trope. One of the highest-quality jokes in the episode."
+    },
+    {
+      "index": 48,
+      "text": "I'll cancel the sitter for tonight, tell him he won't need to come sit on us after all.",
+      "characters": [
+        "Paul"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "After agreeing to change, Paul mentions canceling the evening's plans.",
+      "punchline": "The 'sitter' they hired is a person who sits ON them \u2014 not a babysitter but a participant in a sitting fetish arrangement.",
+      "craft_total": 8.19,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A well-constructed misdirection. The word 'sitter' primes the audience for a babysitting reference (they don't have children, but it's the default assumption). The reframe as someone hired to sit on them is both coherent within the Paul-and-Jenna universe and a clean structural payoff."
+    },
+    {
+      "index": 49,
+      "text": "Oh, you've just made a very dangerous enemy, Kenneth.",
+      "characters": [
+        "Jonathan"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Kenneth has been spending time with Jack, edging out Jonathan's role.",
+      "punchline": "Jonathan \u2014 Jack's assistant, a character defined by being slightly pathetic \u2014 dramatically declares himself a 'very dangerous enemy.'",
+      "craft_total": 6.99,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A solid Jonathan character joke \u2014 the menace is undercut by the source. Works because of Jonathan's established jealousy over Jack's attention."
+    },
+    {
+      "index": 50,
+      "text": "What are you doing? That's my job. / Jonathan volunteered to clean up so you could come over again tonight, right, Jonathan?",
+      "characters": [
+        "Jonathan",
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jonathan objects to Kenneth cleaning.",
+      "punchline": "Jack immediately conscripts Jonathan into the scheme \u2014 framing Jonathan's objection as his having 'volunteered' to do the very thing he was protesting.",
+      "craft_total": 7.62,
+      "impact_score": 7.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jack's casual power play, weaponizing Jonathan's protest against him. A solid workplace comedy beat."
+    },
+    {
+      "index": 51,
+      "text": "Can I borrow a cup of sugar? I'm trying to get a hummingbird to drink out of my penis.",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "misdirection",
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Tracy knocks on Liz's door with what sounds like a normal neighbor request.",
+      "punchline": "The sugar request is for an extremely specific purpose: attracting a hummingbird to his genitals.",
+      "craft_total": 8.66,
+      "impact_score": 9.17,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A near-perfect 30 Rock joke. The 'borrow a cup of sugar' setup is the most mundane neighbor-comedy clich\u00e9 possible, making the punchline maximally dissonant. 'I'm trying to get a hummingbird to drink out of my penis' is traceable in logic (hummingbirds drink sugar water) while being completely insane. The internal logic makes it funnier than pure randomness. One of the episode's top three jokes."
+    },
+    {
+      "index": 52,
+      "text": "I give up. Of course I'm not allowed to be a human being.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Tracy's presence has ruined Liz's vacation plans.",
+      "punchline": "Liz's fatalistic self-pity is the joke \u2014 'not allowed to be a human being' is a characteristically Liz Lemon over-dramatization of a manageable inconvenience.",
+      "craft_total": 7.43,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional character comedy that relies on Liz's established self-pity patterns. Not fresh enough to score highly."
+    },
+    {
+      "index": 53,
+      "text": "I don't think it will affect my behavior next season.",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "character_comedy"
+      ],
+      "setup": "Liz and Tracy are arguing about whether they're friends.",
+      "punchline": "Tracy threatens that their friendship status won't affect his 'behavior next season' \u2014 breaking the fourth wall by acknowledging they're characters on a TV show with seasons.",
+      "craft_total": 7.81,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "30 Rock's meta-referential mode is deployed cleanly here. Tracy's non-sequitur fourth wall break is funny because it (a) reframes their friendship negotiation as a contractual matter, and (b) is the kind of thing only Tracy Jordan would say in this context. Good economy."
+    },
+    {
+      "index": 54,
+      "text": "The sad woman has been trapped by the idiot. / La mujer triste ha sido atra...",
+      "characters": [
+        "Spanish Audio",
+        "Liz"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "running_gag"
+      ],
+      "setup": "Liz's Spanish lesson audio continues in the background.",
+      "punchline": "The lesson phrases now describe exactly what's happening to Liz \u2014 'the sad woman has been trapped by the idiot' \u2014 a perfectly prescient translation exercise.",
+      "craft_total": 8.62,
+      "impact_score": 8.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A superb running gag payoff. The Spanish lesson has now become a real-time commentary on Liz's situation \u2014 'the sad woman has been trapped by the idiot' is both a Spanish lesson sentence and an accurate plot summary. The structure of cutting off mid-translation ('ha sido atra...') as Liz capitulates is a perfect button. One of the strongest structural jokes in the episode."
+    },
+    {
+      "index": 55,
+      "text": "Since you've just been staring at me like that for the last 20 minutes... I'm gonna scoot on out of here.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Kenneth has been sitting in silence with Jack for 20 minutes as Jack stares at him.",
+      "punchline": "Kenneth's solution to being silently stared at for 20 minutes is a polite 'I'm gonna scoot on out of here' \u2014 the delayed underreaction is the joke.",
+      "craft_total": 7.43,
+      "impact_score": 7.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A good cringe beat \u2014 the 20 minutes of staring implies a deeply uncomfortable silence that Kenneth endured politely before announcing his departure. The 'scoot on out' phrasing is very Kenneth."
+    },
+    {
+      "index": 56,
       "text": "Don't go, Avery. I mean, Kenneth.",
       "characters": [
         "Jack"
@@ -861,188 +1086,484 @@
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Jack asking Kenneth to stay longer",
-      "punchline": "Accidentally calls Kenneth by his wife's name",
-      "craft_total": 7.36,
+      "setup": "Jack asks Kenneth to stay.",
+      "punchline": "He calls Kenneth 'Avery' before correcting himself \u2014 revealing his grief-induced confusion is escalating.",
+      "craft_total": 7.45,
       "impact_score": 7.25,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clear sign of Jack's mental state and growing dependence on Kenneth as replacement"
+      "explanation": "A well-timed slip that efficiently advances the Jack-grief storyline while being darkly funny. The self-correction ('I mean, Kenneth') is both more and less reassuring than no correction at all."
     },
     {
-      "index": 46,
-      "text": "Put on these earrings",
+      "index": 57,
+      "text": "Put on these earrings.",
       "characters": [
         "Jack"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "escalation"
       ],
-      "setup": "Jack wanting to recreate evening conversations with Avery",
-      "punchline": "Forces Kenneth to wear feminine accessories",
-      "craft_total": 6.93,
-      "impact_score": 7.17,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Shows Jack's escalating inappropriate behavior but not particularly funny"
+      "setup": "Kenneth tries to empathize about Jack missing Avery.",
+      "punchline": "Jack's response: hand Kenneth earrings to wear \u2014 the Avery substitution is escalating rapidly.",
+      "craft_total": 8.26,
+      "impact_score": 8.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfectly brief escalation. Three words \u2014 'Put on these earrings' \u2014 is the entire joke. The economy is exceptional. After the slip (calling Kenneth 'Avery'), this confirms Jack is actively pursuing the substitution. The darkness of it makes it funny, not sad, because it's so swift."
     },
     {
-      "index": 47,
-      "text": "I am in the restaurant business, and I really love... golf playing",
+      "index": 58,
+      "text": "Jack and Kenneth role-play a domestic evening \u2014 Kenneth in earrings, telling Jack about his 'day' including a 'soft yes from Jonathan about my birthday party' and an 'uncomfortable dinner.'",
+      "characters": [
+        "Jack",
+        "Kenneth"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Jack has dressed Kenneth in Avery's earrings and is having him simulate domestic conversation.",
+      "punchline": "Kenneth plays along, reporting his day \u2014 but his 'day' consists of Kenneth's actual activities (Jonathan birthday party, uncomfortable dinner), making the substitution absurd and incomplete.",
+      "craft_total": 7.83,
+      "impact_score": 7.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A sustained cringe sequence that works because Kenneth plays it completely straight \u2014 recounting his actual day as if he is Avery. The contrast between the role-play and the mundane reality of Kenneth's day is the joke."
+    },
+    {
+      "index": 59,
+      "text": "I am in the restaurant business, and I really love... golf playing.",
       "characters": [
         "Paul"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Paul trying to seem conventionally masculine",
-      "punchline": "Awkward phrasing reveals he's performing unfamiliar masculinity",
-      "craft_total": 6.73,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Paul is introducing himself to the Grembys over dinner, trying to appear normal.",
+      "punchline": "He completes a sentence about loving something with '...golf playing' \u2014 an awkward formulation that suggests he had to rapidly substitute an acceptable hobby for something less acceptable.",
+      "craft_total": 7.79,
+      "impact_score": 7.67,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character work showing Paul's discomfort with conventional masculinity"
+      "explanation": "The phrasing 'golf playing' (rather than 'playing golf') is the tell \u2014 it's what someone says when they rapidly substitute a safe topic for an unsafe one. The beat timing implied by the '...' is the structure."
     },
     {
-      "index": 48,
-      "text": "Oh. Well, I don't have one myself, but I do like a girl with a limp",
+      "index": 60,
+      "text": "What's your handicap? / Oh. Well, I don't have one myself, but I do like a girl with a limp.",
       "characters": [
+        "Eugene",
         "Paul"
       ],
       "joke_types": [
         "misdirection",
         "character_comedy"
       ],
-      "setup": "Asked about golf handicap",
-      "punchline": "Interprets as sexual preference for disabled women",
-      "craft_total": 7.4,
-      "impact_score": 7.17,
+      "setup": "Eugene asks Paul about his golf handicap.",
+      "punchline": "Paul misunderstands 'handicap' as a physical disability, and his clarification reveals a specific attraction.",
+      "craft_total": 7.95,
+      "impact_score": 8.0,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirection showing Paul's complete unfamiliarity with golf culture"
+      "explanation": "A solid misdirection joke built on a double meaning. The punchline reveals something about Paul's preferences while also functioning as a natural consequence of his golf-claiming unfamiliarity with golf. Slightly predictable structurally but well executed."
     },
     {
-      "index": 49,
-      "text": "My first name is U. Jean, with a U.",
+      "index": 61,
+      "text": "So, Mrs. Gremby, you're also named Eugene? / Oh, no, dear, it's U-period-Jean. My first name is U. Jean, with a U.",
       "characters": [
+        "Paul",
         "U. Jean Gremby"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "wordplay_pun",
+        "setup_punchline"
       ],
-      "setup": "Confusion about woman named Eugene",
-      "punchline": "Her actual name is equally absurd abbreviation",
+      "setup": "Paul addresses Mrs. Gremby.",
+      "punchline": "Her name is 'U. Jean' \u2014 a name that sounds like 'Eugene' but is spelled 'U. Jean' \u2014 and she insists on the distinction with some precision.",
       "craft_total": 6.97,
       "impact_score": 6.67,
-      "quotability": 6.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Absurd name choice that's more weird than funny"
+      "explanation": "A solid nameplay joke \u2014 a small payoff on the setup of Eugene's wife having the same-sounding first name. The clarification 'with a U' is the button. Competent rather than exceptional."
     },
     {
-      "index": 50,
+      "index": 62,
+      "text": "Oh. That's a nice blouse. It definitely goes with your eyes, don't you think, Jenna? / Golf, blouses. I'm just so impressed with how normal this dinner has been. Very wool.",
+      "characters": [
+        "U. Jean",
+        "Eugene"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "cringe_discomfort"
+      ],
+      "setup": "The Grembys are reacting positively to Paul's blouse \u2014 connecting back to Paul's insistence on wearing it.",
+      "punchline": "Eugene's satisfaction at how 'normal' things are \u2014 'Very wool' \u2014 is deeply ironic given everything we know about Paul, Jenna, and what's about to happen.",
+      "craft_total": 6.68,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The irony here is structural \u2014 we know the sitter has been booked and chaos is coming. Eugene's satisfaction at the 'normalcy' is a setup for the incoming disruption."
+    },
+    {
+      "index": 63,
       "text": "Greetings, slaves! Who's ready to get sat on?",
       "characters": [
         "Sitter"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "setup_punchline",
+        "escalation"
       ],
-      "setup": "Paul canceling the sitter, but he shows up anyway",
-      "punchline": "Sexual service provider arrives at wrong time with inappropriate greeting",
-      "craft_total": 6.84,
-      "impact_score": 7.33,
+      "setup": "The quiet dinner party is interrupted by an unexpected arrival.",
+      "punchline": "The 'sitter' Paul mentioned bursts in, announces himself, and reveals the nature of the service \u2014 sitting on people \u2014 in front of the horrified conservative Grembys.",
+      "craft_total": 8.27,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfectly executed callback payoff. 'Greetings, slaves!' as an opening address is inspired \u2014 it positions the sitter as someone who sees his clients in submissive terms. The callback to Paul's 'sit on us' revelation lands hard because the audience has been waiting for the sitter's arrival since it was foreshadowed."
+    },
+    {
+      "index": 64,
+      "text": "don't spew your statistics on the health benefits of weekly sittings or its wide acceptance in Eastern cultures",
+      "characters": [
+        "Paul"
+      ],
+      "joke_types": [
+        "escalation",
+        "absurdist"
+      ],
+      "setup": "Paul tries to get rid of the sitter before he can further scandalize the Grembys.",
+      "punchline": "His warning reveals that the sitter has a prepared statistical argument defending the practice \u2014 including Eastern cultural precedent \u2014 implying this is a recurring debate.",
+      "craft_total": 8.52,
+      "impact_score": 8.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A great escalation \u2014 by having Paul preemptively prevent the sitter's defense, the show implies a rich backstory of the sitter arguing for his services' validity. 'Its wide acceptance in Eastern cultures' is a perfect absurdist detail for a person who sits on people."
+    },
+    {
+      "index": 65,
+      "text": "To tomorrow's photo shoot and wool.",
+      "characters": [
+        "Eugene"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "irony_sarcasm"
+      ],
+      "setup": "Eugene toasts after the chaos.",
+      "punchline": "He toasts to wool \u2014 having apparently decided to overlook everything he just witnessed.",
+      "craft_total": 7.11,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A functional button \u2014 Eugene's pragmatic decision to proceed with the partnership despite everything is a small comedic beat. Not especially inventive."
+    },
+    {
+      "index": 66,
+      "text": "Unbelievable! You're still here? / It's still 0-0-0. / To 0.",
+      "characters": [
+        "Liz",
+        "Frank",
+        "Toofer"
+      ],
+      "joke_types": [
+        "running_gag",
+        "escalation"
+      ],
+      "setup": "The video game standoff was established at the start of the episode.",
+      "punchline": "It's still ongoing \u2014 0-0-0 \u2014 and apparently the correct toast is 'To 0.'",
+      "craft_total": 6.86,
+      "impact_score": 6.67,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Payoff to earlier setup but timing saves the dinner plot"
+      "explanation": "A solid running gag check-in. 'To 0' as a toast is a good button \u2014 celebrating nothing as though it's an achievement."
     },
     {
-      "index": 51,
+      "index": 67,
+      "text": "I did it! I spoke! / This didn't get mailed.",
+      "characters": [
+        "Lutz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Lutz appears holding a letter.",
+      "punchline": "Lutz's achievement is that he 'spoke' \u2014 implying he's been silent for an extended period \u2014 and the letter he holds was never mailed, suggesting he's been sitting on it.",
+      "craft_total": 6.76,
+      "impact_score": 6.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A Lutz joke that mostly exists to give him a moment. The unmailed letter is a good detail implying he's been hiding in the office, but the joke is underdeveloped."
+    },
+    {
+      "index": 68,
+      "text": "Speaking of trapped, I got you, Lutz! / Nope. Grenade. Blowing myself up.",
+      "characters": [
+        "Frank",
+        "Lutz"
+      ],
+      "joke_types": [
+        "running_gag",
+        "callback"
+      ],
+      "setup": "The video game self-immolation strategy continues.",
+      "punchline": "Lutz invokes the grenade/respawn strategy the moment Frank thinks he has him.",
+      "craft_total": 6.73,
+      "impact_score": 6.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A functional running gag continuation. The strategy has been established; this is a clean payoff without new material."
+    },
+    {
+      "index": 69,
       "text": "That's what I have to do. I can be a normal person. I have to blow myself up.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "callback",
+        "meta_self_referential",
         "absurdist"
       ],
-      "setup": "Liz seeing the gaming respawn strategy",
-      "punchline": "Applies video game logic to real life problems",
-      "craft_total": 7.07,
-      "impact_score": 6.83,
+      "setup": "Liz is inspired by watching the grenade/respawn strategy.",
+      "punchline": "Her insight \u2014 drawn from a video game self-kill mechanic \u2014 is that she needs to 'blow herself up' (get a community service sentence) to reset her life.",
+      "craft_total": 7.83,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The thematic payoff of the episode's central metaphor is well-structured. Liz applying a video game logic to her real life is both absurd and emotionally coherent within the show's framework."
+    },
+    {
+      "index": 70,
+      "text": "No, Your Honor, I'm not disputing the fine. I'm refusing to pay it. / Grenade, respawn!",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "character_comedy"
+      ],
+      "setup": "Liz appears before a judge regarding her hate crime fine.",
+      "punchline": "She announces her strategy out loud as a video game reference \u2014 'Grenade, respawn!' \u2014 in a courtroom context.",
+      "craft_total": 7.78,
+      "impact_score": 7.33,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Good connection between A and B plots using central episode metaphor"
+      "explanation": "A clean application of the episode's central metaphor in a new context. The courtroom setting makes the video game language funnier."
     },
     {
-      "index": 52,
-      "text": "I put the system on trial. You can't handle the truth!",
+      "index": 71,
+      "text": "This is a sham, Your dis-Honor! Nay, a mockery! I put the system on trial. You can't handle the truth! / I'm out of order? You're out of order! / Victor Sifuentes! Hoo-ah!",
       "characters": [
-        "Jack"
+        "Liz"
       ],
       "joke_types": [
         "character_comedy",
         "escalation"
       ],
-      "setup": "Jack refusing to pay fine in court",
-      "punchline": "Quotes famous courtroom drama to incompetent judge",
-      "craft_total": 6.57,
-      "impact_score": 6.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Liz is deliberately antagonizing the judge to get a harsher sentence.",
+      "punchline": "Her courtroom outburst is a rapidly escalating mashup of TV/movie courtroom clich\u00e9s \u2014 A Few Good Men, And Justice for All, L.A. Law \u2014 culminating in a 'Hoo-ah!' that is either Al Pacino or a general military sentiment.",
+      "craft_total": 7.72,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Pop culture reference that shows Jack's dramatic nature but isn't particularly clever"
+      "explanation": "A great escalating joke. The progression from 'Your dis-Honor' (mild wordplay) through 'You can't handle the truth!' (A Few Good Men), 'You're out of order!' (And Justice for All), 'Victor Sifuentes' (L.A. Law character), to 'Hoo-ah!' is a satisfying reference cascade. Works because each element is slightly more obscure than the last, showing the depth of Liz's TV-absorbed legal knowledge."
     },
     {
-      "index": 53,
+      "index": 72,
       "text": "I lost my gavel over the weekend, but it doesn't mean you can talk to me like that.",
       "characters": [
         "Judge"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "deadpan_understatement"
       ],
-      "setup": "Judge trying to maintain authority",
-      "punchline": "Admits to losing basic tool of office in casual manner",
-      "craft_total": 6.85,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Liz references banging the gavel during her tirade.",
+      "punchline": "The judge lost his gavel over the weekend \u2014 delivering this as a dignity-preserving correction while implicitly admitting an embarrassing personal failing.",
+      "craft_total": 7.53,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good detail showing institutional incompetence"
+      "explanation": "A beautiful detail \u2014 a judge who lost his gavel. The attempt to maintain authority while admitting this is very funny. The 'over the weekend' specificity implies a story we don't get."
     },
     {
-      "index": 54,
-      "text": "I have seen 'The Brady Bunch' where Tiger runs away",
+      "index": 73,
+      "text": "Talk to who? I just see an empty robe.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "setup_punchline"
+      ],
+      "setup": "The judge asserts his authority after Liz's outburst.",
+      "punchline": "Liz denies his existence by only acknowledging the robe \u2014 an oblique 'you're nothing without your title' burn.",
+      "craft_total": 6.94,
+      "impact_score": 6.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Liz at her most acidic \u2014 a clean, original put-down delivered in very few words. The logic (robe without gavel = nothing) is its own kind of absurdist reasoning."
+    },
+    {
+      "index": 74,
+      "text": "Do you honestly not see me, or are you being rude? / I'm being rude.",
+      "characters": [
+        "Judge",
+        "Liz"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "setup_punchline"
+      ],
+      "setup": "The judge asks Liz if she's serious about not seeing him.",
+      "punchline": "Liz confirms she's just being rude \u2014 abandoning any pretense of the metaphor.",
+      "craft_total": 7.47,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A perfect button. The honesty of 'I'm being rude' after an elaborate metaphor is the funniest possible response. Maximum economy \u2014 two words deflate the scene perfectly."
+    },
+    {
+      "index": 75,
+      "text": "Freedom! / For me. Probably not you guys.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Liz gets her community service sentence.",
+      "punchline": "She cheers 'Freedom!' \u2014 then clarifies this freedom applies only to her, not to the bystanders in the court \u2014 an oddly specific exemption.",
+      "craft_total": 7.11,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A good button. 'Probably not you guys' is the right level of self-aware comedy \u2014 acknowledging that her joyous 'Freedom!' doesn't apply to anyone present."
+    },
+    {
+      "index": 76,
+      "text": "Mr. Donaghy, where are my clothes? / Sherry must have put them in the wash while you were showering. Now, give us a twirl.",
+      "characters": [
+        "Kenneth",
+        "Jack"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "escalation"
+      ],
+      "setup": "Kenneth has apparently been showering at Jack's house and his clothes were removed.",
+      "punchline": "Jack has positioned Kenneth in Avery's clothing (or without his own) and wants him to twirl \u2014 the Avery substitution is now fully physical.",
+      "craft_total": 7.75,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The escalation of the Jack-Kenneth dynamic reaches a peak here. The detail of Sherry confiscating Kenneth's clothes 'while he was showering' implies Jack planned this. 'Give us a twirl' is darkly funny \u2014 Jack's dissociation is complete. Good escalation structure."
+    },
+    {
+      "index": 77,
+      "text": "Now, what do you say you put on some of Avery's perfume and we head over to Strawberry Fields and whip pennies at the drum circle?",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "callback",
+        "dark_subversive",
+        "escalation"
+      ],
+      "setup": "Jack wants to resume his normal romantic activities \u2014 but with Kenneth as substitute.",
+      "punchline": "He suggests their activity should be whipping pennies at hippies at Strawberry Fields \u2014 a callback to the hacky sack scene \u2014 now dressed up for Kenneth.",
+      "craft_total": 7.72,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfect callback with escalation. The Strawberry Fields hippie-bothering activity was established as Jack and Avery's shared romantic pastime. Now he wants to recreate it with Kenneth-as-Avery \u2014 and the activity has escalated from 'kicking hacky sacks' to 'whipping pennies.' The upgrade in projectile is a nice detail implying their shared hostility was deepening."
+    },
+    {
+      "index": 78,
+      "text": "I don't like to swear, sir, but no, thank you.",
       "characters": [
         "Kenneth"
       ],
       "joke_types": [
         "character_comedy",
-        "misdirection"
+        "deadpan_understatement"
       ],
-      "setup": "Kenneth offering advice about loss",
-      "punchline": "Compares wife kidnapping to dog episode of family sitcom",
-      "craft_total": 7.59,
-      "impact_score": 7.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Jack invites Kenneth to pretend to be Avery and go antagonize hippies.",
+      "punchline": "Kenneth's refusal is extremely polite, and prefaced with a note about his language standards \u2014 'I don't like to swear' \u2014 as if the refusal itself is a kind of mild profanity.",
+      "craft_total": 7.71,
+      "impact_score": 7.75,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Kenneth inappropriateness treating serious situation with TV logic"
+      "explanation": "A superb Kenneth line. 'I don't like to swear, but no, thank you' treats the direct refusal as something approaching profanity \u2014 the most rebellious thing Kenneth can do is say a firm 'no.' The perfect Kenneth voice: polite, conflict-averse, but finally firm. Highly quotable."
     },
     {
-      "index": 55,
+      "index": 79,
+      "text": "Maybe I haven't had a wife who was kidnapped, but I have seen The Brady Bunch where Tiger runs away.",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "deadpan_understatement"
+      ],
+      "setup": "Kenneth tries to empathize with Jack's loss.",
+      "punchline": "His framework for understanding marital grief is a Brady Bunch episode about a dog running away \u2014 the equivalences he draws are deeply wrong but delivered with complete sincerity.",
+      "craft_total": 8.02,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "An exceptional Kenneth joke. The comparison of a kidnapped spouse to a TV dog running away is so misguided it's perfect \u2014 and the specificity ('Tiger runs away,' not just 'the Brady Bunch') implies Kenneth has done the work of finding the closest analogue. The hedge 'maybe I haven't had a wife who was kidnapped' treats this as a minor difference, not a fundamental one. Great character integration."
+    },
+    {
+      "index": 80,
+      "text": "I had the perfect woman. Gorgeous. Brilliant. Always let me be the hat in Monopoly.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Jack eulogizes what made Avery perfect.",
+      "punchline": "After two genuinely flattering qualities (gorgeous, brilliant), the list bottoms out with 'always let me be the hat in Monopoly' \u2014 an extremely specific and mundane marital concession that Jack treasures equally.",
+      "craft_total": 8.56,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A brilliantly constructed list joke. The rule of three is perfectly deployed: two legitimate qualities followed by an absurdly specific marital detail that is clearly of equal emotional weight to Jack. 'Always let me be the hat' is both a Monopoly-specific detail and a window into their relationship dynamic \u2014 Avery accommodated Jack's preferences in small, daily ways. High quotability, exceptional structure."
+    },
+    {
+      "index": 81,
       "text": "God, are you punishing me because my hair is better than yours?",
       "characters": [
         "Jack"
@@ -1051,207 +1572,274 @@
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Jack questioning God about his suffering",
-      "punchline": "Assumes God is jealous of his physical appearance",
-      "craft_total": 7.94,
-      "impact_score": 8.0,
+      "setup": "Jack asks God why this is happening to him.",
+      "punchline": "His theory for divine punishment: God is jealous of Jack's hair.",
+      "craft_total": 8.24,
+      "impact_score": 8.33,
       "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Jack vanity turning theological question into personal grooming competition"
+      "explanation": "A perfect Jack Donaghy joke. His vanity is so total that it frames his personal theology \u2014 he believes God is capable of petty jealousy over hair, which implies Jack considers his hair objectively superior to God's. The confidence of the delivery is the entire joke. Exceptional character integration."
     },
     {
-      "index": 56,
-      "text": "She once made Rahm Emanuel cry in an airport lounge",
+      "index": 82,
+      "text": "Kenneth's Kenneth-as-Avery monologue: 'Listen to me, Jack! You don't want people to pity you? Well, they should, because you are pitiful... He may be a chinless piece of human garbage, but he will never fill the void that I left behind.'",
       "characters": [
-        "Kenneth-as-Avery"
+        "Kenneth"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "escalation",
+        "irony_sarcasm"
       ],
-      "setup": "Kenneth describing Avery's meanness",
-      "punchline": "Specific example of intimidating notoriously tough political figure",
-      "craft_total": 7.38,
-      "impact_score": 7.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good specific detail that establishes Avery's intimidating nature with political reference"
+      "setup": "Kenneth steps into the Avery role to deliver a harsh but loving truth to Jack.",
+      "punchline": "While making a genuine emotional point, Avery-via-Kenneth describes Kenneth himself as 'a chinless piece of human garbage' \u2014 simultaneously insulting himself and making a sincere emotional observation.",
+      "craft_total": 8.3,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The best moment of the Kenneth-as-Avery arc. Kenneth delivering a pointed critique to Jack while simultaneously describing himself as 'a chinless piece of human garbage' is both darkly funny and emotionally resonant. The self-insult is the joke, and it lands because Kenneth delivers it with complete earnestness."
     },
     {
-      "index": 57,
-      "text": "He may be a chinless piece of human garbage, but he will never fill the void that I left behind.",
+      "index": 83,
+      "text": "He's gonna ask me to go to his birthday party. / Hey, Mrs. Dongy, you wan' come on down my birfday party?",
       "characters": [
-        "Kenneth as Avery"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Kenneth delivering harsh truth as Avery",
-      "punchline": "Brutal self-assessment while insulting Kenneth",
-      "craft_total": 7.96,
-      "impact_score": 8.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character work with Kenneth channeling Avery's mean precision"
-    },
-    {
-      "index": 58,
-      "text": "Hey, Mrs. Dongy, you wan' come on down my birfday party?",
-      "characters": [
-        "Jonathan"
+        "Jack",
+        "Kenneth"
       ],
       "joke_types": [
         "character_comedy",
-        "visual_gag"
+        "setup_punchline"
       ],
-      "setup": "Kenneth dressed as Avery at Jack's request",
-      "punchline": "Jonathan treats him like actual Mrs. Donaghy with affected accent",
-      "craft_total": 6.41,
-      "impact_score": 6.25,
-      "quotability": 5.0,
+      "setup": "Jack, still somewhat in the role-play, predicts what Kenneth will say.",
+      "punchline": "Kenneth's actual invitation \u2014 delivered in a garbled accent and with 'Mrs. Dongy' as the honorific \u2014 is funnier and weirder than the prediction.",
+      "craft_total": 8.2,
+      "impact_score": 8.17,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Visual payoff to Kenneth's cross-dressing but accent feels forced"
+      "is_callback": 1,
+      "explanation": "The callback to the birthday party invitation thread, but the delivery ('Mrs. Dongy,' 'birfday') adds a new absurdist dimension. The garbled pronunciation is unexpected from Kenneth."
     },
     {
-      "index": 59,
-      "text": "Even with your back to me, I can definitely tell it's you",
-      "characters": [
-        "Eugene Gremby"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "visual_gag"
-      ],
-      "setup": "Eugene addressing Jenna during photo shoot",
-      "punchline": "Suggests Jenna is only recognizable from behind",
-      "craft_total": 6.91,
-      "impact_score": 6.67,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Mild visual gag about Jenna's appearance but not particularly clever"
-    },
-    {
-      "index": 60,
-      "text": "You wanted us to be normal? Well, this is our normal, and this is what we think of your morality clause.",
-      "characters": [
-        "Paul"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Paul finally standing up to wool council pressure",
-      "punchline": "Defiantly embraces their sexual unconventionality",
-      "craft_total": 6.91,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment but the defiance speech is predictable"
-    },
-    {
-      "index": 61,
-      "text": "Give Mommy some beard. Oh, you've got some crumbs in here. Oh, eat it.",
-      "characters": [
-        "Paul"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "escalation"
-      ],
-      "setup": "Paul and Jenna's public display",
-      "punchline": "Intimate grooming becomes unexpectedly disgusting",
-      "craft_total": 6.18,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Gross-out humor that goes too far into genuinely disgusting territory"
-    },
-    {
-      "index": 62,
-      "text": "Good God! Lemon? Liddy, say, 'Good God, Lemon.' Guh gah, Lem.",
+      "index": 84,
+      "text": "And, uh, thank you... Avery.",
       "characters": [
         "Jack"
       ],
       "joke_types": [
-        "character_comedy",
-        "callback"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Jack seeing Liz on chain gang",
-      "punchline": "Teaching baby to say his catchphrase about Liz",
-      "craft_total": 7.14,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Jack thanks Kenneth for the meal and insight",
+      "punchline": "He calls Kenneth 'Avery' \u2014 this time consciously and gratefully, as a real acknowledgment of what the interaction meant to him",
+      "craft_total": 7.44,
+      "impact_score": 6.75,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Sweet callback that shows Jack bonding with daughter over shared Liz exasperation"
+      "explanation": "Emotional callback beat \u2014 more bittersweet than comedic, but the comedy is in the weirdness of Jack sincerely thanking his assistant while calling him by his missing wife's name. Works as a scene closer."
     },
     {
-      "index": 63,
-      "text": "I'm outdoors, I'm wearing comfortable clothes, I'm gardening, and I'm learning Spanish.",
+      "index": 85,
+      "text": "Here's to you, Jenna Maroney. Even with your back to me, I can definitely tell it's you. / I'll turn around later. / Perfect. I'll keep talking. / Mmm, wool.",
       "characters": [
-        "Liz"
+        "Eugene",
+        "Jenna"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "irony_sarcasm"
+      ],
+      "setup": "The photo shoot begins, and Eugene is speaking to Jenna who has her back turned.",
+      "punchline": "The exchange reveals Eugene is attempting to seduce Jenna \u2014 he'll keep talking while she doesn't turn around, and his only commentary on the wool is a sensual 'Mmm, wool.'",
+      "craft_total": 7.07,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A good slow-burn cringe setup. 'Mmm, wool' as a sensual expression is funny in context \u2014 both a product endorsement and a come-on. Sets up the Paul-Jenna confrontation."
+    },
+    {
+      "index": 86,
+      "text": "My wife, U. Jean, is out of town visiting her parents' graves. Maybe we could meet later for a drink and you could show me your front.",
+      "characters": [
+        "Eugene"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "cringe_discomfort"
+      ],
+      "setup": "Eugene explains his wife's absence.",
+      "punchline": "He uses 'visiting her parents' graves' \u2014 a detail that reinforces his wife's earlier trauma \u2014 as an opportunity to attempt to seduce Jenna with the offer to 'show me your front.'",
+      "craft_total": 7.43,
+      "impact_score": 7.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The callback to U. Jean's murdered parents is darkly funny \u2014 Eugene treats grave visits as a convenient alibi. 'Show me your front' is a hilariously awkward proposition given Jenna's back-to-camera positioning."
+    },
+    {
+      "index": 87,
+      "text": "This is our normal, and this is what we think of your morality clause. / Give Mommy some beard. / Oh, you've got some crumbs in here. / Oh, eat it.",
+      "characters": [
+        "Jenna",
+        "Paul"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "visual_gag"
+      ],
+      "setup": "Jenna and Paul dramatically confront Eugene by demonstrating their true relationship dynamic.",
+      "punchline": "Their defiant display of 'normal' involves Jenna feeding Paul from her beard \u2014 a completely unexpected intimate act that defies the morality clause in a way no one anticipated.",
+      "craft_total": 7.95,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "An exceptional visual-character joke. Jenna has a beard. The reveal of Jenna feeding Paul from her beard \u2014 with 'Give Mommy some beard' as the framing \u2014 is specific, absurdist, and deeply character-true. The intimate act of crumb-sharing from facial hair is somehow both gross and touching. The 'Oh, eat it' button is perfect."
+    },
+    {
+      "index": 88,
+      "text": "Good God! Lemon? / Liddy, say, 'Good God, Lemon.' / Guh gah, Lem.",
+      "characters": [
+        "Jack",
+        "Liz",
+        "Liddy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Jack encounters Liz on the community service chain gang.",
+      "punchline": "He tries to teach Liddy (his baby daughter) his signature 'Good God, Lemon!' catchphrase, and Liddy's attempted repeat ('Guh gah, Lem') is a perfect baby-approximation of it.",
+      "craft_total": 8.15,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A great joke on multiple levels. Jack teaching his infant daughter his catchphrase is character-perfect \u2014 the legacy he's focused on in a moment of grief is ensuring Liddy can identify Liz with contemptuous surprise. 'Guh gah, Lem' is a superb baby approximation. High quotability and rewatch value."
+    },
+    {
+      "index": 89,
+      "text": "I did it, Jack. I got my dream vacation. / You're on a chain gang. / I'm outdoors, I'm wearing comfortable clothes, I'm gardening, and I'm learning Spanish.",
+      "characters": [
+        "Liz",
+        "Jack"
       ],
       "joke_types": [
         "callback",
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Liz explaining how she got her dream vacation",
-      "punchline": "Achieving goals through community service/punishment",
-      "craft_total": 7.62,
+      "setup": "Liz's four original summer goals were established in the cold open.",
+      "punchline": "Community service on a chain gang accidentally fulfills all four of her goals: outdoors, shapeless clothing, gardening (picking up litter), and Spanish (from her crew supervisors).",
+      "craft_total": 8.13,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's most structurally complete joke \u2014 a full-episode callback that pays off Liz's opening list with perfect irony. The callback works because each goal maps to a community service detail, but all in degraded form (gardening = trash pickup, Spanish = being yelled at by a supervisor). This is the kind of long-form joke construction that elevates 30 Rock above standard sitcoms. Exceptional structure."
+    },
+    {
+      "index": 90,
+      "text": "I vuelve a tu trabajo, Limona! Esa bolsa no est\u00e1 llena.",
+      "characters": [
+        "H\u00e9ctor"
+      ],
+      "joke_types": [
+        "running_gag",
+        "character_comedy"
+      ],
+      "setup": "Liz claims she's learning Spanish through community service.",
+      "punchline": "The Spanish she's learning is her supervisor berating her to get back to work \u2014 the language acquisition is real but the content is humiliating.",
+      "craft_total": 7.53,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A good tag on the vacation-as-chain-gang joke. The 'learning Spanish' component is technically accurate but the substance is being publicly shamed in Spanish. 'Limona' (Lemon in Spanish) is a nice detail."
+    },
+    {
+      "index": 91,
+      "text": "It's nice to see that we're back to our version of normal.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "callback",
+        "deadpan_understatement"
+      ],
+      "setup": "The episode's central theme of 'normal' is resolved.",
+      "punchline": "Jack's 'version of normal' is Liz on a chain gang and himself going to Strawberry Fields to have Liddy spit on hippies \u2014 a perfectly specific resolution.",
+      "craft_total": 7.15,
+      "impact_score": 6.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A solid thematic button. Jack's 'our version of normal' is appropriately absurd when articulated."
+    },
+    {
+      "index": 92,
+      "text": "Jenna? / Oh, Jenna, no. / There you are! Bad dog! You'll go in the crate tonight.",
+      "characters": [
+        "Paul",
+        "Jenna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "visual_gag"
+      ],
+      "setup": "Jenna is apparently somewhere she shouldn't be.",
+      "punchline": "Paul addresses Jenna as a dog ('bad dog!') and threatens the crate \u2014 revealing their relationship dynamic in a new setting.",
+      "craft_total": 7.52,
       "impact_score": 7.5,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Good callback with ironic achievement of goals through opposite means"
+      "explanation": "A callback to the leash/dog dynamic established earlier. Paul's public pet-discipline framing of Jenna is consistent with their established dynamic and lands as a clean character joke."
     },
     {
-      "index": 64,
-      "text": "where she spat up on a white lady's dreads",
+      "index": 93,
+      "text": "Hey, guys! It's me, Tracy, the black guy from work.",
       "characters": [
-        "Jack"
+        "Tracy"
       ],
       "joke_types": [
         "character_comedy",
-        "callback"
+        "meta_self_referential"
       ],
-      "setup": "Jack describing trip to Strawberry Fields with baby",
-      "punchline": "Baby performs version of Jack and Avery's hippie harassment",
-      "craft_total": 7.68,
+      "setup": "Tracy appears at the end of the episode.",
+      "punchline": "He introduces himself as 'Tracy, the black guy from work' \u2014 an absurd self-description that either indicates he thinks they don't recognize him or that this is simply how he identifies himself.",
+      "craft_total": 7.76,
       "impact_score": 7.5,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect callback showing the baby carrying on family tradition of hippie harassment"
-    },
-    {
-      "index": 65,
-      "text": "There you are! Bad dog! You'll go in the crate tonight.",
-      "characters": [
-        "Paul"
-      ],
-      "joke_types": [
-        "callback",
-        "character_comedy"
-      ],
-      "setup": "Paul finding Jenna after she lost her wool endorsement",
-      "punchline": "Treats her like actual dog as promised earlier",
-      "craft_total": 6.8,
-      "impact_score": 6.25,
-      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Payoff to earlier setup but fairly predictable"
+      "explanation": "A callback to Tracy's earlier self-identification to people who obviously know him. The addition of 'the black guy' makes it funnier \u2014 both as an unnecessary clarifier and as something Tracy apparently considers his primary identifier."
     },
     {
-      "index": 66,
-      "text": "Some idiot rammed his boat that I was driving into it",
+      "index": 94,
+      "text": "I hooked a ball onto a truck on the Long Island Expressway. And Tracy Jordan does not take mulligans.",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Tracy explains how a golf ball ended up on the highway.",
+      "punchline": "He hit a ball that somehow attached to a truck on the LIE and refuses on principle to take a mulligan \u2014 treating this as a point of sporting honor.",
+      "craft_total": 7.79,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A great Tracy joke \u2014 the absurdity of the situation (ball on a highway truck) combined with the completely sincere invocation of golf etiquette ('Tracy Jordan does not take mulligans') is perfect. The specificity of 'the Long Island Expressway' grounds the absurdism."
+    },
+    {
+      "index": 95,
+      "text": "Good thing you had to move out of that house. Some idiot rammed his boat that I was driving into it.",
       "characters": [
         "Tracy"
       ],
@@ -1259,33 +1847,93 @@
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Tracy explaining house damage",
-      "punchline": "Calls someone else an idiot for his own destructive behavior",
-      "craft_total": 7.12,
-      "impact_score": 6.83,
+      "setup": "Liz mentions Tracy moved out of the Hamptons house.",
+      "punchline": "Tracy confirms the house was destroyed \u2014 by a boat he was driving that he rammed into it. He frames 'some idiot' as the guilty party, then immediately reveals the idiot was himself.",
+      "craft_total": 8.17,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A tight construction: 'some idiot' as a setup implies someone else is culpable, then 'that I was driving' immediately undermines it. Tracy's complete lack of self-awareness in framing himself as a victim of his own boat-driving is perfect character comedy."
+    },
+    {
+      "index": 96,
+      "text": "You see all the good that is in them, how much capacity for love? Yes, I know. I just need more time with them. Give me more time, Jacob, I beg of you!",
+      "characters": [
+        "Unknown"
+      ],
+      "joke_types": [
+        "absurdist",
+        "dark_subversive"
+      ],
+      "setup": "A cutaway to an unexplained scene \u2014 someone begging a figure named Jacob for more time.",
+      "punchline": "Context-free desperation directed at 'Jacob' \u2014 the lack of context is the joke, as is the contrast with the mundane resolution of the episode's plots.",
+      "craft_total": 6.12,
+      "impact_score": 5.83,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A mysterious cutaway that seems to be a tag joke or season arc teaser rather than a constructed joke. The humor is in the abruptness and context-lessness, but it doesn't fully land without more context. Scored lower for weak character integration and unclear structure."
+    },
+    {
+      "index": 97,
+      "text": "No, I see you. I'm killing myself. Respawn. / Respawn. / Damn it!",
+      "characters": [
+        "Frank",
+        "Toofer",
+        "Lutz"
+      ],
+      "joke_types": [
+        "running_gag",
+        "escalation",
+        "callback"
+      ],
+      "setup": "The video game standoff has been ongoing since the cold open.",
+      "punchline": "The final check-in on the 0-0-0 game \u2014 the respawn cycle continues, and someone's frustrated 'Damn it!' implies it's been going all summer.",
+      "craft_total": 7.46,
+      "impact_score": 7.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The final running gag beat. Effective as a tag \u2014 the game has clearly gone on all summer and is no closer to resolution. 'Damn it!' is the right button."
+    },
+    {
+      "index": 98,
+      "text": "Hola, everyone. Are you ready for Season 6?",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "character_comedy"
+      ],
+      "setup": "The episode is ending \u2014 it's the season finale.",
+      "punchline": "Tracy addresses the audience directly (in Spanish) asking if they're ready for next season \u2014 a fourth wall break that acknowledges the show's structure.",
+      "craft_total": 7.36,
+      "impact_score": 7.17,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Tracy logic avoiding responsibility while blaming others"
+      "explanation": "A season finale fourth wall break \u2014 Tracy's meta-awareness of the show format. The 'Hola' (Spanish) connects to the episode's running Spanish-learning thread. Functional finale closer."
     },
     {
-      "index": 67,
-      "text": "No, I see you. I'm killing myself. Respawn.",
+      "index": 99,
+      "text": "Oh, my God. Wait, how long have we been here?",
       "characters": [
         "Frank"
       ],
       "joke_types": [
-        "callback",
-        "escalation"
+        "running_gag",
+        "meta_self_referential"
       ],
-      "setup": "Writers still playing the same game",
-      "punchline": "Frank continues respawn strategy even when directly addressed",
-      "craft_total": 6.57,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "The video game standoff has been the writers' B-plot all episode.",
+      "punchline": "The players finally emerge from their gaming stupor and realize they don't know how long the game has lasted \u2014 the implication being it may have been months.",
+      "craft_total": 6.97,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Consistent with character obsession but not particularly surprising"
+      "explanation": "A satisfying button on the running gag \u2014 the final reveal that the writers have completely lost track of time playing a game where the score is perpetually 0-0-0 is a good closing absurdist image."
     }
   ],
   "air_date": "2011-05-05",

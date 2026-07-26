@@ -4,14 +4,14 @@
   "season": 2,
   "episode_number": 6,
   "title": "Somebody to Love",
-  "humor_index": 88.5,
-  "jpm": 2.91,
-  "avg_craft": 7.48,
-  "avg_impact": 7.06,
-  "total_jokes": 55,
-  "war": 69.8,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"observational\"]",
-  "standout_joke_ids": "[34, 41, 11]",
+  "humor_index": 100,
+  "jpm": 4.18,
+  "avg_craft": 7.81,
+  "avg_impact": 7.62,
+  "total_jokes": 79,
+  "war": 135.5,
+  "dominant_joke_types": "[\"character_comedy\", \"setup_punchline\", \"absurdist\"]",
+  "standout_joke_ids": "[70, 46, 51]",
   "weakest_section": null,
   "jokes": [
     {
@@ -21,420 +21,428 @@
         "Tracy"
       ],
       "joke_types": [
-        "absurdist",
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Tracy is distracted by the smell of maple syrup and can't rehearse his dance.",
+      "punchline": "He announces the waffle smell is making him sexually aroused \u2014 an utterly unexpected and absurd non-sequitur.",
+      "craft_total": 8.27,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfectly captures Tracy's anarchic, id-driven character. The non-sequitur escalation from 'maple syrup smells delicious' to sexual arousal is unexpected and character-specific. High economy \u2014 every word lands. The absurdity is entirely earned by who Tracy is."
+    },
+    {
+      "index": 2,
+      "text": "Don't panic, Lemon. It's probably not a chemical attack. / What do you mean 'probably'?",
+      "characters": [
+        "Jack",
+        "Liz"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "setup_punchline"
+      ],
+      "setup": "Liz calls Jack worried about the maple syrup smell across NYC.",
+      "punchline": "Jack's attempted reassurance contains the word 'probably,' which immediately becomes more alarming than no reassurance at all.",
+      "craft_total": 7.83,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Jack Donaghy deadpan \u2014 he tries to calm someone down and inadvertently makes things worse. The structure is airtight: Liz's callback question ('What do you mean probably?') is the perfect straight-man beat. Highly economical and character-integrated."
+    },
+    {
+      "index": 3,
+      "text": "It's probably just a strange wind pattern coming off those factories in Staten Island, where food flavors are made.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Tracy can't concentrate because someone is making waffles",
-      "punchline": "The smell of maple syrup makes him horny",
-      "craft_total": 7.62,
+      "setup": "Jack is trying to explain the maple syrup smell rationally.",
+      "punchline": "The parenthetical 'where food flavors are made' treats Staten Island as an accepted industrial wasteland as a matter of course \u2014 delivered with total confidence.",
+      "craft_total": 7.38,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke hinges on Jack treating a bizarre geographic fact as mundane common knowledge \u2014 pure character comedy. The specific detail ('where food flavors are made') elevates it from a generic Staten Island joke."
+    },
+    {
+      "index": 4,
+      "text": "I don't think it's Northrax. / What's Northrax? / It's a chemical agent we sold to the Saudis in the 1980s. It smells exactly like maple syrup. But I don't think this is it. / Well, how do you know? / Because Northrax kills you within ten seconds.",
+      "characters": [
+        "Jack",
+        "Liz"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive",
+        "escalation"
+      ],
+      "setup": "Jack casually introduces 'Northrax' as a known chemical agent sold to the Saudis, which smells like maple syrup \u2014 then reassures Liz it's probably not that.",
+      "punchline": "His proof that it's NOT Northrax is that Northrax kills within 10 seconds \u2014 meaning they'd already be dead. Cold logic applied to horrifying premise.",
+      "craft_total": 8.32,
       "impact_score": 8.0,
       "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Tracy Jordan absurdist non-sequitur. The unexpected connection between waffles and arousal is pure character-driven comedy gold."
-    },
-    {
-      "index": 2,
-      "text": "Wait, you smell maple syrup too? You live all the way in jersey. That's weird.",
-      "characters": [
-        "Tracy",
-        "Liz"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "observational"
-      ],
-      "setup": "Both characters smell maple syrup despite living far apart",
-      "punchline": "The geographic impossibility creates suspicion",
-      "craft_total": 6.25,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Solid setup for the chemical attack premise. Good logical progression but not particularly memorable on its own."
-    },
-    {
-      "index": 3,
-      "text": "Don't panic, lemon. It's probably not a chemical attack. What do you mean 'probably'?",
-      "characters": [
-        "Jack",
-        "Liz"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "irony_sarcasm"
-      ],
-      "setup": "Jack tries to reassure Liz it's probably not a chemical attack",
-      "punchline": "Liz focuses on the word 'probably' making it more alarming",
-      "craft_total": 7.39,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic misdirection - trying to calm someone down while actually making it worse. Good character dynamic."
-    },
-    {
-      "index": 4,
-      "text": "It's a chemical agent we sold to the Saudis in the 1980s. It smells exactly like maple syrup. But I don't think this is it.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "absurdist"
-      ],
-      "setup": "Explaining what Northrax is in casual, matter-of-fact tone",
-      "punchline": "Casually mentioning selling chemical weapons while downplaying current danger",
-      "craft_total": 7.68,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant dark comedy. Jack casually revealing disturbing corporate activities while trying to be reassuring is peak 30 Rock."
+      "explanation": "One of the episode's best jokes. The structure is nearly perfect: Jack establishes a terrifying premise (chemical weapon sold to Saudis), offers false reassurance, and the punchline \u2014 that the proof of safety is that they'd already be dead \u2014 is a masterclass in dark logic. Completely character-specific to Jack (only he would know this, only he would find it reassuring), maximally economical, and the dark absurdity is fully earned. Comparable in quality to the 8.0 anchor; this arguably exceeds it."
     },
     {
       "index": 5,
-      "text": "Because northrax kills you within ten seconds.",
+      "text": "Make me look like this. / Right, like that's a stretch.",
       "characters": [
-        "Jack"
+        "Jack",
+        "Barber"
       ],
       "joke_types": [
-        "setup_punchline",
-        "dark_subversive"
+        "irony_sarcasm",
+        "visual_gag"
       ],
-      "setup": "Liz asks how he knows it's not Northrax",
-      "punchline": "Matter-of-fact delivery that they'd already be dead",
-      "craft_total": 8.05,
-      "impact_score": 7.83,
-      "quotability": 7.0,
+      "setup": "Jack shows the barber a reference photo for his haircut.",
+      "punchline": "The barber's sarcastic response implies Jack already looks exactly like the photo \u2014 implying Jack chose a photo that looks exactly like him, suggesting vanity or that the haircut never changes.",
+      "craft_total": 6.62,
+      "impact_score": 6.25,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan delivery of horrifying information. The casual tone makes it funnier and more disturbing."
+      "explanation": "Quick, efficient character joke establishing Jack's vanity and self-image. The barber's deadpan is well-deployed. Not exceptional but solid economy."
     },
     {
       "index": 6,
-      "text": "I get my haircut every two days. After all, your hair is your head suit.",
+      "text": "After all, your hair is your head suit.",
       "characters": [
         "Jack"
       ],
       "joke_types": [
-        "absurdist",
-        "wordplay_pun"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Liz questions Jack getting frequent haircuts",
-      "punchline": "Jack's bizarre justification with made-up philosophy",
-      "craft_total": 7.79,
-      "impact_score": 7.33,
+      "setup": "Jack explains why he gets a haircut every two days.",
+      "punchline": "The pseudo-wisdom 'your hair is your head suit' \u2014 a meaningless aphorism delivered with total conviction.",
+      "craft_total": 8.12,
+      "impact_score": 7.5,
       "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Peak Jack Donaghy absurd corporate-speak. 'Head suit' is perfectly quotable nonsense that feels like something he'd actually say."
+      "explanation": "A perfect miniature Jack-ism. He takes something mundane (getting haircuts) and elevates it with fake profundity. 'Head suit' is a genuinely funny coinage \u2014 it sounds like real Jack wisdom but means nothing. Highly quotable, extremely economical, unmistakably his voice."
     },
     {
       "index": 7,
-      "text": "I'm going to a party tonight honoring Robert Novak. It's being thrown by John McCain and John Bauer. Um, I don't think he's real. Oh, I assure you, lemon, John McCain is very real.",
+      "text": "Um, I don't think he's real. / Oh, I assure you, Lemon, John McCain is very real.",
       "characters": [
-        "Jack",
-        "Liz"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Jack lists party hosts including fictional John Bauer",
-      "punchline": "Jack thinks Liz is questioning McCain's existence, not Bauer's",
-      "craft_total": 7.57,
-      "impact_score": 6.67,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Clever misdirection joke. Jack's obliviousness to his own name-dropping of fictional characters is very in-character."
-    },
-    {
-      "index": 8,
-      "text": "When it comes to hair, no one is more bitchy than conservative males. Good lord, Donaghy. Did you comb your hair with a chicken bone?",
-      "characters": [
+        "Liz",
         "Jack"
       ],
       "joke_types": [
-        "observational",
-        "setup_punchline"
+        "setup_punchline",
+        "misdirection"
       ],
-      "setup": "Jack warns about conservative males being critical of hair",
-      "punchline": "Immediately demonstrates with absurd insult example",
-      "craft_total": 7.45,
-      "impact_score": 7.0,
-      "quotability": 8.0,
+      "setup": "Jack mentions going to a party thrown by John McCain and 'John Bauer.'",
+      "punchline": "Liz questions whether 'John Bauer' is real (referencing Jack Bauer from 24), and Jack misunderstands, defending John McCain's existence instead.",
+      "craft_total": 7.82,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great example of Jack's specific cultural observations followed by a wonderfully absurd insult that feels period-appropriate."
+      "explanation": "Clever misdirection \u2014 the audience, like Liz, assumes she's questioning Jack Bauer (fictional character), but Jack pivots to defending John McCain's reality. The misunderstanding reveals Jack's bubble and his casual access to political elites. Well-structured."
     },
     {
-      "index": 9,
-      "text": "Good lord, Donaghy. Did you comb your hair with a chicken bone?",
+      "index": 8,
+      "text": "When it comes to hair, no one is more bitchy than conservative males. / Good lord, Donaghy. Did you comb your hair with a chicken bone?",
       "characters": [
-        "Conservative male"
+        "Jack",
+        "Unnamed Conservative"
       ],
       "joke_types": [
         "setup_punchline",
-        "absurdist"
+        "character_comedy"
       ],
-      "setup": "Someone critiquing Jack's hair",
-      "punchline": "Bizarrely specific and archaic insult",
-      "craft_total": 7.23,
-      "impact_score": 6.67,
-      "quotability": 7.5,
+      "setup": "Jack warns about how brutal conservative males are about hair.",
+      "punchline": "Immediately cuts to him being brutally criticized \u2014 'Did you comb your hair with a chicken bone?' \u2014 confirming his own warning.",
+      "craft_total": 7.65,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Perfectly validates Jack's prediction with an absurdly specific old-timey insult"
+      "is_callback": 0,
+      "explanation": "The joke is in the structural irony \u2014 Jack's self-aware warning about his peers is immediately proven correct. 'Chicken bone' is a vivid, specific insult. The juxtaposition of setup and instant confirmation is tight writing."
     },
     {
-      "index": 10,
+      "index": 9,
       "text": "Don't get peer pressured into invading Iran.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "observational",
+        "irony_sarcasm",
         "dark_subversive"
       ],
-      "setup": "Casual goodbye as Jack heads to political party",
-      "punchline": "Treating war like teenage peer pressure",
-      "craft_total": 7.73,
+      "setup": "Liz is casually sending Jack off to a conservative political party.",
+      "punchline": "She warns him not to get 'peer pressured into invading Iran' \u2014 treating a geopolitical catastrophe with the casual register of a parent warning a teen about drugs.",
+      "craft_total": 7.71,
       "impact_score": 7.33,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant political satire condensed into casual advice. The juxtaposition of peer pressure and international warfare is perfectly absurd."
+      "explanation": "Sharp political satire delivered with perfect economy. The register mismatch \u2014 treating war like peer pressure at a teen party \u2014 is the engine of the joke. Captures the show's Bush-era satirical voice."
     },
     {
-      "index": 11,
-      "text": "NOT POISONING RIVERS SINCE 1997",
+      "index": 10,
+      "text": "Sheinhardt Wig Company pin \u2014 'NOT POISONING RIVERS SINCE 1997' on the back",
       "characters": [
-        "Visual gag"
+        "Jack"
       ],
       "joke_types": [
         "visual_gag",
-        "dark_subversive"
+        "irony_sarcasm"
       ],
-      "setup": "Sheinhardt Wig Company promotional shirt",
-      "punchline": "The slogan admits to poisoning rivers before 1997",
-      "craft_total": 8.15,
-      "impact_score": 8.17,
-      "quotability": 9.5,
+      "setup": "Jack is asked to wear a Sheinhardt Wig Company pin as a PR gesture for a company having a 'PR hiccup.'",
+      "punchline": "The pin's reverse reads 'NOT POISONING RIVERS SINCE 1997' \u2014 the disclaimer implying they absolutely were poisoning rivers before 1997, making it a terrible PR item.",
+      "craft_total": 8.13,
+      "impact_score": 7.83,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Absolutely brilliant visual gag. The corporate non-denial denial is perfectly executed - admitting guilt while trying to sound positive."
+      "explanation": "Strong visual gag with layered irony. The text is a visual punchline that rewards careful viewers. 'Not poisoning rivers SINCE 1997' is a perfect ironic corporate slogan \u2014 the specificity of 1997 implies a documented history of pollution. This also seeds the episode's main conflict. Rewatch bonus for those who catch it the first time."
     },
     {
-      "index": 12,
-      "text": "'Cause I saw on Martha Stewart how we're all doing everything wrong.",
+      "index": 11,
+      "text": "Sweet peaches! What have I done? / ...they must have slipped out the bottom.",
       "characters": [
         "Kenneth"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "physical_slapstick"
       ],
-      "setup": "Kenneth explaining why he's removing plastic from tuxedo",
-      "punchline": "Naive faith in Martha Stewart's universal expertise",
-      "craft_total": 6.72,
-      "impact_score": 5.83,
-      "quotability": 6.0,
+      "setup": "Kenneth takes the plastic off Jack's dry-cleaned tuxedo and discovers the pants are missing.",
+      "punchline": "'Sweet peaches!' as an exclamation, and the suggestion that the pants just... slipped out the bottom of the dry-cleaning bag.",
+      "craft_total": 7.6,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment for Kenneth's simple worldview. The idea that Martha Stewart revealed universal wrongness is very Kenneth."
+      "explanation": "'Sweet peaches!' is a perfect Kenneth exclamation \u2014 Southern, innocent, completely non-profane, and utterly absurd in a crisis. Character integration is high. The physical comedy of pants just 'slipping out the bottom' is silly in the right way."
+    },
+    {
+      "index": 12,
+      "text": "Uncle Butch was right. I'm just a stupid country bumpkin with great skin and soft hands.",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Kenneth is devastated about losing Jack's tuxedo pants.",
+      "punchline": "His self-flagellating 'country bumpkin' self-description is immediately undercut by the vanity of 'great skin and soft hands' \u2014 he can't help but note his best features even while insulting himself.",
+      "craft_total": 8.14,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "An exceptional Kenneth joke. The self-criticism lulls you in, and 'great skin and soft hands' is the perfect unexpected pivot \u2014 he's simultaneously self-deprecating AND vain. The specificity of the compliments and the name 'Uncle Butch' add texture. Only Kenneth could deliver this."
     },
     {
       "index": 13,
-      "text": "Sweet peaches! What have I done? Somewhere along the way, they must have slipped out the bottom.",
+      "text": "All right! My prescription shampoo!",
       "characters": [
-        "Kenneth"
+        "Liz"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Kenneth loses Jack's expensive tuxedo pants",
-      "punchline": "His innocent Southern exclamation and impossible explanation",
-      "craft_total": 6.76,
-      "impact_score": 5.83,
+      "setup": "Scene transition to Liz's apartment. No prior setup \u2014 pure cold character beat.",
+      "punchline": "Liz's moment of triumph is receiving prescription shampoo \u2014 a tiny, unglamorous victory delivered with maximum enthusiasm.",
+      "craft_total": 8.06,
+      "impact_score": 8.0,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Kenneth's innocent profanity substitute and his completely illogical explanation for losing pants creates good physical comedy setup."
+      "explanation": "A micro-joke that perfectly encapsulates Liz Lemon's sad, relatable life. The prescription shampoo is the right level of pathetic \u2014 medical, unglamorous, and celebrated. Economy is near-perfect: one line, zero fat."
     },
     {
       "index": 14,
-      "text": "Uncle butch was right. I'm just a stupid country bumpkin with great skin and soft hands.",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Kenneth feels bad about losing the pants",
-      "punchline": "Self-deprecation that includes backhanded compliments about his appearance",
-      "craft_total": 7.58,
-      "impact_score": 6.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Kenneth moment - self-deprecation mixed with vanity. The specific details about skin and hands make it memorably weird."
-    },
-    {
-      "index": 15,
-      "text": "They cost $2,500. I will find your pants!",
-      "characters": [
-        "Kenneth",
-        "Jack"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Kenneth learns the cost of the pants he lost",
-      "punchline": "His dramatic commitment despite the impossibility",
-      "craft_total": 6.66,
-      "impact_score": 6.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation of Kenneth's panic. His heroic declaration about finding pants sets up the running gag nicely."
-    },
-    {
-      "index": 16,
-      "text": "I'm... liz. What's your name? Raheem. Raheem. That's-- that's my mother's name. No, it-- no, I'm just kidding.",
+      "text": "Liz opens door to neighbor; reaction beat \u2014 she clearly finds him attractive and is instantly awkward and flustered",
       "characters": [
         "Liz",
         "Raheem"
       ],
       "joke_types": [
-        "awkward_silence",
+        "reaction_beat",
         "cringe_discomfort"
       ],
-      "setup": "Liz tries to make small talk with new neighbor",
-      "punchline": "Her terrible, obviously false joke falls completely flat",
-      "craft_total": 7.1,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Liz answers her door to a neighbor bringing her mail",
+      "punchline": "Her total inability to function normally in the presence of an attractive man \u2014 visible through her stilted speech and long pause before saying her own name",
+      "craft_total": 5.96,
+      "impact_score": 5.5,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect cringe comedy. Liz's attempt at humor and immediate backtrack shows her social awkwardness beautifully."
+      "explanation": "Functional character comedy establishing Liz's awkwardness around attractive people, but it's a familiar beat for the character. The pause before 'I'm... Liz' is the best moment of it."
     },
     {
-      "index": 17,
-      "text": "He's weird. He wouldn't shake my hand. And I think it's because I'm a woman. And get this--he's got maps all over his walls.",
+      "index": 15,
+      "text": "Raheem. That's-- that's my mother's name. / No, it-- no, I'm just kidding.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "observational",
-        "setup_punchline"
+        "character_comedy",
+        "awkward_silence"
       ],
-      "setup": "Liz describes her neighbor's suspicious behavior",
-      "punchline": "Innocent activities viewed through paranoid lens",
-      "craft_total": 7.21,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Liz meets her new neighbor and learns his name is Raheem.",
+      "punchline": "She panics and makes an obviously false claim that Raheem is her mother's name, then immediately admits she's kidding \u2014 illustrating her social awkwardness around someone she's already othering.",
+      "craft_total": 7.39,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good setup for the paranoia subplot. Liz's mounting suspicion over innocent behavior creates mounting tension and comedy."
+      "explanation": "Classic cringe comedy \u2014 Liz's social ineptitude manifesting as a failed icebreaker. The self-correction ('No, I'm just kidding') makes it worse, not better, which is the joke. Good character integration but not a standout."
     },
     {
-      "index": 18,
-      "text": "That's different, that's-- that's an antique. And I'm a white lady.",
+      "index": 16,
+      "text": "He's weird. He wouldn't shake my hand. And I think it's because I'm a woman. / And get this \u2014 he's got maps all over his walls. / Maps. / Maps?",
       "characters": [
+        "Liz",
+        "Pete"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Liz is suspicious of her new neighbor and lists grievances.",
+      "punchline": "The escalating 'Maps / Maps?' reaction \u2014 Pete's echo signals the audience should find this suspicious, satirizing post-9/11 profiling of mundane details.",
+      "craft_total": 7.15,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good satirical setup. The 'Maps / Maps?' echo works because the camera-ready pause implies they both know how suspicious that sounds, despite maps being completely normal. It's the building block of the episode's social satire."
+    },
+    {
+      "index": 17,
+      "text": "You mean like that one? / That's different, that's -- that's an antique. And I'm a white lady.",
+      "characters": [
+        "Pete",
         "Liz"
       ],
       "joke_types": [
         "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Pete points out Liz has maps too",
-      "punchline": "Liz's weak rationalization ending with racial self-awareness",
-      "craft_total": 6.64,
-      "impact_score": 5.75,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Liz says maps are suspicious. Pete points to a map on the wall near them.",
+      "punchline": "Liz's 'defense' of her own map \u2014 that it's an antique \u2014 then collapses into the real admission: 'And I'm a white lady.' She can't justify the double standard and just names it.",
+      "craft_total": 8.13,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant moment of self-aware racial anxiety. Liz recognizing her own bias while still maintaining it is perfectly written."
+      "explanation": "Excellent. The joke has perfect structure: the feeble 'antique' defense crumbles and Liz is forced to name the unspoken bias explicitly. 'And I'm a white lady' is both a punchline and a devastating satirical observation \u2014 she's confessing her privilege in the most blunt possible terms. Highly quotable and sharp."
     },
     {
-      "index": 19,
+      "index": 18,
       "text": "Remember, I asked that black guy if he had seen Sideways?",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Liz claims she doesn't make racial assumptions",
-      "punchline": "Her example proves she absolutely does make racial assumptions",
-      "craft_total": 8.07,
-      "impact_score": 7.5,
-      "quotability": 8.5,
+      "setup": "Liz insists she never makes assumptions about race.",
+      "punchline": "Her proof is that she asked a random Black man if he'd seen 'Sideways' \u2014 a very white, wine-country prestige film \u2014 thereby proving she absolutely makes assumptions about race (that a Black man would need to be tested on white taste).",
+      "craft_total": 8.7,
+      "impact_score": 8.67,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Masterful irony. Liz's attempt to prove she's not racist by citing an example that proves she is racist is peak cringe comedy."
+      "explanation": "One of the episode's best jokes. The internal logic is exactly wrong in exactly the right way \u2014 Liz's example of 'not assuming' is itself a racially loaded assumption. It's incisive social satire disguised as character comedy. The specificity of 'Sideways' (not just any white movie) makes it funnier and more precise. Only Liz Lemon could deliver this with total sincerity."
     },
     {
-      "index": 20,
-      "text": "I don't want to sound racist, but that pita pocket might be a terrorist. That sound racist?",
+      "index": 19,
+      "text": "I don't want to sound racist, but that pita pocket might be a terrorist.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
         "irony_sarcasm",
-        "cringe_discomfort"
+        "character_comedy"
       ],
-      "setup": "Liz prefacing with 'I don't want to sound racist'",
-      "punchline": "Immediately saying something incredibly racist and asking for confirmation",
-      "craft_total": 7.61,
-      "impact_score": 7.33,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Liz lists Pete's evidence that actually exonerates Raheem (fixed toaster, showed a shortcut to airport).",
+      "punchline": "'I don't want to sound racist, but...' \u2014 the classic disclaimer followed by an overtly racist statement. Calling him a 'pita pocket' instead of his name adds another layer of dehumanizing othering.",
+      "craft_total": 7.2,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect satire of liberal guilt and unconscious bias. The 'pita pocket' slur followed by asking if it sounds racist is brilliantly oblivious."
+      "explanation": "The 'I don't want to sound racist, but...' structure is a well-worn comedic template. What saves it is 'pita pocket' as a substitute for his name \u2014 it's specific, food-based ethnic othering that is both horrible and precise. Not the sharpest joke in this sequence but functional."
+    },
+    {
+      "index": 20,
+      "text": "Whiskey, straight up. / I'll have a white rum with diet ginger ale and a splash of lime. / Wow, I never would have pegged you for a University of Tennessee sorority girl.",
+      "characters": [
+        "Jack",
+        "C.C."
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "At a conservative party, Jack orders a whiskey. C.C. orders an elaborate girly drink.",
+      "punchline": "Jack's retort that she sounds like a University of Tennessee sorority girl \u2014 a classist/regional dig disguised as a compliment, perfectly calibrated conservative-male condescension.",
+      "craft_total": 7.34,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Solid introduction to the Jack/C.C. flirtation dynamic. The specificity of 'University of Tennessee' (not just any sorority) signals Jack's regional snobbery while also being charming. Well-played meet-cute joke."
     },
     {
       "index": 21,
-      "text": "Wow, I never would have pegged you for a University of Tennessee sorority girl.",
+      "text": "Sir, here's your Nancy Drew. / For men, it's called a Hardy Boy.",
       "characters": [
+        "Waiter/Kenneth",
         "Jack"
-      ],
-      "joke_types": [
-        "observational",
-        "setup_punchline"
-      ],
-      "setup": "C.C. orders a complicated fruity drink",
-      "punchline": "Jack's oddly specific demographic assessment",
-      "craft_total": 7.4,
-      "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Jack's specific cultural knowledge and slight condescension. The specificity makes it funny."
-    },
-    {
-      "index": 22,
-      "text": "For men, it's called a Hardy Boy.",
-      "characters": [
-        "Kenneth"
       ],
       "joke_types": [
         "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "Kenneth brings Jack a 'Nancy Drew' (presumably a drink)",
-      "punchline": "His innocent gender-based name correction",
-      "craft_total": 7.34,
-      "impact_score": 6.5,
-      "quotability": 8.0,
+      "setup": "Jack is served a drink at the party.",
+      "punchline": "He refuses the feminine 'Nancy Drew' name for his drink, insisting the masculine version is 'Hardy Boy' \u2014 a parallel children's detective series.",
+      "craft_total": 8.48,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Genuinely excellent. The joke requires cultural knowledge (both are parallel book series), is perfectly economical (six words for the punchline), and the parallel construction is satisfying. Jack's masculine insecurity mapped onto children's detective novels is absurd in the best way. Among the episode's tightest jokes."
+    },
+    {
+      "index": 22,
+      "text": "Very low, sir. Very low. / I lost something real important. / [Kenneth starts yelling] Pants! Pants! Pants! Pants! Pants! Pants!",
+      "characters": [
+        "Kenneth",
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Kenneth asks Tracy for advice on finding something he lost. Tracy advises yelling loud until you find it.",
+      "punchline": "Kenneth immediately applies the advice, screaming 'PANTS!' repeatedly at maximum volume \u2014 literal-minded Kenneth taking absurd advice at face value.",
+      "craft_total": 7.53,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever wordplay on the detective book series. Kenneth's earnest correction of gender-specific terminology is very in-character."
+      "explanation": "Strong Kenneth/Tracy chemistry joke. Kenneth's literal-mindedness and total commitment to bad advice is textbook character comedy. The escalating 'Pants! Pants! Pants!' is physical-comedic in its delivery even on the page. 'Very low, sir. Very low.' is also a great opening reaction beat."
     },
     {
       "index": 23,
@@ -443,40 +451,98 @@
         "Tracy"
       ],
       "joke_types": [
-        "physical_slapstick",
+        "character_comedy",
         "escalation"
       ],
-      "setup": "Tracy suggests yelling to find lost things",
-      "punchline": "He immediately demonstrates by screaming 'pants' repeatedly",
-      "craft_total": 6.75,
-      "impact_score": 6.75,
-      "quotability": 7.0,
+      "setup": "Tracy tells Kenneth to yell really loud when he loses something",
+      "punchline": "Tracy immediately demonstrates by screaming 'PANTS!' repeatedly in the hallway \u2014 demonstrating the technique with immediate absurd commitment",
+      "craft_total": 7.15,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Pure Tracy Jordan chaos. His immediate, enthusiastic implementation of his own advice is perfectly in character."
+      "explanation": "Tracy's method for finding lost things (yell until found) is perfectly absurd, and his commitment to demonstrating it immediately is great physical comedy. The word 'pants' repeated has an inherent comedic quality."
     },
     {
       "index": 24,
-      "text": "And I tried looking in the last place you'd ever expect. And, no, Mr. Donaghy's pants are not in the ladies' room at that laser tag place on 12th avenue.",
+      "text": "Were you chafing again, Tray? / Yes, obvious twins.",
+      "characters": [
+        "Tracy's Team",
+        "Kenneth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Tracy's team asks if Kenneth wants to try the Sean Johns jeans as replacement pants.",
+      "punchline": "Kenneth dismisses the helpers as 'obvious twins' \u2014 a non-sequitur insult that's both random and weirdly specific.",
+      "craft_total": 7.48,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'obvious twins' insult is an absurdist non-sequitur that works because it's so unexpected. The chafing callback (Were you chafing again?) implies this is a known Tracy problem, adding texture."
+    },
+    {
+      "index": 25,
+      "text": "And I tried looking in the last place you'd ever expect. And, no, Mr. Donaghy's pants are not in the ladies' room at that laser tag place on 12th Avenue.",
       "characters": [
         "Kenneth"
       ],
       "joke_types": [
         "absurdist",
-        "setup_punchline"
+        "character_comedy"
       ],
-      "setup": "Kenneth tried looking in the last place you'd expect",
-      "punchline": "The oddly specific and completely random location he chose",
-      "craft_total": 7.58,
-      "impact_score": 7.33,
-      "quotability": 8.5,
+      "setup": "Kenneth explains he tried every strategy to find the pants.",
+      "punchline": "The specificity of 'ladies' room at the laser tag place on 12th Avenue' \u2014 a location so oddly specific it implies a story we'll never hear, and Kenneth's solemn denial only makes it funnier.",
+      "craft_total": 8.08,
+      "impact_score": 8.0,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant absurdist Kenneth moment. The specificity of 'ladies' room at laser tag' makes it funnier, and his earnest literalism is perfect."
+      "explanation": "A classic 30 Rock 'iceberg joke' \u2014 the punchline implies an enormous untold story (how did he end up checking the ladies' room of a laser tag place?). The specificity of '12th Avenue' makes it feel real and bizarre. Kenneth's earnest denial of what he clearly had to check is character-perfect."
     },
     {
-      "index": 25,
-      "text": "What the what?",
+      "index": 26,
+      "text": "Well, why don't you just do like I do and sell your autograph at the car show?",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Kenneth despairs about needing $2,500 to replace the pants.",
+      "punchline": "Tracy's totally sincere suggestion to solve financial problems by selling your autograph at car shows \u2014 advice that only works if you're Tracy Jordan.",
+      "craft_total": 7.94,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Pure Tracy \u2014 he's generous but totally oblivious to the specificity of his own celebrity. The advice is sincere, which makes it funnier. Good character integration."
+    },
+    {
+      "index": 27,
+      "text": "Kenneth's fundraising montage \u2014 singing 'What the World Needs Now Is Love' while performing various stunts/acts for money",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "physical_slapstick"
+      ],
+      "setup": "Kenneth needs to raise $2,500 for Jack's pants.",
+      "punchline": "A montage of increasingly desperate money-raising activities scored to an earnest love song \u2014 the music/visual juxtaposition creates absurdist comedy.",
+      "craft_total": 6.89,
+      "impact_score": 6.5,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The montage device is reliable for 30 Rock. The incongruity of the love song and Kenneth's grim determination works, though it's more sustained atmosphere than sharp joke-writing."
+    },
+    {
+      "index": 28,
+      "text": "'What the what?' \u2014 Liz's reaction to the Sheinhardt wig PR campaign propaganda on TV",
       "characters": [
         "Liz"
       ],
@@ -484,187 +550,273 @@
         "reaction_beat",
         "character_comedy"
       ],
-      "setup": "Liz sees something that surprises her (presumably Homeland Security posters)",
-      "punchline": "Her signature nonsensical exclamation",
-      "craft_total": 7.31,
-      "impact_score": 6.67,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Classic Liz Lemon catchphrase. Not groundbreaking but perfectly executed character moment that became iconic."
-    },
-    {
-      "index": 26,
-      "text": "IF YOU SEE SOMETHING, SAY SOMETHING",
-      "characters": [
-        "Visual gag"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "meta_self_referential"
-      ],
-      "setup": "Homeland Security propaganda poster",
-      "punchline": "The slogan directly relates to Liz's situation with Raheem",
-      "craft_total": 6.75,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good visual setup that directly feeds into the plot. The real slogan becomes darkly comic in context of Liz's paranoia."
-    },
-    {
-      "index": 27,
-      "text": "I mean, who knew that ottoman had wheels, right?",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "physical_slapstick"
-      ],
-      "setup": "Jack apologizing for dropping someone during sex",
-      "punchline": "The unexpected furniture malfunction during intimacy",
-      "craft_total": 7.19,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "A series of Sheinhardt Wig Company propaganda clips air on TV.",
+      "punchline": "Liz's response to the blatantly propagandistic corporate messaging is her signature 'What the what?' \u2014 her trademark mild profanity stand-in.",
+      "craft_total": 7.46,
+      "impact_score": 6.75,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good physical comedy inference. The specific detail about wheels on furniture creates a vivid and ridiculous mental image."
-    },
-    {
-      "index": 28,
-      "text": "turning the children of Chickotagua orange.",
-      "characters": [
-        "TV Reporter"
-      ],
-      "joke_types": [
-        "absurdist",
-        "visual_gag"
-      ],
-      "setup": "Sheinhardt Wig Company dumped dye into river",
-      "punchline": "The ridiculous consequence of orange children",
-      "craft_total": 7.18,
-      "impact_score": 7.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Wonderfully absurd consequence of corporate malfeasance. Orange children is both ridiculous and somehow plausible for 30 Rock's universe."
+      "explanation": "'What the what?' is established Liz Lemon vocabulary. Functional and character-consistent, though it's a running gag credit rather than an original joke."
     },
     {
       "index": 29,
-      "text": "I gave her the ottoman, and she walked out.",
-      "characters": [
-        "Jack"
-      ],
+      "text": "Sheinhardt PR propaganda sequence: 'IF YOU SEE SOMETHING, SAY SOMETHING' / 'IF YOU SUSPECT ANYTHING, DO EVERYTHING' / 'WE DON'T POISON THE WORLD. TERRORISTS DO.'",
+      "characters": [],
       "joke_types": [
-        "callback"
+        "visual_gag",
+        "dark_subversive",
+        "irony_sarcasm"
       ],
-      "setup": "Jack explaining why C.C. left",
-      "punchline": "Callback to the wheeled ottoman sex mishap",
-      "craft_total": 7.12,
-      "impact_score": 6.25,
-      "quotability": 6.5,
+      "setup": "Sheinhardt Wig Company is running a PR campaign after the river poisoning scandal.",
+      "punchline": "The company co-opts post-9/11 security messaging to deflect from their environmental crimes \u2014 the final slogan 'We don't poison the world. Terrorists do.' is the peak absurdity.",
+      "craft_total": 8.25,
+      "impact_score": 8.33,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good callback that extends the physical comedy. Jack's attempt at romantic generosity being rejected is nicely awkward."
+      "is_callback": 0,
+      "explanation": "Exceptional satirical writing. The joke exploits the exact logic of post-9/11 PR spin: redirect suspicion, weaponize fear, co-opt patriotism. The escalation from the real 'See Something, Say Something' to 'Suspect Anything, Do Everything' to 'We don't poison the world. TERRORISTS do' is a masterclass in escalating corporate absurdism. Highly quotable, genuinely sharp media criticism."
     },
     {
       "index": 30,
-      "text": "I'm kidding. Be an American--call it in.",
+      "text": "And thank you for letting me try the thing I tried. I'm... sorry I dropped you. / Oh, no, it was great. I mean, who knew that ottoman had wheels, right?",
       "characters": [
+        "Jack",
+        "C.C."
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "cringe_discomfort"
+      ],
+      "setup": "Jack and C.C. are having a post-coital morning conversation after their first night together.",
+      "punchline": "Jack's apology for 'dropping' C.C. during some unspecified sex act, and C.C.'s cheerful forgiveness, blaming an ottoman with wheels \u2014 implying a chaotic, slapstick sexual encounter.",
+      "craft_total": 7.66,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A good 'morning after' cringe joke. The vagueness of 'the thing I tried' creates a comedy gap the audience fills in, and the ottoman-with-wheels detail is specific and physical. Economical and character-appropriate for both."
+    },
+    {
+      "index": 31,
+      "text": "You didn't tell me you're a congresswoman! / I just ended my first year. / [cutaway to TV showing her attacking Sheinhardt]",
+      "characters": [
+        "Jack",
+        "C.C."
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "setup_punchline"
+      ],
+      "setup": "Jack is trying to see C.C. again after their night together. She appears on TV \u2014 as a congresswoman attacking his company.",
+      "punchline": "The reveal that his romantic interest is the politician targeting his company \u2014 pure situational irony with perfect comedic timing via the cutaway.",
+      "craft_total": 7.43,
+      "impact_score": 7.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Classic rom-com 'reveal' structure executed cleanly. The joke is structural rather than verbal \u2014 it's the juxtaposition of pillow talk and political warfare. The rewatch bonus is high for those catching the Sheinhardt pin foreshadowing."
+    },
+    {
+      "index": 32,
+      "text": "The Sheinhardt Wig Company has dumped thousands of gallons of Auburn Fantasy Dye #260 into the Chickotagua River, turning the children of Chickotagua orange.",
+      "characters": [
+        "C.C."
+      ],
+      "joke_types": [
+        "absurdist",
+        "dark_subversive"
+      ],
+      "setup": "C.C. is attacking Sheinhardt on TV for environmental crimes.",
+      "punchline": "The children being turned ORANGE \u2014 a vivid, specific, absurd consequence of wig dye pollution. 'Auburn Fantasy #260' is the perfect bureaucratic detail.",
+      "craft_total": 7.57,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The orange children are a perfect absurdist detail \u2014 specific, visual, and horrifying in a cartoonish way. The dye number ('Auburn Fantasy #260') gives it fake corporate specificity that earns the laugh. Returns and escalates throughout the episode."
+    },
+    {
+      "index": 33,
+      "text": "I think my middle eastern neighbor is a terrorist, and I don't know what to do. / That's ridiculous, Lemon. Some of our greatest patriots have been of Middle Eastern descent. And I'm appalled to hear you engage in racial profiling like that. [beat] I'm kidding. Be an American \u2014 call it in.",
+      "characters": [
+        "Liz",
         "Jack"
       ],
       "joke_types": [
         "misdirection",
-        "dark_subversive"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Jack appears to defend Middle Eastern Americans",
-      "punchline": "Immediate reversal encouraging racial profiling as patriotic duty",
-      "craft_total": 7.72,
-      "impact_score": 7.33,
-      "quotability": 9.0,
+      "setup": "Liz confesses her suspicion to Jack, expecting judgment.",
+      "punchline": "Jack performs liberal outrage perfectly, then reveals he was joking and tells her to report Raheem \u2014 the 'I'm kidding' pivot lands like a gut punch that doubles as a joke.",
+      "craft_total": 7.83,
+      "impact_score": 7.83,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Masterful misdirection and character moment. Jack's fake liberal stance followed by corporate-patriotic encouragement of paranoia is peak 30 Rock satire."
+      "explanation": "Exceptional. The structure is perfect misdirection: Jack performs the 'correct' liberal response with such conviction that the audience is briefly fooled, then the 'I'm kidding' reveals his actual worldview in one devastating word. 'Be an American \u2014 call it in' is the ideal Jack Donaghy punchline. Character-specific, dark, and structurally elegant."
     },
     {
-      "index": 31,
-      "text": "If a bleeding heart liberal like you has any suspicions...",
+      "index": 34,
+      "text": "If a bleeding heart liberal like you has any suspicions... / I know, right?",
       "characters": [
-        "Jack"
+        "Jack",
+        "Liz"
       ],
       "joke_types": [
         "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Liz having second thoughts about calling",
-      "punchline": "Jack using her liberal politics to justify the paranoia",
-      "craft_total": 8.09,
-      "impact_score": 7.5,
-      "quotability": 7.5,
+      "setup": "Jack is convincing Liz to report Raheem.",
+      "punchline": "Jack calls Liz a 'bleeding heart liberal' \u2014 and Liz AGREES with the framing, simultaneously accepting both his characterization of her AND his logic.",
+      "craft_total": 7.76,
+      "impact_score": 7.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Smart character dynamics. Jack manipulating Liz's self-image to encourage her worst impulses is cleverly written."
+      "explanation": "Liz's complicit 'I know, right?' is a small but effective beat \u2014 she's been manipulated into agreeing with something she'd normally oppose. Character-consistent and ironic."
     },
     {
-      "index": 32,
-      "text": "Well, sure, 'cause that Verizon wireless service is just unbeatable. I mean, if I saw a phone like that on TV, I would be like, 'where is my nearest retailer so I can... get one?'",
+      "index": 35,
+      "text": "Nice ring tone, Jack. / That's not my ring tone. I hate that San Francisco sound. / How am I calling myself?",
+      "characters": [
+        "Jack",
+        "C.C."
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Jack hears his phone ringing and disavows the ringtone.",
+      "punchline": "He asks 'How am I calling myself?' \u2014 revealing the phones got swapped, and the device that leads to their reunion.",
+      "craft_total": 7.04,
+      "impact_score": 6.25,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'I hate that San Francisco sound' is Jack's most efficient political joke \u2014 six words that tell you exactly who he is. The phone swap is a plot device more than a joke, but the San Francisco dismissal elevates it."
+    },
+    {
+      "index": 36,
+      "text": "These Verizon Wireless phones are just so popular. I accidentally grabbed one belonging to an acquaintance. / Well, sure, 'cause that Verizon Wireless service is just unbeatable. I mean, if I saw a phone like that on TV, I would be like, 'Where is my nearest retailer so I can...get one?'",
+      "characters": [
+        "Jack",
+        "C.C."
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "irony_sarcasm"
+      ],
+      "setup": "Jack and C.C. are trying to explain their situation without admitting they slept together.",
+      "punchline": "Both immediately pivot to wooden, stilted product placement \u2014 acknowledging the in-show Verizon sponsorship with maximum awkwardness.",
+      "craft_total": 7.7,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "30 Rock's meta-commentary on product placement is a running gag across the series, but this execution is among the best. The joke works on multiple levels: it's both a product placement AND a joke about how awful product placement is. C.C.'s 'Where is my nearest retailer so I can... get one?' delivery (with the long pause) is perfectly stilted. Highly self-aware."
+    },
+    {
+      "index": 37,
+      "text": "Can we have our money now? / Come on... big money.",
       "characters": [
         "Kenneth"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "character_comedy"
+        "visual_gag",
+        "physical_slapstick"
       ],
-      "setup": "Kenneth responding to Jack's Verizon mention",
-      "punchline": "Even more obvious and stilted product placement delivery",
-      "craft_total": 7.6,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Kenneth is continuing his fundraising montage.",
+      "punchline": "Kenneth is apparently gambling or doing a game-show-style activity and hoping for 'big money' \u2014 the absurdity of this respectable, innocent NBC page gambling for pants money.",
+      "craft_total": 7.51,
+      "impact_score": 7.25,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Escalates the product placement joke perfectly. Kenneth's even more unnatural delivery makes it hilariously obvious."
+      "explanation": "A montage beat \u2014 works as part of the Kenneth escalation but isn't strong enough to stand alone. Functional."
     },
     {
-      "index": 33,
-      "text": "Can we have our money now? Come on... big money.",
+      "index": 38,
+      "text": "This ketchup expired two years ago. / Dude, how much would I have to pay you to eat this whole bottle?",
       "characters": [
-        "Writers"
-      ],
-      "joke_types": [
-        "meta_self_referential",
-        "reaction_beat"
-      ],
-      "setup": "After the blatant product placement",
-      "punchline": "Writers asking for their Verizon paycheck",
-      "craft_total": 7.81,
-      "impact_score": 7.67,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect meta-commentary on product placement. Breaking the fourth wall to acknowledge the commercial nature of TV writing is brilliant."
-    },
-    {
-      "index": 34,
-      "text": "In 1998, I got shot in the face by my neighbor's dog.",
-      "characters": [
-        "C.C."
+        "Tracy's Team"
       ],
       "joke_types": [
         "absurdist",
-        "misdirection"
+        "escalation"
       ],
-      "setup": "C.C. explaining what made her want to help people",
-      "punchline": "Completely unexpected and impossible scenario",
-      "craft_total": 8.41,
-      "impact_score": 8.67,
-      "quotability": 10.0,
-      "rewatch_bonus": 1,
+      "setup": "Kenneth is performing various stunts to raise money.",
+      "punchline": "Being paid to eat an entire bottle of 2-year-expired ketchup \u2014 a specific, disgusting, and perfectly banal degradation.",
+      "craft_total": 5.81,
+      "impact_score": 5.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "One of the most memorable 30 Rock lines ever. The casual delivery of something so absurd and impossible creates perfect comedy shock."
+      "explanation": "The specificity of 'expired two years ago' makes it funnier than just 'old ketchup.' Contributes to the escalating degradation of Kenneth's fundraising. Solid but not exceptional."
     },
     {
-      "index": 35,
-      "text": "My neighbor had a Riverton hunting rifle with a faulty trigger safety. One day, his Jack Russell terrier started chewing the area, the gun went off, and shot me in the face.",
+      "index": 39,
+      "text": "God, I wanna kiss you on the mouth to stop you from saying such ridiculous things.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "C.C. is explaining she's helping Hillary Clinton retool her universal health care platform.",
+      "punchline": "Jack wants to kiss her not out of desire but to physically silence her liberal politics \u2014 desire and political antagonism fused into one impulse.",
+      "craft_total": 8.21,
+      "impact_score": 8.17,
+      "quotability": 9.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes and one of the series' great Jack lines. The economy is exceptional \u2014 he simultaneously expresses attraction AND political contempt in one sentence. It's romantic and hostile at the same time. The 'ridiculous things' framing (universal health care) does double satirical duty. Extremely quotable."
+    },
+    {
+      "index": 40,
+      "text": "They have no other documented health problems, you know. / They're ORANGE!",
+      "characters": [
+        "Jack",
+        "C.C."
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Jack tries to minimize the Sheinhardt river poisoning.",
+      "punchline": "C.C. rightly points out that being orange is itself a significant health problem \u2014 Jack's corporate minimization meets her moral clarity.",
+      "craft_total": 8.01,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A callback that escalates the orange children joke. Jack's damage-control logic ('no other documented health problems') against C.C.'s 'They're ORANGE!' is a perfect two-beat joke. The caps delivery implies C.C. shouting in disbelief."
+    },
+    {
+      "index": 41,
+      "text": "In 1998, I got shot in the face by my neighbor's dog. / Oh, C.C., I'm so\u2014 wait, what?",
+      "characters": [
+        "C.C.",
+        "Jack"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "C.C. explains what drove her into politics. Jack prepares to offer sympathy.",
+      "punchline": "'By my neighbor's dog' \u2014 the story starts with a sympathetic shooting but the perpetrator is a dog. Jack's interrupted sympathy ('I'm so\u2014 wait, what?') is the perfect reaction.",
+      "craft_total": 8.63,
+      "impact_score": 8.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Brilliant misdirection. The setup ('I got shot in the face') earns genuine sympathy, then 'by my neighbor's dog' completely detonates that. Jack's interrupted response \u2014 cutting himself off mid-condolence to process what he just heard \u2014 is perfect. The structure is elegant and economical."
+    },
+    {
+      "index": 42,
+      "text": "My neighbor had a Riverton hunting rifle with a faulty trigger safety. One day, his jack russell terrier started chewing the area, the gun went off, and shot me in the face.",
       "characters": [
         "C.C."
       ],
@@ -672,385 +824,732 @@
         "absurdist",
         "escalation"
       ],
-      "setup": "Explaining how a dog shot her",
-      "punchline": "Completely logical explanation for completely illogical premise",
-      "craft_total": 7.84,
-      "impact_score": 7.25,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "C.C. elaborates on being shot by a dog.",
+      "punchline": "The full absurd mechanics of the incident \u2014 a jack russell terrier chewing a gun's trigger, causing it to discharge \u2014 is told with matter-of-fact calm.",
+      "craft_total": 8.09,
+      "impact_score": 8.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Brilliant escalation of the absurd premise with oddly plausible details. The callback to the opening makes it even funnier."
+      "explanation": "The payoff also retroactively explains why Liz's opening mention of a Jack Russell terrier was thematically planted. The deadpan narration of this absurd chain of events is strong. Good callback to the dog-from-the-opening."
     },
     {
-      "index": 36,
+      "index": 43,
       "text": "So I did what was right: I sued Riverton, my neighbor, and the dog.",
       "characters": [
         "C.C."
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "absurdist",
+        "setup_punchline"
       ],
-      "setup": "C.C. deciding to take action after being shot",
-      "punchline": "Including the dog in the lawsuit",
-      "craft_total": 7.2,
-      "impact_score": 6.17,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "C.C. describes her response to being shot in the face by a dog.",
+      "punchline": "She sued the dog \u2014 legally treating the dog as a defendant, a perfectly absurd conclusion to the already absurd origin story.",
+      "craft_total": 7.86,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect escalation. Suing the dog as if it's a responsible party is wonderfully absurd yet in character for a litigious politician."
+      "explanation": "The escalation from 'sued Riverton' to 'and the dog' is perfectly placed. The pause implied before 'and the dog' lands it. Economical and absurd."
     },
     {
-      "index": 37,
+      "index": 44,
+      "text": "After six reconstructive surgeries, I'm much better-looking now than I used to be. Plus, they made a Lifetime movie about me.",
+      "characters": [
+        "C.C."
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "deadpan_understatement"
+      ],
+      "setup": "C.C. reassures Jack that the shooting had a silver lining.",
+      "punchline": "The silver lining is not just resilience \u2014 she looks better and got a Lifetime movie, treating severe facial trauma as a career and beauty upgrade.",
+      "craft_total": 7.78,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent dark comedy. The silver lining of being shot in the face is improved looks and a Lifetime movie \u2014 both are ridiculous positives that only make sense in Hollywood logic. The two-beat payoff (looks + Lifetime) works better than one alone."
+    },
+    {
+      "index": 45,
+      "text": "Tonight on Lifetime: Candace Van Der Shark stars as Celeste Cunningham \u2014 'A Dog Took My Face and Gave Me a Better Face to Change the World: The Celeste Cunningham Story'",
+      "characters": [],
+      "joke_types": [
+        "visual_gag",
+        "absurdist"
+      ],
+      "setup": "C.C. mentions a Lifetime movie was made about her story.",
+      "punchline": "The Lifetime movie title is a maximally on-the-nose melodramatic summary: 'A Dog Took My Face and Gave Me a Better Face to Change the World' \u2014 parody of the Lifetime movie naming convention taken to its logical extreme.",
+      "craft_total": 7.42,
+      "impact_score": 7.5,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Exceptional joke. The Lifetime movie title is a masterpiece of absurdist escalation \u2014 every additional word makes it funnier. It's also a callback to the earlier Lifetime movie promo. The name 'Candace Van Der Shark' playing C.C. is an additional absurdist detail (fake soap opera name). This is easily quotable and one of the episode's most memorable moments."
+    },
+    {
+      "index": 46,
       "text": "You know, I thought you made love like an ugly girl. So present, so grateful.",
       "characters": [
         "Jack"
       ],
       "joke_types": [
-        "observational",
-        "cringe_discomfort"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Jack explaining C.C.'s sexual technique",
-      "punchline": "Backhanded compliment based on self-esteem theory",
-      "craft_total": 8.15,
-      "impact_score": 8.17,
+      "setup": "Jack is reflecting on C.C. after their night together, in light of her dog-shooting story.",
+      "punchline": "He reveals his theory that she made love 'like an ugly girl \u2014 so present, so grateful' \u2014 a backhanded compliment that is simultaneously horrible and somehow romantic in Jack's framework.",
+      "craft_total": 9.01,
+      "impact_score": 9.17,
       "quotability": 9.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfectly horrible Jack observation that's both offensive and oddly insightful. The specificity makes it memorably awful."
+      "explanation": "One of the episode's \u2014 and arguably the series' \u2014 great lines. 'Made love like an ugly girl. So present, so grateful.' is devastating, funny, and somehow revealing of both Jack's worldview and the genuine tenderness beneath it. It's completely original, the character integration is perfect (only Jack Donaghy could say this and make it romantic), and the economy is flawless. Comparable to the 9.5 anchor in quality."
     },
     {
-      "index": 38,
+      "index": 47,
+      "text": "I've had plenty of women mad at me the morning after. Just don't let her light your sneakers on fire in the bathtub. / Oh, she would never do that, Tracy. She's a very special woman.",
+      "characters": [
+        "Tracy",
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Tracy is giving Jack advice about women who are angry at him.",
+      "punchline": "Tracy's specific warning about sneakers-on-fire-in-bathtub implies this has happened to him, and Jack's earnest defense of C.C. is funny against Tracy's worldly absurdism.",
+      "craft_total": 7.48,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Tracy's experiential wisdom about post-hookup danger is specific and absurd in all the right ways. The shoe-fire image is vivid. Jack's sincere defense of C.C. creates a nice tonal contrast. Strong character work from both."
+    },
+    {
+      "index": 48,
       "text": "Oh, I get it: Romeo and Juliet. Capulets and Romulans.",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "character_comedy",
         "absurdist"
       ],
-      "setup": "Tracy understanding Jack's romantic conflict",
-      "punchline": "Mixing Shakespeare with Star Trek",
-      "craft_total": 7.77,
-      "impact_score": 7.5,
+      "setup": "Jack describes the Romeo-and-Juliet nature of his relationship with C.C.",
+      "punchline": "Tracy conflates the Capulets (Romeo and Juliet) with Romulans (Star Trek villains) \u2014 either a genuine mix-up or Tracy substituting the nearest sci-fi faction.",
+      "craft_total": 8.09,
+      "impact_score": 8.0,
       "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Tracy Jordan confusion mixing high culture with pop culture. The confidence in his wrong answer makes it funnier."
+      "explanation": "A perfect Tracy malapropism. The joke works because 'Romulans' is almost phonetically similar to 'Montagues' \u2014 it's not random, it's the kind of thing Tracy's brain would do. Character integration is near-perfect. Extremely quotable and economical."
     },
     {
-      "index": 39,
-      "text": "I'm black, she's white. I'm black, she's light-skinned black. I'm black, she's 17.",
+      "index": 49,
+      "text": "Mm-hmm, I've been there. I'm Black, she's white. I'm Black, she's light-skinned Black. I'm Black, she's 17.",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
+        "dark_subversive",
         "escalation",
-        "dark_subversive"
+        "character_comedy"
       ],
-      "setup": "Tracy listing his interracial relationship experiences",
-      "punchline": "Escalating from race issues to age inappropriateness",
-      "craft_total": 8.02,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Tracy is comparing his own romantic history to Jack's Romeo-and-Juliet situation.",
+      "punchline": "The escalating list of Tracy's 'forbidden' relationships ends on 'she's 17' \u2014 a dark escalation that ends on the most alarming note.",
+      "craft_total": 8.37,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation structure that gets progressively more problematic. Classic Tracy oversharing with disturbing implications."
+      "explanation": "A brilliant escalation joke. The structure is perfect: each entry raises the ante slightly (white \u2192 light-skinned Black) before the final beat ('she's 17') lands as a genuinely dark gut-punch. The repetition of 'I'm Black' makes it a list joke with perfect rhythm. Only Tracy, only 30 Rock."
     },
     {
-      "index": 40,
-      "text": "and she does it like her dad's a minister.",
+      "index": 50,
+      "text": "I don't care if she is beautiful, brilliant, and she does it like her dad's a minister.",
       "characters": [
         "Jack"
       ],
       "joke_types": [
-        "observational"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Jack listing C.C.'s positive qualities",
-      "punchline": "Oddly specific sexual observation about repression",
-      "craft_total": 7.76,
-      "impact_score": 7.33,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Jack insists he can't pursue C.C. despite his feelings.",
+      "punchline": "His list of her qualities ends with 'she does it like her dad's a minister' \u2014 a euphemism for missionary-position earnestness that is both vulgar and somehow chivalric coming from Jack.",
+      "craft_total": 8.41,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Jack Donaghy sexual observation. The specificity about religious repression affecting sexual behavior is very in character."
+      "explanation": "Excellent. 'She does it like her dad's a minister' is a perfectly crafted euphemism \u2014 simultaneously crude and somehow innocent-sounding, which makes it funnier. The implied compliment (missionary, wholesome, earnest sex as a positive) is unexpected for Jack. Highly quotable, well-constructed."
     },
     {
-      "index": 41,
+      "index": 51,
       "text": "We Parcells are neither wealthy nor circumcised, but we are proud.",
       "characters": [
         "Kenneth"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Kenneth explaining why he won't take money from the writers",
-      "punchline": "Bizarre family motto with unexpected personal detail",
-      "craft_total": 8.47,
-      "impact_score": 8.33,
+      "setup": "Kenneth refuses charity from Tracy's team, insisting on earning the pants money himself.",
+      "punchline": "His family pride speech includes 'neither wealthy nor circumcised' as a matter-of-fact detail \u2014 an unexpected and overshared physical characteristic in a speech about moral character.",
+      "craft_total": 8.93,
+      "impact_score": 9.0,
       "quotability": 9.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Absolutely brilliant Kenneth line. The combination of dignity and oversharing about circumcision is perfectly weird and memorable."
+      "explanation": "One of the episode's top jokes and a 30 Rock classic. 'Neither wealthy nor circumcised, but we are proud' is a perfect Kenneth joke: it sounds like a genuine Appalachian family motto, the overshared physical detail ('circumcised') is absurdly specific, and Kenneth delivers it with complete sincerity. The three-element list (wealthy / circumcised / proud) has perfect comic rhythm. This earns its 9+ score \u2014 it's exceptional writing, comparable to the Snip Snap anchor in structure and quotability."
     },
     {
-      "index": 42,
-      "text": "Soon everyone will know the name Raheem Haddad.",
+      "index": 52,
+      "text": "Every night after dinner, Lutz falls asleep on the couch in our office. [implied: Kenneth is about to do something humiliating to the sleeping Lutz for money]",
       "characters": [
-        "Raheem"
+        "Tracy's Team",
+        "Kenneth"
       ],
       "joke_types": [
-        "misdirection"
+        "setup_punchline",
+        "visual_gag"
       ],
-      "setup": "Raheem excited about completing his project",
-      "punchline": "Ominous statement that feeds Liz's paranoia but is innocent",
-      "craft_total": 7.37,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Tracy's team offers Kenneth a job to raise money \u2014 involving Lutz sleeping on the office couch.",
+      "punchline": "The cut-away before we see what happens implies something terrible and absurd is about to happen to sleeping Lutz \u2014 the unknown is funnier than the known.",
+      "craft_total": 6.61,
+      "impact_score": 6.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great dramatic irony. Innocent statement that sounds terrifying to paranoid observers, building tension for the reveal."
+      "explanation": "Effective use of the cut-away setup \u2014 the fact that we don't see what happens to Lutz is funnier than any specific answer. Lutz as a recurring abuse target is established 30 Rock shorthand."
     },
     {
-      "index": 43,
-      "text": "I'm going to get into politics!",
-      "characters": [
-        "C.C. from Lifetime movie"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "meta_self_referential"
-      ],
-      "setup": "Lifetime movie recreation of C.C.'s origin story",
-      "punchline": "Melodramatic declaration after dog shooting",
-      "craft_total": 6.91,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good satire of Lifetime movie melodrama. The over-the-top recreation of the absurd story works well as visual comedy."
-    },
-    {
-      "index": 44,
-      "text": "No, we're cool. Uh, I renounce Raheem. Raheem's a bad guy. USA number one!",
+      "index": 53,
+      "text": "He just completed some big project he's been working on. Soon everyone will know the name Raheem Haddad.",
       "characters": [
         "Pete"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "misdirection",
+        "setup_punchline"
       ],
-      "setup": "Jack threatens to report Pete too",
-      "punchline": "Pete's panicked over-the-top patriotic display",
-      "craft_total": 7.03,
-      "impact_score": 6.67,
-      "quotability": 8.0,
+      "setup": "Pete explains why Raheem is celebrating.",
+      "punchline": "'Soon everyone will know the name Raheem Haddad' \u2014 in context of Liz's suspicion, this sounds like a terrorist declaration, but is actually about The Amazing Race.",
+      "craft_total": 7.65,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great cringe moment showing how fear spreads. Pete's desperate overcompensation with 'USA number one!' is perfectly pathetic."
+      "explanation": "Excellent setup for the episode's central reversal. The line is crafted to sound exactly like a thriller line about a dangerous man, and the misdirection pays off enormously in the revelation scene. Good structural writing."
     },
     {
-      "index": 45,
-      "text": "I get my jamaican meat pies there.",
+      "index": 54,
+      "text": "Hi, I'm not sure, but\u2014 / Who is he, and where can we find him?",
       "characters": [
-        "Tracy"
+        "Liz",
+        "Homeland Security Agent"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "irony_sarcasm",
+        "setup_punchline"
       ],
-      "setup": "Tracy knowing where Clinton's Harlem office is",
-      "punchline": "His reason for familiarity is food-related",
-      "craft_total": 6.97,
-      "impact_score": 6.25,
-      "quotability": 5.0,
+      "setup": "Liz calls the Homeland Security contact Jack gave her, apparently uncertain about reporting Raheem.",
+      "punchline": "The agent cuts her off before she can even finish her sentence \u2014 they're so primed to investigate that any hesitation is irrelevant. Governmental over-eagerness.",
+      "craft_total": 7.23,
+      "impact_score": 6.75,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Tracy Jordan food obsession. Functional character comedy but not exceptional."
+      "explanation": "Strong satirical beat. The government agent's immediate, zero-hesitation response before Liz even finishes her sentence captures the post-9/11 surveillance state's hair-trigger. Economy is excellent."
     },
     {
-      "index": 46,
-      "text": "And this is my brother Hakim. And these are the reasons you should choose us to be the next contestants on The Amazing Race!",
+      "index": 55,
+      "text": "Get the gun away from the dog! / Hey, hon, have you seen my hunting rifle? / Last time I saw it... the dog had it. / What is wrong with you people?",
       "characters": [
-        "Raheem"
+        "C.C.",
+        "Neighbor",
+        "Neighbor's wife"
       ],
       "joke_types": [
-        "misdirection"
+        "callback",
+        "absurdist"
       ],
-      "setup": "Raheem's mysterious project is revealed",
-      "punchline": "It's an innocent reality show audition tape",
+      "setup": "C.C.'s origin story is shown in a flashback/re-enactment cutaway.",
+      "punchline": "The neighbor's wife's casual answer ('the dog had it') and C.C.'s exasperated 'What is wrong with you people?' \u2014 the absurdity is played completely straight.",
+      "craft_total": 7.78,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The visual payoff of the origin story is excellent. The casual 'the dog had it' \u2014 as if this were completely normal \u2014 is perfectly deadpan. The re-enactment format (like a Lifetime movie or true-crime reenactment) adds an additional layer. C.C.'s exasperation is the correct reaction for any reasonable person."
+    },
+    {
+      "index": 56,
+      "text": "I'm going to get into politics!",
+      "characters": [
+        "Young C.C."
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "callback"
+      ],
+      "setup": "The origin story ends with young C.C. declaring her political future.",
+      "punchline": "The absurd chain \u2014 dog shoots face, inspires political career \u2014 reaches its triumphant conclusion with a Lifetime-movie-style declaration.",
+      "craft_total": 7.79,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The triumphant punchline of the origin story sequence. Works as the culmination of the absurdist chain. The Lifetime movie melodrama of the declaration is well-deployed."
+    },
+    {
+      "index": 57,
+      "text": "Ape attack! / Ape attack. / Smarts! / Are you okay? / Okay, that went too far.",
+      "characters": [
+        "Kenneth",
+        "Tracy's Team"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "escalation"
+      ],
+      "setup": "Kenneth is performing another stunt for money \u2014 apparently involving an ape.",
+      "punchline": "'Okay, that went too far' \u2014 the acknowledgment that in a series of degradations, the ape attack was the line they shouldn't have crossed.",
+      "craft_total": 7.01,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The ape attack is a great escalation of the Kenneth degradation arc. 'That went too far' as self-commentary (after expired ketchup, gambling, and implied Lutz abuse) is funny because it implies everything else was acceptable. The brevity of 'Ape attack!' is perfect."
+    },
+    {
+      "index": 58,
+      "text": "You know that old lady in accounting who thinks you're her husband who died in the war? / What about her?",
+      "characters": [
+        "Tracy's Team",
+        "Kenneth"
+      ],
+      "joke_types": [
+        "absurdist",
+        "setup_punchline"
+      ],
+      "setup": "Tracy's team proposes the next money-making scheme for Kenneth.",
+      "punchline": "The setup alone is the joke \u2014 the existence of an old lady in accounting who mistakes Kenneth for her dead war husband is an absurdist premise delivered as established fact.",
+      "craft_total": 7.77,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A brilliant throwaway world-building joke. The very existence of this character (war widow who mistakes Kenneth for her husband) is funny as established fact. Kenneth's neutral 'What about her?' implies he knows exactly who she's talking about, which is even funnier."
+    },
+    {
+      "index": 59,
+      "text": "I do believe in destiny. And I know that I should hate you, but I can't. I love you. And I don't care what people say. We were meant to be in each other's lives. [cut to reveal it's Kenneth talking to the pants]",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "misdirection",
+        "visual_gag"
+      ],
+      "setup": "A dramatic speech about love and destiny begins \u2014 the audience assumes it's about a person.",
+      "punchline": "Kenneth is delivering this speech to Jack's pants \u2014 which he has apparently just found.",
+      "craft_total": 8.13,
+      "impact_score": 8.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent structural misdirection. The speech is written to read as a genuine romantic declaration, and the reveal (pants) is completely unexpected while also being character-perfect for Kenneth. The pants callback resolves the B-plot with a comedic flourish. The earnestness of the speech makes the visual reveal land hard."
+    },
+    {
+      "index": 60,
+      "text": "Some dudes took Raheem last night. / Sounds like an American hero saw something and said something.",
+      "characters": [
+        "Pete",
+        "Jack"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "dark_subversive"
+      ],
+      "setup": "Pete reports that Raheem has been taken by 'some dudes.'",
+      "punchline": "Jack's smug response \u2014 'Sounds like an American hero saw something and said something' \u2014 is both a callback to his own advice to Liz AND the Sheinhardt PR slogan, delivered with complete satisfaction.",
       "craft_total": 7.9,
       "impact_score": 7.67,
       "quotability": 7.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect payoff to the entire paranoia subplot. The completely innocent explanation recontextualizes all previous 'suspicious' behavior brilliantly."
+      "is_callback": 1,
+      "explanation": "Strong callback that ties the episode's satirical threads together. Jack's co-opting of the surveillance state slogan to congratulate Liz on having an innocent person detained is pitch-dark and pitch-perfect."
     },
     {
-      "index": 47,
-      "text": "We love America!",
+      "index": 61,
+      "text": "You seem to be defending Raheem an awful lot. I'd hate to have to make another phone call. / No, we're cool. Uh, I renounce Raheem. Raheem's a bad guy. USA number one!",
       "characters": [
-        "Raheem and Hakim"
+        "Jack",
+        "Pete"
       ],
       "joke_types": [
-        "cringe_discomfort"
-      ],
-      "setup": "Brothers enthusiastically declaring patriotism for Amazing Race tape",
-      "punchline": "Innocent statement that would sound terrifying to homeland security",
-      "craft_total": 6.94,
-      "impact_score": 6.75,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good dramatic irony showing how innocent patriotism can be misinterpreted. The earnestness makes their situation more tragic and funny."
-    },
-    {
-      "index": 48,
-      "text": "Tell her you want her privates and her privates to do a high-five.",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Tracy giving Jack romantic advice",
-      "punchline": "Childish euphemism for sex delivered with confidence",
-      "craft_total": 7.98,
-      "impact_score": 8.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Pete is outraged that Raheem was detained. Jack implies Pete could be next.",
+      "punchline": "Pete immediately folds: 'I renounce Raheem. Raheem's a bad guy. USA number one!' \u2014 a complete, instantaneous capitulation to implied government threat.",
+      "craft_total": 8.18,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Tracy Jordan inappropriate advice. The childish terminology delivered as serious romantic guidance is perfectly in character."
+      "explanation": "One of the episode's sharpest political jokes. Pete's instant, total reversal \u2014 'I renounce Raheem. Raheem's a bad guy. USA number one!' \u2014 is both funny and genuinely dark commentary on how quickly people abandon principle under implied state pressure. The 'USA number one!' is the perfect signifier of coerced patriotism."
     },
     {
-      "index": 49,
-      "text": "Tell her she got some tig ol' biddies like the Dallas Cowboy cheerleaders.",
+      "index": 62,
+      "text": "I've gotta go somewhere, and I can't be seen, and cabs don't go there. / Sure, where is it? / Clinton's office in Harlem. / I know where that building is. I get my Jamaican meat pies there.",
       "characters": [
+        "Jack",
         "Tracy"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Tracy continuing his terrible romantic advice",
-      "punchline": "Spoonerism euphemism delivered earnestly",
-      "craft_total": 7.6,
-      "impact_score": 7.0,
+      "setup": "Jack needs an inconspicuous way to get to Harlem without being seen.",
+      "punchline": "Tracy knows the Clinton offices in Harlem because he gets his Jamaican meat pies there \u2014 a perfectly Tracy-specific reason that also implies he just wanders into the former president's building for lunch.",
+      "craft_total": 7.8,
+      "impact_score": 7.5,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "More Tracy inappropriateness. The spoonerism and specific cultural reference make it memorably crude yet somehow innocent."
+      "explanation": "Great Tracy character joke. The Jamaican meat pies reason is funny because it implies Tracy treats Clinton's offices as a neighborhood deli. The casual familiarity with the former President's building is very Tracy. Good economy."
     },
     {
-      "index": 50,
-      "text": "Tell her her butt look like a apple and you wanna take a bite.",
+      "index": 63,
+      "text": "Note from Raheem found in package: 'I know you are in the media. Please get this in the right hands. \u2014 Raheem' [followed by the Amazing Race audition tape revelation]",
+      "characters": [
+        "Liz",
+        "Raheem"
+      ],
+      "joke_types": [
+        "misdirection",
+        "setup_punchline"
+      ],
+      "setup": "Liz finds a note from Raheem in a package that reads like a plea from a persecuted dissident.",
+      "punchline": "The 'important information' is his Amazing Race audition tape \u2014 the most perfectly banal possible reveal after all the thriller-movie buildup.",
+      "craft_total": 8.04,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The episode's central comedic reveal. Everything about Raheem \u2014 the maps, the trips to the airport, the secrecy \u2014 has been systematically built up as terrorist activity, and the punchline is the Amazing Race. Structure is near-perfect. The note ('Please get this in the right hands') is written to read like a whistleblower's plea, which makes the payoff devastating. One of the episode's top moments."
+    },
+    {
+      "index": 64,
+      "text": "I am Raheem Haddad. And this is my brother Hakim. And these are the reasons you should choose us to be the next contestants on The Amazing Race!",
+      "characters": [
+        "Raheem"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "The 'important media information' is revealed to be an Amazing Race audition video.",
+      "punchline": "Raheem's sincere, enthusiastic Amazing Race pitch \u2014 the complete, innocent explanation for all of his 'suspicious' behavior.",
+      "craft_total": 7.71,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The payoff of the episode's central comedic misdirection. Every 'suspicious' detail is now explained by Amazing Race prep: maps (travel research), airport trips (practice), secrecy (not spoiling the application). The joke is excellent structurally and lands as both funny and a sharp commentary on racial profiling \u2014 the audience realizes Liz caused real harm to an innocent person."
+    },
+    {
+      "index": 65,
+      "text": "We love to travel. Look at all the places we have been: Toronto, Munich, London, the Hoover Dam, the Cleve.",
+      "characters": [
+        "Raheem"
+      ],
+      "joke_types": [
+        "absurdist",
+        "deadpan_understatement"
+      ],
+      "setup": "Raheem is listing impressive travel destinations to qualify for The Amazing Race.",
+      "punchline": "'The Cleve' (Cleveland) \u2014 after Toronto, Munich, and London, the list ends with 'the Cleve,' treating Cleveland as an equivalent world destination.",
+      "craft_total": 7.83,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A classic list-joke anti-climax. The escalation from world capitals to 'the Cleve' is perfectly structured. The affectionate nickname 'the Cleve' adds to the absurdity \u2014 it's like a local calling it that, not a world traveler."
+    },
+    {
+      "index": 66,
+      "text": "Jonathan... I purchased a replacement pair of Mr. Donaghy's pants. / You must love him as much as I do.",
+      "characters": [
+        "Kenneth",
+        "Jonathan"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Kenneth delivers replacement pants to Jonathan, having raised the money himself.",
+      "punchline": "Jonathan's response \u2014 'You must love him as much as I do' \u2014 implies Kenneth and Jonathan are in unspoken competition over their devotion to Jack, with Jonathan's sycophancy recognized as love.",
+      "craft_total": 7.44,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A nice button on the pants subplot. Jonathan's framing of Jack-devotion as 'love' is a subtle joke about his parasocial loyalty. Good economy."
+    },
+    {
+      "index": 67,
+      "text": "Tell her you want your privates and her privates to do a high-five.",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "absurdist"
       ],
-      "setup": "Tracy giving Jack romantic advice",
-      "punchline": "Comically inappropriate and crude romantic suggestion",
-      "craft_total": 7.78,
-      "impact_score": 7.25,
-      "quotability": 6.5,
+      "setup": "Tracy is coaching Jack on how to win C.C. back through her building intercom.",
+      "punchline": "'Privates doing a high-five' \u2014 Tracy's euphemism for sex, which is both more innocent and more absurd than the thing it describes.",
+      "craft_total": 8.28,
+      "impact_score": 8.5,
+      "quotability": 9.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Pure Tracy Jordan inappropriate advice. The apple metaphor is specific enough to be memorable."
+      "explanation": "A classic Tracy euphemism. 'Privates doing a high-five' manages to be both completely explicit and completely innocent at the same time \u2014 the high-five image is disarmingly cheerful. Highly quotable, pure Tracy voice, excellent economy."
     },
     {
-      "index": 51,
-      "text": "We'll ignore our differences till the sex goes bad, then we'll walk away bitter and angry.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "deadpan_understatement"
-      ],
-      "setup": "Jack and C.C. deciding to be together",
-      "punchline": "Brutally honest assessment of their relationship's future",
-      "craft_total": 8.04,
-      "impact_score": 7.5,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Jack Donaghy cynicism dressed as romantic commitment. The casual acceptance of inevitable failure is brilliantly dark."
-    },
-    {
-      "index": 52,
-      "text": "Stop eatin' people's old french fries, pigeon. Have some self-respect. Don't you know you can fly?",
+      "index": 68,
+      "text": "Tell her her butt looks like an apple and you wanna take a bite.",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Tracy talking to pigeons outside",
-      "punchline": "Motivational speech about pigeon potential and dignity",
-      "craft_total": 8.11,
-      "impact_score": 8.0,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Tracy continues coaching Jack with romantic advice.",
+      "punchline": "Apple-butt compliment \u2014 a specific, food-based body compliment delivered as serious romantic strategy.",
+      "craft_total": 7.79,
+      "impact_score": 7.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Pure Tracy Jordan gold. Giving life advice to pigeons about self-respect and their flying abilities is wonderfully absurd and touching."
+      "explanation": "Second in Tracy's coaching series. Slightly less original than the high-five joke but still character-specific. The food metaphor is Tracy-appropriate."
     },
     {
-      "index": 53,
-      "text": "They put electrodes on my testicles, Liz. America's government shocked my nuts.",
+      "index": 69,
+      "text": "Tell her she's got some tig ol' biddies like the Dallas Cowboy cheerleaders.",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Tracy's third romantic coaching suggestion to Jack.",
+      "punchline": "'Tig ol' biddies' \u2014 a spoonerism/malapropism of a vulgar phrase, delivered as high compliment.",
+      "craft_total": 7.67,
+      "impact_score": 7.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The spoonerism is a known joke but Tracy's delivery and the Dallas Cowboy cheerleaders specificity save it. Part of a running Tracy coaching gag in this scene."
+    },
+    {
+      "index": 70,
+      "text": "Tell her you want her to donate her body to science, and you are science.",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Tracy's fourth and final romantic coaching suggestion.",
+      "punchline": "'You want her to donate her body to science, and you are science' \u2014 an unexpected and gloriously convoluted euphemism for sex, delivered as Tracy's most sophisticated offering.",
+      "craft_total": 8.82,
+      "impact_score": 9.5,
+      "quotability": 10.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The episode's best Tracy joke and arguably one of the best jokes in the series. 'Tell her you want her to donate her body to science, and you are science' is a masterpiece of escalation \u2014 after three progressively absurd coaching suggestions, this one transcends the form. The metaphor is wildly convoluted yet somehow makes perfect sense. Originality is off the charts; it's the kind of line that couldn't be written by anyone other than the 30 Rock writing staff. Extremely quotable. This is a genuine 9+ moment."
+    },
+    {
+      "index": 71,
+      "text": "How you wanted to brush my hair as foreplay. How you made me that western omelet at 4:00 A.M.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Jack is confessing his deep feelings for C.C. through the intercom.",
+      "punchline": "Among Jack Donaghy's most romantic memories: hair-brushing as foreplay and a 4am western omelet \u2014 the omelet especially is a very specific, domestic, un-sexy detail that lands as genuinely sweet coming from Jack.",
+      "craft_total": 7.87,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The western omelet detail is perfectly specific \u2014 it humanizes Jack while also being funny because it's such an unlikely romantic touchstone for a powerful executive. 'Hair-brushing as foreplay' is more expected; the omelet is the funnier beat."
+    },
+    {
+      "index": 72,
+      "text": "We'll ignore our differences till the sex goes bad, then we'll... walk away bitter and angry.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Jack is making his romantic case to C.C. to be with him.",
+      "punchline": "He finishes his romantic pitch with a completely honest \u2014 and completely cynical \u2014 projection of how their relationship will end: 'walk away bitter and angry.' The anti-romantic punchline delivered mid-declaration.",
+      "craft_total": 8.52,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent. Jack's romantic declaration collapses into brutal self-aware cynicism mid-sentence \u2014 he starts with a classic romcom speech and ends with what he actually believes will happen. The structure (setup as romance, punchline as nihilism) is sophisticated and completely character-specific. This is what Jack Donaghy's version of a love declaration sounds like."
+    },
+    {
+      "index": 73,
+      "text": "Stop eating people's old French fries, pigeon. Have some self-respect. Don't you know you can fly?",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Tracy is left outside while Jack goes in to see C.C., with nothing to do.",
+      "punchline": "Tracy is lecturing a pigeon about its self-worth \u2014 implying the pigeon should know better than to eat trash when it has the gift of flight.",
+      "craft_total": 8.52,
+      "impact_score": 8.67,
+      "quotability": 10.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's \u2014 and the series' \u2014 greatest jokes. 'Stop eating people's old French fries, pigeon. Have some self-respect. Don't you know you can fly?' is a profound absurdity that also functions as unexpected pathos. Tracy is projecting his own existential themes onto a pigeon, with complete sincerity. The economy is perfect (every word is necessary), the character integration is perfect (only Tracy would do this), and it has genuine philosophical resonance that elevates it beyond mere absurdism. This is a genuine 9+ landmark."
+    },
+    {
+      "index": 74,
+      "text": "What do you say we go find a spot and defile this place?",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jack and C.C. have reunited in Clinton's Harlem office.",
+      "punchline": "Jack's euphemism for sex is 'defile this place' \u2014 framing their reconciliation tryst as an act of desecration of a liberal icon's office space.",
+      "craft_total": 7.87,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jack's choice of 'defile' is character-perfect \u2014 he's a conservative taking pleasure in sexually defiling Bill Clinton's workspace. The double meaning (the act itself / the political desecration) is elegantly compressed."
+    },
+    {
+      "index": 75,
+      "text": "They put electrodes on my testicles, Liz. / Who did? / Oh, you... remembered my name.",
+      "characters": [
+        "Raheem",
+        "Liz"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Raheem returns and Liz confronts him.",
+      "punchline": "Raheem's grateful surprise that Liz remembered his name \u2014 in the middle of describing being tortured \u2014 is a devastating comment on how dehumanized he was by the experience.",
+      "craft_total": 8.4,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A beautifully constructed dark joke. The structure is perfect: traumatic statement ('electrodes on my testicles') interrupted by Raheem's moved reaction to Liz knowing his name \u2014 implying that in his detention experience, no one bothered to use his name. Simultaneously funny and genuinely upsetting, which is 30 Rock's signature register."
+    },
+    {
+      "index": 76,
+      "text": "America's government shocked my nuts.",
       "characters": [
         "Raheem"
       ],
       "joke_types": [
         "dark_subversive",
-        "cringe_discomfort"
+        "deadpan_understatement"
       ],
-      "setup": "Raheem explaining his detention experience",
-      "punchline": "Casual description of torture with crude terminology",
-      "craft_total": 7.27,
-      "impact_score": 7.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Raheem is describing his detention.",
+      "punchline": "'America's government shocked my nuts' \u2014 the deadpan directness of this statement is both shocking and somehow funnier than more elaborate language.",
+      "craft_total": 8.13,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark comedy about the consequences of paranoia. Raheem's matter-of-fact delivery of torture makes it both funny and disturbing."
+      "explanation": "Maximum economy. Five words that are simultaneously absurd, dark, and politically pointed. 'America's government' (not just 'they') gives it a formal, civic weight that makes the colloquial 'shocked my nuts' even funnier by contrast. This line does enormous work in very few words."
     },
     {
-      "index": 54,
-      "text": "I want to do something spectacular with it.",
+      "index": 77,
+      "text": "They say, 'Raheem... why you no shake hands?' / I say, 'Because I don't want sickness before Amazing Race.' / They say, 'Raheem, why all the trips to the airport?' / I say, 'Because I'm practicing for the Amazing Race!'",
       "characters": [
         "Raheem"
       ],
       "joke_types": [
-        "misdirection"
+        "callback",
+        "setup_punchline"
       ],
-      "setup": "Raheem describing his anger after detention",
-      "punchline": "Ominous statement that could be misinterpreted again",
-      "craft_total": 7.23,
-      "impact_score": 6.67,
-      "quotability": 6.5,
+      "setup": "Raheem recounts his interrogation.",
+      "punchline": "Every 'suspicious' behavior Liz flagged has a completely mundane Amazing Race explanation, delivered as the answers Raheem gave to his interrogators \u2014 who presumably found them unconvincing.",
+      "craft_total": 8.39,
+      "impact_score": 8.67,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good setup for potential future paranoia. Raheem's innocent anger could easily be misinterpreted again, showing the cycle continues."
+      "is_callback": 1,
+      "explanation": "The episode's central joke fully paid off. The Q&A format \u2014 interrogators asking about suspicious behaviors, Raheem answering with Amazing Race logic \u2014 methodically resolves every setup the episode planted. The structure is near-perfect, and the joke carries genuine satirical weight about post-9/11 civil liberties."
     },
     {
-      "index": 55,
-      "text": "Northrax. Hey! I made waffles. Thank god.",
+      "index": 78,
+      "text": "I have so much anger inside. I want to do something spectacular with it. / Northrax.",
       "characters": [
+        "Raheem",
         "Liz"
       ],
       "joke_types": [
-        "callback"
+        "callback",
+        "misdirection"
       ],
-      "setup": "Episode ends with smell of maple syrup returning",
-      "punchline": "It's actually waffles this time, not chemical weapons",
-      "craft_total": 7.58,
-      "impact_score": 7.17,
-      "quotability": 6.0,
+      "setup": "Raheem expresses a desire to channel his anger spectacularly. Liz's mind goes immediately to Northrax.",
+      "punchline": "Liz's one-word response 'Northrax' \u2014 she hears 'spectacular with my anger' and immediately thinks of the chemical weapon from the opening, proving she has STILL learned nothing.",
+      "craft_total": 8.1,
+      "impact_score": 8.0,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Nice bookend callback that resolves the opening mystery with innocent explanation. Good structural comedy writing."
+      "explanation": "A perfect callback that is also a devastating character punchline. Liz has just witnessed the consequences of her paranoia (Raheem tortured), received a full explanation of his innocence, and STILL her first association when he mentions anger is the chemical weapon from the opening. The economy is perfect (one word), the character indictment is precise (Liz has learned nothing), and it closes the episode's thematic loop. One of the best structural jokes in the episode."
+    },
+    {
+      "index": 79,
+      "text": "Hey! I made waffles. / Thank god. / Yeah.",
+      "characters": [
+        "Liz's neighbor",
+        "Liz",
+        "Jack"
+      ],
+      "joke_types": [
+        "callback",
+        "deadpan_understatement"
+      ],
+      "setup": "The episode ends with the maple syrup/waffle mystery from the cold open being resolved.",
+      "punchline": "A neighbor made waffles \u2014 the most anticlimactic resolution to the Northrax chemical-weapon scare. 'Thank god.' is Liz's sincere relief, and 'Yeah.' is the neighbor's completely unaware response.",
+      "craft_total": 8.26,
+      "impact_score": 8.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfect button on the cold open. The episode began with a Northrax chemical attack scare and ends with 'someone made waffles.' The anticlimax is the joke. 'Thank god' / 'Yeah' is a masterclass in comedic deflation. Rewatch bonus for catching how the callback resolves the episode's most absurd setup."
     }
   ],
   "air_date": "2007-11-15",

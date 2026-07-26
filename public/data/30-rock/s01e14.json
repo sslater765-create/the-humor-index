@@ -4,14 +4,14 @@
   "season": 1,
   "episode_number": 14,
   "title": "The C Word",
-  "humor_index": 75.4,
-  "jpm": 3.2,
-  "avg_craft": 6.75,
-  "avg_impact": 6.44,
-  "total_jokes": 71,
-  "war": 42.2,
-  "dominant_joke_types": "[\"character_comedy\", \"observational\", \"callback\"]",
-  "standout_joke_ids": "[69, 43, 42]",
+  "humor_index": 89.1,
+  "jpm": 3.15,
+  "avg_craft": 7.24,
+  "avg_impact": 7.18,
+  "total_jokes": 70,
+  "war": 84.7,
+  "dominant_joke_types": "[\"character_comedy\", \"running_gag\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[50, 67, 14]",
   "weakest_section": null,
   "jokes": [
     {
@@ -21,39 +21,20 @@
         "Tracy"
       ],
       "joke_types": [
-        "setup_punchline",
-        "misdirection"
+        "misdirection",
+        "character_comedy"
       ],
-      "setup": "Someone being called in to speak to a boss, suggesting potential trouble",
-      "punchline": "Misinterpretation that sounds sexual but reveals innocent context later",
-      "craft_total": 6.85,
-      "impact_score": 6.67,
+      "setup": "Tracy enters Jack's office and immediately assumes he's in trouble over a sexual incident with an intern",
+      "punchline": "The phrasing 'she asked me to take it out' implies something lewd before being resolved innocuously later",
+      "craft_total": 6.95,
+      "impact_score": 6.83,
       "quotability": 5.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good misdirection that pays off later. Character-appropriate misunderstanding."
+      "explanation": "Perfectly in character for Tracy \u2014 his first instinct is always that he's in trouble for something sexual. The ambiguous phrasing sets up a payoff that comes a minute later. Strong character integration and good economy."
     },
     {
       "index": 2,
-      "text": "I'm not familiar with about half the words in that sentence.",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Jack using fancy corporate speak about charity golf tournament",
-      "punchline": "Tracy's honest admission of not understanding the jargon",
-      "craft_total": 6.81,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect character beat - Tracy's outsider status to corporate world"
-    },
-    {
-      "index": 3,
       "text": "Is that the gay guy from Project Runway?",
       "characters": [
         "Tracy"
@@ -62,37 +43,38 @@
         "character_comedy",
         "observational"
       ],
-      "setup": "Jack mentioning Don Geiss, the powerful CEO",
-      "punchline": "Tracy conflating him with reality TV personality",
-      "craft_total": 6.35,
-      "impact_score": 5.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character consistency - Tracy's pop culture confusion"
-    },
-    {
-      "index": 4,
-      "text": "The dude from my checks?",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Jack explaining Geiss is the CEO",
-      "punchline": "Tracy's practical way of understanding corporate hierarchy",
-      "craft_total": 7.17,
-      "impact_score": 6.67,
+      "setup": "Jack mentions Don Geiss, the CEO of GE",
+      "punchline": "Tracy's frame of reference for important executives is reality TV show contestants",
+      "craft_total": 7.06,
+      "impact_score": 6.75,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent economy and character voice - reduces powerful CEO to paycheck signer"
+      "explanation": "Efficient and perfectly character-specific. Tracy's pop-culture confusion is a core trait and this lands crisply. 'The gay guy from Project Runway' is a funny specific detail. The confusion escalates nicely to 'the dude from my checks.'"
     },
     {
-      "index": 5,
-      "text": "Okay false alarm. It turns out she asked him to take it out.",
+      "index": 3,
+      "text": "The dude from my checks.",
+      "characters": [
+        "Tracy",
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Jack explains Geiss is the CEO of the corporation",
+      "punchline": "Tracy's only frame of reference for 'the big man' is the logo on his paycheck \u2014 confirmed deadpan by Jack",
+      "craft_total": 8.19,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Four words that perfectly capture both Tracy's obliviousness and Jack's world. The callback structure (Jack repeating it back) is beautifully economical. Highly quotable. A small perfect joke \u2014 the kind 30 Rock does best."
+    },
+    {
+      "index": 4,
+      "text": "Okay, false alarm. It turns out she asked him to take it out.",
       "characters": [
         "Jack"
       ],
@@ -100,377 +82,392 @@
         "callback",
         "misdirection"
       ],
-      "setup": "The earlier sexual misunderstanding about the intern",
-      "punchline": "Reveals innocent context - trash removal",
-      "craft_total": 6.18,
-      "impact_score": 5.67,
-      "quotability": 4.0,
+      "setup": "The earlier ambiguous intern comment about 'taking it out'",
+      "punchline": "The resolution deflates the innuendo \u2014 she literally just asked him to take something out \u2014 delivered as a bureaucratic non-event",
+      "craft_total": 7.05,
+      "impact_score": 7.0,
+      "quotability": 5.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good callback that resolves the misdirection properly"
+      "explanation": "A tight callback that resolves the innuendo from joke #1 with perfect comic timing. The deadpan delivery as 'false alarm' is funny \u2014 the entire situation treated as a routine office matter. Rewatch bonus because the setup is visible in retrospect."
     },
     {
-      "index": 6,
-      "text": "I'll see you in CT, Jackie D.",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Normal farewell",
-      "punchline": "Tracy giving Jack a street nickname",
-      "craft_total": 5.95,
-      "impact_score": 5.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Character-appropriate nickname giving"
-    },
-    {
-      "index": 7,
+      "index": 5,
       "text": "Was Courtney Love not available?",
       "characters": [
         "Liz"
       ],
       "joke_types": [
         "irony_sarcasm",
-        "observational"
+        "character_comedy"
       ],
-      "setup": "Jack explaining his choice of Tracy as golf partner",
-      "punchline": "Comparing Tracy to notoriously unpredictable celebrity",
-      "craft_total": 6.75,
-      "impact_score": 6.33,
+      "setup": "Jack explains he's invited Tracy Jordan to a prestigious GE charity golf tournament with the CEO",
+      "punchline": "Liz's incredulous comparison of Tracy to Courtney Love as examples of wildly inappropriate guests",
+      "craft_total": 7.23,
+      "impact_score": 7.17,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sharp comparison highlighting Tracy's unpredictability"
+      "explanation": "Sharp, economical celebrity-name-as-insult that works because it's a specific and accurate comparison. Liz as the voice of reason skeptic is her core role and this lands cleanly. Simple but effective."
     },
     {
-      "index": 8,
-      "text": "You might want to rephrase that.",
+      "index": 6,
+      "text": "being in a foursome with this man can change your life. / You might want to rephrase that.",
       "characters": [
+        "Jack",
         "Liz"
       ],
       "joke_types": [
-        "reaction_beat"
+        "setup_punchline",
+        "wordplay_pun"
       ],
-      "setup": "Jack saying 'being in a foursome with this man can change your life'",
-      "punchline": "Liz noting the sexual double entendre",
-      "craft_total": 5.77,
+      "setup": "Jack earnestly explains the career value of golfing with Don Geiss",
+      "punchline": "Liz notes the unintended sexual double meaning of 'foursome'",
+      "craft_total": 6.08,
+      "impact_score": 5.67,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A competent double-entendre gag. 'Foursome' has an obvious alternative meaning and the show acknowledges it cleanly. But it's a fairly standard innuendo joke \u2014 not particularly original. Gets the job done without distinction."
+    },
+    {
+      "index": 7,
+      "text": "Which one is Geiss again, the bald one? / No. That one. / Where did that come from? / I painted it myself.",
+      "characters": [
+        "Liz",
+        "Jack"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "absurdist"
+      ],
+      "setup": "Liz asks which one is Geiss; Jack points to what appears to be a painted portrait on his wall",
+      "punchline": "Jack has painted a portrait of his mentor/boss himself and hangs it in his office \u2014 revealed casually as if normal",
+      "craft_total": 7.88,
+      "impact_score": 7.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The visual of Jack having painted a reverential portrait of his corporate superior is perfectly absurd and deeply character-specific. The deadpan 'I painted it myself' and the offer to paint one for Liz compounds the joke. It reveals Jack's worship of corporate hierarchy in a visually funny way. Strong character integration \u2014 this could only be Jack."
+    },
+    {
+      "index": 8,
+      "text": "She always sounds so terrified. 'The President has a plan for Iran, and we are currently adhering to that plan.'",
+      "characters": [
+        "Writer (unnamed)"
+      ],
+      "joke_types": [
+        "observational",
+        "character_comedy"
+      ],
+      "setup": "The writers room has a topical meeting; someone brings up Condoleezza Rice on Meet the Press",
+      "punchline": "The impression of Rice as perpetually terrified, delivering diplomatic platitudes with barely-concealed panic",
+      "craft_total": 5.84,
       "impact_score": 5.5,
       "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard innuendo catch but well-executed"
+      "explanation": "Timely political humor that works on the meta-level (writers pitching sketches). The impression is decent but generic political celebrity impression territory. Loses points for low character integration \u2014 any writer could deliver this line."
     },
     {
       "index": 9,
-      "text": "I painted it myself.",
+      "text": "Dude, I'm exhausted. I stayed up all night watching a Designing Women marathon. / Oh my God. Oh yeah, me too. At first I hated it. And then I liked it. And then I hated it again. And then I got horny, and then I fell asleep.",
       "characters": [
-        "Jack"
+        "Frank",
+        "Writer (unnamed)"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Frank admits he stayed up all night watching Designing Women instead of working on the show",
+      "punchline": "The escalating emotional journey through the marathon \u2014 hate, like, hate, horny, sleep \u2014 delivered as a perfectly logical arc",
+      "craft_total": 7.89,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. The escalating emotional states delivered as confession are perfectly structured \u2014 the rhythm of 'hated it / liked it / hated it' primes for a fourth beat, and 'horny' is the perfect unexpected pivot before the anticlimax of 'fell asleep.' Highly quotable, deeply character-specific for slacker writers, and has a perfect comic rhythm. Justifies the 8+ score."
+    },
+    {
+      "index": 10,
+      "text": "Lutz eating at his desk during the writers meeting; 'Ay, pero ay Dios mio!'",
+      "characters": [
+        "Lutz",
+        "Liz"
       ],
       "joke_types": [
         "visual_gag",
         "character_comedy"
       ],
-      "setup": "Liz asking about a portrait (presumably of Geiss)",
-      "punchline": "Jack admits to painting it himself, revealing obsession",
-      "craft_total": 7.13,
-      "impact_score": 6.67,
-      "quotability": 5.0,
+      "setup": "Liz tells Lutz not to eat while they're working",
+      "punchline": "Lutz has clearly been eating enthusiastically; his exclamation ('Oh my God!') is presumably at a tasty bite, not at being caught",
+      "craft_total": 5.58,
+      "impact_score": 5.25,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Jack character moment - his corporate worship taken to absurd lengths"
-    },
-    {
-      "index": 10,
-      "text": "She always sounds so terrified. She's always, like, The President has a plan for Iran, and we are currently adhering to that plan.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "observational"
-      ],
-      "setup": "Discussing Condoleezza Rice on Meet the Press",
-      "punchline": "Impersonation highlighting nervous political speak",
-      "craft_total": 6.17,
-      "impact_score": 5.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good political observation with specific impersonation"
+      "explanation": "Lutz as the compulsive office eater is a running character trait. The Spanish exclamation adds a slightly absurd note. Functional character comedy but doesn't rise above its premise."
     },
     {
       "index": 11,
-      "text": "I stayed up all night watching a Designing Women marathon.",
-      "characters": [
-        "Frank"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Frank being exhausted and unable to focus",
-      "punchline": "Revealing he was watching stereotypically feminine TV",
-      "craft_total": 6.78,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character subversion - tough guy watching Designing Women"
-    },
-    {
-      "index": 12,
-      "text": "At first, I hated it. And then I liked it. And then I hated it again. And then I got horny, and then I fell asleep.",
-      "characters": [
-        "Toofer"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Frank's confession about watching Designing Women",
-      "punchline": "Toofer's detailed emotional journey including inappropriate arousal",
-      "craft_total": 7.19,
-      "impact_score": 7.25,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Excellent escalation with perfect timing and unexpected honesty"
-    },
-    {
-      "index": 13,
-      "text": "Ay, pero ay Dios mio!",
-      "characters": [
-        "Lutz"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
-      ],
-      "setup": "Liz telling Lutz not to eat while working",
-      "punchline": "Lutz's dramatic Spanish exclamation (presumably while eating)",
-      "craft_total": 5.69,
-      "impact_score": 5.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard physical comedy beat"
-    },
-    {
-      "index": 14,
       "text": "I didn't like it two weeks ago when it was called America's Next Top Hobo, and I didn't like it a month ago, when it was called Hobo Eye for the Straight Guy.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
         "running_gag",
-        "escalation"
+        "irony_sarcasm"
       ],
-      "setup": "Writer pitching Dancing with the Hobo sketch",
-      "punchline": "Revealing this is the same bad idea with different reality show names",
-      "craft_total": 7.4,
+      "setup": "A writer pitches 'Dancing with the Hobo'",
+      "punchline": "Liz reveals this is the third iteration of the same rejected hobo concept, with escalating parody titles of real shows",
+      "craft_total": 8.14,
+      "impact_score": 8.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke works on two levels: satirizing lazy writers re-pitching the same idea with a new coat of paint, AND satirizing the reality TV naming convention. 'Hobo Eye for the Straight Guy' is particularly well-constructed. Good escalation structure."
+    },
+    {
+      "index": 12,
+      "text": "Deal or No Hobo?",
+      "characters": [
+        "Lutz"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "running_gag"
+      ],
+      "setup": "The list of hobo-themed show parody titles",
+      "punchline": "Lutz adds one more, oblivious to the criticism",
+      "craft_total": 7.26,
       "impact_score": 7.33,
       "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Excellent escalation showing the writer's persistence with bad ideas"
+      "is_callback": 1,
+      "explanation": "A tight three-word callback that lands perfectly because of its commitment to the bit and Lutz's complete obliviousness. 'Deal or No Hobo' is clean wordplay and the rhythm of it is satisfying. Maximum economy."
     },
     {
-      "index": 15,
-      "text": "Deal or No Hobo?",
-      "characters": [
-        "Writer"
-      ],
-      "joke_types": [
-        "escalation",
-        "wordplay_pun"
-      ],
-      "setup": "The series of hobo-themed reality show parodies",
-      "punchline": "Another variation continuing the pattern",
-      "craft_total": 5.76,
-      "impact_score": 5.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good continuation of the escalating pattern"
-    },
-    {
-      "index": 16,
+      "index": 13,
       "text": "Hey, Lutz, why don't you approach your job with the same creativity and excitement you have for all-you-can-eat buffets?",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Lutz suggesting another bad hobo idea",
-      "punchline": "Liz comparing his work ethic to his eating habits",
-      "craft_total": 6.58,
-      "impact_score": 6.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sharp character-specific insult with good structure"
-    },
-    {
-      "index": 17,
-      "text": "We have a past. A romantic past.",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
         "character_comedy",
-        "setup_punchline"
+        "irony_sarcasm"
       ],
-      "setup": "Kenneth saying he can't work with Grace",
-      "punchline": "The innocent page having a 'romantic past'",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
+      "setup": "Lutz keeps pitching bad hobo ideas",
+      "punchline": "Liz burns him by linking his creative laziness to his one area of genuine enthusiasm: eating",
+      "craft_total": 6.54,
+      "impact_score": 6.17,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Kenneth character moment - his earnestness about romance"
+      "explanation": "A clean character-based insult that works because it's specific to Lutz's established traits. The pairing of 'creativity and excitement' with buffets is funny. Not exceptional but solidly crafted."
     },
     {
-      "index": 18,
-      "text": "Well, Grace, it's been a pleasure talking to you.",
+      "index": 14,
+      "text": "Writer is heard saying '...Liz is a grade-A\u2014' / Liz bursts in holding a kitten: 'Runt! This kitten, he's such a runt! I'm gonna name you Runty!'",
       "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "reaction_beat",
-        "character_comedy"
-      ],
-      "setup": "The revelation about their romantic past",
-      "punchline": "Kenneth immediately trying to end the conversation formally",
-      "craft_total": 6.75,
-      "impact_score": 6.17,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great Kenneth character beat - his awkward formality"
-    },
-    {
-      "index": 19,
-      "text": "Oh, Kenneth, if you're worried about disgracing the National Broadcasting Company, you're too late.",
-      "characters": [
-        "Grace"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "meta_self_referential"
-      ],
-      "setup": "Kenneth worried about disgracing 'the peacock' (NBC)",
-      "punchline": "Grace pointing out NBC's already damaged reputation",
-      "craft_total": 7.11,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Excellent meta joke about the network airing the show"
-    },
-    {
-      "index": 20,
-      "text": "Doggone it, Grace, I just don't know myself around you.",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Kenneth trying to be professional with Grace",
-      "punchline": "His old-fashioned romantic confession",
-      "craft_total": 6.92,
-      "impact_score": 6.33,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Kenneth voice - earnest and old-fashioned"
-    },
-    {
-      "index": 21,
-      "text": "Like-- That won't be necessary. I'll probably just do it anyway.",
-      "characters": [
-        "Golf club employee"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "awkward_silence"
-      ],
-      "setup": "Offering to signal when Don Geiss arrives",
-      "punchline": "Jack cutting him off but the employee persisting anyway",
-      "craft_total": 6.43,
-      "impact_score": 5.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good awkward service employee moment"
-    },
-    {
-      "index": 22,
-      "text": "They're very good at sensing debilitating loneliness in a person.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "observational",
-        "dark_subversive"
-      ],
-      "setup": "Talking about animals liking Liz",
-      "punchline": "Dark assessment of why animals are drawn to her",
-      "craft_total": 7.4,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Excellent dark self-awareness from Liz"
-    },
-    {
-      "index": 23,
-      "text": "I'm allergic to anything warm and adorable.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Suggestion that Liz adopt an animal",
-      "punchline": "Her claiming to be allergic to positive traits",
-      "craft_total": 7.03,
-      "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great Liz character moment - her aversion to sentiment"
-    },
-    {
-      "index": 24,
-      "text": "Runt! What? This kitten, he's such a runt! I'm gonna name you Runty. You're such a little raging little runt!",
-      "characters": [
+        "Writer (unnamed)",
         "Liz"
       ],
       "joke_types": [
         "misdirection",
-        "character_comedy"
+        "running_gag"
       ],
-      "setup": "Someone calling Liz the C-word (seemingly)",
-      "punchline": "She's actually talking to a kitten named Runt",
-      "craft_total": 7.41,
-      "impact_score": 7.5,
-      "quotability": 6.0,
+      "setup": "A writer is heard saying Liz is 'a grade-A [C-word]'",
+      "punchline": "Liz interrupts at exactly the right moment shouting about a kitten named 'Runt' \u2014 the word 'runt' standing in phonetically for the slur",
+      "craft_total": 8.29,
+      "impact_score": 8.67,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent misdirection that sets up the episode's central misunderstanding"
+      "explanation": "This is the episode's title joke and its best structural gag. The timing of Liz bursting in with 'Runt!' is perfectly calibrated \u2014 the audience has just enough time to dread the word before it's redirected. The running substitution of 'runt/runt/runty' throughout the episode is elegant. The setup is pure structure \u2014 it works because of what it doesn't say. Justifies 8+ on all dimensions."
     },
     {
-      "index": 25,
-      "text": "No, I don't want to get in it. I want to blow it up and run away from it in slow motion.",
+      "index": 15,
+      "text": "You need to hook me up with one of them helicopters. / Absolutely, I'd be happy to arrange for you to take a ride. / No, I don't want to get in it. I want to blow it up and run away from it in slow motion.",
+      "characters": [
+        "Tracy",
+        "Ted"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Jack introduces Tracy to Ted, head of GE's commercial aviation division",
+      "punchline": "Tracy's request isn't for access or a ride \u2014 it's to blow one up for a movie scene, the only context in which he relates to helicopters",
+      "craft_total": 7.27,
+      "impact_score": 7.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Exceptional character comedy. The subversion is perfectly executed: the setup implies a normal celebrity request, but Tracy's only relationship to helicopters is as action-movie prop. 'Blow it up and run away from it in slow motion' is so specific and so Tracy that it's instantly quotable. High originality because the joke isn't just about Tracy being weird \u2014 it's about him inhabiting a completely different reality where movie tropes are practical desires. Justifies 8+ clearly."
+    },
+    {
+      "index": 16,
+      "text": "Pleasure to have met you. / Damn straight. I'm delightful.",
+      "characters": [
+        "Ted",
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ted politely closes the awkward interaction with Tracy",
+      "punchline": "Tracy agrees with complete, unironic self-confidence: 'Damn straight. I'm delightful.'",
+      "craft_total": 7.37,
+      "impact_score": 7.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Tracy's total lack of self-awareness is his defining trait, and 'I'm delightful' delivered with zero irony is a perfect crystallization of it. Extremely economical \u2014 four words that do a lot of work. Highly quotable."
+    },
+    {
+      "index": 17,
+      "text": "The one that rhymes with the name of your favorite Todd Rundgren album. / It rhymes with Hermit of Mink Hollow?",
+      "characters": [
+        "Liz",
+        "Jack"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Liz refuses to repeat the slur Lutz called her; she and Jack try to identify it through creative wordplay",
+      "punchline": "Jack's first instinct for a Todd Rundgren album is the deep-cut 'Hermit of Mink Hollow' \u2014 an absurd and specific choice that reveals his unexpected knowledge of late-70s rock",
+      "craft_total": 8.29,
+      "impact_score": 8.5,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's standout jokes and among the best in the series. The structure is airtight: Liz's evasion creates an expectation of a simple rhyme (the obvious album being 'Something/Anything?'), and Jack's confident, specific, completely wrong answer \u2014 'Hermit of Mink Hollow' \u2014 is both absurd and character-revelatory. It's funny because the album NAME is so genuinely obscure and strange-sounding, but also because Jack knows it with total confidence. The joke simultaneously avoids saying the slur (elegant writing constraint), reveals Jack's unexpectedly deep knowledge of prog-rock, and lands a perfect 'No!/Oh.' structure. Comparable to the 8.0 anchor and arguably above it. Justifies 8+ comfortably."
+    },
+    {
+      "index": 18,
+      "text": "Well, why don't we come up with one and then you can call him that? Like... monkus. Fungdark.",
+      "characters": [
+        "Jack",
+        "Liz"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Liz argues there's no male equivalent to the C-word; Jack proposes inventing one",
+      "punchline": "The invented words \u2014 'monkus' and 'fungdark' \u2014 are delightfully absurd and feel simultaneously meaningless and perfect",
+      "craft_total": 7.51,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The made-up insult words are genuinely inspired. 'Fungdark' in particular has a perfect ugly texture that sounds like it should be offensive. The concept (inventing a male gendered slur) is smart social commentary wrapped in wordplay. High quotability \u2014 'fungdark' will stick with viewers."
+    },
+    {
+      "index": 19,
+      "text": "Don't tell me to calm down, you fungdark. / Yeah, you're right. It doesn't work.",
+      "characters": [
+        "Liz",
+        "Jack"
+      ],
+      "joke_types": [
+        "callback",
+        "deadpan_understatement"
+      ],
+      "setup": "'Fungdark' has just been invented",
+      "punchline": "Liz immediately tests it in anger; Jack's clinical 'yeah, you're right, it doesn't work' treats it like a failed product prototype",
+      "craft_total": 7.64,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback is perfectly executed. Liz's genuine anger deploying the freshly-minted word, followed by Jack's detached analytical verdict, is a great comic beat. It's both a callback and a character moment \u2014 Jack treating the failure of 'fungdark' like a failed business proposal is very him. Tight structure, good economy."
+    },
+    {
+      "index": 20,
+      "text": "I thought you knew and you were just being a... / You know, that word Lutz called you. / Wait, are you saying that I am like that sometimes?",
+      "characters": [
+        "Writer",
+        "Liz"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "A writer reveals Lutz's grandmother died and Liz didn't know",
+      "punchline": "The implication that Liz was acting like the C-word by not acknowledging a grieving employee \u2014 the word is danced around again, adding to the episode's running evasion game",
+      "craft_total": 6.78,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Advances the episode's main thread while getting genuine comedy from the awkward evasion and from Liz's dawning, mortified realization. Not a standout joke but does double duty as both comedy and character development."
+    },
+    {
+      "index": 21,
+      "text": "Hey, look everybody, Sherlock Homo is here to solve the case of the gay sweater.",
+      "characters": [
+        "Writer (unnamed)"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "A writer with a conspicuously colorful or fashionable sweater enters the writers room",
+      "punchline": "Another writer delivers an elaborate insult implying the sweater is gay, with absurd detective framing",
+      "craft_total": 6.0,
+      "impact_score": 5.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The construction 'Sherlock Homo / the case of the gay sweater' is funny for its specific absurdity \u2014 the crime-drama framing of fashion criticism. 'Sherlock Homo' is a decent pun. The joke is dated in its use of 'gay' as pejorative but within the 2007 writers-room context it reads as self-satirizing of the room's culture."
+    },
+    {
+      "index": 22,
+      "text": "Oh my God, I am. I'm a total... / Runt! / I lost my kitten. Has anyone seen my runt? Runt!",
+      "characters": [
+        "Liz",
+        "Jack (on phone)"
+      ],
+      "joke_types": [
+        "callback",
+        "running_gag",
+        "misdirection"
+      ],
+      "setup": "Liz has a moment of self-realization that she might be the C-word; Jack is simultaneously on the phone looking for his kitten",
+      "punchline": "Jack's shouting of 'Runt!' perfectly interrupts Liz's self-condemnation at the key word \u2014 the running substitution gag fires again",
+      "craft_total": 8.0,
+      "impact_score": 8.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The second firing of the 'runt' gag is even better than the first because it's a double coincidence \u2014 Liz is about to say the word about herself while Jack is literally shouting 'runt' about the kitten. The structural elegance of the timing is impressive. Rewatch bonus for noticing how precisely it's engineered."
+    },
+    {
+      "index": 23,
+      "text": "Tomorrow I'm gonna be in an intense six-hour foursome with three other men. / And one of them will be Don Geiss and he's gonna get all of my attention. / And you're just gonna sit back and watch.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "wordplay_pun"
+      ],
+      "setup": "Jack excitedly tells another executive about his golf plans with Don Geiss",
+      "punchline": "The increasingly explicit sexual double entendres of 'foursome,' 'get all of my attention,' and 'sit back and watch' \u2014 all completely innocent in golf context but escalating in unintended innuendo",
+      "craft_total": 6.74,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Callbacks to the earlier 'foursome' rephrase joke and escalates the innuendo. The escalation structure is good but the joke type (unintentional double entendre) is well-worn. Gets by on delivery and escalation rather than originality."
+    },
+    {
+      "index": 24,
+      "text": "You know the army's been messing with the sun. That's why I keep my junk covered. Once that stuff get in your hang, you're done.",
       "characters": [
         "Tracy"
       ],
@@ -478,374 +475,150 @@
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Being offered a helicopter ride",
-      "punchline": "Tracy wanting to use it for action movie sequence",
-      "craft_total": 7.42,
+      "setup": "Tracy is explaining something to a confused group of GE executives",
+      "punchline": "A paranoid, conspiratorial non-sequitur about the military weaponizing sunlight, with 'your hang' as a euphemism for genitals",
+      "craft_total": 7.52,
       "impact_score": 7.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Tracy Jordan movie star logic"
-    },
-    {
-      "index": 26,
-      "text": "The one the rhymes with the name of your favorite Todd Rundgren album.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "meta_self_referential"
-      ],
-      "setup": "Trying to identify what word Lutz called her",
-      "punchline": "Obscure musical reference instead of saying the word",
-      "craft_total": 7.47,
-      "impact_score": 6.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliantly nerdy Liz way to avoid saying a curse word"
-    },
-    {
-      "index": 27,
-      "text": "It rhymes with Hermit of Mink Hollow?",
-      "characters": [
-        "Frank"
-      ],
-      "joke_types": [
-        "callback",
-        "character_comedy"
-      ],
-      "setup": "Liz's Todd Rundgren reference",
-      "punchline": "Frank knowing a different Rundgren album",
-      "craft_total": 6.42,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback showing Frank's unexpected music knowledge"
-    },
-    {
-      "index": 28,
-      "text": "There is no male equivalent to this word.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "observational"
-      ],
-      "setup": "Explaining why the C-word is particularly offensive",
-      "punchline": "Pointing out the gendered nature of insults",
-      "craft_total": 7.03,
-      "impact_score": 6.83,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Smart social observation that drives the plot"
+      "explanation": "Perfectly Tracy \u2014 the conspiratorial worldview, the casual vulgarity, the total earnestness. 'Your hang' is a funny improvised-sounding euphemism. Specific enough to feel authentic to the character's paranoid personality."
     },
     {
-      "index": 29,
-      "text": "Like...monkus. Fungdark.",
+      "index": 25,
+      "text": "Hey, I feel you. Messed up sugar runs in my family too.",
       "characters": [
-        "Frank",
-        "Toofer"
-      ],
-      "joke_types": [
-        "absurdist",
-        "wordplay_pun"
-      ],
-      "setup": "Trying to create a male equivalent to the C-word",
-      "punchline": "Ridiculous made-up words",
-      "craft_total": 5.97,
-      "impact_score": 5.75,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good absurdist made-up words"
-    },
-    {
-      "index": 30,
-      "text": "Don't tell me to calm down you fungdark.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "callback",
-        "character_comedy"
-      ],
-      "setup": "The made-up insult 'fungdark'",
-      "punchline": "Liz immediately using it in anger",
-      "craft_total": 6.87,
-      "impact_score": 6.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good immediate callback with character consistency"
-    },
-    {
-      "index": 31,
-      "text": "It doesn't work.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "reaction_beat",
-        "observational"
-      ],
-      "setup": "Using the made-up insult 'fungdark'",
-      "punchline": "Immediately recognizing it's not satisfying",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good self-aware moment"
-    },
-    {
-      "index": 32,
-      "text": "Lutz has been totally slacking off since his grandma died.",
-      "characters": [
-        "Toofer"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "Discussing firing Lutz",
-      "punchline": "Casual mention of tragic personal loss",
-      "craft_total": 6.79,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark humor about grief affecting work performance"
-    },
-    {
-      "index": 33,
-      "text": "I thought you knew and you were just being a... You know, that word Lutz called you.",
-      "characters": [
-        "Toofer"
-      ],
-      "joke_types": [
-        "callback",
-        "cringe_discomfort"
-      ],
-      "setup": "Explaining why they didn't tell Liz about the grandmother",
-      "punchline": "Suggesting Liz was being the C-word by not acknowledging it",
-      "craft_total": 6.73,
-      "impact_score": 6.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good escalation of the central conflict"
-    },
-    {
-      "index": 34,
-      "text": "Hey, look everybody Sherlock Homo is here to solve the case of the gay sweater.",
-      "characters": [
-        "Frank"
+        "Tracy"
       ],
       "joke_types": [
         "character_comedy",
-        "wordplay_pun"
+        "deadpan_understatement"
       ],
-      "setup": "Someone entering wearing what's presumably a flamboyant sweater",
-      "punchline": "Frank's juvenile homophobic wordplay",
-      "craft_total": 5.64,
-      "impact_score": 5.0,
+      "setup": "Don Geiss thanks everyone for supporting diabetes research",
+      "punchline": "Tracy's casual vernacular ('messed up sugar') applied to a medical condition at a formal charity event \u2014 simultaneously inappropriate and sincere",
+      "craft_total": 7.07,
+      "impact_score": 6.75,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Frank juvenile humor, character-appropriate but not clever"
+      "explanation": "Tracy's register-mismatch is a reliable source of comedy. 'Messed up sugar' for diabetes at a charity gala is endearing and funny because it's sincere rather than dismissive. Sets up his later earnest speech nicely."
     },
     {
-      "index": 35,
-      "text": "Oh, my God, I am. I'm a total... Runt! I lost my kitten. Has anyone seen my runt?",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "callback",
-        "misdirection"
-      ],
-      "setup": "Liz realizing she might be acting like the C-word",
-      "punchline": "Another misdirection with the kitten name",
-      "craft_total": 6.99,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good callback to the misdirection setup"
-    },
-    {
-      "index": 36,
-      "text": "Tomorrow I'm gonna be in an intense six hour foursome with three other men. And one of them will be Don Geiss and he's gonna get all of my attention. And you're just gonna sit back and watch.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Jack describing the golf outing",
-      "punchline": "Unintentional sexual double entendre",
-      "craft_total": 5.52,
-      "impact_score": 5.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard innuendo but well-executed with Jack's obliviousness"
-    },
-    {
-      "index": 37,
-      "text": "You know the army's been messing with the sun. That's why I keep my junk covered. Once that stuff get in your hang, you're done.",
+      "index": 26,
+      "text": "This guy spends so much time in the sand that his nickname should be Fala-ser.",
       "characters": [
         "Tracy"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Casual conversation",
-      "punchline": "Tracy's conspiracy theory about solar radiation",
-      "craft_total": 7.42,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Tracy conspiracy theory with anatomical concerns"
-    },
-    {
-      "index": 38,
-      "text": "This guys spends so much time in the sand that his nickname should be Falu-ser.",
-      "characters": [
-        "Jack"
       ],
       "joke_types": [
         "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "Jack bragging about Tracy's golf game to Geiss",
-      "punchline": "Terrible golf pun (Faldo + loser)",
-      "craft_total": 5.35,
-      "impact_score": 4.33,
+      "setup": "Don Geiss asks about Tracy's short game",
+      "punchline": "Tracy's mangled attempt at a golf/sand pun \u2014 'falafel' + 'loser' perhaps, or just an entirely made-up word presented as a clever comeback",
+      "craft_total": 6.42,
+      "impact_score": 6.33,
       "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Appropriately bad Jack attempt at golf humor"
+      "explanation": "The joke is that the punchline doesn't quite make sense \u2014 'Fala-ser' sounds like a confident punchline but lands as Tracy-logic. Geiss's polite 'That's humorous' (without actually laughing) is the real joke. Works in context."
     },
     {
-      "index": 39,
-      "text": "Hey, how come you don't hire more black people around here?",
+      "index": 27,
+      "text": "That's humorous.",
+      "characters": [
+        "Don Geiss"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Tracy delivers his 'Fala-ser' quip expecting a big laugh from the CEO",
+      "punchline": "Geiss's clinical, affectless response \u2014 'That's humorous' \u2014 is the opposite of laughing, delivered like a diagnostician noting a symptom",
+      "craft_total": 7.41,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Two words doing maximum work. 'That's humorous' instead of 'that's funny' or 'ha' is a perfect character-establishing detail for a corporate titan who doesn't actually laugh \u2014 he categorizes. Economy score of 10 is warranted: two words, perfect joke."
+    },
+    {
+      "index": 28,
+      "text": "How come you don't hire more black people around here? / How come there's no black people here? / Black people can't make light bulbs?",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
+        "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Polite corporate gathering",
-      "punchline": "Tracy's blunt question about diversity",
-      "craft_total": 7.24,
-      "impact_score": 7.33,
+      "setup": "Tracy's at a formal GE charity event; the conversation is going well with Geiss",
+      "punchline": "Tracy publicly calls out the racial homogeneity of the event in an escalating series of increasingly direct questions, culminating in the absurdist 'Black people can't make light bulbs?'",
+      "craft_total": 7.5,
+      "impact_score": 7.5,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Tracy moment - disrupting polite corporate facade"
+      "explanation": "The escalation from awkward question to absurdist accusation is well-structured. Tracy is the only character who would publicly humiliate Geiss in this way, making it character-specific. The 'light bulbs' angle connects to GE's identity in a clever way. Genuine social commentary wrapped in absurdist character comedy."
     },
     {
-      "index": 40,
-      "text": "How come there's just me and Carlton over there?",
+      "index": 29,
+      "text": "I believe Tracy's referring to Carlton, the straight-laced brother from Fresh Prince of Bel-Air, 1990 through 1996. On NBC.",
       "characters": [
-        "Tracy"
+        "Jack"
       ],
       "joke_types": [
-        "escalation"
-      ],
-      "setup": "Tracy questioning lack of diversity",
-      "punchline": "Referring to the only other black person as Carlton Banks",
-      "craft_total": 6.82,
-      "impact_score": 6.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation with character-appropriate pop culture reference"
-    },
-    {
-      "index": 41,
-      "text": "I believe Tracy's referring to Carlton, the straight laced brother from Fresh Prince of Bel Air, 1990 through 1996. On NBC.",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "meta_self_referential",
-        "character_comedy"
-      ],
-      "setup": "Tracy's Carlton reference",
-      "punchline": "Kenneth's overly detailed explanation including network reference",
-      "craft_total": 7.08,
-      "impact_score": 6.75,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Kenneth moment with meta NBC reference"
-    },
-    {
-      "index": 42,
-      "text": "I'm supposed to just be a funny black man who says funny things.",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
+        "character_comedy",
         "meta_self_referential"
       ],
-      "setup": "Jack criticizing Tracy's behavior",
-      "punchline": "Tracy calling out his role as token entertainment",
-      "craft_total": 7.57,
-      "impact_score": 7.5,
+      "setup": "Tracy points to 'Carlton over there' \u2014 presumably another Black guest at the event",
+      "punchline": "Jack, in crisis management mode, provides a Wikipedia-style footnote about Carlton from Fresh Prince \u2014 complete with dates and network \u2014 as if contextualizing for a confused GE executive",
+      "craft_total": 8.03,
+      "impact_score": 8.33,
       "quotability": 8.5,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Sharp meta-commentary on racial tokenism"
+      "explanation": "This is one of the episode's best jokes. The structure is inspired: Jack's spin-doctor instinct deploys as a pop-culture citation complete with broadcast dates and network affiliation \u2014 the 'On NBC' tag is hilariously corporate self-promotion grafted onto a mortifying situation. The precision ('1990 through 1996') signals Jack's encyclopedic knowledge applied in the most inappropriate possible context. Meta-referential because TGS is on NBC. Justifies 8+ clearly."
     },
     {
-      "index": 43,
-      "text": "Bartender, could you bring me a Mustang Melon and a bag of barbeque potato chips? 'Cause apparently I'm only here to be a stereotype.",
+      "index": 30,
+      "text": "Are we having fun or what?",
       "characters": [
-        "Tracy"
+        "Jack"
       ],
       "joke_types": [
-        "escalation",
+        "reaction_beat",
         "irony_sarcasm"
       ],
-      "setup": "Tracy's complaint about being stereotyped",
-      "punchline": "Immediately ordering stereotypical items",
-      "craft_total": 7.92,
-      "impact_score": 8.0,
-      "quotability": 7.5,
+      "setup": "Tracy has just publicly accused GE's CEO of racial discrimination; the situation is clearly a disaster",
+      "punchline": "Jack's desperate, hollow attempt to redirect with forced cheerfulness \u2014 the gap between the sentiment and the reality is the joke",
+      "craft_total": 6.55,
+      "impact_score": 6.25,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent ironic escalation - embodying stereotype while protesting it"
+      "explanation": "Jack's damage-control mode rendered as a desperate social platitude. Works well in context but is a fairly standard awkward-moment line. The economy is excellent but the concept isn't particularly original."
     },
     {
-      "index": 44,
+      "index": 31,
       "text": "Son, I wasn't joking about those chips.",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
-        "callback",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "The bartender presumably not bringing chips",
-      "punchline": "Tracy seriously wanting them despite the protest context",
-      "craft_total": 6.79,
-      "impact_score": 6.5,
-      "quotability": 6.5,
+      "setup": "Tracy has made a show of demanding barbeque chips to protest being treated as a stereotype",
+      "punchline": "After the confrontation with Jack, Tracy immediately returns to the chips request \u2014 the political stand was real, but so is the chip craving",
+      "craft_total": 7.78,
+      "impact_score": 7.83,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Good callback showing Tracy's genuine desire for the chips"
+      "explanation": "The joke works because it subverts the dignity of Tracy's protest without undermining it \u2014 he can make a legitimate point AND want the chips. 'Son' as an address to a bartender is also funny. The economy and specificity are strong."
     },
     {
-      "index": 45,
+      "index": 32,
       "text": "No, it's two dozen cupcakes with melted mini-candy bars in the middle.",
       "characters": [
         "Liz"
@@ -854,225 +627,325 @@
         "character_comedy",
         "observational"
       ],
-      "setup": "Frank thinking Liz made brisket",
-      "punchline": "Describing an over-the-top dessert creation",
-      "craft_total": 6.16,
-      "impact_score": 5.5,
+      "setup": "Liz brings something to the writers room trying to be nice; Pete says 'Brisket?'",
+      "punchline": "It's not brisket but two dozen cupcakes with candy bars inside \u2014 an even more indulgent, over-the-top peace offering",
+      "craft_total": 6.31,
+      "impact_score": 6.0,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Liz's overcompensation"
+      "explanation": "The specificity of 'two dozen cupcakes with melted mini-candy bars in the middle' is funnier than just 'cupcakes' \u2014 it suggests Liz put genuine obsessive effort into this peace offering. Works as character comedy for Liz's anxious people-pleasing."
     },
     {
-      "index": 46,
-      "text": "I'm a nice person you bald, gangly...",
+      "index": 33,
+      "text": "I'm a nice person, you bald, gangly\u2014 / I'm gonna try harder. I'm gonna try and be nice.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Liz trying to prove she's nice",
-      "punchline": "Immediately starting to insult Frank",
-      "craft_total": 7.04,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Liz insists she's nice while trying to rebuff Pete's skepticism",
+      "punchline": "She begins insulting Pete while arguing she's nice, stops herself mid-insult, and pivots to a determined resolution",
+      "craft_total": 7.89,
+      "impact_score": 7.83,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect contradiction of her stated intent"
+      "explanation": "Structurally perfect self-defeating joke. Liz's character flaw (unconscious meanness) manifests in the act of denying it. The incomplete insult ('bald, gangly\u2014') is funnier for being cut off. This is good character comedy where the joke IS the character arc."
     },
     {
-      "index": 47,
-      "text": "I studied TV theory at Kentucky Mountain Bible College.",
+      "index": 34,
+      "text": "I sure hope Mr. Jack plays his game good today. Otherwise he whups my ass right well when we get home. Ain't that right, Mr. Jack?",
       "characters": [
         "Kenneth"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "cringe_discomfort"
       ],
-      "setup": "Kenneth explaining his qualifications",
-      "punchline": "Combining television and fundamentalist education",
-      "craft_total": 7.35,
-      "impact_score": 6.75,
-      "quotability": 8.0,
+      "setup": "Kenneth, in apparent deference to Jack, addresses him in an exaggeratedly subservient Southern manner in front of executives",
+      "punchline": "The Uncle Tom-ish performance is played as Kenneth's earnest attempt to help, making the cringe even deeper \u2014 it's both a racial/class satire and a Kenneth character moment",
+      "craft_total": 7.05,
+      "impact_score": 7.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Kenneth backstory detail - absurd but believable for character"
+      "explanation": "Uncomfortable joke that works because Kenneth plays it with total sincerity \u2014 he thinks he's helping. The show is using Kenneth's obliviousness to satirize performative servility. The 'ain't that right, Mr. Jack?' repeated tag makes it worse (better) each time."
     },
     {
-      "index": 48,
+      "index": 35,
+      "text": "I studied TV theory at Kentucky Mountain Bible College. / I studied fried chicken at the school of hard knocks.",
+      "characters": [
+        "Kenneth",
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Jack is introducing Kenneth's credentials to Ted the executive",
+      "punchline": "Tracy counters Kenneth's earnest credential with an absurd parody of 'street credential' \u2014 'fried chicken at the school of hard knocks' \u2014 which is both a parody of the clich\u00e9 AND a Tracy non-sequitur",
+      "craft_total": 7.42,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The parallel structure (study + subject + institution) is used to maximum effect. 'TV theory at Kentucky Mountain Bible College' is already funny for Kenneth; Tracy's response is the perfect escalation of absurdity. Good economy in the parallel construction."
+    },
+    {
+      "index": 36,
       "text": "I'm ridiculous. I'm black! I may even be ugly. But dear God... I'm here! I'm here! And nothing but them can keep me from it!",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
         "character_comedy",
+        "absurdist",
         "escalation"
       ],
-      "setup": "Tracy's performative rebellion",
-      "punchline": "Over-the-top dramatic declaration",
-      "craft_total": 7.02,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Tracy appears to be having a sudden motivational breakdown/epiphany in the middle of the golf course",
+      "punchline": "The speech builds like an inspirational movie monologue but the opening admissions ('I'm ridiculous. I'm black! I may even be ugly.') undercut the genre conventions hilariously, and 'them' remains undefined",
+      "craft_total": 7.33,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalation of Tracy's dramatic performance"
+      "explanation": "Tracy at his best: a deeply felt, absurdist monologue that parodies inspirational rhetoric while also being genuinely in character. 'I'm ridiculous. I'm black! I may even be ugly.' \u2014 the self-deprecating admissions delivered as war cries is inspired. The vague 'them' that he's defying adds to the absurdism. Justifies 8+ \u2014 it's both funny and strangely moving, which is rare."
     },
     {
-      "index": 49,
-      "text": "This isn't Hitler's bunker. That would make me Hitler.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Someone apologizing for taking a phone call",
-      "punchline": "Jack's inappropriate historical comparison",
-      "craft_total": 7.05,
-      "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Jack moment - inappropriate but logical comparison"
-    },
-    {
-      "index": 50,
-      "text": "Before you answer, superballs!",
+      "index": 37,
+      "text": "I'm so sorry. I thought I turned it off. / No, Cooper, take the call. I mean, come on. This isn't Hitler's bunker. That would make me Hitler.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
+        "absurdist",
+        "irony_sarcasm"
       ],
-      "setup": "Liz asking if they like the new her",
-      "punchline": "Throwing superballs to demonstrate fun personality",
-      "craft_total": 6.55,
-      "impact_score": 6.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good physical gag showing Liz's awkward attempt at fun"
-    },
-    {
-      "index": 51,
-      "text": "God, it's like dating Katie Couric all over again.",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Tracy complaining about being used",
-      "punchline": "Comparing it to dating famous news anchor",
-      "craft_total": 6.94,
-      "impact_score": 6.5,
+      "setup": "Someone's phone goes off during a meeting; someone apologizes",
+      "punchline": "Liz's attempt at being the 'nice boss' manifests as an extremely specific Hitler analogy \u2014 'this isn't Hitler's bunker, that would make me Hitler' \u2014 the logic is sound but the reference is wildly disproportionate",
+      "craft_total": 7.71,
+      "impact_score": 7.67,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Tracy celebrity name-drop with implied backstory"
+      "explanation": "The joke is Liz's over-thinking manifested as a completely disproportionate analogy. 'That would make me Hitler' is a great button. The logic-chain of the comparison ('this isn't X, which would make me Y') is both funny and revealing of Liz's anxious self-monitoring."
     },
     {
-      "index": 52,
-      "text": "Ted, who's best known for getting caught using a corporate credit card at a gay strip club.",
+      "index": 38,
+      "text": "What is it? This is the new me. Do you like the new me? Before you answer, superballs!",
       "characters": [
-        "Jack"
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "physical_slapstick"
+      ],
+      "setup": "Liz is trying to be a fun, nice boss to the writers",
+      "punchline": "The 'new me' declaration followed immediately by throwing superballs \u2014 a bizarre, childlike gesture as proof of fun personality",
+      "craft_total": 7.6,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'before you answer, superballs!' is a perfect comic beat \u2014 the question is cut off before it can be answered, and the superballs are both random and specific enough to be funny (not balloons, not candy \u2014 superballs). Liz's performative fun is very character-true."
+    },
+    {
+      "index": 39,
+      "text": "Awesome! What a fun boss you have, right?",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "irony_sarcasm"
+      ],
+      "setup": "Writers react to the superballs",
+      "punchline": "Liz immediately editorializes on her own fun boss behavior to staff \u2014 the need to be told she's fun undercuts the entire gesture",
+      "craft_total": 6.84,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good callback that deepens the joke by showing Liz's self-consciousness. Asking people to confirm you're a fun boss is the most un-fun-boss thing possible. Solid character beat."
+    },
+    {
+      "index": 40,
+      "text": "Would you like me to do a tap dance for you and your big-time friends, Mr. Jack? Or I could run around while y'all are throwing rocks at me.",
+      "characters": [
+        "Kenneth"
       ],
       "joke_types": [
         "character_comedy",
         "dark_subversive"
       ],
-      "setup": "Jack explaining who they're playing golf with instead",
-      "punchline": "Casually revealing Ted's scandal",
-      "craft_total": 7.12,
-      "impact_score": 7.25,
-      "quotability": 7.0,
+      "setup": "Jack pulls Kenneth aside after his embarrassing performance in front of the executives",
+      "punchline": "Kenneth, perhaps genuinely or perhaps in protest, offers to perform minstrel-adjacent activities for Jack's entertainment",
+      "craft_total": 7.03,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good casual reveal of corporate scandal"
+      "explanation": "Dark and subversive \u2014 Kenneth's offer to be a target for rock-throwing is genuinely disturbing wrapped in his earnest delivery. The joke forces the audience to confront the uncomfortable implications of Kenneth's servility. Gets credit for going somewhere genuinely uncomfortable."
     },
     {
-      "index": 53,
-      "text": "I'm sorry, Amanda, you were bound to find that out eventually.",
+      "index": 41,
+      "text": "God, it's like dating Katie Couric all over again.",
       "characters": [
         "Jack"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Revealing Ted's gay strip club scandal",
-      "punchline": "Addressing Ted's wife who's apparently present",
-      "craft_total": 6.75,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Jack confronts Tracy about embarrassing him with Geiss; Tracy says Jack 'used him'",
+      "punchline": "Jack's emotional response to being 'used' is framed through his alleged relationship with Katie Couric \u2014 a celebrity name-drop that implies a specific and strange backstory",
+      "craft_total": 6.97,
+      "impact_score": 6.67,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent escalation making the scandal revelation worse"
+      "explanation": "The Katie Couric reference works because it's specific (not just 'a famous woman') and reveals an entire unexplored backstory. 'All over again' implies a pattern. Jack's emotional sophistication and romantic history are recurring character details that always pay off. Economy is excellent."
     },
     {
-      "index": 54,
-      "text": "If I thought I left my coffeemaker on, I wouldn't be able to focus either. No, no, I get it. Everyone should see Mama Mia before it closes.",
+      "index": 42,
+      "text": "Remind me, Tracy, what did you tell the president of Warner Brothers? / Told him he could suck it. / And the president of Paramount? / Told her she could kiss my delicious ass. / And how's that working for you?",
       "characters": [
-        "Liz"
+        "Jack",
+        "Tracy"
       ],
       "joke_types": [
         "character_comedy",
         "escalation"
       ],
-      "setup": "Writers all leaving with personal problems",
-      "punchline": "Liz making increasingly obvious excuses for them",
-      "craft_total": 6.72,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "Jack lists Tracy's pattern of 'truth bombs' destroying his movie career",
+      "punchline": "The escalation of increasingly specific (and hilarious) responses to studio heads \u2014 'suck it' / 'kiss my delicious ass' \u2014 with 'delicious' as a perfect detail",
+      "craft_total": 7.62,
+      "impact_score": 7.5,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation showing Liz's denial about staff abandoning her"
+      "explanation": "The escalation structure is elegantly executed. The parallel format (president of X \u2192 Tracy's response) creates a great rhythm, and the variation between responses ('suck it' vs. 'kiss my delicious ass') is funny \u2014 especially 'delicious' as a self-complimentary adjective. Tracy's pride in his bridges-burning is character-perfect. Justifies 8+."
     },
     {
-      "index": 55,
-      "text": "Oh, hey, could I borrow 60 bucks? I'm going to meet Frank and Lutz at Scores.",
+      "index": 43,
+      "text": "instead of Ted, who's best known for getting caught using a corporate credit card at a gay strip club.",
       "characters": [
-        "Toofer"
+        "Jack"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Jack laments that they're now stuck golfing with Ted instead of Geiss",
+      "punchline": "A deeply specific piece of information about Ted \u2014 the corporate credit card at a gay strip club \u2014 delivered as a casual biographical detail",
+      "craft_total": 7.46,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The specificity of 'corporate credit card' (not personal card \u2014 the corporate one) at 'a gay strip club' is funny because the corporate card detail makes it both worse and more absurd. Jack knows this as an ice-cold fact. Sets up the next joke perfectly."
+    },
+    {
+      "index": 44,
+      "text": "I'm sorry, Amanda, you were bound to find that out eventually.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "cringe_discomfort"
+      ],
+      "setup": "Jack has just publicly revealed Ted's gay strip club corporate card scandal in front of Ted's wife Amanda",
+      "punchline": "Jack's casual aside to Amanda \u2014 treating this devastating marital revelation as an inevitable fact of life \u2014 delivered without missing a beat",
+      "craft_total": 8.22,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's best jokes. The structure is perfect: the setup (joke #46) plants the information, and the punchline here is Jack's utter indifference to the collateral damage of casually outing Ted's scandal to his wife. 'You were bound to find that out eventually' is both dismissive and strangely compassionate \u2014 as if Jack is doing Amanda a favor. The economy is exceptional. Justifies 8+ easily: it's a textbook 30 Rock button joke."
+    },
+    {
+      "index": 45,
+      "text": "Where is everybody? / Oh, they all had personal problems they had to take care of.",
+      "characters": [
+        "Pete",
+        "Liz"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Liz is apparently alone in the writers room doing all the work",
+      "punchline": "Pete's extremely understated summary of the writers having abandoned Liz with spurious excuses",
+      "craft_total": 6.34,
+      "impact_score": 5.75,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional setup for the scene; the deadpan delivery works but isn't particularly crafted. The jokes that follow (the coffeemaker, Mama Mia, sinus stuff) are doing more work."
+    },
+    {
+      "index": 46,
+      "text": "If I thought I left my coffeemaker on, I wouldn't be able to focus either. / No no, I get it. Everyone should see Mama Mia before it closes. / What kind of sinus stuff?",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "escalation"
+      ],
+      "setup": "Pete gives the writers' excuses for leaving; Liz catalogues them sarcastically",
+      "punchline": "The escalating specificity of terrible excuses \u2014 coffeemaker \u2192 Mama Mia \u2192 'weird sinus stuff' \u2014 delivered with straight-faced sarcasm before Liz genuinely asks about the sinus condition",
+      "craft_total": 7.67,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The list of excuses is well-chosen: they escalate from plausible (coffeemaker) to entertainment (Mama Mia) to vague medical (sinus stuff). The turn where Liz genuinely asks 'What kind of sinus stuff?' breaks the ironic frame perfectly \u2014 her compassion undermines her authority even as she's complaining about being abandoned."
+    },
+    {
+      "index": 47,
+      "text": "Oh hey, could I borrow 60 bucks? I'm going to meet Frank and Lutz at Scores.",
+      "characters": [
+        "Writer (unnamed)"
       ],
       "joke_types": [
         "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Toofer giving advice about standing up for yourself",
-      "punchline": "Immediately asking to borrow money for strip club",
-      "craft_total": 7.42,
-      "impact_score": 7.33,
+      "setup": "Pete has just finished giving Liz a pep talk about standing up for herself and not letting people take advantage of her",
+      "punchline": "Immediately after the advice, a writer asks to borrow $60 to go to a strip club \u2014 demonstrating in real time the dynamic Pete described",
+      "craft_total": 7.09,
+      "impact_score": 7.0,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent undercut of his advice with immediate hypocrisy"
+      "explanation": "Perfect structural irony \u2014 the joke IS the structure. The lesson about being taken advantage of is immediately illustrated by someone taking advantage. 'Scores' also connects to the Ted strip club joke earlier. The timing (immediately after Pete's speech) is the entire gag. Economy is near-perfect."
     },
     {
-      "index": 56,
-      "text": "When my daughter Shahita was born, she had chubby arms and legs and a big bald head. She looked like my Uncle Rupert in a diaper.",
+      "index": 48,
+      "text": "She looked like my Uncle Rupert in a diaper.",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "setup_punchline"
       ],
-      "setup": "Tracy beginning heartfelt speech about diabetes",
-      "punchline": "Unflattering comparison of baby to uncle",
-      "craft_total": 6.97,
-      "impact_score": 6.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Tracy describes his baby daughter Shahita's appearance at birth",
+      "punchline": "The comparison of his newborn to a specific named relative is both unexpected and very specific",
+      "craft_total": 7.32,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character-appropriate humor within serious speech"
+      "explanation": "The joke works because 'Uncle Rupert' is specific enough to feel real and the image of a baby resembling a bald elderly man is universal but Tracy makes it his own. This also functions as setup for a genuinely moving speech, which gives it rewatch value \u2014 the comedy and the sincerity coexist."
     },
     {
-      "index": 57,
+      "index": 49,
       "text": "We stayed up all night the night before watching bible movies and eating Fiddle Faddle.",
       "characters": [
         "Tracy"
@@ -1081,264 +954,404 @@
         "character_comedy",
         "observational"
       ],
-      "setup": "Tracy's story about Easter with his daughter",
-      "punchline": "Specific details that sound authentically Tracy",
-      "craft_total": 6.52,
-      "impact_score": 5.83,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Tracy is telling the story of his daughter's diabetes diagnosis",
+      "punchline": "The specific detail of 'Fiddle Faddle' as the Easter Eve snack \u2014 not popcorn, not candy, but the specific brand Fiddle Faddle \u2014 in a story that's becoming genuinely touching",
+      "craft_total": 7.23,
+      "impact_score": 6.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good specific details that feel authentic to Tracy's character"
+      "explanation": "The specific brand name 'Fiddle Faddle' in what is becoming an earnest speech is a perfect tonal balance. The joke is in the specificity and in the coexistence of the mundane detail with genuine emotion. This is Tracy using comedy to tell a true story \u2014 the show at its best."
     },
     {
-      "index": 58,
-      "text": "She threw up right in the middle of the Jaguar dealership.",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Story about daughter getting sick on Easter",
-      "punchline": "Specific location that reveals Tracy's lifestyle",
-      "craft_total": 6.63,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good detail that casually reveals wealth while maintaining story"
-    },
-    {
-      "index": 59,
+      "index": 50,
       "text": "I don't have a daughter.",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
-        "misdirection",
-        "dark_subversive"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Tracy's entire heartfelt speech about his daughter's diabetes",
-      "punchline": "Revealing he made it all up",
-      "craft_total": 7.52,
+      "setup": "Tracy has just delivered a deeply moving speech about his daughter Shahita and her diabetes diagnosis, generating record donations; Geiss invites Tracy's daughter to the Vineyard",
+      "punchline": "Tracy's quiet revelation to Jack that the daughter doesn't exist \u2014 the entire emotional speech was fabricated (or from a movie?)",
+      "craft_total": 8.43,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the episode's best joke and one of the best single-line payoffs in 30 Rock. Five words that retroactively reframe an entire emotional sequence. The structure is extraordinary: a three-minute earnest speech with specific details (Uncle Rupert, Fiddle Faddle, Easter, St. Luke's Roosevelt) followed by the revelation that it was entirely invented. The joke works on multiple levels: (1) it's a perfect misdirection \u2014 the audience is moved and then the rug is pulled; (2) it's deeply character-specific \u2014 Tracy WOULD do this, and it's somehow consistent with both his chaos and his genuine warmth; (3) the economy is 10/10 \u2014 five words undoing three minutes; (4) it raises the question of where the story came from, which is its own comedy. Comparable to 'Snip, snap, snip, snap' in terms of payoff impact. This is a 9+ joke."
+    },
+    {
+      "index": 51,
+      "text": "Grace... There is something that I must say to you. But my words cannot suffice. So to quote Mr. Jerry McGuire... you make me a complete person. / When you said hello, you had me.",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Kenneth approaches Grace for a serious romantic declaration",
+      "punchline": "Kenneth quotes Jerry Maguire \u2014 getting the line slightly wrong ('you make me a complete person' instead of 'you complete me') and using the formal 'Mr. Jerry McGuire' \u2014 as his most eloquent romantic gesture",
+      "craft_total": 7.49,
       "impact_score": 7.5,
-      "quotability": 9.0,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect misdirection - completely recontextualizes the entire speech. Maximum economy and impact."
+      "explanation": "The joke works on multiple levels: Kenneth's formality ('Mr. Jerry McGuire'), his slight misquotation (paraphrasing rather than the actual line), and his earnest conviction that this is the height of romantic eloquence. The follow-up 'When you said hello, you had me' (inverting the famous line) is a nice additional beat. Character integration is excellent \u2014 only Kenneth would do this. Justifies 8+."
     },
     {
-      "index": 60,
-      "text": "So to quote Mr. Jerry McGuire....you make me a complete person.",
+      "index": 52,
+      "text": "My wife needs her sweater. / [Kenneth gets physically struck]",
       "characters": [
+        "Grace's husband/partner",
         "Kenneth"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Kenneth making romantic declaration to Grace",
-      "punchline": "Quoting Jerry Maguire incorrectly",
-      "craft_total": 7.26,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Kenneth character moment - earnest but slightly wrong"
-    },
-    {
-      "index": 61,
-      "text": "When you said hello, you had me.",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "callback",
-        "character_comedy"
-      ],
-      "setup": "Kenneth's Jerry Maguire quotation",
-      "punchline": "Another slightly incorrect movie quote",
-      "craft_total": 6.39,
-      "impact_score": 5.83,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good continuation of Kenneth's earnest misquoting"
-    },
-    {
-      "index": 62,
-      "text": "Sir, you may be right. I may be not capable of understanding normal thinking because I think a woman is just as powerful as a man. And until you learn to respect me, you better learn to stay out of my way. 'Cause this is my house.",
-      "characters": [
-        "TV character"
-      ],
-      "joke_types": [
-        "callback",
-        "meta_self_referential"
-      ],
-      "setup": "The Designing Women marathon that's been referenced",
-      "punchline": "The exact empowering speech Liz wants to use",
-      "craft_total": 7.22,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback that sets up Liz's later speech"
-    },
-    {
-      "index": 63,
-      "text": "Staying up all night re-writing The Amazing Hobo. You fat nerd.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "callback",
-        "character_comedy"
-      ],
-      "setup": "Liz working alone",
-      "punchline": "Callback to hobo sketches plus self-insult",
-      "craft_total": 5.8,
-      "impact_score": 5.25,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback with character self-awareness"
-    },
-    {
-      "index": 64,
-      "text": "This is the men's room. Oh!",
-      "characters": [
-        "Jack",
-        "Liz"
       ],
       "joke_types": [
         "physical_slapstick",
-        "cringe_discomfort"
+        "setup_punchline"
       ],
-      "setup": "Liz looking exhausted",
-      "punchline": "She's accidentally in the wrong bathroom",
-      "craft_total": 5.45,
-      "impact_score": 5.17,
-      "quotability": 4.0,
+      "setup": "Kenneth has just delivered his big romantic speech to Grace",
+      "punchline": "A man appears, blandly requests his wife's sweater, and apparently strikes Kenneth \u2014 the romantic fantasy is demolished instantly by mundane domestic reality",
+      "craft_total": 6.99,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard physical comedy showing Liz's exhaustion"
+      "explanation": "The deflation of Kenneth's romantic moment by the blunt intrusion of Grace's partner (and the implied physical punishment) is a well-timed comedic punctuation. 'My wife needs her sweater' as the line that ends Kenneth's love story is perfectly anticlimactic. The 'Ow! Yes, sir!' from Kenneth is a great button."
     },
     {
-      "index": 65,
-      "text": "Next weekend Tracy and I are gonna double team Don Geiss with our big ideas.",
+      "index": 53,
+      "text": "You're watching the Designing Women Marathon on Nick at Nite. / Sir, you may be right. I may be not capable of understanding normal thinking because I think a woman is just as powerful as a man. And until you learn to respect me, you better learn to stay out of my way. / 'Cause this is my house.",
       "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "running_gag",
+        "character_comedy"
+      ],
+      "setup": "Apparently Grace's husband/partner has accused Kenneth of watching Designing Women",
+      "punchline": "Kenneth delivers a full Julia Sugarbaker-style feminist monologue from Designing Women \u2014 in character, completely earnest, having apparently absorbed the show's values wholesale",
+      "craft_total": 7.53,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Kenneth delivering a feminist manifesto borrowed wholesale from a 1980s sitcom after watching it overnight is excellent. The joke works because Kenneth's earnestness transforms the borrowed rhetoric into something genuinely his own \u2014 and 'This is my house' delivered on a golf course is absurdist perfection. Strong callback to the episode's Designing Women thread. Character integration is high \u2014 only Kenneth would weaponize Designing Women so sincerely. Justifies 8+."
+    },
+    {
+      "index": 54,
+      "text": "'This is my house.' (repeated with full conviction)",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "escalation",
+        "running_gag"
+      ],
+      "setup": "Kenneth has just delivered the Designing Women speech",
+      "punchline": "The repetition of 'This is my house' \u2014 delivered for absolute emphasis on a golf course \u2014 deepens the absurdism",
+      "craft_total": 7.08,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The repetition is a good button for the speech \u2014 Kenneth repeating 'This is my house' with conviction at an outdoor golf course is absurd and funny. Works as escalation of the previous joke."
+    },
+    {
+      "index": 55,
+      "text": "Staying up all night re-writing The Amazing Hobo. / You fat nerd.",
+      "characters": [
+        "Writer (unnamed)"
+      ],
+      "joke_types": [
+        "running_gag",
+        "character_comedy"
+      ],
+      "setup": "We see Liz has stayed up all night in the writers room",
+      "punchline": "A writer casually calls her a 'fat nerd' as a greeting \u2014 the insult is delivered with complete casualness, as if it's a term of endearment",
+      "craft_total": 6.16,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The casual delivery of 'you fat nerd' as a morning greeting is funny in context \u2014 the writers room's affectionate/aggressive register. Also connects to the episode's theme of insults. Doesn't reach above competent."
+    },
+    {
+      "index": 56,
+      "text": "Did you win your golf parade? / Even better. Next weekend Tracy and I are gonna double team Don Geiss with our big ideas.",
+      "characters": [
+        "Liz",
         "Jack"
       ],
       "joke_types": [
-        "character_comedy"
+        "wordplay_pun",
+        "setup_punchline"
       ],
-      "setup": "Jack explaining his success",
-      "punchline": "Another unintentional sexual double entendre",
-      "craft_total": 5.42,
-      "impact_score": 5.33,
+      "setup": "Liz asks if Jack won at golf",
+      "punchline": "'Golf parade' as Liz's term for a golf tournament is funny on its own; Jack's response 'double team Don Geiss' continues the running unintentional innuendo thread",
+      "craft_total": 6.71,
+      "impact_score": 6.67,
       "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard innuendo joke but consistent with Jack's obliviousness"
+      "is_callback": 1,
+      "explanation": "'Golf parade' is a good Liz-specific malapropism/simplification. 'Double team Don Geiss' is the third iteration of the unintentional golf innuendo running gag, though slightly less sharp than the originals. The combination of both jokes in one exchange is efficient."
     },
     {
-      "index": 66,
-      "text": "Because I'm not just feminine, I also can project my power.",
+      "index": 57,
+      "text": "You're so weird. / Now get out of here. I have to yell at my staff. / Because I'm not just feminine, I also can project my power.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "running_gag"
       ],
-      "setup": "Liz preparing to yell at her staff",
-      "punchline": "Her awkward attempt at feminist empowerment",
-      "craft_total": 6.41,
-      "impact_score": 6.0,
+      "setup": "Jack is in the women's bathroom; Liz has apparently walked in on him",
+      "punchline": "Liz's yelling at staff is framed through the Designing Women feminist empowerment rhetoric she's absorbed \u2014 'I'm not just feminine, I also can project my power'",
+      "craft_total": 6.95,
+      "impact_score": 6.67,
       "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Liz character moment showing her awkward empowerment"
+      "is_callback": 1,
+      "explanation": "The Designing Women callback applied to Liz's workplace situation is good \u2014 she's now channeling the show's feminist empowerment into staff management. The construction is slightly awkward ('I'm not just feminine, I also can project my power') which is funny because it sounds like a bad translation of the Designing Women sentiment."
     },
     {
-      "index": 67,
-      "text": "That's not cool.",
-      "characters": [
-        "Writer"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
-      ],
-      "setup": "Writer complaining about promised snickerdoodles",
-      "punchline": "Treating it as a serious betrayal",
-      "craft_total": 6.73,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good deadpan treatment of trivial complaint"
-    },
-    {
-      "index": 68,
-      "text": "What is aux?",
+      "index": 58,
+      "text": "You're so weird. Now get out of here. I have to yell at my staff. Because I'm not just feminine, I also can project my power.",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "callback"
       ],
-      "setup": "Liz trying to operate TV/VCR",
-      "punchline": "Her technological incompetence ruining dramatic moment",
-      "craft_total": 7.0,
-      "impact_score": 7.0,
-      "quotability": 5.5,
+      "setup": "Liz sends Jack away after the men's room reveal",
+      "punchline": "Liz's self-description \u2014 'I'm not just feminine, I also can project my power' \u2014 is a slightly garbled feminist empowerment statement that sounds like she's been watching too much Designing Women",
+      "craft_total": 6.74,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good cringe moment undermining Liz's attempt at authority"
+      "is_callback": 1,
+      "explanation": "Liz is still in Designing Women mode \u2014 the slightly off phrasing ('I also can project my power') feels like a Julia Sugarbaker quote that's been slightly garbled by sleep deprivation. Good character-specific callback."
     },
     {
-      "index": 69,
-      "text": "Please don't make me move back to Alaska, Liz. I hate it there.",
+      "index": 59,
+      "text": "Jack is found in the women's bathroom; 'This is the men's room.' / 'Oh!'",
       "characters": [
+        "Liz",
+        "Jack"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "reaction_beat"
+      ],
+      "setup": "Jack apparently entered the wrong bathroom or is in the women's room",
+      "punchline": "Liz finds Jack in what she thought was the men's room, or vice versa \u2014 mutual confusion about the bathroom",
+      "craft_total": 6.47,
+      "impact_score": 6.5,
+      "quotability": 3.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A competent visual gag \u2014 the comedy comes from inferring the physical situation. Not particularly original (wrong bathroom is well-worn territory) but executed efficiently. The 'Oh!' reaction is the whole joke."
+    },
+    {
+      "index": 60,
+      "text": "Didn't you bake us anything?",
+      "characters": [
+        "Writer (unnamed)"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Liz has returned after staying up all night; the writers immediately ask about baked goods",
+      "punchline": "The writers' first and primary concern on seeing their exhausted boss is whether she brought food \u2014 completely oblivious to her condition",
+      "craft_total": 5.86,
+      "impact_score": 5.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A good callback to Liz's earlier cupcake peace offering. The writers have been conditioned to expect baked goods and now demand them \u2014 showing exactly how quickly her attempt at being nice backfired. Economy is excellent."
+    },
+    {
+      "index": 61,
+      "text": "Didn't you bake us anything? / Hey, I thought you were gonna being snickerdoodles in. That's the only reason I showed up.",
+      "characters": [
+        "Writer",
         "Lutz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Liz has returned to the writers' room to assert authority",
+      "punchline": "The staff's FIRST concern after Liz's overnight rewrite session is whether she brought baked goods \u2014 'That's the only reason I showed up' is Lutz at peak entitlement",
+      "craft_total": 6.86,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Lutz's complete obliviousness \u2014 his only concern is snickerdoodles \u2014 is a great characterization beat. 'That's the only reason I showed up' is the killer line. Sets up Liz's big speech perfectly."
+    },
+    {
+      "index": 62,
+      "text": "Hey, I thought you were gonna bring snickerdoodles in. That's the only reason I showed up. I mean, you can't promise snickerdoodles and then not bring any. That's not cool.",
+      "characters": [
+        "Writer (unnamed)"
       ],
       "joke_types": [
         "character_comedy",
         "escalation"
       ],
-      "setup": "Liz threatening to fire Lutz",
-      "punchline": "His specific fear about returning to Alaska",
-      "craft_total": 8.04,
-      "impact_score": 8.0,
+      "setup": "The writers complain about Liz not bringing baked goods",
+      "punchline": "The escalating specificity and moral indignation about the snickerdoodle promise \u2014 'that's not cool' as a genuine grievance about cookies",
+      "craft_total": 7.21,
+      "impact_score": 7.25,
       "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character detail and escalation of consequences"
+      "is_callback": 1,
+      "explanation": "The moral indignation about a snickerdoodle promise is funny because of its complete disproportionality \u2014 this person showed up to work solely for cookies. 'That's not cool' as a serious ethical complaint about confectionery is good character comedy for the writers."
     },
     {
-      "index": 70,
+      "index": 63,
+      "text": "But at 3:30 this morning, I happened to see this episode of Designing Women. And when it came on again at 5:30, I taped it.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "running_gag",
+        "character_comedy"
+      ],
+      "setup": "Liz is addressing the writers room about their bad behavior",
+      "punchline": "Liz's empowerment speech pivots on having watched Designing Women twice and taped it \u2014 placing her in the same position as Frank and Kenneth with the marathon",
+      "craft_total": 7.61,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The Designing Women gag paying off here is satisfying \u2014 Liz, Frank, Kenneth have all been transformed by the marathon. The detail of watching it at 3:30, then taping the 5:30 rerun, is a good specific detail. The callback ties the episode together well."
+    },
+    {
+      "index": 64,
+      "text": "What do I hit, input? Is there a TV/VCR button? What is aux? Hey, can I go now? Hang on. I want your full attention! / Why is it making that noise?",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "physical_slapstick"
+      ],
+      "setup": "Liz tries to play the taped Designing Women episode on the writers room TV to make her point",
+      "punchline": "Her big empowerment moment is completely deflated by her inability to operate the VCR/TV \u2014 'What is aux?' \u2014 while the writers check out",
+      "craft_total": 7.77,
+      "impact_score": 8.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedic deflation of Liz's climactic moment by technology incompetence is well-executed. 'What is aux?' is a great specific detail. The rhythm of increasing frustration while the audience drifts ('can I go now?') is strong character comedy. Very Liz."
+    },
+    {
+      "index": 65,
+      "text": "Okay, never mind. But I want to say something to all of you.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "cringe_discomfort"
+      ],
+      "setup": "Liz has completely failed to get the Designing Women tape to play",
+      "punchline": "The deflated 'okay, never mind' \u2014 abandoning the entire prop that was meant to be her big moment \u2014 before pivoting to try again with just words",
+      "craft_total": 6.8,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The pragmatic pivot from technical defeat is funny precisely because of its resignation. Economy is very high \u2014 'Okay, never mind' does a lot of work. Works as a character beat more than a standalone joke."
+    },
+    {
+      "index": 66,
+      "text": "I'm sorry that I said that. / Please don't make me move back to Alaska, Liz. I hate it there.",
+      "characters": [
+        "Lutz",
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Liz confronts Lutz about the C-word",
+      "punchline": "Lutz's fear of being fired is expressed as fear of moving back to Alaska specifically \u2014 implying both that he's from there and that it's so bad he'd rather work for someone he called the C-word",
+      "craft_total": 7.51,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Alaska detail is both unexpected and perfectly specific. The implication that Lutz is so desperate not to return to Alaska that he'll grovel to a boss he just called the worst word possible is both funny and a little sad. 'I hate it there' delivered with genuine pathos is a nice touch."
+    },
+    {
+      "index": 67,
       "text": "And you will never alter drapes in Atlanta again. Because you do not cross a Sugarbaker woman!",
       "characters": [
         "Liz"
       ],
       "joke_types": [
-        "callback",
+        "running_gag",
         "character_comedy"
       ],
-      "setup": "Liz's threat to the staff",
-      "punchline": "Mixing her real threat with Designing Women dialogue",
-      "craft_total": 7.12,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Liz threatens the consequences for anyone who calls her that word again",
+      "punchline": "The consequence she invokes is from the Designing Women fictional universe \u2014 'alter drapes in Atlanta' / 'Sugarbaker woman' \u2014 mixing the threat with the borrowed TV rhetoric",
+      "craft_total": 8.31,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Excellent payoff to the Designing Women setup with perfect character confusion"
+      "explanation": "The episode's central comedic thesis crystallized in one moment: Liz Lemon's feminist empowerment speech is borrowed wholesale from a late-80s sitcom about Southern interior decorators. 'You will never alter drapes in Atlanta again' as a threat is inspired \u2014 utterly specific, utterly Designing Women, utterly absurd as a power move in a TV writers' room. 'You do not cross a Sugarbaker woman!' is the line that earns 8+ on every dimension: it's original, structurally perfect, deeply character-integrated (Liz absorbs pop culture and deploys it earnestly), economical, and completely earned by the episode's setup. One of the best joke-payoffs in the episode alongside #53."
     },
     {
-      "index": 71,
-      "text": "It's nonny time.",
+      "index": 68,
+      "text": "I will fire you. And you will never alter drapes in Atlanta again. Because you do not cross a Sugarbaker woman!",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Liz is finally asserting herself to the staff",
+      "punchline": "Liz's threat \u2014 'you will never alter drapes in Atlanta again' / 'you do not cross a Sugarbaker woman' \u2014 is a direct quote from Designing Women's finale, delivered with genuine passion but hilariously misapplied to a TV writing staff",
+      "craft_total": 7.82,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The Designing Women payoff is everything the episode has been building toward. Liz using Julia Sugarbaker's closing speech \u2014 about interior design and Atlanta \u2014 to threaten her New York TV writing staff is both absurd and unexpectedly moving because Liz MEANS it. The joke earns its laughs because we've watched Liz absorb the show over an entire episode. 'You do not cross a Sugarbaker woman' is an incredible closing line for the arc. Among the episode's very best moments."
+    },
+    {
+      "index": 69,
+      "text": "I'm so tired. I'm so tired, you guys.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Liz has just delivered her big Designing Women empowerment speech",
+      "punchline": "The immediate deflation \u2014 'I'm so tired, you guys' \u2014 after the climactic speech undercuts the drama perfectly",
+      "craft_total": 8.01,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Six words that perfectly button the episode's A-plot. The anticlimax after the big speech is a 30 Rock signature move \u2014 earned sentiment immediately punctured by human exhaustion. 'You guys' as an address to her subordinates after delivering a feminist power speech is perfectly Liz. This line is both the punchline and the emotional truth. Economy score of 10: impossible to do this in fewer words. Justifies 8+ clearly."
+    },
+    {
+      "index": 70,
+      "text": "All right, champ. It's nonny time.",
       "characters": [
         "Jack"
       ],
@@ -1346,14 +1359,14 @@
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Jack comforting exhausted Liz",
-      "punchline": "His weird term for nap time",
-      "craft_total": 6.94,
-      "impact_score": 6.25,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
+      "setup": "The episode closes on Jack, seemingly addressing someone",
+      "punchline": "'Nonny time' \u2014 an unexplained piece of baby talk or private ritual language from Jack, completely incongruous with his established character",
+      "craft_total": 7.67,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Jack character moment - caring but weird. Great economy."
+      "explanation": "A great cold close. 'Nonny time' is mysterious, unexplained, and deeply incongruous coming from Jack Donaghy \u2014 the alpha male corporate titan has some private ritual with the kitten (or something else) that involves baby talk. The mystery is part of the joke. 'All right, champ' sets the affectionate tone and 'nonny time' is the absurdist punchline. Probably referring to the kitten Liz gave him."
     }
   ],
   "air_date": "2007-02-15",

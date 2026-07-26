@@ -4,112 +4,116 @@
   "season": 3,
   "episode_number": 9,
   "title": "Retreat To Move Forward",
-  "humor_index": 84.2,
-  "jpm": 3.51,
-  "avg_craft": 7.35,
-  "avg_impact": 6.81,
-  "total_jokes": 74,
-  "war": 79.9,
-  "dominant_joke_types": "[\"character_comedy\", \"callback\", \"escalation\"]",
-  "standout_joke_ids": "[20, 61, 70]",
+  "humor_index": 94.5,
+  "jpm": 4.08,
+  "avg_craft": 7.37,
+  "avg_impact": 7.35,
+  "total_jokes": 86,
+  "war": 117.0,
+  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"irony_sarcasm\"]",
+  "standout_joke_ids": "[17, 26, 39]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "So the wacky one?",
+      "text": "Jack asks Liz which photo she prefers; she picks one and asks what it's for \u2014 it turns out to be for a corporate keynote address, making her 'wacky' aesthetic choice immediately deflating.",
       "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Jack asks which picture Liz prefers for his corporate keynote",
-      "punchline": "Jack's casual dismissal of his own choice as 'wacky' reveals his corporate mindset",
-      "craft_total": 6.82,
-      "impact_score": 6.17,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Jack characterization - his corporate speak revealing personality quirks"
-    },
-    {
-      "index": 2,
-      "text": "The audience suggestion is... Sling Blade and Oprah on a date.",
-      "characters": [
+        "Jack",
         "Liz"
       ],
       "joke_types": [
-        "absurdist",
-        "callback"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Liz mentions performing at corporate retreats with improv",
-      "punchline": "Extremely specific and bizarre improv prompt",
-      "craft_total": 7.09,
-      "impact_score": 7.17,
-      "quotability": 8.0,
+      "setup": "Liz is asked to weigh in on two photos, picks 'the wacky one,' then asks what the photo is for.",
+      "punchline": "It's for a corporate keynote address \u2014 so her wacky pick is immediately inappropriate.",
+      "craft_total": 6.01,
+      "impact_score": 5.33,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A gentle opener that establishes Liz's off-beat instincts against Jack's buttoned-up world. Functional and character-specific but not a standout."
+    },
+    {
+      "index": 2,
+      "text": "Liz performs the improv scene: audience suggestion is 'Sling Blade and Oprah on a date.' Liz as Sling Blade says 'I sure do like them French-fried pataters.'",
+      "characters": [
+        "Liz",
+        "Jenna"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "The improv troupe gets an audience suggestion: 'Sling Blade and Oprah on a date.'",
+      "punchline": "Liz, playing Sling Blade, delivers the iconic Karl Childers quote perfectly in character.",
+      "craft_total": 7.25,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliantly absurd specificity that's both random and somehow plausible for bad corporate improv"
+      "explanation": "Absurdly specific cultural mashup (Sling Blade + Oprah on a date) executed with perfect economy. The quote is pitch-perfect and the image is delightfully weird. Also seeds a callback later in the episode."
     },
     {
       "index": 3,
-      "text": "I sure do like them French-fried 'pataters.'",
+      "text": "Jenna, playing Oprah, responds to Sling Blade's line: 'No, you don't, Oprah.' \u2014 which is the wrong character.",
       "characters": [
         "Jenna"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "irony_sarcasm"
       ],
-      "setup": "Following the Sling Blade improv prompt",
-      "punchline": "Jenna's terrible Sling Blade impression",
-      "craft_total": 6.48,
-      "impact_score": 6.0,
+      "setup": "The improv scene is Sling Blade and Oprah. Liz, as Sling Blade, says she loves French-fried taters.",
+      "punchline": "Jenna responds 'No, you don't, Oprah' \u2014 mixing up who is playing which character, immediately illustrating her bad improv skills.",
+      "craft_total": 7.17,
+      "impact_score": 7.0,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Character-driven humor showing Jenna's lack of improv skills"
+      "explanation": "A single line that perfectly crystallizes Jenna's narcissism and incompetence as an improviser \u2014 she can't even keep track of which character she's playing. Character integration is exceptional; only Jenna could be this specifically bad in this specific way."
     },
     {
       "index": 4,
-      "text": "No, you don't, Oprah.",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Jenna's Sling Blade impression",
-      "punchline": "Jenna attempting to play Oprah in this bizarre scenario",
-      "craft_total": 7.22,
-      "impact_score": 6.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Escalates the absurdity with perfect economy"
-    },
-    {
-      "index": 5,
-      "text": "Jenna is not a great improviser.",
+      "text": "'Jenna is not a great improviser.'",
       "characters": [
         "Liz"
       ],
       "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "We've just watched Jenna blow the improv scene spectacularly by saying 'No, you don't, Oprah.'",
+      "punchline": "Liz's dry, understated verdict: 'Jenna is not a great improviser.'",
+      "craft_total": 6.78,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic 30 Rock deadpan understatement. The economy is near-perfect \u2014 one sentence that closes a bit. The understatement works because what we just saw was so catastrophic."
+    },
+    {
+      "index": 5,
+      "text": "Jack says he's 'apprehensive' about the retreat because he hasn't seen these people 'since the C.E.O. debacle and my time in the Bush Administration.'",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Jenna's terrible improv performance",
-      "punchline": "Liz's massive understatement",
-      "craft_total": 7.29,
-      "impact_score": 6.75,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Jack explains why he's nervous about the corporate retreat.",
+      "punchline": "He casually drops 'the C.E.O. debacle and my time in the Bush Administration' as if they're equivalent embarrassments \u2014 huge, dark events treated as small social awkwardness.",
+      "craft_total": 6.92,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan delivery and structure - classic understatement humor"
+      "explanation": "Perfectly in character for Jack \u2014 massive life events treated as casual social footnotes. 'The Bush Administration' as a source of social embarrassment is a darkly funny deflation. Strong character integration."
     },
     {
       "index": 6,
-      "text": "You've got camp jitters.",
+      "text": "Liz diagnoses Jack's anxiety as 'camp jitters' \u2014 you haven't seen your 'little business camp friends' in a year and you're afraid they'll think you got weird.",
       "characters": [
         "Liz"
       ],
@@ -117,56 +121,309 @@
         "character_comedy",
         "observational"
       ],
-      "setup": "Jack's anxiety about the corporate retreat",
-      "punchline": "Liz reducing Jack's corporate concerns to summer camp anxiety",
-      "craft_total": 7.35,
-      "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Jack solemnly explains his apprehension about the prestigious corporate retreat.",
+      "punchline": "Liz reduces it to 'camp jitters,' trivializing Jack's high-stakes professional anxiety as a child's summer camp fear.",
+      "craft_total": 7.58,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant analogy that punctures corporate pretension with childhood parallel"
+      "explanation": "The 'camp jitters' reframe is genuinely sharp \u2014 it recontextualizes corporate anxiety through a child's lens, perfectly characterizing Liz's ability to puncture Jack's pomposity. 'Afraid everybody's going to think you got weird' is a dead-accurate description of adult social anxiety, delivered as childlike. Strong character integration and excellent economy."
     },
     {
       "index": 7,
-      "text": "your little business camp friends",
+      "text": "Liz agrees to go to the retreat, but only if there's a spa \u2014 specifically, a spa where you're allowed to eat in the sauna, 'because at some places, they get mad.'",
       "characters": [
         "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Liz reluctantly agrees to come to the corporate retreat, asking if there's a spa.",
+      "punchline": "She adds the specific condition that she needs to be allowed to eat in the sauna, implying she has been scolded for this before.",
+      "craft_total": 7.72,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A masterclass in Liz Lemon characterization. The eating-in-the-sauna detail is so specific and so perfectly her \u2014 it implies a rich backstory of being kicked out of spas for this exact behavior. 'Because at some places, they get mad' is a beautiful throwaway. High character integration."
+    },
+    {
+      "index": 8,
+      "text": "A writer asks if Jenna's movie is 'one where you swap brains with your granddaughter.'",
+      "characters": [
+        "Frank",
+        "Jenna"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Jenna announces she's been cast in an upcoming feature film.",
+      "punchline": "Frank's first guess is the most ridiculous possible premise \u2014 a brain-swap movie with her granddaughter \u2014 implying Jenna is both old and prone to awful projects.",
+      "craft_total": 6.99,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The granddaughter detail is an efficient double insult \u2014 it mocks Jenna's age and her career trajectory simultaneously. Classic 30 Rock joke density: small package, multiple targets."
+    },
+    {
+      "index": 9,
+      "text": "Jenna says depending on how 'some legal matters pan out,' her character may be named 'Janet Jopler' or 'Janie Jimplin.'",
+      "characters": [
+        "Jenna"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Jenna announces she'll be playing Janis Joplin.",
+      "punchline": "The legal contingency plan produces two hilariously bad pseudonyms \u2014 'Janet Jopler' and 'Janie Jimplin' \u2014 that barely disguise the original name.",
+      "craft_total": 7.31,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The specificity of two terrible pseudonym options (rather than one) escalates the absurdity. 'Jimplin' in particular has a wonderful sound. The joke skewers Hollywood's litigious culture while making us laugh at its own absurd solution. Highly quotable."
+    },
+    {
+      "index": 10,
+      "text": "Jenna says she'll employ the 'Method method of acting' and will only respond to 'Janis' or 'Miss Joplin.' Then adds: 'If you're nasty.'",
+      "characters": [
+        "Jenna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Jenna announces her Method acting commitment \u2014 she'll only answer to Janis or Miss Joplin.",
+      "punchline": "'If you're nasty' \u2014 a Janet Jackson reference implying that 'Miss Joplin' is the formal/demanding option, conflating two different music icons.",
+      "craft_total": 7.42,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The 'If you're nasty' Janet Jackson callback smuggled into a Janis Joplin Method acting bit is delightfully absurd. It reveals Jenna's confused relationship with diva culture and her inability to distinguish between music icons. The pop culture mash-up is earned, not random."
+    },
+    {
+      "index": 11,
+      "text": "Writers' rapid-fire insults at Jenna before she becomes Janis: 'Your hands are weird.' 'I don't think you went to high school.' 'I'm not busy Friday.' 'I just said I was.'",
+      "characters": [
+        "Writers",
+        "Jenna"
       ],
       "joke_types": [
         "character_comedy",
         "escalation"
       ],
-      "setup": "Liz's camp analogy",
-      "punchline": "Doubling down on diminishing Jack's corporate world",
-      "craft_total": 7.23,
-      "impact_score": 6.33,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good escalation of the camp metaphor"
+      "setup": "Jenna says this is the last chance to say anything to 'Jenna' before she becomes Janis.",
+      "punchline": "The writers' responses range from insults to social confusion to someone desperately trying to hang out \u2014 each one funnier than the last, culminating in the sad 'I just said I was' denial.",
+      "craft_total": 7.51,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A beautifully structured escalating list joke. The sequence moves from random weird insult \u2192 existential doubt \u2192 pathetic loneliness \u2192 denial. 'I don't think you went to high school' is wonderfully non-sequitur. The escalation structure is excellent."
     },
     {
-      "index": 8,
-      "text": "don't make me be your camp friend",
+      "index": 12,
+      "text": "Frank suggests Jenna do her Janis Joplin research on Wikipedia, noting 'It's online, so anyone can update it' \u2014 because people are 'finding out new things about Janis Joplin every day.'",
       "characters": [
-        "Liz"
+        "Frank",
+        "Jenna"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Frank helpfully suggests Wikipedia for Janis Joplin research.",
+      "punchline": "His aside \u2014 'anyone can update it... people are finding out new things every day' \u2014 is transparently setting up a Wikipedia prank while Jenna remains oblivious.",
+      "craft_total": 7.26,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A well-constructed plant joke \u2014 the audience immediately understands Frank's con while Jenna doesn't. The dramatic irony is the engine. 'People are finding out new things about Janis Joplin every day' is a beautifully dumb lie delivered with confidence."
+    },
+    {
+      "index": 13,
+      "text": "Jenna reads from the Wikipedia page she's been pranked with: 'Did you know that Janis Joplin speed-walked everywhere and was afraid of toilets?'",
+      "characters": [
+        "Jenna"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Jenna goes to Wikipedia to research Janis Joplin for her Method acting preparation.",
+      "punchline": "Frank has already edited the page; Jenna reads that Janis speed-walked everywhere and was afraid of toilets.",
+      "craft_total": 7.83,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The specificity of 'speed-walked everywhere' and 'afraid of toilets' as fake Janis Joplin facts is inspired \u2014 they're weird enough to be plausible in a celebrity-myth sense, and they immediately create comedy because we know Jenna will now act on these. 'Afraid of toilets' in particular is an excellent absurdist detail."
+    },
+    {
+      "index": 14,
+      "text": "'I have heard that, yes.' \u2014 Pete confirming Jenna's false Wikipedia facts about Janis Joplin speed-walking and being afraid of toilets.",
+      "characters": [
+        "Pete"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Jenna excitedly shares the fake Janis facts she found on Wikipedia.",
+      "punchline": "Pete flatly confirms them: 'I have heard that, yes.'",
+      "craft_total": 6.96,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A perfectly economical support joke. The deadpan confirmation deepens the prank's absurdity. Less impressive on its own but works well as a beat in the sequence."
+    },
+    {
+      "index": 15,
+      "text": "Tracy reads his diabetes diagnosis off the chart, sounding it out as 'Dee-ay-butt-ees' before Dr. Spaceman corrects him.",
+      "characters": [
+        "Tracy",
+        "Dr. Spaceman"
       ],
       "joke_types": [
         "character_comedy",
-        "callback"
+        "wordplay_pun"
       ],
-      "setup": "Jack asking Liz to accompany him",
-      "punchline": "Continuing the camp metaphor with reluctant friendship",
-      "craft_total": 6.91,
-      "impact_score": 5.83,
-      "quotability": 6.0,
+      "setup": "Dr. Spaceman is about to tell Tracy something serious about his health. Tracy looks at the chart.",
+      "punchline": "Tracy mispronounces 'diabetes' as 'Dee-ay-butt-ees' \u2014 not stupidly, but with confident phonetic logic.",
+      "craft_total": 7.6,
+      "impact_score": 7.75,
+      "quotability": 8.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Solid callback maintaining the metaphor"
+      "is_callback": 0,
+      "explanation": "Highly quotable Tracy Jordan moment. The mispronunciation has an internal phonetic logic that reveals a brain that processes language differently. 'Dee-ay-butt-ees' sounds like something you'd be embarrassed it took you 30 seconds to understand. Strong character integration."
     },
     {
-      "index": 9,
-      "text": "First of all, never bad-mouth synergy.",
+      "index": 16,
+      "text": "Tracy asks how bad diabetes really is; Dr. Spaceman says he could lose a foot. Tracy asks: 'Could I replace it with a wheel like Rosie from The Jetsons?'",
+      "characters": [
+        "Tracy",
+        "Dr. Spaceman"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Dr. Spaceman warns that untreated diabetes could lead to losing a foot.",
+      "punchline": "Tracy's immediate and earnest question is whether he could replace the foot with a wheel, specifically citing Rosie the Robot from The Jetsons.",
+      "craft_total": 8.2,
+      "impact_score": 8.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. The leap from 'losing a foot to diabetes' to 'Rosie from The Jetsons' is so specific and so perfectly Tracy \u2014 he's not afraid of losing a foot, he's excited about the upgrade potential. The Jetsons reference is neither random nor obvious; it's the specific correct reference for this exact absurdist logic. Extremely quotable and highly character-specific."
+    },
+    {
+      "index": 17,
+      "text": "Dr. Spaceman says Tracy could replace his foot with a wheel, but then he'd 'have to register as a motor vehicle.'",
+      "characters": [
+        "Dr. Spaceman"
+      ],
+      "joke_types": [
+        "absurdist",
+        "deadpan_understatement"
+      ],
+      "setup": "Tracy asks if he could replace a lost foot with a wheel like Rosie from The Jetsons.",
+      "punchline": "Dr. Spaceman doesn't push back on the premise at all \u2014 he simply notes the bureaucratic consequence: 'you'd have to register as a motor vehicle.'",
+      "craft_total": 8.65,
+      "impact_score": 8.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is the episode's best joke and one of Dr. Spaceman's finest moments. The genius is in what he DOESN'T say \u2014 he treats the wheel-foot replacement as entirely medically viable and moves straight to the DMV logistics. The bureaucratic absurdism is perfectly executed: this is a doctor whose only concern is paperwork, not medicine. The economy is near-perfect. Comparable to the 8.0 anchor in originality and execution, pushed higher by the character integration."
+    },
+    {
+      "index": 18,
+      "text": "Jack's mirror psych-up speech: 'Well, buddy, here we go. Bases loaded, bottom of the ninth. Are you going to step up? Oh, yeah. Because it's winning time, you magnificent son of a bitch!'",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Jack needs to prepare himself for the corporate retreat. We find him alone in his room.",
+      "punchline": "He's delivering an intense, sweating, sports-metaphor-laden psych-up speech to himself in the mirror \u2014 ending with 'you magnificent son of a bitch.'",
+      "craft_total": 7.3,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The comedy comes from the collision between Jack's polished exterior and his sweating, desperate interior monologue. 'You magnificent son of a bitch' landing as self-directed is gloriously unhinged. Seeds a crucial callback payoff later."
+    },
+    {
+      "index": 19,
+      "text": "The psych-up speech incorporates advertising slogans: 'Just do it. Is it in you? I'm loving it!' \u2014 mashing Nike, Gatorade, and McDonald's together.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Jack's psych-up speech reaches its climax.",
+      "punchline": "He seamlessly transitions into corporate advertising slogans as motivational language \u2014 'Just do it. Is it in you? I'm loving it!'",
+      "craft_total": 7.5,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Jack's unconscious absorption of corporate branding into his deepest self-talk is sharp satire. It's perfectly character-integrated \u2014 Jack is so thoroughly corporatized that he motivates himself with ad copy. The three consecutive slogans build nicely."
+    },
+    {
+      "index": 20,
+      "text": "Liz catches Jack psyching himself up in the mirror. She admits she does the same thing before parties where she doesn't know a lot of people \u2014 'Stop sweating, you idiot. What is wrong with you, you stupid bitch?'",
+      "characters": [
+        "Liz",
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Liz catches Jack mid-psych-up. He's embarrassed. She normalizes it by saying she does it too.",
+      "punchline": "Her version of the psych-up speech is entirely self-flagellating: 'Stop sweating, you idiot. What is wrong with you, you stupid bitch?'",
+      "craft_total": 8.14,
+      "impact_score": 8.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The structural parallel to Jack's speech is brilliant \u2014 both characters psych themselves up but Liz's version is entirely self-loathing rather than self-aggrandizing. This single exchange characterizes both characters perfectly. 'Stop sweating, you idiot' \u2192 'What is wrong with you, you stupid bitch?' is a devastating escalation. Exceptional character integration and highly quotable."
+    },
+    {
+      "index": 21,
+      "text": "Jack introduces the Six Sigma pillars: teamwork, insight, brutality, male enhancement, 'handshake-ful-ness,' and play hard.",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Jack explains that the Six Sigmas are six people who each embody a pillar of the Six Sigma business philosophy.",
+      "punchline": "The pillars are a mix of legitimate business terms and completely made-up absurdities: 'brutality,' 'male enhancement,' 'handshake-ful-ness.'",
+      "craft_total": 7.8,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A masterful list joke where legitimate-sounding terms ('teamwork, insight') give way to increasingly absurd ones. 'Handshake-ful-ness' is a beautiful portmanteau that sounds just corporate enough to be plausible. 'Male enhancement' as a corporate pillar is also excellent."
+    },
+    {
+      "index": 22,
+      "text": "Jack greets the assembled executives: 'Men? If I'd known your wives were alone I would have stayed in New York.'",
       "characters": [
         "Jack"
       ],
@@ -174,436 +431,138 @@
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Liz complaining about corporate speak",
-      "punchline": "Jack's deadly serious defense of meaningless buzzword",
-      "craft_total": 7.66,
-      "impact_score": 7.17,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Jack character moment - treating corporate nonsense with religious reverence"
-    },
-    {
-      "index": 10,
-      "text": "Where you are allowed to eat in the sauna because at some places, they get mad.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Liz asking about spa amenities",
-      "punchline": "Oddly specific requirement revealing Liz's gross habits",
-      "craft_total": 7.58,
-      "impact_score": 7.17,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfectly gross Liz moment with believable specificity"
-    },
-    {
-      "index": 11,
-      "text": "Is it a movie where you swap brains with your granddaughter?",
-      "characters": [
-        "Frank"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Jenna announcing her movie role",
-      "punchline": "Frank's random, specific movie premise",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Absurd but plausible bad movie premise"
-    },
-    {
-      "index": 12,
-      "text": "Janet Jopler or Janie Jimplin",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Legal issues with using Janis Joplin's name",
-      "punchline": "Hilariously bad alternate names",
-      "craft_total": 7.38,
-      "impact_score": 7.33,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Great wordplay with increasingly ridiculous alternatives"
-    },
-    {
-      "index": 13,
-      "text": "If you're nasty.",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "callback",
-        "meta_self_referential"
-      ],
-      "setup": "Jenna saying to call her 'Miss Joplin'",
-      "punchline": "Janet Jackson reference mixed into Janis Joplin method acting",
-      "craft_total": 6.83,
-      "impact_score": 6.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Clever pop culture mix-up showing Jenna's confusion"
-    },
-    {
-      "index": 14,
-      "text": "Oh, your hands are weird. I don't think you went to high school. I'm not busy Friday. I just said I was.",
-      "characters": [
-        "Writers"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Jenna offering last chance to speak to her as Jenna",
-      "punchline": "Stream of random, mean observations from the writers",
-      "craft_total": 7.48,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalating list of petty grievances"
-    },
-    {
-      "index": 15,
-      "text": "You should do your Janis research on Wikipedia. It's online, so anyone can update it.",
-      "characters": [
-        "Frank"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "misdirection"
-      ],
-      "setup": "Frank offering helpful research advice",
-      "punchline": "Setting up Jenna for false information",
-      "craft_total": 7.57,
+      "setup": "Jack arrives at the Six Sigma retreat and sees the assembled executives.",
+      "punchline": "He immediately opens with a wife-targeting pickup line as a greeting \u2014 embodying the specific breed of '80s corporate alpha-male swagger.",
+      "craft_total": 7.03,
       "impact_score": 6.5,
       "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good setup for the Wikipedia prank payoff"
-    },
-    {
-      "index": 16,
-      "text": "Did you know that Janis Joplin speed-walked everywhere and was afraid of toilets?",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "absurdist",
-        "callback"
-      ],
-      "setup": "Frank's Wikipedia suggestion",
-      "punchline": "Ridiculous fake facts about Janis Joplin",
-      "craft_total": 7.41,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Absurd specificity makes the fake facts funnier"
-    },
-    {
-      "index": 17,
-      "text": "I have heard that, yes.",
-      "characters": [
-        "Frank"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "callback"
-      ],
-      "setup": "Jenna's fake Janis Joplin facts",
-      "punchline": "Frank playing along with his own prank",
-      "craft_total": 7.23,
-      "impact_score": 6.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good deadpan commitment to the bit"
-    },
-    {
-      "index": 18,
-      "text": "Dee-ay-butt-ees?",
-      "characters": [
-        "Dr. Spaceman"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Dr. Spaceman trying to deliver serious medical news",
-      "punchline": "Mispronouncing 'diabetes' phonetically",
-      "craft_total": 7.55,
-      "impact_score": 7.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Dr. Spaceman moment - incompetent doctor character comedy"
-    },
-    {
-      "index": 19,
-      "text": "Could I replace it with a wheel like Rosie from 'The Jetsons'?",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Dr. Spaceman warning about losing a foot to diabetes",
-      "punchline": "Tracy's cartoon robot solution",
-      "craft_total": 7.81,
-      "impact_score": 7.67,
-      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Absurd but character-appropriate reference"
-    },
-    {
-      "index": 20,
-      "text": "But then, you'd have to register as a motor vehicle.",
-      "characters": [
-        "Dr. Spaceman"
-      ],
-      "joke_types": [
-        "absurdist",
-        "escalation"
-      ],
-      "setup": "Tracy's wheel replacement idea",
-      "punchline": "Dr. Spaceman's matter-of-fact response about registration",
-      "craft_total": 8.34,
-      "impact_score": 8.17,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant escalation treating absurd premise with bureaucratic logic"
-    },
-    {
-      "index": 21,
-      "text": "Because it's winning time, you magnificent son of a bitch!",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Jack psyching himself up in the mirror",
-      "punchline": "Over-the-top motivational speak to himself",
-      "craft_total": 6.75,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good cringe comedy showing Jack's insecurity"
-    },
-    {
-      "index": 22,
-      "text": "Just do it. Is it in you? I'm loving it!",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Jack's self-pep talk",
-      "punchline": "String of corporate slogans as motivation",
-      "craft_total": 7.61,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Smart escalation using familiar slogans inappropriately"
+      "explanation": "The joke works as character illustration \u2014 Jack's idea of a charming, confident entrance. The punchline implies sexual confidence and casual disregard for workplace propriety. Strong character integration."
     },
     {
       "index": 23,
-      "text": "Stop sweating, you idiot. What is wrong with you, you stupid bitch?",
+      "text": "Corporate nonsense speak: 'The Finulus data suggest we should be leveraging disintermediation paradigms.' / 'The Finular analysis will concur with any synergized mindshare classifications.' / 'Bladorian frankles.'",
       "characters": [
+        "Executive",
+        "Jack",
         "Liz"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "absurdist",
+        "observational"
       ],
-      "setup": "Liz revealing she also does mirror pep talks",
-      "punchline": "Her version being self-deprecating and harsh",
-      "craft_total": 7.74,
-      "impact_score": 7.33,
+      "setup": "Liz watches as Jack launches into corporate jargon with the executives.",
+      "punchline": "The jargon escalates from real-ish buzzwords to completely invented words ('Finular,' 'Bladorian frankles') until Liz is entirely lost.",
+      "craft_total": 7.62,
+      "impact_score": 7.5,
       "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect contrast to Jack's self-aggrandizement, very Liz"
+      "explanation": "An escalating satire of corporate jargon where the writing commits to complete gibberish. 'Bladorian frankles' is the perfect endpoint \u2014 it sounds exactly like real consultant-speak but is obviously nothing. The three-beat escalation (real buzzword \u2192 slightly fake \u2192 pure nonsense) is well-structured. Then Liz's 'Hi. I'm Liz.' is the perfect reality check."
     },
     {
       "index": 24,
-      "text": "They're dudes?",
+      "text": "Liz tries to explain she's not part of the corporate structure. The M-7s keep offering her corporate letter designations: 'G'? 'H'? 'J'? She insists she's no letter.",
       "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "observational",
-        "character_comedy"
-      ],
-      "setup": "Jack pointing out the Six Sigmas",
-      "punchline": "Liz's surprise that business philosophy is embodied by men",
-      "craft_total": 6.55,
-      "impact_score": 5.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good observation about corporate culture"
-    },
-    {
-      "index": 25,
-      "text": "teamwork, insight, brutality... male enhancement... 'handshake-ful-ness' and play hard.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "absurdist",
-        "escalation"
-      ],
-      "setup": "Jack explaining the Six Sigma business philosophy",
-      "punchline": "Increasingly ridiculous 'pillars' including made-up words",
-      "craft_total": 7.94,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant satire of corporate buzzwords with escalating absurdity"
-    },
-    {
-      "index": 26,
-      "text": "Men? If I'd known your wives were alone I would have stayed in New York.",
-      "characters": [
-        "Jack"
+        "Liz",
+        "Prashant",
+        "Joan"
       ],
       "joke_types": [
         "character_comedy",
-        "setup_punchline"
+        "absurdist"
       ],
-      "setup": "Jack greeting the Six Sigma men",
-      "punchline": "Smooth but inappropriate opening line",
-      "craft_total": 7.11,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Jack sleazy charm moment"
-    },
-    {
-      "index": 27,
-      "text": "Well, obviously, the Finular analysis will concur with any synergized mindshare classifications. Bladorian frankles.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "absurdist",
-        "wordplay_pun"
-      ],
-      "setup": "Corporate speak about business analysis",
-      "punchline": "Complete nonsense words mixed with buzzwords",
-      "craft_total": 7.76,
-      "impact_score": 7.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Great corporate speak satire ending in pure gibberish"
-    },
-    {
-      "index": 28,
-      "text": "'J'?",
-      "characters": [
-        "Prashant"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Liz insisting she's not any corporate level letter",
-      "punchline": "Prashant suggesting an even lower letter",
-      "craft_total": 6.78,
-      "impact_score": 6.25,
+      "setup": "Liz is approached by two mid-level GE employees who want to know her corporate level.",
+      "punchline": "No matter how many times she insists she's 'not any letter,' they keep escalating through the alphabet, unable to process that someone could exist outside the hierarchy.",
+      "craft_total": 7.12,
+      "impact_score": 7.0,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of corporate hierarchy absurdity"
+      "explanation": "A solid bit that satirizes corporate culture's obsession with hierarchy. The letter escalation is a good structural choice \u2014 they move through the alphabet as if covering all options will eventually find her level."
     },
     {
-      "index": 29,
-      "text": "It's a practice wheel for when I lose my foot to diabetes.",
+      "index": 25,
+      "text": "Tracy is wearing a practice wheel on his foot in preparation for losing it to diabetes.",
       "characters": [
-        "Tracy"
+        "Tracy",
+        "Kenneth"
       ],
       "joke_types": [
-        "callback",
-        "absurdist"
-      ],
-      "setup": "Kenneth asking about something on Tracy's foot",
-      "punchline": "Tracy's matter-of-fact explanation of preparation for amputation",
-      "craft_total": 7.61,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback with characteristic Tracy logic"
-    },
-    {
-      "index": 30,
-      "text": "There's no link between diabetes and diet. That's a white myth, like Larry Bird or Colorado.",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "absurdist",
+        "visual_gag",
         "character_comedy"
       ],
-      "setup": "Kenneth saying Tracy can't eat candy with diabetes",
-      "punchline": "Tracy's conspiracy theory including impossible examples",
-      "craft_total": 8.0,
-      "impact_score": 7.83,
-      "quotability": 9.5,
+      "setup": "Tracy was just told he might lose his foot to diabetes.",
+      "punchline": "He's already attached a wheel to his foot as a 'practice wheel,' immediately acting on the Jetsons fantasy rather than treating the disease.",
+      "craft_total": 8.18,
+      "impact_score": 8.33,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Legendary Tracy line - perfectly absurd examples that become quotable memes"
+      "is_callback": 1,
+      "explanation": "The physical callback to the Jetsons joke is excellent. Tracy didn't just entertain the idea \u2014 he immediately acted on it, which is perfectly in character. The visual of a man rolling around on a practice wheel instead of addressing his medical condition is inspired. Strong callback that pays off the earlier joke."
     },
     {
-      "index": 31,
-      "text": "My dad had diabetes and he ate whatever he wanted until he died on the day I was born.",
+      "index": 26,
+      "text": "Tracy says there's 'no link between diabetes and diet' \u2014 calling it 'a white myth, Ken, like Larry Bird or Colorado.'",
       "characters": [
-        "Lutz"
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Kenneth tells Tracy he can't eat candy if he has diabetes.",
+      "punchline": "Tracy insists the diet-diabetes link is 'a white myth' \u2014 and his examples of other 'white myths' are Larry Bird and Colorado.",
+      "craft_total": 8.32,
+      "impact_score": 8.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Superb Tracy Jordan absurdist logic. The concept of 'white myths' is funny, but the execution \u2014 Larry Bird and Colorado as examples \u2014 is inspired. Colorado as a 'white myth' is wonderfully ambiguous (is it the state? the color? the Snow?). Highly quotable and perfectly character-specific."
+    },
+    {
+      "index": 27,
+      "text": "A writer says his dad had diabetes and 'ate whatever he wanted until he died on the day I was born.' Kenneth points out the obvious logical connection; the writer doesn't see it.",
+      "characters": [
+        "Writer",
+        "Kenneth"
       ],
       "joke_types": [
         "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Discussion about diabetes and diet",
-      "punchline": "Lutz's darkly personal anecdote missing the obvious connection",
-      "craft_total": 7.76,
-      "impact_score": 7.33,
+      "setup": "Kenneth tries to get the writers to back him up on the diet-diabetes connection.",
+      "punchline": "One writer's 'evidence' for diabetes being unrelated to diet is that his dad ate whatever he wanted until he died \u2014 on the day the writer was born. He's describing a direct fatal consequence while thinking it supports the opposite argument.",
+      "craft_total": 7.65,
+      "impact_score": 7.67,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark but character-appropriate, missing obvious causation"
+      "explanation": "Darkly funny and structurally elegant. The punchline is buried in the setup \u2014 his dad's diet-related death is presented as counterevidence, which is both oblivious and devastating. 'Until he died on the day I was born' does a lot of work."
     },
     {
-      "index": 32,
-      "text": "most African Americans don't understand that diabetes is caused by sleeping on your back.",
+      "index": 28,
+      "text": "Conspiracy theory: after the Civil War, the U.S. government spread false information about diabetes to keep newly-freed slaves 'sluggish and docile.' 'And I heard that from Yusef Jackson.'",
+      "characters": [
+        "Writer"
+      ],
+      "joke_types": [
+        "absurdist",
+        "dark_subversive"
+      ],
+      "setup": "The writers debate the diabetes-diet connection.",
+      "punchline": "One writer presents an elaborate Civil War government conspiracy theory about diabetes disinformation \u2014 sourced to 'Yusef Jackson,' an invented authoritative-sounding name.",
+      "craft_total": 7.31,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke threads a needle between satirizing conspiracy thinking and racial health myths. 'Yusef Jackson' as the source is a good touch \u2014 close enough to a real name to feel like a real misinformation chain. The historical specificity (post-Civil War) elevates it above generic conspiracy humor."
+    },
+    {
+      "index": 29,
+      "text": "Toofer's contribution: 'most African Americans don't understand that diabetes is caused by sleeping on your back.'",
       "characters": [
         "Toofer"
       ],
@@ -611,587 +570,425 @@
         "absurdist",
         "character_comedy"
       ],
-      "setup": "Conspiracy theories about diabetes",
-      "punchline": "Toofer adding his own ridiculous medical misinformation",
-      "craft_total": 7.26,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Writers are sharing myths about diabetes causation.",
+      "punchline": "Toofer \u2014 the show's 'respectable Black intellectual' character \u2014 contributes his own myth: diabetes is caused by sleeping on your back.",
+      "craft_total": 6.96,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Absurd medical claim fitting the escalating misinformation"
+      "explanation": "The joke works partly because Toofer \u2014 who is usually positioned as the educated, 'correct' one \u2014 contributes the most medically absurd claim with the most confidence. Character integration is solid."
     },
     {
-      "index": 33,
-      "text": "Next, you'll be telling me that leasing a sports car is a bad investment.",
+      "index": 30,
+      "text": "Tracy closes the diabetes debate: 'Next, you'll be telling me that leasing a sports car is a bad investment.'",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Kenneth insisting diabetes is diet-related",
-      "punchline": "Tracy's sarcastic example that's actually true",
-      "craft_total": 7.75,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Kenneth has failed to convince anyone that diabetes is diet-related.",
+      "punchline": "Tracy's closing line equates the diabetes-diet link with the 'myth' that leasing sports cars is financially unwise \u2014 implying that's also something he's been told and dismissed.",
+      "craft_total": 7.91,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Tracy logic - using obviously bad decision as comparison"
+      "explanation": "A perfect Tracy button. The financial ignorance is entirely in character, but the delivery \u2014 as if it's the obvious parallel to someone trying to correct his medical misinformation \u2014 reveals the full landscape of Tracy's delusions. Highly quotable and perfectly character-integrated."
     },
     {
-      "index": 34,
-      "text": "I'm going to need some cherry juice, buttermilk and tequila to make my signature Janis Joplin cocktail The Frankschlong.",
+      "index": 31,
+      "text": "Jenna (as 'Janis') enters the writers' room in full Joplin garb, asking for cherry juice, buttermilk and tequila to make her signature cocktail, 'The Frankschlong.'",
       "characters": [
         "Jenna"
       ],
       "joke_types": [
-        "callback",
-        "wordplay_pun"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Jenna as Janis requesting drink ingredients",
-      "punchline": "Ridiculous cocktail name from fake Wikipedia research",
-      "craft_total": 7.23,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Jenna is now fully committed to her Method Janis Joplin character, having read fake Wikipedia facts.",
+      "punchline": "She orders a made-up cocktail called 'The Frankschlong' \u2014 a name that suggests both Frank's involvement and something obscene.",
+      "craft_total": 6.85,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Good callback with absurd drink name"
+      "explanation": "The callback to the Wikipedia prank pays off well \u2014 Frank apparently went further than speed-walking and toilet fear, inventing an entire cocktail. 'The Frankschlong' is an excellent absurdist name with a double meaning."
     },
     {
-      "index": 35,
-      "text": "It's 'LUNCH.' Lego Utilization for Negating Crisis Hierarchies.",
+      "index": 32,
+      "text": "Pete addresses Jenna as 'Miss Jimplin' \u2014 casually accepting her Method persona",
       "characters": [
-        "Six Sigma"
+        "Pete",
+        "Jenna"
       ],
       "joke_types": [
-        "absurdist",
-        "wordplay_pun"
+        "character_comedy",
+        "running_gag"
       ],
-      "setup": "Liz asking what this activity is",
-      "punchline": "Ridiculous acronym for simple team building",
-      "craft_total": 7.86,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant corporate acronym satire"
+      "setup": "Pete needs to talk to Jenna in her Method state",
+      "punchline": "Pete's casual use of 'Miss Jimplin' \u2014 the worst of the legal alias names \u2014 shows how the writers' room has already capitulated to Jenna's madness",
+      "craft_total": 6.6,
+      "impact_score": 6.25,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A light running gag callback. Works as a sign that Jenna's Method nonsense has already been normalized in the workplace. Functional but not exceptional."
     },
     {
-      "index": 36,
-      "text": "No, Lemon, 'CLASS.' It's an acronym for Consuming Lunch And Simple Socializing.",
+      "index": 33,
+      "text": "The 'LUNCH' acronym reveal: Lego Utilization for Negating Crisis Hierarchies.",
       "characters": [
         "Jack"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "The LUNCH acronym",
-      "punchline": "Another unnecessary acronym for basic activities",
-      "craft_total": 7.63,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good escalation of acronym absurdity"
+      "setup": "Liz asks what 'LUNCH' is when the activity turns out to be a Lego-based competitive team-building exercise.",
+      "punchline": "'LUNCH' is an acronym for 'Lego Utilization for Negating Crisis Hierarchies.' It's not lunch.",
+      "craft_total": 7.49,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The reveal that every mundane word is an acronym for corporate nonsense is a sharp satirical concept. 'Negating Crisis Hierarchies' is beautifully meaningless jargon. The setup \u2014 Liz expecting actual food \u2014 makes the punchline land harder."
     },
     {
-      "index": 37,
-      "text": "Now, that just seems intentionally confusing.",
+      "index": 34,
+      "text": "'CLASS' is another acronym: Consuming Lunch And Simple Socializing. 'Now, that just seems intentionally confusing.'",
       "characters": [
+        "Jack",
         "Liz"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
+        "absurdist",
+        "running_gag"
       ],
-      "setup": "Multiple confusing corporate acronyms",
-      "punchline": "Liz's obvious observation",
-      "craft_total": 7.03,
-      "impact_score": 6.17,
-      "quotability": 6.0,
+      "setup": "Jack tells Liz 'let's go to class' after the Lego exercise.",
+      "punchline": "CLASS = Consuming Lunch And Simple Socializing. Liz's response \u2014 'Now, that just seems intentionally confusing' \u2014 is the perfect straight-man button.",
+      "craft_total": 7.51,
+      "impact_score": 7.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good straight-woman reaction to corporate nonsense"
+      "is_callback": 1,
+      "explanation": "The running gag of everything being a confusing acronym escalates well. 'Intentionally confusing' is Liz at her most accurately observational. The second acronym is slightly less surprising than the first but still lands."
     },
     {
-      "index": 38,
-      "text": "N-O-E... no! E.",
+      "index": 35,
+      "text": "Tracy arrives with what appears to be disgusting food \u2014 Kenneth looks disgusted: 'What's up with this disgusting stuff?'",
       "characters": [
-        "Tracy"
+        "Tracy",
+        "Kenneth"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "visual_gag",
         "character_comedy"
       ],
-      "setup": "Kenneth trying to get Tracy to eat healthy",
-      "punchline": "Tracy spelling out his refusal creatively",
-      "craft_total": 6.67,
-      "impact_score": 5.83,
-      "quotability": 5.5,
+      "setup": "Kenneth has been trying to get Tracy to eat healthy",
+      "punchline": "Tracy has arrived with something described only as 'disgusting stuff' \u2014 the visual of whatever he's eating is the joke, and Kenneth's reaction confirms it's spectacularly unhealthy",
+      "craft_total": 5.25,
+      "impact_score": 4.75,
+      "quotability": 3.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Mild wordplay fitting Tracy's character"
+      "explanation": "A transitional visual beat \u2014 we can infer something grossly unhealthy is being consumed, but the joke relies entirely on the visual we can't see. Weak as a transcript joke."
     },
     {
-      "index": 39,
-      "text": "Oh, you want to hear a tale of the Hill Witch?",
+      "index": 36,
+      "text": "Kenneth delivers a speech about seeing 'too many folks back home die of diabetes and Go-Kart accidents to sit idly by.'",
       "characters": [
         "Kenneth"
       ],
       "joke_types": [
         "character_comedy",
-        "setup_punchline"
+        "absurdist"
       ],
-      "setup": "Kenneth's southern superstitions emerging",
-      "punchline": "Ominous storytelling voice for made-up threat",
-      "craft_total": 7.03,
-      "impact_score": 6.0,
-      "quotability": 7.0,
+      "setup": "Kenneth passionately pleads with Tracy to eat healthier.",
+      "punchline": "He groups 'diabetes and Go-Kart accidents' as the twin mortality crises of his hometown \u2014 the juxtaposition of a serious medical condition with a cartoonish injury cause.",
+      "craft_total": 7.47,
+      "impact_score": 7.33,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great Kenneth character moment setting up elaborate lie"
+      "explanation": "Kenneth's Southern background being characterized by both a genuine health crisis and the absurd specificity of 'Go-Kart accidents' is perfectly in character. The juxtaposition implies Go-Kart accidents are an epidemic in his hometown, which is funnier than any explanation."
     },
     {
-      "index": 40,
-      "text": "My Mee-maw saw her once taking away a boy who wouldn't eat his vegetables.",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "setup_punchline"
-      ],
-      "setup": "Kenneth starting Hill Witch story",
-      "punchline": "Folksy story designed to scare Tracy into eating vegetables",
-      "craft_total": 7.87,
-      "impact_score": 6.75,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Kenneth character moment with Southern folklore"
-    },
-    {
-      "index": 41,
-      "text": "One look turns you to stone and then she gorges on your living brain.",
+      "index": 37,
+      "text": "Kenneth's 'Hill Witch' myth \u2014 a 1,000-year-old shriveled crone who takes away boys who don't eat their vegetables, turns them to stone, and 'gorges on your living brain.'",
       "characters": [
         "Kenneth"
       ],
       "joke_types": [
         "absurdist",
-        "escalation"
+        "character_comedy"
       ],
-      "setup": "Kenneth describing the Hill Witch",
-      "punchline": "Logically impossible threat",
-      "craft_total": 7.38,
-      "impact_score": 6.75,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Kenneth threatens Tracy with the Hill Witch as a consequence of not eating vegetables.",
+      "punchline": "The Hill Witch is described in increasing detail: 1,000 years old, turns you to stone, eats your brain 'through the stone.'",
+      "craft_total": 7.64,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good absurd threat with logical inconsistency"
+      "explanation": "Kenneth's rural folklore as a behavior-modification tactic is inspired. The Hill Witch mythology is detailed enough to be genuinely unsettling, and 'gorges on your living brain' is an excellent dark escalation. The concept of a 40-year-old being scared straight by a folktale sets up a great payoff later."
     },
     {
-      "index": 42,
-      "text": "Through the stone?",
+      "index": 38,
+      "text": "Tracy's genuine puzzlement: 'Through the stone?' \u2014 asking how the Hill Witch eats your brain after turning you to stone.",
       "characters": [
         "Tracy"
       ],
       "joke_types": [
-        "reaction_beat",
-        "observational"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Kenneth's logically impossible threat",
-      "punchline": "Tracy catching the logical flaw",
-      "craft_total": 7.56,
-      "impact_score": 7.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Kenneth describes the Hill Witch gorging on your living brain after turning you to stone.",
+      "punchline": "Tracy's only objection is the logistical impossibility \u2014 'Through the stone?' \u2014 suggesting he accepts the rest of the myth completely.",
+      "craft_total": 7.89,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect economy pointing out the logical flaw"
+      "explanation": "Two-word masterpiece of character comedy. Tracy accepts the existence of the Hill Witch, petrification, brain consumption \u2014 his only logical objection is the mechanism. 'Through the stone?' delivered as a genuine physics question about a witch's eating habits is quintessential Tracy Jordan."
     },
     {
-      "index": 43,
-      "text": "And my page desk will be turned sideways.",
+      "index": 39,
+      "text": "Kenneth reveals the 'omens of the Hill Witch's coming': crops will fail, animals will run wild, and 'my page desk will be turned sideways.'",
       "characters": [
         "Kenneth"
       ],
       "joke_types": [
-        "escalation",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Kenneth listing omens of the Hill Witch",
-      "punchline": "Anticlimactic mundane 'omen' Kenneth can control",
-      "craft_total": 8.02,
-      "impact_score": 7.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant anticlimax revealing Kenneth's manipulation"
-    },
-    {
-      "index": 44,
-      "text": "I'm gonna do it. I'm going to eat this cat.",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "callback",
-        "absurdist"
-      ],
-      "setup": "Jenna psyching herself up as Janis",
-      "punchline": "Preparing to eat a cat based on fake ALF information",
-      "craft_total": 7.23,
-      "impact_score": 7.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good escalation of the prank consequences"
-    },
-    {
-      "index": 45,
-      "text": "That's from 'ALF.' 'ALF' ate cats.",
-      "characters": [
-        "Frank"
-      ],
-      "joke_types": [
-        "callback"
-      ],
-      "setup": "Jenna about to eat a cat",
-      "punchline": "Frank revealing his prank mixing up characters",
-      "craft_total": 7.28,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good revelation of the prank's extent"
-    },
-    {
-      "index": 46,
-      "text": "The Academy loves dead singers and the handicapped and Janis was both!",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "Jenna explaining why she wants to play Janis",
-      "punchline": "Cynical Oscar strategy with false premise",
-      "craft_total": 7.88,
-      "impact_score": 7.33,
+      "setup": "Kenneth is describing the signs that will herald the Hill Witch's arrival.",
+      "punchline": "After two appropriately ominous omens (crops failing, animals going wild), the third is comically mundane: his page desk being turned sideways.",
+      "craft_total": 8.32,
+      "impact_score": 8.33,
       "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark but character-appropriate Oscar cynicism"
+      "explanation": "The deflating third omen is a classic three-part joke structure executed perfectly. The absurdist escalation goes big \u2192 smaller \u2192 absurdly specific and petty. 'My page desk will be turned sideways' is Kenneth-specific in a way that only makes sense for this character in this universe. Seeds the visual payoff later."
     },
     {
-      "index": 47,
-      "text": "No, she wasn't. Her legs bent the right way.",
+      "index": 40,
+      "text": "Kenneth's page desk is turned sideways. He gasps: 'Ooh...'",
+      "characters": [
+        "Kenneth"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "callback"
+      ],
+      "setup": "Kenneth has said that one omen of the Hill Witch is his desk being turned sideways.",
+      "punchline": "He looks up and his desk is indeed sideways. His genuine terror at this self-arranged sign.",
+      "craft_total": 7.77,
+      "impact_score": 7.75,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The visual callback is well-executed \u2014 Kenneth apparently staged this himself but is now genuinely (or performatively) alarmed. The economy is perfect: just 'Ooh...' and we understand everything."
+    },
+    {
+      "index": 41,
+      "text": "Frank tells Pete: 'Your Wikipedia prank is inspired.' But then we see Jenna preparing to eat a cat.",
+      "characters": [
+        "Frank",
+        "Pete",
+        "Jenna"
+      ],
+      "joke_types": [
+        "escalation",
+        "absurdist"
+      ],
+      "setup": "Frank brags to Pete about his Wikipedia prank on Jenna.",
+      "punchline": "Cut to Jenna, who has apparently read that Janis Joplin ate cats (from ALF), and she's about to eat a cat.",
+      "craft_total": 6.33,
+      "impact_score": 6.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The escalation of Frank's prank to Jenna almost eating a cat is an excellent absurdist escalation. The reveal that ALF eating cats became a Janis Joplin 'fact' shows just how far the prank has gone. The visual of Jenna mid-preparation elevates the joke."
+    },
+    {
+      "index": 42,
+      "text": "Jenna, in Method mode, prepares to eat a cat: 'I'm gonna do it. I'm going to eat this cat.'",
+      "characters": [
+        "Jenna"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Jenna has been Wikipedia-informed that Janis Joplin had cat-eating tendencies (implied by context \u2014 'That's from ALF')",
+      "punchline": "Jenna is literally about to eat a cat as part of her Method preparation \u2014 Frank has pushed the prank to its absolute limit",
+      "craft_total": 7.17,
+      "impact_score": 7.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "'I'm going to eat this cat' is one of those perfectly constructed absurdist sentences that only makes sense within the episode's escalating logic. The follow-up reveal \u2014 'That's from ALF' \u2014 is the punchline button. High quotability for sheer commitment to the bit."
+    },
+    {
+      "index": 43,
+      "text": "Frank confesses he put fake stuff on Wikipedia. Jenna's outrage: 'This is my chance to win an Oscar. The Academy loves dead singers and the handicapped, and Janis was both!'",
+      "characters": [
+        "Jenna",
+        "Frank"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Frank comes clean that he edited Wikipedia. Jenna is furious because she was using it for serious Method prep.",
+      "punchline": "Jenna's reasoning for why Janis Joplin is an Oscar-worthy role: 'The Academy loves dead singers and the handicapped \u2014 and Janis was both!' (She was neither handicapped nor dead at the time of her career.)",
+      "craft_total": 8.09,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Exceptional Jenna moment. The cynical Hollywood calculus ('the Academy loves dead singers and the handicapped') is both accurate and awful. The punchline \u2014 'and Janis was both' \u2014 is wrong in a characteristically Jenna way: she's dead, yes, but not during her career, and she wasn't handicapped. Jenna's logic is perfectly calibrated delusion. Highly quotable."
+    },
+    {
+      "index": 44,
+      "text": "'No, she wasn't. Her legs bent the right way.' \u2014 correcting Jenna's claim that Janis Joplin was handicapped.",
       "characters": [
         "Frank"
       ],
       "joke_types": [
         "deadpan_understatement",
-        "observational"
+        "character_comedy"
       ],
-      "setup": "Jenna claiming Janis was handicapped",
-      "punchline": "Frank's matter-of-fact correction",
-      "craft_total": 7.08,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "Jenna claims Janis Joplin was handicapped.",
+      "punchline": "Frank's correction focuses specifically on leg-bending as the metric of non-handicapped status.",
+      "craft_total": 7.42,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good deadpan correction"
+      "explanation": "'Her legs bent the right way' is an oddly specific way to establish someone is not disabled \u2014 and the strangeness of the phrasing lands well. Economy is very high."
     },
     {
-      "index": 48,
-      "text": "What? I speed-walked home on these!",
+      "index": 45,
+      "text": "'What? I speed-walked home on these!' \u2014 Jenna, realizing she speed-walked home based on false Wikipedia information.",
       "characters": [
         "Jenna"
       ],
       "joke_types": [
         "callback",
-        "physical_slapstick"
-      ],
-      "setup": "Frank correcting Jenna about disabilities",
-      "punchline": "Jenna referring to her earlier fake Wikipedia fact",
-      "craft_total": 6.92,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Decent callback to the fake Wikipedia facts"
-    },
-    {
-      "index": 49,
-      "text": "I've got a thing for damaged goods.",
-      "characters": [
-        "Frank"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Frank being turned on by angry Jenna",
-      "punchline": "Frank's honest admission of his fetish",
-      "craft_total": 7.12,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Character-appropriate creepy revelation"
-    },
-    {
-      "index": 50,
-      "text": "Uh-doy-ee!",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Liz getting into the competitive team building",
-      "punchline": "Liz's made-up exclamation of obviousness",
-      "craft_total": 7.02,
-      "impact_score": 6.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Quotable Liz neologism that becomes important later"
-    },
-    {
-      "index": 51,
-      "text": "Suck it, nerds!",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Liz getting competitive",
-      "punchline": "Liz's surprisingly aggressive celebration",
-      "craft_total": 6.72,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Liz's competitive side"
-    },
-    {
-      "index": 52,
-      "text": "the familiarity, nickname-ification",
-      "characters": [
-        "Six Sigma"
-      ],
-      "joke_types": [
-        "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "Criticizing Jack's relationship with Liz",
-      "punchline": "Made-up corporate word for using nicknames",
-      "craft_total": 7.02,
-      "impact_score": 6.25,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good corporate speak parody"
+      "setup": "Frank reveals all the Wikipedia info was fake, including that Janis speed-walked everywhere.",
+      "punchline": "Jenna has already been speed-walking home based on this fake fact \u2014 the commitment to Method acting was total and immediate.",
+      "craft_total": 7.92,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback works because Jenna's commitment to the fake facts was total. 'I speed-walked home on THESE' has a great rhythm \u2014 the 'these' referring to her legs adds unnecessary specificity that lands perfectly."
     },
     {
-      "index": 53,
-      "text": "Sorry, I dropped it when I was pretending it was my penis. Robot penis.",
+      "index": 46,
+      "text": "Frank admits he's 'turned on' by Jenna's tequila-fueled Joplin meltdown. 'I've got a thing for damaged goods.'",
       "characters": [
-        "Liz"
+        "Frank"
       ],
       "joke_types": [
         "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Liz explaining why she dropped a Lego piece",
-      "punchline": "Oversharing inappropriate behavior then clarifying",
-      "craft_total": 7.35,
-      "impact_score": 7.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good cringe comedy with characteristic Liz oversharing"
-    },
-    {
-      "index": 54,
-      "text": "I'm the one who had to take the 'Silkwood' shower this morning.",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "meta_self_referential"
-      ],
-      "setup": "Jenna being dramatic about sleeping with Frank",
-      "punchline": "Obscure movie reference about contamination",
-      "craft_total": 7.47,
-      "impact_score": 6.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good Jenna dramatic reference"
-    },
-    {
-      "index": 55,
-      "text": "Last night was stupid. Stupid, Frank!",
-      "characters": [
-        "Jenna"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Jenna trying to downplay hookup with Frank",
-      "punchline": "Her insult escalating to include his name awkwardly",
-      "craft_total": 7.06,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Jenna has a screaming meltdown at Frank \u2014 calling him disgusting, calling herself a mess.",
+      "punchline": "Frank finds this attractive: 'I've got a thing for damaged goods.'",
+      "craft_total": 6.62,
+      "impact_score": 6.75,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Jenna's awkward attempt to be dismissive"
+      "explanation": "Frank's sleazy opportunism is well-characterized. The joke works because it's simultaneously disgusting and oddly sweet in the worst way. Character-specific but not exceptionally crafted."
     },
     {
-      "index": 56,
-      "text": "You... the one who cool should be!",
+      "index": 47,
+      "text": "Frank tells Jenna her raw emotional performance will win an Oscar: 'If you can get this raw in the movie, you are going to win the Oscar.'",
       "characters": [
         "Frank"
       ],
       "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Frank trying to respond to Jenna's insults",
-      "punchline": "Frank's grammatically confused comeback",
-      "craft_total": 6.95,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Character-appropriate verbal confusion"
-    },
-    {
-      "index": 57,
-      "text": "Aw, you have a sitting area? You jag!",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Liz seeing Jack's hotel room",
-      "punchline": "Liz's petty jealousy over hotel amenities",
-      "craft_total": 6.97,
-      "impact_score": 5.83,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Liz petty jealousy moment"
-    },
-    {
-      "index": 58,
-      "text": "You can't say 'uh-doy-ee' to me in mixed company.",
-      "characters": [
-        "Jack"
-      ],
-      "joke_types": [
-        "callback",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Jack criticizing Liz's behavior",
-      "punchline": "Specific callback to her earlier exclamation",
-      "craft_total": 7.42,
-      "impact_score": 6.75,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good callback with corporate propriety concerns"
+      "setup": "Jenna has just had a screaming, tequila-fueled breakdown in the writers' room.",
+      "punchline": "Frank frames her genuine unhinged meltdown as the perfect acting approach \u2014 his praise is entirely self-serving as he's attracted to her breakdown.",
+      "craft_total": 6.41,
+      "impact_score": 6.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Competent setup for the Frank/Jenna hookup but not particularly surprising or original. The irony is clear but underpowered."
     },
     {
-      "index": 59,
-      "text": "I can go back to the lake with the fat kids and make bracelets.",
+      "index": 48,
+      "text": "The LUNCH Lego exercise: Jack barking instructions \u2014 'Don't stop talking! Hands in pockets, Joan! Prashant, your job is to watch Joan!' / 'Say something, Haircut!' / 'Uh-doy-ee! It goes on top! It's a smoke stack!'",
       "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "callback"
-      ],
-      "setup": "Liz feeling rejected by Jack",
-      "punchline": "Continuing the summer camp metaphor with self-deprecation",
-      "craft_total": 7.58,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Excellent callback extending the camp metaphor with Liz's insecurity"
-    },
-    {
-      "index": 60,
-      "text": "'Oh, sorry, Liz. My parents' basement only has room for five sleeping bags'",
-      "characters": [
+        "Jack",
         "Liz"
       ],
       "joke_types": [
         "character_comedy",
         "escalation"
       ],
-      "setup": "Liz's hurt feelings",
-      "punchline": "Specific childhood rejection scenario",
-      "craft_total": 7.42,
-      "impact_score": 6.83,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Jack is directing his team in the Lego exercise.",
+      "punchline": "Jack's corporate intensity applied to a children's toy construction game \u2014 culminating in Liz shouting 'Uh-doy-ee!' which is the exact behavior that later gets Jack in trouble.",
+      "craft_total": 6.77,
+      "impact_score": 6.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment revealing Liz's childhood issues"
+      "explanation": "Jack's war-room intensity applied to Legos is a perfect collision of register \u2014 he's treating a children's toy as a military operation. 'Say something, Haircut!' to Liz is excellent. Seeds the 'uh-doy-ee' callback for the later argument."
     },
     {
-      "index": 61,
-      "text": "I give you a simple managerial suggestion in a professional context and I get back the second half of a Judy Blume novel.",
+      "index": 49,
+      "text": "After Liz shouts 'Uh-doy-ee!' and they win, the Six Sigma executive says: 'What happened to you, Donaghy? That woman is a subordinate of yours. Her behavior is totally inappropriate \u2014 the familiarity, nickname-ification.'",
       "characters": [
+        "Six Sigma Executive",
         "Jack"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "irony_sarcasm"
       ],
-      "setup": "Jack frustrated with Liz's emotional response",
-      "punchline": "Specific literary reference to teen drama",
-      "craft_total": 8.21,
-      "impact_score": 7.67,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant Jack line - perfect literary reference for emotional overreaction"
-    },
-    {
-      "index": 62,
-      "text": "I have so much energy my hand keeps dancing!",
-      "characters": [
-        "Tracy"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
-      ],
-      "setup": "Tracy claiming to feel fine",
-      "punchline": "Describing obvious diabetic symptoms as positive energy",
-      "craft_total": 7.34,
-      "impact_score": 6.67,
-      "quotability": 6.5,
+      "setup": "Jack and Liz celebrate winning the Lego exercise.",
+      "punchline": "The executive's critique of Liz's behavior is framed as a corporate failure on Jack's part. 'Nickname-ification' is a made-up corporate buzzword used to describe a human relationship.",
+      "craft_total": 6.98,
+      "impact_score": 6.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good physical comedy with Tracy's medical ignorance"
+      "explanation": "'Nickname-ification' is a good corporate jargon joke. The scene functions primarily as plot setup for Jack's later conversation with Liz, limiting its standalone comedic impact."
     },
     {
-      "index": 63,
-      "text": "This is a victory for hot women everywhere.",
+      "index": 50,
+      "text": "Liz drops a Lego piece and explains 'Sorry, I dropped it when I was pretending it was my penis. Robot penis.'",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "In the middle of the competitive Lego exercise, Liz drops a piece.",
+      "punchline": "'I was pretending it was my penis. Robot penis.' \u2014 an utterly unexpected and escalating non sequitur.",
+      "craft_total": 7.55,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The addition of 'Robot penis' after a beat is a classic 30 Rock escalation move \u2014 the first punchline is strange enough, then it gets stranger. Highly quotable and perfectly unexpected."
+    },
+    {
+      "index": 51,
+      "text": "Jenna: 'No, last night was the best thing that's ever happened to you. It was my mistake, not yours. I'm the one who had to take the Silkwood shower this morning.'",
       "characters": [
         "Jenna"
       ],
@@ -1199,208 +996,676 @@
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Jenna announcing her hookup with Frank",
-      "punchline": "Framing personal embarrassment as feminist triumph",
-      "craft_total": 7.92,
-      "impact_score": 7.33,
-      "quotability": 7.5,
+      "setup": "Frank is embarrassed about the hookup. Jenna retaliates by insisting she's the catch and the hookup was her mistake.",
+      "punchline": "Jenna took a 'Silkwood shower' \u2014 a reference to the film about nuclear decontamination \u2014 implying sex with Frank required industrial-strength cleaning.",
+      "craft_total": 7.62,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Silkwood shower reference is both a sharp cultural allusion and the perfect expression of Jenna's dramatic self-regard. She simultaneously insults Frank and positions herself as someone who has suffered. Highly character-specific and quotable."
+    },
+    {
+      "index": 52,
+      "text": "Jenna attempts to speak Yoda syntax: 'You... the one who cool should be!'",
+      "characters": [
+        "Jenna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Frank asks Jenna to be cool about their hookup.",
+      "punchline": "Jenna, who has been in 'Janis Joplin' character all episode, briefly breaks into Yoda syntax when trying to be threatening \u2014 a complete non-sequitur grammatical choice.",
+      "craft_total": 7.05,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick absurdist non-sequitur. The Yoda syntax appearing randomly in Jenna's dialogue is funny precisely because it's unexplained \u2014 we don't know why she's talking like Yoda at this moment."
+    },
+    {
+      "index": 53,
+      "text": "Jack comes to Liz's hotel room to check if it's bigger than his \u2014 outraged she has a sitting area: 'Aw, you have a sitting area? You jag!'",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Jack knocks on Liz's door claiming to be there for managerial reasons.",
+      "punchline": "His actual purpose is competitive hotel room comparison \u2014 and he's furious about her sitting area.",
+      "craft_total": 7.18,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jack's competitive nature manifesting as hotel room envy is a good character beat. 'You jag!' is a satisfying period-appropriate insult from someone of Jack's type."
+    },
+    {
+      "index": 54,
+      "text": "Liz's wounded response: Jack made her feel like a camp buddy who got dumped at the lake with the fat kids to make bracelets.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Jack tells Liz she's been embarrassing him at the retreat and asks her to act more professionally.",
+      "punchline": "Liz reframes it as camp abandonment: 'I can go back to the lake with the fat kids and make bracelets.'",
+      "craft_total": 7.28,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The callback to 'camp jitters' is earned and satisfying \u2014 the metaphor has now become the emotional reality of the scene. 'Fat kids making bracelets' is a highly specific, genuinely melancholy image that lands as both funny and emotionally true."
+    },
+    {
+      "index": 55,
+      "text": "Jack tells Liz her reaction is 'the second half of a Judy Blume novel.'",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Liz has launched into an emotional spiral in response to Jack's managerial suggestion.",
+      "punchline": "Jack's dismissal: 'I get back the second half of a Judy Blume novel.' \u2014 characterizing her emotional response as overwrought teen fiction.",
+      "craft_total": 6.8,
+      "impact_score": 6.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A beautifully precise insult \u2014 not a generic 'you're being emotional' but the specific reference to Judy Blume's melodramatic second acts. It's the kind of highly specific cultural reference that makes Jack sound like exactly the kind of patrician who has secretly read all of Judy Blume. Quotable and well-crafted."
+    },
+    {
+      "index": 56,
+      "text": "Liz declares 'Friendship over!' and storms out.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Jack tries to downplay the argument as a simple professional matter.",
+      "punchline": "Liz's response is maximum melodrama \u2014 'Friendship over!' \u2014 exactly what Jack called: the second half of a Judy Blume novel.",
+      "craft_total": 6.7,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The button on the argument scene \u2014 Liz immediately proves Jack's point about her melodrama. Economy is exceptional ('Friendship over!' as a complete act of war). A good button joke."
+    },
+    {
+      "index": 57,
+      "text": "Jack: 'I give you a simple managerial suggestion in a professional context and I get back the second half of a Judy Blume novel'",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Liz emotionally escalates their workplace disagreement into a personal grievance",
+      "punchline": "Jack categorizes Liz's emotional response as 'the second half of a Judy Blume novel' \u2014 accurately diagnosing her tendency to turn professional matters into adolescent emotional narratives",
+      "craft_total": 8.25,
+      "impact_score": 8.25,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Jenna self-delusion and grandiosity"
+      "explanation": "One of Jack's best lines in the episode. 'The second half of a Judy Blume novel' is a perfect insult \u2014 it's specific (second half, when the emotional drama peaks), intellectually calibrated (Judy Blume implies adolescent emotional immaturity), and absolutely nails Liz's character. Both funny and true within the show's world. Highly quotable, excellent economy."
+    },
+    {
+      "index": 58,
+      "text": "Jack looks at departing Liz and mutters: 'Like a waitress.'",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Liz has just stormed out declaring 'Friendship over!'",
+      "punchline": "Jack's coda: 'Like a waitress.' \u2014 an unexplained, elliptical insult that implies Liz behaved like a service worker who just quit dramatically. Its lack of explanation makes it funnier.",
+      "craft_total": 7.44,
+      "impact_score": 7.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. Three words, no setup, no explanation \u2014 and Jack Donaghy's entire character is in those three words. The comparison to a waitress quitting dramatically is both classist and devastatingly specific to Jack's worldview. Its inscrutability is what makes it perfect \u2014 we're not entirely sure what he means but we understand it completely. Economy score of 10: it is impossible to be funnier with fewer words in this moment."
+    },
+    {
+      "index": 59,
+      "text": "Liz storms out past a waitress/attendant and mutters 'Like a waitress' \u2014 apparently comparing herself to a service worker being dismissed",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Liz leaves after declaring the friendship over",
+      "punchline": "Liz's self-pitying muttering 'Like a waitress' \u2014 comparing her treatment to being dismissed by a customer \u2014 is a tiny, sad, highly specific indignity",
+      "craft_total": 6.93,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A good small beat \u2014 the specific comparison to a waitress being dismissed is a Liz Lemon self-deprecating thought that implies she passes service workers daily and identifies with their experiences. Economy is excellent (two words), but the joke is small."
+    },
+    {
+      "index": 60,
+      "text": "Tracy announces he has 'so much energy my hand keeps dancing!' \u2014 his hand is moving erratically, an uncontrolled tremor he's interpreting as dancing.",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "visual_gag"
+      ],
+      "setup": "Kenneth is begging Tracy to take his diabetes seriously. Tracy insists he's fine.",
+      "punchline": "Tracy demonstrates his 'energy' \u2014 his hand is trembling (a diabetes symptom) but he's reframed it as his hand dancing of its own volition.",
+      "craft_total": 7.92,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Tracy reinterpreting a medical symptom as a positive personality trait is both darkly funny and perfectly in character. 'My hand keeps dancing' is a great line on its own, but knowing it's a tremor makes it both funnier and more uncomfortable. Highly quotable."
+    },
+    {
+      "index": 61,
+      "text": "Tracy spots the omens of the Hill Witch: 'Oh, no! The signs! My desk is sideways! The Hill Witch approaches.'",
+      "characters": [
+        "Tracy"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Tracy has been told about the Hill Witch omens, including the sideways desk.",
+      "punchline": "Tracy has bought into the myth completely \u2014 his alarm at the sideways desk confirms the plan (which we know is Kenneth's setup) is working.",
+      "craft_total": 7.33,
+      "impact_score": 7.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The Hill Witch callback pays off \u2014 Tracy, who questioned the logic of the myth, has been successfully terrified by it anyway. The fact that he panics over the desk is a good beat because it confirms both his gullibility and the success of Kenneth's elaborate scheme."
+    },
+    {
+      "index": 62,
+      "text": "Kenneth gasps at his sideways desk (the Hill Witch omen) appearing \u2014 'The Hill Witch approaches!' \u2014 cutting to Kenneth having staged the entire thing.",
+      "characters": [
+        "Kenneth",
+        "Tracy"
+      ],
+      "joke_types": [
+        "callback",
+        "visual_gag"
+      ],
+      "setup": "Kenneth predicted that his desk being turned sideways would be an omen of the Hill Witch.",
+      "punchline": "The desk is sideways \u2014 and Kenneth's dramatic horror/joy reveals he likely staged it himself. Tracy is frightened.",
+      "craft_total": 7.37,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The payoff of the Hill Witch setup \u2014 Kenneth has orchestrated the 'omen' himself, which is both manipulative and sweet. The self-referential staging (Kenneth setting up his own omen) is a nice meta-layer."
+    },
+    {
+      "index": 63,
+      "text": "Frank is excitedly talking about finding the 'secret skate park in Grand Theft Auto 4' the morning after sleeping with Jenna.",
+      "characters": [
+        "Frank"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "The morning after Frank and Jenna's hookup.",
+      "punchline": "Frank is completely unaffected, excitedly discussing video game discoveries. His morning-after priorities are video games, not the woman he slept with.",
+      "craft_total": 7.08,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Frank's emotional unavailability expressed through Grand Theft Auto enthusiasm is perfectly character-specific. The specific detail of 'the secret skate park in GTA 4' grounds the joke in authentic nerd culture."
     },
     {
       "index": 64,
-      "text": "What happens in Croton-on-Hudson stays in Croton-on-Hudson.",
+      "text": "Jenna publicly announces in the writers' room that she and Frank hooked up \u2014 'I slutted it up on this dirt bag' \u2014 and declares it 'a victory for hot women everywhere.'",
+      "characters": [
+        "Jenna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jenna confronts Frank about wanting secrecy, then performs the opposite of secrecy.",
+      "punchline": "She reframes sleeping with Frank \u2014 universally considered a low point \u2014 as 'a victory for hot women everywhere.' The delusion is total.",
+      "craft_total": 7.35,
+      "impact_score": 7.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jenna's capacity for self-delusion reaches a new height here. 'A victory for hot women everywhere' reframes what everyone sees as a degradation into a feminist triumph. The character integration is exceptional \u2014 this could only be Jenna."
+    },
+    {
+      "index": 65,
+      "text": "Jenna: 'This is a victory for hot women everywhere' \u2014 after admitting hooking up with Frank was 'disgusting'",
+      "characters": [
+        "Jenna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jenna admits the hook-up was disgusting and a mistake",
+      "punchline": "She pivots to framing it as feminist empowerment \u2014 'a victory for hot women everywhere' \u2014 the cognitive dissonance of self-disgust rebranded as sexual liberation",
+      "craft_total": 7.87,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "One of the best Jenna lines in the episode. The pivot from 'disgusting' to 'victory for hot women everywhere' is perfect character comedy \u2014 Jenna's narcissism means she can reframe any humiliation as proof of her desirability. 'Hot women everywhere' specifically implies a community of hot women who have been waiting for this moment."
+    },
+    {
+      "index": 66,
+      "text": "Prashant and Joan have apparently hooked up: 'What happens in Croton-on-Hudson stays in Croton-on-Hudson'",
       "characters": [
         "Joan"
       ],
       "joke_types": [
-        "callback",
-        "observational"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Liz asking if Prashant and Joan hooked up",
-      "punchline": "Vegas saying applied to mundane corporate retreat location",
-      "craft_total": 6.55,
-      "impact_score": 5.75,
-      "quotability": 6.0,
+      "setup": "Liz asks if Prashant and Joan hooked up",
+      "punchline": "Joan applies the 'What happens in Vegas stays in Vegas' formula to Croton-on-Hudson \u2014 a sleepy Hudson Valley town that couldn't be less Vegas-like \u2014 with completely straight delivery",
+      "craft_total": 6.91,
+      "impact_score": 7.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard format joke but executed competently"
+      "explanation": "The comedy is entirely in the name 'Croton-on-Hudson' \u2014 the specific un-glamorousness of the location. The Vegas formula applied to a small New York suburb is a reliable joke that lands because of the location specificity."
     },
     {
-      "index": 65,
-      "text": "We should start calling ourselves 'The Three Musketeers.' Not.",
+      "index": 67,
+      "text": "The audio technician, on his first day, asks Jack if he can put a microphone on him \u2014 Jack confidently says yes. Neither realizes the mic is now hot in the ballroom.",
+      "characters": [
+        "Jack",
+        "Audio Tech"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "An audio technician needs to mic Jack for his speech. Jack is gracious. The tech mentions it's his first day.",
+      "punchline": "The tech prematurely activates the mic \u2014 seeding the payoff that Jack's psych-up speech will broadcast to the entire conference.",
+      "craft_total": 6.13,
+      "impact_score": 5.67,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Primarily a structural setup for the hot-mic payoff. Gets mild humor from Jack's obliviousness and the first-day detail. Not a strong standalone joke but essential scaffolding."
+    },
+    {
+      "index": 68,
+      "text": "Liz has befriended Prashant and Joan \u2014 suggesting 'we should start calling ourselves The Three Musketeers!' Prashant deadpans: 'Not.'",
       "characters": [
         "Liz",
         "Prashant"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "deadpan_understatement"
       ],
-      "setup": "Liz trying to bond with her new friends",
-      "punchline": "Immediate rejection of her friendship attempt",
-      "craft_total": 6.87,
-      "impact_score": 6.25,
-      "quotability": 5.0,
+      "setup": "Liz is making new friends at the retreat after her falling-out with Jack.",
+      "punchline": "She tries to nickname the group 'The Three Musketeers.' Prashant shoots it down with a single word: 'Not.'",
+      "craft_total": 6.88,
+      "impact_score": 6.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good deflation of Liz's enthusiasm"
+      "explanation": "The joke is efficient and well-timed. 'Not' as a callback to '90s slang is also a mild meta-commentary on Liz's cultural datedness. Good economy."
     },
     {
-      "index": 66,
-      "text": "Now, Dog the Bounty Hunter is the second-grossest guy I've been with.",
+      "index": 69,
+      "text": "'Now Dog the Bounty Hunter is the second-grossest guy I've been with.'",
       "characters": [
         "Jenna"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "dark_subversive"
       ],
-      "setup": "Jenna talking about Frank being gross",
-      "punchline": "Revealing her history with reality TV star",
-      "craft_total": 7.21,
-      "impact_score": 6.67,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good Jenna sexual history revelation"
-    },
-    {
-      "index": 67,
-      "text": "Because he's mine.",
-      "characters": [
-        "Lutz"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Lutz telling Jenna she shouldn't have been with Frank",
-      "punchline": "Revealing Lutz's romantic claim on Frank",
-      "craft_total": 7.93,
-      "impact_score": 7.75,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent surprise revelation with perfect economy"
-    },
-    {
-      "index": 68,
-      "text": "Look at me! I'm a monster! The Hill Witch! Cover your brain!",
-      "characters": [
-        "Kenneth"
-      ],
-      "joke_types": [
-        "callback",
-        "physical_slapstick"
-      ],
-      "setup": "Kenneth's Hill Witch story setup",
-      "punchline": "Kenneth in costume completing his elaborate ruse",
-      "craft_total": 7.61,
-      "impact_score": 7.5,
-      "quotability": 6.5,
+      "setup": "Jenna is discussing her hookup with Frank, which she considers disgusting.",
+      "punchline": "Dog the Bounty Hunter was previously Jenna's most disgusting partner \u2014 but Frank has now displaced him to second place.",
+      "craft_total": 7.72,
+      "impact_score": 8.0,
+      "quotability": 9.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good payoff to Kenneth's elaborate setup"
-    },
-    {
-      "index": 69,
-      "text": "When a big one falls, four little ones move up.",
-      "characters": [
-        "Six Sigma"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "Opportunity to help Jack with his microphone",
-      "punchline": "Corporate vultures seeing opportunity in Jack's humiliation",
-      "craft_total": 7.8,
-      "impact_score": 7.25,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark corporate truth delivered matter-of-factly"
+      "explanation": "A superbly specific celebrity reference as a benchmark for sexual disgust. The specificity of Dog the Bounty Hunter \u2014 neither the most famous nor the most obscure choice \u2014 is perfectly calibrated. The fact that Frank has beaten Dog the Bounty Hunter's grossness rating says everything about both characters. Highly quotable."
     },
     {
       "index": 70,
-      "text": "Just don't say your name, Jack. Please don't say your name. You are Jack - titan, maverick, lover.",
+      "text": "A second writer reveals she's been secretly dating Frank, attacking Jenna: 'You stay away from my Frank!' followed by multiple other women appearing with the same claim.",
+      "characters": [
+        "Katie",
+        "Euzebia",
+        "Jenna",
+        "Frank"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "The writers' room has learned about Frank and Jenna's hookup.",
+      "punchline": "Multiple women emerge to claim Frank as 'my Frank' \u2014 revealing he has an improbable secret harem of women. The escalation from one to multiple women claiming him is the joke.",
+      "craft_total": 7.11,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The absurdist premise \u2014 Frank has multiple devoted women \u2014 plays against his established character as a loser. The escalation structure works well. 'My Frank' repeated by multiple women is a solid running-gag structure."
+    },
+    {
+      "index": 71,
+      "text": "Kenneth appears in a Hill Witch costume to terrify Tracy into eating vegetables: full crone makeup, shrieking 'Eat your vegetables!'",
+      "characters": [
+        "Kenneth",
+        "Tracy"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "callback"
+      ],
+      "setup": "Kenneth's elaborate Hill Witch mythology has been building all episode.",
+      "punchline": "Kenneth has constructed an actual Hill Witch costume and is performing the monster for Tracy \u2014 'Look at me! I'm a monster!'",
+      "craft_total": 8.03,
+      "impact_score": 8.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The Hill Witch payoff is excellent. Kenneth's commitment \u2014 building a whole costume and theatrical production to scare a 40-year-old man into eating vegetables \u2014 is both absurd and deeply Kenneth. The callback pays off the full arc. 'Look at me! I'm a monster!' while dressed as a crone is a great line."
+    },
+    {
+      "index": 72,
+      "text": "Jack's psych-up speech broadcasts through the microphone to the entire conference ballroom \u2014 'Bottom of the ninth, bases loaded... you magnificent son of a bitch!'",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "callback",
+        "cringe_discomfort"
+      ],
+      "setup": "Jack's private psych-up ritual (established at 04:17) is happening in his room before the speech.",
+      "punchline": "The microphone the tech put on earlier is live in the ballroom \u2014 the entire conference is hearing his intimate self-talk.",
+      "craft_total": 7.56,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The structural payoff of the entire episode's A-plot. Everything was set up perfectly \u2014 the psych-up speech established, the first-day tech introduced, Jack's anxiety about the retreat all comes home. The callback is exceptionally well-constructed. Jack calling himself 'a titan, maverick, lover' and 'you magnificent son of a bitch' in front of hundreds of executives is the episode's biggest cringe/comedy moment. Impact is very high."
+    },
+    {
+      "index": 73,
+      "text": "Jack's private psych-up speech plays over the entire ballroom PA system \u2014 beginning: 'Bottom of the ninth... bases loaded... you magnificent son of a bitch!'",
+      "characters": [
+        "Jack"
+      ],
+      "joke_types": [
+        "callback",
+        "escalation"
+      ],
+      "setup": "The mic technician put a live microphone on Jack; Jack then went to do his private psych-up ritual",
+      "punchline": "Jack's most private, undignified moment \u2014 the self-pep-talk \u2014 is now broadcasting to hundreds of corporate executives in the ballroom he's about to address",
+      "craft_total": 7.63,
+      "impact_score": 8.25,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's structural set pieces. The psych-up speech was established early, and planting the microphone technician in scene 67 makes the payoff feel earned. The specific callbacks within it ('you magnificent son of a bitch,' 'Make Mommy proud,' 'Is it in you? I'm loving it!') all land again in the new context of public humiliation. This is the kind of multi-step joke architecture that distinguishes great TV comedy writing from average."
+    },
+    {
+      "index": 74,
+      "text": "Donaghy's colleagues react in horror in the ballroom as the speech plays. 'Just don't say your name, Jack. Please don't say your name.'",
+      "characters": [
+        "Jack's Colleague",
+        "Liz"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "escalation"
+      ],
+      "setup": "Jack's psych-up speech is broadcasting to the whole conference. His colleagues are watching.",
+      "punchline": "The collective silent prayer: 'Just don't say your name.' He says his name.",
+      "craft_total": 7.39,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Classic cringe escalation \u2014 the audience is set up to dread the exact thing that happens. 'Just don't say your name' is a beautifully constructed moment of audience alignment before the inevitable catastrophe. The structure is textbook."
+    },
+    {
+      "index": 75,
+      "text": "A random person wanders into the ballroom during the hot-mic disaster and asks: 'Excuse me, where is the bathroom?'",
+      "characters": [
+        "Random Person"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "The conference ballroom is in stunned silence as Jack's psych-up speech plays through the speakers.",
+      "punchline": "Someone obliviously asks for the bathroom \u2014 the perfect comedic punctuation to an otherwise devastating moment.",
+      "craft_total": 7.06,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A well-placed deflating beat. The bathroom question cuts through the dramatic tension perfectly. Its randomness IS the joke \u2014 the oblivious normality of one person against a crisis. Economy is very high."
+    },
+    {
+      "index": 76,
+      "text": "Liz takes the stage and claims she was doing a 'Jack Donaghy impression where I say crazy things that he would never say.' 'So let's maximize our fun quadrant tonight!'",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "character_comedy"
+      ],
+      "setup": "Jack is mortified that his psych-up speech was broadcast to the conference. Liz rushes to save him.",
+      "punchline": "Liz's cover story is that it was her Jack Donaghy impression \u2014 and she immediately demonstrates she can improvise corporate speak: 'Let's maximize our fun quadrant tonight!'",
+      "craft_total": 7.44,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The 'Donaghy impression' rescue is clever meta-comedy \u2014 it's an impression of an impression. 'Fun quadrant' is excellent corporate jargon parody. This is Liz using her improv skills (established in the cold open) to save Jack, which is elegant plotting."
+    },
+    {
+      "index": 77,
+      "text": "Liz asks the crowd to shout out impressions. They ask for Jack Donaghy. 'No! What else?'",
+      "characters": [
+        "Liz",
+        "Crowd"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "escalation"
+      ],
+      "setup": "Liz offers to do impressions for the crowd to distract from the hot-mic disaster.",
+      "punchline": "The first request is the one thing she can't do: Jack Donaghy. Her panicked 'No! What else?' is the joke.",
+      "craft_total": 7.25,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The cruel irony of the crowd's first request is funny and well-structured. 'No! What else?' is a great panicked pivot."
+    },
+    {
+      "index": 78,
+      "text": "Audience shouts: 'Do Jack Donaghy again!' Liz: 'No! What else?'",
+      "characters": [
+        "Liz",
+        "Audience"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Liz has covered for Jack and is trying to pivot to other impressions",
+      "punchline": "The crowd immediately wants more 'Jack Donaghy' (i.e., the real speech) \u2014 the cover story has backfired by making the embarrassing content into a crowd-pleasing bit",
+      "craft_total": 7.05,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The irony of the crowd wanting MORE of the accidental honesty is a good beat. 'No! What else?' from Liz captures her desperation nicely."
+    },
+    {
+      "index": 79,
+      "text": "Liz does a Sling Blade impression \u2014 'I believe I heard Sling Blade. Mmm, I love them French-fried pataters.' The crowd starts booing and telling her to get off.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "callback",
+        "running_gag"
+      ],
+      "setup": "Liz is doing impressions to save Jack. Someone requests Sling Blade.",
+      "punchline": "The same Sling Blade impression from the cold open is performed again \u2014 but this time the crowd hates it and boos. At a corporate conference, Sling Blade doesn't land.",
+      "craft_total": 7.82,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfect structural callback \u2014 the exact same bit that opened the episode reappears, now in a different context where it fails. The callback is earned and pays off the cold open beautifully. The corporate crowd's rejection of Sling Blade is also character-specific for Liz: her improv bits don't work in formal settings either."
+    },
+    {
+      "index": 80,
+      "text": "Liz performs 'Sling Blade' when a voice calls for it: 'Mmm, I love them French-fried pataters.' \u2014 then gets booed: 'Get off!'",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "callback",
+        "running_gag"
+      ],
+      "setup": "Liz has been doing impressions to distract the crowd; someone calls for Sling Blade",
+      "punchline": "Liz performs the same Sling Blade line from the episode's opening improv troupe scene \u2014 completing the full circle of the bit \u2014 only to be booed off",
+      "craft_total": 7.92,
+      "impact_score": 8.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Full-circle callback to the opening scene \u2014 Liz performing Sling Blade onstage at a corporate event is exactly what she and Jenna used to do, and she's getting booed just as poorly. The callback earns its place because it closes the improv troupe loop and confirms that Liz isn't much better at improv than Jenna. Excellent structural callback."
+    },
+    {
+      "index": 81,
+      "text": "Liz pivots to Mrs. Cunningham from Happy Days: 'Oh, Howard. Oh, Arthur.' The crowd is silent/negative.",
+      "characters": [
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "The Sling Blade impression got her booed. Liz pivots to other impressions.",
+      "punchline": "Her backup impression is Mrs. Cunningham from Happy Days \u2014 an incredibly uncool, dated choice that lands with a thud.",
+      "craft_total": 7.16,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Mrs. Cunningham from Happy Days as an emergency impression choice says everything about Liz Lemon's cultural frame of reference. 'Oh, Howard. Oh, Arthur.' is performed into total silence, which is exactly right."
+    },
+    {
+      "index": 82,
+      "text": "Liz asks 'Dave' what the craziest thing that happened this weekend was. Dave says 'Hearing Jack Donaghy talk on that microphone.' Liz: 'Well... not anymore, 'cause check this out.' \u2014 then plays 'Everybody Dance Now.'",
+      "characters": [
+        "Liz",
+        "Dave"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Liz tries to rescue Jack by asking the audience what the memorable moment of the weekend was.",
+      "punchline": "Dave's answer is exactly what she's trying to erase. Her response \u2014 'check this out' followed by blasting 'Everybody Dance Now' \u2014 is an absurdly nuclear option for ending an awkward conversation.",
+      "craft_total": 7.51,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Everybody Dance Now' as an emergency crisis intervention is inspired. The absurdity of this being Liz's nuclear option \u2014 and it working \u2014 is perfectly 30 Rock. The setup of asking 'what's the craziest thing' only to receive the worst possible answer is structurally excellent."
+    },
+    {
+      "index": 83,
+      "text": "Jack tells Liz her intervention 'actually worked' \u2014 many people emailed asking if they were there 'when the bra lady went crazy.'",
+      "characters": [
+        "Jack",
+        "Liz"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Liz's improvised rescue of Jack's reputation apparently succeeded.",
+      "punchline": "It worked \u2014 but the memory people retained was 'the bra lady going crazy,' not the hot-mic incident. Liz is now the memorable crazy person instead of Jack.",
+      "craft_total": 7.86,
+      "impact_score": 8.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The trade \u2014 Liz sacrifices her reputation so Jack keeps his \u2014 is well-executed comedy. 'The bra lady went crazy' as the narrative that replaced the hot-mic story is both funny and efficient. The implication that Liz's bra was visible/notable during her performance adds a visual gag without needing to describe it."
+    },
+    {
+      "index": 84,
+      "text": "Jack thanks Liz and then says: 'And I think it goes without saying that you are banned from any future retreats.'",
       "characters": [
         "Jack"
       ],
       "joke_types": [
         "irony_sarcasm",
-        "escalation"
+        "character_comedy"
       ],
-      "setup": "Jack hoping not to identify himself",
-      "punchline": "Immediately saying his name with grandiose descriptors",
-      "craft_total": 7.88,
-      "impact_score": 8.0,
+      "setup": "Jack has just told Liz her rescue was heroic and thanked her sincerely.",
+      "punchline": "Immediately after thanking her, he bans her from all future retreats. The ingratitude is total and immediate.",
+      "craft_total": 7.4,
+      "impact_score": 7.67,
       "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect ironic structure with Jack's ego betraying him"
+      "explanation": "The turn from sincere gratitude to immediate punishment is classically Jack Donaghy. 'It goes without saying' attached to something that absolutely needs saying \u2014 and is hilariously ungrateful \u2014 is a perfect button. Well-structured and highly character-specific."
     },
     {
-      "index": 71,
-      "text": "I just fooled y'all with my Jack Donaghy impression where I say crazy things that he would never say.",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "misdirection"
-      ],
-      "setup": "Liz trying to save Jack from humiliation",
-      "punchline": "Claiming it was an impression of things Jack would never say",
-      "craft_total": 7.51,
-      "impact_score": 6.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Clever save attempt with logical twist"
-    },
-    {
-      "index": 72,
-      "text": "I believe I heard 'Sling Blade.' Mmm, I love them French-fried 'pataters.'",
-      "characters": [
-        "Liz"
-      ],
-      "joke_types": [
-        "callback",
-        "escalation"
-      ],
-      "setup": "Liz trying to distract with impressions",
-      "punchline": "Callback to the opening improv scene",
-      "craft_total": 6.68,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good callback bringing the episode full circle"
-    },
-    {
-      "index": 73,
-      "text": "they completely forgot about me when the bra lady went crazy",
+      "index": 85,
+      "text": "Jack: 'A lot of people from the conference e-mailed me to ask if I was there when the bra lady went crazy. They completely forgot about me.'",
       "characters": [
         "Jack"
       ],
       "joke_types": [
         "character_comedy",
-        "callback"
+        "irony_sarcasm"
       ],
-      "setup": "Jack explaining how Liz's distraction worked",
-      "punchline": "Referring to Liz's performance as 'bra lady going crazy'",
-      "craft_total": 6.91,
-      "impact_score": 6.25,
-      "quotability": 6.5,
+      "setup": "Jack reports back on how Liz's intervention worked",
+      "punchline": "Liz has been re-remembered as 'the bra lady who went crazy' \u2014 implying her dancing involved exposed or disheveled undergarments \u2014 and this is apparently a success",
+      "craft_total": 7.61,
+      "impact_score": 7.75,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good characterization of how others saw Liz's rescue"
+      "is_callback": 0,
+      "explanation": "'The bra lady went crazy' is a great off-screen joke \u2014 we don't see what happened but the description implies something spectacular and specifically embarrassing for Liz. The fact that this is treated as a victory is darkly perfect."
     },
     {
-      "index": 74,
-      "text": "Uh-doy-ee.",
+      "index": 86,
+      "text": "Liz's final line: 'That's what friends do, Jack. Uh-doy-ee.' \u2014 using the phrase Jack specifically told her not to say to him at the retreat.",
       "characters": [
         "Liz"
       ],
@@ -1408,14 +1673,14 @@
         "callback",
         "character_comedy"
       ],
-      "setup": "Liz and Jack reconciling as friends",
-      "punchline": "Liz using the phrase Jack criticized, now with affection",
-      "craft_total": 7.86,
-      "impact_score": 7.17,
-      "quotability": 7.0,
+      "setup": "Jack earlier told Liz she couldn't say 'uh-doy-ee' to him 'in mixed company.' The episode ends with Liz having saved him.",
+      "punchline": "Having proven her friendship and restored his reputation, Liz reasserts 'uh-doy-ee' \u2014 reclaiming the phrase and their dynamic. Jack can't really complain.",
+      "craft_total": 7.81,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect episode-ending callback showing relationship repair"
+      "explanation": "A structurally elegant episode button. The callback to 'uh-doy-ee' closes the Jack/Liz arc with the perfect emotional and comedic note \u2014 she's earned the right to say it, and saying it now is both an act of affection and gentle defiance. The word itself is funny; its placement here earns a high structure score."
     }
   ],
   "air_date": "2009-01-22",
