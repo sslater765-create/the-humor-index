@@ -4,33 +4,34 @@
   "season": 1,
   "episode_number": 4,
   "title": "Guest Host",
-  "humor_index": 69.2,
-  "jpm": 2.15,
-  "avg_craft": 6.59,
-  "avg_impact": 6.28,
-  "total_jokes": 65,
-  "war": 28.3,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"cringe_discomfort\"]",
-  "standout_joke_ids": "[57, 61, 23]",
+  "humor_index": 83.6,
+  "jpm": 2.64,
+  "avg_craft": 7.15,
+  "avg_impact": 6.91,
+  "total_jokes": 80,
+  "war": 82.4,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[80, 30, 75]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Now, that sign says \"applesauce.\" No, no, no, I'm kidding. It says \"applause.\"",
+      "text": "The warm-up guy tells the audience the sign says 'applesauce,' then immediately corrects it to 'applause.'",
       "characters": [
-        "Warm-up comedian"
+        "Warm-up Guy"
       ],
       "joke_types": [
+        "setup_punchline",
         "misdirection"
       ],
-      "setup": "Pointing to a cue card sign, saying it says something absurd",
-      "punchline": "Correcting to the obvious truth that it says 'applause'",
-      "craft_total": 4.98,
-      "impact_score": 4.17,
-      "quotability": 2.0,
+      "setup": "The warm-up guy announces what the sign says, building audience anticipation for a mundane instruction.",
+      "punchline": "He claims it says 'applesauce' \u2014 a completely absurd substitute \u2014 before walking it back to 'applause.'",
+      "craft_total": 4.46,
+      "impact_score": 3.83,
+      "quotability": 3.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Basic misdirection joke for audience warm-up. Gets the job done but extremely predictable.",
+      "explanation": "A quick, low-stakes gag that works as a tone-setter for the meta-showbiz premise \u2014 we're seeing behind the curtain before the curtain even goes up. The 'applesauce' choice is arbitrary but the structure is clean. Not remarkable, but functional.",
       "dialogue": [
         {
           "speaker": "Warm-up comedian",
@@ -40,21 +41,22 @@
     },
     {
       "index": 2,
-      "text": "And now, because he's already been paid, so we might as well use him... Larry Sanders!",
+      "text": "Hank's announcer intro for himself: 'and me, \"Hey, Now\" Hank Kingsley.'",
       "characters": [
-        "Hank"
+        "Hank Kingsley"
       ],
       "joke_types": [
+        "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Standard glowing introduction format for a talk show host",
-      "punchline": "Undercutting it with mercenary reasoning about payment",
-      "craft_total": 6.72,
-      "impact_score": 6.17,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "The announcer voice is listing the guests in formal, promotional language.",
+      "punchline": "Hank seamlessly inserts himself as if he's a headline guest rather than the sidekick.",
+      "craft_total": 7.14,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Hank character moment - his tendency to undercut moments with inappropriate honesty. Well-crafted subversion of intro format.",
+      "explanation": "Perfectly encapsulates Hank's pathological need for self-promotion and ego inflation. The joke works because the character reads it in the same breathless announcer register, as if his inclusion is perfectly natural. On rewatch, knowing who Hank is, it lands even harder as a thesis statement for his character.",
       "dialogue": [
         {
           "speaker": "",
@@ -64,21 +66,22 @@
     },
     {
       "index": 3,
-      "text": "you're so much better than last night's crowd",
+      "text": "'And now, because he's already been paid, so we might as well use him \u2014 Larry Sanders!'",
       "characters": [
-        "Larry"
+        "Announcer"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Thanking the audience in what should be a complimentary way",
-      "punchline": "Backhanded compliment that insults the previous audience",
-      "craft_total": 5.9,
-      "impact_score": 5.17,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Standard grandiose late-night host introduction.",
+      "punchline": "The intro undercuts the fanfare entirely with brutal pragmatic logic: he's only on because they paid him.",
+      "craft_total": 7.42,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Standard talk show host material - mild subversion of audience flattery but not particularly inventive.",
+      "explanation": "A sharp, perfectly economical deflation of late-night pageantry. The joke works on multiple levels: it's funny as pure cynicism, it's meta-commentary on the show-within-a-show, and it immediately establishes the tone of the whole series. The specificity ('already been paid') makes it feel true rather than just subversive. Justifies the high score \u2014 it's among the best constructed jokes in the episode.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -88,22 +91,22 @@
     },
     {
       "index": 4,
-      "text": "Dan Quayle has gotten confused and just thinks there should be more Tru-Value Hardware stores",
+      "text": "Larry to the studio audience: 'you're so much better than last night's crowd.'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "irony_sarcasm",
         "observational"
       ],
-      "setup": "George Bush talking about family values as campaign issue",
-      "punchline": "Dan Quayle mishearing 'family values' as 'Tru-Value' hardware stores",
-      "craft_total": 6.19,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Standard late-night host flattery of the audience.",
+      "punchline": "The compliment is hollow \u2014 it implicitly insults the previous audience while still being a generic crowd-work line.",
+      "craft_total": 5.66,
+      "impact_score": 4.83,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever wordplay that works on multiple levels - mishearing and corporate reference. Good craft for political humor.",
+      "explanation": "A familiar crowd-work beat that works mildly as satire of hollow late-night flattery. The show-within-a-show frame gives it a slight edge over a real talk show doing it, but it's still a well-worn move. Functional, not inspired.",
       "dialogue": [
         {
           "speaker": "",
@@ -113,22 +116,22 @@
     },
     {
       "index": 5,
-      "text": "they're still giving him a picture menu and letting him point at the food he wants",
+      "text": "Tru-Value Hardware stores joke: Dan Quayle confuses 'family values' with 'Tru-Value Hardware stores.'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "observational",
-        "escalation"
+        "wordplay_pun",
+        "setup_punchline"
       ],
-      "setup": "Dan Quayle can't spell 'potato' but you have to blame White House staff",
-      "punchline": "They treat him like a child with picture menus",
-      "craft_total": 5.92,
-      "impact_score": 6.17,
-      "quotability": 7.0,
+      "setup": "George Bush claims family values will be the big election issue.",
+      "punchline": "Quayle is so dim he just hears 'values' and thinks there should be more hardware stores.",
+      "craft_total": 4.99,
+      "impact_score": 5.0,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Strong escalation from the spelling gaffe to infantilizing imagery. Visual and memorable.",
+      "explanation": "A clean wordplay joke on 'values.' Slightly more constructed than the average Quayle bash, with a specific brand name doing real work. Period-dependent \u2014 meaningless to modern viewers \u2014 but sharper than most.",
       "dialogue": [
         {
           "speaker": "",
@@ -138,22 +141,22 @@
     },
     {
       "index": 6,
-      "text": "He has a new song coming out, however, called \"Die, Crossing Guard, Die.\"",
+      "text": "Dan Quayle joke: the White House staff 'are still giving him a picture menu and letting him point at the food he wants.'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "setup_punchline",
+        "observational"
       ],
-      "setup": "Ice-T pulled controversial 'Cop Killer' song",
-      "punchline": "Even more ridiculous target for violence - crossing guards",
-      "craft_total": 6.19,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "Setup about Quayle's famous 'potato' misspelling, blaming it on his staff.",
+      "punchline": "The picture menu \u2014 infantilizing Quayle by implying he's treated like a small child who can't read.",
+      "craft_total": 5.28,
+      "impact_score": 5.33,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Absurdist escalation works well - crossing guards are harmless authority figures, making the threat comically disproportionate.",
+      "explanation": "Competent political joke of the era. The 'picture menu' image is specific and vivid, which elevates it above the average Quayle joke, but the territory is well-worn. Works as verisimilitude for the show-within-a-show \u2014 this is exactly the kind of monologue material late-night writers would have produced in 1992.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -163,22 +166,22 @@
     },
     {
       "index": 7,
-      "text": "If I was a rapper, I already have my name picked out. It would be \"Hey, Put Ice on That.\"",
+      "text": "Larry: 'You can never... never, never have enough Dan Quayle jokes.'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "irony_sarcasm",
+        "meta_self_referential"
       ],
-      "setup": "All rappers have 'ice' in their names",
-      "punchline": "Larry's would be about literal ice for injuries",
-      "craft_total": 7.46,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Larry has just finished two consecutive Dan Quayle jokes.",
+      "punchline": "He claims you can never have enough \u2014 which is implicitly self-aware that he's been doing exactly that, and slightly meta about lazy political comedy.",
+      "craft_total": 6.41,
+      "impact_score": 5.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent character-specific humor - Larry as middle-aged Jewish guy completely missing the point of rap names. The injury reference is perfect for his neurotic persona.",
+      "explanation": "A winking moment where Larry's on-air persona admits the well is dry while continuing to draw from it. Works as gentle meta-commentary on political comedy's laziness. The pause before 'never, never' suggests Shandling's timing milking the implicit admission.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -188,22 +191,22 @@
     },
     {
       "index": 8,
-      "text": "I know I would hurt myself, and my big controversial song would be \"Hey, Mom, Get Off My Back.\"",
+      "text": "Ice-T pulled 'Cop Killer' and now has a new song called 'Die, Crossing Guard, Die.'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "setup_punchline",
+        "dark_subversive"
       ],
-      "setup": "Larry's rapper persona with injury-themed name",
-      "punchline": "His 'controversial' song is about maternal nagging",
-      "craft_total": 7.46,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Ice-T caved to pressure and pulled his controversial song.",
+      "punchline": "His replacement targets the least threatening authority figure imaginable \u2014 the crossing guard.",
+      "craft_total": 6.59,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant escalation that perfectly captures Larry's neurotic, suburban mindset. The contrast between gangsta rap rebellion and Jewish mother issues is expertly executed.",
+      "explanation": "Strong monologue joke. The logic is airtight: Ice-T compromised, so naturally the step down from 'cop' is the most harmless law-enforcement-adjacent figure. The specificity of 'crossing guard' is the key \u2014 it's not 'security guard' or 'meter maid,' it's maximally absurd while remaining coherent. Good economy, genuine wit.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -213,22 +216,23 @@
     },
     {
       "index": 9,
-      "text": "Hank the Rapper",
+      "text": "Larry's rapper name bit: 'If I was a rapper, my name would be \"Hey, Put Ice on That.\" My big controversial song would be \"Hey, Mom, Get Off My Back.\"'",
       "characters": [
-        "Hank"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "setup_punchline",
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Larry asks what Hank's rap name would be",
-      "punchline": "Completely literal, unimaginative name",
-      "craft_total": 6.78,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Observing that all rappers have 'ice' in their name \u2014 Ice-T, Ice Cube, Vanilla Ice.",
+      "punchline": "'Hey, Put Ice on That' \u2014 a name that implies constant minor sports injuries, leading to the ultra-domesticated controversial song 'Hey, Mom, Get Off My Back.'",
+      "craft_total": 7.41,
+      "impact_score": 7.25,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Hank moment - his complete lack of imagination and cultural awareness delivered with complete confidence.",
+      "explanation": "One of the stronger monologue jokes. 'Hey, Put Ice on That' works on two levels \u2014 it fits the naming pattern AND implies Larry as a perpetually injured, unhip white guy. The escalation to 'Hey, Mom, Get Off My Back' as the 'big controversial song' is a well-structured payoff. The self-deprecating character specificity elevates it above generic observational material. The delivery beat before the song title is pure Shandling timing.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -242,21 +246,22 @@
     },
     {
       "index": 10,
-      "text": "What the fuck does Dana Carvey know about doing this show?",
+      "text": "Larry's big controversial rap song would be: 'Hey, Mom, Get Off My Back.'",
       "characters": [
-        "Hank"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Larry just announced Dana Carvey as guest host on air",
-      "punchline": "Hank immediately complains off-air about the choice",
-      "craft_total": 6.75,
-      "impact_score": 6.83,
-      "quotability": 5.0,
+      "setup": "Having established his rapper persona as injury-prone, Larry reveals his 'controversial' song.",
+      "punchline": "The 'controversial' song is a whimper \u2014 mom-based complaint music, about as threatening as possible.",
+      "craft_total": 7.05,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Hank's jealousy and lack of professionalism. The transition from on-air to off-air creates the cringe.",
+      "is_callback": 1,
+      "explanation": "The payoff to the rapper-name setup. The joke completes the downward escalation from Ice-T threatening cops \u2192 crossing guard \u2192 Larry threatening his own mother. The three-stage structure is well-built.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -266,22 +271,24 @@
     },
     {
       "index": 11,
-      "text": "He does funny voices. That's what he does. \"I'm going to give you a pump up.\"",
+      "text": "Hank's rapper name: 'Hank the Rapper.' Followed by audience/Larry silence.",
       "characters": [
-        "Hank"
+        "Hank Kingsley",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "character_comedy",
-        "meta_self_referential"
+        "deadpan_understatement",
+        "reaction_beat",
+        "character_comedy"
       ],
-      "setup": "Hank dismissing Dana Carvey's qualifications",
-      "punchline": "Bad impression of Hans and Franz while criticizing impressions",
-      "craft_total": 6.5,
-      "impact_score": 5.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry asks Hank what his rapper name would be, building anticipation for something clever.",
+      "punchline": "'Hank the Rapper' \u2014 a maximally uncreative, literal answer delivered with complete sincerity. The silence that follows is the real punchline.",
+      "craft_total": 8.1,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Meta humor about SNL impressions while Hank attempts and fails at one himself. Good irony in the execution.",
+      "explanation": "This is the episode's first genuinely exceptional moment. The joke operates on three levels simultaneously: (1) It's funny as a punchline \u2014 'Hank the Rapper' is the least creative answer possible. (2) It reveals Hank's character perfectly \u2014 he has zero self-awareness and no comedic instincts, yet is desperate to be in the spotlight. (3) The silence that follows (inferred from the pause before 'And on that note') is the actual punchline \u2014 Larry has nothing to do with that. Only Hank Kingsley could deliver this joke. The economy is near-perfect: three words that demolish a character. Justifies 8.5 \u2014 it's doing exactly what the anchor 8.0 example does.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -291,22 +298,22 @@
     },
     {
       "index": 12,
-      "text": "I outgrew that horseshit in high school",
+      "text": "Larry, off-air and seething: 'What the fuck does Dana Carvey know about doing this show? This show? He does funny voices. That's what he does.'",
       "characters": [
-        "Hank"
+        "Larry Sanders"
       ],
       "joke_types": [
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Hank criticizing Dana's sketch comedy background",
-      "punchline": "Claims he outgrew it while being incredibly immature himself",
-      "craft_total": 6.56,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry just said warmly on-air that Dana Carvey will guest-host. Camera cuts to backstage.",
+      "punchline": "The instant split between Larry's on-air warmth and his paranoid, petty backstage self.",
+      "craft_total": 7.85,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect irony - Hank claiming maturity while displaying childish jealousy. Classic character comedy.",
+      "explanation": "The juxtaposition of on-air Larry and off-air Larry is the engine of the entire series, and this is an early exemplary instance. The speed of the shift \u2014 from 'it will be a pleasure to help him' to 'what the fuck does Dana Carvey know' \u2014 is perfectly timed. 'He does funny voices. That's what he does' is a beautifully petty dismissal from someone who is threatened. High character integration because this is core Larry Sanders DNA.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -316,21 +323,22 @@
     },
     {
       "index": 13,
-      "text": "Not really. Hee Haw was on.",
+      "text": "Hank's impression of Dana Carvey doing 'I'm going to give you a pump up' (Hans & Franz), presented as a critique of Carvey's limited range.",
       "characters": [
-        "Artie"
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Larry asks if Artie watched the show",
-      "punchline": "Admits he watched lowbrow variety show instead",
-      "craft_total": 7.1,
+      "setup": "Hank is joining Larry's dismissal of Dana Carvey, claiming Carvey only does 'funny voices.'",
+      "punchline": "Hank does a bad impression of Carvey's impression \u2014 a meta-layer where a man with no comedic talent mocks a talented comedian's comedic talent.",
+      "craft_total": 6.8,
       "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Artie - brutal honesty delivered matter-of-factly. The choice of Hee Haw is perfectly lowbrow.",
+      "explanation": "The irony is rich: Hank, who just came up with 'Hank the Rapper,' is critiquing a professional comedian. The audience understands the gap in self-awareness even if Hank doesn't. The physical impression (inferred from context) adds a visual layer.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -340,21 +348,22 @@
     },
     {
       "index": 14,
-      "text": "I'm just warming up. I'm doing your show, I gotta do you.",
+      "text": "Hank: 'Dana Carvey does skits. That's what he does. Come on. I outgrew that horseshit in high school.'",
       "characters": [
-        "Dana"
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Larry asks what Dana is doing",
-      "punchline": "Dana thinks he needs to impersonate Larry to host",
-      "craft_total": 6.45,
-      "impact_score": 5.83,
-      "quotability": 5.0,
+      "setup": "Hank is building his case against Dana Carvey's qualifications.",
+      "punchline": "The implication that Hank has transcended sketch comedy \u2014 a man who has zero demonstrable talent presenting himself as having evolved past a highly successful comedian.",
+      "craft_total": 6.62,
+      "impact_score": 6.17,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Dana's SNL mindset of doing impressions for everything.",
+      "explanation": "'I outgrew that horseshit in high school' is a great line because it implies Hank had a high school phase of sketch comedy sophistication that he has since surpassed. Given everything we know about Hank, this is perfectly delusional. High character integration.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -364,23 +373,23 @@
     },
     {
       "index": 15,
-      "text": "You can't believe what it's doing in Malaysia. It's through the roof. - It's so sad.",
+      "text": "Artie to Larry: 'Great show. That was good.' Larry: 'Did you watch any of it?' Artie: 'Not really. Hee Haw was on.'",
       "characters": [
-        "Larry",
-        "Dana"
+        "Artie",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Larry bragging about his movie's success in Malaysia",
-      "punchline": "Dana sarcastically calling it 'so sad' while Larry agrees",
-      "craft_total": 6.65,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Standard post-show pleasantries \u2014 Artie complimenting the show.",
+      "punchline": "He didn't actually watch it because Hee Haw was on \u2014 delivered with complete matter-of-factness.",
+      "craft_total": 7.55,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good interplay showing Larry's obliviousness to sarcasm and Dana's dry wit.",
+      "explanation": "This is one of the episode's best jokes and justifies an 8+ score. The humor operates on multiple dimensions: (1) Artie's complete shamelessness \u2014 he offers empty praise with zero compunction about being caught. (2) 'Hee Haw' as the competing show is a perfect choice \u2014 it's not prestige TV, it's corny counterprogramming, which makes Artie's preference funnier. (3) The deadpan delivery from Rip Torn's Artie is so nonchalant it circles back to being a form of warmth. The joke is maximally economical and entirely character-specific \u2014 no one but Artie could say this and have it land the same way.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -394,22 +403,23 @@
     },
     {
       "index": 16,
-      "text": "The one sleeping bag thing didn't work. - First time I heard a complaint.",
+      "text": "Larry and Artie's 'lake trip' negotiation: Artie tells Larry not to bring the trades, Larry defends his Malaysian box office numbers \u2014 'You can't believe what it's doing in Malaysia. It's through the roof.'",
       "characters": [
-        "Larry",
-        "Dana"
+        "Larry Sanders",
+        "Artie"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Larry mentions bringing your own sleeping bag",
-      "punchline": "Dana implies sharing a sleeping bag was problematic",
-      "craft_total": 6.67,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Artie and Larry are planning a vacation. Artie tells Larry not to bring the trades.",
+      "punchline": "Larry is defensive about his film's performance specifically in Malaysia \u2014 the most obscure possible market to be excited about.",
+      "craft_total": 6.62,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Mild cringe humor about awkward camping arrangements. Larry's oblivious response adds to the discomfort.",
+      "explanation": "Malaysia as the specific market of Larry's pride is a sharp choice \u2014 it implies he's grasping at whatever success data he can find. The insecurity is on-brand and the specificity elevates what could be a generic 'Hollywood ego' joke.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -423,22 +433,24 @@
     },
     {
       "index": 17,
-      "text": "That's very interesting, Marty, but can you do this with your card?",
+      "text": "The 'one sleeping bag' story: 'The one sleeping bag thing didn't work.' Artie: 'First time I heard a complaint.' Larry: 'Last summer, it was, \"Oh, the sounds of the woods.\"'",
       "characters": [
-        "Hank"
+        "Larry Sanders",
+        "Artie"
       ],
       "joke_types": [
-        "visual_gag",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort",
+        "dark_subversive"
       ],
-      "setup": "Hank practicing talk show hosting with writer",
-      "punchline": "Treating a normal conversation like a magic trick reveal",
-      "craft_total": 6.43,
-      "impact_score": 5.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Artie tells Larry to bring his own sleeping bag.",
+      "punchline": "There was apparently a prior trip where they shared a sleeping bag, which Larry objected to. Artie's defense ('first time I heard a complaint') implies Larry was complicit at the time; the 'sounds of the woods' line suggests Larry was using it as cover.",
+      "craft_total": 7.26,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great character moment showing Hank's complete misunderstanding of talk show hosting dynamics.",
+      "explanation": "A delightfully strange joke that enriches both characters through implication. The audience must fill in what 'one sleeping bag' means between these two men, and the conclusions are funnier than anything explicit. 'First time I heard a complaint' from Artie, delivered without embarrassment, is the key line. The cringe comes from what's unsaid. High character integration because the joke only makes sense given the absurd intimacy of the Larry-Artie relationship.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -448,22 +460,22 @@
     },
     {
       "index": 18,
-      "text": "My next guest is a good friend and a great talent. Come on, put your hands together and give a big welcome for Phil... the writer.",
+      "text": "Cut to Hank doing a card trick for the network exec, mid-trick: 'That's very interesting, Marty, but can you do this with your card?'",
       "characters": [
-        "Hank"
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "visual_gag"
       ],
-      "setup": "Hank doing standard guest introduction format",
-      "punchline": "Introducing a random writer as if he's a celebrity",
-      "craft_total": 6.87,
-      "impact_score": 6.67,
+      "setup": "Scene cuts to Hank apparently in a meeting with network exec Sheldon.",
+      "punchline": "Instead of pitching himself as host, Hank is performing a card trick on the network executive.",
+      "craft_total": 7.83,
+      "impact_score": 7.5,
       "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent cringe comedy - Hank's desperate practice session with inappropriate fanfare for a non-celebrity.",
+      "explanation": "A perfectly observed moment of Hank's delusional self-promotion. He's been given a shot to audition for the network exec and his chosen vehicle is a card trick. It's so wrong it's brilliant \u2014 and the detail that Sheldon sits through it ('How much longer are we to endure this?') makes it even better. Only Hank Kingsley would bring a card trick to a hosting audition. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -473,21 +485,22 @@
     },
     {
       "index": 19,
-      "text": "Don't mention the name Rupert Pupkin.",
+      "text": "Sheldon, watching Hank's card trick: 'How much longer are we to endure this?'",
       "characters": [
-        "Artie"
+        "Sheldon"
       ],
       "joke_types": [
-        "meta_self_referential"
+        "reaction_beat",
+        "deadpan_understatement"
       ],
-      "setup": "Artie warning about Hank's fragile ego",
-      "punchline": "Reference to 'King of Comedy' character who's a delusional wannabe host",
-      "craft_total": 7.48,
-      "impact_score": 6.83,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Hank is mid-card trick for the network executive.",
+      "punchline": "Sheldon's patrician, weary 'How much longer are we to endure this?' \u2014 as if he's watching a war crime rather than a bad magic trick.",
+      "craft_total": 6.93,
+      "impact_score": 6.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant reference that perfectly captures Hank's delusional aspirations. Economy of a perfect cultural touchstone.",
+      "explanation": "The formal, almost Roman-Senate phrasing ('How much longer are we to endure') applied to a bad card trick is a high-low collision that works perfectly. The word choice \u2014 'endure' rather than 'watch' \u2014 implies existential suffering. Strong economy.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -497,21 +510,24 @@
     },
     {
       "index": 20,
-      "text": "Schwing.",
+      "text": "Hank's mock-show host audition: introduces the show writer Phil as 'Phil... the writer,' and when Phil tries to speak, Hank interrupts with 'Uh-huh,' 'Okay, great,' 'Right,' 'Uh-huh,' 'Yea!' \u2014 never letting him finish a sentence.",
       "characters": [
-        "Artie"
+        "Hank Kingsley",
+        "Phil"
       ],
       "joke_types": [
-        "character_comedy"
+        "cringe_discomfort",
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Hank asks if it's him or Dana Carvey",
-      "punchline": "Artie does Dana's catchphrase as his answer",
-      "craft_total": 6.18,
-      "impact_score": 6.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Hank is doing a mock hosting audition for Sheldon and Artie, with a writer as his 'guest.'",
+      "punchline": "Hank's 'active listening' consists entirely of interrupting with affirmations, never actually hearing the guest \u2014 a parody of bad talk-show hosting.",
+      "craft_total": 7.81,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple but effective - Artie's brutal efficiency in dismissing Hank using Dana's own catchphrase.",
+      "explanation": "A brilliant sustained cringe sequence that works on multiple levels. Hank's fatal flaw as a potential host \u2014 his inability to actually listen \u2014 is dramatized in real time. The escalating 'Uh-huh/Okay, great/Right/Yea!' before Phil can even complete a clause is both a character revelation and a perfect structural joke. The selection of Phil 'the writer' as the guest (a nobody) is itself a joke. The 'Yea!' at the end of an uncompleted sentence is the precise moment it escalates to comedy. Justifies 8+ \u2014 it's doing real work both comedically and characterologically.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -521,23 +537,22 @@
     },
     {
       "index": 21,
-      "text": "She's the one who reminds me I can't say \"cocksucker\" when I'm a guest. - Now you're the host, so feel free. - Cocksucker.",
+      "text": "'Everybody moves down one.' \u2014 Hank directing the (empty) panel after the mock-guest intro.",
       "characters": [
-        "Paula",
-        "Dana"
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "escalation",
-        "wordplay_pun"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Paula mentions censoring Dana's language as a guest",
-      "punchline": "Immediately uses the forbidden word when told he can as host",
-      "craft_total": 6.42,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Hank has introduced his only guest \u2014 Phil \u2014 but gives the standard late-night 'everybody moves down' instruction as if there's a full panel.",
+      "punchline": "There is no one to move down. Hank is running the trappings of a real show with no content.",
+      "craft_total": 7.78,
+      "impact_score": 7.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple escalation joke about newfound freedom. Dana's immediate compliance is childishly funny.",
+      "explanation": "Five words that expose Hank's hollow performance of competence. He has internalized every procedural element of a talk show except the ability to actually fill one. The absurdist image of him directing a non-existent panel is brilliant in its economy.",
       "dialogue": [
         {
           "speaker": "Paula",
@@ -555,22 +570,23 @@
     },
     {
       "index": 22,
-      "text": "NBC can eat shit and die.",
+      "text": "Artie to Sheldon after Hank's disaster audition: 'Shel, please, go easy on him. He has a fragile ego. Don't mention the name Rupert Pupkin.'",
       "characters": [
-        "Barbara"
+        "Artie"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "dark_subversive",
+        "misdirection"
       ],
-      "setup": "Barbara politely asking Dana not to mention NBC",
-      "punchline": "Immediately followed by vicious attack on the network",
-      "craft_total": 6.88,
-      "impact_score": 6.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Artie is interceding before Sheldon can give Hank feedback.",
+      "punchline": "The Rupert Pupkin reference \u2014 the delusional wannabe comedian from 'The King of Comedy' who kidnaps a talk-show host \u2014 is a perfectly chosen comparison that Artie introduces as a name NOT to mention, which simultaneously flags the comparison and makes it.",
+      "craft_total": 7.65,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Sharp tonal shift from polite request to vicious corporate hatred. Good character moment for network executive.",
+      "explanation": "This is among the episode's best jokes. The Rupert Pupkin reference from Scorsese's 'The King of Comedy' is a precise, earned comparison \u2014 both Pupkin and Hank are delusional sidekicks desperate to be the main event. The joke's structure is perfect: Artie introduces it as something not to say, which (a) makes the comparison while nominally disavowing it, (b) shows Artie's shrewd intelligence, and (c) demonstrates his affectionate contempt for Hank. The insider film reference rewards attentive viewers. The economy is exceptional \u2014 seven words do enormous work. Justifies 8+ unambiguously.",
       "dialogue": [
         {
           "speaker": "Barbara",
@@ -580,22 +596,22 @@
     },
     {
       "index": 23,
-      "text": "Oh, yeah. We sent a videotape, but nonetheless...",
+      "text": "Hank post-audition: 'The first one... it was off. I know it. I was nervous... But I felt good about that second one. I felt centered, and I felt like I could go another way with the whole thing, if you want to.'",
       "characters": [
-        "Hank"
+        "Hank Kingsley"
       ],
       "joke_types": [
         "character_comedy",
-        "deadpan_understatement"
+        "cringe_discomfort"
       ],
-      "setup": "Dana asks if they went to Gulf War to entertain troops",
-      "punchline": "Hank admits they just sent a tape but acts like it was heroic",
-      "craft_total": 7.57,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Hank's audition was clearly a disaster. He now gives his own performance review.",
+      "punchline": "Hank's self-assessment is that the first audition was 'off' (wildly understated) but he 'felt centered' in the second \u2014 pure delusional self-evaluation delivered with total sincerity.",
+      "craft_total": 6.97,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Hank moment - taking credit for military service when they barely did anything. The 'nonetheless' is perfectly delusional.",
+      "explanation": "The gap between what we witnessed and Hank's self-perception is the joke. 'I felt centered' after that performance is a great character line. The offer to 'go another way' implies Hank thinks the issue was directorial, not fundamental incompetence. Classic cringe comedy of misdirected self-awareness.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -605,22 +621,24 @@
     },
     {
       "index": 24,
-      "text": "before that I was a cruise director... so, all told, that gives me 12 years experience getting people to interact.",
+      "text": "Artie showing Dana around the office: 'She's the one who reminds me I can't say \"cocksucker\" when I'm a guest. Now you're the host, so feel free.' Dana immediately: 'Cocksucker.'",
       "characters": [
-        "Hank"
+        "Artie",
+        "Dana Carvey"
       ],
       "joke_types": [
+        "setup_punchline",
         "character_comedy",
-        "absurdist"
+        "dark_subversive"
       ],
-      "setup": "Hank explaining his hosting experience",
-      "punchline": "Counting cruise director work as equivalent to talk show hosting",
-      "craft_total": 6.98,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Artie gives Dana the standard host's privilege \u2014 'now you're the host, so feel free.'",
+      "punchline": "Dana tests the permission immediately, deadpan. The joke is his complete literalness and the speed of the response.",
+      "craft_total": 7.9,
+      "impact_score": 7.83,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great character logic - Hank's inflated sense of his qualifications. Cruise directing as media training is perfectly absurd.",
+      "explanation": "Perfect joke economy \u2014 the setup gives permission, the punchline exercises it immediately and literally. The speed is everything: no pause, no checking, just 'Cocksucker.' It also characterizes Dana as comfortable with authority and slightly anarchic, which pays off later. The shock of the word in a casual context lands every time.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -630,22 +648,23 @@
     },
     {
       "index": 25,
-      "text": "listening.",
+      "text": "Dana initially refuses to use Larry's office ('I couldn't use Larry's office'), then Artie says 'you're a big shot now' and Dana immediately sits down with 'Well, you are right, yeah. A big shot. I like that.'",
       "characters": [
-        "Hank"
+        "Dana Carvey",
+        "Artie"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Dana asks for hosting tips",
-      "punchline": "Hank delivers one-word profound wisdom with dramatic pause",
-      "craft_total": 7.25,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Dana performs humility about using Larry's office.",
+      "punchline": "One sentence of flattery \u2014 'you're a big shot now' \u2014 completely dissolves the humility. Dana's narcissism is just below the surface.",
+      "craft_total": 6.73,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant deadpan moment. Hank's dramatic delivery of obvious advice as if it's profound wisdom.",
+      "explanation": "A quick, well-executed character beat that subtly aligns Dana with the show's broader theme of showbiz ego. The pivot from false modesty to 'A big shot. I like that.' is amusingly fast and specific. Dana Carvey playing a slightly egotistical version of himself adds a layer.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -655,22 +674,23 @@
     },
     {
       "index": 26,
-      "text": "Does that help you at all? Or should I just go fuck myself?",
+      "text": "Larry left Dana a note: 'And the winner is the Estelle Getty for The Golden Girls. Have a good show. Love, Larry.'",
       "characters": [
-        "Hank"
+        "Larry Sanders",
+        "Dana Carvey"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Hank gives vague advice about listening",
-      "punchline": "Immediately becomes defensive and self-deprecating",
-      "craft_total": 7.04,
-      "impact_score": 6.83,
+      "setup": "Larry left Dana a note in the office, which Dana reads aloud expecting a warm, collegial message.",
+      "punchline": "The note is a random, vaguely passive-aggressive non-sequitur \u2014 possibly a reminder of something that has nothing to do with Dana, or an Oscar-bait joke. The warmth of 'Love, Larry' at the end makes it stranger.",
+      "craft_total": 7.22,
+      "impact_score": 7.0,
       "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Hank's insecurity masked as aggression when his advice isn't immediately praised.",
+      "explanation": "The absurdity of this note captures Larry's passive-aggression and casual weirdness perfectly. It could be a joke at Dana's expense (implying Dana's competition), or just Larry's brain mid-task. Dana's puzzled 'Nice' is the right straight-man response. The ambiguity is funnier than a clear explanation would be.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -680,22 +700,23 @@
     },
     {
       "index": 27,
-      "text": "you just give me a glance, I'm gonna jump right in... because that's how I carry half the show.",
+      "text": "Artie on NBC: 'NBC can eat shit and die. A little promotion on our show won't help that sinking ship.'",
       "characters": [
-        "Hank"
+        "Artie"
       ],
       "joke_types": [
         "character_comedy",
+        "dark_subversive",
         "irony_sarcasm"
       ],
-      "setup": "Hank offering to help Dana if he gets in trouble",
-      "punchline": "Claims he carries half of Larry's show",
-      "craft_total": 6.72,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "The network rep Barbara asks Dana not to promote Saturday Night Live/NBC on the show.",
+      "punchline": "Artie's response is maximally aggressive \u2014 'can eat shit and die' \u2014 while also being strategically sound (it won't help anyway).",
+      "craft_total": 7.39,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Hank delusion - vastly overestimating his contribution while offering unsolicited help.",
+      "explanation": "Peak Artie. The line is aggressive enough to shock but the follow-up ('a little promotion on our show won't help that sinking ship') shows Artie's venom is also tactically rational. The two-part construction is perfectly Rip Torn. Only Artie delivers invective as corporate strategy.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -705,23 +726,24 @@
     },
     {
       "index": 28,
-      "text": "I'm in trouble. - I got you. Hey, now.",
+      "text": "Larry's 'Special citation from the U.S. Marine Corps for entertaining the troops during the Gulf War.' Dana: 'You guys went all the way over there?' Artie: 'Oh, yeah. We sent a videotape, but nonetheless...'",
       "characters": [
-        "Dana",
-        "Hank"
+        "Artie",
+        "Dana Carvey"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Practicing the emergency glance system",
-      "punchline": "Hank's 'rescue' is just his catchphrase, which doesn't help",
-      "craft_total": 6.94,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Dana is admiring Larry's awards, including a Marine Corps citation for troop entertainment.",
+      "punchline": "They sent a videotape. The citation is for mailing a VHS tape to a war zone, which Artie defends with 'but nonetheless.'",
+      "craft_total": 7.86,
+      "impact_score": 7.75,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great payoff to the glance setup - Hank's 'help' is completely useless, just his ego-driven catchphrase.",
+      "explanation": "One of the episode's strongest jokes. The structure is impeccable: (1) Dana's earnest admiration sets the expectation of genuine sacrifice, (2) 'We sent a videotape' completely deflates it, (3) 'but nonetheless' \u2014 Artie's refusal to feel any shame while half-acknowledging the absurdity \u2014 is the perfect button. The 'but nonetheless' is doing comedy gold work: it's neither a full defense nor a retraction, just Artie holding the line with characteristic brazenness. Highly quotable. Justifies 8+ clearly.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -735,22 +757,23 @@
     },
     {
       "index": 29,
-      "text": "That snotty little shit. He's not even gonna do the glance. I'll bet he's like that twit, Leno.",
+      "text": "Dana reads Larry's award: 'Special citation from the U.S. Marine Corps for entertaining the troops during the Gulf War.' 'You guys went all the way over there?' Artie: 'Oh yeah. We sent a videotape, but nonetheless...'",
       "characters": [
-        "Hank"
+        "Dana Carvey",
+        "Artie"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Hank alone after trying to help Dana",
-      "punchline": "Immediately turns bitter and insulting about both Dana and Leno",
-      "craft_total": 6.7,
-      "impact_score": 6.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Dana is impressed by the special citation from the Marine Corps for Gulf War entertainment.",
+      "punchline": "Artie reveals they sent a videotape \u2014 they did not actually go \u2014 but accepts the award as legitimate. 'But nonetheless...' is the perfect capper.",
+      "craft_total": 7.78,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Hank's petty jealousy and tendency to lash out when rejected.",
+      "explanation": "One of the best jokes in the episode. Artie's 'but nonetheless' is a masterwork of deadpan. He sees no contradiction in claiming a troop-entertainment citation for mailing a VHS tape. The joke perfectly captures Hollywood self-mythology: the gesture counts, the actual sacrifice doesn't matter. Justified 8+ score.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -760,21 +783,24 @@
     },
     {
       "index": 30,
-      "text": "I'm gonna leave him standing there with his tallywhacker right in his hand.",
+      "text": "Hank visits Dana to give hosting tips. His main advice, delivered with maximum gravitas after a long pause: 'Listening.' Then repeats it. Then asks if it helped.",
       "characters": [
-        "Hank"
+        "Hank Kingsley",
+        "Dana Carvey"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort",
+        "deadpan_understatement"
       ],
-      "setup": "Hank threatening not to help Dana",
-      "punchline": "Crude metaphor for leaving him helpless",
-      "craft_total": 5.96,
-      "impact_score": 5.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Hank positions himself as Dana's experienced mentor, dropping by to give crucial hosting wisdom.",
+      "punchline": "His entire wisdom, delivered with theatrical weight after ten-second pauses: the word 'Listening.' Repeated twice. Then he asks if it helped 'or should I just go fuck myself.'",
+      "craft_total": 8.54,
+      "impact_score": 8.75,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Typical Hank - crude language to express petty revenge. 'Tallywhacker' is appropriately juvenile for his character.",
+      "explanation": "The episode's comedic peak. This sequence is structurally brilliant on multiple levels: (1) Hank's fatal flaw \u2014 demonstrated definitively in his audition \u2014 is not listening. He literally cannot let his mock-guest finish a sentence. (2) His advice to Dana is 'listening.' (3) This advice is delivered in a way that requires Dana to endure long silences and nod \u2014 the exact opposite of a two-way exchange. (4) 'Or should I just go fuck myself?' is the perfect self-aware button that Hank doesn't realize is self-aware. The irony is total and airtight. The pauses in the transcript ([10:16], [10:26]) are visible evidence of Hank making the scene about his own gravitas. This is exceptional character comedy writing \u2014 it would sit comfortably in any list of great Larry Sanders moments. Highest score in the episode, justified.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -784,21 +810,22 @@
     },
     {
       "index": 31,
-      "text": "I'm not worthy.",
+      "text": "Hank offers Dana hosting tips: 'Because I have been doing this for four years, and before that I was a cruise director, so all told, that gives me 12 years experience getting people to interact.'",
       "characters": [
-        "Dana"
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "meta_self_referential"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Dana starting his hosting monologue",
-      "punchline": "Uses his Wayne's World catchphrase",
-      "craft_total": 5.13,
-      "impact_score": 5.0,
-      "quotability": 7.0,
+      "setup": "Hank is positioning himself as an expert to tutor the more famous, more talented Dana Carvey on hosting.",
+      "punchline": "Hank's credentials are: four years as a sidekick and eight years as a cruise director \u2014 and he presents this as 'twelve years of experience' that qualifies him over Dana.",
+      "craft_total": 7.0,
+      "impact_score": 6.75,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple callback to Dana's SNL character. Functional but not particularly inventive.",
+      "explanation": "The cruise director detail is a perfect piece of character background \u2014 it explains everything about Hank's facilitative but hollow performance style. He treats a talk show like a buffet line orientation. The math is technically correct but the equivalence is delusional.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -808,22 +835,23 @@
     },
     {
       "index": 32,
-      "text": "I feel funny... like when I used to climb the rope in gym class.",
+      "text": "Hank explains his 'glance system' to Dana: if Dana is struggling in an interview, he should give Hank a little glance and Hank will jump in \u2014 'because that's how I carry half the show.'",
       "characters": [
-        "Dana"
+        "Hank Kingsley",
+        "Dana Carvey"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Dana describing his nervousness",
-      "punchline": "Specific gym class reference that implies physical arousal",
-      "craft_total": 6.5,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Hank presents himself as essential infrastructure for the show's success.",
+      "punchline": "'That's how I carry half the show' \u2014 an assertion so far from reality it becomes a character thesis statement.",
+      "craft_total": 6.82,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good specific reference that works on multiple levels - nervousness and subtle sexual humor.",
+      "explanation": "The claim that Hank 'carries half the show' is delivered without irony and is the purest statement of his delusion. The subsequent demonstration of the glance system \u2014 and Dana's inability to see it \u2014 adds physical comedy to character comedy.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -833,21 +861,24 @@
     },
     {
       "index": 33,
-      "text": "Schwing.",
+      "text": "Hank demonstrates the glance to Dana. Dana can't see it \u2014 Hank's glance goes to the left, toward the band. Dana points this out. Hank: 'I know.'",
       "characters": [
-        "Dana"
+        "Hank Kingsley",
+        "Dana Carvey"
       ],
       "joke_types": [
-        "meta_self_referential"
+        "physical_slapstick",
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Following the gym class rope reference",
-      "punchline": "His Wayne's World catchphrase for arousal",
-      "craft_total": 4.55,
-      "impact_score": 4.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Hank has built up his 'glance system' as a crucial hosting tool and is now demonstrating it.",
+      "punchline": "His secret glance is not actually secret \u2014 it's obviously going to the wrong direction \u2014 and when called on it, Hank just says 'I know,' as if the misdirection was intentional.",
+      "craft_total": 7.76,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Predictable use of catchphrase, but works as follow-up to the gym class reference.",
+      "explanation": "The physical comedy here (inferred from 'it's to the left, that's to the band') reveals that Hank's secret signal is a completely obvious and misdirected gesture. 'I know' as the response to this is perfect \u2014 it might mean Hank knows the glance goes to the band (so why?), or it might mean he knows Dana can't see it (but then it doesn't work), or it might mean he has no idea and is covering. All interpretations are funny. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -857,22 +888,22 @@
     },
     {
       "index": 34,
-      "text": "You better not undo your belt. You might cause a \"flab-alanche.\"",
+      "text": "Hank, after Dana leaves, seething: 'That snotty little shit. He's not even gonna do the glance. I'll bet he's like that twit, Leno. Doesn't think he needs a sidekick. Gargle.'",
       "characters": [
-        "Dana as Hans"
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Dana doing Hans character commenting on audience member",
-      "punchline": "Made-up word combining 'flab' and 'avalanche'",
-      "craft_total": 6.04,
-      "impact_score": 5.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Solid wordplay in character. 'Flab-alanche' is inventive and fits Hans's mean-spirited workout character.",
+      "setup": "Hank just had a warm farewell with Dana ('You're gonna do great').",
+      "punchline": "The instant pivot to private fury: 'that snotty little shit.' The Jay Leno comparison. And then \u2014 'Gargle' \u2014 delivered as a sharp instruction to himself or an assistant before walking off.",
+      "craft_total": 7.38,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This mirrors Larry's earlier backstage explosion (#11) and extends the show's central irony to Hank \u2014 everyone in this building performs warmth they don't feel. 'Gargle' as the final word is a brilliant detail: it's a mundane maintenance task that punctuates operatic bitterness with bathos. The Leno comparison is an insider industry jab. High character integration.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -882,22 +913,22 @@
     },
     {
       "index": 35,
-      "text": "Sorry, I had a little Satan twister. Sorry.",
+      "text": "Hank threatens: 'I'll leave him standing there with his tallywhacker right in his hand.'",
       "characters": [
-        "Dana"
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Dana appearing to lose control during monologue",
-      "punchline": "Blaming it on a 'Satan twister'",
-      "craft_total": 6.35,
-      "impact_score": 5.67,
-      "quotability": 7.0,
+      "setup": "Hank is furious that Dana won't do the glance system.",
+      "punchline": "'Tallywhacker' \u2014 an absurdly prim euphemism for an anatomically threatening image \u2014 deployed as the climax of Hank's backstage rage.",
+      "craft_total": 7.08,
+      "impact_score": 6.83,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "'Satan twister' is an inventive absurd excuse for losing control. Good random humor.",
+      "explanation": "'Tallywhacker' is a perfect Hank word \u2014 it's simultaneously crude and weirdly old-fashioned, like the character himself. The visual threat (leaving Dana stranded mid-interview with nothing to say) is expressed in vivid, bizarre anatomy. Only Hank would use 'tallywhacker' in a serious threat.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -907,22 +938,23 @@
     },
     {
       "index": 36,
-      "text": "Well, well, well, so many sluts and whores, oh, my.",
+      "text": "Cut to Hank asking 'How am I?' to someone off-screen \u2014 immediately after his furious tallywhacker speech \u2014 followed by a long beat.",
       "characters": [
-        "Dana as Church Lady"
+        "Hank Kingsley"
       ],
       "joke_types": [
+        "reaction_beat",
         "character_comedy",
-        "irony_sarcasm"
+        "awkward_silence"
       ],
-      "setup": "Dana switching to Church Lady character",
-      "punchline": "Church Lady's judgmental assessment of the audience",
-      "craft_total": 5.5,
-      "impact_score": 5.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Hank has just raged about Dana and threatened to sabotage the show.",
+      "punchline": "He pivots instantly to a grooming/appearance check, 'How am I?' \u2014 snapping from existential fury to vanity in a single breath. The pause that follows (the transcript shows a long gap to 12:44) suggests the person he's asking takes a beat to respond to this whiplash.",
+      "craft_total": 7.76,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Standard Church Lady material - judgmental religious character calling out perceived immorality.",
+      "explanation": "Two words doing enormous work. 'How am I?' is both a literal grooming question and an inadvertent existential one \u2014 Hank asking it immediately after his meltdown implies he has zero introspective capacity. The long silence before the next scene begins (12:30 to 12:44) is the comedy: whoever he's asking doesn't quite know how to respond to this human whiplash machine. Maximum economy \u2014 'How am I?' after that speech is about as good a character button as the show ever produces.",
       "dialogue": [
         {
           "speaker": "Dana as Church Lady",
@@ -932,22 +964,22 @@
     },
     {
       "index": 37,
-      "text": "You know, come on, anyone can do a monologue. Byron Allen does a monologue.",
+      "text": "Dana Carvey's monologue: 'And now, because Larry's on vacation, Dana Carvey.'",
       "characters": [
-        "Hank"
+        "Announcer"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "callback"
       ],
-      "setup": "Backstage reaction to Dana's successful monologue",
-      "punchline": "Dismissing it by comparing to notoriously bland Byron Allen",
-      "craft_total": 6.97,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Hank jealousy - dismissing Dana's success with the most damning comparison possible in late-night TV.",
+      "setup": "The standard show intro.",
+      "punchline": "Dana gets the deflated version of Larry's intro \u2014 no golden words, just 'because Larry's on vacation.' A callback to Larry's own 'already been paid' intro.",
+      "craft_total": 6.51,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A deliberate callback to the episode's first big joke. The show intro has become a running anti-hype template \u2014 neither Larry nor Dana merits enthusiasm, just justification. Good structural economy.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -957,21 +989,22 @@
     },
     {
       "index": 38,
-      "text": "I always feel like I look like I should be in the window at Sears. \"All boys' wear, half off.\"",
+      "text": "Dana: 'I feel funny... like when I used to climb the rope in gym class. Schwing.'",
       "characters": [
-        "Dana"
+        "Dana Carvey"
       ],
       "joke_types": [
-        "observational"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Dana asking Herve about growing a beard",
-      "punchline": "Self-deprecating comparison to a children's clothing mannequin",
-      "craft_total": 7.22,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Dana is expressing his excitement/nerves about guest-hosting.",
+      "punchline": "The 'rope in gym class' gives 'I feel funny' a sexual subtext, then 'Schwing' confirms and amplifies it. The joke builds an innuendo then immediately names it.",
+      "craft_total": 6.97,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent self-deprecating humor with very specific, visual imagery. The 'half off' adds extra punch to the boyish appearance joke.",
+      "explanation": "A well-constructed Wayne's World\u2013style bit \u2014 the rope climb innuendo is a solid PG-13 joke, and deploying 'Schwing' to punctuate it is the logical button. Works as fan service and as mild characterization of Dana.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -981,21 +1014,22 @@
     },
     {
       "index": 39,
-      "text": "He made Herve Villechaize seem funny, but without making fun of him.",
+      "text": "Dana, in character as Hans/Franz looking at the studio audience: 'Ja, this is a very attractive audience, but they're so flabby... You better not undo your belt. You might cause a \"flab-alanche.\"'",
       "characters": [
-        "Artie"
+        "Dana Carvey"
       ],
       "joke_types": [
-        "observational"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Watching Dana interview Herve",
-      "punchline": "Artie's professional assessment of Dana's interviewing skill",
-      "craft_total": 6.78,
-      "impact_score": 5.83,
-      "quotability": 6.0,
+      "setup": "Dana slips into his Hans & Franz SNL character to comment on the audience.",
+      "punchline": "'Flab-alanche' \u2014 a portmanteau of 'flab' and 'avalanche' \u2014 as the consequence of releasing a belt buckle.",
+      "craft_total": 6.07,
+      "impact_score": 5.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good professional observation about the delicate balance of interviewing a difficult guest with dignity.",
+      "explanation": "'Flab-alanche' is a solid wordplay coinage that does the Hans & Franz insult-the-audience work cleanly. The logic is airtight. Not groundbreaking but competent monologue wordplay.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -1005,21 +1039,22 @@
     },
     {
       "index": 40,
-      "text": "Pretty insane, but she thought you were Danish Carver.",
+      "text": "Church Lady Dana on the audience: 'Well, well, well, so many sluts and whores, oh, my. Sluts and whores, oh, my. We can't wait to get on Melrose and wag our little bulbous bottoms.'",
       "characters": [
-        "Fan"
+        "Dana Carvey"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Fan meeting Dana after the show",
-      "punchline": "Mispronouncing his name as 'Danish Carver'",
-      "craft_total": 5.55,
-      "impact_score": 5.25,
+      "setup": "Dana has shifted into the Church Lady character, surveying the studio audience.",
+      "punchline": "The Church Lady's sanctimonious judgment ('so many sluts and whores') mixed with specific contemporary reference (Melrose Place) and oddly specific body language ('bulbous bottoms').",
+      "craft_total": 6.32,
+      "impact_score": 6.33,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple name mispronunciation joke. 'Danish Carver' is mildly amusing but not particularly clever.",
+      "explanation": "Standard Church Lady material \u2014 the character's appeal relies heavily on Carvey's performance rather than the joke writing. 'Bulbous bottoms' is a good specific word choice. The Melrose Place reference dates it but grounds it in the era. Competent execution of a known character bit.",
       "dialogue": [
         {
           "speaker": "Fan",
@@ -1029,23 +1064,23 @@
     },
     {
       "index": 41,
-      "text": "I threw up in it. - Oh, where? - In your top desk drawer. - Yeah, that's what that's for.",
+      "text": "Artie watches Dana's performance in awe. Larry: 'Come on, anyone can do a monologue. Byron Allen does a monologue.'",
       "characters": [
-        "Dana",
-        "Larry"
+        "Larry Sanders",
+        "Artie"
       ],
       "joke_types": [
-        "absurdist",
-        "deadpan_understatement"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Dana thanking Larry for the office",
-      "punchline": "Casual admission of vomiting in the desk, Larry treating it as normal",
-      "craft_total": 7.07,
-      "impact_score": 6.67,
+      "setup": "Artie is impressed by Dana's natural monologue ability.",
+      "punchline": "Larry immediately undercuts with 'Byron Allen does a monologue' \u2014 using Allen as the gold standard of the lowest possible bar for monologue capability.",
+      "craft_total": 7.64,
+      "impact_score": 7.67,
       "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant absurd escalation with perfect deadpan response. Larry treating vomit drawer as normal office feature is inspired.",
+      "explanation": "A brilliantly specific industry burn. Byron Allen in 1992 was the definition of a talk-show host who didn't belong there \u2014 using him as the floor for monologue competence is a sharp, insider-knowledgeable joke. The specificity is everything: not 'anyone can do a monologue' but 'Byron Allen does a monologue.' Larry's insecurity is on full display, and the joke delivers that characterization with maximum economy. Justifies 8+ \u2014 comparable in quality and economy to the anchor example.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -1067,22 +1102,22 @@
     },
     {
       "index": 42,
-      "text": "Hey, you clods. Who died? Hey, I'm just kidding. If someone did die, I was making a joke. Sorry.",
+      "text": "Larry (offstage, watching Dana interview Herve Villechaize): 'My main concern really is just that I catch more fish than him.' [referring to upcoming fishing trip with Artie]",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "meta_self_referential"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Larry entering room of serious-looking people",
-      "punchline": "Misreading the room then awkwardly over-explaining his joke",
-      "craft_total": 6.61,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Larry is ostensibly watching his show being hosted by his potential competitor.",
+      "punchline": "His stated main concern is catching more fish than Artie on their vacation \u2014 a comic deflection from the obvious anxiety about Dana.",
+      "craft_total": 7.22,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good cringe comedy - Larry's social awkwardness and tendency to dig himself deeper with explanations.",
+      "explanation": "The deliberate misdirection of Larry's 'main concern' \u2014 in a moment when the obvious concern is Dana becoming his competitor \u2014 is a perfectly calibrated character beat. It shows Larry's avoidance and his odd friendship with Artie at the same time.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1092,21 +1127,22 @@
     },
     {
       "index": 43,
-      "text": "After one night?",
+      "text": "Dana interviews Herve Villechaize about his beard: 'I always feel like I look like I should be in the window at Sears. \"All boys' wear, half off.\"'",
       "characters": [
-        "Larry"
+        "Dana Carvey"
       ],
       "joke_types": [
-        "reaction_beat"
+        "observational",
+        "character_comedy"
       ],
-      "setup": "Told CBS offered Dana a talk show",
-      "punchline": "Larry's stunned reaction to the timeline",
-      "craft_total": 6.74,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Dana is comparing himself to Herve Villechaize, noting they both look young/childlike.",
+      "punchline": "'In the window at Sears, All boys' wear, half off' \u2014 the specific, branded image of Dana as a department store mannequin in the children's section.",
+      "craft_total": 7.31,
+      "impact_score": 7.17,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good reaction beat showing Larry's disbelief at how quickly the business moves.",
+      "explanation": "A genuinely good self-deprecating joke. The Sears window is a very specific, unglamorous image, and 'boys' wear, half off' adds the insult of scale. Dana's ability to make Herve comfortable while being self-deprecating about his own appearance is actually good hosting \u2014 and the joke is sharp enough to work on its own.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1116,22 +1152,24 @@
     },
     {
       "index": 44,
-      "text": "If I said something every time I saw something coming... we'd never get anything done.",
+      "text": "Artie to Sheldon, watching Dana charm Herve: 'He made Herve Villechaize seem funny, but without making fun of him.' Sheldon: 'But, you know, he's... It's not like he's doing anything special...' Artie: 'I don't think that this is really Dana's thing... hosting.'",
       "characters": [
-        "Artie"
+        "Artie",
+        "Sheldon"
       ],
       "joke_types": [
+        "irony_sarcasm",
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Larry asking why Artie didn't warn him about CBS offer",
-      "punchline": "Artie's cynical explanation of his management philosophy",
-      "craft_total": 7.38,
-      "impact_score": 6.67,
+      "setup": "Dana is clearly doing an exceptional job hosting. Artie acknowledges it, then immediately backtracks for Larry's sake.",
+      "punchline": "Artie's conclusion \u2014 'I don't think that this is really Dana's thing... hosting' \u2014 is delivered while they're watching Dana do extraordinary hosting. The pause before 'hosting' is the entire joke.",
+      "craft_total": 7.98,
+      "impact_score": 8.0,
       "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Artie logic - brutal honesty about his fatalistic approach to show business. Great character consistency.",
+      "explanation": "Exceptional Artie moment. The joke is three-layered: (1) The obvious reality is that Dana is great at hosting. (2) Artie's job is to protect Larry. (3) So Artie pivots from genuine admiration ('he made Herve seem funny without making fun of him') to complete reversal. The pause before 'hosting' \u2014 where Artie searches for which part of this he can deny \u2014 is a masterful beat. Sheldon's confused hedging ('It's not like he's doing anything special...') is a perfect setup for Artie's fully committed lie. This is high-level comedy writing and high-level character work simultaneously. Justifies 8+.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -1141,23 +1179,22 @@
     },
     {
       "index": 45,
-      "text": "Who... Who moved my desk? What is this? - Mr. Carvey said there was a draft in this corner. - A draft?",
+      "text": "The 'de plane, de plane' moment \u2014 Artie says it under his breath, as a private joke to himself about Herve, while arguing Dana isn't doing anything special.",
       "characters": [
-        "Larry",
-        "Assistant"
+        "Artie"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Larry notices his desk was moved",
-      "punchline": "Dana's prima donna behavior about a draft",
-      "craft_total": 6.33,
-      "impact_score": 5.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Artie is in the middle of diplomatically claiming Dana isn't impressive as a host.",
+      "punchline": "He murmurs Herve Villechaize's famous Fantasy Island catchphrase to himself \u2014 undercutting his own argument by being charmed despite himself.",
+      "craft_total": 6.43,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalation showing Dana's immediately entitled behavior as guest host.",
+      "explanation": "A small but perfectly placed moment. Artie's quiet 'de plane, de plane' shows that even he, mid-spin, is genuinely entertained. It humanizes him while the joke itself (the famous Villechaize line) lands as a warm recognition. The economy is superb \u2014 four words deliver character, comedy, and a callback to pop culture simultaneously.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1175,21 +1212,22 @@
     },
     {
       "index": 46,
-      "text": "Thanks, Mannix.",
+      "text": "Larry, watching the show: 'Well, there was a little quarter-second lull between Garth and Hans and Franz. But other than that, it was great.'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "meta_self_referential"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Artie doing investigative legwork on Dana's offer",
-      "punchline": "Reference to 1970s detective show",
-      "craft_total": 6.48,
-      "impact_score": 5.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry is watching Dana's clearly excellent performance.",
+      "punchline": "He finds a 'quarter-second lull' as his only critique \u2014 an absurdly precise, vanishingly small flaw weaponized as proof Dana isn't that good.",
+      "craft_total": 7.71,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good cultural reference that fits Larry's generation and mocks Artie's investigative approach.",
+      "explanation": "A 'quarter second lull' is a magnificently specific and petty criticism from someone who can't bring himself to say the show is good. The hyper-precision ('quarter second') is the mark of someone who watched the whole thing frame-by-frame looking for problems. Peak Larry insecurity expressed in perfect character-specific language. Justifies a score at the top of the 'very good' range.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1199,21 +1237,24 @@
     },
     {
       "index": 47,
-      "text": "You know... Boy, I do not... Yeah, there's a little something.",
+      "text": "Dana to Larry: 'Thanks for the office. I threw up in it.' Larry: 'Oh, where?' Dana: 'In your top desk drawer.' Larry: 'Yeah, that's what that's for.'",
       "characters": [
-        "Larry"
+        "Dana Carvey",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "physical_slapstick"
+        "setup_punchline",
+        "deadpan_understatement",
+        "dark_subversive"
       ],
-      "setup": "Larry checking for the draft Dana complained about",
-      "punchline": "Reluctantly admitting there might actually be a draft",
-      "craft_total": 6.16,
-      "impact_score": 5.33,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good physical callback - Larry's grudging admission undermines his indignation about the desk move.",
+      "setup": "Dana thanks Larry for use of his office.",
+      "punchline": "He threw up in the desk drawer. Larry responds as if the desk has a built-in vomit function \u2014 'that's what that's for' \u2014 with total deadpan.",
+      "craft_total": 8.14,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's genuinely great jokes. The structure is perfect: Dana's confession escalates to the specific location ('top desk drawer'), and Larry's response \u2014 'Yeah, that's what that's for' \u2014 is the platonic ideal of deadpan. It implies the desk drawer has always been the designated vomit receptacle, which says something dark and funny about the entertainment business. The joke is quotable at the highest level ('that's what that's for' is a line that travels). The economy is perfect \u2014 a full cringe-comedy sequence compressed into four exchanges. High marks across the board.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1223,23 +1264,22 @@
     },
     {
       "index": 48,
-      "text": "Heard the good news. Congratulations. - Thanks, yeah. - That is great. I was gonna tell you in the hallway earlier, but I didn't get a chance.",
+      "text": "Artie enters, clapping: 'Hey, you clods. Who died? Hey, I'm just kidding. If someone did die, I was making a joke. Sorry.'",
       "characters": [
-        "Hank",
-        "Dana"
+        "Artie"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Hank congratulating Dana on his success",
-      "punchline": "Fake enthusiasm masking his jealousy and resentment",
-      "craft_total": 6.67,
-      "impact_score": 6.33,
-      "quotability": 5.0,
+      "setup": "Artie walks into a tense room where Larry and Dana are both present.",
+      "punchline": "He reads the room as 'someone died,' makes a joke, then immediately and unnecessarily covers himself ('if someone did die, I was making a joke, sorry') \u2014 a reflexive deflection that implies this has happened before.",
+      "craft_total": 7.13,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good cringe moment showing Hank's inability to be genuinely happy for others. The false enthusiasm is perfectly uncomfortable.",
+      "explanation": "The self-qualification after the joke ('if someone did die, I was making a joke') is the funny part \u2014 Artie covering a base that doesn't need covering, which implies he's been burned before. Pure character voice in a tense scene transition.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -1257,22 +1297,23 @@
     },
     {
       "index": 49,
-      "text": "God knows I'm not friends with Arsenio... and I swear to God, Leno tried to hit me with one of his big cars the other day.",
+      "text": "Larry learns CBS has offered Dana a talk show of his own after ONE night of guest hosting.",
       "characters": [
-        "Larry"
+        "Larry Sanders",
+        "Artie"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "irony_sarcasm",
+        "observational"
       ],
-      "setup": "Larry talking about not wanting competition to ruin friendship",
-      "punchline": "Escalating to absurd claim about Leno's vehicular assault",
-      "craft_total": 7.44,
-      "impact_score": 7.5,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Larry left on vacation to let Dana guest-host for a week.",
+      "punchline": "CBS offered Dana his own show after a single night \u2014 the industry's predatory speed in exploiting Larry's guest is the punchline, not a spoken line.",
+      "craft_total": 7.4,
+      "impact_score": 7.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent escalation from reasonable concern to paranoid absurdity. 'One of his big cars' is a perfect detail that makes it funnier.",
+      "explanation": "The plot beat IS the joke \u2014 the speed of CBS's offer (one night) satirizes the ruthlessness of network television. It's more situation comedy than a constructed joke, but the comedy of the situation is real and specific.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1282,22 +1323,23 @@
     },
     {
       "index": 50,
-      "text": "Schwing.",
+      "text": "Larry discovers Dana has moved his desk. Artie explains: 'Mr. Carvey said there was a draft in this corner.' Larry: 'A draft?' \u2014 then asks if Dana is taking the CBS offer, and: 'Thanks, Mannix.' [to the assistant who gathered no information]",
       "characters": [
-        "Dana"
+        "Larry Sanders",
+        "Artie"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "meta_self_referential"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Awkward moment as Larry and Dana part ways",
-      "punchline": "Dana's catchphrase as response to awkward situation",
-      "craft_total": 5.19,
-      "impact_score": 4.67,
-      "quotability": 6.0,
+      "setup": "Larry's assistant reports on efforts to find out if Dana is taking the CBS deal.",
+      "punchline": "'Thanks, Mannix' \u2014 a reference to the classic TV detective \u2014 deployed when the 'legwork' produced nothing. Also the desk-moving as an act of casual territorial encroachment.",
+      "craft_total": 6.7,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Another catchphrase usage, this time as awkward exit strategy. Less effective than earlier uses.",
+      "is_callback": 0,
+      "explanation": "'Thanks, Mannix' is a sharp sarcastic callback to classic TV that works as both a period-appropriate reference and a perfect deflation of the assistant's uselessness. The desk-moving detail is a good running joke about territorial anxiety.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -1307,21 +1349,23 @@
     },
     {
       "index": 51,
-      "text": "Some of the things you do are not quite right.",
+      "text": "Artie: 'Mike Connors, good friend of mine. He'll be on next week.' [said as if booking Mannix himself is the natural follow-up to the 'Thanks, Mannix' joke]",
       "characters": [
         "Artie"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "character_comedy",
+        "deadpan_understatement",
+        "callback"
       ],
-      "setup": "Hank asking for specific criticism after being told he wasn't quite right",
-      "punchline": "Artie's barely more specific non-answer",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Artie moment - giving Hank exactly what he asked for while being completely unhelpful. Great deadpan delivery.",
+      "setup": "Larry makes a 'Mannix' crack. Artie, who knows Mike Connors, takes the reference literally.",
+      "punchline": "Artie doesn't play the Mannix reference as a joke \u2014 he registers it as a booking lead. The gap between Larry's sarcasm and Artie's literal response is the comedy.",
+      "craft_total": 7.72,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Artie refusing to process irony \u2014 treating Larry's Mannix crack as an actual suggestion \u2014 is a perfect character beat. It's also plausible: Artie probably does know Mike Connors. The beat shows Artie's mind is always running on the show, even during arguments. The two-beat structure (Larry's sarcasm, Artie's literalness) is well-executed.",
       "dialogue": [
         {
           "speaker": "",
@@ -1331,22 +1375,23 @@
     },
     {
       "index": 52,
-      "text": "Hank, you speak very slowly.",
+      "text": "Larry: 'Who's gonna tell the little old church lady?' [about telling Dana he can't host] \u2014 then adds: 'I thought you two were friends.' [to Artie] 'Fine, I'll tell him.' [pause] 'Where's this draft, by the way?'",
       "characters": [
+        "Larry Sanders",
         "Artie"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Hank demanding specific criticism",
-      "punchline": "Artie pointing out Hank's painfully obvious speech pattern",
-      "craft_total": 6.82,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Larry needs someone to tell Dana he can't host anymore. After Artie declines, Larry volunteers.",
+      "punchline": "Larry immediately undercuts his decisive volunteering by wondering about the desk draft \u2014 nervous displacement activity.",
+      "craft_total": 6.51,
+      "impact_score": 6.0,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good observational humor - stating the obvious about Hank's delivery in a way that's both helpful and brutal.",
+      "is_callback": 1,
+      "explanation": "'Where's this draft, by the way?' after volunteering to fire someone is a perfect Larry beat \u2014 his courage evaporates into petty curiosity about an irrelevant detail. 'Little old church lady' is also a nice Dana Carvey callback. Double character comedy.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -1356,22 +1401,22 @@
     },
     {
       "index": 53,
-      "text": "After the show, remind me to turn you on to a little thing called decaf.",
+      "text": "Larry tentatively tests the draft location and says: 'Yeah, there's a little something.' [agreeing with Dana's assessment of a mild draft]",
       "characters": [
-        "Dana"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "observational",
-        "setup_punchline"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Hank being hyperactive during interview",
-      "punchline": "Dana's professional but condescending suggestion",
-      "craft_total": 6.08,
-      "impact_score": 5.83,
-      "quotability": 6.0,
+      "setup": "Larry asked 'Where's this draft?' after learning Dana moved his desk.",
+      "punchline": "Larry finds the draft and validates Dana's decision \u2014 accidentally taking his competitor's side on the territorial furniture dispute.",
+      "craft_total": 6.74,
+      "impact_score": 6.17,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good professional putdown delivered as helpful advice. Shows Dana learning to manage difficult sidekicks.",
+      "is_callback": 1,
+      "explanation": "A nice small beat: Larry is so conditioned to validate whatever makes sense that he accidentally sides with Dana. The subversion of his indignation is subtle but well-placed.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -1381,22 +1426,22 @@
     },
     {
       "index": 54,
-      "text": "I'm hosting the show tonight. What? That's right. I'm hosting the show tonight. I was bored on vacation anyway.",
+      "text": "Dana demonstrates 'I'm outta control!' (the Hans & Franz escalation catchphrase) to the writers, riffing on timing and characterizes it as a 'triple kind of thing.'",
       "characters": [
-        "Larry"
+        "Dana Carvey"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "observational"
       ],
-      "setup": "Larry suddenly announcing his return",
-      "punchline": "His casual dismissal of his vacation",
-      "craft_total": 6.55,
-      "impact_score": 6.25,
-      "quotability": 6.0,
+      "setup": "Dana is working with writers on character bits.",
+      "punchline": "The meta-analysis of the 'triple' structure of the Hans & Franz bit is itself funny \u2014 a comedian breaking down the machinery of his own character in real time.",
+      "craft_total": 6.12,
+      "impact_score": 5.5,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Larry's impulsiveness and need for control.",
+      "explanation": "A mild industry-insider moment. The comedy of Dana workshopping his SNL characters in a Larry Sanders writers' room is situationally funny but doesn't quite land as a joke \u2014 more atmospheric.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1406,24 +1451,24 @@
     },
     {
       "index": 55,
-      "text": "You can't say? Oh, Artie, he can't say. - No, he can't say. - He can't say.",
+      "text": "Larry and Dana awkward conversation: 'So, what are you gonna do?' Dana: 'Well, I gotta do Wayne's World Two in a few months. Universal's got this deal for me to produce a show. I'm gonna do a stand-up tour. So I'm... Got a full plate.' Larry: 'Yeah.' Dana: 'Things are going good.' Larry: 'You have to turn it down?'",
       "characters": [
-        "Larry",
-        "Artie",
-        "Barbara"
+        "Larry Sanders",
+        "Dana Carvey"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "character_comedy",
+        "awkward_silence"
       ],
-      "setup": "Dana saying he can't reveal his decision",
-      "punchline": "Three-way repetition building frustration",
-      "craft_total": 6.7,
-      "impact_score": 6.5,
+      "setup": "Larry is trying to find out diplomatically if Dana will take the CBS deal.",
+      "punchline": "Dana lists every project he has except the CBS deal, making it obvious he's deflecting. Larry's persistent, increasingly desperate 'You have to turn it down?' at the end of Dana's laundry list is the comic beat.",
+      "craft_total": 6.9,
+      "impact_score": 6.25,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation through repetition. Shows mounting frustration at Dana's evasiveness.",
+      "explanation": "A well-crafted cringe sequence. The social dance around the real topic \u2014 is Dana Larry's competition \u2014 is navigated through mutually understood evasion. Larry's 'You have to turn it down?' is perfectly pathetic: he needs Dana to say yes for his peace of mind, and he's willing to sound desperate to get it.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1441,21 +1486,23 @@
     },
     {
       "index": 56,
-      "text": "I'm taking the deal at NBC.",
+      "text": "Dana, when asked if he'll take the CBS deal: 'Well, I gotta do Wayne's World Two in a few months. Universal's got this deal for me to produce a show. I'm gonna do a stand-up tour. So I'm...' Larry: 'Got a full plate.' Dana: 'Yeah.'",
       "characters": [
-        "Dana"
+        "Dana Carvey",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "misdirection"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Dana says he's not taking the CBS deal",
-      "punchline": "Reveals he's taking a different, worse deal",
-      "craft_total": 7.27,
-      "impact_score": 7.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Larry is fishing to know if Dana is competition. Dana lists his commitments.",
+      "punchline": "The list of Dana's upcoming projects \u2014 each bigger than hosting a one-week replacement gig \u2014 inadvertently reveals the depth of Larry's insignificance in Dana's career calculus.",
+      "craft_total": 6.58,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent misdirection - the relief of him turning down CBS immediately destroyed by worse news about NBC.",
+      "explanation": "The comedy is relational \u2014 Dana's casual name-dropping of Wayne's World Two and Universal deals is devastating to Larry's ego, though both men pretend otherwise. The 'full plate' understatement does good work.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -1465,24 +1512,24 @@
     },
     {
       "index": 57,
-      "text": "I'm not taking the deal with CBS. I apologize, sir. Thank you. Why? I'm taking the deal at NBC.",
+      "text": "Dana: 'I think I could do some innovative stuff with [the talk show format]. Not that you aren't doing innovative stuff with it.' Larry: 'No, huh? Thanks.'",
       "characters": [
-        "Dana",
-        "Artie",
-        "Larry"
+        "Dana Carvey",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "misdirection",
-        "escalation"
+        "cringe_discomfort",
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Dana appearing to decline CBS offer",
-      "punchline": "The double twist - he has an even better NBC deal",
-      "craft_total": 7.5,
-      "impact_score": 8.25,
-      "quotability": 7.5,
+      "setup": "Dana suggests he'd do innovative things with a talk show, implying Larry's show isn't innovative.",
+      "punchline": "His instant self-correction ('not that you aren't doing innovative stuff') and Larry's flat, hurt 'No, huh? Thanks' \u2014 which accepts the clarification while clearly not believing it.",
+      "craft_total": 6.79,
+      "impact_score": 6.5,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent misdirection comedy with perfect structure. The double twist lands perfectly.",
+      "explanation": "'No, huh? Thanks' is a beautifully compressed Larry Sanders line. It accepts the compliment, refutes the implied insult, and reveals that Larry felt the original sting \u2014 all in four words. The 'No, huh?' does the heavy lifting: it's Larry filing away the real message even as he plays along. Very strong character economy.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -1500,23 +1547,23 @@
     },
     {
       "index": 58,
-      "text": "I didn't even know about the NBC thing. I saw it coming. I hate this business. I'm telling you, I saw it coming. And I'm telling you, I hate this fucking business.",
+      "text": "Dana: 'I just feel weird all of a sudden. Do you... Should I not host the show? If you want me out, I understand.'",
       "characters": [
-        "Larry",
-        "Artie"
+        "Dana Carvey",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "escalation",
+        "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Larry's shock at NBC news",
-      "punchline": "The escalating argument about who predicted what",
-      "craft_total": 6.71,
-      "impact_score": 6.5,
-      "quotability": 6.5,
+      "setup": "The conversation has reached maximum awkwardness.",
+      "punchline": "Dana's sudden 'I feel weird' and offer to leave is simultaneously genuine and a strategic move \u2014 it forces Larry to be magnanimous, which Larry cannot comfortably do.",
+      "craft_total": 7.27,
+      "impact_score": 7.17,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good escalation showing the characters' different coping mechanisms under stress.",
+      "is_callback": 0,
+      "explanation": "The cringe peaks here as both men perform graciousness neither feels. Dana's offer to leave is socially perfect and slightly calculated; Larry's response will be forced generosity. The discomfort is the comedy.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1542,23 +1589,23 @@
     },
     {
       "index": 59,
-      "text": "I saw it coming. - I hate this business. I'm telling you, I saw it coming. And I'm telling you, I hate this fucking business.",
+      "text": "Larry's tortured response to Dana's offer to leave: 'No, it's the network. They're such... these assholes. All they're worried about is you're my competition. You know?' Then: 'God knows I'm not friends with Arsenio... and I swear to God, Leno tried to hit me with one of his big cars the other day.'",
       "characters": [
-        "Artie",
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm",
+        "dark_subversive"
       ],
-      "setup": "Larry expressing frustration",
-      "punchline": "Artie's continued claims of prescience vs Larry's rage",
-      "craft_total": 6.52,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good escalation showing character differences - Artie's fatalism vs Larry's emotional investment.",
+      "setup": "Larry is trying to be magnanimous about the competition issue, attributing the problem to the network.",
+      "punchline": "He immediately lists his actual enemies (Arsenio, Leno) \u2014 proving he does exactly what he's claiming not to do with Dana. 'Leno tried to hit me with one of his big cars' is a beautiful specific escalation.",
+      "craft_total": 7.97,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Leno tried to hit me with one of his big cars the other day' is an exceptional line. Leno's car collection was famous industry knowledge, making this hyper-specific. The image of Leno as a vehicular assassin is absurd but perfectly grounded in real detail. It also reveals that Larry's 'I don't think of Dana as competition' is completely hollow \u2014 he's actively maintaining an enemies list. The self-undermining is pitch-perfect character work. Justifies 8+.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -1572,23 +1619,24 @@
     },
     {
       "index": 60,
-      "text": "Is she with lips or without lips? - I wanted to talk to you about that. One of her lips is thin, and the other one's still fat.",
+      "text": "Larry and Dana's circular 'host/don't host' exchange: 'Don't host. Host.' / 'I'll host.' / 'Fine, fine.' / 'Okay.' / 'Yeah, that's good.' / 'Yeah, okay.'",
       "characters": [
-        "Larry",
-        "Artie"
+        "Larry Sanders",
+        "Dana Carvey"
       ],
       "joke_types": [
-        "observational",
-        "absurdist"
+        "cringe_discomfort",
+        "awkward_silence",
+        "character_comedy"
       ],
-      "setup": "Larry asking about Barbara Hershey's appearance",
-      "punchline": "Artie's detailed description of her cosmetic surgery results",
-      "craft_total": 6.53,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry has told Dana to host, then immediately said 'don't host,' then immediately reversed again.",
+      "punchline": "The ping-pong of 'host/don't host' is Larry's inability to land on any authentic position \u2014 performed graciousness and genuine paranoia alternating in real time.",
+      "craft_total": 7.79,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good observational humor about celebrity plastic surgery. The specific detail about uneven lips is perfectly absurd.",
+      "explanation": "'Don't host. Host.' is a perfectly compressed expression of Larry's paralysis. The exchange is a clinic in cringe comedy \u2014 both characters trapped in a loop of social obligation and suppressed self-interest. The rhythm of the exchange (matched affirmations with zero actual resolution) captures the entire episode's theme in a brief exchange. The 'Don't host. Host.' construction especially is close to a quotable signature moment for the character.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1602,22 +1650,23 @@
     },
     {
       "index": 61,
-      "text": "Yeah, I got another fishing trip offer. Bob Saget called. Huge fishing offer. It's multifaceted.",
+      "text": "After the host/don't host resolution, Dana awkwardly bumps into something or trips: 'Oop, you all right?' 'Yeah. Schwing.'",
       "characters": [
-        "Dana"
+        "Dana Carvey",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Larry asking if Dana has other fishing trip offers",
-      "punchline": "Treating Bob Saget fishing trip like a business deal",
-      "craft_total": 7.43,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant absurdist escalation - treating a casual fishing trip as a 'multifaceted' business opportunity. Perfect show business parody.",
+      "setup": "The emotional peak of the Larry-Dana conversation resolves with physical awkwardness.",
+      "punchline": "Dana's reflexive 'Schwing' after bumping into something \u2014 using his SNL character as emotional armor in a social moment.",
+      "craft_total": 6.71,
+      "impact_score": 6.33,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A small physical comedy beat. 'Schwing' as a reflexive deflection from physical embarrassment is in keeping with how Dana uses his characters as shields throughout the episode.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -1627,21 +1676,22 @@
     },
     {
       "index": 62,
-      "text": "You're talking to us like we're Martin and Lewis, for God's sakes.",
+      "text": "Artie, stage-managing: 'Let's move the dwarf palm stage left.' / 'Oh, your left.' / 'Listen, if you find out who's fucking with these plants, I want to know.'",
       "characters": [
-        "Larry"
+        "Artie"
       ],
       "joke_types": [
-        "meta_self_referential"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Dana asking if they patched things up",
-      "punchline": "Larry's comparison to famous comedy duo breakup",
-      "craft_total": 6.67,
-      "impact_score": 6.0,
+      "setup": "The plants on the set keep being moved; Artie is trying to restore order.",
+      "punchline": "The implication that there is a serial plant-mover, and Artie's dead-serious framing of this as a production crime to be investigated.",
+      "craft_total": 6.52,
+      "impact_score": 5.83,
       "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good reference to famous comedy partnership dissolution. Shows Larry's awareness of show business history.",
+      "is_callback": 1,
+      "explanation": "The plant mystery as a parallel to the desk-moving (territorial anxiety about Dana disrupting the set) is a nice structural echo. Artie's investigative framing \u2014 'who's fucking with these plants' \u2014 applies serious-crime language to a trivial production matter, which is pure Artie.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1651,23 +1701,23 @@
     },
     {
       "index": 63,
-      "text": "Just wanted to let you know, it's prime time. It would be hours before you'd ever be on television. - So don't feel threatened. - I wasn't threatened.",
+      "text": "Artie's feedback to Hank on his guest-host audition: 'Some of the things you do are not quite right.' Hank: 'But what? I am open to any constructive criticism. Please, help me to help you.'",
       "characters": [
-        "Dana",
-        "Larry"
+        "Artie",
+        "Hank Kingsley"
       ],
       "joke_types": [
         "cringe_discomfort",
-        "irony_sarcasm"
+        "character_comedy"
       ],
-      "setup": "Dana trying to reassure Larry about the NBC deal",
-      "punchline": "Making it worse by pointing out Larry's supposed fear",
-      "craft_total": 6.66,
-      "impact_score": 6.33,
-      "quotability": 5.0,
+      "setup": "Artie attempts to give Hank honest critical feedback.",
+      "punchline": "Hank's 'help me to help you' is an inadvertent Jerry Maguire echo that's also completely backwards \u2014 he's asking Artie to help Hank help himself, framing the entire thing around Hank's needs.",
+      "craft_total": 6.63,
+      "impact_score": 6.17,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good cringe moment - Dana's attempt at reassurance only makes Larry more defensive.",
+      "explanation": "Hank's need to center even critical feedback on himself is a good character beat. 'Help me to help you' is almost a self-parody without Hank intending it.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -1681,22 +1731,23 @@
     },
     {
       "index": 64,
-      "text": "Well, it could be late night.",
+      "text": "Artie giving Hank feedback: 'Hank, you speak very slowly. There's a slow cadence to your speech that's great in a supporting position, but you...' [trails off without finishing the criticism]",
       "characters": [
-        "Dana"
+        "Artie"
       ],
       "joke_types": [
-        "misdirection",
-        "escalation"
+        "cringe_discomfort",
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Dana claiming his NBC show is prime time",
-      "punchline": "Final revelation that it might directly compete with Larry",
-      "craft_total": 7.3,
-      "impact_score": 7.75,
-      "quotability": 6.5,
+      "setup": "Artie is finally giving Hank specific feedback on why he can't host the show.",
+      "punchline": "He gets through one specific critique \u2014 the slow cadence \u2014 and then trails off entirely before finishing the sentence, unable or unwilling to deliver the full verdict.",
+      "craft_total": 7.92,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect final twist that undermines everything Dana just said. Excellent structure and timing for the episode ending.",
+      "explanation": "The incomplete sentence is the most devastating possible feedback \u2014 Artie starts with 'the slow cadence is great in a supporting position, but you...' and simply stops. The ellipsis contains everything: all the reasons Hank can't host, none of which Artie has the heart (or the time, or the energy) to enumerate. It's also a callback to the show's broader critique of Hank: his supporting-role cadence is literally built into his voice. The comedy comes from the completeness of the unfinished thought. Strong character integration \u2014 only Artie, and only with Hank, would stop here.",
       "dialogue": [
         {
           "speaker": "Dana",
@@ -1706,28 +1757,340 @@
     },
     {
       "index": 65,
-      "text": "Well, it could be late night.",
+      "text": "Larry's wife: 'You guys are all buddy-buddy when you're coming up in the clubs together, but then as soon as there's a hint of competition, your friendship goes out the window.' Larry: 'You don't understand the complex dynamic of a show biz relationship.'",
       "characters": [
-        "Dana"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "irony_sarcasm",
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Dana claiming his NBC deal is prime time",
-      "punchline": "Last-second admission it might be late night after all",
-      "craft_total": 6.65,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "setup": "Larry's wife offers a clear-eyed analysis of his friendship with Dana.",
+      "punchline": "'The complex dynamic of a show biz relationship' \u2014 Larry's grandiose rationalization of something his wife has correctly diagnosed in one sentence.",
+      "craft_total": 7.06,
+      "impact_score": 6.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect ending escalation - Dana's final admission undermines everything he just said about not being competition.",
+      "explanation": "'The complex dynamic of a show biz relationship' is a perfect Larry deflection \u2014 using industry jargon to avoid admitting his wife is right. The juxtaposition of her simple truth and his complicated obfuscation is the joke. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Dana",
           "line": "Well, it could be late night."
         }
       ]
+    },
+    {
+      "index": 66,
+      "text": "Larry's wife: 'Does this stuff at the Franklin Mint really go up in value?' \u2014 asked while Larry stews about Dana.",
+      "characters": [
+        "Larry's Wife"
+      ],
+      "joke_types": [
+        "observational",
+        "deadpan_understatement"
+      ],
+      "setup": "Tense moment as Larry refuses to watch Dana's show and broods.",
+      "punchline": "She's apparently examining a Franklin Mint collectible \u2014 completely detached from the drama \u2014 and asks a genuinely puzzled question that has nothing to do with anything.",
+      "craft_total": 6.49,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A small but effective mood-deflator. She has completely disengaged from Larry's crisis and is focused on kitschy collectibles. It's a minor character beat but it works as tonal punctuation."
+    },
+    {
+      "index": 67,
+      "text": "Barbara gives Larry the rundown on the Barbara Hershey guest: 'Is she with lips or without lips?' / 'One of her lips is thin, and the other one's still fat. It's kinda funky. So don't even bring it up, okay?'",
+      "characters": [
+        "Larry Sanders",
+        "Barbara"
+      ],
+      "joke_types": [
+        "observational",
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Standard pre-interview briefing about a guest.",
+      "punchline": "The categorization of Barbara Hershey's famously augmented lips as a binary (with/without) that has now reached a hybrid state is a perfect piece of 1992 celebrity gossip comedy \u2014 and the instruction 'don't bring it up' after discussing it in such detail is its own irony.",
+      "craft_total": 7.09,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A sharp industry-insider joke. The specificity of 'one lip is thin, the other is still fat' shows someone has been monitoring the situation carefully. The 'with lips or without lips' framing is a clever binary for a very specific piece of celebrity news. Works as both gossip comedy and a demonstration of the show's casual cruelty toward guests."
+    },
+    {
+      "index": 68,
+      "text": "On Dana's show, Hank discussing his horse: '\"Hank's Kerchief\" was her name. Perhaps best known for jumping the rails at Santa Anita three races in a row. Lovely old nag. Never did jack for me. I loved her nonetheless.'",
+      "characters": [
+        "Hank Kingsley",
+        "Dana Carvey"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Dana asks Hank about once owning a racehorse.",
+      "punchline": "Hank's horse 'Hank's Kerchief' \u2014 named with his signature uncreative self-naming \u2014 was notable only for repeatedly jumping the rails. 'Never did jack for me. I loved her nonetheless.'",
+      "craft_total": 7.56,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Everything about this is perfect Hank Kingsley: the horse named 'Hank's Kerchief' (classic self-naming), the specific failure mode (jumping rails, not losing races), and the tender 'I loved her nonetheless' delivering genuine pathos through absurdity. 'Never did jack for me' is a perfect line."
+    },
+    {
+      "index": 69,
+      "text": "Larry suddenly announces: 'I'm hosting the show tonight.' Beverly: 'What?' 'That's right. I'm hosting the show tonight. I was bored on vacation anyway.'",
+      "characters": [
+        "Larry Sanders",
+        "Beverly"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Larry is watching Dana's show and has clearly been driven mad by it.",
+      "punchline": "'I was bored on vacation anyway' \u2014 the thinnest possible pretext for the fact that Larry cannot tolerate anyone else occupying his chair.",
+      "craft_total": 7.34,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A perfect Larry moment. His need to be the host is so visceral he'll cancel his own vacation. 'I was bored on vacation anyway' is a beautiful lie \u2014 the kind Larry tells himself as much as others. Strong character integration."
+    },
+    {
+      "index": 70,
+      "text": "Confronting Dana about the CBS offer: Artie saying 'Just answer the question, you little asshole' while Larry tries to frame it diplomatically.",
+      "characters": [
+        "Artie",
+        "Larry Sanders",
+        "Dana Carvey"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "They're trying to get Dana to admit whether he's taking the CBS deal, with Larry being political and indirect.",
+      "punchline": "Artie cuts through the delicacy with 'just answer the question, you little asshole' \u2014 the bluntest possible expression of everyone's actual feelings.",
+      "craft_total": 7.02,
+      "impact_score": 6.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Artie's frank 'just answer the question, you little asshole' is a signature moment \u2014 the veteran producer cutting through the Hollywood politeness to the actual transaction happening. 'Little asshole' is weirdly affectionate and perfectly calibrated. Artie says what Larry can't."
+    },
+    {
+      "index": 71,
+      "text": "Dana, under pressure to say if he's taking the CBS offer: 'All right, I can't say.' Artie (seething): 'He can't say.' Larry: 'He can't say.' The three of them loop the phrase, and then Dana says: 'I'm not taking the deal with CBS.' Beat. 'I'm taking the deal at NBC.'",
+      "characters": [
+        "Dana Carvey",
+        "Artie",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "misdirection",
+        "escalation",
+        "setup_punchline"
+      ],
+      "setup": "After enormous pressure, Dana finally breaks and confesses \u2014 he's not taking the CBS deal.",
+      "punchline": "He's taking the NBC deal. A reveal nobody \u2014 including Artie, who 'sees everything coming' \u2014 saw coming.",
+      "craft_total": 7.79,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's funniest structural joke. The setup involves Larry spending the entire episode worried about CBS. The reveal is NBC \u2014 a completely different network that invalidates all of his anxiety while doubling it. The two-beat structure ('I'm not taking the deal with CBS' / [beat] / 'I'm taking the deal at NBC') is textbook misdirection-plus-escalation. Larry's 'I didn't even know about the NBC thing' followed by Artie's sheepish 'I saw it coming' followed by Larry's 'I hate this business' is a perfect three-part button. And Artie's 'I saw it coming' for a deal he demonstrably did NOT see coming is a beautiful callback to his earlier line (#49). This earns its high score."
+    },
+    {
+      "index": 72,
+      "text": "'He can't say.' 'He can't say?' 'No, he can't say.' 'He can't say.' \u2014 Larry and Artie repeating Dana's evasion back to each other.",
+      "characters": [
+        "Larry Sanders",
+        "Artie",
+        "Dana Carvey"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "escalation"
+      ],
+      "setup": "Dana says 'I can't say' about whether he's taking the CBS deal.",
+      "punchline": "Larry and Artie turn 'he can't say' into an incantation \u2014 repeating it with escalating disbelief while Dana stands there.",
+      "craft_total": 7.54,
+      "impact_score": 7.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The verbal echo chamber is a good comic device \u2014 it highlights the absurdity of the situation while building pressure. The repetition structure works as escalation."
+    },
+    {
+      "index": 73,
+      "text": "Artie: 'I saw it coming.' [re: the NBC deal] Larry: 'I didn't even know about the NBC thing.' Artie: 'I saw it coming.' Larry: 'I hate this fucking business.'",
+      "characters": [
+        "Artie",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Artie just said 'I saw it coming' earlier in the episode when Larry challenged him on not warning him about CBS.",
+      "punchline": "Artie applies the same line ('I saw it coming') to an NBC deal he demonstrably did NOT see coming \u2014 either as brazen self-protection or total delusion.",
+      "craft_total": 8.17,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's single best moment \u2014 a callback that pays off a joke while deepening the character. Artie said earlier that he sees things coming so often he can't act on all of them. Now he deploys the same line for something he clearly had no idea about. The ambiguity is perfect: is he lying? Is he so accustomed to the claim that he reflexively makes it? Is there a crazy interpretation where he DID know? Larry's 'I hate this fucking business' as the button is the perfect punctuation. This is the episode's thesis statement: in show business, everyone is perpetually blind-sided while claiming they saw it all along. Highest score in the episode \u2014 this is 30 Rock and Curb DNA in 1992."
+    },
+    {
+      "index": 74,
+      "text": "Dana to Larry about the fishing trip: 'I was gonna tell you everything, so I'm sorry.' Larry: 'You still wanna go on the fishing trip? Do you have another deal to go? Do you have another offer to go?' Dana: 'Yeah, I got another fishing trip offer. Bob Saget called. Huge fishing offer. It's multifaceted.'",
+      "characters": [
+        "Dana Carvey",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Larry asks if Dana still wants to go on their planned fishing trip, given all the competition chaos.",
+      "punchline": "Dana says Bob Saget has offered him a competing fishing trip \u2014 'huge fishing offer, multifaceted' \u2014 applying Hollywood deal language to recreational fishing.",
+      "craft_total": 7.12,
+      "impact_score": 7.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Huge fishing offer. It's multifaceted.' is an exceptional joke. The application of Hollywood dealmaking language ('multifaceted offer,' 'I'm not at liberty to say') to a weekend fishing trip is both absurdist and a precise satire of how these men have colonized every relationship with industry logic. Bob Saget as the competing suitor is a perfect choice. This is among the episode's most quotable lines and justifies its high score."
+    },
+    {
+      "index": 75,
+      "text": "Larry: 'Yeah, I got another fishing trip offer. Bob Saget called. Huge fishing offer. It's multifaceted.' Dana: 'So you'll probably be taking bass.' Larry: 'I'm not at liberty to say.'",
+      "characters": [
+        "Larry Sanders",
+        "Dana Carvey"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "callback"
+      ],
+      "setup": "Dana is trying to reconcile; Larry retaliates with a mock version of Dana's own evasiveness.",
+      "punchline": "Larry mirrors Dana's 'I can't say' evasion \u2014 applied to a fishing trip with Bob Saget. 'I'm not at liberty to say' about catching bass is a perfect satirical echo.",
+      "craft_total": 8.22,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "An exceptional callback. Larry weaponizes Dana's own evasive language and applies it to a leisure activity \u2014 'I'm not at liberty to say' about catching bass is ridiculous and perfectly structured. Bob Saget as Larry's competing fishing offer is the cherry on top. The structural echo of the negotiation scene is cleanly executed. Justified 8+ score."
+    },
+    {
+      "index": 76,
+      "text": "Hank to Dana: 'Thanks, Hank. He calls it the ice.' Dana: 'He thinks he's a rapper.' Hank overhears: 'I know. I don't know what that is.'",
+      "characters": [
+        "Hank Kingsley",
+        "Dana Carvey",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback",
+        "irony_sarcasm"
+      ],
+      "setup": "Hank says 'see you on the ice' (his warm-up term for the studio floor). Dana and Larry quietly mock this. Hank either overhears or is responding to something else.",
+      "punchline": "Hank's 'I don't know what that is' \u2014 whether referring to 'the ice' or to Dana calling him a rapper \u2014 is perfect: he either doesn't know what he himself said, or he's somehow agreed with his own mockery.",
+      "craft_total": 7.26,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A charming button on the rapper running gag. 'He thinks he's a rapper' from Larry, punctuated by Hank's own 'I don't know what that is' \u2014 as if Hank is agreeing he doesn't understand what a rapper is, even though he claimed to be one earlier. The ambiguity and callback reward attentive viewers."
+    },
+    {
+      "index": 77,
+      "text": "Hank exits: 'I have to warm up the audience, so I'll see you out there on the ice.' Dana: 'All righty. Thanks, Hank. He calls it the ice.'",
+      "characters": [
+        "Hank Kingsley",
+        "Dana Carvey",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Hank exits with his signature affectation.",
+      "punchline": "Dana's bemused '...he calls it the ice' \u2014 directed at Larry \u2014 is a small moment of shared confusion. It's funny that Hank has a specific name for the studio floor that no one else uses.",
+      "craft_total": 7.1,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A small character beat. 'The ice' as Hank's term for the studio is a nice detail that establishes his private mythology around the show."
+    },
+    {
+      "index": 78,
+      "text": "After Hank leaves, Larry says: 'He thinks he's a rapper.' Dana: 'I know.' Larry: 'I don't know what that is.'",
+      "characters": [
+        "Larry Sanders",
+        "Dana Carvey"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Hank has exited and both men briefly watch him go.",
+      "punchline": "'He thinks he's a rapper' \u2014 a callback to the monologue from the first act \u2014 and Larry's follow-up 'I don't know what that is' is a perfect non sequitur, suggesting Larry can't process what 'rapper' even means in relation to Hank.",
+      "craft_total": 6.91,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A lovely callback to the Hank-the-Rapper bit from the monologue. 'I don't know what that is' delivered deadpan about Hank being a rapper is perfectly calibrated \u2014 it's so absurd that Larry can't even categorize it."
+    },
+    {
+      "index": 79,
+      "text": "Larry: 'I'll prove it to you. Why don't you co-host the show with me tonight?' Dana: 'There's not room for two guys at the desk.' Larry: 'Okay, guest sidekick. Be the guest sidekick.' Dana: 'What about Hank?' Larry: 'Thirty seconds.' [to Artie] 'Arty, tell Hank...' Artie: 'Okay. It's all taken care of.'",
+      "characters": [
+        "Larry Sanders",
+        "Dana Carvey",
+        "Artie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "dark_subversive"
+      ],
+      "setup": "Larry is trying to prove he's not threatened by co-hosting with Dana.",
+      "punchline": "He immediately volunteers Hank's spot to Dana without a second thought, and Artie shuts Hank out with 'it's all taken care of' \u2014 thirty seconds before air, with no discussion.",
+      "craft_total": 7.91,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The episode's final gut-punch for Hank: after an entire episode of desperately pursuing the hosting job, he loses his sidekick spot to Dana with thirty seconds notice, decided in about four words. 'It's all taken care of' from Artie \u2014 presumably delivered to Hank, who has no idea what just happened \u2014 is brutally casual. The speed of Larry's sacrifice of Hank and Artie's execution of it perfectly encapsulates the show's dark view of loyalty in show business. Strong character integration for all three characters."
+    },
+    {
+      "index": 80,
+      "text": "Final scene: Dana confesses the NBC deal 'could be late night' just as the show's opening music begins \u2014 cutting off any response from Larry.",
+      "characters": [
+        "Dana Carvey",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "irony_sarcasm",
+        "escalation"
+      ],
+      "setup": "Dana has already dropped the NBC bomb and seemed to be done. He says he wants to be 'totally honest.'",
+      "punchline": "The NBC deal could be late night \u2014 meaning Dana could be a direct competitor \u2014 delivered just as the show starts, preventing any response, response, or resolution.",
+      "craft_total": 8.61,
+      "impact_score": 8.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's structural masterstroke \u2014 and tied for the highest score with #67. The timing is pitch-perfect: the revelation is held until the literal last possible second, and the show's music cutting in prevents any response. It's a formally sophisticated joke that uses the show-within-a-show structure against itself: the actual Larry Sanders Show goes live just as the meta-Larry-Sanders-relationship reaches its most devastating point. 'Could be late night' is five words that detonate the entire episode. The episode ends with Larry trapped \u2014 he must perform joy on camera while absorbing this information. This is the show at its best: comedy, character study, and structural elegance simultaneously. Earns 9.0."
     }
   ],
   "air_date": "1992-09-05",

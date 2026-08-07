@@ -4,33 +4,34 @@
   "season": 1,
   "episode_number": 3,
   "title": "The Spiders Episode",
-  "humor_index": 67.0,
-  "jpm": 1.91,
-  "avg_craft": 6.61,
-  "avg_impact": 6.11,
-  "total_jokes": 50,
-  "war": 18.0,
-  "dominant_joke_types": "[\"absurdist\", \"cringe_discomfort\", \"escalation\"]",
-  "standout_joke_ids": "[17, 19, 49]",
+  "humor_index": 84.2,
+  "jpm": 3.36,
+  "avg_craft": 7.04,
+  "avg_impact": 6.97,
+  "total_jokes": 88,
+  "war": 88.4,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[67, 84, 60]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "No, no, no, I'm kidding. It says 'applause.'",
+      "text": "Warm-up guy tells audience the flashing sign says 'applesauce'",
       "characters": [
-        "Hank"
+        "Warm-up Guy"
       ],
       "joke_types": [
+        "setup_punchline",
         "misdirection"
       ],
-      "setup": "Warm-up host tells audience the flashing sign says 'applesauce'",
-      "punchline": "Immediate correction that it actually says 'applause' - the obvious thing",
-      "craft_total": 5.0,
-      "impact_score": 4.17,
+      "setup": "Warm-up guy points to the flashing sign as if reading it earnestly",
+      "punchline": "'No, no, no, I'm kidding. It says applause.' \u2014 A deliberately lame bait-and-switch to loosen up the live audience",
+      "craft_total": 4.63,
+      "impact_score": 3.83,
       "quotability": 2.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple misdirection gag that establishes Hank's slightly awkward warm-up energy. Gets the job done but nothing special.",
+      "explanation": "A thin gag, deliberately cheap \u2014 it's a warm-up joke meant to get the studio audience loose, not a real punchline. The self-aware badness of it is mildly charming in context but it's functionally hacky. The show is commenting on the machinery of talk shows.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -40,21 +41,22 @@
     },
     {
       "index": 2,
-      "text": "And now, because we've tried it with just the desk... and it really isn't the same... Larry Sanders!",
+      "text": "Warm-up guy hypes the audience: 'the better you are, the better Larry is' \u2014 implying Larry depends on them",
       "characters": [
-        "Hank"
+        "Warm-up Guy"
       ],
       "joke_types": [
-        "meta_self_referential"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Standard late-night show introduction",
-      "punchline": "Hank breaks format to acknowledge they've experimented with different show openings",
-      "craft_total": 6.06,
-      "impact_score": 5.17,
-      "quotability": 3.0,
+      "setup": "Standard pump-up speech about being part of the show",
+      "punchline": "The implicit joke: a big TV host's success is predicated on whether 200 strangers clap hard enough \u2014 subtly deflating Larry's mystique before he appears",
+      "craft_total": 6.02,
+      "impact_score": 5.67,
+      "quotability": 2.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Nice meta joke about the show's production process. Character-specific for Hank and shows the behind-the-scenes reality bleeding into the performance.",
+      "explanation": "Works best on rewatch when you know Larry's pathological need for validation. The show is quietly mocking the whole talk-show apparatus from its opening seconds.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -64,22 +66,22 @@
     },
     {
       "index": 3,
-      "text": "My dog ran by and burst into flames... and rolled to put himself out 'cause he read the pamphlets... they pass out to dogs.",
+      "text": "Announcer intro: '...and me, \"Hey, Now\" Hank Kingsley' \u2014 Hank inserts himself into the introduction",
       "characters": [
-        "Larry"
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "It was 110 degrees in the Valley",
-      "punchline": "Escalating absurdity: dog bursts into flames, then consciously follows fire safety protocol",
-      "craft_total": 6.24,
-      "impact_score": 6.17,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Standard late-night show announcer listing tonight's guests",
+      "punchline": "Hank lists himself alongside celebrity guests with his catchphrase, as if he's the real draw \u2014 peak Hank ego",
+      "craft_total": 6.88,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Solid absurdist escalation with the unexpected detail about pamphlets for dogs. Well-structured with good commitment to the bit.",
+      "explanation": "Perfectly economical Hank Kingsley character comedy. The catchphrase 'Hey Now' and his self-promotion by inserting himself between actual celebrity guests tells you everything about Hank's delusion in six words. Very Tambor.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -89,22 +91,22 @@
     },
     {
       "index": 4,
-      "text": "because who wants to be in a cast for six weeks? And then, you know, everybody wants to sign it. It's embarrassing.",
+      "text": "Announcer: 'And now, because we've tried it with just the desk and it really isn't the same... Larry Sanders!'",
       "characters": [
-        "Larry"
+        "Announcer"
       ],
       "joke_types": [
-        "absurdist",
-        "misdirection"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Talking about vasectomies",
-      "punchline": "Treating vasectomy like a broken limb with a cast that people sign",
-      "craft_total": 6.72,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Standard talk-show 'here's your host!' introduction format",
+      "punchline": "The absurd qualifier \u2014 'because we've tried it with just the desk and it really isn't the same' \u2014 treats Larry's presence as a minor logistical improvement rather than the main event",
+      "craft_total": 7.1,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent absurdist logic mixing two unrelated medical concepts. The 'signing the cast' detail sells the whole premise beautifully.",
+      "explanation": "Sharp, economical, and original. The show is immediately deflating the grandiosity of late-night celebrity culture \u2014 Larry is presented not as a god but as a marginal improvement over an empty desk. The dry deadpan delivery is very Larry Sanders. This is exactly the kind of showbiz-insider satire the series perfected.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -114,21 +116,22 @@
     },
     {
       "index": 5,
-      "text": "The next option is a bad haircut.",
+      "text": "Larry's monologue: 'My dog ran by and burst into flames... and rolled to put himself out 'cause he read the pamphlets they pass out to dogs.'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
+        "absurdist",
         "deadpan_understatement"
       ],
-      "setup": "Vasectomy lowers risk of transmitting sexual diseases",
-      "punchline": "Suggesting bad haircuts as alternative birth control/STD prevention",
-      "craft_total": 6.58,
-      "impact_score": 6.17,
-      "quotability": 5.0,
+      "setup": "Larry complaining about LA heat \u2014 'It was about 110'",
+      "punchline": "Dog bursting into flames is absurd enough; the escalation that the dog read fire-safety pamphlets specifically distributed to dogs pushes it into surreal territory",
+      "craft_total": 6.48,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect economy - maximum funny per word. The deadpan delivery and absurd logic work well together.",
+      "explanation": "Good stand-up construction. The absurdist escalation \u2014 pamphlets distributed to dogs \u2014 is the unexpected topper that elevates a generic 'it was so hot' premise. The specificity of 'rolled to put himself out' shows craft. Solid professional stand-up material.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -138,22 +141,22 @@
     },
     {
       "index": 6,
-      "text": "but was still so embarrassed he also bought... an $8,000 toothpaste tube... and $5,000 pack of razor blades.",
+      "text": "Vasectomy joke: 'I have never gotten [one] because who wants to be in a cast for six weeks? And then everybody wants to sign it.'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "escalation",
+        "setup_punchline",
         "absurdist"
       ],
-      "setup": "Man bought 150-year-old condom at auction for $6,300",
-      "punchline": "Escalating embarrassment leading to purchasing overpriced toiletries as cover",
-      "craft_total": 6.34,
-      "impact_score": 6.17,
-      "quotability": 4.0,
+      "setup": "Announcement that vasectomies lower risk of transmitting sexual diseases",
+      "punchline": "Larry's fear is being 'in a cast for six weeks' \u2014 a completely wrong medical premise played straight \u2014 topped by everyone wanting to sign it, as if it's a broken arm",
+      "craft_total": 7.28,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation with specific dollar amounts making the absurdity more concrete. Relatable embarrassment taken to logical extreme.",
+      "explanation": "Strong stand-up construction. The premise is deliberately medically absurd (vasectomies don't require casts), but the topper \u2014 everyone wanting to sign it \u2014 is the real punchline and it lands hard. The image of a genital cast being a social accessory is genuinely funny and specific. One of the better monologue jokes.",
       "dialogue": [
         {
           "speaker": "",
@@ -163,21 +166,22 @@
     },
     {
       "index": 7,
-      "text": "This is actually the same outfit you wear to drive in L.A.",
+      "text": "Larry: 'The next option [to prevent STDs] is a bad haircut.'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "observational"
+        "deadpan_understatement",
+        "setup_punchline"
       ],
-      "setup": "Larry is wearing full hockey gear",
-      "punchline": "Comparing hockey protection to what you need driving in LA",
-      "craft_total": 6.08,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Vasectomies can lower risk of transmitting sexual diseases",
+      "punchline": "A bad haircut as a contraceptive method \u2014 because it makes you undesirable",
+      "craft_total": 6.41,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Solid observational humor about LA driving. Nothing groundbreaking but well-executed and character-appropriate.",
+      "explanation": "Very economical \u2014 four words for a solid laugh. The logic is sound (abstinence through unattractiveness), the delivery is dry, and it's a good button on the vasectomy bit. Not a showstopper but efficient.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -187,21 +191,22 @@
     },
     {
       "index": 8,
-      "text": "He calls it 'the tarantula arm races.'",
+      "text": "150-year-old condom sold at Christie's \u2014 buyer also purchased an $8,000 toothpaste tube and $5,000 pack of razor blades so the condom purchase wouldn't stand out",
       "characters": [
-        "Artie"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "setup_punchline",
+        "escalation"
       ],
-      "setup": "Describing the bug man's spider stunt",
-      "punchline": "Play on 'arms race' with literal arms and spiders racing up them",
-      "craft_total": 6.38,
-      "impact_score": 6.0,
+      "setup": "A 150-year-old condom was auctioned at Christie's for $6,300",
+      "punchline": "The buyer was so embarrassed he padded the purchase with absurdly expensive mundane items to disguise it \u2014 escalating price tags make the shame funnier",
+      "craft_total": 6.94,
+      "impact_score": 7.33,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever wordplay that works on multiple levels. The pun feels natural rather than forced.",
+      "explanation": "The real-world premise (antique condom auction) is inherently funny, but the comedic construction \u2014 the buyer's escalating shame purchases \u2014 is where the writing earns its keep. The three-item escalation (toothpaste, razors) with ascending specific price tags is solid joke architecture. Good monologue beat.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -211,22 +216,22 @@
     },
     {
       "index": 9,
-      "text": "Two minutes ago, you were willing to take a puck to the nuts. Now you're crying over a couple of bugs.",
+      "text": "Larry, putting on hockey gear, says: 'This is actually the same outfit you wear to drive in L.A.'",
       "characters": [
-        "Artie"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "callback"
+        "observational",
+        "character_comedy"
       ],
-      "setup": "Larry is hesitant about the spider stunt",
-      "punchline": "Pointing out the contradiction between hockey courage and spider fear",
-      "craft_total": 6.99,
-      "impact_score": 6.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Great character moment for Artie - direct, cutting logic. The callback to the hockey segment adds layers and shows character consistency.",
+      "setup": "Larry is awkwardly putting on hockey protective gear with Steve Duchesne's help",
+      "punchline": "Full hockey armor is the appropriate attire for navigating LA traffic \u2014 an LA-driver aggression joke disguised as casual observation",
+      "craft_total": 6.33,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A competent on-air bit \u2014 economical LA traffic observation that works in context. Not groundbreaking but efficiently delivered during a physical comedy segment. The casual, throwaway delivery is characteristic of Larry's on-air persona.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -236,22 +241,22 @@
     },
     {
       "index": 10,
-      "text": "Gigantic fuzzy insects crawling on your body, lions crapping in your lap. It's great television.",
+      "text": "Post-hockey segment, Artie deadpans: 'The audience loved it. Just great. Props.'",
       "characters": [
         "Artie"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Arguing that the spider stunt is a showbiz tradition",
-      "punchline": "Escalating from spiders to lions defecating, all in service of 'great television'",
-      "craft_total": 7.03,
-      "impact_score": 7.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry has just done a clumsy hockey segment with Steve Duchesne",
+      "punchline": "Artie's single-word summation \u2014 'Props' \u2014 delivered flatly, reduces the whole elaborate stunt to a resigned acknowledgment that it was just prop comedy",
+      "craft_total": 6.89,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Artie - cynical showbiz wisdom delivered with complete conviction. The escalation from bugs to lion excrement is wonderfully absurd.",
+      "explanation": "Pure Artie \u2014 Rip Torn's character distills complex showbiz politics into a single word. 'Props' is simultaneously praise, dismissal, and industry-insider shorthand. The economy is exceptional. This is exactly the dry, behind-the-scenes voice that makes the show work.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -261,22 +266,23 @@
     },
     {
       "index": 11,
-      "text": "build like this big Santa Fe style Spanish adobe house there. Then you'll be jealous because you can't live there, right?",
+      "text": "Artie describes 'the tarantula arm races': dead fly on head, sit still, spiders race up each arm to reach it",
       "characters": [
-        "Hank"
+        "Artie",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Hank spiraling about what spiders might do to Larry",
-      "punchline": "Spiders building architectural structures in Larry's head, leading to real estate envy",
-      "craft_total": 7.16,
-      "impact_score": 6.83,
-      "quotability": 7.0,
+      "setup": "Artie is pitching a planned TV stunt involving a bug expert",
+      "punchline": "The stunt described in full is so specifically ridiculous \u2014 a competitive race between spiders using a dead fly as a finish line on a person's head \u2014 that the description alone is the joke",
+      "craft_total": 7.21,
+      "impact_score": 7.17,
+      "quotability": 6.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Quintessential Hank - neurotic escalation to absurd extremes. The specificity of 'Santa Fe style Spanish adobe' makes it funnier and very character-specific.",
+      "explanation": "The invented name 'tarantula arm races' is the kind of specific absurdist detail that elevates a premise. Artie's deadpan explanation \u2014 'dead fly, comme ca, spiders, race, arms, head' \u2014 distilled into a telegram-style synopsis is genuinely funny. The repetition of the pitch at Larry's demand compounds the comedy.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -286,21 +292,23 @@
     },
     {
       "index": 12,
-      "text": "The night is young. Ow!",
+      "text": "Artie repeats the spider stunt summary three times at Larry's request, each time shorter: 'Dead fly, comme ca, spiders, race, arms, head.'",
       "characters": [
-        "Jancey"
+        "Artie",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "reaction_beat"
+        "running_gag",
+        "character_comedy"
       ],
-      "setup": "Hank asks if she's had anything big and hairy crawling on her",
-      "punchline": "Suggestive response followed by apparent physical pain",
-      "craft_total": 5.79,
-      "impact_score": 5.17,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry keeps asking Artie to explain the stunt again because he can't process it",
+      "punchline": "Each repetition gets more compressed and absurd, culminating in the staccato 'Spiders, race, arms, head' \u2014 both Larry's denial and Artie's exasperated efficiency are funny",
+      "craft_total": 7.71,
+      "impact_score": 7.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Decent innuendo followed by physical comedy beat. The 'Ow!' suggests immediate consequences for the sexual reference.",
+      "explanation": "The escalating compression is great structural comedy \u2014 Artie reducing the stunt to increasingly telegraphic summaries while Larry keeps stalling. The repetition is the joke AND the character work simultaneously: Larry's anxiety expressed as confusion, Artie's competence expressed as irritated efficiency. Classic Larry Sanders dynamic.",
       "dialogue": [
         {
           "speaker": "Jancey",
@@ -310,21 +318,22 @@
     },
     {
       "index": 13,
-      "text": "They're just the deadliest spider known to man.",
+      "text": "Artie: 'This is a show biz tradition. Gigantic fuzzy insects crawling on your body, lions crapping in your lap. It's great television.'",
       "characters": [
-        "Hank"
+        "Artie"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "deadpan_understatement",
+        "absurdist"
       ],
-      "setup": "Telling Larry not to worry about the tarantulas",
-      "punchline": "Immediately contradicting the reassurance with alarming information",
-      "craft_total": 6.87,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "Larry is reluctant to do the spider stunt; Artie is persuading him",
+      "punchline": "'Lions crapping in your lap' \u2014 stated with the same gravity as 'gigantic fuzzy insects' as if both are equally dignified showbiz traditions",
+      "craft_total": 7.78,
+      "impact_score": 7.83,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Hank - trying to be helpful but making things worse. The deadpan delivery of alarming information is perfectly timed.",
+      "explanation": "Artie's voice at its best \u2014 delivering unhinged content with executive authority. 'Lions crapping in your lap' as a celebrated showbiz tradition, stated without irony, is exactly the kind of line Rip Torn would make legendary. The deadpan elevation of degrading stunts to 'tradition' is smart industry satire.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -334,21 +343,23 @@
     },
     {
       "index": 14,
-      "text": "Watch your step. I mean careerwise.",
+      "text": "Artie chases Larry out while repeating 'Huge laughs. Huge laughs. Huge, rolling-in-the-aisle laughs.'",
       "characters": [
-        "Hank"
+        "Artie",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "misdirection"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Seems like standard polite farewell",
-      "punchline": "Clarification reveals it's actually a professional threat",
-      "craft_total": 6.88,
-      "impact_score": 5.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry tries to exit; Artie is hard-selling him on the stunt",
+      "punchline": "Artie's escalating superlatives \u2014 each one bigger than the last \u2014 expose him as a carnival barker masquerading as a TV producer; 'rolling-in-the-aisle' is the absurd peak",
+      "craft_total": 7.02,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent misdirection with perfect Hank passive-aggression. The clarification completely recontextualizes the seemingly innocent warning.",
+      "explanation": "The escalating superlatives are a great character beat for Artie \u2014 he's a master salesman who never stops pitching even as the door closes. 'Huge, rolling-in-the-aisle laughs' lands as both funny and a perfect Artie signature line. This phrase becomes a callback later.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -358,22 +369,22 @@
     },
     {
       "index": 15,
-      "text": "having a comedy club in my own home. Are you saying that 'cause you watered down the drinks?",
+      "text": "Artie calls after Larry: 'Get outta here, you big, successful talk show host.'",
       "characters": [
-        "Jancey",
-        "Larry"
+        "Artie"
       ],
       "joke_types": [
-        "setup_punchline"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Wife complains about having a comedy club at home",
-      "punchline": "Larry deflects with accusation about drink strength",
-      "craft_total": 6.4,
-      "impact_score": 5.67,
-      "quotability": 4.0,
+      "setup": "Larry exits after agreeing to do the spider stunt",
+      "punchline": "The send-off is simultaneously affectionate and slightly mocking \u2014 'big, successful talk show host' said with Artie's gruff warmth, like calling someone 'big man' sarcastically",
+      "craft_total": 6.43,
+      "impact_score": 5.83,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character interaction showing Larry's defensive deflection tactics. Shows marital dynamic effectively.",
+      "explanation": "A nice little character grace note \u2014 Artie's affection for Larry expressed through backhanded praise. Not a showstopper, but an authentic beat.",
       "dialogue": [
         {
           "speaker": "Jancey",
@@ -387,21 +398,22 @@
     },
     {
       "index": 16,
-      "text": "Geez, I hope one of those spiders bites you tomorrow night.",
+      "text": "Unnamed woman's extended mock-paranoid monologue: spiders will crawl on him, lay eggs, build a 'Santa Fe style Spanish adobe house' in his head, he'll be jealous he can't live there, then they'll eat his brain",
       "characters": [
-        "Jancey"
+        "Woman (Larry's Wife/Partner)"
       ],
       "joke_types": [
-        "dark_subversive"
+        "absurdist",
+        "escalation"
       ],
-      "setup": "Frustrated with Larry's comedy obsession",
-      "punchline": "Wife expressing genuinely dark wish for minor harm",
-      "craft_total": 6.99,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "The woman is chiding Larry for worrying about the spiders",
+      "punchline": "The monologue spirals from plausible fear to full absurdist architecture \u2014 spiders building a Santa Fe adobe house inside Larry's head and him being jealous he can't move in \u2014 delivered as if these are rational next steps",
+      "craft_total": 7.83,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark marital humor that feels real. The specific wish shows how fed up she is while staying in comedic territory.",
+      "explanation": "This is the comedic highlight of the first half. The monologue follows an internal logic that escalates perfectly \u2014 each step is more absurd but follows from the last with dream-logic inevitability. 'Santa Fe style Spanish adobe house' is a genuine inspired detail; the twist that Larry would be jealous he can't move into his OWN head is structurally sophisticated. 'By the time you figure it out, those spiders'll have eaten your brain out and there'll be nothing left and what's the point?' is a devastating button. This compares favorably to top-shelf absurdist sitcom writing.",
       "dialogue": [
         {
           "speaker": "Jancey",
@@ -411,22 +423,23 @@
     },
     {
       "index": 17,
-      "text": "So, can we start a family if I have the baby at the Greek Theater? Huh?",
+      "text": "Woman: 'You don't relate to the spider thing because you've never had anything big and hairy crawling all over you, have you?' \u2014 beat \u2014 Man off-camera: 'The night is young. Ow!'",
       "characters": [
-        "Jancey"
+        "Woman (Larry's Wife/Partner)",
+        "Man (Friend at dinner)"
       ],
       "joke_types": [
-        "absurdist",
-        "irony_sarcasm"
+        "setup_punchline",
+        "misdirection"
       ],
-      "setup": "Larry will only confront fears in front of 20 million people for laughs",
-      "punchline": "Proposing public childbirth as equivalent test of his commitment",
-      "craft_total": 7.84,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Woman makes a remark about Larry's spider aversion being linked to inexperience with 'big and hairy' things",
+      "punchline": "The off-camera male voice interprets it sexually and brags; the 'Ow!' suggests she immediately hit him for it",
+      "craft_total": 5.89,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant escalation that perfectly captures the absurdity of Larry's psychology. The Greek Theater specificity makes it funnier and shows deep frustration with his priorities.",
+      "explanation": "A solid double-entendre that works because the setup is genuinely ambiguous and the payoff ('Ow!') is quick and physical. The off-camera voice and immediate punishment is an economical staging choice. Not high-concept, but clean execution.",
       "dialogue": [
         {
           "speaker": "Jancey",
@@ -436,22 +449,22 @@
     },
     {
       "index": 18,
-      "text": "But in the shape of a spider, honey.",
+      "text": "Man: 'Listen, all kidding aside, don't worry about those tarantulas, all right? They're just the deadliest spider known to man.'",
       "characters": [
-        "Larry"
+        "Man (Friend at dinner)"
       ],
       "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Jancey says 'It's a sock' dismissively",
-      "punchline": "Larry's pathetic clarification that the sock's spider shape matters",
-      "craft_total": 6.48,
-      "impact_score": 6.17,
-      "quotability": 4.0,
+      "setup": "Man is ostensibly reassuring Larry about the tarantula stunt",
+      "punchline": "'They're just the deadliest spider known to man' \u2014 delivered as comfort",
+      "craft_total": 6.36,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good cringe moment showing Larry's neurosis about even sock-shaped spiders. The earnest clarification makes his fear seem both pathetic and endearing.",
+      "explanation": "Classic deadpan reassurance-as-threat construction. The 'all kidding aside' setup makes the punchline land harder because it promises sincerity before delivering the opposite. Economical and effective.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -461,21 +474,23 @@
     },
     {
       "index": 19,
-      "text": "Intimacy.",
+      "text": "Man: 'Oh, you're such a jerk.' Larry: 'Yeah, I'm jerking my way to the bank.'",
       "characters": [
-        "Beverly"
+        "Man (Friend at dinner)",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "wordplay_pun",
+        "character_comedy"
       ],
-      "setup": "Larry asks if she's afraid of anything",
-      "punchline": "Single word answer revealing deep psychological issue",
-      "craft_total": 7.71,
-      "impact_score": 7.17,
-      "quotability": 6.0,
+      "setup": "Larry's friend calls him a jerk for making a bad reassurance joke",
+      "punchline": "Larry riffs on 'jerking' as both behavior and financial success \u2014 a quick self-aware pivot",
+      "craft_total": 6.3,
+      "impact_score": 6.0,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect economy - one word that reveals everything about the character and creates awkward moment. Maximum impact with minimum words.",
+      "explanation": "A quick, serviceable wordplay riff. Not particularly original but delivered with confidence. The self-deprecating-success combo is a Larry Sanders personality marker.",
       "dialogue": [
         {
           "speaker": "Beverly",
@@ -485,22 +500,22 @@
     },
     {
       "index": 20,
-      "text": "Were they Ludes? Soapers? Were they reds?",
+      "text": "Larry: 'Watch your step.' Beat. '...I mean careerwise.'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "misdirection",
+        "deadpan_understatement"
       ],
-      "setup": "Larry desperately wants to know what tranquilizers Beverly uses",
-      "punchline": "Escalating through various drug slang terms with increasing desperation",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry calls out 'Watch your step' as the group leaves the restaurant \u2014 literally about a physical step",
+      "punchline": "Retroactively reframing it as a career threat/warning, which is simultaneously funnier and reveals Larry's competitive showbiz anxieties",
+      "craft_total": 7.27,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Larry's desperate need for chemical courage. The slang terms show his desperation escalating.",
+      "explanation": "A deceptively good little joke. The pivot from literal to metaphorical via the beat is perfectly timed, and the 'careerwise' addition recontextualizes the whole line as an instinctive showbiz threat from someone who can't stop thinking in competitive terms. Very Larry Sanders \u2014 his anxieties leak out even in small talk.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -510,22 +525,22 @@
     },
     {
       "index": 21,
-      "text": "Ooh, pubic hair on my coconut. That's it. Sexual harassment. Where is my lawyer?",
+      "text": "Larry's partner says: 'Honey, I didn't get a word in edgewise all night. All I said was, \"No more coffee.\"'",
       "characters": [
-        "Carol"
+        "Linda (Larry's Wife)"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Carol and Larry doing Tarzan sketch, Larry mentions pubic hair on coconut",
-      "punchline": "Carol immediately escalates to sexual harassment lawsuit",
-      "craft_total": 6.02,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Larry and his male friend were dominating conversation at dinner",
+      "punchline": "Her entire contribution to the evening was a beverage refusal \u2014 the comedy-club-in-my-own-home complaint is the setup but this specific detail is the punchline",
+      "craft_total": 6.76,
+      "impact_score": 6.5,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great escalation from innocent prop comedy to major lawsuit. Carol's immediate pivot to legal action is perfectly timed.",
+      "explanation": "A recognizable domestic complaint elevated by the specificity of 'No more coffee' being her only utterance. The show-business men absorbing all social oxygen at dinner is a real observation, delivered with appropriate mild frustration.",
       "dialogue": [
         {
           "speaker": "Carol",
@@ -535,21 +550,22 @@
     },
     {
       "index": 22,
-      "text": "They look like big, hairy potatoes with legs in 'em.",
+      "text": "Larry: 'Are you saying that 'cause you watered down the drinks?' \u2014 to his wife's complaint about having a 'comedy club in my own home'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "visual_gag"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Larry describing the spiders he saw backstage",
-      "punchline": "Specific, vivid description that makes spiders sound both gross and absurd",
+      "setup": "Linda complains about dinner feeling like a comedy club",
+      "punchline": "Larry deflects her legitimate complaint by pivoting to accusing her of drink sabotage \u2014 revealing his defensiveness and also that he thinks about comedy club economics",
       "craft_total": 6.66,
-      "impact_score": 6.17,
-      "quotability": 7.0,
+      "impact_score": 6.33,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Vivid, specific imagery that perfectly captures both the horror and absurdity. The unexpected comparison to potatoes is memorable and visual.",
+      "explanation": "A quick, sharp deflection that's both a joke and character revelation \u2014 Larry can't engage with his wife's complaint without making another joke. Classic avoidance humor.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -559,21 +575,22 @@
     },
     {
       "index": 23,
-      "text": "They're roller coasters. Call it what you like.",
+      "text": "Linda: 'Geez, I hope one of those spiders bites you tomorrow night.'",
       "characters": [
-        "Artie"
+        "Linda (Larry's Wife)"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Artie calls them 'rolly-coasters'",
-      "punchline": "Dismissive correction followed by immediate surrender",
-      "craft_total": 6.42,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Larry is discussing doing the spider stunt; Linda is irritated",
+      "punchline": "A spouse sincerely wishing spider-bite harm on her husband as a relationship expression \u2014 delivered as casual frustration rather than malice",
+      "craft_total": 6.4,
+      "impact_score": 6.25,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment for Artie - tries to correct himself then immediately gives up. Shows his gruff pragmatism.",
+      "explanation": "A nice dark comedy domestic beat \u2014 the naturalistic venom of the wish (combined with 'Geez') makes it funnier than an outright angry statement. The casualness of the dark sentiment is the joke.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -583,21 +600,22 @@
     },
     {
       "index": 24,
-      "text": "I think he's trying out a new Lebanese thing.",
+      "text": "Larry: 'Now you're hurting me. Why are you hurting me? You know that I'm afraid of spiders.'",
       "characters": [
-        "Writer"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "absurdist"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Discussing Larry's bad Tarzan voice",
-      "punchline": "Completely random ethnic interpretation of the voice",
-      "craft_total": 6.05,
-      "impact_score": 5.5,
+      "setup": "Linda wishes a spider would bite him",
+      "punchline": "Larry's reaction to an idle remark as genuine emotional injury \u2014 treating his spider phobia as a protected vulnerability that Linda is weaponizing",
+      "craft_total": 6.46,
+      "impact_score": 6.25,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Random absurdist explanation for bad performance. The specificity of 'Lebanese' makes it funnier than generic ethnic reference.",
+      "explanation": "Pure Larry Sanders character comedy \u2014 his fragile sensitivity rendered in a domestic setting. The escalation from spider fear to emotional injury is funny because he's treating a mild comment like a personal betrayal. Tambor/Shandling dynamic prototype.",
       "dialogue": [
         {
           "speaker": "Writer",
@@ -607,22 +625,23 @@
     },
     {
       "index": 25,
-      "text": "You know, talking to you is like talking to you.",
+      "text": "Linda: 'You guys will do anything for a laugh.' Larry: 'That is not true.' Linda: 'Yes, it is. Then why are you doing it?' Larry: 'Because it'll be funny.'",
       "characters": [
-        "Artie"
+        "Linda (Larry's Wife)",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "absurdist"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Frustrated with confusing conversation",
-      "punchline": "Tautological statement that says nothing while saying everything",
-      "craft_total": 6.89,
-      "impact_score": 6.17,
-      "quotability": 8.0,
+      "setup": "Linda accuses Larry of doing dangerous stunts purely for laughs",
+      "punchline": "Larry denies it, then immediately confirms it \u2014 'Because it'll be funny' \u2014 completing the circular logic in three lines",
+      "craft_total": 7.9,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant tautology that perfectly captures the frustration of circular conversation. Pure Artie - cutting through BS with absurd directness.",
+      "explanation": "Beautifully structured three-line exchange. The denial followed immediately by the confession ('Because it'll be funny') is a perfect comedic circle \u2014 Larry disproves his own assertion in one breath. This is both a great joke and a sharp encapsulation of show-business pathology: performers will endure real discomfort to generate a staged reaction. Highly efficient, character-specific, and structurally clean.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -632,21 +651,22 @@
     },
     {
       "index": 26,
-      "text": "Yes, it is. The fastest light in the West. Fire 'em up, partner.",
+      "text": "Linda: 'You're willing to confront your fears if it's in front of 20 million people and for a laugh? So, can we start a family if I have the baby at the Greek Theater?'",
       "characters": [
-        "Hank"
+        "Linda (Larry's Wife)"
       ],
       "joke_types": [
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Artie guesses Hank is doing Quick Light Briquets commercial",
-      "punchline": "Hank delivers full commercial pitch with Western catchphrase",
-      "craft_total": 6.19,
-      "impact_score": 5.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry says he should confront his spider fear 'for himself' \u2014 but it's clearly for the show",
+      "punchline": "Linda extrapolates: if fear-confrontation only counts in public for laughs, then childbirth should be a live performance event at the Greek Theater",
+      "craft_total": 7.68,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Hank's commercial desperation and enthusiasm for even minor endorsement work.",
+      "explanation": "A genuinely sharp piece of writing. The Greek Theater punchline extends Larry's performative logic to its absurd conclusion \u2014 if everything personal must become a public spectacle, then childbirth should be ticketed. It's funny AND a precise critique of Larry's character: his inability to experience anything privately. One of the better lines in the episode.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -656,21 +676,23 @@
     },
     {
       "index": 27,
-      "text": "Stunts are Larry's territory. Hank Kingsley shalt not trespass.",
+      "text": "Larry shows Linda a sock \u2014 she says it's just a sock \u2014 Larry: 'But in the shape of a spider, honey.'",
       "characters": [
-        "Hank"
+        "Larry Sanders",
+        "Linda (Larry's Wife)"
       ],
       "joke_types": [
+        "visual_gag",
         "character_comedy"
       ],
-      "setup": "Artie offers Hank the spider stunt",
-      "punchline": "Hank speaks of himself in third person with mock-biblical language",
-      "craft_total": 7.03,
-      "impact_score": 6.33,
-      "quotability": 7.0,
+      "setup": "Larry is apparently trying to scare or tease Linda with something",
+      "punchline": "It's a sock. Shaped vaguely like a spider. Larry treats it as a legitimate spider-shaped object worthy of annotation.",
+      "craft_total": 6.45,
+      "impact_score": 6.17,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Hank - formal, pompous language hiding insecurity about show hierarchy. The biblical phrasing is characteristically pretentious.",
+      "explanation": "A light visual gag \u2014 the comedy is in the visual of a man defending his sock as meaningfully spider-shaped. The 'honey' tag is a nice Larry touch. Slight but functional.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -680,21 +702,23 @@
     },
     {
       "index": 28,
-      "text": "Not that I've made a stink about it, because I am not... a squeaky wheel, you know that.",
+      "text": "Larry asks his assistant if she's afraid of anything. She says: 'Intimacy.' Long beat. 'Anything more you wanna tell me?'",
       "characters": [
-        "Hank"
+        "Larry Sanders",
+        "Beverly (Assistant)"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "deadpan_understatement",
+        "awkward_silence"
       ],
-      "setup": "Hank claims he's not unhappy about lack of opportunities",
-      "punchline": "Immediately contradicts himself by referencing complaints while denying he complains",
-      "craft_total": 7.01,
-      "impact_score": 6.17,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry, preoccupied with his spider fear, asks his assistant what she's afraid of \u2014 expecting a relatable answer",
+      "punchline": "'Intimacy' \u2014 one word, delivered flatly, which both lands as a joke and immediately shuts down any follow-up; Larry's non-reaction is the beat",
+      "craft_total": 7.67,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Hank self-contradiction - denying he complains while actively complaining. The 'squeaky wheel' metaphor is perfectly chosen.",
+      "explanation": "One of the episode's funniest single-word jokes. 'Intimacy' as a deadpan answer to 'what are you afraid of?' is funny on its own, but the follow-up beat \u2014 Larry not knowing what to do with it, asking 'Anything more you wanna tell me?' \u2014 is perfect. Maximum funny per word. The joke works because it's both an unexpected answer AND a complete character portrait in one syllable. Near-perfect economy.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -704,21 +728,23 @@
     },
     {
       "index": 29,
-      "text": "The hat?",
+      "text": "Larry's escalating drug inquiry: 'Now how do you overcome it? / Tranquilizers. / What were they? Xanaxes? Valiums? Halcyons? / ...Were they Ludes? Soapers? / Were they reds?'",
       "characters": [
-        "Hank"
+        "Larry Sanders",
+        "Beverly (Assistant)"
       ],
       "joke_types": [
-        "reaction_beat"
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Artie leaves after successful negotiation",
-      "punchline": "Hank notices Artie forgot his hat, creating awkward moment",
-      "craft_total": 6.22,
-      "impact_score": 5.33,
-      "quotability": 2.0,
-      "rewatch_bonus": 0,
+      "setup": "Beverly reveals she overcomes flying fear with tranquilizers; Larry wants details",
+      "punchline": "Larry's inquiry escalates from reasonable (Xanax, Valium) to vintage recreational drugs (Quaaludes/Ludes, Soapers) to full street-drug nostalgia (reds), each refusal from Beverly met with a more obscure and increasingly illegal pharmaceutical",
+      "craft_total": 7.67,
+      "impact_score": 7.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple awkward beat. Hank's literal-mindedness about the forgotten hat deflates the dramatic exit moment.",
+      "explanation": "A structurally excellent escalating bit. The progression from clinical pharmaceuticals to increasingly retro/illegal drugs is perfectly calibrated \u2014 'Ludes? Soapers?' is the escalation peak (both deeply 1970s Hollywood), and Beverly's increasing urgency ('Now you got one minute... now you got one') layered over Larry's drug archaeology is a beautifully constructed comedic counterpoint. Deeply Larry: his anxiety instantly transforms into pharmaceutical procurement. One of the episode's most sharply written exchanges.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -728,21 +754,23 @@
     },
     {
       "index": 30,
-      "text": "Between you and me, I think I saw your balls at one point.",
+      "text": "Carol Burnett Tarzan sketch \u2014 Larry flubs his line: 'Shit. Me Tarzan, you Jane.' Carol: 'That's Ms. Jane to you.'",
       "characters": [
-        "Artie"
+        "Larry Sanders",
+        "Carol Burnett"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Larry saying he looked like an idiot in the loincloth",
-      "punchline": "Artie's blunt, inappropriate observation about accidental exposure",
-      "craft_total": 7.06,
-      "impact_score": 7.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry is rehearsing a Tarzan/Jane sketch with Carol Burnett and forgets his line",
+      "punchline": "Carol instantly improvises a feminist corrective ('Ms. Jane') \u2014 both funny as a punchline and a character grace note showing her quick wit",
+      "craft_total": 6.63,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Artie - inappropriately direct about embarrassing situation. Creates maximum discomfort with casual delivery.",
+      "explanation": "A lovely quick joke. Carol Burnett playing herself and instantly riffing a feminist corrective to a classic sexist trope is both funny and perfectly in-character for her persona. The swear establishing it's a flub, then the snap comeback \u2014 clean construction. Elevated by who's delivering it.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -752,21 +780,23 @@
     },
     {
       "index": 31,
-      "text": "Did you really see my balls?",
+      "text": "Larry during Tarzan sketch: 'Mmm, would you like some coco\u2014 Ooh, pubic hair on my coconut.'",
       "characters": [
-        "Larry"
+        "Larry Sanders",
+        "Carol Burnett"
       ],
       "joke_types": [
+        "physical_slapstick",
         "cringe_discomfort"
       ],
-      "setup": "Artie's casual mention of seeing Larry's testicles",
-      "punchline": "Larry's mortified follow-up question seeking confirmation",
-      "craft_total": 6.02,
-      "impact_score": 5.67,
-      "quotability": 4.0,
+      "setup": "Larry is trying to deliver a line about coconut juice in the sketch",
+      "punchline": "He discovers what appears to be pubic hair on the prop coconut mid-line \u2014 the specificity of 'pubic' mid-character-voice is the shock laugh",
+      "craft_total": 6.56,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good follow-up to previous joke. Larry's need for confirmation makes the embarrassment worse while staying true to character.",
+      "explanation": "A good prop-comedy gag \u2014 the contrast between the gentle character-voice delivery and the jarring discovery of 'pubic hair' is the shock. Works in context, probably funnier visually than on paper.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -776,22 +806,22 @@
     },
     {
       "index": 32,
-      "text": "That's my cup from the hockey segment.",
+      "text": "Carol immediately launches into a sexual harassment lawsuit bit: 'Nairobi and Meyers. On behalf of my client we are filing charges of sexual misconduct... You shall not come within 500 yards of my client.'",
       "characters": [
-        "Larry"
+        "Carol Burnett"
       ],
       "joke_types": [
-        "visual_gag",
-        "callback"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Hank notices something in Larry's office",
-      "punchline": "Larry identifies it as his athletic cup, creating awkward display situation",
-      "craft_total": 6.11,
-      "impact_score": 5.67,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Callback to earlier hockey segment. The awkwardness of having a jockstrap on display in his office is mildly amusing.",
+      "setup": "Larry discovers pubic hair on a prop coconut during rehearsal",
+      "punchline": "Carol immediately pivots to a fully formed legal proceedings bit, naming a law firm and issuing a restraining order \u2014 treating a prop mishap as a federal harassment case",
+      "craft_total": 6.62,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Carol Burnett's improv instinct elevated into a bit \u2014 the instant escalation to a formal legal framework ('Nairobi and Meyers') for a prop comedy mishap is funny because of the disproportionate formality. The 500-yard restraining order from a coconut is absurd and well-committed.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -801,21 +831,22 @@
     },
     {
       "index": 33,
-      "text": "My God... you're a good man.",
+      "text": "Larry mid-sketch, genuinely confused: 'I don't know where we are. Are we doing this sketch before the spiders or after them?'",
       "characters": [
-        "Hank"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Larry's elaborate lie about giving Hank opportunities",
-      "punchline": "Hank's emotional, sincere response to what's actually manipulation",
-      "craft_total": 6.92,
-      "impact_score": 6.67,
-      "quotability": 4.0,
-      "rewatch_bonus": 1,
+      "setup": "Larry is already so anxious about the spider stunt that he can't maintain focus during a sketch rehearsal with Carol Burnett",
+      "punchline": "He breaks character to ask a logistical question about the spider scheduling \u2014 revealing his anxiety is consuming him even in front of a legend",
+      "craft_total": 7.1,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Peak cringe moment - Hank's genuine emotional response to Larry's self-serving lie. The sincerity makes it both funny and uncomfortable.",
+      "explanation": "Good character comedy \u2014 Larry's inability to compartmentalize his spider anxiety even during rehearsal with Carol Burnett reveals the scale of his preoccupation. The specific question ('before the spiders or after them?') is both funny and pathetically relatable.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -825,22 +856,22 @@
     },
     {
       "index": 34,
-      "text": "Hank, please.",
+      "text": "Larry describes the tarantulas backstage: 'They look like big, hairy potatoes with legs in 'em. I'm gonna have dreams.'",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "awkward_silence",
-        "cringe_discomfort"
+        "observational",
+        "character_comedy"
       ],
-      "setup": "Hank becomes emotional about Larry's 'generosity'",
-      "punchline": "Larry's uncomfortable attempt to stop the emotional display",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry has just seen the spiders backstage and is reporting back to Artie in a panic",
+      "punchline": "'Big, hairy potatoes with legs in 'em' is a genuinely original simile; 'I'm gonna have dreams' as a trailing horror-anticipation is the button",
+      "craft_total": 7.45,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good cringe follow-up. Larry's discomfort with Hank's genuine emotion while knowing he's being manipulative creates perfect tension.",
+      "explanation": "One of the episode's best lines. 'Big, hairy potatoes with legs in 'em' is a memorably specific and original description \u2014 not the expected 'disgusting' or 'huge,' but a domestic food item transformed into a nightmare. The 'in 'em' grammatical stumble makes it feel authentic rather than polished. 'I'm gonna have dreams' as a flat prediction of future trauma is a perfect quiet topper. Highly quotable, genuinely original phrasework.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -850,21 +881,23 @@
     },
     {
       "index": 35,
-      "text": "Could you take your top off? I'm begging you. Could you?",
+      "text": "Larry corrects Artie: 'They're roller coasters.' Artie: 'Call it what you like. I'd never get on the damn thing.'",
       "characters": [
-        "Writer"
+        "Larry Sanders",
+        "Artie"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Writers' room with female writer present",
-      "punchline": "Inappropriate sexual request from male writer",
-      "craft_total": 6.38,
-      "impact_score": 5.5,
-      "quotability": 2.0,
-      "rewatch_bonus": 0,
+      "setup": "Artie has said 'rolly-coasters'",
+      "punchline": "'Call it what you like' \u2014 Artie refuses to be corrected on his own mispronunciation, dismissing the correction as a matter of personal preference",
+      "craft_total": 7.58,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Workplace harassment 'humor' that feels more uncomfortable than funny. Relies on shock value rather than clever writing.",
+      "explanation": "Rip Torn's Artie refusing to accept a correction of his own malapropism \u2014 'call it what you like' \u2014 is a perfect character beat. The dismissal of factual correction as a matter of preference is deeply funny and character-specific. Artie's supreme self-confidence in his own wrongness is quintessential.",
       "dialogue": [
         {
           "speaker": "",
@@ -874,21 +907,22 @@
     },
     {
       "index": 36,
-      "text": "You know, make it more my style.",
+      "text": "Writers mock Larry's rehearsal: 'He doesn't know what he's doing. His timing's a mess. He was all over the place.' Writer: 'That voice, did you hear that Tarzan voice? What was that?' Other writer: 'I think he's trying out a new Lebanese thing.'",
       "characters": [
-        "Hank"
+        "Writers"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Hank asking writers to adjust spider material for him",
-      "punchline": "Hank's assumption that he has a distinctive comedic style worth adapting to",
-      "craft_total": 6.7,
-      "impact_score": 6.17,
-      "quotability": 5.0,
+      "setup": "Writers are watching Larry's terrible Tarzan sketch rehearsal",
+      "punchline": "'I think he's trying out a new Lebanese thing' \u2014 a completely unintelligible explanation for Larry's bizarre Tarzan accent, delivered with confidence",
+      "craft_total": 7.1,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Hank delusion moment. His belief that he has a recognizable comedic style that needs to be accommodated shows his inflated self-perception.",
+      "explanation": "'Lebanese thing' is wonderfully specific nonsense \u2014 it's funny because it's stated with conviction about something that makes no sense. The writers' behind-the-scenes cynicism about their own host is authentic showbiz satire, and 'Lebanese' as the chosen specificity is perfectly absurd.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -898,21 +932,23 @@
     },
     {
       "index": 37,
-      "text": "I carry a spider anti-venom kit on my person at all times. I didn't bring it with me today.",
+      "text": "Artie to Larry: 'You know, talking to you is like talking to you.'",
       "characters": [
-        "Spider Expert"
+        "Artie",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "deadpan_understatement",
+        "absurdist"
       ],
-      "setup": "Expert reassures Hank about spider safety",
-      "punchline": "Immediately reveals he doesn't actually have the safety equipment with him",
-      "craft_total": 6.68,
-      "impact_score": 6.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Artie has been trying to manage Larry's anxiety and is running out of patience",
+      "punchline": "A tautological non-statement \u2014 'talking to you is like talking to you' \u2014 that is both a profound expression of exasperation and technically meaningless",
+      "craft_total": 7.38,
+      "impact_score": 7.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good contradiction joke. The expert's confidence immediately undermined by practical oversight creates nice tension.",
+      "explanation": "This is the episode's single best line. 'Talking to you is like talking to you' is a Zen koan of exasperation \u2014 grammatically meaningless, emotionally precise, and instantly quotable. It communicates the full weight of Artie's exhaustion with Larry's circular anxieties without saying anything. The tautology IS the point: Larry is so specifically, uniquely frustrating that no comparison exists. Rip Torn's delivery would make this legendary. Comparable in craft and memorability to the show's best lines.",
       "dialogue": [
         {
           "speaker": "Spider Expert",
@@ -922,21 +958,23 @@
     },
     {
       "index": 38,
-      "text": "It's not easy being on this side of the cue cards.",
+      "text": "Larry: 'I can't go on with this spider thing, Arty.' Artie: 'Listen, consider it canceled.' \u2014 immediate, no hesitation",
       "characters": [
+        "Larry Sanders",
         "Artie"
       ],
       "joke_types": [
-        "meta_self_referential"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Artie commenting on difficult decisions",
-      "punchline": "Reference to being behind-the-scenes rather than on camera",
-      "craft_total": 6.62,
-      "impact_score": 5.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Nice meta moment about the power dynamics of television. Good character insight for Artie's behind-the-scenes role.",
+      "setup": "After all the buildup about the spider stunt being great television, Larry caves",
+      "punchline": "Artie cancels it instantly \u2014 all his 'huge laughs' advocacy evaporates the moment Larry pushes back, showing his real priority is managing Larry, not the show",
+      "craft_total": 7.19,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The comedic payoff to all of Artie's hard-selling is this instantaneous capitulation. It's funny because it reveals that Artie's conviction was always entirely contingent on Larry's mood \u2014 the 'huge laughs' were never the actual goal. A quiet but sharp joke about the real dynamics of showbiz management.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -946,21 +984,22 @@
     },
     {
       "index": 39,
-      "text": "Your check is on the way.",
+      "text": "Artie identifies a Quick Light Briquets commercial featuring Hank and makes a joke: 'Let me guess. This is Quick Light Briquets, is it? The fastest light in the West. Fire 'em up, partner.'",
       "characters": [
-        "Carol"
+        "Artie"
       ],
       "joke_types": [
-        "setup_punchline"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Ear tug signal meant 'Hi, I'm fine'",
-      "punchline": "Adding the practical financial reassurance for grandmother",
-      "craft_total": 6.37,
-      "impact_score": 5.67,
+      "setup": "Artie sees Hank filming a commercial",
+      "punchline": "Artie delivers the commercial tagline himself \u2014 'Fire 'em up, partner' \u2014 as if he's seen it many times, or as if it's self-evidently terrible",
+      "craft_total": 6.01,
+      "impact_score": 5.5,
       "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Nice addition to the ear tug story. The practical financial element adds humor to what could be purely sentimental.",
+      "explanation": "A light scene-setter that establishes the comedy of Hank doing commercial work \u2014 slightly diminished status compared to the main host. Not a strong punchline but functional showbiz satire.",
       "dialogue": [
         {
           "speaker": "Carol",
@@ -970,21 +1009,23 @@
     },
     {
       "index": 40,
-      "text": "You actually have to get earmuffs at a specialty shop?",
+      "text": "Artie asks Hank to do the spider stunt 'instead of Larry' \u2014 claiming Larry himself requested it",
       "characters": [
-        "Larry"
+        "Artie",
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "setup_punchline"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Carol's earlobe is a quarter inch longer",
-      "punchline": "Larry's absurd practical concern about specialized winter gear",
-      "craft_total": 6.57,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry has canceled the spider stunt; Artie needs an alternative",
+      "punchline": "Artie volunteers Hank under false pretenses \u2014 claiming Larry 'himself wants you to handle this stunt' when we just watched Larry cancel it \u2014 Hank's credulity makes him the perfect mark",
+      "craft_total": 6.83,
+      "impact_score": 6.5,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good absurdist leap from minor physical detail to major practical inconvenience. Shows Larry's tendency to overthink trivial details.",
+      "explanation": "The comedy is structural \u2014 the audience knows the lie being told and can anticipate Hank's gullibility. Artie's manipulation of Hank is a recurring dynamic, and the specific false attribution ('Larry himself wants you') is a nicely cynical move.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -994,22 +1035,23 @@
     },
     {
       "index": 41,
-      "text": "maybe you could talk to costumes about getting you a longer loincloth. I saw your balls.",
+      "text": "Hank: 'This isn't happening because Larry knows I'm unhappy, is it?' Artie: 'You're unhappy?'",
       "characters": [
-        "Carol"
+        "Hank Kingsley",
+        "Artie"
       ],
       "joke_types": [
-        "callback",
+        "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Carol suggesting they might do the sketch again",
-      "punchline": "Blunt revelation that she also witnessed Larry's wardrobe malfunction",
-      "craft_total": 6.76,
-      "impact_score": 6.67,
+      "setup": "Hank is suspicious that the spider stunt offer is a consolation prize for his unhappiness",
+      "punchline": "Artie's response \u2014 'You're unhappy?' \u2014 is performed with complete genuine surprise, as if Hank's chronic discontent is news, despite it being the defining trait of everyone's relationship with him",
+      "craft_total": 7.6,
+      "impact_score": 7.67,
       "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Effective callback that amplifies Larry's embarrassment. Carol's matter-of-fact delivery makes it funnier and more mortifying.",
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Artie's performed ignorance of Hank's obvious unhappiness is a great character bit. The response 'You're unhappy?' \u2014 not dismissive, but genuinely inquiring \u2014 is the kind of executive maneuver that keeps Hank off-balance. It's both funny and reveals Artie's management style.",
       "dialogue": [
         {
           "speaker": "Carol",
@@ -1019,22 +1061,22 @@
     },
     {
       "index": 42,
-      "text": "You're wrong right there. They're clearly found in plastic boxes.",
+      "text": "Hank: 'Not at all. I'm always looking for opportunities to showcase my versatility. Not that I've made a stink about it, because I am not a squeaky wheel.'",
       "characters": [
-        "Larry"
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "observational",
-        "deadpan_understatement"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Spider expert explains tarantulas are from tropical/desert regions",
-      "punchline": "Larry's literal-minded observation about their current location",
-      "craft_total": 6.93,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Artie asks if Hank is unhappy; Hank is clearly very unhappy",
+      "punchline": "Hank's denial is so comprehensive and over-qualified \u2014 'versatility,' 'not made a stink,' 'not a squeaky wheel' \u2014 that it constitutes a full confession of exactly the opposite",
+      "craft_total": 7.04,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent deadpan literal interpretation. Larry's nervous pedantry comes through as he deflects from his fear with weak observational humor.",
+      "explanation": "Peak Hank. The denial speech is perfect Tambor territory \u2014 every qualification is a tell, every denial confirms the complaint. 'Not a squeaky wheel' from someone who is demonstrably the squeakiest wheel in the building is great character irony. Jeffrey Tambor would make this sing.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1044,21 +1086,22 @@
     },
     {
       "index": 43,
-      "text": "I've never complained about anyone opening up a lid of anything.",
+      "text": "Larry learns the sketch is canceled because Carol thinks it sucks. Larry: 'She's right. Cancel it.' \u2014 no hesitation",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "observational"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Spider expert asks permission to open spider container",
-      "punchline": "Larry's overly broad statement about his lid-opening policy",
-      "craft_total": 6.57,
-      "impact_score": 5.67,
+      "setup": "Larry is told Carol Burnett wants to cancel their sketch",
+      "punchline": "Larry's immediate agreement \u2014 'She's right. Cancel it.' \u2014 is both self-aware and a funny reversal of his earlier eagerness",
+      "craft_total": 6.68,
+      "impact_score": 6.25,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good nervous overcompensation from Larry. The unnecessary generalization reveals his anxiety about the specific lid being opened.",
+      "explanation": "Larry's immediate capitulation to Carol's judgment \u2014 not even a token defense of the sketch \u2014 reveals both his genuine self-awareness as a performer and his deference to Burnett's legendary status. Quick and efficient.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1068,21 +1111,23 @@
     },
     {
       "index": 44,
-      "text": "Wrong. Come on, don't you folks wanna see Hank put that on his...",
+      "text": "Larry: 'Between you and me, I'm relieved. I looked like an idiot in that loincloth.' Artie: 'Between you and me, I think I saw your balls at one point.'",
       "characters": [
-        "Larry"
+        "Larry Sanders",
+        "Artie"
       ],
       "joke_types": [
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Expert suggests putting spider on Larry",
-      "punchline": "Larry's desperate attempt to deflect to Hank",
-      "craft_total": 6.43,
-      "impact_score": 6.17,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry confesses private relief about the sketch being canceled",
+      "punchline": "Artie's private confidence mirrors Larry's syntax exactly ('between you and me') but delivers a devastating visual \u2014 he saw Larry's balls \u2014 as the reciprocal confession",
+      "craft_total": 8.0,
+      "impact_score": 8.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Larry's cowardice and willingness to throw Hank under the bus. His desperation is palpable.",
+      "explanation": "Beautifully constructed exchange. The structural mirroring \u2014 'between you and me' used twice \u2014 sets up the parallel confession, and what Artie confides is so much more damaging and funny than Larry's. The loincloth visual is established, the payoff is earned, and the delivery of 'I think I saw your balls at one point' with Artie's characteristic gravity makes it funnier. One of the episode's top five moments.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1092,21 +1137,22 @@
     },
     {
       "index": 45,
-      "text": "If you guys are too chicken, I'll do it.",
+      "text": "Larry: 'That's the only laugh I got, I think.'",
       "characters": [
-        "Carol"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Larry and Hank both avoiding the spider stunt",
-      "punchline": "Carol volunteers, making the men look cowardly",
-      "craft_total": 6.97,
-      "impact_score": 6.67,
-      "quotability": 5.0,
+      "setup": "Artie has just revealed he saw Larry's genitals during rehearsal",
+      "punchline": "Larry treats accidental genital exposure as a legitimate comedic strategy that 'got a laugh' \u2014 the sad acceptance that it was his best moment",
+      "craft_total": 7.12,
+      "impact_score": 6.75,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great reversal where the guest shows more courage than the hosts. Carol calling them 'chicken' adds to their embarrassment.",
+      "is_callback": 1,
+      "explanation": "A perfect topper to the 'balls' exchange. Larry's resignation \u2014 cataloguing the accidental exposure as his comedy highlight \u2014 is both self-deprecating and pathetic in the best way. The 'I think' qualifier is a nice touch of uncertainty.",
       "dialogue": [
         {
           "speaker": "Carol",
@@ -1116,21 +1162,22 @@
     },
     {
       "index": 46,
-      "text": "And you were 'mistakener.'",
+      "text": "Larry: 'Did you really see my balls?' \u2014 beat",
       "characters": [
-        "Larry"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Carol says she thought Larry was 'yeller'",
-      "punchline": "Larry's made-up word following the pattern",
-      "craft_total": 6.82,
-      "impact_score": 6.33,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Mild wordplay creating symmetrical exchange. Larry's attempt at clever wordsmithing under pressure is characteristically awkward.",
+      "setup": "Larry has been discussing the sketch; the ball-sighting comes up again",
+      "punchline": "Larry circling back to confirm the ball-sighting with genuine concern \u2014 the repetition reveals this is actually bothering him more than the sketch being canceled",
+      "craft_total": 5.83,
+      "impact_score": 5.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback is the joke \u2014 Larry can't let it go. His need to get confirmation reveals that the ball exposure is nagging at him more than his failed sketch. The unspoken follow-up scene (we don't get Artie's response) makes it funnier. Running gag starting to develop.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1140,22 +1187,22 @@
     },
     {
       "index": 47,
-      "text": "Don't you drop me!",
+      "text": "Artie to Hank about the meeting with Larry: 'For God's sakes, come in.'",
       "characters": [
-        "Larry"
+        "Artie"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "cringe_discomfort"
+        "reaction_beat",
+        "character_comedy"
       ],
-      "setup": "Larry panics when spider is placed on his arm",
-      "punchline": "Larry's desperate plea as he presumably jumps into someone's arms",
-      "craft_total": 6.24,
-      "impact_score": 7.0,
-      "quotability": 4.0,
+      "setup": "Hank approaches Larry's office timidly",
+      "punchline": "Artie's exasperation at Hank's hesitation \u2014 'For God's sakes' \u2014 frames the whole subsequent scene as a delicate diplomatic operation",
+      "craft_total": 5.37,
+      "impact_score": 4.75,
+      "quotability": 2.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Peak physical comedy moment. Larry's complete panic and loss of dignity creates maximum chaos and embarrassment.",
+      "explanation": "A small scene-entry reaction beat. Functional but thin \u2014 works as character texture rather than a real joke.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1165,21 +1212,24 @@
     },
     {
       "index": 48,
-      "text": "It wasn't a sketch. It was a massive spastic fuck-up.",
+      "text": "Hank enters and immediately says, 'I'm sorry. If you and Darlene are talking, I can always come back.' Artie: 'I am not talking to her. Come in.' Darlene: 'Tell him why you were here.' Darlene: 'I don't remember.'",
       "characters": [
-        "Larry"
+        "Hank Kingsley",
+        "Artie",
+        "Darlene"
       ],
       "joke_types": [
+        "awkward_silence",
         "character_comedy"
       ],
-      "setup": "Artie tries to frame the spider disaster as a sketch with Carol Burnett",
-      "punchline": "Larry's blunt assessment of the catastrophe",
-      "craft_total": 7.23,
+      "setup": "Hank enters Larry's office to find Artie with Darlene",
+      "punchline": "Darlene's inability or unwillingness to recall why she was there \u2014 a small comic beat of witnessed awkwardness \u2014 is funnier than anything said directly",
+      "craft_total": 7.42,
       "impact_score": 7.0,
-      "quotability": 7.0,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great self-aware moment. Larry's brutal honesty about his performance failure is both funny and emotionally real.",
+      "explanation": "The rhythm of the scene \u2014 Hank's social anxiety, Artie's irritation, Darlene's blithe non-explanation \u2014 creates a small cringe-comedy texture. 'I don't remember' as a complete non-account is slightly funny but the scene mainly sets up the Hank-Larry interaction.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -1189,22 +1239,23 @@
     },
     {
       "index": 49,
-      "text": "It made the Ed Ames tomahawk throw look like a big piece of shit.",
+      "text": "Hank discovers the hockey cup in Larry's office: 'What is this?' Artie: 'That's my cup from the hockey segment.'",
       "characters": [
+        "Hank Kingsley",
         "Artie"
       ],
       "joke_types": [
-        "callback",
-        "escalation"
+        "visual_gag",
+        "character_comedy"
       ],
-      "setup": "Comparing Larry's spider disaster to famous TV moments",
-      "punchline": "Claiming Larry's disaster makes a legendary Tonight Show moment look bad",
-      "craft_total": 7.54,
-      "impact_score": 7.25,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent insider reference that elevates Larry's disaster to legendary status. Perfect Artie mix of showbiz knowledge and crude assessment.",
+      "setup": "Hank picks up an unusual object in Larry's office",
+      "punchline": "Artie possessively identifies the hockey groin protector as 'my cup' \u2014 the ownership claim on a jockstrap left in someone's office is slightly absurd",
+      "craft_total": 5.98,
+      "impact_score": 5.5,
+      "quotability": 3.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A small callback visual gag \u2014 the cup left in the office is a background joke. Artie claiming it as his is mildly funny. Thin but functional.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -1214,28 +1265,775 @@
     },
     {
       "index": 50,
-      "text": "Oh, no, the spider guy said it's a mild allergic reaction. It should run its course in about a week's time... and it's hardly noticeable.",
+      "text": "Larry lies to Hank \u2014 tells him the real reason for being given the spider stunt is because he wants Hank 'to express your unique creativity and flair' \u2014 Hank buys it completely",
       "characters": [
-        "Hank"
+        "Larry Sanders",
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "visual_gag",
-        "irony_sarcasm"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Hank apparently has visible spider bite reaction",
-      "punchline": "Claiming it's 'hardly noticeable' while clearly being very noticeable",
-      "craft_total": 6.42,
-      "impact_score": 6.0,
+      "setup": "Larry needs to tell Hank why he's being given the spider stunt without revealing it's because Larry is afraid",
+      "punchline": "Larry constructs a speech so transparently false \u2014 'unique creativity and flair' applied to putting spiders on your arm \u2014 that it's cringe comedy; Hank's pathetic gratitude makes it worse",
+      "craft_total": 7.48,
+      "impact_score": 7.83,
       "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good visual comedy payoff. Hank's denial about the obvious visible reaction adds to the absurdity of the spider expert's assessment.",
+      "explanation": "Classic cringe sitcom construction \u2014 the audience knows what's really happening, and watching Hank receive this transparent manipulation with deep gratitude is both funny and a little sad. Larry's cowardice and Hank's need for validation are both exposed simultaneously. The show's core dynamic in miniature.",
       "dialogue": [
         {
           "speaker": "Hank",
           "line": "Oh, no, the spider guy said it's a mild allergic reaction. It should run its course in about a week's time... and it's hardly noticeable."
         }
       ]
+    },
+    {
+      "index": 51,
+      "text": "Hank, deeply moved by Larry's fake speech: '...A little uncomfortable right now, but... My God... you're a good man.'",
+      "characters": [
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Larry has delivered a completely false speech about valuing Hank's creativity",
+      "punchline": "Hank is so starved for validation that a transparently fake speech makes him emotional \u2014 'My God, you're a good man' said with genuine feeling",
+      "craft_total": 7.82,
+      "impact_score": 8.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is the cringe peak of the Hank arc in this episode. 'My God, you're a good man' delivered with complete sincerity in response to an obvious lie is devastating \u2014 it's funny and sad simultaneously. Jeffrey Tambor's ability to play genuine feeling in ironic contexts is the show's secret weapon, and this line is pure Hank: his neediness laid bare. The comedy comes from the gap between what we know and what Hank believes."
+    },
+    {
+      "index": 52,
+      "text": "Extended physical bit: Hank tries to hug Larry \u2014 the hug goes on far too long \u2014 Larry: 'Hank, please.'",
+      "characters": [
+        "Hank Kingsley",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "physical_slapstick"
+      ],
+      "setup": "Hank, emotionally overwhelmed by Larry's fake speech, moves in for a hug",
+      "punchline": "The hug exceeds all normal duration; Larry's eventual 'Hank, please' at the 10-second mark is the verbal boundary; the physical comedy is in the sustained discomfort",
+      "craft_total": 7.47,
+      "impact_score": 7.75,
+      "quotability": 4.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Great sustained cringe comedy. The extended hug is the kind of protracted awkward moment that the show specialized in \u2014 the audience watching Larry try to endure Hank's emotional overflow is physically uncomfortable in the best way. 'Hank, please' as the eventual protest is perfectly understated."
+    },
+    {
+      "index": 53,
+      "text": "Carol Burnett to Hank during commercial filming: 'Could you take your top off? I'm begging you. Could you?'",
+      "characters": [
+        "Carol Burnett",
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Hank is filming a commercial with Carol Burnett",
+      "punchline": "Carol asking Hank to remove his shirt \u2014 the comedy being that this is the last request you'd expect directed at Hank, and Carol's 'I'm begging you' suggests it's for the comedy, not the aesthetics",
+      "craft_total": 5.72,
+      "impact_score": 5.67,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick gag playing on Hank's physique \u2014 Carol's 'I'm begging you' implies the comedy, not desire. Light but functional."
+    },
+    {
+      "index": 54,
+      "text": "Hank's 'Hey, Now' exchange with Carol Burnett: 'Tremendous.' / 'Hey, now.' / 'Hey, now.'",
+      "characters": [
+        "Hank Kingsley",
+        "Carol Burnett"
+      ],
+      "joke_types": [
+        "running_gag",
+        "character_comedy"
+      ],
+      "setup": "Hank has been given an opportunity to do the spider stunt; meeting Carol, he delivers his catchphrase",
+      "punchline": "Carol Burnett \u2014 a genuine comedy legend \u2014 responds to Hank's 'Hey, now' with her own 'Hey, now,' creating a moment of false equivalence that's both affectionate and slightly absurd",
+      "craft_total": 7.34,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The joke is Carol Burnett's willingness to play along with Hank's catchphrase, which she likely doesn't know, treating it as a genuine exchange of pleasantries. Hank's 'Tremendous' \u2014 his default word for good news \u2014 before the Hey Now is also a small character comedy beat. The moment is light but well-placed."
+    },
+    {
+      "index": 55,
+      "text": "Hank casually tells Larry he's doing the spider thing 'tonight' \u2014 Larry's reaction beat",
+      "characters": [
+        "Hank Kingsley",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "Hank has been manipulated into taking the spider stunt; now he mentions it to Larry as if he volunteered",
+      "punchline": "Larry's reaction \u2014 absorbing that his cowardice is now Hank's public moment \u2014 should be a visible wince or pause; the irony is that Hank is excited to do the thing Larry was too scared to do",
+      "craft_total": 7.35,
+      "impact_score": 7.17,
+      "quotability": 3.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "An irony beat \u2014 the audience knows the full chain of events, so watching Hank announce his spider heroics to Larry is a quiet joke about the politics of cowardice. Works on rewatch when you can appreciate all the moving parts."
+    },
+    {
+      "index": 56,
+      "text": "Hank asks the writers to 'put a different crank on' the spider material to 'make it more my style'",
+      "characters": [
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Hank is preparing for the spider stunt he was manipulated into doing",
+      "punchline": "'A different crank on it' \u2014 Hank's specific idiom for customizing material, plus the implication that his comedic 'style' is distinct enough to require a rewrite for a stunt involving sitting still while spiders crawl on you",
+      "craft_total": 6.9,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Hank's self-importance expressing itself in industry jargon ('put a different crank on it') while requesting customization for a stunt that requires zero performance skill is a good character beat. The writers' deadpan 'Yeah, we'll get right on that' is the deserved punchline."
+    },
+    {
+      "index": 57,
+      "text": "Spider handler reveals he carries an anti-venom kit 'on my person at all times' \u2014 then: 'I didn't bring it with me today.'",
+      "characters": [
+        "Spider Handler (Steve Kutcher)",
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Hank asks if he'll get bitten; handler reassures him he carries anti-venom at all times",
+      "punchline": "'I didn't bring it with me today' \u2014 the safety net doesn't exist for this specific appointment",
+      "craft_total": 7.3,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A perfect structure: the reassurance is built up fully before being dismantled in six words. The gap between 'I always carry it' and 'not today' is maximal, and the nonchalance of the handler makes it funnier. Clean joke construction."
+    },
+    {
+      "index": 58,
+      "text": "Hank notices a burn mark on the spider handler's arm and asks about it. Handler: 'It's a burn. I burned myself on the iron.' \u2014 with a spider bite visible to the audience",
+      "characters": [
+        "Hank Kingsley",
+        "Spider Handler"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "visual_gag"
+      ],
+      "setup": "Handler says Hank absolutely won't get bitten; Hank notices what appears to be a bite mark",
+      "punchline": "The handler insists it's just an iron burn \u2014 almost certainly a spider bite \u2014 delivered with complete confidence",
+      "craft_total": 6.77,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A dark comedy visual gag \u2014 the handler's reassurance is immediately undercut by physical evidence on his own body. The audience can see the subtext clearly. Good escalation of the spider-danger joke."
+    },
+    {
+      "index": 59,
+      "text": "Handler: 'Absolutely not [you won't get bitten]... but if you should get bitten, it'll only hurt for a second... unless you're allergic to spider bites.' Hank: 'Okay, so, how would I know if I were allergic?' Handler: 'Well, you'd go to a doctor and have yourself checked.' \u2014 'And if I were allergic... what could happen?' \u2014 Handler: 'Oh, my.'",
+      "characters": [
+        "Spider Handler",
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "escalation"
+      ],
+      "setup": "Handler is reassuring Hank about spider safety",
+      "punchline": "'Oh, my.' \u2014 the handler's response to what happens if you're allergic and get bitten is so bad he won't even say it; the non-answer is the answer",
+      "craft_total": 7.9,
+      "impact_score": 8.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Oh, my.' as the answer to 'what could happen if I'm allergic?' is a beautifully understated response to catastrophe. The escalation from 'it'll only hurt for a second' to 'oh, my' \u2014 with the handler refusing to elaborate \u2014 implies something so terrible it can't be named. The structure (progressive reassurance followed by progressive revelation of horror) is well-built. One of the episode's funnier exchanges."
+    },
+    {
+      "index": 60,
+      "text": "Hank asks if he'll get bitten. Wrangler: 'Absolutely not... but if you should get bitten, it'll only hurt for a second... unless you're allergic to spider bites.'",
+      "characters": [
+        "Spider Wrangler",
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "escalation",
+        "dark_subversive"
+      ],
+      "setup": "Hank asks for a guarantee he won't be bitten",
+      "punchline": "The wrangler's 'Absolutely not' immediately dissolves into a cascade of qualifications \u2014 'but if you should... unless you're allergic' \u2014 each one a deeper layer of potential catastrophe, delivered in the same flat reassuring tone",
+      "craft_total": 8.12,
+      "impact_score": 8.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "An escalating reassurance that systematically destroys itself. The structure is textbook: absolute guarantee \u2192 minor exception \u2192 major exception (allergy). Each clause that should comfort actually terrifies. The deadpan delivery \u2014 same tone throughout \u2014 is what makes this sing. Connected to joke 57, this is a sustained two-beat horror comedy riff from the wrangler."
+    },
+    {
+      "index": 61,
+      "text": "Larry, off-camera in a separate scene: 'So was I wrong? Hank really wanted to do the spider thing... You know, the audience would rather see me do it, I think. Wouldn't they?'",
+      "characters": [
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Larry is rationalizing giving the stunt to Hank",
+      "punchline": "Larry reverse-engineers his cowardice into altruism (Hank 'really wanted' it) then can't help undermining Hank ('the audience would rather see me') \u2014 revealing both self-deception and competitive insecurity in adjacent sentences",
+      "craft_total": 7.14,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Excellent Larry Sanders character comedy. He convinces himself of Hank's genuine enthusiasm while simultaneously undercutting him \u2014 both moves are self-serving and he doesn't notice the contradiction. The 'I think. Wouldn't they?' seeking validation even from an off-camera interlocutor is perfect Larry."
+    },
+    {
+      "index": 62,
+      "text": "Larry: 'It's not easy being on this side of the cue cards.' \u2014 then demonstrates by holding the cue cards wrong",
+      "characters": [
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "character_comedy"
+      ],
+      "setup": "Larry is making the point that it's hard to be a talk show host rather than a guest",
+      "punchline": "He holds up cue cards to show it's hard \u2014 the visual joke being that he's using cue cards for an informal conversation, then demonstrating them incorrectly",
+      "craft_total": 7.0,
+      "impact_score": 6.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A meta-joke about the mechanics of being a talk show host. The physical demonstration with cue cards is a light visual gag. Works better as a character beat than a straight joke."
+    },
+    {
+      "index": 63,
+      "text": "Carol tells the story of her ear-pull signal to her grandmother \u2014 'It meant, Hi, I'm fine. Your check is on the way.'",
+      "characters": [
+        "Carol Burnett",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Carol explains the famous ear-pull gesture was a signal to her grandmother who raised her",
+      "punchline": "'Your check is on the way' \u2014 the earful signal encodes both affection and financial obligation; the specificity makes it funnier than a simpler sentiment",
+      "craft_total": 7.45,
+      "impact_score": 7.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A real bit of Carol Burnett lore rendered funny by the mercenary addition \u2014 'your check is on the way.' The gesture combines 'I love you' and 'I'm paying you' into one signal, which is both touching and comic about the nature of showbiz families. Works because it has real character specificity."
+    },
+    {
+      "index": 64,
+      "text": "Larry, after Carol says her earlobe is a quarter-inch longer than the other: 'Wow. You actually have to get earmuffs at a specialty shop?'",
+      "characters": [
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "A journalist measured Carol's earlobe \u2014 it's a quarter-inch longer from years of pulling",
+      "punchline": "Larry's extrapolation \u2014 asymmetric earlobes requiring specialty earmuffs \u2014 is both absurd and delivered as a sincere follow-up question",
+      "craft_total": 6.98,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A lovely on-air Larry joke. The leap from 'quarter-inch longer earlobe' to 'specialty earmuffs' is both absurd and follows its own internal logic \u2014 if one ear is bigger, how do earmuffs work? Delivered as a sincere question, which is the right call. Shows Larry's on-air persona at his best."
+    },
+    {
+      "index": 65,
+      "text": "Carol: 'I'm delightful, aren't I?' \u2014 self-directed, slightly arch",
+      "characters": [
+        "Carol Burnett"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Carol has been sharing charming personal details about her ear",
+      "punchline": "Carol announces her own delightfulness \u2014 the self-aware self-promotion is both funny and completely accurate, which makes it funnier",
+      "craft_total": 7.01,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Three words, perfect economy. Carol's self-aware self-congratulation works because she is genuinely delightful \u2014 the joke is the audacity of saying it, and the fact that it's true makes the self-promotion charming rather than obnoxious."
+    },
+    {
+      "index": 66,
+      "text": "Larry and Carol both claim they 'loved' the Tarzan sketch rehearsal and wish they could have done it \u2014 each sentence more effusive, building to 'I love doing broad, physical comedy'/'You're great at it'/'I wish we could've done it'/'Me too'/'Me too'",
+      "characters": [
+        "Larry Sanders",
+        "Carol Burnett"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "cringe_discomfort"
+      ],
+      "setup": "Both Larry and Carol said privately that the sketch was terrible and they're relieved it's canceled",
+      "punchline": "They now perform mutual enthusiasm for a sketch they both privately hated \u2014 the showbiz politeness ritual rendered as gentle comedy",
+      "craft_total": 7.01,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Smart structural comedy \u2014 the audience has seen both parties separately admit the sketch was terrible, so watching them perform mutual enthusiasm is cringe irony. The escalating 'me too / me too' is a particularly good touch \u2014 showbiz social rituals captured perfectly."
+    },
+    {
+      "index": 67,
+      "text": "Carol: 'I saw your balls.' Larry: 'What?' Carol: 'I saw your balls.'",
+      "characters": [
+        "Carol Burnett",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Carol has just recommended a longer loincloth",
+      "punchline": "Carol, with complete composure, states the revelation directly \u2014 twice \u2014 while Larry's 'What?' implies he hoped it was a loincloth-design suggestion and not a confession",
+      "craft_total": 8.2,
+      "impact_score": 8.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's comic peak. The running ball-exposure joke reaches its apex when Carol Burnett \u2014 a television legend \u2014 delivers the line with complete matter-of-fact composure. The repetition ('I saw your balls... I saw your balls.') after Larry's incredulous 'What?' is perfect: she's not embarrassed or gleeful, just stating fact. The comedy of Carol Burnett, of all people, saying this to Larry Sanders cannot be overstated. Maximum economy, maximum impact, perfect payoff to a carefully built multi-scene callback."
+    },
+    {
+      "index": 68,
+      "text": "Post-commercial break: Hank clearly allergic/distressed from spider \u2014 Larry notices during show and asks 'Hank, are you all right? A little mop up.'",
+      "characters": [
+        "Larry Sanders",
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "physical_slapstick"
+      ],
+      "setup": "Hank has done the spider stunt; he's now visibly reacting",
+      "punchline": "'A little mop up' \u2014 Larry's on-air understatement for what is apparently a significant allergic reaction, maintaining professionalism while Hank suffers",
+      "craft_total": 6.96,
+      "impact_score": 7.25,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A good deadpan reaction beat \u2014 'a little mop up' as professional euphemism for an on-air medical emergency is the kind of show-must-go-on comedy the series does well."
+    },
+    {
+      "index": 69,
+      "text": "Hank anxious before air: 'Listen, this Steve, this spider guy... is he on the up and up?' Artie: 'Don't worry about it, Hank. The spiders are real. ...He had some concern about an allergic reaction.'",
+      "characters": [
+        "Hank Kingsley",
+        "Artie"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "cringe_discomfort"
+      ],
+      "setup": "Hank is asking Artie for last-minute reassurance right before going on air with the spiders",
+      "punchline": "Artie's reassurance ('The spiders are real') immediately segues into mentioning the allergic reaction concern \u2014 one thing Hank did not need to hear with five seconds to air",
+      "craft_total": 7.45,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Artie at his most inadvertently devastating \u2014 mentioning the allergic reaction concern as a footnote to reassurance, moments before Hank goes on air. The timing (countdown begins immediately after) is a great structural joke about the cruelty of information arriving too late to help."
+    },
+    {
+      "index": 70,
+      "text": "On-air: Larry, gesturing at plastic spider boxes: 'Well, Steve, I see you brought your lunch with you.'",
+      "characters": [
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Steve Kutcher arrives on set carrying boxes of spiders",
+      "punchline": "Larry's quip that the boxes of spiders look like a packed lunch \u2014 an on-air host joke in the Letterman/Carson tradition",
+      "craft_total": 5.97,
+      "impact_score": 5.67,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A classic late-night filler joke \u2014 not original but competently delivered. The kind of throwaway that hosts use to fill while a guest settles in. Functional, not memorable."
+    },
+    {
+      "index": 71,
+      "text": "Steve says the spiders are 'found in the tropical regions, desert regions of the world.' Larry: 'You're wrong right there. They're clearly found in plastic boxes.'",
+      "characters": [
+        "Larry Sanders",
+        "Steve Kutcher"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "irony_sarcasm"
+      ],
+      "setup": "Steve is giving factual information about tarantula habitats",
+      "punchline": "Larry pedantically corrects him by reference to the specific plastic boxes in front of them \u2014 technically correct in the most literal possible way",
+      "craft_total": 7.19,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A nicely constructed bit of absurdist pedantry. Larry's 'correction' is technically accurate while being completely unhelpful, and his confidence ('You're wrong right there') is the perfect delivery. Good late-night host joke that feels grounded in Larry's character \u2014 he's trying to be funny while also genuinely uncomfortable."
+    },
+    {
+      "index": 72,
+      "text": "Larry: 'I've never complained about anyone opening up a lid of anything.'",
+      "characters": [
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Steve asks permission to open the spider box",
+      "punchline": "Larry's philosophical non-objection to lid-opening as a principle \u2014 a weirdly specific statement of policy delivered with mock gravity",
+      "craft_total": 6.81,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A light deadpan bit. The over-formal articulation of a non-policy about lid-opening is a good Larry on-air voice moment \u2014 using formality to mask anxiety."
+    },
+    {
+      "index": 73,
+      "text": "Steve: 'I can demonstrate how you can control them crawling up a person's arm... Like you.' Larry: 'Wrong. You mean like Hank.'",
+      "characters": [
+        "Larry Sanders",
+        "Steve Kutcher"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Steve is about to demonstrate the spider-crawling on Larry",
+      "punchline": "Larry's instant deflection to Hank \u2014 'Wrong' \u2014 delivered on-air with no preamble is both funny and a public abdication",
+      "craft_total": 7.8,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Larry's public-facing cowardice at its funniest. 'Wrong.' \u2014 one word, delivered on national television \u2014 is the kind of bold host deflection that exposes the machinery behind the show. The audience doesn't know the behind-the-scenes context, which makes it play as host hijinks; we know, which makes it play as craven cowardice. Both are funny. The economy is excellent."
+    },
+    {
+      "index": 74,
+      "text": "Larry tries to stir audience support: 'Come on, don't you folks wanna see Hank put that on his...' \u2014 reaction beat \u2014 then audience: 'Now tell the truth... wouldn't you rather see Larry?' Crowd: 'Yeah!'",
+      "characters": [
+        "Larry Sanders",
+        "Carol Burnett",
+        "Steve Kutcher"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Larry is trying to direct the spider onto Hank; Carol and the audience redirect it back to Larry",
+      "punchline": "The audience turns on Larry \u2014 'wouldn't you rather see Larry?' eliciting a 'Yeah!' \u2014 a public democratic rejection of Larry's cowardice on his own show",
+      "craft_total": 7.33,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Good structural comedy \u2014 the entire spider arc culminates in the audience overriding the host on his own show. Larry's attempt to route the spiders to Hank is defeated by public vote, which is both a satisfying narrative beat and a good joke about the fragility of host authority."
+    },
+    {
+      "index": 75,
+      "text": "Carol: 'If you guys are too chicken, I'll do it.' \u2014 and then does, unflinchingly",
+      "characters": [
+        "Carol Burnett"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "physical_slapstick"
+      ],
+      "setup": "Larry and Hank are both visibly reluctant; the spider stunt is stalling",
+      "punchline": "Carol Burnett \u2014 a 60-year-old comedy legend \u2014 steps up and does it without hesitation, shaming both men",
+      "craft_total": 7.1,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The comedy is in the contrast \u2014 the woman who doesn't need the stunt is the only one willing to do it. Carol's unflinching participation shames both Larry and Hank and inverts the episode's entire setup. Her character is the punchline to the episode's A-plot."
+    },
+    {
+      "index": 76,
+      "text": "After Larry finally takes the spider: 'And Carol, you thought I was...' Carol: 'I thought you were yeller.' Larry: 'And you were mistakener.'",
+      "characters": [
+        "Larry Sanders",
+        "Carol Burnett"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Larry has finally agreed to take the spider on his arm",
+      "punchline": "'Mistakener' \u2014 not a real word, a constructed comparative of 'mistaken' following 'yeller' (from Old Yeller) \u2014 Larry making up grammar to complete the parallel",
+      "craft_total": 6.99,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Mistakener' is a great invented word \u2014 the logical extension of Carol's 'yeller' that doesn't actually exist but works grammatically by analogy. It's the kind of spontaneous-seeming constructed language gag that Shandling excels at. Feels like an improv beat that was kept."
+    },
+    {
+      "index": 77,
+      "text": "Larry, with spider on his arm: 'Which movies was he in? All right. Now, okay...' \u2014 attempts to look away \u2014 'I am going to look this way.'",
+      "characters": [
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Spider is being placed on Larry's arm during live broadcast",
+      "punchline": "Larry's attempt to engage professionally ('which movies was he in?') while clearly about to have a breakdown \u2014 'I am going to look this way' is the coping mechanism announcement",
+      "craft_total": 6.94,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good cringe comedy \u2014 Larry trying to maintain professional interviewer mode while a spider walks on him, the gradual crumble expressed in small declarations. 'I am going to look this way' as a self-directed instruction is a nice touch."
+    },
+    {
+      "index": 78,
+      "text": "Larry: 'This is not so bad. I can barely feel...' \u2014 long pause \u2014 'Oh, my God! Carol, there's one on your shoulder.'",
+      "characters": [
+        "Larry Sanders",
+        "Carol Burnett"
+      ],
+      "joke_types": [
+        "escalation",
+        "physical_slapstick"
+      ],
+      "setup": "Larry has been gradually calming down with the spider on his arm",
+      "punchline": "Just as Larry achieves equanimity, a second spider is discovered on Carol \u2014 his composure shatters instantly",
+      "craft_total": 6.98,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Classic escalation structure \u2014 the moment of triumph ('this is not so bad') immediately inverted by a new complication. The 'Oh, my God!' arrival destroys the composure he just achieved. Solid physical comedy escalation."
+    },
+    {
+      "index": 79,
+      "text": "'Don't you drop me!' \u2014 a spider (presumably) speaking or Larry in spider-panic during chaos",
+      "characters": [
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "The spider segment has descended into chaos \u2014 spiders loose, Carol panicking, Larry panicking",
+      "punchline": "'Don't you drop me!' shouted during the melee \u2014 either to someone or to a spider, which would make no sense, which makes it funnier",
+      "craft_total": 6.37,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A panic shout during the physical chaos sequence. Funnier in context \u2014 the ambiguity of who's being addressed (a person? a spider?) adds to the mayhem. Works as part of the escalating stunt disaster."
+    },
+    {
+      "index": 80,
+      "text": "After the chaos: Artie to Larry: 'Come on, it was great, Larry.' Larry: 'We killed $75,000 worth of spiders, Arty.' Artie: 'We got $100,000 worth of laughs.'",
+      "characters": [
+        "Artie",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "The spider segment has ended in catastrophe \u2014 spiders apparently destroyed",
+      "punchline": "Artie's show-business accounting: $75K of spiders = $100K of laughs. The producer's ROI calculation on arachnid deaths is both darkly funny and perfectly Artie",
+      "craft_total": 7.81,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A great Artie line. The transactional framing of dead spiders as a cost-benefit ledger ('$75K worth of spiders... $100K worth of laughs') is both darkly funny and character-perfect \u2014 Artie treats everything, including death, as production economics. The confidence and the specific dollar amounts make it sing. Rip Torn delivers this kind of line better than anyone."
+    },
+    {
+      "index": 81,
+      "text": "Artie: 'It wasn't a sketch. It was a massive spastic fuck-up.' Larry: 'Tomato, tomato. It was broad physical comedy. It made the Ed Ames tomahawk throw look like a big piece of shit.'",
+      "characters": [
+        "Larry Sanders",
+        "Artie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Larry describes the spider chaos as a 'massive spastic fuck-up'; Artie spins it",
+      "punchline": "'Tomato, tomato' \u2014 as if the two descriptions are equivalent \u2014 then the Ed Ames tomahawk throw reference: comparing their spider chaos favorably to one of the most famous accidental comedy moments in TV history",
+      "craft_total": 8.03,
+      "impact_score": 8.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The Ed Ames tomahawk throw reference is a sharp insider callback \u2014 it's one of the most famous accidental comedy moments in talk show history (a tomahawk landing in a mannequin's crotch on The Tonight Show). Artie citing it as a benchmark ('look like a big piece of shit' compared to their disaster) is both funny in isolation and a rich showbiz-insider reference. 'Tomato, tomato' as an equivalence between 'fuck-up' and 'comedy' is also a great, fast punchline."
+    },
+    {
+      "index": 82,
+      "text": "Larry: 'Yeah. Really?' \u2014 genuinely pleased by the Ed Ames comparison, pausing to absorb it",
+      "characters": [
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "Artie has compared their spider disaster favorably to the Ed Ames tomahawk throw",
+      "punchline": "Larry's 'Yeah. Really?' \u2014 a beat of genuine ego-gratification \u2014 he's so pleased by the comparison that he needs a moment; the pause before 'Well, I did overcome my fear, didn't I?' shows the self-story reassembling",
+      "craft_total": 6.43,
+      "impact_score": 5.75,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A perfect Larry beat \u2014 his insecurity and his ego trading places in a two-word exchange. 'Yeah. Really?' is simultaneously 'is that true?' and 'of course that's true, tell me more.' Character comedy in miniature."
+    },
+    {
+      "index": 83,
+      "text": "Artie: 'It made the Ed Ames tomahawk throw look like a big piece of shit.'",
+      "characters": [
+        "Artie"
+      ],
+      "joke_types": [
+        "observational",
+        "dark_subversive"
+      ],
+      "setup": "Artie is praising the spider chaos as great television",
+      "punchline": "He invokes the legendary 1965 Ed Ames tomahawk incident on The Tonight Show as the benchmark for accidental TV comedy \u2014 and claims the spider segment surpassed it, which is high (absurd) praise",
+      "craft_total": 8.09,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's very best lines. The Ed Ames tomahawk throw is a genuine piece of TV history \u2014 the legendary accidentally-phallic tomahawk throw on The Tonight Show \u2014 and invoking it as the comparison point for the spider chaos is an inspired industry insider reference. The fact that Artie says the spider segment made it 'look like a big piece of shit' (i.e., surpassed it) is the darkly hilarious verdict of a veteran producer. 'Made the Ed Ames tomahawk throw look like a big piece of shit' is a phrase that will delight anyone who knows the reference and be explained for generations. Character integration is near-perfect: only someone of Artie's era and experience would reach for this comparison. Highly quotable."
+    },
+    {
+      "index": 84,
+      "text": "Larry: 'Well, I did overcome my fear, didn't I?' Artie: 'Yes, for a second... until you flung that poor creature to a fiery death.'",
+      "characters": [
+        "Larry Sanders",
+        "Artie"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Larry is self-congratulating on overcoming his spider fear",
+      "punchline": "'For a second... until you flung that poor creature to a fiery death' \u2014 Artie's qualification is so devastating and specific ('fiery death') that it erases Larry's accomplishment entirely",
+      "craft_total": 8.16,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the best lines in the episode. The structure is perfect \u2014 Larry builds himself up, Artie partially confirms, then the qualifier annihilates everything with forensic precision. 'Until you flung that poor creature to a fiery death' is not just funny; it reveals what actually happened during the stunt (Larry panicked and killed a spider violently) and judges it with the gravity of a manslaughter verdict. 'Fiery death' is the operative phrase \u2014 specific, dark, and devastating. Artie's 'poor creature' sympathy for the spider is also a great character touch."
+    },
+    {
+      "index": 85,
+      "text": "Larry: 'But in a funny way.' Artie: 'For a hundred times, yes.'",
+      "characters": [
+        "Larry Sanders",
+        "Artie"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Larry is trying to salvage his reputation after the 'fiery death' revelation",
+      "punchline": "'For a hundred times, yes' \u2014 Artie's weary, exaggerated affirmation; not just 'yes' but an exhausted 'yes a hundred times over,' suggesting he's been doing this for Larry for decades",
+      "craft_total": 7.16,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'For a hundred times, yes' is a great Artie line \u2014 it's not sarcasm, it's exhausted sincerity. He has been telling Larry his disasters are funny for their entire professional relationship. The 'hundred times' scale implies a history of exactly this kind of scene. Character-specific and perfectly economical."
+    },
+    {
+      "index": 86,
+      "text": "Hank's post-spider reassurance: 'The spider guy said it's a mild allergic reaction. It should run its course in about a week's time, and it's hardly noticeable.'",
+      "characters": [
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "callback",
+        "cringe_discomfort"
+      ],
+      "setup": "Hank has been bitten by a spider (the allergy the wrangler worried about earlier has manifested)",
+      "punchline": "'Hardly noticeable' \u2014 said about what is presumably a visible and unpleasant allergic reaction, combined with the wrangler's 'Oh, my' foreshadowing \u2014 is a perfect callback payoff and ironic understatement. The week-long duration adds insult.",
+      "craft_total": 8.12,
+      "impact_score": 8.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A satisfying triple callback: pays off (1) the wrangler's ominous 'Oh, my' about allergy consequences, (2) the wife's wish that a spider would bite him, and (3) Hank's general trajectory of being volunteered for what Larry refused. 'Hardly noticeable' as a euphemism for whatever is happening to Hank's face/body is a great ironic understatement. The week-long duration adds dark comedy \u2014 this won't be over quickly."
+    },
+    {
+      "index": 87,
+      "text": "Post-show: 'Oh, no, the spider guy said it's a mild allergic reaction. It should run its course in about a week's time... and it's hardly noticeable.' \u2014 then someone clearly sees it's very noticeable \u2014 beat \u2014 'Yeah? Nothing.'",
+      "characters": [
+        "Larry Sanders",
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "physical_slapstick"
+      ],
+      "setup": "Hank has apparently had an allergic reaction to the spider; someone is checking on him",
+      "punchline": "'Yeah? Nothing.' \u2014 the person looking at Hank's visible allergic reaction says nothing, which implies it's bad enough to silence them",
+      "craft_total": 7.41,
+      "impact_score": 7.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback to the allergic reaction concern pays off beautifully \u2014 and the payoff is a silence. 'Nothing' after 'Yeah?' is the visual joke (we see or infer a grotesque allergic response), and the silence is more damning than any description. Excellent callback resolution, economical and dark."
+    },
+    {
+      "index": 88,
+      "text": "Artie signs off: 'Huge laughs, Hank. Huge laughs, Larry. Huge.'",
+      "characters": [
+        "Artie"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "The episode ends with the aftermath of the spider stunt",
+      "punchline": "Artie returns to his signature 'huge laughs' phrase from the beginning of the episode \u2014 now tinged with irony given everything that happened \u2014 but delivered with the same conviction",
+      "craft_total": 7.98,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's closing callback is earned and resonant. 'Huge laughs, Hank. Huge laughs, Larry. Huge.' returns to Artie's original hard-sell phrase, now colored by everything that has happened \u2014 spiders killed, Hank allergic, sketches abandoned. But Artie delivers it with the same conviction. This is the show's thesis: in show business, the spin never stops. The three-part structure (Hank, Larry, Huge) is perfect escalating economy. One of the episode's best moments structurally."
     }
   ],
   "air_date": "1992-08-29",

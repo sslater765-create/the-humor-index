@@ -4,35 +4,36 @@
   "season": 6,
   "episode_number": 12,
   "title": "Flip (2)",
-  "humor_index": 79.8,
-  "jpm": 1.77,
-  "avg_craft": 7.14,
-  "avg_impact": 6.88,
-  "total_jokes": 44,
-  "war": 44.4,
-  "dominant_joke_types": "[\"character_comedy\", \"cringe_discomfort\", \"irony_sarcasm\"]",
-  "standout_joke_ids": "[36, 33, 12]",
+  "humor_index": 92.2,
+  "jpm": 2.29,
+  "avg_craft": 7.57,
+  "avg_impact": 7.39,
+  "total_jokes": 57,
+  "war": 84.4,
+  "dominant_joke_types": "[\"character_comedy\", \"deadpan_understatement\", \"irony_sarcasm\"]",
+  "standout_joke_ids": "[40, 29, 56]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Carol reveals she wasn't the first person Larry called, exposing his lie",
+      "text": "Larry insists Carol Burnett was the first person he called, then is immediately contradicted by Ellen DeGeneres walking out to confirm he called her on Tuesday",
       "characters": [
+        "Larry Sanders",
         "Carol Burnett",
-        "Larry Sanders"
+        "Ellen DeGeneres"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "setup_punchline",
+        "misdirection"
       ],
-      "setup": "Larry's earnest claim that Carol was the first person he called for his farewell show",
-      "punchline": "Carol's matter-of-fact contradiction revealing he's lying",
-      "craft_total": 6.8,
-      "impact_score": 6.75,
-      "quotability": 6.0,
+      "setup": "Larry effusively tells Carol she was 'literally, honestly the first person I called' for his final show, building it up with repeated emphasis",
+      "punchline": "Ellen DeGeneres walks out to a cheering audience and confirms Larry called her on Tuesday \u2014 before he called Carol on Wednesday",
+      "craft_total": 7.8,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Larry Sanders cringe - his desperate need for validation immediately backfires. Strong character integration showing his insecurity and dishonesty.",
+      "explanation": "A beautifully constructed bit that uses Larry's defining character flaw \u2014 his pathological need to flatter while being fundamentally dishonest \u2014 as the engine. The physical payoff of Ellen literally walking out mid-lie is perfect structure: the setup is all earnestness, the punchline is irrefutable evidence. It works because it's rooted entirely in who Larry is. The joke lands hardest on rewatch because you see Larry digging deeper and deeper before the trap springs. Earns its high score because it's narratively clever, character-specific, and the comedic timing of the entrance is exquisite.",
       "dialogue": [
         {
           "speaker": "",
@@ -42,45 +43,43 @@
     },
     {
       "index": 2,
-      "text": "Ellen's surprise appearance to resolve the lie",
+      "text": "Ellen: 'Um, Tuesday morning.' / Carol: 'You called me on Wednesday.'",
       "characters": [
-        "Ellen",
-        "Larry Sanders",
-        "Carol Burnett"
-      ],
-      "joke_types": [
-        "escalation",
-        "cringe_discomfort"
-      ],
-      "setup": "The tension of who Larry actually called first",
-      "punchline": "Ellen appearing to settle the dispute awkwardly",
-      "craft_total": 6.36,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Solid escalation of the conflict but predictable resolution. Functions well structurally."
-    },
-    {
-      "index": 3,
-      "text": "Ellen reveals Larry called her Tuesday morning, Carol Wednesday",
-      "characters": [
-        "Ellen",
+        "Ellen DeGeneres",
         "Carol Burnett",
         "Larry Sanders"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "The lie is about to be fully exposed",
-      "punchline": "Specific timeline proving Larry's deception",
-      "craft_total": 7.0,
-      "impact_score": 7.25,
-      "quotability": 5.5,
+      "setup": "Ellen is asked simply when Larry called her",
+      "punchline": "Her flat 'Tuesday morning' lands like a verdict, immediately followed by Carol's quiet, devastating 'You called me on Wednesday' \u2014 no anger, just the plain arithmetic of Larry's deception",
+      "craft_total": 8.12,
+      "impact_score": 8.25,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect uncomfortable specificity that makes Larry's lie undeniable. Shows his pathetic desperation clearly.",
+      "is_callback": 1,
+      "explanation": "The economy here is exceptional \u2014 two short lines deliver the entire comedic payload of the setup. The deadpan delivery (inferred from the show's no-laugh-track register) makes it land harder than any big reaction would. The audience laugh marker confirms the impact. Scores 8+ on craft because the joke is essentially pure structure and economy: maximum information, minimum words, perfectly placed."
+    },
+    {
+      "index": 3,
+      "text": "Larry: 'Please, this is my last night.' [audience laughs as he tries to use sentimentality to escape accountability]",
+      "characters": [
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Larry has been definitively caught calling Carol on Wednesday, not Tuesday",
+      "punchline": "Rather than apologize or laugh it off, Larry invokes his last night as a shield \u2014 weaponizing pathos to dodge embarrassment",
+      "craft_total": 7.42,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Pure Larry Sanders character comedy. His instinct is never to own a mistake but to pivot to self-pity. The audience laugh confirms they've clocked it too. Works as a running gag seed \u2014 he'll deploy this manipulation repeatedly through the episode.",
       "dialogue": [
         {
           "speaker": "Ellen",
@@ -94,22 +93,22 @@
     },
     {
       "index": 4,
-      "text": "Larry's desperate 'Don't do this to me... this is my last night'",
+      "text": "Larry: 'A lot of people don't know I started out as a plate spinner'",
       "characters": [
         "Larry Sanders"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Being caught in a lie on his farewell show",
-      "punchline": "His pathetic pleading for mercy",
-      "craft_total": 7.28,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Carol Burnett is praising Larry's versatility on his final show, saying she had 'no idea' he was so versatile",
+      "punchline": "Larry, with total sincerity, claims to have started as a plate spinner \u2014 an absurd, anachronistic vaudeville skill \u2014 then adds 'people will catch up eventually'",
+      "craft_total": 7.19,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect encapsulation of Larry's character - making his farewell show about his own victimhood. Pathetically authentic.",
+      "explanation": "A quietly absurd moment where Larry's narcissism and delusion collide. 'Plate spinner' is so specific and odd that it's funny on its own, but 'people will catch up eventually' \u2014 delivered with complete seriousness \u2014 elevates it. The joke is that Larry genuinely believes this about himself.",
       "dialogue": [
         {
           "speaker": "Larry Sanders",
@@ -119,23 +118,23 @@
     },
     {
       "index": 5,
-      "text": "Larry's oblivious 'I wish I still had my show so I could have you on'",
+      "text": "Carol Burnett: 'I wish I still had my show so I could have you on' \u2014 on Larry's last night, repeatedly redirecting to herself",
       "characters": [
-        "Larry Sanders",
-        "Carol Burnett"
+        "Carol Burnett",
+        "Larry Sanders"
       ],
       "joke_types": [
         "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Carol expressing the same wish first",
-      "punchline": "Larry immediately repeating it as if it were his own idea",
-      "craft_total": 7.25,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "Larry keeps trying to make the conversation about his last night; Carol keeps expressing how much she admires him",
+      "punchline": "Carol's praise keeps accidentally centering herself ('I wish I still had my show') \u2014 which is the exact same self-absorption Larry is guilty of",
+      "craft_total": 6.68,
+      "impact_score": 6.17,
+      "quotability": 5.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Shows Larry's self-absorption - he literally doesn't hear what others say, just waits for his turn to talk about himself.",
+      "explanation": "A sustained ironic comedy of competing narcissisms \u2014 two entertainment legends both trying to be gracious while subtly making it about themselves. The rewatch bonus comes from recognizing the structural mirror: Carol is doing what Larry always does. Craft is solid but the payoffs are soft \u2014 it's a mood joke more than a punchline joke.",
       "dialogue": [
         {
           "speaker": "Larry Sanders",
@@ -145,23 +144,22 @@
     },
     {
       "index": 6,
-      "text": "Carol calling Larry out as 'going out like this as a liar'",
+      "text": "Larry: 'This is my last night' [third time in the conversation, as Carol keeps talking about herself]",
       "characters": [
-        "Carol Burnett",
         "Larry Sanders"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "running_gag",
+        "character_comedy"
       ],
-      "setup": "The ongoing lie controversy",
-      "punchline": "Carol's direct, brutal assessment",
-      "craft_total": 7.45,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Carol is excitedly describing how she does Q&As on tour now, while Larry is trying to get some last-night gravitas",
+      "punchline": "Larry inserts 'this is my last night' again, now clearly a running gag \u2014 the phrase has become a comedic tic of desperate self-assertion",
+      "craft_total": 7.0,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Devastating and quotable. Carol's comedic legend status makes this burn even more effective.",
+      "explanation": "The running gag is well-established by now and each deployment earns incrementally bigger laughs. Not exceptional craft on its own, but effective as a callback and character beat \u2014 Larry's petulant need for the night to be about him is both funny and faintly tragic.",
       "dialogue": [
         {
           "speaker": "Carol",
@@ -171,22 +169,23 @@
     },
     {
       "index": 7,
-      "text": "Carol's meta comment 'It's not written like some of this stuff'",
+      "text": "Carol: 'What a shame it would be that you would go out like this as a liar'",
       "characters": [
-        "Carol Burnett"
+        "Carol Burnett",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "observational"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Talking about the spontaneity of Q&A shows",
-      "punchline": "Implying Larry's show is overly scripted",
-      "craft_total": 6.61,
-      "impact_score": 6.0,
+      "setup": "Larry has been caught lying about calling Carol first; the segment is winding down with attempted warmth",
+      "punchline": "Carol suddenly pivots from warm sentiment to drily calling Larry a liar \u2014 perfectly landing as she smiles and says 'but anyway...'",
+      "craft_total": 7.48,
+      "impact_score": 7.67,
       "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Smart meta-joke about television artificiality. Works on multiple levels for industry insiders.",
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Carol threading the needle between warm tribute and sharp puncture. The phrase 'go out like this as a liar' is perfectly calibrated \u2014 devastating but delivered with a smile. The 'but anyway...' pivot makes it funnier by refusing to dwell. Good economy, strong callback payoff.",
       "dialogue": [
         {
           "speaker": "Carol Burnett",
@@ -196,43 +195,42 @@
     },
     {
       "index": 8,
-      "text": "Sean Penn's stewardess script confrontation story",
+      "text": "Larry: 'It's not written like some of this stuff' [audience laughs \u2014 the irony that his 'spontaneous' show is clearly scripted]",
       "characters": [
-        "Sean Penn",
+        "Carol Burnett",
         "Larry Sanders"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "irony_sarcasm",
+        "meta_self_referential"
       ],
-      "setup": "Penn describing a flight interaction",
-      "punchline": "His deliberate antagonism over a script 'because I wasn't really reading it'",
-      "craft_total": 7.3,
-      "impact_score": 6.75,
-      "quotability": 6.5,
+      "setup": "Carol describes her unscripted Q&A touring shows as free-flowing and spontaneous",
+      "punchline": "She contrasts it with 'some of this stuff' \u2014 gesturing at Larry's show \u2014 implying it's heavily scripted, which is funny given the show's meta-layer (we're watching a scripted show about a scripted show)",
+      "craft_total": 6.66,
+      "impact_score": 6.0,
+      "quotability": 4.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Sean Penn character moment - needlessly confrontational and proud of it. Absurd but believable."
+      "explanation": "A gentle meta-joke that works on two levels: within the show, it's Carol poking at late-night artifice; for the HBO audience, there's a meta-layer about The Larry Sanders Show itself being scripted. Not a huge laugh moment but clever."
     },
     {
       "index": 9,
-      "text": "Larry's 'Was the script that bad?' when Penn mentions FAR violations",
+      "text": "Larry's introduction of Sean Penn: 'We've dreamed of having him on. He's probably never dreamed of being here.'",
       "characters": [
-        "Larry Sanders",
-        "Sean Penn"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "setup_punchline"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Penn explaining federal aviation regulation violations",
-      "punchline": "Larry misunderstanding it as a quality judgment",
-      "craft_total": 6.51,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Standard gushing talk-show guest introduction",
+      "punchline": "Larry mid-intro acknowledges the asymmetry \u2014 Larry fawns, Penn doesn't care \u2014 which is unusually self-aware for a host introduction",
+      "craft_total": 7.01,
+      "impact_score": 6.25,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Nice wordplay on 'FAR' - quick, clean joke that shows Larry's show biz mindset.",
+      "explanation": "A quietly good self-aware line that punctures talk-show ritual. Larry essentially admits the guest is doing them a favor while they pretend it's mutual. Character-appropriate for Larry's blend of obsequiousness and occasional honesty.",
       "dialogue": [
         {
           "speaker": "Larry Sanders",
@@ -242,23 +240,23 @@
     },
     {
       "index": 10,
-      "text": "Larry asking Sean Penn who's on the 'low end' of acting ability in Hurlyburly",
+      "text": "Sean Penn about his non-L.A. residency \u2014 Larry: 'Well, thank you for coming.' Penn: 'Sure. Let's not make a big deal about it.' Larry: 'It could be a long flight.'",
       "characters": [
-        "Larry Sanders",
-        "Sean Penn"
+        "Sean Penn",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Penn mentioning the 'spectrum of acting ability' in the cast",
-      "punchline": "Larry's tactless direct question about who sucks",
-      "craft_total": 7.16,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Larry confirms Penn doesn't live in L.A. and immediately treats it as a heroic sacrifice",
+      "punchline": "Penn deflects the gratitude ('let's not make a big deal'), but Larry insists it IS a big deal \u2014 the comedy is Larry's compulsive need to over-thank guests versus Penn's celebrity indifference",
+      "craft_total": 6.4,
+      "impact_score": 5.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Larry inappropriate question. His inability to read social cues creates perfect uncomfortable moment.",
+      "explanation": "A decent character beat \u2014 Larry's sycophancy vs. Penn's cool \u2014 but not especially original. The back-and-forth is functional rather than exceptional. Sets up the Penn segment's dynamic but isn't the funniest expression of it.",
       "dialogue": [
         {
           "speaker": "Larry Sanders",
@@ -268,22 +266,23 @@
     },
     {
       "index": 11,
-      "text": "Sean Penn's backstage roasting of Larry to the crew",
+      "text": "Sean Penn describes refusing to put away his script on the plane and the stewardess invoking FAR (Federal Aviation Regulations) \u2014 'That you're not allowed to have a script?'",
       "characters": [
-        "Sean Penn"
+        "Sean Penn",
+        "Larry Sanders"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "observational"
       ],
-      "setup": "Penn appearing to be gracious on-air",
-      "punchline": "Immediately trashing Larry as 'the most insecure man I've ever met'",
-      "craft_total": 7.59,
-      "impact_score": 7.83,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Sean Penn is telling a story about a stewardess asking him to put away his reading material for landing",
+      "punchline": "The absurdity that the FAA apparently has a regulation that could be construed as covering scripts \u2014 'So marshals could come in here right now because I've violated a FAR'",
+      "craft_total": 6.85,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant behind-the-scenes revelation showing the show's core dynamic. Penn's brutal honesty contrasts perfectly with on-air politeness.",
+      "explanation": "The joke is character-specific to Sean Penn's famous combativeness and his self-important artist persona. The detail that he wasn't even reading the script \u2014 'just trying to annoy her' \u2014 is the best line and reveals character. Good but not exceptional; the story meanders slightly before landing.",
       "dialogue": [
         {
           "speaker": "Sean Penn",
@@ -293,22 +292,22 @@
     },
     {
       "index": 12,
-      "text": "Penn describing Larry asking 'How was I?' before director says cut",
+      "text": "Sean Penn: 'I just decided no.' [matter-of-fact, about refusing a stewardess on a plane]",
       "characters": [
         "Sean Penn"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "deadpan_understatement"
       ],
-      "setup": "Penn describing Larry's insecurity on set",
-      "punchline": "The specific pathetic behavior of needing instant validation",
-      "craft_total": 7.73,
-      "impact_score": 7.83,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "The stewardess tells Penn he has to put away his script for landing",
+      "punchline": "'I just decided no' \u2014 delivered with the complete calm of a man who has never once considered that rules might apply to him",
+      "craft_total": 7.54,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect character detail that's both funny and painfully recognizable. Shows deep understanding of performer psychology.",
+      "explanation": "Three words that perfectly skewer Sean Penn's celebrity entitlement. The economy is exceptional \u2014 'I just decided no' contains an entire worldview. It works because it sounds exactly like something Sean Penn would say, delivered straight without self-awareness. The craft here is in how much character is compressed into a single short sentence.",
       "dialogue": [
         {
           "speaker": "Sean Penn",
@@ -318,22 +317,22 @@
     },
     {
       "index": 13,
-      "text": "But he was constantly after her, trying to get in her trailer.",
+      "text": "Larry: 'Was the script that bad?' [after Penn describes defying the stewardess over a script]",
       "characters": [
-        "Sean Penn"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "character_comedy",
-        "dark_subversive"
+        "setup_punchline",
+        "deadpan_understatement"
       ],
-      "setup": "Penn's continued Larry horror stories",
-      "punchline": "Implication Larry was hitting on Penn's wife",
-      "craft_total": 7.22,
-      "impact_score": 7.25,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Sean Penn has just described his principled stand against putting away his script on the plane, framed as a matter of artistic integrity",
+      "punchline": "Larry punctures the whole self-important story with 'Was the script that bad?' \u2014 reframing Penn's stand as possibly just embarrassment about the material",
+      "craft_total": 7.62,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Adds another layer to Larry's patheticness, though feels slightly gratuitous compared to the insecurity material.",
+      "explanation": "A perfect talk-show host joke. Larry appears to be playing straight-man throughout the story, then lands this line that reframes everything. The implication \u2014 maybe Penn wanted to hide the script because it was terrible \u2014 is a sharp Hollywood insider burn. Economy is near-perfect. Penn's laugh confirms it landed. One of the episode's best quick jokes.",
       "dialogue": [
         {
           "speaker": "Sean Penn",
@@ -343,22 +342,22 @@
     },
     {
       "index": 14,
-      "text": "Tim Allen's aggressive entrance: 'Hey, close the fucking door!'",
+      "text": "Penn on defying the stewardess: 'I was just wanting \u2014 trying to annoy her. Just trying to annoy the stewardess.' [applause]",
       "characters": [
-        "Tim Allen"
+        "Sean Penn"
       ],
       "joke_types": [
         "character_comedy",
-        "physical_slapstick"
+        "deadpan_understatement"
       ],
-      "setup": "Expecting a typical guest entrance",
-      "punchline": "Allen immediately being hostile and profane",
-      "craft_total": 6.85,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Larry asks why Penn needed to keep the script during landing \u2014 implying artistic necessity",
+      "punchline": "Penn reveals he wasn't even reading it \u2014 he just wanted to annoy the stewardess. The principled stand was purely petulant",
+      "craft_total": 7.79,
+      "impact_score": 7.67,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sharp character contrast with expected TV friendliness. Allen's abrasiveness is immediately established.",
+      "explanation": "The best moment of the Penn segment. The entire story has been framed as a First Amendment/artist's rights issue \u2014 Penn resisting petty authority. Then he deflates his own mythology completely: 'just trying to annoy her.' It's the funniest possible reframing of celebrity entitlement as simple, childish spite. The audience applauds because it's unexpectedly honest. Strong structure, exceptional character integration \u2014 this captures Sean Penn's persona perfectly.",
       "dialogue": [
         {
           "speaker": "Tim Allen",
@@ -368,22 +367,23 @@
     },
     {
       "index": 15,
-      "text": "Allen's crude comparison: 'I took a shit this morning with more talent'",
+      "text": "Penn mentions the Hurlyburly cast: 'Kevin Spacey, Anna Paquin, my wife Robin, Garry Shandling...' \u2014 Larry: 'What a fantastic cast, huh?'",
       "characters": [
-        "Tim Allen"
+        "Sean Penn",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "irony_sarcasm",
+        "meta_self_referential"
       ],
-      "setup": "Allen dismissing Jon Stewart",
-      "punchline": "Extremely crude and specific insult",
-      "craft_total": 6.57,
-      "impact_score": 6.33,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Sean Penn lists the impressive cast of Hurlyburly",
+      "punchline": "Garry Shandling is listed among genuine movie stars (Spacey, Paquin, Penn's wife Robin Wright), and Larry/Garry immediately says 'What a fantastic cast, huh?' \u2014 shameless self-congratulation that Penn then dryly agrees with",
+      "craft_total": 7.93,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Crude but character-appropriate. Shows Allen's vulgarity but relies somewhat on shock value.",
+      "explanation": "A glorious meta-moment: Garry Shandling (playing Larry Sanders, who is loosely Garry Shandling) is in a real movie with Sean Penn, and the joke layers the real and fictional. Larry calling himself a 'fantastic cast' via the 'what a fantastic cast, huh?' line is both Larry's narcissism AND Shandling winking at the audience. Rewatch bonus because you catch more layers each time.",
       "dialogue": [
         {
           "speaker": "Tim Allen",
@@ -393,22 +393,23 @@
     },
     {
       "index": 16,
-      "text": "Allen's bitter 'Fucking celebrity circle jerk' comment during on-air sentiment",
+      "text": "Larry: 'Who's on the low end of the ability there?' Penn: 'I'm not gonna go there... but we made a great movie.'",
       "characters": [
-        "Tim Allen"
+        "Larry Sanders",
+        "Sean Penn"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "dark_subversive"
+        "setup_punchline",
+        "irony_sarcasm"
       ],
-      "setup": "Larry giving sincere farewell speech on-air",
-      "punchline": "Allen's cynical dismissal of the whole enterprise",
-      "craft_total": 7.52,
+      "setup": "Larry notes that the Hurlyburly cast represents 'the spectrum of acting ability' \u2014 clearly setting up Penn to slag someone",
+      "punchline": "Penn demurs with 'I'm not gonna go there' \u2014 but the pause before 'but we made a great movie' implies he absolutely would, and the audience fills in the blank (Shandling)",
+      "craft_total": 7.35,
       "impact_score": 7.17,
-      "quotability": 9.0,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect meta-commentary on television sentiment. Brutally honest and quotable, cuts through the artifice.",
+      "explanation": "The joke works on implication rather than statement \u2014 both more elegant and funnier. Penn's restraint is the punchline, because the audience knows exactly who the low end is. The unsaid is funnier than anything Penn could say aloud.",
       "dialogue": [
         {
           "speaker": "Tim Allen",
@@ -418,22 +419,22 @@
     },
     {
       "index": 17,
-      "text": "Tim Allen's 'Jungle 2 Jungle? Underrated.' exit line",
+      "text": "Backstage: Penn tells a producer that Shandling is 'the most insecure man I've ever met in my life' \u2014 'Before our director would even say cut, he'd look at me and say, How was I? Relentless.'",
       "characters": [
-        "Tim Allen"
+        "Sean Penn"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "absurdist"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Allen making a quick exit",
-      "punchline": "Defending his widely panned movie with deadpan confidence",
-      "craft_total": 7.67,
-      "impact_score": 7.67,
-      "quotability": 8.5,
+      "setup": "Penn is backstage after the on-air segment; a producer compliments the segment",
+      "punchline": "Penn delivers a devastating character takedown of Shandling: before the director even called cut, Shandling was asking for validation \u2014 'Relentless'",
+      "craft_total": 8.33,
+      "impact_score": 8.5,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect exit line - absurd self-promotion delivered with complete seriousness. Economy and timing are excellent.",
+      "explanation": "This is Garry Shandling writing a vicious, deeply self-aware joke about his own insecurity. Penn is describing Larry Sanders but also Garry Shandling \u2014 the meta-collapse is thrilling. 'Before the director even says cut' is perfectly specific. 'Relentless' as the button is great economy. Character integration is exceptional because only this show, with this level of self-examination, could make this joke.",
       "dialogue": [
         {
           "speaker": "Tim Allen",
@@ -443,22 +444,22 @@
     },
     {
       "index": 18,
-      "text": "Oh, my god. Jerry Seinfeld!",
+      "text": "Penn: 'I don't know if he knew that my wife and I were together, but he was constantly after her, trying to get in her trailer.'",
       "characters": [
-        "Hank"
+        "Sean Penn"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Hank preparing heartfelt farewell speech",
-      "punchline": "Immediately abandons it when bigger star arrives",
-      "craft_total": 7.45,
-      "impact_score": 7.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Penn is already on a roll describing Shandling's neediness; the story escalates",
+      "punchline": "Penn casually drops that Shandling was apparently pursuing his wife Robin Wright \u2014 'trying to get in her trailer' \u2014 said with the same deadpan matter-of-factness as the previous anecdote",
+      "craft_total": 7.37,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Hank moment - his superficiality exposed as he ditches emotional sincerity for celebrity worship.",
+      "explanation": "A dark escalation joke \u2014 the 'constant insecurity' story pivots into something more scandalous. The straight-faced delivery ('I don't know if he knew we were together') implies Sean Penn might have underreacted, which is its own joke. Deeply character-specific to the Shandling self-flagellation that runs through the show.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -468,23 +469,22 @@
     },
     {
       "index": 19,
-      "text": "This show isn't going to be syndicated. Oh, that's right. That's me.",
+      "text": "Tim Allen bursts in backstage: 'Hey, close the fucking door!' \u2014 immediately launching into Hollywood agent gossip about Jon Stewart",
       "characters": [
-        "Jerry Seinfeld",
-        "Larry"
+        "Tim Allen"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "reaction_beat"
       ],
-      "setup": "Jerry mentions syndication as farewell comfort",
-      "punchline": "Realizes he's thinking of his own show's success",
-      "craft_total": 7.25,
-      "impact_score": 7.25,
-      "quotability": 7.0,
+      "setup": "We cut to a backstage scene; Tim Allen enters",
+      "punchline": "His opening line is an aggressive command rather than a greeting \u2014 establishing his character as a blunt, profane Hollywood survivor before any context is given",
+      "craft_total": 6.5,
+      "impact_score": 6.17,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Nice self-aware moment playing on Seinfeld's massive success vs Larry's moderate ratings. Good economy.",
+      "explanation": "Decent character establishment \u2014 the unexpectedness of Tim Allen being the agent-world cynic is funny casting. But the joke is fairly broad and relies on the surprise of profanity rather than wit.",
       "dialogue": [
         {
           "speaker": "Jerry Seinfeld",
@@ -494,22 +494,22 @@
     },
     {
       "index": 20,
-      "text": "Jerry's quick exit after realizing he confused shows: 'Then you're definitely doing the right thing'",
+      "text": "Agent about Jon Stewart leaving: 'He says he caught me in a lie. Right. Oh, my god, I told a fuckin' lie. I told him his fuckin' show would run for 20 years. He didn't seem to mind that lie.'",
       "characters": [
-        "Jerry Seinfeld"
+        "Tim Allen"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "irony_sarcasm",
+        "dark_subversive"
       ],
-      "setup": "Learning Larry's show won't be syndicated",
-      "punchline": "Immediately agreeing Larry should quit",
-      "craft_total": 7.73,
-      "impact_score": 7.33,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfectly cutting line delivered with Seinfeld's signature casualness. Brutal but feels effortless.",
+      "setup": "Jon Stewart has left the agency because he caught the agent in a lie",
+      "punchline": "The agent's contempt is that he told Stewart his show would run 20 years \u2014 an obvious, flattering lie \u2014 and Stewart was fine with that one. The lie he objected to was apparently something less comfortable",
+      "craft_total": 7.38,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sharp Hollywood satire \u2014 the joke is that everyone in the industry operates on comfortable lies, and clients only object when the lie is uncomfortable. The 'he didn't seem to mind that lie' turn is excellent. Cynical but earned, a microcosm of the entire show's worldview.",
       "dialogue": [
         {
           "speaker": "Jerry Seinfeld",
@@ -519,23 +519,22 @@
     },
     {
       "index": 21,
-      "text": "Clint Black's 'They said if I did real well, you'd have me back again'",
+      "text": "Agent: 'He's got nothing. I'm telling you, I took a shit this morning with more talent.'",
       "characters": [
-        "Clint Black",
-        "Larry Sanders"
+        "Tim Allen"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "observational"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Black being gracious about appearing",
-      "punchline": "Not realizing this is literally Larry's last show",
-      "craft_total": 6.86,
-      "impact_score": 6.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Agent is venting about Jon Stewart (in 1998, before Stewart took over The Daily Show)",
+      "punchline": "The scatological hyperbole \u2014 'I took a shit this morning with more talent' \u2014 lands as both gross and a funny period joke (this would age spectacularly given Stewart's later career)",
+      "craft_total": 6.34,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good situational irony but somewhat predictable. Works well for the farewell context.",
+      "explanation": "The rewatch bonus is enormous \u2014 this line about Jon Stewart having no talent aged into one of the great unintentional irony jokes in TV history, given Stewart's subsequent cultural dominance. In 1998, it's a solid gross hyperbole; in retrospect, it's a masterclass in dramatic irony. Scored at face value for when it aired.",
       "dialogue": [
         {
           "speaker": "Clint Black",
@@ -545,42 +544,41 @@
     },
     {
       "index": 22,
-      "text": "The mystery surprise that was forgotten",
+      "text": "Agent and producer share a joint backstage \u2014 'Where'd you get it?' 'Jimmy Federson. He gave it to me at the Simon Wiesenthal dinner.'",
       "characters": [
-        "Clint Black",
-        "Larry Sanders"
+        "Tim Allen"
       ],
       "joke_types": [
-        "absurdist",
-        "cringe_discomfort"
+        "dark_subversive",
+        "absurdist"
       ],
-      "setup": "Black mentioning a planned surprise",
-      "punchline": "Nobody remembering what it was supposed to be",
-      "craft_total": 6.94,
-      "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Two TV industry figures share marijuana backstage",
+      "punchline": "The joint came from the Simon Wiesenthal Center dinner \u2014 the most solemn, Holocaust-remembrance context imaginable as the source of weed",
+      "craft_total": 7.77,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Mild absurdist humor about TV production chaos. Functional but not particularly memorable."
+      "explanation": "A genuinely original and audacious joke. The Simon Wiesenthal Center dinner is such a specific and incongruous source for marijuana that it's both brilliantly funny and slightly transgressive. The economy is perfect \u2014 just naming the event is enough. This is the kind of insider Hollywood joke that only The Larry Sanders Show could tell, and it justifies the 8+ score. The specificity ('Jimmy Federson' as a named dealer) adds another layer of deadpan absurdity."
     },
     {
       "index": 23,
-      "text": "Larry's impatient 'Play the damn song' interrupting Clint's setup",
+      "text": "Agent: 'I can't tell you how easy our job would be if we didn't have to deal with talent. But none of us are happy.'",
       "characters": [
-        "Larry Sanders"
+        "Tim Allen"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "observational",
+        "dark_subversive"
       ],
-      "setup": "Black being thoughtful about his song choice",
-      "punchline": "Larry rudely cutting him off",
-      "craft_total": 6.91,
-      "impact_score": 6.75,
+      "setup": "The agents are venting about difficult clients",
+      "punchline": "'But none of us are happy' \u2014 the pivot from complaining about talent to acknowledging universal misery, delivered as a resigned acceptance rather than a complaint",
+      "craft_total": 7.04,
+      "impact_score": 6.33,
       "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Larry impatience. Shows his inability to appreciate genuine sentiment even on his own farewell.",
+      "explanation": "A solid industry-insider laugh \u2014 the nihilism of Hollywood agents summed up in one sentence. Functional but not exceptional. The joke is mostly in the delivery context rather than the words themselves.",
       "dialogue": [
         {
           "speaker": "Larry Sanders",
@@ -590,23 +588,22 @@
     },
     {
       "index": 24,
-      "text": "Got another job. Oh, great. Tell me. It sucks.",
+      "text": "Producer to Tim Allen on-air: 'Everybody in the business is gonna miss you so much.' Agent, under his breath immediately after: 'Fucking celebrity circle jerk.'",
       "characters": [
-        "Beverly",
-        "Artie"
+        "Tim Allen"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Beverly mentioning new employment",
-      "punchline": "Immediate crushing of any optimism",
-      "craft_total": 7.08,
-      "impact_score": 6.75,
-      "quotability": 6.5,
+      "setup": "On-camera Larry and Tim Allen are exchanging warm farewell sentiments",
+      "punchline": "Cut to backstage \u2014 or said privately \u2014 agent mutters 'Fucking celebrity circle jerk,' completely deflating the on-air sincerity",
+      "craft_total": 7.62,
+      "impact_score": 7.67,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect character beat - Beverly's matter-of-fact pessimism delivered with deadpan precision.",
+      "explanation": "The entire Larry Sanders Show thesis in three words. The joke works because the show earns its cynicism \u2014 we've just watched a genuinely emotional tribute segment, and this line is the necessary antidote. 'Celebrity circle jerk' is highly quotable and precisely captures the show's worldview. Strong economy.",
       "dialogue": [
         {
           "speaker": "Beverly",
@@ -628,22 +625,22 @@
     },
     {
       "index": 25,
-      "text": "Artie's new job description: asking 'fucking eggheads' about the Monroe Doctrine",
+      "text": "Larry to Tim Allen as he's leaving: 'Jungle 2 Jungle? Underrated.'",
       "characters": [
-        "Artie"
+        "Larry Sanders"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "irony_sarcasm"
       ],
-      "setup": "Artie describing his Jeopardy job",
-      "punchline": "His crude, dismissive characterization of contestants",
-      "craft_total": 7.17,
-      "impact_score": 6.67,
-      "quotability": 7.5,
+      "setup": "Tim Allen is rushing out; Larry is calling after him with a final compliment",
+      "punchline": "The most sincere thing Larry can find to say about Tim Allen's career is that 'Jungle 2 Jungle' \u2014 a critically panned Tim Allen film \u2014 is 'underrated'",
+      "craft_total": 8.11,
+      "impact_score": 8.17,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great character-specific humor. Artie's contempt for intellectuals while working in intellectual property is perfectly him.",
+      "explanation": "One of the episode's best jokes. The economy is extraordinary \u2014 just four words convey Larry's desperate need to connect with every guest, his fundamental shallowness (THIS is his Tim Allen compliment?), and a perfect industry-insider joke about the film's quality. 'Underrated' applied to Jungle 2 Jungle is so wrong that it's devastating. It's also pure Larry Sanders: he's not being sarcastic, he genuinely seems to mean it, which makes it funnier. Highly quotable and earns the 8+ with its economy and character integration.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -653,23 +650,22 @@
     },
     {
       "index": 26,
-      "text": "Phil considering Hank's $300/week job with no benefits",
+      "text": "Running gag: 'No flipping. We'll be right back.' \u2014 repeated after every commercial break throughout the episode",
       "characters": [
-        "Phil",
-        "Artie"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "running_gag",
         "character_comedy"
       ],
-      "setup": "Phil describing Hank's job offer",
-      "punchline": "The pathetically low pay and lack of benefits",
-      "craft_total": 6.91,
-      "impact_score": 6.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Standard commercial break sign-off",
+      "punchline": "On the final night of the show, 'no flipping' is both Larry's usual catchphrase and an increasingly poignant plea not to abandon him \u2014 building toward the 'you may now flip' payoff",
+      "craft_total": 7.98,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Shows the desperation of unemployed TV workers and Hank's cheapness. Solid character work.",
+      "explanation": "Scored as the running gag aggregate \u2014 each individual instance contributes to the payoff of joke #35. The cumulative effect of 'no flipping' across the episode earns its place as a structural comedy device. The phrase becomes funnier and sadder with each repetition as the finale approaches.",
       "dialogue": [
         {
           "speaker": "Phil",
@@ -679,41 +675,45 @@
     },
     {
       "index": 27,
-      "text": "Bruno's interruption and angry reaction to being bumped",
+      "text": "Hank begins his heartfelt thank-you speech \u2014 Larry interrupts: 'Oh, my god. Jerry Seinfeld!'",
       "characters": [
-        "Bruno"
+        "Larry Sanders",
+        "Hank Kingsley",
+        "Jerry Seinfeld"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Bruno arriving for his scheduled appearance",
-      "punchline": "His outrage at being bumped from the final show",
-      "craft_total": 7.01,
-      "impact_score": 6.75,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Hank has been waiting the entire episode for his moment to deliver a sincere thank-you speech; he finally gets the floor and begins",
+      "punchline": "Larry immediately cuts him off to introduce Jerry Seinfeld \u2014 the most dismissive possible treatment of Hank's big moment, and completely in character",
+      "craft_total": 8.3,
+      "impact_score": 8.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalation moment showing how the farewell show chaos affects everyone. Functional guest bit."
+      "explanation": "Structurally brilliant. Hank's entire arc in this episode has been building to this speech, and it gets cut off by the exact thing that defines his relationship with Larry \u2014 being dismissed the moment someone more important arrives. The joke earns every point because it requires knowing Hank's character and his place in the hierarchy. The timing \u2014 Larry's sudden explosion of enthusiasm for Seinfeld mid-Hank-speech \u2014 is perfect. This is character comedy at the highest level."
     },
     {
       "index": 28,
-      "text": "Bruno's homophobic 'A man singing to a man. How fuckin' sick is that?'",
+      "text": "Jerry Seinfeld to Larry: 'I think you're really doing the right thing.' \u2014 Larry: 'Thank you. That means so much to me.' \u2014 Seinfeld: 'And that was very touching, by the way, what you were saying.' Larry: 'Thank you. That was just the first part. I wasn't finished.'",
       "characters": [
-        "Bruno"
+        "Jerry Seinfeld",
+        "Larry Sanders",
+        "Hank Kingsley"
       ],
       "joke_types": [
-        "dark_subversive",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Bruno's general anger",
-      "punchline": "His crude, bigoted reaction to the emotional moment",
-      "craft_total": 6.44,
-      "impact_score": 5.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Crude character moment that relies on shock value. Shows Bruno's character but feels dated and lazy.",
+      "setup": "Seinfeld is complimenting what he just heard \u2014 which was actually Hank's speech, not Larry's",
+      "punchline": "Hank interjects that it was 'just the first part' \u2014 Seinfeld was moved by Hank, but everyone (including Seinfeld) assumes it was Larry's speech",
+      "craft_total": 7.24,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A nice layered joke: Seinfeld's compliment goes to the wrong person (Larry accepts it), and Hank's correction \u2014 'that was just the first part, I wasn't finished' \u2014 is both funny and sad. The joke compounds Hank's humiliation while Larry basks in unearned praise. Good callback structure.",
       "dialogue": [
         {
           "speaker": "Bruno",
@@ -723,22 +723,23 @@
     },
     {
       "index": 29,
-      "text": "A man singing to a man. How fuckin' sick is that?",
+      "text": "Seinfeld: 'We're certainly going to enjoy watching you in syndication after this.' Larry: 'This show isn't going to be syndicated.' Seinfeld: 'Oh, that's right. That's me. That is you. You're thinking of you.'",
       "characters": [
-        "Bruno"
+        "Jerry Seinfeld",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "meta_self_referential",
+        "irony_sarcasm"
       ],
-      "setup": "Clint Black performing emotional farewell song",
-      "punchline": "Bruno's homophobic dismissal of sentiment",
-      "craft_total": 5.93,
-      "impact_score": 5.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Seinfeld is offering a warm sentiment about Larry's legacy",
+      "punchline": "He accidentally references his own Seinfeld syndication deal \u2014 one of the most lucrative in TV history \u2014 rather than Larry's show, which is ending without syndication. Larry corrects him and Seinfeld confirms 'you're thinking of you' with cheerful self-awareness",
+      "craft_total": 8.57,
+      "impact_score": 8.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Character-appropriate but relies on cheap homophobic humor. Fits Bruno but not particularly clever.",
+      "explanation": "A genuinely exceptional joke that requires the real-world knowledge that Seinfeld was at this exact moment the most syndicating show in TV history, and The Larry Sanders Show was an acclaimed HBO series that would never see that money. The contrast is devastatingly specific. Seinfeld's cheerful 'that is you, you're thinking of you' is a perfect button \u2014 he's not mean, just obliviously rich. This is insider comedy at its finest and earns the 8+ score comfortably.",
       "dialogue": [
         {
           "speaker": "Bruno",
@@ -748,22 +749,24 @@
     },
     {
       "index": 30,
-      "text": "There is no 'another time.' The party is over. This is it.",
+      "text": "After Hank continues his speech: 'Every night?' Seinfeld asks; Hank confirms 'Every night.' Seinfeld: 'Then you're definitely doing the right thing.'",
       "characters": [
-        "Bruno"
+        "Jerry Seinfeld",
+        "Hank Kingsley",
+        "Larry Sanders"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "cringe_discomfort"
+        "setup_punchline",
+        "deadpan_understatement"
       ],
-      "setup": "Larry offering to have Bruno on another time",
-      "punchline": "Bruno pointing out the obvious - it's the final show",
-      "craft_total": 6.81,
-      "impact_score": 6.33,
-      "quotability": 7.0,
+      "setup": "Hank is delivering his speech about what a gift Larry's show has been to him, describing how every night was a gift",
+      "punchline": "Seinfeld's 'then you're definitely doing the right thing' reframes Hank's tribute as evidence that the show should end \u2014 implying that if Hank benefited that much, it's been going on too long",
+      "craft_total": 8.18,
+      "impact_score": 8.17,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Bruno calling out Larry's automatic talk show deflection with harsh reality.",
+      "explanation": "A perfectly economical reversal \u2014 Seinfeld takes Hank's sincere tribute and uses it as evidence that cancellation is correct. The joke also contains a subtle dig at Hank (if Hank thrived off this, maybe it wasn't high culture). The deadpan delivery and economy earn it. Strong structure: question, confirmation, pivot.",
       "dialogue": [
         {
           "speaker": "Bruno",
@@ -773,22 +776,23 @@
     },
     {
       "index": 31,
-      "text": "Larry's joke about ending up with 'The Ropers' 9 times out of 10",
+      "text": "Clint Black: 'They said if I did real well, you'd have me back again.' [pause] 'Well, let's see how it goes.'",
       "characters": [
+        "Clint Black",
         "Larry Sanders"
       ],
       "joke_types": [
-        "observational",
-        "meta_self_referential"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Larry's speech about trying to do something fresh each night",
-      "punchline": "Reference to notoriously bad Three's Company spin-off",
-      "craft_total": 7.39,
-      "impact_score": 7.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Clint Black is thanking the audience for participating in 'this evening' \u2014 Larry's finale",
+      "punchline": "He's been told he'd get to come back if he does well \u2014 on the final episode of a show that is ending. The deadpan 'well, let's see how it goes' suggests either he doesn't know the show is ending or he's playing along",
+      "craft_total": 6.82,
+      "impact_score": 6.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Smart industry reference that's both self-deprecating and accurate about TV failure rates. Good insider humor.",
+      "explanation": "A gentle absurdist joke playing on the futility of performing for 'next time' on a show's last episode. Slightly underplayed but that's appropriate for the tone. The humor is in the impossibility of what he's been promised.",
       "dialogue": [
         {
           "speaker": "Larry Sanders",
@@ -798,22 +802,23 @@
     },
     {
       "index": 32,
-      "text": "Larry's 'I can't get off the stool' physical comedy",
+      "text": "Clint Black: 'I had a surprise for you.' Larry: 'What would that be?' Clint: 'It was a surprise for me \u2014 they forgot to tell me what it was.'",
       "characters": [
+        "Clint Black",
         "Larry Sanders"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "cringe_discomfort"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Larry trying to end his show gracefully",
-      "punchline": "Being physically unable to dismount the stool",
-      "craft_total": 7.36,
-      "impact_score": 7.33,
+      "setup": "Clint Black sets up a dramatic announcement about a surprise for Larry",
+      "punchline": "The surprise was also a surprise to Black \u2014 he wasn't informed of his own bit",
+      "craft_total": 6.62,
+      "impact_score": 5.83,
       "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect physical metaphor for Larry's inability to gracefully exit. Pathetic but endearing final moment.",
+      "explanation": "A neatly structured bit that plays on the chaos of live TV production \u2014 even the performers don't know what's happening. The 'so it's a surprise for everybody / for both of us' exchange is a clean double.",
       "dialogue": [
         {
           "speaker": "Larry Sanders",
@@ -823,22 +828,23 @@
     },
     {
       "index": 33,
-      "text": "Larry's final concern: 'I hope we beat Leno'",
+      "text": "Clint Black begins an elaborate emotional speech about what he's going to sing \u2014 Larry: 'Play the damn song.'",
       "characters": [
-        "Larry Sanders"
+        "Larry Sanders",
+        "Clint Black"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "deadpan_understatement"
       ],
-      "setup": "Larry's emotional farewell and physical distress",
-      "punchline": "His petty competitive concern even in defeat",
-      "craft_total": 8.04,
-      "impact_score": 7.67,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Clint Black has been winding up for an extended speech about finding the right song that 'embodies what we all feel,' including a mention of Larry's shrink",
+      "punchline": "Larry, who has been patiently watching this balloon expand, just says 'Play the damn song' \u2014 cutting through all the ceremony",
+      "craft_total": 7.13,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect encapsulation of Larry's character - even at his lowest, most vulnerable moment, he's thinking about ratings competition. Brilliant final character beat.",
+      "explanation": "Four words that deflate an entire comedic build. Pure Larry \u2014 impatient, uncomfortable with sentimentality, cutting through the very ceremony he ostensibly wants. The joke works because we've watched Larry demand sentimentality all episode, and now that he's getting it, he can't stand it. Good character consistency.",
       "dialogue": [
         {
           "speaker": "Larry Sanders",
@@ -848,22 +854,22 @@
     },
     {
       "index": 34,
-      "text": "Artie's observation about the desk position: 'If you had done it that way, we'd probably still be on the air'",
+      "text": "Beverly's new job: 'I'm gonna be the contestant coordinator for Jeopardy.' \u2014 'I get to spend all day asking a bunch of fucking eggheads if they know anything about the Monroe Doctrine.'",
       "characters": [
-        "Artie"
+        "Beverly"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "deadpan_understatement"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Looking at the empty set",
-      "punchline": "Suggesting a minor set change could have saved the show",
-      "craft_total": 7.15,
+      "setup": "Beverly has a new job after the show ends",
+      "punchline": "The Jeopardy job is described with complete contempt \u2014 'bunch of fucking eggheads' \u2014 by someone who presumably has to pretend to be enthusiastic about them",
+      "craft_total": 7.02,
       "impact_score": 6.67,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Artie deadpan wisdom. Absurd but delivered with such matter-of-fact authority it almost seems reasonable.",
+      "explanation": "The joke is in the gap between what Jeopardy represents (intelligence, culture) and Beverly's complete disdain for it. 'Monroe Doctrine' as the example question is perfectly specific. Solid industry-adjacent joke.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -873,21 +879,22 @@
     },
     {
       "index": 35,
-      "text": "And the part about whining about my ass. You're gonna miss that a little bit, aren't you?",
+      "text": "Beverly: 'Hank offered me a job. $300 a week with no benefits.' Pause. 'I'm sorry.' 'I'm thinking of taking it.'",
       "characters": [
-        "Larry"
+        "Beverly"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Artie's list of Larry's annoying habits",
-      "punchline": "Larry focusing on the ass comment with typical narcissism",
-      "craft_total": 7.09,
-      "impact_score": 6.5,
-      "quotability": 6.5,
+      "setup": "Beverly describes Hank's job offer as a genuine alternative to Jeopardy",
+      "punchline": "The offer is so insulting ($300/week with no benefits) that it warrants an apology \u2014 but Beverly is still considering it, which makes both the offer and Beverly's situation funnier and sadder",
+      "craft_total": 7.15,
+      "impact_score": 6.83,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Larry's self-absorption - even criticism becomes about his physical insecurities. Very character-specific.",
+      "explanation": "A great Hank joke delivered in absentia \u2014 the $300/no benefits offer is so Hank that it doesn't even need setup. The 'I'm sorry' pause is excellent structure. The final 'I'm thinking of taking it' reveals Beverly's situation and Hank's power in one efficient beat.",
       "dialogue": [
         {
           "speaker": "Larry",
@@ -897,22 +904,22 @@
     },
     {
       "index": 36,
-      "text": "Hank's explosive rant about being treated like 'the little fucking dog at the end of the couch'",
+      "text": "Artie bumps a guest ('Bruno') from the show mid-song: 'The man is singing a fucking good-bye song.' \u2014 Bruno protests about next time \u2014 Artie: 'There IS no next time. The party is over. This is it.'",
       "characters": [
-        "Hank Kingsley"
+        "Artie"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Hank finally expressing his frustration",
-      "punchline": "His specific, vivid metaphor for his role on the show",
-      "craft_total": 8.21,
-      "impact_score": 8.33,
-      "quotability": 9.5,
+      "setup": "A guest is being bumped from the final show as Clint Black sings; Artie is enforcing it with his usual brutality",
+      "punchline": "Artie's 'there is no next time' has both practical truth (the show is ending) and existential weight \u2014 it doubles as a comment on mortality and television's transience",
+      "craft_total": 7.78,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant metaphor that perfectly captures Hank's position. The 'little fucking dog' line is instantly iconic and painfully accurate.",
+      "explanation": "Pure Artie \u2014 ruthless, clear-eyed, no sentimentality about the mechanics. The comedy is in his complete absence of consolation: 'there is no next time, the party is over.' Rip Torn's delivery is the joke as much as the words. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Hank Kingsley",
@@ -922,22 +929,22 @@
     },
     {
       "index": 37,
-      "text": "Thank you for not letting me say my thank you. I mean, I knew you guys were pieces of shit, but I, you know, I had no idea.",
+      "text": "Artie watches Clint Black sing a goodbye song to Larry: 'A man singing to a man. How fuckin' sick is that?' [then immediately sobs]",
       "characters": [
-        "Hank"
+        "Artie"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Hank's interrupted farewell speech earlier",
-      "punchline": "Passive-aggressive resentment dressed as gratitude",
-      "craft_total": 6.91,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Perfect Hank pettiness - turning his victimhood into an attack while maintaining victim status.",
+      "setup": "Artie has been professionally brutal throughout; now Clint Black is singing and the emotion is hitting the room",
+      "punchline": "Artie's response to being moved is to first express homophobic deflection ('how fuckin' sick is that?') and then immediately break down sobbing \u2014 the deflection making the emotion funnier",
+      "craft_total": 7.31,
+      "impact_score": 7.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's finest jokes. Artie's character has been all edges and profanity \u2014 the idea that he's crying at a country singer serenading his host is the perfect character reversal. The homophobic deflection ('how fuckin' sick is that?') is both funny and revealing: Artie has to protect himself from the emotion by attacking it first. Then he immediately cries anyway. The beat is structured as: defensive joke \u2192 immediate contradiction by his own body. This is exceptional character comedy \u2014 only Artie, only this show.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -947,22 +954,23 @@
     },
     {
       "index": 38,
-      "text": "Hank's honest admission: 'Well, more money than pussy'",
+      "text": "Artie standing alone, sobbing \u2014 then catching himself and covering with a cough",
       "characters": [
-        "Hank Kingsley"
+        "Artie"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "reaction_beat",
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Hank listing benefits of being on the show",
-      "punchline": "His matter-of-fact correction about which benefit was greater",
-      "craft_total": 7.65,
-      "impact_score": 7.33,
-      "quotability": 8.0,
+      "setup": "Artie, the show's no-nonsense veteran producer, has just delivered his 'party is over' speech",
+      "punchline": "He stands alone and silently weeps \u2014 then converts it to a cough when he realizes someone might see him \u2014 the toughest man on the show caught in a moment of genuine feeling",
+      "craft_total": 8.4,
+      "impact_score": 8.25,
+      "quotability": 5.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Hank honesty moment. The casual delivery makes it even funnier - classic character beat.",
+      "explanation": "A perfect visual/reaction comedy beat that's also deeply moving. Rip Torn's Artie is the most emotionally defended character in the show \u2014 and seeing him break and then immediately cover the break is both hilarious and heartbreaking. The 'cough' conversion is the joke: he won't let the moment be real. This is the show at its highest level \u2014 comedy that doesn't sacrifice character. Justifies 8+ because it requires zero words to be devastating and funny simultaneously, and because it's entirely specific to Artie.",
       "dialogue": [
         {
           "speaker": "Hank Kingsley",
@@ -972,22 +980,22 @@
     },
     {
       "index": 39,
-      "text": "One more remark, and I swear, I'll fucking choke you with my hands!",
+      "text": "Larry's closing speech: '9 times out of 10 you end up with the Ropers' \u2014 as his example of TV mediocrity",
       "characters": [
-        "Hank"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "observational",
+        "deadpan_understatement"
       ],
-      "setup": "Hank's escalating rage",
-      "punchline": "Redundant threat specification",
-      "craft_total": 7.21,
-      "impact_score": 7.33,
+      "setup": "Larry is giving his final speech about the risks of television and trying to do something fresh",
+      "punchline": "'The Ropers' \u2014 a real spinoff of Three's Company from 1979 \u2014 is Larry's shorthand for forgettable, mediocre TV, delivered mid-sincere speech as if everyone knows what he means",
+      "craft_total": 7.39,
+      "impact_score": 7.0,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "The redundancy of 'with my hands' makes the threat both menacing and absurd. Classic Hank overthinking.",
+      "explanation": "A nicely specific industry-insider joke in the middle of a sincere speech. 'The Ropers' is funnier than a generic placeholder would be \u2014 it's a real, specifically mediocre piece of television history. The joke works because Larry deploys it mid-sentiment without breaking stride.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -997,22 +1005,22 @@
     },
     {
       "index": 40,
-      "text": "And you, sir, are not in it, and you, sir, are not in it.",
+      "text": "Larry's final sign-off: 'You may now flip.' \u2014 a callback to 'No flipping' throughout the show",
       "characters": [
-        "Hank"
+        "Larry Sanders"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "callback",
+        "meta_self_referential"
       ],
-      "setup": "Hank declaring his independence with a 'new chapter'",
-      "punchline": "Pointing at both Larry and Artie with identical phrasing",
-      "craft_total": 7.08,
-      "impact_score": 6.75,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Hank's dramatic declaration with repetitive pointing - his attempt at gravitas undercut by redundancy.",
+      "setup": "Throughout the entire episode, Larry has been closing every commercial break with 'No flipping' \u2014 a running gag about not changing the channel",
+      "punchline": "His final words are 'you may now flip' \u2014 releasing the audience with permission to do what he's been forbidding all night. It's sad, funny, and perfectly structured as an episode-length callback",
+      "craft_total": 9.02,
+      "impact_score": 9.33,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the episode's best joke and earns every point of its score. It's been built across the entire episode \u2014 six iterations of 'no flipping' \u2014 and the inversion 'you may now flip' is both the comedic payoff and the emotional gut-punch of the series finale. It's funny and heartbreaking simultaneously. The structure is perfect: the punchline is the setup, and the setup is twenty-two minutes of television. Economy: three words. Character integration: completely Larry Sanders. Earned vs. cheap: the most earned laugh possible. This is what great sitcom writing looks like.",
       "dialogue": [
         {
           "speaker": "Hank",
@@ -1022,22 +1030,23 @@
     },
     {
       "index": 41,
-      "text": "Oh, that's just a consulting gig, you know. That doesn't count.",
+      "text": "Larry collapses after the show \u2014 'I can't get off the stool. I can't move my legs.' \u2014 'Larry sprained his ankle. I should have waited another 6 months.'",
       "characters": [
+        "Larry Sanders",
         "Artie"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Larry catching Artie taking the Roseanne job after retirement speech",
-      "punchline": "Artie's immediate rationalization",
-      "craft_total": 7.32,
-      "impact_score": 6.75,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Classic Artie hypocrisy - his principles lasting exactly until a good offer. Character-consistent weakness.",
+      "setup": "The show has just ended on an emotional high; Larry is basking in the applause",
+      "punchline": "He physically cannot get off the stool \u2014 the emotional climax is immediately undercut by his ankle giving out. Artie's response is 'I should have waited another 6 months' \u2014 implying the show should have kept going (and could have, physically, since Larry is now incapacitated anyway)",
+      "craft_total": 7.62,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect deflation of a potentially overwrought finale moment. Larry can't even exit gracefully \u2014 his body betrays him. Artie's line ('I should have waited 6 months') is the real joke: it reframes the entire retirement decision as premature and arbitrary at the exact moment of its execution. Funny and a little cruel, which is the show's sweet spot.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -1047,22 +1056,22 @@
     },
     {
       "index": 42,
-      "text": "Rosie wants to come back nice this time, so she wants to have me come around one day a week to scare the shit out of her staff.",
+      "text": "Larry, being helped off the set: 'I hope we beat Leno.'",
       "characters": [
-        "Artie"
+        "Larry Sanders"
       ],
       "joke_types": [
         "character_comedy",
-        "dark_subversive"
+        "irony_sarcasm"
       ],
-      "setup": "Artie explaining the Roseanne consulting job",
-      "punchline": "His role as professional intimidator",
-      "craft_total": 7.35,
-      "impact_score": 7.25,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Larry is in pain, being helped off the stage, having just ended his ten-year run with an emotional finale",
+      "punchline": "His first concern after a decade-ending moment of profound personal significance is his ratings versus Jay Leno \u2014 even in physical distress, Larry's insecurity about competition never stops",
+      "craft_total": 8.36,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Artie job description - being paid specifically for his intimidation skills. Dark and character-perfect.",
+      "explanation": "This might be the single most character-specific joke in the episode. Larry has just delivered a genuinely moving farewell. He's being physically supported as he leaves. And his first thought is beating Leno. The joke requires the entire series of Larry Sanders to have built Larry's pathological competitiveness, and this line is the perfect summary of who he is. 'I hope we beat Leno' \u2014 five words that contain ten years of character work. Maximum character integration, maximum economy. Just barely edges below the 'you may now flip' callback because that one is structural perfection. But this might be funnier in the moment.",
       "dialogue": [
         {
           "speaker": "Artie",
@@ -1072,47 +1081,302 @@
     },
     {
       "index": 43,
-      "text": "Larry's casual mention of his date with Illeana Douglas",
+      "text": "Artie enters the empty studio: 'Hello, stranger.' Hank: 'What are you doing here?' Artie: 'Oh, just being a sad and pathetic shithead like you.'",
       "characters": [
-        "Larry Sanders"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "The group planning to get together",
-      "punchline": "Larry already having moved on to dating",
-      "craft_total": 6.62,
-      "impact_score": 5.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Larry's inability to be alone. His immediate pivot to dating feels authentic."
-    },
-    {
-      "index": 44,
-      "text": "Hank's final 'I'm such a prick' self-awareness",
-      "characters": [
+        "Artie",
         "Hank Kingsley"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "deadpan_understatement"
       ],
-      "setup": "The group helping Hank with his car",
-      "punchline": "Hank's moment of self-recognition",
-      "craft_total": 7.23,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Artie finds Hank alone in the empty studio after everyone has left",
+      "punchline": "Artie's explanation for why he's there is the perfectly self-aware 'sad and pathetic shithead like you' \u2014 he owns his sentimentality by insulting both himself and Hank simultaneously",
+      "craft_total": 7.77,
+      "impact_score": 7.67,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Nice final character beat. Hank's brief self-awareness is touching and funny, fitting end to his arc.",
+      "explanation": "Pure Artie \u2014 the warmest thing he can say is an insult. 'Sad and pathetic shithead like you' is Artie's love language and it perfectly encapsulates the show's approach to male emotional expression: affection through abuse. The self-inclusion ('like you') is the key \u2014 he's not superior, he's in the same boat. Highly quotable, strong character integration."
+    },
+    {
+      "index": 44,
+      "text": "Artie and Hank looking at Larry's desk: 'I don't know why we didn't try it before.' Artie: 'If you had done it that way, we'd probably still be on the air.'",
+      "characters": [
+        "Artie",
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "absurdist",
+        "deadpan_understatement"
+      ],
+      "setup": "Artie and Hank are sitting in the empty set, looking at the desk from a different angle or arrangement",
+      "punchline": "Artie suggests that one small staging change would have kept the show running \u2014 absurdly attributing ten years of creative struggle to something as simple as desk placement",
+      "craft_total": 7.23,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A gentle absurdist joke that captures TV industry magical thinking \u2014 that everything could have been solved with one different production decision. Artie's deadpan delivery sells it.",
       "dialogue": [
         {
           "speaker": "Hank Kingsley",
           "line": "I'm such a prick"
         }
       ]
+    },
+    {
+      "index": 45,
+      "text": "Artie's farewell speech to Larry: 'Your constant whining about the size of your ass, and all the shit you made me clean up because you were too much of a pussy to do it yourself... you made me laugh, and that's what I'm gonna miss.'",
+      "characters": [
+        "Artie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Artie is attempting a heartfelt farewell to Larry \u2014 'I'm not gonna get all gooey, kiddo'",
+      "punchline": "The itemized list of Larry's flaws (ass whining, cowardice, making Artie do his dirty work) delivered as the preamble to a genuine expression of love \u2014 'you made me laugh'",
+      "craft_total": 7.59,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The emotional climax of Artie's character work, delivered as comedy. The joke structure is: Artie builds a catalog of Larry's failings with increasing specificity ('whining about the size of your ass' is particularly good), then pivots to genuine emotion. It works because we know Artie well enough to know this IS his version of 'I love you.' The 'ass whining' detail earns its place because it's absurdly specific. Strong structure, exceptional character integration."
+    },
+    {
+      "index": 46,
+      "text": "Larry: 'The part about whining about my ass \u2014 you're gonna miss that a little bit, aren't you? Because who else is gonna whine about their ass as much as me?'",
+      "characters": [
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Artie has just mentioned 'your constant whining about the size of your ass' as one of Larry's defining traits",
+      "punchline": "Rather than the straight-man embarrassment you'd expect, Larry leans into it \u2014 genuinely arguing that his ass-whining is a unique gift, something Artie will miss",
+      "craft_total": 7.75,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Larry's narcissism applied to his own neuroses \u2014 he hears 'you whine about your ass' and thinks 'yes, and won't you miss that uniquely?' It's a perfect Larry move: converting a criticism into a boast. 'Who else is gonna whine about their ass as much as me?' has genuine quotability and reveals character economically."
+    },
+    {
+      "index": 47,
+      "text": "Hank's final explosion: 'I spent the last 10 years being the butt of your jokes. The little fucking dog at the end of the couch!'",
+      "characters": [
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Hank has been building resentment throughout the episode (interrupted speech, constant dismissals); now he explodes",
+      "punchline": "The image Hank uses \u2014 'the little fucking dog at the end of the couch' \u2014 is so specific, so self-aware, and so perfectly captures his role in the show's hierarchy that it functions as both comedy and pathos",
+      "craft_total": 8.27,
+      "impact_score": 8.33,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is the episode's most emotionally complex joke and one of the series' great lines. 'The little fucking dog at the end of the couch' is a phrase that could only come from Hank Kingsley \u2014 it's both his self-pity and his self-awareness, his resentment and his acknowledgment of his own diminishment. It's funny because it's perfectly, absurdly specific; it's devastating because it's true. Jeffrey Tambor has built to this moment across six seasons. The originality is exceptional \u2014 this specific image, for this specific character, for this specific moment. It will be quoted for decades."
+    },
+    {
+      "index": 48,
+      "text": "Hank's explosion: 'I spent the last 10 years being the butt of your jokes. The little fucking dog at the end of the couch!'",
+      "characters": [
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation",
+        "cringe_discomfort"
+      ],
+      "setup": "Hank has finally snapped; he's delivering a genuine grievance about his treatment over 10 years",
+      "punchline": "'The little fucking dog at the end of the couch' \u2014 the image is both vivid and pathetic; it's Hank's self-conception that makes it funny while also being devastating",
+      "craft_total": 8.16,
+      "impact_score": 7.75,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the series' great Hank moments. 'The little fucking dog at the end of the couch' is an image that perfectly captures his role and his awareness of it \u2014 it's absurd, specific, and devastating. The line is entirely Hank's: his grandiosity and his genuine pain are inseparable. The vulgarity ('fucking dog') attached to the pitiful image ('little dog at the end of the couch') creates perfect tonal dissonance. Justifies 8+ because the metaphor is original, deeply character-specific, and has genuine emotional weight beneath the comedy."
+    },
+    {
+      "index": 49,
+      "text": "Hank: '...because this face was being seen by millions of people every night and there was lots of money and there was lots of pussy! Well, more money than pussy.'",
+      "characters": [
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Hank is mid-explosion, justifying why he smiled and let himself be humiliated for ten years",
+      "punchline": "He lists fame, money, and sexual access as his motivations \u2014 then immediately self-corrects: 'well, more money than pussy' \u2014 the self-correction landing harder than the original claim",
+      "craft_total": 8.46,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The self-correction is everything. Hank sets up 'lots of money and lots of pussy' as his proud motivation \u2014 a clich\u00e9 of Hollywood braggadocio \u2014 but the 'well, more money than pussy' undermines his own boast mid-sentence. It reveals Hank more completely in six words than most speeches could in a paragraph: he got the money, but not the validation he really wanted. Enormously quotable. Pure Hank. One of the episode's top jokes."
+    },
+    {
+      "index": 50,
+      "text": "Hank threatening Larry: 'One more remark, and I swear I'll fucking choke you with my hands!' \u2014 Larry: 'What's wrong with you?'",
+      "characters": [
+        "Hank Kingsley",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Hank's explosion is reaching peak intensity",
+      "punchline": "'I'll fucking choke you with my hands' \u2014 the specificity of 'with my hands' is absurdly redundant (how else would one choke someone?) and deflates the threat comically. Larry's flat 'what's wrong with you?' is the perfect straight-man button",
+      "craft_total": 7.16,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'with my hands' addition to a choking threat is a quietly funny bit of bad-at-threatening energy. The comedy is in the redundancy \u2014 Hank is so worked up he's lost the ability to make a credible threat. Solid but not exceptional."
+    },
+    {
+      "index": 51,
+      "text": "Hank: 'There is a book called Hank Kingsley, but there's a new chapter, and you sir are not in it. And you sir are not in it.'",
+      "characters": [
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Hank is attempting a dramatic final declaration of independence",
+      "punchline": "The metaphor of 'a book called Hank Kingsley' is both grandiose and absurdly self-important; saying 'you are not in it' twice (to both Larry and Artie) is pompous escalation; the whole image is bathos \u2014 Hank as the hero of his own mediocre novel",
+      "craft_total": 7.57,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedy of Hank imagining himself as the protagonist of a significant life narrative \u2014 'a book called Hank Kingsley' \u2014 when the whole episode has confirmed his supporting-character status. The repetition of 'you sir are not in it' adds pomposity. It's funny because it's the most Hank thing possible: grandiose, slightly misworded, and deeply earnest."
+    },
+    {
+      "index": 52,
+      "text": "After Hank storms off: Larry: 'He's such a goddamn idiot, but I sure do love him.'",
+      "characters": [
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Hank has just delivered an epic, profanity-laced, emotionally genuine farewell rant",
+      "punchline": "Larry's response is the most reductive possible: 'goddamn idiot' as his primary assessment, with 'but I sure do love him' as an afterthought \u2014 the order matters entirely",
+      "craft_total": 7.5,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Larry watching someone pour their heart out and summarizing it as 'goddamn idiot' first is perfect characterization. The 'but I sure do love him' saves it from being cruel, but the order \u2014 idiot first, love second \u2014 tells you everything about Larry as a person. Clean economy."
+    },
+    {
+      "index": 53,
+      "text": "Artie announces retirement: 'I'm just sick and tired of all the bullshit, scraping and bowing to fucking executives who think that creativity is nothing but an accounting problem.' Then: 'I thought you took the job on Roseanne.'",
+      "characters": [
+        "Artie",
+        "Larry Sanders"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Artie delivers a passionate speech about retiring from television, fed up with executives and bullshit",
+      "punchline": "Larry immediately deflates the whole thing: 'I thought you took the job on Roseanne.' Artie's permanent retirement has already been compromised before it's even official",
+      "craft_total": 7.98,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A beautifully structured deflation. Artie builds a righteous case for his retirement with enough passion that you almost believe it \u2014 then Larry's single question exposes the whole thing as theater. The joke is that Artie has already taken a job, mid-retirement speech. The structure (big passionate speech \u2192 one quiet question that destroys it) is very strong."
+    },
+    {
+      "index": 54,
+      "text": "Artie on the Rosie O'Donnell show job: 'She wants to come back nice this time, so she wants to have me come around one day a week to scare the shit out of her staff.'",
+      "characters": [
+        "Artie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Artie explains the Rosie job he's taken \u2014 it's just a consulting gig",
+      "punchline": "His function at the Rosie show will be to 'scare the shit out of her staff' \u2014 implying Rosie O'Donnell's reputation for difficulty is best managed with someone more terrifying than her on staff",
+      "craft_total": 7.72,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Artie's job description at Rosie \u2014 professional intimidation specialist \u2014 is perfect for his character and a sharp industry joke about what kind of person would be MORE feared than Rosie O'Donnell. 'Scare the shit out of her staff' as a job function is brilliantly specific and quotable. Strong Artie character integration."
+    },
+    {
+      "index": 55,
+      "text": "Artie on the Roseanne job: 'Rosie wants to come back nice this time, so she wants to have me come around one day a week to scare the shit out of her staff.'",
+      "characters": [
+        "Artie"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Artie explains his 'consulting' role on Roseanne",
+      "punchline": "His specific job description is to 'scare the shit out of her staff' \u2014 which is both a commentary on Roseanne's reputation and a perfect description of what Artie does naturally",
+      "craft_total": 7.8,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The job description 'scare the shit out of her staff' is both a genuine industry joke (Roseanne's show was notorious for staff turnover and difficult behavior) and a perfect character moment \u2014 it's exactly what Artie would be hired for. The comedy of his 'retirement' being to scare people professionally is delicious. Justifies 8+ for originality of the conceit and for how it deepens Artie's character while being funny."
+    },
+    {
+      "index": 56,
+      "text": "Hank returns sobbing \u2014 it's revealed he ran his car into the dumpster: 'I think I had the car in reverse and I ran into the fucking dumpster... and it hooked on my bumper.'",
+      "characters": [
+        "Hank Kingsley"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "Hank made a dramatic exit; now there's a loud crash and he returns crying",
+      "punchline": "His operatic exit was ruined by a dumpster \u2014 his bumper is literally hooked to it. The sublime (grand emotional departure) meets the ridiculous (can't reverse out of a parking lot)",
+      "craft_total": 8.4,
+      "impact_score": 8.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The perfect capstone to Hank's arc. He storms out with maximum dignity intact; the universe immediately strips it by hooking his car to a dumpster. The visual is inherently funny (a man crying, attached to a dumpster), and the detail \u2014 'I think I had the car in reverse' \u2014 is delivered with such pitiful uncertainty that it compounds the comedy. Great structure: dignified exit \u2192 immediate humiliation \u2192 return to people he just cursed out for help."
+    },
+    {
+      "index": 57,
+      "text": "Larry: 'Let's go to the Smokehouse and think this over.' Hank: 'I'm such a prick.'",
+      "characters": [
+        "Hank Kingsley",
+        "Larry Sanders",
+        "Artie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The three are heading out together after Hank's dramatic tantrum and dumpster incident",
+      "punchline": "Hank's final line of the series is 'I'm such a prick' \u2014 the most self-aware thing he's ever said, delivered as they all walk out together",
+      "craft_total": 7.92,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Four words to end a character's run on a show. 'I'm such a prick' is Hank's most complete moment of self-awareness and his funniest, simultaneously. It's funny because it's true and because he says it so casually, as if confirming a weather report. The economy is near-perfect. It's also the right ending: after all his rage and pathos, Hank reduces himself to this one honest line. Exceptional character integration \u2014 only Hank ends his story this way."
     }
   ],
   "air_date": "1998-05-31",
