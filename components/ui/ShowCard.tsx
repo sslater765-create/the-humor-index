@@ -31,7 +31,7 @@ export default function ShowCard({ show }: Props) {
                 {formatIndex(show.humor_index)}
               </p>
               <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">
-                Humor Index \u00b7 {scoreToGrade(show.humor_index)}
+                Humor Index · {scoreToGrade(show.humor_index)}
               </p>
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function ShowCard({ show }: Props) {
               <div className="text-right">
                 <p className="font-serif italic text-4xl text-brand-gold leading-none">{formatIndex(show.humor_index)}</p>
                 <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">
-                  Humor Index \u00b7 {scoreToGrade(show.humor_index)}
+                  Humor Index · {scoreToGrade(show.humor_index)}
                 </p>
               </div>
             </div>
