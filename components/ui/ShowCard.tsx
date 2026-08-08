@@ -48,7 +48,7 @@ export default function ShowCard({ show }: Props) {
               </div>
             </div>
           )}
-          <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors leading-tight mb-2">
+          <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors leading-tight mb-2 line-clamp-2 min-h-[3.75rem]">
             {show.name}
           </h2>
           <p className="text-xs text-brand-text-muted mb-4 line-clamp-2 leading-relaxed">{show.description}</p>
