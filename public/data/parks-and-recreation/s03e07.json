@@ -4,33 +4,34 @@
   "season": 3,
   "episode_number": 7,
   "title": "Harvest Festival",
-  "humor_index": 72.7,
-  "jpm": 2.51,
-  "avg_craft": 6.81,
-  "avg_impact": 6.38,
-  "total_jokes": 61,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"dark_subversive\"]",
-  "standout_joke_ids": "[51, 14, 5]",
+  "humor_index": 90.2,
+  "jpm": 3.09,
+  "avg_craft": 7.38,
+  "avg_impact": 7.22,
+  "total_jokes": 75,
+  "war": 97.5,
+  "dominant_joke_types": "[\"character_comedy\", \"deadpan_understatement\", \"irony_sarcasm\"]",
+  "standout_joke_ids": "[13, 68, 4]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "And it is possibly the best thing to potentially ever happen to anyone anywhere in the history of the Universe.",
+      "text": "Leslie's grandiose buildup to Little Sebastian \u2014 'the best thing to potentially ever happen to anyone anywhere in the history of the Universe' \u2014 followed by the reveal of a tiny mini horse.",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "setup_punchline",
+        "misdirection"
       ],
-      "setup": "Leslie announces she has a surprise for everyone",
-      "punchline": "The absurdly grandiose buildup for what turns out to be a mini horse",
-      "craft_total": 6.8,
-      "impact_score": 6.67,
+      "setup": "Leslie delivers an epic, universe-spanning hyperbolic buildup suggesting something world-shaking is about to be revealed.",
+      "punchline": "It's a small horse. The absurd gap between the setup's scale and the mundane reveal is the joke.",
+      "craft_total": 7.86,
+      "impact_score": 7.83,
       "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Leslie hyperbole that perfectly establishes character and sets up the Little Sebastian reveal. The escalation is genuinely funny and character-specific.",
+      "explanation": "The joke works on multiple levels simultaneously: it's a perfect misdirection with a hyperbolic setup, it's deeply character-specific (Leslie's unbridled enthusiasm is her defining trait), and the payoff relies entirely on the audience's rational perspective vs. Pawnee's irrational one. The structure is clean and the gap between expectation and reality is maximally funny. Scores 8+ because it also plants the episode's central comedic premise (Li'l Sebastian's inexplicable celebrity) while being funny on its own terms.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -48,22 +49,27 @@
     },
     {
       "index": 2,
-      "text": "Sebastian was the number one boy's name in Pawnee. And the number three girl's name.",
+      "text": "The entire office erupts in disbelief and joy at seeing Li'l Sebastian while Ben watches, confused.",
       "characters": [
-        "Leslie"
+        "Ben",
+        "Leslie",
+        "Tom",
+        "Ron",
+        "Ann",
+        "Chris"
       ],
       "joke_types": [
-        "observational",
-        "absurdist"
+        "reaction_beat",
+        "character_comedy"
       ],
-      "setup": "Explaining Little Sebastian's cultural impact on the town",
-      "punchline": "The absurd detail that Sebastian was also a popular girl's name",
-      "craft_total": 7.1,
-      "impact_score": 6.25,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Li'l Sebastian is revealed and everyone goes wild \u2014 'I never thought I'd get to meet him!' 'It's really him!'",
+      "punchline": "Ben stands apart, utterly baffled, asking 'So what am I missing? What's the deal with the pony?'",
+      "craft_total": 7.79,
+      "impact_score": 8.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Economical joke that builds the world's obsession with Little Sebastian in an unexpected way.",
+      "explanation": "Ben serves as the audience's surrogate rationalist \u2014 his confusion mirrors exactly what any sane viewer feels. The contrast between the unanimous, sincere joy of everyone else and Ben's outsider bewilderment is perfect. Works as character comedy because Ben's role as an outside auditor/rational outsider is being applied to Pawnee's absurd culture. High craft because the comedy is structural and character-driven, not just a random joke.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -73,22 +79,22 @@
     },
     {
       "index": 3,
-      "text": "So what am I missing? What's the deal with the pony?",
+      "text": "'He's not a pony, man. He's a mini horse. There's a big difference.'",
       "characters": [
-        "Ben"
+        "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "setup_punchline"
+        "deadpan_understatement"
       ],
-      "setup": "Everyone is excited about Little Sebastian",
-      "punchline": "Ben's complete bewilderment at the town's obsession",
-      "craft_total": 7.0,
-      "impact_score": 6.33,
-      "quotability": 5.0,
+      "setup": "Ben calls Li'l Sebastian 'the pony,' confused by the fervor.",
+      "punchline": "Tom corrects him with complete seriousness, as if this distinction matters enormously in context.",
+      "craft_total": 7.11,
+      "impact_score": 6.75,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sets up Ben's running confusion about Little Sebastian, perfect character moment.",
+      "explanation": "Short, punchy, and perfectly delivered \u2014 the joke works because Tom is extremely concerned about the wrong thing. The absurdity is that this is the detail Tom chooses to correct when there are bigger confusions at play. Economy is near-perfect.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -106,22 +112,22 @@
     },
     {
       "index": 4,
-      "text": "He's not a pony, man. He's a mini horse. There's a big difference.",
+      "text": "'Son, this horse has an honorary degree from Notre Dame.'",
       "characters": [
-        "Tom"
+        "Ron"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Ben calls Little Sebastian a pony",
-      "punchline": "Tom's serious correction as if it matters tremendously",
-      "craft_total": 6.4,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Ben asks what Li'l Sebastian actually does to explain the fame.",
+      "punchline": "Ron delivers this as though it settles the matter completely \u2014 an honorary degree from Notre Dame, for a horse.",
+      "craft_total": 8.46,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing the town's obsessive devotion to Little Sebastian.",
+      "explanation": "This is one of the best jokes in the episode. It does everything right: it's delivered by Ron, whose stoic authority makes absurdist pronouncements land with maximum weight; the detail is specific and bizarre (Notre Dame, specifically); it treats the absurdity as completely self-evident; and it answers Ben's rational question with a completely irrational non-answer delivered as though it's sufficient. The economy is near-perfect \u2014 seven words that do enormous comedic work. The character integration is exceptional: Ron's deadpan certainty is the entire joke. Justifiably an 8+.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -131,22 +137,22 @@
     },
     {
       "index": 5,
-      "text": "Son, this horse has an honorary degree from Notre Dame.",
+      "text": "Jerry reveals he and Li'l Sebastian are on the same diabetes medication and calls him his 'Glucotrol buddy.'",
       "characters": [
-        "Ron"
+        "Jerry"
       ],
       "joke_types": [
-        "deadpan_understatement",
+        "character_comedy",
         "absurdist"
       ],
-      "setup": "Ben asking what makes Little Sebastian special",
-      "punchline": "Ron's deadpan delivery of an absurd credential",
-      "craft_total": 7.67,
-      "impact_score": 7.5,
+      "setup": "Leslie explains that Jerry will be looking after Li'l Sebastian since he's 25 with cataracts and arthritis.",
+      "punchline": "Jerry enthusiastically reveals they share a diabetes medication, cooing at the horse like a baby.",
+      "craft_total": 7.83,
+      "impact_score": 7.83,
       "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Ron Swanson delivery of absurd information as if it's completely reasonable. High quotability.",
+      "explanation": "A beautifully constructed reveal that simultaneously establishes Jerry's haplessness (sharing medication with a horse), his total lack of self-awareness (he's delighted by this), and sets up his later failure to watch the horse. 'Glucotrol buddy' is specific, memorable, and deeply character-specific. Scores 8+ because the joke layers character comedy with absurdism in a way that only Parks and Recreation could write \u2014 it's warm, bizarre, and funny.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -156,22 +162,22 @@
     },
     {
       "index": 6,
-      "text": "We are both on the same diabetes medication. Are you my Glucotrol buddy? Are you? Huh?",
+      "text": "'Get out.' \u2014 Leslie's immediate, flat response to Ben saying he doesn't know what the big deal is about Li'l Sebastian.",
       "characters": [
-        "Jerry"
+        "Leslie"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Jerry is assigned to watch Little Sebastian",
-      "punchline": "Jerry's awkward bonding attempt with the horse over shared medical issues",
-      "craft_total": 6.77,
-      "impact_score": 6.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Ben confesses he genuinely doesn't understand the excitement about Li'l Sebastian.",
+      "punchline": "Leslie's instant, no-hesitation 'Get out.' \u2014 treating this as a fireable or banishable offense.",
+      "craft_total": 8.14,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Jerry awkwardness, perfectly in character and genuinely uncomfortable.",
+      "explanation": "Two words, maximum impact. The joke is structurally perfect: the absurdity of treating Li'l Sebastian skepticism as an offense worthy of expulsion, delivered without a beat of hesitation. Leslie's character integration is perfect \u2014 she's incapable of accepting that someone could not share her enthusiasms. The economy score is as high as it gets. Scores 8+ because the brevity and character specificity make it one of the most quotable moments in the episode.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -189,22 +195,22 @@
     },
     {
       "index": 7,
-      "text": "Get out.",
+      "text": "'God, I gotta stop ending on that boring thing. Clowns!'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "reaction_beat",
-        "escalation"
+        "character_comedy",
+        "meta_self_referential"
       ],
-      "setup": "Ben admits he doesn't understand the big deal about Little Sebastian",
-      "punchline": "Leslie's immediate, serious banishment",
-      "craft_total": 7.27,
-      "impact_score": 7.0,
+      "setup": "Leslie ends a talking head with a dry list of Harvest Festival statistics.",
+      "punchline": "She immediately criticizes herself and tacks on 'Clowns!' as a more exciting ending, self-directing her own confessional.",
+      "craft_total": 7.7,
+      "impact_score": 7.33,
       "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect economy and escalation. Leslie's extreme reaction is both shocking and perfectly in character.",
+      "explanation": "A clever meta-mockumentary gag \u2014 Leslie is so performatively enthusiastic that she critiques her own talking head like a producer would and tries to improve it in real time. It's character-specific and adds a self-aware layer to the show's form without breaking it. Good craft.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -214,22 +220,23 @@
     },
     {
       "index": 8,
-      "text": "Well, there's a lot of people that don't consider salad a food.",
+      "text": "'Man, you are just knocking these off. You're like a ninja crossed with a Jedi, or something. You're like a nerd mixed with a dork or something.'",
       "characters": [
-        "Ron"
+        "Tom",
+        "Ben"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "wordplay_pun"
       ],
-      "setup": "Discussion about placing Sue's salads among junk food vendors",
-      "punchline": "Ron's anti-vegetable philosophy delivered matter-of-factly",
-      "craft_total": 6.43,
-      "impact_score": 5.67,
-      "quotability": 7.0,
+      "setup": "Tom tries to compliment Ben's work efficiency with an action-hero comparison.",
+      "punchline": "He immediately undercuts the cool compliment with 'You're like a nerd mixed with a dork,' not realizing (or not caring) that he just insulted him.",
+      "craft_total": 6.42,
+      "impact_score": 5.83,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Ron Swanson anti-health food sentiment delivered perfectly in character.",
+      "explanation": "Decent character comedy \u2014 Tom's social obliviousness and desire to be cool while accidentally being insulting is on-brand. The structure is a mild setup/undercut. Functional but not exceptional.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -239,22 +246,23 @@
     },
     {
       "index": 9,
-      "text": "God, I gotta stop ending on that boring thing. Clowns!",
+      "text": "'Tom, Star Wars is not that nerdy.' / 'No, Star Wars is not that nerdy. It's not, everyone's seen it.'",
       "characters": [
-        "Leslie"
+        "Ben",
+        "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "meta_self_referential"
+        "observational"
       ],
-      "setup": "Leslie realizes she ended her pitch on a boring note",
-      "punchline": "Her immediate self-correction with 'Clowns!' as if that's more exciting",
-      "craft_total": 6.5,
-      "impact_score": 5.5,
-      "quotability": 5.0,
+      "setup": "Tom implies Star Wars is nerdy as part of his joke.",
+      "punchline": "Both Ben and Tom simultaneously protest that Star Wars isn't nerdy \u2014 revealing their mutual nerd defensiveness.",
+      "craft_total": 6.41,
+      "impact_score": 6.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Leslie's self-awareness and compulsive need to end on a high note.",
+      "explanation": "A light but functional moment \u2014 the comedy comes from the unexpected united front between Tom and Ben, both suddenly defensive about their pop culture. Character-consistent but not a standout.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -268,23 +276,24 @@
     },
     {
       "index": 10,
-      "text": "You're like a ninja crossed with a Jedi, or something. / You're like a nerd mixed with a dork or something.",
+      "text": "The battle of Indian Hill: 93-year-old Chief Wakote was 'shot 102 times by the cavalry.' Ben asks, 'Did he die?' Ken says, 'Yes.'",
       "characters": [
+        "Ken Hotate",
         "Ben",
-        "Tom"
+        "Leslie"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "irony_sarcasm"
+        "dark_subversive",
+        "deadpan_understatement"
       ],
-      "setup": "Ben trying to compliment Tom",
-      "punchline": "Tom's immediate counter-insult using Ben's own format",
-      "craft_total": 6.2,
-      "impact_score": 5.67,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Ken describes an epic seven-day battle the Wamapoke lost because 'they didn't have any weapons.' A 93-year-old chief was shot 102 times.",
+      "punchline": "Ben's completely sincere, confused question 'Did he die?' followed by Ken's flat, one-word 'Yes.'",
+      "craft_total": 8.16,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple back-and-forth that establishes the Ben-Tom dynamic but isn't particularly clever.",
+      "explanation": "A masterclass in economy. The setup is already funny (102 shots, no weapons, 93-year-old chief), but the punchline is Ben's completely genuine question \u2014 asking the obvious to an absurd degree \u2014 followed by Ken's single-word response that makes Ben's question even more ridiculous in retrospect. Every element earns its place. The dark history is handled with the show's characteristic satirical respect. This is a top-tier joke in the episode, scoring 8+ because it's layered, efficient, and the comedic timing of 'Yes.' is perfectly calibrated.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -298,22 +307,22 @@
     },
     {
       "index": 11,
-      "text": "Ah! Wahallo.",
+      "text": "'And this moment will be commemorated for the next seven days with shooting galleries and fried dough stands.'",
       "characters": [
-        "Ken"
+        "Ken Hotate"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "irony_sarcasm",
+        "dark_subversive"
       ],
-      "setup": "Ken Hotate enters the scene",
-      "punchline": "His overly theatrical Native American greeting",
-      "craft_total": 5.87,
-      "impact_score": 4.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Ken describes the sacred battle site and the tragedy of Chief Wakote's death.",
+      "punchline": "He notes with dry sarcasm that this is being 'commemorated' with carnival shooting galleries and fried dough \u2014 the contrast between tragedy and celebration is the joke.",
+      "craft_total": 7.96,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Establishes Ken's character but borders on stereotypical.",
+      "explanation": "Ken Hotate is doing sophisticated satirical work here \u2014 the irony is genuinely cutting and the specificity (shooting galleries, particularly given the cavalry's role) is excellent. The joke earns its darkness because it's rooted in real cultural critique delivered through character. An 8 because the character integration and structure are both very strong.",
       "dialogue": [
         {
           "speaker": "Ken Hotate",
@@ -323,23 +332,22 @@
     },
     {
       "index": 12,
-      "text": "During the battle, 93-year-old chief Wakote was shot 102 times by the calvary. Did he die? Yes.",
+      "text": "Leslie produces a map of 'all the atrocities the Pawnee settlers inflicted upon the Wamapoke Indians' \u2014 the atrocities are in blue.",
       "characters": [
-        "Ken",
-        "Ben"
+        "Leslie"
       ],
       "joke_types": [
-        "dark_subversive",
-        "deadpan_understatement"
+        "visual_gag",
+        "character_comedy"
       ],
-      "setup": "Ken describing the brutal historical battle",
-      "punchline": "Ben's naive question and Ken's matter-of-fact response",
-      "craft_total": 7.17,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie is trying to argue the carnival can still take place despite the site's history.",
+      "punchline": "She has already made a detailed, color-coded atrocity map \u2014 'The atrocities are in blue' \u2014 as if this is normal municipal preparation.",
+      "craft_total": 7.65,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark humor that works because of Ben's innocent question and Ken's deadpan delivery.",
+      "explanation": "Deeply Leslie-specific: the joke is that she has over-prepared for even the most awkward conversation \u2014 she has literally color-coded historical atrocities as background material. 'The atrocities are in blue' is perfectly deadpan. This only makes sense coming from Leslie, who would absolutely make this map. High character integration justifies the 8+ score.",
       "dialogue": [
         {
           "speaker": "Ken",
@@ -357,22 +365,23 @@
     },
     {
       "index": 13,
-      "text": "The atrocities are in blue.",
+      "text": "Ken Hotate's talking head: 'There are two things I know about white people. They love Matchbox 20, and they are terrified of curses.'",
       "characters": [
-        "Leslie"
+        "Ken Hotate"
       ],
       "joke_types": [
-        "visual_gag",
-        "dark_subversive"
+        "setup_punchline",
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Leslie showing a map of historical atrocities",
-      "punchline": "The casual presentation of horrific events as color-coded data",
-      "craft_total": 7.15,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Ken has just threatened the festival with the possibility of an ancestral curse.",
+      "punchline": "In his talking head, he reveals his dry understanding of white psychology \u2014 Matchbox 20 and curse-fear \u2014 making clear the curse threat is a strategic tool.",
+      "craft_total": 9.25,
+      "impact_score": 9.5,
+      "quotability": 10.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good visual gag that shows Leslie's bureaucratic approach to sensitive topics.",
+      "explanation": "The best joke in the episode and among the best in the series. It does everything: the structure is perfect (two-part list with a devastating punchline on the second item), the character integration is exceptional (Ken is playing the entire town, using their superstitions as a tool \u2014 making him one of the smartest characters in the episode), the Matchbox 20 detail is brilliantly specific and absurd, and it reframes everything we just saw. The joke also has a satirical bite \u2014 it acknowledges the colonial power dynamic by showing Ken wielding the one tool available to him. This is a quote that leaves the episode. Justified 9+ score by every metric.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -382,22 +391,23 @@
     },
     {
       "index": 14,
-      "text": "There are two things I know about white people. They love Matchbox 20, and they are terrified of curses.",
+      "text": "Leslie and Ben saying 'Take that, curse!' after getting the cotton candy donation.",
       "characters": [
-        "Ken"
+        "Leslie",
+        "Ben"
       ],
       "joke_types": [
-        "observational",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Ken speaking to the camera in confessional style",
-      "punchline": "The specific and unexpected pairing of Matchbox 20 with curse fear",
-      "craft_total": 7.9,
-      "impact_score": 8.0,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "The curse has been threatened. Leslie announces Sweetums donated more cotton candy machines.",
+      "punchline": "Both immediately say 'Take that, curse!' \u2014 treating cotton candy as a supernatural defense.",
+      "craft_total": 6.2,
+      "impact_score": 6.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent observational comedy with perfect specificity. The Matchbox 20 reference is unexpected and quotable.",
+      "explanation": "A light running gag initiation \u2014 the comedy is in taking the curse seriously enough to feel like you're winning against it with mundane festival logistics. The synchronized delivery from both characters gives it extra charm.",
       "dialogue": [
         {
           "speaker": "Ken",
@@ -407,23 +417,23 @@
     },
     {
       "index": 15,
-      "text": "Take that, curse! / Take that, curse! / Ouch, ouch, ouch! Right in the chest, ooh! Ow, ow, ow! Bazooka!",
+      "text": "Two characters hit each other in the chest with what sounds like toy weapons or a game \u2014 'Ouch, ouch, ouch! Right in the chest, ooh! Ow, ow, ow! Bazooka!'",
       "characters": [
-        "Leslie",
-        "Ben"
+        "Andy",
+        "April"
       ],
       "joke_types": [
         "physical_slapstick",
         "character_comedy"
       ],
-      "setup": "Leslie and Ben celebrating getting more cotton candy machines",
-      "punchline": "Their elaborate pretend combat with the curse",
-      "craft_total": 5.93,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "A transition into the carnival setup shows Andy and April playing with something at a game booth.",
+      "punchline": "The exaggerated pain sounds followed by 'Bazooka!' and someone off-camera telling them to 'get a room' suggests romantic horseplay being mistaken for something else.",
+      "craft_total": 6.02,
+      "impact_score": 5.75,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Physical comedy that shows the characters' playful dynamic but goes on a bit long.",
+      "explanation": "Functional physical comedy that characterizes Andy and April's playful relationship. The 'get a room' reaction is the punchline \u2014 suggesting observers read their play-fighting as romantic. Competent but not exceptional.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -457,23 +467,22 @@
     },
     {
       "index": 16,
-      "text": "She's like an eagle-eyed tiger. / Eagle-eyed tiger! New band name, I call it!",
+      "text": "'Joan is always looking for a scandal. She's like an eagle-eyed tiger.'",
       "characters": [
-        "Leslie",
-        "Andy"
+        "Leslie"
       ],
       "joke_types": [
         "character_comedy",
-        "running_gag"
+        "absurdist"
       ],
-      "setup": "Leslie describing Joan Callamezzo",
-      "punchline": "Andy's immediate excitement about the band name potential",
-      "craft_total": 6.53,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Leslie warns the team about Joan Callamezzo's journalist instincts.",
+      "punchline": "The metaphor 'eagle-eyed tiger' is a nonsensical mixed animal hybrid delivered with total confidence.",
+      "craft_total": 6.8,
+      "impact_score": 6.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Classic Andy moment that calls back to his running gag of finding band names everywhere.",
+      "is_callback": 0,
+      "explanation": "A classic Leslie malaprop/mixed metaphor \u2014 she confidently produces a meaningless hybrid image. Works because it's character-specific and delivered without any awareness it's strange.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -487,23 +496,22 @@
     },
     {
       "index": 17,
-      "text": "But he did it so nicely that I didn't even realize he did it. / I've done that to multiple men.",
+      "text": "'Eagle-eyed tiger! New band name, I call it!'",
       "characters": [
-        "Ann",
-        "April"
+        "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "dark_subversive"
+        "reaction_beat"
       ],
-      "setup": "Ann explaining how Chris broke up with her",
-      "punchline": "April's casual admission of doing the same manipulative thing",
-      "craft_total": 7.17,
+      "setup": "Leslie uses the phrase 'eagle-eyed tiger.'",
+      "punchline": "Tom immediately and enthusiastically stakes his claim to it as a band name \u2014 his constant desire to brand everything is the joke.",
+      "craft_total": 7.0,
       "impact_score": 6.5,
-      "quotability": 6.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment for April that reveals her manipulative side in a darkly funny way.",
+      "explanation": "Tom's spontaneous brand-claiming of random phrases is very character-specific and the timing is sharp. The joke is in his complete unselfconsciousness \u2014 he has no band but he's already claiming names. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -517,22 +525,23 @@
     },
     {
       "index": 18,
-      "text": "Two days ago I was sobbing at a pizza buffet and they asked me to leave. I've been looking at some dog adoption web sites. Bought $700 worth of candles from Anthropologie. I did this to my hair.",
+      "text": "'Let's grab hands.' / 'I don't hold hands.'",
       "characters": [
-        "Ann"
+        "Leslie",
+        "Ron"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Ann describing how she's handling the breakup",
-      "punchline": "The escalating list of increasingly pathetic post-breakup behaviors",
-      "craft_total": 7.13,
-      "impact_score": 7.17,
-      "quotability": 6.0,
+      "setup": "Leslie tries to do a team huddle and invites everyone to grab hands.",
+      "punchline": "Ron flatly refuses \u2014 'I don't hold hands' \u2014 as if it's a settled personal policy.",
+      "craft_total": 7.34,
+      "impact_score": 6.83,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalating list that builds to the hair reveal. Relatable post-breakup spiral.",
+      "explanation": "Five words that are entirely Ron Swanson. The refusal is absolute, non-negotiable, and absurdly serious. High character integration \u2014 this line could only come from Ron.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -558,23 +567,23 @@
     },
     {
       "index": 19,
-      "text": "Normally, people tell you to talk about your problems, I'm gonna recommend you bottle that noise up. / That's what my mailman said.",
+      "text": "Leslie's 'inspiring' speech ends with '...not focus on the fact that if one thing goes wrong, we're all gonna lose our jobs.' Someone responds: 'That's not inspiring.'",
       "characters": [
-        "Ron",
-        "Ann"
+        "Leslie",
+        "Unknown Team Member"
       ],
       "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Ron giving Ann relationship advice",
-      "punchline": "Ann's casual revelation that her mailman gave the same advice",
-      "craft_total": 7.23,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "Leslie gives an uplifting pep talk to the team.",
+      "punchline": "She accidentally undermines the entire thing by reminding them of catastrophic stakes, and someone immediately calls it out.",
+      "craft_total": 7.05,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Ron advice moment with Ann's unexpected addition about the mailman.",
+      "explanation": "Leslie's anxiety sabotaging her own pep talk is a classic bit of character comedy \u2014 she can't help but include the terrifying caveat. The deadpan 'That's not inspiring' is the perfect button. Good structural comedy.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -592,22 +601,22 @@
     },
     {
       "index": 20,
-      "text": "Muah-muah-murder. Murdering the most melons. Shaquille showered shame on Shakira's sheets.",
+      "text": "Ann's breakup post-mortem: sobbing at a pizza buffet until they asked her to leave, $700 in candles from Anthropologie, looking at dog adoption websites, and 'I did this to my hair.'",
       "characters": [
-        "Jerry"
+        "Ann"
       ],
       "joke_types": [
         "character_comedy",
-        "wordplay_pun"
+        "escalation"
       ],
-      "setup": "Jerry doing vocal exercises",
-      "punchline": "The absurd alliterative phrases, especially the Shaquille/Shakira one",
-      "craft_total": 6.17,
-      "impact_score": 5.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie asks how Ann is doing after her breakup with Chris.",
+      "punchline": "Ann lists an escalating series of breakup behaviors that each become more specific and pathetic, culminating in the undescribed but clearly disastrous hair change.",
+      "craft_total": 7.72,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Jerry moment with increasingly absurd tongue twisters.",
+      "explanation": "An excellent escalation joke with each item funnier than the last. The pizza buffet eviction is specific and sad in the right way, the $700 Anthropologie candles is brilliant brand-specific detail, and 'I did this to my hair' works as a visual punchline because we can presumably see it. The escalation structure is well-executed and the specificity elevates it.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -625,22 +634,22 @@
     },
     {
       "index": 21,
-      "text": "But deadly. When was the last time this giant wheel of death was inspected?",
+      "text": "Leslie's advice to Ann: 'Normally, people tell you to talk about your problems. I'm gonna recommend you bottle that noise up. That's what my mailman said.'",
       "characters": [
-        "Joan"
+        "Leslie"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "absurdist"
       ],
-      "setup": "Leslie showing Joan the beautiful ferris wheel",
-      "punchline": "Joan immediately focusing on danger and calling it a 'wheel of death'",
-      "craft_total": 6.8,
-      "impact_score": 6.25,
+      "setup": "Leslie is comforting Ann about her breakup.",
+      "punchline": "She gives terrible advice \u2014 the opposite of standard wisdom \u2014 and then cites her mailman as the source.",
+      "craft_total": 7.38,
+      "impact_score": 7.0,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Joan Callamezzo moment - immediately finding the negative angle. 'Wheel of death' is quotable.",
+      "explanation": "The mailman citation is what elevates this from a standard 'bad advice' joke. It implies Leslie has been getting life guidance from her mailman and finds it authoritative, which is deeply funny. Good economy and character specificity.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -654,41 +663,42 @@
     },
     {
       "index": 22,
-      "text": "How many of these carnies are illegals?",
+      "text": "'Muah-muah-murder. Murdering the most melons. Shaquille showered shame on Shakira's sheets.'",
       "characters": [
-        "Joan"
+        "Unknown"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Joan doing her investigative reporting",
-      "punchline": "The blunt, inappropriate question delivered matter-of-factly",
-      "craft_total": 6.13,
-      "impact_score": 5.33,
-      "quotability": 4.0,
+      "setup": "A voice is heard warming up or practicing alliteration in the background before Joan's arrival.",
+      "punchline": "The escalating alliterative phrases become increasingly bizarre and violent in content.",
+      "craft_total": 6.32,
+      "impact_score": 6.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Joan's inappropriate sensationalism but relies on shock value."
+      "explanation": "Likely Joan Callamezzo or her crew warming up before the interview \u2014 the comedy is in the absurd escalation of alliterative phrases from nonsense to celebrity gossip. 'Shaquille showered shame on Shakira's sheets' is memorably specific. Entertaining background absurdism."
     },
     {
       "index": 23,
-      "text": "Are you [bleep] kidding me? You got Li'l Sebastian?",
+      "text": "Joan asks if the corn is Pawnee corn or Eagleton corn \u2014 with clear distaste for Eagleton.",
       "characters": [
-        "Joan"
+        "Joan Callamezzo",
+        "Leslie"
       ],
       "joke_types": [
-        "reaction_beat",
-        "escalation"
+        "character_comedy",
+        "running_gag"
       ],
-      "setup": "Joan has been cynical about everything at the festival",
-      "punchline": "Her complete change in attitude when she sees Little Sebastian",
-      "craft_total": 6.93,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Leslie shows off Indiana's largest corn maze.",
+      "punchline": "Joan's first question is a loaded civic rivalry question \u2014 is this Pawnee or (inferior) Eagleton corn?",
+      "craft_total": 6.57,
+      "impact_score": 5.83,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great payoff showing even the cynical Joan is impressed by Little Sebastian.",
+      "explanation": "A quick nod to the Eagleton rivalry that longtime fans appreciate. Not a powerhouse joke but efficiently characterizes Joan and the Pawnee-Eagleton dynamic.",
       "dialogue": [
         {
           "speaker": "Joan",
@@ -706,22 +716,22 @@
     },
     {
       "index": 24,
-      "text": "Thank you, Joan. Li'l Sebastian isn't bad either.",
+      "text": "Joan: 'But deadly. When was the last time this giant wheel of death was inspected?'",
       "characters": [
-        "Tom"
+        "Joan Callamezzo"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Joan compliments Little Sebastian saying he's adorable",
-      "punchline": "Tom's assumption she was complimenting him",
-      "craft_total": 6.2,
-      "impact_score": 5.33,
-      "quotability": 5.0,
+      "setup": "Leslie proudly shows off the beautiful Ferris wheel.",
+      "punchline": "Joan immediately reframes it as a 'giant wheel of death,' looking for the scandal angle in every attraction.",
+      "craft_total": 6.78,
+      "impact_score": 6.25,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Tom vanity moment but fairly predictable.",
+      "explanation": "Joan's character is perfectly distilled into this moment \u2014 she literally cannot see a Ferris wheel without reframing it as an instrument of death. 'Giant wheel of death' is a good phrase. Character integration is strong.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -731,23 +741,22 @@
     },
     {
       "index": 25,
-      "text": "Did you get your breasts done? You look amazing. / Yes, thanks for noticing.",
+      "text": "Joan: 'How many of these carnies are illegals?'",
       "characters": [
-        "Tom",
-        "Joan"
+        "Joan Callamezzo"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Tom talking to Joan Callamezzo",
-      "punchline": "The inappropriate personal comment and Joan's casual acceptance",
-      "craft_total": 6.07,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Leslie patiently answers Joan's hostile questions.",
+      "punchline": "Joan's next question is instantly offensive and baseless \u2014 another attempted scandal with zero evidence.",
+      "craft_total": 6.41,
+      "impact_score": 6.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Cringe humor showing both characters' inappropriate boundaries.",
+      "explanation": "Quick and characterizing \u2014 Joan's tabloid-journalist instincts mean she assumes every venue is hiding a scandal. The rapid-fire nature of her hostile questions builds a comedic rhythm. Functional.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -761,22 +770,23 @@
     },
     {
       "index": 26,
-      "text": "And when it does, I'm gonna be there to give you a foot massage... To completion.",
+      "text": "Larry Bird's 84-year-old aunt Tilda signing autographs. 'You got Tilda?' / 'We got Tilda.'",
       "characters": [
-        "Tom"
+        "Leslie",
+        "Joan Callamezzo"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "absurdist",
+        "deadpan_understatement"
       ],
-      "setup": "Tom promising Joan the festival will impress her",
-      "punchline": "The increasingly inappropriate offer ending with 'to completion'",
-      "craft_total": 5.93,
-      "impact_score": 5.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie lists celebrity appearances at the festival including Larry Bird's 84-year-old aunt.",
+      "punchline": "Joan drops her hostile demeanor and is genuinely impressed \u2014 'You got Tilda?' \u2014 treating an elderly woman's tenuous celebrity connection as a major booking.",
+      "craft_total": 7.71,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Tom's inappropriate escalation lands with uncomfortable humor.",
+      "explanation": "A brilliant Pawnee-specific joke \u2014 the town's standards for celebrity are so low that an 84-year-old woman with a basketball player nephew is a genuine get. Joan's sudden genuine excitement ('You got Tilda?') punctures her hostile journalist persona beautifully. The mirrored 'We got Tilda' confirmation is perfect comedic economy. Scores 8+ because the absurdist specificity (84-year-old aunt specifically, not Larry Bird himself) is excellent writing.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -790,23 +800,22 @@
     },
     {
       "index": 27,
-      "text": "Well, I want a billion Teddy bears. / Well, that's a little unrealistic. This is a hard game. Two million.",
+      "text": "Tom to Joan: 'Thank you, Joan. Li'l Sebastian isn't bad either.'",
       "characters": [
-        "April",
-        "Andy"
+        "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "irony_sarcasm"
       ],
-      "setup": "Andy promising to win April teddy bears at carnival games",
-      "punchline": "Andy's serious negotiation of impossible numbers as if they're achievable",
-      "craft_total": 6.63,
-      "impact_score": 6.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Joan admires Li'l Sebastian and says 'He is so adorable.'",
+      "punchline": "Tom takes it as a compliment directed at himself and graciously extends it to the horse.",
+      "craft_total": 7.45,
+      "impact_score": 7.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Andy's optimism and April's testing of it.",
+      "explanation": "Pure Tom Haverford. His narcissism is so total that he hears a compliment to a horse as directed at himself and magnanimously includes the horse as a runner-up. The character integration is flawless \u2014 only Tom could deliver this line. The economy is exceptional: he does a lot with very few words.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -832,24 +841,23 @@
     },
     {
       "index": 28,
-      "text": "Hey, I love you. / Dude, shut up! / That is awesome sauce!",
+      "text": "Tom to Joan: 'This Harvest Festival, it's gonna knock your socks off. And when it does, I'm gonna be there to give you a foot massage... to completion.' / 'Good lord.'",
       "characters": [
-        "Andy",
-        "April",
-        "Andy"
+        "Tom",
+        "Joan Callamezzo"
       ],
       "joke_types": [
         "character_comedy",
-        "callback"
+        "cringe_discomfort"
       ],
-      "setup": "Andy declares his love for April",
-      "punchline": "April's harsh rejection followed by Andy's enthusiasm about 'awesome sauce'",
-      "craft_total": 6.67,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "Tom is trying to charm Joan Callamezzo during her walk-through.",
+      "punchline": "'To completion' added to a foot massage offer takes a weird idea and makes it disturbingly suggestive, then Joan's 'Good lord' is the perfect horrified button.",
+      "craft_total": 7.49,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Important character moment that sets up the relationship tension.",
+      "is_callback": 0,
+      "explanation": "Tom's delusional flirtatiousness is well-established and this is a good expression of it. 'To completion' is doing all the work \u2014 it transforms a weird offer into an inappropriately suggestive one. Joan's reaction is the right button. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -867,41 +875,42 @@
     },
     {
       "index": 29,
-      "text": "Wow, that is a shockingly huge mini horse erection.",
+      "text": "Ben and Leslie's Teddy bear negotiation: 'I'm gonna win you a million Teddy bears.' / 'Well, I want a billion Teddy bears.' / 'Well, that's a little unrealistic. This is a hard game. Two million.'",
       "characters": [
-        "Tom"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "visual_gag"
-      ],
-      "setup": "Tom looking at Little Sebastian",
-      "punchline": "The blunt observation about the horse's anatomy",
-      "craft_total": 5.27,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Crude humor that relies on shock value rather than cleverness."
-    },
-    {
-      "index": 30,
-      "text": "Well, uh, you know, when I was an 18-year-old mayor, I tried to build a winter sports complex called Ice Town and it bankrupted the city.",
-      "characters": [
-        "Ben"
+        "Ben",
+        "Leslie"
       ],
       "joke_types": [
         "character_comedy",
-        "callback"
+        "absurdist"
       ],
-      "setup": "Joan asking Ben about his failures",
-      "punchline": "The absurd backstory of an 18-year-old mayor building 'Ice Town'",
-      "craft_total": 7.33,
-      "impact_score": 6.83,
-      "quotability": 8.0,
+      "setup": "Ben tries to impress Leslie by promising to win her carnival prizes.",
+      "punchline": "The negotiation escalates from romantic gesture to absurd economics \u2014 Leslie counters with a billion, Ben walks it back to two million as a realistic compromise, treating the impossible as a haggling situation.",
+      "craft_total": 7.31,
+      "impact_score": 7.0,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Excellent character backstory that's both absurd and specific. 'Ice Town' is highly quotable.",
+      "is_callback": 0,
+      "explanation": "A delightful escalation joke that also works as character comedy \u2014 Ben's auditor brain immediately applies economic logic to a romantic gesture, creating a negotiation where the 'realistic' counteroffer is still impossible. The structure is tight and the humor builds through each exchange. Scores 8 because it's well-constructed and specifically characterizes both Ben's analytical nature and Leslie's whimsy."
+    },
+    {
+      "index": 30,
+      "text": "Andy yells 'Hey, I love you!' apparently at the carnival, and an off-screen voice yells back 'Dude, shut up!' followed by 'That is awesome sauce!'",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Andy apparently shouts his love declaration during a public carnival game or activity.",
+      "punchline": "A stranger tells him to shut up; Andy responds with 'awesome sauce' \u2014 which sets up the April plot.",
+      "craft_total": 7.06,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Functional moment that's primarily important for plot setup (the 'awesome sauce' vs 'I love you too' issue). The yelled love declaration with a stranger's annoyed reaction is characteristically Andy. Gets a rewatch bonus because it's foreshadowing the episode's emotional B-plot.",
       "dialogue": [
         {
           "speaker": "Joan",
@@ -927,22 +936,22 @@
     },
     {
       "index": 31,
-      "text": "I was also short-stop on my JV baseball team. No one ever brings that up.",
+      "text": "Tom talking-head: 'Most people look at Li'l Sebastian and they see a famous mini horse. I see an advertising opportunity for my club. The Snakehole Lounge.'",
       "characters": [
-        "Ben"
+        "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "deadpan_understatement"
+        "irony_sarcasm"
       ],
-      "setup": "Ben listing his past roles after the Ice Town disaster",
-      "punchline": "His disappointed tone about people not mentioning his baseball position",
-      "craft_total": 7.4,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Li'l Sebastian is beloved by all for his own sake.",
+      "punchline": "Tom cannot conceive of any situation that isn't a marketing opportunity \u2014 he's put Snakehole Lounge branding on a 25-year-old arthritic horse.",
+      "craft_total": 6.97,
+      "impact_score": 6.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ben moment showing his need for recognition even for minor achievements.",
+      "explanation": "Tom's relentless brand-brain is perfectly captured here. The irony of treating a beloved public figure as an ad vehicle is well-structured, and character integration is very high.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -952,26 +961,22 @@
     },
     {
       "index": 32,
-      "text": "Uh, somebody left the gate open and he got out, Jerry! / What are you talking about? / Unbelievable. Another in a long string of miserable failures. You lost Li'l Sebastian! / I wasn't even here! / Exactly.",
+      "text": "'Wow, that is a shockingly huge mini horse erection.'",
       "characters": [
-        "Tom",
-        "Jerry",
-        "Tom",
-        "Jerry",
-        "Tom"
+        "Unknown"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "setup_punchline",
+        "dark_subversive"
       ],
-      "setup": "Little Sebastian is missing",
-      "punchline": "Tom blaming Jerry and then using Jerry's defense as further proof of guilt",
-      "craft_total": 6.93,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Tom has been describing his Snakehole Lounge branding on Li'l Sebastian.",
+      "punchline": "Someone matter-of-factly observes the horse's unexpected physical state \u2014 the clinical delivery of a shocking observation.",
+      "craft_total": 7.06,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great example of Tom's blame-shifting and illogical arguments against Jerry.",
+      "explanation": "A surprise crude joke delivered completely straight \u2014 the comedy is entirely in the deadpan delivery of something shocking. Short, to the point, gets its laugh. The adverb 'shockingly' is doing good work.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -989,22 +994,23 @@
     },
     {
       "index": 33,
-      "text": "Let's go ahead, let's get some shots of chipped paint and crying babies. How about some of those spooky traffic lights.",
+      "text": "Joan asks Ben about Ice Town, then he adds unprompted: 'I was also short-stop on my JV baseball team. No one ever brings that up.'",
       "characters": [
-        "Joan"
+        "Ben",
+        "Joan Callamezzo"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "deadpan_understatement"
       ],
-      "setup": "Joan realizes there's a scandal brewing",
-      "punchline": "Her immediate shift to gathering negative footage, including 'spooky traffic lights'",
-      "craft_total": 7.1,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Joan presses Ben about his past failure bankrupting a city as an 18-year-old mayor.",
+      "punchline": "Ben, apparently feeling underappreciated, volunteers that he was also a JV shortstop \u2014 as if this balances the ledger \u2014 and notes bitterly that no one brings it up.",
+      "craft_total": 7.36,
+      "impact_score": 7.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Joan moment showing her sensationalist approach. 'Spooky traffic lights' is absurd.",
+      "explanation": "Beautifully observed character comedy. In the middle of a public takedown about a citywide disaster, Ben's wounded pride latches onto his minor athletic achievement as a counterweight \u2014 and nobody cares. 'No one ever brings that up' is devastating and perfectly delivered. The joke reveals Ben's character (he needs to be competent; he feels diminished) while being very funny. Scores 8+ because the specificity (JV shortstop, not even varsity) and the resentment embedded in the final line are expertly crafted.",
       "dialogue": [
         {
           "speaker": "Joan",
@@ -1018,25 +1024,22 @@
     },
     {
       "index": 34,
-      "text": "Plus we lost that little pony. / It's a mini horse! / And that's the third lightning rod. Triple lightning rod! / And then you have the curse, quadruple lightning rod.",
+      "text": "Ben: 'I was also short-stop on my JV baseball team. No one ever brings that up.'",
       "characters": [
-        "Ben",
-        "Leslie",
-        "Ben",
-        "Ben"
+        "Ben Wyatt"
       ],
       "joke_types": [
-        "running_gag",
-        "escalation"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Ben listing all the problems with the festival",
-      "punchline": "The escalating 'lightning rod' metaphor and Leslie's correction about pony vs mini horse",
-      "craft_total": 6.73,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "Joan lists Ben's failures (Ice Town, bankrupted city); Ben tries to deflect",
+      "punchline": "Ben adds his JV baseball position as if it's a mitigating credential \u2014 and notes its lack of coverage as a grievance",
+      "craft_total": 7.9,
+      "impact_score": 7.75,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good escalation and callback to the pony/mini horse distinction.",
+      "is_callback": 0,
+      "explanation": "Great Ben Wyatt character comedy. Under pressure, he reaches for a completely irrelevant, minor credential (JV shortstop!) and then complains about its media neglect. The indignation of 'no one ever brings that up' makes it. Very quotable, well-constructed.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1058,22 +1061,23 @@
     },
     {
       "index": 35,
-      "text": "Oh, no. No. We all just behave rationally and believe we are all in charge of our own destinies. Come on.",
+      "text": "Tom: 'Somebody left the gate open and he got out, Jerry!' / 'What are you talking about?' / 'Unbelievable. Another in a long string of miserable failures. You lost Li'l Sebastian!' / 'I wasn't even here!' / 'Exactly.'",
       "characters": [
-        "Leslie"
+        "Tom",
+        "Jerry"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Ben asking if people really believe in curses",
-      "punchline": "Leslie's sarcastic response revealing that yes, people do believe in curses",
-      "craft_total": 7.07,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Li'l Sebastian has escaped. Tom was actually the one who left.",
+      "punchline": "Tom blames Jerry, Jerry defends himself by saying he wasn't there, and Tom uses that absence as the very proof of his failure \u2014 'Exactly' \u2014 weaponizing Jerry's alibi against him.",
+      "craft_total": 7.55,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good sarcastic delivery that reveals the town's superstitious nature.",
+      "explanation": "A structurally elegant joke: Jerry's defense ('I wasn't even here!') is turned into the accusation ('Exactly') in one word. Tom's logic is perfectly circular and entirely self-serving, and the reversal is executed flawlessly. The show's running joke of Jerry being blamed for everything reaches a new peak of absurdity here because Tom uses Jerry's innocence as proof of his guilt. Justified 8+ \u2014 the single-word reversal is excellent comedy writing.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1087,22 +1091,23 @@
     },
     {
       "index": 36,
-      "text": "Maybe Li'l Sebastian got upset because he tried to share his true feelings with someone and they didn't reciprocate.",
+      "text": "Leslie and Ben say 'Take that, curse!' again, then immediately panic-face when asked what the curse is.",
       "characters": [
-        "April"
+        "Leslie",
+        "Ben"
       ],
       "joke_types": [
-        "character_comedy",
-        "misdirection"
+        "callback",
+        "running_gag"
       ],
-      "setup": "Everyone wondering why Little Sebastian ran away",
-      "punchline": "April projecting her relationship problems onto the horse",
-      "craft_total": 7.6,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Clever character moment where April projects her Andy issues onto Little Sebastian.",
+      "setup": "The press tour went well. Both say 'Take that, curse!' in celebration \u2014 then a reporter asks what the curse is.",
+      "punchline": "The callback phrase immediately backfires, introducing the curse to the media they were trying to hide it from.",
+      "craft_total": 7.59,
+      "impact_score": 7.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A well-executed callback that turns the running gag into a plot complication. The joke works because the phrase they've been gleefully repeating becomes the rope they hang themselves with. Good structural comedy.",
       "dialogue": [
         {
           "speaker": "April",
@@ -1120,22 +1125,22 @@
     },
     {
       "index": 37,
-      "text": "Good idea. Horses love mazes, come on!",
+      "text": "Joan: 'Let's get some shots of chipped paint and crying babies. How about some of those spooky traffic lights.'",
       "characters": [
-        "Andy"
+        "Joan Callamezzo"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "irony_sarcasm"
       ],
-      "setup": "Tom suggests checking the corn maze for Little Sebastian",
-      "punchline": "Andy's confident but completely wrong assertion about horses loving mazes",
-      "craft_total": 6.73,
-      "impact_score": 5.83,
-      "quotability": 6.0,
+      "setup": "Joan immediately pivots to covering the 'curse' narrative",
+      "punchline": "Her specific, cynical checklist of B-roll items to manufacture ominous news coverage",
+      "craft_total": 7.56,
+      "impact_score": 7.25,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Andy moment of stating nonsense with complete confidence.",
+      "explanation": "Excellent media satire. Joan's specific B-roll shopping list ('crying babies,' 'spooky traffic lights') is both a perfect parody of local TV news construction and a great character beat. 'Spooky traffic lights' in particular is funny \u2014 they're not inherently spooky, Joan just needs them to be.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1153,22 +1158,23 @@
     },
     {
       "index": 38,
-      "text": "Ah, good. Anne, you're so beautiful. Beautiful Anne.",
+      "text": "Leslie explains the triple/quadruple lightning rod situation: 'Plus we lost that little pony.' / 'It's a mini horse!' as an aside amid crisis.",
       "characters": [
-        "Leslie"
+        "Ben",
+        "Unknown"
       ],
       "joke_types": [
-        "character_comedy",
-        "running_gag"
+        "running_gag",
+        "character_comedy"
       ],
-      "setup": "Ann handles a situation well",
-      "punchline": "Leslie's random compliment about Ann's beauty in the middle of crisis",
-      "craft_total": 5.9,
-      "impact_score": 5.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Ben is cataloging the compounding crises facing the festival.",
+      "punchline": "Someone interrupts his dire crisis analysis to correct the pony/mini horse distinction \u2014 the same correction from the beginning of the episode, now even more absurd amid genuine catastrophe.",
+      "craft_total": 6.7,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Callback to Leslie's tendency to randomly compliment Ann but feels forced here.",
+      "explanation": "A well-timed callback to the pony/mini horse distinction that's funnier in context because someone is pedantically correcting semantics during a multi-front crisis. The comedy of misplaced priorities is very Parks and Rec.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1178,22 +1184,22 @@
     },
     {
       "index": 39,
-      "text": "Oh, I love these things. Sorry.",
+      "text": "Ben's analysis: 'This is a huge government project, already a lightning rod. Wamapoke controversy \u2014 double lightning rod. Lost the little pony \u2014 triple lightning rod. The curse \u2014 quadruple lightning rod.'",
       "characters": [
-        "Joan"
+        "Ben"
       ],
       "joke_types": [
         "character_comedy",
-        "meta_self_referential"
+        "escalation"
       ],
-      "setup": "Joan watching an animated recreation of events",
-      "punchline": "Her unprofessional enjoyment of the sensationalized animation",
-      "craft_total": 6.53,
-      "impact_score": 5.67,
-      "quotability": 4.0,
+      "setup": "Ben is trying to explain how bad the situation is.",
+      "punchline": "His management-consultant brain turns a cascading disaster into a tidy numbered metaphor \u2014 'quadruple lightning rod' \u2014 as if naming it properly is solving it.",
+      "craft_total": 7.45,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Joan's unprofessional enjoyment of sensationalism.",
+      "explanation": "Ben's systematic audit-brain turning chaos into a numbered framework is character-specific and the escalating lightning rod metaphor is funny. The joke is that naming it 'quadruple' doesn't help at all.",
       "dialogue": [
         {
           "speaker": "Joan",
@@ -1211,22 +1217,23 @@
     },
     {
       "index": 40,
-      "text": "You know how Indians call corn maize? This is why. I never knew that.",
+      "text": "Ben: 'Wait, I'm sorry. Do people in this town really believe in curses?' / Leslie: 'Oh, no. No. We all just behave rationally and believe we are all in charge of our own destinies. Come on.'",
       "characters": [
-        "Andy"
+        "Ben",
+        "Leslie"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Andy and April are in the corn maze",
-      "punchline": "Andy's completely wrong etymology about corn/maize",
-      "craft_total": 7.1,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Ben expresses genuine shock that the curse is being taken seriously.",
+      "punchline": "Leslie's response is completely sincere reassurance that Pawnee is rational \u2014 delivered in a tone that makes absolutely clear the opposite is true.",
+      "craft_total": 7.24,
+      "impact_score": 6.83,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Andy moment of confident ignorance with fake learning.",
+      "explanation": "Leslie's completely unironic defense of Pawnee's rationality \u2014 in the middle of a curse panic \u2014 is perfect. She genuinely believes this, which makes it funnier. Strong character integration and irony.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1260,25 +1267,22 @@
     },
     {
       "index": 41,
-      "text": "Oh, my God. I'm gonna go look by myself. / Hey, are you all right? You seem super not happy. / I'm fine. / Oh, I forgot to tell you. I might be going to Venezuela tomorrow. Forever.",
+      "text": "Tom suggests Li'l Sebastian escaped because 'he tried to share his true feelings with someone and they didn't reciprocate.'",
       "characters": [
-        "April",
-        "Andy",
-        "April",
-        "April"
+        "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "absurdist"
       ],
-      "setup": "April is clearly upset and Andy is trying to help",
-      "punchline": "April's casual mention of leaving forever to Venezuela",
-      "craft_total": 7.07,
-      "impact_score": 6.5,
+      "setup": "Leslie asks how Li'l Sebastian could have gotten out.",
+      "punchline": "Tom projects his own romantic drama onto the horse with complete seriousness.",
+      "craft_total": 7.58,
+      "impact_score": 7.25,
       "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing April's dramatic tendencies and emotional manipulation.",
+      "explanation": "Tom attributing his own romantic anxieties to a horse is absurdist and character-specific. Also retroactively positions Tom as someone nursing his own emotional issues, giving a layer to his behavior.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1300,26 +1304,22 @@
     },
     {
       "index": 42,
-      "text": "I don't know what's sicker, me or your body. / You aren't sick. / Maybe you should check out my abs. / Are you experiencing abdominal pain? / Every day at the gym.",
+      "text": "Andy: 'Good idea. Horses love mazes, come on!'",
       "characters": [
-        "Bodybuilder",
-        "Ann",
-        "Bodybuilder",
-        "Ann",
-        "Bodybuilder"
+        "Andy"
       ],
       "joke_types": [
         "character_comedy",
-        "misdirection"
+        "deadpan_understatement"
       ],
-      "setup": "Bodybuilder trying to flirt with Ann",
-      "punchline": "Ann's medical interpretation of his flirting and his literal response about gym pain",
-      "craft_total": 6.87,
-      "impact_score": 6.33,
-      "quotability": 5.0,
+      "setup": "Leslie tells Andy and April to check the corn maze for Li'l Sebastian.",
+      "punchline": "Andy enthusiastically endorses this as a good idea based on the (completely made-up) premise that horses love mazes.",
+      "craft_total": 7.4,
+      "impact_score": 7.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good miscommunication comedy with Ann's medical mindset clashing with flirtation.",
+      "explanation": "Pure Andy \u2014 confidently asserts false animal behavior facts with complete conviction. Short, character-specific, and funny. Good economy.",
       "dialogue": [
         {
           "speaker": "Bodybuilder",
@@ -1337,23 +1337,22 @@
     },
     {
       "index": 43,
-      "text": "Who said anything about a boyfriend? / Use him, abuse him, lose him.",
+      "text": "'Ah, good. Anne, you're so beautiful. Beautiful Anne.' \u2014 Leslie randomly and sincerely complimenting Ann in the middle of a crisis.",
       "characters": [
-        "Donna",
-        "Donna"
+        "Leslie"
       ],
       "joke_types": [
         "character_comedy",
-        "dark_subversive"
+        "reaction_beat"
       ],
-      "setup": "Ann saying the bodybuilder isn't boyfriend material",
-      "punchline": "Donna's casual advice about using people",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie is in full crisis mode giving rapid instructions to Ann.",
+      "punchline": "She pauses to sincerely, warmly, and randomly compliment Ann on her appearance \u2014 completely unprompted \u2014 before continuing her crisis management.",
+      "craft_total": 7.46,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Donna advice that's both practical and morally questionable.",
+      "explanation": "One of the most Leslie moments in the episode \u2014 her deep genuine affection for Ann breaks through even in crisis mode. The joke works because it's completely sincere (not sarcastic), completely random in context, and deeply characterizing. Only Leslie Knope interrupts disaster management to tell her best friend she's beautiful. High character integration justifies 8+ score.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -1367,22 +1366,22 @@
     },
     {
       "index": 44,
-      "text": "Yeah, Jerry. He's right here in my pocket.",
+      "text": "'Okay, run, Anne, run!' \u2014 Leslie's final instruction to Ann.",
       "characters": [
-        "Tom"
+        "Leslie"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Jerry asking if they found Little Sebastian",
-      "punchline": "Tom's sarcastic response implying Jerry is an idiot",
-      "craft_total": 6.17,
-      "impact_score": 5.5,
-      "quotability": 5.0,
+      "setup": "Leslie gives Ann detailed instructions about treating and releasing a patient without media contact.",
+      "punchline": "She ends the instructions with 'Run, Anne, run!' \u2014 as though Anne needs to literally sprint from the situation.",
+      "craft_total": 6.76,
+      "impact_score": 6.25,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard Tom sarcasm toward Jerry but not particularly clever.",
+      "explanation": "A small, charming bit \u2014 Leslie's urgency escalating to the point of telling Ann to literally run. Shows her panic bleeding into her communication style.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -1396,22 +1395,23 @@
     },
     {
       "index": 45,
-      "text": "There are not, as one reporter suggested, dozens of escaped convicts meandering around the carnival. And, at no time was any Parks Department quote, 'feasting on petting zoo animals.'",
+      "text": "News broadcast shows 'exclusive animation' of Leslie refusing to move the carnival \u2014 depicted as a cartoon Leslie violently shoving Ken Hotate.",
       "characters": [
-        "Leslie"
+        "News Anchor",
+        "Leslie (animated)"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "visual_gag",
+        "irony_sarcasm"
       ],
-      "setup": "Leslie trying to dispel false rumors",
-      "punchline": "The increasingly absurd rumors she has to deny, especially 'feasting on petting zoo animals'",
-      "craft_total": 7.27,
-      "impact_score": 7.33,
-      "quotability": 8.0,
+      "setup": "A news anchor says they have exclusive animation of the conversation between Leslie and Ken.",
+      "punchline": "The animation clearly depicts something that never happened \u2014 Leslie shoving Ken \u2014 and the anchor treats it as factual documentary footage.",
+      "craft_total": 7.57,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent escalation of absurd rumors. 'Feasting on petting zoo animals' is highly quotable.",
+      "explanation": "A sharp media satire joke \u2014 the animation convention (used by real news to depict events they have no footage of) is taken to its logical absurd extreme. The animation apparently shows something completely fabricated, presented as news. The anchor's excited 'I love these things' is the button. Scores 8+ because it's a well-observed media satire that's both character-funny (Leslie's horror) and structurally strong.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1425,22 +1425,22 @@
     },
     {
       "index": 46,
-      "text": "Leslie, how big of a disaster will this be, on a scale of 9 to 10?",
+      "text": "The anchor says 'I love these things. Sorry.' after watching his own channel's deceptive animation.",
       "characters": [
-        "Reporter"
+        "Perd Hapley"
       ],
       "joke_types": [
         "character_comedy",
-        "setup_punchline"
+        "deadpan_understatement"
       ],
-      "setup": "Reporter asking about potential disaster",
-      "punchline": "The loaded scale that only allows for levels of disaster",
-      "craft_total": 7.17,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "The news animation depicting false events plays on air.",
+      "punchline": "The anchor momentarily breaks from reporter mode to express personal delight at the animation, then half-heartedly apologizes.",
+      "craft_total": 7.88,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Clever setup that reveals media bias by offering only disaster levels as options.",
+      "explanation": "Perd Hapley's cheerful obliviousness is perfectly captured \u2014 he's delighted by the animated segment even as it slanders someone, and the 'sorry' is perfunctory at best. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Reporter",
@@ -1454,22 +1454,22 @@
     },
     {
       "index": 47,
-      "text": "Yeah, the statement that this reporter has is a question. Will that be enough to lift the curse?",
+      "text": "Andy to April in the corn maze: 'You know how Indians call corn maize? This is why. I never knew that.'",
       "characters": [
-        "Perd"
+        "Andy"
       ],
       "joke_types": [
         "character_comedy",
-        "wordplay_pun"
+        "absurdist"
       ],
-      "setup": "Perd being called on at the press conference",
-      "punchline": "His unnecessarily convoluted way of saying he has a question",
-      "craft_total": 6.95,
-      "impact_score": 6.75,
-      "quotability": 7.5,
+      "setup": "Andy and April are searching for Li'l Sebastian in the corn maze.",
+      "punchline": "Andy has an 'aha' moment about the etymology of the word 'maize,' experiencing a genuine revelation about something obvious \u2014 and has clearly never made this connection before.",
+      "craft_total": 7.95,
+      "impact_score": 7.83,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect Perd callback to his unnecessarily wordy reporting style. The meta-commentary on having a question is classically Perd.",
+      "is_callback": 0,
+      "explanation": "A perfect Andy joke \u2014 his childlike wonder at an obvious linguistic connection he's just discovered is pure character. The addition of 'I never knew that' makes it clear he's genuinely moved by this minor insight. Scores 8+ because the character integration is exceptional and the joke is very quotable.",
       "dialogue": [
         {
           "speaker": "Perd Hapley",
@@ -1479,22 +1479,22 @@
     },
     {
       "index": 48,
-      "text": "Oh, my God. Crap on a spatula.",
+      "text": "April says she might be going to Venezuela. 'Tomorrow. Forever.'",
       "characters": [
-        "Leslie"
+        "April"
       ],
       "joke_types": [
         "character_comedy",
-        "wordplay_pun"
+        "deadpan_understatement"
       ],
-      "setup": "Something goes wrong at the worst possible moment",
-      "punchline": "Leslie's unique, mild profanity",
-      "craft_total": 6.97,
-      "impact_score": 6.17,
-      "quotability": 8.0,
+      "setup": "Andy asks if April is okay because she seems upset.",
+      "punchline": "April mentions possibly moving to Venezuela forever as a casual aside \u2014 the extreme solution delivered completely flat.",
+      "craft_total": 7.63,
+      "impact_score": 7.25,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Leslie-specific mild profanity that's both clean and memorable.",
+      "explanation": "Classic April deadpan \u2014 the extreme emotional response (emigrating to South America permanently) delivered as an afterthought. The two-word follow-up 'Forever.' is perfectly calibrated. High economy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1504,22 +1504,22 @@
     },
     {
       "index": 49,
-      "text": "Jerry's fault. Jerry's fault. Jerry's fault! Jerry's fault!",
+      "text": "April says: 'I'm not mad at Andy. Andy's great. I awesome sauce Andy.'",
       "characters": [
-        "Crowd"
+        "April"
       ],
       "joke_types": [
-        "running_gag",
-        "escalation"
+        "character_comedy",
+        "callback"
       ],
-      "setup": "Something goes wrong and people look for someone to blame",
-      "punchline": "The immediate mob mentality of blaming Jerry",
-      "craft_total": 6.7,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Andy tries to figure out why April is upset with him. April denies being upset and says she loves him using his own stupid phrase.",
+      "punchline": "April using 'awesome sauce' as a verb meaning love \u2014 directly mirroring the phrase that caused the problem and revealing her feelings through it.",
+      "craft_total": 7.98,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good escalation of the running gag about Jerry being blamed for everything.",
+      "explanation": "April adopting Andy's dumb slang to express her love is both a perfect callback and a character moment \u2014 she won't say 'I love you' in the conventional way, so she weaponizes his own verbal tic. It's sweet and funny simultaneously. High character integration and earned emotional payoff.",
       "dialogue": [
         {
           "speaker": "Crowd",
@@ -1537,23 +1537,23 @@
     },
     {
       "index": 50,
-      "text": "If they're missing this long, they're usually dead. / Well, if that's true, then you're gonna have to answer to the whole town. And God.",
+      "text": "Ann to Donna: 'He isn't exactly boyfriend material.' Donna: 'Who said anything about a boyfriend? Use him, abuse him, lose him.'",
       "characters": [
-        "Ron",
-        "Tom"
+        "Ann Perkins",
+        "Donna Meagle"
       ],
       "joke_types": [
-        "dark_subversive",
-        "escalation"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Discussing how long Little Sebastian has been missing",
-      "punchline": "Ron's matter-of-fact statement about death and Tom's dramatic escalation",
-      "craft_total": 6.1,
-      "impact_score": 5.5,
-      "quotability": 6.0,
+      "setup": "Ann is watching Donna flirt with a patient and offers a judgment",
+      "punchline": "Donna delivers her relationship philosophy in three perfectly parallel, rhyming verbs",
+      "craft_total": 7.44,
+      "impact_score": 7.5,
+      "quotability": 9.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moments - Ron's dark pragmatism and Tom's dramatic fear.",
+      "explanation": "Donna's three-verb philosophy is a quotable, perfectly structured line. The rhyme scheme (use/abuse/lose) gives it a memorable rhythm, and the escalation from 'use' to 'abuse' to 'lose' is both funny and completely character-consistent. Donna's confidence in delivering it as obvious wisdom makes it land harder. High quotability.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -1579,22 +1579,23 @@
     },
     {
       "index": 51,
-      "text": "Andy, she's mad because you said 'awesome sauce' instead of, 'I love you, too.' April, he loves you. Stop being a child. Tom, you're clearly at fault here. Blaming Jerry won't save you. Jerry, we both know you were shotgunning funnel cakes instead of watching Li'l Sebastian. So everyone apologize to everyone else!",
+      "text": "Jerry: 'Yeah, Jerry. He's right here in my pocket.' \u2014 Tom's sarcastic response to Jerry asking if they found Li'l Sebastian.",
       "characters": [
-        "Ron"
+        "Tom",
+        "Jerry"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Everyone is arguing and confused about their conflicts",
-      "punchline": "Ron's efficient, harsh resolution of everyone's problems",
-      "craft_total": 8.2,
-      "impact_score": 8.17,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Jerry hopefully asks if they've found the horse.",
+      "punchline": "Tom's sarcastic 'He's right here in my pocket' \u2014 making clear what a stupid question it was.",
+      "craft_total": 6.42,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent Ron moment where he cuts through everyone's drama with brutal efficiency and accuracy.",
+      "explanation": "Standard sarcasm with decent character integration (Tom's contempt for Jerry). Not exceptional but functional.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -1604,22 +1605,23 @@
     },
     {
       "index": 52,
-      "text": "That's what makes the sauce so awesome.",
+      "text": "Tom's solution to the ground search failing: 'We need a bird's eye view.' / Immediately cuts to Ron apparently being asked to climb the Ferris wheel.",
       "characters": [
-        "Andy"
+        "Tom",
+        "Ron"
       ],
       "joke_types": [
-        "callback",
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Andy and April reconciling after the 'awesome sauce' conflict",
-      "punchline": "Andy's callback to the phrase that caused the problem, now used sweetly",
-      "craft_total": 7.3,
-      "impact_score": 6.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect callback that resolves the relationship conflict while maintaining Andy's character voice.",
+      "setup": "Tom announces they need a bird's eye view to spot Li'l Sebastian.",
+      "punchline": "The solution is apparently to have Ron climb the Ferris wheel \u2014 Ron's impassive face processing this request is the implied visual joke.",
+      "craft_total": 6.57,
+      "impact_score": 6.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The implicit joke of Ron being chosen for Ferris wheel reconnaissance is funny \u2014 Ron's stoic competence being applied to absurd tasks is classic. The cut is the joke.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1649,23 +1651,22 @@
     },
     {
       "index": 53,
-      "text": "Aw, Jerry just farted! I'm very upset, I get nervous.",
+      "text": "Leslie's press conference: denying there is 'no food shortage' and that Parks staff were NOT 'feasting on petting zoo animals.'",
       "characters": [
-        "Andy",
-        "Jerry"
+        "Leslie"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
+        "escalation",
+        "absurdist"
       ],
-      "setup": "The group hug moment",
-      "punchline": "Jerry's embarrassing bodily function and defensive explanation",
-      "craft_total": 6.2,
-      "impact_score": 6.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie is trying to address false rumors about the festival.",
+      "punchline": "She has to formally deny that her staff ate the petting zoo animals \u2014 a rumor so specific and horrible that the denial itself is the joke.",
+      "craft_total": 7.89,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Basic bathroom humor that fits Jerry's embarrassing character but isn't particularly clever. Relies on cheap physical comedy.",
+      "explanation": "The 'feasting on petting zoo animals' denial is one of the episode's best absurdist jokes. The very specificity of the rumor (not just eating animals \u2014 feasting, specifically petting zoo animals) combined with Leslie needing to formally state this didn't happen is perfectly calibrated. It suggests the media environment has gotten so chaotic that this specific thing became a story. Scores 8 for strong structure, originality, and the fact that the denial format itself is the joke.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -1683,23 +1684,24 @@
     },
     {
       "index": 54,
-      "text": "You single? / Not now, Ed.",
+      "text": "Joan: 'You were in charge of watching a tiny horse, and you failed.' Tom: 'Look, I'm only gonna say this once. What if Li'l Sebastian is on this Ferris wheel?' / 'How about you only say that never.'",
       "characters": [
-        "Ed",
-        "Leslie"
+        "Joan Callamezzo",
+        "Tom",
+        "Ben"
       ],
       "joke_types": [
         "character_comedy",
-        "timing"
+        "absurdist"
       ],
-      "setup": "Leslie compliments Ed's technical knowledge about generators",
-      "punchline": "Ed immediately trying to ask her out during the crisis",
-      "craft_total": 6.25,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Tom is being called out publicly for losing Li'l Sebastian.",
+      "punchline": "Tom's defensive pivot \u2014 floating the completely nonsensical theory that Li'l Sebastian is ON the Ferris wheel \u2014 and Ben shutting it down with perfect economy.",
+      "craft_total": 7.63,
+      "impact_score": 7.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good timing joke with Ed's inappropriate moment to flirt and Leslie's dismissal.",
+      "explanation": "Tom's absurd deflection paired with Ben's perfect shutdown. 'How about you only say that never' is excellent line structure \u2014 the mirrored format ('only say this once' / 'only say that never') is well-crafted. Tom's attempt to redirect suspicion to the Ferris wheel is hilariously desperate. Justifies 8+ for structure and economy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1721,24 +1723,22 @@
     },
     {
       "index": 55,
-      "text": "Much like the early settlers of Pawnee begged the Wamapoke 200 years ago. / Ah, but that was... / A trick. And over 50 Wamapoke were slaughtered.",
+      "text": "Joan: 'How big of a disaster will this be, on a scale of 9 to 10?'",
       "characters": [
-        "Leslie",
-        "Ken",
-        "Leslie"
+        "Joan Callamezzo"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Leslie comparing her begging to historical precedent",
-      "punchline": "The dark historical reality that Leslie casually acknowledges",
-      "craft_total": 7.4,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "A reporter asks Leslie how big of a disaster the festival will be.",
+      "punchline": "The scale given \u2014 9 to 10 \u2014 presupposes disaster is inevitable and the only question is severity.",
+      "craft_total": 8.04,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark humor that works through Leslie's casual acknowledgment of historical atrocities.",
+      "explanation": "A brilliant little journalism satire joke \u2014 the 'scale of 9 to 10' is a perfectly constructed trap question that normalizes disaster as a certainty. It's highly quotable, efficiently structured, and precisely characterizes the adversarial local media. Scores 8+ because the joke is original in its construction and the economy is excellent.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1756,23 +1756,22 @@
     },
     {
       "index": 56,
-      "text": "Beat it, Donna. / Aye, aye, captain.",
+      "text": "Perd Hapley's question: 'Yeah, the statement that this reporter has is a question.'",
       "characters": [
-        "Bodybuilder",
-        "Donna"
+        "Perd Hapley"
       ],
       "joke_types": [
         "character_comedy",
-        "reaction_beat"
+        "deadpan_understatement"
       ],
-      "setup": "Bodybuilder tells Donna to leave so he can make out with Ann",
-      "punchline": "Donna's mock-military salute acceptance",
-      "craft_total": 5.9,
-      "impact_score": 5.25,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie opens the press conference for questions.",
+      "punchline": "Perd announces his question by first declaring it to be a question \u2014 a completely redundant statement that is apparently his verbal tic.",
+      "craft_total": 8.02,
+      "impact_score": 7.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple character moment showing Donna's easy-going attitude.",
+      "explanation": "Perd Hapley's defining verbal tic \u2014 redundantly prefacing his questions by announcing they are questions \u2014 is brilliantly character-specific and a recurring source of comedy throughout the series. 'The statement that this reporter has is a question' is perfectly circular logic delivered with complete gravitas. The character integration score is as high as it gets. Scores 8+ because the joke is endlessly quotable, deeply character-specific, and was clearly a carefully crafted verbal construction.",
       "dialogue": [
         {
           "speaker": "Bodybuilder",
@@ -1786,22 +1785,23 @@
     },
     {
       "index": 57,
-      "text": "A native American tribe making a deal with the government. Heh! What could go wrong?",
+      "text": "The power goes out in the middle of Leslie's press conference \u2014 lights die and the tent collapses or goes dark.",
       "characters": [
-        "Ken"
+        "Leslie",
+        "Everyone Present"
       ],
       "joke_types": [
-        "dark_subversive",
-        "irony_sarcasm"
+        "physical_slapstick",
+        "escalation"
       ],
-      "setup": "Leslie asking Ken for help with the generator",
-      "punchline": "Ken's sarcastic reference to the historical pattern of broken government promises",
-      "craft_total": 7.73,
+      "setup": "Leslie is in the middle of confidently telling everyone there is no curse.",
+      "punchline": "The power immediately goes out \u2014 perfect comic timing making it seem like divine/curse-level retribution for her denial.",
+      "craft_total": 6.86,
       "impact_score": 7.33,
-      "quotability": 8.0,
+      "quotability": 5.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent dark humor that references real historical patterns with perfect sarcasm and timing.",
+      "explanation": "Structurally perfect: Leslie says 'you know as well as I do there's no such [thing as a curse]' and the universe immediately contradicts her. The timing is the joke \u2014 it's a classic sitcom structure elevated by its specific context (a press conference denial of a supernatural claim). The structure score is very high because the setup and payoff are elegantly arranged.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1815,22 +1815,22 @@
     },
     {
       "index": 58,
-      "text": "We spotted him from the top of the ferris wheel at the center of the corn maze. After the power came back on, we went and got him. It took us four hours to solve that maze. It took the horse 15 minutes. Jerry's still out there.",
+      "text": "'Crap on a spatula. It's the curse. That's exactly what it is.'",
       "characters": [
-        "Leslie"
+        "Unknown (possibly Leslie or Ben)"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Leslie explaining how they found Little Sebastian",
-      "punchline": "The revelation that Jerry is still lost in the maze while the horse escaped quickly",
-      "craft_total": 7.23,
-      "impact_score": 7.33,
+      "setup": "The power goes out during Leslie's denial of the curse.",
+      "punchline": "Someone immediately and definitively attributes it to the curse \u2014 with a colorful expletive substitute.",
+      "craft_total": 7.56,
+      "impact_score": 7.5,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent escalation that makes Jerry look worse than a horse at problem-solving.",
+      "explanation": "'Crap on a spatula' is a fun Pawnee-appropriate expletive substitute. The immediate pivot to curse acceptance is funny given Leslie just denied it. Competent.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1844,22 +1844,22 @@
     },
     {
       "index": 59,
-      "text": "I suppose I oughta go look for him. Right after I get a bratwurst.",
+      "text": "Ben: 'Look, you were totally fine until I got involved. So I feel like I should probably just go... I'm the curse, I think.'",
       "characters": [
-        "Ron"
+        "Ben"
       ],
       "joke_types": [
         "character_comedy",
-        "deadpan_understatement"
+        "irony_sarcasm"
       ],
-      "setup": "Ron realizes Jerry is still lost in the maze",
-      "punchline": "His casual prioritization of food over Jerry's rescue",
-      "craft_total": 7.0,
-      "impact_score": 6.67,
-      "quotability": 7.0,
+      "setup": "Multiple things have gone wrong since Ben became involved with the festival.",
+      "punchline": "Ben internalizes the curse narrative \u2014 sincerely believing he might be the supernatural cause \u2014 and announces he's removing himself as if that's a logical solution.",
+      "craft_total": 7.22,
+      "impact_score": 6.75,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ron moment showing his priorities and casual attitude toward Jerry's predicament.",
+      "explanation": "Ben \u2014 the rational auditor who dismissed the curse \u2014 has now fully succumbed to the superstition and declared himself the curse. The character arc of a skeptic becoming a believer is compressed into a single absurd moment. Good character integration \u2014 it also plays on Ben's Ice Town guilt.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -1873,23 +1873,23 @@
     },
     {
       "index": 60,
-      "text": "Ice Town was a disaster. And it seems like it was probably your fault. From what I can tell, you mismanaged the hell out of it. / Wow, why even say that already?",
+      "text": "Ron's horse timeline assessment: 'If they're missing this long, they're usually dead.' / 'Well, if that's true, then you're gonna have to answer to the whole town. And God.'",
       "characters": [
-        "Leslie",
-        "Ben"
+        "Ron",
+        "Unknown"
       ],
       "joke_types": [
-        "character_comedy",
-        "relationship_comedy"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Ben apologizing for leaving during the crisis",
-      "punchline": "Leslie's blunt assessment of Ice Town and Ben's hurt reaction",
-      "craft_total": 7.13,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Ron is being consulted on whether Li'l Sebastian can be found alive.",
+      "punchline": "Ron's blunt 'usually dead' is so matter-of-fact it shocks; the response escalating to 'the whole town. And God.' escalates the stakes to absurdity.",
+      "craft_total": 7.3,
+      "impact_score": 7.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good relationship moment showing Leslie's honesty and Ben's sensitivity about his past.",
+      "is_callback": 0,
+      "explanation": "Ron's deadpan mortality assessment followed by the invoking of divine judgment (because God presumably cares about Li'l Sebastian) is good absurdist escalation. Character integration strong for Ron.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1915,24 +1915,22 @@
     },
     {
       "index": 61,
-      "text": "I don't get it. At all. It's kind of a small horse. I mean, what am I missing? Am I crazy? / Hey, Ben, you just missed it. He whinnied. / Oh, yeah, no. I totally heard that. It was great.",
+      "text": "Ron's intervention: 'All of you, be quiet! Andy, she's mad because you said 'awesome sauce' instead of 'I love you, too.' April, he loves you. Stop being a child. Tom, you're clearly at fault. Blaming Jerry won't save you. Jerry, we both know you were shotgunning funnel cakes instead of watching Li'l Sebastian. So everyone apologize to everyone else!'",
       "characters": [
-        "Ben",
-        "Andy",
-        "Ben"
+        "Ron Swanson"
       ],
       "joke_types": [
         "character_comedy",
-        "callback"
+        "escalation"
       ],
-      "setup": "Ben still doesn't understand the Little Sebastian obsession",
-      "punchline": "Ben pretending to have heard the whinny to fit in",
-      "craft_total": 7.47,
-      "impact_score": 7.67,
-      "quotability": 6.0,
+      "setup": "Multiple arguments are happening simultaneously in the group",
+      "punchline": "Ron, who hates emotional engagement, delivers a perfectly accurate, utterly no-nonsense verdict on all four parties simultaneously \u2014 including the damning detail of Jerry shotgunning funnel cakes",
+      "craft_total": 7.81,
+      "impact_score": 8.0,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect callback that shows Ben's continued confusion and his attempt to fake understanding.",
+      "explanation": "One of the episode's best jokes. Ron Swanson's defining character trait is his discomfort with emotions paired with his absolute competence \u2014 so him issuing a four-party verdict with complete accuracy, including the devastating 'shotgunning funnel cakes,' is perfect. The Jerry detail is the standout: Ron knows exactly what happened, in vivid detail, and it's both damning and absurdly specific. The structure (four verdicts, one command) is crisp. Highly character-integrated \u2014 only Ron would both hate this situation and resolve it perfectly.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1947,13 +1945,294 @@
           "line": "Right, right. I know. I just... I thought I heard something majestic."
         }
       ]
+    },
+    {
+      "index": 62,
+      "text": "Andy to April: 'That's what makes the sauce so awesome.'",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Andy tells April he loves her (sincerely, this time) after Ron's intervention.",
+      "punchline": "Andy redeems 'awesome sauce' by framing April's love as the literal ingredient that makes it awesome.",
+      "craft_total": 8.01,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A beautiful callback resolution \u2014 Andy takes the dumb phrase that caused the fight and gives it genuine meaning. 'That's what makes the sauce so awesome' is simultaneously stupid and sincere in the best Parks and Rec way. The earned_vs_cheap score is high because this moment genuinely earns its warmth through the episode's comic setup. The character integration is perfect for Andy."
+    },
+    {
+      "index": 63,
+      "text": "'Aw, Jerry just farted!' / 'I'm very upset, I get nervous.'",
+      "characters": [
+        "Tom",
+        "Jerry"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "physical_slapstick"
+      ],
+      "setup": "The group has just had an emotional resolution moment \u2014 apologies, declarations of love.",
+      "punchline": "Jerry farts, destroying the tender atmosphere; his explanation ('I get nervous') is somehow worse than the fart.",
+      "craft_total": 6.83,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A classic Parks and Rec Jerry moment \u2014 he deflates a warm scene. The fart is cheap but the excuse ('I get nervous') is more character-specific. The timing, right after the sweet resolution, is the real craft. Functional lowbrow comedy."
+    },
+    {
+      "index": 64,
+      "text": "Ed the generator man: 'Wow, you know your stuff. You single?' \u2014 flirting with Leslie about generators.",
+      "characters": [
+        "Ed",
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Leslie demonstrates detailed knowledge of generator specifications in a crisis.",
+      "punchline": "Ed is inexplicably attracted to this and immediately asks if she's single \u2014 the crisis context makes the flirtation absurdly misplaced.",
+      "craft_total": 6.27,
+      "impact_score": 5.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick cringe joke \u2014 a man hitting on Leslie because of her generator knowledge during a power crisis. Establishes Ed's character and gets a mild laugh. Functional but not exceptional."
+    },
+    {
+      "index": 65,
+      "text": "Ken Hotate: 'Much like the early settlers of Pawnee begged the Wamapoke 200 years ago.' / 'Ah, but that was...' / 'A trick. And over 50 Wamapoke were slaughtered.'",
+      "characters": [
+        "Ken Hotate",
+        "Leslie"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Leslie comes to Ken on her knees begging for help with the generator.",
+      "punchline": "Ken draws a parallel to historical settler begging, Leslie starts to differentiate her situation \u2014 and Ken finishes her sentence with 'A trick,' then delivers the casualty count.",
+      "craft_total": 8.4,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Ken Hotate's best scene. The joke works because he completes Leslie's sentence in the worst possible way \u2014 she was going to say 'different' and he says 'A trick, and 50 people died.' The structure of letting Leslie walk into the historical parallel herself is excellent. Ken's deadpan delivery of historical atrocities as conversational anecdotes is one of the show's best recurring comedic strategies. Scores 8+ for structure, character integration, and dark wit."
+    },
+    {
+      "index": 66,
+      "text": "The carnival nurse scene \u2014 sick man says 'I don't know what's sicker, me or your body.' Nurse rejects him: 'Your loss.'",
+      "characters": [
+        "Sick Man",
+        "Donna (or Carnival Nurse)"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "A man comes to the first aid tent, presumably as part of the 'curse' illness narrative.",
+      "punchline": "He tries to flirt with the nurse using his illness as a pickup line; she shoots him down without hesitation; he remains confident.",
+      "craft_total": 6.47,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick cringe comedy bit \u2014 the delusional confidence of a sick man hitting on a nurse is mildly funny. 'Your loss' from the nurse is a clean button. Functional but not memorable."
+    },
+    {
+      "index": 67,
+      "text": "Donna says 'Beat it, Donna' to herself and leaves the sick man's tent after he asks her to make out until the lights come back on \u2014 then 'Aye, aye, captain.'",
+      "characters": [
+        "Donna"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The sick man asks Donna to make out with him until the lights come back on.",
+      "punchline": "She declines ('Beat it, Donna') and then immediately changes course ('Aye, aye, captain') \u2014 suggesting she changes her mind and goes back.",
+      "craft_total": 6.46,
+      "impact_score": 6.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Donna's self-command followed by immediate reversal is perfectly character-specific \u2014 she refuses herself and then decides to go anyway. 'Aye, aye, captain' is a great button. The comedy is in her self-directed inner conflict playing out loud."
+    },
+    {
+      "index": 68,
+      "text": "Ken Hotate: 'A native American tribe making a deal with the government. Heh! What could go wrong?'",
+      "characters": [
+        "Ken Hotate"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "irony_sarcasm"
+      ],
+      "setup": "Ken is about to agree to let Leslie use his generator in exchange for a better exhibit placement.",
+      "punchline": "Ken himself jokes about the historically terrible track record of such agreements \u2014 with a small, knowing laugh before delivering the punch.",
+      "craft_total": 8.87,
+      "impact_score": 9.0,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the two or three best jokes in the episode. Ken Hotate using ironic understatement about the entire history of broken treaties between the U.S. government and Native American tribes \u2014 delivered in a single sardonic sentence \u2014 is exceptional. The 'Heh!' before it is perfectly placed, making clear he knows exactly what he's doing. The economy is near-perfect: the entire weight of centuries of history is compressed into six words. The character integration is flawless. This joke earns a 9+ on craft because it does sophisticated satirical work with complete efficiency and Ken's voice is irreplaceable. It's also highly quotable."
+    },
+    {
+      "index": 69,
+      "text": "After the ceremony, the news anchor announces Li'l Sebastian is back and 'he gave us a scare' \u2014 then cuts to the horse having been found in the corn maze center. 'It took us four hours to solve that maze. It took the horse 15 minutes.'",
+      "characters": [
+        "News Anchor",
+        "Leslie"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "The search for Li'l Sebastian is concluded \u2014 he was in the corn maze.",
+      "punchline": "The humans took four hours to navigate the maze. The arthritic 25-year-old horse with cataracts solved it in 15 minutes.",
+      "craft_total": 7.96,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A perfect deflating callback to the corn maze \u2014 the supposedly hapless animal humiliated the entire search team. 'Andy says horses love mazes' gets a retroactive payoff. The deadpan delivery of this revelation and the specific '15 minutes' vs. '4 hours' contrast is well-crafted."
+    },
+    {
+      "index": 70,
+      "text": "News report: 'We spotted him from the top of the ferris wheel at the center of the corn maze. After the power came back on, we went and got him. It took us four hours to solve that maze. It took the horse 15 minutes.'",
+      "characters": [
+        "News Anchor / Andy Dwyer"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "They explain how Li'l Sebastian was found in the corn maze",
+      "punchline": "The humans took four hours to navigate a maze the horse solved in 15 minutes",
+      "craft_total": 7.35,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Clean, effective joke. The inversion \u2014 the animal is smarter at navigating the corn maze than the people \u2014 is a satisfying beat, and the specific times (four hours vs. 15 minutes) make it concrete and funnier. Li'l Sebastian continues to outclass the humans."
+    },
+    {
+      "index": 71,
+      "text": "Ron: 'I suppose I oughta go look for him. Right after I get a bratwurst.' \u2014 about Jerry still lost in the corn maze.",
+      "characters": [
+        "Ron"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "It's revealed Jerry is still lost in the corn maze hours after Li'l Sebastian was found.",
+      "punchline": "Ron acknowledges he should look for Jerry but decides to get a bratwurst first \u2014 revealing that Jerry's welfare is comfortably below a sausage in Ron's priority ranking.",
+      "craft_total": 8.06,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A near-perfect Ron Swanson joke. The deadpan prioritization of bratwurst over a colleague's safety is pure character, and 'I suppose I oughta go look for him' already sets up the comic expectation of reluctant responsibility \u2014 which the bratwurst pivot then subverts. The economy is exceptional. Among the most quotable lines in the episode. Scores 8.5+ because character integration and economy are both near-perfect."
+    },
+    {
+      "index": 72,
+      "text": "'Jerry's still out there.'",
+      "characters": [
+        "Leslie (or Ron)"
+      ],
+      "joke_types": [
+        "running_gag",
+        "deadpan_understatement"
+      ],
+      "setup": "The Li'l Sebastian crisis is resolved and the festival is saved.",
+      "punchline": "An afterthought mention that Jerry is still lost in the maze \u2014 he's been there hours, nobody has noticed.",
+      "craft_total": 7.59,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Four words that land beautifully as the button to the whole Li'l Sebastian search. The comedy is in what's NOT said \u2014 no urgency, no plan, just a casual acknowledgment that Jerry has been abandoned in a corn maze during a major festival. The economy score is perfect. It's the funniest Jerry dismissal in the episode precisely because it's so brief and so unconcerned."
+    },
+    {
+      "index": 73,
+      "text": "Leslie tells Ben: 'Ice Town was a disaster. And it seems like it was probably your fault. From what I can tell, you mismanaged the hell out of it.'",
+      "characters": [
+        "Leslie",
+        "Ben"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ben apologizes for leaving and cites Ice Town as evidence he's jinxed.",
+      "punchline": "Leslie, while trying to be supportive, can't help but state the obvious \u2014 it was probably his fault \u2014 and does so with clinical directness before pivoting to encouragement.",
+      "craft_total": 7.74,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Leslie's inability to give pure encouragement without first stating the accurate, unflattering truth is deeply character-specific. 'You mismanaged the hell out of it' delivered as if it's supportive is exactly how Leslie would see this. Strong character integration."
+    },
+    {
+      "index": 74,
+      "text": "A Wamapoke representative finds Ben after the ceremony and wipes his dirty face, saying 'Oh gosh, you're filthy. Go clean yourself up. Try to look professional.'",
+      "characters": [
+        "Wamapoke Representative",
+        "Ben"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Someone approaches Ben post-ceremony to confirm 'this is the guy' \u2014 presumably he was involved in the ceremonial fire or cursed ground.",
+      "punchline": "Rather than anything ceremonially significant, the representative simply scolds him for being dirty and tells him to look professional \u2014 maternal nagging from an unexpected source.",
+      "craft_total": 6.61,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick subversion of ceremonial expectation \u2014 instead of something mystical, it's just 'clean yourself up.' Gets a mild laugh from the bathetic contrast."
+    },
+    {
+      "index": 75,
+      "text": "Ben at the end: 'I don't get it. At all. It's kind of a small horse. I mean, what am I missing? Am I crazy?' / 'Hey, Ben, you just missed it. He whinnied.' / 'Oh, yeah, no. I totally heard that. It was great.'",
+      "characters": [
+        "Ben",
+        "Leslie"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Everyone is cooing over Li'l Sebastian at the festival's conclusion.",
+      "punchline": "Ben finally admits in his talking head he still doesn't get it \u2014 then immediately lies to Leslie's face that he heard the whinny and it was great.",
+      "craft_total": 7.05,
+      "impact_score": 7.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The perfect closing callback \u2014 Ben's episode-long confusion about Li'l Sebastian gets its final resolution: he still doesn't get it, but he'll pretend he does. The talking head honesty immediately followed by the sincere lie to Leslie is structurally excellent. 'Oh, yeah, no. I totally heard that. It was great.' is a masterclass in how to fake enthusiasm. The earned_vs_cheap score is high because this moment has been built across the entire episode. Closes the central comic premise perfectly."
     }
   ],
-  "imdb_rating": 8.7,
-  "imdb_votes": 3242,
-  "tmdb_overview": "It's make it or break it for the Parks Department at the Harvest Festival which is full of surprises.",
   "air_date": "2011-03-17",
+  "imdb_rating": 8.7,
+  "imdb_votes": 3258,
+  "tmdb_overview": "It's make it or break it for the Parks Department at the Harvest Festival which is full of surprises.",
   "still_path": "/iAsSm0pSRU7zKHFISH2cQMxBhJf.jpg",
+  "director": [
+    "Dean Holland"
+  ],
+  "writers": [
+    "Daniel J. Goor"
+  ],
   "guest_stars": [
     {
       "name": "Joseph Russo",
@@ -1990,24 +2269,6 @@
       "character": "Perd Hapley",
       "profile_path": "/nKsCeoyzXRTf158Y0RN2xENcgQb.jpg"
     }
-  ],
-  "war": null,
-  "humor_index_v1": 71.7,
-  "ci_95_low": 69.2,
-  "ci_95_high": 76.4,
-  "percentile_in_show": 13.7,
-  "zscore_in_show": -1.12,
-  "zscore_in_season": -1.18,
-  "humor_index_single_run": 72.1,
-  "standup_jokes": 0,
-  "standup_fraction": 0.0,
-  "consensus_runs": 3,
-  "consensus_method": "3-run consensus",
-  "director": [
-    "Dean Holland"
-  ],
-  "writers": [
-    "Daniel J. Goor"
   ],
   "insight": "Event logistics comedy sustains 61 jokes despite middling 72.7 score, outpaced by darker ensemble work."
 }

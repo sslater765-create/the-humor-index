@@ -4,33 +4,35 @@
   "season": 3,
   "episode_number": 12,
   "title": "Eagleton",
-  "humor_index": 81.6,
-  "jpm": 1.75,
-  "avg_craft": 7.23,
-  "avg_impact": 6.94,
-  "total_jokes": 44,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"cringe_discomfort\"]",
-  "standout_joke_ids": "[13, 35, 36]",
+  "humor_index": 90.9,
+  "jpm": 2.66,
+  "avg_craft": 7.46,
+  "avg_impact": 7.33,
+  "total_jokes": 67,
+  "war": 93.5,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"setup_punchline\"]",
+  "standout_joke_ids": "[10, 43, 44]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "I know how much you enjoy paperwork, but don't hover.",
+      "text": "Leslie catches Ron off guard with his birthday by singing a birthday song at him",
       "characters": [
         "Leslie",
         "Ron"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Leslie knows Ron hates paperwork and bureaucracy",
-      "punchline": "She sarcastically tells him not to hover over paperwork he despises",
-      "craft_total": 6.53,
-      "impact_score": 5.67,
-      "quotability": 4.0,
+      "setup": "Ron says 'Nothing. I never d...' (clearly about to say he never celebrates), interrupted mid-sentence",
+      "punchline": "Leslie bursts in with a birthday song \u2014 the interruption IS the joke; Ron is caught red-handed",
+      "craft_total": 7.83,
+      "impact_score": 7.5,
+      "quotability": 5.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character-based humor that plays on Ron's well-established hatred of government bureaucracy",
+      "explanation": "The comedic timing is sharp \u2014 Ron's sentence is cut off at exactly the right moment to make the interruption feel like a perfect trap springing. The 'Aha!' and 'Oh, God.' exchange is extremely character-specific: Leslie's triumph and Ron's dread are both perfectly in voice. The song itself is functional but the real joke is the dynamic.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -44,22 +46,23 @@
     },
     {
       "index": 2,
-      "text": "\u266a Birthday, birthday, birthday \u266a \u266a it's your birthday \u266a",
+      "text": "Leslie reveals she bribed a Baskin-Robbins employee with a free scoop of rum raisin to get Ron's birthday",
       "characters": [
-        "Leslie"
+        "Leslie",
+        "Ron"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "escalation"
       ],
-      "setup": "Leslie discovers Ron's birthday secret",
-      "punchline": "She immediately breaks into an obnoxious birthday song",
-      "craft_total": 6.6,
-      "impact_score": 6.67,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie's confessional describes 'three years of investigations, phone calls, Freedom of Information Act requests' \u2014 an absurdly high-stakes effort for birthday info",
+      "punchline": "The intelligence breakthrough came from 'a well-placed bribe to a gentleman at Baskin-Robbins' \u2014 and Ron blew all his security for one free scoop of rum raisin",
+      "craft_total": 8.52,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Leslie enthusiasm contrasted with Ron's privacy needs creates good cringe comedy",
+      "explanation": "This is the episode's best joke. The escalation from 'FOIA requests' to 'bribe at Baskin-Robbins' perfectly captures both characters: Leslie's manic dedication and Ron's deeply private nature undone by a petty ice cream indulgence. The specific flavor \u2014 rum raisin, not even a good one \u2014 is a masterful detail. 'Was it worth it, Ron? Was it?' sells it as high comedy. Character-integrated, original, perfectly structured. Approaches the anchor 8.0 benchmark and arguably surpasses it.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -73,23 +76,22 @@
     },
     {
       "index": 3,
-      "text": "Nice bench. Is that new? / No, that's been there since the '90s.",
+      "text": "Ron: 'Plus, the whole thing is a scam. Birthdays were invented by Hallmark to sell cards.'",
       "characters": [
-        "Leslie",
         "Ron"
       ],
       "joke_types": [
-        "setup_punchline",
-        "deadpan_understatement"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Leslie noticing a bench as if it's new",
-      "punchline": "Ron's matter-of-fact response that it's been there for decades",
-      "craft_total": 6.2,
-      "impact_score": 5.0,
-      "quotability": 3.0,
+      "setup": "Ron continues his list of objections to birthdays",
+      "punchline": "The conspiratorial claim that birthdays are a Hallmark invention \u2014 a confident declaration of false history",
+      "craft_total": 7.29,
+      "impact_score": 6.67,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple observational humor showing Leslie's obliviousness and Ron's deadpan delivery.",
+      "explanation": "A solid Ron joke \u2014 the anti-establishment, conspiratorial logic is very on-brand. The confidence with which he asserts absurd history is the engine of much Ron comedy. Slightly weaker than the rum raisin joke because the 'corporations invented holidays' premise is more familiar territory.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -103,22 +105,22 @@
     },
     {
       "index": 4,
-      "text": "Until a well-placed bribe to a gentleman at Baskin-Robbins revealed... Ron's birthday is on Friday.",
+      "text": "Tom defends Eagleton disdain: 'And that's coming from someone who has a Mercedes... with a Harman Kardon Logic 7 surround-sound system.'",
       "characters": [
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Leslie's elaborate investigation methods",
-      "punchline": "All her spy work was undone by Ron getting free ice cream",
-      "craft_total": 7.57,
+      "setup": "Tom says Eagleton is full of rich snobs",
+      "punchline": "He immediately undercuts his populist stance by bragging about his luxury car's audio system, proving he's also a snob",
+      "craft_total": 7.81,
       "impact_score": 7.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent escalation showing Leslie's obsessive nature and Ron's simple weakness for free ice cream",
+      "explanation": "Classic Tom Haverford self-contradiction. He positions himself as a man of the people then immediately name-drops an audiophile car system. The specificity of 'Harman Kardon Logic 7' is perfect \u2014 it's exactly the detail Tom would know and brag about. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -144,22 +146,22 @@
     },
     {
       "index": 5,
-      "text": "All for a free scoop of rum raisin. Was it worth it, Ron? Was it?",
+      "text": "Leslie describes how Lindsay 'fixed her deviated septum' and 'lost 35 pounds' with a loaded pause before '...and lost something else. What was it again? Oh, yeah. Her soul.'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "setup_punchline",
+        "misdirection"
       ],
-      "setup": "Ron's privacy was compromised by ice cream",
-      "punchline": "Leslie dramatically questions if the ice cream was worth his secret",
-      "craft_total": 7.03,
+      "setup": "Leslie recounts Lindsay's physical transformations after going to Eagleton, building expectation of a mundane third item",
+      "punchline": "The fake pause pretending to forget \u2014 'What was it again?' \u2014 before landing 'Her soul'",
+      "craft_total": 6.74,
       "impact_score": 6.67,
-      "quotability": 6.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good follow-up that maintains the absurd gravity Leslie places on birthday discovery",
+      "explanation": "The fake 'what was it again?' sells the punchline by making it feel reluctantly remembered. The soul punchline itself isn't shockingly original but the delivery structure \u2014 building through two mundane items \u2014 is well-crafted. Very Leslie: sincere outrage delivered as comedy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -169,22 +171,22 @@
     },
     {
       "index": 6,
-      "text": "Birthdays were invented by Hallmark to sell cards.",
+      "text": "Ben on whether the Eagleton side of the park is better: 'To be fair, yeah. Our side is this scrappy piece of land where kids go to smash fluorescent light tubes. But it has a lot of heart.'",
       "characters": [
-        "Ron"
+        "Ben"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "deadpan_understatement",
+        "observational"
       ],
-      "setup": "Ron explaining why he hates birthdays",
-      "punchline": "Conspiracy theory about Hallmark inventing birthdays",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 7.0,
+      "setup": "Leslie is making the case for Pawnee's park being just as valid",
+      "punchline": "Ben's honest assessment that kids literally use it to smash fluorescent tubes, then the straight-faced pivot to 'it has a lot of heart'",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ron Swanson anti-commercialism delivered with characteristic certainty",
+      "explanation": "The specificity of 'smash fluorescent light tubes' is inspired Pawnee worldbuilding \u2014 not rocks or windows but fluorescent tubes, which implies a whole sad ecosystem. Ben's deadpan delivery followed by sincere 'but it has a lot of heart' is the perfect outsider-who-now-cares tone.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -194,22 +196,22 @@
     },
     {
       "index": 7,
-      "text": "And that's coming from someone who has a Mercedes... With a Harman Kardon Logic 7 surround-sound system.",
+      "text": "Ann's line: 'That's what people always say when something sucks.'",
       "characters": [
-        "Tom"
+        "Ann"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "deadpan_understatement",
+        "observational"
       ],
-      "setup": "Tom calling Eagleton rich snobs",
-      "punchline": "He undermines his point by immediately bragging about his luxury car features",
-      "craft_total": 7.53,
-      "impact_score": 7.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Ben says the crappy Pawnee side of the park 'has a lot of heart'",
+      "punchline": "Ann flatly identifies 'it has heart' as the universal consolation prize for things that are just bad",
+      "craft_total": 7.44,
+      "impact_score": 7.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Tom Haverford moment - criticizing wealth while showing off his own materialistic obsessions",
+      "explanation": "Eight words that function as a perfect observational joke. The economy is exceptional \u2014 it takes a universal truth and delivers it as a quiet gut punch. Recontextualizes every time anyone has said 'it has heart.' Not deeply character-specific (Ann is the straight-man voice of reason here) but the line itself is excellent.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -223,21 +225,22 @@
     },
     {
       "index": 8,
-      "text": "Three words... Lindsay Carlisle Shay.",
+      "text": "Leslie: 'Pawneeans are just as good as Eagletonians, although on average, we are several inches shorter and 80 pounds heavier.'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "misdirection"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Building up to reveal who's responsible",
-      "punchline": "Counting three first names as 'three words'",
-      "craft_total": 7.1,
-      "impact_score": 6.75,
-      "quotability": 6.0,
+      "setup": "Leslie's passionate pro-Pawnee speech",
+      "punchline": "She derails her own argument with specific unflattering statistics she apparently knows off the top of her head",
+      "craft_total": 7.42,
+      "impact_score": 7.17,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Mild wordplay joke with the pretentious three-name structure being treated as 'three words.'",
+      "explanation": "Classic Leslie: sincerely patriotic and accidentally undermining herself. The specificity of 'several inches shorter AND 80 pounds heavier' suggests these are real stats she has memorized, which is a great character beat. The fact that she says this as part of defending Pawnee is perfectly absurd.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -259,22 +262,22 @@
     },
     {
       "index": 9,
-      "text": "and lost something else. What was it again? Oh, yeah. Her soul.",
+      "text": "Tom: 'I would never set foot over there. But it's the only place I can get my bumble and bumble hair care products, so I'm there every eight days.'",
       "characters": [
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
-        "setup_punchline",
-        "escalation"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Lindsay lost weight and fixed her nose",
-      "punchline": "Leslie delivers the dramatic revelation that she lost her soul",
-      "craft_total": 6.9,
-      "impact_score": 6.67,
-      "quotability": 7.5,
+      "setup": "Tom takes a firm anti-Eagleton stance",
+      "punchline": "Immediately reveals his boycott has a very specific luxury exception, and he's calculated his hair care schedule to the day",
+      "craft_total": 7.83,
+      "impact_score": 7.5,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Well-structured dramatic reveal with good buildup and Leslie's characteristic moral indignation",
+      "explanation": "Peak Tom Haverford: loudly principled, immediately betrayed by vanity. 'Every eight days' is the killer detail \u2014 he's not just visiting, he has a precise schedule calibrated to his hair product needs. Only Tom would track his luxury goods consumption to a specific day cycle. Approaches the 8.0 anchor: sharp, character-specific, surprising in its precision.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -284,22 +287,22 @@
     },
     {
       "index": 10,
-      "text": "Our side is this scrappy piece of land where kids go to smash fluorescent light tubes. But it has a lot of heart.",
+      "text": "Ron's confessional: 'Leslie has a lot of qualities I find horrifying. But the worst one by far is how thoughtful she can be.'",
       "characters": [
-        "Leslie"
+        "Ron"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Defending Pawnee's side of the park",
-      "punchline": "Admits it's where kids commit minor vandalism but insists it has heart",
-      "craft_total": 7.13,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "The audience expects Ron to criticize Leslie's nosiness or enthusiasm about his birthday",
+      "punchline": "His complaint is that her thoughtfulness is his most horrifying quality \u2014 inverting the expected complaint and revealing his grudging affection",
+      "craft_total": 8.76,
+      "impact_score": 8.83,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Leslie's eternal optimism even when describing obvious problems with Pawnee",
+      "explanation": "One of the best lines in the episode. The structure is perfect: the setup promises a complaint, the punchline delivers a hidden compliment that reveals everything about Ron's character \u2014 a man who resists warmth but is undone by genuine care. Deeply character-integrated (only Ron would frame appreciation as horror), economical, earned, and highly quotable. This is the kind of line that gets quoted in 'best Parks and Rec moments' articles.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -309,22 +312,22 @@
     },
     {
       "index": 11,
-      "text": "That's what people always say when something sucks.",
+      "text": "Townsperson suggesting 'Why don't we set fire to the fence? Set it ablaze... Well, let's leave that up to the lawyers.'",
       "characters": [
-        "Ann"
+        "Citizen"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "observational"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Leslie says the park 'has a lot of heart'",
-      "punchline": "Ann immediately deflates the euphemism",
-      "craft_total": 7.47,
-      "impact_score": 7.17,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Citizens brainstorming solutions to the Eagleton fence",
+      "punchline": "Suggesting arson as a civic solution, then when told that's illegal, deflecting to 'let's leave that up to the lawyers'",
+      "craft_total": 6.89,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant deadpan observation that punctures Leslie's relentless positivity with brutal honesty",
+      "explanation": "Good Pawnee citizen comedy \u2014 the town is full of people who suggest illegal or dangerous solutions with sincere confidence. 'Let's leave that up to the lawyers' as a response to being told arson is illegal is a funny non-sequitur. The delivery sells it as a worldbuilding joke about Pawnee residents.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -338,22 +341,22 @@
     },
     {
       "index": 12,
-      "text": "although on average, we are several inches shorter and 80 pounds heavier.",
+      "text": "Townsperson: 'Why don't we build a fence around their fence? It would give us two fences, so if they needed to get to their fence for maintenance and whatnot, their pants might get caught.'",
       "characters": [
-        "Leslie"
+        "Citizen"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Leslie insisting Pawneeans are as good as Eagletonians",
-      "punchline": "She immediately undercuts her point with unflattering statistics",
-      "craft_total": 7.47,
-      "impact_score": 7.33,
-      "quotability": 6.5,
+      "setup": "Citizens continuing to brainstorm fence solutions",
+      "punchline": "The counter-fence proposal is rationalized through a logic chain that ends with the non-threatening outcome of 'their pants might get caught'",
+      "craft_total": 6.99,
+      "impact_score": 6.67,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Leslie move - trying to be positive while accidentally revealing embarrassing facts",
+      "explanation": "The pants-getting-caught conclusion is a wonderfully deflated punchline. The citizen has worked through real logic ('maintenance and whatnot') to arrive at a passive-aggressive inconvenience. Very Pawnee in its petty ambition. Good but not exceptional.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -367,22 +370,23 @@
     },
     {
       "index": 13,
-      "text": "Leslie has a lot of qualities I find horrifying. But the worst one by far is how thoughtful she can be.",
+      "text": "Leslie promises to tear down the fence for 'sweet, brave Joey' \u2014 then immediately another citizen suggests burning the fence again",
       "characters": [
-        "Ron"
+        "Leslie",
+        "Citizen"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "running_gag",
         "character_comedy"
       ],
-      "setup": "Ron listing Leslie's horrifying qualities",
-      "punchline": "The 'worst' quality is actually being thoughtful",
-      "craft_total": 8.27,
-      "impact_score": 8.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Ron moment - his gruff exterior cracking to reveal genuine affection disguised as complaint",
+      "setup": "Leslie has given an impassioned speech promising to fix the park situation",
+      "punchline": "The moment the speech ends, the arson advocate returns with one more nudge: 'I'm just gonna suggest one more time that we burn it down. But whatever you guys think.'",
+      "craft_total": 6.67,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The 'but whatever you guys think' ending is perfect \u2014 it's the comedy of the deferential extremist. The callback earns its laugh by showing the arson advocate is persistent but somehow also easygoing about it. The brevity of the callback is what makes it work.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -396,22 +400,22 @@
     },
     {
       "index": 14,
-      "text": "Why don't we build a fence around their fence? [...] so if they needed to get to their fence for maintenance and whatnot, their pants might get caught.",
+      "text": "The arson-citizen keeps suggesting burning the fence: 'Okay, I'm just gonna suggest one more time that we burn it down. But whatever you guys think.'",
       "characters": [
-        "Andy"
+        "Pawnee Citizen"
       ],
       "joke_types": [
-        "absurdist",
+        "running_gag",
         "character_comedy"
       ],
-      "setup": "Andy suggests building a fence around their fence",
-      "punchline": "His logic is that it would cause minor pants-catching inconvenience",
-      "craft_total": 6.5,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "The citizen already suggested arson and was shot down",
+      "punchline": "He raises it again at the next opportunity, but now with a polite, deferential 'whatever you guys think' \u2014 still committed to arson but trying to seem reasonable",
+      "craft_total": 7.16,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfectly absurd Andy logic - elaborate solution with minimal and oddly specific consequences",
+      "is_callback": 1,
+      "explanation": "The callback improves the joke. The 'one more time' framing and 'whatever you guys think' deference makes his commitment to arson funnier \u2014 he's trying to be collegial about it. Good running gag execution.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -429,22 +433,22 @@
     },
     {
       "index": 15,
-      "text": "I'm just gonna suggest one more time that we burn it down. But whatever you guys think.",
+      "text": "Tom ordering inflatable saxophones ('about 40 dozen') and 'neon gangster fedora hats' for Ron's party on the phone",
       "characters": [
-        "Andy"
+        "Tom"
       ],
       "joke_types": [
-        "running_gag",
-        "deadpan_understatement"
+        "character_comedy",
+        "visual_gag"
       ],
-      "setup": "Andy has been suggesting arson",
-      "punchline": "He casually suggests arson again like it's a reasonable option",
-      "craft_total": 6.57,
-      "impact_score": 6.17,
+      "setup": "Leslie has put Tom in charge of 'Operation Ron's Party: Shock and Awe'",
+      "punchline": "Tom's idea of a great surprise party for Ron Swanson involves inflatable saxophones and neon gangster fedoras \u2014 absurdly wrong choices for the person being honored",
+      "craft_total": 7.24,
+      "impact_score": 6.83,
       "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback that maintains Andy's casual approach to extreme solutions",
+      "is_callback": 0,
+      "explanation": "Tom's party planning for Ron is inherently funny because he's planning the opposite of what Ron would want. Inflatable saxophones and neon fedoras are exactly Tom's taste and exactly Ron's nightmare. The specificity of '40 dozen' (480 items) is a good escalating absurdist detail.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -454,22 +458,23 @@
     },
     {
       "index": 16,
-      "text": "Okay, I-I'm just gonna suggest one more time that we burn it down. But whatever you guys think.",
+      "text": "Ron catches Tom on the phone and Tom claims 'It was personal. I would never make a work-related call. You know that.'",
       "characters": [
-        "Citizen"
+        "Ron",
+        "Tom"
       ],
       "joke_types": [
-        "running_gag",
-        "deadpan_understatement"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Previous arson suggestions being ignored",
-      "punchline": "Politely suggesting arson again with casual dismissal",
-      "craft_total": 6.4,
-      "impact_score": 5.75,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Nice callback with polite persistence on violent solution. The casual tone makes it funnier.",
+      "setup": "Ron has discovered Tom making suspicious party-related phone calls at work",
+      "punchline": "Tom's defense is that it was personal \u2014 implying he freely makes personal calls but never work ones \u2014 which inadvertently admits to workplace misconduct as his alibi",
+      "craft_total": 7.47,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Tom's self-incriminating alibi is a great character beat. His solution to hiding birthday planning is to confess to a different workplace violation. 'You know that' as the confident closer is very Tom.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -487,22 +492,23 @@
     },
     {
       "index": 17,
-      "text": "Also, what about your neon gangster fedora hats?",
+      "text": "Lindsay calls Ben 'Dan' and when corrected says 'It's not important' / 'It won't come up again'",
       "characters": [
-        "April"
+        "Lindsay",
+        "Ben"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Already ordering inflatable saxophones",
-      "punchline": "Adding even more ridiculous party supplies",
-      "craft_total": 7.0,
-      "impact_score": 7.0,
+      "setup": "Ben introduces himself as assistant city manager",
+      "punchline": "Lindsay dismisses him with the wrong name and then explicitly says it won't come up again \u2014 a perfect power-move brush-off that instantly establishes her as a villain",
+      "craft_total": 7.63,
+      "impact_score": 7.5,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation with the specific 'neon gangster fedora' being perfectly absurd party gear.",
+      "explanation": "Economical character establishment for Lindsay. The 'it won't come up again' is the key line \u2014 it's not just rudeness, it's a confident declaration of his irrelevance. Very efficient villain-coding.",
       "dialogue": [
         {
           "speaker": "April",
@@ -512,23 +518,23 @@
     },
     {
       "index": 18,
-      "text": "Hi, Dan. - Ben. - It's not important. It won't come up again.",
+      "text": "Leslie introduces Ann: 'This is Ann. She is my best friend... Now.' (pointed pause before 'Now')",
       "characters": [
-        "Lindsay",
-        "Ben"
+        "Leslie",
+        "Ann"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Lindsay gets Ben's name wrong",
-      "punchline": "Ben awkwardly accepts the dismissal of his identity",
-      "craft_total": 7.07,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie introduces Ann to her former best friend Lindsay",
+      "punchline": "The emphasized 'Now' implies Ann was promoted to best friend specifically because Lindsay defected \u2014 a passive-aggressive dig",
+      "craft_total": 7.51,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good cringe moment showing Lindsay's dismissive attitude and Ben's awkward acceptance",
+      "explanation": "One word \u2014 'Now' \u2014 does enormous comedic work. The pause before it and the implication it carries (you were replaced) is both funny and reveals the wound in Leslie's friendship with Lindsay. Great economy and very character-specific to Leslie's sincere-yet-passive-aggressive style.",
       "dialogue": [
         {
           "speaker": "Lindsay",
@@ -550,7 +556,7 @@
     },
     {
       "index": 19,
-      "text": "Oh, I'm sorry. It's just, nursing... You must be so tired. It's sad.",
+      "text": "Lindsay on meeting Ann: 'Oh, I'm sorry. It's just, nursing... You must be so tired. It's sad.'",
       "characters": [
         "Lindsay"
       ],
@@ -558,14 +564,14 @@
         "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Ann mentions she's a nurse",
-      "punchline": "Lindsay condescendingly pities her career choice",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Leslie proudly introduces Ann as a nurse",
+      "punchline": "Lindsay immediately condescends to Ann's profession with faux-concern \u2014 nursing is framed as something pitiable, a lesser calling",
+      "craft_total": 7.46,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Effective character moment showing Lindsay's snobbish condescension",
+      "explanation": "Excellent villain comedy. The 'It's sad' delivery would be devastating in context. Lindsay's condescension is so complete she doesn't even insult directly \u2014 she pities. This establishes her as a perfectly calibrated antagonist and gets a cringe laugh.",
       "dialogue": [
         {
           "speaker": "Lindsay",
@@ -575,22 +581,23 @@
     },
     {
       "index": 20,
-      "text": "Pawnee is and always will be a dirty, little nightmare from which you will never wake up.",
+      "text": "Leslie pulls out a photo of young Lindsay and herself: 'Look at that.' Lindsay leans in to look, and Leslie whips it away to show it to the camera: 'Let me get a closer look.'",
       "characters": [
+        "Leslie",
         "Lindsay"
       ],
       "joke_types": [
-        "dark_subversive",
-        "escalation"
+        "visual_gag",
+        "character_comedy"
       ],
-      "setup": "Lindsay dismissing Pawnee",
-      "punchline": "Dramatically declares it an inescapable nightmare",
-      "craft_total": 7.6,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie has found a photo of herself and Lindsay from their Pawnee days \u2014 presumably unflattering to Lindsay",
+      "punchline": "Leslie's 'let me get a closer look' suggests she's gloating over the photo for her own satisfaction, implying it shows Lindsay in an unflattering pre-Eagleton state",
+      "craft_total": 6.5,
+      "impact_score": 6.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Memorable villain line with good dramatic flair and metaphor",
+      "explanation": "This is primarily a visual gag \u2014 we see Leslie examining the photo with petty satisfaction. The joke is in the physical behavior: Leslie uses the photo as a weapon by just enjoying it in front of Lindsay. Strong rewatch value as the visual performance would amplify the written line.",
       "dialogue": [
         {
           "speaker": "Lindsay",
@@ -600,22 +607,22 @@
     },
     {
       "index": 21,
-      "text": "What? I'm not asleep. I'm awake. I'm wide awake, and I got my eyes on you.",
+      "text": "Leslie presents the old photo: 'Someone once told me that there's no such thing as small parks, just small ideas... And that someone was this woman.' \u2014 presenting it to Lindsay as evidence",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Lindsay's nightmare metaphor",
-      "punchline": "Leslie takes it literally and protests she's not sleeping",
-      "craft_total": 7.1,
-      "impact_score": 6.67,
-      "quotability": 5.5,
+      "setup": "Leslie quotes a parks philosophy that she implies Lindsay used to believe in",
+      "punchline": "Reveals the quote came from Lindsay herself \u2014 then offers her 'many copies and the negatives' plus 'a jpeg'",
+      "craft_total": 7.53,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Leslie missing the metaphor creates good character-based humor",
+      "explanation": "The joke lands on two beats: the quote being from Lindsay herself (emotional irony) and then 'I have many copies and the negatives. And I have a jpeg.' The jpeg afterthought is the comedy \u2014 Leslie has covered all bases of photo evidence preservation including modern digital formats. Classic Leslie thoroughness played for laughs.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -625,22 +632,22 @@
     },
     {
       "index": 22,
-      "text": "That's what I would've said if I had thought of it in the moment. What did I say instead?",
+      "text": "Leslie's failed comeback: Lindsay delivers a devastating farewell insult, Leslie responds with 'What? I'm not asleep. I'm awake.' Then confessional: 'That's what I would've said if I had thought of it in the moment. What did I say instead?'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "character_comedy",
         "meta_self_referential"
       ],
-      "setup": "Leslie in confessional reflecting on the confrontation",
-      "punchline": "Admitting she had a better comeback only in hindsight",
-      "craft_total": 7.5,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Lindsay exits with a brutal parting shot; Leslie needs a great comeback",
+      "punchline": "Leslie's comeback is incoherent ('I'm wide awake, and I got my eyes on you'), and she knows it \u2014 her confessional frames it as the comeback she WISHES she'd said, then cuts to her asking what she actually said instead",
+      "craft_total": 8.14,
+      "impact_score": 8.33,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Relatable moment of thinking of the perfect comeback too late. Good self-awareness from Leslie.",
+      "explanation": "Masterful structure. The confessional format is used brilliantly here: Leslie presents her imagined comeback as if recounting it, then the show cuts away on 'What did I say instead?' \u2014 which means we never hear the real answer, implying it was even worse. The self-awareness of the mockumentary format is used as the joke's engine. Leslie's flustered incompetence in the moment contrasts perfectly with her usual confidence. Justifies its 8+ score: the structure is genuinely clever and the execution is precise.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -650,22 +657,22 @@
     },
     {
       "index": 23,
-      "text": "They had a valet.",
+      "text": "Ben's confessional about Eagleton: 'Yes, Eagleton is nicer than Pawnee. And yes, because of their cupcake factory, the air always smells like vanilla.'",
       "characters": [
-        "Tom"
+        "Ben"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "deadpan_understatement",
+        "observational"
       ],
-      "setup": "Discussing Eagleton's public forum venue",
-      "punchline": "Tom is impressed by the valet service at a government meeting",
-      "craft_total": 7.43,
-      "impact_score": 7.0,
-      "quotability": 5.0,
+      "setup": "Ben is supposed to be building to a 'but our people are better' argument",
+      "punchline": "He concedes both points \u2014 it is nicer AND the air smells like vanilla \u2014 before pivoting, which makes Pawnee's inferiority funnier by being so honestly acknowledged",
+      "craft_total": 6.94,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Tom moment showing his focus on luxury amenities even in government settings",
+      "explanation": "Ben's outsider pragmatism works well here. The cupcake factory detail is a nice specific absurdist worldbuilding touch. The structure of acknowledging both unflattering points before a weak 'but...' is a good comedic move.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -679,23 +686,22 @@
     },
     {
       "index": 24,
-      "text": "What, did you just come from the stables? - Yes. I was just at the stables.",
+      "text": "Leslie: 'The only thing they beat us in is life expectancy, beauty pageants, and average income... who cares?'",
       "characters": [
-        "Tom",
-        "Lindsay"
+        "Leslie"
       ],
       "joke_types": [
-        "setup_punchline",
-        "misdirection"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Tom mocks Lindsay's outfit as stable-appropriate",
-      "punchline": "She was actually at the stables, deflating his insult",
-      "craft_total": 7.43,
-      "impact_score": 7.33,
-      "quotability": 6.0,
+      "setup": "Leslie is defending Pawnee's equality with Eagleton",
+      "punchline": "The list she rattles off \u2014 life expectancy, beauty, income \u2014 are precisely the things everyone actually cares about, and her 'who cares?' dismissal is completely unconvincing",
+      "craft_total": 7.86,
+      "impact_score": 8.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirection that undercuts Tom's attempted insult with unexpected truth",
+      "explanation": "Leslie arguing Pawnee is equal while listing categories where it's objectively worse is classic Leslie Knope: boundless civic pride operating in denial of evidence. The 'who cares' is the perfect cherry on top \u2014 she knows these matter but is committed to the bit.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -709,22 +715,22 @@
     },
     {
       "index": 25,
-      "text": "There is no street parking at my house. My house is not even on a street.",
+      "text": "Factoid: Pawnee founded May 1817. By July, 'finding the smell unpleasant and the soil untenable, all the wealthy people evacuated to Eagleton.'",
       "characters": [
-        "Ron"
+        "Leslie"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "deadpan_understatement"
       ],
-      "setup": "April asking about parking at Ron's house",
-      "punchline": "Ron revealing his house isn't even on a street",
-      "craft_total": 7.73,
-      "impact_score": 7.67,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Leslie offers a historical factoid to prove Eagletonians are just former Pawneeans",
+      "punchline": "The wealthy fled within two months of the town's founding because it smelled bad \u2014 and that's the origin of the class divide",
+      "craft_total": 7.58,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ron Swanson isolation escalated to absurd levels. The progression from no parking to no street is brilliant.",
+      "explanation": "Excellent piece of show mythology. The joke is in the specific timeline (two months!) and the reason (smell). It recontextualizes the entire Pawnee/Eagleton rivalry as rooted in historical snobbery and bad odor. The 'untenable soil' phrasing is comedically formal for something so petty.",
       "dialogue": [
         {
           "speaker": "April",
@@ -738,23 +744,22 @@
     },
     {
       "index": 26,
-      "text": "These were for a sick child at the hospital. - Ah.",
+      "text": "Tom introduces himself at the Eagleton forum as 'Thomas Montgomery Haverford'",
       "characters": [
-        "April",
-        "Ron"
+        "Tom"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Ron discovers April destroyed birthday balloons",
-      "punchline": "April deadpan claims they were for a sick child, Ron accepts this",
-      "craft_total": 7.9,
-      "impact_score": 7.5,
+      "setup": "The Pawnee team is at the Eagleton public forum, presumably trying to seem legitimate",
+      "punchline": "Tom deploys his full formal name \u2014 'Thomas Montgomery Haverford' \u2014 to match Eagleton's upper-class affect, which is itself a joke because his actual name is Tom Haverford",
+      "craft_total": 7.07,
+      "impact_score": 6.5,
       "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect April deadpan lie that's both absurd and delivered with complete conviction",
+      "explanation": "Tom trying to perform class by using a fancier version of his name is very on-brand. It's a quick character joke that doesn't outstay its welcome.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -772,23 +777,23 @@
     },
     {
       "index": 27,
-      "text": "Oh, you can't, because you broke your arm climbing that fence. - Uh, I can wave with this arm. - No, you can't. Both your arms are broken.",
+      "text": "Lindsay mocks Tom's outfit: 'What, did you just come from the stables? Yes. I was just at the stables.' \u2014 Tom had literally just been at the stables",
       "characters": [
-        "Leslie",
-        "Joey"
+        "Lindsay",
+        "Tom"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Leslie using Joey as prop for her argument",
-      "punchline": "She insists both his arms are broken when he demonstrates otherwise",
-      "craft_total": 7.33,
-      "impact_score": 7.67,
-      "quotability": 6.0,
+      "setup": "Lindsay makes a sarcastic dig at Tom's outfit, implying it looks like riding gear",
+      "punchline": "Tom confirms he was literally at the stables \u2014 the sarcasm misfires because the insult is accidentally accurate",
+      "craft_total": 7.69,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good cringe comedy showing Leslie's desperation to make her point override reality",
+      "explanation": "The misfiring sarcasm is a satisfying reversal: Lindsay's attempt at condescension collapses when Tom cheerfully confirms the premise. His non-defensive, matter-of-fact 'Yes, I was just at the stables' deflects the attack entirely. Good structure, clean payoff.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -814,22 +819,22 @@
     },
     {
       "index": 28,
-      "text": "Isn't she trying her hardest? So cute and so good.",
+      "text": "Tom to Lindsay: 'I would like you to get off your high horse, Lindsay... pun intended.'",
       "characters": [
-        "Lindsay"
+        "Tom"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "irony_sarcasm"
+        "wordplay_pun",
+        "character_comedy"
       ],
-      "setup": "Lindsay commenting on Leslie's efforts",
-      "punchline": "The patronizing tone treating Leslie like a child",
-      "craft_total": 7.1,
-      "impact_score": 7.25,
+      "setup": "Tom is arguing with Lindsay about job qualifications and the fence",
+      "punchline": "He delivers 'get off your high horse' as a sincere idiom and then calls his own pun \u2014 'pun intended' \u2014 because they literally came from stables",
+      "craft_total": 6.9,
+      "impact_score": 6.5,
       "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfectly condescending delivery that treats Leslie like a well-meaning but incompetent child.",
+      "is_callback": 1,
+      "explanation": "The 'pun intended' callback to the stables visit earns its laugh. It's not a brilliant pun but the fact that Tom is proud enough of the unintentional wordplay to flag it is very Tom. Competent joke elevated by character voice.",
       "dialogue": [
         {
           "speaker": "Lindsay",
@@ -839,41 +844,42 @@
     },
     {
       "index": 29,
-      "text": "She kidnapped me from work, and then she took me to that place, Senor Vega's [...] And then there was a bouncy castle. Did you know they made those for adults?",
+      "text": "Ron discovers April has been popping balloons, reacts with horror: 'What the hell? No! Oh!'",
       "characters": [
-        "Andrew"
+        "Ron",
+        "April"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Andrew describing his surprise birthday party",
-      "punchline": "Escalating list of increasingly elaborate and childish party elements",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Ron is actively trying to prevent party preparations",
+      "punchline": "April has been popping balloons \u2014 Ron's reaction is outsized horror, possibly also because he just found out party prep is this advanced",
+      "craft_total": 6.31,
+      "impact_score": 6.25,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation showing Leslie's over-the-top party planning and Andrew's innocent enthusiasm"
+      "explanation": "Functional slapstick/reaction moment. Ron's horror at balloons suits him but the joke is fairly predictable. The balloon-popping physical comedy is inferred and lands as a moderate laugh."
     },
     {
       "index": 30,
-      "text": "Did you guys get your public forum gift bag? There's an iPod touch in here.",
+      "text": "April explains: 'These were for a sick child at the hospital.' \u2014 implying she stole balloons from a sick child to use for Ron's party",
       "characters": [
-        "Tom"
+        "April"
       ],
       "joke_types": [
-        "observational",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Eagleton's excessive amenities",
-      "punchline": "They give away expensive electronics at town meetings",
-      "craft_total": 6.97,
-      "impact_score": 6.67,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Ron is upset about balloons being popped; April needs to explain herself",
+      "punchline": "The balloons came from a sick child at the hospital \u2014 meaning April acquired party supplies by taking from the ill",
+      "craft_total": 7.45,
+      "impact_score": 7.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good detail showing Eagleton's wealth excess through Tom's materialistic lens",
+      "explanation": "April Ludgate at her most perfectly calibrated. The revelation is maximally dark but delivered with complete matter-of-factness \u2014 'These were for a sick child at the hospital' \u2014 as if this is just relevant logistical information. Only April would steal from a sick child for party supply purposes and treat it as a neutral data point. Very high character integration and economy.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -895,22 +901,22 @@
     },
     {
       "index": 31,
-      "text": "Unless... That's exactly what she wants me to do.",
+      "text": "Christine Porter: 'I see it as a kind of punishment for Pawnee that might inspire your town to clean up its act.'",
       "characters": [
-        "Ron"
+        "Christine"
       ],
       "joke_types": [
-        "character_comedy",
-        "paranoia"
+        "cringe_discomfort",
+        "dark_subversive"
       ],
-      "setup": "Ron considering leaving early to avoid birthday party",
-      "punchline": "He realizes this might be part of Leslie's plan",
-      "craft_total": 7.47,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Another Eagleton citizen speaks at the forum",
+      "punchline": "She frames a fence at a children's park as 'punishment' for an entire town \u2014 the escalation of condescension to outright punitive logic is absurdly villainous",
+      "craft_total": 6.7,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good paranoia moment showing Ron's respect for Leslie's strategic thinking",
+      "explanation": "The 'punishment' framing is a good escalation of Eagleton villainy. It's funnier than the previous citizen's line because it's so nakedly aggressive. The cringe comes from how blithely she says it.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -928,22 +934,23 @@
     },
     {
       "index": 32,
-      "text": "And if you have any job openings, maybe you should let me know about 'em. [...] I'm sick of being treated like I'm not willing to relocate to Eagleton, because I am!",
+      "text": "Leslie introduces Joey Plunkett with his broken arm as a sympathetic prop: 'Joey, wave to the audience.' Joey: 'Oh, you can't, because you broke your arm climbing that fence.' Joey: 'I can wave with this arm.' Leslie: 'No, you can't. Both your arms are broken.'",
       "characters": [
-        "Tom"
+        "Leslie",
+        "Joey"
       ],
       "joke_types": [
-        "character_comedy",
+        "setup_punchline",
         "escalation"
       ],
-      "setup": "Tom confronting Lindsay",
-      "punchline": "His anger turns into a desperate job pitch",
-      "craft_total": 7.6,
+      "setup": "Leslie is using injured Joey as a prop for her argument against the fence",
+      "punchline": "Joey offers to wave with his other arm, only to be told BOTH arms are broken \u2014 turning sympathetic prop into absurdist reveal",
+      "craft_total": 7.58,
       "impact_score": 7.67,
-      "quotability": 7.0,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant character moment where Tom's loyalty crumbles into opportunism mid-speech",
+      "explanation": "A perfectly constructed three-beat escalation. Leslie's 'you can't, because you broke your arm' sets up an expectation she's redirecting \u2014 then Joey's naive 'I can wave with this arm' sets up the double-broken-arm reveal. The escalation from one broken arm to two is an absurdist detail that makes Joey both funnier and sadder simultaneously. Strong structure, genuinely surprising.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -957,22 +964,23 @@
     },
     {
       "index": 33,
-      "text": "You might have a fancy car and a mahogany purse, or whatever rich people have,",
+      "text": "Eagleton citizen identifies Joey: 'I recognize that boy. He was caught selling fireworks to Eagleton kids.' Leslie: 'Well, with more due respect, a lot of boys do that in our town. You cannot be sure that he is the one.'",
       "characters": [
-        "Tom"
+        "Leslie",
+        "Eagleton Citizen"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "irony_sarcasm"
       ],
-      "setup": "Tom listing rich people things",
-      "punchline": "The made-up 'mahogany purse' and admission he doesn't know what rich people have",
-      "craft_total": 7.6,
-      "impact_score": 6.25,
-      "quotability": 7.0,
+      "setup": "Leslie has presented Joey as an innocent victim of Eagleton's fence",
+      "punchline": "Joey is actually a known illegal fireworks dealer \u2014 and Leslie's defense ('a lot of boys do that in our town') accidentally confirms Pawnee's chaotic nature",
+      "craft_total": 7.56,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good Tom moment showing his aspirational but confused view of wealth",
+      "explanation": "The collapse of Leslie's carefully staged sympathy narrative is very funny. But the real joke is Leslie's defense: 'a lot of boys do that in our town' \u2014 as a defense of an individual it's terrible, but as civic pride it's accidentally admirable. Leslie defending Pawnee by confirming its chaos is perfect character comedy.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -982,22 +990,22 @@
     },
     {
       "index": 34,
-      "text": "You might have a fancy car and a mahogany purse, or whatever rich people have",
+      "text": "Lindsay's closing remarks to the forum: 'Here's to you, Joey, and your mother, and to every Pawnee citizen who might have a bright future if they fundamentally change everything about themselves.'",
       "characters": [
-        "Leslie"
+        "Lindsay"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "irony_sarcasm",
+        "dark_subversive"
       ],
-      "setup": "Leslie listing Lindsay's fancy possessions",
-      "punchline": "She doesn't know what rich people have beyond cars and 'mahogany purses'",
-      "craft_total": 7.0,
-      "impact_score": 6.67,
-      "quotability": 7.5,
+      "setup": "Lindsay is wrapping up what sounds like a toast of goodwill",
+      "punchline": "The toast ends with 'if they fundamentally change everything about themselves' \u2014 a devastating insult disguised as encouragement",
+      "craft_total": 7.76,
+      "impact_score": 7.83,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Leslie moment showing her middle-class assumptions about wealth",
+      "explanation": "Excellent villain writing. The toast format builds expectation of a sincere compliment, then delivers the most complete rejection possible: every citizen's future requires changing everything about themselves. It's precisely calibrated condescension and very funny in its completeness.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1015,23 +1023,22 @@
     },
     {
       "index": 35,
-      "text": "These waffles make great dog laxatives. [...] Don't you dare feed that waffle to that dog to get it to poop.",
+      "text": "Ben describes his Ann party experience: 'She kidnapped me from work, took me to Se\u00f1or Vega's with the mariachi band and sombrero, everyone sings Happy Birthday, went back home, everyone I knew, face painting, I had my face painted like a fairy tiger. Also, she did it a week before so I had no idea. And then there was a bouncy castle. Did you know they make those for adults?'",
       "characters": [
-        "Lindsay",
-        "Leslie"
+        "Ben"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Lindsay claims JJ's waffles aren't for her",
-      "punchline": "She reveals they're used as dog laxatives, Leslie's horrified reaction",
-      "craft_total": 7.57,
-      "impact_score": 8.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Ron is fishing for party intel by asking what Leslie did for Ben's last birthday",
+      "punchline": "The party escalates through increasingly chaotic details \u2014 kidnapping, mariachi, sombrero, face painting as a 'fairy tiger,' bouncy castle \u2014 each more absurd, until the innocent final query 'Did you know they make those for adults?'",
+      "craft_total": 7.99,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent escalation that makes Lindsay even more villainous through waffle desecration",
+      "explanation": "The accumulation of party details is a masterclass in escalation comedy: each item is funnier than the last, culminating in 'fairy tiger' (an absurd specific detail) and the earnest 'Did you know they make those for adults?' The final question is perfect because Ben's genuine wonder reveals he fully enjoyed being ambushed and treated like a child. Also functions as a setup for Ron's dread, making it earn its laugh twice.",
       "dialogue": [
         {
           "speaker": "Lindsay",
@@ -1049,23 +1056,22 @@
     },
     {
       "index": 36,
-      "text": "Sambuca need to make? There you go.",
+      "text": "Ron's reaction to Ben's birthday party story: 'Damn it.' \u2014 long pause \u2014 'Maybe I'll change it up this time.'",
       "characters": [
-        "Lindsay",
-        "Dog"
+        "Ron"
       ],
       "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
+        "reaction_beat",
+        "character_comedy"
       ],
-      "setup": "Lindsay about to feed the waffle to her dog",
-      "punchline": "The dog immediately pooping after eating the waffle",
-      "craft_total": 7.8,
-      "impact_score": 7.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Ben has described the full horror of what Leslie does for birthdays, which Ron was interrogating him about",
+      "punchline": "Ron's resigned 'Damn it' followed by the completely uncharacteristic 'Maybe I'll change it up this time' \u2014 suggesting a grudging softening",
+      "craft_total": 7.08,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Immediate payoff to the laxative setup. Physical comedy with the dog's instant reaction to the waffle.",
+      "explanation": "The economy here is exceptional. 'Damn it' does the work of acknowledging defeat, and 'Maybe I'll change it up this time' is the show's emotional throughline peeking through the comedy. The fact that Ron would frame a slight emotional opening as 'changing it up' is deeply character-specific.",
       "dialogue": [
         {
           "speaker": "Leslie Knope",
@@ -1079,23 +1085,23 @@
     },
     {
       "index": 37,
-      "text": "Did G.B. Shaw write that for you? - Did G.B. Shaw write your stupid fartface?",
+      "text": "Tom asks to try the andouille sausage at the Eagleton forum; Leslie insists 'Tom, let's go'; Tom responds 'What? No. It's gross. I don't like it. It's disgusting.'",
       "characters": [
-        "Lindsay",
+        "Tom",
         "Leslie"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "escalation"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Lindsay makes literary insult",
-      "punchline": "Leslie's comeback awkwardly repurposes the structure",
-      "craft_total": 6.83,
-      "impact_score": 6.67,
-      "quotability": 7.5,
+      "setup": "Leslie is trying to leave after the humiliating forum",
+      "punchline": "Tom protests being dragged away from food he himself is calling disgusting \u2014 his desire to eat it and his judgment of it are simultaneously true",
+      "craft_total": 6.45,
+      "impact_score": 5.75,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation showing Leslie's inability to match Lindsay's sophistication",
+      "explanation": "Quick Tom comedy \u2014 wanting to eat something he simultaneously declares gross is a minor character beat. Functional, gets a soft laugh, nothing exceptional.",
       "dialogue": [
         {
           "speaker": "Lindsay",
@@ -1109,22 +1115,22 @@
     },
     {
       "index": 38,
-      "text": "Can I offer you anything... herbal tea, Greek yogurt?",
+      "text": "Tom reacts to the Eagleton public forum gift bag: 'Did you guys get your public forum gift bag? There's an iPod touch in here.'",
       "characters": [
-        "Eagleton Officer"
+        "Tom"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Officer offering amenities to prisoners",
-      "punchline": "Luxury items being offered in jail",
-      "craft_total": 7.05,
-      "impact_score": 6.75,
-      "quotability": 7.5,
+      "setup": "The Eagleton/Pawnee fence conflict is a serious civic matter",
+      "punchline": "Eagleton gives away iPod touches at their public forums \u2014 an absurd display of wealth that Tom is delighted by, completely sidetracking from the serious matter at hand",
+      "craft_total": 6.6,
+      "impact_score": 6.25,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good contrast showing Eagleton's luxury extends even to their jail. The specific items are perfectly bougie.",
+      "explanation": "Good Eagleton worldbuilding joke. iPods at a municipal meeting is a strong absurdist detail. Tom's complete distraction from the civic matter is on-brand.",
       "dialogue": [
         {
           "speaker": "Eagleton Officer",
@@ -1142,22 +1148,23 @@
     },
     {
       "index": 39,
-      "text": "I love you like a father who's not that much older than me... like a young Uncle... or like, uh, you were my camp counselor",
+      "text": "Eagleton gift bags at the public forum contain an iPod touch, verbena-scented soy candles",
       "characters": [
-        "Andrew"
+        "Tom",
+        "Ben"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "visual_gag",
+        "character_comedy"
       ],
-      "setup": "Andrew trying to explain his relationship with Ron",
-      "punchline": "Increasingly awkward analogies that don't quite work",
-      "craft_total": 7.47,
-      "impact_score": 7.5,
-      "quotability": 6.5,
+      "setup": "Government public forums are usually noted for bad coffee and plastic folding chairs",
+      "punchline": "Eagleton gives attendees iPod touches in their gift bags \u2014 a wildly extravagant gift for a municipal meeting",
+      "craft_total": 6.87,
+      "impact_score": 6.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Andrew rambling that captures his earnest confusion about relationships",
+      "explanation": "Good worldbuilding joke. The iPod touch is a specific enough luxury item to land the joke cleanly. Tom's reaction shows even he's impressed. The verbena soy candles are a great secondary detail that confirms Eagleton's specific flavor of bougie.",
       "dialogue": [
         {
           "speaker": "Andrew",
@@ -1191,41 +1198,42 @@
     },
     {
       "index": 40,
-      "text": "Leslie assigned me to the kidnap squad.",
+      "text": "Leslie's plan to fight Eagleton's snobbery: throw bags of garbage onto their side of the park",
       "characters": [
-        "Andrew"
+        "Leslie",
+        "Team"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Andrew accidentally revealing party plans",
-      "punchline": "Casual mention of being on a 'kidnap squad'",
-      "craft_total": 7.43,
-      "impact_score": 7.0,
-      "quotability": 8.5,
+      "setup": "Leslie is rallying the Parks Department to stand up to Eagleton",
+      "punchline": "Her plan is to literally throw garbage on them \u2014 playing exactly into the 'dirty Pawnee' stereotype they're trying to fight",
+      "craft_total": 6.93,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent absurdist humor with perfect economy - the casual mention of kidnapping is perfectly Andrew"
+      "explanation": "Leslie descending to the exact behavior Eagleton accused Pawnee of is a good ironic beat. The self-awareness expressed by Ann ('isn't that just playing right into what they think of you?') is the straight-man response that confirms the joke."
     },
     {
       "index": 41,
-      "text": "Ann, put these scones in your bra. Let's go.",
+      "text": "Ron's internal battle: 'I'm ending this right now. I'm just gonna leave early and go home... Unless... That's exactly what she wants me to do.'",
       "characters": [
-        "Leslie"
+        "Ron"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie having an idea in jail",
-      "punchline": "Her plan involves smuggling prison scones in Ann's bra",
-      "craft_total": 7.63,
-      "impact_score": 7.33,
-      "quotability": 8.0,
+      "setup": "Ron is trying to escape his birthday party",
+      "punchline": "Ron's paranoid reasoning \u2014 that Leslie's plan is so clever that leaving would play into her hands \u2014 traps him in a spiral of counter-planning",
+      "craft_total": 7.53,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Leslie absurdity - treating jail amenity theft as important mission with military precision",
+      "explanation": "Ron's strategic mind turned against his own desires is a great character beat. The 'Unless... That's exactly what she wants me to do' logic is both funny and reveals genuine respect for Leslie's scheming.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1243,24 +1251,22 @@
     },
     {
       "index": 42,
-      "text": "That was just a list of ways to mess with you. - She do 'em all? - She did indeed.",
+      "text": "Leslie talks herself out of the garbage plan by realizing aloud what she's doing, then immediately tries to stop \u2014 but then Lindsay appears and Leslie says 'I didn't expect to see you here, although it is, sadly, one of the nicest spots in town'",
       "characters": [
-        "Leslie",
-        "Ron",
-        "April"
+        "Lindsay"
       ],
       "joke_types": [
-        "callback",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Revealing April's 'party planning' was actually harassment",
-      "punchline": "April successfully completed every item on the harassment list",
-      "craft_total": 7.73,
-      "impact_score": 7.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Excellent callback that recontextualizes April's earlier behavior as intentional harassment",
+      "setup": "Leslie has just aborted the garbage-throwing plan at the park",
+      "punchline": "Lindsay shows up and simultaneously compliments the park (as a nice spot) and insults Pawnee (by calling it one of the nicest, implying everything else is worse)",
+      "craft_total": 7.0,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Lindsay's backhanded compliment is well-crafted \u2014 'one of the nicest spots in town' implies by damning faint praise that Pawnee's nicest spot is still mediocre. The casual delivery would sting perfectly.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1282,22 +1288,22 @@
     },
     {
       "index": 43,
-      "text": "Next year, your birthday party is gonna be a rager.",
+      "text": "Tom's 'confrontation' of Lindsay: 'You take your fancy dog, get in your Escalade... and if you have any job openings, maybe you should let me know about 'em... Take this resume and shove it into your human resources slot.'",
       "characters": [
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "setup_punchline"
       ],
-      "setup": "Leslie saying this is a one-time low-key birthday",
-      "punchline": "She immediately threatens an even bigger party next year",
-      "craft_total": 7.4,
-      "impact_score": 7.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Tom says 'Wait, Leslie. I've got this.' \u2014 promising to deliver a powerful defense of Pawnee",
+      "punchline": "Tom's entire 'confrontation' is actually a job application delivered with superficial aggression \u2014 ending in 'shove it into your human resources slot'",
+      "craft_total": 8.43,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Leslie moment - can't help but escalate even while trying to be considerate",
+      "explanation": "This is the episode's funniest set piece. Tom sets up what should be a loyal defense of Pawnee, then immediately turns it into a self-serving job inquiry, and finally delivers a passionately angry resume submission. The 'human resources slot' phrasing is a perfect absurdist evasion of swearing. The subversion of the 'town defender' moment into naked self-interest is perfectly Tom. His 'Oh yeah! Shove it there!' self-encouragement is the cherry on top. Approaches the 8.0 anchor benchmark in terms of character integration and originality.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1311,22 +1317,22 @@
     },
     {
       "index": 44,
-      "text": "This, by the way, is a one-time-only situation. Next year, your birthday party is gonna be a rager.",
+      "text": "Tom's 'speech' to Lindsay reveals he just wants a job: 'Take this resume and shove it into your human resources slot. Oh yeah! Shove it there!'",
       "characters": [
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "misdirection"
       ],
-      "setup": "Leslie giving Ron a quiet birthday celebration",
-      "punchline": "Her threat/promise that next year will be an over-the-top party",
-      "craft_total": 7.4,
-      "impact_score": 6.75,
-      "quotability": 7.5,
+      "setup": "Tom has taken over from Leslie to deliver a passionate defense of Pawnee",
+      "punchline": "The dramatic confrontation climaxes with Tom physically handing over his resume and chanting about shoving it in her HR slot \u2014 the absurd macho energy applied to job-seeking",
+      "craft_total": 8.29,
+      "impact_score": 8.75,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Leslie moment - can't help but threaten more elaborate celebrations. Shows she'll never truly change.",
+      "is_callback": 1,
+      "explanation": "This is the episode's comedic peak for Tom and one of the best jokes in the episode. The setup has been building across multiple scenes (Tom's Eagleton fascination, his earlier speech pivot). The payoff \u2014 'shove it into your human resources slot / Oh yeah! Shove it there!' \u2014 is perfect Tom. The macho chanting about resume submission is simultaneously pathetic and triumphant. The group's stunned 'Come on, man' / 'No!' reaction makes it better. This is a genuine 8+ moment: the character-specific absurdism is irreplaceable, it's highly quotable, and it has obvious rewatch value. Justifies the score.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1337,13 +1343,471 @@
           "line": "But I'm warning you right now: next year, all bets are off. I'm talking ice sculptures, a live band, confetti cannons, the works."
         }
       ]
+    },
+    {
+      "index": 45,
+      "text": "Leslie accuses Lindsay of feeding JJ's Diner waffles to her dog as laxatives; Lindsay confirms: 'These waffles make great dog laxatives.'",
+      "characters": [
+        "Leslie",
+        "Lindsay"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Leslie catches Lindsay at JJ's getting takeout, initially seeming like Lindsay secretly misses Pawnee",
+      "punchline": "The waffles aren't for Lindsay \u2014 they're dog laxatives, which is both a callous use of the legendary diner's food and a way of insulting Pawnee while appearing to patronize it",
+      "craft_total": 7.7,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A genuinely good joke. The setup implies a heartwarming moment of Lindsay's secret Pawnee nostalgia \u2014 then the punchline reveals it's dog laxatives. The specificity of using the legendary JJ's waffles as pet medicine is an inspired bit of villain characterization. Also works as a callback to the JJ's Diner mythology in the show."
+    },
+    {
+      "index": 46,
+      "text": "Leslie: 'Don't you dare feed that waffle to that dog to get it to poop.' \u2014 then the garbage fight erupts",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Lindsay has confirmed the waffles are dog laxatives and is about to feed one to her dog",
+      "punchline": "Leslie's desperate plea 'Don't you dare feed that waffle to that dog to get it to poop' is an absurd sentence that somehow makes complete sense in context \u2014 and then immediately a full garbage fight breaks out",
+      "craft_total": 6.77,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The sentence Leslie has to say \u2014 constructed precisely from the situation \u2014 is the joke. It's completely coherent in context but deeply absurd in isolation, which is a good craft marker. The immediate escalation to garbage fight is well-timed."
+    },
+    {
+      "index": 47,
+      "text": "GARBAGE FIGHT breaks out \u2014 Leslie punches Lindsay, garbage flies, crowd yells 'Get her, Leslie!'",
+      "characters": [
+        "Leslie",
+        "Lindsay",
+        "Team"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "escalation"
+      ],
+      "setup": "The Pawnee/Eagleton tension has been building throughout the episode",
+      "punchline": "A full garbage fight erupts, with the Parks Department enthusiastically yelling 'Get her, Leslie!' \u2014 the entire conflict resolves as a suburban trash brawl",
+      "craft_total": 6.96,
+      "impact_score": 7.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The garbage fight is an earned escalation \u2014 the episode has been building class tension and it pays off in the most Pawnee way possible. The impact is primarily physical/visual, which is why the craft score is lower than the impact score. The crowd support ('Get her, Leslie!') from her own government colleagues is an excellent touch."
+    },
+    {
+      "index": 48,
+      "text": "Lindsay after the fight: 'I want her arrested for attempted murder. For God's sake, Knope. Get a grip.' \u2014 then demands her Kate Spade headband back",
+      "characters": [
+        "Lindsay"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "After the garbage fight, both women are being calmed down",
+      "punchline": "Lindsay escalates 'she punched me' to 'attempted murder,' then reveals her primary concern is a missing Kate Spade headband",
+      "craft_total": 7.32,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'attempted murder' overcharge followed by legitimate concern about a luxury accessory is perfect Lindsay character comedy. She's the villain but she's funny because her priorities are exactly as shallow as they appear. 'She hurled my Kate Spade headband somewhere' is a precise comic detail."
+    },
+    {
+      "index": 49,
+      "text": "Lindsay after the garbage fight: 'I want her arrested for attempted murder. For God's sake, Knope. Get a grip.'",
+      "characters": [
+        "Lindsay",
+        "Chris"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "The garbage fight has ended with police/Chris arriving",
+      "punchline": "Lindsay simultaneously demands Leslie be arrested for attempted murder AND tells her to get a grip \u2014 the person demanding murder charges for a garbage fight is lecturing about composure",
+      "craft_total": 7.3,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The self-unawareness \u2014 calling for murder charges while simultaneously telling someone to get a grip \u2014 is a clean, efficient piece of character comedy. Lindsay's aristocratic hypocrisy in one sentence."
+    },
+    {
+      "index": 50,
+      "text": "Leslie: 'I will never apologize to her.' Lindsay: 'Nor I her.' Police officer: ' \"Nor I her.\"' \u2014 then mocks it: 'I doth proclaim to be a stupid fartface.'",
+      "characters": [
+        "Leslie",
+        "Lindsay",
+        "Officer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Both women are refusing to apologize; Lindsay delivers her refusal in formal/archaic language",
+      "punchline": "The officer mocks Lindsay's 'Nor I her' as pompous by doing his own mock-archaic insult: 'I doth proclaim to be a stupid fartface'",
+      "craft_total": 7.51,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'I doth proclaim to be a stupid fartface' is a wonderful piece of mock-archaic language. The joke works because it perfectly captures the officer's exasperation with Eagleton pretension. 'Doth' + 'stupid fartface' is a great juxtaposition of registers. Leslie's comeback attempt ('Did G.B. Shaw write your stupid fartface?') is also funny as a failed escalation."
+    },
+    {
+      "index": 51,
+      "text": "Lindsay: 'Nice retort. Did G.B. Shaw write that for you?' / Leslie: 'Did G.B. Shaw write your stupid fartface?'",
+      "characters": [
+        "Leslie",
+        "Lindsay"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Lindsay dismisses the officer's 'stupid fartface' line with a literary reference",
+      "punchline": "Leslie tries to zing back with the same reference but just attaches it to 'your stupid fartface' \u2014 the absurdity of applying G.B. Shaw to fartface doubles down on the joke",
+      "craft_total": 7.68,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Leslie's failed comeback echoes the failed comeback at the park earlier (joke 24), but here it's played as Leslie being flustered and just recycling the last funny phrase she heard. 'Did G.B. Shaw write your stupid fartface' is the kind of sentence you can't help but laugh at."
+    },
+    {
+      "index": 52,
+      "text": "Eagleton jail has herbal tea and Greek yogurt \u2014 the guard offers these to Leslie",
+      "characters": [
+        "Guard",
+        "Leslie"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy"
+      ],
+      "setup": "Leslie has been thrown in jail",
+      "punchline": "The Eagleton holding cell has the amenities of a spa \u2014 herbal tea and Greek yogurt offered on arrival",
+      "craft_total": 7.48,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Eagleton jail as a luxury experience is a great piece of world-building comedy. The specific items \u2014 herbal tea and Greek yogurt \u2014 are exactly right for Eagleton's brand of wellness-adjacent snobbery. Leslie's flat 'No' is the perfect reaction."
+    },
+    {
+      "index": 53,
+      "text": "Andy arrives to shine shoes and notices Ron didn't wear a shirt: 'Ooh, dude, you forgot to put a shirt on. I do it all the time. It's fine.'",
+      "characters": [
+        "Andy",
+        "Ron"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ron has slept at the office to avoid birthday plans",
+      "punchline": "Andy's breezy 'I do it all the time. It's fine' reveals that Andy routinely shows up shirtless to work \u2014 and treats it as a relatable mistake",
+      "craft_total": 7.35,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'I do it all the time. It's fine' is a wonderful Andy Dwyer line. He normalizes his own workplace misconduct as a reassurance to Ron, which is both deeply dumb and somehow sweet. The characterization is tight \u2014 only Andy would provide this particular comfort."
+    },
+    {
+      "index": 54,
+      "text": "Andy's extended metaphor for his relationship with Ron: 'I love you like a father who's not that much older than me... like a young uncle... or you were my camp counselor but we're adults now... Or actually here's what it is. You're my lacrosse coach.'",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Andy says he loves Ron 'like a father'",
+      "punchline": "He iterates through several inadequate metaphors (young uncle, camp counselor, lacrosse coach), each more deflating than the last, settling on 'lacrosse coach' as the final answer",
+      "craft_total": 7.96,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Andy working through relationship metaphors and landing on 'lacrosse coach' is beautifully absurd. Each metaphor gets more specific and less resonant, which is the joke \u2014 the escalation goes in the wrong direction, arriving at the most casual adult-authority relationship possible. 'I get it. I get it.' is a great self-reassurance that makes it clear he truly does not get it."
+    },
+    {
+      "index": 55,
+      "text": "Andy accidentally reveals he's on 'the kidnap squad' for Ron's party immediately after swearing to secrecy",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Andy swears he cannot reveal anything because he owes Leslie so much",
+      "punchline": "Immediately after Ron leaves, Andy calls after him: 'Not if I see you first, Uncle Ron. And I probably will, 'cause Leslie assigned me to the kidnap squad.'",
+      "craft_total": 8.11,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The structure is perfect: Andy builds up to refusing to betray Leslie's trust, Ron exits, and Andy immediately both blows the secret AND uses the phrase 'kidnap squad' \u2014 which implies Leslie has an organized team for birthday abductions. The casual 'I probably will' about seeing Ron before Ron sees him (as if they're at camp) also callbacks the lacrosse coach/camp counselor metaphor. Classic Andy: sincere loyalty immediately undone by lack of impulse control."
+    },
+    {
+      "index": 56,
+      "text": "Chris accidentally reveals: 'Not if I see you first, Uncle Ron. And I probably will, 'cause Leslie assigned me to the kidnap squad.'",
+      "characters": [
+        "Chris"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Chris has just sworn he won't reveal anything to Ron about Leslie's birthday plans",
+      "punchline": "His farewell immediately reveals he's on a 'kidnap squad' \u2014 betraying the exact secret he promised to keep",
+      "craft_total": 7.94,
+      "impact_score": 8.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The structure is textbook and executed perfectly: Chris makes a big deal of his loyalty and inability to share information, then immediately and casually reveals the existence of a 'kidnap squad.' The gap between the solemn promise and the instant, oblivious betrayal is the joke. 'Uncle Ron' as a callback to the relationship metaphors is a nice button. Highly quotable."
+    },
+    {
+      "index": 57,
+      "text": "Ann on Leslie being in jail: 'Oh my God, are you okay?' Leslie: 'It was a rough night, but I survived.' Ann: offers a scone. 'They only have maple walnut.'",
+      "characters": [
+        "Ann",
+        "Leslie"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Ann picks Leslie up from jail with concern",
+      "punchline": "The dramatic 'rough night' is immediately deflated by the mundane jail scone situation \u2014 'They only have maple walnut' \u2014 implying the real indignity of Eagleton jail is the scone selection",
+      "craft_total": 6.63,
+      "impact_score": 5.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The maple walnut scone detail is a nice small joke. It maintains the 'Eagleton jail as spa' joke from earlier \u2014 even the scone grievance is the problem of someone in a very nice jail."
+    },
+    {
+      "index": 58,
+      "text": "Leslie's confession: 'The only thing I'm guilty of is loving Pawnee. And punching Lindsay in the face and shoving a coffee filter down her pants. But in my defense, I believe that assault should be legal if a person is a jerk.'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Ann asks what Leslie did to get arrested",
+      "punchline": "Leslie frames assault through civic pride, then the specific detail of 'shoving a coffee filter down her pants' makes it both funnier and more specific, followed by a confident legal philosophy: assault should be legal if the person is a jerk",
+      "craft_total": 8.14,
+      "impact_score": 8.5,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the best lines in the episode. 'Shoving a coffee filter down her pants' is so specific it must be true, and the mundaneness of the weapon (a coffee filter) makes it funnier than anything violent would be. The legal philosophy \u2014 'assault should be legal if a person is a jerk' \u2014 is perfectly Leslie: earnest, civic-minded, completely wrong, delivered with absolute confidence. Highly quotable and deeply character-integrated. Comparable in structure to the best jokes in the episode."
+    },
+    {
+      "index": 59,
+      "text": "Ann offers to 'beat her senseless with a baseball bat' as the most important point in her advice to Leslie",
+      "characters": [
+        "Ann"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Ann is giving Leslie structured, thoughtful advice about Lindsay (first of all... second of all... third of all...)",
+      "punchline": "'But most importantly, you say the word, and I will beat her senseless with a baseball bat.'",
+      "craft_total": 7.64,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The structure is what makes this work: Ann builds through calm, rational advice ('first of all...second of all...third of all...') and the numbered list format creates an expectation of measured counsel. The 'most importantly' subverts this completely by being violence. The specificity of 'baseball bat' is perfect. This is Ann's best moment in the episode and a great piece of best-friend comedy."
+    },
+    {
+      "index": 60,
+      "text": "Ann: 'Can we just stop off at the lobby? 'Cause the prison gift bags are amazing.'",
+      "characters": [
+        "Ann"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Leslie and Ann are rushing out of the jail to execute a plan",
+      "punchline": "Even the Eagleton jail has gift bags \u2014 and Ann wants to collect hers on the way out",
+      "craft_total": 7.46,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Solid callback to the Eagleton-luxury running gag. The Eagleton jail not only has herbal tea and Greek yogurt \u2014 it has gift bags. Ann pausing an urgent escape plan for jail gift bags is a great beat. The callback amplifies the previous joke."
+    },
+    {
+      "index": 61,
+      "text": "The Pawnee wiffle ball league uses the Eagleton fence as a home run barrier \u2014 and Eagleton kids who signed up retrieve the balls",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Leslie presents her solution to the fence: the Pawnee wiffle ball league",
+      "punchline": "She's used the fence as a game feature, and recruited Eagleton kids to retrieve balls \u2014 co-opting the enemy infrastructure and neutralizing it with play",
+      "craft_total": 7.78,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "This is Leslie's character in comedic form: her solution isn't to fight or concede but to creatively subvert the obstacle. The fact that she recruited Eagleton kids to participate means the fence is both physically used and socially undermined. The comedy is in the elegance and the audacity \u2014 she built an entire league in a day."
+    },
+    {
+      "index": 62,
+      "text": "Leslie to Lindsay at the wiffle ball game: 'I want to thank you for the fence. There's no way we could afford that high-quality wood.'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Leslie presents her solution while confronting Lindsay",
+      "punchline": "She thanks Lindsay for the fence \u2014 crediting her enemy for providing quality infrastructure for Pawnee's new initiative",
+      "craft_total": 7.62,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Perfect Leslie Knope callback. She genuinely thanks her nemesis for the fence while also defeating her. It's simultaneously gracious and a complete destruction of Lindsay's position \u2014 the fence she built to divide is now a home run wall. The wood quality detail grounds it in specificity."
+    },
+    {
+      "index": 63,
+      "text": "Leslie invites Lindsay for a beer in her old jazz sweatshirt at Sullivan's \u2014 revealing she knows Lindsay still has the sweatshirt",
+      "characters": [
+        "Leslie",
+        "Lindsay"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Leslie has just embarrassed Lindsay publicly; the fight seems over",
+      "punchline": "Leslie's victory is offering a genuine reconciliation \u2014 and the specific detail of knowing Lindsay still has her old jazz sweatshirt suggests Leslie has been paying attention to Lindsay even while estranged",
+      "craft_total": 7.64,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "This is warm comedy \u2014 the joke is that Leslie knows exactly how to reach Lindsay and uses it with casual precision. 'Bust out your old jazz sweatshirt' implies a specific history. Lindsay's quiet 'I do still have that sweatshirt' and Leslie's 'I know you do' is character comedy with genuine heart underneath."
+    },
+    {
+      "index": 64,
+      "text": "Ron is called into a meeting by Ben and Chris expecting more birthday party horror \u2014 walks in to find a small private room with just a few close colleagues",
+      "characters": [
+        "Ron",
+        "Leslie",
+        "Ben",
+        "Chris"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "The entire episode has been building dread in Ron about an elaborate surprise party",
+      "punchline": "The party is a quiet room with a movie and good company \u2014 the subversion of the expected big party is the joke",
+      "craft_total": 7.96,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The episode-long misdirection pays off beautifully. All the April chaos (balloons from sick children, inflatable saxophones, neon fedoras) was a red herring \u2014 Leslie knew exactly what Ron wanted. The comedy here is structural: the joke is the entire episode's setup finally resolving in an anti-climax that is also the perfect climax. Highly character-integrated and completely earned."
+    },
+    {
+      "index": 65,
+      "text": "Ann's confession that the elaborate party details she told Ron about \u2014 sombreros, mariachi, fairy tiger face painting, bouncy castle \u2014 'I did that for Ann. Why would I throw Ron Swanson an Ann Perkins party?'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Ron got intel on Leslie's party planning from Ben's story about his own birthday party",
+      "punchline": "Leslie reveals the bouncy castle/mariachi/fairy tiger party was tailored to Ben's personality \u2014 she would never throw Ron Swanson that kind of party. She knows her people.",
+      "craft_total": 8.23,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is arguably the best joke in the episode in terms of structure. The entire misdirection of the episode \u2014 Ron fearing a loud, chaotic party \u2014 was built on Ben's account of his own birthday party. The reveal that Leslie customizes each party to the individual recontextualizes the entire subplot. 'Why would I throw Ron Swanson an Ann Perkins party?' is both the punchline and the thesis of Leslie Knope as a character. Exceptional callback structure, completely earned, highly rewatch-worthy \u2014 on a second viewing you see the misdirection was deliberate from the start."
+    },
+    {
+      "index": 66,
+      "text": "Leslie reveals the list of party tasks she gave April was 'a list of ways to mess with you' \u2014 and April did them all",
+      "characters": [
+        "Leslie",
+        "Ron"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Ron was watching April's party preparations with horror",
+      "punchline": "April wasn't actually planning a party \u2014 she was executing a list of pranks designed to torment Ron, and she completed every single one",
+      "craft_total": 8.17,
+      "impact_score": 8.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The April prank-list reveal is a secondary layer of the misdirection. Leslie didn't just protect Ron from an unwanted party \u2014 she deployed April as controlled chaos to protect him. The 'she did indeed' confirmation that April completed every prank is a lovely payoff. Recontextualizes April's behavior throughout the episode."
+    },
+    {
+      "index": 67,
+      "text": "Leslie: 'This, by the way, is a one-time-only situation. Next year, your birthday party is gonna be a rager.'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Ron has just accepted and appreciated the quiet, thoughtful party Leslie organized",
+      "punchline": "Leslie immediately qualifies this with 'next year it's a rager' \u2014 implying she's conceded this year but has not given up her grand birthday ambitions",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Perfect Leslie button on the episode. She has given Ron exactly what he wanted \u2014 and still can't help announcing her future plans. 'Rager' in Leslie's vocabulary is both funny (she would plan a deeply specific, wildly decorated party she calls a rager) and touching (she will never stop caring). Great character landing."
     }
   ],
-  "imdb_rating": 8.1,
-  "imdb_votes": 2864,
-  "tmdb_overview": "Leslie's ex-best friend, Lindsay Carlisle Shay, launches an attack on Pawnee, banning residents from visiting a nearby park in the neighboring city of Eagleton with a large fence, causing Leslie to go to war with Eagleton. Meanwhile, everyone finds out that it is Ron's birthday, a fact that he went to extreme lengths to conceal.",
   "air_date": "2011-05-05",
+  "imdb_rating": 8.1,
+  "imdb_votes": 2874,
+  "tmdb_overview": "Leslie's ex-best friend, Lindsay Carlisle Shay, launches an attack on Pawnee, banning residents from visiting a nearby park in the neighboring city of Eagleton with a large fence, causing Leslie to go to war with Eagleton. Meanwhile, everyone finds out that it is Ron's birthday, a fact that he went to extreme lengths to conceal.",
   "still_path": "/P1rC7dexr6Rxysp34SbPJ4yEMx.jpg",
+  "director": [
+    "Nicole Holofcener"
+  ],
+  "writers": [
+    "Emily Spivey"
+  ],
   "guest_stars": [
     {
       "name": "Parker Posey",
@@ -1385,24 +1849,6 @@
       "character": "Florence",
       "profile_path": "/hFZAh6VePwk0G6YxaSAcrtXO4fJ.jpg"
     }
-  ],
-  "war": null,
-  "humor_index_v1": 84.6,
-  "ci_95_low": 77.6,
-  "ci_95_high": 85.4,
-  "percentile_in_show": 68.5,
-  "zscore_in_show": 0.52,
-  "zscore_in_season": 0.48,
-  "humor_index_single_run": 82.1,
-  "standup_jokes": 0,
-  "standup_fraction": 0.0,
-  "consensus_runs": 3,
-  "consensus_method": "3-run consensus",
-  "director": [
-    "Nicole Holofcener"
-  ],
-  "writers": [
-    "Emily Spivey"
   ],
   "insight": "Eagleton rivalry escalates through character comedy; 44 jokes sustain 81-point excellence."
 }

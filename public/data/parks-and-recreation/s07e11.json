@@ -3,34 +3,36 @@
   "slug": "parks-and-recreation",
   "season": 7,
   "episode_number": 11,
-  "title": "S07E11",
-  "humor_index": 84.3,
-  "jpm": 2.14,
-  "avg_craft": 7.14,
-  "avg_impact": 7.03,
-  "total_jokes": 53,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"cringe_discomfort\"]",
-  "standout_joke_ids": "[17, 22, 27]",
+  "title": "Two Funerals",
+  "humor_index": 92.1,
+  "jpm": 2.82,
+  "avg_craft": 7.47,
+  "avg_impact": 7.34,
+  "total_jokes": 70,
+  "war": 98.3,
+  "dominant_joke_types": "[\"character_comedy\", \"deadpan_understatement\", \"absurdist\"]",
+  "standout_joke_ids": "[70, 22, 33]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Hey. Hey, guys, listen. Leslie's gonna walk in and say something that sounds very boring but is actually a really big deal. So when I give the signal, just everybody cheer like crazy.",
+      "text": "Ben gives the group a signal to cheer for Leslie's announcement, which turns out to be the extremely dry 'Senior Executive Service Development Candidate Program at the Department of the Interior'",
       "characters": [
-        "Andy"
+        "Ben",
+        "Leslie"
       ],
       "joke_types": [
         "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Andy sets up elaborate coordination for Leslie's boring announcement",
-      "punchline": "The meta-awareness that Leslie's achievements sound boring but matter",
-      "craft_total": 7.2,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Ben hypes the group: 'she's gonna say something that sounds very boring but is actually a really big deal' \u2014 implying the signal will be for something exciting",
+      "punchline": "The announcement is a mouthful of bureaucratic jargon that perfectly embodies 'sounds very boring,' and the group cheers wildly anyway",
+      "craft_total": 7.32,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Andy character moment - his sweet but dim attempt to help Leslie get recognition for her achievements",
+      "explanation": "Classic Parks setup \u2014 Leslie's obsession with government bureaucracy played for warmth and comedy simultaneously. Ben's pre-framing is the perfect meta-commentary. The joke is fully character-integrated: only Leslie would be genuinely thrilled about this title. Good structure with the signal payoff.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -68,23 +70,23 @@
     },
     {
       "index": 2,
-      "text": "This is about people who are moving, Garry. Not everything is about you.",
+      "text": "Garry announces his retirement and is immediately told 'This is about people who are moving, Garry. Not everything is about you.'",
       "characters": [
-        "Tom",
-        "Garry"
+        "Garry",
+        "Ben"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "irony_sarcasm"
       ],
-      "setup": "Multiple people are making moving announcements",
-      "punchline": "Tom shuts down Garry's retirement announcement as off-topic",
-      "craft_total": 6.77,
-      "impact_score": 6.33,
-      "quotability": 5.5,
+      "setup": "Multiple cast members make exciting life announcements (promotion, new house). Garry announces his retirement.",
+      "punchline": "He is shot down as if his retirement is a selfish derailment, when it's actually also significant news \u2014 the irony being that everyone else's announcements are equally self-focused",
+      "craft_total": 7.18,
+      "impact_score": 7.25,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Garry mistreatment - he tries to join in but gets dismissed",
+      "explanation": "Classic Garry joke \u2014 he's always minimized. The irony is sharp: everyone else's announcements ARE about them, but Garry alone gets scolded. Character-integrated and efficient.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -102,23 +104,23 @@
     },
     {
       "index": 3,
-      "text": "Also I'm retiring. That's three, Garry.",
+      "text": "'Also I'm retiring.' / 'That's three, Garry.'",
       "characters": [
         "Garry",
-        "Leslie"
+        "Ben"
       ],
       "joke_types": [
         "running_gag",
         "character_comedy"
       ],
-      "setup": "Leslie counts bad news in threes, Garry tries to add his retirement",
-      "punchline": "Leslie dismissively includes his retirement but still calls him out",
-      "craft_total": 6.7,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "Ben counts three announcements as 'bad news comes in threes' \u2014 Leslie/Ben, April/Andy, Donna. Then tries to pivot to good news.",
+      "punchline": "Garry tries again to announce his retirement and is again dismissed as merely being the third item on someone else's list",
+      "craft_total": 7.31,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Continues the Garry dismissal pattern while advancing the plot count",
+      "is_callback": 1,
+      "explanation": "The callback lands harder than the original setup. The economy is excellent \u2014 four words demolish Garry's milestone a second time. The escalation of the indignity is well-timed.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -136,23 +138,22 @@
     },
     {
       "index": 4,
-      "text": "Well, you jinxed us, Garry. Thanks a lot.",
+      "text": "The news anchor begins 'Good evening. I come to you tonight with some good news...' then pivots: 'Is not a sentence I will be saying to you right now, because beloved Pawnee Mayor Walter Gunderson has died.'",
       "characters": [
-        "Leslie",
-        "Garry"
+        "News Anchor"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "setup_punchline",
+        "misdirection"
       ],
-      "setup": "Leslie says they're due for good news, immediately followed by news of mayor's death",
-      "punchline": "Leslie blames Garry for the jinx despite her own statement",
-      "craft_total": 6.57,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Ben says 'we're probably due for some good news' \u2014 cut to news anchor starting a sentence that promises good news",
+      "punchline": "The anchor uses a syntactic trick to deliver the exact opposite \u2014 structurally subverts the expectation with a grammar twist",
+      "craft_total": 7.58,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Typical Leslie misdirection of blame away from herself onto Garry",
+      "explanation": "A clever structural subversion \u2014 the anchor literally begins the sentence you expect then uses grammar to negate it. The editing juxtaposition (Ben predicts good news \u2192 immediate cut to this) adds a layer. Original construction, well-executed. The 'is not a sentence I will be saying' construction is genuinely witty writing.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -170,22 +171,22 @@
     },
     {
       "index": 5,
-      "text": "which is just a real cool thing for a public space.",
+      "text": "'Well, you jinxed us, Garry. Thanks a lot.'",
       "characters": [
-        "News Reporter"
+        "Ben"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Mayor's body will lie in state in council chambers",
-      "punchline": "Deadpan sarcastic commentary on having a corpse in public space",
-      "craft_total": 6.77,
+      "setup": "Garry is blamed for the mayor's death because he mentioned bad news comes in threes and tried to count his retirement as one of them",
+      "punchline": "The logical absurdity of blaming Garry for a death is played straight, extending his role as perpetual scapegoat",
+      "craft_total": 6.45,
       "impact_score": 6.33,
-      "quotability": 7.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfectly deadpan delivery about the absurdity of the situation",
+      "is_callback": 1,
+      "explanation": "Functional Garry joke. Blaming him for a death is an escalation of the running gag. Not particularly original but character-integrated and lands because the show has earned this dynamic.",
       "dialogue": [
         {
           "speaker": "News Reporter",
@@ -195,22 +196,22 @@
     },
     {
       "index": 6,
-      "text": "I wasn't paying attention most of the time. Fortunately, the citizens of Pawnee didn't pay attention either. So if there's credit to take, I will humbly take it. And if there is blame... it's your fault.",
+      "text": "Mayor Gunderson's pre-recorded farewell video: 'I wasn't paying attention most of the time. Fortunately, the citizens of Pawnee didn't pay attention either.'",
       "characters": [
         "Mayor Gunderson"
       ],
       "joke_types": [
-        "dark_subversive",
-        "irony_sarcasm"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Dead mayor's final video message to the town",
-      "punchline": "Takes credit for everything good, blames citizens for everything bad",
-      "craft_total": 7.43,
-      "impact_score": 7.67,
-      "quotability": 8.5,
+      "setup": "A solemn posthumous video message from the mayor about his legacy",
+      "punchline": "He admits to complete dereliction of duty, then praises the citizens for also not noticing \u2014 mutual negligence as civic harmony",
+      "craft_total": 7.63,
+      "impact_score": 7.83,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant subversion of typical politician farewell - brutally honest about incompetence and blame-shifting",
+      "explanation": "The posthumous confession structure is inherently funny, but the specific observation \u2014 that citizens not paying attention is a feature, not a bug, of his tenure \u2014 is an incisive satirical point about local government. Good economy and a genuine comic idea.",
       "dialogue": [
         {
           "speaker": "Mayor Gunderson",
@@ -220,22 +221,22 @@
     },
     {
       "index": 7,
-      "text": "I'm realizing I know nothing about the logistics of how to start an underground dance competition, but someone here will.",
+      "text": "'Good-bye forever.'",
       "characters": [
-        "Andy"
+        "Mayor Gunderson"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "deadpan_understatement",
+        "dark_subversive"
       ],
-      "setup": "Andy declares they need something to begin - an underground dance competition",
-      "punchline": "Immediately admits he has no idea how to do it but assumes others do",
-      "craft_total": 7.27,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "A formal posthumous video message ending",
+      "punchline": "'Good-bye forever' \u2014 technically accurate (he's dead) but bluntly comedic in its finality",
+      "craft_total": 7.49,
+      "impact_score": 7.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Andy logic - confidently proposing something he knows nothing about",
+      "explanation": "Brief but effective capper to the Gunderson video. The literalness of 'forever' (since he's dead) combined with the casual delivery makes it land. Maximum economy.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -249,23 +250,22 @@
     },
     {
       "index": 8,
-      "text": "Oh, yeah, you completely disgraced yourself and destroyed an entire town.",
+      "text": "Leslie declares they need something to begin and proposes 'an underground dance competition,' then immediately admits 'I'm realizing I know nothing about the logistics of how to start an underground dance competition'",
       "characters": [
-        "April",
-        "Ben"
+        "Leslie"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "callback"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Ben mentions his previous mayoral experience",
-      "punchline": "April matter-of-factly describes the Ice Town disaster",
-      "craft_total": 7.13,
-      "impact_score": 7.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "April's brutal honesty about Ben's past in her characteristic deadpan style",
+      "setup": "Leslie, in problem-solving mode, announces a bold plan",
+      "punchline": "She immediately walks it back with a total lack of follow-through knowledge \u2014 rare moment of Leslie self-awareness",
+      "craft_total": 6.82,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A small but authentic Leslie character moment. The joke is in the contrast between her confident declaration and immediate admission of ignorance. Works because Leslie's competence is usually unimpeachable.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -279,22 +279,23 @@
     },
     {
       "index": 9,
-      "text": "Les-legally Blonde!",
+      "text": "'Oh, yeah, you completely disgraced yourself and destroyed an entire town.' / 'Yeah, I said we all remember.'",
       "characters": [
-        "Garry"
+        "April",
+        "Ben"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Garry is excited about notarizing a new mayor",
-      "punchline": "Awkward pun combining Leslie's name with Legally Blonde",
-      "craft_total": 5.23,
-      "impact_score": 4.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Garry's enthusiasm leads to a forced pun, which is perfectly in character",
+      "setup": "Ben mentions he was mayor once before and it didn't go well \u2014 'we all remember how that went'",
+      "punchline": "April states the disaster in its full brutal specificity; Ben's deadpan 'yeah, I said we all remember' refuses to engage further",
+      "craft_total": 7.15,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The joke works on two levels: April's brutal specificity ('destroyed an entire town') and Ben's flat refusal to relitigate it. Both are in character. The callback to Ice Town rewards longtime viewers. Ben's deadpan is perfectly calibrated.",
       "dialogue": [
         {
           "speaker": "Gary",
@@ -312,22 +313,22 @@
     },
     {
       "index": 10,
-      "text": "What am I supposed to do with these? Yeah, you're right. I should probably keep them. They're a size 6 1/2. Too small for you anyway.",
+      "text": "Garry being excited that notarizing a new mayor is 'the ultimate notary adventure' \u2014 'Oh, it's big.'",
       "characters": [
-        "Tom"
+        "Garry"
       ],
       "joke_types": [
         "character_comedy",
-        "misdirection"
+        "deadpan_understatement"
       ],
-      "setup": "Tom gives April men's loafers as a gift",
-      "punchline": "Realizes they don't make sense for her, then reveals they're his size anyway",
-      "craft_total": 7.03,
-      "impact_score": 6.67,
+      "setup": "Ben tells Garry he can help find a new mayor. Garry is given the consolation task of notarizing.",
+      "punchline": "Garry receives this with genuine awe \u2014 'the ultimate notary adventure' \u2014 treating a mundane bureaucratic task as a life peak",
+      "craft_total": 7.06,
+      "impact_score": 6.5,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Tom self-centeredness disguised as gift-giving",
+      "explanation": "A well-observed Garry beat \u2014 his genuine enthusiasm for the most mundane possible task is endearing and funny. 'Oh, it's big' as a reaction to notarizing is perfect character comedy.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -353,22 +354,23 @@
     },
     {
       "index": 11,
-      "text": "Shia LaBeouf is one hell of a jewelry designer, by the way. Man's really found his calling.",
+      "text": "Tom greets Leslie with 'Les-legally Blonde!' and presents her with Men's Ferragamo loafers \u2014 'What am I supposed to do with these?' / 'Yeah, you're right. I should probably keep them. They're a size 6 1/2. Too small for you anyway.'",
       "characters": [
-        "Tom"
+        "Tom",
+        "Leslie"
       ],
       "joke_types": [
-        "absurdist",
-        "observational"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Tom mentions looking at rings in jewelry stores",
-      "punchline": "Casually mentions Shia LaBeouf as a jewelry designer",
-      "craft_total": 7.03,
-      "impact_score": 7.0,
-      "quotability": 8.0,
+      "setup": "Tom returns from New York with a gift for Leslie, building anticipation",
+      "punchline": "The gift is men's luxury shoes in his own size \u2014 he immediately reclaims them while insulting her feet",
+      "craft_total": 6.92,
+      "impact_score": 6.67,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Absurd non-sequitur delivered matter-of-factly, perfect Tom randomness",
+      "explanation": "Tom gifting himself while framing it as generosity is perfect Tom character comedy. The 'too small for you anyway' adds insult to injury. 'Les-legally Blonde' is a fun wordplay greeting. Fully character-integrated \u2014 this could only be Tom.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -378,22 +380,22 @@
     },
     {
       "index": 12,
-      "text": "What better place to ask a woman to marry you than an old man's public memorial?",
+      "text": "'Shia LaBeouf is one hell of a jewelry designer, by the way. Man's really found his calling.'",
       "characters": [
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "dark_subversive"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Leslie suggests Tom propose at the memorial",
-      "punchline": "Her own recognition that it's completely inappropriate",
-      "craft_total": 7.55,
-      "impact_score": 7.5,
-      "quotability": 7.5,
+      "setup": "Tom is describing his romantic trip to New York with Lucy, including looking at rings",
+      "punchline": "A completely unexpected name-drop of Shia LaBeouf as a jewelry designer \u2014 presented as sincere praise for his 'calling'",
+      "craft_total": 6.5,
+      "impact_score": 6.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Leslie's enthusiasm overriding social appropriateness, with self-aware irony",
+      "explanation": "The absurdist celebrity name-drop works because it's so specific and delivered with total sincerity. 'Man's really found his calling' as a genuine compliment to Shia LaBeouf the jeweler is a funny idea. Somewhat dependent on the audience's familiarity with LaBeouf's erratic public persona.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -407,22 +409,22 @@
     },
     {
       "index": 13,
-      "text": "Really makes you consider the 'postulence' of time.",
+      "text": "'What better place to ask a woman to marry you than an old man's public memorial?'",
       "characters": [
-        "Andy"
+        "Leslie"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Andy reflects on the mayor's long tenure",
-      "punchline": "Malapropism - 'postulence' instead of 'passage'",
-      "craft_total": 6.77,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Leslie, caught up in romantic momentum, encourages Tom to propose to Lucy right now, at the mayor's memorial",
+      "punchline": "She articulates the absurdity of her own suggestion with cheerful obliviousness",
+      "craft_total": 7.3,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Andy malapropism that sounds almost philosophical",
+      "explanation": "Leslie's romantic enthusiasm overriding basic situational awareness is a classic character beat. The line is self-aware but still feels in character \u2014 she's not joking, she genuinely thinks this might work. The phrase 'old man's public memorial' is a well-chosen specificity.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -432,22 +434,22 @@
     },
     {
       "index": 14,
-      "text": "We're born, we survive as long as we're useful, and then we're killed, either by our body's natural decay or by those younger and stronger.",
+      "text": "Andy uses the word 'postulence' \u2014 'Really makes you consider the postulence of time.'",
       "characters": [
-        "April"
+        "Andy"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "character_comedy",
+        "wordplay_pun"
       ],
-      "setup": "April responds to Andy's reflection on mortality",
-      "punchline": "Brutally clinical description of life and death",
-      "craft_total": 7.4,
-      "impact_score": 7.25,
-      "quotability": 8.0,
+      "setup": "Andy reflects solemnly on Mayor Gunderson's 39-year tenure",
+      "punchline": "'Postulence' \u2014 a nonsense word delivered with complete sincerity, clearly a mangled attempt at 'obsolescence' or 'transience'",
+      "craft_total": 7.68,
+      "impact_score": 7.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Peak April darkness delivered with perfect deadpan timing",
+      "explanation": "Andy's confident use of a made-up word is pure character comedy. The joke is entirely in the delivery \u2014 he has no idea. 'Sure.' as the response (presumably from April or someone) is the perfect deadpan acknowledgment. Fully Andy-specific.",
       "dialogue": [
         {
           "speaker": "April",
@@ -457,22 +459,22 @@
     },
     {
       "index": 15,
-      "text": "Before I die, I'm freezing my head like Ted Williams. Wait a thousand years, thaw it out, slap it on a robot, keep on balling.",
+      "text": "April: 'Death is natural, Andrew. We're born, we survive as long as we're useful, and then we're killed, either by our body's natural decay or by those younger and stronger.'",
       "characters": [
-        "Andy"
+        "April"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Andy responds to April's dark view of death",
-      "punchline": "Elaborate plan involving cryogenics and robot bodies to 'keep on balling'",
-      "craft_total": 7.17,
+      "setup": "A moment of reflection at the mayor's lying in state \u2014 expecting platitudes",
+      "punchline": "April delivers a Darwinian/nihilistic worldview with complete calm, treating murder by younger competitors as a natural death option",
+      "craft_total": 7.56,
       "impact_score": 7.17,
-      "quotability": 8.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Andy's childlike optimism about defeating death through absurd means",
+      "explanation": "Peak April. The pivot from 'natural decay' to 'killed by those younger and stronger' as equivalent options is the comedic turn. Fully character-integrated \u2014 this worldview is 100% April Ludgate. The deadpan delivery implied by the transcript makes it land.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -490,22 +492,22 @@
     },
     {
       "index": 16,
-      "text": "Was he killed by a younger, stronger barber?",
+      "text": "Andy: 'Before I die, I'm freezing my head like Ted Williams. Wait a thousand years, thaw it out, slap it on a robot, keep on balling.'",
       "characters": [
         "Andy"
       ],
       "joke_types": [
-        "callback",
+        "character_comedy",
         "absurdist"
       ],
-      "setup": "Learning about Salvatore's death after April's earlier comment",
-      "punchline": "Andy applies April's survival theory to barbering",
-      "craft_total": 7.67,
-      "impact_score": 7.33,
-      "quotability": 7.5,
+      "setup": "April delivers her grim philosophy about death; Andy responds",
+      "punchline": "Andy's immortality plan is a cascade of absurdity: cryonics \u2192 robot body \u2192 'keep on balling' \u2014 the last phrase being both vague and perfectly Andy",
+      "craft_total": 7.9,
+      "impact_score": 8.17,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Excellent callback that shows Andy was actually listening and processing",
+      "is_callback": 0,
+      "explanation": "Genuinely excellent Andy comedy. The logic has internal consistency (Ted Williams reference is real), but 'slap it on a robot, keep on balling' is the perfect absurdist escalation. 'Keep on balling' as Andy's ultimate life goal is character-perfect. Quotable and specific. One of the episode's best jokes.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -531,22 +533,23 @@
     },
     {
       "index": 17,
-      "text": "Walter Gunderson and his wife had an open marriage. It kept him happy. It kept his wife happy. Hi, Evelyn. And it definitely kept me happy.",
+      "text": "Ron learns mid-conversation that his barber Salvatore has also died \u2014 'What? What happened? Explain yourself!'",
       "characters": [
-        "Ethel Beavers"
+        "Ron",
+        "Carl"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "setup_punchline",
         "escalation"
       ],
-      "setup": "Ethel begins what seems like a normal eulogy",
-      "punchline": "Reveals she was the mayor's longtime affair partner",
-      "craft_total": 7.63,
-      "impact_score": 8.67,
-      "quotability": 7.5,
+      "setup": "Ron stoically attends the mayor's memorial. Carl mentions it's terrible, 'first Salvatore and now Mayor Gunderson.'",
+      "punchline": "Ron is completely blindsided \u2014 he had no idea his barber died, and his reaction ('Explain yourself!') suggests this loss hits harder than the mayor's",
+      "craft_total": 7.81,
+      "impact_score": 8.0,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant subversion of funeral speech expectations with uncomfortable oversharing",
+      "explanation": "Excellent character reveal. Ron's priorities are perfectly calibrated \u2014 he's at a mayoral memorial but the barber death hits him harder. 'Explain yourself!' as a response to news of a death is both funny and revealing. Sets up the entire Salvatore subplot. Strong structure.",
       "dialogue": [
         {
           "speaker": "Ethel Beavers",
@@ -564,22 +567,22 @@
     },
     {
       "index": 18,
-      "text": "Because for 46 wonderful years, he spent night after night exploring every nook and cranny of my body. Grow up, you prudes. We're all adults.",
+      "text": "Andy asks: 'Was he killed by a younger, stronger barber?'",
       "characters": [
-        "Ethel Beavers"
+        "Andy"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Ethel continues her inappropriate eulogy",
-      "punchline": "Graphic sexual details followed by calling the audience prudes",
-      "craft_total": 6.67,
+      "setup": "Ron is devastated to learn his barber died",
+      "punchline": "Andy callbacks April's earlier Darwinian death philosophy and applies it literally to the barber's death",
+      "craft_total": 8.07,
       "impact_score": 8.17,
-      "quotability": 7.0,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Escalates the inappropriateness while defending it, classic cringe comedy",
+      "is_callback": 1,
+      "explanation": "A near-perfect callback. Andy takes April's dark philosophy and applies it with earnest literalness to a barber's death. The specificity ('younger, stronger barber') makes it funnier than a generic callback. Shows Andy actually absorbed what April said without fully understanding it. Economy is superb \u2014 nine words deliver the whole joke. Justifiably one of the episode's best moments.",
       "dialogue": [
         {
           "speaker": "Ethel Beavers",
@@ -589,22 +592,22 @@
     },
     {
       "index": 19,
-      "text": "And not just because he was a dynamite lay.",
+      "text": "Ethel Beavers begins her eulogy: 'I'll be brief. Walter Gunderson and his wife had an open marriage.'",
       "characters": [
         "Ethel Beavers"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "setup_punchline",
+        "cringe_discomfort"
       ],
-      "setup": "Ethel claiming she loved him for more than sex",
-      "punchline": "Immediately undermining that with another sexual reference",
-      "craft_total": 7.15,
-      "impact_score": 7.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Solemn public memorial, Ethel introduced as the mayor's 'longtime friend and coworker.' The preamble is 'This is gonna be so sad.'",
+      "punchline": "'I'll be brief. Walter Gunderson and his wife had an open marriage.' \u2014 the complete tonal whiplash from expected eulogy to revealing a 46-year affair",
+      "craft_total": 8.06,
+      "impact_score": 8.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Continues the pattern but with diminishing returns, relies on shock value",
+      "explanation": "Structurally brilliant. 'I'll be brief' promises mercy; 'Walter Gunderson and his wife had an open marriage' is the exact opposite of brevity in terms of what it opens up. The setup ('longtime friend and coworker') and the foreshadowing ('this is gonna be so sad') make the misdirection complete. Economy of language is exceptional \u2014 the punchline is one sentence that blows up the scene. Standout moment.",
       "dialogue": [
         {
           "speaker": "Ethel Beavers",
@@ -618,22 +621,23 @@
     },
     {
       "index": 20,
-      "text": "And not just because he was a dynamite lay. Good night, you animal.",
+      "text": "Ethel waves to Evelyn in the crowd while delivering the eulogy about the open marriage",
       "characters": [
-        "Ethel Beavers"
+        "Ethel Beavers",
+        "Evelyn"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "visual_gag",
+        "cringe_discomfort"
       ],
-      "setup": "Ethel's final words about loving the mayor",
-      "punchline": "Reduces it to sexual prowess and calls him an animal",
-      "craft_total": 7.37,
-      "impact_score": 7.67,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Ethel is describing the open marriage arrangement that 'kept everyone happy'",
+      "punchline": "She casually waves to Evelyn \u2014 presumably the wife \u2014 mid-revelation, implying they all know each other and are fine with this",
+      "craft_total": 8.08,
+      "impact_score": 8.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect cringe ending to an already inappropriate speech",
+      "explanation": "A visual beat that escalates the absurdity \u2014 the casual 'Hi, Evelyn' wave implies a weirdly functional arrangement that makes the whole thing even funnier. Inferred from 'Hi, Evelyn' in the transcript.",
       "dialogue": [
         {
           "speaker": "Ethel Beavers",
@@ -643,22 +647,22 @@
     },
     {
       "index": 21,
-      "text": "A multiplatform media experience, an action movie with explosive graphics, fast cars, and a hero with one mission-- to propose to his lady. A hero named... Tom Haverford.",
+      "text": "Ethel says 'because for 46 wonderful years, he spent night after night exploring every nook and cranny of my body' \u2014 then breaks the fourth wall slightly: 'Grow up, you prudes. We're all adults.'",
       "characters": [
-        "Tom"
+        "Ethel Beavers"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Leslie asks what Tom wants for his proposal",
-      "punchline": "Elaborate action movie fantasy ending with his own name as hero",
-      "craft_total": 7.2,
-      "impact_score": 7.17,
+      "setup": "Ethel has been escalating the revelation of her 46-year affair with the dead mayor, at his public memorial",
+      "punchline": "'Every nook and cranny' as a euphemism followed by 'grow up, you prudes' \u2014 the elderly woman scolding the audience for being shocked at a funeral",
+      "craft_total": 7.28,
+      "impact_score": 7.83,
       "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Peak Tom grandiosity - turning a proposal into a blockbuster starring himself",
+      "explanation": "The phrase 'nook and cranny' is a perfectly calibrated euphemism \u2014 explicit enough to be uncomfortable, vague enough for broadcast. 'Grow up, you prudes' flips the dynamic so Ethel becomes the judging party. The moral authority she claims while saying this is the comic engine.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -672,22 +676,22 @@
     },
     {
       "index": 22,
-      "text": "Over the past 15 years, I have spent nearly $100,000 at your banner store. My credit card company called me about it. Not to question the charges but to sincerely ask me if I was mentally stable.",
+      "text": "'And not just because he was a dynamite lay. Good night, you animal.'",
       "characters": [
-        "Leslie"
+        "Ethel Beavers"
       ],
       "joke_types": [
         "escalation",
-        "character_comedy"
+        "cringe_discomfort"
       ],
-      "setup": "Leslie needs a banner urgently and threatens the banner maker",
-      "punchline": "Reveals her obsessive banner spending triggered mental health concern",
-      "craft_total": 7.87,
-      "impact_score": 8.33,
+      "setup": "Ethel says her one regret is not telling him how she really felt \u2014 then says 'I loved that man.'",
+      "punchline": "She immediately qualifies the love with 'not just because he was a dynamite lay' \u2014 then closes with 'Good night, you animal' as her tender farewell",
+      "craft_total": 8.34,
+      "impact_score": 9.0,
       "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant escalation that reveals Leslie's obsessiveness while being completely believable",
+      "explanation": "The episode's comedic peak. 'Dynamite lay' is the perfectly chosen period slang \u2014 specific, character-appropriate for an older woman, and just crass enough. 'Good night, you animal' as a tender eulogy closer is genuinely brilliant writing \u2014 it's simultaneously affectionate and explicit, and the phrase 'you animal' at a public memorial is the perfect button. Highly quotable. This line alone justifies Ethel's character existence.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -713,22 +717,22 @@
     },
     {
       "index": 23,
-      "text": "Oh. What was that thing we ran for again? City councilor. I don't know. All right, if you say so. I tell you, it's so hard to remember boring stuff like that.",
+      "text": "Tom describes his ideal proposal as 'a multiplatform media experience, an action movie with explosive graphics, fast cars, and a hero with one mission \u2014 to propose to his lady. A hero named... Tom Haverford.'",
       "characters": [
-        "Bobby Newport"
+        "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "absurdist"
       ],
-      "setup": "Bobby asks how Leslie is doing",
-      "punchline": "Can't remember what office they ran for, dismisses it as boring",
-      "craft_total": 6.9,
-      "impact_score": 6.83,
+      "setup": "Leslie urges Tom to propose, asking what he wants to do",
+      "punchline": "Tom's ideal proposal is a Hollywood action movie starring himself \u2014 his vanity extended to the most intimate moment",
+      "craft_total": 7.36,
+      "impact_score": 7.17,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect Bobby Newport obliviousness to important political events",
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Tom wanting to be the hero of his own cinematic proposal is perfectly in character. The dramatic pause before 'Tom Haverford' as the hero's name is a strong structural beat. His self-mythologizing has never been more absurdly articulated.",
       "dialogue": [
         {
           "speaker": "Bobby Newport",
@@ -746,22 +750,22 @@
     },
     {
       "index": 24,
-      "text": "Yeah, 'cause I'm getting ready to go on a big trip, to space. That'll be really fun too. Everything in life is always just so fun, right?",
+      "text": "Tom on the phone: 'If you can't train 200 white doves in the next four hours to spell out \"Lucy, will you marry me?\" then you have no business calling yourself a pet store.'",
       "characters": [
-        "Bobby Newport"
+        "Tom"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Bobby explains why he can't be mayor",
-      "punchline": "Casually mentions space travel like it's a vacation",
-      "craft_total": 7.43,
-      "impact_score": 7.17,
-      "quotability": 7.0,
+      "setup": "Tom is executing his elaborate proposal plan",
+      "punchline": "Demanding that a pet store train 200 doves to spell out words in four hours, framed as a basic professional competency",
+      "craft_total": 7.36,
+      "impact_score": 7.0,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Bobby's wealth making space tourism seem as casual as a weekend trip",
+      "explanation": "The logic is perfectly Tom \u2014 the outrage isn't that doves can't spell, but that the pet store isn't up to the task. 'No business calling yourself a pet store' as a professional critique of an impossible request is a well-constructed absurdist line.",
       "dialogue": [
         {
           "speaker": "Bobby Newport",
@@ -771,23 +775,22 @@
     },
     {
       "index": 25,
-      "text": "I've already been to space. I was the second person to walk on the moon. Buzz Aldrin. Nice to meet you. Nice try. That's the guy from Toy Story.",
+      "text": "Leslie explains to the banner store owner that her credit card company called \u2014 'not to question the charges but to sincerely ask me if I was mentally stable'",
       "characters": [
-        "Andy",
-        "Bobby Newport"
+        "Leslie"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Bobby mentions space travel",
-      "punchline": "Andy claims to be Buzz Aldrin, Bobby thinks that's the Toy Story character",
-      "craft_total": 7.0,
-      "impact_score": 6.83,
-      "quotability": 7.5,
+      "setup": "Leslie is leveraging her 15 years of banner orders and $100,000 spent to get a last-minute favor",
+      "punchline": "Her spending is so extreme that her credit card company called not for fraud concerns but for mental health concerns",
+      "craft_total": 7.73,
+      "impact_score": 7.5,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect collision of Andy's fantasy and Bobby's pop culture confusion",
+      "explanation": "This is sharp, economical character comedy. The twist \u2014 the call is about mental stability, not fraud \u2014 recontextualizes the banner obsession as something even more extreme than financial recklessness. Fully character-specific to Leslie. The pivot from 'not to question the charges' to the real reason is a clean misdirection. Quotable.",
       "dialogue": [
         {
           "speaker": "Bobby Newport",
@@ -805,22 +808,22 @@
     },
     {
       "index": 26,
-      "text": "I sat in the same chair. Salvatore put the same cape over me. Then he'd always ask me about the same thing... nothing. It was perfect.",
+      "text": "'See that Rolex Submariner on your wrist, bro? That's 'cause of Leslie. You'll have the banner done.'",
       "characters": [
-        "Ron"
+        "Leslie"
       ],
       "joke_types": [
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Ron describes his routine with his barber",
-      "punchline": "The perfect conversation was about nothing at all",
-      "craft_total": 8.27,
-      "impact_score": 7.83,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Leslie is negotiating with the banner store owner who says the order is impossible",
+      "punchline": "She points to his luxury watch as direct evidence of their relationship's value \u2014 a mob-adjacent negotiation tactic from Leslie Knope",
+      "craft_total": 7.4,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ron Swanson moment - finding perfection in the absence of small talk",
+      "explanation": "Leslie leveraging her banner spending as power is funny \u2014 the Rolex as proof of their transactional relationship casts Leslie as an unlikely power player. 'Bro' from Leslie is also a small comedy tick.",
       "dialogue": [
         {
           "speaker": "Ron Swanson",
@@ -830,22 +833,24 @@
     },
     {
       "index": 27,
-      "text": "As you know, I don't believe in tipping, so I will collect my change from your wife.",
+      "text": "Bobby Newport can't remember what office Leslie ran for: 'How's Leslie? Is she still, um... uh... Oh. What was that thing we ran for again?' / 'City councilor.' / 'I don't know. All right, if you say so.'",
       "characters": [
-        "Ron"
+        "Bobby Newport",
+        "April",
+        "Ben"
       ],
       "joke_types": [
         "character_comedy",
-        "deadpan_understatement"
+        "callback"
       ],
-      "setup": "Ron pays for his haircut with a ten-dollar bill",
-      "punchline": "Will collect change from the barber's widow",
-      "craft_total": 7.97,
-      "impact_score": 8.17,
-      "quotability": 9.0,
+      "setup": "Ben and April meet with potential mayor candidates. Bobby Newport, Leslie's old rival, appears.",
+      "punchline": "He can't remember what office they both ran for \u2014 and shrugs off the answer when told",
+      "craft_total": 7.32,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant dark comedy combining Ron's cheapness with funeral inappropriate timing",
+      "is_callback": 1,
+      "explanation": "Perfect Bobby Newport character consistency. His cluelessness about the very election he ran in is both funny and a precise character reminder for returning viewers. 'I don't know. All right, if you say so.' is the ideal capstone \u2014 he doesn't even accept the answer with certainty.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -855,22 +860,23 @@
     },
     {
       "index": 28,
-      "text": "What am I supposed to be, some kind or rock star?",
+      "text": "Bobby Newport: 'I can't do it, though... I'm getting ready to go on a big trip, to space.' / 'That'll be really fun too.' / 'Everything in life is always just so fun, right?' / 'It really is.'",
       "characters": [
-        "Ron"
+        "Bobby Newport",
+        "Ben"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "absurdist"
       ],
-      "setup": "Ron's hair is slightly disheveled after missing his appointment",
-      "punchline": "Considers this wildly unkempt like a rock star",
+      "setup": "Ben asks Bobby to be interim mayor for two months \u2014 a low-stakes civic duty",
+      "punchline": "Bobby can't do it because he's going to space \u2014 said with zero irony, and Ben's earnest validation ('That'll be really fun too') is the comedy",
       "craft_total": 7.45,
-      "impact_score": 7.25,
-      "quotability": 7.5,
+      "impact_score": 7.17,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Ron's conservative appearance standards making slight messiness seem wild",
+      "explanation": "Bobby's offhand 'I'm going to space' and Ben's polite 'that'll be really fun too' creates a perfect comedic rhythm of two people with completely different reference frames agreeing cordially. 'Everything in life is always just so fun' as Bobby's worldview is a great character note.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -880,22 +886,23 @@
     },
     {
       "index": 29,
-      "text": "I came up with a backstory for my character. She's married to a French billionaire, and she has a twin sister, identical, and they keep-- Leslie, you have one line.",
+      "text": "Bobby Newport: 'Everything in life is always just so fun, right?' \u2014 then inviting Ben to space, pitching the Russian rocket guys as 'cool with it'",
       "characters": [
-        "Leslie"
+        "Bobby Newport",
+        "Ben"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "absurdist"
       ],
-      "setup": "Leslie is doing an accent in Tom's proposal video",
-      "punchline": "Created elaborate backstory for a one-line role",
-      "craft_total": 7.4,
+      "setup": "Bobby is musing about how fun everything is",
+      "punchline": "He casually invites Ben to join him in space and assures him the Russian rocket engineers would be 'cool with it' \u2014 as if it's an Airbnb situation",
+      "craft_total": 7.65,
       "impact_score": 7.5,
-      "quotability": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Leslie over-preparation for the tiniest role",
+      "explanation": "The 'Russian guys would be cool with it' framing is funny \u2014 treating a billion-dollar space program as if it's a casual carpool. Bobby's sunny obliviousness continues to pay off.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -905,24 +912,23 @@
     },
     {
       "index": 30,
-      "text": "Ah, zut alors! - Get 'em, boys! - Freeze! Stunt double.",
+      "text": "Buzz Aldrin appears and says 'I was the second person to walk on the moon. Buzz Aldrin. Nice to meet you.' / 'Nice try. That's the guy from Toy Story.'",
       "characters": [
-        "Leslie",
-        "Jean-Ralphio",
-        "stunt performer"
+        "Buzz Aldrin",
+        "Bobby Newport"
       ],
       "joke_types": [
-        "absurdist",
-        "visual_gag"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Tom's action movie proposal scene",
-      "punchline": "Leslie's terrible French accent and immediate stunt double replacement",
-      "craft_total": 6.6,
-      "impact_score": 6.25,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Buzz Aldrin introduces himself as the second person to walk on the moon",
+      "punchline": "Bobby Newport dismisses him as the cartoon character Buzz Lightyear, having no idea who Buzz Aldrin is",
+      "craft_total": 7.99,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Physical comedy and Leslie's overcommitment to the French jewelry store owner character",
+      "explanation": "Brilliant deployment of a celebrity cameo. Buzz Aldrin's presence is already fun, but Bobby dismissing him as 'the guy from Toy Story' is a perfect encapsulation of Bobby's privileged ignorance. The specificity of 'Nice try' \u2014 as if Aldrin is an impostor \u2014 makes it even better. Highly quotable. The joke works on multiple levels: celebrity cameo, character comedy, and cultural commentary.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -944,22 +950,22 @@
     },
     {
       "index": 31,
-      "text": "Lucy, your mission, should you choose to accept it, is to marry me.",
+      "text": "Ron's tribute to Salvatore: the entire relationship described as 'Same exact thing every time. I paid him $8. I sat in the same chair... Then he'd always ask me about the same thing... nothing. It was perfect.'",
       "characters": [
-        "Tom"
+        "Ron"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Elaborate action movie proposal setup",
-      "punchline": "Mission Impossible reference for marriage proposal",
-      "craft_total": 7.1,
-      "impact_score": 6.83,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "People ask if Ron was close with his barber Salvatore",
+      "punchline": "Ron describes four decades of a relationship defined by absolute silence and routine \u2014 'he'd always ask me about... nothing. It was perfect.'",
+      "craft_total": 8.13,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Decent pop culture reference that fits the action movie theme",
+      "explanation": "One of the episode's best jokes. The buildup to 'he'd always ask me about...' with a pause before 'nothing' is a masterclass in comedic timing on the page. 'It was perfect' as the sincere conclusion captures Ron's character completely \u2014 a 40-year relationship of mutual silence as the ideal human connection. Character integration is as high as it gets. Fully earned, no cheap shortcuts.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -969,22 +975,22 @@
     },
     {
       "index": 32,
-      "text": "No, it wasn't. You just destroyed my case.",
+      "text": "Ron's confessional: 'The three most important people in a man's life are his barber, his butcher, and his lover. I have lost one of those.'",
       "characters": [
-        "Ted"
+        "Ron"
       ],
       "joke_types": [
-        "reaction_beat",
-        "cringe_discomfort"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie enthusiastically praises the action sequence",
-      "punchline": "Jewelry store owner horrified about his destroyed merchandise",
-      "craft_total": 6.6,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Ron grieves the loss of his barber in a talking-head confessional",
+      "punchline": "He lists three life pillars \u2014 then 'I have lost one of those' is deliberately ambiguous: is it the barber, butcher, or lover? (Context tells us it's the barber, which is the funny answer.)",
+      "craft_total": 8.18,
+      "impact_score": 8.0,
+      "quotability": 8.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Reality check on the consequences of the 'movie' filming",
+      "explanation": "Philosophically concise and perfectly Ron. Elevating a barber to the same status as a lover is the comic engine, and the spare 'I have lost one of those' \u2014 without specifying which \u2014 is excellent economy. The ambiguity is intentional and funny. Highly quotable and character-defining.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -998,23 +1004,22 @@
     },
     {
       "index": 33,
-      "text": "Really? So you were born in the 1990s? Ooh! Mmhmm.",
+      "text": "Ron leaves $10 at the barber's coffin: 'As you know, I don't believe in tipping, so I will collect my change from your wife.'",
       "characters": [
-        "April",
-        "Ben"
+        "Ron"
       ],
       "joke_types": [
-        "reaction_beat",
-        "cringe_discomfort"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Bobby reveals he's only 27 years old",
-      "punchline": "April and Ben's horrified realization about how young Bobby is",
-      "craft_total": 7.33,
-      "impact_score": 7.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Ron pays his respects at Salvatore's coffin, leaving money",
+      "punchline": "He clarifies he'll collect the $2 change from the widow \u2014 his no-tipping principle observed even at a funeral",
+      "craft_total": 8.29,
+      "impact_score": 8.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Visual comedy of adults realizing they're talking to someone born so recently",
+      "explanation": "This is among the episode's very best jokes. The logic is airtight Ron Swanson: he pays the barber's established $8 rate, leaves $10 out of respect, but his anti-tipping principle means he must collect change \u2014 from the grieving widow, at a funeral. The 'As you know' addressing the corpse is also brilliant. Every element is character-specific, dark without being mean-spirited, and delivered with perfect economy. Comparable to top-tier Ron moments in the series.",
       "dialogue": [
         {
           "speaker": "April",
@@ -1036,22 +1041,22 @@
     },
     {
       "index": 34,
-      "text": "Money, please! Money, please. My money, please?",
+      "text": "Ron's talking-head: 'Look how raggedy my hair is. What am I supposed to be, some kind of rock star?'",
       "characters": [
-        "Mona-Lisa"
+        "Ron"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "deadpan_understatement"
       ],
-      "setup": "Mona-Lisa realizes there's no payment for her performance",
-      "punchline": "Increasingly demanding requests for money",
-      "craft_total": 6.57,
-      "impact_score": 6.33,
-      "quotability": 6.5,
+      "setup": "Ron has a scheduled haircut appointment that can't be kept because Salvatore is dead",
+      "punchline": "Ron is distressed about his hair being slightly unkempt, describing it as 'raggedy' and implying that's only acceptable for rock stars",
+      "craft_total": 7.51,
+      "impact_score": 7.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Mona-Lisa's entitled behavior escalating in typical fashion",
+      "explanation": "Ron's vanity about his conservative, unchanged hair is a good character detail. The rock star comparison as the only acceptable alternative to his precise look is funny. Efficient and character-integrated.",
       "dialogue": [
         {
           "speaker": "Mona-Lisa Saperstein",
@@ -1073,22 +1078,23 @@
     },
     {
       "index": 35,
-      "text": "And some gross things with those juicy city hall interns. Ga-ga-goink!",
+      "text": "Leslie shows up as a character in Tom's proposal movie with an elaborate French backstory \u2014 'I came up with a backstory for my character. She's married to a French billionaire, and she has a twin sister, identical, and they keep\u2014' / 'Leslie, you have one line.'",
       "characters": [
-        "The Douche"
+        "Leslie",
+        "Tom"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "The Douche talks about his mayoral plans",
-      "punchline": "Inappropriate sexual comment with sound effect",
-      "craft_total": 6.1,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Tom has given Leslie a simple cameo role in his proposal video",
+      "punchline": "Leslie has fully committed to an elaborate character with French accent, billionaire husband, and an identical twin \u2014 for a one-line role",
+      "craft_total": 7.09,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Predictable inappropriate behavior from The Douche character",
+      "explanation": "Leslie's over-commitment to a bit is a reliable comedic vein. The escalation of the backstory (French, billionaire, identical twin, 'and they keep\u2014') before being cut off is a well-timed comedic truncation. Character-specific: Leslie always does too much.",
       "dialogue": [
         {
           "speaker": "The Douche",
@@ -1098,22 +1104,24 @@
     },
     {
       "index": 36,
-      "text": "Ugh. Being nice made me feel terrible.",
+      "text": "The action movie proposal scene: Leslie breaks character to explain her French billionaire backstory with a twin sister",
       "characters": [
-        "April"
+        "Leslie",
+        "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "deadpan_understatement"
+        "absurdist",
+        "escalation"
       ],
-      "setup": "April gives Ben genuine advice about being mayor",
-      "punchline": "Physical discomfort from acting nice",
-      "craft_total": 7.85,
-      "impact_score": 7.75,
-      "quotability": 8.0,
+      "setup": "Tom is filming an action movie proposal. Leslie plays a jewelry store clerk with one line.",
+      "punchline": "'Why are you doing an accent?' 'I came up with a backstory for my character. She's married to a French billionaire, and she has a twin sister, identical, and they keep\u2014' 'Leslie, you have one line.'",
+      "craft_total": 7.48,
+      "impact_score": 7.25,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect April character moment - being nice literally hurts her",
+      "explanation": "Leslie's over-commitment to a minor role \u2014 complete with French accent and elaborate backstory cut off mid-sentence \u2014 is wonderful character work. She is constitutionally incapable of being a supporting player in anything. The escalation of 'twin sister, identical, and they keep\u2014' being interrupted is a great truncated escalation gag.",
       "dialogue": [
         {
           "speaker": "April",
@@ -1123,42 +1131,42 @@
     },
     {
       "index": 37,
-      "text": "I'm gonna turn the mayoral office into my oral office. Boom! Thought of it a second ago, had to pop back in. Had to.",
+      "text": "The film shoots a scene with 'stunt double' chaos, with Tom yelling 'Go, my puppets! Go, my puppets! / Fight, fight, my puppets!' while confused crew members execute his commands",
       "characters": [
-        "The Douche"
+        "Tom",
+        "Stunt doubles"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "cringe_discomfort"
+        "physical_slapstick",
+        "absurdist"
       ],
-      "setup": "The Douche returns with a new idea",
-      "punchline": "Crude pun about oral sex in the mayor's office",
-      "craft_total": 5.27,
-      "impact_score": 5.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Cheap wordplay that's in character but not particularly clever"
-    },
-    {
-      "index": 38,
-      "text": "No, that's not it. Are you in my Frisbee golf league? Oh, yeah. I play for the Super Spinners. Oh, I'm on the Frisbee Champs. I named us.",
-      "characters": [
-        "Andy",
-        "Jeremy Jamm"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Andy trying to place Jeremy Jamm",
-      "punchline": "Reveals they're in the same frisbee league with terrible team names",
-      "craft_total": 6.53,
-      "impact_score": 6.33,
+      "setup": "Tom is directing an action sequence for his proposal video with apparent stunt doubles",
+      "punchline": "'Go, my puppets!' repeated as a directorial command \u2014 Tom treating people as marionettes while pretending to be a serious action director",
+      "craft_total": 7.1,
+      "impact_score": 7.0,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Andy's simple naming convention reveals his innocent approach to competition",
+      "explanation": "Primarily a visual comedy sequence. The 'Go, my puppets!' line works as a character beat \u2014 Tom's grandiosity \u2014 but the humor is largely dependent on what the audience sees (inferred from context). Functional, fun, but not the sharpest writing in the episode."
+    },
+    {
+      "index": 38,
+      "text": "Tom's action movie climax \u2014 he narrates to Lucy over the video: 'Lucy, your mission, should you choose to accept it, is to marry me.'",
+      "characters": [
+        "Tom"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "The elaborate action movie proposal has been building",
+      "punchline": "The Mission: Impossible-style line applied to a marriage proposal \u2014 grandiose genre applied to a personal moment",
+      "craft_total": 7.26,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Mission: Impossible parody applied to a marriage proposal is a recognizable but well-executed joke. Not the most original concept, but executed with Tom-appropriate commitment.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1180,22 +1188,23 @@
     },
     {
       "index": 39,
-      "text": "This is from the Isle of Islay in Scotland. This is as Eastern as my wisdom gets.",
+      "text": "After the proposal video, the jewelry store owner Ted says 'No, it wasn't [amazing]. You just destroyed my case.' / Tom: 'Hey, it's the movie business, Ted. You knew the risks.'",
       "characters": [
-        "Ron"
+        "Tom",
+        "Ted"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Jamm suggests turning to Eastern wisdom",
-      "punchline": "Ron offers Scottish whisky as his version of Eastern wisdom",
-      "craft_total": 7.95,
-      "impact_score": 7.25,
-      "quotability": 8.0,
+      "setup": "Tom has just filmed an action sequence in a jewelry store, apparently breaking merchandise",
+      "punchline": "Tom treats the destruction of Ted's inventory as an accepted occupational hazard of being adjacent to Hollywood",
+      "craft_total": 7.27,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ron line - dismisses philosophy for pragmatic alcohol solution with geographical precision",
+      "explanation": "'You knew the risks' as a response to destroying someone's livelihood for a personal proposal video is perfectly Tom \u2014 his self-absorption is so complete he's reframed a jewelry store owner as a Hollywood player who accepted risk.",
       "dialogue": [
         {
           "speaker": "Jeremy Jamm",
@@ -1209,22 +1218,23 @@
     },
     {
       "index": 40,
-      "text": "Whenever my hair feels it has completed its journey, it simply sheds itself off.",
+      "text": "Ben meets a very young mayoral candidate who says 'You should be President of the universe' / 'I really would make an incredible mayor. But, sadly, I cannot, because I'm only 27 years old.' / 'Really? So you were born in the 1990s?' / 'Ooh! Mmhmm.'",
       "characters": [
-        "Jeremy Jamm"
+        "Ben",
+        "Young candidate"
       ],
       "joke_types": [
-        "absurdist",
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Jamm asked about who cuts his hair",
-      "punchline": "Mystical explanation for natural hair shedding",
-      "craft_total": 7.57,
-      "impact_score": 7.33,
-      "quotability": 8.5,
+      "setup": "A seemingly promising candidate is enthusiastic about being mayor",
+      "punchline": "He's too young by law, and Ben's response ('So you were born in the 1990s?') \u2014 delivered as a dawning horror \u2014 gets a gleeful 'Mmhmm' from the candidate who treats his youth as charming",
+      "craft_total": 6.17,
+      "impact_score": 5.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfectly weird Jamm pseudo-spirituality about basic biology",
+      "explanation": "A solid observational joke about generational divide. Ben's existential horror at someone born in the 1990s is relatable. Not particularly original but the candidate's delighted 'Mmhmm' as a response is a good character beat.",
       "dialogue": [
         {
           "speaker": "Jeremy Jamm",
@@ -1234,23 +1244,22 @@
     },
     {
       "index": 41,
-      "text": "I hate you so much. And I love you, my brother.",
+      "text": "Another candidate declines because of 'my practice, my other businesses, my two terrible children'",
       "characters": [
-        "Ron",
-        "Jeremy Jamm"
+        "Unnamed candidate"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Ron and Jamm's ongoing antagonism",
-      "punchline": "Jamm responds to hatred with love",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Candidate listing reasons she can't be mayor",
+      "punchline": "'My two terrible children' listed flatly alongside professional obligations \u2014 casual parental honesty",
+      "craft_total": 6.2,
+      "impact_score": 5.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect contrast between Ron's directness and Jamm's oblivious positivity",
+      "explanation": "A small but clean joke. The candor of 'terrible' as a parental descriptor lands in the deadpan \u2014 it's the kind of honest admission that gets a genuine laugh. Brief and economical.",
       "dialogue": [
         {
           "speaker": "Jeremy Jamm",
@@ -1264,23 +1273,23 @@
     },
     {
       "index": 42,
-      "text": "Hey, it's pizza time. And you've lost it.",
+      "text": "The Douche (a shock-jock DJ) enters and immediately says 'I'm gonna turn the mayoral office into my oral office.' / 'What?' / 'My oral office! Boom! Thought of it a second ago, had to pop back in. Had to?'",
       "characters": [
-        "April",
-        "Tom"
+        "The Douche",
+        "Ben"
       ],
       "joke_types": [
-        "character_comedy",
-        "reaction_beat"
+        "wordplay_pun",
+        "character_comedy"
       ],
-      "setup": "April getting excited about being called cool",
-      "punchline": "Her immediate return to awkwardness and Tom's recognition of it",
-      "craft_total": 7.7,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "The Douche is being considered for interim mayor and seems more qualified than expected",
+      "punchline": "He has already figured out his inaugural pun \u2014 'oral office' for 'Oval Office' \u2014 and is so proud he returns just to deliver it",
+      "craft_total": 7.11,
+      "impact_score": 7.17,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good follow-up showing April's inability to handle compliments gracefully",
+      "explanation": "The joke isn't the pun itself but the character behavior: he leaves, thinks of it, comes back. 'Had to pop back in. Had to?' as a self-interrogating acknowledgment that he didn't have to but the pun compelled him is very funny character writing. The Douche is perfectly deployed.",
       "dialogue": [
         {
           "speaker": "April",
@@ -1302,22 +1311,22 @@
     },
     {
       "index": 43,
-      "text": "I'm a cool dudette. Hey, it's pizza time.",
+      "text": "The Douche's daughter performs a John Mayer impression: 'Daddy, someone set a fire in your car / Because you took too long and I got bored'",
       "characters": [
-        "April"
+        "The Douche's Daughter"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "absurdist"
       ],
-      "setup": "April trying to accept Tom's compliment about being cool",
-      "punchline": "Overcorrects with cringey slang",
-      "craft_total": 7.1,
-      "impact_score": 6.67,
-      "quotability": 6.5,
+      "setup": "The Douche mentions his daughter is with him; she appears and announces she will 'do John Mayer'",
+      "punchline": "Her John Mayer impression is a child singing about arson in an adult's car, framed as singer-songwriter blues",
+      "craft_total": 7.45,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "April's discomfort with compliments leading to awkward overcompensation",
+      "explanation": "A child singing about setting her father's car on fire in the style of John Mayer is delightfully specific. The genre choice (mellow singer-songwriter confessional) for arson is the comedy. Inventive.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -1331,22 +1340,22 @@
     },
     {
       "index": 44,
-      "text": "No, no, no, that's just me looking out for you. See, girls get mad horny when you propose. That's why I do it all the time.",
+      "text": "The Douche makes his case: 'I went to Northwestern, I've worked on two political campaigns, and I spend all of my time communicating with the public.' Then immediately adds: 'And some gross things with those juicy city hall interns. Ga-ga-goink!'",
       "characters": [
-        "Jean-Ralphio"
+        "The Douche"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Tom didn't ask for flavored condoms",
-      "punchline": "Jean-Ralphio's logic about proposals and his frequent proposing",
-      "craft_total": 7.0,
-      "impact_score": 6.67,
+      "setup": "The Douche is making a surprisingly compelling case for why he'd be a good mayor",
+      "punchline": "The self-sabotage is immediate \u2014 'and some gross things with those juicy city hall interns' plus the sound effect 'Ga-ga-goink' \u2014 he can't help himself",
+      "craft_total": 7.46,
+      "impact_score": 7.33,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Jean-Ralphio inappropriate advice with warped logic",
+      "explanation": "The structure is the joke: competent political resume followed instantly by disqualifying behavior he can't suppress. The sound effect 'Ga-ga-goink' as a self-authored punctuation mark is character-specific absurdism. The setup/subversion structure is clean.",
       "dialogue": [
         {
           "speaker": "Jean-Ralphio",
@@ -1356,22 +1365,22 @@
     },
     {
       "index": 45,
-      "text": "I spent so long trying to forget about Ice Town, but it's part of my life. I mean, it set me on this path. It led me to Pawnee, to my job, to Leslie. I like that Ice Town happened, and I don't want to erase it.",
+      "text": "April tells Ben he should be mayor, then says: 'Ugh. Being nice made me feel terrible.'",
       "characters": [
-        "Ben"
+        "April"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "deadpan_understatement"
       ],
-      "setup": "Ben about to become mayor and erase Ice Town shame",
-      "punchline": "Realizes Ice Town was actually a good thing in his life",
-      "craft_total": 7.75,
-      "impact_score": 7.25,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Genuine character growth moment that recontextualizes Ben's biggest shame",
+      "setup": "April gives Ben a genuine, heartfelt argument for why he should be mayor",
+      "punchline": "Her immediate, physical revulsion at having been nice is the payoff \u2014 sincerity as something she has to recover from",
+      "craft_total": 7.78,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Seven words of perfect April. The economy is exceptional \u2014 she articulates her discomfort with kindness more precisely than most characters could in a paragraph. The line captures April's entire character arc in a single complaint. Highly quotable and fully character-integrated.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1389,23 +1398,23 @@
     },
     {
       "index": 46,
-      "text": "Garry Gergich, how would you like to be the next mayor of Pawnee, Indiana? No!",
+      "text": "Ron confesses he's never been a fan of change. An unnamed stranger responds: 'In my experience, the only constant is change.' / Ron: 'Oh, shit.'",
       "characters": [
-        "Ben",
-        "Garry"
+        "Ron",
+        "Dennis Feinstein / unnamed man"
       ],
       "joke_types": [
         "setup_punchline",
-        "reaction_beat"
+        "character_comedy"
       ],
-      "setup": "Ben offers Garry the mayor position",
-      "punchline": "Garry's immediate horrified rejection",
-      "craft_total": 7.5,
-      "impact_score": 7.67,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Ron is having a moment of genuine vulnerability about change and loss",
+      "punchline": "A stranger delivers the most banal philosophical clich\u00e9 \u2014 and Ron's reaction ('Oh, shit') suggests it lands on him as profound wisdom he's never considered",
+      "craft_total": 7.65,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect setup and payoff with Garry's characteristic self-doubt",
+      "explanation": "The joke is Ron being hit hard by a greeting-card platitude. His 'Oh, shit' \u2014 implying it's a revelation \u2014 is funny because it recontextualizes the most tired saying in the world as genuinely affecting him. Works because we understand Ron as someone who avoids this kind of wisdom, so encountering it unexpectedly lands.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1419,22 +1428,23 @@
     },
     {
       "index": 47,
-      "text": "So what's your story again? I mean, like, how married are you? You down to clown? You in that rude mood?",
+      "text": "Ron asks the stranger if they've met; stranger says 'our souls have collided in one lifetime or another.' Ron: 'No, that's not it. Are you in my Frisbee golf league?'",
       "characters": [
-        "Mona-Lisa"
+        "Ron",
+        "Unnamed man"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "deadpan_understatement"
       ],
-      "setup": "Mona-Lisa hitting on the newly engaged Tom",
-      "punchline": "Crude and inappropriate pickup lines",
-      "craft_total": 7.03,
-      "impact_score": 7.17,
+      "setup": "A mystical stranger offers a spiritual explanation for their connection",
+      "punchline": "Ron rejects the spiritual explanation and offers the most mundane alternative: Frisbee golf",
+      "craft_total": 7.63,
+      "impact_score": 7.25,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Mona-Lisa inappropriate behavior at the worst possible time",
+      "explanation": "Ron deflating mysticism with Frisbee golf is a character-perfect move. The specificity of the Frisbee golf league is better than any generic alternative. He's not being dismissive; he's being practically Ron \u2014 he actually wants to place the guy.",
       "dialogue": [
         {
           "speaker": "Mona-Lisa Saperstein",
@@ -1456,41 +1466,43 @@
     },
     {
       "index": 48,
-      "text": "I'm writing an electronic opera about Brittany Murphy, and I do the chandelier design for my friend's drag puppet show.",
+      "text": "The mysterious stranger offers Ron 'Eastern wisdom' from 'the Isle of Islay in Scotland' \u2014 handing him a Scotch whisky.",
       "characters": [
-        "Typhoon"
+        "Unnamed man",
+        "Ron"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "deadpan_understatement"
+      ],
+      "setup": "'I've found it's best to turn to Eastern wisdom' \u2014 implying philosophy or meditation",
+      "punchline": "He produces a bottle of Islay Scotch \u2014 'this is as Eastern as my wisdom gets'",
+      "craft_total": 7.71,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'This is as Eastern as my wisdom gets' is a very clean misdirection payoff. The setup primes you for philosophy; the punchline reframes geography humorously. Also perfect for Ron, who would genuinely accept this as wisdom. The line is quotable on its own."
+    },
+    {
+      "index": 49,
+      "text": "Ron asks who cuts the stranger's hair; stranger replies: 'Nobody. Whenever my hair feels it has completed its journey, it simply sheds itself off.' / 'I hate you so much.' / 'And I love you, my brother.'",
+      "characters": [
+        "Ron",
+        "Unnamed man"
       ],
       "joke_types": [
         "absurdist",
         "character_comedy"
       ],
-      "setup": "Ron asks Typhoon what he likes to do",
-      "punchline": "Extremely specific and bizarre artistic pursuits",
-      "craft_total": 7.5,
-      "impact_score": 7.33,
-      "quotability": 8.5,
+      "setup": "Ron needs a new barber and asks the mystical stranger who cuts his hair",
+      "punchline": "The stranger delivers a transcendental explanation for hair loss disguised as intentional; Ron's hatred is the sincere punchline",
+      "craft_total": 8.24,
+      "impact_score": 8.17,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliantly specific hipster artist activities that sound completely made up"
-    },
-    {
-      "index": 49,
-      "text": "I'm writing an electronic opera about Brittany Murphy, and I do the chandelier design for my friend's drag puppet show.",
-      "characters": [
-        "Typhoon"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Ron asking what Typhoon does for fun",
-      "punchline": "Completely absurd artistic pursuits delivered matter-of-factly",
-      "craft_total": 7.65,
-      "impact_score": 7.75,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliantly specific and absurd artistic pretensions, perfectly quotable weirdness",
+      "explanation": "'It simply sheds itself off' as a mystical reframing of baldness is inventive. Ron's 'I hate you so much' \u2014 sincere, not playing \u2014 paired with the stranger's instant 'And I love you, my brother' creates a perfect two-person rhythm. The dynamic is the joke.",
       "dialogue": [
         {
           "speaker": "Ron Swanson",
@@ -1504,22 +1516,23 @@
     },
     {
       "index": 50,
-      "text": "Everyone was on their stupid bikes. I was like, 'Ew.'",
+      "text": "April says 'I'm a cool dudette' in response to Leslie calling her cool \u2014 and immediately Leslie says 'You've lost it.'",
       "characters": [
-        "April"
+        "April",
+        "Leslie"
       ],
       "joke_types": [
         "character_comedy",
-        "deadpan_understatement"
+        "reaction_beat"
       ],
-      "setup": "April complaining about Berlin",
-      "punchline": "Reducing an entire city to bike annoyance with childish response",
-      "craft_total": 7.13,
-      "impact_score": 6.67,
-      "quotability": 7.0,
+      "setup": "Leslie shares a heartfelt moment with April, telling her she's 'pretty cool'",
+      "punchline": "'I'm a cool dudette' \u2014 April's deeply uncool response to being called cool, followed by instant judgment from Leslie",
+      "craft_total": 7.08,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect April reduction of travel experience to petty complaint",
+      "explanation": "A light character moment. April trying to accept a compliment and fumbling it ('dudette') is consistent. The immediate reversal ('you've lost it') is quick and clean. Modest but functional.",
       "dialogue": [
         {
           "speaker": "April",
@@ -1533,22 +1546,23 @@
     },
     {
       "index": 51,
-      "text": "Look, if you didn't want to be on call 24-7 for emergencies, then you should not have gone into the high-stakes world of banner making!",
+      "text": "Tom's elaborate plan falls apart when he realizes 'We're calling this off. It's all wrong.' Lucy asks if it's because he said 'it's pizza time.' / 'No, but that definitely didn't help.'",
       "characters": [
-        "Leslie"
+        "Tom",
+        "April"
       ],
       "joke_types": [
-        "escalation",
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Leslie needs another banner made urgently",
-      "punchline": "Treats banner making like an emergency profession",
-      "craft_total": 7.13,
-      "impact_score": 7.0,
-      "quotability": 8.5,
+      "setup": "April and Tom's elaborate proposal plan begins collapsing",
+      "punchline": "April's guess \u2014 that saying 'it's pizza time' was the problem \u2014 is both absurd and partially confirmed",
+      "craft_total": 7.27,
+      "impact_score": 6.75,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Brilliant escalation of Leslie's banner obsession into emergency services metaphor",
+      "is_callback": 0,
+      "explanation": "'No, but that definitely didn't help' is the perfectly calibrated response \u2014 it neither confirms nor denies, but acknowledges the insanity of saying 'it's pizza time' at a romantic moment. Tom's semi-validation is the joke.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1574,22 +1588,23 @@
     },
     {
       "index": 52,
-      "text": "I'm flying!",
+      "text": "Jean-Ralphio adds flavored condoms to Tom's proposal kit \u2014 'I didn't ask for flavored condoms.' 'No, no, no, that's just me looking out for you. See, girls get mad horny when you propose. That's why I do it all the time.'",
       "characters": [
-        "Garry"
+        "Tom",
+        "Jean-Ralphio"
       ],
       "joke_types": [
-        "visual_gag",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Garry being inaugurated as mayor with elaborate celebration",
-      "punchline": "Garry's pure joy at unexpected recognition",
-      "craft_total": 7.2,
-      "impact_score": 7.33,
+      "setup": "Tom has asked Jean-Ralphio and others to gather specific items for the proposal",
+      "punchline": "Jean-Ralphio added flavored condoms. His justification \u2014 that girls get horny at proposals, which is why he proposes 'all the time' \u2014 reveals his entire worldview in two sentences.",
+      "craft_total": 7.03,
+      "impact_score": 6.75,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect culmination of Garry's arc from dismissal to ultimate triumph",
+      "explanation": "Jean-Ralphio at his most Jean-Ralphio. The reveal of WHY he added them is funnier than the condoms themselves \u2014 using proposals as a seduction strategy is a great character-consistent dark joke about his romantic ethics. 'That's why I do it all the time' is the punchy button.",
       "dialogue": [
         {
           "speaker": "Garry",
@@ -1607,35 +1622,380 @@
     },
     {
       "index": 53,
-      "text": "I'm flying!",
+      "text": "Jean-Ralphio: 'I didn't ask for flavored condoms.' / 'No, no, no, that's just me looking out for you. See, girls get mad horny when you propose. That's why I do it all the time.'",
       "characters": [
-        "Garry"
+        "Tom",
+        "Jean-Ralphio"
       ],
       "joke_types": [
         "character_comedy",
-        "visual_gag"
+        "absurdist"
       ],
-      "setup": "Garry's mayoral inauguration",
-      "punchline": "Pure joy expressed as Titanic reference during ceremony",
-      "craft_total": 7.05,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Tom and Jean-Ralphio are gathering supplies for the new proposal",
+      "punchline": "Jean-Ralphio has added flavored condoms to the proposal supplies and defends it as insider knowledge \u2014 'that's why I do it all the time' (he proposes constantly for this reason)",
+      "craft_total": 7.58,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sweet Garry moment - his pure joy at finally being appreciated, even briefly",
+      "explanation": "Jean-Ralphio is one of the show's great recurring characters and this is a quintessential Jean-Ralphio beat. 'That's why I do it all the time' \u2014 implying he serially proposes as a seduction strategy \u2014 is an efficient character joke. The logic is absurdist but internally consistent for him.",
       "dialogue": [
         {
           "speaker": "Jerry",
           "line": "I'm the king of the world!"
         }
       ]
+    },
+    {
+      "index": 54,
+      "text": "Ben: 'I can't believe I'm about to be the mayor.' Garry: 'I can't believe I'm about to notarize it.'",
+      "characters": [
+        "Ben",
+        "Garry"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ben and Garry share a parallel moment of awe before the mayoral signing",
+      "punchline": "Ben's historic personal moment is matched in scale by Garry's notarizing excitement \u2014 both are equally awed by very different things",
+      "craft_total": 7.38,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The parallel structure of 'I can't believe I'm about to be the mayor' / 'I can't believe I'm about to notarize it' is a clean bit. Garry's sincere excitement about notarizing has the same emotional weight as Ben becoming mayor. The equality of their enthusiasm is the joke."
+    },
+    {
+      "index": 55,
+      "text": "Ben and Garry's excitement about notarizing the new mayor: 'I can't believe I'm about to be the mayor.' / 'I can't believe I'm about to notarize it.'",
+      "characters": [
+        "Ben",
+        "Garry"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ben is preparing to sign as interim mayor",
+      "punchline": "Garry's parallel excitement about notarizing matches Ben's excitement about becoming mayor \u2014 to Garry, these are equal thrills",
+      "craft_total": 7.51,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The parallel structure of 'I can't believe I'm about to X' with mayor/notarize as the two equal thrills is perfect. Garry's sincere passion for notarizing elevated to the same plane as holding public office is deeply character-specific."
+    },
+    {
+      "index": 56,
+      "text": "Ben decides not to be mayor and reflects: 'I like that Ice Town happened, and I don't want to erase it.' / Garry: 'Okay, I wasn't listening to anything you just said. But who is gonna be the mayor for the next two months, then?'",
+      "characters": [
+        "Ben",
+        "Garry"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ben has a meaningful personal moment about accepting his past",
+      "punchline": "Garry immediately admits he wasn't listening \u2014 deflating the emotional moment with complete guilelessness",
+      "craft_total": 7.18,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Garry's admission is disarmingly honest rather than cruel. He's not dismissing Ben; he just genuinely wasn't listening and needs the practical information. The contrast between Ben's growth moment and Garry's practical indifference is the joke."
+    },
+    {
+      "index": 57,
+      "text": "Leslie offers the mayorship to Garry Gergich \u2014 who screams 'NO!' in abject terror before presumably accepting",
+      "characters": [
+        "Leslie",
+        "Garry"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "After everyone else has declined, Leslie turns to Garry as the choice for interim mayor",
+      "punchline": "Garry's immediate 'No!' \u2014 a man who has spent his career being minimized, now terrified by the honor he should want",
+      "craft_total": 7.79,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The 'No!' gets its own timestamp, suggesting a deliberate comedy pause. Garry's instinctive rejection of the honor he's spent his career being denied is perfectly absurd. The brevity \u2014 one word, beat, cut \u2014 is structurally perfect. And context tells us he'll accept, making the 'No!' even funnier."
+    },
+    {
+      "index": 58,
+      "text": "Tom's simple proposal at The Snakehole Lounge: recreating their first date with a daisy, a failed magic trick, and a card pick \u2014 Lucy says yes.",
+      "characters": [
+        "Tom",
+        "Lucy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Tom's elaborate action-movie proposal was abandoned; now he's at the bar where they met with minimal props",
+      "punchline": "The magic trick still fails \u2014 'I haven't done this trick in a while' \u2014 but Lucy says yes anyway. The comedy is in the earnest failure being more romantic than the spectacle.",
+      "craft_total": 7.37,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedy here is gentle \u2014 the failed magic trick as the authentic proposal is sweet and quietly funny. The contrast with the elaborate failed proposal earlier is the true punchline. Works as character payoff even if not a hard laugh."
+    },
+    {
+      "index": 59,
+      "text": "Jean-Ralphio responds to Tom's engagement by immediately hitting on Lucy: 'So what's your story again? I mean, like, how married are you? You down to clown? You in that rude mood?' / 'Why are you like this?' / 'Pills, baby!'",
+      "characters": [
+        "Jean-Ralphio",
+        "Tom",
+        "Lucy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Tom just got engaged. Jean-Ralphio congratulates them.",
+      "punchline": "Jean-Ralphio immediately tries to pick up the newly-engaged woman with increasingly deranged questions \u2014 'You in that rude mood?' \u2014 then explains himself with 'Pills, baby!'",
+      "craft_total": 7.69,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Jean-Ralphio at his absolute best. 'How married are you?' and 'You in that rude mood?' are perfectly calibrated terrible pickup lines. 'Pills, baby!' as his entire self-explanation is iconic \u2014 it's simultaneously a joke, a character description, and an excuse all in two words. Highly quotable, fully character-specific, and lands with impact. One of the episode's standout moments."
+    },
+    {
+      "index": 60,
+      "text": "Donna convinces Typhoon (a new barber) to cut Ron's hair by promising it'll take four minutes and cost $8. Ron's only input: she shows him a photo of what he wants to look like.",
+      "characters": [
+        "Donna",
+        "Typhoon",
+        "Ron"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "visual_gag"
+      ],
+      "setup": "Ron needs a new barber. Donna has found Typhoon, an avant-garde artist barber.",
+      "punchline": "Ron's desired look is a photo of himself \u2014 he wants to look exactly as he already does, no change whatsoever",
+      "craft_total": 8.09,
+      "impact_score": 7.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The visual punchline \u2014 Ron showing a photo of himself as the desired result \u2014 is the logical endpoint of his entire character philosophy about consistency and avoiding change. It's a visual joke that only works because of years of character building. High character integration score is fully justified."
+    },
+    {
+      "index": 61,
+      "text": "Typhoon: 'I'm writing an electronic opera about Brittany Murphy, and I do the chandelier design for my friend's drag puppet show.' / 'No further questions.'",
+      "characters": [
+        "Typhoon",
+        "Ron"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ron asks Typhoon what he does for fun, as a small-talk attempt from Ron (already unusual)",
+      "punchline": "Typhoon's answer is so specific and alien to Ron that he immediately terminates the conversation \u2014 'No further questions' as a formal closing",
+      "craft_total": 7.74,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Typhoon's answer is perfectly calibrated weirdness \u2014 both specific items (electronic opera about Brittany Murphy, chandelier design for drag puppet shows) are genuinely funny in their specificity. Ron's 'No further questions' as a formal termination of curiosity is the ideal Ron response."
+    },
+    {
+      "index": 62,
+      "text": "Typhoon: 'Except lately all the good warehouse raves are filled with Eurotrash.' / Ron: '\"Eurotrash,\" I like that. It is, indeed, a garbage continent.'",
+      "characters": [
+        "Typhoon",
+        "Ron"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Typhoon laments his social scene; Ron has just said 'No further questions'",
+      "punchline": "Ron re-engages only because Typhoon said something Ron can agree with \u2014 his anti-European sentiment creating an unlikely bond",
+      "craft_total": 7.75,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'It is, indeed, a garbage continent' is a beautifully absurd piece of Ron Swanson logic \u2014 his European skepticism extended to continental dismissal. The pivot from 'No further questions' to immediate engagement over this is perfect character comedy. The phrase is highly quotable."
+    },
+    {
+      "index": 63,
+      "text": "Typhoon complains about Berlin: 'Everyone was on their stupid bikes. I was like, \"Ew.\"' / Ron: 'Please, talk more about how you hate Europe and bicycles.'",
+      "characters": [
+        "Typhoon",
+        "Ron"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Ron and Typhoon are bonding over disliking Europe",
+      "punchline": "Ron explicitly requests more of this \u2014 'Please, talk more about how you hate Europe and bicycles' \u2014 his anti-Europe and anti-bicycle sentiments perfectly aligned with a drag-puppet-show barber",
+      "craft_total": 7.76,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "'Please, talk more about how you hate Europe and bicycles' is a precise summary of Ron's established character preferences. The joy of this scene is that Ron's most antisocial qualities create an unlikely connection with the most avant-garde character imaginable. Character integration is near-perfect."
+    },
+    {
+      "index": 64,
+      "text": "Tom: 'I'll see you later, Jennifer Knopez.' / Leslie: 'Catch you on the flip side, Tom-egranate Juice.' / Tom: 'Hey, not bad.'",
+      "characters": [
+        "Tom",
+        "Leslie"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Tom and Leslie say goodbye after the engagement",
+      "punchline": "They exchange nickname portmanteaus \u2014 Tom's is professional, Leslie's ('Tom-egranate Juice') earns genuine approval from Tom",
+      "craft_total": 7.2,
+      "impact_score": 6.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Tom-egranate Juice' is a genuinely creative portmanteau \u2014 pomegranate juice as a Tom pun earns its keep. Tom's approving 'Hey, not bad' is a nice character beat \u2014 Tom's branding expertise applied to Leslie's name. Warm and functional."
+    },
+    {
+      "index": 65,
+      "text": "Tom and Leslie say goodbye with food-pun nicknames: 'Jennifer Knopez' / 'Tom-egranate Juice' \u2014 'Hey, not bad.'",
+      "characters": [
+        "Tom",
+        "Leslie"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Tom tells Leslie he'll see her later as he leaves with Lucy",
+      "punchline": "They exchange food-themed nickname portmanteaus \u2014 'Jennifer Knopez' (J-Lo / Knope) and 'Tom-egranate Juice' \u2014 Tom grades Leslie's effort: 'Hey, not bad.'",
+      "craft_total": 7.2,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Tom's nickname habit is a long-running character trait. 'Tom-egranate Juice' is a good portmanteau, and Leslie getting a 'not bad' from Tom \u2014 who invented this art form \u2014 is a sweet, funny beat. Character-specific and warm."
+    },
+    {
+      "index": 66,
+      "text": "April: 'Oh, so glad we're leaving.' (after hearing Garry is mayor)",
+      "characters": [
+        "April"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "Leslie announces Garry will be the mayor",
+      "punchline": "April's immediate, unguarded relief at leaving before Garry's mayorship is a perfect character reaction",
+      "craft_total": 7.05,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick, functional April reaction beat. The brevity and sincerity make it land. Not a crafted joke so much as a character-true response."
+    },
+    {
+      "index": 67,
+      "text": "Leslie calls the banner store owner, says 'Ian, thank you so much. It's great. Now throw it out. I need a new one, and I need it in 20 minutes.'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Ian made the Congratulations Tom and Lucy banner Leslie ordered",
+      "punchline": "She immediately discards it the moment it's done and orders a new one \u2014 casual waste of his emergency labor",
+      "craft_total": 6.72,
+      "impact_score": 6.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Pays off the earlier banner store scenes. Leslie's relationship with Ian as a source of emergency banner labor \u2014 discarded the moment circumstances change \u2014 is good character comedy. The 'throw it out' after the effort is the comedic gut punch."
+    },
+    {
+      "index": 68,
+      "text": "'Look, if you didn't want to be on call 24-7 for emergencies, then you should not have gone into the high-stakes world of banner making!'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Ian protests the impossible last-minute request to replace the banner",
+      "punchline": "Leslie frames banner making as a high-stakes emergency profession where 24/7 availability is an occupational expectation",
+      "craft_total": 7.93,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'The high-stakes world of banner making' is one of the episode's best lines. The absurdity of treating sign-printing as emergency medicine is perfectly Leslie \u2014 her needs are always life-or-death, and she's extended that worldview to her vendors. Highly quotable, character-perfect, and the phrase construction is excellent."
+    },
+    {
+      "index": 69,
+      "text": "Garry walks into his office to find a full inauguration party \u2014 'Happy Inauguration Day, buddy.' Garry: 'Oh, jeez, Leslie.'",
+      "characters": [
+        "Garry",
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Garry has reluctantly accepted the interim mayorship",
+      "punchline": "Leslie has thrown a full inauguration party. Garry's 'Oh, jeez, Leslie' \u2014 part overwhelmed, part embarrassed, all Garry \u2014 is the emotional-comedy button",
+      "craft_total": 7.64,
+      "impact_score": 8.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "More of an emotional payoff than a hard joke, but it functions comedically through Garry's helpless response to Leslie's overwhelming thoughtfulness. Works as comedy because we understand both characters."
+    },
+    {
+      "index": 70,
+      "text": "Garry's first act as mayor: he starts crying at the podium, finally says 'I'm flying!' while overcome with emotion",
+      "characters": [
+        "Garry"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Garry is introduced as the new mayor of Pawnee; he starts to speak",
+      "punchline": "After a long emotional pause, his only words are 'I'm flying!' \u2014 absurd, joyful, and perfectly Garry",
+      "craft_total": 8.68,
+      "impact_score": 9.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The episode's emotional and comedic climax. The long pause (implied by the timestamp gap from 21:00 to 21:13) builds tension; 'I'm flying!' is the perfect release \u2014 absurd, joyful, childlike. It captures everything about Garry: earnest, overwhelmed, not eloquent but genuine. The episode's most earned laugh because it's also touching. Economy is exceptional \u2014 two words deliver the scene's entire payload. Among the episode's very best moments."
     }
   ],
-  "imdb_rating": 8.4,
-  "imdb_votes": 2349,
-  "tmdb_overview": "Ben and April conduct a series of interviews, while Andy and Donna help Ron adjust to a life change.",
   "air_date": "2015-02-17",
+  "imdb_rating": 8.4,
+  "imdb_votes": 2362,
+  "tmdb_overview": "Ben and April conduct a series of interviews, while Andy and Donna help Ron adjust to a life change.",
   "still_path": "/4WG0X25bsA6uIqLiBYBQJVjRzwv.jpg",
+  "director": [
+    "Craig Zisk"
+  ],
+  "writers": [
+    "Jen Statsky"
+  ],
   "guest_stars": [
     {
       "name": "Sam Elliott",
@@ -1677,24 +2037,6 @@
       "character": "Typhoon",
       "profile_path": "/eSuJKehbJ9YeiZHnf49HOkzRDsb.jpg"
     }
-  ],
-  "war": null,
-  "humor_index_v1": 88.6,
-  "ci_95_low": 80.6,
-  "ci_95_high": 88.0,
-  "percentile_in_show": 80.6,
-  "zscore_in_show": 1.02,
-  "zscore_in_season": 0.81,
-  "humor_index_single_run": 87.5,
-  "standup_jokes": 0,
-  "standup_fraction": 0.0,
-  "consensus_runs": 3,
-  "consensus_method": "3-run consensus",
-  "director": [
-    "Craig Zisk"
-  ],
-  "writers": [
-    "Jen Statsky"
   ],
   "insight": "Final stretch delivers 84 points on absurdist character chaos, 53 jokes in 53 minutes."
 }

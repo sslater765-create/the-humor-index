@@ -4,33 +4,34 @@
   "season": 4,
   "episode_number": 22,
   "title": "Win, Lose, Or Draw",
-  "humor_index": 87.4,
-  "jpm": 2.02,
-  "avg_craft": 7.33,
-  "avg_impact": 7.19,
-  "total_jokes": 48,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"escalation\"]",
-  "standout_joke_ids": "[38, 30, 26]",
+  "humor_index": 92.2,
+  "jpm": 3.15,
+  "avg_craft": 7.43,
+  "avg_impact": 7.32,
+  "total_jokes": 75,
+  "war": 103.1,
+  "dominant_joke_types": "[\"character_comedy\", \"deadpan_understatement\", \"absurdist\"]",
+  "standout_joke_ids": "[55, 37, 41]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
       "text": "In the event of an exact tie, the seat is awarded to the male candidate, and the female candidate is put in jail.",
       "characters": [
-        "Election Commissioner"
+        "City Commissioner"
       ],
       "joke_types": [
         "absurdist",
         "dark_subversive"
       ],
-      "setup": "Explaining official election procedures in a formal tone",
-      "punchline": "Absurdly sexist and illegal 'city law' delivered matter-of-factly",
-      "craft_total": 7.4,
-      "impact_score": 7.83,
-      "quotability": 8.5,
+      "setup": "A city commissioner is reading off official election procedures in a dry, bureaucratic manner.",
+      "punchline": "The 'female candidate is put in jail' clause is delivered with the same flat officialness as the other rules.",
+      "craft_total": 7.9,
+      "impact_score": 8.0,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant absurdist bureaucratic humor - takes the mundane election procedure setup and delivers a completely insane but formally stated rule. Perfect Pawnee government satire.",
+      "explanation": "The joke lands because of pure structural deadpan: a genuinely absurd and misogynistic old law is read with no editorial affect, as if it belongs alongside normal election rules. The specificity (not fired, not disqualified \u2014 JAIL) makes it funnier. It's a sharp satirical comment on how institutionalized sexism is often embedded in dusty old law, delivered with perfect economy and setting the satirical tone for the episode.",
       "dialogue": [
         {
           "speaker": "Election Commissioner",
@@ -40,22 +41,22 @@
     },
     {
       "index": 2,
-      "text": "I don't think it would hold up in court but it is city law.",
+      "text": "Once again, I have to object. I don't think it would hold up in court but it is city law.",
       "characters": [
-        "Election Commissioner"
+        "Leslie Knope"
       ],
       "joke_types": [
         "deadpan_understatement",
-        "absurdist"
+        "character_comedy"
       ],
-      "setup": "Previous absurd statement about jailing female candidates",
-      "punchline": "Casual admission that the law is unconstitutional but shrugging acceptance",
-      "craft_total": 7.1,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Perfect follow-up that makes the absurdity even funnier by treating it as a minor procedural concern.",
+      "setup": "The commissioner has just announced the absurd jail law.",
+      "punchline": "Leslie's objection is strangely tepid \u2014 she's not outraged, just mildly noting it probably wouldn't survive legal scrutiny. The 'once again' implies she's raised this before.",
+      "craft_total": 7.49,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Once again' is doing enormous work here \u2014 it implies this isn't new, that Leslie has fought this before and lost, and that she's resigned to flagging it weakly each time. The understatement of 'I don't think it would hold up in court' about an obviously unconstitutional law is perfectly Leslie: process-obsessed but ultimately deferential. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Election Commissioner",
@@ -65,22 +66,23 @@
     },
     {
       "index": 3,
-      "text": "Shouldn't we be rewarding our citizens for voting? I'm never against anyone getting a candy bar.",
+      "text": "Watch what happens when I vote for Bobby Newport. [machine dispenses a candy bar]",
       "characters": [
-        "Bobby Newport"
+        "Bobby Newport",
+        "Leslie Knope"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "visual_gag",
+        "setup_punchline"
       ],
-      "setup": "Discussing voting machine irregularities",
-      "punchline": "Bobby's childlike focus on candy rewards instead of election integrity",
-      "craft_total": 7.0,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Bobby Newport is making his case about potentially rigged voting machines and demonstrates by voting for himself.",
+      "punchline": "The machine literally dispenses a candy bar as a reward \u2014 blatant election bribery made childishly literal.",
+      "craft_total": 7.74,
+      "impact_score": 8.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfectly captures Bobby's character - wealthy, naive, missing the point entirely while being accidentally endearing.",
+      "explanation": "Brilliant visual gag \u2014 the candy bar is perfect because Sweetums is a candy company, so it's both a bribe AND a branded product. The absurdity of actual candy dispensing from a voting machine is exactly the right level of Pawnee stupidity. Strong character integration because only a Newport would install candy-dispensing voting machines.",
       "dialogue": [
         {
           "speaker": "Bobby Newport",
@@ -90,22 +92,22 @@
     },
     {
       "index": 4,
-      "text": "I'm sorry. I just don't see the problem.",
+      "text": "Shouldn't we be rewarding our citizens for voting? I'm never against anyone getting a candy bar.",
       "characters": [
         "Bobby Newport"
       ],
       "joke_types": [
-        "reaction_beat",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Voting machine clearly malfunctioning and showing bias",
-      "punchline": "Bobby's complete obliviousness to obvious election fraud",
-      "craft_total": 6.93,
-      "impact_score": 6.17,
-      "quotability": 5.0,
+      "setup": "Bobby is confronted about the obviously corrupt voting machines dispensing candy.",
+      "punchline": "His defense is not that it's not bribery \u2014 it's that candy is good and voting is good, so both together must be fine.",
+      "craft_total": 7.63,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Bobby's disconnect from reality, though predictable for his character.",
+      "explanation": "Peak Bobby Newport \u2014 his logic is not evil, just childlike. He genuinely cannot see what's wrong with giving people candy. 'I'm never against anyone getting a candy bar' is pure character comedy gold: it's not a calculated defense, it's his actual worldview. High character integration because this line could only come from Bobby.",
       "dialogue": [
         {
           "speaker": "Bobby Newport",
@@ -123,22 +125,22 @@
     },
     {
       "index": 5,
-      "text": "This isn't a bagel.",
+      "text": "But watch what happens when you vote for me. [Leslie tries to demonstrate her machine, has to press it again, nothing impressive happens]",
       "characters": [
-        "Tom"
+        "Leslie Knope"
       ],
       "joke_types": [
-        "non_sequitur",
-        "character_comedy"
+        "visual_gag",
+        "irony_sarcasm"
       ],
-      "setup": "Talking about election party details",
-      "punchline": "Random complaint about food that has nothing to do with the conversation",
-      "craft_total": 6.7,
-      "impact_score": 5.83,
+      "setup": "Leslie wants to demonstrate her machine is superior/fair by contrast to the candy machine.",
+      "punchline": "Her machine is broken or unhelpfully ordinary \u2014 she has to press it again, undercutting her righteous moment.",
+      "craft_total": 7.0,
+      "impact_score": 6.75,
       "quotability": 4.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Mild Tom character moment - his tendency to focus on luxury/food complaints at inappropriate times.",
+      "is_callback": 1,
+      "explanation": "The comedy is in the deflation of Leslie's righteous setup. She's trying to make a principled point and the universe undercuts her. Works as a callback to joke #3 and as character comedy \u2014 Leslie's earnestness is always vulnerable to circumstance.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -148,41 +150,41 @@
     },
     {
       "index": 6,
-      "text": "It is no longer a 'Pimps and Hoes' pajama party.",
+      "text": "I'm sorry. I just don't see the problem.",
       "characters": [
-        "Tom"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Describing the election party plans",
-      "punchline": "Revealing the original deeply inappropriate party theme",
-      "craft_total": 6.97,
-      "impact_score": 6.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Tom inappropriateness - the casual mention of the terrible original theme is perfectly cringe."
-    },
-    {
-      "index": 7,
-      "text": "That idea was nixed by a certain uptight nerd who shall remain nameless.",
-      "characters": [
-        "Tom"
+        "Bobby Newport"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "deadpan_understatement"
       ],
-      "setup": "Explaining why the party theme changed",
-      "punchline": "Obviously referring to Ben while pretending to be discrete",
-      "craft_total": 6.5,
-      "impact_score": 5.5,
-      "quotability": 6.0,
+      "setup": "Leslie's machine has just failed to match the candy bar spectacle, and presumably officials are explaining the bribery problem.",
+      "punchline": "Bobby's total sincerity \u2014 he genuinely cannot understand why candy bribery is bad.",
+      "craft_total": 6.96,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Continues the Bobby Newport running gag of cheerful obtuseness. Short, economical, perfectly in character. Works as a capper to the candy machine bit."
+    },
+    {
+      "index": 7,
+      "text": "I've only slept nine hours over the past four days. So, I'm right on the verge of a nervous breakdown.",
+      "characters": [
+        "Leslie Knope"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Leslie is describing the intense pressure of election day.",
+      "punchline": "Nine hours over four days is objectively brutal sleep deprivation \u2014 but she frames it as being merely 'on the verge' of breakdown, not in one. The understatement is the joke.",
+      "craft_total": 6.34,
+      "impact_score": 5.83,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Tom petulance and the 'shall remain nameless' while making it obvious who he means.",
+      "explanation": "Solid Leslie character beat \u2014 her obsessive work ethic expressed through sleep deprivation framed as somehow manageable. Functional but not exceptional.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -192,22 +194,22 @@
     },
     {
       "index": 8,
-      "text": "Me, Drake, and the T-Mobile girl were playing baccarat on a private jet. Ann Perkins walks up to me, and she says, 'Tommy, tomorrow night, I'm taking you back.'",
+      "text": "This isn't a bagel.",
       "characters": [
-        "Tom"
+        "Tom Haverford"
       ],
       "joke_types": [
         "absurdist",
-        "character_comedy"
+        "deadpan_understatement"
       ],
-      "setup": "Tom explaining his 'premonition' dream",
-      "punchline": "Bizarrely specific celebrity cameos in what's supposed to be a romantic prophecy",
-      "craft_total": 7.33,
-      "impact_score": 7.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Tom is apparently eating something he thought was a bagel while announcing the party.",
+      "punchline": "The complete non-sequitur delivered mid-announcement \u2014 he's so sleep-deprived or distracted that he's eating something unidentified and only noticing now.",
+      "craft_total": 6.99,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great Tom delusion - mixing genuine romantic hope with his obsession with celebrity culture and luxury.",
+      "explanation": "Three words doing massive comedic work. The joke is entirely in the non-sequitur \u2014 dropped in the middle of a completely unrelated announcement with zero explanation or follow-up. Perfect economy. The randomness earns its absurdism because it's so specifically mundane (not a bagel, not something exotic).",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -233,22 +235,22 @@
     },
     {
       "index": 9,
-      "text": "Then, Blue Ivy Carter high-fived me and gave me $40 million.",
+      "text": "It is no longer a 'Pimps and Hoes' pajama party.",
       "characters": [
-        "Tom"
+        "Tom Haverford"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Continuing the ridiculous dream description",
-      "punchline": "Even more absurd detail involving a baby giving him millions",
-      "craft_total": 7.25,
-      "impact_score": 7.5,
-      "quotability": 8.0,
+      "setup": "Tom is announcing the election night party details.",
+      "punchline": "He casually mentions the party's former theme \u2014 'Pimps and Hoes' pajama party \u2014 as if this were a reasonable starting point that merely needed to be walked back.",
+      "craft_total": 7.26,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Perfect escalation that makes the dream even more ridiculous while staying true to Tom's character obsessions.",
+      "is_callback": 0,
+      "explanation": "Pure Tom Haverford character comedy \u2014 of course he planned a 'Pimps and Hoes' pajama party for election night. The funniest part is that he's the one announcing its cancellation, implying he agreed to drop it but still wanted credit for the original concept.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -258,22 +260,22 @@
     },
     {
       "index": 10,
-      "text": "Leslie, you can't vote for yourself, I don't think. I'm pretty sure that's illegal.",
+      "text": "That idea was nixed by a certain uptight nerd who shall remain nameless.",
       "characters": [
-        "Bobby Newport"
+        "Tom Haverford"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "irony_sarcasm"
       ],
-      "setup": "Bobby saying he'll vote for Leslie",
-      "punchline": "Bobby's fundamental misunderstanding of how voting works",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Tom is explaining why the party theme changed.",
+      "punchline": "The 'who shall remain nameless' is obviously Leslie or Ben \u2014 the fake discretion while being completely transparent is the joke.",
+      "craft_total": 6.07,
+      "impact_score": 5.67,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Bobby moment - his wealthy privilege has left him so disconnected he doesn't understand basic democratic processes.",
+      "explanation": "Functional character beat for Tom. The 'shall remain nameless' fake discretion is a well-worn comedic device but executed with Tom's particular aggrieved flair. Not exceptional.",
       "dialogue": [
         {
           "speaker": "Bobby Newport",
@@ -299,22 +301,22 @@
     },
     {
       "index": 11,
-      "text": "Yeah. That sounds great, but the Pacers called, and they're asking me to be their starting point guard.",
+      "text": "Last night, at approximately 2:30 a.m., I woke up from a dream that felt so real that it had to be a premonition. Me, Drake, and the T-Mobile girl were playing baccarat on a private jet. Ann Perkins walks up to me, and she says, 'Tommy, tomorrow night, I'm taking you back.'",
       "characters": [
-        "Ben"
+        "Tom Haverford"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "self_deprecating"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Being offered a serious political job",
-      "punchline": "Ben's sarcastic deflection about an obviously impossible sports career",
-      "craft_total": 7.4,
-      "impact_score": 6.83,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Tom is confidently explaining why he believes Ann will get back together with him tonight.",
+      "punchline": "His 'premonition' involves Drake and the T-Mobile girl playing baccarat \u2014 the specific celebrity cameos in his dream are perfectly Tom-branded aspirational absurdism.",
+      "craft_total": 7.97,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good Ben humor - using absurd comparison to deflect when overwhelmed by a serious opportunity.",
+      "explanation": "This is elite Tom Haverford character comedy. The dream details \u2014 Drake, specifically the T-Mobile girl, baccarat, a private jet \u2014 are not random; they're a perfect inventory of Tom's specific aspirational lifestyle brand. Every element earns its place. Ann's formal full-name address ('Tommy') and the clinical 'at approximately 2:30 a.m.' mock-serious framing make it even funnier. Justifiably above 8 \u2014 comparable in character specificity to the anchor examples.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -324,23 +326,22 @@
     },
     {
       "index": 12,
-      "text": "Look at that. Look at that thing. What is that? Don't touch it.",
+      "text": "Then, Blue Ivy Carter high-fived me and gave me $40 million.",
       "characters": [
-        "Andy",
-        "April"
+        "Tom Haverford"
       ],
       "joke_types": [
-        "visual_gag",
-        "character_comedy"
+        "absurdist",
+        "escalation"
       ],
-      "setup": "Characters examining something mysterious",
-      "punchline": "Andy's childlike curiosity and April's protective response",
-      "craft_total": 6.27,
-      "impact_score": 5.67,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Cute character moment showing their dynamic but not a strong standalone joke.",
+      "setup": "Tom has just finished describing his romantic dream premonition about Ann.",
+      "punchline": "He casually appends that Blue Ivy Carter also appeared and gave him $40 million \u2014 a perfect escalation that makes clear the Ann part was actually the LESS absurd element.",
+      "craft_total": 8.5,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the best joke in the episode. The escalation structure is perfect: Tom's dream already included Drake and the T-Mobile girl, but the punchline adds Blue Ivy Carter \u2014 an infant at this point in time \u2014 high-fiving him and handing over $40 million. The specificity of '$40 million' (not $10M, not 'a lot of money') and the sheer non-sequitur logic of an infant being a financial benefactor is inspired. It's a callback to #11 that retroactively makes the whole speech funnier. Comparable to the top anchor examples in escalation craft and quotability.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -362,23 +363,22 @@
     },
     {
       "index": 13,
-      "text": "Recently, in a moment of weakness, I had sex with Bobby Newport's campaign manager, Jennifer Barkley. Seriously? Yes, several times. And then, several more times. And then a couple more times. And then one more time.",
+      "text": "Leslie, you can't vote for yourself, I don't think. I'm pretty sure that's illegal.",
       "characters": [
-        "Chris",
-        "Ann"
+        "Bobby Newport"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Chris confessing to a one-night stand",
-      "punchline": "The escalating count revealing it was much more than 'a moment'",
-      "craft_total": 7.53,
-      "impact_score": 7.83,
+      "setup": "Having revealed he's voting for Leslie, Bobby seems concerned about whether Leslie voting for herself is legal.",
+      "punchline": "He has it completely backwards \u2014 voting for yourself is perfectly legal and voting for your opponent is the bizarre choice \u2014 but he's concerned about Leslie's (legal) self-vote.",
+      "craft_total": 7.76,
+      "impact_score": 7.67,
       "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Excellent escalation structure - each 'and then' makes it funnier and more awkward, perfect Chris oversharing.",
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Brilliant inversion: Bobby has voted for his opponent and is now worried that voting for yourself might be illegal. The 'I'm pretty sure' hedge makes it even better \u2014 he's not even confident in his wrong belief. Could only be Bobby Newport. The callback escalation here is perfectly constructed.",
       "dialogue": [
         {
           "speaker": "Chris",
@@ -420,23 +420,22 @@
     },
     {
       "index": 14,
-      "text": "How long has this been going on? Oh, It's just last night.",
+      "text": "Look. Your opponent is legendarily stupid, and I phoned it in pretty hard.",
       "characters": [
-        "Ann",
-        "Chris"
+        "Jen Barkley"
       ],
       "joke_types": [
-        "misdirection",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Ann assuming it's a long affair based on the count",
-      "punchline": "Revealing it was all in one incredibly active night",
-      "craft_total": 7.6,
-      "impact_score": 7.75,
+      "setup": "Jen is complimenting Ben on his campaign management while offering him a job.",
+      "punchline": "She qualifies the compliment by admitting she essentially tanked her own client's campaign through minimal effort \u2014 and that Ben's opponent being 'legendarily stupid' lowered the bar.",
+      "craft_total": 7.65,
+      "impact_score": 7.5,
       "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Perfect misdirection payoff - the audience assumes the same thing Ann does, making the reveal even funnier.",
+      "is_callback": 0,
+      "explanation": "'Legendarily stupid' is a great descriptor and 'I phoned it in pretty hard' is a wonderfully self-aware admission from a professional operative. Jen's brutal candor is the joke \u2014 the 'pretty hard' qualifier on 'phoned it in' is a lovely touch (she didn't just phone it in, she phoned it in HARD).",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -454,22 +453,23 @@
     },
     {
       "index": 15,
-      "text": "But our ferocious sexual decathlon did radically improve my mood",
+      "text": "Look at that. Look at that thing. What is that? Don't touch it.",
       "characters": [
-        "Chris"
+        "Ron Swanson",
+        "Unknown"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "reaction_beat",
+        "visual_gag"
       ],
-      "setup": "Describing his night with Jen",
-      "punchline": "Chris's characteristic over-the-top athletic metaphors for sex",
-      "craft_total": 7.83,
-      "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
+      "setup": "Ron has apparently encountered some object that disturbs or fascinates him at the party venue.",
+      "punchline": "Ron's characteristic mixture of fascination and warning \u2014 'Don't touch it' \u2014 implies something he finds either absurd or potentially dangerous.",
+      "craft_total": 5.8,
+      "impact_score": 5.5,
+      "quotability": 4.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Chris Traeger line - his fitness obsession applied inappropriately to sex with characteristic enthusiasm.",
+      "explanation": "Inferred visual gag \u2014 without seeing what Ron is reacting to, this is a moderate laugh built on Ron's character. The visual payoff would elevate it significantly on rewatch.",
       "dialogue": [
         {
           "speaker": "Chris",
@@ -487,23 +487,23 @@
     },
     {
       "index": 16,
-      "text": "April? Got your message! Where are you? Under the table. Why are you hiding?",
+      "text": "Recently, in a moment of weakness, I had sex with Bobby Newport's campaign manager, Jennifer Barkley. Seriously? Yes, several times. And then, several more times. And then a couple more times. And then one more time.",
       "characters": [
-        "Andy",
-        "April"
+        "Chris Traeger",
+        "Ann Perkins"
       ],
       "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Andy looking for April",
-      "punchline": "April literally hiding under a table like a child",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Chris approaches Ann asking for advice on a sensitive personal matter.",
+      "punchline": "The escalating count of 'several times... several more times... a couple more times... one more time' is a perfect comedic escalation structure revealing a truly prolific one-night stand.",
+      "craft_total": 7.86,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good visual comedy and character moment - April's response to crisis is childlike hiding.",
+      "explanation": "The escalation structure here is textbook-excellent. Each addition ('several more times... a couple more times... one more time') adds to the absurdity while the phrasing becomes progressively more sheepish. The 'moment of weakness' opener is undercut catastrophically by the sheer volume. Chris's earnest delivery makes it land even harder. This is above-8 quality escalation writing.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -525,22 +525,22 @@
     },
     {
       "index": 17,
-      "text": "First of all, you did the right thing by hiding under this table. Secondly, your man is here. I'm going to take care of this for us.",
+      "text": "our ferocious sexual decathlon did radically improve my mood",
       "characters": [
-        "Andy"
+        "Chris Traeger"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "deadpan_understatement"
       ],
-      "setup": "April panicking about deleting files",
-      "punchline": "Andy treating hiding under a table as a reasonable adult response",
-      "craft_total": 7.17,
-      "impact_score": 7.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Chris is explaining his situation with Jen Barkley.",
+      "punchline": "'Ferocious sexual decathlon' is a characteristically Chris Traeger athletic framing for sex \u2014 making it sound like an Olympic event he trained for.",
+      "craft_total": 8.22,
+      "impact_score": 8.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect Andy - supportive but completely missing that hiding isn't actually helpful, treating it as tactical.",
+      "explanation": "'Ferocious sexual decathlon' is exceptional character writing. Chris's whole personality is athletic self-optimization and positive enthusiasm \u2014 applying the word 'decathlon' to sex is perfectly on-brand and unexpected. 'Radically improve my mood' as if it were a wellness intervention adds another layer. One of the most quotable lines in the episode.",
       "dialogue": [
         {
           "speaker": "April",
@@ -570,22 +570,23 @@
     },
     {
       "index": 18,
-      "text": "I've been playing Xbox for years. I'm really good at fixing it when it freezes. I know exactly what to do.",
+      "text": "Where are you? Under the table. Why are you hiding? Should I hide, too?",
       "characters": [
-        "Andy"
+        "Andy Dwyer",
+        "April Ludgate"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "setup_punchline"
       ],
-      "setup": "April has deleted all the computer files",
-      "punchline": "Andy's completely irrelevant Xbox expertise being applied to IT crisis",
-      "craft_total": 7.75,
-      "impact_score": 8.0,
-      "quotability": 7.5,
+      "setup": "Andy finds April in what appears to be hiding under a table in distress.",
+      "punchline": "Andy's first instinct is not to ask what's wrong but whether HE should also hide \u2014 pure sweet-natured Andy logic.",
+      "craft_total": 7.07,
+      "impact_score": 6.75,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent Andy logic - his childlike confidence that video game skills translate to professional IT problems.",
+      "explanation": "'Should I hide too?' is pure Andy \u2014 he doesn't assess the problem, he just wants to participate in whatever April is doing. Great character economy.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -611,23 +612,22 @@
     },
     {
       "index": 19,
-      "text": "Leslie, I can't figure this thing out. Can you help me? Yeah. Just hang on a second, Bobby. I got ink all over my hands, and the pen thingy came off the chain.",
+      "text": "First of all, you did the right thing by hiding under this table.",
       "characters": [
-        "Bobby Newport",
-        "Leslie"
+        "Andy Dwyer"
       ],
       "joke_types": [
         "character_comedy",
-        "visual_gag"
+        "deadpan_understatement"
       ],
-      "setup": "Bobby asking for help with voting",
-      "punchline": "Bobby can't figure out basic paper ballot and broke the pen",
-      "craft_total": 6.3,
-      "impact_score": 5.67,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Bobby helplessness - can't handle the most basic civic duty despite being a candidate.",
+      "setup": "April has confessed to accidentally deleting all the Parks Department files.",
+      "punchline": "Andy's reassurance begins not with 'we'll fix this' but with validating the choice to hide under a table as the correct first move.",
+      "craft_total": 7.41,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is genuinely excellent character comedy. Andy is trying to be supportive, and his idea of support is to first validate the hiding-under-a-table decision. It's perfectly Andy: well-meaning, wrong-headed, and somehow comforting. The 'First of all' structure implies there's a thoughtful list coming, which makes the absurd validation even funnier.",
       "dialogue": [
         {
           "speaker": "Bobby Newport",
@@ -653,22 +653,22 @@
     },
     {
       "index": 20,
-      "text": "With just 1% of the precincts reporting, adult film star, Brandi Maxxxx, has a commanding lead.",
+      "text": "I've been playing Xbox for years. I'm really good at fixing it when it freezes. I know exactly what to do.",
       "characters": [
-        "News Anchor"
+        "Andy Dwyer"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Early election results being reported",
-      "punchline": "The porn star is winning the city council race",
-      "craft_total": 7.17,
-      "impact_score": 7.67,
-      "quotability": 8.0,
+      "setup": "Andy promises to fix the government computer system that crashed and deleted all files.",
+      "punchline": "His plan is based entirely on Xbox troubleshooting experience \u2014 transferring console gaming IT skills to a government data crisis.",
+      "craft_total": 7.63,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great absurdist escalation - takes the election seriously but introduces completely unexpected third candidate.",
+      "explanation": "Andy's confidence is the key \u2014 he doesn't say he'll try, he says he knows EXACTLY what to do. The Xbox-to-government-server tech transfer is absurd but totally within Andy's worldview where all frozen electronics are the same problem. High character integration.",
       "dialogue": [
         {
           "speaker": "News Anchor",
@@ -678,22 +678,23 @@
     },
     {
       "index": 21,
-      "text": "Oh, my God. That's it. It's not Bobby Newport who's going to beat me. It's Brandi Maxxxx. The porn star. What is this, Italy?",
+      "text": "One if you win, one if you lose. What if I tie? You need to write a tie speech for me. Something about the poetic nature of democracy, and how I'm going to fight this thing from my prison cell.",
       "characters": [
-        "Leslie"
+        "Leslie Knope",
+        "Ben Wyatt"
       ],
       "joke_types": [
-        "escalation",
-        "observational"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Leslie realizes the porn star is winning",
-      "punchline": "Compares Pawnee to Italy (Berlusconi reference)",
-      "craft_total": 7.75,
-      "impact_score": 7.25,
-      "quotability": 8.0,
+      "setup": "Ben has prepared two speeches for all contingencies. Leslie asks about a tie.",
+      "punchline": "Leslie's tie speech prompt includes directions for addressing the audience from prison \u2014 a callback to the opening jail-for-female-candidates law.",
+      "craft_total": 7.66,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Smart political reference and good Leslie panic mode. Italy reference is clever and topical.",
+      "is_callback": 1,
+      "explanation": "Beautiful callback to the opening gag. Leslie has clearly internalized the absurd jail law and is now planning around it. 'From my prison cell' delivered with total practicality is perfectly Leslie \u2014 she accepts this unjust reality and just wants to be rhetorically prepared for it. The callback structure rewards attentive viewers.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -703,22 +704,22 @@
     },
     {
       "index": 22,
-      "text": "your ambiguous ethnic blend perfectly represents the dream of the American melting pot",
+      "text": "Hey, what's a good place to buy jeans?",
       "characters": [
-        "Leslie"
+        "Ben Wyatt"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "misdirection",
         "character_comedy"
       ],
-      "setup": "Leslie praising Ann",
-      "punchline": "Awkward racial commentary delivered as compliment",
-      "craft_total": 7.07,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Leslie has just asked Ben what he was discussing with Jen Barkley, and Ben is clearly stalling.",
+      "punchline": "His stalling deflection is asking about jeans \u2014 a completely random topic that signals he's buying time and is terrible at it.",
+      "craft_total": 7.21,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Leslie awkwardness - well-meaning but completely inappropriate compliment about race.",
+      "explanation": "Perfect economy \u2014 four words that immediately tell us everything about Ben's panic and social awkwardness. The randomness of 'jeans' is funnier than any more sophisticated deflection would be. You have plenty of jeans' follow-up from Leslie shows she sees through it instantly.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -736,23 +737,22 @@
     },
     {
       "index": 23,
-      "text": "Ron? I handed out 1,000 leaflets today. That is a personal best. Now, I'm off to vote. The polls are closed.",
+      "text": "You have plenty of jeans.",
       "characters": [
-        "Jerry",
-        "Ron"
+        "Leslie Knope"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Jerry proudly announcing his campaign work",
-      "punchline": "Classic Jerry failure - worked hard all day but missed voting entirely",
-      "craft_total": 7.5,
-      "impact_score": 7.75,
-      "quotability": 6.5,
+      "setup": "Ben has attempted to deflect by asking about jeans.",
+      "punchline": "Leslie's response isn't 'what are you talking about' \u2014 it's the practical observation that he doesn't NEED jeans, cutting right through the deflection.",
+      "craft_total": 7.86,
+      "impact_score": 7.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Jerry moment - his enthusiasm and competence undermined by basic incompetence at the crucial moment.",
+      "is_callback": 1,
+      "explanation": "The response that reveals Leslie is not fooled, delivered with complete practicality. Three words that do everything needed.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -786,22 +786,22 @@
     },
     {
       "index": 24,
-      "text": "Nothing you can do. Except hope Leslie doesn't lose by one vote.",
+      "text": "I mean, it sounds amazing. But you know, six months in Washington, D.C. ... away from you.",
       "characters": [
-        "Ron"
+        "Ben Wyatt"
       ],
       "joke_types": [
-        "dark_subversive",
-        "deadpan_understatement"
+        "awkward_silence",
+        "character_comedy"
       ],
-      "setup": "Jerry realizing he can't vote",
-      "punchline": "Ron's brutal assessment of how Jerry's incompetence could decide the election",
-      "craft_total": 7.53,
-      "impact_score": 7.33,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Ben and Leslie are trying to have a serious discussion about the Washington job offer.",
+      "punchline": "The comedic beat is Ben's slow, pained trailing off \u2014 and the implied awkward pause \u2014 as he works his way around to saying he'd miss Leslie. The comedy is in his inability to just say the emotional thing directly.",
+      "craft_total": 6.17,
+      "impact_score": 6.0,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent Ron deadpan - matter-of-factly pointing out the worst possible consequence of Jerry's mistake.",
+      "explanation": "A lighter comedic beat amid genuine emotion. The joke is mild \u2014 Ben's stammering avoidance of the actual feeling \u2014 but functional.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -811,22 +811,22 @@
     },
     {
       "index": 25,
-      "text": "There were moments that I didn't fully understand some of the physical shapes that we were making. But the sensations were amazing.",
+      "text": "Yeah, we'll just talk about it. We'll mull it over. We'll look at it from every side, et cetera, et cetera. I'm going to go vote. Just fulfill a lifelong dream of mine and achieve one of my all-time happiest moments real quick. And then we will talk about it. Cool.",
       "characters": [
-        "Chris"
+        "Leslie Knope"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "escalation"
       ],
-      "setup": "Chris describing his night with Jen",
-      "punchline": "His fitness-focused analytical approach to sexual positions",
-      "craft_total": 7.73,
-      "impact_score": 7.83,
-      "quotability": 8.5,
+      "setup": "Leslie and Ben agree to discuss the Washington job after the election.",
+      "punchline": "Leslie's 'et cetera, et cetera' signals she's already emotionally checked out of THIS conversation, then she pivots to treating voting \u2014 her lifelong dream \u2014 as if it's a quick errand ('real quick') before getting back to the important matter.",
+      "craft_total": 7.21,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Brilliant Chris characterization - treating sex like a workout with his characteristic analytical enthusiasm.",
+      "is_callback": 0,
+      "explanation": "Very Leslie \u2014 she's so excited to vote that she can't even finish the sentence about mulling things over, then frames 'fulfilling a lifelong dream' as a quick side errand. Good character integration with the 'Cool' mic-drop exit.",
       "dialogue": [
         {
           "speaker": "Chris",
@@ -836,22 +836,23 @@
     },
     {
       "index": 26,
-      "text": "I'll quit, and we'll leave together. I'm serious. Move to a new city, change our names, burn our fingertips off with acid, swap faces.",
+      "text": "Leslie, I can't figure this thing out. Can you help me? Yeah. Just hang on a second, Bobby. I got ink all over my hands, and the pen thingy came off the chain.",
       "characters": [
-        "Andy"
+        "Bobby Newport",
+        "Leslie Knope"
       ],
       "joke_types": [
-        "escalation",
+        "character_comedy",
         "absurdist"
       ],
-      "setup": "Andy comforting April about potentially getting fired",
-      "punchline": "Plan escalates from reasonable to completely insane criminal activities",
-      "craft_total": 8.13,
-      "impact_score": 8.33,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Leslie is at the polls for her most important moment \u2014 voting for herself in her own election.",
+      "punchline": "Bobby Newport, her opponent, cannot figure out the voting machine and asks HER for help \u2014 while she herself is struggling with basic pen mechanics.",
+      "craft_total": 7.0,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent escalation from sweet romantic gesture to Face/Off criminal activity. Perfect Andy logic - completely sincere about insane plan.",
+      "explanation": "The comedy is layered: Bobby asking his opponent for voting help is absurd on its face, and then we discover Leslie is also having trouble. 'The pen thingy came off the chain' is a perfect Leslie specificity \u2014 she knows everything about policy and government but in this moment the physical mechanics of voting are defeating her.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -893,23 +894,22 @@
     },
     {
       "index": 27,
-      "text": "How long was that? Twenty-two seconds. Boy, that's disappointing.",
+      "text": "I don't get it. [Bobby Newport presumably still struggling with the ballot]",
       "characters": [
-        "Leslie",
-        "Ann"
+        "Bobby Newport"
       ],
       "joke_types": [
-        "setup_punchline",
-        "self_deprecating"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Leslie finishing boxing workout feeling exhausted",
-      "punchline": "Revealing she only exercised for 22 seconds",
-      "craft_total": 7.4,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "Bobby has asked Leslie for help voting, she's given some basic instruction.",
+      "punchline": "He still doesn't get it. The simplest civic act defeats him.",
+      "craft_total": 6.78,
+      "impact_score": 6.5,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great setup/punchline with perfect timing - Leslie's self-awareness about her fitness level is endearing.",
+      "is_callback": 1,
+      "explanation": "Short capper to the voting scene. 'I don't get it' as a ballot-filling response is the right amount of Bobby. Economy is good; concept is a bit easy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -927,22 +927,22 @@
     },
     {
       "index": 28,
-      "text": "Ann, my hands. Don't panic. Here. My hands, Ann. They're in these round gloves.",
+      "text": "With just 1% of the precincts reporting, adult film star, Brandi Maxxxx, has a commanding lead.",
       "characters": [
-        "Leslie"
+        "News Anchor"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "cringe_discomfort"
+        "setup_punchline",
+        "absurdist"
       ],
-      "setup": "Leslie trying to read election results",
-      "punchline": "Can't function with boxing gloves still on",
-      "craft_total": 6.73,
-      "impact_score": 6.83,
-      "quotability": 5.0,
+      "setup": "Election results are starting to come in on the news.",
+      "punchline": "The early leader with 1% reporting is the adult film actress who ran as a joke candidate \u2014 delivered with full news anchor gravitas.",
+      "craft_total": 6.96,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Physical comedy follow-up - Leslie's panic makes her forget she's wearing boxing gloves.",
+      "is_callback": 0,
+      "explanation": "The straight news delivery of 'commanding lead' for Brandi Maxxxx is the joke \u2014 treating a porn star's early polling numbers with the same serious treatment as a real candidate. A good Pawnee world-building gag.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -952,22 +952,22 @@
     },
     {
       "index": 29,
-      "text": "Clear alcohols are for rich women on diets.",
+      "text": "Oh, my God. That's it. It's not Bobby Newport who's going to beat me. It's Brandi Maxxxx. The porn star. What is this, Italy?",
       "characters": [
-        "Ron"
+        "Leslie Knope"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Bartender offering gin and tonic",
-      "punchline": "Ron's blunt assessment of clear alcohol with classist/sexist undertones",
-      "craft_total": 8.13,
-      "impact_score": 8.33,
-      "quotability": 9.5,
+      "setup": "Leslie sees Brandi Maxxxx leading in early results.",
+      "punchline": "'What is this, Italy?' \u2014 Leslie's exasperated reference to Italy's history of electing celebrities/adult entertainers to office is both a sharp geopolitical joke and perfectly Leslie (she'd know this fact).",
+      "craft_total": 8.04,
+      "impact_score": 8.0,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Iconic Ron line - perfectly captures his masculinity obsession and disdain for pretense in one economical phrase.",
+      "explanation": "The Italy reference (Ilona Staller/Cicciolina, adult film actress who was elected to Italian parliament) is a surprisingly sophisticated joke that rewards knowledgeable viewers while also working as simple absurdist frustration. Leslie would absolutely know this fact. The delivery \u2014 'The porn star. What is this, Italy?' \u2014 has excellent rhythm. One of the episode's sharper lines.",
       "dialogue": [
         {
           "speaker": "Ron Swanson",
@@ -977,22 +977,23 @@
     },
     {
       "index": 30,
-      "text": "Well, I've never been one for meeting new people or doing new things or eating new types of food or traveling outside of Southern Indiana. I've had the same haircut since 1978, and I've driven the same car since 1991. I've used the same wooden comb for three decades. I have one bowl.",
+      "text": "I've said this to you before, and I know it makes you uncomfortable. Oh, boy. But you're thoughtful and you're brilliant, and your ambiguous ethnic blend perfectly represents the dream of the American melting pot.",
       "characters": [
-        "Ron"
+        "Leslie Knope",
+        "Ann Perkins"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "cringe_discomfort"
       ],
-      "setup": "Ben asking for relationship advice about change",
-      "punchline": "Ron's extreme resistance to any change escalating to absurd specifics",
-      "craft_total": 8.2,
-      "impact_score": 8.33,
+      "setup": "Leslie is about to say something heartfelt to Ann to express gratitude.",
+      "punchline": "'Your ambiguous ethnic blend perfectly represents the dream of the American melting pot' \u2014 Leslie's compliment crosses from sincere into uncomfortably racially specific, and both characters know it ('I know it makes you uncomfortable').",
+      "craft_total": 7.95,
+      "impact_score": 8.0,
       "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant Ron character moment - escalating from reasonable to absurdly extreme resistance to change, with perfect details.",
+      "explanation": "This is a running gag within the series (Leslie regularly makes odd compliments to Ann about her appearance/ethnicity) executed at its finest. 'Ambiguous ethnic blend' is both cringe-inducing and genuinely Leslie \u2014 she means it as the highest compliment, she's cited it before, and she knows it's uncomfortable but can't stop herself. Perfect character integration. 'Oh, boy' from Ann before it even starts shows this is a well-worn bit.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1022,22 +1023,23 @@
     },
     {
       "index": 31,
-      "text": "I still get my milk delivered by horse.",
+      "text": "Ron? I handed out 1,000 leaflets today. That is a personal best. Now, I'm off to vote. The polls are closed.",
       "characters": [
-        "Ron"
+        "Jerry Gergich",
+        "Ron Swanson"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Ron's list of unchanging habits",
-      "punchline": "Reveals he lives completely outside modern society",
-      "craft_total": 7.75,
-      "impact_score": 8.0,
-      "quotability": 9.5,
+      "setup": "Jerry proudly reports his leaflet achievement to Ron while announcing he's going to vote.",
+      "punchline": "The polls closed two hours ago. Jerry's personal best leafleting day was for nothing \u2014 he never voted.",
+      "craft_total": 7.52,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect escalation capstone - takes Ron's resistance to change to completely absurd extreme that's somehow believable for him.",
+      "is_callback": 0,
+      "explanation": "The structure is beautifully constructed: Jerry's pride in his record leaflet distribution, combined with the word 'Now' suggesting perfect timing, gets demolished by the single word '6:00' from Ron. The irony is layered \u2014 Jerry worked hardest of all but didn't do the most basic thing. The callback at the very end ('Jerry forgot to vote / Damn it, Jerry!') makes this even better in retrospect.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -1055,22 +1057,22 @@
     },
     {
       "index": 32,
-      "text": "Why are you laughing? Because my dream is dead.",
+      "text": "Nothing you can do. Except hope Leslie doesn't lose by one vote.",
       "characters": [
-        "Leslie"
+        "Ron Swanson"
       ],
       "joke_types": [
         "dark_subversive",
-        "character_comedy"
+        "deadpan_understatement"
       ],
-      "setup": "Leslie hearing she lost the election",
-      "punchline": "Inappropriate laughter as response to devastating news",
-      "craft_total": 7.83,
-      "impact_score": 7.83,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Jerry is distraught that he missed voting.",
+      "punchline": "Ron's 'comfort' is to point out the one scenario where Jerry's failure would be catastrophic and irreversible.",
+      "craft_total": 7.77,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great dark comedy moment - Leslie's complete breakdown manifesting as inappropriate laughter.",
+      "explanation": "This is Ron Swanson at his best \u2014 technically offering comfort while describing the worst possible outcome in exact, unhelpful detail. 'Nothing you can do' signals comfort, then 'except hope Leslie doesn't lose by one vote' is the twist. It's both funny and sets up legitimate stakes. The eventual 21-vote margin makes this a fantastic near-miss callback for rewatchers.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1084,22 +1086,22 @@
     },
     {
       "index": 33,
-      "text": "I'll give you Joe Biden's home phone number.",
+      "text": "and it's razor-thin. And getting razor-thinner.",
       "characters": [
-        "Jen Barkley"
+        "News Anchor"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "wordplay_pun",
+        "deadpan_understatement"
       ],
-      "setup": "Trying to convince Leslie to concede",
-      "punchline": "Offering impossibly valuable political contact as bribe",
-      "craft_total": 7.5,
-      "impact_score": 7.5,
-      "quotability": 8.0,
+      "setup": "The news anchor is describing the election margins as results come in.",
+      "punchline": "'Razor-thinner' \u2014 not a real word, but spoken by the anchor with complete broadcast authority.",
+      "craft_total": 5.99,
+      "impact_score": 5.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation showing Jen's high-level connections and Leslie's political obsessions in one offer.",
+      "explanation": "A small but effective Pawnee-media joke. The anchor uses an ungrammatical superlative with complete confidence. Good economy, moderate laugh.",
       "dialogue": [
         {
           "speaker": "Jen Barkley",
@@ -1125,22 +1127,23 @@
     },
     {
       "index": 34,
-      "text": "Now, hang on. That's interesting.",
+      "text": "Hey. What are you doing here? That was fun last night, you little screamer.",
       "characters": [
-        "Ben"
+        "Jen Barkley",
+        "Chris Traeger"
       ],
       "joke_types": [
-        "character_comedy",
-        "reaction_beat"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Joe Biden phone number offer",
-      "punchline": "Ben immediately considers the political value",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Chris has sought out Jen at the party for a conversation.",
+      "punchline": "Jen immediately and loudly references their sexual encounter with 'you little screamer' \u2014 a complete disregard for Chris's hope for a private conversation.",
+      "craft_total": 7.39,
+      "impact_score": 7.5,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Ben political nerd moment - immediately recognizes the value.",
+      "explanation": "'You little screamer' is both a funny revelation about Chris and a perfect Jen Barkley character moment \u2014 she's a power player who doesn't do discretion. The cringe comes from the public context. High quotability.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1150,22 +1153,22 @@
     },
     {
       "index": 35,
-      "text": "I picked the wrong week to do a juice cleanse.",
+      "text": "There were moments that I didn't fully understand some of the physical shapes that we were making. But the sensations were amazing. So, I just went with it.",
       "characters": [
-        "Tom"
+        "Chris Traeger"
       ],
       "joke_types": [
-        "callback",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Election stress continuing",
-      "punchline": "Tom's focus on lifestyle trends during major crisis",
-      "craft_total": 7.03,
-      "impact_score": 6.33,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Tom character moment - his self-centered focus on health trends during friend's crisis.",
+      "setup": "Chris is responding to Jen's greeting and her description of their night.",
+      "punchline": "'The physical shapes that we were making' \u2014 Chris's athletic/anatomical framing of sex as geometric configurations he didn't fully comprehend is perfectly Chris.",
+      "craft_total": 8.19,
+      "impact_score": 8.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is exceptional character comedy. 'Physical shapes that we were making' is a remarkably original way to describe sex \u2014 clinical, geometric, yet somehow deeply earnest. It's Chris Traeger applied to intimacy: he approaches everything as a training exercise, so even baffling sex positions are filed under 'sensations were amazing, just went with it.' The character voice is so specific this line could only be Chris. Justifies the 8.5 rating.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -1175,22 +1178,22 @@
     },
     {
       "index": 36,
-      "text": "Every five-minute coffee-break at work. Every night, every weekend, every spare moment of their lives, they gave to me. If I lose, I'll never forgive myself.",
+      "text": "We're just getting supplies. Anybody need anything? Push pins, or... Okay, great.",
       "characters": [
-        "Leslie"
+        "Chris Traeger"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Leslie reflecting on her friends' sacrifice",
-      "punchline": "Her typical self-blame and melodrama",
-      "craft_total": 7.25,
-      "impact_score": 6.75,
+      "setup": "Chris and Jen are about to sneak into the supply room for a sexual encounter, but someone is watching.",
+      "punchline": "Chris attempts to maintain the cover story ('getting supplies') while Jen clearly wants to move faster \u2014 the push pins improvisation while he pretends they have a legitimate errand is pure cringe comedy.",
+      "craft_total": 7.02,
+      "impact_score": 7.0,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Character-consistent but not particularly funny - more dramatic than comedic.",
+      "explanation": "The 'push pins, or...' trailing off is a nice comedic beat \u2014 Chris scrambling for any office supply to name as cover. The awkwardness is well-earned.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1204,22 +1207,23 @@
     },
     {
       "index": 37,
-      "text": "Let's go back to the party. You drive. I've had 11 whiskeys.",
+      "text": "I'll tell you what, honey. Here's the deal. You get fired, I'll quit, and we'll leave together. I'm serious. Move to a new city, change our names, burn our fingertips off with acid, swap faces. What? If we have to.",
       "characters": [
-        "Ron"
+        "Andy Dwyer"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
+        "escalation",
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Ron and Leslie finishing serious conversation",
-      "punchline": "Casual mention of dangerous level of drinking",
-      "craft_total": 7.67,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Andy is trying to comfort April about possibly getting fired for deleting the files.",
+      "punchline": "His proposed solution escalates from 'move to a new city' to 'burn our fingertips off with acid' to 'swap faces' \u2014 each step further into absurdist action-movie territory while maintaining complete sincerity.",
+      "craft_total": 8.69,
+      "impact_score": 9.0,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Ron - treating excessive drinking as matter-of-fact practical consideration.",
+      "explanation": "This is the other contender for best joke in the episode, tied with joke #12. The escalation is perfectly structured: each step is funnier than the last, and crucially each step is delivered with complete sincerity and commitment. 'Burn our fingertips off with acid' is already extreme, and then 'swap faces' takes it to Face/Off movie territory. 'What? If we have to.' is the perfect button \u2014 Andy has anticipated April's objection and pre-justified it. This is what romantic absurdism looks like when it's done at the highest level. Andy's love expressed through action-movie solutions is the purest character expression in the episode.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -1237,22 +1241,23 @@
     },
     {
       "index": 38,
-      "text": "A dental hygienist who's also a medium, so I can clean people's teeth and tell them when they're going to die.",
+      "text": "Good. Yes. Nice. Keep punching. Did I hit your boob? Sorry. No. Great form. Maybe. I have no idea, actually. I don't know what I'm doing.",
       "characters": [
-        "April"
+        "Ann Perkins",
+        "Leslie Knope"
       ],
       "joke_types": [
-        "dark_subversive",
+        "physical_slapstick",
         "character_comedy"
       ],
-      "setup": "Andy asking about dream jobs",
-      "punchline": "April's characteristically morbid career combination",
-      "craft_total": 8.37,
-      "impact_score": 8.5,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Ann has arranged some stress-relief activity (boxing or a punching bag) for Leslie during the election wait.",
+      "punchline": "The chaotic sequence reveals neither Ann nor Leslie knows what they're doing \u2014 Ann is coaching ('great form') while admitting she has no idea, and Leslie may have punched Ann in the breast.",
+      "craft_total": 6.36,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect April - combining mundane job with her death obsession in perfectly dark but practical way.",
+      "explanation": "A fun physical comedy sequence. 'Did I hit your boob?' is a funny specific, and Ann's coaching culminating in 'I have no idea, actually' is a good undermining of her earlier authority. Functional physical comedy.",
       "dialogue": [
         {
           "speaker": "April",
@@ -1262,24 +1267,23 @@
     },
     {
       "index": 39,
-      "text": "Fixed it. What? What? How? Jerry accidentally deletes things all the time. Ten years ago, I installed my own secret backup.",
+      "text": "How long was that? Twenty-two seconds. Boy, that's disappointing.",
       "characters": [
-        "Donna",
-        "April",
-        "Andy"
+        "Leslie Knope",
+        "Ann Perkins"
       ],
       "joke_types": [
         "setup_punchline",
-        "character_comedy"
+        "deadpan_understatement"
       ],
-      "setup": "April panicking about deleting all files",
-      "punchline": "Donna prepared for Jerry's incompetence with secret backup system",
-      "craft_total": 7.97,
-      "impact_score": 8.0,
-      "quotability": 7.5,
+      "setup": "Leslie has been stress-boxing/exercising with Ann and asks how long she went.",
+      "punchline": "Twenty-two seconds. Leslie's immediate 'Boy, that's disappointing' is hilariously resigned.",
+      "craft_total": 6.87,
+      "impact_score": 6.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Excellent payoff showing Donna's competence and Jerry's established incompetence history.",
+      "explanation": "Good tight setup/punchline. 'Twenty-two seconds' is funny by itself, but 'Boy, that's disappointing' \u2014 with the 'Boy' doing heavy work \u2014 makes it a complete joke. Leslie's self-assessment is always funny when she applies it to physical limitations.",
       "dialogue": [
         {
           "speaker": "April",
@@ -1301,23 +1305,23 @@
     },
     {
       "index": 40,
-      "text": "Where did you get a Washington Monument figurine at midnight on a Tuesday? From my office. I have, like, 50 of them.",
+      "text": "Ann, I can't read it. Okay. Ann, my hands. Don't panic. Here. My hands, Ann. They're in these round gloves.",
       "characters": [
-        "Ben",
-        "Leslie"
+        "Leslie Knope",
+        "Ann Perkins"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Leslie getting thoughtful gift",
-      "punchline": "Leslie's office is full of Washington Monument figurines",
-      "craft_total": 7.3,
-      "impact_score": 6.67,
-      "quotability": 6.5,
+      "setup": "Election results come in on Ann's phone during the boxing session.",
+      "punchline": "Leslie has boxing gloves on and cannot read the phone or use her hands \u2014 her urgency completely thwarted by the round gloves she's wearing.",
+      "craft_total": 6.95,
+      "impact_score": 6.75,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Leslie character detail - her political obsession extends to hoarding government memorabilia.",
+      "is_callback": 1,
+      "explanation": "A good physical comedy payoff to the boxing setup \u2014 Leslie can't get election results because of her boxing gloves. 'They're in these round gloves' as a description is charmingly specific. The frenetic back-and-forth between Leslie's panic and Ann's calm is well-constructed.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1335,23 +1339,23 @@
     },
     {
       "index": 41,
-      "text": "But you won. You won, Leslie. You won by 21 votes.",
+      "text": "Gin and tonic, please. Belay that order, Dana. Lagavulin, neat. Clear alcohols are for rich women on diets.",
       "characters": [
-        "Ann",
-        "Leslie"
+        "Ben Wyatt",
+        "Ron Swanson"
       ],
       "joke_types": [
-        "misdirection",
-        "setup_punchline"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie thinks she lost the recount",
-      "punchline": "Ann reveals she actually won",
-      "craft_total": 7.4,
-      "impact_score": 8.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Ben has ordered at the bar, stressed about the job offer.",
+      "punchline": "Ron immediately overrides Ben's order and dispenses his alcoholic philosophy \u2014 clear alcohols are for rich women on diets, therefore Lagavulin.",
+      "craft_total": 8.52,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good misdirection - reverses the expected outcome for emotional payoff.",
+      "explanation": "One of the episode's most quotable lines and a peak Ron Swanson moment. 'Clear alcohols are for rich women on diets' is not just a joke \u2014 it's a complete worldview encapsulated in eight words. 'Belay that order, Dana' treats the bartender like a naval vessel crew, which is wonderfully Ron. This line has become genuinely iconic within Parks & Rec canon. Comparable to the 8.0 anchor example in sharpness and economy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1369,23 +1373,22 @@
     },
     {
       "index": 42,
-      "text": "That was really sneaky, Ann. I know. I couldn't resist.",
+      "text": "Well, I've never been one for meeting new people or doing new things or eating new types of food or traveling outside of Southern Indiana. I've had the same haircut since 1978, and I've driven the same car since 1991. I've used the same wooden comb for three decades. I have one bowl. I still get my milk delivered by horse.",
       "characters": [
-        "Leslie",
-        "Ann"
+        "Ron Swanson"
       ],
       "joke_types": [
-        "misdirection",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Ann appearing to deliver bad news about election",
-      "punchline": "Ann reveals she was pranking Leslie about losing",
-      "craft_total": 6.47,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Ben has asked Ron what he would do if faced with a choice between staying comfortable or pursuing a big opportunity.",
+      "punchline": "Ron's answer is a perfectly escalating list of his own extreme conservatism culminating in 'I still get my milk delivered by horse' \u2014 which is so specific and anachronistic it becomes absurdist.",
+      "craft_total": 8.46,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Mild misdirection - Ann showing rare playful side but the setup wasn't very convincing.",
+      "explanation": "The escalation is brilliantly structured: each item in Ron's list of unchanging habits is slightly more extreme than the last. 'One bowl' is already wonderful minimalism, but 'I still get my milk delivered by horse' is a leap into anachronism that makes it absurdist. Then Ben's follow-up 'You do?' lands perfectly. This is Ron Swanson as a complete human philosophy expressed in ascending list form. Exceptional character integration \u2014 every word is Ron.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -1407,22 +1410,22 @@
     },
     {
       "index": 43,
-      "text": "Because guess who's got two thumbs and was just cleared from insurance fraud? This guy. You know? Got off on a technicality.",
+      "text": "You do? [Ben's follow-up to 'I still get my milk delivered by horse']",
       "characters": [
-        "Jean-Ralphio"
+        "Ben Wyatt"
       ],
       "joke_types": [
-        "character_comedy",
-        "dark_subversive"
+        "reaction_beat",
+        "deadpan_understatement"
       ],
-      "setup": "Jean-Ralphio asking about job opening",
-      "punchline": "Casually admitting to insurance fraud while applying for government job",
-      "craft_total": 7.5,
-      "impact_score": 7.5,
-      "quotability": 8.5,
+      "setup": "Ron has just claimed he gets his milk delivered by horse.",
+      "punchline": "Ben's simple 'You do?' confirms he's genuinely surprised and that Ron is completely serious \u2014 the understatement of the reaction is perfect.",
+      "craft_total": 7.9,
+      "impact_score": 7.75,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Jean-Ralphio - his characteristic criminal behavior delivered with complete confidence as qualification.",
+      "is_callback": 1,
+      "explanation": "The perfect straight-man reaction to the horse milk delivery. Two words that confirm the joke was landed. Economy of 10/10 \u2014 a lesser writer would over-explain it.",
       "dialogue": [
         {
           "speaker": "Jean-Ralphio",
@@ -1440,22 +1443,22 @@
     },
     {
       "index": 44,
-      "text": "Tommy! This party was amazing. You're amazing. You are ridiculous, but I like you. And I think that we should date all of it.",
+      "text": "But you and Leslie like to hold hands and jump off of cliffs together, into the great unknown. You two have a good relationship. I don't personally know what that's like, but I'm given to understand it means you're going to land on your feet.",
       "characters": [
-        "Ann"
+        "Ron Swanson"
       ],
       "joke_types": [
-        "character_comedy",
-        "callback"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Tom's prediction about getting back with Ann",
-      "punchline": "Ann drunkenly confirming Tom's 'premonition' came true",
-      "craft_total": 7.17,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Ron has established his own life philosophy of extreme consistency. He now addresses Ben's actual situation.",
+      "punchline": "'I don't personally know what that's like' \u2014 Ron acknowledges his own relational limitations while genuinely encouraging Ben, which is funny because Ron admitting ignorance about a healthy relationship is both sad and funny.",
+      "craft_total": 7.63,
+      "impact_score": 7.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Decent callback to Tom's dream prediction, though the payoff is predictable drunk confession.",
+      "is_callback": 0,
+      "explanation": "This is warm Ron Swanson \u2014 advice-giving that acknowledges his own emotional limitations. The comedy is gentle: 'I don't personally know what that's like' is honest Ron, and 'I'm given to understand it means you're going to land on your feet' is Ron processing emotional wisdom through secondhand information. Beautifully in character.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -1473,22 +1476,22 @@
     },
     {
       "index": 45,
-      "text": "Great win. Great night. Great year. Hot wife. Jackpot. Good job, me.",
+      "text": "But if Leslie wins, you get my old job. Assistant City Manager, right? Seems that way. Then good luck, to the both of us.",
       "characters": [
-        "Chris"
+        "Ron Swanson"
       ],
       "joke_types": [
-        "character_comedy",
-        "self_congratulatory"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Chris reflecting on the night",
-      "punchline": "His characteristic self-congratulation taken to narcissistic extreme",
-      "craft_total": 7.33,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Ron has been giving Ben warm advice about relationships and opportunity.",
+      "punchline": "Ron pivots to self-interest \u2014 he'll have to give up his job if Leslie wins, so he wishes them both luck, with the implication he's rooting for his own continued employment slightly more than Leslie's success.",
+      "craft_total": 7.27,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Chris character moment - his positive attitude becoming absurd self-congratulation.",
+      "explanation": "A nice button to the Ron/Ben scene. 'Then good luck, to the both of us' has a perfectly Ron self-interested quality while not actually being mean. The 'to the both of us' implies his luck is equally at stake.",
       "dialogue": [
         {
           "speaker": "Chris",
@@ -1498,22 +1501,22 @@
     },
     {
       "index": 46,
-      "text": "How does this sound? 'Officer Dwyer, Pawnee P.D.'",
+      "text": "I have an update that contains new information.",
       "characters": [
-        "Andy"
+        "Unknown Staffer/Reporter"
       ],
       "joke_types": [
-        "character_comedy",
-        "callback"
+        "deadpan_understatement",
+        "observational"
       ],
-      "setup": "Andy realizing April's dream jobs were all police work",
-      "punchline": "Andy considering becoming a cop himself",
-      "craft_total": 7.07,
-      "impact_score": 6.5,
+      "setup": "Someone bursts in with election news.",
+      "punchline": "'An update that contains new information' \u2014 an update by definition contains new information; this is bureaucratic tautology played completely straight.",
+      "craft_total": 6.54,
+      "impact_score": 6.0,
       "quotability": 5.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Nice setup for future character development - Andy finding his calling through April's influence.",
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A small Pawnee bureaucratic language joke. 'Contains new information' is a wonderfully redundant qualifier that fits the show's local government satire. Mild laugh.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1535,23 +1538,22 @@
     },
     {
       "index": 47,
-      "text": "Jerry forgot to vote. Damn it, Jerry!",
+      "text": "Bobby Newport... scion of the Sweetums candy empire and amateur go-kart champion, has won the race.",
       "characters": [
-        "Leslie",
-        "Everyone"
+        "News Anchor"
       ],
       "joke_types": [
-        "callback",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Episode ending on high note",
-      "punchline": "Reminder of Jerry's crucial mistake that could have changed everything",
-      "craft_total": 7.13,
+      "setup": "The news anchor is announcing the apparent winner of the City Council race.",
+      "punchline": "'Amateur go-kart champion' included in Bobby Newport's official biographical descriptor \u2014 in the gravest possible news-anchor tone.",
+      "craft_total": 7.21,
       "impact_score": 7.0,
-      "quotability": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback ending that brings Jerry's mistake full circle as the episode concludes.",
+      "is_callback": 0,
+      "explanation": "'Amateur go-kart champion' is the perfect absurd credential to include in a serious election broadcast. The word 'amateur' making it into the formal descriptor is a lovely touch \u2014 he's not even a professional go-kart champion.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1569,22 +1571,22 @@
     },
     {
       "index": 48,
-      "text": "City Council, bitches!",
+      "text": "Why are you laughing? Because my dream is dead.",
       "characters": [
-        "Leslie"
+        "Leslie Knope"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Leslie announcing victory celebration plans",
-      "punchline": "Uncharacteristically crude victory exclamation",
-      "craft_total": 7.25,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Upon hearing Bobby Newport has won, Leslie begins laughing.",
+      "punchline": "'Because my dream is dead.' \u2014 delivered with total calm as an explanation for the laughter, as if this is a perfectly rational response to catastrophic loss.",
+      "craft_total": 7.68,
+      "impact_score": 7.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment - Leslie's rare use of profanity for celebration.",
+      "explanation": "Dark and brilliant. The joke is in the complete calm with which Leslie explains her hysterical laughter \u2014 not 'I don't know why I'm laughing' but the precise and devastating 'Because my dream is dead.' It's the kind of thing you only say when you've gone past panic into a strange clarity. Perfect economy, deeply specific to Leslie's character. One of the episode's most quotable moments.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1595,13 +1597,544 @@
           "line": "And now we're gonna celebrate by going to the Sweetums factory and eating desserts until we die!"
         }
       ]
+    },
+    {
+      "index": 49,
+      "text": "Oh, come on. It's over. Just concede. Newport won by 21 votes. That's well within the margin for a recount. Please don't do this. I really want to get out of here.",
+      "characters": [
+        "Jen Barkley",
+        "Ben Wyatt"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Ben insists on a recount despite Jen's clear desire to leave.",
+      "punchline": "Jen \u2014 a professional political operative \u2014 is arguing AGAINST exercising a legal right on behalf of her own candidate, because she wants to go home. Her exhaustion has completely overridden her professional instincts.",
+      "craft_total": 6.65,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The irony of a campaign manager arguing against a recount is good character comedy. 'I really want to get out of here' is funny as the actual reason a professional gives for conceding."
+    },
+    {
+      "index": 50,
+      "text": "How about this? Why don't I make you guys a deal? Okay, there's no deal in the world that we would ever possibly... I'll give you Joe Biden's home phone number. Now, hang on. That's interesting.",
+      "characters": [
+        "Jen Barkley",
+        "Ben Wyatt"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Jen offers a deal to get Leslie to concede. Ben emphatically refuses before hearing it.",
+      "punchline": "Joe Biden's home phone number. Ben's principled refusal immediately crumbles \u2014 'Now, hang on. That's interesting.' The only thing that could penetrate Ben's integrity.",
+      "craft_total": 8.29,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The setup is perfect: Ben's emphatic 'there's no deal in the world' makes his immediate backpedaling funnier. The specific currency \u2014 Joe Biden's HOME phone number, not office \u2014 is exactly right for this show's universe (Biden was VP in 2012, and his regular-guy appeal is the joke). Ben's 'That's interesting' rather than 'yes' shows he still has some dignity. Excellent structure."
+    },
+    {
+      "index": 51,
+      "text": "Man, this is stressful. I picked the wrong week to do a juice cleanse.",
+      "characters": [
+        "Tom Haverford"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Everyone is stressed waiting for recount results.",
+      "punchline": "Tom's stress is expressed through the irrelevant inconvenience of his juice cleanse timing \u2014 a deeply Tom prioritization of lifestyle concerns during a crisis.",
+      "craft_total": 7.03,
+      "impact_score": 6.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Pure Tom \u2014 juice cleanse timing is his primary complaint during an election crisis. The specific wellness culture reference fits his character perfectly."
+    },
+    {
+      "index": 52,
+      "text": "That's a nice chair. Corinthian leather. Solid mahogany frame with, what I believe, are hand-cut mortise and tenon joints. Pinned with oak. I was really looking forward to sitting in it.",
+      "characters": [
+        "Ron Swanson"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ron has found Leslie alone in the commissioner's office, sitting in the chair she'd hoped to earn.",
+      "punchline": "Ron's grief for Leslie is expressed entirely through woodworking and furniture appreciation \u2014 his emotional intelligence translated through craftsmanship evaluation.",
+      "craft_total": 8.1,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is beautifully written Ron. Rather than directly address Leslie's grief, he analyzes the chair with expert precision \u2014 and 'I was really looking forward to sitting in it' is devastating in its indirect way of saying he wanted her to win. The specificity of 'mortise and tenon joints, pinned with oak' is genuine woodworking knowledge deployed as emotional communication. Exceptional character integration."
+    },
+    {
+      "index": 53,
+      "text": "Let's go back to the party. You drive. I've had 11 whiskeys.",
+      "characters": [
+        "Ron Swanson"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Ron has just delivered a heartfelt speech to Leslie about friendship and support.",
+      "punchline": "The emotional moment is immediately deflated by Ron casually revealing he's had 11 whiskeys \u2014 stated not as an apology but as a practical reason Leslie should drive.",
+      "craft_total": 8.17,
+      "impact_score": 8.33,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is the perfect Ron Swanson button. After a surprisingly sincere and touching speech, he immediately undercuts it with a completely casual revelation \u2014 not three whiskeys, not five, but ELEVEN. Delivered not as an excuse or apology but as a logistics note. The number '11' is doing enormous comedic work. This is high-quotability, high-economy character comedy. Easily one of the episode's best lines and a legitimate 8+ moment."
+    },
+    {
+      "index": 54,
+      "text": "Okay. That's good on places to live. Let's go back to dream jobs. If we have to start a new life, I have, 'Detective, F.B.I. agent, policeman, C.I.A. agent.'",
+      "characters": [
+        "Andy Dwyer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Andy and April are doing a contingency planning exercise in case April is fired.",
+      "punchline": "Andy's entire list of dream jobs for their new life consists exclusively of law enforcement/intelligence roles \u2014 revealing his career fantasy landscape with wonderful specificity.",
+      "craft_total": 7.38,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The list being entirely law enforcement/spy jobs (and treating 'policeman' and 'detective' as different) is very Andy. The list has just enough variety to be funny \u2014 he clearly thinks these are very different careers."
+    },
+    {
+      "index": 55,
+      "text": "A dental hygienist who's also a medium, so I can clean people's teeth and tell them when they're going to die.",
+      "characters": [
+        "April Ludgate"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Andy has asked April what her dream job would be.",
+      "punchline": "April's dream career combines two seemingly unrelated things \u2014 dental hygiene and telling people the date of their death \u2014 with the 'so I can' connecting them as if this is a perfectly logical combination.",
+      "craft_total": 9.02,
+      "impact_score": 9.0,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is the single most creative joke in the episode. The combination of dental hygiene (mundane, caring) with death prophecy (darkly April) is inspired. But what makes it exceptional is the 'so I can' construction \u2014 April presents this as a logical compound career, as if the reason to be a dental hygienist is to create the captive audience for announcing their death dates. It's perfectly April: dark, absurdist, specific, and delivered with complete sincerity. This approaches the Snip Snap anchor in originality and character specificity. Justifies a rare 9+ craft score."
+    },
+    {
+      "index": 56,
+      "text": "That's brilliant.",
+      "characters": [
+        "Andy Dwyer"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "April has just described her dental hygienist/death medium dream job.",
+      "punchline": "Andy's immediate, sincere 'That's brilliant' \u2014 no hesitation, no confusion, complete acceptance and admiration.",
+      "craft_total": 7.18,
+      "impact_score": 7.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Two words that tell us everything about Andy and April's relationship. He doesn't question it, he celebrates it. Good character integration as a reaction beat."
+    },
+    {
+      "index": 57,
+      "text": "Let's make this fast. I almost made it with Councilman Howser before you interrupted us.",
+      "characters": [
+        "Donna Meagle"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Andy and April have gotten Donna to help fix the computer crisis.",
+      "punchline": "Donna reveals she was in the middle of a romantic encounter with a councilman before being pulled away \u2014 delivered with complete calm as a logistical note.",
+      "craft_total": 7.17,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Donna \u2014 her romantic life is always more active and interesting than the plot, and she brings it up with perfect nonchalance. 'I almost made it' has a lovely schoolyard quality applied to adult romantic activity."
+    },
+    {
+      "index": 58,
+      "text": "Jerry accidentally deletes things all the time. Ten years ago, I installed my own secret backup.",
+      "characters": [
+        "Donna Meagle"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "The files seem lost. Donna calmly assesses the situation.",
+      "punchline": "Donna has had a secret backup system running for TEN YEARS specifically because Jerry breaks things so often. This implies a decade of quiet, underappreciated problem-solving anticipating Jerry's failures.",
+      "craft_total": 7.74,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Wonderful Jerry-adjacent joke that also reveals Donna's competence. The ten-year timeline is the kicker \u2014 she's been quietly protecting everyone from Jerry's incompetence for a decade without getting credit. It's a great piece of character and world-building simultaneously."
+    },
+    {
+      "index": 59,
+      "text": "You have to go to Washington. I told you I'm turning it down. I was being selfish. You put your whole life on hold for me.",
+      "characters": [
+        "Leslie Knope",
+        "Ben Wyatt"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Leslie opens a gift from Ben (a Washington Monument figurine) and reverses her earlier position on the job.",
+      "punchline": "Leslie calling herself 'selfish' for wanting her long-term partner to stay with her is characteristically Leslie \u2014 her self-critique is always extreme.",
+      "craft_total": 6.42,
+      "impact_score": 6.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Mild comedic beat within an emotional scene. Leslie calling wanting companionship 'selfish' is typical overachievement applied to relationships. Functional but not the episode's strongest."
+    },
+    {
+      "index": 60,
+      "text": "I'll go visit you, then you come visit me, then I go visit you again, and then we make out in the Lincoln Bedroom and the Jefferson Memorial and the Supreme Court Gallery. We'll do it all over Washington.",
+      "characters": [
+        "Leslie Knope"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Leslie is describing how a long-distance relationship in Washington could work.",
+      "punchline": "The list of romantic Washington locations escalates from the romantic (Lincoln Bedroom) to the increasingly public and inappropriate (Supreme Court Gallery) while maintaining her sincere enthusiasm.",
+      "craft_total": 7.57,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Very Leslie \u2014 her romanticism and her government nerd-dom are perfectly fused. 'Supreme Court Gallery' as a make-out destination is peak Leslie Knope: civic reverence and romantic ambition in perfect collision."
+    },
+    {
+      "index": 61,
+      "text": "Where did you get a Washington Monument figurine at midnight on a Tuesday? From my office. I have, like, 50 of them.",
+      "characters": [
+        "Ben Wyatt",
+        "Leslie Knope"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Ben has just given Leslie a Washington Monument figurine as a gift encouraging him to take the D.C. job.",
+      "punchline": "She has 50 of them in her office. Of course she does.",
+      "craft_total": 7.69,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfect Leslie characterization \u2014 of course she has 50 Washington Monument figurines in her office. Ben's slightly baffled 'Right.' acknowledges the absurdity while accepting it as completely normal for Leslie. Great economy."
+    },
+    {
+      "index": 62,
+      "text": "That was really sneaky, Ann. I know. I couldn't resist.",
+      "characters": [
+        "Leslie Knope",
+        "Ann Perkins"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Ann delivered the recount results in a way that made Leslie think she had lost before revealing she actually won.",
+      "punchline": "Ann's complete lack of apology \u2014 'I couldn't resist' \u2014 is a lovely character moment. Even during Leslie's highest stakes moment, Ann engineered a troll.",
+      "craft_total": 6.89,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Ann's 'I couldn't resist' after pranking her best friend with false bad news during her most important life moment is both endearing and funny. The friendship is so secure that this is fine."
+    },
+    {
+      "index": 63,
+      "text": "You're kind of ruining it now.",
+      "characters": [
+        "Unknown character/Ben Wyatt"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "April has just loudly self-congratulated for not ruining the election during the victory celebration.",
+      "punchline": "Someone points out that April's self-focused speech is, itself, ruining the moment she claims not to have ruined.",
+      "craft_total": 6.83,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Perfect callback button. The irony is exact: by celebrating not ruining things, April is ruining things. Five words, perfectly timed."
+    },
+    {
+      "index": 64,
+      "text": "Great. That is great news. I'm going to see you in D.C. Yeah, I guess you will. Yeah. Damn it. I didn't get a chance to say goodbye to Chris. Oh, he's just right over there. He seems really busy. Anyway, would you tell him I said goodbye? Great. Thank you.",
+      "characters": [
+        "Jen Barkley",
+        "Ann Perkins"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "awkward_silence"
+      ],
+      "setup": "Jen and Ann are having a brief exchange at the party.",
+      "punchline": "Jen asks Ann \u2014 someone she's just met \u2014 to relay a goodbye to Chris rather than walking ten feet to say it herself. The lazy delegation is pure Jen.",
+      "craft_total": 6.88,
+      "impact_score": 6.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jen's casual delegation of a personal goodbye to a stranger because Chris is 'really busy' (he's right there) is great character economy. The 'Sorry we didn't get a chance to meet. I'm leaving.' is a nice button."
+    },
+    {
+      "index": 65,
+      "text": "Sorry we didn't get a chance to meet. I'm Ann. That doesn't matter. I'm leaving.",
+      "characters": [
+        "Ann Perkins",
+        "Jen Barkley"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ann tries to introduce herself to Jen.",
+      "punchline": "'That doesn't matter. I'm leaving.' \u2014 Jen's complete dismissal of Ann's identity is both rude and weirdly direct. She's not mean, just transactional.",
+      "craft_total": 7.77,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'That doesn't matter. I'm leaving.' is exceptional economy. It's not cruel \u2014 Jen just doesn't process social niceties. The bluntness is her character. Very quotable."
+    },
+    {
+      "index": 66,
+      "text": "Was someone just talking about a job opening? Because guess who's got two thumbs and was just cleared from insurance fraud? This guy. You know? Got off on a technicality. What's the gig? I'm in.",
+      "characters": [
+        "Jean-Ralphio Saperstein"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Ron has declined the Assistant City Manager job. Jean-Ralphio apparently overheard.",
+      "punchline": "Jean-Ralphio immediately volunteers himself, citing his recent clearance from insurance fraud as a qualifier \u2014 'Got off on a technicality' delivered as if this is a credential.",
+      "craft_total": 7.63,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Jean-Ralphio's brief appearance is perfectly executed. 'Two thumbs' + insurance fraud clearance + 'technicality' as a resume line is peak Jean-Ralphio: breezy confidence about genuinely disqualifying information. Only Jean-Ralphio would apply for a government position by referencing recent criminal clearance."
+    },
+    {
+      "index": 67,
+      "text": "There's no job for you. That's a smart move. Go with your gut, right? I'll talk to you guys soon.",
+      "characters": [
+        "Jean-Ralphio Saperstein"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Jean-Ralphio has been told there's no job available.",
+      "punchline": "Jean-Ralphio immediately reframes his rejection as the other person making a smart choice, then cheerfully departs as if it was all on his terms.",
+      "craft_total": 7.18,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Jean-Ralphio's complete inability to register rejection is a core character trait executed well here. 'That's a smart move' about not hiring him is both delusional and oddly charming."
+    },
+    {
+      "index": 68,
+      "text": "Your victory speech, Councilwoman Knope. Someday, when I'm more emotionally stable, I want to read the concession speech you wrote for me. I never wrote it.",
+      "characters": [
+        "Ben Wyatt",
+        "Leslie Knope"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Ben hands Leslie her victory speech. She asks to someday read the concession speech he prepared.",
+      "punchline": "'I never wrote it.' Ben never wrote the concession speech \u2014 he believed in her enough to not prepare for the loss.",
+      "craft_total": 7.86,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Three words that are simultaneously a punchline and a deeply romantic statement. The comedy is in how Ben's earlier boast ('finished both of them last night') is revealed to have been only half true \u2014 and the half he skipped is the emotionally meaningful revelation. Beautiful structural economy."
+    },
+    {
+      "index": 69,
+      "text": "Tommy! This party was amazing. You're amazing. You are ridiculous, but I like you. And I think that we should date all of it. Let's do it. Let's date. This is my dream! 'Nostratomus!' It's happening. Awesome.",
+      "characters": [
+        "Tom Haverford",
+        "Ann Perkins"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Tom and Ann appear to be getting back together at the party.",
+      "punchline": "'We should date all of it' \u2014 a Tom Haverford-ism that's grammatically strange but communicates his enthusiasm. 'Nostratomus!' as a victory cry is gloriously absurd. And his callback to his dream \u2014 'This is my dream!' \u2014 referring to his premonition.",
+      "craft_total": 7.33,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback to Tom's dream premonition pays off beautifully. 'Nostratomus!' as Tom's personal victory exclamation (a mangled Nostradamus) is inspired. 'Date all of it' is classic Tom Haverford language \u2014 excessive enthusiasm applied to a normal concept."
+    },
+    {
+      "index": 70,
+      "text": "Hey, let's move in together. Totally. Really? Yeah. All right. No take-backs when we sober up, though, partner. No take-backs, partner. We're cowboys.",
+      "characters": [
+        "Tom Haverford",
+        "Ann Perkins"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Tom and Ann have just agreed to start dating.",
+      "punchline": "Within minutes they've escalated to moving in together \u2014 and their mutual 'no take-backs' cowboy pact is a hilariously formal way to seal an impulsive drunk decision.",
+      "craft_total": 7.27,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'We're cowboys' as the logical conclusion to a no-take-backs drunk moving-in agreement is wonderfully Tom. The cowboy mythology applied to a mundane domestic decision is absurd escalation."
+    },
+    {
+      "index": 71,
+      "text": "Great win. Great night. Great year. Hot wife. Jackpot.",
+      "characters": [
+        "Chris Traeger"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Chris is celebrating in his own way after the election victory.",
+      "punchline": "Chris's list peaks at 'Jackpot' \u2014 his relentlessly positive cataloguing of blessings, delivered in his rapid-fire athletic way.",
+      "craft_total": 7.47,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Very Chris \u2014 the staccato list of positives capped by 'Jackpot' is his character's essential optimism in list form. Economy is superb."
+    },
+    {
+      "index": 72,
+      "text": "Good job, me.",
+      "characters": [
+        "Chris Traeger"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Chris is celebrating after the lists of positive things.",
+      "punchline": "'Good job, me.' \u2014 Chris self-congratulating with the same tone he'd use to praise an athlete, applied to himself.",
+      "craft_total": 7.56,
+      "impact_score": 7.25,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Three words of pure character. 'Good job, me.' is Chris Traeger as a complete human philosophy \u2014 his relentless positivity turned on himself as a third-person recipient of his own coaching. Absolute economy. One of the most quotable moments in the episode for how much it captures in three words."
+    },
+    {
+      "index": 73,
+      "text": "Almost everything you wrote on that board as a dream job was some type of police officer. How does this sound? 'Officer Dwyer, Pawnee P.D.'",
+      "characters": [
+        "April Ludgate",
+        "Andy Dwyer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "April has noticed that Andy's dream job list was all law enforcement variants and points this out as a revelation.",
+      "punchline": "April suggests Andy become an actual police officer in Pawnee \u2014 and the way 'Officer Dwyer, Pawnee P.D.' is delivered implies Andy has never thought of this obvious solution to his obvious dream.",
+      "craft_total": 7.83,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A season-arc setup disguised as a joke \u2014 Andy had been listing detective/cop/FBI fantasies without connecting them to an actual career path. April pointing this out as a discovery is sweet and funny. 'Officer Dwyer, Pawnee P.D.' has a lovely ring to it."
+    },
+    {
+      "index": 74,
+      "text": "Guys, we're going to J.J.'s for victory waffles, and then we're staying up all night talking about our lives and our feelings. Non-negotiable. Let's go. City Council, bitches!",
+      "characters": [
+        "Leslie Knope"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Leslie is addressing her friends after winning.",
+      "punchline": "'City Council, bitches!' \u2014 Leslie's unprecedented profanity as a victory exclamation is both shocking and perfect, a joyful release from her usual decorum. 'Non-negotiable' applied to emotional vulnerability is also very Leslie.",
+      "craft_total": 7.99,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is the emotional and comedic peak of the episode. 'Non-negotiable' applied to staying up talking about feelings is wonderfully Leslie \u2014 coercive warmth. But 'City Council, bitches!' is what makes it exceptional: it's the only time Leslie swears in the episode (possibly the series to this point), and the contrast with her normal earnestness makes it a genuine crowd-pleaser. The joke is in the character violation that is somehow totally in character. Justifies a high impact score."
+    },
+    {
+      "index": 75,
+      "text": "Jerry forgot to vote. Damn it, Jerry!",
+      "characters": [
+        "Unknown",
+        "Multiple Characters"
+      ],
+      "joke_types": [
+        "callback",
+        "running_gag"
+      ],
+      "setup": "The episode ends with a final title card or announcement revealing Jerry forgot to vote.",
+      "punchline": "'Damn it, Jerry!' \u2014 the callback to the running gag of Jerry's incompetence, but now with the specific devastating irony that he forgot to vote after spending the whole day campaigning for Leslie.",
+      "craft_total": 8.24,
+      "impact_score": 8.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A near-perfect episode tag. The setup was planted at 07:27 (Jerry misses the polls), paid off all episode by the 21-vote margin tension, and resolved here. 'Damn it, Jerry!' as a communal exclamation rewards everyone who remembered the planted detail. The 21-vote win makes the Jerry revelation hit especially hard in retrospect \u2014 had he voted, Leslie would have won by 22. This is textbook comedic structure across an entire episode. The brevity makes it even more devastating."
     }
   ],
-  "imdb_rating": 9.0,
-  "imdb_votes": 3079,
-  "tmdb_overview": "It's election day in Pawnee, and Leslie and Bobby Newport are separated by a razor-thin margin. While everyone waits with Leslie for the race to be called, they ponder their futures, and their new opportunities.",
   "air_date": "2012-05-10",
+  "imdb_rating": 9.0,
+  "imdb_votes": 3096,
+  "tmdb_overview": "It's election day in Pawnee, and Leslie and Bobby Newport are separated by a razor-thin margin. While everyone waits with Leslie for the race to be called, they ponder their futures, and their new opportunities.",
   "still_path": "/i6wOfRi5L6JKQV5ONoxCOLUsAUF.jpg",
+  "director": [
+    "Michael Schur"
+  ],
+  "writers": [
+    "Michael Schur"
+  ],
   "guest_stars": [
     {
       "name": "Randy Kovitz",
@@ -1643,24 +2176,6 @@
       "character": "Perd Hapley",
       "profile_path": "/nKsCeoyzXRTf158Y0RN2xENcgQb.jpg"
     }
-  ],
-  "war": null,
-  "humor_index_v1": 93.0,
-  "ci_95_low": 83.2,
-  "ci_95_high": 91.0,
-  "percentile_in_show": 91.9,
-  "zscore_in_show": 1.58,
-  "zscore_in_season": 1.26,
-  "humor_index_single_run": 89.9,
-  "standup_jokes": 0,
-  "standup_fraction": 0.0,
-  "consensus_runs": 3,
-  "consensus_method": "3-run consensus",
-  "director": [
-    "Michael Schur"
-  ],
-  "writers": [
-    "Michael Schur"
   ],
   "insight": "Election night chaos sustains 87-point score through relentless character escalation over 48 jokes."
 }

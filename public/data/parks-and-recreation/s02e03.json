@@ -4,34 +4,34 @@
   "season": 2,
   "episode_number": 3,
   "title": "Beauty Pageant",
-  "humor_index": 89.0,
-  "jpm": 2.18,
-  "avg_craft": 7.46,
-  "avg_impact": 7.24,
-  "total_jokes": 43,
-  "war": 58.0,
-  "dominant_joke_types": "[\"character_comedy\", \"cringe_discomfort\", \"misdirection\"]",
-  "standout_joke_ids": "[20, 32, 19]",
-  "weakest_section": "15:00-16:00",
+  "humor_index": 90.6,
+  "jpm": 3.65,
+  "avg_craft": 7.27,
+  "avg_impact": 7.22,
+  "total_jokes": 72,
+  "war": 89.6,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[24, 32, 37]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "So everybody needs to pitch in $90... Because I ordered a beautiful bouquet of daffodils from a website after a few glasses of wine.",
+      "text": "Leslie announces she got Ron flowers, then reveals everyone owes $90 because she ordered a bouquet 'after a few glasses of wine'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Leslie announces everyone needs to pitch in $90 for Ron's flowers",
-      "punchline": "She reveals she drunkenly overspent on an expensive website",
-      "craft_total": 6.95,
-      "impact_score": 6.5,
+      "setup": "Leslie frames this as a thoughtful group gift announcement",
+      "punchline": "The shocking $90 price tag is revealed to be the result of drunk online shopping",
+      "craft_total": 7.17,
+      "impact_score": 6.83,
       "quotability": 5.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character-specific joke showing Leslie's well-meaning but impractical nature. The delayed reveal works well.",
+      "explanation": "Works because it's deeply character-specific \u2014 Leslie's overenthusiasm and poor judgment combined with her obliviousness to the burden she's placing on others is quintessential Leslie. The escalating casualness ('So, Tom... Donna... Jerry, I'm not sure, time will tell') is a nice structural bonus.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -49,22 +49,25 @@
     },
     {
       "index": 2,
-      "text": "So, Tom, I think you might be getting some daffodils too. Donna, you're definitely getting some. Jerry, I don't know, I'm not sure. Time will tell.",
+      "text": "Leslie casually informs her colleagues they might be getting daffodils too, listing them with varying degrees of certainty: 'Jerry, I don't know, I'm not sure. Time will tell.'",
       "characters": [
-        "Leslie"
+        "Leslie",
+        "Tom",
+        "Donna",
+        "Jerry"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie admits to drunk flower ordering",
-      "punchline": "She casually reveals she apparently ordered flowers for multiple people with varying certainty",
-      "craft_total": 7.12,
-      "impact_score": 7.0,
+      "setup": "Leslie has already revealed the $90 overcharge; now she casually implicates her coworkers",
+      "punchline": "The absurd uncertainty about Jerry's floral fate \u2014 'time will tell' \u2014 caps the escalation with perfect casualness",
+      "craft_total": 7.08,
+      "impact_score": 6.5,
       "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Great escalation of the drunk ordering premise with perfect Leslie delivery - matter-of-fact about her chaos.",
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The specificity of 'time will tell' for Jerry alone is a great comedic choice \u2014 it treats the fate of Jerry's surprise flowers as a grand existential mystery, while also landing the show's running gag of Jerry being an afterthought.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -78,23 +81,22 @@
     },
     {
       "index": 3,
-      "text": "The girls from Talent and Poise are gonna be there? - What? - Talent and Poise. It's a strip club by the V.A. Hospital.",
+      "text": "Tom says 'I want to be a judge' immediately after Leslie announces she's judging the beauty pageant",
       "characters": [
-        "Tom",
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
-        "misdirection",
-        "wordplay_pun"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Leslie mentions contestants will be chosen for 'talent and poise'",
-      "punchline": "Tom misunderstands, thinking it's a strip club name",
-      "craft_total": 8.27,
-      "impact_score": 8.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Leslie announces she is judging the Miss Pawnee pageant",
+      "punchline": "Tom's instantaneous, transparently self-interested response",
+      "craft_total": 6.7,
+      "impact_score": 6.33,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent misdirection joke with perfect character specificity. Tom's sleazy misunderstanding is perfectly in character and the setup/payoff timing is flawless.",
+      "explanation": "Brief but effective character beat. Tom's motives are instantly transparent and perfectly in character. Economy is the strength here \u2014 it's one short line that tells you everything about Tom.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -108,22 +110,24 @@
     },
     {
       "index": 4,
-      "text": "No, what's disgusting is the Glitter Factory. Do not go to the Glitter Factory.",
+      "text": "'The girls from Talent and Poise are gonna be there?' \u2014 Tom mishears 'talent and poise' as the name of a strip club",
       "characters": [
-        "Tom"
+        "Tom",
+        "Leslie"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "wordplay_pun",
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Discussion of inappropriate strip club",
-      "punchline": "Tom escalates by warning about an even worse establishment",
-      "craft_total": 7.15,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie says the Miss Pawnee winner will be chosen for her 'talent and poise'",
+      "punchline": "Tom reveals there's actually a strip club called 'Talent and Poise' \u2014 implying he's a regular",
+      "craft_total": 7.95,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalation that builds on the previous joke while staying true to Tom's character.",
+      "explanation": "This is the episode's first standout joke. The misunderstanding is organic and perfectly structured \u2014 Leslie uses the phrase naturally, Tom's confusion is plausible enough to work as wordplay, and the payoff (Tom having 'meetings' there) layers on character comedy. The immediate escalation to the Glitter Factory makes it even better.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -133,22 +137,23 @@
     },
     {
       "index": 5,
-      "text": "So that awesome girls like you, who are not, you know, classically hot, can be rewarded for their intelligence and savvy.",
+      "text": "'No, what's disgusting is the Glitter Factory. Do not go to the Glitter Factory.'",
       "characters": [
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "escalation",
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie tries to encourage April about the pageant",
-      "punchline": "She accidentally insults April while trying to be supportive",
-      "craft_total": 7.12,
-      "impact_score": 7.5,
-      "quotability": 6.0,
+      "setup": "Leslie calls Tom's strip club knowledge 'disgusting'",
+      "punchline": "Tom escalates by defending Talent and Poise by comparison to an even worse establishment, the Glitter Factory, with a sincere warning",
+      "craft_total": 8.14,
+      "impact_score": 8.5,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Leslie moment - her good intentions creating awkwardness through poor word choice.",
+      "is_callback": 1,
+      "explanation": "A near-perfect escalation joke. Tom doesn't defend himself \u2014 instead he introduces an entirely new, worse establishment as a deflection, and his sincere 'Do not go to the Glitter Factory' sounds like a warning from genuine experience. The name 'Glitter Factory' is inspired. Highly quotable and lands harder than the setup joke.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -174,22 +179,24 @@
     },
     {
       "index": 6,
-      "text": "The coffee's $7.",
+      "text": "April brings Leslie an iced mocha, then 'completely unrelated' announces she's signed up for the pageant",
       "characters": [
-        "April"
+        "April",
+        "Leslie"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "setup_punchline",
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "April brings Leslie coffee and asks for favoritism",
-      "punchline": "After Leslie's ethical speech, April deadpan asks for payment",
-      "craft_total": 8.0,
-      "impact_score": 7.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "April brings Leslie a fancy coffee gift, emphasizing it is 'completely unrelated' to what she's about to say",
+      "punchline": "She immediately reveals she wants a favor (Leslie's judge vote) \u2014 the bribe is completely transparent",
+      "craft_total": 6.93,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect April deadpan delivery that deflates Leslie's earnest moment. Great economy and timing.",
+      "explanation": "Competent and well-executed. April's flat deadpan delivery of 'completely unrelated' is funny because she doesn't even commit to the lie. The joke is character-appropriate for April's signature minimal-effort approach.",
       "dialogue": [
         {
           "speaker": "April",
@@ -207,22 +214,23 @@
     },
     {
       "index": 7,
-      "text": "Just bump that clown. Tell him they already have an Asian judge.",
+      "text": "Leslie tells April she wants to reward 'awesome girls like you, who are not, you know, classically hot'",
       "characters": [
-        "April"
+        "Leslie"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "cringe_discomfort",
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "April wants Leslie to help her win",
-      "punchline": "April suggests Leslie use racist reasoning to get Tom kicked off",
-      "craft_total": 6.57,
-      "impact_score": 6.0,
-      "quotability": 5.5,
+      "setup": "Leslie is trying to compliment April's intelligence over looks",
+      "punchline": "She inadvertently and directly insults April's appearance while trying to be empowering",
+      "craft_total": 7.16,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark humor typical of April's character but relies on offensive stereotype for the punchline.",
+      "explanation": "This is quintessential Leslie Knope cringe \u2014 she believes deeply in what she's saying and means it kindly, which makes the accidental insult so much worse. 'Not classically hot' is a perfectly calibrated phrase: specific enough to sting but delivered with sincere feminist enthusiasm.",
       "dialogue": [
         {
           "speaker": "April",
@@ -248,22 +256,22 @@
     },
     {
       "index": 8,
-      "text": "But if you don't do it to look at women in bikinis and assign them numerical grades, what the hell do you call in favors for?",
+      "text": "April says 'I can be idiotic for $600' after initially calling beauty pageants idiotic",
       "characters": [
-        "Tom"
+        "April"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "deadpan_understatement"
       ],
-      "setup": "Tom explains how he became a pageant judge",
-      "punchline": "He's completely honest about his shallow motivations",
-      "craft_total": 7.25,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "April dismisses beauty pageants as idiotic",
+      "punchline": "She immediately reveals she's willing to abandon that principle for $600",
+      "craft_total": 7.62,
+      "impact_score": 7.25,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Tom's unashamed superficiality with solid delivery.",
+      "explanation": "Clean, economic line that's very April. The self-awareness of 'I can be idiotic for $600' perfectly encapsulates her character \u2014 cynical but practical. High quotability for its punchy economy.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -273,22 +281,22 @@
     },
     {
       "index": 9,
-      "text": "The original title of this was 'a lively fisting'. But they had to change it. For obvious reasons.",
+      "text": "'Just bump that clown. Tell him they already have an Asian judge.'",
       "characters": [
-        "Dave"
+        "April"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "misdirection"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Dave explains a historical mural depicting a fight",
-      "punchline": "The innocent historical term has unfortunate modern connotations",
-      "craft_total": 7.32,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Leslie says she can't show April favoritism because it would be unethical",
+      "punchline": "April casually suggests Leslie get rid of the other Asian judge with a blunt racial maneuver",
+      "craft_total": 7.2,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever wordplay joke that works on multiple levels, though somewhat disconnected from character.",
+      "explanation": "Sharp and dark \u2014 April's willingness to use race as a casual chess move to get what she wants is surprising and specific. The bluntness is the joke. Slightly edgy but character-earned because it comes from April's total amorality rather than malice.",
       "dialogue": [
         {
           "speaker": "Dave",
@@ -298,23 +306,22 @@
     },
     {
       "index": 10,
-      "text": "It's Madeleine Albright. - That's her name? I call mine nana. - No, that's Madeleine Albright. First female Secretary of State.",
+      "text": "Tom reveals he also got himself made a judge, saying 'I know a guy. I had to call in a few favors.'",
       "characters": [
-        "Leslie",
-        "Dave"
+        "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "misdirection"
+        "setup_punchline"
       ],
-      "setup": "Dave sees Leslie's Madeleine Albright photo",
-      "punchline": "He thinks it's Leslie's grandmother and calls his own 'nana'",
-      "craft_total": 7.78,
-      "impact_score": 7.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Leslie is surprised Tom is also a judge",
+      "punchline": "Tom reveals he leveraged real social capital to get himself into a beauty pageant judge role \u2014 implying this is how he uses favors",
+      "craft_total": 7.04,
+      "impact_score": 6.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great character comedy showing the intellectual gap between Leslie and Dave through a simple misunderstanding.",
+      "explanation": "The setup is slightly telegraphed but the delivery sells it. Tom's matter-of-fact pride in burning actual political capital for ogling women is perfectly character-consistent.",
       "dialogue": [
         {
           "speaker": "Dave",
@@ -332,23 +339,22 @@
     },
     {
       "index": 11,
-      "text": "I mean, could you date someone who doesn't love giving vaccinations? - I've never dated anyone who loves giving vaccinations.",
+      "text": "'But if you don't do it to look at women in bikinis and assign them numerical grades, what the hell do you call in favors for?'",
       "characters": [
-        "Leslie",
-        "Ann"
+        "Tom"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Leslie compares dating incompatibility to professional interests",
-      "punchline": "Ann points out the absurdity of Leslie's specific example",
-      "craft_total": 8.12,
+      "setup": "Tom has just revealed he called in favors to become a beauty pageant judge",
+      "punchline": "Tom frames this as the ONLY rational use of political capital, delivered with complete sincerity",
+      "craft_total": 7.44,
       "impact_score": 7.5,
       "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent absurdist humor showing Leslie's tendency to overthink through Ann's practical response.",
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Excellent Tom Haverford line. The rhetorical construction ('if not for THIS, then what?') frames his shallow priority as a deeply held philosophical position. The 'numerical grades' specificity makes it funnier than just 'look at women.'",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -362,22 +368,22 @@
     },
     {
       "index": 12,
-      "text": "Well, I'll see you tonight for the weirdest second date ever.",
+      "text": "Mark explains the mural depicts a famous fight, originally titled 'A Lively Fisting'",
       "characters": [
-        "Ann"
+        "Mark"
       ],
       "joke_types": [
-        "observational",
-        "irony_sarcasm"
+        "wordplay_pun",
+        "dark_subversive"
       ],
-      "setup": "Mark offers to fix Ann's shower",
-      "punchline": "Ann acknowledges the unusual nature of having a handyman date",
-      "craft_total": 6.62,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Mark is explaining an 1880s historical town mural depicting Reverend Bradley fighting a widow",
+      "punchline": "The original innocent title 'A Lively Fisting' sounds deeply obscene in modern context",
+      "craft_total": 7.1,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Mild observational humor that acknowledges the situation's awkwardness.",
+      "explanation": "A solid historical-anachronism wordplay joke. The setup is careful \u2014 the mural depicts a real fistfight, so the original title is genuinely defensible. The payoff ('But they had to change it. For obvious reasons.') is delivered with perfect understatement. Rewatch bonus because the visual of the mural adds to the joke.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -403,22 +409,22 @@
     },
     {
       "index": 13,
-      "text": "34c, 36b, 34b, 34d. 32a? How'd you get in here? I'm kidding. You're perfect, each one of you. God bless.",
+      "text": "Mark adds 'She's got him by the hair pretty good there' while viewing the mural, as a deadpan coda",
       "characters": [
-        "Tom"
+        "Mark"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Tom is introduced as a judge who will be fair and forward-thinking",
-      "punchline": "He immediately starts sizing up contestants by bra size",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Tom character moment showing his complete lack of self-awareness and inappropriate behavior.",
+      "setup": "The 'Lively Fisting' joke has just landed",
+      "punchline": "Mark moves on to casually describe the visual content of the fight with sportscaster-level detachment",
+      "craft_total": 6.34,
+      "impact_score": 5.67,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A modest but effective tag that keeps the mural bit going a beat longer. The deadpan casualness works well but it's more of a grace note than a standalone joke.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -432,22 +438,22 @@
     },
     {
       "index": 14,
-      "text": "Hello, I'm April Ludgate. I'm 20 years old, I like... People... Places... And things. And Pawnee is my favorite place in the world.",
+      "text": "Mark's talking-head confessional: 'I didn't come here to look at the murals. I came to ask her on a date.'",
       "characters": [
-        "April"
+        "Mark"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "irony_sarcasm",
+        "reaction_beat"
       ],
-      "setup": "Beauty pageant contestant introductions",
-      "punchline": "April gives the most generic, unenthusiastic introduction possible",
-      "craft_total": 8.22,
-      "impact_score": 8.0,
-      "quotability": 8.5,
+      "setup": "Mark has just been earnestly explaining the historical murals to Leslie",
+      "punchline": "Confessional reveals the entire mural conversation was a pretense \u2014 he was working up the nerve to ask her out",
+      "craft_total": 6.08,
+      "impact_score": 5.5,
+      "quotability": 4.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect April deadpan performance that subverts pageant expectations with maximum apathy. Highly quotable.",
+      "explanation": "A warm character beat more than a joke, but the mockumentary format turns the sincerity into mild comedy via irony \u2014 the cut to him admitting his real purpose retroactively reframes the entire mural scene. Rewatch bonus because you see his nervous energy differently.",
       "dialogue": [
         {
           "speaker": "April",
@@ -457,22 +463,23 @@
     },
     {
       "index": 15,
-      "text": "I've been on Youtube.",
+      "text": "Dave sees Leslie's calendar photo and asks 'Is that your grandma?' \u2014 it's Madeleine Albright",
       "characters": [
-        "Trish"
+        "Dave",
+        "Leslie"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Contestant giving her accomplishments",
-      "punchline": "She lists being on YouTube as a notable achievement",
-      "craft_total": 6.5,
-      "impact_score": 6.0,
-      "quotability": 5.5,
+      "setup": "Dave is making small talk while Leslie checks her schedule",
+      "punchline": "He mistakes the First Female Secretary of State for Leslie's grandmother",
+      "craft_total": 7.26,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple joke about modern culture's low bar for fame, though somewhat dated now.",
+      "explanation": "Good character-specific joke. Leslie's idol worship of female political figures is established canon, and Dave's innocent mistake reveals an incompatibility that will drive the episode's romantic subplot. The 'I call mine nana' follow-through is a perfect grace note.",
       "dialogue": [
         {
           "speaker": "Trish",
@@ -482,22 +489,22 @@
     },
     {
       "index": 16,
-      "text": "They can't all be winners.",
+      "text": "Dave responds to learning it's Madeleine Albright: 'That's her name? I call mine nana.'",
       "characters": [
-        "Tom"
+        "Dave"
       ],
       "joke_types": [
-        "reaction_beat",
+        "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Trish gives an vapid introduction",
-      "punchline": "Tom's matter-of-fact assessment",
-      "craft_total": 6.38,
-      "impact_score": 6.0,
-      "quotability": 6.5,
+      "setup": "Leslie corrects Dave that it's Madeleine Albright, First Female Secretary of State",
+      "punchline": "Dave's response treats this as just another grandma-naming preference",
+      "craft_total": 7.74,
+      "impact_score": 7.75,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Simple but effective reaction that undercuts the moment with blunt honesty.",
+      "is_callback": 1,
+      "explanation": "The best joke in the Dave/Albright sequence. The structure is perfect: Dave's 'I call mine nana' treats Madeleine Albright as just another elderly woman's nickname, which is both a measure of his ignorance and an accidentally logical response. Highly economical \u2014 8 words that do a lot of work.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -507,22 +514,22 @@
     },
     {
       "index": 17,
-      "text": "Looks like we got a frontrunner.",
+      "text": "Dave's follow-up: 'OK, so not... That's not your grandma then.' \u2014 a long dawning realization",
       "characters": [
-        "Charles"
+        "Dave"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "character_comedy",
         "reaction_beat"
       ],
-      "setup": "After hearing Trish's terrible introduction",
-      "punchline": "The veteran judge sarcastically declares her the frontrunner",
-      "craft_total": 6.52,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Leslie has explained who Madeleine Albright is",
+      "punchline": "Dave's slow verbal processing of the information, landing on a gentle understatement",
+      "craft_total": 5.95,
+      "impact_score": 5.33,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Solid sarcastic response that plays on pageant judge stereotypes.",
+      "is_callback": 1,
+      "explanation": "A tag that extends the joke a beat past its best punchline. Functional but slightly over-explains what 'I call mine nana' already landed perfectly.",
       "dialogue": [
         {
           "speaker": "Judge",
@@ -532,22 +539,24 @@
     },
     {
       "index": 18,
-      "text": "She's not even twirling the baton.",
+      "text": "Leslie in confessional: 'Wanna hear something awful? He didn't even know Madeleine Albright.' \u2014 Ann replies 'Who?' \u2014 Leslie: 'Not you too.'",
       "characters": [
-        "Tom"
+        "Leslie",
+        "Ann"
       ],
       "joke_types": [
-        "observational",
-        "reaction_beat"
+        "running_gag",
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Tom praises Trish's baton talent",
-      "punchline": "Visual reveal that she's failing at basic baton twirling",
-      "craft_total": 7.0,
-      "impact_score": 6.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good visual comedy setup with Tom's obliviousness to actual performance quality.",
+      "setup": "Leslie is ranting to Ann about Dave not knowing Madeleine Albright",
+      "punchline": "Ann also doesn't know who Madeleine Albright is, doubling Leslie's horror",
+      "craft_total": 7.86,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Excellent escalation using the callback. The structure is tight: Leslie vents to her best friend expecting validation, only to get the exact same ignorance she's complaining about. 'Not you too' is perfectly calibrated despair. This recontextualizes Ann's character briefly and works as a running gag in miniature.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -565,22 +574,24 @@
     },
     {
       "index": 19,
-      "text": "Hi, I'm Natalie. I love Ritalin and have low self-esteem.",
+      "text": "Leslie asks Ann: 'Could you date someone who doesn't love giving vaccinations?' \u2014 Ann replies 'I've never dated anyone who loves giving vaccinations.'",
       "characters": [
-        "April"
+        "Leslie",
+        "Ann"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "observational",
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "April does impressions as her talent",
-      "punchline": "Her 'impression' of her sister is brutally honest family dysfunction",
-      "craft_total": 8.05,
-      "impact_score": 8.5,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Leslie uses her own interests as the analogy for why she can't date Dave (he doesn't love female political figures)",
+      "punchline": "Ann's deadpan response reveals that Leslie's analogy is completely unrelatable \u2014 nobody else has that specific passion requirement",
+      "craft_total": 7.92,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent dark humor that's perfectly April - using 'impressions' to air family issues. Highly quotable and shocking.",
+      "explanation": "Strong joke that earns its laughs. Leslie's obliviousness to how unusual her standards are is perfectly captured by Ann's flat, reasonable response. The 'vaccinations' parallel is both a good character beat for Ann (a nurse) and a funny mirror held up to Leslie's Albright obsession. The structure is near-perfect.",
       "dialogue": [
         {
           "speaker": "April",
@@ -598,22 +609,23 @@
     },
     {
       "index": 20,
-      "text": "Women should do everything. Check out my four-color pen. Listen up while I talk about some really important stuff. Parks, parks... Michelle Obama, parks. Gay penguins, parks, sugar, parks.",
+      "text": "Ann asks Ben/Mark if he's 'handy' and can fix things, then invites him over to fix her shower, framing it as a 'cheap, quick dinner that will be no trouble at all for me.'",
       "characters": [
-        "April"
+        "Ann Perkins",
+        "Mark Brendanawicz"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "April doing an impression of Leslie",
-      "punchline": "Perfectly captures Leslie's enthusiastic verbosity and obsessions",
-      "craft_total": 8.47,
-      "impact_score": 9.0,
-      "quotability": 9.5,
-      "rewatch_bonus": 1,
+      "setup": "Ann needs her shower fixed",
+      "punchline": "Her attempt to make the arrangement sound casual and reciprocal ('no trouble at all for me') is transparently unconvincing \u2014 and Mark's 'weirdest second date ever' confirms the awkwardness",
+      "craft_total": 6.06,
+      "impact_score": 5.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant character comedy that perfectly encapsulates Leslie through April's cynical lens. The 'parks, parks' repetition is inspired.",
+      "explanation": "Mark's 'weirdest second date ever' is the best part of this exchange. The scene is charming and lightly funny but doesn't deliver a sharp punchline \u2014 it's more scene-setting cringe than crafted comedy.",
       "dialogue": [
         {
           "speaker": "April",
@@ -623,22 +635,23 @@
     },
     {
       "index": 21,
-      "text": "She got me. She got me good.",
+      "text": "Leslie introduces Tom: 'Hello, fellow judges. I'm judge Leslie Knope, and this is my colleague, Tom Haverford, who's gonna be a judge.'",
       "characters": [
-        "Leslie"
+        "Leslie",
+        "Tom"
       ],
       "joke_types": [
-        "reaction_beat",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "April's devastating impression of Leslie",
-      "punchline": "Leslie's good-natured acknowledgment of the accuracy",
-      "craft_total": 7.6,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Leslie is making formal introductions to the other pageant judges",
+      "punchline": "The way she introduces Tom \u2014 'who's gonna be a judge' \u2014 subtly communicates she's still not fully on board with his presence",
+      "craft_total": 6.6,
+      "impact_score": 6.25,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Leslie response showing her self-awareness and good humor about her quirks.",
+      "explanation": "A subtle character comedy beat \u2014 Leslie's slightly reluctant phrasing 'who's gonna be a judge' rather than 'who is also a judge' is a small but sharp piece of writing.",
       "dialogue": [
         {
           "speaker": "April",
@@ -652,22 +665,23 @@
     },
     {
       "index": 22,
-      "text": "I hooked your toilet up to your shower. That's what you wanted?",
+      "text": "Tom, facing the contestants, announces bra sizes out loud ('34C, 36B, 34B, 34D...') then catches himself with '32A? How'd you get in here?'",
       "characters": [
-        "Mark"
+        "Tom"
       ],
       "joke_types": [
-        "absurdist",
-        "physical_slapstick"
+        "character_comedy",
+        "cringe_discomfort",
+        "escalation"
       ],
-      "setup": "Mark was supposed to fix Ann's shower",
-      "punchline": "He's somehow connected the toilet to the shower system",
-      "craft_total": 7.1,
-      "impact_score": 7.0,
+      "setup": "Tom says 'You don't believe me? Watch.' \u2014 implying he can behave himself",
+      "punchline": "He immediately starts rating contestants by bra size aloud, then 'corrects' himself only by questioning one woman's qualifications",
+      "craft_total": 7.21,
+      "impact_score": 7.5,
       "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good absurdist plumbing humor that escalates the handyman date premise.",
+      "explanation": "The escalating structure works: Tom claims professionalism, immediately violates it spectacularly, then adds insult to injury with the '32A' comment framed as a quality concern. 'I'm kidding, you're perfect, God bless' is a perfect tag that's totally unconvincing.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -689,22 +703,23 @@
     },
     {
       "index": 23,
-      "text": "You live down here. I can't believe this is happening. I can't be at my house and see my ex-boyfriend living in a hole in my backyard like a gopher.",
+      "text": "The contestants walk out \u2014 visual beat of the audience seeing the actual women representing Miss Pawnee",
       "characters": [
-        "Ann"
+        "Leslie",
+        "Tom"
       ],
       "joke_types": [
-        "character_comedy",
-        "visual_gag"
+        "visual_gag",
+        "reaction_beat"
       ],
-      "setup": "Ann discovers someone in her backyard pit",
-      "punchline": "It's revealed to be Andy living there like an animal",
-      "craft_total": 7.72,
-      "impact_score": 8.0,
-      "quotability": 7.5,
+      "setup": "The pageant is built up as a prestigious town institution",
+      "punchline": "The visual reveal of the actual contestants undercuts the pomp \u2014 inferred to be a motley and unglamorous group given subsequent dialogue",
+      "craft_total": 6.92,
+      "impact_score": 6.75,
+      "quotability": 3.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great visual comedy setup with the 'gopher' comparison perfectly capturing the absurdity.",
+      "explanation": "A visual reveal gag that depends on the actual casting \u2014 inferred from the subsequent judge reactions and contestant descriptions. The subtext of small-town beauty contest reality versus pageant mythology is a consistent joke in this episode.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -726,22 +741,23 @@
     },
     {
       "index": 24,
-      "text": "When you had that barbecue, I didn't come up, even though it smelled so good.",
+      "text": "April's introduction speech: 'I like... People... Places... And things.' \u2014 delivered with maximum disengagement",
       "characters": [
-        "Andy"
+        "April"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "absurdist"
       ],
-      "setup": "Andy explains he's been trying not to bother Ann",
-      "punchline": "Reveals he's been living close enough to smell her food",
-      "craft_total": 7.65,
-      "impact_score": 7.5,
-      "quotability": 6.5,
+      "setup": "April takes the stage for her contestant introduction at the beauty pageant",
+      "punchline": "Her 'interests' are literally just the categories of nouns \u2014 the least specific, most minimal answer possible, delivered with total flatness",
+      "craft_total": 8.76,
+      "impact_score": 9.0,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Andy moment combining his childlike honesty with the creepy implications of his situation.",
+      "explanation": "One of the episode's best jokes and a defining April Ludgate character moment. 'People, places, and things' is grammatically the three categories of nouns \u2014 making it simultaneously the most comprehensive and most empty answer possible. The ellipses-heavy delivery (implying long pauses between each word) compounds the anti-performance. It's perfectly character-integrated: only April could weaponize total indifference this precisely. Near-legendary in its economy.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -755,22 +771,22 @@
     },
     {
       "index": 25,
-      "text": "First off, I just want to say I'm a little bit surprised because I didn't think angels could fly so low.",
+      "text": "Trish's introduction: extensive list of loving 'hanging out,' 'laughing,' 'summertime,' 'the beach,' and 'wearing bikinis at the beach with everyone there'",
       "characters": [
-        "Tom"
+        "Trish"
       ],
       "joke_types": [
-        "setup_punchline",
-        "cringe_discomfort"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Tom says he has a real question for a contestant",
-      "punchline": "He opens with a terrible pickup line instead",
-      "craft_total": 5.88,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "After April's deadpan non-answer and Susan's substantive introduction, Trish takes the stage",
+      "punchline": "Trish's 'interests' are entirely vapid, culminating in the specific detail of wearing bikinis 'with everyone there' \u2014 as if the audience is the point",
+      "craft_total": 6.42,
+      "impact_score": 6.67,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clich\u00e9d pickup line that works mainly through Tom's complete inappropriateness in this context.",
+      "explanation": "Serviceable character comedy \u2014 the joke is that Trish is the shallow foil to Susan's substance. 'Wearing bikinis at the beach with everyone there' is a funny specific detail that implies exhibitionism as a hobby. Not particularly sharp writing but it serves the episode's thematic conflict.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -788,22 +804,22 @@
     },
     {
       "index": 26,
-      "text": "Alexis De Tocqueville called America the great experiment. What can we do as citizens to improve on that experiment?",
+      "text": "Talking-head after Trish's intro: 'They can't all be winners.'",
       "characters": [
-        "Tom"
+        "Leslie"
       ],
       "joke_types": [
-        "misdirection",
-        "character_comedy"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Tom's terrible pickup line approach",
-      "punchline": "He follows up with a genuinely sophisticated political question",
-      "craft_total": 8.1,
-      "impact_score": 7.5,
+      "setup": "Trish has just delivered her vapid introduction",
+      "punchline": "Leslie's confessional is a masterfully restrained criticism \u2014 she's a pageant judge who genuinely believed in the institution's merit",
+      "craft_total": 7.02,
+      "impact_score": 7.0,
       "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent misdirection showing Tom's unexpected depth beneath his shallow exterior.",
+      "explanation": "Five words that land perfectly. The restraint of Leslie's diplomacy failing JUST ENOUGH to let this through is excellent character writing. Bonus: the phrase itself is a clich\u00e9 deployed in a situation where it's technically meant to be reassuring but functions here as a gentle burn.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -817,22 +833,22 @@
     },
     {
       "index": 27,
-      "text": "But the high birthing rate of immigrants frightens me. No offense to anyone out there, but if it were up to me and my family, I would actually call it our America and not their America.",
+      "text": "Tom's confessional after Trish's intro: 'Looks like we got a frontrunner.'",
       "characters": [
-        "Trish"
+        "Tom"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Trish attempts to answer Tom's thoughtful political question",
-      "punchline": "She reveals casual xenophobia while trying to sound patriotic",
-      "craft_total": 7.4,
-      "impact_score": 8.0,
+      "setup": "Tom watches Trish declare her love of wearing bikinis on the beach",
+      "punchline": "Tom's enthusiastic endorsement of the most vacuous contestant frames his values perfectly",
+      "craft_total": 6.53,
+      "impact_score": 6.5,
       "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Effective cringe comedy exposing casual bigotry through the character's obliviousness.",
+      "explanation": "Juxtaposed directly with Leslie's 'they can't all be winners,' this talking-head counterpoint is excellent comedic construction. Tom means it completely sincerely.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -846,22 +862,22 @@
     },
     {
       "index": 28,
-      "text": "Don't applaud that. Don't. She didn't answer my question.",
+      "text": "Leslie's custom scorecard includes categories: 'presentation, intelligence, knowledge of herstory, fruitful gestures, je ne sais quoi, and something called the Naomi Wolf Factor'",
       "characters": [
-        "Tom"
+        "Leslie Knope"
       ],
       "joke_types": [
-        "reaction_beat",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Trish gives a xenophobic non-answer",
-      "punchline": "Tom is more upset about her not answering than her bigotry",
-      "craft_total": 8.05,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "The pageant talent competition is being announced with official-sounding categories",
+      "punchline": "Leslie's scorecard reflects her specific feminist brand in escalating absurdity: 'herstory' (a real but niche term), 'fruitful gestures' (made up), 'je ne sais quoi' (vague), and 'the Naomi Wolf Factor' (deeply specific reference)",
+      "craft_total": 7.8,
+      "impact_score": 7.75,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great character moment showing Tom's priorities and intellectual vanity over moral outrage.",
+      "explanation": "Exceptional character comedy. The escalation from semi-real ('herstory') to nonsense ('fruitful gestures') to pseudo-intellectual ('je ne sais quoi') to hyper-specific feminist reference ('Naomi Wolf Factor') is perfectly crafted. Only Leslie would design this scorecard. The fact that it's framed as official pageant criteria makes it funnier. Strong candidate for standout moment.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -871,22 +887,23 @@
     },
     {
       "index": 29,
-      "text": "I peeked. I also didn't see any toothpaste. Do you not use toothpaste?",
+      "text": "During Trish's baton-twirling talent portion, a talking-head notes: 'My girl Trish is talented. She's not even twirling the baton.'",
       "characters": [
-        "Mark"
+        "Tom"
       ],
       "joke_types": [
-        "observational",
-        "cringe_discomfort"
+        "irony_sarcasm",
+        "visual_gag",
+        "character_comedy"
       ],
-      "setup": "Mark mentions looking in Ann's medicine cabinet",
-      "punchline": "He admits to snooping and asks about her dental hygiene",
-      "craft_total": 6.47,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Trish is performing baton twirling as her talent",
+      "punchline": "Tom endorses her 'talent' while simultaneously noting she is failing at the stated task \u2014 and still finds it impressive",
+      "craft_total": 7.17,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Mild cringe humor about date boundary violations, though somewhat generic.",
+      "explanation": "Elegant construction \u2014 Tom's endorsement is so strong it survives his own observation that she's failing. The 'my girl' possessiveness makes it more absurd. The line also functions as a visual gag descriptor: we can picture Trish just standing there holding a baton.",
       "dialogue": [
         {
           "speaker": "Mark",
@@ -904,23 +921,22 @@
     },
     {
       "index": 30,
-      "text": "What? We don't get cash? This is for a fence? - It won't cover a whole fence, but it'll defray the cost considerably.",
+      "text": "The next contestant announces 'I'm going to do impressions. Celebrity impressions.' \u2014 the emcee says 'That's wild, wild stuff.'",
       "characters": [
-        "April",
-        "Announcer"
+        "Emcee"
       ],
       "joke_types": [
-        "misdirection",
-        "absurdist"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Prize announcement for Miss Pawnee pageant",
-      "punchline": "The '$600 prize' is actually store credit for fencing supplies",
-      "craft_total": 8.0,
-      "impact_score": 8.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "The emcee introduces the talent segment",
+      "punchline": "The emcee's over-enthusiastic response to 'celebrity impressions' as if it's extreme or novel talent",
+      "craft_total": 5.67,
+      "impact_score": 5.25,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent absurdist humor about small-town pageant economics with perfect misdirection.",
+      "explanation": "A mild background gag. 'Wild, wild stuff' is a funny overreaction to a fairly common talent-show act, but it doesn't hit hard. Functional filler humor.",
       "dialogue": [
         {
           "speaker": "Announcer",
@@ -934,22 +950,22 @@
     },
     {
       "index": 31,
-      "text": "Oh, my God. I quit.",
+      "text": "April's impression of her sister: 'Hi, I'm Natalie. I love Ritalin and have low self-esteem.'",
       "characters": [
         "April"
       ],
       "joke_types": [
-        "reaction_beat",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Learning the prize is fencing supplies",
-      "punchline": "April immediately abandons the competition",
-      "craft_total": 7.75,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "April is doing 'celebrity impressions' as her talent \u2014 she starts with 'an impression of my sister'",
+      "punchline": "The impression is savagely specific and mean, roasting her own sister in front of a live crowd as a 'celebrity impression'",
+      "craft_total": 7.91,
+      "impact_score": 8.17,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect April response with maximum economy - she has no reason to pretend once money is off the table.",
+      "explanation": "Excellent dark joke. The subversion works on two levels: (1) her 'celebrity' is her own sister, and (2) the impression is a devastating personal attack delivered in a public performance setting with total April-level deadpan. The Ritalin + low self-esteem combo is specific and brutal. Highly quotable and character-defining.",
       "dialogue": [
         {
           "speaker": "April",
@@ -963,22 +979,23 @@
     },
     {
       "index": 32,
-      "text": "No, I didn't win. But at least I didn't make any new friendships.",
+      "text": "April's impression of Leslie Knope: 'Women should do everything. Check out my four-color pen. Listen up while I talk about some really important stuff. Parks, parks... Michelle Obama, parks. Gay penguins, parks, sugar, parks.'",
       "characters": [
         "April"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "meta_self_referential",
+        "irony_sarcasm"
       ],
-      "setup": "April leaving the pageant",
-      "punchline": "She finds the silver lining in avoiding human connection",
-      "craft_total": 8.72,
-      "impact_score": 8.5,
-      "quotability": 9.5,
+      "setup": "April announces she will do an impression of her boss, Leslie Knope",
+      "punchline": "The impression is a distillation of Leslie's specific verbal tics and obsessions \u2014 'gay penguins' and 'four-color pen' are callbacks to established Leslie Knope lore",
+      "craft_total": 8.58,
+      "impact_score": 9.17,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant April line that perfectly captures her antisocial worldview. Highly quotable and character-perfect.",
+      "is_callback": 1,
+      "explanation": "One of the episode's best moments. The impression works as meta-comedy (April imitating the show's lead character for the show's audience), as character comedy (it's deeply April-specific in its brutal accuracy), and as a rapid-fire distillation of everything funny about Leslie. 'Gay penguins, parks, sugar, parks' is genuinely excellent writing \u2014 the repetition of 'parks' as the inevitable destination of every thought is perfectly observed. Leslie's delighted 'She got me' reaction is the ideal capper.",
       "dialogue": [
         {
           "speaker": "April",
@@ -988,22 +1005,22 @@
     },
     {
       "index": 33,
-      "text": "Trish will win this pageant over my dead body.",
+      "text": "Leslie's confessional after April's impression: 'She got me. She got me good.'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "reaction_beat",
+        "character_comedy"
       ],
-      "setup": "Leslie trying to convince other judges",
-      "punchline": "She dramatically stakes her life on preventing Trish from winning",
-      "craft_total": 7.28,
-      "impact_score": 6.5,
+      "setup": "April has just done a savagely accurate impression of Leslie in front of a crowd",
+      "punchline": "Leslie's confessional is genuinely delighted rather than offended \u2014 she respects the craft",
+      "craft_total": 7.79,
+      "impact_score": 8.0,
       "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Leslie escalation showing her tendency toward dramatic overstatement for causes she believes in.",
+      "is_callback": 1,
+      "explanation": "Perfect Leslie character beat. The warmth of her response \u2014 not defensiveness but genuine appreciation \u2014 says everything about her character. The deadpan 'She got me good' with its double repetition is economical and charming.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1021,22 +1038,22 @@
     },
     {
       "index": 34,
-      "text": "I packed a suitcase.",
+      "text": "Tom's confessional: 'I'm texting Trish to tell her how good she did earlier.'",
       "characters": [
-        "Jessica"
+        "Tom"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "absurdist"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Jessica is asked what her talent was when she won",
-      "punchline": "Her 'talent' was an extremely mundane life skill",
-      "craft_total": 7.83,
-      "impact_score": 8.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "The talent competition is ongoing",
+      "punchline": "Tom has already gotten a contestant's number and is actively texting her during the competition he's judging",
+      "craft_total": 6.7,
+      "impact_score": 6.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan delivery highlighting the absurdity of beauty pageant 'talents' with maximum economy.",
+      "explanation": "Short but sharp. The ethics violation of a judge texting a contestant mid-competition is delivered with total casual obliviousness. The 'how good she did' is meaningfully ambiguous given Trish wasn't even twirling the baton. Classic Tom.",
       "dialogue": [
         {
           "speaker": "Jessica",
@@ -1050,22 +1067,24 @@
     },
     {
       "index": 35,
-      "text": "I don't know about you, Mark, but I've seen a ton of porn, and I know what fixing your shower means.",
+      "text": "Andy has hooked the toilet up to Ann's shower \u2014 visual/physical comedy of wrong plumbing",
       "characters": [
-        "Andy"
+        "Andy",
+        "Mark"
       ],
       "joke_types": [
+        "physical_slapstick",
         "character_comedy",
-        "cringe_discomfort"
+        "visual_gag"
       ],
-      "setup": "Mark is at Ann's house fixing her shower",
-      "punchline": "Andy innocently references porn tropes about repair visits",
-      "craft_total": 6.9,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Mark has come over to fix Ann's shower",
+      "punchline": "Andy has already 'fixed' it by connecting the toilet to the shower \u2014 a technically absurd plumbing choice",
+      "craft_total": 6.44,
+      "impact_score": 6.33,
+      "quotability": 5.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good Andy moment showing his naive honesty creating uncomfortable situations.",
+      "explanation": "A good visual gag that's mostly inferred. The absurdity of Andy's 'fix' is in character for someone living in a tent-pit who lacks practical skills. The joke lands better on rewatch when Andy's situation is fully understood.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1083,22 +1102,24 @@
     },
     {
       "index": 36,
-      "text": "A good chef never reveals her secrets. It's hot sauce.",
+      "text": "Ann discovers Andy is living in a tent in the pit outside her house",
       "characters": [
-        "Ann"
+        "Ann",
+        "Andy"
       ],
       "joke_types": [
-        "misdirection",
-        "deadpan_understatement"
+        "setup_punchline",
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Mark asks about Ann's cooking secrets",
-      "punchline": "She immediately reveals the 'secret' after saying she won't",
+      "setup": "Ann sees something odd through the window and goes to investigate",
+      "punchline": "Her ex-boyfriend has been secretly living in a hole in her backyard \u2014 the 'office' he referenced was fiction",
       "craft_total": 7.92,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "impact_score": 8.33,
+      "quotability": 5.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Clean misdirection joke with excellent timing and economy showing Ann's practical nature.",
+      "explanation": "A strong structural reveal \u2014 the 'office' lie pays off in a genuinely surprising and pathetic way. Andy living in a literal pit is a perfect comedic/dramatic image that works as both tragedy and absurdist comedy. The escalation of details makes this better than a simple reveal.",
       "dialogue": [
         {
           "speaker": "Mark",
@@ -1116,22 +1137,23 @@
     },
     {
       "index": 37,
-      "text": "I was thinking that there was once a time when Mark used to be the stranger in the house. And now it's me.",
+      "text": "Andy: 'I have been trying really hard not to bother you. When you had that barbecue, I didn't come up, even though it smelled so good.'",
       "characters": [
         "Andy"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "dark_subversive"
       ],
-      "setup": "Andy observing the dinner situation",
-      "punchline": "He makes the situation more awkward by pointing out the role reversal",
-      "craft_total": 7.9,
-      "impact_score": 7.5,
-      "quotability": 6.5,
+      "setup": "Ann is horrified that Andy has been living in her yard",
+      "punchline": "Andy presents NOT crashing her party from his secret underground lair as a major act of self-restraint and consideration",
+      "craft_total": 8.59,
+      "impact_score": 8.83,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good cringe comedy where Andy's emotional honesty makes everyone uncomfortable.",
+      "explanation": "Exceptional cringe comedy. The joke works on multiple levels: (1) Andy genuinely believes he's done something generous, (2) the image of him watching a party from his pit while smelling the food is both hilarious and deeply sad, (3) 'even though it smelled so good' is the perfect specific detail that makes it real. This is among the episode's best lines \u2014 it's quotable, character-defining, and earns its humor from genuine pathos rather than cheap weirdness.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1141,22 +1163,22 @@
     },
     {
       "index": 38,
-      "text": "This isn't the first time that Susans have lost to Trishes. And it won't be the last.",
+      "text": "Ann: 'I guess that's the office that you were telling me about that you go to every day.'",
       "characters": [
-        "Leslie"
+        "Ann"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie conceding the pageant results",
-      "punchline": "She frames it as an eternal struggle between substance and superficiality",
-      "craft_total": 8.47,
-      "impact_score": 8.0,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Ann has just discovered Andy lives in a tent in the pit",
+      "punchline": "She connects his claimed 'office' to the literal hole in the ground \u2014 the sarcasm is devastating in its restraint",
+      "craft_total": 7.45,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent Leslie moment turning personal defeat into universal social commentary. Highly quotable.",
+      "explanation": "Clean callback with good structure. The restraint of Ann's anger coming out as dry sarcasm rather than a shout is well-calibrated. The line does extra work by confirming Andy had been actively lying to her.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1166,22 +1188,23 @@
     },
     {
       "index": 39,
-      "text": "No, dummy, just you.",
+      "text": "Tom's Q&A question opener: 'I have one for the hot one. First off, I just want to say I'm a little bit surprised because I didn't think angels could fly so low.'",
       "characters": [
-        "Ann"
+        "Tom"
       ],
       "joke_types": [
-        "reaction_beat",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort",
+        "irony_sarcasm"
       ],
-      "setup": "Andy assumes he and Mark are both leaving",
-      "punchline": "Ann clarifies she only wants Andy to leave",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Tom is given an opportunity to ask a substantive Q&A question to a contestant",
+      "punchline": "He opens with a pickup line instead of a question, addressing the contestant as 'the hot one'",
+      "craft_total": 6.46,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clean reaction beat that clarifies Ann's feelings efficiently.",
+      "explanation": "The pickup line itself is dated and not particularly sharp, but the context \u2014 Tom deploying it as a judge during a formal Q&A \u2014 is what makes it work. Character-specific but the actual joke content is weak.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1195,22 +1218,23 @@
     },
     {
       "index": 40,
-      "text": "That went really well! We had dinner, I got to see her. Oh, God, I was so tempted to look back at her. Was she looking? I had to walk so slow. A good day.",
+      "text": "Trish's answer to the de Tocqueville question: 'I think America is the land of the free, which is a wonderful thing. And also the brave, where people can live. And no one can ever take that away from you. And it never gives up.'",
       "characters": [
-        "Andy"
+        "Trish"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "observational",
+        "absurdist"
       ],
-      "setup": "Andy getting kicked out of Ann's house",
-      "punchline": "He's completely oblivious to how badly it went",
-      "craft_total": 7.92,
-      "impact_score": 8.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Tom has asked a sophisticated question about improving America as a democratic experiment",
+      "punchline": "Trish answers by recombining fragments of 'The Star-Spangled Banner' and vague platitudes that make no logical sense",
+      "craft_total": 7.53,
+      "impact_score": 7.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Andy moment showing his delusional optimism in the face of clear rejection.",
+      "explanation": "A well-written parody of vapid pageant answers. 'It never gives up' as a description of America \u2014 applied to a country, not a person \u2014 is a funny specific failure of logic. The answer is sufficiently incoherent to land as comedy without being too broad.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -1232,22 +1256,23 @@
     },
     {
       "index": 41,
-      "text": "It's officer John McClane. Welcome to the party, pal.",
+      "text": "Trish adds: 'But the high birthing rate of immigrants frightens me... if it were up to me and my family, I would actually call it our America and not their America.'",
       "characters": [
-        "Leslie"
+        "Trish"
       ],
       "joke_types": [
+        "dark_subversive",
         "character_comedy",
-        "meta_self_referential"
+        "cringe_discomfort"
       ],
-      "setup": "Dave arrives at the office",
-      "punchline": "Leslie greets him with a Die Hard reference he won't understand",
-      "craft_total": 7.07,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good callback showing Leslie's continued cultural references that go over Dave's head.",
+      "setup": "Trish's pageant answer was already non-sensical; she continues",
+      "punchline": "The answer takes a hard turn into casual nativism \u2014 the disconnect between the pageant setting and the sentiment is the dark comedy",
+      "craft_total": 7.12,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A sharp dark comedy beat. The audience applauding is the actual punchline \u2014 the show is satirizing both the contestant AND the audience. Leslie's 'Don't applaud that. She didn't answer my question.' is a great capper that maintains her character while increasing the cringe.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1261,23 +1286,22 @@
     },
     {
       "index": 42,
-      "text": "Will Sandra Day O'Connor and Michelle Obama and Condoleezza Rice and Nancy Pelosi... Are they gonna join us? - No, they won't. - Good, 'cause I don't happen to agree with Miss Pelosi's views about the troubled assets relief program.",
+      "text": "Leslie: 'Don't applaud that. Don't. She didn't answer my question.'",
       "characters": [
-        "Dave",
         "Leslie"
       ],
       "joke_types": [
         "character_comedy",
-        "misdirection"
+        "reaction_beat"
       ],
-      "setup": "Dave jokes about Leslie's powerful women obsession",
-      "punchline": "He reveals he researched policy to impress her",
-      "craft_total": 7.9,
-      "impact_score": 7.5,
+      "setup": "The crowd applauds Trish's xenophobic non-answer",
+      "punchline": "Leslie, powerless to stop the applause, protests both the nativism AND the logical failure simultaneously",
+      "craft_total": 7.09,
+      "impact_score": 7.0,
       "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character development showing Dave's efforts to connect with Leslie on her level.",
+      "explanation": "Perfect Leslie moment. Her two objections \u2014 the content AND the procedural failure to answer the actual question \u2014 are equally weighted in her mind, which is both funny and deeply in character.",
       "dialogue": [
         {
           "speaker": "Dave",
@@ -1291,22 +1315,22 @@
     },
     {
       "index": 43,
-      "text": "This is one of my favorite pick-up strategies. I'm constantly giving women my keys. So far, none of 'em have shown up.",
+      "text": "Mark tells Ann to maybe take 'one Atavin I saw in the medicine cabinet'",
       "characters": [
-        "Andy"
+        "Mark"
       ],
       "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Andy offers Ann his house key",
-      "punchline": "He admits this strategy has never worked",
-      "craft_total": 7.98,
-      "impact_score": 8.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Ann is upset about Andy living in her yard; Mark is trying to calm her down",
+      "punchline": "Mark has been snooping in her medicine cabinet and casually reveals it",
+      "craft_total": 6.96,
+      "impact_score": 6.75,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Andy logic - continuing a completely unsuccessful strategy with optimism.",
+      "explanation": "A solid cringe beat that reveals Mark has been casually snooping, compounding the awkwardness of the evening. The casualness of the reveal is the joke.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1321,6 +1345,575 @@
           "line": "So you can let yourself in whenever you want. I've tried this with every girl I've ever liked, and it's never worked, but I'm nothing if not persistent."
         }
       ]
+    },
+    {
+      "index": 44,
+      "text": "Mark also reveals: 'I also didn't see any toothpaste. Do you not use toothpaste?'",
+      "characters": [
+        "Mark"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Mark has just admitted snooping in the medicine cabinet",
+      "punchline": "He escalates the snooping revelation with a hygiene interrogation \u2014 the awkwardness compounds",
+      "craft_total": 7.38,
+      "impact_score": 7.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A good escalation that reveals Mark has been seriously investigating Ann's bathroom. The specific detail of no toothpaste is weirdly memorable and adds a layer of comedy to their fledgling 'date.'"
+    },
+    {
+      "index": 45,
+      "text": "Ann's confessional about Andy: 'I always knew he was lazy, but this is like a new low for him.'",
+      "characters": [
+        "Ann"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Ann has just discovered her ex lives in a literal pit in her yard",
+      "punchline": "She frames living in an underground tent as simply a new entry on the Andy laziness scale, not an extraordinary event",
+      "craft_total": 7.07,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The double meaning of 'new low' \u2014 both morally/laziness-wise and literally (he is in a hole) \u2014 may be intentional and adds a layer. The understatement of treating this as merely a new low is a good character beat."
+    },
+    {
+      "index": 46,
+      "text": "Mark suggests they invite Andy inside because 'it's raining outside and he's living in a pit'",
+      "characters": [
+        "Mark",
+        "Ann"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Ann is angry about Andy; Mark is empathetic",
+      "punchline": "Mark's reasonable compassion is itself the joke \u2014 his basic-humanity suggestion is so tone-deaf to the social situation that it creates discomfort",
+      "craft_total": 6.21,
+      "impact_score": 6.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A gentle cringe beat. The logic of 'he's living in a pit' being grounds for compassion against the backdrop of Ann's fury is mildly funny. Mark's obliviousness to the social dynamics is in character."
+    },
+    {
+      "index": 47,
+      "text": "April's confessional: 'What? We don't get cash? This is for a fence?'",
+      "characters": [
+        "April"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "The emcee announces the $600 prize is in gift certificates to sporting goods and fencing companies",
+      "punchline": "April, who entered purely for the money, is outraged by the reveal that it's not cash",
+      "craft_total": 7.57,
+      "impact_score": 7.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A great callback payoff. The '$600' motivation established earlier pays off here when the prize turns out to be fencing supplies. 'This is for a fence?' captures April's deadpan fury perfectly."
+    },
+    {
+      "index": 48,
+      "text": "Emcee clarifies: 'It won't cover a whole fence, but it'll defray the cost considerably.'",
+      "characters": [
+        "Emcee"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "absurdist"
+      ],
+      "setup": "April asks if the prize is for a fence",
+      "punchline": "The emcee confirms it IS for a fence but helpfully notes it won't even cover the full cost",
+      "craft_total": 7.31,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent absurdist escalation. The prize being partial fencing supplies is already absurd; the emcee's matter-of-fact explanation that it's a partial contribution makes it stranger. 'Defray the cost considerably' is a gloriously bureaucratic phrase for what amounts to a useless prize."
+    },
+    {
+      "index": 49,
+      "text": "April immediately quits the pageant: 'I quit.'",
+      "characters": [
+        "April"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The prize is revealed to be partial fencing supplies",
+      "punchline": "April's immediate, unconditional withdrawal from the competition",
+      "craft_total": 7.11,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Two words, maximum impact. 'I quit' is perfect because it's the most economic possible expression of April's calculus \u2014 the joke about entering purely for money pays off instantly. The emcee's follow-up 'Okay, I guess she really is quitting' extends it nicely."
+    },
+    {
+      "index": 50,
+      "text": "April's exit confessional: 'No, I didn't win. But at least I didn't make any new friendships.'",
+      "characters": [
+        "April"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement",
+        "irony_sarcasm"
+      ],
+      "setup": "April has just quit the pageant after learning the prize is fencing supplies",
+      "punchline": "She reframes not making friends as a silver lining \u2014 a complete inversion of normal social values",
+      "craft_total": 8.47,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Near-perfect April Ludgate line and one of the episode's best jokes. The structure inverts the conventional consolation ('at least you made friends!') and frames zero friendship as a WIN. It's the distillation of April's character in a single sentence. Extraordinarily quotable and character-specific. Could only be said by April, and it's funnier for being sincerely meant."
+    },
+    {
+      "index": 51,
+      "text": "Tom during deliberations: 'So how long do we have to pretend to deliberate till we get back out there?'",
+      "characters": [
+        "Tom"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "The judges retire to deliberate on the winner",
+      "punchline": "Tom treats the deliberation as a social performance rather than a real process, having already committed to voting for Trish",
+      "craft_total": 6.87,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sharp Tom line that frames the entire deliberation scene honestly. His framing of it as theater rather than process is funny and accurate. Good economy."
+    },
+    {
+      "index": 52,
+      "text": "Judge calls Susan 'Susan Boring Stories'",
+      "characters": [
+        "Male Judge"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Leslie tries to make a case for Susan",
+      "punchline": "The male judge has already given Susan a nickname that dismisses her entire candidacy",
+      "craft_total": 6.53,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Quick and funny. 'Susan Boring Stories' as a nickname shows how casually dismissive the other judges are of Susan's actual substance. The economy is good."
+    },
+    {
+      "index": 53,
+      "text": "Leslie reveals in confessional: 'I'm a judge, so I don't want to sound partial, but Trish will win this pageant over my dead body.'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Leslie is in a judges' deliberation",
+      "punchline": "Her caveat 'I don't want to sound partial' directly precedes the most dramatically partial statement possible",
+      "craft_total": 7.4,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Great Leslie line. The structural irony of 'I don't want to sound partial' before a death threat is well-crafted. It captures Leslie's self-awareness failure perfectly \u2014 she genuinely believes she's being measured when she's being completely partisan."
+    },
+    {
+      "index": 54,
+      "text": "Jessica reveals her winning talent was packing a suitcase",
+      "characters": [
+        "Jessica",
+        "Leslie"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Leslie asks what Jessica's talent was as Miss Pawnee 1994",
+      "punchline": "'I packed a suitcase.' \u2014 the revelation that the precedent-winning talent was a domestic chore",
+      "craft_total": 8.1,
+      "impact_score": 8.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent absurdist joke. The flat, unashamed delivery of 'I packed a suitcase' as a winning pageant talent is funny precisely because there's no elaboration. It implies a world where domestic competence was the aspirational standard for women \u2014 and retroactively undermines Leslie's argument that pageants have historically elevated substantive women."
+    },
+    {
+      "index": 55,
+      "text": "Ann's nurse date: 'I don't know about you, Mark, but I've seen a ton of porn, and I know what fixing your shower means.'",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Andy has joined Ann and Mark at the dinner table after being invited in",
+      "punchline": "Andy implies Mark's shower repair is pornographic innuendo, embarrassing everyone in the room",
+      "craft_total": 7.16,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A genuinely funny cringe beat. Andy's total unawareness of the social disaster he's creating, combined with his 'I've seen a ton of porn' self-disclosure, makes this work. The specificity of 'a ton' is the right detail."
+    },
+    {
+      "index": 56,
+      "text": "Andy to Mark and Ann: 'Sorry, you are on a date. That's cool. No, it's all right. Don't let me interrupt your date. Dig in.'",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy",
+        "awkward_silence"
+      ],
+      "setup": "Andy has just made things extremely awkward by implying the shower repair is a sex act",
+      "punchline": "Andy acknowledges the date while making it maximally more awkward \u2014 'dig in' suggests he's planning to stay",
+      "craft_total": 7.52,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Strong cringe escalation. The 'Dig in' is the killer detail \u2014 Andy presents himself leaving but is clearly not leaving. His well-intentioned social obliviousness is perfectly captured."
+    },
+    {
+      "index": 57,
+      "text": "Andy: 'I already ate. I'm super full. I don't... I didn't want any.'",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Mark offers Andy food to diffuse the situation",
+      "punchline": "Andy's insistence he's already eaten \u2014 delivered in fragments that suggest he's lying and hungry \u2014 while clearly at the dinner table he's just joined",
+      "craft_total": 6.47,
+      "impact_score": 6.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A callback to the barbecue line \u2014 Andy has established he smells and wants food but restrains himself. Here the restraint is more pitiable. The fragmented 'I don't... I didn't want any' suggests he's actively suppressing his hunger in a sad-funny way."
+    },
+    {
+      "index": 58,
+      "text": "Ann reveals the secret to her cooking: 'A good chef never reveals her secrets. / It's hot sauce.'",
+      "characters": [
+        "Ann",
+        "Mark"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Mark asks if Ann puts something special in the food; she says 'a good chef never reveals her secrets'",
+      "punchline": "She immediately reveals the secret is just hot sauce",
+      "craft_total": 7.18,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A clean classic setup/punchline structure. The theatrical 'a good chef never reveals her secrets' raising expectations, immediately collapsed by 'it's hot sauce,' is well-executed even if the formula is familiar."
+    },
+    {
+      "index": 59,
+      "text": "Andy reflects that Mark 'used to be the stranger in the house. And now it's me.' \u2014 completely missing the social horror of his situation",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort",
+        "irony_sarcasm"
+      ],
+      "setup": "Andy is sitting comfortably on the couch during Ann's date as if he belongs there",
+      "punchline": "He's processing that Mark has displaced him in Ann's house \u2014 but the real punchline is his total comfort with recasting himself as 'the stranger' rather than recognizing he has no business being there at all",
+      "craft_total": 7.47,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A layered cringe joke. The surface level is Andy's observation about role reversal; the deeper level is that he's framing himself as a legitimate social actor in a house he has no claim to. His philosophical musing while ruining Ann's date is very Andy."
+    },
+    {
+      "index": 60,
+      "text": "Leslie's pageant speech: 'Especially Susan. This isn't the first time that Susans have lost to Trishes. And it won't be the last.'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "absurdist"
+      ],
+      "setup": "Leslie is giving a gracious closing speech at the pageant",
+      "punchline": "She turns the names 'Susan' and 'Trish' into archetypes in a cosmic battle between substance and superficiality \u2014 with the dead certainty that Trish always wins",
+      "craft_total": 8.11,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's standout jokes. Leslie elevates two names into an entire social theory \u2014 'Susans' and 'Trishes' as eternal archetypes. The line is funny, poignant, and deeply character-specific. Only Leslie would articulate the feminist condition of a small-town beauty pageant through the lens of name archetypes, and only she could do it as part of what's supposed to be a gracious acceptance speech. Highly quotable and very rewatchable."
+    },
+    {
+      "index": 61,
+      "text": "Leslie tries to give a gracious speech to Trish, then Trish's crown falls off mid-sentence at 'one, two, three'",
+      "characters": [
+        "Leslie",
+        "Trish"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "visual_gag",
+        "dark_subversive"
+      ],
+      "setup": "Leslie is delivering a formal, magnanimous speech about coming together after the competition",
+      "punchline": "The crown falls off Trish's head at the moment of intended dignity, undermining both the ceremony and Leslie's peace-making effort",
+      "craft_total": 6.48,
+      "impact_score": 6.75,
+      "quotability": 3.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A physical gag that earns its place. The crown falling at the moment of Leslie's attempted graciousness is thematically perfect \u2014 the universe mocking both Leslie's effort and Trish's victory. The 'one, two, three' countdown to what appears to be nothing is a great absurdist button."
+    },
+    {
+      "index": 62,
+      "text": "Andy says goodbye to Ann, reassuring her: 'Just don't worry about me, Ann. Okay? I'll be fine.' \u2014 then confessional shows him walking back into his pit with manufactured optimism",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive",
+        "irony_sarcasm"
+      ],
+      "setup": "Andy has been told to leave by Ann; he makes a graceful exit",
+      "punchline": "His reassurance that she shouldn't worry about him \u2014 delivered before he walks back into a hole in the ground \u2014 is darkly funny",
+      "craft_total": 7.33,
+      "impact_score": 7.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A bittersweet dark comedy beat. Andy's dignity in the face of his situation \u2014 telling Ann not to worry while heading back to a tent in a hole \u2014 is funny and a little heartbreaking. The show finds comedy in genuine pathos here."
+    },
+    {
+      "index": 63,
+      "text": "Andy's confessional after the dinner: 'That went really well! We had dinner, I got to see her. Oh God, I was so tempted to look back at her. Was she looking? I had to walk so slow. A good day.'",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm",
+        "cringe_discomfort"
+      ],
+      "setup": "Andy has just been kicked out of Ann's house during her date with another man",
+      "punchline": "He rates this as a successful, even romantic evening \u2014 the gap between his interpretation and reality is enormous",
+      "craft_total": 8.09,
+      "impact_score": 8.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Excellent character comedy. The gap between the objective horror of Andy's situation (living in a hole, ruining his ex's date) and his subjective experience (a great day with romantic possibilities) is the entire joke. 'I had to walk so slow' trying to get a backward glance is pathetically romantic. 'A good day' as the final verdict is perfectly Andy \u2014 it's both delusion and resilience simultaneously."
+    },
+    {
+      "index": 64,
+      "text": "Leslie calls Officer Dave 'Officer John McClane' and quotes Die Hard: 'Welcome to the party, pal.'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Dave comes to see Leslie at her office",
+      "punchline": "Leslie greets a police officer with a Die Hard reference \u2014 unexpected given her character's feminist political interests, but also possibly a nervous/trying-too-hard romantic gesture",
+      "craft_total": 7.01,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A decent joke that works because of the surprise of Leslie knowing Die Hard well enough to quote it to a cop. It shows she's trying with Dave, which is charming. Dave's 'Who's that?' \u2014 needing the reference explained \u2014 reverses the Albright joke dynamic."
+    },
+    {
+      "index": 65,
+      "text": "Dave asks 'Who's that?' about the Die Hard reference \u2014 reversing the Albright dynamic",
+      "characters": [
+        "Dave"
+      ],
+      "joke_types": [
+        "callback",
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Leslie quotes Die Hard to Dave; he doesn't recognize it",
+      "punchline": "Dave's ignorance mirrors his Albright ignorance \u2014 but now Leslie is the one making the obscure reference",
+      "craft_total": 7.62,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A structurally elegant callback. The episode has established that Dave doesn't know Albright and Leslie doesn't understand why. Now the situation flips \u2014 Leslie makes a cultural reference Dave doesn't get \u2014 and the symmetry communicates that they're more compatible than Leslie thinks. Rewatch bonus: this moment works better knowing where their relationship goes."
+    },
+    {
+      "index": 66,
+      "text": "Leslie agrees to the date but asks if Sandra Day O'Connor, Michelle Obama, Condoleezza Rice, and Nancy Pelosi will join them",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist",
+        "running_gag"
+      ],
+      "setup": "Dave asks Leslie on a proper dinner date",
+      "punchline": "Leslie lists four prominent women she'd apparently want present on their date \u2014 the absurdity of this being a genuine concern reveals her priorities",
+      "craft_total": 7.36,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A great payoff to the Albright running gag. Leslie's fixation on powerful women is so ingrained that she literally asks if they'll be at her dinner date. The specific list of four \u2014 O'Connor, Obama, Rice, Pelosi \u2014 is funnily overpopulated and reveals Leslie thinks of these women as a squad."
+    },
+    {
+      "index": 67,
+      "text": "Dave says: 'Good, 'cause I don't happen to agree with Miss Pelosi's views about the Troubled Assets Relief Program.'",
+      "characters": [
+        "Dave"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Leslie asks if her pantheon of female politicians will join the date; Dave says no",
+      "punchline": "Dave has a substantive opinion about Nancy Pelosi's TARP position \u2014 revealing he's not actually ignorant of politics, just not encyclopedic about them",
+      "craft_total": 7.82,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "An excellent recontextualization of the episode's running gag. Dave not knowing Albright seemed to mark him as politically unaware, but this reveals he has specific, informed policy opinions \u2014 he just doesn't worship at Leslie's pantheon. Leslie's relationship arc is advanced by the joke. The specificity of 'Troubled Assets Relief Program' (TARP) is a great detail that makes it feel real."
+    },
+    {
+      "index": 68,
+      "text": "Dave: 'I looked that up to impress you.' \u2014 Leslie: 'I figured.'",
+      "characters": [
+        "Dave",
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Dave has just quoted a specific policy position on TARP",
+      "punchline": "He admits he researched it to impress Leslie, and she knew",
+      "craft_total": 7.08,
+      "impact_score": 6.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A sweet and well-constructed two-line exchange. The admission and Leslie's instant 'I figured' shows both that she's impressed by the effort and self-aware enough to recognize it. Good economy \u2014 eight words between the two lines that land a small romantic moment through comedy."
+    },
+    {
+      "index": 69,
+      "text": "Ron's strategy for giving women his house key: 'This is one of my favorite pick-up strategies. I'm constantly giving women my keys.'",
+      "characters": [
+        "Ron"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Ron offers Ann his grill key as a neighborly gesture",
+      "punchline": "Ron reveals this is a calculated seduction technique \u2014 and 'I'm constantly giving women my keys' makes it sound like a wildly inefficient operation",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A great Ron Swanson joke. The key-giving as a seduction strategy is absurd and very Ron \u2014 it's practical, transactional, and somehow misses the entire point of romance. 'I'm constantly giving women my keys' is the right escalation that implies an ongoing, fruitless operation."
+    },
+    {
+      "index": 70,
+      "text": "Ron's confessional: 'So far, none of 'em have shown up.'",
+      "characters": [
+        "Ron"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Ron has explained he gives women his house key as a romantic strategy",
+      "punchline": "The strategy has a 0% success rate, which he reports with complete equanimity",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Near-perfect Ron Swanson deadpan. The total failure of his strategy delivered with complete stoicism is quintessential Ron \u2014 no self-pity, no adjustment of the strategy, just a flat report. 'So far, none of 'em have shown up' manages to be both funny on its own and a perfect character encapsulation. Economy is exceptional."
+    },
+    {
+      "index": 71,
+      "text": "Ron's closing: 'Matter of time.'",
+      "characters": [
+        "Ron"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Ron has admitted no woman has ever used his key",
+      "punchline": "'Matter of time' \u2014 delivered with complete unironic confidence after a total failure rate of 100%",
+      "craft_total": 7.78,
+      "impact_score": 7.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Three words, exceptional comedy. The confidence is the joke \u2014 Ron has zero evidence for optimism and proceeds to be completely optimistic. This is the ideal Ron Swanson joke: ultra-brief, perfectly deadpan, character-defining, and earns the laugh entirely through performance context. 'Matter of time' with Ron's face is a cultural touchstone moment for Parks fans. Economy scores a rare 10."
+    },
+    {
+      "index": 72,
+      "text": "'Hey Craig. 50 more copies, please.' / 'You got it.' / 'I have been robbed twice.'",
+      "characters": [
+        "Ron"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Ron hands out his key to a copy shop attendant",
+      "punchline": "The revelation that giving out his key has resulted in two burglaries \u2014 and he's still doing it",
+      "craft_total": 8.14,
+      "impact_score": 8.17,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's best closing joke. The sequence of Ron's key strategy builds across three jokes (give key \u2192 no one shows up \u2192 matter of time) and then this delivers the ultimate punchline: his 'strategy' has actively harmed him via robbery, and he's at a copy shop making MORE keys. The escalation is perfect, the payoff is earned, and 'I have been robbed twice' as a flat Ron delivery is legendary. This is what a 9 looks like \u2014 not cultural-touchstone legendary (which would be a 9.5/10) but extremely well-constructed, character-specific, and genuinely hilarious with a beautiful callback structure."
     }
   ],
   "air_date": "2009-10-01",

@@ -4,33 +4,35 @@
   "season": 5,
   "episode_number": 2,
   "title": "Soda Tax",
-  "humor_index": 73.2,
-  "jpm": 2.42,
-  "avg_craft": 6.67,
-  "avg_impact": 6.11,
-  "total_jokes": 59,
-  "war": 23.0,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"escalation\"]",
-  "standout_joke_ids": "[21, 2, 59]",
-  "weakest_section": "14:00-15:00",
+  "humor_index": 91.5,
+  "jpm": 3.07,
+  "avg_craft": 7.41,
+  "avg_impact": 7.28,
+  "total_jokes": 75,
+  "war": 100.9,
+  "dominant_joke_types": "[\"character_comedy\", \"deadpan_understatement\", \"setup_punchline\"]",
+  "standout_joke_ids": "[73, 17, 8]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "\"Box 1 of 12\"?",
+      "text": "Ben opens a care package labeled 'Box 1 of 12'",
       "characters": [
-        "Ben"
+        "Ben",
+        "Leslie"
       ],
       "joke_types": [
-        "escalation"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Ben opens what seems like a normal care package with sweet items",
-      "punchline": "The reveal that this is just the first of twelve boxes",
-      "craft_total": 6.7,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Ben receives a sweet care package from Leslie with Waffle Mix, a mug, and pajamas \u2014 a generous but reasonable gesture",
+      "punchline": "The box is labeled 'Box 1 of 12', revealing Leslie's characteristic over-the-top thoroughness applied to a simple care package",
+      "craft_total": 8.1,
+      "impact_score": 7.5,
+      "quotability": 6.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalation that subverts expectations - what seemed sweet becomes overwhelming. Economy is excellent.",
+      "explanation": "The joke is a perfect economy shot \u2014 three words ('Box 1 of 12') do enormous character work. It doesn't just get a laugh; it immediately reestablishes Leslie Knope as the show's central comedic engine before she even appears on screen. The escalation from 'sweet gesture' to 'obsessive 12-box care package' is perfectly structured. Strong character integration because only Leslie would do this.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -48,22 +50,23 @@
     },
     {
       "index": 2,
-      "text": "\"I've been wearing a bandana as underwear for three days now.\"",
+      "text": "Andy's care package asks April to do his laundry and mail it back",
       "characters": [
-        "Andy"
+        "Andy",
+        "April"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "absurdist"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Andy's request for April to do his laundry seems lazy",
-      "punchline": "The disgusting reveal of his improvised underwear solution",
-      "craft_total": 7.4,
-      "impact_score": 8.0,
-      "quotability": 8.5,
+      "setup": "April opens what seems like a sweet note from Andy referencing their three-legged dog Champion \u2014 genuinely touching",
+      "punchline": "Andy pivots to asking April to do his laundry and mail it back, entirely oblivious to how this undercuts the sweet moment",
+      "craft_total": 7.62,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Andy character moment - gross, childish, but somehow endearing. Highly quotable and specific to his character.",
+      "explanation": "Works because Andy's complete sincerity makes the request funnier. He's not being selfish maliciously \u2014 he genuinely doesn't see the problem. Strong character integration; this is quintessential Andy Dwyer behavior. April's 'Less cute' reaction beat is the perfect deadpan punctuation.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -89,22 +92,23 @@
     },
     {
       "index": 3,
-      "text": "Look, there's a picture. Ah! That's horrifying.",
+      "text": "Andy's P.S. that he's been wearing a bandana as underwear for three days, with a picture included",
       "characters": [
+        "Andy",
         "April"
       ],
       "joke_types": [
-        "visual_gag",
-        "reaction_beat"
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Andy mentions wearing a bandana as underwear",
-      "punchline": "April's horrified reaction to photographic evidence",
-      "craft_total": 6.3,
-      "impact_score": 6.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
+      "setup": "Andy's note has already escalated from sweet to asking for laundry service",
+      "punchline": "A P.S. reveals he's been wearing a bandana as underwear for three days AND included photographic evidence",
+      "craft_total": 7.79,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good follow-up beat that extends the previous joke's impact",
+      "explanation": "The P.S. structure is a classic comedic escalation device, but the specific detail of the bandana-as-underwear is genuinely inspired \u2014 and the inclusion of a photo pushes it into high-impact territory. April's 'Ah! That's horrifying' followed immediately by 'I love him so much' is the real payoff, making this a two-beat joke with a warm emotional kicker.",
       "dialogue": [
         {
           "speaker": "April",
@@ -118,22 +122,22 @@
     },
     {
       "index": 4,
-      "text": "I love him so much.",
+      "text": "April's talking head: 'I love him so much' \u2014 delivered with completely flat affect after reacting in horror to the bandana photo",
       "characters": [
         "April"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "April just expressed horror at Andy's disgusting behavior",
-      "punchline": "Immediate declaration of love despite being horrified",
-      "craft_total": 7.85,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "April has just screamed 'That's horrifying' at a photo of Andy in bandana underwear",
+      "punchline": "In her talking head, April says 'I love him so much' with zero change in expression or tone \u2014 the gap between horror and genuine affection is the joke",
+      "craft_total": 8.35,
+      "impact_score": 8.17,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect character moment - captures April's deadpan delivery and the contradictory nature of love. Great economy and structure.",
+      "is_callback": 1,
+      "explanation": "This is one of the best jokes in the episode. The structure is perfect: horror reaction \u2192 cut to talking head \u2192 flat declaration of love. It captures the entire April/Andy relationship in four words while being genuinely funny. The deadpan delivery of profound affection is exactly April's character \u2014 she would never say it warmly. It's also earned because we've just seen what she's responding to. This approaches the 8+ threshold comfortably.",
       "dialogue": [
         {
           "speaker": "April",
@@ -151,22 +155,22 @@
     },
     {
       "index": 5,
-      "text": "What did you put in the sugar? It's so good.",
+      "text": "Leslie's confessional lists local restaurant names: 'Paunch Burger, Big and Wide, The Fat Sack, Coronel Plum's Slop Trough \u2014 which was formerly Sue's Salads until we ran that out of town'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "absurdist",
+        "observational"
       ],
-      "setup": "Leslie is showing off gross sugar consumption while arguing against soda",
-      "punchline": "She's secretly enjoying eating the prop sugar",
-      "craft_total": 6.95,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie is earnestly describing Pawnee's local restaurant scene in her councilwoman capacity",
+      "punchline": "The increasingly absurd names culminate in 'Slop Trough' \u2014 and then Leslie casually mentions they drove out a healthy salad restaurant, delivered with complete civic pride",
+      "craft_total": 7.7,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character hypocrisy moment - Leslie's addiction to sugar undermining her health campaign",
+      "explanation": "The list of restaurant names is a great worldbuilding joke \u2014 each name is a slightly-too-on-the-nose acknowledgment of Pawnee's obesity problem. 'The Fat Sack' and 'Slop Trough' are solid absurdist coinages. The real punchline is the parenthetical about Sue's Salads being 'run out of town,' which reframes Leslie's entire civic pride as accidentally endorsing unhealthy eating. Good structural irony.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -184,22 +188,22 @@
     },
     {
       "index": 6,
-      "text": "Paunch Burger, Big and Wide, The Fat Sack, Coronel Plum's Slop Trough",
+      "text": "Leslie's reaction: 'Ugh! Number two is right.'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
         "wordplay_pun",
-        "absurdist"
+        "reaction_beat"
       ],
-      "setup": "Leslie listing local restaurants to help get healthier",
-      "punchline": "The increasingly ridiculous and unappetizing restaurant names",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Ron announces he ordered the 'Number Two' from Paunch Burger \u2014 Double Bacon Grenade Deluxe",
+      "punchline": "Leslie's disgusted 'Number two is right' \u2014 using the bathroom connotation of 'number two' to express disgust at the food",
+      "craft_total": 6.3,
+      "impact_score": 6.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalating absurdist naming convention, builds a comedic world",
+      "explanation": "A decent pun, functional but not inspired. The wordplay is clear and lands quickly. It's a bit cheap as it relies on a basic bathroom reference, but it's delivered with Leslie's characteristic earnest disgust which elevates it slightly. Not a strong joke by the episode's standards.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -213,22 +217,22 @@
     },
     {
       "index": 7,
-      "text": "which was formerly Sue's Salads until we ran that out of town",
+      "text": "Ron: 'Damn it, I love this country so much' while holding a 64-ounce soda",
       "characters": [
-        "Leslie"
+        "Ron"
       ],
       "joke_types": [
-        "dark_subversive",
+        "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Leslie listing unhealthy restaurants she wants to help",
-      "punchline": "Casual admission they drove the one healthy option out of business",
-      "craft_total": 7.55,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Ron has assembled the most unhealthy meal possible as a protest against Leslie's health legislation",
+      "punchline": "Ron expresses genuine patriotic emotion about being able to purchase obscene quantities of sugar \u2014 treating consumer excess as a constitutional right",
+      "craft_total": 7.94,
+      "impact_score": 7.83,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark irony that reveals the town's backwards priorities while Leslie remains oblivious",
+      "explanation": "This is Ron Swanson at his comedic peak. The joke works because the emotion is GENUINE \u2014 Ron truly does equate personal freedom with the right to consume whatever you want. The patriotic framing of a 64-ounce soda is absurd but completely in character. 'Damn it' as a prefix signals real feeling. Highly quotable and a fan-favorite type moment. Approaches the 8+ threshold.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -246,21 +250,23 @@
     },
     {
       "index": 8,
-      "text": "Number two is right.",
+      "text": "Ron's response to Leslie's heartfelt 'How can I ever repay you?' \u2014 'Get me a refill.'",
       "characters": [
+        "Ron",
         "Leslie"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "deadpan_understatement",
+        "setup_punchline"
       ],
-      "setup": "Ron orders a \"Number two\" burger meal",
-      "punchline": "Leslie's bathroom humor response to the gross food",
-      "craft_total": 5.3,
-      "impact_score": 4.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie delivers a sincere, emotional speech about how much Ron has meant to her career. She's building to a genuine moment of gratitude.",
+      "punchline": "Ron deflects the entire emotional moment with 'Get me a refill' \u2014 both shutting down sentiment and staying in character as a man who refuses emotional acknowledgment",
+      "craft_total": 8.7,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple poop joke with good economy but predictable and not very clever",
+      "explanation": "This is the standout joke of the episode. It's perfect in every dimension. The structure is flawless: Leslie's emotional build-up makes the deflection land harder. 'Get me a refill' does triple duty \u2014 it's Ron being Ron (allergic to sentiment), it's a callback to the 64-oz soda he's holding, and it works as a genuine answer to her question ('how can you repay me?') in the most mundane possible way. Four words, enormous comedic payload. This is comparable to the 8.0 anchor example in craft and exceeds it in contextual integration.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -270,22 +276,22 @@
     },
     {
       "index": 9,
-      "text": "Get me a refill.",
+      "text": "Ben gives a staff meeting about consistent font usage, specifically calling out Papyrus",
       "characters": [
-        "Ron"
+        "Ben"
       ],
       "joke_types": [
-        "deadpan_understatement",
+        "observational",
         "character_comedy"
       ],
-      "setup": "Leslie's emotional speech about how Ron has supported her and asking how to repay him",
-      "punchline": "Ron's completely practical, unemotional response",
-      "craft_total": 7.85,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Ben is managing college interns and trying to establish authority \u2014 opens a staff meeting",
+      "punchline": "The big management issue he wants to address is font consistency, culminating in 'definitely no Papyrus' \u2014 the most mundane possible power struggle",
+      "craft_total": 6.95,
+      "impact_score": 6.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ron Swanson moment - deflects emotion with practical request. Great character integration and economy.",
+      "explanation": "Papyrus is a real cultural touchstone of design bad taste, so calling it out specifically gets knowing laughs. The joke is that Ben's attempt to assert authority as a boss reduces to font policing \u2014 it reveals his social awkwardness and over-control. Good character work without being extraordinary.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -295,21 +301,22 @@
     },
     {
       "index": 10,
-      "text": "definitely no Papyrus",
+      "text": "April's talking head: enthusiastically agreeing that 'there's no place for Papyrus in a professional office setting'",
       "characters": [
-        "Ben"
+        "April"
       ],
       "joke_types": [
-        "observational"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Ben lecturing about consistent fonts in professional memos",
-      "punchline": "Singling out the notoriously bad Papyrus font",
-      "craft_total": 6.1,
-      "impact_score": 5.0,
-      "quotability": 6.0,
+      "setup": "Ben complains about Papyrus font; April is established as someone who doesn't care about work",
+      "punchline": "April's talking head agrees with passionate conviction about font standards \u2014 the irony being she clearly drew the mocking pictures of Ben and has zero professional investment",
+      "craft_total": 7.15,
+      "impact_score": 6.83,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good nerd humor that fits Ben's character - specific enough to be funny to design-aware viewers",
+      "explanation": "The joke is in the gap between April's performative agreement and her obvious contempt for the entire situation. It's functional character comedy but not particularly sharp \u2014 April's ironic enthusiasm is a well-worn tool for her character.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -319,22 +326,22 @@
     },
     {
       "index": 11,
-      "text": "Papyrus? Are you kidding me? There's no place for that in a professional office setting.",
+      "text": "Ben's talking head: 'they call me Devo, 'cause I can whip 'em good'",
       "characters": [
-        "April"
+        "Ben"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "wordplay_pun"
       ],
-      "setup": "Ben mentions Papyrus font",
-      "punchline": "April unexpectedly passionate about font choices despite not caring about work",
-      "craft_total": 6.8,
-      "impact_score": 6.0,
+      "setup": "Ben is trying to project authority over college interns",
+      "punchline": "Ben has given himself the nickname 'Devo' based on a mishmash of Devo's 'Whip It' \u2014 revealing he thinks he's cool in a way that is the opposite of cool",
+      "craft_total": 6.98,
+      "impact_score": 6.67,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good subversion - April caring about something professional when she usually doesn't care about anything",
+      "explanation": "The joke is Ben's complete lack of self-awareness about how uncool this is \u2014 mixing Devo the band with a pun on 'whipping interns into shape.' It's solidly in character for a guy who probably made spreadsheets in high school. The delivery (presumably delivered to camera with earnest pride) is the best part.",
       "dialogue": [
         {
           "speaker": "April",
@@ -344,41 +351,41 @@
     },
     {
       "index": 12,
-      "text": "they call me Devo, 'cause I can \"whip 'em good.\"",
-      "characters": [
-        "Ben"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "cringe_discomfort"
-      ],
-      "setup": "Ben talking about training college interns",
-      "punchline": "Awkward 80s band reference as a nickname",
-      "craft_total": 5.8,
-      "impact_score": 4.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Mildly cringey pun that fits Ben's awkward attempts to be cool with younger people"
-    },
-    {
-      "index": 13,
-      "text": "13's just obnoxious.",
+      "text": "'13 point font is just obnoxious'",
       "characters": [
         "Ben"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "deadpan_understatement"
       ],
-      "setup": "Ben specifying 12-point font",
-      "punchline": "His strong opinion about 13-point being obnoxious",
-      "craft_total": 6.7,
-      "impact_score": 5.0,
-      "quotability": 6.0,
+      "setup": "Ben has been holding court about font standards at a staff meeting",
+      "punchline": "He closes with '12 point. 13's just obnoxious' \u2014 treating a one-point font difference as a matter of taste and decency",
+      "craft_total": 6.87,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character-specific obsession with minor details that most people wouldn't notice",
+      "explanation": "The specificity of '13 is obnoxious' as a genuine opinion is what makes it funny \u2014 it's such a small thing to have strong feelings about. Extends the Ben-as-control-freak joke from the font discussion with a good button."
+    },
+    {
+      "index": 13,
+      "text": "Andy demonstrates his current athletic ability: an unspecified physical feat shown to camera",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy"
+      ],
+      "setup": "Andy says he's in terrible shape but can 'already do this' as evidence of progress",
+      "punchline": "Whatever he demonstrates is presumably either pathetically easy or comically wrong \u2014 the joke is his pride in a negligible achievement",
+      "craft_total": 6.35,
+      "impact_score": 6.5,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A visual gag that exists entirely in the physical performance \u2014 the transcript gap at [03:47] signals a comedic beat where Andy demonstrates something. The joke is his earnest pride in whatever tiny thing he can do. Rewatch bonus because the physical gag is presumably memorable.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -388,22 +395,22 @@
     },
     {
       "index": 14,
-      "text": "Community college. Eh, that's too far.",
+      "text": "Andy reads 'run 2 miles in under 25 minutes' and says 'That's a typo, right? That's humanly impossible.'",
       "characters": [
-        "Jerry"
+        "Andy"
       ],
       "joke_types": [
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Someone asks where Jerry and others are working out",
-      "punchline": "Jerry's lazy excuse for not exercising",
-      "craft_total": 6.25,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Andy is reading police academy physical requirements, presented as a legitimate checklist",
+      "punchline": "Andy considers a 25-minute two-mile run \u2014 a standard, achievable fitness benchmark \u2014 to be physically impossible",
+      "craft_total": 7.49,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Jerry laziness - simple but effective character moment",
+      "explanation": "The joke works on multiple levels: it establishes how out of shape Andy is, it's a perfect in-character response (Andy would genuinely believe this), and the framing as 'a typo' is inspired \u2014 he's not saying he can't do it, he's saying the paper must be wrong. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -413,22 +420,23 @@
     },
     {
       "index": 15,
-      "text": "Andy demonstrates his one push-up ability",
+      "text": "Paunch Burger rep explains the 'li'l swallow' \u2014 'Some girls buy them for their dollhouses, but they're not very popular'",
       "characters": [
-        "Andy"
+        "Ms. Pinewood",
+        "Leslie"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
+        "absurdist",
+        "deadpan_understatement"
       ],
-      "setup": "Andy claiming he's getting in shape for police academy",
-      "punchline": "Visual of his pathetic single push-up demonstration",
-      "craft_total": 6.1,
-      "impact_score": 6.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie asks if there's a smaller size option than 64 ounces",
+      "punchline": "The small size is so small it's mainly used as dollhouse furniture \u2014 but for only a nickel more you get 64 ounces, which frames the dollhouse-size as the irrational choice",
+      "craft_total": 7.44,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Visual gag showing Andy's terrible physical condition despite his optimism",
+      "explanation": "The dollhouse detail is genuinely original \u2014 it visually establishes the absurd scale differential between 'small' and 'regular' without needing graphics. The Pinewood character's complete deadpan commitment to this as a reasonable market segment ('not very popular') is excellent. The economic logic ('for only a nickel more...') being used to justify 64 ounces is sharp commentary on upselling.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -438,22 +446,22 @@
     },
     {
       "index": 16,
-      "text": "That's a typo, right? I mean, that's humanly impossible.",
+      "text": "Paunch Burger's 128-ounce option: 'Most people call it a gallon, but they call it the regular'",
       "characters": [
-        "Andy"
+        "Ms. Pinewood"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "absurdist",
+        "deadpan_understatement"
       ],
-      "setup": "Andy reading requirement to run 2 miles in under 25 minutes",
-      "punchline": "Thinking this extremely easy pace is impossible",
-      "craft_total": 6.7,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Pinewood is walking through the Paunch Burger size menu with total corporate sincerity",
+      "punchline": "128 ounces \u2014 one gallon \u2014 is their 'regular' size, named without irony",
+      "craft_total": 7.73,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character ignorance - Andy's complete lack of understanding about basic fitness",
+      "explanation": "The joke is the gap between 'most people call it a gallon' (objective reality) and 'they call it the regular' (corporate euphemism). The economy of expressing this distinction in one sentence is excellent. Part of the escalating absurdist sequence about soda sizes.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -463,22 +471,23 @@
     },
     {
       "index": 17,
-      "text": "Oh, do you mean the \"li'I swallow\"?",
+      "text": "The 512-ounce 'child size' soda \u2014 'roughly the size of a two-year-old child, if the child were liquefied'",
       "characters": [
+        "Ms. Pinewood",
         "Leslie"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "dark_subversive",
         "absurdist"
       ],
-      "setup": "Discussion about smaller soda size options",
-      "punchline": "The ridiculous name for the smallest size",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "The Paunch Burger rep has been escalating through soda sizes with increasing absurdity",
+      "punchline": "The 'child size' is 512 ounces \u2014 and the spokesperson explains it's 'roughly the size of a two-year-old child, if the child were liquefied'",
+      "craft_total": 8.59,
+      "impact_score": 9.0,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good absurdist product naming that builds the satirical world of corporate food",
+      "explanation": "This is the best joke in the episode and one of the stronger jokes Parks & Rec ever produced. 'If the child were liquefied' is a genuinely shocking, perfectly placed dark subversion. The setup is a logical escalation (small \u2192 regular \u2192 child size) and the explanation of how it's child-sized uses an image so casually horrifying that the deadpan delivery makes it exponentially funnier. It's the comedic peak of the entire soda-size escalation sequence, landing the absurdist premise with a dark twist that's simultaneously child-endangering in its imagery and completely harmless. Comparable to the 9.5 anchor in craft \u2014 original, structurally precise, dark without being mean, and supremely quotable.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -504,22 +513,22 @@
     },
     {
       "index": 18,
-      "text": "Some girls buy them for their dollhouses, but they're not very popular.",
+      "text": "'It's a real bargain at $1.59' \u2014 Pinewood's follow-up to the liquefied child description",
       "characters": [
         "Ms. Pinewood"
       ],
       "joke_types": [
-        "absurdist",
+        "deadpan_understatement",
         "escalation"
       ],
-      "setup": "Discussion of the tiny \"li'l swallow\" soda size",
-      "punchline": "The only customers are children for dollhouses",
-      "craft_total": 6.55,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation of the absurd sizing, makes the corporate logic even more ridiculous",
+      "setup": "Pinewood has just described the 512-oz 'child size' as the volume of a liquefied two-year-old",
+      "punchline": "She pivots immediately to '$1.59' as the real selling point \u2014 the banality of the price point after the horror of the description",
+      "craft_total": 8.12,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The immediate pivot to pricing after the 'liquefied child' horror is a classic comedic technique \u2014 returning to normalcy after an absurd peak. The specific '$1.59' is perfectly mundane. This works as a button to the previous joke, extending the laughter rather than killing it.",
       "dialogue": [
         {
           "speaker": "Ms. Pinewood",
@@ -529,22 +538,24 @@
     },
     {
       "index": 19,
-      "text": "Most people call it a gallon, but they call it the \"regular.\"",
+      "text": "Andy after his two-mile run: 'Running is impossible. What are you doing? Tom, now is not the time for criticism.'",
       "characters": [
-        "Leslie"
+        "Andy",
+        "Tom",
+        "Chris"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "absurdist"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Discussing Paunch Burger's 128-ounce option",
-      "punchline": "A full gallon being called \"regular\" size",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Andy has just completed (barely) his two-mile run in terrible condition",
+      "punchline": "Tom hasn't said anything critical \u2014 Andy is preemptively accusing him of judgment, implying he knows how bad it was",
+      "craft_total": 6.5,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great satirical escalation showing how corporations manipulate size perceptions",
+      "explanation": "The best part of this beat is Andy preemptively defending against criticism that hasn't happened yet \u2014 it shows his own awareness that what he just did was awful. Also 'running is impossible' as a statement of fact delivered in total sincerity is good character work.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -562,22 +573,22 @@
     },
     {
       "index": 20,
-      "text": "that they call \"child size.\"",
+      "text": "Andy: 'No! I'm never gonna be a cop. I'm gonna have to be a robber.'",
       "characters": [
-        "Leslie"
+        "Andy"
       ],
       "joke_types": [
-        "absurdist",
-        "dark_subversive"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Leslie describing a 512-ounce soda",
-      "punchline": "This massive drink being called \"child size\"",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Andy learns his 29-minute two-mile time means he failed to meet the police academy requirement",
+      "punchline": "Andy's solution to not being able to become a cop is to become a robber \u2014 as if these are simply two sides of the same career coin",
+      "craft_total": 8.12,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent absurdist escalation with dark implications about marketing to children",
+      "explanation": "This is a brilliantly simple joke. The logic is impeccable within Andy's worldview: cop and robber are the two most recognizable roles in his mental model of 'jobs involving running and physical activity.' The economy is perfect \u2014 one short sentence. It's deeply in character (Andy isn't malicious, he just has a simple decision tree) and completely unexpected. This sits comfortably at 8+.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -587,22 +598,22 @@
     },
     {
       "index": 21,
-      "text": "Well, it's roughly the size of a two-year-old child, if the child were liquefied.",
+      "text": "Chris: 'I'm proud of you. Not because of what you did, which was terrible, but because of what I'm going to be able to get you to do.'",
       "characters": [
-        "Ms. Pinewood"
+        "Chris"
       ],
       "joke_types": [
-        "dark_subversive",
-        "absurdist"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie asking how 512 ounces could be called \"child size\"",
-      "punchline": "The horrifying literal explanation of the naming",
-      "craft_total": 7.9,
-      "impact_score": 8.5,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
+      "setup": "Andy has just had a catastrophically bad training run",
+      "punchline": "Chris delivers what sounds like a motivational speech but explicitly clarifies mid-sentence that what Andy did was terrible \u2014 then Andy responds 'I guess I'm proud of me'",
+      "craft_total": 7.51,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant dark absurdist moment - takes corporate doublespeak to its logical horrifying conclusion. Highly quotable and memorable.",
+      "explanation": "The joke is the unusual honesty embedded in what's supposed to be a motivational speech \u2014 Chris can't quite bring himself to lie about the run being good, so he constructs this elaborate backhanded compliment. Andy's sincere 'I guess I'm proud of me' is the perfect coda \u2014 he's absorbed Chris's enthusiasm without processing the insult.",
       "dialogue": [
         {
           "speaker": "Ms. Pinewood",
@@ -612,22 +623,23 @@
     },
     {
       "index": 22,
-      "text": "No! I'm never gonna be a cop. I'm gonna have to be a robber.",
+      "text": "Ben asks intern Ellis if he's going to finish uploading campaign pictures \u2014 Ellis says 'Oh. Later, man.'",
       "characters": [
-        "Andy"
+        "Ben",
+        "Ellis"
       ],
       "joke_types": [
-        "absurdist",
+        "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Andy failing his fitness test for police academy",
-      "punchline": "His childish logic about becoming a criminal instead",
-      "craft_total": 7.55,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Ben asks a professional work question to an intern who has zero respect for him",
+      "punchline": "Ellis's complete dismissal \u2014 'Later, man' \u2014 with presumably zero acknowledgment of hierarchy",
+      "craft_total": 6.47,
+      "impact_score": 6.17,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Andy logic - binary thinking with childish reasoning. Great character integration.",
+      "explanation": "Functional cringe comedy establishing the Ben/intern power dynamic (or lack thereof). The casualness of 'Later, man' from a subordinate is funny but not surprising given the setup. Sets up the later revelation about the interns' connections.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -637,22 +649,23 @@
     },
     {
       "index": 23,
-      "text": "Not because of what you did, which was terrible, but because of what I'm going to be able to get you to do.",
+      "text": "April drew a mocking picture of Ben with a stick up his butt \u2014 April asks who drew it and Ben wonders if it was the interns",
       "characters": [
-        "Chris"
+        "Ben",
+        "April"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "visual_gag",
         "character_comedy"
       ],
-      "setup": "Chris saying he's proud of Andy",
-      "punchline": "Clarifying it's not for his performance but for future potential",
-      "craft_total": 6.8,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Ben notices someone drew a mocking picture of him (with a stick up his butt) \u2014 he assumes it was an intern",
+      "punchline": "April immediately and unsuspiciously asks 'Who do you think drew it? Was it Nathaniel? Ellis?' \u2014 while being the obvious culprit",
+      "craft_total": 6.72,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good backhanded compliment that fits Chris's relentlessly positive but honest nature",
+      "explanation": "The joke works in stages \u2014 Ben naively wondering if the interns drew it, April conspicuously naming suspects while being the obvious perpetrator. Sets up the payoff later in the episode when Ben discovers April drew them.",
       "dialogue": [
         {
           "speaker": "Chris",
@@ -674,22 +687,23 @@
     },
     {
       "index": 24,
-      "text": "I actually think you look really good, except for the stick up your butt. Who do you think drew it?",
+      "text": "Every intern is connected: 'Ellis is Congressman Murray's nephew. Nathaniel is related to Donald Rumsfeld. Brittany's dad is Ben Bernanke's dentist.'",
       "characters": [
-        "April"
+        "Ben",
+        "Jen"
       ],
       "joke_types": [
-        "visual_gag",
-        "irony_sarcasm"
+        "setup_punchline",
+        "escalation"
       ],
-      "setup": "Ben asking about inappropriate drawings of him",
-      "punchline": "April's casual admission while seemingly complimenting the artwork",
-      "craft_total": 7.2,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Ben is considering firing the disrespectful interns",
+      "punchline": "A cascade reveal that every single intern has a powerful political or financial connection \u2014 including the increasingly tenuous 'Bernanke's dentist'",
+      "craft_total": 7.37,
+      "impact_score": 7.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good April moment - disguising insult as compliment with deadpan delivery",
+      "explanation": "The escalating connections joke works because it starts plausible (congressman's nephew) and degrades to 'Bernanke's dentist' \u2014 a connection so tenuous that it's obviously absurd but delivered as if it's equally disqualifying. The structure of the list is good, with the weakest connection landing as the punchline.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -703,22 +717,22 @@
     },
     {
       "index": 25,
-      "text": "Nathaniel is related to Donald Rumsfeld. Brittany's dad is Ben Bernanke's dentist.",
+      "text": "Ben's new plan: 'Instead of firing them, I am going to kiss their asses like crazy.'",
       "characters": [
-        "Jen"
+        "Ben"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Ben learning the interns are well-connected",
-      "punchline": "Increasingly tenuous but powerful connections",
-      "craft_total": 6.65,
-      "impact_score": 6.0,
+      "setup": "Ben has just realized he can't fire any of the interns due to their connections",
+      "punchline": "Ben's talking head pivot \u2014 abandoning all pretense of authority to describe his new strategy of shameless sycophancy",
+      "craft_total": 6.61,
+      "impact_score": 6.17,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation showing how D.C. networking works through increasingly ridiculous connections",
+      "explanation": "Decent punchline to the intern connections revelation. 'Kiss their asses like crazy' is funny in Ben's mouth because he's spent this entire episode trying to be taken seriously. The abandonment of his authority pretense is the joke.",
       "dialogue": [
         {
           "speaker": "Ben Wyatt",
@@ -748,22 +762,23 @@
     },
     {
       "index": 26,
-      "text": "The zero on the label refers to the amount of water in it, which is zero.",
+      "text": "Water Zero actually has 300 calories because 'zero' refers to the amount of water in it",
       "characters": [
-        "Ms. Pinewood"
+        "Ms. Pinewood",
+        "Leslie"
       ],
       "joke_types": [
         "absurdist",
-        "wordplay_pun"
+        "setup_punchline"
       ],
-      "setup": "Leslie questioning why \"water zero\" has 300 calories",
-      "punchline": "The absurd corporate logic explanation",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Leslie challenges the 'healthier option' of Water Zero, noting the name implies zero calories",
+      "punchline": "Pinewood explains the zero refers to the water content \u2014 there is zero water in Water Zero \u2014 and suggests 'Diet Water Zero Lite' for only 60 calories",
+      "craft_total": 8.22,
+      "impact_score": 8.33,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant corporate doublespeak that parodies misleading product naming",
+      "explanation": "This is sharp corporate satire. 'Water Zero has zero water' is a brilliantly logical absurdism \u2014 the label is technically accurate while being maximally misleading. The solution of 'Diet Water Zero Lite' with 60 calories escalates the joke perfectly. This is genuinely good comedy writing that works as both absurdism and pointed commentary on food/beverage labeling. Approaches the 8+ threshold.",
       "dialogue": [
         {
           "speaker": "Leslie Knope",
@@ -785,22 +800,23 @@
     },
     {
       "index": 27,
-      "text": "If you want zero-calorie water, try diet water zero lite. It has only 60 calories.",
+      "text": "The Paunch Burger rep pulls out a pre-prepared press release: 'Leslie Knope Soda Tax Forces Massive Layoffs'",
       "characters": [
-        "Ms. Pinewood"
+        "Ms. Pinewood",
+        "Leslie"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "setup_punchline",
+        "irony_sarcasm"
       ],
-      "setup": "Discussion of misleading water product names",
-      "punchline": "Even the diet version contradicts its own name",
-      "craft_total": 6.65,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Pinewood threatens that if the tax passes, layoffs will follow \u2014 Leslie and Ann think she's bluffing",
+      "punchline": "Pinewood produces a fully formatted press release she prepared in advance, turning a potential bluff into a professional threat",
+      "craft_total": 6.56,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good follow-up that extends the absurd corporate naming logic",
+      "is_callback": 0,
+      "explanation": "The joke is corporate over-preparedness \u2014 Pinewood had the press release ready before the meeting even ended, indicating she had no intention of engaging in good faith. It's a good character beat for the Paunch Burger antagonist and nicely deflates the 'she's bluffing' beat.",
       "dialogue": [
         {
           "speaker": "Ms. Pinewood",
@@ -810,23 +826,23 @@
     },
     {
       "index": 28,
-      "text": "Consequently, we haven't had sex in ten years. I-I thought you said he gained weight in the last three months. Well, we have lots of other problems.",
+      "text": "Leslie in crisis runs for a sugar fix; Ann physically tackles her to stop it",
       "characters": [
-        "Angry Woman",
-        "Leslie"
+        "Leslie",
+        "Ann"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Woman blaming soda for lack of sex due to husband's weight gain",
-      "punchline": "Timeline doesn't add up, revealing deeper marital issues",
-      "craft_total": 7.05,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Leslie, stressed about her political situation, says 'I need some sugar'",
+      "punchline": "Ann goes into emergency-intervention mode, physically stopping Leslie \u2014 'No, no. No, no, no! Stop it! Leslie, you stop it right now!'",
+      "craft_total": 6.47,
+      "impact_score": 6.17,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good cringe moment that reveals the real problems aren't about soda",
+      "explanation": "Functional physical comedy. The joke is Ann treating Leslie's sugar craving as a serious intervention situation, but it's not particularly original. Ann's role as Leslie's nurse/best friend enforcer is well-established, so this doesn't add much new.",
       "dialogue": [
         {
           "speaker": "Angry Woman",
@@ -856,23 +872,23 @@
     },
     {
       "index": 29,
-      "text": "All taxation is theft! If the government can tax me, I-I can--I can do this. Grover, give that woman her purse back.",
+      "text": "Forum constituent: claims they haven't had sex in ten years because husband gained weight \u2014 but he only gained weight in the last three months",
       "characters": [
-        "Grover",
-        "Leslie"
+        "Leslie",
+        "Forum Constituent"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "setup_punchline",
+        "cringe_discomfort"
       ],
-      "setup": "Man arguing against taxation at town hall",
-      "punchline": "He steals a purse to prove his point, gets caught immediately",
-      "craft_total": 7.05,
-      "impact_score": 7.0,
+      "setup": "A woman testifies that her husband gained 100 pounds from soda in three months, and they haven't had sex in ten years",
+      "punchline": "Leslie points out the timeline doesn't match \u2014 the woman dismisses it: 'We have lots of other problems'",
+      "craft_total": 7.5,
+      "impact_score": 7.75,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good absurdist escalation of anti-government logic taken to criminal extreme",
+      "explanation": "The joke is structured perfectly \u2014 the oversharing about their sex life prompts Leslie (of all people) to notice the logical inconsistency, and the woman's breezy 'lots of other problems' implies a marriage in serious decline. It's economical, gets darker on reflection, and Leslie's role as accidental counselor is fun.",
       "dialogue": [
         {
           "speaker": "Man",
@@ -906,22 +922,23 @@
     },
     {
       "index": 30,
-      "text": "Orange racing stripe. It's a perfect recreation of Han lue's Nissan in The Fast And The Furious: Tokyo Drift. Weirdly, so far, no one has noticed.",
+      "text": "Libertarian constituent: 'All taxation is theft!' \u2014 then pickpockets the woman next to him",
       "characters": [
-        "Tom"
+        "Libertarian Constituent",
+        "Forum Constituent"
       ],
       "joke_types": [
-        "character_comedy",
+        "setup_punchline",
         "irony_sarcasm"
       ],
-      "setup": "Tom showing off his modified pace car",
-      "punchline": "His disappointment that no one recognizes his niche reference",
-      "craft_total": 6.4,
-      "impact_score": 5.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "A libertarian outburst about taxation being theft",
+      "punchline": "The man immediately steals a woman's purse to make his point \u2014 and 'there's a lot of pill bottles in here'",
+      "craft_total": 7.32,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Tom's obsession with pop culture references others don't care about",
+      "explanation": "The libertarian-as-literal-thief joke is a well-constructed irony \u2014 he's making a point about government theft by committing actual theft. The 'pill bottles' detail is a good bonus dark touch. The joke is a touch predictable (libertarian = selfish), but the literal demonstration elevates it.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -947,22 +964,22 @@
     },
     {
       "index": 31,
-      "text": "I exercise because, when I was a baby, I had a rare blood disorder, and I suppose I need to feel like my body's in tip-top shape... So it doesn't destroy me, leaving me to die alone.",
+      "text": "Tom has turned the pace car into a recreation of Han Lue's Nissan from Tokyo Drift \u2014 and 'so far, no one has noticed'",
       "characters": [
-        "Chris"
+        "Tom"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "character_comedy",
+        "visual_gag"
       ],
-      "setup": "Chris explaining his motivation for exercise",
-      "punchline": "His deep existential fear beneath the positive exterior",
-      "craft_total": 7.4,
-      "impact_score": 7.0,
+      "setup": "Tom is helping Andy train; he's been 'modifying' the pace car",
+      "punchline": "The modifications (Mad Men bar, iPad dock, racing stripe) are all about recreating a specific Fast and Furious car \u2014 and he's proud that the easter egg has gone unnoticed",
+      "craft_total": 7.15,
+      "impact_score": 6.5,
       "quotability": 6.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character depth moment - reveals the darkness behind Chris's relentless positivity",
+      "explanation": "The joke is quintessentially Tom \u2014 elaborate, specific, slightly off-brand pop culture reference (Tokyo Drift is considered the weakest Fast & Furious), and deployed in a completely inappropriate context (a government training exercise). 'Weirdly, so far, no one has noticed' is a good deadpan talking head button.",
       "dialogue": [
         {
           "speaker": "Chris",
@@ -972,22 +989,22 @@
     },
     {
       "index": 32,
-      "text": "what's up, my male? You grab a slice of 'za, brah.",
+      "text": "Chris's motivation speech is revealed to be about his fear of dying alone from his childhood blood disorder",
       "characters": [
-        "Ben"
+        "Chris"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Ben trying to connect with young interns",
-      "punchline": "His awkward attempt at youth slang",
-      "craft_total": 6.55,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Chris asks Andy why he wants to achieve this goal \u2014 Andy gives a warm answer about love and family. Chris enthusiastically validates it.",
+      "punchline": "Chris shares his own motivation: a rare childhood blood disorder and the need to feel physically invincible 'so it doesn't destroy me, leaving me to die alone'",
+      "craft_total": 8.07,
+      "impact_score": 7.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good cringe moment showing Ben's desperate attempts to seem cool",
+      "explanation": "This joke has layered craft: it mirrors/contrasts Andy's warmly simple answer (love and family) with Chris's deeply anxious, existentially dark answer, and then Chris treats them as equivalent ('Great. You got yours, I got mine'). The darkness of the content delivered in the same motivational register as his Andy speech is great character comedy. Seeds the Chris therapy arc that pays off later in the episode.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1005,22 +1022,24 @@
     },
     {
       "index": 33,
-      "text": "We should lock down some tight disc grabs, am I right, ell-bones?",
+      "text": "Andy's motivation speech: 'I just want to get a good job for me and April. I love April. She's all I care about in the whole world.' Chris: 'Yes! Love and family! What else is there, really? Nothing at all.'",
       "characters": [
-        "Ben"
+        "Andy",
+        "Chris",
+        "Tom"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "wordplay_pun"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Ben continuing to try connecting with Ellis",
-      "punchline": "Making up terrible nicknames and using frisbee jargon wrong",
-      "craft_total": 6.05,
-      "impact_score": 5.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Chris asks Andy why he wants to achieve his goal; Andy gives a genuinely sweet answer about April",
+      "punchline": "Chris reinforces 'Love and family! What else is there, really?' \u2014 a line that lands with ironic weight given Chris's later revelation that he himself has nothing of the kind",
+      "craft_total": 6.66,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Continues Ben's awkward attempts but less effective than earlier moments",
+      "explanation": "The joke operates on two levels \u2014 immediately, it's Chris being obliviously enthusiastic; on rewatch, knowing Chris's emotional spiral later in the episode, 'Nothing at all' is darkly funny. Character integration is high because this irony only works with Chris's specific arc.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1054,22 +1073,23 @@
     },
     {
       "index": 34,
-      "text": "I think we should tax all bad things, like racism and women's vaginae.",
+      "text": "Chris's confessional about why he exercises: 'I exercise because, when I was a baby, I had a rare blood disorder... so it doesn't destroy me, leaving me to die alone.'",
       "characters": [
-        "Town Hall Citizen"
+        "Chris"
       ],
       "joke_types": [
-        "absurdist",
-        "cringe_discomfort"
+        "dark_subversive",
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Town hall discussion about what to tax",
-      "punchline": "Citizen's completely inappropriate and illogical suggestions",
-      "craft_total": 5.25,
-      "impact_score": 4.0,
-      "quotability": 4.0,
+      "setup": "Andy shares his wholesome motivation for training: love for April.",
+      "punchline": "Chris's motivation, delivered with similar enthusiasm, is actually a dark medical anxiety about his body killing him and dying alone.",
+      "craft_total": 7.61,
+      "impact_score": 7.25,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Gross-out humor that's more shock value than clever - relies on inappropriate content",
+      "explanation": "Excellent character comedy that deepens Chris's arc. The juxtaposition with Andy's simple, loving motivation is structurally strong \u2014 we get Andy's warmth and then immediately Chris's existential dread, delivered with the same optimistic Chris energy. 'So it doesn't destroy me, leaving me to die alone' is a great line that's genuinely dark underneath the chipper delivery.",
       "dialogue": [
         {
           "speaker": "Town Hall Citizen",
@@ -1079,23 +1099,22 @@
     },
     {
       "index": 35,
-      "text": "We're not taxing anyone's genitals. Then what the hell are we doing here?",
+      "text": "Chris: 'I'm gonna go run till I puke. Let's go.'",
       "characters": [
-        "Leslie",
-        "Town Hall Citizen"
+        "Chris"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie clarifying they won't tax genitals",
-      "punchline": "Citizen's confusion about the meeting's purpose",
-      "craft_total": 5.55,
-      "impact_score": 5.0,
-      "quotability": 5.0,
+      "setup": "Chris has just shared his deeply personal and dark motivation",
+      "punchline": "He pivots instantly back to relentless positivity \u2014 'I'm gonna go run till I puke. Let's go.'",
+      "craft_total": 7.45,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Follow-up to previous joke but doesn't add much value",
+      "is_callback": 0,
+      "explanation": "Good button on the Chris motivation scene \u2014 the pivot from existential darkness back to manic physicality is exactly Chris Traeger. Short, punchy, and in character.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1109,22 +1128,23 @@
     },
     {
       "index": 36,
-      "text": "Maybe instead of me losing my job, you ought to lose your job. Let's recall Leslie Knope. Let's do this!",
+      "text": "Ben's intern management strategy: brings pizza and immediately befriends them with 'Ellis, what's up, my male?' and 'Ell-bones'",
       "characters": [
-        "Restaurant Worker"
+        "Ben",
+        "Ellis"
       ],
       "joke_types": [
-        "escalation",
+        "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Worker complaining about potential job loss",
-      "punchline": "Immediate escalation to recalling Leslie",
-      "craft_total": 5.95,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Ben's new plan is to kiss the interns' asses \u2014 he arrives with pizza and attempts to speak their language",
+      "punchline": "Ben's attempted youth slang is catastrophically bad: 'my male,' 'Ell-bones,' offering to 'lock down some tight disc grabs'",
+      "craft_total": 7.58,
+      "impact_score": 7.75,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation showing how quickly town halls can turn hostile",
+      "explanation": "Ben trying to be cool is a rich vein of comedy and this sequence mines it well. 'My male' instead of 'my man,' 'Ell-bones' as a nickname, and the breathless Ultimate frisbee enthusiasm are all good cringe. The joke is Ben's complete lack of self-awareness about how hard he's failing \u2014 he thinks it's working.",
       "dialogue": [
         {
           "speaker": "Restaurant Worker",
@@ -1138,22 +1158,24 @@
     },
     {
       "index": 37,
-      "text": "Someone please tell me we kodaked that moment.",
+      "text": "Ben trying to bond over Ultimate Frisbee: 'Dude, so did I, in college.' 'Whoa, you guys should get married.'",
       "characters": [
-        "Ben"
+        "Ben",
+        "Ellis",
+        "Unknown intern"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Ben making a good frisbee catch",
-      "punchline": "Using outdated photography term",
-      "craft_total": 6.1,
-      "impact_score": 5.0,
-      "quotability": 5.0,
+      "setup": "Ben discovers Ellis plays Ultimate Frisbee and tries to connect over a shared interest",
+      "punchline": "Another intern reacts to their bonding with 'Whoa, you guys should get married' \u2014 dismissing Ben's attempt at connection with teen-aged sarcasm",
+      "craft_total": 5.65,
+      "impact_score": 5.25,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Ben's age through outdated slang",
+      "explanation": "Functional cringe comedy but fairly standard \u2014 the 'you guys should get married' dismissal is a bit generic. Works in context but isn't particularly inventive.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1175,23 +1197,22 @@
     },
     {
       "index": 38,
-      "text": "All right, April, what's the score? 1,000 to 7.",
+      "text": "Ben's talking head after Ultimate frisbee invitation: 'Let's do it to it, my dudes'",
       "characters": [
-        "Ben",
-        "April"
+        "Ben"
       ],
       "joke_types": [
-        "absurdist",
-        "deadpan_understatement"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Ben asking for the Ultimate frisbee score",
-      "punchline": "April's completely impossible and deadpan score report",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Ben has been aggressively trying to befriend the interns with bad slang",
+      "punchline": "'Let's do it to it, my dudes' \u2014 a slang mashup so bad it loops back around to being its own joke",
+      "craft_total": 6.45,
+      "impact_score": 6.25,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect April moment - absurd but delivered with complete deadpan confidence",
+      "is_callback": 1,
+      "explanation": "A running gag button on Ben's failed attempts at youth vernacular. 'Let's do it to it' is a specific kind of wrong \u2014 too formal structure with too casual vocabulary. Not as strong as the initial cringe but extends the joke.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1213,22 +1234,23 @@
     },
     {
       "index": 39,
-      "text": "Nobody. Nothing. Does it really even matter?",
+      "text": "Forum constituent: 'If we put a tax on soda, what's next, income?' / Leslie: 'Sir, you don't pay your income tax?' / 'Whether or not I pay income tax is none of the government's business.' / 'Actually it is.'",
       "characters": [
-        "Chris"
+        "Leslie",
+        "Forum Constituent"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "setup_punchline",
+        "irony_sarcasm"
       ],
-      "setup": "Andy asking what Chris runs for",
-      "punchline": "Chris's existential crisis showing through his usually positive facade",
-      "craft_total": 6.7,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "A constituent uses income tax as a slippery slope argument against soda tax",
+      "punchline": "He's revealed as someone who doesn't actually pay income tax \u2014 and then doubles down that this is private",
+      "craft_total": 7.13,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback to Chris's deeper issues breaking through his positive exterior",
+      "is_callback": 0,
+      "explanation": "Sharp escalation of the libertarian constituent type \u2014 the slippery slope argument inadvertently reveals his own legal non-compliance. The 'you don't know what I look like' follow-up is a strong button. Works as political comedy and character comedy simultaneously.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1258,22 +1280,22 @@
     },
     {
       "index": 40,
-      "text": "There's something wrong with my body. My legs aren't working. I'm broken.",
+      "text": "'You don't know my name or what I look like, so good luck finding me' \u2014 said in a public government forum",
       "characters": [
-        "Andy"
+        "Forum Constituent"
       ],
       "joke_types": [
-        "character_comedy",
-        "physical_slapstick"
+        "absurdist",
+        "deadpan_understatement"
       ],
-      "setup": "Andy after minimal exercise",
-      "punchline": "His dramatic overreaction to normal muscle fatigue",
-      "craft_total": 6.15,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "The constituent has revealed he doesn't pay income taxes",
+      "punchline": "He believes he's anonymous despite being in a public government meeting \u2014 the logic that the IRS can't find him because he hasn't introduced himself",
+      "craft_total": 7.04,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Andy character moment showing his childish reaction to minor discomfort",
+      "is_callback": 1,
+      "explanation": "Genuinely funny absurdist logic \u2014 he's at a public meeting but considers himself completely anonymous. The joke is the gap between his confidence ('good luck finding me') and the obviousness of his situation. Good economy.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1291,22 +1313,22 @@
     },
     {
       "index": 41,
-      "text": "I'm floating in this giant river of ambiguity. I'm under a warm waterfall of uncertainty.",
+      "text": "'I think we should tax all bad things, like racism and women's vaginae.'",
       "characters": [
-        "Leslie"
+        "Forum Constituent 2"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "absurdist",
+        "dark_subversive"
       ],
-      "setup": "Leslie describing her confused state about voting",
-      "punchline": "Her overly poetic and mixed metaphors",
-      "craft_total": 6.05,
-      "impact_score": 5.0,
-      "quotability": 6.0,
+      "setup": "Leslie has been trying to run an orderly public forum about a soda tax",
+      "punchline": "A new constituent non-sequiturs into taxing 'racism and women's vaginae' as equivalent bad things",
+      "craft_total": 6.61,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Leslie character moment showing her tendency toward overly dramatic metaphors",
+      "explanation": "The joke is in the absurd pairing of racism with a genital tax, establishing that this constituent has completely misconstrued the purpose of the meeting. It's a broad Pawnee-constituent joke \u2014 the town is full of people with deeply strange ideas. Functional but not particularly crafted.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1316,23 +1338,23 @@
     },
     {
       "index": 42,
-      "text": "Do you just have to pee real bad? Yes.",
+      "text": "Leslie's straw poll: citizens hold up green/red cards. 'About half?' / 'Half.' Then the second statement also gets... 'Half and half.'",
       "characters": [
-        "Ann",
-        "Leslie"
+        "Leslie",
+        "Ann"
       ],
       "joke_types": [
-        "misdirection",
-        "character_comedy"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Leslie's poetic descriptions of uncertainty",
-      "punchline": "Ann's practical explanation for Leslie's discomfort",
-      "craft_total": 7.15,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Leslie conducts a straw poll to get clarity on the issue from her constituents",
+      "punchline": "Both the 'pro-tax' and 'anti-tax' statements produce exactly half-and-half splits, leaving Leslie exactly as confused as before",
+      "craft_total": 6.41,
+      "impact_score": 5.75,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirection that deflates Leslie's dramatic metaphors with practical reality",
+      "explanation": "A solid structural joke about democratic process leading nowhere. Leslie's earnest solution backfires perfectly. 'This is very confusing' is a good Leslie button. Not particularly original but executed well.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1346,22 +1368,23 @@
     },
     {
       "index": 43,
-      "text": "Oh, no.",
+      "text": "Forum constituent suggests recalling Leslie Knope \u2014 the crowd cheers",
       "characters": [
-        "Leslie"
+        "Leslie",
+        "Forum Constituent"
       ],
       "joke_types": [
-        "reaction_beat",
-        "cringe_discomfort"
+        "setup_punchline",
+        "irony_sarcasm"
       ],
-      "setup": "Leslie's name being called for her vote",
-      "punchline": "Her realization she still has to pee during the crucial moment",
-      "craft_total": 6.05,
-      "impact_score": 6.0,
-      "quotability": 3.0,
+      "setup": "Leslie has been trying to manage an increasingly chaotic public forum about soda",
+      "punchline": "A constituent flips the script entirely: instead of arguing about the tax, just fire Leslie \u2014 crowd immediately rallies",
+      "craft_total": 6.28,
+      "impact_score": 6.17,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Simple callback that extends the bathroom humor setup",
+      "is_callback": 0,
+      "explanation": "The joke is the crowd's instantaneous pivot to recall energy \u2014 they came to argue about soda but have immediately united around firing Leslie. It's a good satirical note about civic participation but not a particularly sharp joke.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1383,22 +1406,22 @@
     },
     {
       "index": 44,
-      "text": "Mayhaps, might I suggest that we have a re--aah!",
+      "text": "April tells the score of the Ultimate frisbee game: '1,000 to 7'",
       "characters": [
-        "Leslie"
+        "April"
       ],
       "joke_types": [
-        "character_comedy",
-        "physical_slapstick"
+        "deadpan_understatement",
+        "absurdist"
       ],
-      "setup": "Leslie trying to speak formally while in distress",
-      "punchline": "Her attempt at fancy language interrupted by physical discomfort",
-      "craft_total": 6.2,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "The Ultimate frisbee game is happening; someone asks April for the score",
+      "punchline": "1,000 to 7 \u2014 an absurdly lopsided score delivered completely flatly by April, who doesn't care at all",
+      "craft_total": 7.2,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Leslie trying to maintain dignity while in distress",
+      "explanation": "Pure April Ludgate comedy \u2014 she's keeping score in the most uninterested way possible, but the specific numbers (1,000 to 7) imply she's been there long enough to track an extremely one-sided game without caring. The absurdity of the score and her total flatness make a good combination.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1416,22 +1439,22 @@
     },
     {
       "index": 45,
-      "text": "Do you guys know how to dissolve super glue?",
+      "text": "Chris's motivation for running: 'Nobody. Nothing. Does it really even matter?'",
       "characters": [
-        "Doctor"
+        "Chris"
       ],
       "joke_types": [
-        "visual_gag",
-        "absurdist"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Doctor treating Leslie and Andy",
-      "punchline": "Casual question about unrelated emergency",
-      "craft_total": 5.7,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Minor background gag suggesting other medical mishaps happening",
+      "setup": "Andy is asked what he runs for \u2014 Andy warmly says 'for April, for love.' Then someone asks Chris the same question.",
+      "punchline": "Chris, who earlier revealed his childhood blood disorder fear, gives a bleakly nihilistic answer mid-training \u2014 'Nobody. Nothing. Does it really even matter?' \u2014 then immediately calls the start of the run",
+      "craft_total": 8.2,
+      "impact_score": 8.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is a callback that significantly enriches the earlier joke. The pattern of Andy's warmth versus Chris's existential despair is a structural backbone for this subplot. 'Nobody. Nothing. Does it really even matter?' as a response to 'what do you run for?' is genuinely moving and funny simultaneously \u2014 Chris's pain is real, but the pivot straight back to 'Get set. Get at me!' is perfect comedic whiplash. Strong character integration \u2014 this is specifically Chris Traeger's particular brand of cheerful darkness.",
       "dialogue": [
         {
           "speaker": "Doctor",
@@ -1453,22 +1476,22 @@
     },
     {
       "index": 46,
-      "text": "Ell-bow. Ell-chupacabra. Drinkin' coffee.",
+      "text": "Chris collapses during training: 'There's something wrong with my body. My legs aren't working. I'm broken.'",
       "characters": [
-        "Ben"
+        "Chris"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "character_comedy",
+        "physical_slapstick"
       ],
-      "setup": "Ben continuing to try making nicknames for Ellis",
-      "punchline": "Increasingly desperate and nonsensical nickname attempts",
-      "craft_total": 6.2,
-      "impact_score": 5.0,
-      "quotability": 5.0,
+      "setup": "Chris is the group's fitness expert \u2014 he's supposed to be training Andy",
+      "punchline": "Chris collapses and dramatically declares himself 'broken,' reversing the trainer/trainee dynamic",
+      "craft_total": 6.72,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good escalation of Ben's increasingly desperate attempts to connect",
+      "is_callback": 0,
+      "explanation": "The joke is in the role reversal \u2014 the supremely fit Chris being the one who collapses while training the out-of-shape Andy. 'I'm broken' as a clinical self-diagnosis is very in-character for someone who monitors his body obsessively. Sets up the medical test joke.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1498,21 +1521,23 @@
     },
     {
       "index": 47,
-      "text": "it's from 40 years ago. Never mind.",
+      "text": "Leslie drinks all six sodas mixed together, describes it as tasting 'disgusting'",
       "characters": [
-        "Ben"
+        "Leslie",
+        "Ann"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "visual_gag"
       ],
-      "setup": "Ben making an outdated reference",
-      "punchline": "His realization that he's showing his age",
-      "craft_total": 6.1,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Leslie went to Paunch Burger at 5am in crisis mode and mixed all six sodas into one cup",
+      "punchline": "Leslie confirms it tastes disgusting but presumably drank it anyway",
+      "craft_total": 6.58,
+      "impact_score": 6.25,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good self-aware moment about the generation gap",
+      "explanation": "Establishes Leslie's stress-eating behavior and irony of her soda tax crusade, but the joke is relatively mild. The 'you know what it tastes like? Disgusting? Mm-hmm.' beat is a good quick exchange but not particularly crafted.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1530,23 +1555,23 @@
     },
     {
       "index": 48,
-      "text": "Hey, man, I didn't draw it. Your daughter did. What? Her. April's not my daughter. She's my friend.",
+      "text": "Leslie's extended metaphor: 'floating in a giant river of ambiguity... warm waterfall of uncertainty' \u2014 Ann: 'Do you just have to pee real bad?'",
       "characters": [
-        "Ellis",
-        "Ben"
+        "Leslie",
+        "Ann"
       ],
       "joke_types": [
-        "character_comedy",
-        "misdirection"
+        "setup_punchline",
+        "deadpan_understatement"
       ],
-      "setup": "Ben confronting Ellis about disrespectful drawings",
-      "punchline": "Ellis revealing April drew them, Ben's confusion about the relationship",
-      "craft_total": 6.25,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie is waxing poetic about her political uncertainty using elaborate water metaphors",
+      "punchline": "Ann cuts through the metaphor with a purely practical interpretation \u2014 maybe Leslie just needs to use the bathroom",
+      "craft_total": 8.25,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good misdirection that shifts blame and reveals age gap confusion",
+      "explanation": "Excellent comedic structure. Leslie's metaphors are elaborate and sincere \u2014 the 'river of ambiguity' and 'waterfall of uncertainty' are genuinely overwrought. Ann's pivot to 'do you just have to pee real bad?' is perfectly calibrated: it's not dismissive, just practical, and the water-metaphor callback makes it a technically clean joke. Leslie's confirmation ('Yes') makes it even better. Strong Ann character moment \u2014 she's the practical foil to Leslie's romanticism.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1572,22 +1597,22 @@
     },
     {
       "index": 49,
-      "text": "Sorry, Dad.",
+      "text": "Leslie is literally mid-speech about trusting her gut when she is called to vote immediately",
       "characters": [
-        "April"
+        "Leslie"
       ],
       "joke_types": [
-        "callback",
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "escalation"
       ],
-      "setup": "Ben insisting April would never disrespect him",
-      "punchline": "April's sarcastic 'Dad' acknowledgment while admitting guilt",
-      "craft_total": 7.5,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Leslie says she'll 'wait, and when they call my name, I'll do what my gut tells me to do'",
+      "punchline": "Her name is immediately called before she can finish the thought: 'Councilwoman Knope, how do you vote?'",
+      "craft_total": 7.37,
+      "impact_score": 7.25,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Perfect April moment - maximum mischief with minimum words, great callback timing",
+      "is_callback": 0,
+      "explanation": "Good structural irony \u2014 the universe has a sense of comedic timing that denies Leslie her moment of gathering herself. Functional situational comedy with a nice timing joke.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1605,22 +1630,22 @@
     },
     {
       "index": 50,
-      "text": "So what? I've tried to fire you.",
+      "text": "Leslie begins to vote and then physically vomits/faints in the council chambers \u2014 'Gentlemen, it appears that I have fallen ill. Mayhaps, might I suggest that we have a re\u2014'",
       "characters": [
-        "Ron"
+        "Leslie"
       ],
       "joke_types": [
-        "deadpan_understatement",
+        "physical_slapstick",
         "character_comedy"
       ],
-      "setup": "Leslie worried about people wanting to fire her",
-      "punchline": "Ron's casual admission of his own attempts",
-      "craft_total": 7.3,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie has been dreading this vote all episode; she's about to have to make a decision in public",
+      "punchline": "Leslie collapses/vomits but attempts to maintain parliamentary dignity mid-collapse, using 'Mayhaps' and formal phrasing while clearly incapacitated",
+      "craft_total": 7.14,
+      "impact_score": 7.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Ron delivery - brutal honesty delivered with complete nonchalance",
+      "explanation": "'Mayhaps, might I suggest that we have a re\u2014' is a great comedic line because it captures Leslie's entire character: even while physically collapsing, she's trying to be professional and use proper procedure. The archaic 'Mayhaps' signals her brain is going while her public-servant instincts remain. Strong character integration \u2014 only Leslie Knope would use parliamentary procedure while barfing. Approaches 8+ threshold.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -1630,22 +1655,23 @@
     },
     {
       "index": 51,
-      "text": "No, no, no, no. I tried to fire you four times.",
+      "text": "Ann's medical assessment: 'Your pulse is super-fast, but that wouldn't be out of line for someone who drank and then barfed up a gallon of sugar water.'",
       "characters": [
-        "Ron"
+        "Ann",
+        "Leslie"
       ],
       "joke_types": [
-        "escalation",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Leslie shocked that Ron tried to fire her once",
-      "punchline": "Ron escalating to reveal four attempts",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Leslie has collapsed in the council chambers; Ann is examining her",
+      "punchline": "Ann's clinical assessment matter-of-factly summarizes the absurdity of Leslie's situation \u2014 she's a nurse giving a medical opinion that is essentially 'well, obviously'",
+      "craft_total": 6.81,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good escalation that makes Ron's honesty even more brutal",
+      "is_callback": 0,
+      "explanation": "Ann's nurse voice delivering a completely non-empathetic medical summary is a good character beat. 'Barfed up a gallon of sugar water' as clinical terminology is funny. Functional but not outstanding.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1683,23 +1709,24 @@
     },
     {
       "index": 52,
-      "text": "They found nothing. Nothing? Nothing. The silent killer.",
+      "text": "Tom, while Leslie has a medical crisis: 'Jeez. Do you guys know how to dissolve super glue?'",
       "characters": [
-        "Chris",
-        "Tom"
+        "Tom",
+        "Leslie",
+        "Ann"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Chris getting medical test results",
-      "punchline": "Treating perfect health as a terrifying diagnosis",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
+      "setup": "Leslie is having a serious emotional and physical breakdown; Ann is providing medical support",
+      "punchline": "Tom completely ignores the crisis to ask about super glue \u2014 presumably stuck to part of the pace car",
+      "craft_total": 7.49,
+      "impact_score": 7.17,
       "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good absurdist moment showing Chris's health anxiety taken to illogical extreme",
+      "is_callback": 1,
+      "explanation": "Tom's complete self-absorption during a crisis is quintessential Tom Haverford. The super glue question implies his pace car modifications have gone wrong, making it a callback. 'Jeez' as a sympathetic opener before the completely unrelated question is perfect. Great economy \u2014 one line, zero wasted words, total character encapsulation.",
       "dialogue": [
         {
           "speaker": "Doctor",
@@ -1721,22 +1748,22 @@
     },
     {
       "index": 53,
-      "text": "I'm gonna die an anonymous, meaningless speck of dust.",
+      "text": "Ben tries to use intern slang 'Ell-chupacabra' and then references something from '40 years ago'",
       "characters": [
-        "Chris"
+        "Ben"
       ],
       "joke_types": [
-        "dark_subversive",
+        "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Chris having an existential crisis",
-      "punchline": "His dramatic description of mortality fears",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
+      "setup": "Ben is continuing his strategy of befriending interns with desperately bad slang",
+      "punchline": "'Ell-chupacabra' as a nickname, followed by 'it's from 40 years ago, never mind' \u2014 Ben attempts a reference that reveals his age/uncoolness",
+      "craft_total": 7.54,
+      "impact_score": 7.5,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Continues Chris's character arc but less impactful than earlier moments",
+      "explanation": "Running gag continuation on Ben's terrible attempts to be cool. 'Chupacabra' as a nickname extension (Ell-bow \u2192 Ell-chupacabra) shows his desperation escalating. '40 years ago' is a slight cheat since Ben would be about 30, but the self-aware 'never mind' is good.",
       "dialogue": [
         {
           "speaker": "Chris",
@@ -1746,22 +1773,23 @@
     },
     {
       "index": 54,
-      "text": "It's too bad there's not doctors for your mind.",
+      "text": "Ben discovers Ellis didn't draw the mocking picture \u2014 'My daughter did.' / 'April's not my daughter. She's my friend.'",
       "characters": [
-        "Andy"
+        "Ben",
+        "Ellis"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Chris having mental health issues",
-      "punchline": "Andy's innocent ignorance of therapists/psychiatrists",
-      "craft_total": 6.55,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Andy moment showing his innocent ignorance about mental health care",
+      "setup": "Ben has been confronting the interns about the mocking picture, building up to a speech about respect",
+      "punchline": "The interns reveal it was April who drew the picture \u2014 and Ben's first instinct is to clarify that April is his 'friend,' not his daughter",
+      "craft_total": 7.52,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The payoff to the earlier picture-drawing setup. The twist (it was April, not the interns) redirects all of Ben's righteous anger. His priority clarification \u2014 'she's my friend' before addressing the actual betrayal \u2014 implies he's a little stung by the age implication. 'Does everyone think she's my daughter?' is a nice secondary joke about how they're perceived.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1779,22 +1807,23 @@
     },
     {
       "index": 55,
-      "text": "I need to climb the Mount Everest of my mind.",
+      "text": "April appears and says 'Sorry, Dad.' \u2014 Ben immediately forgives her",
       "characters": [
-        "Chris"
+        "April",
+        "Ben"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Chris talking about internal goals vs external ones",
-      "punchline": "His overly dramatic metaphor for therapy",
-      "craft_total": 6.2,
-      "impact_score": 5.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Typical Chris over-the-top metaphor but not as strong as his other moments",
+      "setup": "Ben has just insisted April is his 'friend,' not his daughter \u2014 and that she would 'never' disrespect him",
+      "punchline": "April immediately proves him wrong by calling him 'Dad' \u2014 the most disrespectful possible response to his 'she's my friend' insistence",
+      "craft_total": 7.82,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Structurally brilliant two-beat callback. Ben says 'she's my friend, not my daughter' and then April immediately calls him 'Dad,' which is both the meanest and funniest possible response. The joke is in the structural perfection: the denial creates the setup, April's response is the punchline, and it takes only two words. The [15:27] gap implies a comedic pause before she says it. This is one of the stronger jokes of the episode.",
       "dialogue": [
         {
           "speaker": "Chris",
@@ -1804,22 +1833,23 @@
     },
     {
       "index": 56,
-      "text": "Right. That was the worst thing you were.",
+      "text": "Ron: 'So what? I've tried to fire you.' \u2014 delivered completely seriously",
       "characters": [
-        "Ron"
+        "Ron",
+        "Leslie"
       ],
       "joke_types": [
         "deadpan_understatement",
-        "character_comedy"
+        "setup_punchline"
       ],
-      "setup": "Leslie saying she was a dedicated public servant",
-      "punchline": "Ron confirming that was her worst quality",
-      "craft_total": 7.3,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie says the public might want to fire her \u2014 she seems to expect Ron's sympathy",
+      "punchline": "Ron volunteers that he also tried to fire her, with zero sympathy, as if this is a normal data point to share",
+      "craft_total": 7.88,
+      "impact_score": 7.75,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Ron moment - turning a positive trait into an insult through his anti-government perspective",
+      "explanation": "Ron Swanson at his best \u2014 he volunteers information that should be devastating (your boss tried to fire you) with complete equanimity, as if it's a mild comfort. The delivery is everything: no malice, just honesty. This sets up the extended personnel file reveal joke. Economy is near-perfect.",
       "dialogue": [
         {
           "speaker": "Leslie Knope",
@@ -1833,23 +1863,23 @@
     },
     {
       "index": 57,
-      "text": "12%. 15. For God's sake, I'm asking for 15% effort. It's not supposed to be a negotiation.",
+      "text": "Leslie reads her personnel file \u2014 'Brilliant work,' 'Commendation,' 'Above and beyond' \u2014 then finds 'Request for termination'",
       "characters": [
-        "April",
-        "Ben"
+        "Leslie",
+        "Ron"
       ],
       "joke_types": [
-        "character_comedy",
+        "setup_punchline",
         "escalation"
       ],
-      "setup": "Ben asking April for 15% effort",
-      "punchline": "April trying to negotiate down to 12%, Ben's exasperation",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great character moment showing April's laziness and Ben's reasonable desperation",
+      "setup": "Ron hands Leslie her file; she reads glowing reviews",
+      "punchline": "The glowing reviews are punctuated by a 'Request for termination' \u2014 Ron has been recording both her successes and his attempts to fire her in the same file",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Good payoff to the 'I've tried to fire you' reveal. The juxtaposition of commendations and termination requests in the same file tells a whole story about Ron \u2014 he kept both because both are factually accurate. Not the funniest joke but good structural work.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -1867,22 +1897,23 @@
     },
     {
       "index": 58,
-      "text": "Ellis hates you, and he has herpes.",
+      "text": "Leslie: 'You tried to fire me once?' / Ron: 'No, no, no, no. I tried to fire you four times.'",
       "characters": [
-        "April"
+        "Leslie",
+        "Ron"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "escalation",
+        "deadpan_understatement"
       ],
-      "setup": "Ben asking about Ellis",
-      "punchline": "April's casually brutal revelation about Ellis",
-      "craft_total": 6.7,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good April moment but the herpes addition feels like cheap shock value",
+      "setup": "Leslie has discovered one termination request in her file",
+      "punchline": "Ron corrects her \u2014 he tried four times, not once \u2014 delivered as if the distinction matters for accuracy, not cruelty",
+      "craft_total": 8.21,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is a top-tier joke in the episode. The correction from 'once' to 'four times' is purely about accuracy for Ron \u2014 he's not trying to be cruel, just precise. The number four is perfect (high enough to be shocking, specific enough to be funny). Leslie's stuttering response ('What--you--me--fou-- four--fired--times?') is the perfect reaction and should be hysterical to watch. Character integration is as high as it gets \u2014 only Ron Swanson would correct 'once' to 'four times' with this energy.",
       "dialogue": [
         {
           "speaker": "April",
@@ -1892,28 +1923,344 @@
     },
     {
       "index": 59,
-      "text": "I'm gonna get a melon baller and scoop your eyes out and eat them, and your congressman uncle is gonna have to buy you a dog to drag your eyeless face around.",
+      "text": "Leslie's reaction to learning she was fired four times: 'What--you--me--fou-- four--fired--times?'",
       "characters": [
-        "April"
+        "Leslie"
       ],
       "joke_types": [
-        "dark_subversive",
-        "escalation"
+        "reaction_beat",
+        "character_comedy"
       ],
-      "setup": "April threatening Ellis to do his work",
-      "punchline": "Her extremely graphic and specific threat",
-      "craft_total": 7.3,
-      "impact_score": 8.0,
-      "quotability": 8.0,
+      "setup": "Ron has just calmly informed Leslie he tried to fire her four times",
+      "punchline": "Leslie short-circuits completely, producing a broken string of syllables as she tries to process this information",
+      "craft_total": 7.12,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Classic April moment - extremely dark and specific threat delivered matter-of-factly. Highly quotable and memorable.",
+      "is_callback": 1,
+      "explanation": "Amy Poehler's physical/verbal reaction comedy is one of Parks & Rec's most reliable tools. The specific fragmentation of 'what-you-me-fou-four-fired-times' captures someone's brain failing to form sentences in real time. It extends the previous joke's impact and is a showcase for Poehler's reaction performance.",
       "dialogue": [
         {
           "speaker": "April",
           "line": "Do your work, or I will find you, tie you to a chair, and make you watch me slowly eat all the food in your house while describing in detail how much I'm enjoying it. Then I'll leave you there, bound and starving, surrounded by the empty containers and my satisfied burps."
         }
       ]
+    },
+    {
+      "index": 60,
+      "text": "Ron: 'If you need to boot again, the trash can's on your right.'",
+      "characters": [
+        "Ron"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Leslie has just had her mind blown by the four-firings revelation",
+      "punchline": "Ron, with complete emotional flatness, offers Leslie practical vomiting directions",
+      "craft_total": 7.69,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Ron's matter-of-fact 'the trash can's on your right' as the entire sum of his emotional support is perfect character comedy. He's not unkind \u2014 he's genuinely being helpful in his way. 'Boot again' as his chosen slang for vomiting is a nice specific detail. Strong economy."
+    },
+    {
+      "index": 61,
+      "text": "Chris's medical test results: 'The news is terrible. They found... nothing. Nothing? Nothing. The silent killer.'",
+      "characters": [
+        "Chris",
+        "Andy",
+        "Tom"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Chris dramatically announces his test results are 'terrible'",
+      "punchline": "They found nothing \u2014 Chris is physically fine. But he treats this as bad news ('the silent killer') because he was hoping something was wrong",
+      "craft_total": 8.28,
+      "impact_score": 8.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the best jokes of the episode. The structure is immaculate: 'the news is terrible' builds dread, 'they found... nothing' subverts it as good news \u2014 but then Chris reframes nothing as 'the silent killer.' His psychology (preferring to have a diagnosable problem over being inexplicably anxious) is revealed in one exchange. The pause before 'nothing' and the follow-up 'the silent killer' are both perfectly timed on the page. This is character comedy, misdirection, and dark subversion all in one. Comparable to the 8.0 anchor and exceeds it in structure."
+    },
+    {
+      "index": 62,
+      "text": "Andy: 'It's too bad there's not doctors for your mind.' \u2014 said completely sincerely, apparently unaware therapy exists",
+      "characters": [
+        "Andy",
+        "Chris"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Andy and Tom are discussing Chris's obvious emotional issues",
+      "punchline": "Andy suggests \u2014 apparently as an original idea \u2014 that someone should invent doctors for the mind, unaware that therapy is a thing",
+      "craft_total": 8.21,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A genuinely great Andy Dwyer joke. His sincere suggestion of 'doctors for your mind' shows he's empathetic (he's trying to help Chris) while revealing a gap in his knowledge base so specific that it's both absurd and completely believable. Only Andy Dwyer would accidentally recommend therapy while not knowing therapy exists. High character integration and quotability."
+    },
+    {
+      "index": 63,
+      "text": "Chris's response to the therapy suggestion: 'Au contraire, mon frere. You are as in line as a person can be.'",
+      "characters": [
+        "Chris"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Tom suggests Chris should see a therapist after his emotional spiraling",
+      "punchline": "Chris, who has been resisting the idea of emotional problems, responds in French with excessive formality \u2014 and then immediately has a motivational epiphany about 'climbing the Mount Everest of my mind'",
+      "craft_total": 6.77,
+      "impact_score": 6.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The French is a nice Chris Traeger detail \u2014 he's so enthusiastic that he switches languages to express maximum agreement. The joke is his complete transformation of 'you need therapy' into a personal empowerment narrative, which is exactly how Chris would process this."
+    },
+    {
+      "index": 64,
+      "text": "After Andy misses his time: 'What was my time?' / 'I don't know. 43.' / 'Yes! New record.'",
+      "characters": [
+        "Andy",
+        "Chris"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Chris asked Andy to time him; Andy was distracted by his own epiphany",
+      "punchline": "Andy gives a completely made-up time ('I don't know. 43.') and Chris celebrates it as a new record, not caring about accuracy",
+      "craft_total": 7.34,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke is that Chris, who cares deeply about precise athletic metrics, accepts '43' (of what unit? for what distance?) as a valid time because he needs the affirmation right now. Andy's delivery of 'I don't know. 43.' shows he knows he's making it up. Both characters serve the joke well."
+    },
+    {
+      "index": 65,
+      "text": "Chris: 'All my life I have tried to achieve external goals. Run a four-minute mile, climb Mount Everest... but before I can do that, I need to climb the Mount Everest of my mind.'",
+      "characters": [
+        "Chris"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Chris has just had an epiphany about therapy",
+      "punchline": "He frames his emotional growth as a physical challenge \u2014 'the Mount Everest of my mind' \u2014 and pivots immediately back to wanting to actually climb Everest",
+      "craft_total": 6.99,
+      "impact_score": 6.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Chris converting emotional insight into physical metaphor is quintessential character comedy. 'The Mount Everest of my mind' is a genuinely funny image. The joke is that he still hasn't gotten to therapy \u2014 he's turned 'go to therapy' into 'climb a mental mountain,' which is the same avoidance behavior."
+    },
+    {
+      "index": 66,
+      "text": "Ron's explanation for trying to fire Leslie: 'You were insubordinate, stubborn, a pain in my ass, and, worst of all, bubbly.'",
+      "characters": [
+        "Ron",
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Leslie asks why Ron tried to fire her \u2014 expecting it to be about her ideas or performance",
+      "punchline": "Ron lists professional failings but the final, supposedly worst offense is 'bubbly' \u2014 her personality, not her work",
+      "craft_total": 8.53,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfect joke for the Ron/Leslie relationship. The escalating list of legitimate grievances (insubordinate, stubborn, pain in my ass) lands in 'worst of all, bubbly' \u2014 Ron's deepest professional aversion is cheerfulness. It's completely true to his character, very funny, and reframes the entire relationship. Leslie's response ('I was a dedicated public servant') and Ron's 'Right. That was the worst thing you were' is an excellent coda."
+    },
+    {
+      "index": 67,
+      "text": "Leslie: 'I was a dedicated public servant.' Ron: 'Right. That was the worst thing you were.'",
+      "characters": [
+        "Ron",
+        "Leslie"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "irony_sarcasm"
+      ],
+      "setup": "Leslie objects that she was just being a good employee; Ron has listed 'bubbly' as the worst offense",
+      "punchline": "Ron confirms that her dedication to public service was indeed among the worst things about her \u2014 completely sincere",
+      "craft_total": 8.48,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The button to the 'worst of all, bubbly' joke is arguably funnier than the joke itself. Ron confirming that Leslie's sincere dedication to public service was one of the worst things about her encapsulates his entire anti-government philosophy in a warm, funny way. It's not mean because the show has established Ron genuinely respects her \u2014 it's just that her values are antithetical to his. Economy is near-perfect."
+    },
+    {
+      "index": 68,
+      "text": "Leslie: 'As far as this firing stuff goes, I won't forget and I will never forgive you.' Ron: [takes this as the correct response]",
+      "characters": [
+        "Leslie",
+        "Ron"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Ron has given Leslie a heartfelt pep talk and a compass; there's a genuine warm moment",
+      "punchline": "Leslie responds to a warm moment by declaring she won't forgive Ron for the firings \u2014 Ron's reaction implies this is exactly what he'd want from her (grudges are more his language than gratitude)",
+      "craft_total": 7.83,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A good character button \u2014 Leslie, who has just received genuine emotional support, pivots back to holding a grudge. It's funny because it's very Leslie (scorekeeping coexisting with warmth) and also because Ron would genuinely prefer this to more emotional gratitude. Good relationship joke."
+    },
+    {
+      "index": 69,
+      "text": "April brings Ben a report with 30 different fonts \u2014 'Funny because it has 30 different fonts on it, and you only like one.'",
+      "characters": [
+        "April",
+        "Ben"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Ben has been on a crusade about consistent font usage all episode",
+      "punchline": "April delivers a report using maximum font variation as a deliberate act of trolling \u2014 and names it as a joke",
+      "craft_total": 7.33,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent callback to the opening font joke. April weaponizing Ben's most petty obsession against him is perfect character comedy \u2014 she's been paying attention even when she seemed not to care. 'Funny because it has 30 different fonts and you only like one' is a rare moment of April explaining the joke, which works because she's doing it to his face."
+    },
+    {
+      "index": 70,
+      "text": "Ben asks April for '15% effort' \u2014 April negotiates it down to 12 \u2014 Ben insists on 15 \u2014 April concedes '15, fine'",
+      "characters": [
+        "Ben",
+        "April"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Ben is trying to set minimum standards for April's work performance",
+      "punchline": "April counter-offers at 12% effort, treating a work conversation as a negotiation over how little she has to do",
+      "craft_total": 8.4,
+      "impact_score": 8.5,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is one of the best jokes in the episode. The concept of negotiating the minimum amount of effort as if it's a salary discussion is an original comedic premise. The specific numbers (15 vs. 12) make it feel like an actual negotiation. Ben's exasperated 'It's not supposed to be a negotiation' and April ultimately conceding '15, fine' (as if she's the one making a sacrifice) are both perfect. High quotability, strong character integration \u2014 this is specifically April and specifically Ben."
+    },
+    {
+      "index": 71,
+      "text": "Leslie votes 'aye' on the soda tax after all her agonizing \u2014 then her talking head: 'And by the way, she's totally bluffing about laying people off, you watch.'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Leslie has spent the whole episode agonizing over the soda tax vote",
+      "punchline": "She votes aye with complete confidence \u2014 then her talking head reveals she's already rationalizing, with zero evidence, that the layoff threat was a bluff",
+      "craft_total": 6.75,
+      "impact_score": 6.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The talking head reveals Leslie's cognitive dissonance \u2014 she's voted her conscience but is already constructing justifications without evidence. 'You watch' as a tag is a funny punctuation mark. Good character work: Leslie is self-aware enough to know she made a controversial choice but not self-aware enough to admit her uncertainty."
+    },
+    {
+      "index": 72,
+      "text": "April's talking head about Ellis: 'Ellis hates you, and he has herpes.'",
+      "characters": [
+        "April"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "dark_subversive"
+      ],
+      "setup": "Ben thinks he's made progress with the interns; April is giving him an update",
+      "punchline": "April casually drops that Ellis has herpes immediately after 'Ellis hates you,' treating both as equivalent pieces of information",
+      "craft_total": 7.53,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Pure April \u2014 the herpes reveal is delivered with zero affect, as if it's a germane update in the same category as 'hates you.' There's no setup for it; it just arrives. The economy is exceptional: seven words, one of which is 'and,' cover both a professional concern and a medical disclosure. The humor comes entirely from the tonal flatness and the absurd pairing."
+    },
+    {
+      "index": 73,
+      "text": "April threatens Ellis: 'Ellis hates you, and he has herpes.' / 'I know where you live. 14th street, right? I'm gonna get a melon baller and scoop your eyes out and eat them, and your congressman uncle is gonna have to buy you a dog to drag your eyeless face around.'",
+      "characters": [
+        "April",
+        "Ellis"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Ellis hasn't finished the website despite multiple reminders; April intervenes on Ben's behalf",
+      "punchline": "April's threat escalates from 'I'll murder you' to a highly specific, graphic, and logistically detailed plan involving a melon baller and a guide dog for his eyeless face \u2014 culminating in invoking his connected uncle",
+      "craft_total": 8.68,
+      "impact_score": 9.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The best joke in the episode and possibly a series highlight. April's threat is terrifying, specific, logistically coherent, and perfectly in her character. 'A melon baller' is an inspired weapon choice \u2014 mundane kitchen tool, maximum horror. 'Your congressman uncle is gonna have to buy you a dog to drag your eyeless face around' ties back to the political connections subplot while being genuinely unhinged. She also leads with 'Ellis hates you, and he has herpes' as a two-part opener. The specificity of '14th street, right?' makes it feel like real stalker knowledge. Exceptional character integration \u2014 only April Ludgate delivers this. Justifies 8.6 craft and 9.0 impact."
+    },
+    {
+      "index": 74,
+      "text": "April threatens Ellis with graphic eye-scooping violence: 'I'm gonna get a melon baller and scoop your eyes out and eat them, and your congressman uncle is gonna have to buy you a dog to drag your eyeless face around.'",
+      "characters": [
+        "April",
+        "Ellis"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "April is standing up for Ben against Ellis's disrespect",
+      "punchline": "April's threat escalates from generic violence to an incredibly specific, grotesque, and logistically detailed scenario involving a melon baller, eye-eating, and a service dog for the blinded Ellis",
+      "craft_total": 7.55,
+      "impact_score": 7.75,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is the standout comedic moment of the episode and one of the great April Ludgate speeches. What makes it extraordinary: (1) the specificity of the melon baller as the chosen instrument; (2) the pivot to 'eat them' \u2014 not just scooping eyes but consuming them; (3) the logistical planning for post-blinding life (he'll need a dog); (4) the callback to Ellis's congressional uncle connection, weaponized as an insult rather than a threat. The speech is grotesque but somehow warm because it's April defending Ben. The escalation structure is technically flawless. Comfortably in the 9+ range."
+    },
+    {
+      "index": 75,
+      "text": "April's talking head after the threat: 'Do it.' \u2014 a simple direct-to-camera encouragement to herself/the audience",
+      "characters": [
+        "April"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "meta_self_referential"
+      ],
+      "setup": "April has delivered a terrifying threat; Ellis has agreed to do the website",
+      "punchline": "April's talking head is simply 'Do it.' \u2014 the most minimal possible expression of self-satisfaction",
+      "craft_total": 8.32,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The perfect button on the melon baller speech. 'Do it.' is two words that convey total confidence and complete personality. It's a tiny joke \u2014 just a talking head \u2014 but as a punctuation mark on one of the episode's biggest moments, it's extremely effective. The economy score is 10 because you couldn't use fewer words."
     }
   ],
   "air_date": "2012-09-27",

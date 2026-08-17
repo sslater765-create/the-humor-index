@@ -4,34 +4,35 @@
   "season": 4,
   "episode_number": 6,
   "title": "End Of The World",
-  "humor_index": 78.5,
-  "jpm": 2.75,
-  "avg_craft": 6.95,
-  "avg_impact": 6.62,
-  "total_jokes": 65,
-  "war": 51.0,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"deadpan_understatement\"]",
-  "standout_joke_ids": "[65, 51, 43]",
-  "weakest_section": "17:00-18:30",
+  "humor_index": 91.2,
+  "jpm": 3.05,
+  "avg_craft": 7.46,
+  "avg_impact": 7.31,
+  "total_jokes": 72,
+  "war": 99.7,
+  "dominant_joke_types": "[\"character_comedy\", \"deadpan_understatement\", \"absurdist\"]",
+  "standout_joke_ids": "[59, 24, 17]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Again, Andy, you don't need to bow.",
+      "text": "Andy bowing to Leslie when presenting Herb",
       "characters": [
-        "Leslie",
-        "Andy"
+        "Andy",
+        "Leslie"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "physical_slapstick"
       ],
-      "setup": "Andy formally presents someone to Leslie",
-      "punchline": "Leslie has to tell him not to bow, implying he's overdoing the formality",
-      "craft_total": 6.45,
-      "impact_score": 5.5,
+      "setup": "Andy is introducing a citizen to Leslie in a professional government setting",
+      "punchline": "Andy bows like a medieval servant, totally incongruous with his role as a city employee",
+      "craft_total": 6.94,
+      "impact_score": 6.5,
       "quotability": 4.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Andy character moment - his earnest over-formality is endearing and fits his childlike enthusiasm",
+      "explanation": "Perfect Andy character beat \u2014 his childlike deference and inability to read professional norms is his defining trait. 'As you wish, ma'am' seals it with a fairy-tale register. The Leslie correction 'you don't need to bow' grounds it. Works beautifully in one exchange.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -45,22 +46,22 @@
     },
     {
       "index": 2,
-      "text": "Turns out, when you think the world is ending, you don't aim so carefully in the Porta-Potties.",
+      "text": "Leslie's response to being told the world is ending: 'Oh, nuts. You're sure it's tomorrow?'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "observational",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Leslie explains the cult's all-night vigils are annoying",
-      "punchline": "The specific gross detail about bathroom hygiene during apocalyptic events",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "A citizen solemnly warns Leslie the world will end at dawn",
+      "punchline": "Leslie's response is cartoonishly mild \u2014 'Oh, nuts' \u2014 and her follow-up is purely logistical, as if she's double-checking a meeting time",
+      "craft_total": 7.95,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent escalation from 'super annoying' to hilariously specific gross detail. Strong structure and unexpected punchline",
+      "explanation": "This is exceptional Leslie Knope characterization compressed into four words. 'Oh, nuts' is the perfect Leslie expletive \u2014 wholesome, mild, and bureaucratically unflappable. The follow-up question treats apocalyptic prophecy as a scheduling conflict. High character integration: only Leslie would respond this way. Economy is near-perfect.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -70,23 +71,22 @@
     },
     {
       "index": 3,
-      "text": "Well, they figure if people criticize them, it'll seem like they're attacking something very reasonable. That's weirdly brilliant.",
+      "text": "Talking-head confessional: 'Turns out, when you think the world is ending, you don't aim so carefully in the Porta-Potties.'",
       "characters": [
-        "Leslie",
-        "Ben"
+        "Leslie"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "absurdist"
+        "observational",
+        "deadpan_understatement"
       ],
-      "setup": "Ben asks why the cult calls themselves 'The Reasonableists'",
-      "punchline": "The twisted logic is so backwards it's actually clever",
-      "craft_total": 7.05,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Leslie explains the cult has a history of all-night vigils in the park",
+      "punchline": "The practical civic nightmare this creates \u2014 bad Porta-Potty aim \u2014 is delivered with total bureaucratic seriousness",
+      "craft_total": 7.91,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Smart commentary on how manipulative organizations operate. The 'weirdly brilliant' reaction sells the absurdity",
+      "explanation": "A brilliant left turn from the existential to the sanitation. The specificity of 'Porta-Potties' and the cause-effect logic ('when you think the world is ending') is genuinely clever writing. Leslie's deadpan civic concern makes it funnier \u2014 this is her real worry about the cult.",
       "dialogue": [
         {
           "speaker": "Ben",
@@ -100,22 +100,23 @@
     },
     {
       "index": 4,
-      "text": "They've said that the world is gonna end 15 times, and the only bad thing that's ever happened on any of those dates is Lance Armstrong dumping Sheryl Crow.",
+      "text": "The cult calls itself 'The Reasonableists' so critics will seem like they're attacking something reasonable",
       "characters": [
-        "Leslie"
+        "Leslie",
+        "Ben"
       ],
       "joke_types": [
-        "observational",
-        "misdirection"
+        "absurdist",
+        "setup_punchline"
       ],
-      "setup": "Leslie reassures there's nothing to worry about from the cult's predictions",
-      "punchline": "The specific celebrity breakup as the only 'catastrophe'",
-      "craft_total": 7.1,
-      "impact_score": 6.5,
+      "setup": "Ben asks why the doomsday cult would call themselves 'The Reasonableists'",
+      "punchline": "Leslie explains it's a rhetorical shield: critics end up sounding like they're against reason itself",
+      "craft_total": 7.78,
+      "impact_score": 7.67,
       "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good misdirection from apocalyptic to trivial celebrity gossip. Dating the episode but works for character perspective",
+      "explanation": "Sharp satirical writing about cult branding and rhetorical manipulation. Ben's genuine reaction 'That's weirdly brilliant' is the right straight-man beat. The concept is original and has real intellectual teeth. Not as character-specific as some jokes but the writing is crisp.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -133,21 +134,22 @@
     },
     {
       "index": 5,
-      "text": "That was a tragic day. LIVESTRONG. Mmm.",
+      "text": "Ben's response 'That's weirdly brilliant' to the Reasonableists cult naming strategy",
       "characters": [
         "Ben"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "reaction_beat",
+        "irony_sarcasm"
       ],
-      "setup": "Leslie mentions Lance Armstrong dumping Sheryl Crow",
-      "punchline": "Ben's deadpan agreement with Leslie's absurd perspective",
-      "craft_total": 6.25,
-      "impact_score": 5.5,
-      "quotability": 5.0,
+      "setup": "Leslie explains the cult's manipulative naming strategy",
+      "punchline": "Ben, the rational bureaucrat, can't help but genuinely admire the rhetorical cleverness of a doomsday cult",
+      "craft_total": 7.54,
+      "impact_score": 7.25,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Ben playing along with Leslie's dramatic perspective. The 'LIVESTRONG' reference adds specificity",
+      "explanation": "A well-placed reaction that subverts the expected straight-man dismissal. Ben admiring cult strategy is a small but effective character beat. Economy is excellent \u2014 three words carry the comedy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -161,21 +163,22 @@
     },
     {
       "index": 6,
-      "text": "These people live on planet Nutbrain.",
+      "text": "The only bad thing that ever happened on past doomsday dates was Lance Armstrong dumping Sheryl Crow \u2014 'That was a tragic day. LIVESTRONG.'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "setup_punchline",
+        "absurdist"
       ],
-      "setup": "Leslie insists on accompanying the cult members",
-      "punchline": "The made-up planet name 'Nutbrain'",
-      "craft_total": 5.9,
-      "impact_score": 5.0,
-      "quotability": 6.0,
+      "setup": "Leslie reassures everyone that past doomsday predictions resulted in nothing bad happening",
+      "punchline": "She names the one 'tragedy' \u2014 a celebrity breakup \u2014 then solemnly invokes Lance Armstrong's cancer charity slogan",
+      "craft_total": 7.41,
+      "impact_score": 7.33,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple wordplay combining 'nutty' and 'brain.' Fits Leslie's tendency toward creative insults",
+      "explanation": "The escalation from 'nothing bad happened' to celebrity gossip to 'LIVESTRONG' is a perfect three-beat joke. The solemnity of 'LIVESTRONG' as a response to the Armstrong-Crow breakup is absurdist Leslie logic at its best. High quotability, strong character integration \u2014 this is exactly the kind of non sequitur Leslie would treat with complete sincerity.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -185,22 +188,22 @@
     },
     {
       "index": 7,
-      "text": "I live on planet Nut Bran. Bran and nuts are very helpful for your colon.",
+      "text": "'I live on planet Nut Bran. Bran and nuts are very helpful for your colon.'",
       "characters": [
-        "Andy"
+        "Herb"
       ],
       "joke_types": [
         "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "Leslie says the cult lives on 'planet Nutbrain'",
-      "punchline": "Andy mishears it as health advice about digestive health",
-      "craft_total": 7.55,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Leslie dismisses the cult by saying they 'live on planet Nutbrain'",
+      "punchline": "Herb mishears it as 'Nut Bran,' pivots to a dietary endorsement of fiber for colon health",
+      "craft_total": 6.74,
+      "impact_score": 6.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Andy moment - mishearing an insult as earnest health advice. The colon comment is wonderfully inappropriate",
+      "explanation": "The misunderstanding creates a nice malapropism beat. The colon follow-up is the escalation that makes it work \u2014 he's not just mishearing, he's enthusiastically advocating for fiber. The non sequitur from apocalypse to digestive health is absurdly funny.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -214,22 +217,22 @@
     },
     {
       "index": 8,
-      "text": "Ben and I don't hang out much these days. Big deal. Lots of people don't hang out. Jerry and April. Obama and Madonna, probably.",
+      "text": "Leslie's talking-head about not hanging out with Ben: 'Big deal. Lots of people don't hang out. Jerry and April. Obama and Madonna, probably.'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Leslie downplays not hanging out with Ben",
-      "punchline": "The escalation from coworkers to random celebrity pairing",
-      "craft_total": 7.45,
-      "impact_score": 7.0,
+      "setup": "Leslie tries to downplay the awkwardness of not hanging out with Ben post-breakup",
+      "punchline": "She lists examples of people who don't hang out \u2014 coworkers who barely interact, then wildly escalates to 'Obama and Madonna, probably'",
+      "craft_total": 7.76,
+      "impact_score": 7.5,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation structure ending with absurd celebrity comparison. Shows Leslie's defensive rationalization",
+      "explanation": "The list joke escalates perfectly: Jerry/April (believable coworker distance) \u2192 Obama/Madonna (completely absurd celebrity non-pairing). The 'probably' is the key word \u2014 Leslie's breezy confidence in a speculation she has no basis for. Strong Leslie voice, good structure.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -267,23 +270,22 @@
     },
     {
       "index": 9,
-      "text": "You started out with $450,000. Entertainment 720 is dead. It's up in company heaven. Along with Pets.com, Blockbuster, and Ask Jeeves.",
+      "text": "'We're in good company.'",
       "characters": [
-        "Tom",
-        "Jean-Ralphio"
+        "Leslie"
       ],
       "joke_types": [
         "deadpan_understatement",
-        "observational"
+        "irony_sarcasm"
       ],
-      "setup": "Tom and Jean-Ralphio are excited about getting $5,000 each",
-      "punchline": "The list of famously failed companies their business joins",
-      "craft_total": 6.55,
-      "impact_score": 6.0,
-      "quotability": 6.5,
+      "setup": "Leslie has just claimed Obama and Madonna probably don't hang out either",
+      "punchline": "She sincerely concludes this puts her and Ben in the same category as the President and a pop icon",
+      "craft_total": 6.89,
+      "impact_score": 6.25,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good reality check humor. Ask Jeeves reference is particularly dated but works for the era",
+      "explanation": "A functional button to joke #8. Works as a tag but doesn't stand alone \u2014 it's the capper that makes the prior absurdist list land harder. Modest but effective.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -325,21 +327,23 @@
     },
     {
       "index": 10,
-      "text": "My company is no better than a company where you ask a fake butler to Google things for you.",
+      "text": "Entertainment 720 is eulogized alongside Pets.com, Blockbuster, and Ask Jeeves",
       "characters": [
+        "Jean-Ralphio",
         "Tom"
       ],
       "joke_types": [
-        "observational"
+        "irony_sarcasm",
+        "setup_punchline"
       ],
-      "setup": "Tom realizes his company is like other failed businesses",
-      "punchline": "The specific description of Ask Jeeves as absurdly pointless",
-      "craft_total": 6.6,
-      "impact_score": 6.5,
+      "setup": "Tom and Jean-Ralphio discover Entertainment 720 is bankrupt with only $5,000 left each",
+      "punchline": "Jean-Ralphio places their failed company in the pantheon of legendary corporate failures \u2014 Pets.com, Blockbuster, Ask Jeeves",
+      "craft_total": 7.22,
+      "impact_score": 7.17,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever deconstruction of a real business model. Tom's devastation makes it funnier",
+      "explanation": "Comparing Entertainment 720 to dot-com bubble casualties is a sharp satirical choice. The list is well-curated \u2014 all three examples are culturally legible failures. Tom and Jean-Ralphio treating this as a badge of honor rather than shame is perfect character comedy.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -353,22 +357,22 @@
     },
     {
       "index": 11,
-      "text": "So what's next, Tommy Davidson? I say we invest our 10 large, and then I accidentally get run over by a city bus, and we start our own hip hop label.",
+      "text": "'My company is no better than a company where you ask a fake butler to Google things for you.'",
       "characters": [
-        "Jean-Ralphio"
+        "Tom"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "irony_sarcasm",
+        "observational"
       ],
-      "setup": "Jean-Ralphio asks what they should do next",
-      "punchline": "The casual mention of getting run over by a bus as part of a business plan",
-      "craft_total": 7.65,
-      "impact_score": 7.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Tom is reeling from Entertainment 720's collapse and its comparison to Ask Jeeves",
+      "punchline": "Tom's self-aware summary of Ask Jeeves \u2014 'a company where you ask a fake butler to Google things for you' \u2014 is both accurate and devastatingly funny as self-indictment",
+      "craft_total": 7.0,
+      "impact_score": 6.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Pure Jean-Ralphio - treating getting hit by a bus as a business opportunity. Perfectly absurd character logic",
+      "explanation": "Tom briefly achieves genuine self-awareness, which is funnier than his usual delusion. The Ask Jeeves description is sharp and accurate \u2014 it IS a company where you ask a fake butler to Google things for you. The joke works on two levels: mocking Ask Jeeves AND Tom's equivalence with them.",
       "dialogue": [
         {
           "speaker": "Jean-Ralphio",
@@ -390,21 +394,22 @@
     },
     {
       "index": 12,
-      "text": "Because I'm in like Lara Flynn Boyle from The Practice.",
+      "text": "Jean-Ralphio's plan: invest the money, accidentally get run over by a city bus, and start a hip hop label",
       "characters": [
         "Jean-Ralphio"
       ],
       "joke_types": [
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Jean-Ralphio agrees to throw one last party",
-      "punchline": "The obscure and dated TV reference to express enthusiasm",
-      "craft_total": 5.15,
-      "impact_score": 4.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Tom and Jean-Ralphio are discussing what to do with their remaining $10,000",
+      "punchline": "Jean-Ralphio casually includes 'accidentally get run over by a city bus' as a middle step in his business plan, suggesting insurance fraud as an obvious pivot strategy",
+      "craft_total": 7.7,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Typical Jean-Ralphio random pop culture reference. Works for character but feels lazy",
+      "explanation": "Jean-Ralphio at his peak \u2014 the casual insertion of 'accidentally get run over by a city bus' as a business step, with no elaboration, is perfectly absurdist. It's both a character reveal (he's done this before or seriously considered it) and a dark comedy beat. The word 'accidentally' doing enormous heavy lifting. High originality, strong character integration.",
       "dialogue": [
         {
           "speaker": "Jean-Ralphio",
@@ -414,22 +419,23 @@
     },
     {
       "index": 13,
-      "text": "Diddly, diddly, diddly, diddly, diddly, diddly, swag.",
+      "text": "'A party for the end of the world.' / 'You had me at every dime we have left.'",
       "characters": [
+        "Tom",
         "Jean-Ralphio"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "misdirection",
+        "character_comedy"
       ],
-      "setup": "Jean-Ralphio is expressing enthusiasm",
-      "punchline": "The nonsensical vocal riff ending with 'swag'",
-      "craft_total": 5.2,
-      "impact_score": 5.0,
-      "quotability": 6.0,
+      "setup": "Tom pitches throwing one last party with everything they have left",
+      "punchline": "Jean-Ralphio's 'you had me at...' subverts the Jerry Maguire clich\u00e9 \u2014 instead of being moved by a romantic declaration, he's moved by the promise of spending all remaining money",
+      "craft_total": 7.17,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Pure Jean-Ralphio character moment but not particularly clever. Random = funny approach",
+      "explanation": "The subversion of 'you had me at hello' with the punchline being financial recklessness is a good character beat for Jean-Ralphio. His values are exactly backwards from the romantic ideal the phrase invokes. Functional misdirection.",
       "dialogue": [
         {
           "speaker": "Jean-Ralphio",
@@ -439,22 +445,22 @@
     },
     {
       "index": 14,
-      "text": "You watch me play Xbox. And then I can watch you make some prank phone calls. We get hammered, make out.",
+      "text": "'Because I'm in like Lara Flynn Boyle from The Practice.'",
       "characters": [
-        "April"
+        "Jean-Ralphio"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Andy asks what they should do tonight",
-      "punchline": "April's deadpan description of their routine romantic evening",
-      "craft_total": 7.1,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Tom pitches throwing a last party with all their remaining money \u2014 'you had me at every dime we have left'",
+      "punchline": "Jean-Ralphio adds an obscure, non-sequitur celebrity comparison to express enthusiasm",
+      "craft_total": 6.51,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect April delivery - romantic activities described with complete emotional detachment",
+      "explanation": "Quintessential Jean-Ralphio non sequitur \u2014 the random 90s TV reference is his voice exactly. But the joke is more weird than funny; the Lara Flynn Boyle reference is obscure enough that many viewers won't get it, reducing impact. Works as character texture more than an actual joke.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -468,22 +474,22 @@
     },
     {
       "index": 15,
-      "text": "That's because repetition is the key to a good marriage.",
+      "text": "Jean-Ralphio's celebration: 'Diddly, diddly, diddly, diddly, diddly, diddly, swag.'",
       "characters": [
-        "Andy"
+        "Jean-Ralphio"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "April says they do the same thing every night",
-      "punchline": "Andy's earnest but misguided relationship wisdom",
-      "craft_total": 6.85,
-      "impact_score": 6.0,
-      "quotability": 6.5,
+      "setup": "They've just decided to throw a party with all their money",
+      "punchline": "Jean-Ralphio's expression of excitement is six 'diddlys' followed by 'swag' \u2014 a completely meaningless yet somehow triumphant verbal celebration",
+      "craft_total": 6.61,
+      "impact_score": 6.67,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Andy trying to sound wise but revealing he completely misunderstands relationships",
+      "explanation": "Pure Jean-Ralphio id \u2014 the repetition of 'diddly' followed by 'swag' is nonsense that somehow perfectly captures his character. It's a character laugh, not a constructed joke. Fun but not crafted.",
       "dialogue": [
         {
           "speaker": "April",
@@ -497,21 +503,23 @@
     },
     {
       "index": 16,
-      "text": "I'd like to remake the movie Kazaam with Shaquille O'Neal where he plays a genie, and I'd like to get it right.",
+      "text": "April and Andy's nightly routine: pizza, Xbox, prank calls, getting hammered, making out \u2014 'We do that every night.' / 'That's because repetition is the key to a good marriage.'",
       "characters": [
-        "Andy"
+        "Andy",
+        "April"
       ],
       "joke_types": [
-        "absurdist"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Andy lists items from his bucket list",
-      "punchline": "The specific terrible movie he wants to remake and 'get right'",
-      "craft_total": 7.65,
-      "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Andy asks what they should do for the night as if it's an open question",
+      "punchline": "April reveals this is literally every night of their marriage, and Andy responds with a marriage tip that sounds like profound wisdom but is just lazy logic",
+      "craft_total": 7.36,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliantly specific and absurd. The phrase 'get it right' implies the original had potential. Peak Andy logic",
+      "explanation": "The joke builds from a revealed routine to Andy's pseudo-profound 'repetition is the key to a good marriage' \u2014 which sounds like a platitude but is just him defending laziness. The list of activities is funny on its own (escalating from pizza to making out), and April's flat delivery of 'We do that every night' is a perfect deadpan. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -521,22 +529,22 @@
     },
     {
       "index": 17,
-      "text": "When people are walking by, be like this. [visual gag of Andy demonstrating snooty airplane behavior]",
+      "text": "Andy's bucket list includes remaking Kazaam with Shaquille O'Neal 'where he plays a genie, and I'd like to get it right'",
       "characters": [
         "Andy"
       ],
       "joke_types": [
-        "visual_gag",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Andy wants to fly first class",
-      "punchline": "His demonstration of how to act snooty on a plane",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 4.0,
+      "setup": "Andy reveals his bucket list for what might be their last night on Earth",
+      "punchline": "Among legitimate-ish items (skydiving, lottery, unicycle) is the goal to remake Kazaam and 'get it right' \u2014 implying Andy has strong artistic opinions about the 1996 Shaq film",
+      "craft_total": 8.49,
+      "impact_score": 8.67,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Physical comedy showing Andy's misconception of how wealthy people behave",
+      "explanation": "This is the standout joke of the episode. 'I'd like to get it right' implies Andy has genuine artistic dissatisfaction with the original Kazaam, treating a notoriously bad children's movie as a noble creative project awaiting its definitive version. The specificity (Shaquille O'Neal, playing a genie) is perfect \u2014 it's not just 'remake a bad movie' but this exact film, with this exact actor, in this exact role. Absurdist logic delivered with complete sincerity, and wholly unique to Andy Dwyer. Among the funniest character jokes in the series.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -554,22 +562,22 @@
     },
     {
       "index": 18,
-      "text": "Whoa! Still a lot left over.",
+      "text": "Andy mimes looking out a first-class airplane window at passersby on the ground \u2014 'When people are walking by, be like this'",
       "characters": [
         "Andy"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "physical_slapstick",
         "character_comedy"
       ],
-      "setup": "They have $18.04 left after withdrawing $1000",
-      "punchline": "Andy's sarcastic appreciation of the remaining money",
-      "craft_total": 5.6,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Andy is rattling off bucket list items including 'fly first class on a plane'",
+      "punchline": "He physically acts out the specific thing he wants to do in first class \u2014 look down condescendingly at pedestrians \u2014 revealing that flying first class is purely about the social status signal",
+      "craft_total": 7.27,
+      "impact_score": 7.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple sarcasm but fits Andy's character. Not particularly clever",
+      "explanation": "A visual gag that requires the physical performance \u2014 Andy's mime of looking down his nose at ground-level people is funnier than the words alone. The joke reveals Andy's conception of first-class travel is entirely about the power dynamic, not comfort. Strong visual beat with good character insight.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -579,22 +587,23 @@
     },
     {
       "index": 19,
-      "text": "Yes! Now, this is what I imagined.",
+      "text": "April chooses one bucket list item: holding $1,000 in cash. They withdraw exactly $1,000, and it takes two counting attempts to get to the anticlimactic total",
       "characters": [
-        "Andy"
+        "Andy",
+        "April"
       ],
       "joke_types": [
-        "character_comedy",
-        "reaction_beat"
+        "setup_punchline",
+        "escalation"
       ],
-      "setup": "Andy was disappointed by $1000, then April made it into smaller bills",
-      "punchline": "His excitement over the same money in a different form",
-      "craft_total": 7.2,
-      "impact_score": 6.5,
-      "quotability": 4.0,
+      "setup": "April picks the bucket list goal of holding $1,000 cash in your hands, which Andy counts out with great ceremony",
+      "punchline": "The bank account has $18.04 remaining \u2014 they spent nearly everything \u2014 and the first count of $998 is fumbled, requiring a redo, all for the modest thrill of holding four figures in cash",
+      "craft_total": 7.08,
+      "impact_score": 6.75,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Andy's childlike thinking - presentation matters more than substance",
+      "explanation": "The joke is the gap between the grandeur implied (an item on your last-night bucket list) and the modesty of the payoff (touching a thousand dollars). The '$18.04 left in the bank account' detail is a nice kicker. The fumbled first count adds a layer of low-stakes incompetence that fits Andy perfectly.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -612,23 +621,22 @@
     },
     {
       "index": 20,
-      "text": "Have you ever seen this much cash in your entire life? I just handed it to you.",
+      "text": "Andy's reaction to holding the $1,000: extreme disappointment, then euphoria after a recount \u2014 'That's super disappointing... Yes! Now this is what I imagined.'",
       "characters": [
-        "Andy",
-        "April"
+        "Andy"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "setup_punchline"
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Andy asks April if she's ever seen this much cash",
-      "punchline": "April's deadpan reminder that she literally just gave it to him",
-      "craft_total": 7.05,
-      "impact_score": 6.5,
+      "setup": "Andy counts out $1,000 in cash, arriving at $998 the first time",
+      "punchline": "His devastation at $998 is total, and his complete turnaround joy at $1,000 (a $2 difference) is equally total \u2014 revealing he has no sense of proportion",
+      "craft_total": 7.0,
+      "impact_score": 6.33,
       "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect setup/punchline with April's characteristic bluntness deflating Andy's excitement",
+      "is_callback": 1,
+      "explanation": "Andy's emotional binary (complete devastation / complete euphoria) over a $2 difference is funny because it's so true to his character. The visual of his face falling and then erupting must be remarkable. Good use of escalation via emotional over-reaction.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -642,22 +650,22 @@
     },
     {
       "index": 21,
-      "text": "Nickels. I want nickels. A billion nickels!",
+      "text": "After the recount, Andy erupts with 'Yes! Now, this is what I imagined!' \u2014 the second count of identical bills somehow satisfies him",
       "characters": [
         "Andy"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Andy is excited about having cash",
-      "punchline": "His escalation to wanting an impractical amount of the least valuable coin",
-      "craft_total": 6.55,
-      "impact_score": 5.5,
+      "setup": "Andy was disappointed by the first $1,000 count; April recounts the exact same money",
+      "punchline": "Andy is now fully satisfied \u2014 the second count of the same bills triggers the response the first didn't, for no rational reason",
+      "craft_total": 7.25,
+      "impact_score": 6.75,
       "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Andy's childlike fixation on the novelty rather than practicality of money",
+      "is_callback": 1,
+      "explanation": "The payoff to the disappointment beat \u2014 Andy's satisfaction has no rational basis, which is perfect. The joke is that literally nothing changed except Andy's perception. Character-specific and well-earned from the setup.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -679,22 +687,23 @@
     },
     {
       "index": 22,
-      "text": "The Zorpies are ridiculous. But like the Founding Fathers, I believe in absolute freedom of religion. Also their ceremonies require the playing of flutes.",
+      "text": "'Have you ever seen this much cash in your entire life?' / 'I just handed it to you.'",
       "characters": [
-        "Ron"
+        "Andy",
+        "April"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "deadpan_understatement",
+        "setup_punchline"
       ],
-      "setup": "Ron explains his tolerant attitude toward the cult",
-      "punchline": "The reveal that his tolerance is financially motivated",
-      "craft_total": 7.8,
-      "impact_score": 7.5,
+      "setup": "Andy holds the $1,000 and asks April with awe if she's ever seen this much cash",
+      "punchline": "April's flat reminder that she literally just handed it to him punctures his wonder completely",
+      "craft_total": 7.37,
+      "impact_score": 7.17,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ron moment - principled stance undermined by capitalist opportunity. Great misdirection",
+      "explanation": "Six words from April destroy Andy's sense of wonder. The economy is excellent \u2014 April's comeback is as short as possible while being maximally deflating. This is a perfect straight-man/fool exchange, and the fact that she DID just hand it to him makes the burn undeniable.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -716,22 +725,22 @@
     },
     {
       "index": 23,
-      "text": "Flutes are $80 apiece, and recorders are $150.",
+      "text": "'Nickels. I want nickels. A billion nickels!'",
       "characters": [
-        "Ron"
+        "Andy"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Ron mentions making flutes for the ceremony",
-      "punchline": "The specific pricing structure for musical instruments",
-      "craft_total": 6.85,
-      "impact_score": 6.0,
-      "quotability": 5.5,
+      "setup": "April has just deflated Andy's wonder at holding cash",
+      "punchline": "Andy immediately pivots to wanting a billion nickels \u2014 not more dollars, specifically nickels, and specifically a billion of them \u2014 which is both impractical and slightly menacing in volume",
+      "craft_total": 7.64,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Ron the entrepreneur. The specific prices make it funnier and more believable",
+      "explanation": "The specific denomination (nickels) and the specific quantity (a billion) is great absurdist specificity. Andy's brain works in strange loops \u2014 cash disappointment \u2192 want more \u2192 but specifically nickels \u2192 a billion of them. Classic Andy escalation logic.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -741,22 +750,22 @@
     },
     {
       "index": 24,
-      "text": "Would you take a check? You can cash it tomorrow.",
+      "text": "Ron's talking-head: he finds the cult ridiculous BUT respects religious freedom AND they use flutes \u2014 'Flutes are $80 apiece, and recorders are $150.'",
       "characters": [
-        "Herb"
+        "Ron"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "dark_subversive"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Herb wants to buy flutes from Ron",
-      "punchline": "Offering to pay with a check that would be useless after the world ends",
-      "craft_total": 7.1,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Ron dismisses the Reasonableists as ridiculous, invokes the Founding Fathers to defend their right to practice, then reveals his actual interest: he sells the flutes they use in ceremonies",
+      "punchline": "The principle of religious freedom is immediately monetized \u2014 Ron's libertarianism is entirely self-serving commerce disguised as high-minded philosophy",
+      "craft_total": 8.58,
+      "impact_score": 8.67,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark humor about the inconsistency in apocalyptic thinking. Shows cult member's confusion about logistics",
+      "explanation": "This is one of the episode's best jokes because it does so much work so efficiently. Ron's three-step logic \u2014 (1) they're ridiculous, (2) I defend their freedom, (3) they require flutes and I sell flutes \u2014 is a perfect structural reveal. It skewers libertarian principle as enlightened self-interest. The price list delivered with total deadpan ('$80 apiece, recorders are $150') is quintessential Ron. Exceptional character integration.",
       "dialogue": [
         {
           "speaker": "Herb",
@@ -782,22 +791,23 @@
     },
     {
       "index": 25,
-      "text": "The entire party is a VIP area. There's also a double VIP area. A triple VIP area. And a Centurion Club Elite VIP area. Sponsored by SoBe Lifewater. No one is allowed in there. Not even us.",
+      "text": "Ron sells a flute to a Zorpie who asks 'Would you take a check? You can cash it tomorrow.' Ron: 'Sure.'",
       "characters": [
-        "Tom"
+        "Ron",
+        "Zorpie"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Tom describes the party's VIP structure",
-      "punchline": "The escalation to an area so VIP that even the hosts can't enter",
-      "craft_total": 7.3,
-      "impact_score": 7.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation structure showing Tom's over-the-top party planning. The sponsorship detail adds authenticity",
+      "setup": "A Zorpie buys a flute from Ron, notes the world ends tomorrow so the check will be cashable then",
+      "punchline": "Ron accepts without hesitation \u2014 because if the world ends, the check doesn't matter, and if it doesn't, he gets paid. Either way Ron wins, and he knows it.",
+      "craft_total": 7.72,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfect two-word punchline. The Zorpie's logic is the setup up (the check is good because tomorrow the world ends, so he'll definitely be around to cash it), but Ron's 'Sure' acknowledges none of the theological stakes \u2014 he's just a merchant. The joke rewards anyone paying attention to the irony. Economy score of 9: one word does maximum comedy work.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -807,22 +817,23 @@
     },
     {
       "index": 26,
-      "text": "What up, Keith? He actually once tossed me out of a club three years ago. Water under the bridge.",
+      "text": "Entertainment 720's party has a VIP area, double VIP, triple VIP, Centurion Club Elite VIP \u2014 'No one is allowed in there. Not even us.'",
       "characters": [
-        "Tom"
+        "Tom",
+        "Jean-Ralphio"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "absurdist",
+        "escalation"
       ],
-      "setup": "Tom mentions hiring scary bouncers",
-      "punchline": "Casually greeting the bouncer who previously ejected him",
-      "craft_total": 6.95,
-      "impact_score": 6.5,
-      "quotability": 5.5,
+      "setup": "Tom describes the party's layout as an escalating series of VIP sections",
+      "punchline": "The highest tier \u2014 Centurion Club Elite VIP, sponsored by SoBe Lifewater \u2014 is so exclusive that even the founders can't enter it",
+      "craft_total": 7.92,
+      "impact_score": 8.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Tom's ability to network even with people who've wronged him. Character consistency",
+      "explanation": "The escalation from VIP to Centurion Club Elite is perfectly satirical of club culture's hierarchy absurdism. The kicker 'Not even us. Mmm-mmm.' is great \u2014 Tom and Jean-Ralphio are proud of having created a space they cannot access. The SoBe Lifewater sponsorship adds a layer of bathetically unhip corporate partnership. Strong construction.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -840,21 +851,22 @@
     },
     {
       "index": 27,
-      "text": "Oh, thank God. No one shows up to a good party on time. If anyone had actually shown up right now, the whole party would have been ruined. Would have been a disaster.",
+      "text": "The bouncer Keith \u2014 'He actually once tossed me out of a club three years ago. Water under the bridge.'",
       "characters": [
         "Tom"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "No one shows up to Tom's party immediately",
-      "punchline": "Tom's desperate rationalization that this is actually perfect",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Tom introduces the huge scary bouncers he hired for the party, cheerfully greeting one by name",
+      "punchline": "Keith personally ejected Tom from a club three years ago, and Tom has now hired him \u2014 treating the humiliation as no big deal",
+      "craft_total": 6.88,
+      "impact_score": 6.33,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Tom's defensive spin on obvious failure. The repetition emphasizes his desperation",
+      "explanation": "Small but effective Tom character beat \u2014 his social aspirations and selective memory work together. The 'Water under the bridge' is perfect Tom bravado hiding past social failure. The joke reveals that Tom has been thrown out of clubs, which tells us a lot about his history.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -872,22 +884,23 @@
     },
     {
       "index": 28,
-      "text": "It's a little long. Okay. Zorp Shmorp. Doomsday Prediction Falls Flat as Citizens Spend Pleasant Evening Enjoying One of Pawnee's Finest Parks. Somehow longer.",
+      "text": "'No one shows up to a good party on time. If anyone had actually shown up right now, the whole party would have been ruined.'",
       "characters": [
-        "Shauna",
-        "Leslie"
+        "Tom",
+        "Jean-Ralphio"
       ],
       "joke_types": [
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Shauna thinks her first headline is too long",
-      "punchline": "Her 'shorter' alternative is actually much longer",
-      "craft_total": 6.85,
-      "impact_score": 6.5,
+      "setup": "The party begins and absolutely no one is there",
+      "punchline": "Tom and Jean-Ralphio reassure each other (and themselves) that empty parties at start time are actually signs of quality",
+      "craft_total": 7.23,
+      "impact_score": 6.83,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation joke about bad headline writing. Leslie's observation makes it land",
+      "explanation": "A nice cringe-adjacent beat \u2014 they're clearly panicking but inverting the logic to reassure themselves. The second sentence ('Would have been a disaster') overcommits so hilariously that it becomes self-parody. Classic Tom cope.",
       "dialogue": [
         {
           "speaker": "Shauna",
@@ -905,22 +918,22 @@
     },
     {
       "index": 29,
-      "text": "He's a man, and he's a worker, and he is... We've never discussed sex, so... We've always just been very business-like, so your guess is as good, nay, better than mine.",
+      "text": "Leslie tells reporter Shauna that Chris and Ben are at the vigil because she 'had nothing better to do, which probably says more about me than them'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Shauna asks about Ben's relationship status",
-      "punchline": "Leslie's increasingly awkward non-answer revealing her discomfort",
-      "craft_total": 6.55,
-      "impact_score": 6.5,
+      "setup": "Shauna asks Leslie whether the presence of City Manager's office staff signals concern about the cult",
+      "punchline": "Leslie accidentally includes herself in the admission, revealing she also has nothing to do on a Friday night",
+      "craft_total": 6.54,
+      "impact_score": 6.0,
       "quotability": 5.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Leslie's awkwardness when discussing Ben shows her suppressed feelings. The formal language makes it funnier",
+      "explanation": "A functional self-own \u2014 Leslie's characteristic transparency betrays her loneliness. Not a big laugh but an honest, character-consistent moment that lands as a mild chuckle.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -934,22 +947,22 @@
     },
     {
       "index": 30,
-      "text": "She smiles, and then they fall in love, and then they get married, and then she changes her name to Shauna Malwae-Wyatt. Or he's going to be really progressive and change his name to Ben Wyatt Malwae-Tweep. God, I am so annoyed that he would hypothetically do that.",
+      "text": "Shauna's two headline pitches: 'It's the End of the World as They Know It, but Pawnee Feels Fine' (too long) / 'Zorp Shmorp. Doomsday Prediction Falls Flat as Citizens Spend Pleasant Evening Enjoying One of Pawnee's Finest Parks.' (somehow longer)",
       "characters": [
-        "Leslie"
+        "Shauna"
       ],
       "joke_types": [
         "escalation",
-        "character_comedy"
+        "irony_sarcasm"
       ],
-      "setup": "Leslie is jealous watching Shauna and Ben talk",
-      "punchline": "Getting angry at Ben for something completely hypothetical and progressively specific",
-      "craft_total": 7.65,
-      "impact_score": 8.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Shauna pitches a headline for her story, Leslie notes the first one is 'a little long'",
+      "punchline": "Her second attempt \u2014 framed as a correction \u2014 is demonstrably, absurdly longer while appearing to try to be shorter",
+      "craft_total": 7.31,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent escalation showing Leslie's spiraling jealousy. The specific name combinations and 'hypothetically' anger are perfect",
+      "explanation": "The escalation structure is clean: first headline is too long, second is worse. 'Somehow longer' as the observation is the right callback button. 'Zorp Shmorp' as the opening of a serious headline is also its own joke \u2014 Shauna deploying dismissive Yiddish-inflected slang in a newspaper headline. Well-constructed.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -975,22 +988,23 @@
     },
     {
       "index": 31,
-      "text": "Oh, my God. I know that move. They're going to have sex in five minutes.",
+      "text": "Shauna asks if Chris is single. Leslie says no, he's dating Jerry's daughter. Shauna says she meant Ben. Leslie's increasingly panicked non-answers about Ben.",
       "characters": [
-        "Leslie"
+        "Leslie",
+        "Shauna"
       ],
       "joke_types": [
-        "observational",
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Leslie watches Shauna and Ben interact",
-      "punchline": "Her dramatic overinterpretation of normal conversation",
-      "craft_total": 6.45,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Shauna casually asks if a colleague is single, and Leslie assumes she means Chris",
+      "punchline": "She meant Ben \u2014 Leslie's ex \u2014 and Leslie's spiral of non-answers ('He's a man, and he's a worker, and he is... We've never discussed sex') is a cringe comedy escalation revealing her emotional investment",
+      "craft_total": 7.54,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Leslie's jealous paranoia making her see romance where none exists. The specific timeframe is funny",
+      "explanation": "Leslie's verbal disintegration under romantic stress is a reliable comedic engine for this show. 'He's a man, and he's a worker, and he is...' trails into nothing. 'We've never discussed sex' is the funniest evasion \u2014 framed as businesslike but revealing she's thought about it. 'Your guess is as good, nay, better than mine' is a great piece of flustered Leslie rhetoric.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1000,21 +1014,22 @@
     },
     {
       "index": 32,
-      "text": "Oh, yeah! 10 bucks. That counts as winning the lottery.",
+      "text": "'He's a man, and he's a worker, and he is... We've never discussed sex, so... We've always just been very business-like, so your guess is as good, nay, better than mine.'",
       "characters": [
-        "Andy"
+        "Leslie"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Andy finds money on the ground",
-      "punchline": "His decision that this fulfills his lottery-winning bucket list item",
-      "craft_total": 6.85,
-      "impact_score": 6.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Shauna asks if Ben is single",
+      "punchline": "Leslie's attempt to sound neutral and professional completely collapses \u2014 'nay, better than mine' is the key tell that she knows everything about him",
+      "craft_total": 7.77,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Andy's low standards for achievement. Good callback to his bucket list",
+      "explanation": "The 'nay, better than mine' construction is the most precise bit of Leslie rhetoric in this sequence. By saying her own guess is WORSE than a stranger's, she ironically reveals intimate knowledge of Ben. The comedy comes from the gap between her performance of ignorance and her obvious emotional transparency. Strong Leslie characterization.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1028,22 +1043,22 @@
     },
     {
       "index": 33,
-      "text": "Honey, my bucket list doesn't say, 'Make a pretty awesome grilled cheese sandwich.' We gotta go back to the store.",
+      "text": "Leslie's spiral: 'I know how Shauna operates. She smiles, and then they fall in love, and then they get married, and then she changes her name to Shauna Malwae-Wyatt. Or he's going to be really progressive and change his name to Ben Wyatt Malwae-Tweep.'",
       "characters": [
-        "Andy"
+        "Leslie"
       ],
       "joke_types": [
         "character_comedy",
         "escalation"
       ],
-      "setup": "April says the sandwich is pretty awesome",
-      "punchline": "Andy's perfectionist approach to his bucket list achievement",
-      "craft_total": 6.95,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Andy taking his ridiculous goals seriously. Shows his earnest commitment to meaningless achievements",
+      "setup": "Leslie watches Shauna talk to Ben and immediately catastrophizes the romantic possibilities",
+      "punchline": "She's already planned their marriage and argued the naming convention \u2014 including the progressive surname-swap scenario, which infuriates her on Ben's behalf",
+      "craft_total": 7.91,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The escalation from watching them talk \u2192 marriage \u2192 name change \u2192 progressive surname swap is perfectly calibrated. The kicker \u2014 'God, I am so annoyed that he would hypothetically do that' \u2014 reveals Leslie is already feeling possessive jealousy about a fictional event she invented 10 seconds ago. This is Leslie's anxiety and love expressed through absurdist projection. One of the episode's finest character jokes.",
       "dialogue": [
         {
           "speaker": "April",
@@ -1065,22 +1080,22 @@
     },
     {
       "index": 34,
-      "text": "Keep your pants on. What? I mean, keep your pants on, girl. I mean, those are really nice pants. I really like your pants. Where did you get them?",
+      "text": "'God, I am so annoyed that he would hypothetically do that.'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Leslie tries to interrupt Ben and Shauna's conversation",
-      "punchline": "Her awkward recovery from an inappropriate comment by fixating on pants",
-      "craft_total": 6.8,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Leslie's desperation making her say increasingly awkward things. The escalation to pants obsession is funny",
+      "setup": "Leslie has just imagined Ben taking Shauna's last name in a hypothetical future marriage",
+      "punchline": "She is genuinely, emotionally annoyed by an event she made up",
+      "craft_total": 8.42,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's top jokes. The word 'hypothetically' is doing all the work \u2014 it's a perfect, precise acknowledgment that none of this is real, immediately undercut by the genuine emotional heat of 'I am so annoyed.' The compression (nine words of enormous comedic yield) is exceptional. Wholly Leslie, wholly specific, deeply quotable. Compares favorably to top-tier Parks character comedy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1106,22 +1121,22 @@
     },
     {
       "index": 35,
-      "text": "Because you can't go. I mean, what if you're not here when Zorp shows up? Boy, would your face be red.",
+      "text": "Ann's deadpan: 'Oh, boy. Okay. Wow! I'm sure this is nothing.' \u2014 then immediately: 'Okay, well, that was definitely something.'",
       "characters": [
-        "Leslie"
+        "Ann"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "dark_subversive"
+        "reaction_beat",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie tries to keep Ben from leaving",
-      "punchline": "Using embarrassment as a concern for someone whose face would be melted off",
-      "craft_total": 7.55,
-      "impact_score": 7.5,
+      "setup": "Leslie says she needs to stop Ben and Shauna from getting together; we cut to Ann watching something happen between them",
+      "punchline": "Ann's rapid reversal \u2014 'I'm sure this is nothing' \u2192 beat \u2192 'that was definitely something' \u2014 implies whatever she saw was unmistakable and happened almost instantly",
+      "craft_total": 7.7,
+      "impact_score": 7.25,
       "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark humor about apocalyptic expectations vs social embarrassment. Leslie's desperation shows through",
+      "explanation": "The visual gap between Ann's two statements is the joke \u2014 something happened off-screen (or on-screen but not in transcript) that was unmistakably romantic. The structure of reassurance \u2192 immediate reversal is tight. 'Oh, boy. Okay. Wow!' as a three-beat reaction is well-performed comedy that implies escalating shock.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1147,22 +1162,22 @@
     },
     {
       "index": 36,
-      "text": "When Zorp shows up, your faces will be melted off and used as fuel.",
+      "text": "'I know that move. They're going to have sex in five minutes.'",
       "characters": [
-        "Herb"
+        "Leslie"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Leslie mentions faces being red",
-      "punchline": "Herb's matter-of-fact correction about the actual apocalyptic process",
-      "craft_total": 7.1,
+      "setup": "Leslie has just been told 'that was definitely something' regarding Ben and Shauna",
+      "punchline": "Leslie's assessment is specific ('I know that move'), clinical ('five minutes'), and reveals she has catalogued Ben's romantic signals",
+      "craft_total": 7.27,
       "impact_score": 7.0,
-      "quotability": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Herb's casual delivery of horrific apocalyptic details. Good contrast with Leslie's concern about embarrassment",
+      "explanation": "The specificity of 'five minutes' is what makes this funny \u2014 not a vague prediction but a precise timeline derived from recognizing his move. It's both evidence of Leslie's emotional entanglement and a funny clinical detachment. Good economy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1176,22 +1191,23 @@
     },
     {
       "index": 37,
-      "text": "Wow, what an unbelievably unpleasant person.",
+      "text": "Andy and April's bucket list item: winning the lottery = finding a $10 bill on the ground",
       "characters": [
-        "Ben"
+        "Andy",
+        "April"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Herb describes faces being melted off",
-      "punchline": "Ben's understated reaction to cosmic horror",
-      "craft_total": 6.25,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Andy's bucket list includes 'win the lottery'",
+      "punchline": "They interpret finding $10 on the ground as winning the lottery \u2014 'Oh yeah! 10 bucks. That counts as winning the lottery.'",
+      "craft_total": 7.04,
+      "impact_score": 6.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good understatement calling apocalyptic prophet merely 'unpleasant.' Typical Ben rationality",
+      "is_callback": 1,
+      "explanation": "Andy's interpretation of his own bucket list goals with maximum generosity to himself is a running thread of this storyline. Finding a $10 bill 'counts as' winning the lottery because both involve receiving unexpected money. The logic is demented but internally consistent \u2014 very Andy.",
       "dialogue": [
         {
           "speaker": "Herb",
@@ -1205,22 +1221,23 @@
     },
     {
       "index": 38,
-      "text": "It's a grand experiment, and I am a party scientist.",
+      "text": "The 'most amazing grilled cheese ever' bucket list item \u2014 'My bucket list doesn't say make a pretty awesome grilled cheese sandwich.'",
       "characters": [
-        "Tom"
+        "Andy",
+        "April"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "setup_punchline"
       ],
-      "setup": "Tom explains his philosophy about perfect parties",
-      "punchline": "Describing himself as a 'party scientist'",
-      "craft_total": 7.1,
-      "impact_score": 6.5,
-      "quotability": 7.5,
+      "setup": "April tries to convince Andy the grilled cheese they made is 'the most amazing grilled cheese ever made'",
+      "punchline": "Andy's exacting standards for his own bucket list item reject 'pretty awesome' as insufficient \u2014 requiring the superlative from the list itself",
+      "craft_total": 7.15,
+      "impact_score": 6.67,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Tom pomposity - elevating party planning to scientific pursuit. Very quotable",
+      "is_callback": 1,
+      "explanation": "The comedy is in Andy's arbitrary standards \u2014 he's simultaneously easy to please (finding $10 = winning the lottery) and uncompromising about specific items. 'Pretty awesome' is not on the list; 'most amazing ever' is. The inconsistency reveals his childlike but sincere relationship with his own goals.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -1230,22 +1247,22 @@
     },
     {
       "index": 39,
-      "text": "That was Symphony for the Righteous Destruction of Humanity in E Minor by the late Lou Presotovich.",
+      "text": "Leslie trying to separate Shauna and Ben: 'Keep your pants on. What? I mean, keep your pants on, girl. I mean, those are really nice pants. Where did you get them?'",
       "characters": [
-        "Ron"
+        "Leslie"
       ],
       "joke_types": [
-        "absurdist",
+        "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Ron introduces a musical piece",
-      "punchline": "The overly specific and apocalyptic classical music title",
-      "craft_total": 7.25,
-      "impact_score": 7.0,
+      "setup": "Leslie runs over to interrupt Ben and Shauna's conversation and immediately says something that could be misinterpreted",
+      "punchline": "Her attempt to recover from 'keep your pants on' digs deeper with each try \u2014 ending with an invitation to go pants shopping as a diversion tactic",
+      "craft_total": 7.72,
+      "impact_score": 7.83,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliantly specific fake classical music title. The formal presentation of apocalyptic theme is perfect",
+      "explanation": "Classic cringe-comedy verbal spiral: Leslie says something ambiguous, tries to clarify, makes it weirder, then pivots to complimenting pants as if that solves everything. The offer to 'go buy more pants' as an escape route is perfectly absurd. Leslie's social panic is endearing and funny.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -1255,22 +1272,23 @@
     },
     {
       "index": 40,
-      "text": "And full disclosure, I think they're bonkersville.",
+      "text": "'Because you can't go. I mean, what if you're not here when Zorp shows up? Boy, would your face be red. When Zorp shows up, your faces will be melted off and used as fuel.'",
       "characters": [
-        "Leslie"
+        "Leslie",
+        "Herb"
       ],
       "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
+        "dark_subversive",
+        "setup_punchline"
       ],
-      "setup": "Leslie tells Herb she read his books",
-      "punchline": "Her diplomatic way of calling him crazy using a made-up word",
-      "craft_total": 6.7,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Leslie is desperately trying to keep Shauna from leaving the cult vigil with Ben",
+      "punchline": "She starts an idiom ('your face would be red') that Herb completes with the literal apocalyptic version \u2014 faces melted off and used as fuel",
+      "craft_total": 7.75,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Leslie trying to be polite while calling someone crazy. 'Bonkersville' is a nice character touch",
+      "explanation": "The collision between Leslie's idiom ('face would be red') and Herb's literal doomsday theology ('faces will be melted off and used as fuel') is a fantastic structure. Leslie sets up the conventional expression and Herb hijacks it with horrifying specificity. The phrase 'used as fuel' is genuinely disturbing and funny in equal measure. Good dark comedy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1288,22 +1306,22 @@
     },
     {
       "index": 41,
-      "text": "That of a fleshless, chattering skeleton when Zorp the Surveyor arrives and burns your flesh off with his volcano mouth.",
+      "text": "Herb's response to Shauna leaving: 'Wow, what an unbelievably unpleasant person.'",
       "characters": [
         "Herb"
       ],
       "joke_types": [
-        "dark_subversive",
-        "absurdist"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Herb explains reincarnation after death",
-      "punchline": "The specific gruesome description of Zorp's method",
-      "craft_total": 6.6,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Shauna politely declines Leslie's bizarre intervention and leaves for Tom's party",
+      "punchline": "Herb \u2014 who preaches the apocalyptic burning of human flesh \u2014 judges Shauna as 'unbelievably unpleasant'",
+      "craft_total": 7.08,
+      "impact_score": 6.75,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "'Volcano mouth' and 'chattering skeleton' are vivid and ridiculous. Good contrast with peaceful reincarnation talk",
+      "explanation": "The irony is that Herb \u2014 a doomsday cult leader who believes in face-melting \u2014 is judging normal social behavior as unpleasant. The juxtaposition works well because he delivers it with total sincerity and conviction.",
       "dialogue": [
         {
           "speaker": "Herb",
@@ -1321,22 +1339,22 @@
     },
     {
       "index": 42,
-      "text": "That was very strange, what you just said. I don't like it as much as that other thing you said.",
+      "text": "Tom's talking-head: 'The perfect party, it's an elusive idea... people have to be completely entertained from the moment they walk in until the moment they leave. It's a grand experiment, and I am a party scientist. Welcome to my laboratory.'",
       "characters": [
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Herb describes horrific apocalyptic transformation",
-      "punchline": "Leslie's measured, diplomatic reaction to cosmic horror",
-      "craft_total": 6.95,
+      "setup": "Tom introduces the party concept with grandiose self-assessment",
+      "punchline": "Calling himself a 'party scientist' and the club a 'laboratory' with a welcoming gesture \u2014 an absurdly inflated framing for what is a going-out-of-business bash",
+      "craft_total": 6.97,
       "impact_score": 6.5,
-      "quotability": 6.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Leslie's diplomatic understatement in response to apocalyptic horror. Her politeness is absurd in context",
+      "explanation": "'Party scientist' is a genuinely funny self-concept for Tom. The laboratory framing applied to a nightclub is appropriately delusional. Good character voice.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1346,22 +1364,22 @@
     },
     {
       "index": 43,
-      "text": "Do you want to play a fun game with me that I made up called ChessRisk? It's half-chess, half-Risk, and it takes 15 hours to play.",
+      "text": "The cult's flute performance is titled 'Symphony for the Righteous Destruction of Humanity in E Minor'",
       "characters": [
-        "Leslie"
+        "Herb"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "dark_subversive",
+        "absurdist"
       ],
-      "setup": "Leslie desperately tries to keep Ben from leaving",
-      "punchline": "The ridiculous hybrid game designed to be as time-consuming as possible",
-      "craft_total": 7.85,
+      "setup": "A cult member plays a mournful flute piece at the vigil",
+      "punchline": "Herb announces the piece name \u2014 'Symphony for the Righteous Destruction of Humanity in E Minor' \u2014 which sounds like a genuine classical composition but is about the apocalypse",
+      "craft_total": 8.1,
       "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Leslie invention - combining two notoriously long games. The 15-hour duration shows her desperation",
+      "explanation": "The specificity of 'in E Minor' makes this. Doomsday cults don't typically compose in specific musical keys \u2014 the formal classical notation applied to apocalyptic subject matter is a perfect absurdist joke. 'Righteous Destruction of Humanity' as a composition title is also delightfully bureaucratic. High originality.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1387,22 +1405,23 @@
     },
     {
       "index": 44,
-      "text": "Oh, my God! What? I forgot I have a thing I need to show you. Oh. I need to bring you there right now. It's so amazing. It's going to freak you out.",
+      "text": "Herb: 'Reminder. These flutes are available for purchase. You can't take it with you, people.'",
       "characters": [
-        "Leslie"
+        "Herb",
+        "Ron"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "irony_sarcasm",
+        "callback"
       ],
-      "setup": "Ben tries to leave despite Leslie's game offer",
-      "punchline": "Leslie's increasingly frantic improvisation of fake emergencies",
-      "craft_total": 6.0,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Shows Leslie's desperation but not particularly clever. The escalation works for character",
+      "setup": "After an apocalyptic flute performance at the vigil",
+      "punchline": "Herb uses the doomsday context ('you can't take it with you') to encourage flute purchases \u2014 the cult leader is helping Ron move inventory",
+      "craft_total": 7.8,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is a beautiful callback that rewards the earlier Ron/flute setup. 'You can't take it with you' repurposes the classic pre-death idiom in reverse \u2014 usually it means don't hoard wealth, here it means BUY NOW before you're melted by Zorp. The cult leader moonlighting as a salesman for Ron Swanson's woodshop is absurdist genius. Tight economy, strong callback structure.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1432,22 +1451,22 @@
     },
     {
       "index": 45,
-      "text": "Just crazy enough to work. Help!",
+      "text": "Leslie tells Herb his books are 'bonkersville' but pivots to sincere engagement about reincarnation",
       "characters": [
-        "April"
+        "Leslie"
       ],
       "joke_types": [
         "character_comedy",
-        "setup_punchline"
+        "deadpan_understatement"
       ],
-      "setup": "Andy suggests a fake hostage scenario",
-      "punchline": "April's deadpan agreement followed by immediate commitment to the bit",
-      "craft_total": 7.1,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Leslie has speed-read both of Herb's cult texts",
+      "punchline": "'Full disclosure, I think they're bonkersville' \u2014 Leslie's earnest civic vocabulary applied to apocalyptic cult literature",
+      "craft_total": 7.88,
+      "impact_score": 8.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "April's willingness to immediately commit to Andy's crazy schemes. Good character moment",
+      "explanation": "'Bonkersville' is a perfect Leslie-ism \u2014 the kind of invented, slightly childish intensifier she uses. The combination of 'full disclosure' (professional language) with 'bonkersville' (made-up word) is quintessential Leslie voice.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1465,22 +1484,22 @@
     },
     {
       "index": 46,
-      "text": "My face is fine, Mikhail Petrov.",
+      "text": "Herb's reincarnation description pivots from beautiful to: 'you will take a new form. That of a fleshless, chattering skeleton when Zorp the Surveyor arrives and burns your flesh off with his volcano mouth.'",
       "characters": [
-        "Andy"
+        "Herb"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "dark_subversive",
+        "misdirection"
       ],
-      "setup": "Andy is doing an action movie scene",
-      "punchline": "The random Russian name he gives the 'villain'",
-      "craft_total": 6.3,
-      "impact_score": 5.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Herb delivers what sounds like a genuinely touching meditation on reincarnation ('from the universe we emerge, and to the universe we return')",
+      "punchline": "He pivots to the specific Zorp mechanics \u2014 fleshless chattering skeleton, volcano mouth \u2014 which ruins the spiritual beauty",
+      "craft_total": 8.22,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Andy's action movie fantasy includes specific character names. Shows his commitment to the roleplay",
+      "explanation": "Structural masterwork: the setup sounds genuinely moving \u2014 'from the universe we emerge, and to the universe we return, infinite forms in infinite universes' \u2014 then pivots to 'chattering skeleton' and 'volcano mouth.' The juxtaposition between the cosmic beauty of the opening and the B-movie horror specificity of the ending is perfectly executed misdirection. 'Volcano mouth' is an exceptional piece of absurdist worldbuilding.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1490,22 +1509,22 @@
     },
     {
       "index": 47,
-      "text": "He's stolen my jewels. And now, he's going to ravish my body. And he stinks! He really stinks!",
+      "text": "Leslie: 'That was very strange, what you just said. I don't like it as much as that other thing you said.'",
       "characters": [
-        "April"
+        "Leslie"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "April plays the damsel in distress",
-      "punchline": "The escalation from jewel theft to ravishment to the prosaic complaint about smell",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Herb has just described everyone becoming fleshless chattering skeletons via volcano mouth",
+      "punchline": "Leslie's measured, comparative critique \u2014 'I don't like it as much as that other thing' \u2014 treats the apocalyptic vision as a speech quality issue rather than a theological horror",
+      "craft_total": 7.92,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalation ending with mundane complaint. April committing to the bit while staying in character",
+      "explanation": "Leslie's gentle constructive-feedback framing of the apocalypse is a top-tier character joke. 'I don't like it as much as that other thing you said' is measured, diplomatic feedback on cult prophecy \u2014 exactly the kind of thing Leslie would say. Her instinct to manage the social moment even when faced with graphic doomsday imagery is perfect. High character integration.",
       "dialogue": [
         {
           "speaker": "April",
@@ -1523,23 +1542,23 @@
     },
     {
       "index": 48,
-      "text": "Looks like this Siberian husky is going off to jail. Russian off to jail.",
+      "text": "Leslie offers to play ChessRisk \u2014 'half-chess, half-Risk, takes 15 hours to play' \u2014 to keep Ben away from Shauna",
       "characters": [
-        "Andy",
-        "April"
+        "Leslie",
+        "Ben"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Andy delivers his action hero punchline",
-      "punchline": "The terrible pun and April having to correct his delivery",
-      "craft_total": 6.0,
-      "impact_score": 6.0,
-      "quotability": 5.5,
+      "setup": "Leslie sees Ben heading somewhere and desperately tries to distract him",
+      "punchline": "Her diversion is ChessRisk \u2014 a game she invented that combines the two longest board games into something that takes 15 hours \u2014 which she presents as a 'fun game'",
+      "craft_total": 7.54,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Bad pun made funnier by Andy's delivery problems and April's help. Shows their dynamic",
+      "explanation": "ChessRisk is a great invention \u2014 it combines the two most notoriously long board games, implying the 15-hour play time would keep Ben thoroughly occupied. The specificity (15 hours) is key. Leslie's desperation makes the absurdism land.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1553,21 +1572,22 @@
     },
     {
       "index": 49,
-      "text": "Hey, you know what? Can I go? Gayle is making a roast.",
+      "text": "Leslie's frantic non-explanation: 'I forgot I have a thing I need to show you. It's so amazing. It's going to freak you out. It's something that we need to get in my car and go to.'",
       "characters": [
-        "Jerry"
+        "Leslie"
       ],
       "joke_types": [
+        "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Jerry has been participating in the elaborate roleplay scenario",
-      "punchline": "He politely excuses himself mid-action sequence for dinner",
-      "craft_total": 7.95,
-      "impact_score": 7.5,
+      "setup": "Ben is about to leave to Tom's party and Leslie needs to stop him",
+      "punchline": "Her cover story is 'a thing' \u2014 completely content-free, escalating in claims of amazingness while offering zero information, ending with the very suspicious 'in my car and go to'",
+      "craft_total": 7.34,
+      "impact_score": 7.25,
       "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Jerry moment - prioritizing domestic comfort over adventure. Great timing and character consistency",
+      "explanation": "The comedy is in the vagueness escalating \u2014 'a thing' \u2192 'it's so amazing' \u2192 'it's going to freak you out' \u2192 'it's something we need to get in my car and go to.' Each sentence is more alarming and less informative. Ben reasonably going along with this speaks to his feelings for her.",
       "dialogue": [
         {
           "speaker": "Jerry",
@@ -1577,22 +1597,22 @@
     },
     {
       "index": 50,
-      "text": "This gas station was owned by Mick Jagger.",
+      "text": "Tom brings out a surprise drumline at the party",
       "characters": [
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
-        "absurdist",
+        "physical_slapstick",
         "character_comedy"
       ],
-      "setup": "Leslie brings Ben to a 'special place'",
-      "punchline": "The anticlimactic reveal of a mundane location with dubious rock history",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Tom declares the party needs to go to the next level",
+      "punchline": "A full drumline marches in \u2014 absurdly elaborate for an intimate party that was empty minutes ago",
+      "craft_total": 5.79,
+      "impact_score": 5.5,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Leslie's enthusiasm for obscure local history. The mundane location makes her excitement absurd",
+      "explanation": "A visual gag that works as escalation \u2014 Tom going from empty party to DRUMLINE is very Tom. Functional but not especially crafted in a transcript-readable way.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1610,22 +1630,22 @@
     },
     {
       "index": 51,
-      "text": "But I think the most likely explanation is that legendary Rolling Stones front man Mick Jagger owned this gas station from 1951 to 1958.",
+      "text": "Tom calls for the drumline at the party: 'I think we've got to take things to the next level. Drumline, hit it.' [Drumline plays]",
       "characters": [
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
-        "absurdist",
+        "visual_gag",
         "character_comedy"
       ],
-      "setup": "Leslie explains her research about M. Jagger",
-      "punchline": "The completely implausible timeline that would make Mick Jagger a child gas station owner",
-      "craft_total": 8.05,
-      "impact_score": 8.0,
-      "quotability": 7.5,
+      "setup": "Tom decides to escalate the party",
+      "punchline": "Tom has hired a literal drumline for his party \u2014 an absurdly over-the-top and logistically impressive choice for a small club party",
+      "craft_total": 6.71,
+      "impact_score": 7.25,
+      "quotability": 4.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Leslie logic - thorough research leading to impossible conclusions. The specific dates make it funnier",
+      "explanation": "The comedy is in the commitment \u2014 Tom actually got a drumline. Visual gag that lands on screen because of the sheer overkill. Rewatch bonus for the visual spectacle.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1643,21 +1663,23 @@
     },
     {
       "index": 52,
-      "text": "I know what you're doing, Leslie. You know, you can't do this. You know, we broke up. And I kind of feel like we shouldn't hang out together, just the two of us. Because every time we do, it just makes it harder. You know?",
+      "text": "April and Andy's action movie hostage scene \u2014 'Just hold up this butter knife to my throat and pretend like you're holding me hostage'",
       "characters": [
-        "Ben"
+        "Andy",
+        "April"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Leslie's desperate attempts to keep Ben around",
-      "punchline": "Ben's honest, vulnerable response cutting through the comedy",
-      "craft_total": 7.15,
-      "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "setup": "Andy is attempting to fulfill his bucket list item of being an action star",
+      "punchline": "His method for becoming an action star is staging a fake hostage situation with a butter knife, in public, with a documentary crew",
+      "craft_total": 7.21,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shifts from comedy to emotional honesty. The cringe comes from the situation, not the dialogue",
+      "explanation": "Andy's plan to 'become an action star' by acting out a scenario is great character logic \u2014 he believes performing the action will make him the thing. The butter knife specifically is a nice detail (not a real knife \u2014 the compromise between action and safety).",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1671,22 +1693,22 @@
     },
     {
       "index": 53,
-      "text": "So I'll steal my dad's car. Look, this is a stupid idea, but right at this exact second, we have enough momentum to do something stupid before we realize how stupid it is.",
+      "text": "'Just crazy enough to work.'",
       "characters": [
-        "April"
+        "Andy"
       ],
       "joke_types": [
-        "character_comedy",
-        "meta_self_referential"
+        "meta_self_referential",
+        "character_comedy"
       ],
-      "setup": "Andy wants to go to Mount Rushmore",
-      "punchline": "April's self-aware analysis of their impulsive decision-making",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "April says the hostage plan 'seems a little crazy'",
+      "punchline": "Andy delivers the action-movie clich\u00e9 with total sincerity, using genre language to justify a completely silly plan",
+      "craft_total": 6.99,
+      "impact_score": 6.75,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "April being surprisingly wise about stupid decisions. Meta-commentary on impulsive behavior",
+      "explanation": "A well-worn clich\u00e9 but Andy's earnest delivery in context makes it land. His goal to be an action star makes the genre phrase appropriate \u2014 he's becoming the character. Economy excellent; originality low.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1716,22 +1738,22 @@
     },
     {
       "index": 54,
-      "text": "Socket wrench sounds pretty good, actually.",
+      "text": "April as Janet Snakehole: 'He's stolen my jewels. And now he's going to ravish my body. And he stinks! He really stinks!'",
       "characters": [
-        "Ron"
+        "April"
       ],
       "joke_types": [
         "character_comedy",
-        "deadpan_understatement"
+        "escalation"
       ],
-      "setup": "Discussion of reincarnation possibilities including socket wrench",
-      "punchline": "Ron's genuine appreciation for being reincarnated as a tool",
-      "craft_total": 7.6,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "April is playing her alter-ego Janet Snakehole in Andy's action movie scenario",
+      "punchline": "Janet Snakehole's distress escalates from stolen jewels to ravishment to 'he stinks!' \u2014 the final improvised complaint being completely un-cinematic and purely personal",
+      "craft_total": 7.79,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Ron - preferring to be a useful tool rather than human. Concise and character-perfect",
+      "explanation": "The escalation from dramatic to mundane is perfectly structured: stolen jewels (classic) \u2192 ravishment (dramatic) \u2192 'he stinks' (deflating and real). April's commitment to the bit and then breaking it with a genuine complaint is great character work. 'He really stinks' \u2014 the 'really' adding emphasis to this most personal grievance \u2014 is the best word in the scene.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -1741,22 +1763,22 @@
     },
     {
       "index": 55,
-      "text": "Well, I'm a practicing none of your...business.",
+      "text": "Andy's pun: 'Looks like this Siberian husky is going to be Russian off to jail.'",
       "characters": [
-        "Ron"
+        "Andy"
       ],
       "joke_types": [
-        "setup_punchline",
+        "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "Someone asks what religion Ron is",
-      "punchline": "His polite but firm deflection of personal questions",
-      "craft_total": 7.55,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Andy as Agent Macklin confronts the Russian villain in the action movie scenario",
+      "punchline": "Andy delivers a pre-planned action-hero pun \u2014 'Russian off to jail' (rushing/Russian) \u2014 which he had to be prompted to say",
+      "craft_total": 6.36,
+      "impact_score": 6.67,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Ron privacy stance delivered as a fake religion. Great structure and character consistency",
+      "explanation": "The pun itself ('Russian off to jail') is middling \u2014 not a great pun, but it's appropriately terrible for an Andy-scripted action movie. The setup that he needed to be told to 'say the line' implies he wrote this in advance and still almost forgot it. That meta-layer makes the weak pun funnier.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -1766,22 +1788,22 @@
     },
     {
       "index": 56,
-      "text": "I actually forgot they ever dated. I was trying to hit that.",
+      "text": "Jerry asks if he can go \u2014 'Gayle is making a roast' \u2014 mid-action-scene",
       "characters": [
-        "Jean-Ralphio"
+        "Jerry"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "deadpan_understatement"
       ],
-      "setup": "Jean-Ralphio calls Lucy for Tom",
-      "punchline": "The reveal that he forgot about their relationship because of his own interest",
-      "craft_total": 6.95,
-      "impact_score": 6.5,
-      "quotability": 5.5,
+      "setup": "The action movie scenario is still going; Andy has just delivered his pun",
+      "punchline": "Jerry breaks character again to ask if he can leave for dinner, citing Gayle's roast \u2014 prioritizing his domestic life over both the roleplay and his coworkers",
+      "craft_total": 7.61,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Jean-Ralphio's selfishness accidentally doing something nice. The crude language fits character",
+      "explanation": "Jerry's running joke of having an inexplicably happy domestic life (Gayle, the roast) used to deflate a silly roleplay. 'Gayle is making a roast' as a reason to exit a fake hostage situation is perfect Jerry \u2014 his real life is better than the fantasy everyone else is performing. Economy is excellent.",
       "dialogue": [
         {
           "speaker": "Jean-Ralphio",
@@ -1815,21 +1837,22 @@
     },
     {
       "index": 57,
-      "text": "Dawn is nigh. Zorp the Surveyor approaches, and all earthly debts will be repaid. Last call for donuts.",
+      "text": "Leslie's 'special place' is a gas station she believes Mick Jagger owned from 1951-1958 based on financial records showing 'M. Jagger' as owner \u2014 'which, at first, I thought was a woman. Maybe Meg or something.'",
       "characters": [
-        "Herb"
+        "Leslie"
       ],
       "joke_types": [
-        "absurdist"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Herb makes apocalyptic pronouncement",
-      "punchline": "The mundane donut announcement immediately following cosmic drama",
-      "craft_total": 7.55,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie has dragged Ben to a 'special place' with great anticipation",
+      "punchline": "The special place is a mundane gas station; her evidence that it's Mick Jagger's is 'M. Jagger' in financial records, which she initially thought was a woman named Meg",
+      "craft_total": 7.91,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect juxtaposition of cosmic drama with snack logistics. Shows the practical side of apocalypse cults",
+      "explanation": "Leslie's research methodology \u2014 'M. Jagger' = Mick Jagger, probably \u2014 is both absurd and perfectly consistent with her overenthusiastic approach to everything. The 'maybe Meg or something' detour shows she actually considered other options before settling on the Rolling Stones front man. The 1951-1958 dates are also perfect \u2014 Mick Jagger was born in 1943, making this theoretically possible and therefore impossible to fully disprove. Detailed absurdist character comedy.",
       "dialogue": [
         {
           "speaker": "Herb",
@@ -1843,22 +1866,22 @@
     },
     {
       "index": 58,
-      "text": "If the world was ending tomorrow, I'd want to be with him. Well, that's significant. The problem is, Leslie, the world is not ending tomorrow. The sun's going to rise right over there. It will be a regular Friday, and you'll be in the exact same position you were in before.",
+      "text": "Ron's response to what he'd want to be reincarnated as: 'Socket wrench sounds pretty good, actually.'",
       "characters": [
-        "Leslie",
         "Ron"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie confesses her feelings about Ben",
-      "punchline": "Ron's blunt reality check about tomorrow being just Friday",
-      "craft_total": 7.55,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Ron has just heard that Buddhists believe you could be reincarnated as a 'pretzel or a socket wrench' \u2014 and is asked what he'd choose",
+      "punchline": "Ron, without hesitation, selects the socket wrench \u2014 finding more appeal in being a useful tool than a human or spiritual entity",
+      "craft_total": 8.41,
+      "impact_score": 8.5,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Ron cutting through emotional drama with practical wisdom. 'Regular Friday' is perfectly understated",
+      "explanation": "This is a perfect Ron Swanson joke. The socket wrench is not exotic or spiritual \u2014 it's a practical, quality tool that does its job with no fuss. Ron's aspiration to be a socket wrench in the afterlife is a complete character statement compressed into six words. 'Actually' implies brief consideration, which makes it better. Exceptional character integration and economy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1872,23 +1895,22 @@
     },
     {
       "index": 59,
-      "text": "If it makes you feel any better, Leslie, we'll all be dead in 20 minutes. That does make me feel better. Thank you, Herb.",
+      "text": "Ron on his religion: 'Well, I'm a practicing none of your...business.'",
       "characters": [
-        "Herb",
-        "Leslie"
+        "Ron"
       ],
       "joke_types": [
-        "dark_subversive",
+        "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "Leslie is miserable about her situation",
-      "punchline": "Finding comfort in apocalyptic predictions and genuinely thanking the prophet",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Someone asks Ron what religion he is after he endorses the socket wrench reincarnation path",
+      "punchline": "He starts 'none of your...' which sounds like 'none of your business' (rude dismissal) but is actually the religious category 'none' \u2014 those who practice no religion \u2014 with a pause to attach 'business'",
+      "craft_total": 8.63,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark humor about finding comfort in death. Leslie's polite response to apocalyptic comfort is funny",
+      "explanation": "This is the most structurally accomplished joke in the episode. 'A practicing none of your... business' operates on two levels simultaneously: (1) Ron identifies as a religious 'none' (no religion), which is technically accurate and sounds like a formal denomination, and (2) he converts it mid-phrase to 'none of your business,' his characteristic privacy reflex. The pause-and-pivot is perfect wordplay construction. Maximum information per word. Compares favorably to the 8.0 anchor example \u2014 this is tighter, funnier, and more character-specific.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1906,22 +1928,23 @@
     },
     {
       "index": 60,
-      "text": "I tell you what. You play whatever you want. I'm just going to take a real quick snooze for, like, 12 hours so I'm fresh.",
+      "text": "Ann's meditation on reincarnation: 'You spend so much time trying to figure out what you're going to be in the next lifetime that you forget to enjoy the one you're in now.' / Herb: 'Ann Perkins, that was beautiful.'",
       "characters": [
-        "Andy"
+        "Ann",
+        "Herb"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "reaction_beat"
       ],
-      "setup": "Andy and April are driving 30 hours to Mount Rushmore",
-      "punchline": "Andy's plan to sleep for most of the drive while April does all the driving",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Ann offers a genuine-sounding philosophical observation about the danger of reincarnation belief",
+      "punchline": "Herb \u2014 the doomsday cult leader whose entire belief system is about the next existence \u2014 is deeply moved by this",
+      "craft_total": 6.46,
+      "impact_score": 6.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Andy's selfish approach to their romantic adventure. The 'so I'm fresh' justification is perfect",
+      "explanation": "The irony of Herb being deeply moved by advice that completely contradicts his entire belief system is quietly funny. 'Ann Perkins, that was beautiful' \u2014 the full name adds a touch of formal admiration that makes it sweeter and stranger. A soft joke but genuine.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1947,21 +1970,22 @@
     },
     {
       "index": 61,
-      "text": "Shauna Malwae-Tweep thinks you're cute. What? That's why I took you to Mick Jagger's abandoned gas station. Because she thinks you're cute, and I was afraid you guys were going to make out and have babies.",
+      "text": "Tom's party talking head: 'Drumlines, personalized gift bags, tigers. This is the best party I've ever been to, and I'm not just saying that.'",
       "characters": [
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Leslie confesses her scheming to Ben",
-      "punchline": "The escalation from making out directly to having babies",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
+      "setup": "Tom is evaluating his own party mid-event",
+      "punchline": "The list 'drumlines, personalized gift bags, tigers' \u2014 slipping 'tigers' in casually implies they actually have tigers at this party",
+      "craft_total": 7.24,
+      "impact_score": 7.0,
       "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Leslie's irrational jealousy making her skip steps. Good callback to the gas station scene",
+      "is_callback": 0,
+      "explanation": "The casual 'tigers' drop is the joke \u2014 buried between drumlines and gift bags, it's either true (they rented tigers) or an exaggeration Tom has convinced himself of. Either way, it's perfect Tom Haverford grandiosity.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1991,22 +2015,22 @@
     },
     {
       "index": 62,
-      "text": "Oh, well, Shauna is not here. Oh. See what I did? I do. I'm very sneaky.",
+      "text": "Jean-Ralphio's confession: 'I actually forgot they ever dated. I was trying to hit that.'",
       "characters": [
-        "Ben",
-        "Leslie"
+        "Jean-Ralphio"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Leslie apologizes to both Ben and Shauna",
-      "punchline": "The reveal that Leslie made up Shauna's interest and her pride in her deception",
-      "craft_total": 6.95,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Jean-Ralphio has just done something thoughtful \u2014 calling Lucy for Tom \u2014 and Tom thanks him genuinely",
+      "punchline": "Jean-Ralphio reveals he had no idea Tom and Lucy had dated; his motivation was purely selfish romantic pursuit, not friendship",
+      "craft_total": 7.83,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Leslie's pride in her manipulative behavior. Shows her competitive nature even in personal matters",
+      "explanation": "The reveal recontextualizes Jean-Ralphio's apparent act of friendship as accidental. 'I was trying to hit that' is delivered without guilt or embarrassment \u2014 which is more Jean-Ralphio than remorse would be. The subversion of the heartwarming moment into self-interest is a perfect character beat. Economy: the confession is two sentences, perfectly compressed.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -2024,22 +2048,22 @@
     },
     {
       "index": 63,
-      "text": "Where's all the faces? Like the presidents.",
+      "text": "Herb at the vigil: 'Last call for donuts.'",
       "characters": [
-        "Andy"
+        "Herb"
       ],
       "joke_types": [
-        "character_comedy",
-        "visual_gag"
+        "deadpan_understatement",
+        "dark_subversive"
       ],
-      "setup": "Andy and April reach Mount Rushmore",
-      "punchline": "Andy's confusion about not seeing the famous presidential faces from their viewpoint",
-      "craft_total": 6.85,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Zorp's arrival is imminent \u2014 20 minutes to the end of the world",
+      "punchline": "The cult leader's pre-apocalypse announcement is about donut availability \u2014 treating the end of days as a catered event with refreshment logistics",
+      "craft_total": 7.64,
+      "impact_score": 7.5,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Andy's literal thinking about famous landmarks. Shows he didn't think through the logistics",
+      "is_callback": 0,
+      "explanation": "Four words that are somehow hilarious. The cult managing donut logistics in the final minutes before Zorp melts everyone's faces is a perfect contrast. 'Last call' has dual meaning: a bar closing-time announcement, and also quite literally the last call before the end of human existence. The economy is perfect.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -2057,22 +2081,23 @@
     },
     {
       "index": 64,
-      "text": "Well, math is hard.",
+      "text": "Leslie tries to confide in Ron: 'Can I speak with you about a personal matter?' / Ron: 'Normally, no. But given there's only 20 minutes until the end of human existence, also no.'",
       "characters": [
-        "Leslie"
+        "Leslie",
+        "Ron"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Herb admits to making crucial errors in his apocalypse calculations",
-      "punchline": "Leslie's dismissive response to cosmic miscalculation",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Leslie asks Ron if she can discuss something personal, framing the end-of-world context as a reason he might relent",
+      "punchline": "Ron's 'normally, no... also no' structure suggests the apocalypse makes no difference to his stance on personal conversations",
+      "craft_total": 8.1,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Leslie's casual dismissal of apocalyptic calculation errors. Good understatement",
+      "explanation": "The structure here is exceptional: the expected punchline is that Ron would relent because it's the end of the world. Instead, the 'also no' maintains his position perfectly \u2014 the apocalypse changes nothing about his aversion to personal conversations. 'But given there's only 20 minutes until the end of human existence, also no' is a beautiful construction. Very high character integration \u2014 this is exclusively Ron's joke. Compares favorably to top-tier anchors.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -2082,22 +2107,22 @@
     },
     {
       "index": 65,
-      "text": "Um, oh, on the 19th, we can't give you the park. We have a Spring Spectacular free ice cream giveaway. I misspoke. Yeah, it's May 20. That is free. Okay. Thanks. End of world. May 20th.",
+      "text": "Ron: 'The sun's going to rise right over there. It will be a regular Friday, and you'll be in the exact same position you were in before.'",
       "characters": [
-        "Leslie",
-        "Herb"
+        "Ron"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Herb wants to reschedule the apocalypse",
-      "punchline": "Leslie treating the end of the world like a routine park booking and Herb adjusting accordingly",
-      "craft_total": 8.2,
-      "impact_score": 8.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Leslie is indulging apocalyptic feelings about her relationship with Ben",
+      "punchline": "Ron cuts through all the emotion with a precise, boring prediction: it will be a regular Friday. His pragmatic certainty about the non-apocalypse is funnier than any emotional response.",
+      "craft_total": 7.52,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Parks and Rec bureaucratic humor. Treating apocalypse scheduling like any other civic event is brilliant",
+      "explanation": "Ron's gift for deflating emotional drama with mundane accuracy. 'A regular Friday' is the perfect Ron Swanson reframe \u2014 not comforting, not harsh, just factually boring. He's right, and that's what makes it sting and be funny simultaneously.",
       "dialogue": [
         {
           "speaker": "Herb",
@@ -2116,6 +2141,144 @@
           "line": "No problem. I'll get you the apocalypse application. It's the same form as the petting zoo, just with more fire."
         }
       ]
+    },
+    {
+      "index": 66,
+      "text": "'If it makes you feel any better, Leslie, we'll all be dead in 20 minutes.' / 'That does make me feel better. Thank you, Herb.'",
+      "characters": [
+        "Herb",
+        "Leslie"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "setup_punchline"
+      ],
+      "setup": "Leslie says thinking about Ben with someone else makes her miserable",
+      "punchline": "Herb offers the consolation that everyone will die in 20 minutes. Leslie genuinely accepts this as comfort. It works.",
+      "craft_total": 8.16,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best exchanges. The dark logic of 'everyone dies soon' as genuine emotional comfort is perfectly executed. Leslie's sincere 'That does make me feel better. Thank you, Herb.' accepting the doomsday consolation at face value is exactly right for her character \u2014 she needed this specific kind of perspective shift. The joke earns its darkness because it's also emotionally true for Leslie in this moment."
+    },
+    {
+      "index": 67,
+      "text": "Andy and April have driven to Mount Rushmore \u2014 'Where's all the faces? Like the presidents.'",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Andy and April drove to Mount Rushmore overnight from Pawnee \u2014 the implication is they're looking at the monument",
+      "punchline": "Andy asks where 'all the faces' are \u2014 like the presidents \u2014 apparently from a vantage point where they can't see them, or in pitch darkness",
+      "craft_total": 7.5,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The reveal that they drove to Mount Rushmore is already a great payoff for the bucket list storyline. Andy's failure to locate the famous carved presidents' faces \u2014 describing them as 'all the faces, like the presidents' \u2014 is both tourist-baffling and perfect Andy. He's at one of America's most famous monuments and can't find the thing."
+    },
+    {
+      "index": 68,
+      "text": "Andy and April in the stolen car: 'The map says 30 hours, but I drive really fast.' / 'I didn't bring any music.' / 'I'll just take a real quick snooze for like 12 hours.'",
+      "characters": [
+        "Andy",
+        "April"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Andy and April are in the car headed to Mount Rushmore",
+      "punchline": "Three consecutive practical problems in a row: the trip is 30 hours (not a quick jaunt), there's no music, and Andy's solution is to sleep 12 of those hours \u2014 leaving April to drive alone for half the trip",
+      "craft_total": 7.07,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Each of the three beats lands on its own: 30-hour trip (reality check), no music (oversight), sleeping 12 hours (Andy's selfish solution disguised as generosity \u2014 'so I'm fresh'). The 'so I'm fresh' justification for abandoning April to solo driving is the funniest element. Good Andy character."
+    },
+    {
+      "index": 69,
+      "text": "Leslie admits she took Ben to Mick Jagger's gas station because she was jealous of Shauna: 'Because she thinks you're cute, and I was afraid you guys were going to make out and have babies.'",
+      "characters": [
+        "Leslie",
+        "Ben"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Ben confronts Leslie about why she really brought him to the gas station",
+      "punchline": "Leslie's stated fear \u2014 'make out and have babies' \u2014 leaps immediately to reproduction, bypassing any intermediate stages of a relationship",
+      "craft_total": 7.0,
+      "impact_score": 6.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A decent callback to the jealousy arc \u2014 'make out and have babies' as the compressed timeline of Leslie's fear is funny in its directness. Not as strong as the earlier jealousy jokes but serves the scene."
+    },
+    {
+      "index": 70,
+      "text": "Leslie: 'And why don't you tell Shauna to make herself decent, and I'll apologize to her as well?' Ben: 'Oh, well, Shauna is not here.' Leslie: 'Oh. See what I did? I do. I'm very sneaky.'",
+      "characters": [
+        "Leslie",
+        "Ben"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Leslie apologizes for her jealous scheming and tries to also apologize to Shauna",
+      "punchline": "Shauna left \u2014 meaning Leslie's ploy worked \u2014 and Leslie can't resist a brief moment of pride before catching herself",
+      "craft_total": 7.32,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "'I'm very sneaky' delivered with self-aware pride is a good Leslie button \u2014 she's simultaneously apologizing for her manipulation and unable to resist appreciating her own success. The pivot from contrition to smugness is fast and character-specific."
+    },
+    {
+      "index": 71,
+      "text": "Andy at Mount Rushmore: 'Where's all the faces? Like the presidents.'",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Andy and April have apparently driven to Mount Rushmore \u2014 revealed as their spontaneous road trip destination",
+      "punchline": "Andy is confused about where the faces are, seemingly not recognizing/seeing the monument directly in front of him \u2014 or unable to reconcile the real thing with his mental image",
+      "craft_total": 7.77,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A beautiful Andy moment \u2014 'Where's all the faces? Like the presidents.' implies he either can't find them (looking the wrong direction), doesn't recognize what he's seeing, or expected something more overwhelming. The 'Like the presidents' clarification (who else would Andy think Mount Rushmore had?) is perfectly redundant. High character integration \u2014 this line is pure Andy Dwyer. The visual gag of the camera presumably showing him standing right in front of the monument elevates it."
+    },
+    {
+      "index": 72,
+      "text": "Herb returns to admit he made 'crucial errors' in his texts: the world ends May 19th. Leslie says the park is unavailable \u2014 Spring Spectacular ice cream giveaway. Herb immediately revises: 'I misspoke. Yeah, it's May 20.'",
+      "characters": [
+        "Herb",
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Herb humbly admits his apocalyptic calculations were wrong and the real end date is May 19th",
+      "punchline": "Leslie says the park is booked. Herb immediately and without hesitation revises the end of the world to May 20th \u2014 adjusting divine prophecy around the Pawnee parks schedule",
+      "craft_total": 8.45,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The perfect episode-closing joke. The escalating absurdism of Herb adjusting the apocalypse around an ice cream giveaway is structurally flawless. The joke works on multiple levels: (1) it satirizes cult flexibility in prophecy, (2) it celebrates Leslie's bureaucratic competence overriding cosmic events, (3) it's a perfect Parks and Recreation joke \u2014 local government triumphing over the apocalypse through scheduling. 'I misspoke. Yeah, it's May 20.' delivered without missing a beat is exceptional. This is the episode's best structured joke and deserves a top score."
     }
   ],
   "air_date": "2011-11-03",

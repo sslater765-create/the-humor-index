@@ -4,33 +4,35 @@
   "season": 2,
   "episode_number": 14,
   "title": "Leslies House",
-  "humor_index": 74.2,
-  "jpm": 2.29,
-  "avg_craft": 6.94,
-  "avg_impact": 6.36,
-  "total_jokes": 57,
-  "war": 37.1,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"irony_sarcasm\"]",
-  "standout_joke_ids": "[55, 31, 56]",
-  "weakest_section": "15:30-16:30 accounting demonstration sequence",
+  "humor_index": 87.8,
+  "jpm": 2.73,
+  "avg_craft": 7.32,
+  "avg_impact": 7.14,
+  "total_jokes": 68,
+  "war": 83.6,
+  "dominant_joke_types": "[\"character_comedy\", \"deadpan_understatement\", \"irony_sarcasm\"]",
+  "standout_joke_ids": "[66, 62, 67]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Unfortunately, due to budget constraints, this year we will have to remove five jewels from that crown.",
+      "text": "Teacher reveals her class is called 'Coping with Terminal Illness' in response to Leslie's cheerful advice to make students leave with a smile.",
       "characters": [
-        "Leslie"
+        "Leslie",
+        "Terminal Illness Teacher"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "setup_punchline",
+        "dark_subversive"
       ],
-      "setup": "Leslie calls recreation classes 'jewels in Pawnee's beautiful crown'",
-      "punchline": "Immediately has to announce cutting them due to budget cuts",
-      "craft_total": 7.0,
-      "impact_score": 6.5,
+      "setup": "Leslie cheerfully tells the teachers to make sure their students leave with a smile to boost evaluations.",
+      "punchline": "One teacher flatly announces her class is 'Coping with Terminal Illness,' undercutting the pep-talk completely.",
+      "craft_total": 7.78,
+      "impact_score": 8.0,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Nice ironic juxtaposition with Leslie's optimistic metaphor immediately undercut by harsh reality. Economical setup/payoff.",
+      "explanation": "The joke is beautifully structured: Leslie's sunny bureaucratic optimism ('leave with a smile') collides perfectly with the darkest possible class subject. The punchline lands hard because it's the most extreme logical counterexample. Economy is excellent \u2014 the class name alone does all the work.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -44,21 +46,23 @@
     },
     {
       "index": 2,
-      "text": "My class is called 'Coping with Terminal Illness.'",
+      "text": "'Hopefully your attendance is good!' / 'Actually, no, hopefully it's bad.'",
       "characters": [
-        "Teacher"
+        "Leslie",
+        "Terminal Illness Teacher"
       ],
       "joke_types": [
+        "setup_punchline",
         "dark_subversive"
       ],
-      "setup": "Leslie says make sure students leave with a smile",
-      "punchline": "Teacher reveals their class is about terminal illness",
-      "craft_total": 7.55,
-      "impact_score": 7.5,
+      "setup": "Leslie reflexively tries to recover with an optimistic comment about attendance.",
+      "punchline": "She immediately self-corrects, realizing high attendance at a terminal illness coping class is actually terrible news.",
+      "craft_total": 7.56,
+      "impact_score": 7.33,
       "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Excellent dark comedy - the absurdity of making terminal illness students leave with smiles is perfectly economical.",
+      "is_callback": 1,
+      "explanation": "A tight double-beat that extends joke 1. Leslie's instinct to be positive, then the dawning horror of what she just said, is perfectly timed. The self-correction shows smart character integration \u2014 Leslie is too earnest not to catch her own mistake, which is funnier than just letting it sit.",
       "dialogue": [
         {
           "speaker": "Leslie Knope",
@@ -72,22 +76,22 @@
     },
     {
       "index": 3,
-      "text": "Hopefully your attendance is good! Actually, no, hopefully it's bad.",
+      "text": "Leslie's talking-head about learning 'hair braiding, biscuits, and French kissing' at rec center classes \u2014 'The French kissing was just from a boy in my biscuits class, but either way, lesson learned.'",
       "characters": [
         "Leslie"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "misdirection"
       ],
-      "setup": "Leslie encourages good attendance",
-      "punchline": "Realizes terminal illness class should have bad attendance",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie lists the valuable life skills she gained from rec center classes, building to what sounds like a legitimate class.",
+      "punchline": "French kissing was not a class \u2014 it was a boy in her biscuits class \u2014 but she treats the incidental encounter as equally educational.",
+      "craft_total": 7.33,
+      "impact_score": 6.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Leslie's well-meaning nature creating awkward logical contradictions - good character comedy.",
+      "explanation": "This is classic Leslie Knope character comedy. The joke only works because of who she is: someone who earnestly treats every experience as a learning opportunity. The matter-of-fact 'either way, lesson learned' is the kicker that elevates it from a simple misdirection into deep character work. High quotability and rewatch value.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -101,22 +105,23 @@
     },
     {
       "index": 4,
-      "text": "It's where I learned hair braiding, and how to make biscuits, and French kissing. The French kissing was just from a boy in my biscuits class, but either way, lesson learned.",
+      "text": "Justin mentions a fish reminds him of his mom. 'Why?' 'It's just being really withholding.'",
       "characters": [
+        "Justin",
         "Leslie"
       ],
       "joke_types": [
-        "character_comedy",
-        "misdirection"
+        "setup_punchline",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie lists skills learned at rec center including French kissing",
-      "punchline": "Reveals it wasn't an official class, just a boy in biscuits class",
-      "craft_total": 7.5,
-      "impact_score": 6.5,
+      "setup": "Justin says a fish at the aquarium reminds him of his mom, a seemingly sweet or random observation.",
+      "punchline": "The reason is that his mom is 'really withholding,' delivered casually as if this is a completely normal thing to say.",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
       "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Leslie overshare with innocent misdirection. Perfect character integration.",
+      "explanation": "Elegant misdirection and genuine wit. The audience expects something charming or poetic about the fish; instead they get a quick, dark psychological portrait of Justin's mother. The deadpan delivery makes it funnier than if it were played for shock. High originality for a throwaway line.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -130,23 +135,23 @@
     },
     {
       "index": 5,
-      "text": "That fish over there kind of reminds me of my mom. Why? It's just being really withholding.",
+      "text": "Justin reveals the exotic food is camel stomach, then immediately backtracks \u2014 'I'm teasing, it's chicken' \u2014 then offers actual camel stomach.",
       "characters": [
-        "Leslie",
-        "Justin"
+        "Justin",
+        "Leslie"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "misdirection",
+        "escalation"
       ],
-      "setup": "Leslie comments that fish reminds her of her mom",
-      "punchline": "Because the fish is being withholding",
-      "craft_total": 6.65,
-      "impact_score": 5.5,
-      "quotability": 6.0,
+      "setup": "Leslie tries the food and loves it; Justin says it's camel stomach.",
+      "punchline": "He immediately says he's joking \u2014 it's chicken \u2014 then casually asks if she'd like to try the actual camel stomach, implying it's also on the table.",
+      "craft_total": 6.96,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Subtle character moment revealing Leslie's family dynamics through aquarium observation.",
+      "explanation": "A competent two-beat joke. The first beat (camel stomach reveal) is predictable, but the second beat \u2014 that the camel stomach is a separate, real option \u2014 is a nice escalation that salvages it. Works as character establishment for Justin as a worldly adventurer.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -156,22 +161,22 @@
     },
     {
       "index": 6,
-      "text": "Isn't it great? It's camel stomach. Is it? I'm teasing, I'm teasing. It's chicken.",
+      "text": "Leslie's talking-head: 'I've racked my brain and I can't come up with one exciting idea.'",
       "characters": [
-        "Justin",
         "Leslie"
       ],
       "joke_types": [
-        "misdirection"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Justin offers food, claims it's camel stomach",
-      "punchline": "Reveals he's joking, it's just chicken",
-      "craft_total": 4.95,
-      "impact_score": 4.5,
-      "quotability": 3.0,
+      "setup": "Leslie just confidently told Justin their Pawnee date would 'blow Indianapolis out of the water.'",
+      "punchline": "Immediately cut to Leslie admitting she has absolutely no ideas whatsoever.",
+      "craft_total": 7.06,
+      "impact_score": 6.83,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard fake-out joke, nothing particularly clever or character-specific.",
+      "explanation": "A well-executed juxtaposition cut \u2014 the mockumentary format at its most functional. Leslie's confident promise immediately undercut by her panicked confessional. Structure does the heavy lifting here; the joke itself is conventional but lands because of the editing rhythm.",
       "dialogue": [
         {
           "speaker": "Justin",
@@ -189,21 +194,23 @@
     },
     {
       "index": 7,
-      "text": "I've racked my brain and I can't come up with one exciting idea.",
+      "text": "Ann suggests a simple one-on-one dinner; Leslie immediately hijacks it into a 'big rambling party' and calls their lunches 'think tanks.'",
       "characters": [
-        "Leslie"
+        "Leslie",
+        "Ann"
       ],
       "joke_types": [
+        "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Leslie confidently promises Pawnee date will blow Indianapolis out of water",
-      "punchline": "Immediately reveals in talking head she has no ideas",
-      "craft_total": 6.65,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Ann offers the sensible, modest suggestion: just cook him chicken at home.",
+      "punchline": "Leslie transforms it into an elaborate dinner party and credits Ann's 'genius,' then reframes their lunches as 'think tanks' in the same breath.",
+      "craft_total": 6.76,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good use of mockumentary format to reveal gap between public confidence and private panic.",
+      "explanation": "Strong character integration \u2014 Leslie's pattern of taking someone else's idea and immediately inflating it beyond recognition is core to who she is. The 'think tank' non-sequitur at the end is a nice bonus absurdist beat. Slightly bloated in delivery but the character work is genuine.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -217,22 +224,22 @@
     },
     {
       "index": 8,
-      "text": "Well, maybe just have him over and cook him some chicken and tell him it's Pawnee cockatoo.",
+      "text": "Justin once ate fried cockatoo with a member of the Thai Royal Family",
       "characters": [
-        "Ann"
+        "Leslie"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "observational"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Leslie mentions Justin ate fried cockatoo with Thai royalty",
-      "punchline": "Ann suggests fake exotic dish with local bird name",
-      "craft_total": 6.55,
-      "impact_score": 5.5,
-      "quotability": 6.5,
+      "setup": "Leslie is trying to think of exciting things to do in Pawnee to impress Justin",
+      "punchline": "Her benchmark for 'impressive' is that he once ate fried cockatoo with Thai royalty \u2014 an impossible standard for Pawnee to meet",
+      "craft_total": 6.7,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever wordplay on local vs. exotic, though not groundbreaking.",
+      "explanation": "Works as world-building comedy \u2014 the specificity of 'fried cockatoo' and 'Thai Royal Family' together is absurdly perfect. Functional joke that establishes the episode's central tension (Pawnee vs. Justin's exotic life) economically.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -246,23 +253,23 @@
     },
     {
       "index": 9,
-      "text": "No, I actually meant more like a one-on-one thing. I know what you meant, but I took your idea and I made it better. It's called a think tank, Ann.",
+      "text": "A dinner party! That's genius... No, I actually meant more like a one-on-one thing. / I know what you meant, but I took your idea and I made it better. / It's called a think tank, Ann.",
       "characters": [
-        "Ann",
-        "Leslie"
+        "Leslie",
+        "Ann"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "irony_sarcasm"
       ],
-      "setup": "Ann suggests intimate dinner, Leslie suggests dinner party",
-      "punchline": "Leslie claims she improved Ann's idea and calls their lunches think tanks",
-      "craft_total": 7.1,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Ann suggests something intimate; Leslie immediately hijacks it into a large dinner party.",
+      "punchline": "Leslie declares she 'made it better' and then non-sequiturs into calling their lunches 'think tanks' as if that's relevant justification.",
+      "craft_total": 7.17,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Leslie character moment - overcomplicating simple things and rebranding normal activities.",
+      "explanation": "Strong character comedy \u2014 Leslie's utter confidence in steamrolling a reasonable suggestion is quintessentially her. 'It's called a think tank, Ann' is a great non-sequitur pivot that only Leslie would make.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -280,23 +287,22 @@
     },
     {
       "index": 10,
-      "text": "How many courses will there be? Three. Four. Not including dessert. So, five courses. Yes. Now, it will be five courses.",
+      "text": "Ron's negotiation about bringing a large number of deviled eggs he doesn't want to share with anyone.",
       "characters": [
-        "Ron",
-        "Leslie"
+        "Ron"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Ron asks about number of courses",
-      "punchline": "Leslie keeps increasing the count in real time",
-      "craft_total": 6.9,
-      "impact_score": 6.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Leslie is asking about the dinner party logistics.",
+      "punchline": "Ron's primary concern is securing personal refrigerator space for a large private deviled egg supply that he has zero intention of sharing.",
+      "craft_total": 7.86,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Nice escalation showing Leslie's tendency to overcomplicate under pressure.",
+      "explanation": "Pure Ron Swanson. The joke is almost entirely in the character integration \u2014 only Ron would approach a social gathering with the principal concern of protecting his private food supply from other guests. Delivered with deadpan authority, this lands as both a great joke and a perfect character portrait. High rewatch value.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -322,22 +328,23 @@
     },
     {
       "index": 11,
-      "text": "If I wanted to bring a large number of deviled eggs, but I didn't want to share them with anyone else, can you guarantee fridge space?",
+      "text": "Leslie tells Tom he's being invited because he comes from 'the most distant and exotic land.' Tom: 'South Carolina?'",
       "characters": [
-        "Ron"
+        "Leslie",
+        "Tom"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Ron asking practical party question",
-      "punchline": "Wants to bring food specifically not to share",
-      "craft_total": 7.83,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Leslie flatters Tom by calling him her most 'exotic' guest, implying a far-flung origin.",
+      "punchline": "Tom dryly reveals the 'exotic' land is South Carolina \u2014 a completely unremarkable American state.",
+      "craft_total": 7.79,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfectly captures Ron's antisocial nature - attending a party but refusing to participate socially.",
+      "explanation": "Tight and economical. Leslie's Pawnee-centric worldview makes anyone from outside Indiana 'exotic,' and the reveal of South Carolina is the perfect anti-climax. Tom's dry delivery ('South Carolina?') with implied chagrin is exactly right. Works on multiple levels: Leslie's parochialism and Tom's identity as someone who thinks he's more cosmopolitan than he is.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -347,23 +354,23 @@
     },
     {
       "index": 12,
-      "text": "And you, out of all my friends, come from the most distant and exotic land. South Carolina?",
+      "text": "Andy is polishing a bench and asks Leslie if he can come to the party. Leslie invites him \u2014 to serve coats and food at $10/hour. Andy: 'My guardian angel!'",
       "characters": [
-        "Leslie",
-        "Tom"
+        "Andy",
+        "Leslie"
       ],
       "joke_types": [
-        "misdirection",
+        "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Leslie builds up Tom's exotic origins",
-      "punchline": "South Carolina is hardly exotic",
-      "craft_total": 6.95,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Andy seems to be angling for a party invitation; Leslie appears to be extending one.",
+      "punchline": "She's actually hiring him as a servant at minimum party wages, and Andy responds with complete, unironic gratitude.",
+      "craft_total": 6.48,
+      "impact_score": 6.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirection on Leslie's Pawnee-centric worldview where South Carolina seems exotic.",
+      "explanation": "The 'My guardian angel!' reaction is what makes this work. Andy's complete earnestness in being grateful for what is objectively a bad deal is deeply funny and character-consistent. The joke rewards the audience's knowledge of Andy's life situation.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -377,24 +384,22 @@
     },
     {
       "index": 13,
-      "text": "What are you guys talking about? Nothing. Don't worry about it. What?",
+      "text": "Andy rehearses being Justin, imagining Justin will say he got his coat 'from the king of Africa when we were walking on the Berlin Wall together.' Then: 'Really, Justin? What instruments do you play?'",
       "characters": [
-        "Jerry",
-        "Tom",
-        "Leslie"
+        "Andy"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Tom tells Leslie not to invite Jerry, Jerry appears",
-      "punchline": "Awkward dismissal of Jerry's innocent question",
-      "craft_total": 6.03,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Andy is practicing how to interact with Justin, roleplaying both sides of the conversation.",
+      "punchline": "His imagined Justin is so absurdly over-the-top that 'walking on the Berlin Wall together with the king of Africa' is treated as a normal Justin story. The follow-up question about instruments is a non-sequitur punchline.",
+      "craft_total": 7.6,
+      "impact_score": 7.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard Jerry exclusion moment - mildly uncomfortable but not particularly inventive.",
+      "explanation": "Fun absurdist riff on Justin's worldly reputation. The joke escalates Justin's legend to parody levels, and the non-sequitur follow-up question ('What instruments do you play?') is a chaotic little bonus. Andy's anxious preparation to impress someone who doesn't know he exists is good character work.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -428,22 +433,22 @@
     },
     {
       "index": 14,
-      "text": "Hey, it's me, Justin. Take my coat. But please, be careful. I got it from the king of Africa when we were walking on the Berlin Wall together.",
+      "text": "'Actually, he's a pretty sick keyboardist.' (Talking head response to Andy's question about Justin's instruments, validating the absurd premise)",
       "characters": [
-        "April"
+        "Unknown"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "callback",
+        "deadpan_understatement"
       ],
-      "setup": "April practicing taking coats",
-      "punchline": "Absurd fake Justin backstory combining impossible elements",
-      "craft_total": 7.78,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Andy's ridiculous roleplayed question about what instruments Justin plays.",
+      "punchline": "A talking-head cut reveals someone confirming that Justin actually does play keyboard \u2014 making Andy's random guess accidentally correct.",
+      "craft_total": 7.65,
+      "impact_score": 7.5,
+      "quotability": 6.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Great April moment - deadpan delivery of deliberately impossible combination of exotic elements.",
+      "is_callback": 1,
+      "explanation": "The mockumentary cut to a confessional accidentally validating Andy's absurd improv is a structurally elegant joke. The economy is nearly perfect \u2014 four words confirm the gag. Rewatch bonus because you look for it the second time. The 'pretty sick' delivery adds casual cool to the confirmation.",
       "dialogue": [
         {
           "speaker": "April",
@@ -453,22 +458,23 @@
     },
     {
       "index": 15,
-      "text": "Hi, Kyle. You know, right before you sat down, I noticed, did you have some kind of stain on your ass, or something? What was that?",
+      "text": "Andy tells a customer (Kyle) there might be a stain on his ass right before he sits down on the freshly-polished wet bench, then immediately says 'No, no, you're good.'",
       "characters": [
-        "Andy"
+        "Andy",
+        "Kyle"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "visual_gag"
       ],
-      "setup": "Andy nervously greeting someone after polishing benches",
-      "punchline": "Awkwardly asks about stain on their butt",
-      "craft_total": 6.1,
-      "impact_score": 5.5,
+      "setup": "Andy has been polishing benches (and earlier was asked if the polish would get on people's butts). A customer is about to sit down.",
+      "punchline": "Andy raises the alarm right as the person sits, then immediately retracts it \u2014 suggesting the person now has a polish stain but Andy is too awkward to deal with it.",
+      "craft_total": 7.05,
+      "impact_score": 6.67,
       "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Andy's awkward social skills on display - references earlier bench polishing concern.",
+      "is_callback": 1,
+      "explanation": "A payoff for the earlier bench-polishing setup. The callback is earned and Andy's characteristically conflict-avoidant 'No, no, you're good' is perfectly in character. Visual gag lands well in context.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -482,22 +488,24 @@
     },
     {
       "index": 16,
-      "text": "Now, I can believe it.",
+      "text": "Hi, Kyle. You know, right before you sat down, I noticed, did you have some kind of stain on your ass, or something? What was that? / What? / No, no, no. You're good.",
       "characters": [
-        "Ann"
+        "Andy",
+        "Kyle"
       ],
       "joke_types": [
-        "reaction_beat",
+        "callback",
+        "cringe_discomfort",
         "visual_gag"
       ],
-      "setup": "Ann sees Leslie's house for first time, Leslie says she can't believe Ann hasn't been over",
-      "punchline": "Ann's deadpan reaction to the messy house",
-      "craft_total": 7.1,
-      "impact_score": 6.5,
+      "setup": "Andy was just told his freshly polished bench might transfer polish to sitters' butts.",
+      "punchline": "A customer sits down and Andy immediately inspects them for polish transfer, pretends to see something alarming, then reassures them \u2014 the polish has transferred but Andy covers it up to avoid admitting his error.",
+      "craft_total": 7.41,
+      "impact_score": 7.0,
       "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect economy - Ann's understated reaction to obvious visual comedy setup.",
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A satisfying callback payoff to the polish setup. The visual comedy of Andy inspecting a stranger's butt, the slight alarm, then the cover-up 'No, no, you're good' is well-executed. Physical comedy inferred from context.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -511,23 +519,22 @@
     },
     {
       "index": 17,
-      "text": "This newspaper's from November, 1986. Oh, the first rumblings of Iran-Contra! Don't throw that out!",
+      "text": "Ann's reaction to seeing Leslie's house for the first time: 'Now, I can believe it.' (re: never having been invited over)",
       "characters": [
-        "Ann",
-        "Leslie"
+        "Ann"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Ann finds old newspaper while cleaning",
-      "punchline": "Leslie wants to keep it for historical significance",
-      "craft_total": 7.45,
-      "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Ann notes she can't believe Leslie has never had her over. Leslie says it's 'a little messy.'",
+      "punchline": "After seeing the interior, Ann deadpans that she now completely understands why she's never been invited.",
+      "craft_total": 7.31,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Leslie moment - finding historical importance in hoarding behavior.",
+      "explanation": "Near-perfect economy \u2014 five words do all the work. The joke implies rather than shows, trusting the audience to fill in the horror of the house. Ann's dry straight-man energy makes it land. The structure (setup the sweet sentiment, invert it immediately) is clean.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -549,22 +556,22 @@
     },
     {
       "index": 18,
-      "text": "I think I need to call Child Services and have Leslie taken away from herself.",
+      "text": "Ann's talking-head: 'I think I need to call Child Services and have Leslie taken away from herself.'",
       "characters": [
         "Ann"
       ],
       "joke_types": [
-        "observational",
-        "escalation"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Ann surveying Leslie's messy house",
-      "punchline": "Treating adult Leslie like a child who needs intervention",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 8.0,
+      "setup": "Ann is helping Leslie clean the disaster that is her house.",
+      "punchline": "Ann frames the situation as child endangerment \u2014 with Leslie as both the child and the danger \u2014 and proposes an absurd bureaucratic solution.",
+      "craft_total": 7.77,
+      "impact_score": 7.83,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Clever escalation of the 'messy house' premise with absurd solution.",
+      "explanation": "This is genuinely excellent joke writing. The conceit of Leslie needing to be protected from herself via bureaucratic intervention is both absurdist and psychologically true. 'Taken away from herself' is a memorably phrased construction that couldn't be more economical. High quotability \u2014 this is the kind of line that gets repeated. Justified 8+ rating: it's original, perfectly structured, and deeply character-specific.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -598,42 +605,41 @@
     },
     {
       "index": 19,
-      "text": "Your house is like a crazy person's garage.",
+      "text": "Ann describes Leslie's house as 'like a crazy person's garage.'",
       "characters": [
         "Ann"
       ],
       "joke_types": [
         "observational",
-        "visual_gag"
+        "deadpan_understatement"
       ],
-      "setup": "Ann trying to be diplomatic about Leslie's house",
-      "punchline": "Specific, vivid comparison that's not actually diplomatic",
-      "craft_total": 6.65,
-      "impact_score": 6.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Vivid, specific insult that captures the visual while maintaining Ann's attempted diplomacy."
-    },
-    {
-      "index": 20,
-      "text": "I might need it. What about this one? Well, if two birds come along?",
-      "characters": [
-        "Leslie",
-        "Ann"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Ann questions keeping one birdhouse",
-      "punchline": "Leslie's logic for keeping a second birdhouse",
-      "craft_total": 6.85,
-      "impact_score": 6.0,
+      "setup": "Ann is confronted with the full chaos of Leslie's home interior.",
+      "punchline": "She describes it not as a crazy person's house, but specifically a crazy person's *garage* \u2014 implying the house is so disorganized it's like a secondary storage space for a mentally unstable person.",
+      "craft_total": 6.76,
+      "impact_score": 6.67,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of hoarder logic - justifying excess with hypothetical scenarios.",
+      "explanation": "A well-chosen simile with good specificity \u2014 'garage' rather than just 'house' does real work. Not groundbreaking but clean and well-delivered."
+    },
+    {
+      "index": 20,
+      "text": "Leslie spots a newspaper from November 1986 and says 'Oh, the first rumblings of Iran-Contra! Don't throw that out!'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Ann is trying to throw away obviously outdated newspapers as part of the cleanup.",
+      "punchline": "Leslie treats a nearly 30-year-old newspaper as an essential historical document \u2014 specifically citing Iran-Contra \u2014 and defends keeping it with civic urgency.",
+      "craft_total": 7.32,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Iran-Contra specificity is what makes this joke sing. Any political nerd would hoard newspapers for exactly this reason, and it's perfectly Leslie that she not only has the paper but knows its historical significance off the top of her head. Strong character integration \u2014 this joke could only be Leslie.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -651,23 +657,23 @@
     },
     {
       "index": 21,
-      "text": "Shake my hand. Why? I can't tell if I've exfoliated too much. I don't want to creep Justin out. I want him to respect my handshake.",
+      "text": "The birdhouse exchange: 'What do you need this birdhouse for?' / 'I might need it.' / 'What about this one?' / 'Well, if two birds come along?'",
       "characters": [
-        "Leslie",
-        "April"
+        "Ann",
+        "Leslie"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "escalation"
       ],
-      "setup": "Leslie asking April to shake her hand",
-      "punchline": "Overthinking handshake texture for Justin",
-      "craft_total": 6.87,
-      "impact_score": 6.0,
-      "quotability": 6.5,
+      "setup": "Ann is trying to declutter Leslie's hoarded house and asks about a birdhouse.",
+      "punchline": "Leslie's defense is pure contingency-hoarder logic: she might need it. When Ann finds a second one, Leslie escalates: two birds.",
+      "craft_total": 7.27,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Leslie's neurotic attention to bizarre details when nervous.",
+      "explanation": "The escalating hoarder logic is nicely observed and character-specific. 'Well, if two birds come along?' has a good rhythm. Solid mid-tier joke that rewards Leslie's characterization as someone who cannot throw anything away.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -717,22 +723,23 @@
     },
     {
       "index": 22,
-      "text": "People in this town are just now getting into Nirvana. I don't have the heart to tell them what's going to happen to Kurt Cobain in 1994.",
+      "text": "Tom asks April to shake his hand to test if he's exfoliated too much. April: 'Ew! It's like touching raw chicken.' Tom: 'Damn it. Gonna have to re-foliate them.'",
       "characters": [
-        "Leslie"
+        "Tom",
+        "April"
       ],
       "joke_types": [
-        "observational",
-        "dark_subversive"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Leslie explaining how unhip Pawnee is",
-      "punchline": "Reference to Kurt Cobain's death as if it's future knowledge",
-      "craft_total": 7.62,
-      "impact_score": 7.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Tom is anxious about making a good impression on Justin and is testing his handshake by having April feel his hand.",
+      "punchline": "April's visceral disgust ('like touching raw chicken') and Tom's determined response to 're-foliate' escalates the absurdity.",
+      "craft_total": 7.1,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever dark comedy mixing Leslie's earnestness with tragic real-world knowledge. Very quotable.",
+      "explanation": "'Re-foliate' as a made-up word for re-doing the exfoliation is a nice touch. April's disgust is perfectly in character and the raw chicken comparison is memorably gross. Tom's vanity anxiety is well-deployed character comedy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -742,23 +749,22 @@
     },
     {
       "index": 23,
-      "text": "Ew! It's like touching raw chicken. Damn it. Gonna have to re-foliate them.",
+      "text": "Tom's talking-head: 'People in this town are just now getting into Nirvana. I don't have the heart to tell them what's going to happen to Kurt Cobain in 1994.'",
       "characters": [
-        "April",
-        "Leslie"
+        "Tom"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "escalation"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "April testing Leslie's handshake texture",
-      "punchline": "Disgusted reaction and Leslie's made-up word 'refoliate'",
-      "craft_total": 6.65,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Tom is explaining that Pawnee is unhip and he needs to bone up on his cosmopolitan credentials.",
+      "punchline": "He references Pawnee's cultural lag with a darkly funny specific \u2014 they're just discovering Nirvana, unaware that Kurt Cobain is already dead (the show is set circa 2010).",
+      "craft_total": 8.15,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good payoff to handshake setup, plus Leslie's malapropism 'refoliate.'",
+      "explanation": "This is one of the episode's best jokes. It works on multiple levels: Pawnee's established backwardness, Tom's condescending compassion, and the dark comedy of treating Kurt Cobain's death as a spoiler to be withheld out of kindness. 'I don't have the heart to tell them' implies a sensitivity he definitely doesn't have. The specificity of '1994' makes it sharper. Justified 8+ \u2014 this is genuinely excellent writing that rewards smart viewers.",
       "dialogue": [
         {
           "speaker": "April",
@@ -792,24 +798,23 @@
     },
     {
       "index": 24,
-      "text": "Oh! No, no, I insist on paying. No, no, I insist on demonstrating. This is not gonna affect my decision at all. Oh, of course not. Stop winking.",
+      "text": "April's reaction to shaking Tom's over-exfoliated hand: 'Ew! It's like touching raw chicken.'",
       "characters": [
-        "Leslie",
-        "Teacher",
-        "Ron"
+        "April",
+        "Tom"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "reaction_beat",
+        "deadpan_understatement"
       ],
-      "setup": "Teacher offering free help to demonstrate class value",
-      "punchline": "Awkward back-and-forth ending with Ron telling them to stop winking",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Tom has April shake his hand to evaluate his exfoliation level",
+      "punchline": "April's verdict is immediate and visceral: 'It's like touching raw chicken.' Tom resolves to 're-foliate'",
+      "craft_total": 7.28,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good cringe comedy with escalating awkwardness and Ron's blunt intervention.",
+      "is_callback": 1,
+      "explanation": "April's delivery is the whole joke \u2014 her disgusted specificity ('raw chicken') and the nonchalance of walking away after. Tom's response ('gonna have to re-foliate') is a made-up word that perfectly caps the absurdity. Strong callback payoff.",
       "dialogue": [
         {
           "speaker": "Teacher",
@@ -839,23 +844,23 @@
     },
     {
       "index": 25,
-      "text": "Five courses. Of what? Huh? Of what? Oh, God.",
+      "text": "Maria (organizer) keeps winking at Leslie after insisting her help won't influence Leslie's class-cutting decision.",
       "characters": [
-        "Teacher",
-        "Leslie"
+        "Leslie",
+        "Maria"
       ],
       "joke_types": [
-        "reaction_beat",
-        "character_comedy"
+        "cringe_discomfort",
+        "irony_sarcasm"
       ],
-      "setup": "Leslie confidently announces five courses",
-      "punchline": "Teacher's simple question reveals Leslie hasn't planned the menu",
-      "craft_total": 6.92,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Maria is helping clean Leslie's house for free and keeps insisting it won't affect Leslie's evaluation of her class.",
+      "punchline": "She immediately undercuts every disclaimer with a conspiratorial wink, making the quid pro quo completely obvious.",
+      "craft_total": 6.47,
+      "impact_score": 6.25,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good callback to earlier course counting - Leslie's planning is all ambition, no details.",
+      "explanation": "A functional running gag throughout the episode \u2014 the teachers' obvious attempts to curry favor while maintaining deniability. The winking is a predictable punchline but works in context. Not original but consistent.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -881,23 +886,23 @@
     },
     {
       "index": 26,
-      "text": "You've been here? Right.",
+      "text": "Oh! No, no, I insist on paying. / No, no, I insist on demonstrating. / This is not gonna affect my decision at all. / Oh! Of course not. / Stop winking.",
       "characters": [
         "Leslie",
-        "Mark"
+        "Organizer Teacher"
       ],
       "joke_types": [
-        "awkward_silence",
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "irony_sarcasm"
       ],
-      "setup": "Mark mentions Leslie's house is cleaner than last time",
-      "punchline": "Leslie's awkward realization Mark has been there before",
-      "craft_total": 6.38,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "The organizing teacher has helped clean Leslie's house and Leslie insists on paying; the teacher insists it's a demonstration to save her class.",
+      "punchline": "Leslie's repeated 'this won't affect my decision' paired with the teacher's persistent winking makes both parties complicit in a transparent quid pro quo they're both pretending isn't happening.",
+      "craft_total": 7.4,
+      "impact_score": 7.25,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Subtle awkwardness implying romantic history without explicitly stating it.",
+      "explanation": "'Stop winking' is the perfect button \u2014 Leslie trying to maintain plausible deniability while the teacher openly signals their arrangement. Good cringe comedy from the mutual pretense.",
       "dialogue": [
         {
           "speaker": "Mark",
@@ -919,22 +924,23 @@
     },
     {
       "index": 27,
-      "text": "Oh! Sex.",
+      "text": "The cooking teacher's food is 'a very good sampling of what my level one class does, which I hope you'll keep in mind.' Leslie: 'Tania, like I said over the phone\u2014' Tania: 'I know. It won't influence your decision.'",
       "characters": [
-        "Ann"
+        "Tania",
+        "Leslie"
       ],
       "joke_types": [
-        "reaction_beat",
-        "deadpan_understatement"
+        "running_gag",
+        "irony_sarcasm"
       ],
-      "setup": "Ann processing when Mark was at Leslie's before",
-      "punchline": "Blunt realization delivered deadpan",
-      "craft_total": 7.15,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Another teacher has shown up to help \u2014 this time cooking the dinner party food \u2014 while maintaining the fiction that it's not a bribe.",
+      "punchline": "The same pattern as Maria: disclaimer followed by obvious self-interest.",
+      "craft_total": 6.28,
+      "impact_score": 6.0,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect economy - maximum comedic impact with minimal dialogue. Ann's medical directness applied to social situation.",
+      "is_callback": 1,
+      "explanation": "Third instance of the teacher-bribe running gag. The repetition diminishes the laugh each time, though the structure is still functional. This version adds less than the previous ones.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -960,22 +966,22 @@
     },
     {
       "index": 28,
-      "text": "That was after I told him that I sometimes go swimming at the Y.",
+      "text": "Andy promises not to spit in anyone's food 'unless they should request that I do.'",
       "characters": [
-        "Mark"
+        "Andy"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "deadpan_understatement"
       ],
-      "setup": "Mark describing Justin's exotic whale shark story",
-      "punchline": "Mark's mundane contribution to the conversation",
-      "craft_total": 6.88,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Leslie asks if Andy will be okay serving at the party given the complicated guest list (Mark, Justin).",
+      "punchline": "Andy's professional assurance includes a bizarre carve-out for consensual food-spitting, delivered with complete sincerity.",
+      "craft_total": 7.79,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good contrast between exotic adventure and mundane Pawnee reality.",
+      "explanation": "The specific phrasing 'unless they should request that I do' is delightfully formal and strange, suggesting Andy has encountered this scenario and thought it through. The contrast between professional language and disgusting premise is excellent. Pure Andy Dwyer character comedy.",
       "dialogue": [
         {
           "speaker": "Mark",
@@ -985,22 +991,23 @@
     },
     {
       "index": 29,
-      "text": "No, no, no! No talking. Everybody stop talking until Justin gets here. Don't use up your stories.",
+      "text": "Mark mentions he's been to Leslie's house before. Leslie: 'You've been here? Right.' Then an awkward beat.",
       "characters": [
+        "Mark",
         "Leslie"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "awkward_silence",
+        "reaction_beat"
       ],
-      "setup": "Leslie trying to manage party conversation",
-      "punchline": "Treating stories like a finite resource that can be 'used up'",
-      "craft_total": 7.4,
-      "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Mark mentions Leslie's house is cleaner than last time he was there.",
+      "punchline": "Leslie hadn't told anyone about their history; the slip causes visible embarrassment and an uncomfortable acknowledgment.",
+      "craft_total": 7.7,
+      "impact_score": 7.75,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great Leslie logic - treating conversation like a strategic resource to be managed.",
+      "explanation": "A well-handled cringe beat. The pregnant pause after Mark's slip communicates the history without spelling it out. The economy of 'You've been here? Right.' is good \u2014 Leslie catching herself and pivoting awkwardly. Works as character drama with a comedic edge.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1018,22 +1025,22 @@
     },
     {
       "index": 30,
-      "text": "Please, have a good time and shut your mouth.",
+      "text": "Mark's talking-head about Justin: 'Last time he told me about snorkeling with whale sharks in Madagascar. That was after I told him I sometimes go swimming at the Y.'",
       "characters": [
-        "Leslie"
+        "Mark"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "observational",
+        "deadpan_understatement"
       ],
-      "setup": "Leslie giving party instructions",
-      "punchline": "Contradictory instruction to have fun while being quiet",
-      "craft_total": 7.35,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Mark is expressing excitement about seeing Justin again.",
+      "punchline": "The contrast between Justin's whale shark story and Mark's admission that he goes to the YMCA to swim is a perfect deadpan self-deprecating reveal.",
+      "craft_total": 7.65,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect contradiction showing Leslie's stress manifesting as impossible demands.",
+      "explanation": "The juxtaposition is earned and specific. Mark's flat confession about the Y makes the story funnier than any explicit joke about being boring would. The structure \u2014 Justin's story, then the reveal of what prompted it \u2014 works beautifully. Strong economy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1043,22 +1050,23 @@
     },
     {
       "index": 31,
-      "text": "There are very few things I've asked for in this world. To build a new park from scratch. To eventually become president. And to one day solve a murder on a train.",
+      "text": "Ron arrives and immediately starts to tell a story about Mayor Gunderson's dog. Leslie: 'Everybody stop talking until Justin gets here. Don't use up your stories.'",
       "characters": [
+        "Ron",
         "Leslie"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "absurdist"
       ],
-      "setup": "Leslie listing her life goals",
-      "punchline": "Escalation from reasonable to presidential to absurd mystery novel fantasy",
-      "craft_total": 8.12,
-      "impact_score": 7.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Guests are arriving and naturally starting to socialize.",
+      "punchline": "Leslie has apparently pre-approved a set of entertaining stories and is managing them as a finite resource, panicking that people will 'use up' their best material before Justin arrives.",
+      "craft_total": 7.38,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Leslie character moment - mixing professional ambition with childlike fantasy. Great escalation structure.",
+      "explanation": "Leslie treating dinner party conversation as a managed resource with scarcity concerns is perfectly insane and perfectly her. 'Don't use up your stories' is a great line that captures her controlling nature and her anxiety about the party in one phrase.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1072,22 +1080,23 @@
     },
     {
       "index": 32,
-      "text": "Really, really, just like the best, most exciting night of your life. I cannot over-hype it enough.",
+      "text": "Ron continues trying to tell the dog story anyway. Leslie: 'What part of not talking do you not understand?'",
       "characters": [
+        "Ron",
         "Leslie"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Leslie promising Justin an amazing night",
-      "punchline": "Acknowledging she's over-hyping while continuing to over-hype",
-      "craft_total": 7.07,
+      "setup": "Leslie has just told everyone to stop talking and save their stories.",
+      "punchline": "Ron immediately ignores this and continues the story, requiring Leslie to escalate.",
+      "craft_total": 6.44,
       "impact_score": 6.0,
-      "quotability": 6.5,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Leslie's self-awareness doesn't stop her behavior - good character consistency.",
+      "is_callback": 1,
+      "explanation": "A functional extension of joke 27. Ron's bulldozing through Leslie's instructions is a good character beat but not a new joke \u2014 it's more of a sustained comedic dynamic. Works in the room but doesn't add much beyond momentum.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1097,23 +1106,22 @@
     },
     {
       "index": 33,
-      "text": "I have the swine flu. Oh... No, she doesn't.",
+      "text": "Leslie's wish list talking-head: 'build a new park from scratch... eventually become president... solve a murder on a train.'",
       "characters": [
-        "Ann",
         "Leslie"
       ],
       "joke_types": [
-        "misdirection",
-        "cringe_discomfort"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Ann introducing herself to Justin",
-      "punchline": "Announces illness, Leslie immediately corrects",
-      "craft_total": 6.32,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Leslie is explaining how much she wants this dinner party to succeed.",
+      "punchline": "Her three deepest life ambitions are listed as equivalent: civic achievement, political aspiration, and solving a murder on a train \u2014 the last of which is a completely unexpected, specific, non-political fantasy.",
+      "craft_total": 8.52,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Awkward social moment - Ann's medical background creating inappropriate party conversation.",
+      "explanation": "One of the episode's best jokes and a genuine Parks and Rec classic. The list structure sets up two expected Leslie ambitions (park, presidency) and then delivers an absurdist non-sequitur that is somehow completely consistent with who she is \u2014 a romantic, adventure-loving bureaucrat who has watched too many Agatha Christie adaptations. 'Solve a murder on a train' as a sincere life goal is perfectly Leslie. Justified 8.7 \u2014 original, perfectly structured, deeply character-specific, beautifully economical, and completely earned.",
       "dialogue": [
         {
           "speaker": "Ann",
@@ -1127,22 +1135,22 @@
     },
     {
       "index": 34,
-      "text": "He got it in Cambodia, when he was hiking Mount Everest.",
+      "text": "Leslie tells Justin it's going to be 'the best, most exciting night of your life. I cannot over-hype it enough.'",
       "characters": [
-        "Andy"
+        "Leslie"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Andy admiring Justin's coat",
-      "punchline": "Geographically impossible story mixing Cambodia and Everest",
-      "craft_total": 6.85,
-      "impact_score": 6.0,
-      "quotability": 6.5,
+      "setup": "Leslie is welcoming Justin and promising a great party.",
+      "punchline": "The meta-statement 'I cannot over-hype it enough' \u2014 meaning she's trying to hype it as much as humanly possible \u2014 is simultaneously self-aware and completely oblivious to how anxious she sounds.",
+      "craft_total": 6.9,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Andy moment - mixing up exotic locations in attempt to sound impressive.",
+      "explanation": "The line is funny because 'I cannot over-hype it enough' implies maximum hype is the goal and that goal is unreachable \u2014 revealing Leslie's obsessive anxiety. It's a nice piece of character writing disguised as a throwaway line.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1184,22 +1192,24 @@
     },
     {
       "index": 35,
-      "text": "I'm being sarcastic. That would be awesome.",
+      "text": "Tom greets Justin with 'I have the swine flu.' Justin: 'Oh...' Leslie: 'No, she doesn't.'",
       "characters": [
-        "Andy"
+        "Tom",
+        "Justin",
+        "Leslie"
       ],
       "joke_types": [
-        "deadpan_understatement",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Andy saying putting gum in coat would be terrible",
-      "punchline": "Clarifies he was being sarcastic and would enjoy sabotage",
-      "craft_total": 6.65,
-      "impact_score": 6.0,
+      "setup": "Tom is trying to impress Justin, but his opening gambit is claiming to have swine flu.",
+      "punchline": "Leslie's matter-of-fact correction ('No, she doesn't') implies Tom tries this kind of weird attention-seeking regularly. The 'she' is also notable \u2014 unclear if Tom is being referred to as 'she' or if it's a script quirk.",
+      "craft_total": 6.87,
+      "impact_score": 6.5,
       "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Andy's childlike honesty about wanting to cause mischief.",
+      "explanation": "A quick, weird character beat for Tom. The swine flu gambit is bizarre enough to land, and Leslie's weary correction ('No, she doesn't') suggests this is par for the course. The joke lives in the absurdity of Tom's strategy.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1209,22 +1219,23 @@
     },
     {
       "index": 36,
-      "text": "Are you kidding? My uncle practically runs the place. I've prayed there. It's sick.",
+      "text": "April considers putting gum in Justin's coat pockets. Andy declines out of loyalty to Leslie. April: 'I'll do it when you're not in the room then.' Andy: 'That would be terrible.' April: 'I'm being sarcastic. That would be awesome.'",
       "characters": [
-        "Tom"
+        "April",
+        "Andy"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "irony_sarcasm"
       ],
-      "setup": "Justin asking about specific Indian mosque",
-      "punchline": "Tom making up connection he doesn't have",
-      "craft_total": 6.5,
-      "impact_score": 6.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Andy and April are admiring Justin's coat and April suggests sabotaging it.",
+      "punchline": "April's casual 'I'll do it when you're not in the room' followed by her correction of Andy's moral concern \u2014 her 'sarcasm' is that she actually does think it would be awesome \u2014 is a perfect April moment.",
+      "craft_total": 7.49,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Tom's desperation to seem cultured leading to obvious lies.",
+      "explanation": "April's sarcasm-inversion ('I'm being sarcastic. That would be awesome.') is a great character beat \u2014 she uses the form of sarcasm while meaning the literal thing. This plants a seed that pays off later when gum actually ends up in the coat. Strong character integration for both characters.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -1238,7 +1249,7 @@
     },
     {
       "index": 37,
-      "text": "The last time I was in India, I was eight years old and I stayed inside the whole time playing video games. I got to bone up.",
+      "text": "Tom admits to Justin that he barely knows India ('The last time I was in India I was eight years old and stayed inside playing video games') while scrambling to fact-check: 'Fourth largest coal reserves in the world.'",
       "characters": [
         "Tom"
       ],
@@ -1246,14 +1257,14 @@
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Tom trying to impress Justin with Indian knowledge",
-      "punchline": "Admitting he knows nothing and frantically researching",
-      "craft_total": 6.97,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Tom has been bonding with Justin over India, implying deep familiarity with the country.",
+      "punchline": "His confessional reveals he's been faking it and is desperately researching while at the party. His only actual India fact: coal reserves.",
+      "craft_total": 7.39,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good payoff to Tom's pretense - honest about his actual non-experience.",
+      "explanation": "The 'fourth largest coal reserves' as the only fact Tom can pull up while desperately Wikipedia-ing is both specific and perfectly Tom \u2014 always performing sophistication he doesn't have. The cut between his smooth party persona and his panicked fact-checking is excellent mockumentary structure.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -1279,41 +1290,43 @@
     },
     {
       "index": 38,
-      "text": "So my face is literally on fire, but it's this weird chemical, so no one can see the flames. I'm dancing around, freaking out. I end up having to dunk my face into a bucket of sand.",
+      "text": "Andy's sarcasm clarification: 'I'm being sarcastic. That would be awesome.'",
       "characters": [
-        "Mark"
+        "Andy"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "escalation"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Mark telling story to impress Justin",
-      "punchline": "Escalating absurd physical comedy scenario",
-      "craft_total": 6.32,
-      "impact_score": 6.0,
+      "setup": "Andy says the gum prank would be 'terrible' \u2014 then catches himself",
+      "punchline": "Andy explicitly labels his previous statement as sarcasm and reverses his position: 'That would be awesome.'",
+      "craft_total": 7.34,
+      "impact_score": 7.25,
       "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent visual comedy story, though not particularly character-specific for Mark."
+      "is_callback": 1,
+      "explanation": "Andy needing to clarify his own sarcasm \u2014 because he can't maintain the bit \u2014 is very Andy. The reversal is funny because it reveals he actually wanted to do the prank all along, which contradicts his earlier ethical stance. Good character integration."
     },
     {
       "index": 39,
-      "text": "Didn't happen to me. It was a kid I knew from camp. But a great story's a great story. Well, plus, the kid can't tell it, his mouth melted.",
+      "text": "Have you ever been to the Kaniman Mosque, down in Tamil Nadu? / Are you kidding? My uncle practically runs the place. I've prayed there. It's sick.",
       "characters": [
-        "Mark"
+        "Justin",
+        "Tom"
       ],
       "joke_types": [
-        "dark_subversive",
+        "character_comedy",
+        "irony_sarcasm",
         "escalation"
       ],
-      "setup": "Mark admits story wasn't his experience",
-      "punchline": "Darkly jokes about victim's inability to tell their own story",
-      "craft_total": 7.22,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Justin tests Tom's knowledge of South India; Tom admitted to knowing nothing.",
+      "punchline": "Tom's immediate, confident, detailed lie \u2014 'my uncle practically runs the place, I've prayed there, it's sick' \u2014 reveals he's now fully committed to faking Indian cultural knowledge.",
+      "craft_total": 6.6,
+      "impact_score": 6.5,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent dark escalation - casual cruelty disguised as storytelling pragmatism.",
+      "is_callback": 1,
+      "explanation": "Escalation of Tom's bluffing \u2014 he goes from 'the south part' to specific mosque knowledge with his uncle as a VIP. 'It's sick' is Tom's contemporary slang applied to a mosque, which is incongruous and funny. The escalation in one beat is well-executed.",
       "dialogue": [
         {
           "speaker": "Mark",
@@ -1327,41 +1340,42 @@
     },
     {
       "index": 40,
-      "text": "How could you invite Wendy when Ron's here? He's gonna wrap her up in his moustache and take her home.",
+      "text": "This is the best Old Fashioned I have ever had. Where'd you find this bartender? / Oh... I think... I don't know. Like, maybe the Yellow Pages. / There's no way that you're paying him enough.",
       "characters": [
-        "Tom"
+        "Justin",
+        "Leslie"
       ],
       "joke_types": [
-        "visual_gag",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Tom upset about Wendy being invited",
-      "punchline": "Absurd visual metaphor about Ron's mustache as predatory tool",
-      "craft_total": 7.88,
-      "impact_score": 7.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Justin raves about the bartender's cocktail.",
+      "punchline": "Leslie's vague 'maybe the Yellow Pages' reveals the bartender is a rec center teacher demonstrating their class \u2014 and Justin's insistence they're underpaid makes it funnier.",
+      "craft_total": 6.56,
+      "impact_score": 6.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant visual metaphor combining Ron's iconic mustache with Tom's jealousy fears. Highly quotable."
+      "explanation": "Part of the running gag of rec center teachers performing at the party. Justin's rave review of a lobbying teacher is ironic. Functional but not especially sharp."
     },
     {
       "index": 41,
-      "text": "Don't do that, Tom!",
+      "text": "Leslie's attempt to 'casually' join Justin and Mark's conversation is immediately derailed \u2014 she starts describing a scenario where her 'face is literally on fire but it's a weird chemical so no one can see the flames.'",
       "characters": [
-        "Ron"
+        "Leslie"
       ],
       "joke_types": [
-        "reaction_beat",
-        "physical_slapstick"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Tom eating extremely hot pepper and performing",
-      "punchline": "Ron's urgent warning (implied after Tom's already in distress)",
-      "craft_total": 6.23,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Leslie wants to impress Justin but is visibly overwhelmed and anxious.",
+      "punchline": "Her attempt at casual conversation produces an elaborate metaphor about invisible chemical face-fire, which is meant to convey anxiety but is so specific and strange it's its own comedy.",
+      "craft_total": 7.09,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard physical comedy reaction - Ron's too-late warning.",
+      "explanation": "The invisible chemical fire is a surreal and specific anxiety metaphor that characterizes Leslie's overworked imagination. Slightly underdeveloped as a standalone joke but contributes to the mounting pressure of the party sequence.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -1371,22 +1385,22 @@
     },
     {
       "index": 42,
-      "text": "Derek and Ben are gay, but often, on occasion, April will have relations with Derek. Right? Crazy stuff. Discuss that.",
+      "text": "Justin tells a wild story about his face literally being on fire from a chemical, having to dunk it in sand. Then reveals: 'Didn't happen to me. It was a kid I knew from camp. But a great story's a great story.'",
       "characters": [
-        "Leslie"
+        "Justin"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "misdirection",
         "character_comedy"
       ],
-      "setup": "Leslie trying to create interesting conversation",
-      "punchline": "Awkwardly oversharing others' private business as conversation starter",
-      "craft_total": 7.0,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Justin seems to be telling another of his incredible personal adventures, delivered with total authority.",
+      "punchline": "It wasn't him. It was someone else. And Justin has apparently no problem presenting others' experiences as his own for storytelling purposes.",
+      "craft_total": 7.39,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good cringe moment - Leslie's desperation making her violate social norms.",
+      "explanation": "Excellent structural joke and a subtle character shift for Justin \u2014 he's not just worldly, he's apparently a fabulist. 'But a great story's a great story' is a perfectly delivered rationalization that gets a big laugh. This is the episode's first hint that Justin may be too good to be true, delivered as comedy. Rewatch bonus because you see it differently once you know his character.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1404,22 +1418,22 @@
     },
     {
       "index": 43,
-      "text": "Who else is gay?",
+      "text": "'Plus, the kid can't tell it. His mouth melted.'",
       "characters": [
-        "Leslie"
+        "Justin"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "dark_subversive",
+        "deadpan_understatement"
       ],
-      "setup": "Awkward conversation about Derek and Ben",
-      "punchline": "Leslie trying to continue inappropriate topic",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Escalation of previous cringe moment - Leslie doubling down on inappropriate conversation.",
+      "setup": "Justin has just justified telling someone else's story.",
+      "punchline": "He adds that the original storyteller is unavailable to object \u2014 because his mouth melted from the chemical fire.",
+      "craft_total": 8.06,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's strongest jokes. The casual, dark logic of 'his mouth melted' as a reason the kid can't reclaim his own story is brilliantly callous. Delivered deadpan, it transforms the previous joke into a dark comedy bit. Near-perfect economy \u2014 four words, enormous impact. The audience reaction in a group setting would be a shocked laugh, which is the best kind. Justified 8.4 craft score.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1453,22 +1467,22 @@
     },
     {
       "index": 44,
-      "text": "Poor Tommy. He has a very frail colon.",
+      "text": "A belly dancer shows up at the dinner party, apparently uninvited. Leslie: 'It's weird, but she just showed up.'",
       "characters": [
-        "Ron"
+        "Leslie"
       ],
       "joke_types": [
-        "deadpan_understatement",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Tom taking long time in bathroom after hot peppers",
-      "punchline": "Ron's matter-of-fact medical assessment",
-      "craft_total": 7.22,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "The party has already gotten out of control with too many teachers showing up.",
+      "punchline": "A belly dancer has also arrived, and Leslie maintains the fiction that it's a spontaneous occurrence.",
+      "craft_total": 6.51,
+      "impact_score": 6.33,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ron delivery - deadpan concern with specific medical terminology.",
+      "explanation": "A decent absurdist escalation of the 'teachers-as-entertainment' gag. The belly dancer is visually funny and Leslie's implausible denial is in character, but the joke itself is fairly thin.",
       "dialogue": [
         {
           "speaker": "Ron",
@@ -1478,23 +1492,23 @@
     },
     {
       "index": 45,
-      "text": "A belly dancer? What? It's weird, but she just showed up. I mean, I'm not the kind of person that's gonna throw someone out, or, you know, not let them in if they randomly show up.",
+      "text": "Tom is dared to eat a hot pepper from the soup. He accepts. He cries. Justin: 'You're very brave.' Tom, struggling: 'Please, that was one of the tiny ones.' Then Tom starts singing while suffering.",
       "characters": [
-        "Justin",
-        "Leslie"
+        "Tom",
+        "Justin"
       ],
       "joke_types": [
-        "escalation",
+        "physical_slapstick",
         "character_comedy"
       ],
-      "setup": "Belly dancer appears at party",
-      "punchline": "Leslie pretending this is a coincidence while clearly having hired entertainment",
-      "craft_total": 6.75,
-      "impact_score": 6.5,
+      "setup": "A spicy pepper is at the table; Tom is challenged to eat it.",
+      "punchline": "Tom eats it, is clearly in agony, but maintains his bravado ('that was one of the tiny ones') and then inexplicably starts singing, apparently as a coping mechanism.",
+      "craft_total": 6.13,
+      "impact_score": 6.17,
       "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of party chaos with Leslie's transparent lie.",
+      "explanation": "Strong physical comedy beat. Tom's insistence on machismo while visibly suffering is perfect character comedy. The singing is unexpected and weird enough to be funny. 'That was one of the tiny ones' is a nice line.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1512,22 +1526,24 @@
     },
     {
       "index": 46,
-      "text": "You know, people hear about a killer party at Knope's house, they all come running.",
+      "text": "Tom trying to generate interesting party conversation introduces Derek and Ben as gay but mentions April 'on occasion will have relations with Derek.' Then: 'Discuss that.' Justin: 'There's not much more to discuss. You kind of explained it all.'",
       "characters": [
-        "Leslie"
+        "Tom",
+        "Justin",
+        "April"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Multiple unexpected entertainers at party",
-      "punchline": "Leslie claiming her reputation draws random performers",
-      "craft_total": 6.65,
-      "impact_score": 6.0,
-      "quotability": 6.5,
+      "setup": "Tom is trying to stir up interesting conversation at the party to keep Justin entertained.",
+      "punchline": "Tom presents April's unusual relationship as a conversation starter, but his framing is so thorough that Justin correctly observes there's nothing left to discuss.",
+      "craft_total": 7.33,
+      "impact_score": 7.25,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Leslie's delusional explanation for obvious hired entertainment.",
+      "explanation": "Justin's deadpan deflation of Tom's 'conversation starter' is well-timed. Tom oversharing April's personal life with a stranger and then saying 'discuss that' is perfectly Tom \u2014 he treats other people's relationships as entertainment content. Justin's dry response is the right punchline.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1553,23 +1569,22 @@
     },
     {
       "index": 47,
-      "text": "Yeah. He's actually kind of awesome. You're underage.",
+      "text": "Justin's response to Tom's relationship expose: 'There's not much more to discuss. You kind of explained it all.'",
       "characters": [
-        "April",
-        "Andy"
+        "Justin"
       ],
       "joke_types": [
         "deadpan_understatement",
         "reaction_beat"
       ],
-      "setup": "April agreeing Justin is awesome",
-      "punchline": "Andy's blunt reminder about alcohol laws",
-      "craft_total": 6.5,
-      "impact_score": 6.0,
+      "setup": "Tom has summarized April's romantic arrangement and commands the table to 'discuss'",
+      "punchline": "Justin matter-of-factly notes there's nothing left to discuss because Tom summarized it completely",
+      "craft_total": 7.18,
+      "impact_score": 6.75,
       "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment - Andy's unexpected responsibility about underage drinking.",
+      "is_callback": 1,
+      "explanation": "A clean deadpan button to the previous joke. Justin's response deflates Tom's gambit while also implying Justin is too worldly to be shocked by any of it. Functions well as a callback beat.",
       "dialogue": [
         {
           "speaker": "April",
@@ -1583,40 +1598,42 @@
     },
     {
       "index": 48,
-      "text": "When it comes to choosing accounting software, there's no accounting for taste.",
-      "characters": [
-        "Teacher"
-      ],
-      "joke_types": [
-        "wordplay_pun"
-      ],
-      "setup": "Teacher demonstrating accounting class",
-      "punchline": "Terrible pun on 'accounting'",
-      "craft_total": 4.42,
-      "impact_score": 3.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Deliberately bad pun meant to show why accounting class should be cut - weak comedy by design."
-    },
-    {
-      "index": 49,
-      "text": "But I can't, because Leslie loves using people for her own gain.",
+      "text": "Tom's follow-up: 'Who else is gay?' after the conversation fails to launch.",
       "characters": [
         "Tom"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "absurdist"
       ],
-      "setup": "Tom saying he'd defend Leslie",
-      "punchline": "Immediately contradicts himself with harsh truth",
-      "craft_total": 7.17,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Tom's attempt at interesting conversation has fallen flat.",
+      "punchline": "His solution is to prospect for more gay people to reveal, treating it as his party trick.",
+      "craft_total": 7.44,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Economy is very strong \u2014 three words pivot from a failed joke into a new comedic direction. Tom's oblivious persistence is funny and consistent. Works well as a coda to the previous joke."
+    },
+    {
+      "index": 49,
+      "text": "Leslie scolds Tom: 'Tom, I need your help. There was a lull. I saw Justin yawn. Please tell me that yawning is a sign of excitement in India or something.'",
+      "characters": [
+        "Leslie",
+        "Tom"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Leslie is panicking that Justin is bored.",
+      "punchline": "Her desperate hope that yawning might mean something different in India is both absurd and perfectly Leslie \u2014 she'd rather invent cross-cultural miscommunication than accept that the party is failing.",
+      "craft_total": 7.79,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Tom moment - his honesty overriding social politeness even in formal hearing.",
+      "explanation": "Leslie's escalating desperation produces a great absurdist rationalization. 'Please tell me yawning is a sign of excitement in India or something' is a wonderful character line \u2014 only Leslie would go there. The 'or something' trails off perfectly. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -1630,23 +1647,22 @@
     },
     {
       "index": 50,
-      "text": "I put a beautiful man in front of an adorable man-child. You're ruining it. I put a big white stallion in front of a little brown pony. Totally uncalled for.",
+      "text": "Ron: 'Poor Tommy. He has a very frail colon.' to Justin, out of nowhere.",
       "characters": [
-        "Leslie",
-        "Tom"
+        "Ron"
       ],
       "joke_types": [
-        "escalation",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Leslie apologizing with metaphors",
-      "punchline": "Escalating to increasingly offensive animal comparisons",
-      "craft_total": 7.47,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Tom has been gone a long time in the bathroom after eating the hot pepper.",
+      "punchline": "Ron delivers a completely unnecessary and overly clinical update on Tom's digestive health to Justin, with total authority and no embarrassment.",
+      "craft_total": 7.56,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great escalation with Leslie's metaphors becoming increasingly problematic. Tom's reactions perfect.",
+      "explanation": "Pure Ron Swanson. The clinical specificity of 'frail colon' delivered with zero irony or embarrassment is quintessential character comedy. Ron would state this fact to a near-stranger because it's factual and relevant \u2014 social filters simply don't apply. Great economy.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1676,23 +1692,22 @@
     },
     {
       "index": 51,
-      "text": "Were you aware that all of the entertainment and food was provided by rec center teachers? Would I have stayed if I knew that? I don't know, would you have? Would you have?",
+      "text": "Leslie's talking-head: 'People hear about a killer party at Knope's house, they all come running.'",
       "characters": [
-        "Questioner",
-        "Ron"
+        "Leslie"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Formal hearing questioning Ron",
-      "punchline": "Ron answering every question with a question, creating circular confusion",
-      "craft_total": 7.78,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "The party has been crashed by a belly dancer and various rec center teachers.",
+      "punchline": "Leslie reframes the chaotic, obviously engineered party as organically legendary.",
+      "craft_total": 6.54,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ron moment - his anti-government philosophy in action, creating absurd bureaucratic loop.",
+      "explanation": "Leslie's self-mythologizing confessionals are a staple of the show's comedy. This is a solid example \u2014 her earnest belief in the party's organic cool is funny because we know she orchestrated all of it. Good character integration but not a particularly original construction.",
       "dialogue": [
         {
           "speaker": "Questioner",
@@ -1730,22 +1745,22 @@
     },
     {
       "index": 52,
-      "text": "Oh. No. I'm sorry. We're closed, due to betrayment.",
+      "text": "April's talking-head: 'You don't do origami every day, do ya?' followed by her confessional about the belly dancer: 'They brought in a little entertainment, thank God. That Justin, he's so boring.'",
       "characters": [
-        "Andy"
+        "April"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Someone asking for shoe shine",
-      "punchline": "Andy's made-up word 'betrayment' instead of 'betrayal'",
-      "craft_total": 7.02,
+      "setup": "The party has a belly dancer performing; April is watching.",
+      "punchline": "April's entire evaluation of Justin \u2014 who the rest of the party finds fascinating \u2014 is that he's boring, which says more about April than Justin.",
+      "craft_total": 6.97,
       "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Andy malapropism - his emotional state creating linguistic confusion.",
+      "explanation": "April's contrarianism is well-deployed here. Her boredom with the universally admired Justin is consistent characterization. 'Thank God' for the belly dancer is a nice deadpan moment.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1755,22 +1770,22 @@
     },
     {
       "index": 53,
-      "text": "Wow. Unbetrayed.",
+      "text": "Andy cuts off a young-looking guest who wants a drink: 'You're underage. I could lose my liquor license, I'm sorry.'",
       "characters": [
         "Andy"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Learning Justin didn't betray Leslie",
-      "punchline": "Andy's attempt to reverse his made-up word",
-      "craft_total": 6.8,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good callback to previous malapropism - Andy trying to correct his linguistic error.",
+      "setup": "The party is getting chaotic; various guests are mingling.",
+      "punchline": "Andy, who is working as a coat-check and is not running a licensed bar, invokes a liquor license he definitely does not have.",
+      "craft_total": 6.99,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A nice bit of Andy taking his coat-check duties very seriously and expanding his self-perceived authority. 'I could lose my liquor license' when he has no such thing is funny because it reveals Andy constructing a professional identity in real time.",
       "dialogue": [
         {
           "speaker": "Andy",
@@ -1784,23 +1799,22 @@
     },
     {
       "index": 54,
-      "text": "I had an awesome time which had nothing to do with the rec center teachers. No further questions.",
+      "text": "An accountant crashes the party demanding an evaluation of his class. His opening: 'When it comes to choosing accounting software, there's no accounting for taste.' He laughs alone.",
       "characters": [
-        "Justin",
-        "Leslie"
+        "Accounting Teacher"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "wordplay_pun",
+        "cringe_discomfort"
       ],
-      "setup": "Justin testifying about the party",
-      "punchline": "Leslie's legal-drama style conclusion to romantic testimony",
-      "craft_total": 6.97,
-      "impact_score": 6.5,
-      "quotability": 6.5,
+      "setup": "Another teacher has crashed the party to lobby for their class.",
+      "punchline": "His icebreaker is an accounting pun he finds hilarious; no one else does.",
+      "craft_total": 6.77,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Leslie treating romantic validation like legal victory - good character consistency.",
+      "explanation": "The pun itself ('no accounting for taste') is a tired one, but the joke is really about his delighted solo laughter in a room of cold silence \u2014 that's the cringe comedy. The accountant's oblivious enthusiasm is the actual punchline. Works as a type-character moment.",
       "dialogue": [
         {
           "speaker": "Justin",
@@ -1814,22 +1828,22 @@
     },
     {
       "index": 55,
-      "text": "It's every girl's dream to ask a dude how their date went under penalty of perjury.",
+      "text": "'When it comes to choosing accounting software, there's no accounting for taste.' (Teacher laughs at his own joke.)",
       "characters": [
-        "Leslie"
+        "Accounting Teacher"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "wordplay_pun",
+        "cringe_discomfort"
       ],
-      "setup": "Ann asking why Leslie requested the hearing",
-      "punchline": "Leslie's absurd romantic fantasy involving legal proceedings",
-      "craft_total": 8.22,
-      "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "The accounting teacher arrives and announces he wants an evaluation",
+      "punchline": "He delivers a pun about accounting software / 'no accounting for taste,' then laughs appreciatively at his own joke",
+      "craft_total": 5.3,
+      "impact_score": 5.25,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant Leslie moment - perfectly captures her unique blend of romance and bureaucracy. Highly quotable.",
+      "explanation": "A deliberately bad pun \u2014 the meta-joke is that this person thinks this is his best material and laughs at it himself. The pun is genuinely weak (that's intentional), but the comedy shifts to cringe when he laughs. Works as character comedy for a nerdy, oblivious instructor. The fact that it's intentionally bad limits the craft score but the cringe layer saves it from a 3.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1847,22 +1861,22 @@
     },
     {
       "index": 56,
-      "text": "there is now an official government document that proves my dinner party kicked ass.",
+      "text": "Ron: 'Well, this is great. I'm heading home, so as not to have to be here anymore.'",
       "characters": [
-        "Leslie"
+        "Ron"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Leslie explaining her real motivation",
-      "punchline": "Wanting bureaucratic validation for social success",
-      "craft_total": 8.07,
-      "impact_score": 7.5,
-      "quotability": 8.0,
+      "setup": "The accounting teacher begins a 45-minute QuickBooks presentation.",
+      "punchline": "Ron's reason for leaving is stated with perfect clarity and zero social grace: he is leaving specifically to avoid continuing to be present.",
+      "craft_total": 8.14,
+      "impact_score": 8.17,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect culmination of Leslie's character - needing official documentation for personal validation. Pure Leslie logic.",
+      "explanation": "A candidate for the episode's best one-liner. Ron's reason for leaving \u2014 phrased as 'so as not to have to be here anymore' \u2014 is simultaneously the most honest and least socially acceptable exit statement possible. The formal grammatical construction ('so as not to') combined with the blunt content is perfectly Ron. Genuinely excellent writing. Justified 8.3 craft and 8.5 impact.",
       "dialogue": [
         {
           "speaker": "Leslie",
@@ -1872,23 +1886,22 @@
     },
     {
       "index": 57,
-      "text": "I'm not gay, but you're the most incredible man I've ever met. That doesn't sound gay at all.",
+      "text": "Tom at the hearing: 'I would like to say that Leslie is incapable of using people for her own gain. Thank you, Tom. But I can't, because Leslie loves using people for her own gain.'",
       "characters": [
-        "Tom",
-        "Justin"
+        "Tom"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Tom expressing admiration for Justin",
-      "punchline": "Justin pointing out the obvious contradiction",
-      "craft_total": 6.75,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Tom appears to be preparing to defend Leslie at her hearing.",
+      "punchline": "He pivots immediately to accurately and enthusiastically confirming her guilt, having set up the defense only to knock it down.",
+      "craft_total": 7.86,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good comedic observation about Tom's unintentionally romantic declaration.",
+      "explanation": "Excellent structure \u2014 the joke is built on the classic 'set up the defense and immediately withdraw it' construction, but Tom pre-thanks himself for his own testimony ('Thank you, Tom') before undermining it. That self-congratulatory middle beat is what elevates this above a standard pivot joke. The rhythm is perfect. Justified 8.2 craft score \u2014 this is sharp, well-constructed comedy writing.",
       "dialogue": [
         {
           "speaker": "Tom",
@@ -1899,6 +1912,222 @@
           "line": "Tom, I appreciate that, but didn't you just spend the last twenty minutes complaining about how much you hate working?"
         }
       ]
+    },
+    {
+      "index": 58,
+      "text": "I would like to say that Leslie is incapable of using people for her own gain. / Thank you, Tom. / But I can't, because Leslie loves using people for her own gain.",
+      "characters": [
+        "Tom",
+        "Leslie"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Tom appears to be delivering a character defense of Leslie at the disciplinary hearing.",
+      "punchline": "The classic double-negative structure \u2014 'I would like to say X... but I can't, because Y' \u2014 delivers the opposite of the expected defense.",
+      "craft_total": 6.95,
+      "impact_score": 6.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A structurally clean joke. The 'I would like to say... but I can't' form is a well-worn comic structure, but it's executed with good rhythm here. Tom's inability to actually defend Leslie despite wanting to is funny and character-appropriate."
+    },
+    {
+      "index": 59,
+      "text": "Leslie's apology to Tom for inviting Wendy escalates: 'I put a beautiful man in front of an adorable man-child.'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Leslie is apologizing to Tom for prioritizing Justin over their friendship.",
+      "punchline": "Her metaphors escalate in specificity and become progressively more insulting to Tom, culminating in 'adorable man-child.'",
+      "craft_total": 7.51,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Adorable man-child' is a memorable characterization of Tom. Leslie's apology being itself a series of escalating insults is funny because she's completely unaware of the damage she's doing while trying to repair it. Good escalation structure."
+    },
+    {
+      "index": 60,
+      "text": "Leslie extends the metaphor: 'I put a big white stallion in front of a little brown pony.' Tom: 'Totally uncalled for.'",
+      "characters": [
+        "Leslie",
+        "Tom"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Leslie's apology has already insulted Tom with 'adorable man-child.'",
+      "punchline": "She escalates to a horse metaphor that's both racially coded and physically diminishing. Tom's 'totally uncalled for' is the perfect dry protest.",
+      "craft_total": 7.32,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The horse metaphor escalation is the peak of this running joke. The 'little brown pony' is a step too far in exactly the right direction, and Tom's measured 'totally uncalled for' is funnier than any bigger reaction would be. The joke earns its racially-tinged edge because it's clearly about Leslie's obliviousness, not malice. Good escalation payoff."
+    },
+    {
+      "index": 61,
+      "text": "Ron's talking-head about his hearing strategy: 'The only type of witness I enjoy being is a hostile one. That's why I intend to answer every one of their questions with a question.'",
+      "characters": [
+        "Ron"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ron is about to testify at Leslie's disciplinary hearing.",
+      "punchline": "Ron has pre-committed to being maximally obstructive at an official proceeding, treating hostile witness behavior as a preferred mode rather than a last resort.",
+      "craft_total": 8.1,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Ron's philosophy of governance distilled into testimony strategy. 'The only type of witness I enjoy being is a hostile one' is a perfect Ron Swanson line \u2014 it captures his libertarian contempt for institutional proceedings while revealing a surprising strategic mind. High quotability. Justified 8.1 \u2014 this is character-defining comedy writing."
+    },
+    {
+      "index": 62,
+      "text": "Ron's testimony sequence: answers every question with a question. 'Would I have stayed if I knew that?' / 'I don't know, would you have?' / 'Would you have?' / 'No. I wouldn't have.'",
+      "characters": [
+        "Ron",
+        "Committee Member"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Ron has announced his intention to answer every question with a question.",
+      "punchline": "He executes the plan, forcing the committee member into the spiral, until Ron himself accidentally answers directly ('No. I wouldn't have.'), breaking his own rule.",
+      "craft_total": 8.49,
+      "impact_score": 8.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The payoff for Ron's strategy setup is superb. The escalating question spiral is perfectly structured, and Ron accidentally breaking his own rule by answering directly is the unexpected twist that elevates the joke. The committee member being drawn into Ron's game ('I don't know, would you have?') shows the joke has momentum. Justified 8.5 \u2014 this is excellent sitcom comedy construction, making good on a setup with a structurally satisfying payoff."
+    },
+    {
+      "index": 63,
+      "text": "Ron asks if the committee member knows Latin after 'quid pro quo' is mentioned. Committee: 'Okay, thank you, Ron.' Ron: 'Are we done? Can I get a shine?'",
+      "characters": [
+        "Ron",
+        "Committee Member"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ron's testimony is wrapping up.",
+      "punchline": "Ron pivots immediately from government testimony to requesting a shoe shine, treating the entire official proceeding as a minor interruption to his day.",
+      "craft_total": 7.61,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Ron asking for a shoe shine upon conclusion of official government testimony is perfectly in character \u2014 he's there, Andy presumably is nearby, efficiency demands multi-tasking. The character logic is airtight and the request is delivered as a completely reasonable next step."
+    },
+    {
+      "index": 64,
+      "text": "Andy: 'I'm sorry. But I don't know what you're talking about. Why don't you ask your new best friend, Justin?' \u2014 then reveals he put gum in Justin's coat, calling it 'unbetrayed'",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Andy is upset with Leslie; when she apologizes, he's cold \u2014 until he reveals the gum prank actually happened",
+      "punchline": "Justin 'is probably too busy cleaning gum out of his coat pockets.' Andy declares himself 'unbetrayed.'",
+      "craft_total": 7.31,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A satisfying callback payoff. Andy went through with the prank after all, and his coinage 'unbetrayed' as a single word capturing his restored sense of dignity is a great Andy-ism. The joke rewards attentive viewers who remembered the earlier setup. 'Unbetrayed' is a minor verbal gem \u2014 the kind of malapropism/neologism that feels authentic to the character."
+    },
+    {
+      "index": 65,
+      "text": "Andy reveals someone put gum in Justin's coat pockets. 'But he's probably too busy cleaning gum out of his coat pockets.' Ron: 'Wow. Unbetrayed.'",
+      "characters": [
+        "Andy",
+        "Ron"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Andy had refused to put gum in Justin's pockets out of loyalty to Leslie. April had threatened to do it anyway.",
+      "punchline": "The gum is in the pockets, vindicating Andy's earlier loyalty while the perpetrator (April, presumably) executed the plan. Ron's 'Unbetrayed' is a perfect coinage \u2014 the reversal of Andy's 'betrayment.'",
+      "craft_total": 8.2,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A multi-layered callback that pays off two earlier jokes simultaneously: April's gum threat and Andy's 'betrayment.' Ron's coinage of 'Unbetrayed' \u2014 matching Andy's fake word with a fake antonym \u2014 is genuinely brilliant, suggesting Ron absorbed Andy's malapropism and deployed it back perfectly. The emotional resolution (Andy feels vindicated, their friendship restored) is handled through wordplay. This is exactly the kind of payoff that earns its 8+ scores."
+    },
+    {
+      "index": 66,
+      "text": "Leslie explains why she turned herself in: 'It's every girl's dream to ask a dude how their date went under penalty of perjury.'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Ann is confused about why Leslie voluntarily requested the disciplinary hearing.",
+      "punchline": "Leslie reveals she engineered the entire hearing as an elaborate way to officially depose Justin about whether he had a good time on their date \u2014 treating a government proceeding as a relationship-confirmation tool.",
+      "craft_total": 8.9,
+      "impact_score": 9.17,
+      "quotability": 10.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The episode's best joke and one of the best Leslie Knope jokes in the series. The revelation recontextualizes the entire hearing scene and is completely, perfectly in character \u2014 of course Leslie Knope would weaponize a government disciplinary proceeding to get official confirmation that her date went well. 'Under penalty of perjury' as a relationship communication tool is both absurdist and deeply true to who she is. The line is immediately quotable, the setup across the entire episode is earned, and the character integration is 10/10 \u2014 this joke could ONLY be Leslie Knope. Justified 9.1 craft \u2014 this approaches the caliber of 'Snip, snap!' in terms of character-defining comedy writing."
+    },
+    {
+      "index": 67,
+      "text": "Leslie adds: 'The most important thing is, there is now an official government document that proves my dinner party kicked ass.'",
+      "characters": [
+        "Leslie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Leslie has just explained her self-serving use of the hearing.",
+      "punchline": "She identifies the hearing's true value: an official permanent record of the party's quality, certified by the government.",
+      "craft_total": 8.4,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The perfect coda to the episode's central joke. Leslie having weaponized government infrastructure to certify her party's quality is both absurd and deeply consistent. 'Proves my dinner party kicked ass' as official government documentation is a wonderful phrase. The joke earns every bit of its high score because it's the culmination of everything the episode has built."
+    },
+    {
+      "index": 68,
+      "text": "Tom to Justin: 'I'm not gay, but you're the most incredible man I've ever met.' Justin: 'That doesn't sound gay at all.'",
+      "characters": [
+        "Tom",
+        "Justin"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Tom is wrapping up his conversation with Justin and makes a declaration of admiration.",
+      "punchline": "Justin deadpans that Tom's emphatic disclaimer has done nothing to make the statement sound less gay.",
+      "craft_total": 7.28,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A clean ironic callback joke \u2014 the denial making the thing more true is a classic structure. Justin's dry 'that doesn't sound gay at all' is well-timed. Not the most original construction but executed cleanly."
     }
   ],
   "air_date": "2010-01-21",
