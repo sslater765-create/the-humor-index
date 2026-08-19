@@ -208,32 +208,32 @@ export default async function HomePage() {
               Better jokes don&apos;t always<br />mean a funnier show.
             </h3>
             <p className="text-base text-brand-text-secondary leading-relaxed mb-8 text-center">
-              Seinfeld beats The Office on per-joke craft and on impact.
-              But The Office edges ahead on our Humor Index — because the index rewards
-              consistency and peak density. A show with fewer weak episodes beats one with
-              higher highs but more clunkers. And the gap that matters is small: from The Office
-              down, the chasing pack sits inside each other&apos;s 95% intervals.
+              Flight of the Conchords beats Seinfeld on per-joke craft and on impact.
+              But Seinfeld edges ahead on our Humor Index — because the index rewards
+              density and consistency. Seinfeld lands 3.57 jokes a minute to the Conchords&apos;
+              2.47, and across 180 episodes that volume outweighs a per-joke edge of about
+              a tenth of a point.
             </p>
             <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto mb-8 pb-8 border-b border-brand-border">
               <div className="text-center">
-                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">The Office</p>
-                <p className="font-serif italic text-3xl sm:text-4xl text-brand-gold leading-none">79.3</p>
-                <p className="text-[10px] text-brand-text-muted mt-2">Craft 6.88 · Impact 6.69</p>
+                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Seinfeld</p>
+                <p className="font-serif italic text-3xl sm:text-4xl text-brand-gold leading-none">94.5</p>
+                <p className="text-[10px] text-brand-text-muted mt-2">Craft 7.47 · Impact 7.39</p>
               </div>
               <div className="text-center">
-                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Seinfeld</p>
-                <p className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-none">77.0</p>
-                <p className="text-[10px] text-brand-text-muted mt-2">Craft 7.15 · Impact 6.44</p>
+                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Conchords</p>
+                <p className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-none">92.0</p>
+                <p className="text-[10px] text-brand-text-muted mt-2">Craft 7.58 · Impact 7.44</p>
               </div>
               <div className="text-center">
                 <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Craft Gap</p>
-                <p className="font-serif italic text-3xl sm:text-4xl text-brand-blue leading-none">+0.28</p>
-                <p className="text-[10px] text-brand-text-muted mt-2">Seinfeld higher per joke</p>
+                <p className="font-serif italic text-3xl sm:text-4xl text-brand-blue leading-none">+0.11</p>
+                <p className="text-[10px] text-brand-text-muted mt-2">Conchords higher per joke</p>
               </div>
             </div>
             <div className="text-center">
-              <Link href="/blog/seinfeld-vs-the-office" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
-                Read the full analysis →
+              <Link href="/methodology" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
+                See how the score works →
               </Link>
             </div>
           </div>

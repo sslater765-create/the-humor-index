@@ -14,6 +14,92 @@ const nextConfig = {
       destination: '/shows/broad-city/',
       permanent: true,
     },
+    // Retired 2026-08-19: posts built on pre-rescore scores that contradict current data.
+    {
+      source: '/blog/freaks-and-geeks-launch',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/chappelles-show-launch',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/curb-your-enthusiasm-launch',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/larry-sanders-launch',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/taxi-launch',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/schitts-creek-last-on-board-first-on-impact',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/arrested-development-takes-the-crown',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/arrested-development-craft-leaderboard',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/30-rock-takes-the-crown',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/display-scale-recalibration',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/comedy-war',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/seinfeld-vs-the-office',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/funniest-characters-cross-show',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/parks-passes-office',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/humor-index-explorer',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/community-gas-leak-year',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/humor-index-vs-imdb-three-ways',
+      destination: '/blog/',
+      permanent: true,
+    },
   ],
   headers: async () => [
     {

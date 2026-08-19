@@ -65,7 +65,7 @@ the-humor-index/               ← Next.js web app (this repo, public on Vercel)
 
 - **ICC ≈ 0.28 on single-run scoring** → ~72% of episode-level variance is scorer noise. Blog post: `scorer-noise-floor`.
 - **Show-level 95% CIs overlap heavily** for top-tier sitcoms. Seinfeld [77.8, 80.8], Office 80.2, Friends 78.7 — all statistically indistinguishable. Blog post: `bayesian-credible-intervals`.
-- **Format coefficient was dropped**: an earlier correction penalizing single-camera vs multi-cam was tested via Bayesian model and found indistinguishable from zero. Reasoning is at `/blog/seinfeld-vs-the-office` and `/methodology` (sections "The Laugh Track Correction" and "Why We Don't Adjust for Format").
+- **Format coefficient was dropped**: an earlier correction penalizing single-camera vs multi-cam was tested via Bayesian model and found indistinguishable from zero. Reasoning is at `/methodology` (sections "The Laugh Track Correction" and "Why We Don't Adjust for Format").
 - **No external validation**: scores have not been validated against Nielsen, human-expert panel, or audience laughter data. This is honestly one AI's aesthetic judgment applied systematically. Product positioning should match that framing.
 
 ## Current data state (2026-05-12)
