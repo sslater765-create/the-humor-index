@@ -233,7 +233,7 @@ export default async function MethodologyPage() {
             The original scores are preserved on each page as <code className="text-brand-text-secondary">humor_index_v1</code> for
             transparency. <span className="text-brand-text-secondary">Subsequent update (April 18, 2026):</span> we then
             discovered that Jerry&apos;s stand-up bits at The Improv were being scored as sitcom comedy.
-            Applying a 0.30 standup weighting and rescoring all 172 Seinfeld episodes with 3-run consensus
+            Applying a 0.30 standup weighting and rescoring all 168 scored Seinfeld episodes with 3-run consensus
             moved Seinfeld from 83.9 → 77.8. <span className="text-brand-text-secondary">Reconciliation (May 25, 2026):</span> as
             new shows were added the live leaderboard drifted from the canonical aggregation, so we re-aggregated
             every scored show with one consistent method and added bootstrap 95% confidence intervals.

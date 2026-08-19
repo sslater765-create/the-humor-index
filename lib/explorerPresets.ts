@@ -37,13 +37,15 @@ export const EXPLORER_CONFIG: Record<string, ExplorerConfig> = {
   // cut gathers the canonical gut-punch episodes (Jurassic Bark, etc.) — and the
   // finding is that they score BELOW the series average: funniest != most beloved.
   // The revival/original cuts tie to the launch story (the Hulu run held up).
+  // Season numbers here follow the 2026-08-19 renumbering: the Hulu revival moved
+  // from S11–S13 to S8–S10 when the duplicate ingest was removed.
   futurama: {
-    eras: { 11: 'Hulu revival', 12: 'Hulu revival', 13: 'Hulu revival' },
+    eras: { 8: 'Hulu revival', 9: 'Hulu revival', 10: 'Hulu revival' },
     signature: 'tearjerkers',
     storyPresets: [
-      { id: 'tearjerkers', label: 'Bring tissues (the tearjerkers)', blurb: 'Jurassic Bark, Luck of the Fryrish, The Sting, Meanwhile — Futurama’s famous gut-punches. They score below the series average, because funniest isn’t the same as most beloved.', pick: ep => ['3-10', '5-2', '5-9', '5-16', '6-6', '6-7', '10-13'].includes(`${ep.season}-${ep.episode_number}`) },
-      { id: 'revival', label: 'The Hulu revival (S11–S13)', blurb: 'The 2023–2025 return — it scores within a hair of the classic run', pick: ep => ep.season >= 11 },
-      { id: 'original', label: 'The original run (S1–S10)', blurb: 'Fox, the four movies, and the Comedy Central era (1999–2013)', pick: ep => ep.season <= 10 },
+      { id: 'tearjerkers', label: 'Bring tissues (the tearjerkers)', blurb: 'Jurassic Bark, Luck of the Fryrish, The Sting, Meanwhile — Futurama’s famous gut-punches. They score below the series average, because funniest isn’t the same as most beloved.', pick: ep => ['3-10', '5-2', '5-9', '5-16', '6-6', '6-7', '7-16'].includes(`${ep.season}-${ep.episode_number}`) },
+      { id: 'revival', label: 'The Hulu revival (S8–S10)', blurb: 'The 2023–2025 return — per joke it is almost the same show, though it gives up about three points at the episode level', pick: ep => ep.season >= 8 },
+      { id: 'original', label: 'The original run (S1–S7)', blurb: 'Fox, the four movies, and the Comedy Central era (1999–2013)', pick: ep => ep.season <= 7 },
     ],
   },
   // Dan Harmon ran S1–3, was fired before S4 ("the gas-leak year"),
