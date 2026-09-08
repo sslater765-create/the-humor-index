@@ -42,7 +42,10 @@ def popup(v):
     bw,bh=tw(d,big,fbig); sw,sh=tw(d,sub,fsub)
     padx,pady=54,40; gap=26
     boxw=max(bw,sw)+padx*2; boxh=bh+gap+sh+pady*2
-    x0=(W-boxw)//2; y0=int(H*0.40)
+    # A 16:9 source centred at full width occupies roughly y=656..1263, so the
+    # band above it is dead letterbox. Put the popup there: still big, but it
+    # never covers the performance at the moment the joke lands.
+    x0=(W-boxw)//2; y0=int(H*0.205)
     d.rounded_rectangle([x0+7,y0+9,x0+boxw+7,y0+boxh+9],28,fill=SHADOW)
     d.rounded_rectangle([x0,y0,x0+boxw,y0+boxh],28,fill=(17,17,17,242),outline=GOLD,width=5)
     d.text(((W-bw)//2,y0+pady-4),big,font=fbig,fill=GOLD)
