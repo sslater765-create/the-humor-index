@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "check": "next lint && tsc --noEmit",
-    "test": "vitest run"
+    "check": "next lint && tsc --noEmit && npm run check:data",
+    "test": "vitest run",
+    "check:data": "node scripts/check-data.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",
