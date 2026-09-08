@@ -53,13 +53,18 @@ def popup(v):
     im.save(f'{OUT}/popup_{v["n"]:02d}.png')
 
 def caption(v):
-    """Burned-in punchline caption, bottom third, yellow on a dark plate."""
+    """Burned-in punchline, yellow on a dark plate, anchored to the bottom.
+
+    Anchoring to the bottom rather than a fixed top means a four-line quote
+    grows upward into the letterbox instead of running off the frame or
+    colliding with the @handle."""
     im=Image.new('RGBA',(W,H),(0,0,0,0)); d=ImageDraw.Draw(im)
-    fo,lines=wrap_fit(d,v['burned_caption'],FB,W-170,72,3)
+    fo,lines=wrap_fit(d,v['burned_caption'],FB,W-170,72,4)
     lh=tw(d,'Ay',fo)[1]+22
     total=lh*len(lines)
-    y=int(H*0.735)
-    d.rounded_rectangle([60,y-34,W-60,y+total+26],22,fill=(0,0,0,170))
+    bottom=H-190                      # clear of the @thehumorindex handle
+    y=bottom-total
+    d.rounded_rectangle([60,y-34,W-60,bottom+26],22,fill=(0,0,0,170))
     for i,l in enumerate(lines):
         lw=tw(d,l,fo)[0]
         d.text(((W-lw)//2+3,y+i*lh+3),l,font=fo,fill=(0,0,0,220))

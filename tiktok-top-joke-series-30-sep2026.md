@@ -14,7 +14,7 @@ The rescore changed the answers. Five of the six videos from the May run now nam
 | Seinfeld | "No soup for you!" | "They're real and they're spectacular." (9.82) |
 | Parks & Rec | "Give me all the bacon and eggs" | Duke Silver reveal (9.48) |
 | Arrested Development | "He's going to be 'all right'" | "And then a seal bites off his hand." (9.88) |
-| 30 Rock | "A baby give another baby a tattoo" | "He's going to Jack!" (9.57) |
+| 30 Rock | "A baby give another baby a tattoo" | "He's gonna Jack!" (9.57) |
 | Schitt's Creek | "The venom of a silkworm" | "You're my Mariah Carey." (9.45) |
 | Friends | "Take thee, Rachel... Emily!" | unchanged, still #1 |
 
@@ -154,11 +154,11 @@ Bacon and eggs dropped after the August rescore. Skim milk is the top actual lin
 
 ---
 
-## #12 — 30 ROCK — "He's going to Jack!"
+## #12 — 30 ROCK — "He's gonna Jack!"
 
 **Post:** Fri Sep 11, 7:30 PM ET
 
-**The joke:** S03E16 "Apollo, Apollo" — Jack laughs at a commercial, trails off reaching for a comparison, and a bystander yells "Everybody, back up! Get out of the way! He's going to Jack!" Combined **9.57** (craft 9.38, impact 9.75, quotability 9.5).
+**The joke:** S03E16 "Apollo, Apollo" — Jack laughs at a commercial, trails off reaching for a comparison, and a bystander yells "Everybody, back up! Get out of the way! He's gonna Jack!" Combined **9.57** (craft 9.38, impact 9.75, quotability 9.5).
 
 **YouTube search:** "30 rock he's going to jack" OR "apollo apollo jack laughing"
 
@@ -168,7 +168,7 @@ Bacon and eggs dropped after the August rescore. Skim milk is the top actual lin
 
 - Big: **CRAFT 9.38 / IMPACT 9.75**
 - Sub: #1 OF 11,421 30 ROCK JOKES
-- Caption burned in: "HE'S GOING TO JACK!"
+- Caption burned in: "HE'S GONNA JACK!"
 
 **End card:**
 
@@ -306,7 +306,9 @@ Sunny's highest-scored episode is The Gang Goes to Hell Part 1 (92.8). "I eat st
 
 **Post:** Tue Sep 15, 7:30 PM ET
 
-**The joke:** S04E12 "Singles Week" — David to Patrick. Combined **9.45** (craft 9.39, impact 9.50, quotability 10.0). Highest-scored joke in the show, and the highest quotability score Schitt's Creek has.
+**The joke:** S04E12 "Singles Week" — **Patrick** to David, after David admits he has only said "I love you" twice before. Combined **9.45** (craft 9.39, impact 9.50, quotability 10.0). Highest-scored joke in the show, and its highest quotability score.
+
+**Correction baked in:** the scored data credits this line to David. It is Patrick's. Verified against the episode transcript. The video says so out loud, because a show this beloved will catch it instantly.
 
 **YouTube search:** "you're my mariah carey schitts creek"
 
@@ -320,21 +322,23 @@ Sunny's highest-scored episode is The Gang Goes to Hell Part 1 (92.8). "I eat st
 
 **End card:**
 
-Schitt's Creek has 80 episodes and 6,088 jokes. The highest-scored one is a love confession.
+Schitt's Creek has 80 episodes and 6,088 jokes. The highest-scored one belongs to Patrick. Not David. Not Moira.
 
-**David > Moira.** Fight me.
+**Patrick carried that relationship.** Fight me.
 
 **Caption:**
 
-schitt's creek has 6,088 jokes. our AI scored every one. the #1 isn't a moira word. it's david, being sincere, exactly once.
+schitt's creek has 6,088 jokes. our AI scored every one. the #1 isn't a moira word and it isn't david.
 
-the silkworm line dropped to #12 after our rescore.
+it's patrick. one sincere sentence.
+
+(our data had this filed under david. it's patrick's line. we checked the transcript and fixed it.)
 
 #schittscreek #davidrose #danlevy #patrickbrewer #sitcom
 
 **Pinned comment:**
 
-We had the silkworm line as #1 in May. We rescored all 21 shows on one model in August and it moved. Moira's top joke is now "Fold in the cheese" at 9.06, which is getting its own video. Reply with a Moira-ism.
+Two corrections in one video: the silkworm line was our #1 in May and dropped after the August rescore, and we had this line credited to David when it is Patrick's. Moira's best is now "Fold in the cheese" at 9.06, getting its own video. Reply with a Moira-ism.
 
 ---
 
@@ -504,7 +508,7 @@ Futurama beats The Simpsons on jokes per minute (3.83 vs 3.46) but loses on over
 
 - Big: **CRAFT 8.65 / IMPACT 9.17**
 - Sub: TOP CURB JOKE WE CAN LEGALLY SHOW YOU
-- Caption burned in: "FATWA?! NO, C**KSUCKER. FOISTED!"
+- Caption burned in: "FOISTED!"
 
 **End card:**
 
@@ -616,7 +620,7 @@ The show's actual #1 is a 9.85 from Clayton Bigsby and there is no version of it
 
 - Big: **CRAFT 9.21 / IMPACT 9.50**
 - Sub: #1 OF 1,614 CONCHORDS JOKES
-- Caption burned in: "WHO ORGANIZED ALL OF MY EX-GIRLFRIENDS INTO A CHOIR?"
+- Caption burned in: "WHO ORGANIZED ALL OF MY EX-GIRLFRIENDS INTO A CHOIR AND GOT THEM TO SING?"
 
 **End card:**
 
@@ -678,11 +682,13 @@ If you've never seen it: this is the show that made the cringe-workplace format 
 
 **Post:** Fri Sep 25, 7:30 PM ET
 
-**The joke:** S04E10 "Friendiversary" — Abbi's deathbed confession to Ilana. Combined **9.42** (craft 9.34, impact 9.50, quotability 10.0). Highest-scored joke in the show.
+**The joke:** S04E10 "Friendiversary" — **Ilana** to Abbi, hiding in a stranger's closet and convinced they are about to die: "Abbi, I have to tell you something. This morning, I was the horse." Combined **9.42** (craft 9.34, impact 9.50, quotability 10.0). Highest-scored joke in the show.
 
-**YouTube search:** "broad city i was the horse" OR "friendiversary abbi confession"
+**Correction baked in:** the scored data credits this to Abbi. Ilana says it. Verified against the episode.
 
-**Clip target:** 14–16s. The build matters. Start on "I want to tell you something before we die."
+**YouTube search:** "broad city i was the horse" OR "friendiversary ilana horse"
+
+**Clip target:** 14–16s. The build matters. Start on "Abbi, I have to tell you something."
 
 **Score popup:**
 
@@ -944,7 +950,7 @@ Tracy has three of 30 Rock's top ten jokes. Jenna has two. Liz is in two of them
 
 - Big: **CRAFT 9.42 / QUOT 10.0**
 - Sub: #2 OF 9,873 — HIGHEST-SCORED PARKS LINE
-- Caption burned in: "SKIM MILK IS WATER THAT'S LYING ABOUT BEING MILK"
+- Caption burned in: "SKIM MILK. WHICH IS WATER THAT'S LYING ABOUT BEING MILK."
 
 **End card:**
 
