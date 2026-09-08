@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getShow, getEpisodes, getEpisodeDetail } from '@/lib/data';
-import { formatIndex } from '@/lib/scoring';
+import { formatIndex, parseStandoutIds } from '@/lib/scoring';
 import { getTier } from '@/lib/tiers';
 import { SHOW_SLUGS } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
@@ -119,8 +119,12 @@ export default async function EpisodePage({
   const prevEp = currentIdx > 0 ? seasonEpisodes[currentIdx - 1] : null;
   const nextEp = currentIdx < seasonEpisodes.length - 1 ? seasonEpisodes[currentIdx + 1] : null;
 
-  const standoutJokes = detail.jokes.filter(j => detail.standout_joke_ids.includes(j.id));
-  const regularJokes = detail.jokes.filter(j => !detail.standout_joke_ids.includes(j.id));
+  // standout_joke_ids is a JSON-encoded string in the data and jokes are keyed
+  // by `index`, not `id`. Matching on j.id ran .includes() against a string and
+  // never matched, so the standout section never rendered on any episode.
+  const standoutIds = new Set(parseStandoutIds(detail.standout_joke_ids));
+  const standoutJokes = detail.jokes.filter(j => standoutIds.has(j.index));
+  const regularJokes = detail.jokes.filter(j => !standoutIds.has(j.index));
 
   // Unique, data-driven comedy summary for each episode (SEO + thin-content fix).
   const epTier = getTier(detail.humor_index);
@@ -357,7 +361,7 @@ export default async function EpisodePage({
             </p>
             <div className="space-y-3">
               {topJokes.map(joke => (
-                <JokeRow key={joke.id} joke={joke} isStandout showSlug={params.slug} />
+                <JokeRow key={joke.index} joke={joke} isStandout showSlug={params.slug} />
               ))}
             </div>
           </section>
@@ -372,7 +376,7 @@ export default async function EpisodePage({
           </p>
           <div className="space-y-3">
             {standoutJokes.map(joke => (
-              <JokeRow key={joke.id} joke={joke} isStandout showSlug={params.slug} />
+              <JokeRow key={joke.index} joke={joke} isStandout showSlug={params.slug} />
             ))}
           </div>
         </section>
@@ -390,7 +394,7 @@ export default async function EpisodePage({
           </summary>
           <div className="space-y-2">
             {regularJokes.map(joke => (
-              <JokeRow key={joke.id} joke={joke} showSlug={params.slug} />
+              <JokeRow key={joke.index} joke={joke} showSlug={params.slug} />
             ))}
           </div>
         </details>

@@ -87,7 +87,9 @@ export interface EpisodeScore {
   avg_craft: number;
   avg_impact: number;
   total_jokes: number;
-  dominant_joke_types: JokeType[];
+  // Stored in the episode JSON as a JSON-encoded string; normalise with
+  // parseJokeTypes() from lib/scoring rather than indexing it directly.
+  dominant_joke_types?: JokeType[] | string;
   air_date?: string;
   imdb_rating?: number;
   imdb_votes?: number;
@@ -100,9 +102,12 @@ export interface EpisodeScore {
 }
 
 export interface Joke {
-  id: number;
-  joke_index: number;
-  timestamp_estimate: string;
+  // The episode JSON keys this `index` (1-based, unique within the episode).
+  // `id` is a global joke id that only some generated datasets carry.
+  index: number;
+  id?: number;
+  joke_index?: number;
+  timestamp_estimate?: string;
   text: string;
   characters: string[];
   joke_types: JokeType[];
@@ -111,8 +116,8 @@ export interface Joke {
   craft_total: number;
   impact_score: number;
   quotability: number;
-  rewatch_bonus: boolean;
-  is_callback: boolean;
+  rewatch_bonus: number | boolean;
+  is_callback: number | boolean;
   callback_reference?: string;
   explanation: string;
 }
@@ -120,7 +125,8 @@ export interface Joke {
 export interface EpisodeDetail extends EpisodeScore {
   jokes: Joke[];
   weakest_section: string;
-  standout_joke_ids: number[];
+  // Also JSON-encoded in the data; normalise with parseStandoutIds().
+  standout_joke_ids: number[] | string;
   tmdb_overview?: string;
   guest_stars?: string[];
 }

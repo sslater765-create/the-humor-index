@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { scoreToColor, scoreToGrade, formatIndex, formatJPM } from '@/lib/scoring';
+import { scoreToColor, scoreToGrade, formatIndex, formatJPM, parseJokeTypes, parseStandoutIds } from '@/lib/scoring';
 import { getTier, sameTier, tierIsUncertain } from '@/lib/tiers';
 import { archetypeBySlug, ARCHES, tileText } from '@/lib/comedyDna';
 import { canonical } from '@/lib/seo';        // proves the re-export works
@@ -82,5 +82,45 @@ describe('url helpers', () => {
   });
   it('seo re-exports the same canonical helper', () => {
     expect(canonical('/faq')).toBe('https://www.thehumorindex.com/faq/');
+  });
+});
+
+// Regression tests for the Sep 2026 data/display mismatch: both of these fields
+// are stored as JSON-encoded strings, so the app indexed into the string itself.
+// dominant_joke_types?.[0] yielded "[" and standout_joke_ids.includes(j.id) did
+// a substring match that never hit, so no episode ever showed standout jokes.
+describe('parseJokeTypes', () => {
+  it('parses the JSON-encoded string the episode data actually stores', () => {
+    expect(parseJokeTypes('["character_comedy", "escalation"]')).toEqual(['character_comedy', 'escalation']);
+  });
+  it('passes a real array straight through', () => {
+    expect(parseJokeTypes(['absurdist'])).toEqual(['absurdist']);
+  });
+  it('never returns a bare "[" the way string indexing did', () => {
+    expect(parseJokeTypes('["character_comedy"]')[0]).toBe('character_comedy');
+  });
+  it('returns [] for missing or malformed values instead of throwing', () => {
+    expect(parseJokeTypes(undefined)).toEqual([]);
+    expect(parseJokeTypes(null)).toEqual([]);
+    expect(parseJokeTypes('not json')).toEqual([]);
+    expect(parseJokeTypes('{"a":1}')).toEqual([]);
+  });
+});
+
+describe('parseStandoutIds', () => {
+  it('parses the JSON-encoded string form', () => {
+    expect(parseStandoutIds('[38, 20, 24]')).toEqual([38, 20, 24]);
+  });
+  it('passes a real array straight through', () => {
+    expect(parseStandoutIds([1, 2])).toEqual([1, 2]);
+  });
+  it('matches jokes by index, which the old .includes(j.id) never did', () => {
+    const jokes = [{ index: 20 }, { index: 24 }, { index: 99 }];
+    const ids = new Set(parseStandoutIds('[38, 20, 24]'));
+    expect(jokes.filter(j => ids.has(j.index)).map(j => j.index)).toEqual([20, 24]);
+  });
+  it('returns [] for missing or malformed values', () => {
+    expect(parseStandoutIds(undefined)).toEqual([]);
+    expect(parseStandoutIds('nope')).toEqual([]);
   });
 });

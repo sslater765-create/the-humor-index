@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { EpisodeScore } from '@/lib/types';
 import { scoreToColor, formatIndex } from '@/lib/scoring';
-import { JOKE_TYPE_LABELS } from '@/lib/scoring';
+import { JOKE_TYPE_LABELS, parseJokeTypes } from '@/lib/scoring';
 
 interface Props {
   episode: EpisodeScore;
@@ -20,7 +20,9 @@ function formatAirDate(raw: string): string {
 }
 
 export default function EpisodeRow({ episode, rank, showSlug }: Props) {
-  const dominantType = episode.dominant_joke_types?.[0];
+  // dominant_joke_types is a JSON-encoded string in the data, so indexing it
+  // directly returned the character "[" (or undefined when the field is absent).
+  const dominantType = parseJokeTypes(episode.dominant_joke_types)[0];
   const slug = showSlug || episode.slug || '';
   const href = slug
     ? `/shows/${slug}/${episode.season}/${episode.episode_number}`
@@ -41,10 +43,10 @@ export default function EpisodeRow({ episode, rank, showSlug }: Props) {
               {episode.title}
             </span>
           </div>
-          {dominantType && JOKE_TYPE_LABELS[dominantType] && (
+          {dominantType && JOKE_TYPE_LABELS[dominantType as keyof typeof JOKE_TYPE_LABELS] && (
             <div className="flex items-center gap-3 mt-0.5">
               <span className="text-xs text-brand-text-muted bg-brand-surface border border-brand-border rounded px-1.5 py-0.5 hidden sm:inline">
-                {JOKE_TYPE_LABELS[dominantType]}
+                {JOKE_TYPE_LABELS[dominantType as keyof typeof JOKE_TYPE_LABELS]}
               </span>
             </div>
           )}

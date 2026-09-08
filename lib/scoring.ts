@@ -82,3 +82,35 @@ export function formatJPM(jpm: number): string {
 export function formatIndex(index: number): string {
   return index.toFixed(1);
 }
+
+
+/**
+ * `dominant_joke_types` and `standout_joke_ids` are stored in the episode JSON
+ * as JSON-encoded strings, not arrays. Indexing them directly yields characters
+ * (or, for `.includes()`, a substring match), so always normalise first.
+ */
+export function parseJokeTypes(raw: unknown): string[] {
+  if (Array.isArray(raw)) return raw.filter((t): t is string => typeof t === 'string');
+  if (typeof raw === 'string') {
+    try {
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed.filter((t): t is string => typeof t === 'string') : [];
+    } catch {
+      return [];
+    }
+  }
+  return [];
+}
+
+export function parseStandoutIds(raw: unknown): number[] {
+  if (Array.isArray(raw)) return raw.filter((n): n is number => typeof n === 'number');
+  if (typeof raw === 'string') {
+    try {
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed.filter((n): n is number => typeof n === 'number') : [];
+    } catch {
+      return [];
+    }
+  }
+  return [];
+}
