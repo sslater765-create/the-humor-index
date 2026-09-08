@@ -964,13 +964,13 @@ The #1 Parks joke is a saxophone. This is the highest-scored thing anyone actual
 
 ron swanson has six of the eight highest-scored jokes in parks & rec.
 
-leslie has one. tom has none.
+leslie has none. tom has none. april has one and it is better than anything leslie says.
 
 #parksandrec #ronswanson #nickofferman #skimmilk #sitcom
 
 **Pinned comment:**
 
-Leslie's top joke is "Turns out the crotch blinder was inside you all along" at 9.28. Ron dominating this hard was not a thumb on the scale, it's just what the rubric rewards. Reply with a moment.
+April holds #4 with "Sincerely, Satan" (9.39). Leslie's own best is 9.04, outside the top eight entirely, which I did not expect from the lead. Ron dominating this hard is not a thumb on the scale, it is what the rubric rewards. Reply with a moment.
 
 ---
 
