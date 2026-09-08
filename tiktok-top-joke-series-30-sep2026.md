@@ -982,7 +982,7 @@ April holds #4 with "Sincerely, Satan" (9.39). Leslie's own best is 9.04, outsid
 
 **YouTube search:** "i've made a huge mistake michael bluth" OR "key decisions gob marta"
 
-**Clip target:** 12–14s. First utterance, not a compilation. The compilation kills it.
+**Clip target:** 12–14s. **Michael's**, at the very end of the episode after Marta leaves. GOB says the line first in this same episode, in the prison, and that is the more famous utterance but it is not the one scored here. Not a compilation.
 
 **Score popup:**
 
