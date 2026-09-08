@@ -15,7 +15,7 @@ import path from 'node:path';
 
 const DATA = path.join(process.cwd(), 'public', 'data');
 const EP_FILE = /^s(\d{2})e(\d{2})\.json$/;
-const DUPE_THRESHOLD = 0.4;   // share of the smaller episode's jokes
+const DUPE_THRESHOLD = 0.25;  // share of the smaller episode's jokes
 const MIN_JOKE_LEN = 15;      // ignore very short lines when fingerprinting
 
 const errors = [];
@@ -34,7 +34,15 @@ const warn = (m) => warnings.push(m);
 const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf-8'));
 const norm = (t) => String(t ?? '').toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
 // Two-parters legitimately share material; strip the part marker and compare stems.
-const stem = (t) => norm(String(t ?? '').replace(/\s*[:,]?\s*\(?\s*(part\s*)?(1|2|one|two|i|ii)\s*\)?\s*$/i, ''));
+const stem = (t) => norm(
+  String(t ?? '').replace(
+    // Only strip a trailing part marker that is actually marked as one: after a
+    // colon/comma/paren, after the word "part", or a bare trailing 1/2. Without
+    // this the old pattern ate the "One" in "The Last One".
+    /(\s*[:,(]\s*(part\s*)?(1|2|one|two|i|ii)\s*\)?|\s+part\s+(1|2|one|two|i|ii)|\s+(1|2))\s*$/i,
+    '',
+  ),
+);
 
 const shows = readJson(path.join(DATA, 'shows.json'));
 const scored = shows.filter((s) => (s.humor_index ?? 0) > 0);

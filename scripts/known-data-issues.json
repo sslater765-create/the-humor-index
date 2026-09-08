@@ -1,19 +1,28 @@
 {
-  "_comment": "Pairs of episodes already known to share a transcript, found during the 2026-09-08 repair. The checker reports these as KNOWN instead of failing, so it stays useful for catching new breakage. Delete an entry once that pair is rescored from correct sources; the checker will then fail if it regresses.",
+  "_comment": "Pairs of episodes already known to share a transcript, found during the 2026-09-08 repair. The checker reports these as KNOWN instead of failing, so it stays useful for catching new breakage. Delete an entry once that pair is rescored from correct sources; the checker will then fail if it regresses. See rescore-worklist.md for which episode in each pair is the corrupted one.",
   "shared_transcripts": [
-    "seinfeld S4E9|S5E2",
-    "seinfeld S4E16|S4E17",
-    "seinfeld S5E2|S5E3",
-    "seinfeld S5E13|S5E14",
+    "arrested-development S1E7|S1E8",
     "broad-city S1E5|S1E6",
-    "the-office S4E8|S4E12",
-    "the-office S4E10|S4E14",
-    "the-office S8E6|S8E7",
+    "friends S1E18|S1E19",
+    "futurama S6E12|S7E12",
     "its-always-sunny S4E5|S4E7",
-    "the-simpsons S8E14|S8E15",
+    "seinfeld S2E6|S2E10",
+    "seinfeld S4E16|S4E17",
+    "seinfeld S4E9|S5E2",
+    "seinfeld S4E9|S5E3",
+    "seinfeld S5E13|S5E14",
+    "seinfeld S5E2|S5E3",
+    "seinfeld S7E15|S7E16",
+    "the-office S3E19|S3E20",
+    "the-office S4E10|S4E14",
+    "the-office S4E3|S4E5",
+    "the-office S4E8|S4E12",
+    "the-office S5E20|S6E17",
+    "the-office S7E12|S7E13",
+    "the-office S8E6|S8E7",
     "the-simpsons S14E16|S14E17",
     "the-simpsons S15E1|S15E2",
     "the-simpsons S17E5|S17E8",
-    "futurama S6E12|S7E12"
+    "the-simpsons S8E14|S8E15"
   ]
 }
