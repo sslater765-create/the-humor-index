@@ -8,10 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "check": "next lint && tsc --noEmit && npm run check:data && npm run check:ranks",
+    "check": "next lint && tsc --noEmit && npm run check:data && npm run check:claims",
     "test": "vitest run",
     "check:data": "node scripts/check-data.mjs",
-    "check:ranks": "python3 video/check_ranks.py"
+    "check:claims": "python3 video/check_claims.py"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",

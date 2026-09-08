@@ -73,6 +73,28 @@ score), `endcard`. To change wording, edit the markdown, then:
 `make_cards.py` auto-sizes every string, so longer copy shrinks to fit rather
 than overflowing.
 
+## After a rescore
+
+Every figure in the scripts is a snapshot of the data: combined scores, craft
+and impact, ranks, episode and joke counts, and the cross-show comparisons. A
+rescore moves all of it. When new data lands:
+
+    npm run check:claims
+
+It verifies 193 figures across the 30 scripts and names every video that no
+longer matches. Then fix the wording in the markdown and regenerate:
+
+    python3 video/parse_scripts.py     # markdown -> videos.json
+    python3 video/make_cards.py        # add numbers to rebuild only some
+    python3 video/make_publer_csv.py
+
+Any video already rendered needs re-rendering after its cards change. The clips
+and timestamps do not change, so that is one command each.
+
+It is deliberately conservative: it only checks unambiguous phrasings, so a
+sentence it cannot resolve is left unchecked rather than reported as an error.
+`-v` lists what it skipped.
+
 ## Scheduling
 
 `video/publer.csv` is all 30 rows in Publer's import format: the scheduled slot
