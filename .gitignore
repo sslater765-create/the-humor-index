@@ -35,3 +35,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# TikTok render pipeline: source clips and renders stay local
+video/clips/
+video/out/
+video/_preview/
