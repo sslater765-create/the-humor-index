@@ -50,7 +50,9 @@ The other thing to know: five shows can't lead with their actual #1. Chappelle, 
 
 **Post:** Tue Sep 8, 7:30 PM ET
 
-**The joke:** S09E03 "Andy's Ancestry" — Dwight hires an Asian actor to impersonate Jim. The actor holds the bit through Dwight's entire interrogation. Combined **9.34** (craft 9.18, impact 9.50, quotability 9.0).
+**The joke:** S09E03 "Andy's Ancestry" — Dwight hires an Asian actor to impersonate Jim. The actor holds the bit through Dwight's entire interrogation. Combined **9.34** (craft 9.18, impact 9.50, quotability 9.0). **#2 in the show.**
+
+**Rank changed on 2026-09-08.** Repairing the Dinner Party record put "Snip, snap! Snip, snap!" (9.62) at #1, where it belongs. This was written when Asian Jim was #1 and has been corrected.
 
 **YouTube search:** "asian jim" OR "the office asian jim scene"
 
@@ -59,26 +61,26 @@ The other thing to know: five shows can't lead with their actual #1. Chappelle, 
 **Score popup:**
 
 - Big: **CRAFT 9.18 / IMPACT 9.50**
-- Sub: TOP-SCORED OFFICE JOKE OF 9,896
+- Sub: #2 OF 9,896 OFFICE JOKES
 - Caption burned in: "HATS OFF TO YOU FOR NOT SEEING RACE"
 
 **End card:**
 
-The Office has 201 episodes and 9,896 jokes. Our AI rescored every one of them last month. This is the new #1.
+The Office has 201 episodes and 9,896 jokes. #1 is Dinner Party, the one you expected. #2 is this. Season nine.
 
 **Season 9 > Season 3.** Fight me.
 
 **Caption:**
 
-we rescored all 9,896 jokes in the office. the #1 is not from the golden years. it's asian jim, season 9.
+we scored all 9,896 jokes in the office. #1 is dinner party. no surprise there.
 
-everyone assumes the answer lives in seasons 2 through 4. it doesn't.
+#2 is asian jim. season nine. the season everyone tells you to skip.
 
 #theoffice #asianjim #dwightschrute #jimhalpert #sitcom #tvtok
 
 **Pinned comment:**
 
-Season 2-4 truthers: the best Office *episodes* really are clustered early. The best single *joke* isn't. Those are different questions and the data splits them. Reply with a moment and I'll give you its number.
+Full disclosure: Dinner Party was broken in our own database until today. Two records, one with the right episode info and the wrong transcript, one with the right jokes filed under the wrong episode. Fixed this afternoon, and it went straight to #1 at 9.62. Asian Jim is #2 at 9.34. Reply with a moment and I'll give you its number.
 
 ---
 
@@ -832,7 +834,7 @@ These nine revisit shows that already ran this month, this time with the #2 joke
 
 **Post:** Tue Sep 29, 7:30 PM ET
 
-**The joke:** S05E08 "Frame Toby" — Dwight's Tiffany's monologue. Combined **9.33** (craft 9.15, impact 9.50, quotability 10.0). #2 in the show by 0.01 points.
+**The joke:** S05E08 "Frame Toby" — Dwight's Tiffany's monologue. Combined **9.33** (craft 9.15, impact 9.50, quotability 10.0). #3 in the show, 0.01 behind Asian Jim and 0.29 behind Dinner Party.
 
 **YouTube search:** "dwight what is my perfect crime"
 
@@ -841,20 +843,20 @@ These nine revisit shows that already ran this month, this time with the #2 joke
 **Score popup:**
 
 - Big: **CRAFT 9.15 / QUOT 10.0**
-- Sub: #2 OF 9,896 — LOSES BY 0.01
+- Sub: #3 OF 9,896 — LOSES #2 BY 0.01
 - Caption burned in: "I GO FOR THE CHANDELIER."
 
 **End card:**
 
-We gave you the #1 three weeks ago. This is what it beat. By one hundredth of a point.
+Dwight is #3 by a hundredth of a point. He also holds #2, and #4.
 
-**This should have won.** Fight me.
+**Dwight is the funniest person in that office.** Fight me.
 
 **Caption:**
 
-the highest-scored office joke beat this one by 0.01 points.
+this loses second place by 0.01 points.
 
-dwight has both of them.
+dwight holds four of the top ten office jokes. michael holds three.
 
 #theoffice #dwightschrute #rainnwilson #perfectcrime #sitcom
 
