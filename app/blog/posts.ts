@@ -895,36 +895,36 @@ We’re publishing the full model artifacts — posterior samples, variance comp
   },
   'imdb-vs-humor-index': {
     title: 'IMDb Ratings vs. The Humor Index: Does "Funny" Mean "Good"?',
-    description: 'We compared 2,643 episodes across all 21 scored shows against IMDb audience ratings. Within-show correlation: r = +0.19, so audience ratings explain about 4% of the variance in comedy craft. They are measuring something else almost entirely.',
+    description: 'We compared 2,654 episodes across all 21 scored shows against IMDb audience ratings. Within-show correlation: r = +0.20, so audience ratings explain under 4% of the variance in comedy craft. They are measuring something else almost entirely.',
     date: '2026-04-12',
     category: 'Data Science',
     content: `
 We integrated IMDb episode ratings across every analyzed show on The Humor Index. And the first thing we did was the obvious data science move: **how well do audience ratings predict our comedy scores?**
 
-*Updated September 2026: this post originally ran on 591 episodes across three shows. We now have IMDb ratings matched to 2,643 scored episodes across all 21 shows, so the headline numbers below have been recomputed on the full corpus. The finding got stronger, not weaker.*
+*Updated September 2026: this post originally ran on 591 episodes across three shows. We now have IMDb ratings matched to 2,654 scored episodes across all 21 shows, so the headline numbers below have been recomputed on the full corpus. The finding got stronger, not weaker.*
 
 The answer: they don't. Not even close.
 
 ## The Numbers
 
-Across **2,643 episodes** of all 21 scored shows, centred within each show so that no cross-show scale differences leak in, the Pearson correlation between the Humor Index and IMDb ratings is **r = +0.19**. That is positive, and with n this large it is not a fluke, but it means audience ratings account for under **4% of the variance** in how well an episode's jokes are written. The other 96% is something else.
+Across **2,654 episodes** of all 21 scored shows, centred within each show so that no cross-show scale differences leak in, the Pearson correlation between the Humor Index and IMDb ratings is **r = +0.20**. That is positive, and with n this large it is not a fluke, but it means audience ratings account for under **4% of the variance** in how well an episode's jokes are written. The other 96% is something else.
 
 Per show, here's where it lands:
 
 - **Chappelle's Show** (27 eps): r = +0.58 — the strongest on the board, on one of the smaller samples
 - **Arrested Development** (84 eps): r = +0.46
 - **Fleabag** (12 eps): r = +0.40
+- **The Larry Sanders Show** (90 eps): r = +0.37
 - **Broad City** (50 eps): r = +0.36
 - **The Office** (183 eps): r = +0.34
-- **The Larry Sanders Show** (89 eps): r = +0.33
 - **The Simpsons** (552 eps): r = +0.31
 - **Veep** (65 eps): r = +0.29
-- **Seinfeld** (166 eps): r = +0.24
-- **Flight of the Conchords** (22 eps): r = +0.20 · **Taxi** (114 eps): r = +0.19 · **The Fresh Prince** (148 eps): r = +0.18 · **Futurama** (131 eps): r = +0.18 · **Parks and Recreation** (123 eps): r = +0.17 · **Community** (110 eps): r = +0.12
+- **Seinfeld** (168 eps): r = +0.27
+- **Futurama** (137 eps): r = +0.21 · **Flight of the Conchords** (22 eps): r = +0.20 · **Taxi** (114 eps): r = +0.19 · **The Fresh Prince** (148 eps): r = +0.18 · **Parks and Recreation** (123 eps): r = +0.16 · **Community** (110 eps): r = +0.12
 - **30 Rock** (138 eps): r = +0.06 · **Curb Your Enthusiasm** (120 eps): r = +0.05
-- **Schitt's Creek** (80 eps): r = −0.02 · **It's Always Sunny** (177 eps): r = −0.03 · **Friends** (234 eps): r = −0.05 · **Freaks and Geeks** (18 eps): r = −0.18
+- **Friends** (236 eps): r = −0.02 · **Schitt's Creek** (80 eps): r = −0.02 · **It's Always Sunny** (177 eps): r = −0.03 · **Freaks and Geeks** (18 eps): r = −0.18
 
-Seventeen of twenty-one shows are positive; the median show sits at **r = +0.19**, and not one show clears r = +0.6. There is a real signal here and it is weak everywhere.
+Seventeen of twenty-one shows are positive; the median show sits at **r = +0.20**, and not one show clears r = +0.6. There is a real signal here and it is weak everywhere.
 
 Across all 21, IMDb explains under **4% of the variance** in our Humor Index scores, and in the four shows with negative correlations, none at all.
 
@@ -977,7 +977,7 @@ The correlation varies wildly by season:
 
 Earlier versions of this post led with "Dinner Party" as the cringe paradox: our highest-scoring Office episode, an IMDb 7.6, brilliant discomfort that audiences would not sit through twice. Both halves of that were wrong.
 
-"Dinner Party" is an IMDb **9.4**, one of the highest-rated episodes the show ever aired. The 7.6 came from our own join: IMDb splits the hour-long episodes into two entries and we did not, so our ratings slid out of alignment in the seasons that have them. That is fixed as of September 2026 by matching on episode title instead of episode number. Thirty-six of 183 came back different, concentrated in Seasons 6 and 7. On the comedy side the September rescore put the episode at **91.2**, 36th of 183, not first.
+"Dinner Party" is an IMDb **9.4**, one of the highest-rated episodes the show ever aired. The 7.6 came from our own join: IMDb splits the hour-long episodes into two entries and we did not, so our ratings slid out of alignment in the seasons that have them. That is fixed as of September 2026 by matching on episode title instead of episode number, across every show it affected: 36 of 183 Office ratings came back different, and so did 28 Seinfeld, 60 Futurama, 12 Friends, 9 Larry Sanders, 7 30 Rock and 2 Parks. On the comedy side the September rescore put the episode at **91.2**, 36th of 183, not first.
 
 So the cringe paradox does not hold where we said it did. Audiences and our scorer agree about "Dinner Party": both rate it highly. Where they genuinely part company is Seasons 8 and 9, where our scorer keeps counting well-built jokes in episodes the audience had already written off.
 
