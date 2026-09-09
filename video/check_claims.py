@@ -68,12 +68,18 @@ for m in re.finditer(r'^## #(\d+) — .*?$(.*?)(?=^## #|\Z)',raw,re.M|re.S):
     blocks[int(m.group(1))]=m.group(2)
 
 SLUG_OF_SHOWNAME={v['show']:resolve(v['show'],None) for v in vids}
-bad=[]; unchecked=[]; checked=0
+bad=[]; unchecked=[]; published=[]; checked=0
 
 for v in vids:
     n=v['n']; slug=SLUG_OF_SHOWNAME.get(v['show'])
     if not slug: bad.append(f"#{n}: cannot resolve show {v['show']!r}"); continue
     body=blocks.get(n,''); show=shows[slug]
+    # A block marked **Published:** already shipped as a card. Its figures are a
+    # record of what went out, not a claim about current data, so a rescore must
+    # not turn them into failures. Corrections go in the block itself.
+    if re.search(r'^\*\*Published:\*\*', body, re.M):
+        published.append(n)
+        continue
     rows=jokes_of(slug)
     ep_rows=[r for r in rows if (r['s'],r['e'])==(v['season'],v['episode'])]
     if not ep_rows:
@@ -155,7 +161,9 @@ for v in vids:
         for mm in re.finditer(r'\b\d[\d,]*\.?\d*\b',body):
             unchecked.append(f"#{n}: {mm.group(0)}")
 
-print(f"checked {checked} numeric claims across {len(vids)} videos")
+print(f"checked {checked} numeric claims across {len(vids) - len(published)} unpublished videos")
+if published:
+    print(f"skipped {len(published)} already published: {', '.join('#'+str(n) for n in published)}")
 if VERBOSE: print(f"({len(unchecked)} number tokens seen in total; the rest are dates, timings and prose)")
 if bad:
     print(f"\n{len(bad)} mismatch(es):")

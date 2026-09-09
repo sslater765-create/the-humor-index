@@ -52,7 +52,7 @@ The other thing to know: five shows can't lead with their actual #1. Chappelle, 
 
 **The joke:** S09E03 "Andy's Ancestry" — Dwight hires an Asian actor to impersonate Jim. The actor holds the bit through Dwight's entire interrogation. Combined **9.34** (craft 9.18, impact 9.50, quotability 9.0). **#2 in the show.**
 
-**Rank changed on 2026-09-08.** Repairing the Dinner Party record put "Snip, snap! Snip, snap!" (9.62) at #1, where it belongs. This was written when Asian Jim was #1 and has been corrected.
+**Published:** Sep 8, 2026, with the numbers above, which were the live numbers that day. The full 183-episode rescore landed the next morning and moved them: this joke now scores combined 7.41 (craft 7.48, impact 7.33), around #5,100 of 13,529, and the best joke in the episode is Andy's "the Bernards of yore did not own slaves, we merely transported them" at 9.02, #52. The card that shipped is left as it shipped; the claim it makes is no longer one we can support.
 
 **YouTube search:** "asian jim" OR "the office asian jim scene"
 
@@ -676,7 +676,7 @@ artie's best line scores a perfect 10 on quotability, which almost nothing in th
 
 **Pinned comment:**
 
-If you've never seen it: this is the show that made the cringe-workplace format possible. 86.8, ahead of Curb (81.5), The Office (79.4) and Community (77.9). Start with S3. Reply if you want a specific episode scored.
+If you've never seen it: this is the show that made the cringe-workplace format possible. 86.8, ahead of Curb (81.5) and Community (77.9), just behind The Office (88.0). Start with S3. Reply if you want a specific episode scored.
 
 ---
 
@@ -830,39 +830,41 @@ apatow, feig, franco, rogen, segel. all of them, in one cancelled show.
 
 These nine revisit shows that already ran this month, this time with the #2 joke. Same template. The "we already showed you the winner, here's what lost" framing is its own hook and it lets you double up on the big fandoms without repeating a clip.
 
-## #30 — THE OFFICE — "What is my perfect crime?"
+## #30 — THE OFFICE — "I framed a raccoon for opening a Christmas present"
 
 **Post:** Tue Sep 29, 7:30 PM ET
 
-**The joke:** S05E08 "Frame Toby" — Dwight's Tiffany's monologue. Combined **9.33** (craft 9.15, impact 9.50, quotability 10.0). #3 in the show, 0.01 behind Asian Jim and 0.29 behind Dinner Party.
+**The joke:** S05E08 "Frame Toby" — Michael asks Dwight whether he has ever framed a man. Combined **9.14** (craft 8.94, impact 9.33, quotability 9.5). #22 in the show.
 
-**YouTube search:** "dwight what is my perfect crime"
+**Rewritten 2026-09-09.** This slot was the Tiffany's chandelier monologue at #3. The 183-episode rescore split that scene differently and it no longer exists as a single scored joke, so the slot moves to the best joke in the same episode, which is the same bit of business between the same two people. The clip needs re-pulling.
 
-**Clip target:** 16–18s. The full chandelier bit.
+**YouTube search:** "the office frame toby raccoon" OR "dwight i framed a raccoon"
+
+**Clip target:** 10–12s. Michael's question straight through Dwight's answer. Do not cut before "Christmas present."
 
 **Score popup:**
 
-- Big: **CRAFT 9.15 / QUOT 10.0**
-- Sub: #3 OF 9,896 — LOSES #2 BY 0.01
-- Caption burned in: "I GO FOR THE CHANDELIER."
+- Big: **CRAFT 8.94 / IMPACT 9.33**
+- Sub: #22 OF 13,529 OFFICE JOKES
+- Caption burned in: "I FRAMED A RACCOON FOR OPENING A CHRISTMAS PRESENT"
 
 **End card:**
 
-Dwight is #3 by a hundredth of a point. He also holds #2, and #4.
+The Office has 13,529 scored jokes. Michael is in nine of the top 25. Dwight is in eight.
 
 **Dwight is the funniest person in that office.** Fight me.
 
 **Caption:**
 
-this loses second place by 0.01 points.
+we scored all 13,529 jokes in the office. this one is #22.
 
-dwight holds four of the top ten office jokes. michael holds three.
+michael appears in nine of the top 25. dwight in eight. nobody else gets past three.
 
-#theoffice #dwightschrute #rainnwilson #perfectcrime #sitcom
+#theoffice #dwightschrute #rainnwilson #frametoby #sitcom
 
 **Pinned comment:**
 
-Dwight holds four of the top ten Office jokes. Michael holds three, and one of those is Young Michael in a home video. Meredith has two. Reply with a moment and I'll score it.
+Michael is in nine of the top 25 Office jokes, Dwight in eight, Creed and Jim in three each. The whole show was rescored on 2026-09-09, so these are the new numbers. Reply with a moment and I'll score it.
 
 ---
 

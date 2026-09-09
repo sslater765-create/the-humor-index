@@ -97,7 +97,7 @@ The usual caveats, and one specific to this post:
 
 The jokes-per-minute number stays on every show page. It is genuinely interesting — it tells you what kind of comedy you are about to watch, machine-gun or slow-burn. It just will not tell you whether it is any good.
 
-*Scale note: 13 of our 21 shows have been rescored on the current canonical model, and the headline correlations, both natural experiments and the exchange rate above use only those 13. Eight shows — The Office, Friends, Curb Your Enthusiasm, It's Always Sunny, Community, Futurama, Taxi and The Fresh Prince of Bel-Air — are still on the pre-2026 scale. The Sunny era comparison is internal to one show scored one way, so the mixed scale does not affect it.*`,
+*Scale note: 14 of our 21 shows have been rescored on the current canonical model. The headline correlations, both natural experiments and the exchange rate above use the 13 that had been rescored when this was written; The Office joined them in September 2026 and is not in those figures. Seven shows (Friends, Curb Your Enthusiasm, It's Always Sunny, Community, Futurama, Taxi and The Fresh Prince of Bel-Air) are still on the pre-2026 scale. The Sunny era comparison is internal to one show scored one way, so the mixed scale does not affect it.*`,
   },
   'futurama-launch': {
     title: "Futurama Out-Scores the Show It Roasted",
@@ -152,7 +152,7 @@ That's the whole idea behind what we do here: great comedy isn't a lightning str
 
 **See the full breakdown — every episode, every season, scored — on the [Futurama show page](/shows/futurama).**
 
-*Scale note: 13 of our 21 shows have been rescored on the current canonical model. Eight — The Office, Friends, Curb Your Enthusiasm, It's Always Sunny, Community, Futurama, Taxi and The Fresh Prince of Bel-Air — are still on the pre-2026 scale and will move when they're rescored. Comparisons that mix the two are flagged where they appear.*
+*Scale note: 14 of our 21 shows have been rescored on the current canonical model. Seven (Friends, Curb Your Enthusiasm, It's Always Sunny, Community, Futurama, Taxi and The Fresh Prince of Bel-Air) are still on the pre-2026 scale and will move when they're rescored. Comparisons that mix the two are flagged where they appear.*
 `,
   },
   'the-simpsons-all-20-seasons': {
@@ -215,7 +215,7 @@ The receipts confirm the legend — Season 6 is the peak, the mid-90s are untouc
 
 *Scope note (updated August 2026): this analysis covers Seasons 1–20, the scope we had scored when it was written. Our Simpsons corpus now runs through Season 25 — 552 episodes, 34,957 jokes. The extra five seasons contain the show's true floor (Season 22, 74.8) and don't change the golden-age finding.*
 
-*Scale note: 13 of our 21 shows have been rescored on the current canonical model. Eight — The Office, Friends, Curb Your Enthusiasm, It's Always Sunny, Community, Futurama, Taxi and The Fresh Prince of Bel-Air — are still on the pre-2026 scale and will move when they're rescored. Comparisons that mix the two are flagged where they appear.*
+*Scale note: 14 of our 21 shows have been rescored on the current canonical model. Seven (Friends, Curb Your Enthusiasm, It's Always Sunny, Community, Futurama, Taxi and The Fresh Prince of Bel-Air) are still on the pre-2026 scale and will move when they're rescored. Comparisons that mix the two are flagged where they appear.*
 `,
   },
   'fresh-prince-geoffrey-butler': {
@@ -280,9 +280,9 @@ The usual caveat, and it matters more for this show than most: we score the word
 
 ## What's next
 
-Twenty-one shows on the board now, 2,720 episodes, just under 174,000 jokes. The Fresh Prince slots in at #20 — between Taxi (77.4) and Friends (73.2), at the bottom of the table alongside the other shows still waiting on a rescore. The butler, meanwhile, retires undefeated on a per-line basis. Geoffrey would have a withering aside about that, and it would score higher than this sentence.
+Twenty-one shows on the board now, 2,720 episodes, just over 177,000 jokes. The Fresh Prince slots in at #20 — between Taxi (77.4) and Friends (73.2), at the bottom of the table alongside the other shows still waiting on a rescore. The butler, meanwhile, retires undefeated on a per-line basis. Geoffrey would have a withering aside about that, and it would score higher than this sentence.
 
-*Scale note: 13 of our 21 shows have been rescored on the current canonical model. Eight — The Office, Friends, Curb Your Enthusiasm, It's Always Sunny, Community, Futurama, Taxi and The Fresh Prince of Bel-Air — are still on the pre-2026 scale and will move when they're rescored. Comparisons that mix the two are flagged where they appear.*
+*Scale note: 14 of our 21 shows have been rescored on the current canonical model. Seven (Friends, Curb Your Enthusiasm, It's Always Sunny, Community, Futurama, Taxi and The Fresh Prince of Bel-Air) are still on the pre-2026 scale and will move when they're rescored. Comparisons that mix the two are flagged where they appear.*
 `,
   },
   'sunny-renaissance': {
@@ -351,7 +351,7 @@ We're trying to keep the [honesty receipts](/methodology) updated on this site, 
 
 The picture isn't that "Renaissance Sunny is *funnier*" in some absolute sense — it's that the writing got tighter, the jokes earn more, and the gang's sustained awfulness has had two decades to compound. Whatever your fan theory of when Sunny peaked, the data has a different one. [Build your own cut →](/shows/its-always-sunny/explore)
 
-*Scale note: 13 of our 21 shows have been rescored on the current canonical model. Eight — The Office, Friends, Curb Your Enthusiasm, It's Always Sunny, Community, Futurama, Taxi and The Fresh Prince of Bel-Air — are still on the pre-2026 scale and will move when they're rescored. Comparisons that mix the two are flagged where they appear.*
+*Scale note: 14 of our 21 shows have been rescored on the current canonical model. Seven (Friends, Curb Your Enthusiasm, It's Always Sunny, Community, Futurama, Taxi and The Fresh Prince of Bel-Air) are still on the pre-2026 scale and will move when they're rescored. Comparisons that mix the two are flagged where they appear.*
 `,
   },
   'war-reconciliation': {
@@ -574,7 +574,7 @@ Both things can be true. The data just lets you see which is which.
     content: `
 We set out to answer a simple question: **is The Office actually funny, or do we just love the characters?**
 
-> **Update, August 2026.** The Office is one of eight shows still carrying a pre-2026 score, and it is being rescored onto our current model as this note is written. Every Office number below — the show score, the season averages, the individual episode scores — will move when that finishes. The *shape* of the finding (great peaks, wide spread) has survived every previous rescore; the specific digits will not.
+> **Update, September 2026.** The rescore is finished. All 183 episodes went through the current three-run consensus model, and every number below has been updated to match. The show moved from 79.4 to 88.0, and from #14 to #9 on the board. The shape of the original finding held. The one casualty is the headline: "Dinner Party" is no longer the top-scoring episode.
 
 
 To find out, we built an AI comedy analyst that identifies and scores every joke in every episode. Not just the obvious punchlines — reaction shots, cringe beats, visual gags, Jim's camera looks, and uncomfortable silences all get counted and scored.
@@ -589,11 +589,11 @@ These feed into the **Humor Index**, our composite score on a 0-100 scale. The c
 
 ## What We Found
 
-The Office Season 4 — widely considered the show's peak — averages **83.8** across 14 episodes, the strongest season the show has. Standout episodes push into the high 80s and past 90.
+Season 3 is the show's peak at **90.4** across 23 episodes, with Season 4 effectively tied at 90.2 across 14. The fan consensus says Season 4 and the measurement says Season 3, by 0.2 points, which is well inside the scorer's own noise floor. Read it as a tie.
 
-And on the question of whether the fan consensus is right: it is. **"Dinner Party" scores 98.0** — the highest-scoring episode of the entire series, six points clear of second place. "Local Ad" (88.9), "Chair Model" (88.4) and "Survivor Man" (88.0) fill out the season's top four.
+The top of the episode board is **"The Duel" (98.5)**, then "Stress Relief" (97.9), "Product Recall" (97.1) and "The Injury" (97.0). All four come from Seasons 2 through 5, which is where density and craft peak together.
 
-That's worth flagging because it wasn't always true here. An earlier version of this post reported "Dinner Party" at 88.1, behind "The Deposition" and "Did I Stutter?" — an artifact of single-run scoring, which we've since replaced with three-run consensus. The cringe-heavy episodes were exactly the ones single-run scoring was worst at: long discomfort sequences produce few, very high-value jokes, and a noisy scorer either finds them or doesn't.
+"Dinner Party" scores 91.2, 36th of 183. That number has now been three different things in this post: 88.1 under single-run scoring, 98.0 after the first consensus pass, 91.2 in the full rescore. Long discomfort sequences produce few, very high-value jokes, which is the shape a scorer is least stable on. Three-run consensus narrowed that spread. It did not close it.
 
 ## The Cringe Comedy Problem
 
@@ -605,22 +605,22 @@ We addressed this by weighting **peak density** (what percentage of jokes are el
 
 ## How The Office Compares
 
-Honestly? Less well than it did when this post was written.
+Better than it did when this post was written, for a boring reason: it had not been rescored yet.
 
-On the current board The Office sits at **79.4, #14 of 21** — the bottom half, and below all but one of the shows that have been through the current scoring model (The Simpsons, at 79.0, is the exception). Some of that is a real quality judgment. Most of it is that it hasn't been rescored yet; every show that has moved onto the current model gained ground, several of them by ten points or more.
+On the current board The Office sits at **88.0, #9 of 21**, between Parks and Recreation (91.9) and Schitt's Creek (87.6). The rescore added 8.6 points, in line with every other show that has moved onto the current model.
 
-The one comparison worth making now is a mechanical one:
+The 30 Rock comparison is now much closer than this post has ever claimed:
 
-- **30 Rock:** 3.52 jokes per minute
-- **The Office:** 2.38 jokes per minute
+- **30 Rock:** 3.52 jokes per minute, 7.67 average craft
+- **The Office:** 3.24 jokes per minute, 7.23 average craft
 
-That's **1.5x**, not the "nearly 3x" this post originally claimed — an error that came from comparing across two different scoring runs. 30 Rock does fire faster, and it also scores higher per joke on craft (7.67 vs 6.88). The sniper-vs-machine-gun framing was generous to The Office: on this data 30 Rock is doing both.
+That is **1.09x** on density, not the "nearly 3x" of the original post and not the 1.5x of the first correction. Both of those compared across scoring runs. 30 Rock still scores higher per joke and still leads the board at 97.4, but the sniper-versus-machine-gun framing does not survive measuring the two shows the same way. The Office fires almost as often.
 
 ## The Verdict
 
 Yes, The Office is actually funny. Not just nostalgic, not just "comfortable TV" — genuinely, measurably funny. Its best episodes compete with the best comedy television has ever produced.
 
-But it's also inconsistent. Within Season 4 alone — its best season — the gap runs from "Dinner Party" at 98.0 down to "Launch Party" at 71.9. Across all 183 episodes the spread is 98.0 to 63.5. When The Office is on, it's transcendent. When it's off, it's coasting on goodwill.
+It is also steadier than we reported. Across all 183 episodes the range runs from "The Duel" at 98.5 down to "Hot Girl" at 78.6, with a mean of 88.0 and a standard deviation of 3.8. The old 98.0-to-63.5 spread was mostly single-run noise at the bottom of the board, not the show falling apart. Season 3, its best, runs from "The Merger" at 81.2 to "Product Recall" at 97.1.
 
 *Full episode rankings and joke-by-joke breakdowns are available on our [show page](/shows/the-office).*
     `,
@@ -677,7 +677,7 @@ These calibration points are fixed — they won't shift as we add more shows.
     date: '2026-04-17',
     category: 'Data Science',
     content: `
-> **Scope note, August 2026.** This study was run in April 2026, when the index had three scored shows. It has 21 today. The reliability findings below are properties of the scorer and still hold — they are what drove us to three-run consensus scoring, which every show scored or rescored since has used (13 of 21 so far). The specific show scores quoted as examples have all moved; they are corrected inline and marked.
+> **Scope note, August 2026.** This study was run in April 2026, when the index had three scored shows. It has 21 today. The reliability findings below are properties of the scorer and still hold — they are what drove us to three-run consensus scoring, which every show scored or rescored since has used (14 of 21 so far). The specific show scores quoted as examples have all moved; they are corrected inline and marked.
 
 Earlier this week we ran a blind-mode rescoring study on 99 episodes across our three scored shows. Then we took 30 of those episodes and scored them a SECOND time (also in blind mode) to measure the scorer’s own noise floor.
 
@@ -758,7 +758,7 @@ Each show’s overall Humor Index is averaged over a lot of episodes — 12 for 
 
 So show-level Humor Indexes are stable to roughly ±0.4 points from LLM noise.
 
-*(Updated August 2026: the example that used to sit here — Office 80.2, Seinfeld 79.1, Friends 78.7, "all within the noise floor" — no longer works, and the way it broke is worth keeping. Those three shows now score 79.4, 94.5 and 73.2. What separated them was not scorer noise; it was that two of the three had not yet been through the current model. Seinfeld moved 15 points on rescore. The lesson stands with the sign flipped: a 1–2 point gap between two shows scored the same way is noise, but a gap between two shows scored differently is not a gap at all.)*
+*(Updated September 2026: the example that used to sit here, Office 80.2, Seinfeld 79.1, Friends 78.7, all within the noise floor, no longer works, and the way it broke is worth keeping. Those three shows now score 88.0, 94.5 and 73.2. What separated them was not scorer noise; it was that two of the three had not been through the current model. Seinfeld gained 15 points on rescore. The Office, which had drifted to 79.4 by the time its turn came, gained 8.6. Friends is the one still waiting. The lesson stands with the sign flipped: a 1 to 2 point gap between two shows scored the same way is noise, but a gap between two shows scored differently is not a gap at all.)*
 
 **Show rankings hold up — provided you only rank shows measured the same way.**
 
@@ -766,7 +766,7 @@ So show-level Humor Indexes are stable to roughly ±0.4 points from LLM noise.
 
 If two episodes are within ~10 Humor Index points, the ordering between them is within the scorer’s noise floor. A “Best Friends Episode” list, where the top 10 episodes are all between 85-95, has a lot of genuine uncertainty in its ordering.
 
-**Extreme episodes still stand out.** Dinner Party (98.0) is clearly above The Office’s episode mean (78.4). A bottom-quartile Office episode at 63.5 is clearly below. These wouldn’t flip. The second example this post used to give — Friends’ "The Last One" at 95 — was itself a casualty of single-run noise: it scores 77.5 today, barely above the Friends episode mean of 73.1. It was never a clear-cut case, and we should not have used it as one.
+**Extreme episodes still stand out, but the extremes moved.** "The Duel" (98.5) is clearly above The Office's episode mean (88.0), and the bottom of the show at 78.6 is clearly below. Both gaps are around 10 points against a per-episode noise SD of roughly 5, so neither would flip. What did not survive the rescore is the width: the old bottom quartile sat at 63.5, the new one at 85.4, and most of that difference was single-run noise rather than bad episodes. The second example this post used to give, Friends' "The Last One" at 95, was itself a casualty of that noise: it scores 77.5 today, barely above the Friends episode mean of 73.1. It was never a clear-cut case, and we should not have used it as one.
 
 But the difference between #1 and #2 in a close race? That’s within noise.
 
@@ -776,7 +776,7 @@ Three changes:
 
 **1. Publishing the noise floor.** This blog post and a new section on our methodology page spell it out: single-run Humor Index ICC = 0.28, mean |Δ| = 10.7 points, show-level SE = 0.4 points. Readers should calibrate their confidence accordingly.
 
-**2. Consensus scoring going forward.** Our pipeline already supports multi-run consensus (the \`--num-runs\` flag). For all new shows — starting with Parks and Recreation when we resume — we’ll score each episode THREE times and use the mean. *(August 2026: we did. Every show scored or rescored since April 2026 uses three-run consensus, and 13 of 21 shows are now on it.)* Three runs cuts per-episode SE by about √3 ≈ 1.7×, which should get ICC up to moderate (≥ 0.4) territory. Five runs would get us near “good” (≥ 0.75).
+**2. Consensus scoring going forward.** Our pipeline already supports multi-run consensus (the \`--num-runs\` flag). For all new shows — starting with Parks and Recreation when we resume — we’ll score each episode THREE times and use the mean. *(August 2026: we did. Every show scored or rescored since April 2026 uses three-run consensus, and 14 of 21 shows are now on it.)* Three runs cuts per-episode SE by about √3 ≈ 1.7×, which should get ICC up to moderate (≥ 0.4) territory. Five runs would get us near “good” (≥ 0.75).
 
 **3. Smoother aggregate formula (future work).** The threshold-based metrics in the Humor Index (peak_density, memorability_bonus) are the noise amplifiers. Replacing them with continuous smoothed versions — say, a sigmoid-weighted elite-joke score instead of a hard threshold — would cut formula-level amplification without changing the qualitative meaning. We’re leaving the current formula in place for continuity but exploring a v3 formula.
 
@@ -870,7 +870,7 @@ The Humor Index, Comedy WAR, and every leaderboard on this site are computed fro
 
 In practice: a **1–2 point Humor Index gap between two shows scored the same way is inside the noise floor**, and you should not read an ordering into it. That was the situation with the three shows in this model, which sat within 1.5 points of each other.
 
-It is emphatically *not* the situation on the board today. Those same three shows now score 79.4, 94.5 and 73.2 — a 21-point spread — because two of them have since been rescored on a different model and one has not. That is not a noise-floor question; it is an apples-to-oranges question, and it is the one to actually worry about when comparing shows on this site.
+It is emphatically *not* the situation on the board today. Those same three shows now score 88.0, 94.5 and 73.2, a 21-point spread, because two of them have since been rescored on the current model and Friends has not. That is not a noise-floor question; it is an apples-to-oranges question, and it is the one to actually worry about when comparing shows on this site.
 
 *Note (updated August 2026): when this post was first published, Seinfeld led at 83.9 because stand-up bits were being scored as sitcom comedy. That was fixed with a standup-aware rescore, which put it at 79.1; the 2026 canonical rescore has since moved it to 94.5. Three different numbers for one show in one year is a fair summary of why we publish a noise floor at all.*
 
@@ -895,19 +895,19 @@ We’re publishing the full model artifacts — posterior samples, variance comp
   },
   'imdb-vs-humor-index': {
     title: 'IMDb Ratings vs. The Humor Index: Does "Funny" Mean "Good"?',
-    description: 'We compared 2,682 episodes across all 21 scored shows against IMDb audience ratings. Within-show correlation: r = +0.18 — audience ratings explain about 3% of the variance in comedy craft. They are measuring something else almost entirely.',
+    description: 'We compared 2,643 episodes across all 21 scored shows against IMDb audience ratings. Within-show correlation: r = +0.19, so audience ratings explain about 4% of the variance in comedy craft. They are measuring something else almost entirely.',
     date: '2026-04-12',
     category: 'Data Science',
     content: `
 We integrated IMDb episode ratings across every analyzed show on The Humor Index. And the first thing we did was the obvious data science move: **how well do audience ratings predict our comedy scores?**
 
-*Updated August 2026: this post originally ran on 591 episodes across three shows. We now have IMDb ratings matched to 2,649 scored episodes across all 21 shows, so the headline numbers below have been recomputed on the full corpus. The finding got stronger, not weaker.*
+*Updated September 2026: this post originally ran on 591 episodes across three shows. We now have IMDb ratings matched to 2,643 scored episodes across all 21 shows, so the headline numbers below have been recomputed on the full corpus. The finding got stronger, not weaker.*
 
 The answer: they don't. Not even close.
 
 ## The Numbers
 
-Across **2,649 episodes** of all 21 scored shows, centred within each show so that no cross-show scale differences leak in, the Pearson correlation between the Humor Index and IMDb ratings is **r = +0.18**. That is positive, and with n this large it is not a fluke — but it means audience ratings account for roughly **3% of the variance** in how well an episode's jokes are written. Ninety-seven percent is something else.
+Across **2,643 episodes** of all 21 scored shows, centred within each show so that no cross-show scale differences leak in, the Pearson correlation between the Humor Index and IMDb ratings is **r = +0.19**. That is positive, and with n this large it is not a fluke, but it means audience ratings account for under **4% of the variance** in how well an episode's jokes are written. The other 96% is something else.
 
 Per show, here's where it lands:
 
@@ -915,18 +915,18 @@ Per show, here's where it lands:
 - **Arrested Development** (84 eps): r = +0.46
 - **Fleabag** (12 eps): r = +0.40
 - **Broad City** (50 eps): r = +0.36
+- **The Office** (183 eps): r = +0.34
 - **The Larry Sanders Show** (89 eps): r = +0.33
 - **The Simpsons** (552 eps): r = +0.31
 - **Veep** (65 eps): r = +0.29
-- **Futurama** (137 eps): r = +0.25
 - **Seinfeld** (166 eps): r = +0.24
-- **Flight of the Conchords** (22 eps): r = +0.20 · **Taxi** (114 eps): r = +0.19 · **The Fresh Prince** (148 eps): r = +0.18 · **Parks and Recreation** (123 eps): r = +0.17 · **The Office** (183 eps): r = +0.16 · **Community** (110 eps): r = +0.12
+- **Flight of the Conchords** (22 eps): r = +0.20 · **Taxi** (114 eps): r = +0.19 · **The Fresh Prince** (148 eps): r = +0.18 · **Futurama** (131 eps): r = +0.18 · **Parks and Recreation** (123 eps): r = +0.17 · **Community** (110 eps): r = +0.12
 - **30 Rock** (138 eps): r = +0.06 · **Curb Your Enthusiasm** (120 eps): r = +0.05
 - **Schitt's Creek** (80 eps): r = −0.02 · **It's Always Sunny** (177 eps): r = −0.03 · **Friends** (234 eps): r = −0.05 · **Freaks and Geeks** (18 eps): r = −0.18
 
 Seventeen of twenty-one shows are positive; the median show sits at **r = +0.19**, and not one show clears r = +0.6. There is a real signal here and it is weak everywhere.
 
-Across all 21, IMDb explains about **3% of the variance** in our Humor Index scores — and in the four shows with negative correlations, none at all.
+Across all 21, IMDb explains under **4% of the variance** in our Humor Index scores, and in the four shows with negative correlations, none at all.
 
 In plain English: knowing an episode's IMDb rating tells you almost nothing about how funny it actually is by our analysis.
 
@@ -942,15 +942,15 @@ These are genuinely different questions, and our data proves it.
 
 Some episodes where our AI sees comedy gold but audiences shrug:
 
-- **"Angry Andy" (S8E21)** — Humor Index: 89.5, IMDb: 6.7. Packed with jokes, but the late-season Andy arc turned audiences off regardless of how many gags landed.
-- **"Dinner Party" (S4E13)** — Humor Index: 98.0, IMDb: 7.6. The highest-scoring Office episode is an IMDb 7.6. This is the cringe comedy paradox: brilliantly crafted discomfort that many viewers can't rewatch without covering their eyes.
-- **"Andy's Ancestry" (S9E03)** — Humor Index: 88.8, IMDb: 7.1. Dense with character comedy, but S9 fatigue dragged audience scores down.
+- **"Andy's Ancestry" (S9E03)**: Humor Index 94.8, IMDb 7.1. Dense with character comedy, and one of the widest gaps in the show. Season 9 fatigue dragged the audience score down regardless of what landed.
+- **"Angry Andy" (S8E21)**: Humor Index 92.2, IMDb 6.6. Packed with jokes, but the late-season Andy arc turned audiences off no matter how many of them worked.
+- **"Here Comes Treble" (S9E05)**: Humor Index 90.9, IMDb 6.7. Same pattern, same season, same verdict from the crowd.
 
 And episodes audiences adore that don't score as high on pure comedy:
 
-- **"Casino Night" (S2E22)** — Humor Index: 72.6, IMDb: 9.3. The Jim/Pam poker scene is legendary television, but it's drama, not comedy. Our system correctly identifies this as a great episode with average joke density.
-- **"The Inner Circle" (S7E22)** — Humor Index: 75.2, IMDb: 9.8. Will Ferrell episodes got a huge audience boost. The comedy itself is solid but not spectacular.
-- **"Classy Christmas" (S7E11)** — Humor Index: 72.1, IMDb: 8.8. Holiday episodes get an emotional ratings bump that has nothing to do with joke quality.
+- **"Goodbye, Michael" (S7E21)**: Humor Index 87.6, IMDb 9.8. Tied with the finale for the highest audience rating in the series, and merely a good one by joke count. It is an exit, not a comedy showcase.
+- **"Livin' the Dream" (S9E21)**: Humor Index 82.1, IMDb 9.0. Dwight finally gets the manager job. Payoff, not punchlines.
+- **"The Merger" (S3E08)**: Humor Index 81.2, IMDb 8.6. The Stamford branch arrives, the plot moves, and the joke rate sits at the bottom of Season 3.
 
 ## What Predicts IMDb Ratings?
 
@@ -958,30 +958,30 @@ We tested which of our sub-metrics best correlates with audience scores:
 
 Within The Office specifically:
 
-- **Craft** (r = 0.21) — the strongest predictor, but still weak
-- **Humor Index** (r = 0.16) — the composite score
-- **Impact** (r = 0.09) — how hard jokes land
-- **JPM** (r = -0.05) — joke density is the *least* related thing to an audience rating
+- **Impact** (r = 0.39) — how hard jokes land is the closest thing to an audience proxy we have
+- **Craft** (r = 0.35) — how well they are built
+- **Humor Index** (r = 0.34) — the composite score
+- **JPM** (r = -0.19) — joke density is the *least* related thing to an audience rating
 
-That last one is fascinating. **More jokes per minute slightly predicts lower audience ratings.** This makes sense — episodes with the highest joke density often sacrifice plot and character moments. Audiences notice.
+The last one is the interesting one. **More jokes per minute predicts slightly lower audience ratings.** Episodes with the highest joke density often give up plot and character time to get there, and audiences notice.
 
 ## Season-by-Season Patterns
 
 The correlation varies wildly by season:
 
-- **Season 7** has the strongest correlation (r = 0.40) — during Michael's farewell arc, funnier episodes also happen to be more emotionally satisfying
-- **Seasons 3, 4, and 8** have negative correlations — audiences and our AI actively disagree about which episodes are best
-- **Season 5** shows moderate alignment (r = 0.33)
+- **Season 2** has the strongest correlation (r = 0.51), the stretch where the show's best episodes are also its funniest by joke count
+- **Season 8** is the only negative season (r = -0.24). It is also the Michael-less season, where our scorer keeps finding jokes the audience had stopped showing up for
+- **Seasons 5 and 1** land in between (r = 0.42 and r = 0.39); Season 4 is nearly flat at r = 0.14
 
-## The Dinner Party Problem
+## The Dinner Party Correction
 
-"Dinner Party" perfectly illustrates why these metrics diverge. It scores **98.0** on our Humor Index — the highest-scoring episode The Office ever produced. Every joke is meticulously crafted. The cringe comedy is operating at peak efficiency.
+Earlier versions of this post led with "Dinner Party" as the cringe paradox: our highest-scoring Office episode, an IMDb 7.6, brilliant discomfort that audiences would not sit through twice. Both halves of that were wrong.
 
-But on IMDb? A 7.6. Not bad, but far from The Office's best-rated episodes.
+"Dinner Party" is an IMDb **9.4**, one of the highest-rated episodes the show ever aired. The 7.6 came from our own join: IMDb splits the hour-long episodes into two entries and we did not, so our ratings slid out of alignment in the seasons that have them. That is fixed as of September 2026 by matching on episode title instead of episode number. Thirty-six of 183 came back different, concentrated in Seasons 6 and 7. On the comedy side the September rescore put the episode at **91.2**, 36th of 183, not first.
 
-This is because "Dinner Party" is *uncomfortable*. It's bottle-episode cringe comedy that makes your skin crawl. Audiences rate it lower because watching Jan's Seychelles slideshow makes them physically squirm — even though, objectively, it's comedy writing at its absolute finest.
+So the cringe paradox does not hold where we said it did. Audiences and our scorer agree about "Dinner Party": both rate it highly. Where they genuinely part company is Seasons 8 and 9, where our scorer keeps counting well-built jokes in episodes the audience had already written off.
 
-This is exactly what The Humor Index was built to measure. Not "did you enjoy this?" but "is this comedy operating at the highest possible level?"
+That is still the distinction the Humor Index exists to make. Not "did you enjoy this" but "is this comedy operating at a high level". It just turns out the clearest examples of the two coming apart are late-series Andy episodes, not the show's most famous bottle episode.
 
 ## The Bottom Line
 
