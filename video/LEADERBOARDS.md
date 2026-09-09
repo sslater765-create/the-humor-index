@@ -49,3 +49,34 @@ below avoid the question entirely.
 
 `negative` is the strongest of the three and the one to run first. It has a
 named lead, a number nobody expects, and a defensible method behind it.
+
+## The #1 question, settled
+
+Earlier this file said the flagship post was blocked because Homer led Larry
+David by 16.8 on the published data and trailed him by 33.3 once WAR was
+recomputed. Rebuilding both from the raw joke rows settles it: Homer wins by
+roughly 200, not 17, and the published gap is understated because of a second
+staleness problem.
+
+**The Simpsons character table covers 441 episodes. 552 are scored.** It was
+built at the S1–20 mark (commit 3c3964d) and never rebuilt as later seasons
+landed. Homer's stored 9,286 jokes across 441 episodes is really about 11,100
+across 545, which puts his WAR near 2,516 rather than 2,323. Larry David's
+stored 2,306 is understated too, but only by about 48. Every other show's
+character table is current on episode coverage.
+
+So the ordering on the live site is right even though both numbers are low, and
+regenerating either table only widens Homer's lead. `goat` and `quality` are
+safe to post now.
+
+**Not fixed here.** Rebuilding the Simpsons table needs the pipeline. Character
+aggregation cannot be reproduced from `public/data` alone: compound entries like
+"Ross and Chandler" or "Homer/Marge" are attributed by a rule that lives in the
+pipeline, and recomputing without it undercounts leads by about 2.5%. That is
+small enough not to disturb the ranking and too large to write back into the
+published files.
+
+| Key | Claim | Safe to post |
+|---|---|---|
+| `goat` | Homer is #1 and the worst writer in the top five | yes |
+| `quality` | Jack Donaghy is best per joke; Homer is 22nd of 40 | yes |
