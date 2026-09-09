@@ -4,77 +4,637 @@
   "season": 3,
   "episode_number": 15,
   "title": "Phyllis Wedding",
-  "humor_index": 77.8,
-  "jpm": 1.82,
-  "avg_craft": 6.92,
-  "avg_impact": 6.71,
-  "total_jokes": 33,
-  "war": 26.9,
-  "dominant_joke_types": "[\"character_comedy\", \"cringe_discomfort\", \"observational\"]",
-  "standout_joke_ids": "[31, 10, 19]",
-  "weakest_section": "14:00-15:00",
+  "humor_index": 93.1,
+  "jpm": 4.57,
+  "avg_craft": 7.36,
+  "avg_impact": 7.2,
+  "total_jokes": 69,
+  "war": 88.3,
+  "dominant_joke_types": "[\"character_comedy\", \"cringe_discomfort\", \"irony_sarcasm\"]",
+  "standout_joke_ids": "[11, 3, 51]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "How do you know it's gonna be a boy? How... Would you stop interrupting, please?",
+      "text": "Jim offers Dwight an Altoid; Dwight's reflexive response 'What do you think?' implies he always refuses, setting up the conditioning experiment",
+      "characters": [
+        "Jim",
+        "Dwight"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Jim casually offers Dwight an Altoid as if it's a normal offer between colleagues",
+      "punchline": "Dwight's dismissive 'What do you think?' signals his usual contempt \u2014 but the audience doesn't yet know this is Jim's setup for a Pavlov experiment",
+      "craft_total": 8.22,
+      "impact_score": 7.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The opening beat is retroactively hilarious once Jim explains the experiment \u2014 classic Office structure where the confessional recontextualizes the scene. Dwight's contemptuous refusal is perfectly in character and sets up the bait beautifully."
+    },
+    {
+      "index": 2,
+      "text": "Montage of Dwight accepting Altoids without hesitation across multiple sessions \u2014 'Okay.' / 'Sure.' / 'Yes.'",
+      "characters": [
+        "Jim",
+        "Dwight"
+      ],
+      "joke_types": [
+        "running_gag",
+        "escalation"
+      ],
+      "setup": "Jim has been conditioning Dwight; now we see the proof in a rapid-fire montage",
+      "punchline": "Dwight \u2014 who just said 'What do you think?' in refusal \u2014 now enthusiastically accepts every single Altoid with zero suspicion",
+      "craft_total": 8.7,
+      "impact_score": 8.25,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The montage is brilliantly economical \u2014 three quick cuts, three one-word acceptances, each funnier than the last. The juxtaposition with the opening refusal and the talking-head explanation makes the payoff land perfectly. The Office's cold-open format is used at its best here: setup, explanation, proof, all in under a minute."
+    },
+    {
+      "index": 3,
+      "text": "Dwight catches himself craving a mint unprompted, confused: 'I don't know, I... Oh, my mouth tastes so bad all of a sudden.'",
+      "characters": [
+        "Dwight",
+        "Jim"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Jim has conditioned Dwight to salivate/crave a mint at some stimulus; Dwight notices an inexplicable urge",
+      "punchline": "Dwight \u2014 who prides himself on self-mastery and awareness \u2014 is completely unaware that he's been brainwashed and his body is betraying him",
+      "craft_total": 8.79,
+      "impact_score": 9.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the cold open's peak moment. Dwight's confusion and self-interrogation ('What? I don't know...') is played perfectly straight. The joke works on multiple levels: it's funny as a Pavlov payoff, it's funny because Dwight has zero self-awareness, and it's funny because Jim has successfully turned his nemesis into a dog. 'My mouth tastes so bad all of a sudden' is a hilariously mundane way to discover you've been psychologically manipulated. One of the episode's standout moments."
+    },
+    {
+      "index": 4,
+      "text": "Michael's confessional: 'So basically, I am co-giving away the bride.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael explains he's been asked to push Phyllis's father's wheelchair down the aisle",
+      "punchline": "He reframes this minor logistical role as co-giving away the bride \u2014 inflating his importance to absurd proportions",
+      "craft_total": 7.56,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Michael delusion \u2014 he takes the smallest supporting role and immediately makes it about himself. 'Co-giving away the bride' is a perfectly Michael-esque invented title. Solid character comedy."
+    },
+    {
+      "index": 5,
+      "text": "Michael: 'Since I pay her salary, it is like I am paying for the wedding. Which I'm happy to do. It's a big day for Phyllis. But it's an even bigger day for me. Employer of the bride.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael is ostensibly talking about how meaningful Phyllis's wedding day is",
+      "punchline": "He pivots to 'it's an even bigger day for me' and invents the title 'Employer of the bride' \u2014 a non-existent, self-aggrandizing role",
+      "craft_total": 7.14,
+      "impact_score": 6.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Employer of the bride' is a genuinely great line \u2014 it takes the familiar 'father of the bride' phrase and mutates it perfectly to expose Michael's narcissism. The logical chain (I pay her salary \u2192 I'm paying for the wedding \u2192 biggest day for me) is classically Michael, where each step is wrong but internally consistent. High quotability."
+    },
+    {
+      "index": 6,
+      "text": "Phyllis confessional: 'Yes, I put Michael in my wedding. It was the only way I could think to get six weeks off for my honeymoon.'",
+      "characters": [
+        "Phyllis"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "We expect Phyllis to explain why she gave Michael such a meaningful role in her wedding",
+      "punchline": "It was pure transactional manipulation \u2014 she only did it to get six weeks off",
+      "craft_total": 8.14,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfectly structured confessional joke. Michael's delusion that this is a great honor is immediately undercut by Phyllis's flat pragmatism. The reveal that she got six WEEKS (an outrageous amount) makes it even better \u2014 she played him masterfully and he never suspected a thing. Great economy and timing."
+    },
+    {
+      "index": 7,
+      "text": "Pam confessional: Phyllis used the exact same wedding invitations as Pam and Roy, 'So it was kind of like being invited to my own wedding. And I was like, wait... I thought I called that off.'",
+      "characters": [
+        "Pam"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Pam notes that Phyllis used identical wedding invitations to her own called-off wedding",
+      "punchline": "The momentary confusion of 'being invited to my own wedding' followed by the dry 'I thought I called that off'",
+      "craft_total": 7.94,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A deft piece of character writing \u2014 Pam processes a genuinely painful situation (the wedding she almost had with Roy) through dry, self-deprecating humor. 'I thought I called that off' is delivered with exactly the right mix of lightness and underlying sadness that defines Pam's character arc at this point. Smart and emotionally layered."
+    },
+    {
+      "index": 8,
+      "text": "Kevin and another guest both bring toasters as gifts, discovering each other at the gift table: 'A toaster.' / 'Uh, toaster.' / 'Unbelievable.'",
+      "characters": [
+        "Kevin"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "deadpan_understatement"
+      ],
+      "setup": "Two guests independently reveal they brought the same gift",
+      "punchline": "'Unbelievable' \u2014 Kevin's outraged reaction to an incredibly mundane coincidence, as if it's a cosmic injustice",
+      "craft_total": 6.02,
+      "impact_score": 5.5,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A functional quick joke. 'Unbelievable' is a good button \u2014 Kevin treating a toaster-duplicate as a tragedy is mildly amusing. Not especially original but efficiently executed."
+    },
+    {
+      "index": 9,
+      "text": "Michael approaches Angela: 'You look as beautiful as the Queen of England.'",
       "characters": [
         "Michael",
+        "Angela"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael offers what he thinks is a grand compliment to Angela",
+      "punchline": "The Queen of England is not typically considered a beauty standard \u2014 it's a bizarrely backhanded compliment delivered with total sincerity",
+      "craft_total": 6.89,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's oblivious compliment is perfectly calibrated \u2014 he genuinely means well but picks an objectively odd reference. Angela's 'Thank you' followed by immediate tactical instructions ('Don't linger. Break left.') is the real punchline, showing her cold efficiency. The pairing works well."
+    },
+    {
+      "index": 10,
+      "text": "Angela's immediate tactical response after Michael's compliment: 'Thank you. Don't linger. Break left. Left.'",
+      "characters": [
+        "Angela"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael has just paid Angela a compliment and seems to expect some social interaction",
+      "punchline": "Angela dismisses him with military efficiency, issuing directional commands as if managing crowd flow at a military operation",
+      "craft_total": 7.89,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "This is a great Angela line. 'Don't linger. Break left. Left.' is extraordinarily economical \u2014 three words that perfectly capture her controlling, joyless personality applied to a social situation. The repetition of 'Left' implies Michael went the wrong way first, adding a silent physical comedy beat. Very strong character integration."
+    },
+    {
+      "index": 11,
+      "text": "Dwight confessional: 'The Schrutes have their own traditions. We usually marry standing in our own graves. Makes the funerals very romantic. But the weddings are a bleak affair.'",
+      "characters": [
         "Dwight"
+      ],
+      "joke_types": [
+        "absurdist",
+        "dark_subversive"
+      ],
+      "setup": "Dwight offers cultural commentary on weddings",
+      "punchline": "The Schrute tradition of marrying in pre-dug graves \u2014 and the deadpan observation that this makes funerals romantic but weddings bleak",
+      "craft_total": 9.05,
+      "impact_score": 9.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is the episode's single best joke. The internal logic is impeccable \u2014 if you marry in a grave, the funeral IS romantic (you're in the right place) but the wedding is grimly morbid. The structure is perfectly inverted from expectation: normally weddings are romantic and funerals are bleak. Dwight delivering this with complete earnestness, as established Schrute cultural fact, is the apex of his character. 'Those flowers are nice' as his immediate pivot back to normalcy makes it even funnier. Highly quotable, completely original, and only works because of years of Dwight world-building."
+    },
+    {
+      "index": 12,
+      "text": "The 'P and R' flowers \u2014 Dwight and Jim note they stand for 'Phyllis and Robert' but also 'Pam and Roy'",
+      "characters": [
+        "Dwight",
+        "Jim"
+      ],
+      "joke_types": [
+        "observational",
+        "dark_subversive"
+      ],
+      "setup": "Dwight and Jim notice the monogrammed flowers \u2014 'P and R'",
+      "punchline": "The initials work for both the current wedding couple AND Pam and Roy's failed engagement \u2014 a coincidence that quietly underscores Pam's complicated day",
+      "craft_total": 7.05,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A subtle, well-constructed joke that works on the level of situational irony. The show doesn't hammer it \u2014 the observation lands quietly and moves on. It has extra weight for viewers tracking Pam's storyline. Good economy."
+    },
+    {
+      "index": 13,
+      "text": "Michael to Phyllis: 'I swear, Phyllis, you are as beautiful as the first day you started work at Dunder-Mifflin.' Phyllis: 'Same as when you said it outside.'",
+      "characters": [
+        "Michael",
+        "Phyllis"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael delivers what he clearly thinks is a fresh, heartfelt compliment to Phyllis",
+      "punchline": "He said the exact same thing moments ago outside \u2014 and it wasn't a great compliment to begin with (comparing her beauty to her first day at work, not a romantic standard)",
+      "craft_total": 7.25,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Two-layered joke: Michael repeats himself (oblivious) AND his 'compliment' is bizarre \u2014 comparing her to when she started work, not to some romantic ideal. Phyllis's flat correction is the punchline. Good character work."
+    },
+    {
+      "index": 14,
+      "text": "Michael to Phyllis before the ceremony: 'If you need to vomit, that is okay. I did.'",
+      "characters": [
+        "Michael"
       ],
       "joke_types": [
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Michael is filming a serious father-to-son advice video",
-      "punchline": "Dwight immediately interrupts with practical questions, derailing the emotional moment",
-      "craft_total": 6.55,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Michael trying to be profound while Dwight remains literal and practical"
-    },
-    {
-      "index": 2,
-      "text": "And when I came to, I had an epiphery.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Michael is describing a life-changing moment",
-      "punchline": "He mispronounces 'epiphany' as 'epiphery'",
-      "craft_total": 6.2,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Michael malapropism - perfectly in character and delivered with complete confidence"
-    },
-    {
-      "index": 3,
-      "text": "I want my son to know the dealio. The dealio of life.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Michael wants to impart profound wisdom",
-      "punchline": "He uses the slang word 'dealio' in a faux-profound context",
-      "craft_total": 6.55,
-      "impact_score": 6.0,
+      "setup": "Michael is trying to be supportive and calming to a nervous bride",
+      "punchline": "He casually reveals he already vomited from nerves \u2014 an overshare that is both useless as comfort and deeply inappropriate pre-ceremony",
+      "craft_total": 7.58,
+      "impact_score": 7.17,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael's attempt at being wise using juvenile slang is perfectly on-brand"
+      "explanation": "'I did.' as a standalone sentence \u2014 admitting he already vomited \u2014 is perfectly timed and delivered. The absolute confidence with which Michael offers vomiting as comfort advice is quintessential Michael Scott. Short, sharp, and character-true."
     },
     {
-      "index": 4,
-      "text": "Then you take these and clip them wherever.",
+      "index": 15,
+      "text": "Michael to Phyllis: 'Do you want to talk about tonight? Because I know you're probably worried about pleasing Bob. A lot of pressure.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Michael is talking to Phyllis alone before her wedding ceremony",
+      "punchline": "He offers to discuss her wedding night sexual performance \u2014 completely inappropriate, delivered as if this is helpful mentorship",
+      "craft_total": 6.86,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Michael HR violation played for cringe. The joke is well within his established character and lands because it's so perfectly inappropriate for the moment. Not the most original Michael transgression but executed well."
+    },
+    {
+      "index": 16,
+      "text": "Michael accuses Phyllis of breaking wind before the ceremony; she denies it; then a beat later Michael is clearly affected: 'wow, that is... that is pungent.'",
+      "characters": [
+        "Michael",
+        "Phyllis"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "escalation"
+      ],
+      "setup": "Michael accuses Phyllis of flatulence before her wedding; she denies it; Michael charitably accepts the denial",
+      "punchline": "A beat later, the smell reaches Michael regardless \u2014 confirming Phyllis did it, while also revealing Michael's hapless attempt to be diplomatic",
+      "craft_total": 6.6,
+      "impact_score": 6.25,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Bathroom humor in a mockumentary setting \u2014 works because of escalation (he accepts the denial, then the evidence arrives anyway). 'That is pungent' is a good word choice. Mid-tier joke, functional cringe comedy."
+    },
+    {
+      "index": 17,
+      "text": "Michael, having lost his train of thought due to the smell, pivots to: 'are you set on that hairstyle? I thought it was... Here, let me... [tries to fix bride's hair on wedding day]'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Michael loses his train of thought and fumbles for something to say",
+      "punchline": "He lands on criticizing the bride's hair \u2014 on her wedding day \u2014 and then physically tries to change it",
+      "craft_total": 7.02,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The escalating Michael disaster \u2014 after the sex comment, after the flatulence accusation, he now critiques and physically interferes with the bride's hair. The progression is well-constructed cringe escalation. His hands reaching for her hair while she protests is perfectly imagined from the dialogue."
+    },
+    {
+      "index": 18,
+      "text": "Michael tries to 'fix' Phyllis's hair \u2014 reaching out to touch it while she says 'Michael, no.'",
+      "characters": [
+        "Michael",
+        "Phyllis"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "physical_slapstick"
+      ],
+      "setup": "Michael has criticized Phyllis's hair and now moves to physically 'fix' it.",
+      "punchline": "Phyllis has to physically stop her boss from touching her hair on her wedding day. 'Just cover up that bald patch. No, Michael.'",
+      "craft_total": 7.63,
+      "impact_score": 7.75,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The escalation of Michael's bridal room invasion reaches its peak here. 'Bald patch' is a particularly mean-specific detail \u2014 he's not just critiquing the style, he's zeroing in on an insecurity. Phyllis's gentle but firm refusals keep the cringe calibrated."
+    },
+    {
+      "index": 19,
+      "text": "Michael confessional about his only other wedding: he was ring bearer at his mom's wedding, became emotional, and 'somehow my pants became wet.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Michael shares a tender childhood memory about being included in his mom's wedding",
+      "punchline": "'Somehow my pants became wet' \u2014 a deeply euphemistic, self-unaware way to admit he wet himself as a child at a wedding",
+      "craft_total": 7.74,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Somehow my pants became wet' is a fantastic turn of phrase \u2014 the passive construction ('became wet') rather than 'I wet myself' reveals Michael's complete inability to take ownership of embarrassing facts. The delivery of this as a 'very cute story' makes it funnier. Good economy and strong character voice."
+    },
+    {
+      "index": 20,
+      "text": "'I hate you!' \u2014 an offscreen voice during Michael's story, seemingly directed at someone in the wedding party area",
+      "characters": [
+        "Unknown"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "misdirection"
+      ],
+      "setup": "Michael is mid-story about his childhood wedding trauma",
+      "punchline": "An outburst of 'I hate you!' from somewhere offscreen cuts into the confessional, completely disrupting the tone",
+      "craft_total": 6.29,
+      "impact_score": 6.0,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick background joke \u2014 the sudden outburst mid-story is a good disruption gag but without visual context it's harder to assess. Functional background comedy."
+    },
+    {
+      "index": 21,
+      "text": "Michael's punchline about the ring-bearer dog: 'Jeff's dog ended up as ring bearer. And the irony is that after the ceremony, that dog peed on everything. And nobody said boo.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Michael wet his pants and was replaced as ring bearer by the dog",
+      "punchline": "The dog \u2014 his replacement \u2014 then peed on everything at the reception, and no one cared; Michael was humiliated for the same bodily function the dog performed with impunity",
+      "craft_total": 7.86,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The structural payoff here is excellent: Michael was shamed for wetting his pants and replaced by a dog who then did the same thing \u2014 and 'nobody said boo.' The injustice is perfectly calibrated to Michael's persecution complex. 'And nobody said boo' is the ideal button. Strong joke."
+    },
+    {
+      "index": 22,
+      "text": "Dwight at the wedding: 'Why are all these people here? There's too many people on this earth. We need a new plague.'",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Dwight surveys the wedding crowd with apparent irritation",
+      "punchline": "His solution to a crowded room is not 'better event planning' but 'a new plague' \u2014 delivered as a reasonable, matter-of-fact suggestion",
+      "craft_total": 8.04,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'We need a new plague' is one of the episode's most quotable lines. Delivered as a calm observation rather than a joke, it perfectly captures Dwight's misanthropic survivalist worldview. The escalation from 'too many people' to 'new plague' skips several logical steps in the most Dwight way possible. High quotability and character integration."
+    },
+    {
+      "index": 23,
+      "text": "Michael's story about seeing 'Wedding Crashers' accidentally: bought a ticket for 'Grizzly Man,' went into the wrong theater, stayed for an hour before figuring it out \u2014 'But I kept waiting. Because that's the thing about bear attacks... They come when you least expect it.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Michael claims he saw Wedding Crashers 'accidentally' \u2014 and proceeds to explain how",
+      "punchline": "He stayed in the wrong movie for over an hour waiting for a bear attack in Wedding Crashers, because 'that's the thing about bear attacks \u2014 they come when you least expect it'",
+      "craft_total": 8.09,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "This is a beautifully constructed absurdist Michael story. The internal logic is impeccable \u2014 his reasoning for not leaving (bear attacks are unpredictable!) is both completely stupid and oddly defensible in Michael's worldview. The punchline lands hard because of the confident delivery: 'that's the THING about bear attacks.' One of the episode's best Michael moments. Highly quotable."
+    },
+    {
+      "index": 24,
+      "text": "Dwight's plan: locate wedding crashers 'and report them to Phyllis. That way I won't have to get her a gift.'",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Dwight, motivated by civic duty, declares he will root out wedding crashers",
+      "punchline": "His actual motivation is revealed: he doesn't want to buy Phyllis a wedding gift",
+      "craft_total": 7.65,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good misdirection \u2014 Dwight's self-righteous vigilance is immediately undercut by petty frugality. The reveal is quick and effective. Strong Dwight character voice."
+    },
+    {
+      "index": 25,
+      "text": "Kevin hits on a woman at the wedding: 'Where'd you find her?' / 'At the gym.' / 'Right. The gym!'",
+      "characters": [
+        "Kevin"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Kevin approaches a couple at the wedding",
+      "punchline": "Kevin's awestruck 'Right. The gym!' \u2014 as if the gym is an exotic locale where attractive people are discovered \u2014 reveals his complete social cluelessness",
+      "craft_total": 5.86,
+      "impact_score": 5.5,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick Kevin character beat \u2014 his tone implies the gym is some mysterious warehouse of attractive women. Functional but not exceptional."
+    },
+    {
+      "index": 26,
+      "text": "Michael at the ceremony, wearing white: 'I know, but there was an emergency. I look really good in white.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Someone (likely Kelly or another guest) calls Michael out for wearing white to a wedding",
+      "punchline": "'There was an emergency. I look really good in white.' \u2014 Michael has violated wedding etiquette because he personally looks good in white; the 'emergency' is left entirely unexplained",
+      "craft_total": 7.62,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The unexplained 'emergency' is the perfect detail \u2014 Michael has an excuse, but the excuse makes no sense, and he quickly pivots to the real reason: he likes how he looks. Two-beat structure is clean and efficient. Very Michael."
+    },
+    {
+      "index": 27,
+      "text": "Michael introduces Phyllis's father in the wheelchair: 'This strapping young lad sitting here is Phyllis' father, Elbert. And he is quite the ladies' man, aren't you, Elbert, huh?'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael introduces an elderly man in a wheelchair before the ceremony",
+      "punchline": "'Strapping young lad' applied to a wheelchair-bound elderly man, plus the condescending 'aren't you, Elbert, huh?' as if he's addressing a toddler",
+      "craft_total": 6.33,
+      "impact_score": 6.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's clueless patronizing tone directed at an elderly man is solid character comedy. 'Strapping young lad' is an obvious but effective incongruity. The 'huh?' tag is a nice addition showing Michael's desperate need for affirmation."
+    },
+    {
+      "index": 28,
+      "text": "As Michael begins pushing the wheelchair down the aisle, Elbert's dress/garment gets caught under the wheel. 'That's my dress.'",
+      "characters": [
+        "Michael",
+        "Elbert"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael has been boasting about his important role of pushing the wheelchair; the ceremony begins",
+      "punchline": "He immediately runs over Elbert's clothing, causing a scene before they've even started",
+      "craft_total": 6.66,
+      "impact_score": 6.83,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Physical comedy inferred from dialogue \u2014 'That's my dress' as a quiet, pained complaint is a good visual gag. Michael botching even the simple act of pushing a wheelchair establishes the ceremony disaster arc efficiently."
+    },
+    {
+      "index": 29,
+      "text": "Elbert rises from his wheelchair and walks down the aisle himself. Michael's reaction: 'It's a miracle.'",
+      "characters": [
+        "Michael",
+        "Elbert"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Michael has been proudly anticipating pushing Elbert's wheelchair as his big ceremonial role",
+      "punchline": "Elbert gets up and walks on his own, destroying Michael's role \u2014 and Michael calls it 'a miracle' rather than recognizing his own displacement",
+      "craft_total": 7.98,
+      "impact_score": 8.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'It's a miracle' \u2014 Michael's involuntary religious awe at being upstaged. The word choice is perfect: he can't process that this is bad for him, he can only see it as a miracle. This sets up the entire Michael-Elbert grievance subplot beautifully."
+    },
+    {
+      "index": 30,
+      "text": "Reaction beat \u2014 someone (likely Jim or Pam) at the ceremony watches everything unfold: 'This is bull.'",
+      "characters": [
+        "Unknown"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "deadpan_understatement"
+      ],
+      "setup": "The ceremony has descended into chaos with Michael's wheelchair mishaps",
+      "punchline": "A flat, disgusted 'This is bull' \u2014 understated and perfectly timed amid the ceremony spectacle",
+      "craft_total": 7.19,
+      "impact_score": 7.17,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Without knowing the speaker it's harder to score high on character integration. A solid reaction beat \u2014 the brevity and vulgarity are funny against the formal ceremony backdrop."
+    },
+    {
+      "index": 31,
+      "text": "Michael confessional: 'Me walking Phyllis down the aisle was supposed to be the highlight of the wedding. And now... the wedding has no highlight.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael reflects on being upstaged by Elbert walking on his own",
+      "punchline": "His conclusion: not that Elbert walking was the highlight \u2014 but that the wedding now has NO highlight, because his role has been eliminated",
+      "craft_total": 7.16,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's narcissism on perfect display. A father walking his daughter down the aisle at her own wedding cannot be the 'highlight' because Michael isn't doing it \u2014 therefore: no highlight. The logic is both monstrous and entirely consistent with Michael's character. Very strong confessional joke."
+    },
+    {
+      "index": 32,
+      "text": "Michael confessional: 'I can't believe I pushed that... that guy's lazy ass around all day until he was ready to stand up and steal the show.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael is furious at Elbert for walking down the aisle",
+      "punchline": "He accuses the elderly man of faking disability all day just to upstage him at the ceremony \u2014 'his lazy ass'",
+      "craft_total": 7.78,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael accusing an elderly man of faking disability to steal the spotlight is gloriously delusional and very dark. 'That guy's lazy ass' applied to someone who needed a wheelchair is both outrageous and perfectly Michael. The pause before 'that guy's' suggests he's barely restraining himself from being even more offensive."
+    },
+    {
+      "index": 33,
+      "text": "Michael's threat confessional: '...well, I got news for you, Elbert... if that's your real name... the show's not over.'",
       "characters": [
         "Michael"
       ],
@@ -82,577 +642,717 @@
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Michael is teaching proper car jump-starting technique",
-      "punchline": "After starting correctly, he gives completely wrong advice about clipping jumper cables 'wherever'",
-      "craft_total": 7.12,
-      "impact_score": 7.0,
-      "quotability": 5.0,
+      "setup": "Michael is plotting revenge on Phyllis's elderly wheelchair-using father",
+      "punchline": "'If that's your real name' \u2014 implying the elderly father-of-the-bride might be operating under a false identity as part of his elaborate plot to upstage Michael Scott",
+      "craft_total": 8.15,
+      "impact_score": 8.25,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Great escalation from competent instruction to dangerous incompetence, showing Michael's overconfidence"
+      "is_callback": 1,
+      "explanation": "'If that's your real name' applied to Phyllis's elderly father is a brilliant absurdist escalation. Michael has constructed an entire conspiracy theory around a man simply walking at his daughter's wedding. The villain-monologue energy directed at a retiree is genuinely hilarious. High quotability."
     },
     {
-      "index": 5,
-      "text": "Number eight, learn how to take off a woman's bra. What... We will demonstrate on Pam. No. And... No. Come on. You just twist your hand until something breaks.",
+      "index": 34,
+      "text": "The ceremony is accidentally performed out of order \u2014 the officiant announces 'Mr. and Mrs. Bob Vance!' before the 'I do' vows, then re-does it correctly after the actual vows.",
       "characters": [
-        "Michael",
-        "Pam"
+        "Officiant",
+        "Phyllis",
+        "Bob"
       ],
       "joke_types": [
         "cringe_discomfort",
-        "physical_slapstick"
+        "absurdist"
       ],
-      "setup": "Michael offers to teach bra removal as fatherly advice",
-      "punchline": "His technique is both crude ('twist until something breaks') and causes Pam actual pain",
-      "craft_total": 5.8,
+      "setup": "The wedding ceremony appears to be proceeding normally",
+      "punchline": "The officiant jumps the gun and announces them as married before Bob has said 'I do' \u2014 then has to shush the crowd and redo the moment",
+      "craft_total": 6.49,
       "impact_score": 6.5,
-      "quotability": 6.0,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic cringe humor but relies somewhat on shock value rather than clever writing"
+      "explanation": "The officiant's premature announcement is a solid visual/situational gag. The 'Oh, shh...' before catching his mistake is a funny beat. Character integration is low because this isn't about anyone from the office. Functional cringe comedy."
     },
     {
-      "index": 6,
-      "text": "What if he's a murderer? He's not gonna be a murderer. Maybe that's how you die?",
+      "index": 35,
+      "text": "Michael to Bob after the ceremony: 'Congratulations, Bob. You're a good man. But just know... if you ever lay a finger on Phyllis, I will kill you.'",
       "characters": [
-        "Dwight",
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
         "dark_subversive"
       ],
-      "setup": "Michael declares unconditional love for his future son",
-      "punchline": "Dwight immediately considers the child might murder Michael",
-      "craft_total": 7.65,
+      "setup": "Michael is congratulating Bob Vance on his wedding",
+      "punchline": "An unexpected death threat \u2014 Michael's version of protective fatherly sentiment, completely disproportionate and inappropriate",
+      "craft_total": 7.61,
       "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfectly captures Dwight's dark, literal mindset while subverting the sentimental moment"
+      "explanation": "Michael's death threat is played as genuine tenderness, which is what makes it work. The pivot from 'You're a good man' to 'I will kill you' in one sentence captures Michael's chaotic emotional range. The absurdity is that his threat implies he thinks the marriage might turn violent immediately."
     },
     {
-      "index": 7,
-      "text": "Prima nocta, I believe, from the movie Braveheart and confirmed on Wikipedia, is when the king got to deflower every new bride on her wedding night.",
+      "index": 36,
+      "text": "Jim repeats Michael's exact threat to Bob: 'If you ever lay a finger on Phyllis, I'll kill you.' Bob: 'Agreed. No fingers will be laid on Phyllis!'",
       "characters": [
-        "Michael"
+        "Jim",
+        "Bob"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Michael mentions instituting 'prima nocta' for the wedding",
-      "punchline": "He explains this medieval rape tradition in a talking head as if it's wedding planning advice",
-      "craft_total": 6.3,
-      "impact_score": 7.0,
+      "setup": "Michael has just issued a bizarre death threat; Jim is nearby",
+      "punchline": "Jim repeats the exact threat \u2014 unclear if sincere or mockingly \u2014 and Bob enthusiastically agrees, turning the absurd threat into an even more absurd formal covenant",
+      "craft_total": 7.02,
+      "impact_score": 6.83,
       "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's casual explanation of something horrific shows his complete lack of awareness"
+      "is_callback": 1,
+      "explanation": "Bob's enthusiastic acceptance \u2014 'No fingers will be laid on Phyllis!' \u2014 is the best part. He plays it completely straight, as if this is a perfectly normal post-ceremony agreement. The absurdity of the phrasing 'no fingers will be laid' makes it funnier. Good callback execution."
     },
     {
-      "index": 8,
-      "text": "I'm sorry, I had a very different understanding as to what prima nocta meant.",
+      "index": 37,
+      "text": "Michael notices Elbert sitting back down after the ceremony: 'Oh, decide to sit down again, huh? Great. Bet you can hear me too.'",
       "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "reaction_beat",
-        "cringe_discomfort"
-      ],
-      "setup": "Michael has just explained prima nocta confidently",
-      "punchline": "He immediately backtracks, revealing he didn't actually know what he was talking about",
-      "craft_total": 7.02,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good follow-up showing Michael's pattern of confident ignorance followed by sheepish retreat"
-    },
-    {
-      "index": 9,
-      "text": "It's a bridal shower for guys. A guy shower. An hour-long shower with guys.",
-      "characters": [
-        "Michael"
+        "Michael",
+        "Elbert"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "irony_sarcasm"
       ],
-      "setup": "Michael tries to explain the bachelor party concept",
-      "punchline": "His phrasing gets progressively more suggestive without him realizing it",
-      "craft_total": 7.6,
-      "impact_score": 7.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent escalation structure with Michael accidentally making things sound more inappropriate with each clarification"
+      "setup": "Elbert has returned to his wheelchair after walking down the aisle",
+      "punchline": "Michael's passive-aggressive snipe implies Elbert was faking his disability AND was listening to Michael's rants \u2014 delivered with impotent fury at an elderly wedding guest",
+      "craft_total": 7.76,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Michael's ongoing grudge against Elbert continues to pay dividends. 'Bet you can hear me too' suggests the entire disability was a performance \u2014 and that Elbert has been eavesdropping on Michael's angry confessionals. A good button to the Elbert subplot."
     },
     {
-      "index": 10,
-      "text": "I've gotten pretty good at reading the back of Jim's neck.",
+      "index": 38,
+      "text": "Dwight to Phyllis: 'Best of luck, Phyllis. Also, I'm gonna need to see a copy of the guest manifest as well as photographs of the caterers.' Phyllis: 'I don't have that, Dwight.' Dwight: 'Damn it, Phyllis!'",
+      "characters": [
+        "Dwight",
+        "Phyllis"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Dwight congratulates Phyllis at her own wedding reception",
+      "punchline": "His congratulations immediately pivot to demanding security documentation she obviously doesn't have \u2014 then blaming HER for not having it",
+      "craft_total": 7.5,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Damn it, Phyllis!' at her own wedding is a perfect Dwight moment \u2014 his security obsession overrides all social norms, and when Phyllis can't produce wedding caterer dossiers, she's at fault. The structure is tight and the button ('Damn it, Phyllis!') is excellent."
+    },
+    {
+      "index": 39,
+      "text": "Kelly to Pam: 'This must be so awful for you... Well, this was supposed to be your wedding.' Then Kelly's advice: 'If I was you I would just, like, freak out and get really drunk and then tell someone I was pregnant.'",
+      "characters": [
+        "Kelly",
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Kelly approaches Pam with apparent sympathy about attending a wedding that mirrors her own failed engagement",
+      "punchline": "Kelly's 'helpful' advice escalates from 'freak out' to 'get really drunk' to 'tell someone I was pregnant' \u2014 a chain of increasingly terrible coping strategies delivered with complete confidence",
+      "craft_total": 7.97,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfectly escalating advice from Kelly \u2014 each suggestion is worse than the last, and she delivers all three as equally valid options she'd personally execute. 'And then tell someone I was pregnant' is the killer: it's not even a coping strategy, it's just chaos creation. Strong Kelly character voice. Pam's 'That's a lot of good ideas' is the ideal understated button."
+    },
+    {
+      "index": 40,
+      "text": "Pam's response to Kelly's advice: 'Okay, that's a lot of good ideas. Thanks.'",
       "characters": [
         "Pam"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Pam claims she's not eavesdropping on Jim and Karen",
-      "punchline": "She admits to interpreting Jim's body language from behind with expertise",
-      "craft_total": 8.35,
-      "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant line that reveals so much about Pam's feelings while being genuinely funny and original"
+      "setup": "Kelly has just given Pam catastrophically bad advice about how to cope with attending a wedding similar to her own",
+      "punchline": "Pam's completely sincere-sounding 'That's a lot of good ideas' \u2014 refusing to engage with how insane the advice was, choosing diplomatic exit over confrontation",
+      "craft_total": 7.56,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The button to the Kelly/Pam exchange. Pam's dry acceptance of the terrible advice is very funny \u2014 it's polite, it's cowardly, and it's entirely in character for Pam at this stage. 'A LOT of good ideas' subtly acknowledges the quantity while implying nothing about quality."
     },
     {
-      "index": 11,
-      "text": "Tall, queer, handsome as ever. 'Hey, everybody, it's me, Jim.'",
+      "index": 41,
+      "text": "Dwight's interrogation of a wedding guest he suspects is a crasher: 'How do you know the happy couple?' / 'The bride and groom. What are their names?' Guest fumbles.",
       "characters": [
-        "Todd Packer"
+        "Dwight"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "cringe_discomfort"
       ],
-      "setup": "Todd Packer greets Jim",
-      "punchline": "He uses outdated slang and does a mocking impression",
-      "craft_total": 5.53,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Dwight has been tasked (by himself) with rooting out wedding crashers",
+      "punchline": "His interrogation technique is essentially just asking the person their names, which the guest \u2014 who appears to genuinely not know \u2014 cannot answer",
+      "craft_total": 7.21,
+      "impact_score": 6.83,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Establishes Todd Packer's crude character but not particularly clever"
+      "explanation": "The interrogation works as character comedy \u2014 Dwight's self-appointed security role, executed with complete seriousness. The guest's fumbling ('I'm not sure') is a good pay off that validates Dwight's paranoia while also making Dwight look ridiculous."
     },
     {
-      "index": 12,
-      "text": "Either this chick is a dude or Halpert got scared straight.",
+      "index": 42,
+      "text": "Dwight physically escorts the suspected wedding crasher out: 'Come on, freeloader, let's move it... Gotta find yourself another wedding to crash, my friend.'",
       "characters": [
-        "Todd Packer"
+        "Dwight"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "physical_slapstick"
       ],
-      "setup": "Todd meets Karen and realizes she's very different from typical Office women",
-      "punchline": "He suggests Jim either has poor judgment about women or was 'scared straight' from his usual type",
-      "craft_total": 6.33,
-      "impact_score": 6.0,
+      "setup": "Dwight has 'confirmed' a wedding crasher through his interrogation",
+      "punchline": "Dwight's complete commitment to bouncing the person \u2014 'freeloader,' 'another wedding to crash' \u2014 as if this is a serious security operation",
+      "craft_total": 6.98,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Dwight physically ejecting someone from a wedding with full authority-figure energy is good character comedy. 'Gotta find yourself another wedding to crash' has the tone of a Vegas bouncer. Solid follow-through on the crasher subplot."
+    },
+    {
+      "index": 43,
+      "text": "Michael about the food: 'Chicken, totally undercooked. I sent it back.' Phyllis: 'It's fish.' Michael: 'I will take care of that.'",
+      "characters": [
+        "Michael",
+        "Phyllis"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael is holding court at the wedding buffet, positioning himself as a food expert",
+      "punchline": "He has sent back fish thinking it was undercooked chicken \u2014 and upon being corrected, doubles down with 'I will take care of that' as if the problem is ongoing and his expertise is still needed",
+      "craft_total": 7.31,
+      "impact_score": 6.67,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Offensive but in character for Todd Packer, shows his crude worldview"
+      "explanation": "Three-beat joke with a perfect button. Michael's confident wrongness ('chicken, totally undercooked') \u2192 correction ('it's fish') \u2192 doubled-down wrong confidence ('I will take care of that') is classically structured. The third beat is the funniest: he doesn't acknowledge being wrong, he pivots to further action."
     },
     {
-      "index": 13,
-      "text": "And what kind of stripper did you get? I did not order a stripper.",
+      "index": 44,
+      "text": "Michael attempting to display wine knowledge: 'Um... This is a white.'",
       "characters": [
-        "Todd Packer",
         "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael is performing wine expertise at the wedding reception",
+      "punchline": "His entire oenological assessment: 'This is a white.' \u2014 identifying wine by color, as if this constitutes sophisticated palate knowledge",
+      "craft_total": 7.52,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Maximum economy \u2014 three words that demolish Michael's pretensions completely. The buildup ('I do know a fair amount about fine food and drink') followed by 'This is a white' is a masterclass in deflating pomposity. The pause implied before the assessment makes it even funnier."
+    },
+    {
+      "index": 45,
+      "text": "Kevin's confessional about Scrantonicity: 'This is not our first wedding. This is the third wedding that Scrantonicity has played. We also played our bassist's wedding and our guitarist's wedding.'",
+      "characters": [
+        "Kevin"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Kevin speaks proudly about Scrantonicity's wedding performance history",
+      "punchline": "The three weddings they've played are: this one, their bassist's wedding, and their guitarist's wedding \u2014 the band only performs at their own members' weddings",
+      "craft_total": 7.36,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The implication that Scrantonicity's entire gigging career is just playing each other's weddings is a quietly devastating portrait of Kevin's ambitions. Good observational/absurdist character beat."
+    },
+    {
+      "index": 46,
+      "text": "Announcement over the PA: 'I'm supposed to ask if anyone has seen Uncle Al. He is old and has brown eyes and dementia.'",
+      "characters": [
+        "Unknown"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "deadpan_understatement"
+      ],
+      "setup": "A formal announcement interrupts the wedding reception",
+      "punchline": "The description of the missing man \u2014 'He is old and has brown eyes and dementia' \u2014 is both medically blunt and wildly unhelpful as a missing-person description",
+      "craft_total": 7.46,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Uncle Al announcement is a great dark comedy beat. 'He is old and has brown eyes and dementia' \u2014 listing dementia as a descriptive trait alongside 'brown eyes' as if equivalent, delivered in a clinical PA voice, is very funny. Also sets up a callback later when Michael finds him."
+    },
+    {
+      "index": 47,
+      "text": "Jim to Pam about the wedding: 'I know I don't normally notice these kind of things, but, uh... this wedding's really nice. I mean, the flowers and stuff.'",
+      "characters": [
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Jim approaches Pam at the wedding and seems to want to discuss the event",
+      "punchline": "His observation ('the flowers and stuff') is conspicuously vague and unspecific for someone who claims to 'notice' the wedding; it's a pretext to talk to Pam",
+      "craft_total": 6.42,
+      "impact_score": 5.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The humor is in the transparency of Jim's pretext \u2014 'the flowers and stuff' as the sum of his observation. It's a soft joke but it serves the Jim/Pam emotional arc well and is gently amusing. Rewatch bonus for knowing where Jim and Pam end up."
+    },
+    {
+      "index": 48,
+      "text": "Roy to Pam: 'I know you probably aren't gonna remember this, but, uh, those color roses... I got you those color roses for our prom.' Pam: 'Roy, I picked those flowers. Phyllis just stole all of my ideas for our wedding.'",
+      "characters": [
+        "Roy",
+        "Pam"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "cringe_discomfort"
+      ],
+      "setup": "Roy tries to share a sweet memory with Pam about roses he got her for prom, triggered by the wedding flowers",
+      "punchline": "Pam deflates it instantly \u2014 she picked those flowers, and they were stolen by Phyllis for this wedding, meaning Roy was never paying attention to their own relationship even then",
+      "craft_total": 7.75,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A well-written cringe/irony beat. Roy's attempted tenderness backfires completely \u2014 the romantic moment he's attempting to share is based on his not knowing that Pam chose the flowers, which is itself a metaphor for his entire inattention during their relationship. Dark and emotionally resonant, with a comedic surface."
+    },
+    {
+      "index": 49,
+      "text": "Roy confessional: 'I guess I wasn't really too involved in the planning.' Pause. 'Yeah.' / 'Sorry about that.' Pam: 'It's okay.' Roy: 'Well, you think it sucks for you. I'm the one who actually wanted to get married.'",
+      "characters": [
+        "Roy",
+        "Pam"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "irony_sarcasm"
+      ],
+      "setup": "Roy has just admitted he wasn't involved in planning their wedding",
+      "punchline": "'You think it sucks for you. I'm the one who actually wanted to get married.' \u2014 Roy pivots his non-apology into victimhood, implying Pam was the one who didn't want to marry him (she called it off, but still)",
+      "craft_total": 7.61,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Roy's self-pity is perfectly observed \u2014 he goes from apologizing ('sorry about that') to immediately claiming he's the real victim in the same breath. The pivot is fast and completely in character for Roy. Dark comedy with genuine emotional sting."
+    },
+    {
+      "index": 50,
+      "text": "The best man's toast: 'Phyllis, you're a wonderful woman. And you're a hell of a bowler!'",
+      "characters": [
+        "Randy"
       ],
       "joke_types": [
         "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Todd asks about bachelor party entertainment",
-      "punchline": "Michael sheepishly admits he didn't get a stripper at all",
-      "craft_total": 6.1,
-      "impact_score": 6.0,
+      "setup": "The best man (Randy) delivers what appears to be a heartfelt toast about Phyllis",
+      "punchline": "The climax of his tribute: 'you're a hell of a bowler' \u2014 bowling is the peak achievement he associates with Phyllis",
+      "craft_total": 7.02,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'You're a hell of a bowler' as a wedding toast is a great anti-climactic punchline. The structure (warm generic opening \u2192 specific weird compliment) is clean. It works on two levels: the specificity of bowling and the implication that this is the most impressive thing Randy knows about Phyllis. Very economical."
+    },
+    {
+      "index": 51,
+      "text": "Michael's speech opening: 'Webster's Dictionary defines \"wedding\" as the fusing of two metals with a hot torch.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael begins his wedding speech with the classic 'Webster's defines' opening",
+      "punchline": "He defines 'wedding' as 'the fusing of two metals with a hot torch' \u2014 he's either looking up the wrong word (welding) or has genuinely confused welding and wedding",
+      "craft_total": 8.65,
+      "impact_score": 9.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's greatest jokes. The 'Webster's defines' speech clich\u00e9 is well-established, but the payoff is perfect: Michael has looked up (or invented) the definition of 'welding' rather than 'wedding.' The confidence with which he delivers 'the fusing of two metals with a hot torch' before connecting it to marriage is breathtaking. Then 'I think you guys are two metals... gold medals' \u2014 the double pun on medal/metal is both groan-worthy and genuinely clever. The construction is flawless. This is among the best Michael Scott jokes in the series."
+    },
+    {
+      "index": 52,
+      "text": "Michael: '...Well, you know something? I think you guys are two metals... gold medals.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Having defined 'wedding' as welding (fusing metals), Michael works the metaphor.",
+      "punchline": "He pivots 'metals' to 'gold medals' \u2014 a pun that is simultaneously lame and somehow endearing.",
+      "craft_total": 8.01,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The metals-to-gold-medals pivot is a great example of Michael stumbling into a decent joke by accident. He's so committed to his wrongheaded metaphor that he generates a pun. Works as payoff for the welding joke and as standalone wordplay. High rewatch bonus."
+    },
+    {
+      "index": 53,
+      "text": "Michael interrupts himself multiple times with alternate speech openings: 'For those of you who don't know me...' then 'To quote from The Princess Bride...' then a confessional explaining he likes to 'try out three or four different ones' when 'time is not a factor'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "meta_self_referential"
+      ],
+      "setup": "Michael is at the podium delivering a wedding speech",
+      "punchline": "He has multiple 'opening lines' prepared and performs them all sequentially at the actual wedding, revealing he doesn't understand that these are supposed to be alternatives, not a sequence",
+      "craft_total": 7.36,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The confessional explanation \u2014 'when time is not a factor, I like to try out three or four different ones' \u2014 is a perfect Michael insight. He has prepared for speeches by preparing multiple openings, but he cannot select one; he uses them all. The implicit suggestion that time IS a factor at a wedding (the guests are waiting) goes completely unnoticed by him."
+    },
+    {
+      "index": 54,
+      "text": "Michael's speech: calling Phyllis's high school nickname 'Easy Rider'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael is giving a toast and describing Phyllis's past",
+      "punchline": "He claims her high school nickname was 'Easy Rider' \u2014 implying she had a promiscuous reputation, announced at her own wedding reception",
+      "craft_total": 7.04,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Michael speech disaster \u2014 the 'Easy Rider' claim is inappropriate enough to be genuinely uncomfortable. The qualifier 'I swear' implies he's vouching for this as fact, making it worse. The cringe works because it follows immediately after what seemed like he might be recovering."
+    },
+    {
+      "index": 55,
+      "text": "Bob Vance wrests the microphone away from Michael mid-speech. Michael refuses to yield, then is forcibly removed: 'You're outta here! I hate you!'",
+      "characters": [
+        "Michael",
+        "Bob Vance"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "escalation"
+      ],
+      "setup": "Michael's speech has gone off the rails; Bob Vance tries to end it by taking the mic",
+      "punchline": "Physical confrontation over a microphone at a wedding reception, culminating in Michael being ejected from his own employee's wedding",
+      "craft_total": 6.79,
+      "impact_score": 7.5,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sets up Michael's inexperience with bachelor parties and Todd's incredulity"
+      "explanation": "The physical escalation pays off the speech disaster arc. Michael being literally removed from the wedding by the groom is a satisfying physical comedy beat. 'I hate you!' as his exit line is classic petulant Michael. Impact is strong because the audience has been waiting for someone to stop him."
     },
     {
-      "index": 14,
-      "text": "Okay, co-ed naked strippers in this office, for realsies.",
+      "index": 56,
+      "text": "Jim to Pam: 'When are we gonna get to see some of those famous Beesly dance moves?' Pam: 'I'm such a dorky dancer.' Jim: 'I know! And it's very cute.'",
       "characters": [
-        "Michael"
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Jim is encouraging Pam to dance at the wedding reception",
+      "punchline": "Pam calls herself a 'dorky dancer'; Jim immediately agrees \u2014 'I know!' \u2014 then adds 'And it's very cute,' turning the agreement into a compliment",
+      "craft_total": 6.9,
+      "impact_score": 6.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The rhythm of this exchange is very good \u2014 Jim's immediate 'I know!' (agreement) followed by '...and it's very cute' (flip to compliment) is a nice mini-misdirection. The exchange also carries emotional weight given the Jim/Pam/Karen dynamic. Light but well-executed."
+    },
+    {
+      "index": 57,
+      "text": "Jim's confessional: 'Hypothetically, if I thought Pam was interested, then...' followed by another confessional: 'No, it's totally hypothetical.'",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "awkward_silence"
+      ],
+      "setup": "Jim begins a confessional about his feelings for Pam, then catches himself",
+      "punchline": "The cut to a second confessional where he simply says 'No, it's totally hypothetical' \u2014 implying the camera (and audience) already knows it's not hypothetical at all",
+      "craft_total": 7.43,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is a beautifully constructed mockumentary joke. The format \u2014 two separate confessional takes \u2014 implies Jim tried to say something, stopped, and returned later to walk it back. The 'No, it's totally hypothetical' is funnier for what it doesn't say. Perfect economy: the joke is entirely in what Jim refuses to admit. Rewatch bonus because viewers know where this leads."
+    },
+    {
+      "index": 58,
+      "text": "Michael trying to re-enter the wedding reception: 'Dwight, just...' Dwight: 'No, it's Bob and Phyllis' orders. Look, I just wanted to go in and quietly sit and have a piece of cake.' Michael: 'I'm not even gonna dance.' / 'One song maybe.'",
+      "characters": [
+        "Michael",
+        "Dwight"
       ],
       "joke_types": [
         "character_comedy",
         "escalation"
       ],
-      "setup": "Michael decides to get strippers after Todd's advice",
-      "punchline": "He announces it with juvenile language ('for realsies') and complete inappropriateness",
-      "craft_total": 6.55,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Dwight has been tasked with keeping Michael out of the reception after he was ejected",
+      "punchline": "Michael's negotiating position immediately undermines itself: 'I'm not even gonna dance' \u2192 '...one song maybe' in consecutive sentences",
+      "craft_total": 6.67,
+      "impact_score": 6.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael's childish language while announcing something sexual is perfectly in character"
+      "explanation": "Michael's immediate self-contradiction \u2014 promising not to dance then saying 'one song maybe' immediately \u2014 is a great quick joke. Dwight's role as reluctant but dutiful bouncer ('It gives me no pleasure') adds another layer."
     },
     {
-      "index": 15,
-      "text": "Under no circumstance should a man strip off his clothes in this office. Shut up, Angela!",
+      "index": 59,
+      "text": "Dwight to Michael: 'You are a real-life wedding crasher and I must bounce you. I'm sorry. It gives me no pleasure.'",
       "characters": [
-        "Angela",
-        "Michael"
+        "Dwight"
       ],
       "joke_types": [
         "character_comedy",
-        "reaction_beat"
+        "irony_sarcasm"
       ],
-      "setup": "Angela voices the obvious objection to office strippers",
-      "punchline": "Michael immediately shuts her down despite her being completely right",
-      "craft_total": 6.57,
-      "impact_score": 6.5,
+      "setup": "Dwight is blocking Michael from re-entering the reception",
+      "punchline": "'It gives me no pleasure' \u2014 Dwight claiming regret at bouncing his boss, delivered with complete insincerity (it almost certainly gives him significant pleasure)",
+      "craft_total": 7.57,
+      "impact_score": 7.33,
       "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Michael dismissing reasonable objections when he's excited about bad ideas"
+      "is_callback": 1,
+      "explanation": "Dwight's 'it gives me no pleasure' is a good ironic line \u2014 the audience knows it gives him enormous pleasure. The callback to the wedding crasher setup (now Michael is the crasher) is a satisfying structural payoff."
     },
     {
-      "index": 16,
-      "text": "Good advice, Beesly. Thanks. See you out there? Yeah. Don't fall asleep at your desk!",
+      "index": 60,
+      "text": "Jim and Karen's moment: Jim reveals he paid Scrantonicity $20 to play 'their song' \u2014 which turns out to be a song they associate together.",
+      "characters": [
+        "Jim",
+        "Karen"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Karen notes Scrantonicity is playing a song she thought wasn't part of their Police setlist.",
+      "punchline": "Jim reveals he arranged it \u2014 a romantic gesture that also shows he has a soft side, contextually funny against his exterior coolness.",
+      "craft_total": 6.58,
+      "impact_score": 6.0,
+      "quotability": 3.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "More romantic beat than joke, but the mild awkwardness of Jim bribing the cover band functions as light comedy. The rewatch bonus exists because knowing Jim dances with Pam instead adds irony. Modest comedy on its own."
+    },
+    {
+      "index": 61,
+      "text": "Jim asks Pam to dance at the wedding by simply saying: 'You wanna dance?' \u2014 followed by a long beat and then them dancing",
       "characters": [
         "Jim",
         "Pam"
       ],
       "joke_types": [
         "awkward_silence",
-        "cringe_discomfort"
+        "reaction_beat"
       ],
-      "setup": "Jim and Pam have an awkward conversation about sleep advice",
-      "punchline": "Jim's overly cheerful exit line feels forced and uncomfortable",
-      "craft_total": 6.82,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Jim has orchestrated having 'their song' played; he has revealed he bribed the band",
+      "punchline": "The simple directness of 'You wanna dance?' \u2014 after all the buildup, the offer is completely unadorned; the comedy is in the contrast between the emotional weight and the casual phrasing",
+      "craft_total": 6.39,
+      "impact_score": 6.33,
+      "quotability": 6.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Captures the forced normalcy Jim and Pam are trying to maintain while things are clearly awkward"
+      "explanation": "More sweet than funny, but the tonal contrast \u2014 loaded moment, plain words \u2014 has comedic value. The long beat before the answer is a classic Office use of awkward silence as a comedic/emotional tool. High rewatch value."
     },
     {
-      "index": 17,
-      "text": "Ruddy cheeks, thick calves, no tats, no moles. No tats. No, tats. Of course, I want... Stop. That's disgusting.",
+      "index": 62,
+      "text": "Jim to Pam after the dance: 'Hey, you want to get out of here?' \u2014 with Karen watching from nearby",
       "characters": [
-        "Michael",
-        "Dwight"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Michael gives Dwight specifications for hiring a stripper",
-      "punchline": "The miscommunication about 'tats' vs body parts creates awkward confusion",
-      "craft_total": 6.65,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good miscommunication humor between Michael and Dwight with escalating awkwardness"
-    },
-    {
-      "index": 18,
-      "text": "He hasn't even said a word yet. Just giggling.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "reaction_beat",
-        "observational"
-      ],
-      "setup": "Dwight is on the phone with stripper services",
-      "punchline": "The person on the other end is just laughing at Dwight's request",
-      "craft_total": 6.78,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good reaction beat showing how ridiculous Dwight's request sounds to professionals"
-    },
-    {
-      "index": 19,
-      "text": "Michael referred me to a male strip club called Banana Slings. Instead, I called the Scholastic Speakers of Pennsylvania.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Dwight was supposed to hire a male stripper",
-      "punchline": "He deliberately hired an educational speaker instead",
-      "craft_total": 8.3,
-      "impact_score": 8.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent misdirection and perfectly in character for Dwight to sabotage with something educational"
-    },
-    {
-      "index": 20,
-      "text": "Well, actually, I never was President. Yes, but Ben Franklin was.",
-      "characters": [
-        "Ben Franklin",
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Michael calls Ben Franklin one of the sexiest presidents",
-      "punchline": "The actor corrects him, but Michael confidently doubles down on being wrong",
-      "craft_total": 7.22,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Michael moment of being corrected and doubling down on being wrong"
-    },
-    {
-      "index": 21,
-      "text": "'Is she hot?' Text back, 'Kind of.'",
-      "characters": [
-        "Michael",
-        "Ryan"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Someone texts asking about the stripper",
-      "punchline": "Michael's lukewarm response reveals his disappointment",
-      "craft_total": 6.7,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good understated humor showing Michael's disappointment with the stripper he hired"
-    },
-    {
-      "index": 22,
-      "text": "Ben Franklin tied a cherry stem in his mouth! Well, that is because I am a Renaissance man.",
-      "characters": [
-        "Party guests",
-        "Ben Franklin"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "The women are getting excited about Ben Franklin's party trick",
-      "punchline": "The actor stays in character while doing something completely anachronistic",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good commitment to character while doing something completely modern and silly"
-    },
-    {
-      "index": 23,
-      "text": "Who wants some man meat? I do! I want some man meat! Michael, Dwight would like your man meat. Well, then, my man meat he shall have.",
-      "characters": [
-        "Michael",
-        "Dwight",
-        "Jim"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Michael announces the grilled meat",
-      "punchline": "The phrasing creates unintentional sexual innuendo that everyone plays into",
-      "craft_total": 5.93,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Juvenile but effective innuendo humor that builds through multiple characters"
-    },
-    {
-      "index": 24,
-      "text": "Oh, no! I was confused by your phrasing.",
-      "characters": [
+        "Jim",
         "Pam"
       ],
       "joke_types": [
-        "misdirection",
-        "character_comedy"
-      ],
-      "setup": "Karen asks if Pam is still interested in Jim",
-      "punchline": "Pam's response suggests she misunderstood, creating ambiguity about her true feelings",
-      "craft_total": 7.65,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Clever misdirection that reveals character while maintaining plausible deniability"
-    },
-    {
-      "index": 25,
-      "text": "You know what I find sexy? Pam's art. She's an artist and I appreciate that. It's very moving and sexy, the art.",
-      "characters": [
-        "Roy"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Roy is trying to show he's not into strippers",
-      "punchline": "His awkward, repetitive praise of Pam's art shows he's clearly uncomfortable and lying",
-      "craft_total": 6.92,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Roy's discomfort through overcompensating praise"
-    },
-    {
-      "index": 26,
-      "text": "You smell nice, like Tide. What's that? You smell like Tide detergent. Do you use Tide detergent?",
-      "characters": [
-        "Bob Vance",
-        "Elizabeth"
-      ],
-      "joke_types": [
         "cringe_discomfort",
-        "character_comedy"
+        "awkward_silence"
       ],
-      "setup": "Bob is getting a lap dance from a stripper",
-      "punchline": "Instead of being seductive, he awkwardly fixates on her laundry detergent",
-      "craft_total": 7.4,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "Jim and Pam have just shared a dance to their song, which Jim secretly arranged",
+      "punchline": "Jim's line 'You wanna get out of here?' \u2014 a loaded suggestion that could mean many things \u2014 with the unstated presence of Karen complicating everything",
+      "craft_total": 5.64,
+      "impact_score": 5.25,
+      "quotability": 5.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliantly awkward subversion of the typical lap dance scenario with mundane domestic concerns"
+      "explanation": "More cringe/dramatic irony than outright comedy, but the loaded ambiguity of the line and its implications for all three characters creates comedic tension. The audience is aware of Karen; Jim seems less so."
     },
     {
-      "index": 27,
-      "text": "And you are engaged and I'm sure you have a boyfriend in prison or something, so...",
+      "index": 63,
+      "text": "Jim's confessional: 'Here's a non-hypothetical. I'm really happy I'm with Karen.'",
       "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "callback",
+        "irony_sarcasm"
+      ],
+      "setup": "Jim's earlier confessional said 'hypothetically, if I thought Pam was interested...' and then 'no, it's totally hypothetical'",
+      "punchline": "'Here's a non-hypothetical. I'm really happy I'm with Karen.' \u2014 Jim overcorrecting, which immediately reads as the opposite of convincing; the 'non-hypothetical' framing makes it feel like a deliberate lie",
+      "craft_total": 8.14,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is one of the episode's best structural jokes. The 'non-hypothetical' callback to the 'hypothetical' confessional is perfectly constructed \u2014 Jim has been so caught out that he's now issuing explicit declarations that he's happy with Karen, which reads as 100% protesting too much. The comedy comes entirely from what's unsaid. The mockumentary format earns this joke because the camera has been watching Jim all day."
+    },
+    {
+      "index": 64,
+      "text": "Michael crashes back into the reception and is immediately celebrated: 'Totally! Yeah!'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "escalation"
+      ],
+      "setup": "Michael has been banned from the reception by Bob Vance; Dwight is guarding the door",
+      "punchline": "Michael somehow gets back in and is apparently welcomed \u2014 suggesting his re-entry was more triumphant than stealthy",
+      "craft_total": 5.9,
+      "impact_score": 6.17,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The resolution to Michael's ejection is slightly anticlimactic without more context. The implied physical comedy of his return works but isn't as strong as his ejection."
+    },
+    {
+      "index": 65,
+      "text": "Michael to Bob: 'You and Phyllis will be great together.' Bob: 'We are great together. We are a great team.' Michael: 'The Celtics were a great team.' Bob: 'Yes, yes... they were.' Michael: 'Robert Parrish.'",
+      "characters": [
+        "Michael",
         "Bob Vance"
       ],
       "joke_types": [
-        "character_comedy",
-        "dark_subversive"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Bob is trying to shut down the inappropriate situation",
-      "punchline": "He makes an assumption about the stripper's personal life that's both judgmental and probably accurate",
-      "craft_total": 6.75,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Michael and Bob are having a cordial conversation about Bob and Phyllis being a great team",
+      "punchline": "Michael pivots from 'great team' to the Celtics to naming a specific Celtic \u2014 Robert Parrish \u2014 as the conversation's logical conclusion, leaving Bob with nothing to say",
+      "craft_total": 7.44,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark humor that feels realistic while maintaining character sympathy"
+      "explanation": "Michael's conversational free-association \u2014 team \u2192 Celtics \u2192 Robert Parrish \u2014 reaches such a specific destination that Bob can only confirm 'Yes, yes... they were.' The specificity of 'Robert Parrish' (a somewhat obscure Celtic) is what makes this work; a famous player would be less funny. Classic Michael non-sequitur."
     },
     {
-      "index": 28,
-      "text": "You want me to answer phones with my clothes on?",
+      "index": 66,
+      "text": "Michael finds Phyllis at the wedding, apologizes, and is about to be forgiven \u2014 then reveals: 'You found Uncle Al!'",
       "characters": [
-        "Elizabeth"
+        "Michael",
+        "Phyllis"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "callback",
+        "setup_punchline"
       ],
-      "setup": "Michael assigns the stripper to answer phones",
-      "punchline": "She's confused about doing normal work while clothed",
-      "craft_total": 7.1,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Michael has been seeking forgiveness from Phyllis for ruining her wedding; the Uncle Al disappearance was announced earlier",
+      "punchline": "Michael has accidentally solved the Uncle Al crisis while wandering around, which becomes his accidental redemption \u2014 and Phyllis forgives him because of it",
+      "craft_total": 7.89,
+      "impact_score": 8.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good reversal showing the stripper's professional confusion about normal office work"
+      "is_callback": 1,
+      "explanation": "A well-constructed callback payoff. The Uncle Al setup was planted early and seemed like a throwaway gag; it pays off here as Michael's accidental heroism. 'Yeah, yeah, he's kind of a weirdo' as Michael's description of the missing dementia patient is the button. The structure is satisfying \u2014 Michael accidentally does something right for once."
     },
     {
-      "index": 29,
-      "text": "Ben Franklin, you're really kind of a sleazebag.",
+      "index": 67,
+      "text": "Michael's confessional: 'They say that your wedding day goes by in such a flash that you're lucky if you even get a piece of your own cake. I say that's crazy. I say, \"Let them eat cake.\" Margaret Thatcher said that about marriage.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
-      ],
-      "setup": "Ben Franklin admits to keeping secrets from his wife",
-      "punchline": "Michael's blunt assessment destroys any remaining reverence for the historical figure",
-      "craft_total": 7.3,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's blunt honesty about a founding father is both shocking and accurate"
-    },
-    {
-      "index": 30,
-      "text": "'Secrets, secrets are no fun. Secrets, secrets hurt someone.'",
-      "characters": [
-        "Elizabeth"
-      ],
-      "joke_types": [
-        "character_comedy",
         "absurdist"
       ],
-      "setup": "Michael asks the stripper for relationship advice",
-      "punchline": "She responds with a children's rhyme as if it's profound wisdom",
-      "craft_total": 7.48,
-      "impact_score": 7.5,
+      "setup": "Michael reflects on weddings with apparent wisdom",
+      "punchline": "He attributes 'Let them eat cake' to (a) Margaret Thatcher and (b) specifically about marriage \u2014 misattributing the Marie Antoinette quote, misidentifying the speaker, and misconstruing the context all in one sentence",
+      "craft_total": 7.66,
+      "impact_score": 7.67,
       "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Absurd juxtaposition of seeking deep advice and getting nursery rhyme wisdom that somehow works"
+      "explanation": "This is a beautifully layered ignorance joke. Michael commits three separate errors in one sentence: (1) 'Let them eat cake' is misattributed to Marie Antoinette anyway, (2) Michael attributes it to Thatcher, (3) he says she said it 'about marriage.' Then 'Smart broad' as his assessment of Thatcher is a perfect coda. The joke rewards cultural knowledge \u2014 the more you know about the original quote's origins and context, the funnier Michael's version becomes. One of the episode's strongest closing jokes."
     },
     {
-      "index": 31,
-      "text": "I don't care what Jim says. That is not the real Ben Franklin. I am 99% sure.",
+      "index": 68,
+      "text": "Michael's button: 'Smart broad.' \u2014 referring to Margaret Thatcher",
       "characters": [
-        "Dwight"
+        "Michael"
       ],
       "joke_types": [
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Dwight watches the Ben Franklin impersonator",
-      "punchline": "He leaves 1% doubt about whether this might actually be the historical Ben Franklin",
-      "craft_total": 8.42,
-      "impact_score": 8.5,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Dwight logic - being 99% sure about something completely obvious shows his literalmindedness"
+      "setup": "Michael has just (incorrectly) quoted Thatcher on marriage",
+      "punchline": "'Smart broad.' \u2014 Michael's succinct, condescending-affectionate assessment of a world leader",
+      "craft_total": 8.25,
+      "impact_score": 8.25,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Two words \u2014 'Smart broad' \u2014 as Michael's ultimate assessment of Margaret Thatcher is a perfect button. The casual sexism, the condescension, and the complete confidence in his wrong quote all converge. Maximum economy. Highly quotable."
     },
     {
-      "index": 32,
-      "text": "God, I need a boyfriend. You know, Ryan, I'm... I'm totally ready to be set up with one of your business school friends. Whenever.",
+      "index": 69,
+      "text": "Final scene: Michael dances exuberantly, sends the cake flying off the table, chaos ensues. 'Be careful with the... Oh no! Oh, wow! Phyllis! Come on! You look like a clown. Here. Get me, get me! Ah! Oh!'",
       "characters": [
-        "Kelly",
-        "Ryan"
+        "Michael",
+        "Phyllis"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "physical_slapstick",
+        "escalation"
       ],
-      "setup": "Kelly is lamenting being single",
-      "punchline": "She immediately pivots to pressuring Ryan to set her up, showing her desperation",
-      "craft_total": 6.35,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "The wedding reception appears to be ending on a positive note after Michael's redemption",
+      "punchline": "Michael's dancing causes the wedding cake to go flying; chaos and frosting ensue as the episode closes",
+      "craft_total": 6.25,
+      "impact_score": 7.0,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Kelly's desperation but not particularly clever"
-    },
-    {
-      "index": 33,
-      "text": "It really makes you wonder how Ben Franklin can become President, but someone like Elizabeth can't.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Michael reflects on the day's events",
-      "punchline": "He's still wrong about Ben Franklin being President while praising a stripper's wisdom",
-      "craft_total": 7.5,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Great callback that shows Michael learned nothing while also revealing his skewed values"
+      "explanation": "Physical comedy closing gag \u2014 Michael's dancing wrecks the cake, which is a fitting final image: he was redeemed, then immediately caused new chaos. 'You look like a clown' suggests Phyllis got frosted. Energetic but not particularly novel as a closing physical bit. Works as a button to Michael's wedding arc."
     }
   ],
   "air_date": "2007-02-08",

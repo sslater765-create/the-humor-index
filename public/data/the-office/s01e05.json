@@ -4,38 +4,58 @@
   "season": 1,
   "episode_number": 5,
   "title": "Basketball",
-  "humor_index": 74.0,
-  "jpm": 2.92,
-  "avg_craft": 6.48,
-  "avg_impact": 6.53,
-  "total_jokes": 54,
-  "war": 27.3,
-  "dominant_joke_types": "[\"character_comedy\", \"cringe_discomfort\", \"absurdist\"]",
-  "standout_joke_ids": "[54, 2, 13]",
-  "weakest_section": "15:00-16:00 range with mostly physical comedy that's harder to assess from transcript",
+  "humor_index": 80.1,
+  "jpm": 3.7,
+  "avg_craft": 6.89,
+  "avg_impact": 6.72,
+  "total_jokes": 67,
+  "war": 53.9,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"cringe_discomfort\"]",
+  "standout_joke_ids": "[3, 19, 67]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "I'm sinking a few, you know swish swish swish, nothing but net! And their jaws just drop to the floor.",
+      "text": "Michael and Ryan doing a 'secret sign' handshake greeting that is clearly not secret at all and slightly awkward",
+      "characters": [
+        "Michael",
+        "Ryan"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Michael greets Ryan with what he calls a 'secret sign,' implying some exclusive bond or cool ritual",
+      "punchline": "The 'secret sign' is clearly something Michael invented to seem cool to the new temp, landing as pathetically try-hard",
+      "craft_total": 6.52,
+      "impact_score": 5.83,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Works as an opener because it immediately establishes Michael's desperate need to be cool in front of younger people. Character-specific but not transcendent."
+    },
+    {
+      "index": 2,
+      "text": "Michael's talking-head: 'I play basketball every weekend... I start messin' around. And, uh, I'm sinkin' a few. You know? Swish, swish, swish. Nothin' but net. And, uh, their jaws just drop to the floor.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "irony_sarcasm"
       ],
-      "setup": "Michael describing his basketball skills to the camera",
-      "punchline": "The exaggerated sound effects and dramatic description reveal his delusion",
-      "craft_total": 6.35,
+      "setup": "Michael describes himself as a skilled basketball player whose talent stuns the warehouse workers",
+      "punchline": "The self-aggrandizing delivery ('Swish, swish, swish') and the setup for the racial reveal to come makes it clear this is delusional self-mythology",
+      "craft_total": 6.53,
       "impact_score": 6.0,
       "quotability": 5.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Michael self-aggrandizement with childish sound effects. Character-specific and well-structured buildup to the delusion."
+      "explanation": "The 'swish swish swish' self-narration is perfectly Michael \u2014 his storytelling always stars himself as the hero. Rewatch bonus because it sets up the punchline of his actual play later in the episode."
     },
     {
-      "index": 2,
-      "text": "African Americans!",
+      "index": 3,
+      "text": "Michael says 'their jaws just drop to the floor' then pauses and adds: 'African-Americans. Um...' and trails off",
       "characters": [
         "Michael"
       ],
@@ -43,18 +63,38 @@
         "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Michael just described warehouse workers' jaws dropping at his basketball skills",
-      "punchline": "The inappropriate racial observation delivered with complete obliviousness",
-      "craft_total": 7.95,
-      "impact_score": 8.5,
-      "quotability": 7.0,
+      "setup": "Michael is recounting how the warehouse staff were amazed by his basketball skills",
+      "punchline": "He clarifies the race of the people whose jaws dropped, realizing mid-sentence he's being racist, then trails off without completing or walking back the thought",
+      "craft_total": 8.79,
+      "impact_score": 8.67,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Michael moment - maximum cringe with minimal words. The timing and complete lack of self-awareness makes this exceptional cringe comedy."
+      "explanation": "This is exceptional early Office writing. The comedy comes entirely from what Michael DOESN'T say. The pause, the unnecessary racial clarification, and then the trailing 'Um...' as he processes his own racism in real time \u2014 all in a talking head with no one to react \u2014 is brilliant structural comedy. The trailing silence IS the punchline. Only Michael Scott could deliver this. Economy is near-perfect: maximum discomfort with minimum words. Justifies the 8+ score."
     },
     {
-      "index": 3,
-      "text": "Here's what I'm going to do. The hand strikes and gives a flower.",
+      "index": 4,
+      "text": "Dwight privately lobbies Michael to be on the basketball team; Michael references 'Todd Packard' and vouching for Dwight at a pick-up game as the reason he can't play",
+      "characters": [
+        "Michael",
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Dwight asks to be on the team privately, expecting a fair hearing",
+      "punchline": "Michael references some mysterious prior incident with 'Todd Packard' that disqualified Dwight, making it clear Dwight has a documented history of ruining recreational sports",
+      "craft_total": 6.85,
+      "impact_score": 6.5,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Todd Packard name-drop is a great bit of implied comedy \u2014 we don't need to know what happened, the specificity of the name sells that something genuinely bad occurred. The 'I vouched for you' dynamic is rich character work."
+    },
+    {
+      "index": 5,
+      "text": "'The hand strikes and gives a flower.' \u2014 Michael's non-sequitur Zen aphorism before telling Dwight he can't play",
       "characters": [
         "Michael"
       ],
@@ -62,18 +102,18 @@
         "absurdist",
         "character_comedy"
       ],
-      "setup": "Michael needs to reject Dwight but also give him something",
-      "punchline": "The nonsensical pseudo-philosophical metaphor",
-      "craft_total": 6.13,
-      "impact_score": 5.5,
-      "quotability": 6.0,
+      "setup": "Michael is about to deliver bad news to Dwight and frames it with fake philosophical gravitas",
+      "punchline": "The phrase is complete nonsense dressed up as wisdom, which only Michael could believe sounds profound",
+      "craft_total": 7.34,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael's attempt at wisdom comes out as gibberish. Characteristic but not exceptional."
+      "explanation": "Quintessential Michael Scott: deployed as though it means something profound, actually means nothing at all. The specificity of the gibberish ('hand strikes AND gives a flower') shows writing craft. Could only come from Michael."
     },
     {
-      "index": 4,
-      "text": "Assistant to the regional manager. - Same thing. - No it's not. It's lower so. - It's close.",
+      "index": 6,
+      "text": "Michael calls Dwight his 'Assistant Regional Manager'; Dwight corrects him \u2014 'Assistant to the Regional Manager'; Michael says 'Same thing'; Dwight: 'No, it's lower, so...' Michael: 'It's close.'",
       "characters": [
         "Michael",
         "Dwight"
@@ -82,880 +122,489 @@
         "running_gag",
         "character_comedy"
       ],
-      "setup": "Dwight tries to inflate his title",
-      "punchline": "Michael's casual dismissal followed by Dwight's pathetic acceptance",
-      "craft_total": 6.3,
-      "impact_score": 6.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Classic power dynamic between Michael and Dwight. Well-executed familiar bit."
-    },
-    {
-      "index": 5,
-      "text": "God this is so sad, this is the smallest amount of power I've ever seen go to someone's head.",
-      "characters": [
-        "Jim"
-      ],
-      "joke_types": [
-        "observational",
-        "deadpan_understatement"
-      ],
-      "setup": "Dwight is wielding his tiny bit of authority over the weekend schedule",
-      "punchline": "Jim's perfectly delivered assessment",
-      "craft_total": 7.3,
-      "impact_score": 7.5,
+      "setup": "Michael inflates Dwight's title in a moment of apparent generosity",
+      "punchline": "The correction, Michael's dismissal, and Dwight's deflated 'It's close' reveal both characters perfectly \u2014 Michael's carelessness about others' dignity and Dwight's tragicomic acceptance of crumbs",
+      "craft_total": 7.5,
+      "impact_score": 7.33,
       "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Jim observation with excellent economy. The phrase 'smallest amount of power' is precisely calibrated and quotable."
-    },
-    {
-      "index": 6,
-      "text": "Maybe I should sleep with him. I'm kidding. Kidding. Totally kidding.",
-      "characters": [
-        "Pam"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "character_comedy"
-      ],
-      "setup": "Pam hoping Dwight doesn't make her work",
-      "punchline": "The sexual suggestion followed by immediate panic backpedaling",
-      "craft_total": 6.2,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good awkward Pam moment. The escalating 'kidding' protests sell the discomfort."
+      "explanation": "A series-defining running gag, but even in isolation this exchange is beautifully structured. Dwight's 'It's close' is the key \u2014 it's not quite defeat, it's Dwight convincing himself. Character integration is exceptional. Economy is immaculate. The three-beat structure (wrong title \u2192 correction \u2192 dismissal \u2192 sad acceptance) is textbook comedy craft."
     },
     {
       "index": 7,
-      "text": "This is our warehouse, or as I like to call it, the whorehouse.",
+      "text": "Dwight, newly empowered to assign Saturday work, immediately selects Jim",
       "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "cringe_discomfort"
-      ],
-      "setup": "Michael giving Ryan a tour",
-      "punchline": "The inappropriate wordplay",
-      "craft_total": 5.15,
-      "impact_score": 5.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Cheap pun but fits Michael's inappropriate humor. Predictable wordplay."
-    },
-    {
-      "index": 8,
-      "text": "But don't you call it that, I've earned the right.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Michael just made the whorehouse joke",
-      "punchline": "The absurd claim that he's 'earned' the right to make inappropriate jokes",
-      "craft_total": 7.05,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Great character moment. Michael's delusional sense of privilege is perfectly captured in this absurd logic."
-    },
-    {
-      "index": 9,
-      "text": "And here we have 'Miter' Roger's neighborhood'.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Introducing Darryl to Ryan",
-      "punchline": "The Mr. Rogers reference with 'Miter' (a tool pun)",
-      "craft_total": 5.82,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent wordplay combining Mr. Rogers with tool reference. Moderately clever but not exceptional."
-    },
-    {
-      "index": 10,
-      "text": "Darryl Filben, then Bridges, then Rige, then Roger, then Miter' Rogers.",
-      "characters": [
-        "Darryl"
-      ],
-      "joke_types": [
-        "escalation",
-        "absurdist"
-      ],
-      "setup": "Michael's nickname explanation",
-      "punchline": "The ridiculous chain of name evolution",
-      "craft_total": 6.85,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Great escalation joke. The absurd progression from real name to 'Miter Rogers' through random intermediary steps is well-crafted."
-    },
-    {
-      "index": 11,
-      "text": "You're still getting it regular man? I mean I can tell her it's part of the job.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Michael talking to Roy about Pam",
-      "punchline": "The inappropriate sexual comment about an employee",
-      "craft_total": 6.15,
-      "impact_score": 7.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Peak Michael inappropriateness. Creates genuine discomfort, which is the goal of cringe comedy."
-    },
-    {
-      "index": 12,
-      "text": "Repel her.",
-      "characters": [
-        "Roy"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
-      ],
-      "setup": "Michael's inappropriate comment",
-      "punchline": "Roy's perfectly timed, flat dismissal",
-      "craft_total": 7.47,
-      "impact_score": 8.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect economy and timing. Two words that completely shut down Michael while revealing Roy's character. Exceptional reaction beat."
-    },
-    {
-      "index": 13,
-      "text": "Pam gets a little down. Her toaster having broke, which she got at her engagement shower, for a wedding that still has yet to be set. And that was three years ago.",
-      "characters": [
-        "Jim"
-      ],
-      "joke_types": [
-        "observational",
-        "dark_subversive"
-      ],
-      "setup": "Explaining Pam's phone call about a warranty",
-      "punchline": "The reveal of the deeper sadness behind the mundane complaint",
-      "craft_total": 7.8,
-      "impact_score": 8.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Masterful structure building from mundane to tragic. The escalation from broken toaster to life disappointment is expertly crafted and emotionally complex."
-    },
-    {
-      "index": 14,
-      "text": "Well, I'm glad that sometime is a busy time because whenever I'm down here, it doesn't seem too busy to me.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Warehouse claims they're busy at one o'clock",
-      "punchline": "Michael's passive-aggressive insult about their work ethic",
-      "craft_total": 6.18,
-      "impact_score": 6.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Michael antagonism. Shows his inability to let things go and need to get the last word."
-    },
-    {
-      "index": 15,
-      "text": "You can dish it out but you can't take it.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "reaction_beat"
-      ],
-      "setup": "Warehouse workers' silence after his insult",
-      "punchline": "The ironic accusation when he's the one who can't handle pushback",
-      "craft_total": 5.12,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Clich\u00e9d phrase but works for Michael's character. Shows his projection and defensiveness."
-    },
-    {
-      "index": 16,
-      "text": "Like that dwarf, from 'Lord of the Rings'. - Gimli. - Nerd. - That is why you're not on the team.",
-      "characters": [
-        "Michael",
-        "Dwight"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "setup_punchline"
-      ],
-      "setup": "Michael makes LOTR reference, Dwight corrects him",
-      "punchline": "Michael using Dwight's knowledge against him as justification",
-      "craft_total": 6.97,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Michael logic - make reference, get corrected, use correction as evidence against the corrector. Great character work."
-    },
-    {
-      "index": 17,
-      "text": "Oh ul, I'll ul. Dragon Slayer. Ten point power sword. That's him.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Trying to seem cool after calling Dwight a nerd",
-      "punchline": "The attempt at gaming jargon reveals his own nerdiness",
-      "craft_total": 6.35,
-      "impact_score": 6.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good hypocrisy moment. Michael's fake gaming knowledge exposes his own nerdiness after mocking Dwight."
-    },
-    {
-      "index": 18,
-      "text": "Stanley, of course. - I'm sorry? - What do you play, center? - Why of course? What's that supposed to mean?",
-      "characters": [
-        "Michael",
-        "Stanley"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Michael picking his basketball team",
-      "punchline": "The racial assumption and Stanley's immediate pushback",
-      "craft_total": 7.07,
-      "impact_score": 7.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Sharp cringe moment. Stanley's immediate challenge creates perfect tension and calls out Michael's assumptions."
-    },
-    {
-      "index": 19,
-      "text": "I don't know, I don't remember saying that. - I heard it. - People hear a lot of things, man.",
-      "characters": [
-        "Michael",
-        "Stanley"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Stanley confronting Michael about his 'of course' comment",
-      "punchline": "Michael's pathetic denial and deflection",
-      "craft_total": 6.38,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good follow-up to the racial assumption. Michael's cowardly backpedaling is characteristic."
-    },
-    {
-      "index": 20,
-      "text": "But I'm getting paid to skip lunch right? Yes. Yes, this is business. The business of team building and moral boosting.",
-      "characters": [
-        "Ryan",
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Ryan questioning his participation",
-      "punchline": "Michael's ridiculous justification for the game",
-      "craft_total": 5.93,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Typical Michael corporate speak. The phrase 'business of team building' is appropriately absurd."
-    },
-    {
-      "index": 21,
-      "text": "I will use your talents come baseball season my friend, or if we box.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Toby offering to help with basketball",
-      "punchline": "The casual mention of workplace boxing",
-      "craft_total": 6.47,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good absurdist Michael moment. The casual 'or if we box' suggests he's planning workplace combat sports."
-    },
-    {
-      "index": 22,
-      "text": "I have sport's bra. No, no! Ridiculous.",
-      "characters": [
-        "Meredith",
-        "Michael"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Meredith volunteering for the team",
-      "punchline": "The inappropriate overshare and Michael's horrified reaction",
-      "craft_total": 5.65,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard Meredith inappropriate comment. Works for character but not exceptional."
-    },
-    {
-      "index": 23,
-      "text": "Threat neutralized.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Making Jim in charge of schedules to counter Dwight's threat",
-      "punchline": "The military-style assessment of a minor office power play",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Michael delusion. Treating office politics like military strategy. Excellent economy."
-    },
-    {
-      "index": 24,
-      "text": "You know, some pink tails, little halter top you can tie that up, and you know something a little... just useful for a change, just this once.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Asking Pam to be a cheerleader",
-      "punchline": "The inappropriate costume request ending with the insulting 'useful' comment",
-      "craft_total": 5.6,
-      "impact_score": 7.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Peak inappropriate Michael. The 'useful for a change' is the real sting after the sexual objectification."
-    },
-    {
-      "index": 25,
-      "text": "Yeah I bet you would, just try not to be too gay on the court. And by gay I mean, you know, not in a homosexual way at all, I mean, you know, like the bad at sports way.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Oscar volunteering to cheerleader",
-      "punchline": "The horrible 'clarification' that makes it worse",
-      "craft_total": 6.07,
-      "impact_score": 8.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Classic Michael trying to fix offensive comment by explaining it, making it worse. The awkward over-explanation is perfectly in character."
-    },
-    {
-      "index": 26,
-      "text": "I think that goes without saying.",
-      "characters": [
-        "Oscar"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
-      ],
-      "setup": "Michael's horrible explanation of his gay comment",
-      "punchline": "Oscar's perfectly dry response",
-      "craft_total": 7.38,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Oscar reaction. The deadpan delivery and perfect timing make this an excellent straight-man response."
-    },
-    {
-      "index": 27,
-      "text": "Bless would be those who sit and wait.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Being told he's an alternate for the game",
-      "punchline": "The pseudo-biblical misquote",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Dwight pompousness. The garbled biblical reference shows his character perfectly."
-    },
-    {
-      "index": 28,
-      "text": "Right in your face. Why don't we make it more interesting? Loser buys dinner at Farley's.",
-      "characters": [
-        "Michael",
-        "Roy"
-      ],
-      "joke_types": [
-        "escalation",
-        "setup_punchline"
-      ],
-      "setup": "Michael trash talking about the game",
-      "punchline": "Roy immediately raising the stakes",
-      "craft_total": 6.17,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation setup. Roy's casual raising of stakes shows the warehouse crew's confidence."
-    },
-    {
-      "index": 29,
-      "text": "I like the way you think. You know what I'll take that one step further: Loser works on Saturday.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Roy suggests dinner bet",
-      "punchline": "Michael escalates to something that affects employees, not him",
-      "craft_total": 7.0,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Great Michael moment - escalates the bet but doesn't realize he's betting other people's weekends, not his own."
-    },
-    {
-      "index": 30,
-      "text": "No, that's not of much fun.",
-      "characters": [
-        "Roy"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
-      ],
-      "setup": "Michael's Saturday work bet",
-      "punchline": "Roy's flat assessment that working isn't fun",
-      "craft_total": 6.3,
-      "impact_score": 6.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good straight-man response. Roy's practical assessment deflates Michael's drama."
-    },
-    {
-      "index": 31,
-      "text": "Classic beginners mistaken, eating before game.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Seeing someone eating before the game",
-      "punchline": "The confident but wrong assessment with poor grammar",
-      "craft_total": 6.25,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Michael fake expertise. The grammar mistake ('mistaken' instead of 'mistake') adds to the incompetence."
-    },
-    {
-      "index": 32,
-      "text": "I'm just saying Roy is very competitive, and he wants to take the wave runners to the lake this Saturday, so...",
-      "characters": [
-        "Pam"
-      ],
-      "joke_types": [
-        "setup_punchline",
-        "character_comedy"
-      ],
-      "setup": "Jim asking Pam to wish him luck",
-      "punchline": "The reveal that Roy has specific weekend plans, raising stakes",
-      "craft_total": 6.77,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good setup for stakes. The mundane detail of wave runners makes it relatable and specific."
-    },
-    {
-      "index": 33,
-      "text": "Well I'm going to the outlet mall on Saturday, so if you want to save big on brand names, and Roy has to work, which he will, because I'm also competitive, you should feel free to come along.",
-      "characters": [
+        "Dwight",
         "Jim"
       ],
       "joke_types": [
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Pam mentioning Roy's lake plans",
-      "punchline": "Jim's 'competitive' outlet mall invitation vs. wave runners",
-      "craft_total": 7.35,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Michael assigns Dwight the task of scheduling weekend workers to avoid dealing with the complaints himself",
+      "punchline": "Dwight uses the microscopic authority instantly and vindictively, going straight for Jim",
+      "craft_total": 7.16,
+      "impact_score": 7.25,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent Jim humor. The contrast between exciting wave runners and mundane outlet mall shopping, delivered with mock competitiveness, is perfectly crafted."
+      "explanation": "Completely character-specific. Dwight's petty authority abuse is one of the show's richest veins. No setup needed \u2014 the audience understands immediately."
     },
     {
-      "index": 34,
-      "text": "I think I'll see you at the mall... yeah.",
+      "index": 8,
+      "text": "Jim's talking-head: 'God, this is so sad. This is the smallest amount of power I've ever seen go to someone's head.'",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Dwight has just used his scheduling authority to immediately target Jim",
+      "punchline": "Jim's camera look and perfectly calibrated deadpan commentary \u2014 'smallest amount of power' \u2014 nails the absurdity with elegant economy",
+      "craft_total": 7.47,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jim's confessionals are the show's Greek chorus and this is a strong example. 'Smallest amount of power' is precise, quotable, and perfectly captures the Dwight dynamic. Approaches 8 territory in craft because of its economy and character specificity."
+    },
+    {
+      "index": 9,
+      "text": "Pam's talking-head: 'Maybe I should sleep with him. I'm kidding. Kidding. Totally kidding.'",
       "characters": [
         "Pam"
       ],
       "joke_types": [
-        "reaction_beat",
-        "character_comedy"
+        "cringe_discomfort",
+        "deadpan_understatement"
       ],
-      "setup": "Jim's outlet mall vs Roy's lake invitation",
-      "punchline": "Pam's resigned acceptance of the less exciting option",
-      "craft_total": 6.52,
-      "impact_score": 6.5,
+      "setup": "Pam explains her fiance has plans for Saturday and she hopes Dwight doesn't schedule her",
+      "punchline": "She floats sleeping with Dwight as a solution, then rapidly and emphatically walks it back \u2014 the walking-back being funnier than the joke itself",
+      "craft_total": 6.71,
+      "impact_score": 6.67,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character beat. Pam's deflated delivery shows her relationship disappointment subtly."
+      "explanation": "The triple walk-back ('I'm kidding. Kidding. Totally kidding.') is funnier than the initial joke \u2014 the escalating reassurance implies she half-meant it, which is its own character revelation about how desperate she is. Solid."
     },
     {
-      "index": 35,
-      "text": "Of course if you beat us, you're fired. That's a joke!",
+      "index": 10,
+      "text": "Michael: 'Managing... by walkin' around!' said to no one in particular as he strides purposefully through the office",
       "characters": [
         "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael is about to head to the warehouse",
+      "punchline": "He narrates his own management style like he's coined a revolutionary philosophy, while doing something completely mundane",
+      "craft_total": 6.25,
+      "impact_score": 5.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A quick but effective bit \u2014 Michael has absorbed half-digested business-speak and deploys it like gospel. The self-narration of mundane actions is very Season 1 Michael."
+    },
+    {
+      "index": 11,
+      "text": "Michael: 'This is our warehouse, or as I like to call it, the \"whoorehouse.\" But don't you call it that. I've earned the right.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Michael is giving Ryan a tour of the warehouse",
+      "punchline": "The pun itself is weak, but Michael's proprietary claim over it \u2014 'I've earned the right' \u2014 is the actual joke, revealing his delusion that wordplay constitutes cultural capital",
+      "craft_total": 7.15,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke isn't the pun \u2014 it's Michael's possessiveness of the pun. 'I've earned the right' is the line, and it's a strong character beat. Only Michael would believe a low-grade wordplay gives you territorial rights."
+    },
+    {
+      "index": 12,
+      "text": "Michael introduces the foreman: 'This is the foreman, Mitta Rogers.' \u2014 'That's not my real name.' \u2014 'It's Darryl. Darryl is Mitta Rogers.' \u2014 Extended chain: Darryl Rogers \u2192 Darryl Philbin \u2192 Regis \u2192 Rege \u2192 Roger \u2192 Mitta Rogers",
+      "characters": [
+        "Michael",
+        "Darryl"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "escalation"
+      ],
+      "setup": "Michael is introducing Darryl to Ryan with a nickname",
+      "punchline": "Darryl immediately corrects the nickname; Michael traces the absurd logic chain of how 'Darryl' became 'Mitta Rogers' while Darryl looks on in barely concealed irritation",
+      "craft_total": 6.95,
+      "impact_score": 6.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke is Michael's complete comfort explaining this chain while Darryl endures it. The escalating absurdity of the nickname evolution works. Slightly long in execution but the Darryl reaction sells it."
+    },
+    {
+      "index": 13,
+      "text": "Michael to Roy: 'You still gettin' it regular, man? Huh? I mean, I can tell her it's part of the job.'",
+      "characters": [
+        "Michael",
+        "Roy"
       ],
       "joke_types": [
         "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Michael giving pre-game speech about friendly competition",
-      "punchline": "The inappropriate threat followed by unconvincing disclaimer",
-      "craft_total": 6.75,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Michael has just introduced Roy as Pam's boyfriend, saying she's 'the best-lookin' one upstairs'",
+      "punchline": "Michael immediately asks Roy about his sex life with Pam, then offers to leverage his authority to facilitate it \u2014 in front of everyone, including Ryan",
+      "craft_total": 6.89,
+      "impact_score": 7.17,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Michael inappropriate joke followed by weak disclaimer. The timing and delivery make it clear he's not entirely joking."
+      "explanation": "Pure Michael oversharing \u2014 pivoting from a workplace introduction to sexual inquiry to an offer to pimp out his own receptionist in about ten seconds. Very Season 1, slightly broad but character-accurate."
     },
     {
-      "index": 36,
-      "text": "I stretched before I came.",
+      "index": 14,
+      "text": "Cut to Pam on the phone arguing a warranty claim on her toaster oven",
       "characters": [
+        "Pam"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "deadpan_understatement"
+      ],
+      "setup": "We hear only Pam's side: 'No, I know that the warranty's expired, but isn't it supposed to last longer than two years if it isn't defective?'",
+      "punchline": "Pam's talking-head reveal that the toaster oven was from an engagement shower for a wedding that 'still has yet to be set' three years later \u2014 the warranty argument is a metaphor for her stalled life",
+      "craft_total": 7.97,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is exceptional writing, arguably the best joke in the episode. The comedy and the pathos are completely fused. The toaster oven's broken warranty is a precise, earned metaphor for Pam's stalled engagement \u2014 three years, still not set. The joke works on two levels simultaneously: as a mundane office scene and as devastating character revelation. The writing trusts the audience to make the connection without spelling it out. Character integration is perfect \u2014 this joke is entirely about Pam and could not exist without the engagement subplot. Justifies the 8.5 score."
+    },
+    {
+      "index": 15,
+      "text": "Michael accuses Darryl of 'chickenin' out' and 'bailin'' when Darryl says they have a 1:15 truck going out",
+      "characters": [
+        "Michael",
+        "Darryl"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael wants the game at 1:00; Darryl explains there's a truck leaving at 1:15",
+      "punchline": "Michael interprets a legitimate scheduling conflict as cowardice, and doubles down by criticizing the warehouse for never seeming busy when he's there",
+      "craft_total": 6.08,
+      "impact_score": 5.75,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional character comedy \u2014 Michael obliviously insulting the people he needs to cooperate with. The 'doesn't seem too busy' line is a classic boss-who-doesn't-understand-operations beat. Competent but not memorable."
+    },
+    {
+      "index": 16,
+      "text": "Michael to his team: 'But you would follow me to the ends of the earth, grumblin' all the way. Like that, uh, dwarf from Lord of the Rings.' \u2014 Pause \u2014 Dwight: 'Gimli.' \u2014 Michael: 'Nerd. That is why you're not on the team.'",
+      "characters": [
+        "Michael",
+        "Dwight"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Michael is giving a motivational speech; he references the dwarf from Lord of the Rings without knowing the character's name",
+      "punchline": "Dwight helpfully provides 'Gimli,' and Michael immediately punishes him for knowing it by calling him a nerd \u2014 despite Michael having made the reference",
+      "craft_total": 7.66,
+      "impact_score": 7.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A near-perfect exchange. The structure is immaculate: Michael creates the setup by using a reference he can't complete, Dwight completes it helpfully, and Michael punishes Dwight for the knowledge Michael just solicited. The irony is total \u2014 Michael is the one who brought up Lord of the Rings. Dwight's sincere helpfulness makes it land harder. Economy is excellent (the whole thing takes seconds), the character integration is perfect for both men. This is comparable to the 8.0 anchor. Justifies the 8+ score."
+    },
+    {
+      "index": 17,
+      "text": "Dwight: 'Just tryin' to be helpful. I'll help. I'm a dragon slayer. Uh, ten-point power sword. Voom! Voom! That's him.'",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael has just called Dwight a nerd for knowing Gimli; Dwight tries to recover by distancing himself from nerd culture",
+      "punchline": "His recovery attempt is a D&D/fantasy reference even nerdier than knowing Tolkien character names, delivered with complete earnestness",
+      "craft_total": 7.17,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The callback deepens the previous joke brilliantly. Dwight's hole-digging is character-perfect \u2014 his attempt to prove he's not a nerd by doing fantasy sound effects is funnier than the initial nerd accusation. 'Voom! Voom!' as a sword sound is wonderfully specific."
+    },
+    {
+      "index": 18,
+      "text": "Michael's team selection: 'Stanley, of course.' \u2014 Stanley: 'I'm sorry? Um... What do you play, center? Why \"of course\"?' \u2014 Michael: 'Uh... What's that supposed to mean? I don't know. I... I don't remember saying that.'",
+      "characters": [
+        "Michael",
+        "Stanley"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Michael is picking his basketball team and selects Stanley first 'of course,' implying an obvious reason",
+      "punchline": "Stanley immediately catches the racial implication; Michael's backpedaling ('I don't remember saying that') while Stanley has just heard it is cowardly and absurd",
+      "craft_total": 7.9,
+      "impact_score": 8.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A callback to the 'African-Americans' talking head that deepens Michael's racial obliviousness. The structure is excellent: Michael says something racially coded, Stanley calls it out precisely ('Why of course?'), and Michael's defense ('People hear a lot of things, man' / 'I don't remember saying that') is both cowardly and delusional \u2014 he said it five seconds ago. Stanley's deadpan moral authority contrasted with Michael's scrambling is great character comedy. Approaches 8 territory."
+    },
+    {
+      "index": 19,
+      "text": "Stanley: 'I heard it.' (re: Michael saying 'of course' about himself) \u2014 Michael: 'I heard it that time.' \u2014 quiet acknowledgment of his own double standard",
+      "characters": [
+        "Michael",
+        "Stanley"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "After Stanley calls out 'of course' for him, Michael then says 'me, of course' about himself",
+      "punchline": "Stanley points out the second 'of course' is uncontested; Michael's 'I heard it that time' concedes the point without apology \u2014 he's comfortable saying it about himself",
+      "craft_total": 8.36,
+      "impact_score": 8.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The extension of the previous joke. Michael's 'I heard it that time' lands because it's the smallest possible acknowledgment of his hypocrisy. The fact that he moves on immediately is perfectly Michael."
+    },
+    {
+      "index": 20,
+      "text": "Kevin: 'I have a sports bra.' \u2014 Michael: 'No, no! Ridiculous!'",
+      "characters": [
+        "Kevin",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Various office workers are pitching reasons they should be on the team",
+      "punchline": "Kevin's offering of a sports bra as a credential is both non-sequitur and perfectly Kevin \u2014 it's unclear whether he thinks this helps his case or he's just proud of owning one",
+      "craft_total": 6.74,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Kevin's non-sequitur sports bra offering is a perfect one-liner. Completely character-specific. Michael's horrified 'Ridiculous!' is the right button."
+    },
+    {
+      "index": 21,
+      "text": "Ryan is described as having 'a lot of passion, a lot of heart' \u2014 Ryan's response: 'But I'm getting paid to skip lunch, right?'",
+      "characters": [
+        "Michael",
         "Ryan"
       ],
       "joke_types": [
         "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Michael telling everyone to stretch",
-      "punchline": "Ryan's matter-of-fact response showing he's prepared",
-      "craft_total": 6.18,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Ryan moment showing his competence vs. others' lack of preparation. Understated but effective."
-    },
-    {
-      "index": 37,
-      "text": "So Dwight you have the east German girl.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Assigning defensive matchups",
-      "punchline": "The inappropriate description of a warehouse worker",
-      "craft_total": 5.85,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Typical Michael inappropriate characterization. Shows his tendency to reduce people to stereotypes."
-    },
-    {
-      "index": 38,
-      "text": "Ok we'll be skins! - No. Come on Dwight. - What? Shirts on or off? - On! Put it on! - You're sure? - Yes.",
-      "characters": [
-        "Dwight",
-        "Michael"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Dwight suggesting shirts vs skins",
-      "punchline": "The inappropriate enthusiasm and Michael's horror",
-      "craft_total": 6.4,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good cringe moment. Dwight's obliviousness to workplace appropriateness and Michael's panic work well together."
-    },
-    {
-      "index": 39,
-      "text": "Don't listen to him Pam, trust me. Tip it my way or you'll sleep in the car!",
-      "characters": [
-        "Roy"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "character_comedy"
-      ],
-      "setup": "Pam doing the jump ball",
-      "punchline": "Roy's casual threat about sleeping arrangements",
-      "craft_total": 6.65,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark humor about their living situation. Reveals relationship dynamics through sports context."
-    },
-    {
-      "index": 40,
-      "text": "Oh come on, what is wrong with me today? Usually hit those.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
-      ],
-      "setup": "Michael missing shots during the game",
-      "punchline": "The delusion that he usually makes them",
-      "craft_total": 6.22,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback to his earlier boasting. Shows the gap between Michael's self-image and reality."
-    },
-    {
-      "index": 41,
-      "text": "When I'm playing hoops, all of the stress and responsibility of my job here just melts away. It's gone, in the zone. Three! What's with me today? Who am I? Am I Michael Scott? I don't know. I might just be a basketball machine.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
-      ],
-      "setup": "Michael in talking head about being in the zone",
-      "punchline": "The delusion continues as we see him missing shots",
-      "craft_total": 6.83,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Great juxtaposition between his self-assessment and reality. 'Basketball machine' is perfectly delusional Michael language."
-    },
-    {
-      "index": 42,
-      "text": "What's Dundler Mifflin? I've never heard of it. Filing, paper works, who cares? Possible downsizing? That's probably going to happen actually.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "dark_subversive"
-      ],
-      "setup": "Michael continuing his 'in the zone' speech",
-      "punchline": "Casually mentioning downsizing while pretending to forget his job",
-      "craft_total": 7.27,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent dark turn. Michael's casual admission about downsizing while in his basketball fantasy is perfectly crafted character work."
-    },
-    {
-      "index": 43,
-      "text": "Is that like the robot?",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Someone doing a dance move or celebration",
-      "punchline": "Michael's out-of-touch cultural reference",
-      "craft_total": 6.0,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Michael cultural disconnect moment. Shows his attempt to relate to younger culture."
-    },
-    {
-      "index": 44,
-      "text": "Football, is like rock'n'roll, it's just... And basketball is like Jazz, you know you kind of... downbeat, it's in the pocket, it's like you...",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Michael trying to explain sports philosophy",
-      "punchline": "The pseudo-intellectual rambling that goes nowhere",
-      "craft_total": 6.45,
-      "impact_score": 6.0,
+      "setup": "Michael delivers an inspiring speech about Ryan's potential and passion as a team player",
+      "punchline": "Ryan immediately cuts through it: he just wants to confirm the money",
+      "craft_total": 6.88,
+      "impact_score": 6.75,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Michael pseudo-wisdom. The incomplete thoughts and music metaphors are characteristic."
+      "explanation": "Ryan's character in early seasons is the temp who is completely transactional \u2014 he has no investment in Dunder Mifflin as a community. His response perfectly deflates Michael's inspirational framing. The contrast between the language registers (Michael's ESPN-speak vs. Ryan's HR question) is well-executed."
     },
     {
-      "index": 45,
-      "text": "What's going on? You guys are playing like a bunch of girls.",
+      "index": 22,
+      "text": "'Hoo, hoo, hoo.' \u2014 followed by Michael's cheerful 'Close!' \u2014 implied near-miss practice shot that clearly wasn't close at all",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "visual_gag",
+        "irony_sarcasm"
       ],
-      "setup": "Michael's team losing",
-      "punchline": "The inappropriate and sexist motivational speech",
-      "craft_total": 4.78,
+      "setup": "Michael takes what appears to be a practice shot before announcing the lineup",
+      "punchline": "He narrates his own near-miss positively ('Close!') despite it being clearly not close \u2014 setting up his basketball delusion for the actual game",
+      "craft_total": 5.81,
       "impact_score": 5.5,
       "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Predictable Michael sexism. Works for character but is a tired trope without much craft."
+      "explanation": "A quick visual beat that foreshadows Michael's actual performance. Works as setup more than standalone joke."
     },
     {
-      "index": 46,
-      "text": "Ouch! How much does it hurt?",
+      "index": 23,
+      "text": "Various staff members offer themselves for the team. Phyllis: 'I can help out if you need me.' Michael: 'I will use your talents come baseball season, my friend. Or if we box.'",
       "characters": [
-        "Michael"
+        "Michael",
+        "Phyllis"
       ],
       "joke_types": [
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Someone gets hurt during the game",
-      "punchline": "Michael's inappropriate curiosity about pain level",
-      "craft_total": 5.83,
-      "impact_score": 5.5,
-      "quotability": 5.0,
+      "setup": "Phyllis volunteers; Michael deflects her",
+      "punchline": "The specificity of 'baseball season' as a consolation (which hasn't been mentioned and may never happen) followed by 'or if we box' \u2014 a completely absurd alternative",
+      "craft_total": 6.64,
+      "impact_score": 6.25,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Michael inappropriateness. Shows his lack of empathy and poor timing."
+      "explanation": "'Or if we box' is an absurdist escalation that has no setup \u2014 Michael's brain produced it genuinely, as if boxing is a real possibility. The comedy is in how sincere the offer is. Good Michael-ism."
     },
     {
-      "index": 47,
-      "text": "Game over! That is it. I'm sorry you know. I hate to do it this way, but you know that's just, we're having a friendly game, it's a shame! This is a damn shame! We're like a family here, and that's just, that won't fly.",
+      "index": 24,
+      "text": "Dwight lobbies to be 'assistant team manager' \u2014 Michael: 'No, I am the team manager!' \u2014 Dwight: 'Assistant team manager?' \u2014 Michael: 'No.' \u2014 Dwight: 'Okay, we'll see who's working this weekend then.' \u2014 Michael immediately: 'Jim, you're in charge of the vacation schedule now.'",
+      "characters": [
+        "Michael",
+        "Dwight",
+        "Jim"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Dwight attempts to claim a hierarchical position on the basketball team mirroring his office title",
+      "punchline": "Dwight threatens to abuse his scheduling power; Michael immediately disarms the threat by taking the power away from Dwight and giving it to Jim \u2014 the threat neutralized in one move, with Jim as collateral damage",
+      "craft_total": 7.69,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A great escalation of the Dwight power arc. The 'threat neutralized' beat is satisfying and shows Michael occasionally being competent in a Michael way. Jim suffering the collateral is a bonus joke."
+    },
+    {
+      "index": 25,
+      "text": "Pam to Michael as he practices shots: 'Please don't throw garbage at me.' \u2014 Michael: 'Oh, Pam with a zinger!'",
+      "characters": [
+        "Pam",
+        "Michael"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Michael is shooting hoops near Pam's desk; from context it appears a missed shot landed near her",
+      "punchline": "Pam's line is a complaint, not a zinger \u2014 but Michael's delighted 'Pam with a zinger!' reframes it as banter, revealing he either can't distinguish complaint from wit or chooses not to",
+      "craft_total": 6.43,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sharp little exchange. Michael's enthusiasm about Pam 'zingers' he's misreading is a good character note \u2014 he loves being ribbed because it implies friendship."
+    },
+    {
+      "index": 26,
+      "text": "Michael asks Pam to be cheerleader with 'pigtails, little halter top... tie that up... something a little youthful, for a change, just this once.'",
+      "characters": [
+        "Michael",
+        "Pam"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Michael offers Pam a role in the basketball game as cheerleader",
+      "punchline": "His description escalates into a detailed fantasy outfit while 'for a change, just this once' is a backhanded insult about how she usually looks",
+      "craft_total": 6.8,
+      "impact_score": 6.67,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'for a change, just this once' is the bite \u2014 Michael doesn't realize he's insulting her. Functional but runs a bit long."
+    },
+    {
+      "index": 27,
+      "text": "Michael to Meredith: 'Just try not to be too gay on the court. And by gay, I mean... you know, not in the homosexual way at all. I mean the, uh, you know, like the bad at sports way.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Conflict during the basketball game",
-      "punchline": "Michael's overdramatic reaction and fake moral outrage",
-      "craft_total": 6.05,
-      "impact_score": 6.5,
+      "setup": "Michael is commenting on someone volunteering to participate",
+      "punchline": "Michael uses 'gay' as an insult, panics, and then defines it as 'bad at sports' \u2014 an explanation that is itself offensive and nonsensical, digging deeper while trying to climb out",
+      "craft_total": 6.66,
+      "impact_score": 6.67,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Michael dramatics. The 'family' speech while ending a game he's losing is characteristic but verbose."
+      "explanation": "A textbook Michael Scott hole-digging sequence. 'Like the bad at sports way' as his definition is both worse and somehow more Michael. The comedy comes from his sincerity in believing he's fixed it."
     },
     {
-      "index": 48,
-      "text": "Great. Now you see who was work on Saturday, your face.",
+      "index": 28,
+      "text": "Response to Michael's explanation: 'I think that goes without saying.'",
       "characters": [
-        "Michael"
+        "Unknown"
       ],
       "joke_types": [
-        "character_comedy",
+        "deadpan_understatement",
         "irony_sarcasm"
       ],
-      "setup": "Michael trying to enforce the Saturday work bet",
-      "punchline": "The garbled threat with poor grammar",
-      "craft_total": 5.75,
-      "impact_score": 5.5,
-      "quotability": 6.0,
+      "setup": "Michael has just explained that by 'gay' he meant 'bad at sports'",
+      "punchline": "The dry 'I think that goes without saying' \u2014 treating Michael's word salad as though it made perfect sense \u2014 is the perfect deadpan button",
+      "craft_total": 6.67,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's confused grammar ('who was work') undermines his attempt at authority. Characteristic incompetence."
+      "is_callback": 1,
+      "explanation": "The best possible button to the previous joke. Maximum economy \u2014 five words doing a lot of work. The deadpan acceptance of Michael's nonsense explanation as self-evident is perfectly timed."
     },
     {
-      "index": 49,
-      "text": "You guys believed me? Come on... dogs you know, you should know me better than that.",
+      "index": 29,
+      "text": "Michael suggests Angela might cheerlead \u2014 someone responds 'Oh, yuck! That's worse than you playing.'",
+      "characters": [
+        "Angela",
+        "Unknown"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "After Pam declines cheerleading, Michael floats Angela as an alternative",
+      "punchline": "The horrified 'yuck' and comparison to Michael playing (implied to be bad) is a quick character assassination of Angela",
+      "craft_total": 6.44,
+      "impact_score": 6.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Quick and functional. Works because the audience is already building an Angela character impression. The comparison insult is economical."
+    },
+    {
+      "index": 30,
+      "text": "Michael telling Angela she's an 'alternate in case somebody gets hurt': 'Blessed be those who sit and wait.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "character_comedy",
-        "misdirection"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Everyone refusing to work Saturday",
-      "punchline": "Michael pretending it was all a joke, then calling them 'dogs'",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 6.5,
+      "setup": "Michael needs to manage Angela's expectations about her non-role on the team",
+      "punchline": "He invokes pseudo-biblical language to dignify bench-warming \u2014 'Blessed be those who sit and wait' delivered as genuine consolation",
+      "craft_total": 7.02,
+      "impact_score": 6.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Michael backpedaling. The 'dogs' is an odd attempt at camaraderie that doesn't quite work."
+      "explanation": "Michael's misquotation/mangling of what sounds like it should be a biblical verse (Psalm 37:9 territory) deployed to console someone he just said 'yuck' to is absurdist and very Michael. The elevated register for a mundane situation is his signature move."
     },
     {
-      "index": 50,
-      "text": "We're coming in Saturday.",
+      "index": 31,
+      "text": "Michael to someone unexpected arriving in the break room: 'You made it! Suit up. You're on the team!'",
       "characters": [
         "Michael"
       ],
@@ -963,90 +612,709 @@
         "misdirection",
         "character_comedy"
       ],
-      "setup": "Michael just said it was a joke about Saturday work",
-      "punchline": "Immediately reveals they actually do have to work Saturday",
-      "craft_total": 7.12,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Michael has been agonizing over his team lineup",
+      "punchline": "An apparently random or unlikely person gets immediately enlisted with maximum enthusiasm, with no audition or thought",
+      "craft_total": 6.37,
+      "impact_score": 6.33,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great misdirection. The quick reversal after pretending it was a joke is perfectly timed and executed."
+      "explanation": "Works as a quick reversal of Michael's apparent selectiveness. Light moment, not particularly crafted."
     },
     {
-      "index": 51,
-      "text": "Yeah he's pretty good uh?",
-      "characters": [
-        "Roy"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
-      ],
-      "setup": "Michael calling him Larry Bird",
-      "punchline": "Roy's flat, unimpressed response",
-      "craft_total": 6.18,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Roy reaction. His understated response deflates Michael's grandiose comparison."
-    },
-    {
-      "index": 52,
-      "text": "Screw corporate! Nobody's coming in tomorrow, you have the day off.",
+      "index": 32,
+      "text": "Warehouse worker getting tea is accused of being 'a spy from the warehouse.' Michael: 'He's runnin'! He's runnin'! He's runnin', but he can't hide, because you know what? 1:00, you better bring your A game.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "misdirection"
+        "absurdist"
       ],
-      "setup": "Michael trying to be the good guy after the game",
-      "punchline": "The sudden reversal and rebellion against corporate",
-      "craft_total": 6.38,
+      "setup": "A warehouse worker enters what is presumably the break room to get tea",
+      "punchline": "Michael interprets this mundane errand as espionage, conducts himself like it's a thriller, and shouts trash talk at someone getting a tea bag",
+      "craft_total": 6.42,
+      "impact_score": 6.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's inability to distinguish normal behavior from sports-rivalry theater is on-brand. Slightly over-extended but his energy sells it."
+    },
+    {
+      "index": 33,
+      "text": "Darryl: 'Why don't we make it more interesting? Loser buys dinner at Farley's.' \u2014 Michael: 'You know what, I'm gonna take that one step further. Loser works on Saturday.'",
+      "characters": [
+        "Michael",
+        "Darryl"
+      ],
+      "joke_types": [
+        "misdirection",
+        "escalation"
+      ],
+      "setup": "Darryl proposes a friendly wager (dinner) to raise the stakes",
+      "punchline": "Michael redirects to a completely different and much higher-stakes wager that affects everyone, turning a fun bet into a management decision \u2014 Darryl's 'That's not as much fun' is the perfect button",
+      "craft_total": 7.19,
+      "impact_score": 7.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Good structural comedy \u2014 Darryl's casual fun bet gets turned into actual workplace consequences by Michael, who doesn't register the difference. Darryl's deadpan 'That's not as much fun' is a great button. Sets up major plot stakes."
+    },
+    {
+      "index": 34,
+      "text": "Darryl, clearly regretting the whole thing, quietly says 'No...' after Michael announces the Saturday bet",
+      "characters": [
+        "Darryl"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael has just escalated Darryl's friendly bet into a work-Saturday wager",
+      "punchline": "Darryl's quiet, resigned 'No...' \u2014 recognizing he has accidentally raised the stakes of his own workers' lives \u2014 is the best possible understated response",
+      "craft_total": 7.04,
+      "impact_score": 6.5,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "One word, maximum impact. Darryl's dawning horror compressed into a single syllable. Perfect economy."
+    },
+    {
+      "index": 35,
+      "text": "After a beat of hesitation, Darryl says 'You on.' \u2014 followed immediately by 'Don't screw this up.' (whispered to his own guys)",
+      "characters": [
+        "Darryl"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Darryl has just been talked into an absurd high-stakes bet he didn't want",
+      "punchline": "He accepts with false bravado ('You on') then immediately panics internally ('Don't screw this up'), revealing the performance of confidence",
+      "craft_total": 7.09,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Darryl is one of the show's best straight men. This beat shows both his competitiveness and his immediate regret \u2014 the two-second gap between bravado and panic is perfectly human."
+    },
+    {
+      "index": 36,
+      "text": "Michael's talking-head: 'Classic beginner's mistake, eating before a game. Tck!'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Someone (presumably a warehouse worker) is seen eating before the game",
+      "punchline": "Michael's confident sports wisdom delivered as though he's a veteran coach \u2014 the 'Tck!' noise sealing it as self-satisfied \u2014 while the audience already suspects Michael knows nothing about basketball",
+      "craft_total": 6.81,
       "impact_score": 6.5,
       "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Michael attempt at being the hero. Shows his desire to be liked overriding corporate responsibility."
+      "explanation": "Quick and effective. Michael's pseudo-authoritative sports coaching shtick in two sentences. The 'Tck' noise is the cherry \u2014 it's the sound of a man who has absorbed sports TV without understanding it."
     },
     {
-      "index": 53,
-      "text": "Like how even an extra day is going to prevent us from being downsized?",
+      "index": 37,
+      "text": "Cut to: 'Has anyone seen the first aid kit?' \u2014 asked before the game has even started",
       "characters": [
-        "Stanley"
+        "Unknown"
       ],
       "joke_types": [
-        "dark_subversive",
-        "observational"
+        "setup_punchline",
+        "dark_subversive"
       ],
-      "setup": "Michael giving everyone the day off",
-      "punchline": "Stanley's cynical reality check about downsizing",
-      "craft_total": 7.22,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "The game hasn't started; someone is already looking for the first aid kit",
+      "punchline": "The pre-game first aid request implies the game is already understood to be dangerous/chaotic \u2014 a dark preview of things to come",
+      "craft_total": 6.24,
+      "impact_score": 5.83,
+      "quotability": 5.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Excellent Stanley moment. Cuts through Michael's gesture with harsh reality. Great callback to earlier downsizing mention."
+      "is_callback": 0,
+      "explanation": "Good structural joke \u2014 the comedy is in the timing. One line, economically placed before the action, does a lot of foreshadowing work. Rewatch bonus because it pays off."
     },
     {
-      "index": 54,
-      "text": "The great thing about sports is that it is all about character. And you can learn lessons about life even if you don't win. But we did, because we were ahead.",
+      "index": 38,
+      "text": "Dwight to the first aid kit seeker: 'How many times have I told you? I'm the safety officer. Not you.'",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Someone has gone to look for the first aid kit independently",
+      "punchline": "Dwight's authority over safety is apparently so well-established that someone else seeking the kit is an act of insubordination. The 'how many times' implies this is a recurring turf war.",
+      "craft_total": 6.79,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfectly Dwight \u2014 he has colonized 'safety officer' as a fiefdom. The 'how many times have I told you' is a good economy line implying recurring absurdity without showing it."
+    },
+    {
+      "index": 39,
+      "text": "Ryan's talking-head: 'Basketball was kinda my thing in high school. And I'm... Yeah. I'm looking forward to playing. You know, I think I'm gonna impress a few people in here.'",
+      "characters": [
+        "Ryan"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Ryan sets up his own basketball credibility with mild confidence",
+      "punchline": "The hedging ('kinda my thing,' 'I'm... Yeah') undercuts the confidence even as he's asserting it \u2014 foreshadowing that Ryan will probably not impress anyone",
+      "craft_total": 6.25,
+      "impact_score": 6.0,
+      "quotability": 3.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Functional setup for Ryan's character. The rewatch bonus comes if Ryan does indeed fail to impress. Mild comedy on its own."
+    },
+    {
+      "index": 40,
+      "text": "Jim's conversation with Pam: He offers to take her to the outlet mall on Saturday 'if Roy has to work, which he will, because I'm also competitive' \u2014 then: 'I think I'll see you at the mall.' 'Yeah.'",
+      "characters": [
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jim is trying to motivate himself to win so Roy has to work Saturday, with the explicit goal of going to the outlet mall with Pam",
+      "punchline": "His motivation for winning a basketball game is to go to an outlet mall with his coworker \u2014 the comedy/pathos of a crush channeled into mundane suburban plans, and Pam's 'Yeah' that seems to accept the premise",
+      "craft_total": 7.5,
+      "impact_score": 7.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is the Jim/Pam emotional core of the episode doing double duty as comedy. The outlet mall destination is perfectly understated \u2014 Jim's crush expressed through the most un-romantic plan possible. The 'Yeah' is ambiguous enough to be both hopeful and funny. Strong character integration and earned comedy."
+    },
+    {
+      "index": 41,
+      "text": "Pam: 'Um, I think I'm gonna be up at the lake.' Jim: 'I think I'll see you at the mall.' / 'Yeah.'",
+      "characters": [
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Pam hedges, implying she'll support Roy's plans",
+      "punchline": "Jim predicts she'll be at the mall with quiet certainty; Pam's 'Yeah' is ambiguous \u2014 denial or acknowledgment",
+      "craft_total": 7.39,
+      "impact_score": 7.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The 'Yeah' from Pam is the joke \u2014 she's technically denying she'll be at the mall while also possibly confirming it. Jim's calm certainty ('I think I'll see you at the mall') reads as playful but also reflects genuine confidence in reading her. The exchange is more romantic tension than pure comedy, but the deadpan confidence produces a real laugh."
+    },
+    {
+      "index": 42,
+      "text": "Michael pre-game speech: 'Listen, this is just going to be a friendly game, right? We are all on the same team here. The Dunder Mifflin team. Of course, if you beat us, you're fired.' \u2014 [pause] \u2014 'That's a joke.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Michael opens with a warm, inclusive team-unity speech",
+      "punchline": "'Of course, if you beat us, you're fired' delivered with the same warm tone, followed by 'That's a joke' \u2014 which itself sounds like a threat given his actual power",
+      "craft_total": 7.76,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The structure here is excellent: peace-talk \u2192 threat \u2192 disclaimer. The 'That's a joke' button is perfectly placed because Michael IS the boss and the disclaimer doesn't actually reassure anyone. The tonal continuity between the friendly speech and the firing threat is the key comedy element."
+    },
+    {
+      "index": 43,
+      "text": "Michael's matchup assignments: 'Ryan, you have Darryl. I have Roy.' \u2014 then: 'Dwight, you have the East German gal.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "misdirection"
+        "absurdist"
       ],
-      "setup": "Michael giving inspirational speech about sports and character",
-      "punchline": "The complete undermining of his own wisdom by claiming victory",
-      "craft_total": 8.0,
-      "impact_score": 8.5,
-      "quotability": 8.5,
+      "setup": "Michael is assigning defensive matchups based on perceived athletic ability",
+      "punchline": "'The East German gal' \u2014 presumably referring to a warehouse worker whose name Michael either doesn't know or has replaced with a bizarre ethnic descriptor \u2014 delivered with complete authority",
+      "craft_total": 6.55,
+      "impact_score": 6.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'East German gal' is a great example of Michael's casual ethnic labeling \u2014 specific enough to seem like a real person, absurd enough to be a Michael invention. Delivered with total authority as though it's a meaningful scouting report."
+    },
+    {
+      "index": 44,
+      "text": "Michael: 'We'll be skins.' \u2014 Dwight immediately takes his shirt off \u2014 Michael: 'Come on, Dwight.' \u2014 Dwight: 'What? Shirts, on or off?' \u2014 Michael: 'On. Just put it on.'",
+      "characters": [
+        "Michael",
+        "Dwight"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "Michael casually announces the team will be 'skins' for the game",
+      "punchline": "Dwight immediately and enthusiastically takes his shirt off, requiring Michael to walk it back \u2014 Dwight's literalism and apparent eagerness to be shirtless is the joke",
+      "craft_total": 7.17,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A great physical beat. Dwight's instant shirtless compliance \u2014 no hesitation, no question \u2014 is perfectly in character. He follows orders AND welcomes any excuse to be physical. Michael's exasperation ('Come on, Dwight') and Dwight's genuine confusion ('What? Shirts, on or off?') is a perfect two-person beat."
+    },
+    {
+      "index": 45,
+      "text": "Michael to Pam for the jump ball: 'Pam, you kind of have your foot in both camps here. Why don't you do the jump ball?' \u2014 Roy: 'Don't listen to him, Pam. Tip it my way or you're sleeping in the car.'",
+      "characters": [
+        "Michael",
+        "Roy",
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Michael diplomatically notes Pam has loyalty to both sides and asks her to referee the tip-off",
+      "punchline": "Roy immediately undercuts the diplomatic framing with a casual threat about where Pam will sleep \u2014 played as though it's normal couple banter",
+      "craft_total": 7.16,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Roy's 'sleeping in the car' threat delivered casually as sports trash talk is darkly funny and quietly revealing of the Roy/Pam dynamic. The comedy cuts because it's presented as completely normal. Good character writing."
+    },
+    {
+      "index": 46,
+      "text": "Stanley aggressively tips the ball \u2014 reaction: 'Stanley!' and 'You gotta be kidding me!' \u2014 Stanley apparently tips it to the warehouse team despite being on the office team",
+      "characters": [
+        "Stanley"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "The jump ball is tipped; based on the reactions, Stanley has tipped it to the wrong team",
+      "punchline": "Stanley's disengagement from this entire enterprise is so complete that he can't even be bothered to tip the ball to his own team",
+      "craft_total": 6.74,
+      "impact_score": 6.83,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A purely physical/visual joke that works on character: Stanley's contempt for this entire situation is so thorough that he actively sabotages the tip-off. The 'You gotta be kidding me!' reaction confirms what happened. Perfect Stanley character beat."
+    },
+    {
+      "index": 47,
+      "text": "Michael's talking-head mid-game: 'I'm in the zone. What's with me today? Who am I? Am I Michael Scott? I don't know. I might just be a basketball machine. What's Dunder Mifflin? I've never heard of it. Filing, paperwork? Who cares? Possible downsizing. Um... Well, that's... that's probably going to happen, actually.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Michael is in a flow state, dramatically declaring himself transcendent \u2014 'I might just be a basketball machine'",
+      "punchline": "The monologue climaxes with him accidentally confirming real information ('Possible downsizing. Um... well, that's probably going to happen, actually.') that he immediately breaks character to acknowledge",
+      "craft_total": 8.15,
+      "impact_score": 8.17,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect ending. Michael's attempt at wisdom is completely undercut by his inability to accept loss. The structure from noble sentiment to petty claim is expertly crafted and quintessentially Michael."
+      "explanation": "This is the best talking-head in the episode and one of the best in Season 1. The structure is a perfect three-act: (1) Michael in grandiose sports-hero mode, (2) the escalating absurdity of his self-mythologizing ('What's Dunder Mifflin? I've never heard of it'), (3) the sudden puncture when the real stakes \u2014 downsizing \u2014 crash through his fantasy. 'Well, that's probably going to happen, actually' is devastating in its casualness. Only Michael Scott could pivot from declaring himself a basketball machine to accidentally confirming company layoffs. Character integration is as high as it gets. Justifies 8.5+ score."
+    },
+    {
+      "index": 48,
+      "text": "Michael dribbling with elaborate trash talk: 'Where you at? Where you at? Where you at? Uh. Oh. You over there? I'm over here. Yeah. Mm. Here. Uh. That is cool. Is that like the robot?'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "Michael is handling the ball and apparently doing some kind of move or dance",
+      "punchline": "'Is that like the robot?' \u2014 Michael's trash talk devolves into genuine curiosity about a dance move, breaking from basketball entirely",
+      "craft_total": 6.3,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The collapse from sports intensity to genuine dance curiosity is pure Michael. The physical comedy of whatever Michael is doing with the ball is mostly visual, but 'Is that like the robot?' is the perfect verbal punchline \u2014 he's gotten distracted by his own move."
+    },
+    {
+      "index": 49,
+      "text": "Dwight: 'Yeah! In your face!' \u2014 Other player: 'Yeah, like that counted.' \u2014 a disputed basket immediately negating Dwight's celebration",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "physical_slapstick"
+      ],
+      "setup": "Dwight appears to score and erupts in celebration",
+      "punchline": "The basket is immediately disputed, deflating the celebration entirely \u2014 but Dwight has already committed to the in-your-face moment",
+      "craft_total": 6.12,
+      "impact_score": 6.17,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Standard sports-comedy beat \u2014 premature celebration + disputed play. Works but isn't particularly crafted. Dwight's intensity makes it funnier than it would be with most characters."
+    },
+    {
+      "index": 50,
+      "text": "Michael to Dwight during a time-out: 'Football is like rock and roll. And basketball is like Jazz, you know? It's in the pocket.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Michael is delivering strategic advice during a time-out",
+      "punchline": "His 'advice' is a meaningless sports-music analogy that conveys nothing strategically, delivered with the confidence of a man who has just said something profound",
+      "craft_total": 6.73,
+      "impact_score": 6.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A very Michael piece of non-wisdom: confident, meaningless, delivered as coaching. 'It's in the pocket' as basketball advice that means nothing is exactly how Michael absorbs and regurgitates half-understood concepts."
+    },
+    {
+      "index": 51,
+      "text": "Michael attempts what appears to be a Harlem Globetrotter-style trick shot or move \u2014 the transcript just reads 'Harlem Globetrotter.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "Michael has been talking up his basketball skills throughout",
+      "punchline": "Whatever Michael attempts here is apparently so over-the-top that the only description needed is 'Harlem Globetrotter' \u2014 the humor being the gap between the aspiration and the reality of Michael Scott attempting showboating",
+      "craft_total": 6.11,
+      "impact_score": 6.0,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Primarily a visual gag. The comedy lives in the performance, not the transcript. Presumably Michael does something embarrassing while believing he's being spectacular."
+    },
+    {
+      "index": 52,
+      "text": "Time-out: Michael: 'What's goin' on? What is goin' on? You guys are playing like a bunch of girls.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "The office team is apparently losing; Michael calls a time-out",
+      "punchline": "Michael's coaching note is a generic insult rather than any tactical advice \u2014 he has nothing to offer except offense, which is very on-brand",
+      "craft_total": 6.27,
+      "impact_score": 6.17,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Weaker moment. 'Playing like a bunch of girls' is a dated, lazy insult that any character could say. It's not particularly Michael-specific in its construction. Functions as a setup for what follows but isn't a strong joke on its own."
+    },
+    {
+      "index": 53,
+      "text": "Time-out. Michael berates everyone: 'You guys are playing like a bunch of girls.' Decides to take Roy himself.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "The office team is losing; Michael calls a time-out to make adjustments",
+      "punchline": "'Playing like a bunch of girls' is the intended motivational speech; his solution is to personally guard their best player \u2014 a massive overestimation of his own ability",
+      "craft_total": 5.04,
+      "impact_score": 5.0,
+      "quotability": 3.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'playing like girls' insult is dated material and doesn't add much beyond signaling Michael's casual sexism. The choice to guard Roy himself is more interesting as setup for what's about to happen to him."
+    },
+    {
+      "index": 54,
+      "text": "Michael to Jim after a hard foul: 'You all right, Jim? Suck it up. He's afraid of you now.'",
+      "characters": [
+        "Michael",
+        "Jim"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Jim has just taken a hard foul \u2014 clearly hurt",
+      "punchline": "Michael's sympathy ('You all right, Jim?') immediately pivots to tough-love dismissal ('Suck it up') and then illogical positive spin ('He's afraid of you now') \u2014 all in one breath",
+      "craft_total": 6.77,
+      "impact_score": 6.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The three-beat structure in one line is perfectly timed. 'He's afraid of you now' as consolation for being hurt is classically Michael \u2014 reframing injury as intimidation. Economy is excellent."
+    },
+    {
+      "index": 55,
+      "text": "After Jim takes another hit: 'Oh, how much does it hurt? How much does it hurt?' \u2014 asked gleefully as though this is exciting rather than concerning",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Jim is clearly in pain from a second injury",
+      "punchline": "Michael's response is not concern but apparently excited inquiry \u2014 the tone of someone watching a good game moment rather than their injured employee",
+      "craft_total": 6.37,
+      "impact_score": 6.17,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's inappropriate enthusiasm about Jim's pain is a mild cringe beat. Not one of his strongest moments but consistent with the character's self-absorption."
+    },
+    {
+      "index": 56,
+      "text": "Dwight fouls his own teammate (Jim) \u2014 Michael: 'Same team, Dwight.' \u2014 Dwight: [no response implied, just continuing]",
+      "characters": [
+        "Michael",
+        "Dwight",
+        "Jim"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "Dwight has apparently committed a foul on Jim, his own teammate",
+      "punchline": "'Same team, Dwight' is said with the weariness of someone who has explained this many times \u2014 implying this isn't the first time Dwight has harmed his own side",
+      "craft_total": 6.87,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Three words doing maximum character work. 'Same team, Dwight' captures something essential about Dwight as a colleague \u2014 his aggression doesn't discriminate. The resignation in how it's said implies a whole history. Economy is near-perfect."
+    },
+    {
+      "index": 57,
+      "text": "Dwight accidentally scoring for the warehouse team and celebrating alone: 'Yes! Yeah! Yeah! In your face!'",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "The game is chaotic and Dwight is over-invested",
+      "punchline": "Dwight scores for the wrong team and celebrates anyway \u2014 he's so focused on the physical act of scoring that the direction doesn't register",
+      "craft_total": 6.62,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Classic Dwight \u2014 the goal-orientation is so strong that he doesn't process the context. The 'In your face!' to his own teammates would be a great visual moment. Strong character integration."
+    },
+    {
+      "index": 58,
+      "text": "Michael ends the game by calling a foul and declaring it over \u2014 insists whoever was ahead wins \u2014 discovers it was the warehouse team \u2014 cheerfully announces: 'Great. I mean, I guess you guys working Saturday.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Michael stopped the game when Jim was hurt and declared it over based on current score; he didn't know who was winning",
+      "punchline": "He discovers he accidentally ended the game with the warehouse winning \u2014 meaning his own team has to work Saturday \u2014 and immediately starts backpedaling on the stakes",
+      "craft_total": 7.28,
+      "impact_score": 7.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A good structural payoff to the Saturday stakes setup. Michael accidentally setting himself up for consequences he then refuses to honor is perfectly in character. The twist is earned."
+    },
+    {
+      "index": 59,
+      "text": "Michael ends the game to protect Jim: 'Game over! Game over! Game over! That is it... We were having a friendly game. It's a shame. This is a damn shame. But, you know, we're like a family here and that's just... that won't fly.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Dwight has elbowed Jim; Michael calls the game in protest",
+      "punchline": "Michael's dramatic invocation of 'family' to end a game he set up with professional stakes \u2014 after he was losing \u2014 is the transparent save face that he doesn't acknowledge",
+      "craft_total": 6.32,
+      "impact_score": 6.17,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The convenient 'family' speech when Michael's team is losing is transparent self-interest dressed as principle. The comedy is in the gap between stated reason and actual reason, which is a reliable Michael beat but not the episode's sharpest."
+    },
+    {
+      "index": 60,
+      "text": "Warehouse workers pressing Michael on the Saturday bet \u2014 Michael: 'You guys believed me?' pause 'Come on. Dawgs, you know, you should know me better than that.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "The warehouse staff are expecting Michael to honor the Saturday bet since they won",
+      "punchline": "Michael's 'You guys believed me?' implies the bet was always a joke \u2014 then 'Dawgs, you should know me better than that' uses informal language as a deflection, revealing he has no intention of honoring anything",
+      "craft_total": 7.37,
+      "impact_score": 7.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Michael's authority-via-charisma move \u2014 reframing his betrayal of a bet as the warehouse's fault for taking him seriously. 'Dawgs' as a deflection is a nice touch."
+    },
+    {
+      "index": 61,
+      "text": "Michael: 'Do you think that would've been good for morale? No. No. No. Exactly. No. I'm embarrassed it was even that close. No, of course, we're coming in Saturday.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael is explaining why he's not honoring the bet",
+      "punchline": "He pivots from 'morale' rationale to answering his own question multiple times, then casually confirms everyone is still coming in Saturday \u2014 the morale argument was completely hollow",
+      "craft_total": 6.28,
+      "impact_score": 6.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Michael's self-answering rhetorical style ('No. No. No. Exactly. No.') is very character-specific. The morale argument dissolving immediately into 'we're coming in Saturday' is a good payoff beat."
+    },
+    {
+      "index": 62,
+      "text": "Roy's talking-head where Pam sees Roy talking to someone ('looks good'); Roy notices her watching and says 'Hey baby' \u2014 then someone comments: 'Look at Larry Bird. Larry legend.'",
+      "characters": [
+        "Roy",
+        "Pam"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Roy appears to be doing something that catches Pam's attention",
+      "punchline": "The 'Larry Bird / Larry legend' comment about someone \u2014 presumably Jim or Michael \u2014 given the basketball context is a dry ironic praise that probably doesn't match the actual performance seen",
+      "craft_total": 6.21,
+      "impact_score": 6.0,
+      "quotability": 3.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A lighter post-game beat. The transcript is ambiguous here. 'Larry legend' as ironic praise is functional but not particularly crafted."
+    },
+    {
+      "index": 63,
+      "text": "Roy looking at Pam's injury or exhaustion: 'Let's get you into a tub.' \u2014 immediately followed by someone else also saying 'Yeah, let's get you in a tub.'",
+      "characters": [
+        "Roy",
+        "Unknown"
+      ],
+      "joke_types": [
+        "awkward_silence",
+        "character_comedy"
+      ],
+      "setup": "Roy is being attentive to Pam post-game",
+      "punchline": "Someone else immediately echoing 'Yeah, let's get you in a tub' \u2014 the repetition from another person in this context is either a weird echo or an intrusion, making the moment absurd",
+      "craft_total": 5.19,
+      "impact_score": 4.75,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "This is an odd beat that may be funnier visually than it reads in transcript. The context is unclear \u2014 possibly Jim echoing Roy, which would be a great character beat. As written, it's ambiguous and scores lower for that reason."
+    },
+    {
+      "index": 64,
+      "text": "Michael post-game: 'You know what? Screw corporate. Nobody's coming in tomorrow. You have the day off.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Everyone is gloomy about having to work Saturday",
+      "punchline": "Michael's grand 'Screw corporate' rebellion \u2014 giving everyone Saturday off \u2014 sounds heroic until the warehouse worker immediately punctures it: 'Like coming in an extra day is going to prevent us from being downsized.'",
+      "craft_total": 6.97,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Michael's heroism deflated instantly by the voice of reason. The callback to the downsizing thread (which Michael accidentally confirmed in his talking-head) lands well here. The warehouse worker's blunt truth-telling is a good straight-man button."
+    },
+    {
+      "index": 65,
+      "text": "Michael announces to the warehouse staff: 'You know what? Screw corporate. Nobody's coming in tomorrow. You have the day off.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "The warehouse staff asks what time they need to come in",
+      "punchline": "Michael spontaneously gives everyone Saturday off \u2014 against corporate directive \u2014 as a crowd-pleasing gesture that he presumably cannot actually authorize",
+      "craft_total": 6.97,
+      "impact_score": 7.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A callback to the original Saturday work problem that started the episode. Michael solves it with 'Screw corporate' \u2014 the most popular possible thing to say, also completely irresponsible. The move is pure Michael: use authority to undermine authority for short-term approval."
+    },
+    {
+      "index": 66,
+      "text": "'Like coming in an extra day is going to prevent us from being downsized.' \u2014 Darryl's quiet line after Michael's announcement",
+      "characters": [
+        "Darryl"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael is playing hero by giving everyone Saturday off",
+      "punchline": "Darryl punctures the moment by articulating the actual stakes \u2014 the downsizing threat renders the Saturday off meaningless",
+      "craft_total": 7.56,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is a callback to Michael's accidental downsizing confession in the talking-head. Darryl's line does two things: it's funny as a deflation of Michael's big gesture, and it's genuinely dark \u2014 they're all potentially losing their jobs and a Saturday off is the prize. The economy is excellent and the callback gives it additional weight. Darryl as the voice of uncomfortable reality is a good early character note."
+    },
+    {
+      "index": 67,
+      "text": "Michael's closing talking-head: 'The great thing about sports is that it is all about character. And you can learn lessons about life even if you don't win. But we did because we were ahead.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Michael delivers what sounds like a philosophical conclusion about sports and character",
+      "punchline": "'But we did because we were ahead' \u2014 he immediately contradicts his own lesson by claiming victory on a technicality, showing he absorbed none of his own wisdom",
+      "craft_total": 8.35,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfect episode closer. The structure is a classic fake-out: inspirational bromide \u2192 immediate self-contradiction. 'But we did because we were ahead' demolishes the platitude in seven words and reveals Michael has learned absolutely nothing. Character integration is exceptional \u2014 only Michael can sincerely believe this is consistent reasoning. The economy is immaculate. This is legitimately great sitcom writing as a closing beat, approaching the 8.0 anchor. Justifies 8+ score."
     }
   ],
   "air_date": "2005-04-19",

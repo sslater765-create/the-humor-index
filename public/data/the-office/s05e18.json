@@ -4,252 +4,290 @@
   "season": 5,
   "episode_number": 18,
   "title": "New Boss",
-  "humor_index": 69.6,
-  "jpm": 2.21,
-  "avg_craft": 6.59,
-  "avg_impact": 6.14,
-  "total_jokes": 51,
-  "war": 18.6,
-  "dominant_joke_types": "[\"character_comedy\", \"cringe_discomfort\", \"absurdist\"]",
-  "standout_joke_ids": "[51, 28, 40]",
-  "weakest_section": "11:00-12:00 phone call sequence",
+  "humor_index": 89.5,
+  "jpm": 2.64,
+  "avg_craft": 7.36,
+  "avg_impact": 7.23,
+  "total_jokes": 61,
+  "war": 79.0,
+  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"escalation\"]",
+  "standout_joke_ids": "[61, 23, 27]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "15-minute round of applause followed by 15-minute moment of silence",
+      "text": "15-minute round of applause followed by a 15-minute moment of silence",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "deadpan_understatement"
+      ],
+      "setup": "Jim is pitching party ideas for Michael's 15th anniversary, framing the applause as a celebration",
+      "punchline": "He immediately undercuts the celebratory idea with a 15-minute moment of silence \u2014 a funereal, anti-climactic contrast",
+      "craft_total": 7.58,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Jim deadpan mischief \u2014 he sets up something sincere and pivots to absurd bathos. The structural mirror (15 minutes of applause / 15 minutes of silence) is tidy and the delivery implies he's completely serious, which is the engine of the joke. Solid opener but not legendary."
+    },
+    {
+      "index": 2,
+      "text": "Jim wearing a tuxedo to mock Dwight's dress code memo",
+      "characters": [
+        "Jim",
+        "Dwight"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy"
+      ],
+      "setup": "Dwight sent out a memo about professionalism in the workplace and singled Jim out",
+      "punchline": "Jim's response is to show up in a full tuxedo, performing over-compliance as mockery",
+      "craft_total": 7.58,
+      "impact_score": 7.5,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Deeply character-specific \u2014 this is quintessential Jim. Over-compliance as subversion is a well-worn Jim move but executed crisply here. The visual payoff of seeing a man in a tux in a paper office carries the joke for the whole episode and keeps paying dividends every time Charles or anyone reacts to it."
+    },
+    {
+      "index": 3,
+      "text": "Michael dismissing a string quartet as 'not classy' while wanting the opening of a car dealership or Mr. Peanut",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jim suggests a string quartet as a classy party element",
+      "punchline": "Michael rejects it in favor of car dealership openings and Mr. Peanut as his personal benchmarks of class",
+      "craft_total": 7.08,
+      "impact_score": 6.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Pure Michael Scott character comedy. His concept of 'classy' being a car dealership opening is exactly the kind of inverted taste that defines him. The Mr. Peanut defense ('he is a regular peanut \u2014 he just happens to have a cane, a monocle and a top hat') is especially strong writing."
+    },
+    {
+      "index": 4,
+      "text": "'He is a regular peanut. He just happens to have a cane, a monocle and a top hat. That's what makes him classy.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Jim dismisses Mr. Peanut as not classy",
+      "punchline": "Michael delivers a passionate, logically coherent-but-absurd defense of Mr. Peanut's classiness through his accessories",
+      "craft_total": 7.91,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is exceptional character comedy. Michael's internal logic is perfectly consistent \u2014 he's not wrong about the accessories, he's wrong about what classiness means \u2014 and that gap is the joke. The list structure (cane, monocle, top hat) has great comic rhythm. Highly quotable, deeply Michael, and the earnestness of the defense makes it funnier. Strong candidate for best joke in the episode."
+    },
+    {
+      "index": 5,
+      "text": "Dwight pitches an ice sculpture of Michael covered in chocolate-covered strawberries; Michael says 'you're trying too hard, and that's just not classy'",
+      "characters": [
+        "Dwight",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael has been talking about needing a 'classy' party",
+      "punchline": "Dwight's desperate, over-the-top attempt to please Michael \u2014 an ice sculpture of Michael himself \u2014 is ironically called 'not classy' by the man who suggested Mr. Peanut",
+      "craft_total": 7.3,
+      "impact_score": 7.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good character comedy on both sides \u2014 Dwight's toadying and Michael's oblivious hypocrisy. Michael finding an ice sculpture of himself 'not classy' while pining for Mr. Peanut is the engine. Works well in context."
+    },
+    {
+      "index": 6,
+      "text": "'An ice sculpture of you completely surrounded by a variety of chocolate-covered fruits.' / 'Strawberries?' / 'That's inspired.' / 'I said that!'",
+      "characters": [
+        "Michael",
+        "Dwight"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Michael rejected Dwight's identical idea moments before",
+      "punchline": "Michael re-pitches the same idea with minor variation ('a variety of fruits' instead of just strawberries), calls it inspired when the 'strawberries' callback is given, and Dwight correctly calls him out",
+      "craft_total": 7.4,
+      "impact_score": 7.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Tight callback structure with escalating absurdity. Michael unconsciously recycling Dwight's rejected idea and calling it inspired is perfectly in character. Dwight's indignant 'I said that!' is the clean button. The joke rewards attention."
+    },
+    {
+      "index": 7,
+      "text": "'Declasse. French!'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael has been judging ideas as classy or not classy",
+      "punchline": "He deploys the French word 'd\u00e9class\u00e9' and immediately announces its origin language as if that proves his sophistication",
+      "craft_total": 7.21,
+      "impact_score": 6.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Economy is near-perfect \u2014 two words deliver the whole joke. Michael's compulsion to announce that the word is French, as if that adds to its classiness, is exactly his character in miniature. Very punchy."
+    },
+    {
+      "index": 8,
+      "text": "'Miner? I hardly know her!'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Receptionist tells Michael that Charles Miner has arrived",
+      "punchline": "Michael does the tired 'I hardly know her' pun on the name Miner",
+      "craft_total": 5.17,
+      "impact_score": 6.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A deliberately bad pun \u2014 Michael's specialty. The joke works on the level of 'of course Michael would say this,' but the pun itself is ancient and hacky. That's somewhat the point, but it doesn't elevate it much. Functional, low-craft."
+    },
+    {
+      "index": 9,
+      "text": "'Well, well, well, who have we here? It is Prince Charles Miner! At your service.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "New VP Charles Miner arrives at the office",
+      "punchline": "Michael greets him with a theatrical royal proclamation, immediately making things awkward for the serious new boss",
+      "craft_total": 6.12,
+      "impact_score": 5.75,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Competent cringe setup \u2014 Michael's over-the-top greeting of a new superior is classic behavior. The 'Prince Charles' pun on his name is mildly clever but the real comedy is the social discomfort established for the episode."
+    },
+    {
+      "index": 10,
+      "text": "Jim's talking head: 'Really wish you would've told me the new boss was coming today... I mean I could've brought a change of clothes, or...' / Michael: 'You look dynamite.'",
       "characters": [
         "Jim",
         "Michael"
       ],
       "joke_types": [
-        "setup_punchline",
-        "absurdist"
-      ],
-      "setup": "Jim suggesting ceremonial activities for Michael's 15th anniversary",
-      "punchline": "The absurdly long duration and juxtaposition of applause with silence",
-      "craft_total": 6.95,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Classic Jim messing with Michael - the escalating absurdity and Michael's serious consideration makes it work"
-    },
-    {
-      "index": 2,
-      "text": "Michael agreeing with Jim because he's wearing a tux",
-      "characters": [
-        "Dwight",
-        "Michael",
-        "Jim"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Michael keeps agreeing with Jim's suggestions",
-      "punchline": "Dwight correctly identifying it's because Jim is dressed fancy",
-      "craft_total": 6.3,
-      "impact_score": 5.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character insight from Dwight about Michael's shallow impressionability"
-    },
-    {
-      "index": 3,
-      "text": "Like the opening of a car dealership. That's it. Or Mr. Peanut.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Michael seeking classy event inspiration",
-      "punchline": "His idea of classy is a car dealership opening and a peanut mascot",
-      "craft_total": 7.3,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Michael Scott logic - completely backwards understanding of class"
-    },
-    {
-      "index": 4,
-      "text": "He is a regular peanut. He just happens to have a cane, a monocle and a top hat. That's what makes him classy.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Defending Mr. Peanut as classy",
-      "punchline": "Michael's sincere explanation of why accessories make a peanut sophisticated",
-      "craft_total": 7.0,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Michael's earnest defense of his absurd logic is perfectly in character"
-    },
-    {
-      "index": 5,
-      "text": "Dwight suggests the exact same ice sculpture idea twice, Michael rejects it then accepts it",
-      "characters": [
-        "Dwight",
-        "Michael"
-      ],
-      "joke_types": [
-        "running_gag",
-        "character_comedy"
-      ],
-      "setup": "Dwight suggests ice sculpture with chocolate strawberries",
-      "punchline": "When he repeats it with 'variety of fruits' Michael thinks it's inspired",
-      "craft_total": 6.95,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Good example of Michael's arbitrary decision-making and Dwight's frustration"
-    },
-    {
-      "index": 6,
-      "text": "I said that!",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
         "reaction_beat",
         "character_comedy"
       ],
-      "setup": "Michael praising the 'new' ice sculpture idea",
-      "punchline": "Dwight's exasperated realization he said the same thing",
-      "craft_total": 6.4,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Simple but effective payoff to the repeated suggestion bit"
-    },
-    {
-      "index": 7,
-      "text": "D\u00e9class\u00e9. French! Classy.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Michael calling something not classy",
-      "punchline": "Using 'd\u00e9class\u00e9' and thinking speaking French makes him classy",
-      "craft_total": 6.95,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Jim is wearing a tuxedo as a prank on Dwight; now the actual new VP of the Northeast has arrived",
+      "punchline": "Jim's exasperation at being caught in a tux on the worst possible day; Michael's oblivious 'you look dynamite' reinforces it",
+      "craft_total": 7.79,
+      "impact_score": 7.75,
+      "quotability": 5.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Michael's pretentious attempt at sophistication backfires perfectly"
+      "is_callback": 1,
+      "explanation": "Excellent payoff on the tuxedo setup \u2014 the joke escalates because Jim's harmless prank now has real professional consequences. Michael's 'you look dynamite' is perfectly oblivious. The situational irony is tight and character-specific."
     },
     {
-      "index": 8,
-      "text": "Miner? I hardly know her!",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Pam announces Charles Miner is here",
-      "punchline": "Michael's automatic sexual pun response",
-      "craft_total": 5.0,
-      "impact_score": 4.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Predictable 'that's what she said' type joke but very Michael Scott"
-    },
-    {
-      "index": 9,
-      "text": "It is Prince Charles Miner! At your service. Sir Charles Miner",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Michael introducing the new VP",
-      "punchline": "Over-the-top royal treatment of someone he just met",
-      "craft_total": 6.15,
-      "impact_score": 5.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's typical over-eagerness to impress authority figures"
-    },
-    {
-      "index": 10,
-      "text": "Charles awkwardly standing there as Michael orchestrates elaborate entrance",
+      "index": 11,
+      "text": "Michael's 'surprise' in the break room turns out to be empty \u2014 'The real surprise is in the conference room!'",
       "characters": [
         "Michael",
         "Charles"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "visual_gag"
+        "misdirection",
+        "character_comedy"
       ],
-      "setup": "Michael directing everyone to break room for surprise",
-      "punchline": "Charles' visible discomfort with Michael's theatrics",
-      "craft_total": 5.95,
-      "impact_score": 5.0,
-      "quotability": 2.0,
+      "setup": "Michael tells Dwight to stall Charles and runs off; everyone is herded into the break room for a 'surprise'",
+      "punchline": "The break room is completely empty \u2014 the surprise was a misdirect, and Michael scrambles to redirect to the conference room",
+      "craft_total": 6.4,
+      "impact_score": 6.17,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard cringe comedy from Michael's over-enthusiasm"
-    },
-    {
-      "index": 11,
-      "text": "Dwight stalling with Scranton coal mining history",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Michael tells Dwight to stall Charles",
-      "punchline": "Dwight launches into boring historical facts",
-      "craft_total": 6.8,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Very Dwight-like approach to stalling - academic and boring"
+      "explanation": "Standard Michael chaos comedy \u2014 his grand reveal falling apart. The empty room gag is functional but telegraphed. What saves it is the confident pivot to 'the real surprise is in the conference room,' which shows Michael's shameless improvisational self-preservation."
     },
     {
       "index": 12,
-      "text": "I turned the bagels from O's into C's, for Charles. Took me all night.",
+      "text": "'As you can see, I turned the bagels from O's into C's, for Charles.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "absurdist"
       ],
-      "setup": "Michael's big surprise reveal",
-      "punchline": "He spent all night making C-shaped bagels",
-      "craft_total": 7.4,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Michael has prepared a welcome for new VP Charles Miner",
+      "punchline": "His grand gesture is that he cut bagels into C-shapes, which he presents with tremendous pride",
+      "craft_total": 7.89,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Michael Scott gesture - elaborate effort for something ridiculous"
+      "explanation": "Beautifully specific and pathetic. The image of Michael spending the night carefully cutting bagels into C-shapes, and presenting them with pride to a VP, is the perfect encapsulation of his desperate need to impress. 'Took me all night' makes it exponentially better."
     },
     {
       "index": 13,
-      "text": "This is what you did last night?",
+      "text": "'Took me all night.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Michael reveals the C-shaped bagels as his welcome gift for Charles",
+      "punchline": "The throwaway admission that this trivial task consumed his entire previous evening",
+      "craft_total": 8.01,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Three words that land enormous. The economy here is exceptional \u2014 'took me all night' delivered as an aside transforms the bagel joke from funny to devastating. It implies Michael has no life, is desperate to impress, and spent his evening on something objectively pointless, all without saying any of that. Perfect The Office writing. Justifies its 8+ score easily."
+    },
+    {
+      "index": 14,
+      "text": "Michael's talking head: Jan was his lover, Ryan was his best friend \u2014 so who knows about Charles?",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael explains why he's optimistic about the new boss",
+      "punchline": "His reasoning is that the previous two bosses were his lover and his best friend, so this one might also become important to him \u2014 oblivious to how dysfunctional both those relationships were",
+      "craft_total": 7.63,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Rich with dramatic irony for long-term viewers \u2014 Jan and Ryan were disasters, and Michael frames them as positive precedents. The logic is perfectly Michael: he sees a catastrophic pattern as promising. Strong character confessional."
+    },
+    {
+      "index": 15,
+      "text": "Jim's talking head cutaway: 'I do. It's gonna be mental.'",
       "characters": [
         "Jim"
       ],
@@ -257,133 +295,97 @@
         "reaction_beat",
         "deadpan_understatement"
       ],
-      "setup": "Michael's proud bagel reveal",
-      "punchline": "Jim's deadpan disbelief at how Michael spent his evening",
-      "craft_total": 6.9,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Jim's perfect straight-man response to Michael's absurdity"
-    },
-    {
-      "index": 14,
-      "text": "The former was my lover, and the latter my best friend",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Michael explaining his relationship with previous bosses Jan and Ryan",
-      "punchline": "His overly formal way of describing inappropriate relationships",
-      "craft_total": 6.8,
-      "impact_score": 6.0,
+      "setup": "Michael says 'who knows?' about how it will go with Charles",
+      "punchline": "Cut to Jim looking directly into camera, flatly predicting disaster",
+      "craft_total": 7.39,
+      "impact_score": 7.0,
       "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Michael's tendency to overshare inappropriate workplace relationships"
-    },
-    {
-      "index": 15,
-      "text": "Oh, my God, he's like a black George Clooney.",
-      "characters": [
-        "Kelly"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Kelly seeing Charles for the first time",
-      "punchline": "Her immediate celebrity comparison and obvious attraction",
-      "craft_total": 5.65,
-      "impact_score": 5.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Very Kelly behavior - immediate superficial celebrity comparison"
+      "explanation": "Perfect mockumentary economy. Jim's two-word prediction functions as both a joke and thesis statement for the episode. The cut itself is the joke \u2014 Michael's optimism immediately punctured by Jim's resigned certainty. Classic talking-head structure executed cleanly."
     },
     {
       "index": 16,
-      "text": "Jim's elaborate tux explanation falling flat with Charles",
+      "text": "'Oh, my God, he's like a black George Clooney.' / 'Really? I don't see it. I mean, he's okay. He's not unattractive, he's...'",
       "characters": [
-        "Jim",
-        "Charles"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Jim trying to explain his tuxedo as a prank",
-      "punchline": "Charles' unimpressed, professional response",
-      "craft_total": 6.6,
-      "impact_score": 6.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Jim's usual pranks backfire with someone who doesn't get the office dynamic"
-    },
-    {
-      "index": 17,
-      "text": "Not more crazy than wearing a tux at work.",
-      "characters": [
-        "Charles"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
-      ],
-      "setup": "Jim calling Dwight's memo crazy",
-      "punchline": "Charles pointing out Jim's outfit is actually crazier",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Charles cuts through Jim's explanation with simple logic"
-    },
-    {
-      "index": 18,
-      "text": "Took him 40 minutes to get ready.",
-      "characters": [
+        "Kelly",
         "Pam"
       ],
       "joke_types": [
         "character_comedy",
         "observational"
       ],
-      "setup": "Jim's tux situation",
-      "punchline": "Pam revealing how long Jim spent on his 'spontaneous' prank",
-      "craft_total": 6.25,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "The women of the office react to the handsome new VP",
+      "punchline": "Kelly's breathless 'black George Clooney' hyperbole vs. Pam's more measured, slightly flustered response that gives her away",
+      "craft_total": 6.4,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Undercuts Jim's casual attitude about the prank"
+      "explanation": "Kelly's hyperbole is in character and the contrast with Pam's more composed-but-telling response works well. The joke is partly in Pam being caught mid-attraction. Solid but not exceptional."
+    },
+    {
+      "index": 17,
+      "text": "Charles to Jim: 'Why are you wearing a tuxedo?' / Jim: 'I didn't think you'd notice.'",
+      "characters": [
+        "Charles",
+        "Jim"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Jim has been wearing a tuxedo all day as a prank on Dwight; now Charles notices",
+      "punchline": "Jim's response \u2014 'I didn't think you'd notice' \u2014 is both absurd (how could no one notice a tuxedo?) and a perfect deflection",
+      "craft_total": 7.77,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Exceptional payoff. Jim's 'I didn't think you'd notice' is a brilliant non-answer that is simultaneously absurd (you can't miss a tuxedo) and characteristically Jim \u2014 he has no defense so he plays offense with confidence. The line has the feel of improvisational genius within a scripted context. Justifies 8+ easily."
+    },
+    {
+      "index": 18,
+      "text": "Jim's rambling explanation about the Dwight memo collapses into 'Not more crazy than wearing a tux at work. I'll grant you that, so I'm gonna...'",
+      "characters": [
+        "Jim",
+        "Charles"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "reaction_beat"
+      ],
+      "setup": "Jim is trying to explain the tuxedo to Charles by referencing the Dwight memo",
+      "punchline": "Charles's flat 'Not more crazy than wearing a tux at work' deflates Jim completely, who then just trails off and retreats",
+      "craft_total": 7.3,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Charles's deadpan logic is devastating and perfectly delivered. The straight-man role Charles plays here is excellent \u2014 he simply refuses to engage with Jim's framing and the joke dies in the air. Jim's trail-off is the visual punchline. This is the tuxedo arc's best beat."
     },
     {
       "index": 19,
-      "text": "Nerd alert!",
+      "text": "Dwight's talking head: 'He just had to wear his tux today. I thought I'd be funny. Took him 40 minutes to get ready.'",
       "characters": [
-        "Michael"
+        "Dwight"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "irony_sarcasm"
       ],
-      "setup": "Charles mentions he's from accounting",
-      "punchline": "Michael's inappropriate and juvenile response",
-      "craft_total": 5.15,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's tone-deaf response to his new boss"
+      "setup": "Jim has been humiliated by the tuxedo in front of the new boss",
+      "punchline": "Dwight, with uncharacteristic smugness, reveals Jim spent 40 minutes getting into the tux \u2014 meaning Jim worked hard on a joke that has now backfired spectacularly",
+      "craft_total": 7.12,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Dwight rarely gets to be smug about Jim and it's earned here. The 40-minute detail is the kicker \u2014 it implies Jim's effort on a prank that spectacularly misfired. Dwight's satisfaction is deeply character-appropriate."
     },
     {
       "index": 20,
-      "text": "Michael oversharing Oscar's entire romantic history",
+      "text": "Michael introducing Oscar: 'He is Latino, and he just got out of a long-term relationship with a man, Gil, who broke his heart, but he didn't bring any of that into work... and I am very proud of him for that.'",
       "characters": [
         "Michael",
         "Oscar"
@@ -392,116 +394,119 @@
         "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Michael introducing Oscar",
-      "punchline": "Completely inappropriate personal details about Oscar's breakup",
-      "craft_total": 6.2,
-      "impact_score": 6.5,
-      "quotability": 4.0,
+      "setup": "Michael is introducing the accounting team to Charles",
+      "punchline": "Michael overshares Oscar's personal life \u2014 sexuality, breakup, heartbreak \u2014 while framing it as a compliment about Oscar's professionalism",
+      "craft_total": 7.17,
+      "impact_score": 7.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Classic Michael oversharing - completely inappropriate but very in character"
+      "is_callback": 0,
+      "explanation": "Classic Michael cringe: he thinks he's being supportive and celebratory while completely violating someone's privacy. The escalating detail \u2014 Latino, gay, long-term relationship, Gil, broke his heart \u2014 each step makes it worse. The payoff 'I am very proud of him for that' is delivered like a toast at a retirement party."
     },
     {
       "index": 21,
-      "text": "She has slept with a bunch of different guys in the office. The one over there, in the orange.",
+      "text": "Michael introduces Oscar by announcing he 'just got out of a long-term relationship with a man, Gil, who broke his heart' but 'didn't bring any of that into work'",
+      "characters": [
+        "Michael",
+        "Oscar"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Michael is introducing his staff to Charles, ostensibly professionally",
+      "punchline": "He immediately volunteers Oscar's entire private romantic history, then praises him for his professionalism \u2014 completely unaware that he himself is the one violating it",
+      "craft_total": 7.67,
+      "impact_score": 7.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A beautifully constructed cringe joke. Michael is praising Oscar for not bringing personal stuff to work while simultaneously broadcasting Oscar's personal stuff at work. The irony is total and the lack of self-awareness is perfectly calibrated. 'I am very proud of him for that' is the kicker \u2014 Michael positions himself as Oscar's beneficent protector while victimizing him."
+    },
+    {
+      "index": 22,
+      "text": "Michael about Angela: 'This little hell-raiser is Angela. She has slept with a bunch of different guys in the office. The one over there, in the orange.'",
       "characters": [
         "Michael",
         "Angela"
       ],
       "joke_types": [
         "cringe_discomfort",
-        "irony_sarcasm"
+        "character_comedy"
       ],
-      "setup": "Michael introducing Angela",
-      "punchline": "Describing the prudish Angela as promiscuous",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Funny because it's opposite of Angela's public persona but actually true"
-    },
-    {
-      "index": 22,
-      "text": "Kevin has no sexual history. Hey!",
-      "characters": [
-        "Michael",
-        "Kevin"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Michael's inappropriate introductions continue",
-      "punchline": "Bluntly stating Kevin has no sexual history, Kevin's weak protest",
-      "craft_total": 6.3,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Michael continues his introductions, pivoting to Angela",
+      "punchline": "He casually outes Angela's office affairs (she's been sleeping with Andy and previously Dwight) while calling her a 'hell-raiser'",
+      "craft_total": 7.29,
+      "impact_score": 7.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Continues the inappropriate introduction pattern, Kevin's feeble defense is sad and funny"
+      "explanation": "Escalation of the Oscar oversharing joke \u2014 Michael moving right into Angela's sexual history. The comedy is amplified for viewers who know the Angela/Dwight/Andy triangle. 'Hell-raiser' as a descriptor for the prim, uptight Angela is an inspired word choice."
     },
     {
       "index": 23,
-      "text": "Michael, I don't need to know everyone's sexual history.",
+      "text": "Charles: 'Michael, I don't need to know everyone's sexual history.' / Michael: 'Well, perfect, because we have now arrived at Kevin, and he has no sexual history.'",
       "characters": [
-        "Charles"
+        "Michael",
+        "Charles",
+        "Kevin"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Michael's completely inappropriate introductions",
-      "punchline": "Charles' professional attempt to stop the madness",
-      "craft_total": 6.25,
-      "impact_score": 6.0,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Charles trying to maintain professionalism while Michael creates chaos"
+      "setup": "Charles tries to stop Michael's oversharing about employees' sex lives",
+      "punchline": "Michael treats the protest as a perfect segue to Kevin, whose lack of sexual history he announces matter-of-factly",
+      "craft_total": 8.34,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's best jokes. The structure is flawless: Charles's attempt to shut down the sex history tour becomes the perfect setup for the punchline about Kevin. Michael's pivot is seamless \u2014 he acts like Charles asked him to skip to Kevin specifically. The 'has no sexual history' is devastating to Kevin and the 'Hey!' reaction seals it. Exceptionally tight, character-driven, and earns its 8+ comfortably."
     },
     {
       "index": 24,
-      "text": "Michael claiming he didn't want to worry people while Charles reveals bad news",
+      "text": "Kevin's 'Hey!' in response to being told he has no sexual history",
       "characters": [
-        "Michael",
-        "Charles"
+        "Kevin"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "reaction_beat",
         "character_comedy"
       ],
-      "setup": "Charles asking why Michael didn't tell employees about cuts",
-      "punchline": "Michael's 'protective' excuse while worse news gets delivered",
-      "craft_total": 6.4,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Michael announces Kevin has no sexual history",
+      "punchline": "Kevin's indignant 'Hey!' \u2014 a perfect single-syllable protest that implies both offense and the inability to actually refute it",
+      "craft_total": 7.37,
+      "impact_score": 7.0,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael's avoidance creating more problems than solutions"
+      "explanation": "The button on Joke 22. Kevin's single-word protest is pitch-perfect \u2014 it suggests he wants to object but can't. Character economy at its finest."
     },
     {
       "index": 25,
-      "text": "What about your party?",
+      "text": "Michael: 'What about your party?' exchange \u2014 Charles announces discretionary spending freeze including parties; Michael's party is now threatened",
       "characters": [
+        "Charles",
+        "Michael",
         "Stanley"
       ],
       "joke_types": [
-        "observational",
-        "deadpan_understatement"
+        "cringe_discomfort",
+        "escalation"
       ],
-      "setup": "Charles talking about freezing discretionary spending",
-      "punchline": "Stanley immediately connecting this to Michael's party",
-      "craft_total": 7.05,
+      "setup": "Charles announces cost-cutting measures including a freeze on discretionary spending like parties",
+      "punchline": "Stanley immediately weaponizes this against Michael's anniversary party, asking 'What about your party?' \u2014 Michael's personal stake is now in direct conflict with business reality",
+      "craft_total": 6.97,
       "impact_score": 6.5,
       "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Stanley cutting right to the obvious contradiction"
+      "explanation": "Stanley using corporate cost-cutting as a weapon against Michael's party is perfectly character-specific \u2014 Stanley would absolutely do this. The structural irony is tight: the thing meant to help the branch destroys what Michael cares most about."
     },
     {
       "index": 26,
-      "text": "I am thrilled that the new boss has taken such an active interest in all of the responsibilities that I'm supposed to have. Thrilled.",
+      "text": "Michael's talking head: 'I am thrilled that the new boss has taken such an active interest in all of the responsibilities that I'm supposed to have. Thrilled.'",
       "characters": [
         "Michael"
       ],
@@ -509,36 +514,37 @@
         "irony_sarcasm",
         "deadpan_understatement"
       ],
-      "setup": "Michael's talking head about Charles staying",
-      "punchline": "Obvious sarcasm about being 'thrilled' to be managed",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Charles has installed himself in the office and started managing the branch",
+      "punchline": "Michael delivers 'thrilled' with complete insincerity, repeating it for emphasis",
+      "craft_total": 6.19,
+      "impact_score": 5.67,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael's passive-aggressive response to losing autonomy"
+      "explanation": "Functional sarcasm. The repeated 'thrilled' works but it's not especially novel. Competent talking-head comedy."
     },
     {
       "index": 27,
-      "text": "Truth be told, I think I thrive under a lack of accountability.",
+      "text": "Michael to David Wallace: 'Listen, why don't we just leave that position vacant? Truth be told, I think I thrive under a lack of accountability.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Michael explaining why he doesn't need management",
-      "punchline": "Admitting he works best without oversight",
-      "craft_total": 7.55,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Michael calls David Wallace to complain about having a new boss",
+      "punchline": "Michael accidentally delivers the most honest self-assessment of his career: he thrives under a lack of accountability",
+      "craft_total": 8.33,
+      "impact_score": 8.33,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Michael Scott self-awareness - accidentally honest about his management style"
+      "explanation": "Among the episode's best lines. 'I thrive under a lack of accountability' is accidentally the most truthful thing Michael has ever said \u2014 and he says it as an argument for why corporate should leave his position unsupervised. It's also a perfect encapsulation of the show's entire thesis about Michael. Highly quotable, deeply character-specific, and the obliviousness makes it land harder. Easily justifies 8+."
     },
     {
       "index": 28,
-      "text": "If we hire Cirque du Soleil as salaried employees, will that help us with the year-end tax stuff?",
+      "text": "'If we hire Cirque Du Soleil as salaried employees, will that help us with the year-end tax stuff?'",
       "characters": [
         "Michael"
       ],
@@ -546,94 +552,117 @@
         "absurdist",
         "character_comedy"
       ],
-      "setup": "Michael trying to get David Wallace on the phone",
-      "punchline": "His completely insane party expense justification",
-      "craft_total": 7.8,
-      "impact_score": 7.5,
-      "quotability": 8.0,
+      "setup": "Michael is on a call with David Wallace, ostensibly about his management situation; Jim whispers 'ask him about the party'",
+      "punchline": "Michael's 'other thing' to ask David is whether hiring Cirque du Soleil as salaried employees is a tax strategy",
+      "craft_total": 7.85,
+      "impact_score": 7.75,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliantly absurd Michael logic - trying to justify circus performers as business expense"
+      "explanation": "Beautifully absurd. Michael's mind operates on a completely different plane \u2014 he's pivoting from a management crisis to asking if Cirque du Soleil can be a tax write-off. The specificity of 'salaried employees' and 'year-end tax stuff' gives it an extra layer of delusional confidence. One of the funniest lines in the episode and highly quotable."
     },
     {
       "index": 29,
-      "text": "African-Americans have such a rich history of unusual names.",
+      "text": "Jim and Michael awkwardly waiting through silence after the Cirque du Soleil question \u2014 'Think he hung up?' / 'No.'",
       "characters": [
-        "Michael"
+        "Michael",
+        "Jim"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "awkward_silence",
+        "reaction_beat"
       ],
-      "setup": "Michael asking about Charles' background",
-      "punchline": "Racist assumption about 'Saticoy Steel' being an unusual name",
-      "craft_total": 6.0,
-      "impact_score": 6.5,
-      "quotability": 4.0,
+      "setup": "Michael has just asked David Wallace about hiring Cirque du Soleil as a tax strategy",
+      "punchline": "The silence on the line is so profound that Michael wonders if he's been hung up on; Jim, having heard it, flatly says 'No'",
+      "craft_total": 7.12,
+      "impact_score": 6.75,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Michael casual racism through ignorance"
+      "is_callback": 1,
+      "explanation": "The button on the Cirque du Soleil joke. Jim's flat 'No' implies David Wallace is still on the line, processing what he just heard. The awkward pause does heavy lifting and Jim's one-word response is perfectly calibrated."
     },
     {
       "index": 30,
-      "text": "No, I worked at a company called Saticoy Steel.",
+      "text": "Michael hears 'Saticoy Steel' and assumes it's an African-American name: 'Beautiful! See, African-Americans have such a rich history of unusual names.'",
       "characters": [
+        "Michael",
         "Charles"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
-      ],
-      "setup": "Michael's racist assumption",
-      "punchline": "Charles' flat correction that it's just a company name",
-      "craft_total": 6.65,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Charles shutting down Michael's assumption with professional restraint"
-    },
-    {
-      "index": 31,
-      "text": "Jan would mostly come by when she was super horny",
-      "characters": [
-        "Michael"
       ],
       "joke_types": [
         "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Michael explaining how previous bosses managed him",
-      "punchline": "Completely inappropriate overshare about Jan",
-      "craft_total": 6.35,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Charles mentions he worked at Saticoy Steel before joining Dunder Mifflin",
+      "punchline": "Michael mishears or misprocesses it as a person's name and launches into a comment about African-American naming traditions",
+      "craft_total": 7.81,
+      "impact_score": 8.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Michael's complete inability to maintain professional boundaries"
+      "is_callback": 0,
+      "explanation": "Deeply uncomfortable in the best Office tradition. Michael's combination of mishearing and racial stereotyping is a perfect storm of his particular brand of oblivious bigotry. Charles's flat correction 'No, I worked at a company called Saticoy Steel' is the ideal straight-man response. The joke is doing real character work \u2014 establishing the Michael/Charles incompatibility immediately."
+    },
+    {
+      "index": 31,
+      "text": "Michael: 'You're not from paper?' Charles: 'No.' Michael: 'Does David know this?'",
+      "characters": [
+        "Michael",
+        "Charles"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Charles has revealed he came from steel, not the paper industry",
+      "punchline": "Michael's conspiracy-theorist response \u2014 'Does David know this?' \u2014 as if Charles's non-paper background is a secret that could invalidate his appointment",
+      "craft_total": 7.56,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfect economy joke. 'Does David know this?' delivers maximum absurdity in four words. Michael's tribalism about the paper industry \u2014 as if working in steel is a disqualifying secret \u2014 is both funny and oddly touching in its parochialism. Justifies 8+ on economy and character integration alone."
     },
     {
       "index": 32,
-      "text": "Call me ASAP as possible.",
+      "text": "Michael: 'Jan would mostly come by when she was super horny, and Ryan would come by to visit his parents and do laundry.'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Michael leaving message for David Wallace",
-      "punchline": "Redundant 'ASAP as possible' mistake",
-      "craft_total": 5.6,
-      "impact_score": 4.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Michael is explaining to Charles how previous VPs handled their management role",
+      "punchline": "Michael's institutional memory of his supervisors reduces them to: Jan (sex visits) and Ryan (laundry/parents) \u2014 both are devastating retroactive summaries of those relationships",
+      "craft_total": 8.02,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Common mistake but fits Michael's tendency toward redundancy"
+      "explanation": "Outstanding. Two devastating character summaries delivered as if they're professional norms. 'Jan would mostly come by when she was super horny' retroactively reframes the entire Jan arc with brutal economy. Ryan's 'parents and laundry' is equally sharp \u2014 it captures his arrested development perfectly. The parallelism of the two descriptions is elegant. Easily an 8+ joke."
     },
     {
       "index": 33,
-      "text": "Michael Scotch... I've got David Wallace's son in the trunk of my car",
+      "text": "Jim coaching Michael on how to charm David's secretary: 'You have to charm them.'",
+      "characters": [
+        "Jim",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Michael has failed to get through to David Wallace and Jim intervenes",
+      "punchline": "Jim's advice sets up the expectation that Michael will execute a reasonable charm strategy",
+      "craft_total": 6.4,
+      "impact_score": 6.0,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Pure setup for the Michael phone call sequence. Not funny on its own but necessary scaffolding."
+    },
+    {
+      "index": 34,
+      "text": "Michael calls David's secretary as 'Michael Scotch' and threatens to have David's son in his trunk",
       "characters": [
         "Michael"
       ],
@@ -641,357 +670,544 @@
         "absurdist",
         "escalation"
       ],
-      "setup": "Michael desperate to reach David Wallace",
-      "punchline": "Fake name and escalating to kidnapping threat",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Jim has told Michael to charm David's secretary; Michael attempts to call",
+      "punchline": "Michael introduces himself as 'Michael Scotch,' then immediately threatens a kidnapping to force David onto the phone",
+      "craft_total": 6.99,
+      "impact_score": 7.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Michael's desperation leading to increasingly unhinged behavior"
-    },
-    {
-      "index": 34,
-      "text": "Charles picking up phone meant for Michael",
-      "characters": [
-        "Charles"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "awkward_silence"
-      ],
-      "setup": "Michael's phone schemes",
-      "punchline": "Charles intercepts the call meant for Michael",
-      "craft_total": 6.15,
-      "impact_score": 5.5,
-      "quotability": 2.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Physical comedy of Michael's schemes backfiring"
+      "explanation": "Michael's approach to 'charming' the secretary is to fake-kidnap David's son. The escalation is so extreme and so fast that it's genuinely surprising. 'Michael Scotch' as the alias is a perfect detail \u2014 he changed one letter. Jim's horror reaction makes it. Highly quotable and deeply absurd in a way that's specific to Michael's delusion."
     },
     {
       "index": 35,
-      "text": "Charles brings lunch on same day Michael brought breakfast",
+      "text": "Michael's follow-up call: 'Hi, Stephanie, it's Michael Scott again. I just spoke with Michael Scotch, and the son's going to be returned. Everything's fine.'",
       "characters": [
-        "Michael",
-        "Charles"
+        "Michael"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "callback",
+        "absurdist"
       ],
-      "setup": "Charles surprising everyone with lunch",
-      "punchline": "Michael's jealousy over being upstaged",
-      "craft_total": 6.15,
-      "impact_score": 5.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's petty jealousy over being outdone"
+      "setup": "Michael made a fake kidnapping threat in his first call",
+      "punchline": "He immediately calls back to reassure Stephanie that 'Michael Scotch' has resolved the kidnapping situation \u2014 treating his own fake threat as a real event to be managed",
+      "craft_total": 7.46,
+      "impact_score": 7.25,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback on the kidnapping call is the episode's funniest moment. Michael calling back as himself to assure Stephanie that 'Michael Scotch' has released the son is an extraordinary escalation \u2014 he's now managing a cover-up of his own fake kidnapping. The logic is perfectly Michael: he created the problem and must now solve it through the same fictional framework. This is top-tier Office writing."
     },
     {
       "index": 36,
-      "text": "Nobody thanked me for breakfast except Charles.",
+      "text": "Michael calls back and has Pam tell the assistant that 'Michael Scotch' has confirmed the son will be returned",
       "characters": [
-        "Michael"
+        "Michael",
+        "Pam"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Everyone thanking Charles for lunch",
-      "punchline": "Michael's petty complaint about not getting thanks",
-      "craft_total": 6.3,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Michael's fake kidnapping call has failed; he's calling back",
+      "punchline": "He has Pam deliver the follow-up reassurance as if resolving an actual kidnapping situation \u2014 'the son's going to be returned, everything's fine' \u2014 maintaining the bit with complete commitment",
+      "craft_total": 7.55,
+      "impact_score": 7.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's need for appreciation and validation"
+      "is_callback": 1,
+      "explanation": "A solid callback that extends the kidnapping bit. The comedy is in Michael's commitment to the resolution of a fictional crime. Not as strong as the original joke but maintains momentum."
     },
     {
       "index": 37,
-      "text": "I think it's a little hypercritical.",
+      "text": "Charles accidentally gets put through and has no idea who he's talking to: 'Hello? Hello, who is this?' / Michael: 'Who is this? I was never given a name.'",
       "characters": [
+        "Charles",
         "Michael"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "absurdist",
+        "escalation"
       ],
-      "setup": "Michael criticizing Charles",
-      "punchline": "Using 'hypercritical' instead of 'hypocritical'",
-      "craft_total": 5.6,
-      "impact_score": 4.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's vocabulary mistakes under pressure"
+      "setup": "Michael's kidnapping call chaos results in Charles being accidentally connected",
+      "punchline": "Charles has no idea what's happening; Michael \u2014 in full Michael Scotch mode \u2014 refuses to identify himself",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "'I was never given a name' \u2014 Michael is fully inhabiting Michael Scotch, the kidnapper with no identity. The absurdist commitment to the bit while Charles is completely bewildered is superb. The chaos of the sequence landing on the new boss is a perfect comedic accident."
     },
     {
       "index": 38,
-      "text": "Kevin asking for overtime after Charles just said no overtime",
+      "text": "Charles buying the whole office lunch \u2014 'Lunch is on me today!'",
       "characters": [
-        "Kevin"
+        "Charles",
+        "Michael"
       ],
       "joke_types": [
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Charles explaining no overtime policy",
-      "punchline": "Kevin immediately asking for overtime",
-      "craft_total": 6.95,
+      "setup": "Michael brought in C-shaped bagels as a welcome gesture; Charles arrives with catered lunch for everyone",
+      "punchline": "Charles effortlessly outclasses Michael's gesture, on the same day Charles announced a discretionary spending freeze",
+      "craft_total": 6.74,
       "impact_score": 6.5,
-      "quotability": 4.0,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Kevin's obliviousness to what was just said"
+      "explanation": "The irony of Charles buying lunch after announcing a spending freeze is solid contextual comedy. Michael's wounded 'Nobody thanked me for breakfast except Charles' is the real payoff line."
     },
     {
       "index": 39,
-      "text": "Michael and Charles repeating each other",
+      "text": "'I wish you had told us sooner, because I was going to go to the vending machine and get an egg salad.'",
       "characters": [
+        "Kevin"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Charles announces he's buying everyone lunch",
+      "punchline": "Kevin's complaint is not about the generosity but the timing \u2014 he was about to get a vending machine egg salad",
+      "craft_total": 7.54,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Excellent Kevin joke. His grievance is that he might have gotten a vending machine egg salad \u2014 which is simultaneously disgusting and the exact thing Kevin would prefer. The specificity of 'egg salad' from a vending machine is what makes it. Pure character."
+    },
+    {
+      "index": 40,
+      "text": "Michael: 'You say no more parties, and then you spend all of this money on lunch. I think it's a little hypercritical.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Michael confronts Charles about the contradiction between the spending freeze and the catered lunch",
+      "punchline": "Michael says 'hypercritical' when he means 'hypocritical' \u2014 malapropism as character reveal",
+      "craft_total": 7.2,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's malapropism is a classic character move \u2014 he's trying to make an intelligent point and undermines himself with the wrong word. 'Hypercritical' for 'hypocritical' is a natural Michael error. Works well."
+    },
+    {
+      "index": 41,
+      "text": "Michael desperately calling David through the intercom: 'Damn it, Stephanie, put me through to him. Is that him in the background? David? David, pick up the phone.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Michael cannot get through to David Wallace and is growing increasingly desperate",
+      "punchline": "Michael's phone manner has completely broken down \u2014 he's addressing David directly through the secretary as if David is hiding in the same room",
+      "craft_total": 6.61,
+      "impact_score": 6.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional escalation of Michael's David Wallace desperation. The image of Michael yelling 'David, pick up the phone' into a phone is inherently comic but not an especially novel joke structure."
+    },
+    {
+      "index": 42,
+      "text": "Jim aside to Michael: 'Should I seduce him?' / Michael: 'No. No one wants to see that.'",
+      "characters": [
+        "Jim",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael is desperately trying to reach David Wallace and they're brainstorming options",
+      "punchline": "Jim's absurd suggestion to seduce David Wallace is met with Michael's immediate, considered rejection \u2014 'No one wants to see that'",
+      "craft_total": 6.99,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's 'no one wants to see that' is funnier than the suggestion \u2014 it implies he briefly considered it and decided against it on aesthetic rather than ethical grounds. The economy of the exchange is good."
+    },
+    {
+      "index": 43,
+      "text": "Kevin tries to get overtime approved by Michael; Charles overrules; Michael says 'I say approved'; Charles says 'that's not the way it's gonna work'; they mirror each other's 'okay, so we're on the same page'",
+      "characters": [
+        "Kevin",
         "Michael",
         "Charles"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "cringe_discomfort",
+        "escalation"
       ],
-      "setup": "Power struggle over Kevin's overtime",
-      "punchline": "Both saying 'we're on the same page' while clearly not",
-      "craft_total": 6.2,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Kevin needs overtime approval; Michael tries to assert authority",
+      "punchline": "Michael and Charles get into a childish standoff, mirroring each other's 'okay, so we're on the same page' while clearly not being on the same page",
+      "craft_total": 7.18,
+      "impact_score": 7.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Childish power struggle between Michael and Charles"
+      "explanation": "The mirroring of 'we're on the same page' while being in direct conflict is good structural irony. Kevin's obliviousness to the power struggle happening around his mundane overtime request is a nice detail."
     },
     {
-      "index": 40,
-      "text": "He just skipped the Ace Ventura talking-butt thing. He never skips it. This is bad.",
+      "index": 44,
+      "text": "Kevin asks about doing overtime to fix a spreadsheet error from using the 2008 calendar for 2009",
       "characters": [
-        "Pam"
+        "Kevin"
       ],
       "joke_types": [
         "character_comedy",
         "observational"
       ],
-      "setup": "Michael doing childish comedy routines when upset",
-      "punchline": "Pam's deep knowledge of Michael's stress indicators",
-      "craft_total": 7.8,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Kevin approaches Michael with a work issue",
+      "punchline": "The error is that Kevin used last year's calendar for January and February \u2014 a mistake so basic it implies Kevin has been doing it wrong for two months without noticing",
+      "craft_total": 6.38,
+      "impact_score": 5.5,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant character insight - Pam knows Michael so well she can measure his stress by which comedy bits he performs"
+      "explanation": "A good Kevin-specific joke \u2014 the mistake is perfectly calibrated to his competence level. Not a huge laugh but adds to the fabric of Kevin's character."
     },
     {
-      "index": 41,
-      "text": "Cupcakes and strippers all the way down.",
-      "characters": [
-        "Angela"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Discussion of nested strippers in cakes",
-      "punchline": "Angela's dry delivery of infinite regression concept",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Unexpectedly funny from uptight Angela - references philosophical concept of infinite regression"
-    },
-    {
-      "index": 42,
-      "text": "You pet the animals, they pet you back.",
+      "index": 45,
+      "text": "Jim's talking head: 'I can tell Michael's mood by which comedy routine he chooses to do. The more infantile, the more upset he is. And he just skipped the Ace Ventura talking-butt thing. He never skips it. This is bad.'",
       "characters": [
         "Jim"
       ],
       "joke_types": [
-        "absurdist",
-        "deadpan_understatement"
+        "character_comedy",
+        "meta_self_referential"
       ],
-      "setup": "Explaining what a 'two-way petting zoo' is",
-      "punchline": "Jim's matter-of-fact delivery of absurd concept",
-      "craft_total": 7.7,
-      "impact_score": 7.5,
-      "quotability": 8.5,
+      "setup": "Michael is in conflict with Charles and Jim is analyzing the situation",
+      "punchline": "Jim has apparently catalogued Michael's comedy routines as a mood indicator; the absence of the 'Ace Ventura talking-butt thing' is the tell that something is seriously wrong",
+      "craft_total": 8.13,
+      "impact_score": 8.17,
+      "quotability": 9.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfectly absurd concept delivered with Jim's trademark deadpan - highly quotable and memorable"
+      "explanation": "The episode's single best joke. Jim has developed an empirical system for reading Michael's emotional state based on which of his comedy routines he performs \u2014 and crucially, the absence of a routine is the diagnostic signal. 'He never skips it. This is bad.' lands with genuine dread. The specificity of 'Ace Ventura talking-butt thing' is perfect \u2014 we can picture it, we know Michael does it, and its omission feels meaningful. This is exceptional character comedy and meta-commentary simultaneously. Highly quotable, deeply rewatchable, and tells us more about the Michael/Jim dynamic than pages of dialogue could. Clear 9+."
     },
     {
-      "index": 43,
-      "text": "Headline. You have been here one day. End of story. End of story! End of story!",
+      "index": 46,
+      "text": "Michael does the 'talking butt' routine to Charles's face",
       "characters": [
-        "Michael"
+        "Michael",
+        "Charles"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "physical_slapstick",
+        "cringe_discomfort"
       ],
-      "setup": "Michael arguing with Charles about the party",
-      "punchline": "Escalating repetition of 'end of story'",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's childish escalation when he's losing an argument"
+      "setup": "Jim just said Michael skipped the Ace Ventura talking-butt thing, suggesting the severity of the situation",
+      "punchline": "Michael immediately does it \u2014 to Charles directly \u2014 proving simultaneously that he's reverting to infantile coping AND that it lands completely wrong with Charles",
+      "craft_total": 7.52,
+      "impact_score": 7.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The structural payoff to Jim's talking head is magnificent \u2014 Jim's analysis is immediately proven right as Michael performs the routine directly at Charles. The fact that it confirmed Jim's theory while simultaneously being the most cringe-inducing possible moment with Charles is perfect double-layered comedy. The rewatch value is enormous because Jim's talking head now reads as prophetic."
     },
     {
-      "index": 44,
-      "text": "You don't put paper into a furnace! If you put paper into a furnace, you know what would happen? You'd ruin it!",
+      "index": 47,
+      "text": "Michael: 'PPC, let's continue our morning meeting in the conference room.' Party planning: 'cupcakes and strippers all the way down'",
       "characters": [
-        "Michael"
+        "Michael",
+        "Dwight",
+        "Jim"
       ],
       "joke_types": [
         "absurdist",
         "escalation"
       ],
-      "setup": "Michael challenging Charles' paper knowledge",
-      "punchline": "Stating the obvious about paper burning with great conviction",
-      "craft_total": 6.4,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Party Planning Committee reconvenes despite Charles's objections",
+      "punchline": "The nesting Russian-doll structure of strippers inside cakes inside cakes, culminating in 'cupcakes and strippers all the way down' \u2014 a riff on the 'turtles all the way down' philosophical concept",
+      "craft_total": 8.09,
+      "impact_score": 8.25,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Michael's passionate defense using incredibly obvious information"
+      "explanation": "The philosophical reference ('turtles all the way down' applied to strippers and cupcakes) elevates what could have been a simple escalation joke into something delightfully absurd and intellectual. The nested structure \u2014 stripper/cake/stripper/cupcake \u2014 is genuinely inventive. 'Cupcakes and strippers all the way down' is highly quotable. Earns its 8+."
     },
     {
-      "index": 45,
-      "text": "Dwight explaining his fake assistant position",
+      "index": 48,
+      "text": "'What is a two-way petting zoo?' / 'You pet the animals, they pet you back.'",
+      "characters": [
+        "Charles",
+        "Jim"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "absurdist"
+      ],
+      "setup": "Charles asks about Jim's party idea; Jim has apparently suggested a 'two-way petting zoo'",
+      "punchline": "Jim's deadpan explanation \u2014 the animals reciprocate the petting \u2014 is absurd but delivered with complete earnestness",
+      "craft_total": 8.01,
+      "impact_score": 8.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Exceptional economy and absurdism. The concept \u2014 an animal petting zoo where the petting is mutual \u2014 is both simple and completely baffling. Jim's straight-faced delivery of 'you pet the animals, they pet you back' as if this is a real thing is what makes it. Enormously quotable. Represents Jim at his best \u2014 using the party planning absurdity as cover for a genuinely weird joke delivered with perfect deadpan."
+    },
+    {
+      "index": 49,
+      "text": "Michael: 'Newsflash. I've been here for 15 years.' / 'Headline. You have been here one day.' / 'End of story.' / 'End of story!' / 'End of story!'",
+      "characters": [
+        "Michael",
+        "Charles"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Michael and Charles are in direct conflict over the party",
+      "punchline": "Michael and Charles trade journalism metaphors \u2014 newsflash, headline \u2014 and then both keep saying 'end of story' as they talk over each other",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The rhythm of the exchange is perfect \u2014 the journalism metaphors (newsflash/headline) escalating into both of them saying 'end of story' simultaneously captures the childish escalation of the Michael/Charles conflict. The repeated 'end of story' is a great bit of comic music."
+    },
+    {
+      "index": 50,
+      "text": "Michael: 'You are gonna be through. And I'm sorry. I'm sorry to do that to you.' / 'Do you even know how paper is made? It's not like steel. You don't put it into a furnace!'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael is threatening to go to New York and tell David Wallace everything",
+      "punchline": "Michael's big threat devolves into a lecture about paper manufacturing \u2014 the most Michael possible ending to a confrontation",
+      "craft_total": 7.72,
+      "impact_score": 7.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Michael's confrontation disintegrating into paper manufacturing facts is magnificent. The callback to Charles being from steel gives it structural integrity \u2014 Michael has been holding this grievance. 'If you put paper into a furnace, you know what would happen? You'd ruin it!' is the perfect button: technically true, completely irrelevant, and delivered with righteous passion. Deeply quotable and character-defining."
+    },
+    {
+      "index": 51,
+      "text": "Michael's final argument: 'Do you even know how paper is made? It's not like steel. You don't put it into a furnace! If you put paper into a furnace, you know what would happen? You'd ruin it!'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Michael is making his case for why Charles is unqualified to manage a paper company",
+      "punchline": "His clinching argument is that paper and steel are different \u2014 and that you'd 'ruin' paper by putting it in a furnace \u2014 a self-evident observation delivered as if it's devastating insider knowledge",
+      "craft_total": 7.79,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A tremendous piece of Michael Scott logic. He has finally found what he believes is the definitive argument against Charles \u2014 that paper burns \u2014 and delivers it with maximum confidence. 'You'd ruin it!' is the perfect kicker: a catastrophic understatement. The joke is that this is Michael's best argument, and it's technically correct but completely irrelevant. High quotability and deep character integration."
+    },
+    {
+      "index": 52,
+      "text": "Dwight explains his job title to Charles: 'Assistant to the Regional Manager.' / Charles: 'Assistant Regional Manager?' / Dwight: 'No \u2014 but yes.'",
       "characters": [
         "Dwight",
         "Charles"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "running_gag"
       ],
-      "setup": "Charles asking about Dwight's role",
-      "punchline": "Dwight admitting it's made-up but still wanting it",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Dwight's desperate attachment to meaningless titles"
-    },
-    {
-      "index": 46,
-      "text": "Michael listing weird life sacrifices to David Wallace",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Michael explaining his sacrifices for the company",
-      "punchline": "Never hang-gliding or driving to Mount Washington as sacrifices",
-      "craft_total": 7.15,
-      "impact_score": 7.0,
+      "setup": "Dwight tells Charles he is the number two, 'second-in-command to Michael'",
+      "punchline": "The recursive confusion over Assistant Regional Manager vs. Assistant TO the Regional Manager \u2014 a long-running show joke \u2014 is revealed to be a fake position originally created to make Dwight feel better",
+      "craft_total": 7.35,
+      "impact_score": 7.33,
       "quotability": 6.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Michael's bizarre idea of what constitutes major life sacrifices"
+      "explanation": "The show's longest running gag about the Assistant title gets a fresh treatment by having Dwight explain it to Charles from scratch, revealing that it was 'made-up just to make him feel better.' The meta-revelation about the job's origins is new information that deepens the joke."
     },
     {
-      "index": 47,
-      "text": "And for my next trick, I will make my career disappear.",
+      "index": 53,
+      "text": "Charles: 'Any responsibilities come with it?' / [long pause, looking at Dwight] / 'Do you want to keep this made-up position?'",
       "characters": [
-        "Michael"
+        "Charles",
+        "Dwight"
       ],
       "joke_types": [
-        "dark_subversive"
+        "deadpan_understatement",
+        "awkward_silence"
       ],
-      "setup": "Michael's situation getting worse",
-      "punchline": "Self-aware joke about ruining his own career",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Charles is learning about Dwight's fake title with no real responsibilities",
+      "punchline": "Charles's pause and then 'do you want to keep this made-up position?' \u2014 delivered without judgment, just logistical",
+      "craft_total": 7.71,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Rare moment of self-awareness from Michael about his self-destructive behavior"
+      "is_callback": 1,
+      "explanation": "Charles's complete lack of affect as he asks whether Dwight wants to keep the 'made-up position' is excellent straight-man work. The pause before \u2014 imagined from context \u2014 and the clinical framing of it as simply a 'made-up position' deflates all of Dwight's ego in one line."
     },
     {
-      "index": 48,
-      "text": "Kelly talking about half black, half Indian kids to no one",
-      "characters": [
-        "Kelly"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Kelly fantasizing about relationship with Charles",
-      "punchline": "Having deep conversation about future children to empty room",
-      "craft_total": 6.55,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Kelly's delusional romantic fantasies taken to extreme"
-    },
-    {
-      "index": 49,
-      "text": "I think he left. What? Move!",
-      "characters": [
-        "Kelly"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
-      ],
-      "setup": "Kelly realizing Charles may have left",
-      "punchline": "Her frantic rush to catch him",
-      "craft_total": 5.7,
-      "impact_score": 5.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Kelly's desperate pursuit fitting her character"
-    },
-    {
-      "index": 50,
-      "text": "He does not need to go dumpster-diving for companionship",
-      "characters": [
-        "Angela"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Suggestion that Charles might be interested in Kelly",
-      "punchline": "Angela's harsh assessment of Kelly",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Angela's judgmental nature coming through with a cutting insult"
-    },
-    {
-      "index": 51,
-      "text": "You have no idea how high I can fly.",
+      "index": 54,
+      "text": "Michael arrives at David Wallace's actual office in New York: 'Hello, Stephanie. Okay, where is he?'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "dark_subversive"
+        "escalation"
       ],
-      "setup": "Michael quitting after getting what he wanted",
-      "punchline": "His dramatic exit line about his potential",
+      "setup": "Michael stormed out saying he was going to New York; the scene cuts to him actually being there",
+      "punchline": "Michael followed through \u2014 he actually drove to corporate, which is both impressive and insane in context",
+      "craft_total": 6.79,
+      "impact_score": 6.25,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The reveal that Michael actually drove to New York is a solid escalation beat. The comedy is in the commitment \u2014 he's not bluffing. Sets up the David meeting well."
+    },
+    {
+      "index": 55,
+      "text": "Michael to David Wallace: 'I've put having a family on hold... And I have never gone hang-gliding. And I've never driven my car to the top of Mount Washington.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Michael is making a serious plea to David about his sacrifices for the company over 15 years",
+      "punchline": "His list of sacrifices includes 'never gone hang-gliding' and 'never driven my car to the top of Mount Washington' \u2014 neither of which are things the company prevented",
+      "craft_total": 7.8,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's articulation of what he's sacrificed for Dunder Mifflin veers from genuine pathos into absurdity. Starting with 'put having a family on hold' (real, sad) and pivoting to hang-gliding and Mount Washington (completely unrelated to work) is perfect Michael. The dramatic tone is maintained throughout, which makes the absurd items land harder."
+    },
+    {
+      "index": 56,
+      "text": "Kelly chasing after Charles: 'I could see our kids facing obstacles, being half black and half Indian, but it's so worth it, you guys. There's just me here.'",
+      "characters": [
+        "Kelly"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Charles has just left the building; Kelly apparently watched him go",
+      "punchline": "Kelly has already planned their interracial children and their social obstacles \u2014 and then realizes she's talking to no one ('there's just me here')",
       "craft_total": 7.95,
-      "impact_score": 8.5,
-      "quotability": 9.0,
+      "impact_score": 8.17,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Michael Scott exit line - delusional grandeur meets genuine emotion. Highly quotable and memorable moment that defines his character arc."
+      "explanation": "Kelly's fantasy is wonderfully specific \u2014 she's not just crushing on Charles, she's already pre-grieving their children's racial obstacles. 'There's just me here' is the perfect button: she's been performing for an audience that left. This is exactly the kind of oblivious character-specific humor The Office does best with Kelly."
+    },
+    {
+      "index": 57,
+      "text": "Dwight and Phyllis fighting over whether the scarf belongs to Charles",
+      "characters": [
+        "Dwight",
+        "Phyllis"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "Charles has left; someone has found what might be his scarf",
+      "punchline": "Dwight and Phyllis are physically fighting over the scarf, implying both want it as a memento/object of desire",
+      "craft_total": 6.9,
+      "impact_score": 6.67,
+      "quotability": 3.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Light physical comedy that works as a quick beat \u2014 the implicit joke is everyone is attracted to Charles. Dwight's involvement is unexpected. Functional but not especially crafted."
+    },
+    {
+      "index": 58,
+      "text": "Angela: 'Charles and Kelly? Absolutely not. He is a sophisticated man. He does not need to go dumpster-diving for companionship.'",
+      "characters": [
+        "Angela"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "People are discussing whether Charles and Kelly might get together",
+      "punchline": "Angela \u2014 who has been sleeping with multiple coworkers in secret \u2014 passes ruthless judgment on Kelly's suitability for Charles",
+      "craft_total": 7.43,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Dumpster-diving for companionship' is a sharp line, made funnier by Angela's spectacular hypocrisy as a secret office affair veteran. The irony is rich for informed viewers."
+    },
+    {
+      "index": 59,
+      "text": "Michael's speech to David: 'I've put having a family on hold...and I have never gone hang-gliding' \u2014 then immediately the scene of polite goodbyes from the office as Charles leaves",
+      "characters": [
+        "Michael",
+        "Charles",
+        "Office Staff"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "reaction_beat"
+      ],
+      "setup": "Michael is delivering an emotional monologue about his sacrifices to David Wallace; simultaneously the office has a normal, warm farewell with Charles",
+      "punchline": "The juxtaposition of Michael's dramatic self-pity with the mundane, cheerful 'Nice to meet you, Charles Miner!' from the office creates a comic contrast",
+      "craft_total": 6.86,
+      "impact_score": 6.5,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A structural editing joke \u2014 Michael's monologue plays over the mundane reality of the office moving on without him. Effective but not a standout. The contrast is clear but not as sharp as it could be."
+    },
+    {
+      "index": 60,
+      "text": "David Wallace promises Michael the party, the figs, and his personal attendance \u2014 then Michael quits anyway",
+      "characters": [
+        "Michael",
+        "David"
+      ],
+      "joke_types": [
+        "misdirection",
+        "character_comedy"
+      ],
+      "setup": "Michael has been fighting all episode for his anniversary party; David Wallace finally concedes everything",
+      "punchline": "Michael gets everything he wanted and immediately quits \u2014 the party was never really the point; his dignity was",
+      "craft_total": 7.27,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The episode's structural comedy masterstroke. Everything Michael fought for is delivered \u2014 party, figs, David's presence \u2014 and he still quits. The misdirection has been operating all episode: we thought the fight was about the party, but it was about Michael's need to matter. The quit lands as both funny and genuinely moving. This is what The Office does at its best \u2014 character comedy that earns its emotional weight."
+    },
+    {
+      "index": 61,
+      "text": "'Michael. You have no idea how high I can fly.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael has just quit; David Wallace is shocked",
+      "punchline": "Michael's final declaration \u2014 'You have no idea how high I can fly' \u2014 is simultaneously grandiose, delusional, and oddly sincere",
+      "craft_total": 8.5,
+      "impact_score": 9.0,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The episode's closing line and one of its best. 'You have no idea how high I can fly' works on multiple levels: it's genuinely funny as a piece of Michael grandiosity; it's poignant because we know he probably can't fly that high; and it's a perfect character statement \u2014 Michael's fundamental belief in himself against all evidence. The economy is exceptional. One of the most quotable lines in the episode."
     }
   ],
   "air_date": "2009-03-19",

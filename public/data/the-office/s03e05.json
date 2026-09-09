@@ -4,78 +4,195 @@
   "season": 3,
   "episode_number": 5,
   "title": "Initiation",
-  "humor_index": 75.9,
-  "jpm": 2.99,
-  "avg_craft": 6.53,
-  "avg_impact": 6.52,
-  "total_jokes": 55,
-  "war": 28.9,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"escalation\"]",
-  "standout_joke_ids": "[18, 39, 37]",
-  "weakest_section": "13:45-14:30 range with Ryan sales call recovery",
+  "humor_index": 89.0,
+  "jpm": 3.87,
+  "avg_craft": 7.25,
+  "avg_impact": 7.12,
+  "total_jokes": 72,
+  "war": 85.3,
+  "dominant_joke_types": "[\"character_comedy\", \"deadpan_understatement\", \"absurdist\"]",
+  "standout_joke_ids": "[35, 42, 72]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Brain teaser sequence where Jim knows all the answers immediately",
+      "text": "Michael immediately solves the two-coins brain teaser, cutting off the setup",
       "characters": [
-        "Jim",
+        "Michael",
+        "Unknown"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Someone begins the classic 'I have two coins totaling 15 cents, one of them is not a nickel' riddle, expecting Michael to be stumped",
+      "punchline": "Michael blurts 'A dime and a nickel' before the full setup is even delivered, then correctly explains 'But the other one is' \u2014 revealing he knows the trick and deflating the riddler",
+      "craft_total": 7.31,
+      "impact_score": 7.0,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke works because it inverts our expectation \u2014 we assume Michael is the buffoon who needs to be tricked, but he casually dismantles the riddle. Character-specific in that it shows Michael's inconsistent intelligence, which is a recurring trait. Good economy, decent structure. Not extraordinary but a solid cold open beat."
+    },
+    {
+      "index": 2,
+      "text": "Jan says 'I don't care how your day was, Michael.' Michael petulantly responds 'I don't care how your day was either, Jan.'",
+      "characters": [
+        "Jan",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Jan shuts down Michael's small talk with a firm professional boundary",
+      "punchline": "Michael's wounded retort mirrors Jan's exact words but is clearly childish deflection \u2014 'I was just asking you because you asked me' \u2014 revealing he's genuinely hurt and treating a work call like a breakup fight",
+      "craft_total": 6.76,
+      "impact_score": 6.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The mirroring of Jan's dismissal is a nice character beat \u2014 Michael can't help but parry like a scorned lover rather than a subordinate employee. 'Why do you set me up like that?' following immediately is even better. Strong character integration because this is precisely how Michael processes rejection. Slightly above average."
+    },
+    {
+      "index": 3,
+      "text": "Michael confessional: 'Never, ever, ever sleep with your boss. I'm so lucky that Jan and I only got to second base.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael offers what sounds like sage professional advice \u2014 'Never, ever, ever sleep with your boss'",
+      "punchline": "The 'wisdom' immediately collapses: he wasn't the boss in that dynamic, and his relief about 'only getting to second base' reveals the advice is self-serving rationalization while also being false (they clearly did more than second base based on context)",
+      "craft_total": 7.73,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Michael confessional structure: he positions himself as offering wisdom, but the wisdom immediately exposes his delusion. The 'second base' line is funny both because it uses middle-school vernacular for a management relationship and because it's almost certainly a lie he tells himself. High character integration \u2014 no other character delivers this flavor of oblivious self-incrimination. Strong economy."
+    },
+    {
+      "index": 4,
+      "text": "Pam confessional: 'Jan used to treat Michael like he was a ten-year-old. But lately it's like he's five.'",
+      "characters": [
+        "Pam"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "observational"
+      ],
+      "setup": "Pam is describing the Jan-Michael dynamic as observed from the office",
+      "punchline": "The downward regression \u2014 from ten-year-old to five-year-old \u2014 captures the deteriorating dynamic in one precise, devastating image",
+      "craft_total": 7.6,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Exceptional economy \u2014 the entire Jan-Michael power dynamic and its trajectory are communicated in two sentences. The direction of the regression (not 'younger' but specifically a jump from ten to five, implying acceleration) adds precision. This is the kind of incisive observational writing The Office does at its best: specific, character-grounded, and quotable. Pam as the dry witness is perfectly cast. Near the top of this episode's writing."
+    },
+    {
+      "index": 5,
+      "text": "Dwight's talking head about Ryan: escalating excitement test ('Very excited? Extremely excited? Just very?') followed by revealing his agenda \u2014 recruiting Ryan against Jim",
+      "characters": [
         "Dwight"
       ],
       "joke_types": [
         "character_comedy",
         "escalation"
       ],
-      "setup": "Dwight attempts to stump Jim with classic riddles",
-      "punchline": "Jim knows every answer instantly, deflating Dwight's confidence",
-      "craft_total": 6.2,
-      "impact_score": 6.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 1,
+      "setup": "Dwight frames the sales call as an opportunity for Ryan's professional development",
+      "punchline": "The real agenda emerges: Dwight wants to convert Ryan into a loyal soldier against the Jim-style slacker archetype \u2014 'is he gonna join the Dwight Army of Champions?'",
+      "craft_total": 7.0,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Jim vs Dwight dynamic - Jim's casual competence frustrating Dwight's attempt to show intellectual superiority. Well-executed character beat."
+      "explanation": "'Dwight Army of Champions' is a great line \u2014 the grandiosity is perfectly Dwight. The escalating excitement test ('Just very? That's cool.') is a nice bit of social pressure comedy. Strong character integration."
     },
     {
-      "index": 2,
-      "text": "Damn it!",
+      "index": 6,
+      "text": "Dwight confessional: 'Is he gonna be a slacker, loser, wise-ass like Jim was, or is he gonna join the Dwight Army of Champions?'",
       "characters": [
         "Dwight"
       ],
       "joke_types": [
-        "reaction_beat",
-        "physical_slapstick"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Dwight's growing frustration with Jim's instant answers",
-      "punchline": "Explosive outburst of defeat",
-      "craft_total": 5.5,
-      "impact_score": 5.5,
-      "quotability": 2.0,
-      "rewatch_bonus": 0,
+      "setup": "Dwight is framing Ryan's future in binary terms",
+      "punchline": "'The Dwight Army of Champions' \u2014 a self-invented organization apparently consisting of Dwight and nobody else, named and branded with the grandiosity of a military branch",
+      "craft_total": 7.79,
+      "impact_score": 7.75,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Simple but effective payoff to the escalating frustration. Dwight's dramatic reaction is in character."
+      "explanation": "One of the episode's most quotable lines. 'The Dwight Army of Champions' is perfect Dwight \u2014 megalomaniacal, self-branded, utterly sincere. The casual inclusion of 'Jim was' as a slacker/loser/wise-ass also gets a laugh by confirming what we already knew. High character integration because this phrase could only come from Dwight's specific pathology. The absurdist capitalization implied in the delivery elevates it."
     },
     {
-      "index": 3,
-      "text": "Tell me what you did yesterday. Uh, nothing. Nothing? Yeah, nothing.",
+      "index": 7,
+      "text": "Dwight: 'When you are ready to see the sales office, the sales office will present itself to you. Your journey begins now.'",
       "characters": [
-        "Jan",
-        "Michael"
+        "Dwight",
+        "Ryan"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Jan's clinical interrogation style",
-      "punchline": "Michael's pathetically honest admission of doing literally nothing",
-      "craft_total": 6.45,
+      "setup": "Ryan asks where the sales office is \u2014 a simple, reasonable question",
+      "punchline": "Dwight responds with Zen-master mysticism about readiness and journeys, treating a commute to a client as a spiritual ordeal",
+      "craft_total": 7.65,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedy comes from the complete mismatch of register: Ryan asks a logistical question, Dwight answers with fortune-cookie mysticism. The deadpan delivery implied for Dwight makes it funnier \u2014 he's not joking. This sets up the entire Schrute Farms initiation arc. Good structure and character work."
+    },
+    {
+      "index": 8,
+      "text": "The chair standoff \u2014 Andy accuses Jim of taking his chair; Jim explains he 'took back the chair that you took from me' but didn't take Andy's chair",
+      "characters": [
+        "Andy",
+        "Jim"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Andy's chair is squeaking; he accuses Jim of taking it",
+      "punchline": "Jim's logical but absurd distinction ('I took back MY chair that YOU took, so I didn't take YOUR chair') reduces office politics to kindergarten-level possession disputes, treated with mock legal precision",
+      "craft_total": 6.66,
       "impact_score": 6.0,
       "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Captures the awkward power dynamic and Michael's childlike honesty under pressure."
+      "explanation": "A functional bit \u2014 the philosophical parsing of who took whose chair is mildly amusing. Jim's casual 'When you get up I'm just gonna take it back anyway, so...' followed by Andy's 'So I guess I can't get up?' is the stronger beat. Not a highlight but serviceable setup for the Jim/Andy dynamic introduced this season."
     },
     {
-      "index": 4,
-      "text": "I don't care how your day was either, Jan. I was just asking you because you asked me.",
+      "index": 9,
+      "text": "Jim: 'When you get up, I'm just gonna take it back anyway, so...' Andy: 'So I guess I can't get up?'",
+      "characters": [
+        "Jim",
+        "Andy"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Jim has just explained the chair logic; the standoff seems to be at an impasse",
+      "punchline": "Andy's realization that Jim's position means he is literally trapped in his chair \u2014 delivered with genuine bewilderment rather than outrage \u2014 is the beat",
+      "craft_total": 6.47,
+      "impact_score": 5.75,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The button on the chair scene. Andy's earnest confusion about his own paralysis is funnier than the setup. Shows early Andy as less manic than he'd become. Efficient punchline."
+    },
+    {
+      "index": 10,
+      "text": "Michael approaches a client named Coselli and calls him 'Coselli. The Cos, Cosby. Hey, hey, hey! I love Jell-O Pudding Pops.'",
       "characters": [
         "Michael"
       ],
@@ -83,610 +200,311 @@
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Michael trying to assert himself after being dismissed",
-      "punchline": "Petty, childish response that reveals his hurt feelings",
-      "craft_total": 6.55,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Michael is attempting to make a warm, personable impression on a client",
+      "punchline": "He free-associates from 'Coselli' to 'Cos' to 'Cosby' to Bill Cosby's catchphrase, and then tells a stranger he loves Jell-O Pudding Pops \u2014 a patronizing and bizarre icebreaker that reveals zero preparation",
+      "craft_total": 6.89,
+      "impact_score": 6.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Michael Scott response - trying to be mature but coming across as petulant. Strong character integration."
-    },
-    {
-      "index": 5,
-      "text": "And Carol came over. And we had sex.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Michael describing his mundane evening",
-      "punchline": "Awkward overshare delivered matter-of-factly",
-      "craft_total": 6.1,
-      "impact_score": 7.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Michael TMI moment - inappropriate workplace oversharing delivered with total sincerity."
-    },
-    {
-      "index": 6,
-      "text": "Never, ever, ever sleep with your boss. I'm so lucky that Jan and I only got to second base.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Michael giving sage advice about workplace relationships",
-      "punchline": "Immediately reveals his hypocrisy and juvenile terminology",
-      "craft_total": 7.7,
-      "impact_score": 8.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent setup/payoff structure with perfect character voice. The 'second base' reference is quintessentially Michael's arrested development."
-    },
-    {
-      "index": 7,
-      "text": "Jan used to treat Michael like he was a 10-year-old. But lately it's like he's five.",
-      "characters": [
-        "Pam"
-      ],
-      "joke_types": [
-        "observational",
-        "character_comedy"
-      ],
-      "setup": "Pam observing the deteriorating Jan-Michael dynamic",
-      "punchline": "The regression from 10 to 5 years old",
-      "craft_total": 7.7,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliantly economical observation that perfectly captures the relationship dynamic. The specific age regression is both funny and insightful."
-    },
-    {
-      "index": 8,
-      "text": "Extremely excited? Just very. That's cool.",
-      "characters": [
-        "Jim",
-        "Ryan"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "awkward_silence"
-      ],
-      "setup": "Jim's escalating excitement questions",
-      "punchline": "Ryan's deflation and Jim's awkward recovery",
-      "craft_total": 5.9,
-      "impact_score": 5.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Mild awkward moment as Jim pushes too far and has to back down. Functional but not exceptional."
-    },
-    {
-      "index": 9,
-      "text": "Is he gonna be a slacker-loser-wise-ass like Jim was, or is he gonna join the Dwight Army of Champions?",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Dwight sizing up Ryan as a potential ally",
-      "punchline": "The grandiose 'Dwight Army of Champions' self-reference",
-      "craft_total": 7.3,
-      "impact_score": 7.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect Dwight pomposity - the military terminology combined with calling Jim a 'slacker-loser-wise-ass' is quintessential character voice."
-    },
-    {
-      "index": 10,
-      "text": "When you are ready to see the sales office, the sales office will present itself to you. Your journey begins now.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Ryan asks a simple question about location",
-      "punchline": "Dwight's mystical, pseudo-spiritual response",
-      "craft_total": 7.8,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Dwight at his most ridiculous - treating a sales call like a mystical quest. The pompous language is perfectly in character."
+      "explanation": "The chain of association (Coselli \u2192 Cos \u2192 Cosby \u2192 Jell-O) is pure Michael: he can't just use a name, he has to perform a bit. Then compounding it with 'My son Theo loves Jell-O Pudding Pops' making it even more cringe-worthy. Strong character integration. The fact that this is supposed to be a sales call makes it especially uncomfortable."
     },
     {
       "index": 11,
-      "text": "Chair theft sequence with Jim and Pam",
-      "characters": [
-        "Jim",
-        "Pam"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "escalation"
-      ],
-      "setup": "Chair squeaking complaint leads to theft accusation",
-      "punchline": "Pam trapped unable to get up or she'll lose the chair",
-      "craft_total": 6.0,
-      "impact_score": 6.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Simple physical comedy escalation. Functional office prank humor but nothing exceptional."
-    },
-    {
-      "index": 12,
-      "text": "Hey, Coselli! The Coz! The Cosby. Hey, hey, hey! I love Jell-O Pudding Pops! My son Theo love Jell-O Pudding Pops too.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Dwight attempts to connect with client through pop culture",
-      "punchline": "Wildly inappropriate Bill Cosby impression",
-      "craft_total": 4.7,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Peak cringe moment showing Dwight's complete misunderstanding of appropriate client interaction. The Cosby reference dates the episode."
-    },
-    {
-      "index": 13,
-      "text": "I hold in my hand a beet seed. Take it. When you... Damn it.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "absurdist"
-      ],
-      "setup": "Dwight's ceremonial beet seed presentation",
-      "punchline": "Ryan drives off, ruining the moment",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good physical comedy payoff to Dwight's pseudo-mystical nonsense. The interruption punctures his pompous ritual perfectly."
-    },
-    {
-      "index": 14,
-      "text": "I'm acting my heart out here.",
-      "characters": [
-        "Pam"
-      ],
-      "joke_types": [
-        "meta_self_referential",
-        "deadpan_understatement"
-      ],
-      "setup": "Jim's minimal effort in the chair prank",
-      "punchline": "Pam's dramatic complaint about her 'performance'",
-      "craft_total": 6.65,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Nice meta moment where Pam acknowledges she's 'acting' in their prank. Shows their collaborative dynamic."
-    },
-    {
-      "index": 15,
-      "text": "And just as you have planted your seed in the ground, I am going to plant my seed in you.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "absurdist"
-      ],
-      "setup": "Dwight's mystical farming metaphor for mentorship",
-      "punchline": "Accidentally sexual innuendo",
-      "craft_total": 5.9,
-      "impact_score": 7.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Classic Dwight accidental innuendo - his earnest metaphor becomes unintentionally sexual. Very in character obliviousness."
-    },
-    {
-      "index": 16,
-      "text": "I don't think you know what you're saying.",
-      "characters": [
-        "Ryan"
-      ],
-      "joke_types": [
-        "reaction_beat",
-        "deadpan_understatement"
-      ],
-      "setup": "Dwight's sexual innuendo",
-      "punchline": "Ryan's diplomatic but pointed response",
-      "craft_total": 5.95,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good straight-man response to Dwight's oblivious innuendo. Ryan's diplomatic correction works well."
-    },
-    {
-      "index": 17,
-      "text": "It's called bullcrap. And a client can smell it from a mile away.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Dwight making Ryan smell literal manure",
-      "punchline": "The obvious metaphor lesson",
-      "craft_total": 6.15,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dwight's literal approach to teaching metaphors. The wordplay with 'bullcrap' is obvious but in character."
-    },
-    {
-      "index": 18,
-      "text": "I wake up every morning in a bed that's too small. Drive my daughter to a school that's too expensive. And then I go to work to a job for which I get paid too little. But on pretzel day... Well, I like pretzel day.",
-      "characters": [
-        "Stanley"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
-      ],
-      "setup": "Stanley's litany of life's disappointments",
-      "punchline": "Simple joy in free pretzels provides meaning",
-      "craft_total": 8.45,
-      "impact_score": 8.5,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant character moment that's both funny and poignant. The escalating structure ('too small, too expensive, too little') building to the simple joy is masterfully written."
-    },
-    {
-      "index": 19,
-      "text": "But what they were rapping about was cupcakes and The Chronicles of Narnia.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "observational",
-        "absurdist"
-      ],
-      "setup": "Michael commenting on tough-looking kids",
-      "punchline": "Their 'street' topics are actually innocent",
-      "craft_total": 6.35,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good absurdist observation about the gap between appearance and reality. The Narnia reference is unexpectedly specific."
-    },
-    {
-      "index": 20,
-      "text": "No, I'm not gonna settle down. No, no way. Uh-uh, boo! Get in the back, please. Boo! Back of the line!",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
-      ],
-      "setup": "Phyllis tries to cut in the pretzel line",
-      "punchline": "Michael's childish but righteous indignation",
-      "craft_total": 5.65,
-      "impact_score": 6.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's childish authority assertion over something trivial. The 'boo!' is particularly infantile and in character."
-    },
-    {
-      "index": 21,
-      "text": "What a pair of Marys.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Michael victorious in pretzel line conflict",
-      "punchline": "Outdated slang dismissal of his 'opponents'",
-      "craft_total": 4.95,
-      "impact_score": 4.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's use of outdated slang is in character but the joke isn't particularly strong. Feels like filler."
-    },
-    {
-      "index": 22,
-      "text": "Ryan's sarcastic recounting of Dwight's mentorship",
-      "characters": [
-        "Ryan"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Ryan describing what he expected vs reality",
-      "punchline": "The contrast between normal mentorship and Dwight's bizarre methods",
-      "craft_total": 6.75,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good contrast humor showing the gap between expectation and Dwight's reality. Ryan's deadpan delivery works well."
-    },
-    {
-      "index": 23,
-      "text": "Welcome to Schrute Farm!",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "absurdist"
-      ],
-      "setup": "Ryan completing some arbitrary challenge",
-      "punchline": "Dwight's dramatic revelation of location",
-      "craft_total": 6.7,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good reveal moment. Dwight's pride in his farm and formal announcement style is very in character."
-    },
-    {
-      "index": 24,
-      "text": "Kelly singing with Jim trying to stop her",
-      "characters": [
-        "Kelly",
-        "Jim"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "escalation"
-      ],
-      "setup": "Kelly starts singing an annoying song",
-      "punchline": "Jim's increasing desperation to make her stop",
-      "craft_total": 5.4,
-      "impact_score": 5.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Functional escalating annoyance bit. Kelly's obliviousness vs Jim's suffering is in character but not exceptional."
-    },
-    {
-      "index": 25,
-      "text": "This is not a proportionate response.",
-      "characters": [
-        "Jim"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
-      ],
-      "setup": "Kelly's relentless singing",
-      "punchline": "Jim's formal complaint about the 'punishment'",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Jim line - the formal language ('proportionate response') for such a silly situation is appropriately dry."
-    },
-    {
-      "index": 26,
-      "text": "Whatever happened to those guys?",
-      "characters": [
-        "Jim"
-      ],
-      "joke_types": [
-        "observational",
-        "deadpan_understatement"
-      ],
-      "setup": "Kelly singing an early 2000s hit",
-      "punchline": "Jim's innocent question about the band's fate",
-      "craft_total": 5.65,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Mild observational humor about the fleeting nature of pop music fame. Works as a small character beat."
-    },
-    {
-      "index": 27,
-      "text": "Because I like them a certain way. And if it gets screwed up, then this whole thing's blown.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Pam offers to get Michael a pretzel",
-      "punchline": "Michael's ridiculous specificity about free pretzels",
-      "craft_total": 6.7,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Michael's obsessive nature about trivial things. The stakes he assigns to pretzel preparation is absurd."
-    },
-    {
-      "index": 28,
-      "text": "Pam, productivity starts with patience and determination.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Pam suggesting Michael should work instead of waiting for pretzels",
-      "punchline": "Michael's fake-profound justification for pretzel obsession",
-      "craft_total": 7.1,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Michael pseudo-wisdom to justify his ridiculous priorities. The alliteration and fake profundity is perfect character voice."
-    },
-    {
-      "index": 29,
-      "text": "I'll be back.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "callback",
-        "character_comedy"
-      ],
-      "setup": "Michael leaving his position in line",
-      "punchline": "Terminator reference for pretzel mission",
-      "craft_total": 4.95,
-      "impact_score": 4.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Simple pop culture reference. Michael treating pretzel acquisition like an action movie is mildly amusing but not exceptional."
-    },
-    {
-      "index": 30,
-      "text": "Look, man. I was in a frat in college. So I know what you're doing. I get it.",
-      "characters": [
-        "Ryan"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Dwight's bizarre initiation rituals",
-      "punchline": "Ryan reducing it to familiar hazing experience",
-      "craft_total": 6.5,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment for Ryan - his business school background vs Dwight's farm mysticism. Shows Ryan's not completely naive."
-    },
-    {
-      "index": 31,
-      "text": "All toppings pretzel order",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Michael finally reaches pretzel cart",
-      "punchline": "Orders literally every available topping",
-      "craft_total": 5.75,
-      "impact_score": 6.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Predictable escalation but in character. Michael's excess and inability to choose is consistent with his personality."
-    },
-    {
-      "index": 32,
-      "text": "Mose is my cousin, and he lives here. He will always be my best friend. Unless things go well with Ryan today. In which case I won't hang out with Mose so much anymore.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "dark_subversive"
-      ],
-      "setup": "Dwight introducing his cousin Mose",
-      "punchline": "Casual admission he'd abandon his best friend for Ryan",
-      "craft_total": 7.8,
-      "impact_score": 8.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant character moment showing Dwight's casual cruelty and transactional view of friendship. The matter-of-fact delivery makes it funnier and darker."
-    },
-    {
-      "index": 33,
-      "text": "Wrong. Flash floods.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Ryan gives reasonable answer about business threats",
-      "punchline": "Dwight's completely random alternative",
-      "craft_total": 7.5,
-      "impact_score": 8.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect absurdist Dwight moment. The randomness of 'flash floods' as Dunder Mifflin's greatest threat is both unexpected and somehow believable from him."
-    },
-    {
-      "index": 34,
-      "text": "Depression? Wrong. He hated himself.",
+      "text": "Dwight: 'Do you know where we are, temp?' Ryan: 'I know where we're not.'",
       "characters": [
         "Dwight",
         "Ryan"
       ],
       "joke_types": [
-        "dark_subversive",
-        "wordplay_pun"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Question about Robert Mifflin's suicide",
-      "punchline": "Dwight's distinction without a difference",
-      "craft_total": 6.75,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Dwight asks Ryan if he knows their location, presumably expecting ignorance or awe",
+      "punchline": "Ryan's dry 'I know where we're not' is a perfect deflation \u2014 it sounds like Zen wisdom but is actually just a sarcastic non-answer delivered with exhaustion",
+      "craft_total": 7.21,
+      "impact_score": 6.67,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark humor about suicide with Dwight missing the point entirely. The 'correction' that means the same thing is absurdly pedantic."
+      "explanation": "Five words that do a tremendous amount of comedic work. Ryan's response accidentally mirrors Dwight's pseudo-mystical language while being completely deadpan sarcasm \u2014 which makes Dwight momentarily treat it as profundity. The economy is near-perfect. One of the tighter lines in the episode."
     },
     {
-      "index": 35,
-      "text": "Loneliness. Maybe women.",
+      "index": 12,
+      "text": "Dwight hands Ryan a beet seed and begins a solemn speech; a goat or animal walks in and interrupts, causing Dwight to yell 'Damn it.'",
       "characters": [
+        "Dwight",
         "Ryan"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Question about Michael Scott's greatest fear",
-      "punchline": "Ryan's surprisingly accurate assessment",
-      "craft_total": 6.65,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "setup": "Dwight has begun a ceremonial speech about planting a beet seed as metaphor for Ryan's sales journey",
+      "punchline": "The solemnity is shattered by an animal interruption, and Dwight's furious 'Damn it' reveals that even his own farm doesn't cooperate with his elaborate rituals",
+      "craft_total": 6.89,
+      "impact_score": 6.67,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Ryan shows surprising insight into Michael's psychology. The 'maybe women' addition shows he's actually been paying attention."
+      "explanation": "Visual comedy inferred from context \u2014 the interruption of Dwight's ceremony by farm chaos is a reliable situational gag. 'Damn it' as the button mirrors the cold open's 'Damn it' from the brain teaser scene, giving a slight callback feel. Functional physical comedy."
     },
     {
-      "index": 36,
-      "text": "Wrong. He's not afraid of anything. Also, I would've accepted snakes.",
+      "index": 13,
+      "text": "Andy approaches Jim to ask him to 'stand up and talk to me over there' \u2014 an elaborate attempt to steal the chair",
+      "characters": [
+        "Andy",
+        "Jim"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "The chair standoff is ongoing; Andy needs Jim to vacate the chair",
+      "punchline": "Andy's transparently thin pretext \u2014 asking Jim to 'talk to him over there' \u2014 is seen through immediately, and Jim's deadpan reaction beat (presumably a camera look) confirms the absurdity",
+      "craft_total": 6.86,
+      "impact_score": 6.25,
+      "quotability": 3.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The payoff of the chair gag \u2014 Andy's scheme is so transparent it becomes funny in its own right. 'That's it? That's what you came up with?' Jim's retort confirms the audience read. Good running gag structure."
+    },
+    {
+      "index": 14,
+      "text": "Jim: 'That's it? That's what you came up with?' Andy: 'I am acting my heart out here.'",
+      "characters": [
+        "Jim",
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Jim has called out Andy's paper-thin ruse to get him out of the chair",
+      "punchline": "Andy's response is not shame but professional grievance \u2014 he believes his performance was excellent and feels underappreciated as an actor",
+      "craft_total": 6.95,
+      "impact_score": 6.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "'I am acting my heart out here' is a genuinely funny line \u2014 it reframes the failure of the con as an artistic critique rather than a tactical one. Andy's wounded pride over his acting ability is perfectly character-specific (Cornell theater background implied). One of the better lines in the Andy/Jim thread."
+    },
+    {
+      "index": 15,
+      "text": "Michael confessional about pretzel day: 'Once a year, they bring in a little cart, and they give away free pretzels. It's really not a big deal.'",
+      "characters": [
+        "Michael",
+        "Pam (or other office worker)"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "The announcement of free pretzels has clearly sent the office into a frenzy; we cut to a confessional for context",
+      "punchline": "Someone delivers 'It's really not a big deal' with understated flatness \u2014 immediately contradicted by what we see (the entire office abandoning work to queue for pretzels)",
+      "craft_total": 5.71,
+      "impact_score": 5.25,
+      "quotability": 3.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The irony works but it's a soft setup for the pretzel day payoffs to come. 'To some people it is' is a nice beat implying the speaker immediately undermines themselves. The ironic understatement is functional but not especially crafted."
+    },
+    {
+      "index": 16,
+      "text": "Michael confessional: 'Productivity is important, but how can I be productive if I have this one little thing in my brain that I cannot get out? And that one little thing is a soft pretzel.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael is rationalizing abandoning his work responsibilities",
+      "punchline": "The windup suggests something profound \u2014 'one little thing in my brain' \u2014 but collapses into 'a soft pretzel.' Then 'Look out for me!' is a delusional declaration of incoming productivity that will clearly never materialize.",
+      "craft_total": 7.31,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Strong Michael moment \u2014 the structure of building to 'a soft pretzel' as the existential obstacle is well-timed. 'Look out for me!' as a delusional promise of future productivity is the cherry on top. Good character integration: Michael genuinely believes this logic."
+    },
+    {
+      "index": 17,
+      "text": "Dwight: 'And just as you have planted your seed in the ground, I am going to plant my seed in you.'",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Dwight is delivering a solemn metaphorical speech about Ryan's sales training using the beet seed as a symbol",
+      "punchline": "The metaphor collapses into an unintentional double entendre \u2014 'plant my seed in you' \u2014 delivered with complete sincerity and no awareness of how it sounds",
+      "craft_total": 6.94,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The unintentional innuendo gag is a reliable comedic device; this one works because Dwight's absolute sincerity is pitch-perfect. Ryan's 'I don't think you know what you're saying' is exactly the right straight-man response. Not the most original joke type but executed with confidence."
+    },
+    {
+      "index": 18,
+      "text": "Ryan: 'I don't think you know what you're saying.' Dwight pivots immediately to a demonstration about bull manure: 'It smells pretty bad, doesn't it?'",
+      "characters": [
+        "Ryan",
+        "Dwight"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "absurdist"
+      ],
+      "setup": "Ryan calls out the double entendre; Dwight either ignores it or doesn't register it",
+      "punchline": "Without missing a beat, Dwight transitions to a literal pile of bull manure to make a sales metaphor, treating the moment as fully smooth",
+      "craft_total": 6.82,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The pivot to literal bull manure as the next metaphor is a nice escalation \u2014 from unintentional innuendo to actual farm waste. 'It's called bull crap and a client can smell it from a mile away' is a decent sales wisdom gag that also applies to Dwight's own performance."
+    },
+    {
+      "index": 19,
+      "text": "'It smells pretty bad, doesn't it?' 'Uh-huh.' 'It's called bull crap, and a client can smell it from a mile away.'",
+      "characters": [
+        "Dwight",
+        "Ryan"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "They are presumably standing near manure/a field; Dwight confirms Ryan smells something bad",
+      "punchline": "The smell is reframed as a sales metaphor \u2014 the physical grossness becomes the lesson",
+      "craft_total": 7.2,
+      "impact_score": 6.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Clean misdirection \u2014 the literal bad smell pivots to a metaphorical lesson, which itself is a clich\u00e9 used genuinely. The fact that Dwight apparently made Ryan stand in/near manure to teach this lesson is the funnier implication. Good economy."
+    },
+    {
+      "index": 20,
+      "text": "After the bull manure speech, Michael says 'Oh, hey, I forgot something in my car. I'll be right back.' \u2014 and leaves Ryan alone at the client meeting",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "misdirection"
+      ],
+      "setup": "Michael has been coaching Ryan on sales technique; Ryan is absorbing the advice",
+      "punchline": "Michael abandons Ryan mid-coaching with a transparent excuse \u2014 'forgot something in my car' \u2014 apparently genuinely unconcerned about leaving the temp alone in a client meeting",
+      "craft_total": 7.27,
+      "impact_score": 7.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedy is in what Michael doesn't do \u2014 he doesn't return, presumably having gotten distracted by pretzels or something else. The casual abandon of professional responsibility is pure Michael. Context suggests this is where Ryan is left to fend for himself, which pays off later."
+    },
+    {
+      "index": 21,
+      "text": "Stanley confessional: 'I wake up every morning in a bed that's too small, drive my daughter to a school that's too expensive, and then I go to work to a job for which I get paid too little. But on pretzel day... Well, I like pretzel day.'",
+      "characters": [
+        "Stanley"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "A list of quiet life grievances \u2014 bad bed, expensive school, low pay \u2014 building toward what seems like a complaint",
+      "punchline": "The hard pivot to 'Well, I like pretzel day' \u2014 delivered with genuine warmth amid the catalogue of suffering \u2014 is a beautiful character moment and a small joke about the smallness of what brings joy",
+      "craft_total": 8.13,
+      "impact_score": 8.17,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The best joke in the episode and one of the best one-liners The Office ever produced. The structure is nearly perfect: three parallel grievances with escalating pathos (bed too small \u2192 school too expensive \u2192 underpaid) set up an expectation of complaint or resignation. The turn is not 'but I keep going' or any redemptive clich\u00e9 \u2014 it's just 'I like pretzel day.' The bathos is devastating and funny simultaneously. Stanley's specific world-weariness makes this only possible from him. Economy is extraordinary \u2014 every word earns its place. The understatement 'Well, I like pretzel day' lands with the weight of a man who has made peace with small pleasures. This approaches the caliber of the vasectomy anchor example."
+    },
+    {
+      "index": 22,
+      "text": "Michael overhears teenagers rapping about cupcakes and The Chronicles of Narnia and says 'God, who invented cupcakes, right? I want to kill them.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Michael is eavesdropping on teenagers and getting increasingly agitated",
+      "punchline": "'I want to kill them' \u2014 an absurdly disproportionate response to cupcakes, delivered with the casual violence of someone who doesn't register how extreme they sound",
+      "craft_total": 6.09,
+      "impact_score": 5.83,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Mild dark comedy \u2014 Michael's inappropriate escalation to murder-talk over confections. Functional but not particularly crafted. The cupcake/Narnia rap detail is funnier than the punchline."
+    },
+    {
+      "index": 23,
+      "text": "Michael confronts Phyllis for cutting in the pretzel line: 'No, I think you're cutting in line.' Phyllis: 'Well, settle down, Scott.' Michael: 'No, I'm not gonna settle down. No way. Uh-uh.'",
+      "characters": [
+        "Michael",
+        "Phyllis"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael has appointed himself pretzel line enforcer with the authority of a dictator",
+      "punchline": "Phyllis \u2014 usually mild \u2014 casually dismisses him with 'Settle down, Scott' and Michael responds with childish fury, 'No way. Uh-uh.' The authority inversion (Phyllis dismissing her boss like a toddler) is the comic engine.",
+      "craft_total": 6.35,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's investment in pretzel line integrity is a good character gag. 'No way. Uh-uh.' is the kind of childish retort that makes Michael funny \u2014 he has the emotional vocabulary of a nine-year-old. Phyllis's 'settle down' is a good inversion of the power dynamic."
+    },
+    {
+      "index": 24,
+      "text": "'What a pair of marys.' (referring to Phyllis and Bob Vance after the line altercation) \u2014 followed by 'This is pretzel day.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The line confrontation has ended; Michael reasserts his position",
+      "punchline": "'This is pretzel day' delivered as solemn statement \u2014 as if the stakes of the occasion justify all behavior \u2014 is a perfect encapsulation of Michael's delusional gravity about trivial things",
+      "craft_total": 6.33,
+      "impact_score": 5.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'This is pretzel day' functions as a mic-drop non sequitur that simultaneously explains and escalates. Three words that communicate Michael's entire value system. Good economy."
+    },
+    {
+      "index": 25,
+      "text": "Dwight confessional parody: 'Hey, Dwight, you're a great salesman. Can you teach me? Sure, Ryan. I'll make you kneel in cow manure and I'll abandon you in a beet field.'",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "character_comedy"
+      ],
+      "setup": "Dwight is recounting what he imagines a normal mentorship would look like",
+      "punchline": "His version of 'normal mentorship dialogue' involves cow manure and beet field abandonment, which he delivers as if these are completely reasonable teaching methods",
+      "craft_total": 7.67,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is an exceptional joke. Dwight performs both roles in an imagined dialogue where 'normal mentorship' consists of the exact hazing rituals he just put Ryan through \u2014 and delivers them as aspirational. The structure (fake dialogue where both sides sound like Dwight) is excellent. High character integration: nobody else on the show has this specific flavor of oblivious self-parody. The callback to the actual events makes it a rewatch bonus. One of the episode's strongest jokes. Justifying the 8+ score: this approaches the 8.0 anchor in terms of craftsmanship \u2014 it's sharp, character-specific, economical, and quotable."
+    },
+    {
+      "index": 26,
+      "text": "Dwight: 'Congratulations, resourceful salesman. You have passed the second challenge. Welcome to Schrute farm!'",
       "characters": [
         "Dwight"
       ],
@@ -694,376 +512,925 @@
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Ryan's insightful answer about Michael",
-      "punchline": "Dwight's contradictory non-answer plus random snake reference",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Ryan has apparently found his way to Schrute Farms after being left with only a beet seed",
+      "punchline": "The formal announcement \u2014 complete with title 'resourceful salesman' and ceremonial welcome \u2014 treats a temp's afternoon of confusion as an epic quest completion",
+      "craft_total": 7.07,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Dwight logic - contradicting himself immediately then offering 'snakes' as an alternative shows his random thought process."
+      "explanation": "Dwight's ceremony-speak applied to mundane achievements is a reliable gag. 'Resourceful salesman' as a formal title is particularly good. Sets up the Schrute Farm sequence well."
     },
     {
-      "index": 37,
-      "text": "You will now wrestle my cousin Mose!",
+      "index": 27,
+      "text": "Eerie music plays at Schrute Farms; Mose runs past in the background while Dwight and Ryan stand solemnly",
       "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "escalation"
-      ],
-      "setup": "Dwight's fear elimination philosophy",
-      "punchline": "Sudden demand for physical combat with cousin",
-      "craft_total": 7.8,
-      "impact_score": 8.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant escalation of Dwight's bizarre mentorship. The sudden shift to physical combat with his cousin is perfectly absurd and unexpected."
-    },
-    {
-      "index": 38,
-      "text": "You're a freak. I'm not doing this anymore and this is over.",
-      "characters": [
+        "Dwight",
+        "Mose",
         "Ryan"
-      ],
-      "joke_types": [
-        "reaction_beat",
-        "character_comedy"
-      ],
-      "setup": "Wrestling demand as final straw",
-      "punchline": "Ryan's complete rejection and honest assessment",
-      "craft_total": 6.0,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good payoff to the escalating absurdity. Ryan finally snapping and calling Dwight a freak is satisfying and in character."
-    },
-    {
-      "index": 39,
-      "text": "Ryan, just get in the coffin.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "escalation",
-        "dark_subversive"
-      ],
-      "setup": "Ryan trying to leave",
-      "punchline": "Dwight's casual suggestion of coffin entry",
-      "craft_total": 7.85,
-      "impact_score": 8.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Darkly hilarious escalation. Dwight treating coffin entry as a reasonable compromise is perfectly absurd. The casual delivery makes it funnier."
-    },
-    {
-      "index": 40,
-      "text": "Something he whittled.",
-      "characters": [
-        "Dwight"
       ],
       "joke_types": [
         "visual_gag",
         "absurdist"
       ],
-      "setup": "Dwight showing Mose's apology gifts",
-      "punchline": "Undefined whittled object as peace offering",
-      "craft_total": 6.45,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Dwight is conducting a formal ceremony welcoming Ryan to Schrute Farms",
+      "punchline": "Mose \u2014 a wordless, feral-seeming figure \u2014 sprints across the background for no explained reason, disrupting the solemnity with pure absurdism",
+      "craft_total": 7.42,
+      "impact_score": 7.25,
+      "quotability": 3.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character detail about Mose's primitive lifestyle. The vagueness of 'something he whittled' suggests it's unrecognizable."
+      "explanation": "Mose is introduced as a pure visual gag \u2014 a figure who exists entirely in the background of Dwight's world and operates by his own inscrutable logic. The comedy is in what ISN'T explained. The running figure requiring no commentary is excellent visual comedy. Rewatch bonus because Mose becomes funnier the more you understand his character. High character integration because Mose is inextricably Dwight's world."
     },
     {
-      "index": 41,
-      "text": "You know, I wanted us to be a team. An unstoppable team that competed against other teams.",
+      "index": 28,
+      "text": "The Cardigans' 'Love Me' playing at Schrute Farm, apparently initiated by Mose; Karen asks it to stop; the song continues through her protests with everyone powerless to stop it",
       "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Dwight explaining his motivations",
-      "punchline": "Overly competitive view of basic workplace relationship",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character moment showing Dwight's lonely desperation beneath the bravado. His competitive framing of friendship is touchingly misguided."
-    },
-    {
-      "index": 42,
-      "text": "Screw gun! The sales call!",
-      "characters": [
+        "Mose",
+        "Karen",
         "Dwight"
       ],
       "joke_types": [
         "physical_slapstick",
-        "escalation"
+        "running_gag"
       ],
-      "setup": "Dwight suddenly remembering their actual purpose",
-      "punchline": "Panicked realization and action movie dialogue",
-      "craft_total": 6.1,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "A scene transition to the Scranton office is accompanied by incongruous love song music",
+      "punchline": "Karen's 'This is not fair. It's gonna be in my head all day. Please.' / 'This is not a proportionate response.' \u2014 the song plays on regardless",
+      "craft_total": 6.88,
+      "impact_score": 6.75,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good physical comedy moment. Dwight's action movie exclamation for a sales call shows his dramatic tendencies."
+      "explanation": "'This is not a proportionate response' is a great Karen line \u2014 the reasonable person applying reasonable language to a completely unreasonable situation. The sustained nature of the music joke (it keeps playing through dialogue) is effective. Mose's mysterious autonomy in initiating the song adds to his absurdist characterization."
     },
     {
-      "index": 43,
-      "text": "Deal or no deal? Let's make a deal. So what is the deal?",
+      "index": 29,
+      "text": "Dwight: 'Whatever happened to those guys?' \u2014 referring to the love song artists, asked sincerely mid-ceremony",
       "characters": [
         "Dwight"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Dwight trying to close the sale",
-      "punchline": "Multiple game show references about 'deals'",
-      "craft_total": 4.5,
-      "impact_score": 4.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Weak wordplay relying on pop culture references. Multiple game show references don't add up to a strong joke."
+      "setup": "The love song is playing as part of Dwight's solemn initiation; Ryan is begging him to stop it",
+      "punchline": "Dwight, completely unselfconscious, asks a genuine VH1-style question about the band's career trajectory \u2014 mid-ritual \u2014 as if they're chatting at a bar",
+      "craft_total": 7.58,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Five words that reveal Dwight is simultaneously committed to the gravitas of his initiation AND genuinely curious about a pop group's career. The tonal whiplash is the entire joke. This kind of non sequitur character detail \u2014 sincere but absurd \u2014 is The Office at its sharpest. Justifying the 8+: the economy is perfect, the character integration is high (Dwight's odd pockets of mainstream pop culture curiosity), and the laugh comes from genuine surprise. Comparable to the 8.0 anchor in craft terms."
     },
     {
-      "index": 44,
-      "text": "Michael always says K-I-S-S. 'Keep it simple, stupid.' Great advice. Hurts my feelings every time.",
+      "index": 30,
+      "text": "Michael attempts to skip the pretzel line using Pam's waiting and his own trip to the bathroom: 'I thought that maybe you could wait in line for me while I go to the bathroom?'",
       "characters": [
+        "Michael",
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Pam catches Michael in the pretzel line during work hours and tries to redirect him; Michael agrees to go do work",
+      "punchline": "His 'compromise' is to have Pam hold his place \u2014 then he reverses it by asking HER to wait in line while he goes to the bathroom, abandoning all pretense of returning to work",
+      "craft_total": 7.21,
+      "impact_score": 7.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Michael avoidance behavior \u2014 framing his complete irresponsibility as a reasonable arrangement. 'You're an angel' to Pam's refusal before she's even said yes is a good detail. Functional character comedy."
+    },
+    {
+      "index": 31,
+      "text": "Michael: 'Pam, productivity starts with patience and determination.' \u2014 said while standing in a pretzel line",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Pam is urging Michael to be productive; Michael deflects with a business aphorism",
+      "punchline": "The aphorism \u2014 which sounds managerial \u2014 is being deployed in defense of waiting in a snack line, making 'patience and determination' synonyms for 'wanting a pretzel badly enough'",
+      "craft_total": 7.23,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael weaponizing corporate wisdom to justify his own laziness/childishness is a reliable and well-executed gag. The specific words ('patience and determination') applied to pretzel acquisition is funny because of the mismatch. Good economy."
+    },
+    {
+      "index": 32,
+      "text": "Dwight: 'You have walked the long, lonely walk of loneliness...' Ryan cuts him off to call out the hazing",
+      "characters": [
+        "Dwight",
+        "Ryan"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Dwight begins a portentous narration of Ryan's journey",
+      "punchline": "'The long, lonely walk of loneliness' \u2014 the redundancy ('long... walk of loneliness' \u2014 loneliness is already implied by 'lonely') is either Dwight's grandiose writing or a mock-epic error, and Ryan refuses to play along",
+      "craft_total": 6.74,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The redundant phrase 'long, lonely walk of loneliness' is a slight joke about Dwight's overwrought prose style. Ryan's interruption with actual reality-checking grounds the absurdism. Functional but not a highlight."
+    },
+    {
+      "index": 33,
+      "text": "Ryan: 'Look, man, I was in a frat in college, so I know what you're doing. I get it.' Dwight's response: 'You know what your problem is? You think you know everything.'",
+      "characters": [
+        "Ryan",
         "Dwight"
       ],
       "joke_types": [
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Dwight sharing Michael's business wisdom",
-      "punchline": "Admission that the advice personally wounds him",
-      "craft_total": 7.1,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Ryan tries to demystify the initiation by mapping it onto familiar hazing frameworks",
+      "punchline": "Dwight reframes Ryan's accurate insight as the problem itself \u2014 'you think you know everything' \u2014 when Ryan is, by any measure, the saner of the two. The irony is rich: Dwight accusing Ryan of overconfidence while conducting beet-field initiations.",
+      "craft_total": 6.91,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great character moment showing Dwight's sensitivity beneath his tough exterior. The contradiction of praising advice that hurts him is perfectly Dwight."
+      "explanation": "Dwight sincerely delivering self-help coaching to someone who is clearly correct is good irony. 'You have to trust that maybe there are other people who can teach you things' \u2014 from Dwight, on his own beet farm, during an improvised hazing ritual \u2014 lands well."
     },
     {
-      "index": 45,
-      "text": "Did you have a lot of sugar today, Michael?",
-      "characters": [
-        "Jim"
-      ],
-      "joke_types": [
-        "reaction_beat",
-        "observational"
-      ],
-      "setup": "Michael's manic reorganization announcement",
-      "punchline": "Jim treating him like a hyperactive child",
-      "craft_total": 6.0,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback to the pretzel storyline. Jim's parental tone with Michael is appropriately condescending."
-    },
-    {
-      "index": 46,
-      "text": "What's on your suit? Caramel dip.",
-      "characters": [
-        "Phyllis",
-        "Michael"
-      ],
-      "joke_types": [
-        "visual_gag",
-        "callback"
-      ],
-      "setup": "Michael's professional reorganization speech",
-      "punchline": "Evidence of his pretzel binge on his clothing",
-      "craft_total": 6.65,
-      "impact_score": 7.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good visual payoff to the pretzel storyline. The physical evidence undermining his professional presentation is effective."
-    },
-    {
-      "index": 47,
-      "text": "Are we not? Are we not? Are we not? Are you with me? Are you with me?",
+      "index": 34,
+      "text": "Michael orders a pretzel with all 18 toppings simultaneously \u2014 'Is there any way that you could do all of them?'",
       "characters": [
         "Michael"
       ],
       "joke_types": [
-        "physical_slapstick",
+        "character_comedy",
         "escalation"
       ],
-      "setup": "Michael's increasingly manic presentation",
-      "punchline": "Repetitive desperate appeals for validation",
-      "craft_total": 5.75,
-      "impact_score": 6.0,
-      "quotability": 3.0,
+      "setup": "The pretzel vendor lists 18 extravagant topping options for the free pretzel",
+      "punchline": "Michael, after hearing the full list, asks for all of them \u2014 a request so absurd the vendor apparently agrees without hesitation",
+      "craft_total": 6.98,
+      "impact_score": 7.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of Michael's sugar-fueled mania. The repetitive validation seeking is pathetically in character."
+      "explanation": "The absurdity of ordering all 18 toppings is a visual comedy setup \u2014 the pretzel Michael receives must look extraordinary. The list itself (M&Ms, cotton candy bits, powdered sugar, peanut butter drizzle, AND caramel dip) is the real escalating gag, paid off by his 'the works' request. The vendor's cheerful 'You got it!' without hesitation is a nice beat."
     },
     {
-      "index": 48,
-      "text": "It's those online paper jerks. The whole business is changing. You know what? They're gonna be screwed once this whole Internet fad is over.",
+      "index": 35,
+      "text": "Dwight's formal question session: 'What is the greatest danger facing Dunder Mifflin?' Ryan: 'Outsourcing and consolidation of competition.' Dwight: 'Wrong. Flash floods.'",
+      "characters": [
+        "Dwight",
+        "Ryan"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Dwight conducts a formal oral examination of Ryan on Dunder Mifflin business intelligence",
+      "punchline": "Ryan gives a smart, accurate business answer; Dwight's correction is 'Flash floods' \u2014 a paranoid prepper answer that reveals Dwight's threat model is entirely agricultural/meteorological",
+      "craft_total": 8.51,
+      "impact_score": 8.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the best jokes in the episode. The structure is perfect: Ryan's answer is thoughtful and correct (outsourcing, consolidation), making Dwight's correction \u2014 'Flash floods' \u2014 a maximum-contrast punchline. It's not just absurd; it reveals exactly who Dwight is. He runs the threat assessment for a paper company like a medieval farmer assessing risks to his harvest. High originality, perfect economy (two words does all the work), exceptional character integration. Justifying the 8+ score: this is structurally comparable to the 8.0 anchor \u2014 sharp, unexpected, highly quotable, character-specific, perfect economy. The surprise-to-specificity ratio is excellent."
+    },
+    {
+      "index": 36,
+      "text": "Ryan hears a noise; Dwight: 'Pay no attention to the spirits that haunt this hallowed ground.' Ryan: 'Is that your cousin Mose?'",
+      "characters": [
+        "Dwight",
+        "Ryan"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "An ominous sound; Dwight offers a mystical non-explanation",
+      "punchline": "Ryan immediately identifies it as Mose \u2014 the mystery is instantly demystified",
+      "craft_total": 7.48,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The speed of Ryan's Mose-identification undercuts all of Dwight's ceremony. 'Spirits that haunt this hallowed ground' is a great Dwight phrase. Ryan's instant accurate read is well-timed."
+    },
+    {
+      "index": 37,
+      "text": "'What is the true cause of Robert Mifflin's suicide?' Ryan: 'Depression?' Dwight: 'Wrong. He hated himself.'",
+      "characters": [
+        "Dwight",
+        "Ryan"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Dwight continues the formal questioning on Dunder Mifflin corporate history",
+      "punchline": "Ryan's 'Depression?' is a reasonable clinical answer. Dwight's correction \u2014 'He hated himself' \u2014 is technically a subset of depression but delivered as a correction, with the specificity of someone who has thought about this and prefers the harsher, more personal verdict",
+      "craft_total": 7.92,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dark comedy executed with precision. 'He hated himself' is funnier than any absurdist alternative because it sounds clinical but carries personal judgment \u2014 Dwight has an opinion about this founder and it's harsh and specific. The brevity and confidence of the correction is excellent. Dark but not gratuitous; the comedy comes from Dwight's conviction."
+    },
+    {
+      "index": 38,
+      "text": "Dwight: 'What is the Dharma Initiative?' \u2014 a reference to Lost, included as a real Dunder Mifflin quiz question",
       "characters": [
         "Dwight"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Trying to console Ryan after failed sales call",
-      "punchline": "Calling the Internet a 'fad' in 2006",
-      "craft_total": 7.1,
-      "impact_score": 7.5,
-      "quotability": 8.0,
+      "setup": "The quiz has included legitimate (if paranoid) company questions; this question follows with no setup",
+      "punchline": "The sudden inclusion of a Lost reference \u2014 as a genuine quiz question in the Dunder Mifflin initiation \u2014 reveals Dwight's worldbuilding incorporates pop culture conspiracies into his corporate threat assessment",
+      "craft_total": 6.87,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A period-specific gag (Lost was massive in 2006) that works because Dwight including it with no irony in a corporate quiz is perfectly absurd. The joke ages somewhat but in context it was sharp. The series 'flash floods / he hated himself / Dharma Initiative' as consecutive answers builds to good absurdist escalation."
+    },
+    {
+      "index": 39,
+      "text": "Kevin: 'I'm sure Dwight will protect him.' Office worker: 'I don't know, Dwight's so weird.' Kevin: 'He's not weird, he's just individualistic.' Other: 'No, he's a freak.' Kevin: 'You're a freak!'",
+      "characters": [
+        "Kevin",
+        "Kelly",
+        "Angela"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "The office is worried about Ryan being out with Dwight; a debate breaks out about Dwight's character",
+      "punchline": "Kevin's defense of Dwight using 'individualistic' (a genuine attempt at diplomatic reframing) collapses into 'You're a freak!' \u2014 a schoolyard retort that reveals Kevin can't sustain a sophisticated argument",
+      "craft_total": 6.25,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Kevin's escalation from 'individualistic' to 'you're a freak' is a good character beat \u2014 he starts with diplomacy and immediately abandons it. The casual chaos of the office argument is nicely done. Functional comedy."
+    },
+    {
+      "index": 40,
+      "text": "Dwight asks the final question: 'What is Michael Scott's greatest fear?' Ryan answers: 'Loneliness.' Then adds: 'Maybe women.'",
+      "characters": [
+        "Dwight",
+        "Ryan"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Dwight poses the climactic question of his initiation as if revealing a great secret",
+      "punchline": "Ryan's 'Loneliness' is a surprisingly insightful and empathetic answer about Michael. 'Maybe women' is the deadpan escalation that adds comedy without undermining the pathos.",
+      "craft_total": 7.23,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A two-beat joke that works on two levels: 'Loneliness' is a genuinely poignant character insight about Michael, and 'Maybe women' is a dry kicker. Ryan's ability to understand Michael despite resisting his world is nicely characterized. The economy of 'Maybe women' as an addition is excellent."
+    },
+    {
+      "index": 41,
+      "text": "Ryan answers Michael's greatest fear: 'Loneliness.' pause. 'Maybe women.'",
+      "characters": [
+        "Ryan"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Dwight asks what Michael's greatest fear is",
+      "punchline": "Ryan's two-part answer: 'Loneliness' (accurate, thoughtful) and then the pause \u2014 'Maybe women.' \u2014 the hedge that's funnier than the main answer",
+      "craft_total": 7.43,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The beat between 'Loneliness' and 'Maybe women' is perfectly timed. Ryan's first answer shows he's actually studied Michael; the 'maybe women' addendum is simultaneously funny and true. The understatement ('maybe') makes it better than a confident second answer would be."
+    },
+    {
+      "index": 42,
+      "text": "Dwight: 'Wrong. He's not afraid of anything. Also, I would have accepted snakes.'",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Ryan has given the thoughtful and arguably correct answer about Michael's fear of loneliness",
+      "punchline": "Dwight rejects it with 'He's not afraid of anything' (clearly untrue and obviously Dwight covering for his boss) and then 'Also, I would have accepted snakes' \u2014 revealing that his quiz has multiple acceptable answers including a completely random one",
+      "craft_total": 8.4,
+      "impact_score": 8.67,
+      "quotability": 9.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant period-appropriate joke about technological change denial. Dwight's complete misunderstanding of business evolution is perfectly in character and prescient."
+      "explanation": "Among the best jokes in the episode and one of the funniest lines in this run of The Office. The structure is perfect: the first part ('he's not afraid of anything') is Dwight's loyalty to Michael functioning as denial. The second part ('Also, I would have accepted snakes') does an enormous amount of work: it reveals Dwight's quiz has no real answer key, that 'snakes' is an equivalent valid answer to 'loneliness' in Dwight's worldview, and that the initiation is completely made up on the fly. It also implies Dwight is himself afraid of snakes (or thinks Michael is) without stating it. The economy is extraordinary \u2014 six words pay off the entire quiz sequence. Justifying the 8+ score: the surprise, specificity, and character integration all match or exceed the 8.0 anchor. 'Also, I would have accepted snakes' is the kind of line that gets repeated verbatim by viewers."
+    },
+    {
+      "index": 43,
+      "text": "Dwight: 'You will now wrestle my cousin Mose!' \u2014 followed by Ryan's absolute refusal and Dwight's 'Just get in the coffin.'",
+      "characters": [
+        "Dwight",
+        "Ryan"
+      ],
+      "joke_types": [
+        "absurdist",
+        "escalation"
+      ],
+      "setup": "The initiation has reached its 'final test'; Ryan expects something survivable",
+      "punchline": "Wrestling Mose is the final test. When Ryan refuses, Dwight escalates to 'Just get in the coffin' \u2014 as if the coffin is a reasonable de-escalation from wrestling a feral cousin",
+      "craft_total": 8.07,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The escalation logic \u2014 Mose wrestling \u2192 coffin \u2014 is perfectly absurd. 'Just get in the coffin' works because it sounds like a compromise, as if the coffin is more reasonable than wrestling. The existential randomness of there being a coffin on the premises at all is the real gag. Mose standing by silently amplifies the visual comedy. One of the episode's biggest physical comedy moments even in transcript form. Justifying the 8+ score: the coffin line is genuinely surprising and specific, creates a strong visual image, and the comedic logic (coffin as de-escalation) is original and perfectly executed."
+    },
+    {
+      "index": 44,
+      "text": "After Ryan storms off, Mose says: 'He seemed nice.' Dwight: 'Where are all the animals?'",
+      "characters": [
+        "Mose",
+        "Dwight"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Ryan has just fled the farm in disgust after being asked to get in a coffin",
+      "punchline": "Mose's 'He seemed nice' is a perfectly guileless social observation from someone with no idea what went wrong. Dwight's non sequitur 'Where are all the animals?' suggests he's already moved on entirely.",
+      "craft_total": 7.64,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Two short lines that reveal both characters perfectly. Mose's childlike 'He seemed nice' \u2014 after Ryan rejected a coffin \u2014 is a deadpan masterpiece of naive observation. Dwight immediately redirecting to farm logistics ('Where are all the animals?') shows his emotional processing speed. The juxtaposition of these two non-responses to Ryan's departure is funnier than any direct acknowledgment would be. Justifying the 8+: the economy (five words total for both lines), the character specificity, and the comedic gap between what happened and these responses make this a very strong moment."
+    },
+    {
+      "index": 45,
+      "text": "Dwight runs after Ryan, apologizing: 'I am sorry. Mose is sorry, too. Look, he sent over a basket with eggs and some fat-back bacon, and look, something he whittled.'",
+      "characters": [
+        "Dwight",
+        "Mose"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Dwight chases after Ryan to apologize for the initiation going too far",
+      "punchline": "The peace offering \u2014 eggs, fat-back bacon, and 'something he whittled' \u2014 is Schrute Farms hospitality applied to an apology for near-coffin-forcing. The specificity of 'something he whittled' (not a gift with a name, just an object) is particularly funny.",
+      "craft_total": 7.52,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The apology basket is quintessential Dwight \u2014 he genuinely thinks farm produce and a carved object constitute a meaningful reconciliation gift. 'Something he whittled' with no further description is the best detail: Mose makes things and gives them, and that's enough. Strong character integration for both Dwight and Mose."
+    },
+    {
+      "index": 46,
+      "text": "Dwight's confessional about wanting to be Ryan's ally: 'I wanted us to be a team. An unstoppable team that competed against other teams.'",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Dwight is genuinely expressing his emotional desire for a work partnership after Jim left",
+      "punchline": "The definition of 'team' \u2014 'an unstoppable team that competed against other teams' \u2014 is tautological and grandiose but delivered with complete earnestness, revealing Dwight's loneliness under the hazing",
+      "craft_total": 6.97,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "This is a joke with genuine pathos underneath \u2014 Dwight misses Jim and wants Ryan to fill that void, but can only express it through competitive frameworks. 'Competed against other teams' is funny because it adds nothing to the definition of 'team.' Strong character integration, mixing comedy and character depth."
+    },
+    {
+      "index": 47,
+      "text": "Michael always says 'K-I-S-S. Keep It Simple, Stupid.' Ryan: 'Great advice, hurts my feelings every time.'",
+      "characters": [
+        "Ryan",
+        "Michael (referenced)"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ryan is recalling Michael's sales coaching acronym while preparing for the Coselli call",
+      "punchline": "'Hurts my feelings every time' \u2014 Ryan acknowledges that an acronym telling you you're stupid is emotionally uncomfortable every time it's deployed, no matter how familiar",
+      "craft_total": 7.33,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A sharp, quick confessional beat. The joke is that Ryan is self-aware enough to recognize that KISS feels like an insult each time, delivered with completely dry affect. Good economy and character work \u2014 Ryan's wary relationship with Michael's 'wisdom' is nicely captured."
+    },
+    {
+      "index": 48,
+      "text": "Michael bursts into the office after his pretzel: 'I am officially streamlining the efficiency of this corporation.' Toby: 'Second?' Michael: 'Yes, second, Toby.'",
+      "characters": [
+        "Michael",
+        "Toby"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael enters in a sugar high from his all-topping pretzel and declares sweeping organizational changes",
+      "punchline": "Toby catches Michael mid-speech on 'Second' \u2014 apparently Michael said 'First' in a clause we missed \u2014 and Michael confirms 'Yes, second, Toby' with full authority, implying he has a numbered agenda for his mania",
+      "craft_total": 7.13,
+      "impact_score": 7.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's sugar-rush management mania is a solid visual comedy setup. The 'Second?' / 'Yes, second, Toby' exchange is a nice detail implying Michael had a full numbered agenda prepared and we missed item one. Functional comedy."
     },
     {
       "index": 49,
-      "text": "Ryan the Temp vandalism sequence",
+      "text": "Toby: 'Did you have a lot of sugar today, Michael?' Then: 'What's on your suit?' Michael: 'Caramel dip.'",
+      "characters": [
+        "Toby",
+        "Michael"
+      ],
+      "joke_types": [
+        "visual_gag",
+        "character_comedy"
+      ],
+      "setup": "Michael is manic and issuing sweeping corporate reforms while clearly on a pretzel sugar high",
+      "punchline": "'Caramel dip' \u2014 delivered without shame or explanation \u2014 confirms Michael has been eating his chaos pretzel in a suit, leaving visible evidence of the 18-topping disaster on his person",
+      "craft_total": 7.08,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The payoff of the 18-topping pretzel gag. 'Caramel dip' as an answer to 'What's on your suit?' is perfectly deadpan and rewards the audience for remembering the pretzel order. Toby's diagnostic 'Did you have a lot of sugar today?' is a good straight-man line. Visual comedy well-executed in transcript."
+    },
+    {
+      "index": 50,
+      "text": "Ryan confessional: 'They really didn't like me.' Michael: 'They did not. But they didn't have to say it to your face.'",
+      "characters": [
+        "Ryan",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ryan is processing the failed Coselli sales call with Michael",
+      "punchline": "Michael's attempted sympathy \u2014 'they didn't have to say it to your face' \u2014 is a backhanded condolence that acknowledges Ryan was rejected while also implying the rejection should have been done politely, which is no comfort at all",
+      "craft_total": 7.42,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael trying to offer comfort while making things worse is a reliable character note. 'They didn't have to say it to your face' as condolence is a beautifully useless thing to say \u2014 it acknowledges the failure while offering no actual support. Good Michael line."
+    },
+    {
+      "index": 51,
+      "text": "Michael: 'Not everything's a lesson, Ryan. Sometimes you just fail.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Ryan is trying to extract a teachable moment from the failed sales call",
+      "punchline": "Michael delivers what sounds like harsh but wise advice \u2014 'Sometimes you just fail' \u2014 but from Michael Scott, who never admits failure and always lessons-everything, it's unintentionally ironic wisdom",
+      "craft_total": 7.28,
+      "impact_score": 7.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "One of the episode's best Michael lines. The irony is that Michael \u2014 who is constitutionally incapable of accepting failure without a lesson or excuse \u2014 delivers this as genuine wisdom to Ryan. It's accidentally correct coming from the least self-aware man in Scranton. Economy is excellent. Quotable as a piece of advice that exists outside its comedic context."
+    },
+    {
+      "index": 52,
+      "text": "Michael on the internet: 'You know what? They're gonna be screwed once this whole Internet fad is over.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Michael is blaming online paper companies for the failed sale",
+      "punchline": "'This whole Internet fad' \u2014 Michael's dismissal of the internet as a passing trend is both character-perfect and a period-specific joke that has aged into irony",
+      "craft_total": 6.57,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The 'internet is a fad' joke was already a well-worn trope in 2006, but it's earned here because Michael saying it \u2014 in an industry being actively disrupted by the internet \u2014 adds character-specific irony. Rewatch bonus because it becomes funnier as Dunder Mifflin's actual fate is known. Economy is good."
+    },
+    {
+      "index": 53,
+      "text": "Dwight and Ryan running and yelling 'Temp! Temp! Temp!' and 'Ryan! Ryan! Ryan!' as they apparently speed through the parking lot \u2014 a celebratory release after the sales win",
       "characters": [
         "Dwight",
         "Ryan"
       ],
       "joke_types": [
         "physical_slapstick",
-        "escalation"
+        "character_comedy"
       ],
-      "setup": "Dwight trying to cheer up Ryan",
-      "punchline": "Vandalism as team building exercise",
-      "craft_total": 6.2,
-      "impact_score": 6.5,
+      "setup": "Ryan has unexpectedly closed the Coselli deal on his own; Dwight is reacting to the success",
+      "punchline": "The two of them apparently celebrate with feral, childlike energy \u2014 chanting names and running \u2014 which contrasts with the professional context and reveals Dwight's actual emotional register under the samurai exterior",
+      "craft_total": 6.65,
+      "impact_score": 7.17,
       "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good physical comedy sequence showing Dwight's misguided mentorship methods. The property damage as bonding is appropriately irresponsible."
+      "explanation": "The contrast between Dwight's earlier gravitas and this jubilant running-and-chanting is a good tonal payoff. 'Courtesy of Dunder Mifflin!' is a nice button. The physical comedy is well-inferred from the transcript."
     },
     {
-      "index": 50,
-      "text": "Just think. That temp agency could've sent you anywhere.",
+      "index": 54,
+      "text": "Pam's brief, loaded phone call: 'Dunder Mifflin, this is Pam. Oh, hi, Jim. He's on a sales call. No message? Bye, Jim.'",
+      "characters": [
+        "Pam",
+        "Jim"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "Jim calls the office, ostensibly for Michael",
+      "punchline": "The entire emotional subtext of Jim calling to hear Pam's voice under the guise of a business call is played in Pam's quiet pause after 'No message?' and the understated 'Bye, Jim.' The audience feels everything that isn't said.",
+      "craft_total": 7.46,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Not a traditional joke but a masterclass in what The Office does with silence and subtext. The comedy here is bittersweet \u2014 Jim calling under pretense, Pam answering the 'real' call professionally, the 'No message?' hanging in the air. The irony that this phone call (Jim wanting Pam) is labeled 'No message' is quietly devastating. The economy score is very high because every word carries triple meaning. Rewatch bonus because knowing the Jim/Pam arc makes this moment richer. Justifying the 8+ on craft: the structure is perfect dramatic irony, character integration is maximal (only Jim and Pam have this dynamic), economy is extraordinary. This is the type of moment that makes The Office exceptional."
+    },
+    {
+      "index": 55,
+      "text": "Dwight's victory chant: 'Temp! Temp! Temp!' becomes 'Ryan! Ryan! Ryan! Ryan! Yes!'",
       "characters": [
         "Dwight"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Dwight and Ryan's bonding moment",
-      "punchline": "Dwight's touching appreciation for random assignment",
-      "craft_total": 6.7,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Ryan has secured the Coselli account",
+      "punchline": "Dwight's chant starts with 'Temp!' (the dehumanizing nickname) and then upgrades to his actual name \u2014 a small but genuine moment of Dwight accepting Ryan",
+      "craft_total": 6.66,
+      "impact_score": 6.75,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sweet character moment showing Dwight's genuine appreciation. The randomness of temp assignments given weight is touching."
+      "explanation": "The Temp \u2192 Ryan name evolution is a small but effective comedic-emotional beat. Dwight elevating Ryan from 'temp' to his name is the episode's small character arc, and putting it in a sports chant is perfectly Dwight."
     },
     {
-      "index": 51,
-      "text": "I think about that all the time.",
+      "index": 56,
+      "text": "Dwight to Ryan: 'Just think, that temp agency could have sent you anywhere.' Ryan: 'I think about that all the time.'",
       "characters": [
+        "Dwight",
         "Ryan"
       ],
       "joke_types": [
         "deadpan_understatement",
-        "dark_subversive"
+        "irony_sarcasm"
       ],
-      "setup": "Dwight's positive spin on temp assignment",
-      "punchline": "Ryan's darker interpretation of the same fact",
-      "craft_total": 7.9,
+      "setup": "Dwight means this as a compliment \u2014 Ryan being sent to Dunder Mifflin was lucky",
+      "punchline": "Ryan's 'I think about that all the time' means the opposite \u2014 he constantly mourns the fact that he landed in this particular office, and imagines the better alternatives",
+      "craft_total": 7.55,
       "impact_score": 7.5,
-      "quotability": 7.0,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent contrast between Dwight's gratitude and Ryan's existential dread. The same fact viewed completely differently shows their contrasting worldviews perfectly."
+      "explanation": "A perfect two-line joke. Dwight intends warmth; Ryan receives it as an occasion for regret. The beauty is that both readings are completely valid \u2014 both characters are having entirely different conversations about the same words. The economy (seven words from Ryan that say everything) and the dramatic irony make this exceptional. Rewatch bonus because knowing Ryan's eventual trajectory at Dunder Mifflin adds layers. Justifying the 8+ score: the structure is flawless (setup as sincerity, punchline as deflation), the irony is rich, the character specificity is high, and the economy rivals the 8.0 anchor."
     },
     {
-      "index": 52,
-      "text": "How do you confuse 28 Days with 28 Days Later?",
+      "index": 57,
+      "text": "'Just think, that temp agency could have sent you anywhere.' / 'I think about that all the time.'",
       "characters": [
-        "Jim"
+        "Dwight",
+        "Ryan"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Pam's movie mix-up story",
-      "punchline": "Jim's incredulous reaction to the confusion",
-      "craft_total": 5.9,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Dwight is expressing gratitude that Ryan ended up at Dunder Mifflin",
+      "punchline": "Ryan's 'I think about that all the time' \u2014 which is completely sincere regret, not gratitude",
+      "craft_total": 7.54,
+      "impact_score": 7.75,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good observational humor about a relatable mistake. The movies are genuinely easy to confuse, making Jim's reaction reasonable."
+      "explanation": "Excellent joke. Dwight means it as a compliment (lucky you ended up here!); Ryan takes it as an existential lament (every day I wish I'd gone somewhere else). The same sentence means opposite things to both speakers simultaneously. Economy is very strong. Ryan's delivery \u2014 sincere, wistful regret \u2014 makes this land. Very quotable and rewards repeat viewing."
     },
     {
-      "index": 53,
-      "text": "Fancy New Beesly would make that up. New apartment, new stories...",
+      "index": 58,
+      "text": "Stanley asking 'What time is it?' / 'A.M. or P.M.?' / 'Oh, good.' \u2014 implying he would happily stay the night for pretzel-related reasons, or simply that he's disoriented enough to genuinely not know",
       "characters": [
-        "Jim"
+        "Stanley"
       ],
       "joke_types": [
         "character_comedy",
-        "callback"
+        "deadpan_understatement"
       ],
-      "setup": "Pam's movie confusion story",
-      "punchline": "Jim teasing about her 'reinvention' after moving",
-      "craft_total": 6.7,
-      "impact_score": 6.5,
+      "setup": "It's the end of the workday; Stanley is apparently in a daze",
+      "punchline": "'A.M. or P.M.?' delivered with genuine uncertainty \u2014 and 'Oh, good' on learning it's P.M. \u2014 suggests Stanley has completely lost track of reality, either from the pretzel afterglow or general existential fog",
+      "craft_total": 7.15,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A Stanley moment that gets comedy from his utter disengagement from ordinary time-awareness. 'A.M. or P.M.?' as a sincere question from a man at his desk in an office is beautifully absurd. 'Oh, good' is the perfect button. Strong Stanley character voice."
+    },
+    {
+      "index": 59,
+      "text": "Michael learns the Coselli contracts arrived. His response: 'Oh, Coselli, with the Jell-O.' A pause. 'This is a huge sale.' Another pause. 'Yes, right, good.'",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "The Coselli sale has closed \u2014 a major business win \u2014 and we cut to Michael's reaction",
+      "punchline": "Michael's memory key for Coselli is 'the Jell-O' (from his Cosby bit), and he takes a beat to catch up to the significance of the news, followed by the faintly hollow 'Yes, right, good' \u2014 suggesting he doesn't fully process it and just confirms what he's told",
+      "craft_total": 7.15,
+      "impact_score": 6.75,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A quiet callback to the Cosby riff. Michael's filing system for clients is apparently 'the Jell-O guy' rather than anything professionally relevant. 'Yes, right, good' as a response to news of a major sale suggests Michael is just agreeing without processing. Good character integration."
+    },
+    {
+      "index": 60,
+      "text": "Jim calls and immediately says 'I forgot Kevin's extension. It's a fantasy football thing.' \u2014 a transparent excuse",
+      "characters": [
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jim calls the office again late at night; Pam is still there",
+      "punchline": "The excuse \u2014 Kevin's extension, fantasy football \u2014 is so thin it functions as an admission. 'I was just gonna go through the system 'cause I didn't think you'd be there' doubles down on the pretense, inadvertently revealing he was hoping to hear her voice through automated directory.",
+      "craft_total": 7.01,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Jim's escalating excuses ('Kevin's extension,' 'fantasy football,' 'I didn't think you'd be there') function as comedic self-incrimination. Each excuse is worse than the last and makes it more obvious he just wanted to call. The comedy is in the gap between the thin pretense and the actual emotional situation."
+    },
+    {
+      "index": 61,
+      "text": "Jim and Pam talk past each other both trying to speak, creating a cascade of 'Oh, I'm sorry. Go ahead.' 'No, I...' \u2014 and then Pam fills the void with 'Everything's pretty much the same here. Oh, good. A little different.'",
+      "characters": [
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "awkward_silence",
+        "character_comedy"
+      ],
+      "setup": "Jim and Pam are in the early stages of a late-night phone call, both wanting to connect but navigating the awkwardness of their current situation (he's in Stamford, they're not together)",
+      "punchline": "The stumbling politeness \u2014 both trying not to interrupt, over-correcting \u2014 is followed by Pam's 'Everything's pretty much the same here. Oh, good. A little different.' The 'A little different' lands as an understatement containing volumes.",
+      "craft_total": 7.54,
+      "impact_score": 7.25,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is The Office's signature blend of comedy and poignancy. The awkward over-politeness is funny (cringe/discomfort) and emotionally resonant simultaneously. 'A little different' acknowledging Jim's absence is a beautiful understatement that earns high craft scores for character integration and economy. Justifying the 8+: the economy of 'A little different' carrying the entire weight of their separation and unspoken feelings is exceptional writing. Only these two characters at this moment in their relationship can make this land."
+    },
+    {
+      "index": 62,
+      "text": "Jim: 'What time is it there?' Pam: 'What time is it here?' Jim: 'We're in the same time zone.' Pam: 'Yeah, right.'",
+      "characters": [
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The conversation has established distance between them; Jim asks the time",
+      "punchline": "'How far away did you think we were?' Jim. 'I don't know. It felt far.' \u2014 Pam's admission that the distance feels greater than geography explains collapses into a surprisingly open emotional statement, played as a small comedic beat",
+      "craft_total": 7.93,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'It felt far' is one of the most economical emotional statements in the episode. It works as comedy (Pam's literal answer to a literal question is wrong) and as character revelation (the emotional distance between them is real). The setup \u2014 'We're in the same time zone' correcting her \u2014 makes the punchline hit harder. Justifying the 8+: the economy is near-perfect, the character integration is maximal, and the joke operates simultaneously as comedy and emotional truth in a way that few shows manage."
+    },
+    {
+      "index": 63,
+      "text": "Jim: 'I type 90.' Pam: 'Shut up.' Jim: 'Mavis Beacon doesn't even type 90.'",
+      "characters": [
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Jim asks how many words per minute the average person types, then reveals his own speed",
+      "punchline": "'Mavis Beacon doesn't even type 90' \u2014 deployed with complete confidence and specificity, it's Jim doing his bit, and Pam's 'Shut up' is the perfect straight-woman response",
+      "craft_total": 7.15,
+      "impact_score": 7.0,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character beat showing Jim's affectionate teasing. 'Fancy New Beesly' is a nice nickname that captures their dynamic."
+      "explanation": "Jim's casual deployment of 'Mavis Beacon doesn't even type 90' is a great Jim line \u2014 the specificity of the reference, the absolute confidence of the claim, and Pam's 'Shut up' as the perfect response shows their chemistry. Punchy, specific, shows their rapport."
     },
     {
-      "index": 54,
-      "text": "Most apartments these days have, like, three. Three kitchens? Yes. How are you gonna cook every meal of the day in one kitchen?",
+      "index": 64,
+      "text": "Jim's typing reveal: Pam guesses 70, Jim says 'Forget it' and then 'Sixty-five' \u2014 Pam laughs, Jim: 'Okay, no need to laugh. Respectable? Respectable?'",
+      "characters": [
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Jim built up his typing speed claim, Pam guessed 70, and Jim has been stalling",
+      "punchline": "65 \u2014 lower than Pam's guess \u2014 is the deflating punchline to Jim's bragging. 'Respectable?' delivered twice with wounded dignity after Pam charitably calls it that is the button.",
+      "craft_total": 7.42,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The payoff of the Mavis Beacon setup. Jim's bragging collapses into a number lower than Pam's guess, and his mock-wounded 'Respectable?' is a perfect character beat \u2014 Jim would never genuinely brag, so his pretend offense at 'respectable' is all performance, and they both know it. This is Jim and Pam at their best: performing emotions neither of them feels, because the real emotions are too scary."
+    },
+    {
+      "index": 65,
+      "text": "Jim watches a horror movie alone, waiting for Sandra Bullock to show up. He has confused '28 Days' with '28 Days Later.'",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Jim describes watching a scary movie alone, 'holding on' expecting Sandra Bullock to appear",
+      "punchline": "He confused the Sandra Bullock rehab drama '28 Days' with the zombie horror film '28 Days Later' \u2014 watched the entire horror film waiting for Sandra Bullock",
+      "craft_total": 7.77,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. The premise is specific and believable (it's a very easy mistake to make at Blockbuster), the escalation ('I kept waiting for Sandra Bullock to show up') is funnier the longer you think about Jim enduring zombie violence waiting for a rom-com star, and Pam's 'No way! How do you confuse 28 Days with 28 Days Later?' is the perfect straight line. 'Because I got it at Blockbuster and they don't put the pictures on the box' is a real and funny defense. Justifying the high score: the originality, structure, and the specificity of detail (the Blockbuster defense) make this exceptional."
+    },
+    {
+      "index": 66,
+      "text": "Pam: 'Would I make that up?' Jim: 'Yes.' Pam: 'Fancy new Beesly would make that up. New apartment, new stories...'",
+      "characters": [
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Pam is defending her 28 Days story as true; Jim is skeptical",
+      "punchline": "'Fancy new Beesly' \u2014 Jim's nickname for Pam's new post-Roy life \u2014 is both playful teasing and a way of engaging with who she's becoming without him around",
+      "craft_total": 7.44,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Fancy new Beesly' is a great character-specific nickname that implies Jim is tracking Pam's growth with a mixture of pride, longing, and gentle mockery. Pam's self-deprecating response ('Fancy new apartment \u2014 one bedroom, one bathroom and a closet') is the perfect deflation. High character integration and quotability."
+    },
+    {
+      "index": 67,
+      "text": "Jim: 'You got totally taken for a ride, Beesly.' Then: 'Most apartments these days have like three kitchens.' Pam: 'Three kitchens?' Jim: 'Yes.' Pam: 'How are you gonna cook every meal of the day in one kitchen?'",
       "characters": [
         "Jim",
         "Pam"
       ],
       "joke_types": [
         "absurdist",
-        "escalation"
+        "character_comedy"
       ],
-      "setup": "Jim teasing about Pam's 'basic' apartment",
-      "punchline": "Ridiculous claim about three-kitchen standard",
-      "craft_total": 7.0,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Pam describes her new apartment as having one bedroom, one bathroom, one closet, and one kitchen",
+      "punchline": "Jim invents the claim that 'most apartments these days have like three kitchens' as a bit, and they both commit to the absurd premise \u2014 Pam asking about cooking efficiency in one kitchen with complete faux-concern",
+      "craft_total": 7.85,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalating absurdity bit. Jim's commitment to the ridiculous premise and Pam playing along shows their comfortable dynamic."
+      "explanation": "This is the best Jim-and-Pam joke in the episode and a quintessential example of their specific comedy: they co-create an absurd premise and both commit to it completely. Jim invents 'three kitchens' as a standard, and Pam immediately plays along with 'How are you gonna cook every meal of the day in one kitchen?' \u2014 treating the absurd as real. The comedy is in the shared improv and in what it reveals: they are perfectly in sync, capable of building a comedic world together in real time, which is heartbreaking because they're not together. Justifying the 8+ score: the character integration is as high as it gets in this episode \u2014 this joke can only be done by Jim and Pam, with their specific chemistry and improv relationship. The economy and structure are excellent."
     },
     {
-      "index": 55,
-      "text": "364 days... Until the next pretzel day.",
+      "index": 68,
+      "text": "Ryan walks in and interrupts Jim and Pam's call; they scramble to end the conversation with multiple awkward false starts: 'Okay, bye!' 'Oh, yeah, I should probably go, too...' 'Oh, no, I was...' 'I don't know what...' 'Do you have to go?' 'Yeah... No, I should probably go, too.'",
       "characters": [
-        "Stanley"
+        "Jim",
+        "Pam",
+        "Ryan"
+      ],
+      "joke_types": [
+        "awkward_silence",
+        "cringe_discomfort"
+      ],
+      "setup": "Jim and Pam are deep in a comfortable late-night phone conversation; Ryan's entrance shatters the moment",
+      "punchline": "Neither of them wants to hang up, so they perform a series of false endings \u2014 each 'bye' immediately followed by a new opening \u2014 revealing that neither wants the call to end, which they can't openly admit",
+      "craft_total": 7.43,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is sustained cringe/discomfort comedy and character work at a very high level. The stutter-step goodbye \u2014 'Okay, bye!' followed immediately by another line \u2014 is an honest rendition of how people behave when they don't want a conversation to end but won't say so. The comedy and the heartbreak are identical here. The earned-vs-cheap score is very high because every false start is genuinely character-driven. Justifying the 8+ score: the structural complexity (multiple beats of near-ending and re-opening), the maximal character integration (only Jim and Pam), and the emotional honesty make this one of the episode's finest moments."
+    },
+    {
+      "index": 69,
+      "text": "Ryan walks in on Pam's phone call; Pam hastily ends the conversation: 'Hey, Ryan, are you okay? Pam? Yeah. Yeah. Pam? Okay, bye!' followed by mutual confused trying to hang up",
+      "characters": [
+        "Jim",
+        "Pam",
+        "Ryan"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "awkward_silence"
+      ],
+      "setup": "Jim and Pam are having a warm, intimate phone conversation",
+      "punchline": "Ryan's innocent appearance causes both of them to over-correct into total conversation collapse \u2014 'Okay, bye! / Oh, no, I was... / I don't know what... / Do you have to go? / Yeah... No, I should probably go, too. / Okay. / I mean... / Yeah.'",
+      "craft_total": 7.21,
+      "impact_score": 7.25,
+      "quotability": 4.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The mutual conversation collapse \u2014 both trying to end gracefully while neither wants to \u2014 is classic cringe-comedy. 'I don't know what...' as Jim genuinely loses his sentence is very well observed. The awkwardness is both funny and poignant."
+    },
+    {
+      "index": 70,
+      "text": "The goodbye sequence: 'Okay.' / 'I mean...' / 'Yeah.' \u2014 neither Jim nor Pam can actually end the call",
+      "characters": [
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "awkward_silence"
+      ],
+      "setup": "Jim and Pam have both declared they should probably go",
+      "punchline": "Neither of them actually hangs up; they cycle through 'Okay... I mean... Yeah...' \u2014 the comedy is in the social incapacity to end a call you don't want to end",
+      "craft_total": 8.09,
+      "impact_score": 8.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is exceptional comedy-through-restraint. The joke is entirely in what's not said. 'Okay. I mean... Yeah.' is doing the work of a full scene. The audience knows what Jim and Pam feel; neither character will say it; the inadequacy of 'I mean...' as a placeholder for all those unsaid things is both funny and genuinely moving. Economy is near-maximum \u2014 six words carrying enormous emotional weight. Character integration is perfect: only these two, at this point in their story, in this specific scene. Earns its 8."
+    },
+    {
+      "index": 71,
+      "text": "'Bye, Pam.' 'Bye, Jim.' \u2014 the final exchange, delivered after the extended false-start sequence",
+      "characters": [
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "After multiple failed attempts to end the call, they finally arrive at the simplest possible goodbye",
+      "punchline": "The entire emotional weight of the episode's Jim/Pam thread lands on two words each \u2014 'Bye, Pam.' 'Bye, Jim.' \u2014 which say almost nothing and mean everything",
+      "craft_total": 8.0,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The button on the entire phone call sequence. Two two-word lines that function as both comedy (anti-climactic ending to a long, elaborate avoidance sequence) and emotional punctuation. The economy score is 10 because it's the maximum information compressed into the minimum language. 'Bye, Pam' / 'Bye, Jim' \u2014 with first names used in a context where they rarely address each other that directly \u2014 carries enormous weight. This is not a traditional joke but it's the finest moment of comedic-emotional craft in the episode. The rewatch bonus is high because knowing where they end up makes this hit harder. Justifying the near-9 craft score: the structure of the entire phone call building to this ending is exceptional, the economy is perfect, and the character integration is maximal."
+    },
+    {
+      "index": 72,
+      "text": "Final scene: Someone stares at the pretzel cart packing up. Confessional: 'Three hundred and sixty-four days till the next pretzel day.'",
+      "characters": [
+        "Stanley (implied)"
       ],
       "joke_types": [
         "callback",
         "character_comedy"
       ],
-      "setup": "End of pretzel day",
-      "punchline": "Stanley already counting down to next year",
-      "craft_total": 7.85,
-      "impact_score": 8.0,
-      "quotability": 8.0,
+      "setup": "Pretzel day has ended; the cart is being wheeled away",
+      "punchline": "The precise count \u2014 '364 days' \u2014 delivered with the solemnity of a eulogy, is the episode's closing joke: a callback to Stanley's magnificent pretzel day speech, closing the loop with the same combination of resignation and small-joy that made that joke exceptional",
+      "craft_total": 8.21,
+      "impact_score": 8.67,
+      "quotability": 9.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect bookend to Stanley's earlier speech. The immediate countdown shows his genuine investment in this one bright spot. Excellent character consistency and callback structure."
+      "explanation": "The perfect episode button. '364 days till the next pretzel day' is a callback to the Stanley confessional that ties together the entire pretzel day B-plot while delivering a fresh punchline. The specificity of '364' (not 'a year,' exactly one year minus today) is important \u2014 it shows someone counting, someone to whom this number matters. The joke lands at the intersection of comedy and pathos that defines the best of this show. The economy is extraordinary. Tied with Stanley's original pretzel day line as the episode's best jokes. Justifying the 8+: this is structurally among the best episode-closing jokes in The Office's run \u2014 specific, character-grounded, emotionally resonant, perfectly economical, and it closes the A/B plot thematically."
     }
   ],
   "air_date": "2006-10-19",

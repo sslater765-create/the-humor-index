@@ -4,15 +4,15 @@
   "season": 5,
   "episode_number": 7,
   "title": "Business Trip",
-  "humor_index": 65.4,
-  "jpm": 2.59,
-  "avg_craft": 6.21,
-  "avg_impact": 6.23,
-  "total_jokes": 52,
-  "war": 11.4,
-  "dominant_joke_types": "[\"character_comedy\", \"observational\", \"cringe_discomfort\"]",
-  "standout_joke_ids": "[24, 35, 1]",
-  "weakest_section": "14:21-15:48 range with exposition-heavy Pam storyline",
+  "humor_index": 86.9,
+  "jpm": 3.77,
+  "avg_craft": 7.15,
+  "avg_impact": 6.98,
+  "total_jokes": 78,
+  "war": 83.1,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[66, 1, 78]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
@@ -21,17 +21,17 @@
         "Michael"
       ],
       "joke_types": [
-        "absurdist",
-        "observational"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Michael sharing 'cultural facts' about international customs",
-      "punchline": "Completely wrong and extreme misunderstanding of Japanese culture",
-      "craft_total": 7.1,
-      "impact_score": 7.5,
-      "quotability": 6.0,
+      "setup": "Michael is listing international customs in a self-important, 'worldly traveler' tone, starting with a real-ish Morocco custom about gifts.",
+      "punchline": "Japan's custom is presented with the same deadpan authority as the others, but it's an absurd and dark misrepresentation of Japanese culture (conflating hara-kiri with everyday etiquette).",
+      "craft_total": 8.34,
+      "impact_score": 8.5,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Michael moment - confidently delivering completely wrong information with authority. The extreme nature of the 'fact' makes it absurd."
+      "explanation": "This is a near-perfect Michael Scott joke. The structure is impeccable: he's lulled us with a plausible Morocco fact, then delivers the Japan 'custom' with the same confident didactic tone. The joke only works because Michael Scott would genuinely believe this is helpful travel advice. Character integration is extremely high \u2014 no other character on television could deliver this line with the same guileless conviction. The dark subversion of seppuku as a social nicety is both shocking and absurd, landing right in the show's wheelhouse."
     },
     {
       "index": 2,
@@ -40,41 +40,63 @@
         "Michael"
       ],
       "joke_types": [
-        "observational",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Continuing the pattern of 'cultural facts'",
-      "punchline": "This one is actually just basic hygiene presented as exotic cultural knowledge",
-      "craft_total": 5.95,
-      "impact_score": 5.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
+      "setup": "Following the dark Japan 'custom,' Michael continues his international customs briefing with Italy.",
+      "punchline": "After committing suicide and exchanging gifts, the Italian custom is simply... basic hygiene. The escalation inverts \u2014 it's a massive deflation after the shocking Japan entry.",
+      "craft_total": 7.6,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good contrast joke - sets up expectation of more extreme cultural misunderstandings, then delivers something mundane as if it's exotic."
+      "explanation": "The brilliance is the anti-escalation: after suicide advice, basic handwashing presented as exotic cultural knowledge is perfectly deflating. 'This is considered to be polite' adds the extra layer \u2014 Michael treating this as insider knowledge rather than universal human behavior. Works as a trio with joke 1, and lands harder in context than in isolation."
     },
     {
       "index": 3,
-      "text": "To Canada. Where is it? Canada.",
+      "text": "Why are you telling us this? / I am jetting off on an international business trip.",
       "characters": [
-        "Michael",
-        "Jim"
+        "Employee",
+        "Michael"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Michael's grand international business trip destination",
-      "punchline": "It's just Canada, the least exotic 'international' destination possible",
-      "craft_total": 5.85,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "An employee asks the obvious question \u2014 why is Michael reciting bizarre international customs to the office?",
+      "punchline": "Michael's answer explains nothing about why the customs he listed are relevant, and his inflated self-importance ('jetting off,' 'international') undercuts the fact he's going to Canada.",
+      "craft_total": 6.37,
+      "impact_score": 5.83,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic deflation of Michael's grandiose expectations. Jim's flat delivery of 'Canada' undercuts all the international mystique."
+      "explanation": "A functional transitional joke that sets up the Canada reveal. 'Jetting off' is a nice character beat \u2014 Michael's grandiose framing of an underwhelming trip \u2014 but as a standalone joke it's relatively thin. Works more as setup for the Canada deflation than as a joke in its own right."
     },
     {
       "index": 4,
-      "text": "the women, the pancakes, the man of mystery",
+      "text": "To can-A-Da. / Where is it? / Canada. / Okay.",
+      "characters": [
+        "Michael",
+        "Employee",
+        "Michael",
+        "Employee"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael has been performing an elaborate 'world traveler' persona; someone asks where he's going.",
+      "punchline": "Canada \u2014 pronounced with absurd theatrical emphasis ('can-A-Da') as if it's an exotic destination. The employee's flat 'Okay' is the perfect puncturing reaction.",
+      "craft_total": 7.04,
+      "impact_score": 6.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's pronunciation ('can-A-Da') transforms Canada into something exotic and mysterious, immediately undercut by the flat employee response. The comedy of deflation is efficient and well-timed. Good character integration \u2014 Michael's need to be impressive colliding with the mundanity of Canada."
+    },
+    {
+      "index": 5,
+      "text": "I have always been intrigued by all things international \u2014 the women, the pancakes, the man of mystery.",
       "characters": [
         "Michael"
       ],
@@ -82,18 +104,18 @@
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Michael describing what intrigues him about international culture",
-      "punchline": "Pancakes as one of three mysterious international attractions",
-      "craft_total": 6.35,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Michael is doing a talking-head confessional about why he's excited for his 'international' trip.",
+      "punchline": "The list starts plausibly ('the women'), then derails with 'the pancakes,' and concludes with the completely abstract 'the man of mystery' \u2014 a list joke where the middle item is the surprise and the third is pure absurdism.",
+      "craft_total": 7.87,
+      "impact_score": 7.67,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good rule of three with pancakes as the unexpected mundane item among romantic international elements."
+      "explanation": "A classic Michael Scott list joke. The structure follows the comedy rule of three: first item (women) is expected, second (pancakes) is the surprise, third (the man of mystery) is abstract self-aggrandizement that tells us Michael imagines himself as a suave international figure. 'The pancakes' alone is funny; combined with 'the man of mystery' it reveals a character who has no coherent sense of what international travel means."
     },
     {
-      "index": 5,
-      "text": "I am ashamed at your naked face. I must cover it with my jacket. You are now sexy in your culture.",
+      "index": 6,
+      "text": "Meredith, I would like you to pretend that you are from Abu Dhabi. / Hello. / I am ashamed at your naked face. / I must cover it with my jacket. / You are now sexy in your culture.",
       "characters": [
         "Michael",
         "Meredith"
@@ -102,95 +124,96 @@
         "cringe_discomfort",
         "character_comedy"
       ],
-      "setup": "Michael asking Meredith to pretend to be from Abu Dhabi for practice",
-      "punchline": "Completely inappropriate and wrong understanding of Middle Eastern culture",
-      "craft_total": 6.3,
-      "impact_score": 7.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Peak cringe Michael - inappropriate cultural stereotyping delivered with complete confidence. The awkwardness is the comedy."
-    },
-    {
-      "index": 6,
-      "text": "T-minus... 6.5 days.",
-      "characters": [
-        "Jim"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Jim doing a talking head about waiting for Pam's return",
-      "punchline": "Using NASA countdown language for a girlfriend coming back from art school",
-      "craft_total": 5.9,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Michael is 'preparing' for his international trip by practicing cultural customs on the office.",
+      "punchline": "He makes Meredith role-play as an Abu Dhabi woman, misrepresents the culture entirely, then declares her 'sexy in your culture' after covering her face \u2014 reducing a cultural practice to a punchline while revealing his total ignorance.",
+      "craft_total": 6.74,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Nice understated Jim moment - the formality of the countdown for something personal and emotional."
+      "explanation": "The cringe comes from Michael's confident ignorance and his total lack of self-awareness about how inappropriate his 'practice' is. The use of Meredith as the guinea pig is smart casting \u2014 she's known for her disheveled appearance, making 'naked face' land with extra irony. Not the show's sharpest cultural satire, but works within Michael's established character."
     },
     {
       "index": 7,
-      "text": "everyone here has just been so excited for me and involved and intrusive and weird",
+      "text": "T-Minus... 6.5 days. / One more week! (repeated countdown from various colleagues)",
+      "characters": [
+        "Jim",
+        "Colleagues"
+      ],
+      "joke_types": [
+        "running_gag",
+        "reaction_beat"
+      ],
+      "setup": "Jim is doing a talking-head about Pam coming back from New York in a week.",
+      "punchline": "Rather than being privately excited, Jim has clearly been broadcasting his anticipation so much that multiple coworkers are counting down unprompted, revealing how annoying/adorable his obsession has become.",
+      "craft_total": 6.56,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A nice mockumentary structural joke \u2014 the office has clearly been subjected to Jim's countdown. The '6.5 days' specificity is a good character beat. The visual of multiple colleagues chiming in unprompted is funnier than anything Jim says himself."
+    },
+    {
+      "index": 8,
+      "text": "And everyone here has just been so excited for me. And involved. And intrusive. And weird.",
       "characters": [
         "Jim"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Jim talking about coworkers' interest in his relationship",
-      "punchline": "The escalation from 'excited' to 'intrusive and weird'",
-      "craft_total": 6.35,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Jim is describing how his colleagues have reacted to Pam's imminent return.",
+      "punchline": "The list starts warmly ('excited for me') then deteriorates through 'involved,' 'intrusive,' and 'weird' \u2014 Jim's patient, straight-man exhaustion perfectly captured in escalating adjectives.",
+      "craft_total": 7.43,
+      "impact_score": 7.17,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalating list that captures the office's boundary issues with personal relationships."
-    },
-    {
-      "index": 8,
-      "text": "I'm going to buy a sweater. Michael, that's for your food. Well, I'll just... I'll use different money for that.",
-      "characters": [
-        "Michael",
-        "Oscar"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Michael planning to spend his meal per diem on souvenirs",
-      "punchline": "His solution is to just use 'different money' as if money is categorized",
-      "craft_total": 6.95,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Michael financial logic - treating money like it has built-in categories. Very character-specific stupidity."
+      "explanation": "A masterclass in Jim's comic voice. The carefully ascending list \u2014 each adjective slightly worse than the last \u2014 and the flat delivery do all the work. 'Weird' as the final word is perfectly chosen: it's vague enough to encompass everything that Dunder Mifflin is. High character integration; this is quintessential Jim Halpert narration."
     },
     {
       "index": 9,
-      "text": "it's pretty tough to find somebody who wants to go up to Winnipeg mid-November",
+      "text": "I'm going to buy a sweater. / Michael, the \u2014 That's for your food. / Well, I'll just \u2014 I'll use different money for that.",
+      "characters": [
+        "Michael",
+        "David Wallace"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "David Wallace explains that Michael's per diem is for food expenses during the trip.",
+      "punchline": "Michael has already allocated his per diem for a sweater, and his solution ('I'll use different money for food') reveals a fundamental misunderstanding of how money and travel expenses work.",
+      "craft_total": 7.0,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's childlike financial logic is pitch-perfect character comedy. 'I'll use different money for that' sounds perfectly reasonable in Michael's worldview while being completely nonsensical. The setup/payoff is efficient and Wallace's patient straight-man response adds to the comedy."
+    },
+    {
+      "index": 10,
+      "text": "It's pretty tough to find somebody who wants to go up to Winnipeg mid-November.",
       "characters": [
         "David Wallace"
       ],
       "joke_types": [
-        "observational",
-        "deadpan_understatement"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Wallace explaining why Michael got this business trip",
-      "punchline": "Revealing that this 'perk' is actually an undesirable assignment",
-      "craft_total": 6.3,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 1,
+      "setup": "Wallace is explaining why this trip was a 'perk' for Michael.",
+      "punchline": "The reveal that the 'perk' is Winnipeg in mid-November \u2014 one of the colder, less glamorous destinations imaginable \u2014 deflates Michael's earlier excitement about his 'international business trip.'",
+      "craft_total": 6.54,
+      "impact_score": 6.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Nice understated reveal that undercuts Michael's excitement about his 'international' assignment."
+      "explanation": "Wallace's dry delivery makes this land. The specific detail of 'mid-November' does heavy lifting \u2014 Winnipeg is already cold and unglamorous, but November specifically is the worst. Works as a callback to Michael's over-the-top excitement while grounding it with reality."
     },
     {
-      "index": 10,
-      "text": "business-class air, like a five-star hotel in the sky... Actually better than a five-star hotel 'cause you get a big, cushy seat and you sit in a row of people",
+      "index": 11,
+      "text": "Business class air, like a five-star hotel in the sky, nothin' but the best. Actually, better than a five-star hotel 'cause you get a big, cushy seat and you sit in a row of people.",
       "characters": [
         "Michael"
       ],
@@ -198,754 +221,193 @@
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Michael describing the luxury of business class",
-      "punchline": "His description of why it's better actually makes it sound worse (sitting in a row with people)",
-      "craft_total": 6.8,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Michael is hyping business class as the ultimate luxury experience.",
+      "punchline": "His 'improvement' on the five-star hotel analogy \u2014 sitting in a row of people \u2014 is literally what makes economy class worse than a hotel, not better. Michael's inability to perceive basic spatial logic is perfectly revealed.",
+      "craft_total": 7.57,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael's backwards logic - he thinks sitting in a row with strangers is a selling point for luxury travel."
-    },
-    {
-      "index": 11,
-      "text": "Two are empty. For souvenirs.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Someone asking why Michael needs three suitcases",
-      "punchline": "Two empty suitcases for a short business trip to Canada",
-      "craft_total": 6.25,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's over-preparation and expectation that Canada will have amazing souvenirs worth two suitcases."
+      "explanation": "The joke hinges on Michael trying to articulate why business class is better and accidentally describing a worse version of the hotel. 'You sit in a row of people' as a selling point is brilliantly oblivious. Strong character integration \u2014 Michael's enthusiasm for things he doesn't quite understand is a core comedic trait."
     },
     {
       "index": 12,
-      "text": "You wanna wear that puppy right up on the breastbone like a bra. No, I don't wanna wear a bra.",
+      "text": "And to eat, whatever the mind can imagine. I think I am going to have a filet with mushroom sauce.",
       "characters": [
-        "Andy",
         "Michael"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Andy trying to help Michael with his money belt placement",
-      "punchline": "Michael's literal interpretation and rejection of wearing it 'like a bra'",
-      "craft_total": 6.1,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Michael is describing the limitless culinary possibilities of business class dining.",
+      "punchline": "After 'whatever the mind can imagine,' the full extent of Michael's imagination is a filet with mushroom sauce \u2014 a fairly standard steakhouse item, not exactly a creative or exotic choice.",
+      "craft_total": 7.22,
+      "impact_score": 6.25,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael's childish reaction to practical travel advice, turning safety gear into gender anxiety."
+      "explanation": "A nicely understated deflation joke. The gap between 'whatever the mind can imagine' and 'a filet with mushroom sauce' is the entire comedy. The joke also sets up the later payoff that there are no meals on this short flight."
     },
     {
       "index": 13,
-      "text": "I'm just bidding a bon voyage \u00e0 la mon petite fianc\u00e9e. Translation, goodbye my petite fianc\u00e9e.",
+      "text": "They have one of those? [re: concierge]",
       "characters": [
-        "Andy"
+        "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "wordplay_pun"
+        "reaction_beat"
       ],
-      "setup": "Andy showing off his French skills",
-      "punchline": "His 'translation' is just repeating the same words in English",
-      "craft_total": 6.15,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "David Wallace suggests Michael ask the concierge for nightlife recommendations.",
+      "punchline": "Michael genuinely doesn't know what a concierge is, despite having enthusiastically described his hotel as top-tier.",
+      "craft_total": 6.72,
+      "impact_score": 6.25,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Andy pretentiousness - providing a 'translation' that isn't actually translating anything."
+      "explanation": "Four words that perfectly encapsulate Michael's paradox: he presents himself as a sophisticated worldly traveler while knowing nothing about actual travel. Strong economy \u2014 the joke is in the gap between his pretension and his ignorance."
     },
     {
       "index": 14,
-      "text": "Meaning I will try to get other dudes laid. Yeah, baby. That's what I'm talking about.",
+      "text": "Wait, why do you need three suitcases? / Two are empty for souvenirs.",
       "characters": [
-        "Andy",
+        "Employee",
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "setup_punchline"
       ],
-      "setup": "Michael asking what Andy means by 'I will try'",
-      "punchline": "Andy's inappropriate wingman enthusiasm and Michael's approval",
-      "craft_total": 5.55,
-      "impact_score": 5.5,
-      "quotability": 3.0,
+      "setup": "Someone notices Michael has an absurd number of suitcases for a short business trip.",
+      "punchline": "Two of three suitcases are pre-emptively empty for souvenirs \u2014 from Winnipeg, in mid-November, for a short business trip.",
+      "craft_total": 7.19,
+      "impact_score": 6.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Andy/Michael inappropriate bonding over juvenile behavior."
+      "explanation": "Efficient and character-specific. The joke works on two levels: Michael's grandiose expectations for a mundane trip, and the logistics of pre-emptying two full suitcases for souvenirs. The comedy is the specific number \u2014 not one empty bag but two full-sized suitcases."
     },
     {
       "index": 15,
-      "text": "It's just a van. It's not just a van. Look, I know my way around a van. That is just a van.",
+      "text": "You want to wear that puppy right up on the breastbone like a bra. / No, I don't want to wear a bra. / Let me help you. / Stop it. Stop it!",
       "characters": [
-        "Oscar",
+        "Andy",
         "Michael"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "cringe_discomfort",
+        "physical_slapstick"
       ],
-      "setup": "Michael calling their shuttle a 'town car'",
-      "punchline": "Oscar's repeated insistence that it's just a van, vs Michael's denial",
-      "craft_total": 5.95,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Andy is trying to help Michael properly wear a money belt for security.",
+      "punchline": "Andy's anatomical description ('like a bra') triggers Michael's reflexive objection, followed by Andy physically trying to help Michael dress himself \u2014 Michael's bizarre modesty combined with the absurdity of the situation.",
+      "craft_total": 6.21,
+      "impact_score": 6.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael's refusal to accept reality vs Oscar's practical assessment. The repetition builds the absurdity."
+      "explanation": "A functional physical comedy beat that works because of Michael's specific brand of prudishness combined with his incompetence at basic tasks. 'Stop it. Stop it!' reads as both physically and emotionally panicked. Not groundbreaking but well-executed for its purpose."
     },
     {
       "index": 16,
-      "text": "Michael G. Scott rolling like a pimp.",
+      "text": "I'm just bidding a bon voyage \u00e0 la mon petit fianc\u00e9. Translation: Good-bye, my petite fianc\u00e9e.",
       "characters": [
-        "Michael"
+        "Andy"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "wordplay_pun"
       ],
-      "setup": "Michael documenting his business class experience",
-      "punchline": "Inappropriate gangster language for a corporate business trip",
-      "craft_total": 5.3,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Andy is explaining his emotional state at the airport departure.",
+      "punchline": "Andy translates his own (already comprehensible) French phrase, as if his coworkers couldn't understand 'bon voyage,' revealing his need to show off his French while simultaneously undermining himself by explaining the obvious.",
+      "craft_total": 6.91,
+      "impact_score": 6.33,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael's attempt to sound cool and street-smart while on a corporate trip to Canada."
+      "explanation": "Classic Andy Bernard: proud of his prep school French but executing it in a way that's more oblivious than impressive. The self-translation of universally known phrases is a nice character beat. Also establishes the Angela-Andy subplot that pays off later."
     },
     {
       "index": 17,
-      "text": "Yes, this is Beth. This is my personal valet/flight attendant, and she will be helping me this morning. We need to keep the aisle clear. Yes. Get back. Get back.",
-      "characters": [
-        "Michael",
-        "Flight Attendant"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Michael introducing the flight attendant as his personal valet",
-      "punchline": "The attendant immediately shutting down his fantasy and making him move",
-      "craft_total": 6.55,
-      "impact_score": 7.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect deflation of Michael's grandiose self-image by reality. The immediate professional shutdown is brutal."
-    },
-    {
-      "index": 18,
-      "text": "Andy brought one, too. Harry and the Hendersons.",
-      "characters": [
-        "Michael",
-        "Andy"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Michael bragging about his personal DVD player and 20 movies",
-      "punchline": "Andy brought the same thing, but only has one terrible old movie",
-      "craft_total": 6.1,
-      "impact_score": 6.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good contrast between Michael's impressive tech setup and Andy's single, dated movie choice."
-    },
-    {
-      "index": 19,
-      "text": "Could you have picked something stinkier to bring on a plane? My God, Oscar, really. Do you have a bag of baby poop in there, too, to share with everybody?",
+      "text": "That could be you if you hadn't forgotten French.",
       "characters": [
         "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Oscar bringing egg salad sandwiches on the plane",
-      "punchline": "Michael's over-the-top disgust and escalation to baby poop",
-      "craft_total": 5.4,
-      "impact_score": 5.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael being overly dramatic about a minor inconvenience, escalating to gross-out humor."
-    },
-    {
-      "index": 20,
-      "text": "Oh, I'm sorry, there are no meals on flights less than two hours.",
-      "characters": [
-        "Flight Attendant"
-      ],
-      "joke_types": [
-        "observational"
-      ],
-      "setup": "Michael trying to order food like he's in first class",
-      "punchline": "Reality check that this is just a short domestic flight",
-      "craft_total": 5.45,
-      "impact_score": 6.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Another reality check deflating Michael's luxury travel fantasy."
-    },
-    {
-      "index": 21,
-      "text": "I think I'm going to use my complimentary blindfold. I will don it and... Oh. Look at that, I can't see because I am in... God!",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
-      ],
-      "setup": "Michael putting on his sleep mask like it's luxury spa equipment",
-      "punchline": "He immediately walks into something because he can't see",
-      "craft_total": 5.7,
-      "impact_score": 6.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Physical comedy from Michael's attempt to be sophisticated resulting in immediate practical consequences."
-    },
-    {
-      "index": 22,
-      "text": "Is that supposed to impress me?",
-      "characters": [
-        "Karen"
-      ],
-      "joke_types": [
-        "reaction_beat",
-        "deadpan_understatement"
-      ],
-      "setup": "Jim showing Karen his pushup area in the annex",
-      "punchline": "Karen's unimpressed reaction to Jim's territorial display",
-      "craft_total": 5.8,
-      "impact_score": 5.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Karen cutting through Jim's attempt to mark territory with practical dismissal."
-    },
-    {
-      "index": 23,
-      "text": "Follow moi, bro-sieur.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Michael trying to sound sophisticated at the hotel",
-      "punchline": "Mixing French 'monsieur' with bro-speak",
-      "craft_total": 6.7,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good Michael portmanteau combining his attempts at sophistication with his natural dudebro tendencies."
-    },
-    {
-      "index": 24,
-      "text": "A concierge is the Winnipeg equivalent of a geisha. This is a woman who has been trained in the fine art of fanciness and pleasure, and when you meet one, it is intoxicating.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Michael explaining what a concierge is",
-      "punchline": "Completely wrong comparison to geishas and describing hotel staff as trained in 'pleasure'",
-      "craft_total": 7.4,
-      "impact_score": 8.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Peak Michael cultural misunderstanding - turning a hotel employee into an exotic fantasy figure. Very character-specific delusion."
-    },
-    {
-      "index": 25,
-      "text": "I was. And then they switched to Acrobat just as I was learning Quark. I hate computers.",
-      "characters": [
-        "Pam"
-      ],
-      "joke_types": [
-        "observational",
-        "character_comedy"
-      ],
-      "setup": "Pam explaining why she's failing at graphic design school",
-      "punchline": "The constant software changes making her feel behind and frustrated",
-      "craft_total": 6.25,
-      "impact_score": 5.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Relatable frustration with technology changing faster than you can learn it. Very specific to Pam's character arc."
-    },
-    {
-      "index": 26,
-      "text": "Good to see you again.",
-      "characters": [
-        "Michael",
-        "Marie"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Michael greeting the concierge at the bar",
-      "punchline": "Acting like they have a relationship when they just met at the hotel desk",
-      "craft_total": 5.45,
-      "impact_score": 6.0,
-      "quotability": 2.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael creating fake intimacy with someone he just met, typical boundary issues."
-    },
-    {
-      "index": 27,
-      "text": "You look, how you say, radiant tonight. And it is, how you say, a beautiful night. Michael, why? She's foreign. I...",
-      "characters": [
-        "Michael",
-        "Oscar"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Michael trying to be suave with the concierge",
-      "punchline": "Using 'how you say' for basic English words, Oscar's exasperation",
-      "craft_total": 6.7,
-      "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Michael's completely unnecessary 'foreign accent' affectation and Oscar's mortification. Great cringe moment."
-    },
-    {
-      "index": 28,
-      "text": "Everybody's going to end up dying some day, and I think it's better to die with some people that you like, like Oscar and Andy and Concierge Marie, than to know that there's somebody out there that you love that you're not with.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Michael taking a group photo",
-      "punchline": "Including the hotel employee he just met in his list of people he'd want to die with",
-      "craft_total": 6.4,
-      "impact_score": 6.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Michael's tendency to create instant deep connections with strangers, mixed with morbid philosophy."
-    },
-    {
-      "index": 29,
-      "text": "Come on, it's Dandy Dale and Foppy McGee over there.",
-      "characters": [
-        "Andy"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Andy identifying gay men to hit on",
-      "punchline": "Creative derogatory nicknames that sound like cartoon characters",
-      "craft_total": 6.2,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Andy's creative but inappropriate nicknames. The alliteration makes them memorable but the context is problematic."
-    },
-    {
-      "index": 30,
-      "text": "Mademoiselle, beer me deux Long Island Iced Teas, s'il vous pla\u00eet.",
-      "characters": [
-        "Andy"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
-      ],
-      "setup": "Andy ordering drinks in French",
-      "punchline": "Mixing casual slang 'beer me' with formal French",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Andy pretension - trying to be sophisticated but mixing registers inappropriately."
-    },
-    {
-      "index": 31,
-      "text": "Do you like apples? What? Do you like apples? Sorry, what? How do you like these apples?",
-      "characters": [
-        "Andy",
-        "Bar patrons"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Andy trying to be smooth with his wingman routine",
-      "punchline": "Using the 'Good Will Hunting' line completely out of context and confusing everyone",
-      "craft_total": 5.15,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Andy misusing a movie reference as a pickup line. The confusion of the targets makes it funnier."
-    },
-    {
-      "index": 32,
-      "text": "It's Christmas Eve and everything is closed and you need to get some dry-cleaning done. 12:00, midnight, where do you go? What do you do?",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Michael testing the concierge's knowledge",
-      "punchline": "Completely ridiculous scenario - needing dry cleaning at midnight on Christmas Eve",
-      "craft_total": 6.8,
-      "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfectly absurd Michael question - creating an impossible scenario to test someone's expertise."
-    },
-    {
-      "index": 33,
-      "text": "I see through a hard exterior to a little jelly in the middle.",
-      "characters": [
-        "Andy"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Andy explaining what he sees in Angela",
-      "punchline": "Using donut/pastry metaphor for a person's emotional core",
-      "craft_total": 6.35,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sweet metaphor that's also slightly ridiculous - comparing his girlfriend to a jelly donut."
-    },
-    {
-      "index": 34,
-      "text": "She has the softest skin I've ever seen, and I can't wait to have sex with her. You haven't had sex? No.",
-      "characters": [
-        "Andy",
-        "Michael"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Andy getting romantic about Angela",
-      "punchline": "TMI moment followed by revelation they haven't had sex yet",
-      "craft_total": 6.2,
-      "impact_score": 6.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Awkward oversharing followed by an even more awkward revelation about their relationship status."
-    },
-    {
-      "index": 35,
-      "text": "What is wrong with you? Why won't you do Andy? What? That's Oscar, and he wants to know why you won't do me, and I think it's a valid question.",
-      "characters": [
-        "Andy",
-        "Angela",
-        "Oscar"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Andy drunk dialing Angela",
-      "punchline": "Blaming Oscar for the inappropriate question and calling it 'valid'",
-      "craft_total": 6.95,
-      "impact_score": 8.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Peak cringe Andy moment - drunk dialing with incredibly inappropriate questions while blaming his coworker."
-    },
-    {
-      "index": 36,
-      "text": "I want to take you to sex school. What? Who is that, monkey? Is somebody there?",
-      "characters": [
-        "Andy",
-        "Angela"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Andy continuing his drunk inappropriate calls",
-      "punchline": "The absurd concept of 'sex school' and Angela's horror at someone else being there",
-      "craft_total": 6.4,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "'Sex school' is an absurd concept delivered with drunk confidence, plus Angela's mortification."
-    },
-    {
-      "index": 37,
-      "text": "Have you seen her painting, Jim? The building? There are shadows coming from two different directions. What? Are there two suns? Last I checked, that's not an office building in the Andromeda Galaxy.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Dwight criticizing Pam's art",
-      "punchline": "Overly technical and nerdy critique escalating to sci-fi references",
-      "craft_total": 6.8,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Dwight - overly pedantic art criticism that escalates to astronomy. Very character-specific nerdiness."
-    },
-    {
-      "index": 38,
-      "text": "It's totally unrealistic. There are no lines in the parking lot.",
-      "characters": [
-        "Dwight"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Dwight continuing his art critique",
-      "punchline": "Focusing on the most mundane detail - parking lot lines",
-      "craft_total": 6.7,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Dwight's obsession with practical details in art - parking lot striping as an artistic flaw is perfectly absurd."
-    },
-    {
-      "index": 39,
-      "text": "Get the whole nine nards.",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
-      ],
-      "setup": "Michael talking about hookup success",
-      "punchline": "Mangling 'whole nine yards' into 'nine nards'",
-      "craft_total": 6.7,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Michael malapropism - close enough to the real phrase but completely wrong. 'Nards' makes it juvenile."
-    },
-    {
-      "index": 40,
-      "text": "I thought I dreamed that. Oh, God. Oh, God! All right. Okay. This is so bad.",
-      "characters": [
-        "Andy"
-      ],
-      "joke_types": [
-        "reaction_beat",
-        "character_comedy"
-      ],
-      "setup": "Andy realizing he actually made the drunk call to Angela",
-      "punchline": "The escalating panic as reality sets in",
-      "craft_total": 5.95,
-      "impact_score": 6.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good hangover revelation moment - the hope that it was a dream crushed by reality."
-    },
-    {
-      "index": 41,
-      "text": "This can't happen again. This has to happen again. Darryl can't happen again.",
-      "characters": [
-        "Jim",
-        "Karen"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Jim and Karen hooking up",
-      "punchline": "The contradictory statements and bringing up Karen's ex awkwardly",
-      "craft_total": 6.1,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Post-hookup awkwardness with conflicting emotions and inappropriate ex references."
-    },
-    {
-      "index": 42,
-      "text": "Oh, my God, he's gonna kill us. I'd like to see him try.",
-      "characters": [
-        "Karen",
-        "Jim"
-      ],
-      "joke_types": [
-        "character_comedy"
-      ],
-      "setup": "Worrying about Darryl's reaction to the breakup text",
-      "punchline": "Jim's false bravado immediately followed by fear",
-      "craft_total": 5.5,
-      "impact_score": 5.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard tough guy posturing that will likely be immediately undercut by reality."
-    },
-    {
-      "index": 43,
-      "text": "He says it's cool. He said it's cool! That's all he wrote? That's all he wrote.",
-      "characters": [
-        "Karen",
-        "Jim"
-      ],
-      "joke_types": [
-        "observational",
-        "character_comedy"
-      ],
-      "setup": "Expecting dramatic reaction from Darryl",
-      "punchline": "Anticlimactic casual response to being dumped",
-      "craft_total": 6.0,
-      "impact_score": 6.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good deflation of expected drama - the casual response is more unsettling than anger would be."
-    },
-    {
-      "index": 44,
-      "text": "Didn't you two date for, like, a long time? Mmm-hmm. This is like a fairytale.",
-      "characters": [
-        "Jim",
-        "Karen"
       ],
       "joke_types": [
         "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Jim pointing out their long relationship",
-      "punchline": "Karen's sarcastic 'fairytale' comment about a casual breakup text",
-      "craft_total": 5.9,
+      "setup": "Andy has just spoken in French to say goodbye to Angela.",
+      "punchline": "Michael tells Oscar 'that could be you' \u2014 implying that speaking French to a fianc\u00e9e is a desirable situation Oscar should envy \u2014 while also casually insulting Oscar for forgetting French.",
+      "craft_total": 6.2,
       "impact_score": 5.5,
-      "quotability": 4.0,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Karen's dry observation about the unromantic nature of modern breakups."
+      "explanation": "A quick character beat that works because of Michael's peculiar logic \u2014 he thinks Oscar's main problem in romance is forgetting French. Reveals his general cluelessness about Oscar's life."
     },
     {
-      "index": 45,
-      "text": "What's first base with Angela? I get to kiss her forehead.",
+      "index": 18,
+      "text": "Meaning I will try to get other dudes laid. / Yeah, baby! That's what I'm talkin' about.",
       "characters": [
+        "Michael",
         "Andy"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "irony_sarcasm"
       ],
-      "setup": "Angela taking them back to first base as punishment",
-      "punchline": "Revealing how chaste their relationship is - forehead kisses as first base",
-      "craft_total": 7.1,
-      "impact_score": 7.5,
+      "setup": "Michael says he'll 'try to be good' on the trip while saying goodbye at the airport.",
+      "punchline": "His definition of 'being good' is getting other men laid \u2014 which Andy enthusiastically endorses, revealing both Michael's skewed moral compass and Andy's bro-coded excitement.",
+      "craft_total": 6.53,
+      "impact_score": 6.5,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Angela/Andy relationship joke - redefining baseball metaphors for their ultra-conservative courtship."
+      "explanation": "Works because of the misdirection: 'I'll try to be good' inverts into Michael's specific understanding of goodness. Andy's validation adds a comedic layer \u2014 the two most oblivious characters in the office perfectly aligned in their worldview."
     },
     {
-      "index": 46,
-      "text": "You up for a chest bump? No. Bro hug?",
+      "index": 19,
+      "text": "It's not just a van. / Look, I know my way around a van. That is just a van.",
       "characters": [
-        "Oscar",
-        "Michael"
+        "Michael",
+        "Dwight"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Michael trying to bond with Oscar after their trip",
-      "punchline": "Oscar rejecting multiple forms of masculine celebration",
-      "craft_total": 5.85,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Michael calls the airport shuttle a 'town car.' Dwight deflates the description.",
+      "punchline": "Dwight's specific credential \u2014 'I know my way around a van' \u2014 as the basis for his authority on this matter is character-specific and absurd. The repetition ('that is just a van') is flat and final.",
+      "craft_total": 6.7,
+      "impact_score": 6.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good contrast between Michael's enthusiasm and Oscar's reserved nature."
+      "explanation": "Dwight's authority on vans is a small gem. It's the specific credentialing ('I know my way around a van') that makes this funny \u2014 Dwight doesn't just say 'that's a van,' he establishes his expertise first. Works against Michael's delusion, which has been a consistent thread in this opening."
     },
     {
-      "index": 47,
-      "text": "The trip sucked, David. It blew chunks. It was terrible. It was a bad trip. I did not like the trip.",
+      "index": 20,
+      "text": "Welcome to Cribs \u2014 Business Class Edition. Check this out. Mimosa \u2014 ah, sweet! \u2014 handed it to me. As I sat down. This was my hot towel. It is still wet.",
       "characters": [
         "Michael"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "meta_self_referential"
       ],
-      "setup": "David asking about the successful business trip",
-      "punchline": "Michael's unnecessarily emphatic and redundant complaints",
-      "craft_total": 5.85,
-      "impact_score": 6.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Michael is on the plane, filming himself on what appears to be a phone camera or having the documentary crew capture him in seat.",
+      "punchline": "Michael frames his business class experience as an episode of MTV Cribs, treating a mimosa and a hot towel as if they're luxury amenities worth celebrating. The towel being 'still wet' as a feature is the deadpan detail that sells it.",
+      "craft_total": 7.1,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Michael's childish tantrum using multiple ways to say the same thing. The repetition builds the absurdity."
+      "explanation": "Michael's Cribs reference is pitch-perfect \u2014 it's exactly the cultural touchstone a mid-2000s Michael Scott would reach for to validate his status. 'It is still wet' as a selling point reveals Michael has no idea what makes luxury luxurious. Strong character integration and good economy. The meta-reference to Cribs also works as a comedic frame for the entire segment."
     },
     {
-      "index": 48,
-      "text": "which was basically just a van, and business class which was basically just coach",
-      "characters": [
-        "Michael"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "observational"
-      ],
-      "setup": "Michael listing his complaints about the trip",
-      "punchline": "Reality deflating his expectations of luxury",
-      "craft_total": 5.85,
-      "impact_score": 5.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback to earlier moments where reality didn't match Michael's expectations."
-    },
-    {
-      "index": 49,
-      "text": "A boss that will not fire you even though you just tell him off right to his face over the phone, that's respect.",
+      "index": 21,
+      "text": "Michael G. Scott, rollin' like a pimp!",
       "characters": [
         "Michael"
       ],
@@ -953,69 +415,1156 @@
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Michael explaining why he stays at Dunder Mifflin",
-      "punchline": "Confusing David's patience/professionalism with respect for his tantrum",
-      "craft_total": 6.8,
+      "setup": "Michael is showing off his business class seat as if it's the pinnacle of luxury.",
+      "punchline": "The self-bestowed nickname and the 'rollin' like a pimp' declaration from a man in a business class seat on a two-hour flight to Winnipeg is absurdly grandiose.",
+      "craft_total": 6.37,
+      "impact_score": 6.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Works as a character beat \u2014 this is exactly what Michael Scott says in this moment. The inclusion of 'G.' as a middle initial is a nice touch. Not remarkable writing but perfectly executed character comedy."
+    },
+    {
+      "index": 22,
+      "text": "Come on! Get back to the slums!",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "The flight attendant asks Oscar and Andy to move back to their coach seats.",
+      "punchline": "Michael enthusiastically reinforces the class hierarchy by calling coach 'the slums' \u2014 revealing his desperate need to feel superior even to his own colleagues on a short flight.",
+      "craft_total": 6.56,
       "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A dark little moment of Michael's status anxiety manifesting. 'The slums' is a funny word choice \u2014 genuinely funny in how completely out of proportion it is. The cringe comes from knowing Oscar and Andy have to live with this man and hear him say things like this."
+    },
+    {
+      "index": 23,
+      "text": "Harry and the Hendersons. / Shh! Keep it down.",
+      "characters": [
+        "Andy",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael has his own personal DVD player with 20 movies, and notes Andy brought one too.",
+      "punchline": "Andy's movie of choice is Harry and the Hendersons \u2014 a 1987 Bigfoot family comedy \u2014 which Michael then shushes as if the movie title itself is a noise disturbance.",
+      "craft_total": 6.97,
+      "impact_score": 6.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The specific title of Harry and the Hendersons is perfectly chosen \u2014 not a prestigious or cool movie, but an affectionately square choice that tells you everything about Andy Bernard. Michael shushing the title is a quick, sharp reaction beat."
+    },
+    {
+      "index": 24,
+      "text": "Could you have picked something stinkier to bring on a plane? Oh my god, Oscar. Really \u2014 do you have a bag of baby poop in there, too, to share with everybody?",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Oscar has brought egg salad sandwiches on a short flight.",
+      "punchline": "Michael's escalating disgust \u2014 from reasonable objection to 'bag of baby poop' \u2014 is typical Michael over-reaction. 'To share with everybody' implies Oscar is being deliberately malicious with his food choices.",
+      "craft_total": 6.03,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The egg salad on a plane complaint is well-trodden comedic territory, but 'bag of baby poop' gives it Michael's specific fingerprint. 'To share with everybody' is the best line \u2014 it suggests Oscar is performing some kind of passive aggression with his sandwich choices."
+    },
+    {
+      "index": 25,
+      "text": "Oh, I'm sorry, there are no meals on flights less than two hours.",
+      "characters": [
+        "Flight Attendant"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "setup_punchline"
+      ],
+      "setup": "Michael has been boasting about the in-flight dining being 'whatever the mind can imagine' and asks to see a menu.",
+      "punchline": "Payoff on the earlier filet-with-mushroom-sauce setup \u2014 there is no food at all on this short flight, obliterating Michael's carefully constructed fantasy of luxury dining.",
+      "craft_total": 6.96,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback to Michael's earlier 'filet with mushroom sauce' fantasy makes this structurally excellent. The comedic payoff is earned \u2014 the setup was laid two minutes earlier. The flight attendant's flat delivery is perfect. Strong structure score because the episode writers clearly planted this."
+    },
+    {
+      "index": 26,
+      "text": "I will don it... and \u2014 Oh! Look at that. I can't see because I am in a \u2014 Gah!",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "Michael decides to take a nap and puts on his complimentary sleep blindfold with great ceremony.",
+      "punchline": "Michael narrates his own blindfolding as an experience of wonder and discovery, apparently surprised that a blindfold prevents vision. His trail-off ('I am in a \u2014') and 'Gah!' suggest he's immediately bumped into something or startled himself.",
+      "craft_total": 6.42,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A physical comedy moment that works better on screen than on the page, but even in transcript form, Michael's running narration of putting on a blindfold ('I will don it') is inherently funny. 'Don' is an unusually formal word choice that reveals Michael's self-dramatization of a mundane act. High rewatch bonus because the physical staging almost certainly makes this funnier."
+    },
+    {
+      "index": 27,
+      "text": "Just checkin' out where I'm gonna be pretty soon. When Pam gets back. Gonna be close quarters. Gonna be a lot of tension. For you. I'm with Darryl.",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Jim is apparently showing the camera his apartment/living situation in a confessional, likely looking at a tight space.",
+      "punchline": "'For you' \u2014 Jim breaking from his narration to address the camera directly, clarifying that the tension will be the documentary crew's problem, not his, because he's happily with Darryl. A perfect Jim-to-camera moment.",
+      "craft_total": 7.78,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A near-perfect Jim confessional. The misdirection builds: he appears to be expressing personal anxiety about Pam's return ('close quarters,' 'tension'), then pivots on 'For you' \u2014 a direct address to the camera that subverts the entire setup. The addition of 'I'm with Darryl' as a flat, satisfied non-explanation makes it funnier. This is the kind of subtle, layered joke that The Office does better than almost any other show."
+    },
+    {
+      "index": 28,
+      "text": "This looks like where I'll probably do my push-ups every day.",
+      "characters": [
+        "Jim"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "visual_gag"
+      ],
+      "setup": "Jim is showing the documentary crew around the cramped living quarters, apparently pointing at a tiny patch of floor.",
+      "punchline": "The designated 'push-up space' is clearly absurdly small or awkward \u2014 the comedy is in Jim's matter-of-fact acceptance of the situation as workable, delivered to camera.",
+      "craft_total": 6.92,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A visual gag that depends heavily on what we see \u2014 Jim's practiced optimism about cramped conditions. Works as a character beat: Jim Halpert, former jock, has found a tiny rectangle of floor for his daily exercise. The specificity ('every day') adds to the comedy."
+    },
+    {
+      "index": 29,
+      "text": "Is that supposed to impress me? [reaction beat \u2014 likely Darryl's camera look or flat stare at Jim's push-up space]",
+      "characters": [
+        "Darryl"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "deadpan_understatement"
+      ],
+      "setup": "Jim has just enthusiastically described a tiny space as his push-up area.",
+      "punchline": "Darryl's flat response ('Is that supposed to impress me?') deflates Jim's optimism with the casual authority of a man who has no time for this kind of positivity spin.",
+      "craft_total": 7.25,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Six words of pure Darryl. His laconic skepticism is a perfect foil to Jim's earnest positivity spin. The economy here is exceptional \u2014 Darryl does more character work with one line than many characters do in paragraphs. Strong character integration: only Darryl Philbin delivers this exact energy."
+    },
+    {
+      "index": 30,
+      "text": "No. Not gonna happen. He has hurt me too much and too often and I am in a healthy relationship now. So I'm not gonna flaunt it, I'm not gonna hurt him, but that door is closed.",
+      "characters": [
+        "Karen (or female colleague)"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "A female character (context suggests Karen, given the connection to Jim) is confessing her firm resolve about her feelings for Jim, with great conviction.",
+      "punchline": "The elaborate scaffolding of 'I am in a healthy relationship now' and 'that door is closed' as a contrast to the previous scene (Jim cheerfully living with Darryl, clearly untroubled) creates dramatic irony \u2014 she is working hard on something he appears to have moved on from entirely.",
+      "craft_total": 5.96,
+      "impact_score": 5.5,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Michael's completely backwards interpretation of his boss's restraint as validation of his behavior."
+      "explanation": "The comedy here is structural \u2014 it's funnier in context of the previous Jim/Darryl beat. Her over-determined insistence ('too much and too often') reads as protesting too much, and the juxtaposition with Jim's calm contentment is the real joke. Works as irony more than as a standalone joke."
+    },
+    {
+      "index": 31,
+      "text": "I, um... I \u2014 Ah! This is great. Thank you.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "The concierge has just given Michael comprehensive local recommendations.",
+      "punchline": "Michael is visibly overwhelmed by the basic hospitality service \u2014 his broken sentence, his 'Ah!', and his excessive gratitude reveal that he is genuinely awed by being helped, suggesting he's never felt truly cared for in this way.",
+      "craft_total": 7.22,
+      "impact_score": 7.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "This is a beat that works on multiple levels \u2014 comedy on the surface (he's acting like the concierge just saved his life), but with a layer of pathos (Michael genuinely craves this kind of attentive care). The humor and the sadness coexist, which is the show's signature mode."
+    },
+    {
+      "index": 32,
+      "text": "A concierge is the Winnipeg equivalent of a Geisha. This is a woman who has been trained in the fine art of fanciness and pleasure. And when you meet one, it is intoxicating.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael is confessional-explaining what a concierge is, having just met the hotel concierge.",
+      "punchline": "Michael's definition of a concierge as 'the Winnipeg equivalent of a Geisha' \u2014 trained in 'the fine art of fanciness' \u2014 is both wildly inaccurate and accidentally revealing. His claim that meeting one is 'intoxicating' sets up his subsequent infatuation.",
+      "craft_total": 7.75,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'The fine art of fanciness' is a classic Michael Scott construction \u2014 he uses words he doesn't fully understand to create an impression of sophistication. The Geisha comparison is absurdly reductive, but Michael delivers it with such sincerity that it's more sad than offensive. 'Winnipeg equivalent' is the subtle comedy gold here \u2014 the phrase 'Winnipeg equivalent' is inherently funny."
+    },
+    {
+      "index": 33,
+      "text": "Failing. / Wow. I thought you were good at Flash. / I was, and then they switched to Acrobat just as I was learning Quark. I \u2014 I hate computers.",
+      "characters": [
+        "Pam",
+        "Jim",
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Pam reveals she's failing her class, and Jim expresses surprise given her previous confidence with Flash.",
+      "punchline": "Pam's explanation reveals a chain of technology switches that kept her perpetually behind \u2014 she mastered an outdated platform each time just as the industry moved on. 'I hate computers' is the defeated conclusion.",
+      "craft_total": 6.58,
+      "impact_score": 5.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedy is in the specificity: Flash \u2192 Acrobat \u2192 Quark traces real early-2000s design software transitions, making Pam's technological misfortune feel grounded. 'I hate computers' as a conclusion from someone who is supposedly at graphic design school is a strong deflation."
+    },
+    {
+      "index": 34,
+      "text": "You look, how you say, radiant tonight. / Thank you. / And it is, how you say, a beautiful night \u2014 / Michael, why?",
+      "characters": [
+        "Michael",
+        "Concierge Marie",
+        "Michael",
+        "Oscar"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael is speaking to the concierge at the bar after hours. She is French-Canadian.",
+      "punchline": "'How you say' is a phrase used to indicate struggling to translate from one's native language \u2014 but Michael is a native English speaker using it as if imitating foreignness. Oscar's 'Michael, why?' perfectly captures the crew's (and audience's) exhaustion. Michael's explanation: 'She's foreign.'",
+      "craft_total": 7.55,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. Michael adopting 'how you say' as a flirting mechanism \u2014 believing this makes him sound cosmopolitan or relatable to a French speaker \u2014 is painfully perfect character comedy. 'She's foreign' as his explanation to Oscar is a complete world in two words: Michael has no idea this is strange behavior. Oscar's 'Michael, why?' is the ideal straight-man response. Strong originality because the specific affectation and the specific explanation are both perfectly chosen."
+    },
+    {
+      "index": 35,
+      "text": "She's foreign. I am\u2014",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Oscar has asked 'Michael, why?' regarding his 'how you say' affectation.",
+      "punchline": "Michael's justification, 'She's foreign. I am\u2014' trails off as if the logic is self-evident. The incomplete sentence implies he was about to say 'I am speaking her language' or similar, but the absurdity is that he's still speaking English with a French affectation.",
+      "craft_total": 7.57,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The incomplete sentence is funnier than any completed version would be. Michael's logic is airtight to himself ('She's foreign') and the dropped 'I am\u2014' suggests his brain couldn't complete the justification in real time. Works as an extension of joke 34 rather than a standalone, but deserves its own entry."
+    },
+    {
+      "index": 36,
+      "text": "Everybody's going to end up dying someday, and I think it's better to die with some people that you like \u2014 like Oscar, and Andy, and Concierge Marie \u2014 than to know that there's somebody out there that you love that you're not with.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Michael is explaining his philosophy on why he's enjoying the company on this trip.",
+      "punchline": "Michael opens with 'everybody's going to end up dying someday' as a cheerful frame for what is apparently an observation about present company being pleasant. The death framing is completely unprompted and unnecessary, but reveals a genuine melancholy underneath (he misses Holly).",
+      "craft_total": 7.04,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The Office's signature blend of comedy and pathos. Michael opening with mortality as a casual conversational premise is pure character \u2014 his emotional processing is always slightly off. But the ending ('somebody out there that you love that you're not with') is genuinely sad and refers to Holly. The comedy and the heartbreak land simultaneously, which is the show at its best."
+    },
+    {
+      "index": 37,
+      "text": "Those two dudes are as good as naked. / How do you even know they're gay? / Come on! It's Dandy Cale and Foppy McGee over there.",
+      "characters": [
+        "Michael",
+        "Oscar",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael has scoped out the bar and targeted two men for Oscar to potentially connect with.",
+      "punchline": "When Oscar asks how Michael knows they're gay, his response is 'Dandy Cale and Foppy McGee' \u2014 a pair of made-up, aggressively stereotype-based nicknames delivered with total confidence. Oscar's skeptical question makes Michael's gaydar-by-aesthetics all the more absurd.",
+      "craft_total": 7.29,
+      "impact_score": 7.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The invented names 'Dandy Cale' and 'Foppy McGee' are inspired nonsense \u2014 they have the energy of something Michael made up on the spot and is very proud of. The rhyme scheme and the specificity of 'Foppy' make these feel like they could only exist in Michael Scott's brain. High quotability because these names are memorable and absurd in equal measure."
+    },
+    {
+      "index": 38,
+      "text": "Beer me dos long island iced teas, s'il vous plait.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Michael is ordering drinks while simultaneously trying to be cosmopolitan.",
+      "punchline": "Michael combines his own invented phrase ('beer me'), Spanish ('dos'), and French ('s'il vous plait') in a single sentence \u2014 a multilingual mess that signals his desire to appear worldly while revealing total confusion about which foreign language to perform.",
+      "craft_total": 7.6,
+      "impact_score": 7.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is one of the episode's finest jokes and one of the show's most quotable Michael Scott lines. Three languages, one order, zero coherence \u2014 and it feels completely natural coming from Michael. 'Beer me' is his established personal phrase, 'dos' is inexplicable given they're in Canada, and 'S'il vous pla\u00eet' is presumably triggered by the French-Canadian concierge. The combination is simultaneously absurd and perfectly in character. Craft score of 8.3 is justified: the joke could only be told by this character, it's maximally economical, and it's structurally complete."
+    },
+    {
+      "index": 39,
+      "text": "Bad decision in a glass.",
+      "characters": [
+        "Oscar"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "setup_punchline"
+      ],
+      "setup": "Michael has ordered two Long Island Iced Teas and is apparently distributing them.",
+      "punchline": "Oscar's description of a Long Island Iced Tea as 'bad decision in a glass' is a concise, knowing evaluation \u2014 setting up the Andy drunk-dial scene to follow.",
+      "craft_total": 6.94,
+      "impact_score": 6.75,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Five words, maximal efficiency. 'Bad decision in a glass' is a brilliant phrase \u2014 Oscar's sophistication compressed into a single knowing assessment. Works as foreshadowing for the drunk dial that follows. The economy score of 10 is warranted: it's impossible to say more with fewer words."
+    },
+    {
+      "index": 40,
+      "text": "I don't care if you're gay, straight, engaged \u2014 whatever. A guy needs intercourse. You will thank me when they spank thee.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael is trying to wing-man for Oscar despite Oscar's stated disinterest.",
+      "punchline": "'You will thank me when they spank thee' is an accidental couplet \u2014 Michael has stumbled into a rhyme while making his point, delivering it with the gravitas of an inspirational quote.",
+      "craft_total": 7.39,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The rhyme 'you will thank me when they spank thee' is a genuine comedy achievement \u2014 it sounds like Michael discovered a medieval proverb. The shift from 'me' to 'thee' is perfect: Michael unconsciously elevated the register for the rhyme. Strong character integration \u2014 this is Michael as a man who believes he's delivering wisdom."
+    },
+    {
+      "index": 41,
+      "text": "You guys like apples? / What? / Do you like apples? / Uh, sorry, what\u2014 / Well, how do you like these apples?",
+      "characters": [
+        "Michael",
+        "Men at bar",
+        "Michael"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Michael approaches two men at the bar to wing-man for Oscar.",
+      "punchline": "Michael's opener is the classic 'how do you like them apples?' rhetorical expression, but he builds to it by first asking literally 'do you like apples?' \u2014 treating a common idiom as something that requires setup and permission.",
+      "craft_total": 7.26,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedy is in Michael treating 'how do you like them apples?' as something that needs to be built up to. The confused 'what?' from the men functions as a perfectly placed reaction beat. Michael's commitment to executing the idiom step-by-step is a character-specific choice that reveals both his social incompetence and his genuine belief that this is a smooth approach."
+    },
+    {
+      "index": 42,
+      "text": "On a scale of one to ten, how hot is that dude? / Is he your boyfriend or something? / No, but he could be yours if you play your cards right.",
+      "characters": [
+        "Michael",
+        "Man at bar",
+        "Michael"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Michael is wing-manning for Oscar by asking strangers to rate Oscar's attractiveness.",
+      "punchline": "When the men push back ('Is he your boyfriend?'), Michael pivots to a dating show host mode: 'he could be yours if you play your cards right' \u2014 as if he's facilitating a transaction rather than having a human conversation.",
+      "craft_total": 6.81,
+      "impact_score": 6.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The dating show host framing ('if you play your cards right') is the best element \u2014 Michael has mentally cast himself as a matchmaker on a game show, complete with prize reveal language. His reductive, transactional approach to human connection is core Michael Scott."
+    },
+    {
+      "index": 43,
+      "text": "Dude, you struck out. They're totally stuck-up. Here, drink up.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "After being told to leave the men alone, Michael returns to Oscar and Andy.",
+      "punchline": "Michael interprets the men's refusal to be set up by a stranger as being 'stuck-up' \u2014 and the solution is more Long Island Iced Teas. His confidence is undented.",
+      "craft_total": 6.47,
+      "impact_score": 5.83,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A functional beat that keeps the escalation going. Michael's diagnosis of 'stuck-up' for people who didn't want a stranger rating their attractiveness is pure Michaelian logic. Not exceptional, but keeps the scene's momentum."
+    },
+    {
+      "index": 44,
+      "text": "How about this one \u2014 it's Christmas Eve, and everything is closed, and you need to get some dry cleaning done. 12:00 midnight. Where do you go? What do you do? What do you do? Come on. / Astro Cleaners on St. James Place is the only place that is open on that day. / Unbelievable. Unbelievable!",
+      "characters": [
+        "Michael",
+        "Concierge Marie",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael is pressing the concierge with increasingly obscure hypothetical needs to demonstrate her expertise.",
+      "punchline": "The hypothetical is absurdly specific (Christmas Eve, midnight, dry cleaning), and Concierge Marie has the answer instantly. Michael's 'Unbelievable!' is the genuine awe of a man who finds this more impressive than anything else that's happened.",
+      "craft_total": 7.49,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. The combination of Michael's over-excited hypothetical ('What do you do? WHAT DO YOU DO? Come on!') and the concierge's calm, specific answer is structurally excellent. The specificity of 'Astro Cleaners on St. James Place' is funnier than any generic answer would be. Michael's 'Unbelievable. Unbelievable!' as genuine astonishment reveals that for him, this level of service is the most extraordinary thing he's ever encountered. The repetition of 'What do you do?' builds like a detective interrogation. High originality because this exact scenario exists nowhere else in TV comedy."
+    },
+    {
+      "index": 45,
+      "text": "Anything. You can ask me anything. I'm your wingman.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Concierge Marie has begun asking Michael questions about Oscar and Andy's dating situations.",
+      "punchline": "Michael declares himself 'your wingman' to the concierge \u2014 he has switched from being Oscar's wingman to being the concierge's wingman in helping set up Oscar and Andy, losing track entirely of who is helping whom.",
+      "craft_total": 6.86,
+      "impact_score": 6.25,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A transitional beat that reveals Michael's social role confusion \u2014 he's constantly repositioning himself as the essential helper in every social situation."
+    },
+    {
+      "index": 46,
+      "text": "It's just that I've sat next to Angela for a very long, very long time. / How could anyone stand that woman?",
+      "characters": [
+        "Andy",
+        "Oscar"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Andy confides in Michael and Oscar about Angela, emphasizing how long they've been proximity-partners.",
+      "punchline": "Oscar's response ('How could anyone stand that woman?') is the audience's reaction verbalized \u2014 and especially charged coming from Oscar, who has suffered under Angela's management more than anyone.",
+      "craft_total": 6.62,
+      "impact_score": 6.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Oscar's 'How could anyone stand that woman?' is the perfect straight-man response \u2014 it validates the audience's feelings about Angela while also being specific to Oscar's experience. Works because Oscar has strong reasons to ask this question. Character integration is high."
+    },
+    {
+      "index": 47,
+      "text": "I see through a hard exterior to a little jelly in the middle. She is teaching me to be a better person. And she's working really hard on that. And she has the softest skin I've ever seen and I can't wait to have sex with her.",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Oscar asks what Andy sees in Angela. Andy begins to articulate a genuine emotional answer.",
+      "punchline": "The list starts romantically ('see through to the jelly') and spiritually ('teaching me to be a better person') \u2014 then the escalation lands on 'and she has the softest skin' and finally the deflating 'and I can't wait to have sex with her' \u2014 pure physical desire delivered with the same earnest energy as his emotional statements.",
+      "craft_total": 7.53,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Structurally exceptional. The list builds through three escalating registers \u2014 spiritual ('jelly in the middle'), pedagogical ('teaching me to be a better person,' followed immediately by 'working really hard on that,' which undercuts it), and physical ('softest skin,' 'can't wait to have sex with her'). Each item in the list is funnier than the last, and 'can't wait to have sex with her' lands as a perfect punchline because of its flat delivery \u2014 Andy says it with the same earnest sincerity as everything before it. The 'working really hard on that' parenthetical is a hidden gem that reveals Andy half-knows he's a work in progress. Strong 8+ justification: the joke has multiple layers, strong structure, and could only come from Andy Bernard at this exact moment in his relationship with Angela."
+    },
+    {
+      "index": 48,
+      "text": "You haven't had sex? / No. / Y\u2014 Are you guys waiting to get married, or? / Honestly, I don't know what we're waiting for.",
+      "characters": [
+        "Oscar",
+        "Andy",
+        "Oscar",
+        "Andy"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Andy has just said he can't wait to have sex with Angela. Oscar is surprised.",
+      "punchline": "'Honestly, I don't know what we're waiting for' \u2014 Andy genuinely doesn't understand his own relationship's dynamic, which the audience knows is because Angela is secretly with Dwight. The dramatic irony transforms this into a cringe moment.",
+      "craft_total": 7.12,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The comedy works on at least two levels: Andy's genuine bafflement about his own relationship, and the audience's knowledge that Angela is holding out because she's cheating with Dwight. 'I don't know what we're waiting for' is both funny on its face and tragic in context. High rewatch bonus because knowing the full arc makes this even more resonant."
+    },
+    {
+      "index": 49,
+      "text": "Andy, something is wrong with that woman. What is wrong with her? I'd like to know. You should call her and ask her.",
+      "characters": [
+        "Oscar",
+        "Michael"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "escalation"
+      ],
+      "setup": "Oscar and Michael are processing the revelation that Andy and Angela haven't had sex.",
+      "punchline": "Both Oscar and Michael's logic converges on 'you should call her' \u2014 a catastrophically bad idea that both of them are enthusiastically co-signing while drunk.",
+      "craft_total": 6.62,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedy is in the unanimity \u2014 both Oscar (who usually knows better) and Michael are wholeheartedly advising Andy to make a drunk call demanding to know what's wrong with his fianc\u00e9e. The convergence of their usually opposite instincts into equally bad advice is the joke."
     },
     {
       "index": 50,
-      "text": "It's just designing logos and stuff, and I miss Scranton, but it is not because I missed you.",
+      "text": "Oh, my god. Don't call her. Don't call her, Andy. Andy, don't call her. / Too late. Too late, it's dialing. / Now it's ringing.",
+      "characters": [
+        "Oscar",
+        "Michael",
+        "Oscar"
+      ],
+      "joke_types": [
+        "escalation",
+        "cringe_discomfort"
+      ],
+      "setup": "Oscar has just advised Andy to call Angela, then immediately regrets it.",
+      "punchline": "Oscar's rapid about-face \u2014 from 'you should call her' to 'don't call her' in seconds \u2014 is perfect. His horrified narration ('Too late. It's dialing. Now it's ringing.') treats each step of the call as a disaster update.",
+      "craft_total": 7.51,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The escalating dread of 'Too late. Too late, it's dialing. Now it's ringing.' is a masterpiece of comic timing in transcript form. Each short phrase is a countdown to catastrophe. Oscar's reversal from instigator to panicked bystander is character-perfect \u2014 he's smart enough to immediately see the mistake but too late to stop it. The comedy of helpless narration ('Now it's ringing') is especially strong."
+    },
+    {
+      "index": 51,
+      "text": "What is wrong with you? / Why won't you do Andy? / What? / That's Oscar, and he wants to know why you won't do me, and I think it's a valid question.",
+      "characters": [
+        "Angela",
+        "Andy",
+        "Angela",
+        "Andy"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Andy has called Angela drunk. His opening line to his fianc\u00e9e is 'What is wrong with you?'",
+      "punchline": "Andy asks 'Why won't you do Andy?' (referring to himself in the third person), then helpfully clarifies to Angela that Oscar also endorses this as 'a valid question' \u2014 treating a drunk booty call as a reasonable group concern.",
+      "craft_total": 7.9,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Multiple layers of cringe comedy operating simultaneously. Andy refers to himself in the third person ('do Andy') \u2014 already deeply undignified. Then he drags Oscar into it as co-sponsor of the question. 'I think it's a valid question' delivered with earnest sincerity while drunk-dialing his fianc\u00e9e is Andy Bernard's character in crystalline form. The phrase 'why won't you do Andy' is maximally uncomfortable and maximally quotable. High craft score justified by the density of comedy per word and the exceptional character integration."
+    },
+    {
+      "index": 52,
+      "text": "Are you drunk? / This is Andy Bernard.",
+      "characters": [
+        "Angela",
+        "Andy"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Angela asks if Andy is drunk.",
+      "punchline": "Andy's response to 'are you drunk?' is to formally introduce himself \u2014 as if Angela doesn't know who he is, or as if his full name is a response to the question. The non-sequitur reveals how drunk he is.",
+      "craft_total": 7.56,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A near-perfect short joke. 'This is Andy Bernard' in response to 'are you drunk?' is maximally economical and deeply character-specific. The formal self-introduction to his own fianc\u00e9e \u2014 whom he has just called \u2014 suggests Andy's brain has partially rebooted into 'professional call' mode while still being completely drunk. The gap between formal business register and the content of the conversation is enormous. Deserves its 8.0 craft score: economy of 9.5 is warranted because four words do the entire job."
+    },
+    {
+      "index": 53,
+      "text": "I wanna take you to sex school.",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Andy is on a drunk call with Angela, escalating his demands.",
+      "punchline": "'I wanna take you to sex school' is Andy's attempt at seduction \u2014 an expression that sounds like it came from a bro-comedy from 2003, delivered with complete sincerity to a woman who barely holds his hand.",
+      "craft_total": 7.43,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Five words that are simultaneously pathetic and endearing. 'Sex school' as a concept implies Andy sees himself as an educator, which is magnificently delusional given his established relationship dynamic. The contrast with Angela's cold silence makes this hit harder. Strong economy score \u2014 the phrase compresses Andy's aspirational self-image perfectly."
+    },
+    {
+      "index": 54,
+      "text": "Who is that, monkey? / Is somebody there?",
+      "characters": [
+        "Dwight",
+        "Angela"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "irony_sarcasm"
+      ],
+      "setup": "Angela is on the phone with her drunk fianc\u00e9 when Dwight (her secret affair) speaks up in the background.",
+      "punchline": "Dwight calling Angela 'monkey' \u2014 his pet name for her \u2014 while she's on the phone with the man she's engaged to is the cringe peak of the subplot. Angela's panicked 'Is somebody there?' to Andy is the cover-up.",
+      "craft_total": 7.8,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The cringe comedy here is at its absolute best. 'Monkey' as Dwight's pet name for Angela is both absurd and strangely tender \u2014 and its sudden appearance mid-drunk-call is devastating. Angela's attempt to contain the situation ('Is somebody there?') is immediately suspicious. The joke works on multiple levels: the immediate cringe comedy, the ongoing dramatic irony of Andy not knowing, and the character specificity of Dwight's term of endearment. High craft score justified: it advances the plot, deepens two characters' comedy simultaneously, and lands as both funny and narratively significant."
+    },
+    {
+      "index": 55,
+      "text": "I want to see you naked.",
+      "characters": [
+        "Andy"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "character_comedy"
+      ],
+      "setup": "Andy has been escalating the drunk call with Angela.",
+      "punchline": "After 'sex school,' 'naked negotiations,' etc., Andy's final statement is remarkably plain and direct \u2014 and the plainness is the comedy. He's dropped all pretense and is just stating facts.",
+      "craft_total": 6.78,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Works as a deflation after the elaborate euphemisms \u2014 Andy has given up on clever and gone direct. Functional rather than exceptional."
+    },
+    {
+      "index": 56,
+      "text": "How does everyone know already? / Know what? / Pam failed art school. / Oh, well. / Doesn't surprise me.",
+      "characters": [
+        "Jim",
+        "Dwight",
+        "Jim",
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jim asks how everyone already knows about Pam. Dwight's response to learning Pam failed.",
+      "punchline": "'Doesn't surprise me' \u2014 Dwight's immediate, casual dismissal of Pam's failure, delivered without a moment's hesitation.",
+      "craft_total": 6.87,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dwight's reflexive dismissal of Pam is in character, but the comedy deepens with what follows \u2014 his specific critique of her painting. 'Doesn't surprise me' is the calm before the two-suns storm."
+    },
+    {
+      "index": 57,
+      "text": "Have you seen her painting, Jim? The building? There are shadows coming from two different directions. / Dwight, stop it. / What?! Are there two suns? / Oh, my god. / Last I checked, that's not an office building in the Andromeda Galaxy.",
+      "characters": [
+        "Dwight",
+        "Jim",
+        "Dwight",
+        "Jim",
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Dwight begins critiquing Pam's painting of the office building as evidence that her failure is justified.",
+      "punchline": "Dwight's escalating indictment of a shadow direction in an amateur painting culminates in 'that's not an office building in the Andromeda Galaxy' \u2014 implying that only alien architecture could explain the shadow error.",
+      "craft_total": 8.09,
+      "impact_score": 8.17,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The episode's standout joke. The escalation from legitimate critique ('shadows from two different directions') to 'are there two suns?' to 'not an office building in the Andromeda Galaxy' is a perfect three-step escalation. Each step is funnier than the last, and the final line lands because of both its specificity (Andromeda Galaxy \u2014 not just 'space,' specifically Andromeda) and the logical chain that got us there (two suns \u2192 extraterrestrial architecture \u2192 specific galaxy). The joke is also deeply character-specific: only Dwight Schrute, with his scientific pretensions and his simmering contempt for Pam, would go to astrophysics to settle an art criticism dispute. 'Are there two suns?' is already a classic line; 'Andromeda Galaxy' elevates it to legendary. This scores above the 8.0 craft anchor comfortably."
+    },
+    {
+      "index": 58,
+      "text": "Dwight continues after Jim leaves: 'It's totally unrealistic. No lines in the parking lot.'",
+      "characters": [
+        "Dwight"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Dwight has been mounting a case against Pam's painting; Jim has fled.",
+      "punchline": "Dwight continues listing flaws to no one \u2014 'no lines in the parking lot' \u2014 proving he will not stop regardless of audience. The escalation to parking lot logistics is also its own joke (this is now his concern about a piece of art).",
+      "craft_total": 7.56,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The parking lot detail is a perfect Dwight kicker. After the galaxy-level absurdity of the previous art critique, he descends back to the mundanely literal \u2014 no parking lot lines \u2014 as if this is the most damning flaw. The fact that he's talking to himself is also funny. Strong character integration."
+    },
+    {
+      "index": 59,
+      "text": "You know, it's true what they say \u2014 Long Island iced teas are way stronger in Canada.",
+      "characters": [
+        "Oscar"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The morning after the drunk-call night, Oscar and Michael are debriefing.",
+      "punchline": "Oscar \u2014 the show's resident voice of reason \u2014 has constructed a geography-based excuse for the previous night's bad decisions. Long Island iced teas are not stronger in Canada; they were just drunk on Long Island iced teas.",
+      "craft_total": 7.34,
+      "impact_score": 7.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The joke is that Oscar \u2014 who called them 'bad decision in a glass' the night before \u2014 is now constructing a logical-sounding excuse for his own poor judgment. 'It's true what they say' implies this is received wisdom, but no one says this about Canadian Long Island iced teas. The joke works because it's Oscar, not Michael, making this rationalization, which subverts his established role as the smart one. Strong craft score: character subversion is well-earned, callback to the 'bad decision in a glass' setup is clean, and the line is highly quotable."
+    },
+    {
+      "index": 60,
+      "text": "I can't believe we called her up. / Totally. / What \u2014 Who? / I'm talking about Angela. / I can't believe we called her up last night. / We called Angela? / You \u2014 You call \u2014 You called her. / That was real?! / I thought I dreamed that.",
+      "characters": [
+        "Oscar",
+        "Michael",
+        "Andy",
+        "Oscar",
+        "Michael",
+        "Andy",
+        "Michael",
+        "Andy",
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "The morning after. Oscar and Michael are processing the drunk call while Andy apparently has no memory of it.",
+      "punchline": "Andy's discovery that the call was real \u2014 'I thought I dreamed that' \u2014 is the perfect cap. His brain had rationalized the drunk-call as a dream rather than confront it as reality.",
+      "craft_total": 7.73,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The structure here is excellent: Oscar and Michael speak about the call as a shared trauma, Andy is confused, then the dawning horror is perfectly executed. 'That was real?!' followed immediately by 'I thought I dreamed that' is a great one-two. The comedy escalates naturally from confusion to confirmation to denial rationalized as dreaming. Character-specific: only Andy Bernard would file 'drunk-dialing fianc\u00e9e demanding sex school' under 'things that might have been dreams.'"
+    },
+    {
+      "index": 61,
+      "text": "This can't happen again. / This has to happen again.",
+      "characters": [
+        "Kelly",
+        "Ryan"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Two characters (inferred to be Kelly and Ryan from context of the final scene) are in the same space after apparently spending time together.",
+      "punchline": "The simultaneous but opposite declarations \u2014 'This can't happen again' / 'This has to happen again' \u2014 reveal their completely mismatched emotional states about whatever just occurred, delivered simultaneously.",
+      "craft_total": 7.31,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Extremely economical \u2014 the mirror-image construction does all the work. Six words establish the entire dynamic between two characters. The opposing parallel structure is clever and efficiently reveals mismatched feelings without any exposition."
+    },
+    {
+      "index": 62,
+      "text": "Darryl can't happen again. / Look at me. / Do you want me to do more push-ups? / Yeah. / Okay.",
+      "characters": [
+        "Kelly",
+        "Ryan",
+        "Jim (inferred)",
+        "Darryl (inferred)"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Someone is being told their relationship with Darryl can't continue. The push-up exchange follows.",
+      "punchline": "The push-up exchange \u2014 'Do you want me to do more push-ups?' / 'Yeah.' / 'Okay.' \u2014 is a callback to Jim's earlier push-up space monologue, now apparently being performed as a response to being told something is impossible.",
+      "craft_total": 6.24,
+      "impact_score": 5.5,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Context is harder to parse from the transcript alone, but the push-up exchange reads as a deflection \u2014 someone trying to impress or distract with physical fitness. Functional but not exceptional. Relies somewhat on visual performance."
+    },
+    {
+      "index": 63,
+      "text": "Oh, my god. He's gonna kill us. / I'd like to see him try.",
+      "characters": [
+        "Kelly",
+        "Ryan (inferred)"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Someone has just sent a break-up text. They're waiting for the response.",
+      "punchline": "The reaction to a breakup text being 'He's gonna kill us' followed by a combative 'I'd like to see him try' is a comedic overreaction \u2014 they've turned a text message exchange into a war footing.",
+      "craft_total": 6.87,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedy is in the disproportionate response \u2014 treating a breakup text like a declaration of war. 'I'd like to see him try' as a response to 'he's going to kill us' (about a text message response) is absurdly macho."
+    },
+    {
+      "index": 64,
+      "text": "Oh! He says it's cool. / He said, 'it's cool!' / That's all he wrote? / Can I see it?",
+      "characters": [
+        "Kelly",
+        "Kelly",
+        "Ryan (inferred)",
+        "Unknown"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "They've been dreading the response to a breakup text. The response arrives.",
+      "punchline": "The elaborately feared response to the breakup is simply 'it's cool' \u2014 complete indifference from Darryl. The shock and the request to see it (as if the terseness must be scrutinized for hidden meaning) is a perfect deflation.",
+      "craft_total": 7.53,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The contrast between their anxiety and Darryl's 'it's cool' is excellently executed. 'Can I see it?' as a response to hearing 'it's cool' suggests disbelief \u2014 they need to verify such radical emotional economy. Darryl's two-word response is perfectly in character and lands harder because of the buildup."
+    },
+    {
+      "index": 65,
+      "text": "Didn't you two date for like a long time? / Mm-Hmm. This is like a fairy tale!",
+      "characters": [
+        "Unknown",
+        "Kelly"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Someone notes that Kelly and Darryl dated for a significant time. Kelly has just received 'it's cool' as a breakup response.",
+      "punchline": "Kelly calling 'it's cool' as a breakup text after a long relationship 'like a fairy tale' \u2014 the cognitive dissonance between the bleak reality and Kelly's romanticized framing is perfectly Kelly.",
+      "craft_total": 7.62,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A compact, beautifully character-specific joke. Kelly Kapoor calling a two-word breakup text after a long relationship 'like a fairy tale' is perfect \u2014 her emotional processing is always at odds with reality, and her ability to romanticize literally anything is a defining character trait. Only Kelly Kapoor says this line. High character integration score is justified."
+    },
+    {
+      "index": 66,
+      "text": "She is so pissed. / Mmm. / She's taking us back to first base. / What's first base with Angela? / I get to kiss her forehead.",
+      "characters": [
+        "Michael",
+        "Oscar",
+        "Michael",
+        "Oscar",
+        "Andy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Angela has apparently signaled her extreme displeasure about the drunk call. Michael interprets this in terms of baseball base progression.",
+      "punchline": "Oscar's question \u2014 'What's first base with Angela?' \u2014 sets up Andy's devastated answer: 'I get to kiss her forehead.' The punchline reveals the extreme limits of Angela's physical affection, re-contextualizing the entire 'can't wait to have sex with her' speech.",
+      "craft_total": 8.24,
+      "impact_score": 8.67,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the episode's best joke. The callback structure is impeccable: Andy's earlier speech about desperate desire for Angela ('I can't wait to have sex with her') is now retroactively recontextualized by the revelation that 'first base' in their relationship is a forehead kiss. The escalation-then-deflation is perfectly executed. The baseball metaphor is the ideal frame \u2014 everyone knows what first base is, which makes 'I get to kiss her forehead' a devastating reinterpretation. Character integration is at 9.5 because this joke is entirely constructed from Angela's established frigidity and Andy's earnest obliviousness. 'What's first base with Angela?' is the perfect straight-man question, and 'I get to kiss her forehead' is the perfect punchline. This approaches the 9.5 craft anchor level in terms of structural quality, character specificity, and quotability."
+    },
+    {
+      "index": 67,
+      "text": "You up for a chest bump? / No. / Bro hug? / Back to basics. I like it.",
+      "characters": [
+        "Michael",
+        "Oscar",
+        "Michael",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Michael and Oscar are saying goodbye after a surprisingly good trip together.",
+      "punchline": "Michael's negotiated descent from chest bump to bro hug, and then his self-satisfied commentary ('Back to basics. I like it.') \u2014 Oscar's consistent 'no' to each option is the straight-man anchor.",
+      "craft_total": 7.17,
+      "impact_score": 6.75,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A warm closer to the Michael-Oscar subplot. The negotiated physical greeting is a recognizable Michael Scott social pattern \u2014 he always wants more than the situation calls for. Oscar's flat 'no' to each offer and Michael reframing whatever he gets as his preference ('back to basics, I like it') is good character work."
+    },
+    {
+      "index": 68,
+      "text": "I had to go all the way to Canada to get to know a guy who sits 20 feet away from me. And he's delightful!",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Michael is reflecting on the trip in a confessional.",
+      "punchline": "'And he's delightful!' \u2014 Michael's genuine discovery that Oscar is a good person, expressed with the enthusiasm of someone who has made a surprising and precious find.",
+      "craft_total": 7.01,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'And he's delightful!' is the show's comedy-pathos balance at work again. The comedy is in Michael's discovery of something obvious (Oscar is a normal person) being treated as a revelation. The pathos is that Michael genuinely needed to go to another country to make a friend with someone he's worked with for years. Both register simultaneously."
+    },
+    {
+      "index": 69,
+      "text": "No, actually, the trip sucked. / Excuse me? / The trip sucked, David. It blew chunks. It was terrible. It was a bad trip.",
+      "characters": [
+        "Michael",
+        "David Wallace",
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "David Wallace congratulates Michael on making the sale and asks if he had a good trip.",
+      "punchline": "Michael's escalating list of complaints about the trip \u2014 'sucked,' 'blew chunks,' 'terrible,' 'bad trip' \u2014 delivered when Wallace is trying to celebrate a successful outcome.",
+      "craft_total": 7.28,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's refusal to give Wallace a satisfying answer despite having succeeded sets up the emotional confrontation about Holly. The escalating list of synonyms ('sucked,' 'blew chunks') is recognizable Michael Scott rhetoric \u2014 he builds emphasis through repetition and variation rather than specificity. Good character moment."
+    },
+    {
+      "index": 70,
+      "text": "Well, starting with the airport shuttle, which was basically just a van. / Okay. / And business class, which was basically just coach. / And the hotel, which sucked big time.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Michael is cataloguing the failures of his trip to Wallace.",
+      "punchline": "The callback to the opening sequence \u2014 the van, business class, the hotel \u2014 all framed now as failures despite Michael having been ecstatic about each of them at the time. The episode has come full circle.",
+      "craft_total": 7.37,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A beautifully constructed callback that recontextualizes the entire opening sequence. Michael's enthusiasm for each 'luxury' at the start is now inverted \u2014 the same items are now cited as grievances. The episode's opening and closing are thematically mirrored. Structurally one of the cleaner pieces of long-form joke architecture in the episode."
+    },
+    {
+      "index": 71,
+      "text": "Oh, and thanks for the tip on the concierge. That was great. That was great. That was \u2014 That was a really good choice.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Michael has been cataloguing everything bad about the trip to Wallace.",
+      "punchline": "Michael's sudden pivot to praising the concierge \u2014 with three repetitions of 'that was great' and specific credit to Wallace \u2014 reveals that his anger is really about Holly, and the concierge became a surrogate for what he's missing.",
+      "craft_total": 7.05,
+      "impact_score": 6.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The shift from ranting to enthusiastic praise for the concierge is character-revealing. The repetition ('That was great. That was great. That was \u2014 That was a really good choice.') suggests Michael trying to gather himself to say something deeper. Works as a setup beat for the Holly confrontation."
+    },
+    {
+      "index": 72,
+      "text": "Why did you send her away? You knew I liked her and you just sent her away and that \u2014 that was a sucky thing to do, man. That was a really sucky thing to do.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Michael has pivoted from his trip complaints to confronting Wallace about transferring Holly.",
+      "punchline": "'That was a sucky thing to do, man' \u2014 Michael's ultimate expression of corporate grievance. The word 'sucky,' the repeated emphasis, and 'man' as the final word all land the complaint as simultaneously sincere and absurdly underpowered.",
+      "craft_total": 7.19,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The comedy here is in Michael's vocabulary failing him at the moment of his most sincere grievance. 'Sucky' is a child's word for describing a corporate HR decision. The repetition and 'man' as an address to his own superior reveals Michael's emotional register \u2014 he's not performing a business complaint, he's telling a friend they did something wrong. Deeply character-specific."
+    },
+    {
+      "index": 73,
+      "text": "Why have I stayed at Dunder Mifflin for so long? Certainly not because of the paycheck. 'Cause I could be making more money as a doctor or a professional athlete.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Michael is doing a confessional about why he works at Dunder Mifflin.",
+      "punchline": "Michael's alternatives to Dunder Mifflin \u2014 'a doctor or a professional athlete' \u2014 are career paths with specific educational or physical requirements that bear no relationship to Michael's actual skills or situation.",
+      "craft_total": 7.33,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's casual belief that he could be a doctor or professional athlete if he wanted more money is perfect delusional self-confidence. The comedy is in the certainty \u2014 he's not saying he wishes he could be these things, he's saying he could be making more money as these things, as if the only barrier is preference."
+    },
+    {
+      "index": 74,
+      "text": "A boss that will not fire you even though you just tell him off right to his face over the phone \u2014 that's respect.",
+      "characters": [
+        "Michael"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Michael is concluding his confessional about why he values Dunder Mifflin.",
+      "punchline": "Michael's definition of 'respect' from a boss is 'not firing you when you tell them off.' This is the minimum possible professional standard, and Michael frames it as a profound act of corporate validation.",
+      "craft_total": 7.48,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Michael's bar for 'respect' \u2014 not being fired for misconduct \u2014 is hilariously low and reveals his entire relationship with authority. He experiences the absence of consequences as an active show of regard. Strong character integration; this is Michael's emotional logic perfectly captured."
+    },
+    {
+      "index": 75,
+      "text": "I'm coming back the wrong way.",
       "characters": [
         "Pam"
       ],
       "joke_types": [
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Pam explaining why she's coming back from art school",
-      "punchline": "Insisting it's not about Jim while clearly protesting too much",
-      "craft_total": 5.95,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Pam has been told by Jim to 'come back the right way' (i.e., finish the program). She's returning early.",
+      "punchline": "Pam's confessional acknowledges, matter-of-factly, that she's doing the exact opposite of what was discussed. 'The wrong way' is delivered with complete self-awareness and zero apology.",
+      "craft_total": 7.44,
+      "impact_score": 7.17,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic 'the lady doth protest too much' moment - Pam's denial makes it obvious it IS about Jim."
+      "explanation": "Five words, maximum economy. The joke works because Pam's deadpan self-awareness ('the wrong way') subverts the expected emotional register \u2014 she's not apologetic or defensive, just honest. The phrase echoes Jim's earlier advice structurally, making it a callback that lands without being labeled as one. Strong economy score justified."
     },
     {
-      "index": 51,
-      "text": "I'm not going inside. All right. First thing in the morning, then.",
+      "index": 76,
+      "text": "It's not because of you. I don't like graphic design. That's it. Stop smiling. I really didn't like it. It's just designing logos and stuff. And I missed Scranton. But it is not because I missed you. I just really wanted to come home. And I know you said to come home the right way, but you can't tell me what to do. Got it?",
       "characters": [
-        "Pam",
-        "Jim"
+        "Pam"
       ],
       "joke_types": [
-        "observational"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Jim asking Pam to make copies",
-      "punchline": "Pam refusing to go back inside the office building",
-      "craft_total": 5.4,
-      "impact_score": 5.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
+      "setup": "Pam is explaining her early return to Jim (who is apparently smiling).",
+      "punchline": "Pam's increasingly elaborate denial of missing Jim \u2014 the more she protests, the more obvious it is \u2014 culminates in 'you can't tell me what to do. Got it?' The aggressive defensiveness as the final line is the punchline.",
+      "craft_total": 7.28,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Pam's boundaries after just returning - she's back but not quite ready to fully re-enter the office world."
+      "explanation": "The escalating protest is the structure \u2014 each new denial (it's the design work / it's the logos / I missed Scranton / not because of you) layers onto the others, all of them transparently false. 'Stop smiling' to Jim is perfect because it acknowledges he's already seen through it. The aggressive closing ('you can't tell me what to do. Got it?') is an arch bit of false bravado that both characters know is a performance. The scene works as comedy and as romance simultaneously."
     },
     {
-      "index": 52,
-      "text": "I realized that, for whatever reason, I just couldn't do better than Kelly.",
+      "index": 77,
+      "text": "It's not because of you. I don't like graphic design. That's it. Stop smiling. I really didn't like it. It's just designing logos and stuff. And I missed Scranton. But it is not because I missed you. I just really wanted to come home. And I know you said to come home the right way, but you can't tell me what to do. Got it?",
+      "characters": [
+        "Pam"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Pam is explaining to Jim why she's returning from art school.",
+      "punchline": "The entire speech is structured as 'it's NOT because of you' followed by a cascade of rationalizations that all point to missing Jim. 'Stop smiling' implies Jim can see through all of it. 'You can't tell me what to do' after following his advice is the final ironic cap.",
+      "craft_total": 7.42,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Stop smiling' is the key line \u2014 Pam can see Jim's reaction (he knows she's lying to herself) even over the phone. The structure of the speech is excellent: each denial adds more evidence. 'You can't tell me what to do' after literally doing what he told her is the perfect closing irony. Strong character integration for Pam \u2014 her self-protective denial is a known character trait."
+    },
+    {
+      "index": 78,
+      "text": "We're back together again, baby. We're back. They tried to keep us apart, but they couldn't. It was like destiny. I \u2014 I realized that, for whatever reason, I just couldn't do better than Kelly.",
       "characters": [
         "Ryan"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Ryan explaining getting back together with Kelly",
-      "punchline": "Backhanded romantic declaration - 'couldn't do better'",
-      "craft_total": 6.7,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Ryan is doing a confessional about getting back together with Kelly.",
+      "punchline": "'I realized that, for whatever reason, I just couldn't do better than Kelly' \u2014 Ryan frames his return to Kelly not as love or affection but as an inability to upgrade. The 'for whatever reason' qualifies even his own terrible excuse.",
+      "craft_total": 8.2,
+      "impact_score": 8.5,
+      "quotability": 9.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ryan moment - turning a romantic reunion into a statement about settling for what you can get."
+      "explanation": "The episode's closing joke and one of its best. Ryan's 'destiny' framing ('they tried to keep us apart') is pure delusion, immediately undercut by 'I just couldn't do better than Kelly.' The hedging of 'for whatever reason' is the killer detail \u2014 Ryan can't even commit to his own dismissal of Kelly; he leaves it vague because he genuinely doesn't understand why he can't do better. 'Couldn't do better than Kelly' as a reunion motivation is a perfect Ryan Howard line \u2014 he never says he loves her, never implies warmth, just admits defeat. High originality and character integration: no other character in television says this line in this moment."
     }
   ],
   "air_date": "2008-11-13",
