@@ -38,7 +38,12 @@ def wrap(d, text, path, size, maxw):
     return fo, textwrap.wrap(text, 20)
 
 def frame(spec, shown, show_claim, show_bait):
-    """One frame with `shown` rows revealed from the bottom of the list up."""
+    """One frame with the first `shown` rows revealed, top of the list down.
+
+    Rows are written worst-to-best, so revealing downward is a countdown that
+    lands on #1 last. Revealing upward showed the answer in the first frame and
+    threw away the only reason to keep watching a six-second video.
+    """
     im = Image.new('RGB', (W, H), DARK[:3]); d = ImageDraw.Draw(im)
     d.text((W // 2, 168), 'THE HUMOR INDEX', font=f(FB, 34), fill=GOLD, anchor='mm')
 
@@ -50,7 +55,7 @@ def frame(spec, shown, show_claim, show_bait):
     rows = spec['rows']; n = len(rows)
     top, rh = 432, 112
     for i, r in enumerate(rows):
-        if i < n - shown: continue                      # not revealed yet
+        if i >= shown: continue                         # not revealed yet
         y = top + i * rh
         neg = str(r['value']).strip().startswith('-')
         d.rounded_rectangle([70, y, W - 70, y + rh - 14], 16, fill=PANEL[:3])
