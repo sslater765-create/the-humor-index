@@ -209,7 +209,9 @@ export default function CharactersClient({ characters, ascending = false }: { ch
             const value = sortMode === 'total_war' ? c.war
               : sortMode === 'war_per_ep' ? c.warPerEpisode
               : c.qualityIndex;
-            const pct = maxValueForBar > 0 ? (value / maxValueForBar) * 100 : 0;
+            // Below-replacement characters carry a negative WAR; the bar floors at zero width
+            // even though the number itself keeps its sign.
+            const pct = maxValueForBar > 0 ? Math.max((value / maxValueForBar) * 100, 0) : 0;
             return (
               <motion.div
                 key={`${c.name}-${c.showSlug}`}

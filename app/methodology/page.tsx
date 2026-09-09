@@ -407,7 +407,7 @@ export default async function MethodologyPage() {
           <div className="bg-brand-card border border-brand-border rounded-xl p-5 mb-4">
             <p className="text-xs uppercase tracking-widest text-brand-gold mb-2">Formula (v2)</p>
             <p className="font-mono text-sm text-brand-text-primary mb-3">
-              WAR = total_jokes × max(shrunk_quality − replacement_quality, 0)
+              WAR = total_jokes × (shrunk_quality − replacement_quality)
             </p>
             <p className="font-mono text-xs text-brand-text-secondary">
               shrunk_quality = (n · observed_quality + 30 · league_median) / (n + 30)
@@ -420,12 +420,15 @@ export default async function MethodologyPage() {
             <li><span className="text-brand-text-primary">Replacement quality</span> = 25th percentile of the (craft+impact)/2 quality metric among bench-player characters (10–50 analyzed jokes). As of 2026-04-16 that level sits at 6.555.</li>
             <li><span className="text-brand-text-primary">Bayesian shrinkage (k=30)</span> pulls small-sample estimates toward the league median (6.775), preventing a 10-joke guest star with a lucky mean from beating a 1,000-joke lead.</li>
             <li><span className="text-brand-text-primary">WAR/Episode</span> = WAR ÷ episodes appeared. Use this for cross-era and cross-run-length comparisons.</li>
+            <li><span className="text-brand-text-primary">Negative WAR</span> is real and we publish it. A character whose shrunk quality sits below the replacement line scores below zero, and the further below they sit across more jokes, the more negative it gets. We used to clamp these to 0.0, which put a 1,960-joke lead level with a 14-joke guest star and below characters with five jokes and a lucky mean. The sign carries information, so it stays.</li>
           </ul>
           <p className="text-xs text-brand-text-muted mt-4 leading-relaxed">
             <span className="text-brand-text-primary">History:</span> v1 used a fixed midpoint
             (&quot;−5&quot;) as the replacement baseline, which caused WAR to collapse to roughly 1.5 × total_jokes
             (effectively a screen-time metric). v2 swaps in an empirical replacement level and adds
-            Bayesian shrinkage — rankings now reflect genuine quality × volume.
+            Bayesian shrinkage — rankings now reflect genuine quality × volume. As of 2026-09-09 the
+            floor at zero was removed; characters below replacement now show a negative score
+            instead of collapsing onto 0.0.
           </p>
         </section>
 

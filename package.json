@@ -11,7 +11,8 @@
     "check": "next lint && tsc --noEmit && npm run check:data && npm run check:claims",
     "test": "vitest run",
     "check:data": "node scripts/check-data.mjs",
-    "check:claims": "python3 video/check_claims.py"
+    "check:claims": "python3 video/check_claims.py",
+    "regen:top-jokes": "node scripts/regen-top-jokes.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",
