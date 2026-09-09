@@ -179,7 +179,7 @@ Season 6 averages 82.6, the peak. Season 9 is the last one above 79. The floor i
 ## Wed Sep 30 — #12 — 30 Rock — HE'S GONNA JACK!
 
 ```
-Yes, 30 Rock beat Seinfeld (94.5), Arrested Development (95.0) and Veep (95.1). 3.52 jokes per minute for seven seasons is what does it. Reply with your favorite episode and I'll give you its score.
+Yes, 30 Rock beat Seinfeld (94.5), Arrested Development (95.0) and Veep (95.1). 3.53 jokes per minute for seven seasons is what does it. Reply with your favorite episode and I'll give you its score.
 ```
 
 ---
@@ -204,14 +204,3 @@ Tracy has three of 30 Rock's top ten jokes. Jenna has two. Liz is in two of them
 | 34 | Arrested Development | clip is GOB in prison, not Michael's scored line |
 
 They slot in after Oct 1 once their clips exist.
-
-## Two to re-check before they post
-
-#12 (Sep 30) and #32 (Oct 1) are the 30 Rock videos, and 30 Rock was being
-rescored when these were scheduled. Both assert 30 Rock figures, and #12's score
-is burned into the video, so a shift means a re-render, not just a caption edit.
-They were deliberately placed last to leave three weeks for that.
-
-#19 (Sep 16) says only 30 Rock and Fleabag outrank Veep at 95.1. That breaks only
-if 30 Rock falls below 95.1, which would be a large move, but `npm run check:claims`
-will catch it either way.
