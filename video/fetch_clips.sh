@@ -28,7 +28,11 @@ CLIPS=(
 "27|https://www.youtube.com/watch?v=piPz1prPrzs|yellow-light"
 "28|https://www.youtube.com/watch?v=FXE_yUy5Ll8|im-black"
 "29|https://www.youtube.com/watch?v=z_uI-_dG96w|swingers"
-"30|https://www.youtube.com/watch?v=PlIzKaGBeHk|perfect-crime"
+# 30 was repointed 2026-09-09: the chandelier monologue no longer exists as a scored joke
+# after the Office rescore, so the slot is the raccoon-framing exchange from the same episode.
+# Whisper the download before cutting; if this upload does not contain "I framed a raccoon for
+# opening a Christmas present", try https://www.youtube.com/watch?v=4RjyyHUkJhs
+"30|https://www.youtube.com/watch?v=19MNAajZnts|framed-a-raccoon"
 "31|https://www.youtube.com/watch?v=PA5HRW4DWz0|magic-loogie"
 "32|https://www.youtube.com/watch?v=9NLd53QJmmg|shark-week"
 "33|https://www.youtube.com/watch?v=hA521XgMfdA|skim-milk"
