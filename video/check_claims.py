@@ -131,24 +131,31 @@ for v in vids:
                 if sh.get(field) and claimed!=sh[field]:
                     bad.append(f"#{n}: {label} for {sh['name']} claimed {claimed:,}, data says {sh[field]:,}")
 
-        # "<Show> scores XX.X" / "scores XX.X on our index"  (show-level only)
+        # Show-level Humor Index. Anchored on the alias itself rather than a
+        # capitalised-word regex, because that spelled "30 Rock" as "Rock" and
+        # silently skipped every 30 Rock score claim. Matches "<show> scores
+        # 97.5", "<show> (97.5)", and a bare "97.5" within 60 characters after
+        # the show name, which is how the captions phrase it.
         if not episode_level:
-            for mm in re.finditer(r'([A-Z][\w\'&.\- ]+?) (?:scores|is) (\d{2}\.\d)\b',t):
-                sh=shows.get(ALIAS.get(mm.group(1).strip().lower()))
-                if not sh: continue
-                checked+=1
-                claimed=float(mm.group(2))
-                if sh.get('humor_index') and abs(claimed-sh['humor_index'])>0.05:
-                    bad.append(f"#{n}: Humor Index for {sh['name']} claimed {claimed}, data says {sh['humor_index']}")
-            # "Curb (81.5), The Office (79.4) and Community (77.9)" — pair each score
-            # with the show name immediately before it
-            for mm in re.finditer(r'([A-Z][\w\'&.\- ]{2,30}?)\s*\((\d{2}\.\d)\)',t):
-                sh=shows.get(ALIAS.get(mm.group(1).strip().lower()))
-                if not sh: continue
-                checked+=1
-                claimed=float(mm.group(2))
-                if sh.get('humor_index') and abs(claimed-sh['humor_index'])>0.05:
-                    bad.append(f"#{n}: Humor Index for {sh['name']} claimed {claimed}, data says {sh['humor_index']}")
+            low=t.lower()
+            SKIP=('season','episode','craft','impact','quotability','per minute',
+                  'jpm','jokes per','%','imdb')
+            for name in NAMES:
+                sh=shows.get(ALIAS[name])
+                if not sh or not sh.get('humor_index'): continue
+                for am in re.finditer(re.escape(name), low):
+                    tail=low[am.end():am.end()+60]
+                    nm=re.search(r'(\d{2}\.\d)', tail)
+                    if not nm: continue
+                    # don't read a neighbouring show's parenthesised score as this one's
+                    between=tail[:nm.start()]
+                    if any(o in between for o in NAMES if o!=name): continue
+                    if any(w in between for w in SKIP): continue
+                    claimed=float(nm.group(1))
+                    if not (60.0 <= claimed <= 100.0): continue
+                    checked+=1
+                    if abs(claimed-sh['humor_index'])>0.05:
+                        bad.append(f"#{n}: Humor Index for {sh['name']} claimed {claimed}, data says {sh['humor_index']}")
 
     # "#N OF M,MMM <SHOW> JOKES" in the popup subtitle — always this video's show
     mm=re.search(r'OF\s+([\d,]+)',v['popup_sub'])

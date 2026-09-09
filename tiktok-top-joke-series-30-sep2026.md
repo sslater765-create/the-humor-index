@@ -133,18 +133,18 @@ We posted "no soup for you" as the #1 back in May. Then we rescored every show o
 **Score popup:**
 
 - Big: **CRAFT 9.22 / IMPACT 9.75**
-- Sub: #1 OF 9,873 PARKS & REC JOKES
+- Sub: #1 OF 9,757 PARKS & REC JOKES
 - Caption burned in: "DUKE SILVER"
 
 **End card:**
 
-Parks & Rec has 126 episodes and 9,873 jokes. The highest-scored one has no punchline. It's a saxophone.
+Parks & Rec has 126 episodes and 9,757 jokes. The highest-scored one has no punchline. It's a saxophone.
 
 **Ron > Leslie. Again.** Fight me.
 
 **Caption:**
 
-parks & rec has 9,873 jokes. our AI scored all of them. the #1 isn't a line. it's a man playing smooth jazz under a fake name.
+parks & rec has 9,757 jokes. our AI scored all of them. the #1 isn't a line. it's a man playing smooth jazz under a fake name.
 
 bacon and eggs is #9 now.
 
@@ -169,26 +169,26 @@ Bacon and eggs dropped after the August rescore. Skim milk is the top actual lin
 **Score popup:**
 
 - Big: **CRAFT 9.38 / IMPACT 9.75**
-- Sub: #1 OF 11,387 30 ROCK JOKES
+- Sub: #1 OF 11,288 30 ROCK JOKES
 - Caption burned in: "HE'S GONNA JACK!"
 
 **End card:**
 
-30 Rock scores 97.4 on the Humor Index. That's the highest of any show we've done. This is its best joke.
+30 Rock scores 97.5 on the Humor Index. That's the highest of any show we've done. This is its best joke.
 
 **30 Rock > The Office. It's not close.** Fight me.
 
 **Caption:**
 
-30 rock is the highest-rated sitcom in our entire dataset. 97.4. higher than seinfeld, higher than arrested development.
+30 rock is the highest-rated sitcom in our entire dataset. 97.5. higher than seinfeld, higher than arrested development.
 
-this is its #1 joke out of 11,387.
+this is its #1 joke out of 11,288.
 
 #30rock #jackdonaghy #alecbaldwin #tinafey #sitcom
 
 **Pinned comment:**
 
-Yes, 30 Rock beat Seinfeld (94.5), Arrested Development (95.0) and Veep (95.1). 3.53 jokes per minute for seven seasons is what does it. Reply with your favorite episode and I'll give you its score.
+Yes, 30 Rock beat Seinfeld (94.4), Arrested Development (94.9) and Veep (95.1). 3.53 jokes per minute for seven seasons is what does it. Reply with your favorite episode and I'll give you its score.
 
 ---
 
@@ -250,13 +250,13 @@ Chappelle's Show holds #2 and #3 in the whole dataset (9.85 and 9.83), then Sein
 
 **End card:**
 
-Friends has 236 episodes and 14,288 jokes. The top three are all the same wedding. This is #4.
+Friends has 236 episodes and 14,146 jokes. The top three are all the same wedding. This is #4.
 
 **Phoebe was the funniest one.** Fight me.
 
 **Caption:**
 
-friends has 14,288 jokes. the three highest-scored are all ross saying the wrong name at his wedding.
+friends has 14,146 jokes. the three highest-scored are all ross saying the wrong name at his wedding.
 
 this is what wins if you throw those out. phoebe. obviously.
 
@@ -378,7 +378,7 @@ the #1 is not steamed hams. steamed hams is a 9.00 and it's fourth.
 
 **Pinned comment:**
 
-Steamed Hams gets its own video Oct 7, I'm not burying it. The Simpsons peaks at season 6 (82.6) and never gets back above 79 after season 9. Reply with an episode and I'll give you the score.
+Steamed Hams gets its own video Oct 7, I'm not burying it. The Simpsons peaks at season 6 (82.5) and never gets back above 79 after season 9. Reply with an episode and I'll give you the score.
 
 ---
 
@@ -446,7 +446,7 @@ Veep scores 95.1. Third-highest show in our entire dataset. Higher than Seinfeld
 
 **Caption:**
 
-veep is the 3rd highest-rated show we've scored. 95.1. it beats seinfeld (94.5) and edges arrested development (95.0).
+veep is the 3rd highest-rated show we've scored. 95.1. it beats seinfeld (94.4) and edges arrested development (94.9).
 
 only 30 rock and fleabag are ahead of it.
 
@@ -552,13 +552,13 @@ For the record: Curb also has the lowest joke density of anything we've scored, 
 
 **End card:**
 
-12 episodes. 813 jokes. Fleabag scores 95.8, second-highest show in our whole dataset.
+12 episodes. 813 jokes. Fleabag scores 95.6, second-highest show in our whole dataset.
 
 **Two seasons was enough.** Fight me.
 
 **Caption:**
 
-fleabag is 12 episodes long. it scores 95.8, second only to 30 rock across everything we've done.
+fleabag is 12 episodes long. it scores 95.6, second only to 30 rock across everything we've done.
 
 the highest-scored line is the first line of the series and i cannot post it here.
 
@@ -590,13 +590,13 @@ the highest-scored line is the first line of the series and i cannot post it her
 
 **End card:**
 
-Chappelle's Show ran 27 episodes. It scores 95.0, tied with Arrested Development.
+Chappelle's Show ran 27 episodes. It scores 94.5, just behind Arrested Development (94.9).
 
 **27 episodes, top 5 all-time.** Fight me.
 
 **Caption:**
 
-chappelle's show ran for 27 episodes and scores 95.0 on our index. tied with arrested development. ahead of seinfeld.
+chappelle's show ran for 27 episodes and scores 94.5 on our index. just behind arrested development. level with seinfeld.
 
 this line is the highest-scored catchphrase we have ever recorded.
 
@@ -767,18 +767,18 @@ The actual #1 is a 9.17 from "Bobby's Acting Career" in Season 1. I picked this 
 **Score popup:**
 
 - Big: **CRAFT 8.68 / IMPACT 9.17**
-- Sub: #1 OF 8,222 FRESH PRINCE JOKES
+- Sub: #1 OF 8,175 FRESH PRINCE JOKES
 - Caption burned in: "I'M BLACK?"
 
 **End card:**
 
-The Fresh Prince has 148 episodes and 8,222 jokes. The highest-scored one is two words from Carlton.
+The Fresh Prince has 148 episodes and 8,175 jokes. The highest-scored one is two words from Carlton.
 
 **Carlton was funnier than Will.** Fight me.
 
 **Caption:**
 
-fresh prince has 8,222 jokes. our AI scored all of them.
+fresh prince has 8,175 jokes. our AI scored all of them.
 
 the #1 belongs to carlton. two words.
 
@@ -822,7 +822,7 @@ apatow, feig, franco, rogen, segel. all of them, in one cancelled show.
 
 **Pinned comment:**
 
-80.0 on 18 episodes. For reference The Office is 79.4 on 201. Best episode in the data is "Dead Dogs and Gym Teachers" at 84.8. Reply if you want a specific episode scored.
+80.0 on 18 episodes. For reference The Office is 88.0 on 201. Best episode in the data is "Dead Dogs and Gym Teachers" at 84.8. Reply if you want a specific episode scored.
 
 ---
 
@@ -917,7 +917,7 @@ The Contest's top joke is a 9.53, eighth overall. Season 9 is Seinfeld's highest
 **Score popup:**
 
 - Big: **CRAFT 9.40 / QUOT 10.0**
-- Sub: #2 OF 11,387 30 ROCK JOKES
+- Sub: #2 OF 11,288 30 ROCK JOKES
 - Caption burned in: "LIVE EVERY WEEK LIKE IT'S SHARK WEEK"
 
 **End card:**
@@ -953,7 +953,7 @@ Tracy has three of 30 Rock's top ten jokes. Jenna has two. Liz is in two of them
 **Score popup:**
 
 - Big: **CRAFT 9.42 / QUOT 10.0**
-- Sub: #2 OF 9,873 — HIGHEST-SCORED PARKS LINE
+- Sub: #2 OF 9,757 — HIGHEST-SCORED PARKS LINE
 - Caption burned in: "SKIM MILK. WHICH IS WATER THAT'S LYING ABOUT BEING MILK."
 
 **End card:**
@@ -1025,7 +1025,7 @@ Ranks 1 through 5: the loose seal tag (9.88), "I'm your father, Steve Holt" (9.5
 **Score popup:**
 
 - Big: **CRAFT 8.82 / IMPACT 9.50**
-- Sub: #5 OF 14,288 FRIENDS JOKES
+- Sub: #5 OF 14,146 FRIENDS JOKES
 - Caption burned in: "I WAS THE PILE OF COATS!"
 
 **End card:**
