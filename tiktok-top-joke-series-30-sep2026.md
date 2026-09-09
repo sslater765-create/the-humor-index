@@ -169,7 +169,7 @@ Bacon and eggs dropped after the August rescore. Skim milk is the top actual lin
 **Score popup:**
 
 - Big: **CRAFT 9.38 / IMPACT 9.75**
-- Sub: #1 OF 11,421 30 ROCK JOKES
+- Sub: #1 OF 11,387 30 ROCK JOKES
 - Caption burned in: "HE'S GONNA JACK!"
 
 **End card:**
@@ -182,13 +182,13 @@ Bacon and eggs dropped after the August rescore. Skim milk is the top actual lin
 
 30 rock is the highest-rated sitcom in our entire dataset. 97.4. higher than seinfeld, higher than arrested development.
 
-this is its #1 joke out of 11,421.
+this is its #1 joke out of 11,387.
 
 #30rock #jackdonaghy #alecbaldwin #tinafey #sitcom
 
 **Pinned comment:**
 
-Yes, 30 Rock beat Seinfeld (94.5), Arrested Development (95.0) and Veep (95.1). 3.52 jokes per minute for seven seasons is what does it. Reply with your favorite episode and I'll give you its score.
+Yes, 30 Rock beat Seinfeld (94.5), Arrested Development (95.0) and Veep (95.1). 3.53 jokes per minute for seven seasons is what does it. Reply with your favorite episode and I'll give you its score.
 
 ---
 
@@ -917,7 +917,7 @@ The Contest's top joke is a 9.53, eighth overall. Season 9 is Seinfeld's highest
 **Score popup:**
 
 - Big: **CRAFT 9.40 / QUOT 10.0**
-- Sub: #2 OF 11,421 30 ROCK JOKES
+- Sub: #2 OF 11,387 30 ROCK JOKES
 - Caption burned in: "LIVE EVERY WEEK LIKE IT'S SHARK WEEK"
 
 **End card:**
