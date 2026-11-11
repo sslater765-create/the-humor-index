@@ -100,6 +100,38 @@ const nextConfig = {
       destination: '/blog/',
       permanent: true,
     },
+    // Retired 2026-11-10: posts about shows still on pre-2026 scores, or built on
+    // numbers the rescore replaced. Text is kept in git history for republishing.
+    {
+      source: '/blog/futurama-launch',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/the-simpsons-all-20-seasons',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/fresh-prince-geoffrey-butler',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/sunny-renaissance',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/war-reconciliation',
+      destination: '/blog/',
+      permanent: true,
+    },
+    {
+      source: '/blog/character-comedy-spectrum',
+      destination: '/blog/',
+      permanent: true,
+    },
   ],
   headers: async () => [
     {

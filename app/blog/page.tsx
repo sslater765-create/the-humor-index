@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { SITE_URL } from '@/lib/site';
+import { POSTS as POST_DATA } from './posts';
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr + 'T00:00:00');
@@ -28,130 +29,31 @@ const CATEGORY_ACCENTS: Record<string, string> = {
   'Analysis': 'text-purple-400',
 };
 
-// Blog posts are defined here — add new posts as objects
-// In the future, this could pull from a CMS or markdown files
-const POSTS = [
-  {
-    slug: 'density-vs-craft',
-    title: "Two Shows Tell Exactly the Same Number of Jokes Per Minute. One Scores 16 Points Higher.",
-    description: "Fleabag and The Simpsons both average 3.46 jokes per minute \u2014 and sit 16.8 Humor Index points apart. Across our canonically-scored shows craft predicts 91% of the score, density 8%, and the two barely correlate. Volume is the cheap lever.",
-    date: '2026-08-19',
-    category: 'Data Science',
-    readTime: '6 min read',
-    stat: "16.8",
-    statLabel: "HI gap at identical joke density",
-  },
-  {
-    slug: 'futurama-launch',
-    title: "Futurama Out-Scores the Show It Roasted",
-    description: "137 episodes, 1999–2025, 8,900 jokes. Futurama lands at 77.8 (#18 of 21) — and the Hulu revival nearly held its per-joke quality (craft 6.80 vs 6.85). It has the highest joke density on the board and still finishes lower-table, which tells you what the index actually rewards.",
-    date: '2026-06-14',
-    category: 'Show Launch',
-    readTime: '4 min read',
-    stat: "77.8",
-    statLabel: "Futurama Humor Index (#18)",
-  },
-  {
-    slug: 'the-simpsons-all-20-seasons',
-    title: "We Scored All 20 Seasons of The Simpsons. The Golden Age Is Real — and the Decline Is Smaller Than You Think.",
-    description: "All 441 episodes and 28,170 jokes, scored. The golden age is statistically real — Season 6 peaks at 82.5 — but the post-classic decline is gentler than the memes: seasons 11–20 never drop below 77.6, and the single highest-scoring episode is from Season 16.",
-    date: '2026-06-09',
-    category: 'Analysis',
-    readTime: '7 min read',
-    stat: "82.5",
-    statLabel: "Season 6 — the peak season",
-  },
-  {
-    slug: 'fresh-prince-geoffrey-butler',
-    title: "The Funniest Person in the Fresh Prince Mansion Is the Butler",
-    description: "We scored all 148 episodes of The Fresh Prince of Bel-Air. Will Smith leads the cast in total Comedy WAR — but only because he says three times as many jokes as anyone else. Per joke, the funniest Banks-household voice is Geoffrey, the butler with under four lines an episode and the sharpest one in the room.",
-    date: '2026-06-07',
-    category: 'Analysis',
-    readTime: '8 min read',
-    stat: "+0.30",
-    statLabel: "Geoffrey's vs-castmates edge (best in cast)",
-  },
-  {
-    slug: 'sunny-renaissance',
-    title: "It's Always Sunny Is Better Now Than It Was in 2010 — the Data Says So",
-    description: "Fan consensus says peak Sunny is the original FX run. The Humor Index disagrees. We scored all 177 episodes across 17 seasons; the last five (S13–S17) outscore the first seven (S1–S7) by 3.1 points. Sunny didn't decline. It got meaner — and the dialogue craft followed.",
-    date: '2026-05-31',
-    category: 'Analysis',
-    readTime: '8 min read',
-    stat: '+3.1',
-    statLabel: 'S13–S17 vs S1–S7 (HI points)',
-  },
-  {
-    slug: 'character-comedy-spectrum',
-    title: "Modern Sitcoms Are More Character-Driven Than the Classics",
-    description: "Across the 18 shows we've tagged by joke type, character_comedy is the most variable axis in our taxonomy — a 47-point spread. Schitt's Creek tells more character-driven jokes than Seinfeld. By a factor of nearly three.",
-    date: '2026-05-03',
-    category: 'Data Science',
-    readTime: '7 min read',
-    stat: "69.1%",
-    statLabel: "Schitt's character comedy share",
-  },
-  {
-    slug: 'scorer-noise-floor',
-    title: 'We Rescored 30 Episodes Twice. Our Single-Run Humor Index Has an ICC of 0.28.',
-    description: 'A test-retest study on 30 episodes. Show-identity bias is tiny (not significant). But the scorer is noisier than we thought — individual episode Humor Indexes are only 28% signal, 72% run-to-run variance. Here\'s what we\'re doing about it.',
-    date: '2026-04-17',
-    category: 'Data Science',
-    readTime: '9 min read',
-    stat: 'ICC 0.28',
-    statLabel: 'Single-run reliability',
-  },
-  {
-    slug: 'bayesian-credible-intervals',
-    title: 'We Fitted a Bayesian Model to 15,000 Jokes. Format Explains Nothing.',
-    description: 'A hierarchical Bayesian model of joke impact on 15,000 jokes. Format effect: indistinguishable from zero — which is why the multi-cam penalty is gone. 64% of joke-level variance is unexplained noise, and show identity explains only 7.9%.',
-    date: '2026-04-17',
-    category: 'Data Science',
-    readTime: '8 min read',
-    stat: '7.9%',
-    statLabel: 'Variance between shows',
-  },
-  {
-    slug: 'imdb-vs-humor-index',
-    title: 'IMDb Ratings vs. The Humor Index: Does "Funny" Mean "Good"?',
-    description: 'We compared 2,649 episodes across all 21 scored shows against IMDb. Within-show correlation: r = +0.18 — audience ratings explain about 3% of the variance in comedy craft.',
-    date: '2026-04-12',
-    category: 'Data Science',
-    readTime: '7 min read',
-    stat: 'r = +0.18',
-    statLabel: 'Within-show correlation',
-  },
-  {
-    slug: 'is-the-office-actually-funny',
-    title: 'Is The Office Actually Funny? We Analyzed Every Joke to Find Out.',
-    description: 'We ran all 183 episodes of The Office through our AI comedy analyst. Season 4 averages 83.8 and "Dinner Party" tops the series at 98.0 — the fan consensus holds up.',
-    date: '2026-04-10',
-    category: 'Deep Dive',
-    readTime: '8 min read',
-    stat: '183',
-    statLabel: 'Episodes Analyzed',
-  },
-  {
-    slug: 'how-we-score-comedy',
-    title: 'How We Score Comedy: The Math Behind the Humor Index',
-    description: 'Peak density, effective craft, memorability bonus — here\'s the complete breakdown of how we turn thousands of joke scores into a single number.',
-    date: '2026-04-10',
-    category: 'Methodology',
-    readTime: '6 min read',
-    stat: '5',
-    statLabel: 'Dimensions',
-  },
-  {
-    slug: 'laugh-track-penalty',
-    title: 'Should Laugh Tracks Be Penalized? Our Data Says Yes.',
-    description: 'Our original April 10 argument for a laugh-track penalty — and why we removed it a week later when a Bayesian audit showed the effect was indistinguishable from zero.',
-    date: '2026-04-10',
-    category: 'Analysis',
-    readTime: '5 min read',
-    stat: 'Retracted',
-    statLabel: 'See update note in post',
-  },
-];
+// Title, description, date and category come from posts.ts, so the index
+// cannot drift from the posts themselves. Only the card extras live here.
+// A post missing from CARDS still renders, with default extras.
+const CARDS: Record<string, { readTime: string; stat: string; statLabel: string }> = {
+  'density-vs-craft': { readTime: '5 min read', stat: '10.6', statLabel: 'HI gap at the same joke density' },
+  'scorer-noise-floor': { readTime: '9 min read', stat: 'ICC 0.28', statLabel: 'Single-run reliability' },
+  'bayesian-credible-intervals': { readTime: '8 min read', stat: '7.9%', statLabel: 'Variance between shows' },
+  'imdb-vs-humor-index': { readTime: '7 min read', stat: 'r = +0.27', statLabel: 'Within-show correlation' },
+  'is-the-office-actually-funny': { readTime: '5 min read', stat: '183', statLabel: 'Episodes Analyzed' },
+  'how-we-score-comedy': { readTime: '3 min read', stat: '5', statLabel: 'Dimensions' },
+  'laugh-track-penalty': { readTime: '3 min read', stat: 'Retracted', statLabel: 'See update note in post' },
+};
+
+const POSTS = Object.entries(POST_DATA)
+  .map(([slug, post]) => ({
+    slug,
+    title: post.title,
+    description: post.description,
+    date: post.date,
+    category: post.category,
+    readTime: CARDS[slug]?.readTime ?? '5 min read',
+    stat: CARDS[slug]?.stat ?? '',
+    statLabel: CARDS[slug]?.statLabel ?? '',
+  }))
+  .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
 
 export default function BlogPage() {
   const [hero, ...rest] = POSTS;
@@ -165,8 +67,7 @@ export default function BlogPage() {
             The dispatches.
           </h1>
           <p className="text-base sm:text-lg text-brand-text-secondary max-w-2xl leading-relaxed">
-            Deep dives, methodology updates, fan-theory autopsies, and show-launch analyses —
-            every post backed by the same data that powers the index.
+            Deep dives and methodology audits, every post backed by the same data that powers the index.
           </p>
         </div>
       </section>
@@ -219,7 +120,7 @@ export default function BlogPage() {
             Every post on the index.
           </h2>
           <p className="text-sm text-brand-text-secondary max-w-xl mb-8">
-            {rest.length} more dispatches — show launches, methodology audits, leaderboards, retractions, the lot.
+            {rest.length} more dispatches: deep dives, methodology audits and one retraction.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
