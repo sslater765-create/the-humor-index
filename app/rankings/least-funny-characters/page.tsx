@@ -5,6 +5,8 @@ import SocialShare from '@/components/ui/SocialShare';
 import LeastFunnyClient from './LeastFunnyClient';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import { SITE_URL } from '@/lib/site';
+import { rankable } from '@/lib/scale';
+import ScaleNote from '@/components/ui/ScaleNote';
 
 export const dynamic = 'force-static';
 
@@ -47,7 +49,7 @@ interface BottomCharacter {
 }
 
 export default async function LeastFunnyCharactersPage() {
-  const shows = await getAllShows();
+  const shows = rankable(await getAllShows());
   const all: BottomCharacter[] = [];
 
   for (const show of shows) {
@@ -175,6 +177,8 @@ export default async function LeastFunnyCharactersPage() {
             to the show.
           </p>
         </div>
+        <ScaleNote bare />
+
 
         <LeastFunnyClient characters={ranked} />
 

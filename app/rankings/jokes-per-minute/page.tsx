@@ -4,6 +4,8 @@ import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import { SITE_URL } from '@/lib/site';
+import { rankable } from '@/lib/scale';
+import ScaleNote from '@/components/ui/ScaleNote';
 
 export const dynamic = 'force-static';
 
@@ -22,7 +24,7 @@ export const metadata = {
 };
 
 export default async function JokesPerMinutePage() {
-  const shows = (await getAllShows())
+  const shows = (rankable(await getAllShows()))
     .filter(s => (s.humor_index || 0) > 0 && (s.avg_jpm || 0) > 0)
     .sort((a, b) => (b.avg_jpm || 0) - (a.avg_jpm || 0));
 
@@ -90,6 +92,7 @@ export default async function JokesPerMinutePage() {
         title="Jokes Per Minute, Ranked"
         subtitle="Which sitcom packs the most jokes into every minute? We scored every joke across 9 shows and measured the density. Here's the ranking."
       />
+      <ScaleNote />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-6">

@@ -5,6 +5,8 @@ import SocialShare from '@/components/ui/SocialShare';
 import EpisodesClient, { type RankedEpisode } from '../funniest-episodes/EpisodesClient';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import { SITE_URL } from '@/lib/site';
+import { rankable } from '@/lib/scale';
+import ScaleNote from '@/components/ui/ScaleNote';
 
 export const dynamic = 'force-static';
 
@@ -23,7 +25,7 @@ export const metadata = {
 };
 
 export default async function WorstEpisodesPage() {
-  const shows = await getAllShows();
+  const shows = rankable(await getAllShows());
 
   const allEpisodes: RankedEpisode[] = [];
   for (const show of shows) {
@@ -112,6 +114,7 @@ export default async function WorstEpisodesPage() {
         title="The Worst Sitcom Episodes of All Time"
         subtitle="The episodes that scored below the bottom-quartile floor — plus every show's individual lowest. Ranked by data, not spite."
       />
+      <ScaleNote />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-6">

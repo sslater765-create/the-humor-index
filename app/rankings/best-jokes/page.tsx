@@ -4,6 +4,8 @@ import SocialShare from '@/components/ui/SocialShare';
 import BestJokesClient, { RankedJoke } from './BestJokesClient';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import { SITE_URL } from '@/lib/site';
+import { rankable } from '@/lib/scale';
+import ScaleNote from '@/components/ui/ScaleNote';
 
 export const dynamic = 'force-static';
 
@@ -22,7 +24,7 @@ export const metadata = {
 };
 
 export default async function BestJokesPage() {
-  const shows = await getAllShows();
+  const shows = rankable(await getAllShows());
 
   const allJokes: RankedJoke[] = [];
   for (const show of shows) {
@@ -79,6 +81,7 @@ export default async function BestJokesPage() {
         title="The Best Sitcom Jokes Ever Written"
         subtitle="Scored by AI on craft, impact, and quotability. The cream of the crop."
       />
+      <ScaleNote />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-6">

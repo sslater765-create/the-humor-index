@@ -250,13 +250,13 @@ Chappelle's Show holds #2 and #3 in the whole dataset (9.85 and 9.83), then Sein
 
 **End card:**
 
-Friends has 236 episodes and 14,146 jokes. The top three are all the same wedding. This is #4.
+Friends has 236 episodes and 13,949 jokes. The top three are all the same wedding. This is #4.
 
 **Phoebe was the funniest one.** Fight me.
 
 **Caption:**
 
-friends has 14,146 jokes. the three highest-scored are all ross saying the wrong name at his wedding.
+friends has 13,949 jokes. the three highest-scored are all ross saying the wrong name at his wedding.
 
 this is what wins if you throw those out. phoebe. obviously.
 
@@ -264,7 +264,7 @@ this is what wins if you throw those out. phoebe. obviously.
 
 **Pinned comment:**
 
-Friends also has the lowest show score of the 21 we've done: 73.2. High joke count, lower average craft. Say what you want in the replies, I'll give you the number for any moment you name.
+Friends also has the lowest show score of the 21 we've done: 73.0. High joke count, lower average craft. Say what you want in the replies, I'll give you the number for any moment you name.
 
 ---
 
@@ -1025,7 +1025,7 @@ Ranks 1 through 5: the loose seal tag (9.88), "I'm your father, Steve Holt" (9.5
 **Score popup:**
 
 - Big: **CRAFT 8.82 / IMPACT 9.50**
-- Sub: #5 OF 14,146 FRIENDS JOKES
+- Sub: #5 OF 13,949 FRIENDS JOKES
 - Caption burned in: "I WAS THE PILE OF COATS!"
 
 **End card:**

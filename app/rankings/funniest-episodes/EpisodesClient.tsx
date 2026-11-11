@@ -2,7 +2,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { formatIndex } from '@/lib/scoring';
+import { formatIndex, byHumorIndexDesc } from '@/lib/scoring';
 import type { ShowFormat } from '@/lib/types';
 
 const FORMAT_LABELS: Record<'all' | ShowFormat, string> = {
@@ -51,7 +51,7 @@ export default function EpisodesClient({ episodes, ascending = false }: { episod
     let list = episodes;
     if (format !== 'all') list = list.filter(e => e.showFormat === format);
     if (showSlug !== 'all') list = list.filter(e => e.showSlug === showSlug);
-    return [...list].sort((a, b) => ascending ? a.humor_index - b.humor_index : b.humor_index - a.humor_index).slice(0, 50);
+    return [...list].sort((a, b) => ascending ? byHumorIndexDesc(b, a) : byHumorIndexDesc(a, b)).slice(0, 50);
   }, [episodes, format, showSlug, ascending]);
 
   return (

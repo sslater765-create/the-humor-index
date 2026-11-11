@@ -5,6 +5,8 @@ import SocialShare from '@/components/ui/SocialShare';
 import CharactersClient, { type WarCharacter } from './CharactersClient';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import { SITE_URL } from '@/lib/site';
+import { rankable } from '@/lib/scale';
+import ScaleNote from '@/components/ui/ScaleNote';
 
 export const dynamic = 'force-static';
 
@@ -23,7 +25,7 @@ export const metadata = {
 };
 
 export default async function FunniestCharactersPage() {
-  const shows = await getAllShows();
+  const shows = rankable(await getAllShows());
 
   // Pull characters from the canonical characters.json — pre-cleaned and de-duped at generation time
   const warChars: WarCharacter[] = [];
@@ -75,6 +77,8 @@ export default async function FunniestCharactersPage() {
             url="/rankings/funniest-characters"
           />
         </div>
+
+        <ScaleNote bare />
 
         {warChars.length > 0 ? (
           <CharactersClient characters={warChars} />

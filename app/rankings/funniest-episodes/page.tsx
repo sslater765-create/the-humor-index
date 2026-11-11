@@ -5,6 +5,9 @@ import SocialShare from '@/components/ui/SocialShare';
 import EpisodesClient, { type RankedEpisode } from './EpisodesClient';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import { SITE_URL } from '@/lib/site';
+import { rankable } from '@/lib/scale';
+import ScaleNote from '@/components/ui/ScaleNote';
+import { byHumorIndexDesc } from '@/lib/scoring';
 
 export const dynamic = 'force-static';
 
@@ -23,7 +26,7 @@ export const metadata = {
 };
 
 export default async function FunniestEpisodesPage() {
-  const shows = await getAllShows();
+  const shows = rankable(await getAllShows());
 
   const allEpisodes: RankedEpisode[] = [];
   for (const show of shows) {
@@ -54,7 +57,7 @@ export default async function FunniestEpisodesPage() {
     }
   }
 
-  const ranked = [...allEpisodes].sort((a, b) => b.humor_index - a.humor_index).slice(0, 50);
+  const ranked = [...allEpisodes].sort(byHumorIndexDesc).slice(0, 50);
 
   // Client pool = global top 50 + every show's top 10, deduped. The dropdown
   // derives its options from this pool, so every scored show is selectable —
@@ -69,7 +72,7 @@ export default async function FunniestEpisodesPage() {
     byShow.set(ep.showSlug, arr);
   }
   for (const arr of Array.from(byShow.values())) {
-    arr.sort((a, b) => b.humor_index - a.humor_index);
+    arr.sort(byHumorIndexDesc);
     for (const ep of arr.slice(0, 10)) {
       const key = `${ep.showSlug}-${ep.season}-${ep.episode_number}`;
       if (!seen.has(key)) {
@@ -116,6 +119,7 @@ export default async function FunniestEpisodesPage() {
         title="The Funniest Sitcom Episodes of All Time"
         subtitle="Every joke analyzed. Every episode ranked. No opinions — just data."
       />
+      <ScaleNote />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-6">

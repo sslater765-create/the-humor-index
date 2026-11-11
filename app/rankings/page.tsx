@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import { getAllShows, getEpisodes, getEpisodeDetail, getCharacters, getSearchableJokeCount } from '@/lib/data';
-import { formatIndex, scoreToGrade, scoreToColor } from '@/lib/scoring';
+import { formatIndex, scoreToGrade, scoreToColor, byHumorIndexDesc } from '@/lib/scoring';
 import PageHeader from '@/components/layout/PageHeader';
 
 import BestJokeRotator from "@/components/ui/BestJokeRotator";
 import topJokes from "@/public/data/top-jokes.json";
 import { SITE_URL } from '@/lib/site';
 import { charImageSrc } from '@/lib/charImage';
+import { rankable, isAwaitingRescore } from '@/lib/scale';
+import ScaleNote from '@/components/ui/ScaleNote';
 export const dynamic = 'force-static';
 
 export const metadata = {
@@ -25,6 +27,9 @@ interface RankedEpisode {
   episode_number: number;
   title: string;
   humor_index: number;
+  avg_craft: number;
+  avg_impact: number;
+  jpm: number;
   total_jokes: number;
 }
 
@@ -53,7 +58,8 @@ interface TopCharacter {
 
 export default async function RankingsPage() {
   const shows = await getAllShows();
-  const analyzedShows = shows.filter(s => s.humor_index > 0);
+  // Cross-show rankings only cover shows on the current scoring scale.
+  const analyzedShows = rankable(shows);
   const searchableJokes = await getSearchableJokeCount();
   const topJpmShows = [...analyzedShows].sort((a, b) => (b.avg_jpm || 0) - (a.avg_jpm || 0)).slice(0, 3);
 
@@ -75,6 +81,9 @@ export default async function RankingsPage() {
             episode_number: ep.episode_number,
             title: ep.title,
             humor_index: ep.humor_index,
+            avg_craft: ep.avg_craft,
+            avg_impact: ep.avg_impact,
+            jpm: ep.jpm,
             total_jokes: ep.total_jokes,
           });
         }
@@ -111,7 +120,7 @@ export default async function RankingsPage() {
 
   // Top 3 episodes
   const topEpisodes = allEpisodes
-    .sort((a, b) => b.humor_index - a.humor_index)
+    .sort(byHumorIndexDesc)
     .slice(0, 3);
 
   // Hero data: the #1 episode's backdrop + its single best joke (for pull quote).
@@ -185,7 +194,7 @@ export default async function RankingsPage() {
 
   // Show matchup data — dynamic top-2 of the current leaderboard.
   // (Was hardcoded AD vs Parks; Parks isn't scored yet, so the card rendered empty.)
-  const sortedByHI = [...analyzedShows].sort((a, b) => b.humor_index - a.humor_index);
+  const sortedByHI = [...analyzedShows].sort(byHumorIndexDesc);
   const topShow = sortedByHI[0];
   const runnerUp = sortedByHI[1];
   const topGap = topShow && runnerUp
@@ -207,6 +216,7 @@ export default async function RankingsPage() {
         title="Comedy Rankings"
         subtitle={`${allEpisodes.length} episodes analyzed. ${totalJokesScored.toLocaleString()} jokes scored. No opinions — just data.`}
       />
+      <ScaleNote />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-5">
 
         {/* HERO — magazine-cover treatment for the #1 episode of all time. */}
@@ -309,7 +319,7 @@ export default async function RankingsPage() {
         </div>
 
         {/* BEST JOKE EVER — full-width pull-quote treatment, the page's editorial centerpiece */}
-        <BestJokeRotator topJokes={topJokes} />
+        <BestJokeRotator topJokes={topJokes.filter(j => !isAwaitingRescore(j.show_slug))} />
 
         {/* TWO-COLUMN: People (funniest + below cast) — character portraits make this section sing */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
