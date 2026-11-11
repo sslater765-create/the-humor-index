@@ -33,6 +33,18 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // cannot drift from the posts themselves. Only the card extras live here.
 // A post missing from CARDS still renders, with default extras.
 const CARDS: Record<string, { readTime: string; stat: string; statLabel: string }> = {
+  'chappelles-show-sketch-advantage': { readTime: '3 min read', stat: '7.70', statLabel: "Chappelle's Show per-joke impact" },
+  'most-quotable-show': { readTime: '3 min read', stat: '37.5%', statLabel: '30 Rock jokes rated 8+ for quotability' },
+  'most-consistent-show': { readTime: '3 min read', stat: '83.8', statLabel: 'Parks and Rec lowest episode of 122' },
+  'pilots-score-below-their-show': { readTime: '3 min read', stat: '8 of 13', statLabel: 'Pilots below their show average' },
+  'callbacks-score-higher': { readTime: '4 min read', stat: '22%', statLabel: 'Of all jokes are callbacks' },
+  'which-joke-types-score-highest': { readTime: '4 min read', stat: '7.75', statLabel: 'Impact of dark and subversive jokes' },
+  'after-the-creator-left': { readTime: '3 min read', stat: '+3.1', statLabel: 'Veep after Iannucci (HI points)' },
+  'the-office-after-michael': { readTime: '3 min read', stat: '87.0', statLabel: 'The Office without Michael' },
+  'what-the-rescore-changed': { readTime: '3 min read', stat: '+37%', statLabel: 'More jokes found on The Office' },
+  'first-season-is-the-worst': { readTime: '3 min read', stat: '7 of 10', statLabel: 'Shows whose first season is the lowest' },
+  'parks-improved-every-season': { readTime: '3 min read', stat: '7 for 7', statLabel: 'Seasons that beat the one before' },
+  'arrested-development-netflix-seasons': { readTime: '3 min read', stat: '−21%', statLabel: 'Jokes per minute, Netflix vs Fox' },
   'density-vs-craft': { readTime: '5 min read', stat: '10.6', statLabel: 'HI gap at the same joke density' },
   'scorer-noise-floor': { readTime: '9 min read', stat: 'ICC 0.28', statLabel: 'Single-run reliability' },
   'bayesian-credible-intervals': { readTime: '8 min read', stat: '7.9%', statLabel: 'Variance between shows' },

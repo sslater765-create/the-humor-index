@@ -14,7 +14,8 @@ interface NewItem {
 
 // These are the site's content items with their publish dates
 const ALL_ITEMS: NewItem[] = [
-  { href: '/blog/density-vs-craft', label: 'Latest Blog', labelColor: 'text-brand-gold', title: 'Two Shows Tell the Same Number of Jokes Per Minute. One Scores 10 Points Higher.', subtitle: 'Aug 19, 2026', date: '2026-08-19' },
+  { href: '/blog/chappelles-show-sketch-advantage', label: 'Latest Blog', labelColor: 'text-brand-gold', title: 'A Sketch Show Has Four of Our Five Top-Ranked Episodes', subtitle: 'Nov 11, 2026', date: '2026-11-11' },
+  { href: '/blog/density-vs-craft', label: 'Blog', labelColor: 'text-brand-gold', title: 'Two Shows Tell the Same Number of Jokes Per Minute. One Scores 10 Points Higher.', subtitle: 'Aug 19, 2026', date: '2026-08-19' },
   { href: '/shows/broad-city', label: 'Show Launch', labelColor: 'text-amber-400', title: 'Broad City', subtitle: 'Fully scored · Jun 17, 2026', date: '2026-06-17' },
   { href: '/shows/chappelles-show', label: 'Show Launch', labelColor: 'text-emerald-400', title: "Chappelle's Show", subtitle: 'Fully scored · Jun 10, 2026', date: '2026-06-10' },
   { href: '/shows/freaks-and-geeks', label: 'Show Launch', labelColor: 'text-emerald-400', title: 'Freaks and Geeks', subtitle: 'Fully scored · Jun 9, 2026', date: '2026-06-09' },
