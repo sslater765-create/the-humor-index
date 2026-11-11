@@ -119,7 +119,7 @@ export default async function FunniestEpisodesPage() {
         title="The Funniest Sitcom Episodes of All Time"
         subtitle="Every joke analyzed. Every episode ranked. No opinions — just data."
       />
-      <ScaleNote />
+      <ScaleNote narrow />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-6">

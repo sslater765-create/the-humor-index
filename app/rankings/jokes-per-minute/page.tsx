@@ -92,7 +92,7 @@ export default async function JokesPerMinutePage() {
         title="Jokes Per Minute, Ranked"
         subtitle="Which sitcom packs the most jokes into every minute? We scored every joke across 9 shows and measured the density. Here's the ranking."
       />
-      <ScaleNote />
+      <ScaleNote narrow />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-6">

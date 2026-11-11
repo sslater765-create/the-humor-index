@@ -81,7 +81,7 @@ export default async function BestJokesPage() {
         title="The Best Sitcom Jokes Ever Written"
         subtitle="Scored by AI on craft, impact, and quotability. The cream of the crop."
       />
-      <ScaleNote />
+      <ScaleNote narrow />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-6">

@@ -114,7 +114,7 @@ export default async function WorstEpisodesPage() {
         title="The Worst Sitcom Episodes of All Time"
         subtitle="The episodes that scored below the bottom-quartile floor — plus every show's individual lowest. Ranked by data, not spite."
       />
-      <ScaleNote />
+      <ScaleNote narrow />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-6">

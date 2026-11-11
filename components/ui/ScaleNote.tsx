@@ -6,7 +6,7 @@ import { AWAITING_RESCORE } from '@/lib/scale';
  * shows on the current scoring model; this says so and disappears on its own
  * once lib/scale.ts lists no shows awaiting a rescore.
  */
-export default function ScaleNote({ bare = false }: { bare?: boolean }) {
+export default function ScaleNote({ bare = false, narrow = false }: { bare?: boolean; narrow?: boolean }) {
   const n = AWAITING_RESCORE.size;
   if (n === 0) return null;
   const note = (
@@ -16,5 +16,6 @@ export default function ScaleNote({ bare = false }: { bare?: boolean }) {
       <Link href="/methodology" className="text-brand-gold hover:underline">How we score →</Link>
     </p>
   );
-  return bare ? note : <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6">{note}</div>;
+  // `narrow` matches pages whose content column is max-w-4xl.
+  return bare ? note : <div className={`${narrow ? 'max-w-4xl' : 'max-w-7xl'} mx-auto px-4 sm:px-6 pt-6`}>{note}</div>;
 }
