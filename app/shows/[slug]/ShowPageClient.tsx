@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { ShowScore, SeasonScore, EpisodeScore, CharacterStats, CharacterProfile, JokeType } from '@/lib/types';
-import { JOKE_TYPE_LABELS } from '@/lib/scoring';
+import { JOKE_TYPE_LABELS, byHumorIndexDesc } from '@/lib/scoring';
 // DNA data now passed as prop from server component
 import Link from 'next/link';
 import TabBar from '@/components/ui/TabBar';
@@ -61,7 +61,7 @@ export default function ShowPageClient({ show, seasons, episodes: rawEpisodes, c
       case 'craft': return filtered.sort((a, b) => b.avg_craft - a.avg_craft);
       case 'imdb': return filtered.sort((a, b) => (b.imdb_rating || 0) - (a.imdb_rating || 0));
       case 'airdate': return filtered.sort((a, b) => a.season - b.season || a.episode_number - b.episode_number);
-      default: return filtered.sort((a, b) => b.humor_index - a.humor_index);
+      default: return filtered.sort(byHumorIndexDesc);
     }
   })();
 
@@ -77,7 +77,7 @@ export default function ShowPageClient({ show, seasons, episodes: rawEpisodes, c
 
       {/* Overview Tab */}
       {activeTab === 'overview' && (() => {
-        const top5 = [...episodes].sort((a, b) => b.humor_index - a.humor_index).slice(0, 5);
+        const top5 = [...episodes].sort(byHumorIndexDesc).slice(0, 5);
         const bottom3 = [...episodes].sort((a, b) => a.humor_index - b.humor_index).slice(0, 3);
         const avgIndex = episodes.length > 0
           ? episodes.reduce((sum, e) => sum + e.humor_index, 0) / episodes.length

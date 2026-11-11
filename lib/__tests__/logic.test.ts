@@ -35,14 +35,21 @@ describe('scoring display helpers', () => {
 });
 
 describe('tiers', () => {
-  it('assigns tiers at the band boundaries', () => {
-    expect(getTier(84.4).key).toBe('elite');
-    expect(getTier(78).key).toBe('elite');     // min inclusive
-    expect(getTier(77.9).key).toBe('great');
-    expect(getTier(73.3).key).toBe('solid');   // Friends
-    expect(getTier(70.4).key).toBe('solid');   // Freaks and Geeks
-    expect(getTier(66).key).toBe('mixed');
-    expect(getTier(64).key).toBe('weak');
+  it('assigns current-scale tiers at the band boundaries', () => {
+    expect(getTier(97.5).key).toBe('elite');
+    expect(getTier(97).key).toBe('elite');     // min inclusive
+    expect(getTier(96.9).key).toBe('great');
+    expect(getTier(88).key).toBe('solid');     // The Office
+    expect(getTier(86.8).key).toBe('mixed');
+    expect(getTier(81.9).key).toBe('weak');
+  });
+  it('keeps the April thresholds for shows awaiting a rescore', () => {
+    expect(getTier(84.4, 'legacy').key).toBe('elite');
+    expect(getTier(78, 'legacy').key).toBe('elite');     // min inclusive
+    expect(getTier(77.9, 'legacy').key).toBe('great');
+    expect(getTier(73.0, 'legacy').key).toBe('solid');   // Friends
+    expect(getTier(66, 'legacy').key).toBe('mixed');
+    expect(getTier(64, 'legacy').key).toBe('weak');
   });
   it('treats null/NaN as the weakest tier (never throws)', () => {
     expect(getTier(null).key).toBe('weak');
@@ -50,13 +57,14 @@ describe('tiers', () => {
     expect(getTier(NaN).key).toBe('weak');
   });
   it('sameTier compares band membership', () => {
-    expect(sameTier(84.4, 82)).toBe(true);    // both elite
-    expect(sameTier(78, 77.9)).toBe(false);   // elite vs great
+    expect(sameTier(98, 97.2)).toBe(true);              // both elite
+    expect(sameTier(97, 96.9)).toBe(false);             // elite vs great
+    expect(sameTier(78, 77.9, 'legacy')).toBe(false);   // elite vs great, old scale
   });
   it('tierIsUncertain flags CIs that cross a boundary', () => {
-    expect(tierIsUncertain(78, 76, 80)).toBe(true);   // 76=great, 80=elite
-    expect(tierIsUncertain(82, 80, 84)).toBe(false);  // both elite
-    expect(tierIsUncertain(80)).toBe(false);          // no CI
+    expect(tierIsUncertain(97, 96, 98)).toBe(true);    // 96=great, 98=elite
+    expect(tierIsUncertain(94, 93, 95)).toBe(false);   // both great
+    expect(tierIsUncertain(80)).toBe(false);           // no CI
   });
 });
 

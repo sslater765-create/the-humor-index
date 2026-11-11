@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { getAllShows, getEpisodes } from '@/lib/data';
-import { formatIndex } from '@/lib/scoring';
+import { formatIndex, byHumorIndexDesc } from '@/lib/scoring';
 import { SITE_URL } from '@/lib/site';
 import NewsletterCTA from '@/components/NewsletterCTA';
+import { rankable } from '@/lib/scale';
 
 export const dynamic = 'force-static';
 
@@ -29,11 +30,14 @@ type Row = {
   episode: number;
   title: string;
   humor_index: number;
+  avg_craft: number;
+  avg_impact: number;
+  jpm: number;
   total_jokes: number;
 };
 
 export default async function FunniestEpisodesPage() {
-  const shows = (await getAllShows()).filter(s => s.humor_index > 0);
+  const shows = rankable(await getAllShows());
 
   const all: Row[] = [];
   for (const s of shows) {
@@ -48,6 +52,9 @@ export default async function FunniestEpisodesPage() {
             episode: e.episode_number,
             title: e.title,
             humor_index: e.humor_index,
+            avg_craft: e.avg_craft,
+            avg_impact: e.avg_impact,
+            jpm: e.jpm,
             total_jokes: e.total_jokes,
           });
         }
@@ -57,7 +64,7 @@ export default async function FunniestEpisodesPage() {
     }
   }
 
-  all.sort((a, b) => b.humor_index - a.humor_index);
+  all.sort(byHumorIndexDesc);
 
   // Cap at 4 per show so the list spans the comedy canon instead of one sitcom.
   const perShow: Record<string, number> = {};

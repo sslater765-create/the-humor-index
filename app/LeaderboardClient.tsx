@@ -1,45 +1,91 @@
 'use client';
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import { ShowScore } from '@/lib/types';
-import { scoreToColor, formatIndex } from '@/lib/scoring';
+import { formatIndex } from '@/lib/scoring';
 import FormatBadge from '@/components/ui/FormatBadge';
 import RankBadge from '@/components/ui/RankBadge';
-import MetricBadge from '@/components/ui/MetricBadge';
-import TierBadge from '@/components/ui/TierBadge';
 
 type SortKey = 'humor_index' | 'avg_jpm' | 'avg_craft' | 'avg_impact';
 
 const SORT_OPTIONS: { key: SortKey; label: string }[] = [
   { key: 'humor_index', label: 'Index' },
-  { key: 'avg_jpm', label: 'JPM' },
+  { key: 'avg_jpm', label: 'Jokes/min' },
   { key: 'avg_craft', label: 'Craft' },
   { key: 'avg_impact', label: 'Impact' },
 ];
 
-// 95% confidence interval as text, shown only where the pipeline has computed it.
-// (Some shows are missing ci_95 fields until the pipeline backfills them.)
-function ciText(s: ShowScore): string | null {
-  if (s.ci_95_low == null || s.ci_95_high == null) return null;
-      return null;}
+const COLS: { key: SortKey | 'imdb'; label: string }[] = [
+  { key: 'imdb', label: 'IMDb' },
+  { key: 'avg_jpm', label: 'Jokes/min' },
+  { key: 'avg_craft', label: 'Craft' },
+  { key: 'avg_impact', label: 'Impact' },
+];
 
-export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
+function cell(show: ShowScore, key: SortKey | 'imdb'): string {
+  if (key === 'imdb') return show.avg_imdb_rating?.toFixed(1) ?? '–';
+  return show[key].toFixed(1);
+}
+
+function Row({ show, rank, sortKey }: { show: ShowScore; rank: number | null; sortKey: SortKey }) {
+  const pending = rank === null;
+  return (
+    <Link
+      href={`/shows/${show.slug}`}
+      className="group grid grid-cols-[2.25rem_1fr_auto] sm:grid-cols-[2.75rem_minmax(0,1fr)_7rem_repeat(4,4.5rem)] items-center gap-x-3 sm:gap-x-4 py-3.5 sm:py-3 border-b border-brand-border/50 hover:bg-brand-surface transition-colors"
+    >
+      <div>
+        {pending ? (
+          <span className="font-mono text-xs text-brand-text-muted pl-2">{'–'}</span>
+        ) : (
+          <RankBadge rank={rank} />
+        )}
+      </div>
+      <div className="min-w-0">
+        <p className={`font-medium truncate transition-colors group-hover:text-brand-gold ${pending ? 'text-brand-text-secondary' : 'text-brand-text-primary'}`}>
+          {show.name}
+        </p>
+        <div className="mt-1 flex items-center gap-2">
+          <FormatBadge format={show.format} />
+          {/* Phones have no room for the metric columns, so the active sort rides here. */}
+          {sortKey !== 'humor_index' && (
+            <span className="sm:hidden font-mono text-[11px] text-brand-text-muted">
+              {SORT_OPTIONS.find(o => o.key === sortKey)?.label} {show[sortKey].toFixed(1)}
+            </span>
+          )}
+        </div>
+      </div>
+      <div className="text-right sm:text-left">
+        <span className={`font-serif italic leading-none text-3xl ${pending ? 'text-brand-text-muted' : 'text-brand-gold'}`}>
+          {formatIndex(show.humor_index)}
+        </span>
+      </div>
+      {COLS.map(c => (
+        <div
+          key={c.key}
+          className={`hidden sm:block font-mono text-sm ${c.key === sortKey ? 'text-brand-text-primary' : 'text-brand-text-secondary'}`}
+        >
+          {cell(show, c.key)}
+        </div>
+      ))}
+    </Link>
+  );
+}
+
+export default function LeaderboardClient({ shows, pending = [] }: { shows: ShowScore[]; pending?: ShowScore[] }) {
   const [sortKey, setSortKey] = useState<SortKey>('humor_index');
 
-  const sorted = useMemo(
-    () => [...shows].sort((a, b) => b[sortKey] - a[sortKey]),
-    [shows, sortKey]
-  );
+  const sorted = useMemo(() => [...shows].sort((a, b) => b[sortKey] - a[sortKey]), [shows, sortKey]);
+  const sortedPending = useMemo(() => [...pending].sort((a, b) => b[sortKey] - a[sortKey]), [pending, sortKey]);
 
   return (
     <div>
-      {/* Sort tabs */}
-      <div className="flex gap-1 p-1 bg-brand-surface border border-brand-border rounded-xl w-fit mb-4">
+      <div className="flex gap-1 p-1 bg-brand-surface border border-brand-border rounded-xl w-fit mb-5">
         {SORT_OPTIONS.map(opt => (
           <button
             key={opt.key}
             onClick={() => setSortKey(opt.key)}
+            aria-pressed={sortKey === opt.key}
             className={`text-xs px-3 py-1.5 rounded-lg transition-all ${
               sortKey === opt.key
                 ? 'bg-brand-gold text-black font-medium'
@@ -51,107 +97,43 @@ export default function LeaderboardClient({ shows }: { shows: ShowScore[] }) {
         ))}
       </div>
 
-      {/* Table — desktop */}
-      <div className="hidden sm:block overflow-x-auto">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="border-b border-brand-border">
-              {['Rank', 'Show', 'Format', 'Humor Index', 'IMDb', 'JPM', 'Craft', 'Impact'].map(h => {
-                const isBadge = ['Humor Index', 'IMDb', 'JPM', 'Craft', 'Impact', 'Best Season'].includes(h);
-                return (
-                  <th key={h} className="text-left text-xs uppercase tracking-widest text-brand-text-muted font-normal pb-3 pr-4 first:pl-0">
-                    {isBadge ? <MetricBadge label={h} /> : h}
-                  </th>
-                );
-              })}
-            </tr>
-          </thead>
-          <tbody>
-            {sorted.map((show, i) => (
-              <motion.tr
-                key={show.slug}
-                initial={false}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: i * 0.04, ease: 'easeOut' }}
-                className="border-b border-brand-border/50 hover:bg-brand-surface transition-colors"
-              >
-                <td className="py-3 pr-4">
-                  <RankBadge rank={i + 1} />
-                </td>
-                <td className="py-3 pr-4">
-                  <Link href={`/shows/${show.slug}`} className="font-medium text-brand-text-primary hover:text-brand-gold transition-colors">
-                    {show.name}
-                  </Link>
-                </td>
-                <td className="py-3 pr-4">
-                  <FormatBadge format={show.format} />
-                </td>
-                <td className="py-3 pr-4">
-                  <div className="flex items-center gap-2">
-                    <TierBadge score={show.humor_index} ciLow={show.ci_95_low} ciHigh={show.ci_95_high} />
-                    <span className="font-mono text-xs text-brand-text-muted" style={{ color: scoreToColor(show.humor_index) }}>
-                      {formatIndex(show.humor_index)}
-                    </span>
-                  </div>
-                  {sortKey === 'humor_index' && ciText(show) && (
-                    <div className="font-mono text-[10px] text-brand-text-muted mt-0.5">{ciText(show)}</div>
-                  )}
-                </td>
-                <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_imdb_rating?.toFixed(1) ?? '—'}</td>
-                <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_jpm.toFixed(1)}</td>
-                <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_craft.toFixed(1)}</td>
-                <td className="py-3 pr-4 font-mono text-xs text-brand-text-secondary">{show.avg_impact.toFixed(1)}</td>
-              </motion.tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      {/* Cards — mobile */}
-      <div className="sm:hidden space-y-3">
-        {sorted.map((show, i) => (
-          <motion.div
-            key={show.slug}
-            initial={false}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: i * 0.04 }}
-          >
-            <Link href={`/shows/${show.slug}`}>
-              <div className="bg-brand-card border border-brand-border rounded-xl p-4">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-2">
-                    <RankBadge rank={i + 1} />
-                    <span className="font-medium text-brand-text-primary">{show.name}</span>
-                  </div>
-                  <div className="flex flex-col items-end gap-0.5">
-                    <TierBadge score={show.humor_index} ciLow={show.ci_95_low} ciHigh={show.ci_95_high} size="sm" />
-                    <span className="font-mono text-[10px] text-brand-text-muted" style={{ color: scoreToColor(show.humor_index) }}>
-                      {formatIndex(show.humor_index)}
-                    </span>
-                    {sortKey === 'humor_index' && ciText(show) && (
-                      <span className="font-mono text-[9px] text-brand-text-muted">{ciText(show)}</span>
-                    )}
-                  </div>
-                </div>
-                <div className="flex gap-3 text-xs text-brand-text-muted flex-wrap">
-                  {show.avg_imdb_rating && (
-                    <span className="flex items-center gap-1"><MetricBadge label="IMDb" /> <span className="font-mono text-brand-text-secondary">{show.avg_imdb_rating.toFixed(1)}</span></span>
-                  )}
-                  <span className="flex items-center gap-1"><MetricBadge label="JPM" /> <span className="font-mono text-brand-text-secondary">{show.avg_jpm.toFixed(1)}</span></span>
-                  <span className="flex items-center gap-1"><MetricBadge label="Craft" /> <span className="font-mono text-brand-text-secondary">{show.avg_craft.toFixed(1)}</span></span>
-                </div>
-              </div>
-            </Link>
-          </motion.div>
+      {/* Column heads, desktop only */}
+      <div className="hidden sm:grid grid-cols-[2.75rem_minmax(0,1fr)_7rem_repeat(4,4.5rem)] gap-x-4 pb-2 border-b border-brand-border text-[10px] uppercase tracking-widest text-brand-text-muted">
+        <span>Rank</span>
+        <span>Show</span>
+        <span>Humor Index</span>
+        {COLS.map(c => (
+          <span key={c.key}>{c.label}</span>
         ))}
       </div>
 
-      {/* Honest-uncertainty note — only meaningful when ranking by Index. */}
+      <div>
+        {sorted.map((show, i) => (
+          <Row key={show.slug} show={show} rank={i + 1} sortKey={sortKey} />
+        ))}
+      </div>
+
       {sortKey === 'humor_index' && (
         <p className="mt-4 text-xs text-brand-text-muted leading-relaxed">
-          Scores within about ±1.2 points are statistically tied — the cluster below the top two is closer than the order suggests.{' '}
+          Scores within about 1.2 points of each other are statistically tied, so several neighbours on this list are closer than the order suggests.{' '}
           <Link href="/methodology" className="text-brand-gold hover:underline">How we score →</Link>
         </p>
+      )}
+
+      {sortedPending.length > 0 && (
+        <div className="mt-10">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted mb-2">Awaiting rescore</p>
+          <p className="text-sm text-brand-text-secondary leading-relaxed max-w-2xl mb-3">
+            These {sortedPending.length} shows are fully scored, but on our earlier model. Shows gain 9 to 15 points
+            when they move to the current one, so their numbers are not comparable with the list above and they
+            are left unranked until their rescore is published.
+          </p>
+          <div className="border-t border-brand-border">
+            {sortedPending.map(show => (
+              <Row key={show.slug} show={show} rank={null} sortKey={sortKey} />
+            ))}
+          </div>
+        </div>
       )}
     </div>
   );

@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getShow, getEpisodes } from '@/lib/data';
-import { formatIndex } from '@/lib/scoring';
+import { formatIndex, byHumorIndexDesc } from '@/lib/scoring';
 import { SHOW_SLUGS } from '@/lib/constants';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
@@ -54,7 +54,7 @@ export default async function EpisodesRankedPage({ params }: { params: { slug: s
   } catch { /* none */ }
   if (episodes.length === 0) notFound();
 
-  const ranked = [...episodes].sort((a, b) => b.humor_index - a.humor_index);
+  const ranked = [...episodes].sort(byHumorIndexDesc);
   const best = ranked[0];
   const worst = ranked[ranked.length - 1];
 

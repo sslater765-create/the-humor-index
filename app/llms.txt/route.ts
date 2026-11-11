@@ -1,6 +1,7 @@
 import { getAllShows } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
 import { SITE_URL } from '@/lib/site';
+import { rankable } from '@/lib/scale';
 
 export const dynamic = 'force-static';
 
@@ -15,7 +16,7 @@ export async function GET() {
   const asOf = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
   const totalJokes = shows.reduce((sum, s) => sum + (s.total_jokes_analyzed || 0), 0);
 
-  const leaderboard = shows
+  const leaderboard = rankable(shows)
     .map((s, i) => `${i + 1}. ${s.name} — Humor Index ${formatIndex(s.humor_index)} (${s.total_episodes} episodes, ${s.avg_jpm.toFixed(1)} jokes/min)`)
     .join('\n');
 

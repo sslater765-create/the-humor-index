@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getShow, getEpisodes, getSeasons } from '@/lib/data';
-import { formatIndex } from '@/lib/scoring';
+import { formatIndex, byHumorIndexDesc } from '@/lib/scoring';
 import { SHOW_SLUGS } from '@/lib/constants';
 import { getExplorerConfig } from '@/lib/explorerPresets';
 import { cutHumorIndex } from '@/lib/explorerScore';
@@ -67,7 +67,7 @@ export default async function ExplorePage({ params }: { params: { slug: string }
   }
   const seriesIndex = show.humor_index;
   const seriesAvg = seriesIndex;
-  const ranked = [...episodes].sort((a, b) => b.humor_index - a.humor_index);
+  const ranked = [...episodes].sort(byHumorIndexDesc);
 
   // Server-rendered, crawlable summaries of each story preset (SEO + AEO).
   const presetFacts = (config.storyPresets ?? []).map(p => {

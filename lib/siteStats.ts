@@ -2,6 +2,7 @@ import { cache } from 'react';
 import { getAllShows, getEpisodes } from './data';
 import { ShowScore } from './types';
 import { formatIndex } from './scoring';
+import { rankable } from './scale';
 
 export interface SiteStats {
   showCount: number;        // scored shows
@@ -18,16 +19,18 @@ export interface SiteStats {
  */
 export const getSiteStats = cache(async (): Promise<SiteStats> => {
   const all = await getAllShows();
-  const leaderboard = all.filter(s => s.humor_index > 0).sort((a, b) => b.humor_index - a.humor_index);
+  // Counts cover every scored show; the ranked leaderboard only those on the current scale.
+  const scored = all.filter(s => s.humor_index > 0);
+  const leaderboard = rankable(all).sort((a, b) => b.humor_index - a.humor_index);
 
   let totalEpisodes = 0;
-  for (const s of leaderboard) {
+  for (const s of scored) {
     try { totalEpisodes += (await getEpisodes(s.slug)).length; } catch { /* none */ }
   }
-  const totalJokes = leaderboard.reduce((sum, s) => sum + (s.total_jokes_analyzed || 0), 0);
+  const totalJokes = scored.reduce((sum, s) => sum + (s.total_jokes_analyzed || 0), 0);
 
   return {
-    showCount: leaderboard.length,
+    showCount: scored.length,
     totalEpisodes,
     totalJokes,
     leaderboard,

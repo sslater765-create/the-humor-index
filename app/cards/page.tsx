@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { getSiteStats } from '@/lib/siteStats';
 import { getEpisodes, getTopJokes, type TopJoke } from '@/lib/data';
 import { getTier } from '@/lib/tiers';
+import { isAwaitingRescore } from '@/lib/scale';
 import { formatIndex } from '@/lib/scoring';
 import { pageMeta, breadcrumbJsonLd } from '@/lib/seo';
 import SocialShare from '@/components/ui/SocialShare';
@@ -32,7 +33,7 @@ export default async function CardsPage() {
       eps.push({ show: s.name, slug: s.slug, season: e.season, ep: e.episode_number, title: e.title, hi: e.humor_index, craft: e.avg_craft, impact: e.avg_impact, jokes: e.total_jokes });
     }
   }
-  const topEpisodes = eps.sort((a, b) => b.hi - a.hi).slice(0, 9);
+  const topEpisodes = eps.sort((a, b) => b.hi - a.hi || (b.craft + b.impact) - (a.craft + a.impact)).slice(0, 9);
 
   // Funniest lines.
   const topJokes: TopJoke[] = (await getTopJokes()).slice(0, 9);
@@ -59,7 +60,7 @@ export default async function CardsPage() {
         <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Top episode scorecards</h2>
         <div className="grid sm:grid-cols-2 gap-6">
           {topEpisodes.map(e => {
-            const tier = getTier(e.hi).label;
+            const tier = getTier(e.hi, isAwaitingRescore(e.slug) ? 'legacy' : 'current').label;
             const url = `/api/og/episode?${q({ show: e.show, title: e.title, season: e.season, episode: e.ep, score: formatIndex(e.hi), tier, craft: e.craft?.toFixed(1), impact: e.impact?.toFixed(1), jokes: e.jokes })}`;
             const fname = `humor-index-${e.slug}-s${String(e.season).padStart(2, '0')}e${String(e.ep).padStart(2, '0')}.png`;
             const pagePath = `/shows/${e.slug}/${e.season}/${e.ep}`;

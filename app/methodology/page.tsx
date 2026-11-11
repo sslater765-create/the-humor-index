@@ -281,7 +281,7 @@ export default async function MethodologyPage() {
               <span className="text-brand-text-primary">Individual episode rankings have ±5 point noise.</span> Two episodes within ~10 Humor Index points of each other are essentially tied under single-run scoring.
             </li>
             <li>
-              <span className="text-brand-text-primary">Extreme episodes still stand out.</span> Dinner Party (100) vs an average 75 is comfortably above the noise. It&apos;s the close-finish ordering that&apos;s uncertain.
+              <span className="text-brand-text-primary">Extreme episodes still stand out.</span> The Office&apos;s &ldquo;The Duel&rdquo; (98.5) against that show&apos;s episode mean of 88.0 is comfortably above the noise. It&apos;s the close-finish ordering that&apos;s uncertain.
             </li>
           </ul>
           <p className="text-sm text-brand-text-secondary leading-relaxed mb-4">
@@ -338,7 +338,7 @@ export default async function MethodologyPage() {
               <li>Friends: −0.131 (95% CrI: [−0.498, +0.235])</li>
             </ul>
             <p className="text-xs text-brand-text-secondary mt-3">
-              All three intervals overlap. The posterior ordering (Seinfeld &gt; Office &gt; Friends) matches our Humor Index rankings, but the differences are within the statistical noise of this model.
+              All three intervals overlap. The posterior ordering was Seinfeld &gt; Office &gt; Friends on April 2026 scores, but the differences are within the statistical noise of this model.
               Probability that Seinfeld beats Friends on show-effect is approximately 82% — better than a coin flip, but not 99%+ certain.
             </p>
           </div>

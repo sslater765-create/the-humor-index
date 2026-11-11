@@ -3,12 +3,13 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getShow, getSeasons, getEpisodes, getCharacters, getRecommendations, getAllShows, getComedyDna } from '@/lib/data';
-import { formatIndex } from '@/lib/scoring';
+import { formatIndex, byHumorIndexDesc } from '@/lib/scoring';
 import { ALL_SHOW_SLUGS } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
 import ScoreGauge from '@/components/ui/ScoreGauge';
 import FormatBadge from '@/components/ui/FormatBadge';
 import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
+import { rankable, isAwaitingRescore } from '@/lib/scale';
 import ShowPageClient from './ShowPageClient';
 import { SITE_URL } from '@/lib/site';
 import { tvSeriesJsonLd, breadcrumbJsonLd } from '@/lib/seo';
@@ -132,10 +133,11 @@ export default async function ShowPage({ params }: { params: { slug: string } })
   }));
 
   // AEO: top-level rank for the answer-first "quick answer" block (scored shows only).
-  const scoredRankList = allShows
-    .filter(s => s.humor_index > 0)
-    .sort((a, b) => b.humor_index - a.humor_index);
+  // Rank only among shows on the current scoring scale; a show still awaiting
+  // its rescore gets no rank (findIndex returns -1, so showRank is 0).
+  const scoredRankList = rankable(allShows).sort(byHumorIndexDesc);
   const showRank = scoredRankList.findIndex(s => s.slug === show.slug) + 1;
+  const pendingRescore = isAwaitingRescore(show.slug);
   const scoredShowCount = scoredRankList.length;
 
   const jsonLd = [
@@ -154,7 +156,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Hero section with backdrop */}
-      <div className="relative w-full aspect-[16/9] min-h-[340px] max-h-[78vh] overflow-hidden">
+      <div className="relative w-full aspect-[16/9] min-h-[300px] max-h-[46vh] overflow-hidden">
         {show.backdrop_path ? (
           <Image
             src={`https://image.tmdb.org/t/p/original${show.backdrop_path}`}
@@ -258,10 +260,11 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           <p className="mt-6 text-sm sm:text-base text-brand-text-secondary leading-relaxed bg-brand-surface/60 border border-brand-border rounded-lg p-4">
             <span className="text-brand-text-primary font-medium">Is {show.name} funny?</span>{' '}
             Yes — {show.name} scores {formatIndex(show.humor_index)} out of 100 on the Humor Index
-            {showRank > 0 ? `, the #${showRank} funniest of ${scoredShowCount} sitcoms scored` : ''}, based on an
-            AI analysis of {show.total_jokes_analyzed.toLocaleString()} jokes across {show.total_episodes} episodes.
+            {showRank > 0 ? `, #${showRank} of the ${scoredShowCount} shows on our current scoring model` : ''}, based on an
+            AI analysis of {show.total_jokes_analyzed.toLocaleString()} jokes across {episodes.filter(e => e.humor_index > 0).length || show.total_episodes} episodes.
             It averages {show.avg_jpm.toFixed(1)} jokes per minute, with a craft score of {show.avg_craft.toFixed(1)} and
             an impact score of {show.avg_impact.toFixed(1)}.
+            {pendingRescore ? ' This score comes from our earlier scoring model. The show is awaiting a rescore and is left unranked until then.' : ''}
           </p>
         )}
       </div>
@@ -271,10 +274,6 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         <WhereToWatch show={show.name} />
       </div>
 
-      {/* Newsletter CTA */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <InlineNewsletterCTA />
-      </div>
 
       <ShowPageClient
         show={show}
@@ -306,10 +305,8 @@ export default async function ShowPage({ params }: { params: { slug: string } })
       {(() => {
         const scored = episodes.filter(e => e.humor_index > 0);
         if (scored.length === 0) return null;
-        const topEpisodes = [...scored].sort((a, b) => b.humor_index - a.humor_index).slice(0, 5);
-        const scoredShows = allShows
-          .filter(s => s.humor_index > 0)
-          .sort((a, b) => b.humor_index - a.humor_index);
+        const topEpisodes = [...scored].sort(byHumorIndexDesc).slice(0, 5);
+        const scoredShows = rankable(allShows).sort(byHumorIndexDesc);
         const rank = scoredShows.findIndex(s => s.slug === show.slug) + 1;
         const total = scoredShows.length;
         const best = topEpisodes[0];
@@ -322,7 +319,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
               name: `Is ${show.name} funny?`,
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: `${show.name} earns a Humor Index of ${formatIndex(show.humor_index)} out of 100${rank > 0 ? `, ranking #${rank} of ${total} fully-scored shows on The Humor Index` : ''}. We scored every joke across ${scored.length} episodes — it averages ${show.avg_jpm.toFixed(1)} jokes per minute with a craft score of ${show.avg_craft.toFixed(1)} and impact of ${show.avg_impact.toFixed(1)}.`,
+                text: `${show.name} earns a Humor Index of ${formatIndex(show.humor_index)} out of 100${rank > 0 ? `, ranking #${rank} of the ${total} shows on our current scoring model` : ''}. We scored every joke across ${scored.length} episodes — it averages ${show.avg_jpm.toFixed(1)} jokes per minute with a craft score of ${show.avg_craft.toFixed(1)} and impact of ${show.avg_impact.toFixed(1)}.`,
               },
             },
             ...(best ? [{
@@ -428,7 +425,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         const byScoreDistance = [...otherScored].sort(
           (a, b) => Math.abs(a.humor_index - show.humor_index) - Math.abs(b.humor_index - show.humor_index)
         );
-        const topRanked = [...otherScored].sort((a, b) => b.humor_index - a.humor_index)[0];
+        const topRanked = [...otherScored].sort(byHumorIndexDesc)[0];
         const closestPeer = byScoreDistance[0];
         const peers = closestPeer.slug === topRanked.slug
           ? [closestPeer, byScoreDistance[1]].filter(Boolean)

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAllShows } from '@/lib/data';
 import { formatIndex } from '@/lib/scoring';
+import { rankable } from '@/lib/scale';
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
@@ -9,7 +10,7 @@ export async function GET(req: NextRequest) {
   const theme = searchParams.get('theme') || 'dark';
 
   const shows = await getAllShows();
-  const top = shows.filter(s => s.humor_index > 0).slice(0, limit);
+  const top = rankable(shows).sort((a, b) => b.humor_index - a.humor_index).slice(0, limit);
 
   const bg = theme === 'light' ? '#FFFFFF' : '#0F0F0F';
   const text = theme === 'light' ? '#1A1A1A' : '#E5E5E5';

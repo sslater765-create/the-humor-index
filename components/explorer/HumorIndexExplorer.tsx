@@ -3,6 +3,7 @@ import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import { EpisodeScore } from '@/lib/types';
 import { scoreToColor, formatIndex } from '@/lib/scoring';
 import { getTier } from '@/lib/tiers';
+import { isAwaitingRescore } from '@/lib/scale';
 import { getExplorerConfig } from '@/lib/explorerPresets';
 import { cutHumorIndex } from '@/lib/explorerScore';
 import ShareButton from '@/components/ui/ShareButton';
@@ -201,8 +202,8 @@ export default function HumorIndexExplorer({ slug, showName, episodes, seriesInd
     let bi = idx[0], wi = idx[0];
     idx.forEach(i => { if (eps[i].humor_index > eps[bi].humor_index) bi = i; if (eps[i].humor_index < eps[wi].humor_index) wi = i; });
     const pct = Math.round(100 * eps.filter(e => e.humor_index <= avg).length / eps.length);
-    return { n, avg, ci, jpm, imdb, best: eps[bi], worst: eps[wi], delta: avg - seriesAvg, tier: getTier(avg), pct };
-  }, [selected, eps, seriesAvg, seriesIndex, seasonIndex]);
+    return { n, avg, ci, jpm, imdb, best: eps[bi], worst: eps[wi], delta: avg - seriesAvg, tier: getTier(avg, isAwaitingRescore(slug) ? 'legacy' : 'current'), pct };
+  }, [selected, eps, seriesAvg, seriesIndex, seasonIndex, slug]);
 
   const copyLink = () => {
     if (typeof navigator !== 'undefined' && navigator.clipboard) {

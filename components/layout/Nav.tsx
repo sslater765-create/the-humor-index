@@ -4,26 +4,33 @@ import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import AccountMenu from '@/components/auth/AccountMenu';
 
-const links = [
+// Five destinations in the bar; the rest sit under "More" on desktop and in
+// the full list on mobile.
+const primary = [
   { href: '/shows', label: 'Shows' },
-  { href: '/explore', label: 'Explore' },
   { href: '/rankings', label: 'Rankings' },
   { href: '/compare', label: 'Compare' },
   { href: '/comedy-dna', label: 'Comedy DNA' },
+  { href: '/blog', label: 'Blog' },
+];
+const secondary = [
+  { href: '/explore', label: 'Explore' },
   { href: '/agree', label: 'Agree?' },
   { href: '/my', label: 'My Index' },
-  { href: '/blog', label: 'Blog' },
   { href: '/methodology', label: 'Methodology' },
-  { href: '/request', label: 'Request' },
+  { href: '/request', label: 'Request a show' },
 ];
+const links = [...primary, ...secondary];
 
 export default function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
 
   // Close mobile menu on route change
   useEffect(() => {
     setOpen(false);
+    setMoreOpen(false);
   }, [pathname]);
 
 
@@ -41,8 +48,8 @@ export default function Nav() {
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden sm:flex items-center gap-4 lg:gap-5">
-          {links.map(l => (
+        <div className="hidden sm:flex items-center gap-5 lg:gap-7">
+          {primary.map(l => (
             <Link
               key={l.href}
               href={l.href}
@@ -55,6 +62,44 @@ export default function Nav() {
               {l.label}
             </Link>
           ))}
+          <div className="relative" onMouseLeave={() => setMoreOpen(false)}>
+            <button
+              type="button"
+              onClick={() => setMoreOpen(v => !v)}
+              onMouseEnter={() => setMoreOpen(true)}
+              aria-expanded={moreOpen}
+              aria-haspopup="true"
+              className={`text-sm transition-colors flex items-center gap-1 ${
+                secondary.some(l => pathname.startsWith(l.href))
+                  ? 'text-brand-gold'
+                  : 'text-brand-text-secondary hover:text-brand-text-primary'
+              }`}
+            >
+              More
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            {moreOpen && (
+              <div className="absolute right-0 top-full pt-3 w-44">
+                <div className="rounded-xl border border-brand-border bg-brand-dark shadow-xl py-1.5">
+                  {secondary.map(l => (
+                    <Link
+                      key={l.href}
+                      href={l.href}
+                      className={`block px-4 py-2 text-sm transition-colors ${
+                        pathname.startsWith(l.href)
+                          ? 'text-brand-gold'
+                          : 'text-brand-text-secondary hover:text-brand-text-primary hover:bg-brand-surface'
+                      }`}
+                    >
+                      {l.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
           <Link
             href="/search"
             prefetch={false}

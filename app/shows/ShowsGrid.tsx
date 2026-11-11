@@ -2,6 +2,7 @@
 import { useState, useMemo } from 'react';
 import { ShowScore, ShowFormat } from '@/lib/types';
 import ShowCard from '@/components/ui/ShowCard';
+import { isAwaitingRescore } from '@/lib/scale';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const FORMAT_LABELS: Record<'all' | ShowFormat, string> = {
@@ -100,7 +101,15 @@ export default function ShowsGrid({ shows }: { shows: ShowScore[] }) {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25, ease: 'easeOut' }}
             >
-              <ShowCard show={{ ...show, rank: show.humor_index > 0 ? i + 1 : undefined }} />
+              <ShowCard
+                show={{
+                  ...show,
+                  // Rank counts only shows on the current scale; shows awaiting a rescore are unranked.
+                  rank: show.humor_index > 0 && !isAwaitingRescore(show.slug)
+                    ? filtered.slice(0, i + 1).filter(x => x.humor_index > 0 && !isAwaitingRescore(x.slug)).length
+                    : undefined,
+                }}
+              />
             </motion.div>
           ))}
         </AnimatePresence>

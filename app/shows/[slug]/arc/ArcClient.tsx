@@ -1,6 +1,6 @@
 'use client';
 import { ShowScore, SeasonScore, EpisodeScore } from '@/lib/types';
-import { formatIndex, scoreToColor } from '@/lib/scoring';
+import { formatIndex, scoreToColor, byHumorIndexDesc } from '@/lib/scoring';
 
 interface Props {
   show: ShowScore;
@@ -74,7 +74,7 @@ export default function ArcClient({ show, seasons, episodes }: Props) {
           {seasons.map(s => {
             const seasonEps = episodes
               .filter(e => e.season === s.season)
-              .sort((a, b) => b.humor_index - a.humor_index);
+              .sort(byHumorIndexDesc);
             const bestEp = seasonEps[0];
             const worstEp = seasonEps[seasonEps.length - 1];
 

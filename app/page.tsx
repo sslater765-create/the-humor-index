@@ -1,11 +1,10 @@
-import NewsletterCTA from '@/components/NewsletterCTA';
 import Link from 'next/link';
-import Image from 'next/image';
 import { getAllShows, getEpisodes } from '@/lib/data';
 import LeaderboardClient from './LeaderboardClient';
 import WhatsNewPersonalized from '@/components/ui/WhatsNewPersonalized';
 import HeroLoop from '@/components/HeroLoop';
 import { SITE_URL } from '@/lib/site';
+import { rankable, awaitingRescore } from '@/lib/scale';
 
 export const dynamic = 'force-static';
 
@@ -60,8 +59,8 @@ export default async function HomePage() {
                 and we publish the receipts.
               </p>
               <p className="text-base sm:text-lg text-brand-text-muted max-w-2xl leading-relaxed mt-4">
-                No laugh tracks, no nostalgia — every show measured the same way, so the comparisons are fair.
-                Browse the rankings, compare any two shows, or dig into a single episode&apos;s funniest moments.
+                No laugh tracks, no nostalgia. Browse the rankings, compare any two shows, or dig into
+                a single episode&apos;s funniest moments.
               </p>
 
               {/* Big numbers — magazine cover stats */}
@@ -102,26 +101,21 @@ export default async function HomePage() {
               <div>
                 <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">The Index</p>
                 <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight">
-                  Top shows on the leaderboard.
+                  The leaderboard.
                 </h2>
               </div>
               <Link href="/rankings" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors shrink-0 ml-3">
                 Full rankings →
               </Link>
             </div>
-            <LeaderboardClient shows={shows.filter(s => s.humor_index > 0)} />
+            <LeaderboardClient shows={rankable(shows)} pending={awaitingRescore(shows)} />
+            <div className="mt-6 pt-5 border-t border-brand-border">
+              <Link href="/shows" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
+                Browse all {analyzedShows.length} shows →
+              </Link>
+            </div>
           </div>
         </div>
-      </section>
-
-      {/* Newsletter capture — Phase 1 subscriber rail */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-12">
-        <NewsletterCTA
-          variant="banner"
-          source="homepage"
-          headline="Get the 50 funniest episodes of all time — ranked."
-          sub="The weekly Humor Index: a new show breakdown and ranking every Friday. Free, no spam."
-        />
       </section>
 
       {/* Comedy DNA teaser — flagship interactive, magazine cover treatment */}
@@ -150,51 +144,6 @@ export default async function HomePage() {
         </Link>
       </section>
 
-      {/* Latest analysis callouts */}
-      {analyzedShows.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-4">
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Catalog</p>
-          <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
-            Every show, fully analyzed.
-          </h2>
-          <p className="text-sm text-brand-text-secondary max-w-xl mb-8 leading-relaxed">
-            {analyzedShows.length} shows scored end-to-end. Tap in for the full breakdown — every episode, every joke, every character.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {analyzedShows.map(show => (
-              <Link
-                key={show.slug}
-                href={`/shows/${show.slug}`}
-                className="relative bg-brand-card border border-brand-border rounded-2xl overflow-hidden hover:border-brand-gold/40 transition-colors group block"
-              >
-                {show.backdrop_path && (
-                  <div className="relative h-36 w-full">
-                    <Image
-                      src={`https://image.tmdb.org/t/p/w780${show.backdrop_path}`}
-                      alt={show.name}
-                      fill
-                      className="object-cover opacity-50 group-hover:opacity-70 transition-opacity"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/60 to-transparent" />
-                    <div className="absolute bottom-3 right-4 font-serif italic text-2xl text-brand-gold drop-shadow-md">
-                      {show.humor_index.toFixed(1)}
-                    </div>
-                  </div>
-                )}
-                <div className="p-5">
-                  <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-2">Fully Scored</p>
-                  <h3 className="font-serif italic text-xl text-brand-text-primary mb-2 group-hover:text-brand-gold transition-colors leading-tight">{show.name}</h3>
-                  <p className="text-sm text-brand-text-secondary mb-3 line-clamp-2 leading-relaxed">{show.description}</p>
-                  <span className="text-xs uppercase tracking-widest text-brand-gold">
-                    Full breakdown →
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
       {/* What's New — personalized for return visitors */}
       <WhatsNewPersonalized />
 
@@ -205,35 +154,34 @@ export default async function HomePage() {
           <div className="relative max-w-3xl mx-auto">
             <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-5 text-center">Featured Insight</p>
             <h3 className="font-serif italic text-3xl sm:text-5xl text-brand-text-primary leading-[1.1] mb-6 text-center">
-              Better jokes don&apos;t always<br />mean a funnier show.
+              Same joke rate.<br />Ten points apart.
             </h3>
             <p className="text-base text-brand-text-secondary leading-relaxed mb-8 text-center">
-              Flight of the Conchords beats Seinfeld on per-joke craft and on impact.
-              But Seinfeld edges ahead on our Humor Index — because the index rewards
-              density and consistency. Seinfeld lands 3.57 jokes a minute to the Conchords&apos;
-              2.47, and across 180 episodes that volume outweighs a per-joke edge of about
-              a tenth of a point.
+              30 Rock and Broad City tell jokes at the same pace, about three and a half a minute.
+              They finish more than ten points apart on the Humor Index. Across the shows on our
+              current model, how well the jokes are written predicts 88% of the score. How many
+              there are predicts a quarter, and nearly all of that comes from one show.
             </p>
             <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto mb-8 pb-8 border-b border-brand-border">
               <div className="text-center">
-                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Seinfeld</p>
-                <p className="font-serif italic text-3xl sm:text-4xl text-brand-gold leading-none">94.5</p>
-                <p className="text-[10px] text-brand-text-muted mt-2">Craft 7.47 · Impact 7.39</p>
+                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">30 Rock</p>
+                <p className="font-serif italic text-3xl sm:text-4xl text-brand-gold leading-none">97.5</p>
+                <p className="text-[10px] text-brand-text-muted mt-2">3.53 jokes/min · Craft 7.68</p>
               </div>
               <div className="text-center">
-                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Conchords</p>
-                <p className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-none">92.0</p>
-                <p className="text-[10px] text-brand-text-muted mt-2">Craft 7.58 · Impact 7.44</p>
+                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Broad City</p>
+                <p className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-none">86.9</p>
+                <p className="text-[10px] text-brand-text-muted mt-2">3.52 jokes/min · Craft 7.16</p>
               </div>
               <div className="text-center">
-                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Craft Gap</p>
-                <p className="font-serif italic text-3xl sm:text-4xl text-brand-blue leading-none">+0.11</p>
-                <p className="text-[10px] text-brand-text-muted mt-2">Conchords higher per joke</p>
+                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Gap</p>
+                <p className="font-serif italic text-3xl sm:text-4xl text-brand-blue leading-none">10.6</p>
+                <p className="text-[10px] text-brand-text-muted mt-2">Humor Index points</p>
               </div>
             </div>
             <div className="text-center">
-              <Link href="/methodology" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
-                See how the score works →
+              <Link href="/blog/density-vs-craft" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
+                Read the analysis →
               </Link>
             </div>
           </div>

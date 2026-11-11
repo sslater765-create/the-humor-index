@@ -2,8 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getShow, getEpisodes, getEpisodeDetail } from '@/lib/data';
-import { formatIndex, parseStandoutIds } from '@/lib/scoring';
+import { formatIndex, parseStandoutIds, byHumorIndexDesc } from '@/lib/scoring';
 import { getTier } from '@/lib/tiers';
+import { isAwaitingRescore } from '@/lib/scale';
 import { SHOW_SLUGS } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
 import ScoreGauge from '@/components/ui/ScoreGauge';
@@ -49,7 +50,7 @@ export async function generateMetadata({
   );
   if (!detail || !show) return {};
   const showName = show.name;
-  const tier = getTier(detail.humor_index);
+  const tier = getTier(detail.humor_index, isAwaitingRescore(params.slug) ? 'legacy' : 'current');
 
   // Pick top joke for the OG quote (highest craft+impact, with text + speaker)
   const topJoke = [...(detail.jokes ?? [])]
@@ -108,7 +109,7 @@ export default async function EpisodePage({
 
   if (!show || !detail) notFound();
 
-  const allEpisodes = episodes.sort((a, b) => b.humor_index - a.humor_index);
+  const allEpisodes = episodes.sort(byHumorIndexDesc);
   const rank = allEpisodes.findIndex(e => e.season === seasonNum && e.episode_number === episodeNum) + 1;
 
   // Find next/prev episodes in season order
@@ -127,7 +128,7 @@ export default async function EpisodePage({
   const regularJokes = detail.jokes.filter(j => !standoutIds.has(j.index));
 
   // Unique, data-driven comedy summary for each episode (SEO + thin-content fix).
-  const epTier = getTier(detail.humor_index);
+  const epTier = getTier(detail.humor_index, isAwaitingRescore(params.slug) ? 'legacy' : 'current');
   const charCounts = new Map<string, number>();
   for (const j of detail.jokes) {
     for (const c of (j.characters ?? [])) charCounts.set(c, (charCounts.get(c) ?? 0) + 1);

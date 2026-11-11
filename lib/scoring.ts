@@ -83,6 +83,26 @@ export function formatIndex(index: number): string {
   return index.toFixed(1);
 }
 
+/**
+ * Sort comparator: Humor Index, highest first, with ties broken by average
+ * craft plus impact, then jokes per minute.
+ *
+ * The display scale caps at 100 and dozens of current-model episodes sit on
+ * the cap, so sorting on humor_index alone leaves their order arbitrary. The
+ * tie-break orders them by the per-joke quality the index is built from. It
+ * changes no published number. Remove once the display scale is recalibrated.
+ */
+export function byHumorIndexDesc(
+  a: { humor_index: number; avg_craft?: number; avg_impact?: number; jpm?: number },
+  b: { humor_index: number; avg_craft?: number; avg_impact?: number; jpm?: number },
+): number {
+  return (
+    b.humor_index - a.humor_index ||
+    ((b.avg_craft ?? 0) + (b.avg_impact ?? 0)) - ((a.avg_craft ?? 0) + (a.avg_impact ?? 0)) ||
+    (b.jpm ?? 0) - (a.jpm ?? 0)
+  );
+}
+
 
 /**
  * `dominant_joke_types` and `standout_joke_ids` are stored in the episode JSON
