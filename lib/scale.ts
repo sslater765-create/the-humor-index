@@ -11,7 +11,6 @@
  * the only change needed: the leaderboard, show pages and catalog all read it.
  */
 export const AWAITING_RESCORE: ReadonlySet<string> = new Set([
-  'friends',
   'curb-your-enthusiasm',
   'its-always-sunny',
   'the-simpsons',

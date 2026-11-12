@@ -4,34 +4,36 @@
   "season": 5,
   "episode_number": 1,
   "title": "The One After Ross Says Rachel",
-  "humor_index": 76.4,
-  "jpm": 2.11,
-  "avg_craft": 7.29,
-  "avg_impact": 6.79,
-  "total_jokes": 39,
-  "war": 40.6,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"cringe_discomfort\"]",
-  "standout_joke_ids": "[1, 10, 25]",
-  "weakest_section": "17:11-18:42 (relationship talk with less comedy)",
+  "humor_index": 88.4,
+  "jpm": 4.58,
+  "avg_craft": 7.09,
+  "avg_impact": 7.07,
+  "total_jokes": 70,
+  "war": 75.6,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"absurdist\"]",
+  "standout_joke_ids": "[1, 54, 14]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Ross says 'Take thee, Rachel' instead of 'Take thee, Emily' at his wedding",
+      "text": "Ross says 'Rachel' instead of 'Emily' during his wedding vows",
       "characters": [
-        "Ross"
+        "Ross",
+        "Emily",
+        "Officiant"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "setup_punchline",
+        "misdirection"
       ],
-      "setup": "Standard wedding vows being repeated at Ross and Emily's ceremony",
-      "punchline": "Ross accidentally says his ex-girlfriend's name instead of his bride's",
+      "setup": "The officiant solemnly instructs Ross to repeat 'Take thee, Emily' \u2014 a sacred wedding moment with full emotional gravity",
+      "punchline": "Ross says 'Take thee, Rachel' \u2014 the wrong name, the wrong woman, the whole season's tension detonated in one word",
       "craft_total": 8.97,
-      "impact_score": 10.0,
-      "quotability": 8.5,
+      "impact_score": 9.67,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Iconic sitcom moment that became cultural touchstone. Perfect character integration - only Ross would make this specific mistake. Excellent structure with immediate setup/payoff. Maximum cringe factor with huge emotional stakes.",
+      "explanation": "This is the rare episode-title joke that earns its billing. The entire preceding season built toward this moment \u2014 Ross's unresolved feelings for Rachel, the rushed engagement to Emily \u2014 so the payoff is structurally perfect. One word ('Rachel') accomplishes what pages of dialogue couldn't. The economy is flawless, the character integration is total (only Ross's specific emotional history makes this land), and the comedy is inseparable from genuine dramatic stakes. It's the kind of moment that becomes a cultural shorthand for social catastrophe. The rewatch value is enormous because every prior scene is recontextualized.",
       "dialogue": [
         {
           "speaker": "Officiant",
@@ -49,22 +51,23 @@
     },
     {
       "index": 2,
-      "text": "Awkward silence after Ross's mistake, then nervous 'He said Rachel, right?' whispers",
+      "text": "\"Shall I go on?\" \u2014 the officiant's deadpan query after the wrong name",
       "characters": [
-        "Wedding guests"
+        "Officiant",
+        "Wedding Guests"
       ],
       "joke_types": [
-        "awkward_silence",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Everyone processing what just happened",
-      "punchline": "The uncomfortable reality setting in with whispered confirmations",
-      "craft_total": 6.42,
-      "impact_score": 7.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "The room has just absorbed the catastrophic name slip; chaos is implied in the silence and murmuring",
+      "punchline": "The officiant asks with utter British composure whether to proceed \u2014 an absurdly understated response to a social nuclear bomb",
+      "craft_total": 7.5,
+      "impact_score": 8.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good follow-up to the main mistake, captures realistic awkward aftermath",
+      "explanation": "The officiant's calm in the face of catastrophe is a beautiful deadpan choice. 'Shall I go on?' is pitch-perfect understatement \u2014 it acknowledges the disaster while pretending to minimize it. Very economical and well-structured. The British formality amplifies the comedic contrast.",
       "dialogue": [
         {
           "speaker": "Wedding Guest 1",
@@ -90,22 +93,22 @@
     },
     {
       "index": 3,
-      "text": "Ross's nervous laugh and 'Like there'd be anybody else' after being told to repeat Emily's name",
+      "text": "\"He said, 'Rachel,' right?\" \u2014 guest whispering to confirm what they heard",
       "characters": [
-        "Ross"
+        "Wedding Guest"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "cringe_discomfort"
+        "reaction_beat",
+        "observational"
       ],
-      "setup": "Ross trying to recover from his massive mistake",
-      "punchline": "His attempt at confidence is hilariously misplaced given what just happened",
-      "craft_total": 7.27,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "The name slip has just occurred; the room is in shock",
+      "punchline": "A guest whispers to confirm the unbelievable \u2014 the audience surrogate asking what everyone is thinking",
+      "craft_total": 5.35,
+      "impact_score": 5.75,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Ross's obliviousness and desperate attempt to normalize the situation",
+      "explanation": "Functional audience surrogate moment \u2014 it acknowledges the joke has landed while extending the comedic beat. Not particularly crafted, but serves the scene rhythm well.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -123,22 +126,23 @@
     },
     {
       "index": 4,
-      "text": "'This is worse than when he married the lesbian'",
+      "text": "\"Take thee, Emily\" \u2014 Ross gets it right the second time, then '...Like there'd be anybody else.'",
       "characters": [
-        "Ross's father"
+        "Ross",
+        "Emily"
       ],
       "joke_types": [
-        "callback",
+        "irony_sarcasm",
         "deadpan_understatement"
       ],
-      "setup": "Wedding disaster assessment",
-      "punchline": "Comparing current disaster to Ross's previous failed marriage",
-      "craft_total": 7.8,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Ross successfully says 'Emily' on the restart after the disaster \u2014 the room presumably exhales",
+      "punchline": "An unattributed sardonic voice (likely a guest) mutters 'Like there'd be anybody else' \u2014 a devastating callback to the slip",
+      "craft_total": 7.27,
+      "impact_score": 7.5,
+      "quotability": 6.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Excellent callback with perfect deadpan delivery. Great economy and character voice for Ross's father",
+      "explanation": "Beautifully timed sardonic aside. The irony is layered \u2014 there literally WAS somebody else, making this simultaneously sarcastic and literally true. The understatement ('like there'd be anybody else') does enormous work in very few words. Great economy.",
       "dialogue": [
         {
           "speaker": "Ross's father",
@@ -152,22 +156,22 @@
     },
     {
       "index": 5,
-      "text": "'It could've been worse. He could've shot her.'",
+      "text": "\"This is worse than when he married the lesbian.\"",
       "characters": [
-        "Monica"
+        "Wedding Guest"
       ],
       "joke_types": [
         "dark_subversive",
-        "escalation"
+        "character_comedy"
       ],
-      "setup": "Trying to find silver lining in wedding disaster",
-      "punchline": "Absurdly dark escalation of what 'worse' could mean",
-      "craft_total": 7.15,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "The ceremony has concluded with maximum awkwardness; guests are absorbing the disaster",
+      "punchline": "A guest references Ross's first failed marriage \u2014 to a woman who came out as gay \u2014 as a point of comparison, implying this is somehow worse",
+      "craft_total": 7.47,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good dark humor escalation, though not particularly character-specific",
+      "explanation": "One of the episode's best lines. Requires no prior-episode knowledge to land (the exposition is IN the punchline), is devastatingly bleak about Ross's romantic history, and achieves something rare: it's funny AND sad simultaneously. 'The lesbian' is perfect compressed shorthand. Highly quotable and exemplifies the show's willingness to reference Ross's catastrophic relationship history for dark comedy. Earns its high impact score.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -205,22 +209,22 @@
     },
     {
       "index": 6,
-      "text": "Joey asking 'we still get cake, right?' during the wedding disaster",
+      "text": "\"Just keep smiling.\" \u2014 presumably Monica to the group amid the disaster",
       "characters": [
-        "Joey"
+        "Monica"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Family crisis and emotional devastation all around",
-      "punchline": "Joey's priorities remain food-focused despite the drama",
-      "craft_total": 7.57,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "The wedding has collapsed into catastrophe; the guests and friends are on display",
+      "punchline": "Monica's crisis-management instinct reduces to the most superficial possible instruction \u2014 maintain appearances",
+      "craft_total": 5.82,
+      "impact_score": 5.5,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Joey moment - only he would prioritize cake during emotional crisis. Great character integration",
+      "explanation": "Functional character beat \u2014 Monica's controlling, appearance-focused nature distilled into two words during a crisis. Not a big joke but efficient character comedy.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -230,23 +234,23 @@
     },
     {
       "index": 7,
-      "text": "Ross's father's sarcastic 'Boy, a bad time to say the wrong name, huh, Ross?' followed by Ross's oblivious 'That's true. Thanks, Dad.'",
+      "text": "\"Well, that went well. / It could've been worse. He could've shot her.\"",
       "characters": [
-        "Ross",
-        "Ross's father"
+        "Chandler",
+        "Joey"
       ],
       "joke_types": [
         "irony_sarcasm",
-        "character_comedy"
+        "dark_subversive"
       ],
-      "setup": "Father making obvious sarcastic observation",
-      "punchline": "Ross completely missing the sarcasm and thanking him earnestly",
-      "craft_total": 7.58,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "The ceremony has just ended in catastrophe; Chandler offers the sarcastic opening",
+      "punchline": "Joey one-ups the sarcasm by suggesting shooting the bride would've been worse \u2014 his delivery implying he's genuinely trying to find silver linings",
+      "craft_total": 6.92,
+      "impact_score": 7.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character comedy showing Ross's obliviousness to social cues even in crisis",
+      "explanation": "Classic Chandler-Joey dynamic: Chandler's sarcasm sets up Joey's escalation into genuine (if dark) logic. 'He could've shot her' works because Joey delivers it as sincere comfort, not dark humor \u2014 the character integration elevates what could be a generic dark joke. The structure of the two-line exchange is clean and well-paced.",
       "dialogue": [
         {
           "speaker": "Ross's father",
@@ -260,22 +264,22 @@
     },
     {
       "index": 8,
-      "text": "Phoebe pretending to be 'Dr. Phalange, Ross Geller's personal physician' explaining his brain medicine mix-up",
+      "text": "\"That was pretty funny, wasn't it?\" \u2014 Chandler checking in with Joey after his own joke",
       "characters": [
-        "Phoebe"
+        "Chandler"
       ],
       "joke_types": [
-        "absurdist",
+        "meta_self_referential",
         "character_comedy"
       ],
-      "setup": "Phoebe trying to help Ross by calling Emily's family",
-      "punchline": "Ridiculous fake medical explanation involving interchangeable women's names",
-      "craft_total": 7.75,
-      "impact_score": 7.5,
-      "quotability": 8.0,
+      "setup": "Chandler has just delivered the sarcastic 'that went well' line",
+      "punchline": "He immediately seeks validation, undermining his own cool-guy delivery \u2014 classic Chandler self-sabotage",
+      "craft_total": 6.4,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Phoebe absurdist logic. 'Dr. Phalange' became recurring character name. Good creativity in fake medical condition",
+      "explanation": "Perfect Chandler character beat. His compulsive need for approval immediately deflating his own casual wit is a core character trait executed with economy. Character integration is high \u2014 this is distinctly Chandler.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -293,22 +297,22 @@
     },
     {
       "index": 9,
-      "text": "Phoebe getting confused by her own fake identity, saying 'No, not Phoebe. Dr. Phalange. Oh, no. You have it too.'",
+      "text": "\"No matter what happens with them... we still get cake, right?\"",
       "characters": [
-        "Phoebe"
+        "Joey"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Phoebe maintaining fake doctor persona",
-      "punchline": "She gets confused and thinks the 'disease' is spreading when someone says her real name",
-      "craft_total": 7.8,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Emily is in crisis behind closed doors after the name catastrophe; emotional stakes are high",
+      "punchline": "Joey's first concern is whether the reception food is still on \u2014 specifically the cake",
+      "craft_total": 7.58,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of the absurd premise, Phoebe getting lost in her own story is very in-character",
+      "explanation": "Classic Joey food-obsession joke executed cleanly. The contrast between the gravity of the situation and Joey's singular priority (cake) is perfectly timed. High character integration \u2014 this is unmistakably Joey. 'Right?' adds a note of genuine anxiety that makes it funnier.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -322,23 +326,23 @@
     },
     {
       "index": 10,
-      "text": "Monica and Chandler's 'Seven times' revelation about their London hookup",
+      "text": "\"She's just fixing her makeup.\" / \"I hate you!\" (from behind door) / \"And I love you!\"",
       "characters": [
-        "Monica",
-        "Chandler"
+        "Ross",
+        "Emily"
       ],
       "joke_types": [
-        "setup_punchline",
-        "cringe_discomfort"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "They're discussing their one-night stand with regret",
-      "punchline": "Revealing it wasn't just once but seven times",
-      "craft_total": 7.62,
-      "impact_score": 8.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Ross is trying to manage the guests outside while Emily has locked herself inside",
+      "punchline": "His cover story ('fixing makeup') is immediately shattered by Emily screaming 'I hate you!' \u2014 Ross responds with cheerful 'And I love you!' to maintain the fiction",
+      "craft_total": 7.29,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good reveal with perfect timing. Shows their mutual lack of self-control despite their protests",
+      "explanation": "Three-beat structure works beautifully: the lie, the perfect demolition of the lie, and Ross's desperate salvage attempt. The 'And I love you!' reframe is particularly good \u2014 Ross's optimism/denial in one cheerful deflection. Well-structured escalating joke with strong character voice.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -360,23 +364,22 @@
     },
     {
       "index": 11,
-      "text": "Monica and Chandler's 'only in London' rule immediately followed by planning wine cellar rendezvous",
+      "text": "\"A bad time to say the wrong name, huh?\" \u2014 Ross's father commenting on the situation",
       "characters": [
-        "Monica",
-        "Chandler"
+        "Jack Geller"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
+        "deadpan_understatement",
+        "observational"
       ],
-      "setup": "They establish strict rule about only doing it while in London",
-      "punchline": "Immediately making plans to break their own rule",
-      "craft_total": 7.25,
+      "setup": "Emily is locked in a room screaming; the wedding is in ruins",
+      "punchline": "Ross's father offers perhaps the most understated possible observation about the catastrophe",
+      "craft_total": 7.04,
       "impact_score": 7.0,
       "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good irony showing their complete lack of willpower despite good intentions",
+      "is_callback": 1,
+      "explanation": "Solid deadpan understatement. The humor is in the compression of the catastrophe into casual dad-speak. 'Huh?' at the end gives it a perfect trailing-off quality. Economy is the main asset here.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -398,22 +401,22 @@
     },
     {
       "index": 12,
-      "text": "Monica's string of meaningless business clich\u00e9s: 'Just do the right thing. Tow the line. Thread the needle. Think outside the box.'",
+      "text": "Phoebe calls as 'Dr. Filangie,' Ross's fictional personal physician, to cover for the name slip",
       "characters": [
-        "Monica"
+        "Phoebe"
       ],
       "joke_types": [
         "absurdist",
         "character_comedy"
       ],
-      "setup": "Rachel asking for serious advice about Ross",
-      "punchline": "Monica spouting random corporate buzzwords that don't help at all",
-      "craft_total": 7.32,
-      "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Phoebe calls Emily's family claiming to be Dr. Filangie, Ross's personal physician",
+      "punchline": "The elaborate fake-doctor ruse \u2014 including the fake name 'Filangie' \u2014 to explain that Ross has a brain condition causing name interchangeability",
+      "craft_total": 7.71,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Monica's tendency to default to business speak when flustered",
+      "explanation": "Quintessential Phoebe absurdism \u2014 she invents an elaborate fictional solution with total sincerity. 'Dr. Filangie' as a name is funny in itself (sufficiently fake-sounding). The logic of 'women's names are interchangeable in his brain' is both absurd and a weirdly accurate description of the situation.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -435,22 +438,22 @@
     },
     {
       "index": 13,
-      "text": "Ross's parents - 'Were we bad parents?' 'Yes.'",
+      "text": "\"Without it, in the brain of Ross... women's names are interchangeable.\"",
       "characters": [
-        "Ross's parents"
+        "Phoebe"
       ],
       "joke_types": [
-        "setup_punchline",
-        "deadpan_understatement"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Mother asking worried rhetorical question about their parenting",
-      "punchline": "Father's immediate, matter-of-fact 'Yes'",
-      "craft_total": 7.67,
+      "setup": "Phoebe is mid-fake-doctor call explaining the fictional brain medicine",
+      "punchline": "The 'diagnosis' is delivered with medical gravitas \u2014 women's names are interchangeable in Ross's brain",
+      "craft_total": 7.6,
       "impact_score": 7.5,
-      "quotability": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect deadpan delivery with excellent economy. Great contrast between worried question and blunt answer",
+      "is_callback": 1,
+      "explanation": "The specific wording 'women's names are interchangeable' is a great absurdist medical diagnosis that also functions as a darkly comic summary of Ross's romantic history. Phoebe's earnest delivery is implied and essential.",
       "dialogue": [
         {
           "speaker": "Mrs. Geller",
@@ -464,41 +467,42 @@
     },
     {
       "index": 14,
-      "text": "Ross's father complaining about being served steak with no place to sit",
+      "text": "\"Oh, my God! Phoebe.\" / \"No, not Phoebe. Dr. Filangie.\" / \"Oh, no! You have it too!\"",
       "characters": [
-        "Ross's father"
+        "Phoebe",
+        "Emily's Family Member"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Wedding reception logistics problems",
-      "punchline": "Focusing on practical dining concerns during emotional crisis",
-      "craft_total": 6.28,
-      "impact_score": 5.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Decent observational humor showing character's tendency to focus on practical matters"
+      "setup": "Phoebe has been impersonating Dr. Filangie; the person on the phone accidentally calls her by her real name",
+      "punchline": "Phoebe panics, is called 'Phoebe,' then the person on the phone applies the fake diagnosis to Phoebe herself \u2014 'You have it too!'",
+      "craft_total": 8.18,
+      "impact_score": 8.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the episode's sharpest piece of joke construction outside the cold open. The setup (fake doctor call) generates its own perfectly logical trap: Phoebe gets called by her real name, which 'proves' she has the condition she just invented. The joke eats itself in the best way. The logic is airtight within the absurd premise, and 'Oh, no! You have it too!' is a great punchline because the person is sincerely applying the fake disease. Earns its near-8 score."
     },
     {
       "index": 15,
-      "text": "Joey justifying eating meat: 'I figured we're in another country, so it doesn't count'",
+      "text": "\"What kind of bitch hangs up on a doctor?\"",
       "characters": [
-        "Joey"
+        "Phoebe"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "irony_sarcasm"
       ],
-      "setup": "Joey promised Phoebe not to eat meat during her pregnancy",
-      "punchline": "Using geographic location as excuse to break promise",
-      "craft_total": 7.65,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Joey logic - finding creative loopholes to justify what he wants to do anyway",
+      "setup": "The person on the phone has hung up after the 'you have it too' revelation",
+      "punchline": "Phoebe, still fully in-character as Dr. Filangie, is offended at the rudeness \u2014 without registering any irony about being a fake doctor",
+      "craft_total": 7.76,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Highly quotable and perfectly in Phoebe's voice. The joke works on multiple levels: the absurdity of a fake doctor demanding respect, Phoebe's obliviousness to her own fraud, and the casual use of 'bitch' in a moment of sincere indignation. 'What kind of bitch hangs up on a doctor?' is genuinely one of the episode's most memorable lines. High character integration \u2014 this is unmistakably Phoebe.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -524,22 +528,23 @@
     },
     {
       "index": 16,
-      "text": "Rachel's 'circus freak' analogy: 'If you'd seen a circus freak, you would've said: I take thee Circus Freak'",
+      "text": "\"How could we have let this happen?\" / \"Seven times!\"",
       "characters": [
-        "Rachel"
+        "Monica",
+        "Chandler"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "setup_punchline",
+        "escalation"
       ],
-      "setup": "Rachel trying to minimize the significance of Ross saying her name",
-      "punchline": "Absurd hypothetical comparison to make it seem meaningless",
-      "craft_total": 7.25,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Monica is expressing guilt/disbelief about their secret London hookup",
+      "punchline": "Chandler responds not with emotional reflection but with the precise count: seven times \u2014 both boastful and self-incriminating",
+      "craft_total": 7.71,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good absurdist logic, though Rachel trying to convince herself is transparent",
+      "explanation": "Perfect two-beat joke. The setup ('how could we let this happen?') implies shame and introspection; the punchline ('seven times!') reveals Chandler has been mentally cataloging the quantity with apparent pride. The specificity of 'seven' is key \u2014 it's not 'a lot' or 'too many times,' it's exactly seven, implying he knows precisely. Economy is excellent.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -553,22 +558,23 @@
     },
     {
       "index": 17,
-      "text": "'You spit on me, man' after Ross's emotional outburst about the band",
+      "text": "\"I blame London. Bad London!\"",
       "characters": [
-        "Band member"
+        "Monica",
+        "Chandler"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "reaction_beat"
+        "absurdist",
+        "irony_sarcasm"
       ],
-      "setup": "Ross having emotional breakdown about wedding",
-      "punchline": "Band member's practical concern about being spit on",
-      "craft_total": 6.42,
-      "impact_score": 6.0,
-      "quotability": 5.5,
+      "setup": "Monica and Chandler are trying to rationalize their hookup; Monica says 'I blame London'",
+      "punchline": "Chandler adds 'Bad London!' \u2014 scolding a city as if it were a misbehaving pet",
+      "craft_total": 7.35,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good reaction beat breaking tension, though not particularly original",
+      "explanation": "'Bad London!' is a small but effective absurdist addition \u2014 treating a city like a dog who did something wrong. Chandler's voice is clear in the construction. Economical and funny, though not exceptional.",
       "dialogue": [
         {
           "speaker": "Band member",
@@ -578,22 +584,23 @@
     },
     {
       "index": 18,
-      "text": "Chandler's wedding bathroom story about trying to pop the window out to escape",
+      "text": "Monica and Chandler agree to keep having sex 'only while still in London' \u2014 then immediately plan to meet in the wine cellar",
       "characters": [
+        "Monica",
         "Chandler"
       ],
       "joke_types": [
-        "callback",
-        "character_comedy"
+        "irony_sarcasm",
+        "escalation"
       ],
-      "setup": "Emily taking long time in bathroom at reception",
-      "punchline": "Chandler sharing his own wedding escape attempt experience",
-      "craft_total": 7.27,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good callback to Chandler's commitment issues, delivered with perfect timing",
+      "setup": "They agree that the hookup must stop when they return home \u2014 a seemingly firm resolution",
+      "punchline": "Within seconds, Chandler suggests the wine cellar 'in two minutes' \u2014 the rule is already being abused by its own loophole",
+      "craft_total": 6.94,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic sitcom irony \u2014 the rule and its immediate violation in the same breath. The structure is clean and the rapid collapse of their self-imposed morality is well-timed. Not the sharpest joke but efficiently constructed.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -619,41 +626,41 @@
     },
     {
       "index": 19,
-      "text": "Monica warning about screaming 'yippee' during sex",
+      "text": "Monica's frantic advice to Rachel: 'Tow the line! Thread the needle! Think outside the box!'",
       "characters": [
         "Monica"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Monica and Chandler about to have sex in honeymoon suite",
-      "punchline": "Monica's oddly specific and embarrassing sexual quirk",
-      "craft_total": 7.38,
-      "impact_score": 7.0,
-      "quotability": 8.0,
+      "setup": "Rachel asks Monica what she should do about Ross saying her name; Monica is simultaneously distracted by her secret with Chandler",
+      "punchline": "Monica spits out a string of completely mixed-up and contradictory idioms in a panic, none of which constitute actual advice",
+      "craft_total": 7.01,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Funny TMI moment that's weirdly specific enough to feel real and character-appropriate"
+      "explanation": "Monica panicking into a word salad of idioms is good character comedy \u2014 her control-freak precision cracking under pressure. The randomness of the phrases ('thread the needle' is not a standard motivational idiom, making it funnier) is well-chosen. The character integration is solid: Monica would reach for authoritative-sounding phrases even when she has nothing to say."
     },
     {
       "index": 20,
-      "text": "Rachel's obsessed rambling about Ross saying her name meaning he still loves her",
+      "text": "\"Jack, is it all our fault? Were we bad parents?\"",
       "characters": [
-        "Rachel"
+        "Judy Geller"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "observational"
       ],
-      "setup": "Rachel convinced Ross's mistake was meaningful",
-      "punchline": "Her desperate over-analysis and need for validation",
-      "craft_total": 6.47,
-      "impact_score": 6.0,
+      "setup": "Ross's parents are watching the wedding disaster unfold",
+      "punchline": "Judy's immediate pivot to self-blame/parenting guilt in the middle of a public catastrophe is delivered as sincere anxiety",
+      "craft_total": 6.22,
+      "impact_score": 5.5,
       "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Rachel's tendency to over-analyze romantic situations",
+      "explanation": "Good character beat for Judy \u2014 her self-absorbed parental guilt is a consistent trait. It's a small but recognizable joke for viewers familiar with the Gellers.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -679,23 +686,22 @@
     },
     {
       "index": 21,
-      "text": "Monica and Chandler's conflicting time estimates - 'five minutes' vs 'fifteen minutes' for changing",
+      "text": "\"Who serves steak when there's no place to sit?\"",
       "characters": [
-        "Monica",
-        "Chandler"
+        "Jack Geller"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "They need to change clothes to go out",
-      "punchline": "Their very different estimates reveal their real intentions",
-      "craft_total": 7.33,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Judy asks Jack if they were bad parents, inviting an emotional reckoning",
+      "punchline": "Jack ignores the question entirely and complains about the catering logistics \u2014 an obliviously selfish non-sequitur",
+      "craft_total": 7.5,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good subtle joke about their sexual tension and conflicting priorities",
+      "explanation": "Jack Geller's total obliviousness to emotional depth is perfectly captured. The specific complaint (steak without seating) is absurdly mundane given the context. Great economy and character integration \u2014 Jack throughout Friends is defined by this self-focused practicality.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -737,23 +743,22 @@
     },
     {
       "index": 22,
-      "text": "Monica cutting off Chandler's compliment with 'No time for that' then immediately jumping him",
+      "text": "\"Sorry, dear, I only dance when I'm drunk. Want me to get you something?\"",
       "characters": [
-        "Monica",
-        "Chandler"
+        "Wedding Guest"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "physical_slapstick"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Monica saying there's no time for romance",
-      "punchline": "Immediately contradicting herself with actions",
-      "craft_total": 7.03,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Joey asks an older woman to dance",
+      "punchline": "She declines on sobriety grounds and immediately offers to fix that \u2014 a casually self-aware alcoholism joke",
+      "craft_total": 6.59,
+      "impact_score": 6.33,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good physical comedy showing their inability to resist each other",
+      "explanation": "Charming one-off joke from a background character. The self-awareness of 'I only dance when I'm drunk' followed by the solution-oriented 'Want me to get you something?' is well-structured and efficiently delivered. Good economy.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -771,23 +776,24 @@
     },
     {
       "index": 23,
-      "text": "Joey vs Chandler door negotiation: 'Which one of us is gonna be having sex in there? Me or you?' 'Well, I suppose I would have to say you.'",
+      "text": "\"You promised, no meat till Phoebe has the babies. / We're in another country, so it doesn't count. / True. / He's got a point.\"",
       "characters": [
+        "Monica",
         "Joey",
-        "Chandler"
+        "Rachel"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Joey trying to get Chandler out of the room for his date",
-      "punchline": "Chandler's reluctant admission that Joey will be the one having sex",
-      "craft_total": 7.3,
-      "impact_score": 6.5,
-      "quotability": 6.5,
+      "setup": "Joey is eating meat at the reception; Monica calls him out on a promise to Phoebe",
+      "punchline": "Joey's logic: foreign countries create a geographic exemption from vows; Monica and Rachel immediately accept this as valid",
+      "craft_total": 7.41,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good setup/payoff with Chandler's characteristic self-deprecating response",
+      "explanation": "Joey's geographic loophole logic is perfectly absurd \u2014 it mirrors the Monica/Chandler 'only in London' rule, which makes it funnier in context. The fact that Monica and Rachel simply accept 'he's got a point' is a great comedic beat. High character integration: this is exactly how Joey rationalizes things.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -821,22 +827,22 @@
     },
     {
       "index": 24,
-      "text": "Monica's 'My Giant' movie excuse - 'we've already paid for it'",
+      "text": "Ross tells Rachel the name slip 'didn't mean anything' \u2014 \"If you'd seen a circus freak, you would've said: 'I take thee, Circus Freak.'\"",
       "characters": [
-        "Monica"
+        "Ross"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Making excuses to stay in the room",
-      "punchline": "Ridiculous justification based on movie rental economics",
-      "craft_total": 7.17,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Ross is desperately arguing that saying Rachel's name was an accident with no romantic meaning",
+      "punchline": "His example of an alternative name he might have said \u2014 'Circus Freak' \u2014 is absurd but reveals his panic; the specificity of 'circus freak' is the joke",
+      "craft_total": 7.5,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good absurdist excuse that sounds like Monica's practical reasoning",
+      "explanation": "'I take thee, Circus Freak' is a memorable and highly quotable absurdist image. Ross's frantic logic requires him to generate the most random possible alternative name, and 'Circus Freak' is funny precisely because it's so random and specific simultaneously. The rewatch value is high because knowing Ross's feelings makes this denial even funnier.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -854,22 +860,22 @@
     },
     {
       "index": 25,
-      "text": "Chandler's honeymoon suite anthropomorphization: 'The room expects sex... would be disappointed... other suites would think it was a loser'",
+      "text": "Ross tells Rachel the name slip meant nothing \u2014 \"I can understand why Emily thought it meant something... because it was you.\"",
       "characters": [
-        "Chandler"
+        "Ross"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Justifying having sex in Ross and Emily's honeymoon suite",
-      "punchline": "Increasingly ridiculous personification of the hotel room's feelings",
-      "craft_total": 8.05,
-      "impact_score": 7.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 0,
+      "setup": "Ross is trying to convince Rachel it meant nothing",
+      "punchline": "He undermines his own argument mid-sentence \u2014 'because it was you' is a confession dressed as an explanation",
+      "craft_total": 6.62,
+      "impact_score": 6.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent escalating absurdist logic that's perfectly Chandler. Creative anthropomorphization with good build",
+      "explanation": "This is both a dramatic moment and a comedy of self-incrimination \u2014 Ross attempting to minimize the slip while simultaneously revealing why it happened. The writing is sharp enough to function as both drama and comedy simultaneously. Character integration is high.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -879,22 +885,23 @@
     },
     {
       "index": 26,
-      "text": "Chandler's time math: 'in 45 minutes, you could find her twice'",
+      "text": "\"You spit on me, man!\" \u2014 Ross spitting on someone while arguing passionately",
       "characters": [
-        "Chandler"
+        "Ross",
+        "Unknown Character"
       ],
       "joke_types": [
-        "absurdist",
-        "deadpan_understatement"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Discussion about how long Ross should look for Emily",
-      "punchline": "Chandler's nonsensical mathematical logic about finding people",
-      "craft_total": 7.75,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Ross is mid-passionate speech about Emily",
+      "punchline": "He inadvertently spits on a bystander, breaking the dramatic tension with physical comedy",
+      "craft_total": 5.83,
+      "impact_score": 5.83,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Chandler logic that makes no sense but is delivered with complete confidence",
+      "explanation": "Physical comedy beat that works as a tension-deflator. Not particularly original but well-timed to interrupt Ross's escalating anxiety spiral.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -908,21 +915,22 @@
     },
     {
       "index": 27,
-      "text": "'It's a very large plane' as excuse for why they need to leave",
+      "text": "Joey describing trying to escape his own wedding by popping the window out of the frame",
       "characters": [
-        "Monica"
+        "Joey"
       ],
       "joke_types": [
-        "absurdist"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Making excuse to leave Ross alone",
-      "punchline": "Completely irrelevant detail about plane size",
-      "craft_total": 6.35,
-      "impact_score": 5.5,
-      "quotability": 6.0,
+      "setup": "Emily is locked inside; someone notes she's taking a long time to come out",
+      "punchline": "Joey recalls that at his own (presumably acting role or unmentioned) wedding, he was trying to escape through the window \u2014 casually revealing he has been in this situation before",
+      "craft_total": 7.09,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Mild absurdist humor but not particularly strong or memorable",
+      "explanation": "Joey's casual self-revelation (he was once trapped at a wedding too) is good character comedy. The specificity of 'popping the window out of the frame' implies a very particular and failed escape attempt. The 'Get the hell out of there. You know?' adds a great confessional quality.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -940,22 +948,22 @@
     },
     {
       "index": 28,
-      "text": "Ross's oblivious 'you don't need to rub my butt' to his concerned friends",
+      "text": "\"Oh, look at that. Same thing.\" \u2014 after Ross tries to break down the door and presumably fails exactly like Emily locked herself in",
       "characters": [
-        "Ross"
+        "Joey"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Friends trying to comfort Ross",
-      "punchline": "Ross misinterpreting supportive touching as inappropriate",
-      "craft_total": 6.75,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Ross charges in to get Emily; we hear/infer the same locked-out result",
+      "punchline": "Joey's perfectly flat 'Oh, look at that. Same thing.' \u2014 implies Ross is now also trapped or the door remains locked",
+      "craft_total": 6.76,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Decent physical comedy moment showing Ross's emotional state and obliviousness",
+      "explanation": "Four words doing maximum work. Joey's detached observation is a perfect deadpan beat. Economy is the star here \u2014 'Same thing' as an entire comedic observation is impressively compressed.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -989,23 +997,22 @@
     },
     {
       "index": 29,
-      "text": "Monica and Chandler's quickie logistics: 'Those doors look pretty soundproof' and risk assessment",
+      "text": "\"In the middle of everything, if I scream, 'Yippee!' just ignore me.\"",
       "characters": [
-        "Monica",
         "Chandler"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Wanting to have sex while Ross sleeps nearby",
-      "punchline": "Calculating the risks and logistics of inappropriate timing",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Chandler is at the disaster wedding, outwardly appearing to be a supportive friend",
+      "punchline": "He preemptively warns someone he might yell 'Yippee!' \u2014 implying he's struggling to contain delight at the chaos, or excitement about his secret with Monica",
+      "craft_total": 7.74,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good cringe humor about their complete lack of appropriate boundaries",
+      "explanation": "'Yippee' is a perfectly specific word choice \u2014 not 'yes' or 'hooray' but the distinctly dorky 'yippee,' which tells us everything about Chandler's internal state. The preemptive warning is a clever structure. High character integration \u2014 Chandler's self-aware awkwardness around joy is a core trait. Very quotable.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1043,41 +1050,42 @@
     },
     {
       "index": 30,
-      "text": "Emily's stepmother calling Ross 'absolutely delicious' while her husband is right there",
+      "text": "Rachel's breathless monologue about Ross saying her name \u2014 \"That obviously means he still loves me!\"",
       "characters": [
-        "Emily's stepmother"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Awkward family meeting during crisis",
-      "punchline": "Inappropriate flirtation at worst possible moment",
-      "craft_total": 6.88,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good cringe moment with inappropriate timing, though not particularly original"
-    },
-    {
-      "index": 31,
-      "text": "Joey's existential crisis about never being as good as 'that giant' actor",
-      "characters": [
-        "Joey"
+        "Rachel"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "irony_sarcasm"
       ],
-      "setup": "Joey watching My Giant and comparing himself",
-      "punchline": "Taking the movie seriously as career benchmark",
-      "craft_total": 7.5,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Rachel rushes to find the girls and immediately delivers her interpretation of the 'Ross saying her name' event",
+      "punchline": "\"That obviously means he still loves me!\" delivered with complete certainty \u2014 the delusion is the joke",
+      "craft_total": 5.99,
+      "impact_score": 6.0,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Joey moment - taking bad movie seriously and having career crisis. Great character integration",
+      "explanation": "The humor is in Rachel's immediate leap to the most self-serving interpretation, but it's fairly predictable. The line is played broad. Functional cringe-comedy about self-delusion."
+    },
+    {
+      "index": 31,
+      "text": "\"Wow, you look\u2014 / No time for that.\"",
+      "characters": [
+        "Ross",
+        "Rachel"
+      ],
+      "joke_types": [
+        "misdirection",
+        "reaction_beat"
+      ],
+      "setup": "Rachel has changed clothes; Ross begins what appears to be a compliment",
+      "punchline": "Rachel cuts him off with 'No time for that' \u2014 the interrupted compliment implying she knows and can't deal with it right now",
+      "craft_total": 6.62,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The interrupted compliment works as both a comedy beat and a character moment. Rachel's 'no time for that' is simultaneously self-aware (she knows she looks good) and self-protective (she can't engage with it). Good economy.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1095,22 +1103,23 @@
     },
     {
       "index": 32,
-      "text": "Joey's fear of dying 'an unsuccessful, regular-size man'",
+      "text": "Joey trying to get into a room: 'Hey, dude! Let me in! I got a girl out here!' / 'I got a girl in here!'",
       "characters": [
-        "Joey"
+        "Joey",
+        "Chandler"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "escalation"
       ],
-      "setup": "Joey's continued crisis about the giant actor",
-      "punchline": "Linking success to physical height in absurd way",
-      "craft_total": 8.05,
-      "impact_score": 7.5,
-      "quotability": 8.5,
+      "setup": "Joey is at a hotel room door trying to gain entry; Chandler is inside with Monica",
+      "punchline": "Both claim to have a girl \u2014 competing claims of heterosexual legitimacy, with Chandler winning the argument",
+      "craft_total": 7.2,
+      "impact_score": 7.17,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent absurdist line that's quotable and perfectly captures Joey's shallow priorities. Great economy and character voice",
+      "explanation": "Classic door-negotiation comedy. The parallel structure ('I got a girl out here' / 'I got a girl in here') is well-constructed. Joey's negotiating position is weaker (a potential girl vs. an actual girl) which Chandler correctly identifies.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1128,24 +1137,22 @@
     },
     {
       "index": 33,
-      "text": "Phoebe's accusation reveal: 'You ate meat!' 'You had sex!'",
+      "text": "\"I suppose I would have to say you.\" \u2014 Chandler conceding Joey would be having sex in the room, to explain why Joey should leave",
       "characters": [
-        "Phoebe",
-        "Monica",
-        "Joey"
+        "Chandler"
       ],
       "joke_types": [
-        "setup_punchline",
-        "escalation"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Friends confronting each other about rule-breaking",
-      "punchline": "Escalating accusations revealing everyone's secrets",
-      "craft_total": 7.53,
+      "setup": "Joey asks which of them will be having sex in the room",
+      "punchline": "Chandler, who is actually there with Monica secretly, gives a reluctant, overly formal concession to Joey's claim",
+      "craft_total": 7.09,
       "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalating reveal structure with rapid-fire accusations",
+      "explanation": "The humor is in Chandler's hypocrisy \u2014 he's the one secretly with Monica but concedes the room to Joey under pressure. 'I suppose I would have to say you' is delightfully formal and reluctant for such an absurd negotiation.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1211,22 +1218,23 @@
     },
     {
       "index": 34,
-      "text": "Phoebe's pregnancy confusion: 'Oh, this pregnancy is throwing me all off'",
+      "text": "\"It's My Giant. / My Giant? / I love that movie!\" \u2014 Joey and Chandler bond over My Giant through a closed door",
       "characters": [
-        "Phoebe"
+        "Joey",
+        "Chandler"
       ],
       "joke_types": [
         "character_comedy",
-        "callback"
+        "absurdist"
       ],
-      "setup": "Phoebe making wrong accusations",
-      "punchline": "Blaming pregnancy for her mistake",
-      "craft_total": 6.52,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Mild callback to ongoing pregnancy storyline, decent character moment",
+      "setup": "Joey is trying to claim the room for sex; Chandler and Monica are inside claiming to watch a movie",
+      "punchline": "The completely sincere bonding over the obscure film 'My Giant' derails the entire negotiation \u2014 Joey's love of a specific movie is funnier than any sex joke",
+      "craft_total": 6.79,
+      "impact_score": 6.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's funniest micro-moments. The specificity of 'My Giant' (a real, obscure 1998 film) rather than a made-up title is key \u2014 it's funnier because it's real and somewhat embarrassing. Joey's immediate and genuine enthusiasm ('I love that movie!') completely obliterates the sexual negotiation that was happening. The pivot is unexpected and perfect. High character integration: Joey's sincere enthusiasm for entertainments other men might be embarrassed by is a consistent and beloved trait.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -1236,22 +1244,22 @@
     },
     {
       "index": 35,
-      "text": "Chandler's blunt 'it just meant a lot to me because you're really hot'",
+      "text": "Monica and Chandler in the honeymoon suite: \"This is the room. The room expects sex.\"",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "deadpan_understatement",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Monica giving heartfelt explanation of their night together",
-      "punchline": "Chandler's characteristically shallow but honest response",
-      "craft_total": 7.92,
-      "impact_score": 7.5,
+      "setup": "Monica feels wrong about using Ross and Emily's honeymoon suite",
+      "punchline": "Chandler personifies the room as having expectations \u2014 'The room expects sex' \u2014 turning inanimate decor into peer pressure",
+      "craft_total": 7.01,
+      "impact_score": 6.83,
       "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Chandler moment - deflating romantic moment with blunt honesty. Great contrast with Monica's sentimental speech",
+      "explanation": "Chandler's absurdist anthropomorphizing of the room is genuinely creative. The escalation into 'all the other honeymoon suites would think it was a loser' is an effective callback within the same bit.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1265,41 +1273,41 @@
     },
     {
       "index": 36,
-      "text": "Monica's 'I'm still on London time. Does that count?' to justify more sex",
+      "text": "\"The room would be disappointed if it didn't get sex. / All the other honeymoon suites would think it was a loser.\"",
       "characters": [
-        "Monica"
+        "Chandler"
       ],
       "joke_types": [
-        "character_comedy",
-        "callback"
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Their 'only in London' rule",
-      "punchline": "Finding creative loophole using time zones",
-      "craft_total": 7.75,
-      "impact_score": 7.0,
+      "setup": "Chandler has established the room has 'expectations'",
+      "punchline": "He extends the metaphor: the room would be socially ostracized among other honeymoon suites for failure to perform",
+      "craft_total": 7.85,
+      "impact_score": 8.0,
       "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Clever callback with creative logic. Shows Monica's ability to rationalize what she wants"
+      "explanation": "This escalation of the 'room has feelings' bit into peer pressure among hotel rooms is surprisingly sophisticated absurdism. The social-anxiety framing (other suites would think it's a loser) is both Chandler-specific (he understands social rejection) and genuinely funny as an extended metaphor. The logic is internally consistent and escalates to a satisfying extreme. This is Chandler at his best."
     },
     {
       "index": 37,
-      "text": "Rachel's sudden 'I get it!' realization at the airport",
+      "text": "\"Nope! Not under here!\" \u2014 Ross frantically searching the venue for Emily",
       "characters": [
-        "Rachel"
+        "Ross"
       ],
       "joke_types": [
-        "setup_punchline",
-        "misdirection"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Rachel seeming to have emotional breakthrough about Ross",
-      "punchline": "Her realization is actually about something trivial, not the relationship",
-      "craft_total": 6.7,
-      "impact_score": 6.0,
-      "quotability": 4.5,
+      "setup": "Ross is urgently searching everywhere for the missing Emily",
+      "punchline": "The implied visual of Ross checking progressively absurd locations (under things) with increasing desperation",
+      "craft_total": 5.78,
+      "impact_score": 5.5,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirection but the payoff isn't strong enough to justify the setup",
+      "explanation": "Physical comedy beat. 'Nope! Not under here!' implies Ross is literally looking under furniture, which is a funny image but not a particularly crafted joke. Works mainly as a visual gag inference.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1317,22 +1325,22 @@
     },
     {
       "index": 38,
-      "text": "Rachel's airplane panic: 'Hey, are we moving? Why are we moving? Does the captain know we're moving?'",
+      "text": "\"In 45 minutes, you could find her twice.\"",
       "characters": [
-        "Rachel"
+        "Joey"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Rachel nervous about flying",
-      "punchline": "Escalating panic about basic airplane functions",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Someone suggests giving Ross 45 minutes to find Emily",
+      "punchline": "Joey's math: 45 minutes is enough to find her twice \u2014 the logic is internally consistent in Joey's world",
+      "craft_total": 7.08,
+      "impact_score": 6.67,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalating panic that fits Rachel's character, though not particularly original",
+      "explanation": "Joey's obliviously mathematical approach to an emotional situation is well-executed. 'You could find her twice' treats the search like a commodity that scales with time. Good economy and clear character voice.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1358,22 +1366,22 @@
     },
     {
       "index": 39,
-      "text": "Emily appearing at airport just as plane is leaving, creating the cliffhanger",
+      "text": "\"For all I know, she's trying to find me but couldn't, because I kept moving. From now on, I'm staying in one place. Right here.\"",
       "characters": [
-        "Emily"
+        "Ross"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "misdirection"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Ross giving up on Emily and leaving with Rachel",
-      "punchline": "Emily shows up at worst possible moment, creating maximum drama",
-      "craft_total": 6.92,
-      "impact_score": 8.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 1,
+      "setup": "Ross has been frantically moving around searching for Emily",
+      "punchline": "He realizes his movement might be the problem \u2014 a logic that is simultaneously reasonable and reveals his desperate state",
+      "craft_total": 6.86,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Strong dramatic irony and cliffhanger structure, though the comedy is more situational than verbal",
+      "explanation": "Ross's desperate self-coaching is a good character beat. The logic of 'maybe I'm the one who's hard to find' is self-aware comedy about his panic state. Decent but not exceptional.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1400,6 +1408,606 @@
           "line": "What is going on here?"
         }
       ]
+    },
+    {
+      "index": 40,
+      "text": "\"Thanks, guys! I really appreciate this, but you don't need to rub my butt.\"",
+      "characters": [
+        "Ross"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "reaction_beat"
+      ],
+      "setup": "Ross's friends are comforting him at the airport; they're clearly physically consoling him",
+      "punchline": "Ross appreciates the support but draws a line at whatever physical comfort is being offered \u2014 specifically butt-rubbing",
+      "craft_total": 6.71,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good visual gag \u2014 the specificity of 'you don't need to rub my butt' implies this is actually happening, which is funnier than any generic comfort-gone-wrong joke. The sincerity of 'I really appreciate this, but' makes it land better."
+    },
+    {
+      "index": 41,
+      "text": "\"...let's go for it.\" \u2014 Chandler abandons moral objections about hooking up near sleeping Ross",
+      "characters": [
+        "Chandler",
+        "Monica"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Monica and Chandler are debating whether to hook up in the room with Ross potentially sleeping nearby",
+      "punchline": "After listing the objections (he could wake up), Chandler flips entirely with 'let's go for it' \u2014 the rationalization evaporating instantly",
+      "craft_total": 6.49,
+      "impact_score": 6.75,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'A, he could wake up. And B, you know... let's go for it' structure works as a list-without-completion joke. Chandler's moral reasoning collapsing mid-sentence is appropriately in character."
+    },
+    {
+      "index": 42,
+      "text": "\"We're very sad that it didn't work out between you and Emily, monkey.\" / \"But I think you're absolutely delicious!\" \u2014 Emily's mother to Ross",
+      "characters": [
+        "Emily's Mother"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Emily's mother comes to collect Emily's things and face Ross",
+      "punchline": "She calls Ross 'monkey' and then, despite the entire catastrophe, tells him she finds him 'absolutely delicious' \u2014 her flirtation completely inappropriate to the moment",
+      "craft_total": 6.7,
+      "impact_score": 6.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Emily's mother's flirtatious incongruity is a great recurring character bit. 'Absolutely delicious' in the context of the ruined wedding is wonderfully inappropriate. The juxtaposition of 'we're very sad' and 'I find you delicious' is sharp writing."
+    },
+    {
+      "index": 43,
+      "text": "\"But I think you're absolutely delicious!\" \u2014 Emily's mother to Ross, while Emily's father is hostile",
+      "characters": [
+        "Emily's Mother"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Emily's parents are confronting Ross at the wedding disaster; father is furious",
+      "punchline": "Emily's mother announces she finds Ross 'absolutely delicious' \u2014 inappropriately flirtatious given the context",
+      "craft_total": 6.91,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Emily's mother finding Ross attractive while her husband is furious and her daughter is devastated is a funny tonal collision. The word 'delicious' is a great word choice \u2014 slightly predatory and very specific."
+    },
+    {
+      "index": 44,
+      "text": "\"Excuse me, I'm standing right here.\" \u2014 Ross objecting to Emily's mother's flirtation",
+      "characters": [
+        "Ross"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "deadpan_understatement"
+      ],
+      "setup": "Emily's mother has just called Ross delicious in front of him",
+      "punchline": "Ross protests his own objectification \u2014 but the protest also highlights how absurd his situation is",
+      "craft_total": 6.54,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good reaction beat. The irony of Ross objecting to being called delicious (usually a compliment) in this context is a mild joke. The line functions mainly as an extension of Joke #46 rather than standing alone."
+    },
+    {
+      "index": 45,
+      "text": "\"Come on, bugger face!\" \u2014 Emily's father addressing Ross with casual British insult after a formal moment",
+      "characters": [
+        "Emily's Father"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ross has made an emotional plea to Emily's parents about his love for Emily",
+      "punchline": "Emily's father wraps up the conversation with the casually British insult 'bugger face' \u2014 warmth expressed through rudeness",
+      "craft_total": 7.07,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Bugger face' is a funny-sounding British insult used as a term of affection/dismissal. The juxtaposition of Ross's sincere emotional plea and 'Come on, bugger face!' is a great tonal whiplash. High economy."
+    },
+    {
+      "index": 46,
+      "text": "\"You spend your life in the bathroom. Why do you never go out the window?\"",
+      "characters": [
+        "Emily's Father"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Emily has apparently locked herself in a bathroom again",
+      "punchline": "Her father, with the weariness of experience, asks why she never uses the window \u2014 implying this is a recurring behavior he has long-suffering knowledge of",
+      "craft_total": 6.98,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Brilliant small joke. 'You spend your life in the bathroom' implies this is a known Emily behavior \u2014 she retreats to bathrooms. The practical alternative of the window reveals a father who has been through this enough to have opinions on her escape tactics. Character-revealing and funny."
+    },
+    {
+      "index": 47,
+      "text": "\"Maybe it's best we never got to do it again. / Yeah, it kind of makes that one night special.\"",
+      "characters": [
+        "Monica",
+        "Chandler"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Monica and Chandler seem to be concluding their London arrangement is over",
+      "punchline": "They agree that not being able to do it again makes the one night precious \u2014 then immediately search for a loophole",
+      "craft_total": 6.31,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Setup for the next loophole joke. The 'makes it special' sentiment is immediately undermined, which is the actual joke structure."
+    },
+    {
+      "index": 48,
+      "text": "\"Technically, we still are over international waters.\"",
+      "characters": [
+        "Chandler"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Monica and Chandler agreed the hookup was 'only in London'; they're now on a plane",
+      "punchline": "Chandler finds the new loophole: they're over international waters, which is not specifically London but is not New York either",
+      "craft_total": 7.63,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Chandler's 'international waters' loophole is a great escalation of the running rule-bending gag. The specificity of 'international waters' as a legal/geographic dodge is both absurd and logically coherent within the premise. Well-structured callback with strong character voice."
+    },
+    {
+      "index": 49,
+      "text": "\"I'm going to the bathroom. Maybe I'll see you there?\"",
+      "characters": [
+        "Monica"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Chandler has found the international waters loophole",
+      "punchline": "Monica immediately acts on it with a coy/absurd suggestion to meet in the airplane bathroom",
+      "craft_total": 6.43,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Monica taking initiative on the international waters loophole with the bathroom suggestion is a good button on the bit. Economical and playful."
+    },
+    {
+      "index": 50,
+      "text": "Joey's existential crisis about his acting career triggered by the giant in My Giant",
+      "characters": [
+        "Joey"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Joey is on the plane and apparently has been watching My Giant",
+      "punchline": "He launches into a genuine career crisis: 'I'll never be as good an actor as that giant' \u2014 the giant being his unlikely acting benchmark",
+      "craft_total": 6.98,
+      "impact_score": 7.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's best sustained bits. The callback to My Giant pays off beautifully \u2014 Joey has taken the film so seriously that it's induced genuine career despair. 'I'll never be as good an actor as that giant' is a highly quotable sentence that only makes sense in Joey's world. The escalation through the bit (the giant's age, the height problem) is well-constructed."
+    },
+    {
+      "index": 51,
+      "text": "Joey's existential crisis about the giant actor from 'My Giant': \"I'll never be as good an actor as that giant.\"",
+      "characters": [
+        "Joey"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Joey has been watching 'My Giant' on the plane; he turns to Chandler with what seems like an acting question",
+      "punchline": "His specific inadequacy complex is about not being as good as a seven-foot-tall actor who appeared in one movie \u2014 not about being a good actor, but about being as good as that specific giant",
+      "craft_total": 8.03,
+      "impact_score": 8.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Joey's insecurities manifesting around the most specific possible target is perfect character comedy. The absurdist specificity \u2014 not 'great actors' but THIS giant specifically \u2014 is very funny. Extending the My Giant gag from the hotel room to the plane is a satisfying callback structure."
+    },
+    {
+      "index": 52,
+      "text": "\"The giant's five years younger than me. You think I'll ever get there?\"",
+      "characters": [
+        "Joey"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Joey has established the giant as his acting role model",
+      "punchline": "Joey is now age-anxious about being outpaced by the giant \u2014 treating a giant in a minor film as an aspirational career benchmark",
+      "craft_total": 7.25,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The escalation of the My Giant crisis into age anxiety is an excellent comedic beat. Joey's sincerity in asking 'You think I'll ever get there?' while referring to a giant in a small film is perfect character comedy."
+    },
+    {
+      "index": 53,
+      "text": "\"But what about how much taller he is than me? I mean, there's no way I can make myself taller now.\"",
+      "characters": [
+        "Joey"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Joey's existential acting crisis continues after a friend presumably offers reassurance",
+      "punchline": "Joey identifies the insurmountable obstacle: height. He cannot become a giant. The career crisis is now physical.",
+      "craft_total": 7.45,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The realization that Joey can't become taller to match the giant's performance is perfectly absurd logic. It's funny because it's both completely literal and treats acting ability as primarily a function of height."
+    },
+    {
+      "index": 54,
+      "text": "\"Who knows what science will come up with in the future... but what if I die an unsuccessful, regular-size man?\"",
+      "characters": [
+        "Joey"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Joey has identified his height as an insurmountable obstacle to matching the giant's acting",
+      "punchline": "Joey's dark fear: dying as an 'unsuccessful, regular-size man' \u2014 the specific horror being regular-size-ness",
+      "craft_total": 8.27,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the episode's best single line of comedy outside the cold open. 'What if I die an unsuccessful, regular-size man?' is a perfectly constructed absurdist fear \u2014 the 'regular-size' qualifier is what elevates it from a standard success-anxiety joke to something genuinely memorable. Joey's terror of dying at his actual height is both completely illogical and completely in character. The phrase 'regular-size man' implies that being normal-sized is itself a failure condition. Highly quotable, deeply character-specific, and earns its high scores."
+    },
+    {
+      "index": 55,
+      "text": "\"You've been in the bathroom for a half-hour. / I know! / Had the beef tips, huh?\"",
+      "characters": [
+        "Ross",
+        "Chandler"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "deadpan_understatement"
+      ],
+      "setup": "Chandler has apparently been in the bathroom an unusually long time",
+      "punchline": "Ross's casual deduction \u2014 'Had the beef tips, huh?' \u2014 implies a gastrointestinal explanation delivered with zero judgment",
+      "craft_total": 6.38,
+      "impact_score": 6.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic bathroom/food joke with good economy. 'Had the beef tips, huh?' as a knowing shorthand for digestive distress is efficiently delivered. Not particularly original but executed cleanly."
+    },
+    {
+      "index": 56,
+      "text": "\"You've been in the bathroom for a half-hour. / I know! / Had the beef tips, huh?\"",
+      "characters": [
+        "Chandler",
+        "Joey"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Chandler has been in the airplane bathroom; Joey is waiting outside",
+      "punchline": "Joey's instant diagnosis \u2014 'Had the beef tips, huh?' \u2014 the specificity of 'beef tips' as the culprit and Joey's matter-of-fact delivery",
+      "craft_total": 7.33,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Very economical toilet-humor joke with good specificity. 'Beef tips' as the specific culprit is funnier than a generic food reference. Joey's breezy, knowing delivery of digestive diagnosis is character-appropriate. Also functions as a callback to the Monica/Chandler bathroom joke from earlier."
+    },
+    {
+      "index": 57,
+      "text": "\"You ate meat! / You had sex! / No, we didn't. / I know you didn't. I was talking about Monica.\"",
+      "characters": [
+        "Phoebe",
+        "Joey",
+        "Chandler"
+      ],
+      "joke_types": [
+        "misdirection",
+        "character_comedy"
+      ],
+      "setup": "Phoebe accuses Joey of eating meat (breaking his promise); in the same breath appears to accuse Chandler of having sex",
+      "punchline": "Chandler defensively denies it; Phoebe clarifies she meant Monica \u2014 an accusation that actually reveals the secret and misdirects at the same time",
+      "craft_total": 7.3,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Smart joke structure \u2014 Chandler's guilty denial ('No, we didn't') reveals more than he intended, and Phoebe's clarification ('I was talking about Monica') is a perfect misdirect. The audience knows the secret, so Chandler's panic is doubly funny. Strong construction."
+    },
+    {
+      "index": 58,
+      "text": "\"I did not have sex. This pregnancy is throwing me all off and making me fat.\"",
+      "characters": [
+        "Phoebe"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Phoebe appears to have been accused of something in the conversation",
+      "punchline": "Phoebe's denial reveals she's also been keeping something \u2014 she's pregnant and blaming it for making her fat, treating pregnancy as an inconvenient accusation she needs to address",
+      "craft_total": 6.73,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Phoebe's combination of pregnancy acknowledgment and weight complaint is a funny mixed-priority moment. The 'throwing me all off' implies the pregnancy is an external force acting upon her rather than something she's doing."
+    },
+    {
+      "index": 59,
+      "text": "\"I'll say hi to the chick and duck. / Me too! / Why would you need to? You've been feeding them. / Oh, right. Maybe I'll just go home.\"",
+      "characters": [
+        "Monica",
+        "Chandler"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Monica and Chandler are navigating coming home while keeping their secret",
+      "punchline": "Monica says she'll say hi to the chick and duck; Chandler enthusiastically agrees, then she points out he's been feeding them (they live together) \u2014 he's accidentally revealed he lives with her",
+      "craft_total": 7.12,
+      "impact_score": 6.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Good running-secret joke. The chick-and-duck slip nearly blows their cover \u2014 Chandler's enthusiastic 'Me too!' forgetting he lives there is a great character beat. The 'Oh, right. Maybe I'll just go home' save is satisfying."
+    },
+    {
+      "index": 60,
+      "text": "\"We certainly are alone. Good thing we have that 'not New York' rule.\"",
+      "characters": [
+        "Chandler"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "running_gag"
+      ],
+      "setup": "Monica and Chandler find themselves alone back in New York",
+      "punchline": "Chandler pointedly notes the 'not New York' rule \u2014 they're now in New York, so they're 'safe' \u2014 but the irony drips from every word",
+      "craft_total": 7.16,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Good running gag payoff. The 'not New York rule' is their latest formulation of the ongoing exemption game. Chandler's pointed mention of it telegraphs that the rule is about to be broken or is already under negotiation."
+    },
+    {
+      "index": 61,
+      "text": "Monica tells Chandler that night meant a lot \u2014 \"...that guy thinking I was Ross' mother.\"",
+      "characters": [
+        "Monica"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Monica is explaining the emotional context of their London night \u2014 her brother getting married",
+      "punchline": "Among her sources of distress: someone thought she was Ross's mother \u2014 a devastating age joke that explains her emotional vulnerability",
+      "craft_total": 6.86,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good dark joke embedded in an emotional speech. The fact that someone thought Monica was Ross's mother is both funny and genuinely explains why she was emotionally vulnerable. The callback to the London insult lands nicely."
+    },
+    {
+      "index": 62,
+      "text": "\"It just meant a lot because you're really hot.\"",
+      "characters": [
+        "Chandler"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Monica has emotionally explained why that night meant a lot to her; Chandler begins with matching emotional gravity",
+      "punchline": "His reason: 'You're really hot.' \u2014 a sincere but magnificently reductive conclusion after Monica's emotional setup",
+      "craft_total": 7.75,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Great comedic structure. Monica gives an emotionally vulnerable explanation; Chandler begins in kind ('It wasn't because I was in a bad place or anything') suggesting depth \u2014 then pivots entirely to 'you're really hot.' The simplicity and sincerity of the admission is perfect. Chandler's earnest 'Is that okay?' adds another layer. High economy, strong structure, clearly Chandler's voice."
+    },
+    {
+      "index": 63,
+      "text": "\"Is that okay? / That's okay. / And I'm cute too? / And you're cute too!\"",
+      "characters": [
+        "Chandler",
+        "Monica"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Chandler has just admitted the night meant something because Monica is 'really hot'",
+      "punchline": "He anxiously seeks confirmation that this is acceptable, then fishes for the additional 'cute' qualifier \u2014 revealing his insecurity",
+      "craft_total": 7.51,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect Chandler button on the hot/cute exchange. His need to be affirmed as 'cute too' after establishing the physical attraction baseline is deeply character-specific \u2014 Chandler's self-deprecation and need for reassurance are core traits. The 'And I'm cute too?' is delivered with perfect, slightly pathetic earnestness. Monica's enthusiastic 'And you're cute too!' is warm and funny. This couplet with joke #63 is one of the episode's best sustained comedy moments."
+    },
+    {
+      "index": 64,
+      "text": "\"I'm still on London time. Does that count? / Oh, that counts! / Oh, good!\"",
+      "characters": [
+        "Chandler",
+        "Monica"
+      ],
+      "joke_types": [
+        "running_gag",
+        "character_comedy"
+      ],
+      "setup": "They're back in New York with the 'not New York' rule supposedly in effect",
+      "punchline": "Chandler finds the final loophole: he's personally still on London time \u2014 his body clock exempts him from the rule",
+      "craft_total": 7.91,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The final and best loophole in the running gag \u2014 Chandler claiming his internal circadian rhythm makes him still technically in London. The logic is completely absurd but structurally the most creative iteration of the loop. Monica's instant acceptance ('Oh, that counts!') and Chandler's delighted relief ('Oh, good!') is a perfect comedic button. The escalation from 'only in London' \u2192 'international waters' \u2192 'London time' is a well-executed comedic arc across the episode."
+    },
+    {
+      "index": 65,
+      "text": "\"You're not an idiot, Ross. You're a guy very much in love. / Same difference.\"",
+      "characters": [
+        "Rachel",
+        "Ross"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "dark_subversive"
+      ],
+      "setup": "Rachel reassures Ross he's not an idiot for waiting for Emily at the airport",
+      "punchline": "Ross agrees with the reassurance by equating it with the insult \u2014 'Same difference' \u2014 a self-deprecating acceptance that love makes you an idiot",
+      "craft_total": 7.66,
+      "impact_score": 7.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Excellent two-beat joke. 'You're a guy very much in love' as a defense followed by 'Same difference' as an acceptance is tight, well-structured, and deeply in Ross's voice. The admission that being in love and being an idiot are synonymous for him is both funny and true to his character arc. Very quotable and efficiently constructed."
+    },
+    {
+      "index": 66,
+      "text": "\"Yeah. It'd be great. I mean, you can lay on the beach... and I can cry over my failed marriage.\"",
+      "characters": [
+        "Ross"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "character_comedy"
+      ],
+      "setup": "Ross is inviting Rachel to come on his honeymoon to Greece",
+      "punchline": "He pitches the honeymoon-as-friend-trip with this sales line: she gets the beach, he gets to cry \u2014 an honest and therefore funny description of the arrangement",
+      "craft_total": 7.51,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Ross's pitch \u2014 beach for her, marital grief for him \u2014 is both darkly funny and self-aware. 'I can cry over my failed marriage' as a selling point is excellent dark comedy. The parallel construction ('you can... and I can...') makes it land cleanly."
+    },
+    {
+      "index": 67,
+      "text": "\"You see how I make jokes?\"",
+      "characters": [
+        "Ross"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "character_comedy"
+      ],
+      "setup": "Ross has just made the dark joke about crying over his failed marriage",
+      "punchline": "He immediately calls attention to his own coping mechanism \u2014 explaining the joke breaks it and reveals his desperation",
+      "craft_total": 7.78,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's most character-revealing comedy beats. 'You see how I make jokes?' is both a coping mechanism and an anxiety tell \u2014 Ross needs Rachel to know he's being brave/funny, which is itself desperate. High character integration: Ross's need for validation and use of humor as deflection is well-established. Excellent economy."
+    },
+    {
+      "index": 68,
+      "text": "\"Okay, we're going to Greece. / I forgot my jacket! / Well, you tell them to wait. / Wait! Wait!\"",
+      "characters": [
+        "Rachel",
+        "Ross"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "Ross and Rachel have decided to go to Greece together and are rushing to the gate",
+      "punchline": "Rachel's immediate problem \u2014 forgotten jacket \u2014 derails the romantic-crisis momentum; Ross tells her to have them hold the plane, then presumably chases",
+      "craft_total": 6.44,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Physical comedy beat \u2014 the last-minute chaos of airport scrambling deflates the emotional moment nicely. Not particularly crafted but functional as a scene-closer."
+    },
+    {
+      "index": 69,
+      "text": "Ross orders wine on the plane: \"I'll have a glass of Merlot... and he'll have a wine spritzer.\"",
+      "characters": [
+        "Rachel"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Ross and Rachel are finally on the plane to Greece",
+      "punchline": "Rachel orders a 'wine spritzer' for Ross \u2014 the gentle emasculation implied in ordering a soft cocktail for a man having a crisis",
+      "craft_total": 6.47,
+      "impact_score": 6.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The wine spritzer order is a friendly power move \u2014 Rachel taking control of Ross's drink on his own honeymoon is a small but pointed joke. The choice of 'wine spritzer' specifically (a notoriously light drink) is well-chosen."
+    },
+    {
+      "index": 70,
+      "text": "\"Look! The airport's moving. / Are we moving? / Are we? Why are we moving? / Does the captain know that we're moving?\"",
+      "characters": [
+        "Ross"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "The plane begins to move on the runway",
+      "punchline": "Ross \u2014 presumably distracted by his entire life falling apart \u2014 has apparently just realized the plane is in motion and escalates into panic, culminating in wondering if the captain is aware",
+      "craft_total": 6.99,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good escalating panic joke. 'Does the captain know that we're moving?' is the best beat \u2014 the implication that the pilot might not know the plane is rolling is absurd but delivered with Ross's characteristic anxious sincerity. A solid episode-closer that keeps the energy up."
     }
   ],
   "air_date": "1998-09-24",

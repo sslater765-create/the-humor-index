@@ -4,34 +4,35 @@
   "season": 4,
   "episode_number": 19,
   "title": "The One With All The Haste",
-  "humor_index": 63.6,
-  "jpm": 4.01,
-  "avg_craft": 6.16,
-  "avg_impact": 6.03,
-  "total_jokes": 61,
-  "war": 5.8,
-  "dominant_joke_types": "[\"character_comedy\", \"observational\", \"setup_punchline\"]",
-  "standout_joke_ids": "[25, 43, 30]",
-  "weakest_section": "14:00-16:00",
+  "humor_index": 79.0,
+  "jpm": 3.71,
+  "avg_craft": 6.69,
+  "avg_impact": 6.72,
+  "total_jokes": 66,
+  "war": 46.5,
+  "dominant_joke_types": "[\"character_comedy\", \"setup_punchline\", \"irony_sarcasm\"]",
+  "standout_joke_ids": "[65, 21, 39]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
       "text": "Hey! Do you have to do that? It's Saturday!",
       "characters": [
-        "Monica"
+        "Monica",
+        "Rachel"
       ],
       "joke_types": [
         "observational",
         "character_comedy"
       ],
-      "setup": "Annoying singing neighbor performing loudly in the morning",
-      "punchline": "Monica's exasperated complaint about weekend morning disturbance",
-      "craft_total": 5.25,
-      "impact_score": 5.0,
+      "setup": "A man outside is cheerfully singing 'Morning's here' at full volume",
+      "punchline": "The plea 'It's Saturday!' \u2014 the universal relatable cry of someone robbed of a sleep-in \u2014 gets the laugh through pure recognition",
+      "craft_total": 5.37,
+      "impact_score": 5.17,
       "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard setup for establishing Monica's controlling personality and apartment conflict",
+      "explanation": "Solid relatable opener \u2014 the Saturday complaint is universal and lands quickly. Not particularly original but efficiently delivered.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -45,22 +46,22 @@
     },
     {
       "index": 2,
-      "text": "I hate this apartment! I hate this wall color! I hate that it still smells like bird!",
+      "text": "Oh, come on! [SINGS] Morning's here, morning is...",
       "characters": [
         "Monica"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Monica complaining about their living situation",
-      "punchline": "Escalating complaints ending with the oddly specific 'smells like bird'",
-      "craft_total": 6.45,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Rachel has just complained furiously about the singing",
+      "punchline": "Monica immediately starts singing along with the same annoying song, betraying Rachel's expectation of solidarity",
+      "craft_total": 6.09,
+      "impact_score": 5.75,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation with unexpected specific detail about bird smell",
+      "explanation": "Good character beat \u2014 Monica's relentless optimism and energy even in a crappy apartment is consistent with her character. The betrayal of Rachel's solidarity expectation works well.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -78,23 +79,22 @@
     },
     {
       "index": 3,
-      "text": "I hate that singing guy! Are you kidding? I love that guy!",
+      "text": "I hate this apartment! I hate the color of these walls! I hate that this place still smells like bird!",
       "characters": [
-        "Monica",
         "Rachel"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "escalation",
         "character_comedy"
       ],
-      "setup": "Monica hating the singing neighbor",
-      "punchline": "Rachel's immediate contradictory love for the same guy",
-      "craft_total": 5.75,
-      "impact_score": 5.5,
+      "setup": "Monica has just been singing cheerfully; the scene pivots to Rachel's frustrations with the apartment",
+      "punchline": "'Still smells like bird' \u2014 the escalation from generic complaints to the specific absurd detail of residual bird smell lands as the kicker",
+      "craft_total": 6.24,
+      "impact_score": 6.33,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple but effective character contrast showing different attitudes",
+      "explanation": "The 'smells like bird' detail is the gem here \u2014 specific, absurd, and evocative. The escalating list structure is a classic comedy construction that works well.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -108,22 +108,23 @@
     },
     {
       "index": 4,
-      "text": "Stop it! I will kill you.",
+      "text": "I hate that singing guy! / Are you kidding? I love that guy! [SINGS] Morning's here, morning is...",
       "characters": [
+        "Rachel",
         "Monica"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "character_comedy",
+        "callback"
       ],
-      "setup": "Continued singing annoyance",
-      "punchline": "Monica's extreme threat over morning singing",
-      "craft_total": 5.1,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Rachel's list of apartment grievances has built to a head; she includes the singing man",
+      "punchline": "Monica's enthusiastic defense of the singing man \u2014 immediately singing again \u2014 reveals the comedic disconnect between the two roommates' dispositions",
+      "craft_total": 6.53,
+      "impact_score": 6.67,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Over-the-top reaction fits Monica's personality but fairly predictable",
+      "is_callback": 1,
+      "explanation": "Monica loving the singing guy crystallizes the core comedic conflict of the episode's A-plot cold open. Her character-consistent optimism vs. Rachel's misery is well-deployed here.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -133,23 +134,23 @@
     },
     {
       "index": 5,
-      "text": "You don't even have a bed. You sleep in a ball on the floor!",
+      "text": "Monica, you don't even have a bed. You sleep in a ball on the floor!",
       "characters": [
-        "Monica",
-        "Rachel"
+        "Rachel",
+        "Monica"
       ],
       "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Rachel claiming to have space solutions",
-      "punchline": "Reveals Rachel's pathetic sleeping arrangement",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 7.5,
+      "setup": "Monica tells Rachel she just needs to work with the small space like she did",
+      "punchline": "The reveal that Monica's 'working with it' means sleeping in a ball on the floor \u2014 no bed at all \u2014 undercuts her forced positivity",
+      "craft_total": 7.0,
+      "impact_score": 7.17,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent visual comedy - 'sleep in a ball on the floor' is both specific and absurdly pathetic",
+      "explanation": "This is a genuinely good joke. The image of Monica \u2014 famously Type-A, controlling, home-proud \u2014 sleeping 'in a ball on the floor' is a perfect dark undercut to her relentless optimism. Strong character integration and a well-earned reveal.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -171,23 +172,23 @@
     },
     {
       "index": 6,
-      "text": "It's a great apartment! Shut up! This place is a hole!",
+      "text": "I know. I'm so sorry. I'm sorry, okay? This is a great apartment. / Shut up. This place is a hole.",
       "characters": [
         "Rachel",
         "Monica"
       ],
       "joke_types": [
         "irony_sarcasm",
-        "character_comedy"
+        "misdirection"
       ],
-      "setup": "Rachel apologizing and praising apartment",
-      "punchline": "Monica immediately contradicts by calling it a hole",
-      "craft_total": 6.1,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Rachel capitulates to Monica's feelings, sincerely apologizing and calling the apartment great",
+      "punchline": "Monica immediately deflects \u2014 'Shut up. This place is a hole.' \u2014 reversing her whole stance the moment Rachel agrees with her",
+      "craft_total": 7.11,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Monica's honesty overriding politeness",
+      "explanation": "This is sharp comedy construction. The misdirection is excellent: Monica spends the whole scene defending the apartment, then the moment Rachel caves and agrees it's great, Monica drops the act. It's a perfect punchline that reveals Monica's real feelings and subverts audience expectation economically.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -201,21 +202,23 @@
     },
     {
       "index": 7,
-      "text": "I know, I know. Who am l? David Bowie?",
+      "text": "Oh, blimey, I still can't believe you've got an earring! / Who am I? David Bowie?",
       "characters": [
+        "Emily",
         "Ross"
       ],
       "joke_types": [
-        "observational"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Someone commenting on Ross's earring",
-      "punchline": "Ross's confused pop culture reference about earrings",
-      "craft_total": 4.75,
-      "impact_score": 4.5,
-      "quotability": 5.0,
+      "setup": "Emily expresses ongoing disbelief that Ross got his ear pierced",
+      "punchline": "Ross's self-deprecating 'Who am I? David Bowie?' \u2014 a nerdy paleontologist comparing himself to a rock icon",
+      "craft_total": 6.11,
+      "impact_score": 5.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Generic pop culture reference without much wit or character specificity",
+      "explanation": "Good self-aware gag from Ross \u2014 the choice of Bowie specifically (androgynous, earringed, rock legend) is apt and shows some wit. Character-consistent: Ross is the last guy who should have an earring.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -229,22 +232,22 @@
     },
     {
       "index": 8,
-      "text": "He does that? I don't know. Whatever.",
+      "text": "I mean, I love her, you know? I love you too. A lot. But that guy! I love that guy!",
       "characters": [
         "Ross"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "David Bowie reference questioned",
-      "punchline": "Ross admitting he doesn't actually know if Bowie wears earrings",
-      "craft_total": 5.9,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Ross is rhapsodizing about how Emily brings out 'this whole other guy' in him",
+      "punchline": "He catches himself preferring the idea of himself over Emily \u2014 'But that guy! I love that guy!' \u2014 before awkwardly course-correcting",
+      "craft_total": 6.83,
+      "impact_score": 6.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Nice character beat showing Ross making references he doesn't understand",
+      "explanation": "Nicely layered joke \u2014 Ross's narcissism leaks through his romantic declaration. 'I love that guy' is quotable and the self-correction gives it good structure.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -254,22 +257,22 @@
     },
     {
       "index": 9,
-      "text": "When I'm with you, I'm like...this whole other guy. I love that guy! I mean, I love you too. A lot. But that guy! I love that guy!",
+      "text": "So? Then you could stay as long as you want.",
       "characters": [
         "Ross"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "absurdist"
       ],
-      "setup": "Ross expressing feelings for Emily",
-      "punchline": "Getting more excited about his alternate self than his girlfriend",
-      "craft_total": 6.6,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Emily explains she can't stay longer because she'd get fired from her job",
+      "punchline": "Ross's completely earnest suggestion that getting fired is a great solution \u2014 delivered without irony",
+      "craft_total": 6.16,
+      "impact_score": 5.67,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character work showing Ross's self-absorption even in romantic moments",
+      "explanation": "Economical and character-consistent \u2014 Ross in love-brain mode is completely oblivious to practical concerns. The earnestness sells it.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -287,22 +290,23 @@
     },
     {
       "index": 10,
-      "text": "So? Then you could stay as long as you want.",
+      "text": "Last time I packed in a rush, I left my knickers here. / Yeah, I know. I, uh, tried them on. / You didn't! / No, I didn't. I didn't want to be 'that guy.'",
       "characters": [
+        "Emily",
         "Ross"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "setup_punchline",
+        "misdirection"
       ],
-      "setup": "Emily saying work will fire her if she doesn't return",
-      "punchline": "Ross's casual suggestion that getting fired would solve the problem",
-      "craft_total": 5.9,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Emily mentions she once left her knickers (underwear) at Ross's place",
+      "punchline": "Ross claims he tried them on, then immediately backtracks \u2014 'I didn't want to be that guy' \u2014 the phantom joke being funnier than a straight admission",
+      "craft_total": 7.04,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Shows Ross's impractical romantic thinking in character",
+      "explanation": "Smart construction \u2014 the two-beat misdirection (he said he did it! No he didn't!) lands with the phrase 'that guy,' which is funnier than either option. The phrase 'that guy' as a self-aware cultural shorthand is well-deployed. Good economy.",
       "dialogue": [
         {
           "speaker": "Emily",
@@ -316,22 +320,25 @@
     },
     {
       "index": 11,
-      "text": "I don't want to leave it till last. Last time, I left my knickers here.",
+      "text": "Phoebe enters in enormous red pants. Joey/others react. 'Uh, Pheebs, those are, uh, Santa pants.'",
       "characters": [
-        "Emily"
+        "Phoebe",
+        "Joey",
+        "Monica",
+        "Rachel"
       ],
       "joke_types": [
-        "observational",
-        "setup_punchline"
+        "visual_gag",
+        "character_comedy"
       ],
-      "setup": "Emily explaining why she's packing early",
-      "punchline": "Revealing she left underwear behind before",
-      "craft_total": 5.4,
-      "impact_score": 5.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Phoebe bursts in proudly wearing giant, comfortable red pants she found at a used-clothing store",
+      "punchline": "The reveal that they are Santa Claus's pants \u2014 not maternity pants as she believed",
+      "craft_total": 7.06,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Mild innuendo with British terminology, functional but not exceptional",
+      "explanation": "Excellent visual gag \u2014 Phoebe wearing giant red Santa pants thinking they're maternity wear is a perfect Phoebe-specific joke. The visual of her in these enormous pants, combined with her total confidence, is very strong. High character integration.",
       "dialogue": [
         {
           "speaker": "Emily",
@@ -345,23 +352,22 @@
     },
     {
       "index": 12,
-      "text": "Yeah, I know. I tried them on. You didn't! No, I didn't. I didn't want to be 'that guy.'",
+      "text": "They even came with a list of baby names. See? / [holds up paper] These names are good, and these are bad.",
       "characters": [
-        "Ross",
-        "Emily"
+        "Phoebe"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Emily's shocked reaction to Ross trying on her underwear",
-      "punchline": "Ross admitting restraint about being 'that guy'",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good misdirection joke with character-appropriate restraint",
+      "setup": "Joey/friends point out the pants are Santa Claus's pants, not maternity pants",
+      "punchline": "Phoebe doubles down \u2014 'They came with a list of baby names' \u2014 which is of course Santa's naughty/nice list",
+      "craft_total": 7.55,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the stronger half of the Santa pants bit \u2014 the naughty/nice list recontextualized as a 'baby names' list is a clever layered joke. 'These names are good, and these are bad' lands perfectly because it describes both a baby name list AND Santa's list simultaneously. Excellent character integration for Phoebe \u2014 only she would reach this conclusion. This approaches standout territory.",
       "dialogue": [
         {
           "speaker": "Emily",
@@ -375,22 +381,23 @@
     },
     {
       "index": 13,
-      "text": "Pheebs, those are Santa pants.",
+      "text": "So, how are the elves? / I don't know. How are the, uh, you know? / Your clothes aren't funny.",
       "characters": [
-        "Monica"
+        "Chandler",
+        "Phoebe"
       ],
       "joke_types": [
-        "visual_gag",
-        "observational"
+        "irony_sarcasm",
+        "reaction_beat"
       ],
-      "setup": "Phoebe showing off her new comfortable maternity pants",
-      "punchline": "Monica recognizing they're actually Santa Claus costume pants",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Excellent visual gag - simple reveal with perfect economy and unexpected twist",
+      "setup": "Chandler mocks Phoebe's Santa pants with 'How are the elves?'",
+      "punchline": "Phoebe starts to fire back a jab about Chandler's clothes but can't complete the insult, then gives up with 'Your clothes aren't funny' \u2014 a failed comeback that becomes the joke",
+      "craft_total": 6.89,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Phoebe's failed comeback \u2014 the incomplete insult \u2014 is funnier than any completed version would have been. 'Your clothes aren't funny' as a surrender is an unexpectedly meta line. Good Phoebe characterization: she can't do mean-spirited wit but tries anyway.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -404,23 +411,23 @@
     },
     {
       "index": 14,
-      "text": "Santa Claus' pants. No. They're maternity pants. They even came with a list of baby names. See?",
+      "text": "Hey, guys, what should I wear to a Knicks game? / Uh, a T-shirt that says 'I Don't Belong Here'?",
       "characters": [
-        "Monica",
-        "Phoebe"
+        "Rachel",
+        "Chandler"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Monica identifying Santa pants",
-      "punchline": "Phoebe's continued insistence with 'evidence' of baby names list",
-      "craft_total": 6.45,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Rachel asks for fashion advice about a Knicks game",
+      "punchline": "Chandler's immediate, dry suggestion: a shirt reading 'I Don't Belong Here' \u2014 a perfect dig at Rachel's out-of-place socialite persona",
+      "craft_total": 7.2,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation of the Santa pants gag with Phoebe's characteristic obliviousness",
+      "explanation": "Classic Chandler wit \u2014 sharp, specific, economical. The imaginary T-shirt slogan as an insult is a great format and the specific text 'I Don't Belong Here' is well-chosen. Reflects Rachel's character accurately. High economy.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -442,22 +449,24 @@
     },
     {
       "index": 15,
-      "text": "These names are good, and these are bad.",
+      "text": "Do you guys want these? / Yeah! Yeah, we do! / Well, you got them! / Just give us our apartment back.",
       "characters": [
-        "Phoebe"
+        "Rachel",
+        "Joey",
+        "Chandler"
       ],
       "joke_types": [
-        "visual_gag",
-        "absurdist"
+        "misdirection",
+        "setup_punchline"
       ],
-      "setup": "Phoebe showing the 'baby names' list",
-      "punchline": "Presumably showing naughty/nice list from Santa context",
-      "craft_total": 6.75,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Rachel offhandedly offers Joey and Chandler her Knicks season tickets; they enthusiastically accept",
+      "punchline": "The 'just give us our apartment back' rider \u2014 Rachel drops the hidden price on a seemingly generous gift. The ambush reveal.",
+      "craft_total": 6.78,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Clever extension of Santa pants gag - naughty/nice list mistaken for baby names",
+      "explanation": "Well-structured comedic beat \u2014 the trap is laid and sprung efficiently. The timing of the apartment ask after the enthusiastic agreement is good sitcom construction.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -483,22 +492,22 @@
     },
     {
       "index": 16,
-      "text": "So, how are the elves?",
+      "text": "Whoa, I didn't see that coming.",
       "characters": [
-        "Joey"
+        "Chandler"
       ],
       "joke_types": [
-        "callback",
-        "observational"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Joey seeing Phoebe in Santa pants",
-      "punchline": "Continuing the Santa theme with elf reference",
-      "craft_total": 6.05,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Joey and Chandler have just been ambushed by the apartment-for-tickets offer",
+      "punchline": "Chandler's flat, dry 'Whoa, I didn't see that coming' \u2014 delivered as genuine surprise but clearly ironic given the audience did see it coming",
+      "craft_total": 6.06,
+      "impact_score": 5.83,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Nice callback that extends the Santa visual gag efficiently",
+      "is_callback": 0,
+      "explanation": "Functional Chandler deadpan. The irony works but it's well-worn territory for the character. Gets the laugh but isn't distinguished.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -516,22 +525,23 @@
     },
     {
       "index": 17,
-      "text": "Your clothes aren't funny.",
+      "text": "Do you think we're stupid? / Not stupid. You're meaner than I thought.",
       "characters": [
-        "Phoebe"
+        "Joey",
+        "Rachel"
       ],
       "joke_types": [
-        "deadpan_understatement",
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Joey making fun of Phoebe's Santa pants",
-      "punchline": "Phoebe's defensive non-comeback about Joey's normal clothes",
-      "craft_total": 5.9,
-      "impact_score": 5.5,
+      "setup": "Joey accuses Rachel of thinking they're stupid for not jumping at the trade",
+      "punchline": "Rachel's response isn't a denial \u2014 it's an upgrade: they're not stupid, they're MEAN. A backhanded compliment that's actually an insult.",
+      "craft_total": 6.74,
+      "impact_score": 6.67,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Phoebe's weak comeback is funny because it's so inadequate",
+      "explanation": "Nicely constructed \u2014 the pivot from 'not stupid' to something worse (meaner) is a good inverted compliment. Rachel's directness here is well-characterized.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -545,21 +555,23 @@
     },
     {
       "index": 18,
-      "text": "What should I wear to a Knicks game? A T-shirt that says, 'l Don't Belong Here'?",
+      "text": "Your 'bachelor pad'? Have you even had a girl here? / No. But Joey has, and I usually talk to them in the morning time.",
       "characters": [
+        "Rachel",
         "Chandler"
       ],
       "joke_types": [
-        "observational"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Chandler asking what to wear to basketball game",
-      "punchline": "Self-aware joke about not fitting in at sports events",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
+      "setup": "Chandler refuses to give up his 'bachelor pad,' implying it's a place of romantic conquest",
+      "punchline": "He admits he personally hasn't had a girl there, but defends the vibes by proxy \u2014 he talks to Joey's conquests in the morning",
+      "craft_total": 6.98,
+      "impact_score": 7.17,
       "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Chandler joke - self-deprecating with good specificity and character awareness",
+      "explanation": "One of the stronger jokes in the episode. Chandler enjoying the PROXIMITY to Joey's sex life \u2014 'I talk to them in the morning time' \u2014 perfectly encapsulates both characters. It's a lonely-Chandler joke dressed as a brag, and 'morning time' has an oddly endearing, slightly pathetic quality. High character integration.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -577,22 +589,22 @@
     },
     {
       "index": 19,
-      "text": "I could slip Woody Allen my resume.",
+      "text": "Yeah, you do. [Joey, confirming Chandler talks to his overnight guests]",
       "characters": [
-        "Monica"
+        "Joey"
       ],
       "joke_types": [
-        "observational",
-        "absurdist"
+        "reaction_beat",
+        "character_comedy"
       ],
-      "setup": "Monica excited about courtside seats",
-      "punchline": "Planning to give resume to celebrity at basketball game",
-      "craft_total": 6.35,
-      "impact_score": 6.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character-specific joke showing Monica's career ambition in inappropriate context",
+      "setup": "Chandler describes talking to Joey's dates in the morning as his only female interaction",
+      "punchline": "Joey's completely casual confirmation that yes, this happens, without any sense of awkwardness \u2014 to Joey this is completely normal",
+      "craft_total": 6.87,
+      "impact_score": 6.75,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The two-word button on Chandler's confession. Joey's breezy confirmation deepens the joke \u2014 he sees nothing wrong with this arrangement, which makes Chandler's situation even sadder and funnier. Maximum economy.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -610,22 +622,23 @@
     },
     {
       "index": 20,
-      "text": "Oh, I didn't see that coming.",
+      "text": "Gunther, can I get two cups of chino, please? / Good one.",
       "characters": [
+        "Monica",
         "Chandler"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
+        "wordplay_pun",
+        "deadpan_understatement"
       ],
-      "setup": "Girls demanding apartment back for tickets",
-      "punchline": "Chandler's sarcastic reaction to obvious manipulation",
-      "craft_total": 6.1,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Monica orders at Central Perk, apparently saying 'chino' instead of 'cappuccino'",
+      "punchline": "Chandler's dry 'Good one' \u2014 sarcastically praising Monica's accidental portmanteau or mispronunciation",
+      "craft_total": 5.33,
+      "impact_score": 4.83,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Chandler sarcasm, well-delivered but predictable",
+      "explanation": "Mildly amusing but unclear from transcript alone what 'chino' is meant to be (cappuccino? Just ordering two things and shortening?). The sarcasm is light. Weak delivery context makes this land softly.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -635,22 +648,22 @@
     },
     {
       "index": 21,
-      "text": "Not stupid. You're meaner than I thought.",
+      "text": "Of course, he wasn't in sales. But still, I never forgot that!",
       "characters": [
-        "Joey"
+        "Ross"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Girls asking if boys think they're stupid",
-      "punchline": "Joey's backhanded assessment of their character",
-      "craft_total": 5.9,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Ross recalls his father never winning the season-ticket prize for the #1 salesman",
+      "punchline": "The aside that his dad wasn't even IN sales \u2014 meaning the whole childhood sports-ticket trauma was based on a completely irrelevant contest \u2014 lands as absurd self-pity",
+      "craft_total": 7.58,
+      "impact_score": 7.83,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Joey moment - innocent honesty that's accidentally insulting",
+      "explanation": "Smart absurdist joke that works on two levels: the pathos of the childhood memory and the complete logical undermining of that pathos in one throwaway clause. 'He wasn't in sales' is the perfect detail to make the whole story collapse. Good economy with the callback 'But still, I never forgot that.'",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -660,22 +673,22 @@
     },
     {
       "index": 22,
-      "text": "Your 'bachelor pad'? Have you even had a girl here?",
+      "text": "Oh, my God. We don't make enough fun of you already?",
       "characters": [
-        "Monica"
+        "Chandler"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Chandler calling apartment his bachelor pad",
-      "punchline": "Monica calling out his lack of actual bachelor activity",
-      "craft_total": 5.9,
-      "impact_score": 6.0,
+      "setup": "Ross walks in with a new ear piercing",
+      "punchline": "Chandler's mock-despairing reaction \u2014 not surprise but exhaustion at another opportunity to mock Ross",
+      "craft_total": 6.32,
+      "impact_score": 6.5,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard roast of Chandler's dating life, competent but predictable",
+      "explanation": "Classic Chandler reaction \u2014 it's not about mocking the earring but about the exhaustion of having Ross as a friend who keeps presenting new targets. Good character voice.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -689,22 +702,23 @@
     },
     {
       "index": 23,
-      "text": "No. But Joey has, and I usually talk to them in the morning.",
+      "text": "Oh, yeah. Emily convinced me to do it. / You do know that Wham broke up?",
       "characters": [
-        "Chandler"
+        "Ross",
+        "Joey"
       ],
       "joke_types": [
         "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Monica asking if Chandler has brought girls to apartment",
-      "punchline": "Chandler admitting he just talks to Joey's dates",
-      "craft_total": 6.6,
-      "impact_score": 6.5,
+      "setup": "Ross explains his ear piercing was Emily's idea",
+      "punchline": "Joey's non-sequitur 'You do know that Wham broke up?' \u2014 implying Ross looks like a Wham!-era George Michael",
+      "craft_total": 6.65,
+      "impact_score": 6.83,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Chandler's pathetic romantic situation but with dignity",
+      "explanation": "Sharp pop-culture reference used correctly \u2014 not mere name-dropping but a pointed comparison that cuts Ross specifically. Wham! = early 80s, earring, slightly camp \u2014 perfectly targeted at Ross. Great economy from Joey.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -718,23 +732,22 @@
     },
     {
       "index": 24,
-      "text": "Gunther, can I get two cups of chino, please? Good one.",
+      "text": "Don't try and talk all normal with that thing in your ear.",
       "characters": [
-        "Joey",
-        "Gunther"
+        "Chandler"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Joey ordering at coffee shop",
-      "punchline": "Mispronouncing cappuccino as 'chino' and complimenting himself",
-      "craft_total": 5.95,
-      "impact_score": 5.5,
+      "setup": "Ross tries to change the subject and act casual despite his new earring",
+      "punchline": "Chandler refuses to let it go \u2014 the earring has fundamentally changed how he can interact with Ross",
+      "craft_total": 6.39,
+      "impact_score": 6.17,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Joey malapropism with self-congratulation, fits character well",
+      "explanation": "Good Chandler line \u2014 'talk all normal' has a natural, spontaneous quality that rings true for the character. The implication that an earring makes normal conversation impossible is good absurdist logic.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -752,22 +765,24 @@
     },
     {
       "index": 25,
-      "text": "When I was a kid, my dad's company gave season tickets...to the No. 1 salesman every year. My dad never won. Of course, he wasn't in sales. But still, I never forgot that!",
+      "text": "She'd have to move here. She should move here. / Are you serious? / Why not? I mean, why not? / You've only known her six weeks! / I've got a carton of milk in my fridge I've had a longer relationship with.",
       "characters": [
-        "Chandler"
+        "Ross",
+        "Chandler",
+        "Joey"
       ],
       "joke_types": [
         "setup_punchline",
-        "misdirection"
+        "character_comedy"
       ],
-      "setup": "Chandler telling emotional story about dad never winning tickets",
-      "punchline": "Revealing dad wasn't even in sales department",
-      "craft_total": 7.4,
-      "impact_score": 7.5,
-      "quotability": 8.0,
+      "setup": "Ross floats the idea of asking Emily to move to New York after only six weeks together",
+      "punchline": "Chandler's milk carton comparison \u2014 a brilliantly calibrated analogy that's both precise and devastating",
+      "craft_total": 7.39,
+      "impact_score": 7.83,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent misdirection joke with perfect structure and Chandler's signature style",
+      "explanation": "One of the best jokes in the episode. The milk carton line is a classic Friends-caliber quip \u2014 specific, visual, perfectly structured, and devastatingly economical. The image of Chandler's fridge relationship outlasting Ross's romantic ones is both funny and gently pointed. This is what a genuinely great sitcom line looks like. Approaches the 8.0 anchor benchmark.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -777,21 +792,22 @@
     },
     {
       "index": 26,
-      "text": "You do know that Wham broke up?",
+      "text": "And I love the milk! But I won't ask some British girl to move in with me.",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "observational"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Ross showing off his new earring look",
-      "punchline": "Chandler's dated pop culture reference about Ross's style",
-      "craft_total": 5.9,
-      "impact_score": 6.0,
+      "setup": "Chandler has just compared Emily to a milk carton",
+      "punchline": "Chandler extending the milk metaphor \u2014 'I love the milk!' \u2014 before snapping back to practical advice, keeping the absurd thread alive",
+      "craft_total": 7.12,
+      "impact_score": 7.17,
       "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sharp pop culture reference but relies on dated reference without much wit",
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback to the milk line is well-executed. 'I love the milk!' has genuine absurdist warmth. The pivot back to practical advice makes it land as a coherent comedy unit with the previous joke.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -801,22 +817,22 @@
     },
     {
       "index": 27,
-      "text": "Don't try and talk all normal with that thing in your ear.",
+      "text": "Joey, you say things now.",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "meta_self_referential"
       ],
-      "setup": "Ross trying to have normal conversation",
-      "punchline": "Chandler calling out the absurdity of Ross's new look",
-      "craft_total": 5.9,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Chandler has finished advising Ross not to move too fast; he turns to Joey for support but Joey has said nothing",
+      "punchline": "'Joey, you say things now' \u2014 Chandler's weary instruction to his friend to contribute to the conversation",
+      "craft_total": 7.65,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good observation about Ross's incongruous appearance, typical Chandler snark",
+      "explanation": "Brilliant economy \u2014 five words that perfectly capture both Chandler's exasperation and Joey's spaciness. 'You say things now' implies Joey should have been talking already but wasn't, and that Chandler has to actively deploy him like a tool. Extremely high character integration for both characters. Very quotable.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -830,22 +846,22 @@
     },
     {
       "index": 28,
-      "text": "I've got a carton of milk in my fridge I've had a longer relationship with.",
+      "text": "Just remember to wake us up before you go-go.",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "setup_punchline",
-        "observational"
+        "wordplay_pun",
+        "character_comedy"
       ],
-      "setup": "Ross saying he's known Emily six weeks",
-      "punchline": "Chandler comparing relationship length to spoiled milk",
-      "craft_total": 6.9,
+      "setup": "Ross says he won't rush Emily and thanks the guys for talking him down",
+      "punchline": "Chandler's Wham! callback \u2014 'wake us up before you go-go' \u2014 spinning back to the earlier earring/Wham joke as Ross leaves",
+      "craft_total": 6.84,
       "impact_score": 7.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Chandler joke with good structure and relatable comparison",
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Satisfying callback that doubles as a practical joke \u2014 the Wham! song is both a goodbye reference and a continuation of mocking Ross's earring. The delivery timing (as Ross leaves) is perfect. Well-constructed.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -855,22 +871,22 @@
     },
     {
       "index": 29,
-      "text": "And I love the milk! But I won't ask some British girl to move in with me.",
+      "text": "Wait, wait. Come on, come on! Let's trade. The timing's perfect! I just clogged the toilet!",
       "characters": [
-        "Chandler"
+        "Joey"
       ],
       "joke_types": [
-        "callback",
-        "escalation"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Continuing the milk relationship comparison",
-      "punchline": "Extending the metaphor with mock sincerity about milk",
-      "craft_total": 6.75,
-      "impact_score": 6.5,
+      "setup": "Rachel gives one last chance to trade the Knicks tickets for the apartment",
+      "punchline": "Joey's argument that the timing is perfect because he 'just clogged the toilet' \u2014 a completely anti-persuasive reason to want to leave",
+      "craft_total": 7.2,
+      "impact_score": 7.5,
       "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good extension of previous joke with escalating absurdity",
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfectly Joey \u2014 his instinctive oversharing of the clogged toilet as a pro-trade argument is both gross and endearing. The logic is impeccably Joey-brained: 'now is a great time to leave this apartment because I just destroyed it.' High character integration.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -880,22 +896,23 @@
     },
     {
       "index": 30,
-      "text": "Joey, you say things now.",
+      "text": "I want those seats as much as you. But we can't live in the small apartment after we've lived here! Ever read Flowers for Algernon? / Yes. / Ever read Sports Illustrated?",
       "characters": [
-        "Chandler"
+        "Chandler",
+        "Monica"
       ],
       "joke_types": [
-        "meta_self_referential",
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Joey being unusually quiet during advice session",
-      "punchline": "Chandler pointing out Joey's uncharacteristic silence",
-      "craft_total": 7.1,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Chandler uses Flowers for Algernon as a metaphor for not being able to go back to lesser things once you've experienced better",
+      "punchline": "He immediately undercuts his own literary reference with 'Ever read Sports Illustrated?' \u2014 equating high literature with a sports magazine in terms of emotional resonance",
+      "craft_total": 7.25,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Meta-joke about Joey's usual role in group dynamics, very economical",
+      "explanation": "Clever joke structure \u2014 Chandler starts smart (Flowers for Algernon is an apt metaphor) and immediately reveals his actual intellectual home by pivoting to Sports Illustrated. The two-beat rhythm (yes/no) is tight. 'Ever read Sports Illustrated?' as a parallel to Flowers for Algernon is genuinely funny.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -913,22 +930,22 @@
     },
     {
       "index": 31,
-      "text": "Just remember to wake us up before you go-go.",
+      "text": "No, I didn't read yours!",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "callback",
-        "wordplay_pun"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Giving Ross advice about Emily",
-      "punchline": "Wham! song reference callback to earlier earring joke",
-      "craft_total": 6.15,
-      "impact_score": 6.0,
-      "quotability": 7.0,
+      "setup": "Monica apparently references having read Sports Illustrated in the apartment",
+      "punchline": "Chandler's defensive 'No, I didn't read yours!' implies he has his own copy \u2014 a small territorial detail that's both petty and very Chandler",
+      "craft_total": 6.22,
+      "impact_score": 5.75,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Solid callback that ties together earlier pop culture reference",
+      "is_callback": 0,
+      "explanation": "Minor joke \u2014 works as a small character beat (Chandler is territorial about his Sports Illustrated) but doesn't add much. Functional filler.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -946,22 +963,24 @@
     },
     {
       "index": 32,
-      "text": "The timing's perfect! I just clogged the toilet!",
+      "text": "It's the Knicks! / Screw the Knicks. / Whoa! / I didn't mean that. I just meant that the apartment is worth so much more. / Huh. / And the Knicks rule all. / Yeah, the Knicks rule all!",
       "characters": [
+        "Monica",
+        "Chandler",
         "Joey"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Monica suggesting they trade apartments",
-      "punchline": "Joey's gross overshare about bathroom issues",
-      "craft_total": 5.8,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Monica argues the Knicks tickets are incredibly valuable; Chandler blurts 'Screw the Knicks' in a moment of apartment-loyalty",
+      "punchline": "The room goes silent in horror at the blasphemy; Chandler immediately recants ('the Knicks rule all') and Joey enthusiastically agrees \u2014 sports reverence restored",
+      "craft_total": 6.25,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Joey gross-out humor, fits character but relies on cheap shock",
+      "explanation": "Funny group moment \u2014 the horror at Chandler's sports blasphemy and his immediate crawl-back is good ensemble comedy. The 'the Knicks rule all' chant has an appropriately over-the-top quality.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -987,21 +1006,24 @@
     },
     {
       "index": 33,
-      "text": "Ever read Flowers for Algernon?",
+      "text": "Done! / Let me finish. I'm talking about a bet. Winner takes all. / Ooh, we could get nothing. / Or you can end up with everything. / Oh, I like that.",
       "characters": [
-        "Monica"
+        "Chandler",
+        "Monica",
+        "Joey"
       ],
       "joke_types": [
-        "observational"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Chandler questioning living in smaller apartment after bigger one",
-      "punchline": "Monica's high-brow literary reference about regression",
-      "craft_total": 6.7,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Monica proposes a bet; Chandler immediately says 'Done!' before she's explained the terms",
+      "punchline": "Chandler's dawning realization they 'could get nothing' \u2014 a risk he hadn't processed \u2014 followed by his easy acceptance of 'everything,' revealed as a man who agreed to something before thinking",
+      "craft_total": 6.25,
+      "impact_score": 6.0,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Smart literary reference that works on multiple levels, though may fly over some viewers",
+      "explanation": "Decent character beat \u2014 Chandler's impulsive 'Done!' before hearing terms is good. The 'we could get nothing' realization is a mild laugh. Functional.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1015,22 +1037,23 @@
     },
     {
       "index": 34,
-      "text": "Ever read Sports Illustrated?",
+      "text": "No! / Just do it! / Oh! Oh, I'm convinced!",
       "characters": [
+        "Chandler",
         "Joey"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Monica's literary reference",
-      "punchline": "Joey's contrasting lowbrow magazine reference",
-      "craft_total": 7.1,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Chandler refuses the bet; Joey pushes him with 'just do it'",
+      "punchline": "Chandler's mock-surprised 'Oh! Oh, I'm convinced!' \u2014 sarcastically noting that 'just do it' was apparently a compelling argument",
+      "craft_total": 6.13,
+      "impact_score": 5.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Joey response to Monica's intellectualism, great character contrast",
+      "explanation": "Good Chandler sarcasm \u2014 'Oh, I'm convinced!' is a funny line delivered as mockery of Joey's non-argument. Economical and in-character.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1044,22 +1067,23 @@
     },
     {
       "index": 35,
-      "text": "No, I didn't read yours!",
+      "text": "Come on, man! You know I'd do it for you. Because you're my best friend. / All right. But you can't use that again for a whole year.",
       "characters": [
-        "Monica"
+        "Joey",
+        "Chandler"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Joey asking about Sports Illustrated",
-      "punchline": "Monica's defensive clarification about not reading Joey's magazine",
-      "craft_total": 5.9,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Joey guilt-trips Chandler into the bet by invoking the best-friend card",
+      "punchline": "Chandler caves \u2014 but puts a time-locked restriction on future use of 'best friend' as emotional leverage, treating it like a finite resource",
+      "craft_total": 7.4,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Mild extension of previous exchange, decent character beat",
+      "explanation": "Excellent Chandler/Joey friendship joke. The idea that 'best friend' has a one-year cooldown period like a game power-up is a perfect encapsulation of their dynamic \u2014 Chandler caves to Joey but sets rational limits. Very quotable, strong character integration for both.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1073,22 +1097,22 @@
     },
     {
       "index": 36,
-      "text": "Screw the Knicks! I didn't mean that. I just meant that...the apartment is worth so much more. And the Knicks rule.",
+      "text": "We should let Phoebe decide because she's the only one who's impartial, and she's so pretty.",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Chandler arguing about apartment value vs tickets",
-      "punchline": "Immediate panicked backtracking about insulting the team",
-      "craft_total": 6.45,
-      "impact_score": 6.5,
-      "quotability": 6.5,
+      "setup": "They need someone neutral to decide the bet's terms",
+      "punchline": "Chandler adds 'and she's so pretty' as a seemingly equal reason to Phoebe's impartiality \u2014 a joke about masculine flattery as a decision-making tool",
+      "craft_total": 6.17,
+      "impact_score": 5.83,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Chandler's neurotic overthinking",
+      "explanation": "Light Chandler joke \u2014 the addendum 'she's so pretty' is a funny non-sequitur reason for a logical choice. Mild laugh.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1102,23 +1126,23 @@
     },
     {
       "index": 37,
-      "text": "What if you could keep the apartment and the tickets? Done! Let me finish. I'm talking about a bet. Winner takes all.",
+      "text": "Phoebe Ball! / No, it doesn't have a name. / Monica, what is your favorite thing about trees? / They're green? / Good! Five points! [CHEERING]",
       "characters": [
-        "Monica",
-        "Chandler"
+        "Phoebe",
+        "Monica"
       ],
       "joke_types": [
-        "misdirection",
-        "setup_punchline"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Monica offering deal that sounds too good",
-      "punchline": "Chandler's immediate acceptance before hearing it's a risky bet",
-      "craft_total": 6.25,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Phoebe is chosen to invent a game to decide the bet; she invents a game on the spot called 'Phoebe Ball'",
+      "punchline": "The game turns out to be asking non-sequitur questions with arbitrary scoring \u2014 'Your favorite thing about trees? They're green? Good! Five points!' \u2014 a completely meaningless 'game'",
+      "craft_total": 6.3,
+      "impact_score": 6.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good misdirection with Chandler's premature enthusiasm",
+      "explanation": "Perfect Phoebe characterization. The chaos of Phoebe's 'game' \u2014 arbitrary questions, arbitrary points, genuine confidence \u2014 is delightfully in-character. 'They're green?' as the answer and 'Good! Five points!' as validation is absurdist comedy done right.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1148,23 +1172,23 @@
     },
     {
       "index": 38,
-      "text": "Come on, man! You know I'd do it for you. Because you're my best friend. All right. But you can't use that again for a whole year.",
+      "text": "Same question. / Uh... Oh! Heh. They're tall. / Ooh, three points. / Both fine answers, but we were looking for 'leafy.' Leafy.",
       "characters": [
-        "Joey",
-        "Chandler"
+        "Phoebe",
+        "Joey"
       ],
       "joke_types": [
-        "character_comedy",
-        "setup_punchline"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Joey emotionally appealing to their friendship",
-      "punchline": "Chandler's conditional acceptance with usage limit",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great character moment showing both friendship and Chandler's practical limits",
+      "setup": "Joey gets the same 'favorite thing about trees' question after Monica got 5 points for 'green'",
+      "punchline": "'They're tall' earns only 3 points; and then the reveal that the 'correct' answer was 'leafy' \u2014 an equally arbitrary third option that makes no more sense than the previous two",
+      "craft_total": 6.71,
+      "impact_score": 6.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The escalation of the game's absurdity peaks here with 'leafy' as the hidden correct answer. 'Leafy' is a perfect word choice \u2014 obvious enough that it seems like a real answer, but equally arbitrary to 'green' or 'tall.' Strong callback structure.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1178,22 +1202,22 @@
     },
     {
       "index": 39,
-      "text": "We should let Phoebe decide...because she's the only one who's impartial, and she's so pretty.",
+      "text": "Both fine answers, but we were looking for 'leafy.' Leafy.",
       "characters": [
-        "Monica"
+        "Phoebe"
       ],
       "joke_types": [
-        "character_comedy",
-        "setup_punchline"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Monica suggesting Phoebe as neutral judge",
-      "punchline": "Adding shallow flattery to influence the 'impartial' judge",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good joke about transparent manipulation and Monica's competitiveness",
+      "setup": "Monica and Joey have both given their tree answers; Phoebe awards arbitrary points",
+      "punchline": "The 'correct' answer turns out to be 'leafy' \u2014 a word so obvious and so randomly specific that it completes the joke perfectly",
+      "craft_total": 7.65,
+      "impact_score": 7.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The best payoff in the Phoebe Ball sequence. 'Leafy' is the perfect word \u2014 it's simultaneously the most obvious descriptor for trees AND the most arbitrary-sounding answer. Phoebe's sincere delivery of 'we were looking for leafy' implies she had a predetermined answer to a question with no rules. The repetition ('Leafy. Leafy.') adds to the comedy. Strong structure and character integration.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1223,22 +1247,23 @@
     },
     {
       "index": 40,
-      "text": "I have a game! This is great! What's the game? It doesn't have a name. No, okay. Phoebe Ball! No, it doesn't have a name.",
+      "text": "That's not even a game. / Shut up. We're winning!",
       "characters": [
-        "Phoebe"
+        "Chandler",
+        "Monica"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Phoebe excited to judge with a game",
-      "punchline": "Inability to name her own made-up game consistently",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Chandler objects that Phoebe Ball isn't a real game",
+      "punchline": "Monica's response prioritizes winning over the legitimacy of the game \u2014 'Shut up. We're winning!' \u2014 perfectly capturing her competitive nature",
+      "craft_total": 7.07,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Pure Phoebe moment showing her scattered thinking and eagerness",
+      "explanation": "One of the most Monica lines in the episode. 'Shut up. We're winning!' in four words captures her entire character \u2014 competitive to the point of absurdity, completely unbothered by logic when victory is on the line. Extremely economical and highly quotable. Strong character integration score.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -1264,23 +1289,23 @@
     },
     {
       "index": 41,
-      "text": "What is your favorite thing about trees? They're green? Good! Five points!",
+      "text": "Four. That's a low one!",
       "characters": [
-        "Phoebe",
-        "Monica"
+        "Monica",
+        "Joey"
       ],
       "joke_types": [
-        "absurdist",
+        "reaction_beat",
         "character_comedy"
       ],
-      "setup": "Phoebe's mysterious game beginning",
-      "punchline": "Completely random question with arbitrary point system",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "High card draw to decide the apartment bet; Monica draws first and gets a four",
+      "punchline": "Joey's gleeful 'That's a low one!' \u2014 practically cheering for the girls' misfortune with the guileless joy of a man who can't help himself",
+      "craft_total": 5.57,
+      "impact_score": 5.25,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfectly absurd Phoebe logic with nonsensical game mechanics",
+      "explanation": "Minor laugh \u2014 Joey's inability to suppress his glee is good character work but the joke is thin.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -1306,23 +1331,23 @@
     },
     {
       "index": 42,
-      "text": "Same question. They're tall. Three points!",
+      "text": "Phoebe, you look. I can't do it. / What makes you think I can? / That's okay. / Ace! [ALL CHEERING]",
       "characters": [
-        "Phoebe",
-        "Rachel"
+        "Monica",
+        "Phoebe"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Second player gets same tree question",
-      "punchline": "Different but equally valid answer gets fewer arbitrary points",
-      "craft_total": 6.35,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Monica can't bear to look at their drawn card; she asks Phoebe to look instead \u2014 Phoebe points out she's also not equipped for this",
+      "punchline": "'That's okay' \u2014 Monica absolving Phoebe's protest and moving ahead anyway, then the Ace reveal and celebration",
+      "craft_total": 5.95,
+      "impact_score": 5.67,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Continues absurdist game logic with unfair scoring",
+      "explanation": "Light situational humor. The 'That's okay' dismissal of Phoebe's protest is a funny non-sequitur. The Ace celebration sets up the next joke.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -1352,22 +1377,24 @@
     },
     {
       "index": 43,
-      "text": "Both fine answers, but we were looking for leafy. Leafy.",
+      "text": "Why are you hugging? / Because we won our apartment back! / What? Ace is high! Jack, queen, king, ace! / No! Ace is low! Ace, two, three, four!",
       "characters": [
-        "Phoebe"
+        "Joey",
+        "Monica",
+        "Chandler"
       ],
       "joke_types": [
-        "absurdist",
-        "misdirection"
+        "escalation",
+        "cringe_discomfort"
       ],
-      "setup": "Phoebe scoring the tree answers",
-      "punchline": "Revealing the 'correct' answer that no one could have known",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Monica and Rachel celebrate their Ace as a win; Joey points out they're celebrating prematurely",
+      "punchline": "The comedic disagreement over whether ace is high or low \u2014 with both sides passionately arguing card-game fundamentals while the bet hangs in the balance",
+      "craft_total": 6.51,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Phoebe absurdity - retroactively declaring correct answer with confidence",
+      "explanation": "Good tension-comedy \u2014 the high/low ace dispute is a genuinely common real-world argument made absurd by the high stakes. The escalating declarations ('Ace is high!'/'No!') work well.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -1393,23 +1420,23 @@
     },
     {
       "index": 44,
-      "text": "That's not even a game. Shut up. We're winning!",
+      "text": "Come on, apartment! Come on, apartment! / [SIGHS] Aah! I know queen is high!",
       "characters": [
-        "Joey",
-        "Chandler"
+        "Monica",
+        "Joey"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "reaction_beat"
       ],
-      "setup": "Joey questioning Phoebe's nonsensical game",
-      "punchline": "Chandler's pragmatic focus on their current advantage",
-      "craft_total": 6.25,
-      "impact_score": 6.0,
-      "quotability": 6.5,
+      "setup": "Second draw after the ace dispute \u2014 high stakes card draw",
+      "punchline": "Monica's desperate chanting followed by Joey's immediate protest that queen is high \u2014 suggesting he expected another dispute before they even drew",
+      "craft_total": 6.21,
+      "impact_score": 6.5,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character contrast and practical Chandler response",
+      "explanation": "Joey's preemptive 'I know queen is high!' is a good beat \u2014 he's already anticipating the dispute before it happens. Character-consistent paranoia.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1427,23 +1454,24 @@
     },
     {
       "index": 45,
-      "text": "Four. That's a low one!",
+      "text": "We pick again! We pick again! / Why? / I don't know.",
       "characters": [
+        "Monica",
         "Joey",
         "Chandler"
       ],
       "joke_types": [
-        "observational",
-        "reaction_beat"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Joey drawing a four in card game",
-      "punchline": "Chandler's obvious observation about the low card",
-      "craft_total": 4.25,
-      "impact_score": 4.0,
-      "quotability": 3.0,
+      "setup": "Monica and Rachel have lost the card draw; Monica demands they pick again",
+      "punchline": "Joey's 'Why?' / Monica's 'I don't know' \u2014 she's demanding a redo with zero justification and knows it",
+      "craft_total": 6.49,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Very basic observational humor, stating the obvious",
+      "explanation": "Monica's honest 'I don't know' to 'Why do we get to pick again?' is a perfect character moment \u2014 she's so competitive she demands re-dos she can't justify. Very economical.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1457,23 +1485,22 @@
     },
     {
       "index": 46,
-      "text": "You look. I can't do it. What makes you think I can?",
+      "text": "That's courtside, baby!",
       "characters": [
-        "Chandler",
-        "Joey"
+        "Chandler"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "reaction_beat"
       ],
-      "setup": "Chandler can't look at their losing card",
-      "punchline": "Joey's logical question about his own ability to handle it",
-      "craft_total": 5.9,
-      "impact_score": 5.5,
+      "setup": "Joey and Chandler have won both the apartment and the Knicks tickets",
+      "punchline": "Chandler's victory-lap 'courtside, baby!' \u2014 the dorky enthusiasm is funny on a character who isn't naturally sporty",
+      "craft_total": 6.4,
+      "impact_score": 6.17,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good nervous energy and Joey's practical logic",
+      "explanation": "Minor victory celebration moment. The fun is in Chandler's out-of-character sports bro enthusiasm. Light laugh.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1487,22 +1514,23 @@
     },
     {
       "index": 47,
-      "text": "Why are you hugging? We won our apartment back! What? Ace is high! Jack, queen, king, ace! No! Ace is low! Ace, two, three, four!",
+      "text": "What are they so mad about? They got the apartment back. / No, they didn't.",
       "characters": [
-        "Multiple characters"
+        "Chandler",
+        "Joey"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Confusion over who won with ace",
-      "punchline": "Immediate argument over ace value in cards",
-      "craft_total": 5.75,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Monica and Rachel storm off upset after losing both the apartment AND the tickets",
+      "punchline": "Chandler momentarily forgets their own victory \u2014 thinking the girls got the apartment \u2014 and Joey flatly corrects him: 'No, they didn't'",
+      "craft_total": 6.55,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Realistic confusion that creates tension and conflict",
+      "explanation": "Good beat \u2014 Chandler's post-victory confusion and Joey's minimal correction is a funny coda to the card game sequence. 'No, they didn't' as a full stop is economically excellent.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1544,21 +1572,22 @@
     },
     {
       "index": 48,
-      "text": "Come on, apartment! Come on, apartment!",
+      "text": "I always hear about them foreigners stealing American jobs. That could be you.",
       "characters": [
-        "Joey"
+        "Ross"
       ],
       "joke_types": [
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Joey drawing another card",
-      "punchline": "Treating the card draw like rooting for sports team",
-      "craft_total": 5.35,
-      "impact_score": 5.0,
-      "quotability": 5.0,
+      "setup": "Ross is trying to convince Emily to move to New York by assuring her she'll find work there",
+      "punchline": "He adds 'I always hear about them foreigners stealing American jobs. That could be you' \u2014 a xenophobic trope weaponized as a sincere encouragement",
+      "craft_total": 6.97,
+      "impact_score": 7.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Joey sports mentality applied to card game",
+      "explanation": "Clever subversive joke \u2014 Ross co-opting anti-immigrant rhetoric as a positive selling point reveals his love-addled logic. 'That could be you!' as an aspirational statement about stealing jobs is a genuinely sharp inversion.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1576,23 +1605,22 @@
     },
     {
       "index": 49,
-      "text": "We pick again! We pick again! Why? I don't know.",
+      "text": "Look. I was with Carol for four years before we got married... and I wound up divorced from a pregnant lesbian.",
       "characters": [
-        "Chandler",
-        "Joey"
+        "Ross"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Chandler demanding another draw",
-      "punchline": "Immediately admitting he doesn't know why they should",
-      "craft_total": 5.9,
-      "impact_score": 5.5,
-      "quotability": 5.0,
+      "setup": "Ross is arguing that knowing someone for only six weeks shouldn't disqualify them from getting married",
+      "punchline": "His evidence: a long relationship still ended in divorcing a pregnant lesbian \u2014 implying the duration of courtship is irrelevant to outcome",
+      "craft_total": 7.46,
+      "impact_score": 7.83,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good desperation comedy with honest admission",
+      "explanation": "Classic Ross self-pity joke that works because it's true within the show's history. 'Divorced from a pregnant lesbian' is a phrase that perfectly encapsulates Ross's accumulated romantic tragedy, and using it as an argument FOR rushing into marriage is delightfully perverse logic.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1610,23 +1638,22 @@
     },
     {
       "index": 50,
-      "text": "What are they so mad about? They got the apartment back. No, they didn't.",
+      "text": "Ow!",
       "characters": [
-        "Joey",
-        "Chandler"
+        "Emily"
       ],
       "joke_types": [
-        "misdirection",
-        "cringe_discomfort"
+        "physical_slapstick",
+        "reaction_beat"
       ],
-      "setup": "Joey confused about girls' anger after apparent victory",
-      "punchline": "Chandler revealing they actually lost",
-      "craft_total": 5.9,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good confusion reveal, clarifies the situation",
+      "setup": "Ross has just proposed to Emily and they embrace in celebration",
+      "punchline": "Emily's 'Ow!' \u2014 presumably she's been poked by his new ear piercing in the embrace",
+      "craft_total": 7.07,
+      "impact_score": 7.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect economy \u2014 one word punctuates the romantic proposal scene and callbacks to the earring. The earring that symbolized romance and adventure immediately becomes a physical hazard at the moment of maximum tenderness. Well-structured callback that earns its laugh.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1640,23 +1667,23 @@
     },
     {
       "index": 51,
-      "text": "Move in with me? What?",
+      "text": "Oh, it's a bit small. / Damn! I thought that'd be romantic as hell.",
       "characters": [
-        "Ross",
-        "Emily"
+        "Emily",
+        "Ross"
       ],
       "joke_types": [
         "setup_punchline",
-        "cringe_discomfort"
+        "character_comedy"
       ],
-      "setup": "Romantic moment interrupted",
-      "punchline": "Ross's impulsive proposal shocking Emily",
-      "craft_total": 5.25,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Ross produces a ring for Emily after the proposal",
+      "punchline": "Emily diplomatically notes 'it's a bit small'; Ross drops the romantic pretense \u2014 'Damn! I thought that'd be romantic as hell'",
+      "craft_total": 7.27,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard romantic comedy moment, predictable but necessary",
+      "explanation": "Good deflating-of-romance joke. Ross's 'Damn! I thought that'd be romantic as hell' is a funny collapse from the grand romantic gesture \u2014 the acknowledgment that it didn't quite land is very relatable and character-appropriate. The directness of 'Damn!' is perfect.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1686,22 +1713,23 @@
     },
     {
       "index": 52,
-      "text": "I always hear about them foreigners stealing American jobs. That could be you.",
+      "text": "Hey, should we give these to the girls? Like a peace offering? / That's very nice. Plus, they were free and too small.",
       "characters": [
-        "Ross"
+        "Joey",
+        "Chandler"
       ],
       "joke_types": [
-        "observational",
-        "dark_subversive"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Ross encouraging Emily to find work in America",
-      "punchline": "Awkward reference to anti-immigrant sentiment",
-      "craft_total": 5.25,
-      "impact_score": 4.5,
-      "quotability": 5.0,
+      "setup": "Joey suggests giving the Knicks tickets to Monica and Rachel as a peace offering",
+      "punchline": "Chandler's real reason: the tickets were free and the seats were 'too small' \u2014 the peace offering is actually self-serving disposal of unwanted tickets",
+      "craft_total": 7.27,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Awkward attempt at humor about sensitive topic, doesn't quite land",
+      "explanation": "Good Chandler undercutting of sentimentality. The 'free and too small' admission reveals the peace offering is really just convenient disposal. Efficient and in-character.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1727,22 +1755,23 @@
     },
     {
       "index": 53,
-      "text": "I was with Carol for four years before we got married...and I wound up divorced from a pregnant lesbian.",
+      "text": "Hey, you want a beer? / Whoa! / I know!",
       "characters": [
-        "Ross"
+        "Joey",
+        "Chandler"
       ],
       "joke_types": [
-        "character_comedy",
-        "dark_subversive"
+        "visual_gag",
+        "reaction_beat"
       ],
-      "setup": "Ross justifying quick marriage to Emily",
-      "punchline": "Citing his disastrous previous marriage as evidence",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Joey and Chandler return to their old apartment to find it completely transformed",
+      "punchline": "Joey casually offers a beer as if nothing has changed; Chandler's 'Whoa!' and Joey's 'I know!' confirm the apartment has been redecorated wildly \u2014 the visual of whatever Monica and Rachel did to it is the joke",
+      "craft_total": 5.63,
+      "impact_score": 5.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good Ross moment using his past disasters to justify current impulsiveness",
+      "explanation": "Strong visual gag setup \u2014 the reaction shots ('Whoa! / I know!') carry the joke, suggesting Monica has dramatically transformed the apartment into something unrecognizable. The casualness of Joey's beer offer amid the chaos is a good beat.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1760,23 +1789,23 @@
     },
     {
       "index": 54,
-      "text": "It's a bit small. Damn! I thought that'd be romantic as hell.",
+      "text": "What the hell is going on? / We took our apartment back!",
       "characters": [
-        "Emily",
-        "Ross"
+        "Joey",
+        "Monica"
       ],
       "joke_types": [
-        "setup_punchline",
-        "cringe_discomfort"
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Ross's romantic proposal gesture",
-      "punchline": "Emily's underwhelmed response deflating Ross's confidence",
-      "craft_total": 5.9,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Monica and Rachel have apparently moved back into the apartment while Joey and Chandler were gone",
+      "punchline": "Monica's triumphant declaration \u2014 'We took our apartment back!' \u2014 reveals the girls have staged a guerrilla apartment takeover",
+      "craft_total": 6.4,
+      "impact_score": 6.33,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard romantic comedy deflation, Ross's effort not appreciated",
+      "explanation": "Good escalation of the apartment plot. Monica's military-operation satisfaction in reclaiming the apartment is well-characterized.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1798,22 +1827,22 @@
     },
     {
       "index": 55,
-      "text": "Let us keep the apartment and...as a thank you...Rachel and I will kiss for one minute.",
+      "text": "I had nothing to do with it.",
       "characters": [
-        "Monica"
+        "Rachel"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Monica making final offer to boys",
-      "punchline": "Using sexuality as bargaining chip in desperate move",
-      "craft_total": 5.65,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Monica has just proclaimed they took the apartment back",
+      "punchline": "Rachel immediately distancing herself from responsibility \u2014 'I had nothing to do with it' \u2014 despite clearly having participated",
+      "craft_total": 6.63,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Desperate escalation that works for plot but feels somewhat forced",
+      "explanation": "Good Rachel character beat \u2014 her immediate legal/moral distancing from the apartment heist is very consistent with her self-preservation instincts. Very economical.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1839,23 +1868,22 @@
     },
     {
       "index": 56,
-      "text": "Totally worth it! That was one good minute!",
+      "text": "Okay, it was my idea. But I don't feel good about it.",
       "characters": [
-        "Joey",
-        "Chandler"
+        "Rachel"
       ],
       "joke_types": [
-        "reaction_beat",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "After Monica and Rachel's kiss",
-      "punchline": "Boys' immediate satisfied reactions",
-      "craft_total": 5.1,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Predictable male reaction, gets the laugh but not particularly clever",
+      "setup": "Rachel has just said she had nothing to do with it",
+      "punchline": "She immediately contradicts herself \u2014 'Okay, it was my idea. But I don't feel good about it' \u2014 the reversal and the moral hedging are the joke",
+      "craft_total": 6.99,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent callback to the previous line \u2014 the two-beat misdirection (denial then confession) is well-structured. 'But I don't feel good about it' as a moral addendum to 'it was my idea' is a perfect Rachel joke. Good character integration and economy.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1869,22 +1897,22 @@
     },
     {
       "index": 57,
-      "text": "Can you believe something that stupid actually got us our apartment back?",
+      "text": "I don't know.",
       "characters": [
-        "Monica"
+        "Joey"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "irony_sarcasm"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Monica reflecting on their victory method",
-      "punchline": "Self-aware commentary on the absurdity of their solution",
-      "craft_total": 6.15,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Chandler appeals to Joey to back him up in refusing to leave the apartment they just reclaimed",
+      "punchline": "Joey's quiet 'I don't know' \u2014 he's not standing firm with Chandler, apparently open to moving again",
+      "craft_total": 6.11,
+      "impact_score": 5.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good meta-commentary on the sitcom logic they just employed",
+      "explanation": "Joey's capitulation 'I don't know' is funny because he's the person Chandler most counted on and he immediately folds. The economy is excellent \u2014 three words undermine all of Chandler's bravado.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1906,22 +1934,22 @@
     },
     {
       "index": 58,
-      "text": "If you had just done that after the last contest...no one would have had to move at all.",
+      "text": "I don't want to move again, with...",
       "characters": [
-        "Rachel"
+        "Joey"
       ],
       "joke_types": [
-        "observational",
-        "irony_sarcasm"
+        "character_comedy",
+        "awkward_silence"
       ],
-      "setup": "Rachel pointing out obvious solution",
-      "punchline": "Highlighting how they could have avoided entire ordeal",
-      "craft_total": 5.7,
-      "impact_score": 5.5,
-      "quotability": 5.0,
+      "setup": "Joey begins to explain his reluctance to move again, then trails off mid-thought",
+      "punchline": "The trailing '...with' \u2014 Joey begins reasoning but loses the thread, the incomplete thought implying he has a half-formed grievance he can't articulate",
+      "craft_total": 5.99,
+      "impact_score": 5.67,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Logical observation that exposes the circular nature of their conflicts",
+      "explanation": "Good Joey characterization \u2014 he starts a sentence and can't finish it. The ellipsis is the joke. Mild laugh but consistent with Joey's dim-but-earnest persona.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1931,22 +1959,22 @@
     },
     {
       "index": 59,
-      "text": "Let's pretend that's not true.",
+      "text": "Oh, no more offers. You can't offer anything to us!",
       "characters": [
-        "Monica"
+        "Chandler"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "irony_sarcasm",
+        "setup_punchline"
       ],
-      "setup": "Rachel's logical point about avoiding the whole mess",
-      "punchline": "Monica's denial of inconvenient truth",
-      "craft_total": 6.05,
-      "impact_score": 6.0,
-      "quotability": 6.5,
+      "setup": "Monica says she has a backup offer; Chandler grandly declares no offer could sway them",
+      "punchline": "This sets up his immediate capitulation \u2014 the declaration of invincibility immediately before he caves is the classic 'famous last words' structure",
+      "craft_total": 6.49,
+      "impact_score": 6.83,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Monica response - practical denial of uncomfortable logic",
+      "explanation": "Setup for the Monica/Rachel kiss joke \u2014 this line functions structurally to make the capitulation funnier. Works as pure setup.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1960,22 +1988,23 @@
     },
     {
       "index": 60,
-      "text": "Oh, are you pregnant too?",
+      "text": "Totally worth it. / That was one good minute.",
       "characters": [
-        "Phoebe"
+        "Chandler",
+        "Joey"
       ],
       "joke_types": [
-        "misdirection",
-        "character_comedy"
+        "reaction_beat",
+        "deadpan_understatement"
       ],
-      "setup": "Ross announcing engagement to Emily",
-      "punchline": "Phoebe assuming pregnancy is the only reason for quick marriage",
-      "craft_total": 6.9,
-      "impact_score": 7.0,
+      "setup": "Monica and Rachel have apparently just completed the one-minute kiss deal",
+      "punchline": "'That was one good minute' \u2014 the satisfied review of the transaction by Joey, equal parts creepy and funny",
+      "craft_total": 6.5,
+      "impact_score": 7.17,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Phoebe logic - jumping to most obvious explanation for rush",
+      "explanation": "'That was one good minute' works as a deadpan review format \u2014 treating a kiss like a Yelp rating. Joey delivering it makes it funnier through his guileless sincerity. Good economy.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1989,28 +2018,126 @@
     },
     {
       "index": 61,
-      "text": "Monica and Rachel made out.",
+      "text": "Men are such idiots. / I know. Can you believe something that stupid actually got us our apartment back?",
       "characters": [
-        "Joey"
+        "Monica",
+        "Rachel"
       ],
       "joke_types": [
-        "absurdist",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Emotional moment about Ross's engagement",
-      "punchline": "Joey's focus on completely different recent event",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Monica and Rachel have successfully used the kiss gambit to reclaim their apartment",
+      "punchline": "Their shared disbelief that it worked \u2014 'can you believe something that STUPID actually got us our apartment back?' \u2014 the meta-commentary on the gender dynamics of the joke",
+      "craft_total": 6.61,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Perfect Joey moment - prioritizing the wrong thing at emotional moment",
+      "explanation": "Smart self-aware beat \u2014 the show acknowledges the stupidity of the gambit through the characters' own commentary. Monica and Rachel processing the transaction as victors who understand they just exploited male stupidity adds a layer to the broader joke.",
       "dialogue": [
         {
           "speaker": "Joey",
           "line": "Hey, that's great about Ross and Rachel, but did you guys see the game last night? My man totally choked in the fourth quarter."
         }
       ]
+    },
+    {
+      "index": 62,
+      "text": "It's funny. If you had just done that after the last contest, no one would have had to move at all. Ha, ha. / Let's pretend that's not true. / Yeah.",
+      "characters": [
+        "Rachel",
+        "Monica"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "dark_subversive"
+      ],
+      "setup": "Rachel points out that the kiss gambit could have worked after the original apartment bet, making the entire plot of this episode unnecessary",
+      "punchline": "Monica's 'Let's pretend that's not true' \u2014 an admission that the entire conflict was preventable and a request to suppress that knowledge",
+      "craft_total": 7.49,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the strongest jokes in the episode \u2014 a delightfully self-aware moment where the show acknowledges its own plot was unnecessary. 'Let's pretend that's not true' is a perfect, quotable line that works as both character comedy and meta-commentary. Monica accepting the futility of everything they went through is very funny."
+    },
+    {
+      "index": 63,
+      "text": "Oh, are you pregnant too?",
+      "characters": [
+        "Monica"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Ross announces his surprise engagement to Emily",
+      "punchline": "Monica's first response is 'Oh, are you pregnant too?' \u2014 the reflexive assumption of a shotgun engagement based on the hasty announcement",
+      "craft_total": 6.4,
+      "impact_score": 6.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good joke \u2014 'pregnant too?' the 'too' implies knowledge of another pregnancy (Rachel's? Or just Ross's track record?) and captures the absurdity of the situation perfectly. Monica's bluntness is well-characterized."
+    },
+    {
+      "index": 64,
+      "text": "Oh, are you pregnant too?",
+      "characters": [
+        "Chandler"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Ross announces he and Emily are getting married after only six weeks; everyone is shocked",
+      "punchline": "Chandler's first assumption is pregnancy \u2014 given Ross's history (Carol's pregnancy was the reason for his first hasty life decision), this is both a callback to backstory and a savage joke",
+      "craft_total": 6.78,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Perfectly timed and maximally efficient. Chandler's question implies a whole history about Ross's decision-making while also being a sharp joke about hasty engagements. The 'too' implies Ross is somehow always adjacent to unexpected pregnancies. Very quotable."
+    },
+    {
+      "index": 65,
+      "text": "Monica and Rachel made out.",
+      "characters": [
+        "Chandler"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "deadpan_understatement"
+      ],
+      "setup": "Everyone is reacting to Ross's engagement news with warmth and congratulations",
+      "punchline": "Chandler, in the middle of the emotional celebration, flatly announces: 'Monica and Rachel made out' \u2014 a completely incongruous injection of his own exciting news",
+      "craft_total": 7.89,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The best joke in the episode and arguably one of the better jokes in the series run. The timing is surgical \u2014 delivered at the peak of a sincere emotional moment (Ross's engagement), Chandler's flat, matter-of-fact announcement derails everything. The seven-word sentence carries enormous comedic weight through contrast, economy, and perfect deadpan delivery. The callback is executed flawlessly. High quotability \u2014 this line is remembered by fans. This is very close to the 8.0 anchor benchmark and arguably exceeds it in terms of impact."
+    },
+    {
+      "index": 66,
+      "text": "[Monica and the singing man sing 'Morning's here' together cheerfully] / Hey, you're back! / Get into gear / Breakfast is near / The dark of night has disappeared / I'll see you tomorrow morning! / Okay!",
+      "characters": [
+        "Monica",
+        "Singing Man"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "The episode ends with Monica now fully embracing the singing man \u2014 the same annoyance she defended at the top of the episode",
+      "punchline": "Monica and the singing man are now duetting happily \u2014 she has fully become what Rachel hated, and the apartment situation has resolved to its original state",
+      "craft_total": 7.2,
+      "impact_score": 7.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Structurally satisfying episode bookend. Monica, who defended the singing man at the top, is now fully integrated into his routine \u2014 a perfect thematic close that shows the apartment plot has resolved. The 'I'll see you tomorrow morning!' suggests this is now a regular thing, escalating the joke from nuisance to beloved ritual."
     }
   ],
   "air_date": "1998-04-09",

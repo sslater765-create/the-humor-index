@@ -4,34 +4,36 @@
   "season": 8,
   "episode_number": 17,
   "title": "The One With The Tea Leaves",
-  "humor_index": 76.2,
-  "jpm": 2.03,
-  "avg_craft": 6.79,
-  "avg_impact": 7.08,
-  "total_jokes": 40,
-  "war": 37.4,
-  "dominant_joke_types": "[\"character_comedy\", \"cringe_discomfort\", \"absurdist\"]",
-  "standout_joke_ids": "[29, 17, 30]",
-  "weakest_section": "15:20-16:00",
+  "humor_index": 88.9,
+  "jpm": 3.49,
+  "avg_craft": 7.19,
+  "avg_impact": 7.16,
+  "total_jokes": 58,
+  "war": 68.2,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[38, 6, 55]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Maybe he's in the sugar bowl. Joey? Nope.",
+      "text": "Monica and Chandler pretending Joey isn't there \u2014 Monica checks the sugar bowl: 'Maybe he's in the sugar bowl. Joey? Nope.'",
       "characters": [
-        "Monica"
+        "Monica",
+        "Chandler",
+        "Rachel"
       ],
       "joke_types": [
-        "absurdist",
-        "deadpan_understatement"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Rachel asks if Joey is there, Monica and Chandler say they don't see him",
-      "punchline": "Monica literally checks the sugar bowl for a full-grown man",
-      "craft_total": 6.83,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Rachel asks if Joey is home; Chandler and Monica have been told not to reveal he's there",
+      "punchline": "Monica plays along with absurd literalism, checking the sugar bowl as if Joey could be hiding inside it",
+      "craft_total": 6.88,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Solid absurdist humor with good economy - the visual of checking a tiny container for a person is genuinely funny",
+      "explanation": "Monica's sarcastic literalism is well-executed \u2014 the escalation from 'I don't see him' to actually checking the sugar bowl lands because it's so deadpan. Character-appropriate for Monica's slightly sardonic wit. Solid opener.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -53,22 +55,22 @@
     },
     {
       "index": 2,
-      "text": "Well, at least you make each other laugh.",
+      "text": "'Well, at least you make each other laugh.' \u2014 Rachel's dry reaction to Chandler and Monica's sugar bowl bit",
       "characters": [
         "Rachel"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "deadpan_understatement",
         "reaction_beat"
       ],
-      "setup": "Monica and Chandler are giggling at their bad lie about not seeing Joey",
-      "punchline": "Rachel's dry observation about their obvious conspiracy",
-      "craft_total": 6.07,
-      "impact_score": 6.0,
+      "setup": "Chandler and Monica just performed an absurd sugar-bowl pantomime to cover for Joey",
+      "punchline": "Rachel's flat, unamused 'well, at least you make each other laugh' cuts through the silliness with wry resignation",
+      "craft_total": 6.8,
+      "impact_score": 6.33,
       "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good reaction beat - Rachel calling out their obvious behavior with understated sarcasm",
+      "explanation": "Perfect economy \u2014 five words that do the work of a paragraph. Rachel's deadpan is her wheelhouse, and the line lands as a callback to the absurdity that just happened. Slightly above average.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -78,22 +80,24 @@
     },
     {
       "index": 3,
-      "text": "Ew, was Chandler naked?",
+      "text": "'Why is that bagel on the floor?' / 'We were playing a game.' / 'Was Chandler naked?' / 'Sort of like a ring-toss kind of situation?'",
       "characters": [
-        "Rachel"
+        "Rachel",
+        "Monica",
+        "Chandler"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "setup_punchline"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Monica says they were playing a game with a bagel on the floor",
-      "punchline": "Rachel immediately jumps to sexual implications",
-      "craft_total": 5.62,
-      "impact_score": 6.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Rachel notices a bagel on the floor and Monica gives the vague excuse 'we were playing a game'",
+      "punchline": "Rachel immediately leaps to 'Was Chandler naked? Sort of like a ring-toss kind of situation?' \u2014 implying Chandler's anatomy was the ring-toss target",
+      "craft_total": 7.25,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Standard sexual misunderstanding humor - functional but not particularly clever",
+      "explanation": "One of the episode's sharpest jokes. The escalation from an innocent question about a bagel to the visual implication of a naked ring-toss is unexpected and raunchy without being crude. The beat lands especially well because Rachel doesn't even pause \u2014 it's her first instinct, which reveals character. Earns a high score.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -107,22 +111,23 @@
     },
     {
       "index": 4,
-      "text": "Sort of like a ring-toss kind of situation?",
+      "text": "'Did you hear that?' / 'Yeah. That naked bagel game?'",
       "characters": [
-        "Rachel"
+        "Chandler",
+        "Joey"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Previous naked game implication",
-      "punchline": "Rachel gets more specific about the sexual scenario she's imagining",
-      "craft_total": 5.05,
-      "impact_score": 6.0,
-      "quotability": 3.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Escalates the sexual misunderstanding but relies on innuendo without much wit",
+      "setup": "Joey overheard Rachel say she misses him; Chandler asks if he heard it",
+      "punchline": "Joey ignores the emotionally significant part and only registers the naked bagel game detail",
+      "craft_total": 6.82,
+      "impact_score": 6.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect Joey characterization \u2014 he literally cannot process emotional nuance over the allure of a weird physical game. The callback is tight and the character integration is exceptional. Joey's obliviousness has never been more efficiently deployed.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -136,22 +141,22 @@
     },
     {
       "index": 5,
-      "text": "Dude, I don't know. That's a pretty small hole.",
+      "text": "'Dude, I don't know. That's a pretty small hole.'",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "deadpan_understatement",
         "callback"
       ],
-      "setup": "Monica mentions the 'naked bagel game' again",
-      "punchline": "Chandler unwittingly continues the sexual innuendo",
-      "craft_total": 5.25,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Joey is considering whether the naked ring-toss with a bagel is feasible",
+      "punchline": "Chandler, apparently considering the logistics himself, delivers a self-deprecating comment about his own anatomy",
+      "craft_total": 7.2,
+      "impact_score": 7.33,
+      "quotability": 6.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good callback timing but the humor is still just innuendo",
+      "explanation": "Chandler's self-deprecating response implies he has actually weighed this scenario about himself, which is both character-consistent and quietly absurd. The economy is superb \u2014 it lands fast and exits fast. The callback chain on this bagel bit is the episode's best sustained comedic thread.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -173,22 +178,22 @@
     },
     {
       "index": 6,
-      "text": "Up until I was 25, I thought the only response to 'I love you' was 'Oh, crap.'",
+      "text": "'Until I was 25, I thought the response to \"I love you\" was \"Oh, crap.\"'",
       "characters": [
-        "Monica"
+        "Chandler"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "dark_subversive"
       ],
-      "setup": "Joey complains about rejection, Monica says she doesn't know what that's like",
-      "punchline": "Monica reveals her hilariously specific romantic inexperience",
-      "craft_total": 7.98,
-      "impact_score": 8.0,
-      "quotability": 8.5,
+      "setup": "Joey says Chandler doesn't know what it's like to get shot down romantically",
+      "punchline": "Chandler reveals that until 25, he genuinely experienced 'Oh, crap' as the standard response to 'I love you' \u2014 implying his romantic history was universally dismal",
+      "craft_total": 8.45,
+      "impact_score": 8.5,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent character-specific joke that perfectly captures Monica's past neuroses with specific, quotable dialogue",
+      "explanation": "One of the episode's standout jokes. The specificity of 'until I was 25' makes it feel like a genuine biographical confession rather than a generic self-deprecating quip. 'Oh, crap' as the normative response to 'I love you' is a sharp, original construction that tells us volumes about Chandler's pre-Monica romantic life in six words. High quotability, perfect character integration \u2014 only Chandler delivers this.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -210,22 +215,22 @@
     },
     {
       "index": 7,
-      "text": "I got shot down at fat camp.",
+      "text": "'I got shot down at fat camp.'",
       "characters": [
-        "Monica"
+        "Chandler"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Previous rejection discussion",
-      "punchline": "Monica adds another layer of personal embarrassment",
-      "craft_total": 7.05,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "Joey pushes back: 'No rejection?' \u2014 implying Chandler had it easy",
+      "punchline": "Chandler reveals he was rejected even at fat camp, the implied last resort of social acceptance",
+      "craft_total": 7.68,
+      "impact_score": 7.67,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great character integration - perfectly fits Monica's backstory with efficient delivery",
+      "explanation": "Four words, enormous payload. The implication \u2014 that fat camp would be the lowest bar of romantic rejection, and he still couldn't clear it \u2014 is both dark and expertly economical. Fits seamlessly into Chandler's established backstory of childhood awkwardness. Very strong.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -235,22 +240,22 @@
     },
     {
       "index": 8,
-      "text": "Boy, kids are mean when they're hungry.",
+      "text": "'Boy, kids are mean when they're hungry.'",
       "characters": [
-        "Monica"
+        "Joey"
       ],
       "joke_types": [
-        "observational",
-        "deadpan_understatement"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Monica's fat camp rejection story",
-      "punchline": "Understated observation about the cruelty of hungry children",
-      "craft_total": 6.88,
-      "impact_score": 6.5,
+      "setup": "Chandler reveals he was rejected at fat camp",
+      "punchline": "Joey responds not with sympathy but with a philosophical observation about hungry children being cruel \u2014 both missing the point and nailing a secondary truth",
+      "craft_total": 7.87,
+      "impact_score": 8.0,
       "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Nice understated capper to the fat camp story - good observational humor",
+      "explanation": "Joey's response is pitch-perfect character comedy. He doesn't process the emotional content of Chandler being rejected \u2014 he processes the food angle, which is entirely on-brand. The observation itself ('kids are mean when they're hungry') also happens to be a genuinely funny standalone insight. The double-layer makes this a gem.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -264,22 +269,23 @@
     },
     {
       "index": 9,
-      "text": "And also, tea tends to give me the trots.",
+      "text": "Joey suddenly notices something is on Chandler: 'I forgot this was on your..' / 'We didn't play it!'",
       "characters": [
-        "Phoebe"
+        "Joey",
+        "Chandler"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "callback",
+        "visual_gag"
       ],
-      "setup": "Phoebe explains why she stopped reading tea leaves despite being accurate",
-      "punchline": "Abrupt shift from mystical to crude physical reality",
-      "craft_total": 7.07,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Phoebe - mixing spiritual and crude in character-appropriate way",
+      "setup": "Joey is about to leave to talk to Rachel; conversation winds down",
+      "punchline": "Joey spots something (presumably the bagel) on Chandler, triggering Chandler's frantic denial 'We didn't play it!' \u2014 confirming the naked ring-toss was at least considered",
+      "craft_total": 6.39,
+      "impact_score": 6.33,
+      "quotability": 4.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The callback to the bagel game pays off one more time, though the visual component (what exactly Joey notices) is unclear from the transcript alone. Chandler's panicked 'We didn't play it!' is funnier than what precedes it. Decent cap to the running gag.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -293,22 +299,22 @@
     },
     {
       "index": 10,
-      "text": "Which can mean either a promotion or a violent death.",
+      "text": "'I actually stopped because I was so accurate. And one of the great joys of life is its wondrous unpredictability... And also, tea tends to give me the trots.'",
       "characters": [
         "Phoebe"
       ],
       "joke_types": [
-        "dark_subversive",
-        "absurdist"
+        "misdirection",
+        "character_comedy"
       ],
-      "setup": "Phoebe sees a ladder in Monica's tea leaves",
-      "punchline": "Bizarrely extreme interpretation range",
-      "craft_total": 7.85,
-      "impact_score": 8.0,
-      "quotability": 8.0,
+      "setup": "Phoebe sets up a mystical, profound reason she stopped reading tea leaves: her accuracy, the beauty of unpredictability",
+      "punchline": "The grand spiritual justification is immediately undercut by the mundane physical reality: 'tea tends to give me the trots'",
+      "craft_total": 7.75,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent absurdist humor - the extreme range from mundane to death is perfectly Phoebe",
+      "explanation": "Classic Phoebe structure: begins with earnest New Age mysticism, pivots to bodily function. The structure is impeccable \u2014 the spiritual buildup earns the crass landing. 'Trots' is funnier than 'diarrhea' (economy of word choice). Strong character integration: only Phoebe would deliver this sequence with equal sincerity throughout.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -326,22 +332,22 @@
     },
     {
       "index": 11,
-      "text": "I'm the head chef. I can't get promoted.",
+      "text": "'I see a ladder. Which can mean either a promotion or a violent death.'",
       "characters": [
-        "Monica"
+        "Phoebe"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "setup_punchline"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Phoebe's fortune of promotion or death",
-      "punchline": "Monica's logical response implies she's getting the death option",
-      "craft_total": 7.23,
-      "impact_score": 7.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Phoebe reads Monica's tea leaves and announces she sees a ladder",
+      "punchline": "The two interpretations \u2014 promotion vs. violent death \u2014 are presented with equal weight and calm, as if this is a perfectly normal fortune-telling range",
+      "craft_total": 7.31,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good logical follow-up that makes the death implication funnier through Monica's matter-of-fact delivery",
+      "explanation": "The gap between 'promotion' and 'violent death' is the joke \u2014 Phoebe treats extremes as equally plausible and equally mundane. Well-structured absurdism that fits her character. Monica's flat reaction ('I'm the head chef, I can't get promoted') makes it even better.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -359,24 +365,22 @@
     },
     {
       "index": 12,
-      "text": "You mean your pink shirt? / Faded salmon color? / No, I haven't seen your pink shirt.",
+      "text": "'I'm the head chef. I can't get promoted.'",
       "characters": [
-        "Joey",
-        "Ross",
-        "Joey"
+        "Monica"
       ],
       "joke_types": [
-        "running_gag",
-        "character_comedy"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Ross describes his shirt as 'faded salmon color'",
-      "punchline": "Joey cuts through the euphemism and repeats 'pink' to emphasize Ross's denial",
-      "craft_total": 6.65,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Phoebe tells Monica the ladder means either promotion or violent death",
+      "punchline": "Monica's only concern is to clarify she's already at the top \u2014 implicitly leaving 'violent death' as the remaining option, which she doesn't address",
+      "craft_total": 7.28,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character beat showing Ross's vanity and Joey's directness about the obvious",
+      "explanation": "The humor is in what Monica DOESN'T say \u2014 she doesn't react to 'violent death,' only the professional ladder reading. It's a reaction beat that works because of her oblivious competitiveness.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -390,22 +394,23 @@
     },
     {
       "index": 13,
-      "text": "I'm sure you can get another one at Ann Taylor's.",
+      "text": "Phoebe reads a circle in the tea leaves: 'You're having a baby or you'll make a scientific discovery!' \u2014 Ross says 'Well, I have been spending a lot of time in the lab.'",
       "characters": [
-        "Joey"
+        "Phoebe",
+        "Ross"
       ],
       "joke_types": [
-        "character_comedy",
-        "setup_punchline"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Ross is upset about losing his shirt",
-      "punchline": "Joey suggests a women's clothing store",
-      "craft_total": 6.1,
+      "setup": "Phoebe gives Ross two possible interpretations of his tea leaves: baby or scientific discovery",
+      "punchline": "Ross \u2014 who has actually gotten Rachel pregnant \u2014 immediately gravitates toward 'scientific discovery' and mentions spending time in the lab, obliviously sidestepping the more obvious answer",
+      "craft_total": 6.69,
       "impact_score": 6.5,
-      "quotability": 5.5,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Continues the pink shirt theme with Joey's oblivious suggestion of women's store",
+      "explanation": "The dramatic irony works well \u2014 the audience and Phoebe both know the circle means baby, and Ross's self-aggrandizing pivot to science is very on-brand. The joke is moderately funny but doesn't push far enough.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -423,40 +428,43 @@
     },
     {
       "index": 14,
-      "text": "Jump up my own ass and die.",
+      "text": "Phoebe reads her own leaves: 'I'm gonna meet a guy! And really soon! He's gonna be the man of my dreams. Probably not the guy I had a dream about last night.'",
       "characters": [
-        "Ross"
+        "Phoebe"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "misdirection",
+        "character_comedy"
       ],
-      "setup": "Ross explains Mona asked him to do one thing when they broke up",
-      "punchline": "Extremely crude and hostile breakup demand",
-      "craft_total": 7.1,
-      "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Phoebe excitedly reads her own tea leaves and builds up a dreamy vision of the man she'll meet",
+      "punchline": "She immediately qualifies it: 'Probably not the guy I had a dream about last night' \u2014 implying that dream man was inappropriate or strange enough to warrant exclusion",
+      "craft_total": 6.59,
+      "impact_score": 6.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shocking and quotable - the extreme vulgarity delivered matter-of-factly is effective"
+      "explanation": "Adequate Phoebe quirk \u2014 the implication is that her dream man was someone weird or unsuitable, left tantalizingly unexplained. Functional but not exceptional. The withholding of what the dream contained is a missed opportunity."
     },
     {
       "index": 15,
-      "text": "Mine is a picture of the Village People. What does that mean?",
+      "text": "Ross enters asking about his 'faded salmon' shirt; Monica and others call it pink.",
       "characters": [
-        "Ross"
+        "Ross",
+        "Monica",
+        "Chandler"
       ],
       "joke_types": [
-        "absurdist",
-        "visual_gag"
+        "character_comedy",
+        "running_gag"
       ],
-      "setup": "Everyone else got mystical tea leaf readings",
-      "punchline": "Ross somehow has a literal picture in his tea",
-      "craft_total": 7.3,
-      "impact_score": 7.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Ross enters urgently asking about his 'button-down, faded salmon color' shirt",
+      "punchline": "Everyone immediately corrects him: 'You mean your pink shirt?' \u2014 puncturing his desperate attempt to masculinize the color",
+      "craft_total": 6.42,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great absurdist moment - the specificity of 'Village People' makes it funnier than generic pop culture",
+      "explanation": "Classic sitcom structure \u2014 character insists on euphemism, others refuse it. It's well-worn territory but executed crisply. Ross's vanity about masculinity is well-established character work.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -474,22 +482,23 @@
     },
     {
       "index": 16,
-      "text": "Tea gives Phoebe the trots.",
+      "text": "'No, I haven't seen your pink shirt.' / 'I'm sure you can get another one at Ann Taylor's.'",
       "characters": [
-        "Monica"
+        "Monica",
+        "Chandler"
       ],
       "joke_types": [
-        "callback",
-        "awkward_silence"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Awkward silence between Rachel and Joey",
-      "punchline": "Monica fills dead air with the most inappropriate callback possible",
-      "craft_total": 7.47,
-      "impact_score": 8.5,
+      "setup": "Ross insists on calling his pink shirt 'faded salmon'; everyone refuses the euphemism",
+      "punchline": "Chandler suggests he replace it at Ann Taylor's \u2014 a women's clothing store \u2014 implicitly confirming what 'faded salmon' really means",
+      "craft_total": 6.11,
+      "impact_score": 6.0,
       "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Perfectly timed callback that breaks tension in the worst possible way - excellent awkward humor",
+      "explanation": "The Ann Taylor specificity is what elevates this \u2014 it's not just 'that's a women's store,' it's the precision of the name that makes it sting more. Chandler's delivery would make this land as a quick, sharp jab.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -499,22 +508,22 @@
     },
     {
       "index": 17,
-      "text": "I'm not great at the advice. Can I interest you in a sarcastic comment?",
+      "text": "'jump up my own ass and die'",
       "characters": [
-        "Chandler"
+        "Ross"
       ],
       "joke_types": [
-        "character_comedy",
-        "meta_self_referential"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Rachel asks how Chandler knows things will get better",
-      "punchline": "Chandler admits his limitations and offers his specialty instead",
-      "craft_total": 8.15,
+      "setup": "Ross explains he might go to Mona's to get his shirt back, but it would mean ignoring what she asked him to do",
+      "punchline": "He reveals what she asked was: 'jump up my own ass and die' \u2014 a spectacularly inventive insult delivered completely matter-of-factly",
+      "craft_total": 7.72,
       "impact_score": 8.0,
-      "quotability": 9.0,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent character-defining joke that's self-aware about Chandler's role in the show - perfectly quotable",
+      "explanation": "The phrase 'jump up my own ass and die' is a genuinely original, anatomically impossible insult that lands hard because Ross delivers it with the flat tone of relaying normal information. The gap between the horrifying phrase and his casual delivery IS the joke. High originality \u2014 this doesn't feel like a stock insult.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -536,22 +545,22 @@
     },
     {
       "index": 18,
-      "text": "Some cheese?",
+      "text": "Phoebe spots a man she's seen everywhere and says 'Maybe he's the tea guy' \u2014 the man of her destiny from her tea leaves",
       "characters": [
-        "Chandler"
+        "Phoebe"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "callback"
       ],
-      "setup": "Chandler offers sarcastic comment, then",
-      "punchline": "Randomly offers cheese as if it's another service he provides",
-      "craft_total": 7.35,
-      "impact_score": 7.0,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect non-sequitur delivered with same helpful tone - economy and timing make it work",
+      "setup": "Phoebe just had her tea leaves read predicting she'd meet the man of her dreams",
+      "punchline": "She immediately applies this to a random man she keeps bumping into \u2014 suggesting the universe arranged their meetings",
+      "craft_total": 6.57,
+      "impact_score": 6.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Functional plot/comedy bridge. The joke is mild \u2014 Phoebe's instant magical thinking is on-brand but doesn't generate a big laugh. It mostly serves story setup.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -561,22 +570,22 @@
     },
     {
       "index": 19,
-      "text": "Two hundred CDs, not one of them in the right case.",
+      "text": "'Mine is a picture of the Village People. What does that mean?'",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Monica discovers CDs in wrong cases",
-      "punchline": "Chandler reveals the full scope of his chaotic system",
-      "craft_total": 7.02,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Everyone is getting mystical tea leaf readings; Chandler examines his cup",
+      "punchline": "His tea leaves have formed the Village People \u2014 an absurd image that lands as a sight gag and a jab at his sexuality ambiguity",
+      "craft_total": 7.27,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation joke showing Chandler's complete disregard for Monica's organizational needs",
+      "explanation": "Sharp bit. The Village People reference touches on the show's recurring 'is Chandler gay?' undercurrent without being mean-spirited. The deadpan 'What does that mean?' sells it perfectly \u2014 he seems genuinely puzzled rather than defensive. Good economy.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -606,22 +615,22 @@
     },
     {
       "index": 20,
-      "text": "Oh, my God, you guys have such problems. I feel so terrible for you.",
+      "text": "'Tea gives Phoebe the trots!' \u2014 Phoebe runs off urgently mid-flirtation with the stranger",
       "characters": [
-        "Rachel"
+        "Phoebe"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "reaction_beat"
+        "callback",
+        "physical_slapstick"
       ],
-      "setup": "Monica and Chandler panic over CD organization",
-      "punchline": "Rachel's sarcastic perspective check on their trivial problems",
-      "craft_total": 6.22,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good reality check humor but fairly standard sitcom beat",
+      "setup": "Phoebe is mid-awkward introduction with the cute stranger she thinks is her destiny man",
+      "punchline": "The earlier 'tea gives me the trots' callback lands physically \u2014 she abruptly bolts, presumably to the bathroom, calling it out herself",
+      "craft_total": 7.5,
+      "impact_score": 7.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The setup-payoff across scenes is well-timed. Phoebe's earlier disclosure about the trots becomes the punchline that ruins her first chance encounter with her 'destiny man.' The comic irony of the universe sending her a dream man only to have tea betray her is perfectly structured. Elevated by physical comedy component.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -639,23 +648,22 @@
     },
     {
       "index": 21,
-      "text": "They were just giving those away at the store. / In exchange for money.",
+      "text": "'I'm not great at the advice. Can I interest you in a sarcastic comment? Some cheese?'",
       "characters": [
-        "Chandler",
-        "Monica"
+        "Chandler"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "setup_punchline"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Chandler defends having Miami Vice soundtrack saying they gave it away",
-      "punchline": "Monica's deadpan clarification of what 'giving away' meant",
-      "craft_total": 6.92,
-      "impact_score": 6.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Rachel is spiraling about whether she and Joey will ever be okay; Chandler has nothing useful to offer",
+      "punchline": "Chandler pivots from emotional support to his actual menu of offerings: sarcasm or cheese",
+      "craft_total": 7.4,
+      "impact_score": 7.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Clean setup/punchline with Monica's typical precision correcting Chandler's logic",
+      "explanation": "One of the episode's most quotable lines. 'Can I interest you in a sarcastic comment? Some cheese?' is a beautifully self-aware Chandler moment \u2014 he's not being dismissive, he's being honest about his emotional toolkit. The cheese as an afterthought is perfect. High character integration: this only works coming from Chandler.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -677,22 +685,23 @@
     },
     {
       "index": 22,
-      "text": "My boss wants to buy my baby.",
+      "text": "Bruce Springsteen CD in the Cat Stevens case \u2014 the CD organizational chaos",
       "characters": [
-        "Rachel"
+        "Monica",
+        "Chandler"
       ],
       "joke_types": [
-        "absurdist",
-        "setup_punchline"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Rachel needs to invent a work problem to talk to Joey",
-      "punchline": "She blurts out the most absurd work scenario possible",
-      "craft_total": 7.4,
-      "impact_score": 8.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Monica discovers Chandler's CD is in the wrong case",
+      "punchline": "What begins as a mild observation unravels into a revelation that ALL 200 CDs are in wrong cases \u2014 Chandler's system is total entropy",
+      "craft_total": 6.5,
+      "impact_score": 6.17,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliantly absurd premise that drives the entire subplot - shocking and quotable",
+      "explanation": "The escalation from one misplaced CD to universal chaos is well-structured, and it's perfectly in character for Monica to be horrified. Functions more as scene scaffolding for the Joey/Rachel reunion but generates decent laughs.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -710,22 +719,22 @@
     },
     {
       "index": 23,
-      "text": "Yeah, that would have been a much simpler problem.",
+      "text": "'Okay. No need to panic. Deep breaths, everyone.' \u2014 Monica's response to learning all 200 CDs are in wrong cases",
       "characters": [
-        "Rachel"
+        "Monica"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "callback"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Joey suggests it was about maternity leave",
-      "punchline": "Rachel's understated acknowledgment of her terrible lie",
-      "craft_total": 6.47,
+      "setup": "Chandler reveals not a single one of his 200 CDs is in the right case",
+      "punchline": "Monica treats this like a crisis requiring emergency management, which is both completely disproportionate and completely Monica",
+      "craft_total": 6.73,
       "impact_score": 6.5,
-      "quotability": 6.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good understated reaction to her own absurd story choice",
+      "is_callback": 0,
+      "explanation": "Monica's controlling, compulsive nature is at the heart of this. 'Deep breaths, everyone' is a funny overcorrection \u2014 she's treating a minor inconvenience like a natural disaster. Character integration is the strongest element.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -735,23 +744,22 @@
     },
     {
       "index": 24,
-      "text": "Jim-Jim Nelson. I'm Phoebe-Phoebe Buffay.",
+      "text": "'Oh, my God, you have such problems! I feel so terrible for you!' \u2014 Rachel's frustrated outburst at Monica and Chandler obsessing over CDs while she has a real problem",
       "characters": [
-        "Jim",
-        "Phoebe"
+        "Rachel"
       ],
       "joke_types": [
-        "character_comedy",
-        "awkward_silence"
+        "irony_sarcasm",
+        "reaction_beat"
       ],
-      "setup": "Jim introduces himself with repeated first name",
-      "punchline": "Phoebe mirrors his awkward introduction pattern",
-      "craft_total": 6.55,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Monica and Chandler have spiraled into a full CD crisis while Rachel is dealing with the Joey situation",
+      "punchline": "Rachel's explosive sarcasm cuts through their triviality \u2014 the gap between Rachel's real emotional pain and their CD obsession is the joke",
+      "craft_total": 6.51,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Mild awkward humor showing Phoebe's tendency to mirror odd behavior",
+      "explanation": "Classic sitcom irony \u2014 the mundane problem overshadows the real one. Rachel's delivery would sell this hard. The joke is the juxtaposition, not the line itself, which is fairly stock.",
       "dialogue": [
         {
           "speaker": "Jim",
@@ -765,22 +773,23 @@
     },
     {
       "index": 25,
-      "text": "[MOUTHS] It's not pink.",
+      "text": "Ross on the Miami Vice soundtrack: 'They were just giving those away at the store.' / Chandler: 'In exchange for money.'",
       "characters": [
-        "Ross"
+        "Ross",
+        "Chandler"
       ],
       "joke_types": [
-        "visual_gag",
-        "running_gag"
+        "deadpan_understatement",
+        "setup_punchline"
       ],
-      "setup": "Man says the shirt is 'awfully pink'",
-      "punchline": "Ross mouths denial while hiding behind the door",
-      "craft_total": 6.62,
-      "impact_score": 7.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good visual callback showing Ross's continued denial even while hiding",
+      "setup": "Monica and Chandler spot the Miami Vice soundtrack among Chandler's CDs; Ross offers a vague excuse",
+      "punchline": "Chandler immediately corrects Ross's euphemism for buying something with the bluntest possible restatement",
+      "craft_total": 7.35,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'In exchange for money' is a beautifully dry correction. Maximum economy \u2014 four words that completely dismantle Ross's embarrassed vagueness. Chandler's straight-man timing in this instance is excellent.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -790,22 +799,23 @@
     },
     {
       "index": 26,
-      "text": "Honey, both yours.",
+      "text": "Rachel's fabricated 'my boss wants to buy my baby' story \u2014 the reveal and Joey's escalating horror",
       "characters": [
-        "Monica"
+        "Rachel",
+        "Joey"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "setup_punchline"
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Chandler says they both have Annie soundtrack so they're meant to be",
-      "punchline": "Monica's matter-of-fact correction",
-      "craft_total": 6.65,
-      "impact_score": 6.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Monica and Chandler set up Rachel and Joey to talk; Rachel desperately improvises a 'work problem'",
+      "punchline": "The 'problem' escalates from vague boss trouble to 'my boss wants to buy my baby' \u2014 which Rachel delivers with increasing commitment and Joey reacts to with genuine outrage",
+      "craft_total": 7.62,
+      "impact_score": 8.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect deadpan deflation of Chandler's romantic moment",
+      "explanation": "The absurdity of the lie Rachel concocts is excellent \u2014 it's not just an implausible excuse, it's a maximally specific and bizarre scenario that reveals her panic. Joey's earnest horror ('That's crazy!' / 'That's what I told him!') elevates it. The joke runs long enough to generate multiple laugh beats.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -819,22 +829,22 @@
     },
     {
       "index": 27,
-      "text": "You think you can just buy my friend's baby?",
+      "text": "'When you said it was a problem about your boss and the baby, I figured it was about maternity leave.'",
       "characters": [
         "Joey"
       ],
       "joke_types": [
-        "escalation",
-        "callback"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Rachel's fake story about boss wanting to buy her baby",
-      "punchline": "Joey confronts the 'baby buyer' at Ralph Lauren",
-      "craft_total": 7.02,
-      "impact_score": 8.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Great escalation showing Joey taking action on the fake story - perfectly in character",
+      "setup": "Rachel has just told Joey that her boss wanted to 'buy' her baby; Joey has been horrified",
+      "punchline": "Joey admits he initially assumed 'boss + baby' would obviously mean maternity leave \u2014 a reasonable interpretation that makes Rachel's insane story land even harder",
+      "craft_total": 6.82,
+      "impact_score": 6.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The rational baseline Joey sets makes the story's absurdity more vivid. It's a straight-man moment for Joey, which is relatively rare and therefore notable. Decent structural work.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -852,79 +862,80 @@
     },
     {
       "index": 28,
-      "text": "Do you like to party?",
+      "text": "Long beat: Joey and Rachel sit in silence after her story falls apart \u2014 the awkward pause before he says 'Yeah, that would have been a much simpler problem'",
       "characters": [
-        "Jim"
+        "Joey",
+        "Rachel"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
+        "awkward_silence",
+        "reaction_beat"
       ],
-      "setup": "Phoebe starts normal conversation about being a masseuse",
-      "punchline": "Jim immediately shifts to creepy pickup line",
-      "craft_total": 5.38,
-      "impact_score": 6.0,
-      "quotability": 4.5,
+      "setup": "Rachel's invented crisis has played itself out; both she and Joey realize they've been talking about nothing",
+      "punchline": "The silence sits long enough to become the joke, then Joey breaks it with a masterfully understated observation about the simpler problem she could have used",
+      "craft_total": 6.6,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard creepy guy behavior - predictable but serves the cringe storyline"
+      "explanation": "The silence is functional \u2014 it lets the absurdity of the previous scene breathe. Joey's observation is a good kicker. Solid structural beat even if the individual line isn't exceptional."
     },
     {
       "index": 29,
-      "text": "I write erotic novels... for children.",
+      "text": "'Hi, Jim-Jim Nelson. I'm Phoebe-Phoebe Buffay.'",
       "characters": [
-        "Jim"
+        "Phoebe"
       ],
       "joke_types": [
-        "dark_subversive",
-        "cringe_discomfort"
+        "character_comedy",
+        "wordplay_pun"
       ],
-      "setup": "Phoebe gives Jim another chance to be normal",
-      "punchline": "He reveals the most disturbing career possible",
-      "craft_total": 7.88,
-      "impact_score": 9.0,
-      "quotability": 9.5,
-      "rewatch_bonus": 1,
+      "setup": "The stranger introduces himself as 'Jim Nelson'",
+      "punchline": "Phoebe mirrors his double-first-name construction as 'Jim-Jim Nelson' and introduces herself as 'Phoebe-Phoebe Buffay' \u2014 an endearingly odd nervous habit",
+      "craft_total": 7.28,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shocking and perfectly structured dark humor - the pause makes it even more disturbing and quotable"
+      "explanation": "Phoebe's social awkwardness manifests in an unexpected and charming way. The doubled name is a small but specific bit of character business that feels authentic. Not a huge laugh but consistently pleasant."
     },
     {
       "index": 30,
-      "text": "They're wildly unpopular.",
+      "text": "'Okay, if I were a salmon shirt, where would I be?' / Ross to himself: 'Upstream.' / 'Damn, nobody's here for my good ones.'",
       "characters": [
-        "Jim"
+        "Ross"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
+        "meta_self_referential",
+        "wordplay_pun"
       ],
-      "setup": "The disturbing career revelation",
-      "punchline": "Jim's casual follow-up as if that's the only problem",
-      "craft_total": 7.65,
-      "impact_score": 8.5,
-      "quotability": 8.0,
+      "setup": "Ross is alone searching Mona's apartment for his shirt; makes a salmon/upstream pun to no one",
+      "punchline": "He immediately laments that no one is there to appreciate his wordplay \u2014 a rare moment of Ross self-awareness that's also itself a joke about the audience hearing the pun",
+      "craft_total": 7.82,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect deadpan follow-up that makes the initial joke even darker through understatement"
+      "explanation": "One of the episode's sharpest jokes. The salmon/upstream pun is clever in its own right; Ross bemoaning his audience of zero is a meta layer that works on two levels \u2014 it's both self-aware comedy AND character (Ross's desperate need for validation). The structure is tight: setup, pun, lament. Genuinely impressive."
     },
     {
       "index": 31,
-      "text": "Yep. A pretty huge...",
+      "text": "Ross, alone after the salmon/upstream joke: 'Damn, nobody's here for my good ones.'",
       "characters": [
-        "Jim"
+        "Ross"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "misdirection"
+        "meta_self_referential",
+        "character_comedy"
       ],
-      "setup": "Phoebe asks if he really has a Ph.D.",
-      "punchline": "Jim starts to make it sexual before being cut off",
-      "craft_total": 5.35,
-      "impact_score": 6.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Predictable sexual misdirection that feels cheap after the stronger material",
+      "setup": "Ross has just made a great pun to an empty room.",
+      "punchline": "His lament that nobody witnessed his good joke is both a meta-comment on sitcom comedy (jokes landing to no audience) and a character revelation \u2014 Ross considers himself funnier than others give him credit for.",
+      "craft_total": 7.98,
+      "impact_score": 7.75,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This line is exceptional. It's simultaneously meta (a character commenting on his own joke), character-specific (Ross's underappreciated intellectual humor is a running theme), and structurally perfect as a button. The self-pity/self-admiration combination is very funny. Earns its 8+ score \u2014 it's the kind of line that becomes the thing fans quote from this episode.",
       "dialogue": [
         {
           "speaker": "Jim",
@@ -938,22 +949,23 @@
     },
     {
       "index": 32,
-      "text": "You could always sell your baby.",
+      "text": "Mona offers Ross a shirt to wear; he hesitates 'I don't know if I want to wear a woman's shirt.' She says it's a man's. He says 'Awfully pink.' \u2014 it's his own salmon shirt.",
       "characters": [
-        "Joey"
+        "Ross",
+        "Mona"
       ],
       "joke_types": [
-        "callback",
-        "absurdist"
+        "misdirection",
+        "character_comedy"
       ],
-      "setup": "Rachel panics about losing her job over the fake story",
-      "punchline": "Joey suggests going along with the original fake premise",
-      "craft_total": 7.33,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "Ross is at Mona's; she offers him a replacement shirt because his is wet",
+      "punchline": "The shirt Mona offers is Ross's own 'faded salmon' shirt \u2014 which he doesn't recognize immediately, only noting it's 'awfully pink,' completing the irony of his entire color-denial arc",
+      "craft_total": 7.08,
+      "impact_score": 7.17,
+      "quotability": 5.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good callback that shows Joey's simple logic - if the lie caused problems, make it true",
+      "explanation": "The misdirection is well-constructed: we know what's happening before Ross does. His instinctive 'awfully pink' about his own beloved shirt is the payoff \u2014 he's been defending this color all episode and still can't recognize it. Good callback execution.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -975,22 +987,23 @@
     },
     {
       "index": 33,
-      "text": "Chandler has two copies of Annie.",
+      "text": "Mona offers Ross a replacement shirt. Ross: 'I don't know if I want to wear a woman's shirt.' Mona: 'That's a man's shirt.' Ross: 'Awfully pink.' Mona: 'It's not pink!'",
       "characters": [
-        "Monica"
+        "Ross",
+        "Mona"
       ],
       "joke_types": [
-        "callback",
-        "observational"
+        "running_gag",
+        "irony_sarcasm"
       ],
-      "setup": "Argument about who messed up what",
-      "punchline": "Monica deflects with random organizational discovery",
-      "craft_total": 6.2,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Ross has been defending his 'faded salmon' shirt as not-pink all episode.",
+      "punchline": "He now encounters someone ELSE with a shirt they insist is not pink \u2014 mirroring his own denial exactly, from the outside.",
+      "craft_total": 7.44,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Mild callback showing Monica's OCD priorities even during arguments",
+      "explanation": "This is a beautifully constructed callback \u2014 Ross's shirt denial is mirrored back at him from the other side. He now occupies the position of the people who corrected him, while Mona defends her not-pink shirt exactly as he did. The situational irony is sharp and the structure rewards the whole episode's pink shirt thread. Earns its 8.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1000,22 +1013,23 @@
     },
     {
       "index": 34,
-      "text": "Not touching myself, if that makes anyone less uncomfortable.",
+      "text": "'Honey, we are so meant to be together. We both have the Annie soundtrack.' / 'Honey, both yours.'",
       "characters": [
-        "Ross"
+        "Monica",
+        "Chandler"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "character_comedy",
         "setup_punchline"
       ],
-      "setup": "Ross caught hiding in Mona's apartment",
-      "punchline": "Ross's attempt to clarify what he wasn't doing there",
-      "craft_total": 6.7,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Monica discovers what she thinks is evidence of cosmic compatibility \u2014 they both own the Annie soundtrack",
+      "punchline": "Chandler gently informs her both copies are hers \u2014 she was so excited she didn't notice",
+      "craft_total": 7.27,
+      "impact_score": 7.17,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good awkward humor as Ross makes the situation worse by over-explaining",
+      "explanation": "Sweet, quick bit that characterizes Monica's enthusiasm and Chandler's affectionate corrections. The 'both yours' landing is economical and clear. Functional rather than exceptional.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1033,22 +1047,22 @@
     },
     {
       "index": 35,
-      "text": "I certainly did not mean that I felt that I was due your baby.",
+      "text": "Joey storms into Rachel's boss's office: 'You think you can just buy my friend's baby?'",
       "characters": [
-        "Mr. Zelner"
+        "Joey"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Boss apologizing for due date comment",
-      "punchline": "Accidental wordplay on 'due' that makes it worse",
-      "craft_total": 6.92,
-      "impact_score": 7.0,
-      "quotability": 6.5,
+      "setup": "Joey was told Rachel's boss wants to buy her baby; he takes it completely at face value and acts to defend her",
+      "punchline": "Joey has apparently gone to Rachel's workplace to confront her boss \u2014 a completely disproportionate and misguided response to a fabricated story",
+      "craft_total": 6.82,
+      "impact_score": 6.83,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Clever wordplay that shows how the situation spiraled from innocent comment",
+      "is_callback": 1,
+      "explanation": "Joey's protectiveness translated into direct action is exactly his character \u2014 he doesn't process nuance, he acts. The payoff of this callback is funny precisely because we knew this was coming the moment he heard the story. His total commitment to defending Rachel against a fake problem is both touching and absurd.",
       "dialogue": [
         {
           "speaker": "Mr. Zelner",
@@ -1062,24 +1076,23 @@
     },
     {
       "index": 36,
-      "text": "A new grocery store. / What? / A new grocery store.",
+      "text": "Jim, on a date with Phoebe, interrupts her: 'Do you like to party?'",
       "characters": [
-        "Phoebe",
-        "Monica",
+        "Jim",
         "Phoebe"
       ],
       "joke_types": [
-        "running_gag",
-        "reaction_beat"
+        "misdirection",
+        "cringe_discomfort"
       ],
-      "setup": "Phoebe lists places she needs to avoid because of Jim",
-      "punchline": "She accidentally includes 'adult bookstore' and tries to cover",
-      "craft_total": 6.13,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Phoebe is warmly sharing about herself after the flirtatious banter. The date seems to be going well.",
+      "punchline": "Jim interrupts mid-sentence with 'Do you like to party?' \u2014 a sudden lurch into frat-speak that signals something is very wrong with this man.",
+      "craft_total": 6.95,
+      "impact_score": 7.0,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard 'cover up the inappropriate thing' humor but well-executed timing",
+      "explanation": "The abrupt tonal shift from romantic to crude is the joke. Jim's 'Do you like to party?' lands as a red flag parody \u2014 this is what it sounds like when a creep shows his hand too early. Sets up the escalating disaster of the date.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -1097,22 +1110,23 @@
     },
     {
       "index": 37,
-      "text": "This is like Disneyland for me.",
+      "text": "Jim says 'And your breasts!' out of nowhere during Phoebe's introduction",
       "characters": [
-        "Monica"
+        "Jim",
+        "Phoebe"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "cringe_discomfort",
+        "escalation"
       ],
-      "setup": "Monica enters the dry cleaner",
-      "punchline": "Her extreme enthusiasm for stain removal",
-      "craft_total": 7.17,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "setup": "Jim has been coming on strong; Phoebe generously gives him a second chance to introduce himself properly",
+      "punchline": "He restarts \u2014 compliments her eyes, which is acceptable \u2014 then immediately follows with 'And your breasts!' breaking every social contract",
+      "craft_total": 6.83,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Monica character joke - her cleaning obsession makes mundane places magical",
+      "explanation": "The escalation from 'beautiful eyes' to 'and your breasts!' is a good cringe moment \u2014 it subverts the expected rom-com pattern of a charming compliment. The exclamation point energy of the delivery would sell this in a live audience setting.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1130,22 +1144,22 @@
     },
     {
       "index": 38,
-      "text": "Oh, yeah, well, I'm sorry about that too. But what are you gonna do?",
+      "text": "Jim reveals he 'writes erotic novels for children' \u2014 which are 'wildly unpopular'",
       "characters": [
-        "Phoebe"
+        "Jim"
       ],
       "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
+        "dark_subversive",
+        "absurdist"
       ],
-      "setup": "New guy compliments her beauty",
-      "punchline": "Phoebe's casual acceptance of being too beautiful",
-      "craft_total": 7.17,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "Phoebe gives Jim yet another chance to start fresh and tell her about himself",
+      "punchline": "He writes erotic novels for children, which are, obviously, wildly unpopular",
+      "craft_total": 8.21,
+      "impact_score": 8.83,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great Phoebe moment - treating her beauty like an unavoidable burden with perfect nonchalance",
+      "explanation": "One of the episode's sharpest jokes. 'Erotic novels for children' is a brilliantly original concept \u2014 disturbing and absurd simultaneously. The kicker 'they're wildly unpopular' treats this as a business problem rather than a moral catastrophe, which is what makes it land as comedy rather than horror. Very high originality, superb economy. The Ph.D. reveal immediately after ('a pretty huge...') is cut off, which is the right instinct \u2014 the erotic novels line needs to breathe.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -1155,22 +1169,22 @@
     },
     {
       "index": 39,
-      "text": "So long as I understand that the money should not be construed as a down payment on this or any other child that I may bear.",
+      "text": "Jim mentions he has a Ph.D. \u2014 'a pretty huge...' \u2014 and the sentence is cut off/implies something inappropriate",
       "characters": [
-        "Rachel"
+        "Jim"
       ],
       "joke_types": [
-        "escalation",
-        "callback"
+        "misdirection",
+        "dark_subversive"
       ],
-      "setup": "Rachel explains the resolution to the baby-buying incident",
-      "punchline": "The legal department's overly specific disclaimer about not buying babies",
-      "craft_total": 6.92,
-      "impact_score": 7.5,
-      "quotability": 7.5,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good escalation showing how corporate panic led to absurdly specific legal language",
+      "setup": "After the erotic novels revelation, Jim tries to redeem himself with academic credentials: 'I also have a Ph.D.'",
+      "punchline": "He begins to describe it as 'a pretty huge...' and is presumably cut off \u2014 implying the Ph.D. isn't saving him, and whatever he's about to say will only make things worse",
+      "craft_total": 6.15,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The cut-off is the right choice \u2014 leaving the audience to imagine what's coming is funnier than completing the sentence. The setup/misdirection of 'a pretty huge' as either the Ph.D. or something sexual is functional but not as strong as the erotic novels joke preceding it.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1180,22 +1194,22 @@
     },
     {
       "index": 40,
-      "text": "My gynecologist tried to kill me.",
+      "text": "Joey defends his actions: 'Don't worry. I told him, very nicely: You don't go buying people's babies! So back off!'",
       "characters": [
-        "Rachel"
+        "Joey"
       ],
       "joke_types": [
-        "absurdist",
-        "misdirection"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Awkward moment between Rachel and Joey returns",
-      "punchline": "Rachel blurts out another random 'problem' to fill silence",
-      "craft_total": 7.12,
-      "impact_score": 7.5,
-      "quotability": 7.5,
+      "setup": "Joey says he 'very nicely' handled Rachel's boss situation",
+      "punchline": "His idea of 'very nicely' is shouting 'you don't go buying people's babies! Back off!' \u2014 a classic gap between his self-perception and reality",
+      "craft_total": 7.4,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Great callback to her tendency to invent absurd problems when nervous",
+      "is_callback": 1,
+      "explanation": "Joey's self-perception as 'very nice' while having just screamed at a stranger about baby purchasing is superb character comedy. The specificity of 'very nicely' preceding an objectively aggressive confrontation is the engine of the joke. High character integration.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1210,6 +1224,353 @@
           "line": "Great! Really great. Um... did you know that penguins have knees?"
         }
       ]
+    },
+    {
+      "index": 41,
+      "text": "'You could always sell your baby.' \u2014 Chandler's response to Rachel's crisis",
+      "characters": [
+        "Chandler"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "deadpan_understatement"
+      ],
+      "setup": "Rachel is panicking that Joey yelling at her boss will cost her job; everyone is alarmed",
+      "punchline": "Chandler casually suggests the dark alternative: sell the baby",
+      "craft_total": 7.17,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Perfect economy \u2014 Chandler steps into the chaos with four words that reframe the entire problem darkly. The callback to the baby-buying storyline makes it land harder. His delivery of the unthinkable as a reasonable suggestion is very on-brand."
+    },
+    {
+      "index": 42,
+      "text": "'Chandler has two copies of Annie!'",
+      "characters": [
+        "Monica"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Everyone is fighting and deflecting blame; Monica is about to get implicated",
+      "punchline": "Monica deflects by suddenly announcing an irrelevant revelation about Chandler \u2014 'Chandler has two copies of Annie!' \u2014 a callback to their earlier CD discovery",
+      "craft_total": 7.53,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A beautifully timed callback and a perfect Monica move \u2014 when cornered, she doesn't defend, she redirects with weaponized irrelevance. Calling out 'two copies of Annie' is a both a callback payoff AND a character moment. The non-sequitur landing in a moment of emotional chaos is very funny."
+    },
+    {
+      "index": 43,
+      "text": "During the blowup over Rachel's lie: 'Chandler has two copies of Annie!'",
+      "characters": [
+        "Monica"
+      ],
+      "joke_types": [
+        "callback",
+        "misdirection"
+      ],
+      "setup": "Joey, Rachel, and Chandler are all yelling at each other about the lie and its consequences.",
+      "punchline": "Monica interjects with a completely irrelevant disclosure: Chandler has two copies of Annie \u2014 but it's actually both hers (correcting the previous joke).",
+      "craft_total": 7.51,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is a great chaos-comedy moment. The yelling scene reaches a peak, and Monica's total non-sequitur \u2014 shouting about the Annie CDs while everyone else is dealing with an actual crisis \u2014 is perfectly timed. It also re-corrects the record (they're hers), making it a callback to a callback. The randomness is earned, not cheap, because we know Monica's priorities."
+    },
+    {
+      "index": 44,
+      "text": "Ross appears half-naked or in an odd state at someone's door: 'Not touching myself, if that makes anyone less uncomfortable.'",
+      "characters": [
+        "Ross"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Ross surprises someone (likely at Mona's or his own door) in some state of undress",
+      "punchline": "His opening reassurance \u2014 'Not touching myself' \u2014 is both darkly specific and self-aware of how alarming his appearance must be",
+      "craft_total": 7.73,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This line works on multiple levels: it acknowledges the absurdity of his situation, it's weirdly specific ('not touching myself'), and the offer that this 'makes anyone less uncomfortable' implies they're still going to be quite uncomfortable. High economy, high quotability."
+    },
+    {
+      "index": 45,
+      "text": "Mr. Zelner's HR meeting: 'If I in any way implied that I wanted to buy your baby, I am sorry... I certainly did not mean that I felt that I was \"due\" your baby.'",
+      "characters": [
+        "Mr. Zelner",
+        "Rachel"
+      ],
+      "joke_types": [
+        "cringe_discomfort",
+        "irony_sarcasm"
+      ],
+      "setup": "Joey has confronted Rachel's boss; now Rachel has been called into an HR meeting",
+      "punchline": "Mr. Zelner delivers a formal, lawyer-speak apology for something he never said, inadvertently making the situation more absurd with each stilted clarification",
+      "craft_total": 7.14,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The corporate-speak apology for buying a baby \u2014 including the pun on 'due date' \u2014 is good sustained cringe comedy. The HR witness makes the formality funnier. Slightly over-explained, which mutes the punch."
+    },
+    {
+      "index": 46,
+      "text": "'...and it is not mine to purchase.'",
+      "characters": [
+        "Mr. Zelner"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "cringe_discomfort"
+      ],
+      "setup": "Mr. Zelner is in the middle of his formal HR non-apology about not buying Rachel's baby",
+      "punchline": "The formal legalistic phrasing 'it is not mine to purchase' \u2014 applied to a baby \u2014 is the punchline of the whole HR scene",
+      "craft_total": 7.27,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The formal commercial language applied to a child is quietly absurd. 'Not mine to purchase' is good economy \u2014 it's the right phrase to use if you're buying a lamp, completely wrong for a baby."
+    },
+    {
+      "index": 47,
+      "text": "Phoebe reveals she's had to find a new cleaners, bank, and 'adult bookstore' because of Jim \u2014 then immediately corrects to 'grocery store'",
+      "characters": [
+        "Phoebe"
+      ],
+      "joke_types": [
+        "misdirection",
+        "character_comedy"
+      ],
+      "setup": "Phoebe tells Monica she's had to change all her routines to avoid Jim",
+      "punchline": "In her list of avoided locations, she accidentally includes 'adult bookstore' before correcting to 'grocery store' \u2014 implying she frequents adult bookstores and didn't want Monica to know",
+      "craft_total": 7.87,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is a gem. The 'adult bookstore' slip is funny on its own, but the correction to 'grocery store' makes it funnier because it acknowledges the slip while doing nothing to actually address it. Monica's presumably shocked reaction (not shown) adds to it. Very good structure \u2014 the reveal is in the correction, not the initial word."
+    },
+    {
+      "index": 48,
+      "text": "'The universe said I'd meet a nice guy. I got that? When I get up there, I'm gonna kick some ass.'",
+      "characters": [
+        "Phoebe"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Phoebe is upset that the universe sent her Jim, who turned out to be a creep",
+      "punchline": "She threatens to physically fight the universe itself for the bad match \u2014 combining her spiritual worldview with an unexpected combativeness",
+      "craft_total": 7.49,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The idea of Phoebe going to find the universe and 'kick some ass' is a good subversion of her usual New Age acceptance. The threat is both incongruous and deeply Phoebe \u2014 she believes in the universe enough to hold it personally accountable. Good character integration."
+    },
+    {
+      "index": 49,
+      "text": "'I'm gonna be over here watching the dance of the clean shirts.'",
+      "characters": [
+        "Chandler"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Chandler and Ross are at the dry cleaner; Chandler announces what he plans to do",
+      "punchline": "'The dance of the clean shirts' \u2014 Chandler has romantically poeticized the mundane act of watching shirts spin in a dry cleaner machine",
+      "craft_total": 7.29,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The phrase 'dance of the clean shirts' is a beautiful absurdist construction \u2014 Chandler has elevated dry cleaning to poetic spectacle. It's very quotable and shows the writers' skill at making mundane things sound enchanting through language. A small but delightful joke."
+    },
+    {
+      "index": 50,
+      "text": "A man picks up something Phoebe dropped. Man: 'Sorry. You're just so incredibly beautiful.' Phoebe: 'Well, I'm sorry about that too. But what are you gonna do?'",
+      "characters": [
+        "Phoebe",
+        "New Man"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "A handsome stranger tells Phoebe she's incredibly beautiful, expecting a flattered response.",
+      "punchline": "Phoebe accepts the compliment as a burden they both must endure \u2014 'I'm sorry about that too' \u2014 treating her beauty as an inconvenient fact rather than a compliment.",
+      "craft_total": 7.63,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Phoebe's response is brilliantly odd \u2014 accepting a compliment as a shared affliction they must both deal with. 'What are you gonna do?' is the perfect Phoebe shrug. High character integration: this response is entirely Phoebe-specific."
+    },
+    {
+      "index": 51,
+      "text": "Chandler spots an ink stain and asks 'Can I watch how you get this out?' \u2014 Phoebe has already left with the man",
+      "characters": [
+        "Chandler"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Chandler was supposed to look out for Phoebe, but gets distracted by the stain removal process",
+      "punchline": "Chandler's obsession with the cleaning process trumps his friend responsibilities \u2014 when he looks up, Phoebe is gone",
+      "craft_total": 5.74,
+      "impact_score": 5.33,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Callback to the 'dance of the clean shirts' bit \u2014 Chandler is too enraptured by the cleaning process to notice Phoebe leaving. It's a soft, character-consistent moment, but doesn't generate a big laugh."
+    },
+    {
+      "index": 52,
+      "text": "Rachel's settlement: extra paid maternity leave, 'so long as I understand the money should not be construed as a down payment on this or any other child'",
+      "characters": [
+        "Rachel"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "cringe_discomfort"
+      ],
+      "setup": "Rachel explains how the HR meeting resolved \u2014 she got extra maternity leave because her company was terrified of a lawsuit",
+      "punchline": "The formal legalese of 'not to be construed as a down payment on this or any other child' \u2014 the company has apparently drafted actual baby-sale exclusion clauses",
+      "craft_total": 6.69,
+      "impact_score": 6.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The joke is in the specificity of 'or any other child' \u2014 Ralph Lauren has apparently now covered all possible future baby-purchase scenarios in their HR policy. The escalating absurdity of corporate response to a fictional complaint is the comedic through-line."
+    },
+    {
+      "index": 53,
+      "text": "'Ralph Lauren is going out of their way to show they're not in the baby-buying business.'",
+      "characters": [
+        "Rachel"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "absurdist"
+      ],
+      "setup": "Rachel explains how thoroughly Ralph Lauren has responded to the baby-buying accusation",
+      "punchline": "Rachel delivers the company's PR crisis response as though it's a reasonable corporate statement \u2014 'not in the baby-buying business'",
+      "craft_total": 6.98,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A satisfying wrap-up to the baby-buying plot. 'Not in the baby-buying business' as an official corporate position is a good absurdist landing. Pairs well with the previous joke."
+    },
+    {
+      "index": 54,
+      "text": "Joey inadvertently reminds himself and Rachel of their awkwardness by walking through his feelings: 'I haven't thought about how I put myself out there... and how it was really awkward.'",
+      "characters": [
+        "Joey",
+        "Rachel"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "cringe_discomfort"
+      ],
+      "setup": "Joey and Rachel are enjoying a moment of normalcy and both say they 'haven't thought about' the Joey confession situation",
+      "punchline": "Joey proceeds to describe in detail everything he hasn't been thinking about \u2014 thus thinking about all of it right now",
+      "craft_total": 7.46,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic sitcom irony \u2014 the more Joey enumerates everything he's not thinking about, the more he thinks about it. The beat works because it's truthful human behavior rendered absurd. Well-structured."
+    },
+    {
+      "index": 55,
+      "text": "'My gynecologist tried to kill me.'",
+      "characters": [
+        "Phoebe"
+      ],
+      "joke_types": [
+        "misdirection",
+        "character_comedy"
+      ],
+      "setup": "Joey and Rachel are sharing a sincere moment reconnecting; the scene is emotional",
+      "punchline": "Phoebe bursts in with a completely unrelated and alarming non-sequitur, breaking the mood entirely",
+      "craft_total": 7.94,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Five words, enormous impact. Phoebe interrupts a tender moment with one of the most random, alarming, and funny non-sequiturs of the episode. The joke has perfect economy \u2014 we get absolutely no explanation, no context, no follow-up \u2014 and that's exactly right. The incongruity of the gravity of her statement against the mundane setting is what makes it land so hard. Highly quotable."
+    },
+    {
+      "index": 56,
+      "text": "Ross finds his salmon shirt in the catalog, labeled 'Item J437-A. Color: winterberry.'",
+      "characters": [
+        "Ross"
+      ],
+      "joke_types": [
+        "callback",
+        "irony_sarcasm"
+      ],
+      "setup": "Ross has been insisting all episode that his shirt is 'faded salmon,' not pink",
+      "punchline": "The official Ralph Lauren catalog calls it 'winterberry' \u2014 a third, equally-euphemistic color name that is definitely still pink",
+      "craft_total": 8.11,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A satisfying callback payoff to the salmon/pink running gag. 'Winterberry' is the perfect choice \u2014 it's not pink, it's not salmon, it's an entirely new euphemism that only confirms the shirt is definitely pink. The visual of Ross finding this in a catalog makes it land as both a visual gag and a character beat."
+    },
+    {
+      "index": 57,
+      "text": "'But what did I tell you about leaving your key outside the door like that? I mean, you're lucky it was me and not someone else.' / 'I guess lucky is too strong a word.'",
+      "characters": [
+        "Ross",
+        "Mona"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Ross has broken into Mona's apartment; he tries to soften the situation by chastising her for leaving her key accessible",
+      "punchline": "He catches himself \u2014 calling his own presence 'lucky' is clearly overstating it, hence 'I guess lucky is too strong a word'",
+      "craft_total": 7.17,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Ross's social obliviousness is on full display \u2014 he has broken into his ex's apartment to steal a shirt and is lecturing HER on key safety. The self-correction 'too strong a word' is the right beat \u2014 he's not entirely without self-awareness, just deeply misguided. Well-structured small joke."
+    },
+    {
+      "index": 58,
+      "text": "Ross asks Mona 'Can I?' while apparently reaching for something, to remember her by \u2014 she flatly says 'No.'",
+      "characters": [
+        "Ross",
+        "Mona"
+      ],
+      "joke_types": [
+        "awkward_silence",
+        "cringe_discomfort"
+      ],
+      "setup": "Ross and Mona have their final goodbye; Ross reaches for something (presumably the shirt or some memento)",
+      "punchline": "Mona simply says 'No' \u2014 the flat rejection of whatever Ross wanted as a parting gesture is the perfect final button on his failed reconnection",
+      "craft_total": 6.71,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The joke is entirely in Mona's monosyllabic 'No' \u2014 the most economical possible rejection, made funnier by the visual of whatever pathetic thing Ross was reaching for being denied. A clean, well-timed button to close the scene."
     }
   ],
   "air_date": "2002-03-07",

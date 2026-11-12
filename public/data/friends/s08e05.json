@@ -4,33 +4,36 @@
   "season": 8,
   "episode_number": 5,
   "title": "The One With Rachels Date",
-  "humor_index": 56.0,
-  "jpm": 2.71,
-  "avg_craft": 6.29,
-  "avg_impact": 5.08,
-  "total_jokes": 61,
-  "war": 0,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"irony_sarcasm\"]",
-  "standout_joke_ids": "[10, 61, 13]",
-  "weakest_section": "04:00-05:00",
+  "humor_index": 79.9,
+  "jpm": 2.76,
+  "avg_craft": 6.87,
+  "avg_impact": 6.9,
+  "total_jokes": 62,
+  "war": 54.9,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"setup_punchline\"]",
+  "standout_joke_ids": "[12, 58, 55]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Phoebe: 'Ah! I \"sous-stand.\" Heh.'",
+      "text": "Phoebe mistakes the job hierarchy: 'Oh. So you're Monica's boss?' \u2014 Tim corrects her: 'Actually, she's my boss.' \u2014 'Sous is French for under.'",
       "characters": [
-        "Phoebe"
+        "Phoebe",
+        "Tim",
+        "Monica"
       ],
       "joke_types": [
+        "setup_punchline",
         "wordplay_pun"
       ],
-      "setup": "Tim explains 'sous' means 'under' in French",
-      "punchline": "Phoebe creates pun combining 'sous' with 'understand'",
-      "craft_total": 5.7,
-      "impact_score": 4.0,
-      "quotability": 3.0,
+      "setup": "Phoebe hears 'sous chef' and assumes 'sous' means superior, so she assumes Tim is Monica's boss",
+      "punchline": "Tim corrects her \u2014 Monica is HIS boss \u2014 and explains 'sous' means 'under,' revealing Phoebe's linguistic ignorance",
+      "craft_total": 6.59,
+      "impact_score": 6.33,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Phoebe wordplay - fits her character perfectly but the pun itself is fairly obvious",
+      "explanation": "Classic Phoebe ignorance-based wordplay. The misunderstanding is well-suited to her character and the correction is clean. Sets up the 'sous-stand' pun to follow.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -40,21 +43,22 @@
     },
     {
       "index": 2,
-      "text": "Phoebe: 'Would you say your pesto is the best-o? Heh.'",
+      "text": "Phoebe: 'Ah! I sous-stand.' (pun on 'understand')",
       "characters": [
         "Phoebe"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "wordplay_pun",
+        "character_comedy"
       ],
-      "setup": "Monica mentions making pesto",
-      "punchline": "Phoebe rhymes 'pesto' with 'best-o'",
-      "craft_total": 4.7,
-      "impact_score": 3.0,
-      "quotability": 2.0,
+      "setup": "Tim has just explained that 'sous' is French for 'under'",
+      "punchline": "Phoebe immediately riffs on the word, substituting 'sous' for 'under' in 'understand' \u2014 revealing she's delighted by her own wordplay",
+      "craft_total": 7.37,
+      "impact_score": 7.25,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Another Phoebe pun but even more forced than the first one",
+      "is_callback": 1,
+      "explanation": "Economical and very Phoebe-specific. The pun lands quickly and her smug little laugh sells it. Character integration is high \u2014 this is exactly how Phoebe talks. The speed of the callback (within the same breath) adds to the delight.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -64,21 +68,23 @@
     },
     {
       "index": 3,
-      "text": "Tim: 'I don't know. I would say it's pretty good-o.'",
+      "text": "Phoebe asks 'Would you say your pesto is the best-o?' and Tim responds sincerely: 'I would say it's pretty good-o.'",
       "characters": [
+        "Phoebe",
         "Tim"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "wordplay_pun",
+        "character_comedy"
       ],
-      "setup": "Phoebe's 'best-o' pun",
-      "punchline": "Tim plays along with equally forced 'good-o' rhyme",
-      "craft_total": 4.35,
-      "impact_score": 3.0,
-      "quotability": 2.0,
+      "setup": "Phoebe is flirting with Tim and asks a rhyming, childlike question about his pesto",
+      "punchline": "Tim earnestly plays along with the rhyme scheme, saying 'pretty good-o' \u2014 his guileless sincerity makes it funnier than the original joke",
+      "craft_total": 6.11,
+      "impact_score": 6.17,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Continuation of the pun thread, shows Tim trying to fit in but equally awkward",
+      "explanation": "The joke is in Tim's earnest participation in Phoebe's nonsense. His deadpan 'good-o' is the actual punchline, and it works because it reveals his sweet, slightly dim character \u2014 which pays off later.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -92,40 +98,42 @@
     },
     {
       "index": 4,
-      "text": "Monica: 'All right, let's just cut to the chase. Okay? You're single, you're single.'",
+      "text": "Phoebe to Tim after complimenting her necklace: 'Well, it's no pesto.'",
       "characters": [
-        "Monica"
+        "Phoebe",
+        "Tim"
       ],
       "joke_types": [
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Romantic tension between Phoebe and Tim building",
-      "punchline": "Monica's blunt, no-nonsense matchmaking approach",
-      "craft_total": 6.3,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Monica - direct and bossy even in romantic situations"
+      "setup": "Tim compliments Phoebe's handmade necklace; she deflects",
+      "punchline": "She deflects the compliment by comparing herself unfavorably to his pesto \u2014 an absurd metric for talent \u2014 in a callback to their earlier exchange",
+      "craft_total": 7.31,
+      "impact_score": 6.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Tight, economical, and genuinely funny. The absurdity of using pesto as a measuring stick for human achievement is peak Phoebe logic. Great economy \u2014 four words do a lot of work. The callback makes it richer on rewatches."
     },
     {
       "index": 5,
-      "text": "Monica: 'I did not yell. I am not putting a dollar in the jar.'",
+      "text": "Monica, after yelling for calamari: 'I did not yell. I am not putting a dollar in the jar.'",
       "characters": [
         "Monica"
       ],
       "joke_types": [
         "character_comedy",
-        "callback"
+        "running_gag"
       ],
-      "setup": "Monica clearly just yelled at Tim about the food order",
-      "punchline": "Her defensive denial about yelling and the jar system",
-      "craft_total": 7.1,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Great character moment - shows Monica's competitive nature and denial, plus references established running gag",
+      "setup": "Monica has just visibly yelled (inferred from context) at her kitchen staff",
+      "punchline": "She immediately \u2014 and defensively \u2014 denies it, referencing an apparently established 'yelling jar' rule, suggesting she yells so often there's a financial penalty system in place",
+      "craft_total": 6.62,
+      "impact_score": 6.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Deep Monica character work in one line. The 'yelling jar' implies a whole established system around her behavior \u2014 she yells so often there's a *jar* for it. The defensiveness ('I did not yell') while presumably still yelling is a classic Monica contradiction. High character integration.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -143,21 +151,23 @@
     },
     {
       "index": 6,
-      "text": "Chandler's boss: 'Do you know how can I get around the computer network... so I can access the really good Internet porn?'",
+      "text": "Chandler's boss asks how to access 'the really good Internet porn' on the company network, then laughs it off as a joke.",
       "characters": [
-        "Chandler's boss"
+        "Chandler",
+        "Mr. Douglas"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Boss starts what sounds like a serious computer question",
-      "punchline": "Reveals he wants to access porn at work",
-      "craft_total": 5.0,
-      "impact_score": 4.0,
-      "quotability": 3.0,
+      "setup": "Chandler's boss approaches with an apparent work question about computer networks",
+      "punchline": "The question is about accessing internet porn \u2014 but then he laughs and calls himself a joker, leaving Chandler's genuine need a mystery",
+      "craft_total": 5.98,
+      "impact_score": 6.17,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical inappropriate boss humor, gets cringe laughs but not particularly clever",
+      "explanation": "Functional workplace comedy. The boss-as-oblivious-character trope. Chandler's silent suffering is the real joke. Sets up the running gag of Chandler being unheard at work.",
       "dialogue": [
         {
           "speaker": "Chandler's boss",
@@ -187,22 +197,22 @@
     },
     {
       "index": 7,
-      "text": "Chandler: 'What's funny about that?'",
+      "text": "Chandler's silent reaction beat: 'What's funny about that?' (after boss laughs off his serious question as a joke)",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "reaction_beat"
+        "reaction_beat",
+        "deadpan_understatement"
       ],
-      "setup": "Boss calls him a 'joker' after porn request",
-      "punchline": "Chandler's confused deadpan response",
-      "craft_total": 6.5,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "The boss treats Chandler's sincere interest in getting around the network as a joke",
+      "punchline": "Chandler's flat 'What's funny about that?' \u2014 implying he actually DID want the porn tip",
+      "craft_total": 6.51,
+      "impact_score": 6.33,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Chandler deadpan delivery, shows his bewilderment at workplace dysfunction",
+      "is_callback": 1,
+      "explanation": "Chandler's deadpan follow-up recontextualizes the scene \u2014 now we realize he might have been sincere. The economy is excellent; the line does double duty confirming both his haplessness and the boss's obliviousness.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -212,21 +222,23 @@
     },
     {
       "index": 8,
-      "text": "Joey: 'You like the Purple Rain display.'",
+      "text": "Joey wants to go to the Hard Rock Cafe again; Monica reveals: 'You like the Purple Rain display.'",
       "characters": [
-        "Joey"
+        "Joey",
+        "Monica"
       ],
       "joke_types": [
-        "observational"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Date claims she likes Hard Rock Cafe's food",
-      "punchline": "Joey calls out her real motivation",
-      "craft_total": 5.9,
-      "impact_score": 4.0,
-      "quotability": 3.0,
+      "setup": "Joey insists he likes the Hard Rock Cafe for the food",
+      "punchline": "Monica sees through him \u2014 it's the Purple Rain display \u2014 revealing Joey's man-child celebrity obsession",
+      "craft_total": 6.38,
+      "impact_score": 5.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good observational humor about tourist behavior and music memorabilia",
+      "explanation": "Classic Joey reveal \u2014 his stated reason (food) is a cover for something more embarrassingly childlike (a museum display for a pop star). Character-consistent and efficiently executed.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -236,21 +248,23 @@
     },
     {
       "index": 9,
-      "text": "Chandler: 'Yeah, he thinks that's my name.' explaining why Bob called him Toby",
+      "text": "Chandler reveals a coworker has called him 'Toby' for five years because he wanted a doughnut.",
       "characters": [
-        "Chandler"
+        "Chandler",
+        "Monica"
       ],
       "joke_types": [
-        "setup_punchline"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Joey asks about being called Toby",
-      "punchline": "Casual admission of 5-year name confusion",
-      "craft_total": 6.35,
-      "impact_score": 5.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
+      "setup": "A coworker (Bob) calls Chandler 'Toby' in passing; Monica asks why he doesn't correct it",
+      "punchline": "The first time Chandler didn't correct it because he 'wanted the doughnut.' Five years later, the doughnut is long gone but he's still Toby.",
+      "craft_total": 7.85,
+      "impact_score": 8.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Sets up the Toby storyline perfectly - Chandler's social awkwardness made relatable",
+      "explanation": "One of the episode's best jokes. The logic is absurd but completely believable as Chandler-behavior \u2014 he avoids awkward correction, is bribed by food, and has lived with the consequences for five years. 'The doughnut's gone and I'm still Toby' is a perfect punchline that lands with both comedy and a trace of pathos. High character integration: only Chandler would let this happen. Strong structure with the escalation from one doughnut to five years.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -268,22 +282,23 @@
     },
     {
       "index": 10,
-      "text": "Chandler: 'And I wanted the doughnut. Five years later, the doughnut's gone and I'm still Toby.'",
+      "text": "Chandler: 'It's not like he's calling me Muriel.' Monica: 'Muriel. Why would he call you Muriel?'",
       "characters": [
-        "Chandler"
+        "Chandler",
+        "Monica"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "misdirection",
+        "setup_punchline"
       ],
-      "setup": "Chandler explains how the name confusion started",
-      "punchline": "The absurd cost-benefit analysis and poetic ending",
-      "craft_total": 7.6,
-      "impact_score": 7.0,
+      "setup": "Chandler is minimizing the Toby situation \u2014 'could be worse, it's not like he's calling me Muriel'",
+      "punchline": "Monica's innocent confusion ('Why would he call you Muriel?') signals she doesn't yet know what's coming \u2014 the audience anticipates the reveal",
+      "craft_total": 7.78,
+      "impact_score": 7.67,
       "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent escalation and character work - the doughnut motivation is perfectly Chandler, and 'the doughnut's gone and I'm still Toby' is beautifully crafted",
+      "explanation": "Perfect structural setup for the Muriel reveal. Chandler's slip \u2014 using his own middle name as a hypothetical embarrassing option \u2014 is a classic self-own. Monica's innocent question turns the knife. The structure here is textbook: Chandler digs his own grave with one sentence.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -305,21 +320,23 @@
     },
     {
       "index": 11,
-      "text": "Chandler: 'It's not like he's calling me Muriel.'",
+      "text": "Monica discovers Chandler's middle name is Muriel: 'It's not just an M. Your middle name is Muriel!'",
       "characters": [
+        "Monica",
         "Chandler"
       ],
       "joke_types": [
-        "misdirection"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Chandler defending that 'Toby' isn't so bad",
-      "punchline": "Accidentally reveals his middle name",
-      "craft_total": 7.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Chandler has just accidentally said 'Muriel' \u2014 Monica's detective work ('Chandler M. Bing') leads to the reveal",
+      "punchline": "'Your middle name is Muriel!' \u2014 Chandler's shame, Monica's delight, and the name itself doing all the heavy lifting",
+      "craft_total": 7.78,
+      "impact_score": 8.33,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect misdirection - Chandler tries to minimize the problem and accidentally creates a bigger one",
+      "is_callback": 1,
+      "explanation": "The reveal lands beautifully because the setup (Chandler accidentally saying the name) was so natural. 'Muriel' is itself a funny word for a man's middle name in 2001 \u2014 it sounds both feminine and old-fashioned \u2014 and Chandler's mortified 'Shh! It is a family name' escalates it perfectly. Monica's gleeful 'Chandler Muriel Bing' said in full is the peak.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -341,21 +358,22 @@
     },
     {
       "index": 12,
-      "text": "Joey: 'It's not just an M. Your middle name is Muriel!'",
+      "text": "Monica: 'Your parents never even gave you a chance, did they?'",
       "characters": [
-        "Joey"
+        "Monica"
       ],
       "joke_types": [
-        "escalation"
+        "deadpan_understatement",
+        "dark_subversive"
       ],
-      "setup": "Joey processes what Chandler just revealed",
-      "punchline": "The shocked realization and announcement",
-      "craft_total": 6.15,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good reaction beat that amplifies the revelation",
+      "setup": "Chandler's full name \u2014 Chandler Muriel Bing \u2014 has just been revealed",
+      "punchline": "Monica's calm, almost sympathetic verdict: 'Your parents never even gave you a chance, did they?' \u2014 reframing the name as evidence of parental neglect",
+      "craft_total": 7.87,
+      "impact_score": 8.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The best line in the Muriel sequence. Monica's deadpan sympathy \u2014 'your parents never even gave you a chance' \u2014 reframes a silly name joke as a parenting indictment, adding a layer of dark comedy to what could have been a one-note gag. Extremely quotable, economical, and it lands as the capper to the whole Muriel reveal arc. Close to 8-territory.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -381,21 +399,23 @@
     },
     {
       "index": 13,
-      "text": "Joey: 'Your parents never even gave you a chance, did they?'",
+      "text": "Joey admits he doesn't know what happened to Jessica's body on his soap opera: 'No. Couldn't care less.'",
       "characters": [
-        "Joey"
+        "Joey",
+        "Rachel"
       ],
       "joke_types": [
-        "observational"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Learning Chandler's full name is 'Chandler Muriel Bing'",
-      "punchline": "Joey's sympathetic but brutal assessment",
-      "craft_total": 6.9,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Rachel asks what happened to Jessica's body; Joey had been coy, implying he knew",
+      "punchline": "Joey admits he has no idea and 'couldn't care less' \u2014 an actor who doesn't follow his own show's plot",
+      "craft_total": 6.36,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great Joey line - captures both his loyalty to friends and his blunt honesty about Chandler's unfortunate name",
+      "explanation": "Good Joey character moment \u2014 his indifference to his own show's continuity is consistent with his self-absorbed, present-moment personality. The reveal (he was bluffing) is well-timed.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -413,21 +433,23 @@
     },
     {
       "index": 14,
-      "text": "Soap opera doctor: 'We would, but when we went to exhume Jessica's body... it was gone.'",
+      "text": "Rachel clears her throat pointedly after a cast member compliments Joey, then has to introduce herself: she was not in the scene.",
       "characters": [
-        "Soap opera doctor"
+        "Rachel",
+        "Joey"
       ],
       "joke_types": [
-        "absurdist"
+        "reaction_beat",
+        "physical_slapstick"
       ],
-      "setup": "Medical explanation about brain transplant rejection",
-      "punchline": "Casual mention of missing exhumed body",
-      "craft_total": 5.2,
-      "impact_score": 4.0,
-      "quotability": 3.0,
+      "setup": "A cast member says 'Hey, good scene, man' and walks off; Rachel is standing right there",
+      "punchline": "Rachel clears her throat as if expecting acknowledgment, then embarrassingly has to explain she wasn't in it \u2014 she's a soap opera fangirl who snuck onto set",
+      "craft_total": 6.05,
+      "impact_score": 5.83,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical soap opera absurdity - ridiculous plot development delivered seriously",
+      "explanation": "Solid physical/reaction comedy inferred from context. Rachel's awkward attempt to be recognized is a cringe moment consistent with her established soap opera obsession. The throat clear is the real joke.",
       "dialogue": [
         {
           "speaker": "Soap Opera Doctor",
@@ -441,22 +463,23 @@
     },
     {
       "index": 15,
-      "text": "Joey: 'You don't know, do you?' Kash: 'No. Couldn't care less.'",
+      "text": "Rachel denies being a soap opera nut while immediately reciting Kash Ford's favorite ice cream flavor (butter pecan) and his dog's name (Wally).",
       "characters": [
-        "Joey",
+        "Rachel",
         "Kash"
       ],
       "joke_types": [
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Joey asks about what happens next in the soap",
-      "punchline": "Kash's honest admission he doesn't care about his own show",
-      "craft_total": 6.15,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Rachel tells Kash she's not some 'soap opera nut' \u2014 laughing nervously",
+      "punchline": "She immediately proves she is by rattling off intimate trivia about him \u2014 his ice cream preference and his dog's name \u2014 while absentmindedly stroking his arm",
+      "craft_total": 6.87,
+      "impact_score": 7.17,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing actor's detachment from soap opera storylines",
+      "explanation": "Classic sitcom irony \u2014 the denial immediately undercut by evidence. The escalation (ice cream \u2192 dog's name \u2192 arm stroking) is well-constructed, and 'butter pecan' is a specifically funny flavor choice. Joey's 'Here we go' and quick exit is a perfect button.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -470,22 +493,22 @@
     },
     {
       "index": 16,
-      "text": "Extra: 'What? You weren't in it.' after saying 'good scene'",
+      "text": "Joey: 'Here we go.' \u2014 then immediately: 'We're leaving. Bye, Kash. Say hi to Wally.'",
       "characters": [
-        "Extra"
+        "Joey"
       ],
       "joke_types": [
-        "awkward_silence",
-        "cringe_discomfort"
+        "reaction_beat",
+        "character_comedy"
       ],
-      "setup": "Extra congratulates people on soap opera scene",
-      "punchline": "Someone points out the extra wasn't actually in the scene",
-      "craft_total": 5.35,
-      "impact_score": 4.0,
-      "quotability": 2.0,
+      "setup": "Rachel has descended into full fan-girl territory, stroking Kash's arm",
+      "punchline": "Joey's weary 'Here we go' followed by his rapid retreat \u2014 'Say hi to Wally' \u2014 using Rachel's own stalker-knowledge to exit",
+      "craft_total": 6.3,
+      "impact_score": 6.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Minor cringe moment about Hollywood fake networking",
+      "is_callback": 1,
+      "explanation": "Joey's exhausted, been-here-before energy is perfect. 'Say hi to Wally' is a callback that works because it acknowledges the creepiness of Rachel knowing the dog's name while Joey leans into it without irony.",
       "dialogue": [
         {
           "speaker": "Extra",
@@ -507,22 +530,23 @@
     },
     {
       "index": 17,
-      "text": "Rachel claiming not to be a soap opera nut while immediately knowing personal details about Kash",
+      "text": "Joey: 'We're leaving. Bye, Kash. Say hi to Wally.'",
       "characters": [
+        "Joey",
         "Rachel"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "escalation"
+        "callback",
+        "irony_sarcasm"
       ],
-      "setup": "Rachel denies being a soap opera fan",
-      "punchline": "Immediately demonstrates extensive knowledge of actor's personal life",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Joey is trying to drag Rachel out with dignity; she just finished demonstrating she knows Kash's dog's name",
+      "punchline": "Even in retreat, Rachel/Joey blurts 'Say hi to Wally' \u2014 the callback to the dog's name underscoring how deep the fan knowledge goes",
+      "craft_total": 7.04,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic contradiction humor - Rachel's denial immediately undermined by her actions",
+      "is_callback": 1,
+      "explanation": "A quick, well-timed callback that tags the scene perfectly. The joke is that in trying to exit gracefully, the goodbye proves they haven't learned anything.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -536,22 +560,22 @@
     },
     {
       "index": 18,
-      "text": "Rachel: 'Look at that, I'm just stroking your arm.'",
+      "text": "Phoebe: 'I can't wait to get sous-neath him.'",
       "characters": [
-        "Rachel"
+        "Phoebe"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "wordplay_pun",
+        "character_comedy"
       ],
-      "setup": "Rachel already demonstrated soap knowledge",
-      "punchline": "Now she's physically inappropriate with the actor",
-      "craft_total": 5.6,
-      "impact_score": 5.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Escalates Rachel's fan behavior to physical inappropriateness",
+      "setup": "Phoebe is telling Monica excitedly about her date with Tim",
+      "punchline": "'Sous-neath' \u2014 a callback to the sous/under wordplay, now used as a barely-veiled sexual pun ('underneath him')",
+      "craft_total": 7.69,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The sous-pun series culminates in a sexual pun that's both consistent with the established wordplay arc AND reveals Phoebe's horniness in a single word. 'Sous-neath' is a great coinage \u2014 the callback makes it richer, the sexual subtext gives it extra punch. This is tight comedy writing: one word does comedy, character work, and callback simultaneously.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -589,22 +613,22 @@
     },
     {
       "index": 19,
-      "text": "Phoebe: 'I can't wait to get \"sous-neath\" him.'",
+      "text": "Monica: 'Last night he lit my pastry chef on fire.'",
       "characters": [
-        "Phoebe"
+        "Monica"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "dark_subversive"
+        "dark_subversive",
+        "escalation"
       ],
-      "setup": "Phoebe talking about her date with Tim",
-      "punchline": "Sexual innuendo using the 'sous' wordplay from earlier",
-      "craft_total": 6.75,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Clever callback that turns innocent wordplay into sexual innuendo, very Phoebe",
+      "setup": "Monica is building a case for why Tim needs to be fired",
+      "punchline": "The escalating list of incompetence culminates in Tim literally setting a person on fire \u2014 a comic extreme",
+      "craft_total": 6.82,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good escalation joke \u2014 the progression from 'slow' to 'burns things' to 'lit a person on fire' is a satisfying comic ramp. The casualness with which Monica states it ('last night he lit my pastry chef on fire') is what makes it funny.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -614,22 +638,22 @@
     },
     {
       "index": 20,
-      "text": "Monica: 'Last night he lit my pastry chef on fire.'",
+      "text": "Monica: 'Well, now she has no eyebrows. Mission accomplished.'",
       "characters": [
         "Monica"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "dark_subversive",
+        "deadpan_understatement"
       ],
-      "setup": "Monica listing Tim's incompetence",
-      "punchline": "Casually mentions he literally set someone on fire",
-      "craft_total": 6.8,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Great escalation from kitchen mistakes to actual bodily harm, delivered matter-of-factly",
+      "setup": "Phoebe has argued the pastry chef 'could stand to be taken down a peg'",
+      "punchline": "Monica sarcastically agrees \u2014 the fire accomplished Phoebe's goal of humbling the pastry chef, as evidenced by her lack of eyebrows \u2014 delivered completely deadpan",
+      "craft_total": 7.49,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect button on the pastry chef bit. 'Mission accomplished' is the right note of dark sarcasm \u2014 Monica is horrified but can't help acknowledging the perverse logic. 'Now she has no eyebrows' is a specifically funny image. Economy is excellent.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -639,22 +663,23 @@
     },
     {
       "index": 21,
-      "text": "Monica: 'Well, now she has no eyebrows. Mission accomplished.'",
+      "text": "Phoebe points out Tim's fire 'got you a little bit too' \u2014 Monica reveals she paid to have that done (a waxing or cosmetic treatment).",
       "characters": [
+        "Phoebe",
         "Monica"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "setup_punchline",
+        "visual_gag"
       ],
-      "setup": "Phoebe suggests the pastry chef could stand to be taken down a peg",
-      "punchline": "Monica's dark satisfaction with the fire result",
-      "craft_total": 7.1,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Phoebe observes that Monica seems to have been singed (missing some facial hair) from Tim's fire accident",
+      "punchline": "'I paid to have this done.' \u2014 revealing Monica's grooming choice coincidentally looks like fire damage",
+      "craft_total": 6.83,
+      "impact_score": 6.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Monica competitive meanness - finding the silver lining in workplace injury",
+      "is_callback": 1,
+      "explanation": "Visual gag relying on Monica's eyebrows/facial hair being groomed in a way that resembles fire damage. The 'I paid for this' reveal is a solid button \u2014 Monica's vanity vs. the fire chaos is a good juxtaposition.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -668,21 +693,23 @@
     },
     {
       "index": 22,
-      "text": "Monica: 'I paid to have this done.' about her singed hair",
+      "text": "Joey: 'I thought you were an idiot.' \u2014 said in complete agreement when Rachel expresses surprise Kash found her charming.",
       "characters": [
-        "Monica"
+        "Joey",
+        "Rachel"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Phoebe notes Monica got a little singed too",
-      "punchline": "Monica pretends it was intentional styling",
-      "craft_total": 6.25,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Rachel says 'I thought I was an idiot' about her encounter with Kash",
+      "punchline": "Joey immediately says 'I'm with you' \u2014 agreeing that she was an idiot \u2014 with zero tact and complete sincerity",
+      "craft_total": 6.69,
+      "impact_score": 6.67,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Monica's vanity and competitiveness - can't admit to being a victim of Tim's incompetence",
+      "explanation": "Classic Joey tactlessness. His total lack of a filter ('I'm with you') is perfectly in character \u2014 he's not being mean, he's just being honest. The beat works because it's so immediate.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -692,23 +719,22 @@
     },
     {
       "index": 23,
-      "text": "Joey: 'He said he thought you were charming.' Rachel: 'Ha!' Joey: 'I thought I was an idiot.' Rachel: 'I'm with you.'",
+      "text": "Rachel's response to learning she's been set up: 'Oh! I think I'm gonna throw up a little.'",
       "characters": [
-        "Joey",
         "Rachel"
       ],
       "joke_types": [
-        "setup_punchline",
+        "reaction_beat",
         "character_comedy"
       ],
-      "setup": "Joey relays compliment about Rachel, she's surprised",
-      "punchline": "Rachel agrees with Joey's assessment instead",
-      "craft_total": 6.4,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Joey reveals Kash Ford asked Rachel out",
+      "punchline": "Rachel's reaction \u2014 a physically visceral response of near-nausea from excitement \u2014 is both a character reveal (she IS a soap opera nut) and a callback to her earlier denial",
+      "craft_total": 6.18,
+      "impact_score": 6.25,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good rapid-fire exchange showing Rachel's self-deprecation about her soap fan behavior",
+      "explanation": "Solid reaction beat. 'Throw up a little' is a specific and funny way to express fan-girl excitement \u2014 the 'a little' qualifier is the right touch of understatement.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -734,21 +760,23 @@
     },
     {
       "index": 24,
-      "text": "Rachel: 'First of all, Kash Ford? Not people.'",
+      "text": "Joey told Kash Rachel couldn't date because she's pregnant \u2014 'I figured since you're pregnant, you're not gonna be seeing people.' Rachel: 'First of all, Kash Ford? Not people.'",
       "characters": [
-        "Rachel"
+        "Rachel",
+        "Joey"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Joey says he figured pregnant Rachel wouldn't be seeing 'people'",
-      "punchline": "Rachel dismisses Kash as not qualifying as 'people'",
-      "craft_total": 6.75,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Joey explains he turned down the date on Rachel's behalf because she's pregnant",
+      "punchline": "Rachel's correction: Kash Ford is not 'people' \u2014 he's on a higher plane \u2014 revealing her full fan-girl delusion",
+      "craft_total": 7.07,
+      "impact_score": 7.17,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sharp putdown that shows Rachel's standards and Joey's poor matchmaking",
+      "explanation": "Great line. 'Kash Ford? Not people.' is concise, funny, and reveals Rachel's celebrity-worship hierarchy. The specificity \u2014 she means it sincerely \u2014 makes it land harder than if it were sarcastic.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -762,21 +790,22 @@
     },
     {
       "index": 25,
-      "text": "Chandler: 'If I see him, I'll ask.' to Bob asking about Toby",
+      "text": "Rachel threatens to come back to the set and 'meet more actors. I'll meet them all.' \u2014 delivered as a genuine threat.",
       "characters": [
-        "Chandler"
+        "Rachel"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Bob asks how 'Toby' is doing",
-      "punchline": "Chandler pretends he's not Toby",
-      "craft_total": 6.75,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Joey is reluctant to arrange the date; Rachel needs leverage",
+      "punchline": "Rachel's 'threat' is to become an even more embarrassing soap opera fangirl \u2014 which is both effective leverage on Joey and a self-own",
+      "craft_total": 6.09,
+      "impact_score": 5.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Chandler doubles down on the deception in a perfectly Chandler way",
+      "is_callback": 0,
+      "explanation": "The 'threat' being MORE embarrassing fandom is a good inversion \u2014 Rachel weaponizes her own obsession. Functional but not exceptional.",
       "dialogue": [
         {
           "speaker": "Bob",
@@ -790,22 +819,23 @@
     },
     {
       "index": 26,
-      "text": "Chandler: 'But this is 11. It's almost twice as hard up here.'",
+      "text": "Chandler pretends he doesn't know Bob well, saying they're 'on a semi-first-name basis,' to avoid Bob joining his floor.",
       "characters": [
-        "Chandler"
+        "Chandler",
+        "Mr. Douglas"
       ],
       "joke_types": [
-        "absurdist",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Boss wants to bring Bob from 6th floor to 11th floor",
-      "punchline": "Chandler's ridiculous mathematical justification",
-      "craft_total": 7.2,
-      "impact_score": 6.0,
+      "setup": "Mr. Douglas asks if Chandler knows Bob from the sixth floor and considers adding him to the team",
+      "punchline": "Chandler, who is 'Toby' to Bob and desperate to keep their distance, claims they're only on a 'semi-first-name basis' \u2014 a deliberately ambiguous non-answer",
+      "craft_total": 6.88,
+      "impact_score": 6.5,
       "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Chandler logic - using math to justify irrational workplace politics",
+      "is_callback": 1,
+      "explanation": "'Semi-first-name basis' is a funny coinage \u2014 technically they're on a first-name basis (Bob calls him Toby), but it's the wrong name. The irony of his self-protection deepening the lie is good Chandler territory.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -815,21 +845,22 @@
     },
     {
       "index": 27,
-      "text": "Chandler: 'What you should do, toss them in the shredder... and claim you never got them.'",
+      "text": "Chandler argues against promoting Bob by claiming: 'This is 11. It's almost twice as hard up here.'",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "dark_subversive"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Boss mentions stack of documents piling up",
-      "punchline": "Chandler suggests destroying evidence",
-      "craft_total": 6.1,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Chandler needs to dissuade his boss from moving Bob to his floor so his Toby secret stays safe",
+      "punchline": "His argument is completely invented corporate-speak nonsense: being on the 11th floor is 'almost twice as hard' \u2014 a meaningless claim delivered with authority",
+      "craft_total": 6.56,
+      "impact_score": 6.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Chandler's workplace cynicism and willingness to game the system",
+      "explanation": "Good absurdist corporate comedy. 'Almost twice as hard up here' is exactly the kind of made-up metric that sounds plausible in an office. The boss immediately accepts it, which is its own joke about corporate hierarchies.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -839,21 +870,22 @@
     },
     {
       "index": 28,
-      "text": "Chandler: 'What does a guy have to do to be taken seriously around here?'",
+      "text": "Monica reveals the chef who recommended Tim responded to her call with: 'Ha, ha! Gotcha!'",
       "characters": [
-        "Chandler"
+        "Monica"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "setup_punchline",
+        "dark_subversive"
       ],
-      "setup": "Boss treats Chandler's document destruction suggestion as a joke",
-      "punchline": "Chandler's frustrated question after giving terrible advice",
-      "craft_total": 6.1,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Monica has called the chef who gave Tim his reference to understand why she hired him",
+      "punchline": "The reference was a prank \u2014 the chef tricked Monica into hiring Tim as a joke, confirming he was always terrible",
+      "craft_total": 7.01,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Ironic since Chandler should be relieved his bad advice wasn't taken seriously",
+      "explanation": "Good economy \u2014 the prank reference is revealed entirely through the chef's quoted response ('Ha, ha! Gotcha!'). Funny because it confirms Tim's incompetence was universally known and Monica was the mark.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -863,22 +895,22 @@
     },
     {
       "index": 29,
-      "text": "Chef on phone: 'Ha, ha! Gotcha!' when Monica calls about Tim's recommendation",
+      "text": "Tim calls Phoebe constantly to check if she got home okay, got out of the shower okay \u2014 then shows up anyway when she doesn't answer.",
       "characters": [
-        "Chef (off-screen)"
+        "Phoebe"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Monica calls chef who recommended Tim",
-      "punchline": "Reveals the recommendation was a prank",
-      "craft_total": 6.35,
-      "impact_score": 5.0,
-      "quotability": 3.0,
+      "setup": "Phoebe describes Tim as 'too sweet' and explains his behavior",
+      "punchline": "His checking-in escalates from phone calls to physical visits: 'I was worried about you.' Phoebe's verdict: 'Ugh, be a man!'",
+      "craft_total": 6.4,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Reveals the Tim situation is even worse than thought - professional sabotage",
+      "explanation": "Good cringe comedy \u2014 Tim's over-attentiveness escalates from sweet to suffocating. 'Did you get out of the shower okay?' is a specifically funny over-reach. Phoebe's 'be a man' is unexpected given her usual touchy-feely worldview.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -900,22 +932,22 @@
     },
     {
       "index": 30,
-      "text": "Tim's overly concerned questions about Phoebe getting home and out of shower safely",
+      "text": "Phoebe: 'Then he comes over! \"I was worried about you.\" Ugh, be a man!'",
       "characters": [
-        "Phoebe describing Tim"
+        "Phoebe"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Phoebe explains Tim is too sweet",
-      "punchline": "Examples show obsessive, stalker-like behavior",
-      "craft_total": 5.6,
-      "impact_score": 5.0,
-      "quotability": 3.0,
+      "setup": "Phoebe describes Tim showing up unannounced after she doesn't answer",
+      "punchline": "'Ugh, be a man!' \u2014 Phoebe, who was just swooning over Tim's sweetness, now recoiling from the same behavior",
+      "craft_total": 6.41,
+      "impact_score": 6.25,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows how 'sweet' behavior becomes creepy when excessive",
+      "explanation": "The irony of Phoebe's reversal \u2014 she wanted a sweet guy, and now that she has one, the sweetness is a dealbreaker \u2014 is a relatable comedic truth. 'Be a man!' is a punchy tag.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -941,21 +973,23 @@
     },
     {
       "index": 31,
-      "text": "Phoebe: 'Ugh, be a man!' about Tim's behavior",
+      "text": "Monica and Phoebe debate who goes first in dumping/firing Tim: 'Whoever goes second is the bitch. And the woman who dumps a guy that's just been fired? Blond bitch!'",
       "characters": [
+        "Monica",
         "Phoebe"
       ],
       "joke_types": [
+        "escalation",
         "character_comedy"
       ],
-      "setup": "Tim's overly concerned, clingy behavior",
-      "punchline": "Phoebe's direct, frustrated demand",
-      "craft_total": 6.25,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Monica and Phoebe realize they need to coordinate firing and dumping Tim on the same day",
+      "punchline": "The debate over who goes first is resolved by Monica's logic: going second makes you the bitch \u2014 with the sub-category 'blond bitch' for Phoebe specifically, adding an extra layer of specificity",
+      "craft_total": 7.07,
+      "impact_score": 7.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Very Phoebe - blunt and to the point about relationship expectations",
+      "explanation": "The 'blond bitch' specification is the joke's best moment \u2014 Monica's precision in her insult taxonomy is funny and in character. The whole negotiation scene has good energy and the escalating stakes around a relatively minor situation is classic sitcom.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -965,21 +999,23 @@
     },
     {
       "index": 32,
-      "text": "Monica: 'Then we'll both do it today and he'll just have to deal with it.'",
+      "text": "Phoebe and Monica's argument over who goes first to dump/fire Tim ends with Phoebe saying 'Agh, but... screw you! I'm going first!'",
       "characters": [
+        "Phoebe",
         "Monica"
       ],
       "joke_types": [
+        "escalation",
         "character_comedy"
       ],
-      "setup": "Discussing who fires/dumps Tim first",
-      "punchline": "Monica's ruthless solution to dump both problems on Tim at once",
-      "craft_total": 6.3,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Monica has conceded the logic of Phoebe going first; Phoebe briefly agrees, then reverses for no reason",
+      "punchline": "Phoebe's 'screw you, I'm going first!' \u2014 reversing her own just-stated position \u2014 is pure comic chaos with no logic behind it",
+      "craft_total": 6.85,
+      "impact_score": 7.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Monica's competitive, decisive nature - solve the problem efficiently regardless of Tim's feelings",
+      "explanation": "Phoebe's irrational reversal is true to her chaotic character. The 'Agh, but...' pause before the reversal is what makes it funny \u2014 she almost accepts it rationally, then overrides reason with instinct.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -989,23 +1025,23 @@
     },
     {
       "index": 33,
-      "text": "Monica and Phoebe's exchange about who goes first, ending with 'Blond bitch!'",
+      "text": "Bob tells 'Toby' (Chandler) he wants to find out who this 'Chandler' is \u2014 not knowing he's talking to Chandler himself.",
       "characters": [
-        "Monica",
-        "Phoebe"
+        "Chandler",
+        "Bob"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "irony_sarcasm",
+        "running_gag"
       ],
-      "setup": "Discussing the social stigma of firing vs dumping",
-      "punchline": "Monica's specific insult about the 'blond bitch' stereotype",
-      "craft_total": 6.6,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation showing how the women prioritize appearance over Tim's feelings",
+      "setup": "Bob has been told someone named Chandler blocked his transfer; he wants revenge",
+      "punchline": "He's venting to 'Toby' \u2014 who IS Chandler \u2014 creating a dramatic irony where Chandler must navigate his own enemy's anger without revealing his identity",
+      "craft_total": 7.36,
+      "impact_score": 7.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Good dramatic irony \u2014 the audience knows what Bob doesn't. Chandler's predicament escalates naturally from the Toby gag. 'Say, uh, who the hell is this Chandler?' is a good construction because we see Chandler's face must be priceless.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1031,22 +1067,23 @@
     },
     {
       "index": 34,
-      "text": "Phoebe: 'Agh, but... screw you! I'm going first!'",
+      "text": "What are the better excuses for not drinking on the date: 'I'm a recovering alcoholic,' 'I'm a Mormon,' or 'I got so hammered last night I'm still a little drunk'?",
       "characters": [
+        "Rachel",
         "Phoebe"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "setup_punchline",
+        "dark_subversive"
       ],
-      "setup": "Phoebe initially agrees Monica should go first",
-      "punchline": "Sudden competitive reversal",
-      "craft_total": 6.1,
-      "impact_score": 5.0,
-      "quotability": 3.0,
+      "setup": "Rachel is preparing for her date with Kash and can't drink because she's pregnant; she needs an excuse",
+      "punchline": "The three options are presented as equally viable, but the third ('got so hammered I'm still drunk') is the dark outlier that makes no sense as a romantic first impression",
+      "craft_total": 7.44,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Phoebe can be just as competitive as Monica when self-interest is involved",
+      "explanation": "The rule of three works here \u2014 the third option is an absurd escalation. Good construction. The joke is in the third option's self-defeating nature as an excuse, and that it's presented with the same weight as the first two.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -1060,21 +1097,22 @@
     },
     {
       "index": 35,
-      "text": "Bob: 'Apparently somebody thinks I'm not \"11th-floor material.\"'",
+      "text": "Rachel's three choices for why she's not drinking on her date: 'recovering alcoholic,' 'Mormon,' or 'so hammered last night I'm still a little drunk'",
       "characters": [
-        "Bob"
+        "Rachel"
       ],
       "joke_types": [
-        "callback"
+        "setup_punchline",
+        "escalation"
       ],
-      "setup": "Bob talking to Chandler about not getting promoted",
-      "punchline": "References Chandler's earlier excuse about floor difficulty",
-      "craft_total": 6.15,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good callback that creates dramatic irony - audience knows Chandler caused this",
+      "setup": "Rachel is planning her date and needs an excuse for not drinking while pregnant",
+      "punchline": "The third option \u2014 'so hammered last night I'm still a little drunk' \u2014 hilariously undercuts any pretense of sobriety",
+      "craft_total": 6.66,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A list joke with a good escalating third beat. The first two options are plausible cover stories; the third achieves the exact opposite effect. The absurdist logic of choosing 'still drunk' as a non-drinking excuse is sharp.",
       "dialogue": [
         {
           "speaker": "Bob",
@@ -1096,22 +1134,23 @@
     },
     {
       "index": 36,
-      "text": "Rachel's three date excuse options including 'I got so hammered last night I'm still a little drunk'",
+      "text": "Monica suggests a Ukrainian film; Chandler says: 'No. But I'll go see a normal-person movie with you.'",
       "characters": [
-        "Rachel"
+        "Chandler",
+        "Monica"
       ],
       "joke_types": [
-        "escalation",
-        "observational"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Rachel needs excuse for not drinking on date",
-      "punchline": "Increasingly absurd excuse options",
-      "craft_total": 6.25,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Monica pitches a Ukrainian film at the Angelika",
+      "punchline": "Chandler's flat rejection \u2014 'a normal-person movie' \u2014 dismisses the entire category of art-house cinema in three words",
+      "craft_total": 6.15,
+      "impact_score": 5.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation from reasonable to absurd, showing dating anxiety",
+      "explanation": "Classic Chandler dismissal \u2014 'normal-person movie' is a good coinage. The attitude does the work. This becomes a callback payoff later when Ross uses the same term.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1133,21 +1172,23 @@
     },
     {
       "index": 37,
-      "text": "Rachel: 'But I'll go see a normal-person movie with you.' about Ross's Ukrainian film suggestion",
+      "text": "Ross: 'Whoever she dates, my baby dates. Where is this actor taking them?' / Joey: 'Hey! I'm an actor too.'",
       "characters": [
-        "Rachel"
+        "Ross",
+        "Joey"
       ],
       "joke_types": [
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Ross suggests Ukrainian film, Rachel rejects it",
-      "punchline": "Rachel's diplomatic but dismissive counter-offer",
-      "craft_total": 6.75,
-      "impact_score": 5.0,
-      "quotability": 5.0,
+      "setup": "Ross is spiraling about Rachel's date and his baby's safety; dismisses Kash as 'this actor'",
+      "punchline": "Joey correctly notes that he is also an actor \u2014 feeling the slight",
+      "craft_total": 7.0,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Rachel - polite but clear about Ross's pretentious movie choices",
+      "explanation": "Joey's wounded professional pride is a small but well-timed beat. It redirects Ross's anxiety into an accidental insult. The economy is good \u2014 one line does the job.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1157,22 +1198,22 @@
     },
     {
       "index": 38,
-      "text": "Ross: 'It's the opposite of weird. It's, uh... It's regular. It's, uh... It's mundane. It's actually a little dull.'",
+      "text": "Ross: 'A ferry? My baby's going on a ferry?' \u2014 treating a Staten Island ferry as a death trap.",
       "characters": [
         "Ross"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Rachel asks if her having a date is weird for Ross",
-      "punchline": "Ross's over-the-top denial that escalates to calling it dull",
-      "craft_total": 6.8,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Joey mentions Kash is taking Rachel on a ferry to Staten Island",
+      "punchline": "Ross immediately catastrophizes, treating the famously slow and safe NYC ferry as an extreme danger ('Do you have any idea how dangerous those are?')",
+      "craft_total": 6.58,
+      "impact_score": 6.75,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Ross - his over-explanation reveals exactly how much it bothers him",
+      "explanation": "Ross's anxiety about the ferry is funny because ferries are famously boring and safe. 'Aren't we talking about those big boats that go, like, five miles an hour?' from Joey is the perfect deflation. Good Ross character comedy.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1194,21 +1235,22 @@
     },
     {
       "index": 39,
-      "text": "Ross: 'It's no Ukrainian film, I'll tell you.'",
+      "text": "Joey deflates Ross's ferry panic: 'Aren't we talking about those big boats that go, like, five miles an hour?'",
       "characters": [
-        "Ross"
+        "Joey"
       ],
       "joke_types": [
-        "callback"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Ross continuing his 'not bothered' rant",
-      "punchline": "Absurd comparison to his pretentious movie suggestion",
-      "craft_total": 6.1,
-      "impact_score": 4.0,
-      "quotability": 4.0,
+      "setup": "Ross has been catastrophizing about the danger of a ferry",
+      "punchline": "Joey's completely sensible reality check \u2014 delivered as an earnest question \u2014 punctures Ross's melodrama",
+      "craft_total": 6.71,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Shows Ross's scattered mental state by making nonsensical comparison",
+      "explanation": "Joey's grounded common sense as a comedic foil to Ross's anxiety is well-deployed. The specificity of 'five miles an hour' makes it funnier than a generic dismissal.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1218,22 +1260,22 @@
     },
     {
       "index": 40,
-      "text": "Ross: 'Whoever she dates, my baby dates.'",
+      "text": "Ross: 'Why don't they just jump out of an airplane? That's a fun date. Or burn each other with matches? That's fun too.'",
       "characters": [
         "Ross"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Joey points out Ross isn't worried about Rachel, but the baby",
-      "punchline": "Ross's protective father logic",
-      "craft_total": 6.75,
-      "impact_score": 5.0,
-      "quotability": 5.0,
+      "setup": "Joey has sensibly pointed out that ferries go five miles an hour and aren't dangerous",
+      "punchline": "Ross escalates to absurd alternatives \u2014 skydiving and burning each other with matches \u2014 as comparisons to ferry travel, losing all proportion",
+      "craft_total": 6.3,
+      "impact_score": 6.17,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good insight into protective father psychology with absurd possessive logic",
+      "explanation": "'Burn each other with matches' is a specifically funny addition \u2014 the downward escalation from skydiving to something a child would do in a backyard is a good touch. Ross's anxiety spiraling into absurdity is in character.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1247,22 +1289,22 @@
     },
     {
       "index": 41,
-      "text": "Ross: 'Do you have any idea how dangerous those are?' about ferries",
+      "text": "Ross tells Kash (sarcastically): 'Bit of a daredevil, are we?' upon hearing about the ferry date.",
       "characters": [
         "Ross"
       ],
       "joke_types": [
-        "escalation",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Learning Rachel's date involves a ferry",
-      "punchline": "Ross's irrational fear of safe transportation",
-      "craft_total": 6.55,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Kash mentions they're going on a ferry; Ross has just been ranting about ferry danger",
+      "punchline": "Ross's dry 'Bit of a daredevil, are we?' \u2014 heavy with sarcasm \u2014 is awkward because Kash has no context for it",
+      "craft_total": 6.56,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect neurotic Ross - finding danger in the most mundane activities",
+      "is_callback": 1,
+      "explanation": "The joke works through Ross's social awkwardness \u2014 his sarcasm is impenetrable to Kash. Functional but not standout.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1292,23 +1334,23 @@
     },
     {
       "index": 42,
-      "text": "Chandler's response about ferries going 'like, five miles an hour' and Ross's airplane/matches alternatives",
+      "text": "Rachel asks if her outfit is 'too slutty' while walking in \u2014 Hi, Kash \u2014 without missing a beat.",
       "characters": [
-        "Chandler",
-        "Ross"
+        "Rachel",
+        "Kash"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "character_comedy",
+        "cringe_discomfort"
       ],
-      "setup": "Ross worries about ferry danger",
-      "punchline": "Chandler's logical response vs Ross's increasingly absurd alternatives",
-      "craft_total": 6.45,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Rachel enters asking everyone if her outfit is too revealing",
+      "punchline": "She addresses her date in the middle of the question \u2014 'Hi, Kash' \u2014 with zero self-awareness, then continues the question",
+      "craft_total": 6.82,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good contrast between Chandler's logic and Ross's escalating paranoia",
+      "explanation": "Good cringe moment \u2014 Rachel's self-consciousness is so intense she asks the question directly in front of the person it concerns most. The midsentence 'Hi, Kash' is the comedic beat.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1342,21 +1384,22 @@
     },
     {
       "index": 43,
-      "text": "Ross: 'Bit of a daredevil, are we?' to Kash about the ferry",
+      "text": "Joey calls after Rachel and Kash: 'And yes, it is too slutty!'",
       "characters": [
-        "Ross"
+        "Joey"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Kash mentions going on ferry",
-      "punchline": "Ross sarcastically treating safe activity as extreme sport",
-      "craft_total": 6.1,
-      "impact_score": 4.0,
-      "quotability": 4.0,
+      "setup": "Rachel has already left with Kash; the question about her outfit seemed dropped",
+      "punchline": "Joey calls after her \u2014 late, unhelpful, and completely honest \u2014 confirming the dress was too slutty",
+      "craft_total": 6.72,
+      "impact_score": 7.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Ross can't help himself from making passive-aggressive comments about the date",
+      "is_callback": 1,
+      "explanation": "The timing is the joke \u2014 Joey waits until they're gone to answer honestly. His complete lack of tact combined with his delayed delivery is very Joey. The confirmation that it WAS too slutty is the punchline the scene had been building toward.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1366,23 +1409,23 @@
     },
     {
       "index": 44,
-      "text": "Joey and friends: 'And yes, it is too slutty!' shouted after Rachel leaves",
+      "text": "Tim's pager goes off mid-breakup \u2014 Phoebe knows it's Monica's 911 signal and tells him to stay: 'Oh, no, she doesn't! I know what that is. You can stay.'",
       "characters": [
-        "Joey",
-        "Others"
+        "Phoebe",
+        "Tim"
       ],
       "joke_types": [
-        "callback",
-        "reaction_beat"
+        "irony_sarcasm",
+        "running_gag"
       ],
-      "setup": "Rachel asked earlier if outfit was too slutty",
-      "punchline": "Delayed response shouted after she's gone",
-      "craft_total": 6.4,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Phoebe is mid-breakup with Tim when his pager beeps \u2014 a 911 from the restaurant",
+      "punchline": "Tim starts to leave, citing professional duty; Phoebe \u2014 who arranged the 911 signal with Monica \u2014 tells him to stay because she knows exactly what it is",
+      "craft_total": 6.94,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good delayed reaction callback - honest opinion only shared when she can't hear it",
+      "is_callback": 0,
+      "explanation": "Good structural joke \u2014 the 911 signal was clearly a plan they made, and Phoebe's knowing interception is well-timed. The irony of Phoebe being the one who must continue the breakup she was trying to escape is well-constructed.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1392,21 +1435,23 @@
     },
     {
       "index": 45,
-      "text": "Tim: 'That's because I'm with you.' response to being called a great guy",
+      "text": "Tim, being dumped, tells Phoebe: 'I'll miss you too, Pheebs. And I will be holding you right here.' (gestures to heart)",
       "characters": [
-        "Tim"
+        "Tim",
+        "Phoebe"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "cringe_discomfort",
+        "character_comedy"
       ],
-      "setup": "Phoebe trying to break up with Tim, calls him great",
-      "punchline": "Tim's overly romantic, clingy response",
-      "craft_total": 5.1,
-      "impact_score": 4.0,
-      "quotability": 2.0,
+      "setup": "Phoebe is trying to dump Tim; he responds with sincere, over-the-top tenderness",
+      "punchline": "His complete inability to read the room \u2014 responding to a breakup with 'I'll miss you too' (she didn't say she'd miss him) and 'holding you right here' \u2014 is peak oblivious sweetness",
+      "craft_total": 5.95,
+      "impact_score": 6.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard overly clingy boyfriend behavior, gets cringe laughs but not particularly original",
+      "explanation": "Tim's obliviousness is well-established by this point. 'I'll miss you too' (unprompted) is the cringe beat \u2014 he's responding to a breakup as if it's a declaration of love. Functional cringe comedy.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -1420,22 +1465,22 @@
     },
     {
       "index": 46,
-      "text": "Tim: 'And I will be holding you right here.' (pointing to heart)",
+      "text": "Chandler on reading: 'So what movie do you wanna see? Not another one I have to read. I get enough of that from books.' Then: 'Books? All right, car magazines, cereal boxes... but it's like, enough!'",
       "characters": [
-        "Tim"
+        "Chandler"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "visual_gag"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Tim has to leave for restaurant emergency",
-      "punchline": "Overly sentimental gesture during breakup attempt",
-      "craft_total": 4.8,
-      "impact_score": 4.0,
-      "quotability": 2.0,
+      "setup": "Chandler objects to subtitled films \u2014 'I get enough reading from books'",
+      "punchline": "He catches himself and backtracks: he doesn't actually read books \u2014 only car magazines and cereal boxes \u2014 escalating his own self-deprecation",
+      "craft_total": 7.45,
+      "impact_score": 7.67,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "More predictable clingy behavior, visual gesture adds to the cringe but isn't innovative",
+      "explanation": "One of the funnier Chandler moments in the episode. The self-correction escalates beautifully: books \u2192 car magazines \u2192 cereal boxes \u2192 'it's like, enough!' The addition of cereal boxes as his literary ceiling is specifically funny and the exasperation at the end ('enough!') is a great button.",
       "dialogue": [
         {
           "speaker": "Tim",
@@ -1453,22 +1498,23 @@
     },
     {
       "index": 47,
-      "text": "Chandler: 'All right, car magazines, cereal boxes... but it's, like, enough!'",
+      "text": "Joey admits he's waiting for Rachel to get home from her date to find out how it went \u2014 immediately frames it as concern for 'my baby's stepfather.'",
       "characters": [
+        "Joey",
         "Chandler"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Chandler claims to get enough reading from books",
-      "punchline": "Reveals he actually reads car magazines and cereal boxes",
-      "craft_total": 6.6,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Chandler asks why they're staying in instead of going out; Joey has an answer ready",
+      "punchline": "Joey's reason sounds paternalistic and rational \u2014 until we realize it's really his nosiness dressed up as parental concern. 'This guy could be my baby's stepfather.'",
+      "craft_total": 6.12,
+      "impact_score": 5.75,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Chandler character moment - his intellectual pretensions quickly deflated",
+      "explanation": "Setup for Ross's jealousy arc, but played lightly for comedy. The 'stepfather' logic is funny but it's really the transitional joke before the more emotional Ross material.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1482,21 +1528,22 @@
     },
     {
       "index": 48,
-      "text": "Ross: 'Every time I drop him off at Carol and Susan's... it breaks my heart a little.'",
+      "text": "Ross: 'Now she doesn't really have a face. Smoking body, though.'",
       "characters": [
         "Ross"
       ],
       "joke_types": [
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Ross explaining his feelings about Ben",
-      "punchline": "Honest emotional admission about shared custody pain",
-      "craft_total": 6.45,
-      "impact_score": 4.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Joey asks if the imaginary wife in Ross's perfect Sunday-morning picture is Rachel; Ross says it used to be, but now she doesn't have a face",
+      "punchline": "'Smoking body, though.' \u2014 Ross's unconscious acknowledgment that he's still physically attracted to Rachel even as he tries to move on emotionally",
+      "craft_total": 7.68,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "More dramatic than comedic, but shows Ross's vulnerability and parental anxiety",
+      "explanation": "One of the episode's best character jokes. The line is funny because it's such an accidental reveal \u2014 Ross is trying to be emotionally mature about Rachel, but can't help noting she has a 'smoking body.' The delivery undercuts his sincere attempt at growth. Economy is excellent \u2014 two words ('Smoking body') do the work. This is the episode's tonal pivot point between comedy and genuine feeling.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1510,21 +1557,22 @@
     },
     {
       "index": 49,
-      "text": "Ross: 'Maybe fight over the science section.'",
+      "text": "Ross rejects the Ukrainian film: 'No, I said fun.'",
       "characters": [
         "Ross"
       ],
       "joke_types": [
-        "character_comedy"
+        "callback",
+        "deadpan_understatement"
       ],
-      "setup": "Ross describing ideal Sunday morning family scene",
-      "punchline": "His specific, nerdy detail about the science section",
-      "craft_total": 6.55,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Ross detail - even his fantasy family moments involve scientific interests",
+      "setup": "Joey offers to take Ross out for 'whatever you want' to cheer him up; offers the Ukrainian film",
+      "punchline": "Ross \u2014 the academic, the intellectual \u2014 firmly rejects the Ukrainian film as 'not fun,' a callback to Chandler's earlier 'normal-person movie' dismissal",
+      "craft_total": 6.91,
+      "impact_score": 6.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Good callback \u2014 Ross, the most likely person to enjoy a Ukrainian film, rejects it in his moment of emotional need. 'No, I said fun' is well-delivered and gains resonance from the earlier scene where Chandler made the same call.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1534,22 +1582,23 @@
     },
     {
       "index": 50,
-      "text": "Ross: 'Now she doesn't really have a face. Smoking body, though.'",
+      "text": "Bob confronts 'Toby' asking where Chandler Bing's office is \u2014 Chandler has to point to his own office.",
       "characters": [
-        "Ross"
+        "Chandler",
+        "Bob"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "irony_sarcasm",
+        "running_gag"
       ],
-      "setup": "Chandler asks if Rachel is still the wife in Ross's fantasy",
-      "punchline": "Ross's honest but inappropriate description",
-      "craft_total": 7.0,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Darkly funny insight into how Ross compartmentalizes his feelings about Rachel - can appreciate her physically while erasing her emotionally",
+      "setup": "Bob wants to confront Chandler about blocking his transfer; asks 'Toby' for directions",
+      "punchline": "Chandler \u2014 IS Chandler \u2014 has to either out himself or protect his identity. He points to his own office, then has to intervene.",
+      "craft_total": 7.17,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The situation has reached maximum irony \u2014 Chandler is directing his own enemy to his own office. The dramatic irony is at its peak here, and the audience knows he's about to be caught.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1563,21 +1612,23 @@
     },
     {
       "index": 51,
-      "text": "Chandler: 'No, I said fun.' after Ross suggests Ukrainian film",
+      "text": "Bob asks 'Toby' (Chandler) where Chandler's office is; Chandler hesitates, then points to his own office and says 'Right there'",
       "characters": [
-        "Chandler"
+        "Chandler",
+        "Bob"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "running_gag",
+        "cringe_discomfort"
       ],
-      "setup": "Chandler offers to do something fun, Ross suggests Ukrainian film",
-      "punchline": "Chandler's flat rejection",
-      "craft_total": 6.5,
-      "impact_score": 5.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Bob wants to confront 'that bastard' Chandler; asks Toby (Chandler himself) where to find him",
+      "punchline": "Chandler, after a long pause ('Right there... Let me ask you, why?'), directs Bob to his own office and then futilely tries to intervene",
+      "craft_total": 7.13,
+      "impact_score": 7.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good Chandler deadpan that calls out Ross's pretentious movie taste",
+      "explanation": "The Toby storyline escalating to its cringe peak: Chandler must now direct an angry man to his own office. The pause before 'Right there' \u2014 the dawning horror of the trap he's in \u2014 is well-crafted cringe comedy. The structure of the whole arc pays off here.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1595,21 +1646,23 @@
     },
     {
       "index": 52,
-      "text": "Bob: 'It's Bob, actually.' when Chandler calls him Bobby",
+      "text": "Chandler tries to protect Bob from more anger by saying 'Toby, I'm not gonna let you cover for him' \u2014 but Bob calls him Toby, so the name-game collapses.",
       "characters": [
+        "Chandler",
         "Bob"
       ],
       "joke_types": [
+        "running_gag",
         "irony_sarcasm"
       ],
-      "setup": "Chandler finally tries to use Bob's real name",
-      "punchline": "Bob corrects the wrong version",
-      "craft_total": 6.55,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Chandler tries to confess to Bob that he (Chandler) was responsible, not 'Toby'",
+      "punchline": "Bob calls him Toby while Chandler is trying to come clean \u2014 the lie is so embedded Bob can't hear the truth. 'Anything you say will just get me more upset with Chandler.'",
+      "craft_total": 6.96,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good irony - Chandler finally attempts to use real names and still gets it wrong",
+      "explanation": "The best payoff in the Toby arc. Chandler cannot confess because Bob is too invested in the lie. 'Anything you say will just get me more upset with Chandler' is a great line \u2014 Bob is inadvertently protecting Chandler FROM Chandler. The irony is perfectly constructed and the structural payoff of a running gag earns it.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1623,21 +1676,24 @@
     },
     {
       "index": 53,
-      "text": "Bob: 'Toby, I'm not gonna let you cover for him.'",
+      "text": "Phoebe and Monica simultaneously fire and dump Tim \u2014 talking over each other: 'I'm breaking up with you!' / 'You're fired!'",
       "characters": [
-        "Bob"
+        "Phoebe",
+        "Monica",
+        "Tim"
       ],
       "joke_types": [
-        "irony_sarcasm"
+        "escalation",
+        "cringe_discomfort"
       ],
-      "setup": "Chandler tries to take blame for Chandler blocking Bob's promotion",
-      "punchline": "Bob refuses to let 'Toby' protect 'Chandler'",
-      "craft_total": 7.05,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "setup": "Monica and Phoebe have debated who goes first; they agreed Phoebe would, but both show up at the same moment",
+      "punchline": "They both go at the exact same time \u2014 shouting over each other \u2014 which is both what they were trying to avoid and completely chaotic",
+      "craft_total": 6.69,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Excellent situational irony - Bob protects Chandler from himself without knowing it",
+      "explanation": "The payoff to the 'who goes first' debate is that both go simultaneously \u2014 the exact outcome they were trying to avoid. Good structural comedy. The scene then escalates as Tim responds to being both fired and dumped at once.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1655,23 +1711,24 @@
     },
     {
       "index": 54,
-      "text": "Monica and Phoebe: 'I'm breaking up with you!' 'You're fired!' delivered simultaneously",
+      "text": "Tim, fired and dumped simultaneously, responds to Monica's 'chemistry's not right' by adapting her language: 'Good. The chemistry thing for us too.'",
       "characters": [
+        "Tim",
         "Monica",
         "Phoebe"
       ],
       "joke_types": [
-        "escalation",
-        "physical_slapstick"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Both women decided to go first",
-      "punchline": "Simultaneous delivery of both bad news",
-      "craft_total": 6.6,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Monica gives Tim a vague 'the chemistry's just not right' reason for firing him",
+      "punchline": "Tim co-opts Monica's excuse for his breakup with Phoebe \u2014 'the chemistry thing for us too' \u2014 suggesting he's been prepared with the same line or is just very agreeably processing everything",
+      "craft_total": 6.94,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good payoff to their earlier competition - the worst possible outcome for Tim",
+      "explanation": "Good beat \u2014 Tim recycling Monica's corporate language for his romantic breakup in the same breath reveals his emotional plasticity. It's both funny and slightly unsettling.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1693,22 +1750,22 @@
     },
     {
       "index": 55,
-      "text": "Monica and Phoebe: 'Ooh, good. The chemistry thing for us too.' about lack of chemistry",
+      "text": "Chandler: 'Well, that puts me in a difficult position.' \u2014 after Bob says anything Chandler (Toby) says will just make him angrier at Chandler.",
       "characters": [
-        "Monica",
-        "Phoebe"
+        "Chandler"
       ],
       "joke_types": [
-        "character_comedy"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Tim mentions chemistry not being right",
-      "punchline": "Both women enthusiastically agree",
-      "craft_total": 5.75,
-      "impact_score": 4.0,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Shows how relieved they are that Tim is making it easy on them",
+      "setup": "Bob has told 'Toby' that any defense of Chandler will only make him angrier at Chandler",
+      "punchline": "Chandler's weary, perfectly understated 'Well, that puts me in a difficult position' \u2014 said as the person he's been asked not to defend",
+      "craft_total": 8.01,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The best single line of the Chandler/Toby arc. The understatement is exquisite \u2014 'a difficult position' is the most restrained possible description of being unable to defend yourself to your own enemy while posing as someone else. The deadpan delivery of a line that only makes full sense to the audience (not Bob) is classic Chandler and classic sitcom irony. Economy is near-perfect.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1722,22 +1779,23 @@
     },
     {
       "index": 56,
-      "text": "Phoebe: 'And Tim, I just want to say good luck here.' knowing he's about to be fired",
+      "text": "Monica rehires Tim immediately after his heartfelt speech \u2014 undoing everything they planned.",
       "characters": [
-        "Phoebe"
+        "Monica",
+        "Tim"
       ],
       "joke_types": [
-        "dark_subversive",
+        "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Monica just hired Tim back after firing him",
-      "punchline": "Phoebe's faux-supportive comment knowing he's doomed",
-      "craft_total": 6.6,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Tim gives a sincere speech about how much he appreciates Monica; she fired him seconds ago",
+      "punchline": "Monica's resolution caves \u2014 'I think I spoke too quickly' \u2014 and she rehires him on the spot, making the whole sequence pointless",
+      "craft_total": 6.28,
+      "impact_score": 6.25,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark humor - Phoebe being falsely encouraging while knowing Tim is screwed",
+      "is_callback": 1,
+      "explanation": "The reversal is funny because Monica's self-image as a tough boss is completely undermined by one nice speech. It also sets up the visual gag with Phoebe after Tim leaves.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -1747,22 +1805,24 @@
     },
     {
       "index": 57,
-      "text": "Rachel: 'Well, I'm alone and I just bought $15 worth of candy bars. What do you think?'",
+      "text": "Monica wishes Tim 'good luck' at the end of the rehiring \u2014 as a goodbye to Phoebe's relationship with him.",
       "characters": [
-        "Rachel"
+        "Monica",
+        "Tim",
+        "Phoebe"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Ross asks how the date went",
-      "punchline": "Rachel's evidence-based response showing date failure",
-      "craft_total": 6.75,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Monica has just rehired Tim; now she must acknowledge that Phoebe still dumped him",
+      "punchline": "'Tim, I just want to say good luck here' \u2014 Monica casually signs off on the fact that he's been dumped but rehired, as if wishing him luck at a new job",
+      "craft_total": 6.7,
+      "impact_score": 6.75,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Rachel response - uses concrete evidence to show how badly the date went",
+      "explanation": "Monica's breezy 'good luck' as a cap on the chaos \u2014 both firing, rehiring, and romantic dumping \u2014 is a good understated button. The sitcom awkwardness of the situation is well-played.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1772,42 +1832,42 @@
     },
     {
       "index": 58,
-      "text": "Kash: 'I hear those hemorrhoids are a bitch.'",
+      "text": "The actor (Kash) responded to Rachel's pregnancy by saying: 'I hear those hemorrhoids are a bitch.'",
       "characters": [
-        "Rachel quoting Kash"
+        "Rachel"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "absurdist"
+        "dark_subversive",
+        "setup_punchline"
       ],
-      "setup": "Rachel told Kash she was pregnant",
-      "punchline": "His confused response about hemorrhoids",
-      "craft_total": 5.8,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Rachel reports how the date went after telling Kash she was pregnant",
+      "punchline": "Kash's response \u2014 not congratulations, not concern, but a hemorrhoid comment \u2014 is both specific and spectacularly wrong as a first response",
+      "craft_total": 7.69,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Shows Kash's ignorance about pregnancy and creates awkward dating moment"
+      "explanation": "One of the best lines in the episode. 'I hear those hemorrhoids are a bitch' is unexpected, specific, and perfectly wrong as a romantic response. It tells us everything about Kash in one line \u2014 his superficiality disguised as sympathetic small talk. The word 'hemorrhoids' in a romantic context is inherently funny, and 'I hear' implies he's gathered this information from somewhere, which makes it weirder. High quotability and economy \u2014 nine words do enormous work."
     },
     {
       "index": 59,
-      "text": "Ross: 'Guess whose middle name is Muriel?' and Rachel's gasping reaction",
+      "text": "Ross cheers Rachel up by revealing Chandler's middle name is Muriel: 'Guess whose middle name is Muriel?'",
       "characters": [
         "Ross",
         "Rachel"
       ],
       "joke_types": [
         "callback",
-        "reaction_beat"
+        "character_comedy"
       ],
-      "setup": "Ross wants to cheer Rachel up",
-      "punchline": "Reveals Chandler's embarrassing middle name",
-      "craft_total": 6.15,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Rachel is upset after her failed date; Ross offers to cheer her up",
+      "punchline": "He deploys the Muriel information as a morale-booster \u2014 implying that knowing Chandler's secret is a genuine pleasure that transcends personal misery",
+      "craft_total": 7.04,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good callback that shows how embarrassing secrets become gossip among friends",
+      "explanation": "The Muriel callback works perfectly here \u2014 Ross using Chandler's embarrassing middle name as a cheer-up gift is a lovely bit of character work. Rachel's gasp ('Chandler M. Bing!') and their shared laughter is a warm moment that also delivers the callback payoff to a broader audience (Rachel didn't know).",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1825,21 +1885,22 @@
     },
     {
       "index": 60,
-      "text": "Rachel: 'There are 20 in here.' about candy bars",
+      "text": "Rachel's response to Ross's consolation: 'No. I'm gonna go eat 10 candy bars.' Then: 'Oh, you did [cheer me up]. There are 20 in here.'",
       "characters": [
         "Rachel"
       ],
       "joke_types": [
+        "character_comedy",
         "escalation"
       ],
-      "setup": "Ross thinks eating 10 candy bars shows he cheered her up",
-      "punchline": "Rachel reveals she bought twice as many",
-      "craft_total": 5.75,
-      "impact_score": 4.0,
-      "quotability": 3.0,
+      "setup": "Ross has successfully cheered Rachel up; she says she'll go eat 10 candy bars",
+      "punchline": "Ross thinks he failed to cheer her up; she corrects him \u2014 she WAS cheered up, that's why she's only eating 10 out of the 20 she bought",
+      "craft_total": 7.09,
+      "impact_score": 7.17,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Shows the date was even worse than initially implied",
+      "explanation": "Good callback payoff \u2014 the candy bars introduced at the top of the scene are paid off with a logic that's both funny and character-consistent. 'There are 20 in here' reframes the 10 as the OPTIMISTIC option. Good structure.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1853,22 +1914,23 @@
     },
     {
       "index": 61,
-      "text": "Bob: 'Come on, Toby. Give me a hand!' while vandalizing Chandler's office",
+      "text": "Mona tells Ross he still owes her a dance; he suggests a Ukrainian film; she thinks he's joking, says 'Sure'; he goes 'Great.'",
       "characters": [
-        "Bob"
+        "Ross",
+        "Mona"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "escalation"
+        "callback",
+        "irony_sarcasm"
       ],
-      "setup": "Bob is destroying Chandler's office in revenge",
-      "punchline": "Asks Chandler (as Toby) to help destroy his own office",
-      "craft_total": 7.05,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Ross has just had a conversation where he firmly rejected the Ukrainian film as 'not fun'; now he meets an attractive woman",
+      "punchline": "He suggests the Ukrainian film as a date \u2014 she thinks he's joking (laughs), agrees; he's apparently serious \u2014 a callback that shows Ross's earnestness in a new light",
+      "craft_total": 6.42,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect ironic climax to the Toby storyline - Chandler must watch his own destruction",
+      "explanation": "Nice structural callback \u2014 the Ukrainian film that everyone dismissed becomes Ross's idea of a date, and Mona's laugh (thinking it's a joke) mirrors the audience's earlier reaction. Ross's earnest 'Great' at the end is a perfect button on a quietly funny scene.",
       "dialogue": [
         {
           "speaker": "Bob",
@@ -1883,6 +1945,26 @@
           "line": "Not anymore!"
         }
       ]
+    },
+    {
+      "index": 62,
+      "text": "Final scene: Bob is in Chandler's office throwing things around while Chandler watches; Bob calls: 'Come on, Toby, give me a hand!'",
+      "characters": [
+        "Bob",
+        "Chandler"
+      ],
+      "joke_types": [
+        "running_gag",
+        "physical_slapstick"
+      ],
+      "setup": "Bob has found out this is Chandler's office; he's trashing it",
+      "punchline": "Bob asks 'Toby' to help him vandalize Chandler's own office \u2014 Chandler watching his own stuff get destroyed while being asked to help is the final dark absurdist button on the whole arc",
+      "craft_total": 7.71,
+      "impact_score": 8.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect episode-closing gag. 'Come on, Toby, give me a hand!' is the ultimate expression of Chandler's predicament \u2014 he's being asked to help destroy his own property by a man who doesn't know who he is. It's a great physical comedy escalation of a verbal running gag, and it's a genuinely surprising final button."
     }
   ],
   "air_date": "2001-10-25",

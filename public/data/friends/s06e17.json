@@ -4,15 +4,15 @@
   "season": 6,
   "episode_number": 17,
   "title": "The One With Unagi",
-  "humor_index": 73.9,
-  "jpm": 5.24,
-  "avg_craft": 6.41,
-  "avg_impact": 6.43,
-  "total_jokes": 76,
-  "war": 31.9,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"callback\"]",
-  "standout_joke_ids": "[69, 44, 20]",
-  "weakest_section": "11:04-11:31",
+  "humor_index": 89.9,
+  "jpm": 5.86,
+  "avg_craft": 7.03,
+  "avg_impact": 7.04,
+  "total_jokes": 85,
+  "war": 88.0,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"setup_punchline\"]",
+  "standout_joke_ids": "[72, 69, 44]",
+  "weakest_section": null,
   "jokes": [
     {
       "index": 1,
@@ -21,16 +21,17 @@
         "Ross"
       ],
       "joke_types": [
+        "character_comedy",
         "observational"
       ],
-      "setup": "Ross randomly brings up having a monkey",
-      "punchline": "Self-aware criticism of absurd past decision",
-      "craft_total": 4.75,
-      "impact_score": 4.0,
-      "quotability": 3.0,
+      "setup": "Ross opens with an offhand nostalgic remark about having once owned a pet monkey.",
+      "punchline": "His immediate self-questioning ('What was I thinking?') signals absurdity and self-awareness about a genuinely bizarre life choice.",
+      "craft_total": 7.41,
+      "impact_score": 6.83,
+      "quotability": 5.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Simple callback that works through self-awareness. Economical but not particularly clever.",
+      "is_callback": 0,
+      "explanation": "Works well as a cold open because it references Ross's actual backstory (Marcel the monkey) without needing explanation. The self-deprecating punchline is quick and character-specific. High character integration because only Ross would have this problem.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -56,22 +57,23 @@
     },
     {
       "index": 2,
-      "text": "20 percent is a pretty generous tip. You know what's more generous? 50 percent!",
+      "text": "20 percent is a pretty generous tip. / You know what's more generous? 50 percent!",
       "characters": [
-        "Unknown server character"
+        "Ross",
+        "Joey"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Customer questions 20% tip appropriateness",
-      "punchline": "Escalating to absurdly high percentage",
-      "craft_total": 5.0,
-      "impact_score": 5.0,
+      "setup": "Ross defends giving 20% tip as generous.",
+      "punchline": "Joey (a waiter) argues that 50% is more generous, completely missing the point that generosity has practical limits \u2014 revealing his self-interest.",
+      "craft_total": 6.45,
+      "impact_score": 5.83,
       "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple escalation joke. Works but predictable structure.",
+      "explanation": "Solid character comedy \u2014 Joey's waiter perspective makes this feel specific rather than generic greed humor. The escalating structure ('you know what's even more generous') adds a beat of anticipation that lands cleanly.",
       "dialogue": [
         {
           "speaker": "Customer",
@@ -101,22 +103,23 @@
     },
     {
       "index": 3,
-      "text": "You know what's even more generous? I see where you're going.",
+      "text": "You know what's even more generous? / I see where you're going.",
       "characters": [
-        "Unknown characters"
+        "Joey",
+        "Ross"
       ],
       "joke_types": [
         "misdirection",
-        "reaction_beat"
+        "deadpan_understatement"
       ],
-      "setup": "Setting up another escalation",
-      "punchline": "Character cuts off the pattern before it gets absurd",
-      "craft_total": 6.15,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Joey begins escalating the tip percentage argument again.",
+      "punchline": "Ross cuts him off with 'I see where you're going' \u2014 the interruption itself is the joke, as Ross refuses to let the absurd logic continue.",
+      "craft_total": 6.6,
+      "impact_score": 6.17,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Nice subversion of expected escalation. Economical and well-structured.",
+      "is_callback": 1,
+      "explanation": "The economy here is excellent \u2014 the punchline is essentially a non-verbal interruption rendered in dialogue. It caps the tip escalation gag cleanly without overstaying its welcome.",
       "dialogue": [
         {
           "speaker": "",
@@ -126,22 +129,22 @@
     },
     {
       "index": 4,
-      "text": "I'm down to, like, three. Actually, two, because one of them I blackened some teeth. Why'd I do that?",
+      "text": "Actually, two, because one of them I blackened some teeth. Why'd I do that?",
       "characters": [
         "Joey"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "absurdist"
       ],
-      "setup": "Joey needs headshots, has very few left",
-      "punchline": "Reveals he vandalized his own headshot for no reason",
-      "craft_total": 6.8,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Joey is lamenting he's down to only three headshots.",
+      "punchline": "He then immediately corrects himself \u2014 he defaced one by blacking out teeth \u2014 and then baffles himself with his own past decision.",
+      "craft_total": 7.52,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Joey moment - doing something stupid and being confused by his own actions. Strong character integration.",
+      "explanation": "Excellent character work. The double-beat \u2014 the absurd fact (blackened teeth on a professional headshot) PLUS Joey's self-bewilderment at his own action \u2014 is very well constructed. Only Joey could deliver this naturally. The 'Why'd I do that?' is the kicker that elevates it beyond a simple joke.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -167,22 +170,22 @@
     },
     {
       "index": 5,
-      "text": "It helps if you've got a little of this going on.",
+      "text": "Or, you know, I used to beg for money. It helps if you've got a little of this going on.",
       "characters": [
-        "Unknown character"
+        "Phoebe"
       ],
       "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
+        "character_comedy",
+        "visual_gag"
       ],
-      "setup": "Discussing begging for money",
-      "punchline": "Character demonstrates pathetic begging posture/expression",
-      "craft_total": 4.75,
-      "impact_score": 5.0,
-      "quotability": 3.0,
+      "setup": "The group discusses ways Joey could earn extra money. Phoebe offers the suggestion of begging.",
+      "punchline": "Phoebe demonstrates her 'pitiful beggar face' \u2014 a physical expression implying she was actually good at this \u2014 played completely straight.",
+      "craft_total": 6.74,
+      "impact_score": 6.67,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Visual gag about looking pathetic. Mildly funny but not original.",
+      "explanation": "Classic Phoebe \u2014 the fact that she has a practiced beggar face, delivered without irony, is perfectly in character with her bohemian past. The visual component (her actually making the face) is what sells it.",
       "dialogue": [
         {
           "speaker": "Unknown character",
@@ -198,20 +201,20 @@
       "index": 6,
       "text": "Wow! I still have it.",
       "characters": [
-        "Unknown character"
+        "Phoebe"
       ],
       "joke_types": [
-        "reaction_beat",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "After demonstrating pathetic begging look",
-      "punchline": "Character is proud of ability to look pathetic",
-      "craft_total": 5.75,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Phoebe demonstrates her pitiful beggar face for the group.",
+      "punchline": "She appraises herself with pride \u2014 'I still have it' \u2014 treating the ability to look pitifully beggarly as a desirable skill worth maintaining.",
+      "craft_total": 7.35,
+      "impact_score": 6.75,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good follow-up to previous joke. Character being proud of pathetic skill is amusing.",
+      "is_callback": 1,
+      "explanation": "The two-word punchline 'I still have it' works because it's the exact self-congratulatory phrase you'd use for a talent \u2014 applied to something absurd. Economy is nearly perfect.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -221,22 +224,22 @@
     },
     {
       "index": 7,
-      "text": "Finally, an explanation.",
+      "text": "I used to get paid for all kinds of medical stuff. Let's see... Well, I don't want to donate sperm again.",
       "characters": [
-        "Unknown character"
+        "Joey"
       ],
       "joke_types": [
-        "reaction_beat",
-        "deadpan_understatement"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Joey mentions medical experiments",
-      "punchline": "Deadpan suggestion this explains Joey's oddness",
-      "craft_total": 6.75,
+      "setup": "Joey recalls participating in medical experiments for money.",
+      "punchline": "He casually mentions he's already donated sperm before \u2014 and then, just as casually, rules it out again.",
+      "craft_total": 6.78,
       "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent deadpan callback to Joey's general weirdness. Economical and character-specific.",
+      "explanation": "Joey casually dismissing sperm donation \u2014 a significant personal act \u2014 as one item on a mundane to-do list is very Joey. The 'Well, I don't want to...' framing implies he considered it seriously before ruling it out.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -255,16 +258,17 @@
         "Joey"
       ],
       "joke_types": [
+        "wordplay_pun",
         "character_comedy"
       ],
-      "setup": "Joey mentions not wanting to donate sperm again",
-      "punchline": "Euphemistic reference to masturbating at home",
-      "craft_total": 6.35,
-      "impact_score": 6.0,
+      "setup": "Joey says he doesn't want to donate sperm again.",
+      "punchline": "He adds 'I really prefer doing that at the home office' \u2014 a euphemism that lands as both crude and weirdly corporate at the same time.",
+      "craft_total": 7.4,
+      "impact_score": 7.33,
       "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Clever euphemism that sounds professional. Classic Joey mixing crude with innocent phrasing.",
+      "is_callback": 1,
+      "explanation": "The juxtaposition of 'home office' (professional, businesslike) with the act being referenced is clever wordplay. Joey's deadpan delivery of corporate language for something primal is perfectly on-brand.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -274,21 +278,23 @@
     },
     {
       "index": 9,
-      "text": "Do it?",
+      "text": "Joey? What did I tell you about talking while working? / Do it?",
       "characters": [
-        "Joey"
+        "Joey",
+        "Gunther"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Boss asks what Joey was told about talking while working",
-      "punchline": "Joey completely misunderstood the instruction",
-      "craft_total": 6.85,
-      "impact_score": 7.0,
-      "quotability": 4.0,
+      "setup": "Gunther reprimands Joey for chatting instead of working, as a customer has been waiting.",
+      "punchline": "Joey's response \u2014 'Do it?' \u2014 reveals he genuinely internalized 'talk while working' as an instruction TO do it, not to stop.",
+      "craft_total": 6.93,
+      "impact_score": 6.67,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Joey stupidity in one word. Maximum economy with strong character integration.",
+      "explanation": "Classic Joey obtuseness. The one-word question 'Do it?' is a perfectly economical punchline. It simultaneously confirms he was told this before and that he consistently misunderstood. The dramatic irony of Gunther being his boss is also funny.",
       "dialogue": [
         {
           "speaker": "Boss",
@@ -312,20 +318,20 @@
       "index": 10,
       "text": "Kicking a guy in the crotch all morning really takes it out of you.",
       "characters": [
-        "Rachel or Phoebe"
+        "Rachel"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "physical_slapstick"
+        "wordplay_pun",
+        "observational"
       ],
-      "setup": "Explaining they went to self-defense class",
-      "punchline": "Phrasing suggests they're the ones who are tired from attacking",
-      "craft_total": 5.95,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Rachel and Monica return exhausted from their self-defense class.",
+      "punchline": "'Takes it out of you' \u2014 an unintentional (or very intentional) double entendre about groin-kicking being exhausting.",
+      "craft_total": 6.4,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good reversal of expectation - they're tired from being the attackers, not victims.",
+      "explanation": "A solid pun \u2014 the double meaning of 'takes it out of you' vis-\u00e0-vis crotch-kicking is funny on its face. Not particularly deep character comedy but the accidental-sounding delivery makes it work.",
       "dialogue": [
         {
           "speaker": "Rachel or Phoebe",
@@ -339,22 +345,22 @@
     },
     {
       "index": 11,
-      "text": "Takes it out of you?",
+      "text": "Takes it out of you? [Ross reacts with visible amusement/disbelief at the unintended double meaning]",
       "characters": [
         "Ross"
       ],
       "joke_types": [
         "reaction_beat",
-        "deadpan_understatement"
+        "wordplay_pun"
       ],
-      "setup": "Previous line about being tired from kicking crotches",
-      "punchline": "Ross's incredulous reaction to the phrasing",
-      "craft_total": 5.25,
-      "impact_score": 5.0,
+      "setup": "Rachel says kicking a guy in the crotch 'really takes it out of you.'",
+      "punchline": "Ross's reaction acknowledges the double entendre Rachel apparently didn't notice.",
+      "craft_total": 5.68,
+      "impact_score": 5.67,
       "quotability": 3.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Simple reaction beat. Ross being the straight man to absurd phrasing.",
+      "is_callback": 1,
+      "explanation": "The reaction beat extends joke 10 \u2014 Ross serving as the audience surrogate who notices what Rachel didn't. Functional but not adding much new comedy beyond acknowledging the previous joke.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -364,21 +370,23 @@
     },
     {
       "index": 12,
-      "text": "Isn't that a kind of sushi?",
+      "text": "Now we can kick anybody's ass. After one class? I don't think so.",
       "characters": [
-        "Rachel or Phoebe"
+        "Monica",
+        "Ross"
       ],
       "joke_types": [
-        "observational"
+        "irony_sarcasm",
+        "setup_punchline"
       ],
-      "setup": "Ross introduces mystical concept of 'unagi'",
-      "punchline": "Character immediately identifies it as food",
-      "craft_total": 7.2,
-      "impact_score": 8.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Monica boasts that after one self-defense class, she and Rachel can kick anyone's ass.",
+      "punchline": "Ross immediately deflates the claim with common-sense skepticism.",
+      "craft_total": 5.58,
+      "impact_score": 5.0,
+      "quotability": 3.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deflation of Ross's pretentious martial arts moment. Sets up the entire episode's running gag.",
+      "explanation": "Functional setup for the unagi storyline \u2014 Ross being the voice of reason before introducing his own (equally absurd) theory. Standard sitcom straight-man/boaster beat.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -392,21 +400,22 @@
     },
     {
       "index": 13,
-      "text": "Yeah, it is. It's freshwater eel.",
+      "text": "It's what the Japanese call unagi.",
       "characters": [
-        "Rachel or Phoebe"
+        "Ross"
       ],
       "joke_types": [
-        "escalation"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Previous character said unagi is sushi",
-      "punchline": "Confidently providing specific food knowledge",
-      "craft_total": 6.2,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Ross claims karate expertise and is building to some profound Eastern wisdom.",
+      "punchline": "He introduces 'unagi' with great gravitas \u2014 which the audience (and Monica/Rachel) immediately suspects is not what he thinks it is.",
+      "craft_total": 7.39,
+      "impact_score": 6.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalation of food knowledge, further deflating Ross's mystical concept.",
+      "explanation": "The setup of the episode's A-plot. Ross's pedantic gravitas \u2014 'what the Japanese call...' \u2014 when introducing a concept that is (as we immediately learn) a sushi item, is perfectly Ross. His academic self-seriousness is the core comedic engine of this entire subplot.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -424,21 +433,24 @@
     },
     {
       "index": 14,
-      "text": "I would kill for a salmon-skin roll right now.",
+      "text": "Isn't that a kind of sushi? / No, it's a concept. / Yeah, it is. It's freshwater eel.",
       "characters": [
-        "Rachel or Phoebe"
+        "Rachel",
+        "Ross",
+        "Monica"
       ],
       "joke_types": [
-        "escalation"
+        "setup_punchline",
+        "irony_sarcasm"
       ],
-      "setup": "Discussing sushi after Ross's martial arts lecture",
-      "punchline": "Completely abandoning martial arts topic for food craving",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Ross introduces 'unagi' as a profound martial arts concept.",
+      "punchline": "Rachel immediately correctly identifies it as sushi; Ross denies it; Monica confirms Rachel \u2014 it IS freshwater eel.",
+      "craft_total": 7.94,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Nice derailment of serious conversation into food craving. Typical Friends tangent humor.",
+      "explanation": "One of the episode's signature moments. The structure is perfect: Ross's pompous setup, Rachel's correct but seemingly naive guess, Ross's dismissal, then Monica's confirmation that Rachel was right. The three-beat structure escalates beautifully. It deflates Ross's academic pretension in a single exchange and sets up the entire episode's comedic thesis \u2014 Ross is wrong and he knows everything. Easily scores 8+.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -456,21 +468,22 @@
     },
     {
       "index": 15,
-      "text": "In case someone's trying to steal your bamboo sleeping mat... or your kettle of fish?",
+      "text": "Maybe it means that too.",
       "characters": [
-        "Rachel or Phoebe"
+        "Ross"
       ],
       "joke_types": [
-        "absurdist"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Ross explains unagi protects from danger",
-      "punchline": "Mocking with stereotypical Japanese items",
-      "craft_total": 5.6,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Mocking Ross's pseudo-mystical martial arts with Asian stereotypes. Somewhat dated humor.",
+      "setup": "Monica has just confirmed that 'unagi' literally means freshwater eel in Japanese.",
+      "punchline": "Ross refuses to admit defeat, suggesting it might have multiple meanings \u2014 a transparently desperate save.",
+      "craft_total": 7.59,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Four words of perfect character comedy. 'Maybe it means that too' is Ross refusing to concede while his dignity crumbles \u2014 consistent with his character's inability to admit fault. The economy is exceptional; this could have been a full speech but it's delivered as a tiny lifeboat of denial.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -496,22 +509,22 @@
     },
     {
       "index": 16,
-      "text": "Surprise! [Ross attacking the women]",
+      "text": "I would kill for a salmon-skin roll right now.",
       "characters": [
-        "Ross"
+        "Rachel"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "cringe_discomfort"
+        "misdirection",
+        "character_comedy"
       ],
-      "setup": "Ross lecturing about being prepared for surprise attacks",
-      "punchline": "Ross physically demonstrating by attacking them",
-      "craft_total": 6.8,
-      "impact_score": 7.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Ross taking things too far. Physical comedy that's both awkward and character-appropriate.",
+      "setup": "Ross is trying to hold court on the serious subject of unagi/total awareness.",
+      "punchline": "Rachel completely derails the moment by thinking about food \u2014 specifically sushi \u2014 triggered by their discussion of freshwater eel.",
+      "craft_total": 7.44,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect comic deflation. The word association from 'freshwater eel' to 'salmon-skin roll' is both funny and character-consistent for Rachel (foodie, easily distracted). It also perfectly sabotages Ross's self-important lecture. This line became a fan-quoted moment from this episode.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -525,21 +538,22 @@
     },
     {
       "index": 17,
-      "text": "If we made reservations, we could have unagi in a half-hour.",
+      "text": "Unagi is a state of total awareness. Only by achieving true unagi can you be prepared for any danger that may befall you.",
       "characters": [
-        "Rachel or Phoebe"
+        "Ross"
       ],
       "joke_types": [
-        "callback"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Ross continues martial arts lecture about unagi",
-      "punchline": "Returning to food interpretation after his demonstration",
-      "craft_total": 7.2,
-      "impact_score": 8.0,
-      "quotability": 8.0,
+      "setup": "Ross proceeds with his pompous martial arts lecture despite having just been told 'unagi' means eel.",
+      "punchline": "He delivers the definition with absolute straight-faced sincerity and faux-Eastern wisdom, completely ignoring what just happened.",
+      "craft_total": 7.05,
+      "impact_score": 6.25,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect callback that deflates Ross's entire demonstration. Great timing and economy.",
+      "is_callback": 0,
+      "explanation": "Ross's ability to compartmentalize his humiliation and barrel forward with the speech is classic Geller. The faux-mystical language ('may befall you') is funny because it's so overwritten. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -561,22 +575,22 @@
     },
     {
       "index": 18,
-      "text": "Valentine's Day was two weeks ago, so I wouldn't get her a calendar.",
+      "text": "In case someone's trying to steal your bamboo sleeping mat... or your kettle of fish?",
       "characters": [
-        "Chandler"
+        "Monica"
       ],
       "joke_types": [
         "irony_sarcasm",
-        "deadpan_understatement"
+        "character_comedy"
       ],
-      "setup": "Someone asks for Valentine's Day gift help",
-      "punchline": "Sarcastic suggestion about getting a calendar",
-      "craft_total": 6.95,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Ross explains that unagi prepares you for 'any danger that may befall you.'",
+      "punchline": "Monica's mock-ancient stereotypes ('bamboo sleeping mat,' 'kettle of fish') skewer Ross's appropriated Eastern wisdom as a clich\u00e9.",
+      "craft_total": 6.89,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Chandler sarcasm. Perfect character voice and economical delivery.",
+      "explanation": "Monica's sarcasm here is well-constructed \u2014 she's mocking both the concept AND the cultural appropriation implicit in Ross's lecture. The specificity of 'kettle of fish' is particularly funny.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -586,21 +600,22 @@
     },
     {
       "index": 19,
-      "text": "And, of course, crotchless panties.",
+      "text": "It's one thing being prepared for an attack against each other. Whole other story being prepared for an attack. I don't know.. Surprise! [Ross jumps out and attacks them]",
       "characters": [
-        "Joey"
+        "Ross"
       ],
       "joke_types": [
-        "absurdist"
+        "physical_slapstick",
+        "escalation"
       ],
-      "setup": "Discussing romantic spa day suggestions",
-      "punchline": "Joey adds inappropriate sexual suggestion",
-      "craft_total": 5.3,
-      "impact_score": 5.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Ross is lecturing Monica and Rachel about the limits of their self-defense training versus true 'unagi.'",
+      "punchline": "He suddenly yells 'SURPRISE!' and physically ambushes them from behind a wall \u2014 proving his point with a dramatic (and ridiculous) physical demonstration.",
+      "craft_total": 7.11,
+      "impact_score": 7.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Typical Joey sexual non-sequitur. In character but not particularly clever.",
+      "explanation": "The physical escalation is very well earned. Ross goes from pseudo-wise lecture to literally ambushing two women \u2014 the contrast between his academic self-seriousness and this chaotic physical act is what makes it land. The build ('it's one thing... whole other story...') is structurally sound.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -614,21 +629,22 @@
     },
     {
       "index": 20,
-      "text": "As appealing as that sounds to her boyfriend... and her brother...",
+      "text": "You knew that was coming... but that doesn't mean you have unagi.",
       "characters": [
         "Ross"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Joey suggests crotchless panties for Monica",
-      "punchline": "Ross awkwardly noting he's both boyfriend and brother",
-      "craft_total": 7.8,
-      "impact_score": 8.5,
-      "quotability": 6.0,
+      "setup": "Monica and Rachel prepared for Ross's attack after he telegraphed it.",
+      "punchline": "Ross immediately moves the goalposts \u2014 their preparedness doesn't count because they 'knew it was coming,' undermining his own demonstration.",
+      "craft_total": 6.92,
+      "impact_score": 6.33,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliantly awkward acknowledgment of the uncomfortable dynamic. Perfect cringe comedy with the pause.",
+      "is_callback": 1,
+      "explanation": "Brilliant Ross moment \u2014 he attacks, they're ready, so he immediately discredits their preparedness. It's the comedic logic of someone who can never be proven wrong. Very character-specific and consistent with his insufferable-academic persona.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -638,21 +654,22 @@
     },
     {
       "index": 21,
-      "text": "You can't make crotchless panties? You take scissors and cut..",
+      "text": "If we made reservations, we could have unagi in a half-hour.",
       "characters": [
-        "Joey"
+        "Rachel"
       ],
       "joke_types": [
-        "character_comedy"
+        "callback",
+        "misdirection"
       ],
-      "setup": "Discussion about making gifts vs buying them",
-      "punchline": "Joey offers practical DIY advice for inappropriate gift",
-      "craft_total": 5.65,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Joey being helpful in completely inappropriate way. Character-consistent but crude.",
+      "setup": "Ross is lecturing seriously about unagi as a spiritual concept.",
+      "punchline": "Rachel brings the conversation back to sushi \u2014 treating 'unagi' purely as a menu item and cutting through Ross's pseudo-wisdom.",
+      "craft_total": 7.73,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The best callback of the episode. 'If we made reservations, we could have unagi in a half-hour' is the perfect button on the unagi-as-sushi running gag. It's a complete, self-contained joke that also works as the ultimate deflation of Ross's pomposity. Earns its 8+ for structure, economy, and quotability \u2014 this line is what gets clipped on YouTube.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -678,21 +695,22 @@
     },
     {
       "index": 22,
-      "text": "I thought so too, until I papier-mached one of my eyes shut.",
+      "text": "Valentine's Day was two weeks ago, so I wouldn't get her a calendar.",
       "characters": [
-        "Phoebe"
+        "Ross"
       ],
       "joke_types": [
-        "character_comedy"
+        "setup_punchline",
+        "deadpan_understatement"
       ],
-      "setup": "Someone says making things sounds fun",
-      "punchline": "Phoebe's craft project disaster",
-      "craft_total": 6.95,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "Chandler asks Monica's friends for Valentine's Day gift advice, saying he doesn't know what to get her.",
+      "punchline": "Ross's literal-minded and unhelpfully pedantic response \u2014 suggesting a calendar is a bad gift because the date has passed \u2014 is perfectly dry.",
+      "craft_total": 7.13,
+      "impact_score": 6.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Phoebe mishap - specific, absurd, and completely believable for her character.",
+      "explanation": "Classic Ross pedantry redirected at Chandler. The joke works because it's technically useful advice (don't get a calendar if the holiday passed) while being completely useless in context. Good economy.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -710,21 +728,22 @@
     },
     {
       "index": 23,
-      "text": "I made a flar-lar-lar.",
+      "text": "And, of course, crotchless panties.",
       "characters": [
         "Phoebe"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Asked what she made with papier-mache",
-      "punchline": "Phoebe's made-up word for her creation",
-      "craft_total": 7.55,
-      "impact_score": 7.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "The gang is offering romantic Valentine's Day gift ideas for Monica.",
+      "punchline": "Phoebe adds 'crotchless panties' to the list of romantic ideas with the same casual confidence she'd suggest flowers.",
+      "craft_total": 6.37,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Quintessential Phoebe nonsense word. Highly quotable and perfectly in character.",
+      "explanation": "Phoebe's breezy delivery of an unexpected suggestion lands because of the 'of course' \u2014 framing it as obvious. The joke isn't the suggestion itself but the casual confidence with which she makes it.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -734,21 +753,22 @@
     },
     {
       "index": 24,
-      "text": "Oh, for crying out loud!",
+      "text": "As appealing as that sounds to her boyfriend... and her brother...",
       "characters": [
-        "Monica"
+        "Ross"
       ],
       "joke_types": [
-        "reaction_beat"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Ross mentions Phoebe making sock bunnies",
-      "punchline": "Monica's exasperated reaction",
-      "craft_total": 4.45,
-      "impact_score": 4.0,
-      "quotability": 2.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard reaction. In character but not particularly funny.",
+      "setup": "Phoebe suggests crotchless panties as a gift for Monica.",
+      "punchline": "Ross acknowledges his dual role (ex-boyfriend of Rachel, but also Monica's BROTHER) \u2014 the second part landing as the actual punchline, implying a deeply uncomfortable level of consideration of Monica's lingerie.",
+      "craft_total": 7.96,
+      "impact_score": 8.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the strongest jokes of the episode. The structure is a perfect double-beat: 'her boyfriend' (expected) then the pause and 'her brother' (unexpected and deeply uncomfortable). Only Ross Geller, Monica's brother, could deliver this. The beat between the two clauses is where the laugh lives. High character integration score is fully justified.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -758,21 +778,23 @@
     },
     {
       "index": 25,
-      "text": "Wait a minute. That is my sock!",
+      "text": "We promised to make each other gifts this year. / You can't make crotchless panties? / You take scissors and cut..",
       "characters": [
-        "Monica"
+        "Chandler",
+        "Phoebe"
       ],
       "joke_types": [
-        "escalation"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Ross showing off sock bunny Phoebe made",
-      "punchline": "Monica realizes Phoebe stole her sock",
-      "craft_total": 5.95,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Chandler explains they agreed to make each other gifts.",
+      "punchline": "Phoebe provides immediately practical DIY instructions for crotchless panties \u2014 scissors and cutting \u2014 undercutting the romance of handmade gifts.",
+      "craft_total": 6.84,
+      "impact_score": 6.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation reveal. Monica's possessiveness coming through.",
+      "is_callback": 1,
+      "explanation": "The joke is in Phoebe's immediate, helpful practicality \u2014 she doesn't see why this is awkward. 'You take scissors and cut..' is funnier for being interrupted, as though the method is so obvious it doesn't need completion. Good extension of the gag.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -798,21 +820,22 @@
     },
     {
       "index": 26,
-      "text": "Now it's your little bunny friend.",
+      "text": "I thought so too, until I papier-mached one of my eyes shut.",
       "characters": [
-        "Phoebe"
+        "Chandler"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Monica upset about sock theft",
-      "punchline": "Phoebe casually reframing theft as gift-giving",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Phoebe says making things sounds fun.",
+      "punchline": "Chandler reveals he attempted papier-m\u00e2ch\u00e9 and accidentally glued his eye shut \u2014 an absurdly specific and self-defeating creative failure.",
+      "craft_total": 7.49,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Phoebe deflection. Sweet tone masking the theft with innocent reframing.",
+      "explanation": "Very well constructed. 'Papier-mached one of my eyes shut' is specific, visual, and deeply pathetic in the best sitcom sense. It tells you everything about Chandler's domestic incompetence without overexplaining.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -826,21 +849,23 @@
     },
     {
       "index": 27,
-      "text": "This actually is a flar-lar-lar.",
+      "text": "I love papier-mache! What did you make? / I made a flar-lar-lar. / What is that? / Nothing!",
       "characters": [
-        "Phoebe"
+        "Phoebe",
+        "Chandler"
       ],
       "joke_types": [
-        "callback"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Earlier established flar-lar-lar as nonsense word",
-      "punchline": "Phoebe revealing her creation actually matches the nonsense name",
-      "craft_total": 7.2,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Phoebe excitedly asks what Chandler made with papier-m\u00e2ch\u00e9.",
+      "punchline": "Chandler invents a nonsense word ('flar-lar-lar') to avoid saying what it actually is, then immediately admits it's 'nothing' \u2014 implying a failed or embarrassing creation.",
+      "craft_total": 7.58,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Good callback that makes the nonsense word somehow make sense in Phoebe's world.",
+      "is_callback": 0,
+      "explanation": "'Flar-lar-lar' is a genuinely original comedic invention \u2014 a made-up word that sounds like a panicked cover-up. The beat from nonsense word to 'Nothing!' is perfectly timed. The joke works because the audience's imagination fills in what the failed craft project actually was (almost certainly a very bad attempt at something for Monica).",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -854,21 +879,23 @@
     },
     {
       "index": 28,
-      "text": "I can't believe it! Make the presents!",
+      "text": "Have you made anything I can take credit for? / I have, I have! I started making little sock bunnies!",
       "characters": [
-        "Chandler"
+        "Chandler",
+        "Phoebe"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Chandler realizes he forgot to make Monica a gift",
-      "punchline": "Trying to cover panic with fake enthusiasm",
-      "craft_total": 5.8,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Chandler desperately asks if anyone has made something he can claim as his own Valentine's gift.",
+      "punchline": "Phoebe enthusiastically offers her 'little sock bunnies' \u2014 an obviously craft-fair-mom project that is completely wrong as a romantic gift from Chandler to Monica.",
+      "craft_total": 6.22,
+      "impact_score": 6.0,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard panic recovery attempt. Chandler's awkwardness showing through.",
+      "explanation": "Decent setup for the sock bunny running gag. The gap between what a romantic Valentine's gift should be and 'little sock bunnies' is the joke. Phoebe's enthusiasm vs. Chandler's desperation is well-matched.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -878,21 +905,23 @@
     },
     {
       "index": 29,
-      "text": "Just so excited to make the presents!",
+      "text": "Oh, for crying out loud! / Wait a minute. That is my sock! / Now it's your little bunny friend.",
       "characters": [
-        "Chandler"
+        "Chandler",
+        "Phoebe"
       ],
       "joke_types": [
+        "physical_slapstick",
         "character_comedy"
       ],
-      "setup": "Continuing to cover up his panic",
-      "punchline": "Obvious overcompensation with fake enthusiasm",
-      "craft_total": 4.8,
-      "impact_score": 5.0,
-      "quotability": 3.0,
+      "setup": "Phoebe shows Chandler a sock bunny she is mid-construction.",
+      "punchline": "Chandler recognizes it as HIS sock \u2014 Phoebe has apparently taken his sock without asking and is converting it into a craft project. 'Now it's your little bunny friend' is her completely unapologetic response.",
+      "craft_total": 6.25,
+      "impact_score": 6.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Continuation of previous joke. Diminishing returns on the panic cover-up.",
+      "is_callback": 1,
+      "explanation": "'Now it's your little bunny friend' is the best line in this exchange \u2014 Phoebe's total lack of guilt about sock theft, combined with the condescendingly sweet framing of his property as a 'friend,' is very Phoebe.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -902,21 +931,22 @@
     },
     {
       "index": 30,
-      "text": "Hi, I'm Joey Tribbiani. With all due respect, I'd like to donate some fluids.",
+      "text": "This actually is a flar-lar-lar. [Chandler shows Monica what he made \u2014 a visually awful craft project]",
       "characters": [
-        "Joey"
+        "Chandler"
       ],
       "joke_types": [
-        "character_comedy"
+        "callback",
+        "visual_gag"
       ],
-      "setup": "Joey entering medical research facility",
-      "punchline": "Overly formal introduction for crude request",
-      "craft_total": 7.05,
-      "impact_score": 7.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Joey mix of trying to be polite while being crude. The formal 'with all due respect' makes it funnier.",
+      "setup": "Earlier Chandler denied knowing what a 'flar-lar-lar' is.",
+      "punchline": "He now confirms it's a real (failed) creation \u2014 the visual of whatever he actually made being so bad it has no recognizable name.",
+      "craft_total": 7.5,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent callback payoff. The reveal that it IS a 'flar-lar-lar' (i.e., a thing so bad it has no real name) works because the word itself sounds like something shapeless and unidentifiable. The visual of the actual object makes this land even harder in the room.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -942,21 +972,22 @@
     },
     {
       "index": 31,
-      "text": "That's too bad. I've been saving up.",
+      "text": "I just have to go to the place where I made it and pick it up. [Monica clearly bought something at a store rather than making it herself]",
       "characters": [
-        "Joey"
+        "Monica"
       ],
       "joke_types": [
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Told they're not accepting applicants",
-      "punchline": "Joey implies he's been storing bodily fluids",
-      "craft_total": 6.35,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Monica and Chandler agreed to make each other Valentine's gifts. Monica asks if Chandler has forgotten.",
+      "punchline": "Monica's response \u2014 'I just have to go to the place where I made it and pick it up' \u2014 is transparently a store, not a crafting location. She's lying about having made anything.",
+      "craft_total": 6.87,
+      "impact_score": 6.67,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Gross but economical. Joey's innocent delivery makes the innuendo funnier.",
+      "explanation": "The circumlocution 'go to the place where I made it and pick it up' is brilliantly written \u2014 it's technically true of a factory, completely false in spirit, and an exact representation of Monica's control-freak perfectionism refusing to admit a crafting failure.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -966,21 +997,23 @@
     },
     {
       "index": 32,
-      "text": "Testing the Effects of Joey Tribbiani on Attractive Nurse Receptionist.",
+      "text": "I can't believe it! Make the presents! / What? / Just so excited to make the presents!",
       "characters": [
-        "Joey"
+        "Monica",
+        "Chandler"
       ],
       "joke_types": [
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Joey reading study titles",
-      "punchline": "Joey makes up study about his own attractiveness",
-      "craft_total": 7.15,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "Chandler has apparently just realized Monica hasn't made anything either, and Monica realizes he noticed.",
+      "punchline": "Monica's overcorrection \u2014 screaming enthusiasm about 'making the presents' in an obvious fake-out \u2014 is a classic panic move that reveals exactly what she's trying to hide.",
+      "craft_total": 6.48,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Joey ego moment. Making up a scientific study about his own appeal is exactly what he'd do.",
+      "explanation": "Solid character comedy \u2014 Monica's competitive perfectionism turned inward makes her a terrible liar, and her frantic cover-up is funnier than a smooth one would be. Standard sitcom beats but executed well.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -994,21 +1027,22 @@
     },
     {
       "index": 33,
-      "text": "Results are back on that one. They're not good.",
+      "text": "Hi, I'm Joey Tribbiani. With all due respect, I'd like to donate some fluids.",
       "characters": [
-        "Receptionist"
+        "Joey"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Joey's made-up study about his attractiveness",
-      "punchline": "Receptionist plays along with devastating results",
-      "craft_total": 7.2,
-      "impact_score": 8.0,
+      "setup": "Joey approaches a medical research receptionist hoping to participate in studies for money.",
+      "punchline": "'With all due respect, I'd like to donate some fluids' \u2014 the formal opening phrase applied to this utterly informal and inappropriate request is the gag.",
+      "craft_total": 7.23,
+      "impact_score": 6.83,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent comeback that deflates Joey's ego perfectly. Great straight-man delivery.",
+      "explanation": "'With all due respect' is a formal business phrase Joey applies to bodily fluid donation \u2014 the collision of registers is funny and very Joey. He treats this like a professional pitch meeting.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1022,21 +1056,22 @@
     },
     {
       "index": 34,
-      "text": "What the hell was that?",
+      "text": "That's too bad. I've been saving up.",
       "characters": [
-        "Rachel or Phoebe"
+        "Joey"
       ],
       "joke_types": [
-        "reaction_beat"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Ross just surprised attacked them making siren sounds",
-      "punchline": "Incredulous reaction to Ross's bizarre behavior",
-      "craft_total": 4.9,
-      "impact_score": 5.0,
-      "quotability": 3.0,
+      "setup": "The receptionist tells Joey they're not looking for new research participants.",
+      "punchline": "Joey reveals he's been 'saving up' his bodily fluids \u2014 a casually delivered line that implies disturbing levels of preparation for fluid donation.",
+      "craft_total": 7.34,
+      "impact_score": 7.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard shocked reaction. Functional but not particularly clever.",
+      "explanation": "Four words, maximum impact. 'I've been saving up' is funnier than any longer explanation would be. Joey's casual delivery of something profoundly strange is perfect economy.",
       "dialogue": [
         {
           "speaker": "Rachel",
@@ -1050,21 +1085,23 @@
     },
     {
       "index": 35,
-      "text": "A lesson in the importance of unagi.",
+      "text": "\"Testing the Effects of Joey Tribbiani on Attractive Nurse Receptionist.\" / Results are back on that one. They're not good.",
       "characters": [
-        "Ross"
+        "Joey",
+        "Nurse/Receptionist"
       ],
       "joke_types": [
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Asked to explain his bizarre attack",
-      "punchline": "Ross treating his assault as educational",
-      "craft_total": 6.55,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good character moment - Ross being pretentious about his inappropriate behavior.",
+      "setup": "Joey scans the schedule of medical studies, finding one he invents on the spot.",
+      "punchline": "The receptionist calmly informs him the results of that (fictional) study are already in \u2014 and they're not good \u2014 a perfect deadpan denial.",
+      "craft_total": 8.02,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Excellent structure. Joey's flirtatious improvised study title is immediately deflated by the receptionist playing along with the fiction JUST ENOUGH to reject him. 'Results are back on that one. They're not good.' is devastating in its calm delivery. The joke works on two levels: it's a rejection AND a commentary on Joey's charm not working.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1074,21 +1111,22 @@
     },
     {
       "index": 36,
-      "text": "At what point during those girlish screams would you have kicked my ass?",
+      "text": "Danger! Danger! [Ross jumps out at Rachel and Monica in the hallway]",
       "characters": [
         "Ross"
       ],
       "joke_types": [
-        "escalation"
+        "physical_slapstick",
+        "running_gag"
       ],
-      "setup": "Women claim they could kick his ass",
-      "punchline": "Ross mocking their reaction to his surprise attack",
-      "craft_total": 6.6,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Ross being obnoxiously smug after his surprise attack. Good escalation of his arrogance.",
+      "setup": "Ross is on a campaign to prove Monica and Rachel lack 'unagi' by ambushing them.",
+      "punchline": "He jumps out from somewhere (presumably a hiding spot) shouting 'Danger! Danger!' \u2014 the earnestness of a grown man stalking his friends in the name of karate philosophy.",
+      "craft_total": 6.5,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The running gag of Ross ambushing people escalates satisfyingly. The sheer commitment of shouting 'DANGER! DANGER!' as a warning/attack hybrid is funny precisely because it's self-defeating \u2014 if you warn of danger, you lose the element of surprise you're trying to demonstrate.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1118,21 +1156,23 @@
     },
     {
       "index": 37,
-      "text": "Danger!",
+      "text": "You're a freak! / Perhaps. / Now I'm curious. At what point during those girlish screams would you have kicked my ass?",
       "characters": [
-        "Rachel or Phoebe"
+        "Monica",
+        "Ross"
       ],
       "joke_types": [
-        "physical_slapstick"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Ross lecturing them about awareness",
-      "punchline": "They surprise attack Ross while he's being smug",
-      "craft_total": 6.95,
-      "impact_score": 7.5,
-      "quotability": 5.0,
+      "setup": "Monica and Rachel screamed when Ross ambushed them, proving they were NOT prepared.",
+      "punchline": "Ross acknowledges being called a freak ('Perhaps') then smugly points out they screamed like girls instead of fighting back.",
+      "craft_total": 7.18,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect turnabout. Ross gets a taste of his own medicine with great timing.",
+      "is_callback": 1,
+      "explanation": "The 'Perhaps' is the best word \u2014 Ross doesn't even contest being a freak, it's beneath his dignity. Then he pivots immediately to the counter-argument. His smug correctness is very Ross. 'Girlish screams' is the needle-scratch punchline.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1154,21 +1194,22 @@
     },
     {
       "index": 38,
-      "text": "Ah-ha! Unagi!",
+      "text": "Danger! [Ross jumps at them again, later in the episode \u2014 different ambush]",
       "characters": [
-        "Rachel or Phoebe"
+        "Ross"
       ],
       "joke_types": [
-        "callback"
+        "running_gag",
+        "physical_slapstick"
       ],
-      "setup": "After attacking Ross",
-      "punchline": "Using his own mystical concept against him",
-      "craft_total": 7.2,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Ross continues his campaign to ambush Monica and Rachel to prove their lack of unagi.",
+      "punchline": "Another jump-scare 'Danger!' \u2014 the running gag has evolved into Ross just creeping around looking for opportunities.",
+      "craft_total": 7.13,
+      "impact_score": 7.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Perfect callback that turns Ross's pretentious concept against him. Great payoff.",
+      "explanation": "Third iteration of the attack gag. Still gets a laugh from the running gag momentum but diminishing returns are setting in without an escalating twist. The setup here is the same as before.",
       "dialogue": [
         {
           "speaker": "Phoebe",
@@ -1186,21 +1227,22 @@
     },
     {
       "index": 39,
-      "text": "2000 bucks is a lot of money. I wish I had a twin. Where could I find someone... who looks exactly like me?",
+      "text": "2000 bucks is a lot of money. I wish I had a twin. Where could I find someone who looks exactly like me?",
       "characters": [
         "Joey"
       ],
       "joke_types": [
+        "character_comedy",
         "setup_punchline"
       ],
-      "setup": "Joey wants money from twin study",
-      "punchline": "Not realizing the logical impossibility of finding his identical twin",
-      "craft_total": 6.65,
-      "impact_score": 6.5,
+      "setup": "Joey learns he could earn $2000 in a twin study if only he had an identical twin.",
+      "punchline": "He muses aloud 'Where could I find someone who looks exactly like me?' \u2014 the answer being obvious (another actor, a lookalike) but Joey acts as if this is a profound unsolvable puzzle.",
+      "craft_total": 6.77,
+      "impact_score": 6.67,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good setup for upcoming Carl storyline. Joey's obliviousness to basic genetics is perfect.",
+      "explanation": "Joey treating a problem that has an obvious solution (hire a lookalike actor) as though it's cosmically mysterious is good character work. The setup is good for what follows (the Carl subplot) but as a standalone beat it's moderate.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1226,21 +1268,23 @@
     },
     {
       "index": 40,
-      "text": "Chandler. I sensed it was you.",
+      "text": "Chandler. / I sensed it was you.",
       "characters": [
-        "Ross"
+        "Ross",
+        "Chandler"
       ],
       "joke_types": [
-        "callback"
+        "irony_sarcasm",
+        "running_gag"
       ],
-      "setup": "Chandler entering apartment",
-      "punchline": "Ross claiming mystical awareness of obvious arrival",
-      "craft_total": 6.2,
+      "setup": "Chandler comes to find Ross. Ross greets him before he announces himself.",
+      "punchline": "'I sensed it was you' \u2014 Ross trying to claim his 'unagi' powers extended to sensing Chandler's arrival, playing the mystic card.",
+      "craft_total": 6.39,
       "impact_score": 6.0,
-      "quotability": 5.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Ross continuing his pretentious martial arts phase. Mildly amusing character consistency.",
+      "explanation": "Ross extending 'unagi' to ordinary social situations is consistent and funny. The delivery of 'I sensed it was you' as though it's a demonstration of mystical awareness \u2014 when it's obviously just recognizing a friend \u2014 is a solid beat.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1267,16 +1311,17 @@
         "Chandler"
       ],
       "joke_types": [
-        "callback"
+        "callback",
+        "irony_sarcasm"
       ],
-      "setup": "Ross mentions unagi mysticism",
-      "punchline": "Chandler deflating with food fact",
-      "craft_total": 6.75,
-      "impact_score": 6.5,
+      "setup": "Ross is performing his 'unagi' mysticism for Chandler.",
+      "punchline": "Chandler, clearly already informed about the sushi situation, deflates Ross with the same correction Monica and Rachel used.",
+      "craft_total": 6.69,
+      "impact_score": 6.75,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Good callback delivered in Chandler's deadpan style. Continues deflating Ross's pretensions.",
+      "explanation": "The callback to the eel correction works as a running gag \u2014 by now the audience anticipates the eel correction and enjoys the repetition. Chandler's flat delivery makes it land crisply.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1290,21 +1335,22 @@
     },
     {
       "index": 42,
-      "text": "It's a replica of Apollo 8. I made it in the sixth grade.",
+      "text": "Why don't you make her one of your little jokes?",
       "characters": [
         "Ross"
       ],
       "joke_types": [
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Ross offering homemade item to help Chandler",
-      "punchline": "Revealing it's a childhood school project",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Chandler is panicking about what to make Monica for Valentine's Day.",
+      "punchline": "Ross suggests Chandler make her 'one of your little jokes' \u2014 a withering dismissal of Chandler's sense of humor as a craft item, not a gift.",
+      "craft_total": 6.06,
+      "impact_score": 5.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment - Ross being nerdy enough to keep childhood space projects.",
+      "explanation": "Ross subtly mocking Chandler's humor as not a real skill ('little jokes') is good friend-group comedy. The condescension is affectionate but pointed.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1330,21 +1376,23 @@
     },
     {
       "index": 43,
-      "text": "I could use that. I could say, 'Your love sends me to the moon.'",
+      "text": "I could use that. I could say, 'Your love sends me to the moon.' / Except Apollo 8 didn't actually land on the moon. / You can say, 'Your love lets me orbit the moon twice and return safely.'",
       "characters": [
-        "Chandler"
+        "Chandler",
+        "Ross"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Seeing Ross's Apollo 8 model",
-      "punchline": "Chandler's cheesy romantic interpretation",
-      "craft_total": 5.6,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Ross offers his sixth-grade Apollo 8 model as a romantic gift Chandler could claim. Chandler tries to make it romantic.",
+      "punchline": "Ross's pedantic correction that Apollo 8 only orbited (didn't land), followed by offering the corrected but completely unromantic alternative quote.",
+      "craft_total": 7.77,
+      "impact_score": 7.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Chandler being desperate enough to use cliched romantic line. Mildly amusing.",
+      "explanation": "One of the best jokes in the episode, possibly the whole run. The structure is perfect: Chandler's romantic attempt, Ross's factual correction, then Ross offering the pedantically accurate but tonally catastrophic alternative ('orbit the moon twice and return safely'). It's a pure distillation of Ross's character \u2014 he genuinely thinks the corrected version is acceptable. Only Ross Geller would destroy a romantic gesture with aerospace facts and then be baffled why it doesn't work. Comfortably earns 8+.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1354,21 +1402,23 @@
     },
     {
       "index": 44,
-      "text": "Except Apollo 8 didn't actually land on the moon. You can say, 'Your love lets me orbit the moon twice and return safely.'",
+      "text": "I can't give this to her. / Why not? / It says 'Captain Ross' on the side. / And it says 'I hate Monica' on the bottom.",
       "characters": [
+        "Chandler",
         "Ross"
       ],
       "joke_types": [
+        "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Chandler's moon landing romantic line",
-      "punchline": "Ross correcting with overly specific space facts",
-      "craft_total": 8.05,
+      "setup": "Chandler considers using Ross's childhood Apollo 8 model as his Valentine's gift.",
+      "punchline": "Two disqualifying details emerge: 'Captain Ross' on the side, then \u2014 worse \u2014 'I hate Monica' on the bottom, implying Ross's childhood feelings about his sister.",
+      "craft_total": 8.09,
       "impact_score": 8.5,
       "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Ross moment - pedantically correcting romance with space facts. Excellent character integration and originality.",
+      "explanation": "Classic double-punchline structure. First disqualifier ('Captain Ross') is funny; second ('I hate Monica') is a revelation that escalates beautifully. The childhood sibling rivalry preserved in handwriting on a craft project is a perfect character-history joke. The beat between the two lines is essential \u2014 'and it says 'I hate Monica' on the bottom' landing after a pause earns the bigger laugh.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1386,21 +1436,22 @@
     },
     {
       "index": 45,
-      "text": "I can't give this to her.",
+      "text": "Danger! [Another Ross ambush \u2014 this time at the apartment door, later in the episode]",
       "characters": [
-        "Chandler"
+        "Ross"
       ],
       "joke_types": [
-        "setup_punchline"
+        "running_gag",
+        "physical_slapstick"
       ],
-      "setup": "After Ross's space fact correction",
-      "punchline": "Sets up upcoming revelation about why not",
-      "craft_total": 5.15,
-      "impact_score": 4.0,
-      "quotability": 2.0,
+      "setup": "Continuation of Ross's unagi ambush campaign.",
+      "punchline": "Yet another jump-out attack \u2014 by now the gag is fully established as a bit.",
+      "craft_total": 6.05,
+      "impact_score": 6.5,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Setup line. Functional but not inherently funny.",
+      "is_callback": 1,
+      "explanation": "By this third-or-fourth iteration (depending on count), the gag is on autopilot. It still gets a reaction from running gag momentum, but it's the weakest of the Danger! beats in isolation.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1410,21 +1461,23 @@
     },
     {
       "index": 46,
-      "text": "It says 'Captain Ross' on the side.",
+      "text": "Salmon-skin roll. [Monica and Rachel walk past Ross's hiding spot holding sushi]",
       "characters": [
-        "Chandler"
+        "Rachel",
+        "Monica"
       ],
       "joke_types": [
-        "escalation"
+        "callback",
+        "visual_gag"
       ],
-      "setup": "Explaining why he can't give Ross's model to Monica",
-      "punchline": "Obvious personalization makes it unusable",
-      "craft_total": 6.6,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation - first obvious problem with using Ross's childhood project as gift.",
+      "setup": "Earlier Rachel said 'I would kill for a salmon-skin roll right now' in the middle of Ross's unagi lecture.",
+      "punchline": "The scene cuts to them actually having gotten sushi \u2014 and the visual of the sushi box as they walk past Ross (who is presumably still lecturing/attacking) is the callback payoff.",
+      "craft_total": 8.01,
+      "impact_score": 8.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect economy \u2014 two words ('salmon-skin roll') and a visual do all the work. The callback to Rachel's food distraction now pays off visually. They literally went and got the sushi instead of engaging with Ross's unagi lecture further. It's also a subtle character comment on their priorities. One of the most economical jokes in the episode.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1434,21 +1487,22 @@
     },
     {
       "index": 47,
-      "text": "And it says 'I hate Monica' on the bottom.",
+      "text": "Yes, honey, I made it myself. [Monica on the phone, clearly buying a gift rather than making it]",
       "characters": [
-        "Chandler"
+        "Monica"
       ],
       "joke_types": [
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Already revealed 'Captain Ross' makes it unusable",
-      "punchline": "Even worse inscription about Monica specifically",
-      "craft_total": 7.6,
-      "impact_score": 8.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect escalation with great timing. Ross hating Monica as kids adds character depth and is very funny.",
+      "setup": "Monica promised to make Chandler's Valentine's gift but has been unable to.",
+      "punchline": "She's apparently on the phone with a store, saying 'Yes, honey, I made it myself' \u2014 practicing her lie or telling the store clerk the cover story she'll use with Chandler.",
+      "craft_total": 6.17,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The irony of Monica \u2014 a professional chef, famously overachieving \u2014 having to fake a homemade gift is very funny. The overheard phone snippet works because we only get one side and have to piece it together.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1458,22 +1512,22 @@
     },
     {
       "index": 48,
-      "text": "Danger!",
+      "text": "A mixed tape! A mixed tape! [Chandler has a eureka moment]",
       "characters": [
-        "Ross"
+        "Chandler"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "callback"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Another Ross surprise attack",
-      "punchline": "Ross continuing his unagi demonstrations",
-      "craft_total": 5.95,
+      "setup": "Chandler has been desperately trying to figure out what to make Monica for Valentine's Day.",
+      "punchline": "His breakthrough \u2014 a mixed tape \u2014 is delivered with the triumphant energy of someone who has solved a major problem, while the audience recognizes this as a relatively simple and not particularly special gift.",
+      "craft_total": 6.02,
       "impact_score": 6.0,
-      "quotability": 4.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Running gag continuation. Less funny than first time but maintains character arc.",
+      "is_callback": 0,
+      "explanation": "Chandler's disproportionate excitement over a mixed tape is relatable and character-consistent \u2014 he's been failing at crafts and grasps the first achievable option with both hands. The double-shout 'A mixed tape! A mixed tape!' reads as comedically over-the-top.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1499,22 +1553,23 @@
     },
     {
       "index": 49,
-      "text": "Salmon-skin roll.",
+      "text": "It's a sock bunny. / Remember how I call you bunny? / Not really. / I did one time. And I want to start doing it more.",
       "characters": [
-        "Chandler"
+        "Chandler",
+        "Monica"
       ],
       "joke_types": [
-        "callback",
-        "deadpan_understatement"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Ross doing his unagi thing",
-      "punchline": "Chandler reducing it to sushi order",
-      "craft_total": 7.55,
+      "setup": "Chandler presents Monica's gift \u2014 Phoebe's sock bunny, which he's trying to pass off as his own creation.",
+      "punchline": "The invented nickname 'bunny' \u2014 Monica doesn't remember it because Chandler made it up on the spot to justify the gift \u2014 and Chandler's immediate backfill ('I did one time. And I want to start doing it more') is painfully transparent.",
+      "craft_total": 7.46,
       "impact_score": 7.5,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Perfect callback with maximum economy. Two words deflate entire martial arts pretension.",
+      "explanation": "Monica's flat 'Not really' is perfect \u2014 she's not angry, just factual, which makes Chandler's escalating lie ('I did one time. And I want to start doing it more.') funnier. The whole sequence is about Chandler digging himself deeper with a lie he immediately has to prop up.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1524,21 +1579,23 @@
     },
     {
       "index": 50,
-      "text": "I can't do it. I can't do it.",
+      "text": "Phoebe makes sock bunnies. / No, she doesn't. What she makes, they're sock rabbits. They're completely different.",
       "characters": [
+        "Monica",
         "Chandler"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Chandler trying to lie to Monica about making her gift",
-      "punchline": "His inability to maintain the deception",
-      "craft_total": 5.3,
-      "impact_score": 5.0,
-      "quotability": 3.0,
+      "setup": "Monica has figured out Chandler's sock bunny came from Phoebe, not from him.",
+      "punchline": "Chandler's desperate distinction between 'sock bunnies' (Phoebe's) and 'sock rabbits' (his) \u2014 a distinction that obviously doesn't exist \u2014 is a pure panic move.",
+      "craft_total": 7.6,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Standard panic moment. Shows Chandler's inability to lie but not particularly clever.",
+      "is_callback": 1,
+      "explanation": "The 'bunny vs. rabbit' distinction is an inspired piece of Chandler-panic writing. The more specific the lie, the more obviously false it is. 'They're completely different' said with any confidence at all is what makes it land.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1576,21 +1633,22 @@
     },
     {
       "index": 51,
-      "text": "A mixed tape! A mixed tape!",
+      "text": "I didn't make it! I forgot about tonight and that we're supposed to make the presents.",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Chandler panicking about gift",
-      "punchline": "Last-minute inspiration for simple gift",
-      "craft_total": 5.45,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Chandler's sock bunny/rabbit distinction has completely failed.",
+      "punchline": "He immediately capitulates and confesses \u2014 but then the irony lands: Monica also didn't make her gift, which we learn shortly after.",
+      "craft_total": 5.94,
+      "impact_score": 5.83,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple desperation solution. Sets up upcoming complications but not inherently funny.",
+      "explanation": "Setup for the symmetric reveal that Monica also failed. Chandler's admission is straightforward but it sets up the irony coming in the next beats.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1616,22 +1674,22 @@
     },
     {
       "index": 52,
-      "text": "It's a sock bunny. Remember how I call you bunny? Not really. I did one time. And I want to start doing it more.",
+      "text": "I am going to cook you anything you want in here. / And I'm going to do anything you want in there.",
       "characters": [
-        "Chandler",
-        "Monica"
+        "Chandler"
       ],
       "joke_types": [
-        "escalation"
+        "irony_sarcasm",
+        "wordplay_pun"
       ],
-      "setup": "Chandler giving Monica the stolen sock bunny",
-      "punchline": "Desperately trying to justify the pet name he never used",
-      "craft_total": 6.45,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Chandler is apologizing for forgetting Monica's gift and offering to make it up to her.",
+      "punchline": "'Anything you want in here' (kitchen) + 'anything you want in there' (bedroom) \u2014 the architecture of the apartment does the work. The pause between the two clauses is the punchline.",
+      "craft_total": 6.28,
+      "impact_score": 6.17,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good awkward lie that escalates beautifully. Chandler's desperation making him dig deeper.",
+      "explanation": "Classic sitcom innuendo construction \u2014 the euphemism works because 'in here/in there' is clean but pointed. The delivery beat between kitchen and bedroom is essential and the audience would reward it. Good economy.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1645,22 +1703,22 @@
     },
     {
       "index": 53,
-      "text": "Phoebe makes sock bunnies. No, she doesn't. What she makes, they're sock rabbits. They're completely different.",
+      "text": "Well, I did put a lot of thought into the tape.",
       "characters": [
-        "Monica",
-        "Chandler"
+        "Monica"
       ],
       "joke_types": [
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Monica recognizing Phoebe's work",
-      "punchline": "Chandler making up meaningless distinction",
-      "craft_total": 6.7,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Chandler has offered cooking AND bedroom service in exchange for forgiveness. Monica is considering.",
+      "punchline": "Monica's response \u2014 'Well, I did put a lot of thought into the tape' \u2014 is a fake-humility acceptance that also hints she plans to milk this for all it's worth.",
+      "craft_total": 6.9,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great desperate distinction. The absurdity of bunny vs rabbit difference is perfect Chandler.",
+      "explanation": "Monica accepting Chandler's apology offer while playing up her sacrifice is perfectly Monica \u2014 she's simultaneously forgiving him AND extracting maximum value from the situation. The ironic modesty of 'a lot of thought' for a mix tape (not exactly a Sistine Chapel) is funny.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1678,21 +1736,22 @@
     },
     {
       "index": 54,
-      "text": "I didn't make it! I forgot about tonight and that we're supposed to make the presents.",
+      "text": "You are way too young to have seen that.",
       "characters": [
         "Chandler"
       ],
       "joke_types": [
-        "character_comedy"
+        "irony_sarcasm",
+        "meta_self_referential"
       ],
-      "setup": "Trying to maintain the lie about the sock bunny",
-      "punchline": "Chandler breaks down and confesses everything",
-      "craft_total": 5.95,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "An unspecified sexual act has been implied by 'anything you want in there' \u2014 Chandler and Monica are apparently doing something.",
+      "punchline": "Chandler's comment 'You are way too young to have seen that' is addressed to someone who walked in on them \u2014 implying a visual comedy moment the audience doesn't fully see but can infer.",
+      "craft_total": 5.91,
+      "impact_score": 5.67,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Payoff to building tension. Chandler's guilt making him confess is in character.",
+      "explanation": "The joke is in what it implies without showing. 'Way too young to have seen that' works as a PG-rated indicator of something R-rated happening \u2014 the audience fills in the blank. Good innuendo construction.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -1710,22 +1769,23 @@
     },
     {
       "index": 55,
-      "text": "Well, I did put a lot of thought into the tape.",
+      "text": "Your birthday's in a month and a half. What if I forget to get you a present for that too? / You are totally and completely 100 percent forgiven.",
       "characters": [
-        "Chandler"
+        "Chandler",
+        "Monica"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "setup_punchline"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Monica being very generous about his gift failure",
-      "punchline": "Chandler understating his minimal effort",
-      "craft_total": 5.6,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Monica has just forgiven Chandler for forgetting the Valentine's gift.",
+      "punchline": "Chandler pre-emptively reminds Monica about his likely forgetting her birthday \u2014 Monica instantly offers full forgiveness for THAT too, before it even happens.",
+      "craft_total": 7.02,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sets up upcoming revelation about the tape. Mild understatement humor.",
+      "explanation": "Smart character moment \u2014 Chandler's pre-emptive apology (essentially banking forgiveness) and Monica immediately agreeing because she's already getting cooking + bedroom privileges. It's both a character joke about their relationship dynamics AND a solid construction.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1744,16 +1804,17 @@
         "Chandler"
       ],
       "joke_types": [
-        "character_comedy"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Monica suggesting activities for the evening",
-      "punchline": "Chandler making up a fake old saying",
-      "craft_total": 6.2,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Chandler and Monica are celebrating reconciliation. Monica's cake is ready.",
+      "punchline": "Chandler invents a fake 'old saying' that describes exactly and only what they are literally doing \u2014 the joke being that it's not an old saying at all.",
+      "craft_total": 7.57,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good fake saying that sounds plausible. Chandler's attempt at being smooth.",
+      "explanation": "Very well constructed. The 'old saying' framing implies wisdom/antiquity, but the saying is both completely literal and completely specific to this moment. 'Have sex, eat some cake' is funny partly because it's the exact correct description of what they're doing, treated as proverbial wisdom. A very Chandler joke.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -1767,40 +1828,42 @@
     },
     {
       "index": 57,
-      "text": "Who the hell are you? I'm Joey. How are you doing?",
-      "characters": [
-        "Monica",
-        "Carl"
-      ],
-      "joke_types": [
-        "callback"
-      ],
-      "setup": "Monica encounters Carl pretending to be Joey",
-      "punchline": "Carl doing Joey's signature line badly",
-      "craft_total": 6.4,
-      "impact_score": 6.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good setup for Carl storyline. The bad delivery of Joey's line is appropriately awkward."
-    },
-    {
-      "index": 58,
-      "text": "No! No! No! No! No! How you doing? How you doing? Damn it, Carl! Go wait in the hall.",
+      "text": "Hey, Mon. Hey, Chan. Just getting a soda. [Joey walks in on Chandler and Monica]",
       "characters": [
         "Joey"
       ],
       "joke_types": [
+        "reaction_beat",
         "character_comedy"
       ],
-      "setup": "Carl delivering Joey's line wrong",
-      "punchline": "Joey desperately trying to coach his fake twin",
-      "craft_total": 6.65,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Chandler has just delivered a funny line about 'have sex, eat some cake' \u2014 implying they just had sex.",
+      "punchline": "Joey wanders in completely obliviously and helps himself to a soda, treating their clearly post-intimate scenario as totally normal.",
+      "craft_total": 6.05,
+      "impact_score": 6.0,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great escalation of Joey's frustration. His desperation to perfect his signature line is very in character.",
+      "explanation": "Classic sitcom interruption gag \u2014 the friend who walks in on the wrong moment and is oblivious. Joey's 'just getting a soda' is functionally funny but not particularly inventive."
+    },
+    {
+      "index": 58,
+      "text": "Who the hell are you? / I'm Joey. / How are you doing?",
+      "characters": [
+        "Monica",
+        "Fake Joey (Carl)"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Monica is startled to see what appears to be a stranger, who she doesn't recognize as Joey.",
+      "punchline": "The stranger introduces himself as 'Joey' \u2014 and then delivers Joey's signature 'How are you doing?' pickup line, confirming this is Carl, the hired Joey lookalike, completely in character.",
+      "craft_total": 7.39,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The reveal works because 'How are you doing?' is so recognizably Joey's catchphrase that having a stranger deploy it is immediately jarring and funny. The audience understands before Monica does, which creates a nice brief dramatic irony.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1826,21 +1889,23 @@
     },
     {
       "index": 59,
-      "text": "Sometimes the good ideas are right in front of you.",
+      "text": "No! No! No! No! / How you doing? How you doing? Damn it, Carl! Go wait in the hall.",
       "characters": [
-        "Joey"
+        "Joey",
+        "Carl"
       ],
       "joke_types": [
+        "running_gag",
         "character_comedy"
       ],
-      "setup": "Explaining hiring Carl as his twin",
-      "punchline": "Joey thinking this obviously bad idea is good",
-      "craft_total": 6.2,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good irony - Joey's 'wisdom' about obviously terrible ideas. Character-appropriate obliviousness.",
+      "setup": "Carl (Joey's hired lookalike) is hitting on Monica using Joey's catchphrase.",
+      "punchline": "Joey rushes in to control Carl, but Carl keeps repeating the catchphrase even as Joey is yelling at him \u2014 Carl is committed to being Joey to a fault.",
+      "craft_total": 7.17,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Carl's inability to stop doing the bit even while being told to stop is very funny \u2014 he's such a bad actor that he can't break character even in a crisis. 'Damn it, Carl!' is a great exasperated punchline. The repeated 'How you doing?' as Joey desperately tries to shut him down escalates nicely.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1866,21 +1931,22 @@
     },
     {
       "index": 60,
-      "text": "We were supposed to be brothers, but he messed up. Can I get a piece of that cake? Pizza! We like pizza! Get out!",
+      "text": "Sometimes the good ideas are right in front of you.",
       "characters": [
         "Joey"
       ],
       "joke_types": [
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Joey explaining Carl's past failure",
-      "punchline": "Demonstrating Carl's terrible acting with escalating panic",
-      "craft_total": 7.25,
-      "impact_score": 8.0,
-      "quotability": 7.0,
+      "setup": "Joey has just explained that he hired another actor to pretend to be his twin to get $2000 from a research study.",
+      "punchline": "Joey delivers this as wisdom \u2014 'sometimes the good ideas are right in front of you' \u2014 presenting an elaborate scam as obvious common sense.",
+      "craft_total": 7.04,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent escalation showing Carl's terrible improv skills. The randomness and panic are perfectly absurd.",
+      "explanation": "Joey's self-congratulatory tone about an idea that is objectively deceptive and probably illegal is funny. The aphorism framing elevates it slightly above a basic character joke.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -1902,21 +1968,23 @@
     },
     {
       "index": 61,
-      "text": "You will not find a single game-show host whose ass I cannot kick.",
+      "text": "It sounds crazy, but it might work. The only problem is Carl's acting... / The only problem?",
       "characters": [
-        "Ross"
+        "Joey",
+        "Monica"
       ],
       "joke_types": [
-        "character_comedy"
+        "setup_punchline",
+        "irony_sarcasm"
       ],
-      "setup": "Listing various game show hosts",
-      "punchline": "Ross's weirdly specific boast about fighting game show hosts",
-      "craft_total": 7.75,
-      "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Joey explains his plan to use Carl as a fake twin for the medical study.",
+      "punchline": "Joey identifies Carl's bad acting as 'the only problem' \u2014 Monica's incredulous 'The only problem?' calls out that there are MANY obvious problems with this plan (impersonation, fraud, etc.).",
+      "craft_total": 6.63,
+      "impact_score": 6.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant absurd boast. The specificity of game show hosts makes it hilarious and very quotable.",
+      "explanation": "Monica as the voice of reason calling out Joey's tunnel vision is a solid comedic beat. The 'only problem?' is a well-worn structure but executed cleanly here.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1934,21 +2002,22 @@
     },
     {
       "index": 62,
-      "text": "It's not something you are, it's something you have.",
+      "text": "He's the reason I didn't get that big commercial a couple of years ago. We were supposed to be brothers, but he messed up.",
       "characters": [
-        "Ross"
+        "Joey"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Women saying they 'are unagi'",
-      "punchline": "Ross correcting their grammar about his made-up concept",
-      "craft_total": 6.55,
-      "impact_score": 6.0,
-      "quotability": 6.0,
+      "setup": "Joey is explaining Carl's acting problem.",
+      "punchline": "The reveal that Joey has worked with Carl before \u2014 and Carl ruined a previous job \u2014 makes the choice to hire him again obviously stupid, which is very Joey.",
+      "craft_total": 6.65,
+      "impact_score": 6.5,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Perfect Ross pedantry - correcting grammar about something he made up. Very in character.",
+      "is_callback": 0,
+      "explanation": "The fact that Joey chose the one actor he KNOWS has caused him problems is perfect Joey logic. Good character-specific comedy.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -1966,41 +2035,44 @@
     },
     {
       "index": 63,
-      "text": "Carl, we're next. Now remember, what is this not gonna be? Another Minute Maid fiasco.",
-      "characters": [
-        "Joey",
-        "Carl"
-      ],
-      "joke_types": [
-        "callback"
-      ],
-      "setup": "Joey prepping Carl for medical study",
-      "punchline": "Reference to another commercial disaster",
-      "craft_total": 6.2,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback establishing Carl's track record. Builds anticipation for upcoming failure."
-    },
-    {
-      "index": 64,
-      "text": "I'm not gonna talk because.. Damn it, Carl!",
+      "text": "Can I get a piece of that cake? / Pizza! We like pizza! Get out!",
       "characters": [
         "Carl",
         "Joey"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Joey coaching Carl not to talk",
-      "punchline": "Carl immediately talking and messing up",
-      "craft_total": 6.65,
-      "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Joey is trying to manage Carl's behavior and explain him to Monica.",
+      "punchline": "Carl asks for cake \u2014 breaking from Joey's instructions \u2014 and Joey's frantic correction ('Pizza! We like pizza!') while simultaneously shooing him out reveals Joey desperately trying to maintain the twin fiction while Carl freelances.",
+      "craft_total": 7.17,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect immediate failure. Carl fails instantly at the one thing he was told not to do.",
+      "explanation": "'Pizza! We like pizza! Get out!' is excellent. Joey improvising that he and his 'twin' share a pizza preference while ejecting Carl is chaotic and very funny. The overlap of maintaining the lie AND getting rid of Carl is a lot of comedy crammed into a few words."
+    },
+    {
+      "index": 64,
+      "text": "Pat Sajak? / Yep. / Alex Trebek? / Of course. / Chuck Woolery? / Definitely. / You will not find a single game-show host whose ass I cannot kick.",
+      "characters": [
+        "Ross",
+        "Rachel",
+        "Monica"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Ross is trying to prove his martial arts prowess. The women are quizzing him on specific opponents.",
+      "punchline": "Ross confidently claims he could beat up any game-show host \u2014 a highly specific, oddly non-threatening category of people to specialize in fighting.",
+      "craft_total": 7.66,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the best jokes in the episode. The list structure (Sajak, Trebek, Woolery \u2014 escalating specificity of game show hosts) followed by Ross's total confidence in this extremely niche fighting specialty is brilliant. It's unexpected, specific, and perfectly absurd. The escalation through three hosts before the punchline is textbook joke structure. Easily an 8+.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -2026,21 +2098,24 @@
     },
     {
       "index": 65,
-      "text": "But you're not identical twins.",
+      "text": "Say it! Say we are unagi! / It's not something you are, it's something you have.",
       "characters": [
-        "Researcher"
+        "Monica",
+        "Rachel",
+        "Ross"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Joey and Carl claiming to be identical twins",
-      "punchline": "Researcher stating the obvious about their appearance",
-      "craft_total": 5.55,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Simple deflation of Joey's ridiculous plan. Researcher as straight man to obvious deception.",
+      "setup": "Monica and Rachel have apparently gotten the upper hand on Ross physically and are demanding he say they have 'unagi.'",
+      "punchline": "Even while being physically dominated, Ross corrects their grammar/usage of 'unagi' \u2014 'it's not something you ARE, it's something you HAVE' \u2014 his pedantry overriding his physical defeat.",
+      "craft_total": 8.11,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Exceptional character comedy. Ross being physically pinned and still finding the grammatical error more urgent to correct than his defeat is a perfect crystallization of his character. 'It's not something you ARE, it's something you HAVE' is the most Ross Geller sentence ever written. Very high character integration justified.",
       "dialogue": [
         {
           "speaker": "Researcher",
@@ -2050,21 +2125,22 @@
     },
     {
       "index": 66,
-      "text": "Damn it, Carl!",
+      "text": "I could easily get out of this... but there's a chance you could get very, very hurt!",
       "characters": [
-        "Joey"
+        "Ross"
       ],
       "joke_types": [
-        "running_gag"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Plan failing due to obvious visual differences",
-      "punchline": "Joey blaming Carl for unfixable problem",
-      "craft_total": 6.1,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Ross is being physically pinned by Monica and Rachel after his grammar correction failed to free him.",
+      "punchline": "Ross claims he could escape but won't for THEIR safety \u2014 a face-saving rationalization that is transparently false.",
+      "craft_total": 7.56,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good running gag. Joey blaming Carl for things beyond his control is absurd and funny.",
+      "explanation": "Ross would absolutely say exactly this. The logic inversion \u2014 'I'm not escaping to protect YOU' \u2014 is a perfect piece of defensive face-saving that only an ego like Ross's could produce. The concern in his voice for their safety while he's being pinned is what sells it. Very quotable.",
       "dialogue": [
         {
           "speaker": "Joey",
@@ -2078,21 +2154,23 @@
     },
     {
       "index": 67,
-      "text": "Continuing the countdown of your favorite meals. Tonight, number three: Macaroni and cheese with cut-up hot dogs.",
+      "text": "Carl, we're next. Now remember, what is this not gonna be? / Another Minute Maid fiasco. / That's right. And what are you not gonna do? / I'm not gonna talk because.. / Damn it, Carl!",
       "characters": [
-        "Chandler"
+        "Joey",
+        "Carl"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Chandler trying to be romantic",
-      "punchline": "Treating childish comfort food like gourmet cuisine",
-      "craft_total": 7.2,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Joey is prepping Carl before they enter the research facility, drilling him on what NOT to do.",
+      "punchline": "Carl correctly starts the answer 'I'm not gonna talk because...' \u2014 and then, in answering, begins to talk, which IS the thing he's not supposed to do. 'Damn it, Carl!' is Joey's exasperated response.",
+      "craft_total": 7.19,
+      "impact_score": 7.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great juxtaposition of romantic presentation with kiddie food. Very sweet and funny.",
+      "explanation": "Brilliant comedic construction. The joke is a logical trap: Joey asks Carl to explain why he won't talk \u2014 which requires talking. Carl falls into the trap immediately by beginning to explain, thus doing the thing he's not supposed to do, mid-explanation about not doing it. 'Damn it, Carl!' is perfectly timed. This is the most structurally sophisticated joke in the episode and among the funniest. Clear 8+.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -2110,21 +2188,24 @@
     },
     {
       "index": 68,
-      "text": "I love the way you look every night, Chandler.",
+      "text": "Joey and Tony Tribbiani. / That's us. / But this is a study for identical twins. / That's right. $2000.",
       "characters": [
-        "Monica"
+        "Researcher",
+        "Joey",
+        "Carl"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Dancing to romantic music",
-      "punchline": "Monica's genuine romantic response",
-      "craft_total": 5.6,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Joey and Carl present themselves as twins named 'Joey and Tony Tribbiani'",
+      "punchline": "When told it's a twin study, Joey responds 'That's right. $2000.' \u2014 confirming he understands the requirements only in terms of the payment",
+      "craft_total": 7.32,
+      "impact_score": 7.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sweet moment that sets up upcoming comedy. More about character development than humor.",
+      "explanation": "Joey's '$2000' response to being told they need to be identical twins is funny in its irrelevance \u2014 he treats the payment as the confirmation of success rather than their physical appearance. Good character economy.",
       "dialogue": [
         {
           "speaker": "Monica",
@@ -2134,21 +2215,23 @@
     },
     {
       "index": 69,
-      "text": "That's why I made you this tape. Happy birthday! Love, Janice!",
+      "text": "But you're not identical twins. / Damn it, Carl!",
       "characters": [
-        "Janice's voice on tape"
+        "Researcher",
+        "Joey"
       ],
       "joke_types": [
+        "character_comedy",
         "callback"
       ],
-      "setup": "Romantic moment with 'Chandler's' mixtape",
-      "punchline": "Revealing the tape is actually from Janice",
-      "craft_total": 8.25,
-      "impact_score": 9.0,
-      "quotability": 7.0,
+      "setup": "Joey and Carl present themselves as identical twins 'Joey and Tony Tribbiani' to get into the study.",
+      "punchline": "The researcher immediately sees through the deception \u2014 they're obviously not identical. Joey's response is 'Damn it, Carl!' \u2014 blaming Carl for their obvious physical mismatch, as though Carl somehow caused this.",
+      "craft_total": 8.15,
+      "impact_score": 8.67,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Brilliant revelation that destroys the romantic moment perfectly. Great setup/payoff structure with perfect timing.",
+      "explanation": "Perfect button on the Carl subplot. 'Damn it, Carl!' has been building as a running exasperation, and using it here \u2014 when the problem is literally that they look nothing alike, something that is NOT Carl's fault \u2014 is the ideal payoff. Joey reflexively blaming Carl for an unfixable situation is both character-perfect and structurally satisfying. The economy of two words to end the entire subplot is excellent.",
       "dialogue": [
         {
           "speaker": "Chandler",
@@ -2166,21 +2249,22 @@
     },
     {
       "index": 70,
-      "text": "I was watching. A couple of questions: You know that last move... where that woman tripped you and pinned you to the floor? What would you do next?",
+      "text": "Continuing the countdown of your favorite meals. Tonight, number three: Macaroni and cheese with cut-up hot dogs.",
       "characters": [
-        "Self-defense instructor"
+        "Chandler"
       ],
       "joke_types": [
-        "setup_punchline"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Instructor addressing Ross after watching him get beaten up",
-      "punchline": "Treating his defeat as learning opportunity",
-      "craft_total": 6.25,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Chandler promised to cook Monica anything she wanted. This scene reveals what that has meant.",
+      "punchline": "Chandler has apparently been doing a countdown of Monica's (or his own) favorite meals \u2014 and number three is 'macaroni and cheese with cut-up hot dogs,' a profound contrast with Monica's professional chef status.",
+      "craft_total": 7.24,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good setup for Ross's embarrassment. Instructor treating his failure as teachable moment.",
+      "is_callback": 1,
+      "explanation": "The joke is the gap between what 'cooking anything you want' implies (gourmet, effort) and what Chandler actually delivers (mac and cheese with hot dogs). The 'countdown' framing \u2014 presenting pedestrian meals with Food Network gravitas \u2014 is a nice structural touch.",
       "dialogue": [
         {
           "speaker": "Self-defense instructor",
@@ -2198,21 +2282,23 @@
     },
     {
       "index": 71,
-      "text": "I tried attacking two women. Did not work.",
+      "text": "'The Way You Look Tonight' is on here. Dance with me.",
       "characters": [
-        "Ross"
+        "Chandler",
+        "Monica"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "irony_sarcasm",
+        "misdirection"
       ],
-      "setup": "Asked why he wants to learn self-defense",
-      "punchline": "Ross's matter-of-fact admission of failure",
-      "craft_total": 7.35,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Monica and Chandler are dancing to the mixed tape; Chandler earlier promised this song would be on it",
+      "punchline": "The sweet romantic moment is entirely built on a lie \u2014 this is Janice's tape and Chandler had no idea what was on it",
+      "craft_total": 6.24,
+      "impact_score": 6.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect Ross understatement. The casual admission of attacking women is both horrible and hilarious.",
+      "explanation": "Dramatic irony beat \u2014 the audience is primed to know this is Janice's tape. 'The Way You Look Tonight' being on it both validates Chandler's claim (accidentally true) and deepens the comedic trap. The reveal is coming.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -2222,22 +2308,22 @@
     },
     {
       "index": 72,
-      "text": "You attacked your ex-wife? Oh, no. No, no. I tried. But I couldn't. That's why I'm here.",
+      "text": "That's why I made you this tape. Happy birthday! Love, Janice!",
       "characters": [
-        "Instructor",
-        "Ross"
+        "Janice (voice on tape)"
       ],
       "joke_types": [
-        "escalation"
+        "setup_punchline",
+        "callback"
       ],
-      "setup": "Instructor's shocked reaction to attacking women",
-      "punchline": "Ross making it worse by explaining he 'tried' to attack his ex-wife",
-      "craft_total": 7.45,
-      "impact_score": 8.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant escalation where Ross makes himself sound worse while trying to clarify. Perfect cringe comedy.",
+      "setup": "Monica has been letting Chandler believe the romantic mixed tape was made just for him. 'The Way You Look Tonight' plays. The moment is romantic and sweet.",
+      "punchline": "Janice's voice comes on the tape \u2014 it was originally Janice's gift to Chandler from a previous relationship \u2014 with 'Happy birthday! Love, Janice!'",
+      "craft_total": 8.36,
+      "impact_score": 9.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The best single joke in the episode. It works on multiple levels: (1) Monica is caught not having made the tape herself \u2014 she's been lying just like Chandler; (2) The tape is from JANICE, Chandler's most famous and dreaded ex-girlfriend, whose voice is an instant laugh trigger; (3) the contrast between the romantic moment ('The Way You Look Tonight') and 'Happy birthday! Love, Janice!' is a maximally jarring deflation; (4) it reveals that Chandler has been re-gifting a Janice tape \u2014 which raises many uncomfortable questions. Perfect structure, perfect timing, perfect character payoff. Easily the standout moment of the episode.",
       "dialogue": [
         {
           "speaker": "Instructor",
@@ -2251,21 +2337,22 @@
     },
     {
       "index": 73,
-      "text": "Maybe we could attack them together!",
+      "text": "No, you're the sweetest.",
       "characters": [
-        "Self-defense instructor"
+        "Chandler"
       ],
       "joke_types": [
-        "escalation"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Ross explaining his training needs",
-      "punchline": "Professional instructor suggesting they team up to attack women",
-      "craft_total": 7.3,
-      "impact_score": 8.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant subversion - the instructor getting caught up in Ross's absurd logic. Very unexpected.",
+      "setup": "Monica has just been caught out using Janice's old tape as her handmade gift. The situation is mutually embarrassing \u2014 both failed.",
+      "punchline": "Chandler responds 'No, you're the sweetest' \u2014 a bizarrely gracious and entirely ironic response to being exposed as a re-gifter of his ex's tape.",
+      "craft_total": 7.92,
+      "impact_score": 8.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The button on the Janice tape reveal. 'No, you're the sweetest' \u2014 in full ironic awareness that neither of them followed through on the promise \u2014 is a perfect close to their storyline. The mutual embarrassment allowing them to mutually forgive is sweet AND funny.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -2287,21 +2374,22 @@
     },
     {
       "index": 74,
-      "text": "That's a no.",
+      "text": "I tried attacking two women. Did not work. / What? / No, it's okay. They're my friends. In fact, I was married to one of them.",
       "characters": [
-        "Instructor"
+        "Ross"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Just suggested attacking women together",
-      "punchline": "Instructor immediately realizing how inappropriate that was",
-      "craft_total": 6.55,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Ross explains to the self-defense instructor why he's seeking advice on attacking people.",
+      "punchline": "Ross's clarification \u2014 'it's okay, they're my friends, I was married to one of them' \u2014 doesn't make the situation better at all. Attacking your friends/ex-wife is not less alarming than attacking strangers.",
+      "craft_total": 7.77,
+      "impact_score": 8.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good reality check moment. Simple but effective correction of the absurd suggestion.",
+      "is_callback": 1,
+      "explanation": "Ross genuinely thinking 'they're my friends, I was married to one of them' is a reassuring detail \u2014 when it makes everything much worse \u2014 is perfect obtuse character comedy. The self-defense instructor's perspective makes the already-absurd unagi storyline land fresh.",
       "dialogue": [
         {
           "speaker": "Instructor",
@@ -2315,21 +2403,22 @@
     },
     {
       "index": 75,
-      "text": "Nowhere to run.",
+      "text": "No, it's okay. They're my friends. In fact, I was married to one of them.",
       "characters": [
         "Ross"
       ],
       "joke_types": [
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Ross approaching the women in the coffee shop",
-      "punchline": "Ross acting like a movie villain stalking prey",
-      "craft_total": 6.35,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "The instructor is alarmed that Ross attacked two women",
+      "punchline": "Ross reassures her with 'In fact, I was married to one of them' \u2014 which does not reassure at all, implying attacking an ex-wife is fine",
+      "craft_total": 7.89,
+      "impact_score": 8.25,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good buildup to final unagi demonstration. Ross being creepy in his martial arts obsession.",
+      "explanation": "Perfect dark subversive joke. 'In fact, I was married to one of them' is offered as REASSURANCE \u2014 as if that makes it better \u2014 and of course it makes it considerably worse. Ross's complete lack of awareness that this is alarming is entirely character-consistent. Great economy and structure.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -2367,24 +2456,23 @@
     },
     {
       "index": 76,
-      "text": "Danger! Oh, my God! Why is he jumping on those women? We should help them. I don't think they need any help.",
+      "text": "You attacked your ex-wife? / Oh, no. No, no. / I tried. / But I couldn't. That's why I'm here.",
       "characters": [
-        "Ross",
-        "Joey",
-        "Chandler"
+        "Self-Defense Instructor",
+        "Ross"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "reaction_beat"
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Ross attacking the women again",
-      "punchline": "Chandler realizing the women are winning the fight",
-      "craft_total": 6.4,
-      "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Ross has said he was married to one of the women he tried to attack",
+      "punchline": "He corrects the instructor \u2014 he didn't succeed in attacking his ex-wife, he TRIED and FAILED, which is why he's here for lessons \u2014 presented as a relatively positive clarification",
+      "craft_total": 7.82,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good payoff to Ross's overconfidence. The visual of him getting beaten up by women he was trying to teach is perfect.",
+      "explanation": "Exceptional escalation. Ross's clarification \u2014 'Oh, no. No, no. I tried. But I couldn't. That's why I'm here.' \u2014 reframes failed attacks on women as a deficiency to be corrected, not a moral issue. The deadpan structure is perfect: denial, then admission of attempt, then the kicker 'That's why I'm here.' He's seeking professional instruction to better attack women. The instructor's horror is the unstated punchline. This rivals the best jokes in the episode.",
       "dialogue": [
         {
           "speaker": "Ross",
@@ -2395,6 +2483,181 @@
           "line": "Oh my God, we're losing to girls!"
         }
       ]
+    },
+    {
+      "index": 77,
+      "text": "Maybe we could attack them together!",
+      "characters": [
+        "Self-defense instructor"
+      ],
+      "joke_types": [
+        "absurdist",
+        "setup_punchline"
+      ],
+      "setup": "Ross explains he tried to attack two women (his friends) and failed. He's seeking the instructor's help.",
+      "punchline": "The instructor enthusiastically suggests they team up to attack Ross's friends together \u2014 completely crossing professional and ethical lines with cheerful obliviousness.",
+      "craft_total": 7.61,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The self-defense instructor being so enthusiastic about ambushing random women that they volunteer to join is a great absurdist escalation. The cheerful 'Maybe we could attack them together!' from someone in a position of authority is brilliantly wrong."
+    },
+    {
+      "index": 78,
+      "text": "That's a no.",
+      "characters": [
+        "Ross"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "The self-defense instructor has just suggested teaming up to attack Monica and Rachel.",
+      "punchline": "Ross's flat 'That's a no' \u2014 the most understated response to an objectively insane proposal.",
+      "craft_total": 7.3,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Three words, maximum economy. 'That's a no' is Ross at his most deadpan, shutting down an absurd suggestion with the calmness of someone who is entirely familiar with absurd suggestions. The economy score is a perfect 10 \u2014 you cannot say less and convey more."
+    },
+    {
+      "index": 79,
+      "text": "And I will cook anything you want in here... and do anything you want in there. / Yeah, you will!",
+      "characters": [
+        "Chandler",
+        "Monica"
+      ],
+      "joke_types": [
+        "running_gag",
+        "irony_sarcasm"
+      ],
+      "setup": "Chandler is again apologizing to Monica for the Janice tape situation.",
+      "punchline": "He repeats his earlier 'in here / in there' offer \u2014 but this time Monica's enthusiastic 'Yeah, you will!' shows she's not letting him off easy and is fully expecting delivery.",
+      "craft_total": 7.23,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Callback to the earlier offer \u2014 this time with Monica's confident 'Yeah, you will!' adding a new dimension. Diminished returns on the structure itself, but Monica's delivery makes it land."
+    },
+    {
+      "index": 80,
+      "text": "And I will cook anything you want in here... and do anything you want in there. / Yeah, you will! And are you kidding me?",
+      "characters": [
+        "Ross",
+        "Self-Defense Instructor"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Ross is apologizing profusely to the instructor for the whole exchange",
+      "punchline": "He offers to cook for her and 'do anything in there' \u2014 accidentally using the same apologetic formula he presumably overheard from Chandler earlier; the instructor's enthusiastic 'Yeah, you will!' suggests she is very open to both offers",
+      "craft_total": 6.19,
+      "impact_score": 6.25,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Callback to Chandler's formula with Ross now deploying it to get out of his own mess. The instructor's enthusiastic acceptance is the unexpected punchline \u2014 she's attracted to this strange man who tried to attack women and is now offering domestic and sexual services. Solid but not among the episode's best."
+    },
+    {
+      "index": 81,
+      "text": "Come on, Monica, it's our Valentine's Day. Please, please, please, please?",
+      "characters": [
+        "Chandler"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Chandler is begging Monica for something (sex, apparently) on Valentine's Day after the Janice tape disaster",
+      "punchline": "His repeated 'please, please, please, please?' mirrors Joey's earlier begging technique \u2014 and the callback to 'it helps if you've got a little of this going on' (the begging face) is implied",
+      "craft_total": 5.38,
+      "impact_score": 5.5,
+      "quotability": 3.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional character moment \u2014 Chandler's desperation is in-character \u2014 but the joke is thin. It's situation comedy rather than a crafted joke. The repeated 'please' is performance-dependent."
+    },
+    {
+      "index": 82,
+      "text": "Nowhere to run.",
+      "characters": [
+        "Ross"
+      ],
+      "joke_types": [
+        "running_gag",
+        "character_comedy"
+      ],
+      "setup": "Ross has apparently cornered Monica and Rachel again for another unagi ambush.",
+      "punchline": "'Nowhere to run' \u2014 delivered with Ross's signature unhinged confidence about a situation that is objectively him stalking his friends.",
+      "craft_total": 7.03,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Three words delivered with villain confidence by a paleontologist lecturing his friends about eel-based martial philosophy. The gap between what Ross thinks is happening (demonstrating superior awareness) and what is actually happening (harassment) is the sustained joke of the unagi subplot."
+    },
+    {
+      "index": 83,
+      "text": "Nowhere to run. [Ross confronts Rachel and Phoebe, presumably having collaborated with the self-defense instructor for a final showdown]",
+      "characters": [
+        "Ross"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Ross has apparently set a trap for Rachel and Phoebe",
+      "punchline": "'Nowhere to run' as villain-movie dialogue \u2014 Ross is now playing an action-movie antagonist in his self-defense war",
+      "craft_total": 6.4,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Ross's adoption of action-movie language ('Nowhere to run') is funny in its escalation \u2014 he's fully committed to the bit at this point. Visual gag territory for the climactic confrontation."
+    },
+    {
+      "index": 84,
+      "text": "Why is Ross doing that? / Danger! / Oh, my God! Why is he jumping on those women?",
+      "characters": [
+        "Random bystander",
+        "Ross"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "physical_slapstick"
+      ],
+      "setup": "Ross has apparently escalated to jumping on two strangers he mistook for Monica and Rachel.",
+      "punchline": "A bystander narrates what Ross is doing \u2014 'Why is he jumping on those women?' \u2014 from an outside perspective that makes the full insanity of the unagi subplot visible.",
+      "craft_total": 6.89,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect episode-closing escalation. The unagi subplot has built from an abstract lecture to actual physical attacks, and the climax \u2014 Ross jumping on two STRANGERS who he thought were Monica and Rachel \u2014 is shown through the eyes of horrified bystanders. 'Why is he jumping on those women?' is the ideal punchline to end the entire A-story on. The outsider perspective reframes everything the audience has normalized as objectively deranged."
+    },
+    {
+      "index": 85,
+      "text": "We should help them. / I don't think they need any help.",
+      "characters": [
+        "Monica",
+        "Rachel"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "callback"
+      ],
+      "setup": "Ross is attacking two strangers. Monica and Rachel watch.",
+      "punchline": "Rachel's 'I don't think they need any help' \u2014 implying the two strangers are handily defeating Ross \u2014 is the final button on the unagi storyline. His victims turned out to be better fighters than him.",
+      "craft_total": 6.79,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect closing line for the episode's A-plot. 'I don't think they need any help' closes the loop \u2014 the women Ross thought lacked unagi are watching Ross get beaten up by strangers, while they don't even bother intervening. The self-defense class subplot pays off here as well: the women who Ross said couldn't fight are now passive observers of his defeat. Structurally complete."
     }
   ],
   "air_date": "2000-03-09",
