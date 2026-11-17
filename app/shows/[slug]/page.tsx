@@ -36,6 +36,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       description,
       openGraph: { title: `${show.name} — Coming Soon`, description, images: [ogImg] },
       twitter: { card: 'summary_large_image', title: `${show.name} — Coming Soon`, description, images: [ogImg] },
+      // Nothing scored yet: a teaser page is thin content. Index it once it has data.
+      robots: { index: false, follow: true },
       alternates: { canonical },
     };
   }
@@ -373,12 +375,18 @@ export default async function ShowPage({ params }: { params: { slug: string } })
                 </Link>
               ))}
             </div>
-            <div className="mb-8">
+            <div className="mb-8 flex flex-wrap gap-x-6 gap-y-2">
               <Link
                 href={`/shows/${params.slug}/episodes-ranked`}
                 className="text-sm text-brand-gold hover:underline"
               >
                 See all {scored.length} {show.name} episodes ranked →
+              </Link>
+              <Link
+                href={`/shows/${params.slug}/best-jokes`}
+                className="text-sm text-brand-gold hover:underline"
+              >
+                The 50 funniest {show.name} quotes →
               </Link>
             </div>
 

@@ -109,9 +109,15 @@ export default async function HomePage() {
               </Link>
             </div>
             <LeaderboardClient shows={rankable(shows)} pending={awaitingRescore(shows)} />
-            <div className="mt-6 pt-5 border-t border-brand-border">
+            <div className="mt-6 pt-5 border-t border-brand-border flex flex-wrap items-center gap-x-6 gap-y-2">
               <Link href="/shows" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
                 Browse all {analyzedShows.length} shows →
+              </Link>
+              <Link href="/rankings/jokes-per-minute" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors">
+                Jokes per minute
+              </Link>
+              <Link href="/rankings/best-christmas-episodes" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors">
+                Best Christmas episodes
               </Link>
             </div>
           </div>

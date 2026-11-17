@@ -3,6 +3,7 @@ import { getAllShows, getEpisodes, getCharacters } from '@/lib/data';
 import { ARCHES } from '@/lib/comedyDna';
 import { POSTS } from '@/app/blog/posts';
 import { SITE_URL } from '@/lib/site';
+import { isAwaitingRescore } from '@/lib/scale';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = `${SITE_URL}`;
@@ -13,7 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Use a single rolling "freshness" date for pages that are refreshed every
   // time the underlying data is. Update this when major changes ship.
-  const SITE_REFRESHED = new Date('2026-06-17');
+  const SITE_REFRESHED = new Date('2026-11-17');
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 1.0 },
     { url: url('/shows'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.9 },
@@ -25,6 +26,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url('/rankings/worst-episodes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/best-jokes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/funniest-characters'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/rankings/best-christmas-episodes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.9 },
+    { url: url('/rankings/best-thanksgiving-episodes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/least-funny-characters'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.7 },
     { url: url('/compare'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/comedy-dna'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.8 },
@@ -54,7 +57,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const characterPages: MetadataRoute.Sitemap = [];
   const arcPages: MetadataRoute.Sitemap = [];
 
+  // Only pages with real data go in the sitemap. In May, Search Console had
+  // ~76 of ~1,736 submitted URLs indexed, so every thin URL listed here costs
+  // crawl time the strong pages need. Queued shows are noindexed and left out.
   for (const show of shows) {
+    if (!show.humor_index || show.humor_index <= 0) continue;
     showPages.push({
       url: url(`/shows/${show.slug}`),
       lastModified: SITE_REFRESHED,
@@ -77,10 +84,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.7,
       });
       arcPages.push({
-        url: url(`/shows/${show.slug}/explore`),
+        url: url(`/shows/${show.slug}/best-jokes`),
         lastModified: SITE_REFRESHED,
         changeFrequency: 'weekly',
-        priority: 0.7,
+        priority: 0.8,
       });
     }
 
@@ -101,7 +108,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const ch of characters) {
         // Skip thin/bit-part character pages (e.g. "Warehouse worker", one-liners)
         // — they dilute crawl budget and read as thin content at scale.
-        if ((ch.total_jokes ?? 0) < 20 || (ch.episodes_appeared ?? 0) < 3) continue;
+        // The page itself exists from 20 jokes / 3 episodes; the sitemap lists
+        // only characters with enough material to rank (50 jokes, 5 episodes).
+        if ((ch.total_jokes ?? 0) < 50 || (ch.episodes_appeared ?? 0) < 5) continue;
         characterPages.push({
           url: url(`/shows/${show.slug}/characters/${encodeURIComponent(ch.name)}`),
           lastModified: SITE_REFRESHED,
@@ -113,7 +122,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   // Compare matchups — ONE PER UNORDERED PAIR (alpha-first); matches canonical
-  const analyzed = shows.filter(s => s.humor_index > 0).map(s => s.slug).sort();
+  // Same-scale pairs only: cross-scale pairs are noindexed on the page.
+  const analyzed = shows.filter(s => s.humor_index > 0 && !isAwaitingRescore(s.slug)).map(s => s.slug).sort();
   const comparePages: MetadataRoute.Sitemap = [];
   for (let i = 0; i < analyzed.length; i++) {
     for (let j = i + 1; j < analyzed.length; j++) {

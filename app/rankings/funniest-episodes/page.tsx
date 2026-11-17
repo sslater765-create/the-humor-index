@@ -122,6 +122,15 @@ export default async function FunniestEpisodesPage() {
       <ScaleNote narrow />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+        <Link
+          href="/rankings/best-christmas-episodes"
+          className="flex items-center justify-between gap-4 mb-6 p-4 bg-brand-card border border-brand-gold/30 rounded-xl hover:border-brand-gold/60 transition-colors group"
+        >
+          <span className="text-sm text-brand-text-secondary">
+            <span className="text-brand-gold font-medium">New:</span> the best Christmas sitcom episodes, ranked joke by joke
+          </span>
+          <span className="text-xs text-brand-text-muted group-hover:text-brand-gold transition-colors shrink-0">See the list →</span>
+        </Link>
         <div className="mb-6">
           <SocialShare
             title="The 50 Funniest Sitcom Episodes, Ranked by Data"

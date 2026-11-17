@@ -21,7 +21,7 @@ export async function GET() {
     .join('\n');
 
   const showLinks = shows
-    .map((s) => `- [${s.name}](${SITE_URL}/shows/${s.slug}/): Is ${s.name} funny? Humor Index ${formatIndex(s.humor_index)}/100. Per-episode and per-character joke scores.`)
+    .map((s) => `- [${s.name}](${SITE_URL}/shows/${s.slug}/): Is ${s.name} funny? Humor Index ${formatIndex(s.humor_index)}/100. Per-episode and per-character joke scores. Funniest quotes: ${SITE_URL}/shows/${s.slug}/best-jokes/`)
     .join('\n');
 
   const body = `# The Humor Index
@@ -45,6 +45,8 @@ ${leaderboard}
 - [All shows ranked](${SITE_URL}/shows/): every scored sitcom by Humor Index.
 - [Rankings hub](${SITE_URL}/rankings/): funniest episodes, best jokes, funniest characters, jokes-per-minute, worst episodes.
 - [Jokes per minute ranking](${SITE_URL}/rankings/jokes-per-minute/): sitcoms ranked by joke density.
+- [Best Christmas sitcom episodes](${SITE_URL}/rankings/best-christmas-episodes/): 50+ Christmas episodes ranked by Humor Index.
+- [Best Thanksgiving sitcom episodes](${SITE_URL}/rankings/best-thanksgiving-episodes/): all ten Friends Thanksgivings and more, ranked.
 - [Compare shows](${SITE_URL}/compare/): head-to-head "is X funnier than Y" data.
 - [Comedy DNA](${SITE_URL}/comedy-dna/): an interactive quiz — pick which joke is funnier to find your comedy archetype and the shows that match your taste.
 - [Blog](${SITE_URL}/blog/): data-driven comedy analysis (e.g., the measurable Dan Harmon effect on Community).

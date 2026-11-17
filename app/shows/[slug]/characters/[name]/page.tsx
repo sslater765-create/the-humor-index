@@ -301,6 +301,17 @@ export default async function CharacterPage({
             ))}
           </div>
         </section>
+
+        <p className="mt-10 border-t border-brand-border pt-6 text-sm text-brand-text-muted leading-relaxed">
+          See where {character.name}&rsquo;s best lines land among the{' '}
+          <Link href={`/shows/${params.slug}/best-jokes`} className="text-brand-gold hover:underline">
+            50 funniest {show.name} quotes
+          </Link>
+          , or{' '}
+          <Link href={`/shows/${params.slug}/episodes-ranked`} className="text-brand-gold hover:underline">
+            every {show.name} episode ranked
+          </Link>.
+        </p>
       </div>
     </div>
   );

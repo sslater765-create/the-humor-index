@@ -9,24 +9,35 @@ import ScaleNote from '@/components/ui/ScaleNote';
 
 export const dynamic = 'force-static';
 
-export const metadata = {
-  title: 'Jokes Per Minute: Every Sitcom Ranked by Joke Density',
-  description:
-    'Which sitcom has the most jokes per minute? We counted and scored every joke across 9 shows. See the full jokes-per-minute ranking — from Friends and 30 Rock down to Arrested Development.',
-  openGraph: {
-    title: 'Jokes Per Minute — Every Sitcom Ranked by Joke Density',
-    description: 'We counted every joke in 9 sitcoms. Here is the definitive jokes-per-minute ranking.',
-    images: ['/og-image.png'],
-  },
-  alternates: {
-    canonical: `${SITE_URL}/rankings/jokes-per-minute/`,
-  },
-};
-
-export default async function JokesPerMinutePage() {
-  const shows = (rankable(await getAllShows()))
+async function rankedByJpm() {
+  return rankable(await getAllShows())
     .filter(s => (s.humor_index || 0) > 0 && (s.avg_jpm || 0) > 0)
     .sort((a, b) => (b.avg_jpm || 0) - (a.avg_jpm || 0));
+}
+
+// Built from live data so the snippet Google shows never goes stale
+// (it said "9 shows" long after the board had grown).
+export async function generateMetadata() {
+  const shows = await rankedByJpm();
+  const first = shows[0];
+  const last = shows[shows.length - 1];
+  const description = `Which sitcom has the most jokes per minute? We counted and scored every joke across ${shows.length} shows. ${first ? `${first.name} leads at ${(first.avg_jpm || 0).toFixed(2)} a minute` : ''}${last && last !== first ? `; ${last.name} is last at ${(last.avg_jpm || 0).toFixed(2)}` : ''}. See the full ranking.`;
+  return {
+    title: 'Jokes Per Minute: Every Sitcom Ranked by Joke Density',
+    description,
+    openGraph: {
+      title: 'Jokes Per Minute — Every Sitcom Ranked by Joke Density',
+      description: `We counted every joke in ${shows.length} sitcoms. Here is the jokes-per-minute ranking.`,
+      images: ['/og-image.png'],
+    },
+    alternates: {
+      canonical: `${SITE_URL}/rankings/jokes-per-minute/`,
+    },
+  };
+}
+
+export default async function JokesPerMinutePage() {
+  const shows = await rankedByJpm();
 
   const leader = shows[0];
 
@@ -98,7 +109,7 @@ export default async function JokesPerMinutePage() {
         <div className="mb-6">
           <SocialShare
             title="Sitcoms Ranked by Jokes Per Minute"
-            text="We counted every joke in 9 sitcoms. Here's the definitive jokes-per-minute ranking."
+            text={`We counted every joke in ${shows.length} sitcoms. Here's the jokes-per-minute ranking.`}
             url="/rankings/jokes-per-minute"
           />
         </div>
@@ -114,20 +125,27 @@ export default async function JokesPerMinutePage() {
 
         <div className="space-y-2">
           {shows.map((s, i) => (
-            <Link
+            <div
               key={s.slug}
-              href={`/shows/${s.slug}`}
               className="flex items-center gap-4 p-4 bg-brand-card border border-brand-border rounded-xl hover:border-brand-gold/40 transition-colors group"
             >
               <span className={`font-mono text-sm w-8 text-right ${i < 3 ? 'text-brand-gold font-medium' : 'text-brand-text-muted'}`}>
                 {i + 1}
               </span>
               <div className="flex-1 min-w-0">
-                <div className="text-brand-text-primary font-medium group-hover:text-brand-gold transition-colors">
+                <Link href={`/shows/${s.slug}`} className="text-brand-text-primary font-medium hover:text-brand-gold transition-colors">
                   {s.name}
-                </div>
+                </Link>
                 <div className="text-xs text-brand-text-muted mt-0.5">
                   {s.total_jokes_analyzed.toLocaleString()} jokes across {s.total_episodes} episodes
+                  {' · '}
+                  <Link href={`/shows/${s.slug}/best-jokes`} className="text-brand-text-secondary hover:text-brand-gold transition-colors">
+                    funniest quotes
+                  </Link>
+                  {' · '}
+                  <Link href={`/shows/${s.slug}/episodes-ranked`} className="text-brand-text-secondary hover:text-brand-gold transition-colors">
+                    episodes ranked
+                  </Link>
                 </div>
                 <div className="relative h-1.5 mt-2 bg-brand-surface rounded-full overflow-hidden max-w-md">
                   <div className="absolute h-full rounded-full bg-brand-gold/70" style={{ width: `${((s.avg_jpm || 0) / maxJpm) * 100}%` }} />
@@ -137,7 +155,7 @@ export default async function JokesPerMinutePage() {
                 <span className="font-mono text-lg text-brand-gold font-medium">{(s.avg_jpm || 0).toFixed(2)}</span>
                 <div className="text-[10px] text-brand-text-muted uppercase tracking-widest">jokes / min</div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
 

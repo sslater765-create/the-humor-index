@@ -122,7 +122,11 @@ export default async function EpisodesRankedPage({ params }: { params: { slug: s
           <Link href={`/shows/${params.slug}/${worst.season}/${worst.episode_number}`} className="text-brand-gold hover:underline">
             &ldquo;{worst.title}&rdquo;
           </Link>{' '}
-          ({formatIndex(worst.humor_index)}). Tap any episode for its full joke-by-joke breakdown.
+          ({formatIndex(worst.humor_index)}). Tap any episode for its full joke-by-joke breakdown, or jump
+          straight to the{' '}
+          <Link href={`/shows/${params.slug}/best-jokes`} className="text-brand-gold hover:underline">
+            50 funniest {show.name} quotes
+          </Link>.
         </p>
 
         <div className="space-y-2">
@@ -150,7 +154,8 @@ export default async function EpisodesRankedPage({ params }: { params: { slug: s
         <div className="mt-10 border-t border-brand-border pt-6 text-sm text-brand-text-muted">
           See also the{' '}
           <Link href={`/shows/${params.slug}`} className="text-brand-gold hover:underline">{show.name} show breakdown</Link>,{' '}
-          <Link href={`/shows/${params.slug}/arc`} className="text-brand-gold hover:underline">season-by-season arc</Link>, and the{' '}
+          <Link href={`/shows/${params.slug}/arc`} className="text-brand-gold hover:underline">season-by-season arc</Link>,{' '}
+          <Link href={`/shows/${params.slug}/best-jokes`} className="text-brand-gold hover:underline">funniest {show.name} quotes</Link>, and the{' '}
           <Link href="/rankings/funniest-episodes" className="text-brand-gold hover:underline">funniest episodes across all shows</Link>.
         </div>
       </div>

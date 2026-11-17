@@ -493,6 +493,43 @@ export default async function RankingsPage() {
           </Link>
         </div>
 
+        {/* HOLIDAYS + QUOTES — seasonal lists and one quotes page per show */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <div className="bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-emerald-400 font-medium mb-1">Holiday Episodes</p>
+            <h2 className="font-serif italic text-2xl text-brand-text-primary mb-5">The Best Holiday Episodes, Ranked</h2>
+            <div className="space-y-3">
+              <Link href="/rankings/best-christmas-episodes" className="flex items-center justify-between gap-4 pb-3 border-b border-brand-border group">
+                <span className="font-serif italic text-xl text-brand-text-primary group-hover:text-brand-gold transition-colors">Christmas</span>
+                <span className="text-xs text-brand-text-muted group-hover:text-brand-gold transition-colors">50+ episodes →</span>
+              </Link>
+              <Link href="/rankings/best-thanksgiving-episodes" className="flex items-center justify-between gap-4 group">
+                <span className="font-serif italic text-xl text-brand-text-primary group-hover:text-brand-gold transition-colors">Thanksgiving</span>
+                <span className="text-xs text-brand-text-muted group-hover:text-brand-gold transition-colors">All ten Friends ones, and more →</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-sky-400 font-medium mb-1">Quotes</p>
+            <h2 className="font-serif italic text-2xl text-brand-text-primary mb-5">The Funniest Quotes from Every Show</h2>
+            <div className="flex flex-wrap gap-2">
+              {shows
+                .filter(s => s.humor_index > 0)
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map(s => (
+                  <Link
+                    key={s.slug}
+                    href={`/shows/${s.slug}/best-jokes`}
+                    className="text-xs px-3 py-1.5 rounded-full bg-brand-surface border border-brand-border text-brand-text-secondary hover:border-brand-gold/50 hover:text-brand-gold transition-colors"
+                  >
+                    {s.name}
+                  </Link>
+                ))}
+            </div>
+          </div>
+        </div>
+
         {/* SEARCH — full-width minimal closer */}
         <Link
           href="/search"

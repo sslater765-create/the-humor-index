@@ -13,6 +13,7 @@ export const dynamicParams = true;
 // Auto-generate every possible A-vs-B matchup from available shows
 import { SHOW_SLUGS } from '@/lib/constants';
 import { SITE_URL } from '@/lib/site';
+import { isAwaitingRescore } from '@/lib/scale';
 
 function generateAllMatchups() {
   // Generate one matchup per unordered pair (alpha-first) to avoid duplicate pages.
@@ -61,9 +62,13 @@ export async function generateMetadata({ params }: { params: { matchup: string }
   if (!a || !b) return {};
 
   const winner = a.humor_index >= b.humor_index ? a : b;
+  // A pair with a show still on the earlier model compares numbers from two
+  // scales. Keep it reachable, keep it out of the index until both are rescored.
+  const crossScale = isAwaitingRescore(a.slug) || isAwaitingRescore(b.slug);
 
   return {
     title: `Is ${a.name} Funnier Than ${b.name}? The Data`,
+    ...(crossScale ? { robots: { index: false, follow: true } } : {}),
     description: `Is ${a.name} funnier than ${b.name}? We analyzed every joke in both to settle the debate. ${winner.name} scores ${formatIndex(winner.humor_index)} vs ${formatIndex(winner === a ? b.humor_index : a.humor_index)}. See the full ${a.name} vs ${b.name} breakdown.`,
     openGraph: {
       title: `${a.name} vs ${b.name} — The Data Settles It`,
