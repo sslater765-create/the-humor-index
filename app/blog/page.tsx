@@ -33,6 +33,7 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // cannot drift from the posts themselves. Only the card extras live here.
 // A post missing from CARDS still renders, with default extras.
 const CARDS: Record<string, { readTime: string; stat: string; statLabel: string }> = {
+  'friends-most-jokes-ranked-eleventh': { readTime: '4 min read', stat: '4.01', statLabel: 'Friends jokes per minute, most on the board' },
   'chappelles-show-sketch-advantage': { readTime: '3 min read', stat: '7.70', statLabel: "Chappelle's Show per-joke impact" },
   'most-quotable-show': { readTime: '3 min read', stat: '37.5%', statLabel: '30 Rock jokes rated 8+ for quotability' },
   'most-consistent-show': { readTime: '3 min read', stat: '83.8', statLabel: 'Parks and Rec lowest episode of 122' },
