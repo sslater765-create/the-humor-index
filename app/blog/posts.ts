@@ -5,6 +5,78 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'friends-most-jokes-ranked-eleventh': {
+    title: "Friends Tells More Jokes Than Any Show We Rank. It Finishes 11th.",
+    description: "Rescored on our current model, Friends moves from 73.0 to 87.1. It leads the board at 4.01 jokes per minute and sits 13th of 14 on craft, which is the number that decides rankings.",
+    date: '2026-11-16',
+    category: 'Analysis',
+    content: `
+Friends is the latest show through our rescore, and it is off the bottom of the board. On the earlier model it scored 73.0, last of everything we had scored. On the current model it scores **87.1**, eleventh of the 14 ranked shows, between Schitt's Creek (87.6) and Broad City (86.9).
+
+The jump looks like every other rescore. All 231 scored episodes went through three-run consensus scoring, and the average episode gained 14.1 points. Only three episodes went down, none by more than 3.6. The new model also found 17,755 jokes on transcripts where the old one found 13,949, an increase of 27%. If you want the background on why rescored shows move this much, it is in [Why Some Scores Jumped Ten Points](/blog/what-the-rescore-changed).
+
+What makes Friends worth a post is where it lands, and why.
+
+## The most jokes on the board
+
+Friends averages **4.01 jokes per minute**. No other ranked show reaches 3.6. It also has the second-lowest craft score on the board, ahead of only Freaks and Geeks.
+
+| Show | Jokes per minute | Avg craft | Avg impact | Humor Index |
+|---|---:|---:|---:|---:|
+| 30 Rock | 3.53 | 7.68 | 7.57 | 97.5 |
+| Seinfeld | 3.57 | 7.47 | 7.39 | 94.4 |
+| Friends | 4.01 | 7.06 | 7.08 | 87.1 |
+| Broad City | 3.52 | 7.16 | 7.07 | 86.9 |
+
+Seinfeld is the cleanest comparison: a multi-camera NBC sitcom from the same decade, shot in front of the same kind of audience. Friends tells about 12% more jokes per minute. Seinfeld's jokes average 0.41 points higher on craft, and Seinfeld finishes 7.3 points ahead.
+
+This is the pattern from [our density-vs-craft post](/blog/density-vs-craft), now with a bigger example. Volume counts for something in the index, but craft carries most of the weight. Inside Friends itself, an episode's score tracks its average craft closely (r = 0.89) and its joke rate only loosely (r = 0.36).
+
+## Ten seasons at the same level
+
+Most long-running shows have a visible arc. Friends barely has one. Every season averages between 86.6 and 89.0.
+
+| Season | Episodes | Jokes per minute | Avg craft | Humor Index |
+|---|---:|---:|---:|---:|
+| 1 | 24 | 4.13 | 7.07 | 87.3 |
+| 2 | 23 | 4.01 | 7.14 | 89.0 |
+| 3 | 25 | 3.91 | 7.07 | 87.2 |
+| 4 | 24 | 4.45 | 6.99 | 86.8 |
+| 5 | 23 | 4.26 | 7.01 | 86.6 |
+| 6 | 25 | 4.16 | 7.05 | 87.0 |
+| 7 | 23 | 4.15 | 7.03 | 87.2 |
+| 8 | 24 | 3.92 | 7.05 | 86.8 |
+| 9 | 23 | 3.69 | 7.07 | 86.9 |
+| 10 | 17 | 3.45 | 7.12 | 87.4 |
+
+The joke rate does move. It peaks in Season 4 and falls steadily over the last five seasons, ending at 3.45 in Season 10, the lowest of the run. Craft holds steady the whole way, so the score does too. Season 10 has the fewest jokes per minute of any season and the second-highest Humor Index.
+
+The flat seasons hide plenty of variation between episodes. Friends ranges from 78.0 to 98.1, and its episode spread (a standard deviation of 4.0) is wider than every show in [our consistency table](/blog/most-consistent-show) except Broad City.
+
+## The best episodes
+
+| Episode | Humor Index | IMDb |
+|---|---:|---:|
+| S2E3 "The One Where Heckles Dies" | 98.1 | 8.2 |
+| S3E5 "The One with Frank Jr." | 97.0 | 8.0 |
+| S6E5 "The One with Joey's Porsche" | 96.9 | 8.0 |
+| S5E14 "The One Where Everybody Finds Out" | 96.8 | 9.7 |
+| S1E6 "The One with the Butt" | 95.5 | 7.9 |
+| S8E13 "The One Where Chandler Takes a Bath" | 95.5 | 8.4 |
+
+No Friends episode reaches the 100 cap, so unlike 30 Rock or Chappelle's Show, the order at the top is decided by the index itself, not a tie-break.
+
+"The One Where Everybody Finds Out" is the one episode both measures agree on: fourth here, and at 9.7 the highest-rated Friends episode on IMDb. That agreement is unusual. Across all 231 episodes, the correlation between our score and IMDb rating is 0.08, close to none. The lowest-scoring episodes include "The One Where Rachel Has a Baby" (78.9 here, 8.8 on IMDb), the first half of the Season 8 finale and an episode built around story more than jokes.
+
+## What to keep in mind
+
+Friends now sits 0.2 points above Broad City and 0.5 below Schitt's Creek. Gaps that small are inside the noise of the scorer, so treat those three as a tie, with Friends clearly behind the top eight and clearly ahead of Freaks and Geeks.
+
+Seven shows are still on the earlier model and listed unranked: The Simpsons, It's Always Sunny in Philadelphia, The Fresh Prince of Bel-Air, Futurama, Curb Your Enthusiasm, Taxi and Community. Each one will get the same treatment.
+
+*Covers the 14 shows scored on our current model.*
+`,
+  },
   'chappelles-show-sketch-advantage': {
     title: "A Sketch Show Has Four of Our Five Top-Ranked Episodes",
     description: "Chappelle's Show has the highest per-joke impact on the board (7.70) and four of the top five episodes. A sketch has no plot to service, and it shows in the numbers.",
