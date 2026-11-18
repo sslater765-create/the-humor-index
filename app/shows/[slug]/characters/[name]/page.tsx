@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getShow, getCharacters, getCharacterJokes } from '@/lib/data';
+import { getShow, getCharacters, getCharacterJokes, getEpisodes } from '@/lib/data';
+import { cleanJokeText } from '@/lib/quotes';
 import { SHOW_SLUGS } from '@/lib/constants';
 import { JOKE_TYPE_LABELS } from '@/lib/scoring';
 import { charImageSrc } from '@/lib/charImage';
@@ -40,10 +41,17 @@ export async function generateMetadata({
   const character = characters.find(c => c.name.toLowerCase() === name.toLowerCase());
   const jokeCount = character?.total_jokes ?? 0;
   const war = character?.war ?? 0;
-  const dominantTypes = (character?.dominant_types ?? []).slice(0, 2).map(t => t.replace(/_/g, ' ')).join(' and ');
 
+  const display = (character?.character_full_name || character?.name || name).replace(/\s*\(voice\)/i, '');
+  let scoredEpisodes = 0;
+  try { scoredEpisodes = (await getEpisodes(params.slug)).length; } catch { /* none */ }
+  const role = character && scoredEpisodes > 0 && character.episodes_appeared / scoredEpisodes >= 0.4
+    ? 'a main character'
+    : 'a recurring character';
+  // Answer-first description: searches for these pages are mostly the bare
+  // name plus the show ("janice friends", "dr drew 30 rock").
   const descBase = character
-    ? `${jokeCount.toLocaleString()} analyzed jokes, ${war.toFixed(1)} career WAR across ${character.episodes_appeared} episodes. Best at ${dominantTypes || 'comedy'}. See every joke ranked on ${show.name}.`
+    ? `${display} is ${role} on ${show.name}${character.actor ? `, played by ${character.actor}` : ''}. The funniest ${character.name} lines, every episode with a scored joke, and all ${jokeCount.toLocaleString()} jokes ranked.`
     : `Every joke by ${name} on ${show.name}, scored and ranked. See craft scores, impact ratings, and comedy style breakdown.`;
 
   // Thin/bit-part characters: keep reachable but noindex (avoid thin-content pages).
@@ -51,7 +59,7 @@ export async function generateMetadata({
   const ogImg = `/api/og?title=${encodeURIComponent(name)}&score=${war.toFixed(1)}&subtitle=${encodeURIComponent(`${show.name} · ${jokeCount.toLocaleString()} jokes · ${character?.episodes_appeared ?? 0} eps`)}`;
 
   return {
-    title: `${name}'s Funniest Lines & Comedy Score (${show.name})`,
+    title: `${display} in ${show.name}: Funniest Lines & Every Episode`,
     description: descBase,
     ...(thin ? { robots: { index: false, follow: true } } : {}),
     alternates: {
@@ -60,17 +68,21 @@ export async function generateMetadata({
       canonical: `${SITE_URL}/shows/${params.slug}/characters/${encodeURIComponent(character?.name ?? name)}/`,
     },
     openGraph: {
-      title: `${name} — Funniest Lines & Comedy Score · ${show.name}`,
+      title: `${display} in ${show.name}: Funniest Lines & Every Episode`,
       description: descBase,
       images: [ogImg],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${name} — Funniest Lines & Comedy Score · ${show.name}`,
+      title: `${display} in ${show.name}: Funniest Lines & Every Episode`,
       description: descBase,
       images: [ogImg],
     },
   };
+}
+
+function byEpisodeCount(jokes: Array<{ season: number; episode_number: number }>): number {
+  return new Set(jokes.map(j => `${j.season}:${j.episode_number}`)).size;
 }
 
 export default async function CharacterPage({
@@ -101,6 +113,86 @@ export default async function CharacterPage({
   });
   const standouts = dedupedJokes.slice(0, 5);
 
+  // "Who is X" facts, all derived from the scored data.
+  const display = (character.character_full_name || character.name).replace(/\s*\(voice\)/i, '');
+  let scoredEpisodes = 0;
+  try { scoredEpisodes = (await getEpisodes(params.slug)).length; } catch { /* none */ }
+  const isMain = scoredEpisodes > 0 && Math.max(byEpisodeCount(jokes), Math.min(character.episodes_appeared, scoredEpisodes)) / scoredEpisodes >= 0.4;
+  const byEpisode = new Map<string, { season: number; episode: number; title: string; n: number }>();
+  for (const item of jokes) {
+    const k = `${item.season}:${item.episode_number}`;
+    const cur = byEpisode.get(k) ?? { season: item.season, episode: item.episode_number, title: item.episode, n: 0 };
+    cur.n += 1;
+    byEpisode.set(k, cur);
+  }
+  const chrono = Array.from(byEpisode.values()).sort((a, b) => a.season - b.season || a.episode - b.episode);
+  const first = chrono.length >= 0.8 * Math.min(character.episodes_appeared, scoredEpisodes || character.episodes_appeared) ? chrono[0] : undefined;
+  // Recurring characters: list every episode in order. Main cast: the twelve
+  // episodes where they land the most jokes.
+  const episodeList = isMain
+    ? [...chrono].sort((a, b) => b.n - a.n).slice(0, 12)
+    : chrono;
+  // Funniest line: the best joke the character actually leads, not one
+  // where they are only in the scene.
+  const lname = character.name.toLowerCase();
+  const best =
+    dedupedJokes.find(it => ((it.joke.characters as string[] | undefined)?.[0] ?? '').toLowerCase() === lname) ??
+    standouts[0];
+  // Counted from the jokes themselves, so it never exceeds the episodes
+  // actually on the site (the stored episodes_appeared can be stale).
+  // The stored count can run slightly stale after clip shows were dropped,
+  // and the joke scan can undercount when a character is credited under
+  // another name in some episodes. Cap the stored count at the episodes on
+  // the site; only claim a first episode and list episodes when the scan
+  // found most of them.
+  const storedCount = Math.min(character.episodes_appeared, scoredEpisodes || character.episodes_appeared);
+  const scanComplete = chrono.length >= 0.8 * storedCount;
+  const epCount = scanComplete ? chrono.length : storedCount;
+  const bestText = best ? cleanJokeText(best.joke.text as string) : '';
+  const epCode = (s: number, e: number) => `S${s}E${String(e).padStart(2, '0')}`;
+
+  const faqLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `Who is ${display} on ${show.name}?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `${display} is ${isMain ? 'a main character' : 'a recurring character'} on ${show.name}${character.actor ? `, played by ${character.actor}` : ''}. ${character.name} has scored jokes in ${epCount} episodes${first ? `, the earliest in "${first.title}" (${epCode(first.season, first.episode)})` : ''}.`,
+        },
+      },
+      ...(character.actor
+        ? [{
+            '@type': 'Question',
+            name: `Who plays ${display} on ${show.name}?`,
+            acceptedAnswer: { '@type': 'Answer', text: `${character.actor} plays ${display} on ${show.name}.` },
+          }]
+        : []),
+      ...(best
+        ? [{
+            '@type': 'Question',
+            name: `What is ${character.name}'s funniest line on ${show.name}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `By the Humor Index's scoring, it is "${bestText}" from "${best.episode}" (${epCode(best.season, best.episode_number)}).`,
+            },
+          }]
+        : []),
+      ...(!isMain && scanComplete && chrono.length > 1
+        ? [{
+            '@type': 'Question',
+            name: `What episodes of ${show.name} is ${character.name} in?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `${character.name} has scored jokes in ${chrono.length} episodes: ${chrono.map(e => `"${e.title}" (${epCode(e.season, e.episode)})`).join(', ')}.`,
+            },
+          }]
+        : []),
+    ],
+  };
+
   // JSON-LD: Person (fictional character) + BreadcrumbList
   const jsonLd = [
     {
@@ -108,7 +200,7 @@ export default async function CharacterPage({
       '@type': 'Person',
       name: character.character_full_name || character.name,
       alternateName: character.name,
-      description: `Fictional character on ${show.name}. ${character.total_jokes.toLocaleString()} analyzed jokes across ${character.episodes_appeared} episodes.`,
+      description: `Fictional character on ${show.name}. ${character.total_jokes.toLocaleString()} analyzed jokes across ${epCount} episodes.`,
       url: `${SITE_URL}/shows/${params.slug}/characters/${encodeURIComponent(character.name)}/`,
       ...(character.actor && {
         performer: { '@type': 'Person', name: character.actor },
@@ -135,6 +227,7 @@ export default async function CharacterPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       {/* Hero backdrop */}
       <div className="relative w-full h-[200px] sm:h-[260px] overflow-hidden">
         {show.backdrop_path ? (
@@ -185,7 +278,7 @@ export default async function CharacterPage({
                 </p>
               )}
               <p className="text-xs text-brand-text-muted mt-1">
-                {character.total_jokes} jokes across {character.episodes_appeared} episodes of {show.name}
+                {character.total_jokes} jokes across {epCount} episodes of {show.name}
               </p>
             </div>
           </div>
@@ -193,12 +286,67 @@ export default async function CharacterPage({
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-6 pb-8">
+        {/* Who is: the answer a name search is looking for, first. */}
+        <section className="mb-8 p-5 sm:p-6 bg-brand-card border border-brand-gold/30 rounded-xl">
+          <h2 className="text-[11px] uppercase tracking-widest text-brand-gold mb-3">
+            Who is {display} on {show.name}?
+          </h2>
+          <p className="text-[15px] text-brand-text-primary leading-relaxed">
+            {display} is {isMain ? 'a main character' : 'a recurring character'} on{' '}
+            <Link href={`/shows/${params.slug}`} className="text-brand-gold hover:underline">{show.name}</Link>
+            {character.actor ? <>, played by {character.actor}</> : null}.{' '}
+            {character.name} has scored jokes in {epCount}
+            {scoredEpisodes > 0 ? <> of the {scoredEpisodes}</> : null} episodes we analyzed
+            {first ? (
+              <>
+                , starting with{' '}
+                <Link href={`/shows/${params.slug}/${first.season}/${first.episode}`} className="text-brand-gold hover:underline">
+                  &ldquo;{first.title}&rdquo;
+                </Link>{' '}
+                ({epCode(first.season, first.episode)})
+              </>
+            ) : null}
+            .
+          </p>
+          {best && (
+            <div className="mt-4">
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-1.5">Funniest line</p>
+              <blockquote className="text-lg text-brand-text-primary leading-snug">&ldquo;{bestText}&rdquo;</blockquote>
+              <p className="mt-1.5 text-xs text-brand-text-muted">
+                <Link href={`/shows/${params.slug}/${best.season}/${best.episode_number}`} className="hover:text-brand-gold transition-colors">
+                  {best.episode} <span className="font-mono">{epCode(best.season, best.episode_number)}</span>
+                </Link>
+              </p>
+            </div>
+          )}
+          {scanComplete && episodeList.length > 1 && (
+            <div className="mt-5">
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-2">
+                {isMain ? `Episodes with the most ${character.name} jokes` : `Every ${character.name} episode`}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {episodeList.map(e => (
+                  <Link
+                    key={`${e.season}-${e.episode}`}
+                    href={`/shows/${params.slug}/${e.season}/${e.episode}`}
+                    className="text-xs px-3 py-1.5 rounded-full bg-brand-surface border border-brand-border text-brand-text-secondary hover:border-brand-gold/50 hover:text-brand-gold transition-colors"
+                  >
+                    <span className="font-mono text-brand-text-muted mr-1.5">{epCode(e.season, e.episode)}</span>
+                    {e.title}
+                    {isMain && <span className="font-mono text-brand-text-muted ml-1.5">{e.n}</span>}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+        </section>
+
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
           {character.war != null && (
             <ScoreCard label="WAR" value={character.war} sub="Wins Above Replacement" />
           )}
-          <ScoreCard label="Total Jokes" value={character.total_jokes} sub={`${character.episodes_appeared} episodes`} />
+          <ScoreCard label="Total Jokes" value={character.total_jokes} sub={`${epCount} episodes`} />
           <ScoreCard label="Avg Craft" value={character.avg_craft} />
           <ScoreCard label="Avg Impact" value={character.avg_impact} />
           <ScoreCard
@@ -211,7 +359,7 @@ export default async function CharacterPage({
         {/* Data-driven summary — unique per character (SEO: "is X funny") */}
         <p className="text-sm text-brand-text-secondary leading-relaxed mb-8 max-w-2xl">
           {character.name} delivers <span className="text-brand-text-primary">{character.total_jokes} scored jokes</span> across{' '}
-          {character.episodes_appeared} episodes of {show.name}, averaging {character.avg_craft.toFixed(1)} on craft and{' '}
+          {epCount} episodes of {show.name}, averaging {character.avg_craft.toFixed(1)} on craft and{' '}
           {character.avg_impact.toFixed(1)} on impact
           {character.war != null ? <> for a career WAR of <span className="text-brand-text-primary">{character.war.toFixed(1)}</span></> : ''}.
           {character.dominant_types[0] && JOKE_TYPE_LABELS[character.dominant_types[0]]
