@@ -55,7 +55,9 @@ export async function generateMetadata({
     description: descBase,
     ...(thin ? { robots: { index: false, follow: true } } : {}),
     alternates: {
-      canonical: `${SITE_URL}/shows/${params.slug}/characters/${params.name}/`,
+      // Canonical spells the name the way the data does, so /MAC/ and /Mac/
+      // count as one page instead of competing duplicates.
+      canonical: `${SITE_URL}/shows/${params.slug}/characters/${encodeURIComponent(character?.name ?? name)}/`,
     },
     openGraph: {
       title: `${name} — Funniest Lines & Comedy Score · ${show.name}`,

@@ -108,9 +108,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const ch of characters) {
         // Skip thin/bit-part character pages (e.g. "Warehouse worker", one-liners)
         // — they dilute crawl budget and read as thin content at scale.
-        // The page itself exists from 20 jokes / 3 episodes; the sitemap lists
-        // only characters with enough material to rank (50 jokes, 5 episodes).
-        if ((ch.total_jokes ?? 0) < 50 || (ch.episodes_appeared ?? 0) < 5) continue;
+        // Same bar as the page's own noindex rule. Recurring guests (Janice,
+        // Judy Geller, Steinbrenner, Dr. Drew) fall under 50 jokes but draw
+        // real name searches, so a stricter sitemap cut costs traffic.
+        if ((ch.total_jokes ?? 0) < 20 || (ch.episodes_appeared ?? 0) < 3) continue;
         characterPages.push({
           url: url(`/shows/${show.slug}/characters/${encodeURIComponent(ch.name)}`),
           lastModified: SITE_REFRESHED,
