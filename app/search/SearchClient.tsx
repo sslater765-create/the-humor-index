@@ -1,5 +1,5 @@
 'use client';
-import { useState, useMemo, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { JokeType } from '@/lib/types';
 import SurpriseButton from '@/components/ui/SurpriseButton';
@@ -49,10 +49,13 @@ function expand(j: CompactJoke): SearchableJoke {
   };
 }
 
-// search-rev: relevance ranking + token filter (v3) — bump forces fresh chunk/build
+// search-rev: server-side search (v4). The 33 MB index stays on the server; this
+// page asks /api/search for the top 50 matches as you type.
 export default function SearchClient() {
-  const [jokes, setJokes] = useState<SearchableJoke[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [results, setResults] = useState<SearchableJoke[]>([]);
+  const [suggestions, setSuggestions] = useState<{ label: string; type: 'character' | 'episode' | 'show'; count: number; slug?: string }[]>([]);
+  const [meta, setMeta] = useState<{ total: number; types: string[] }>({ total: 0, types: [] });
+  const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState('');
   const [committed, setCommitted] = useState('');
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -60,54 +63,39 @@ export default function SearchClient() {
   const [filterType, setFilterType] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Fetch the joke index once on mount. Browser cache handles repeat visits.
   useEffect(() => {
-    let cancelled = false;
-    fetch('/data/search-index.json')
-      .then(r => r.json())
-      .then((data: CompactJoke[]) => {
-        if (cancelled) return;
-        setJokes(data.map(expand));
-        setLoading(false);
-      })
-      .catch(() => {
-        if (cancelled) return;
-        setLoading(false);
-      });
-    return () => { cancelled = true; };
+    fetch('/api/search/?meta=1').then(r => r.json()).then(setMeta).catch(() => { /* counts are cosmetic */ });
   }, []);
 
-  const allTypes = useMemo(() => {
-    const types = new Set<string>();
-    jokes.forEach(j => j.joke_types.forEach(t => types.add(t)));
-    return Array.from(types).sort();
-  }, [jokes]);
+  const allTypes = meta.types;
+  const jokes = { length: meta.total };
 
-  // Build suggestion index: characters, episode titles, show names
-  const suggestionIndex = useMemo(() => {
-    const items = new Map<string, { label: string; type: 'character' | 'episode' | 'show'; count: number; slug?: string }>();
-    jokes.forEach(j => {
-      j.characters.forEach(c => {
-        const key = `${c.toLowerCase()}-${j.showSlug}`;
-        const existing = items.get(key);
-        if (existing) existing.count++;
-        else items.set(key, { label: c, type: 'character', count: 1, slug: j.showSlug });
-      });
-      const epKey = `${j.showName} S${j.season}E${String(j.episodeNumber).padStart(2, '0')} ${j.episodeTitle}`;
-      if (!items.has(epKey.toLowerCase())) {
-        items.set(epKey.toLowerCase(), { label: epKey, type: 'episode', count: 1, slug: j.showSlug });
-      }
-    });
-    return Array.from(items.values()).sort((a, b) => b.count - a.count);
-  }, [jokes]);
+  // Live search: from 3 characters as you type, or whatever was submitted.
+  const activeQuery = query.length >= 3 ? query : committed || '';
 
-  const suggestions = useMemo(() => {
-    if (!query || query.length < 2 || !showSuggestions) return [];
-    const q = query.toLowerCase();
-    return suggestionIndex
-      .filter(s => s.label.toLowerCase().includes(q))
-      .slice(0, 6);
-  }, [query, suggestionIndex, showSuggestions]);
+  useEffect(() => {
+    if (!activeQuery && !filterType) { setResults([]); return; }
+    const ctl = new AbortController();
+    const t = setTimeout(() => {
+      setLoading(true);
+      const params = new URLSearchParams({ q: activeQuery, type: filterType, sort: sortBy });
+      fetch(`/api/search/?${params}`, { signal: ctl.signal })
+        .then(r => r.json())
+        .then((d: { results: CompactJoke[] }) => { setResults(d.results.map(expand)); setLoading(false); })
+        .catch(() => setLoading(false));
+    }, 180);
+    return () => { clearTimeout(t); ctl.abort(); };
+  }, [activeQuery, filterType, sortBy]);
+
+  useEffect(() => {
+    if (!showSuggestions || query.length < 2) { setSuggestions([]); return; }
+    const ctl = new AbortController();
+    const t = setTimeout(() => {
+      fetch(`/api/search/?${new URLSearchParams({ q: query, suggest: '1', type: '__none__' })}`, { signal: ctl.signal })
+        .then(r => r.json()).then(d => setSuggestions(d.suggestions ?? [])).catch(() => { /* ignore */ });
+    }, 150);
+    return () => { clearTimeout(t); ctl.abort(); };
+  }, [query, showSuggestions]);
 
   const selectSuggestion = (label: string) => {
     setQuery(label);
@@ -121,53 +109,6 @@ export default function SearchClient() {
     setShowSuggestions(false);
   };
 
-  // Live search — update committed as user types (debounced by query length)
-  const activeQuery = query.length >= 3 ? query : committed || '';
-
-  const results = useMemo(() => {
-    if (!activeQuery && !filterType) return [];
-
-    let filtered = jokes;
-
-    if (filterType) {
-      filtered = filtered.filter(j => j.joke_types.includes(filterType as never));
-    }
-
-    if (activeQuery) {
-      const norm = (str: string) => str.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-      const nq = norm(activeQuery);
-      const tokens = nq.split(" ").filter(Boolean);
-      const tokenRes = tokens.map(t => new RegExp(`\\b${t}\\b`));
-      filtered = filtered.filter(j => {
-        const hay = norm(`${j.text} ${j.characters.join(" ")} ${j.showName} ${j.episodeTitle}`);
-        return tokens.every(t => hay.includes(t));
-      });
-      // Relevance: exact-phrase match ranks far above scattered token hits,
-      // and whole-word matches beat substring noise (e.g. "lie" inside "believe").
-      if (sortBy !== 'craft' && sortBy !== 'impact') {
-        const rel = new WeakMap<object, number>();
-        for (const j of filtered) {
-          const hay = norm(`${j.text} ${j.characters.join(" ")} ${j.showName} ${j.episodeTitle}`);
-          let s = hay.includes(nq) ? 1000 : 0;
-          for (const re of tokenRes) if (re.test(hay)) s += 1;
-          rel.set(j as object, s);
-        }
-        filtered = [...filtered].sort((a, b) =>
-          (rel.get(b as object) ?? 0) - (rel.get(a as object) ?? 0) ||
-          (b.craft_total + b.impact_score) - (a.craft_total + a.impact_score)
-        );
-      }
-    }
-
-    if (sortBy === 'craft') {
-      filtered = [...filtered].sort((a, b) => b.craft_total - a.craft_total);
-    } else if (sortBy === 'impact') {
-      filtered = [...filtered].sort((a, b) => b.impact_score - a.impact_score);
-    }
-
-    return filtered.slice(0, 50);
-  }, [jokes, activeQuery, filterType, sortBy]);
-
   return (
     <div>
       {/* Search input */}
@@ -180,8 +121,7 @@ export default function SearchClient() {
             onChange={e => { setQuery(e.target.value); setShowSuggestions(true); }}
             onFocus={() => setShowSuggestions(true)}
             onKeyDown={e => { if (e.key === 'Enter') handleSubmit(); }}
-            placeholder={loading ? 'Loading joke index…' : 'Search jokes, characters, episodes...'}
-            disabled={loading}
+            placeholder="Search jokes, characters, episodes..."
             className="w-full bg-brand-surface border border-brand-border rounded-xl px-4 py-3 text-brand-text-primary placeholder:text-brand-text-muted focus:outline-none focus:border-brand-gold transition-colors disabled:opacity-60"
             aria-label="Search jokes"
             autoComplete="off"

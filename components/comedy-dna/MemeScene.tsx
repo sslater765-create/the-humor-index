@@ -499,16 +499,16 @@ function propSVG(name: string): ReactNode {
   }
 }
 
-export interface MemeSceneProps { scene?: string; color: string; mono: string; props?: string[]; jokeId?: number; muted?: boolean; ariaLabel?: string; className?: string; }
+export interface MemeSceneProps { scene?: string; color: string; mono: string; props?: string[]; jokeId?: number; /** illustrated card id (public/cards/<art>.png) carried by the joke itself */ art?: number; muted?: boolean; ariaLabel?: string; className?: string; }
 
-export function MemeScene({ scene = 'default', color, mono, props: jokeProps, jokeId, muted = false, ariaLabel, className }: MemeSceneProps) {
+export function MemeScene({ scene = 'default', color, mono, props: jokeProps, jokeId, art, muted = false, ariaLabel, className }: MemeSceneProps) {
   const raw = useId().replace(/[^a-zA-Z0-9]/g, '');
   const bg = `b${raw}`, vig = `v${raw}`;
   const mid = shade(color, 0.6), dark = shade(color, 0.26), light = shade(color, 1.65);
 
   // Signature illustrated card (PNG): render the FULL character art (object-top
   // so heads aren't cut), not the 320x150 banner crop. Early return.
-  const cardHref = jokeId != null && CARD_IDS.has(jokeId) ? `/cards/${jokeId}.png` : null;
+  const cardHref = art != null ? `/cards/${art}.png` : jokeId != null && CARD_IDS.has(jokeId) ? `/cards/${jokeId}.png` : null;
   if (cardHref) {
     const a11yImg = ariaLabel ? { role: 'img' as const, 'aria-label': ariaLabel } : { 'aria-hidden': true as const };
     return (

@@ -1,5 +1,9 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
+import { coverFor } from '@/lib/blogCover';
+import AdSlot from '@/components/ads/AdSlot';
+import RankedRail from '@/components/ads/RankedRail';
 import SocialShare from '@/components/ui/SocialShare';
 import EndOfArticleCTA from '@/components/ui/EndOfArticleCTA';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
@@ -51,9 +55,138 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 
   // Simple markdown-like rendering
   const paragraphs = post.content.trim().split('\n\n');
+  const cover = coverFor(params.slug, post.title, allShows);
+  // In-article ad goes after the third body paragraph (not a heading, table, list or note).
+  let proseCount = 0;
+  let adAfter = -1;
+  paragraphs.forEach((p, i) => {
+    const t = p.trim();
+    if (adAfter < 0 && t && !t.startsWith('#') && !t.startsWith('|') && !t.startsWith('- ') && !t.startsWith('>') && !t.startsWith('![') && ++proseCount === 3) adAfter = i;
+  });
+
+  const renderBlock = (p: string, i: number) => {
+    const trimmed = p.trim();
+    if (!trimmed) return null;
+
+    if (trimmed.startsWith('## ')) {
+      return (
+        <h2 key={i} className="font-serif italic text-2xl sm:text-[1.7rem] text-brand-text-primary mt-10 mb-3 leading-tight">
+          {trimmed.replace('## ', '')}
+        </h2>
+      );
+    }
+
+    // Standalone image: a paragraph that is just ![alt](src)
+    const imgMatch = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    if (imgMatch) {
+      return (
+        <figure key={i} className="my-6">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={imgMatch[2]}
+            alt={imgMatch[1]}
+            className="w-full rounded-xl border border-brand-border"
+            loading="lazy"
+          />
+        </figure>
+      );
+    }
+
+    // Inline formatting: bold, italic, links
+    const formatInline = (text: string) => {
+      return text.split(/(\*\*[^*]+\*\*)/).map((part, j) => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+          return <strong key={j} className="text-brand-text-primary font-medium">{part.slice(2, -2)}</strong>;
+        }
+        return part.split(/(\*[^*]+\*)/).map((sub, k) => {
+          if (sub.startsWith('*') && sub.endsWith('*') && !sub.startsWith('**')) {
+            return <em key={k} className="text-brand-text-muted">{sub.slice(1, -1)}</em>;
+          }
+          return sub.split(/(\[[^\]]+\]\([^)]+\))/).map((linkPart, l) => {
+            const linkMatch = linkPart.match(/\[([^\]]+)\]\(([^)]+)\)/);
+            if (linkMatch) {
+              return <Link key={l} href={linkMatch[2]} className="text-brand-gold hover:underline">{linkMatch[1]}</Link>;
+            }
+            return linkPart;
+          });
+        });
+      });
+    };
+
+    // Markdown tables: header row | --- | separator | data rows
+    const tableLines = trimmed.split('\n');
+    if (
+      tableLines.length >= 2 &&
+      tableLines[0].trim().startsWith('|') &&
+      tableLines[1].includes('-') &&
+      /^\s*\|?[\s:|-]+\|?\s*$/.test(tableLines[1])
+    ) {
+      const parseRow = (line: string) =>
+        line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => c.trim());
+      const headers = parseRow(tableLines[0]);
+      const rows = tableLines.slice(2).filter(l => l.trim()).map(parseRow);
+      return (
+        <div key={i} className="overflow-x-auto my-4">
+          <table className="w-full text-sm border-collapse tabular-nums">
+            <thead>
+              <tr className="border-b border-brand-border">
+                {headers.map((h, j) => (
+                  <th key={j} className="text-left font-medium text-brand-text-primary py-2 px-3 whitespace-nowrap">{formatInline(h)}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, r) => (
+                <tr key={r} className="border-b border-brand-border/40">
+                  {row.map((cell, c) => (
+                    <td key={c} className="py-2 px-3 text-brand-text-secondary align-top">{formatInline(cell)}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+
+    if (trimmed.startsWith('- ')) {
+      const items = trimmed.split('\n').filter(l => l.startsWith('- '));
+      return (
+        <ul key={i} className="space-y-1 ml-4">
+          {items.map((item, j) => (
+            <li key={j} className="text-base text-brand-text-secondary leading-relaxed list-disc">
+              {formatInline(item.replace(/^- /, ''))}
+            </li>
+          ))}
+        </ul>
+      );
+    }
+
+    // Blockquote — used for Editor's Note / Correction callouts
+    if (trimmed.startsWith('> ')) {
+      const lines = trimmed.split('\n').map(l => l.replace(/^>\s?/, '')).join('\n').trim();
+      return (
+        <aside
+          key={i}
+          className="my-6 border-l-4 border-brand-gold bg-brand-gold/5 px-4 py-3 rounded-r-md"
+        >
+          <p className="text-sm text-brand-text-secondary leading-relaxed">
+            {formatInline(lines)}
+          </p>
+        </aside>
+      );
+    }
+
+    return (
+      <p key={i} className="text-base text-brand-text-secondary leading-[1.75]">
+        {formatInline(trimmed)}
+      </p>
+    );
+  };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-14">
+    <div className="max-w-3xl min-w-0">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -102,125 +235,18 @@ export default async function BlogPost({ params }: { params: { slug: string } })
         />
       </div>
 
-      <article className="prose-custom space-y-4">
+      {cover && (
+        <figure className="relative aspect-[21/9] rounded-2xl overflow-hidden border border-brand-border mb-8">
+          <Image src={`https://image.tmdb.org/t/p/w1280${cover.backdrop}`} alt={cover.name} fill priority sizes="(min-width: 1024px) 768px, 100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 to-transparent" />
+          <figcaption className="absolute bottom-3 right-4 text-[10px] uppercase tracking-widest text-white/70">{cover.name}</figcaption>
+        </figure>
+      )}
+
+      <article className="prose-custom space-y-5">
         {paragraphs.map((p, i) => {
-          const trimmed = p.trim();
-          if (!trimmed) return null;
-
-          if (trimmed.startsWith('## ')) {
-            return (
-              <h2 key={i} className="text-xl font-medium text-brand-text-primary mt-8 mb-3">
-                {trimmed.replace('## ', '')}
-              </h2>
-            );
-          }
-
-          // Standalone image: a paragraph that is just ![alt](src)
-          const imgMatch = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
-          if (imgMatch) {
-            return (
-              <figure key={i} className="my-6">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={imgMatch[2]}
-                  alt={imgMatch[1]}
-                  className="w-full rounded-xl border border-brand-border"
-                  loading="lazy"
-                />
-              </figure>
-            );
-          }
-
-          // Inline formatting: bold, italic, links
-          const formatInline = (text: string) => {
-            return text.split(/(\*\*[^*]+\*\*)/).map((part, j) => {
-              if (part.startsWith('**') && part.endsWith('**')) {
-                return <strong key={j} className="text-brand-text-primary font-medium">{part.slice(2, -2)}</strong>;
-              }
-              return part.split(/(\*[^*]+\*)/).map((sub, k) => {
-                if (sub.startsWith('*') && sub.endsWith('*') && !sub.startsWith('**')) {
-                  return <em key={k} className="text-brand-text-muted">{sub.slice(1, -1)}</em>;
-                }
-                return sub.split(/(\[[^\]]+\]\([^)]+\))/).map((linkPart, l) => {
-                  const linkMatch = linkPart.match(/\[([^\]]+)\]\(([^)]+)\)/);
-                  if (linkMatch) {
-                    return <Link key={l} href={linkMatch[2]} className="text-brand-gold hover:underline">{linkMatch[1]}</Link>;
-                  }
-                  return linkPart;
-                });
-              });
-            });
-          };
-
-          // Markdown tables: header row | --- | separator | data rows
-          const tableLines = trimmed.split('\n');
-          if (
-            tableLines.length >= 2 &&
-            tableLines[0].trim().startsWith('|') &&
-            tableLines[1].includes('-') &&
-            /^\s*\|?[\s:|-]+\|?\s*$/.test(tableLines[1])
-          ) {
-            const parseRow = (line: string) =>
-              line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => c.trim());
-            const headers = parseRow(tableLines[0]);
-            const rows = tableLines.slice(2).filter(l => l.trim()).map(parseRow);
-            return (
-              <div key={i} className="overflow-x-auto my-4">
-                <table className="w-full text-sm border-collapse">
-                  <thead>
-                    <tr className="border-b border-brand-border">
-                      {headers.map((h, j) => (
-                        <th key={j} className="text-left font-medium text-brand-text-primary py-2 px-3 whitespace-nowrap">{formatInline(h)}</th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {rows.map((row, r) => (
-                      <tr key={r} className="border-b border-brand-border/40">
-                        {row.map((cell, c) => (
-                          <td key={c} className="py-2 px-3 text-brand-text-secondary align-top">{formatInline(cell)}</td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            );
-          }
-
-          if (trimmed.startsWith('- ')) {
-            const items = trimmed.split('\n').filter(l => l.startsWith('- '));
-            return (
-              <ul key={i} className="space-y-1 ml-4">
-                {items.map((item, j) => (
-                  <li key={j} className="text-sm text-brand-text-secondary leading-relaxed list-disc">
-                    {formatInline(item.replace(/^- /, ''))}
-                  </li>
-                ))}
-              </ul>
-            );
-          }
-
-          // Blockquote — used for Editor's Note / Correction callouts
-          if (trimmed.startsWith('> ')) {
-            const lines = trimmed.split('\n').map(l => l.replace(/^>\s?/, '')).join('\n').trim();
-            return (
-              <aside
-                key={i}
-                className="my-6 border-l-4 border-brand-gold bg-brand-gold/5 px-4 py-3 rounded-r-md"
-              >
-                <p className="text-sm text-brand-text-secondary leading-relaxed">
-                  {formatInline(lines)}
-                </p>
-              </aside>
-            );
-          }
-
-          return (
-            <p key={i} className="text-sm text-brand-text-secondary leading-relaxed">
-              {formatInline(trimmed)}
-            </p>
-          );
+          const block = renderBlock(p, i);
+          return i === adAfter ? <div key={i}>{block}<AdSlot placement="in-article" className="my-8" /></div> : block;
         })}
       </article>
 
@@ -304,6 +330,8 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           ← Back to all posts
         </Link>
       </div>
+    </div>
+    <RankedRail />
     </div>
   );
 }

@@ -1,15 +1,30 @@
 import Link from 'next/link';
-import { getAllShows, getEpisodes } from '@/lib/data';
+import { getAllShows, getEpisodes, getQuickPickPool, getTopJokes } from '@/lib/data';
+import Image from 'next/image';
+import { isAwaitingRescore } from '@/lib/scale';
+import QuickPick from '@/components/comedy-dna/QuickPick';
 import LeaderboardClient from './LeaderboardClient';
 import WhatsNewPersonalized from '@/components/ui/WhatsNewPersonalized';
+import { POSTS } from '@/app/blog/posts';
 import HeroLoop from '@/components/HeroLoop';
 import { SITE_URL } from '@/lib/site';
 import { rankable, awaitingRescore } from '@/lib/scale';
 
 export const dynamic = 'force-static';
 
+// "Fleabag · Fleabag" and "Unknown Aide" read as glitches; drop those speakers.
+function speakerLabel(name: string | undefined, show: string): string {
+  if (!name || /^unknown/i.test(name) || name.toLowerCase() === show.toLowerCase()) return '';
+  return `${name} · `;
+}
+
 export default async function HomePage() {
   const shows = await getAllShows();
+  const quickPool = await getQuickPickPool();
+  const rankedCount = rankable(shows).length;
+  // Each ranked show's best line, for the "funniest lines" strip.
+  const topLines = (await getTopJokes()).filter(j => !isAwaitingRescore(j.show_slug)).slice(0, 6)
+    .map(j => ({ ...j, backdrop: shows.find(s => s.slug === j.show_slug)?.backdrop_path }));
 
   const analyzedShows = shows.filter(s => s.humor_index > 0);
   let totalEpisodesAnalyzed = 0;
@@ -108,7 +123,7 @@ export default async function HomePage() {
                 Full rankings →
               </Link>
             </div>
-            <LeaderboardClient shows={rankable(shows)} pending={awaitingRescore(shows)} />
+            <LeaderboardClient shows={rankable(shows)} pending={awaitingRescore(shows)} quickPool={quickPool} />
             <div className="mt-6 pt-5 border-t border-brand-border flex flex-wrap items-center gap-x-6 gap-y-2">
               <Link href="/shows" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
                 Browse all {analyzedShows.length} shows →
@@ -124,34 +139,56 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Comedy DNA teaser — flagship interactive, magazine cover treatment */}
+      {/* Comedy DNA, one tap: a pick right here is the quickest way into a personal
+          match % on the leaderboard and show pages. */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-12">
-        <Link
-          href="/comedy-dna"
-          className="group block relative bg-gradient-to-br from-brand-gold/10 via-brand-card to-brand-card border border-brand-gold/30 rounded-2xl px-6 sm:px-10 py-8 sm:py-12 hover:border-brand-gold/60 transition-colors overflow-hidden"
-        >
-          <div className="absolute top-5 right-7 font-serif italic text-brand-gold/15 text-8xl leading-none select-none">&ldquo;</div>
-          <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-            <div className="max-w-2xl">
-              <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Editor&apos;s Pick · Interactive</p>
-              <h2 className="font-serif italic text-3xl sm:text-5xl text-brand-text-primary leading-tight mb-3 group-hover:text-brand-gold transition-colors">
-                What&apos;s your<br className="hidden sm:block" /> Comedy DNA?
-              </h2>
-              <p className="text-sm sm:text-base text-brand-text-secondary leading-relaxed">
-                Pick which joke is funnier — about 18 times. We&apos;ll map your comedy archetype
-                and the shows built for your taste, drawn from{' '}
-                <span className="text-brand-text-primary font-medium">{totalJokes.toLocaleString()} scored jokes</span>.
-              </p>
-            </div>
-            <span className="shrink-0 inline-flex items-center justify-center rounded-full bg-brand-gold text-brand-dark font-medium px-6 py-3.5 text-sm hover:bg-brand-gold-dim transition-colors">
-              Find your type →
-            </span>
-          </div>
-        </Link>
+        <QuickPick
+          jokes={quickPool}
+          source="home"
+          title="Which joke is funnier?"
+          subtitle={`Real lines from the ${rankedCount} shows we rank. Pick the one that lands harder for you. A few picks give you a match % for every show on the leaderboard above.`}
+        />
+        <p className="text-xs text-brand-text-muted mt-3 px-1">
+          Want the whole read in two minutes?{' '}
+          <Link href="/comedy-dna" className="text-brand-gold hover:underline">Take the full Comedy DNA quiz →</Link>
+        </p>
       </section>
 
+      {/* Funniest lines: each ranked show's highest-scoring line, with its show's art */}
+      {topLines.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-14">
+          <div className="flex items-end justify-between gap-4 mb-5">
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">The best lines on the index</p>
+              <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight">Every show&apos;s funniest joke.</h2>
+            </div>
+            <Link href="/rankings/best-jokes" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors shrink-0">Top 100 jokes →</Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {topLines.map(j => (
+              <Link key={j.show_slug} href={`/shows/${j.show_slug}/${j.season}/${j.episode_number}`}
+                className="group relative flex flex-col justify-end min-h-[220px] rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/50 transition-colors">
+                {j.backdrop && (
+                  <Image src={`https://image.tmdb.org/t/p/w780${j.backdrop}`} alt="" fill sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover opacity-50 group-hover:opacity-65 group-hover:scale-105 transition-all duration-500" />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/75 to-brand-dark/10" />
+                <div className="relative p-5">
+                  <p className="font-serif italic text-lg sm:text-xl text-brand-text-primary leading-snug mb-3 line-clamp-4">
+                    <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
+                  </p>
+                  <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">
+                    {speakerLabel(j.characters?.[0], j.show)}{j.show} · S{j.season}E{j.episode_number}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* What's New — personalized for return visitors */}
-      <WhatsNewPersonalized />
+      <WhatsNewPersonalized latestPosts={Object.entries(POSTS).map(([slug, p]) => ({ slug, title: p.title, date: p.date })).sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 3)} />
 
       {/* Featured insight — magazine pull-quote */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12">

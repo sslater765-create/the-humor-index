@@ -61,6 +61,32 @@ export function scoreToColor(score: number): string {
   return '#5F5E5A';
 }
 
+// Scores near the top of the scale crowd together (most current-model episodes
+// sit above 85), so fixed-threshold colors paint whole shows one color. These
+// color a score by where it falls within its own set (fifths, ties placed at
+// their middle rank), so a show's peaks and dips stay visible.
+export const RELATIVE_SCALE = ['#5F5E5A', '#888780', '#378ADD', '#BA7517', '#E8B931'];
+export const RELATIVE_LABELS = ['Bottom fifth', 'Lower', 'Middle', 'Upper', 'Top fifth'];
+export function relativeColorFn(scores: number[]): (score: number) => string {
+  const sorted = [...scores].sort((a, b) => a - b);
+  const n = sorted.length;
+  return (x: number) => {
+    if (!n) return RELATIVE_SCALE[2];
+    let lo = 0, hi = n;
+    while (lo < hi) { const m = (lo + hi) >> 1; if (sorted[m] < x) lo = m + 1; else hi = m; }
+    let up = lo;
+    while (up < n && sorted[up] === x) up++;
+    const pct = (lo + up) / 2 / n;
+    return RELATIVE_SCALE[Math.min(4, Math.floor(pct * 5))];
+  };
+}
+
+/** Lower bound for a score chart's y-axis: a little under the lowest value, on a multiple of 5. */
+export function chartFloor(values: number[]): number {
+  if (!values.length) return 40;
+  return Math.max(0, Math.floor((Math.min(...values) - 3) / 5) * 5);
+}
+
 export function scoreToGrade(score: number): string {
   if (score >= 92) return 'S';
   if (score >= 85) return 'A+';

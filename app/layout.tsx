@@ -10,6 +10,8 @@ import StickyNewsletterBar from '@/components/ui/StickyNewsletterBar';
 import RecentlyViewedTracker from '@/components/ui/RecentlyViewedTracker';
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
 import { SITE_URL } from '@/lib/site';
+import { DnaProvider } from '@/components/comedy-dna/DnaProvider';
+import { getComedyDnaFingerprints, getDnaBaseline } from '@/lib/data';
 // NewsletterPopup removed 2026-04-19 — audit found 4 CTAs/page was oppressive.
 // Remaining surfaces: footer form, HeroNewsletterCTA, StickyNewsletterBar, EndOfArticleCTA, InlineNewsletterCTA.
 
@@ -74,7 +76,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  // Comedy DNA: show fingerprints + pool baseline, ~2KB, so any page can show a
+  // visitor's match % or record a pick.
+  const [dnaFingerprints, dnaBaseline] = await Promise.all([getComedyDnaFingerprints(), getDnaBaseline()]);
   return (
     <html lang="en">
       <head>
@@ -105,7 +110,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             ],
           }) }}
         />
-        <main className="flex-1">{children}</main>
+        <DnaProvider fingerprints={dnaFingerprints} baseline={dnaBaseline}>
+          <main className="flex-1">{children}</main>
+        </DnaProvider>
         <Footer />
         <ScrollToTop />
         <StickyNewsletterBar />

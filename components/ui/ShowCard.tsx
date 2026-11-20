@@ -5,6 +5,7 @@ import { formatIndex } from '@/lib/scoring';
 import { getTier } from '@/lib/tiers';
 import FormatBadge from './FormatBadge';
 import RankBadge from './RankBadge';
+import MatchPill from '@/components/comedy-dna/MatchPill';
 
 interface Props {
   show: ShowScore;
@@ -29,6 +30,7 @@ function ScoreBlock({ show, pending, shadow }: { show: ShowScore; pending: boole
       <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">
         Humor Index · {getTier(show.humor_index).label}
       </p>
+      <MatchPill slug={show.slug} variant={shadow ? 'overlay' : 'pill'} className="mt-1.5" />
     </>
   );
 }

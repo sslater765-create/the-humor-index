@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import { getAllShows } from '@/lib/data';
+import { coverFor } from '@/lib/blogCover';
 import { SITE_URL } from '@/lib/site';
 import { POSTS as POST_DATA } from './posts';
 
@@ -33,6 +36,7 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // cannot drift from the posts themselves. Only the card extras live here.
 // A post missing from CARDS still renders, with default extras.
 const CARDS: Record<string, { readTime: string; stat: string; statLabel: string }> = {
+  'always-sunny-fewer-jokes-better-with-age': { readTime: '5 min read', stat: '2.64', statLabel: "Sunny's jokes per minute, 13th of 15" },
   'friends-most-jokes-ranked-eleventh': { readTime: '4 min read', stat: '4.01', statLabel: 'Friends jokes per minute, most on the board' },
   'chappelles-show-sketch-advantage': { readTime: '3 min read', stat: '7.70', statLabel: "Chappelle's Show per-joke impact" },
   'most-quotable-show': { readTime: '3 min read', stat: '37.5%', statLabel: '30 Rock jokes rated 8+ for quotability' },
@@ -68,8 +72,9 @@ const POSTS = Object.entries(POST_DATA)
   }))
   .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
 
-export default function BlogPage() {
-  const [hero, ...rest] = POSTS;
+export default async function BlogPage() {
+  const shows = await getAllShows();
+  const [hero, ...rest] = POSTS.map(p => ({ ...p, cover: coverFor(p.slug, p.title, shows) }));
   return (
     <div>
       {/* Editorial hero */}
@@ -93,8 +98,14 @@ export default function BlogPage() {
             className="block group"
           >
             <article className={`relative grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-0 rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/40 transition-colors`}>
-              <div className={`relative min-h-[260px] sm:min-h-[320px] bg-gradient-to-br ${CATEGORY_COLORS[hero.category] || 'from-brand-surface to-brand-card'} flex items-center justify-center p-8`}>
-                <div className="text-center">
+              <div className={`relative min-h-[260px] sm:min-h-[320px] bg-gradient-to-br ${CATEGORY_COLORS[hero.category] || 'from-brand-surface to-brand-card'} flex items-center justify-center p-8 overflow-hidden`}>
+                {hero.cover && (
+                  <>
+                    <Image src={`https://image.tmdb.org/t/p/w1280${hero.cover.backdrop}`} alt={hero.cover.name} fill sizes="(min-width: 1024px) 680px, 100vw" className="object-cover opacity-45 group-hover:opacity-55 transition-opacity" priority />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/40 to-brand-dark/20" />
+                  </>
+                )}
+                <div className="relative text-center">
                   <p className={`font-serif italic text-6xl sm:text-7xl ${CATEGORY_ACCENTS[hero.category] || 'text-brand-gold'} leading-none`}>
                     {hero.stat}
                   </p>
@@ -143,8 +154,14 @@ export default function BlogPage() {
                 href={`/blog/${post.slug}`}
                 className="block bg-brand-card border border-brand-border rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors group"
               >
-                <div className={`relative h-40 w-full bg-gradient-to-b ${CATEGORY_COLORS[post.category] || 'from-brand-surface to-brand-card'} flex items-center justify-center`}>
-                  <div className="text-center px-4">
+                <div className={`relative h-40 w-full bg-gradient-to-b ${CATEGORY_COLORS[post.category] || 'from-brand-surface to-brand-card'} flex items-center justify-center overflow-hidden`}>
+                  {post.cover && (
+                    <>
+                      <Image src={`https://image.tmdb.org/t/p/w780${post.cover.backdrop}`} alt={post.cover.name} fill sizes="(min-width: 1024px) 400px, 100vw" className="object-cover opacity-35 group-hover:opacity-50 transition-opacity" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/50 to-transparent" />
+                    </>
+                  )}
+                  <div className="relative text-center px-4">
                     <p className={`font-serif italic text-3xl sm:text-4xl ${CATEGORY_ACCENTS[post.category] || 'text-brand-gold'} leading-none`}>
                       {post.stat}
                     </p>

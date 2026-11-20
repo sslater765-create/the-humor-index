@@ -1,4 +1,5 @@
 'use client';
+import { chartFloor } from '@/lib/scoring';
 import { useMemo } from 'react';
 import { Chart, registerables } from 'chart.js';
 import { useInViewChart } from '@/hooks/useInViewChart';
@@ -66,7 +67,7 @@ export default function EpisodeArcChart({ episodes, showName }: Props) {
           grid: { color: 'rgba(255,255,255,0.05)' },
         },
         y: {
-          min: 40,
+          min: chartFloor(episodes.map(e => e.humor_index)),
           max: 100,
           ticks: { color: '#666666', font: { size: 10 } },
           grid: { color: 'rgba(255,255,255,0.05)' },

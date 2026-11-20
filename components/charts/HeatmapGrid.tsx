@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { EpisodeScore, SeasonScore } from '@/lib/types';
-import { scoreToColor, formatIndex } from '@/lib/scoring';
+import { formatIndex, relativeColorFn, RELATIVE_SCALE, RELATIVE_LABELS } from '@/lib/scoring';
 import ShareButton from '../ui/ShareButton';
 
 interface Props {
@@ -17,6 +17,7 @@ interface TooltipState {
 }
 
 export default function HeatmapGrid({ episodes, seasons, showName }: Props) {
+  const colorOf = relativeColorFn(episodes.map(e => e.humor_index));
   const [tooltip, setTooltip] = useState<TooltipState | null>(null);
 
   const bySeasonMap = new Map<number, EpisodeScore[]>();
@@ -56,7 +57,7 @@ export default function HeatmapGrid({ episodes, seasons, showName }: Props) {
                     key={ep.episode_id}
                     aria-label={`S${ep.season}E${ep.episode_number} ${ep.title}, Humor Index ${formatIndex(ep.humor_index)}`}
                     className="aspect-square w-full rounded-sm cursor-pointer transition-transform hover:scale-125 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
-                    style={{ backgroundColor: scoreToColor(ep.humor_index) + 'AA' }}
+                    style={{ backgroundColor: colorOf(ep.humor_index) + 'CC' }}
                     onMouseEnter={e => {
                       const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
                       setTooltip({ episode: ep, x: rect.left, y: rect.top });
@@ -76,15 +77,9 @@ export default function HeatmapGrid({ episodes, seasons, showName }: Props) {
       </div>
 
       {/* Score legend */}
-      <div className="flex items-center gap-3 mt-4 pt-3 border-t border-brand-border">
-        <span className="text-xs text-brand-text-muted">Score</span>
-        {[
-          { label: '85+', color: '#E8B931' },
-          { label: '75+', color: '#BA7517' },
-          { label: '65+', color: '#378ADD' },
-          { label: '55+', color: '#888780' },
-          { label: '<55', color: '#5F5E5A' },
-        ].map(item => (
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mt-4 pt-3 border-t border-brand-border">
+        <span className="text-xs text-brand-text-muted">Within {showName}</span>
+        {RELATIVE_SCALE.map((color, i) => ({ label: RELATIVE_LABELS[i], color })).reverse().map(item => (
           <div key={item.label} className="flex items-center gap-1">
             <span className="w-3 h-3 rounded-sm" style={{ backgroundColor: item.color }} />
             <span className="text-xs text-brand-text-muted">{item.label}</span>

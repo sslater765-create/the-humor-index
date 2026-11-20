@@ -112,6 +112,10 @@ export default async function CharacterPage({
     return true;
   });
   const standouts = dedupedJokes.slice(0, 5);
+  // Main characters have thousands of lines (Homer: ~12,000). Rendering them all made
+  // these pages 10-19 MB, past the 15 MB Google reads. List the best, in rank order.
+  const JOKE_LIST_CAP = 150;
+  const jokeList = dedupedJokes.length > JOKE_LIST_CAP ? dedupedJokes.slice(0, JOKE_LIST_CAP) : jokes;
 
   // "Who is X" facts, all derived from the scored data.
   const display = (character.character_full_name || character.name).replace(/\s*\(voice\)/i, '');
@@ -414,11 +418,16 @@ export default async function CharacterPage({
 
         {/* All jokes */}
         <section>
-          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-3">
-            All Jokes — {jokes.length} total
+          <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">
+            {jokeList.length < jokes.length ? `The ${jokeList.length} funniest ${character.name} lines` : `All jokes — ${jokes.length} total`}
           </p>
+          {jokeList.length < jokes.length && (
+            <p className="text-xs text-brand-text-muted mb-3">
+              Ranked by craft and impact, from {jokes.length.toLocaleString()} scored lines. Every episode page lists the rest.
+            </p>
+          )}
           <div className="space-y-2">
-            {jokes.map((item, i) => (
+            {jokeList.map((item, i) => (
               <Link
                 key={i}
                 href={`/shows/${params.slug}/${item.season}/${item.episode_number}`}

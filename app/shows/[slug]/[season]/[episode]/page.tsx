@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getShow, getEpisodes, getEpisodeDetail } from '@/lib/data';
+import { getShow, getEpisodes, getEpisodeDetail, getSimilarEpisodes } from '@/lib/data';
+import AdSlot from '@/components/ads/AdSlot';
+import RankedRail from '@/components/ads/RankedRail';
 import { formatIndex, parseStandoutIds, byHumorIndexDesc } from '@/lib/scoring';
 import { getTier } from '@/lib/tiers';
 import { isAwaitingRescore } from '@/lib/scale';
@@ -74,8 +76,11 @@ export async function generateMetadata({
   const epLabel = `S${detail.season}E${String(detail.episode_number).padStart(2, '0')}`;
   const scoreNum = formatIndex(detail.humor_index);
   return {
-    title: `"${detail.title}" (${showName} ${epLabel}) — Every Joke Ranked · Humor Index ${scoreNum}`,
-    description: `${detail.total_jokes} jokes from ${showName} "${detail.title}" ${epLabel} analyzed and scored. Humor Index ${scoreNum} (${tier.label}). Top jokes ranked, craft and impact scores, the part you fast-forward.`,
+    // Leads with "quotes": that's what people search for an episode ("30 rock reaganing quotes").
+    title: `${showName} "${detail.title}" Quotes, Every Joke Ranked (${epLabel})`,
+    description: topJoke?.text
+      ? `"${topJoke.text.slice(0, 110)}${topJoke.text.length > 110 ? '…' : ''}" The best quotes from ${showName} ${epLabel}, all ${detail.total_jokes} jokes ranked. Humor Index ${scoreNum}.`
+      : `The best quotes from ${showName} "${detail.title}" ${epLabel}, all ${detail.total_jokes} jokes ranked by craft and impact. Humor Index ${scoreNum} (${tier.label}).`,
     openGraph: {
       title: `${showName} "${detail.title}" — ${tier.label} (${formatIndex(detail.humor_index)})`,
       description: `${detail.total_jokes} jokes scored. Craft ${detail.avg_craft.toFixed(1)} · Impact ${detail.avg_impact.toFixed(1)} · JPM ${detail.jpm}.`,
@@ -113,10 +118,10 @@ export default async function EpisodePage({
   const rank = allEpisodes.findIndex(e => e.season === seasonNum && e.episode_number === episodeNum) + 1;
 
   // Find next/prev episodes in season order
-  const seasonEpisodes = episodes
-    .filter(e => e.season === seasonNum)
-    .sort((a, b) => a.episode_number - b.episode_number);
-  const currentIdx = seasonEpisodes.findIndex(e => e.episode_number === episodeNum);
+  // In airing order across the whole run, so S4E1 links back to the S3 finale.
+  const seasonEpisodes = [...episodes]
+    .sort((a, b) => a.season - b.season || a.episode_number - b.episode_number);
+  const currentIdx = seasonEpisodes.findIndex(e => e.season === seasonNum && e.episode_number === episodeNum);
   const prevEp = currentIdx > 0 ? seasonEpisodes[currentIdx - 1] : null;
   const nextEp = currentIdx < seasonEpisodes.length - 1 ? seasonEpisodes[currentIdx + 1] : null;
 
@@ -124,7 +129,13 @@ export default async function EpisodePage({
   // by `index`, not `id`. Matching on j.id ran .includes() against a string and
   // never matched, so the standout section never rendered on any episode.
   const standoutIds = new Set(parseStandoutIds(detail.standout_joke_ids));
-  const standoutJokes = detail.jokes.filter(j => standoutIds.has(j.index));
+  // Top 5 by craft + impact; "standout moments" lists only standouts not already in it.
+  const topJokeList = [...detail.jokes]
+    .sort((a, b) => ((b.craft_total || 0) + (b.impact_score || 0)) - ((a.craft_total || 0) + (a.impact_score || 0)))
+    .slice(0, 5);
+  const topJokeIdx = new Set(topJokeList.map(j => j.index));
+  const standoutJokes = detail.jokes.filter(j => standoutIds.has(j.index) && !topJokeIdx.has(j.index));
+  const similar = await getSimilarEpisodes(params.slug, seasonNum, episodeNum, 4);
   const regularJokes = detail.jokes.filter(j => !standoutIds.has(j.index));
 
   // Unique, data-driven comedy summary for each episode (SEO + thin-content fix).
@@ -202,11 +213,12 @@ export default async function EpisodePage({
       />
 
       {/* Hero backdrop */}
-      <div className="relative w-full h-[240px] sm:h-[300px] overflow-hidden">
-        {show.backdrop_path ? (
+      <div className="relative w-full h-[260px] sm:h-[380px] overflow-hidden">
+        {detail.still_path || show.backdrop_path ? (
           <Image
-            src={`https://image.tmdb.org/t/p/w1280${show.backdrop_path}`}
-            alt={`${show.name} backdrop`}
+            src={detail.still_path ? `https://image.tmdb.org/t/p/original${detail.still_path}` : `https://image.tmdb.org/t/p/w1280${show.backdrop_path}`}
+            alt={detail.still_path ? `${show.name}, "${detail.title}"` : `${show.name} backdrop`}
+            sizes="100vw"
             fill
             className="object-cover object-center"
             priority
@@ -216,7 +228,7 @@ export default async function EpisodePage({
         )}
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 15%, rgba(15,15,15,0.7) 40%, rgba(15,15,15,0.1) 65%, transparent 100%)' }} />
 
-        <div className="absolute bottom-0 left-0 right-0 max-w-4xl mx-auto px-4 sm:px-6 pb-5">
+        <div className="absolute bottom-0 left-0 right-0 max-w-6xl mx-auto px-4 sm:px-6 pb-5">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-1 text-xs text-brand-text-muted mb-3" aria-label="Breadcrumb">
             <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">Shows</Link>
@@ -234,7 +246,7 @@ export default async function EpisodePage({
             Season {detail.season}, Episode {detail.episode_number}
             {detail.air_date && ` · ${detail.air_date}`}
           </p>
-          <h1 className="text-2xl sm:text-3xl font-medium text-brand-text-primary">{detail.title}</h1>
+          <h1 className="font-serif italic text-3xl sm:text-5xl text-brand-text-primary leading-tight">{detail.title}</h1>
           {rank > 0 && (
             <p className="text-sm text-brand-text-muted mt-1">
               Ranked{' '}
@@ -245,7 +257,8 @@ export default async function EpisodePage({
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-4 pb-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-4 pb-8 lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-14">
+      <div className="min-w-0">
         {/* Episode description */}
         {detail.tmdb_overview && (
           <p className="text-sm text-brand-text-secondary leading-relaxed mb-3">
@@ -352,9 +365,7 @@ export default async function EpisodePage({
 
       {/* Top Jokes — best jokes first */}
       {(() => {
-        const topJokes = [...detail.jokes]
-          .sort((a, b) => ((b.craft_total || 0) + (b.impact_score || 0)) - ((a.craft_total || 0) + (a.impact_score || 0)))
-          .slice(0, 5);
+        const topJokes = topJokeList;
         return topJokes.length > 0 ? (
           <section className="mb-10">
             <p className="text-xs uppercase tracking-widest text-brand-gold mb-3">
@@ -368,6 +379,8 @@ export default async function EpisodePage({
           </section>
         ) : null;
       })()}
+
+      <AdSlot placement="in-article" className="mb-10" />
 
       {/* Standout moments */}
       {standoutJokes.length > 0 && (
@@ -443,6 +456,32 @@ export default async function EpisodePage({
         ) : <div />}
       </div>
 
+      {/* More like this: other shows' episodes with the closest joke mix */}
+      {similar.length > 0 && (
+        <section className="mt-10 border-t border-brand-border pt-6">
+          <p className="text-xs uppercase tracking-widest text-brand-gold mb-1">If you liked this episode</p>
+          <p className="text-sm text-brand-text-secondary mb-4">Episodes from other shows with the closest mix of joke types.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {similar.map(ep => (
+              <Link key={`${ep.slug}-${ep.season}-${ep.episode}`} href={`/shows/${ep.slug}/${ep.season}/${ep.episode}`}
+                className="group relative flex items-end h-28 rounded-xl overflow-hidden border border-brand-border hover:border-brand-gold/50 transition-colors">
+                {ep.backdrop_path && (
+                  <Image src={`https://image.tmdb.org/t/p/w780${ep.backdrop_path}`} alt="" fill sizes="(min-width: 640px) 380px, 100vw" className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-300" />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent" />
+                <div className="relative p-3 w-full flex items-end justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">{ep.show} · S{ep.season}E{String(ep.episode).padStart(2, '0')}</p>
+                    <p className="text-sm text-brand-text-primary font-medium truncate group-hover:text-brand-gold transition-colors">{ep.title}</p>
+                  </div>
+                  <span className="font-serif italic text-xl text-brand-gold shrink-0">{formatIndex(ep.humor_index)}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Top episodes from this show */}
       {topEpisodes.length > 0 && (
         <section className="mt-10 border-t border-brand-border pt-6">
@@ -487,6 +526,8 @@ export default async function EpisodePage({
           </div>
         </section>
       )}
+      </div>
+      <RankedRail exclude={params.slug} />
       </div>
     </div>
   );

@@ -9,6 +9,9 @@ import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import { SITE_URL } from '@/lib/site';
+import { Fragment } from 'react';
+import AdSlot from '@/components/ads/AdSlot';
+import RankedRail from '@/components/ads/RankedRail';
 import type { JokeType } from '@/lib/types';
 
 export const dynamic = 'force-static';
@@ -155,7 +158,8 @@ export default async function ShowBestJokesPage({ params }: { params: { slug: st
         subtitle={`Picked from ${totalJokes.toLocaleString()} jokes across ${totalEpisodes} episodes, each one scored for craft and impact.`}
       />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-14">
+      <div className="min-w-0">
         <div className="flex items-center gap-2 text-xs text-brand-text-muted mb-6">
           <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">Shows</Link>
           <span>/</span>
@@ -238,7 +242,10 @@ export default async function ShowBestJokesPage({ params }: { params: { slug: st
         )}
 
         <ol className="space-y-3">
-          {quotes.map(q => (
+          {quotes.map((q, qi) => (
+            <Fragment key={`${q.season}-${q.episode}-${q.rank}`}>
+            {/* One ad after the 10th quote, one after the 30th. */}
+            {(qi === 10 || qi === 30) && <li className="list-none"><AdSlot placement="in-article" className="my-2" /></li>}
             <li
               key={`${q.season}-${q.episode}-${q.rank}`}
               id={`quote-${q.rank}`}
@@ -293,6 +300,7 @@ export default async function ShowBestJokesPage({ params }: { params: { slug: st
                 </div>
               </div>
             </li>
+            </Fragment>
           ))}
         </ol>
 
@@ -304,6 +312,8 @@ export default async function ShowBestJokesPage({ params }: { params: { slug: st
           Across every show, see the{' '}
           <Link href="/rankings/best-jokes" className="text-brand-gold hover:underline">best sitcom jokes ever written</Link>.
         </div>
+      </div>
+      <RankedRail exclude={params.slug} />
       </div>
     </div>
   );

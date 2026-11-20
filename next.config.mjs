@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: true,
+  experimental: {
+    // The search API reads the joke index from disk at runtime; ship it with that function.
+    outputFileTracingIncludes: { '/api/search': ['./public/data/search-index.json'] },
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [

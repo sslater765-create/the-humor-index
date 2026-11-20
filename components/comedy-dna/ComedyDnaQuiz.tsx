@@ -4,20 +4,16 @@ import { useCallback, useMemo, useRef, useState, useEffect } from 'react';
 import { trackEvent } from '@/lib/analytics';
 import {
   DNA_TYPES, ARCHES, AXES, EMBLEMS, emblemSVG, showStyle, tileText,
-  buildBaseline, normalizeFingerprints, meanFingerprint, buildWeights,
-  rankArchetypes, rankShows, whyText, dot, axisValue, wcos,
+  rankArchetypes, whyText, dot, axisValue, wcos, nextPair, readLevel, isEdgy,
   type QuizData, type QuizJoke, type ShowFingerprint,
 } from '@/lib/comedyDna';
 import { MemeScene } from './MemeScene';
+import { useDna } from './DnaProvider';
 import { SITE_URL } from '@/lib/site';
 
 const N_BASE = 10, N_MAX = 30, N_STEP = 10;
 const SHOW_URL = (slug: string) => `${SITE_URL}/shows/${slug}/`;
 
-const DARK_IDX = DNA_TYPES.indexOf('dark_subversive');
-const AWK_IDX = DNA_TYPES.indexOf('awkward_silence');
-const EDGY_RE = /\b(kill|killed|waterboard|ebola|prostitut|suicide|murder|corpse|funeral|dead|die)\b/i;
-const isEdgy = (j: QuizJoke) => j.vec[DARK_IDX] === 1 || j.vec[AWK_IDX] === 1 || EDGY_RE.test(j.text);
 
 interface Pick { a: QuizJoke; b: QuizJoke; winner: 'a' | 'b' | null; }
 interface ResultPayload { archeIdx: number; axes: number[]; shows: { name: string; slug: string; pct: number }[]; }
@@ -41,17 +37,20 @@ function Tile({ slug, size = 34 }: { slug: string; size?: number }) {
   );
 }
 
-function shuffle<T>(arr: T[]): T[] { const a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
-function manhattan(a: number[], b: number[]) { let d = 0; for (let i = 0; i < a.length; i++) d += Math.abs(a[i] - b[i]); return d; }
 
 function decodeResult(s: string): ResultPayload | null { try { return JSON.parse(decodeURIComponent(escape(atob(s)))) as ResultPayload; } catch { return null; } }
 
 export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jokeCount = 0 }: { quiz: QuizData; fingerprints: ShowFingerprint[]; comingSoon?: { slug: string; name: string }[]; jokeCount?: number }) {
-  // precomputed math inputs
-  const normFps = useMemo(() => normalizeFingerprints(fingerprints), [fingerprints]);
-  const baseline = useMemo(() => buildBaseline(quiz.pool), [quiz.pool]);
-  const meanFp = useMemo(() => meanFingerprint(normFps), [normFps]);
-  const weights = useMemo(() => buildWeights(meanFp), [meanFp]);
+  // Shared taste profile (site-wide). Every pick here also feeds the match % on
+  // show pages and the leaderboard, and picks made there count here.
+  const dna = useDna();
+  const dnaRef = useRef(dna);
+  dnaRef.current = dna;
+  const EMPTY = useMemo(() => new Array(DNA_TYPES.length).fill(0) as number[], []);
+  const normFps = useMemo(() => dna?.fps ?? [], [dna?.fps]);
+  const meanFp = dna?.meanFp ?? EMPTY;
+  const weights = dna?.weights ?? EMPTY;
+  const baseline = dna?.baseline ?? EMPTY;
 
   const [screen, setScreen] = useState<'intro' | 'battle' | 'extend' | 'results'>('intro');
   const [cleanMode, setCleanMode] = useState(false);
@@ -82,57 +81,50 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
     if (m) { const c = decodeResult(m[1]); if (c) setChallenger(c); }
   }, []);
 
-  // accumulated preference + win counts
-  const { pref, winCounts, totalPicks, seenIds } = useMemo(() => {
-    const p = new Array(DNA_TYPES.length).fill(0);
-    const wc = new Array(DNA_TYPES.length).fill(0);
-    const seen = new Set<number>();
-    let n = 0;
-    for (const pk of picks) {
-      if (!pk) continue;
-      seen.add(pk.a.id); seen.add(pk.b.id);
-      if (!pk.winner) continue;
-      const w = pk.winner === 'a' ? pk.a : pk.b, l = pk.winner === 'a' ? pk.b : pk.a;
-      for (let d = 0; d < DNA_TYPES.length; d++) { p[d] += (w.vec[d] - baseline[d]) - (l.vec[d] - baseline[d]); wc[d] += w.vec[d]; }
-      n++;
-    }
-    return { pref: p, winCounts: wc, totalPicks: n, seenIds: seen };
-  }, [picks, baseline]);
+  // All-time profile, not just this session.
+  const pref = dna?.profile.pref ?? EMPTY;
+  const winCounts = dna?.profile.wins ?? EMPTY;
+  const totalPicks = dna?.profile.picks ?? 0;
+  const seenList = dna?.profile.seen;
+  const seenIds = useMemo(() => new Set(seenList ?? []), [seenList]);
 
-  const buildPairs = useCallback((clean: boolean, hard = false) => {
-    const src = shuffle(clean ? quiz.pool.filter(j => !isEdgy(j)) : quiz.pool);
-    const used = new Set<number>();
-    const out: { a: QuizJoke; b: QuizJoke }[] = [];
-    const cap = Math.min(N_MAX, Math.floor(src.length / 2));
-    for (let r = 0; r < cap; r++) {
-      const A = src.find(j => !used.has(j.id)); if (!A) break; used.add(A.id);
-      // Default: pair with most-dissimilar joke (clearer choice). Hard mode: pair with most-similar (tighter face-off).
-      let best: QuizJoke | null = null, bd = hard ? Infinity : -1;
-      for (const j of src) {
-        if (used.has(j.id)) continue;
-        const d = manhattan(A.vec, j.vec) + Math.random() * 0.6;
-        if (hard ? d < bd : d > bd) { bd = d; best = j; }
-      }
-      if (!best) break; used.add(best.id);
-      out.push(Math.random() < 0.5 ? { a: A, b: best } : { a: best, b: A });
-    }
-    return out;
-  }, [quiz.pool]);
+  // Face-offs are generated one at a time from the live profile (adaptive): early
+  // rounds spread across shows, later rounds pit the current top contenders.
+  const pairsRef = useRef<{ a: QuizJoke; b: QuizJoke }[]>([]);
+  const sessionIds = useRef(new Set<number>());
+  const hardRef = useRef(false);
+  const makePair = useCallback(() => {
+    const d = dnaRef.current; if (!d) return null;
+    const p = nextPair(quiz.pool, d.profile, d.matches, { clean: cleanMode, hard: hardRef.current, exclude: sessionIds.current });
+    if (!p) return null;
+    sessionIds.current.add(p[0].id); sessionIds.current.add(p[1].id);
+    return { a: p[0], b: p[1] };
+  }, [quiz.pool, cleanMode]);
 
   const startWith = useCallback((rounds: number, hard: boolean) => {
-    const ps = buildPairs(cleanMode, hard);
-    setPairs(ps); setTotalRounds(Math.min(rounds, ps.length)); setCur(0); setPicks([]); setRevealed(false); setRevealing(false);
+    hardRef.current = hard; sessionIds.current = new Set();
+    const first = makePair(); if (!first) return;
+    pairsRef.current = [first]; setPairs([first]);
+    setTotalRounds(rounds); setCur(0); setPicks([]); setRevealed(false); setRevealing(false);
     if (revealTimer.current) { clearTimeout(revealTimer.current); revealTimer.current = null; }
-    setScreen('battle'); trackEvent('cdna_start', { clean: cleanMode, hard, rounds });
-  }, [buildPairs, cleanMode]);
+    setScreen('battle'); trackEvent('cdna_start', { clean: cleanMode, hard, rounds, prior_picks: dnaRef.current?.profile.picks ?? 0 });
+  }, [makePair, cleanMode]);
   const start = useCallback(() => startWith(N_BASE, false), [startWith]);
 
   const advance = useCallback((nextCur: number) => {
     if (nextCur >= totalRounds) {
-      if (totalRounds < N_MAX && pairs.length > totalRounds) { setScreen('extend'); trackEvent('cdna_reach_extend'); }
+      if (totalRounds < N_MAX) { setScreen('extend'); trackEvent('cdna_reach_extend'); }
       else { setScreen('results'); }
-    } else setCur(nextCur);
-  }, [totalRounds, pairs.length]);
+      return;
+    }
+    if (!pairsRef.current[nextCur]) {
+      const np = makePair();
+      if (!np) { setScreen('results'); return; }
+      pairsRef.current = [...pairsRef.current, np];
+      setPairs(pairsRef.current);
+    }
+    setCur(nextCur);
+  }, [totalRounds, makePair]);
 
   const advanceClearReveal = useCallback((nextCur: number) => {
     if (revealTimer.current) { clearTimeout(revealTimer.current); revealTimer.current = null; }
@@ -144,10 +136,11 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
     if (revealing) { advanceClearReveal(cur + 1); return; } // tap-through during reveal
     const R = pairs[cur]; if (!R) return;
     setPicks(prev => { const next = [...prev]; next[cur] = { a: R.a, b: R.b, winner: side }; return next; });
+    dna?.record(side === 'a' ? R.a : R.b, side === 'a' ? R.b : R.a);
     trackEvent('cdna_pick', { round: cur + 1, winner: (side === 'a' ? R.a : R.b).slug });
     setRevealing(true);
     revealTimer.current = setTimeout(() => advanceClearReveal(cur + 1), 2400);
-  }, [pairs, cur, revealing, advanceClearReveal]);
+  }, [pairs, cur, revealing, advanceClearReveal, dna]);
 
   const skip = useCallback(() => {
     if (revealing) { advanceClearReveal(cur + 1); return; }
@@ -160,9 +153,14 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
     if (revealTimer.current) { clearTimeout(revealTimer.current); revealTimer.current = null; }
     setRevealing(false);
     if (cur === 0) return;
+    const prevPick = picks[cur - 1];
+    if (prevPick?.winner) {
+      const w = prevPick.winner === 'a' ? prevPick.a : prevPick.b, l = prevPick.winner === 'a' ? prevPick.b : prevPick.a;
+      dna?.undo(w, l);
+    }
     setPicks(prev => { const n = [...prev]; n[cur - 1] = undefined as unknown as Pick; return n; });
     setCur(cur - 1);
-  }, [cur]);
+  }, [cur, picks, dna]);
 
   // Clear any pending reveal timer on unmount.
   useEffect(() => () => { if (revealTimer.current) clearTimeout(revealTimer.current); if (shareTimer.current) clearTimeout(shareTimer.current); }, []);
@@ -229,7 +227,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
       const n = right ? sp.filter(p => p < ext.pr).length : sp.filter(p => p > ext.pr).length;
       compare = { label: (right ? ext.right : ext.left).toLowerCase(), n, total: normFps.length };
     }
-    const shows = rankShows(pref, normFps, meanFp, weights);
+    const shows = dna?.matches ?? [];
     // signature jokes
     const cands = [...quiz.reco, ...quiz.pool.filter(j => !seenIds.has(j.id))].filter(j => !cleanMode || !isEdgy(j));
     const ranked = cands.map(j => ({ j, s: dot(j.vec.map((v, d) => v - baseline[d]), pref) + (j.quot || 0) * 0.04 })).sort((a, b) => b.s - a.s);
@@ -237,7 +235,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
     for (const r of ranked) { if ((per[r.j.slug] || 0) >= 1) continue; per[r.j.slug] = 1; sig.push(r.j); if (sig.length >= 4) break; }
     const payload: ResultPayload = { archeIdx: ARCHES.indexOf(best), axes: axisVals.map(a => +a.pr.toFixed(2)), shows: shows.slice(0, 3).map(s => ({ name: s.name, slug: s.slug, pct: s.pct })) };
     return { best, second, margin, conf, axisVals, compare, shows, sig, payload };
-  }, [screen, pref, winCounts, weights, normFps, meanFp, baseline, quiz.reco, quiz.pool, seenIds, cleanMode]);
+  }, [screen, pref, winCounts, weights, normFps, baseline, quiz.reco, quiz.pool, seenIds, cleanMode, dna?.matches]);
 
   // Lazy-load episode fingerprints once the user reaches results (keeps initial load light).
   useEffect(() => {
@@ -415,9 +413,23 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
             <span className="w-11 h-6 rounded-full bg-brand-border relative transition peer-checked:bg-brand-teal after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-5 after:h-5 after:rounded-full after:bg-white after:transition peer-checked:after:translate-x-5" />
             Keep it clean <span className="font-normal">(skip the darker, edgier jokes)</span>
           </label>
-          <div><button className={btnPrimary} onClick={start}>Start the face-offs</button></div>
+          {totalPicks > 0 && dna ? (
+            <div className="mb-2 bg-brand-card border border-brand-border rounded-2xl px-5 py-4 max-w-xl">
+              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-brand-teal">Welcome back</p>
+              <p className="mt-1 text-brand-text-secondary">
+                Your Comedy DNA has <b className="text-brand-text-primary">{totalPicks} picks</b> ({readLevel(totalPicks).label.toLowerCase()}).
+                {dna.matches[0] && <> Top match so far: <b className="text-brand-text-primary">{dna.matches[0].name} {dna.matches[0].pct}%</b>.</>}
+              </p>
+              <div className="flex gap-2.5 flex-wrap mt-3.5">
+                <button className={btnPrimary} onClick={start}>Sharpen it: 10 more</button>
+                <button className={btnLine} onClick={() => setScreen('results')}>See my results</button>
+              </div>
+            </div>
+          ) : (
+            <div><button className={btnPrimary} onClick={start}>Start the face-offs</button></div>
+          )}
           <div className="flex gap-7 mt-8 flex-wrap">
-            {[[`${N_BASE}`, 'quick face-offs'], [jokeCount ? jokeCount.toLocaleString() : '70,000+', 'jokes scored'], [`${fingerprints.length}`, 'shows ranked']].map(([b, s]) => (
+            {[[`${N_BASE}`, 'quick face-offs'], [jokeCount ? jokeCount.toLocaleString() : '70,000+', 'jokes scored'], [`${normFps.length}`, 'shows ranked']].map(([b, s]) => (
               <div key={s} className="flex flex-col"><b className="text-2xl font-black">{b}</b><span className="text-xs text-brand-text-muted uppercase tracking-wider font-semibold">{s}</span></div>
             ))}
           </div>
@@ -494,6 +506,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                       mono={st.m}
                       props={j.props}
                       jokeId={j.id}
+                      art={j.art}
                       muted={!revealing}
                       ariaLabel={sceneLabel}
                       className={`block w-full transition-all duration-300 motion-reduce:transition-none ${revealing ? 'h-[340px]' : 'h-[320px]'}`} />
@@ -587,7 +600,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
       {/* EXTEND */}
       {screen === 'extend' && (() => {
         // Stepped extend: each "Keep going" adds N_STEP rounds, capped at min(N_MAX, available pairs).
-        const nextTotal = Math.min(N_MAX, pairs.length, totalRounds + N_STEP);
+        const nextTotal = Math.min(N_MAX, totalRounds + N_STEP);
         const moreRounds = nextTotal - totalRounds;
         const canExtend = moreRounds > 0;
         return (
@@ -637,6 +650,11 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                 {result.compare && <> · you lean more <b className="text-brand-text-primary">{result.compare.label}</b> than {result.compare.n} of {result.compare.total} shows</>}
               </div>
             )}
+            <p className="text-xs text-brand-text-muted mt-3">
+              {readLevel(totalPicks).label} from {totalPicks} picks
+              {readLevel(totalPicks).next ? <> · {readLevel(totalPicks).next! - totalPicks} more for a sharper one</> : null}
+              {' · '}Your match % now shows on every show page and on the leaderboard.
+            </p>
             <div className="flex gap-2.5 justify-center flex-wrap mt-4">
               <button className={btnPrimary} onClick={shareCard}>Share my card</button>
               <button className={`${btnLine} !border-brand-teal`} onClick={challenge}>Challenge a friend &rarr;</button>
@@ -778,12 +796,13 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
             <p className="text-brand-text-secondary text-sm max-w-md mx-auto mb-4">Liked it? Try the tougher cut — face-offs between jokes with similar comedic DNA, so every pick is a real call.</p>
             <div className="flex gap-2.5 justify-center flex-wrap">
               <button className={btnPrimary} onClick={() => startWith(10, true)}>Play 10 more &mdash; hard mode</button>
-              <button className={btnLine} onClick={() => { setScreen('intro'); setPicks([]); setCur(0); }}>Start over</button>
+              <button className={btnLine} onClick={() => startWith(10, false)}>10 more, normal mode</button>
+              <button className="text-sm text-brand-text-muted hover:text-brand-text-primary px-3 py-2" onClick={() => { if (window.confirm('Clear your Comedy DNA? Your picks and match scores will be removed from this device and your account.')) { dna?.reset(); setScreen('intro'); setPicks([]); setCur(0); trackEvent('cdna_reset'); } }}>Reset my DNA</button>
             </div>
           </div>
 
           <p className="mt-6 text-xs text-brand-text-muted text-center leading-relaxed max-w-2xl mx-auto">
-            Taste profile inferred from your {totalPicks} picks across a balanced pool of {quiz.pool.length} jokes. Show matches use each show&apos;s joke-type fingerprint vs. your preference vector (inverse-frequency-weighted cosine, with small-sample shrinkage). A just-for-fun entertainment tool, not any kind of assessment. Jokes are short quotations from their respective series, shown for commentary and criticism.
+            Taste profile built from all {totalPicks} of your picks on the site, drawn from a pool of {quiz.pool.length} jokes, ten from each of the {normFps.length} shows on our current model. A show&apos;s match blends how closely its joke-type fingerprint fits the jokes you pick with how its own jokes did in your face-offs, and it stays near 50% until there are enough picks to say more. A just-for-fun entertainment tool, not any kind of assessment. Jokes are short quotations from their respective series, shown for commentary and criticism.
           </p>
         </section>
       )}

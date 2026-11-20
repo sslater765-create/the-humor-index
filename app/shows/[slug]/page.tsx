@@ -2,7 +2,9 @@ import WhereToWatch from '@/components/WhereToWatch';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getShow, getSeasons, getEpisodes, getCharacters, getRecommendations, getAllShows, getComedyDna } from '@/lib/data';
+import { getShow, getSeasons, getEpisodes, getCharacters, getRecommendations, getAllShows, getComedyDna, getShowDnaJokes } from '@/lib/data';
+import ShowDnaPanel from '@/components/comedy-dna/ShowDnaPanel';
+import AdSlot from '@/components/ads/AdSlot';
 import { formatIndex, byHumorIndexDesc } from '@/lib/scoring';
 import { ALL_SHOW_SLUGS } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
@@ -112,13 +114,14 @@ export default async function ShowPage({ params }: { params: { slug: string } })
     );
   }
 
-  const [seasons, episodes, realCharacters, recommendations, allShows, comedyDna] = await Promise.all([
+  const [seasons, episodes, realCharacters, recommendations, allShows, comedyDna, dnaJokes] = await Promise.all([
     getSeasons(params.slug),
     getEpisodes(params.slug),
     getCharacters(params.slug),
     getRecommendations(params.slug),
     getAllShows(),
     getComedyDna(params.slug),
+    getShowDnaJokes(params.slug),
   ]);
 
   // Map real character data to CharacterStats format for charts. We deliberately
@@ -271,6 +274,13 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         )}
       </div>
 
+      {/* Comedy DNA: this show's match for the visitor, or a one-tap face-off to get one */}
+      {dnaJokes.show.length >= 3 && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-6">
+          <ShowDnaPanel slug={show.slug} name={show.name} showJokes={dnaJokes.show} otherJokes={dnaJokes.others} />
+        </div>
+      )}
+
       {/* Where to watch — affiliate (Phase 1) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <WhereToWatch show={show.name} />
@@ -290,7 +300,8 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           per-episode arc is a <canvas> (invisible to answer engines), so we
           mirror the underlying numbers here in real HTML. */}
       {episodes.length > 0 && (
-        <table className="sr-only">
+        // sr-only goes on a wrapper: a <table> ignores the 1px clamp and widened phones to 504px.
+        <div className="sr-only"><table>
           <caption>{show.name} — Humor Index for every scored episode</caption>
           <thead><tr><th>Season</th><th>Episode</th><th>Title</th><th>Humor Index</th></tr></thead>
           <tbody>
@@ -300,14 +311,17 @@ export default async function ShowPage({ params }: { params: { slug: string } })
               </tr>
             ))}
           </tbody>
-        </table>
+        </table></div>
       )}
 
       {/* Intent sections — server-rendered for SEO: "funniest [show] episodes" + "is [show] worth watching" */}
       {(() => {
         const scored = episodes.filter(e => e.humor_index > 0);
         if (scored.length === 0) return null;
-        const topEpisodes = [...scored].sort(byHumorIndexDesc).slice(0, 5);
+        const rankedEps = [...scored].sort(byHumorIndexDesc);
+        const topEpisodes = rankedEps.slice(0, 5);
+        // The top five are already on the page (Overview tab); this list carries on from #6.
+        const nextEpisodes = rankedEps.slice(5, 15);
         const scoredShows = rankable(allShows).sort(byHumorIndexDesc);
         const rank = scoredShows.findIndex(s => s.slug === show.slug) + 1;
         const total = scoredShows.length;
@@ -344,24 +358,26 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         };
         return (
           <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 border-t border-brand-border">
+            <AdSlot placement="in-feed" className="mb-10 max-w-3xl" />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
             <h2 className="text-xl font-medium text-brand-text-primary mb-2">
               The Funniest {show.name.replace(/^The /, '')} Episodes
             </h2>
             <p className="text-sm text-brand-text-secondary mb-5 max-w-2xl leading-relaxed">
-              Of the {scored.length} {show.name} episode{scored.length !== 1 ? 's' : ''} we scored, these
-              rate highest on the Humor Index — our blend of joke density, craft, and impact. Tap any
+              Of the {scored.length} {show.name} episode{scored.length !== 1 ? 's' : ''} we scored,
+              {topEpisodes[0] ? <> &ldquo;{topEpisodes[0].title}&rdquo; rates highest.</> : null}{' '}
+              {nextEpisodes.length > 0 ? 'The top five are above; here are the next ten.' : ''} Tap any
               episode for the full joke-by-joke breakdown.
             </p>
             <div className="space-y-2 mb-4">
-              {topEpisodes.map((ep, i) => (
+              {(nextEpisodes.length > 0 ? nextEpisodes : topEpisodes).map((ep, i) => (
                 <Link
                   key={`${ep.season}-${ep.episode_number}`}
                   href={`/shows/${show.slug}/${ep.season}/${ep.episode_number}`}
                   className="flex items-center gap-4 p-4 bg-brand-card border border-brand-border rounded-xl hover:border-brand-gold/40 transition-colors group"
                 >
-                  <span className={`font-mono text-sm w-6 text-right ${i === 0 ? 'text-brand-gold' : 'text-brand-text-muted'}`}>
-                    {i + 1}
+                  <span className="font-mono text-sm w-6 text-right text-brand-text-muted">
+                    {i + 1 + (nextEpisodes.length > 0 ? 5 : 0)}
                   </span>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm text-brand-text-primary group-hover:text-brand-gold transition-colors truncate">
@@ -499,9 +515,10 @@ export default async function ShowPage({ params }: { params: { slug: string } })
                           src={`https://image.tmdb.org/t/p/w1280${recShow.backdrop_path}`}
                           alt={recShow.name}
                           fill
-                          className="object-cover opacity-40 group-hover:opacity-55 transition-opacity"
+                          sizes="(min-width: 1024px) 400px, 100vw"
+                          className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-brand-card to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent" />
                       </div>
                     )}
                     <div className="p-4">

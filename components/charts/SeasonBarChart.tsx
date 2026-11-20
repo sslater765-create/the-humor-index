@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { Chart, registerables } from 'chart.js';
 import { useInViewChart } from '@/hooks/useInViewChart';
 import { SeasonScore } from '@/lib/types';
-import { scoreToColor } from '@/lib/scoring';
+import { relativeColorFn, chartFloor } from '@/lib/scoring';
 import ShareButton from '../ui/ShareButton';
 
 Chart.register(...registerables);
@@ -30,6 +30,9 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
   // same bar is both best and worst, which stacked the two labels into garble.
   const multi = seasons.length > 1;
 
+  const colorOf = useMemo(() => relativeColorFn(seasons.map(s => s.humor_index)), [seasons]);
+  const floor = useMemo(() => chartFloor(seasons.map(s => s.humor_index)), [seasons]);
+
   const config = useMemo(() => ({
     type: 'bar' as const,
     data: {
@@ -38,13 +41,14 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
         label: 'Humor Index',
         data: seasons.map(s => s.humor_index),
         backgroundColor: seasons.map((s, i) => {
-          if (multi && i === bestIdx) return scoreToColor(s.humor_index) + 'CC';
+          if (multi && i === bestIdx) return '#E8B931CC';
           if (multi && i === worstIdx) return '#666666AA';
-          return scoreToColor(s.humor_index) + '99';
+          return colorOf(s.humor_index) + '99';
         }),
         borderColor: seasons.map((s, i) => {
+          if (multi && i === bestIdx) return '#E8B931';
           if (multi && i === worstIdx) return '#888888';
-          return scoreToColor(s.humor_index);
+          return colorOf(s.humor_index);
         }),
         borderWidth: seasons.map((_, i) => (multi && (i === bestIdx || i === worstIdx)) ? 2 : 1),
         borderRadius: 4,
@@ -84,7 +88,7 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
           grid: { display: false },
         },
         y: {
-          min: 40,
+          min: floor,
           max: 100,
           ticks: { color: '#666666', font: { size: 10 } },
           grid: { color: 'rgba(255,255,255,0.05)' },
@@ -122,7 +126,7 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
         }
       },
     }],
-  }), [seasons, bestIdx, worstIdx, multi]);
+  }), [seasons, bestIdx, worstIdx, multi, colorOf, floor]);
 
   const { canvasRef, inViewRef } = useInViewChart(config);
 

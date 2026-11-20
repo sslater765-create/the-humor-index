@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { getLastVisitTimestamp } from './RecentlyViewedTracker';
 
@@ -12,11 +12,9 @@ interface NewItem {
   date: string;
 }
 
-// These are the site's content items with their publish dates
-const ALL_ITEMS: NewItem[] = [
-  { href: '/blog/friends-most-jokes-ranked-eleventh', label: 'Latest Blog', labelColor: 'text-brand-gold', title: 'Friends Tells More Jokes Than Any Show We Rank. It Finishes 11th.', subtitle: 'Nov 16, 2026', date: '2026-11-16' },
-  { href: '/blog/chappelles-show-sketch-advantage', label: 'Blog', labelColor: 'text-brand-gold', title: 'A Sketch Show Has Four of Our Five Top-Ranked Episodes', subtitle: 'Nov 11, 2026', date: '2026-11-11' },
-  { href: '/blog/density-vs-craft', label: 'Blog', labelColor: 'text-brand-gold', title: 'Two Shows Tell the Same Number of Jokes Per Minute. One Scores 10 Points Higher.', subtitle: 'Aug 19, 2026', date: '2026-08-19' },
+// Show launches with their dates. Blog posts come in as a prop from the homepage,
+// built from posts.ts, so a new post appears here without editing this file.
+const SHOW_ITEMS: NewItem[] = [
   { href: '/shows/broad-city', label: 'Show Launch', labelColor: 'text-amber-400', title: 'Broad City', subtitle: 'Fully scored · Jun 17, 2026', date: '2026-06-17' },
   { href: '/shows/chappelles-show', label: 'Show Launch', labelColor: 'text-emerald-400', title: "Chappelle's Show", subtitle: 'Fully scored · Jun 10, 2026', date: '2026-06-10' },
   { href: '/shows/freaks-and-geeks', label: 'Show Launch', labelColor: 'text-emerald-400', title: 'Freaks and Geeks', subtitle: 'Fully scored · Jun 9, 2026', date: '2026-06-09' },
@@ -36,7 +34,20 @@ const ALL_ITEMS: NewItem[] = [
   { href: '/shows/seinfeld', label: 'Show Launch', labelColor: 'text-emerald-400', title: 'Seinfeld', subtitle: 'Fully scored · Apr 11, 2026', date: '2026-04-11' },
 ];
 
-export default function WhatsNewPersonalized() {
+export interface LatestPost { slug: string; title: string; date: string }
+
+function fmt(date: string): string {
+  return new Date(date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+export default function WhatsNewPersonalized({ latestPosts = [] }: { latestPosts?: LatestPost[] }) {
+  const ALL_ITEMS: NewItem[] = useMemo(() => [
+    ...latestPosts.map((p, i) => ({
+      href: `/blog/${p.slug}`, label: i === 0 ? 'Latest Blog' : 'Blog', labelColor: 'text-brand-gold',
+      title: p.title, subtitle: fmt(p.date), date: p.date,
+    })),
+    ...SHOW_ITEMS,
+  ].sort((a, b) => (a.date < b.date ? 1 : -1)), [latestPosts]);
   const [newSinceLabel, setNewSinceLabel] = useState<string | null>(null);
   const [newItems, setNewItems] = useState<NewItem[]>([]);
 
@@ -54,13 +65,13 @@ export default function WhatsNewPersonalized() {
         setNewItems(fresh.slice(0, 3));
       }
     }
-  }, []);
+  }, [ALL_ITEMS]);
 
   // Default items for first-time/no-new-content visitors
   const displayItems = newItems.length > 0 ? newItems : ALL_ITEMS.slice(0, 3);
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-8">
       <div className="flex items-baseline gap-2 mb-4">
         <p className="text-xs uppercase tracking-widest text-brand-text-muted">What&apos;s New</p>
         {newSinceLabel && (

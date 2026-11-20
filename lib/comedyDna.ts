@@ -15,7 +15,7 @@ export const DNA_TYPES: JokeType[] = [
 const N = DNA_TYPES.length;
 const TI: Record<string, number> = Object.fromEntries(DNA_TYPES.map((t, i) => [t, i]));
 
-export interface QuizJoke { id: number; text: string; slug: string; show?: string; vec: number[]; quot?: number; speaker?: string; ep?: string; etitle?: string; scene?: string; props?: string[]; why?: string; }
+export interface QuizJoke { id: number; text: string; slug: string; show?: string; vec: number[]; quot?: number; speaker?: string; ep?: string; etitle?: string; scene?: string; props?: string[]; why?: string; /** id of the illustrated card in /public/cards, when the joke has one */ art?: number; }
 export interface QuizData { types: JokeType[]; pool: QuizJoke[]; reco: QuizJoke[]; }
 export interface ShowFingerprint { slug: string; name: string; fp: number[]; n: number; }
 
@@ -142,17 +142,20 @@ export function rankArchetypes(pref: number[], w: number[]): { arche: Archetype;
   return ARCHES.map(a => ({ arche: a, score: wcos(pref, DNA_TYPES.map(t => a.weights[t] || 0), w) }))
     .sort((x, y) => y.score - x.score);
 }
+// Used by /my (taste from loved shows). Same honest scale as matchShows: 50% is
+// neutral, not a floor, and nothing is stretched to fill 73-98%.
 export interface ShowRank { slug: string; name: string; fp: number[]; score: number; pct: number; }
 export function rankShows(pref: number[], fps: ShowFingerprint[], meanFp: number[], w: number[]): ShowRank[] {
-  const scored = fps.map(f => ({ slug: f.slug, name: f.name, fp: f.fp, score: wcos(pref, centeredShow(f, meanFp), w) }))
-    .sort((a, b) => b.score - a.score);
-  const hi = scored[0]?.score ?? 1, lo = scored[scored.length - 1]?.score ?? 0, span = (hi - lo) || 1;
-  return scored.map(s => ({ ...s, pct: Math.round(73 + 25 * ((s.score - lo) / span)) }));
+  return fps.map(f => {
+    const score = wcos(pref, centeredShow(f, meanFp), w);
+    return { slug: f.slug, name: f.name, fp: f.fp, score, pct: Math.max(2, Math.min(98, Math.round(50 + 48 * Math.tanh(1.8 * score)))) };
+  }).sort((a, b) => b.score - a.score);
 }
+
 export function topUserTypes(pref: number[], w: number[], k: number): JokeType[] {
   return DNA_TYPES.map((t, d) => ({ t, v: w[d] * pref[d] })).filter(x => x.v > 0).sort((a, b) => b.v - a.v).slice(0, k).map(x => x.t);
 }
-export function whyText(show: ShowRank, pref: number[], w: number[], meanFp: number[]): string {
+export function whyText(show: { name: string; fp: number[] }, pref: number[], w: number[], meanFp: number[]): string {
   const mine = topUserTypes(pref, w, 4);
   const overlap = mine.filter(t => show.fp[TI[t]] > meanFp[TI[t]]);
   const use = (overlap.length ? overlap : mine).slice(0, 2).map(t => TYPE_LABEL[t]);
@@ -206,4 +209,156 @@ export function axisValue(frac: number[], axis: { l: JokeType[]; r: JokeType[] }
 export function archetypeExampleJokes<T extends { vec: number[] }>(a: Archetype, pool: T[], n: number): T[] {
   const av = DNA_TYPES.map(t => a.weights[t] || 0);
   return [...pool].map(j => ({ j, s: dot(j.vec, av) })).sort((x, y) => y.s - x.s).slice(0, n).map(x => x.j);
+}
+
+// ---------- the saved taste profile ----------
+// One profile per visitor, fed by every pick on the site (the full quiz, the
+// one-tap cards on the homepage and show pages). It stores aggregates rather
+// than joke ids so it survives rebuilds of the joke pool.
+
+export interface DnaProfile {
+  v: 2;
+  /** Baseline-centred preference over DNA_TYPES: += winner - loser on every pick. */
+  pref: number[];
+  /** How often each joke type was on the winning side (drives the four axes). */
+  wins: number[];
+  /** Per show: [wins, losses] in head-to-head picks. */
+  sw: Record<string, [number, number]>;
+  picks: number;
+  /** Joke ids already shown, so a returning player gets fresh face-offs. Capped. */
+  seen: number[];
+  updated: string;
+}
+
+export function emptyProfile(): DnaProfile {
+  return { v: 2, pref: new Array(N).fill(0), wins: new Array(N).fill(0), sw: {}, picks: 0, seen: [], updated: new Date(0).toISOString() };
+}
+
+export function isProfile(x: unknown): x is DnaProfile {
+  const p = x as DnaProfile;
+  return !!p && p.v === 2 && Array.isArray(p.pref) && p.pref.length === N && Array.isArray(p.wins) && typeof p.picks === 'number' && typeof p.sw === 'object';
+}
+
+const SEEN_CAP = 400;
+
+/** Apply (sign=1) or undo (sign=-1) one pick. Pure: returns a new profile. */
+export function applyPick(p: DnaProfile, winner: QuizJoke, loser: QuizJoke, baseline: number[], sign: 1 | -1 = 1): DnaProfile {
+  const pref = p.pref.map((v, d) => v + sign * ((winner.vec[d] - baseline[d]) - (loser.vec[d] - baseline[d])));
+  const wins = p.wins.map((v, d) => Math.max(0, v + sign * winner.vec[d]));
+  const sw = { ...p.sw };
+  const bump = (slug: string, i: 0 | 1) => {
+    const cur: [number, number] = sw[slug] ? [...sw[slug]] as [number, number] : [0, 0];
+    cur[i] = Math.max(0, cur[i] + sign);
+    sw[slug] = cur;
+  };
+  bump(winner.slug, 0); bump(loser.slug, 1);
+  let seen = p.seen;
+  if (sign === 1) seen = [...p.seen.filter(id => id !== winner.id && id !== loser.id), winner.id, loser.id].slice(-SEEN_CAP);
+  return { v: 2, pref, wins, sw, picks: Math.max(0, p.picks + sign), seen, updated: new Date().toISOString() };
+}
+
+/** Merge two profiles of the same person: keep whichever has more evidence. */
+export function pickRicher(a: DnaProfile | null, b: DnaProfile | null): DnaProfile | null {
+  if (!a) return b; if (!b) return a;
+  if (a.picks !== b.picks) return a.picks > b.picks ? a : b;
+  return a.updated >= b.updated ? a : b;
+}
+
+// How much a show's own head-to-head record counts next to the joke-type match.
+// Tuned by simulation (Nov 2026): 0.5 roughly doubles how often a player who
+// keeps picking one show's jokes sees that show on top, without letting a
+// single lucky pick dominate (the record is shrunk by +1.5 in the denominator).
+const SHOW_RECORD_WEIGHT = 0.5;
+// A match % only stretches toward the ends once there are enough picks behind
+// it, so ten random clicks can't produce "91% Seinfeld".
+const FULL_EVIDENCE_PICKS = 30;
+
+export interface ShowMatch { slug: string; name: string; fp: number[]; score: number; pct: number; }
+
+export function matchShows(p: DnaProfile, fps: ShowFingerprint[], meanFp: number[], w: number[]): ShowMatch[] {
+  const hasPref = p.pref.some(v => v !== 0);
+  const evidence = Math.min(1, Math.sqrt(p.picks / FULL_EVIDENCE_PICKS));
+  return fps.map(f => {
+    const typeMatch = hasPref ? wcos(p.pref, centeredShow(f, meanFp), w) : 0;
+    const [wn, ln] = p.sw[f.slug] || [0, 0];
+    const record = (wn - ln) / (wn + ln + 1.5);
+    const score = (1 - SHOW_RECORD_WEIGHT) * typeMatch + SHOW_RECORD_WEIGHT * record;
+    const pct = Math.round(50 + 48 * Math.tanh(2.4 * score * evidence));
+    return { slug: f.slug, name: f.name, fp: f.fp, score, pct: Math.max(2, Math.min(98, pct)) };
+  }).sort((a, b) => b.score - a.score);
+}
+
+export function readLevel(picks: number): { label: string; next: number | null } {
+  if (picks < 5) return { label: 'First read', next: 5 };
+  if (picks < 12) return { label: 'Early read', next: 12 };
+  if (picks < FULL_EVIDENCE_PICKS) return { label: 'Solid read', next: FULL_EVIDENCE_PICKS };
+  return { label: 'Sharp read', next: null };
+}
+
+const DARK_I = DNA_TYPES.indexOf('dark_subversive');
+const AWK_I = DNA_TYPES.indexOf('awkward_silence');
+const EDGY_RE = /\b(kill|killed|waterboard|ebola|prostitut|suicide|murder|corpse|funeral|dead|die|rape|penis|dick|cock|pussy|snatch|semen|incest|fuck\w*|shit\w*|bitch\w*)\b/i;
+export function isEdgy(j: QuizJoke): boolean { return j.vec[DARK_I] === 1 || j.vec[AWK_I] === 1 || EDGY_RE.test(j.text); }
+
+function vecDist(a: number[], b: number[]) { let d = 0; for (let i = 0; i < a.length; i++) d += Math.abs(a[i] - b[i]); return d; }
+
+/**
+ * Choose the next face-off. Early on it spreads picks across shows the player
+ * has seen least; once there is a read (6+ picks) it mostly pits the current
+ * top contenders against each other, which is where a pick tells us the most.
+ * `focus` pins one side to a show (used on show pages).
+ */
+export function nextPair(
+  pool: QuizJoke[], p: DnaProfile, matches: ShowMatch[],
+  opts: { clean?: boolean; hard?: boolean; focus?: string; exclude?: Set<number> } = {},
+): [QuizJoke, QuizJoke] | null {
+  const exclude = opts.exclude ?? new Set<number>();
+  const seen = new Set(p.seen);
+  const ok = (j: QuizJoke) => !exclude.has(j.id) && (!opts.clean || !isEdgy(j));
+  const bySlug: Record<string, QuizJoke[]> = {};
+  for (const j of pool) if (ok(j)) (bySlug[j.slug] ||= []).push(j);
+  const slugs = Object.keys(bySlug);
+  if (slugs.length < 2) return null;
+  const freshFirst = (slug: string) => {
+    const js = bySlug[slug]; const fresh = js.filter(j => !seen.has(j.id));
+    const src = fresh.length ? fresh : js;
+    return src[Math.floor(Math.random() * src.length)];
+  };
+  const shuffled = [...slugs].sort(() => Math.random() - 0.5);
+  const appearances = (s: string) => { const r = p.sw[s]; return r ? r[0] + r[1] : 0; };
+
+  let s1: string, s2: string;
+  if (opts.focus && bySlug[opts.focus]) {
+    s1 = opts.focus;
+    const others = shuffled.filter(s => s !== s1);
+    s2 = p.picks >= 6 && Math.random() < 0.6
+      ? (matches.find(m => m.slug !== s1 && bySlug[m.slug])?.slug ?? others[0])
+      : others.sort((a, b) => appearances(a) - appearances(b))[0];
+  } else if (p.picks < 6 || Math.random() < 0.25) {
+    const least = shuffled.sort((a, b) => appearances(a) - appearances(b));
+    [s1, s2] = [least[0], least[1]];
+  } else {
+    const top = matches.map(m => m.slug).filter(s => bySlug[s]).slice(0, 4);
+    const pickTwo = (top.length >= 2 ? top : shuffled).slice().sort(() => Math.random() - 0.5);
+    [s1, s2] = [pickTwo[0], pickTwo[1]];
+  }
+  const A = freshFirst(s1);
+  const cands = bySlug[s2].filter(j => j.id !== A.id);
+  if (!cands.length) return null;
+  const fresh = cands.filter(j => !seen.has(j.id));
+  const src = fresh.length ? fresh : cands;
+  // Default: the most different joke (a clearer choice). Hard mode: the most similar.
+  let B = src[0], bd = opts.hard ? Infinity : -1;
+  for (const j of src) {
+    const d = vecDist(A.vec, j.vec) + Math.random() * 0.8;
+    if (opts.hard ? d < bd : d > bd) { bd = d; B = j; }
+  }
+  return Math.random() < 0.5 ? [A, B] : [B, A];
+}
+
+/** Jokes from one show that best fit a profile (show-page "jokes in your DNA"). */
+export function jokesForProfile<T extends QuizJoke>(p: DnaProfile, jokes: T[], baseline: number[], n: number): T[] {
+  return jokes
+    .map(j => ({ j, s: dot(j.vec.map((v, d) => v - baseline[d]), p.pref) + (j.quot || 0) * 0.04 }))
+    .sort((a, b) => b.s - a.s).slice(0, n).map(x => x.j);
 }

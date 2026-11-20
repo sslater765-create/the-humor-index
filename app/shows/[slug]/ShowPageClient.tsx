@@ -7,6 +7,8 @@ import { JOKE_TYPE_LABELS, byHumorIndexDesc } from '@/lib/scoring';
 // DNA data now passed as prop from server component
 import Link from 'next/link';
 import TabBar from '@/components/ui/TabBar';
+import { getTier } from '@/lib/tiers';
+import { isAwaitingRescore } from '@/lib/scale';
 import EpisodeRow from '@/components/ui/EpisodeRow';
 import { formatIndex, scoreToColor } from '@/lib/scoring';
 import { charImageSrc } from '@/lib/charImage';
@@ -82,9 +84,13 @@ export default function ShowPageClient({ show, seasons, episodes: rawEpisodes, c
         const avgIndex = episodes.length > 0
           ? episodes.reduce((sum, e) => sum + e.humor_index, 0) / episodes.length
           : 0;
-        const above90 = episodes.filter(e => e.humor_index >= 90).length;
-        const above80 = episodes.filter(e => e.humor_index >= 80).length;
-        const above70 = episodes.filter(e => e.humor_index >= 70).length;
+        // Episodes per tier, on the scale this show is scored on. Fixed cut-offs
+        // (90+/80+/70+) read 132/136/136 for 30 Rock and said nothing.
+        const tierScale = isAwaitingRescore(show.slug) ? 'legacy' : 'current';
+        const tierCount = (key: string) => episodes.filter(e => getTier(e.humor_index, tierScale).key === key).length;
+        const above90 = tierCount('elite');
+        const above80 = tierCount('great');
+        const above70 = tierCount('solid');
         // below70 available if needed: episodes.filter(e => e.humor_index < 70).length
         const scores = episodes.map(e => e.humor_index);
         const stdDev = scores.length > 1
@@ -185,15 +191,15 @@ export default function ShowPageClient({ show, seasons, episodes: rawEpisodes, c
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
                 <p className="font-mono text-2xl text-brand-gold font-bold">{above90}</p>
-                <p className="text-[10px] text-brand-text-muted mt-1">Episodes 90+</p>
+                <p className="text-[10px] text-brand-text-muted mt-1">Elite episodes</p>
               </div>
               <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
                 <p className="font-mono text-2xl text-emerald-400 font-bold">{above80}</p>
-                <p className="text-[10px] text-brand-text-muted mt-1">Episodes 80+</p>
+                <p className="text-[10px] text-brand-text-muted mt-1">Great</p>
               </div>
               <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
                 <p className="font-mono text-2xl text-brand-text-primary font-bold">{above70}</p>
-                <p className="text-[10px] text-brand-text-muted mt-1">Episodes 70+</p>
+                <p className="text-[10px] text-brand-text-muted mt-1">Solid</p>
               </div>
               <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
                 <p className="font-mono text-2xl text-brand-text-primary font-bold">{stdDev.toFixed(1)}</p>

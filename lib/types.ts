@@ -128,6 +128,8 @@ export interface EpisodeDetail extends EpisodeScore {
   // Also JSON-encoded in the data; normalise with parseStandoutIds().
   standout_joke_ids: number[] | string;
   tmdb_overview?: string;
+  /** TMDB still for this episode, e.g. "/abc.jpg" */
+  still_path?: string | null;
   guest_stars?: string[];
 }
 

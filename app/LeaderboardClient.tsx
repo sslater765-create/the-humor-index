@@ -6,24 +6,31 @@ import { ShowScore } from '@/lib/types';
 import { formatIndex } from '@/lib/scoring';
 import FormatBadge from '@/components/ui/FormatBadge';
 import RankBadge from '@/components/ui/RankBadge';
+import MatchPill from '@/components/comedy-dna/MatchPill';
+import QuickPick from '@/components/comedy-dna/QuickPick';
+import { useDna } from '@/components/comedy-dna/DnaProvider';
+import { trackEvent } from '@/lib/analytics';
+import type { QuizJoke } from '@/lib/comedyDna';
 
-type SortKey = 'humor_index' | 'avg_jpm' | 'avg_craft' | 'avg_impact';
+type MetricKey = 'humor_index' | 'avg_jpm' | 'avg_craft' | 'avg_impact';
+type SortKey = MetricKey | 'match';
 
 const SORT_OPTIONS: { key: SortKey; label: string }[] = [
   { key: 'humor_index', label: 'Index' },
   { key: 'avg_jpm', label: 'Jokes/min' },
   { key: 'avg_craft', label: 'Craft' },
   { key: 'avg_impact', label: 'Impact' },
+  { key: 'match', label: 'For you' },
 ];
 
-const COLS: { key: SortKey | 'imdb'; label: string }[] = [
+const COLS: { key: MetricKey | 'imdb'; label: string }[] = [
   { key: 'imdb', label: 'IMDb' },
   { key: 'avg_jpm', label: 'Jokes/min' },
   { key: 'avg_craft', label: 'Craft' },
   { key: 'avg_impact', label: 'Impact' },
 ];
 
-function cell(show: ShowScore, key: SortKey | 'imdb'): string {
+function cell(show: ShowScore, key: MetricKey | 'imdb'): string {
   if (key === 'imdb') return show.avg_imdb_rating?.toFixed(1) ?? '–';
   return show[key].toFixed(1);
 }
@@ -49,8 +56,9 @@ function Row({ show, rank, sortKey }: { show: ShowScore; rank: number | null; so
           </p>
           <div className="mt-1 flex items-center gap-2">
             <FormatBadge format={show.format} />
+            <MatchPill slug={show.slug} />
             {/* Phones have no room for the metric columns, so the active sort rides here. */}
-            {sortKey !== 'humor_index' && (
+            {sortKey !== 'humor_index' && sortKey !== 'match' && (
               <span className="sm:hidden font-mono text-[11px] text-brand-text-muted">
                 {SORT_OPTIONS.find(o => o.key === sortKey)?.label} {show[sortKey].toFixed(1)}
               </span>
@@ -96,11 +104,21 @@ function Row({ show, rank, sortKey }: { show: ShowScore; rank: number | null; so
   );
 }
 
-export default function LeaderboardClient({ shows, pending = [] }: { shows: ShowScore[]; pending?: ShowScore[] }) {
+export default function LeaderboardClient({ shows, pending = [], quickPool = [] }: { shows: ShowScore[]; pending?: ShowScore[]; quickPool?: QuizJoke[] }) {
   const [sortKey, setSortKey] = useState<SortKey>('humor_index');
+  const dna = useDna();
+  const matchFor = dna?.matchFor;
+  const personal = sortKey === 'match' && !!dna?.hasProfile;
 
-  const sorted = useMemo(() => [...shows].sort((a, b) => b[sortKey] - a[sortKey]), [shows, sortKey]);
-  const sortedPending = useMemo(() => [...pending].sort((a, b) => b[sortKey] - a[sortKey]), [pending, sortKey]);
+  const sorted = useMemo(() => [...shows].sort((a, b) => {
+    if (sortKey === 'match') {
+      return personal && matchFor ? (matchFor(b.slug)?.score ?? -9) - (matchFor(a.slug)?.score ?? -9) : b.humor_index - a.humor_index;
+    }
+    return b[sortKey] - a[sortKey];
+  }), [shows, sortKey, personal, matchFor]);
+  const pendingKey: MetricKey = sortKey === 'match' ? 'humor_index' : sortKey;
+  const sortedPending = useMemo(() => [...pending].sort((a, b) => b[pendingKey] - a[pendingKey]), [pending, pendingKey]);
+  const needPicks = sortKey === 'match' && !!dna?.ready && !dna.hasProfile;
 
   return (
     <div>
@@ -108,7 +126,7 @@ export default function LeaderboardClient({ shows, pending = [] }: { shows: Show
         {SORT_OPTIONS.map(opt => (
           <button
             key={opt.key}
-            onClick={() => setSortKey(opt.key)}
+            onClick={() => { setSortKey(opt.key); if (opt.key === 'match') trackEvent('cdna_leaderboard_for_you', { has_profile: !!dna?.hasProfile }); }}
             aria-pressed={sortKey === opt.key}
             className={`text-xs px-3 py-1.5 rounded-lg transition-all ${
               sortKey === opt.key
@@ -131,11 +149,28 @@ export default function LeaderboardClient({ shows, pending = [] }: { shows: Show
         ))}
       </div>
 
+      {needPicks && quickPool.length > 0 && (
+        <QuickPick
+          className="mb-5 !bg-brand-surface"
+          jokes={quickPool}
+          source="leaderboard_for_you"
+          title="Sort this list by your taste"
+          subtitle="Pick the funnier joke a few times and the leaderboard reorders around what makes you laugh."
+        />
+      )}
+
       <div>
         {sorted.map((show, i) => (
           <Row key={show.slug} show={show} rank={i + 1} sortKey={sortKey} />
         ))}
       </div>
+
+      {personal && dna && (
+        <p className="mt-4 text-xs text-brand-text-muted leading-relaxed">
+          Ordered by how well each show fits the jokes you pick in Comedy DNA ({dna.profile.picks} picks so far).{' '}
+          <Link href="/comedy-dna" className="text-brand-gold hover:underline">Sharpen your read →</Link>
+        </p>
+      )}
 
       {sortKey === 'humor_index' && (
         <p className="mt-4 text-xs text-brand-text-muted leading-relaxed">
@@ -145,19 +180,29 @@ export default function LeaderboardClient({ shows, pending = [] }: { shows: Show
       )}
 
       {sortedPending.length > 0 && (
-        <div className="mt-10">
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted mb-2">Awaiting rescore</p>
-          <p className="text-sm text-brand-text-secondary leading-relaxed max-w-2xl mb-3">
-            These {sortedPending.length} shows are fully scored, but on our earlier model. Shows gain 8 to 15 points
-            when they move to the current one, so their numbers are not comparable with the list above and they
-            are left unranked until their rescore is published.
+        // Folded by default: six unranked rows used to take a full screen of the homepage.
+        <details className="group mt-8 border-t border-brand-border pt-4">
+          <summary className="list-none cursor-pointer select-none flex flex-wrap items-baseline justify-between gap-2">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted">
+              + {sortedPending.length} shows awaiting rescore
+            </span>
+            <span className="text-xs text-brand-text-muted">
+              {sortedPending.map(s => s.name.replace(/^The /, '')).join(', ')}
+              <span className="text-brand-gold ml-2 group-open:hidden">Show ↓</span>
+              <span className="text-brand-gold ml-2 hidden group-open:inline">Hide ↑</span>
+            </span>
+          </summary>
+          <p className="text-sm text-brand-text-secondary leading-relaxed max-w-2xl mt-3 mb-3">
+            These shows are fully scored, but on our earlier model. Shows gain 8 to 15 points when they move to the
+            current one, so their numbers are not comparable with the list above and they stay unranked until their
+            rescore is published.
           </p>
           <div className="border-t border-brand-border">
             {sortedPending.map(show => (
               <Row key={show.slug} show={show} rank={null} sortKey={sortKey} />
             ))}
           </div>
-        </div>
+        </details>
       )}
     </div>
   );
