@@ -68,7 +68,10 @@ export default function WhatsNewPersonalized({ latestPosts = [] }: { latestPosts
   }, [ALL_ITEMS]);
 
   // Default items for first-time/no-new-content visitors
-  const displayItems = newItems.length > 0 ? newItems : ALL_ITEMS.slice(0, 3);
+  // Always show a full row of three: new items first, then the most recent of the rest.
+  const displayItems = newItems.length > 0
+    ? [...newItems, ...ALL_ITEMS.filter(i => !newItems.includes(i))].slice(0, 3)
+    : ALL_ITEMS.slice(0, 3);
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-8">

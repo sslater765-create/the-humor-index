@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getShow, getCharacters, getCharacterJokes, getEpisodes } from '@/lib/data';
+import { isStageDirection } from '@/lib/quotes';
 import { cleanJokeText } from '@/lib/quotes';
 import { SHOW_SLUGS } from '@/lib/constants';
 import { JOKE_TYPE_LABELS } from '@/lib/scoring';
@@ -50,16 +51,27 @@ export async function generateMetadata({
     : 'a recurring character';
   // Answer-first description: searches for these pages are mostly the bare
   // name plus the show ("janice friends", "dr drew 30 rock").
+  let bestLine = '';
+  if (character) {
+    const { jokes: cj } = await getCharacterJokes(params.slug, character.name);
+    const lead = cj
+      .filter(it => ((it.joke.characters as string[] | undefined)?.[0] ?? '').toLowerCase() === character.name.toLowerCase())
+      .map(it => ({ t: cleanJokeText(it.joke.text as string), v: (it.joke.craft_total as number) + (it.joke.impact_score as number) }))
+      .filter(x => !isStageDirection(x.t) && x.t.length >= 15 && x.t.length <= 140 && !x.t.includes(' / ') && /^[A-Z0-9"\u201c]/.test(x.t))
+      .sort((a, b) => b.v - a.v)[0];
+    bestLine = lead ? lead.t : '';
+  }
   const descBase = character
-    ? `${display} is ${role} on ${show.name}${character.actor ? `, played by ${character.actor}` : ''}. The funniest ${character.name} lines, every episode with a scored joke, and all ${jokeCount.toLocaleString()} jokes ranked.`
+    ? `${bestLine ? `\u201c${bestLine}\u201d ` : ''}${display}${character.actor ? ` (${character.actor})` : ''} is ${role} on ${show.name}. The funniest ${character.name} quotes, ranked from ${jokeCount.toLocaleString()} scored jokes, plus every episode.`
     : `Every joke by ${name} on ${show.name}, scored and ranked. See craft scores, impact ratings, and comedy style breakdown.`;
+  const pageTitle = `${display} Quotes: The Funniest ${show.name} Lines, Ranked`;
 
   // Thin/bit-part characters: keep reachable but noindex (avoid thin-content pages).
   const thin = jokeCount < 20 || (character?.episodes_appeared ?? 0) < 3;
   const ogImg = `/api/og?title=${encodeURIComponent(name)}&score=${war.toFixed(1)}&subtitle=${encodeURIComponent(`${show.name} · ${jokeCount.toLocaleString()} jokes · ${character?.episodes_appeared ?? 0} eps`)}`;
 
   return {
-    title: `${display} in ${show.name}: Funniest Lines & Every Episode`,
+    title: pageTitle,
     description: descBase,
     ...(thin ? { robots: { index: false, follow: true } } : {}),
     alternates: {
@@ -68,13 +80,13 @@ export async function generateMetadata({
       canonical: `${SITE_URL}/shows/${params.slug}/characters/${encodeURIComponent(character?.name ?? name)}/`,
     },
     openGraph: {
-      title: `${display} in ${show.name}: Funniest Lines & Every Episode`,
+      title: pageTitle,
       description: descBase,
       images: [ogImg],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${display} in ${show.name}: Funniest Lines & Every Episode`,
+      title: pageTitle,
       description: descBase,
       images: [ogImg],
     },
@@ -106,6 +118,7 @@ export default async function CharacterPage({
   // Deduplicate jokes by text (same joke can appear in multiple episodes)
   const seenTexts = new Set<string>();
   const dedupedJokes = topJokes.filter(item => {
+    if (isStageDirection(item.joke.text as string)) return false;
     const text = (item.joke.text as string).toLowerCase().trim();
     if (seenTexts.has(text)) return false;
     seenTexts.add(text);
@@ -115,7 +128,8 @@ export default async function CharacterPage({
   // Main characters have thousands of lines (Homer: ~12,000). Rendering them all made
   // these pages 10-19 MB, past the 15 MB Google reads. List the best, in rank order.
   const JOKE_LIST_CAP = 150;
-  const jokeList = dedupedJokes.length > JOKE_LIST_CAP ? dedupedJokes.slice(0, JOKE_LIST_CAP) : jokes;
+  const capped = dedupedJokes.length > JOKE_LIST_CAP;
+  const jokeList = capped ? dedupedJokes.slice(standouts.length, JOKE_LIST_CAP) : jokes;
 
   // "Who is X" facts, all derived from the scored data.
   const display = (character.character_full_name || character.name).replace(/\s*\(voice\)/i, '');
@@ -239,7 +253,7 @@ export default async function CharacterPage({
             src={`https://image.tmdb.org/t/p/w1280${show.backdrop_path}`}
             alt={`${show.name} backdrop`}
             fill
-            className="object-cover"
+            className="object-cover object-[center_22%]"
             priority
           />
         ) : (
@@ -393,7 +407,7 @@ export default async function CharacterPage({
                           return (
                             <>
                               <span className="text-brand-gold font-medium mr-1.5">{chars.join(' · ')}:</span>
-                              {item.joke.text as string}
+                              {cleanJokeText((item.joke.text as string).replace(new RegExp(`^${chars[0].replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}:\\s*`), ''))}
                             </>
                           );
                         }
@@ -419,9 +433,9 @@ export default async function CharacterPage({
         {/* All jokes */}
         <section>
           <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">
-            {jokeList.length < jokes.length ? `The ${jokeList.length} funniest ${character.name} lines` : `All jokes — ${jokes.length} total`}
+            {capped ? `More of the funniest ${character.name} lines, #${standouts.length + 1} to #${JOKE_LIST_CAP}` : `All jokes — ${jokes.length} total`}
           </p>
-          {jokeList.length < jokes.length && (
+          {capped && (
             <p className="text-xs text-brand-text-muted mb-3">
               Ranked by craft and impact, from {jokes.length.toLocaleString()} scored lines. Every episode page lists the rest.
             </p>
@@ -444,7 +458,7 @@ export default async function CharacterPage({
                         return (
                           <>
                             <span className="text-brand-gold font-medium mr-1.5">{chars.join(' · ')}:</span>
-                            {item.joke.text as string}
+                            {cleanJokeText((item.joke.text as string).replace(new RegExp(`^${chars[0].replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}:\\s*`), ''))}
                           </>
                         );
                       }

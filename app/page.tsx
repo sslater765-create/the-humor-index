@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { getAllShows, getEpisodes, getQuickPickPool, getTopJokes } from '@/lib/data';
+import { getAllShows, getEpisodes, getQuickPickPool, getTopJokes, getJokeRoulette } from '@/lib/data';
+import JokeRoulette from '@/components/home/JokeRoulette';
 import Image from 'next/image';
 import { isAwaitingRescore } from '@/lib/scale';
 import QuickPick from '@/components/comedy-dna/QuickPick';
@@ -23,6 +24,7 @@ export default async function HomePage() {
   const quickPool = await getQuickPickPool();
   const rankedCount = rankable(shows).length;
   // Each ranked show's best line, for the "funniest lines" strip.
+  const roulette = await getJokeRoulette();
   const topLines = (await getTopJokes()).filter(j => !isAwaitingRescore(j.show_slug)).slice(0, 6)
     .map(j => ({ ...j, backdrop: shows.find(s => s.slug === j.show_slug)?.backdrop_path }));
 
@@ -74,8 +76,8 @@ export default async function HomePage() {
                 and we publish the receipts.
               </p>
               <p className="text-base sm:text-lg text-brand-text-muted max-w-2xl leading-relaxed mt-4">
-                No laugh tracks, no nostalgia. Browse the rankings, compare any two shows, or dig into
-                a single episode&apos;s funniest moments.
+                No laugh tracks, no nostalgia, no &ldquo;you had to be there.&rdquo; Browse the rankings,
+                settle an argument between two shows, or find out which episode you should actually rewatch.
               </p>
 
               {/* Big numbers — magazine cover stats */}
@@ -101,6 +103,11 @@ export default async function HomePage() {
               </div>
             </div>
             <HeroLoop className="w-full max-w-[380px] mx-auto lg:mx-0" />
+          </div>
+
+          {/* The fastest proof the site is about funny things: a real top line, and a button for another. */}
+          <div className="mb-12">
+            <JokeRoulette pool={roulette} />
           </div>
 
           <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mb-6 pt-10 border-t border-brand-border">

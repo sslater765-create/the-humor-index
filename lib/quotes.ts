@@ -57,6 +57,22 @@ export function cleanJokeText(text: string): string {
   return text;
 }
 
+/**
+ * A logged "joke" that is only a description of the action, with no spoken
+ * line in it ("George is getting upset.", "Kramer bursts in, slides across the
+ * floor."). Fine as data, but it reads as a typo on a list of funniest lines.
+ */
+const ACTION_VERB = /^(?:[A-Z][\w.'-]*(?: [A-Z][\w.'-]*){0,2})(?:'s [a-z]+)? (?:(?:is|are|was|were) [a-z]+ing\b|gets|answers|walks|looks|tries|realizes|starts|turns|enters|stares|reacts|freezes|pauses|nods|sighs|screams|storms|runs|falls|keeps|continues|begins|attempts|bursts|slides|slams|hangs|picks|grabs|throws|opens|closes|sits|stands|leaves|exits|takes|puts|holds|pulls|pushes|finds|sees|notices|hears|watches|reads|hands|shows|pretends|refuses|insists|appears|returns|arrives|wakes|dances|sings|plays|cries|laughs|smiles|winces|glares|shrugs|shakes|points|waves|kisses|hugs|eats|drinks|spits|chokes|faints|collapses|trips|crashes|drives|flees|hides|whispers|yells|shouts|mutters|mumbles|snaps|blurts|explains|announces|admits|confesses|declares|proclaims|suggests|asks|tells|says|repeats|reveals|delivers|responds|replies|mimes|mouths|silently|slowly|quickly|finally|immediately|suddenly|awkwardly|clearly)\b/;
+export function isStageDirection(text: string): boolean {
+  const t = (text ?? '').trim();
+  if (!t) return true;
+  // Any quoted speech means there is a line in it; keep it.
+  if (/['"\u201C\u201D]|(^|\s)'\w|\w'(\s|$|[.,!?])/.test(t.replace(/\b\w+'(s|t|re|ve|ll|d|m)\b/gi, ''))) return false;
+  if (t.includes('?') || / \/ /.test(t)) return false;
+  if (/^(It|Its|He|She|They|This|That|These|Those|There|Here|You|We|What|Who|Why|How|Well|Oh|So|And|But|Now|Then|Look|Listen|Okay|OK|Yes|No|Hey)\b/.test(t)) return false;
+  return ACTION_VERB.test(t) && !/\b(I|I'm|I've|I'll|my|me|you|your|we|our|us)\b/.test(t);
+}
+
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
 // Openers like "This is the standout joke of the episode." say nothing about

@@ -1,6 +1,9 @@
 import Link from 'next/link';
+import { getJokeRoulette } from '@/lib/data';
+import JokeRoulette from '@/components/home/JokeRoulette';
 
-export default function NotFound() {
+export default async function NotFound() {
+  const roulette = await getJokeRoulette();
   return (
     <div className="max-w-2xl mx-auto px-4 sm:px-6 py-24 text-center">
       <p className="font-mono text-6xl text-brand-gold mb-4">404</p>
@@ -23,6 +26,10 @@ export default function NotFound() {
         >
           See what&apos;s actually funny
         </Link>
+      </div>
+      <div className="mt-14 text-left">
+        <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-3 text-center">While you&apos;re lost, here&apos;s something that works</p>
+        <JokeRoulette pool={roulette} />
       </div>
     </div>
   );

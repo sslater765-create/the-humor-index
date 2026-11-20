@@ -1,3 +1,4 @@
+import { applyCharacterOverride } from './characterOverrides';
 import { cache } from 'react';
 import { ShowScore, SeasonScore, EpisodeScore, EpisodeDetail, CharacterProfile } from './types';
 import { DNA_TYPES, buildBaseline, type QuizData, type QuizJoke, type ShowFingerprint } from './comedyDna';
@@ -89,7 +90,7 @@ export async function getRecommendations(slug: string): Promise<Array<{ slug: st
 
 export const getCharacters = cache(async (slug: string): Promise<CharacterProfile[]> => {
   try {
-    return readJson<CharacterProfile[]>(`${slug}/characters.json`);
+    return readJson<CharacterProfile[]>(`${slug}/characters.json`).map(c => applyCharacterOverride(slug, c));
   } catch {
     return [];
   }
@@ -243,3 +244,9 @@ export async function getSimilarEpisodes(slug: string, season: number, episode: 
   }
   return out;
 }
+
+export interface RouletteJoke { slug: string; show: string; text: string; who: string; score: number; s: number; e: number; t: string }
+/** Clean single-speaker lines for the homepage "one more" roulette. */
+export const getJokeRoulette = cache(async (): Promise<RouletteJoke[]> => {
+  try { return readJson<RouletteJoke[]>('joke-roulette.json'); } catch { return []; }
+});
