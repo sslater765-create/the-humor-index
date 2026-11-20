@@ -1,3 +1,33 @@
+// Short addresses for on-screen captions ("thehumorindex.com/seinfeld"). TikTok
+// gives no clickable link under 1,000 followers and its in-app browser drops the
+// referrer, so the tag is the only way social visits show up in Analytics.
+const SHORT_LINKS = [
+  ['seinfeld', 'seinfeld'],
+  ['office', 'the-office'],
+  ['theoffice', 'the-office'],
+  ['friends', 'friends'],
+  ['30rock', '30-rock'],
+  ['sunny', 'its-always-sunny'],
+  ['alwayssunny', 'its-always-sunny'],
+  ['parks', 'parks-and-recreation'],
+  ['veep', 'veep'],
+  ['ad', 'arrested-development'],
+  ['arresteddevelopment', 'arrested-development'],
+  ['fleabag', 'fleabag'],
+  ['chappelle', 'chappelles-show'],
+  ['conchords', 'flight-of-the-conchords'],
+  ['schitts', 'schitts-creek'],
+  ['broadcity', 'broad-city'],
+  ['larrysanders', 'the-larry-sanders-show'],
+  ['freaksandgeeks', 'freaks-and-geeks'],
+  ['simpsons', 'the-simpsons'],
+  ['community', 'community'],
+  ['curb', 'curb-your-enthusiasm'],
+  ['futurama', 'futurama'],
+  ['taxi', 'taxi'],
+  ['freshprince', 'the-fresh-prince-of-bel-air'],
+];
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: true,
@@ -12,6 +42,11 @@ const nextConfig = {
     ],
   },
   redirects: async () => [
+    ...SHORT_LINKS.flatMap(([from, slug]) => [`/${from}`, `/${from}/`].map(source => ({
+      source,
+      destination: `/shows/${slug}/?utm_source=shortlink&utm_medium=social&utm_campaign=${from}`,
+      permanent: false,
+    }))),
     // Retired the Broad City launch post; send old links to the show page.
     {
       source: '/blog/broad-city-launch',

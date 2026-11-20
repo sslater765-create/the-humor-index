@@ -17,6 +17,11 @@ async function rankedByJpm() {
 
 // Built from live data so the snippet Google shows never goes stale
 // (it said "9 shows" long after the board had grown).
+function ordinal(n: number) {
+  const s = ['th', 'st', 'nd', 'rd'], v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+}
+
 export async function generateMetadata() {
   const shows = await rankedByJpm();
   const first = shows[0];
@@ -40,6 +45,15 @@ export default async function JokesPerMinutePage() {
   const shows = await rankedByJpm();
 
   const leader = shows[0];
+  const rock30Jpm = (shows.find(s => s.slug === '30-rock')?.avg_jpm ?? 0).toFixed(2);
+  // The show whose overall rank most outruns its joke density: the live example
+  // for "density isn't quality".
+  const byHi = [...shows].sort((a, b) => b.humor_index - a.humor_index);
+  const hiRankOf = (slug: string) => byHi.findIndex(s => s.slug === slug) + 1;
+  const sparse = shows
+    .map((s, i) => ({ ...s, jpmRank: i + 1, hiRank: hiRankOf(s.slug) }))
+    .sort((a, b) => (b.jpmRank - b.hiRank) - (a.jpmRank - a.hiRank))[0];
+  const leaderHiRank = leader ? hiRankOf(leader.slug) : 0;
 
   const jsonLd = [
     {
@@ -71,7 +85,7 @@ export default async function JokesPerMinutePage() {
           name: 'How many jokes per minute does 30 Rock have?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: '30 Rock averages 2.86 distinct scored jokes per minute on the Humor Index. The widely-cited "7.44 jokes per minute" figure counts every comedic line and reaction; we count separable, gradeable jokes, which is a stricter and more comparable measure.',
+            text: `30 Rock averages ${rock30Jpm} distinct scored jokes per minute on the Humor Index. The widely-cited "7.44 jokes per minute" figure counts every comedic line and reaction; we count separable, gradeable jokes, which is a stricter and more comparable measure.`,
           },
         },
         {
@@ -101,7 +115,7 @@ export default async function JokesPerMinutePage() {
       <PageHeader
         label="Rankings"
         title="Jokes Per Minute, Ranked"
-        subtitle="Which sitcom packs the most jokes into every minute? We scored every joke across 9 shows and measured the density. Here's the ranking."
+        subtitle={`Which sitcom packs the most jokes into every minute? We scored every joke across ${shows.length} shows and measured the density. Here's the ranking.`}
       />
       <ScaleNote narrow />
 
@@ -166,7 +180,7 @@ export default async function JokesPerMinutePage() {
               You may have seen the figure that 30 Rock runs at 7.44 jokes per minute. That count
               (popularized by a 2014 Atlantic piece) tallies every comedic line, reaction, and
               background gag. We count something stricter: distinct, separable jokes a viewer could
-              point to and grade. Our 30 Rock number is <strong className="text-brand-text-primary">2.86</strong> — lower, but
+              point to and grade. Our 30 Rock number is <strong className="text-brand-text-primary">{rock30Jpm}</strong> — lower, but
               applied identically to every show, which is what makes the ranking a fair comparison
               rather than a pile of incompatible counts. Read more on{' '}
               <Link href="/methodology" className="text-brand-gold hover:underline">our methodology</Link>.
@@ -175,11 +189,12 @@ export default async function JokesPerMinutePage() {
           <div>
             <h2 className="text-lg font-medium text-brand-text-primary mb-2">Density vs. quality</h2>
             <p className="text-sm text-brand-text-secondary leading-relaxed">
-              The densest show isn&rsquo;t automatically the funniest. Arrested Development has the
-              lowest JPM here yet ranks near the top of our overall{' '}
+              The densest show isn&rsquo;t automatically the funniest. {sparse.name} is{' '}
+              {ordinal(sparse.jpmRank)} of {shows.length} for jokes per minute ({(sparse.avg_jpm || 0).toFixed(2)}) yet{' '}
+              {ordinal(sparse.hiRank)} on the overall{' '}
               <Link href="/rankings" className="text-brand-gold hover:underline">Humor Index</Link> — it
-              tells fewer jokes, but each one is doing far more work. Joke density is one axis; craft
-              and impact are the others.
+              tells fewer jokes, but each one is doing more work. {leader?.name} tells the most and ranks{' '}
+              {ordinal(leaderHiRank)}. Joke density is one axis; craft and impact are the others.
             </p>
           </div>
         </section>
