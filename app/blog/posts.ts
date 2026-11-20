@@ -5,6 +5,84 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'always-sunny-fewer-jokes-better-with-age': {
+    title: "It's Always Sunny Tells Fewer Jokes Than Almost Anyone. It Got Funnier With Age.",
+    description: "Rescored on our current model, It's Always Sunny in Philadelphia moves from 79.2 to 87.5 and ranks 11th of 15. Its joke rate is third-lowest on the board, and its best season is Season 12.",
+    date: '2026-11-19',
+    category: 'Analysis',
+    content: `
+It's Always Sunny in Philadelphia is the latest show through our rescore. On the earlier model it scored 79.2. On the current model it scores **87.5**, eleventh of the 15 ranked shows, a tenth of a point behind Schitt's Creek (87.6) and four tenths ahead of Friends (87.1).
+
+All 177 episodes went through three-run consensus scoring. The average episode gained 8.9 points, which is a smaller jump than most rescores (Friends gained 14.1), and 10 episodes went down, the largest drop 8.4 points. The new model found 12,932 jokes where the old one found 8,786, an increase of 47%. The background on why rescored shows move at all is in [Why Some Scores Jumped Ten Points](/blog/what-the-rescore-changed).
+
+## Few jokes, landed hard
+
+Last week we wrote about Friends, which tells more jokes per minute than any show we rank and finishes in the bottom third. Sunny is the opposite case with nearly the same result.
+
+| Show | Jokes per minute | Avg craft | Avg impact | Humor Index |
+|---|---:|---:|---:|---:|
+| Schitt's Creek | 3.24 | 7.29 | 7.11 | 87.6 |
+| It's Always Sunny | 2.64 | 7.21 | 7.22 | 87.5 |
+| Friends | 4.01 | 7.06 | 7.08 | 87.1 |
+
+At 2.64 jokes per minute, Sunny is 13th of 15 on density. Only Flight of the Conchords (whose songs run long) and Freaks and Geeks are sparser. Friends tells half again as many jokes in the same running time. Sunny's jokes hit harder: its average impact of 7.22 is ninth on the board, ahead of Schitt's Creek, The Office and Friends.
+
+Inside the show, the joke rate barely matters. Across 177 episodes, an episode's score tracks its average craft (r = 0.94) and impact (r = 0.93) almost exactly, and its jokes per minute not at all (r = 0.09). A Sunny episode is good when the scheme is good, regardless of how many lines are jokes.
+
+## The seasons
+
+Most long-running shows we score peak early and drift. Sunny starts at its lowest point.
+
+| Season | Episodes | Jokes per minute | Avg craft | Humor Index |
+|---|---:|---:|---:|---:|
+| 1 | 7 | 2.91 | 7.01 | 83.7 |
+| 2 | 10 | 2.90 | 7.10 | 85.6 |
+| 3 | 15 | 2.78 | 7.19 | 87.3 |
+| 4 | 13 | 2.82 | 7.27 | 89.1 |
+| 5 | 12 | 2.76 | 7.20 | 87.6 |
+| 6 | 13 | 2.59 | 7.18 | 86.3 |
+| 7 | 13 | 2.75 | 7.26 | 88.5 |
+| 8 | 10 | 2.55 | 7.25 | 88.0 |
+| 9 | 10 | 2.59 | 7.29 | 88.6 |
+| 10 | 10 | 2.72 | 7.16 | 86.7 |
+| 11 | 10 | 2.68 | 7.18 | 87.0 |
+| 12 | 10 | 2.50 | 7.33 | 89.7 |
+| 13 | 10 | 2.66 | 7.21 | 86.6 |
+| 14 | 10 | 2.20 | 7.35 | 88.8 |
+| 15 | 8 | 2.46 | 7.24 | 87.6 |
+| 16 | 8 | 2.29 | 7.18 | 85.9 |
+| 17 | 8 | 2.67 | 7.24 | 88.1 |
+
+Season 1, before Danny DeVito joined, is the lowest-scoring season of the run. Season 12 is the highest, and Season 14 is third. The joke rate drifts down over the years while craft drifts up: Season 14 has the fewest jokes per minute of any season and the second-highest craft. The show traded volume for construction, and the index rewards that trade.
+
+## The best episodes
+
+| Episode | Humor Index | IMDb |
+|---|---:|---:|
+| S17E8 "The Golden Bachelor Live" | 95.8 | 8.5 |
+| S7E1 "Frank's Pretty Woman" | 95.6 | 8.6 |
+| S12E5 "Making Dennis Reynolds a Murderer" | 95.4 | 8.6 |
+| S5E10 "The D.E.N.N.I.S. System" | 95.1 | 9.3 |
+| S4E13 "The Nightman Cometh" | 94.9 | 9.7 |
+| S11E7 "McPoyle vs. Ponderosa: The Trial of the Century" | 94.9 | 8.7 |
+
+The top episode is from the most recent season. No Sunny episode reaches the 100 cap; the range runs from 74.6 to 95.8.
+
+Our scores agree with IMDb more for Sunny than for most shows (a correlation of 0.27, against 0.08 for Friends), and "The Nightman Cometh" is the clearest case: fifth here, 9.7 on IMDb. The biggest disagreement is "Charlie Work", the highest-rated episode on IMDb at 9.8, which ranks 79th of 177 here at 88.4. It is a celebrated single-take episode, and the craft of the camera work is not something a transcript can see.
+
+## One note on Season 5
+
+S5E1 "The Gang Exploits the Mortgage Crisis" was refused by the scorer five times on its raw transcript. Rather than drop it, we scored it from a copy in which two passages are summarized as stage notes; every other line is verbatim. It scores 92.2. If you see that episode quoted on the site, the quotes are from the unaltered transcript.
+
+## What to keep in mind
+
+Schitt's Creek, Sunny and Friends sit within half a point of each other, which is inside the noise of the scorer. Treat them as a tie, behind the top nine and ahead of Broad City, The Larry Sanders Show and Freaks and Geeks.
+
+Six shows are still on the earlier model and listed unranked: The Simpsons, The Fresh Prince of Bel-Air, Futurama, Curb Your Enthusiasm, Taxi and Community.
+
+*Covers the 15 shows scored on our current model.*
+`,
+  },
   'friends-most-jokes-ranked-eleventh': {
     title: "Friends Tells More Jokes Than Any Show We Rank. It Finishes 11th.",
     description: "Rescored on our current model, Friends moves from 73.0 to 87.1. It leads the board at 4.01 jokes per minute and sits 13th of 14 on craft, which is the number that decides rankings.",

@@ -2,7 +2,7 @@
 import { useState, useMemo } from 'react';
 import { ShowScore, ShowFormat } from '@/lib/types';
 import ShowCard from '@/components/ui/ShowCard';
-import { isAwaitingRescore } from '@/lib/scale';
+import { byHumorIndexDesc } from '@/lib/scoring';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const FORMAT_LABELS: Record<'all' | ShowFormat, string> = {
@@ -32,7 +32,7 @@ export default function ShowsGrid({ shows }: { shows: ShowScore[] }) {
         case 'war': return (b.war || 0) - (a.war || 0);
         case 'warep': return (b.war_per_episode || 0) - (a.war_per_episode || 0);
         case 'jokes': return b.total_jokes_analyzed - a.total_jokes_analyzed;
-        default: return b.humor_index - a.humor_index;
+        default: return byHumorIndexDesc(a, b);
       }
     });
     return sorted;
@@ -102,13 +102,8 @@ export default function ShowsGrid({ shows }: { shows: ShowScore[] }) {
               transition={{ duration: 0.25, ease: 'easeOut' }}
             >
               <ShowCard
-                show={{
-                  ...show,
-                  // Rank counts only shows on the current scale; shows awaiting a rescore are unranked.
-                  rank: show.humor_index > 0 && !isAwaitingRescore(show.slug)
-                    ? filtered.slice(0, i + 1).filter(x => x.humor_index > 0 && !isAwaitingRescore(x.slug)).length
-                    : undefined,
-                }}
+                // Every show passed in is on the current scale, so position is rank.
+                show={{ ...show, rank: i + 1 }}
               />
             </motion.div>
           ))}

@@ -1,15 +1,39 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ShowScore } from '@/lib/types';
-import { scoreToGrade, formatIndex } from '@/lib/scoring';
+import { formatIndex } from '@/lib/scoring';
+import { getTier } from '@/lib/tiers';
 import FormatBadge from './FormatBadge';
 import RankBadge from './RankBadge';
 
 interface Props {
   show: ShowScore;
+  /** Scored on the earlier model: no rank, no headline number, no tier. */
+  pending?: boolean;
 }
 
-export default function ShowCard({ show }: Props) {
+function ScoreBlock({ show, pending, shadow }: { show: ShowScore; pending: boolean; shadow: boolean }) {
+  if (pending) {
+    return (
+      <>
+        <p className="text-[10px] uppercase tracking-widest text-brand-text-secondary leading-none">Rescore pending</p>
+        <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">Unranked</p>
+      </>
+    );
+  }
+  return (
+    <>
+      <p className={`font-serif italic text-4xl text-brand-gold leading-none ${shadow ? 'drop-shadow-md' : ''}`}>
+        {formatIndex(show.humor_index)}
+      </p>
+      <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">
+        Humor Index · {getTier(show.humor_index).label}
+      </p>
+    </>
+  );
+}
+
+export default function ShowCard({ show, pending = false }: Props) {
   const onAir = !!show.aired && parseInt(show.aired.split('\u2013')[1] || '9999') >= 2025;
   return (
     <div className="relative bg-brand-card border border-brand-border rounded-2xl overflow-hidden hover:border-brand-gold/40 transition-colors group">
@@ -20,19 +44,14 @@ export default function ShowCard({ show }: Props) {
               src={`https://image.tmdb.org/t/p/w780${show.backdrop_path}`}
               alt={show.name}
               fill
-              className="object-cover opacity-55 group-hover:opacity-70 transition-opacity"
+              className={`object-cover transition-opacity ${pending ? 'opacity-30 grayscale group-hover:opacity-45' : 'opacity-55 group-hover:opacity-70'}`}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/40 to-transparent" />
             <div className="absolute top-3 left-3">
               {show.rank && <RankBadge rank={show.rank} />}
             </div>
             <div className="absolute bottom-3 right-4 text-right">
-              <p className="font-serif italic text-4xl text-brand-gold drop-shadow-md leading-none">
-                {formatIndex(show.humor_index)}
-              </p>
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">
-                Humor Index · {scoreToGrade(show.humor_index)}
-              </p>
+              <ScoreBlock show={show} pending={pending} shadow />
             </div>
           </div>
         )}
@@ -41,10 +60,7 @@ export default function ShowCard({ show }: Props) {
             <div className="flex items-start justify-between mb-4">
               {show.rank && <RankBadge rank={show.rank} />}
               <div className="text-right">
-                <p className="font-serif italic text-4xl text-brand-gold leading-none">{formatIndex(show.humor_index)}</p>
-                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">
-                  Humor Index · {scoreToGrade(show.humor_index)}
-                </p>
+                <ScoreBlock show={show} pending={pending} shadow={false} />
               </div>
             </div>
           )}

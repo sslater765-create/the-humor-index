@@ -4,6 +4,8 @@ import { getAllShows } from '@/lib/data';
 import FormatBadge from '@/components/ui/FormatBadge';
 import ShowsGrid from './ShowsGrid';
 import { SITE_URL } from '@/lib/site';
+import ShowCard from '@/components/ui/ShowCard';
+import { rankable, awaitingRescore } from '@/lib/scale';
 
 export const metadata = {
   title: 'Every Sitcom Ranked by Humor Index Score',
@@ -24,6 +26,8 @@ export const dynamic = 'force-static';
 export default async function ShowsPage() {
   const shows = await getAllShows();
   const scored = shows.filter(s => s.humor_index > 0);
+  const ranked = rankable(shows);
+  const pending = awaitingRescore(shows).sort((a, b) => a.name.localeCompare(b.name));
   const upcoming = shows.filter(s => s.humor_index === 0);
   const totalJokes = scored.reduce((s, show) => s + show.total_jokes_analyzed, 0);
 
@@ -66,7 +70,26 @@ export default async function ShowsPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-        <ShowsGrid shows={scored} />
+        <ShowsGrid shows={ranked} />
+
+        {pending.length > 0 && (
+          <section className="mt-20 pt-12 border-t border-brand-border">
+            <p className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted mb-3">Awaiting rescore</p>
+            <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
+              Scored on the earlier model.
+            </h2>
+            <p className="text-sm text-brand-text-secondary max-w-2xl mb-8 leading-relaxed">
+              These {pending.length} shows are fully scored, but on our earlier model. Shows gain 8 to 15 points
+              when they move to the current one, so they stay unranked until their rescore is published. Their
+              episode pages are still open.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {pending.map(show => (
+                <ShowCard key={show.slug} show={show} pending />
+              ))}
+            </div>
+          </section>
+        )}
 
         {upcoming.length > 0 && (
           <section className="mt-20 pt-12 border-t border-brand-border">

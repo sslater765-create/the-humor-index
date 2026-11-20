@@ -1,6 +1,7 @@
 'use client';
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ShowScore } from '@/lib/types';
 import { formatIndex } from '@/lib/scoring';
 import FormatBadge from '@/components/ui/FormatBadge';
@@ -41,7 +42,19 @@ function Row({ show, rank, sortKey }: { show: ShowScore; rank: number | null; so
           <RankBadge rank={rank} />
         )}
       </div>
-      <div className="min-w-0">
+      <div className="min-w-0 flex items-center gap-3 sm:gap-4">
+        <div className="relative shrink-0 w-16 h-10 sm:w-24 sm:h-[3.375rem] rounded-md overflow-hidden bg-brand-surface border border-brand-border/60">
+          {show.backdrop_path && (
+            <Image
+              src={`https://image.tmdb.org/t/p/w300${show.backdrop_path}`}
+              alt=""
+              fill
+              sizes="(min-width: 640px) 96px, 64px"
+              className={`object-cover transition-transform duration-300 group-hover:scale-105 ${pending ? 'opacity-50 grayscale' : ''}`}
+            />
+          )}
+        </div>
+        <div className="min-w-0">
         <p className={`font-medium truncate transition-colors group-hover:text-brand-gold ${pending ? 'text-brand-text-secondary' : 'text-brand-text-primary'}`}>
           {show.name}
         </p>
@@ -53,6 +66,7 @@ function Row({ show, rank, sortKey }: { show: ShowScore; rank: number | null; so
               {SORT_OPTIONS.find(o => o.key === sortKey)?.label} {show[sortKey].toFixed(1)}
             </span>
           )}
+        </div>
         </div>
       </div>
       <div className="text-right sm:text-left">
@@ -124,7 +138,7 @@ export default function LeaderboardClient({ shows, pending = [] }: { shows: Show
         <div className="mt-10">
           <p className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted mb-2">Awaiting rescore</p>
           <p className="text-sm text-brand-text-secondary leading-relaxed max-w-2xl mb-3">
-            These {sortedPending.length} shows are fully scored, but on our earlier model. Shows gain 9 to 15 points
+            These {sortedPending.length} shows are fully scored, but on our earlier model. Shows gain 8 to 15 points
             when they move to the current one, so their numbers are not comparable with the list above and they
             are left unranked until their rescore is published.
           </p>

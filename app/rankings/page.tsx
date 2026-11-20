@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getAllShows, getEpisodes, getEpisodeDetail, getCharacters, getSearchableJokeCount } from '@/lib/data';
-import { formatIndex, scoreToGrade, scoreToColor, byHumorIndexDesc } from '@/lib/scoring';
+import { formatIndex, scoreToColor, byHumorIndexDesc } from '@/lib/scoring';
 import PageHeader from '@/components/layout/PageHeader';
 
 import BestJokeRotator from "@/components/ui/BestJokeRotator";
@@ -9,6 +9,7 @@ import { SITE_URL } from '@/lib/site';
 import { charImageSrc } from '@/lib/charImage';
 import { rankable, isAwaitingRescore } from '@/lib/scale';
 import ScaleNote from '@/components/ui/ScaleNote';
+import { getTier } from '@/lib/tiers';
 export const dynamic = 'force-static';
 
 export const metadata = {
@@ -266,7 +267,7 @@ export default async function RankingsPage() {
                   <p className="font-mono font-bold text-6xl sm:text-7xl leading-none" style={{ color: scoreToColor(heroEp.humor_index) }}>
                     {formatIndex(heroEp.humor_index)}
                   </p>
-                  <p className="text-[11px] text-brand-text-muted uppercase tracking-[0.25em] mt-2">Humor Index · {scoreToGrade(heroEp.humor_index)} · {heroEp.total_jokes} jokes</p>
+                  <p className="text-[11px] text-brand-text-muted uppercase tracking-[0.25em] mt-2">Humor Index · {getTier(heroEp.humor_index).label} · {heroEp.total_jokes} jokes</p>
                 </div>
               </div>
             </div>

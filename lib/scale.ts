@@ -3,7 +3,7 @@
  *
  * Every show was first scored on the pre-2026 model. Shows are being rescored
  * one at a time on the current model, which finds more jokes and rates craft
- * and impact higher, so a rescored show typically gains 9 to 15 points. Until
+ * and impact higher, so a rescored show typically gains 8 to 15 points. Until
  * a show has been rescored its Humor Index is not comparable with the rest of
  * the board, and it is listed unranked.
  *
