@@ -6,6 +6,7 @@ import { isAwaitingRescore } from '@/lib/scale';
 import { formatIndex } from '@/lib/scoring';
 import { pageMeta, breadcrumbJsonLd } from '@/lib/seo';
 import SocialShare from '@/components/ui/SocialShare';
+import { getMovieGameJokes, filmTime } from '@/lib/movies';
 
 export const dynamic = 'force-static';
 
@@ -37,6 +38,7 @@ export default async function CardsPage() {
 
   // Funniest lines.
   const topJokes: TopJoke[] = (await getTopJokes()).slice(0, 9);
+  const movieLines = (await getMovieGameJokes()).filter(j => !j.explicit).sort((a, b) => b.score - a.score).slice(0, 4);
 
   return (
     <main className="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
@@ -103,6 +105,34 @@ export default async function CardsPage() {
                     <div className="flex items-center gap-2 shrink-0">
                       <a href={url} download={fname} className="text-xs text-brand-text-muted hover:text-brand-gold border border-brand-border hover:border-brand-gold rounded-lg px-3 py-1.5 transition-all">Download</a>
                       <SocialShare title={`A top-scoring ${j.show} line`} text={`"${j.text}" — ${j.show}, scored on the Humor Index`} url={pagePath} />
+                    </div>
+                  </figcaption>
+                </figure>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {/* Movie lines */}
+      {movieLines.length > 0 && (
+        <section className="mt-12">
+          <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Funniest movie lines</h2>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {movieLines.map((j, i) => {
+              const url = `/api/og/joke?${q({ text: j.text, craft: j.craft.toFixed(1), impact: j.impact.toFixed(1), show: `${j.movie} (${j.year})`, episode: filmTime(j.t), types: j.type ?? '' })}`;
+              const pagePath = `/movies/${j.slug}`;
+              return (
+                <figure key={`${j.slug}-${j.id}`} className="bg-brand-card border border-brand-border rounded-2xl overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={url} alt={`${j.movie} line scorecard`} width={1200} height={630} loading="lazy" className="w-full block" />
+                  <figcaption className="flex items-center justify-between gap-3 p-3 border-t border-brand-border">
+                    <Link href={pagePath} className="text-sm text-brand-text-secondary hover:text-brand-gold truncate">
+                      {j.who} · <span className="italic">{j.movie}</span>
+                    </Link>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <a href={url} download={`humor-index-line-${j.slug}-${i + 1}.png`} className="text-xs text-brand-text-muted hover:text-brand-gold border border-brand-border hover:border-brand-gold rounded-lg px-3 py-1.5 transition-all">Download</a>
+                      <SocialShare title={`A top-scoring ${j.movie} line`} text={`"${j.text}" (${j.movie}), scored on the Humor Index`} url={pagePath} />
                     </div>
                   </figcaption>
                 </figure>

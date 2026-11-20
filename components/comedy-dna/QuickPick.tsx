@@ -5,7 +5,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { trackEvent } from '@/lib/analytics';
-import { nextPair, readLevel, showStyle, tileText, isEdgy, type QuizJoke } from '@/lib/comedyDna';
+import { nextPair, readLevel, showStyle, tileText, isEdgy, titleHref, type QuizJoke } from '@/lib/comedyDna';
 import { useDna } from './DnaProvider';
 
 interface Props {
@@ -107,7 +107,7 @@ export default function QuickPick({ jokes, focus, source, title = 'Which joke is
           <p className="text-brand-text-secondary">
             <span className="text-brand-text-primary font-medium tabular-nums">{picks} {picks === 1 ? 'pick' : 'picks'}</span>
             {' · '}{level.label}{' · '}Top match so far:{' '}
-            <Link href={`/shows/${top.slug}`} className="text-brand-teal font-semibold hover:underline">{top.name} {top.pct}%</Link>
+            <Link href={titleHref(top)} className="text-brand-teal font-semibold hover:underline">{top.name} {top.pct}%</Link>
           </p>
         ) : (
           <p className="text-brand-text-muted">No sign-up. Your picks stay on this device{' '}

@@ -4,6 +4,7 @@ import { formatIndex } from '@/lib/scoring';
 import { SITE_URL } from '@/lib/site';
 import { pageMeta, breadcrumbJsonLd } from '@/lib/seo';
 import CopyBlock from '@/components/ui/CopyBlock';
+import { getMovies, shortTitle } from '@/lib/movies';
 
 export const dynamic = 'force-static';
 
@@ -20,10 +21,12 @@ const FILES = [
   { path: '/data/comedy-dna.json', name: 'comedy-dna.json', desc: 'Per-show joke-type fingerprints (18 comedic dimensions).' },
   { path: '/data/recommendations.json', name: 'recommendations.json', desc: '"If you like X" — nearest-neighbour show recommendations.' },
   { path: '/data/search-index.json', name: 'search-index.json', desc: 'Searchable index of scored jokes with show/episode references.' },
+  { path: '/data/movies/index.json', name: 'movies/index.json', desc: 'Movie leaderboard: Humor Index, jokes per minute, craft, impact, runtime.' },
 ];
 
 export default async function DataPage() {
   const stats = await getSiteStats();
+  const movies = await getMovies();
 
   const embedSnippet =
     `<iframe src="${SITE_URL}/api/embed?theme=light&limit=10"\n        width="420" height="380" frameborder="0"\n        title="The Humor Index — sitcom rankings"\n        style="border:1px solid #e5e5e5;border-radius:12px;max-width:100%">\n</iframe>`;
@@ -82,7 +85,8 @@ export default async function DataPage() {
         <h2 className="font-serif italic text-2xl text-brand-text-primary mb-1">Download the dataset</h2>
         <p className="text-sm text-brand-text-muted mb-5">
           Raw JSON, served straight from the site. Per-show episode and character files live under{' '}
-          <code className="text-brand-text-secondary">/data/&lt;slug&gt;/</code>.
+          <code className="text-brand-text-secondary">/data/&lt;slug&gt;/</code>; each movie, with every joke, its timestamp and its Laugh Map, is at{' '}
+          <code className="text-brand-text-secondary">/data/movies/&lt;slug&gt;.json</code>.
         </p>
         <div className="space-y-2">
           {FILES.map(f => (
@@ -130,6 +134,34 @@ export default async function DataPage() {
           </table>
         </div>
       </section>
+
+      {movies.length > 0 && (
+        <section className="mb-12">
+          <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Movie leaderboard</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-brand-border text-brand-text-muted text-xs uppercase tracking-widest">
+                  <th className="text-left py-2 font-normal">#</th>
+                  <th className="text-left py-2 font-normal">Movie</th>
+                  <th className="text-right py-2 font-normal">Humor Index</th>
+                  <th className="text-right py-2 font-normal hidden sm:table-cell">Jokes</th>
+                </tr>
+              </thead>
+              <tbody>
+                {movies.map(m => (
+                  <tr key={m.slug} className="border-b border-brand-border/50">
+                    <td className="py-2 font-mono text-brand-text-muted">{m.rank}</td>
+                    <td className="py-2"><Link href={`/movies/${m.slug}`} className="text-brand-text-primary hover:text-brand-gold">{shortTitle(m.title)} ({m.year})</Link></td>
+                    <td className="py-2 text-right font-mono text-brand-gold">{formatIndex(m.humor_index)}</td>
+                    <td className="py-2 text-right font-mono text-brand-text-muted hidden sm:table-cell">{m.total_jokes}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
 
       {/* Citation */}
       <section className="mb-6">

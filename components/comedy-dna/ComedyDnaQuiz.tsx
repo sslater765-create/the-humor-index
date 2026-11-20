@@ -4,7 +4,7 @@ import { useCallback, useMemo, useRef, useState, useEffect } from 'react';
 import { trackEvent } from '@/lib/analytics';
 import {
   DNA_TYPES, ARCHES, AXES, EMBLEMS, emblemSVG, showStyle, tileText,
-  rankArchetypes, whyText, dot, axisValue, wcos, nextPair, readLevel, isEdgy,
+  rankArchetypes, whyText, dot, axisValue, wcos, nextPair, readLevel, isEdgy, titleHref,
   type QuizData, type QuizJoke, type ShowFingerprint,
 } from '@/lib/comedyDna';
 import { MemeScene } from './MemeScene';
@@ -16,7 +16,7 @@ const SHOW_URL = (slug: string) => `${SITE_URL}/shows/${slug}/`;
 
 
 interface Pick { a: QuizJoke; b: QuizJoke; winner: 'a' | 'b' | null; }
-interface ResultPayload { archeIdx: number; axes: number[]; shows: { name: string; slug: string; pct: number }[]; }
+interface ResultPayload { archeIdx: number; axes: number[]; shows: { name: string; slug: string; pct: number; href?: string }[]; }
 
 function Emblem({ i, size }: { i: number; size: number }) {
   return (
@@ -233,7 +233,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
     const ranked = cands.map(j => ({ j, s: dot(j.vec.map((v, d) => v - baseline[d]), pref) + (j.quot || 0) * 0.04 })).sort((a, b) => b.s - a.s);
     const sig: QuizJoke[] = []; const per: Record<string, number> = {};
     for (const r of ranked) { if ((per[r.j.slug] || 0) >= 1) continue; per[r.j.slug] = 1; sig.push(r.j); if (sig.length >= 4) break; }
-    const payload: ResultPayload = { archeIdx: ARCHES.indexOf(best), axes: axisVals.map(a => +a.pr.toFixed(2)), shows: shows.slice(0, 3).map(s => ({ name: s.name, slug: s.slug, pct: s.pct })) };
+    const payload: ResultPayload = { archeIdx: ARCHES.indexOf(best), axes: axisVals.map(a => +a.pr.toFixed(2)), shows: shows.slice(0, 3).map(s => ({ name: s.name, slug: s.slug, pct: s.pct, href: s.href })) };
     return { best, second, margin, conf, axisVals, compare, shows, sig, payload };
   }, [screen, pref, winCounts, weights, normFps, baseline, quiz.reco, quiz.pool, seenIds, cleanMode, dna?.matches]);
 
@@ -646,7 +646,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
             <div className="flex gap-1.5 flex-wrap justify-center mt-3">{result.best.tags.map(t => <span key={t} className="text-[11px] font-semibold text-brand-text-secondary bg-brand-surface border border-brand-border px-2.5 py-1 rounded-full">{t}</span>)}</div>
             {result.shows[0] && (
               <div className="mt-4 pt-4 border-t border-brand-border text-[15px] text-brand-text-secondary">
-                Top match: <a href={SHOW_URL(result.shows[0].slug)} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('cdna_show_click', { slug: result.shows[0].slug, from: 'hero' })} className="text-brand-teal font-bold hover:underline">{result.shows[0].name}</a>
+                Top match: <a href={`${SITE_URL}${titleHref(result.shows[0])}`} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('cdna_show_click', { slug: result.shows[0].slug, from: 'hero' })} className="text-brand-teal font-bold hover:underline">{result.shows[0].name}</a>
                 {result.compare && <> · you lean more <b className="text-brand-text-primary">{result.compare.label}</b> than {result.compare.n} of {result.compare.total} shows</>}
               </div>
             )}
@@ -693,7 +693,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                 <div key={s.slug} className={`flex items-center gap-3.5 py-2.5 ${i < result.shows.length - 1 ? 'border-b border-brand-border' : ''}`}>
                   <span className="tabular-nums font-black text-brand-text-muted w-6 text-[15px]">{i + 1}</span>
                   <Tile slug={s.slug} />
-                  <a href={SHOW_URL(s.slug)} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('cdna_show_click', { slug: s.slug, from: 'ranking' })} className={`font-bold w-32 sm:w-48 shrink-0 truncate hover:underline ${i === 0 ? 'text-brand-teal' : 'text-brand-text-primary'}`}>{s.name}</a>
+                  <a href={`${SITE_URL}${titleHref(s)}`} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('cdna_show_click', { slug: s.slug, from: 'ranking' })} className={`font-bold w-32 sm:w-48 shrink-0 truncate hover:underline ${i === 0 ? 'text-brand-teal' : 'text-brand-text-primary'}`}>{s.name}</a>
                   <span className="flex-1 h-[22px] bg-brand-border rounded-md overflow-hidden"><span className="block h-full bg-brand-teal rounded-md transition-all duration-700" style={{ width: `${revealed ? s.pct : 0}%` }} /></span>
                   <span className="tabular-nums font-black w-12 text-right text-[15px]">{s.pct}%</span>
                 </div>
@@ -743,7 +743,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
             <h2 className="text-xl font-extrabold mt-2 mb-1">Get the shows that match your taste</h2>
             <p className="text-brand-text-secondary max-w-md mx-auto mb-3.5">Dive into your top match, or have the shows built for your comedy DNA sent to your inbox.</p>
             <div className="flex gap-3 justify-center flex-wrap">
-              <a className={btnPrimary} href={SHOW_URL(result.shows[0].slug)} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('cdna_show_click', { slug: result.shows[0].slug, from: 'cta' })}>Explore {result.shows[0].name} &rarr;</a>
+              <a className={btnPrimary} href={`${SITE_URL}${titleHref(result.shows[0])}`} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('cdna_show_click', { slug: result.shows[0].slug, from: 'cta' })}>Explore {result.shows[0].name} &rarr;</a>
             </div>
             <div className="mt-5">
               {emailDone ? (

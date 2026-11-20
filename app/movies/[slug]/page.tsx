@@ -7,6 +7,7 @@ import ScoreGauge from '@/components/ui/ScoreGauge';
 import ShareButton from '@/components/ui/ShareButton';
 import AdSlot from '@/components/ads/AdSlot';
 import LaughMap from '@/components/movies/LaughMap';
+import MatchPill from '@/components/comedy-dna/MatchPill';
 import CrossoverStrip from '@/components/movies/CrossoverStrip';
 import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
 import { crossoversForMovie, showsLikeMovie } from '@/lib/crossover';
@@ -122,11 +123,14 @@ export default async function MoviePage({ params }: { params: { slug: string } }
               </div>
             )}
             <div className="flex-1 min-w-0">
-              {m.rank && (
-                <p className="text-xs uppercase tracking-[0.18em] text-brand-gold mb-2">
-                  #{m.rank} of {movies.length} {movies.length === 1 ? 'movie' : 'movies'} scored
-                </p>
-              )}
+              <div className="flex flex-wrap items-center gap-2 mb-2">
+                {m.rank && (
+                  <p className="text-xs uppercase tracking-[0.18em] text-brand-gold">
+                    #{m.rank} of {movies.length} {movies.length === 1 ? 'movie' : 'movies'} scored
+                  </p>
+                )}
+                <MatchPill slug={m.slug} />
+              </div>
               <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight text-brand-text-primary">
                 {m.title}
                 <span className="sm:hidden ml-2 font-mono text-2xl text-brand-gold align-middle">{formatIndex(m.humor_index)}</span>
@@ -274,8 +278,16 @@ export default async function MoviePage({ params }: { params: { slug: string } }
             </div>
           </div>
           <p className="mt-3 text-xs text-brand-text-muted">
-            Movies are ranked against movies only. A film spends time on plot that a sitcom doesn&rsquo;t, so a movie&rsquo;s score and a TV show&rsquo;s score aren&rsquo;t directly comparable. <Link href="/methodology" className="text-brand-gold hover:underline">How scoring works</Link>
+            Movies are ranked against movies only. A film spends time on plot that a sitcom doesn&rsquo;t, so a movie&rsquo;s score and a TV show&rsquo;s score aren&rsquo;t directly comparable. <Link href="/methodology#movies" className="text-brand-gold hover:underline">How scoring works</Link>
           </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Link href={`/compare?show=${m.slug}`} className="text-xs px-3.5 py-2 rounded-full border border-brand-border text-brand-text-secondary hover:text-brand-gold hover:border-brand-gold/50">
+              Compare {name} with any show or movie →
+            </Link>
+            <Link href="/comedy-dna" className="text-xs px-3.5 py-2 rounded-full border border-brand-border text-brand-text-secondary hover:text-brand-gold hover:border-brand-gold/50">
+              Is {name} your kind of funny? Take Comedy DNA →
+            </Link>
+          </div>
         </section>
 
         <CrossoverStrip items={crossovers} side="movie" title="Same cast on TV"

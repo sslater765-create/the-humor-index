@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getAllShows } from '@/lib/data';
+import { getMovies, shortTitle } from '@/lib/movies';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
@@ -42,6 +43,7 @@ export async function generateMetadata() {
 }
 
 export default async function JokesPerMinutePage() {
+  const movies = await getMovies();
   const shows = await rankedByJpm();
 
   const leader = shows[0];
@@ -198,6 +200,26 @@ export default async function JokesPerMinutePage() {
             </p>
           </div>
         </section>
+
+        {movies.length > 0 && (
+          <section className="mt-14">
+            <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">Movies</p>
+            <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary">Jokes per minute in comedy movies</h2>
+            <p className="text-sm text-brand-text-secondary mt-1 mb-4 max-w-2xl">
+              Counted the same way, over each film&rsquo;s real running time. Movies spend minutes on plot, so they run sparser than sitcoms and are ranked on their own.
+            </p>
+            <div className="rounded-2xl border border-brand-border overflow-hidden">
+              {[...movies].sort((a, b) => b.avg_jpm - a.avg_jpm).map((m, i) => (
+                <Link key={m.slug} href={`/movies/${m.slug}`} className="flex items-center gap-4 px-4 py-3 border-b border-brand-border last:border-0 bg-brand-card hover:bg-brand-surface transition-colors">
+                  <span className="font-mono text-sm text-brand-text-muted w-6">{i + 1}</span>
+                  <span className="flex-1 text-brand-text-primary truncate">{shortTitle(m.title)} <span className="text-brand-text-muted">({m.year})</span></span>
+                  <span className="text-xs text-brand-text-muted hidden sm:block">{m.total_jokes} jokes in {m.runtime_minutes} min</span>
+                  <span className="font-mono text-lg text-brand-gold w-14 text-right">{m.avg_jpm.toFixed(2)}</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
       </div>
     </div>
   );

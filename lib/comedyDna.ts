@@ -17,7 +17,7 @@ const TI: Record<string, number> = Object.fromEntries(DNA_TYPES.map((t, i) => [t
 
 export interface QuizJoke { id: number; text: string; slug: string; show?: string; vec: number[]; quot?: number; speaker?: string; ep?: string; etitle?: string; scene?: string; props?: string[]; why?: string; /** id of the illustrated card in /public/cards, when the joke has one */ art?: number; }
 export interface QuizData { types: JokeType[]; pool: QuizJoke[]; reco: QuizJoke[]; }
-export interface ShowFingerprint { slug: string; name: string; fp: number[]; n: number; }
+export interface ShowFingerprint { slug: string; name: string; fp: number[]; n: number; /** set for movies: their page */ href?: string; }
 
 export interface Archetype {
   name: string; tag: string; blurb: string; slug: string;
@@ -144,11 +144,11 @@ export function rankArchetypes(pref: number[], w: number[]): { arche: Archetype;
 }
 // Used by /my (taste from loved shows). Same honest scale as matchShows: 50% is
 // neutral, not a floor, and nothing is stretched to fill 73-98%.
-export interface ShowRank { slug: string; name: string; fp: number[]; score: number; pct: number; }
+export interface ShowRank { slug: string; name: string; fp: number[]; score: number; pct: number; href?: string; }
 export function rankShows(pref: number[], fps: ShowFingerprint[], meanFp: number[], w: number[]): ShowRank[] {
   return fps.map(f => {
     const score = wcos(pref, centeredShow(f, meanFp), w);
-    return { slug: f.slug, name: f.name, fp: f.fp, score, pct: Math.max(2, Math.min(98, Math.round(50 + 48 * Math.tanh(1.8 * score)))) };
+    return { slug: f.slug, name: f.name, fp: f.fp, score, pct: Math.max(2, Math.min(98, Math.round(50 + 48 * Math.tanh(1.8 * score)))), href: f.href };
   }).sort((a, b) => b.score - a.score);
 }
 
@@ -273,7 +273,7 @@ const SHOW_RECORD_WEIGHT = 0.5;
 // it, so ten random clicks can't produce "91% Seinfeld".
 const FULL_EVIDENCE_PICKS = 30;
 
-export interface ShowMatch { slug: string; name: string; fp: number[]; score: number; pct: number; }
+export interface ShowMatch { slug: string; name: string; fp: number[]; score: number; pct: number; href?: string; }
 
 export function matchShows(p: DnaProfile, fps: ShowFingerprint[], meanFp: number[], w: number[]): ShowMatch[] {
   const hasPref = p.pref.some(v => v !== 0);
@@ -284,7 +284,7 @@ export function matchShows(p: DnaProfile, fps: ShowFingerprint[], meanFp: number
     const record = (wn - ln) / (wn + ln + 1.5);
     const score = (1 - SHOW_RECORD_WEIGHT) * typeMatch + SHOW_RECORD_WEIGHT * record;
     const pct = Math.round(50 + 48 * Math.tanh(2.4 * score * evidence));
-    return { slug: f.slug, name: f.name, fp: f.fp, score, pct: Math.max(2, Math.min(98, pct)) };
+    return { slug: f.slug, name: f.name, fp: f.fp, score, pct: Math.max(2, Math.min(98, pct)), href: f.href };
   }).sort((a, b) => b.score - a.score);
 }
 
@@ -361,4 +361,9 @@ export function jokesForProfile<T extends QuizJoke>(p: DnaProfile, jokes: T[], b
   return jokes
     .map(j => ({ j, s: dot(j.vec.map((v, d) => v - baseline[d]), p.pref) + (j.quot || 0) * 0.04 }))
     .sort((a, b) => b.s - a.s).slice(0, n).map(x => x.j);
+}
+
+/** Page for a matched title: its own href (movies) or the show page. */
+export function titleHref(m: { slug: string; href?: string }): string {
+  return m.href ?? `/shows/${m.slug}/`;
 }

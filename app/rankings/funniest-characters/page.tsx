@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import MovieCharacters from '@/components/movies/MovieCharacters';
 import { characterHref } from '@/lib/characterPages';
 import { getAllShows, getCharacters } from '@/lib/data';
 import PageHeader from '@/components/layout/PageHeader';
@@ -110,6 +111,8 @@ export default async function FunniestCharactersPage() {
             }),
           }}
         />
+        <MovieCharacters />
+
         <Link href="/rankings" className="text-xs text-brand-text-muted hover:text-brand-gold block text-center mt-8">
           ← Back to all rankings
         </Link>

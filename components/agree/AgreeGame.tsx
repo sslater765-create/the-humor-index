@@ -196,7 +196,9 @@ export default function AgreeGame({ pool, jokeCount }: { pool: AgreeJoke[]; joke
                   <span className="text-[13px] font-semibold text-brand-text-primary truncate">{j.who}</span>
                   <span className="text-[10.5px] text-brand-text-muted truncate">
                     <span className="text-brand-text-secondary font-semibold">{j.show}</span>
-                    {' · '}S{j.se}E{j.ep}{j.et ? ` “${j.et}”` : ''}
+                    {j.se === 0 && j.ep === 0
+                      ? <>{' · '}Movie{j.et ? `, ${j.et}` : ''}</>
+                      : <>{' · '}S{j.se}E{j.ep}{j.et ? ` “${j.et}”` : ''}</>}
                   </span>
                 </span>
               </div>

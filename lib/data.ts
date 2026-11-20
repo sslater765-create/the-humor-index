@@ -144,11 +144,28 @@ export interface AgreeJoke {
 export interface AgreePool { generated: string; count: number; metric: string; pool: AgreeJoke[]; }
 
 export const getAgreePool = cache(async (): Promise<AgreeJoke[]> => {
-  try {
-    return readJson<AgreePool>('agree-pool.json').pool;
-  } catch {
-    return [];
+  let pool: AgreeJoke[] = [];
+  try { pool = readJson<AgreePool>('agree-pool.json').pool; } catch { /* none */ }
+  // Movie lines join the blind test: up to 20 per film across the score range,
+  // so a pairing can put a movie line against a sitcom line.
+  const { getMovieGameJokes, filmTime } = await import('./movies');
+  const byMovie = new Map<string, Awaited<ReturnType<typeof getMovieGameJokes>>>();
+  for (const j of await getMovieGameJokes()) {
+    const list = byMovie.get(j.slug) ?? [];
+    list.push(j);
+    byMovie.set(j.slug, list);
   }
+  byMovie.forEach(list => {
+    const sorted = [...list].sort((a, b) => b.impact - a.impact);
+    const step = Math.max(1, Math.floor(sorted.length / 20));
+    sorted.filter((_, i) => i % step === 0).slice(0, 20).forEach(j => {
+      pool.push({
+        id: 100000 + pool.length, t: j.text, s: j.impact, c: j.craft, q: j.quot, who: j.who,
+        show: `${j.movie} (${j.year})`, slug: j.slug, se: 0, ep: 0, et: filmTime(j.t), jt: j.type,
+      } as AgreeJoke);
+    });
+  });
+  return pool;
 });
 
 // ---- Comedy DNA quiz ----
@@ -175,6 +192,21 @@ export async function getComedyDnaFingerprints(): Promise<ShowFingerprint[]> {
       name: s.name,
       fp: DNA_TYPES.map(t => dist[t] || 0),
       n: s.total_jokes_analyzed || 1,
+    });
+  }
+  // Movies join the recommender: same joke-type fingerprint, built from every
+  // scored joke in the film, linking to the movie page.
+  const { getMovies, getMovieDna, shortTitle } = await import('./movies');
+  const movieDna = await getMovieDna();
+  for (const m of await getMovies()) {
+    const dist = movieDna[m.slug];
+    if (!dist) continue;
+    out.push({
+      slug: m.slug,
+      name: `${shortTitle(m.title)} (${m.year})`,
+      fp: DNA_TYPES.map(t => dist[t] || 0),
+      n: m.total_jokes || 1,
+      href: `/movies/${m.slug}/`,
     });
   }
   return out;
@@ -245,8 +277,18 @@ export async function getSimilarEpisodes(slug: string, season: number, episode: 
   return out;
 }
 
-export interface RouletteJoke { slug: string; show: string; text: string; who: string; score: number; s: number; e: number; t: string }
+export interface RouletteJoke { slug: string; show: string; text: string; who: string; score: number; s: number; e: number; t: string; movie?: boolean }
 /** Clean single-speaker lines for the homepage "one more" roulette. */
 export const getJokeRoulette = cache(async (): Promise<RouletteJoke[]> => {
-  try { return readJson<RouletteJoke[]>('joke-roulette.json'); } catch { return []; }
+  let pool: RouletteJoke[] = [];
+  try { pool = readJson<RouletteJoke[]>('joke-roulette.json'); } catch { /* none */ }
+  // Movies: their best clean single-speaker lines (8.2+), up to 12 a film.
+  const { getMovieGameJokes, filmTime } = await import('./movies');
+  const counts: Record<string, number> = {};
+  const movieLines = (await getMovieGameJokes())
+    .filter(j => !j.explicit && j.score >= 8.2)
+    .sort((a, b) => b.score - a.score)
+    .filter(j => (counts[j.slug] = (counts[j.slug] ?? 0) + 1) <= 12)
+    .map(j => ({ slug: j.slug, show: `${j.movie} (${j.year})`, text: j.text, who: j.who, score: +j.score.toFixed(1), s: 0, e: 0, t: filmTime(j.t), movie: true }));
+  return [...pool, ...movieLines];
 });

@@ -172,3 +172,78 @@ export const TMDB_IMG = 'https://image.tmdb.org/t/p';
 
 export const getMovieQueue = cache(async (): Promise<Array<{ slug: string; title: string; year: number }>> =>
   read<Array<{ slug: string; title: string; year: number }>>('queue.json') ?? []);
+
+/**
+ * A movie in the ShowScore shape, so components built for shows (compare,
+ * radar charts, DNA) can take one. kind/href mark it as a movie.
+ */
+export function movieAsShow(m: MovieSummary): import('./types').ShowScore {
+  return {
+    kind: 'movie',
+    href: `/movies/${m.slug}/`,
+    show_id: 0,
+    slug: m.slug,
+    name: `${shortTitle(m.title)} (${m.year})`,
+    format: 'single_camera',
+    total_seasons: 1,
+    total_episodes: 1,
+    humor_index: m.humor_index,
+    best_season: 1,
+    avg_jpm: m.avg_jpm,
+    avg_craft: m.avg_craft,
+    avg_impact: m.avg_impact,
+    total_jokes_analyzed: m.total_jokes,
+    description: m.logline,
+    backdrop_path: m.backdrop_path ?? undefined,
+    poster_path: m.poster_path ?? undefined,
+    stars: m.stars,
+    rank: m.rank,
+  };
+}
+
+/** Joke-type mix (percent by first type) for every published movie, keyed by slug. */
+export const getMovieDna = cache(async (): Promise<Record<string, Record<string, number>>> => {
+  const out: Record<string, Record<string, number>> = {};
+  for (const s of await getMovies()) {
+    const d = await getMovie(s.slug);
+    if (!d) continue;
+    const counts: Record<string, number> = {};
+    for (const j of d.jokes) { const t = j.joke_types[0]; if (t) counts[t] = (counts[t] ?? 0) + 1; }
+    const n = Object.values(counts).reduce((a, b) => a + b, 0) || 1;
+    out[s.slug] = Object.fromEntries(Object.entries(counts).map(([k, v]) => [k, +((v / n) * 100).toFixed(1)]));
+  }
+  return out;
+});
+
+const EXPLICIT = /\b(fuck|shit|cunt|pussy|cock|bitch|dick|whore|slut|nigg|fag|retard|rape|cum|tits?|titty|aids|suicide|penis|vagina|dildo|porn|molest)/i;
+
+export interface MovieGameJoke {
+  id: number; slug: string; movie: string; year: number; who: string; text: string;
+  t: number | null; impact: number; craft: number; score: number; quot: number | null; type: string | null; explicit: boolean;
+}
+
+/**
+ * One clean, single-speaker line per joke, for the games and the homepage
+ * roulette: lines that are only stage directions, or that need two speakers to
+ * make sense, are left out.
+ */
+export const getMovieGameJokes = cache(async (): Promise<MovieGameJoke[]> => {
+  const { jokeLines } = await import('./movieText');
+  const out: MovieGameJoke[] = [];
+  for (const s of await getMovies()) {
+    const d = await getMovie(s.slug);
+    if (!d) continue;
+    for (const j of d.jokes) {
+      const lines = jokeLines(j.text, j.characters).filter(l => !l.note);
+      if (lines.length !== 1 || !lines[0].speaker) continue;
+      const text = lines[0].line.replace(/\s+/g, ' ').trim();
+      if (text.length < 12 || text.length > 160) continue;
+      out.push({
+        id: j.id, slug: s.slug, movie: shortTitle(s.title), year: s.year, who: lines[0].speaker,
+        text, t: j.t, impact: j.impact, craft: j.craft, score: j.score, quot: j.quotability ?? null,
+        type: j.joke_types[0] ?? null, explicit: EXPLICIT.test(text),
+      });
+    }
+  }
+  return out;
+});

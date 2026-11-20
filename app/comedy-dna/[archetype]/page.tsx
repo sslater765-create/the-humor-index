@@ -41,7 +41,9 @@ export default async function ArchetypePage({ params }: { params: { archetype: s
   const arche = archetypeBySlug(params.archetype);
   if (!arche) notFound();
 
-  const [quiz, fingerprints] = await Promise.all([getComedyDnaQuiz(), getComedyDnaFingerprints()]);
+  const [quiz, allFingerprints] = await Promise.all([getComedyDnaQuiz(), getComedyDnaFingerprints()]);
+  // Archetype exemplars are sitcoms (the copy says so); movies are left out here.
+  const fingerprints = allFingerprints.filter(f => !f.href);
   const exemplar = archetypeExemplars(fingerprints).find(e => e.arche.slug === arche.slug);
   const jokes = archetypeExampleJokes(arche, quiz.pool, 3);
 

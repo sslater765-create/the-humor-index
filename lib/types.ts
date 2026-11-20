@@ -27,6 +27,10 @@ export type JokeType =
   | 'awkward_silence';
 
 export interface ShowScore {
+  /** 'movie' for films adapted into this shape (compare, DNA); absent for TV. */
+  kind?: 'tv' | 'movie';
+  /** Page for this title when it isn't /shows/<slug>/ (movies). */
+  href?: string;
   show_id: number;
   slug: string;
   name: string;

@@ -6,6 +6,7 @@ import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import { SITE_URL } from '@/lib/site';
 import { rankable } from '@/lib/scale';
 import ScaleNote from '@/components/ui/ScaleNote';
+import MovieLines from '@/components/movies/MovieLines';
 
 export const dynamic = 'force-static';
 
@@ -93,6 +94,8 @@ export default async function BestJokesPage() {
         </div>
 
         <BestJokesClient jokes={pool} />
+
+        <MovieLines limit={25} title="The best movie lines" subtitle="The same scoring, applied to comedy movies. Ranked separately from TV." />
       </div>
     </div>
   );

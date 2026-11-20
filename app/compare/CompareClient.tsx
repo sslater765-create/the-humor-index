@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
@@ -10,18 +10,21 @@ import { RadarCompareChart, JokeTypesCompareChart } from '@/components/charts';
 
 interface Props {
   shows: ShowScore[];
+  movies?: ShowScore[];
   dnaBySlug: Record<string, Record<string, number>>;
 }
 
 function ShowSelector({
   label,
   shows,
+  movies = [],
   value,
   onChange,
   exclude,
 }: {
   label: string;
   shows: ShowScore[];
+  movies?: ShowScore[];
   value: string;
   onChange: (v: string) => void;
   exclude: string;
@@ -34,31 +37,51 @@ function ShowSelector({
         onChange={e => onChange(e.target.value)}
         className="w-full bg-brand-card border border-brand-border rounded-lg px-3 py-2.5 text-sm text-brand-text-primary focus:outline-none focus:border-brand-gold"
       >
-        <option value="">Select a show…</option>
-        {shows
-          .filter(s => s.slug !== exclude)
-          .map(s => (
-            <option key={s.slug} value={s.slug}>
-              {s.name} ({formatIndex(s.humor_index)})
-            </option>
-          ))}
+        <option value="">{movies.length ? 'Select a show or movie…' : 'Select a show…'}</option>
+        <optgroup label="TV shows">
+          {shows
+            .filter(s => s.slug !== exclude)
+            .map(s => (
+              <option key={s.slug} value={s.slug}>
+                {s.name} ({formatIndex(s.humor_index)})
+              </option>
+            ))}
+        </optgroup>
+        {movies.length > 0 && (
+          <optgroup label="Movies">
+            {movies
+              .filter(s => s.slug !== exclude)
+              .map(s => (
+                <option key={s.slug} value={s.slug}>
+                  {s.name} ({formatIndex(s.humor_index)})
+                </option>
+              ))}
+          </optgroup>
+        )}
       </select>
     </div>
   );
 }
 
-export default function CompareClient({ shows, dnaBySlug }: Props) {
+export default function CompareClient({ shows: tvShows, movies = [], dnaBySlug }: Props) {
+  // One list for lookups; the selectors keep TV and movies in separate groups.
+  const shows = [...tvShows, ...movies];
   const searchParams = useSearchParams();
   const preselected = searchParams.get('show');
 
-  const [slugA, setSlugA] = useState(() => {
-    if (preselected && shows.some(s => s.slug === preselected)) return preselected;
-    return shows[0]?.slug ?? '';
-  });
-  const [slugB, setSlugB] = useState(() => {
-    if (preselected && shows[0]?.slug === preselected) return shows[1]?.slug ?? '';
-    return shows[1]?.slug ?? '';
-  });
+  // The page is static, so the first render must match the server's: start on
+  // the default pair and apply ?show= after hydration.
+  const [slugA, setSlugA] = useState(tvShows[0]?.slug ?? '');
+  const [slugB, setSlugB] = useState(tvShows[1]?.slug ?? '');
+  useEffect(() => {
+    if (!preselected || !shows.some(s => s.slug === preselected)) return;
+    setSlugA(preselected);
+    // A movie faces the top TV show; a show faces the next one down.
+    if (movies.some(m => m.slug === preselected)) setSlugB(tvShows[0]?.slug ?? '');
+    else if (tvShows[0]?.slug === preselected) setSlugB(tvShows[1]?.slug ?? '');
+    else setSlugB(tvShows[0]?.slug ?? '');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [preselected]);
 
   const showA = shows.find(s => s.slug === slugA);
   const showB = shows.find(s => s.slug === slugB);
@@ -68,12 +91,19 @@ export default function CompareClient({ shows, dnaBySlug }: Props) {
   const dnaA = dnaBySlug[slugA];
   const dnaB = dnaBySlug[slugB];
 
-  const dims: { key: keyof ShowScore; label: string }[] = [
+  // A movie against a show: the overall score and jokes per minute aren't on
+  // the same footing (films spend time on plot), so the verdict rests on the
+  // per-joke measures, craft and impact.
+  const crossKind = !!showA && !!showB && (showA.kind === 'movie') !== (showB.kind === 'movie');
+  const labelA = showA?.kind === 'movie' ? 'Movie' : 'Show';
+  const labelB = showB?.kind === 'movie' ? 'Movie' : 'Show';
+  const allDims: { key: keyof ShowScore; label: string }[] = [
     { key: 'humor_index', label: 'Humor Index' },
     { key: 'avg_jpm', label: 'JPM' },
     { key: 'avg_craft', label: 'Craft' },
     { key: 'avg_impact', label: 'Impact' },
   ];
+  const dims = crossKind ? allDims.filter(d => d.key === 'avg_craft' || d.key === 'avg_impact') : allDims;
 
   return (
     <div className="space-y-10">
@@ -84,8 +114,9 @@ export default function CompareClient({ shows, dnaBySlug }: Props) {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] gap-4 items-end">
           <ShowSelector
-            label="Show A"
-            shows={shows}
+            label="Pick one"
+            shows={tvShows}
+            movies={movies}
             value={slugA}
             onChange={setSlugA}
             exclude={slugB}
@@ -94,8 +125,9 @@ export default function CompareClient({ shows, dnaBySlug }: Props) {
             <span className="font-serif italic text-brand-text-muted text-xl">vs</span>
           </div>
           <ShowSelector
-            label="Show B"
-            shows={shows}
+            label="Against"
+            shows={tvShows}
+            movies={movies}
             value={slugB}
             onChange={setSlugB}
             exclude={slugA}
@@ -162,7 +194,7 @@ export default function CompareClient({ shows, dnaBySlug }: Props) {
                 {/* Names + HI numbers */}
                 <div className="bg-brand-card border-t border-brand-border grid grid-cols-2">
                   <div className="p-5 sm:p-7 text-right border-r border-brand-border">
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">Show A</p>
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">{labelA}</p>
                     <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight mb-3">
                       {showA.name}
                     </h2>
@@ -172,7 +204,7 @@ export default function CompareClient({ shows, dnaBySlug }: Props) {
                     <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-2">Humor Index</p>
                   </div>
                   <div className="p-5 sm:p-7">
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">Show B</p>
+                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">{labelB}</p>
                     <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight mb-3">
                       {showB.name}
                     </h2>
@@ -185,7 +217,12 @@ export default function CompareClient({ shows, dnaBySlug }: Props) {
 
                 {/* Editorial caption */}
                 <div className="bg-brand-surface border-t border-brand-border px-5 sm:px-7 py-4 text-center">
-                  {tied ? (
+                  {crossKind ? (
+                    <p className="text-sm text-brand-text-secondary font-serif italic">
+                      A movie and a show sit on separate leaderboards, so we don&apos;t compare the overall scores.
+                      Joke for joke, here&apos;s how they stack up.
+                    </p>
+                  ) : tied ? (
                     <p className="text-sm text-brand-text-secondary font-serif italic">
                       Within the noise floor — {diff.toFixed(1)} points separates them. Statistically tied.
                     </p>
@@ -207,7 +244,7 @@ export default function CompareClient({ shows, dnaBySlug }: Props) {
           <section>
             <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-4">By the Numbers</p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {dims.filter(d => d.key !== 'humor_index').map(d => {
+              {allDims.filter(d => d.key !== 'humor_index').map(d => {
                 const aVal = showA[d.key] as number;
                 const bVal = showB[d.key] as number;
                 const aWins = aVal >= bVal;
@@ -288,8 +325,9 @@ export default function CompareClient({ shows, dnaBySlug }: Props) {
                     )}
                   </h3>
                   <p className="text-sm text-brand-text-secondary leading-relaxed mb-2">
-                    Across {dims.length} dimensions of comedy — Humor Index, jokes-per-minute, craft, and impact —
-                    {' '}<span className="text-brand-text-primary">{overall.name}</span> wins {winsCount}.
+                    {crossKind
+                      ? <>Joke for joke, on craft and impact, <span className="text-brand-text-primary">{overall.name}</span> wins {winsCount} of 2.</>
+                      : <>Across {dims.length} dimensions of comedy (Humor Index, jokes per minute, craft and impact), <span className="text-brand-text-primary">{overall.name}</span> wins {winsCount}.</>}
                   </p>
 
                   {/* Per-dimension chips */}

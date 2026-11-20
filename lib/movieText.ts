@@ -33,6 +33,15 @@ export function jokeLines(text: string, characters: string[]): Line[] {
       out.push({ speaker: full(named[1]), line: q ? q[1] : body });
       continue;
     }
+    // "Veronica's declaration of love on live TV: 'line'": a description, then
+    // the quoted line. Credit whoever the description opens with.
+    const described = p.match(/^([A-Z][^:]{2,90}):\s*['\u2018\u201C](.+)['\u2019\u201D][.!?]?$/);
+    if (described) {
+      const first = described[1].split(/[\s']/)[0].toLowerCase();
+      const who = characters.find(c => c.toLowerCase().split(' ').includes(first));
+      out.push({ speaker: who, line: described[2] });
+      continue;
+    }
     const q = p.match(QUOTED);
     if (q) {
       out.push({ speaker: characters.length === 1 ? characters[0] : undefined, line: q[1] });
@@ -59,7 +68,7 @@ export function bestLine(j: MovieJoke): string {
   const pick = lines.sort((a, b) => b.line.length - a.line.length)[0];
   if (pick) return pick.line.replace(/\s+/g, ' ').trim();
   // Only a stage note: quote the line it describes.
-  const inner = j.text.match(/['\u2018\u201C]([^'\u2019\u201D]{6,})['\u2019\u201D]/);
+  const inner = j.text.match(/(?:^|[\s:(])['\u2018\u201C](.{6,}?)['\u2019\u201D](?=[\s.,!?;)]|$)/);
   return (inner ? inner[1] : j.text).replace(/\s+/g, ' ').trim();
 }
 

@@ -19,7 +19,9 @@ export interface MyShow {
 }
 
 export default async function MyPage() {
-  const [stats, rawFps] = await Promise.all([getSiteStats(), getComedyDnaFingerprints()]);
+  const [stats, allFps] = await Promise.all([getSiteStats(), getComedyDnaFingerprints()]);
+  // My Index rates shows you've watched; movies aren't in it yet.
+  const rawFps = allFps.filter(f => !f.href);
 
   const shows: MyShow[] = stats.leaderboard.map(s => ({
     slug: s.slug,

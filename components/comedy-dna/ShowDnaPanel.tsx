@@ -5,7 +5,7 @@
 // that fit their picks.
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
-import { jokesForProfile, readLevel, whyText, type QuizJoke } from '@/lib/comedyDna';
+import { jokesForProfile, readLevel, whyText, titleHref, type QuizJoke } from '@/lib/comedyDna';
 import { trackEvent } from '@/lib/analytics';
 import { useDna } from './DnaProvider';
 import QuickPick from './QuickPick';
@@ -63,7 +63,7 @@ export default function ShowDnaPanel({ slug, name, showJokes, otherJokes }: Prop
           {rank > 1 && (
             <p className="text-xs text-brand-text-muted mt-3">
               Your top match is{' '}
-              <Link href={`/shows/${dna.matches[0].slug}`} className="text-brand-teal hover:underline">{dna.matches[0].name}</Link>
+              <Link href={titleHref(dna.matches[0])} className="text-brand-teal hover:underline">{dna.matches[0].name}</Link>
               {' '}({dna.matches[0].pct}%).
             </p>
           )}

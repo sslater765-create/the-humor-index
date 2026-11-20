@@ -57,11 +57,21 @@ export default function JokeRoulette({ pool }: { pool: RouletteJoke[] }) {
         <p className="mt-3 text-xs sm:text-sm text-brand-text-secondary">
           <span className="text-brand-text-primary">{j.who}</span>
           {' · '}
-          <Link href={`/shows/${j.slug}/`} className="hover:text-brand-gold">{j.show}</Link>
-          {' · '}
-          <Link href={`/shows/${j.slug}/${j.s}/${j.e}/`} className="hover:text-brand-gold">
-            S{j.s}E{j.e} &ldquo;{j.t}&rdquo;
-          </Link>
+          {j.movie ? (
+            <>
+              <Link href={`/movies/${j.slug}/`} className="hover:text-brand-gold">{j.show}</Link>
+              {' · '}
+              <span>Movie, at {j.t}</span>
+            </>
+          ) : (
+            <>
+              <Link href={`/shows/${j.slug}/`} className="hover:text-brand-gold">{j.show}</Link>
+              {' · '}
+              <Link href={`/shows/${j.slug}/${j.s}/${j.e}/`} className="hover:text-brand-gold">
+                S{j.s}E{j.e} &ldquo;{j.t}&rdquo;
+              </Link>
+            </>
+          )}
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <button
@@ -72,11 +82,11 @@ export default function JokeRoulette({ pool }: { pool: RouletteJoke[] }) {
             {BUTTON[Math.min(spun, BUTTON.length - 1)]} &rarr;
           </button>
           <Link
-            href={`/shows/${j.slug}/${j.s}/${j.e}/`}
+            href={j.movie ? `/movies/${j.slug}/quotes/` : `/shows/${j.slug}/${j.s}/${j.e}/`}
             onClick={() => trackEvent('joke_roulette_episode', { show: j.slug })}
             className="text-sm text-brand-text-secondary hover:text-brand-gold"
           >
-            Every joke in this episode, ranked
+            {j.movie ? 'Every joke in this movie, ranked' : 'Every joke in this episode, ranked'}
           </Link>
         </div>
       </div>
