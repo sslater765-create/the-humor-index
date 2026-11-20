@@ -4,6 +4,7 @@ import { ARCHES } from '@/lib/comedyDna';
 import { POSTS } from '@/app/blog/posts';
 import { SITE_URL } from '@/lib/site';
 import { isAwaitingRescore } from '@/lib/scale';
+import { getMovies } from '@/lib/movies';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = `${SITE_URL}`;
@@ -29,6 +30,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url('/rankings/best-christmas-episodes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.9 },
     { url: url('/rankings/best-thanksgiving-episodes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/least-funny-characters'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.7 },
+    { url: url('/movies'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.9 },
+    ...(await getMovies()).flatMap(m => [
+      { url: url(`/movies/${m.slug}`), lastModified: SITE_REFRESHED, changeFrequency: 'monthly' as const, priority: 0.8 },
+      { url: url(`/movies/${m.slug}/quotes`), lastModified: SITE_REFRESHED, changeFrequency: 'monthly' as const, priority: 0.8 },
+    ]),
     { url: url('/compare'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/comedy-dna'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.8 },
     { url: url('/agree'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.7 },

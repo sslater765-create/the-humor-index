@@ -7,13 +7,14 @@ import AccountMenu from '@/components/auth/AccountMenu';
 // Five destinations in the bar; the rest sit under "More" on desktop and in
 // the full list on mobile.
 const primary = [
-  { href: '/shows', label: 'Shows' },
+  { href: '/shows', label: 'TV' },
+  { href: '/movies', label: 'Movies' },
   { href: '/rankings', label: 'Rankings' },
-  { href: '/compare', label: 'Compare' },
   { href: '/comedy-dna', label: 'Comedy DNA' },
   { href: '/blog', label: 'Blog' },
 ];
 const secondary = [
+  { href: '/compare', label: 'Compare' },
   { href: '/explore', label: 'Explore' },
   { href: '/agree', label: 'Agree?' },
   { href: '/my', label: 'My Index' },
