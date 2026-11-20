@@ -4,34 +4,38 @@
   "season": 9,
   "episode_number": 6,
   "title": "The Gang Saves the Day",
-  "humor_index": 72.8,
-  "jpm": 2.91,
-  "avg_craft": 6.73,
-  "avg_impact": 6.44,
-  "total_jokes": 43,
-  "war": 25.2,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"dark_subversive\"]",
-  "standout_joke_ids": "[14, 15, 16]",
+  "humor_index": 85.2,
+  "jpm": 3.31,
+  "avg_craft": 7.1,
+  "avg_impact": 7.05,
+  "total_jokes": 49,
+  "war": 52.7,
+  "dominant_joke_types": "[\"character_comedy\", \"dark_subversive\", \"absurdist\"]",
+  "standout_joke_ids": "[48, 26, 8]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Don't grab a beer. We're on our way to a bar, which we own.",
+      "text": "The gang stops for snacks and beer inside a convenience store they're robbing \u2014 before realizing a robbery is in progress",
       "characters": [
-        "Charlie"
+        "Mac",
+        "Dennis",
+        "Charlie",
+        "Dee",
+        "Frank"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Gang wanting to buy beer at convenience store",
-      "punchline": "Logical observation that they own a bar",
-      "craft_total": 6.3,
-      "impact_score": 5.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Someone enthuses about the best hot dogs in Philadelphia and suggests grabbing snacks; the gang immediately starts debating beers despite being on the way to their own bar.",
+      "punchline": "The mundane bickering about beer and snacks is immediately interrupted by an armed robbery \u2014 the gang's self-absorption is so total they were oblivious to their surroundings.",
+      "craft_total": 6.75,
+      "impact_score": 6.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Charlie's occasional rational thoughts",
+      "explanation": "Classic Always Sunny premise: the gang's petty self-interest (debating beers at a bar they already own) is punctured by real danger they were too oblivious to notice. Strong character integration \u2014 only this specific group would bicker this way in this context.",
       "dialogue": [
         {
           "speaker": "Charlie",
@@ -41,22 +45,22 @@
     },
     {
       "index": 2,
-      "text": "All right, well, I'm not gonna be the only one not drinking beer, so come on.",
+      "text": "Mac's immediate reaction to an armed robbery: 'Oh, shit, oh, God, we're all gonna die.'",
       "characters": [
-        "Charlie"
+        "Mac"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "deadpan_understatement"
       ],
-      "setup": "Charlie's logical argument against buying beer",
-      "punchline": "Immediately caves to peer pressure despite his own logic",
-      "craft_total": 6.32,
-      "impact_score": 5.83,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "An armed robber bursts in demanding money with lethal threats.",
+      "punchline": "Mac, who fancies himself a badass martial artist, instantly crumbles into panicked cowardice.",
+      "craft_total": 6.52,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect character moment showing how the gang corrupts each other",
+      "explanation": "Funny because Mac's self-image as a tough guy is immediately deflated. The joke is entirely rooted in character \u2014 it only works because we know Mac's delusion. Sets up his later heroic fantasy sequence beautifully.",
       "dialogue": [
         {
           "speaker": "Charlie",
@@ -66,22 +70,22 @@
     },
     {
       "index": 3,
-      "text": "Hey, bozo. Walk away now, and I let you live... or stick around and repent for your sins.",
+      "text": "Mac confronts the robber: 'Walk away now, and I let you live... or stick around and repent for your sins.' Then: 'And you better say cheese.' \u2014 before flinging cheese in his face.",
       "characters": [
         "Mac"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "setup_punchline"
       ],
-      "setup": "Mac trying to be a tough action hero",
-      "punchline": "Awkward religious phrasing mixed with tough guy talk",
-      "craft_total": 6.75,
-      "impact_score": 6.25,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Mac tries to deliver a cool action-hero one-liner ('say cheese') during a dramatic confrontation.",
+      "punchline": "The pun only makes sense if you're photographing someone \u2014 throwing literal cheese makes no semantic connection, but Mac is 100% confident it landed.",
+      "craft_total": 7.69,
+      "impact_score": 7.83,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great character integration showing Mac's religious obsession even in action scenarios",
+      "explanation": "This is exceptional character comedy. Mac's failed pun is built on a specific, layered misunderstanding: he knows the CONCEPT of a pun (saying something with double meaning) but can't execute it. The gap between his confidence and his incompetence is perfectly calibrated. The cheese-in-the-face physical escalation is unexpected and absurd in a way that earns its laugh independently of the pun debate. Only Mac could fail this specifically.",
       "dialogue": [
         {
           "speaker": "Mac",
@@ -91,22 +95,25 @@
     },
     {
       "index": 4,
-      "text": "And you better say 'cheese.'",
+      "text": "The gang patiently explains to Mac that 'say cheese' doesn't work as a pun when you're throwing cheese \u2014 it only works if you're taking a photograph.",
       "characters": [
+        "Dennis",
+        "Charlie",
+        "Dee",
         "Mac"
       ],
       "joke_types": [
-        "setup_punchline",
-        "wordplay_pun"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Mac trying to deliver a cool one-liner",
-      "punchline": "Terrible pun that makes no sense in context",
-      "craft_total": 5.47,
-      "impact_score": 6.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "The badness of the pun is the joke - Mac's incompetence at being cool",
+      "setup": "Mac is thrilled with his 'say cheese' one-liner after stopping the robbery.",
+      "punchline": "The whole gang patiently, almost academically, explains why his pun failed \u2014 'If you had taken his photograph AND flung cheese in his face, THAT would've been a pun.'",
+      "craft_total": 7.7,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The comedy escalates: not only did Mac fail, but the gang's earnest, detailed correction is funnier than the original gag. 'Should I go get a camera?' as a genuine offer is a perfect absurdist beat. The group dynamic \u2014 all agreeing in slightly different ways \u2014 is pitch-perfect Always Sunny.",
       "dialogue": [
         {
           "speaker": "Mac",
@@ -116,23 +123,24 @@
     },
     {
       "index": 5,
-      "text": "Did you like my 'say cheese' line? I didn't quite get that, if I'm being honest.",
+      "text": "Did you like my 'say cheese' line? I didn't quite get that, if I'm being honest. / Yeah, I was a little bit confused by that as well.",
       "characters": [
         "Mac",
+        "Dennis",
         "Charlie"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "irony_sarcasm"
       ],
-      "setup": "Mac proud of his terrible pun",
-      "punchline": "Charlie's honest confusion",
-      "craft_total": 6.85,
-      "impact_score": 6.17,
-      "quotability": 5.0,
+      "setup": "Mac saved everyone heroically and immediately asks for validation on his pun",
+      "punchline": "Both Dennis and Charlie admit they didn't understand it at all \u2014 deflating his heroic moment",
+      "craft_total": 7.32,
+      "impact_score": 7.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good cringe comedy as Mac's delusion meets reality",
+      "is_callback": 1,
+      "explanation": "Perfect comic deflation. Mac's need for approval immediately after a heroic act is classic Mac. Dennis and Charlie's honest confusion rather than polite compliments is very true to the show's ethos of brutal honesty within the group.",
       "dialogue": [
         {
           "speaker": "Mac",
@@ -146,22 +154,26 @@
     },
     {
       "index": 6,
-      "text": "It was a pun, 'cause I flung cheese in his face, you know?",
+      "text": "Mac turns over the robber's wallet to reveal he's Yakuza \u2014 the gang immediately flees screaming.",
       "characters": [
-        "Mac"
+        "Mac",
+        "Dennis",
+        "Charlie",
+        "Dee",
+        "Frank"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Mac trying to explain his brilliant wordplay",
-      "punchline": "Reveals he doesn't understand what a pun is",
-      "craft_total": 6.85,
-      "impact_score": 6.33,
+      "setup": "Mac successfully stops the robbery and the gang wants to identify the criminal.",
+      "punchline": "The criminal turns out to be Yakuza \u2014 an absurd escalation \u2014 and the gang, including 'hero' Mac, immediately runs away in terror.",
+      "craft_total": 6.31,
+      "impact_score": 6.5,
       "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Mac moment - confident in his ignorance",
+      "explanation": "Structurally clean: hero stops criminal, criminal is revealed to be far more dangerous, hero runs. The Yakuza escalation is classic Always Sunny absurdism \u2014 the show loves making a local Philadelphia convenience store robbery into an international crime syndicate situation.",
       "dialogue": [
         {
           "speaker": "Mac",
@@ -171,22 +183,23 @@
     },
     {
       "index": 7,
-      "text": "No, if you... if you had taken his photograph, and then you flung cheese in his face... that would be a pun.",
+      "text": "Yakuza. / Go, go! Oh, shit!",
       "characters": [
-        "Dennis"
+        "Dennis",
+        "Gang"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "setup_punchline",
+        "escalation"
       ],
-      "setup": "Dennis explaining what would actually make it a pun",
-      "punchline": "Pedantic correction that's technically right but misses the point",
-      "craft_total": 6.65,
-      "impact_score": 5.67,
-      "quotability": 4.0,
+      "setup": "Mac heroically subdues the robber and they go to check his ID",
+      "punchline": "He's Yakuza \u2014 and the gang immediately flees in terror, all heroism evaporating instantly",
+      "craft_total": 6.62,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Dennis character moment - condescending but accurate",
+      "explanation": "Clean escalation gag \u2014 the situation just got dramatically worse. The single word 'Yakuza' followed by immediate panic is economical and effective. Sets up Mac's fantasy sequence.",
       "dialogue": [
         {
           "speaker": "Dennis",
@@ -196,22 +209,25 @@
     },
     {
       "index": 8,
-      "text": "Should I go get a camera?",
+      "text": "Mac kicks someone into a refrigerator during his action fantasy and says 'Cool off.' The gang praises him: 'That's a great pun, dude!' \u2014 but Mac doesn't understand why.",
       "characters": [
-        "Mac"
+        "Mac",
+        "Dennis",
+        "Charlie"
       ],
       "joke_types": [
+        "callback",
         "character_comedy",
-        "absurdist"
+        "irony_sarcasm"
       ],
-      "setup": "Dennis explains how the pun would work with a camera",
-      "punchline": "Mac wants to literally recreate the scenario",
-      "craft_total": 7.0,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant escalation of Mac's misunderstanding and literal thinking",
+      "setup": "Mac accidentally delivers a perfect pun ('Cool off' + kick into fridge) after the gang explained exactly what a pun requires.",
+      "punchline": "Mac, who desperately wanted his 'say cheese' to be recognized as a pun, now delivers an accidental perfect pun and doesn't understand what he did right.",
+      "craft_total": 8.21,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the best joke in the episode. The structure is near-perfect: the setup (Mac failing a pun), the extended explanation (the whole gang teaching him what a pun is), and the payoff (Mac accidentally nails one and is completely baffled) form a three-beat escalating callback. The irony is total \u2014 he only gets credit when he doesn't know he deserves it. 'He's not getting it, is he? No. Forget it.' is a beautiful tag. This is the kind of callback that rewards attentive viewers and demonstrates genuine craft.",
       "dialogue": [
         {
           "speaker": "Mac",
@@ -221,22 +237,23 @@
     },
     {
       "index": 9,
-      "text": "Yakuza.",
+      "text": "'I killed the boss.' 'That's not the boss, you idiot. He's my father! He owns the store!'",
       "characters": [
-        "Mac"
+        "Mac",
+        "Yakuza Boss's Son"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "dark_subversive",
+        "escalation"
       ],
-      "setup": "Gang discovers the robber's identity",
-      "punchline": "Immediate escalation to international crime syndicate",
-      "craft_total": 6.93,
-      "impact_score": 7.0,
-      "quotability": 6.0,
+      "setup": "Mac dispatches who he believes is the Yakuza boss in his action fantasy.",
+      "punchline": "He's just murdered a shop owner \u2014 an innocent man who happens to be the antagonist's father.",
+      "craft_total": 7.23,
+      "impact_score": 7.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect escalation beat - one word that changes everything",
+      "explanation": "Classic Always Sunny dark comedy beat \u2014 the 'hero' casually commits what in reality would be a horrific error. The brevity and Mac's immediate pivot ('Whoops. My bad.') is what sells it. Economy is the strong suit here.",
       "dialogue": [
         {
           "speaker": "",
@@ -246,23 +263,22 @@
     },
     {
       "index": 10,
-      "text": "And that's a great pun, dude. You used the pun right! Yeah, you got the pun right, dude.",
+      "text": "After being told he killed an innocent man, Mac asks: 'Now, is your throat okay? Is it... is that from the smoke, or...? Is that a pun?'",
       "characters": [
-        "Charlie",
-        "Dennis"
+        "Mac"
       ],
       "joke_types": [
-        "callback",
-        "character_comedy"
+        "character_comedy",
+        "callback"
       ],
-      "setup": "Mac says 'Cool off' while kicking someone into a fridge",
-      "punchline": "Gang excited he finally made an actual pun",
-      "craft_total": 6.43,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Mac has just been informed he murdered an innocent shop owner.",
+      "punchline": "He immediately deflects the horror by asking if something the antagonist said was a pun \u2014 his obsession with puns supersedes any moral reckoning.",
+      "craft_total": 7.67,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Great callback that pays off the earlier setup perfectly",
+      "explanation": "Perfect character moment: Mac's moral vacuum is illustrated not through evil but through obliviousness. His priority is STILL the pun debate, even after killing an innocent man. This is exactly how the show uses Mac's self-absorption for dark comedy.",
       "dialogue": [
         {
           "speaker": "",
@@ -272,25 +288,25 @@
     },
     {
       "index": 11,
-      "text": "What pun? The... 'Cool off' and you kicked him in a fridge. He's not getting it, is he?",
+      "text": "The gang surrounds a dying Mac: 'We're sorry for doubting your awesomeness.' Mac: 'I... don't... forgive you.'",
       "characters": [
-        "Mac",
+        "Dennis",
         "Charlie",
-        "Dennis"
+        "Dee",
+        "Mac"
       ],
       "joke_types": [
-        "callback",
         "character_comedy",
-        "cringe_discomfort"
+        "dark_subversive"
       ],
-      "setup": "Mac successfully made a pun",
-      "punchline": "He doesn't even realize he did it",
-      "craft_total": 6.97,
-      "impact_score": 6.67,
-      "quotability": 7.0,
+      "setup": "Mac is fatally wounded; the gang tearfully apologizes around his dying body.",
+      "punchline": "Mac's last act of consciousness is to withhold forgiveness from his friends \u2014 his ego survives longer than his body.",
+      "craft_total": 7.49,
+      "impact_score": 7.33,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect character comedy - Mac accidentally succeeds but doesn't know it",
+      "is_callback": 0,
+      "explanation": "Mac's dying words being a petty denial of forgiveness is a beautiful encapsulation of his character. The drama is played straight (the gang crying, the slow death) which makes the punchline land harder. High character integration score \u2014 this is entirely Mac.",
       "dialogue": [
         {
           "speaker": "Dennis",
@@ -304,22 +320,23 @@
     },
     {
       "index": 12,
-      "text": "What is a pun?",
+      "text": "Mac arrives in Heaven, and God says 'You're goddamn right it is' when asked if the golden seat is for him, then 'Oh hey, Rex.'",
       "characters": [
-        "Mac"
+        "Mac",
+        "God"
       ],
       "joke_types": [
-        "character_comedy",
-        "callback"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Extended discussion about puns",
-      "punchline": "Mac admits total ignorance despite being part of the whole conversation",
-      "craft_total": 7.23,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good button to the running gag about Mac's confusion",
+      "setup": "Mac dies and ascends to what appears to be Heaven, greeted by God himself.",
+      "punchline": "God swears casually ('You're goddamn right it is') and immediately waves to someone named Rex \u2014 Heaven is weirdly bro-ey and casual.",
+      "craft_total": 7.08,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "God saying 'goddamn' is a quick, earned bit of dark subversion. The casual 'Oh hey, Rex' immediately after is a perfect absurdist punctuation \u2014 Heaven has regulars, and Mac is one of the cool kids there. Fits Mac's narcissistic fantasy perfectly.",
       "dialogue": [
         {
           "speaker": "",
@@ -329,23 +346,23 @@
     },
     {
       "index": 13,
-      "text": "I killed the boss. That's not the boss, you idiot. He's my father!",
+      "text": "God's plan in Heaven: 'Now we ignore everyone's prayers.'",
       "characters": [
-        "Mac",
-        "Store Owner"
+        "God",
+        "Rex"
       ],
       "joke_types": [
-        "escalation",
-        "dark_subversive"
+        "dark_subversive",
+        "deadpan_understatement"
       ],
-      "setup": "Mac proud of killing the crime boss",
-      "punchline": "Reveals he killed an innocent store owner who's someone's father",
-      "craft_total": 6.98,
-      "impact_score": 7.33,
-      "quotability": 7.0,
+      "setup": "Mac is in Heaven with God, who seems to be settling in for a good time.",
+      "punchline": "God's stated agenda is to ignore all prayers \u2014 delivered completely casually, as if it's a normal Saturday plan.",
+      "craft_total": 7.55,
+      "impact_score": 7.5,
+      "quotability": 8.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark comedy escalation that's both shocking and character-appropriate",
+      "explanation": "Five words of devastating theological nihilism delivered as idle small talk. The economy is exceptional \u2014 it's a complete, fully-formed dark joke with zero wasted syllables. High quotability because it's self-contained and punchy.",
       "dialogue": [
         {
           "speaker": "Mac",
@@ -363,22 +380,23 @@
     },
     {
       "index": 14,
-      "text": "Whoops. My bad.",
+      "text": "Dennis immediately blames Dee for the robbery: 'Damn it, Dee, this is all your fault.' \u2014 before any explanation is offered.",
       "characters": [
-        "Mac"
+        "Dennis",
+        "Dee"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Mac just learned he murdered an innocent man",
-      "punchline": "Casual, dismissive response to killing someone",
-      "craft_total": 7.7,
-      "impact_score": 7.5,
-      "quotability": 8.0,
+      "setup": "The robbery begins. We cut to Dee's version of events.",
+      "punchline": "Dennis reflexively blames Dee with zero logical basis \u2014 'How is this my fault?' 'It just is, you stupid bitch.'",
+      "craft_total": 6.49,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deadpan understatement for a horrific situation - peak dark comedy",
+      "explanation": "Classic Always Sunny gang dynamic: reflexive blame and misogynistic dismissal of Dee. The humor is in how automatic and total the rejection is \u2014 'It just is, you stupid bitch' is not a reason, it's an institution. Solid character integration.",
       "dialogue": [
         {
           "speaker": "Mac",
@@ -388,23 +406,26 @@
     },
     {
       "index": 15,
-      "text": "Now, is your throat okay? Is it... is that from the smoke, or...? Is that a pun?",
+      "text": "In Dee's version of the robbery, the gang immediately votes to sacrifice her: 'Let's sacrifice her.' Then to the robber: 'Sir, sir! Please, take her, take her! Have your way with the whore!'",
       "characters": [
+        "Dennis",
+        "Charlie",
         "Mac",
-        "Store Owner"
+        "Frank"
       ],
       "joke_types": [
-        "callback",
-        "cringe_discomfort"
+        "dark_subversive",
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Store owner is choking/dying from smoke",
-      "punchline": "Mac thinks the dying man's words might be a pun",
-      "craft_total": 7.62,
-      "impact_score": 7.5,
-      "quotability": 7.0,
+      "setup": "Faced with an armed robber, one character asks 'You guys thinking what I'm thinking?'",
+      "punchline": "The unanimous, instant, enthusiastic decision to sacrifice Dee \u2014 'Have your way with the whore!' \u2014 delivered with cheerful urgency to the robber.",
+      "craft_total": 6.95,
+      "impact_score": 7.17,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Brilliant callback that shows Mac's complete tone-deafness and obsession",
+      "is_callback": 0,
+      "explanation": "The joke is not just that they sacrifice Dee, but the speed and enthusiasm of the consensus \u2014 there's not a moment of hesitation. 'Have your way with the whore' is an absurd escalation from 'sacrifice her' that earns its shock. This perfectly encapsulates the gang's treatment of Dee and their moral bankruptcy. High character integration.",
       "dialogue": [
         {
           "speaker": "Mac",
@@ -414,22 +435,26 @@
     },
     {
       "index": 16,
-      "text": "I... don't... forgive you.",
+      "text": "In Dee's fantasy, she heroically talks the robber down, disarms him, and the gang immediately pivots to full worship: 'You saved our lives! You're the hero!'",
       "characters": [
-        "Mac"
+        "Dee",
+        "Dennis",
+        "Charlie",
+        "Mac",
+        "Frank"
       ],
       "joke_types": [
-        "dark_subversive",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Gang apologizing to dying Mac",
-      "punchline": "Mac uses his dying words to be petty",
-      "craft_total": 7.7,
-      "impact_score": 7.33,
-      "quotability": 7.0,
+      "setup": "Dee's daydream casts herself as the calm, brave negotiator who saves everyone.",
+      "punchline": "The gang's instant reversal from 'sacrifice the whore' to 'you're our hero!' is played completely straight in her fantasy \u2014 wish fulfillment as comedy.",
+      "craft_total": 6.54,
+      "impact_score": 6.25,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Mac character moment - petty even while dying",
+      "is_callback": 1,
+      "explanation": "The comedy is in how transparently self-serving Dee's fantasy is \u2014 the same people who called her a whore 15 seconds ago now celebrate her as a hero. Functional but not especially clever. The structure of the fantasy sequences does the heavy lifting.",
       "dialogue": [
         {
           "speaker": "Mac",
@@ -439,23 +464,23 @@
     },
     {
       "index": 17,
-      "text": "Those were some pretty sweet moves. Thank you, my Lord and Savior.",
+      "text": "In Dee's fantasy, the female robber immediately allies with her: 'I'll see you in hell, boners.' Then to Dee: 'Us ladies need to stick together.'",
       "characters": [
-        "Mac",
-        "God"
+        "Dee",
+        "Female Robber"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Mac meeting God in heaven",
-      "punchline": "God casually complimenting Mac's fighting moves",
-      "craft_total": 7.12,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "Dee disarms the robber; in reality this would trigger confrontation.",
+      "punchline": "The robber instantly becomes Dee's bestie on the basis of gender solidarity \u2014 'I got your back. For life.' \u2014 the fantasy is so blatant it's funny.",
+      "craft_total": 6.47,
+      "impact_score": 6.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good absurdist humor with God as a casual bro validating Mac's ego",
+      "explanation": "The 'I'll see you in hell, boners' is a good line \u2014 Dee's fantasy even gives the supporting character a great exit. The female solidarity angle is a bit on-the-nose as a Dee fantasy beat, but the word 'boners' as an epithet for the gang elevates it.",
       "dialogue": [
         {
           "speaker": "God",
@@ -469,24 +494,22 @@
     },
     {
       "index": 18,
-      "text": "Oh, hey, Rex. 'Sup, bro? So what do we do now? Now we ignore everyone's prayers.",
+      "text": "Dee's witness protection cover is 'Albert Covington,' a British butler \u2014 she arrives at a family's door doing a full British accent: 'Hello love, I'm the new butler.'",
       "characters": [
-        "Mac",
-        "Rex",
-        "God"
+        "Dee"
       ],
       "joke_types": [
-        "dark_subversive",
+        "character_comedy",
         "absurdist"
       ],
-      "setup": "Mac hanging out with God and another guy in heaven",
-      "punchline": "God's job is just ignoring prayers",
-      "craft_total": 7.27,
-      "impact_score": 7.0,
-      "quotability": 7.0,
+      "setup": "A witness protection agent asks Dee if she's good at playing characters.",
+      "punchline": "Dee's immediate response is to become a full British butler \u2014 this is her 'skill.' The absurdity of this being an adequate cover identity is the joke.",
+      "craft_total": 6.55,
+      "impact_score": 6.25,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark, cynical take on divine intervention that fits the show's tone",
+      "explanation": "Dee's delusion that she is a skilled actress (a running show-wide joke) is channeled into this absurdist premise. The commitment to the British butler bit is funny precisely because it's so unnecessary as a witness protection cover.",
       "dialogue": [
         {
           "speaker": "Mac",
@@ -500,23 +523,22 @@
     },
     {
       "index": 19,
-      "text": "Damn it, Dee, this is all your fault. What? It's because of you. How is this my fault? It just is, you stupid bitch.",
+      "text": "Albert Covington (Dee) quizzes a child: 'Who slayed Achilles?' Child answers: 'Paris, Hector's brother.' Covington: 'Well done, lad. An extra treat for you.'",
       "characters": [
-        "Charlie",
         "Dee"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Gang in middle of robbery",
-      "punchline": "Charlie immediately blames Dee for no reason with circular logic",
-      "craft_total": 6.05,
+      "setup": "The British butler is settling into the household, attending to the children.",
+      "punchline": "The butler randomly quizzes the child on Greek mythology as a condition of receiving a snack \u2014 this is presented as normal butler behavior.",
+      "craft_total": 6.54,
       "impact_score": 5.5,
-      "quotability": 6.0,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing the gang's misogynistic scapegoating of Dee",
+      "explanation": "A charming absurdist detail \u2014 the mythology quiz for a snack is a funny non-sequitur that makes the butler character stranger. It's a background texture joke rather than a full comedic beat. Pleasant but not landing a huge laugh.",
       "dialogue": [
         {
           "speaker": "Charlie",
@@ -538,24 +560,23 @@
     },
     {
       "index": 20,
-      "text": "Let's sacrifice her. What? Sir, sir! Please, take her, take her! Have your way with the whore!",
+      "text": "Child asks how long Covington is staying. He delivers a meaningful pause and says: 'Something tells me I'm gonna be here a long time.' Child: 'Why is that?' Covington: 'Your sweater's on backwards.'",
       "characters": [
-        "Charlie",
-        "Dennis",
-        "Dee"
+        "Dee",
+        "Child"
       ],
       "joke_types": [
-        "escalation",
-        "dark_subversive"
+        "misdirection",
+        "deadpan_understatement"
       ],
-      "setup": "Gang deciding to sacrifice Dee",
-      "punchline": "They immediately offer her to the gunman",
-      "craft_total": 6.2,
+      "setup": "Covington delivers a dramatic, heartfelt 'I'm going to be here a long time' \u2014 building toward what seems like a sincere emotional moment.",
+      "punchline": "The profound reason turns out to be a child's backwards sweater \u2014 the most mundane possible deflation.",
+      "craft_total": 6.74,
       "impact_score": 6.33,
-      "quotability": 6.0,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Dark escalation that shows how quickly the gang turns on each other",
+      "explanation": "Excellent misdirection: the music, the meaningful pause, the heartfelt setup all build toward emotion, then pivot to the most banal possible punchline. The specificity ('your sweater's on backwards') is key \u2014 it's not a vague anti-joke, it's a precise, mundane observation. Well-constructed.",
       "dialogue": [
         {
           "speaker": "Charlie",
@@ -573,23 +594,22 @@
     },
     {
       "index": 21,
-      "text": "I'll see you in hell, boners. No witnesses. I like your style.",
+      "text": "The 'Albert Covington' sitcom theme song: a cheerful melody about the stress of single parenthood escalating to 'Makes you want to put a gun in your mouth / Or get real high'",
       "characters": [
-        "Dee",
-        "Robber"
+        "Dee"
       ],
       "joke_types": [
-        "escalation",
-        "dark_subversive"
+        "dark_subversive",
+        "absurdist"
       ],
-      "setup": "Dee kills the robber and saves the day",
-      "punchline": "Immediately plans to kill her friends as witnesses",
-      "craft_total": 7.28,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Dee's fantasy has become a full sitcom, complete with a catchy opening theme song.",
+      "punchline": "The cheerful family sitcom theme song casually includes suicidal ideation and drug use as the main character's coping mechanisms \u2014 delivered in the bouncy style of a '90s TGIF theme.",
+      "craft_total": 7.79,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great escalation showing Dee is just as awful as the others",
+      "explanation": "The form is doing as much work as the content: the contrast between the bouncy sitcom melody and lyrics about wanting to put a gun in your mouth is a genuinely sharp piece of dark comedy. It's also a show-within-a-show parody that earns its edge. High originality because the specific deployment (embedded in Dee's escalating fantasy) is inventive.",
       "dialogue": [
         {
           "speaker": "Dee",
@@ -607,23 +627,22 @@
     },
     {
       "index": 22,
-      "text": "We should team up. Us ladies need to stick together.",
+      "text": "Paper plates for nana / House is a mess / Life for a single parent / Is full of stress / Makes you want to put a gun / In your mouth",
       "characters": [
-        "Dee",
-        "Female Robber"
+        "Dee"
       ],
       "joke_types": [
-        "character_comedy",
-        "dark_subversive"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Dee talking to another female criminal",
-      "punchline": "Bonds over gender while planning murder",
-      "craft_total": 6.4,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "A whimsical sitcom-style theme song begins playing over Dee's fantasy, depicting her as a beloved butler",
+      "punchline": "The cheerful melody abruptly shifts to lyrics about wanting to 'put a gun in your mouth,' delivered in the same bouncy style",
+      "craft_total": 7.35,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good dark comedy about misapplied feminist solidarity",
+      "explanation": "Excellent dark subversive joke. The juxtaposition of a traditional warm sitcom theme song format with genuinely bleak lyrics is very well executed. The structure \u2014 building the cozy family picture and then pivoting hard to suicidal ideation in the same musical register \u2014 is what makes it land. It's also a commentary on the genre of family sitcoms themselves. One of the episode's stronger jokes.",
       "dialogue": [
         {
           "speaker": "Dee",
@@ -633,22 +652,22 @@
     },
     {
       "index": 23,
-      "text": "Hello, love, I'm the new butler. Albert Covington's the name.",
+      "text": "The narrator reveals Dee's butler act was 'spun off into the highest-rated sitcom of all time.'",
       "characters": [
         "Dee"
       ],
       "joke_types": [
-        "character_comedy",
-        "physical_slapstick"
+        "absurdist",
+        "escalation"
       ],
-      "setup": "Dee in witness protection",
-      "punchline": "Terrible British accent as a male butler character",
-      "craft_total": 6.42,
-      "impact_score": 6.17,
+      "setup": "Dee went into witness protection as a British butler.",
+      "punchline": "This somehow resulted in the most successful TV show ever made \u2014 the fantasy escalation continues to accelerate beyond any plausible limit.",
+      "craft_total": 6.91,
+      "impact_score": 6.5,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Visual gag of Dee's unconvincing male disguise with bad accent",
+      "explanation": "The narrated escalation of Dee's fantasy is a structural device rather than a single joke \u2014 this is the show commenting on how our fantasies always over-promise. Functional but the comedy is in the cumulative absurdity rather than this beat in isolation.",
       "dialogue": [
         {
           "speaker": "Dee",
@@ -658,23 +677,22 @@
     },
     {
       "index": 24,
-      "text": "Ah, ah, ah! Who slayed Achilles? Uh, Paris, Hector's brother. Well done, lad.",
+      "text": "In her fantasy, Dee describes her upcoming movie where she plays 'a very beautiful woman... a warrior princess who saves the world. It's already grossed over $900 million in presale tickets, but I don't care about that.'",
       "characters": [
-        "Dee",
-        "Child"
+        "Dee"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "irony_sarcasm"
       ],
-      "setup": "Dee as butler teaching children",
-      "punchline": "Overly dramatic quiz about violent mythology",
-      "craft_total": 6.08,
-      "impact_score": 5.17,
-      "quotability": 4.0,
+      "setup": "Dee is being interviewed as a massive star about her new film.",
+      "punchline": "The movie's premise is blatantly self-serving ('very beautiful woman,' 'warrior princess'), and her faux-humble 'I don't care about that' about $900M in presales is perfect ironic deflection.",
+      "craft_total": 6.71,
+      "impact_score": 6.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Decent character moment showing Dee's pretentious tendencies",
+      "explanation": "Dee's fantasy is meticulous in covering all her insecurities \u2014 she needs to be beautiful, talented, wealthy, AND artistically credible. The specific detail of '$900 million in presale tickets' is a good absurdist escalation on the 'successful movie' trope.",
       "dialogue": [
         {
           "speaker": "Dee",
@@ -684,22 +702,23 @@
     },
     {
       "index": 25,
-      "text": "Your sweater's on backwards.",
+      "text": "Josh Groban appears in Dee's fantasy as her fianc\u00e9, explaining his attraction: 'When I found out Mr. Covington was actually a chick, yeah, I had to have her. She's smart, she's sexy, she's hilarious. She pops.'",
       "characters": [
-        "Child"
+        "Dee",
+        "Josh Groban"
       ],
       "joke_types": [
-        "visual_gag",
-        "cringe_discomfort"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Dee's elaborate butler performance",
-      "punchline": "Child points out obvious costume failure",
-      "craft_total": 6.43,
-      "impact_score": 6.17,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Dee's fantasy now includes a celebrity fianc\u00e9 \u2014 real-world celebrity Josh Groban.",
+      "punchline": "Groban is entirely in character as a person who appreciates that Dee 'pops' \u2014 the fantasy is so specific it includes Groban's hypothetical personality tics. 'He likes his ladies to pop. That's true, Groban does like his ladies to pop.'",
+      "craft_total": 6.67,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good deflation of Dee's pretensions with simple observation",
+      "explanation": "Josh Groban's actual presence is an unexpected and funny casting choice for Dee's daydream. The 'she pops' repeated beat and Groban enthusiastically endorsing his own fictional quirk ('That's true, Groban does like his ladies to pop') is absurd and charming. The show gets mileage from using a real celebrity's recognizable persona.",
       "dialogue": [
         {
           "speaker": "",
@@ -709,22 +728,23 @@
     },
     {
       "index": 26,
-      "text": "Well, this time I play a very beautiful woman. Uh, a warrior princess who saves the world.",
+      "text": "Josh Groban sings a love song for Dee that includes 'Feet not too large / Not too small' and 'Not like a bird / But like a beautiful woman / Definitely not like a bird.'",
       "characters": [
+        "Josh Groban",
         "Dee"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "dark_subversive"
       ],
-      "setup": "Dee describing her movie role",
-      "punchline": "Emphasizes playing a 'very beautiful woman' when Dee is not conventionally attractive",
-      "craft_total": 6.82,
-      "impact_score": 6.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good character comedy playing on Dee's delusions about her attractiveness",
+      "setup": "Josh Groban is asked to sing the love song he wrote for Dee.",
+      "punchline": "The song's compliments are structured entirely as denials of Dee's actual insecurities \u2014 'not like a bird' repeated twice because that's what people call her, 'feet not too large' \u2014 Dee's fantasy boyfriend is reassuring her about her specific real-world shame points.",
+      "craft_total": 8.26,
+      "impact_score": 8.67,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is exceptional character comedy. The joke works on multiple levels: (1) It's funny on its face that a love song is built entirely on negatives. (2) It's deeply revealing about Dee's psychology \u2014 her deepest fantasy is a man who specifically denies every insult she's ever received. (3) 'Definitely not like a bird' as a romantic lyric is a perfect callback to the show's long-running 'Dee looks like a bird' gag. (4) Josh Groban actually performing this is surreal. High on all craft dimensions.",
       "dialogue": [
         {
           "speaker": "Dee",
@@ -734,22 +754,22 @@
     },
     {
       "index": 27,
-      "text": "\u266a She's got blonde hair She's perfect in every way Feet not too large Not too small \u266a",
+      "text": "The narrator notes: 'They didn't stay together a long time, their marriage only lasting a shocking 17 minutes before Reynolds met a new man whom she claimed she had to have.'",
       "characters": [
-        "Josh Groban"
+        "Dee"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "deadpan_understatement",
+        "escalation"
       ],
-      "setup": "Josh Groban singing romantic song about Dee",
-      "punchline": "Awkward, unromantic lyrics about foot size",
-      "craft_total": 7.02,
-      "impact_score": 7.17,
-      "quotability": 6.0,
+      "setup": "Josh Groban declared they'd be together a long time.",
+      "punchline": "17 minutes. Even in Dee's own fantasy, she can't maintain a stable relationship for more than 17 minutes.",
+      "craft_total": 6.95,
+      "impact_score": 6.67,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good absurd romantic song with unromantic details",
+      "is_callback": 1,
+      "explanation": "The specific number '17 minutes' is the joke \u2014 not 'briefly' or 'quickly' but a precisely embarrassing amount of time. The callback to Groban's confident declaration is well-structured. Dark comedy: even her best-case scenario of her life is a failure.",
       "dialogue": [
         {
           "speaker": "Josh Groban",
@@ -759,22 +779,22 @@
     },
     {
       "index": 28,
-      "text": "That's how babies are made.",
+      "text": "Frank's approach to the robbery: 'You're going about this all wrong, friend.' He confidently advises the robber with a 'fisherman always spots another fisherman' speech.",
       "characters": [
-        "Dee"
+        "Frank"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "irony_sarcasm"
       ],
-      "setup": "Dee and Josh Groban are being romantic",
-      "punchline": "Dee makes inappropriate clinical comment about reproduction",
-      "craft_total": 5.3,
-      "impact_score": 5.25,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "An armed robber is demanding money. Frank steps forward with authority.",
+      "punchline": "Frank doesn't try to stop the robbery \u2014 he recognizes the robber as a fellow criminal and offers criminal solidarity and life advice.",
+      "craft_total": 7.84,
+      "impact_score": 7.83,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Mild cringe humor. Dee killing romantic moment with clinical observation is in character.",
+      "explanation": "Perfect Frank characterization: he doesn't see a criminal, he sees a peer. 'A fisherman always spots another fisherman from afar' is a genuinely quotable line that reveals Frank's self-image as a street-level operator. High character integration \u2014 only Frank would bond with the robber rather than the victims.",
       "dialogue": [
         {
           "speaker": "Dee",
@@ -784,22 +804,22 @@
     },
     {
       "index": 29,
-      "text": "But they didn't stay together a long time, their marriage only lasting a shocking 17 minutes",
+      "text": "Frank attempts to say 'I dares it... I dar-dar-dar... A crammy hand... A crammy handle bit aye. Der.' \u2014 mid-speech, Frank appears to have a stroke.",
       "characters": [
-        "Narrator"
+        "Frank"
       ],
       "joke_types": [
-        "escalation",
-        "deadpan_understatement"
+        "dark_subversive",
+        "physical_slapstick"
       ],
-      "setup": "Fake documentary about Dee's marriage",
-      "punchline": "Absurdly short marriage duration stated matter-of-factly",
-      "craft_total": 6.85,
-      "impact_score": 6.67,
+      "setup": "Frank is building toward some profound piece of criminal wisdom for the robber.",
+      "punchline": "Frank has a stroke mid-sentence, rendering his criminal philosophy into incomprehensible syllables \u2014 the whole inspirational speech collapses into 'Der.'",
+      "craft_total": 7.43,
+      "impact_score": 7.5,
       "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalation delivered with documentary-style deadpan",
+      "explanation": "Dark comedy at its most committed: Frank's wisdom is literally interrupted by a medical emergency. The specific sounds \u2014 'dar-dar-dar,' 'crammy handle bit aye,' 'Der.' \u2014 are carefully crafted to be funny while also being recognizable as stroke-like speech. The deflation of his criminal sage persona by his own failing body is very Always Sunny.",
       "dialogue": [
         {
           "speaker": "Narrator",
@@ -809,22 +829,22 @@
     },
     {
       "index": 30,
-      "text": "A fisherman always spots another fisherman from afar.",
+      "text": "Frank attempts to say 'I dare say' and devolves into incoherent sounds: 'I dares it... I dar-dar-dar... A crammy hand... A crammy handle bit aye. Der.'",
       "characters": [
         "Frank"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Frank talking to a robber",
-      "punchline": "Inexplicable fishing metaphor for criminal recognition",
-      "craft_total": 7.03,
-      "impact_score": 6.5,
+      "setup": "Frank has gotten cozy with the robber and is about to say something folksy",
+      "punchline": "He completely loses the word mid-sentence and spirals into gibberish while trying to recover \u2014 apparently having some kind of episode",
+      "craft_total": 6.69,
+      "impact_score": 7.0,
       "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic Frank non-sequitur wisdom that makes no sense but sounds profound",
+      "explanation": "Danny DeVito's physical/verbal performance is implied here and the written gibberish is funny on the page. Frank's brain simply failing mid-sentence \u2014 particularly mid-crisis \u2014 is perfect character comedy. The specific sounds ('crammy handle bit aye') read as genuine, committed improv-style word salad. Only Frank would have a stroke during an armed robbery and treat it as a conversational hiccup.",
       "dialogue": [
         {
           "speaker": "Frank",
@@ -834,22 +854,22 @@
     },
     {
       "index": 31,
-      "text": "I dares it... I dar-dar-dar... A crammy hand... A crammy handle bit.",
+      "text": "'I love you.' \u2014 Frank apparently declares love for the robber before losing consciousness entirely.",
       "characters": [
         "Frank"
       ],
       "joke_types": [
-        "physical_slapstick",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Frank having a stroke or heart attack",
-      "punchline": "Nonsensical speech that sounds like gibberish",
-      "craft_total": 5.92,
-      "impact_score": 5.67,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Frank is mid-stroke, speech deteriorating rapidly.",
+      "punchline": "His last coherent utterance before passing out is 'I love you' \u2014 directed at the armed robber.",
+      "craft_total": 7.48,
+      "impact_score": 7.25,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Physical comedy moment but not particularly clever",
+      "explanation": "Perfect button on the stroke sequence. Three words \u2014 maximum economy. The joke is in the total non-sequitur of declaring love for an armed robber while having a stroke. Frank's id expressing itself even as his brain fails is a funny and character-appropriate detail.",
       "dialogue": [
         {
           "speaker": "Frank",
@@ -859,22 +879,22 @@
     },
     {
       "index": 32,
-      "text": "I... am... God.",
+      "text": "Frank: 'I... am... God.'",
       "characters": [
         "Frank"
       ],
       "joke_types": [
-        "escalation",
+        "character_comedy",
         "absurdist"
       ],
-      "setup": "Frank having medical episode",
-      "punchline": "Dramatic declaration of divinity",
-      "craft_total": 7.05,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Frank has had his verbal/cognitive episode and said 'I love you' to the robber",
+      "punchline": "He then declares himself God \u2014 apparently this is part of his altered state, or possibly just his genuine worldview",
+      "craft_total": 6.88,
+      "impact_score": 6.75,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation from medical emergency to divine delusion",
+      "explanation": "Funny but slightly less surprising than 'I love you.' The God declaration is a bit of a familiar beat for unhinged characters. Still lands because of Frank's specific commitment and the absurdist context.",
       "dialogue": [
         {
           "speaker": "Frank",
@@ -884,23 +904,23 @@
     },
     {
       "index": 33,
-      "text": "Does-does my dick work? No. Your penis does not work. Kill me.",
+      "text": "Frank wakes up in the hospital. 'I think he's awake. His eyes keep opening.' 'Can he hear us?' 'No way. His eggs are scrambled.'",
       "characters": [
         "Dennis",
-        "Doctor"
+        "Charlie"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "dark_subversive"
       ],
-      "setup": "Dennis waking up from head injury",
-      "punchline": "First question is about penis, immediate death wish when it doesn't work",
-      "craft_total": 7.38,
-      "impact_score": 7.33,
-      "quotability": 7.0,
+      "setup": "Frank has regained consciousness in a hospital bed after his stroke.",
+      "punchline": "His friends \u2014 standing directly over him \u2014 casually discuss whether he can hear them and conclude 'no way, his eggs are scrambled,' unaware or uncaring that he's fully present.",
+      "craft_total": 6.61,
+      "impact_score": 6.5,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Dennis character moment - sexual function is his only concern",
+      "explanation": "'His eggs are scrambled' is a great colloquial expression for brain damage that also sounds dismissive and casual \u2014 which is funny given the situation. The gang's complete indifference to Frank's condition is on-brand. 'Eggs are scrambled' is quotable.",
       "dialogue": [
         {
           "speaker": "Dennis",
@@ -918,22 +938,23 @@
     },
     {
       "index": 34,
-      "text": "Ah, it appears they've left.",
+      "text": "Frank wakes up and his first question is 'Does my dick work?' \u2014 the doctor says no.",
       "characters": [
+        "Frank",
         "Doctor"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "dark_subversive"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Doctor mentions Frank's friends will support his recovery",
-      "punchline": "Casually notes they've already abandoned him",
-      "craft_total": 6.53,
-      "impact_score": 6.25,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Frank has just been told he was shot in the head during a robbery and the bullet barely missed his brain stem.",
+      "punchline": "His first priority, before any other health concern, is penile function. The doctor's flat 'No.' and Frank's immediate 'Kill me.' is a perfect three-beat exchange.",
+      "craft_total": 8.2,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good dark humor. The casual delivery of bad news - that his friends abandoned him - is nicely understated.",
+      "explanation": "Economy is near-perfect: three exchanges, maybe 10 words total, complete comedic arc. Frank's character is established in one question \u2014 his entire worldview distilled. The doctor's flat 'No.' (no hedging, no sympathy) and Frank's immediate 'Kill me.' create a devastating rhythm. The joke earns its score through structure and character integration \u2014 only Frank asks this first, and only the show would have the doctor confirm it without hesitation.",
       "dialogue": [
         {
           "speaker": "Doctor",
@@ -943,22 +964,23 @@
     },
     {
       "index": 35,
-      "text": "Hello, Dennis.",
+      "text": "Doctor tries to maintain hope: 'It's important you maintain a positive attitude... with the support of your friends...' \u2014 'Ah, it appears they've left.'",
       "characters": [
-        "Jackie"
+        "Doctor",
+        "Frank"
       ],
       "joke_types": [
-        "setup_punchline",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Introduction of Dennis's rehabilitation nurse",
-      "punchline": "It's a weather girl he probably exploited, now in position of power over him",
-      "craft_total": 7.15,
-      "impact_score": 6.5,
-      "quotability": 4.0,
+      "setup": "The doctor is building an inspirational speech about recovery with the support of loved ones.",
+      "punchline": "He looks up and realizes the gang has already abandoned Frank in the hospital \u2014 mid-sentence.",
+      "craft_total": 7.09,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good setup for comeuppance story - Dennis's past catching up to him",
+      "explanation": "'Ah, it appears they've left' is a great deadpan line \u2014 the doctor's clinical neutrality applied to what should be a devastating human revelation. The gang's immediate abandonment of Frank is fully in character and the doctor's calm acceptance of it is funny.",
       "dialogue": [
         {
           "speaker": "Jackie",
@@ -968,22 +990,23 @@
     },
     {
       "index": 36,
-      "text": "The forecast calls for sunshine.",
+      "text": "Frank's nurse is revealed to be a beautiful woman from the Channel Five News weather team, who left weather reporting 'to do something more meaningful with my life.'",
       "characters": [
+        "Frank",
         "Jackie"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Weather girl turned nurse helping Dennis walk",
-      "punchline": "Uses weather metaphor for optimistic outlook",
-      "craft_total": 6.27,
-      "impact_score": 5.33,
-      "quotability": 5.0,
+      "setup": "The doctor promises a top-notch rehabilitation nurse is coming to help Frank.",
+      "punchline": "The nurse walks in to romantic music \u2014 she's a knockout who was formerly a news anchor and chose nursing for deeper meaning. Frank's fantasy begins.",
+      "craft_total": 6.2,
+      "impact_score": 5.67,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Decent pun that connects her weather background to current situation",
+      "explanation": "Setup for Frank's fantasy rather than a payoff joke. The nurse's backstory (news anchor turned nurse for 'meaning') is an absurd detail but it's not the punchline. This scene functions as premise establishment.",
       "dialogue": [
         {
           "speaker": "",
@@ -993,22 +1016,22 @@
     },
     {
       "index": 37,
-      "text": "I am in love with you!",
+      "text": "'The forecast calls for sunshine.' \u2014 Frank's nurse says this while encouraging him to get out of bed, as a callback to her weather career.",
       "characters": [
-        "Dennis"
+        "Jackie"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "wordplay_pun",
+        "character_comedy"
       ],
-      "setup": "Dennis's recovery montage with Jackie",
-      "punchline": "Dennis declares love just as he regains ability to walk (and leave)",
-      "craft_total": 7.15,
-      "impact_score": 6.67,
-      "quotability": 4.0,
+      "setup": "Jackie (the former weather anchor) is motivating Frank during his rehabilitation.",
+      "punchline": "She uses her weather forecast vocabulary as motivational language \u2014 'The forecast calls for sunshine.' \u2014 a corny but earnest weather-pun.",
+      "craft_total": 6.31,
+      "impact_score": 5.75,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Dennis only values Jackie when he needs her",
+      "explanation": "It's a mild, well-telegraphed pun \u2014 the audience can see it coming from the moment her weather background is established. Functional but not surprising. The delivery probably saves it. Gets ironic bonus points given the episode's running pun debate.",
       "dialogue": [
         {
           "speaker": "Dennis",
@@ -1018,23 +1041,23 @@
     },
     {
       "index": 38,
-      "text": "Her breasts? What about her breasts? I'm afraid that they were, um... obliterated.",
+      "text": "Frank's nurse declares her love for him at the peak of his rehabilitation triumph \u2014 his response (and the whole sequence) culminates in 'I am in love with you!'",
       "characters": [
-        "Dennis",
-        "Doctor"
+        "Jackie",
+        "Frank"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Doctor listing Jackie's injuries from accident",
-      "punchline": "Dennis only cares about her breasts, which were destroyed",
-      "craft_total": 6.68,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "Frank's physical rehabilitation has been a triumphant, romantic-movie-style montage with stirring music.",
+      "punchline": "The nurse's love confession at the peak of this montage reveals the full scope of Frank's self-serving fantasy: he imagined himself as a romantic leading man in a rehabilitation love story.",
+      "craft_total": 6.69,
+      "impact_score": 6.5,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Dennis characterization - shallow and horrible priorities",
+      "explanation": "The joke is structural \u2014 it's the reveal that the whole montage was Frank's fantasy. As a payoff for the extended rehabilitation sequence, it works, but doesn't have a strong standalone punchline. The comedy is cumulative.",
       "dialogue": [
         {
           "speaker": "Dennis",
@@ -1048,23 +1071,23 @@
     },
     {
       "index": 39,
-      "text": "Oh, get him off me! Goddamn it, stop! Whoa, easy, puppy.",
+      "text": "Doctor's report on Charlie's girlfriend's injuries: 'She broke her arm, few ribs, punctured a lung, shattered her pelvis, compound fractures in both legs.' Charlie: 'Her breasts?'",
       "characters": [
-        "Frank",
-        "Charlie"
+        "Charlie",
+        "Doctor"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Police K-9 attacking the gunman",
-      "punchline": "Charlie treating attack dog like a friendly pet",
-      "craft_total": 6.42,
-      "impact_score": 6.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "The doctor is listing the extensive, serious injuries suffered by someone Charlie cares about.",
+      "punchline": "After a comprehensive list of life-threatening injuries, Charlie's only follow-up question is about her breasts.",
+      "craft_total": 7.69,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character moment showing Charlie's childlike nature even during violence",
+      "explanation": "Excellent economy and structure: the list of serious injuries creates a rhythm, and Charlie breaks it with one word. The doctor's confused 'Excuse me?' followed by Charlie's 'What about her breasts?' shows Charlie genuinely doesn't understand the problem with his question. Fully character-specific \u2014 Charlie's oblivious horniness is perfectly deployed here.",
       "dialogue": [
         {
           "speaker": "Frank",
@@ -1078,22 +1101,23 @@
     },
     {
       "index": 40,
-      "text": "All right, it looks like the hostages are dead. Let him have it.",
+      "text": "Doctor: 'I'm afraid that [her breasts] were, um... obliterated.' Then: 'Believe me, we did everything in our power to try to save them, but...'",
       "characters": [
-        "Police"
+        "Doctor",
+        "Charlie"
       ],
       "joke_types": [
         "dark_subversive",
-        "absurdist"
+        "deadpan_understatement"
       ],
-      "setup": "Police response to hostage situation",
-      "punchline": "Immediately assume hostages are dead and open fire",
-      "craft_total": 6.17,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark comedy about police incompetence and casual attitude toward civilian casualties",
+      "setup": "Charlie asked about the condition of his girlfriend's breasts after a list of near-fatal injuries.",
+      "punchline": "The doctor treats this absurd question with complete medical gravity \u2014 the breasts were 'obliterated,' and the hospital did 'everything in our power to try to save them,' framing cosmetic destruction in the same language as a failed life-saving effort.",
+      "craft_total": 7.46,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The doctor's complete sincerity is what elevates this. 'Obliterated' is an excellent word choice \u2014 clinical yet devastating. 'We did everything in our power to try to save them' applied to breasts rather than a life is a perfect deadpan escalation. The form (medical professional briefing) doing dark comedy work.",
       "dialogue": [
         {
           "speaker": "",
@@ -1103,23 +1127,22 @@
     },
     {
       "index": 41,
-      "text": "Charlie, that was so brave. Anything for you, my love.",
+      "text": "Charlie's response to learning his love interest is grievously injured: he abandons her at the hospital, walking out to 'Walking on Sunshine' as the music swells.",
       "characters": [
-        "Waitress",
         "Charlie"
       ],
       "joke_types": [
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Charlie saves Waitress from gunman",
-      "punchline": "Finally gets romantic validation from his obsession",
-      "craft_total": 6.03,
-      "impact_score": 5.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "The doctor leaves Charlie alone with his injured love to process and presumably comfort her.",
+      "punchline": "Charlie immediately leaves, with triumphant upbeat music \u2014 he's apparently liberated from the relationship by her injuries.",
+      "craft_total": 7.1,
+      "impact_score": 7.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Fulfills Charlie's greatest fantasy in his daydream sequence",
+      "explanation": "Dark comedy executed through music and visual contrast \u2014 the triumphant 'Walking on Sunshine' playing as Charlie abandons a critically injured woman is a great tonal subversion. The audience expects Charlie (who fantasized about saving her) to have a tender moment; instead the fantasy collapses into selfishness, which is the show's thesis about all its characters.",
       "dialogue": [
         {
           "speaker": "Waitress",
@@ -1133,24 +1156,22 @@
     },
     {
       "index": 42,
-      "text": "What are we gonna do, you guys? Are you thinking what I'm thinking? Yeah.",
+      "text": "Move faster, or I'll shoot you in the face. / In the bag. In the bag. / I'm gonna shoot you if you don't move faster.",
       "characters": [
-        "Mac",
-        "Charlie",
-        "Dennis"
+        "Frank"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Gang in crisis asking for solutions",
-      "punchline": "Cut to them trying to rob the register themselves",
-      "craft_total": 7.32,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "Frank has joined the robbery",
+      "punchline": "Frank is now more threatening and aggressive than the actual robber, barking instructions and threatening to shoot people",
+      "craft_total": 7.38,
+      "impact_score": 7.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect punchline showing the gang's moral bankruptcy - they decide to rob the place themselves",
+      "explanation": "Good extension of Frank's robbery participation \u2014 he's not just helping, he's taking over. The escalation of Frank being MORE criminal than the criminal is funny.",
       "dialogue": [
         {
           "speaker": "Charlie",
@@ -1168,28 +1189,154 @@
     },
     {
       "index": 43,
-      "text": "The big bills, underneath. Give me the big bills.",
+      "text": "Police surround the store. Frank shouts 'You're gonna have to kill me!' \u2014 police send in a K-9 dog. Frank screams 'Oh, get him off me! Goddamn it, stop! Whoa, easy, puppy.'",
       "characters": [
-        "Robber"
+        "Frank"
       ],
       "joke_types": [
-        "escalation",
-        "misdirection"
+        "physical_slapstick",
+        "character_comedy"
       ],
-      "setup": "Gang wonders what they should do about robbery",
-      "punchline": "Cut to reality - they're just complying with robber's demands",
-      "craft_total": 7.35,
-      "impact_score": 7.25,
-      "quotability": 4.0,
-      "rewatch_bonus": 1,
+      "setup": "Frank has been cornered by police during his improvised robbery. He refuses to surrender.",
+      "punchline": "Frank's tough-guy defiance ('You're gonna have to kill me!') immediately collapses when a dog is involved \u2014 'Whoa, easy, puppy' as he's being mauled.",
+      "craft_total": 6.86,
+      "impact_score": 6.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent reality check. After all the fantasy sequences, the actual resolution is they just give the robber money like normal people. Good structural payoff.",
+      "explanation": "Classic deflation of bravado \u2014 Frank talks tough until reality arrives in the form of a police dog. 'Whoa, easy, puppy' mid-mauling is a funny line because of the disconnect between his situation and his language. Standard but well-executed.",
       "dialogue": [
         {
           "speaker": "Robber",
           "line": "The big bills, underneath. Give me the big bills."
         }
       ]
+    },
+    {
+      "index": 44,
+      "text": "'All right, it looks like the hostages are dead. Let him have it.'",
+      "characters": [
+        "Police Officer"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "deadpan_understatement"
+      ],
+      "setup": "Police have surrounded the store; the standoff is ongoing. The officer is trying to decide next steps.",
+      "punchline": "The officer casually concludes the hostages are dead and orders them to open fire \u2014 no hesitation, no verification, just an administrative decision to start shooting.",
+      "craft_total": 6.43,
+      "impact_score": 6.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dark institutional comedy: police procedure rendered as a quick cost-benefit calculation with zero actual concern for the hostages. 'It looks like' doing a lot of work \u2014 it's a guess, delivered with total confidence. The deadpan brevity is key."
+    },
+    {
+      "index": 45,
+      "text": "Charlie's fantasy: he takes a bullet for the Waitress during the robbery. 'Waitress, no!' \u2014 he dives in front of her. 'You dick.' she says to the robber.",
+      "characters": [
+        "Charlie",
+        "Waitress"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "In Charlie's fantasy, the robbery puts the Waitress in danger \u2014 his obsessive love object.",
+      "punchline": "Charlie's heroic sacrifice is immediately followed by the Waitress's completely casual 'You dick' to the robber \u2014 not thanking Charlie, not reacting to his sacrifice, just mildly annoyed at the criminal.",
+      "craft_total": 7.52,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Even in Charlie's own fantasy, the Waitress barely registers his heroism \u2014 she's more annoyed at the robber than grateful to Charlie. This is sad and funny simultaneously, revealing that Charlie's deepest self-image still doesn't include the Waitress actually loving him, just... acknowledging him vaguely. Good character specificity."
+    },
+    {
+      "index": 46,
+      "text": "In Charlie's fantasy: 'Oh, my God, Charlie, that was so brave.' 'Anything for you, my love.'",
+      "characters": [
+        "Waitress",
+        "Charlie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Charlie lies shot on the ground having taken a bullet for the Waitress.",
+      "punchline": "The Waitress finally acknowledges Charlie with full romantic reciprocation \u2014 but only in his fantasy, and even here it's notably brief and generic.",
+      "craft_total": 6.78,
+      "impact_score": 6.33,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sweet and sad rather than hilarious. The comedy is contextual \u2014 anyone familiar with the show knows the Waitress finds Charlie repulsive, so this is wish fulfillment. But the joke itself is fairly slight \u2014 the fantasy is played fairly straight, which diffuses the impact compared to the other fantasy sequences."
+    },
+    {
+      "index": 47,
+      "text": "Charlie's actual real-world response to the robbery: staring blankly, apparently doing nothing. Dennis: 'Will you focus? We're in a serious situation here.'",
+      "characters": [
+        "Charlie",
+        "Dennis"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "In reality, the gang is in the middle of a robbery. Charlie appears to be somewhere else mentally.",
+      "punchline": "Charlie, whose fantasy featured heroic self-sacrifice for the Waitress, is in reality just... checked out. Staring. Doing nothing.",
+      "craft_total": 6.58,
+      "impact_score": 6.25,
+      "quotability": 4.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The gap between Charlie's elaborate heroic fantasy and his actual behavior (zoned out) is the real-world payoff. Classic Always Sunny structure: the fantasy tells you what the character wishes they were; the reality tells you what they are. Charlie's reality is simply absence."
+    },
+    {
+      "index": 48,
+      "text": "The gang's actual real-world response: someone says 'You guys thinking what I'm thinking?' and they all agree \u2014 then we see them robbing the store themselves alongside the original robber.",
+      "characters": [
+        "Mac",
+        "Dennis",
+        "Charlie",
+        "Dee",
+        "Frank"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation",
+        "callback"
+      ],
+      "setup": "In every fantasy sequence, 'are you thinking what I'm thinking?' led to the character imagining themselves as a hero.",
+      "punchline": "In reality, the gang's unified decision is to rob the store themselves \u2014 they all simultaneously become criminals, stealing the 'big bills, underneath.'",
+      "craft_total": 8.22,
+      "impact_score": 8.75,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The best structural joke in the episode and one of the best Always Sunny endings in the series. The entire episode has been about who the characters THINK they are (heroes, saviors, stars, wise men) versus who they actually are. The final reveal \u2014 that every single one of them thought 'rob the store' \u2014 is a perfect, devastating, funny, and thematically resonant conclusion. The callback to the repeated fantasy setup ('are you thinking what I'm thinking?') is used to deliver the exact opposite payload. 'Give me the big bills, underneath' as the final line is a perfect button \u2014 not a dramatic speech, just petty criminal logistics. Exceptional episode-level craft."
+    },
+    {
+      "index": 49,
+      "text": "Return to reality: The gang does nothing during the robbery \u2014 they just stand around while Charlie tries to get the big bills from the register",
+      "characters": [
+        "Charlie",
+        "Mac",
+        "Dennis",
+        "Dee",
+        "Frank"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "The entire episode has shown each character's elaborate fantasy of how they'd heroically handle the robbery",
+      "punchline": "In reality, they're all completely passive \u2014 their only actual action is Charlie opportunistically grabbing cash from the register",
+      "craft_total": 7.62,
+      "impact_score": 8.25,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The episode's structural payoff: every heroic/romantic fantasy is punctured by the reveal that they all did absolutely nothing except try to steal money. The specificity that Charlie's real priority is getting 'the big bills, underneath' perfectly mirrors his fantasy self-sacrifice \u2014 the real Charlie thinks about money, not love. Strong structural comedy that works as an episode-length callback."
     }
   ],
   "air_date": "2013-10-09",

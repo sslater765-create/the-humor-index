@@ -12,7 +12,6 @@
  */
 export const AWAITING_RESCORE: ReadonlySet<string> = new Set([
   'curb-your-enthusiasm',
-  'its-always-sunny',
   'the-simpsons',
   'community',
   'futurama',

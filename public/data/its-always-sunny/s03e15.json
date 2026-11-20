@@ -4,76 +4,118 @@
   "season": 3,
   "episode_number": 15,
   "title": "The Gang Dances Their Asses Off",
-  "humor_index": 68.4,
-  "jpm": 2.03,
-  "avg_craft": 6.64,
-  "avg_impact": 6.19,
-  "total_jokes": 55,
-  "war": 22.8,
-  "dominant_joke_types": "[\"character_comedy\", \"absurdist\", \"irony_sarcasm\"]",
-  "standout_joke_ids": "[48, 20, 6]",
+  "humor_index": 81.9,
+  "jpm": 3.06,
+  "avg_craft": 6.91,
+  "avg_impact": 6.95,
+  "total_jokes": 83,
+  "war": 77.2,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"dark_subversive\"]",
+  "standout_joke_ids": "[25, 67, 83]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
       "text": "Dude, I'm not gonna read this bullshit. Just get me a Coors.",
       "characters": [
-        "Unknown character"
+        "Charlie"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Character is handed what appears to be an employee evaluation",
-      "punchline": "Immediately dismisses it and asks for beer instead",
-      "craft_total": 5.82,
-      "impact_score": 5.17,
-      "quotability": 4.0,
+      "setup": "Frank has handed out employee evaluation forms, apparently a formal business document",
+      "punchline": "Charlie immediately dismisses it and orders a beer, treating the bar like a customer would",
+      "craft_total": 6.32,
+      "impact_score": 6.0,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Establishes the character's dismissive attitude and sets up the workplace dysfunction theme"
+      "explanation": "Efficient cold open joke. Charlie's illiteracy/indifference is established immediately. The pivot to ordering a Coors is the right beat \u2014 he's not just refusing work, he's treating his own job site like a bar he wandered into. Good character integration."
     },
     {
       "index": 2,
+      "text": "\"What do I think my greatest strength as a server is?\" What the hell is this, Frank? / Employee evaluation.",
+      "characters": [
+        "Dee",
+        "Frank"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Dee reads the evaluation question aloud with incredulity, as if it's absurd",
+      "punchline": "Frank's flat one-word answer reveals this is a completely standard HR document \u2014 the joke is that the gang finds basic workplace professionalism incomprehensible",
+      "craft_total": 6.28,
+      "impact_score": 5.83,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Setup joke for the cold open premise. Works because the gang's horror at basic employment paperwork is a perfect encapsulation of their dysfunction. Functional but not exceptional."
+    },
+    {
+      "index": 3,
       "text": "I do not want to start acting like a business because that sounds boring as shit.",
       "characters": [
-        "Unknown character"
+        "Dennis"
       ],
       "joke_types": [
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Frank wants to make the bar more business-like",
-      "punchline": "Character rejects professionalism because it's boring",
-      "craft_total": 6.24,
-      "impact_score": 5.67,
+      "setup": "Frank says the bar is a business and they should act like one",
+      "punchline": "Dennis, one of the bar's owners, objects to basic business practices on the grounds of personal boredom",
+      "craft_total": 6.06,
+      "impact_score": 5.5,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows the anti-business attitude that defines these characters"
-    },
-    {
-      "index": 3,
-      "text": "Too volatile. Bullshit! That is bullshit!",
-      "characters": [
-        "Frank",
-        "Unknown character"
-      ],
-      "joke_types": [
-        "irony_sarcasm",
-        "character_comedy"
-      ],
-      "setup": "Frank explains someone is ranked third for being too volatile",
-      "punchline": "Character immediately proves the point by having a volatile outburst",
-      "craft_total": 7.46,
-      "impact_score": 7.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect irony - character demonstrates exactly the behavior they're being criticized for"
+      "explanation": "Classic Sunny premise joke \u2014 the gang being catastrophically bad at running their own bar. Dennis's self-defeating logic (not wanting to run his own business well because it's boring) is well-executed character comedy."
     },
     {
       "index": 4,
-      "text": "Too much lip and very sassy. Sassy? That doesn't make sense. Like right now. You just don't know when to shut up.",
+      "text": "I put us all on a ranking system so you kids would care about your jobs.",
+      "characters": [
+        "Frank"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Frank wants to run the bar like a business",
+      "punchline": "His solution is a comically arbitrary ranking system \u2014 not better wages, training, or management, but a ranking system to appeal to their vanity",
+      "craft_total": 6.28,
+      "impact_score": 5.67,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good premise setup. Frank's managerial instinct is to gamify the workplace with a ranking system, which perfectly mirrors how the gang responds to everything \u2014 not through competence, but through one-upmanship."
+    },
+    {
+      "index": 5,
+      "text": "The ranking reveal sequence: Mac is second, Dennis is third, Dee is fifth (last). Reasons given: Mac is 'too volatile' \u2014 'Bullshit!' / Dee is 'too much lip and very sassy'",
+      "characters": [
+        "Frank",
+        "Mac",
+        "Dennis",
+        "Dee"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Frank reveals the ranking system; everyone anxiously asks their rank",
+      "punchline": "The escalating reactions to their rankings, culminating in Dee being last for being 'too sassy' \u2014 which she immediately proves by arguing about it",
+      "craft_total": 7.54,
+      "impact_score": 7.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's tighter structural jokes. The escalation works beautifully: each character's reaction perfectly matches their personality. The genius is Dee's response to being called 'sassy' \u2014 she immediately demonstrates exactly why she's ranked last. Mac calling his rank 'bullshit' (proving 'too volatile') is the same self-fulfilling structure. Great character integration."
+    },
+    {
+      "index": 6,
+      "text": "Like right now. You just don't know when to shut up.",
       "characters": [
         "Frank",
         "Dee"
@@ -82,75 +124,60 @@
         "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Frank explains Dee is last because she's sassy and has too much lip",
-      "punchline": "Dee immediately demonstrates this by being sassy and not knowing when to quit",
-      "craft_total": 6.99,
-      "impact_score": 6.5,
+      "setup": "Dee argues that 'sassy' doesn't make sense as a ranking criterion",
+      "punchline": "Frank points out she is currently proving his point in real time",
+      "craft_total": 7.32,
+      "impact_score": 7.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Sharp callback that lands as a mini-punchline within the same scene. The structure is clean \u2014 argument about the charge becomes evidence for the charge. Economy is excellent; the joke does exactly what it needs to in one line."
+    },
+    {
+      "index": 7,
+      "text": "\"Prize: Paddy's Pub\" / Charlie put the bar up as a prize for the dance competition",
+      "characters": [
+        "Charlie",
+        "Mac",
+        "Dennis",
+        "Dee",
+        "Frank"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Mac reads aloud the entry form for the dance competition Charlie signed up for",
+      "punchline": "The 'Prize' field lists 'Paddy's Pub' \u2014 Charlie accidentally wagered the entire bar",
+      "craft_total": 7.87,
+      "impact_score": 8.33,
       "quotability": 6.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Another perfect example of self-fulfilling criticism - shows great character writing"
+      "explanation": "The inciting incident of the entire episode, and it's a great one. Charlie's catastrophic misreading of 'Prize' as 'Pride' is a perfect expression of his illiteracy \u2014 the mistake has real stakes and drives the whole plot. The reveal is well-staged with Mac reading it aloud, building to the disaster. Strong character integration: only Charlie could cause this specific problem."
     },
     {
-      "index": 5,
-      "text": "Oh, yeah, yeah. That would be a good idea, except it's not a dance contest. It's a dance marathon.",
-      "characters": [
-        "Dennis"
-      ],
-      "joke_types": [
-        "deadpan_understatement",
-        "misdirection"
-      ],
-      "setup": "Mac's excitement about the dance competition",
-      "punchline": "Dennis's deadpan correction revealing it's an endurance test, not skill",
-      "craft_total": 5.9,
-      "impact_score": 5.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dennis's dry delivery of bad news in response to Mac's enthusiasm"
-    },
-    {
-      "index": 6,
-      "text": "I put the bar under the 'Pride' section... things that you're proud of. It's a 'Z,' Charlie! Prize!",
+      "index": 8,
+      "text": "No, no. I put the bar under the 'Pride' section... things that you're proud of. / It's a 'Z,' Charlie! Prize! / Didn't you read that goddamn thing? / I gave it a onceover!",
       "characters": [
         "Charlie",
         "Dennis"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "escalation"
       ],
-      "setup": "Charlie signed up the bar for a dance competition",
-      "punchline": "He misread 'Prize' as 'Pride' and put the bar as something they're proud of",
-      "craft_total": 7.58,
-      "impact_score": 7.5,
+      "setup": "Charlie tries to defend himself \u2014 he thought 'Prize' said 'Pride'",
+      "punchline": "'I gave it a onceover!' \u2014 Charlie's confident defense of his own illiteracy",
+      "craft_total": 7.25,
+      "impact_score": 7.17,
       "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect character moment showing Charlie's illiteracy in a believable way that creates real consequences"
+      "explanation": "'I gave it a onceover!' is a legitimately great character line. Charlie's total confidence in his own broken process \u2014 'I onceover'd it, what more do you want?' \u2014 is pitch-perfect. His illiteracy creating catastrophic consequences while he remains unapologetic is core Charlie DNA."
     },
     {
-      "index": 7,
-      "text": "Your illiteracy has screwed us again, Charlie! Your illiteracy is screwing us!",
-      "characters": [
-        "Dennis"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Charlie's mistake with the form",
-      "punchline": "Dennis's frustrated repetition emphasizing the ongoing pattern",
-      "craft_total": 6.24,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good callback to Charlie's established illiteracy and Dennis's frustration"
-    },
-    {
-      "index": 8,
+      "index": 9,
       "text": "Does this make Charlie number five and I'm number four? Because in light of this new information...",
       "characters": [
         "Dee"
@@ -159,517 +186,611 @@
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Charlie just made a massive mistake",
-      "punchline": "Dee immediately tries to use this to improve her own ranking",
-      "craft_total": 7.29,
-      "impact_score": 6.67,
+      "setup": "The gang is in crisis because Charlie just wagered their entire bar",
+      "punchline": "Dee's immediate reaction is to try to use the disaster to improve her ranking",
+      "craft_total": 6.92,
+      "impact_score": 7.0,
       "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Dee moment - always looking for personal advantage even in crisis"
+      "is_callback": 1,
+      "explanation": "Perfect Dee moment. In the middle of an existential crisis for the bar, she pivots to petty self-interest. It's a great callback to the ranking system and characterizes Dee's particular brand of insecurity. The timing is sharp."
     },
     {
-      "index": 9,
-      "text": "We're gonna dance our asses off!",
+      "index": 10,
+      "text": "What are we gonna do now? / We're gonna dance our asses off!",
       "characters": [
+        "Mac"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "The gang faces losing their bar; someone asks what they're going to do",
+      "punchline": "Mac's energetic, completely over-the-top commitment: 'We're gonna dance our asses off!'",
+      "craft_total": 6.22,
+      "impact_score": 6.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good title-drop / act-break line. The confidence and simplicity of Mac's declaration is funny \u2014 it's the episode's premise articulated with absurd conviction. Works as a punctuation mark on the cold open."
+    },
+    {
+      "index": 11,
+      "text": "What the hell is that? / Eighth grade dance competition. I won to this song.",
+      "characters": [
+        "Charlie",
         "Dennis"
       ],
       "joke_types": [
         "character_comedy",
         "setup_punchline"
       ],
-      "setup": "Seemingly impossible situation to resolve",
-      "punchline": "Dennis's overconfident proclamation using the episode title",
-      "craft_total": 6.69,
-      "impact_score": 6.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Charlie is doing some kind of very specific, clearly rehearsed dance move",
+      "punchline": "He explains it's choreography from his 8th grade dance competition \u2014 implying he has been holding onto this for 20+ years",
+      "craft_total": 7.08,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Title drop with Dennis's typical overconfidence - solid but not exceptional"
+      "explanation": "Seeds the episode's best running joke \u2014 Charlie's inexplicably preserved 8th grade dance routine. The gap between Charlie's earnestness about the routine and its complete irrelevance to an endurance competition is a great Sunny premise. Good setup for the payoff later."
     },
     {
-      "index": 10,
-      "text": "Eighth grade dance competition. I won to this song.",
+      "index": 12,
+      "text": "It's an endurance competition, Charlie. We're not gonna win the bar back with some dance you did in 1989.",
       "characters": [
+        "Dennis"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Charlie is using his 8th grade dance competition choreography",
+      "punchline": "Dennis has to explain the fundamental difference between a dance-off and an endurance marathon to Charlie",
+      "craft_total": 5.75,
+      "impact_score": 5.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good beat that contextualizes Charlie's misunderstanding. The '1989' specificity is a nice touch that grounds the absurdity. Mostly setup work."
+    },
+    {
+      "index": 13,
+      "text": "Whoo! What's up, assholes?",
+      "characters": [
+        "The Waitress"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "The gang is discussing strategy when someone enters",
+      "punchline": "The Waitress arrives with competitive hostility \u2014 she's here specifically to win the bar from people who apparently wronged her",
+      "craft_total": 6.41,
+      "impact_score": 6.33,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good entrance. The Waitress walking in to try to win the bar is a natural escalation. 'What's up, assholes?' as a greeting to the people who run the bar she works at is nicely economical characterization."
+    },
+    {
+      "index": 14,
+      "text": "All you've ever done is screw me over. / Stop. All you've ever done is screw me over. Now I'm here to win back your bar. / We're good though, right? / Go to hell.",
+      "characters": [
+        "The Waitress",
+        "Mac",
         "Charlie"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "running_gag"
       ],
-      "setup": "Charlie pulls out a cassette for the dance marathon",
-      "punchline": "He thinks his eighth grade dance will help him win an endurance competition",
-      "craft_total": 6.97,
-      "impact_score": 6.33,
+      "setup": "The Waitress is furious at the gang; Charlie asks if they're good",
+      "punchline": "Charlie's completely tone-deaf 'we're good though, right?' in response to her stating she's here specifically to ruin them",
+      "craft_total": 6.4,
+      "impact_score": 6.0,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Charlie's disconnection from reality and tendency to live in the past"
+      "explanation": "Classic Charlie/Waitress dynamic. His oblivious hopefulness in the face of her contempt is a Sunny staple that works well here. The structure is clean \u2014 her declaration of war is immediately met with 'we're cool though?'"
     },
     {
-      "index": 11,
-      "text": "We're not gonna win the bar back with some dance you did in 1989.",
+      "index": 15,
+      "text": "Rickety Cricket. I suppose you're here to win the bar because we ruined your life. / Good guess.",
       "characters": [
-        "Dennis"
+        "Dee",
+        "Cricket"
       ],
       "joke_types": [
         "character_comedy",
         "deadpan_understatement"
       ],
-      "setup": "Charlie's eighth grade dance plan",
-      "punchline": "Dennis's matter-of-fact dismissal",
-      "craft_total": 6.56,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Cricket arrives at the dance competition",
+      "punchline": "Dee immediately and accurately summarizes why he's there \u2014 'we ruined your life' said as a mundane fact",
+      "craft_total": 7.0,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good straight man response that highlights the absurdity"
+      "explanation": "One of the cleaner bits in the episode. 'I suppose you're here to win the bar because we ruined your life' as a casual greeting is perfectly Sunny \u2014 the gang is so accustomed to destroying lives that it's just an observation. Cricket's flat 'good guess' confirmation is the ideal deadpan response."
     },
     {
-      "index": 12,
-      "text": "Rickety Cricket. I suppose you're here to win the bar because we ruined your life.",
+      "index": 16,
+      "text": "And I'm gonna win this bar with the help of my shiny new legs. / The latest leg brace technology courtesy of the great state of Pennsylvania.",
       "characters": [
-        "Dennis",
         "Cricket"
       ],
       "joke_types": [
         "character_comedy",
         "dark_subversive"
       ],
-      "setup": "Cricket appears at the competition",
-      "punchline": "Dennis casually acknowledges they ruined his life",
-      "craft_total": 7.07,
-      "impact_score": 6.67,
+      "setup": "Cricket appears with elaborate leg braces/exoskeleton",
+      "punchline": "The state of Pennsylvania outfitted a homeless former priest who was ruined by this gang with cutting-edge leg brace technology \u2014 the bureaucratic specificity is what makes it",
+      "craft_total": 7.21,
+      "impact_score": 7.33,
       "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark humor with perfect casual delivery - Dennis's complete lack of remorse is the joke"
-    },
-    {
-      "index": 13,
-      "text": "The latest leg brace technology courtesy of the great state of Pennsylvania.",
-      "characters": [
-        "Cricket"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Cricket has new leg braces",
-      "punchline": "He frames government assistance as high-tech equipment",
-      "craft_total": 6.95,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Cricket's delusion about his pathetic situation is classic dark comedy"
-    },
-    {
-      "index": 14,
-      "text": "He's got, like, a liquid hydraulic cooling system going on with that thing. That's cheating, dude.",
-      "characters": [
-        "Mac"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Looking at Cricket's leg braces",
-      "punchline": "Mac describes basic medical equipment as advanced technology",
-      "craft_total": 6.49,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Mac's tendency to overanalyze and see conspiracies in mundane things"
-    },
-    {
-      "index": 15,
-      "text": "It's exactly like an exoskeleton!",
-      "characters": [
-        "Mac"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Continuing to describe Cricket's braces",
-      "punchline": "Escalates to calling them an exoskeleton",
-      "craft_total": 6.17,
-      "impact_score": 5.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation of the absurd description"
-    },
-    {
-      "index": 16,
-      "text": "We should kick him in the dick!",
-      "characters": [
-        "Charlie"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "absurdist"
-      ],
-      "setup": "Discussion of how to beat Cricket",
-      "punchline": "Charlie's simple, crude solution",
-      "craft_total": 6.2,
-      "impact_score": 5.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Charlie - cutting through complexity with crude directness"
+      "explanation": "Great escalation of the Cricket-as-ruined-man running gag. That the state of Pennsylvania specifically equipped him with bionic legs is an absurd detail that rewards the audience's familiarity with Cricket's arc. 'Shiny new legs' is an excellent line reading setup."
     },
     {
       "index": 17,
-      "text": "Talk about a ball and chain. I'm going through a messy divorce.",
+      "text": "Holy shit. What's going on with Rickety Cricket's new legs? They look so sturdy. He's, like, half machine. He's got, like, a liquid hydraulic cooling system going on with that thing.",
       "characters": [
-        "DJ"
+        "Mac",
+        "Dennis"
       ],
       "joke_types": [
-        "observational",
-        "wordplay_pun"
+        "visual_gag",
+        "escalation"
       ],
-      "setup": "DJ describes the 25-pound keg penalty",
-      "punchline": "Makes it about his personal life",
-      "craft_total": 5.3,
-      "impact_score": 4.67,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Mac and Dennis observe Cricket's leg braces",
+      "punchline": "Mac's increasingly technical and awed analysis of a homeless man's leg braces \u2014 culminating in 'liquid hydraulic cooling system'",
+      "craft_total": 6.88,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Standard DJ patter - not particularly clever but fits the character"
+      "explanation": "Good visual gag built on escalating specificity. Mac's reverent analysis of the exoskeleton treats Cricket like a cyborg athlete, which is absurd given the context. 'Half machine' and 'liquid hydraulic cooling system' are strong escalation beats."
     },
     {
       "index": 18,
-      "text": "My legs! The technology failed me! He's fallen and he can't get up!",
+      "text": "That's cheating, dude. He's gonna win with those things, man. / It's like an exoskeleton. / It's exactly like an exoskeleton!",
       "characters": [
-        "Cricket",
-        "DJ"
+        "Mac",
+        "Dennis"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "callback"
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Cricket's high-tech leg braces",
-      "punchline": "They immediately fail and he falls",
-      "craft_total": 6.01,
-      "impact_score": 6.0,
+      "setup": "Mac is worried Cricket's leg braces give him an unfair advantage",
+      "punchline": "Dennis says 'it's like an exoskeleton' and Mac excitedly agrees with 'it's EXACTLY like an exoskeleton!' \u2014 the absurd framing of leg braces as cheating in a dance marathon",
+      "craft_total": 6.29,
+      "impact_score": 6.25,
       "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good physical comedy with pop culture reference"
+      "is_callback": 0,
+      "explanation": "The 'exoskeleton' agreement moment is a small but effective beat. The escalation from 'it's like' to 'it's EXACTLY like' is a classic Sunny rhythm \u2014 characters feeding off each other into absurdity."
     },
     {
       "index": 19,
-      "text": "Don't be afraid to get 'sextra' close. Osmond close on Q 102.",
+      "text": "Maybe he'll sweat so much he'll rust those bionic legs. / We should kick him in the dick!",
       "characters": [
-        "DJ"
+        "Mac",
+        "Dennis"
       ],
       "joke_types": [
-        "wordplay_pun"
+        "escalation",
+        "dark_subversive"
       ],
-      "setup": "DJ encouraging couples dancing",
-      "punchline": "Weak wordplay combining 'extra' and 'sexy'",
-      "craft_total": 3.8,
-      "impact_score": 3.0,
-      "quotability": 4.0,
+      "setup": "Mac and Dennis strategize about how to neutralize Cricket's 'exoskeleton' advantage",
+      "punchline": "Dennis escalates from the mild 'maybe he'll rust' to the immediate and violent 'we should kick him in the dick'",
+      "craft_total": 6.8,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Weak radio DJ patter - intentionally bad to show the low-rent nature of the station"
+      "explanation": "Good escalation beat. The jump from mild concern to 'kick him in the dick' is funny in its immediacy \u2014 no intermediate steps, just straight to groin violence. The juxtaposition with Mac's rust theory makes it land harder."
     },
     {
       "index": 20,
+      "text": "Mac is challenged to a dance-off; a 25-pound keg necklace is introduced as the penalty for the loser",
+      "characters": [
+        "DJ Squirrely D",
+        "Mac"
+      ],
+      "joke_types": [
+        "absurdist",
+        "setup_punchline"
+      ],
+      "setup": "DJ announces a dance-off challenge with Mac",
+      "punchline": "The penalty is wearing a 25-pound keg around your neck for the rest of the competition \u2014 an absurdly punitive physical handicap in an endurance contest",
+      "craft_total": 6.43,
+      "impact_score": 6.5,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Smart escalation device for the episode. The keg necklace is an inspired physical comedy prop that will pay dividends later. The DJ calling it a 'ball and chain' and then noting 'I'm going through a messy divorce' is a small bonus joke."
+    },
+    {
+      "index": 21,
+      "text": "Talk about a ball and chain. / I'm going through a messy divorce.",
+      "characters": [
+        "DJ Squirrely D"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "deadpan_understatement"
+      ],
+      "setup": "DJ describes the keg necklace as a 'ball and chain'",
+      "punchline": "He immediately makes it personal with an unprompted overshare about his divorce",
+      "craft_total": 6.52,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Quick bonus joke on a standard idiom. The overshare is a classic radio DJ bit \u2014 the folksy personality breaking through the professional patter. Economical and functional."
+    },
+    {
+      "index": 22,
+      "text": "The technology failed me! / He's fallen and he can't get up! / I am stealing that line! / It's already yours!",
+      "characters": [
+        "Cricket",
+        "DJ Squirrely D",
+        "Fat Michael"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "meta_self_referential"
+      ],
+      "setup": "Cricket's high-tech legs fail during the dance-off; he falls",
+      "punchline": "DJ Squirrely D shouts 'He's fallen and he can't get up!' and Fat Michael immediately claims the line is 'already yours' \u2014 meta commentary on the reference",
+      "craft_total": 6.22,
+      "impact_score": 6.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The LifeAlert gag gets bonus points for the meta layer \u2014 'it's already yours' implies it's so ingrained in culture it belongs to anyone. Cricket's 'the technology failed me!' is also a solid line given how reverently they were discussing his exoskeleton moments before. The physical payoff (the hyped-up legs immediately collapse) is satisfying."
+    },
+    {
+      "index": 23,
+      "text": "Don't be afraid to get 'sextra' close. Osmond close on Q102.",
+      "characters": [
+        "DJ Squirrely D"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "DJ tells people to couple up and slow dance",
+      "punchline": "'Sextra close' \u2014 a portmanteau of 'sexy' and 'extra' \u2014 delivered with professional DJ confidence",
+      "craft_total": 6.45,
+      "impact_score": 6.25,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Minor wordplay joke. 'Sextra' is a mild groan/chuckle. The DJ character's earnest cheesiness is a background source of gentle comedy throughout the episode."
+    },
+    {
+      "index": 24,
+      "text": "I do not even understand the smell coming from your body, dude.",
+      "characters": [
+        "Mac"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Mac and Charlie are paired together during the slow dance section",
+      "punchline": "Mac's direct, confused complaint about Charlie's smell",
+      "craft_total": 6.19,
+      "impact_score": 5.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Setup for the Charlie hygiene bit. 'I do not even understand the smell' is better phrasing than a simple 'you stink' \u2014 it implies the smell is in a category beyond comprehension."
+    },
+    {
+      "index": 25,
       "text": "You've never seen me wash my testicles, but that doesn't mean I don't do it every Friday.",
       "characters": [
         "Charlie"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "dark_subversive"
       ],
       "setup": "Mac says he's never seen Charlie wear deodorant",
-      "punchline": "Charlie's bizarre logic about personal hygiene frequency",
-      "craft_total": 7.75,
-      "impact_score": 7.83,
-      "quotability": 8.0,
+      "punchline": "Charlie's defense: you haven't witnessed his Friday testicle-washing regimen, therefore you can't assume",
+      "craft_total": 8.22,
+      "impact_score": 8.67,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Charlie logic - completely absurd but delivered with total conviction"
-    },
-    {
-      "index": 21,
-      "text": "That's glitter. I tried to make myself look a little fancy for this dance competition.",
-      "characters": [
-        "Charlie"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "visual_gag"
-      ],
-      "setup": "Mac thinks Charlie has lice",
-      "punchline": "It's actually glitter Charlie put on to look fancy",
-      "craft_total": 7.12,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Charlie - his attempts at sophistication are always misguided"
-    },
-    {
-      "index": 22,
-      "text": "Because you're the best at scheming. We need you on the outside running things. Take a knee.",
-      "characters": [
-        "Dennis",
-        "Frank"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "misdirection"
-      ],
-      "setup": "Frank thinks he's being kicked out because he's old",
-      "punchline": "Dennis flatters him then immediately makes him drop out",
-      "craft_total": 6.79,
-      "impact_score": 5.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good manipulation tactic that reveals Dennis's scheming nature"
-    },
-    {
-      "index": 23,
-      "text": "We did just screw him over to kick him out of the contest, right? Absolutely, yeah. What?",
-      "characters": [
-        "Dennis",
-        "Mac",
-        "Frank"
-      ],
-      "joke_types": [
-        "dark_subversive",
-        "irony_sarcasm"
-      ],
-      "setup": "Frank taking a knee supposedly for strategy",
-      "punchline": "Dennis and Mac immediately admit they just wanted Frank out",
-      "craft_total": 7.63,
-      "impact_score": 7.25,
-      "quotability": 5.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Perfect timing and honesty about their manipulation - they can't even pretend to care about Frank"
-    },
-    {
-      "index": 24,
-      "text": "And by the way, Frank, when we get the bar back, you're ranked last!",
-      "characters": [
-        "Mac"
-      ],
-      "joke_types": [
-        "escalation",
-        "character_comedy"
-      ],
-      "setup": "Frank already eliminated from competition",
-      "punchline": "Mac piling on with ranking punishment",
-      "craft_total": 6.97,
-      "impact_score": 6.25,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Mac being petty and vindictive even after getting what he wanted"
-    },
-    {
-      "index": 25,
-      "text": "And by the way, Frank, when we get the bar back, you're ranked last!",
-      "characters": [
-        "Dennis"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "escalation"
-      ],
-      "setup": "Frank just helped them by dropping out",
-      "punchline": "Dennis immediately demotes him as punishment",
-      "craft_total": 7.23,
-      "impact_score": 7.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Shows Dennis's petty vindictiveness even toward allies"
+      "explanation": "One of the best lines in the episode. The structure is unexpected \u2014 Charlie doesn't defend his deodorant use, he pivots to an unsolicited revelation about testicle hygiene as proof of logic. The specificity of 'every Friday' is what elevates this from gross to genuinely funny. Only Charlie could deploy this argument with complete sincerity. High quotability. Near the top of the episode's craft."
     },
     {
       "index": 26,
-      "text": "I'll tire her out with my awesome movements.",
+      "text": "And I swear to God you've got lice, man. I see little bugs crawling all over your body. / That's glitter. I tried to make myself look a little fancy for this dance competition.",
       "characters": [
-        "Mac"
+        "Mac",
+        "Charlie"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Mac says he can see bugs crawling on Charlie",
+      "punchline": "It's glitter \u2014 Charlie dressed up for the dance competition by covering himself in glitter",
+      "craft_total": 7.51,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Great beat. The misdirect (lice \u2192 glitter) is well-executed. But the real joke is that Charlie wearing glitter to look 'fancy' says everything about his character \u2014 his gesture toward sophistication is just as chaotic as the rest of him. The image of a smelly, possibly genuinely buggy Charlie covered in glitter is excellent visual comedy."
+    },
+    {
+      "index": 27,
+      "text": "Oh, Mr. Fancy Pants. Excuse me. I'm just trying to have a good competition here.",
+      "characters": [
+        "Mac",
+        "Charlie"
       ],
       "joke_types": [
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Dennis says Mac will tire out the waitress with his spastic movement",
-      "punchline": "Mac misses the insult and thinks it's a compliment",
-      "craft_total": 6.15,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Mac mocks Charlie for the glitter",
+      "punchline": "Charlie's earnest, slightly wounded defense: 'I'm just trying to have a good competition here'",
+      "craft_total": 6.72,
+      "impact_score": 6.67,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Mac's obliviousness to criticism disguised as strategy"
+      "explanation": "Good extension of the glitter bit. Charlie's sincerity in defending his glitter use as simply 'trying to have a good competition' is an endearing and funny character note."
     },
     {
-      "index": 27,
-      "text": "Oh, this is great, Dee. I mean, this is so restful. I'm really building up my reserves for later, you know?",
+      "index": 28,
+      "text": "Why is the person that's ranked last trying to hatch a plan? / Yeah, I wonder that too.",
       "characters": [
-        "Charlie"
+        "Dennis",
+        "Mac"
       ],
       "joke_types": [
         "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Charlie dancing with Dee",
-      "punchline": "Charlie treating the marathon like a relaxation opportunity",
-      "craft_total": 6.78,
+      "setup": "Dee pitches a strategy about using the partner switch",
+      "punchline": "Dennis dismisses the plan by pointing to her rank, and Mac piles on with agreement",
+      "craft_total": 6.34,
       "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Charlie's backwards understanding of endurance competition strategy"
-    },
-    {
-      "index": 28,
-      "text": "Just stick your knee into my groin, just like that. Grind your hips and pulse your thighs.",
-      "characters": [
-        "Mac"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "character_comedy"
-      ],
-      "setup": "Mac is supposedly teaching dance moves",
-      "punchline": "The 'dance moves' are obviously sexual",
-      "craft_total": 6.3,
-      "impact_score": 6.5,
       "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic cringe moment showing Mac's inappropriate behavior disguised as helping"
+      "is_callback": 1,
+      "explanation": "Callback to the ranking system used as a weapon against Dee. The sycophantic 'yeah I wonder that too' from Mac is a nice touch \u2014 everyone reflexively piling on Dee is a Sunny staple."
     },
     {
       "index": 29,
-      "text": "The Rococo Bang.",
-      "characters": [
-        "Mac"
-      ],
-      "joke_types": [
-        "absurdist",
-        "wordplay_pun"
-      ],
-      "setup": "The fianc\u00e9 asks what the dance is called",
-      "punchline": "Mac makes up an obviously fake dance name",
-      "craft_total": 6.87,
-      "impact_score": 6.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good fake dance name that sounds plausible enough to fool someone"
-    },
-    {
-      "index": 30,
-      "text": "The Rococo Bang. Oh, that's funny. Isn't it?",
+      "text": "No, dude. Because you're the best at scheming. We need you on the outside running things. Take a knee. / Kneel down. Take a knee for the team, buddy. / Yeah, there you go!",
       "characters": [
         "Mac",
-        "Gloria"
-      ],
-      "joke_types": [
-        "absurdist",
-        "character_comedy"
-      ],
-      "setup": "Gloria asking about the dance name",
-      "punchline": "Mac's made-up dance name that sounds sexual",
-      "craft_total": 7.29,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Mac improvising increasingly inappropriate 'dance instruction' with fake authority"
-    },
-    {
-      "index": 31,
-      "text": "All right now, Gloria, for this next part you're gonna want to grip my buttocks.",
-      "characters": [
-        "Mac"
-      ],
-      "joke_types": [
-        "cringe_discomfort",
-        "escalation"
-      ],
-      "setup": "Mac continues his 'dance instruction'",
-      "punchline": "Escalates to obviously inappropriate touching",
-      "craft_total": 6.59,
-      "impact_score": 6.67,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good escalation of the inappropriate dance instruction bit"
-    },
-    {
-      "index": 32,
-      "text": "I'm glad you're over it, because he's definitely gonna bang her.",
-      "characters": [
-        "Dee"
-      ],
-      "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
-      ],
-      "setup": "Robert says he's over Mac's behavior with his fianc\u00e9e",
-      "punchline": "Dee immediately says Mac will have sex with her",
-      "craft_total": 6.93,
-      "impact_score": 6.67,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dee's bluntness and social tone-deafness in perfect display"
-    },
-    {
-      "index": 33,
-      "text": "And I will stalk the streets and live in the shadows of the night until the streets of Philadelphia run red with their blood!",
-      "characters": [
-        "Cricket"
-      ],
-      "joke_types": [
-        "absurdist",
-        "escalation"
-      ],
-      "setup": "Cricket talking about getting revenge",
-      "punchline": "Completely over-the-top Batman-esque declaration",
-      "craft_total": 6.67,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good absurdist escalation showing Cricket's delusions of grandeur"
-    },
-    {
-      "index": 34,
-      "text": "I've been working so hard for so many years. The cream always rises to the top.",
-      "characters": [
-        "Mac"
+        "Dennis",
+        "Frank"
       ],
       "joke_types": [
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Charlie is convincing Mac he deserves to be number one",
-      "punchline": "Mac genuinely believes he's worked hard and earned it",
-      "craft_total": 5.67,
-      "impact_score": 5.0,
-      "quotability": 6.0,
+      "setup": "Frank complains about being assigned to 'the outside' because he's old",
+      "punchline": "Mac flatters Frank with 'best at scheming,' then immediately makes him take a knee like a bench player being sidelined \u2014 literally removing him from the competition",
+      "craft_total": 6.6,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Good manipulation beat. Mac and Dennis gaslight Frank out of the competition with compliments, the 'take a knee' sports metaphor is used to literally bench him. The enthused 'yeah, there you go!' as Frank kneels down is the punchline visual."
+    },
+    {
+      "index": 30,
+      "text": "We did just screw him over to kick him out of the contest, right? / Absolutely, yeah.",
+      "characters": [
+        "Mac",
+        "Dennis"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Mac and Dennis watch Frank kneel on the sideline",
+      "punchline": "The casual post-mortem confirmation that they just manipulated Frank out of the competition \u2014 said with complete matter-of-factness",
+      "craft_total": 6.88,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Mac's delusional self-image and entitlement"
+      "explanation": "Classic Sunny beat \u2014 the gang quietly acknowledging their own awfulness to each other with zero remorse. The confirmatory 'absolutely, yeah' is delivered as if confirming lunch orders."
+    },
+    {
+      "index": 31,
+      "text": "And by the way, Frank, when we get the bar back, you're ranked last! / You can't rank me last. I created the ranking system. / Then you shouldn't have dropped out, you old bitch.",
+      "characters": [
+        "Mac",
+        "Frank",
+        "Dennis"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Frank protests being ranked last",
+      "punchline": "'Then you shouldn't have dropped out, you old bitch' \u2014 using Frank's own ranking system as the weapon against him, and ending with 'old bitch'",
+      "craft_total": 6.96,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Strong callback payoff. The ranking system Frank invented to manipulate them is now being used to demote him \u2014 poetic justice. 'You old bitch' as a capper is delivered with the kind of casual viciousness that defines the show's humor toward Frank."
+    },
+    {
+      "index": 32,
+      "text": "Just... Please don't hit me. / Good, good. Don't be afraid to get in real close, okay? Okay. / How long have you been a dance instructor? / Oh, a long time. Years.",
+      "characters": [
+        "Mac",
+        "Gloria (the waitress)"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Mac is dancing aggressively with a contestant's fianc\u00e9e",
+      "punchline": "His dancing looks so violent she asks him not to hit her; Mac pivots to claiming to be a dance instructor",
+      "craft_total": 6.45,
+      "impact_score": 6.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good setup for the Rococo Bang sequence. Mac's dancing being so aggressive it appears threatening is a good visual comedy premise. His instant pivot to 'dance instructor' is a solid character beat."
+    },
+    {
+      "index": 33,
+      "text": "The 'Rococo Bang' \u2014 Mac invents a fake dance move that is transparently him groping Gloria",
+      "characters": [
+        "Mac",
+        "Gloria"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Mac poses as a dance instructor and teaches Gloria a 'new dance'",
+      "punchline": "The 'Rococo Bang' is described with 'grip my buttocks,' 'grind and shift and around and push and feel and grip and grip' \u2014 it's obviously not a dance",
+      "craft_total": 7.31,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'The Rococo Bang' is a great invention \u2014 the pompous art-historical name for what is clearly a groping sequence is perfect Mac hubris. 'Grip my buttocks' as a dance instruction is well-executed. The escalating physical description ('grind and shift and around and push and feel and grip and grip') building in intensity while Gloria's fianc\u00e9 watches is good cringe construction."
+    },
+    {
+      "index": 34,
+      "text": "Oh, that's funny. / Isn't it? Kinda looks like he's feeling you up.",
+      "characters": [
+        "Robert (fianc\u00e9)",
+        "Dennis"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Mac is performing the 'Rococo Bang' on Robert's fianc\u00e9e",
+      "punchline": "Dennis, ostensibly helping Mac, casually points out to the fianc\u00e9 that it 'kinda looks like he's feeling her up' \u2014 actively undermining Mac",
+      "craft_total": 7.09,
+      "impact_score": 7.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dennis subtly sabotaging Mac while pretending to assist is excellent character comedy. The understatement ('kinda looks like he's feeling you up' when it's exactly what's happening) is very Dennis."
     },
     {
       "index": 35,
-      "text": "Nervous that you're gonna be ranked number one when this whole thing goes down. You think so? Absolutely!",
+      "text": "All right now, Gloria, for this next part you're gonna want to grip my buttocks.",
+      "characters": [
+        "Mac"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Mac continues the 'dance lesson' with the fianc\u00e9 standing right there",
+      "punchline": "In front of her fianc\u00e9, Mac instructs her to grip his buttocks as part of the 'dance'",
+      "craft_total": 6.8,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The escalation of the Rococo Bang to explicit buttocks-gripping in front of the fianc\u00e9 is well-timed cringe comedy. The formal 'for this next part' instruction framing makes it funnier."
+    },
+    {
+      "index": 36,
+      "text": "I'm glad you're over it, because he's definitely gonna bang her.",
+      "characters": [
+        "Charlie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Robert claims to be 'over it' about Mac dancing with his fianc\u00e9e",
+      "punchline": "Charlie casually confirms: 'he's definitely gonna bang her'",
+      "craft_total": 6.89,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good beat. Charlie's matter-of-fact assessment undercuts Robert's cope perfectly. The delivery implied by context (Charlie saying it straight-faced) is what sells it."
+    },
+    {
+      "index": 37,
+      "text": "I know how it feels. The pain, the hurt. How about you and me, we join forces, and we make things right?",
+      "characters": [
+        "Frank"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Frank approaches Cricket to recruit him as his 'inside horse'",
+      "punchline": "Frank performing faux-empathy to manipulate Cricket \u2014 framing exploitation as solidarity with 'make things right'",
+      "craft_total": 6.45,
+      "impact_score": 6.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Frank's manipulative empathy speech is a bit generic but works as character establishment. His recruiter voice is appropriately slimy."
+    },
+    {
+      "index": 38,
+      "text": "Get lost, street rat! / I'm not a street... I was a man of the cl...",
+      "characters": [
+        "Cricket",
+        "Frank"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Frank tries to recruit Cricket",
+      "punchline": "Cricket's indignant attempt to claim former dignity \u2014 'I was a man of the cl[ergy]' \u2014 cut off, implying he can't even complete his own defense of his identity",
+      "craft_total": 7.55,
+      "impact_score": 7.83,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good Cricket moment. 'Street rat' is perfect Frank dismissiveness. Cricket's interrupted correction \u2014 'I was a man of the cl[ergy]' \u2014 is tragicomically perfect. He literally can't finish the sentence that describes who he used to be."
+    },
+    {
+      "index": 39,
+      "text": "And I will stalk the streets and live in the shadows of the night until the streets of Philadelphia run red with their blood!",
+      "characters": [
+        "Cricket"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation",
+        "dark_subversive"
+      ],
+      "setup": "Frank asks Cricket if he wants the gang",
+      "punchline": "Cricket's response wildly escalates from a grudge to an apocalyptic blood oath",
+      "craft_total": 7.53,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's standout lines. Cricket's declaration that he will 'stalk the streets and live in the shadows of the night until the streets of Philadelphia run red with their blood' is a beautiful escalation of his victim status into messianic vengeance fantasy. It's specific, dramatic, and perfectly characterizes how thoroughly the gang has broken this man. 'You got a lot of anger in you, kid' as the response lands perfectly \u2014 Frank is impressed."
+    },
+    {
+      "index": 40,
+      "text": "Much better dancing than people give you credit for. I've always thought that. / That whole elbow thing... You like the elbow thing? / It's a very specifically choreographed... / I'll show it to you one day. / I don't want to learn it.",
       "characters": [
         "Charlie",
         "Mac"
@@ -678,56 +799,118 @@
         "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Charlie manipulating Mac about Dennis",
-      "punchline": "Mac's immediate buy-in to obvious manipulation about rankings",
-      "craft_total": 6.74,
-      "impact_score": 5.75,
-      "quotability": 4.0,
+      "setup": "Charlie is buttering Mac up before manipulating him",
+      "punchline": "Mac's instant pride about his 'elbow thing' \u2014 Charlie offering to teach it, Mac immediately saying he doesn't want to learn it",
+      "craft_total": 6.54,
+      "impact_score": 6.17,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Mac's ego makes him completely susceptible to Charlie's obvious manipulation"
+      "is_callback": 0,
+      "explanation": "Good manipulation setup. Mac's vanity is efficiently established \u2014 he's flattered by specific praise of his 'elbow thing' despite having no self-awareness that Charlie is working him. The quick 'I don't want to learn it' is a nice rhythm break."
     },
     {
-      "index": 36,
-      "text": "And you're, like, made of cream, and your cream is all over his face, man.",
+      "index": 41,
+      "text": "Nervous that you're gonna be ranked number one when this whole thing goes down. / You think so? / Absolutely! First of all, you deserve to be ranked number one at the bar. / I think I do, dude. I think I deserve to be number one. I've been working so hard for so many years. The cream always rises to the top.",
       "characters": [
-        "Charlie"
+        "Charlie",
+        "Mac"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Charlie extending the cream metaphor",
-      "punchline": "Takes it to a weird, possibly sexual place",
-      "craft_total": 7.55,
-      "impact_score": 7.5,
+      "setup": "Charlie flatters Mac into believing Dennis is threatened by him",
+      "punchline": "Mac's earnest 'the cream always rises to the top' about himself as bar staff \u2014 the delusion is perfect",
+      "craft_total": 6.49,
+      "impact_score": 6.5,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Charlie - takes a metaphor too far in a disturbing direction"
+      "explanation": "Mac's self-regard is well-deployed here. 'The cream always rises to the top' about his bar performance, combined with 'I've been working so hard for so many years,' is deliriously self-deluded \u2014 this is a person who earlier refused to fill out an employee evaluation."
     },
     {
-      "index": 37,
-      "text": "'Engaged.' That's just a word. It doesn't mean anything.",
+      "index": 42,
+      "text": "And you're, like, made of cream, and your cream is all over his face, man. / That pisses him off. He hates that shit, dude. / I'm always putting my cream all over his face, and it pisses him off.",
       "characters": [
+        "Charlie",
+        "Mac"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Charlie extends the cream metaphor to describe Mac's superiority over Dennis",
+      "punchline": "The 'cream all over his face' metaphor escalates into an inadvertently graphic image that neither character notices",
+      "craft_total": 7.43,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Intentionally loaded with double entendre that both characters are completely oblivious to. 'Your cream is all over his face' repeated with escalating emphasis while Mac nods in serious agreement is a classic Sunny bit \u2014 the vulgarity is entirely in the audience's reading, not the characters'. Mac's earnest 'I'm always putting my cream all over his face' is the peak."
+    },
+    {
+      "index": 43,
+      "text": "Mac challenges Dennis to a dance-off; Dennis is wearing the keg necklace penalty",
+      "characters": [
+        "Mac",
+        "Dennis"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "Mac challenges Dennis to prove he's the better dancer and earn the top rank",
+      "punchline": "Dennis is handicapped by a 25-pound keg around his neck during the challenge",
+      "craft_total": 6.35,
+      "impact_score": 6.75,
+      "quotability": 3.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Visual payoff for the keg necklace setup. Dennis dancing with 25 pounds around his neck is a good physical comedy premise. The setup (Charlie manipulating Mac into challenging Dennis) is a well-constructed long con."
+    },
+    {
+      "index": 44,
+      "text": "Oh, goddamn it! / Well, glad that's settled. I think I'm gonna go get in that chick's pants now.",
+      "characters": [
+        "Dennis",
+        "Mac"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Mac does his 8th grade dance routine and apparently destroys Dennis in the dance-off",
+      "punchline": "Mac's immediate pivot from winning a dance competition to announcing his intention to 'get in that chick's pants' \u2014 treating the victory as a seduction tool",
+      "craft_total": 6.44,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good beat. The transition from competitive triumph to predatory interest is seamless Mac characterization. The casualness of 'I think I'm gonna go get in that chick's pants now' as a post-victory announcement is very on-brand."
+    },
+    {
+      "index": 45,
+      "text": "\"Engaged.\" That's just a word. It doesn't mean anything. / It means they're getting married. / Married, engaged. They're just words, you know? / My parents were married and engaged once. You saw how that worked out. / I'm gonna go bang that chick.",
+      "characters": [
+        "Mac",
         "Dennis"
       ],
       "joke_types": [
         "character_comedy",
         "dark_subversive"
       ],
-      "setup": "Mac mentions the couple is engaged",
-      "punchline": "Dennis dismisses the concept of engagement entirely",
-      "craft_total": 7.27,
-      "impact_score": 6.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Dennis notes that Gloria is engaged",
+      "punchline": "Mac's escalating philosophical dismissal of commitment ('they're just words') climaxing with the bleak 'my parents were married and engaged once'",
+      "craft_total": 7.73,
+      "impact_score": 8.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Dennis - completely amoral and dismissive of social commitments"
+      "explanation": "One of the episode's best-written exchanges. Mac's escalating deconstruction of the concept of engagement \u2014 'they're just words, you know?' \u2014 builds to the unexpected and genuinely dark 'my parents were married and engaged once. You saw how that worked out.' The logic is broken in a very specific character-appropriate way. Good economy and the callback to implied shared backstory adds depth."
     },
     {
-      "index": 38,
-      "text": "Now, you're not nearly as beautiful as she is, but I can use my imagination.",
+      "index": 46,
+      "text": "I'm gonna pretend like you're Gloria, okay? Now, you're not nearly as beautiful as she is, but I can use my imagination.",
       "characters": [
         "Dennis"
       ],
@@ -735,77 +918,57 @@
         "character_comedy",
         "cringe_discomfort"
       ],
-      "setup": "Dennis is going to demonstrate dance moves on Robert",
-      "punchline": "Casually insults Robert while pretending to help",
-      "craft_total": 6.33,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Dennis offers to teach Robert how to dip his fianc\u00e9e",
+      "punchline": "He announces he'll 'pretend Robert is Gloria' \u2014 a weirdly intimate framing \u2014 and then preemptively insults Robert's attractiveness compared to his fianc\u00e9e",
+      "craft_total": 6.96,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Dennis's casual cruelty disguised as helpfulness"
+      "explanation": "Good Dennis character moment \u2014 his condescension is wrapped in helpfulness. 'You're not nearly as beautiful as she is, but I can use my imagination' is a casually devastating insult delivered as an aside."
     },
     {
-      "index": 39,
-      "text": "You dropped me on purpose, asshole!",
+      "index": 47,
+      "text": "Dennis drops Robert on purpose, then claims it's natural to 'blame the teacher' and that 'we're all feeling a little tired'",
       "characters": [
+        "Dennis",
         "Robert"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "escalation"
+        "cringe_discomfort",
+        "irony_sarcasm"
       ],
-      "setup": "Dennis was 'teaching' Robert a dance move",
-      "punchline": "Dennis obviously sabotaged him",
-      "craft_total": 6.59,
-      "impact_score": 6.17,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Dennis offers to demonstrate a dip, bends Robert down, then drops him",
+      "punchline": "Dennis's smooth gaslighting: 'it's perfectly natural to blame the teacher at first. We're all feeling a little tired' \u2014 implying Robert fell on his own",
+      "craft_total": 7.48,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good payoff to Dennis's obviously malicious 'help'"
+      "explanation": "Very Dennis moment. Deliberately dropping someone and then psychologically reframing it as the victim's misperception ('it's natural to blame the teacher') is a perfect expression of his sociopathic smoothness. The calm delivery during Robert's outrage is the cringe core."
     },
     {
-      "index": 40,
-      "text": "My goodness! What happened? You lost your grip? You dropped me on purpose, asshole!",
+      "index": 48,
+      "text": "We're making brownies. The drug-filled kind.",
       "characters": [
-        "Mac",
-        "Robert"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
-      ],
-      "setup": "Mac demonstrating dance move",
-      "punchline": "Mac 'accidentally' dropping Robert while feigning innocence",
-      "craft_total": 6.67,
-      "impact_score": 6.33,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Mac's obvious sabotage while maintaining plausible deniability"
-    },
-    {
-      "index": 41,
-      "text": "We're making brownies. The drug filled kind. Shut up, Cricket!",
-      "characters": [
-        "Frank",
         "Cricket"
       ],
       "joke_types": [
-        "dark_subversive",
-        "deadpan_understatement"
+        "setup_punchline",
+        "dark_subversive"
       ],
-      "setup": "Mac asking what Frank is doing",
-      "punchline": "Frank casually admitting to making drugged brownies",
-      "craft_total": 6.63,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Mac asks what's going on; Frank and Cricket are cooking something",
+      "punchline": "Cricket immediately volunteers 'the drug-filled kind' as a clarifying adjective",
+      "craft_total": 7.27,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Frank's matter-of-fact admission of criminal activity"
+      "explanation": "Very economical joke. The humor is entirely in the structure \u2014 'we're making brownies' is a totally normal sentence, and 'the drug-filled kind' as a clarifying addendum is perfect. Cricket saying it out loud before Frank can stop him, requiring Frank's 'Shut up, Cricket!' is excellent comedic timing inferred from the structure."
     },
     {
-      "index": 42,
-      "text": "They're filled with sedatives. You want to help me distribute them? I'll make you my number two.",
+      "index": 49,
+      "text": "They're filled with sedatives. / You want to help me distribute them? I'll make you my number two.",
       "characters": [
         "Frank"
       ],
@@ -813,135 +976,375 @@
         "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Frank is making brownies",
-      "punchline": "They're drugged to knock out competitors",
-      "craft_total": 6.49,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Frank scheme - completely unethical but presented matter-of-factly"
+      "setup": "Frank reveals the brownies are sedative-laden",
+      "punchline": "He offers Mac the rank of 'number two' as payment for helping drug contestants \u2014 using the ranking system as currency for criminal conspiracy",
+      "craft_total": 6.79,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The ranking system being used to recruit Mac into a sedative distribution scheme is a great callback payoff. Frank using 'number two' as a bribe for criminal conspiracy is very on-brand \u2014 his management style and his criminality merge perfectly."
     },
     {
-      "index": 43,
-      "text": "The only way you're gonna be able to land Dennis is by making him feel he's lower on your list than a disgusting, filthy homeless guy.",
+      "index": 50,
+      "text": "Dee tells The Waitress she needs to make Dennis jealous by dancing with the homeless guy (Larry)",
       "characters": [
-        "Dee"
+        "Dee",
+        "The Waitress"
       ],
       "joke_types": [
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Waitress asking for dating advice",
-      "punchline": "Dee's terrible reverse psychology advice",
-      "craft_total": 6.77,
-      "impact_score": 6.33,
-      "quotability": 6.0,
+      "setup": "Frank tells The Waitress she needs to make Dennis jealous",
+      "punchline": "Dee's reverse psychology advice: dance with the homeless competitor to make Dennis feel lower on the waitress's list than a filthy homeless man",
+      "craft_total": 6.47,
+      "impact_score": 6.25,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good example of Dee giving terrible advice with complete confidence"
+      "explanation": "Setup for the homeless-grinding visual gag. Dee's 'reverse psychology' explanation is transparently flawed but she delivers it with authority. The specific logic of 'lower on your list than a disgusting filthy homeless guy' is a good beat."
     },
     {
-      "index": 44,
-      "text": "Looks like a shit ball. No! That's an energy bar!",
+      "index": 51,
+      "text": "I'm gonna go grind a homeless guy. / Good girl. Make it dirty.",
       "characters": [
-        "Dee",
-        "Mac"
+        "The Waitress",
+        "Dee"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Dee finishes explaining the reverse psychology plan",
+      "punchline": "'I'm gonna go grind a homeless guy' as a declaration, followed by Dee's encouraging 'Good girl. Make it dirty'",
+      "craft_total": 7.16,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Very economical and dark. The sentence 'I'm gonna go grind a homeless guy' is so specific and said with such determination that it lands as a great absurdist beat. 'Good girl. Make it dirty' as maternal encouragement for homeless grinding completes it. High quotability."
+    },
+    {
+      "index": 52,
+      "text": "Oh, my God! She's really, like, grinding away over there! / Eat your heart out, Dennis Reynolds!",
+      "characters": [
+        "Mac",
+        "Dee"
       ],
       "joke_types": [
         "visual_gag",
         "character_comedy"
       ],
-      "setup": "Mac offers Dee what he claims is an energy bar",
-      "punchline": "It literally looks like feces",
-      "craft_total": 6.48,
-      "impact_score": 6.5,
+      "setup": "The Waitress is grinding on Larry the homeless man",
+      "punchline": "Dee triumphantly narrates it as a romantic provocation for Dennis \u2014 'Eat your heart out, Dennis Reynolds!' \u2014 which is a bizarrely formal way to taunt someone who's right there",
+      "craft_total": 6.36,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good visual beat with Dee's bizarre commentary. Using Dennis's full name in the taunt ('Dennis Reynolds') is a nice detail \u2014 it makes it sound like a sports announcer calling his shot."
+    },
+    {
+      "index": 53,
+      "text": "Hey. Hey, pretty lady? Look, can you do me a favor? Can you prop your leg up and, like, grind on me all sexual like?",
+      "characters": [
+        "Charlie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Charlie sees The Waitress grinding on the homeless guy and wants in",
+      "punchline": "Charlie's completely transparent request to have The Waitress grind on him, framed as a favor, with 'all sexual like' as the descriptor",
+      "craft_total": 7.16,
+      "impact_score": 7.0,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good visual gag with Mac's defensive response"
+      "explanation": "Classic Charlie/Waitress interaction. His hapless attempt to use 'can you do me a favor' as framing for a sexual request is very Charlie. 'All sexual like' as a request descriptor is perfectly awkward."
     },
     {
-      "index": 45,
-      "text": "Don't eat it, Dee! It's filled with cough medicine. I love you!",
+      "index": 54,
+      "text": "Charlie's over there blowing up my spot with that girl.",
       "characters": [
-        "Cricket"
+        "Dennis"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Charlie is trying to get The Waitress to grind on him",
+      "punchline": "Dennis's indignation that Charlie is 'blowing up his spot' \u2014 as if Dennis had a legitimate claim on The Waitress after spending the episode trying to sleep with an engaged woman",
+      "craft_total": 6.12,
+      "impact_score": 5.75,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Minor beat. The territorial response from Dennis is good character work but not especially memorable."
+    },
+    {
+      "index": 55,
+      "text": "Better make some moves like a ranked number two guy would.",
+      "characters": [
+        "Mac"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Mac is told he needs to compete with Charlie for the Waitress",
+      "punchline": "Mac invokes his rank as motivation \u2014 'like a ranked number two guy would' \u2014 as if the arbitrary ranking system gives him competitive legitimacy",
+      "craft_total": 6.42,
+      "impact_score": 6.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good callback. Mac has completely internalized the ranking system as a measure of his worth. 'Like a ranked number two guy would' is a perfect expression of his self-seriousness."
+    },
+    {
+      "index": 56,
+      "text": "Energy bar. Have some. / Looks like a shit ball. / No! That's an energy bar! / Why is it so heavy and big? / Because it's filled with vitamins and shit.",
+      "characters": [
+        "Frank",
+        "Mac",
+        "Dennis"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "setup_punchline"
+      ],
+      "setup": "Frank tries to distribute the drug-filled brownies",
+      "punchline": "Mac's instant assessment 'looks like a shit ball' \u2014 the drug-laced brownie looks so bad that it doesn't even pass for food",
+      "craft_total": 7.03,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Looks like a shit ball' is an excellent line \u2014 visceral and specific. Frank's defense 'because it's filled with vitamins and shit' (using 'shit' literally after they just called it a shit ball) is a nice accidental double meaning. The increasingly desperate attempt to get people to eat a suspicious dense ball is good cringe comedy."
+    },
+    {
+      "index": 57,
+      "text": "Don't eat it, Dee! It's filled with cough medicine. / I love you! You traitor bastard!",
+      "characters": [
+        "Cricket",
+        "Frank"
       ],
       "joke_types": [
         "character_comedy",
         "escalation"
       ],
-      "setup": "Cricket is supposed to be helping Frank",
-      "punchline": "Immediately betrays the plan and declares love",
-      "craft_total": 6.69,
-      "impact_score": 6.17,
-      "quotability": 5.0,
+      "setup": "Frank is trying to get the gang to eat the sedative brownies",
+      "punchline": "Cricket betrays Frank by warning Dee, then Frank calls him a 'traitor bastard' \u2014 but Cricket's response is 'I love you' to Dee",
+      "craft_total": 6.93,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Cricket's inability to stick to any plan when emotions are involved"
+      "explanation": "Cricket's 'I love you' to Dee as the reason he betrayed Frank is a great beat \u2014 his pathetic infatuation being the driving force of his treachery is very on-character. The chaos it creates (Frank's 'traitor bastard' rage) is good escalation."
     },
     {
-      "index": 46,
-      "text": "You are in cahoots with those guys? I'm not in cahoots with anybody! You've been cahooting with them! I have not been cahooting!",
+      "index": 58,
+      "text": "You are in cahoots with those guys? / I'm not in cahoots with anybody! / You've been cahooting with them! / I have not been cahooting!",
+      "characters": [
+        "Mac",
+        "Dee"
+      ],
+      "joke_types": [
+        "wordplay_pun",
+        "character_comedy"
+      ],
+      "setup": "Dee confronts Mac about his allegiance",
+      "punchline": "The repeated use of 'cahoots'/'cahooting' \u2014 turning 'cahoots' into a verb ('cahooting') is an absurd word choice that the characters treat as normal",
+      "craft_total": 6.98,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Cahooting' as a verb is a good wordplay bit \u2014 the characters' indignation over the word escalates into them both using it unironically. The rhythm of denial using the same made-up verb is well-executed."
+    },
+    {
+      "index": 59,
+      "text": "You're wearing Rickety Cricket's exoskeleton right now! / I am not! / Yes, you are! / Okay! Okay! So I'm wearing it.",
       "characters": [
         "Dee",
         "Mac"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "escalation"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Dee accuses Mac of working with the others",
-      "punchline": "Argument about 'cahooting' as a verb",
-      "craft_total": 5.5,
-      "impact_score": 5.0,
+      "setup": "Dee accuses Mac of wearing Cricket's leg braces",
+      "punchline": "Mac's indignant denial, then immediate admission: 'Okay! Okay! So I'm wearing it.'",
+      "craft_total": 6.87,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Good callback payoff. The visual of Mac in Cricket's leg braces is inherently funny. His two-stage response (deny\u2192immediately admit) is a classic pattern. The exoskeleton being treated as a wearable piece of equipment that someone else can just 'put on' adds to the absurdity."
+    },
+    {
+      "index": 60,
+      "text": "What are you doing, bro? What, man? A man can't enjoy a sexual lady?",
+      "characters": [
+        "Mac",
+        "Charlie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Mac is dancing with the Waitress/a woman while Charlie objects",
+      "punchline": "'A man can't enjoy a sexual lady?' \u2014 delivered as a philosophical defense of his right to grind in a dance marathon",
+      "craft_total": 7.08,
+      "impact_score": 7.0,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Funny escalating argument over word usage"
+      "explanation": "'A sexual lady' as a category is a funny Mac-ism \u2014 his phrasing is slightly off in a way that reveals something about him. Decent line."
     },
     {
-      "index": 47,
-      "text": "Engaged is just a word. It doesn't have any meaning. No, it's a very serious word.",
+      "index": 61,
+      "text": "Let these strong, sweet, sexual arms hold you. So strong. / I gotcha. So strong. All right, night-night.",
+      "characters": [
+        "Dennis"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "cringe_discomfort"
+      ],
+      "setup": "Dennis cuts in to dance with the woman, then sedates her with the drugged brownie",
+      "punchline": "Dennis narrating his own arms as 'strong, sweet, sexual' and then whispering 'night-night' as she passes out from the sedative \u2014 the transition from seduction to drugging is seamless and disturbing",
+      "craft_total": 7.83,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's darkest and best-constructed moments. 'Strong, sweet, sexual arms' is peak Dennis Reynolds self-narration \u2014 the way he describes his own body parts as erotic objects is deeply unsettling played as normal. The smooth transition to 'night-night' as his dance partner loses consciousness from his sedative brownie is a masterclass in dark character comedy. Only Dennis Reynolds says 'night-night' while drugging someone. High craft, high impact."
+    },
+    {
+      "index": 62,
+      "text": "You made me do that. / You piece of shit. Yeah, maybe.",
+      "characters": [
+        "Dennis",
+        "Mac"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Dennis has just sedated someone to eliminate them from the competition",
+      "punchline": "'You piece of shit.' 'Yeah, maybe.' \u2014 Dennis's casual half-acknowledgment of his own moral failure",
+      "craft_total": 6.61,
+      "impact_score": 6.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Yeah, maybe' in response to being called a piece of shit is characteristically Dennis \u2014 the half-admission with a shrug. Good economy."
+    },
+    {
+      "index": 63,
+      "text": "What? I'm not gonna have sex with you! What do you mean? I'm engaged! / Engaged is just a word. It doesn't have any meaning. / No, it's a very serious word. / Thank you! / I was getting somewhere, wasn't I? / No, you weren't. / Really? / No!",
       "characters": [
         "Charlie",
-        "Gloria"
+        "Gloria",
+        "Dennis"
       ],
       "joke_types": [
         "callback",
         "character_comedy"
       ],
-      "setup": "Charlie tries to seduce Gloria",
-      "punchline": "Uses Dennis's exact line but gets called out",
-      "craft_total": 6.67,
-      "impact_score": 6.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Charlie accidentally implies he might have sex with Gloria; she protests she's engaged",
+      "punchline": "Charlie uses Mac's earlier line ('engaged is just a word') and Dennis's reaction ('thank you!' when Gloria defends the seriousness of engagement) \u2014 callback to multiple earlier threads",
+      "craft_total": 6.8,
+      "impact_score": 6.83,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good callback showing Charlie copying Dennis's terrible approach"
+      "explanation": "Smart callback structure. Charlie using Mac's exact 'engaged is just a word' logic is funny because Charlie absorbed the wrong lesson from earlier. Dennis's 'thank you!' when Gloria defends engagement is a nice beat \u2014 he's been working on her and her validation of commitment language satisfies him despite the irony that he's the one who drugged her dance partner. 'I was getting somewhere, wasn't I? / No, you weren't' is a good quick beat."
     },
     {
-      "index": 48,
-      "text": "The cream always rises to the top. And I'm about to show you the white-hot cream of an eighth-grade boy.",
+      "index": 64,
+      "text": "I was getting somewhere, wasn't I? / No, you weren't. / Really? / No! / All right. Well, see you later.",
+      "characters": [
+        "Dennis",
+        "Gloria",
+        "Charlie"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Dennis's seduction attempt has completely failed; Gloria and Charlie both confirm it",
+      "punchline": "Dennis's 'Well, see you later' \u2014 a breezy exit after being told twice, flatly, that he was not getting anywhere. His ability to absorb complete rejection without any emotional response is the joke.",
+      "craft_total": 7.56,
+      "impact_score": 7.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Dennis's 'Well, see you later' as an exit after total romantic failure is a great deadpan moment. His complete emotional teflon \u2014 no embarrassment, no shame, just 'alright then' \u2014 is perfect character comedy."
+    },
+    {
+      "index": 65,
+      "text": "You still talking to me? I thought you were out. Dick!",
+      "characters": [
+        "Dennis",
+        "Charlie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Dee or Charlie is out of the competition and still arguing with Dennis",
+      "punchline": "Dennis dismissing a knocked-out contestant with 'I thought you were out. Dick.' \u2014 the casual cruelty is very on-brand",
+      "craft_total": 6.7,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Minor Dennis cruelty beat. 'Dick' as a parting shot is economical. Not exceptional but functional character work."
+    },
+    {
+      "index": 66,
+      "text": "Let me tell you a lesson. The cream always rises to the top. And I'm about to show you the white-hot cream of an eighth-grade boy.",
       "characters": [
         "Charlie"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Charlie challenges Dennis to a dance-off",
-      "punchline": "Disturbing metaphor about eighth-grade performance",
-      "craft_total": 7.78,
-      "impact_score": 8.0,
-      "quotability": 8.0,
+      "setup": "Charlie challenges Dennis to a dance-off and sets up his trash talk",
+      "punchline": "'I'm about to show you the white-hot cream of an eighth-grade boy' \u2014 the cream metaphor returns, now inadvertently describing something deeply inappropriate",
+      "craft_total": 7.65,
+      "impact_score": 7.83,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Disturbing and memorable line that perfectly captures Charlie's bizarre mindset"
+      "explanation": "The best callback in the episode and one of the strongest jokes overall. 'The white-hot cream of an eighth-grade boy' is an extraordinary sentence that lands on multiple levels: it's a callback to the cream metaphor, a reference to Charlie's 1989 dance routine, and an accidental construction that sounds spectacularly inappropriate. Charlie delivers it with complete earnestness, which is what elevates it from a cheap gross-out to genuine comedy genius. Only Charlie Kelly could mean this innocently. High originality, perfectly structured callback, essential character integration."
     },
     {
-      "index": 49,
-      "text": "It was like a ballet. How did he remember that choreography? It was 20 years ago.",
+      "index": 67,
+      "text": "Charlie performs his 1989 eighth-grade dance routine perfectly \u2014 a full choreographed ballet-style number",
+      "characters": [
+        "Charlie"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "character_comedy"
+      ],
+      "setup": "Charlie has set up his 8th grade dance as his secret weapon",
+      "punchline": "The routine is apparently genuinely beautiful \u2014 the gap between 'illiterate chaos goblin' and 'technically skilled choreographed dancer' is the joke",
+      "craft_total": 8.04,
+      "impact_score": 8.67,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The payoff on the 8th grade dance setup works on multiple levels. It's been established throughout the episode that Charlie is an illiterate chaos agent \u2014 the reveal that he has perfectly preserved 20-year-old competition choreography and can execute it is a genuinely funny subversion. The observers' reactions ('It was like a ballet,' 'How did he remember that choreography?') sell it. Great visual comedy moment."
+    },
+    {
+      "index": 68,
+      "text": "It was like a ballet. / How did he remember that choreography? It was 20 years ago. / I don't know. It was beautiful, man.",
       "characters": [
         "Mac",
         "Dennis"
@@ -950,131 +1353,319 @@
         "reaction_beat",
         "character_comedy"
       ],
-      "setup": "Charlie performs his eighth-grade dance",
-      "punchline": "Everyone is genuinely impressed despite themselves",
-      "craft_total": 6.76,
-      "impact_score": 6.33,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Charlie has just performed an unexpected ballet-style routine",
+      "punchline": "Mac and Dennis are genuinely moved \u2014 'It was beautiful, man' \u2014 these terrible people having an aesthetic response to Charlie's absurd dance",
+      "craft_total": 7.24,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good subversion - Charlie's ridiculous plan actually works"
+      "explanation": "Good reaction beat. Mac and Dennis's genuine aesthetic appreciation is funny because it's unexpected from these characters. 'It was beautiful, man' as a sincere statement between two people who've spent the episode drugging and manipulating people is a good tonal contrast."
     },
     {
-      "index": 50,
-      "text": "Not only did I get Charlie to eat a drug filled brownie... I got everybody in here to do it.",
+      "index": 69,
+      "text": "Energy ball, courtesy of my partner here. / You look pretty woozy there, buddy. / I'm feeling woozy... / Oh, Charlie, that might be the cough medicine. You got about 15 minutes until you drop like a ton of bricks.",
+      "characters": [
+        "Charlie",
+        "Frank",
+        "Dennis"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "escalation"
+      ],
+      "setup": "Charlie has been given the drug brownie and is dancing, feeling the effects",
+      "punchline": "Frank casually informs Charlie that he has about 15 minutes before he collapses \u2014 Charlie has been drugged and doesn't realize it",
+      "craft_total": 7.06,
+      "impact_score": 7.0,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Good dark beat. Frank's casual '15 minutes until you drop like a ton of bricks' countdown delivered with the same matter-of-factness as a weather forecast is very Frank. The reveal that Charlie has been eating his own accomplice's drug brownie is good plotting."
+    },
+    {
+      "index": 70,
+      "text": "Holy shit! Did you play me? / Oh, I played you. I played you good. / Maybe now you two jerks might want to start treating me with a little respect.",
+      "characters": [
+        "Charlie",
+        "Frank"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Charlie realizes Frank drugged him",
+      "punchline": "Frank's triumphant 'I played you good' and demand for respect from the man he just poisoned",
+      "craft_total": 6.56,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Frank's triumphant villain reveal is played well. 'I played you good' as self-congratulation for sedating a co-owner of your own bar is good dark character work. His demand for respect as his follow-up is the key character note."
+    },
+    {
+      "index": 71,
+      "text": "Not only did I get Charlie to eat a drug-filled brownie... I got everybody in here to do it. / Pretty soon, people are gonna be dropping like flies, and it's gonna be me and you two jerks.",
       "characters": [
         "Frank"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "escalation"
+      ],
+      "setup": "Frank reveals the scope of his scheme",
+      "punchline": "Frank didn't just drug Charlie \u2014 he drugged the entire competition, leaving only himself (not competing) and the two people he wants to manipulate",
+      "craft_total": 7.11,
+      "impact_score": 7.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good escalation reveal. Frank mass-drugging a dance competition to manipulate a legal contest for his own bar is perfectly on-brand. The scale of his plan being revealed (not just one brownie but the whole batch distributed) is a satisfying escalation."
+    },
+    {
+      "index": 72,
+      "text": "Good luck with those kegs, boners. / Bitch! / There is enough cough medicine in there to kill a gorilla. / If you keep eating it, you're not gonna last five minutes. / Bro, I can handle my sedatives.",
+      "characters": [
+        "Frank",
+        "Mac",
+        "Dennis",
+        "Charlie"
       ],
       "joke_types": [
         "escalation",
         "character_comedy"
       ],
-      "setup": "Frank reveals his scheme",
-      "punchline": "He drugged everyone, not just competitors",
-      "craft_total": 6.78,
-      "impact_score": 6.0,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Frank taunts the gang about the drug brownies",
+      "punchline": "Frank warns there's enough sedative 'to kill a gorilla'; Charlie responds 'bro, I can handle my sedatives' \u2014 Charlie has such a high drug tolerance he treats this casually",
+      "craft_total": 7.71,
+      "impact_score": 8.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good escalation showing Frank's schemes often backfire through over-ambition"
+      "explanation": "'Bro, I can handle my sedatives' is one of the episode's most quotable lines. The implication that Charlie has developed such a tolerance to sedatives from years of huffing glue and other chemicals that gorilla-killing doses don't phase him is a perfect character-specific callback to the show's mythology. 'Good luck with those kegs, boners' as a parting shot is also solid. 'Kill a gorilla' is a good escalation escalation of the drug stakes."
     },
     {
-      "index": 51,
-      "text": "There is enough cough medicine in there to kill a gorilla. Bro, I can handle my sedatives.",
+      "index": 73,
+      "text": "Bitch! / There is enough cough medicine in there to kill a gorilla. / If you keep eating it, you're not gonna last five minutes. / Bro, I can handle my sedatives.",
       "characters": [
+        "Mac",
         "Frank",
-        "Mac"
+        "Charlie"
       ],
       "joke_types": [
         "character_comedy",
         "dark_subversive"
       ],
-      "setup": "Frank warns Mac about the drug dosage",
-      "punchline": "Mac casually claims sedative tolerance",
-      "craft_total": 6.96,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Mac and Charlie react to Dennis's betrayal; Frank warns about the drug quantity",
+      "punchline": "Charlie's 'Bro, I can handle my sedatives' \u2014 a sincere declaration of sedative tolerance as if this is a known and respectable personal attribute",
+      "craft_total": 7.96,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark humor about Mac's apparent drug experience"
+      "explanation": "One of the best lines of the episode. 'I can handle my sedatives' as a sincere statement of confidence implies Charlie has extensive prior experience with sedatives as a recreational matter \u2014 consistent with his character (huffing glue, 'Charlie Work' lifestyle). The word 'my' is key: he thinks of them as his sedatives specifically. Highly quotable and deeply character-specific."
     },
     {
-      "index": 52,
-      "text": "Karate... snow machine... chop set... What's with the chopping? I'm chopping all over my action. And mostly power.",
+      "index": 74,
+      "text": "Karate... snow machine... chop set... / What's with the chopping? / I'm chopping all over my action. / And mostly power.",
       "characters": [
-        "Charlie"
+        "Charlie",
+        "Mac"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Charlie is high on cough medicine",
-      "punchline": "Nonsensical rambling about chopping and action",
-      "craft_total": 6.28,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Charlie is visibly losing his mind from the cough medicine but still dancing",
+      "punchline": "His drug-addled commentary on his own dancing: 'I'm chopping all over my action. And mostly power.' \u2014 complete word salad delivered with authority",
+      "craft_total": 7.57,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good drug-addled Charlie dialogue that's both absurd and in-character"
+      "explanation": "'Karate... snow machine... chop set' as drug-addled dance commentary is excellent absurdism. 'I'm chopping all over my action' and 'mostly power' as self-analysis are great non-sequiturs that feel specifically Charlie-on-drugs. His insistence that he's still in control while clearly dissociating is perfect physical/verbal comedy."
     },
     {
-      "index": 53,
+      "index": 75,
+      "text": "Break me off a piece of that exoskeleton. / It doesn't work that way. / Give me some of that liquid hydraulic shit! / No, man! Hey! / It's a sensitive science! Don't use your elbows!",
+      "characters": [
+        "Mac",
+        "Cricket"
+      ],
+      "joke_types": [
+        "callback",
+        "absurdist"
+      ],
+      "setup": "Mac is struggling and wants Cricket's leg brace technology",
+      "punchline": "Mac tries to literally snap off a piece of Cricket's exoskeleton; Cricket defends it as 'sensitive science'",
+      "craft_total": 7.33,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good callback payoff. The earlier reverent discussion of Cricket's 'liquid hydraulic system' now becomes Mac physically trying to consume it. 'It's a sensitive science! Don't use your elbows!' is Cricket defending his leg brace with academic authority \u2014 funny juxtaposition of his homelessness and his proprietorial relationship with his medical equipment."
+    },
+    {
+      "index": 76,
+      "text": "Whoa! Dennis, what are you doing? / Oh, goddamn it! / Ohh! Double whammy! Are you happy? Dee's gonna win.",
+      "characters": [
+        "Mac",
+        "Dennis",
+        "Frank"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "escalation"
+      ],
+      "setup": "Dennis apparently loses his balance or falls, taking someone down with him",
+      "punchline": "Frank's 'double whammy' \u2014 two contestants down at once \u2014 with the horrifying implication that Dee might actually win",
+      "craft_total": 6.07,
+      "impact_score": 6.33,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Physical comedy beat. The 'double whammy' is functional escalation. Frank's horror at Dee potentially winning is a good character note."
+    },
+    {
+      "index": 77,
       "text": "Don't worry about it. I got an inside horse... Larry. That's my inside horse.",
       "characters": [
         "Frank"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "deadpan_understatement"
       ],
-      "setup": "Frank claiming he'll still win",
-      "punchline": "Frank calling Cricket 'Larry' and treating him like a racehorse",
-      "craft_total": 7.04,
-      "impact_score": 6.5,
+      "setup": "Frank is upset that the gang has been eliminated",
+      "punchline": "Frank reveals his backup plan is a homeless man named Larry who he's been managing as a contestant",
+      "craft_total": 6.93,
+      "impact_score": 6.83,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Frank's gambling terminology applied to exploiting Cricket, plus wrong name"
+      "explanation": "Good beat. 'That's my inside horse' as a phrase applied to a homeless dance marathon contestant named Larry is a great comedic juxtaposition of horse-racing terminology with the specificity of 'Larry.' Frank's confidence in Larry is very Frank."
     },
     {
-      "index": 54,
-      "text": "I have a shattered kneecap! Dee, we can start again. Right? Never talk to me again, you goddamn street rat!",
+      "index": 78,
+      "text": "You feeling bad? That's too bad. 'Cause I'm just getting my second wind.",
       "characters": [
-        "Dee",
-        "Cricket"
-      ],
-      "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
-      ],
-      "setup": "Cricket injures Dee to help her win",
-      "punchline": "She immediately rejects him despite his sacrifice",
-      "craft_total": 6.18,
-      "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good dark comedy - Cricket's sacrifice is immediately dismissed"
-    },
-    {
-      "index": 55,
-      "text": "At least you're not ranked last anymore. Who's last now? Charlie. That kid really needs to learn how to read.",
-      "characters": [
-        "Frank",
         "Dee"
       ],
       "joke_types": [
-        "callback",
+        "character_comedy",
         "irony_sarcasm"
       ],
-      "setup": "Dee lost the competition",
-      "punchline": "Frank points out Charlie's the real loser due to his illiteracy",
-      "craft_total": 6.64,
-      "impact_score": 6.0,
-      "quotability": 5.0,
+      "setup": "Dee taunts the eliminated contestants",
+      "punchline": "Dee's triumphant 'I'm just getting my second wind' \u2014 the worst-ranked member of the gang who was about to be beaten is now the last one standing",
+      "craft_total": 5.94,
+      "impact_score": 5.67,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Minor character beat. Dee's moment of triumph is set up for immediate destruction, which is good structure. The irony of the ranked-last person being last standing is delivered adequately."
+    },
+    {
+      "index": 79,
+      "text": "Cricket! Now! / Here I come, Dee! I love you so much! / Oh, my God, my knee!",
+      "characters": [
+        "Frank",
+        "Cricket",
+        "Dee"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "dark_subversive"
+      ],
+      "setup": "Frank signals Cricket as his final weapon against Dee",
+      "punchline": "Cricket launches himself at Dee with 'I love you so much!' \u2014 he charges the woman he's obsessed with as a missile, shattering her knee",
+      "craft_total": 7.0,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best physical comedy beats. Cricket being deployed as a human torpedo with the declaration 'Here I come, Dee! I love you so much!' is a perfect blend of his pathetic infatuation and Frank's total disregard for human welfare. He destroys her knee while expressing love. The structure is excellent \u2014 his love declaration simultaneous with causing physical harm."
+    },
+    {
+      "index": 80,
+      "text": "Oh, my God, my knee! / Larry wins! Whoo! All right, Larry!",
+      "characters": [
+        "Dee",
+        "Frank"
+      ],
+      "joke_types": [
+        "physical_slapstick",
+        "dark_subversive"
+      ],
+      "setup": "Cricket attacks Dee, apparently targeting her knee, allowing Larry the homeless man to win",
+      "punchline": "Dee screaming about her shattered kneecap while Frank celebrates Larry's win \u2014 the juxtaposition of Dee's pain and Frank's triumphant 'All right, Larry!' is excellent tonal contrast",
+      "craft_total": 6.84,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The physical climax of the episode \u2014 Dee's kneecap shattered by Cricket while Frank cheers \u2014 is a solid dark slapstick payoff. Frank's immediate pivot to 'Larry wins!' without any acknowledgment of Dee's injury is excellent."
+    },
+    {
+      "index": 81,
+      "text": "Larry! You won the bar for us! / Larry wins! Whoo! All right, Larry! / I have a shattered kneecap!",
+      "characters": [
+        "Frank",
+        "DJ Squirrely D",
+        "Dee"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Larry the homeless man wins the dance marathon after everyone else is eliminated",
+      "punchline": "Frank and the DJs celebrate Larry winning while Dee screams about her shattered kneecap \u2014 the bar is now owned by Larry",
+      "craft_total": 7.01,
+      "impact_score": 7.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good payoff. Larry the homeless man now legally owns Paddy's Pub. The celebration of this outcome while ignoring Dee's injury is perfect Sunny callousness. The scale of the original disaster (Charlie's misread form) is validated by this ending."
+    },
+    {
+      "index": 82,
+      "text": "Dee, we can start again. Right? / Never talk to me again, you goddamn street rat!",
+      "characters": [
+        "Cricket",
+        "Dee"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Cricket has just shattered Dee's kneecap while expressing his love for her",
+      "punchline": "He immediately asks if they can 'start again' romantically; Dee calls him 'street rat' \u2014 the same slur Frank uses",
+      "craft_total": 7.2,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Nice callback that brings the episode full circle"
+      "explanation": "Great character beat. Cricket just destroyed Dee's knee and immediately pivots to romantic hope. Dee's adoption of Frank's 'street rat' insult is a good callback \u2014 she's absorbed the gang's dehumanizing language and deployed it on the man who just crippled her. Tragicomic and very Sunny."
+    },
+    {
+      "index": 83,
+      "text": "Look on the bright side, Deandra. At least you're not ranked last anymore. / Who's last now? / Charlie. / That kid really needs to learn how to read.",
+      "characters": [
+        "Frank",
+        "Mac",
+        "Dennis"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Dee has a shattered kneecap; the bar has been won by a homeless man",
+      "punchline": "Frank's silver lining: at least Dee moved up in the ranking. The final callback to both the ranking system AND Charlie's illiteracy \u2014 the disaster started with Charlie's illiteracy and ends with the same joke",
+      "craft_total": 8.17,
+      "impact_score": 8.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's strongest jokes because it's the best-constructed callback. The entire episode begins with Frank's ranking system and Charlie's illiteracy. The ending brings both home simultaneously: Dee gets her ranking consolation prize (not last anymore!), and the whole catastrophe is wrapped up with 'that kid really needs to learn how to read' \u2014 said with casual resignation about a disaster the gang made no effort to prevent. Perfect structural comedy. The bright-side framing of losing your bar and shattering a kneecap as 'at least your rank went up' is exactly the right pitch of callousness."
     }
   ],
   "air_date": "2007-11-15",
