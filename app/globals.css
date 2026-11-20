@@ -65,3 +65,6 @@ a, button {
 @media (prefers-reduced-motion: reduce) {
   .animate-\[fadeUp_\.35s_ease-out\] { animation: none !important; }
 }
+
+/* An ad slot Google leaves empty collapses instead of leaving a blank box. */
+aside:has(ins.adsbygoogle[data-ad-status="unfilled"]) { display: none; }

@@ -1,5 +1,6 @@
 'use client';
 import { useState, useMemo } from 'react';
+import { characterHref } from '@/lib/characterPages';
 import Link from 'next/link';
 import Image from 'next/image';
 import { charImageSrc } from '@/lib/charImage';
@@ -111,7 +112,7 @@ export default function LeastFunnyClient({ characters }: { characters: BottomCha
           return (
             <Link
               key={`${c.showSlug}-${c.name}`}
-              href={`/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`}
+              href={characterHref(c.showSlug, c.name) ?? `/shows/${c.showSlug}/`}
               className="flex items-center gap-3 bg-brand-card border border-brand-border rounded-lg px-4 py-3 hover:border-brand-gold/40 transition-colors group"
             >
               <span className="font-mono text-sm text-brand-text-muted w-6 shrink-0">#{i + 1}</span>

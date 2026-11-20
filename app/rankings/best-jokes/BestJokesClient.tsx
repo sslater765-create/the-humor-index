@@ -1,5 +1,6 @@
 'use client';
 import { useState, useMemo } from 'react';
+import { characterHref } from '@/lib/characterPages';
 import Link from 'next/link';
 
 export interface RankedJoke {
@@ -116,15 +117,20 @@ export default function BestJokesClient({ jokes }: { jokes: RankedJoke[] }) {
             </p>
             {joke.characters?.length > 0 && (
               <div className="flex items-center gap-1.5 mb-2">
-                {joke.characters.map(c => (
-                  <Link
-                    key={c}
-                    href={`/shows/${joke.showSlug}/characters/${encodeURIComponent(c)}`}
-                    className="text-xs text-brand-text-muted border border-brand-border rounded px-1.5 py-0.5 hover:text-brand-gold hover:border-brand-gold/50 transition-colors"
-                  >
-                    {c}
-                  </Link>
-                ))}
+                {joke.characters.map(c => {
+                  const href = characterHref(joke.showSlug, c);
+                  return href ? (
+                    <Link
+                      key={c}
+                      href={href}
+                      className="text-xs text-brand-text-muted border border-brand-border rounded px-1.5 py-0.5 hover:text-brand-gold hover:border-brand-gold/50 transition-colors"
+                    >
+                      {c}
+                    </Link>
+                  ) : (
+                    <span key={c} className="text-xs text-brand-text-muted border border-brand-border rounded px-1.5 py-0.5">{c}</span>
+                  );
+                })}
               </div>
             )}
 

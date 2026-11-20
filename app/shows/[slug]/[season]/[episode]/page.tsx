@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { characterHref } from '@/lib/characterPages';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getShow, getEpisodes, getEpisodeDetail, getSimilarEpisodes } from '@/lib/data';
@@ -296,12 +297,16 @@ export default async function EpisodePage({
             <span>Featuring</span>
             {(detail as any).guest_stars.slice(0, 6).map((g: any, i: number) => (
               <span key={i}>
-                <Link
-                  href={`/shows/${params.slug}/characters/${encodeURIComponent(g.character?.split(' ')[0] || g.name)}`}
-                  className="text-brand-text-secondary hover:text-brand-gold transition-colors"
-                >
-                  {g.name}
-                </Link>
+                {characterHref(params.slug, g.character?.split(' ')[0] || g.name) ? (
+                  <Link
+                    href={characterHref(params.slug, g.character?.split(' ')[0] || g.name)!}
+                    className="text-brand-text-secondary hover:text-brand-gold transition-colors"
+                  >
+                    {g.name}
+                  </Link>
+                ) : (
+                  <span className="text-brand-text-secondary">{g.name}</span>
+                )}
                 {i < Math.min((detail as any).guest_stars.length, 6) - 1 && ','}
               </span>
             ))}

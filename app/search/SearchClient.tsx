@@ -1,5 +1,6 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
+import { characterHref } from '@/lib/characterPages';
 import Link from 'next/link';
 import { JokeType } from '@/lib/types';
 import SurpriseButton from '@/components/ui/SurpriseButton';
@@ -129,10 +130,10 @@ export default function SearchClient() {
           {suggestions.length > 0 && (
             <div className="absolute z-20 left-0 right-0 top-full mt-1 bg-brand-card border border-brand-border rounded-xl overflow-hidden shadow-lg">
               {suggestions.map((s, i) => (
-                s.type === 'character' && s.slug ? (
+                s.type === 'character' && s.slug && characterHref(s.slug, s.label) ? (
                   <Link
                     key={`${s.label}-${i}`}
-                    href={`/shows/${s.slug}/characters/${encodeURIComponent(s.label)}`}
+                    href={characterHref(s.slug, s.label)!}
                     className="w-full text-left px-4 py-2.5 text-sm hover:bg-brand-surface transition-colors flex items-center justify-between"
                   >
                     <span className="text-brand-text-primary truncate">{s.label}</span>
@@ -220,13 +221,17 @@ export default function SearchClient() {
                       {joke.characters.map((c, i) => (
                         <span key={c}>
                           {i > 0 && <span className="text-brand-text-muted"> · </span>}
-                          <Link
-                            href={`/shows/${joke.showSlug}/characters/${encodeURIComponent(c)}`}
-                            className="text-brand-gold hover:underline"
-                            onClick={e => e.stopPropagation()}
-                          >
-                            {c}
-                          </Link>
+                          {characterHref(joke.showSlug, c) ? (
+                            <Link
+                              href={characterHref(joke.showSlug, c)!}
+                              className="text-brand-gold hover:underline"
+                              onClick={e => e.stopPropagation()}
+                            >
+                              {c}
+                            </Link>
+                          ) : (
+                            <span className="text-brand-gold">{c}</span>
+                          )}
                         </span>
                       ))}
                       <span className="text-brand-gold">:</span>

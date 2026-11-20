@@ -1,5 +1,6 @@
 'use client';
 import { useState, useMemo } from 'react';
+import { characterHref } from '@/lib/characterPages';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -222,7 +223,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
                 transition={{ duration: 0.25, ease: 'easeOut' }}
               >
                 <Link
-                  href={`/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`}
+                  href={characterHref(c.showSlug, c.name) ?? `/shows/${c.showSlug}/`}
                   className="relative block bg-brand-card border border-brand-border rounded-xl p-4 hover:border-brand-gold/40 transition-colors group overflow-hidden"
                 >
                   {/* Background bar */}
@@ -286,7 +287,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
                 return (
                   <Link
                     key={`tw-total-${c.name}-${c.showSlug}`}
-                    href={`/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`}
+                    href={characterHref(c.showSlug, c.name) ?? `/shows/${c.showSlug}/`}
                     className="relative block px-3 py-2 rounded-lg bg-brand-surface/50 hover:bg-brand-surface transition-colors group overflow-hidden"
                   >
                     <div
@@ -322,7 +323,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
                 return (
                   <Link
                     key={`tw-perep-${c.name}-${c.showSlug}`}
-                    href={`/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`}
+                    href={characterHref(c.showSlug, c.name) ?? `/shows/${c.showSlug}/`}
                     className="relative block px-3 py-2 rounded-lg bg-brand-surface/50 hover:bg-brand-surface transition-colors group overflow-hidden"
                   >
                     <div

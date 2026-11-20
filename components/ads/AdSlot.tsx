@@ -12,10 +12,15 @@ import { useEffect, useRef } from 'react';
  *   in-feed     NEXT_PUBLIC_AD_SLOT_IN_FEED      between sections on show pages
  *
  * Each slot reserves its height before the ad loads so the page doesn't jump.
+ *
+ * NEXT_PUBLIC_ADS_ON=1 turns the slots on. Leave it unset until AdSense approves
+ * the site: before approval Google serves nothing and the page would show empty
+ * "Advertisement" boxes. Slots Google leaves unfilled collapse (globals.css).
  */
 export type AdPlacement = 'in-article' | 'sidebar' | 'in-feed';
 
-const PUBLISHER_ID = process.env.NEXT_PUBLIC_ADSENSE_ID || '';
+const ADS_ON = process.env.NEXT_PUBLIC_ADS_ON === '1';
+const PUBLISHER_ID = ADS_ON ? process.env.NEXT_PUBLIC_ADSENSE_ID || '' : '';
 const SLOTS: Record<AdPlacement, string> = {
   'in-article': process.env.NEXT_PUBLIC_AD_SLOT_IN_ARTICLE || '',
   sidebar: process.env.NEXT_PUBLIC_AD_SLOT_SIDEBAR || '',

@@ -234,6 +234,8 @@ Chappelle's Show holds #2 and #3 in the whole dataset (9.85 and 9.83), then Sein
 
 **Post:** Sun Sep 13, 7:30 PM ET
 
+**Published:** Sep 13, 2026 (scheduled slot in the Sep 8 – Oct 7 run), with the numbers above. The Friends rescore finished after that and moved them: this joke now scores combined 9.06 (craft 8.78, impact 9.33), and Friends went from 73.0 to 87.1 on the Humor Index with 17,755 jokes scored. The card is left as it shipped.
+
 **The joke:** S10E06 "The One with Ross's Grant" — Phoebe, on dividing up her two horrifying paintings. Combined **9.19** (craft 8.88, impact 9.50, quotability 9.0). The highest-scored Friends joke that is not Ross's wedding.
 
 **Framing note:** ranks 1, 2 and 3 in Friends are all the same wedding moment scored across three episodes. We already made that video in May (#3). This is the highest joke that isn't it, which is a cleaner claim and a better fight.
@@ -271,6 +273,8 @@ Friends also has the lowest show score of the 21 we've done: 73.0. High joke cou
 ## #15 — IT'S ALWAYS SUNNY — "You're eating the dog!"
 
 **Post:** Mon Sep 14, 7:30 PM ET
+
+**Published:** Sep 14, 2026 (scheduled slot in the Sep 8 – Oct 7 run), with the numbers above. The Sunny rescore (Nov 2026) moved them: this joke now scores combined 9.09 (craft 8.86, impact 9.33) and ranks #37 of 12,932 Sunny jokes, so the "#1" claim no longer holds. The card is left as it shipped.
 
 **The joke:** S11E05 "Mac & Dennis Move to the Suburbs" — Mac's suburban breakdown, defending Dennis liking Dennis, capped by the realization about what he's eating. Combined **9.37** (craft 8.98, impact 9.75, quotability 9.5).
 
@@ -1016,6 +1020,8 @@ Ranks 1 through 5: the loose seal tag (9.88), "I'm your father, Steve Holt" (9.5
 
 **Post:** Sun Oct 4, 7:30 PM ET
 
+**Published:** Oct 4, 2026 (scheduled slot in the Sep 8 – Oct 7 run), with the numbers above. After the Friends rescore this joke scores combined 9.20 (craft 8.90) of 17,755 Friends jokes. The card is left as it shipped.
+
 **The joke:** S10E11 "The One Where the Stripper Cries" — Ross and Chandler on the college flashback. Combined **9.16** (craft 8.82, impact 9.50, quotability 9.0). #5 in the show.
 
 **YouTube search:** "i was the pile of coats" OR "friends stripper cries flashback"
@@ -1087,6 +1093,8 @@ Alexis holds #2 ("Follow us on tweeters!", 9.21) and #4. David holds #1 and shar
 ## #37 — IT'S ALWAYS SUNNY — "I eat stickers all the time, dude!"
 
 **Post:** Tue Oct 6, 7:30 PM ET
+
+**Published:** Oct 6, 2026 (scheduled slot in the Sep 8 – Oct 7 run), with the numbers above. After the Sunny rescore this joke scores combined 8.81 (craft 8.61, impact 9.00, quotability 9.5). The card is left as it shipped.
 
 **The joke:** S05E02 "The Gang Hits the Road" — Charlie. Combined **9.02** (craft 8.70, impact 9.33, quotability 10.0). #8 in the show, highest quotability.
 

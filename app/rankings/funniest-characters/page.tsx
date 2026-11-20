@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { characterHref } from '@/lib/characterPages';
 import { getAllShows, getCharacters } from '@/lib/data';
 import PageHeader from '@/components/layout/PageHeader';
 import SocialShare from '@/components/ui/SocialShare';
@@ -98,12 +99,13 @@ export default async function FunniestCharactersPage() {
               name: 'Funniest Sitcom Characters of All Time',
               itemListElement: [...warChars]
                 .sort((a, b) => b.war - a.war)
+                .filter(c => characterHref(c.showSlug, c.name))
                 .slice(0, 30)
                 .map((c, i) => ({
                   '@type': 'ListItem',
                   position: i + 1,
                   name: `${c.name} — ${c.showName}`,
-                  url: `${SITE_URL}/shows/${c.showSlug}/characters/${encodeURIComponent(c.name)}`,
+                  url: `${SITE_URL}${characterHref(c.showSlug, c.name)}`,
                 })),
             }),
           }}

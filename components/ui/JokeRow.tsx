@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { characterHref } from '@/lib/characterPages';
 import Link from 'next/link';
 import { Joke } from '@/lib/types';
 import { JOKE_TYPE_LABELS } from '@/lib/scoring';
@@ -65,10 +66,10 @@ export default function JokeRow({ joke, isStandout, showSlug }: Props) {
               })()}
               <div className="flex flex-wrap items-center gap-1 mt-2">
                 {joke.characters.map(c => (
-                  showSlug ? (
+                  characterHref(showSlug, c) ? (
                     <Link
                       key={c}
-                      href={`/shows/${showSlug}/characters/${encodeURIComponent(c)}`}
+                      href={characterHref(showSlug, c)!}
                       className="text-[11px] text-brand-text-muted border border-brand-border rounded px-1.5 py-0.5 hover:text-brand-gold hover:border-brand-gold/50 transition-colors"
                       onClick={e => e.stopPropagation()}
                     >

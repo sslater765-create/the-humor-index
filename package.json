@@ -12,7 +12,8 @@
     "test": "vitest run",
     "check:data": "node scripts/check-data.mjs",
     "check:claims": "python3 video/check_claims.py",
-    "regen:top-jokes": "node scripts/regen-top-jokes.mjs"
+    "regen:top-jokes": "node scripts/regen-top-jokes.mjs",
+    "prebuild": "node scripts/build-character-pages.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",
