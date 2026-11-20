@@ -5,10 +5,6 @@ import { archetypeExemplars, emblemSVG, EMBLEMS } from '@/lib/comedyDna';
 import ComedyDnaQuiz from '@/components/comedy-dna/ComedyDnaQuiz';
 import { SITE_URL } from '@/lib/site';
 
-// Hero illustrated card per show (the most quotable joke's art), shown as the
-// banner on each archetype card so it matches the "exemplified by" show.
-const HERO_BY_SLUG: Record<string, string> = { "30-rock": "54940", "arrested-development": "45683", "community": "68764", "flight-of-the-conchords": "99310", "friends": "20897", "its-always-sunny": "92162", "parks-and-recreation": "39411", "schitts-creek": "43543", "seinfeld": "9626", "taxi": "60857", "the-fresh-prince-of-bel-air": "109663", "the-larry-sanders-show": "102932", "the-office": "office-bankruptcy", "veep": "87155" };
-
 // Manual exemplar overrides (archetype slug -> show) where the auto-pick reads off.
 const EXEMPLAR_OVERRIDE: Record<string, { slug: string; name: string }> = {
   wordsmith: { slug: 'seinfeld', name: 'Seinfeld' },
@@ -45,6 +41,11 @@ export default async function ComedyDnaPage() {
     getComedyDnaFingerprints(),
     getAllShows(),
   ]);
+  // Banner per archetype = the exemplar show's own backdrop, so every card has art
+  // and it always matches the "exemplified by" show.
+  const backdropBySlug: Record<string, string> = Object.fromEntries(
+    shows.filter(s => s.backdrop_path).map(s => [s.slug, s.backdrop_path as string])
+  );
   const comingSoon = shows
     .filter(s => s.humor_index <= 0)
     .map(s => ({ slug: s.slug, name: s.name }));
@@ -69,14 +70,14 @@ export default async function ComedyDnaPage() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {exemplars.map(({ arche, slug, name }) => {
-            const hero = slug ? HERO_BY_SLUG[slug] : undefined;
+            const hero = slug ? backdropBySlug[slug] : undefined;
             const c = EMBLEMS[arche.emblem].c;
             return (
             <div key={arche.name} className="bg-brand-card border border-brand-border rounded-xl overflow-hidden flex flex-col transition hover:border-brand-gold/60">
               {hero && (
-                <div className="relative h-32 w-full">
+                <div className="relative aspect-[16/7] w-full">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={`/cards/${hero}.png`} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+                  <img src={`https://image.tmdb.org/t/p/w780${hero}`} alt={name ?? ''} loading="lazy" className="absolute inset-0 w-full h-full object-cover object-[center_30%] opacity-80" />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-brand-card" />
                   <span className="absolute top-3 left-3 h-1.5 w-10 rounded-full" style={{ backgroundColor: c }} />
                 </div>
