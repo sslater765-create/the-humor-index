@@ -48,7 +48,7 @@ export default function ShowCard({ show, pending = false }: Props) {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/40 to-transparent" />
             <div className="absolute top-3 left-3">
-              {show.rank && <RankBadge rank={show.rank} />}
+              {!pending && show.rank && <RankBadge rank={show.rank} />}
             </div>
             <div className="absolute bottom-3 right-4 text-right">
               <ScoreBlock show={show} pending={pending} shadow />
@@ -58,7 +58,7 @@ export default function ShowCard({ show, pending = false }: Props) {
         <div className="p-5 pb-3">
           {!show.backdrop_path && (
             <div className="flex items-start justify-between mb-4">
-              {show.rank && <RankBadge rank={show.rank} />}
+              {!pending && show.rank && <RankBadge rank={show.rank} />}
               <div className="text-right">
                 <ScoreBlock show={show} pending={pending} shadow={false} />
               </div>
