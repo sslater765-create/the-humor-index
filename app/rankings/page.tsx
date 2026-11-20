@@ -10,6 +10,8 @@ import { charImageSrc } from '@/lib/charImage';
 import { rankable, isAwaitingRescore } from '@/lib/scale';
 import ScaleNote from '@/components/ui/ScaleNote';
 import { getTier } from '@/lib/tiers';
+import { getMovies, getMovie, shortTitle } from '@/lib/movies';
+import MiniLaughMap from '@/components/movies/MiniLaughMap';
 export const dynamic = 'force-static';
 
 export const metadata = {
@@ -59,6 +61,8 @@ interface TopCharacter {
 
 export default async function RankingsPage() {
   const shows = await getAllShows();
+  const movies = await getMovies();
+  const leadMovie = movies[0] ? await getMovie(movies[0].slug) : null;
   // Cross-show rankings only cover shows on the current scoring scale.
   const analyzedShows = rankable(shows);
   const searchableJokes = await getSearchableJokeCount();
@@ -324,6 +328,36 @@ export default async function RankingsPage() {
 
         {/* TWO-COLUMN: People (funniest + below cast) — character portraits make this section sing */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+          {/* Movies: their own board, linked from here so rankings is the one hub */}
+          {movies.length > 0 && (
+            <Link
+              href="/movies"
+              className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group lg:col-span-2"
+            >
+              <div className="grid sm:grid-cols-[1fr_1.2fr] gap-6 items-center">
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">New · Movies</p>
+                  <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">The Funniest Comedy Movies</h2>
+                  <ol className="mt-4 space-y-2">
+                    {movies.slice(0, 5).map(m => (
+                      <li key={m.slug} className="flex items-baseline gap-3 text-sm">
+                        <span className="font-mono text-brand-text-muted w-5">{m.rank}</span>
+                        <span className="text-brand-text-primary flex-1 truncate">{shortTitle(m.title)} <span className="text-brand-text-muted">({m.year})</span></span>
+                        <span className="font-mono text-brand-gold">{formatIndex(m.humor_index)}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+                {leadMovie && (
+                  <div>
+                    <p className="text-xs text-brand-text-muted mb-2">{shortTitle(leadMovie.title)}&rsquo;s Laugh Map: every joke across the runtime</p>
+                    <MiniLaughMap bins={leadMovie.laugh_map} className="h-24" />
+                  </div>
+                )}
+              </div>
+            </Link>
+          )}
 
           {/* Funniest Characters — portrait stack with WAR as the editorial number */}
           <Link

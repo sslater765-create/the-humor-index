@@ -93,7 +93,7 @@ export default async function ExplorePage({ params }: { params: { slug: string }
       <BreadcrumbJsonLd
         crumbs={[
           { name: 'Home', path: '/' },
-          { name: 'Shows', path: '/shows' },
+          { name: 'TV Shows', path: '/shows' },
           { name: show.name, path: `/shows/${params.slug}` },
           { name: 'Explorer', path: `/shows/${params.slug}/explore` },
         ]}

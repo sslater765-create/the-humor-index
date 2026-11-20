@@ -147,7 +147,7 @@ export default async function ShowBestJokesPage({ params }: { params: { slug: st
       <BreadcrumbJsonLd
         crumbs={[
           { name: 'Home', path: '/' },
-          { name: 'Shows', path: '/shows' },
+          { name: 'TV Shows', path: '/shows' },
           { name: show.name, path: `/shows/${params.slug}` },
           { name: 'Funniest Quotes', path: `/shows/${params.slug}/best-jokes` },
         ]}
@@ -161,7 +161,7 @@ export default async function ShowBestJokesPage({ params }: { params: { slug: st
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-14">
       <div className="min-w-0">
         <div className="flex items-center gap-2 text-xs text-brand-text-muted mb-6">
-          <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">Shows</Link>
+          <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">TV</Link>
           <span>/</span>
           <Link href={`/shows/${params.slug}`} className="hover:text-brand-text-secondary transition-colors">{show.name}</Link>
           <span>/</span>

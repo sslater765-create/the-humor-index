@@ -232,7 +232,7 @@ export default async function EpisodePage({
         <div className="absolute bottom-0 left-0 right-0 max-w-6xl mx-auto px-4 sm:px-6 pb-5">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-1 text-xs text-brand-text-muted mb-3" aria-label="Breadcrumb">
-            <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">Shows</Link>
+            <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">TV</Link>
             <span>/</span>
             <Link href={`/shows/${params.slug}`} className="hover:text-brand-text-secondary transition-colors truncate max-w-[120px]">
               {show.name}

@@ -117,7 +117,10 @@ export default function Footer() {
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center">
           <Link href="/shows" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
-            Shows
+            TV
+          </Link>
+          <Link href="/movies" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            Movies
           </Link>
           <Link href="/agree" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Agree?

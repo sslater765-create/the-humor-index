@@ -33,7 +33,7 @@ const nextConfig = {
   trailingSlash: true,
   experimental: {
     // The search API reads the joke index from disk at runtime; ship it with that function.
-    outputFileTracingIncludes: { '/api/search': ['./public/data/search-index.json'] },
+    outputFileTracingIncludes: { '/api/search': ['./public/data/search-index.json', './public/data/movies/*.json'] },
   },
   images: {
     formats: ['image/avif', 'image/webp'],

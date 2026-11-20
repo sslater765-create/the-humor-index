@@ -8,6 +8,8 @@ import LeaderboardClient from './LeaderboardClient';
 import WhatsNewPersonalized from '@/components/ui/WhatsNewPersonalized';
 import { POSTS } from '@/app/blog/posts';
 import HeroLoop from '@/components/HeroLoop';
+import MovieSpotlight from '@/components/movies/MovieSpotlight';
+import { getMovies } from '@/lib/movies';
 import { SITE_URL } from '@/lib/site';
 import { rankable, awaitingRescore } from '@/lib/scale';
 
@@ -21,6 +23,7 @@ function speakerLabel(name: string | undefined, show: string): string {
 
 export default async function HomePage() {
   const shows = await getAllShows();
+  const movies = await getMovies();
   const quickPool = await getQuickPickPool();
   const rankedCount = rankable(shows).length;
   // Each ranked show's best line, for the "funniest lines" strip.
@@ -44,7 +47,7 @@ export default async function HomePage() {
     '@type': 'WebSite',
     name: 'The Humor Index',
     url: `${SITE_URL}`,
-    description: 'AI-powered comedy analytics ranking every joke in television history.',
+    description: 'AI-powered comedy analytics ranking every joke in TV and movie comedy.',
     potentialAction: {
       '@type': 'SearchAction',
       target: `${SITE_URL}/shows?q={search_term_string}`,
@@ -68,12 +71,12 @@ export default async function HomePage() {
                 Comedy, Quantified
               </p>
               <h1 className="font-serif italic text-4xl sm:text-7xl text-brand-text-primary leading-[1.02] mb-5">
-                Every sitcom joke,<br />
+                Every comedy joke,<br />
                 <span className="text-brand-text-secondary">scored and ranked.</span>
               </h1>
               <p className="text-base sm:text-xl text-brand-text-secondary max-w-2xl leading-relaxed">
-                The science of what&apos;s funny — AI reads every transcript, rates every laugh on a five-axis rubric,
-                and we publish the receipts.
+                The science of what&apos;s funny. AI reads every sitcom and movie script, rates every laugh on a
+                five-axis rubric, and we publish the receipts.
               </p>
               <p className="text-base sm:text-lg text-brand-text-muted max-w-2xl leading-relaxed mt-4">
                 No laugh tracks, no nostalgia, no &ldquo;you had to be there.&rdquo; Browse the rankings,
@@ -81,13 +84,19 @@ export default async function HomePage() {
               </p>
 
               {/* Big numbers — magazine cover stats */}
-              <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-xl mt-10 lg:mt-auto lg:pt-8">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-6 sm:gap-8 max-w-2xl mt-10 lg:mt-auto lg:pt-8">
                 <div>
                   <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
                     {analyzedShows.length}
                   </p>
                   <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Shows scored</p>
                 </div>
+                <Link href="/movies" className="group">
+                  <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none group-hover:underline decoration-1 underline-offset-4">
+                    {movies.length}
+                  </p>
+                  <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2 group-hover:text-brand-gold">{movies.length === 1 ? 'Movie' : 'Movies'} scored</p>
+                </Link>
                 <div>
                   <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
                     {totalEpisodesAnalyzed.toLocaleString()}
@@ -96,7 +105,7 @@ export default async function HomePage() {
                 </div>
                 <div>
                   <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
-                    {totalJokes.toLocaleString()}
+                    {(totalJokes + movies.reduce((n, m) => n + m.total_jokes, 0)).toLocaleString()}
                   </p>
                   <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Jokes rated</p>
                 </div>
@@ -123,7 +132,7 @@ export default async function HomePage() {
               <div>
                 <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">The Index</p>
                 <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight">
-                  The leaderboard.
+                  The TV leaderboard.
                 </h2>
               </div>
               <Link href="/rankings" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors shrink-0 ml-3">
@@ -141,10 +150,17 @@ export default async function HomePage() {
               <Link href="/rankings/best-christmas-episodes" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors">
                 Best Christmas episodes
               </Link>
+              {movies.length > 0 && (
+                <Link href="/movies" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors">
+                  Movie rankings
+                </Link>
+              )}
             </div>
           </div>
         </div>
       </section>
+
+      <MovieSpotlight />
 
       {/* Comedy DNA, one tap: a pick right here is the quickest way into a personal
           match % on the leaderboard and show pages. */}

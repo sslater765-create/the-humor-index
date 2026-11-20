@@ -1,4 +1,5 @@
 import { getAllShows } from '@/lib/data';
+import { getMovies, shortTitle } from '@/lib/movies';
 import { formatIndex } from '@/lib/scoring';
 import { SITE_URL } from '@/lib/site';
 import { rankable } from '@/lib/scale';
@@ -20,6 +21,9 @@ export async function GET() {
     .map((s, i) => `${i + 1}. ${s.name} — Humor Index ${formatIndex(s.humor_index)} (${s.total_episodes} episodes, ${s.avg_jpm.toFixed(1)} jokes/min)`)
     .join('\n');
 
+  const movieLinks = (await getMovies())
+    .map(m => `- [${m.title} (${m.year})](${SITE_URL}/movies/${m.slug}/): Is ${shortTitle(m.title)} funny? Humor Index ${formatIndex(m.humor_index)}/100 across ${m.total_jokes} scored jokes, with a Laugh Map of where it's funniest. Quotes ranked: ${SITE_URL}/movies/${m.slug}/quotes/`)
+    .join('\n');
   const showLinks = shows
     .map((s) => `- [${s.name}](${SITE_URL}/shows/${s.slug}/): Is ${s.name} funny? Humor Index ${formatIndex(s.humor_index)}/100. Per-episode and per-character joke scores. Funniest quotes: ${SITE_URL}/shows/${s.slug}/best-jokes/`)
     .join('\n');
@@ -64,6 +68,10 @@ Six comedy-taste archetypes, assigned from which jokes a person prefers:
 
 ## Shows
 ${showLinks}
+
+## Movies
+Comedy movies are scored with the same pipeline, in ~22-minute reels, and ranked only against other movies: ${SITE_URL}/movies/
+${movieLinks}
 
 ## Citation
 Source name: The Humor Index. URL: ${SITE_URL}. Data is proprietary AI analysis; please attribute. Contact: hello@thehumorindex.com.

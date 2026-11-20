@@ -1,4 +1,6 @@
 import WhereToWatch from '@/components/WhereToWatch';
+import CrossoverStrip from '@/components/movies/CrossoverStrip';
+import { crossoversForShow } from '@/lib/crossover';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -123,6 +125,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
     getComedyDna(params.slug),
     getShowDnaJokes(params.slug),
   ]);
+  const crossovers = await crossoversForShow(params.slug);
 
   // Map real character data to CharacterStats format for charts. We deliberately
   // omit `jpm` here — per-character JPM isn't computed by the pipeline, and the
@@ -149,7 +152,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
     // ratingCount = scored-episode count (the aggregate's sample), not joke count.
     tvSeriesJsonLd(show, episodes.length),
     breadcrumbJsonLd([
-      { name: 'Shows', path: '/shows' },
+      { name: 'TV Shows', path: '/shows' },
       { name: show.name, path: `/shows/${params.slug}` },
     ]),
   ];
@@ -180,7 +183,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         {/* Content overlay */}
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-4 sm:px-6 pb-6">
           <nav className="flex items-center gap-1 text-xs text-brand-text-muted mb-3" aria-label="Breadcrumb">
-            <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">Shows</Link>
+            <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">TV</Link>
             <span>/</span>
             <span className="text-brand-text-secondary truncate max-w-[200px]">{show.name}</span>
           </nav>
@@ -285,6 +288,13 @@ export default async function ShowPage({ params }: { params: { slug: string } })
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <WhereToWatch show={show.name} />
       </div>
+
+      {crossovers.length > 0 && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-10 mb-4">
+          <CrossoverStrip items={crossovers} side="show" title="On the big screen"
+            subtitle={`${show.name} cast in the comedy movies we've scored`} />
+        </div>
+      )}
 
 
       <ShowPageClient

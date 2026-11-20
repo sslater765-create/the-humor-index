@@ -6,9 +6,9 @@ import path from 'path';
 
 export const runtime = 'nodejs';
 
-interface CompactJoke { i: number; t: string; c: string[]; jt: string[]; cr: number; im: number; sn: string; ss: string; s: number; e: number; et: string }
+interface CompactJoke { i: number; t: string; c: string[]; jt: string[]; cr: number; im: number; sn: string; ss: string; s: number; e: number; et: string; mv?: string }
 interface Indexed extends CompactJoke { hay: string }
-interface Suggestion { label: string; type: 'character' | 'episode'; count: number; slug: string }
+interface Suggestion { label: string; type: 'character' | 'episode' | 'movie'; count: number; slug: string; href?: string }
 
 let INDEX: Indexed[] | null = null;
 let SUGGEST: Suggestion[] = [];
@@ -20,6 +20,25 @@ function load() {
   if (INDEX) return;
   const raw = fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'search-index.json'), 'utf-8');
   const data = JSON.parse(raw) as CompactJoke[];
+  // Movies: every joke from each published film, tagged mv=<slug>. s/e are 0
+  // and et holds the film-time timestamp. Titles go in as suggestions.
+  const movieSuggest: Suggestion[] = [];
+  try {
+    const dir = path.join(process.cwd(), 'public', 'data', 'movies');
+    const list = JSON.parse(fs.readFileSync(path.join(dir, 'index.json'), 'utf-8')) as Array<{ slug: string; title: string; year: number; total_jokes: number }>;
+    for (const m of list) {
+      const d = JSON.parse(fs.readFileSync(path.join(dir, `${m.slug}.json`), 'utf-8')) as {
+        jokes: Array<{ id: number; t: number | null; text: string; characters: string[]; joke_types: string[]; craft: number; impact: number }>;
+      };
+      const short = m.title.split(':')[0].trim();
+      for (const j of d.jokes) {
+        const t = j.t ?? 0;
+        data.push({ i: j.id, t: j.text, c: j.characters, jt: j.joke_types, cr: j.craft, im: j.impact,
+          sn: short, ss: m.slug, s: 0, e: 0, et: `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`, mv: m.slug });
+      }
+      movieSuggest.push({ label: `${short} (${m.year})`, type: 'movie', count: m.total_jokes, slug: m.slug, href: `/movies/${m.slug}` });
+    }
+  } catch { /* no movies published */ }
   INDEX = data.map(j => ({ ...j, hay: norm(`${j.t} ${j.c.join(' ')} ${j.sn} ${j.et}`) }));
   const items = new Map<string, Suggestion>();
   const types = new Set<string>();
@@ -30,10 +49,11 @@ function load() {
       const it = items.get(k);
       if (it) it.count++; else items.set(k, { label: c, type: 'character', count: 1, slug: j.ss });
     }
+    if (j.mv) continue;
     const ep = `${j.sn} S${j.s}E${String(j.e).padStart(2, '0')} ${j.et}`;
     if (!items.has(ep.toLowerCase())) items.set(ep.toLowerCase(), { label: ep, type: 'episode', count: 1, slug: j.ss });
   }
-  SUGGEST = Array.from(items.values()).sort((a, b) => b.count - a.count);
+  SUGGEST = [...movieSuggest, ...Array.from(items.values()).sort((a, b) => b.count - a.count)];
   TYPES = Array.from(types).sort();
 }
 

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FORMAT_COEFFICIENTS, FORMAT_LABELS, formatIndex } from '@/lib/scoring';
 import { ShowFormat } from '@/lib/types';
 import { SITE_URL } from '@/lib/site';
@@ -433,6 +434,27 @@ export default async function MethodologyPage() {
         </section>
 
         {/* Limitations */}
+        <section id="movies">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Movies</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">How We Score Movies</h2>
+          <div className="space-y-4 text-brand-text-secondary leading-relaxed">
+            <p>
+              A movie is split into reels of about 22 minutes, cut at natural scene breaks, and each reel is scored exactly like a
+              sitcom episode: same rubric, same three independent passes, same consensus. The reels keep the film&apos;s own clock,
+              so every joke carries a real timestamp. That is what the <Link href="/movies" className="text-brand-gold hover:underline">Laugh Map</Link> plots.
+            </p>
+            <p>
+              Jokes per minute use the reel&apos;s actual running time. The scorer is told that a film has plot and setup stretches a
+              sitcom doesn&apos;t, and not to pad the count with weak moments to fill them.
+            </p>
+            <p>
+              Movies are ranked only against other movies. A film spends time on story that an episode doesn&apos;t, so a movie&apos;s
+              Humor Index and a show&apos;s are not directly comparable, even though they are built the same way. Where a film exists
+              in several cuts, we score the most widely available home version, and the runtime on its page is the one we scored.
+            </p>
+          </div>
+        </section>
+
         <section>
           <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Honesty</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Known Limitations</h2>

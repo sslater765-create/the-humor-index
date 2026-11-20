@@ -41,8 +41,9 @@ export default async function ShowsPage() {
             Every sitcom, ranked.
           </h1>
           <p className="text-base sm:text-lg text-brand-text-secondary max-w-2xl leading-relaxed mb-8">
-            The whole catalog, sortable by Humor Index, WAR, or pure joke count. Filter by format —
-            single-cam, multi-cam, animation, hybrid — to compare like against like.
+            The whole catalog, sortable by Humor Index, WAR, or pure joke count. Filter by format
+            (single-cam, multi-cam, animation, hybrid) to compare like against like.
+            Looking for films? <Link href="/movies" className="text-brand-gold hover:underline">See the movie rankings</Link>.
           </p>
 
           {/* 3-up cover stats */}

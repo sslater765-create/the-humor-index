@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   description: 'AI-powered comedy analytics ranking every joke in television history. Data-driven leaderboards for the funniest shows, episodes, and characters.',
   openGraph: {
     title: 'The Humor Index',
-    description: "The definitive science of what's funny. AI-analyzed rankings of every joke in sitcom history.",
+    description: "The definitive science of what's funny. AI-analyzed rankings of every joke in sitcoms and comedy movies.",
     url: `${SITE_URL}`,
     siteName: 'The Humor Index',
     type: 'website',

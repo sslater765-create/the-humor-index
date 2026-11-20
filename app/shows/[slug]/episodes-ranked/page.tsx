@@ -83,7 +83,7 @@ export default async function EpisodesRankedPage({ params }: { params: { slug: s
       <BreadcrumbJsonLd
         crumbs={[
           { name: 'Home', path: '/' },
-          { name: 'Shows', path: '/shows' },
+          { name: 'TV Shows', path: '/shows' },
           { name: show.name, path: `/shows/${params.slug}` },
           { name: 'Episodes Ranked', path: `/shows/${params.slug}/episodes-ranked` },
         ]}
@@ -97,7 +97,7 @@ export default async function EpisodesRankedPage({ params }: { params: { slug: s
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-xs text-brand-text-muted mb-6">
-          <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">Shows</Link>
+          <Link href="/shows" className="hover:text-brand-text-secondary transition-colors">TV</Link>
           <span>/</span>
           <Link href={`/shows/${params.slug}`} className="hover:text-brand-text-secondary transition-colors">{show.name}</Link>
           <span>/</span>

@@ -4,6 +4,7 @@ import { characterHref } from '@/lib/characterPages';
 import Link from 'next/link';
 import { JokeType } from '@/lib/types';
 import SurpriseButton from '@/components/ui/SurpriseButton';
+import { jokeLines } from '@/lib/movieText';
 
 interface SearchableJoke {
   index: number;
@@ -17,6 +18,7 @@ interface SearchableJoke {
   season: number;
   episodeNumber: number;
   episodeTitle: string;
+  movieSlug?: string;
 }
 
 // On-disk shape uses short keys to keep /data/search-index.json small.
@@ -32,6 +34,7 @@ interface CompactJoke {
   s: number;
   e: number;
   et: string;
+  mv?: string;
 }
 
 function expand(j: CompactJoke): SearchableJoke {
@@ -47,6 +50,7 @@ function expand(j: CompactJoke): SearchableJoke {
     season: j.s,
     episodeNumber: j.e,
     episodeTitle: j.et,
+    movieSlug: j.mv,
   };
 }
 
@@ -54,7 +58,7 @@ function expand(j: CompactJoke): SearchableJoke {
 // page asks /api/search for the top 50 matches as you type.
 export default function SearchClient() {
   const [results, setResults] = useState<SearchableJoke[]>([]);
-  const [suggestions, setSuggestions] = useState<{ label: string; type: 'character' | 'episode' | 'show'; count: number; slug?: string }[]>([]);
+  const [suggestions, setSuggestions] = useState<{ label: string; type: 'character' | 'episode' | 'show' | 'movie'; count: number; slug?: string; href?: string }[]>([]);
   const [meta, setMeta] = useState<{ total: number; types: string[] }>({ total: 0, types: [] });
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState('');
@@ -63,6 +67,12 @@ export default function SearchClient() {
   const [sortBy, setSortBy] = useState<'relevance' | 'craft' | 'impact'>('relevance');
   const [filterType, setFilterType] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Deep links: /search/?q=anchorman pre-fills and runs the search.
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get('q');
+    if (q) { setQuery(q); setCommitted(q); }
+  }, []);
 
   useEffect(() => {
     fetch('/api/search/?meta=1').then(r => r.json()).then(setMeta).catch(() => { /* counts are cosmetic */ });
@@ -130,7 +140,18 @@ export default function SearchClient() {
           {suggestions.length > 0 && (
             <div className="absolute z-20 left-0 right-0 top-full mt-1 bg-brand-card border border-brand-border rounded-xl overflow-hidden shadow-lg">
               {suggestions.map((s, i) => (
-                s.type === 'character' && s.slug && characterHref(s.slug, s.label) ? (
+                s.type === 'movie' && s.href ? (
+                  <Link
+                    key={`${s.label}-${i}`}
+                    href={s.href}
+                    className="w-full text-left px-4 py-2.5 text-sm hover:bg-brand-surface transition-colors flex items-center justify-between"
+                  >
+                    <span className="text-brand-text-primary truncate">{s.label}</span>
+                    <span className="text-[10px] uppercase tracking-widest text-brand-gold shrink-0 ml-2">
+                      movie · {s.count} jokes
+                    </span>
+                  </Link>
+                ) : s.type === 'character' && s.slug && characterHref(s.slug, s.label) ? (
                   <Link
                     key={`${s.label}-${i}`}
                     href={characterHref(s.slug, s.label)!}
@@ -202,13 +223,15 @@ export default function SearchClient() {
           <div className="space-y-3">
             {results.map((joke) => (
               <Link
-                key={`${joke.showSlug}-${joke.season}-${joke.episodeNumber}-${joke.index}`}
-                href={`/shows/${joke.showSlug}/${joke.season}/${joke.episodeNumber}`}
+                key={`${joke.movieSlug ?? joke.showSlug}-${joke.season}-${joke.episodeNumber}-${joke.index}`}
+                href={joke.movieSlug ? `/movies/${joke.movieSlug}/quotes` : `/shows/${joke.showSlug}/${joke.season}/${joke.episodeNumber}`}
                 className="block bg-brand-card border border-brand-border rounded-xl p-4 hover:border-brand-gold/40 transition-colors group"
               >
                 <div className="flex items-start justify-between mb-2">
                   <span className="text-xs text-brand-text-muted group-hover:text-brand-gold transition-colors">
-                    {joke.showName} · S{joke.season}E{String(joke.episodeNumber).padStart(2, '0')} {'“'}{joke.episodeTitle}{'”'}
+                    {joke.movieSlug
+                      ? <>{joke.showName} · <span className="uppercase tracking-wider text-[10px] text-brand-gold">Movie</span> · {joke.episodeTitle}</>
+                      : <>{joke.showName} · S{joke.season}E{String(joke.episodeNumber).padStart(2, '0')} {'“'}{joke.episodeTitle}{'”'}</>}
                   </span>
                   <div className="flex gap-2 font-mono text-xs">
                     <span className="text-brand-blue">C:{joke.craft_total.toFixed(1)}</span>
@@ -221,7 +244,7 @@ export default function SearchClient() {
                       {joke.characters.map((c, i) => (
                         <span key={c}>
                           {i > 0 && <span className="text-brand-text-muted"> · </span>}
-                          {characterHref(joke.showSlug, c) ? (
+                          {!joke.movieSlug && characterHref(joke.showSlug, c) ? (
                             <Link
                               href={characterHref(joke.showSlug, c)!}
                               className="text-brand-gold hover:underline"
@@ -237,7 +260,9 @@ export default function SearchClient() {
                       <span className="text-brand-gold">:</span>
                     </span>
                   )}
-                  {joke.text}
+                  {joke.movieSlug
+                    ? jokeLines(joke.text, joke.characters).map(l => l.line).join(' / ')
+                    : joke.text}
                 </p>
                 <div className="flex gap-1.5 flex-wrap items-center" onClick={e => e.preventDefault()}>
                   {joke.joke_types.map(t => (
@@ -258,7 +283,7 @@ export default function SearchClient() {
               : `Start typing to search across ${jokes.length.toLocaleString()} analyzed jokes`}
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
-            {['Michael Scott', 'that\'s what she said', 'cringe', 'callback', 'sarcasm'].map(suggestion => (
+            {['Michael Scott', 'that\'s what she said', 'Ron Burgundy', 'cringe', 'callback', 'sarcasm'].map(suggestion => (
               <button
                 key={suggestion}
                 onClick={() => { setQuery(suggestion); setCommitted(suggestion); }}

@@ -2,13 +2,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getMovies, getMovie, jokeLines, bestLine, filmTime, shortTitle, laughMapNotes, TMDB_IMG, type MovieJoke } from '@/lib/movies';
-import { getAllShows } from '@/lib/data';
-import { rankable } from '@/lib/scale';
 import { formatIndex, JOKE_TYPE_LABELS } from '@/lib/scoring';
 import ScoreGauge from '@/components/ui/ScoreGauge';
 import ShareButton from '@/components/ui/ShareButton';
 import AdSlot from '@/components/ads/AdSlot';
 import LaughMap from '@/components/movies/LaughMap';
+import CrossoverStrip from '@/components/movies/CrossoverStrip';
+import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
+import { crossoversForMovie, showsLikeMovie } from '@/lib/crossover';
 import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
@@ -73,8 +74,8 @@ export default async function MoviePage({ params }: { params: { slug: string } }
   });
 
   // Tie TV and film together: shows whose cast overlaps this film's.
-  const castNames = new Set(m.cast.map(c => c.name));
-  const tv = rankable(await getAllShows()).filter(s => (s.stars ?? []).some(n => castNames.has(n)));
+  const crossovers = await crossoversForMovie(m.slug);
+  const alike = await showsLikeMovie(m.slug, 3);
   const others = movies.filter(x => x.slug !== m.slug).slice(0, 3);
 
   const reelBest = m.reels.reduce((a, b) => (b.humor_index > a.humor_index ? b : a), m.reels[0]);
@@ -126,14 +127,17 @@ export default async function MoviePage({ params }: { params: { slug: string } }
                   #{m.rank} of {movies.length} {movies.length === 1 ? 'movie' : 'movies'} scored
                 </p>
               )}
-              <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight text-brand-text-primary">{m.title}</h1>
+              <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight text-brand-text-primary">
+                {m.title}
+                <span className="sm:hidden ml-2 font-mono text-2xl text-brand-gold align-middle">{formatIndex(m.humor_index)}</span>
+              </h1>
               <p className="mt-2 text-sm text-brand-text-secondary">
                 {m.year} · {m.director} · {m.runtime_minutes} min
                 {m.stars.length > 0 && <> · {m.stars.slice(0, 3).join(', ')}</>}
               </p>
               <p className="mt-4 max-w-2xl text-brand-text-secondary leading-relaxed">{m.overview || m.logline}</p>
             </div>
-            <div className="shrink-0">
+            <div className="shrink-0 hidden sm:block">
               <ScoreGauge score={m.humor_index} size={132} label="Humor Index" />
             </div>
           </div>
@@ -141,6 +145,15 @@ export default async function MoviePage({ params }: { params: { slug: string } }
       </section>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-14">
+        {/* Answer first, the way the show pages do */}
+        <p className="rounded-xl border border-brand-border bg-brand-card px-4 py-3 text-sm sm:text-base text-brand-text-secondary leading-relaxed">
+          <strong className="text-brand-text-primary">Is {name} funny?</strong>{' '}
+          {m.humor_index >= 85 ? 'Yes. ' : m.humor_index >= 70 ? 'Mostly. ' : 'Not very. '}
+          {name} scores {formatIndex(m.humor_index)} out of 100 on the Humor Index{m.rank ? `, #${m.rank} of the ${movies.length} ${movies.length === 1 ? 'movie' : 'movies'} we've scored` : ''},
+          based on {m.total_jokes} jokes in {m.runtime_minutes} minutes ({m.avg_jpm.toFixed(1)} a minute) with an average craft of {m.avg_craft.toFixed(1)} and impact of {m.avg_impact.toFixed(1)}.
+          {peakJoke && <> Its funniest stretch is {filmTime(notes.peak.start)} to {filmTime(notes.peak.end)}.</>}
+        </p>
+
         {/* Laugh Map */}
         <section>
           <div className="flex items-end justify-between gap-4 mb-4">
@@ -265,22 +278,16 @@ export default async function MoviePage({ params }: { params: { slug: string } }
           </p>
         </section>
 
-        {/* Cross-links */}
-        {(tv.length > 0 || others.length > 0) && (
+        <CrossoverStrip items={crossovers} side="movie" title="Same cast on TV"
+          subtitle={`${name} actors in the shows we've scored`} />
+
+        {/* Cross-links: TV shows with the closest comedy style, then other movies */}
+        {(alike.length > 0 || others.length > 0) && (
           <section>
-            <h2 className="text-xl sm:text-2xl font-semibold text-brand-text-primary mb-4">If you liked {name}</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-brand-text-primary">If you liked {name}</h2>
+            <p className="text-sm text-brand-text-secondary mt-1 mb-4">Shows and movies with the closest mix of joke types</p>
             <div className="grid sm:grid-cols-3 gap-3">
-              {tv.slice(0, 3).map(s => (
-                <Link key={s.slug} href={`/shows/${s.slug}`} className="group relative rounded-xl overflow-hidden border border-brand-border bg-brand-card aspect-[16/9]">
-                  {s.backdrop_path && <Image src={`${TMDB_IMG}/w780${s.backdrop_path}`} alt="" fill sizes="(min-width: 640px) 33vw, 100vw" className="object-cover opacity-40 group-hover:opacity-55 transition-opacity" />}
-                  <div className="absolute inset-0 p-4 flex flex-col justify-end bg-gradient-to-t from-brand-dark/90 to-transparent">
-                    <p className="text-[11px] uppercase tracking-wider text-brand-gold">TV · same cast</p>
-                    <p className="text-brand-text-primary font-medium">{s.name}</p>
-                    <p className="font-mono text-xs text-brand-text-secondary">{formatIndex(s.humor_index)}</p>
-                  </div>
-                </Link>
-              ))}
-              {others.slice(0, 3 - Math.min(tv.length, 3) || 0).map(x => (
+              {others.slice(0, 3).map(x => (
                 <Link key={x.slug} href={`/movies/${x.slug}`} className="group relative rounded-xl overflow-hidden border border-brand-border bg-brand-card aspect-[16/9]">
                   {x.backdrop_path && <Image src={`${TMDB_IMG}/w780${x.backdrop_path}`} alt="" fill sizes="(min-width: 640px) 33vw, 100vw" className="object-cover opacity-40 group-hover:opacity-55 transition-opacity" />}
                   <div className="absolute inset-0 p-4 flex flex-col justify-end bg-gradient-to-t from-brand-dark/90 to-transparent">
@@ -290,9 +297,21 @@ export default async function MoviePage({ params }: { params: { slug: string } }
                   </div>
                 </Link>
               ))}
+              {alike.slice(0, Math.max(0, 3 - others.length)).map(({ show: s, match }) => (
+                <Link key={s.slug} href={`/shows/${s.slug}`} className="group relative rounded-xl overflow-hidden border border-brand-border bg-brand-card aspect-[16/9]">
+                  {s.backdrop_path && <Image src={`${TMDB_IMG}/w780${s.backdrop_path}`} alt="" fill sizes="(min-width: 640px) 33vw, 100vw" className="object-cover opacity-40 group-hover:opacity-55 transition-opacity" />}
+                  <div className="absolute inset-0 p-4 flex flex-col justify-end bg-gradient-to-t from-brand-dark/90 to-transparent">
+                    <p className="text-[11px] uppercase tracking-wider text-brand-gold">TV · {match}% style match</p>
+                    <p className="text-brand-text-primary font-medium">{s.name}</p>
+                    <p className="font-mono text-xs text-brand-text-secondary">{formatIndex(s.humor_index)}</p>
+                  </div>
+                </Link>
+              ))}
             </div>
           </section>
         )}
+
+        <InlineNewsletterCTA />
 
         {/* Where to watch */}
         {Object.keys(m.watch).length > 0 && (
