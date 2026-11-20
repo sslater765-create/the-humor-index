@@ -42,31 +42,41 @@ function Row({ show, rank, sortKey }: { show: ShowScore; rank: number | null; so
           <RankBadge rank={rank} />
         )}
       </div>
-      <div className="min-w-0 flex items-center gap-3 sm:gap-4">
-        <div className="relative shrink-0 w-16 h-10 sm:w-24 sm:h-[3.375rem] rounded-md overflow-hidden bg-brand-surface border border-brand-border/60">
+      <div className="min-w-0 flex items-center gap-3 sm:gap-5">
+        <div className="min-w-0 w-36 sm:w-64 shrink-0">
+          <p className={`font-medium truncate transition-colors group-hover:text-brand-gold ${pending ? 'text-brand-text-secondary' : 'text-brand-text-primary'}`}>
+            {show.name}
+          </p>
+          <div className="mt-1 flex items-center gap-2">
+            <FormatBadge format={show.format} />
+            {/* Phones have no room for the metric columns, so the active sort rides here. */}
+            {sortKey !== 'humor_index' && (
+              <span className="sm:hidden font-mono text-[11px] text-brand-text-muted">
+                {SORT_OPTIONS.find(o => o.key === sortKey)?.label} {show[sortKey].toFixed(1)}
+              </span>
+            )}
+          </div>
+        </div>
+        {/* Wide backdrop strip, faded at both ends so it melts into the row. */}
+        <div
+          aria-hidden="true"
+          className="relative flex-1 min-w-0 h-11 sm:h-14 overflow-hidden rounded-md"
+          style={{
+            maskImage: 'linear-gradient(to right, transparent 0%, black 18%, black 70%, transparent 100%)',
+            WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 18%, black 70%, transparent 100%)',
+          }}
+        >
           {show.backdrop_path && (
             <Image
-              src={`https://image.tmdb.org/t/p/w300${show.backdrop_path}`}
+              src={`https://image.tmdb.org/t/p/w780${show.backdrop_path}`}
               alt=""
               fill
-              sizes="(min-width: 640px) 96px, 64px"
-              className={`object-cover transition-transform duration-300 group-hover:scale-105 ${pending ? 'opacity-50 grayscale' : ''}`}
+              sizes="(min-width: 640px) 420px, 40vw"
+              className={`object-cover object-[center_30%] transition-all duration-300 group-hover:scale-105 ${
+                pending ? 'opacity-25 grayscale' : 'opacity-45 group-hover:opacity-70'
+              }`}
             />
           )}
-        </div>
-        <div className="min-w-0">
-        <p className={`font-medium truncate transition-colors group-hover:text-brand-gold ${pending ? 'text-brand-text-secondary' : 'text-brand-text-primary'}`}>
-          {show.name}
-        </p>
-        <div className="mt-1 flex items-center gap-2">
-          <FormatBadge format={show.format} />
-          {/* Phones have no room for the metric columns, so the active sort rides here. */}
-          {sortKey !== 'humor_index' && (
-            <span className="sm:hidden font-mono text-[11px] text-brand-text-muted">
-              {SORT_OPTIONS.find(o => o.key === sortKey)?.label} {show[sortKey].toFixed(1)}
-            </span>
-          )}
-        </div>
         </div>
       </div>
       <div className="text-right sm:text-left">
