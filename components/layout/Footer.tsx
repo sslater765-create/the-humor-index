@@ -143,6 +143,9 @@ export default function Footer() {
           <Link href="/changelog" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Changelog
           </Link>
+          <Link href="/why" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            Why
+          </Link>
           <Link href="/methodology" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Methodology
           </Link>

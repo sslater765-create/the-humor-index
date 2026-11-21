@@ -1,5 +1,8 @@
 import WhereToWatch from '@/components/WhereToWatch';
+import LogButton from '@/components/log/LogButton';
 import CrossoverStrip from '@/components/movies/CrossoverStrip';
+import RunningGagsPanel from '@/components/shows/RunningGagsPanel';
+import { runningGagsFor } from '@/lib/runningGags';
 import { crossoversForShow } from '@/lib/crossover';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -209,6 +212,10 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           </h1>
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <FormatBadge format={show.format} />
+            <LogButton
+              className="!py-0.5 !px-2.5 !text-xs"
+              item={{ kind: 'show', ref: params.slug, title: show.name, subtitle: show.network ?? undefined, href: `/shows/${params.slug}/`, hi: isAwaitingRescore(params.slug) ? null : show.humor_index }}
+            />
             {show.network && (
               <span className="text-xs bg-brand-surface/80 border border-brand-border rounded-full px-2.5 py-0.5 text-brand-text-secondary">
                 {show.network}
@@ -320,6 +327,8 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         characterProfiles={realCharacters}
         comedyDna={comedyDna}
       />
+
+      <RunningGagsPanel slug={params.slug} name={show.name} gags={runningGagsFor(params.slug)} />
 
       {/* Where to watch — affiliate (Phase 1) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6">

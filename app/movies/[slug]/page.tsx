@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getMovies, getMovie, jokeLines, bestLine, lineParts, lineSpeaker, filmTime, shortTitle, laughMapNotes, TMDB_IMG, type MovieJoke } from '@/lib/movies';
+import LogButton from '@/components/log/LogButton';
 import { formatIndex, JOKE_TYPE_LABELS } from '@/lib/scoring';
 import ScoreGauge from '@/components/ui/ScoreGauge';
 import ShareButton from '@/components/ui/ShareButton';
@@ -147,6 +148,10 @@ export default async function MoviePage({ params }: { params: { slug: string } }
                   </p>
                 )}
                 <MatchPill slug={m.slug} />
+                <LogButton
+                  className="!py-1 !text-xs"
+                  item={{ kind: 'movie', ref: m.slug, title: m.title, subtitle: `${m.year} · ${m.director}`, href: `/movies/${m.slug}/`, hi: m.humor_index }}
+                />
               </div>
               <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight text-brand-text-primary">
                 {m.title}

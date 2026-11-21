@@ -3,13 +3,14 @@ import { getComedyDnaFingerprints, getEpisodes } from '@/lib/data';
 import { normalizeFingerprints, meanFingerprint, buildWeights } from '@/lib/comedyDna';
 import { pageMeta } from '@/lib/seo';
 import MyIndex from '@/components/my/MyIndex';
+import MySocial from '@/components/my/MySocial';
 
 export const dynamic = 'force-static';
 
 export const metadata = pageMeta({
   title: 'My Humor Index — Your Comedy Taste Profile',
   description:
-    'Rate the sitcoms you’ve seen and get a personalized comedy taste profile: your archetype, shows ranked for you, and a watchlist of what to watch next. Saved privately on your device.',
+    'Rate the sitcoms you’ve seen and get a personalized comedy taste profile: your archetype, shows ranked for you, and a watchlist of what to watch next. Keep a diary, make lists, share a profile.',
   path: '/my',
   noindex: true, // personal, per-device — nothing for crawlers to index
 });
@@ -44,9 +45,9 @@ export default async function MyPage() {
         <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-2">Your Profile</p>
         <h1 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary mb-3">My Humor Index</h1>
         <p className="text-sm text-brand-text-secondary max-w-2xl leading-relaxed">
-          Rate the shows you’ve seen — we’ll read your taste off the joke-type fingerprints behind
-          the Index and rank every other show <em>for you</em>. Everything here is stored privately on
-          this device; no account, no sign-in.
+          Rate the shows you’ve seen and we’ll read your taste off the joke-type fingerprints behind
+          the Index, then rank every other show <em>for you</em>. Sign in to keep a diary of what you
+          watch, make lists, and share a public profile if you want one.
         </p>
       </header>
 
@@ -56,6 +57,10 @@ export default async function MyPage() {
         meanFp={meanFp}
         weights={weights}
       />
+
+      <div className="mt-16">
+        <MySocial />
+      </div>
     </main>
   );
 }

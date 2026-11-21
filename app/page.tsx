@@ -76,8 +76,9 @@ export default async function HomePage() {
                 <span className="text-brand-text-secondary">scored and ranked.</span>
               </h1>
               <p className="text-base sm:text-xl text-brand-text-secondary max-w-2xl leading-relaxed">
-                AI reads every sitcom and movie script we cover, rates every laugh on a five-part
-                craft rubric, and we publish the receipts.
+                Comedy arguments run on nostalgia and fan votes. This is the box score: every joke in
+                every script, graded on the same five-part rubric, receipts published.{' '}
+                <Link href="/why/" className="text-brand-gold hover:underline whitespace-nowrap">Why it works →</Link>
               </p>
               {/* Phones: show the board right away, before the counters */}
               <div className="sm:hidden mt-6 grid grid-cols-4 gap-2">

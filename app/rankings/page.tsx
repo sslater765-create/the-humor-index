@@ -537,6 +537,15 @@ export default async function RankingsPage() {
           <p className="text-xs text-brand-text-muted mt-4 group-hover:text-brand-gold transition-colors">See both lists →</p>
         </Link>
 
+        {/* Running gags, with a stat line each */}
+        <Link href="/rankings/running-gags"
+          className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group">
+          <p className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">New stat</p>
+          <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">The running gags, scored</h2>
+          <p className="text-sm text-brand-text-secondary max-w-2xl">Dwight&rsquo;s beet farm, Troy McClure, Bert Macklin: every recurring bit with a stat line and Laughs Above Replacement, how much it added over the show&rsquo;s ordinary joke.</p>
+          <p className="text-xs text-brand-text-muted mt-4 group-hover:text-brand-gold transition-colors">See the leaderboard →</p>
+        </Link>
+
         {/* HOLIDAYS + QUOTES — seasonal lists and one quotes page per show */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           <div className="bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7">

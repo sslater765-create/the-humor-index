@@ -16,7 +16,7 @@ export default function PrivacyPage() {
       <PageHeader
         label="Legal"
         title="Privacy Policy"
-        subtitle="Last updated: June 9, 2026"
+        subtitle="Last updated: November 21, 2026"
       />
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
@@ -67,8 +67,15 @@ export default function PrivacyPage() {
                 <strong className="text-brand-text-primary">Account information (optional):</strong> If you choose to create
                 an account, we collect your email address (for magic-link sign-in) or the basic profile your provider returns
                 if you sign in with Google (name and email). We also store the activity you save while signed in — your show
-                ratings, watchlist, and blind-test (&quot;Agree?&quot;) tally — so it syncs across your devices. You can use the
+                ratings, watchlist, blind-test (&quot;Agree?&quot;) tally, Comedy DNA profile, diary logs (what you watched, when,
+                your star rating and any note), and lists — so it syncs across your devices. You can use the
                 entire site without an account; accounts are entirely opt-in.
+              </li>
+              <li>
+                <strong className="text-brand-text-primary">Public profile (optional, off by default):</strong> If you turn on a
+                public profile, anyone with the link (thehumorindex.com/u/your-handle) can see your handle, display name, bio,
+                diary logs including notes and ratings, and any lists you mark public. Your email address is never shown. Turn
+                the profile off at any time on the My Index page and it stops being visible immediately.
               </li>
               <li>
                 <strong className="text-brand-text-primary">Local browser storage:</strong> When you rate shows, build a

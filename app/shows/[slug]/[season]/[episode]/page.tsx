@@ -21,6 +21,7 @@ import { SITE_URL } from '@/lib/site';
 import { getRankedEpisodeScores, topShare } from '@/lib/siteStats';
 import { personSlug } from '@/lib/people';
 import MiniLaughMap from '@/components/movies/MiniLaughMap';
+import LogButton from '@/components/log/LogButton';
 
 export const dynamic = 'force-static';
 
@@ -317,7 +318,15 @@ export default async function EpisodePage({
           </div>
         )}
 
-        <div className="flex items-center gap-3 mb-6">
+        <div className="flex flex-wrap items-center gap-3 mb-6">
+          <LogButton item={{
+            kind: 'episode',
+            ref: `${params.slug}/${seasonNum}/${episodeNum}`,
+            title: detail.title,
+            subtitle: `${show.name} · S${seasonNum}E${String(episodeNum).padStart(2, '0')}`,
+            href: `/shows/${params.slug}/${seasonNum}/${episodeNum}/`,
+            hi: isAwaitingRescore(params.slug) ? null : detail.humor_index,
+          }} />
           <StreamingLinks
             showSlug={params.slug}
             episodeLabel={`S${seasonNum}E${String(episodeNum).padStart(2, '0')}`}

@@ -26,6 +26,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url('/rankings/jokes-per-minute'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/worst-episodes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
     { url: url('/rankings/index-vs-imdb'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/rankings/running-gags'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: url('/why'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.7 },
     { url: url('/people'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.7 },
     { url: url('/changelog'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.5 },
     { url: url('/rankings/best-jokes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },
