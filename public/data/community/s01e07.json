@@ -4,34 +4,35 @@
   "season": 1,
   "episode_number": 7,
   "title": "Introduction to Statistics",
-  "humor_index": 77.9,
-  "jpm": 2.86,
-  "avg_craft": 7.07,
-  "avg_impact": 6.68,
-  "total_jokes": 55,
-  "war": 48.1,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"absurdist\"]",
-  "standout_joke_ids": "[10, 11, 34]",
+  "humor_index": 96.0,
+  "jpm": 4.17,
+  "avg_craft": 7.45,
+  "avg_impact": 7.4,
+  "total_jokes": 80,
+  "war": 114.0,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"escalation\"]",
+  "standout_joke_ids": "[45, 79, 78]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "Little-known fact, statistics were not his only love. He's also famous for his french sauce used on meat and poultry.",
+      "text": "Bernoulli is famous for his french sauce used on meat and poultry. / That's bearnaise.",
       "characters": [
-        "Jeff"
+        "Jeff",
+        "Professor Slater"
       ],
       "joke_types": [
         "setup_punchline",
         "wordplay_pun"
       ],
-      "setup": "Jeff tries to impress with a 'little-known fact' about Bernoulli",
-      "punchline": "Confuses Bernoulli with b\u00e9arnaise sauce",
-      "craft_total": 6.99,
-      "impact_score": 6.5,
+      "setup": "Jeff claims Bernoulli is famous not just for statistics but also for a French sauce used on meat and poultry, presenting fake trivia with confidence",
+      "punchline": "Professor Slater flatly corrects him \u2014 that's b\u00e9arnaise, not Bernoulli \u2014 exposing Jeff's flirtatious pseudo-erudition as nonsense",
+      "craft_total": 7.59,
+      "impact_score": 7.0,
       "quotability": 5.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Jeff move - trying to sound smart and failing. Clean setup/payoff with good wordplay between mathematical concept and sauce.",
+      "explanation": "Classic Jeff move: deploy fake-smart charm and get immediately deflated by someone smarter. The near-homophone Bernoulli/b\u00e9arnaise is a clever wordplay hook and the professor's one-word correction is perfectly economical. Character-specific: only Jeff would try to seduce a statistics professor with made-up food history.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -57,22 +58,22 @@
     },
     {
       "index": 2,
-      "text": "you were nailing it, until you had to ask.",
+      "text": "Oh, we may need to settle this at a restaurant.",
       "characters": [
-        "Slater"
+        "Jeff"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "setup_punchline"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Jeff asks if he's being sarcastic or nailing his confident approach",
-      "punchline": "She reveals asking that question undermined his confidence act",
-      "craft_total": 7.45,
-      "impact_score": 7.17,
+      "setup": "Professor Slater has just corrected Jeff's fake trivia, exposing him",
+      "punchline": "Instead of retreating, Jeff spins his embarrassment into a dinner invitation with zero self-consciousness, reframing correction as foreplay",
+      "craft_total": 7.43,
+      "impact_score": 7.0,
       "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect paradox of confidence - asking if you're confident proves you're not. Economical and insightful about dating psychology.",
+      "is_callback": 1,
+      "explanation": "Earns an 8+ because it's pure distilled Jeff Winger: shamelessness weaponized as charm. The joke isn't a punchline \u2014 it's a character revelation. Only Jeff could take being embarrassed by a correction and pivot it into suave forward motion. The economy is impeccable \u2014 six words do all the work. Strongly character-integrated.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -86,22 +87,22 @@
     },
     {
       "index": 3,
-      "text": "oh, damn it. starting over. Hey, you in the skirt, date me.",
+      "text": "It's cute. A little aggressive, but as a busy, confident woman of authority, I'm attracted to men who take charge.",
       "characters": [
-        "Jeff"
+        "Professor Slater"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Jeff realizes he messed up his confident approach",
-      "punchline": "Resets to comically blunt, caveman-like directness",
-      "craft_total": 7.17,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "Jeff has just made a blatant and clumsy dinner invitation after being corrected",
+      "punchline": "Slater's self-aware, articulate description of her own attraction reads like a therapist narrating her own feelings \u2014 funny because it's simultaneously sincere and absurdly over-analyzed",
+      "craft_total": 6.63,
+      "impact_score": 6.0,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Jeff's ego can't handle failure so he overcorrects to absurd bluntness. Good character beat showing his immaturity.",
+      "explanation": "Funny in that Slater immediately diagnoses her own reaction to Jeff with academic precision, which is characteristically self-aware. A bit wordy and the laugh is mild \u2014 it's more scene-building than pure comedy.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -119,22 +120,23 @@
     },
     {
       "index": 4,
-      "text": "i've graded enough of your tests to know i'd never feel mentally inadequate.",
+      "text": "Are you being sarcastic, or am I nailing it? / You were nailing it, until you had to ask.",
       "characters": [
-        "Slater"
+        "Jeff",
+        "Professor Slater"
       ],
       "joke_types": [
         "setup_punchline",
         "character_comedy"
       ],
-      "setup": "Slater lists Jeff's attractive qualities",
-      "punchline": "Reveals she knows he's not very smart from his test scores",
-      "craft_total": 7.66,
-      "impact_score": 7.33,
-      "quotability": 7.5,
+      "setup": "Jeff has been successfully charming Slater; he breaks the spell by seeking validation mid-seduction",
+      "punchline": "Slater confirms he WAS nailing it \u2014 but the act of asking is itself what failed. The joke is that Jeff's self-awareness undoes his confidence in real time.",
+      "craft_total": 8.35,
+      "impact_score": 8.33,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant misdirection - starts as compliment, ends as devastating burn. Shows Jeff's academic struggles while establishing Slater's wit.",
+      "explanation": "One of the episode's sharpest lines. The structure is a perfect trap: the question proves it's sincere, and the answer confirms the question was fatal. It's a Catch-22 delivered in two sentences. Deeply character-integrated \u2014 Jeff's greatest flaw is that he is aware of his own performance, and that awareness always betrays him. Quotable, economical, and earns its laugh through wit rather than shock. Comparable to the 8.0 anchor in precision and character specificity.",
       "dialogue": [
         {
           "speaker": "Britta",
@@ -148,41 +150,41 @@
     },
     {
       "index": 5,
-      "text": "Did you ever see that katherine heigl movie poster where gerard butler had that heart over his weiner? That resonated with me.",
-      "characters": [
-        "Britta"
-      ],
-      "joke_types": [
-        "observational",
-        "absurdist"
-      ],
-      "setup": "Britta complaining about men's behavior",
-      "punchline": "Oddly specific movie poster reference with crude description",
-      "craft_total": 6.97,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Very specific pop culture reference with unexpected crudeness. Britta's pseudo-feminist analysis of rom-com imagery is character-appropriate."
-    },
-    {
-      "index": 6,
-      "text": "I'm barely a student. I'm older than you. I drive a lexus. i saw ghost busters in the theater. Look, my gums are receding.",
+      "text": "Oh, damn it. Starting over. Hey, you in the skirt, date me.",
       "characters": [
         "Jeff"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Jeff trying to prove he's not really a student",
-      "punchline": "Escalates from status symbols to aging body parts",
-      "craft_total": 7.25,
-      "impact_score": 6.83,
+      "setup": "Jeff has just blown his suave approach by asking if he was nailing it",
+      "punchline": "He literally declares 'starting over' and pivots to the most blunt possible alternative: a direct, unvarnished command",
+      "craft_total": 7.37,
+      "impact_score": 7.17,
       "quotability": 6.5,
       "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The pivot from sophisticated charm to caveman bluntness in one breath is very funny and very Jeff. The joke is that his 'reset' produces something even more audacious. Good economy and character integration."
+    },
+    {
+      "index": 6,
+      "text": "I'd like to, Mr. Winger. You're tall, you dress nice, and I've graded enough of your tests to know I'd never feel mentally inadequate.",
+      "characters": [
+        "Professor Slater"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Jeff has commanded Slater to date him; she responds as if taking the question seriously",
+      "punchline": "Her list of Jeff's merits climaxes with a backhanded compliment \u2014 his test scores confirm he's not threatening to her intelligence. It's affectionate condescension.",
+      "craft_total": 7.5,
+      "impact_score": 7.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect escalation from materialistic bragging to desperate physical evidence. Shows Jeff's vanity and desperation simultaneously.",
+      "explanation": "Smart joke: the list format leads you to expect romantic compliments, then delivers a grade-based intelligence insult dressed as a compliment. Character-specific for Slater \u2014 she's always slightly above Jeff and knows it.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -200,22 +202,23 @@
     },
     {
       "index": 7,
-      "text": "it's uncanny how many of my buttons you're finding, But i have a personal rule about this, and i stick to it.",
+      "text": "Bastard. / It's fine. I don't care.",
       "characters": [
-        "Slater"
+        "Britta",
+        "Britta"
       ],
       "joke_types": [
         "irony_sarcasm",
-        "character_comedy"
+        "reaction_beat"
       ],
-      "setup": "Jeff's increasingly desperate attempts to seem mature",
-      "punchline": "She admits he's working but maintains boundaries",
-      "craft_total": 6.69,
-      "impact_score": 6.17,
+      "setup": "Jeff runs into Britta while flirting with Professor Slater; Britta says 'bastard' then immediately claims not to care",
+      "punchline": "The contradiction between 'bastard' and 'it's fine, I don't care' in rapid succession is the entire joke \u2014 Britta's denial is transparently false",
+      "craft_total": 6.73,
+      "impact_score": 6.33,
       "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good tension between attraction and professional boundaries. 'Finding buttons' is a nice euphemism for his effect on her.",
+      "explanation": "Classic Britta: performatively indifferent while transparently not. Quick and efficient, though not a particularly novel comedic beat \u2014 it's a recognizable 'protesting too much' gag. Works because of the speed and Britta's consistent self-contradiction.",
       "dialogue": [
         {
           "speaker": "Britta",
@@ -233,22 +236,22 @@
     },
     {
       "index": 8,
-      "text": "then i can mark you down as definitely being there From 7:00 sharp till upside-down spanish question mark?",
+      "text": "It's disgusting the way men behave. Did you ever see that Katherine Heigl movie poster where Gerard Butler had that heart over his weiner? That resonated with me.",
       "characters": [
-        "Annie"
+        "Britta"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Annie trying to pin Jeff down about party attendance",
-      "punchline": "Describes party end time as 'upside-down spanish question mark'",
-      "craft_total": 7.77,
-      "impact_score": 7.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Britta is ranting about men's behavior in general, ostensibly on feminist grounds",
+      "punchline": "She pivots to a romantic comedy movie poster as her emotional touchstone \u2014 a specific, embarrassingly mainstream cultural reference that completely undercuts her feminist posture",
+      "craft_total": 7.37,
+      "impact_score": 7.33,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant linguistic humor - not knowing how to say '\u00bf' so describing it visually. Very Annie-like overthinking of simple concepts.",
+      "explanation": "Very Britta: her feminism collapses instantly when confronted with a rom-com that appealed to her. The specificity of 'that heart over his weiner' is what elevates this \u2014 it's not a generic romcom reference but a weirdly precise memory of a marketing image. Strong character integration.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -274,22 +277,22 @@
     },
     {
       "index": 9,
-      "text": "infomercials work on pierce.",
+      "text": "I'm barely a student. I'm older than you. I drive a Lexus. I saw Ghostbusters in the theater. Look, my gums are receding.",
       "characters": [
         "Jeff"
       ],
       "joke_types": [
         "character_comedy",
-        "setup_punchline"
+        "escalation"
       ],
-      "setup": "Annie claims her assertiveness worked on Pierce",
-      "punchline": "Jeff points out Pierce is easily manipulated by TV ads",
-      "craft_total": 7.08,
-      "impact_score": 6.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Jeff is trying to convince Professor Slater he's not really a student \u2014 that he's her peer",
+      "punchline": "The list of 'I'm mature' evidence escalates from plausible (Lexus, age) to absurd (Ghostbusters) to self-defeating (receding gums) \u2014 he ends by proudly presenting dental decay as proof of sophistication",
+      "craft_total": 7.97,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect economy - three words that completely deflate Annie's confidence about her persuasive powers by referencing Pierce's gullibility.",
+      "explanation": "One of the episode's best jokes. The list structure is perfect: each item reveals Jeff's desperation rather than his maturity, and 'my gums are receding' as a climactic selling point is genuinely inspired. The escalation from status symbols to bodily decline is a great comedic arc in four sentences. Highly quotable, strong character integration (Jeff's vanity and his obliviousness to his own absurdity), and original premise. Approaches the 8.0 anchor benchmark comfortably.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -299,22 +302,24 @@
     },
     {
       "index": 10,
-      "text": "The last time you did this, I saved a vial of your tears And have been slowly building up an immunity.",
+      "text": "It's uncanny how many of my buttons you're finding, but I have a personal rule about this, and I stick to it. / Have a cup of coffee with me. I bet I can change your mind. / Oh, I know you can. That's why you're not getting the chance.",
       "characters": [
-        "Jeff"
+        "Professor Slater",
+        "Jeff",
+        "Professor Slater"
       ],
       "joke_types": [
-        "absurdist",
+        "deadpan_understatement",
         "character_comedy"
       ],
-      "setup": "Annie trying emotional manipulation with sad story",
-      "punchline": "Jeff claims he's literally collecting and using her tears to build immunity",
-      "craft_total": 8.14,
-      "impact_score": 8.0,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Jeff is making his case; Slater acknowledges he's working",
+      "punchline": "Slater's refusal is an admission of attraction \u2014 she's not saying she doesn't want to, she's saying she can't trust herself to resist. The joke is that the rejection IS a form of flattery.",
+      "craft_total": 7.28,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Fantastic absurdist metaphor treating emotional manipulation like poison immunity. Shows Jeff's cynicism through ridiculous scientific analogy.",
+      "explanation": "'I know you can. That's why you're not getting the chance.' is a sharp, witty, and structurally elegant line. The logic is unexpected \u2014 the better your argument, the less access you get. It's both a great character moment and a clever comedic reversal. Near 8-level quality.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -328,22 +333,24 @@
     },
     {
       "index": 11,
-      "text": "i was so unpopular in high school, The crossing guard used to lure me into traffic.",
+      "text": "Are you coming to my D\u00edas de los Muertos party? / I'm definitely gonna try to swing by. / Then I can mark you down as definitely being there from 7:00 sharp till upside-down Spanish question mark?",
       "characters": [
+        "Annie",
+        "Jeff",
         "Annie"
       ],
       "joke_types": [
-        "dark_subversive",
-        "escalation"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Annie explaining her unpopularity",
-      "punchline": "Implies crossing guard actively tried to get her hit by cars",
-      "craft_total": 7.98,
-      "impact_score": 8.0,
+      "setup": "Jeff gives the classic non-committal 'I'll try to swing by,' which Annie immediately parses",
+      "punchline": "Annie translates the non-answer into a schedule: 'definitely being there from 7:00 sharp till upside-down Spanish question mark' \u2014 the upside-down question mark is a perfect visual metaphor for vague social uncertainty",
+      "craft_total": 7.76,
+      "impact_score": 7.67,
       "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark humor about institutional authority figures wanting her dead. Absurd escalation of unpopularity that's both funny and pathetic.",
+      "explanation": "The 'upside-down Spanish question mark' as a symbol for social ambiguity is genuinely original and funny \u2014 it's a visual pun rendered in dialogue. It captures the specific anxiety of the type-A planner dealing with the cool kid's vagueness. Strong character integration for Annie (precise, earnest, slightly neurotic). Highly quotable. Clears the 8.0 benchmark.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -353,22 +360,24 @@
     },
     {
       "index": 12,
-      "text": "My grandpa took that when he was around your age... one time he started hallucinating And ran down the street with no pants on. Which in the gaza strip is considered a real party foul",
+      "text": "Are you trying to get formidable with me? / It worked on Pierce. / Infomercials work on Pierce.",
       "characters": [
-        "Abed"
+        "Jeff",
+        "Annie",
+        "Jeff"
       ],
       "joke_types": [
-        "escalation",
-        "dark_subversive"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Abed warning Pierce about his medication with grandfather story",
-      "punchline": "Casually mentions Gaza Strip as location for pants-less incident",
-      "craft_total": 7.42,
-      "impact_score": 6.83,
-      "quotability": 6.5,
+      "setup": "Annie says her assertiveness technique worked on Pierce, implying it should work on Jeff",
+      "punchline": "Jeff dismisses this by noting Pierce is persuaded by infomercials \u2014 the lowest possible bar for social manipulation",
+      "craft_total": 7.49,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Typical Abed - drops serious geopolitical reference casually into silly story. 'Party foul' understatement for cultural violation is nice touch.",
+      "explanation": "Sharp and economical character joke about Pierce's credulity. 'Infomercials work on Pierce' is a great single-line character assassination that also functions as a dismissal of Annie's logic. Very quotable.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -378,22 +387,22 @@
     },
     {
       "index": 13,
-      "text": "look, i really don't need your advice, And i'm not your pantsless grandpa.",
+      "text": "The last time you did this, I saved a vial of your tears and have been slowly building up an immunity.",
       "characters": [
-        "Pierce"
+        "Jeff"
       ],
       "joke_types": [
-        "callback",
+        "absurdist",
         "character_comedy"
       ],
-      "setup": "Pierce dismissing Abed's medication warning",
-      "punchline": "References the specific 'pantsless grandpa' detail",
-      "craft_total": 6.42,
-      "impact_score": 5.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Simple callback to Abed's story. Pierce's indignation at being compared to pantsless elderly man is character-appropriate.",
+      "setup": "Annie is deploying emotional manipulation (guilt-tripping Jeff into coming to her party)",
+      "punchline": "Jeff claims to have literally collected her tears in a vial and built up an immunity like it's a venom \u2014 a completely absurdist escalation of the 'emotionally resistant' trope",
+      "craft_total": 8.29,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Exceptional joke. The 'building immunity to Annie's tears' conceit is startlingly original \u2014 it takes the clich\u00e9 of being immune to someone's manipulation and renders it with absurd literalism (a vial, a slow build). The image is vivid and funny, the economy is excellent, and it's deeply character-specific: Jeff as a man who treats emotional relationships with the detached strategy of a Bond villain. This is quotable standalone comedy and clears the 8+ bar clearly.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -411,22 +420,22 @@
     },
     {
       "index": 14,
-      "text": "you don't have to keep doing that!",
+      "text": "I was so unpopular in high school, the crossing guard used to lure me into traffic.",
       "characters": [
-        "Britta"
+        "Annie"
       ],
       "joke_types": [
-        "reaction_beat",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Annie keeps adding Spanish translations after English phrases",
-      "punchline": "Britta's exasperated reaction to the unnecessary translations",
-      "craft_total": 6.37,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Annie is making a case for how much this party means to her, referencing her unpopular high school experience",
+      "punchline": "The crossing guard \u2014 a figure of safety and protection \u2014 actively trying to kill her is an absurdly dark subversion of childhood imagery",
+      "craft_total": 7.99,
+      "impact_score": 8.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character beat - Britta's practical frustration with Annie's over-enthusiasm for cultural accuracy.",
+      "explanation": "Brilliant dark joke. The specific inversion of the crossing guard \u2014 protector becomes predator \u2014 is genuinely original and funny. 'Lure me into traffic' is vivid and specific. The joke earns its darkness because Annie immediately deploys it as social currency (sympathy manipulation), which is itself character-revealing. Clears the 8+ benchmark easily. High quotability.",
       "dialogue": [
         {
           "speaker": "Britta",
@@ -436,22 +445,22 @@
     },
     {
       "index": 15,
-      "text": "she blew you off, huh?",
+      "text": "Thank you. I'm putting you down for two bags of ice and a sleeve of paper cups.",
       "characters": [
         "Annie"
       ],
       "joke_types": [
         "character_comedy",
-        "irony_sarcasm"
+        "deadpan_understatement"
       ],
-      "setup": "Jeff gives flowery speech about friendship",
-      "punchline": "Annie immediately sees through to the real reason he's there",
-      "craft_total": 7.31,
-      "impact_score": 7.17,
-      "quotability": 6.0,
+      "setup": "Jeff has just emotionally capitulated and agreed to come to Annie's party",
+      "punchline": "Annie immediately pivots from gratitude to logistics \u2014 assigning him party supplies the moment she has his commitment",
+      "craft_total": 7.16,
+      "impact_score": 6.67,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect deflation of Jeff's pretentious excuse. Annie's directness cuts through his BS immediately with economy and insight.",
+      "explanation": "Annie's transactional pivot from emotional plea to supply logistics is very funny and character-specific. The specificity of 'a sleeve of paper cups' elevates it above a generic type-A joke.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -465,22 +474,22 @@
     },
     {
       "index": 16,
-      "text": "oh, look, it's the eavesdropping matador.",
+      "text": "Xenolovaden. My grandpa took that when he was around your age.",
       "characters": [
-        "Jeff"
+        "Abed"
       ],
       "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
+        "dark_subversive",
+        "deadpan_understatement"
       ],
-      "setup": "Chang appears and reveals information about Slater",
-      "punchline": "Jeff insults both Chang's costume and his eavesdropping",
-      "craft_total": 6.92,
-      "impact_score": 6.25,
-      "quotability": 6.5,
+      "setup": "Pierce is taking a pill; Abed recognizes it and makes an observation",
+      "punchline": "Abed connecting Pierce's medication to his elderly grandfather implies Pierce is at grandfather-level age \u2014 delivered with Abed's characteristic flat affect",
+      "craft_total": 6.82,
+      "impact_score": 6.5,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Nice combination of costume reference with behavioral criticism. Jeff's defensiveness expressed through creative insult.",
+      "explanation": "Abed's deadpan is perfect here \u2014 no malice, pure observation. The implication that Pierce is grandpa-aged lands softly but firmly. Character integration is strong: only Abed would say this without realizing it's an insult.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -494,22 +503,22 @@
     },
     {
       "index": 17,
-      "text": "are you saying my people are sneaky?",
+      "text": "One time he started hallucinating and ran down the street with no pants on. Which in the Gaza Strip is considered a real party foul.",
       "characters": [
-        "Chang"
+        "Abed"
       ],
       "joke_types": [
-        "character_comedy",
-        "misdirection"
+        "absurdist",
+        "dark_subversive"
       ],
-      "setup": "Jeff calls Chang an 'eavesdropping matador'",
-      "punchline": "Chang interprets this as racial stereotype about Spanish people",
-      "craft_total": 7.31,
-      "impact_score": 6.75,
-      "quotability": 5.0,
+      "setup": "Abed is telling the story of his grandpa mixing wrong pills and hallucinating",
+      "punchline": "The pivot to 'in the Gaza Strip, that's a real party foul' is a geopolitical non-sequitur that recontextualizes a slapstick anecdote through a cultural lens \u2014 Abed casually normalizing chaos with deadpan specificity",
+      "craft_total": 7.34,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Chang's paranoia about racial implications where none exist. Misdirection from the actual behavior Jeff was criticizing.",
+      "explanation": "The Gaza Strip punchline is a genuinely surprising turn that works because Abed's Palestinian heritage makes it specific rather than random. It's dark and absurdist but earned \u2014 Abed's flat affect makes the geopolitical reference land as oblivious rather than offensive. High originality.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -527,23 +536,23 @@
     },
     {
       "index": 18,
-      "text": "am i good looking? - you're a very attractive young man. - i knew it.",
+      "text": "I'm not your pantsless grandpa. / Pantsless grandpa.",
       "characters": [
-        "Troy",
+        "Pierce",
         "Abed"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "callback",
+        "deadpan_understatement"
       ],
-      "setup": "Troy asks Batman/Abed if he's good looking",
-      "punchline": "Troy's satisfied confidence after getting compliment from friend in costume",
-      "craft_total": 7.39,
+      "setup": "Pierce has just told Abed he doesn't need his advice",
+      "punchline": "Abed repeats 'pantsless grandpa' back as an echo \u2014 the phrase is funny on its own, but Abed's flat repetition of it as if filing it away gives the joke a second life",
+      "craft_total": 7.12,
       "impact_score": 6.83,
-      "quotability": 5.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Sweet moment showing Troy's insecurity and need for validation, even from costumed Abed. His confidence boost is endearing.",
+      "is_callback": 1,
+      "explanation": "Abed's echo of 'pantsless grandpa' works because his flat-affect repetition implies he is cataloguing this phrase for future use. It's a simple structural move that's well-executed.",
       "dialogue": [
         {
           "speaker": "Troy",
@@ -561,21 +570,23 @@
     },
     {
       "index": 19,
-      "text": "i am the beastmaster. from the movie beastmaster. What rock have you been living under?",
+      "text": "Oh, Britta. You look adorable. / Thank you. I hate when women use Halloween as an excuse to dress up like sluts, you know?",
       "characters": [
-        "Pierce"
+        "Annie",
+        "Britta"
       ],
       "joke_types": [
-        "character_comedy"
+        "irony_sarcasm",
+        "visual_gag"
       ],
-      "setup": "Pierce introduces himself as Beastmaster",
-      "punchline": "His shock that someone doesn't know obscure 80s fantasy movie",
-      "craft_total": 6.78,
-      "impact_score": 6.17,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Annie compliments Britta on her costume; Britta thanks her and launches into a feminist opinion about Halloween",
+      "punchline": "The implied visual gag: Britta's costume is itself revealing or slutty, making her feminist complaint self-undermining. The joke lives in the gap between her words and her appearance.",
+      "craft_total": 7.14,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Pierce behavior - assuming everyone shares his pop culture references and being indignant when they don't.",
+      "explanation": "Classic Britta hypocrisy joke \u2014 she rails against something she's doing. The visual component (her 'adorable' costume presumably being exactly what she's denouncing) is the core of the joke. Strong character integration; rewatch bonus because costume confirmation is funny on a second viewing.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -601,22 +612,22 @@
     },
     {
       "index": 20,
-      "text": "What are you going as? A gay douchebag? just kidding.",
+      "text": "You don't have to keep doing that! (re: Annie translating everything into Spanish)",
       "characters": [
-        "Pierce"
+        "Study Group Member"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "running_gag",
+        "reaction_beat"
       ],
-      "setup": "Pierce asking about Jeff's non-costume",
-      "punchline": "Offensive joke followed by weak 'just kidding' disclaimer",
-      "craft_total": 4.7,
-      "impact_score": 4.0,
-      "quotability": 2.0,
+      "setup": "Annie has been punctuating her party instructions with Spanish phrases ('por tradici\u00f3n,' 'la danza de los muertos')",
+      "punchline": "Someone snaps at her to stop \u2014 the running gag of Annie's earnest cultural appropriation finally gets called out",
+      "craft_total": 6.23,
+      "impact_score": 5.67,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Intentionally bad joke that shows Pierce's outdated humor and social insensitivity. The cringe is the point, not clever writing.",
+      "explanation": "Functional running-gag punctuation. Annie's overly earnest cultural curation is a good character note, and the callout is deserved. Not particularly original or quotable, but serves the episode's rhythm.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -638,25 +649,24 @@
     },
     {
       "index": 21,
-      "text": "oh, thanks, urkel. - i'm harry potter. - really? - what up, urkel?",
+      "text": "She blew you off, huh? / She's grading papers. / Professor Slater? She's not grading papers. She's at the faculty party in the cafeteria.",
       "characters": [
-        "Pierce",
-        "Abed",
+        "Shirley",
         "Jeff",
-        "Troy"
+        "Abed"
       ],
       "joke_types": [
-        "running_gag",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Abed dressed as Harry Potter brings drinks",
-      "punchline": "Everyone calls him Urkel despite correction, Troy joins in",
-      "craft_total": 6.22,
-      "impact_score": 5.83,
-      "quotability": 5.0,
+      "setup": "Jeff gives a face-saving lie; Shirley sees through it; Abed delivers the literal truth without registering it as social exposure",
+      "punchline": "Abed's factual correction of Jeff's lie \u2014 delivered with zero awareness that he's humiliating Jeff \u2014 is the joke. Abed is the most dangerous kind of honest person.",
+      "craft_total": 7.24,
+      "impact_score": 7.17,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good running gag about costume misidentification. Shows how pop culture references can be generational and imprecise.",
+      "explanation": "Classic Abed move: the literal truth deployed without social awareness. The structure is a perfect three-step: lie \u2192 skepticism \u2192 brutal factual correction. Character integration for Abed is excellent; he's not being cruel, he's just always accurate.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -686,22 +696,23 @@
     },
     {
       "index": 22,
-      "text": "I've got 'ludes, uh, dreamers... Johnny boys.",
+      "text": "Oh, look, it's the eavesdropping matador. / Are you saying my people are sneaky?",
       "characters": [
-        "Pierce"
+        "Jeff",
+        "Chang"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Pierce offering to share drugs with Star-Burns",
-      "punchline": "Made-up drug names that sound like old slang",
-      "craft_total": 6.85,
-      "impact_score": 6.5,
+      "setup": "Chang appears having overheard the conversation; Jeff makes a comment about his costume (matador)",
+      "punchline": "Chang immediately interprets 'eavesdropping matador' as a racial slight against Spanish/Hispanic people, misreading a jab at his behavior as an ethnic insult",
+      "craft_total": 6.97,
+      "impact_score": 6.67,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Pierce making up drug names to sound cool. 'Johnny boys' is particularly absurd. Shows his disconnect from actual drug culture.",
+      "explanation": "Chang's hair-trigger racial sensitivity (combined with his own racial ambiguity and his wearing a Spanish costume) makes this a layered joke. His misread is funny because it's simultaneously absurd and revealing \u2014 Chang is always looking for slights. Good economy.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -719,22 +730,22 @@
     },
     {
       "index": 23,
-      "text": "oh, sorry. I thought i was dealing with the beastmaster.",
+      "text": "There's a storm building on the horizon, but you and I will save the night. Chex mix, pretzels, baby carrots \u2014 predictable but appetizing.",
       "characters": [
-        "Star-Burns"
+        "Chang"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Pierce hesitating about drug trade",
-      "punchline": "Star-Burns challenges Pierce's commitment to his costume persona",
-      "craft_total": 6.95,
-      "impact_score": 6.25,
-      "quotability": 6.0,
+      "setup": "Chang dramatically declares a 'storm on the horizon' as if setting up an epic narrative",
+      "punchline": "The storm is party snacks. The grandiose framing collapses into mundane appetizers. Chang's flair for drama applied to pretzels.",
+      "craft_total": 7.92,
+      "impact_score": 7.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good escalation where Star-Burns uses Pierce's costume identity to manipulate him into drug deal. Smart character psychology.",
+      "is_callback": 0,
+      "explanation": "Chang's tendency toward performative drama applied to utterly banal subjects is a good character joke. The bathetic drop from 'storm on the horizon' to 'baby carrots' is well-structured misdirection.",
       "dialogue": [
         {
           "speaker": "Star-Burns",
@@ -752,21 +763,23 @@
     },
     {
       "index": 24,
-      "text": "Professor slater doesn't date students. Or married asians who drive mopeds.",
+      "text": "Can I ask you something I always wanted to ask the real Batman? / Yeah. / Am I good looking? / You're a very attractive young man. / I knew it.",
       "characters": [
-        "Chang"
+        "Pierce",
+        "Abed"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Chang giving Jeff dating advice about Slater",
-      "punchline": "Reveals his own failed attempt with oddly specific personal details",
-      "craft_total": 7.12,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Pierce approaches Abed (dressed as Batman) and treats him as the actual Batman",
+      "punchline": "Pierce's burning question for the Dark Knight is not about justice or crime \u2014 it's existential vanity: 'Am I good looking?' And Abed's sincere confirmation ('I knew it') plays it completely straight.",
+      "craft_total": 8.23,
+      "impact_score": 8.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Great character moment - Chang's bitterness revealed through specific details of his own rejection. Moped detail is perfect Chang touch.",
+      "explanation": "One of the episode's best. The joke works on multiple levels: Pierce's vanity (his most important question for Batman is about his looks), Abed's straight-faced Batman commitment (he answers as Batman would), and Pierce's satisfied 'I knew it' \u2014 which reveals this was validation-seeking, not genuine curiosity. The economy is perfect, the character integration is exceptional for both characters. Clears the 8+ benchmark easily.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -780,22 +793,23 @@
     },
     {
       "index": 25,
-      "text": "hey, uh, man? what'd you slip me? I keep grinding my teeth, and i want to kiss everybody.",
+      "text": "Let's get this party started! / Who are you? / I am the Beastmaster. / From the movie Beastmaster. What rock have you been living under?",
       "characters": [
-        "Pierce"
+        "Pierce",
+        "Others"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "escalation"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Pierce took unknown drugs from Star-Burns",
-      "punchline": "Describes classic MDMA/ecstasy symptoms",
-      "craft_total": 6.62,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "Pierce arrives at the party dressed as the Beastmaster, an obscure 1980s fantasy film character",
+      "punchline": "He not only names himself but adds the clarifying subtitle 'from the movie Beastmaster' as if this is obvious \u2014 and then is offended nobody knows it",
+      "craft_total": 7.37,
+      "impact_score": 7.33,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good setup for Pierce's drug subplot. Specific symptoms are accurate and funny coming from elderly character.",
+      "explanation": "Pierce picking an obscure 80s reference as his cool Halloween costume identity is perfectly in character. His bafflement that nobody knows it and his insistence on providing the full citation ('from the movie Beastmaster') adds the right level of indignation.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -805,22 +819,23 @@
     },
     {
       "index": 26,
-      "text": "My heart stopped racing, and i can't pee.",
+      "text": "What are you going as? A gay douchebag? Just kidding. / Nice one.",
       "characters": [
-        "Pierce"
+        "Pierce",
+        "Jeff"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "escalation"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Pierce continuing to describe drug effects",
-      "punchline": "More specific and embarrassing physical symptoms",
-      "craft_total": 6.72,
-      "impact_score": 6.33,
-      "quotability": 5.0,
+      "setup": "Pierce notices Jeff isn't in costume and makes a remark",
+      "punchline": "Pierce's 'just kidding' after a genuinely offensive remark, followed by Jeff's dry 'nice one' \u2014 the joke is Pierce's reflex homophobia presented as banter and Jeff's weary tolerance of it",
+      "craft_total": 5.52,
+      "impact_score": 5.33,
+      "quotability": 4.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Continues drug effects subplot. TMI moment about urination is appropriately uncomfortable for Pierce character.",
+      "explanation": "Classic Pierce: says something offensive, immediately covers with 'just kidding.' Jeff's dry acknowledgment is the actual joke. The humor is in Pierce's obliviousness rather than the content of the insult. Functional but not exceptional.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -830,22 +845,22 @@
     },
     {
       "index": 27,
-      "text": "to be with professor short skirt? We hate her.",
+      "text": "I know, you're not much of a liking the ladies guy either, huh? Oop. Body blow.",
       "characters": [
-        "Shirley"
+        "Pierce"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "irony_sarcasm"
       ],
-      "setup": "Learning Jeff went to faculty party",
-      "punchline": "Shirley immediately declares group hatred for Slater",
-      "craft_total": 7.25,
+      "setup": "Pierce continues to prod Jeff, now insinuating he's gay",
+      "punchline": "Pierce's self-narration of his own insult ('Oop. Body blow.') as a sportscaster calling his own jab is the comedic twist \u2014 he's not just insulting Jeff, he's commentating on his performance",
+      "craft_total": 7.35,
       "impact_score": 7.0,
       "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Shirley reaction - immediate tribal loyalty and slut-shaming. 'Short skirt' shows her judgmental side.",
+      "explanation": "The self-sportscasting is a funny Pierce-specific move. 'Body blow' as self-narrated victory lap elevates an otherwise routine insult into something characterful.",
       "dialogue": [
         {
           "speaker": "Shirley",
@@ -859,41 +874,44 @@
     },
     {
       "index": 28,
-      "text": "We should go find that bitch's car And snap off her antenna.",
+      "text": "Oh, thanks, Urkel. / I'm Harry Potter. / Really? / What up, Urkel?",
       "characters": [
-        "Shirley"
+        "Pierce",
+        "Abed",
+        "Pierce",
+        "Others"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "running_gag"
       ],
-      "setup": "Shirley expressing hatred for Slater",
-      "punchline": "Suggests specific, petty act of vandalism",
-      "craft_total": 7.06,
-      "impact_score": 6.75,
-      "quotability": 6.5,
+      "setup": "Abed (dressed as Harry Potter) brings drinks to Pierce",
+      "punchline": "Pierce calls him Urkel \u2014 wrong Black nerd stereotype, wrong decade, wrong show. After being corrected ('I'm Harry Potter'), Pierce's response to someone else is immediately 'What up, Urkel?' \u2014 he doesn't process the correction at all.",
+      "craft_total": 7.51,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great character moment - Shirley's passive-aggression turning actively destructive. Antenna detail shows her pettiness."
+      "explanation": "Perfect Pierce joke. The structure is tight: mistake \u2192 correction \u2192 immediate repetition of mistake to someone new. Pierce's total non-absorption of the correction is both funny and revealing. The 'Urkel' reference specifically (not just 'wrong name') pinpoints Pierce's dated cultural frame. Approaches 8-level quality."
     },
     {
       "index": 29,
-      "text": "That's right, professor slim calves. This is what you get when you steal jeff from a good woman!",
+      "text": "I've got 'ludes, uh, dreamers... Johnny boys.",
       "characters": [
-        "Abed"
+        "Star-Burns"
       ],
       "joke_types": [
         "character_comedy",
         "absurdist"
       ],
-      "setup": "Abed vandalizing Professor Slater's car antenna",
-      "punchline": "His oddly specific insult and dramatic declaration",
-      "craft_total": 7.26,
-      "impact_score": 7.25,
-      "quotability": 7.0,
+      "setup": "Star-Burns approaches Pierce at the party offering drugs",
+      "punchline": "The drug names 'dreamers' and 'Johnny boys' are clearly invented \u2014 absurd made-up street names that reveal Star-Burns is either very creative or completely unreliable",
+      "craft_total": 6.71,
+      "impact_score": 6.33,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great Abed moment - 'slim calves' is such a weirdly specific insult. His dramatic delivery of soap opera dialogue is perfect.",
+      "explanation": "The made-up drug names are the right level of absurd. Star-Burns as the campus drug dealer with hilariously fake street terminology is a consistent character bit.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -907,22 +925,24 @@
     },
     {
       "index": 30,
-      "text": "I may or may not have been deflowered By a junior rodeo champion.",
+      "text": "I'll trade you one of mine for two of yours. / I don't know, Star-Burns, I'm-- / Oh, sorry. I thought I was dealing with the Beastmaster.",
       "characters": [
-        "Slater"
+        "Star-Burns",
+        "Pierce",
+        "Star-Burns"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "misdirection"
       ],
-      "setup": "Slater commenting on Jeff's cowboy outfit",
-      "punchline": "Overshares very specific sexual history",
-      "craft_total": 6.99,
-      "impact_score": 6.67,
-      "quotability": 6.5,
+      "setup": "Pierce hesitates over the drug trade; Star-Burns challenges his commitment by invoking his Beastmaster persona",
+      "punchline": "The Beastmaster costume becomes an identity challenge \u2014 Star-Burns implies the Beastmaster wouldn't hesitate. Pierce takes the bait immediately.",
+      "craft_total": 7.81,
+      "impact_score": 7.5,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Unexpected overshare with specific detail. Shows Slater's directness and creates awkward intimacy.",
+      "is_callback": 1,
+      "explanation": "Smart callback that uses Pierce's vanity about his costume identity against him. Star-Burns weaponizing 'the Beastmaster' as a dare is perfectly in character for both. Pierce's susceptibility to this exact manipulation is very funny.",
       "dialogue": [
         {
           "speaker": "Slater",
@@ -932,22 +952,22 @@
     },
     {
       "index": 31,
-      "text": "you lost your virginity to robin hood?",
+      "text": "Hey, hey, who said you weren't? Saddle up, fruit pie.",
       "characters": [
-        "Jeff"
+        "Pierce"
       ],
       "joke_types": [
         "character_comedy",
-        "misdirection"
+        "absurdist"
       ],
-      "setup": "Slater mentions losing virginity, Jeff is in costume",
-      "punchline": "Jeff misunderstands, thinks she means his Robin Hood costume",
-      "craft_total": 6.94,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Star-Burns questions whether Pierce is really the Beastmaster; Pierce takes the challenge",
+      "punchline": "'Saddle up, fruit pie' as a battle cry \u2014 'fruit pie' as a term of address is baffling and funny, the kind of made-up tough-guy slang that only makes sense to Pierce",
+      "craft_total": 7.37,
+      "impact_score": 7.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good misdirection - Jeff's ego makes him think she's referring to him. Shows his self-centeredness.",
+      "explanation": "'Fruit pie' as a term of tough-guy address is a great Pierce word \u2014 it sounds like something from a 1970s western meets a Hostess commercial. Specific, weird, character-integrated.",
       "dialogue": [
         {
           "speaker": "Britta",
@@ -961,22 +981,23 @@
     },
     {
       "index": 32,
-      "text": "what friends? I have no friends. I hate everyone here but you.",
+      "text": "Give anyone that shows up their stupid credit. / You going to the faculty party? Make me your plus one. / Ah, give it up, Winger. Professor Slater doesn't date students. Or married Asians who drive mopeds.",
       "characters": [
-        "Jeff"
+        "Jeff",
+        "Chang"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "setup_punchline"
       ],
-      "setup": "Slater worried about Jeff telling friends about relationship",
-      "punchline": "Jeff's desperate claim of friendlessness as romantic pitch",
-      "craft_total": 7.22,
-      "impact_score": 6.67,
-      "quotability": 6.5,
+      "setup": "Jeff is trying to get to the faculty party; Chang comments on Professor Slater's no-students rule",
+      "punchline": "Chang adds 'or married Asians who drive mopeds' as his own rejected category \u2014 revealing he's tried and failed too, with the specific details making his failure hilariously specific and pathetic",
+      "craft_total": 7.15,
+      "impact_score": 7.0,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Jeff moment - turning antisocial behavior into romantic gesture. The desperation makes it both funny and sad.",
+      "explanation": "The specificity of 'married Asians who drive mopeds' is what makes this \u2014 Chang's rejection wasn't generic but specific to those exact details. It's self-deprecating and character-revealing simultaneously, confirming that Chang has pursued Slater and struck out in precisely this way.",
       "dialogue": [
         {
           "speaker": "Britta",
@@ -998,22 +1019,23 @@
     },
     {
       "index": 33,
-      "text": "i think the words that you're looking for Are 'i own a cowboy outfit.' And it is tight too. did you buy it like that? Your toy gun to my head, i'd say yes.",
+      "text": "Give you 20 bucks. / I'll bring the hog around.",
       "characters": [
+        "Jeff",
         "Chang"
       ],
       "joke_types": [
         "character_comedy",
-        "escalation"
+        "irony_sarcasm"
       ],
-      "setup": "Chang questioning where Jeff got costume",
-      "punchline": "Implies Jeff owns tight cowboy outfit and makes gun pun",
-      "craft_total": 6.92,
-      "impact_score": 6.33,
-      "quotability": 5.5,
+      "setup": "Jeff offers Chang $20 to get him into the faculty party",
+      "punchline": "Chang's instant capitulation \u2014 and calling his moped 'the hog' (biker slang for a large motorcycle) \u2014 is a perfect deflation. The moped is the hog.",
+      "craft_total": 7.46,
+      "impact_score": 7.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Chang's harassment escalates with sexual implications and pun on 'gun to my head.' Shows his antagonistic relationship with Jeff.",
+      "is_callback": 1,
+      "explanation": "The callback to 'mopeds' with 'I'll bring the hog around' is elegant and fast. The grandiosity of calling a moped a hog is a perfect character note for Chang's self-aggrandizing delusion. Excellent economy \u2014 four words do enormous work.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -1031,21 +1053,22 @@
     },
     {
       "index": 34,
-      "text": "britta perry, g.e.d.",
+      "text": "Hey, uh, man? What'd you slip me? I keep grinding my teeth, and I want to kiss everybody.",
       "characters": [
-        "Britta"
+        "Pierce"
       ],
       "joke_types": [
-        "character_comedy"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Slater introduces herself with PhD credentials",
-      "punchline": "Britta counters with GED (high school equivalency)",
-      "craft_total": 7.85,
-      "impact_score": 7.75,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Pierce has taken whatever Star-Burns gave him; he's already feeling effects",
+      "punchline": "The symptoms he reports \u2014 teeth grinding and wanting to kiss everybody \u2014 are MDMA/ecstasy effects, which Pierce describes with innocent bewilderment as if reporting symptoms to a pharmacist",
+      "craft_total": 7.15,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant economy - two words that perfectly establish class/education dynamic. Britta's defiant delivery makes it even better.",
+      "explanation": "The humor comes from Pierce describing classic drug symptoms in a clinical, innocent register. 'I want to kiss everybody' is a funny and accurate characterization of MDMA effects, made funnier by Pierce's obliviousness. Good character integration.",
       "dialogue": [
         {
           "speaker": "Britta",
@@ -1055,22 +1078,22 @@
     },
     {
       "index": 35,
-      "text": "when you say 'classmate,' It sounds like we take naps together and eat paste",
+      "text": "What'd you slip me, man? My heart stopped racing, and I can't pee.",
       "characters": [
-        "Britta"
+        "Pierce"
       ],
       "joke_types": [
         "character_comedy",
-        "wordplay_pun"
+        "escalation"
       ],
-      "setup": "Slater refers to Britta as Jeff's classmate",
-      "punchline": "Britta objects to infantilizing implications of 'classmate'",
-      "craft_total": 7.2,
-      "impact_score": 6.5,
-      "quotability": 6.5,
+      "setup": "Pierce had just complained of teeth grinding and wanting to kiss everyone (ecstasy symptoms)",
+      "punchline": "Now his symptoms have reversed \u2014 suggesting he's been double-dosed with opposite drugs or cycling through effects. 'My heart stopped racing and I can't pee' as a complaint is bathetically mundane.",
+      "craft_total": 6.93,
+      "impact_score": 6.67,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good linguistic humor - Britta's insecurity about being seen as childish student vs adult. Paste-eating is perfect kindergarten reference.",
+      "is_callback": 1,
+      "explanation": "The escalation of Pierce's drug experience through worsening/conflicting symptoms is funny, and 'I can't pee' as a complaint to the drug dealer is the right level of mundane complaint in a dramatic situation.",
       "dialogue": [
         {
           "speaker": "Slater",
@@ -1084,21 +1107,23 @@
     },
     {
       "index": 36,
-      "text": "it's like grumpy old men but not hilarious.",
+      "text": "Jeff? / (long pause \u2014 Jeff is gone) / Where's jeff?",
       "characters": [
-        "Troy"
+        "Annie",
+        "Annie"
       ],
       "joke_types": [
-        "character_comedy"
+        "reaction_beat",
+        "awkward_silence"
       ],
-      "setup": "Troy describing Pierce's drug-induced behavior",
-      "punchline": "References comedy movie but says real version isn't funny",
-      "craft_total": 7.08,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Annie has ceremonially called Jeff to the dance floor, invested in making this party moment work",
+      "punchline": "Jeff has simply left. The silence and the dawning realization \u2014 'Where's Jeff?' \u2014 is the joke: the earnest party planner's grand moment deflated by the cool kid's absence",
+      "craft_total": 6.86,
+      "impact_score": 7.0,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Nice pop culture reference with realistic qualifier. Troy's observation that real elderly drug use isn't comedic shows maturity.",
+      "explanation": "A structural joke \u2014 the pause and the question do all the work. Annie's investment in the party moment set up over the whole episode makes the absence land as both comic and slightly touching. The rhythm of the scene sells it.",
       "dialogue": [
         {
           "speaker": "Troy",
@@ -1108,22 +1133,22 @@
     },
     {
       "index": 37,
-      "text": "why is urkel ripping the antenna Off professor slater's car?",
+      "text": "Is Jeff gone? You know, I'm gonna go. I don't want to miss the news.",
       "characters": [
-        "Chang"
+        "Pierce"
       ],
       "joke_types": [
-        "callback",
-        "escalation"
+        "character_comedy",
+        "callback"
       ],
-      "setup": "Chang observing Abed vandalizing car",
-      "punchline": "Still calling Abed 'Urkel' while describing Shirley's revenge plan in action",
-      "craft_total": 6.58,
-      "impact_score": 6.5,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Jeff's absence from the party is noted; Pierce considers leaving",
+      "punchline": "Pierce's reason for leaving \u2014 'I don't want to miss the news' \u2014 is exactly the clich\u00e9 Jeff warned Annie everyone would use to leave her party. The joke completes the prophecy.",
+      "craft_total": 7.23,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Good callback to both running gags. The casual way Chang observes vandalism while using wrong name is perfectly absurd.",
+      "explanation": "Perfect structural callback. Jeff explicitly named this excuse earlier; Pierce deploys it immediately and without irony. The rewatch bonus is for catching the callback. Well-constructed payoff to an earlier setup.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -1141,22 +1166,22 @@
     },
     {
       "index": 38,
-      "text": "That's right, professor slim calves. This is what you get when you steal jeff from a good woman!",
+      "text": "News! (Shirley, rallying the party)",
       "characters": [
-        "Abed"
+        "Shirley"
       ],
       "joke_types": [
-        "character_comedy",
-        "escalation"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Abed vandalizing Slater's car",
-      "punchline": "Delivers Shirley's message with oddly specific body part insult",
-      "craft_total": 6.63,
-      "impact_score": 6.0,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Perfect Abed moment - delivering someone else's revenge with his characteristic specificity. 'Slim calves' is wonderfully weird insult.",
+      "setup": "Pierce has just announced he's leaving to watch the news \u2014 the exact excuse Jeff predicted",
+      "punchline": "Shirley's single-word exclamation 'News!' feels like either a rallying cry or an echo \u2014 played as both outrage and absurdist punctuation",
+      "craft_total": 6.75,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One word, maximum economy. Shirley's bewildered-or-outraged 'News!' serves as comic punctuation. It deepens the callback without adding words.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -1170,22 +1195,22 @@
     },
     {
       "index": 39,
-      "text": "i'm old? What do you mean old? Whose hands are these?",
+      "text": "To be with Professor Short Skirt? We hate her.",
       "characters": [
-        "Pierce"
+        "Shirley"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "escalation"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Pierce being told he's too old to be tripping",
-      "punchline": "Drug-induced existential crisis about his own body",
-      "craft_total": 7.47,
-      "impact_score": 7.83,
-      "quotability": 7.5,
+      "setup": "It's revealed Jeff went to the faculty party \u2014 to pursue Professor Slater",
+      "punchline": "Shirley immediately dubs her 'Professor Short Skirt' and declares collective hatred \u2014 the speed of the tribalism and the nickname are both funny",
+      "craft_total": 7.3,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent escalation of Pierce's drug trip. The progression from denial to body dysmorphia is both funny and disturbing.",
+      "explanation": "Very Shirley: instantaneous, proprietary loyalty and instant hostile nickname. 'Professor Short Skirt' as a designation is funny and reveals more about Shirley than Slater. Character integration is high.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -1199,22 +1224,23 @@
     },
     {
       "index": 40,
-      "text": "i know i'm not batman. You could try not being a jerk.",
+      "text": "No, it's not about her, Shirley. I can't believe that Jeff would do this to Annie. / Yes, absolutely. It's about Annie. We should go find that bitch's car and snap off her antenna.",
       "characters": [
-        "Abed"
+        "Britta",
+        "Shirley"
       ],
       "joke_types": [
-        "character_comedy",
-        "deadpan_understatement"
+        "escalation",
+        "character_comedy"
       ],
-      "setup": "Jeff dismissing Abed's Batman act",
-      "punchline": "Abed's calm, direct response calling Jeff out",
-      "craft_total": 7.51,
-      "impact_score": 7.0,
+      "setup": "Britta tries to redirect Shirley's anger toward a principled concern for Annie's feelings rather than jealousy about Slater",
+      "punchline": "Shirley immediately accepts the reframe \u2014 'Yes, absolutely, it's about Annie' \u2014 and then escalates to vandalism. She's not really reframing; she just found a socially acceptable cover for her impulse",
+      "craft_total": 7.64,
+      "impact_score": 7.5,
       "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Abed response - acknowledges reality while calling out Jeff's cruelty. Simple but effective moral center moment.",
+      "explanation": "The joke is that Shirley instantly adopts the more respectable framing ('it's about Annie') but her proposed response (snapping off an antenna) gives away that her actual motivation is petty rage. Character integration is excellent \u2014 Shirley's mix of moral framing and vindictive impulse is a core character trait.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -1224,22 +1250,23 @@
     },
     {
       "index": 41,
-      "text": "i'm putting this hose in her desk, And you going outside to turn the water on.",
+      "text": "It's like high school all over again. Everyone's leaving. / Not me. I could do this all night.",
       "characters": [
-        "Shirley"
+        "Annie",
+        "Abed"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Shirley planning revenge on Slater",
-      "punchline": "Elaborate water damage scheme for professor's office",
-      "craft_total": 7.42,
-      "impact_score": 7.25,
+      "setup": "Annie laments the failing party; everyone is drifting away",
+      "punchline": "Abed's sincere offer to stay and his flat 'I could do this all night' is both a character joke (Abed genuinely means it) and a sweet moment that happens to be funny",
+      "craft_total": 7.41,
+      "impact_score": 7.17,
       "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Shows Shirley's vindictive side through elaborate revenge plan. The practicality of her vandalism is character-appropriate.",
+      "explanation": "Abed's total reliability \u2014 delivered flatly and without sentiment \u2014 is both the joke and genuinely touching. It's a good Abed moment: he's the one character who doesn't perform loyalty, he just has it.",
       "dialogue": [
         {
           "speaker": "Shirley",
@@ -1249,22 +1276,22 @@
     },
     {
       "index": 42,
-      "text": "the long-neck, weave-having bank teller Didn't feel universal.",
+      "text": "I may or may not have been deflowered by a junior rodeo champion.",
       "characters": [
-        "Britta"
+        "Professor Slater"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "setup_punchline"
       ],
-      "setup": "Shirley ranting about 'long-neck weave-having bank teller'",
-      "punchline": "Britta points out the oddly specific nature of the insult",
-      "craft_total": 7.3,
-      "impact_score": 6.67,
-      "quotability": 6.5,
+      "setup": "Jeff has arrived at the faculty party in a cowboy costume; Slater says the outfit is working for her",
+      "punchline": "The deflowering-by-rodeo-champion disclosure is casual, specific, and unexpectedly intimate \u2014 Slater voluntarily oversharing her formative sexual experience in response to a Halloween costume",
+      "craft_total": 7.61,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great meta-commentary on Shirley's projection. Britta's therapist-like observation about specificity reveals emotional displacement.",
+      "explanation": "The 'may or may not have been' hedge combined with 'junior rodeo champion' specificity makes this land. It's the right amount of overshare, delivered in Slater's characteristically self-aware, slightly ironic register. 'Junior' is the key word \u2014 it implies youth, slight embarrassment, and specificity.",
       "dialogue": [
         {
           "speaker": "Britta",
@@ -1274,22 +1301,24 @@
     },
     {
       "index": 43,
-      "text": "Nice and pretentious.",
+      "text": "You're reminding me of my first time too. / You lost your virginity to Robin Hood? / No, with an attractive woman at a party.",
       "characters": [
-        "Britta"
+        "Jeff",
+        "Professor Slater",
+        "Jeff"
       ],
       "joke_types": [
-        "character_comedy",
-        "irony_sarcasm"
+        "setup_punchline",
+        "misdirection"
       ],
-      "setup": "Britta suggesting Slater is probably nice after seeing her awards",
-      "punchline": "Immediately contradicts herself with sarcastic judgment",
-      "craft_total": 6.91,
-      "impact_score": 6.17,
-      "quotability": 5.0,
+      "setup": "Jeff makes a comment that seems to be a parallel to Slater's rodeo champion story",
+      "punchline": "Slater assumes he means his costume character (Robin Hood); Jeff clarifies \u2014 his memory is about a woman at a party, not a character. The mix-up recontextualizes both lines.",
+      "craft_total": 7.07,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Britta moment - brief attempt at charity immediately undermined by jealousy. Shows her internal contradiction.",
+      "explanation": "Clean misdirection: Slater's misread (Robin Hood as sexual partner) produces a funny image before being corrected. The beat works because the correction is almost disappointingly normal.",
       "dialogue": [
         {
           "speaker": "Britta",
@@ -1303,22 +1332,22 @@
     },
     {
       "index": 44,
-      "text": "hey, man, what's going on? You have a full-on erection. Just rela-- just relax.",
+      "text": "I think the words that you're looking for are 'I own a cowboy outfit.' And it is tight too. Did you buy it like that? Your toy gun to my head, I'd say yes.",
       "characters": [
-        "Troy"
+        "Britta"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "physical_slapstick"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Troy finding Pierce in compromising drug-induced state",
-      "punchline": "Awkward observation about Pierce's physical arousal",
-      "craft_total": 6.13,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Jeff has arrived at the faculty party in a cowboy costume, clearly having planned it; Britta notices and needles him",
+      "punchline": "Britta not only identifies that Jeff owns a personal cowboy outfit, but notes it's tight \u2014 implying he bought it fitted \u2014 then answers her own question for him ('I'd say yes') with mock-judicial certainty",
+      "craft_total": 7.41,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Uncomfortable physical comedy moment. Troy's innocent directness makes awkward situation worse. Drug-induced arousal is cringe territory.",
+      "explanation": "Britta at her best: perceptive, slightly petty, and very funny. 'Your toy gun to my head, I'd say yes' is a terrific phrase \u2014 an absurd spin on 'gun to my head' applied to a Halloween prop. Very character-integrated.",
       "dialogue": [
         {
           "speaker": "Troy",
@@ -1336,40 +1365,43 @@
     },
     {
       "index": 45,
-      "text": "I've got the body of a fifth grader, okay? If i was working with what you've got, She'd be at the comfort inn right now Giving me a mexican halloween.",
+      "text": "Hi. Michelle Slater, Ph.D. / Britta Perry, G.E.D.",
       "characters": [
-        "Chang"
+        "Professor Slater",
+        "Britta"
       ],
       "joke_types": [
-        "cringe_discomfort"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Chang comparing his dating prospects to Jeff's",
-      "punchline": "Graphic description of hypothetical sexual encounter with cultural reference",
-      "craft_total": 6.53,
-      "impact_score": 5.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Slater introduces herself with her full credentials; Britta responds in kind",
+      "punchline": "Britta matches the credential format \u2014 but hers is a GED. The parallel structure makes the disparity devastating and funny. It's self-deprecating and defiant at the same time.",
+      "craft_total": 8.88,
+      "impact_score": 9.0,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Chang's self-awareness about his physical shortcomings paired with crude fantasy. 'Mexican Halloween' is weird but fits his character."
+      "explanation": "The best joke in the episode and one of the best from the series. The structure is impeccable: the credential format is established, the expectation is set, and 'G.E.D.' is the most perfectly wrong right answer. It's exactly as long as it needs to be (four words total) and says everything about Britta's character \u2014 defiant, self-aware, refusing to be diminished by the comparison she's losing. Approaches the 9.5 anchor benchmark in structure and economy; slightly below on cultural impact, but quotable, character-perfect, and genuinely exceptional."
     },
     {
       "index": 46,
-      "text": "Please sleep with me. please. Pretty please. i'm so lonely. I haven't slept with anyone in a very long time, And you are so good looking. Please do me the favor of having sex with me.",
+      "text": "Oh, are you a classmate of Jeff's? / Oh, well, when you say 'classmate,' it sounds like we take naps together and eat paste. But what's great about community colleges is that a lot of the students are just as mature as the teachers.",
       "characters": [
-        "Chang"
+        "Professor Slater",
+        "Britta"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Chang asking what Jeff's secret move is",
-      "punchline": "Chang's pathetically honest and desperate plea to imaginary woman",
-      "craft_total": 6.76,
-      "impact_score": 7.17,
-      "quotability": 7.0,
+      "setup": "Slater condescendingly refers to Britta as Jeff's 'classmate'",
+      "punchline": "Britta's response reframes 'classmate' as an infantilizing word (naps, paste) and then pivots to a backhanded defense of community college \u2014 implying she might be as mature as Slater, while the specific 'paste' image undercuts her own dignity",
+      "craft_total": 7.23,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Peak Chang pathetic-ness. The escalation from 'please' to 'pretty please' to full desperate monologue is perfectly uncomfortable.",
+      "explanation": "Britta is fighting above her weight class and knows it. The nap/paste image is vivid and funny; the pivot to 'just as mature as the teachers' is both a dig at Slater and a self-own. Good character work.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -1379,22 +1411,22 @@
     },
     {
       "index": 47,
-      "text": "i never saw beastmaster. I just wanted to be cool.",
+      "text": "Jeff, pierce took something, and he is tripping balls. He is touching people and dancing weird. It's like Grumpy Old Men but not hilarious.",
       "characters": [
-        "Pierce"
+        "Shirley"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "observational"
       ],
-      "setup": "Pierce's been claiming to be the Beastmaster all episode",
-      "punchline": "Drug-induced confession that he doesn't know the reference",
-      "craft_total": 7.52,
-      "impact_score": 7.25,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect payoff to Pierce's costume choice. His vulnerability about wanting to be cool is both sad and funny. Great character revelation.",
+      "setup": "Shirley interrupts Jeff's romantic moment to report Pierce's drug situation",
+      "punchline": "The 'Grumpy Old Men but not hilarious' comparison is the punchline \u2014 it perfectly describes elderly erratic behavior with a movie reference but adds the crucial qualifier that this version lacks comedic value",
+      "craft_total": 7.6,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Very Shirley \u2014 she uses a movie reference to explain a situation, then adds the crucial distinction that makes it her own. 'But not hilarious' is the right qualifier. Good economy and character specificity.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -1404,22 +1436,24 @@
     },
     {
       "index": 48,
-      "text": "i know in the last two months You've probably doubled the national average For amount of life lived per lifetime.",
+      "text": "Okay, uh, guys? I'm at a grownup Halloween party, all right? You're all being unseemly. / Oh, no. / How are we unseemly?",
       "characters": [
-        "Jeff"
+        "Jeff",
+        "Britta",
+        "Slater"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Jeff trying to comfort Pierce about being old",
-      "punchline": "Statistical metaphor for Pierce's recent life experiences",
-      "craft_total": 7.44,
-      "impact_score": 6.75,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Beautiful Jeff moment - using his lawyer-speak for genuine comfort. 'Amount of life lived per lifetime' is poetic and specific.",
+      "setup": "Jeff scolds his classmates for crashing the faculty party \u2014 using the word 'unseemly' that Slater used earlier",
+      "punchline": "Jeff adopting Slater's vocabulary ('unseemly') while scolding his friends reveals he's performing maturity for Slater's benefit. The others clocking this is the unspoken joke.",
+      "craft_total": 6.73,
+      "impact_score": 6.25,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The rewatch value comes from catching that Jeff is parroting Slater's word back to his friends in an attempt to seem more sophisticated. Subtle callback and character work.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1429,22 +1463,22 @@
     },
     {
       "index": 49,
-      "text": "If life is just a series of ridiculous attempts To be alive, You're a hero To everything that's ever lived.",
+      "text": "Why is Urkel ripping the antenna off Professor Slater's car? That's right, Professor Slim Calves. This is what you get when you steal Jeff from a good woman!",
       "characters": [
-        "Jeff"
+        "Shirley"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "escalation"
       ],
-      "setup": "Jeff continuing his philosophical comfort to Pierce",
-      "punchline": "Reframes Pierce's ridiculous behavior as heroic life affirmation",
-      "craft_total": 7.87,
-      "impact_score": 7.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "One of Jeff's finest moments - profound philosophical reframe that's both funny and genuinely moving. Perfect character growth.",
+      "setup": "Shirley spots Abed (who she calls Urkel) doing what she'd planned to do herself, to Professor Slater's car",
+      "punchline": "Shirley's escalating address \u2014 from naming Slater as the culpable party, to dubbing her 'Professor Slim Calves,' to the melodramatic declaration \u2014 is a character explosion. 'Slim Calves' as a villain name is specifically absurd.",
+      "craft_total": 7.59,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "'Professor Slim Calves' is a brilliant character-specific insult \u2014 Shirley, in her fury, reaches for anatomy as her weapon and chooses the most specific and petty body part she can identify. The whole speech is pure escalating Shirley: righteous indignation given a ridiculous target. High character integration and quotability. Approaches 8-level quality.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1454,22 +1488,22 @@
     },
     {
       "index": 50,
-      "text": "I must be out there in the night, Staying vigilant. Wherever a party needs to be saved, I'm there. Wherever there are masks, Wherever there's tomfoolery and joy, I'm there.",
+      "text": "That's right, Professor Slim Calves. This is what you get when you steal Jeff from a good woman!",
       "characters": [
-        "Abed"
+        "Shirley"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "escalation"
       ],
-      "setup": "Annie asking if Batman is staying for party",
-      "punchline": "Abed's elaborate Batman monologue about party protection duty",
-      "craft_total": 7.43,
-      "impact_score": 7.17,
-      "quotability": 7.5,
+      "setup": "Shirley's revenge plan is exposed",
+      "punchline": "'Professor Slim Calves' as an insult is wonderfully specific and petty \u2014 out of all the things to insult about Slater, Shirley went for the calves",
+      "craft_total": 7.81,
+      "impact_score": 8.0,
+      "quotability": 9.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Abed Batman performance. Mixing heroic vigilante speak with party protection is wonderfully absurd and character-specific.",
+      "explanation": "'Professor Slim Calves' is a standout joke. The specificity of 'slim calves' as Shirley's chosen insult is absurdly petty and perfectly Shirley. The fact that she's yelling this across a parking lot while having orchestrated antenna vandalism makes it funnier. Very quotable. Earns 8+.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -1479,22 +1513,23 @@
     },
     {
       "index": 51,
-      "text": "But sometimes i'm not, 'cause i'm out in the night, Staying vigilant, watching, Lurking, running, jumping, Hurtling, sleeping... No, i can't sleep. You sleep. i'm awake. I don't sleep. i don't blink. Am i a bird? no. I'm a bat. I am batman. Or am i? Yes, i am batman.",
+      "text": "Is he meowing? / Yeah.",
       "characters": [
-        "Abed"
+        "Britta",
+        "Jeff"
       ],
       "joke_types": [
-        "escalation",
+        "reaction_beat",
         "absurdist"
       ],
-      "setup": "Abed continuing Batman monologue",
-      "punchline": "Stream of consciousness spiral including existential crisis",
-      "craft_total": 7.06,
-      "impact_score": 7.25,
-      "quotability": 7.0,
+      "setup": "Abed (as Batman) is doing something audible; Britta and Jeff register it",
+      "punchline": "The confirmation that Abed is meowing while in full Batman costume \u2014 delivered with complete matter-of-fact acceptance by Jeff \u2014 is an absurdist image made funnier by the lack of reaction",
+      "craft_total": 7.54,
+      "impact_score": 7.67,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant escalation into psychological breakdown while maintaining Batman voice. The bird/bat confusion and identity crisis are perfect Abed touches.",
+      "explanation": "Perfect economy \u2014 three words contain the entire joke. Abed meowing in a Batman costume, confirmed with zero alarm, is a great absurdist image. The underreaction is the punchline. Rewatch bonus for seeing the visual of Batman crouched and meowing.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -1504,24 +1539,22 @@
     },
     {
       "index": 52,
-      "text": "You sound like cookie monster. - i'm batman. - that's batman.",
+      "text": "Pierce. Pierce. Pierce. Stop grinding on the women's studies department. You are too old to be tripping.",
       "characters": [
-        "Troy",
-        "Abed",
-        "Troy"
+        "Jeff"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "callback"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Abed doing Batman voice",
-      "punchline": "Troy's comparison to Cookie Monster, Abed's insistence, Troy's acceptance",
-      "craft_total": 7.06,
-      "impact_score": 6.67,
-      "quotability": 6.0,
+      "setup": "Pierce is in full drug trip, behaving erratically at the faculty party",
+      "punchline": "'Stop grinding on the women's studies department' is the specific, vivid image \u2014 not an individual but an entire academic department is being dry-humped. 'You are too old to be tripping' adds dignity-focused indignation.",
+      "craft_total": 7.66,
+      "impact_score": 8.0,
+      "quotability": 8.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sweet Troy/Abed moment. Troy's immediate acceptance after correction shows their friendship dynamic perfectly.",
+      "explanation": "'The women's studies department' as a unit being collectively ground on is a funny specificity \u2014 it's not a person but a department, which makes the image more absurd and the academic setting more vivid. 'You are too old to be tripping' is a great line that works on multiple levels (moral, medical, social). Clears the 8+ threshold.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -1543,24 +1576,22 @@
     },
     {
       "index": 53,
-      "text": "candy corn looks like tiny traffic cones. - yeah, it sure does. - at, like, a candy traffic school.",
+      "text": "I'm old? What do you mean old? Whose hands are these?",
       "characters": [
-        "Pierce",
-        "Troy",
         "Pierce"
       ],
       "joke_types": [
-        "observational",
-        "escalation"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Pierce making stoned observation about candy corn",
-      "punchline": "Develops into elaborate traffic school metaphor",
-      "craft_total": 6.77,
-      "impact_score": 6.17,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Jeff tells Pierce he's too old to be tripping; Pierce reacts with existential crisis",
+      "punchline": "'Whose hands are these?' is a perfect drug-trip paranoia line that also carries genuine existential weight \u2014 a 60-something man on MDMA suddenly confronting his aging body",
+      "craft_total": 8.0,
+      "impact_score": 8.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good stoner humor - Pierce's visual observation develops into absurd scenario. Shows his drug-altered perspective.",
+      "explanation": "One of the episode's best. 'Whose hands are these?' works as drug-trip absurdism, as a moment of genuine existential fear, and as tragicomedy \u2014 Pierce seeing his old hands and not recognizing them as his own. The economy is exceptional (four words), and the line is both funny and unexpectedly moving. Clears the 8+ benchmark.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -1586,24 +1617,24 @@
     },
     {
       "index": 54,
-      "text": "like, a little gingerbread man at the wheel, And he's drunk. - look out. - you'd be driving, But you keep wanting to eat yourself.",
+      "text": "Well, where were we, little doggie? / Unseemly. / Yeah. Crap.",
       "characters": [
-        "Troy",
-        "Pierce",
-        "Troy"
+        "Jeff",
+        "Professor Slater",
+        "Jeff"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "callback",
+        "character_comedy"
       ],
-      "setup": "Building on candy traffic school concept",
-      "punchline": "Drunk gingerbread driver who wants to eat himself",
-      "craft_total": 7.11,
-      "impact_score": 6.67,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Brilliant escalation of candy metaphor. The self-cannibalization driving hazard is wonderfully absurd collaborative humor.",
+      "setup": "After the chaos with Pierce, Jeff tries to return to his romantic moment with Slater",
+      "punchline": "Slater has categorized the whole evening with the word she used earlier ('unseemly') and Jeff's 'Yeah. Crap.' is his resigned acceptance that his effort is ruined",
+      "craft_total": 7.38,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The 'unseemly' callback lands as a final verdict on Jeff's evening. 'Yeah. Crap.' is a great deflationary two-beat response. Fast and clean.",
       "dialogue": [
         {
           "speaker": "Troy",
@@ -1617,25 +1648,24 @@
     },
     {
       "index": 55,
-      "text": "what is? - if i ever, like, woke up as a donut. - you would eat yourself? - i wouldn't even question it. that'd be tasty.",
+      "text": "I'm putting this hose in her desk, and you going outside to turn the water on. / Why? / To teach that long-neck weave-having bank teller she can't steal another woman's man! That's why.",
       "characters": [
-        "Pierce",
-        "Troy",
-        "Pierce",
-        "Troy"
+        "Shirley",
+        "Britta",
+        "Shirley"
       ],
       "joke_types": [
-        "absurdist",
+        "character_comedy",
         "escalation"
       ],
-      "setup": "Pierce mentions one of his biggest fears",
-      "punchline": "Would immediately eat himself if transformed into donut",
-      "craft_total": 7.6,
-      "impact_score": 7.33,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Shirley has broken into Professor Slater's office with a hose; Britta asks why",
+      "punchline": "'Long-neck weave-having bank teller' as an insult is specific, petty, and vivid \u2014 the bank teller detail especially makes no sense (Slater is a professor) which reveals Shirley is projecting someone entirely different onto her. This is the tell.",
+      "craft_total": 7.75,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect absurdist escalation. Pierce's matter-of-fact approach to self-cannibalization is both disturbing and hilarious.",
+      "explanation": "One of the episode's best Shirley moments. 'Long-neck weave-having bank teller' is a layered joke: it's funny on its own as a specific insult, funnier when you realize 'bank teller' makes no sense for a professor, and most funny when you understand this is about Shirley's ex-husband's new girlfriend, not Slater at all. The joke does double comedic and dramatic work. High originality and character integration.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -1650,6 +1680,497 @@
           "line": "Because I would immediately eat myself."
         }
       ]
+    },
+    {
+      "index": 56,
+      "text": "I think some of what I just said may have more to do with my situation. / Yeah, the long-neck, weave-having bank teller didn't feel universal.",
+      "characters": [
+        "Shirley",
+        "Britta"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Shirley begins to self-reflect on her outburst",
+      "punchline": "Britta's dry confirmation \u2014 'the long-neck weave-having bank teller didn't feel universal' \u2014 validates Shirley's self-awareness through understatement. Britta was clearly waiting to say this.",
+      "craft_total": 7.47,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Britta's restrained echo of the specific insult ('didn't feel universal') as a clinically precise observation is the ideal response. The callback makes it funnier \u2014 the phrase is repeated in a completely different register, as analysis rather than rage. Very quotable."
+    },
+    {
+      "index": 57,
+      "text": "Can you believe I targeted this poor lady? Look at all these awards. I bet she's nice. / Yeah. Nice and pretentious.",
+      "characters": [
+        "Shirley",
+        "Britta"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Shirley is feeling remorse in Slater's office, noting her awards",
+      "punchline": "Britta's immediate pivot from Shirley's generosity to 'nice and pretentious' snaps the sentimental moment. Britta can't help the competitive cattiness.",
+      "craft_total": 6.81,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Quick character beat \u2014 Britta's reflexive cattiness. Economical and character-consistent, though not particularly original."
+    },
+    {
+      "index": 58,
+      "text": "Pierce, are you okay? \u2014 Hey, man, what's going on? You have a full-on erection.",
+      "characters": [
+        "Abed",
+        "Troy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Pierce is in the middle of a drug-induced breakdown and his friends approach to check on him",
+      "punchline": "Troy's concerned 'what's going on?' is immediately answered by his own observation \u2014 'you have a full-on erection' \u2014 delivered with matter-of-fact clarity, as if it's a helpful diagnostic rather than an alarming statement",
+      "craft_total": 6.63,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The humor is entirely in Troy's delivery register \u2014 clinical, concerned, matter-of-fact. 'Full-on erection' as a helpful diagnostic observation by a 19-year-old is very Troy. The drug trip escalation is consistent with the episode's through-line."
+    },
+    {
+      "index": 59,
+      "text": "Gee, do I feel a breeze here? Because someone just struck out.",
+      "characters": [
+        "Chang"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Jeff has just been diplomatically rejected by Slater (after the party chaos); Chang notices",
+      "punchline": "Chang's smug observation \u2014 the 'breeze' metaphor for a strikeout combined with his self-satisfied delivery \u2014 is the punchline. Coming from Chang, who struck out with the same woman, it's also deeply hypocritical.",
+      "craft_total": 6.1,
+      "impact_score": 5.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The hypocrisy of Chang gloating over Jeff's rejection when he suffered the same fate is the deeper joke \u2014 but the script doesn't explicitly land it. The line itself is functional but not exceptional."
+    },
+    {
+      "index": 60,
+      "text": "She blew you off too, Chang. / Is that what you had to fall back on? Look at me, bro. Look at me. I've got the body of a fifth grader, okay? If I was working with what you've got, she'd be at the Comfort Inn right now giving me a Mexican Halloween.",
+      "characters": [
+        "Jeff",
+        "Chang"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Jeff deflects Chang's gloating by pointing out Chang was also rejected",
+      "punchline": "Chang's response is to claim that his physical inadequacy ('body of a fifth grader') is the only reason he failed \u2014 if he had Jeff's looks, he'd have succeeded. 'Mexican Halloween' is a baffling, specific, and funny euphemism.",
+      "craft_total": 7.3,
+      "impact_score": 7.33,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Body of a fifth grader' as a self-assessment and 'Mexican Halloween' as a euphemism for a sexual encounter are both characteristically Chang: weirdly specific, slightly offensive, delivered with total commitment. Very character-integrated."
+    },
+    {
+      "index": 61,
+      "text": "It's this campus. It feeds on my coolness. I got no moves anymore. / Moves? Everything's a game to guys like you. I know one move I bet you've never tried in your life.",
+      "characters": [
+        "Jeff",
+        "Chang"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "misdirection"
+      ],
+      "setup": "Jeff laments losing his social edge; Chang sets up what sounds like it might be sincere wisdom",
+      "punchline": "Chang's 'one move' is about to be revealed \u2014 the setup implies some genuine advice is coming from an unexpected source",
+      "craft_total": 6.76,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional setup for the next joke; establishes the misdirection. The 'feeds on my coolness' line is a decent Jeff self-pity phrase. Scores lower because this is mostly setup work."
+    },
+    {
+      "index": 62,
+      "text": "Please sleep with me. Please. Pretty please. I'm so lonely. I haven't slept with anyone in a very long time, and you are so good looking. Please do me the favor of having sex with me.",
+      "characters": [
+        "Chang"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Chang claimed to know a 'move' Jeff had never tried \u2014 implying something sophisticated. The 'move' is revealed.",
+      "punchline": "The move is unfiltered, escalating desperation: Chang literally begging Professor Slater for sex with a 'pretty please.' The gap between the buildup and the pathetic reality is the joke.",
+      "craft_total": 8.0,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The payoff to the 'one move' setup is perfect: the most pathetic possible approach, escalating from 'please' to 'pretty please' to full confession of loneliness. Chang's total commitment to the bit and the escalation structure make this work. The structure is excellent \u2014 the buildup promised something clever, the delivery is deliberately the opposite. Near 8+ level."
+    },
+    {
+      "index": 63,
+      "text": "Okay, stay three steps behind and promise you won't tell anybody. / I promise. I promise.",
+      "characters": [
+        "Professor Slater",
+        "Chang"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "dark_subversive"
+      ],
+      "setup": "Chang's pathetic begging was aimed at Professor Slater",
+      "punchline": "It WORKED. Slater is letting Chang accompany her \u2014 the most pathetic possible approach succeeded where Jeff's charm failed. Chang immediately promises twice, like a dog told to stay.",
+      "craft_total": 7.63,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Exceptional structural payoff. The whole episode is built around Jeff's sophisticated pursuit of Slater failing \u2014 and Chang's last-resort desperation succeeds. It's a perfect inversion and subversion of the romantic comedy structure. Chang's double 'I promise' is a great button. The impact is high because it completes the episode's largest running joke. Clears 8+ easily."
+    },
+    {
+      "index": 64,
+      "text": "Loser!",
+      "characters": [
+        "Unknown"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "Jeff has just told Professor Slater he needs to leave to help his friends, and she says goodnight",
+      "punchline": "An off-screen voice yells 'Loser!' as Jeff walks away \u2014 presumably a faculty party guest who witnessed his failed pursuit and sacrifice",
+      "craft_total": 6.5,
+      "impact_score": 7.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Quick and functional. The 'Loser!' from offscreen lands as a punctuation mark on Jeff's sacrifice \u2014 comedic acknowledgment that from the outside, leaving a faculty party for a student's Halloween party looks pathetic. Economy is high but character integration is low (anonymous voice). Mildly funny."
+    },
+    {
+      "index": 65,
+      "text": "What in the Pink Floyd? / I'm gonna crush myself to death with desks and tables, Jeff!",
+      "characters": [
+        "Jeff",
+        "Pierce"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Jeff finds Pierce in the library in a drug-induced crisis",
+      "punchline": "'What in the Pink Floyd' is a Jeff-style exclamation that substitutes a band name for a standard oath \u2014 immediately followed by Pierce's declared method of suicide-by-furniture, which is both alarming and logistically absurd",
+      "craft_total": 7.27,
+      "impact_score": 7.33,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'What in the Pink Floyd' is an inspired substitution \u2014 specific to Jeff's era and cultural register. Pierce's declared death method (crushing by desks) is specific and funny in its impracticality."
+    },
+    {
+      "index": 66,
+      "text": "Is that a death befitting a Beastmaster? / I never saw Beastmaster. I just wanted to be cool.",
+      "characters": [
+        "Jeff",
+        "Pierce"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Pierce has built a desk fort and is threatening to crush himself; Jeff challenges him through the Beastmaster persona",
+      "punchline": "Pierce's admission \u2014 'I never saw Beastmaster. I just wanted to be cool.' \u2014 is both a callback reveal and a character truth. The whole costume was aspirational fakery, which is Pierce's core tragedy.",
+      "craft_total": 8.19,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the episode's most resonant jokes \u2014 it works as a callback payoff, as character revelation, and as tragicomedy. Pierce never saw Beastmaster; he picked a costume that sounded cool. This is Pierce: performing a version of himself he imagines others will respect, with no genuine connection to the source material. 'I just wanted to be cool' is devastating and funny simultaneously. Clears the 8+ benchmark on character integration and structural payoff."
+    },
+    {
+      "index": 67,
+      "text": "Those floating Mexican skeletons were right. My life is over.",
+      "characters": [
+        "Pierce"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Pierce is in existential crisis during his drug trip",
+      "punchline": "'Those floating Mexican skeletons were right' \u2014 Pierce has apparently had a conversation with D\u00eda de los Muertos decorations and found them persuasive; the credulity extended to party decorations is the joke",
+      "craft_total": 7.77,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good drug-trip absurdism. The idea that Pierce accepted party decorations as wise counsel is funny, and 'floating Mexican skeletons' is a vivid phrase. The juxtaposition of existential crisis ('my life is over') with the advice source (decorations) is well-calibrated."
+    },
+    {
+      "index": 68,
+      "text": "When we go to floating skeletons with our problems, we get what we pay for, don't we?",
+      "characters": [
+        "Jeff"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "deadpan_understatement"
+      ],
+      "setup": "Pierce has just said the floating skeletons told him his life is over",
+      "punchline": "Jeff's response treats consulting party decorations as a legitimate but low-quality advice service \u2014 'we get what we pay for' applies a capitalist logic to supernatural counsel, which is the absurdist joke",
+      "craft_total": 8.02,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Jeff's response is excellent. Treating the floating skeletons as a legitimate but budget advice source ('we get what we pay for') is a Jeff Winger move \u2014 finding a capitalist analogy for a drug-hallucination problem. The logic is internally consistent and funny. Good economy."
+    },
+    {
+      "index": 69,
+      "text": "Pierce, I don't know how you spent the first 60 years, but I know in the last two months you've probably doubled the national average for amount of life lived per lifetime.",
+      "characters": [
+        "Jeff"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "observational"
+      ],
+      "setup": "Pierce is in existential crisis about being old; Jeff talks him down",
+      "punchline": "Jeff's statistic \u2014 'doubled the national average for amount of life lived per lifetime' \u2014 is a fake metric delivered as if real, which is very Jeff. It's both absurd (the metric doesn't exist) and kind (the intent is genuine encouragement)",
+      "craft_total": 7.61,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jeff deploying his lawyer-speak to invent a comforting fake statistic is very character-specific. It works as both comedy and genuine emotional moment \u2014 it's a Jeff speech, but it has real warmth underneath the BS."
+    },
+    {
+      "index": 70,
+      "text": "Well, I do have a young, African-American friend.",
+      "characters": [
+        "Pierce"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jeff is encouraging Pierce about how much living he's done; Pierce begins to agree",
+      "punchline": "Pierce citing 'a young African-American friend' as evidence of his vitality/progress is simultaneously heartfelt (he genuinely means Troy) and revealing of Pierce's perspective \u2014 he sees his Black friend as an accomplishment",
+      "craft_total": 7.57,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Classic Pierce: the 'I have a Black friend' trope rendered completely sincerely, as genuine evidence of personal growth. Pierce isn't trying to be offensive \u2014 he genuinely thinks this counts \u2014 which makes it both funnier and more uncomfortable. High character integration."
+    },
+    {
+      "index": 71,
+      "text": "And, more importantly, you're dressed like a gladiator in a desk fort that you built during a bad trip. If life is just a series of ridiculous attempts to be alive, you're a hero to everything that's ever lived.",
+      "characters": [
+        "Jeff"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Jeff is building Pierce up with encouraging words; he pivots to the specific absurdity of Pierce's current situation",
+      "punchline": "The philosophical framing ('if life is just a series of ridiculous attempts to be alive') applied to 'a gladiator in a desk fort built during a bad trip' is the joke \u2014 the gap between the grandeur of the philosophy and the specific squalor of Pierce's circumstance",
+      "craft_total": 8.42,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Jeff's speech earns its laugh through the contrast between genuine philosophical ambition and extremely specific ridiculous circumstances. 'A gladiator in a desk fort that you built during a bad trip' is an image that encompasses Pierce's entire tragic comedy. The philosophical framing makes it both funny and touching. Clears 8+ on structure, originality, and character integration."
+    },
+    {
+      "index": 72,
+      "text": "Batman? / Yeah? / Are you staying for the party?",
+      "characters": [
+        "Annie",
+        "Abed"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "reaction_beat"
+      ],
+      "setup": "Abed has been in full Batman mode throughout; Annie addresses him as Batman naturally",
+      "punchline": "The fact that Annie simply calls him Batman and Abed responds to it without any break in character is a gentle absurdist beat \u2014 reality has fully accommodated Abed's performance",
+      "craft_total": 7.88,
+      "impact_score": 7.83,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Sweet and funny in its simplicity. The world has accepted Abed as Batman \u2014 Annie doesn't even try his real name. Economical and character-specific."
+    },
+    {
+      "index": 73,
+      "text": "If I stay, there can be no party. / (long pause) / I must be out there in the night, staying vigilant. Wherever a party needs to be saved, I'm there. Wherever there are masks, wherever there's tomfoolery and joy, I'm there.",
+      "characters": [
+        "Abed"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "meta_self_referential"
+      ],
+      "setup": "Annie asks if Abed/Batman is staying at the party",
+      "punchline": "Abed delivers a full Batman departure speech, complete with the logical paradox ('if I stay there can be no party') and the earnest hero monologue \u2014 the joke is the commitment and the specific absurdity of party-vigilance as Batman's mission",
+      "craft_total": 7.71,
+      "impact_score": 7.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Abed's Batman monologue is funny on multiple levels: it's a sincere parody of superhero rhetoric, it's Abed expressing his genuine need to remain outside social situations rather than inside them (meta-character truth), and 'wherever there's tomfoolery and joy' is a great Batman-ified phrase. 'If I stay, there can be no party' is a logical paradox in the Batman idiom that also makes Abed-sense. At the 8.0 quality level."
+    },
+    {
+      "index": 74,
+      "text": "Wherever a party needs to be saved, I'm there. Wherever there are masks, wherever there's tomfoolery and joy, I'm there. But sometimes I'm not, 'cause I'm out in the night, staying vigilant, watching, lurking, running, jumping, hurtling, sleeping... No, I can't sleep. You sleep. I'm awake. I don't sleep. I don't blink. Am I a bird? No. I'm a bat. I am Batman. Or am I? Yes, I am Batman.",
+      "characters": [
+        "Abed"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Abed is delivering his Batman farewell speech to the party",
+      "punchline": "The speech escalates from genuine Batman-esque gravitas ('wherever there's tomfoolery and joy, I'm there') into complete internal breakdown ('Am I a bird? No. I'm a bat. Or am I? Yes, I am Batman.') \u2014 the unraveling of a man trying to stay in character while genuinely confused is the sustained joke",
+      "craft_total": 7.84,
+      "impact_score": 8.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best sustained jokes and a classic Community/Abed moment. The escalating speech starts as genuine Batman pastiche and devolves beautifully into existential questioning ('Am I a bird?') before snapping back to certainty ('Yes, I am Batman'). The structure \u2014 commitment to the bit \u2192 breakdown \u2192 recommitment \u2014 is perfectly Abed. 'Tomfoolery and joy' is a great Batman incongruity. 'Or am I? Yes, I am Batman' is an instant quotable. This is what Community does better than almost any other sitcom: fully committed genre parody that's also deeply character-specific. Clears the 8.0 anchor and approaches the 9.5 anchor in character integration."
+    },
+    {
+      "index": 75,
+      "text": "But sometimes I'm not, 'cause I'm out in the night, staying vigilant, watching, lurking, running, jumping, hurtling, sleeping... No, I can't sleep. You sleep. I'm awake. I don't sleep. I don't blink. Am I a bird? No. I'm a bat. I am Batman. Or am I? Yes, I am Batman.",
+      "characters": [
+        "Abed"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Abed has begun his Batman departure monologue; it has gone on longer than expected",
+      "punchline": "The monologue keeps extending, gaining speed and then decelerating into existential self-questioning ('Am I a bird? No. I'm a bat. I am Batman. Or am I? Yes, I am Batman.') \u2014 the joke is the runaway escalation and the brief identity crisis resolved with complete certainty",
+      "craft_total": 7.9,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The escalating Batman monologue culminating in 'Or am I? Yes, I am Batman' is a great piece of absurdist comedy writing. The pause on 'sleeping... no, I can't sleep' and 'Am I a bird?' are two perfect beats of Abed's literal-minded commitment to genre logic. Highly quotable, strong character integration, good escalation. Clears the 8+ benchmark."
+    },
+    {
+      "index": 76,
+      "text": "I'm Batman. / You sound like Cookie Monster.",
+      "characters": [
+        "Abed",
+        "Annie"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "callback"
+      ],
+      "setup": "Abed has just delivered his Batman monologue; he continues to growl his identity",
+      "punchline": "Annie's flat 'You sound like Cookie Monster' perfectly deflates the epic Batman register \u2014 the Christian Bale voice compared to Cookie Monster is both accurate and devastating",
+      "craft_total": 7.22,
+      "impact_score": 7.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect punctuation to the Batman arc. 'You sound like Cookie Monster' is accurate (the Christian Bale Batman growl does resemble Cookie Monster), economical, and completely punctures Abed's epic self-presentation. It's also a great Annie moment \u2014 she indulges Abed and then delivers the deflating truth. Highly quotable. Clears 8+ on economy, structure, and impact."
+    },
+    {
+      "index": 77,
+      "text": "Candy corn looks like tiny traffic cones. / Yeah, it sure does. / At, like, a candy traffic school. / Like, a little gingerbread man at the wheel, and he's drunk. / Look out. / You'd be driving, but you keep wanting to eat yourself.",
+      "characters": [
+        "Pierce",
+        "Jeff"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Pierce and Jeff are coming down from the evening's events; Pierce makes an observation about candy corn",
+      "punchline": "The candy corn/traffic cone observation builds into a full collaborative riff: candy traffic school \u2192 drunk gingerbread man \u2192 the existential predicament of a gingerbread man who would want to eat himself while driving",
+      "craft_total": 8.16,
+      "impact_score": 8.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The candy corn riff is a lovely, unexpected stoned-logic conversation between Pierce and Jeff \u2014 surprising because these two aren't usually this playful together. The collaborative escalation (traffic cones \u2192 candy school \u2192 drunk gingerbread \u2192 self-eating existential dilemma) is funny and structurally sound. 'You'd be driving but you keep wanting to eat yourself' is a great absurdist image. Rewatch bonus for the warmth of the moment."
+    },
+    {
+      "index": 78,
+      "text": "Look out. \u2014 You'd be driving, but you keep wanting to eat yourself. \u2014 All day.",
+      "characters": [
+        "Abed",
+        "Troy"
+      ],
+      "joke_types": [
+        "absurdist",
+        "escalation"
+      ],
+      "setup": "They've established the drunk gingerbread man scenario",
+      "punchline": "Troy adds the existential complication \u2014 the gingerbread man can't focus on driving because he wants to eat himself \u2014 and Abed's 'all day' as a time-extension of the self-eating desire is a perfect understated capper",
+      "craft_total": 8.54,
+      "impact_score": 8.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent comedic continuation. 'You keep wanting to eat yourself' is a funny existential problem for the gingerbread man \u2014 it's not just absurd, it has an internal logic (of COURSE a food item might want to eat itself). Abed's 'all day' as a capper is perfect deadpan economy \u2014 it extends the image into a sustained condition rather than a one-time event. This and the previous beat together form one of the best comedic riffs in the episode."
+    },
+    {
+      "index": 79,
+      "text": "That's one of my biggest fears. / What is? / If I ever, like, woke up as a donut. / You would eat yourself? / I wouldn't even question it. That'd be tasty.",
+      "characters": [
+        "Pierce",
+        "Jeff",
+        "Pierce",
+        "Jeff",
+        "Pierce"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Pierce casually mentions a fear; Jeff prompts him to elaborate",
+      "punchline": "Pierce's greatest fear is waking up as a donut \u2014 specifically because he would immediately eat himself without hesitation. The logic is absurd but internally consistent, and Pierce's total conviction ('That'd be tasty') is perfect.",
+      "craft_total": 8.8,
+      "impact_score": 9.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best final moments. Pierce's donut fear is specific, absurd, and internally rigorous \u2014 he doesn't fear becoming a donut, he fears that he would then consume himself. The logic is complete. 'I wouldn't even question it. That'd be tasty.' is delivered with the confidence of a man who has absolutely considered this. Highly quotable, great character integration (Pierce's id-driven certainty), and genuinely original. Clears the 8+ benchmark clearly."
+    },
+    {
+      "index": 80,
+      "text": "It's cool to know other people think about this stuff too.",
+      "characters": [
+        "Jeff"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Pierce has shared his fear of waking up as a donut he would eat",
+      "punchline": "Jeff's sincere response \u2014 expressing relief that others share this exact concern \u2014 is a character reveal. Jeff, the too-cool-for-everything guy, admits to sharing Pierce's donut paranoia.",
+      "craft_total": 8.17,
+      "impact_score": 8.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Jeff's admission that he thinks about donut self-consumption too is a funny button to the episode \u2014 the ultra-cool guy and the out-of-touch old man connecting over absurdist anxieties. Character-revealing and warm."
     }
   ],
   "air_date": "2009-10-29",

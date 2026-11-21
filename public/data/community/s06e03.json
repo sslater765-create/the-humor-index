@@ -4,34 +4,34 @@
   "season": 6,
   "episode_number": 3,
   "title": "Basic Crisis Room Decorum",
-  "humor_index": 70.4,
-  "jpm": 2.21,
-  "avg_craft": 6.67,
-  "avg_impact": 6.27,
-  "total_jokes": 52,
-  "war": 24.4,
-  "dominant_joke_types": "[\"character_comedy\", \"escalation\", \"absurdist\"]",
-  "standout_joke_ids": "[33, 24, 52]",
+  "humor_index": 98.0,
+  "jpm": 3.87,
+  "avg_craft": 7.7,
+  "avg_impact": 7.56,
+  "total_jokes": 98,
+  "war": 159.7,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[98, 60, 62]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "I'm in bed, but I only rest half my brain at a time.",
+      "text": "Frankie answers a 3am emergency call with 'I'm in bed, but I only rest half my brain. Go.'",
       "characters": [
         "Frankie"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Someone asks if Frankie is awake at night",
-      "punchline": "She claims to only rest half her brain like a dolphin",
-      "craft_total": 7.11,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "Annie calls Frankie in an apparent emergency in the middle of the night",
+      "punchline": "Frankie's response is total unfazed competence \u2014 she rests only half her brain, the other half apparently always on-call",
+      "craft_total": 8.26,
+      "impact_score": 7.5,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect character moment for hyper-competent Frankie - absurd but delivered matter-of-factly",
+      "explanation": "Perfect cold-open character establishment. The joke is entirely Frankie-specific \u2014 no other character on the show would respond this way. The dolphin-sleep metaphor lands because it's both absurd and oddly credible for her. 'Go.' as a one-word sentence is impeccable economy. Scores high because it simultaneously introduces her character and delivers a genuine laugh.",
       "dialogue": [
         {
           "speaker": "Frankie",
@@ -41,22 +41,23 @@
     },
     {
       "index": 2,
-      "text": "I am Jeffrey, best friend of dean.",
+      "text": "Annie asks Frankie to notify the others, then immediately undercuts herself: 'You don't think the dean can handle it?' / 'Do what you think is best.'",
       "characters": [
-        "Takashi"
+        "Annie",
+        "Frankie"
       ],
       "joke_types": [
         "character_comedy",
-        "absurdist"
+        "irony_sarcasm"
       ],
-      "setup": "Someone pretending to be Jeff texting the Dean",
-      "punchline": "Awkward broken English reveals it's clearly not Jeff",
-      "craft_total": 5.88,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "Annie asks Frankie to notify the group, implying it's a simple task",
+      "punchline": "The hedged question 'You don't think the dean can handle it?' instantly signals everyone \u2014 audience included \u2014 knows the dean cannot handle it; Frankie's diplomatic non-answer confirms it",
+      "craft_total": 7.14,
+      "impact_score": 6.33,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sets up the running gag but not particularly clever on its own",
+      "explanation": "Classic Community joke structure: the question contains the punchline. The audience knows the dean is incompetent before the scene confirms it. 'Do what you think is best' is a brilliantly polite way of saying 'absolutely not.' Good character work but not exceptional.",
       "dialogue": [
         {
           "speaker": "Dean Pelton",
@@ -82,22 +83,22 @@
     },
     {
       "index": 3,
-      "text": "Bro, I just secret that way with love. You know, my style. We keep loving in text, but then secret forever. Meow.",
+      "text": "The dean confidently says 'I'll notify the others. I can do that if you like. I think I can handle notifying others, thank you very much.' \u2014 then immediately texts the wrong number.",
       "characters": [
-        "Takashi"
+        "Dean Pelton"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Dean mentions Jeff acts different in texts vs real life",
-      "punchline": "Completely nonsensical response ending with 'Meow'",
-      "craft_total": 6.61,
-      "impact_score": 7.33,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Dean insists with wounded pride that he can handle the simple task of notifying people",
+      "punchline": "He immediately botches it by texting a stranger instead of Jeff",
+      "craft_total": 7.27,
+      "impact_score": 7.17,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Peak absurdity of the fake Jeff bit - 'secret forever. Meow' is wonderfully random",
+      "explanation": "Classic sitcom structure: a character protests competence, then immediately demonstrates incompetence. The triple-insistence ('I can do that if you like. I think I can handle notifying others, thank you very much') is funny because each additional protest increases the irony of the coming failure. The payoff lands cleanly.",
       "dialogue": [
         {
           "speaker": "Dean Pelton",
@@ -115,22 +116,24 @@
     },
     {
       "index": 4,
-      "text": "I had to remove my night cream, it's $200 an ounce.",
+      "text": "Annie is already on the group text she just sent; Jeff says 'I already know. I'm the one calling the meeting.' Then Dean texts Jeff's wrong number, which is answered by a foreign stranger claiming to be Jeffrey.",
       "characters": [
-        "Jeff"
+        "Annie",
+        "Dean Pelton",
+        "Takashi"
       ],
       "joke_types": [
-        "character_comedy",
-        "observational"
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Jeff is angry about being woken up for emergency meeting",
-      "punchline": "His main complaint is about expensive skincare routine",
-      "craft_total": 6.72,
-      "impact_score": 6.17,
+      "setup": "Dean proudly sends a group text to notify people; Annie is confused because she's already on it",
+      "punchline": "The 'Jeffrey' who responds is actually a teenager in Tokyo who has the number Dean has saved as Jeff's",
+      "craft_total": 7.22,
+      "impact_score": 7.0,
       "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Jeff vanity moment - prioritizes appearance over emergency",
+      "explanation": "This is the foundation joke that pays off magnificently later in the episode. On its own the concept is funny but slight \u2014 a dean who doesn't have his supposed best friend's correct number is characterful. Its true value is as setup for the Takashi subplot, earning strong rewatch points.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -140,22 +143,22 @@
     },
     {
       "index": 5,
-      "text": "I have a theory about this, Britta may be secretly twins.",
+      "text": "'Oh, my God. How stupid can I get?' \u2014 Dean's reaction upon realizing the number is wrong, delivered to himself or the camera",
       "characters": [
-        "Abed"
+        "Dean Pelton"
       ],
       "joke_types": [
-        "absurdist",
+        "reaction_beat",
         "character_comedy"
       ],
-      "setup": "Someone asks why Britta is awake",
-      "punchline": "Abed proposes completely random conspiracy theory",
-      "craft_total": 6.63,
+      "setup": "Annie points out the number doesn't look like an American phone number",
+      "punchline": "Dean's complete self-indicting despair at his own incompetence \u2014 not embarrassed but genuinely bewildered by himself",
+      "craft_total": 6.31,
       "impact_score": 6.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Abed - random conspiracy theory delivered deadpan",
+      "explanation": "A reliable Dean Pelton reaction beat. The self-flagellation reads as genuine rather than performed, which is the best version of this joke type. Functional but not exceptional.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -165,22 +168,24 @@
     },
     {
       "index": 6,
-      "text": "Could a drunk person do this? [implied visual gag]",
+      "text": "Jeff covers for the dean on the group text: 'You're right, I had the wrong number.' The fake Jeffrey (Takashi) replies: 'No worries, Dean. I love you.'",
       "characters": [
-        "Britta"
+        "Jeff",
+        "Dean Pelton",
+        "Takashi"
       ],
       "joke_types": [
-        "visual_gag",
-        "setup_punchline"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Britta denies being drunk and asks if a drunk person could do something",
-      "punchline": "Presumably does something that clearly indicates she's drunk",
-      "craft_total": 5.67,
-      "impact_score": 5.67,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
+      "setup": "Jeff is covering so Annie doesn't realize the dean has the wrong number for his supposed best friend",
+      "punchline": "Takashi, the Tokyo teen, says 'I love you' to the dean with casual sincerity \u2014 which is both absurd and oddly sweet",
+      "craft_total": 7.38,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Classic setup but execution depends on visual we can't see",
+      "explanation": "The joke has two layers: Jeff's cover reveals the dean doesn't have Jeff's real number (damning for their supposed friendship), and Takashi's 'I love you' is funnier than any realistic response could be. The warmth of 'I love you' from a stranger adds a surreal sweetness that elevates it beyond a simple mistaken identity gag.",
       "dialogue": [
         {
           "speaker": "Britta",
@@ -194,22 +199,22 @@
     },
     {
       "index": 7,
-      "text": "No, the unrelated, totally random combination of those four letters.",
+      "text": "'You're always so sweet when we're texting, but then in real life, grr.'",
       "characters": [
-        "Jeff"
+        "Dean Pelton"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Someone asks if KZBC is the TV station",
-      "punchline": "Jeff sarcastically clarifies it's obviously the TV station",
-      "craft_total": 6.06,
-      "impact_score": 5.67,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Dean believes he's texting Jeff and interprets the warm message through the lens of their complicated real-life relationship",
+      "punchline": "Dean articulates the gap between text-Jeff (sweet) and real Jeff (grr) \u2014 which is accurate about Jeff, but he's actually describing a teenager in Tokyo",
+      "craft_total": 7.79,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Standard Jeff sarcasm - competent but not exceptional",
+      "explanation": "This line is doing multiple things at once: it's accurate commentary on Jeff's character, it's tragic-funny that the Dean's warm 'Jeff' is actually a stranger, and 'grr' as the entire characterization of real-life Jeff is perfectly economical. The Dean's earnestness makes it land. High character integration \u2014 this read on Jeff could only come from the dean.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -219,22 +224,22 @@
     },
     {
       "index": 8,
-      "text": "Because the population keeps growing, and no one here ever graduates.",
+      "text": "Takashi responds: 'Bro, I just secret that way with love. You know my style. We keep loving in text, but then secret forever. Meow.'",
       "characters": [
-        "Jeff"
+        "Takashi"
       ],
       "joke_types": [
-        "dark_subversive",
-        "observational"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Discussion of Greendale's rising registration numbers",
-      "punchline": "Dark truth that students never actually graduate",
-      "craft_total": 7.23,
-      "impact_score": 6.83,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Takashi is impersonating Jeff to the dean on a group text",
+      "punchline": "His English is broken but oddly poetic \u2014 'secret that way with love,' 'secret forever,' culminating in the inexplicable 'Meow'",
+      "craft_total": 7.83,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Sharp institutional critique delivered with Jeff's cynicism",
+      "explanation": "The broken English creates genuine surrealist poetry that works on multiple levels: as a parody of Jeff's brooding emotional unavailability, as genuinely strange teen behavior, and as pure absurdism. 'Secret forever' and 'Meow' are both inexplicable and perfect. The 'Meow' in particular is a great comedy button \u2014 unexplained, committed, never justified. This is inventive writing.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -256,22 +261,24 @@
     },
     {
       "index": 9,
-      "text": "Oh, get a boardroom.",
+      "text": "Dean and Annie both respond 'Meow.' to Takashi's 'Meow' on the group text \u2014 a beat of silence-then-confusion",
       "characters": [
-        "Jeff"
+        "Dean Pelton",
+        "Annie",
+        "Takashi"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "irony_sarcasm"
+        "reaction_beat",
+        "absurdist"
       ],
-      "setup": "Annie and Frankie complimenting each other professionally",
-      "punchline": "Twist on 'get a room' but for their professional chemistry",
-      "craft_total": 6.57,
-      "impact_score": 5.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Clever wordplay twist on common phrase",
+      "setup": "Takashi inexplicably ends his message with 'Meow'",
+      "punchline": "Both the dean and Annie instinctively respond 'Meow' back, then presumably stare at their phones in confusion",
+      "craft_total": 7.96,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect button on the Meow gag. The joke is that two separate adults, one of whom doesn't even know who they're texting, both respond with 'Meow' as a social reflex. The economy here is surgical \u2014 the entire joke is six letters total. It's the best kind of absurdist running gag: no explanation, no meta-commentary, just commitment.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -289,22 +296,22 @@
     },
     {
       "index": 10,
-      "text": "Nothing in particular, just overlapping clouds of many thousands and thousands of things.",
+      "text": "Britta arrives furious: 'Annie, if you're not dying, I'm gonna murder you. I had to remove my night cream. It's $200 an ounce.'",
       "characters": [
-        "Jeff"
+        "Britta"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Asked if there's anything City College could smear them with",
-      "punchline": "Poetically describes infinite potential scandals",
-      "craft_total": 6.87,
-      "impact_score": 6.5,
-      "quotability": 7.0,
+      "setup": "It's 3am, the group has been summoned for an emergency",
+      "punchline": "Britta's specific grievance \u2014 a $200 night cream \u2014 undercuts her counter-culture affect with conspicuous consumption",
+      "craft_total": 7.49,
+      "impact_score": 7.33,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Jeff's lyrical pessimism about Greendale's countless problems",
+      "explanation": "Classic Britta joke: her stated values (cool, anti-establishment) are contradicted by her actual behavior (luxury skincare). The specificity of '$200 an ounce' elevates it from generic to pointed. The contradiction is the joke, and it's well-executed, though not groundbreaking.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -314,22 +321,23 @@
     },
     {
       "index": 11,
-      "text": "There isn't a Brenda factor. / He says she's doing better. / Better than what? / Her thyroid condition!",
+      "text": "Chang: 'It's 3 a.m. in the freaking morning.' / Annie: 'Chang, how did you even find out about this?' / Chang: 'I have a right to be here. Hi.'",
       "characters": [
-        "Multiple"
+        "Chang",
+        "Annie"
       ],
       "joke_types": [
-        "running_gag",
-        "escalation"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Mysterious Brenda referenced in email becomes source of confusion",
-      "punchline": "Escalating confusion about who Brenda is and her condition",
-      "craft_total": 6.81,
-      "impact_score": 6.33,
-      "quotability": 4.0,
+      "setup": "Chang arrives at a meeting he wasn't supposed to be at",
+      "punchline": "'I have a right to be here. Hi.' \u2014 the aggressive assertion followed by a cheerful greeting is perfectly weird Chang energy",
+      "craft_total": 7.23,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good confusion escalation but becomes repetitive",
+      "explanation": "The 'Hi.' after the aggressive defense is perfectly calibrated Chang behavior \u2014 a sudden tonal whiplash from defensive to disarming. His inexplicable presence at the meeting is never explained, which is the right call. The joke understands Chang as a character who exists in the margins of scenes.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -383,22 +391,22 @@
     },
     {
       "index": 12,
-      "text": "The brotherhood of AV exists your petty factionalism. We serve only video, the one true queen, and her faithful consort, audio.",
+      "text": "Jeff's theory about why Britta is so awake: 'I have a theory. Britta may be twins.'",
       "characters": [
-        "Abed"
+        "Jeff"
       ],
       "joke_types": [
-        "character_comedy",
-        "absurdist"
+        "absurdist",
+        "character_comedy"
       ],
-      "setup": "Abed mentions having friends in AV at City College",
-      "punchline": "Grandiose proclamation about AV department loyalty transcending schools",
-      "craft_total": 7.4,
-      "impact_score": 6.83,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
+      "setup": "Someone asks why Britta is so alert at 3am",
+      "punchline": "Jeff's theory isn't 'she's a night owl' or 'she was already up' \u2014 it's that she might be two separate people",
+      "craft_total": 7.98,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Abed - turns mundane AV work into epic mythology",
+      "explanation": "Five words, a complete absurdist non-sequitur presented with Winger deadpan confidence. The joke works because it's delivered as a genuine hypothesis, not a quip. 'Britta may be twins' is a perfect example of Community's comedic logic: if Britta is inconsistent, the most economical explanation is that she is two people. Very quotable.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -412,21 +420,22 @@
     },
     {
       "index": 13,
-      "text": "No, most of us have achieved our maximum potential.",
+      "text": "Britta: 'No, I was working.' / Someone: 'At the bar?' / Another: 'Does that mean you're drunk?' / Britta: 'Could a drunk person do this?' \u2014 followed by a cut implying she does something physically ridiculous",
       "characters": [
-        "Abed"
+        "Britta"
       ],
       "joke_types": [
-        "deadpan_understatement"
+        "character_comedy",
+        "physical_slapstick"
       ],
-      "setup": "Asked if AV guys could be bigger nerds",
-      "punchline": "Deadpan admission they've peaked as nerds",
-      "craft_total": 7.51,
-      "impact_score": 7.25,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Britta claims she was working and is therefore alert",
+      "punchline": "'Could a drunk person do this?' \u2014 implying she performs some feat that is NOT evidence of sobriety",
+      "craft_total": 6.39,
+      "impact_score": 6.67,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect deadpan self-awareness from Abed",
+      "explanation": "Classic visual gag that the transcript can only imply. The structure is sound: Britta's challenge ('could a drunk person do this?') is meant to prove sobriety, but the implied action is probably uncoordinated or ridiculous, proving the opposite. Rewatch value is high because the physical gag is hidden from transcript view. Scores mid-range because we can't assess the actual execution.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -436,22 +445,23 @@
     },
     {
       "index": 14,
-      "text": "A bunch of clocks with different times on them, a red phone, a big tabletop map with little Nazi tanks, and, or a Godzilla.",
+      "text": "Annie says the email is from KZBC. Jeff says 'The TV station?' Annie: 'No, the unrelated, totally random combination of those four letters.'",
       "characters": [
-        "Annie"
+        "Annie",
+        "Jeff"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Annie listing equipment needed for situation room",
-      "punchline": "Goes from realistic to WWII war room to Godzilla movies",
-      "craft_total": 7.32,
-      "impact_score": 7.17,
-      "quotability": 6.0,
+      "setup": "Jeff asks an unnecessary clarifying question about the TV station",
+      "punchline": "Annie's withering sarcastic response \u2014 'the unrelated, totally random combination of those four letters' \u2014 demolishes the question entirely",
+      "craft_total": 6.97,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great escalation from military serious to completely absurd",
+      "explanation": "A reliable genre of sitcom joke \u2014 the pedantic clarification skewered by sarcasm \u2014 but executed with particular relish. The phrase 'unrelated, totally random combination of those four letters' is unusually long for a comedown, which actually makes it funnier. Annie's exasperation is character-specific.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -473,22 +483,22 @@
     },
     {
       "index": 15,
-      "text": "You know, it's the darndest thing, I think Britta somehow crapped in my pants too.",
+      "text": "Jeff quietly echo-meows 'Mee-yow' in response to the drama of the email reveal",
       "characters": [
-        "Chang"
+        "Jeff"
       ],
       "joke_types": [
-        "absurdist",
-        "cringe_discomfort"
+        "callback",
+        "reaction_beat"
       ],
-      "setup": "Chang needs to leave the situation room",
-      "punchline": "Impossible and gross explanation",
-      "craft_total": 4.93,
-      "impact_score": 4.5,
-      "quotability": 3.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Gross-out humor that feels lazy even for Chang",
+      "setup": "The Meow gag from the text chain",
+      "punchline": "Jeff meows to himself as a commentary on the drama \u2014 a callback that shows he was reading the texts and found them as absurd as we did",
+      "craft_total": 7.23,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A quiet callback that rewards attentive viewers. Jeff's 'Mee-yow' is both a reference to the absurd text exchange and a sardonic reaction to the email drama. The variant spelling/pronunciation suggests he's doing it consciously, with ironic distance. Good economy.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -502,23 +512,23 @@
     },
     {
       "index": 16,
-      "text": "I mean I could declare it a. Cookie room! / There are no cookies. / There is a situation.",
+      "text": "Jeff: 'They're desperate. Our registration numbers are trending upward.' Britta: 'Because the population keeps growing and no one here ever graduates.'",
       "characters": [
         "Jeff",
-        "Annie"
+        "Britta"
       ],
       "joke_types": [
-        "setup_punchline",
-        "deadpan_understatement"
+        "irony_sarcasm",
+        "observational"
       ],
-      "setup": "Jeff dismisses the 'situation room' designation",
-      "punchline": "Annie's literal response about cookies vs situation",
-      "craft_total": 6.88,
-      "impact_score": 6.17,
-      "quotability": 4.0,
+      "setup": "Jeff spins Greendale's rising enrollment as a sign of success",
+      "punchline": "Britta correctly identifies that the numbers mean nothing \u2014 they're up because students never leave",
+      "craft_total": 7.64,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Annie's earnestness vs Jeff's cynicism",
+      "explanation": "One of the smarter jokes in the episode \u2014 it simultaneously mocks Jeff's spin, skewers community college culture, and is meta-commentary on the show (the study group never graduates). Britta being the one to identify the uncomfortable truth is an inversion of her usual role as the person who gets things wrong. Good structural irony.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -532,22 +542,24 @@
     },
     {
       "index": 17,
-      "text": "Found it. She was wandering around campus, without pants.",
+      "text": "Annie and Frankie exchange compliments about whose efforts deserve credit; Jeff says: 'Get a boardroom.'",
       "characters": [
-        "Dean"
+        "Annie",
+        "Frankie",
+        "Jeff"
       ],
       "joke_types": [
-        "visual_gag",
-        "setup_punchline"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Dean arrives saying he found something",
-      "punchline": "Reveals Britta wandering pantsless (visual)",
-      "craft_total": 5.74,
-      "impact_score": 5.67,
-      "quotability": 3.0,
+      "setup": "Annie and Frankie are mutually deflecting credit in a way that becomes its own performance",
+      "punchline": "'Get a boardroom' \u2014 a riff on 'get a room,' implying their professional admiration is as embarrassingly intimate as PDA",
+      "craft_total": 7.29,
+      "impact_score": 6.75,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Physical comedy setup but relies on visual we can't assess",
+      "explanation": "A clever wordplay twist on 'get a room' that lands because it's so precisely calibrated to the professional context. The word substitution works because it's exact \u2014 a boardroom IS where these two would take their mutual admiration. Jeff's economy here is perfect: three words.",
       "dialogue": [
         {
           "speaker": "Dean",
@@ -561,22 +573,23 @@
     },
     {
       "index": 18,
-      "text": "If the answer is Greendale, prepare to get boned.",
+      "text": "Annie confronts Frankie about the P.S. in the email: 'I was glad to hear Brenda's doing better' \u2014 'Huh? Huh?' as accusatory evidence of hidden context",
       "characters": [
-        "City College Ad"
+        "Annie",
+        "Frankie"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "setup_punchline"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Serious attack ad about Greendale giving degrees to dogs",
-      "punchline": "Crude pun on 'boned' (dogs like bones)",
-      "craft_total": 4.96,
-      "impact_score": 5.0,
-      "quotability": 4.0,
+      "setup": "Frankie has been managing information \u2014 the email has a P.S. about someone named Brenda",
+      "punchline": "Annie's 'Huh? Huh?' as though the postscript is damning evidence in a trial \u2014 the absurdly inflated prosecutorial energy for a banal postscript",
+      "craft_total": 7.29,
+      "impact_score": 6.83,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Weak pun that deflates the serious attack ad",
+      "explanation": "Annie's hyper-vigilant 'Huh? Huh?' is a character-specific comedic beat \u2014 her investigative intensity applied to something trivial. Works because the gap between her prosecutorial energy and the mundane postscript is funny. The Brenda subplot also becomes a running gag.",
       "dialogue": [
         {
           "speaker": "City College Ad",
@@ -586,22 +599,25 @@
     },
     {
       "index": 19,
-      "text": "I seem to recall, no.",
+      "text": "Running gag: 'The Brenda factor' \u2014 Brenda's thyroid condition being treated as geopolitically significant crisis intel",
       "characters": [
-        "Dean"
+        "Annie",
+        "Frankie",
+        "Jeff",
+        "Chang"
       ],
       "joke_types": [
-        "reaction_beat",
-        "cringe_discomfort"
+        "running_gag",
+        "absurdist"
       ],
-      "setup": "Asked directly if Greendale gave a degree to a dog",
-      "punchline": "Vague, evasive non-answer that suggests guilt",
-      "craft_total": 6.32,
-      "impact_score": 6.0,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Brenda is mentioned as a complicating factor in the crisis strategy",
+      "punchline": "Everyone keeps riffing on Brenda's thyroid condition as though it's a critical strategic variable \u2014 'Better than what?' 'Her thyroid condition. Can you focus?' 'Can Brenda?'",
+      "craft_total": 7.61,
+      "impact_score": 7.5,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Dean evasiveness - 'seem to recall' is hilariously non-committal",
+      "explanation": "The best part of this gag is 'Can Brenda?' \u2014 responding to 'can you focus?' with the genuine question of whether Brenda, with her thyroid issues, is capable of focus. It's a micro-absurdist detour that escalates perfectly. The joke works because Brenda is never explained enough to be real but is treated as entirely real.",
       "dialogue": [
         {
           "speaker": "Dean Pelton",
@@ -611,22 +627,23 @@
     },
     {
       "index": 20,
-      "text": "What I wanna know is, did a dog get a degree here, in any way that can be proven?",
+      "text": "The AV brotherhood speech: 'The brotherhood of AV exists beyond your factionalism. We serve only Video, the true queen, and her consort, Audio.' / 'Could you be bigger nerds?' / 'No, we've achieved our maximum potential.'",
       "characters": [
-        "Jeff"
+        "Abed",
+        "Annie"
       ],
       "joke_types": [
         "character_comedy",
-        "dark_subversive"
+        "deadpan_understatement"
       ],
-      "setup": "Discussion about whether dog got degree",
-      "punchline": "Jeff only cares about provable evidence, not truth",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Abed announces he has AV contacts at City College who will get them a copy of the ad",
+      "punchline": "'No, we've achieved our maximum potential.' \u2014 the utter absence of shame or self-awareness is the perfect Abed response to being called a nerd",
+      "craft_total": 8.09,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Jeff lawyer cynicism - truth vs provability distinction",
+      "explanation": "This scores high because of perfect character integration and a punchline that doubles as a philosophy. Abed is the only character who would (a) describe an AV brotherhood with mock-religious gravity and (b) respond to 'could you be bigger nerds?' with complete, proud sincerity. 'We've achieved our maximum potential' is legitimately quotable and could be the thesis statement of the whole show. The setup ('Video, the true queen, and her consort, Audio') is also genuinely funny on its own.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -644,22 +661,22 @@
     },
     {
       "index": 21,
-      "text": "So, how many seconds of that should I waste on truth, which is an artificial construct that rarely holds up in court, and has never changed the outcome of a fight.",
+      "text": "Jeff's situation room wish list: 'white boards, cork boards, laptops... clocks with different times, a red phone, a big map with tiny Nazi tanks, and/or a Godzilla.'",
       "characters": [
         "Jeff"
       ],
       "joke_types": [
-        "character_comedy",
-        "dark_subversive"
+        "escalation",
+        "absurdist"
       ],
-      "setup": "Jeff explaining his pragmatic approach",
-      "punchline": "Cynical dismissal of truth as artificial construct",
-      "craft_total": 7.56,
-      "impact_score": 7.0,
+      "setup": "The dean declares the room a 'situation room'; Annie starts listing practical needs",
+      "punchline": "Jeff's list starts plausibly (whiteboards) and escalates to 'tiny Nazi tanks, and/or a Godzilla' \u2014 the 'and/or' presenting Godzilla as equivalent to Nazi tanks as a situation room accessory",
+      "craft_total": 7.46,
+      "impact_score": 7.5,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Peak Jeff cynicism - philosophically dark but perfectly in character",
+      "explanation": "The escalation structure is clean: standard \u2192 cinematic clich\u00e9 \u2192 Cold War prop \u2192 WWII artifacts \u2192 kaiju monster. 'And/or a Godzilla' is funny partly because Godzilla is offered as a reasonable alternative to Nazi tanks, and partly because the definite article 'a Godzilla' implies it's a purchasable commodity. Good escalation comedy.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -669,22 +686,22 @@
     },
     {
       "index": 22,
-      "text": "The Brenda paradox.",
+      "text": "Jeff: 'I think Britta somehow crapped in my pants too.'",
       "characters": [
         "Jeff"
       ],
       "joke_types": [
-        "callback",
+        "character_comedy",
         "absurdist"
       ],
-      "setup": "Continuing confusion about mysterious Brenda",
-      "punchline": "Jeff elevates it to philosophical paradox status",
-      "craft_total": 5.87,
-      "impact_score": 5.33,
-      "quotability": 5.0,
+      "setup": "Britta apparently soiled herself (from the 'could a drunk person do this' gag earlier); Jeff is wearing his pants",
+      "punchline": "Jeff claims Britta has also crapped in his pants, as though this is a Britta-specific supernatural phenomenon",
+      "craft_total": 6.85,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Callbacks the running gag with grandiose naming",
+      "explanation": "The phrasing 'somehow crapped in my pants too' is funnier than the content because of the implied resigned acceptance of Britta as a force of nature who transcends physical possibility. It lands as a callback to the Britta physical gag and adds the extra absurd layer of Jeff also being affected.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -698,22 +715,23 @@
     },
     {
       "index": 23,
-      "text": "I mean we've known this animal 30 seconds and she's already unreliable.",
+      "text": "Jeff: 'It's only a situation room because she called it that. I mean, I could declare it a cookie room.' / Annie: 'There are no cookies.' / Jeff: 'There is a situation.'",
       "characters": [
-        "Jeff"
+        "Jeff",
+        "Annie"
       ],
       "joke_types": [
-        "observational",
-        "irony_sarcasm"
+        "irony_sarcasm",
+        "wordplay_pun"
       ],
-      "setup": "Finding out dog was registered as different breed than ad claimed",
-      "punchline": "Criticizing dog's 'reliability' based on breed paperwork",
-      "craft_total": 7.09,
-      "impact_score": 6.67,
-      "quotability": 5.0,
+      "setup": "Jeff objects to the 'situation room' framing as performative",
+      "punchline": "Annie's literal response ('there are no cookies') misses the point; Jeff's comeback ('there is a situation') is a rare moment of Jeff accidentally making Annie's argument for her",
+      "craft_total": 7.96,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good absurdist logic - treating breed mix-up as character flaw",
+      "explanation": "The joke has a lovely internal logic trap: Jeff tries to prove naming is arbitrary, Annie takes him literally, and Jeff's rebuttal ('there is a situation') inadvertently validates the original naming. He defeats his own argument while trying to win it. That structural irony is well-constructed and character-specific \u2014 Jeff's smartness and smugness constantly undermine each other.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -727,23 +745,24 @@
     },
     {
       "index": 24,
-      "text": "So, why is he a pedophile? / Just demonstrating the formula.",
+      "text": "Greendale spirit search: 'Where's the pride?' \u2014 'I'm fine.' \u2014 'Found it. She was wandering around campus without pants.'",
       "characters": [
-        "Chang",
-        "Jeff"
+        "Annie",
+        "Dean Pelton",
+        "Unnamed Character"
       ],
       "joke_types": [
-        "dark_subversive",
-        "meta_self_referential"
+        "misdirection",
+        "character_comedy"
       ],
-      "setup": "Jeff asks Chang to make attack ad",
-      "punchline": "Chang immediately goes to pedophile accusation, Jeff treats it as educational",
-      "craft_total": 7.67,
-      "impact_score": 7.17,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Annie asks where the Greendale spirit is; someone says 'I'm fine' as though they ARE the spirit",
+      "punchline": "The spirit/pride is literalized \u2014 she's a person, and she's wandering pantless on campus",
+      "craft_total": 6.93,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark satire of attack ad tactics - treats horrible accusation as formula",
+      "explanation": "Classic Community misdirection: abstract concept (school spirit) is literalized into a wandering person. The reveal that she's pantless is both absurd and a perfect Greendale metaphor \u2014 the school's pride is undignified and disoriented. The structure (rhetorical question \u2192 false answer \u2192 literal answer) is clean.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -773,22 +792,22 @@
     },
     {
       "index": 25,
-      "text": "And maybe she barks just a little bit more, at black mailmen.",
+      "text": "New arrival asks about the situation; someone says 'Brenda's thyroid.' New arrival: 'Sorry to hear that. Keep the pants. I'm going back to bed.'",
       "characters": [
-        "Jeff"
+        "Unnamed new arrival"
       ],
       "joke_types": [
-        "dark_subversive",
-        "escalation"
+        "running_gag",
+        "deadpan_understatement"
       ],
-      "setup": "Jeff listing ways to attack the dog's character",
-      "punchline": "Suggests dog is racist based on barking patterns",
-      "craft_total": 6.33,
-      "impact_score": 5.75,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Dark escalation of attack ad absurdity - dog racism allegation",
+      "setup": "Someone new arrives and asks what's going on",
+      "punchline": "The Brenda's thyroid answer is accepted as sufficient explanation; 'Keep the pants' is a callback to the pantless wanderer; then the person immediately leaves",
+      "craft_total": 7.61,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A compact triple-callback that rewards episode attentiveness: Brenda's thyroid is now an acceptable explanation for anything, 'Keep the pants' shows the pantless situation is known, and the immediate departure is the right comic choice. The deadpan acceptance of Brenda's thyroid as a full situational briefing is the best element.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -798,22 +817,22 @@
     },
     {
       "index": 26,
-      "text": "But first, why don't you go get a bunch of coffee, drink all of it, then go get some more and bring it back here.",
+      "text": "The City College attack ad plays: accusing Greendale of giving a degree to a dog named Ruffles. Tagline: 'If the answer is Greendale, prepare to get boned.'",
       "characters": [
-        "Jeff"
+        "City College Ad Voice"
       ],
       "joke_types": [
-        "character_comedy",
-        "misdirection"
+        "dark_subversive",
+        "irony_sarcasm"
       ],
-      "setup": "Chang offers to spray paint Banksy-style dog stencils",
-      "punchline": "Jeff sends him on impossible coffee errand to get rid of him",
-      "craft_total": 6.51,
-      "impact_score": 5.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "The group finally sees the ad they've been dreading",
+      "punchline": "'Prepare to get boned' \u2014 a double entendre that is simultaneously appropriate (a dog 'bones' things) and an aggressive political ad tagline",
+      "craft_total": 7.89,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good misdirection - pretends to take Chang seriously while dismissing him",
+      "explanation": "The 'get boned' tagline is the punchline of a full fake political attack ad, which is itself a brilliant comedic construct (the show parodying political ad conventions). The wordplay is clean \u2014 'boned' works as 'screwed over' AND as a dog pun. The ad parody format is well-executed: specific year, specific breed, escalating specificity. The 'paid for by City College' capper grounds it. This is the episode's first big set-piece laugh.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -847,22 +866,28 @@
     },
     {
       "index": 27,
-      "text": "No. No. Bad!",
+      "text": "'Did we give a degree to a dog?' \u2014 collective beat of silence/reaction from the whole group",
       "characters": [
-        "Annie"
+        "Jeff",
+        "Annie",
+        "Dean Pelton",
+        "Frankie",
+        "Abed",
+        "Britta",
+        "Chang"
       ],
       "joke_types": [
-        "visual_gag",
-        "irony_sarcasm"
+        "reaction_beat",
+        "awkward_silence"
       ],
-      "setup": "Jeff suggesting they might bury evidence",
-      "punchline": "Annie scolds Jeff like he's a dog (in episode about dog)",
-      "craft_total": 7.52,
-      "impact_score": 7.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
+      "setup": "The ad ends and accuses Greendale of giving a bachelor's degree to a dog",
+      "punchline": "The question hangs in the air; the silence/reaction is the joke \u2014 nobody immediately says 'of course not'",
+      "craft_total": 7.3,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Excellent thematic callback - treating Jeff like the dog they're discussing",
+      "explanation": "The power of this beat is what's NOT said. In a normal episode of a normal show, someone would immediately say 'of course we didn't.' The fact that this question produces only silence is perfect \u2014 it means everyone is computing whether it might be true. The audience's realization that NOBODY is denying it is the punchline. Excellent structure.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -876,24 +901,22 @@
     },
     {
       "index": 28,
-      "text": "I say I go to City College with a camera, shoot a really gross porno movie on their campus and put it online. / Fine. / Cool. / Wait, what?",
+      "text": "Multiple characters: 'Oh, my God. Oh, my God.' / 'Okay. It's okay. It's all right.' \u2014 reaction to something off-screen (presumably Britta pantless)",
       "characters": [
-        "Chang",
-        "Jeff",
-        "Chang"
+        "group"
       ],
       "joke_types": [
-        "escalation",
-        "reaction_beat"
+        "reaction_beat",
+        "visual_gag"
       ],
-      "setup": "Chang proposes outrageous revenge plan",
-      "punchline": "Jeff casually agrees, Chang realizes how crazy his own idea was",
-      "craft_total": 6.93,
-      "impact_score": 6.83,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Good beat structure - Chang's own surprise at Jeff's agreement",
+      "setup": "The group is reeling from the dog degree revelation",
+      "punchline": "An entirely separate crisis enters the room \u2014 someone (Britta, pantless) appears, triggering a fresh wave of 'Oh my Gods'",
+      "craft_total": 6.11,
+      "impact_score": 6.5,
+      "quotability": 4.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Visual gag that relies on the performance and the reveal. The 'It's okay, it's all right' spoken in response to something we can imagine is a good beat. Limited without the visual.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -911,23 +934,22 @@
     },
     {
       "index": 29,
-      "text": "It's only my style to be secret, please bring me five can of olive. / Five cans? / But don't believe me if I say I don't like. I'm just pretending I hate olives.",
+      "text": "New person: 'So this is Greendale, not City College?' \u2014 clearly asking for confirmation of which school she's looking at as the scandal ad plays",
       "characters": [
-        "Takashi",
-        "Dean"
+        "Unnamed Character"
       ],
       "joke_types": [
-        "running_gag",
-        "absurdist"
+        "deadpan_understatement",
+        "reaction_beat"
       ],
-      "setup": "Continuation of fake Jeff texting pattern",
-      "punchline": "Bizarre olive obsession with preemptive explanation of his fake hatred",
-      "craft_total": 5.49,
-      "impact_score": 5.0,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Escalates running gag with specific absurd details about olive preferences",
+      "setup": "Someone who doesn't know what's happening asks a clarifying question about which school the ad is about",
+      "punchline": "In the wake of the dog-degree accusation, asking 'this is Greendale?' is a quietly devastating understatement about Greendale's reputation",
+      "craft_total": 6.94,
+      "impact_score": 6.83,
+      "quotability": 4.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "A mild joke that lands as awkward deflation rather than a strong punchline. The confusion underscores Greendale's recognizability-as-disaster-school, but the execution is flat. The character is anonymous, reducing impact further.",
       "dialogue": [
         {
           "speaker": "Dean Pelton",
@@ -945,22 +967,22 @@
     },
     {
       "index": 30,
-      "text": "It's only my style to be secret, please bring me five can of olive.",
+      "text": "'I'm gonna get more pants.'",
       "characters": [
-        "Fake Jeffrey"
+        "Unnamed Character / Greendale Spirit"
       ],
       "joke_types": [
         "running_gag",
-        "absurdist"
+        "deadpan_understatement"
       ],
-      "setup": "Dean resistant to bringing olives again",
-      "punchline": "Fake Jeff's broken English request for five cans",
-      "craft_total": 5.58,
-      "impact_score": 5.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "In the wake of the dog-degree crisis and everyone's shock",
+      "punchline": "The pantless wanderer's response to the gravity of the situation is simply to go get more pants",
+      "craft_total": 6.71,
+      "impact_score": 6.33,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 1,
-      "explanation": "Good continuation of both running gags - the olive obsession and the fake Jeff's broken English.",
+      "explanation": "A reliable callback that works through perfect indifference. Everyone else is in crisis mode; she's concerned with pants. The comedic principle of 'character who exists in a different register from everyone else' is well-applied. Economy is impeccable.",
       "dialogue": [
         {
           "speaker": "Fake Jeffrey",
@@ -970,22 +992,23 @@
     },
     {
       "index": 31,
-      "text": "In fact, I kinda hope they do. / Well, why is that? / I don't know. They all treat me like I'm a joke. But if a dog got a degree, that means we're all a joke.",
+      "text": "Annie formally interrogates Dean Pelton: 'Dean Pelton, did Greendale Community College give a degree to a dog?' \u2014 his answer: 'Oh. I seem to recall... No. No way. There's absolutely no way. Not that dog.'",
       "characters": [
-        "Chang"
+        "Annie",
+        "Dean Pelton"
       ],
       "joke_types": [
         "character_comedy",
-        "dark_subversive"
+        "escalation"
       ],
-      "setup": "Chang admitting he hopes the dog degree story is true",
-      "punchline": "Wants everyone to be devalued so his own worthlessness feels normal",
-      "craft_total": 7.21,
-      "impact_score": 6.83,
-      "quotability": 7.0,
+      "setup": "Direct yes/no question about the dog",
+      "punchline": "'Not that dog.' \u2014 after a full sequence of convincing denial, the qualifier reveals he remembers MULTIPLE dogs, and is only ruling out this specific one",
+      "craft_total": 7.64,
+      "impact_score": 7.5,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Surprisingly deep Chang moment - wants shared worthlessness over personal inadequacy",
+      "explanation": "One of the best jokes in the episode. The structure is a perfect escalating denial: 'Oh. I seem to recall... No. No way. There's absolutely no way.' \u2014 each beat slightly more emphatic and convincing than the last, a full arc of denial. Then 'Not that dog.' detonates it completely. It doesn't deny the existence of dog degrees; it rules out this specific dog. The implication is both that degrees have been given to dogs (plural) AND that the dean is comfortable with this. This is very high craft because the structure does all the work \u2014 the punchline is two syllables after a long wind-up.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -995,22 +1018,22 @@
     },
     {
       "index": 32,
-      "text": "I was like 40. / I never really listened to music, when I was growing up. I was in my own world, but one day at work, I heard this sound.",
+      "text": "'How are these hard questions? Why are these the questions you're asking?'",
       "characters": [
-        "Frankie"
+        "Jeff"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "irony_sarcasm"
       ],
-      "setup": "Discussing being into Natalie is Freezing at different ages",
-      "punchline": "Frankie was 40 when into teen band, then overshares her isolated childhood",
-      "craft_total": 5.96,
-      "impact_score": 5.5,
-      "quotability": 4.0,
+      "setup": "The Dean is visibly struggling with what should be simple yes/no questions",
+      "punchline": "Jeff's exasperation \u2014 'Why are these the questions you're asking?' \u2014 is itself funny because the answer is that the Dean makes simple questions hard",
+      "craft_total": 6.53,
+      "impact_score": 6.25,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character building - Frankie's awkward oversharing about lonely past",
+      "explanation": "Functional reaction beat that underlines the Dean's incompetence. Jeff's frustration is well-placed but the joke is more of a straight line than a gag.",
       "dialogue": [
         {
           "speaker": "Frankie",
@@ -1024,22 +1047,23 @@
     },
     {
       "index": 33,
-      "text": "Hope is pouting in advance. Hope is faith's richer, bitchier sister. Hope is the deformed addict bound incest monster offspring of entitlement and fear.",
+      "text": "Jeff: 'You don't wanna know if a dog got a degree here?' / Dean: 'It's not important. What I wanna know is \u2014 did a dog get a degree here in any way that can be proven?'",
       "characters": [
-        "Frankie"
+        "Jeff",
+        "Dean Pelton"
       ],
       "joke_types": [
-        "escalation",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Annie asks what Frankie hopes is true",
-      "punchline": "Increasingly elaborate and dark metaphors for why hope is bad",
-      "craft_total": 8.35,
-      "impact_score": 8.5,
-      "quotability": 9.0,
+      "setup": "Jeff wants to find the truth; the dean reframes the question",
+      "punchline": "'Did a dog get a degree here in any way that can be proven?' \u2014 the dean openly proposes an epistemology where unproven events don't count as real",
+      "craft_total": 8.55,
+      "impact_score": 8.83,
+      "quotability": 8.0,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Exceptional escalating metaphors - each description gets more elaborate and dark. Peak Frankie characterization",
+      "explanation": "This line is simultaneously funny and a sharp satirical jab at institutional CYA culture. The dean doesn't deny the dog got a degree \u2014 he just wonders if there's proof. The comedic logic is airtight: the question asked and the question answered are entirely different questions, and the gap between them is the joke. Scores high because it's the dean being accidentally transparent about institutional corruption, delivered completely sincerely.",
       "dialogue": [
         {
           "speaker": "Frankie",
@@ -1057,22 +1081,23 @@
     },
     {
       "index": 34,
-      "text": "I assume Change thinks I sound like distant explosions and crying babies, you know, he's unstable, right?",
+      "text": "Jeff: 'Oh, I like that, Jeffrey.' / Annie: 'I don't like that. I like the truth.'",
       "characters": [
-        "Frankie"
+        "Jeff",
+        "Annie"
       ],
       "joke_types": [
         "character_comedy",
-        "observational"
+        "irony_sarcasm"
       ],
-      "setup": "Discussing how different characters might perceive her voice",
-      "punchline": "Matter-of-fact assessment of Chang's mental state with specific audio metaphor",
-      "craft_total": 7.23,
-      "impact_score": 6.83,
-      "quotability": 6.0,
+      "setup": "Jeff endorses the dean's 'provable' framing",
+      "punchline": "Jeff calling himself 'Jeffrey' in the third person is a brief self-aware absurdism; Annie's straight-man response is funnier for its earnestness",
+      "craft_total": 6.99,
+      "impact_score": 6.5,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good Frankie moment - clinical assessment with vivid metaphor",
+      "explanation": "Jeff's third-person self-approval is a subtle callback to the Takashi 'I am Jeffrey' thread and shows mild self-awareness, but the exchange is more of a character note than a strong joke. Functional bridging material.",
       "dialogue": [
         {
           "speaker": "Frankie",
@@ -1082,23 +1107,23 @@
     },
     {
       "index": 35,
-      "text": "See what hope does? / Screw you, Frankie!",
+      "text": "Jeff: 'Play lawyer on your own time.' / Annie: 'This is my own time. You wanted me invested? Well, this dump cuts my paychecks, and I've got three hours to defend it.' / Jeff continues: 'Which is an artificial construct that rarely holds up in court and has never changed the outcome of a fight.'",
       "characters": [
-        "Frankie",
+        "Jeff",
         "Annie"
       ],
       "joke_types": [
-        "setup_punchline",
-        "escalation"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Annie gets excited finding transcript then crushed it proves the dog story",
-      "punchline": "Frankie uses Annie's emotional rollercoaster to prove her anti-hope philosophy",
-      "craft_total": 7.1,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "Jeff tells Annie to 'play lawyer' elsewhere; Annie points out this IS his time, being a real lawyer",
+      "punchline": "Jeff's dismissal of truth as 'an artificial construct that rarely holds up in court' is simultaneously cynical, funny, and a genuine characterization of how legal practice works",
+      "craft_total": 7.97,
+      "impact_score": 8.0,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Perfect callback - Frankie proves her philosophy right in real time",
+      "is_callback": 0,
+      "explanation": "Jeff's speech is excellent character work \u2014 he's a lawyer dismissing truth as a legal concept, which is nihilistic but not entirely wrong. 'Has never changed the outcome of a fight' is the best line because it broadens from legal to existential. This is very Jeff: cynical, specifically credentialed, delivered with absolute confidence. High character integration score.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -1124,23 +1149,22 @@
     },
     {
       "index": 36,
-      "text": "Victory. / You know, within the context of Greendale.",
+      "text": "Frankie: 'Sorry you have to see him like this.' \u2014 to Annie, about Jeff's cynicism",
       "characters": [
-        "Annie",
         "Frankie"
       ],
       "joke_types": [
-        "setup_punchline",
-        "deadpan_understatement"
+        "deadpan_understatement",
+        "character_comedy"
       ],
-      "setup": "Annie celebrates finding no degree in dog's file",
-      "punchline": "Frankie qualifies the victory as only meaningful at Greendale",
-      "craft_total": 7.16,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Jeff has just delivered a nihilistic speech about truth being meaningless",
+      "punchline": "Frankie treats Jeff's dark worldview as an embarrassing personal condition, like watching someone have a mild seizure",
+      "craft_total": 7.76,
+      "impact_score": 7.5,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good deflation of Annie's enthusiasm with Frankie's realism",
+      "explanation": "Perfect Frankie line. It's condescending in a clinical rather than mean way \u2014 she's not attacking Jeff, she's just managing the situation and offering Annie sympathy. The implication that Jeff's cynicism is a known, recurring medical event is funnier than any direct rebuttal would be. Very economical.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -1154,22 +1178,23 @@
     },
     {
       "index": 37,
-      "text": "Ruffles stole cookies from a Girl Scout, impersonated a lobster, has had 27 children with five different fathers, and, according to one local doctor, has worms.",
+      "text": "Looking up Ruffles online: 'She's registered as a border terrier.' / 'They said Staffordshire.' / 'Isn't that something? We've known this animal 30 seconds and she's already unreliable.'",
       "characters": [
-        "Attack Ad Narrator"
+        "Abed",
+        "Jeff"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Attack ad against the dog escalating accusations",
-      "punchline": "Mix of plausible (stealing cookies) and ridiculous (impersonated lobster) charges",
-      "craft_total": 7.19,
-      "impact_score": 7.17,
-      "quotability": 7.0,
+      "setup": "The group is trying to verify Ruffles' background to discredit the ad",
+      "punchline": "Jeff immediately treats a dog's breed discrepancy as evidence of moral unreliability \u2014 'we've known this animal 30 seconds and she's already unreliable'",
+      "craft_total": 7.8,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation mixing realistic and absurd charges against dog",
+      "explanation": "The logical leap from 'wrong breed listed' to 'unreliable dog' mirrors political mudslinging logic perfectly. Jeff applies the full weight of human moral judgment to a breed discrepancy in a dog's paperwork. The timing ('30 seconds') and the word 'already' do a lot of work \u2014 implying a track record from an impossibly short period. Excellent economy and character integration.",
       "dialogue": [
         {
           "speaker": "Attack Ad Narrator",
@@ -1191,22 +1216,23 @@
     },
     {
       "index": 38,
-      "text": "I originally wanted the voice over to be a James roll Jones impersonator, but the James bater impersonator turned out pretty good.",
+      "text": "Jeff: 'Abed, can you make an attack ad?' / Abed to camera: 'Jeff wants me to make an attack ad. So why is he a pedophile?'",
       "characters": [
-        "Chang"
+        "Jeff",
+        "Abed"
       ],
       "joke_types": [
-        "character_comedy",
-        "wordplay_pun"
+        "meta_self_referential",
+        "dark_subversive"
       ],
-      "setup": "Chang explaining his creative choices for the attack ad",
-      "punchline": "Mispronounces 'Earl Jones' as 'roll Jones' and 'Darth Vader' as 'bater'",
-      "craft_total": 6.11,
-      "impact_score": 5.5,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Jeff asks Abed to make a counter-attack ad against Ruffles",
+      "punchline": "Abed immediately demonstrates the attack ad formula by falsely accusing Jeff of being a pedophile \u2014 showing the formula works regardless of truth",
+      "craft_total": 7.89,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Typical Chang malapropism but not particularly creative",
+      "explanation": "One of the sharpest jokes in the episode. The structure is a compressed demonstration of the entire attack ad industry: (1) plant an accusation as a question, (2) offer no evidence, (3) the question does all the work. Abed uses Jeff as the demo subject, which is both efficient and revealing \u2014 the most efficient way to demonstrate the formula is to use the person who commissioned it. The escalation from 'make an attack ad' to 'so why is he a pedophile' is instantaneous, which is exactly the point. Dark, smart, impeccably structured.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -1216,23 +1242,23 @@
     },
     {
       "index": 39,
-      "text": "Jackpot, relative to Greendale. / My God, look at the course load, this dog was an animal.",
+      "text": "Jeff: 'Abed, can you make an attack ad?' Abed: 'Jeff wants me to make an attack ad. So why is he a pedophile?'",
       "characters": [
-        "Annie",
-        "Jeff"
+        "Jeff",
+        "Abed"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "irony_sarcasm"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Finding evidence about the dog's academic record",
-      "punchline": "Jeff calls dog 'an animal' as compliment about work ethic",
-      "craft_total": 5.82,
-      "impact_score": 5.5,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
+      "setup": "Jeff asks Abed to make a counter-attack ad against Ruffles",
+      "punchline": "Abed immediately demonstrates the attack ad formula by falsely accusing Jeff \u2014 'So why is he a pedophile?' \u2014 with zero transition or context",
+      "craft_total": 8.34,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Clever play on words - 'animal' as both literal description and work ethic praise",
+      "explanation": "One of the episode's best jokes. Abed's literal-mindedness means he doesn't explain the formula \u2014 he immediately demonstrates it, using Jeff as the subject. The jump from 'can you make an attack ad' to 'why is he a pedophile' with no logical bridge IS the joke about how attack ads work. Extremely quotable, excellent structure, perfectly in character for Abed. The 'just demonstrating the formula' follow-up is the ideal button.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1246,22 +1272,23 @@
     },
     {
       "index": 40,
-      "text": "Eat crap Ruffles, and not just your own.",
+      "text": "Jeff: 'Just demonstrating the formula.' / Abed: 'Refine your technique as you go.'",
       "characters": [
-        "Jeff"
+        "Jeff",
+        "Abed"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "deadpan_understatement",
+        "irony_sarcasm"
       ],
-      "setup": "Jeff celebrating victory over proving dog didn't graduate",
-      "punchline": "Unnecessarily crude insult directed at dog",
-      "craft_total": 6.14,
-      "impact_score": 5.67,
-      "quotability": 4.0,
+      "setup": "Jeff backpedals from Abed's pedophile accusation demo",
+      "punchline": "Abed treats the pedophile accusation as a rough first draft that just needs refinement \u2014 a totally clinical response to an atomic bomb of a demonstration",
+      "craft_total": 7.54,
+      "impact_score": 7.0,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Weak gross-out humor that feels forced",
+      "is_callback": 1,
+      "explanation": "A good button on joke 36. Abed's clinical detachment from the content of what he just said ('refine your technique') treats the outrageous as normal. The joke continues doing character work: Abed is not ethically troubled, he's focused on craft.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1271,23 +1298,22 @@
     },
     {
       "index": 41,
-      "text": "And dragging this dog's name through the mud? That's worse than dishonest. That's evil! / Evil? / I'll cop to silly.",
+      "text": "Jeff's opposition research brief on Ruffles: 'maybe she thinks cat turds are delicious. And maybe she barks just a little bit more at black mailmen. And she's spayed now, but how many puppies are out there?'",
       "characters": [
-        "Annie",
         "Jeff"
       ],
       "joke_types": [
-        "escalation",
-        "deadpan_understatement"
+        "dark_subversive",
+        "escalation"
       ],
-      "setup": "Annie condemning their attack on dog as evil",
-      "punchline": "Jeff admits to 'silly' but not evil",
-      "craft_total": 6.57,
-      "impact_score": 6.25,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Jeff is brainstorming smear content against a dog",
+      "punchline": "The sequence escalates from generic dog behavior (eating cat turds) to racially coded political attack (barking at Black mailmen) to 'deadbeat mom' narrative (how many puppies are out there?) \u2014 a compressed parody of actual political opposition research",
+      "craft_total": 7.59,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character contrast - Annie's moral outrage vs Jeff's casual admission",
+      "explanation": "This is a brilliant piece of dark comedy because it maps real political attack ad strategies (racially coded messaging, 'family values' hypocrisy) onto a dog, making the strategies visible through absurd juxtaposition. The 'barks a little bit more at black mailmen' line is daring \u2014 it identifies racial dog-whistling by literalizing it in a dog \u2014 and 'how many puppies are out there?' parodies the 'family values' attack. The escalation is structurally impeccable: each beat is worse than the last in a different way.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -1301,23 +1327,23 @@
     },
     {
       "index": 42,
-      "text": "Somethings are silly and evil, like candy cigarettes. And remember when Flava Flav had that reality show? / I don't own a TV.",
+      "text": "Annie: 'You do this, we're no better than City College.' / Jeff: 'We've never been better than City College. We gave a degree to a dog.' / Annie: 'Allegedly.' / Jeff: 'This conversation is privileged.'",
       "characters": [
         "Annie",
-        "Frankie"
+        "Jeff"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Annie listing things that are both silly and evil",
-      "punchline": "Frankie's matter-of-fact response deflates the pop culture reference",
-      "craft_total": 6.5,
-      "impact_score": 5.83,
-      "quotability": 5.0,
+      "setup": "Annie objects to the smear campaign on moral grounds",
+      "punchline": "Jeff claims attorney-client privilege over their own planning meeting \u2014 protecting them from accountability by legalistically quarantining the conversation",
+      "craft_total": 7.73,
+      "impact_score": 7.67,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Frankie's disconnect from pop culture",
+      "explanation": "Jeff invoking privilege mid-brainstorm is characteristically clever and corrupt \u2014 he's using a real legal tool as a shield against moral accountability. 'Allegedly' from Annie is a perfect quick callback to Jeff's legal framing earlier. The exchange is rapid-fire and characterful. 'This conversation is privileged' would be a great show T-shirt.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -1331,22 +1357,22 @@
     },
     {
       "index": 43,
-      "text": "If it ends with you yelling at me for not sleeping, that's not a story, that's a German art film.",
+      "text": "'And she's spayed now, but how many puppies are out there?'",
       "characters": [
         "Jeff"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "observational"
+        "escalation",
+        "dark_subversive"
       ],
-      "setup": "Jeff describing the circular nature of the night's events",
-      "punchline": "Compares pointless narrative to pretentious German cinema",
-      "craft_total": 7.38,
-      "impact_score": 7.0,
+      "setup": "Jeff continues building a smear case against Ruffles the dog",
+      "punchline": "Applying a political 'hidden family' scandal trope to a dog's reproductive history \u2014 'how many puppies are out there?' as a gotcha",
+      "craft_total": 7.9,
+      "impact_score": 7.75,
       "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Smart meta-commentary on narrative structure with cultural reference",
+      "explanation": "Good escalation beat. The 'secret family' political scandal mapped onto dog puppies is a sharp parody of opposition research. Well-constructed, quick.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1360,23 +1386,22 @@
     },
     {
       "index": 44,
-      "text": "I am a female student being physically overpowered by a male teacher. / Damn it!",
+      "text": "Chang's counter-proposal: 'I could do a Banksy-style stencil of a dog and spray-paint it all over the school.'",
       "characters": [
-        "Annie",
-        "Jeff"
+        "Chang"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "meta_self_referential"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Jeff trying to physically stop Annie from leaving",
-      "punchline": "Annie points out how bad the optics look, Jeff realizes the problem",
-      "craft_total": 6.76,
-      "impact_score": 6.17,
-      "quotability": 4.0,
+      "setup": "Everyone is brainstorming crisis responses",
+      "punchline": "Chang's contribution \u2014 Banksy street art of a dog \u2014 has nothing to do with any strategy discussed and is delivered as a fully serious suggestion",
+      "craft_total": 7.48,
+      "impact_score": 7.33,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good awareness of problematic dynamics but handled delicately",
+      "explanation": "Classic Chang marginalia \u2014 he contributes something that sounds semi-coherent but is completely non-functional as a plan. The Banksy reference specifically is funny because Chang would absolutely think this is relevant. It's not quite as sharp as the best Chang moments but it's efficient.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -1398,23 +1423,23 @@
     },
     {
       "index": 45,
-      "text": "Hope and $1.49 will get you a candy bar. / Buck 79. Are you serious? / Jesus!",
+      "text": "Elroy (new character) to Frankie: 'It's very inspiring to watch you work.' / Frankie: 'You are inspiring too.' / Elroy: 'In what way?' / Frankie: 'I need olives. Can you bring me olives?'",
       "characters": [
-        "Annie",
-        "Jeff"
+        "Elroy",
+        "Frankie"
       ],
       "joke_types": [
-        "callback",
-        "escalation"
+        "character_comedy",
+        "awkward_silence"
       ],
-      "setup": "Annie using old expression about hope and candy bar prices",
-      "punchline": "Jeff corrects the price, showing how outdated the saying is",
-      "craft_total": 6.75,
-      "impact_score": 6.17,
-      "quotability": 5.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good deflation of dramatic moment with mundane price correction",
+      "setup": "Elroy gives Frankie a genuine compliment and asks what about him is inspiring",
+      "punchline": "Frankie can't answer the question and deflects by suddenly needing olives \u2014 revealing she was just being polite",
+      "craft_total": 7.88,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is a lovely character-revealing joke. Frankie returns a compliment reflexively, gets called on it, and can't produce evidence \u2014 so she pivots to olives. The olive request is both a deflection and completely inexplicable, which is funnier than any explanation would be. The setup ('you are inspiring too' + 'in what way?') is tight. Frankie being exposed as a social-courtesy-automaton who panics under specificity is a good character note.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -1428,21 +1453,23 @@
     },
     {
       "index": 46,
-      "text": "You could say yeah, that and $.50 could get you a candy bar, or that and a quarter could get you a phone call. It was easy to be unimpressed back then. I mean it was, literally, cheaper.",
+      "text": "Elroy objects: 'You did this a month ago, then I brought them to you and you acted like you hated them.' / Frankie: 'It's only my style to be secret. Please bring me five cans of olives. / But don't believe me if I say I don't like. I'm just pretending I hate olives.'",
       "characters": [
-        "Jeff"
+        "Frankie",
+        "Elroy"
       ],
       "joke_types": [
-        "observational"
+        "running_gag",
+        "character_comedy"
       ],
-      "setup": "Jeff explaining old dismissive expressions",
-      "punchline": "Realizes cynicism was cheaper when everything cost less",
-      "craft_total": 7.04,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Frankie asks for olives; Elroy reveals this is a recurring request with a bait-and-switch pattern",
+      "punchline": "Frankie admits she's 'secret' about olives \u2014 she will pretend to hate them when they arrive. This is an exact parallel to the Takashi/Dean dynamic ('keep loving in text, but then secret forever')",
+      "craft_total": 7.92,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Clever observation about how inflation affects dismissive expressions",
+      "is_callback": 1,
+      "explanation": "The best part of this joke is its structural callback to Takashi's 'secret' texting philosophy \u2014 now Frankie, in real life, is doing the same thing with olives. 'It's only my style to be secret' is the same epistemology applied to condiments. This is good layered writing that connects apparently unrelated subplots. Rewatch value is high because the echo is deliberate.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1456,21 +1483,23 @@
     },
     {
       "index": 47,
-      "text": "She came really close to getting a degree, which means two things. She's an exceptional dog, and Greendale really needs to get its together.",
+      "text": "Elroy confesses privately: 'Honestly, I couldn't care less if they gave a dog a degree.' / 'Me neither. In fact, I kind of hope they did.'",
       "characters": [
-        "Abed in Ad"
+        "Elroy",
+        "Jeff"
       ],
       "joke_types": [
-        "setup_punchline"
+        "irony_sarcasm",
+        "character_comedy"
       ],
-      "setup": "Positive ad about dog's academic performance",
-      "punchline": "Backhanded compliment to both dog and school",
-      "craft_total": 6.9,
-      "impact_score": 6.5,
-      "quotability": 5.0,
+      "setup": "In the midst of the crisis room, two characters privately admit they don't care",
+      "punchline": "Jeff actually hopes they did give a dog a degree \u2014 not because he wants to defend it but because if a dog got a degree, the whole institution is confirmed worthless, which validates his worldview",
+      "craft_total": 7.31,
+      "impact_score": 6.83,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good spin that admits problems while staying positive",
+      "explanation": "Jeff hoping they gave a degree to a dog is a character reveal that's both funny and sad. It's consistent with his nihilistic arc \u2014 he doesn't want to defend Greendale, he wants confirmation that it's indefensible. This validates his worldview rather than disturbing it. The private admission is a nice structural beat in the crisis room.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -1480,23 +1509,23 @@
     },
     {
       "index": 48,
-      "text": "You hoped. / I hoped and it worked. / Hope points.",
+      "text": "Elroy recognizes the band 'Natalie is Freezing' on Britta's phone. Britta: 'But how do you? You're--' / Elroy: 'Black?' / Britta: 'No. Old.'",
       "characters": [
-        "Frankie",
-        "Annie"
+        "Britta",
+        "Elroy"
       ],
       "joke_types": [
-        "callback",
+        "misdirection",
         "character_comedy"
       ],
-      "setup": "Annie claims she knew friends wouldn't attack dog",
-      "punchline": "Forced to admit she hoped, then celebrates hope working against Frankie's philosophy",
-      "craft_total": 6.78,
-      "impact_score": 6.17,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good payoff to hope vs cynicism theme with Annie's small victory",
+      "setup": "Britta is surprised Elroy knows the band and starts to voice her assumption",
+      "punchline": "The expected conclusion of 'you're--' is a racial assumption ('Black'), but Britta's actual prejudice is ageist ('Old') \u2014 a double-misdirection that skewers both Elroy for anticipating racism and Britta for a different kind of thoughtlessness",
+      "craft_total": 8.75,
+      "impact_score": 9.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is the best joke in the episode and one of the best in Community's run. The structure is perfect: (1) Britta starts to say something Elroy preemptively identifies as racist, (2) Elroy fills in 'Black?' as the assumed completion, (3) Britta's actual prejudice is ageist, not racial, (4) this makes BOTH characters look foolish in different ways. Elroy's assumption about being stereotyped is itself a stereotype. Britta being exactly as thoughtless as expected but in the wrong direction is a triple inversion. This is very high craft \u2014 the economy is nine words for a complete comedic essay on assumptions and prejudice. Universally quotable.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -1518,23 +1547,22 @@
     },
     {
       "index": 49,
-      "text": "This is pornography? / Doy. / You're the only actor. / So?",
+      "text": "Elroy gets emotionally moved by the band, then abruptly: 'You know what? Those guys are gonna need coffee if they're gonna keep that dog from having a degree. There are things at stake here. I get that now.'",
       "characters": [
-        "Jeff",
-        "Chang"
+        "Elroy"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "absurdist"
+        "character_comedy",
+        "misdirection"
       ],
-      "setup": "Discovering Chang's 'porno' revenge video",
-      "punchline": "Chang doesn't understand why solo performance isn't pornographic",
-      "craft_total": 6.35,
-      "impact_score": 6.17,
-      "quotability": 3.0,
+      "setup": "Elroy is having a genuine moment of connection over the music",
+      "punchline": "He interrupts his own emotional revelation to pivot back to the crisis \u2014 but re-frames it in weirdly dog-centric terms ('keep that dog from having a degree')",
+      "craft_total": 7.52,
+      "impact_score": 6.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Pays off earlier setup but relies on cringe more than cleverness",
+      "is_callback": 0,
+      "explanation": "Good subversion of an emotional beat \u2014 Elroy uses the music to access investment in the crisis, but his articulation of 'what's at stake' is hilariously off ('that dog from having a degree'). The joke is that his newly discovered civic engagement is channeled into a weird anti-dog position. Character-introducing work for Elroy.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1556,23 +1584,23 @@
     },
     {
       "index": 50,
-      "text": "Okay genius, but the title is Chang does Greendale, oh wait. / Reshoots.",
+      "text": "Annie discovers a filed taco in the records room: 'Someone filed a taco.' The folder label: 'Things That Will Otherwise Get Filed Straight To My Thighs.'",
       "characters": [
-        "Jeff",
-        "Chang"
+        "Annie",
+        "Frankie"
       ],
       "joke_types": [
-        "setup_punchline",
+        "visual_gag",
         "character_comedy"
       ],
-      "setup": "Jeff pointing out flaw in Chang's plan",
-      "punchline": "Chang immediately decides to reshoot rather than think it through",
-      "craft_total": 6.76,
-      "impact_score": 6.17,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
+      "setup": "Annie is searching school records for evidence about Ruffles",
+      "punchline": "A taco has been physically filed in the school records; the labeled category is a diet joke functioning as an official archival system",
+      "craft_total": 7.55,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good Chang moment showing his impulsive problem-solving",
+      "explanation": "Perfect Greendale absurdism: someone has created an official filing category for food they're trying not to eat. The specificity of the label is what elevates it \u2014 not just 'food' but the actual diet-culture internal monologue written as an archival heading. It's both a visual gag (physical taco in a file cabinet) and a character joke (reveals the kind of people working at Greendale).",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1586,23 +1614,22 @@
     },
     {
       "index": 51,
-      "text": "Why don't I bring you some olives tomorrow, Jeffrey? / I am not Jeffrey! / I am not the dean!",
+      "text": "Frankie's speech on hope: 'Oh, God, no, I never hope. Hope is pouting in advance. Hope is faith's richer, bitchier sister. Hope is the deformed, attic-bound, incest monster offspring of entitlement and fear.'",
       "characters": [
-        "Dean",
-        "Takashi"
+        "Frankie"
       ],
       "joke_types": [
-        "escalation",
-        "cringe_discomfort"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Dean trying to be supportive despite confusion",
-      "punchline": "Takashi's increasingly desperate attempts to clarify identity",
-      "craft_total": 6.54,
-      "impact_score": 6.17,
-      "quotability": 4.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good escalation of the running gag with increasing desperation",
+      "setup": "Annie asks what Frankie hopes they'll find in the records",
+      "punchline": "Frankie delivers a full philosophical tirade against hope, escalating from 'pouting in advance' to the genuinely Gothic 'deformed, attic-bound, incest monster offspring of entitlement and fear'",
+      "craft_total": 8.79,
+      "impact_score": 8.83,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "This is elite television writing. The escalation structure is extraordinary: 'pouting in advance' \u2192 'faith's richer, bitchier sister' \u2192 'deformed, attic-bound, incest monster offspring of entitlement and fear.' Each iteration is simultaneously more absurd and more precisely calibrated. 'Bitchier sister' is sharp; 'deformed, attic-bound, incest monster offspring' is genuinely Gothic in a way that's both hilarious and reveals something true about how hope can curdle. This is a speech that works on the page and would absolutely work in the room. The addition of 'and every game on my phone that had to do with farming' is a perfect deflation of the mounting grandeur. One of Community's signature speeches.",
       "dialogue": [
         {
           "speaker": "Dean",
@@ -1636,28 +1663,934 @@
     },
     {
       "index": 52,
-      "text": "I often think about that night. Such a small event, but ultimately the moment that would lead me to becoming loban. Highest the leader of the Yakuza.",
+      "text": "Annie: 'You sound a little like Jeff.' / Frankie: 'Jeff said I sound like Abed.' / 'I wonder if Britta thinks I sound like Chang.' / 'I assume Chang thinks I sound like distant explosions and crying babies.'",
       "characters": [
-        "Takashi"
+        "Annie",
+        "Frankie"
       ],
       "joke_types": [
-        "escalation",
-        "absurdist"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Takashi reflecting on the night's events",
-      "punchline": "Claims this minor mix-up led to him becoming a Yakuza leader",
-      "craft_total": 7.49,
-      "impact_score": 7.33,
-      "quotability": 8.0,
+      "setup": "Annie notes Frankie's nihilism resembles Jeff's",
+      "punchline": "Frankie traces the chain of comparisons until arriving at Chang, whose inner experience of voices is 'distant explosions and crying babies'",
+      "craft_total": 8.29,
+      "impact_score": 8.33,
+      "quotability": 8.5,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Excellent escalation - takes minor phone mix-up to epic criminal origin story",
+      "is_callback": 0,
+      "explanation": "The chain structure is well-constructed and gets funnier with each step: Jeff \u2192 Abed \u2192 Chang is a descending scale of coherent human communication, terminating in 'distant explosions and crying babies' \u2014 which is the perfect description of what Chang's inner chaos must sound like. It's both a character joke about Chang and a philosophical chain about how people process nihilism. Very quotable. The escalating chain structure is exactly the right form for this joke.",
       "dialogue": [
         {
           "speaker": "Takashi",
           "line": "And that's how a simple misunderstanding at the bar that night led to me becoming a Yakuza leader."
         }
       ]
+    },
+    {
+      "index": 53,
+      "text": "Annie and Frankie find Ruffles' transcript \u2014 it's enormous. Annie: 'Oh, my God. So many classes.' \u2014 then Frankie's reaction: 'See what hope does?'",
+      "characters": [
+        "Annie",
+        "Frankie"
+      ],
+      "joke_types": [
+        "running_gag",
+        "reaction_beat"
+      ],
+      "setup": "They've been searching for evidence the dog DIDN'T get a degree; they find a massive academic transcript for the dog",
+      "punchline": "Frankie turns the discovery into a vindication of her anti-hope philosophy \u2014 'see what hope does?' \u2014 as though the transcript is hope's punishment",
+      "craft_total": 7.71,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A satisfying callback to the hope speech \u2014 Frankie was right, hope led directly to disappointment. The visual of an enormous dog transcript is itself a good sight gag. 'See what hope does?' is a perfect button on the previous speech and works as a standalone line."
+    },
+    {
+      "index": 54,
+      "text": "Annie's reaction: 'Screw you, Frankie.'",
+      "characters": [
+        "Annie"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "Frankie says 'see what hope does?' triumphantly",
+      "punchline": "Annie's terse 'Screw you, Frankie' \u2014 delivered not in anger but in the tone of someone who knows they've been bested",
+      "craft_total": 7.36,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "A reliable punchline to the hope-speech callback. 'Screw you, Frankie' in this context is funnier than any longer response would be \u2014 it concedes the argument while rejecting the lecturer. Good economy."
+    },
+    {
+      "index": 55,
+      "text": "Frankie: 'I don't think you're seeing this for what it is. It's a transcript for a dog. A really, really long one. It's proof that Jeff was right. This school has no value.'",
+      "characters": [
+        "Frankie"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Annie is trying to interpret the dog's transcript positively",
+      "punchline": "Frankie's clinical summary \u2014 'it's a transcript for a dog. A really, really long one.' \u2014 the repetition of 'really, really long' implies the dog was not just enrolled but aggressively enrolled, which somehow makes it worse",
+      "craft_total": 7.49,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "The 'really, really long one' is doing extra work \u2014 the degree of the dog's enrollment is funnier than the enrollment itself. A dog completing a few classes is odd; a dog with an enormous transcript is evidence of institutional failure on a staggering scale. The deadpan delivery is Frankie at her best."
+    },
+    {
+      "index": 56,
+      "text": "Annie finds the loophole: 'Unpaid library fees, $15. Diploma withheld until payment remitted.' Annie: 'No degree. The commercial's a lie. / Eat crap, Ruffles, and not just your own.'",
+      "characters": [
+        "Annie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "It seems like Ruffles definitely earned a degree based on her transcript",
+      "punchline": "The dog didn't pay her library fines \u2014 $15 \u2014 and therefore no degree was issued. 'Eat crap, Ruffles, and not just your own' celebrates this bureaucratic technicality with disproportionate triumph",
+      "craft_total": 7.66,
+      "impact_score": 7.67,
+      "quotability": 8.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Eat crap, Ruffles, and not just your own' is a legitimately great line \u2014 first because celebrating a $15 library fine technicality with this intensity is perfect Annie manic-episode energy, and second because 'and not just your own' is a dog-specific addition that acknowledges and weaponizes the character's species. The contrast between the pettiness of the technicality ($15 library fine) and the enormity of Annie's triumph is the joke."
+    },
+    {
+      "index": 57,
+      "text": "Annie: 'Yeah. But this folder has no degree. Look.' [the folder is empty of a degree] / Frankie: 'Heh-heh-heh.' / Annie: 'Victory. You know, within the context of Greendale.'",
+      "characters": [
+        "Annie",
+        "Frankie"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "deadpan_understatement"
+      ],
+      "setup": "Annie finds that despite everything, the dog's folder has no actual degree",
+      "punchline": "Annie's immediate qualification: 'Victory. You know, within the context of Greendale.' \u2014 the win is so small it requires a disclaimer",
+      "craft_total": 7.97,
+      "impact_score": 7.75,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The qualifier 'within the context of Greendale' is an outstanding line. It encapsulates the entire show's premise \u2014 this is a school where victories are contextual and modest, where finding no degree for a dog you accidentally enrolled for 7 years is 'victory.' Extremely quotable and highly usable as a standalone line. This is one of the episode's best lines."
+    },
+    {
+      "index": 58,
+      "text": "Annie declares victory and suggests they might do better; then backpedals: 'Never know until you try.' / Frankie (or other character): 'Never know until I try.' / 'What?' / 'I said we're quite a team.'",
+      "characters": [
+        "Annie",
+        "Frankie"
+      ],
+      "joke_types": [
+        "awkward_silence",
+        "reaction_beat"
+      ],
+      "setup": "Annie suggests their teamwork is worth celebrating",
+      "punchline": "Annie misheard Frankie; Frankie immediately covers with an entirely different sentence \u2014 the audience (and Annie) knows she said something else",
+      "craft_total": 7.23,
+      "impact_score": 6.5,
+      "quotability": 5.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A mild joke that hints at Frankie's private thoughts being different from her stated ones \u2014 consistent with her 'secret' character theme. The misheard exchange is not particularly inventive but functions as a character tease. Rewatch value because on second viewing you know what she said."
+    },
+    {
+      "index": 59,
+      "text": "Annie offers to show fresh eyes their edited attack ad against Ruffles; Jeff replies with: 'Has anyone told you you're difficult?' / 'Everyone in your line of work.'",
+      "characters": [
+        "Jeff",
+        "Annie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jeff is resistant to outside input on the ad",
+      "punchline": "Jeff and Annie's banter becomes a compressed meta-commentary on being difficult \u2014 Jeff admits he's told this by everyone who tries to work with him",
+      "craft_total": 6.99,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Functional exchange that characterizes Jeff as difficult via self-admission. The 'everyone in your line of work' response is a good deflection but not an exceptional line. Works as a beat in the episode but doesn't stand alone."
+    },
+    {
+      "index": 60,
+      "text": "The Abed-produced attack ad against Ruffles plays: 'impersonated a lobster... had 27 children with five different fathers... and according to one local doctor, has worms. / Ruffles might claim she doesn't. Ruffles claims a lot of things.' / 'Ruffles: not a lobster, not a student, not a good dog.'",
+      "characters": [
+        "Abed"
+      ],
+      "joke_types": [
+        "escalation",
+        "dark_subversive"
+      ],
+      "setup": "Abed has produced a counter-attack ad against Ruffles",
+      "punchline": "The ad parodies political attack ad conventions by applying them to a dog: vague accusations ('impersonated a lobster'), unverified sourcing ('according to one local doctor'), and a devastating three-part tagline",
+      "craft_total": 8.75,
+      "impact_score": 9.17,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is a highlight-reel moment. The Ruffles attack ad is a fully realized political satire compressed into a 30-second parody. Each element is a direct parody of a real attack ad convention: 'impersonated a lobster' (vague wrongdoing with no context), '27 children with five different fathers' (family values attack), 'according to one local doctor, has worms' (unverified sourcing with weasel words), 'Ruffles claims a lot of things' (implication of habitual dishonesty), 'not a lobster, not a student, not a good dog' (three-part negative identity). The tagline is particularly well-constructed because it ends on the most damning accusation: not a good dog. The James Earl Jones/James Spader voice-over credit is a perfect button."
+    },
+    {
+      "index": 61,
+      "text": "Abed's attack ad against Ruffles: 'When Ruffles moved into her neighborhood in 2007...dead squirrels went up by 17 percent. Coincidence? Ask this bunny.'",
+      "characters": [
+        "Abed",
+        "Ruffles ad"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "absurdist"
+      ],
+      "setup": "Abed has made the attack ad on Ruffles the dog using the formula he demonstrated earlier",
+      "punchline": "'Coincidence? Ask this bunny.' \u2014 a perfect parody of attack ad rhetorical technique, applied to squirrel mortality statistics and illustrated with a bunny witness",
+      "craft_total": 8.6,
+      "impact_score": 8.75,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Exceptional political ad parody. The escalating specificity \u2014 17% dead squirrel increase, then 'Ask this bunny' as a witness \u2014 perfectly mimics and mocks attack ad rhetoric. The bunny as a source is both absurd and logically consistent within the genre being spoofed. This is some of the episode's best writing."
+    },
+    {
+      "index": 62,
+      "text": "Attack ad: 'Maybe that's why Ruffles once spent time on death row. Ruffles: not a lobster, not a student, not a good dog.'",
+      "characters": [
+        "Abed",
+        "Ruffles ad"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "escalation"
+      ],
+      "setup": "The Ruffles ad builds to its conclusion",
+      "punchline": "'Not a lobster, not a student, not a good dog' \u2014 the tagline applies three different standards of which Ruffles falls short, including the lobster identity she was accused of impersonating",
+      "craft_total": 8.82,
+      "impact_score": 9.0,
+      "quotability": 9.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Near-perfect joke. The tagline 'not a lobster, not a student, not a good dog' has impeccable structure \u2014 the callback to the lobster charge, the academic accusation, and the character judgment all compressed into one line. The fact that 'not a lobster' is included as a serious failing is brilliant. Death row callback + lobster callback + the rhythm of the three negatives = exceptional writing. Among the episode's best."
+    },
+    {
+      "index": 63,
+      "text": "Post-ad: 'I wanted the voice-over to be like James Earl Jones, but the James Spader impersonator turned out pretty good.' / 'I wish he'd leave, though.'",
+      "characters": [
+        "Abed"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Everyone reacts to the finished attack ad",
+      "punchline": "Abed mentions that the James Spader impersonator is apparently still present and unwelcome \u2014 the problem isn't the work, it's that the hired voice-over talent won't go",
+      "craft_total": 7.67,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Two good jokes in rapid succession: the implied world of the episode includes a James Spader impersonator who showed up in the middle of a crisis, and Abed's only complaint about the ad is a logistical one (guy won't leave). Very Abed \u2014 the craft concerns trump the content. 'I wish he'd leave, though' is a perfect deadpan capper."
+    },
+    {
+      "index": 64,
+      "text": "'I wish he'd leave, though.'",
+      "characters": [
+        "Abed"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Abed mentions the James Spader impersonator",
+      "punchline": "Apparently the impersonator is still in the room \u2014 'I wish he'd leave, though' \u2014 suggesting an awkward lingering presence",
+      "craft_total": 7.47,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect button on the previous joke. The implication that the James Spader impersonator is an unwanted guest they can't get rid of is a great visual gag told through a single throwaway line. Very Abed."
+    },
+    {
+      "index": 65,
+      "text": "Elroy approaches Frankie and places five huge cans of olives next to her. Frankie: 'You put five huge cans of olives next to me. / Just something I felt like doing. / This isn't the first time you've done this.'",
+      "characters": [
+        "Elroy",
+        "Frankie"
+      ],
+      "joke_types": [
+        "running_gag",
+        "absurdist"
+      ],
+      "setup": "Earlier, Frankie asked Elroy to bring her olives and told him not to believe her if she said she hated them",
+      "punchline": "Elroy has actually gone and gotten FIVE HUGE CANS of olives and placed them next to her; Frankie's reaction to being surrounded by giant olive cans; 'this isn't the first time you've done this' implies a full documented pattern",
+      "craft_total": 7.51,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The payoff to the olive setup works on two levels: the visual of five HUGE cans of olives deployed in a crisis room, and 'this isn't the first time you've done this' revealing this is an established, documented Frankie-Elroy dynamic. The absurdity of the scale (five huge cans) is perfect \u2014 Elroy took the instructions maximally literally."
+    },
+    {
+      "index": 66,
+      "text": "Frankie's reaction to the olive situation: 'I'm really confused by this.' / Elroy: 'Is it code for something?' / Frankie: 'I don't know. And I don't care.'",
+      "characters": [
+        "Frankie",
+        "Elroy"
+      ],
+      "joke_types": [
+        "running_gag",
+        "character_comedy"
+      ],
+      "setup": "Elroy has surrounded Frankie with enormous olive cans",
+      "punchline": "Frankie admits she doesn't know why she does this AND doesn't care \u2014 a perfect statement of her relationship to her own interior life",
+      "craft_total": 7.69,
+      "impact_score": 7.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The best part of this exchange is Frankie's complete epistemic indifference to her own behavior: 'I don't know. And I don't care.' This is a character who does not conduct self-examination and is entirely at peace with this. It's a great character note delivered in six words."
+    },
+    {
+      "index": 67,
+      "text": "Abed and Jeff review the Ruffles transcript: 'Jackpot, relative to Greendale.' / 'Oh, my God. Look at this course load. This dog was an animal.' / 'Most of them were attendance based.'",
+      "characters": [
+        "Abed",
+        "Jeff"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "They find Ruffles' course transcript, which is lengthy",
+      "punchline": "Jeff's 'this dog was an animal' is immediately deflated by 'most of them were attendance based' \u2014 the dog got credit just for showing up, which is both a dog-behavior joke and a Greendale academic standard joke",
+      "craft_total": 7.63,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'This dog was an animal' is a great accidental/ironic compliment \u2014 literally true, figuratively used to mean 'worked hard,' and then immediately undercut by the fact the classes were attendance-based, which is perfect for a dog (dogs don't skip class deliberately). The joke operates on three levels simultaneously."
+    },
+    {
+      "index": 68,
+      "text": "Jeff: 'Ruffles put the work in, relative to Greendale. That City College ad may be technically a lie, but it's really dishonest to kill it on a technicality.'",
+      "characters": [
+        "Jeff"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "The group wants to call the station and kill the ad since the dog never got a degree",
+      "punchline": "Jeff \u2014 the lawyer who earlier said truth is an artificial construct \u2014 now argues for a higher honesty that transcends the literal lie",
+      "craft_total": 7.73,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Jeff's character arc within the episode is compressed into this line: he started the night dismissing truth as meaningless, and now he's defending a 'higher truth' that supersedes a legal technicality. The irony is sharp \u2014 the most cynical character makes the most earnest argument. 'Really dishonest to kill it on a technicality' is excellent because it's the kind of reasoning Jeff would have dismissed two hours earlier."
+    },
+    {
+      "index": 69,
+      "text": "Annie: 'That's evil.' / Jeff: 'Evil? I'll cop to silly. Some things are silly and evil, like candy cigarettes.'",
+      "characters": [
+        "Annie",
+        "Jeff"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Annie accuses their attack ad of being evil",
+      "punchline": "Jeff's example of something both silly and evil is 'candy cigarettes' \u2014 a weirdly specific, oddly resonant choice that sidesteps the actual moral question",
+      "craft_total": 7.59,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Jeff deflecting a genuine moral accusation with 'candy cigarettes' is very Jeff \u2014 it acknowledges wrongdoing while making it sound quaint. Candy cigarettes as a 'silly and evil' thing is funny because it's both accurate (marketing cigarette culture to children) and mundane enough to defuse Annie's moral charge. Good economy."
+    },
+    {
+      "index": 70,
+      "text": "Jeff: 'And remember when Flavor Flav had that reality show?' / Elroy: 'I don't own a TV.'",
+      "characters": [
+        "Jeff",
+        "Elroy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Jeff is listing things that are both silly and evil",
+      "punchline": "Elroy's total shutdown \u2014 'I don't own a TV' \u2014 is both a non-answer and character establishment (new character defining himself as someone who doesn't engage with pop culture)",
+      "craft_total": 6.85,
+      "impact_score": 6.33,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Elroy refusing to engage with Flavor Flav's reality show by claiming no TV ownership is a mild character note. The joke is functional but not remarkable \u2014 the TV-free affectation as a conversation stopper is a known comedy move. Gets credit for economy."
+    },
+    {
+      "index": 71,
+      "text": "Annie's speech: 'If surviving means being like them, what's the point? Why not let one school die and enroll at the one where my grades matter?'",
+      "characters": [
+        "Annie"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Frankie argues they need to let the ad run to maintain moral high ground, which could destroy the school",
+      "punchline": "Annie's threat to transfer \u2014 to City College, the villain school \u2014 frames the entire episode's crisis as a question of personal utility. The joke is the gap between Annie's principled framing and the self-interested conclusion",
+      "craft_total": 7.23,
+      "impact_score": 6.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Annie making a principled moral stand that lands as self-interest is good character work. 'The one where my grades matter' is funny because it acknowledges Greendale's core failure even as she's defending it. The speech has comedic beats embedded in dramatic sincerity, which is the Community sweet spot."
+    },
+    {
+      "index": 72,
+      "text": "Jeff: 'If it ends with you yelling at me for not sleeping, that's not a story...that's a German art film.'",
+      "characters": [
+        "Jeff"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "observational"
+      ],
+      "setup": "Jeff summarizes the arc of the night to Annie, who is pushing for a noble defeat",
+      "punchline": "His framing of a pointless circular argument as 'a German art film' \u2014 implying the kind of narratively unsatisfying, ethically murky experience that is good for no one",
+      "craft_total": 7.9,
+      "impact_score": 7.5,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Smart Jeff line \u2014 'German art film' as a descriptor for a meaninglessly punishing narrative is a clever cultural reference deployed with precision. It captures exactly what Jeff fears about the evening's arc, and it's character-appropriate (Jeff as a man who thinks in genre)."
+    },
+    {
+      "index": 73,
+      "text": "Annie: 'I am a female student being physically overpowered by a male teacher!' \u2014 apparently trying to cause a scene or escape",
+      "characters": [
+        "Annie"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "escalation"
+      ],
+      "setup": "Jeff is trying to physically stop Annie from doing something (likely calling the station)",
+      "punchline": "Annie weaponizes a Title IX-style claim mid-crisis, apparently loudly enough to cause a scene \u2014 a completely over-the-top escalation from an academic debate to a harassment allegation",
+      "craft_total": 7.65,
+      "impact_score": 7.75,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Annie going immediately to the nuclear option \u2014 public harassment allegation \u2014 is a great character escalation. It's very Annie: when backed into a corner, she uses whatever tool is available. The specificity of 'female student / male teacher' shows she's calculated the power dynamic."
+    },
+    {
+      "index": 74,
+      "text": "Jeff: 'Personally, I hope you're bluffing.' / Annie: 'Yeah? Well, here's what hope gets you. Hope and a dollar forty-nine will get you a candy bar.' / Jeff: 'A buck seventy-nine.' / Annie: 'Are you serious? Jesus.'",
+      "characters": [
+        "Annie",
+        "Jeff"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Annie is storming out; she deploys Frankie's anti-hope argument as a parting shot",
+      "punchline": "Jeff corrects the candy bar price, derailing her dramatic exit \u2014 and Annie's incredulous 'Are you serious? Jesus.' is funnier than any continuation of the speech would be",
+      "craft_total": 8.03,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One of the best jokes in the episode. Annie attempts to weaponize Frankie's anti-hope speech for her dramatic exit; Jeff deflates it not by arguing with its content but by correcting a trivial economic fact. Annie's reaction \u2014 'Are you serious? Jesus.' \u2014 is the perfect response to having your dramatic departure undermined by a 30-cent price discrepancy. The structure is exquisite: big emotional speech \u2192 nitpick \u2192 bigger emotional collapse. This is Jeff at his most precisely calibrated disruptive. Highly quotable, completely character-specific, impeccably structured."
+    },
+    {
+      "index": 75,
+      "text": "Annie's exit line: 'Well, here's what hope gets you. Hope and a dollar forty-nine will get you a candy bar.' / Jeff: 'A buck seventy-nine.' / Annie: 'Are you serious? Jesus.'",
+      "characters": [
+        "Annie",
+        "Jeff"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "Annie is making an exit speech using Frankie's anti-hope framing against them",
+      "punchline": "Jeff corrects her candy bar price \u2014 a completely irrelevant factual intervention that Annie can't ignore ('Are you serious? Jesus.') \u2014 deflating her dramatic exit",
+      "craft_total": 8.37,
+      "impact_score": 8.67,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Among the episode's best jokes. Annie attempts a mic-drop exit using Frankie's anti-hope rhetoric, only to have Jeff completely derail it with a price correction. The deflation is perfect \u2014 she can't not respond to being corrected ('Are you serious? Jesus.'), which ruins the exit. It's character-perfect for both Jeff (can't let an error stand even in an emotional moment) and Annie (can't ignore being fact-checked even while storming out). The 'A buck seventy-nine' delivery is the punchline. Earns 8+."
+    },
+    {
+      "index": 76,
+      "text": "Elroy, after Annie leaves: 'I remember when candy bars were 50 cents.'",
+      "characters": [
+        "Elroy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Annie just said a candy bar costs a dollar forty-nine; Jeff corrected it to a buck seventy-nine",
+      "punchline": "Elroy walks the price memory further back \u2014 to 50 cents \u2014 establishing himself as a man of a certain age for whom candy bar inflation is a source of genuine personal grief",
+      "craft_total": 7.49,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Perfect button on the candy bar joke. Elroy's addition continues the escalating price regression to 50 cents and character-establishes him as older and nostalgic. The audience recognizes this as a callback escalation and rewards it. 'I remember when candy bars were 50 cents' is funny as a sudden turn to cozy nostalgia after an emotional scene."
+    },
+    {
+      "index": 77,
+      "text": "Elroy's stand-up monologue: 'If someone says, \"Hey, I just joined Mensa\" or \"I consider myself a post-modern this or that.\" You could say, \"Yeah, that and 50 cents will get you a candy bar.\" / It was easier to be unimpressed back then. I mean, it was literally cheaper.'",
+      "characters": [
+        "Elroy"
+      ],
+      "joke_types": [
+        "observational",
+        "character_comedy"
+      ],
+      "setup": "Elroy riffs on the candy bar price thread to deliver a larger observation",
+      "punchline": "'It was easier to be unimpressed back then. I mean, it was literally cheaper.' \u2014 the observation that the cost of dismissing someone has inflated along with candy bar prices",
+      "craft_total": 7.78,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is not stand-up \u2014 it's Elroy in the room with the group, using the candy bar thread to make a broader point. The observation that it's 'literally cheaper' to be unimpressed now is a good joke that extends the candy bar metaphor productively. It's also an Elroy character introduction moment \u2014 he's the new character and this speech establishes his sensibility."
+    },
+    {
+      "index": 78,
+      "text": "Elroy: 'It was easier to be unimpressed back then. I mean, it was literally cheaper.'",
+      "characters": [
+        "Elroy"
+      ],
+      "joke_types": [
+        "observational",
+        "deadpan_understatement"
+      ],
+      "setup": "Elroy is riffing on the inflation of candy bars as a cultural barometer",
+      "punchline": "'It was literally cheaper' \u2014 a deadpan literalization that collapses the metaphorical into the economic, suggesting contempt and dismissal have real cost",
+      "craft_total": 8.31,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Smart joke that collapses a metaphor into economic reality. 'It was literally cheaper' applies inflation to the act of dismissiveness itself \u2014 a genuinely original thought. This is Elroy's best individual line in the episode."
+    },
+    {
+      "index": 79,
+      "text": "Elroy: 'Annie just left. / Were you guys close?'",
+      "characters": [
+        "Elroy",
+        "Jeff"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "The group is devastated by Annie's departure",
+      "punchline": "Elroy, the new addition, asks 'Were you guys close?' \u2014 as though Annie's departure was a death and he's offering condolences to strangers at a wake",
+      "craft_total": 7.06,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Elroy treating a temporary departure as a bereavement is good new-character behavior \u2014 he doesn't know how permanent this is, so he's applying a death-of-relationship framework. The long pause before the question (suggested by the [19:29] timestamp) amplifies the funeral-parlor register. Good character introduction beat."
+    },
+    {
+      "index": 80,
+      "text": "Jeff: 'Elroy, we're kind of bummed out right now. Annie just left.' / Elroy: 'Oh.' / Beat. / 'Were you guys close?'",
+      "characters": [
+        "Jeff",
+        "Elroy"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Jeff breaks the news of Annie's departure to Elroy",
+      "punchline": "Elroy's 'Oh.' pause, then 'Were you guys close?' \u2014 treating a group member's departure like a death notice, implying he has absolutely no idea who Annie is or what she means to the group",
+      "craft_total": 8.01,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of Elroy's best moments. 'Were you guys close?' applies a bereavement-announcement protocol to what is functionally a group member walking out. The beat before it \u2014 the pause \u2014 is essential. High character integration: Elroy as the new member who hasn't yet built the relationships to understand the emotional stakes."
+    },
+    {
+      "index": 81,
+      "text": "Annie: 'Abed, I don't wanna talk right now.' / Abed: 'Okay.' \u2014 followed by the information that the Greendale ad is about to go up",
+      "characters": [
+        "Annie",
+        "Abed"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Annie is upset and isolated after leaving",
+      "punchline": "Abed's instant 'Okay.' \u2014 no negotiation, no comfort, just acceptance \u2014 followed by quietly flagging that something important is about to happen",
+      "craft_total": 7.55,
+      "impact_score": 7.0,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Abed's 'Okay.' is perfectly in character \u2014 he doesn't perform comfort, he just accepts the stated preference and moves on. It functions as both a small character joke and a good narrative pivot. The humor is in his complete lack of a typical human response to emotional distress."
+    },
+    {
+      "index": 82,
+      "text": "Annie: 'Abed, I don't wanna talk right now.' / Abed: 'Okay.'",
+      "characters": [
+        "Annie",
+        "Abed"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "reaction_beat"
+      ],
+      "setup": "Annie has stormed out and is sitting alone; Abed appears",
+      "punchline": "Abed's immediate and complete acceptance \u2014 'Okay.' \u2014 with no emotional processing or attempt to change her mind. He came, she said no, he accepted. Scene.",
+      "craft_total": 7.88,
+      "impact_score": 7.67,
+      "quotability": 6.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Very Abed. His 'Okay.' is both a joke and a character truth \u2014 he has no impulse to push through her stated preference. It's also a setup for what follows, so it functions as a beat more than a standalone joke. Perfect economy."
+    },
+    {
+      "index": 83,
+      "text": "The counter-ad plays: Greendale acknowledges Ruffles 'came really close to getting a degree' and closes with 'Greendale Community College. You're already accepted.'",
+      "characters": [
+        "Greendale Ad Voice"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "dark_subversive"
+      ],
+      "setup": "Everyone expects Greendale to either fight back or be destroyed by the ad",
+      "punchline": "Their counter-ad accepts Ruffles as evidence of Greendale's work-in-progress nature and turns 'You're already accepted' into a tagline \u2014 implying the school accepts literally everyone, including dogs who almost graduated",
+      "craft_total": 8.1,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The 'You're already accepted' tagline is brilliantly written because it's simultaneously a self-deprecating admission (we'll take anyone) and an aspirational philosophy (everyone is welcome here). The ad works because it doesn't fight the attack \u2014 it accepts the premise and reframes it. 'Right, Ruffles?' followed by presumably Ruffles on camera is a perfect button. The strategic move parodies the 'getting in front of the story' media playbook, but the execution has genuine emotional resonance, which is Community at its best."
+    },
+    {
+      "index": 84,
+      "text": "Counter-ad voice-over: 'Which means two things. She's an exceptional dog...and Greendale really needs to get its **** together.'",
+      "characters": [
+        "Greendale ad"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "dark_subversive"
+      ],
+      "setup": "The Greendale counter-ad acknowledges Ruffles nearly got a degree",
+      "punchline": "The ad calls itself out \u2014 'Greendale really needs to get its **** together' \u2014 a remarkable act of institutional self-condemnation in a promotional piece",
+      "craft_total": 8.47,
+      "impact_score": 8.5,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The Greendale counter-ad's honesty is both the episode's thematic resolution and a great joke \u2014 an institutional ad that includes profane self-criticism is funny and touching at once. 'Get its **** together' in what is functionally a college commercial is unexpected and right."
+    },
+    {
+      "index": 85,
+      "text": "Annie: 'I knew you wouldn't do that to Ruffles.' / Jeff: 'You hoped.' / Annie: 'I hoped and it worked.' / Jeff: 'Hope points.'",
+      "characters": [
+        "Annie",
+        "Jeff",
+        "Frankie"
+      ],
+      "joke_types": [
+        "callback",
+        "character_comedy"
+      ],
+      "setup": "The emotionally resonant counter-ad plays; Annie's principled position is vindicated",
+      "punchline": "'Hope points.' \u2014 a final accounting of the value of hope, delivered with Jeff's typical combination of concession and sarcasm",
+      "craft_total": 8.12,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The 'hope' thread throughout the episode resolves here. 'Hope points' is a perfect coinage \u2014 it's a quasi-gamification of emotional currency, delivered by Jeff to acknowledge that hope has earned something without fully endorsing it. Two words that close a thematic arc while maintaining his defensive irony. Very quotable and structurally satisfying as an episode button."
+    },
+    {
+      "index": 86,
+      "text": "Frankie: 'You do understand that what we did was the most prudent tactical move? Getting in front of the scandal, Letterman style.' / Jeff: 'Yes, Jeff, don't worry. I promise I'll never mistake you for having a heart.'",
+      "characters": [
+        "Frankie",
+        "Jeff"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Everyone is happy about the counter-ad; Frankie tries to reframe it as strategy rather than decency",
+      "punchline": "Jeff speaks to himself in the third person, promising himself he'll never be mistaken for having a heart \u2014 a self-aware acknowledgment and pre-emptive defense",
+      "craft_total": 7.97,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'I promise I'll never mistake you for having a heart' directed at himself is a sharp, funny line. The pronoun shift (Frankie says 'Yes, Jeff' but Jeff continues it to himself) creates a moment of self-roast. The character integration is excellent \u2014 only Jeff would preemptively disclaim his own humanity to protect himself from vulnerability. It's simultaneously armoring and confessional."
+    },
+    {
+      "index": 87,
+      "text": "Chang returns: 'Ahem. Kiss City College goodbye. I did it.' / 'Did what?' / 'That stuff we talked about.' / 'Who are you?' / 'I'm the plumber. Why?'",
+      "characters": [
+        "Chang",
+        "Jeff",
+        "Annie"
+      ],
+      "joke_types": [
+        "misdirection",
+        "character_comedy"
+      ],
+      "setup": "Earlier, someone may have jokingly agreed to Chang's porno-movie idea; Chang has gone and done it",
+      "punchline": "Chang refers to 'that stuff we talked about' \u2014 which the audience has half-forgotten \u2014 and identifies himself as 'the plumber' (a pornographic archetype), delivered as a straight factual answer to 'Who are you?'",
+      "craft_total": 7.71,
+      "impact_score": 7.83,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The 'I'm the plumber' reveal is excellent because it confirms what Chang did without stating it explicitly. 'I'm the plumber. Why?' \u2014 delivered as though it's a perfectly normal professional identity \u2014 is very funny. The callback structure works because there was genuine ambiguity about whether anyone actually authorized this plan."
+    },
+    {
+      "index": 88,
+      "text": "Group watches Chang's porno: 'Is this pornography?' / 'Doy.' / 'You're the only actor.' / 'So?' / 'What kind of lens is this?' / 'Who cares?' / 'You might be a genius.'",
+      "characters": [
+        "Jeff",
+        "Chang",
+        "Abed",
+        "Annie"
+      ],
+      "joke_types": [
+        "escalation",
+        "character_comedy"
+      ],
+      "setup": "Chang screens his homemade film for the group",
+      "punchline": "The progression from 'is this pornography?' to 'you might be a genius' \u2014 Abed's film criticism renders the content irrelevant; only the craft matters",
+      "craft_total": 7.63,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Abed calling Chang a possible genius for his porno cinematography is perfect character comedy \u2014 Abed evaluates everything as film, regardless of genre or ethical context. 'What kind of lens is this?' as a response to amateur pornography is the best beat. The group's escalating reactions mirror what Community audiences often feel about the show's weirdness: confusion \u2192 engagement \u2192 admiration. Well-structured sequence."
+    },
+    {
+      "index": 89,
+      "text": "Jeff discovers Chang shot the film at Greendale, not City College: 'You shot it in front of a wall that could be anywhere. And you're wearing your Greendale T-shirt.'",
+      "characters": [
+        "Jeff",
+        "Chang"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "character_comedy"
+      ],
+      "setup": "Chang's plan was to shoot a porno on City College's campus to damage their reputation",
+      "punchline": "He shot it at Greendale instead AND wore a Greendale T-shirt \u2014 meaning the porno would destroy Greendale's reputation",
+      "craft_total": 7.9,
+      "impact_score": 8.0,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Chang accidentally making a porno that damages his own school while trying to damage the rival is a beautiful escalation of the dog-degree plot: both Greendale crises come from internal incompetence rather than external attack. The Greendale T-shirt detail is specifically funny because it's such a Chang move \u2014 wanting credit while sabotaging himself. The title 'Chang Does Greendale' is the perfect button."
+    },
+    {
+      "index": 90,
+      "text": "'Okay, genius, but the title is Chang Does Greendale\u2014' / 'Oh, wait.'",
+      "characters": [
+        "Jeff",
+        "Chang"
+      ],
+      "joke_types": [
+        "misdirection",
+        "character_comedy"
+      ],
+      "setup": "Jeff is about to point out the porno is titled 'Chang Does Greendale'",
+      "punchline": "Chang's 'Oh, wait.' \u2014 the moment he processes the implication of his own title \u2014 is funnier than any reaction could be. He's surprised by his own work",
+      "craft_total": 8.6,
+      "impact_score": 8.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Chang's 'Oh, wait.' \u2014 processing his own mistake in real time \u2014 is a perfect comedy button. The structure gives Jeff the setup (pointing out the title) and Chang the punchline (dawning horror), which is the right assignment. The two-word reaction is funnier than any longer response. 'Oh, wait.' earns its place as the button to the entire Chang porno subplot."
+    },
+    {
+      "index": 91,
+      "text": "'Reshoot.'",
+      "characters": [
+        "Chang"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "Chang realizes his porno is titled 'Chang Does Greendale' and was filmed at Greendale with a Greendale T-shirt",
+      "punchline": "His entire response to this catastrophic miscalculation is a single word: 'Reshoot.' \u2014 treating it as a minor technical correction",
+      "craft_total": 8.69,
+      "impact_score": 9.0,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "One word, perfect delivery, complete character. 'Reshoot.' treats the entire self-sabotaging porno disaster as a minor production note. Chang's response isn't embarrassment or defeat \u2014 it's professional: we just need another take. The economy is literally as good as it can be (one word), and it's the perfect character response from someone who is simultaneously delusional and oddly professional about bad plans. This line would get a huge laugh in a room."
+    },
+    {
+      "index": 92,
+      "text": "Post-credits: Parent berating Takashi: 'Forty thousand yen in data charges?! I'm looking at my son, but all I see is the ghost of your uncle!'",
+      "characters": [
+        "Takashi's Father",
+        "Takashi"
+      ],
+      "joke_types": [
+        "escalation",
+        "absurdist"
+      ],
+      "setup": "Takashi had a prolonged late-night text exchange with an American dean and adult strangers, running up international data charges",
+      "punchline": "The father's rebuke escalates from practical (data charges) to deeply personal ('the ghost of your uncle') \u2014 a leap that is both culturally specific and completely unearned by any prior setup",
+      "craft_total": 7.43,
+      "impact_score": 7.25,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A satisfying payoff to the Takashi thread. The jump from '40,000 yen in data charges' to 'the ghost of your uncle' is a perfect absurdist escalation \u2014 the second accusation has nothing to do with the first except emotional intensity. It's funny because the father's disappointment is real but the uncle ghost reference is the kind of dramatic family-drama non-sequitur that feels culturally specific without being a caricature."
+    },
+    {
+      "index": 93,
+      "text": "Takashi's response to his father: 'I imagine many people look the same when you reduce them all to finance. In your eyes I am the enemy because I'm the edge of your world, but when your eyes move past me, they will weep. Tokyo is a machine, caked with blood, running on flesh.'",
+      "characters": [
+        "Takashi"
+      ],
+      "joke_types": [
+        "absurdist",
+        "escalation"
+      ],
+      "setup": "Father accuses Takashi of wasting money",
+      "punchline": "Takashi responds to a data charge complaint with a full philosophical indictment of Tokyo capitalism \u2014 escalating from personal to cosmological in four sentences",
+      "craft_total": 8.04,
+      "impact_score": 8.17,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'Tokyo is a machine, caked with blood, running on flesh.' is a genuinely great line in context \u2014 it's Takashi (the teen who was cheerfully texting meows to an American dean) suddenly revealing a teenage nihilism so operatic it's hilarious. The contrast between his texting persona (meow) and his confrontation persona ('caked with blood') is what makes it land. The speech is parody-adjacent \u2014 it's the kind of thing a dramatic teenager thinks is profound. Highly quotable."
+    },
+    {
+      "index": 94,
+      "text": "Father: 'I reduce you? You will learn true reduction. You will be as small as me.'",
+      "characters": [
+        "Takashi's Father"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "escalation"
+      ],
+      "setup": "Takashi has accused his father of reducing everything to finance",
+      "punchline": "The father accepts the 'reduction' metaphor and threatens to make Takashi smaller \u2014 a dramatic, unhinged response that escalates the Tokyo monologue into full absurdist family tragedy",
+      "craft_total": 7.84,
+      "impact_score": 7.67,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "'You will be as small as me' is a surprisingly resonant line delivered in an absurdist context. The father's self-aware smallness \u2014 threatening his son with his own diminishment \u2014 is both funny and genuinely dark. It's the kind of line that works because it's playing both sides: absurd parody of dramatic family confrontation AND accidentally something real."
+    },
+    {
+      "index": 95,
+      "text": "Post-credits: Dean drunk-dials Takashi late at night \u2014 'The Dean? Hellos.' \u2014 asking if everything is okay and whether life is hard everywhere and everyone is alone all the time",
+      "characters": [
+        "Dean Pelton",
+        "Takashi"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "The dean has apparently been texting Takashi as his 'Jeffrey' all episode; now he calls late at night",
+      "punchline": "Dean's late-night emotional vulnerability ('Is life hard everywhere? Is everyone alone?') expressed to a Tokyo teenager he believes is his best friend \u2014 the loneliness is real, the audience is wrong, and both are funny",
+      "craft_total": 8.32,
+      "impact_score": 8.5,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "The fullest payoff to the Takashi thread. The dean's existential questions ('Is life hard everywhere? Is everyone alone?') are genuinely poignant \u2014 AND he's asking them to a stranger in Tokyo. This is Community at its most characteristic: the joke and the feeling are simultaneous, not in opposition. The dean's loneliness is real; the fact that his confessor is an anonymous Tokyo teen is devastating and funny in equal measure. The character integration is perfect \u2014 this degree of vulnerability and misdirection is unique to the dean."
+    },
+    {
+      "index": 96,
+      "text": "Dean: 'I am not Jeffrey.' / 'Let it out.' / 'I am Takashi. I am a teenage boy in Tokyo.' / Dean: 'I think we all are sometimes.'",
+      "characters": [
+        "Dean Pelton",
+        "Takashi"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Takashi finally confesses his real identity to the dean",
+      "punchline": "'I think we all are sometimes.' \u2014 the dean's response to learning he's been texting a Japanese teenager all night is not shock or betrayal, but empathic identification",
+      "craft_total": 8.22,
+      "impact_score": 8.0,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "This is the best joke in the episode and one of the best in Community's catalogue. 'I think we all are sometimes' is a profound absurdist response to the specific revelation that the person he's been confessing his loneliness to is a teenage boy in Tokyo. The line works because it's (1) a genuine therapeutic deflection \u2014 the dean copes by universalizing the experience, (2) a character-perfect response from someone who doesn't process reality normally, (3) deeply funny as a non-sequitur to 'I am a teenage boy in Tokyo,' and (4) oddly true \u2014 there's something universal about the loneliness the dean has been expressing. It's simultaneously the silliest and most human line in the episode. 'I think we all are sometimes' as a response to any confession would be funny; as a response to 'I am Takashi, a teenage boy in Tokyo' it's perfect."
+    },
+    {
+      "index": 97,
+      "text": "Dean: 'Why don't I bring you some olives tomorrow, Jeffrey?' \u2014 not registering that Jeffrey is Takashi and that Frankie's olive dynamic is bleeding into his late-night calls",
+      "characters": [
+        "Dean Pelton",
+        "Takashi"
+      ],
+      "joke_types": [
+        "callback",
+        "absurdist"
+      ],
+      "setup": "The dean's late-night call to Takashi",
+      "punchline": "The dean offers to bring Takashi/Jeffrey olives \u2014 an echo of the Frankie-Elroy olive dynamic, connecting two completely separate subplots through olive delivery as an expression of affection",
+      "craft_total": 8.62,
+      "impact_score": 8.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A structural callback that connects two apparently unrelated subplot threads through olives. The dean hasn't heard the Frankie-Elroy olive dynamic, yet he offers olives as a comforting gesture \u2014 suggesting olives as a Greendale love language. The fact that he still calls him 'Jeffrey' after Takashi's confession is a perfect Dean Pelton character note: he received the information and filed it. Very good rewatch material."
+    },
+    {
+      "index": 98,
+      "text": "Post-credits epilogue: Takashi narrates: 'I often think about that night. Such a small event, but ultimately, the moment that would lead me to becoming oyabun, highest leader of the Yakuza.'",
+      "characters": [
+        "Takashi"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "meta_self_referential"
+      ],
+      "setup": "The episode's warm resolution \u2014 the dean and Takashi have connected; everyone is okay",
+      "punchline": "Takashi retrospectively narrates the entire episode as the origin story of his becoming the head of the Yakuza \u2014 implying the dean's lonely 3am texts set him on a path to organized crime leadership",
+      "craft_total": 9.03,
+      "impact_score": 9.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "A perfect final joke that recontextualizes the entire subplot. The structure is a classic mock-epic: a trivial event (accidental text exchange with a dean at 3am) is revealed to be the founding trauma/inspiration of a Yakuza crime empire. The narration style (voiceover, past tense, 'I often think about that night') parodies prestige drama endings. This is the kind of joke that Community uniquely excels at \u2014 it rewards the audience for having watched the whole episode and provides a completely unexpected tonal reframe in the final seconds. The fact that the Dean's loneliness inspired future organized crime is both darkly funny and weirdly earned by everything that came before."
     }
   ],
   "air_date": "2015-03-24",

@@ -4,34 +4,34 @@
   "season": 2,
   "episode_number": 1,
   "title": "Anthropology 101",
-  "humor_index": 79.4,
-  "jpm": 1.97,
-  "avg_craft": 6.99,
-  "avg_impact": 6.82,
-  "total_jokes": 43,
-  "war": 38.9,
-  "dominant_joke_types": "[\"character_comedy\", \"cringe_discomfort\", \"absurdist\"]",
-  "standout_joke_ids": "[36, 34, 33]",
+  "humor_index": 92.6,
+  "jpm": 3.21,
+  "avg_craft": 7.36,
+  "avg_impact": 7.28,
+  "total_jokes": 70,
+  "war": 92.4,
+  "dominant_joke_types": "[\"character_comedy\", \"irony_sarcasm\", \"deadpan_understatement\"]",
+  "standout_joke_ids": "[42, 56, 54]",
   "weakest_section": null,
   "jokes": [
     {
       "index": 1,
-      "text": "The same cafeteria where Britta Perry publicly professed her love to Jeff Winger who then walked out on her. Unforgettable!",
+      "text": "The announcer casually name-drops Britta's public declaration of love mid-Fresh Start Dance announcement, calling it 'Unforgettable!'",
       "characters": [
-        "Dean"
+        "Announcer"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "callback"
+        "irony_sarcasm",
+        "deadpan_understatement"
       ],
-      "setup": "Dean promoting a 'fresh start' dance for new beginnings",
-      "punchline": "Immediately reminds everyone of the embarrassing incident they're trying to forget",
-      "craft_total": 6.6,
-      "impact_score": 6.83,
+      "setup": "Cheerful PA announcement about a 'fresh start dance' and clean slates for the new semester",
+      "punchline": "The announcer pivots to remind the entire campus that Britta publicly professed her love to Jeff and got rejected, calling it 'Unforgettable!' before returning to 'free punch and fresh start cookies'",
+      "craft_total": 7.31,
+      "impact_score": 7.17,
       "quotability": 6.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect character moment - the Dean's oblivious enthusiasm undermining his own message. Strong structure with immediate contradiction.",
+      "is_callback": 0,
+      "explanation": "Brilliant cold open joke. The 'Fresh Start' theme creates the expectation of optimism, then the PA announcement weaponizes it to humiliate Britta in the most cheerful, bureaucratic voice possible. The return to 'free punch and fresh start cookies' as if nothing happened makes it sing. Strong structure and economy.",
       "dialogue": [
         {
           "speaker": "Dean Pelton",
@@ -45,23 +45,23 @@
     },
     {
       "index": 2,
-      "text": "We're like Batman and Shaft. Batman actually had a guy. His name was Robin. Troy, Batman's friend didn't have to be Robin. It could have been Shaft, Dolemite... Leroy Brown. Don't let society limit your people.",
+      "text": "Pierce: 'We're like Batman and Shaft.' Troy: 'Batman actually had a guy. His name was Robin.'",
       "characters": [
-        "Troy",
-        "Abed"
+        "Pierce",
+        "Troy"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Troy makes an odd comparison between their friendship and Batman/Shaft",
-      "punchline": "Abed's logical but ridiculous attempt to defend Troy's nonsensical analogy",
-      "craft_total": 7.04,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Pierce tries to compare himself and Troy to a cool duo \u2014 'Batman and Shaft'",
+      "punchline": "Troy correctly and earnestly points out Batman already had a companion named Robin, undermining Pierce's cool framing by applying literal logic to it",
+      "craft_total": 7.39,
+      "impact_score": 7.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Troy/Abed dynamic - Troy's innocent absurdity met with Abed's overly logical support. Character-perfect.",
+      "explanation": "Works on two levels: Pierce's oblivious attempt at a cool racial comparison and Troy's sincere literal correction. Both characters are perfectly themselves here. The joke is in the collision of Pierce's breezy racism-lite and Troy's earnest nerd logic.",
       "dialogue": [
         {
           "speaker": "Troy",
@@ -75,22 +75,22 @@
     },
     {
       "index": 3,
-      "text": "Batman actually had a guy. His name was Robin. He rode around with him.",
+      "text": "Pierce: 'Troy, Batman's friend didn't have to be Robin. It could have been Shaft, Dolemite... Leroy Brown. Don't let society limit your people.'",
       "characters": [
-        "Abed"
+        "Pierce"
       ],
       "joke_types": [
-        "deadpan_understatement",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Troy's Batman/Shaft comparison",
-      "punchline": "Matter-of-fact correction with slight homoerotic undertone",
-      "craft_total": 6.85,
-      "impact_score": 6.25,
-      "quotability": 4.0,
+      "setup": "Troy corrects Pierce that Batman's sidekick was Robin, not Shaft",
+      "punchline": "Pierce doubles down with more Black cultural references and delivers 'Don't let society limit your people' as if he's being progressive and empowering",
+      "craft_total": 7.76,
+      "impact_score": 7.5,
+      "quotability": 7.5,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Classic Abed literal-mindedness, subtly pointing out the subtext Troy missed",
+      "is_callback": 1,
+      "explanation": "Pierce's escalation from ignorant to patronizingly woke-in-his-own-mind is perfect character comedy. 'Don't let society limit your people' is the punchline gem \u2014 Pierce thinks he's liberating Troy while being exactly as reductive as he accuses society of being. Extremely Pierce-specific; no other character delivers this.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -108,23 +108,24 @@
     },
     {
       "index": 4,
-      "text": "You're reading Troy's Twitter page where he posts everything Pierce says? 'Oldwhitemansays'? It's hilarious.",
+      "text": "Abed and Troy have a Twitter account called 'OldWhiteManSays' where Troy posts everything Pierce says",
       "characters": [
-        "Annie",
-        "Troy"
+        "Abed",
+        "Troy",
+        "Pierce"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Troy has been documenting Pierce's comments",
-      "punchline": "The Twitter handle 'Oldwhitemansays' perfectly captures Pierce's identity",
-      "craft_total": 7.42,
-      "impact_score": 7.0,
-      "quotability": 8.0,
-      "rewatch_bonus": 0,
+      "setup": "Troy is reading his phone and laughing; Abed explains Troy reads Pierce's Twitter page",
+      "punchline": "The account is called 'OldWhiteManSays' \u2014 the reveal that Troy has been curating Pierce's racism/ignorance as social media content is the joke",
+      "craft_total": 8.09,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Excellent character integration - perfectly captures both Troy's social media innocence and Pierce's casual problematic statements.",
+      "explanation": "One of the episode's sharpest concepts. 'OldWhiteManSays' is a perfect satirical premise \u2014 it comments on social media culture, race dynamics, and Pierce's character all at once. The name alone is the joke; the revelation that it's hilarious to 600,000 strangers pays off repeatedly throughout the episode. Character-specific and structurally elegant.",
       "dialogue": [
         {
           "speaker": "Troy",
@@ -138,23 +139,23 @@
     },
     {
       "index": 5,
-      "text": "How was your summer? Lived with you. Oh, yeah.",
+      "text": "Jeff answers Shirley's 'How was your summer?' with 'Lived with you' \u2014 then 'Oh, yeah.'",
       "characters": [
         "Jeff",
-        "Pierce"
+        "Shirley"
       ],
       "joke_types": [
         "deadpan_understatement",
-        "awkward_silence"
+        "character_comedy"
       ],
-      "setup": "Jeff asks Pierce about his summer",
-      "punchline": "Pierce's matter-of-fact reminder that they live together, followed by awkward realization",
-      "craft_total": 6.35,
-      "impact_score": 5.83,
-      "quotability": 4.0,
+      "setup": "Shirley greets Jeff warmly and asks how his summer was, as if they're catching up after a long absence",
+      "punchline": "Jeff flatly reminds her they lived together all summer, punctured by her 'Oh, yeah' \u2014 she forgot",
+      "craft_total": 6.83,
+      "impact_score": 6.0,
+      "quotability": 4.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Simple but effective awkward beat. Economy is perfect - maximum awkwardness in minimal words.",
+      "explanation": "Quick, economical, funny in its mundanity. The beat works because it deflates the warm reunion energy and reveals how unremarkable their cohabitation was \u2014 reinforced by Shirley's casual 'Oh, yeah.' Short and clean.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -172,25 +173,22 @@
     },
     {
       "index": 6,
-      "text": "Hey, did you guys see Toy Story 3? - Yes! - Oh, I love Toy Story 3! - Hey! - Aah! - Hey! - Hey, Toy Story... Britta!",
+      "text": "Britta arrives; group is mid-conversation about Toy Story 3; she gets a 'Hey! Hey! Toy story\u2014 Britta!'",
       "characters": [
-        "Abed",
-        "Annie",
-        "Troy",
-        "Britta"
+        "Study Group"
       ],
       "joke_types": [
-        "awkward_silence",
-        "physical_slapstick"
+        "reaction_beat",
+        "awkward_silence"
       ],
-      "setup": "Abed trying to change subject when Britta arrives",
-      "punchline": "Everyone's awkward reactions and attempts to avoid the elephant in the room",
-      "craft_total": 5.47,
-      "impact_score": 5.5,
-      "quotability": 3.0,
+      "setup": "Group is enthusiastically discussing Toy Story 3 to fill the awkward void left by Britta's absence",
+      "punchline": "Britta walks in mid-sentence and someone pivots mid-word from 'Toy Story' to 'Britta!' \u2014 the seamless redirect reveals they were stalling",
+      "craft_total": 6.28,
+      "impact_score": 5.75,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Standard sitcom awkward arrival beat - functional but not particularly creative",
+      "explanation": "Funny situational beat \u2014 the Toy Story non-sequitur as social deflection is relatable. The abrupt pivot is the joke. Not exceptional but efficiently executed.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -240,22 +238,23 @@
     },
     {
       "index": 7,
-      "text": "I hope I'm not around when you do mean to be a tool.",
+      "text": "Britta delivers a full apology; the group accepts warmly \u2014 then she clarifies 'You? I'm hiding from them,' pointing to other students who are staring",
       "characters": [
-        "Britta"
+        "Britta",
+        "Study Group"
       ],
       "joke_types": [
-        "setup_punchline",
-        "irony_sarcasm"
+        "misdirection",
+        "character_comedy"
       ],
-      "setup": "Jeff says 'I don't mean to be a tool' after being harsh",
-      "punchline": "Britta's sharp comeback about his unintentional tool behavior",
-      "craft_total": 6.5,
-      "impact_score": 6.5,
-      "quotability": 7.5,
+      "setup": "Britta gives an earnest apology speech implying she's been avoiding the study group out of embarrassment",
+      "punchline": "She accepts Shirley's warmth but clarifies she was hiding from EVERYONE ELSE on campus \u2014 the group wasn't her social problem",
+      "craft_total": 6.92,
+      "impact_score": 6.67,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Sharp comeback with good structure. Britta's wit shining through her embarrassment.",
+      "explanation": "Clean misdirection. The apology plays as standard group-reunion beats, making the redirect to 'them' \u2014 the broader campus \u2014 a genuine surprise. Communicates the scope of Britta's humiliation more economically than exposition would.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -269,23 +268,23 @@
     },
     {
       "index": 8,
-      "text": "You are the...Coolest! Right. Um... At what, exactly? Being fearless! Honest. Speaking from your heart.",
+      "text": "Jeff: 'I don't mean to be a tool, but you embarrassed me that night too, so call it karma.' Britta: 'I hope I'm not around when you do mean to be a tool.'",
       "characters": [
-        "Random student",
+        "Jeff",
         "Britta"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "cringe_discomfort"
+        "setup_punchline",
+        "character_comedy"
       ],
-      "setup": "Student calling Britta cool",
-      "punchline": "Britta's confused reaction showing she doesn't understand her new fame",
-      "craft_total": 6.43,
-      "impact_score": 6.0,
-      "quotability": 4.0,
+      "setup": "Jeff hedges his criticism of Britta with 'I don't mean to be a tool'",
+      "punchline": "Britta snaps back that if THIS is him not trying to be a tool, she'd hate to see him at full tool-capacity",
+      "craft_total": 7.38,
+      "impact_score": 7.33,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Britta's discomfort with her accidental fame",
+      "explanation": "Sharp comeback that also establishes the episode's 'tool' thematic motif early. Britta's retort is the kind of line that gets a room clapping \u2014 it's efficient, character-true, and neatly turns Jeff's own phrasing against him. The word 'tool' doing double duty (insult + later literal tool theme) is elegant writing.",
       "dialogue": [
         {
           "speaker": "Random Student",
@@ -299,23 +298,23 @@
     },
     {
       "index": 9,
-      "text": "'Jeff Winger, I love you.' Right. Um... My heart may have overstated...",
+      "text": "A female student approaches Britta with 'You are the... coolest! Being fearless! Honest. Speaking from your heart.' and asks for her autograph",
       "characters": [
-        "Fan",
+        "Female Student",
         "Britta"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "irony_sarcasm",
         "character_comedy"
       ],
-      "setup": "Fan praising Britta for her fearless heart-speaking",
-      "punchline": "Britta's uncomfortable admission that her heart exaggerated",
-      "craft_total": 6.6,
-      "impact_score": 6.5,
-      "quotability": 6.0,
+      "setup": "Britta is expecting judgment or mockery for her public declaration of love",
+      "punchline": "Instead, a fan treats her like a hero for her emotional public breakdown, asking for her autograph \u2014 Britta's humiliation has accidentally made her cool",
+      "craft_total": 6.47,
+      "impact_score": 6.0,
+      "quotability": 5.0,
       "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good cringe moment showing Britta's discomfort with her newfound fame and the reality behind her dramatic moment.",
+      "is_callback": 0,
+      "explanation": "Good ironic reversal that sets up the episode's B-plot engine \u2014 Britta as accidental feminist hero. The autograph request is a funny escalation of the fan's sincerity. Works because it subverts the expected humiliation beat.",
       "dialogue": [
         {
           "speaker": "Fan",
@@ -329,22 +328,23 @@
     },
     {
       "index": 10,
-      "text": "We technically frenched. I checked the make-out meter in this month's issue of... national review.",
+      "text": "Jeff panics about the Annie kiss becoming public: 'I would be tarred, feathered, and put on one of those websites people check when they're buying a house.'",
       "characters": [
+        "Jeff",
         "Annie"
       ],
       "joke_types": [
-        "misdirection",
-        "character_comedy"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Annie consulting a make-out meter in a magazine",
-      "punchline": "The magazine is National Review (conservative political journal, not teen magazine)",
-      "craft_total": 8.0,
+      "setup": "Jeff is imploring Annie to stay quiet about their kiss, citing dire social consequences",
+      "punchline": "The escalation from 'tarred and feathered' (dramatic) to 'one of those websites people check when they're buying a house' (sex offender registry \u2014 implied but never said) is the joke",
+      "craft_total": 7.62,
       "impact_score": 7.67,
       "quotability": 8.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Brilliant character moment - perfectly captures Annie's academic overachiever personality consulting the wrong type of publication for teen advice. Unexpected and character-specific.",
+      "explanation": "Excellent joke. The circumlocution of 'websites people check when they're buying a house' for the sex offender registry is perfectly calibrated \u2014 specific enough to be instantly decoded, indirect enough to be funnier than saying it plainly. The escalation from medieval punishment to bureaucratic digital shaming is also a great structural move. Highly quotable.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -358,22 +358,22 @@
     },
     {
       "index": 11,
-      "text": "Two credits into a music major Chang?",
+      "text": "Annie insists 'we didn't just kiss \u2014 we technically frenched,' then cites 'the make-out meter in this month's issue of... National Review'",
       "characters": [
-        "Jeff"
+        "Annie"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Wondering what to call Chang now that he's a student",
-      "punchline": "Highlighting Chang's minimal progress in his new academic pursuit",
-      "craft_total": 6.64,
-      "impact_score": 6.33,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
+      "setup": "Annie is defending the significance of their kiss after Jeff calls it a mistake",
+      "punchline": "She references 'the make-out meter' as a source, then the publication turns out to be National Review \u2014 a conservative political magazine \u2014 instead of the expected teen girl magazine",
+      "craft_total": 8.07,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Solid character-based dig at Chang's new student status and lack of commitment.",
+      "explanation": "Superb Annie joke. 'Make-out meter' already signals an expected Seventeen/Cosmo reference \u2014 the pivot to National Review is a perfect surprise that characterizes Annie's nerdy, slightly strange earnestness. It also quietly mocks both teen magazines AND conservative political publishing. Very character-specific; only Annie could deliver this.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -399,22 +399,22 @@
     },
     {
       "index": 12,
-      "text": "Subject's talkin' my changuage.",
+      "text": "Jeff says 'I don't like where that's going' \u2014 a line callback to his earlier identical reaction to Britta's fan",
       "characters": [
-        "Chang"
+        "Jeff"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "callback",
+        "running_gag"
       ],
-      "setup": "Chang explaining why he chose anthropology",
-      "punchline": "Chang-ing 'language' to incorporate his name",
-      "craft_total": 5.93,
-      "impact_score": 5.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Typical Chang wordplay - cheap pun but perfectly in character for his forced portmanteaus.",
+      "setup": "Jeff used this exact line moments earlier when watching Britta get fan attention; now Annie has just mentioned the make-out meter/National Review",
+      "punchline": "The repeated phrase signals Jeff's generalized anxiety about all the women in his life spinning out of his control simultaneously",
+      "craft_total": 6.8,
+      "impact_score": 6.17,
+      "quotability": 5.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Quick callback that lands because of its perfect placement immediately after the Annie joke. Jeff's resignation is the joke. Economical and self-aware without being meta.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -424,22 +424,23 @@
     },
     {
       "index": 13,
-      "text": "Star-burns has grown reliant on his star-shaped sideburns but still craves identity beyond them, so he added a hat.",
+      "text": "Chang: 'Oh wait. I guess it's not Senor anymore. What should we call you? Student Chang? Two credits into a music major Chang?'",
       "characters": [
-        "Abed"
+        "Jeff",
+        "Study Group"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Question about Star-burns' new hat",
-      "punchline": "Abed's overly analytical breakdown of Star-burns' identity crisis",
-      "craft_total": 7.19,
-      "impact_score": 6.67,
-      "quotability": 6.5,
-      "rewatch_bonus": 1,
+      "setup": "Chang approaches the group as a fellow student, having lost his teaching position",
+      "punchline": "Jeff rattles off diminishing titles for Chang \u2014 the specificity of 'two credits into a music major' as the humiliation peak is perfect",
+      "craft_total": 7.32,
+      "impact_score": 7.17,
+      "quotability": 7.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Classic Abed - over-analyzing minor character details with psychological insight. Perfect character voice.",
+      "explanation": "Jeff's verbal assassination is perfectly targeted. 'Senor Chang' was his identity and power; losing the title means losing everything. The escalating specificity ('two credits into a music major') makes it funnier each step \u2014 the music major detail especially because it implies maximum floundering.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -449,22 +450,22 @@
     },
     {
       "index": 14,
-      "text": "I'm hoping we can move away from the soapy relationshipy stuff and into bigger, fast-paced, self-contained escapades.",
+      "text": "Chang: 'Have you checked out the course description? Ancient weaponry? Genital mutilation? Subject's talkin' my Changuage.'",
       "characters": [
-        "Abed"
+        "Chang"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "character_comedy"
+        "character_comedy",
+        "wordplay_pun"
       ],
-      "setup": "Abed discussing improving their group dynamic",
-      "punchline": "Directly addressing the show's format and his desire for concept episodes",
-      "craft_total": 7.96,
-      "impact_score": 7.25,
+      "setup": "Chang is explaining why he enrolled in Anthropology",
+      "punchline": "'Changuage' \u2014 a portmanteau of Chang + language \u2014 is the punchline, and the list (ancient weaponry, genital mutilation) as attractions is darkly funny character work",
+      "craft_total": 7.06,
+      "impact_score": 7.0,
       "quotability": 7.5,
-      "rewatch_bonus": 1,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant meta moment where Abed literally describes the show's creative direction and his role as genre-aware character.",
+      "explanation": "'Changuage' is a groan-worthy but perfectly on-brand Chang pun \u2014 his self-mythology requires his name to be a linguistic category. The list of anthropology appeals (weaponry + genital mutilation) as the draw is good dark character comedy. The pun gets a laugh even from people who hate puns because it's so Chang.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -478,23 +479,22 @@
     },
     {
       "index": 15,
-      "text": "What is it, exactly, that separates man from animal? Divorce?",
+      "text": "Abed analyzes Star-Burns' new hat: 'Star-Burns has grown reliant on his star-shaped sideburns but still craves identity beyond them, so he added a hat.'",
       "characters": [
-        "Professor Bauer",
-        "Pierce"
+        "Abed"
       ],
       "joke_types": [
-        "setup_punchline",
-        "character_comedy"
+        "character_comedy",
+        "observational"
       ],
-      "setup": "Professor's philosophical question about human uniqueness",
-      "punchline": "Pierce's cynical and personal answer",
-      "craft_total": 7.06,
-      "impact_score": 6.83,
+      "setup": "Someone asks 'What's up with Star-Burns?' noting his new hat",
+      "punchline": "Abed delivers a clinical psychological profile of a background character's identity crisis \u2014 delivered as dispassionate analysis",
+      "craft_total": 7.63,
+      "impact_score": 7.17,
       "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Pierce response - cynical, personal, and delivered with complete confidence. Great economy.",
+      "explanation": "Quintessential Abed joke \u2014 he provides unnecessary but eerily accurate psychological analysis of a minor background character. The specificity of 'craves identity beyond them' applied to sideburns is absurdist and brilliant. Also a meta-joke for viewers who've noticed Star-Burns' defining feature.",
       "dialogue": [
         {
           "speaker": "Professor Bauer",
@@ -508,23 +508,23 @@
     },
     {
       "index": 16,
-      "text": "Half a hat. Saves money. Thank you!",
+      "text": "Abed: 'What about a wealthy uncle? Or an old drinking buddy that may or may not have had a sex change? Why are you mining my life for classic sitcom scenarios?'",
       "characters": [
-        "Pierce",
-        "Troy"
+        "Abed",
+        "Jeff"
       ],
       "joke_types": [
-        "character_comedy",
-        "cringe_discomfort"
+        "meta_self_referential",
+        "character_comedy"
       ],
-      "setup": "Troy asking why Jewish people wear yarmulkes",
-      "punchline": "Pierce's offensively reductive and wrong explanation, which Troy accepts",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
+      "setup": "Abed is asking Jeff about hillbilly cousins and wealthy uncles, seemingly random",
+      "punchline": "Jeff calls Abed out for 'mining his life for classic sitcom scenarios' \u2014 the show breaks the fourth wall through Jeff's irritation rather than Abed's usual meta-commentary",
+      "craft_total": 7.76,
+      "impact_score": 7.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Character-perfect for both - Pierce's casual antisemitism and Troy's innocent acceptance. Uncomfortable but true to character.",
+      "explanation": "Classic Community meta move \u2014 Abed's TV-thinking bleeds into real life, and Jeff's exasperation names it plainly. The list of sitcom tropes (hillbilly cousin, sex change uncle) is both funny and an accurate genre taxonomy. The joke works both as character comedy and meta commentary.",
       "dialogue": [
         {
           "speaker": "Troy",
@@ -542,22 +542,22 @@
     },
     {
       "index": 17,
-      "text": "'Half a hat'? That is so offensive! I love 'oldwhitemansays'.",
+      "text": "Abed: 'I'm hoping we can move away from the soapy relationshipy stuff and into bigger, fast-paced, self-contained escapades.'",
       "characters": [
-        "Annie"
+        "Abed"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "meta_self_referential",
         "character_comedy"
       ],
-      "setup": "Annie calling out Pierce's offensive comment",
-      "punchline": "Immediately expressing love for the Twitter account that spreads his offensive comments",
-      "craft_total": 6.8,
-      "impact_score": 6.5,
-      "quotability": 6.0,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Sharp irony showing the disconnect between calling out bigotry and enjoying it as entertainment. Good structure.",
+      "setup": "Abed is explaining why he's been asking Jeff about unusual relatives",
+      "punchline": "Abed is essentially pitching the Season 2 direction of Community TO Jeff WITHIN the show \u2014 'self-contained escapades' is a direct description of the show's upcoming concept episodes",
+      "craft_total": 8.26,
+      "impact_score": 8.17,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes \u2014 and a genuinely exceptional piece of meta-writing. Abed is literally pitching the Season 2 creative direction to Jeff within the diegesis of the show. 'Self-contained escapades' predicts the paintball, zombie, and concept episodes to come. Only possible in Community, only deliverable by Abed. The layering of character voice + meta-commentary + genuine show self-awareness makes this exceptional.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -571,22 +571,22 @@
     },
     {
       "index": 18,
-      "text": "Consider yourself Chang-ed.",
+      "text": "Professor Bauer's introduction: 'I will guide you to the very threshold of your humanity, where you will lock eyes with the shrieking, blood-drenched sister-raping beasts from which we sprang.'",
       "characters": [
-        "Chang"
+        "Professor Bauer"
       ],
       "joke_types": [
-        "wordplay_pun",
+        "dark_subversive",
         "character_comedy"
       ],
-      "setup": "Chang paying to join their group",
-      "punchline": "Chang-ing 'changed' to incorporate his name",
-      "craft_total": 5.25,
-      "impact_score": 5.0,
-      "quotability": 5.0,
+      "setup": "Standard first-day-of-class professor introduction",
+      "punchline": "The escalating violence and specificity of 'shrieking, blood-drenched sister-raping beasts' in an otherwise normal academic register is the comedic shock",
+      "craft_total": 7.71,
+      "impact_score": 8.17,
+      "quotability": 6.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Another forced Chang pun. Cheap wordplay but consistent with his character's verbal tics.",
+      "explanation": "Strong character introduction joke \u2014 the professor's academic voice lends authority to increasingly unhinged language. The contrast between the formal register and 'sister-raping beasts' is the engine. Betty White's delivery makes this legendary, but on the page it's already sharp.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -600,22 +600,22 @@
     },
     {
       "index": 19,
-      "text": "Looks like your food just walked out on ya. Same way you did Britta.",
+      "text": "Professor Bauer: '...where you will lock eyes with the shrieking, blood-drenched sister-raping beasts from which we sprang. You will also have to make a diorama.'",
       "characters": [
-        "Cafeteria worker"
+        "Professor Bauer"
       ],
       "joke_types": [
-        "setup_punchline",
-        "callback"
+        "deadpan_understatement",
+        "setup_punchline"
       ],
-      "setup": "Jeff's food literally leaving",
-      "punchline": "Connecting it to his abandoning Britta at the dance",
-      "craft_total": 6.48,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Clever parallel between literal and metaphorical abandonment. Good structure with nice callback integration.",
+      "setup": "Professor Bauer delivers an escalating, intense speech about confronting humanity's violent animal origins",
+      "punchline": "'You will also have to make a diorama.' \u2014 the absolute mundanity of a school craft project following the apocalyptic speech is the deflation gag",
+      "craft_total": 8.26,
+      "impact_score": 8.75,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's funniest moments. The comedic structure is essentially perfect: build to maximum intensity ('sister-raping beasts from which we sprang'), then pivot to minimum stakes ('make a diorama'). The word 'also' is doing incredible work \u2014 it treats both items as equivalent bullet points. Textbook anti-climax executed flawlessly. The diorama is funnier every time you hear it.",
       "dialogue": [
         {
           "speaker": "Cafeteria worker",
@@ -633,22 +633,22 @@
     },
     {
       "index": 20,
-      "text": "I don't mean to sound like a tool, but maybe it's karma.",
+      "text": "Professor Bauer instructs tribes to 'mix up the races, or you'll be surprised at how quickly things get awkward'",
       "characters": [
-        "Britta"
+        "Professor Bauer"
       ],
       "joke_types": [
-        "callback",
-        "irony_sarcasm"
+        "dark_subversive",
+        "character_comedy"
       ],
-      "setup": "Britta using Jeff's exact phrase from earlier",
-      "punchline": "Throwing his own words back at him as revenge",
-      "craft_total": 6.85,
-      "impact_score": 6.25,
-      "quotability": 6.0,
-      "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Satisfying callback and character moment. Britta getting her revenge using Jeff's own words.",
+      "setup": "Professor Bauer is giving standard group-formation instructions",
+      "punchline": "She inserts a casual observation about racial self-segregation with 'you'll be surprised at how quickly things get awkward' \u2014 said as empirical fact from someone who's clearly witnessed it anthropologically",
+      "craft_total": 7.3,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Perfectly in character for an anthropology professor who's seen tribal dynamics up close. The deadpan observation normalizes something deeply uncomfortable, which is the joke. Functions as both character-building and genuine social commentary.",
       "dialogue": [
         {
           "speaker": "Britta",
@@ -674,22 +674,23 @@
     },
     {
       "index": 21,
-      "text": "Annie, all women deserve to be with me. And vice versa. Granted.",
+      "text": "Pierce: 'Tell me again why Jewish people wear yarmulkes.' Troy: 'Half a hat. Saves money.'",
       "characters": [
-        "Jeff"
+        "Pierce",
+        "Troy"
       ],
       "joke_types": [
         "character_comedy",
-        "setup_punchline"
+        "irony_sarcasm"
       ],
-      "setup": "Annie suggesting he deserves someone specific",
-      "punchline": "Jeff's narcissistic claim that all women deserve him (and he them)",
-      "craft_total": 7.2,
-      "impact_score": 6.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
+      "setup": "Pierce is apparently getting worldly education from Troy since they moved in together",
+      "punchline": "Troy's answer \u2014 'Half a hat. Saves money.' \u2014 is not correct information but is delivered as confident wisdom, implying Troy is passing Pierce's ignorance back to him as fact",
+      "craft_total": 7.88,
+      "impact_score": 8.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Perfect Jeff Winger narcissism delivered with complete sincerity. The 'granted' sells his total belief in this.",
+      "explanation": "Deceptively sharp joke. 'Half a hat. Saves money.' is funny on its surface as confident wrong information, but the meta-layer is that Troy is apparently feeding Pierce absurd explanations and Pierce accepts them. It also exposes Pierce's credulity and Troy's mischief simultaneously. The economy \u2014 four words for a religious/cultural punchline \u2014 is excellent.",
       "dialogue": [
         {
           "speaker": "Annie",
@@ -703,22 +704,22 @@
     },
     {
       "index": 22,
-      "text": "More of my urine for me.",
+      "text": "Annie overhears the yarmulke exchange and exclaims 'That is so offensive!'",
       "characters": [
-        "Professor Bauer"
+        "Annie"
       ],
       "joke_types": [
-        "absurdist",
-        "cringe_discomfort"
+        "reaction_beat",
+        "character_comedy"
       ],
-      "setup": "Professor offering students her urine tea",
-      "punchline": "Her casual acceptance when they decline",
-      "craft_total": 7.27,
-      "impact_score": 7.17,
-      "quotability": 6.0,
+      "setup": "Pierce has just accepted Troy's false 'half a hat / saves money' explanation for yarmulkes",
+      "punchline": "Annie's outburst confirms the joke has landed AND adds her character's moral indignation as the button",
+      "craft_total": 5.87,
+      "impact_score": 5.5,
+      "quotability": 3.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfectly casual delivery of something deeply disturbing. Great economy and character establishment.",
+      "explanation": "Standard reaction beat \u2014 Annie as the moral compass works but isn't especially inventive. Functions as audience surrogate more than a crafted joke, but it's placed correctly to punctuate the Troy/Pierce exchange.",
       "dialogue": [
         {
           "speaker": "Professor Bauer",
@@ -728,22 +729,22 @@
     },
     {
       "index": 23,
-      "text": "Britta... I love you. Now, I know this puts you in an awkwardly powerful position, but I have to know right now, in front of everyone... Do you love me too?",
+      "text": "Chang: 'Would somebody with too much pride... do this?' [shows negative bank balance of $23.10]",
       "characters": [
-        "Jeff"
+        "Chang"
       ],
       "joke_types": [
-        "cringe_discomfort",
-        "escalation"
+        "character_comedy",
+        "visual_gag"
       ],
-      "setup": "Jeff's fake romantic declaration",
-      "punchline": "The over-the-top public nature and manipulation of putting Britta on the spot",
-      "craft_total": 7.0,
-      "impact_score": 7.33,
-      "quotability": 6.0,
+      "setup": "Jeff accuses Chang of wanting to join the study group but being too proud to ask",
+      "punchline": "Chang's rebuttal is to show his humiliating bank balance \u2014 which proves nothing about pride but reveals his desperation",
+      "craft_total": 7.12,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good escalation moment. The public manipulation and fake sincerity create strong cringe comedy.",
+      "explanation": "The visual gag of proudly displaying a $23.10 balance as evidence of humility is funny \u2014 it accidentally proves Jeff's point while Chang believes it disproves it. Character-consistent for Season 2 Chang's desperate, unhinged energy.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -765,22 +766,22 @@
     },
     {
       "index": 24,
-      "text": "Shirley, would you consider spinning off with me? Just riffing, but we could open a hair salon together.",
+      "text": "Shirley says 'I love OldWhiteManSays' \u2014 a callback confirming the audience for Pierce's social media ignorance",
       "characters": [
-        "Abed"
+        "Shirley"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "absurdist"
+        "callback",
+        "running_gag"
       ],
-      "setup": "Abed bored with the romantic drama",
-      "punchline": "Literally proposing a sitcom spinoff to escape the current storyline",
-      "craft_total": 8.17,
-      "impact_score": 7.5,
-      "quotability": 8.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant meta joke where Abed treats their real life like TV production, proposing an actual spinoff format. Highly original.",
+      "setup": "The OldWhiteManSays Twitter account has been established",
+      "punchline": "Shirley \u2014 a Black woman \u2014 adds her endorsement, adding a layer to the joke about who enjoys Pierce's unfiltered racism being broadcast publicly",
+      "craft_total": 6.08,
+      "impact_score": 5.5,
+      "quotability": 4.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Deepens the OldWhiteManSays joke by confirming Shirley's enjoyment \u2014 given her identity, it adds comic irony that she's among the account's fans. Quick and effective callback.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -790,22 +791,22 @@
     },
     {
       "index": 25,
-      "text": "Well, I don't understand. Is this you being meta?",
+      "text": "Pierce suggests the most important tool for the tribe assignment is 'my penis'",
       "characters": [
-        "Shirley"
+        "Pierce"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "reaction_beat"
+        "character_comedy",
+        "dark_subversive"
       ],
-      "setup": "Abed's spinoff proposal",
-      "punchline": "Shirley directly acknowledging the show's meta nature",
-      "craft_total": 7.14,
-      "impact_score": 7.25,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Group is debating which of the nine tools is most important to humanity's survival \u2014 suggestions include the cross and telescope",
+      "punchline": "Pierce closes the brainstorm with 'I'll show you the tool most important to our survival. But fair warning... it's my penis.'",
+      "craft_total": 5.86,
+      "impact_score": 6.0,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great meta moment where character recognizes the show's own self-awareness",
+      "explanation": "Predictable Pierce crude humor \u2014 once he says 'I'll show you the tool,' the punchline is telegraphed. The 'fair warning' construction softens the crudeness but doesn't elevate it beyond a reliable cheap laugh. Character-consistent but not creative.",
       "dialogue": [
         {
           "speaker": "Shirley",
@@ -823,22 +824,22 @@
     },
     {
       "index": 26,
-      "text": "That's an ax. It's an ax?",
+      "text": "Chang: 'Consider yourself Chang-ed.' \u2014 after swiping his student ID at the cafeteria",
       "characters": [
-        "Shirley"
+        "Chang"
       ],
       "joke_types": [
-        "character_comedy",
-        "reaction_beat"
+        "wordplay_pun",
+        "character_comedy"
       ],
-      "setup": "Shirley confidently identifying the cross as most important tool",
-      "punchline": "Her confusion when told it's just an ax",
-      "craft_total": 6.92,
-      "impact_score": 6.67,
-      "quotability": 5.0,
+      "setup": "Chang has shown off his student ID with a $23.10 balance \u2014 proving he has pride by paying for the group's lunch",
+      "punchline": "'Consider yourself Chang-ed' \u2014 a pun on 'changed' that also signals Chang's self-mythologizing as his own brand",
+      "craft_total": 6.35,
+      "impact_score": 5.83,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good character moment showing Shirley seeing religion everywhere, even in basic tools.",
+      "explanation": "Chang's self-branding puns are a reliable source of mild-to-moderate comedy. This one is particularly on-brand \u2014 using his name to coin a word meaning 'treated/deceived/changed' in a moment of genuine generosity is characterful. Not exceptional but very Chang.",
       "dialogue": [
         {
           "speaker": "Shirley",
@@ -856,22 +857,23 @@
     },
     {
       "index": 27,
-      "text": "I'll show you the tool that's most important to our survival. But fair warning... it's my penis.",
+      "text": "Cafeteria worker quips to Jeff: 'Looks like your food just walked out on ya. Same way you did Britta.'",
       "characters": [
-        "Pierce"
+        "Cafeteria Worker",
+        "Jeff"
       ],
       "joke_types": [
         "character_comedy",
-        "setup_punchline"
+        "irony_sarcasm"
       ],
-      "setup": "Pierce promising to reveal the most important survival tool",
-      "punchline": "It's his penis (with a fair warning beforehand)",
-      "craft_total": 5.82,
-      "impact_score": 5.67,
-      "quotability": 6.5,
+      "setup": "Jeff is in line at the cafeteria; someone ahead of him takes the last of whatever he wanted",
+      "punchline": "The cafeteria worker makes a pointed comparison between the food situation and Jeff's rejection of Britta \u2014 even campus staff have opinions on Jeff's love life",
+      "craft_total": 6.62,
+      "impact_score": 6.33,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Pure Pierce - inappropriate but delivered with complete sincerity. The 'fair warning' makes it funnier. Perfect character integration.",
+      "explanation": "Funny world-building joke \u2014 reinforces that the entire campus knows about and has opinions on Jeff/Britta. The food metaphor is clean and the delivery is good social humiliation for Jeff. Slightly predictable but well-timed.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -881,22 +883,22 @@
     },
     {
       "index": 28,
-      "text": "Thank the lord you're getting married! I was so worried about your souls ever since you had premarital sex on the table!",
+      "text": "Britta tells Jeff 'I don't mean to sound like a tool, but maybe it's karma' \u2014 echoing Jeff's earlier phrasing back at him",
       "characters": [
-        "Shirley"
+        "Britta"
       ],
       "joke_types": [
-        "cringe_discomfort",
+        "callback",
         "character_comedy"
       ],
-      "setup": "Shirley's relief about the engagement",
-      "punchline": "Revealing she knew about and was judging their hookup location",
-      "craft_total": 6.86,
-      "impact_score": 7.0,
-      "quotability": 7.5,
-      "rewatch_bonus": 0,
+      "setup": "Jeff used the phrase 'I don't mean to be a tool, but... call it karma' to Britta earlier",
+      "punchline": "Britta now deploys his exact phrasing and logic against him, turning his own weapon back on him",
+      "craft_total": 7.58,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect Shirley - religious concern mixed with TMI knowledge. Good callback integration and character voice.",
+      "explanation": "Sharp callback \u2014 the symmetry is satisfying. Britta adopting Jeff's exact phrasing signals she was listening AND is capable of playing his game. The 'tool' motif continues building (the episode will make this literal), making every use of the word funnier in retrospect.",
       "dialogue": [
         {
           "speaker": "Shirley",
@@ -910,22 +912,23 @@
     },
     {
       "index": 29,
-      "text": "Britta's marryin', Britta's marryin', Britta's marryin' Jeffrey Winger",
+      "text": "Male student tells Jeff 'Sorry, man. I gotta go where the heat is.' and walks to Britta's side",
       "characters": [
-        "Irish Singer"
+        "Male Student",
+        "Jeff"
       ],
       "joke_types": [
-        "absurdist",
-        "visual_gag"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Wedding escalation getting out of hand",
-      "punchline": "Abed hired an actual Irish folk singer for the fake engagement",
-      "craft_total": 6.95,
-      "impact_score": 7.5,
-      "quotability": 7.0,
-      "rewatch_bonus": 1,
+      "setup": "Jeff's male allies are deserting him as Britta's social power grows",
+      "punchline": "Even men Jeff thought were on his side explicitly defect to Britta's camp with no pretense \u2014 'I gotta go where the heat is' is a candid admission of social opportunism",
+      "craft_total": 6.42,
+      "impact_score": 6.25,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great escalation of Abed's wedding episode concept. The specificity of hiring an Irish singer shows his commitment to the bit.",
+      "explanation": "Good escalation beat for Jeff's social humiliation arc. Funny because the defector is at least honest about it. Not a standout joke but efficiently advances the episode's comedic premise.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -939,22 +942,23 @@
     },
     {
       "index": 30,
-      "text": "He's a George Clooney impersonator, but still, razzle dazzle, right?",
+      "text": "Jeff tells Shirley he's going to 'beat Britta at her own game'",
       "characters": [
-        "Abed"
+        "Jeff",
+        "Shirley"
       ],
       "joke_types": [
-        "absurdist",
-        "character_comedy"
+        "character_comedy",
+        "irony_sarcasm"
       ],
-      "setup": "Abed introducing Jeff's 'best man'",
-      "punchline": "Acknowledging it's fake but still proud of the production value",
-      "craft_total": 7.5,
+      "setup": "Shirley says 'Well, not every woman [is against you]. Certainly not the one that deserves to be with you.' \u2014 implying herself romantically",
+      "punchline": "Jeff responds 'Annie, all women deserve to be with me. And vice versa' \u2014 casually rejecting Shirley's romantic implication by being universally self-centered rather than specifically cruel",
+      "craft_total": 7.36,
       "impact_score": 7.0,
-      "quotability": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Perfect Abed - prioritizing production values over authenticity. The 'razzle dazzle' captures his showbiz mindset.",
+      "explanation": "Jeff's narcissism doing double duty \u2014 he avoids addressing Shirley's implication by making the conversation about ALL women deserving him, which is simultaneously more arrogant AND less cruel than specific rejection. Character-true and structurally sound.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -964,22 +968,22 @@
     },
     {
       "index": 31,
-      "text": "Men are monsters who crave young flesh. The end! At least we have the decency to be ashamed of it and keep it a secret instead of publicly blurting, 'I love you,' to everyone who sleeps with us!",
+      "text": "Professor Bauer drinks from a thermos and says 'More of my urine for me' after offering it to students",
       "characters": [
-        "Jeff"
+        "Professor Bauer"
       ],
       "joke_types": [
         "dark_subversive",
-        "escalation"
+        "character_comedy"
       ],
-      "setup": "Jeff defending his behavior with Annie",
-      "punchline": "Extremely dark and misanthropic explanation of male nature",
-      "craft_total": 7.44,
-      "impact_score": 8.0,
-      "quotability": 8.5,
+      "setup": "Professor Bauer is offering students a drink from her thermos, citing yogis who swear by its 'restorative powers'",
+      "punchline": "After no one accepts, she says 'More of my urine for me' \u2014 confirming the thermos contains her own urine, matter-of-factly",
+      "craft_total": 7.6,
+      "impact_score": 7.83,
+      "quotability": 7.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Dark but brilliant character moment. Jeff's cynicism taken to its logical extreme, revealing his self-loathing and philosophy.",
+      "explanation": "Perfectly economical Betty White shock humor. The setup ('restorative powers') plays coy, and 'More of my urine for me' is delivered as cheerful indifference. The casualness of the revelation \u2014 not a dramatic beat, just a throwaway \u2014 makes it funnier. Also sets up the episode's later urine payoff.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -989,22 +993,22 @@
     },
     {
       "index": 32,
-      "text": "You know, when there's three sprinkle donuts, you don't eat one and then lick another!",
+      "text": "Jeff publicly declares 'Britta... I love you' in front of the class \u2014 mirroring what she did to him",
       "characters": [
-        "Troy"
+        "Jeff"
       ],
       "joke_types": [
-        "observational",
-        "character_comedy"
+        "irony_sarcasm",
+        "escalation"
       ],
-      "setup": "Troy criticizing Jeff's behavior with women",
-      "punchline": "Innocent donut metaphor for romantic/sexual conduct",
-      "craft_total": 7.67,
-      "impact_score": 7.67,
-      "quotability": 9.0,
-      "rewatch_bonus": 1,
-      "is_callback": 0,
-      "explanation": "Brilliant Troy metaphor - perfectly innocent yet perfectly apt. The specificity of 'sprinkle donuts' and the gross imagery makes it memorable.",
+      "setup": "Jeff has decided to 'beat Britta at her own game' by mirroring her public declaration of love to him",
+      "punchline": "He orchestrates the same emotional ambush she suffered \u2014 the class reacts with the same shocked 'Oh!' \u2014 turning her weapon into his",
+      "craft_total": 7.38,
+      "impact_score": 7.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "The structural inversion is satisfying \u2014 Jeff weaponizes Britta's own move. The class's identical shocked reaction is a good visual comedy beat. The setup requires the audience to hold the season premiere premise in mind, which it does.",
       "dialogue": [
         {
           "speaker": "Troy",
@@ -1022,22 +1026,23 @@
     },
     {
       "index": 33,
-      "text": "Wait! I'm 'oldwhitemansays'? No wonder he says everything I'm thinking.",
+      "text": "Jeff and Britta's escalating fake love declarations: 'I'm gonna love you forever.' 'Good. I'm gonna love you forever.' 'I don't believe you.' 'Why? Don't you want me to?' 'No, I do. Bring it.'",
       "characters": [
-        "Pierce"
+        "Jeff",
+        "Britta"
       ],
       "joke_types": [
-        "irony_sarcasm",
+        "escalation",
         "character_comedy"
       ],
-      "setup": "Pierce discovering he's the subject of the Twitter account",
-      "punchline": "His complete lack of self-awareness about his own thoughts",
-      "craft_total": 7.78,
-      "impact_score": 8.0,
-      "quotability": 8.5,
+      "setup": "Jeff and Britta are faking a loving relationship to defeat each other socially, and are now competing to out-love the other",
+      "punchline": "'Bring it' \u2014 Britta accepting Jeff's love as a competitive challenge is the culmination of the absurd escalation",
+      "craft_total": 7.33,
+      "impact_score": 7.25,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
-      "is_callback": 1,
-      "explanation": "Perfect Pierce moment showing his complete lack of self-awareness. The irony is beautifully constructed and character-perfect.",
+      "is_callback": 0,
+      "explanation": "The competitive love declaration escalation is very well-executed Community comedy \u2014 two people turning every romantic gesture into a zero-sum game. 'Bring it' as a response to 'I love you' is the perfect compression of their dynamic. The structure builds well and the character work is unusually sharp.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -1059,23 +1064,23 @@
     },
     {
       "index": 34,
-      "text": "He thinks all dogs are boys and all cats are girls. There's no way to disprove that. Have you ever seen a cat penis?",
+      "text": "Shirley tells Abed: 'I think that's selfish, Abed. If you were a friend to Jeff and Britta, you would see their relationship as an adventure.' Abed: 'I hadn't thought about it that way. Oh, look at how they walk!'",
       "characters": [
-        "Troy",
-        "Pierce"
+        "Abed",
+        "Shirley"
       ],
       "joke_types": [
-        "absurdist",
-        "escalation"
+        "character_comedy",
+        "reaction_beat"
       ],
-      "setup": "Troy revealing Pierce's bizarre belief about pet genders",
-      "punchline": "Pierce's logical defense involving cat anatomy",
-      "craft_total": 8.1,
-      "impact_score": 8.5,
-      "quotability": 9.5,
+      "setup": "Shirley is convincing Abed to invest emotionally in Jeff and Britta's relationship instead of treating it as boring TV",
+      "punchline": "Abed's instant conversion \u2014 'Oh, look at how they walk!' \u2014 treats Jeff and Britta's synchronized strut as the visual storytelling he was craving, still viewing them through a TV lens despite Shirley's sermon",
+      "craft_total": 7.4,
+      "impact_score": 6.75,
+      "quotability": 6.5,
       "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Instant classic. Pierce's absurd belief defended with unassailable logic. The escalation to cat genitalia is perfect absurdist comedy.",
+      "explanation": "Abed's immediate reframing of 'caring about friends' as 'watching them like a TV show' is both a critique of his character and a perfect expression of it. He 'accepts' Shirley's correction while completely missing the point. Tight, funny, and very Abed.",
       "dialogue": [
         {
           "speaker": "Troy",
@@ -1097,22 +1102,23 @@
     },
     {
       "index": 35,
-      "text": "You know, it's very 'season one.'",
+      "text": "Pierce: 'Clearly, the most important tool to a tribe's survival is here... the cross, representing Christianity.' Troy: 'That's an ax.' Pierce: 'It's an ax?'",
       "characters": [
-        "Jeff"
+        "Pierce",
+        "Troy"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "character_comedy"
+        "character_comedy",
+        "setup_punchline"
       ],
-      "setup": "Jeff criticizing Abed's TV/life confusion",
-      "punchline": "Dismissing it as outdated like an old season of a show",
-      "craft_total": 7.66,
-      "impact_score": 7.33,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Group is debating which tool is most important; Pierce has a confident, declarative answer",
+      "punchline": "His 'cross representing Christianity' is an ax, which he hadn't noticed \u2014 the gap between Pierce's confident spiritual interpretation and his failure to identify a basic tool is the joke",
+      "craft_total": 7.32,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Brilliant meta moment where Jeff uses TV terminology to criticize Abed. The irony is that Jeff is becoming genre-aware himself.",
+      "explanation": "Pierce's confident wrongness is a character staple, but applied to religion + basic tool recognition this joke has an extra layer \u2014 his Christianity is so reflexive he sees crosses where there are axes. Quick, well-structured, and funny.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1122,22 +1128,22 @@
     },
     {
       "index": 36,
-      "text": "TV makes sense and has structure, logic, rules. And likeable leading men. In life, we have this. We have you.",
+      "text": "Pierce: 'Maybe it's the telescope. You can look through it backwards... Shrink your enemies!'",
       "characters": [
-        "Abed"
+        "Pierce"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "character_comedy"
+        "character_comedy",
+        "absurdist"
       ],
-      "setup": "Abed defending his preference for TV over life",
-      "punchline": "Pointing out that Jeff is their unlikeable leading man",
-      "craft_total": 8.37,
-      "impact_score": 8.5,
-      "quotability": 8.5,
-      "rewatch_bonus": 1,
+      "setup": "Group is brainstorming which tool is most important; someone mentions a telescope",
+      "punchline": "Pierce's application of telescope-backward logic \u2014 'shrink your enemies' \u2014 as a survival strategy is both deeply stupid and weirdly logical on its own terms",
+      "craft_total": 7.36,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Devastating and brilliant. Abed perfectly articulates the show's central tension while delivering a perfect character burn to Jeff.",
+      "explanation": "One of Pierce's better absurdist moments \u2014 the telescope-backward optical illusion logic applied to tribal warfare is simultaneously stupid and internally consistent. 'Shrink your enemies!' has the conviction of genuine tactical thinking. Very quotable.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -1147,22 +1153,22 @@
     },
     {
       "index": 37,
-      "text": "Gaaaa-yyyy! Ha. Gay fact.",
+      "text": "Pierce tweets: 'Oldwhiteman... Sorry I'm late. I was in my car loving Britta.'",
       "characters": [
-        "Chang"
+        "Pierce"
       ],
       "joke_types": [
         "character_comedy",
-        "cringe_discomfort"
+        "running_gag"
       ],
-      "setup": "Jeff giving a heartfelt answer about respect",
-      "punchline": "Chang's immature and homophobic dismissal",
-      "craft_total": 5.22,
-      "impact_score": 4.67,
-      "quotability": 4.0,
+      "setup": "Pierce arrives late; the OldWhiteManSays Twitter thread is active",
+      "punchline": "Pierce's oblivious overshare \u2014 'I was in my car loving Britta' \u2014 is both a Pierce-ism AND immediately gets posted to OldWhiteManSays, reinforcing the gag",
+      "craft_total": 7.03,
+      "impact_score": 7.0,
+      "quotability": 6.0,
       "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Cheap and offensive joke but true to Chang's character as the immature outsider trying to disrupt sincere moments.",
+      "is_callback": 1,
+      "explanation": "Pierce's overshare feeds directly into the OldWhiteManSays joke machine. 'Loving Britta' in context clearly means fawning over the concept of Britta as a romantic ideal, but its phrasing is a good Pierce-flavored double entendre. Decent callback execution.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1176,23 +1182,22 @@
     },
     {
       "index": 38,
-      "text": "I...Respect you! That's why you fail!",
+      "text": "Pierce: 'I just peed a little.' [After Jeff says he'd like to see someone stop him from marrying Britta]",
       "characters": [
-        "Jeff",
-        "Professor Bauer"
+        "Pierce"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "irony_sarcasm"
+        "character_comedy",
+        "deadpan_understatement"
       ],
-      "setup": "Jeff trying to use respect to defend against physical attack",
-      "punchline": "Professor's triumphant dismissal after beating him with weapons",
-      "craft_total": 7.14,
-      "impact_score": 7.67,
-      "quotability": 7.5,
+      "setup": "Jeff makes a dramatic declaration about marrying Britta; it's meant to be romantic and bold",
+      "punchline": "Pierce's response is 'I just peed a little' \u2014 involuntary excitement bypassing any normal emotional register",
+      "craft_total": 7.04,
+      "impact_score": 7.17,
+      "quotability": 7.0,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Good physical comedy payoff. The professor's point about respect vs. weapons proven through violence is darkly funny.",
+      "explanation": "Four words, maximum efficiency. Pierce expressing joy through involuntary urination is consistent with his character's aging-man physical comedy and lack of filter. The economy is exceptional \u2014 the joke is entirely contained in four words delivered deadpan.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1210,23 +1215,23 @@
     },
     {
       "index": 39,
-      "text": "Did someone throw urine in my face? Oh. Sometimes I surprise myself under pressure.",
+      "text": "Britta proposes to Jeff: 'Jeff Winger... Will you marry me?' Jeff: 'Yeah, yeah, of course.'",
       "characters": [
-        "Jeff",
-        "Shirley"
+        "Britta",
+        "Jeff"
       ],
       "joke_types": [
-        "physical_slapstick",
-        "character_comedy"
+        "escalation",
+        "irony_sarcasm"
       ],
-      "setup": "Jeff waking up confused about what happened",
-      "punchline": "Shirley casually admitting to throwing urine",
-      "craft_total": 7.12,
-      "impact_score": 7.33,
-      "quotability": 7.0,
+      "setup": "Pierce suggests Jeff propose; Britta intercepts and proposes to Jeff first to escalate the competition",
+      "punchline": "Jeff's 'Yeah, yeah, of course' \u2014 accepting the obviously absurd fake proposal with the energy of confirming a lunch order \u2014 is the deadpan",
+      "craft_total": 7.04,
+      "impact_score": 7.0,
+      "quotability": 5.5,
       "rewatch_bonus": 0,
       "is_callback": 0,
-      "explanation": "Great character moment for Shirley - surprising herself with her own capabilities under stress. Good contrast with her usual demeanor.",
+      "explanation": "Good escalation beat \u2014 Britta proposing to Jeff is the competitive one-upmanship made absurd. Jeff's bored acceptance is the punchline. Funny but not the peak of the arc.",
       "dialogue": [
         {
           "speaker": "Jeff",
@@ -1248,23 +1253,22 @@
     },
     {
       "index": 40,
-      "text": "How 'bout oldwhitemansays... The TV show? Who would watch that?",
+      "text": "Shirley: 'Thank the Lord you're getting married! I was so worried about your souls ever since you had premarital sex on the table!'",
       "characters": [
-        "Pierce",
-        "Troy"
+        "Shirley"
       ],
       "joke_types": [
-        "irony_sarcasm",
-        "meta_self_referential"
+        "character_comedy",
+        "escalation"
       ],
-      "setup": "Pierce excited about monetizing his Twitter success",
-      "punchline": "Troy's deadpan question about the audience for Pierce's thoughts",
-      "craft_total": 7.12,
-      "impact_score": 6.5,
-      "quotability": 6.5,
-      "rewatch_bonus": 0,
-      "is_callback": 1,
-      "explanation": "Good callback with meta-commentary on bad TV development. Troy's innocent question deflates Pierce's enthusiasm perfectly.",
+      "setup": "Everyone reacts joyfully to the engagement; Shirley is especially relieved",
+      "punchline": "Shirley's relief is not about the romance \u2014 it's about retroactively legitimizing what she believed was premarital sex 'on the table,' which she casually drops as if the group knew",
+      "craft_total": 7.66,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Brilliant Shirley moment. Her religious concern about the engagement is immediately revealed to be entirely practical \u2014 she's relieved their (presumed) table sex is now sanctioned. 'On the table' is both specific and visually funny. Perfectly in character and delivers a revelation (Shirley knows they slept together) with maximum comedic efficiency.",
       "dialogue": [
         {
           "speaker": "Pierce",
@@ -1286,22 +1290,23 @@
     },
     {
       "index": 41,
-      "text": "I was trying so hard to make our first week a great one, I didn't realize there was something great in front of us the whole time... an old woman drinking her own pee.",
+      "text": "Annie: 'You slept with her and then kissed me?!' \u2014 revealing to the full group that Jeff kissed Annie after sleeping with Britta",
       "characters": [
-        "Abed"
+        "Annie",
+        "Jeff"
       ],
       "joke_types": [
-        "meta_self_referential",
-        "absurdist"
+        "escalation",
+        "cringe_discomfort"
       ],
-      "setup": "Abed apologizing for forcing story concepts",
-      "punchline": "Realizing the absurd professor was the real entertainment all along",
-      "craft_total": 7.87,
-      "impact_score": 7.75,
-      "quotability": 7.5,
+      "setup": "Shirley's revelation about Jeff and Britta's sex opens the floodgate \u2014 now Annie processes the timeline",
+      "punchline": "Annie's outburst reveals the full chain: Jeff and Britta slept together, THEN Jeff kissed Annie \u2014 compounding the scandal in one horrified question",
+      "craft_total": 7.52,
+      "impact_score": 7.67,
+      "quotability": 7.0,
       "rewatch_bonus": 1,
       "is_callback": 1,
-      "explanation": "Perfect Abed meta-commentary on the episode's structure while acknowledging the absurdist comedy they overlooked.",
+      "explanation": "Perfect escalation. The timing of this revelation \u2014 just as the engagement joy peaks \u2014 detonates everything. The cringe comedy of Jeff's romantic timeline being exposed publicly is excellent. Annie's specific horror ('and THEN kissed me') layers humiliation on humiliation efficiently.",
       "dialogue": [
         {
           "speaker": "Abed",
@@ -1315,23 +1320,22 @@
     },
     {
       "index": 42,
-      "text": "But they're my friends. I'm your only friend! No. Hah hah hah! No! Ah hah hah hah! Noooooo!",
+      "text": "Abed has hired an Irish singer who performs 'Britta's Marryin' Jeffrey Winger' in real time",
       "characters": [
-        "Chang",
-        "Mirror Chang"
+        "Abed"
       ],
       "joke_types": [
-        "escalation",
-        "character_comedy"
+        "absurdist",
+        "meta_self_referential"
       ],
-      "setup": "Chang's internal conflict about the study group",
-      "punchline": "His descent into maniacal laughter and denial",
-      "craft_total": 6.9,
-      "impact_score": 7.17,
-      "quotability": 5.5,
-      "rewatch_bonus": 0,
+      "setup": "Abed wants a 'wedding episode' and is treating the Jeff/Britta situation as a TV narrative",
+      "punchline": "He has pre-hired an Irish folk singer who performs a literal wedding episode song about events happening in real time \u2014 the song lyrics track the unfolding situation",
+      "craft_total": 8.5,
+      "impact_score": 9.0,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
       "is_callback": 0,
-      "explanation": "Good character development showing Chang's psychological break. Sets up his antagonist arc for the season.",
+      "explanation": "One of the episode's standout jokes. Abed's TV-brain has led him to hire an Irish folk singer to provide live musical commentary on his friends' lives \u2014 a fully realized absurdist premise that's specific to Abed's character. The singer narrating events in song as they unfold ('she has a ring around her finger-errr / and Abed hired an Irish singer') is meta, funny, and logistically absurd. The 'and Abed hired an Irish singer' self-reference within the song is exceptional.",
       "dialogue": [
         {
           "speaker": "Chang",
@@ -1357,23 +1361,22 @@
     },
     {
       "index": 43,
-      "text": "\u266a 'cause boobies we gotta \u266a \u266a order is primate, family hominidae \u266a \u266a but genus is...\u266a Homo. \u266a But you know you're into me \u266a",
+      "text": "Abed: 'A wedding. Episode.' \u2014 when asked 'What the hell is this?'",
       "characters": [
-        "Troy",
         "Abed"
       ],
       "joke_types": [
-        "wordplay_pun",
-        "character_comedy"
+        "meta_self_referential",
+        "deadpan_understatement"
       ],
-      "setup": "Educational song about human classification",
-      "punchline": "Sexual innuendo woven into scientific taxonomy",
-      "craft_total": 7.15,
-      "impact_score": 6.75,
-      "quotability": 7.0,
-      "rewatch_bonus": 0,
-      "is_callback": 0,
-      "explanation": "Clever integration of educational content with comedy. The 'boobies' and 'homo' jokes are juvenile but work in context.",
+      "setup": "Everyone is bewildered by the Irish singer; Jeff demands an explanation",
+      "punchline": "Abed's two-word explanation \u2014 'A wedding. Episode.' \u2014 treats the genre format as a self-evident answer",
+      "craft_total": 7.93,
+      "impact_score": 7.75,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Maximum economy. Two words explain everything about Abed's worldview and the situation. 'Episode' as a noun describing a real life event is Abed's defining character tic expressed in its most compressed form. The period-pause between 'Wedding' and 'Episode' adds the perfect deadpan beat.",
       "dialogue": [
         {
           "speaker": "Troy",
@@ -1404,6 +1407,525 @@
           "line": "Once you've mastered the fundamentals, you can really climax your understanding."
         }
       ]
+    },
+    {
+      "index": 44,
+      "text": "Abed: 'Cold feet? Talk it over with your best man George Clooney.' \u2014 presenting a George Clooney impersonator",
+      "characters": [
+        "Abed"
+      ],
+      "joke_types": [
+        "absurdist",
+        "character_comedy"
+      ],
+      "setup": "Jeff is objecting to the fake wedding scenario; Abed is trying to maintain the wedding episode structure",
+      "punchline": "Abed has also hired a George Clooney impersonator as Jeff's best man \u2014 escalating his elaborate wedding-episode preparation",
+      "craft_total": 7.68,
+      "impact_score": 7.67,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "The escalation of Abed's wedding-episode preparation continues \u2014 first an Irish singer, now a Clooney impersonator. The choice of George Clooney is funny because it implies Abed sees Jeff as George Clooney-level charming. 'He's a George Clooney impersonator, but still, razzle dazzle, right?' adds a perfect Abed rationalization."
+    },
+    {
+      "index": 45,
+      "text": "Jeff: 'That's inappropriate. I'm assuming in the mouth.' \u2014 Abed's response to learning Jeff kissed Annie",
+      "characters": [
+        "Abed"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "character_comedy"
+      ],
+      "setup": "News breaks that Jeff kissed Annie; the group is processing it",
+      "punchline": "Abed's clinical addition of 'I'm assuming in the mouth' \u2014 treating the romantic nature of a kiss as anatomical data to be confirmed",
+      "craft_total": 7.12,
+      "impact_score": 7.33,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Classic Abed joke. His detachment from social norms means he processes 'kissed Annie' as requiring anatomical specificity. 'I'm assuming in the mouth' is both logical (from Abed's perspective) and completely wrong in every social register. Highly quotable, economical, and character-perfect."
+    },
+    {
+      "index": 46,
+      "text": "Jeff: 'Since you have clearly failed to grasp the central insipid metaphor of those Twilight books you devour, let me explain it to you: Men are monsters who crave young flesh. The end!'",
+      "characters": [
+        "Jeff"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "dark_subversive"
+      ],
+      "setup": "Shirley is expressing moral outrage about Jeff kissing a 'teenager' after supposedly loving Britta",
+      "punchline": "Jeff weaponizes Twilight's metaphor against Shirley \u2014 'men are monsters who crave young flesh' as a sincere literary interpretation that doubles as his own self-defense",
+      "craft_total": 7.78,
+      "impact_score": 7.83,
+      "quotability": 8.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Exceptional Jeff Winger speech moment. The structure is perfect \u2014 he takes Shirley's cultural reference (Twilight), 'explains' it as validation for his own behavior, and frames it as her literary failure. 'The end!' as a capper is perfect. This is Jeff at his most charming-terrible, and the joke works because it's both absurdly wrong AND has a weird internal logic. Highly quotable."
+    },
+    {
+      "index": 47,
+      "text": "Britta: 'At least we have the decency to be ashamed of it and keep it a secret instead of publicly blurting I love you to everyone who sleeps with us!'",
+      "characters": [
+        "Britta"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jeff is attacking Shirley for reading Twilight; Britta redirects to attack Jeff's hypocrisy about keeping secrets vs. public declarations",
+      "punchline": "'Everyone who sleeps with us' \u2014 Britta's grammar makes it ambiguous whether she means Jeff's partners or a broader 'we' that includes herself, inadvertently including her own situation",
+      "craft_total": 7.38,
+      "impact_score": 7.5,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Good counter-attack from Britta that exposes the absurdity of their situation. The 'everyone who sleeps with us' construction is funny in its inadvertent self-inclusion. Solid mid-argument comedy."
+    },
+    {
+      "index": 48,
+      "text": "Jeff: 'Oh, please! I never loved you.' Britta: 'Aha! I win! I win! I win! In your face!'",
+      "characters": [
+        "Jeff",
+        "Britta"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jeff and Britta are in the middle of a full group argument about their relationship",
+      "punchline": "Britta celebrates Jeff's denial of love as a VICTORY \u2014 confirming that neither of them was ever sincere and the entire relationship has been a competition",
+      "craft_total": 7.78,
+      "impact_score": 8.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best laugh moments. 'I win! I win! I win! In your face!' as a response to 'I never loved you' completely reveals the game they've been playing \u2014 and makes the audience realize they knew it all along. The triple 'I win' with 'in your face' is perfectly childish and character-true for both Britta (competitive) and Jeff (willing to admit the manipulation). Great structural payoff."
+    },
+    {
+      "index": 49,
+      "text": "Britta: 'I better not smile at that wall outlet, or you'll fry your tongue off!'",
+      "characters": [
+        "Britta"
+      ],
+      "joke_types": [
+        "setup_punchline",
+        "character_comedy"
+      ],
+      "setup": "Britta is accusing Annie of copying everything she does (her men)",
+      "punchline": "The wall outlet threat \u2014 implying Annie's smile is so desperate to replicate Britta that she'll eventually electrocute herself \u2014 is absurdist escalation with a specific visual",
+      "craft_total": 7.35,
+      "impact_score": 7.25,
+      "quotability": 7.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Inventive insult \u2014 the wall outlet metaphor is unexpected and genuinely funny. 'Fry your tongue off' as the consequence of imitation-smiling is absurdly specific. This level of creative insult construction is a Community signature."
+    },
+    {
+      "index": 50,
+      "text": "Troy: 'Way to hog all the girls, Jeff. You know, when there's three sprinkle donuts, you don't eat one and then lick another!'",
+      "characters": [
+        "Troy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Jeff has romantically entangled himself with Britta, Annie, and arguably Shirley's affections",
+      "punchline": "Troy's donut metaphor \u2014 eating one and licking another \u2014 perfectly captures Jeff's behavior with the precision of a 10-year-old's moral framework applied to adult romantic life",
+      "craft_total": 8.01,
+      "impact_score": 8.33,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes and among the best Troy jokes in the series. The donut metaphor is both specific ('sprinkle donuts') and perfectly illustrative \u2014 'eat one and lick another' captures exactly what Jeff did with Britta and Annie. The genius is that Troy's food-morality framework is so innocent and so accurate simultaneously. Extremely quotable. The 'three sprinkle donuts' implies a third (Shirley?) which adds another layer."
+    },
+    {
+      "index": 51,
+      "text": "Britta: 'Anyone object to us being referred to as donuts? No one?' \u2014 a beat of dark self-awareness",
+      "characters": [
+        "Britta"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "deadpan_understatement"
+      ],
+      "setup": "Troy has just compared the women to sprinkle donuts Jeff is sampling",
+      "punchline": "Britta notes the dehumanizing nature of the metaphor and no one objects \u2014 including Britta herself, who accepts it",
+      "craft_total": 7.51,
+      "impact_score": 7.17,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect button on Troy's donut joke. Britta calling out the objectification while simultaneously not objecting is both feminist awareness and self-aware resignation \u2014 a very Britta combination. The 'No one?' hanging in the air is excellent comedic timing."
+    },
+    {
+      "index": 52,
+      "text": "Jeff: 'I'm sorry we can't all be as honorable as you, Troy, and post Pierce quotes all day on Twitter.'",
+      "characters": [
+        "Jeff"
+      ],
+      "joke_types": [
+        "irony_sarcasm",
+        "running_gag"
+      ],
+      "setup": "Jeff is trying to deflect from the group's criticism of him",
+      "punchline": "Jeff redirects to Troy's OldWhiteManSays account \u2014 using it as a low blow that both exposes Troy and continues the episode's running Twitter gag",
+      "craft_total": 6.53,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Functional callback that moves the OldWhiteManSays plot forward. The reveal is coming \u2014 this is the setup. Jeff's attempt to deflect with this information is characteristically calculated."
+    },
+    {
+      "index": 53,
+      "text": "Pierce: 'Wait! I'm OldWhiteManSays? No wonder he says everything I'm thinking. You bastard.'",
+      "characters": [
+        "Pierce"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Pierce has been gleefully following OldWhiteManSays all episode; now he discovers he IS the subject",
+      "punchline": "Pierce's 'No wonder he says everything I'm thinking' \u2014 the delight of recognizing himself before transitioning to 'You bastard' \u2014 captures his narcissistic confusion perfectly",
+      "craft_total": 8.0,
+      "impact_score": 8.33,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent payoff for the episode's running OldWhiteManSays joke. The beat structure is perfect: (1) surprised recognition, (2) pleased recognition ('no wonder he says everything I'm thinking'), (3) delayed outrage ('You bastard'). Pierce's narcissism means he's flattered before he's angry, which is funnier than immediate anger. Well-structured payoff to a well-built running gag."
+    },
+    {
+      "index": 54,
+      "text": "Pierce: 'He thinks all dogs are boys and all cats are girls.' Troy: 'There's no way to disprove that. Have you ever seen a cat penis?'",
+      "characters": [
+        "Pierce",
+        "Troy"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "absurdist"
+      ],
+      "setup": "Pierce threatens to expose Troy's private beliefs as revenge for OldWhiteManSays",
+      "punchline": "Troy's 'There's no way to disprove that. Have you ever seen a cat penis?' \u2014 delivered with earnest logical conviction \u2014 reveals Troy's private animal-gender theory as simultaneously absurd and defensible on its own terms",
+      "craft_total": 8.37,
+      "impact_score": 8.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best jokes. 'Have you ever seen a cat penis?' is an extraordinary line \u2014 it's simultaneously a genuine logical argument (you can't disprove what you haven't observed), a window into Troy's private cosmology, and a completely unexpected escalation. The specificity of 'cat penis' as the epistemological foundation is what makes this legendary. Troy delivers it with total sincerity, which is essential."
+    },
+    {
+      "index": 55,
+      "text": "Jeff to Abed: 'You know, it's very \"season one.\"'",
+      "characters": [
+        "Jeff"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "irony_sarcasm"
+      ],
+      "setup": "Abed's 'I can't tell life from TV' gimmick has been criticized by Jeff; Jeff dismisses the entire behavior pattern",
+      "punchline": "'It's very \"season one\"' \u2014 Jeff uses TV criticism language to dismiss Abed's characterization, which is both a dig at Abed AND an in-show acknowledgment that the show has entered Season 2",
+      "craft_total": 8.38,
+      "impact_score": 8.5,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of Community's most self-aware lines ever. Jeff dismisses Abed's meta-awareness using the language of television criticism \u2014 'it's very season one' \u2014 which is itself deeply meta. The line works on three levels: (1) as a character insult, (2) as genuine show self-critique, and (3) as a Season 2 premiere announcement. Five words, extraordinary density. This is the kind of writing Community is famous for."
+    },
+    {
+      "index": 56,
+      "text": "Abed: 'I can tell life from TV, Jeff. TV makes sense and has structure, logic, rules. And likeable leading men. In life, we have this. We have you.'",
+      "characters": [
+        "Abed"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "meta_self_referential"
+      ],
+      "setup": "Jeff has criticized Abed for not being able to tell life from TV",
+      "punchline": "Abed's rebuttal argues TV is BETTER than life because it has structure \u2014 and positions Jeff as the chaotic, unlikeable element that wouldn't survive network TV notes",
+      "craft_total": 8.66,
+      "impact_score": 8.83,
+      "quotability": 9.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's crown jewels and one of the best Abed speeches in the series. The structure is perfect: Abed concedes the distinction between life and TV, then immediately argues TV is superior \u2014 and the indictment of Jeff ('unlikeable leading men... we have you') is both a character diss and a genuinely interesting critique. The pause between 'we have this' and 'we have you' is a devastating comedic beat. This is Abed at maximum character expression."
+    },
+    {
+      "index": 57,
+      "text": "George Clooney impersonator: 'I'm on the clock for another hour if you want me to do some Batman lines.'",
+      "characters": [
+        "George Clooney Impersonator"
+      ],
+      "joke_types": [
+        "absurdist",
+        "deadpan_understatement"
+      ],
+      "setup": "The wedding episode has collapsed; everyone is in an emotional low point after the group argument",
+      "punchline": "The Clooney impersonator, unaware the scenario has ended, offers to pivot to Batman lines \u2014 Clooney played Batman, so it's accurate, but the offer in this emotional context is surreal",
+      "craft_total": 7.63,
+      "impact_score": 7.67,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Perfect button on the wedding-episode absurdity. The impersonator maintaining his professional composure and offering a service extension while everyone around him is in emotional crisis is a great background character joke. The Batman connection (Clooney played Batman in Batman & Robin) is also a quick pop culture gag that rewards awareness."
+    },
+    {
+      "index": 58,
+      "text": "Chang to Jeff: 'Come on. I know you and Britta did it. Isn't the whole reason you got together with those people because you wanted to bang the blond? And now I hear that you frenched the brunette. What more could you have gotten out of that group?'",
+      "characters": [
+        "Chang",
+        "Jeff"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Chang, now a fellow student, sits with Jeff after the group has fractured",
+      "punchline": "Chang's reductive analysis of Jeff's motivations \u2014 entirely transactional and sexual \u2014 is delivered as obvious wisdom, and uncomfortably captures Jeff's initial Season 1 premise",
+      "craft_total": 6.7,
+      "impact_score": 6.17,
+      "quotability": 6.0,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Chang as the devil on Jeff's shoulder is a good deployment. The joke works because Chang's cynical reading is partially accurate \u2014 Jeff DID assemble the study group partly to pursue Britta. The 'what more could you have gotten' is darkly funny because it treats friendship as a completed transaction."
+    },
+    {
+      "index": 59,
+      "text": "Professor Bauer: 'I don't know, Mr. Winger. The last time I called on you, I kinda got what the maku-maku call... dirt roaded.'",
+      "characters": [
+        "Professor Bauer"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "deadpan_understatement"
+      ],
+      "setup": "Jeff volunteers to present his tribe's answer; the professor calls on him",
+      "punchline": "The professor references being 'dirt roaded' \u2014 a term she attributes to an Amazonian tribe \u2014 as her description of what happened when she last called on Jeff (he declared love to Britta, triggering chaos)",
+      "craft_total": 7.48,
+      "impact_score": 7.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent callback + character joke. The professor inventing/adopting tribal vocabulary for a modern social experience ('dirt roaded') is funny on its own, and it perfectly characterizes Bauer's anthropological framing of everything. 'Using it!' from the student is a good button \u2014 someone in the class is immediately adopting the term."
+    },
+    {
+      "index": 60,
+      "text": "Student: 'Using it!' \u2014 immediately after Professor Bauer coins 'dirt roaded'",
+      "characters": [
+        "Student"
+      ],
+      "joke_types": [
+        "reaction_beat",
+        "character_comedy"
+      ],
+      "setup": "Professor Bauer uses the term 'dirt roaded' attributed to the maku-maku tribe",
+      "punchline": "A student immediately claims the new slang for personal use \u2014 'Using it!' \u2014 treating anthropological vocabulary as a vocab acquisition opportunity",
+      "craft_total": 6.1,
+      "impact_score": 5.75,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Quick background gag \u2014 a student treating Bauer's invented tribal slang as new cool vocabulary. It's a fast, efficient laugh and reinforces the classroom world-building. Not exceptional on its own."
+    },
+    {
+      "index": 61,
+      "text": "Jeff gives his answer about 'respect' as the most important tool. Chang responds: 'Ha! Gaaaa-yyy!'",
+      "characters": [
+        "Chang"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "irony_sarcasm"
+      ],
+      "setup": "Jeff makes a sincere, heartfelt speech about respect as the key tool for tribal survival",
+      "punchline": "Chang's 'Gaaaayyy!' \u2014 his reflexive dismissal of emotional sincerity \u2014 undercuts the earnest moment with adolescent homophobia as a comic deflation",
+      "craft_total": 6.38,
+      "impact_score": 6.5,
+      "quotability": 5.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Chang's 'Gay!' reaction is a reliable but dated deflation gag. It works here because Chang's character is defined by toxic arrested development, and it undercuts the episode's earnest moment in a way that's both funny and self-aware (the show immediately follows with Jeff's speech continuing unperturbed). Not original but appropriately deployed."
+    },
+    {
+      "index": 62,
+      "text": "Chang: 'Ha. Gay fact.' \u2014 after Jeff says 'that's a fact' at the end of his respect speech",
+      "characters": [
+        "Chang"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "running_gag"
+      ],
+      "setup": "Jeff closes his respect speech with 'and that's a fact'",
+      "punchline": "'Ha. Gay fact.' \u2014 Chang upgrades his dismissal to a compound gay slur/dismissal, adding 'fact' to his taxonomy of gay things",
+      "craft_total": 6.54,
+      "impact_score": 6.25,
+      "quotability": 5.0,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Slight diminishing returns from the first 'Gay' joke, but 'Gay fact' has its own absurdist construction that makes it funnier than a straight repeat. The taxonomy-expansion (Gay... Gay fact...) hints at Chang's particular madness."
+    },
+    {
+      "index": 63,
+      "text": "Professor Bauer reveals the 'correct' answer: combine all nine tools into a super-weapon and says 'I'm gonna use this to attack you, and you use respect to defend yourself.'",
+      "characters": [
+        "Professor Bauer"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "setup_punchline"
+      ],
+      "setup": "Professor Bauer praises Jeff's 'respect' answer before revealing her own answer \u2014 a combined super-weapon",
+      "punchline": "She then literally attacks Jeff with the weapon \u2014 the anthropology lesson becomes a physical assault",
+      "craft_total": 7.94,
+      "impact_score": 8.5,
+      "quotability": 7.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "One of the episode's best physical comedy moments. The setup is a typical Socratic reveal \u2014 but Bauer's 'correct' answer turns the classroom into a combat scenario. 'Use respect to defend yourself' as actual instruction during a physical attack is absurdist genius. Betty White attacking a student with a makeshift super-weapon is a perfect visual comedy escalation."
+    },
+    {
+      "index": 64,
+      "text": "Professor Bauer: 'That's why you fail!' \u2014 after Jeff says 'I respect you'",
+      "characters": [
+        "Professor Bauer"
+      ],
+      "joke_types": [
+        "deadpan_understatement",
+        "dark_subversive"
+      ],
+      "setup": "Jeff uses 'respect' as instructed to defend against Bauer's attack",
+      "punchline": "Bauer announces 'That's why you fail' \u2014 in the anthropological worldview, respect is the losing strategy against armed aggression",
+      "craft_total": 8.0,
+      "impact_score": 8.25,
+      "quotability": 8.0,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Four words that deliver an entire subversive worldview. 'That's why you fail' applied to 'I respect you' in a physical altercation completes the episode's thematic joke about the gap between idealism and survival. Bauer's deadpan delivery of this line makes it land as both funny and genuinely unsettling. Exceptional economy."
+    },
+    {
+      "index": 65,
+      "text": "Jeff wakes up and asks 'Did someone throw urine in my face?' Shirley: 'Oh. Sometimes I surprise myself under pressure.'",
+      "characters": [
+        "Jeff",
+        "Shirley"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "callback"
+      ],
+      "setup": "Jeff is disoriented after being knocked out; the group is relieved he's okay",
+      "punchline": "Shirley casually admits she threw urine on Jeff \u2014 and her reaction is mild surprise at her own resourcefulness, using the professor's urine thermos",
+      "craft_total": 7.81,
+      "impact_score": 7.83,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 1,
+      "explanation": "Excellent callback payoff. The professor's urine thermos established early in the episode pays off here \u2014 Shirley used it in a crisis, and her reaction ('Sometimes I surprise myself under pressure') is perfectly in character. The gentle Christian pride in an act of urine-throwing is a quintessential Shirley joke."
+    },
+    {
+      "index": 66,
+      "text": "Pierce: 'How 'bout OldWhiteManSays... the TV show? No. Who would watch that?'",
+      "characters": [
+        "Pierce"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "meta_self_referential"
+      ],
+      "setup": "Troy says he's deleting the OldWhiteManSays Twitter account; Pierce learns it has 600,000 followers",
+      "punchline": "Pierce immediately pitches 'OldWhiteManSays the TV show' \u2014 then self-deflates with 'No. Who would watch that?' \u2014 not understanding his own commercial appeal while also accurately self-assessing",
+      "craft_total": 7.38,
+      "impact_score": 7.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 1,
+      "explanation": "Good final beat on the OldWhiteManSays arc. Pierce's instant pivot to monetization followed by self-doubt is characterful. The meta-layer \u2014 a show about an old white man saying things, inside a show featuring an old white man saying things \u2014 is worth noting."
+    },
+    {
+      "index": 67,
+      "text": "Chang: 'Is there any room in this pocket for a little spare Chang?' \u2014 asking to join the study group",
+      "characters": [
+        "Chang"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "wordplay_pun"
+      ],
+      "setup": "Chang finally admits he joined anthropology to be part of the study group and asks to join",
+      "punchline": "'Spare Chang' \u2014 a pun on 'spare change' that also frames himself as a small or diminished addition ('spare')",
+      "craft_total": 7.21,
+      "impact_score": 7.0,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "Chang's self-name-punning is a reliable character tic. 'Spare Chang' works because it's both a pun AND emotionally accurate \u2014 he is presenting himself as a small, optional addition to something larger. The simultaneous self-deprecation and self-branding is well-calibrated Chang."
+    },
+    {
+      "index": 68,
+      "text": "Chang asks to join the study group formally: 'Is there any room in this pocket for a little spare Chang?'",
+      "characters": [
+        "Chang"
+      ],
+      "joke_types": [
+        "character_comedy",
+        "setup_punchline"
+      ],
+      "setup": "Chang confesses he took anthropology to be near the study group and finally asks directly",
+      "punchline": "'A little spare Chang' \u2014 the diminutive self-description combined with the pocket metaphor is simultaneously pathetic and endearing",
+      "craft_total": 7.12,
+      "impact_score": 6.75,
+      "quotability": 6.5,
+      "rewatch_bonus": 0,
+      "is_callback": 0,
+      "explanation": "'Little spare Chang' is a good, odd self-description. The pocket metaphor is unexpected. Character-appropriate in its mix of desperation and showmanship."
+    },
+    {
+      "index": 69,
+      "text": "Chang's 'friend' (possibly imaginary/delusional): 'They destroyed your life! How much time before we take revenge?... I'm your only friend!'",
+      "characters": [
+        "Chang",
+        "Chang's Friend"
+      ],
+      "joke_types": [
+        "dark_subversive",
+        "absurdist"
+      ],
+      "setup": "Chang talks to someone off-screen after the group tells him to wait; the voice advocates for revenge",
+      "punchline": "Chang's companion is apparently either an imaginary friend or a sinister figure \u2014 'I'm your only friend!' delivered with ominous laughter suggests Chang's mental state is more unstable than his comedic persona indicated",
+      "craft_total": 7.9,
+      "impact_score": 8.17,
+      "quotability": 6.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "Strong season-premiere tag that plants a dark seed for Chang's Season 2 arc. The escalating laughter and 'NO! Hah hah hah! Noooooo!' reveals that Chang may have a companion/alter ego pushing him toward villainy. It's funny as a comedic escalation but also genuinely unsettling as a character tease."
+    },
+    {
+      "index": 70,
+      "text": "End tag: The study group sings a parody of Toto's 'Africa' rewritten as an anthropology taxonomy song \u2014 '\u266a 'cause boobies we gotta / order is primate, family hominidae / but genius is... Homo \u266a'",
+      "characters": [
+        "Study Group",
+        "Professor Bauer"
+      ],
+      "joke_types": [
+        "meta_self_referential",
+        "wordplay_pun"
+      ],
+      "setup": "Episode closes with what appears to be a musical tag performed as an in-class exercise",
+      "punchline": "The 'Africa' melody becomes a biological classification song, with Professor Bauer supplying the taxonomic terms ('Mammalia,' 'Homo') as call-and-response \u2014 the earnest execution of an absurd premise is the joke",
+      "craft_total": 7.7,
+      "impact_score": 8.0,
+      "quotability": 7.5,
+      "rewatch_bonus": 1,
+      "is_callback": 0,
+      "explanation": "A delightful end tag. Toto's 'Africa' rewritten as a Linnean classification exercise is a good concept joke \u2014 the song's earnest bombast maps well onto the earnestness of scientific taxonomy. 'But genius is... Homo' with the knowing pause is a clever double-meaning setup. The call-and-response with Bauer is a good use of her character. Strong closing moment."
     }
   ],
   "air_date": "2010-09-23",
