@@ -7,7 +7,7 @@ import path from 'path';
 export const runtime = 'nodejs';
 
 interface CompactJoke { i: number; t: string; c: string[]; jt: string[]; cr: number; im: number; sn: string; ss: string; s: number; e: number; et: string; mv?: string }
-interface Indexed extends CompactJoke { hay: string }
+interface Indexed extends CompactJoke { hay: string; txt: string }
 interface Suggestion { label: string; type: 'character' | 'episode' | 'movie'; count: number; slug: string; href?: string }
 
 let INDEX: Indexed[] | null = null;
@@ -39,7 +39,7 @@ function load() {
       movieSuggest.push({ label: `${short} (${m.year})`, type: 'movie', count: m.total_jokes, slug: m.slug, href: `/movies/${m.slug}` });
     }
   } catch { /* no movies published */ }
-  INDEX = data.map(j => ({ ...j, hay: norm(`${j.t} ${j.c.join(' ')} ${j.sn} ${j.et}`) }));
+  INDEX = data.map(j => ({ ...j, hay: norm(`${j.t} ${j.c.join(' ')} ${j.sn} ${j.et}`), txt: norm(j.t) }));
   const items = new Map<string, Suggestion>();
   const types = new Set<string>();
   for (const j of data) {
@@ -83,7 +83,15 @@ export function GET(req: NextRequest) {
     list = list.filter(j => tokens.every(t => j.hay.includes(t)));
     if (sort === 'relevance') {
       const res = tokens.map(t => new RegExp(`\\b${t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`));
-      const score = (j: Indexed) => (j.hay.includes(nq) ? 1000 : 0) + res.reduce((s, re) => s + (re.test(j.hay) ? 1 : 0), 0);
+      // The joke's own words outrank everything else: an exact phrase in the
+      // line first, then every word in the line, and only then matches that
+      // come from the episode title or speaker ("serenity now" used to return
+      // every joke from "The Serenity Now", led by "Hoochie mama").
+      const score = (j: Indexed) =>
+        (j.txt.includes(nq) ? 3000 : 0) +
+        (tokens.every(t => j.txt.includes(t)) ? 1000 : 0) +
+        (j.hay.includes(nq) ? 100 : 0) +
+        res.reduce((s, re) => s + (re.test(j.txt) ? 2 : re.test(j.hay) ? 1 : 0), 0);
       list = list.map(j => ({ j, s: score(j) }))
         .sort((a, b) => b.s - a.s || (b.j.cr + b.j.im) - (a.j.cr + a.j.im))
         .map(x => x.j);

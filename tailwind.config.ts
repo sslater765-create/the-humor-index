@@ -19,7 +19,7 @@ const config: Config = {
           border:     '#2D2D2D',
           'text-primary':   '#F5F5F5',
           'text-secondary': '#A0A0A0',
-          'text-muted':     '#666666',
+          'text-muted':     '#8A8A8A',  // was #666666 (3.3:1); now at least 4.6:1 on every background
           blue:   '#378ADD',
           teal:   '#1D9E75',
           coral:  '#D85A30',

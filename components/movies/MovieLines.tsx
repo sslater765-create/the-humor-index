@@ -23,7 +23,7 @@ export default async function MovieLines({ limit = 25, title = 'The best movie l
     <section className="mt-14">
       <div className="flex items-end justify-between gap-4 mb-4">
         <div>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">Movies</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Movies</p>
           <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary">{title}</h2>
           {subtitle && <p className="text-sm text-brand-text-secondary mt-1">{subtitle}</p>}
         </div>

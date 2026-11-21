@@ -75,17 +75,17 @@ export default function CharacterBubbleChart({ characters, showName }: Props) {
       },
       scales: {
         x: {
-          title: { display: true, text: 'Avg Craft Score', color: '#666666', font: { size: 11 } },
+          title: { display: true, text: 'Avg Craft Score', color: '#8A8A8A', font: { size: 11 } },
           min: Math.floor(Math.min(...sorted.map(c => c.avg_craft)) * 10 - 2) / 10,
           max: Math.ceil(Math.max(...sorted.map(c => c.avg_craft)) * 10 + 2) / 10,
-          ticks: { color: '#666666', font: { size: 10 }, stepSize: 0.2 },
+          ticks: { color: '#8A8A8A', font: { size: 10 }, stepSize: 0.2 },
           grid: { color: 'rgba(255,255,255,0.05)' },
         },
         y: {
-          title: { display: true, text: 'Avg Impact Score', color: '#666666', font: { size: 11 } },
+          title: { display: true, text: 'Avg Impact Score', color: '#8A8A8A', font: { size: 11 } },
           min: Math.floor(Math.min(...sorted.map(c => c.avg_impact)) * 10 - 2) / 10,
           max: Math.ceil(Math.max(...sorted.map(c => c.avg_impact)) * 10 + 2) / 10,
-          ticks: { color: '#666666', font: { size: 10 }, stepSize: 0.2 },
+          ticks: { color: '#8A8A8A', font: { size: 10 }, stepSize: 0.2 },
           grid: { color: 'rgba(255,255,255,0.05)' },
         },
       },

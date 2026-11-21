@@ -123,7 +123,7 @@ export default async function ExploreHub() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={`https://image.tmdb.org/t/p/w1280${hero.backdrop_path}`} alt="" className="w-full h-full object-cover opacity-50" />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/60 to-transparent" />
-                <span className="absolute top-5 left-6 text-[10px] uppercase tracking-[0.25em] text-brand-gold">
+                <span className="absolute top-5 left-6 text-[11px] uppercase tracking-[0.25em] text-brand-gold">
                   Most dramatic cut on the site
                 </span>
               </div>
@@ -159,7 +159,7 @@ export default async function ExploreHub() {
 
         {/* Section header */}
         <div className="pt-2">
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Every Show, Recut</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Every Show, Recut</p>
           <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
             Build your own cut.
           </h2>
@@ -179,7 +179,7 @@ export default async function ExploreHub() {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={`https://image.tmdb.org/t/p/w780${t.backdrop_path}`} alt="" className="w-full h-full object-cover opacity-40 group-hover:opacity-55 transition-opacity" />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/50 to-transparent" />
-                    <span className="absolute top-3 right-4 font-serif italic text-xl text-brand-gold drop-shadow-md">
+                    <span className="absolute top-3 right-4 font-mono text-lg text-brand-gold drop-shadow-md">
                       {formatIndex(t.humor_index)}
                     </span>
                   </div>
@@ -189,7 +189,7 @@ export default async function ExploreHub() {
                     {t.name}
                   </h3>
                   <p className="text-sm text-brand-text-secondary mb-3 leading-relaxed">{t.line}</p>
-                  <span className="inline-block text-[10px] uppercase tracking-widest text-brand-gold">
+                  <span className="inline-block text-[11px] uppercase tracking-widest text-brand-gold">
                     Open the explorer →
                   </span>
                 </div>

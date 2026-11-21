@@ -70,11 +70,11 @@ export default function JokeTypesCompareChart({ showAName, showBName, distA, dis
       },
       scales: {
         x: {
-          ticks: { color: '#666666', font: { size: 9 }, maxRotation: 40 },
+          ticks: { color: '#8A8A8A', font: { size: 9 }, maxRotation: 40 },
           grid: { display: false },
         },
         y: {
-          ticks: { color: '#666666', font: { size: 10 }, callback: (v: any) => `${v}%` },
+          ticks: { color: '#8A8A8A', font: { size: 10 }, callback: (v: any) => `${v}%` },
           grid: { color: 'rgba(255,255,255,0.05)' },
         },
       },

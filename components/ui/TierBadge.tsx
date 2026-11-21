@@ -28,7 +28,7 @@ export default function TierBadge({
   const uncertain = tierIsUncertain(score ?? 0, ciLow, ciHigh);
 
   const padding = size === 'sm' ? 'px-1.5 py-0.5' : 'px-2.5 py-1';
-  const textSize = size === 'sm' ? 'text-[10px]' : 'text-xs';
+  const textSize = size === 'sm' ? 'text-[11px]' : 'text-xs';
 
   // The CI-boundary uncertainty (formerly rendered as a trailing `~`) is still
   // disclosed in the hover title, but kept out of the visible label so the

@@ -12,7 +12,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Methodology — The Humor Index',
-    description: 'How we calculate the Humor Index: JPM, Craft, Impact, and the format adjustment.',
+    description: 'How we calculate the Humor Index: JPM, Craft, Impact, and why there is no format adjustment.',
     images: ['/og-image.png'],
   },
 };
@@ -41,15 +41,15 @@ export default async function MethodologyPage() {
           <div className="grid grid-cols-3 gap-4 max-w-2xl">
             <div>
               <p className="font-serif italic text-3xl sm:text-4xl text-brand-gold leading-none">25<span className="text-2xl">%</span></p>
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">Density</p>
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1">Density</p>
             </div>
             <div>
               <p className="font-serif italic text-3xl sm:text-4xl text-brand-blue leading-none">40<span className="text-2xl">%</span></p>
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">Craft</p>
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1">Craft</p>
             </div>
             <div>
               <p className="font-serif italic text-3xl sm:text-4xl text-emerald-400 leading-none">35<span className="text-2xl">%</span></p>
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">Impact</p>
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1">Impact</p>
             </div>
           </div>
         </div>
@@ -57,9 +57,32 @@ export default async function MethodologyPage() {
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 space-y-16">
 
+        {/* Model card */}
+        <section id="model-card">
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Model card</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">What scores the jokes</h2>
+          <div className="divide-y divide-brand-border border border-brand-border rounded-xl overflow-hidden text-sm">
+            {[
+              ['Model', "Anthropic's Claude Sonnet 4.6 (since June 15, 2026; Claude Sonnet 4 before that)."],
+              ['Runs', 'Three independent runs per episode or 22-minute movie reel, averaged. Empty or malformed runs are refused and rerun.'],
+              ['What it sees', "The episode's subtitle transcript, the show's name and its character list. It does not see video, hear delivery or see audience data."],
+              ['What it outputs', 'Every joke it finds, with speaker, joke type, five craft sub-scores, impact, quotability and a one-line explanation.'],
+              ['Measured reliability', 'Single run: ICC 0.28 (poor) on a 30-episode retest. The 3-run average has not been re-measured yet; we will publish it.'],
+              ['Human validation', 'No formal study yet. The Test your taste page (/agree) shows a live tally of how often readers pick the same joke the model scored higher; a structured human-rater study is planned.'],
+              ['Known weak spots', 'Visual gags, delivery-driven lines, sarcasm, running gags (it sees one episode at a time), and references it does not recognize.'],
+              ['Who checks it', 'Sam reviews output, fixes data errors (wrong transcripts, speaker mix-ups) and publishes corrections on the blog.'],
+            ].map(([k, v]) => (
+              <div key={k} className="grid sm:grid-cols-[180px_1fr] gap-1 sm:gap-4 p-4">
+                <p className="text-brand-text-primary font-medium">{k}</p>
+                <p className="text-brand-text-secondary leading-relaxed">{v}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* The three pillars */}
         <section>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Formula</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Formula</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Three Pillars</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-8">
             The Humor Index is a weighted composite of three independently scored dimensions.
@@ -117,38 +140,39 @@ export default async function MethodologyPage() {
 
         {/* Craft rubric */}
         <section>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Craft Breakdown</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Craft Breakdown</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">The Craft Rubric</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-6">
-            Craft is scored 1–10 across five sub-dimensions, equally weighted. Each is assessed per joke,
-            then averaged across the episode.
+            Craft is scored 1–10 on five sub-dimensions, assessed per joke and then averaged across the
+            episode. They are weighted, not equal: originality and structure 25% each, character
+            integration 20%, economy and earned-versus-cheap 15% each.
           </p>
           <div className="divide-y divide-brand-border border border-brand-border rounded-xl overflow-hidden">
             {[
               {
-                name: 'Setup Quality',
-                desc: 'How efficiently and elegantly the premise is established. A great setup is invisible — it plants the seed without telegraphing the punchline.',
+                name: 'Originality (25%)',
+                desc: 'How fresh the joke is. A premise or turn of phrase you have heard a hundred times scores low however well it is delivered.',
                 example: '"George is a marine biologist now." (Seinfeld S5E14)',
               },
               {
-                name: 'Misdirection',
-                desc: 'The degree to which the joke leads the audience toward a false expectation before subverting it. True misdirection is earned, not cheap.',
+                name: 'Structure (25%)',
+                desc: 'Setup and punchline clarity, including misdirection: does the joke lead you one way and land somewhere you did not see coming?',
                 example: '"I am not superstitious... but I am a little stitious." (The Office)',
               },
               {
-                name: 'Subversion / Surprise',
-                desc: 'Does the punchline go somewhere unexpected? Subversion is the delta between what the audience anticipated and what actually happened.',
-                example: 'The Soup Nazi\'s final line in the episode finale.',
-              },
-              {
-                name: 'Character Fit',
-                desc: 'Could only this character have delivered this joke? High character fit means the joke reveals or reinforces something true about who the character is.',
+                name: 'Character integration (20%)',
+                desc: 'Could only this character have said it? High scores go to jokes that reveal or reinforce something true about who is speaking.',
                 example: 'Every Dwight exit from a room.',
               },
               {
-                name: 'Timing Precision',
-                desc: 'Beat length, pause placement, delivery speed. Timing is harder to score but we proxy it through editing rhythm, reaction shot positioning, and line overlap.',
-                example: 'Jim\'s camera looks. George\'s pauses before responding.',
+                name: 'Economy (15%)',
+                desc: 'No wasted words. The shortest route to the laugh scores highest.',
+                example: '"I lost it to JFK Jr." (Seinfeld S4E11)',
+              },
+              {
+                name: 'Earned vs. cheap (15%)',
+                desc: 'Was the laugh set up by story and character, or is it a lazy gag, a stock insult or shock for its own sake?',
+                example: 'A callback that pays off a setup from three episodes earlier.',
               },
             ].map((item, i) => (
               <div key={i} className="p-5">
@@ -162,7 +186,7 @@ export default async function MethodologyPage() {
 
         {/* Format adjustment */}
         <section>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Format Adjustment</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Format Adjustment</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">The Laugh Track Correction</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-6">
             Multi-camera shows with sweetened laugh tracks structurally inflate joke density —
@@ -201,7 +225,7 @@ export default async function MethodologyPage() {
 
         {/* Format policy */}
         <section>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Policy</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Policy</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Why We Don&apos;t Adjust for Format</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             An earlier version of the Humor Index silently penalized multi-cam shows (live audience, laugh track)
@@ -238,6 +262,12 @@ export default async function MethodologyPage() {
             moved Seinfeld from 83.9 → 77.8. <span className="text-brand-text-secondary">Reconciliation (May 25, 2026):</span> as
             new shows were added the live leaderboard drifted from the canonical aggregation, so we re-aggregated
             every scored show with one consistent method and added bootstrap 95% confidence intervals.
+            <span className="text-brand-text-secondary">Model change (June to November 2026):</span> we moved the scorer
+            from Claude Sonnet 4 to Claude Sonnet 4.6 and rescored show by show. The newer model rates craft and
+            impact higher, so rescored shows rose 8 to 15 points (Seinfeld 77.8 → 94.4, Friends 73.2 → 87.1); shows
+            not yet rescored are listed separately. <span className="text-brand-text-secondary">Ceiling (November 21, 2026):</span>{' '}
+            the display scale used to clamp at 100, which tied 49 episodes at a perfect score; above 98 it now bends
+            toward 100 without reaching it. No show score changed.
             Current published order ({showCount} shows): {publishedOrder}.
             30 Rock and Arrested Development pull clear at the top; the broad middle clusters inside each other&apos;s
             intervals; Friends and the single-season Freaks and Geeks sit below the pack.
@@ -246,7 +276,7 @@ export default async function MethodologyPage() {
 
         {/* Scorer noise floor (Level 2 findings) */}
         <section>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Reliability</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Reliability</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Our Scorer&apos;s Noise Floor</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             We ran a test-retest study: 30 episodes were scored twice, both in blind mode, with different random seeds.
@@ -296,7 +326,7 @@ export default async function MethodologyPage() {
 
         {/* Show-identity bias */}
         <section>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Bias</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Bias</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Show-Identity Bias: Small and Not Significant</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             We scored 99 episodes in blind mode (no show name, no character list, no description fed to the LLM) and
@@ -319,7 +349,7 @@ export default async function MethodologyPage() {
 
         {/* Bayesian credible intervals */}
         <section>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Bayesian Model</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Bayesian Model</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">What a Hierarchical Model Actually Finds</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             We fit a hierarchical Bayesian model to 15,000 jokes (5,000 per scored show) predicting joke-level impact from show, format, joke type, episode, and character. Here&apos;s what came out.
@@ -367,7 +397,7 @@ export default async function MethodologyPage() {
 
         {/* Confidence intervals & percentiles */}
         <section>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Uncertainty</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Uncertainty</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Confidence Intervals &amp; Percentiles</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             Every score on the site is a point estimate with real uncertainty. We now publish:
@@ -398,7 +428,7 @@ export default async function MethodologyPage() {
 
         {/* Comedy WAR methodology */}
         <section>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Career Value</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Career Value</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Comedy WAR (Wins Above Replacement)</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             Career WAR ranks characters by total comedic contribution relative to a
@@ -435,7 +465,7 @@ export default async function MethodologyPage() {
 
         {/* Limitations */}
         <section id="movies">
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Movies</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Movies</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">How We Score Movies</h2>
           <div className="space-y-4 text-brand-text-secondary leading-relaxed">
             <p>
@@ -456,7 +486,7 @@ export default async function MethodologyPage() {
         </section>
 
         <section>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Honesty</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Honesty</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Known Limitations</h2>
           <div className="space-y-3">
             {[
@@ -490,7 +520,7 @@ export default async function MethodologyPage() {
               },
               {
                 title: 'No audience data',
-                desc: 'We don\'t use ratings, streaming numbers, or social media sentiment in the score itself. Across 591 episodes, the Humor Index correlates with IMDb audience ratings at r = −0.005 — they measure different things.',
+                desc: 'We don\'t use ratings, streaming numbers, or social media sentiment in the score itself. Across the 1,575 episodes on our current model, the Humor Index correlates with IMDb audience ratings at r = 0.09 (it was −0.005 on 591 episodes under the earlier model): a weak relationship. They measure different things; see where they disagree most on the Index vs IMDb ranking.',
               },
               {
                 title: 'Only scripted comedy',
@@ -520,7 +550,7 @@ export default async function MethodologyPage() {
               ],
             }) }}
           />
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Glossary</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Glossary</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Key Terms, Defined</h2>
           <div className="space-y-3">
             {[

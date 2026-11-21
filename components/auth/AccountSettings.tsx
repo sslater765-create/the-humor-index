@@ -65,7 +65,7 @@ export default function AccountSettings() {
   return (
     <div className="space-y-8">
       <section>
-        <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">Signed in as</p>
+        <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-1">Signed in as</p>
         <p className="text-base text-brand-text-primary">{email}</p>
         <button onClick={signOut} className="mt-3 text-sm text-brand-gold hover:underline">
           Sign out

@@ -1,5 +1,5 @@
 import { getSiteStats } from '@/lib/siteStats';
-import { getComedyDnaFingerprints } from '@/lib/data';
+import { getComedyDnaFingerprints, getEpisodes } from '@/lib/data';
 import { normalizeFingerprints, meanFingerprint, buildWeights } from '@/lib/comedyDna';
 import { pageMeta } from '@/lib/seo';
 import MyIndex from '@/components/my/MyIndex';
@@ -23,14 +23,16 @@ export default async function MyPage() {
   // My Index rates shows you've watched; movies aren't in it yet.
   const rawFps = allFps.filter(f => !f.href);
 
-  const shows: MyShow[] = stats.leaderboard.map(s => ({
+  // "eps" = episodes we scored (clip shows dropped, hour-longs counted once),
+  // so it matches the show page rather than the aired total.
+  const shows: MyShow[] = await Promise.all(stats.leaderboard.map(async s => ({
     slug: s.slug,
     name: s.name,
     hi: s.humor_index,
     poster: s.poster_path ?? null,
-    eps: s.total_episodes ?? 0,
+    eps: await getEpisodes(s.slug).then(e => e.length).catch(() => s.total_episodes ?? 0),
     network: s.network ?? '',
-  }));
+  })));
 
   const fps = normalizeFingerprints(rawFps);
   const meanFp = meanFingerprint(fps);
@@ -39,7 +41,7 @@ export default async function MyPage() {
   return (
     <main className="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
       <header className="mb-8">
-        <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-2">Your Profile</p>
+        <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-2">Your Profile</p>
         <h1 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary mb-3">My Humor Index</h1>
         <p className="text-sm text-brand-text-secondary max-w-2xl leading-relaxed">
           Rate the shows you’ve seen — we’ll read your taste off the joke-type fingerprints behind

@@ -11,6 +11,8 @@ export const POSTS: Record<string, {
     date: '2026-11-19',
     category: 'Analysis',
     content: `
+> **Update, November 21, 2026.** Community has since been rescored and entered the ranking at 91.9, so Sunny is now twelfth of 16.
+
 It's Always Sunny in Philadelphia is the latest show through our rescore. On the earlier model it scored 79.2. On the current model it scores **87.5**, eleventh of the 15 ranked shows, a tenth of a point behind Schitt's Creek (87.6) and four tenths ahead of Friends (87.1).
 
 All 177 episodes went through three-run consensus scoring. The average episode gained 8.9 points, which is a smaller jump than most rescores (Friends gained 14.1), and 10 episodes went down, the largest drop 8.4 points. The new model found 12,932 jokes where the old one found 8,786, an increase of 47%. The background on why rescored shows move at all is in [Why Some Scores Jumped Ten Points](/blog/what-the-rescore-changed).
@@ -89,6 +91,8 @@ Six shows are still on the earlier model and listed unranked: The Simpsons, The 
     date: '2026-11-16',
     category: 'Analysis',
     content: `
+> **Update, November 21, 2026.** Since this ran, It's Always Sunny (87.5) and Community (91.9) have been rescored and moved ahead, so Friends is now thirteenth of 16. It still tells more jokes per minute than any show we rank.
+
 Friends is the latest show through our rescore, and it is off the bottom of the board. On the earlier model it scored 73.0, last of everything we had scored. On the current model it scores **87.1**, eleventh of the 14 ranked shows, between Schitt's Creek (87.6) and Broad City (86.9).
 
 The jump looks like every other rescore. All 231 scored episodes went through three-run consensus scoring, and the average episode gained 14.1 points. Only three episodes went down, none by more than 3.6. The new model also found 17,755 jokes on transcripts where the old one found 13,949, an increase of 27%. If you want the background on why rescored shows move this much, it is in [Why Some Scores Jumped Ten Points](/blog/what-the-rescore-changed).
@@ -227,6 +231,8 @@ Quotability matters to the index only at the margin. The average of an episode's
     date: '2026-10-28',
     category: 'Data Science',
     content: `
+> **Update, November 21, 2026.** We removed the cap at 100 this week, so no episode scores exactly 100 any more; the top now bends toward 100 without reaching it. The "Highest" column below is from before that change, and the note about 30 Rock's ceiling no longer applies. Every show score is unchanged.
+
 A show's Humor Index is an average, and an average hides how bumpy the ride is. So we measured the spread: the standard deviation of episode scores within each show.
 
 | Show | Episodes | Spread | Lowest | Highest |
@@ -262,10 +268,12 @@ Across 122 episodes, Parks never scores below 83.8. No other show with more than
   },
   'pilots-score-below-their-show': {
     title: "Most Pilots Score Below Their Own Show",
-    description: "Eight of thirteen pilots score below their show's episode average, by 1.6 points on the whole. Broad City's pilot is tied for its worst episode. Fleabag's scores 100.",
+    description: "Eight of thirteen pilots score below their show's episode average, by 1.6 points on the whole. Broad City's pilot is tied for its worst episode. Fleabag's is one of its best.",
     date: '2026-10-21',
     category: 'Analysis',
     content: `
+> **Update, November 21, 2026.** We removed the cap at 100 this week. Fleabag's pilot now scores 98.8 instead of 100 and still leads the second table. The other figures are from before the change.
+
 A pilot has to introduce every character and the premise before it can be funny about them. The scores show the cost. Eight of our thirteen pilots land below their own show's episode average.
 
 ## The pilots that lag
@@ -546,7 +554,7 @@ Several of these first seasons are short. The Office and Parks and Recreation ea
   },
   'parks-improved-every-season': {
     title: "Parks and Recreation Improved Every Single Season",
-    description: "Seven seasons, seven increases: 88.4, 90.4, 91.5, 92.1, 92.6, 92.8, 93.9. No other show on our board with three or more seasons does it.",
+    description: "Every season higher than the last: 88.4, 90.4, 91.5, 92.1, 92.6, 92.8, 93.9. No other show on our board with three or more seasons does it.",
     date: '2026-09-02',
     category: 'Analysis',
     content: `
@@ -1120,8 +1128,8 @@ Sometimes those overlap. Often, they don't. And the disagreements are where the 
     `,
   },
   'laugh-track-penalty': {
-    title: 'Should Laugh Tracks Be Penalized? Our Data Says Yes.',
-    description: 'Multi-camera sitcoms with sweetened laugh tracks score lower. Here is why.',
+    title: 'Retracted: Should Laugh Tracks Be Penalized?',
+    description: 'Retracted April 16, 2026. We removed the laugh-track penalty this post argued for after an audit found no real format effect.',
     date: '2026-04-10',
     category: 'Analysis',
     content: `

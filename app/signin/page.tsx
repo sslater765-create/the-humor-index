@@ -24,7 +24,7 @@ export default function SignInPage() {
       />
 
       <header className="mb-8 text-center">
-        <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-2">Your Index</p>
+        <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-2">Your Index</p>
         <h1 className="font-serif italic text-3xl text-brand-text-primary mb-3">Sign in</h1>
         <p className="text-sm text-brand-text-secondary leading-relaxed">
           Keep your taste profile, ratings, and streak in sync wherever you watch.

@@ -161,9 +161,11 @@ export default async function MatchupPage({ params }: { params: { matchup: strin
             <span className="text-brand-blue">{showB.name}</span>
           </h1>
           <p className="text-brand-text-secondary max-w-lg mx-auto">
-            {close
-              ? `A razor-thin margin separates these two comedy giants. ${winner.name} edges out ${loser.name} by just ${margin.toFixed(1)} points.`
-              : `${winner.name} takes this one convincingly, outscoring ${loser.name} by ${margin.toFixed(1)} points on the Humor Index.`
+            {margin < 1.2
+              ? `A photo finish: ${winner.name} leads ${loser.name} by ${margin.toFixed(1)} points, which is inside the scorer's margin of error. Call it a tie and settle it on the jokes below.`
+              : margin < 4
+                ? `${winner.name} edges ${loser.name} by ${margin.toFixed(1)} points: a real gap, but a small one.`
+                : `${winner.name} takes this one clearly, outscoring ${loser.name} by ${margin.toFixed(1)} points on the Humor Index.`
             }
           </p>
           <div className="mt-4">

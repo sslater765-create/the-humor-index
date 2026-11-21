@@ -153,19 +153,19 @@ export default function LeastFunnyClient({ characters }: { characters: BottomCha
                         <span className="text-brand-text-muted"> ±{c.vsCastmatesCiHalf.toFixed(2)}</span>
                       )}
                     </p>
-                    <p className="text-[10px] text-brand-text-muted">vs cast · {c.vsCastmatesEps} eps</p>
+                    <p className="text-[11px] text-brand-text-muted">vs cast · {c.vsCastmatesEps} eps</p>
                   </div>
                 )}
                 <div className="w-14 hidden sm:block">
                   <p className={`font-mono text-sm ${t.color}`}>{c.quality.toFixed(2)}</p>
-                  <p className="text-[10px] text-brand-text-muted">avg</p>
+                  <p className="text-[11px] text-brand-text-muted">avg</p>
                 </div>
                 {c.peakQuality != null && (
                   <div className="w-14 hidden sm:block">
                     <p className={`font-mono text-sm ${c.peakQuality >= 7.75 ? 'text-emerald-400' : c.peakQuality >= 7.5 ? 'text-brand-gold' : 'text-brand-text-primary'}`}>
                       {c.peakQuality.toFixed(2)}
                     </p>
-                    <p className="text-[10px] text-brand-text-muted">peak</p>
+                    <p className="text-[11px] text-brand-text-muted">peak</p>
                   </div>
                 )}
               </div>

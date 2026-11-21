@@ -46,8 +46,8 @@ export default function JokeRoulette({ pool }: { pool: RouletteJoke[] }) {
       <div aria-hidden className="pointer-events-none absolute -bottom-16 sm:-bottom-24 right-4 sm:right-10 font-serif italic text-[9rem] sm:text-[12rem] leading-none text-brand-gold/10 select-none">&rdquo;</div>
       <div className="relative">
         <div className="flex items-center justify-between gap-3 mb-4">
-          <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-brand-gold">{label}</p>
-          <p className="text-[10px] sm:text-xs text-brand-text-muted font-mono">
+          <p className="text-[11px] sm:text-xs uppercase tracking-[0.25em] text-brand-gold">{label}</p>
+          <p className="text-[11px] sm:text-xs text-brand-text-muted font-mono">
             scored <span className="text-brand-gold">{j.score.toFixed(1)}</span>/10
           </p>
         </div>

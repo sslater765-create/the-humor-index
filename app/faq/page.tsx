@@ -23,8 +23,12 @@ const faqs = [
     a: `Yes. Every episode is analyzed by AI using a structured two-phase process: first detecting every joke in the transcript, then scoring each one across multiple dimensions. The AI reads the full transcript and identifies comedic moments — dialogue jokes, physical comedy cues, reaction beats, cringe sequences, and more.`,
   },
   {
+    q: 'Which AI model scores the jokes?',
+    a: `Anthropic's Claude Sonnet 4.6. Each episode (or 22-minute movie reel) is scored three times and the results are averaged. Shows scored on an earlier model are kept off the ranking until they are rescored, because scores from different models aren't comparable.`,
+  },
+  {
     q: 'Can AI actually understand comedy?',
-    a: `It's a fair question. AI doesn't "laugh" — but it can reliably identify joke structures, setups, punchlines, callbacks, and misdirection. Our validation tests against manually-scored episodes show strong alignment on joke detection and scoring. Where AI struggles most is with purely visual gags or delivery-dependent humor, which is why we work from transcripts and apply format-based adjustments.`,
+    a: `It's a fair question. AI doesn't laugh, but it can identify joke structure: setups, punchlines, callbacks and misdirection. What we have measured so far is how consistent the model is with itself. A single scoring run is noisy (an ICC of 0.28 on a 30-episode retest), which is why every episode is now scored three times and averaged. We have not yet published a comparison against human raters; the Agree? page is where we are collecting that data, and we will publish the agreement rate. Where AI struggles most is purely visual gags and delivery, which a transcript can't carry.`,
   },
   {
     q: 'Which show currently ranks #1?',
@@ -50,7 +54,7 @@ const faqs = [
   },
   {
     q: 'Why do some shows show 0.0 scores?',
-    a: `Those shows are queued for analysis but haven't been scored yet. We're working through the catalog — each episode takes a few minutes to analyze. Shows will populate with real scores as analysis completes. We don't fake or estimate scores.`,
+    a: `Shows listed with no score are queued and not scored yet. We don't estimate or fill in scores; a show appears on the leaderboard only once every episode has been scored on the current model.`,
   },
   {
     q: 'How many jokes do you find per episode?',
@@ -58,11 +62,11 @@ const faqs = [
   },
   {
     q: 'What is the 0-100 score scale?',
-    a: `Raw scores are on a 0-10 scale internally. We convert to a 0-100 display scale where 75 represents an "average comedy episode." This is a fixed calibration — scores won't shift as we add more shows. A score of 90+ is exceptional, 80-89 is great, 70-79 is solid, and below 70 means the episode had weaker-than-average humor.`,
+    a: `Raw scores are on a 0–10 scale internally. We convert them to a 0–100 display scale where 75 is an average comedy episode. Above 98 the scale bends toward 100 without reaching it, so no two top episodes tie at a perfect score. The scale depends on the scoring model: when we moved to a newer model, scores rose 8 to 15 points, which is why shows scored on the earlier model are listed separately until they are rescored. Treat differences of about a point as ties.`,
   },
   {
     q: 'Do you analyze every episode of every show?',
-    a: `That's the goal. We're starting with the full runs of 11 major sitcoms — every single episode, not a sample. This means 1,900+ episodes when complete. It takes time, but partial analysis would undermine the rankings.`,
+    a: `Yes, for every show we list: every episode of the full run, not a sample (clip shows are left out because they repeat jokes from other episodes). Partial analysis would undermine the rankings, so a show isn't ranked until it is complete.`,
   },
   {
     q: 'Can I request a show?',
@@ -70,11 +74,11 @@ const faqs = [
   },
   {
     q: 'Is the data open source?',
-    a: `The scoring methodology is fully transparent on our Methodology page. The raw joke-level data isn't currently public, but we're considering it for research purposes.`,
+    a: `Partly. The methodology is public, and the Data page serves the scored data as JSON files, including every movie joke with its timestamp. The scores and rankings are licensed CC BY-NC 4.0: free to use with credit for non-commercial work; for commercial use, email sam@thehumorindex.com.`,
   },
   {
     q: 'Why transcripts instead of watching the episodes?',
-    a: `AI can't watch video (yet). Transcripts capture dialogue, stage directions, and timing cues — which is where the vast majority of sitcom humor lives. We acknowledge this misses some purely visual gags, which is one reason we adjust scores by format. Single-camera shows like The Office embed more visual comedy cues in their scripts than multi-camera shows.`,
+    a: `AI can't watch video reliably yet. Transcripts capture dialogue and some stage directions, which is where most sitcom humor lives, but they miss purely visual gags and the delivery that makes many lines land. We don't adjust scores to compensate; we treat it as a known limitation and flag it on the Methodology page.`,
   },
 ];
 

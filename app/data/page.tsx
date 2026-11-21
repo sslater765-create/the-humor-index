@@ -42,14 +42,25 @@ export default async function DataPage() {
       />
 
       <header className="mb-10">
-        <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-2">Open Data</p>
+        <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-2">Open Data</p>
         <h1 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary mb-3">The data behind the Index</h1>
         <p className="text-sm text-brand-text-secondary max-w-2xl leading-relaxed">
           Every number on this site is computed by one pipeline, run the same way across{' '}
           {stats.showCount} shows — about {stats.totalEpisodes.toLocaleString()} episodes and{' '}
-          {stats.totalJokes.toLocaleString()} individually scored jokes. It’s original, proprietary
-          data, and we’re happy for you to use it: download it, embed it, or cite it with attribution.
+          {stats.totalJokes.toLocaleString()} individually scored jokes.
         </p>
+        <div className="mt-5 max-w-2xl rounded-xl border border-brand-border bg-brand-card p-4 text-sm text-brand-text-secondary leading-relaxed">
+          <p className="text-brand-text-primary font-medium mb-1">License: CC BY-NC 4.0</p>
+          <p>
+            The scores, joke tags and rankings are licensed under{' '}
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/" className="text-brand-gold hover:underline" rel="license noopener">Creative Commons Attribution-NonCommercial 4.0</a>.
+            Use them in research, articles, videos and fan projects, with credit: <span className="text-brand-text-primary">&ldquo;Data: The Humor Index (thehumorindex.com)&rdquo;</span>.
+            For commercial use, email <a href="mailto:sam@thehumorindex.com" className="text-brand-gold hover:underline">sam@thehumorindex.com</a>.
+          </p>
+          <p className="mt-2 text-xs text-brand-text-muted">
+            The license covers our scores and analysis. Quoted dialogue belongs to the shows&rsquo; and films&rsquo; rights holders; episode ratings come from IMDb and artwork and metadata from TMDB, under their own terms.
+          </p>
+        </div>
       </header>
 
       {/* Embed badge */}

@@ -138,17 +138,17 @@ export default async function LeastFunnyCharactersPage() {
         {/* Context cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
           <div className="bg-brand-surface border border-rose-500/30 rounded-lg p-4">
-            <p className="text-[10px] uppercase tracking-widest text-rose-400">Below cast average · dialogue only</p>
+            <p className="text-[11px] uppercase tracking-widest text-rose-400">Below cast average · dialogue only</p>
             <p className="font-mono text-lg text-rose-400 mt-1">{ranked.length}</p>
             <p className="text-xs text-brand-text-muted mt-1">95% CI on their vs-cast delta stays negative — real finding.</p>
           </div>
           <div className="bg-brand-surface border border-amber-500/30 rounded-lg p-4">
-            <p className="text-[10px] uppercase tracking-widest text-amber-400">Suggestive but noisy</p>
+            <p className="text-[11px] uppercase tracking-widest text-amber-400">Suggestive but noisy</p>
             <p className="font-mono text-lg text-amber-400 mt-1">{suggestive}</p>
             <p className="text-xs text-brand-text-muted mt-1">Point estimate negative but CI crosses zero — within noise.</p>
           </div>
           <div className="bg-brand-surface border border-brand-border rounded-lg p-4">
-            <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Below WAR replacement</p>
+            <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">Below WAR replacement</p>
             <p className="font-mono text-lg text-brand-text-primary mt-1">{belowReplacement}</p>
             <p className="text-xs text-brand-text-muted mt-1">Avg quality under {REPLACEMENT.toFixed(2)} — WAR floors at zero here.</p>
           </div>

@@ -16,7 +16,7 @@ export default function ScoreCard({ label, value, sub, highlight }: Props) {
       <p className={`font-mono text-xl sm:text-2xl font-medium ${highlight ? 'text-brand-gold' : 'text-brand-text-primary'}`}>
         {typeof value === 'number' ? (Number.isInteger(value) ? value.toLocaleString() : value.toFixed(1)) : value}
       </p>
-      {sub && <p className="text-[10px] sm:text-xs text-brand-text-muted mt-1 hidden sm:block">{sub}</p>}
+      {sub && <p className="text-[11px] sm:text-xs text-brand-text-muted mt-1 hidden sm:block">{sub}</p>}
     </div>
   );
 }

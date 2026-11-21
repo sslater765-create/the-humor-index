@@ -17,8 +17,8 @@ function ScoreBlock({ show, pending, shadow }: { show: ShowScore; pending: boole
   if (pending) {
     return (
       <>
-        <p className="text-[10px] uppercase tracking-widest text-brand-text-secondary leading-none">Rescore pending</p>
-        <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">Unranked</p>
+        <p className="text-[11px] uppercase tracking-widest text-brand-text-secondary leading-none">Rescore pending</p>
+        <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1">Unranked</p>
       </>
     );
   }
@@ -27,7 +27,7 @@ function ScoreBlock({ show, pending, shadow }: { show: ShowScore; pending: boole
       <p className={`font-serif italic text-4xl text-brand-gold leading-none ${shadow ? 'drop-shadow-md' : ''}`}>
         {formatIndex(show.humor_index)}
       </p>
-      <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">
+      <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1">
         Humor Index · {getTier(show.humor_index).label}
       </p>
       <MatchPill slug={show.slug} variant={shadow ? 'overlay' : 'pill'} className="mt-1.5" />
@@ -73,28 +73,28 @@ export default function ShowCard({ show, pending = false }: Props) {
           <div className="flex items-center gap-2 mb-4 flex-wrap">
             <FormatBadge format={show.format} />
             {show.network && (
-              <span className="text-[10px] uppercase tracking-widest text-brand-text-muted">{show.network}</span>
+              <span className="text-[11px] uppercase tracking-widest text-brand-text-muted">{show.network}</span>
             )}
             {show.aired && (
-              <span className="text-[10px] uppercase tracking-widest text-brand-text-muted">{show.aired}</span>
+              <span className="text-[11px] uppercase tracking-widest text-brand-text-muted">{show.aired}</span>
             )}
             {show.aired && (
               onAir
-                ? <span className="text-[10px] uppercase tracking-widest bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full px-2 py-0.5">On Air</span>
-                : <span className="text-[10px] uppercase tracking-widest bg-brand-surface text-brand-text-muted border border-brand-border rounded-full px-2 py-0.5">Ended</span>
+                ? <span className="text-[11px] uppercase tracking-widest bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full px-2 py-0.5">On Air</span>
+                : <span className="text-[11px] uppercase tracking-widest bg-brand-surface text-brand-text-muted border border-brand-border rounded-full px-2 py-0.5">Ended</span>
             )}
           </div>
           <div className="grid grid-cols-3 gap-2 pt-4 border-t border-brand-border">
             <div>
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">JPM</p>
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-1">JPM</p>
               <p className="font-serif italic text-xl text-brand-text-primary leading-none">{show.avg_jpm.toFixed(1)}</p>
             </div>
             <div>
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">Craft</p>
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-1">Craft</p>
               <p className="font-serif italic text-xl text-brand-text-primary leading-none">{show.avg_craft.toFixed(1)}</p>
             </div>
             <div>
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">Impact</p>
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-1">Impact</p>
               <p className="font-serif italic text-xl text-brand-text-primary leading-none">{show.avg_impact.toFixed(1)}</p>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function ShowCard({ show, pending = false }: Props) {
       <div className="px-5 pb-4">
         <Link
           href={`/compare?show=${show.slug}`}
-          className="flex items-center justify-center gap-1.5 w-full text-[10px] uppercase tracking-widest text-brand-text-muted hover:text-brand-gold border border-brand-border hover:border-brand-gold/40 rounded-full py-2 transition-colors"
+          className="flex items-center justify-center gap-1.5 w-full text-[11px] uppercase tracking-widest text-brand-text-muted hover:text-brand-gold border border-brand-border hover:border-brand-gold/40 rounded-full py-2 transition-colors"
         >
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <line x1="18" y1="20" x2="18" y2="10" />

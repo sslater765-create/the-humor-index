@@ -128,7 +128,7 @@ export default function NewsletterPopup() {
                 {loading ? '...' : 'Subscribe'}
               </button>
             </form>
-            <p className="text-[10px] text-brand-text-muted mt-3 text-center">
+            <p className="text-[11px] text-brand-text-muted mt-3 text-center">
               Unsubscribe anytime. We respect your inbox.
             </p>
           </>

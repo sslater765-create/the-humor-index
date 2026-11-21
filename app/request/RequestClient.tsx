@@ -125,20 +125,20 @@ export default function RequestClient({ completed, upNext }: { completed?: strin
       <section>
         <div className="flex items-baseline justify-between mb-5">
           <div>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">Cast Your Vote</p>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Cast Your Vote</p>
             <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary">The Ballot</h2>
           </div>
           {totalVotes > 0 && (
             <div className="text-right shrink-0">
               <p className="font-serif italic text-2xl text-brand-gold leading-none">{totalVotes.toLocaleString()}</p>
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">votes cast</p>
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1">votes cast</p>
             </div>
           )}
         </div>
 
         {topShow && (votes[topShow.slug] || 0) > 0 && (
           <div className="bg-gradient-to-r from-brand-gold/10 via-brand-gold/5 to-transparent border-l-2 border-brand-gold rounded-r-lg px-4 py-3 mb-5">
-            <p className="text-[10px] uppercase tracking-widest text-brand-gold mb-0.5">Leading the field</p>
+            <p className="text-[11px] uppercase tracking-widest text-brand-gold mb-0.5">Leading the field</p>
             <p className="font-serif italic text-lg text-brand-text-primary">
               {topShow.name} <span className="text-brand-text-muted not-italic font-mono text-sm">— {votes[topShow.slug]} {votes[topShow.slug] === 1 ? 'vote' : 'votes'}</span>
             </p>
@@ -198,7 +198,7 @@ export default function RequestClient({ completed, upNext }: { completed?: strin
 
       {/* Custom suggestion — framed as a write-in */}
       <section className="bg-brand-card border border-brand-border rounded-2xl p-6 sm:p-7">
-        <p className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted mb-1">Write-In Candidate</p>
+        <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-1">Write-In Candidate</p>
         <h3 className="font-serif italic text-xl text-brand-text-primary mb-4">Don&apos;t see your show?</h3>
         {customSubmitted ? (
           <p className="text-sm text-brand-gold">Thanks — we&apos;ll add it to the next ballot.</p>
@@ -226,7 +226,7 @@ export default function RequestClient({ completed, upNext }: { completed?: strin
       <section className="relative bg-gradient-to-br from-brand-surface to-brand-card border border-brand-border rounded-2xl p-6 sm:p-7 overflow-hidden">
         <div className="absolute top-3 left-5 font-serif italic text-brand-gold/15 text-6xl leading-none select-none">&ldquo;</div>
         <div className="relative">
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted mb-1">Get the Verdict First</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-1">Get the Verdict First</p>
           <h3 className="font-serif italic text-xl text-brand-text-primary mb-4">
             Find out the moment we score your pick.
           </h3>
@@ -262,7 +262,7 @@ export default function RequestClient({ completed, upNext }: { completed?: strin
                   Save
                 </button>
               </div>
-              <p className="text-[10px] text-brand-text-muted mt-3">
+              <p className="text-[11px] text-brand-text-muted mt-3">
                 You&apos;ll also get our weekly comedy rankings newsletter. Unsubscribe anytime.
               </p>
             </>
@@ -274,16 +274,16 @@ export default function RequestClient({ completed, upNext }: { completed?: strin
       <section className="bg-brand-card border border-brand-border rounded-2xl p-6 sm:p-7">
         <div className="flex items-baseline justify-between mb-5">
           <div>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted mb-1">The Roster</p>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-1">The Roster</p>
             <h2 className="font-serif italic text-2xl text-brand-text-primary">What we&apos;ve scored. What&apos;s coming.</h2>
           </div>
           <div className="text-right shrink-0 ml-3">
             <p className="font-serif italic text-3xl text-brand-gold leading-none">{completedList.length}</p>
-            <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">shows live</p>
+            <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1">shows live</p>
           </div>
         </div>
 
-        <p className="text-[10px] uppercase tracking-widest text-emerald-400/80 mb-3">Completed</p>
+        <p className="text-[11px] uppercase tracking-widest text-emerald-400/80 mb-3">Completed</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 mb-7">
           {completedList.map(name => (
             <div key={name} className="flex items-center gap-2 px-3 py-2 bg-brand-surface rounded-lg">
@@ -293,7 +293,7 @@ export default function RequestClient({ completed, upNext }: { completed?: strin
           ))}
         </div>
 
-        <p className="text-[10px] uppercase tracking-widest text-brand-gold/80 mb-3">Up Next on the Slate</p>
+        <p className="text-[11px] uppercase tracking-widest text-brand-gold/80 mb-3">Up Next on the Slate</p>
         <div className="flex flex-wrap gap-2">
           {upNextList.map(name => (
             <span key={name} className="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-3 py-1.5">

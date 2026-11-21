@@ -133,7 +133,7 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
       <section className="bg-gradient-to-br from-brand-surface to-brand-card border border-brand-border rounded-2xl p-6">
         {pref ? (
           <>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">Your taste reads as</p>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Your taste reads as</p>
             <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary mb-2">{archetypeName}</h2>
             <p className="text-sm text-brand-text-secondary">
               Built from {lovedWithFp.length} show{lovedWithFp.length === 1 ? '' : 's'} you love. You gravitate toward{' '}
@@ -145,7 +145,7 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
           </>
         ) : (
           <>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">Get started</p>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Get started</p>
             <h2 className="font-serif italic text-2xl text-brand-text-primary mb-2">Love at least two shows below</h2>
             <p className="text-sm text-brand-text-secondary">
               Tap <span className="text-brand-gold">♥</span> on the sitcoms you love. Once you’ve picked two, we’ll

@@ -18,6 +18,9 @@ import StickyEpisodeBar from '@/components/ui/StickyEpisodeBar';
 import EpisodeDeepViewTracker from '@/components/analytics/EpisodeDeepViewTracker';
 import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
 import { SITE_URL } from '@/lib/site';
+import { getRankedEpisodeScores, topShare } from '@/lib/siteStats';
+import { personSlug } from '@/lib/people';
+import MiniLaughMap from '@/components/movies/MiniLaughMap';
 
 export const dynamic = 'force-static';
 
@@ -112,6 +115,7 @@ export default async function EpisodePage({
     getEpisodes(params.slug),
     getEpisodeDetail(params.slug, seasonNum, episodeNum),
   ]);
+  const allEpScores = await getRankedEpisodeScores();
 
   if (!show || !detail) notFound();
 
@@ -279,13 +283,13 @@ export default async function EpisodePage({
           <p className="text-xs text-brand-text-muted mb-3">
             {(detail as any).director?.length > 0 && (
               <>
-                Directed by <span className="text-brand-text-secondary">{(detail as any).director.join(', ')}</span>
+                Directed by {(detail as any).director.map((n: string, i: number) => <span key={n}>{i > 0 && ', '}{isAwaitingRescore(params.slug) ? <span className="text-brand-text-secondary">{n}</span> : <Link href={`/people/${personSlug(n)}/`} className="text-brand-text-secondary hover:text-brand-gold">{n}</Link>}</span>)}
               </>
             )}
             {(detail as any).director?.length > 0 && (detail as any).writers?.length > 0 && ' · '}
             {(detail as any).writers?.length > 0 && (
               <>
-                Written by <span className="text-brand-text-secondary">{(detail as any).writers.slice(0, 3).join(', ')}</span>
+                Written by {(detail as any).writers.slice(0, 3).map((n: string, i: number) => <span key={n}>{i > 0 && ', '}{isAwaitingRescore(params.slug) ? <span className="text-brand-text-secondary">{n}</span> : <Link href={`/people/${personSlug(n)}/`} className="text-brand-text-secondary hover:text-brand-gold">{n}</Link>}</span>)}
               </>
             )}
           </p>
@@ -331,12 +335,12 @@ export default async function EpisodePage({
           <ScoreGauge score={detail.humor_index} size={110} label="Humor Index" />
           <div className="flex flex-col items-center mt-2 gap-0.5">
             {detail.ci_95_low != null && detail.ci_95_high != null && (
-              <p className="text-[10px] text-brand-text-muted font-mono">
+              <p className="text-[11px] text-brand-text-muted font-mono">
                 95% CI: {detail.ci_95_low.toFixed(1)}–{detail.ci_95_high.toFixed(1)}
               </p>
             )}
             {detail.percentile_in_show != null && (
-              <p className="text-[10px] text-brand-text-muted">
+              <p className="text-[11px] text-brand-text-muted">
                 <span className="text-brand-gold">p{Math.round(detail.percentile_in_show)}</span> in {show.name}
               </p>
             )}
@@ -362,11 +366,38 @@ export default async function EpisodePage({
         ) : (
           <>&ldquo;{detail.title}&rdquo; scores <span className="text-brand-gold font-mono">{formatIndex(detail.humor_index)}</span> on the Humor Index — {epTier.label}. </>
         )}
+        {!isAwaitingRescore(params.slug) && allEpScores.length > 0 && (
+          <>That puts it in the <span className="text-brand-text-primary">{topShare(detail.humor_index, allEpScores)}</span> of all {allEpScores.length.toLocaleString()} episodes we rank. </>
+        )}
         The episode packs <span className="text-brand-text-primary">{detail.total_jokes} scored jokes</span> at {detail.jpm.toFixed(1)} per minute, averaging {detail.avg_craft.toFixed(1)} on craft and {detail.avg_impact.toFixed(1)} on impact{topChar ? <>, with <span className="text-brand-text-primary">{topChar}</span> landing the most laughs</> : ''}. Every joke is ranked below with its individual craft and impact scores.
       </p>
 
-      {/* Newsletter CTA — above the fold */}
-      <InlineNewsletterCTA />
+
+      {/* Laugh Map: the episode's jokes in running order, in ten equal slices.
+          TV transcripts don't carry reliable timestamps, so this is order, not minutes. */}
+      {detail.jokes?.length >= 20 && (() => {
+        const js = detail.jokes;
+        const N = 10, per = js.length / N;
+        const bins = Array.from({ length: N }, (_, b) => {
+          const slice = js.slice(Math.round(b * per), Math.round((b + 1) * per));
+          return { start: b, end: b + 1, count: slice.length, total: slice.reduce((t, j) => t + (j.impact_score || 0), 0), best: null };
+        });
+        const peak = bins.reduce((a, b, i) => (b.total > bins[a].total ? i : a), 0);
+        const where = peak < 3 ? 'the opening' : peak > 6 ? 'the final stretch' : 'the middle';
+        return (
+          <section className="mb-10 rounded-xl border border-brand-border bg-brand-card p-4 sm:p-5">
+            <div className="flex items-baseline justify-between gap-3 mb-3">
+              <p className="text-sm text-brand-text-primary">The Laugh Map</p>
+              <p className="text-xs text-brand-gold">Hits hardest in {where}</p>
+            </div>
+            <MiniLaughMap bins={bins} className="h-16" />
+            <div className="flex justify-between text-[11px] text-brand-text-muted mt-1.5">
+              <span>Cold open</span><span>Final scene</span>
+            </div>
+            <p className="text-[11px] text-brand-text-muted mt-2">Each bar is a tenth of the episode&rsquo;s jokes in running order; taller and brighter means harder-landing jokes.</p>
+          </section>
+        );
+      })()}
 
       {/* Top Jokes — best jokes first */}
       {(() => {
@@ -435,6 +466,9 @@ export default async function EpisodePage({
         </div>
       )}
 
+      {/* Newsletter CTA, after the jokes: the jokes are why people are here */}
+      <InlineNewsletterCTA />
+
       {/* Next / Previous episode navigation */}
       <div className="mt-10 grid grid-cols-2 gap-3 border-t border-brand-border pt-6">
         {prevEp ? (
@@ -476,10 +510,10 @@ export default async function EpisodePage({
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent" />
                 <div className="relative p-3 w-full flex items-end justify-between gap-3">
                   <div className="min-w-0">
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">{ep.show} · S{ep.season}E{String(ep.episode).padStart(2, '0')}</p>
+                    <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">{ep.show} · S{ep.season}E{String(ep.episode).padStart(2, '0')}</p>
                     <p className="text-sm text-brand-text-primary font-medium truncate group-hover:text-brand-gold transition-colors">{ep.title}</p>
                   </div>
-                  <span className="font-serif italic text-xl text-brand-gold shrink-0">{formatIndex(ep.humor_index)}</span>
+                  <span className="font-mono text-lg text-brand-gold shrink-0">{formatIndex(ep.humor_index)}</span>
                 </div>
               </Link>
             ))}

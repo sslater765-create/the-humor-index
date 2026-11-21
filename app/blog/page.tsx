@@ -109,16 +109,16 @@ export default async function BlogPage() {
                   <p className={`font-serif italic text-6xl sm:text-7xl ${CATEGORY_ACCENTS[hero.category] || 'text-brand-gold'} leading-none`}>
                     {hero.stat}
                   </p>
-                  <p className="text-[10px] text-brand-text-muted mt-3 uppercase tracking-[0.25em]">
+                  <p className="text-[11px] text-brand-text-muted mt-3 uppercase tracking-[0.25em]">
                     {hero.statLabel}
                   </p>
                 </div>
-                <span className="absolute top-4 left-5 text-[10px] uppercase tracking-[0.25em] text-brand-gold">
+                <span className="absolute top-4 left-5 text-[11px] uppercase tracking-[0.25em] text-brand-gold">
                   The Latest
                 </span>
               </div>
               <div className="p-7 sm:p-9 bg-brand-card flex flex-col justify-center">
-                <div className="flex items-center gap-3 text-[10px] uppercase tracking-widest text-brand-text-muted mb-4">
+                <div className="flex items-center gap-3 text-[11px] uppercase tracking-widest text-brand-text-muted mb-4">
                   <span className={`${CATEGORY_ACCENTS[hero.category] || 'text-brand-gold'}`}>{hero.category}</span>
                   <span>·</span>
                   <span>{formatDate(hero.date)}</span>
@@ -139,7 +139,7 @@ export default async function BlogPage() {
 
         {/* Section header */}
         <div className="border-t border-brand-border pt-10">
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Archive</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Archive</p>
           <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
             Every post on the index.
           </h2>
@@ -165,19 +165,19 @@ export default async function BlogPage() {
                     <p className={`font-serif italic text-3xl sm:text-4xl ${CATEGORY_ACCENTS[post.category] || 'text-brand-gold'} leading-none`}>
                       {post.stat}
                     </p>
-                    <p className="text-[10px] text-brand-text-muted mt-2 uppercase tracking-widest leading-tight">
+                    <p className="text-[11px] text-brand-text-muted mt-2 uppercase tracking-widest leading-tight">
                       {post.statLabel}
                     </p>
                   </div>
-                  <span className={`absolute bottom-3 left-4 text-[10px] uppercase tracking-widest ${CATEGORY_ACCENTS[post.category] || 'text-brand-gold'}`}>
+                  <span className={`absolute bottom-3 left-4 text-[11px] uppercase tracking-widest ${CATEGORY_ACCENTS[post.category] || 'text-brand-gold'}`}>
                     {post.category}
                   </span>
-                  <span className="absolute bottom-3 right-4 font-mono text-[10px] text-brand-text-muted">
+                  <span className="absolute bottom-3 right-4 font-mono text-[11px] text-brand-text-muted">
                     №{String(postIndex + 2).padStart(2, '0')}
                   </span>
                 </div>
                 <div className="p-5">
-                  <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">{formatDate(post.date)} · {post.readTime}</p>
+                  <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-2">{formatDate(post.date)} · {post.readTime}</p>
                   <h3 className="font-serif italic text-lg text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2 line-clamp-3 leading-snug">
                     {post.title}
                   </h3>

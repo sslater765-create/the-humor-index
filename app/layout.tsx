@@ -35,10 +35,10 @@ export const metadata: Metadata = {
     default: "The Humor Index — The Science of What's Funny",
     template: '%s | The Humor Index',
   },
-  description: 'AI-powered comedy analytics ranking every joke in television history. Data-driven leaderboards for the funniest shows, episodes, and characters.',
+  description: 'AI-powered comedy analytics: every joke in the sitcoms and comedy movies we cover, scored and ranked. Leaderboards for the funniest shows, episodes, movies and characters.',
   openGraph: {
     title: 'The Humor Index',
-    description: "The definitive science of what's funny. AI-analyzed rankings of every joke in sitcoms and comedy movies.",
+    description: "Every joke in the sitcoms and comedy movies we cover, scored by AI and ranked.",
     url: `${SITE_URL}`,
     siteName: 'The Humor Index',
     type: 'website',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@thehumorindex',
     title: 'The Humor Index',
-    description: "The definitive science of what's funny.",
+    description: "Every comedy joke, scored and ranked.",
     images: ["/api/og?title=The%20Humor%20Index&subtitle=" + encodeURIComponent("The science of what's funny")],
   },
   alternates: {
@@ -101,7 +101,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             name: 'The Humor Index',
             url: `${SITE_URL}`,
             logo: `${SITE_URL}/favicon-400.png`,
-            description: 'AI-powered comedy analytics ranking every joke in television history.',
+            description: 'AI-powered comedy analytics: every joke in the sitcoms and comedy movies we cover, scored and ranked.',
             sameAs: [
               'https://x.com/thehumorindex',
               'https://instagram.com/thehumorindex',

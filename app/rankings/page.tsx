@@ -219,7 +219,7 @@ export default async function RankingsPage() {
       <PageHeader
         label="Rankings"
         title="Comedy Rankings"
-        subtitle={`${allEpisodes.length} episodes analyzed. ${totalJokesScored.toLocaleString()} jokes scored. No opinions — just data.`}
+        subtitle={`${allEpisodes.length.toLocaleString()} episodes and ${totalJokesScored.toLocaleString()} jokes from the ${analyzedShows.length} shows on our current scoring model.`}
       />
       <ScaleNote />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-5">
@@ -243,7 +243,7 @@ export default async function RankingsPage() {
 
             <div className="relative z-10 h-full flex flex-col justify-end p-6 sm:p-10">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-medium">#1 Episode of All Time</span>
+                <span className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium">#1 Episode of All Time</span>
                 <span className="h-px flex-1 bg-gradient-to-r from-brand-gold/40 to-transparent" />
               </div>
 
@@ -289,7 +289,7 @@ export default async function RankingsPage() {
                 className="block bg-brand-card border border-brand-border rounded-xl p-6 hover:border-brand-gold/40 transition-colors group"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <span className={`text-[10px] uppercase tracking-[0.3em] font-medium ${PODIUM_COLORS[i]}`}>{PODIUM_LABELS[i]} Episode</span>
+                  <span className={`text-[11px] uppercase tracking-[0.3em] font-medium ${PODIUM_COLORS[i]}`}>{PODIUM_LABELS[i]} Episode</span>
                   <span className="h-px flex-1 bg-brand-border" />
                 </div>
                 <p className="text-xs text-brand-text-muted uppercase tracking-widest mb-1">
@@ -319,7 +319,7 @@ export default async function RankingsPage() {
         {/* SECTION DIVIDER — magazine-y page break */}
         <div className="flex items-center gap-4 pt-4">
           <span className="h-px flex-1 bg-brand-border" />
-          <span className="text-[10px] uppercase tracking-[0.3em] text-brand-text-muted">More from the index</span>
+          <span className="text-[11px] uppercase tracking-[0.3em] text-brand-text-muted">More from the index</span>
           <span className="h-px flex-1 bg-brand-border" />
         </div>
 
@@ -337,7 +337,7 @@ export default async function RankingsPage() {
             >
               <div className="grid sm:grid-cols-[1fr_1.2fr] gap-6 items-center">
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">New · Movies</p>
+                  <p className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">New · Movies</p>
                   <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">The Funniest Comedy Movies</h2>
                   <ol className="mt-4 space-y-2">
                     {movies.slice(0, 5).map(m => (
@@ -366,7 +366,7 @@ export default async function RankingsPage() {
           >
             <div className="flex items-baseline justify-between mb-5">
               <div>
-                <p className="text-[10px] uppercase tracking-[0.3em] text-emerald-400 font-medium mb-1">Characters Ranked</p>
+                <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400 font-medium mb-1">Characters Ranked</p>
                 <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">The Funniest Characters of All Time</h2>
               </div>
             </div>
@@ -392,7 +392,7 @@ export default async function RankingsPage() {
                   </div>
                   <div className="text-right">
                     <p className="font-mono text-xl text-brand-gold">{char.war.toFixed(0)}</p>
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">WAR</p>
+                    <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">WAR</p>
                   </div>
                 </div>
               ))}
@@ -407,7 +407,7 @@ export default async function RankingsPage() {
           >
             <div className="flex items-baseline justify-between mb-5">
               <div>
-                <p className="text-[10px] uppercase tracking-[0.3em] text-rose-400 font-medium mb-1">Below Their Cast</p>
+                <p className="text-[11px] uppercase tracking-[0.3em] text-rose-400 font-medium mb-1">Below Their Cast</p>
                 <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">Who Trails Their Own Ensemble</h2>
               </div>
             </div>
@@ -433,7 +433,7 @@ export default async function RankingsPage() {
                   </div>
                   <div className="text-right">
                     <p className="font-mono text-xl text-rose-400">{char.vsCastmates != null ? char.vsCastmates.toFixed(3) : '—'}</p>
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">delta</p>
+                    <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">delta</p>
                   </div>
                 </div>
               ))}
@@ -458,7 +458,7 @@ export default async function RankingsPage() {
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/40 via-[#0A0A0A]/85 to-[#0A0A0A]" />
             <div className="relative z-10 p-6 sm:p-8 h-full flex flex-col justify-end">
-              <p className="text-[10px] uppercase tracking-[0.3em] text-purple-400 font-medium mb-2">Head to Head</p>
+              <p className="text-[11px] uppercase tracking-[0.3em] text-purple-400 font-medium mb-2">Head to Head</p>
               <p className="text-xs text-brand-text-muted uppercase tracking-widest mb-4">Top of the board · {topGap}-pt gap</p>
               <div className="grid grid-cols-[1fr_auto_1fr] items-end gap-4 sm:gap-6">
                 <div>
@@ -484,7 +484,7 @@ export default async function RankingsPage() {
             href="/rankings/jokes-per-minute"
             className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group"
           >
-            <p className="text-[10px] uppercase tracking-[0.3em] text-amber-400 font-medium mb-1">Joke Density</p>
+            <p className="text-[11px] uppercase tracking-[0.3em] text-amber-400 font-medium mb-1">Joke Density</p>
             <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-5">Jokes Per Minute, Ranked</h2>
             <div className="space-y-4">
               {topJpmShows.map((s, i) => (
@@ -495,7 +495,7 @@ export default async function RankingsPage() {
                   </div>
                   <div className="text-right">
                     <p className="font-mono text-3xl text-brand-gold leading-none">{(s.avg_jpm || 0).toFixed(2)}</p>
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1">/min</p>
+                    <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1">/min</p>
                   </div>
                 </div>
               ))}
@@ -508,12 +508,12 @@ export default async function RankingsPage() {
             href="/rankings/worst-episodes"
             className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group"
           >
-            <p className="text-[10px] uppercase tracking-[0.3em] text-rose-400 font-medium mb-1">The Other End</p>
+            <p className="text-[11px] uppercase tracking-[0.3em] text-rose-400 font-medium mb-1">The Other End</p>
             <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-5">The Worst Episodes of All Time</h2>
             <div className="space-y-4">
               {worstEpisodes.map((ep, i) => (
                 <div key={`${ep.showSlug}-${ep.season}-${ep.episode_number}`} className="flex items-end gap-4 pb-3 border-b border-brand-border last:border-b-0 last:pb-0">
-                  <span className="font-mono text-2xl font-bold text-rose-400 w-10">↓{i + 1}</span>
+                  <span className="font-mono text-2xl font-bold text-rose-400 w-10">{i + 1}</span>
                   <div className="flex-1 min-w-0">
                     <p className="font-serif italic text-lg text-brand-text-primary truncate leading-tight">{ep.title}</p>
                     <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-0.5">{ep.showName} · S{ep.season}E{ep.episode_number}</p>
@@ -528,10 +528,19 @@ export default async function RankingsPage() {
           </Link>
         </div>
 
+        {/* Index vs IMDb: the biggest disagreements */}
+        <Link href="/rankings/index-vs-imdb"
+          className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group">
+          <p className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">Jokes vs fans</p>
+          <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">Where the Index and IMDb disagree</h2>
+          <p className="text-sm text-brand-text-secondary max-w-2xl">The episodes fans rate highest that the jokes don&rsquo;t support, and the underrated ones the jokes say you should rewatch.</p>
+          <p className="text-xs text-brand-text-muted mt-4 group-hover:text-brand-gold transition-colors">See both lists →</p>
+        </Link>
+
         {/* HOLIDAYS + QUOTES — seasonal lists and one quotes page per show */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           <div className="bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-emerald-400 font-medium mb-1">Holiday Episodes</p>
+            <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400 font-medium mb-1">Holiday Episodes</p>
             <h2 className="font-serif italic text-2xl text-brand-text-primary mb-5">The Best Holiday Episodes, Ranked</h2>
             <div className="space-y-3">
               <Link href="/rankings/best-christmas-episodes" className="flex items-center justify-between gap-4 pb-3 border-b border-brand-border group">
@@ -546,7 +555,7 @@ export default async function RankingsPage() {
           </div>
 
           <div className="bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-sky-400 font-medium mb-1">Quotes</p>
+            <p className="text-[11px] uppercase tracking-[0.3em] text-sky-400 font-medium mb-1">Quotes</p>
             <h2 className="font-serif italic text-2xl text-brand-text-primary mb-5">The Funniest Quotes from Every Show</h2>
             <div className="flex flex-wrap gap-2">
               {shows
@@ -570,7 +579,7 @@ export default async function RankingsPage() {
           href="/search"
           className="block bg-brand-card border border-brand-border rounded-xl p-8 hover:border-brand-gold/40 transition-colors group text-center"
         >
-          <p className="text-[10px] uppercase tracking-[0.3em] text-amber-400 font-medium mb-3">Search</p>
+          <p className="text-[11px] uppercase tracking-[0.3em] text-amber-400 font-medium mb-3">Search</p>
           <p className="font-mono font-bold text-5xl sm:text-6xl text-brand-gold mb-2 leading-none">{searchableJokes.toLocaleString()}</p>
           <p className="font-serif italic text-xl text-brand-text-primary mb-2">jokes, searchable, indexed and ranked</p>
           <p className="text-xs text-brand-text-muted group-hover:text-brand-gold transition-colors">Find any joke, character, or moment →</p>

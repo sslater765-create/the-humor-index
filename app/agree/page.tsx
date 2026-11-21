@@ -29,7 +29,7 @@ export default async function AgreePage() {
       />
 
       <header className="mb-8 text-center">
-        <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-2">The Blind Test</p>
+        <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-2">The Blind Test</p>
         <h1 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary mb-3">
           Do you agree with the Index?
         </h1>

@@ -66,7 +66,7 @@ export default function QuickPick({ jokes, focus, source, title = 'Which joke is
     <section className={`bg-brand-card border border-brand-border rounded-2xl p-5 sm:p-7 ${className}`}>
       <div className="flex flex-wrap items-end justify-between gap-3 mb-5">
         <div>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">Comedy DNA · one tap</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Comedy DNA · one tap</p>
           <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight">{title}</h2>
           <p className="text-sm text-brand-text-secondary mt-1.5 max-w-xl">
             {subtitle ?? 'Pick the one that lands harder for you. Every pick tunes your match % on every show across the site.'}
@@ -90,8 +90,8 @@ export default function QuickPick({ jokes, focus, source, title = 'Which joke is
                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold
                 ${isPick ? 'border-brand-teal shadow-[0_0_0_2px_rgba(29,158,117,.25)]' : dim ? 'border-brand-border opacity-45' : 'border-brand-border hover:border-brand-gold motion-safe:hover:-translate-y-0.5'}`}>
               <span className="flex items-center gap-2">
-                <span className="inline-flex items-center px-2 h-[20px] rounded-md text-[10px] font-extrabold tracking-wide uppercase" style={{ background: st.c, color: tileText(st.c) }}>{j.show}</span>
-                {isPick && <span className="text-[10px] font-extrabold uppercase tracking-wide text-brand-teal">Your pick</span>}
+                <span className="inline-flex items-center px-2 h-[20px] rounded-md text-[11px] font-extrabold tracking-wide uppercase" style={{ background: st.c, color: tileText(st.c) }}>{j.show}</span>
+                {isPick && <span className="text-[11px] font-extrabold uppercase tracking-wide text-brand-teal">Your pick</span>}
               </span>
               <span className="text-[15px] sm:text-base font-semibold leading-snug text-brand-text-primary">
                 <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>

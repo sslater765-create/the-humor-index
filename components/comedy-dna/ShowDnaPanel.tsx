@@ -53,7 +53,7 @@ export default function ShowDnaPanel({ slug, name, showJokes, otherJokes }: Prop
     <section className="bg-brand-card border border-brand-border rounded-2xl p-5 sm:p-7">
       <div className="grid md:grid-cols-[minmax(0,260px)_1fr] gap-6 md:gap-10">
         <div>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-2">Your Comedy DNA</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-2">Your Comedy DNA</p>
           <p className="font-serif italic text-6xl text-brand-teal leading-none tabular-nums">{m.pct}%</p>
           <p className="text-sm text-brand-text-primary mt-2">match with {name}</p>
           <p className="text-xs text-brand-text-muted mt-1">
@@ -69,7 +69,7 @@ export default function ShowDnaPanel({ slug, name, showJokes, otherJokes }: Prop
           )}
         </div>
         <div>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted mb-3">From {name}, picked for your taste</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-3">From {name}, picked for your taste</p>
           <div className="flex flex-col gap-2.5">
             {forYou.map(j => (
               <div key={j.id} className="bg-brand-surface border border-brand-border rounded-xl px-4 py-3">

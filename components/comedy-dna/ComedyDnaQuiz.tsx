@@ -402,7 +402,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                    className="bg-brand-card border border-brand-border hover:border-brand-gold transition rounded-xl p-2.5 flex flex-col items-center gap-1.5 text-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold">
                   <Emblem i={i} size={36} />
                   <span className="text-[11px] font-bold leading-tight">{a.name.replace(/^The /, '')}</span>
-                  <span className="text-[10px] text-brand-text-muted leading-tight hidden sm:block">{a.tag}</span>
+                  <span className="text-[11px] text-brand-text-muted leading-tight hidden sm:block">{a.tag}</span>
                 </a>
               ))}
             </div>
@@ -415,7 +415,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
           </label>
           {totalPicks > 0 && dna ? (
             <div className="mb-2 bg-brand-card border border-brand-border rounded-2xl px-5 py-4 max-w-xl">
-              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-brand-teal">Welcome back</p>
+              <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-brand-teal">Welcome back</p>
               <p className="mt-1 text-brand-text-secondary">
                 Your Comedy DNA has <b className="text-brand-text-primary">{totalPicks} picks</b> ({readLevel(totalPicks).label.toLowerCase()}).
                 {dna.matches[0] && <> Top match so far: <b className="text-brand-text-primary">{dna.matches[0].name} {dna.matches[0].pct}%</b>.</>}
@@ -460,7 +460,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
               <div className="mb-5 bg-brand-card border border-brand-border rounded-xl px-4 py-3 flex items-center gap-3">
                 <Emblem i={li} size={40} />
                 <div className="flex-1 min-w-0">
-                  <span className="text-[10px] font-bold uppercase tracking-wide text-brand-text-muted">{totalPicks} picks in</span>
+                  <span className="text-[11px] font-bold uppercase tracking-wide text-brand-text-muted">{totalPicks} picks in</span>
                   <p className="text-[14px] mt-0.5 leading-snug">So far you&apos;re leaning <b style={{ color: EMBLEMS[li]?.c }}>{lead.name}</b></p>
                 </div>
               </div>
@@ -513,14 +513,14 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
 
                     {/* Show chip (top-left) — full-card context during the vote */}
                     {!revealing && j.show && (
-                      <span className="absolute top-2 left-2.5 inline-flex items-center px-2.5 h-[22px] rounded-md text-[10px] font-extrabold tracking-wide uppercase shadow-sm" style={{ background: st.c, color: tileText(st.c) }}>{j.show}</span>
+                      <span className="absolute top-2 left-2.5 inline-flex items-center px-2.5 h-[22px] rounded-md text-[11px] font-extrabold tracking-wide uppercase shadow-sm" style={{ background: st.c, color: tileText(st.c) }}>{j.show}</span>
                     )}
                     {/* Option number chip during vote; chosen badge during reveal */}
                     {!revealing && (
                       <span className="absolute top-2 right-2.5 w-[22px] h-[22px] rounded-md bg-black/55 backdrop-blur-sm border border-white/25 text-white text-xs font-extrabold flex items-center justify-center">{idx + 1}</span>
                     )}
                     {chosen && (
-                      <span className="absolute top-2 left-2.5 inline-flex items-center gap-1 px-2 h-[22px] rounded-md bg-brand-teal text-white text-[10px] font-extrabold tracking-wide uppercase">
+                      <span className="absolute top-2 left-2.5 inline-flex items-center gap-1 px-2 h-[22px] rounded-md bg-brand-teal text-white text-[11px] font-extrabold tracking-wide uppercase">
                         <svg width="10" height="10" viewBox="0 0 12 12" aria-hidden><path d="M1 6l3 3 7-7" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
                         Your pick
                       </span>
@@ -551,7 +551,7 @@ export default function ComedyDnaQuiz({ quiz, fingerprints, comingSoon = [], jok
                         </p>
                         {chosen && j.why ? (
                           <div className="mt-1 pt-2 border-t border-brand-border">
-                            <span className="text-[10px] font-bold uppercase tracking-wide text-brand-teal block mb-1">Why it lands</span>
+                            <span className="text-[11px] font-bold uppercase tracking-wide text-brand-teal block mb-1">Why it lands</span>
                             <p className="text-[12.5px] text-brand-text-secondary leading-relaxed">{j.why}</p>
                           </div>
                         ) : null}

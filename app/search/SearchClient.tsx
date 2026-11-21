@@ -147,7 +147,7 @@ export default function SearchClient() {
                     className="w-full text-left px-4 py-2.5 text-sm hover:bg-brand-surface transition-colors flex items-center justify-between"
                   >
                     <span className="text-brand-text-primary truncate">{s.label}</span>
-                    <span className="text-[10px] uppercase tracking-widest text-brand-gold shrink-0 ml-2">
+                    <span className="text-[11px] uppercase tracking-widest text-brand-gold shrink-0 ml-2">
                       movie · {s.count} jokes
                     </span>
                   </Link>
@@ -158,7 +158,7 @@ export default function SearchClient() {
                     className="w-full text-left px-4 py-2.5 text-sm hover:bg-brand-surface transition-colors flex items-center justify-between"
                   >
                     <span className="text-brand-text-primary truncate">{s.label}</span>
-                    <span className="text-[10px] uppercase tracking-widest text-brand-text-muted shrink-0 ml-2">
+                    <span className="text-[11px] uppercase tracking-widest text-brand-text-muted shrink-0 ml-2">
                       {s.count} jokes · character
                     </span>
                   </Link>
@@ -170,7 +170,7 @@ export default function SearchClient() {
                     className="w-full text-left px-4 py-2.5 text-sm hover:bg-brand-surface transition-colors flex items-center justify-between"
                   >
                     <span className="text-brand-text-primary truncate">{s.label}</span>
-                    <span className="text-[10px] uppercase tracking-widest text-brand-text-muted shrink-0 ml-2">
+                    <span className="text-[11px] uppercase tracking-widest text-brand-text-muted shrink-0 ml-2">
                       {s.type}
                     </span>
                   </button>
@@ -230,7 +230,7 @@ export default function SearchClient() {
                 <div className="flex items-start justify-between mb-2">
                   <span className="text-xs text-brand-text-muted group-hover:text-brand-gold transition-colors">
                     {joke.movieSlug
-                      ? <>{joke.showName} · <span className="uppercase tracking-wider text-[10px] text-brand-gold">Movie</span> · {joke.episodeTitle}</>
+                      ? <>{joke.showName} · <span className="uppercase tracking-wider text-[11px] text-brand-gold">Movie</span> · {joke.episodeTitle}</>
                       : <>{joke.showName} · S{joke.season}E{String(joke.episodeNumber).padStart(2, '0')} {'“'}{joke.episodeTitle}{'”'}</>}
                   </span>
                   <div className="flex gap-2 font-mono text-xs">

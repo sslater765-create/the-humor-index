@@ -352,7 +352,7 @@ export default async function MoviePage({ params }: { params: { slug: string } }
                   className="flex items-center gap-2 rounded-lg border border-brand-border bg-brand-card px-3 py-2 text-sm text-brand-text-secondary hover:border-brand-gold/50">
                   {p.logo_path && <Image src={`${TMDB_IMG}/w92${p.logo_path}`} alt="" width={22} height={22} className="rounded" />}
                   {p.name}
-                  <span className="text-[10px] uppercase text-brand-text-muted">{kind === 'flatrate' ? 'stream' : kind}</span>
+                  <span className="text-[11px] uppercase text-brand-text-muted">{kind === 'flatrate' ? 'stream' : kind}</span>
                 </a>
               )))}
             </div>

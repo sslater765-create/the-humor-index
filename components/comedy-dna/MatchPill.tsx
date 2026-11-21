@@ -13,7 +13,7 @@ export default function MatchPill({ slug, className = '', variant = 'pill' }: { 
     : strong ? 'bg-brand-teal/10 border-brand-teal/40 text-brand-teal' : 'bg-brand-surface border-brand-border text-brand-text-secondary';
   return (
     <span
-      className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider tabular-nums whitespace-nowrap ${base} ${className}`}
+      className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider tabular-nums whitespace-nowrap ${base} ${className}`}
       title="How well this show fits the jokes you pick in Comedy DNA"
     >
       <svg width="9" height="9" viewBox="0 0 12 12" aria-hidden><path d="M3 1c0 3 6 4 6 10M9 1c0 3-6 4-6 10M3.6 3.5h4.8M3.6 8.5h4.8" stroke="currentColor" strokeWidth="1.4" fill="none" strokeLinecap="round" /></svg>

@@ -14,7 +14,7 @@ export const dynamic = 'force-static';
 export const metadata = {
   title: 'The 50 Funniest Sitcom Episodes of All Time, Ranked by Data',
   description:
-    'We analyzed thousands of jokes across dozens of shows to rank the funniest sitcom episodes ever made. No opinions — just data. See which episodes scored highest on craft, impact, and joke density.',
+    'Every episode of the shows on our current model, ranked by the Humor Index: each joke scored by AI for craft and impact. See which episodes scored highest on craft, impact, and joke density.',
   openGraph: {
     title: 'The 50 Funniest Sitcom Episodes, Ranked by AI Analysis',
     description: 'Every joke scored. Every episode ranked. The definitive list.',
@@ -117,7 +117,7 @@ export default async function FunniestEpisodesPage() {
       <PageHeader
         label="Rankings"
         title="The Funniest Sitcom Episodes of All Time"
-        subtitle="Every joke analyzed. Every episode ranked. No opinions — just data."
+        subtitle="Every joke scored by AI, every episode ranked. Scores within about a point of each other are effectively tied."
       />
       <ScaleNote narrow />
 

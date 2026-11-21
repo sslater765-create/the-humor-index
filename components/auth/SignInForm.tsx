@@ -72,7 +72,7 @@ export default function SignInForm() {
 
       <div className="flex items-center gap-3">
         <span className="h-px flex-1 bg-brand-border" />
-        <span className="text-[10px] uppercase tracking-widest text-brand-text-muted">or</span>
+        <span className="text-[11px] uppercase tracking-widest text-brand-text-muted">or</span>
         <span className="h-px flex-1 bg-brand-border" />
       </div>
 

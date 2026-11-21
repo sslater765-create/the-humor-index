@@ -14,10 +14,10 @@ const primary = [
   { href: '/blog', label: 'Blog' },
 ];
 const secondary = [
-  { href: '/compare', label: 'Compare' },
-  { href: '/explore', label: 'Explore' },
-  { href: '/agree', label: 'Agree?' },
-  { href: '/my', label: 'My Index' },
+  { href: '/compare', label: 'Compare shows' },
+  { href: '/explore', label: 'Build a cut' },
+  { href: '/agree', label: 'Test your taste' },
+  { href: '/my', label: 'Your shows' },
   { href: '/methodology', label: 'Methodology' },
   { href: '/request', label: 'Request a show' },
 ];
@@ -111,10 +111,13 @@ export default function Nav() {
             }`}
             aria-label="Search jokes"
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.3-4.3" />
-            </svg>
+            <span className="flex items-center gap-1.5 text-xs border border-brand-border rounded-full px-3 py-1.5 hover:border-brand-gold/40">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+              Search jokes
+            </span>
           </Link>
           <AccountMenu />
         </div>

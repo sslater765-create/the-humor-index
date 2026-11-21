@@ -101,7 +101,7 @@ export default async function ComparePage() {
                         {formatIndex(a.humor_index)}
                       </span>
                     </div>
-                    <div className="text-[10px] uppercase tracking-widest text-brand-text-muted text-center my-1">vs</div>
+                    <div className="text-[11px] uppercase tracking-widest text-brand-text-muted text-center my-1">vs</div>
                     <div className="flex items-baseline justify-between">
                       <span className={`font-serif italic text-base truncate mr-2 ${!aWins ? 'text-brand-gold' : 'text-brand-text-secondary'} group-hover:text-brand-gold transition-colors`}>
                         {b.name}

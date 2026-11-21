@@ -48,7 +48,7 @@ export default async function CardsPage() {
       />
 
       <header className="mb-8">
-        <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-2">Made to Share</p>
+        <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-2">Made to Share</p>
         <h1 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary mb-3">Score cards</h1>
         <p className="text-sm text-brand-text-secondary max-w-2xl leading-relaxed">
           Every card below is generated live from the data — download the image for a post or story,

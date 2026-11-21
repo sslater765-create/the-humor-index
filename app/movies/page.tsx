@@ -67,6 +67,9 @@ export default async function MoviesPage() {
           <p className="mt-4 text-sm text-brand-text-muted">
             {movies.length} {movies.length === 1 ? 'movie' : 'movies'} scored · {totalJokes.toLocaleString()} jokes · new movies every week
           </p>
+          <Link href="/movies/letterboxd" className="mt-5 inline-flex text-xs px-3.5 py-2 rounded-full border border-brand-border text-brand-text-secondary hover:text-brand-gold hover:border-brand-gold/50">
+            On Letterboxd? See your ratings vs the Index →
+          </Link>
         </div>
       </section>
 
@@ -93,7 +96,7 @@ export default async function MoviesPage() {
                 {extras[m.slug]?.bins && (
                   <div className="mt-4">
                     <MiniLaughMap bins={extras[m.slug].bins} className="h-9" />
-                    <p className="mt-1 text-[10px] text-brand-text-muted">Funniest stretch {extras[m.slug].peak}</p>
+                    <p className="mt-1 text-[11px] text-brand-text-muted">Funniest stretch {extras[m.slug].peak}</p>
                   </div>
                 )}
               </div>
@@ -105,18 +108,18 @@ export default async function MoviesPage() {
           <section className="grid gap-3 sm:grid-cols-3">
             {tj && (
               <Link href={`/movies/${tj.slug}`} className="rounded-xl border border-brand-border bg-brand-card p-4 hover:border-brand-gold/40 transition-colors">
-                <p className="text-[10px] uppercase tracking-[0.2em] text-brand-gold">Funniest movie line so far</p>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-brand-gold">Funniest movie line so far</p>
                 <p className="mt-2 text-sm text-brand-text-primary italic line-clamp-3">&ldquo;{bestLine(tj.j)}&rdquo;</p>
                 <p className="mt-2 text-xs text-brand-text-muted">{lineSpeaker(bestLine(tj.j), tj.j.characters) ? `${lineSpeaker(bestLine(tj.j), tj.j.characters)}, ` : ''}{tj.name} · {tj.j.score.toFixed(1)}</p>
               </Link>
             )}
             <Link href={`/movies/${densest.slug}`} className="rounded-xl border border-brand-border bg-brand-card p-4 hover:border-brand-gold/40 transition-colors">
-              <p className="text-[10px] uppercase tracking-[0.2em] text-brand-gold">Most jokes per minute</p>
+              <p className="text-[11px] uppercase tracking-[0.2em] text-brand-gold">Most jokes per minute</p>
               <p className="mt-2 font-mono text-3xl text-brand-text-primary">{densest.avg_jpm.toFixed(2)}</p>
               <p className="mt-1 text-xs text-brand-text-muted">{shortTitle(densest.title)} ({densest.year}) · {densest.total_jokes} jokes</p>
             </Link>
             <Link href={`/movies/${crafted.slug}`} className="rounded-xl border border-brand-border bg-brand-card p-4 hover:border-brand-gold/40 transition-colors">
-              <p className="text-[10px] uppercase tracking-[0.2em] text-brand-gold">Best-built jokes</p>
+              <p className="text-[11px] uppercase tracking-[0.2em] text-brand-gold">Best-built jokes</p>
               <p className="mt-2 font-mono text-3xl text-brand-text-primary">{crafted.avg_craft.toFixed(2)}</p>
               <p className="mt-1 text-xs text-brand-text-muted">{shortTitle(crafted.title)} ({crafted.year}) · average craft per joke</p>
             </Link>

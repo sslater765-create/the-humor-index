@@ -148,7 +148,7 @@ export default function ShowPageClient({ show, seasons, episodes: rawEpisodes, c
                       >
                         {formatIndex(ep.humor_index)}
                       </span>
-                      <p className="text-[10px] text-brand-text-muted">/ 100</p>
+                      <p className="text-[11px] text-brand-text-muted">/ 100</p>
                     </div>
                   </Link>
                 ))}
@@ -192,19 +192,19 @@ export default function ShowPageClient({ show, seasons, episodes: rawEpisodes, c
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
                 <p className="font-mono text-2xl text-brand-gold font-bold">{above90}</p>
-                <p className="text-[10px] text-brand-text-muted mt-1">Elite episodes</p>
+                <p className="text-[11px] text-brand-text-muted mt-1">Elite episodes</p>
               </div>
               <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
                 <p className="font-mono text-2xl text-emerald-400 font-bold">{above80}</p>
-                <p className="text-[10px] text-brand-text-muted mt-1">Great</p>
+                <p className="text-[11px] text-brand-text-muted mt-1">Great</p>
               </div>
               <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
                 <p className="font-mono text-2xl text-brand-text-primary font-bold">{above70}</p>
-                <p className="text-[10px] text-brand-text-muted mt-1">Solid</p>
+                <p className="text-[11px] text-brand-text-muted mt-1">Solid</p>
               </div>
               <div className="bg-brand-card border border-brand-border rounded-xl p-4 text-center">
                 <p className="font-mono text-2xl text-brand-text-primary font-bold">{stdDev.toFixed(1)}</p>
-                <p className="text-[10px] text-brand-text-muted mt-1">Consistency (σ)</p>
+                <p className="text-[11px] text-brand-text-muted mt-1">Consistency (σ)</p>
                 <p className="text-[9px] text-brand-text-muted">lower = more consistent</p>
               </div>
             </div>
@@ -213,20 +213,20 @@ export default function ShowPageClient({ show, seasons, episodes: rawEpisodes, c
             {show.war != null && show.war > 0 && (
               <div className="bg-brand-card border border-red-500/20 rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="bg-red-500 text-white font-bold text-[10px] px-1.5 py-0.5 rounded">WAR</span>
+                  <span className="bg-red-500 text-white font-bold text-[11px] px-1.5 py-0.5 rounded">WAR</span>
                   <span className="text-xs text-brand-text-muted">Comedy Wins Above Replacement</span>
                 </div>
                 <div className="flex items-baseline gap-6">
                   <div>
                     <p className="font-mono text-3xl text-red-400 font-bold">{show.war?.toLocaleString()}</p>
-                    <p className="text-[10px] text-brand-text-muted mt-1">Total comedy value above replacement</p>
+                    <p className="text-[11px] text-brand-text-muted mt-1">Total comedy value above replacement</p>
                   </div>
                   <div>
                     <p className="font-mono text-2xl text-brand-text-primary font-bold">{show.war_per_episode}</p>
-                    <p className="text-[10px] text-brand-text-muted mt-1">WAR per episode</p>
+                    <p className="text-[11px] text-brand-text-muted mt-1">WAR per episode</p>
                   </div>
                 </div>
-                <p className="text-[10px] text-brand-text-muted mt-3">
+                <p className="text-[11px] text-brand-text-muted mt-3">
                   Like baseball&apos;s WAR — measures total comedy value above a &quot;replacement-level&quot; baseline (craft 6.0, impact 6.0). Higher = more valuable.
                 </p>
               </div>

@@ -223,7 +223,9 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           <span className="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-2.5 py-0.5">
             {post.category}
           </span>
-          <span className="text-xs text-brand-text-muted">{formatDate(post.date)}</span>
+          <span className="text-xs text-brand-text-muted">
+            By <a href="/about" className="text-brand-text-secondary hover:text-brand-gold">Sam Slater</a> · {formatDate(post.date)}
+          </span>
         </div>
         <h1 className="text-2xl sm:text-3xl font-medium text-brand-text-primary leading-tight mb-4">
           {post.title}
@@ -239,7 +241,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
         <figure className="relative aspect-[21/9] rounded-2xl overflow-hidden border border-brand-border mb-8">
           <Image src={`https://image.tmdb.org/t/p/w1280${cover.backdrop}`} alt={cover.name} fill priority sizes="(min-width: 1024px) 768px, 100vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 to-transparent" />
-          <figcaption className="absolute bottom-3 right-4 text-[10px] uppercase tracking-widest text-white/70">{cover.name}</figcaption>
+          <figcaption className="absolute bottom-3 right-4 text-[11px] uppercase tracking-widest text-white/70">{cover.name}</figcaption>
         </figure>
       )}
 

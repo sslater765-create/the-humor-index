@@ -287,7 +287,7 @@ export default async function ShowBestJokesPage({ params }: { params: { slug: st
                   {q.jokeTypes.length > 0 && (
                     <div className="mt-2 flex flex-wrap gap-1.5">
                       {q.jokeTypes.slice(0, 3).map(t => (
-                        <span key={t} className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded bg-brand-surface text-brand-text-muted">
+                        <span key={t} className="text-[11px] uppercase tracking-wider px-2 py-0.5 rounded bg-brand-surface text-brand-text-muted">
                           {typeLabel(t)}
                         </span>
                       ))}
@@ -296,7 +296,7 @@ export default async function ShowBestJokesPage({ params }: { params: { slug: st
                 </div>
                 <div className="text-right shrink-0">
                   <span className="font-mono text-lg text-brand-gold font-medium">{q.score.toFixed(1)}</span>
-                  <div className="text-[10px] text-brand-text-muted uppercase tracking-widest">/ 10</div>
+                  <div className="text-[11px] text-brand-text-muted uppercase tracking-widest">/ 10</div>
                 </div>
               </div>
             </li>

@@ -16,7 +16,7 @@ export default async function RankedRail({ exclude }: { exclude?: string }) {
     <aside className="hidden lg:block">
       <div className="sticky top-20 space-y-6">
         <div className="bg-brand-card border border-brand-border rounded-xl overflow-hidden">
-          <p className="px-4 pt-4 pb-2 text-[10px] uppercase tracking-[0.25em] text-brand-gold">Ranked right now</p>
+          <p className="px-4 pt-4 pb-2 text-[11px] uppercase tracking-[0.25em] text-brand-gold">Ranked right now</p>
           {shows.map((s, i) => (
             <Link key={s.slug} href={`/shows/${s.slug}`} className="group flex items-center gap-3 px-4 py-2.5 border-t border-brand-border/50 hover:bg-brand-surface transition-colors">
               <span className="font-mono text-xs text-brand-text-muted w-4">{i + 1}</span>
@@ -24,7 +24,7 @@ export default async function RankedRail({ exclude }: { exclude?: string }) {
                 {s.backdrop_path && <Image src={`https://image.tmdb.org/t/p/w185${s.backdrop_path}`} alt="" fill sizes="48px" className="object-cover" />}
               </span>
               <span className="flex-1 min-w-0 text-sm text-brand-text-primary truncate group-hover:text-brand-gold transition-colors">{s.name}</span>
-              <span className="font-serif italic text-brand-gold">{formatIndex(s.humor_index)}</span>
+              <span className="font-mono text-brand-gold">{formatIndex(s.humor_index)}</span>
             </Link>
           ))}
           <Link href="/shows" className="block px-4 py-3 border-t border-brand-border/50 text-xs text-brand-text-muted hover:text-brand-gold">All shows →</Link>

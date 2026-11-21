@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { Chart, registerables } from 'chart.js';
 import { useInViewChart } from '@/hooks/useInViewChart';
 import { SeasonScore } from '@/lib/types';
-import { relativeColorFn, chartFloor } from '@/lib/scoring';
+import { relativeColorFn } from '@/lib/scoring';
 import ShareButton from '../ui/ShareButton';
 
 Chart.register(...registerables);
@@ -31,7 +31,11 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
   const multi = seasons.length > 1;
 
   const colorOf = useMemo(() => relativeColorFn(seasons.map(s => s.humor_index)), [seasons]);
-  const floor = useMemo(() => chartFloor(seasons.map(s => s.humor_index)), [seasons]);
+  // Bars show each season's distance from the series average, around a zero
+  // line. The old chart started its axis near the lowest season, which made a
+  // 3-point dip look like a collapse.
+  const avg = useMemo(() => seasons.reduce((n, s) => n + s.humor_index, 0) / Math.max(seasons.length, 1), [seasons]);
+  const span = useMemo(() => Math.max(2, Math.ceil(Math.max(...seasons.map(s => Math.abs(s.humor_index - avg))) + 0.5)), [seasons, avg]);
 
   const config = useMemo(() => ({
     type: 'bar' as const,
@@ -39,7 +43,7 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
       labels: seasons.map(s => `S${s.season}`),
       datasets: [{
         label: 'Humor Index',
-        data: seasons.map(s => s.humor_index),
+        data: seasons.map(s => +(s.humor_index - avg).toFixed(2)),
         backgroundColor: seasons.map((s, i) => {
           if (multi && i === bestIdx) return '#E8B931CC';
           if (multi && i === worstIdx) return '#666666AA';
@@ -75,7 +79,7 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
             label: (ctx: any) => {
               const s = seasons[ctx.dataIndex];
               return [
-                ` Index: ${(ctx.raw as number).toFixed(1)}`,
+                ` Index: ${s.humor_index.toFixed(1)} (${(ctx.raw as number) >= 0 ? '+' : ''}${(ctx.raw as number).toFixed(1)} vs series average)`,
                 ` Best: ${s.best_episode_title}`,
               ];
             },
@@ -84,13 +88,13 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
       },
       scales: {
         x: {
-          ticks: { color: '#666666', font: { size: 11 } },
+          ticks: { color: '#8A8A8A', font: { size: 11 } },
           grid: { display: false },
         },
         y: {
-          min: floor,
-          max: 100,
-          ticks: { color: '#666666', font: { size: 10 } },
+          min: -span,
+          max: span,
+          ticks: { color: '#8A8A8A', font: { size: 11 }, callback: (v: any) => (v > 0 ? `+${v}` : `${v}`) },
           grid: { color: 'rgba(255,255,255,0.05)' },
         },
       },
@@ -121,12 +125,12 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
           ctx.font = 'bold 10px system-ui, sans-serif';
           ctx.fillStyle = '#888888';
           ctx.textAlign = 'center';
-          ctx.fillText('WORST', worstBar.x, worstBar.y - 8);
+          ctx.fillText('WORST', worstBar.x, worstBar.y + 14);
           ctx.restore();
         }
       },
     }],
-  }), [seasons, bestIdx, worstIdx, multi, colorOf, floor]);
+  }), [seasons, bestIdx, worstIdx, multi, colorOf, avg, span]);
 
   const { canvasRef, inViewRef } = useInViewChart(config);
 
@@ -135,7 +139,8 @@ export default function SeasonBarChart({ seasons, showName }: Props) {
       <div className="flex items-start justify-between mb-4">
         <div>
           <p className="text-xs uppercase tracking-widest text-brand-text-muted mb-1">{showName}</p>
-          <p className="text-base font-medium text-brand-text-primary">Season Averages</p>
+          <p className="text-base font-medium text-brand-text-primary">Seasons vs the series average</p>
+          <p className="text-xs text-brand-text-muted mt-0.5">Series average {avg.toFixed(1)}. Bars above the line beat it.</p>
         </div>
         <ShareButton targetId="season-bar-wrap" filename={`${showName}-seasons`} />
       </div>

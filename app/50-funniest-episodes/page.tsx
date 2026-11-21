@@ -101,7 +101,7 @@ export default async function FunniestEpisodesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }}
       />
 
-      <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-brand-gold mb-4">
+      <p className="text-[11px] sm:text-xs uppercase tracking-[0.25em] text-brand-gold mb-4">
         Special Report
       </p>
       <h1 className="font-serif italic text-4xl sm:text-6xl text-brand-text-primary leading-[1.05] mb-5">
@@ -120,7 +120,7 @@ export default async function FunniestEpisodesPage() {
             <p className="font-serif italic text-2xl sm:text-3xl text-brand-gold leading-none">
               {formatIndex(no1.humor_index)}
             </p>
-            <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-2">
+            <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-2">
               Top score — {no1.show}
             </p>
           </div>
@@ -128,7 +128,7 @@ export default async function FunniestEpisodesPage() {
             <p className="font-serif italic text-2xl sm:text-3xl text-brand-gold leading-none">
               {showCount}
             </p>
-            <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-2">
+            <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-2">
               Shows in the top 50
             </p>
           </div>
@@ -136,7 +136,7 @@ export default async function FunniestEpisodesPage() {
             <p className="font-serif italic text-2xl sm:text-3xl text-brand-gold leading-none">
               {shows.length}
             </p>
-            <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-2">
+            <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-2">
               Shows fully scored
             </p>
           </div>
@@ -166,7 +166,7 @@ export default async function FunniestEpisodesPage() {
                   S{r.season}E{String(r.episode).padStart(2, '0')} · {r.total_jokes} jokes
                 </p>
               </div>
-              <span className="font-serif italic text-xl sm:text-2xl text-brand-gold shrink-0">
+              <span className="font-mono text-lg sm:text-xl text-brand-gold shrink-0">
                 {formatIndex(r.humor_index)}
               </span>
             </Link>

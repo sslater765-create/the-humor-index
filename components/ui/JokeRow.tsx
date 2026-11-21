@@ -101,11 +101,11 @@ export default function JokeRow({ joke, isStandout, showSlug }: Props) {
           </div>
           <div className="flex items-center gap-3 shrink-0 pl-6 sm:pl-0">
             <div className="text-center sm:text-right">
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Craft</p>
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">Craft</p>
               <p className="font-mono text-sm text-brand-text-secondary">{joke.craft_total.toFixed(1)}</p>
             </div>
             <div className="text-center sm:text-right">
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Impact</p>
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">Impact</p>
               <p className="font-mono text-sm text-brand-gold">{joke.impact_score.toFixed(1)}</p>
             </div>
             <span className="text-brand-text-muted text-xs">{expanded ? '▲' : '▼'}</span>

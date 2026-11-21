@@ -23,7 +23,7 @@ export default async function MovieCharacters({ limit = 12 }: { limit?: number }
   rows.sort((a, b) => b.total - a.total);
   return (
     <section className="mt-14">
-      <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">Movies</p>
+      <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Movies</p>
       <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary">The funniest movie characters</h2>
       <p className="text-sm text-brand-text-secondary mt-1 mb-4">Total score of every joke they lead, in the comedy movies we&rsquo;ve scored.</p>
       <div className="grid sm:grid-cols-2 gap-3">

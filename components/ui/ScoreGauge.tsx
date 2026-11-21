@@ -52,7 +52,7 @@ export default function ScoreGauge({ score, size = 120, label }: Props) {
           <span className="font-mono text-2xl font-medium" style={{ color }}>
             {score.toFixed(1)}
           </span>
-          <span className="text-[10px] text-brand-text-muted">/ 100</span>
+          <span className="text-[11px] text-brand-text-muted">/ 100</span>
         </div>
       </div>
       {label && (

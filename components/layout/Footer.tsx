@@ -123,19 +123,25 @@ export default function Footer() {
             Movies
           </Link>
           <Link href="/agree" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
-            Agree?
+            Test your taste
           </Link>
           <Link href="/my" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
-            My Index
+            Your shows
           </Link>
           <Link href="/cards" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Share Cards
           </Link>
           <Link href="/data" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
-            The Data
+            Data
           </Link>
           <Link href="/request" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Request
+          </Link>
+          <Link href="/people" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            Writers
+          </Link>
+          <Link href="/changelog" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            Changelog
           </Link>
           <Link href="/methodology" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Methodology

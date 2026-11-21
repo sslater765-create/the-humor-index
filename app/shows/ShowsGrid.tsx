@@ -43,7 +43,7 @@ export default function ShowsGrid({ shows }: { shows: ShowScore[] }) {
       {/* Editorial header above the grid */}
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7">
         <div>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-2">The Leaderboard</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-2">The Leaderboard</p>
           <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight">
             {filtered.length === shows.length
               ? 'Every show on the index.'
@@ -53,7 +53,7 @@ export default function ShowsGrid({ shows }: { shows: ShowScore[] }) {
 
         <div className="flex flex-wrap gap-2 shrink-0">
           <div className="flex items-center gap-2 px-3 py-1.5 bg-brand-card border border-brand-border rounded-full">
-            <label htmlFor="format-filter" className="text-[10px] uppercase tracking-widest text-brand-text-muted">Format</label>
+            <label htmlFor="format-filter" className="text-[11px] uppercase tracking-widest text-brand-text-muted">Format</label>
             <select
               id="format-filter"
               value={format}

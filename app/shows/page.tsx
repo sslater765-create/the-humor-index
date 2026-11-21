@@ -52,19 +52,19 @@ export default async function ShowsPage() {
               <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
                 {scored.length}
               </p>
-              <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Scored</p>
+              <p className="text-[11px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Scored</p>
             </div>
             <div>
               <p className="font-serif italic text-3xl sm:text-5xl text-brand-blue leading-none">
                 {upcoming.length}
               </p>
-              <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">In the queue</p>
+              <p className="text-[11px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">In the queue</p>
             </div>
             <div>
               <p className="font-serif italic text-3xl sm:text-5xl text-emerald-400 leading-none">
                 {totalJokes.toLocaleString()}
               </p>
-              <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Jokes scored</p>
+              <p className="text-[11px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Jokes scored</p>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default async function ShowsPage() {
 
         {pending.length > 0 && (
           <section className="mt-20 pt-12 border-t border-brand-border">
-            <p className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted mb-3">Awaiting rescore</p>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-3">Awaiting rescore</p>
             <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
               Scored on the earlier model.
             </h2>
@@ -94,7 +94,7 @@ export default async function ShowsPage() {
 
         {upcoming.length > 0 && (
           <section className="mt-20 pt-12 border-t border-brand-border">
-            <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">Up Next on the Slate</p>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Up Next on the Slate</p>
             <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
               Coming soon.
             </h2>
@@ -114,7 +114,7 @@ export default async function ShowsPage() {
                           className="object-cover opacity-40 group-hover:opacity-55 transition-opacity"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-brand-card/60 to-transparent" />
-                        <span className="absolute bottom-3 right-4 text-[10px] uppercase tracking-widest text-brand-gold/80">
+                        <span className="absolute bottom-3 right-4 text-[11px] uppercase tracking-widest text-brand-gold/80">
                           Queued
                         </span>
                       </div>
@@ -127,19 +127,19 @@ export default async function ShowsPage() {
                       <div className="flex items-center gap-2 mb-3 flex-wrap">
                         <FormatBadge format={show.format} />
                         {show.network && (
-                          <span className="text-[10px] uppercase tracking-widest text-brand-text-muted">{show.network}</span>
+                          <span className="text-[11px] uppercase tracking-widest text-brand-text-muted">{show.network}</span>
                         )}
                         {show.aired && (
-                          <span className="text-[10px] uppercase tracking-widest text-brand-text-muted">{show.aired}</span>
+                          <span className="text-[11px] uppercase tracking-widest text-brand-text-muted">{show.aired}</span>
                         )}
                       </div>
                       {show.avg_imdb_rating && (
                         <p className="text-xs text-brand-text-muted">
-                          <span className="bg-[#F5C518] text-black font-bold text-[10px] px-1.5 py-0.5 rounded mr-1">IMDb</span>
+                          <span className="bg-[#F5C518] text-black font-bold text-[11px] px-1.5 py-0.5 rounded mr-1">IMDb</span>
                           {show.avg_imdb_rating.toFixed(1)} avg
                         </p>
                       )}
-                      <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-3 pt-3 border-t border-brand-border">
+                      <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-3 pt-3 border-t border-brand-border">
                         {show.total_episodes} episodes queued
                       </p>
                     </div>

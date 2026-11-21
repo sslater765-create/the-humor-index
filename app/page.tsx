@@ -32,6 +32,7 @@ export default async function HomePage() {
     .map(j => ({ ...j, backdrop: shows.find(s => s.slug === j.show_slug)?.backdrop_path }));
 
   const analyzedShows = shows.filter(s => s.humor_index > 0);
+  const rankedCountHero = analyzedShows.filter(s => !isAwaitingRescore(s.slug)).length;
   let totalEpisodesAnalyzed = 0;
   for (const show of analyzedShows) {
     try {
@@ -67,7 +68,7 @@ export default async function HomePage() {
           {/* Two-column hero: copy left, "how it works" loop right */}
           <div className="grid lg:grid-cols-[1fr_380px] gap-8 lg:gap-14 mb-12">
             <div className="flex flex-col">
-              <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-brand-gold mb-5">
+              <p className="text-[11px] sm:text-xs uppercase tracking-[0.25em] text-brand-gold mb-5">
                 Comedy, Quantified
               </p>
               <h1 className="font-serif italic text-4xl sm:text-7xl text-brand-text-primary leading-[1.02] mb-5">
@@ -75,10 +76,24 @@ export default async function HomePage() {
                 <span className="text-brand-text-secondary">scored and ranked.</span>
               </h1>
               <p className="text-base sm:text-xl text-brand-text-secondary max-w-2xl leading-relaxed">
-                The science of what&apos;s funny. AI reads every sitcom and movie script, rates every laugh on a
-                five-axis rubric, and we publish the receipts.
+                AI reads every sitcom and movie script we cover, rates every laugh on a five-part
+                craft rubric, and we publish the receipts.
               </p>
-              <p className="text-base sm:text-lg text-brand-text-muted max-w-2xl leading-relaxed mt-4">
+              {/* Phones: show the board right away, before the counters */}
+              <div className="sm:hidden mt-6 grid grid-cols-4 gap-2">
+                {[...shows].filter(s => s.humor_index > 0 && !isAwaitingRescore(s.slug)).sort((a, b) => b.humor_index - a.humor_index).slice(0, 4).map((s, i) => (
+                  <Link key={s.slug} href={`/shows/${s.slug}/`} className="block">
+                    <span className="relative block aspect-[2/3] rounded-lg overflow-hidden border border-brand-border bg-brand-card">
+                      {s.poster_path && <Image src={`https://image.tmdb.org/t/p/w185${s.poster_path}`} alt={`${s.name} poster`} fill sizes="25vw" className="object-cover" />}
+                      <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent px-1.5 pb-1 pt-4">
+                        <span className="block text-[11px] text-brand-text-muted font-mono">#{i + 1}</span>
+                        <span className="block font-mono text-sm text-brand-gold leading-none">{s.humor_index.toFixed(1)}</span>
+                      </span>
+                    </span>
+                  </Link>
+                ))}
+              </div>
+              <p className="hidden sm:block text-base sm:text-lg text-brand-text-muted max-w-2xl leading-relaxed mt-4">
                 No laugh tracks, no nostalgia, no &ldquo;you had to be there.&rdquo; Browse the rankings,
                 settle an argument between two shows, or find out which episode you should actually rewatch.
               </p>
@@ -89,25 +104,25 @@ export default async function HomePage() {
                   <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
                     {analyzedShows.length}
                   </p>
-                  <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Shows scored</p>
+                  <p className="text-[11px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">TV shows scored{analyzedShows.length > rankedCountHero ? ` · ${rankedCountHero} ranked` : ''}</p>
                 </div>
                 <Link href="/movies" className="group">
                   <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none group-hover:underline decoration-1 underline-offset-4">
                     {movies.length}
                   </p>
-                  <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2 group-hover:text-brand-gold">{movies.length === 1 ? 'Movie' : 'Movies'} scored</p>
+                  <p className="text-[11px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2 group-hover:text-brand-gold">{movies.length === 1 ? 'Movie' : 'Movies'} scored</p>
                 </Link>
                 <div>
                   <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
                     {totalEpisodesAnalyzed.toLocaleString()}
                   </p>
-                  <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Episodes analyzed</p>
+                  <p className="text-[11px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">TV episodes scored</p>
                 </div>
                 <div>
                   <p className="font-serif italic text-3xl sm:text-5xl text-brand-gold leading-none">
                     {(totalJokes + movies.reduce((n, m) => n + m.total_jokes, 0)).toLocaleString()}
                   </p>
-                  <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Jokes rated</p>
+                  <p className="text-[11px] sm:text-xs uppercase tracking-widest text-brand-text-muted mt-2">Jokes scored, TV and film</p>
                 </div>
               </div>
             </div>
@@ -119,7 +134,7 @@ export default async function HomePage() {
             <JokeRoulette pool={roulette} />
           </div>
 
-          <p className="text-[10px] sm:text-xs uppercase tracking-widest text-brand-text-muted mb-6 pt-10 border-t border-brand-border">
+          <p className="text-[11px] sm:text-xs uppercase tracking-widest text-brand-text-muted mb-6 pt-10 border-t border-brand-border">
             As of {asOf} ·{' '}
             <Link href="/methodology" className="text-brand-gold hover:underline">
               How we score
@@ -130,7 +145,7 @@ export default async function HomePage() {
           <div className="bg-brand-card border border-brand-border rounded-2xl p-5 sm:p-7">
             <div className="flex items-baseline justify-between mb-5">
               <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">The Index</p>
+                <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">The Index</p>
                 <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight">
                   The TV leaderboard.
                 </h2>
@@ -182,8 +197,8 @@ export default async function HomePage() {
         <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-14">
           <div className="flex items-end justify-between gap-4 mb-5">
             <div>
-              <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">The best lines on the index</p>
-              <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight">Every show&apos;s funniest joke.</h2>
+              <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">The best lines on the index</p>
+              <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight">Six of the best lines on the board.</h2>
             </div>
             <Link href="/rankings/best-jokes" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors shrink-0">Top 100 jokes →</Link>
           </div>
@@ -218,7 +233,7 @@ export default async function HomePage() {
         <div className="relative bg-gradient-to-b from-brand-card to-brand-surface border border-brand-border rounded-2xl px-6 sm:px-12 py-10 sm:py-14 overflow-hidden">
           <div className="absolute top-4 left-6 font-serif italic text-brand-gold/15 text-9xl leading-none select-none">&ldquo;</div>
           <div className="relative max-w-3xl mx-auto">
-            <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-5 text-center">Featured Insight</p>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-5 text-center">Featured Insight</p>
             <h3 className="font-serif italic text-3xl sm:text-5xl text-brand-text-primary leading-[1.1] mb-6 text-center">
               Same joke rate.<br />Ten points apart.
             </h3>
@@ -230,19 +245,19 @@ export default async function HomePage() {
             </p>
             <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto mb-8 pb-8 border-b border-brand-border">
               <div className="text-center">
-                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">30 Rock</p>
+                <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-2">30 Rock</p>
                 <p className="font-serif italic text-3xl sm:text-4xl text-brand-gold leading-none">97.5</p>
-                <p className="text-[10px] text-brand-text-muted mt-2">3.53 jokes/min · Craft 7.68</p>
+                <p className="text-[11px] text-brand-text-muted mt-2">3.53 jokes/min · Craft 7.68</p>
               </div>
               <div className="text-center">
-                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Broad City</p>
+                <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-2">Broad City</p>
                 <p className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-none">86.9</p>
-                <p className="text-[10px] text-brand-text-muted mt-2">3.52 jokes/min · Craft 7.16</p>
+                <p className="text-[11px] text-brand-text-muted mt-2">3.52 jokes/min · Craft 7.16</p>
               </div>
               <div className="text-center">
-                <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-2">Gap</p>
+                <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-2">Gap</p>
                 <p className="font-serif italic text-3xl sm:text-4xl text-brand-blue leading-none">10.6</p>
-                <p className="text-[10px] text-brand-text-muted mt-2">Humor Index points</p>
+                <p className="text-[11px] text-brand-text-muted mt-2">Humor Index points</p>
               </div>
             </div>
             <div className="text-center">
@@ -257,7 +272,7 @@ export default async function HomePage() {
       {/* Methodology teaser */}
       <section className="border-t border-brand-border bg-brand-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
-          <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Three Pillars</p>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Three Pillars</p>
           <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
             How a joke becomes a number.
           </h2>
@@ -276,7 +291,7 @@ export default async function HomePage() {
               {
                 weight: '40%',
                 label: 'Craft',
-                desc: 'Setup quality, misdirection, subversion, character fit, timing. Five dimensions, equally weighted, scored 1–10.',
+                desc: 'Originality, structure, character fit, economy, and earned versus cheap. Five dimensions scored 1–10, originality and structure weighted most.',
                 color: 'text-brand-blue',
                 weightColor: 'text-brand-blue',
               },

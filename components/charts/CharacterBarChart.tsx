@@ -52,7 +52,7 @@ export default function CharacterBarChart({ characters, showName }: Props) {
       },
       scales: {
         x: {
-          ticks: { color: '#666666', font: { size: 10 } },
+          ticks: { color: '#8A8A8A', font: { size: 10 } },
           grid: { color: 'rgba(255,255,255,0.05)' },
         },
         y: {

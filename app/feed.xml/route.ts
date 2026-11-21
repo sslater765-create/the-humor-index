@@ -21,7 +21,7 @@ export async function GET() {
   <channel>
     <title>The Humor Index</title>
     <link>https://www.thehumorindex.com</link>
-    <description>AI-powered comedy analytics ranking every joke in television history.</description>
+    <description>AI-powered comedy analytics: every joke in the sitcoms and comedy movies we cover, scored and ranked.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="https://www.thehumorindex.com/feed.xml" rel="self" type="application/rss+xml"/>

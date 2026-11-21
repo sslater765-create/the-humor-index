@@ -60,7 +60,7 @@ function Card({ x, rank }: { x: HolidayEpisode; rank?: number }) {
         {!x.awaitingRescore && (
           <div className="text-right shrink-0">
             <span className="font-mono text-lg text-brand-gold font-medium">{formatIndex(x.humorIndex)}</span>
-            <div className="text-[10px] text-brand-text-muted uppercase tracking-widest">HI</div>
+            <div className="text-[11px] text-brand-text-muted uppercase tracking-widest">HI</div>
           </div>
         )}
       </div>

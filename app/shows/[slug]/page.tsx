@@ -11,6 +11,7 @@ import { formatIndex, byHumorIndexDesc } from '@/lib/scoring';
 import { ALL_SHOW_SLUGS } from '@/lib/constants';
 import ScoreCard from '@/components/ui/ScoreCard';
 import ScoreGauge from '@/components/ui/ScoreGauge';
+import { getShowQuotes } from '@/lib/quotes';
 import FormatBadge from '@/components/ui/FormatBadge';
 import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
 import { rankable, isAwaitingRescore } from '@/lib/scale';
@@ -126,6 +127,8 @@ export default async function ShowPage({ params }: { params: { slug: string } })
     getShowDnaJokes(params.slug),
   ]);
   const crossovers = await crossoversForShow(params.slug);
+  // The show's three best lines, shown near the top: the jokes are the product.
+  const topQuotes = await getShowQuotes(params.slug, 3, 1).then(q => q.quotes).catch(() => []);
 
   // Map real character data to CharacterStats format for charts. We deliberately
   // omit `jpm` here — per-character JPM isn't computed by the pipeline, and the
@@ -179,6 +182,8 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         )}
         {/* Gradient overlay — keeps text readable, lets image breathe */}
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgb(15,15,15) 8%, rgba(15,15,15,0.75) 22%, rgba(15,15,15,0.2) 38%, transparent 55%)' }} />
+        {/* Phones: the title block covers most of the photo, so darken more of it */}
+        <div className="absolute inset-0 sm:hidden" style={{ background: 'linear-gradient(to top, rgba(15,15,15,0.95) 30%, rgba(15,15,15,0.6) 60%, transparent 85%)' }} />
 
         {/* Content overlay */}
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-4 sm:px-6 pb-6">
@@ -237,20 +242,20 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           <div className="flex flex-col items-center">
             <ScoreGauge score={show.humor_index} size={130} label="Humor Index" />
             {show.ci_95_low != null && show.ci_95_high != null && (
-              <p className="text-[10px] text-brand-text-muted mt-2 font-mono">
+              <p className="text-[11px] text-brand-text-muted mt-2 font-mono">
                 95% CI: {show.ci_95_low.toFixed(1)}–{show.ci_95_high.toFixed(1)}
               </p>
             )}
           </div>
           <div className="relative flex-1 w-full">
-            <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-2 sm:pb-0 sm:grid sm:grid-cols-5 sm:overflow-visible">
-              <div className="min-w-[140px] snap-start sm:min-w-0"><ScoreCard label="JPM" value={show.avg_jpm} sub="Jokes per minute" /></div>
-              <div className="min-w-[140px] snap-start sm:min-w-0"><ScoreCard label="Craft" value={show.avg_craft} sub="Avg craft score" /></div>
-              <div className="min-w-[140px] snap-start sm:min-w-0"><ScoreCard label="Impact" value={show.avg_impact} sub="Avg impact score" /></div>
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
+              <ScoreCard label="JPM" value={show.avg_jpm} sub="Jokes per minute" />
+              <ScoreCard label="Craft" value={show.avg_craft} sub="Avg craft score" />
+              <ScoreCard label="Impact" value={show.avg_impact} sub="Avg impact score" />
               {show.avg_imdb_rating && (
-                <div className="min-w-[140px] snap-start sm:min-w-0"><ScoreCard label="IMDb" value={show.avg_imdb_rating} sub="Avg episode rating" /></div>
+                <ScoreCard label="IMDb" value={show.avg_imdb_rating} sub="Avg episode rating" />
               )}
-              <div className="min-w-[140px] snap-start sm:min-w-0">
+              <div className={show.avg_imdb_rating ? 'col-span-2 sm:col-span-1' : ''}>
                 <ScoreCard
                   label="Jokes Analyzed"
                   value={show.total_jokes_analyzed.toLocaleString()}
@@ -258,8 +263,6 @@ export default async function ShowPage({ params }: { params: { slug: string } })
                 />
               </div>
             </div>
-            {/* Fade indicator for mobile scroll */}
-            <div className="absolute right-0 top-0 bottom-2 w-8 bg-gradient-to-l from-brand-dark to-transparent pointer-events-none sm:hidden" />
           </div>
         </div>
 
@@ -277,12 +280,46 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         )}
       </div>
 
+      {/* The three best lines, before anything else asks for attention */}
+      {topQuotes.length > 0 && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
+          <div className="flex items-baseline justify-between gap-4 mb-3">
+            <h2 className="font-serif italic text-2xl text-brand-text-primary">The best of {show.name}</h2>
+            <Link href={`/shows/${show.slug}/best-jokes/`} className="text-xs text-brand-gold hover:underline shrink-0">Top 50 →</Link>
+          </div>
+          <div className="grid gap-3 md:grid-cols-3">
+            {topQuotes.map(q => (
+              <Link key={`${q.season}-${q.episode}-${q.rank}`} href={`/shows/${show.slug}/${q.season}/${q.episode}/`}
+                className="group rounded-xl border border-brand-border bg-brand-card p-4 hover:border-brand-gold/40 transition-colors flex flex-col">
+                <p className="text-[15px] text-brand-text-primary leading-relaxed line-clamp-4">&ldquo;{q.text}&rdquo;</p>
+                <p className="mt-auto pt-3 text-xs text-brand-text-muted">
+                  {q.characters[0] ? <span className="text-brand-text-secondary">{q.characters[0]}</span> : null}
+                  {q.characters[0] ? ' · ' : ''}S{q.season}E{q.episode} {q.episodeTitle}
+                  <span className="float-right font-mono text-brand-gold">{q.score.toFixed(1)}</span>
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Comedy DNA: this show's match for the visitor, or a one-tap face-off to get one */}
       {dnaJokes.show.length >= 3 && (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-6">
           <ShowDnaPanel slug={show.slug} name={show.name} showJokes={dnaJokes.show} otherJokes={dnaJokes.others} />
         </div>
       )}
+
+
+
+      <ShowPageClient
+        show={show}
+        seasons={seasons}
+        episodes={episodes}
+        characters={characters}
+        characterProfiles={realCharacters}
+        comedyDna={comedyDna}
+      />
 
       {/* Where to watch — affiliate (Phase 1) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -295,16 +332,6 @@ export default async function ShowPage({ params }: { params: { slug: string } })
             subtitle={`${show.name} cast in the comedy movies we've scored`} />
         </div>
       )}
-
-
-      <ShowPageClient
-        show={show}
-        seasons={seasons}
-        episodes={episodes}
-        characters={characters}
-        characterProfiles={realCharacters}
-        comedyDna={comedyDna}
-      />
 
       {/* Screen-reader / crawler-only full episode score table. The visible
           per-episode arc is a <canvas> (invisible to answer engines), so we
@@ -444,8 +471,8 @@ export default async function ShowPage({ params }: { params: { slug: string } })
               {show.avg_jpm.toFixed(1)} jokes per minute, a craft score of {show.avg_craft.toFixed(1)}, and
               an impact score of {show.avg_impact.toFixed(1)}. Those numbers reflect one AI analyst&rsquo;s
               judgment applied consistently — and the top shows cluster closely enough that small gaps
-              aren&rsquo;t meaningful rankings. Scroll up for the season-by-season trend and the characters
-              carrying the comedy.
+              aren&rsquo;t meaningful rankings. The Episodes and Characters tabs above have the
+              season-by-season trend and who carries the comedy.
             </p>
           </section>
         );
@@ -546,7 +573,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
                         </p>
                       ) : recShow.avg_imdb_rating ? (
                         <p className="text-xs text-brand-text-muted">
-                          <span className="bg-[#F5C518] text-black font-bold text-[10px] px-1.5 py-0.5 rounded mr-1">IMDb</span>
+                          <span className="bg-[#F5C518] text-black font-bold text-[11px] px-1.5 py-0.5 rounded mr-1">IMDb</span>
                           {recShow.avg_imdb_rating.toFixed(1)} avg
                         </p>
                       ) : null}

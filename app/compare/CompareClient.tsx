@@ -194,24 +194,24 @@ export default function CompareClient({ shows: tvShows, movies = [], dnaBySlug }
                 {/* Names + HI numbers */}
                 <div className="bg-brand-card border-t border-brand-border grid grid-cols-2">
                   <div className="p-5 sm:p-7 text-right border-r border-brand-border">
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">{labelA}</p>
+                    <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-1">{labelA}</p>
                     <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight mb-3">
                       {showA.name}
                     </h2>
                     <p className="font-serif italic text-5xl sm:text-6xl text-brand-gold leading-none">
                       {formatIndex(showA.humor_index)}
                     </p>
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-2">Humor Index</p>
+                    <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-2">Humor Index</p>
                   </div>
                   <div className="p-5 sm:p-7">
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">{labelB}</p>
+                    <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-1">{labelB}</p>
                     <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight mb-3">
                       {showB.name}
                     </h2>
                     <p className="font-serif italic text-5xl sm:text-6xl text-brand-blue leading-none">
                       {formatIndex(showB.humor_index)}
                     </p>
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-2">Humor Index</p>
+                    <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-2">Humor Index</p>
                   </div>
                 </div>
 
@@ -250,7 +250,7 @@ export default function CompareClient({ shows: tvShows, movies = [], dnaBySlug }
                 const aWins = aVal >= bVal;
                 return (
                   <div key={d.key} className="bg-brand-card border border-brand-border rounded-xl p-4">
-                    <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-3">{d.label}</p>
+                    <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-3">{d.label}</p>
                     <div className="flex items-baseline justify-between mb-2">
                       <span className="font-mono text-xs text-brand-text-muted truncate mr-2">{showA.name}</span>
                       <span className={`font-mono text-base ${aWins ? 'text-brand-gold font-medium' : 'text-brand-text-secondary'}`}>
@@ -310,7 +310,7 @@ export default function CompareClient({ shows: tvShows, movies = [], dnaBySlug }
                 </div>
 
                 <div className="relative max-w-2xl mx-auto text-center">
-                  <p className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted mb-5">The Final Word</p>
+                  <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-5">The Final Word</p>
                   <h3 className="font-serif italic text-2xl sm:text-4xl text-brand-text-primary leading-snug mb-5">
                     {sweep ? (
                       <>

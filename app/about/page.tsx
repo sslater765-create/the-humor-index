@@ -71,8 +71,9 @@ export default async function AboutPage() {
             <p>
               I&apos;d had this idea rattling around for years. Then one night it clicked that AI
               had finally gotten good enough to do it. So I built a pipeline that reads every
-              transcript, detects every joke, and scores each one across multiple dimensions. No
-              opinions, no fan votes &mdash; just structured analysis of what makes comedy work.
+              transcript, detects every joke, and scores each one across multiple dimensions. No fan
+              votes and no critics: one AI reader applying the same rubric to every joke, with the
+              receipts published. It&apos;s still a judgment, just a consistent and checkable one.
             </p>
             <p>
               It started as my first project like this. Turns out quantifying humor is
@@ -93,8 +94,10 @@ export default async function AboutPage() {
               (audience reaction, quotability, rewatch value).
             </p>
             <p>
-              Those joke-level scores get aggregated into episode scores, season scores, and
-              show-level rankings. The full math is on the{' '}
+              The scorer is Anthropic&apos;s Claude Sonnet 4.6, run three times per episode with the
+              results averaged, because a single run is noisy. Those joke-level scores get aggregated
+              into episode scores, season scores, and show-level rankings. I read the output, fix the
+              data problems I find, and publish where the model is weak. The full math is on the{' '}
               <Link href="/methodology" className="text-brand-gold hover:underline">
                 Methodology page
               </Link>.
@@ -130,7 +133,7 @@ export default async function AboutPage() {
             <p>
               I&apos;m Sam. By day, I work in education and business leadership &mdash;
               from student advisor at Kaplan Test Prep all the way
-              to VP of Growth at Triad. I&apos;ve spent my career building teams, scaling
+              to Chief Revenue Officer at Triad. I&apos;ve spent my career building teams, scaling
               organizations, and figuring out how to make complex things accessible.
             </p>
             <p>

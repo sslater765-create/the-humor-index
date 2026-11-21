@@ -169,7 +169,7 @@ export default async function JokesPerMinutePage() {
               </div>
               <div className="text-right shrink-0">
                 <span className="font-mono text-lg text-brand-gold font-medium">{(s.avg_jpm || 0).toFixed(2)}</span>
-                <div className="text-[10px] text-brand-text-muted uppercase tracking-widest">jokes / min</div>
+                <div className="text-[11px] text-brand-text-muted uppercase tracking-widest">jokes / min</div>
               </div>
             </div>
           ))}
@@ -203,7 +203,7 @@ export default async function JokesPerMinutePage() {
 
         {movies.length > 0 && (
           <section className="mt-14">
-            <p className="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-1">Movies</p>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Movies</p>
             <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary">Jokes per minute in comedy movies</h2>
             <p className="text-sm text-brand-text-secondary mt-1 mb-4 max-w-2xl">
               Counted the same way, over each film&rsquo;s real running time. Movies spend minutes on plot, so they run sparser than sitcoms and are ranked on their own.

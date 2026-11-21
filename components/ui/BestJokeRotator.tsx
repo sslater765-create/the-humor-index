@@ -59,7 +59,7 @@ export default function BestJokeRotator({ topJokes }: Props) {
   return (
     <div className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-10 group transition-colors">
       <div className="flex items-center justify-between mb-6 gap-4">
-        <p className="text-[10px] uppercase tracking-[0.3em] text-brand-gold font-medium">
+        <p className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium">
           {heading}
         </p>
         <button
@@ -104,7 +104,7 @@ export default function BestJokeRotator({ topJokes }: Props) {
             <p className="font-mono text-2xl text-brand-gold">
               {joke.craft.toFixed(1)}
             </p>
-            <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">
+            <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">
               Craft
             </p>
           </div>
@@ -112,7 +112,7 @@ export default function BestJokeRotator({ topJokes }: Props) {
             <p className="font-mono text-2xl text-emerald-400">
               {joke.impact.toFixed(1)}
             </p>
-            <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">
+            <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">
               Impact
             </p>
           </div>

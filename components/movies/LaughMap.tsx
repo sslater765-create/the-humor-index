@@ -49,7 +49,7 @@ export default function LaughMap({ slug, bins, peakStart, slump }: Props) {
         {slump && (
           <div className="absolute top-0 bottom-6 rounded-md bg-white/[0.035]"
             style={{ left: `${pct(slump.start)}%`, width: `${pct(slump.end) - pct(slump.start)}%` }}>
-            <span className="absolute top-1 left-0 right-0 text-center text-[10px] sm:text-xs text-brand-text-muted whitespace-nowrap">plot happens here</span>
+            <span className="absolute top-1 left-0 right-0 text-center text-[11px] sm:text-xs text-brand-text-muted whitespace-nowrap">plot happens here</span>
           </div>
         )}
         <div className="absolute inset-x-0 top-6 bottom-6 flex items-end border-b border-brand-border"
@@ -69,7 +69,7 @@ export default function LaughMap({ slug, bins, peakStart, slump }: Props) {
                     outlineOffset: 1,
                   }} />
                 {isPeak && (
-                  <span className="absolute left-1/2 -translate-x-1/2 text-[10px] sm:text-xs font-semibold text-brand-gold whitespace-nowrap"
+                  <span className="absolute left-1/2 -translate-x-1/2 text-[11px] sm:text-xs font-semibold text-brand-gold whitespace-nowrap"
                     style={{ bottom: `calc(${(b.total / max) * 100}% + 4px)` }}>
                     funniest 5 min
                   </span>
@@ -80,7 +80,7 @@ export default function LaughMap({ slug, bins, peakStart, slump }: Props) {
         </div>
         <div className="absolute inset-x-0 bottom-0 h-5">
           {bins.filter((_, i) => i % 3 === 0).map(b => (
-            <span key={b.start} className="absolute text-[10px] sm:text-xs text-brand-text-muted" style={{ left: `${pct(b.start)}%` }}>
+            <span key={b.start} className="absolute text-[11px] sm:text-xs text-brand-text-muted" style={{ left: `${pct(b.start)}%` }}>
               {Math.round(b.start / 60)}m
             </span>
           ))}

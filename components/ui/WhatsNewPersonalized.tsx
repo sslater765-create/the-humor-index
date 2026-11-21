@@ -78,7 +78,7 @@ export default function WhatsNewPersonalized({ latestPosts = [] }: { latestPosts
       <div className="flex items-baseline gap-2 mb-4">
         <p className="text-xs uppercase tracking-widest text-brand-text-muted">What&apos;s New</p>
         {newSinceLabel && (
-          <span className="text-[10px] bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-2 py-0.5">
+          <span className="text-[11px] bg-brand-gold/10 text-brand-gold border border-brand-gold/30 rounded-full px-2 py-0.5">
             Since {newSinceLabel}
           </span>
         )}
@@ -86,7 +86,7 @@ export default function WhatsNewPersonalized({ latestPosts = [] }: { latestPosts
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {displayItems.map(item => (
           <Link key={item.href} href={item.href} className="bg-brand-card border border-brand-border rounded-xl p-4 hover:border-brand-gold/40 transition-colors group">
-            <p className={`text-[10px] ${item.labelColor} mb-1`}>{item.label}</p>
+            <p className={`text-[11px] ${item.labelColor} mb-1`}>{item.label}</p>
             <p className="text-sm font-medium text-brand-text-primary group-hover:text-brand-gold transition-colors line-clamp-2">{item.title}</p>
             <p className="text-xs text-brand-text-muted mt-1">{item.subtitle}</p>
           </Link>

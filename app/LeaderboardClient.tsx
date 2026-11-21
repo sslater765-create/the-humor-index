@@ -88,7 +88,7 @@ function Row({ show, rank, sortKey }: { show: ShowScore; rank: number | null; so
         </div>
       </div>
       <div className="text-right sm:text-left">
-        <span className={`font-serif italic leading-none text-3xl ${pending ? 'text-brand-text-muted' : 'text-brand-gold'}`}>
+        <span className={`font-mono leading-none text-2xl sm:text-3xl ${pending ? 'text-brand-text-muted' : 'text-brand-gold'}`}>
           {formatIndex(show.humor_index)}
         </span>
       </div>
@@ -140,7 +140,7 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
       </div>
 
       {/* Column heads, desktop only */}
-      <div className="hidden sm:grid grid-cols-[2.75rem_minmax(0,1fr)_7rem_repeat(4,4.5rem)] gap-x-4 pb-2 border-b border-brand-border text-[10px] uppercase tracking-widest text-brand-text-muted">
+      <div className="hidden sm:grid grid-cols-[2.75rem_minmax(0,1fr)_7rem_repeat(4,4.5rem)] gap-x-4 pb-2 border-b border-brand-border text-[11px] uppercase tracking-widest text-brand-text-muted">
         <span>Rank</span>
         <span>Show</span>
         <span>Humor Index</span>
@@ -160,9 +160,14 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
       )}
 
       <div>
-        {sorted.map((show, i) => (
-          <Row key={show.slug} show={show} rank={i + 1} sortKey={sortKey} />
-        ))}
+        {sorted.map((show, i) => {
+          // Shared rank for equal displayed values: Parks and Community at
+          // 91.9 are both 8th, not 8th and 9th by accident of sort order.
+          const key: MetricKey = sortKey === 'match' ? 'humor_index' : sortKey;
+          const shown = (s: ShowScore) => Math.round(s[key] * 10);
+          const rank = sortKey === 'match' && personal ? i + 1 : 1 + sorted.filter(o => shown(o) > shown(show)).length;
+          return <Row key={show.slug} show={show} rank={rank} sortKey={sortKey} />;
+        })}
       </div>
 
       {personal && dna && (
@@ -183,7 +188,7 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
         // Folded by default: six unranked rows used to take a full screen of the homepage.
         <details className="group mt-8 border-t border-brand-border pt-4">
           <summary className="list-none cursor-pointer select-none flex flex-wrap items-baseline justify-between gap-2">
-            <span className="text-[10px] uppercase tracking-[0.25em] text-brand-text-muted">
+            <span className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted">
               + {sortedPending.length} shows awaiting rescore
             </span>
             <span className="text-xs text-brand-text-muted">

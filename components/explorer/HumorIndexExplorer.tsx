@@ -225,7 +225,7 @@ export default function HumorIndexExplorer({ slug, showName, episodes, seriesInd
             <span className="text-brand-gold font-medium">{formatIndex(r.avg)}</span>
             {r.ci != null && <> (95% CI ±{r.ci.toFixed(1)})</>} —{' '}
             {r.delta >= 0 ? '+' : ''}{r.delta.toFixed(1)} vs the full series ({formatIndex(seriesAvg)}),{' '}
-            <span className={r.tier.badgeText}>{r.tier.label}</span> tier. Higher than {r.pct}% of all {showName} episodes.</>
+            <span className={r.tier.badgeText}>{r.tier.label}</span> tier.{r.n < eps.length ? <> A cut this good beats {r.pct}% of single {showName} episodes.</> : <> That&apos;s the whole series: deselect episodes or pick a preset to compare a slice.</>}</>
         ) : 'Select at least one episode to see its Humor Index.'}
       </p>
 

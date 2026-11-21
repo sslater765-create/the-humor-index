@@ -197,7 +197,7 @@ function CharacterSlot({
         </div>
       )}
       <div className="flex-1 min-w-0">
-        <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mb-1">Fighter {side}</p>
+        <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-1">Fighter {side}</p>
         <select
           value={character ? charKey(character) : ''}
           onChange={e => onChange(e.target.value)}

@@ -95,7 +95,7 @@ export default function MoviesTable({ movies, extras }: { movies: MovieSummary[]
                 ) : null}
                 <div className="text-right w-20 shrink-0">
                   <p className="font-mono text-2xl text-brand-gold leading-none">{s.v}</p>
-                  <p className="text-[10px] uppercase tracking-wider text-brand-text-muted mt-1">{s.l}</p>
+                  <p className="text-[11px] uppercase tracking-wider text-brand-text-muted mt-1">{s.l}</p>
                 </div>
               </Link>
             </li>

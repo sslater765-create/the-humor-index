@@ -253,7 +253,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
                     </div>
                     <div className="text-right">
                       <span className="font-mono text-lg text-brand-gold font-medium">{value.toFixed(sortMode === 'total_war' ? 1 : 2)}</span>
-                      <p className="text-[10px] text-brand-text-muted uppercase tracking-widest">
+                      <p className="text-[11px] text-brand-text-muted uppercase tracking-widest">
                         {sortMode === 'total_war' ? 'WAR' : sortMode === 'war_per_ep' ? 'WAR/ep' : 'Quality'}
                       </p>
                     </div>
@@ -279,7 +279,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
           <div className="bg-brand-card border border-brand-border rounded-xl p-4">
             <div className="flex items-baseline justify-between mb-3">
               <p className="text-xs uppercase tracking-widest text-brand-text-primary font-medium">Most Total WAR</p>
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Volume</p>
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">Volume</p>
             </div>
             <div className="space-y-1.5">
               {towerList.byTotal.map((c, i) => {
@@ -300,7 +300,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
                         <span className={`font-mono text-xs w-5 text-right shrink-0 ${i < 3 ? 'text-brand-gold' : 'text-brand-text-muted'}`}>{i + 1}</span>
                         <div className="min-w-0">
                           <div className="text-sm text-brand-text-primary group-hover:text-brand-gold transition-colors truncate">{c.name}</div>
-                          <div className="text-[10px] text-brand-text-muted truncate">{c.showName}</div>
+                          <div className="text-[11px] text-brand-text-muted truncate">{c.showName}</div>
                         </div>
                       </div>
                       <span className="font-mono text-sm text-brand-gold shrink-0">{c.war.toFixed(1)}</span>
@@ -315,7 +315,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
           <div className="bg-brand-card border border-brand-border rounded-xl p-4">
             <div className="flex items-baseline justify-between mb-3">
               <p className="text-xs uppercase tracking-widest text-brand-text-primary font-medium">Most WAR per Episode</p>
-              <p className="text-[10px] uppercase tracking-widest text-brand-text-muted">Efficiency</p>
+              <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">Efficiency</p>
             </div>
             <div className="space-y-1.5">
               {towerList.byPerEp.map((c, i) => {
@@ -336,7 +336,7 @@ export default function CharactersClient({ characters, ascending = false }: { ch
                         <span className={`font-mono text-xs w-5 text-right shrink-0 ${i < 3 ? 'text-brand-gold' : 'text-brand-text-muted'}`}>{i + 1}</span>
                         <div className="min-w-0">
                           <div className="text-sm text-brand-text-primary group-hover:text-brand-gold transition-colors truncate">{c.name}</div>
-                          <div className="text-[10px] text-brand-text-muted truncate">{c.showName}</div>
+                          <div className="text-[11px] text-brand-text-muted truncate">{c.showName}</div>
                         </div>
                       </div>
                       <span className="font-mono text-sm text-brand-gold shrink-0">{c.warPerEpisode.toFixed(2)}</span>

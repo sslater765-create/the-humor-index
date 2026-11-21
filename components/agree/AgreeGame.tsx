@@ -129,8 +129,8 @@ export default function AgreeGame({ pool, jokeCount }: { pool: AgreeJoke[]; joke
       {/* Scoreboard */}
       <div className="grid grid-cols-[1fr_auto_1fr] gap-3 items-stretch max-w-lg mx-auto">
         <div className="bg-brand-card border border-brand-border rounded-xl px-4 py-3 text-center">
-          <p className="font-serif italic text-3xl text-brand-gold leading-none">{myPct === null ? '—' : `${myPct}%`}</p>
-          <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1.5">
+          <p className="font-serif italic text-3xl text-brand-gold leading-none">{myPct === null ? <span className="text-base not-italic text-brand-text-muted">Pick one to start</span> : `${myPct}%`}</p>
+          <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1.5">
             You match {local.total ? `· ${local.total} call${local.total === 1 ? '' : 's'}` : ''}
           </p>
         </div>
@@ -140,8 +140,8 @@ export default function AgreeGame({ pool, jokeCount }: { pool: AgreeJoke[]; joke
           <span className="text-[9px] uppercase tracking-[0.15em] text-brand-text-muted mt-1">streak</span>
         </div>
         <div className="bg-brand-card border border-brand-border rounded-xl px-4 py-3 text-center">
-          <p className="font-serif italic text-3xl text-brand-text-primary leading-none">{globalPct === null ? '—' : `${globalPct}%`}</p>
-          <p className="text-[10px] uppercase tracking-widest text-brand-text-muted mt-1.5">
+          <p className="font-serif italic text-3xl text-brand-text-primary leading-none">{globalPct === null ? <span className="text-base not-italic text-brand-text-muted">Tallying</span> : `${globalPct}%`}</p>
+          <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1.5">
             Everyone {globalTotal ? `· ${globalTotal.toLocaleString()}` : ''}
           </p>
         </div>
@@ -151,7 +151,7 @@ export default function AgreeGame({ pool, jokeCount }: { pool: AgreeJoke[]; joke
         <div className="h-1.5 rounded-full bg-brand-gold/10 overflow-hidden">
           <div className="h-full bg-brand-gold transition-all duration-500" style={{ width: `${myPct ?? 0}%` }} />
         </div>
-        <div className="flex justify-between text-[10px] tracking-wider text-brand-text-muted mt-1.5">
+        <div className="flex justify-between text-[11px] tracking-wider text-brand-text-muted mt-1.5">
           <span>YOUR AGREEMENT RATE</span>
           {globalPct !== null && <span>crowd avg {globalPct}%</span>}
         </div>
@@ -214,11 +214,11 @@ export default function AgreeGame({ pool, jokeCount }: { pool: AgreeJoke[]; joke
                   >
                     {j.s.toFixed(1)}
                   </span>
-                  <span className="text-[10px] text-brand-text-muted">/10</span>
+                  <span className="text-[11px] text-brand-text-muted">/10</span>
                   <span className="text-[9px] uppercase tracking-widest text-brand-text-muted ml-1">Impact</span>
                 </span>
                 {!revealed && (
-                  <span className="text-[10px] uppercase tracking-[0.18em] text-brand-gold border border-brand-gold/40 rounded-lg px-3 py-2">
+                  <span className="text-[11px] uppercase tracking-[0.18em] text-brand-gold border border-brand-gold/40 rounded-lg px-3 py-2">
                     Tap to pick
                   </span>
                 )}
@@ -232,7 +232,7 @@ export default function AgreeGame({ pool, jokeCount }: { pool: AgreeJoke[]; joke
       {revealed && winner && (
         <div className="mt-6 text-center max-w-lg mx-auto">
           <span
-            className={`inline-block text-[10px] uppercase tracking-[0.22em] px-3 py-1.5 rounded-full mb-3 border ${
+            className={`inline-block text-[11px] uppercase tracking-[0.22em] px-3 py-1.5 rounded-full mb-3 border ${
               picked === winnerId
                 ? 'text-brand-gold bg-brand-gold/15 border-brand-gold/40'
                 : 'text-brand-text-secondary bg-white/5 border-brand-border'
