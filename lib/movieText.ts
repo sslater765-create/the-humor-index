@@ -78,3 +78,16 @@ export function bestLine(j: MovieJoke): string {
 export function lineParts(line: string): Array<{ text: string; direction: boolean }> {
   return line.split(/(\[[^\]]+\])/).filter(Boolean).map(t => ({ text: t, direction: /^\[.*\]$/.test(t) }));
 }
+
+/**
+ * Who said a joke's headline line. The scorer sometimes lists the person being
+ * addressed first ("Gretchen, stop trying to make fetch happen"), so skip a
+ * character whose first name appears in the line itself.
+ */
+export function lineSpeaker(line: string, characters: string[]): string | undefined {
+  const l = line.toLowerCase();
+  return characters.find(c => {
+    const first = c.toLowerCase().split(/\s+/)[0].replace(/[^a-z]/g, '');
+    return first.length < 3 || !new RegExp(`\\b${first}\\b`).test(l);
+  });
+}

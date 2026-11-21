@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getMovies, getMovieQueue, getMovie, bestLine, jokeLines, shortTitle, filmTime, laughMapNotes, TMDB_IMG, type MovieJoke } from '@/lib/movies';
+import { getMovies, getMovieQueue, getMovie, bestLine, jokeLines, lineSpeaker, shortTitle, filmTime, laughMapNotes, TMDB_IMG, type MovieJoke } from '@/lib/movies';
 import MiniLaughMap from '@/components/movies/MiniLaughMap';
 import type { MovieRowExtra } from '@/components/movies/MoviesTable';
 import { formatIndex } from '@/lib/scoring';
@@ -36,7 +36,7 @@ export default async function MoviesPage() {
     if (!d) return;
     const j = lead(d.jokes);
     const notes = laughMapNotes(d.laugh_map, d.jokes);
-    extras[m.slug] = { line: j ? bestLine(j) : '', who: j?.characters[0], bins: d.laugh_map, peak: notes.peak ? `${filmTime(notes.peak.start)} to ${filmTime(notes.peak.end)}` : undefined };
+    extras[m.slug] = { line: j ? bestLine(j) : '', who: j ? lineSpeaker(bestLine(j), j.characters) : undefined, bins: d.laugh_map, peak: notes.peak ? `${filmTime(notes.peak.start)} to ${filmTime(notes.peak.end)}` : undefined };
   });
   const totalJokes = movies.reduce((s, m) => s + m.total_jokes, 0);
   // Records across every scored film.
@@ -107,7 +107,7 @@ export default async function MoviesPage() {
               <Link href={`/movies/${tj.slug}`} className="rounded-xl border border-brand-border bg-brand-card p-4 hover:border-brand-gold/40 transition-colors">
                 <p className="text-[10px] uppercase tracking-[0.2em] text-brand-gold">Funniest movie line so far</p>
                 <p className="mt-2 text-sm text-brand-text-primary italic line-clamp-3">&ldquo;{bestLine(tj.j)}&rdquo;</p>
-                <p className="mt-2 text-xs text-brand-text-muted">{tj.j.characters[0] ? `${tj.j.characters[0]}, ` : ''}{tj.name} · {tj.j.score.toFixed(1)}</p>
+                <p className="mt-2 text-xs text-brand-text-muted">{lineSpeaker(bestLine(tj.j), tj.j.characters) ? `${lineSpeaker(bestLine(tj.j), tj.j.characters)}, ` : ''}{tj.name} · {tj.j.score.toFixed(1)}</p>
               </Link>
             )}
             <Link href={`/movies/${densest.slug}`} className="rounded-xl border border-brand-border bg-brand-card p-4 hover:border-brand-gold/40 transition-colors">

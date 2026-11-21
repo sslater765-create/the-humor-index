@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getMovies, getMovie, jokeLines, bestLine, lineParts, filmTime, shortTitle, laughMapNotes, TMDB_IMG, type MovieJoke } from '@/lib/movies';
+import { getMovies, getMovie, jokeLines, bestLine, lineParts, lineSpeaker, filmTime, shortTitle, laughMapNotes, TMDB_IMG, type MovieJoke } from '@/lib/movies';
 import { formatIndex, JOKE_TYPE_LABELS } from '@/lib/scoring';
 import ScoreGauge from '@/components/ui/ScoreGauge';
 import ShareButton from '@/components/ui/ShareButton';
@@ -51,7 +51,9 @@ function Quote({ j, rank }: { j: MovieJoke; rank?: number }) {
   // A joke the scorer logged only as a description: lead with the line it
   // describes, and keep the description underneath as context.
   const onlyNote = parsed.length > 0 && parsed.every(l => l.note);
-  const lines = onlyNote ? [{ speaker: j.characters[0], line: bestLine(j), note: false }] : parsed;
+  const lines = onlyNote ? [{ speaker: lineSpeaker(bestLine(j), j.characters), line: bestLine(j), note: false }] : parsed;
+  const squash = (x: string) => x.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const showNote = onlyNote && squash(j.text) !== squash(bestLine(j)) && squash(j.text).length > squash(bestLine(j)).length + 12;
   return (
     <div className="rounded-xl border border-brand-border bg-brand-card p-4 flex gap-4">
       {rank != null && <span className="font-mono text-sm text-brand-text-muted w-6 shrink-0 pt-0.5">#{rank}</span>}
@@ -62,7 +64,7 @@ function Quote({ j, rank }: { j: MovieJoke; rank?: number }) {
             {l.note ? l.line : <Spoken line={l.line} />}
           </p>
         ))}
-        {onlyNote && <p className="text-xs italic text-brand-text-muted leading-relaxed">{j.text}</p>}
+        {showNote && <p className="text-xs italic text-brand-text-muted leading-relaxed">{j.text}</p>}
         <p className="text-[11px] text-brand-text-muted pt-1">
           {filmTime(j.t)}
           {j.joke_types[0] && <> · {JOKE_TYPE_LABELS[j.joke_types[0] as keyof typeof JOKE_TYPE_LABELS] ?? j.joke_types[0].replace(/_/g, ' ')}</>}

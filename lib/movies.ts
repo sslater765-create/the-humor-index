@@ -123,7 +123,7 @@ export function shortTitle(title: string): string {
   return t.length >= 4 ? t : title;
 }
 
-export { jokeLines, bestLine, lineParts, type Line } from './movieText';
+export { jokeLines, bestLine, lineParts, lineSpeaker, type Line } from './movieText';
 
 export interface LaughMapNotes {
   peak: LaughBin;

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getMovies, getMovie, getMovieQueue, bestLine, jokeLines, shortTitle, TMDB_IMG } from '@/lib/movies';
+import { getMovies, getMovie, getMovieQueue, bestLine, jokeLines, lineSpeaker, shortTitle, TMDB_IMG } from '@/lib/movies';
 import { formatIndex } from '@/lib/scoring';
 import MiniLaughMap from './MiniLaughMap';
 
@@ -73,7 +73,7 @@ export default async function MovieSpotlight() {
                 &ldquo;{bestLine(leadJoke)}&rdquo;
               </p>
               <p className="text-xs text-brand-text-muted mt-1">
-                {leadJoke.characters[0] ? `${leadJoke.characters[0]}, ` : ''}{shortTitle(leader.title)} · the No. 1 movie&rsquo;s best line
+                {lineSpeaker(bestLine(leadJoke), leadJoke.characters) ? `${lineSpeaker(bestLine(leadJoke), leadJoke.characters)}, ` : ''}{shortTitle(leader.title)} · the No. 1 movie&rsquo;s best line
               </p>
             </Link>
           ) : <span />}
