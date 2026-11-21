@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getMovies, getMovie, jokeLines, bestLine, filmTime, shortTitle, laughMapNotes, TMDB_IMG, type MovieJoke } from '@/lib/movies';
+import { getMovies, getMovie, jokeLines, bestLine, lineParts, filmTime, shortTitle, laughMapNotes, TMDB_IMG, type MovieJoke } from '@/lib/movies';
 import { formatIndex, JOKE_TYPE_LABELS } from '@/lib/scoring';
 import ScoreGauge from '@/components/ui/ScoreGauge';
 import ShareButton from '@/components/ui/ShareButton';
@@ -36,8 +36,22 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
+function Spoken({ line }: { line: string }) {
+  return (
+    <>
+      {lineParts(line).map((p, k) => p.direction
+        ? <span key={k} className="italic text-brand-text-muted">{p.text}</span>
+        : <span key={k}>{p.text}</span>)}
+    </>
+  );
+}
+
 function Quote({ j, rank }: { j: MovieJoke; rank?: number }) {
-  const lines = jokeLines(j.text, j.characters);
+  const parsed = jokeLines(j.text, j.characters);
+  // A joke the scorer logged only as a description: lead with the line it
+  // describes, and keep the description underneath as context.
+  const onlyNote = parsed.length > 0 && parsed.every(l => l.note);
+  const lines = onlyNote ? [{ speaker: j.characters[0], line: bestLine(j), note: false }] : parsed;
   return (
     <div className="rounded-xl border border-brand-border bg-brand-card p-4 flex gap-4">
       {rank != null && <span className="font-mono text-sm text-brand-text-muted w-6 shrink-0 pt-0.5">#{rank}</span>}
@@ -45,9 +59,10 @@ function Quote({ j, rank }: { j: MovieJoke; rank?: number }) {
         {lines.map((l, i) => (
           <p key={i} className={`text-sm sm:text-[15px] leading-relaxed ${l.note ? 'italic text-brand-text-secondary' : 'text-brand-text-primary'}`}>
             {l.speaker && <span className="text-brand-gold font-medium mr-1.5">{l.speaker}:</span>}
-            {l.line}
+            {l.note ? l.line : <Spoken line={l.line} />}
           </p>
         ))}
+        {onlyNote && <p className="text-xs italic text-brand-text-muted leading-relaxed">{j.text}</p>}
         <p className="text-[11px] text-brand-text-muted pt-1">
           {filmTime(j.t)}
           {j.joke_types[0] && <> · {JOKE_TYPE_LABELS[j.joke_types[0] as keyof typeof JOKE_TYPE_LABELS] ?? j.joke_types[0].replace(/_/g, ' ')}</>}

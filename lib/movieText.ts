@@ -11,7 +11,8 @@ const QUOTED = /^['"‘“](.+?)['"’”][.!?]?$/;
  * parse cleanly is shown as written rather than guessed at.
  */
 export function jokeLines(text: string, characters: string[]): Line[] {
-  const full = (name: string) => {
+  const full = (raw: string) => {
+    const name = raw.replace(/['’]s$/, '');
     const n = name.trim().toLowerCase();
     return characters.find(c => {
       const cl = c.toLowerCase();
@@ -66,9 +67,14 @@ export function jokeLines(text: string, characters: string[]): Line[] {
 export function bestLine(j: MovieJoke): string {
   const lines = jokeLines(j.text, j.characters).filter(l => !l.note);
   const pick = lines.sort((a, b) => b.line.length - a.line.length)[0];
-  if (pick) return pick.line.replace(/\s+/g, ' ').trim();
+  if (pick) return pick.line.replace(/\s*\[[^\]]+\]\s*/g, ' ').replace(/\s+/g, ' ').trim();
   // Only a stage note: quote the line it describes.
   const inner = j.text.match(/(?:^|[\s:(])['\u2018\u201C](.{6,}?)['\u2019\u201D](?=[\s.,!?;)]|$)/);
   return (inner ? inner[1] : j.text).replace(/\s+/g, ' ').trim();
 }
 
+
+/** Split a line into spoken text and [bracketed stage directions] for display. */
+export function lineParts(line: string): Array<{ text: string; direction: boolean }> {
+  return line.split(/(\[[^\]]+\])/).filter(Boolean).map(t => ({ text: t, direction: /^\[.*\]$/.test(t) }));
+}
