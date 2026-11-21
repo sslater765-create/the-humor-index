@@ -537,6 +537,15 @@ export default async function RankingsPage() {
           <p className="text-xs text-brand-text-muted mt-4 group-hover:text-brand-gold transition-colors">See both lists →</p>
         </Link>
 
+        {/* The ensemble draft */}
+        <Link href="/draft"
+          className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group">
+          <p className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">Play</p>
+          <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">The ensemble draft</h2>
+          <p className="text-sm text-brand-text-secondary max-w-2xl">Snake-draft a five-person sitcom cast against the Index, using Comedy WAR. One character per show. Highest total wins.</p>
+          <p className="text-xs text-brand-text-muted mt-4 group-hover:text-brand-gold transition-colors">Start drafting →</p>
+        </Link>
+
         {/* Running gags, with a stat line each */}
         <Link href="/rankings/running-gags"
           className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group">

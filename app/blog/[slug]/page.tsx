@@ -8,6 +8,7 @@ import SocialShare from '@/components/ui/SocialShare';
 import EndOfArticleCTA from '@/components/ui/EndOfArticleCTA';
 import BreadcrumbJsonLd from '@/components/seo/BreadcrumbJsonLd';
 import { getAllShows } from '@/lib/data';
+import { rankable } from '@/lib/scale';
 import { formatIndex } from '@/lib/scoring';
 import { POSTS } from '../posts';
 import { SITE_URL } from '@/lib/site';
@@ -52,6 +53,19 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     .filter(s => s.humor_index > 0)
     .sort((a, b) => b.humor_index - a.humor_index)
     .slice(0, 3);
+
+  // "Where they stand today": ranks move every time a show is rescored, so every
+  // post that names a ranked show gets that show's live rank next to the byline.
+  const board = rankable(allShows).filter(s => s.humor_index > 0).sort((a, b) => b.humor_index - a.humor_index);
+  const named = `${post.title} ${post.description}`.toLowerCase();
+  const standing = board
+    .map((s, i) => ({ s, rank: i + 1 }))
+    .filter(({ s }) => {
+      const n = s.name.toLowerCase().replace(/^the /, '');
+      const short = n.replace(/ in philadelphia$/, '').replace(/ and recreation$/, '');
+      return named.includes(n) || (short.length > 4 && named.includes(short));
+    })
+    .slice(0, 4);
 
   // Simple markdown-like rendering
   const paragraphs = post.content.trim().split('\n\n');
@@ -235,6 +249,18 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           text={post.description}
           url={`/blog/${params.slug}`}
         />
+        {standing.length > 0 && (
+          <p className="mt-4 rounded-lg border border-brand-border bg-brand-card px-3 py-2 text-xs text-brand-text-muted">
+            <span className="uppercase tracking-wider">Where they stand today:</span>{' '}
+            {standing.map(({ s, rank }, i) => (
+              <span key={s.slug}>
+                {i > 0 && ' · '}
+                <Link href={`/shows/${s.slug}/`} className="text-brand-text-secondary hover:text-brand-gold">{s.name}</Link>{' '}
+                <span className="font-mono text-brand-gold">#{rank}</span> of {board.length}, {formatIndex(s.humor_index)}
+              </span>
+            ))}
+          </p>
+        )}
       </div>
 
       {cover && (

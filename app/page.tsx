@@ -1,3 +1,4 @@
+import { withIntervals } from '@/lib/siteStats';
 import Link from 'next/link';
 import { getAllShows, getEpisodes, getQuickPickPool, getTopJokes, getJokeRoulette } from '@/lib/data';
 import JokeRoulette from '@/components/home/JokeRoulette';
@@ -94,10 +95,6 @@ export default async function HomePage() {
                   </Link>
                 ))}
               </div>
-              <p className="hidden sm:block text-base sm:text-lg text-brand-text-muted max-w-2xl leading-relaxed mt-4">
-                No laugh tracks, no nostalgia, no &ldquo;you had to be there.&rdquo; Browse the rankings,
-                settle an argument between two shows, or find out which episode you should actually rewatch.
-              </p>
 
               {/* Big numbers — magazine cover stats */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-6 sm:gap-8 max-w-2xl mt-10 lg:mt-auto lg:pt-8">
@@ -155,7 +152,7 @@ export default async function HomePage() {
                 Full rankings →
               </Link>
             </div>
-            <LeaderboardClient shows={rankable(shows)} pending={awaitingRescore(shows)} quickPool={quickPool} />
+            <LeaderboardClient shows={await withIntervals(rankable(shows))} pending={awaitingRescore(shows)} quickPool={quickPool} />
             <div className="mt-6 pt-5 border-t border-brand-border flex flex-wrap items-center gap-x-6 gap-y-2">
               <Link href="/shows" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
                 Browse all {analyzedShows.length} shows →

@@ -5,9 +5,49 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'index-is-wrong-about-the-banana-stand': {
+    title: "The Index Is Wrong About the Banana Stand",
+    description: "Our new running-gag stat puts Arrested Development's banana stand at -8.0 Laughs Above Replacement, the worst of the show's gags. The number is right about what it counts and wrong about the gag.",
+    date: '2026-11-21',
+    category: 'Column',
+    content: `
+*The Index Is Wrong About... is a column where we argue with our own numbers.*
+
+This week we started scoring running gags. Each one gets a stat line, and the headline stat is LAR, Laughs Above Replacement: every time the gag shows up, how much better that joke scored than the show's ordinary joke, added up. A gag that keeps landing piles up a big positive number. One that keeps showing up on average jokes goes negative.
+
+Arrested Development's best running gags look the way you'd expect. "I've made a huge mistake" is +8.3 across ten episodes, and 83% of its appearances beat the show's median joke. Buster's hook hand is +6.8. Even the "On the next Arrested Development" tags come in at +6.2.
+
+Then there's the banana stand: **-8.0**. Thirteen episodes, 45 jokes, and only 40% of them beat the median. By our own stat, it's the least valuable running gag in the show.
+
+That's wrong. Here's why, and what the number is actually telling us.
+
+## What the number gets right
+
+The individual scores aren't the problem. The best banana-stand jokes score like the best jokes in the show. George Sr.'s "How much clearer can I say... there's always money in the banana stand?" scores 8.9. The grandfather's vow to get even for the stand he stole scores 9.0. The Season 5 callback, "Right. Where is that from? Is that from something?", scores 8.5. The show's median joke is 7.6.
+
+## What it gets wrong
+
+The bottom of the list is where it falls apart. George Michael explaining he got a job at the banana stand scores 6.0. Michael worrying it "can get pretty hairy in there" scores 5.1. Michael narrating "Where are you, banana stand money?" scores 5.9.
+
+Those aren't failed banana-stand jokes. Most of them are the banana stand doing its other job: it's the family's original business, where George Michael works, the place scenes happen. The stat counts every line that says "banana stand" as an attempt at the gag, so the plot drags the gag down.
+
+The deeper problem is that a running gag is built out of setups. The banana stand's payoff works because the show spends two seasons treating it as a sad little job. Score those scenes one at a time and they look ordinary, because they're supposed to. The laugh they set up arrives episodes later, and LAR gives that later joke none of the credit.
+
+## What we'll change
+
+Two fixes, in order:
+
+1. Count a line toward a gag only when the gag is the joke, not when the place or object just comes up. For the banana stand, that cuts the plot mentions and keeps the "always money" lines.
+2. Credit a payoff with the setups that made it work, the same way a sacrifice fly gets an RBI. That's harder, and we'll publish the method before we ship it.
+
+Until then, read LAR the way you'd read any one stat: it's right about what it counts. For the banana stand it's counting the wrong things.
+
+Disagree? Tell us which gag you think is underrated, and check it on [the running gags leaderboard](/rankings/running-gags).
+`,
+  },
   'always-sunny-fewer-jokes-better-with-age': {
     title: "It's Always Sunny Tells Fewer Jokes Than Almost Anyone. It Got Funnier With Age.",
-    description: "Rescored on our current model, It's Always Sunny in Philadelphia moves from 79.2 to 87.5 and ranks 11th of 15. Its joke rate is third-lowest on the board, and its best season is Season 12.",
+    description: "Rescored on our current model, It's Always Sunny in Philadelphia moves from 79.2 to 87.5, 11th of 15 when this ran. Its joke rate is third-lowest on the board, and its best season is Season 12.",
     date: '2026-11-19',
     category: 'Analysis',
     content: `

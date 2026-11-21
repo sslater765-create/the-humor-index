@@ -258,6 +258,27 @@ export async function removeFromList(listId: number, kind: Kind, ref: string): P
   return error ? fail(error) : { ok: true };
 }
 
+export async function updateListItemNote(listId: number, kind: Kind, ref: string, note: string): Promise<Result<null>> {
+  const { error } = await createClient()
+    .from('list_items')
+    .update({ note: note.trim().slice(0, 500) || null })
+    .eq('list_id', listId)
+    .eq('kind', kind)
+    .eq('ref', ref);
+  return error ? fail(error) : { ok: true };
+}
+
+/** The diary as CSV, Letterboxd-style columns plus the Humor Index. */
+export function diaryCsv(logs: LogRow[]): string {
+  const esc = (v: unknown) => {
+    const s = v === null || v === undefined ? '' : String(v);
+    return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  };
+  const head = ['Watched Date', 'Kind', 'Title', 'Subtitle', 'Rating', 'Rewatch', 'Humor Index', 'Note', 'URL'];
+  const rows = logs.map((l) => [l.watched_on, l.kind, l.title, l.subtitle ?? '', l.stars ?? '', l.rewatch ? 'Yes' : '', l.hi ?? '', l.note ?? '', `https://www.thehumorindex.com${l.href}`]);
+  return [head, ...rows].map((r) => r.map(esc).join(',')).join('\n');
+}
+
 /** Swap an item with its neighbour. dir -1 = up, 1 = down. */
 export async function moveInList(list: ListRow, index: number, dir: -1 | 1): Promise<Result<ListItemRow[]>> {
   const items = list.list_items.map((i, n) => ({ ...i, position: n }));

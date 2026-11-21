@@ -15,7 +15,7 @@ export const metadata = {
   alternates: { canonical: `${SITE_URL}/rankings/running-gags/` },
 };
 
-type Row = RunningGag & { slug: string; show: string };
+type Row = RunningGag & { slug: string; show: string; legacy?: boolean };
 
 function Stat({ k, v, tone = '' }: { k: string; v: string; tone?: string }) {
   return (
@@ -35,6 +35,7 @@ function GagRow({ g, i }: { g: Row; i: number }) {
           <p className="text-brand-text-primary font-medium">{g.name}</p>
           <p className="text-xs text-brand-text-muted">
             <Link href={`/shows/${g.slug}/`} className="hover:text-brand-gold">{g.show}</Link> · {seasonSpan(g)}
+            {g.legacy && <span className="ml-1.5 rounded border border-brand-border px-1 py-px text-[10px] uppercase tracking-wider" title="This show's jokes were scored on our earlier model. LAR compares each gag with its own show, so it still reads fairly.">earlier model</span>}
           </p>
           {g.summary && <p className="mt-1.5 text-sm text-brand-text-secondary">{g.summary}</p>}
           <Link href={`/shows/${g.slug}/${g.best.season}/${g.best.episode}/`} className="mt-2 block text-sm text-brand-text-secondary hover:text-brand-gold">
@@ -60,7 +61,9 @@ function GagRow({ g, i }: { g: Row; i: number }) {
 
 export default async function RunningGagsPage() {
   const ranked = new Set(rankable(await getAllShows()).map((s) => s.slug));
-  const gags = allRunningGags().filter((g) => ranked.has(g.slug));
+  // Every show's gags, including the five on the earlier model: LAR compares a
+  // gag with its own show's median joke, so it doesn't depend on the scale.
+  const gags: Row[] = allRunningGags().map((g) => ({ ...g, legacy: !ranked.has(g.slug) }));
   const byLar = [...gags].sort((a, b) => b.lar - a.lar).slice(0, 40);
   const reliable = [...gags].filter((g) => g.j >= 6).sort((a, b) => b.hit - a.hit || b.lar - a.lar).slice(0, 10);
   const improved = [...gags].filter((g) => g.trend !== null && g.j >= 8).sort((a, b) => (b.trend ?? 0) - (a.trend ?? 0)).slice(0, 8);
@@ -76,6 +79,12 @@ export default async function RunningGagsPage() {
         subtitle={`${gags.length} running gags across ${showCount} shows, each with a stat line. Every joke on the Index is scored on its own, which tells you nothing about a bit the writers kept coming back to. This page does.`}
       />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-14">
+        <Link href="/rankings/running-gags/bracket/" className="block rounded-xl border border-brand-gold/40 bg-brand-gold/5 p-5 hover:border-brand-gold transition-colors">
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold">The bracket</p>
+          <p className="mt-1 font-serif italic text-2xl text-brand-text-primary">Sixteen shows, one gag each. Pick the champion.</p>
+          <p className="mt-1 text-sm text-brand-text-secondary">Seeded by LAR, decided by you, with the crowd’s split shown after every pick.</p>
+        </Link>
+
         <section className="rounded-xl border border-brand-border bg-brand-card p-5 text-sm text-brand-text-secondary leading-relaxed">
           <p className="text-brand-text-primary font-medium mb-2">How to read the stat line</p>
           <dl className="grid sm:grid-cols-2 gap-x-8 gap-y-2">
@@ -134,7 +143,9 @@ export default async function RunningGagsPage() {
         <p className="text-xs text-brand-text-muted leading-relaxed">
           How gags are found: we look for phrases that come back across at least four episodes of one show but rarely anywhere else, then a model reads
           sample lines and keeps only deliberate recurring bits, merging variants of the same gag. Storylines that get mentioned every scene are left out.
-          The stats come straight from the scored jokes. Running gags do not change any show’s Humor Index.{' '}
+          The same model that scores the jokes finds and names the gags, so LAR is the model’s reading of its own findings: useful for comparing gags,
+          not an outside check. It needs a phrase in at least four episodes, so one-episode catchphrases the culture made famous are tracked separately as
+          fan favorites on each show page. Running gags do not change any show’s Humor Index.{' '}
           <Link href="/methodology/" className="text-brand-gold hover:underline">How we score</Link>.
         </p>
       </div>

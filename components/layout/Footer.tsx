@@ -146,6 +146,12 @@ export default function Footer() {
           <Link href="/why" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Why
           </Link>
+          <Link href="/draft" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            Draft
+          </Link>
+          <Link href="/study" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            Rate jokes
+          </Link>
           <Link href="/methodology" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Methodology
           </Link>

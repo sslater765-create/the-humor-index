@@ -23,6 +23,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   'Deep Dive': 'from-amber-900/40 to-brand-card',
   'Methodology': 'from-emerald-900/40 to-brand-card',
   'Analysis': 'from-purple-900/40 to-brand-card',
+  'Column': 'from-rose-900/40 to-brand-card',
 };
 
 const CATEGORY_ACCENTS: Record<string, string> = {
@@ -30,12 +31,14 @@ const CATEGORY_ACCENTS: Record<string, string> = {
   'Deep Dive': 'text-brand-gold',
   'Methodology': 'text-emerald-400',
   'Analysis': 'text-purple-400',
+  'Column': 'text-rose-400',
 };
 
 // Title, description, date and category come from posts.ts, so the index
 // cannot drift from the posts themselves. Only the card extras live here.
 // A post missing from CARDS still renders, with default extras.
 const CARDS: Record<string, { readTime: string; stat: string; statLabel: string }> = {
+  'index-is-wrong-about-the-banana-stand': { readTime: '3 min read', stat: '-8.0', statLabel: 'Banana stand LAR, worst gag in Arrested Development' },
   'always-sunny-fewer-jokes-better-with-age': { readTime: '5 min read', stat: '2.64', statLabel: "Sunny's jokes per minute, 13th of 15" },
   'friends-most-jokes-ranked-eleventh': { readTime: '4 min read', stat: '4.01', statLabel: 'Friends jokes per minute, most on the board' },
   'chappelles-show-sketch-advantage': { readTime: '3 min read', stat: '7.70', statLabel: "Chappelle's Show per-joke impact" },

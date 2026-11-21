@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: 'Can AI actually understand comedy?',
-    a: `It's a fair question. AI doesn't laugh, but it can identify joke structure: setups, punchlines, callbacks and misdirection. What we have measured so far is how consistent the model is with itself. A single scoring run is noisy (an ICC of 0.28 on a 30-episode retest), which is why every episode is now scored three times and averaged. We have not yet published a comparison against human raters; the Agree? page is where we are collecting that data, and we will publish the agreement rate. Where AI struggles most is purely visual gags and delivery, which a transcript can't carry.`,
+    a: `It's a fair question. AI doesn't laugh, but it can identify joke structure: setups, punchlines, callbacks and misdirection. What we have measured so far is how consistent the model is with itself. On the earlier pipeline a single run was noisy (an ICC of 0.28 on a 30-episode retest), which is why every episode is now scored three times and averaged. Measured from those stored runs, the 3-run average reaches an ICC of 0.76 to 0.84 within a show, and two single runs of the same episode differ by about 3 points. We have not yet published a comparison against human raters; the blind test and the rating study are collecting that data, and we will publish both. Where AI struggles most is purely visual gags and delivery, which a transcript can't carry.`,
   },
   {
     q: 'Which show currently ranks #1?',

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { estimateText } from '@/lib/scale';
 import Image from 'next/image';
 import { ShowScore } from '@/lib/types';
 import { formatIndex } from '@/lib/scoring';
@@ -17,8 +18,8 @@ function ScoreBlock({ show, pending, shadow }: { show: ShowScore; pending: boole
   if (pending) {
     return (
       <>
-        <p className="text-[11px] uppercase tracking-widest text-brand-text-secondary leading-none">Rescore pending</p>
-        <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1">Unranked</p>
+        <p className="font-mono text-lg text-brand-text-secondary leading-none">~{estimateText(show.humor_index)}</p>
+        <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mt-1">Estimated · unranked</p>
       </>
     );
   }

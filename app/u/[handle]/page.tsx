@@ -117,7 +117,7 @@ export default async function PublicProfile({ params }: { params: { handle: stri
           <div className="grid sm:grid-cols-2 gap-4">
             {lists.map((l) => (
               <div key={l.id} className="rounded-xl border border-brand-border bg-brand-card p-4">
-                <p className="font-medium text-brand-text-primary">{l.title}</p>
+                <Link href={`/u/${profile.handle}/lists/${l.id}/`} className="font-medium text-brand-text-primary hover:text-brand-gold">{l.title}</Link>
                 {l.description && <p className="mt-1 text-sm text-brand-text-secondary">{l.description}</p>}
                 <ol className="mt-3 space-y-1.5">
                   {l.list_items.map((i, n) => (

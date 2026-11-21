@@ -25,15 +25,15 @@ export async function GET(req: NextRequest) {
           fontFamily: 'system-ui, sans-serif',
         }}
       >
-        {/* Bar chart icon */}
+        {/* The Laugh Map mark */}
         <div style={{ display: 'flex', gap: '6px', marginBottom: '40px', alignItems: 'flex-end' }}>
-          {[40, 60, 80, 55, 35].map((h, i) => (
+          {[36, 56, 24, 44, 64, 80, 48].map((h, i) => (
             <div
               key={i}
               style={{
                 width: '14px',
                 height: `${h}px`,
-                backgroundColor: '#E8B931',
+                backgroundColor: `rgba(232,185,49,${(0.35 + 0.65 * h / 80).toFixed(2)})`,
                 borderRadius: '2px',
               }}
             />

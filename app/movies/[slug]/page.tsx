@@ -149,7 +149,6 @@ export default async function MoviePage({ params }: { params: { slug: string } }
                 )}
                 <MatchPill slug={m.slug} />
                 <LogButton
-                  className="!py-1 !text-xs"
                   item={{ kind: 'movie', ref: m.slug, title: m.title, subtitle: `${m.year} · ${m.director}`, href: `/movies/${m.slug}/`, hi: m.humor_index }}
                 />
               </div>

@@ -1,4 +1,5 @@
 import { getEpisodes, getEpisodeDetail, getCharacters } from './data';
+import { knownSpeakers } from './scoring';
 import type { Joke } from './types';
 
 /**
@@ -212,7 +213,7 @@ export async function getShowQuotes(slug: string, limit = 50, perEpisode = 3): P
     quotes: picked.map((c, i) => ({
       rank: i + 1,
       text: cleanJokeText(c.joke.text),
-      characters: c.joke.characters ?? [],
+      characters: knownSpeakers(c.joke.characters),
       jokeTypes: (c.joke.joke_types ?? []) as string[],
       craft: c.joke.craft_total,
       impact: c.joke.impact_score,

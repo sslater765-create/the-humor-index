@@ -19,9 +19,10 @@ const FILES = [
   { path: '/data/shows.json', name: 'shows.json', desc: 'Show-level leaderboard: Humor Index, JPM, craft, impact, CIs, metadata.' },
   { path: '/data/top-jokes.json', name: 'top-jokes.json', desc: 'The highest-scoring individual lines across every scored show.' },
   { path: '/data/comedy-dna.json', name: 'comedy-dna.json', desc: 'Per-show joke-type fingerprints (18 comedic dimensions).' },
-  { path: '/data/recommendations.json', name: 'recommendations.json', desc: '"If you like X" — nearest-neighbour show recommendations.' },
+  { path: '/data/recommendations.json', name: 'recommendations.json', desc: '"If you like X": nearest-neighbour show recommendations.' },
   { path: '/data/search-index.json', name: 'search-index.json', desc: 'Searchable index of scored jokes with show/episode references.' },
   { path: '/data/movies/index.json', name: 'movies/index.json', desc: 'Movie leaderboard: Humor Index, jokes per minute, craft, impact, runtime.' },
+  { path: '/data/running-gags.json', name: 'running-gags.json', desc: 'Every running gag per show with its stat line: GP, J, Avg, Hit%, LAR, trend, first appearance and best hit.' },
 ];
 
 export default async function DataPage() {
@@ -46,8 +47,8 @@ export default async function DataPage() {
         <h1 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary mb-3">The data behind the Index</h1>
         <p className="text-sm text-brand-text-secondary max-w-2xl leading-relaxed">
           Every number on this site is computed by one pipeline, run the same way across{' '}
-          {stats.showCount} shows — about {stats.totalEpisodes.toLocaleString()} episodes and{' '}
-          {stats.totalJokes.toLocaleString()} individually scored jokes.
+          {stats.showCount} shows and {stats.movieCount} movies: {stats.totalEpisodes.toLocaleString()} TV episodes and{' '}
+          {stats.allJokes.toLocaleString()} individually scored jokes, TV and film.
         </p>
         <div className="mt-5 max-w-2xl rounded-xl border border-brand-border bg-brand-card p-4 text-sm text-brand-text-secondary leading-relaxed">
           <p className="text-brand-text-primary font-medium mb-1">License: CC BY-NC 4.0</p>

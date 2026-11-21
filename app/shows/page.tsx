@@ -75,14 +75,14 @@ export default async function ShowsPage() {
 
         {pending.length > 0 && (
           <section className="mt-20 pt-12 border-t border-brand-border">
-            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-3">Awaiting rescore</p>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-3">Earlier model</p>
             <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
               Scored on the earlier model.
             </h2>
             <p className="text-sm text-brand-text-secondary max-w-2xl mb-8 leading-relaxed">
-              These {pending.length} shows are fully scored, but on our earlier model. Shows gain 8 to 15 points
-              when they move to the current one, so they stay unranked until their rescore is published. Their
-              episode pages are still open.
+              These {pending.length} shows are fully scored, but on our earlier model, so they stay unranked. Friends,
+              Sunny and Community gained 8 to 14 points when they moved to the current model; each card below shows
+              where that range would put the show. Estimates, not scores. Their episode pages are still open.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {pending.map(show => (

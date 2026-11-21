@@ -42,6 +42,28 @@ export const JOKE_TYPE_LABELS: Record<JokeType, string> = {
   awkward_silence: 'Awkward Silence',
 };
 
+/** Speaker tags a reader can use: drops the scorer's "Unknown (offscreen)" placeholders. */
+export function knownSpeakers(cs?: string[] | null): string[] {
+  return (cs ?? []).filter(c => c && !/unknown|offscreen|^\?+$/i.test(c));
+}
+
+const DELIVERY_TYPES = new Set(['visual_gag', 'physical_slapstick', 'reaction_beat', 'awkward_silence']);
+
+/**
+ * True when the scorer itself says the laugh depends on performance: a visual,
+ * physical, reaction or silence beat, or an explanation that credits delivery.
+ * The transcript can't show those, so the joke gets a visible flag.
+ */
+export function leansOnDelivery(joke: { joke_types?: string[]; explanation?: string | null }): boolean {
+  if ((joke.joke_types ?? []).some(t => DELIVERY_TYPES.has(t))) return true;
+  return /\b(delivery|delivered|performance|performed|reaction shot|facial|physical comedy|timing of the|the way he says|the way she says)\b/i.test(joke.explanation ?? '');
+}
+
+/** The Rewatch star, kept for the jokes worth it: flagged by the scorer and highly quotable. */
+export function worthRewatch(joke: { rewatch_bonus?: unknown; quotability?: number | string | null }): boolean {
+  return !!joke.rewatch_bonus && Number(joke.quotability ?? 0) >= 8.5;
+}
+
 export const BRAND_COLORS = [
   '#E8B931',
   '#378ADD',

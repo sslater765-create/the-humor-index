@@ -1,5 +1,6 @@
 'use client';
-import { useState, useMemo } from 'react';
+import { Fragment, useState, useMemo } from 'react';
+import { estimateText } from '@/lib/scale';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ShowScore } from '@/lib/types';
@@ -35,7 +36,23 @@ function cell(show: ShowScore, key: MetricKey | 'imdb'): string {
   return show[key].toFixed(1);
 }
 
-function Row({ show, rank, sortKey }: { show: ShowScore; rank: number | null; sortKey: SortKey }) {
+/** A 95% interval drawn on the board's own score range, with the point marked. */
+function Whisker({ show, lo, hi }: { show: ShowScore; lo: number; hi: number }) {
+  if (show.ci_95_low === undefined || show.ci_95_high === undefined || hi <= lo) return null;
+  const pos = (v: number) => `${Math.max(0, Math.min(100, ((v - lo) / (hi - lo)) * 100))}%`;
+  const half = (show.ci_95_high - show.ci_95_low) / 2;
+  return (
+    <span className="mt-1.5 block" title={`95% interval ${show.ci_95_low.toFixed(1)} to ${show.ci_95_high.toFixed(1)}`}>
+      <span className="relative block h-1.5 w-full rounded-full bg-brand-border/60">
+        <span className="absolute top-0 h-1.5 rounded-full bg-brand-gold/40" style={{ left: pos(show.ci_95_low), width: `calc(${pos(show.ci_95_high)} - ${pos(show.ci_95_low)})` }} />
+        <span className="absolute -top-[2px] h-2.5 w-[3px] rounded bg-brand-gold" style={{ left: `calc(${pos(show.humor_index)} - 1px)` }} />
+      </span>
+      <span className="mt-0.5 block font-mono text-[10px] text-brand-text-muted">±{half.toFixed(1)}</span>
+    </span>
+  );
+}
+
+function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: number | null; sortKey: SortKey; lo?: number; hi?: number }) {
   const pending = rank === null;
   return (
     <Link
@@ -91,6 +108,7 @@ function Row({ show, rank, sortKey }: { show: ShowScore; rank: number | null; so
         <span className={`font-mono leading-none text-2xl sm:text-3xl ${pending ? 'text-brand-text-muted' : 'text-brand-gold'}`}>
           {formatIndex(show.humor_index)}
         </span>
+        {!pending && sortKey === 'humor_index' && <Whisker show={show} lo={lo} hi={hi} />}
       </div>
       {COLS.map(c => (
         <div
@@ -119,6 +137,12 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
   const pendingKey: MetricKey = sortKey === 'match' ? 'humor_index' : sortKey;
   const sortedPending = useMemo(() => [...pending].sort((a, b) => b[pendingKey] - a[pendingKey]), [pending, pendingKey]);
   const needPicks = sortKey === 'match' && !!dna?.ready && !dna.hasProfile;
+
+  // Whisker scale: the board's own range, so intervals are readable.
+  const lows = shows.map(s => s.ci_95_low ?? s.humor_index);
+  const highs = shows.map(s => s.ci_95_high ?? s.humor_index);
+  const scaleLo = Math.floor(Math.min(...lows, 100)) - 1;
+  const scaleHi = Math.min(100, Math.ceil(Math.max(...highs, 0)) + 1);
 
   return (
     <div>
@@ -160,14 +184,46 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
       )}
 
       <div>
-        {sorted.map((show, i) => {
+        {(() => {
+          // Tiers: a show joins the current tier while its interval reaches the
+          // tier leader's. Measuring against the leader, not the row above, stops
+          // ties from chaining all the way down the board.
+          const tierOf = new Map<string, number>();
+          const tierSize: number[] = [];
+          if (sortKey === 'humor_index') {
+            let leader: ShowScore | null = null;
+            for (const s of sorted) {
+              if (s.ci_95_low === undefined || s.ci_95_high === undefined) continue;
+              if (!leader || s.ci_95_high < (leader.ci_95_low as number)) { leader = s; tierSize.push(0); }
+              tierOf.set(s.slug, tierSize.length);
+              tierSize[tierSize.length - 1]++;
+            }
+          }
+          let lastTier = 0;
+          return sorted.map((show, i) => {
           // Shared rank for equal displayed values: Parks and Community at
           // 91.9 are both 8th, not 8th and 9th by accident of sort order.
           const key: MetricKey = sortKey === 'match' ? 'humor_index' : sortKey;
           const shown = (s: ShowScore) => Math.round(s[key] * 10);
           const rank = sortKey === 'match' && personal ? i + 1 : 1 + sorted.filter(o => shown(o) > shown(show)).length;
-          return <Row key={show.slug} show={show} rank={rank} sortKey={sortKey} />;
-        })}
+          const t = tierOf.get(show.slug) ?? 0;
+          const header = t > 0 && t !== lastTier;
+          if (t > 0) lastTier = t;
+          return (
+            <Fragment key={show.slug}>
+              {header && (
+                <div className={`flex items-baseline gap-2 pb-1 ${i > 0 ? 'pt-5' : 'pt-1'}`}>
+                  <span className="font-mono text-[11px] uppercase tracking-widest text-brand-gold">Tier {t}</span>
+                  {tierSize[t - 1] > 1 && (
+                    <span className="text-[11px] text-brand-text-muted">{tierSize[t - 1]} shows, statistically tied</span>
+                  )}
+                </div>
+              )}
+              <Row show={show} rank={rank} sortKey={sortKey} lo={scaleLo} hi={scaleHi} />
+            </Fragment>
+          );
+          });
+        })()}
       </div>
 
       {personal && dna && (
@@ -179,7 +235,7 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
 
       {sortKey === 'humor_index' && (
         <p className="mt-4 text-xs text-brand-text-muted leading-relaxed">
-          Scores within about 1.2 points of each other are statistically tied, so several neighbours on this list are closer than the order suggests.{' '}
+          The bar under each score is its 95% interval, from the spread of the show’s episode scores. Shows are grouped into tiers: every show in a tier has an interval that reaches the tier leader’s, so the order inside a tier is a statistical tie.{' '}
           <Link href="/methodology" className="text-brand-gold hover:underline">How we score →</Link>
         </p>
       )}
@@ -189,7 +245,7 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
         <details className="group mt-8 border-t border-brand-border pt-4">
           <summary className="list-none cursor-pointer select-none flex flex-wrap items-baseline justify-between gap-2">
             <span className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted">
-              + {sortedPending.length} shows awaiting rescore
+              + {sortedPending.length} shows on the earlier model
             </span>
             <span className="text-xs text-brand-text-muted">
               {sortedPending.map(s => s.name.replace(/^The /, '')).join(', ')}
@@ -198,9 +254,10 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
             </span>
           </summary>
           <p className="text-sm text-brand-text-secondary leading-relaxed max-w-2xl mt-3 mb-3">
-            These shows are fully scored, but on our earlier model. Shows gain 8 to 15 points when they move to the
-            current one, so their numbers are not comparable with the list above and they stay unranked until their
-            rescore is published.
+            These shows are fully scored, but on our earlier model, so their numbers aren’t comparable with the list
+            above and they stay unranked. Friends, Sunny and Community gained 8 to 14 points when they moved to the
+            current model; applied here, that puts {sortedPending.map(s => `${s.name.replace(/^The /, '')} at ${estimateText(s.humor_index)}`).join(', ')}.
+            Estimates, not scores.
           </p>
           <div className="border-t border-brand-border">
             {sortedPending.map(show => (

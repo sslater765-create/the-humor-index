@@ -7,7 +7,10 @@ import { createClient } from 'redis';
 // of the time." Fail-safe: if Redis isn't configured, reads return nulls and
 // writes no-op, exactly like /api/vote.
 
-const KEY = 'agree_tally';            // hash: { agree, total }
+// v2 from 2026-11-21: before then the cards showed each joke's score before the
+// pick, which anchored answers. Those 83 picks stay in 'agree_tally' and are not
+// counted here.
+const KEY = 'agree_tally_v2';         // hash: { agree, total }
 const RATE_PREFIX = 'agree_rate:';
 const RATE_WINDOW = 60;               // seconds
 const RATE_MAX = 60;                  // calls per window per IP

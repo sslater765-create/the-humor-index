@@ -206,13 +206,16 @@ export default function AgreeGame({ pool, jokeCount }: { pool: AgreeJoke[]; joke
               {/* Quote */}
               <p className="font-serif italic text-lg text-brand-text-primary leading-snug flex-1 px-5 py-4">“{j.t}”</p>
 
-              {/* Score footer — number blurred until pick */}
+              {/* Score footer: hidden until the pick */}
               <div className="flex items-center justify-between px-5 pb-4">
                 <span className="flex items-baseline gap-1.5">
+                  {/* The score is not rendered at all until the pick: a blurred number
+                      still anchors people, and it sits in the page text either way. */}
                   <span
-                    className={`font-serif text-2xl leading-none transition-all duration-500 ${isWinner ? 'text-brand-gold' : 'text-brand-text-secondary'} ${revealed ? '' : 'blur-[7px] opacity-50'}`}
+                    className={`font-serif text-2xl leading-none ${isWinner ? 'text-brand-gold' : 'text-brand-text-secondary'}`}
+                    aria-label={revealed ? undefined : 'Score hidden until you pick'}
                   >
-                    {j.s.toFixed(1)}
+                    {revealed ? j.s.toFixed(1) : '?'}
                   </span>
                   <span className="text-[11px] text-brand-text-muted">/10</span>
                   <span className="text-[9px] uppercase tracking-widest text-brand-text-muted ml-1">Impact</span>

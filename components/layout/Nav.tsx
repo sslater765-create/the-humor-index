@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import LaughMapMark from '@/components/brand/LaughMapMark';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import AccountMenu from '@/components/auth/AccountMenu';
@@ -39,12 +40,7 @@ export default function Nav() {
     <nav className="sticky top-0 z-50 border-b border-brand-border bg-brand-dark/90 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-brand-text-primary font-medium tracking-tight text-sm">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <rect x="2" y="12" width="3" height="10" rx="1" fill="#E8B931"/>
-            <rect x="7" y="8" width="3" height="14" rx="1" fill="#E8B931"/>
-            <rect x="12" y="4" width="3" height="18" rx="1" fill="#E8B931"/>
-            <rect x="17" y="9" width="3" height="13" rx="1" fill="#E8B931"/>
-          </svg>
+          <LaughMapMark size={20} />
           THE HUMOR INDEX
         </Link>
 

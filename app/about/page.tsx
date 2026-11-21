@@ -2,6 +2,7 @@ import PageHeader from '@/components/layout/PageHeader';
 import Link from 'next/link';
 import { getAllShows, getEpisodes } from '@/lib/data';
 import { SITE_URL } from '@/lib/site';
+import { getSiteStats } from '@/lib/siteStats';
 
 export const metadata = {
   title: 'About — The Story Behind the Comedy Data',
@@ -28,7 +29,7 @@ export default async function AboutPage() {
       totalEpisodes += eps.length;
     } catch {}
   }
-  const totalJokes = shows.reduce((s, show) => s + show.total_jokes_analyzed, 0);
+  const { allJokes: totalJokes } = await getSiteStats();
 
   return (
     <div>
@@ -43,7 +44,7 @@ export default async function AboutPage() {
         {/* Stats banner */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
-            { value: totalJokes.toLocaleString(), label: 'Jokes Scored' },
+            { value: totalJokes.toLocaleString(), label: 'Jokes Scored, TV and Film' },
             { value: String(analyzedShows.length), label: 'Shows Scored' },
             { value: String(totalEpisodes), label: 'Episodes Analyzed' },
             { value: '18', label: 'Joke Categories' },
@@ -155,16 +156,14 @@ export default async function AboutPage() {
           <h2 className="text-xl font-medium text-brand-text-primary mb-4">What&apos;s coming</h2>
           <div className="space-y-4 text-sm text-brand-text-secondary leading-relaxed">
             <p>
-              We&apos;ve fully analyzed The Office, Seinfeld, Friends, Parks and Rec,
-              Schitt&apos;s Creek, and Arrested Development. Next up on the May 2026 drip:
-              30 Rock, Brooklyn Nine-Nine, and Two and a Half Men. After that, It&apos;s
-              Always Sunny in Philadelphia and The Big Bang Theory are in the queue.
-              Long term, the goal is every show, ever.
+              {analyzedShows.length} shows and the first comedy movies are scored, with more films being
+              scored now. Five shows from the earlier model are being rescored so they can rejoin the
+              ranking. The <Link href="/changelog" className="text-brand-gold hover:underline">changelog</Link> lists
+              every score that moved and why. Long term, the goal is every show, ever.
             </p>
             <p>
-              We&apos;re also building a recommender &mdash; a way to find your comedy archetype
-              and get show suggestions based on what you actually find funny. Think Letterboxd,
-              but for sitcoms.
+              You can already keep a comedy diary: log episodes and movies, rate them, make lists, and
+              see how your taste lines up with the Index on <Link href="/my" className="text-brand-gold hover:underline">My Index</Link>.
             </p>
             <p>
               Beyond that? More shows based on{' '}

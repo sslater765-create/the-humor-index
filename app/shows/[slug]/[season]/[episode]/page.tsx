@@ -16,12 +16,12 @@ import SocialShare from '@/components/ui/SocialShare';
 import StreamingLinks from '@/components/ui/StreamingLinks';
 import StickyEpisodeBar from '@/components/ui/StickyEpisodeBar';
 import EpisodeDeepViewTracker from '@/components/analytics/EpisodeDeepViewTracker';
-import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
 import { SITE_URL } from '@/lib/site';
 import { getRankedEpisodeScores, topShare } from '@/lib/siteStats';
 import { personSlug } from '@/lib/people';
 import MiniLaughMap from '@/components/movies/MiniLaughMap';
 import LogButton from '@/components/log/LogButton';
+import { fanFavoritesForEpisode, normJokeText } from '@/components/shows/FanFavoritesPanel';
 
 export const dynamic = 'force-static';
 
@@ -140,7 +140,16 @@ export default async function EpisodePage({
     .sort((a, b) => ((b.craft_total || 0) + (b.impact_score || 0)) - ((a.craft_total || 0) + (a.impact_score || 0)))
     .slice(0, 5);
   const topJokeIdx = new Set(topJokeList.map(j => j.index));
-  const standoutJokes = detail.jokes.filter(j => standoutIds.has(j.index) && !topJokeIdx.has(j.index));
+  // Fan-favorite lines (the ones everyone quotes) are pinned on the episode
+  // where they rank best, so they never hide inside the collapsed full list.
+  const favByText = fanFavoritesForEpisode(params.slug, seasonNum, episodeNum);
+  const fanFavJokes = favByText.size
+    ? detail.jokes
+        .filter(j => !topJokeIdx.has(j.index) && favByText.has(normJokeText(j.text || '')))
+        .map(j => ({ joke: j, fav: favByText.get(normJokeText(j.text || ''))! }))
+    : [];
+  const fanFavIdx = new Set(fanFavJokes.map(f => f.joke.index));
+  const standoutJokes = detail.jokes.filter(j => standoutIds.has(j.index) && !topJokeIdx.has(j.index) && !fanFavIdx.has(j.index));
   const similar = await getSimilarEpisodes(params.slug, seasonNum, episodeNum, 4);
   const regularJokes = detail.jokes.filter(j => !standoutIds.has(j.index));
 
@@ -417,13 +426,43 @@ export default async function EpisodePage({
               Top Jokes
             </p>
             <div className="space-y-3">
-              {topJokes.map(joke => (
-                <JokeRow key={joke.index} joke={joke} isStandout showSlug={params.slug} />
-              ))}
+              {topJokes.map(joke => {
+                const fav = favByText.get(normJokeText(joke.text || ''));
+                return (
+                  <div key={joke.index}>
+                    {fav && (
+                      <p className="mb-1 text-xs text-brand-text-muted">
+                        <span className="text-brand-gold">Fan favorite:</span> <span className="text-brand-text-secondary">{fav.label}</span>
+                        {fav.rank ? <> · #{fav.rank.toLocaleString()} of {fav.of.toLocaleString()} {show.name} jokes</> : null}
+                      </p>
+                    )}
+                    <JokeRow joke={joke} isStandout showSlug={params.slug} />
+                  </div>
+                );
+              })}
             </div>
           </section>
         ) : null;
       })()}
+
+      {fanFavJokes.length > 0 && (
+        <section className="mb-10">
+          <p className="text-xs uppercase tracking-widest text-brand-gold mb-3">
+            Fan Favorites
+          </p>
+          <div className="space-y-3">
+            {fanFavJokes.map(({ joke, fav }) => (
+              <div key={joke.index}>
+                <p className="mb-1 text-xs text-brand-text-muted">
+                  <span className="text-brand-text-secondary">{fav.label}</span>
+                  {fav.rank ? <> · #{fav.rank.toLocaleString()} of {fav.of.toLocaleString()} {show.name} jokes</> : null}
+                </p>
+                <JokeRow joke={joke} isStandout showSlug={params.slug} />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <AdSlot placement="in-article" className="mb-10" />
 
@@ -475,8 +514,7 @@ export default async function EpisodePage({
         </div>
       )}
 
-      {/* Newsletter CTA, after the jokes: the jokes are why people are here */}
-      <InlineNewsletterCTA />
+      {/* No inline newsletter box here: the sticky bar and the footer already ask. */}
 
       {/* Next / Previous episode navigation */}
       <div className="mt-10 grid grid-cols-2 gap-3 border-t border-brand-border pt-6">

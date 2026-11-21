@@ -37,8 +37,8 @@ export async function GET(req: NextRequest) {
             </span>
           </div>
           <div style={{ display: 'flex', gap: '6px', alignItems: 'flex-end' }}>
-            {[40, 60, 80, 55, 35].map((h, i) => (
-              <div key={i} style={{ width: '10px', height: `${h * 0.5}px`, backgroundColor: '#E8B931', borderRadius: '2px' }} />
+            {[36, 56, 24, 44, 64, 80, 48].map((h, i) => (
+              <div key={i} style={{ width: '10px', height: `${h * 0.5}px`, backgroundColor: `rgba(232,185,49,${(0.35 + 0.65 * h / 80).toFixed(2)})`, borderRadius: '2px' }} />
             ))}
           </div>
         </div>

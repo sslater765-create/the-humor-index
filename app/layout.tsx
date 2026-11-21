@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     apple: '/favicon-400.png',
   },
   title: {
-    default: "The Humor Index — The Science of What's Funny",
+    default: 'The Humor Index: Box Scores for Comedy',
     template: '%s | The Humor Index',
   },
   description: 'AI-powered comedy analytics: every joke in the sitcoms and comedy movies we cover, scored and ranked. Leaderboards for the funniest shows, episodes, movies and characters.',

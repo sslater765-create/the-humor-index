@@ -67,9 +67,9 @@ export default async function MethodologyPage() {
               ['Runs', 'Three independent runs per episode or 22-minute movie reel, averaged. Empty or malformed runs are refused and rerun.'],
               ['What it sees', "The episode's subtitle transcript, the show's name and its character list. It does not see video, hear delivery or see audience data."],
               ['What it outputs', 'Every joke it finds, with speaker, joke type, five craft sub-scores, impact, quotability and a one-line explanation.'],
-              ['Measured reliability', 'Single run: ICC 0.28 (poor) on a 30-episode retest. The 3-run average has not been re-measured yet; we will publish it.'],
-              ['Human validation', 'No formal study yet. The Test your taste page (/agree) shows a live tally of how often readers pick the same joke the model scored higher; a structured human-rater study is planned.'],
-              ['Known weak spots', 'Visual gags, delivery-driven lines, sarcasm, running gags (it sees one episode at a time), and references it does not recognize.'],
+              ['Measured reliability', 'The published 3-run average: ICC 0.76 to 0.84 within a show (Friends 0.76, Community 0.79, Sunny 0.83, The Office 0.84; 701 episodes), measured from the three stored runs of every episode, with no re-scoring. Two single runs of the same episode differ by 3.2 points on average. The old single-run retest on the earlier pipeline was ICC 0.28. Data: /data/reliability-3run.json.'],
+              ['Human validation', 'No formal study yet. The blind test (/agree) keeps a live tally of how often readers pick the joke the model scored higher; since November 21, 2026 the scores stay hidden until after the pick, and the tally restarted then. A structured human-rater study (/study) is collecting ratings.'],
+              ['Known weak spots', 'Visual gags, delivery-driven lines, sarcasm, running gags (it sees one episode at a time), and references it does not recognize. Jokes that lean on performance are flagged on the joke itself. Running gags get their own stat line, separate from the Index.'],
               ['Who checks it', 'Sam reviews output, fixes data errors (wrong transcripts, speaker mix-ups) and publishes corrections on the blog.'],
             ].map(([k, v]) => (
               <div key={k} className="grid sm:grid-cols-[180px_1fr] gap-1 sm:gap-4 p-4">
@@ -77,6 +77,24 @@ export default async function MethodologyPage() {
                 <p className="text-brand-text-secondary leading-relaxed">{v}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section id="running-gags">
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Running gags</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Scoring the bits a show keeps coming back to</h2>
+          <div className="space-y-3 text-sm text-brand-text-secondary leading-relaxed">
+            <p>
+              The scorer reads one episode at a time, so it can’t credit a gag for building across a series. A separate pass finds those gags:
+              phrases that recur in at least four episodes of one show and rarely anywhere else, filtered by the model to deliberate recurring bits,
+              with storylines that come up every scene left out.
+            </p>
+            <p>
+              Each gag gets a stat line from the jokes that carry it: GP (episodes), Hit% (share of its jokes above the show’s median joke), Avg (mean
+              joke score), trend (later appearances against earlier ones) and LAR, Laughs Above Replacement: every appearance’s margin over the show’s
+              median joke, added up. Running gags don’t feed the Humor Index. The data is in <code>/data/running-gags.json</code>; the leaderboard is at{' '}
+              <Link href="/rankings/running-gags/" className="text-brand-gold hover:underline">Running gags, scored</Link>.
+            </p>
           </div>
         </section>
 

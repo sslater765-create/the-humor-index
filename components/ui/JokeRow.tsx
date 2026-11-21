@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { characterHref } from '@/lib/characterPages';
 import Link from 'next/link';
 import { Joke } from '@/lib/types';
-import { JOKE_TYPE_LABELS } from '@/lib/scoring';
+import { JOKE_TYPE_LABELS , knownSpeakers, leansOnDelivery, worthRewatch } from '@/lib/scoring';
 
 interface Props {
   joke: Joke;
@@ -18,7 +18,7 @@ function Dialogue({ lines, className = '' }: { lines: DialogueLine[]; className?
     <div className={`space-y-1 ${className}`}>
       {lines.map((d, i) => (
         <p key={i} className="text-sm leading-relaxed">
-          {d.speaker && (
+          {d.speaker && !/unknown|offscreen/i.test(d.speaker) && (
             <span className="text-brand-gold font-medium mr-1.5">{d.speaker}:</span>
           )}
           <span className="text-brand-text-primary">{d.line}</span>
@@ -58,14 +58,14 @@ export default function JokeRow({ joke, isStandout, showSlug }: Props) {
                 // the tagged characters (often one, sometimes two — Michael + Narrator,
                 // Tobias on tape, etc.). Show all tagged speakers joined to avoid the
                 // bare-text fallback that read as "no name attached."
-                if (joke.characters?.length) {
-                  const speaker = joke.characters.join(' · ');
+                if (knownSpeakers(joke.characters).length) {
+                  const speaker = knownSpeakers(joke.characters).join(' · ');
                   return <Dialogue lines={[{ speaker, line: joke.text }]} />;
                 }
                 return <p className="text-sm text-brand-text-primary leading-relaxed">{joke.text}</p>;
               })()}
               <div className="flex flex-wrap items-center gap-1 mt-2">
-                {joke.characters.map(c => (
+                {knownSpeakers(joke.characters).map(c => (
                   characterHref(showSlug, c) ? (
                     <Link
                       key={c}
@@ -86,9 +86,14 @@ export default function JokeRow({ joke, isStandout, showSlug }: Props) {
                     {JOKE_TYPE_LABELS[t]}
                   </span>
                 ))}
-                {!!joke.rewatch_bonus && (
+                {worthRewatch(joke as any) && (
                   <span className="text-[11px] text-brand-gold border border-brand-gold/30 rounded px-1.5 py-0.5">
                     ★ Rewatch
+                  </span>
+                )}
+                {leansOnDelivery(joke as any) && (
+                  <span className="text-[11px] text-brand-text-secondary border border-brand-border rounded px-1.5 py-0.5" title="The scorer reads a transcript. This laugh depends on how it's played, so the text undersells it.">
+                    Carried by delivery
                   </span>
                 )}
                 {!!joke.is_callback && (
@@ -124,8 +129,8 @@ export default function JokeRow({ joke, isStandout, showSlug }: Props) {
             {(() => {
               const dialogue = (joke as any).dialogue as DialogueLine[] | undefined;
               if (dialogue?.length) return <Dialogue lines={dialogue} />;
-              if (joke.characters?.length) {
-                const speaker = joke.characters.join(' · ');
+              if (knownSpeakers(joke.characters).length) {
+                const speaker = knownSpeakers(joke.characters).join(' · ');
                 return <Dialogue lines={[{ speaker, line: joke.punchline }]} />;
               }
               return <p className="text-sm text-brand-text-primary">{joke.punchline}</p>;

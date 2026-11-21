@@ -8,7 +8,7 @@ export const dynamic = 'force-static';
 
 export const metadata = {
   title: 'The Funniest Sitcom Writers and Directors, Ranked by Every Joke',
-  description: 'Every credited writer and director across the shows we rank, by the average Humor Index of the episodes they made.',
+  description: 'Every credited writer and director across the shows we rank, by how their episodes scored against the rest of the same show.',
   alternates: { canonical: `${SITE_URL}/people/` },
 };
 
@@ -16,8 +16,8 @@ const MIN = 5;
 
 export default async function PeoplePage() {
   const people = await getPeople();
-  const writers = people.filter(p => p.writerCount >= MIN).sort((a, b) => b.avg - a.avg);
-  const directors = people.filter(p => p.directorCount >= MIN).sort((a, b) => b.avg - a.avg);
+  const writers = people.filter(p => p.writerCount >= MIN).sort((a, b) => b.plus - a.plus);
+  const directors = people.filter(p => p.directorCount >= MIN).sort((a, b) => b.plus - a.plus);
   const Table = ({ rows, role }: { rows: typeof people; role: 'writer' | 'director' }) => (
     <ol className="divide-y divide-brand-border border border-brand-border rounded-xl overflow-hidden">
       {rows.slice(0, 40).map((p, i) => (
@@ -28,7 +28,10 @@ export default async function PeoplePage() {
               <span className="block text-brand-text-primary truncate">{p.name}</span>
               <span className="block text-xs text-brand-text-muted truncate">{p.shows.join(', ')} · {role === 'writer' ? p.writerCount : p.directorCount} episodes</span>
             </span>
-            <span className="font-mono text-lg text-brand-gold">{formatIndex(p.avg)}</span>
+            <span className="text-right shrink-0">
+              <span className={`block font-mono text-lg ${p.plus >= 0 ? 'text-brand-gold' : 'text-rose-400'}`}>{p.plus >= 0 ? '+' : ''}{p.plus.toFixed(1)}</span>
+              <span className="block font-mono text-[11px] text-brand-text-muted">avg {formatIndex(p.avg)}</span>
+            </span>
           </Link>
         </li>
       ))}
@@ -37,7 +40,7 @@ export default async function PeoplePage() {
   return (
     <div>
       <PageHeader label="People" title="The writers and directors behind the jokes"
-        subtitle={`Credited writers and directors across the shows we rank, by the average Humor Index of their episodes. Minimum ${MIN} episodes; averages over a handful of episodes are noisy.`} />
+        subtitle={`Credited writers and directors across the shows we rank, ranked by points above their own show’s average episode. A raw average mostly tells you which show someone wrote for; this tells you how their episodes did against the rest of that show. Minimum ${MIN} episodes.`} />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 grid gap-10 lg:grid-cols-2">
         <section>
           <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Writers</h2>

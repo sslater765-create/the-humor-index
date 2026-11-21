@@ -24,7 +24,10 @@ export const getAllShows = cache(async (): Promise<ShowScore[]> => {
 // Actual number of jokes in the search index (what's genuinely searchable).
 export async function getSearchableJokeCount(): Promise<number> {
   try {
-    return (await getAllShows()).reduce((sum, s) => sum + (s.total_jokes_analyzed || 0), 0);  } catch {
+    // Search covers TV and film, so count both; same figure as siteStats.allJokes.
+    const { getSiteStats } = await import('./siteStats');
+    return (await getSiteStats()).allJokes;
+  } catch {
     return 0;
   }
 }

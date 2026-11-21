@@ -91,3 +91,27 @@ export function topShare(score: number, all: number[]): string {
   const pct = Math.max(1, Math.ceil(((above + 1) / all.length) * 100));
   return pct <= 50 ? `top ${pct}%` : `bottom ${Math.max(1, 101 - pct)}%`;
 }
+
+/**
+ * 95% interval for each show's Humor Index, from the spread of its episode
+ * scores: mean +/- 1.96 * sd / sqrt(n). Episode scores are already 3-run
+ * averages, so this covers both scorer noise and real episode-to-episode
+ * variation. Used for the leaderboard whiskers and "statistical tie" calls.
+ */
+export async function withIntervals<T extends { slug: string; humor_index: number; ci_95_low?: number; ci_95_high?: number }>(shows: T[]): Promise<T[]> {
+  const out: T[] = [];
+  for (const s of shows) {
+    if (s.ci_95_low !== undefined && s.ci_95_high !== undefined) { out.push(s); continue; }
+    try {
+      const xs = (await getEpisodes(s.slug)).map(e => e.humor_index).filter(v => v > 0);
+      if (xs.length < 3) { out.push(s); continue; }
+      const m = xs.reduce((a, b) => a + b, 0) / xs.length;
+      const sd = Math.sqrt(xs.reduce((a, b) => a + (b - m) ** 2, 0) / (xs.length - 1));
+      const half = 1.96 * sd / Math.sqrt(xs.length);
+      out.push({ ...s, ci_95_low: Math.round((s.humor_index - half) * 10) / 10, ci_95_high: Math.round((s.humor_index + half) * 10) / 10 });
+    } catch {
+      out.push(s);
+    }
+  }
+  return out;
+}

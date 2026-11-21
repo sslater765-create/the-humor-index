@@ -6,7 +6,7 @@ import StarInput from '@/components/log/StarInput';
 import { rememberReturn } from '@/components/log/LogButton';
 import {
   currentUser, myLogs, myLists, deleteLog, updateLog, updateList, deleteList, removeFromList, moveInList,
-  getPublicSettings, savePublicSettings, tasteVsIndex, starText, HANDLE_RE,
+  getPublicSettings, savePublicSettings, tasteVsIndex, starText, HANDLE_RE, updateListItemNote, diaryCsv,
   type ListRow, type LogRow, type PublicSettings,
 } from '@/lib/profile/social';
 
@@ -35,7 +35,21 @@ function Section({ id, title, children, right }: { id: string; title: string; ch
   );
 }
 
-export default function MySocial() {
+/** Poster for a diary row: an episode or show uses its show's poster, a movie its own. */
+function posterFor(l: { kind: string; ref: string }, posters: Record<string, string>): string | null {
+  const slug = l.kind === 'movie' ? `movie:${l.ref}` : `show:${l.ref.split('/')[0]}`;
+  return posters[slug] ?? null;
+}
+
+function Poster({ path }: { path: string | null }) {
+  if (!path) return <span className="w-7 h-10 shrink-0 rounded bg-brand-surface border border-brand-border" aria-hidden="true" />;
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src={`https://image.tmdb.org/t/p/w92${path}`} alt="" width={28} height={40} loading="lazy" className="w-7 h-10 shrink-0 rounded object-cover border border-brand-border" />
+  );
+}
+
+export default function MySocial({ posters = {} }: { posters?: Record<string, string> }) {
   const [uid, setUid] = useState<string | null>(null);
   const [ready, setReady] = useState(false);
   const [missing, setMissing] = useState(false);
@@ -46,6 +60,7 @@ export default function MySocial() {
   const [savedPublic, setSavedPublic] = useState(false);
   const [settingsMsg, setSettingsMsg] = useState('');
   const [editing, setEditing] = useState<number | null>(null);
+  const [shareMsg, setShareMsg] = useState('');
 
   async function load(id: string) {
     const [l, ls, s] = await Promise.all([myLogs(id), myLists(id), getPublicSettings(id)]);
@@ -85,6 +100,16 @@ export default function MySocial() {
     };
   }, [logs]);
 
+  // The diary loads after the page does, so a /my/#diary link lands at the top.
+  // Scroll once the section exists.
+  useEffect(() => {
+    if (!ready) return;
+    const id = window.location.hash.slice(1);
+    if (!['diary', 'lists', 'public-profile'].includes(id)) return;
+    const el = document.getElementById(id);
+    if (el) window.setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+  }, [ready, missing, uid]);
+
   const byMonth = useMemo(() => {
     const groups: { label: string; rows: LogRow[] }[] = [];
     for (const l of logs) {
@@ -99,15 +124,14 @@ export default function MySocial() {
 
   if (!uid) {
     return (
-      <div className="rounded-2xl border border-brand-border bg-brand-card p-6 text-center">
-        <p className="font-serif italic text-xl text-brand-text-primary">Keep a comedy diary.</p>
-        <p className="mt-2 text-sm text-brand-text-secondary max-w-md mx-auto">
-          Log the episodes and movies you watch, rate them, make lists, and see how your taste lines up with the Index.
+      <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-brand-border bg-brand-card px-4 py-3">
+        <p className="text-sm text-brand-text-secondary">
+          <span className="text-brand-text-primary font-medium">Keep a comedy diary.</span> Log what you watch, rate it, make lists, and see how your taste lines up with the Index.
         </p>
         <Link
           href="/signin/"
           onClick={() => rememberReturn('/my/#diary')}
-          className="mt-4 inline-block rounded-full bg-brand-gold px-5 py-2 text-sm font-semibold text-black"
+          className="shrink-0 rounded-full bg-brand-gold px-4 py-1.5 text-sm font-semibold text-black"
         >
           Sign in to start
         </Link>
@@ -121,6 +145,37 @@ export default function MySocial() {
         The diary and lists aren’t switched on yet. They’ll appear here soon.
       </p>
     );
+  }
+
+  function downloadCsv() {
+    const blob = new Blob([diaryCsv(logs)], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `humor-index-diary-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  async function shareProfile() {
+    if (!savedHandle) return;
+    const url = `${window.location.origin}/u/${savedHandle}/`;
+    const text = stats.taste
+      ? `My comedy diary on The Humor Index: ${stats.total} logged, and my taste tracks the Index at r = ${stats.taste.r.toFixed(2)}.`
+      : `My comedy diary on The Humor Index: ${stats.total} logged.`;
+    try {
+      if (navigator.share) { await navigator.share({ title: 'My comedy diary', text, url }); return; }
+      await navigator.clipboard.writeText(url);
+      setShareMsg('Link copied');
+      window.setTimeout(() => setShareMsg(''), 2500);
+    } catch {
+      /* dismissed */
+    }
+  }
+
+  async function noteItem(list: ListRow, kind: LogRow['kind'], ref: string, note: string) {
+    setLists((ls) => ls.map((l) => (l.id === list.id ? { ...l, list_items: l.list_items.map((i) => (i.kind === kind && i.ref === ref ? { ...i, note: note || null } : i)) } : l)));
+    await updateListItemNote(list.id, kind, ref, note);
   }
 
   async function removeLog(id: number) {
@@ -172,9 +227,19 @@ export default function MySocial() {
       <Section
         id="diary"
         title="Your diary"
-        right={savedPublic && savedHandle ? (
-          <Link href={`/u/${savedHandle}/`} className="text-sm text-brand-gold hover:underline">View public profile →</Link>
-        ) : undefined}
+        right={
+          <span className="flex items-center gap-4 text-sm">
+            {logs.length > 0 && (
+              <button type="button" onClick={downloadCsv} className="text-brand-text-secondary hover:text-brand-gold">Export CSV</button>
+            )}
+            {savedPublic && savedHandle && (
+              <>
+                <button type="button" onClick={() => void shareProfile()} className="text-brand-text-secondary hover:text-brand-gold">{shareMsg || 'Share profile'}</button>
+                <Link href={`/u/${savedHandle}/`} className="text-brand-gold hover:underline">View public profile →</Link>
+              </>
+            )}
+          </span>
+        }
       >
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
           {[
@@ -214,7 +279,8 @@ export default function MySocial() {
                   {g.rows.map((l) => (
                     <li key={l.id} className="px-4 py-3">
                       <div className="flex items-center gap-3">
-                        <span className="w-8 shrink-0 font-mono text-sm text-brand-text-muted">{l.watched_on.slice(8)}</span>
+                        <span className="w-6 shrink-0 font-mono text-sm text-brand-text-muted">{l.watched_on.slice(8)}</span>
+                        <Poster path={posterFor(l, posters)} />
                         <div className="min-w-0 flex-1">
                           <Link href={l.href} className="block truncate text-brand-text-primary hover:text-brand-gold">{l.title}</Link>
                           <p className="truncate text-xs text-brand-text-muted">
@@ -229,9 +295,9 @@ export default function MySocial() {
                           {editing === l.id ? 'Close' : 'Edit'}
                         </button>
                       </div>
-                      {l.note && editing !== l.id && <p className="mt-1.5 ml-11 text-sm text-brand-text-secondary whitespace-pre-line">{l.note}</p>}
+                      {l.note && editing !== l.id && <p className="mt-1.5 ml-[4.75rem] text-sm text-brand-text-secondary whitespace-pre-line">{l.note}</p>}
                       {editing === l.id && (
-                        <div className="mt-3 ml-11 flex flex-wrap items-center gap-4">
+                        <div className="mt-3 ml-[4.75rem] flex flex-wrap items-center gap-4">
                           <StarInput value={l.stars} onChange={(v) => void restar(l.id, v)} size={22} />
                           <button type="button" onClick={() => void removeLog(l.id)} className="text-xs text-red-400 hover:underline">Delete this log</button>
                         </div>
@@ -264,23 +330,38 @@ export default function MySocial() {
                   />
                   <button type="button" onClick={() => void dropList(l.id)} className="text-xs text-brand-text-muted hover:text-red-400">Delete</button>
                 </div>
-                <label className="mt-1 flex items-center gap-2 text-xs text-brand-text-muted">
-                  <input type="checkbox" checked={l.is_public} onChange={(e) => void patchList(l.id, { is_public: e.target.checked })} className="accent-[#E8B931]" />
-                  Show on my public profile
-                </label>
+                <div className="mt-1 flex flex-wrap items-center justify-between gap-2">
+                  <label className="flex items-center gap-2 text-xs text-brand-text-muted">
+                    <input type="checkbox" checked={l.is_public} onChange={(e) => void patchList(l.id, { is_public: e.target.checked })} className="accent-[#E8B931]" />
+                    Show on my public profile
+                  </label>
+                  {l.is_public && savedPublic && savedHandle && (
+                    <Link href={`/u/${savedHandle}/lists/${l.id}/`} className="text-xs text-brand-gold hover:underline">List page →</Link>
+                  )}
+                </div>
                 {l.list_items.length === 0 ? (
                   <p className="mt-3 text-sm text-brand-text-muted">Empty. Add items from any Log box.</p>
                 ) : (
                   <ol className="mt-3 space-y-1.5">
                     {l.list_items.map((i, n) => (
-                      <li key={`${i.kind}:${i.ref}`} className="flex items-center gap-2 text-sm">
-                        <span className="w-5 font-mono text-xs text-brand-text-muted">{n + 1}</span>
-                        <Link href={i.href} className="min-w-0 flex-1 truncate text-brand-text-secondary hover:text-brand-gold">
-                          {i.title}{i.subtitle ? <span className="text-brand-text-muted"> · {i.subtitle}</span> : null}
-                        </Link>
-                        <button type="button" aria-label="Move up" onClick={() => void move(l, n, -1)} disabled={n === 0} className="text-brand-text-muted disabled:opacity-30 hover:text-brand-text-primary">↑</button>
-                        <button type="button" aria-label="Move down" onClick={() => void move(l, n, 1)} disabled={n === l.list_items.length - 1} className="text-brand-text-muted disabled:opacity-30 hover:text-brand-text-primary">↓</button>
-                        <button type="button" aria-label="Remove" onClick={() => void dropItem(l, i.kind, i.ref)} className="text-brand-text-muted hover:text-red-400">×</button>
+                      <li key={`${i.kind}:${i.ref}`} className="text-sm">
+                        <div className="flex items-center gap-2">
+                          <span className="w-5 font-mono text-xs text-brand-text-muted">{n + 1}</span>
+                          <Link href={i.href} className="min-w-0 flex-1 truncate text-brand-text-secondary hover:text-brand-gold">
+                            {i.title}{i.subtitle ? <span className="text-brand-text-muted"> · {i.subtitle}</span> : null}
+                          </Link>
+                          <button type="button" aria-label="Move up" onClick={() => void move(l, n, -1)} disabled={n === 0} className="text-brand-text-muted disabled:opacity-30 hover:text-brand-text-primary">↑</button>
+                          <button type="button" aria-label="Move down" onClick={() => void move(l, n, 1)} disabled={n === l.list_items.length - 1} className="text-brand-text-muted disabled:opacity-30 hover:text-brand-text-primary">↓</button>
+                          <button type="button" aria-label="Remove" onClick={() => void dropItem(l, i.kind, i.ref)} className="text-brand-text-muted hover:text-red-400">×</button>
+                        </div>
+                        <input
+                          defaultValue={i.note ?? ''}
+                          maxLength={500}
+                          placeholder="Add a note"
+                          aria-label={`Note for ${i.title}`}
+                          onBlur={(e) => { if ((e.target.value || null) !== (i.note || null)) void noteItem(l, i.kind, i.ref, e.target.value); }}
+                          className="mt-0.5 ml-7 w-[calc(100%-1.75rem)] bg-transparent text-xs text-brand-text-muted placeholder:text-brand-text-muted/60 focus:outline-none focus:text-brand-text-secondary"
+                        />
                       </li>
                     ))}
                   </ol>

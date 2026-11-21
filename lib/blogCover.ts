@@ -20,6 +20,7 @@ const BY_SLUG: Record<string, string> = {
   'density-vs-craft': 'broad-city',
   'is-the-office-actually-funny': 'the-office',
   'always-sunny-fewer-jokes-better-with-age': 'its-always-sunny',
+  'index-is-wrong-about-the-banana-stand': 'arrested-development',
 };
 
 export function coverFor(slug: string, title: string, shows: ShowScore[]): { slug: string; name: string; backdrop: string } | null {

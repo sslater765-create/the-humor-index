@@ -97,13 +97,13 @@ export async function GET(req: NextRequest) {
             }}
           >
             <div style={{ display: 'flex', alignItems: 'flex-end', gap: '6px' }}>
-              {[40, 60, 80, 55, 35].map((h, i) => (
+              {[36, 56, 24, 44, 64, 80, 48].map((h, i) => (
                 <div
                   key={i}
                   style={{
                     width: '10px',
                     height: `${h * 0.7}px`,
-                    backgroundColor: '#E8B931',
+                    backgroundColor: `rgba(232,185,49,${(0.35 + 0.65 * h / 80).toFixed(2)})`,
                     borderRadius: '2px',
                     display: 'flex',
                   }}

@@ -34,19 +34,20 @@ export default async function AgreePage() {
           Do you agree with the Index?
         </h1>
         <p className="text-sm text-brand-text-secondary max-w-xl mx-auto leading-relaxed">
-          Two real jokes, both fully credited — character, show, and the score our pipeline gave
-          them. You pick the funnier one. We tell you whether your gut matched the machine, and keep
-          the tally honest.
+          Two real jokes, credited by character and show. Pick the funnier one. The scores stay hidden
+          until you pick, so the number can’t lean on your answer; then we show which one the Index
+          scored higher and keep a running tally.
         </p>
       </header>
 
-      <AgreeGame pool={pool} jokeCount={stats.totalJokes} />
+      <AgreeGame pool={pool} jokeCount={stats.allJokes} />
 
       <p className="text-xs text-brand-text-muted leading-relaxed text-center max-w-xl mx-auto mt-10">
-        Every joke here was scored by the same pipeline that powers the rest of the site — graded on
-        impact (how hard it lands) from 1–10, drawn from {stats.totalJokes.toLocaleString()} scored
+        Every joke here was scored by the same pipeline that powers the rest of the site, graded on
+        impact (how hard it lands) from 1 to 10, drawn from {stats.allJokes.toLocaleString()} scored
         jokes. We don’t claim the Index is right; this is how we find out where it agrees with people
-        and where it doesn’t.
+        and where it doesn’t. The tally restarted on November 21, 2026, when we stopped showing scores
+        before the pick. Want to help more? <a href="/study/" className="text-brand-gold hover:underline">Rate jokes for the study</a>.
       </p>
     </main>
   );

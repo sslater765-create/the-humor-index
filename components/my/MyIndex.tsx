@@ -12,8 +12,22 @@ import { createClient, supabaseConfigured } from '@/lib/supabase/client';
 interface MyShow { slug: string; name: string; hi: number; poster: string | null; eps: number; network: string; }
 interface FpLite { slug: string; fp: number[]; n: number; }
 
-function Tile({ slug, size = 44 }: { slug: string; size?: number }) {
+function Tile({ slug, size = 44, poster }: { slug: string; size?: number; poster?: string | null }) {
   const st = showStyle(slug);
+  if (poster) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={`https://image.tmdb.org/t/p/w92${poster}`}
+        alt=""
+        width={Math.round(size * 0.72)}
+        height={size}
+        loading="lazy"
+        className="rounded-md object-cover shrink-0 border border-brand-border"
+        style={{ width: Math.round(size * 0.72), height: size }}
+      />
+    );
+  }
   return (
     <div
       className="rounded-lg flex items-center justify-center font-mono font-semibold shrink-0"
@@ -166,7 +180,7 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
               const meta = showBySlug[rec.slug];
               return (
                 <div key={rec.slug} className="bg-brand-card border border-brand-border rounded-xl p-4 flex gap-3">
-                  <Tile slug={rec.slug} />
+                  <Tile slug={rec.slug} poster={showBySlug[rec.slug]?.poster} />
                   <div className="min-w-0 flex-1">
                     <div className="flex items-baseline justify-between gap-2">
                       <Link href={`/shows/${rec.slug}`} className="font-serif italic text-lg text-brand-text-primary hover:text-brand-gold truncate">
@@ -198,7 +212,7 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
           <div className="flex flex-wrap gap-2 mt-3">
             {watchShows.map(s => (
               <span key={s.slug} className="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/30 rounded-full pl-1.5 pr-3 py-1">
-                <Tile slug={s.slug} size={22} />
+                <Tile slug={s.slug} size={22} poster={showBySlug[s.slug]?.poster} />
                 <Link href={`/shows/${s.slug}`} className="text-xs text-brand-gold hover:underline">{s.name}</Link>
                 <button onClick={() => toggleWatch(s.slug)} aria-label={`Remove ${s.name}`} className="text-brand-gold/60 hover:text-brand-gold text-xs">✕</button>
               </span>
@@ -219,7 +233,7 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
             const onList = watch.includes(s.slug);
             return (
               <div key={s.slug} className="flex items-center gap-3 bg-brand-card border border-brand-border rounded-xl p-3">
-                <Tile slug={s.slug} size={38} />
+                <Tile slug={s.slug} size={38} poster={showBySlug[s.slug]?.poster} />
                 <div className="min-w-0 flex-1">
                   <Link href={`/shows/${s.slug}`} className="font-serif italic text-base text-brand-text-primary hover:text-brand-gold truncate block">
                     {s.name}

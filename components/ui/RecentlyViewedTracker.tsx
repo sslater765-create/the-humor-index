@@ -38,7 +38,7 @@ export default function RecentlyViewedTracker() {
 
     try {
       const items = getViewedItems();
-      const title = document.title.replace(' | The Humor Index', '').replace(" — The Science of What's Funny", '');
+      const title = document.title.replace(' | The Humor Index', '').replace(': Box Scores for Comedy', '');
       const existing = items.findIndex(i => i.path === pathname);
       if (existing >= 0) items.splice(existing, 1);
       items.unshift({ path: pathname, title, ts: Date.now() });

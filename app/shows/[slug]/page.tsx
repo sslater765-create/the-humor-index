@@ -2,6 +2,7 @@ import WhereToWatch from '@/components/WhereToWatch';
 import LogButton from '@/components/log/LogButton';
 import CrossoverStrip from '@/components/movies/CrossoverStrip';
 import RunningGagsPanel from '@/components/shows/RunningGagsPanel';
+import FanFavoritesPanel from '@/components/shows/FanFavoritesPanel';
 import { runningGagsFor } from '@/lib/runningGags';
 import { crossoversForShow } from '@/lib/crossover';
 import { notFound } from 'next/navigation';
@@ -17,7 +18,7 @@ import ScoreGauge from '@/components/ui/ScoreGauge';
 import { getShowQuotes } from '@/lib/quotes';
 import FormatBadge from '@/components/ui/FormatBadge';
 import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
-import { rankable, isAwaitingRescore } from '@/lib/scale';
+import { rankable, isAwaitingRescore, estimateText } from '@/lib/scale';
 import ShowPageClient from './ShowPageClient';
 import { SITE_URL } from '@/lib/site';
 import { tvSeriesJsonLd, breadcrumbJsonLd } from '@/lib/seo';
@@ -213,7 +214,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <FormatBadge format={show.format} />
             <LogButton
-              className="!py-0.5 !px-2.5 !text-xs"
+              className="!py-1"
               item={{ kind: 'show', ref: params.slug, title: show.name, subtitle: show.network ?? undefined, href: `/shows/${params.slug}/`, hi: isAwaitingRescore(params.slug) ? null : show.humor_index }}
             />
             {show.network && (
@@ -282,7 +283,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
             AI analysis of {show.total_jokes_analyzed.toLocaleString()} jokes across {episodes.filter(e => e.humor_index > 0).length || show.total_episodes} episodes.
             It averages {show.avg_jpm.toFixed(1)} jokes per minute, with a craft score of {show.avg_craft.toFixed(1)} and
             an impact score of {show.avg_impact.toFixed(1)}.
-            {pendingRescore ? ' This score comes from our earlier scoring model. The show is awaiting a rescore and is left unranked until then.' : ''}
+            {pendingRescore ? ` This score comes from our earlier scoring model, so the show is left unranked. Shows rescored so far gained 8 to 14 points on the current model, which would put ${show.name} at roughly ${estimateText(show.humor_index)}: an estimate, not a score.` : ''}
           </p>
         )}
       </div>
@@ -324,11 +325,18 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         seasons={seasons}
         episodes={episodes}
         characters={characters}
-        characterProfiles={realCharacters}
+        // Only the fields and rows the cast strip uses: the full file is ~70 KB per
+        // show and was being serialized into every show page.
+        characterProfiles={[...realCharacters].sort((a, b) => b.total_jokes - a.total_jokes).slice(0, 40).map(c => ({
+          name: c.name, total_jokes: c.total_jokes, actor: c.actor, profile_path: c.profile_path, character_full_name: c.character_full_name,
+          avg_craft: c.avg_craft, avg_impact: c.avg_impact, episodes_appeared: c.episodes_appeared, dominant_types: [],
+        }))}
         comedyDna={comedyDna}
       />
 
       <RunningGagsPanel slug={params.slug} name={show.name} gags={runningGagsFor(params.slug)} />
+
+      <FanFavoritesPanel slug={params.slug} name={show.name} />
 
       {/* Where to watch — affiliate (Phase 1) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6">

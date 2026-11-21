@@ -29,7 +29,7 @@ export default async function PersonPage({ params }: { params: { slug: string } 
   return (
     <div>
       <PageHeader label="People" title={p.name}
-        subtitle={`${roles.charAt(0).toUpperCase() + roles.slice(1)} episode${p.episodes.length === 1 ? '' : 's'} we've scored, across ${p.shows.join(', ')}. Average Humor Index ${formatIndex(p.avg)}.`} />
+        subtitle={`${roles.charAt(0).toUpperCase() + roles.slice(1)} episode${p.episodes.length === 1 ? '' : 's'} we've scored, across ${p.shows.join(', ')}. Average Humor Index ${formatIndex(p.avg)}, ${p.plus >= 0 ? '+' : ''}${p.plus.toFixed(1)} against the show’s average episode.`} />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
         <ol className="space-y-2.5">
           {p.episodes.map((e, i) => (

@@ -1,9 +1,10 @@
 import { getSiteStats } from '@/lib/siteStats';
-import { getComedyDnaFingerprints, getEpisodes } from '@/lib/data';
+import { getComedyDnaFingerprints, getEpisodes, getAllShows } from '@/lib/data';
 import { normalizeFingerprints, meanFingerprint, buildWeights } from '@/lib/comedyDna';
 import { pageMeta } from '@/lib/seo';
 import MyIndex from '@/components/my/MyIndex';
 import MySocial from '@/components/my/MySocial';
+import { getMovies } from '@/lib/movies';
 
 export const dynamic = 'force-static';
 
@@ -35,6 +36,12 @@ export default async function MyPage() {
     network: s.network ?? '',
   })));
 
+  // Posters for diary rows: shows by slug, movies by slug.
+  const posters: Record<string, string> = {};
+  for (const s of shows) if (s.poster) posters[`show:${s.slug}`] = s.poster;
+  for (const s of await getAllShows()) if (s.poster_path && !posters[`show:${s.slug}`]) posters[`show:${s.slug}`] = s.poster_path;
+  for (const m of await getMovies()) if (m.poster_path) posters[`movie:${m.slug}`] = m.poster_path;
+
   const fps = normalizeFingerprints(rawFps);
   const meanFp = meanFingerprint(fps);
   const weights = buildWeights(meanFp);
@@ -51,16 +58,18 @@ export default async function MyPage() {
         </p>
       </header>
 
+      {/* Diary first: for signed-in readers it's the part that changes visit to visit.
+          Signed out it collapses to a one-line prompt. */}
+      <div className="mb-14">
+        <MySocial posters={posters} />
+      </div>
+
       <MyIndex
         shows={shows}
         fps={fps.map(f => ({ slug: f.slug, fp: f.fp, n: f.n }))}
         meanFp={meanFp}
         weights={weights}
       />
-
-      <div className="mt-16">
-        <MySocial />
-      </div>
     </main>
   );
 }

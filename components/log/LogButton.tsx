@@ -72,7 +72,7 @@ export default function LogButton({ item, className = '' }: { item: Loggable; cl
       <Link
         href="/signin/"
         onClick={() => rememberReturn(window.location.pathname)}
-        className={`${pill} border-brand-border text-brand-text-secondary hover:border-brand-gold hover:text-brand-gold ${className}`}
+        className={`${pill} border-brand-gold/70 bg-brand-gold/10 text-brand-gold hover:bg-brand-gold/20 ${className}`}
       >
         <span aria-hidden="true">+</span> Log it
       </Link>
@@ -124,7 +124,7 @@ export default function LogButton({ item, className = '' }: { item: Loggable; cl
       <button
         type="button"
         onClick={openForm}
-        className={`${pill} ${past.length ? 'border-brand-gold/60 text-brand-gold' : 'border-brand-border text-brand-text-secondary hover:border-brand-gold hover:text-brand-gold'} ${className}`}
+        className={`${pill} ${past.length ? 'border-brand-gold/60 text-brand-gold' : 'border-brand-gold/70 bg-brand-gold/10 text-brand-gold hover:bg-brand-gold/20'} ${className}`}
         title={last ? `Last logged ${fmtDate(last.watched_on)}` : 'Add this to your diary'}
       >
         {past.length ? (
