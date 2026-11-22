@@ -93,6 +93,11 @@ export default async function MethodologyPage() {
               On the Index view, shows are grouped into tiers (the Pantheon, the Second Floor, the Rotation, the Bench, the Waiver Wire). A show joins
               the current tier while its 95% interval reaches the tier leader’s. Inside a tier the order is a statistical tie.
             </p>
+            <p>
+              Movies use the same tier rule on their own board. A film has only three to six reels, too few for an interval from
+              reel scores, so a film’s interval comes from the spread of its own joke scores, converted to the Index scale by the
+              fit across all films. Best reel is a film’s peak: its funniest stretch, about 22 minutes.
+            </p>
           </div>
         </section>
 

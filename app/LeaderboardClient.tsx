@@ -60,7 +60,7 @@ function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: n
   const pending = rank === null;
   return (
     <Link
-      href={`/shows/${show.slug}`}
+      href={show.href ?? `/shows/${show.slug}`}
       className="group grid grid-cols-[2.25rem_1fr_auto] sm:grid-cols-[2.75rem_minmax(0,1fr)_7rem_repeat(4,4.5rem)] items-center gap-x-3 sm:gap-x-4 py-3.5 sm:py-3 border-b border-brand-border/50 hover:bg-brand-surface transition-colors"
     >
       <div>
@@ -76,15 +76,15 @@ function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: n
             {show.name}
           </p>
           <div className="mt-1 flex items-center gap-2">
-            <FormatBadge format={show.format} />
-            <MatchPill slug={show.slug} />
+            {show.kind !== 'movie' && <FormatBadge format={show.format} />}
+            {show.kind !== 'movie' && <MatchPill slug={show.slug} />}
             {/* Phones have no room for the metric columns, so the active sort rides here. */}
             {sortKey !== 'humor_index' && sortKey !== 'match' && sortKey !== 'peak_22' && (
               <span className="sm:hidden font-mono text-[11px] text-brand-text-muted">
                 {SORT_OPTIONS.find(o => o.key === sortKey)?.label} {show[sortKey].toFixed(1)}
               </span>
             )}
-            {show.scored_episodes !== undefined && show.scored_episodes < SHORT_RUN && (
+            {show.kind !== 'movie' && show.scored_episodes !== undefined && show.scored_episodes < SHORT_RUN && (
               <span className="font-mono text-[11px] text-brand-text-muted" title={`Only ${show.scored_episodes} episodes: a short run, so its average carries less proof than a long one.`}>
                 short run · {show.scored_episodes} eps
               </span>
@@ -119,7 +119,7 @@ function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: n
         </span>
         {!pending && sortKey === 'peak_22' && show.peak_22 !== undefined && (
           <span className="mt-1 block font-mono text-[11px] text-brand-text-secondary">
-            {(show.scored_episodes ?? 0) >= SHORT_RUN ? `best 22 of ${show.scored_episodes}` : `all ${show.scored_episodes}`} · Index {formatIndex(show.humor_index)}
+            {show.kind === 'movie' ? `best of ${show.scored_episodes} reels` : (show.scored_episodes ?? 0) >= SHORT_RUN ? `best 22 of ${show.scored_episodes}` : `all ${show.scored_episodes}`} · Index {formatIndex(show.humor_index)}
           </span>
         )}
         {!pending && sortKey === 'humor_index' && <Whisker show={show} lo={lo} hi={hi} />}
@@ -136,11 +136,25 @@ function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: n
   );
 }
 
-export default function LeaderboardClient({ shows, pending = [], quickPool = [] }: { shows: ShowScore[]; pending?: ShowScore[]; quickPool?: QuizJoke[] }) {
+export default function LeaderboardClient({ shows: tvShows, movies = [], pending: tvPending = [], quickPool = [] }: { shows: ShowScore[]; movies?: ShowScore[]; pending?: ShowScore[]; quickPool?: QuizJoke[] }) {
   const [sortKey, setSortKey] = useState<SortKey>('humor_index');
+  // TV and movies are separate boards on separate scales: the switch flips
+  // between them, it never mixes them into one list.
+  const [kind, setKind] = useState<'tv' | 'movies'>('tv');
+  const isMovies = kind === 'movies';
+  const shows = isMovies ? movies : tvShows;
+  const pending = useMemo(() => (isMovies ? [] : tvPending), [isMovies, tvPending]);
+  const sortOptions = SORT_OPTIONS
+    .filter(o => !(isMovies && o.key === 'match'))
+    .map(o => (isMovies && o.key === 'peak_22' ? { ...o, label: 'Best reel' } : o));
+  const switchKind = (k: 'tv' | 'movies') => { setKind(k); if (k === 'movies' && sortKey === 'match') setSortKey('humor_index'); };
   // /?sort=best22 opens the board on the peak view (linked from short-run notes).
   useEffect(() => {
-    try { if (new URLSearchParams(window.location.search).get('sort') === 'best22') setSortKey('peak_22'); } catch { /* ignore */ }
+    try {
+      const q = new URLSearchParams(window.location.search);
+      if (q.get('sort') === 'best22') setSortKey('peak_22');
+      if (q.get('board') === 'movies') setKind('movies');
+    } catch { /* ignore */ }
   }, []);
   const dna = useDna();
   const matchFor = dna?.matchFor;
@@ -165,8 +179,28 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
 
   return (
     <div>
+      {movies.length > 0 && (
+        <div className="flex flex-wrap items-center gap-3 mb-4">
+          <div className="flex gap-1 p-1 bg-brand-surface border border-brand-border rounded-xl w-fit" role="tablist" aria-label="TV or movies">
+            {(['tv', 'movies'] as const).map(k => (
+              <button
+                key={k}
+                type="button"
+                role="tab"
+                aria-selected={kind === k}
+                onClick={() => switchKind(k)}
+                className={`text-sm px-4 py-1.5 rounded-lg transition-all ${kind === k ? 'bg-brand-text-primary text-black font-medium' : 'text-brand-text-secondary hover:text-brand-text-primary'}`}
+              >
+                {k === 'tv' ? `TV · ${tvShows.length}` : `Movies · ${movies.length}`}
+              </button>
+            ))}
+          </div>
+          <span className="text-xs text-brand-text-muted">Separate boards: a 22-minute episode and a 100-minute film aren’t on the same scale.</span>
+        </div>
+      )}
+
       <div className="flex gap-1 p-1 bg-brand-surface border border-brand-border rounded-xl w-fit mb-5">
-        {SORT_OPTIONS.map(opt => (
+        {sortOptions.map(opt => (
           <button
             key={opt.key}
             onClick={() => { setSortKey(opt.key); if (opt.key === 'match') trackEvent('cdna_leaderboard_for_you', { has_profile: !!dna?.hasProfile }); }}
@@ -185,7 +219,7 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
       {/* Column heads, desktop only */}
       <div className="hidden sm:grid grid-cols-[2.75rem_minmax(0,1fr)_7rem_repeat(4,4.5rem)] gap-x-4 pb-2 border-b border-brand-border text-[11px] uppercase tracking-widest text-brand-text-muted">
         <span>Rank</span>
-        <span>Show</span>
+        <span>{isMovies ? 'Film' : 'Show'}</span>
         <span>Humor Index</span>
         {COLS.map(c => (
           c.key === 'imdb'
@@ -226,7 +260,7 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
                 <div className={`flex items-baseline gap-2 pb-1 ${i > 0 ? 'pt-5' : 'pt-1'}`}>
                   <span className="font-mono text-[11px] uppercase tracking-widest text-brand-gold">{tierName(t)}</span>
                   <span className="text-[11px] text-brand-text-muted">
-                    {tierSize[t - 1] > 1 ? `${tierSize[t - 1]} shows, statistically tied` : 'alone'}
+                    {tierSize[t - 1] > 1 ? `${tierSize[t - 1]} ${isMovies ? 'films' : 'shows'}, statistically tied` : 'alone'}
                   </span>
                 </div>
               )}
@@ -244,7 +278,14 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
         </p>
       )}
 
-      {sortKey === 'peak_22' && (
+      {sortKey === 'peak_22' && isMovies && (
+        <p className="mt-4 text-xs text-brand-text-muted leading-relaxed">
+          Best reel is the peak: each film’s funniest stretch, scored like an episode (about 22 minutes). The Index is the whole film.{' '}
+          <Link href="/methodology#peak" className="text-brand-gold hover:underline">How we score →</Link>
+        </p>
+      )}
+
+      {sortKey === 'peak_22' && !isMovies && (
         <p className="mt-4 text-xs text-brand-text-muted leading-relaxed">
           Best 22 is the peak: the average of each show’s 22 best episodes, about one network season. The Index is the whole career, every episode counted.
           A long run has more chances at 22 great ones; a short run uses everything it has, so it’s marked.{' '}
@@ -252,7 +293,14 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
         </p>
       )}
 
-      {sortKey === 'humor_index' && (
+      {sortKey === 'humor_index' && isMovies && (
+        <p className="mt-4 text-xs text-brand-text-muted leading-relaxed">
+          The bar under each score is its 95% interval. A film has only a handful of reels, so the interval comes from the spread of its own jokes instead, converted to the Index scale. Films are grouped into tiers the same way as TV: every film in a tier has an interval that reaches the tier leader’s. Movies rank against movies only.{' '}
+          <Link href="/movies" className="text-brand-gold hover:underline">The movies page →</Link>
+        </p>
+      )}
+
+      {sortKey === 'humor_index' && !isMovies && (
         <p className="mt-4 text-xs text-brand-text-muted leading-relaxed">
           The bar under each score is its 95% interval, from the spread of the show’s episode scores. Shows are grouped into tiers, from the Pantheon down: every show in a tier has an interval that reaches the tier leader’s, so the order inside a tier is a statistical tie. The Index is the career average; switch to Best 22 for the peak.{' '}
           <Link href="/methodology" className="text-brand-gold hover:underline">How we score →</Link>

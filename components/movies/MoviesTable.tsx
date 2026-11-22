@@ -1,4 +1,5 @@
 'use client';
+import { tierName } from '@/lib/boardTiers';
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -8,10 +9,11 @@ import MiniLaughMap from './MiniLaughMap';
 type SortKey = 'humor_index' | 'avg_jpm' | 'avg_craft' | 'year';
 
 export interface MovieRowExtra { line: string; who?: string; bins: LaughBin[] }
+export interface MovieTier { tier: number; size: number; half: number }
 
 const short = (t: string) => { const s = t.split(':')[0].trim(); return s.length >= 4 ? s : t; };
 
-export default function MoviesTable({ movies, extras }: { movies: MovieSummary[]; extras: Record<string, MovieRowExtra> }) {
+export default function MoviesTable({ movies, extras, tiers = {} }: { movies: MovieSummary[]; extras: Record<string, MovieRowExtra>; tiers?: Record<string, MovieTier> }) {
   const [sort, setSort] = useState<SortKey>('humor_index');
   const [decade, setDecade] = useState<string>('all');
   const [star, setStar] = useState<string>('all');
@@ -66,11 +68,22 @@ export default function MoviesTable({ movies, extras }: { movies: MovieSummary[]
         )}
       </div>
       <ol className="space-y-2.5">
-        {rows.map(m => {
+        {rows.map((m, i) => {
           const x = extras[m.slug];
           const s = stat(m);
+          // Tier headers only on the full Index view: filters break the groups.
+          const tiered = sort === 'humor_index' && decade === 'all' && star === 'all';
+          const t = tiers[m.slug];
+          const prevT = i > 0 ? tiers[rows[i - 1].slug]?.tier : undefined;
+          const header = tiered && t && t.tier !== prevT;
           return (
             <li key={m.slug}>
+              {header && (
+                <div className={`flex items-baseline gap-2 pb-1 ${i > 0 ? 'pt-4' : ''}`}>
+                  <span className="font-mono text-[11px] uppercase tracking-widest text-brand-gold">{tierName(t.tier)}</span>
+                  <span className="text-[11px] text-brand-text-muted">{t.size > 1 ? `${t.size} films, statistically tied` : 'alone'}</span>
+                </div>
+              )}
               <Link href={`/movies/${m.slug}`}
                 className="group flex items-center gap-4 rounded-xl border border-brand-border bg-brand-card p-3 sm:p-4 hover:border-brand-gold/40 hover:bg-brand-surface transition-colors">
                 <span className={`font-mono text-lg w-7 text-center shrink-0 ${m.rank <= 3 ? 'text-brand-gold' : 'text-brand-text-muted'}`}>{m.rank}</span>
@@ -96,6 +109,7 @@ export default function MoviesTable({ movies, extras }: { movies: MovieSummary[]
                 <div className="text-right w-20 shrink-0">
                   <p className="font-mono text-2xl text-brand-gold leading-none">{s.v}</p>
                   <p className="text-[11px] uppercase tracking-wider text-brand-text-muted mt-1">{s.l}</p>
+                  {sort === 'humor_index' && tiers[m.slug] && <p className="font-mono text-[11px] text-brand-text-secondary">±{tiers[m.slug].half.toFixed(1)}</p>}
                 </div>
               </Link>
             </li>

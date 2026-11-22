@@ -247,3 +247,38 @@ export const getMovieGameJokes = cache(async (): Promise<MovieGameJoke[]> => {
   }
   return out;
 });
+
+/**
+ * Movies on the leaderboard, with intervals and a peak. A film has only 3 to 6
+ * reels, too few for the episode-spread interval TV uses (every film would tie).
+ * Instead: the standard error of the film's mean joke score, mapped onto the
+ * Humor Index scale by the fit across all films (index against mean joke
+ * score; r is about 0.95). peak_22 holds the best reel, the movie version of
+ * a show's Best 22.
+ */
+export const getMovieBoard = cache(async (): Promise<import('./types').ShowScore[]> => {
+  const movies = await getMovies();
+  const stats: { m: MovieSummary; mean: number; se: number; best: number; reels: number }[] = [];
+  for (const m of movies) {
+    const d = await getMovie(m.slug);
+    const s = (d?.jokes ?? []).map((j) => j.score).filter((x): x is number => typeof x === 'number');
+    if (s.length < 3 || !d) continue;
+    const mean = s.reduce((a, b) => a + b, 0) / s.length;
+    const sd = Math.sqrt(s.reduce((a, b) => a + (b - mean) ** 2, 0) / (s.length - 1));
+    stats.push({ m, mean, se: sd / Math.sqrt(s.length), best: Math.max(...d.reels.map((r) => r.humor_index)), reels: d.reels.length });
+  }
+  const mx = stats.reduce((a, x) => a + x.mean, 0) / Math.max(stats.length, 1);
+  const my = stats.reduce((a, x) => a + x.m.humor_index, 0) / Math.max(stats.length, 1);
+  const sxx = stats.reduce((a, x) => a + (x.mean - mx) ** 2, 0);
+  const slope = sxx ? stats.reduce((a, x) => a + (x.mean - mx) * (x.m.humor_index - my), 0) / sxx : 0;
+  return stats.map(({ m, se, best, reels }) => {
+    const half = 1.96 * se * slope;
+    return {
+      ...movieAsShow(m),
+      ci_95_low: Math.round((m.humor_index - half) * 10) / 10,
+      ci_95_high: Math.round((m.humor_index + half) * 10) / 10,
+      peak_22: best,
+      scored_episodes: reels,
+    };
+  });
+});

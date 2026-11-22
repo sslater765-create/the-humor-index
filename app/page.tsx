@@ -9,7 +9,7 @@ import LeaderboardClient from './LeaderboardClient';
 import ThisWeek from '@/components/home/ThisWeek';
 import HeroLoop from '@/components/HeroLoop';
 import MovieSpotlight from '@/components/movies/MovieSpotlight';
-import { getMovies } from '@/lib/movies';
+import { getMovies, getMovieBoard } from '@/lib/movies';
 import { SITE_URL } from '@/lib/site';
 import { rankable, awaitingRescore } from '@/lib/scale';
 
@@ -130,14 +130,14 @@ export default async function HomePage() {
               <div>
                 <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">The Index</p>
                 <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary leading-tight">
-                  The TV leaderboard.
+                  The leaderboard.
                 </h2>
               </div>
               <Link href="/rankings" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors shrink-0 ml-3">
                 Full rankings →
               </Link>
             </div>
-            <LeaderboardClient shows={await withIntervals(rankable(shows))} pending={awaitingRescore(shows)} quickPool={quickPool} />
+            <LeaderboardClient shows={await withIntervals(rankable(shows))} movies={await getMovieBoard()} pending={awaitingRescore(shows)} quickPool={quickPool} />
             <div className="mt-6 pt-5 border-t border-brand-border flex flex-wrap items-center gap-x-6 gap-y-2">
               <Link href="/shows" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
                 Browse all {analyzedShows.length} shows →

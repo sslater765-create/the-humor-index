@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getMovies, getMovieQueue, getMovie, bestLine, jokeLines, lineSpeaker, shortTitle, filmTime, laughMapNotes, TMDB_IMG, type MovieJoke } from '@/lib/movies';
+import { getMovies, getMovieQueue, getMovie, getMovieBoard, bestLine, jokeLines, lineSpeaker, shortTitle, filmTime, laughMapNotes, TMDB_IMG, type MovieJoke } from '@/lib/movies';
 import MiniLaughMap from '@/components/movies/MiniLaughMap';
-import type { MovieRowExtra } from '@/components/movies/MoviesTable';
+import type { MovieRowExtra, MovieTier } from '@/components/movies/MoviesTable';
+import { boardTiers } from '@/lib/boardTiers';
 import { formatIndex } from '@/lib/scoring';
 import MoviesTable from '@/components/movies/MoviesTable';
 import { SITE_URL } from '@/lib/site';
@@ -38,6 +39,14 @@ export default async function MoviesPage() {
     const notes = laughMapNotes(d.laugh_map, d.jokes);
     extras[m.slug] = { line: j ? bestLine(j) : '', who: j ? lineSpeaker(bestLine(j), j.characters) : undefined, bins: d.laugh_map, peak: notes.peak ? `${filmTime(notes.peak.start)} to ${filmTime(notes.peak.end)}` : undefined };
   });
+  // Tiers of statistical ties, the same rule as the TV board.
+  const board = (await getMovieBoard()).sort((a, b) => b.humor_index - a.humor_index);
+  const { tierOf, sizes } = boardTiers(board);
+  const tiers: Record<string, MovieTier> = {};
+  for (const b of board) {
+    const t = tierOf.get(b.slug);
+    if (t) tiers[b.slug] = { tier: t, size: sizes[t - 1], half: ((b.ci_95_high ?? b.humor_index) - (b.ci_95_low ?? b.humor_index)) / 2 };
+  }
   const totalJokes = movies.reduce((s, m) => s + m.total_jokes, 0);
   // Records across every scored film.
   let topJoke: { j: MovieJoke; slug: string; name: string } | null = null;
@@ -126,7 +135,7 @@ export default async function MoviesPage() {
           </section>
         )}
 
-        {movies.length > 3 && <MoviesTable movies={movies} extras={extras} />}
+        {movies.length > 3 && <MoviesTable movies={movies} extras={extras} tiers={tiers} />}
 
         {queue.length > 0 && (
           <section>
