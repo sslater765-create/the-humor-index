@@ -12,6 +12,7 @@ export const metadata = {
 
 // Newest first. Add a line whenever a published score moves.
 const LOG: Array<{ date: string; what: string; detail: string; link?: string }> = [
+  { date: '2026-11-22', what: 'Fifteen more movies', detail: 'Borat, Napoleon Dynamite, Hot Fuzz, Bridesmaids, 21 Jump Street, Office Space, The Big Lebowski, Dumb and Dumber, Groundhog Day, Austin Powers, Ferris Bueller\u2019s Day Off, This Is Spinal Tap, Caddyshack, Airplane! and Monty Python and the Holy Grail are scored, 25 films in all.', link: '/movies/' },
   { date: '2026-11-21', what: 'The fame test', detail: 'We tested whether the scorer rewards famous lines: 99 famous lines and equal-scored deep cuts, rescored alone with and without names. Names make no difference; judged alone, famous lines do slightly better. Impact descriptions corrected: the scorer never rated \u201ccultural footprint.\u201d', link: '/blog/does-the-index-reward-famous-lines/' },
   { date: '2026-11-21', what: 'Show pages lead with rank and tier', detail: 'Each show page opens with its best lines, then its rank and tier. The \u201cIs it funny? Yes\u201d boilerplate is gone, and the scale is explained: every ranked show scores between 80 and 97.5.', link: '/shows/the-office/' },
   { date: '2026-11-21', what: 'Best seasons and a Play page', detail: 'A cross-show list of the best seasons, and one page for every game: the bracket, the draft, Comedy DNA, the blind test and the study.', link: '/play/' },

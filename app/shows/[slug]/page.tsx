@@ -347,7 +347,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         const pool = roulette.filter(j => j.slug === show.slug);
         return pool.length >= 5 ? (
           <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
-            <JokeRoulette pool={pool} firstLabel={`A great ${show.name} line`} />
+            <JokeRoulette pool={pool} firstLabel={`A great line from ${show.name}`} />
           </div>
         ) : null;
       })()}
