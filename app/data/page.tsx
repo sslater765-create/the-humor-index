@@ -23,6 +23,8 @@ const FILES = [
   { path: '/data/search-index.json', name: 'search-index.json', desc: 'Searchable index of scored jokes with show/episode references.' },
   { path: '/data/movies/index.json', name: 'movies/index.json', desc: 'Movie leaderboard: Humor Index, jokes per minute, craft, impact, runtime.' },
   { path: '/data/running-gags.json', name: 'running-gags.json', desc: 'Every running gag per show with its stat line: GP, J, Avg, Hit%, LAR, trend, first appearance and best hit.' },
+  { path: '/data/signature-lines.json', name: 'signature-lines.json', desc: 'Fan-favorite lines per show and where the scorer ranked each one, including the ones it missed.' },
+  { path: '/data/reliability-3run.json', name: 'reliability-3run.json', desc: 'Run-to-run reliability of the scorer from the stored three runs per episode: ICC by show and pooled.' },
 ];
 
 export default async function DataPage() {

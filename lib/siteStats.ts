@@ -98,17 +98,22 @@ export function topShare(score: number, all: number[]): string {
  * averages, so this covers both scorer noise and real episode-to-episode
  * variation. Used for the leaderboard whiskers and "statistical tie" calls.
  */
-export async function withIntervals<T extends { slug: string; humor_index: number; ci_95_low?: number; ci_95_high?: number }>(shows: T[]): Promise<T[]> {
+export async function withIntervals<T extends { slug: string; humor_index: number; ci_95_low?: number; ci_95_high?: number; peak_22?: number; scored_episodes?: number }>(shows: T[]): Promise<T[]> {
   const out: T[] = [];
   for (const s of shows) {
-    if (s.ci_95_low !== undefined && s.ci_95_high !== undefined) { out.push(s); continue; }
     try {
       const xs = (await getEpisodes(s.slug)).map(e => e.humor_index).filter(v => v > 0);
       if (xs.length < 3) { out.push(s); continue; }
+      const top = [...xs].sort((a, b) => b - a).slice(0, 22);
+      const extra = {
+        peak_22: Math.round((top.reduce((a, b) => a + b, 0) / top.length) * 10) / 10,
+        scored_episodes: xs.length,
+      };
+      if (s.ci_95_low !== undefined && s.ci_95_high !== undefined) { out.push({ ...s, ...extra }); continue; }
       const m = xs.reduce((a, b) => a + b, 0) / xs.length;
       const sd = Math.sqrt(xs.reduce((a, b) => a + (b - m) ** 2, 0) / (xs.length - 1));
       const half = 1.96 * sd / Math.sqrt(xs.length);
-      out.push({ ...s, ci_95_low: Math.round((s.humor_index - half) * 10) / 10, ci_95_high: Math.round((s.humor_index + half) * 10) / 10 });
+      out.push({ ...s, ...extra, ci_95_low: Math.round((s.humor_index - half) * 10) / 10, ci_95_high: Math.round((s.humor_index + half) * 10) / 10 });
     } catch {
       out.push(s);
     }

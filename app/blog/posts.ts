@@ -5,6 +5,41 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'index-is-wrong-about-festivus': {
+    title: "The Index Is Wrong About Festivus",
+    description: "Our fan-favorites panel said \"A Festivus for the rest of us\" ranked 7,671st of 13,316 Seinfeld jokes. The line was never scored at all. The Festivus jokes around it rank near the top.",
+    date: '2026-11-21',
+    category: 'Column',
+    content: `
+*The Index Is Wrong About... is a column where we argue with our own numbers.*
+
+This week we added a panel to every show page called Fan favorites vs the Index. It takes the lines people actually quote and shows where our scorer ranked each one. For Seinfeld it said "A Festivus for the rest of us" ranked **#7,671 of 13,316**, below the show's median joke.
+
+That number was wrong, and not in an interesting way. It was our mistake, and the way it happened says something about how a transcript scorer reads a scene.
+
+## What happened
+
+The scorer reads an episode and splits it into jokes. Each joke gets its text, a setup, a punchline and the dialogue lines it's built on. In "The Strike," Frank's line about the new holiday ended up attached as dialogue to the next joke in the scene, which is Kramer's bit about H&H day-old bagels that "the homeless won't even touch." That joke scored 7.3. Our panel searched the dialogue, found the Festivus line, and reported the bagel joke's rank as Festivus's rank.
+
+So the honest answer is that "A Festivus for the rest of us" was **never scored on its own**. The panel now says exactly that, and we changed the matching so a famous line only counts when the joke it's attached to is actually about it. That fix moved a few other lines too; they're all on the show pages.
+
+## What the scorer got right
+
+The rest of Festivus does fine. By our count 33 of the episode's 89 jokes are Festivus jokes, they average 8.1 against a show median of 7.4, and 82% of them beat the median. The best is Jerry's summary of the dinner, "you gather your family around and tell them all the ways they have disappointed you over the past year," at 8.9, which is the 283rd best joke in Seinfeld. The aluminum pole and the feats of strength both land in the top 600. "The Strike" itself is the fifth-best Seinfeld episode on the Index.
+
+## Why the famous line slipped through
+
+"A Festivus for the rest of us" isn't built like a joke. It's a coinage: Frank names the thing, and the scene's jokes come from everything that name lets the show do afterward. The pole, the airing of grievances, the feats of strength and George's misery are punchlines. The name is the setup for all of them.
+
+A scorer that grades jokes one at a time will always undervalue that kind of line, because the laugh it creates arrives later and gets credited to someone else. It's the same problem we wrote about with [the banana stand](/blog/index-is-wrong-about-the-banana-stand): setups do the work and payoffs get the credit.
+
+## What we'll change
+
+The matching fix is live. The bigger fix is the one we already promised: crediting a payoff's setups. When we ship it, Frank should get some credit for every grievance aired after him.
+
+Until then, check the [Seinfeld page](/shows/seinfeld) for where the other fan favorites landed, and tell us which famous line you think we scored worst.
+`,
+  },
   'index-is-wrong-about-the-banana-stand': {
     title: "The Index Is Wrong About the Banana Stand",
     description: "Our new running-gag stat puts Arrested Development's banana stand at -8.0 Laughs Above Replacement, the worst of the show's gags. The number is right about what it counts and wrong about the gag.",

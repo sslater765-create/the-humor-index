@@ -12,7 +12,7 @@ export const metadata = {
   alternates: { canonical: `${SITE_URL}/people/` },
 };
 
-const MIN = 5;
+const MIN = 10;
 
 export default async function PeoplePage() {
   const people = await getPeople();
@@ -30,7 +30,7 @@ export default async function PeoplePage() {
             </span>
             <span className="text-right shrink-0">
               <span className={`block font-mono text-lg ${p.plus >= 0 ? 'text-brand-gold' : 'text-rose-400'}`}>{p.plus >= 0 ? '+' : ''}{p.plus.toFixed(1)}</span>
-              <span className="block font-mono text-[11px] text-brand-text-muted">avg {formatIndex(p.avg)}</span>
+              <span className="block font-mono text-[11px] text-brand-text-muted">±{p.plusCi.toFixed(1)} · avg {formatIndex(p.avg)}</span>
             </span>
           </Link>
         </li>
@@ -40,7 +40,7 @@ export default async function PeoplePage() {
   return (
     <div>
       <PageHeader label="People" title="The writers and directors behind the jokes"
-        subtitle={`Credited writers and directors across the shows we rank, ranked by points above their own show’s average episode. A raw average mostly tells you which show someone wrote for; this tells you how their episodes did against the rest of that show. Minimum ${MIN} episodes.`} />
+        subtitle={`Credited writers and directors across the shows we rank, ranked by points above their own show’s average episode. A raw average mostly tells you which show someone wrote for; this tells you how their episodes did against the rest of that show. Minimum ${MIN} episodes; the ± is a 95% interval, so a +1.0 with ±2.0 could be zero.`} />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 grid gap-10 lg:grid-cols-2">
         <section>
           <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Writers</h2>

@@ -3,7 +3,7 @@ import path from 'path';
 import Link from 'next/link';
 
 interface Row {
-  label: string; found: boolean; of: number;
+  label: string; found: boolean; of: number; attached?: boolean;
   rank?: number; pct?: number; score?: number; season?: number; episode?: number; title?: string; who?: string; text?: string;
 }
 
@@ -47,7 +47,8 @@ export default function FanFavoritesPanel({ slug, name }: { slug: string; name: 
       <h2 className="text-xl sm:text-2xl font-semibold text-brand-text-primary">Fan favorites vs the Index</h2>
       <p className="text-sm text-brand-text-secondary mt-1 mb-4">
         The {name} lines people quote, and where the scorer ranked them among all {rows[0].of.toLocaleString()} jokes.
-        {missing > 0 && ` ${missing} ${missing === 1 ? 'wasn’t' : 'weren’t'} picked up as a joke at all.`}
+        {' '}Each links to the line’s best-ranked use, which isn’t always the episode it started in.
+        {missing > 0 && ` ${missing} ${missing === 1 ? 'wasn’t' : 'weren’t'} scored as a joke on its own.`}
       </p>
       <ul className="grid gap-2 sm:grid-cols-2">
         {rows.map((r) => (
@@ -60,7 +61,13 @@ export default function FanFavoritesPanel({ slug, name }: { slug: string; name: 
                 <Link href={`/shows/${slug}/${r.season}/${r.episode}/`} className="hover:text-brand-gold">S{r.season}E{r.episode} {r.title}</Link>
               </p>
             ) : (
-              <p className="mt-1 text-xs text-rose-400">Not detected as a joke</p>
+              <p className="mt-1 text-xs text-rose-400">
+                {r.attached ? (
+                  <>Not scored on its own: it shows up only as context for another joke in{' '}
+                    <Link href={`/shows/${slug}/${r.season}/${r.episode}/`} className="underline hover:text-brand-gold">S{r.season}E{r.episode} {r.title}</Link>
+                  </>
+                ) : 'Not detected as a joke'}
+              </p>
             )}
           </li>
         ))}

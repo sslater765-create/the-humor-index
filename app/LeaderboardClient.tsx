@@ -14,10 +14,15 @@ import { trackEvent } from '@/lib/analytics';
 import type { QuizJoke } from '@/lib/comedyDna';
 
 type MetricKey = 'humor_index' | 'avg_jpm' | 'avg_craft' | 'avg_impact';
-type SortKey = MetricKey | 'match';
+type SortKey = MetricKey | 'peak_22' | 'match';
+
+/** Tier names, top down. Tiers past the list fall back to a number. */
+const TIER_NAMES = ['The Pantheon', 'The Second Floor', 'The Rotation', 'The Bench', 'The Waiver Wire'];
+const SHORT_RUN = 22;
 
 const SORT_OPTIONS: { key: SortKey; label: string }[] = [
   { key: 'humor_index', label: 'Index' },
+  { key: 'peak_22', label: 'Best 22' },
   { key: 'avg_jpm', label: 'Jokes/min' },
   { key: 'avg_craft', label: 'Craft' },
   { key: 'avg_impact', label: 'Impact' },
@@ -47,7 +52,7 @@ function Whisker({ show, lo, hi }: { show: ShowScore; lo: number; hi: number }) 
         <span className="absolute top-0 h-1.5 rounded-full bg-brand-gold/40" style={{ left: pos(show.ci_95_low), width: `calc(${pos(show.ci_95_high)} - ${pos(show.ci_95_low)})` }} />
         <span className="absolute -top-[2px] h-2.5 w-[3px] rounded bg-brand-gold" style={{ left: `calc(${pos(show.humor_index)} - 1px)` }} />
       </span>
-      <span className="mt-0.5 block font-mono text-[10px] text-brand-text-muted">±{half.toFixed(1)}</span>
+      <span className="mt-0.5 block font-mono text-[11px] text-brand-text-secondary">±{half.toFixed(1)}</span>
     </span>
   );
 }
@@ -75,9 +80,14 @@ function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: n
             <FormatBadge format={show.format} />
             <MatchPill slug={show.slug} />
             {/* Phones have no room for the metric columns, so the active sort rides here. */}
-            {sortKey !== 'humor_index' && sortKey !== 'match' && (
+            {sortKey !== 'humor_index' && sortKey !== 'match' && sortKey !== 'peak_22' && (
               <span className="sm:hidden font-mono text-[11px] text-brand-text-muted">
                 {SORT_OPTIONS.find(o => o.key === sortKey)?.label} {show[sortKey].toFixed(1)}
+              </span>
+            )}
+            {show.scored_episodes !== undefined && show.scored_episodes < SHORT_RUN && (
+              <span className="font-mono text-[11px] text-brand-text-muted" title={`Only ${show.scored_episodes} episodes: a short run, so its average carries less proof than a long one.`}>
+                short run · {show.scored_episodes} eps
               </span>
             )}
           </div>
@@ -106,8 +116,13 @@ function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: n
       </div>
       <div className="text-right sm:text-left">
         <span className={`font-mono leading-none text-2xl sm:text-3xl ${pending ? 'text-brand-text-muted' : 'text-brand-gold'}`}>
-          {formatIndex(show.humor_index)}
+          {sortKey === 'peak_22' && show.peak_22 !== undefined ? show.peak_22.toFixed(1) : formatIndex(show.humor_index)}
         </span>
+        {!pending && sortKey === 'peak_22' && show.peak_22 !== undefined && (
+          <span className="mt-1 block font-mono text-[11px] text-brand-text-secondary">
+            {(show.scored_episodes ?? 0) >= SHORT_RUN ? `best 22 of ${show.scored_episodes}` : `all ${show.scored_episodes}`} · Index {formatIndex(show.humor_index)}
+          </span>
+        )}
         {!pending && sortKey === 'humor_index' && <Whisker show={show} lo={lo} hi={hi} />}
       </div>
       {COLS.map(c => (
@@ -132,9 +147,10 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
     if (sortKey === 'match') {
       return personal && matchFor ? (matchFor(b.slug)?.score ?? -9) - (matchFor(a.slug)?.score ?? -9) : b.humor_index - a.humor_index;
     }
+    if (sortKey === 'peak_22') return (b.peak_22 ?? b.humor_index) - (a.peak_22 ?? a.humor_index);
     return b[sortKey] - a[sortKey];
   }), [shows, sortKey, personal, matchFor]);
-  const pendingKey: MetricKey = sortKey === 'match' ? 'humor_index' : sortKey;
+  const pendingKey: MetricKey = sortKey === 'match' || sortKey === 'peak_22' ? 'humor_index' : sortKey;
   const sortedPending = useMemo(() => [...pending].sort((a, b) => b[pendingKey] - a[pendingKey]), [pending, pendingKey]);
   const needPicks = sortKey === 'match' && !!dna?.ready && !dna.hasProfile;
 
@@ -203,8 +219,8 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
           return sorted.map((show, i) => {
           // Shared rank for equal displayed values: Parks and Community at
           // 91.9 are both 8th, not 8th and 9th by accident of sort order.
-          const key: MetricKey = sortKey === 'match' ? 'humor_index' : sortKey;
-          const shown = (s: ShowScore) => Math.round(s[key] * 10);
+          const key: MetricKey = sortKey === 'match' || sortKey === 'peak_22' ? 'humor_index' : sortKey;
+          const shown = (s: ShowScore) => Math.round((sortKey === 'peak_22' ? (s.peak_22 ?? s.humor_index) : s[key]) * 10);
           const rank = sortKey === 'match' && personal ? i + 1 : 1 + sorted.filter(o => shown(o) > shown(show)).length;
           const t = tierOf.get(show.slug) ?? 0;
           const header = t > 0 && t !== lastTier;
@@ -213,10 +229,10 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
             <Fragment key={show.slug}>
               {header && (
                 <div className={`flex items-baseline gap-2 pb-1 ${i > 0 ? 'pt-5' : 'pt-1'}`}>
-                  <span className="font-mono text-[11px] uppercase tracking-widest text-brand-gold">Tier {t}</span>
-                  {tierSize[t - 1] > 1 && (
-                    <span className="text-[11px] text-brand-text-muted">{tierSize[t - 1]} shows, statistically tied</span>
-                  )}
+                  <span className="font-mono text-[11px] uppercase tracking-widest text-brand-gold">{TIER_NAMES[t - 1] ?? `Tier ${t}`}</span>
+                  <span className="text-[11px] text-brand-text-muted">
+                    {tierSize[t - 1] > 1 ? `${tierSize[t - 1]} shows, statistically tied` : 'alone'}
+                  </span>
                 </div>
               )}
               <Row show={show} rank={rank} sortKey={sortKey} lo={scaleLo} hi={scaleHi} />
@@ -233,9 +249,17 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
         </p>
       )}
 
+      {sortKey === 'peak_22' && (
+        <p className="mt-4 text-xs text-brand-text-muted leading-relaxed">
+          Best 22 is the peak: the average of each show’s 22 best episodes, about one network season. The Index is the whole career, every episode counted.
+          A long run has more chances at 22 great ones; a short run uses everything it has, so it’s marked.{' '}
+          <Link href="/methodology#peak" className="text-brand-gold hover:underline">How we score →</Link>
+        </p>
+      )}
+
       {sortKey === 'humor_index' && (
         <p className="mt-4 text-xs text-brand-text-muted leading-relaxed">
-          The bar under each score is its 95% interval, from the spread of the show’s episode scores. Shows are grouped into tiers: every show in a tier has an interval that reaches the tier leader’s, so the order inside a tier is a statistical tie.{' '}
+          The bar under each score is its 95% interval, from the spread of the show’s episode scores. Shows are grouped into tiers, from the Pantheon down: every show in a tier has an interval that reaches the tier leader’s, so the order inside a tier is a statistical tie. The Index is the career average; switch to Best 22 for the peak.{' '}
           <Link href="/methodology" className="text-brand-gold hover:underline">How we score →</Link>
         </p>
       )}

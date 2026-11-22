@@ -41,6 +41,10 @@ export interface ShowScore {
   humor_index_v1?: number;
   ci_95_low?: number;
   ci_95_high?: number;
+  /** Mean Index of the show's best 22 episodes (a season's worth): the peak. */
+  peak_22?: number;
+  /** Episodes with a score, for marking short runs. */
+  scored_episodes?: number;
   best_season: number;
   avg_jpm: number;
   avg_craft: number;

@@ -21,6 +21,7 @@ const BY_SLUG: Record<string, string> = {
   'is-the-office-actually-funny': 'the-office',
   'always-sunny-fewer-jokes-better-with-age': 'its-always-sunny',
   'index-is-wrong-about-the-banana-stand': 'arrested-development',
+  'index-is-wrong-about-festivus': 'seinfeld',
 };
 
 export function coverFor(slug: string, title: string, shows: ShowScore[]): { slug: string; name: string; backdrop: string } | null {

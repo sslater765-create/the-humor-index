@@ -34,6 +34,7 @@ export default function StudyGame({ jokes }: { jokes: StudyJoke[] }) {
   const [done, setDone] = useState<number[]>([]);
   const [current, setCurrent] = useState<StudyJoke | null>(null);
   const [rater, setRater] = useState('');
+  const [last, setLast] = useState<{ joke: StudyJoke; rating: number } | null>(null);
   const [results, setResults] = useState<{ jokes: Record<string, [number, number]>; raters: number } | null>(null);
 
   useEffect(() => {
@@ -67,6 +68,7 @@ export default function StudyGame({ jokes }: { jokes: StudyJoke[] }) {
   async function rate(n: number) {
     if (!current) return;
     const next = done.concat(current.id);
+    setLast({ joke: current, rating: n });
     setDone(next);
     try { localStorage.setItem(DONE_KEY, JSON.stringify(next)); } catch { /* ignore */ }
     void fetch('/api/study', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: current.id, rating: n, rater }) });
@@ -104,9 +106,7 @@ export default function StudyGame({ jokes }: { jokes: StudyJoke[] }) {
     <div>
       {current ? (
         <div className="rounded-2xl border border-brand-border bg-brand-card p-5 sm:p-6">
-          <p className="text-xs text-brand-text-muted">
-            <span className="text-brand-text-secondary font-medium">{current.who}</span> · {current.show} · S{current.se}E{current.ep}{current.et ? ` “${current.et}”` : ''}
-          </p>
+          <p className="text-xs text-brand-text-muted">Joke {done.length + 1} · show and character revealed after you rate</p>
           <p className="mt-3 font-serif italic text-xl text-brand-text-primary leading-snug">“{current.t}”</p>
           <div className="mt-6 grid grid-cols-5 sm:grid-cols-10 gap-2">
             {Array.from({ length: 10 }, (_, i) => i + 1).map((n) => (
@@ -132,17 +132,27 @@ export default function StudyGame({ jokes }: { jokes: StudyJoke[] }) {
         </p>
       )}
 
-      <p className="mt-4 text-sm text-brand-text-muted">You’ve rated {done.length} of {jokes.length}.</p>
+      {last && (
+        <p className="mt-4 text-xs text-brand-text-muted">
+          Last one (you gave it {last.rating}): <span className="text-brand-text-secondary">{last.joke.who}</span>, {last.joke.show} S{last.joke.se}E{last.joke.ep}{last.joke.et ? ` “${last.joke.et}”` : ''}.
+        </p>
+      )}
+      <p className="mt-2 text-sm text-brand-text-muted">You’ve rated {done.length} of {jokes.length}.</p>
 
       <section className="mt-12 rounded-xl border border-brand-border bg-brand-card p-5 text-sm text-brand-text-secondary leading-relaxed">
         <p className="text-brand-text-primary font-medium mb-2">Results so far</p>
         {!summary ? (
           <p>Loading…</p>
         ) : summary.jokes < MIN_JOKES ? (
+          <>
+          <div className="mb-3 h-2 w-full overflow-hidden rounded-full bg-brand-border/60" role="progressbar" aria-valuemin={0} aria-valuemax={MIN_JOKES} aria-valuenow={summary.jokes}>
+            <div className="h-2 rounded-full bg-brand-gold" style={{ width: `${(100 * summary.jokes) / MIN_JOKES}%` }} />
+          </div>
           <p>
             {summary.ratings.toLocaleString()} ratings from {summary.raters.toLocaleString()} people. We publish the correlation once {MIN_JOKES} jokes
-            have at least {MIN_PER_JOKE} ratings each; {summary.jokes} do so far.
+            have at least {MIN_PER_JOKE} ratings each; {summary.jokes} do so far. You get the least-rated jokes first, so every rating moves this bar.
           </p>
+          </>
         ) : (
           <p>
             Across {summary.jokes} jokes with {MIN_PER_JOKE}+ ratings ({summary.ratings.toLocaleString()} ratings from {summary.raters.toLocaleString()} people),

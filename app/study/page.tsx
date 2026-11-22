@@ -28,7 +28,7 @@ export default async function StudyPage() {
         <h1 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary mb-3">How funny is this joke?</h1>
         <p className="text-sm text-brand-text-secondary leading-relaxed">
           The Humor Index is one AI model’s judgment. This study checks it against people. Rate each line from 1 to 10.
-          You won’t see the model’s score, so it can’t sway you. Rate as many as you like; ten takes about two minutes.
+          You won’t see the model’s score, and the show and character stay hidden until you’ve rated, so a favorite show can’t sway you. Rate as many as you like; ten takes about two minutes.
         </p>
       </header>
       <StudyGame jokes={jokes} />

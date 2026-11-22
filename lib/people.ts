@@ -19,6 +19,8 @@ export interface PersonEpisode {
 export interface Person {
   slug: string; name: string; episodes: PersonEpisode[];
   writerCount: number; directorCount: number; avg: number; plus: number; shows: string[];
+  /** Half-width of the 95% interval on plus, from the spread of the margins. */
+  plusCi: number;
 }
 
 export const personSlug = (name: string) =>
@@ -41,7 +43,7 @@ export const getPeople = cache(async (): Promise<Person[]> => {
       const credit = (name: string, role: 'writer' | 'director') => {
         const slug = personSlug(name);
         if (!slug) return;
-        const p = map.get(slug) ?? { slug, name, episodes: [], writerCount: 0, directorCount: 0, avg: 0, plus: 0, shows: [] };
+        const p = map.get(slug) ?? { slug, name, episodes: [], writerCount: 0, directorCount: 0, avg: 0, plus: 0, plusCi: 0, shows: [] };
         if (p.episodes.some(x => x.showSlug === s.slug && x.season === e.season && x.episode === e.episode_number && x.role === role)) return;
         p.episodes.push({ show: s.name, showSlug: s.slug, season: e.season, episode: e.episode_number, title: e.title, hi: e.humor_index, role });
         if (role === 'writer') p.writerCount++; else p.directorCount++;
@@ -57,7 +59,10 @@ export const getPeople = cache(async (): Promise<Person[]> => {
     const uniq = new Map(p.episodes.map(x => [`${x.showSlug}:${x.season}:${x.episode}`, x]));
     const eps = Array.from(uniq.values());
     p.avg = eps.reduce((a, x) => a + x.hi, 0) / Math.max(eps.length, 1);
-    p.plus = eps.reduce((a, x) => a + (x.hi - (showMean.get(x.showSlug) ?? x.hi)), 0) / Math.max(eps.length, 1);
+    const margins = eps.map(x => x.hi - (showMean.get(x.showSlug) ?? x.hi));
+    p.plus = margins.reduce((a, b) => a + b, 0) / Math.max(margins.length, 1);
+    const sd = margins.length > 1 ? Math.sqrt(margins.reduce((a, b) => a + (b - p.plus) ** 2, 0) / (margins.length - 1)) : 0;
+    p.plusCi = margins.length > 1 ? 1.96 * sd / Math.sqrt(margins.length) : 0;
     p.episodes.sort((a, b) => b.hi - a.hi);
   }
   return people.sort((a, b) => b.plus - a.plus);

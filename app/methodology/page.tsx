@@ -80,6 +80,22 @@ export default async function MethodologyPage() {
           </div>
         </section>
 
+        <section id="peak">
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Peak and career</p>
+          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Best 22 and the tiers</h2>
+          <div className="space-y-3 text-sm text-brand-text-secondary leading-relaxed">
+            <p>
+              The Humor Index is a career number: every scored episode counts. Best 22 is the peak: the average of a show’s 22 best episodes, about one
+              network season. A long run has more chances at 22 great episodes, so Best 22 favors depth; a run shorter than 22 episodes uses everything it
+              has and is marked as a short run.
+            </p>
+            <p>
+              On the Index view, shows are grouped into tiers (the Pantheon, the Second Floor, the Rotation, the Bench, the Waiver Wire). A show joins
+              the current tier while its 95% interval reaches the tier leader’s. Inside a tier the order is a statistical tie.
+            </p>
+          </div>
+        </section>
+
         <section id="running-gags">
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Running gags</p>
           <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Scoring the bits a show keeps coming back to</h2>

@@ -30,6 +30,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url('/why'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.7 },
     { url: url('/rankings/running-gags/bracket'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.6 },
     { url: url('/draft'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.6 },
+    { url: url('/rankings/most-rewatchable'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.6 },
     { url: url('/study'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.5 },
     { url: url('/people'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.7 },
     { url: url('/changelog'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.5 },

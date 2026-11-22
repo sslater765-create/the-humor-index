@@ -81,8 +81,8 @@ export default async function RunningGagsPage() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-14">
         <Link href="/rankings/running-gags/bracket/" className="block rounded-xl border border-brand-gold/40 bg-brand-gold/5 p-5 hover:border-brand-gold transition-colors">
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold">The bracket</p>
-          <p className="mt-1 font-serif italic text-2xl text-brand-text-primary">Sixteen shows, one gag each. Pick the champion.</p>
-          <p className="mt-1 text-sm text-brand-text-secondary">Seeded by LAR, decided by you, with the crowd’s split shown after every pick.</p>
+          <p className="mt-1 font-serif italic text-2xl text-brand-text-primary">Sixteen gags, one round a week. You decide who advances.</p>
+          <p className="mt-1 text-sm text-brand-text-secondary">Seeded by LAR, decided by the crowd. Round one closes Sunday, November 29; the champion is crowned December 20.</p>
         </Link>
 
         <section className="rounded-xl border border-brand-border bg-brand-card p-5 text-sm text-brand-text-secondary leading-relaxed">
