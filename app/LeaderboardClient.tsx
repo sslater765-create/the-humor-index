@@ -72,7 +72,7 @@ function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: n
       </div>
       <div className="min-w-0 flex items-center gap-3 sm:gap-5">
         <div className="min-w-0 w-36 sm:w-64 shrink-0">
-          <p className={`font-medium truncate transition-colors group-hover:text-brand-gold ${pending ? 'text-brand-text-secondary' : 'text-brand-text-primary'}`}>
+          <p className={`font-medium transition-colors group-hover:text-brand-gold ${show.kind === 'movie' ? 'line-clamp-2 leading-snug' : 'truncate'} ${pending ? 'text-brand-text-secondary' : 'text-brand-text-primary'}`}>
             {show.name}
           </p>
           <div className="mt-1 flex items-center gap-2">
@@ -223,7 +223,7 @@ export default function LeaderboardClient({ shows: tvShows, movies = [], pending
         <span>Humor Index</span>
         {COLS.map(c => (
           c.key === 'imdb'
-            ? <Link key={c.key} href="/rankings/index-vs-imdb/" title="Average IMDb episode rating: what viewers felt. The Index and IMDb barely move together; see where they disagree." className="underline decoration-dotted underline-offset-2 hover:text-brand-gold">{c.label}</Link>
+            ? <Link key={c.key} href="/rankings/index-vs-imdb/" title={isMovies ? 'IMDb user rating for the film.' : 'Average IMDb episode rating: what viewers felt. The Index and IMDb barely move together; see where they disagree.'} className="underline decoration-dotted underline-offset-2 hover:text-brand-gold">{c.label}</Link>
             : <span key={c.key}>{c.label}</span>
         ))}
       </div>

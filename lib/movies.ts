@@ -271,10 +271,15 @@ export const getMovieBoard = cache(async (): Promise<import('./types').ShowScore
   const my = stats.reduce((a, x) => a + x.m.humor_index, 0) / Math.max(stats.length, 1);
   const sxx = stats.reduce((a, x) => a + (x.mean - mx) ** 2, 0);
   const slope = sxx ? stats.reduce((a, x) => a + (x.mean - mx) * (x.m.humor_index - my), 0) / sxx : 0;
+  // IMDb ratings live in their own file (fetch_movie_imdb.py) so a re-export of
+  // the films can't wipe them.
+  let imdb: Record<string, { rating: number; votes: number }> = {};
+  try { imdb = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data', 'movie-imdb.json'), 'utf-8')); } catch { /* none yet */ }
   return stats.map(({ m, se, best, reels }) => {
     const half = 1.96 * se * slope;
     return {
       ...movieAsShow(m),
+      avg_imdb_rating: imdb[m.slug]?.rating,
       ci_95_low: Math.round((m.humor_index - half) * 10) / 10,
       ci_95_high: Math.round((m.humor_index + half) * 10) / 10,
       peak_22: best,
