@@ -5,7 +5,8 @@ const SUGGESTED_SHOWS = [
   { name: 'Frasier', slug: 'frasier' },
   { name: 'How I Met Your Mother', slug: 'how-i-met-your-mother' },
   { name: 'Ted Lasso', slug: 'ted-lasso' },
-  { name: 'Fleabag', slug: 'fleabag' },
+  { name: 'Brooklyn Nine-Nine', slug: 'brooklyn-nine-nine' },
+  { name: 'What We Do in the Shadows', slug: 'what-we-do-in-the-shadows' },
   { name: 'The Good Place', slug: 'the-good-place' },
   { name: 'Modern Family', slug: 'modern-family' },
   { name: 'Everybody Loves Raymond', slug: 'everybody-loves-raymond' },
@@ -126,7 +127,7 @@ export default function RequestClient({ completed, upNext }: { completed?: strin
         <div className="flex items-baseline justify-between mb-5">
           <div>
             <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Cast Your Vote</p>
-            <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary">The Ballot</h2>
+            <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary">The Ballot</h2>
           </div>
           {totalVotes > 0 && (
             <div className="text-right shrink-0">
@@ -199,7 +200,7 @@ export default function RequestClient({ completed, upNext }: { completed?: strin
       {/* Custom suggestion — framed as a write-in */}
       <section className="bg-brand-card border border-brand-border rounded-2xl p-6 sm:p-7">
         <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-1">Write-In Candidate</p>
-        <h3 className="font-serif italic text-xl text-brand-text-primary mb-4">Don&apos;t see your show?</h3>
+        <h3 className="font-serif text-xl text-brand-text-primary mb-4">Don&apos;t see your show?</h3>
         {customSubmitted ? (
           <p className="text-sm text-brand-gold">Thanks — we&apos;ll add it to the next ballot.</p>
         ) : (
@@ -227,7 +228,7 @@ export default function RequestClient({ completed, upNext }: { completed?: strin
         <div className="absolute top-3 left-5 font-serif italic text-brand-gold/15 text-6xl leading-none select-none">&ldquo;</div>
         <div className="relative">
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-1">Get the Verdict First</p>
-          <h3 className="font-serif italic text-xl text-brand-text-primary mb-4">
+          <h3 className="font-serif text-xl text-brand-text-primary mb-4">
             Find out the moment we score your pick.
           </h3>
           {emailSaved ? (
@@ -275,7 +276,7 @@ export default function RequestClient({ completed, upNext }: { completed?: strin
         <div className="flex items-baseline justify-between mb-5">
           <div>
             <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-1">The Roster</p>
-            <h2 className="font-serif italic text-2xl text-brand-text-primary">What we&apos;ve scored. What&apos;s coming.</h2>
+            <h2 className="font-serif text-2xl text-brand-text-primary">What we&apos;ve scored. What&apos;s coming.</h2>
           </div>
           <div className="text-right shrink-0 ml-3">
             <p className="font-serif italic text-3xl text-brand-gold leading-none">{completedList.length}</p>

@@ -81,12 +81,12 @@ export default async function IndexVsImdbPage() {
       />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 grid gap-10 lg:grid-cols-2">
         <section>
-          <h2 className="font-serif italic text-2xl text-brand-text-primary mb-1">Fans love it, the jokes don&rsquo;t</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary mb-1">Fans love it, the jokes don&rsquo;t</h2>
           <p className="text-sm text-brand-text-secondary mb-4">High on IMDb for its show, low on the Humor Index. Usually big story episodes: weddings, finales, breakups, where the plot matters more than the joke count.</p>
           <List items={fansLove} side="fans" />
         </section>
         <section>
-          <h2 className="font-serif italic text-2xl text-brand-text-primary mb-1">The jokes love it, fans don&rsquo;t</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary mb-1">The jokes love it, fans don&rsquo;t</h2>
           <p className="text-sm text-brand-text-secondary mb-4">Low on IMDb for its show, high on the Humor Index. The underrated ones, if you trust the jokes.</p>
           <List items={jokesWin} side="jokes" />
         </section>

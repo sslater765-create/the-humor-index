@@ -5,13 +5,13 @@ import { SITE_URL } from '@/lib/site';
 import { getSiteStats } from '@/lib/siteStats';
 
 export const metadata = {
-  title: 'About — The Story Behind the Comedy Data',
+  title: 'About: The Story Behind the Comedy Data',
   description: 'The Humor Index was built by Sam to answer one question: which sitcom is actually the funniest? Here\'s the story.',
   alternates: {
     canonical: `${SITE_URL}/about/`,
   },
   openGraph: {
-    title: 'About — The Humor Index',
+    title: 'About',
     description: 'The Humor Index was built by Sam to answer one question: which sitcom is actually the funniest? Here\'s the story.',
     images: ['/og-image.png'],
   },

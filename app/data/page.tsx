@@ -9,7 +9,7 @@ import { getMovies, shortTitle } from '@/lib/movies';
 export const dynamic = 'force-static';
 
 export const metadata = pageMeta({
-  title: 'The Data — Open Comedy Dataset & Embeddable Badge | The Humor Index',
+  title: 'The Data: Open Comedy Dataset & Embeddable Badge',
   description:
     'The Humor Index is open data. Download the per-show, per-episode, and per-joke scores as JSON, embed the live leaderboard on your site, and cite the numbers with attribution.',
   path: '/data',
@@ -24,6 +24,7 @@ const FILES = [
   { path: '/data/movies/index.json', name: 'movies/index.json', desc: 'Movie leaderboard: Humor Index, jokes per minute, craft, impact, runtime.' },
   { path: '/data/running-gags.json', name: 'running-gags.json', desc: 'Every running gag per show with its stat line: GP, J, Avg, Hit%, LAR, trend, first appearance and best hit.' },
   { path: '/data/signature-lines.json', name: 'signature-lines.json', desc: 'Fan-favorite lines per show and where the scorer ranked each one, including the ones it missed.' },
+  { path: '/data/fame-test.json', name: 'fame-test.json', desc: 'The fame test: 99 famous lines and equal-scored deep cuts, each rescored alone with and without show and character names.' },
   { path: '/data/reliability-3run.json', name: 'reliability-3run.json', desc: 'Run-to-run reliability of the scorer from the stored three runs per episode: ICC by show and pooled.' },
 ];
 
@@ -68,7 +69,7 @@ export default async function DataPage() {
 
       {/* Embed badge */}
       <section className="mb-12">
-        <h2 className="font-serif italic text-2xl text-brand-text-primary mb-1">Embed the live leaderboard</h2>
+        <h2 className="font-serif text-2xl text-brand-text-primary mb-1">Embed the live leaderboard</h2>
         <p className="text-sm text-brand-text-muted mb-5">
           Drop the current rankings on your blog or wiki. It updates automatically as we score new shows.
         </p>
@@ -96,7 +97,7 @@ export default async function DataPage() {
 
       {/* Downloads */}
       <section className="mb-12">
-        <h2 className="font-serif italic text-2xl text-brand-text-primary mb-1">Download the dataset</h2>
+        <h2 className="font-serif text-2xl text-brand-text-primary mb-1">Download the dataset</h2>
         <p className="text-sm text-brand-text-muted mb-5">
           Raw JSON, served straight from the site. Per-show episode and character files live under{' '}
           <code className="text-brand-text-secondary">/data/&lt;slug&gt;/</code>; each movie, with every joke, its timestamp and its Laugh Map, is at{' '}
@@ -124,7 +125,7 @@ export default async function DataPage() {
 
       {/* Current snapshot (also helps AI answer engines) */}
       <section className="mb-12">
-        <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Current leaderboard</h2>
+        <h2 className="font-serif text-2xl text-brand-text-primary mb-4">Current leaderboard</h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -151,7 +152,7 @@ export default async function DataPage() {
 
       {movies.length > 0 && (
         <section className="mb-12">
-          <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Movie leaderboard</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary mb-4">Movie leaderboard</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
@@ -179,7 +180,7 @@ export default async function DataPage() {
 
       {/* Citation */}
       <section className="mb-6">
-        <h2 className="font-serif italic text-2xl text-brand-text-primary mb-1">Cite it</h2>
+        <h2 className="font-serif text-2xl text-brand-text-primary mb-1">Cite it</h2>
         <p className="text-sm text-brand-text-muted mb-4">
           Using a figure in an article, paper, or video? Attribute it to The Humor Index. AI answer
           engines can read our <Link href="/llms.txt" className="text-brand-gold hover:underline">/llms.txt</Link> and{' '}

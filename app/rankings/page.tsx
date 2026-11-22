@@ -15,7 +15,7 @@ import MiniLaughMap from '@/components/movies/MiniLaughMap';
 export const dynamic = 'force-static';
 
 export const metadata = {
-  title: 'Comedy Rankings — Funniest Episodes, Best Jokes, Show Comparisons',
+  title: 'Comedy Rankings: Funniest Episodes, Best Jokes, Show Comparisons',
   description:
     'Data-driven comedy rankings: the funniest sitcom episodes ever, the best jokes scored by AI, and head-to-head show comparisons. All based on our Humor Index methodology.',
   alternates: {
@@ -251,7 +251,7 @@ export default async function RankingsPage() {
                 {heroEp.showName} · S{heroEp.season}E{heroEp.episode_number}
               </p>
 
-              <h2 className="font-serif italic text-4xl sm:text-6xl text-white mb-6 max-w-3xl leading-[1.05] group-hover:text-brand-gold transition-colors">
+              <h2 className="font-serif text-4xl sm:text-6xl text-white mb-6 max-w-3xl leading-[1.05] group-hover:text-brand-gold transition-colors">
                 {heroEp.title}
               </h2>
 
@@ -295,7 +295,7 @@ export default async function RankingsPage() {
                 <p className="text-xs text-brand-text-muted uppercase tracking-widest mb-1">
                   {ep.showName} · S{ep.season}E{ep.episode_number}
                 </p>
-                <h3 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4 leading-tight">
+                <h3 className="font-serif text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-4 leading-tight">
                   {ep.title}
                 </h3>
                 <div className="flex items-end justify-between">
@@ -338,7 +338,7 @@ export default async function RankingsPage() {
               <div className="grid sm:grid-cols-[1fr_1.2fr] gap-6 items-center">
                 <div>
                   <p className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">New · Movies</p>
-                  <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">The Funniest Comedy Movies</h2>
+                  <h2 className="font-serif text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">The Funniest Comedy Movies</h2>
                   <ol className="mt-4 space-y-2">
                     {movies.slice(0, 5).map(m => (
                       <li key={m.slug} className="flex items-baseline gap-3 text-sm">
@@ -367,7 +367,7 @@ export default async function RankingsPage() {
             <div className="flex items-baseline justify-between mb-5">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400 font-medium mb-1">Characters Ranked</p>
-                <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">The Funniest Characters of All Time</h2>
+                <h2 className="font-serif text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">The Funniest Characters of All Time</h2>
               </div>
             </div>
             <div className="space-y-3">
@@ -408,7 +408,7 @@ export default async function RankingsPage() {
             <div className="flex items-baseline justify-between mb-5">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.3em] text-rose-400 font-medium mb-1">Below Their Cast</p>
-                <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">Who Trails Their Own Ensemble</h2>
+                <h2 className="font-serif text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors">Who Trails Their Own Ensemble</h2>
               </div>
             </div>
             <div className="space-y-3">
@@ -485,7 +485,7 @@ export default async function RankingsPage() {
             className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group"
           >
             <p className="text-[11px] uppercase tracking-[0.3em] text-amber-400 font-medium mb-1">Joke Density</p>
-            <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-5">Jokes Per Minute, Ranked</h2>
+            <h2 className="font-serif text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-5">Jokes Per Minute, Ranked</h2>
             <div className="space-y-4">
               {topJpmShows.map((s, i) => (
                 <div key={s.slug} className="flex items-end gap-4 pb-3 border-b border-brand-border last:border-b-0 last:pb-0">
@@ -509,7 +509,7 @@ export default async function RankingsPage() {
             className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group"
           >
             <p className="text-[11px] uppercase tracking-[0.3em] text-rose-400 font-medium mb-1">The Other End</p>
-            <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-5">The Worst Episodes of All Time</h2>
+            <h2 className="font-serif text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-5">The Worst Episodes of All Time</h2>
             <div className="space-y-4">
               {worstEpisodes.map((ep, i) => (
                 <div key={`${ep.showSlug}-${ep.season}-${ep.episode_number}`} className="flex items-end gap-4 pb-3 border-b border-brand-border last:border-b-0 last:pb-0">
@@ -532,7 +532,7 @@ export default async function RankingsPage() {
         <Link href="/rankings/index-vs-imdb"
           className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group">
           <p className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">Jokes vs fans</p>
-          <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">Where the Index and IMDb disagree</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">Where the Index and IMDb disagree</h2>
           <p className="text-sm text-brand-text-secondary max-w-2xl">The episodes fans rate highest that the jokes don&rsquo;t support, and the underrated ones the jokes say you should rewatch.</p>
           <p className="text-xs text-brand-text-muted mt-4 group-hover:text-brand-gold transition-colors">See both lists →</p>
         </Link>
@@ -541,16 +541,25 @@ export default async function RankingsPage() {
         <Link href="/draft"
           className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group">
           <p className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">Play</p>
-          <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">The ensemble draft</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">The ensemble draft</h2>
           <p className="text-sm text-brand-text-secondary max-w-2xl">Snake-draft a five-person sitcom cast against the Index or up to three friends, by career or per-season Comedy WAR. One character per show. Highest total wins.</p>
           <p className="text-xs text-brand-text-muted mt-4 group-hover:text-brand-gold transition-colors">Start drafting →</p>
+        </Link>
+
+        {/* Best seasons */}
+        <Link href="/rankings/best-seasons"
+          className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group">
+          <p className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">New list</p>
+          <h2 className="font-serif text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">The best seasons, across every show</h2>
+          <p className="text-sm text-brand-text-secondary max-w-2xl">Every season of every ranked show on one list, so early Office against late Office is a lookup, not an argument.</p>
+          <p className="text-xs text-brand-text-muted mt-4 group-hover:text-brand-gold transition-colors">See the list →</p>
         </Link>
 
         {/* Most rewatchable */}
         <Link href="/rankings/most-rewatchable"
           className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group">
           <p className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">New list</p>
-          <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">The most rewatchable episodes</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">The most rewatchable episodes</h2>
           <p className="text-sm text-brand-text-secondary max-w-2xl">Episodes ranked by how many lines earn the Rewatch star: the jokes that pay off more the second time through.</p>
           <p className="text-xs text-brand-text-muted mt-4 group-hover:text-brand-gold transition-colors">See the list →</p>
         </Link>
@@ -559,7 +568,7 @@ export default async function RankingsPage() {
         <Link href="/rankings/running-gags"
           className="block bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7 hover:border-brand-gold/40 transition-colors group">
           <p className="text-[11px] uppercase tracking-[0.3em] text-brand-gold font-medium mb-1">New stat</p>
-          <h2 className="font-serif italic text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">The running gags, scored</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2">The running gags, scored</h2>
           <p className="text-sm text-brand-text-secondary max-w-2xl">Dwight&rsquo;s beet farm, Troy McClure, Bert Macklin: every recurring bit with a stat line and Laughs Above Replacement, how much it added over the show&rsquo;s ordinary joke.</p>
           <p className="text-xs text-brand-text-muted mt-4 group-hover:text-brand-gold transition-colors">See the leaderboard →</p>
         </Link>
@@ -568,7 +577,7 @@ export default async function RankingsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           <div className="bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7">
             <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400 font-medium mb-1">Holiday Episodes</p>
-            <h2 className="font-serif italic text-2xl text-brand-text-primary mb-5">The Best Holiday Episodes, Ranked</h2>
+            <h2 className="font-serif text-2xl text-brand-text-primary mb-5">The Best Holiday Episodes, Ranked</h2>
             <div className="space-y-3">
               <Link href="/rankings/best-christmas-episodes" className="flex items-center justify-between gap-4 pb-3 border-b border-brand-border group">
                 <span className="font-serif italic text-xl text-brand-text-primary group-hover:text-brand-gold transition-colors">Christmas</span>
@@ -583,7 +592,7 @@ export default async function RankingsPage() {
 
           <div className="bg-brand-card border border-brand-border rounded-xl p-6 sm:p-7">
             <p className="text-[11px] uppercase tracking-[0.3em] text-sky-400 font-medium mb-1">Quotes</p>
-            <h2 className="font-serif italic text-2xl text-brand-text-primary mb-5">The Funniest Quotes from Every Show</h2>
+            <h2 className="font-serif text-2xl text-brand-text-primary mb-5">The Funniest Quotes from Every Show</h2>
             <div className="flex flex-wrap gap-2">
               {shows
                 .filter(s => s.humor_index > 0)

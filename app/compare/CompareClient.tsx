@@ -195,7 +195,7 @@ export default function CompareClient({ shows: tvShows, movies = [], dnaBySlug }
                 <div className="bg-brand-card border-t border-brand-border grid grid-cols-2">
                   <div className="p-5 sm:p-7 text-right border-r border-brand-border">
                     <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-1">{labelA}</p>
-                    <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight mb-3">
+                    <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary leading-tight mb-3">
                       {showA.name}
                     </h2>
                     <p className="font-serif italic text-5xl sm:text-6xl text-brand-gold leading-none">
@@ -205,7 +205,7 @@ export default function CompareClient({ shows: tvShows, movies = [], dnaBySlug }
                   </div>
                   <div className="p-5 sm:p-7">
                     <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-1">{labelB}</p>
-                    <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight mb-3">
+                    <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary leading-tight mb-3">
                       {showB.name}
                     </h2>
                     <p className="font-serif italic text-5xl sm:text-6xl text-brand-blue leading-none">
@@ -311,7 +311,7 @@ export default function CompareClient({ shows: tvShows, movies = [], dnaBySlug }
 
                 <div className="relative max-w-2xl mx-auto text-center">
                   <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-5">The Final Word</p>
-                  <h3 className="font-serif italic text-2xl sm:text-4xl text-brand-text-primary leading-snug mb-5">
+                  <h3 className="font-serif text-2xl sm:text-4xl text-brand-text-primary leading-snug mb-5">
                     {sweep ? (
                       <>
                         <span className="text-brand-gold">{overall.name}</span> sweeps{' '}

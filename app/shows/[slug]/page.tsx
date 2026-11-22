@@ -21,6 +21,8 @@ import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
 import { rankable, isAwaitingRescore, estimateText } from '@/lib/scale';
 import ShowPageClient from './ShowPageClient';
 import { SITE_URL } from '@/lib/site';
+import { withIntervals } from '@/lib/siteStats';
+import { boardTiers, tierName } from '@/lib/boardTiers';
 import { tvSeriesJsonLd, breadcrumbJsonLd } from '@/lib/seo';
 
 export const dynamic = 'force-static';
@@ -37,14 +39,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   // Queued / not-yet-scored shows get a "coming soon" treatment (no 0.0/100).
   if (!show.humor_index || show.humor_index <= 0) {
-    const title = `${show.name} — Coming Soon | Humor Index Queue`;
-    const description = `${show.name}${show.aired ? ` (${show.aired})` : ''} is queued for scoring on The Humor Index${show.total_episodes ? ` — ${show.total_episodes} episodes` : ''}. ${show.description ?? ''}`.trim();
+    const title = `${show.name}: Coming Soon | Humor Index Queue`;
+    const description = `${show.name}${show.aired ? ` (${show.aired})` : ''} is queued for scoring on The Humor Index${show.total_episodes ? `: ${show.total_episodes} episodes` : ''}. ${show.description ?? ''}`.trim();
     const ogImg = `/api/og?title=${encodeURIComponent(show.name)}&score=${encodeURIComponent('Soon')}&subtitle=${encodeURIComponent('Queued for scoring')}`;
     return {
       title,
       description,
-      openGraph: { title: `${show.name} — Coming Soon`, description, images: [ogImg] },
-      twitter: { card: 'summary_large_image', title: `${show.name} — Coming Soon`, description, images: [ogImg] },
+      openGraph: { title: `${show.name}: Coming Soon`, description, images: [ogImg] },
+      twitter: { card: 'summary_large_image', title: `${show.name}: Coming Soon`, description, images: [ogImg] },
       // Nothing scored yet: a teaser page is thin content. Index it once it has data.
       robots: { index: false, follow: true },
       alternates: { canonical },
@@ -53,16 +55,16 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   const ogImg = `/api/og?title=${encodeURIComponent(show.name)}&score=${formatIndex(show.humor_index)}&subtitle=${encodeURIComponent(`${show.total_jokes_analyzed.toLocaleString()} jokes analyzed`)}`;
   return {
-    title: `Is ${show.name} Funny? Humor Index ${formatIndex(show.humor_index)}/100 — Every Joke Scored`,
+    title: `Is ${show.name} Funny? Every Joke Scored, Humor Index ${formatIndex(show.humor_index)}`,
     description: `Is ${show.name} actually funny? We analyzed ${show.total_jokes_analyzed.toLocaleString()} jokes across ${show.total_seasons} seasons. Humor Index: ${formatIndex(show.humor_index)}. ${show.description}`,
     openGraph: {
-      title: `${show.name} — Humor Index: ${formatIndex(show.humor_index)}`,
+      title: `${show.name}: Humor Index ${formatIndex(show.humor_index)}`,
       description: `${show.total_jokes_analyzed.toLocaleString()} jokes analyzed across ${show.total_seasons} seasons. See the data.`,
       images: [ogImg],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${show.name} — Humor Index: ${formatIndex(show.humor_index)}`,
+      title: `${show.name}: Humor Index ${formatIndex(show.humor_index)}`,
       description: `${show.total_jokes_analyzed.toLocaleString()} jokes analyzed across ${show.total_seasons} seasons.`,
       images: [ogImg],
     },
@@ -110,7 +112,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           </div>
           {show.description && <p className="text-brand-text-secondary leading-relaxed mb-8">{show.description}</p>}
           <p className="text-brand-text-secondary leading-relaxed mb-8">
-            {show.name} is in the queue — transcripts collected, waiting on its three AI scoring passes. Once scored, the full Humor Index, every-episode breakdown, and character rankings land here.
+            {show.name} is in the queue: transcripts collected, waiting on its three AI scoring passes. Once scored, the full Humor Index, every-episode breakdown, and character rankings land here.
           </p>
           <InlineNewsletterCTA />
           <p className="mt-8 text-sm text-brand-text-muted">
@@ -154,6 +156,14 @@ export default async function ShowPage({ params }: { params: { slug: string } })
   const showRank = scoredRankList.findIndex(s => s.slug === show.slug) + 1;
   const pendingRescore = isAwaitingRescore(show.slug);
   const scoredShowCount = scoredRankList.length;
+  const board = await withIntervals(scoredRankList);
+  const { tierOf } = boardTiers(board);
+  const tierNo = tierOf.get(show.slug) ?? 0;
+  const tieMates = tierNo ? board.filter(s => tierOf.get(s.slug) === tierNo && s.slug !== show.slug).map(s => s.name) : [];
+  const me = board.find(s => s.slug === show.slug);
+  const shortRun = (me?.scored_episodes ?? 99) < 22;
+  const boardTop = scoredRankList[0]?.humor_index ?? 0;
+  const boardBottom = scoredRankList[scoredRankList.length - 1]?.humor_index ?? 0;
 
   const jsonLd = [
     // ratingCount = scored-episode count (the aggregate's sample), not joke count.
@@ -211,6 +221,16 @@ export default async function ShowPage({ params }: { params: { slug: string } })
               </span>
             )}
           </h1>
+          {showRank > 0 && (
+            <p className="mb-2 font-mono text-sm text-brand-text-primary">
+              #{showRank} of {scoredShowCount}
+              {tierNo > 0 && <> · <Link href="/#leaderboard" className="text-brand-gold hover:underline">{tierName(tierNo)}</Link></>}
+              {shortRun && me?.scored_episodes ? <span className="text-brand-text-muted"> · short run, {me.scored_episodes} episodes</span> : null}
+            </p>
+          )}
+          {pendingRescore && show.humor_index > 0 && (
+            <p className="mb-2 text-sm text-brand-text-secondary">Scored on our earlier model, so unranked. Estimated on the current model: {estimateText(show.humor_index)}.</p>
+          )}
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <FormatBadge format={show.format} />
             <LogButton
@@ -243,6 +263,29 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           )}
         </div>
       </div>
+
+      {/* The three best lines, before anything else asks for attention */}
+      {topQuotes.length > 0 && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-2">
+          <div className="flex items-baseline justify-between gap-4 mb-3">
+            <h2 className="font-serif text-2xl text-brand-text-primary">The best of {show.name}</h2>
+            <Link href={`/shows/${show.slug}/best-jokes/`} className="text-xs text-brand-gold hover:underline shrink-0">Top 50 →</Link>
+          </div>
+          <div className="grid gap-3 md:grid-cols-3">
+            {topQuotes.map(q => (
+              <Link key={`${q.season}-${q.episode}-${q.rank}`} href={`/shows/${show.slug}/${q.season}/${q.episode}/`}
+                className="group rounded-xl border border-brand-border bg-brand-card p-4 hover:border-brand-gold/40 transition-colors flex flex-col">
+                <p className="text-[15px] text-brand-text-primary leading-relaxed line-clamp-4">&ldquo;{q.text}&rdquo;</p>
+                <p className="mt-auto pt-3 text-xs text-brand-text-muted">
+                  {q.characters[0] ? <span className="text-brand-text-secondary">{q.characters[0]}</span> : null}
+                  {q.characters[0] ? ' · ' : ''}S{q.season}E{q.episode} {q.episodeTitle}
+                  <span className="float-right font-mono text-brand-gold">{q.score.toFixed(1)}</span>
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Score cards */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
@@ -277,39 +320,25 @@ export default async function ShowPage({ params }: { params: { slug: string } })
         {/* Answer-first quick answer — verbatim-liftable for AI answer engines (scored shows only) */}
         {show.humor_index > 0 && (
           <p className="mt-6 text-sm sm:text-base text-brand-text-secondary leading-relaxed bg-brand-surface/60 border border-brand-border rounded-lg p-4">
-            <span className="text-brand-text-primary font-medium">Is {show.name} funny?</span>{' '}
-            Yes — {show.name} scores {formatIndex(show.humor_index)} out of 100 on the Humor Index
-            {showRank > 0 ? `, #${showRank} of the ${scoredShowCount} shows on our current scoring model` : ''}, based on an
-            AI analysis of {show.total_jokes_analyzed.toLocaleString()} jokes across {episodes.filter(e => e.humor_index > 0).length || show.total_episodes} episodes.
-            It averages {show.avg_jpm.toFixed(1)} jokes per minute, with a craft score of {show.avg_craft.toFixed(1)} and
-            an impact score of {show.avg_impact.toFixed(1)}.
-            {pendingRescore ? ` This score comes from our earlier scoring model, so the show is left unranked. Shows rescored so far gained 8 to 14 points on the current model, which would put ${show.name} at roughly ${estimateText(show.humor_index)}: an estimate, not a score.` : ''}
+            <span className="text-brand-text-primary font-medium">Where {show.name} ranks.</span>{' '}
+            {showRank > 0 ? (
+              <>
+                #{showRank} of the {scoredShowCount} shows on our current scoring model
+                {tierNo > 0 ? `, in ${tierName(tierNo)}${tieMates.length ? ` with ${tieMates.join(', ')}: a statistical tie` : ''}` : ''}.
+                {' '}Its Humor Index is {formatIndex(show.humor_index)}, from an AI analysis of {show.total_jokes_analyzed.toLocaleString()} jokes across {episodes.filter(e => e.humor_index > 0).length || show.total_episodes} episodes.
+                {' '}Every ranked show scores between {formatIndex(boardBottom)} and {formatIndex(boardTop)}, so read the number by its rank, not as a grade out of 100.
+                {shortRun && <>{' '}With only {me?.scored_episodes} episodes it’s a short run: see where it lands on the <Link href="/?sort=best22#leaderboard" className="text-brand-gold hover:underline">Best 22</Link> view.</>}
+              </>
+            ) : (
+              <>
+                {show.name} scores {formatIndex(show.humor_index)} from an AI analysis of {show.total_jokes_analyzed.toLocaleString()} jokes, on our earlier scoring model, so it is left unranked.
+                {pendingRescore ? ` Shows moved to the current model gained 8 to 14 points, which would put ${show.name} at roughly ${estimateText(show.humor_index)}: an estimate, not a score. We are not rescoring older shows for now; new shows come first.` : ''}
+              </>
+            )}
+            {' '}It averages {show.avg_jpm.toFixed(1)} jokes per minute, with a craft score of {show.avg_craft.toFixed(1)} and an impact score of {show.avg_impact.toFixed(1)}.
           </p>
         )}
       </div>
-
-      {/* The three best lines, before anything else asks for attention */}
-      {topQuotes.length > 0 && (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
-          <div className="flex items-baseline justify-between gap-4 mb-3">
-            <h2 className="font-serif italic text-2xl text-brand-text-primary">The best of {show.name}</h2>
-            <Link href={`/shows/${show.slug}/best-jokes/`} className="text-xs text-brand-gold hover:underline shrink-0">Top 50 →</Link>
-          </div>
-          <div className="grid gap-3 md:grid-cols-3">
-            {topQuotes.map(q => (
-              <Link key={`${q.season}-${q.episode}-${q.rank}`} href={`/shows/${show.slug}/${q.season}/${q.episode}/`}
-                className="group rounded-xl border border-brand-border bg-brand-card p-4 hover:border-brand-gold/40 transition-colors flex flex-col">
-                <p className="text-[15px] text-brand-text-primary leading-relaxed line-clamp-4">&ldquo;{q.text}&rdquo;</p>
-                <p className="mt-auto pt-3 text-xs text-brand-text-muted">
-                  {q.characters[0] ? <span className="text-brand-text-secondary">{q.characters[0]}</span> : null}
-                  {q.characters[0] ? ' · ' : ''}S{q.season}E{q.episode} {q.episodeTitle}
-                  <span className="float-right font-mono text-brand-gold">{q.score.toFixed(1)}</span>
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
 
       {/* Comedy DNA: this show's match for the visitor, or a one-tap face-off to get one */}
       {dnaJokes.show.length >= 3 && (
@@ -356,7 +385,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
       {episodes.length > 0 && (
         // sr-only goes on a wrapper: a <table> ignores the 1px clamp and widened phones to 504px.
         <div className="sr-only"><table>
-          <caption>{show.name} — Humor Index for every scored episode</caption>
+          <caption>{show.name}: Humor Index for every scored episode</caption>
           <thead><tr><th>Season</th><th>Episode</th><th>Title</th><th>Humor Index</th></tr></thead>
           <tbody>
             {episodes.map(e => (
@@ -389,7 +418,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
               name: `Is ${show.name} funny?`,
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: `${show.name} earns a Humor Index of ${formatIndex(show.humor_index)} out of 100${rank > 0 ? `, ranking #${rank} of the ${total} shows on our current scoring model` : ''}. We scored every joke across ${scored.length} episodes — it averages ${show.avg_jpm.toFixed(1)} jokes per minute with a craft score of ${show.avg_craft.toFixed(1)} and impact of ${show.avg_impact.toFixed(1)}.`,
+                text: `${show.name} earns a Humor Index of ${formatIndex(show.humor_index)}${rank > 0 ? `, ranking #${rank} of the ${total} shows on our current scoring model` : ''}. We scored every joke across ${scored.length} episodes; it averages ${show.avg_jpm.toFixed(1)} jokes per minute with a craft score of ${show.avg_craft.toFixed(1)} and impact of ${show.avg_impact.toFixed(1)}.`,
               },
             },
             ...(best ? [{
@@ -471,26 +500,14 @@ export default async function ShowPage({ params }: { params: { slug: string } })
                     Build your own cut of {show.name}
                   </p>
                   <p className="text-sm text-brand-text-secondary mt-1 max-w-xl">
-                    Pick any seasons or episodes and see how funny that slice scores — compare eras, isolate a hot streak, or drop a weak season.
+                    Pick any seasons or episodes and see how funny that slice scores: compare eras, isolate a hot streak, or drop a weak season.
                   </p>
                 </div>
                 <span className="text-brand-gold text-sm shrink-0">Explore →</span>
               </div>
             </Link>
 
-            <h2 className="text-xl font-medium text-brand-text-primary mb-2">
-              Is {show.name} Worth Watching?
-            </h2>
-            <p className="text-sm text-brand-text-secondary max-w-2xl leading-relaxed">
-              By the data: {show.name} earns a Humor Index of {formatIndex(show.humor_index)} out of 100
-              {rank > 0 ? `, placing it #${rank} of ${total} fully-scored shows here` : ''}. Across{' '}
-              {scored.length} analyzed episode{scored.length !== 1 ? 's' : ''} it averages{' '}
-              {show.avg_jpm.toFixed(1)} jokes per minute, a craft score of {show.avg_craft.toFixed(1)}, and
-              an impact score of {show.avg_impact.toFixed(1)}. Those numbers reflect one AI analyst&rsquo;s
-              judgment applied consistently — and the top shows cluster closely enough that small gaps
-              aren&rsquo;t meaningful rankings. The Episodes and Characters tabs above have the
-              season-by-season trend and who carries the comedy.
-            </p>
+
           </section>
         );
       })()}

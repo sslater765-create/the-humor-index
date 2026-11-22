@@ -1,10 +1,11 @@
 'use client';
-import { Fragment, useState, useMemo } from 'react';
+import { Fragment, useEffect, useState, useMemo } from 'react';
 import { estimateText } from '@/lib/scale';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ShowScore } from '@/lib/types';
 import { formatIndex } from '@/lib/scoring';
+import { boardTiers, tierName } from '@/lib/boardTiers';
 import FormatBadge from '@/components/ui/FormatBadge';
 import RankBadge from '@/components/ui/RankBadge';
 import MatchPill from '@/components/comedy-dna/MatchPill';
@@ -16,8 +17,6 @@ import type { QuizJoke } from '@/lib/comedyDna';
 type MetricKey = 'humor_index' | 'avg_jpm' | 'avg_craft' | 'avg_impact';
 type SortKey = MetricKey | 'peak_22' | 'match';
 
-/** Tier names, top down. Tiers past the list fall back to a number. */
-const TIER_NAMES = ['The Pantheon', 'The Second Floor', 'The Rotation', 'The Bench', 'The Waiver Wire'];
 const SHORT_RUN = 22;
 
 const SORT_OPTIONS: { key: SortKey; label: string }[] = [
@@ -139,6 +138,10 @@ function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: n
 
 export default function LeaderboardClient({ shows, pending = [], quickPool = [] }: { shows: ShowScore[]; pending?: ShowScore[]; quickPool?: QuizJoke[] }) {
   const [sortKey, setSortKey] = useState<SortKey>('humor_index');
+  // /?sort=best22 opens the board on the peak view (linked from short-run notes).
+  useEffect(() => {
+    try { if (new URLSearchParams(window.location.search).get('sort') === 'best22') setSortKey('peak_22'); } catch { /* ignore */ }
+  }, []);
   const dna = useDna();
   const matchFor = dna?.matchFor;
   const personal = sortKey === 'match' && !!dna?.hasProfile;
@@ -185,7 +188,9 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
         <span>Show</span>
         <span>Humor Index</span>
         {COLS.map(c => (
-          <span key={c.key}>{c.label}</span>
+          c.key === 'imdb'
+            ? <Link key={c.key} href="/rankings/index-vs-imdb/" title="Average IMDb episode rating: what viewers felt. The Index and IMDb barely move together; see where they disagree." className="underline decoration-dotted underline-offset-2 hover:text-brand-gold">{c.label}</Link>
+            : <span key={c.key}>{c.label}</span>
         ))}
       </div>
 
@@ -204,17 +209,7 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
           // Tiers: a show joins the current tier while its interval reaches the
           // tier leader's. Measuring against the leader, not the row above, stops
           // ties from chaining all the way down the board.
-          const tierOf = new Map<string, number>();
-          const tierSize: number[] = [];
-          if (sortKey === 'humor_index') {
-            let leader: ShowScore | null = null;
-            for (const s of sorted) {
-              if (s.ci_95_low === undefined || s.ci_95_high === undefined) continue;
-              if (!leader || s.ci_95_high < (leader.ci_95_low as number)) { leader = s; tierSize.push(0); }
-              tierOf.set(s.slug, tierSize.length);
-              tierSize[tierSize.length - 1]++;
-            }
-          }
+          const { tierOf, sizes: tierSize } = sortKey === 'humor_index' ? boardTiers(sorted) : { tierOf: new Map<string, number>(), sizes: [] as number[] };
           let lastTier = 0;
           return sorted.map((show, i) => {
           // Shared rank for equal displayed values: Parks and Community at
@@ -229,7 +224,7 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
             <Fragment key={show.slug}>
               {header && (
                 <div className={`flex items-baseline gap-2 pb-1 ${i > 0 ? 'pt-5' : 'pt-1'}`}>
-                  <span className="font-mono text-[11px] uppercase tracking-widest text-brand-gold">{TIER_NAMES[t - 1] ?? `Tier ${t}`}</span>
+                  <span className="font-mono text-[11px] uppercase tracking-widest text-brand-gold">{tierName(t)}</span>
                   <span className="text-[11px] text-brand-text-muted">
                     {tierSize[t - 1] > 1 ? `${tierSize[t - 1]} shows, statistically tied` : 'alone'}
                   </span>
@@ -269,7 +264,7 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
         <details className="group mt-8 border-t border-brand-border pt-4">
           <summary className="list-none cursor-pointer select-none flex flex-wrap items-baseline justify-between gap-2">
             <span className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted">
-              + {sortedPending.length} shows on the earlier model
+              Not ranked: {sortedPending.length} shows scored on our earlier model
             </span>
             <span className="text-xs text-brand-text-muted">
               {sortedPending.map(s => s.name.replace(/^The /, '')).join(', ')}
@@ -278,8 +273,9 @@ export default function LeaderboardClient({ shows, pending = [], quickPool = [] 
             </span>
           </summary>
           <p className="text-sm text-brand-text-secondary leading-relaxed max-w-2xl mt-3 mb-3">
-            These shows are fully scored, but on our earlier model, so their numbers aren’t comparable with the list
-            above and they stay unranked. Friends, Sunny and Community gained 8 to 14 points when they moved to the
+            Yes, The Simpsons and Curb are missing from the ranking on purpose. These shows were fully scored, but on
+            our earlier model, so their numbers aren’t comparable with the list above and they stay unranked. We are
+            not rescoring older shows for now; new shows come first. Friends, Sunny and Community gained 8 to 14 points when they moved to the
             current model; applied here, that puts {sortedPending.map(s => `${s.name.replace(/^The /, '')} at ${estimateText(s.humor_index)}`).join(', ')}.
             Estimates, not scores.
           </p>

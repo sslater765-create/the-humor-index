@@ -148,7 +148,7 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
         {pref ? (
           <>
             <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Your taste reads as</p>
-            <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary mb-2">{archetypeName}</h2>
+            <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary mb-2">{archetypeName}</h2>
             <p className="text-sm text-brand-text-secondary">
               Built from {lovedWithFp.length} show{lovedWithFp.length === 1 ? '' : 's'} you love. You gravitate toward{' '}
               {myTypes.length === 3 ? `${myTypes[0]}, ${myTypes[1]}, and ${myTypes[2]}` : myTypes.join(' and ') || 'a distinct mix'}.
@@ -160,7 +160,7 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
         ) : (
           <>
             <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Get started</p>
-            <h2 className="font-serif italic text-2xl text-brand-text-primary mb-2">Love at least two shows below</h2>
+            <h2 className="font-serif text-2xl text-brand-text-primary mb-2">Love at least two shows below</h2>
             <p className="text-sm text-brand-text-secondary">
               Tap <span className="text-brand-gold">♥</span> on the sitcoms you love. Once you’ve picked two, we’ll
               read your comedy taste and rank every other show for you. Prefer a guided version?{' '}
@@ -173,7 +173,7 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
       {/* Recommended */}
       {recs.length > 0 && (
         <section>
-          <h2 className="font-serif italic text-2xl text-brand-text-primary mb-1">Ranked for you</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary mb-1">Ranked for you</h2>
           <p className="text-sm text-brand-text-muted mb-4">Shows you haven’t rated, ordered by how well they fit your taste.</p>
           <div className="grid sm:grid-cols-2 gap-3">
             {recs.map(rec => {
@@ -205,7 +205,7 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
 
       {/* Watchlist */}
       <section>
-        <h2 className="font-serif italic text-2xl text-brand-text-primary mb-1">Your watchlist</h2>
+        <h2 className="font-serif text-2xl text-brand-text-primary mb-1">Your watchlist</h2>
         {watchShows.length === 0 ? (
           <p className="text-sm text-brand-text-muted">Nothing saved yet — tap ☆ on any show to add it.</p>
         ) : (
@@ -223,7 +223,7 @@ export default function MyIndex({ shows, fps, meanFp, weights }:
 
       {/* Library — rate everything */}
       <section>
-        <h2 className="font-serif italic text-2xl text-brand-text-primary mb-1">Your library</h2>
+        <h2 className="font-serif text-2xl text-brand-text-primary mb-1">Your library</h2>
         <p className="text-sm text-brand-text-muted mb-4">
           {ratedSlugs.length ? `${ratedSlugs.length} rated.` : 'Rate the shows you’ve seen.'} ♥ love · ◦ seen-it · ☆ watchlist
         </p>

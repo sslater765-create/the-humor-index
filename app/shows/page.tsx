@@ -76,7 +76,7 @@ export default async function ShowsPage() {
         {pending.length > 0 && (
           <section className="mt-20 pt-12 border-t border-brand-border">
             <p className="text-[11px] uppercase tracking-[0.25em] text-brand-text-muted mb-3">Earlier model</p>
-            <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
+            <h2 className="font-serif text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
               Scored on the earlier model.
             </h2>
             <p className="text-sm text-brand-text-secondary max-w-2xl mb-8 leading-relaxed">
@@ -95,7 +95,7 @@ export default async function ShowsPage() {
         {upcoming.length > 0 && (
           <section className="mt-20 pt-12 border-t border-brand-border">
             <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Up Next on the Slate</p>
-            <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
+            <h2 className="font-serif text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
               Coming soon.
             </h2>
             <p className="text-sm text-brand-text-secondary max-w-xl mb-8 leading-relaxed">
@@ -120,7 +120,7 @@ export default async function ShowsPage() {
                       </div>
                     )}
                     <div className="p-5">
-                      <h3 className="font-serif italic text-xl text-brand-text-primary mb-2 group-hover:text-brand-gold transition-colors leading-tight">
+                      <h3 className="font-serif text-xl text-brand-text-primary mb-2 group-hover:text-brand-gold transition-colors leading-tight">
                         {show.name}
                       </h3>
                       <p className="text-xs text-brand-text-muted mb-3 line-clamp-2 leading-relaxed">{show.description}</p>

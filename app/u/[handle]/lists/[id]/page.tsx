@@ -31,10 +31,10 @@ async function load(handle: string, id: string) {
 
 export async function generateMetadata({ params }: { params: { handle: string; id: string } }): Promise<Metadata> {
   const d = await load(params.handle, params.id);
-  if (!d) return { title: 'List not found — The Humor Index', robots: { index: false } };
+  if (!d) return { title: 'List not found', robots: { index: false } };
   const by = d.profile.display_name || `@${d.profile.handle}`;
   return {
-    title: `${d.list.title}, a list by ${by} — The Humor Index`,
+    title: `${d.list.title}, a list by ${by}`,
     description: `${d.items.length} picks${d.list.description ? `: ${d.list.description}` : ''}`,
     robots: { index: false, follow: true },
   };

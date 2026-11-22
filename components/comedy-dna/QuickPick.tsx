@@ -67,7 +67,7 @@ export default function QuickPick({ jokes, focus, source, title = 'Which joke is
       <div className="flex flex-wrap items-end justify-between gap-3 mb-5">
         <div>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Comedy DNA · one tap</p>
-          <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight">{title}</h2>
+          <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary leading-tight">{title}</h2>
           <p className="text-sm text-brand-text-secondary mt-1.5 max-w-xl">
             {subtitle ?? 'Pick the one that lands harder for you. Every pick tunes your match % on every show across the site.'}
           </p>

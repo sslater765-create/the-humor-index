@@ -40,10 +40,10 @@ async function load(handle: string) {
 
 export async function generateMetadata({ params }: { params: { handle: string } }): Promise<Metadata> {
   const data = await load(params.handle);
-  if (!data) return { title: 'Profile not found — The Humor Index', robots: { index: false } };
+  if (!data) return { title: 'Profile not found', robots: { index: false } };
   const name = data.profile.display_name || `@${data.profile.handle}`;
   return {
-    title: `${name}’s comedy diary — The Humor Index`,
+    title: `${name}’s comedy diary`,
     description: `${data.logs.length} episodes and movies logged on The Humor Index.${data.profile.bio ? ` ${data.profile.bio}` : ''}`,
     robots: { index: false, follow: true },
   };

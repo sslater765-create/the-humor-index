@@ -1,13 +1,12 @@
 import { withIntervals } from '@/lib/siteStats';
 import Link from 'next/link';
-import { getAllShows, getEpisodes, getQuickPickPool, getTopJokes, getJokeRoulette } from '@/lib/data';
+import { getAllShows, getEpisodes, getQuickPickPool, getJokeRoulette } from '@/lib/data';
 import JokeRoulette from '@/components/home/JokeRoulette';
 import Image from 'next/image';
 import { isAwaitingRescore } from '@/lib/scale';
 import QuickPick from '@/components/comedy-dna/QuickPick';
 import LeaderboardClient from './LeaderboardClient';
-import WhatsNewPersonalized from '@/components/ui/WhatsNewPersonalized';
-import { POSTS } from '@/app/blog/posts';
+import ThisWeek from '@/components/home/ThisWeek';
 import HeroLoop from '@/components/HeroLoop';
 import MovieSpotlight from '@/components/movies/MovieSpotlight';
 import { getMovies } from '@/lib/movies';
@@ -16,21 +15,12 @@ import { rankable, awaitingRescore } from '@/lib/scale';
 
 export const dynamic = 'force-static';
 
-// "Fleabag · Fleabag" and "Unknown Aide" read as glitches; drop those speakers.
-function speakerLabel(name: string | undefined, show: string): string {
-  if (!name || /^unknown/i.test(name) || name.toLowerCase() === show.toLowerCase()) return '';
-  return `${name} · `;
-}
-
 export default async function HomePage() {
   const shows = await getAllShows();
   const movies = await getMovies();
   const quickPool = await getQuickPickPool();
   const rankedCount = rankable(shows).length;
-  // Each ranked show's best line, for the "funniest lines" strip.
   const roulette = await getJokeRoulette();
-  const topLines = (await getTopJokes()).filter(j => !isAwaitingRescore(j.show_slug)).slice(0, 6)
-    .map(j => ({ ...j, backdrop: shows.find(s => s.slug === j.show_slug)?.backdrop_path }));
 
   const analyzedShows = shows.filter(s => s.humor_index > 0);
   const rankedCountHero = analyzedShows.filter(s => !isAwaitingRescore(s.slug)).length;
@@ -73,12 +63,12 @@ export default async function HomePage() {
                 Comedy, Quantified
               </p>
               <h1 className="font-serif italic text-4xl sm:text-7xl text-brand-text-primary leading-[1.02] mb-5">
-                Every comedy joke,<br />
-                <span className="text-brand-text-secondary">scored and ranked.</span>
+                Every joke in {analyzedShows.length} sitcoms<br className="hidden sm:block" />{' '}
+                <span className="text-brand-text-secondary">and {movies.length} comedy films, scored and ranked.</span>
               </h1>
               <p className="text-base sm:text-xl text-brand-text-secondary max-w-2xl leading-relaxed">
                 Comedy arguments run on nostalgia and fan votes. This is the box score: every joke in
-                every script, graded on the same five-part rubric, receipts published.{' '}
+                every script, graded by one AI model on the same five-part rubric, receipts published.{' '}
                 <Link href="/why/" className="text-brand-gold hover:underline whitespace-nowrap">Why it works →</Link>
               </p>
               {/* Phones: show the board right away, before the counters */}
@@ -127,12 +117,7 @@ export default async function HomePage() {
             <HeroLoop className="w-full max-w-[380px] mx-auto lg:mx-0" />
           </div>
 
-          {/* The fastest proof the site is about funny things: a real top line, and a button for another. */}
-          <div className="mb-12">
-            <JokeRoulette pool={roulette} />
-          </div>
-
-          <p className="text-[11px] sm:text-xs uppercase tracking-widest text-brand-text-muted mb-6 pt-10 border-t border-brand-border">
+          <p className="text-[11px] sm:text-xs uppercase tracking-widest text-brand-text-muted mb-6">
             As of {asOf} ·{' '}
             <Link href="/methodology" className="text-brand-gold hover:underline">
               How we score
@@ -140,11 +125,11 @@ export default async function HomePage() {
           </p>
 
           {/* Leaderboard */}
-          <div className="bg-brand-card border border-brand-border rounded-2xl p-5 sm:p-7">
+          <div id="leaderboard" className="scroll-mt-20 bg-brand-card border border-brand-border rounded-2xl p-5 sm:p-7">
             <div className="flex items-baseline justify-between mb-5">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">The Index</p>
-                <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight">
+                <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary leading-tight">
                   The TV leaderboard.
                 </h2>
               </div>
@@ -156,6 +141,12 @@ export default async function HomePage() {
             <div className="mt-6 pt-5 border-t border-brand-border flex flex-wrap items-center gap-x-6 gap-y-2">
               <Link href="/shows" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
                 Browse all {analyzedShows.length} shows →
+              </Link>
+              <Link href="/request" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors">
+                Not here yet: Brooklyn Nine-Nine, Modern Family, The Good Place. Vote on what’s next
+              </Link>
+              <Link href="/rankings/best-seasons" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors">
+                Best seasons
               </Link>
               <Link href="/rankings/jokes-per-minute" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors">
                 Jokes per minute
@@ -171,6 +162,14 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* The week: bracket round, newest column, fan favorites. */}
+      <ThisWeek />
+
+      {/* The fastest proof the site is about funny things: a real top line, and a button for another. */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-12">
+        <JokeRoulette pool={roulette} />
       </section>
 
       <MovieSpotlight />
@@ -190,133 +189,12 @@ export default async function HomePage() {
         </p>
       </section>
 
-      {/* Funniest lines: each ranked show's highest-scoring line, with its show's art */}
-      {topLines.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-14">
-          <div className="flex items-end justify-between gap-4 mb-5">
-            <div>
-              <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">The best lines on the index</p>
-              <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight">Six of the best lines on the board.</h2>
-            </div>
-            <Link href="/rankings/best-jokes" className="text-xs text-brand-text-muted hover:text-brand-gold transition-colors shrink-0">Top 100 jokes →</Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {topLines.map(j => (
-              <Link key={j.show_slug} href={`/shows/${j.show_slug}/${j.season}/${j.episode_number}`}
-                className="group relative flex flex-col justify-end min-h-[220px] rounded-2xl overflow-hidden border border-brand-border hover:border-brand-gold/50 transition-colors">
-                {j.backdrop && (
-                  <Image src={`https://image.tmdb.org/t/p/w780${j.backdrop}`} alt="" fill sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover opacity-50 group-hover:opacity-65 group-hover:scale-105 transition-all duration-500" />
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/75 to-brand-dark/10" />
-                <div className="relative p-5">
-                  <p className="font-serif italic text-lg sm:text-xl text-brand-text-primary leading-snug mb-3 line-clamp-4">
-                    <span className="text-brand-gold">&ldquo;</span>{j.text}<span className="text-brand-gold">&rdquo;</span>
-                  </p>
-                  <p className="text-[11px] uppercase tracking-widest text-brand-text-muted">
-                    {speakerLabel(j.characters?.[0], j.show)}{j.show} · S{j.season}E{j.episode_number}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* What's New — personalized for return visitors */}
-      <WhatsNewPersonalized latestPosts={Object.entries(POSTS).map(([slug, p]) => ({ slug, title: p.title, date: p.date })).sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 3)} />
-
-      {/* Featured insight — magazine pull-quote */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-        <div className="relative bg-gradient-to-b from-brand-card to-brand-surface border border-brand-border rounded-2xl px-6 sm:px-12 py-10 sm:py-14 overflow-hidden">
-          <div className="absolute top-4 left-6 font-serif italic text-brand-gold/15 text-9xl leading-none select-none">&ldquo;</div>
-          <div className="relative max-w-3xl mx-auto">
-            <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-5 text-center">Featured Insight</p>
-            <h3 className="font-serif italic text-3xl sm:text-5xl text-brand-text-primary leading-[1.1] mb-6 text-center">
-              Same joke rate.<br />Ten points apart.
-            </h3>
-            <p className="text-base text-brand-text-secondary leading-relaxed mb-8 text-center">
-              30 Rock and Broad City tell jokes at the same pace, about three and a half a minute.
-              They finish more than ten points apart on the Humor Index. Across the shows on our
-              current model, how well the jokes are written predicts 88% of the score. How many
-              there are predicts a quarter, and nearly all of that comes from one show.
-            </p>
-            <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto mb-8 pb-8 border-b border-brand-border">
-              <div className="text-center">
-                <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-2">30 Rock</p>
-                <p className="font-serif italic text-3xl sm:text-4xl text-brand-gold leading-none">97.5</p>
-                <p className="text-[11px] text-brand-text-muted mt-2">3.53 jokes/min · Craft 7.68</p>
-              </div>
-              <div className="text-center">
-                <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-2">Broad City</p>
-                <p className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-none">86.9</p>
-                <p className="text-[11px] text-brand-text-muted mt-2">3.52 jokes/min · Craft 7.16</p>
-              </div>
-              <div className="text-center">
-                <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-2">Gap</p>
-                <p className="font-serif italic text-3xl sm:text-4xl text-brand-blue leading-none">10.6</p>
-                <p className="text-[11px] text-brand-text-muted mt-2">Humor Index points</p>
-              </div>
-            </div>
-            <div className="text-center">
-              <Link href="/blog/density-vs-craft" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
-                Read the analysis →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Methodology teaser */}
-      <section className="border-t border-brand-border bg-brand-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
-          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Three Pillars</p>
-          <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
-            How a joke becomes a number.
-          </h2>
-          <p className="text-sm text-brand-text-secondary max-w-xl mb-8 leading-relaxed">
-            Every score on this site is a weighted composite of three dimensions, each rated by AI on a per-joke basis.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {[
-              {
-                weight: '25%',
-                label: 'Density',
-                desc: 'Jokes per minute, plus the peak density of the episode’s best stretches. Rewards sustained pace and elite-tier runs.',
-                color: 'text-brand-gold',
-                weightColor: 'text-brand-gold',
-              },
-              {
-                weight: '40%',
-                label: 'Craft',
-                desc: 'Originality, structure, character fit, economy, and earned versus cheap. Five dimensions scored 1–10, originality and structure weighted most.',
-                color: 'text-brand-blue',
-                weightColor: 'text-brand-blue',
-              },
-              {
-                weight: '35%',
-                label: 'Impact',
-                desc: 'Quotability, rewatch value, cultural footprint, callback payoff. What turns a joke into a catchphrase.',
-                color: 'text-emerald-400',
-                weightColor: 'text-emerald-400',
-              },
-            ].map(p => (
-              <div key={p.label} className="bg-brand-card border border-brand-border rounded-2xl p-6">
-                <div className="flex items-baseline justify-between mb-4">
-                  <p className={`font-serif italic text-2xl ${p.color}`}>{p.label}</p>
-                  <p className={`font-serif italic text-3xl ${p.weightColor} leading-none`}>{p.weight}</p>
-                </div>
-                <p className="text-sm text-brand-text-secondary leading-relaxed">{p.desc}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-8">
-            <Link href="/methodology" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
-              Full methodology →
-            </Link>
-          </div>
-        </div>
-      </section>
+      <p className="max-w-7xl mx-auto px-4 sm:px-6 py-14 text-sm text-brand-text-muted">
+        How a joke becomes a number: density, craft and impact, weighted 25, 40 and 35.{' '}
+        <Link href="/methodology" className="text-brand-gold hover:underline">The methodology</Link> ·{' '}
+        <Link href="/rankings/best-jokes" className="text-brand-gold hover:underline">The top 100 jokes</Link> ·{' '}
+        <Link href="/blog" className="text-brand-gold hover:underline">The blog</Link>
+      </p>
     </div>
   );
 }

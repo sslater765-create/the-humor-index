@@ -6,7 +6,7 @@ import AgreeGame from '@/components/agree/AgreeGame';
 export const dynamic = 'force-static';
 
 export const metadata = pageMeta({
-  title: 'Do You Agree With the Index? — The Humor Index',
+  title: 'Do You Agree With the Index?',
   description:
     'Two real jokes from sitcoms and comedy movies. You pick the funnier one. Then we reveal which one the Humor Index scored higher. A blind test of one AI’s comedy taste against yours — see how often you agree.',
   path: '/agree',

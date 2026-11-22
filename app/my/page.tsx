@@ -9,7 +9,7 @@ import { getMovies } from '@/lib/movies';
 export const dynamic = 'force-static';
 
 export const metadata = pageMeta({
-  title: 'My Humor Index — Your Comedy Taste Profile',
+  title: 'My Humor Index: Your Comedy Taste Profile',
   description:
     'Rate the sitcoms you’ve seen and get a personalized comedy taste profile: your archetype, shows ranked for you, and a watchlist of what to watch next. Keep a diary, make lists, share a profile.',
   path: '/my',

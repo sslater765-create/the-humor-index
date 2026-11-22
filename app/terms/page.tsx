@@ -1,7 +1,7 @@
 import PageHeader from '@/components/layout/PageHeader';
 
 export const metadata = {
-  title: 'Terms of Use — The Humor Index',
+  title: 'Terms of Use',
   description: 'Terms of Use for The Humor Index website.',
   alternates: {
     canonical: 'https://www.thehumorindex.com/terms/',

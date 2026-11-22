@@ -11,10 +11,11 @@ const primary = [
   { href: '/shows', label: 'TV' },
   { href: '/movies', label: 'Movies' },
   { href: '/rankings', label: 'Rankings' },
-  { href: '/comedy-dna', label: 'Comedy DNA' },
+  { href: '/play', label: 'Play' },
   { href: '/blog', label: 'Blog' },
 ];
 const secondary = [
+  { href: '/comedy-dna', label: 'Comedy DNA' },
   { href: '/compare', label: 'Compare shows' },
   { href: '/explore', label: 'Build a cut' },
   { href: '/agree', label: 'Test your taste' },

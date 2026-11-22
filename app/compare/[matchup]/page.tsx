@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: { params: { matchup: string }
     ...(crossScale ? { robots: { index: false, follow: true } } : {}),
     description: `Is ${a.name} funnier than ${b.name}? We analyzed every joke in both to settle the debate. ${winner.name} scores ${formatIndex(winner.humor_index)} vs ${formatIndex(winner === a ? b.humor_index : a.humor_index)}. See the full ${a.name} vs ${b.name} breakdown.`,
     openGraph: {
-      title: `${a.name} vs ${b.name} — The Data Settles It`,
+      title: `${a.name} vs ${b.name}: The Data Settles It`,
       description: `${winner.name} wins with a Humor Index of ${formatIndex(winner.humor_index)}. See why.`,
       images: [`/api/og?title=${encodeURIComponent(`${a.name} vs ${b.name}`)}&score=${formatIndex(winner.humor_index)}&subtitle=${encodeURIComponent(`${winner.name} wins · Head-to-head comparison`)}`],
     },
@@ -170,7 +170,7 @@ export default async function MatchupPage({ params }: { params: { matchup: strin
           </p>
           <div className="mt-4">
             <SocialShare
-              title={`${showA.name} vs ${showB.name} — which is funnier?`}
+              title={`${showA.name} vs ${showB.name}: which is funnier?`}
               text={`Data says ${winner.name} is funnier than ${loser.name} (${formatIndex(winner.humor_index)} vs ${formatIndex(loser.humor_index)}). Do you agree?`}
               url={`/compare/${params.matchup}`}
             />

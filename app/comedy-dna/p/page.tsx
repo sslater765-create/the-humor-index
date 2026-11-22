@@ -20,7 +20,7 @@ export function generateMetadata({ searchParams }: { searchParams: { d?: string 
   const p = parse(searchParams.d);
   const a = p ? ARCHES[p.a] : null;
   const top = p?.s?.[0]?.[1];
-  const title = a ? `I'm ${a.name} — Comedy DNA` : 'Comedy DNA';
+  const title = a ? `I'm ${a.name}: Comedy DNA` : 'Comedy DNA';
   const sub = a ? (top ? `Top match: ${top}. What's your comedy type?` : a.tag) : 'Find your comedy type';
   const og = '/api/og?title=' + encodeURIComponent(title) + '&subtitle=' + encodeURIComponent(sub);
   return {

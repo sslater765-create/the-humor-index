@@ -27,7 +27,7 @@ export default async function MovieSpotlight() {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Movies</p>
-            <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary leading-tight">
+            <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary leading-tight">
               The funniest comedy movies.
             </h2>
             <p className="mt-2 text-sm text-brand-text-secondary max-w-xl leading-relaxed">

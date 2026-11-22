@@ -43,11 +43,11 @@ export default async function PeoplePage() {
         subtitle={`Credited writers and directors across the shows we rank, ranked by points above their own show’s average episode. A raw average mostly tells you which show someone wrote for; this tells you how their episodes did against the rest of that show. Minimum ${MIN} episodes; the ± is a 95% interval, so a +1.0 with ±2.0 could be zero.`} />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 grid gap-10 lg:grid-cols-2">
         <section>
-          <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Writers</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary mb-4">Writers</h2>
           <Table rows={writers} role="writer" />
         </section>
         <section>
-          <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Directors</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary mb-4">Directors</h2>
           <Table rows={directors} role="director" />
         </section>
       </div>

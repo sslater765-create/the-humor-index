@@ -11,7 +11,7 @@ function formatDate(dateStr: string): string {
 }
 
 export const metadata = {
-  title: 'Comedy Analytics Blog — Data-Driven Insights on TV Humor',
+  title: 'Comedy Analytics Blog: Data-Driven Insights on TV Humor',
   description: 'Deep dives into sitcom comedy using data. Which shows are actually the funniest? What makes a joke work? We break it down with numbers.',
   alternates: {
     canonical: `${SITE_URL}/blog/`,
@@ -38,6 +38,7 @@ const CATEGORY_ACCENTS: Record<string, string> = {
 // cannot drift from the posts themselves. Only the card extras live here.
 // A post missing from CARDS still renders, with default extras.
 const CARDS: Record<string, { readTime: string; stat: string; statLabel: string }> = {
+  'does-the-index-reward-famous-lines': { readTime: '4 min read', stat: '-0.01', statLabel: 'Extra drop for famous lines when show and character names are removed' },
   'index-is-wrong-about-festivus': { readTime: '3 min read', stat: '8.1', statLabel: 'Average Festivus joke in The Strike; the famous line was never scored' },
   'index-is-wrong-about-the-banana-stand': { readTime: '3 min read', stat: '-8.0', statLabel: 'Banana stand LAR, worst gag in Arrested Development' },
   'always-sunny-fewer-jokes-better-with-age': { readTime: '5 min read', stat: '2.64', statLabel: "Sunny's jokes per minute, 13th of 15" },
@@ -129,7 +130,7 @@ export default async function BlogPage() {
                   <span>·</span>
                   <span>{hero.readTime}</span>
                 </div>
-                <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary group-hover:text-brand-gold transition-colors leading-tight mb-4">
+                <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary group-hover:text-brand-gold transition-colors leading-tight mb-4">
                   {hero.title}
                 </h2>
                 <p className="text-sm text-brand-text-secondary leading-relaxed line-clamp-4">
@@ -144,7 +145,7 @@ export default async function BlogPage() {
         {/* Section header */}
         <div className="border-t border-brand-border pt-10">
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Archive</p>
-          <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
+          <h2 className="font-serif text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
             Every post on the index.
           </h2>
           <p className="text-sm text-brand-text-secondary max-w-xl mb-8">
@@ -182,7 +183,7 @@ export default async function BlogPage() {
                 </div>
                 <div className="p-5">
                   <p className="text-[11px] uppercase tracking-widest text-brand-text-muted mb-2">{formatDate(post.date)} · {post.readTime}</p>
-                  <h3 className="font-serif italic text-lg text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2 line-clamp-3 leading-snug">
+                  <h3 className="font-serif text-lg text-brand-text-primary group-hover:text-brand-gold transition-colors mb-2 line-clamp-3 leading-snug">
                     {post.title}
                   </h3>
                   <p className="text-sm text-brand-text-secondary line-clamp-2 leading-relaxed">{post.description}</p>

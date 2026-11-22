@@ -24,7 +24,7 @@ export default async function MovieLines({ limit = 25, title = 'The best movie l
       <div className="flex items-end justify-between gap-4 mb-4">
         <div>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Movies</p>
-          <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary">{title}</h2>
+          <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary">{title}</h2>
           {subtitle && <p className="text-sm text-brand-text-secondary mt-1">{subtitle}</p>}
         </div>
         <Link href="/movies" className="text-xs text-brand-gold hover:underline shrink-0">All movies →</Link>

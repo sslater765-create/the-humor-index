@@ -11,7 +11,7 @@ import { getMovieGameJokes, filmTime } from '@/lib/movies';
 export const dynamic = 'force-static';
 
 export const metadata = pageMeta({
-  title: 'Share Cards — The Humor Index',
+  title: 'Share Cards',
   description:
     'Ready-to-share scorecards for the funniest sitcom episodes and lines we’ve scored. Download the image or share the page — every card is generated live from the data.',
   path: '/cards',
@@ -59,7 +59,7 @@ export default async function CardsPage() {
 
       {/* Episode scorecards */}
       <section className="mb-12">
-        <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Top episode scorecards</h2>
+        <h2 className="font-serif text-2xl text-brand-text-primary mb-4">Top episode scorecards</h2>
         <div className="grid sm:grid-cols-2 gap-6">
           {topEpisodes.map(e => {
             const tier = getTier(e.hi, isAwaitingRescore(e.slug) ? 'legacy' : 'current').label;
@@ -88,7 +88,7 @@ export default async function CardsPage() {
       {/* Funniest lines */}
       {topJokes.length > 0 && (
         <section>
-          <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Funniest lines</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary mb-4">Funniest lines</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {topJokes.map((j, i) => {
               const url = `/api/og/joke?${q({ text: j.text, craft: j.craft?.toFixed(1), impact: j.impact?.toFixed(1), show: j.show, episode: j.episode_title, types: (j.joke_types || []).join(',') })}`;
@@ -117,7 +117,7 @@ export default async function CardsPage() {
       {/* Movie lines */}
       {movieLines.length > 0 && (
         <section className="mt-12">
-          <h2 className="font-serif italic text-2xl text-brand-text-primary mb-4">Funniest movie lines</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary mb-4">Funniest movie lines</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {movieLines.map((j, i) => {
               const url = `/api/og/joke?${q({ text: j.text, craft: j.craft.toFixed(1), impact: j.impact.toFixed(1), show: `${j.movie} (${j.year})`, episode: filmTime(j.t), types: j.type ?? '' })}`;

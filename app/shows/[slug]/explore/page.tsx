@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const show = await getShow(params.slug);
   if (!show) return {};
   return {
-    title: `${show.name} Humor Index Explorer — Score Any Season or Episode Cut`,
+    title: `${show.name} Humor Index Explorer: Score Any Season or Episode Cut`,
     description: `Pick any seasons or episodes of ${show.name} and see the average Humor Index of that cut, with 95% confidence intervals. Compare eras, isolate a hot streak, or drop a weak season — every episode scored by AI.`,
     alternates: { canonical: `${SITE_URL}/shows/${params.slug}/explore/` },
     openGraph: {
@@ -79,7 +79,7 @@ export default async function ExplorePage({ params }: { params: { slug: string }
   const datasetLd = {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
-    name: `${show.name} — per-episode Humor Index scores`,
+    name: `${show.name}: per-episode Humor Index scores`,
     description: `AI-scored comedy ratings (Humor Index, 0–100) for all ${episodes.length} episodes of ${show.name}, with IMDb audience ratings and joke counts.`,
     creator: { '@type': 'Organization', name: 'The Humor Index', url: `${SITE_URL}` },
     url: `${SITE_URL}/shows/${params.slug}/explore`,

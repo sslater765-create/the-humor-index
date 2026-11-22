@@ -9,7 +9,7 @@ export const dynamic = 'force-static';
 
 export async function generateMetadata() {
   return {
-    title: 'Humor Index Explorer — Score Any Cut of Any Sitcom',
+    title: 'Humor Index Explorer: Score Any Cut of Any Sitcom',
     description: 'Pick any seasons or episodes of a sitcom and see the average Humor Index of that cut. Compare eras — like Community with vs without Dan Harmon, or Seinfeld with vs without Larry David — every episode scored by AI.',
     alternates: { canonical: `${SITE_URL}/explore/` },
   };
@@ -131,7 +131,7 @@ export default async function ExploreHub() {
             <div className="px-6 sm:px-8 pb-7 pt-2">
               <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-4 sm:gap-8 items-end">
                 <div>
-                  <h2 className="font-serif italic text-3xl sm:text-5xl text-brand-text-primary group-hover:text-brand-gold transition-colors leading-tight">
+                  <h2 className="font-serif text-3xl sm:text-5xl text-brand-text-primary group-hover:text-brand-gold transition-colors leading-tight">
                     {hero.name}:
                   </h2>
                   <p className="font-serif italic text-2xl sm:text-3xl text-brand-text-secondary mt-1 leading-tight">
@@ -160,7 +160,7 @@ export default async function ExploreHub() {
         {/* Section header */}
         <div className="pt-2">
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Every Show, Recut</p>
-          <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
+          <h2 className="font-serif text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-2">
             Build your own cut.
           </h2>
           <p className="text-sm text-brand-text-secondary max-w-xl mb-8 leading-relaxed">
@@ -185,7 +185,7 @@ export default async function ExploreHub() {
                   </div>
                 )}
                 <div className="p-5">
-                  <h3 className="font-serif italic text-xl text-brand-text-primary group-hover:text-brand-gold transition-colors leading-tight mb-2">
+                  <h3 className="font-serif text-xl text-brand-text-primary group-hover:text-brand-gold transition-colors leading-tight mb-2">
                     {t.name}
                   </h3>
                   <p className="text-sm text-brand-text-secondary mb-3 leading-relaxed">{t.line}</p>

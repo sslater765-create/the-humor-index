@@ -32,7 +32,7 @@ export async function generateMetadata() {
     title: 'Jokes Per Minute: Every Sitcom Ranked by Joke Density',
     description,
     openGraph: {
-      title: 'Jokes Per Minute — Every Sitcom Ranked by Joke Density',
+      title: 'Jokes Per Minute: Every Sitcom Ranked by Joke Density',
       description: `We counted every joke in ${shows.length} sitcoms. Here is the jokes-per-minute ranking.`,
       images: ['/og-image.png'],
     },
@@ -66,7 +66,7 @@ export default async function JokesPerMinutePage() {
       itemListElement: shows.map((s, i) => ({
         '@type': 'ListItem',
         position: i + 1,
-        name: `${s.name} — ${(s.avg_jpm || 0).toFixed(2)} jokes per minute`,
+        name: `${s.name}: ${(s.avg_jpm || 0).toFixed(2)} jokes per minute`,
         url: `${SITE_URL}/shows/${s.slug}`,
       })),
     },
@@ -204,7 +204,7 @@ export default async function JokesPerMinutePage() {
         {movies.length > 0 && (
           <section className="mt-14">
             <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-1">Movies</p>
-            <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary">Jokes per minute in comedy movies</h2>
+            <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary">Jokes per minute in comedy movies</h2>
             <p className="text-sm text-brand-text-secondary mt-1 mb-4 max-w-2xl">
               Counted the same way, over each film&rsquo;s real running time. Movies spend minutes on plot, so they run sparser than sitcoms and are ranked on their own.
             </p>

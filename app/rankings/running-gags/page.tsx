@@ -96,14 +96,14 @@ export default async function RunningGagsPage() {
         </section>
 
         <section>
-          <h2 className="font-serif italic text-2xl text-brand-text-primary mb-1">Most valuable running gags</h2>
+          <h2 className="font-serif text-2xl text-brand-text-primary mb-1">Most valuable running gags</h2>
           <p className="text-sm text-brand-text-secondary mb-4">Ranked by LAR: how much each gag added over the show’s ordinary joke, across its whole run.</p>
           <ol className="space-y-3">{byLar.map((g, i) => <GagRow key={`${g.slug}:${g.name}`} g={g} i={i} />)}</ol>
         </section>
 
         <div className="grid gap-10 lg:grid-cols-3">
           <section>
-            <h2 className="font-serif italic text-xl text-brand-text-primary mb-1">Most reliable</h2>
+            <h2 className="font-serif text-xl text-brand-text-primary mb-1">Most reliable</h2>
             <p className="text-xs text-brand-text-muted mb-3">Highest hit rate, at least six jokes.</p>
             <ol className="space-y-2 text-sm">
               {reliable.map((g) => (
@@ -115,7 +115,7 @@ export default async function RunningGagsPage() {
             </ol>
           </section>
           <section>
-            <h2 className="font-serif italic text-xl text-brand-text-primary mb-1">Got better with reps</h2>
+            <h2 className="font-serif text-xl text-brand-text-primary mb-1">Got better with reps</h2>
             <p className="text-xs text-brand-text-muted mb-3">Later appearances outscore the early ones.</p>
             <ol className="space-y-2 text-sm">
               {improved.map((g) => (
@@ -127,7 +127,7 @@ export default async function RunningGagsPage() {
             </ol>
           </section>
           <section>
-            <h2 className="font-serif italic text-xl text-brand-text-primary mb-1">Ran out of steam</h2>
+            <h2 className="font-serif text-xl text-brand-text-primary mb-1">Ran out of steam</h2>
             <p className="text-xs text-brand-text-muted mb-3">Later appearances score below the early ones.</p>
             <ol className="space-y-2 text-sm">
               {faded.map((g) => (

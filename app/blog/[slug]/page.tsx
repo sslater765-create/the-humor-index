@@ -84,7 +84,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 
     if (trimmed.startsWith('## ')) {
       return (
-        <h2 key={i} className="font-serif italic text-2xl sm:text-[1.7rem] text-brand-text-primary mt-10 mb-3 leading-tight">
+        <h2 key={i} className="font-serif text-2xl sm:text-[1.7rem] text-brand-text-primary mt-10 mb-3 leading-tight">
           {trimmed.replace('## ', '')}
         </h2>
       );

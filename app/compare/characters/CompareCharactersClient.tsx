@@ -151,7 +151,7 @@ export default function CompareCharactersClient({ characters }: Props) {
 
           <div className="mt-6 flex flex-wrap gap-3 justify-between items-center">
             <SocialShare
-              title={`${cA.name} vs ${cB.name} — The Humor Index`}
+              title={`${cA.name} vs ${cB.name}`}
               text={`${cA.name} (${cA.showName}) vs ${cB.name} (${cB.showName}) on the Humor Index — who actually wins?`}
               url="/compare/characters"
             />

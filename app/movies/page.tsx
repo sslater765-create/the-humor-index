@@ -13,7 +13,7 @@ export async function generateMetadata() {
   const movies = await getMovies();
   const lead = movies[0];
   return {
-    title: `The Funniest Comedy Movies, Ranked by Every Joke | The Humor Index`,
+    title: `The Funniest Comedy Movies, Ranked by Every Joke`,
     description: `We score every joke in a comedy movie for craft and impact, then map where it's funniest.${lead ? ` ${shortTitle(lead.title)} leads at ${formatIndex(lead.humor_index)}.` : ''} ${movies.length} scored so far, more every week.`,
     alternates: { canonical: `${SITE_URL}/movies/` },
   };

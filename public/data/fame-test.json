@@ -1,0 +1,1912 @@
+{
+ "generated": "2026-11-22",
+ "model": "claude-sonnet-4-6",
+ "pairs": 99,
+ "summary": {
+  "famous": {
+   "named": 8.095,
+   "blind": 7.035,
+   "drop_when_blind": 1.061,
+   "recognized_pct": 34.3,
+   "stored": 8.529
+  },
+  "deep": {
+   "named": 7.495,
+   "blind": 6.421,
+   "drop_when_blind": 1.074,
+   "recognized_pct": 4.0,
+   "stored": 8.508
+  }
+ },
+ "extra_drop_famous": {
+  "mean": -0.013,
+  "ci95": 0.24
+ },
+ "famous_minus_deep_blind": {
+  "mean": 0.614,
+  "ci95": 0.299
+ },
+ "results": [
+  {
+   "slug": "fleabag",
+   "label": "It'll pass",
+   "stored": 9.12,
+   "famous": {
+    "text": "'It'll pass.'",
+    "stored": 9.12,
+    "named": 9.28,
+    "blind": 8.125,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Belinda's favourite 'period film' is Carrie.",
+    "stored": 9.11,
+    "named": 8.675,
+    "blind": 6.888,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-office",
+   "label": "Why are you the way that you are?",
+   "stored": 8.44,
+   "famous": {
+    "text": "Michael: 'Why are you the way that you are? Honestly, every time I try to do something fun or exciting, you make it not, that way. I hate, so much about the things that you choose to be.'",
+    "stored": 8.44,
+    "named": 8.5,
+    "blind": 7.987,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Animal control asks the porcupine's name; Dwight answers 'Henrietta,' then says 'Oops.' Andy: 'What?' Dwight: [silence]",
+    "stored": 8.53,
+    "named": 7.67,
+    "blind": 7.485,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "community",
+   "label": "Streets ahead",
+   "stored": 7.97,
+   "famous": {
+    "text": "Stop trying to coin the phrase 'streets ahead.' / Trying? Coined and minted. Been there, coined that. 'Streets ahead' is verbal wildfire.",
+    "stored": 7.97,
+    "named": 7.81,
+    "blind": 8.162,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Hey, you can't just say he's gone. You owe us an ending. / I owe you nothing. I am a Dungeon Master. I create a boundless world, and I bind it by rules. Too heavy for a bridge? It breaks. Get hit? Tak",
+    "stored": 7.97,
+    "named": 7.6,
+    "blind": 7.35,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "seinfeld",
+   "label": "No soup for you!",
+   "stored": 9.41,
+   "famous": {
+    "text": "Very good. Very good. You know something? No soup for you! / What? / Come back, one year! / Next!",
+    "stored": 9.41,
+    "named": 9.643,
+    "blind": 5.175,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Kramer, on hearing of Susan's death: 'Poor Lilly.'",
+    "stored": 9.36,
+    "named": 7.812,
+    "blind": 5.15,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "friends",
+   "label": "They don't know that we know they know",
+   "stored": 8.25,
+   "famous": {
+    "text": "They think they are so slick messing with us. But they don't know that we know that they know.",
+    "stored": 8.25,
+    "named": 7.713,
+    "blind": 5.425,
+    "recognized": false
+   },
+   "deep": {
+    "text": "\"So how's the baby-styling business going?\" / \"Not that great. It's almost as if people don't want to hear that their babies are ugly.\" / \"That's shocking.\"",
+    "stored": 8.25,
+    "named": 5.638,
+    "blind": 5.5,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "chappelles-show",
+   "label": "Cocaine is a hell of a drug",
+   "stored": 9.05,
+   "famous": {
+    "text": "\"Cocaine is a hell of a drug.\" — first utterance, Charlie Murphy's deadpan explanation for Rick James's behavior",
+    "stored": 9.05,
+    "named": 9.275,
+    "blind": 4.4,
+    "recognized": false
+   },
+   "deep": {
+    "text": "'So you'd let your children sleep with him.' / 'Fuck no! Eww.'",
+    "stored": 9.13,
+    "named": 8.363,
+    "blind": 7.213,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "its-always-sunny",
+   "label": "Dayman",
+   "stored": 7.54,
+   "famous": {
+    "text": "The Dayman song performed in full — 'Dayman / Fighter of the Nightman / Champion of the sun / You're a master of karate and friendship for everyone'",
+    "stored": 7.54,
+    "named": 8.363,
+    "blind": 8.425,
+    "recognized": true
+   },
+   "deep": {
+    "text": "The gang discovers the dead monkey, dead seagull, and dead wife's ashes have all been accumulating at the bar because nobody wanted to clean them up.",
+    "stored": 7.55,
+    "named": 7.133,
+    "blind": 6.283,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "30-rock",
+   "label": "Dealbreaker",
+   "stored": 8.59,
+   "famous": {
+    "text": "You have sexually-transmitted crazy mouth. Dealbreaker.",
+    "stored": 8.59,
+    "named": 7.713,
+    "blind": 6.487,
+    "recognized": false
+   },
+   "deep": {
+    "text": "'He was not that clown. He was the head clowning instructor.'",
+    "stored": 8.59,
+    "named": 7.175,
+    "blind": 6.338,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "parks-and-recreation",
+   "label": "Pretty dark-haired women and breakfast food",
+   "stored": 8.61,
+   "famous": {
+    "text": "Why does anybody in the world ever eat anything but breakfast food? / People are idiots, Ron.",
+    "stored": 8.61,
+    "named": 7.088,
+    "blind": 5.125,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Ron's permit reads: 'I can do what I want.' He presents this to the official as a legitimate permit.",
+    "stored": 8.57,
+    "named": 7.75,
+    "blind": 5.713,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "parks-and-recreation",
+   "label": "Everything hurts and I'm dying",
+   "stored": 8.11,
+   "famous": {
+    "text": "Not enough ramps is the number three complaint among Pawnee seniors... Right behind 'everything hurts' and 'I'm dying.'",
+    "stored": 8.11,
+    "named": 7.415,
+    "blind": 7.15,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Three dates. / One date. / Coffee?",
+    "stored": 8.13,
+    "named": 6.862,
+    "blind": 5.638,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "friends",
+   "label": "Could I BE wearing any more clothes?",
+   "stored": 9.21,
+   "famous": {
+    "text": "Look at me! I'm Chandler. Could I be wearing any more clothes?",
+    "stored": 9.21,
+    "named": 8.512,
+    "blind": 8.512,
+    "recognized": true
+   },
+   "deep": {
+    "text": "The realization: Chandler kissed Monica, not Rachel. 'You were my midnight mystery kisser?!' / 'You were my first kiss with Rachel?!' / 'You were my first kiss EVER?!'",
+    "stored": 9.2,
+    "named": 8.71,
+    "blind": 7.402,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "broad-city",
+   "label": "Yas, queen!",
+   "stored": 6.87,
+   "famous": {
+    "text": "Yas, queen! / Yas, queen! / Again! Yas, queen! / I smell a duke! / Smell... smell a duke! / Nice pussy boot! / Nice pussy boot! / (high pitch) I love you, Abbi!",
+    "stored": 6.87,
+    "named": 7.582,
+    "blind": 6.473,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Mark: 'It's so deep, you could wash a baby in there.' / [pause] 'I have.'",
+    "stored": 6.84,
+    "named": 7.588,
+    "blind": 6.625,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "community",
+   "label": "Cool. Cool cool cool.",
+   "stored": 9.2,
+   "famous": {
+    "text": "Cool. Cool, cool, cool. — That's a lie.",
+    "stored": 9.2,
+    "named": 8.775,
+    "blind": 8.738,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Post-credits epilogue: Takashi narrates: 'I often think about that night. Such a small event, but ultimately, the moment that would lead me to becoming oyabun, highest leader of the Yakuza.'",
+    "stored": 9.18,
+    "named": 7.723,
+    "blind": 7.637,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "seinfeld",
+   "label": "Master of my domain",
+   "stored": 9.42,
+   "famous": {
+    "text": "So you're still master of your domain? Yes. Yes, I am. Master of my domain.",
+    "stored": 9.42,
+    "named": 8.837,
+    "blind": 8.375,
+    "recognized": true
+   },
+   "deep": {
+    "text": "George is getting upset.",
+    "stored": 9.37,
+    "named": 7.537,
+    "blind": 6.213,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "community",
+   "label": "Six seasons and a movie",
+   "stored": 9.28,
+   "famous": {
+    "text": "That show's gonna last three weeks! / Six seasons and a movie!",
+    "stored": 9.28,
+    "named": 8.985,
+    "blind": 7.225,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Psst! Troy! It's me. Abed? / I made it through! / I'm a cartoon now.",
+    "stored": 9.34,
+    "named": 8.325,
+    "blind": 7.8,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "30-rock",
+   "label": "Night cheese",
+   "stored": 9.21,
+   "famous": {
+    "text": "# Working on my night cheese, Mmm, mmm...# — Liz singing about eating cheese at night",
+    "stored": 9.21,
+    "named": 8.93,
+    "blind": 8.7,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Goodbye, helpful Tracy. Goodbye, daddy-head. Goodbye, only evidence tying me to my ex-wife's disappearance.",
+    "stored": 9.14,
+    "named": 8.162,
+    "blind": 7.36,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "flight-of-the-conchords",
+   "label": "Hiphopopotamus",
+   "stored": 9.0,
+   "famous": {
+    "text": "The Hiphopopotamus vs. Rhymenoceros rap song begins — Bret and Jemaine respond to a knife-point mugging by performing an elaborate hip-hop number",
+    "stored": 9.0,
+    "named": 8.823,
+    "blind": 7.6,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Final scene: back in New Zealand as shepherds — 'Good shepherding today, guys!' / 'Thanks, Murray!'",
+    "stored": 9.01,
+    "named": 7.758,
+    "blind": 5.7,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "seinfeld",
+   "label": "Yada yada yada",
+   "stored": 9.02,
+   "famous": {
+    "text": "George: 'She went shopping for some shoes for the wedding and, uh, yada, yada, yada, I'll see her in six to eight months.'",
+    "stored": 9.02,
+    "named": 9.235,
+    "blind": 8.35,
+    "recognized": false
+   },
+   "deep": {
+    "text": "All right. That's enough. You're fired. / Thank you.",
+    "stored": 9.0,
+    "named": 7.725,
+    "blind": 6.725,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "parks-and-recreation",
+   "label": "Ann, you beautiful tropical fish",
+   "stored": 8.33,
+   "famous": {
+    "text": "Ann, you beautiful tropical fish. You're smart as a whip and you're cool under pressure. You've resuscitated a human heart in your bare hands. No, I haven't. You haven't? No. You will. You're that goo",
+    "stored": 8.33,
+    "named": 8.155,
+    "blind": 8.09,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Hey, Jer. Hump day, am I right, buddy?",
+    "stored": 8.41,
+    "named": 7.825,
+    "blind": 7.188,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "its-always-sunny",
+   "label": "Wildcard, bitches!",
+   "stored": 9.34,
+   "famous": {
+    "text": "Charlie: 'Because I cut the brakes! Wild card, bitches!' — revealing he deliberately cut the brakes",
+    "stored": 9.34,
+    "named": 8.825,
+    "blind": 8.825,
+    "recognized": false
+   },
+   "deep": {
+    "text": "'No, you're not understanding. I modded out a regular workout bike to create the optimal workout.' / 'And added a penis.' / 'Yeah.' / 'Oh, I see where you guys are getting off the rails. That's not a ",
+    "stored": 9.32,
+    "named": 7.912,
+    "blind": 7.5,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "30-rock",
+   "label": "I want to go to there",
+   "stored": 8.28,
+   "famous": {
+    "text": "I want to go to there.",
+    "stored": 8.28,
+    "named": 7.588,
+    "blind": 4.612,
+    "recognized": true
+   },
+   "deep": {
+    "text": "♪ Apples / You taste good / Trees / You give us wood / Grandma / I am gay / Bridge / You turn me on in a sexual way ♪",
+    "stored": 8.34,
+    "named": 7.91,
+    "blind": 6.938,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "broad-city",
+   "label": "Bingo Bronson",
+   "stored": 7.11,
+   "famous": {
+    "text": "Ilana arrives at the dentist, cradles Abbi like a baby, calls herself 'Mommy Lani,' and hands Abbi a stuffed animal called 'Bingo Bronson that Mommy Lani got you.'",
+    "stored": 7.11,
+    "named": 7.583,
+    "blind": 6.905,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Someone bought one of Abbi's drawings off the chiropractor's wall for $45 — which exactly covers her co-pay, making the appointment free",
+    "stored": 7.08,
+    "named": 6.2,
+    "blind": 4.8,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "futurama",
+   "label": "Sweet zombie Jesus",
+   "stored": 6.81,
+   "famous": {
+    "text": "Sweet zombie Jesus! It's huge!",
+    "stored": 6.81,
+    "named": 6.65,
+    "blind": 4.275,
+    "recognized": false
+   },
+   "deep": {
+    "text": "My parents and my grandmother a-are dead!",
+    "stored": 6.89,
+    "named": 6.162,
+    "blind": 5.125,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "chappelles-show",
+   "label": "I'm rich, biatch!",
+   "stored": 8.51,
+   "famous": {
+    "text": "(Chappelle) I'm rich, biatch! (horn honking)",
+    "stored": 8.51,
+    "named": 8.162,
+    "blind": 5.487,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Tag: 'Funding for Frontline provided by the Trent Lott Foundation for peace and understanding. Loving black people, one at a time.'",
+    "stored": 8.52,
+    "named": 8.537,
+    "blind": 7.81,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-simpsons",
+   "label": "Eat my shorts",
+   "stored": 8.47,
+   "famous": {
+    "text": "Yes, I believe I'll start as you've so often suggested... by eating your shorts.",
+    "stored": 8.47,
+    "named": 6.825,
+    "blind": 5.838,
+    "recognized": false
+   },
+   "deep": {
+    "text": "I'm on a road. Looks to be asphalt. Um, aw, geez. Trees, shrubs. I'm directly under the Earth's sun... now.",
+    "stored": 8.47,
+    "named": 8.25,
+    "blind": 6.875,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "seinfeld",
+   "label": "These pretzels are making me thirsty",
+   "stored": 9.09,
+   "famous": {
+    "text": "\"Boy, these pretzels are making me thirsty.\" — Kramer reveals his one line",
+    "stored": 9.09,
+    "named": 8.762,
+    "blind": 8.625,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Look, who are you kidding? You come up to my apartment with your table and your little oils. And I'm not supposed to expect anything? You're a massage teaser.",
+    "stored": 9.04,
+    "named": 7.2,
+    "blind": 5.612,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "parks-and-recreation",
+   "label": "Li’l Sebastian",
+   "stored": 9.26,
+   "famous": {
+    "text": "Ron talking-head: 'I have cried twice in my life. Once when I was seven, and I was hit by a school bus. And then again when I heard that Li'l Sebastian had passed.'",
+    "stored": 9.26,
+    "named": 8.688,
+    "blind": 8.7,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Kaboom! is a word I made up. It's not in any dictionary. I trick people into building playgrounds in empty lots in their neighborhood. It's an elaborate prank. For my next prank, I'm gonna build a hos",
+    "stored": 9.19,
+    "named": 7.51,
+    "blind": 6.975,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "arrested-development",
+   "label": "Has anyone in this family ever even seen a chicken?",
+   "stored": 8.48,
+   "famous": {
+    "text": "Has anyone in this family ever even seen a chicken?",
+    "stored": 8.48,
+    "named": 7.862,
+    "blind": 4.875,
+    "recognized": false
+   },
+   "deep": {
+    "text": "\"It's a great community. Nobody locks their doors around here.\" / Michael: \"You should.\"",
+    "stored": 8.42,
+    "named": 7.5,
+    "blind": 7.713,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "friends",
+   "label": "We were on a break!",
+   "stored": 8.99,
+   "famous": {
+    "text": "We were on a break!",
+    "stored": 8.99,
+    "named": 8.137,
+    "blind": 4.188,
+    "recognized": true
+   },
+   "deep": {
+    "text": "What is Chandler Bing's job? / Oh. / Oh, gosh. It has something to do with numbers. And processing. And he carries a briefcase. / It has something to do with transponding. / Oh! Oh! He's a transponste",
+    "stored": 8.95,
+    "named": 8.51,
+    "blind": 8.537,
+    "recognized": true
+   }
+  },
+  {
+   "slug": "its-always-sunny",
+   "label": "Charlie work",
+   "stored": 8.12,
+   "famous": {
+    "text": "Dennis's blackmail pitch: 'I'm gonna bang her tonight, probably around 10:30 or so... so all you have to do to stop me is call my cell phone by 10:30 and say, 'Dennis, you don't have to do Charlie wor",
+    "stored": 8.12,
+    "named": 7.725,
+    "blind": 7.022,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Frank's 'closed for salmonella because Super Bowl' sign — Dee: 'First of all, how is salmonella the only word you spelled correctly?'",
+    "stored": 8.11,
+    "named": 7.197,
+    "blind": 7.157,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "curb-your-enthusiasm",
+   "label": "Sample abuser",
+   "stored": 7.43,
+   "famous": {
+    "text": "You know, you're like a sample abuser. That's what you are. You're abusing your sampling privileges.",
+    "stored": 7.43,
+    "named": 5.862,
+    "blind": 4.05,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Larry trying to break character by calling Brad by name during the interactive theater",
+    "stored": 7.36,
+    "named": 4.762,
+    "blind": 3.675,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "its-always-sunny",
+   "label": "So I started blasting",
+   "stored": 7.54,
+   "famous": {
+    "text": "\"Anyway, I started blasting. Bah! Bah!\" — Frank miming gunshots on live TV",
+    "stored": 7.54,
+    "named": 7.65,
+    "blind": 6.938,
+    "recognized": false
+   },
+   "deep": {
+    "text": "The P.A. announcer casually revealing personal information about Frank and Charlie by name as if it's public interest news",
+    "stored": 7.59,
+    "named": 6.438,
+    "blind": 5.188,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "friends",
+   "label": "Joey doesn't share food!",
+   "stored": 7.83,
+   "famous": {
+    "text": "Joey doesn't share food! (final instance — said as an affirmation between friends at episode end)",
+    "stored": 7.83,
+    "named": 5.925,
+    "blind": 5.95,
+    "recognized": false
+   },
+   "deep": {
+    "text": "My God, I killed another one! The curse is getting stronger too, to bring down something that big.",
+    "stored": 7.83,
+    "named": 6.013,
+    "blind": 6.325,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "chappelles-show",
+   "label": "I'm Rick James, bitch!",
+   "stored": 9.64,
+   "famous": {
+    "text": "\"I'm Rick James, bitch.\" — first utterance of the catchphrase",
+    "stored": 9.64,
+    "named": 9.387,
+    "blind": 8.075,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Wayne Brady suddenly pulls out a gun and pistol-whips a random person on the street, screaming 'RIVERSIDE, MOTHAFUCKA!'",
+    "stored": 9.55,
+    "named": 9.293,
+    "blind": 5.037,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-simpsons",
+   "label": "Steamed hams",
+   "stored": 8.25,
+   "famous": {
+    "text": "you are an odd fellow... but I must say you steam a good ham.",
+    "stored": 8.25,
+    "named": 9.438,
+    "blind": 7.7,
+    "recognized": false
+   },
+   "deep": {
+    "text": "I'm still all those things. Only now I'm cleaning up the city, sewing together the social fabric... and unplugging the clogs of our legal system",
+    "stored": 8.25,
+    "named": 4.763,
+    "blind": 3.8,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "arrested-development",
+   "label": "I don't understand the question, and I won't respond to it",
+   "stored": 9.16,
+   "famous": {
+    "text": "At Klimpy's, waitress asks 'Plate or platter?' and Lucille replies: 'I don't understand the question, and I won't respond to it.'",
+    "stored": 9.16,
+    "named": 8.325,
+    "blind": 7.935,
+    "recognized": false
+   },
+   "deep": {
+    "text": "I want to cry so bad. But I don't think I can spare the moisture.",
+    "stored": 9.09,
+    "named": 7.987,
+    "blind": 6.763,
+    "recognized": true
+   }
+  },
+  {
+   "slug": "fleabag",
+   "label": "This is a love story",
+   "stored": 8.61,
+   "famous": {
+    "text": "This is a love story.",
+    "stored": 8.61,
+    "named": 8.77,
+    "blind": 5.475,
+    "recognized": false
+   },
+   "deep": {
+    "text": "You know, everyone feels like this a little bit, and they're just not talking about it, or I'm completely fucking alone... which isn't fucking funny.",
+    "stored": 8.51,
+    "named": 8.848,
+    "blind": 7.012,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "its-always-sunny",
+   "label": "Bird law",
+   "stored": 9.39,
+   "famous": {
+    "text": "Bird law in this country is not governed by reason.",
+    "stored": 9.39,
+    "named": 8.325,
+    "blind": 8.2,
+    "recognized": true
+   },
+   "deep": {
+    "text": "'No, you're not understanding. I modded out a regular workout bike to create the optimal workout.' / 'And added a penis.' / 'Yeah.' / 'Oh, I see where you guys are getting off the rails. That's not a ",
+    "stored": 9.32,
+    "named": 7.912,
+    "blind": 7.5,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-larry-sanders-show",
+   "label": "Hey now!",
+   "stored": 8.93,
+   "famous": {
+    "text": "\"Do you think that when hiageus gets in trouble, he could say, 'hey, now!'\"",
+    "stored": 8.93,
+    "named": 7.287,
+    "blind": 5.725,
+    "recognized": false
+   },
+   "deep": {
+    "text": "'Oh, Sid, you fuck. You tricked me, buddy.'",
+    "stored": 8.88,
+    "named": 7.412,
+    "blind": 7.143,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "community",
+   "label": "Pop pop!",
+   "stored": 8.7,
+   "famous": {
+    "text": "Pop pop! [Magnitude defiantly shouts it from offscreen to the music]",
+    "stored": 8.7,
+    "named": 7.838,
+    "blind": 6.875,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Pierce got shot in the leg and died. Shirley's a drunk. Annie's locked in a mental ward because her guilt drove her insane. Jeff lost an arm in the fire. Troy lost his larynx because, for some dumb re",
+    "stored": 8.79,
+    "named": 8.227,
+    "blind": 8.13,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-office",
+   "label": "Identity theft is not a joke, Jim!",
+   "stored": 8.54,
+   "famous": {
+    "text": "'Identity theft is not a joke, Jim! Millions of families suffer every year!'",
+    "stored": 8.54,
+    "named": 8.575,
+    "blind": 8.95,
+    "recognized": true
+   },
+   "deep": {
+    "text": "\"Fish sticks are not an aphrodisiac. You're thinking of deer penis.\"",
+    "stored": 8.46,
+    "named": 7.775,
+    "blind": 6.275,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "friends",
+   "label": "Pivot!",
+   "stored": 9.02,
+   "famous": {
+    "text": "'Turn!' / 'Pivot!' / 'Pivot!' / 'Pivot!' [repeated increasingly desperately]",
+    "stored": 9.02,
+    "named": 9.287,
+    "blind": 9.113,
+    "recognized": true
+   },
+   "deep": {
+    "text": "'Think 13 years earlier, lose the rabbi, add a scalpel'",
+    "stored": 8.98,
+    "named": 7.375,
+    "blind": 6.725,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "friends",
+   "label": "How you doin'?",
+   "stored": 8.0,
+   "famous": {
+    "text": "What are you doing? I thought you don't share food? / Sure I do. / Coulis? / No. If I can't have your clams, you can't have my dessert. This is a two-way street.",
+    "stored": 8.0,
+    "named": 6.35,
+    "blind": 5.912,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Mine had a dwarf that got broke in half, but, you know, whatever.",
+    "stored": 7.92,
+    "named": 7.838,
+    "blind": 6.613,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "friends",
+   "label": "Smelly Cat",
+   "stored": 8.81,
+   "famous": {
+    "text": "Phoebe compares the voice woman to unwanted pound animals — specifically 'some old dog who's kind of like stinky' — and then realizes: 'Oh, my God! She's Smelly Cat!'",
+    "stored": 8.81,
+    "named": 8.232,
+    "blind": 7.95,
+    "recognized": false
+   },
+   "deep": {
+    "text": "You understand, I don't actually like eight-year-old boys.",
+    "stored": 8.72,
+    "named": 5.862,
+    "blind": 5.75,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "its-always-sunny",
+   "label": "The implication",
+   "stored": 9.38,
+   "famous": {
+    "text": "The 'implication' speech — Dennis explains the entire purpose of the boat is to get women in the middle of the ocean where 'they can't refuse — because of the implication'",
+    "stored": 9.38,
+    "named": 9.122,
+    "blind": 8.875,
+    "recognized": false
+   },
+   "deep": {
+    "text": "It was weird that they were Asian, right?",
+    "stored": 9.29,
+    "named": 7.65,
+    "blind": 5.613,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "30-rock",
+   "label": "Sabor de Soledad",
+   "stored": 9.27,
+   "famous": {
+    "text": "The Sabor de Soledad revelation: Mexican cheese curls get their 'special tangy flavor from evaporated bull semen' and were causing false positives on pregnancy tests",
+    "stored": 9.27,
+    "named": 8.262,
+    "blind": 7.25,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Tracy: 'This workplace has become a hotbed of old-school racism.' / Pete: 'Come on, Trey, no one here is racist.' / Tracy: 'Oh, yeah? How come I'm always forced to play ridicarus characters that don't",
+    "stored": 9.2,
+    "named": 8.413,
+    "blind": 7.763,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "arrested-development",
+   "label": "Steve Holt!",
+   "stored": 9.53,
+   "famous": {
+    "text": "Gob declares 'I'm your father, Steve Holt!' Steve: 'I won't forget this... Dad.' Gob, immediately: 'I will.'",
+    "stored": 9.53,
+    "named": 8.0,
+    "blind": 7.362,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Illusion, Michael. A trick is something a whore does for money.",
+    "stored": 9.48,
+    "named": 8.988,
+    "blind": 8.387,
+    "recognized": true
+   }
+  },
+  {
+   "slug": "futurama",
+   "label": "Good news, everyone!",
+   "stored": 7.75,
+   "famous": {
+    "text": "Good news, everyone. Tomorrow, you'll make a delivery to Ebola Nine, the virus planet.",
+    "stored": 7.75,
+    "named": 6.8,
+    "blind": 7.05,
+    "recognized": false
+   },
+   "deep": {
+    "text": "I heard alcohol makes you stupid. - No, I'm... Doesn't.",
+    "stored": 7.75,
+    "named": 7.9,
+    "blind": 6.025,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "30-rock",
+   "label": "Good God, Lemon",
+   "stored": 9.21,
+   "famous": {
+    "text": "Good God, Lemon — You shot a Black! / No no no no — It's cool; that's his last name.",
+    "stored": 9.21,
+    "named": 8.41,
+    "blind": 8.598,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Cooter's addendum: 'It wasn't even a hamburger. It was a sandwich.'",
+    "stored": 9.18,
+    "named": 6.162,
+    "blind": 5.138,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-office",
+   "label": "I declare bankruptcy!",
+   "stored": 8.88,
+   "famous": {
+    "text": "Michael: 'I declare bankruptcy!' — shouting it into the office",
+    "stored": 8.88,
+    "named": 8.613,
+    "blind": 8.025,
+    "recognized": true
+   },
+   "deep": {
+    "text": "The chimney's in decent shape. Not great. I found some termite damage in a crawl space and some structural flaws in the foundation. So, all in all, it was a pretty fun cocktail party.",
+    "stored": 8.82,
+    "named": 7.575,
+    "blind": 7.412,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "community",
+   "label": "The darkest timeline",
+   "stored": 8.91,
+   "famous": {
+    "text": "Where I come from, his name is Lame Abed. / And you come from...? / The darkest timeline. Call it the Britta of timelines, where everything is the worst.",
+    "stored": 8.91,
+    "named": 8.15,
+    "blind": 6.372,
+    "recognized": false
+   },
+   "deep": {
+    "text": "\"They were making out.\" / \"Abed!\" / \"Why the hell would you say that?\" / \"Why do it in front of me? I'm not a coat rack.\"",
+    "stored": 8.86,
+    "named": 8.095,
+    "blind": 6.838,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-fresh-prince-of-bel-air",
+   "label": "Get out of my house!",
+   "stored": 7.42,
+   "famous": {
+    "text": "It's a symbol for 'get out of my house!'",
+    "stored": 7.42,
+    "named": 5.287,
+    "blind": 5.537,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Don't worry about this, Ash. One day you're gonna be cracking up laughing about this with your therapist.",
+    "stored": 7.48,
+    "named": 5.188,
+    "blind": 4.7,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "its-always-sunny",
+   "label": "Kitten mittens",
+   "stored": 7.89,
+   "famous": {
+    "text": "Charlie enters victorious: 'Guess who just found some investors for Kitten Mittens!' / Dennis: 'People love stupid shit!'",
+    "stored": 7.89,
+    "named": 7.312,
+    "blind": 6.625,
+    "recognized": false
+   },
+   "deep": {
+    "text": "'You're gonna be puking on your dick in no time.' — Charlie's encouraging send-off to the UFC fighters",
+    "stored": 7.98,
+    "named": 8.262,
+    "blind": 7.65,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "parks-and-recreation",
+   "label": "Treat yo self",
+   "stored": 8.5,
+   "famous": {
+    "text": "The 'Treat Yourself' montage: Tom and Donna chanting 'Treat Yourself' at increasingly extravagant items — clothes, fragrances, massages, mimosas, fine leather goods.",
+    "stored": 8.5,
+    "named": 8.088,
+    "blind": 7.162,
+    "recognized": false
+   },
+   "deep": {
+    "text": "I would be lying if I said that I never thought I would be involved in an incident like this. Except I always assumed that I would be the politician and the man would be accused of sleeping with me. A",
+    "stored": 8.43,
+    "named": 7.65,
+    "blind": 6.75,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "flight-of-the-conchords",
+   "label": "The humans are dead",
+   "stored": 8.82,
+   "famous": {
+    "text": "The humans are dead / He's right they are dead / The humans are dead / They look like they're dead / It had to be done / I'll just confirm they're dead / So that we could have fun / Affirmative, I pok",
+    "stored": 8.82,
+    "named": 8.678,
+    "blind": 8.05,
+    "recognized": true
+   },
+   "deep": {
+    "text": "You turn to me and say something sexy like / 'Is that it?!' / I know what you're trying to say, girl / You're trying to say 'Ah, yeah, that's it'",
+    "stored": 8.89,
+    "named": 7.912,
+    "blind": 6.175,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "community",
+   "label": "Troy and Abed in the morning",
+   "stored": 8.02,
+   "famous": {
+    "text": "♪ Troy and Abed in the morning ♪ / And we're back. Look who's here, Jeff Winger. / Jeff, how do you stay so fit? / Uh, diet, exercise, genetics. / Sure, sure.",
+    "stored": 8.02,
+    "named": 6.035,
+    "blind": 5.138,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Abed, standing near Troy, narrates him in a documentary voice: 'Primary function appears to be male bonding... the humanoid is approximately 5'7\"...'",
+    "stored": 8.0,
+    "named": 5.825,
+    "blind": 5.127,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "seinfeld",
+   "label": "Serenity now!",
+   "stored": 9.33,
+   "famous": {
+    "text": "Serenity now! Serenity now!",
+    "stored": 9.33,
+    "named": 9.088,
+    "blind": 8.95,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Is that...? Kramer? [Kramer appears, clearly just having arrived from across the street]",
+    "stored": 9.25,
+    "named": 5.938,
+    "blind": 4.85,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-office",
+   "label": "No, God! No, God, please, no!",
+   "stored": 8.5,
+   "famous": {
+    "text": "Hi, Mi-- / No! God! No, God, please no! No! No! Nooo!",
+    "stored": 8.5,
+    "named": 8.413,
+    "blind": 6.887,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Michael's talking head about the 'safe word' with Jan: 'Foliage. And if one of us says that word, the other one has to stop. Although last time, she pretended she didn't hear me.'",
+    "stored": 8.46,
+    "named": 7.662,
+    "blind": 6.792,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-larry-sanders-show",
+   "label": "No flipping!",
+   "stored": 9.18,
+   "famous": {
+    "text": "Larry's final sign-off: 'You may now flip.' — a callback to 'No flipping' throughout the show",
+    "stored": 9.18,
+    "named": 8.66,
+    "blind": 7.685,
+    "recognized": false
+   },
+   "deep": {
+    "text": "\"I don't mean to question your judgment, but one of my balls is as big as Tate Donovan.\"",
+    "stored": 9.11,
+    "named": 7.887,
+    "blind": 6.525,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "veep",
+   "label": "Jolly green jizzface",
+   "stored": 7.78,
+   "famous": {
+    "text": "What are you laughing about, Jolly Green Jizzface?",
+    "stored": 7.78,
+    "named": 7.022,
+    "blind": 6.55,
+    "recognized": false
+   },
+   "deep": {
+    "text": "To be honest with you, sir, she's not looking real good. / And I'll be honest with you. I don't think you're being honest about being honest.",
+    "stored": 7.79,
+    "named": 7.338,
+    "blind": 5.725,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-simpsons",
+   "label": "Won't somebody please think of the children?",
+   "stored": 7.2,
+   "famous": {
+    "text": "I've never wanted a beer worse in my life.",
+    "stored": 7.2,
+    "named": 6.775,
+    "blind": 5.388,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Good-bye, little dude. He looks so lifelike, man",
+    "stored": 7.12,
+    "named": 3.337,
+    "blind": 3.337,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "chappelles-show",
+   "label": "Tyrone Biggums",
+   "stored": 8.4,
+   "famous": {
+    "text": "Tyrone Biggums fake commercial: 'Red Balls — cocaine in a can' energy drink parody, opening with 'sometimes the endless pursuit of crack leaves me tired and depleted'",
+    "stored": 8.4,
+    "named": 8.838,
+    "blind": 6.25,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Charlie Murphy: 'Charlie Murphy is not mad at Dave Chappelle. 'Cause if it wasn't for Dave Chappelle, you motherfuckers would still be calling me Eddie Murphy's brother.'",
+    "stored": 8.49,
+    "named": 8.83,
+    "blind": 7.693,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "chappelles-show",
+   "label": "Clayton Bigsby",
+   "stored": 9.85,
+   "famous": {
+    "text": "Narrator closes: Bigsby 'accepted the fact that he is a black man. And three days ago, he filed for divorce from his wife.' / 'When we asked why?' / 'Because she's a nigger lover.'",
+    "stored": 9.85,
+    "named": 9.037,
+    "blind": 7.85,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Wayne's prostitute comes back with less money than expected. Wayne, barely controlling himself: 'Is Wayne Brady gonna have to choke a bitch?'",
+    "stored": 9.77,
+    "named": 9.2,
+    "blind": 6.5,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "flight-of-the-conchords",
+   "label": "It's business time",
+   "stored": 9.27,
+   "famous": {
+    "text": "The next thing you know, I'm wearing absolutely nothing / Except for my socks / And you know when I'm down to just my socks / What time it is / It's business time",
+    "stored": 9.27,
+    "named": 8.998,
+    "blind": 7.933,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Song: Jemaine's ex-girlfriends appear AS A CHOIR to sing criticisms of him ('He doesn't cook or clean / he's not good boyfriend material / oo-whee and eats cereal')",
+    "stored": 9.2,
+    "named": 8.113,
+    "blind": 6.375,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "flight-of-the-conchords",
+   "label": "Too many dicks on the dance floor",
+   "stored": 7.63,
+   "famous": {
+    "text": "End-credits reprise of 'Too Many Dicks on the Dance Floor' — the song that opened the episode plays again over the credits",
+    "stored": 7.63,
+    "named": 7.188,
+    "blind": 5.912,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Murray asks if Jemaine misses Bret. Jemaine: 'Not really.' Murray: 'You miss him?' Jemaine: 'A little bit.' Murray: 'I might put that down as a... thing.'",
+    "stored": 7.54,
+    "named": 7.748,
+    "blind": 5.725,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-simpsons",
+   "label": "I, for one, welcome our new insect overlords",
+   "stored": 8.59,
+   "famous": {
+    "text": "I'd like to remind them that as a trusted TV personality... I can be helpful in rounding up others... to toil in their underground sugar caves.",
+    "stored": 8.59,
+    "named": 7.325,
+    "blind": 5.325,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Marge, we had a deal. Your sisters don't come here after 6, and I stop eating your lipstick.",
+    "stored": 8.53,
+    "named": 7.95,
+    "blind": 6.975,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-office",
+   "label": "Bears. Beets. Battlestar Galactica.",
+   "stored": 9.42,
+   "famous": {
+    "text": "'Bears. Beets. Battlestar Galactica.'",
+    "stored": 9.42,
+    "named": 9.113,
+    "blind": 9.387,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Stanley: 'I'll give you a billion Stanley Nickels if you never talk to me again.' / Dwight: 'What's the ratio of Stanley Nickels to Schrute Bucks?' / Stanley: 'The same as the ratio of unicorns to lep",
+    "stored": 9.34,
+    "named": 8.188,
+    "blind": 7.54,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "curb-your-enthusiasm",
+   "label": "Social assassin",
+   "stored": 7.79,
+   "famous": {
+    "text": "You're a social assassin. So you bungled the hit. What do you know about social assassination? Nothing! I'm the one who named you a social assassin!",
+    "stored": 7.79,
+    "named": 7.112,
+    "blind": 6.35,
+    "recognized": false
+   },
+   "deep": {
+    "text": "IT COULD MAKE UP FOR THE FINALE. THAT'S FOR SURE. WHAT DOES THAT MEAN? 'MAKE UP FOR THE FIN'-- THERE'S NOTHING TO MAKE UP FOR.",
+    "stored": 7.75,
+    "named": 6.787,
+    "blind": 5.2,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "arrested-development",
+   "label": "I just blue myself",
+   "stored": 9.27,
+   "famous": {
+    "text": "Tobias, now blue: 'Oh. Pardon the mess. I just blue myself for the first time in five years.'",
+    "stored": 9.27,
+    "named": 8.525,
+    "blind": 7.787,
+    "recognized": false
+   },
+   "deep": {
+    "text": "George Michael's cousin-marriage speech: 'In some states, it's legal to marry your own cousin. California's blocked it twice, but that's only because they tacked it onto an estate law thing that wasn'",
+    "stored": 9.32,
+    "named": 8.96,
+    "blind": 8.157,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "seinfeld",
+   "label": "Hello, Newman",
+   "stored": 9.04,
+   "famous": {
+    "text": "Hello, Jerry. / Hello, Newman. / You know, old friend, sometimes I ponder this silly gulf between us... and I say, why? Are we really so different? / I'm not the one doing the cooking. / Damn you, Sei",
+    "stored": 9.04,
+    "named": 7.73,
+    "blind": 6.575,
+    "recognized": false
+   },
+   "deep": {
+    "text": "'I've driven women to lesbianism before, but never to a mental institution.'",
+    "stored": 9.14,
+    "named": 7.787,
+    "blind": 7.562,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-fresh-prince-of-bel-air",
+   "label": "The Carlton",
+   "stored": 7.38,
+   "famous": {
+    "text": "So this is it. This is how the Carlton Banks story ends. With a whimper. [WHIMPERS]",
+    "stored": 7.38,
+    "named": 6.875,
+    "blind": 5.3,
+    "recognized": false
+   },
+   "deep": {
+    "text": "How should I know? You expect me to keep in touch with a wuss like that?",
+    "stored": 7.38,
+    "named": 7.15,
+    "blind": 5.737,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "30-rock",
+   "label": "Never go with a hippie to a second location",
+   "stored": 8.7,
+   "famous": {
+    "text": "Never go with a hippie to a second location.",
+    "stored": 8.7,
+    "named": 8.275,
+    "blind": 8.275,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Liz's 'one nice thing' about Jenna's wedding: 'Oh, my God! You looked so beautiful.' Then a long pause before 'The lighting was really neat.' Then another pause: 'Ethan and I both thought the programs",
+    "stored": 8.78,
+    "named": 7.498,
+    "blind": 7.555,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "schitts-creek",
+   "label": "Love that journey for me",
+   "stored": 7.71,
+   "famous": {
+    "text": "Um, yes. Love that journey for me.",
+    "stored": 7.71,
+    "named": 7.338,
+    "blind": 5.787,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Jake: 'We're gonna start the massage circle soon. Don't wanna miss it.'",
+    "stored": 7.73,
+    "named": 6.688,
+    "blind": 5.325,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "schitts-creek",
+   "label": "Simply the Best",
+   "stored": 7.58,
+   "famous": {
+    "text": "What is this? Consider this my olive branch. [Patrick has arranged a romantic scene with 'Simply the Best' playing]",
+    "stored": 7.58,
+    "named": 7.388,
+    "blind": 5.938,
+    "recognized": false
+   },
+   "deep": {
+    "text": "But there will be a safe word in case the gaggle of asymmetrical faces gets to be too much.",
+    "stored": 7.53,
+    "named": 7.325,
+    "blind": 6.268,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-office",
+   "label": "Would I rather be feared or loved?",
+   "stored": 8.55,
+   "famous": {
+    "text": "Michael's final talking-head: 'Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me, and I think I proved that today at the dojo.'",
+    "stored": 8.55,
+    "named": 8.625,
+    "blind": 8.125,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Make a right turn. / Wait, wait. No, no, no. It means bear right. / No. It said right. It said take a right. Up there. / No, no, no, look. It means go up to the right, bear right over the bridge and h",
+    "stored": 8.59,
+    "named": 7.363,
+    "blind": 5.75,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "flight-of-the-conchords",
+   "label": "The most beautiful girl in the room",
+   "stored": 9.14,
+   "famous": {
+    "text": "SONG: 'Most Beautiful Girl (In the Room)' — opening verse: 'I can tell that you / Are the most beautiful girl in the... room / In the whole wide room'",
+    "stored": 9.14,
+    "named": 8.75,
+    "blind": 8.27,
+    "recognized": true
+   },
+   "deep": {
+    "text": "SONG: 'Too Many Motherf**kers' — Jemaine raps an explicit hip-hop song about bureaucratic frustration (bank fees) and fruit-stand racism, with bleeped profanity",
+    "stored": 9.09,
+    "named": 9.035,
+    "blind": 7.535,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-simpsons",
+   "label": "Me fail English? That's unpossible",
+   "stored": 9.0,
+   "famous": {
+    "text": "Me fail English? That's 'unpossible.'",
+    "stored": 9.0,
+    "named": 8.588,
+    "blind": 6.725,
+    "recognized": true
+   },
+   "deep": {
+    "text": "All my life, I've been an obese man trapped inside a fat man's body.",
+    "stored": 8.93,
+    "named": 7.312,
+    "blind": 6.737,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "schitts-creek",
+   "label": "Ew, David!",
+   "stored": 6.17,
+   "famous": {
+    "text": "David explains the cheese vendor is very exclusive: 'Everyone's trying to get their greasy hands on her cheese.' Alexis: 'Ew, David.'",
+    "stored": 6.17,
+    "named": 5.463,
+    "blind": 4.78,
+    "recognized": false
+   },
+   "deep": {
+    "text": "David and Stevie's simultaneous grossed-out moment after the confrontation: 'Ugh...' / 'What? Why me?' / 'I just feel really gross.' / 'Why did I get one?'",
+    "stored": 6.13,
+    "named": 5.888,
+    "blind": 4.125,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "friends",
+   "label": "Unagi",
+   "stored": 8.22,
+   "famous": {
+    "text": "Say it! Say we are unagi! / It's not something you are, it's something you have.",
+    "stored": 8.22,
+    "named": 8.623,
+    "blind": 8.408,
+    "recognized": true
+   },
+   "deep": {
+    "text": "But I want you to remember... that I forgave you. I also want you to remember that I let you live here rent-free. And I want you to remember that I gave you... twenty-seven dollars. No strings attache",
+    "stored": 8.12,
+    "named": 6.375,
+    "blind": 6.612,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "arrested-development",
+   "label": "I've made a huge mistake",
+   "stored": 9.43,
+   "famous": {
+    "text": "I've made a huge mistake. [Michael, alone, after realizing Gob is keeping Marta]",
+    "stored": 9.43,
+    "named": 8.338,
+    "blind": 5.537,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Buster: 'Wow! Wow. That's what it feels like to get punched in the face.'",
+    "stored": 9.35,
+    "named": 7.272,
+    "blind": 5.363,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "curb-your-enthusiasm",
+   "label": "Spite store",
+   "stored": 8.25,
+   "famous": {
+    "text": "So you're operating this place just out of spite? Yeah. It's a spite store.",
+    "stored": 8.25,
+    "named": 7.688,
+    "blind": 5.838,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Larry asks 'Was it pissed or Parkinson's?' about Michael's head shake",
+    "stored": 8.16,
+    "named": 8.062,
+    "blind": 3.175,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "seinfeld",
+   "label": "They're real, and they're spectacular",
+   "stored": 9.82,
+   "famous": {
+    "text": "Sidra's exit line: 'And by the way, they're real and they're spectacular.'",
+    "stored": 9.82,
+    "named": 9.225,
+    "blind": 9.325,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Long beat of silence. Then someone says quietly: 'His wife's in a coma.'",
+    "stored": 9.75,
+    "named": 8.655,
+    "blind": 8.25,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "seinfeld",
+   "label": "Not that there's anything wrong with that",
+   "stored": 8.41,
+   "famous": {
+    "text": "Not that there's anything wrong with that.",
+    "stored": 8.41,
+    "named": 9.012,
+    "blind": 8.125,
+    "recognized": true
+   },
+   "deep": {
+    "text": "You're not gonna make a dime without a squeegee.",
+    "stored": 8.33,
+    "named": 6.922,
+    "blind": 5.537,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "futurama",
+   "label": "Bite my shiny metal ass",
+   "stored": 8.07,
+   "famous": {
+    "text": "Whoa. A real-live robot. Or is that some kind of cheesy New Year's costume? Bite my shiny metal ass.",
+    "stored": 8.07,
+    "named": 7.975,
+    "blind": 6.825,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Go. Go now. Before I beg you to stay.",
+    "stored": 8.12,
+    "named": 7.525,
+    "blind": 5.237,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "arrested-development",
+   "label": "No touching!",
+   "stored": 7.84,
+   "famous": {
+    "text": "Prison guard: 'No touching.' — interrupting George Sr. and Buster's emotional moment",
+    "stored": 7.84,
+    "named": 7.713,
+    "blind": 6.588,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Ice tackles a man, declares 'George Bluth, you're coming with me.' The man is George Michael's grandfather (Oscar? or wrong person entirely). 'It's an honest mistake. Also, I think your knee is on my ",
+    "stored": 7.78,
+    "named": 7.912,
+    "blind": 6.775,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "curb-your-enthusiasm",
+   "label": "Pretty, pretty, pretty good",
+   "stored": 8.21,
+   "famous": {
+    "text": "Things have been good. It's a very good... relationship... 10 years. It's pretty good. It's pretty pretty... pretty pretty good",
+    "stored": 8.21,
+    "named": 8.325,
+    "blind": 8.2,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Is he wearin' a pad? Is he, is he a little boy, a little Dutch boy with his finger in his ass, with wooden shoes on, with socks to his knee, little shorts on, little vest, little top hat on, with his ",
+    "stored": 8.16,
+    "named": 8.25,
+    "blind": 7.675,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "arrested-development",
+   "label": "There's always money in the banana stand",
+   "stored": 8.87,
+   "famous": {
+    "text": "George Sr.: 'How much clearer can I say... There's always money in the banana stand?'",
+    "stored": 8.87,
+    "named": 8.98,
+    "blind": 8.525,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Did you see my license plate, 'A-N-U-S-T-A-R-T'? / Did you see my StraightBait movie of the same name?",
+    "stored": 8.9,
+    "named": 7.987,
+    "blind": 8.088,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "30-rock",
+   "label": "Werewolf Bar Mitzvah",
+   "stored": 9.29,
+   "famous": {
+    "text": "Tracy's gold record for 'Werewolf Bar Mitzvah' — an evening with Tracy Jordan, Geffen Records. Partial lyrics: 'boys becoming men, men becoming wolves'",
+    "stored": 9.29,
+    "named": 8.748,
+    "blind": 8.938,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Jack: 'Lemon, this kind of sentimental nonsense didn't work with Jenna. It certainly won't work with a man who didn't cry at \"Field of Dreams\", not even when the bank failed to recoup its investment i",
+    "stored": 9.19,
+    "named": 8.162,
+    "blind": 8.162,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "its-always-sunny",
+   "label": "Rum ham",
+   "stored": 8.85,
+   "famous": {
+    "text": "Frank notices the rum ham is gone. His grief escalates to diving off the raft into the ocean screaming 'Rum ham! I'm sorry, rum ham.'",
+    "stored": 8.85,
+    "named": 8.45,
+    "blind": 8.5,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Charlie's actual Industry Night song: '♪ There is a spider, spider, spider / He's deep in my soul, soul / He just won't let go / He's got a mean bite / Now he's ready to fight ♪'",
+    "stored": 8.79,
+    "named": 8.032,
+    "blind": 6.75,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "seinfeld",
+   "label": "It's not a lie if you believe it",
+   "stored": 8.93,
+   "famous": {
+    "text": "Jerry, just remember: It's not a lie if you believe it.",
+    "stored": 8.93,
+    "named": 8.363,
+    "blind": 5.55,
+    "recognized": true
+   },
+   "deep": {
+    "text": "I can't believe this. What are you saying? You didn't like my act? So that's it? — I can't be with someone if I don't respect what they do. — You're a cashier.",
+    "stored": 8.84,
+    "named": 7.932,
+    "blind": 6.713,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "its-always-sunny",
+   "label": "Can I offer you a nice egg in this trying time?",
+   "stored": 8.68,
+   "famous": {
+    "text": "I think I've been poisoned by my constituents! / Oh, my God! / Can I offer you a nice egg in this trying time?",
+    "stored": 8.68,
+    "named": 8.047,
+    "blind": 6.973,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Frank: 'What's in the jar with the skull and crossbones?' 'Oh, that's mayonnaise. That's a decoy.' 'And the mayo?' 'That's shampoo.' Charlie: 'You're telling me I've been putting shampoo on my sandwic",
+    "stored": 8.69,
+    "named": 7.763,
+    "blind": 6.922,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "the-office",
+   "label": "I'm not superstitious, but I am a little stitious",
+   "stored": 7.94,
+   "famous": {
+    "text": "'I'm not superstitious, but I am a little stitious.'",
+    "stored": 7.94,
+    "named": 9.113,
+    "blind": 9.025,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Dwight's method for arranging a secret meeting: 'Gasp. Are you talking about a secret meeting?'",
+    "stored": 7.94,
+    "named": 7.235,
+    "blind": 6.387,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "schitts-creek",
+   "label": "The crows have eyes",
+   "stored": 8.16,
+   "famous": {
+    "text": "'The Crows Have Eyes III is good fun.' Well, that's hyperbolic. I mean, they already had 'fun' and now they've added 'good.'",
+    "stored": 8.16,
+    "named": 7.67,
+    "blind": 5.875,
+    "recognized": false
+   },
+   "deep": {
+    "text": "'Spit happens.' / Very clever. / For Jocelyn.",
+    "stored": 8.22,
+    "named": 7.2,
+    "blind": 6.175,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "parks-and-recreation",
+   "label": "Never half-ass two things. Whole-ass one thing.",
+   "stored": 9.42,
+   "famous": {
+    "text": "Never half-ass two things. Whole-ass one thing.",
+    "stored": 9.42,
+    "named": 8.613,
+    "blind": 8.408,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Ken Hotate's talking head: 'There are two things I know about white people. They love Matchbox 20, and they are terrified of curses.'",
+    "stored": 9.38,
+    "named": 8.55,
+    "blind": 7.15,
+    "recognized": true
+   }
+  },
+  {
+   "slug": "schitts-creek",
+   "label": "Fold in the cheese",
+   "stored": 9.06,
+   "famous": {
+    "text": "Fold in the cheese / What does that mean? / What does 'fold in the cheese' mean? / You fold it in. / I understand that, but how?",
+    "stored": 9.06,
+    "named": 8.822,
+    "blind": 8.822,
+    "recognized": true
+   },
+   "deep": {
+    "text": "I once found a bag of Roland's ex-girlfriends' bras. / Burned them. / Except for the ones that were my size.",
+    "stored": 8.98,
+    "named": 7.447,
+    "blind": 7.498,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "fleabag",
+   "label": "Kneel",
+   "stored": 8.2,
+   "famous": {
+    "text": "'Kneel.' / 'What?' / 'Kneel.' / (long silence — Fleabag kneels)",
+    "stored": 8.2,
+    "named": 8.95,
+    "blind": 7.312,
+    "recognized": false
+   },
+   "deep": {
+    "text": "Or I'll tell her you were watching gang bangs.",
+    "stored": 8.24,
+    "named": 8.515,
+    "blind": 6.688,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "fleabag",
+   "label": "Hair is everything",
+   "stored": 8.49,
+   "famous": {
+    "text": "'Hair is everything. We wish it wasn't so we could actually think about something else occasionally but it is. It's the difference between a good day and a bad day...'",
+    "stored": 8.49,
+    "named": 8.29,
+    "blind": 6.885,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Fleabag silently admiring the Priest's arms, neck, and general physical appearance while having what should be a serious conversation about death and funerals",
+    "stored": 8.46,
+    "named": 7.938,
+    "blind": 5.388,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "futurama",
+   "label": "Shut up and take my money",
+   "stored": 7.45,
+   "famous": {
+    "text": "Shut up and take my money!",
+    "stored": 7.45,
+    "named": 7.162,
+    "blind": 2.725,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Help me, help me! I'm too lazy to escape!",
+    "stored": 7.54,
+    "named": 6.012,
+    "blind": 3.6,
+    "recognized": false
+   }
+  },
+  {
+   "slug": "futurama",
+   "label": "I don't want to live on this planet anymore",
+   "stored": 6.8,
+   "famous": {
+    "text": "I don't want to live on this planet anymore.",
+    "stored": 6.8,
+    "named": 6.737,
+    "blind": 5.237,
+    "recognized": true
+   },
+   "deep": {
+    "text": "Pretty annoying, huh, Leela? What? Are you talking? Oh, God, I'm deaf!",
+    "stored": 6.74,
+    "named": 5.2,
+    "blind": 4.75,
+    "recognized": false
+   }
+  }
+ ]
+}

@@ -44,7 +44,7 @@ export default function ShowsGrid({ shows }: { shows: ShowScore[] }) {
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7">
         <div>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-2">The Leaderboard</p>
-          <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl text-brand-text-primary leading-tight">
             {filtered.length === shows.length
               ? 'Every show on the index.'
               : `${filtered.length} of ${shows.length} shows.`}

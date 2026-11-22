@@ -5,6 +5,42 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'does-the-index-reward-famous-lines': {
+    title: "Does the Index Reward Famous Lines? We Checked.",
+    description: "The AI that scores every joke has read about these shows. We tested whether it scores a line higher because it's famous. The names don't matter; the lines themselves still do a little better than they should.",
+    date: '2026-11-21',
+    category: 'Analysis',
+    content: `
+The fairest objection to the Humor Index is one we hadn't tested. The model that grades every joke has read about these shows. It knows "No soup for you" is famous. If it scores a line high because it recognizes it, the Index quietly favors the shows everyone already loves, which is the bias the site exists to get away from.
+
+So we tested it, without rescoring any show.
+
+## The test
+
+We took the 99 fan-favorite lines that our [fan favorites panel](/shows/seinfeld#fan-favorites) finds in the data. For each one we picked a deep cut: a joke from the same show, in a different episode, that the production run scored the same (within a tenth of a point), and that isn't on anyone's list of famous lines.
+
+Then we scored every one of those 198 jokes again, on its own, with the same rubric and calibration text the production scorer uses, twice:
+
+- **Named:** the show and the character names included.
+- **Blind:** no show, and every character name replaced with a letter.
+
+We also asked the model, separately, whether it recognized each line as a famous one.
+
+## What we found
+
+**The names don't prop up famous lines.** Taking the names away cost every joke about a point, because "Character A" is a worse setup than "George." But it cost famous lines and deep cuts the same: the difference was **-0.01 points, give or take 0.24**.
+
+**Judged alone, famous lines do a little better than they should.** In production, each pair scored the same. Scored on their own and blind, the famous lines came out **0.61 points higher** (give or take 0.30). The model recognized 34% of the famous lines as famous and 4% of the deep cuts. The lines it recognized beat their deep cuts by 0.89; the ones it didn't still beat theirs by 0.47. Those two numbers have overlapping intervals, so we can't say how much of the gap is recognition and how much is that famous lines are, in fact, well built.
+
+## What it means for the scores
+
+The production scores were the ones that came out equal, and that's where the Index lives. In an episode, each joke is scored against the rest of the episode, and in that setting the famous lines didn't get a visible bump. The gap shows up when a line is judged in isolation, which is how a fame effect would look if it exists: small, and partly explained by the lines being good.
+
+One thing we changed because of this: our pages described Impact as including "cultural footprint." The scorer never asks for that. It asks how big a laugh a room of 100 comedy-savvy viewers would give. We fixed the description, and the [methodology](/methodology) now says plainly that the scoring instructions reserve 9s and 10s for lines that became touchstones, which is an invitation to reward fame.
+
+Every pair, both scores and the recognition answer are in [/data/fame-test.json](/data/fame-test.json). If you find a pair that looks wrong, tell us.
+`,
+  },
   'index-is-wrong-about-festivus': {
     title: "The Index Is Wrong About Festivus",
     description: "Our fan-favorites panel said \"A Festivus for the rest of us\" ranked 7,671st of 13,316 Seinfeld jokes. The line was never scored at all. The Festivus jokes around it rank near the top.",

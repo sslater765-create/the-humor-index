@@ -2,7 +2,7 @@ import { pageMeta, breadcrumbJsonLd } from '@/lib/seo';
 import SignInForm from '@/components/auth/SignInForm';
 
 export const metadata = pageMeta({
-  title: 'Sign in — The Humor Index',
+  title: 'Sign in',
   description:
     'Sign in to save your taste profile, ratings, and blind-test streak across devices. No passwords — magic link or Google.',
   path: '/signin',

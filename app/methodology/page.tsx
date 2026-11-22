@@ -11,7 +11,7 @@ export const metadata = {
     canonical: `${SITE_URL}/methodology/`,
   },
   openGraph: {
-    title: 'Methodology — The Humor Index',
+    title: 'Methodology',
     description: 'How we calculate the Humor Index: JPM, Craft, Impact, and why there is no format adjustment.',
     images: ['/og-image.png'],
   },
@@ -60,7 +60,7 @@ export default async function MethodologyPage() {
         {/* Model card */}
         <section id="model-card">
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Model card</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">What scores the jokes</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">What scores the jokes</h2>
           <div className="divide-y divide-brand-border border border-brand-border rounded-xl overflow-hidden text-sm">
             {[
               ['Model', "Anthropic's Claude Sonnet 4.6 (since June 15, 2026; Claude Sonnet 4 before that)."],
@@ -82,7 +82,7 @@ export default async function MethodologyPage() {
 
         <section id="peak">
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Peak and career</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Best 22 and the tiers</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">Best 22 and the tiers</h2>
           <div className="space-y-3 text-sm text-brand-text-secondary leading-relaxed">
             <p>
               The Humor Index is a career number: every scored episode counts. Best 22 is the peak: the average of a show’s 22 best episodes, about one
@@ -98,7 +98,7 @@ export default async function MethodologyPage() {
 
         <section id="running-gags">
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Running gags</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Scoring the bits a show keeps coming back to</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">Scoring the bits a show keeps coming back to</h2>
           <div className="space-y-3 text-sm text-brand-text-secondary leading-relaxed">
             <p>
               The scorer reads one episode at a time, so it can’t credit a gag for building across a series. A separate pass finds those gags:
@@ -117,7 +117,7 @@ export default async function MethodologyPage() {
         {/* The three pillars */}
         <section>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">The Formula</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Three Pillars</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">Three Pillars</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-8">
             The Humor Index is a weighted composite of three independently scored dimensions.
             Each episode is analyzed at the joke level, then aggregated to season and show level.
@@ -149,11 +149,12 @@ export default async function MethodologyPage() {
                 weight: '35%',
                 label: 'Impact Score',
                 color: '#1D9E75',
-                desc: `Resonance and staying power. Quotability (does this line get repeated?),
-                       rewatch value (is it funnier the second time?), cultural footprint,
-                       and callback payoff. Impact captures what pure craft analysis misses —
-                       a technically average joke that becomes a catchphrase scores higher here.
-                       A small memorability bonus is added on top for episodes packed with iconic moments.`,
+                desc: `How hard the joke lands: the model rates the reaction a room of 100 comedy-savvy
+                       viewers would give it, from silence to the room erupting. Quotability (would people
+                       repeat it?) and a rewatch flag (is it funnier the second time?) are scored alongside, and
+                       a small memorability bonus is added for episodes packed with them. The scoring
+                       instructions reserve 9s and 10s for lines that became touchstones, which invites the model
+                       to reward fame; we tested that (see Known limitations).`,
               },
             ].map(p => (
               <div key={p.abbr} className="bg-brand-card border border-brand-border rounded-xl p-6">
@@ -175,7 +176,7 @@ export default async function MethodologyPage() {
         {/* Craft rubric */}
         <section>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Craft Breakdown</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">The Craft Rubric</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">The Craft Rubric</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-6">
             Craft is scored 1–10 on five sub-dimensions, assessed per joke and then averaged across the
             episode. They are weighted, not equal: originality and structure 25% each, character
@@ -221,7 +222,7 @@ export default async function MethodologyPage() {
         {/* Format adjustment */}
         <section>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Format Adjustment</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">The Laugh Track Correction</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">The Laugh Track Correction</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-6">
             Multi-camera shows with sweetened laugh tracks structurally inflate joke density —
             the laugh track signals joke boundaries that a single-camera show leaves implicit.
@@ -260,7 +261,7 @@ export default async function MethodologyPage() {
         {/* Format policy */}
         <section>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Policy</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Why We Don&apos;t Adjust for Format</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">Why We Don&apos;t Adjust for Format</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             An earlier version of the Humor Index silently penalized multi-cam shows (live audience, laugh track)
             by 15–25%, on the premise that audience reaction inflated perceived impact. That adjustment had three
@@ -311,7 +312,7 @@ export default async function MethodologyPage() {
         {/* Scorer noise floor (Level 2 findings) */}
         <section>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Reliability</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Our Scorer&apos;s Noise Floor</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">Our Scorer&apos;s Noise Floor</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             We ran a test-retest study: 30 episodes were scored twice, both in blind mode, with different random seeds.
             Results:
@@ -361,7 +362,7 @@ export default async function MethodologyPage() {
         {/* Show-identity bias */}
         <section>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Bias</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Show-Identity Bias: Small and Not Significant</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">Show-Identity Bias: Small and Not Significant</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             We scored 99 episodes in blind mode (no show name, no character list, no description fed to the LLM) and
             compared to their non-blind production scores. Paired differences:
@@ -384,7 +385,7 @@ export default async function MethodologyPage() {
         {/* Bayesian credible intervals */}
         <section>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Bayesian Model</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">What a Hierarchical Model Actually Finds</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">What a Hierarchical Model Actually Finds</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             We fit a hierarchical Bayesian model to 15,000 jokes (5,000 per scored show) predicting joke-level impact from show, format, joke type, episode, and character. Here&apos;s what came out.
           </p>
@@ -432,7 +433,7 @@ export default async function MethodologyPage() {
         {/* Confidence intervals & percentiles */}
         <section>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Uncertainty</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Confidence Intervals &amp; Percentiles</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">Confidence Intervals &amp; Percentiles</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             Every score on the site is a point estimate with real uncertainty. We now publish:
           </p>
@@ -463,7 +464,7 @@ export default async function MethodologyPage() {
         {/* Comedy WAR methodology */}
         <section>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Career Value</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Comedy WAR (Wins Above Replacement)</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">Comedy WAR (Wins Above Replacement)</h2>
           <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
             Career WAR ranks characters by total comedic contribution relative to a
             &quot;replacement-level&quot; bench player. Higher WAR means more jokes at higher average
@@ -500,7 +501,7 @@ export default async function MethodologyPage() {
         {/* Limitations */}
         <section id="movies">
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Movies</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">How We Score Movies</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">How We Score Movies</h2>
           <div className="space-y-4 text-brand-text-secondary leading-relaxed">
             <p>
               A movie is split into reels of about 22 minutes, cut at natural scene breaks, and each reel is scored exactly like a
@@ -521,7 +522,7 @@ export default async function MethodologyPage() {
 
         <section>
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Honesty</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Known Limitations</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">Known Limitations</h2>
           <div className="space-y-3">
             {[
               {
@@ -542,7 +543,15 @@ export default async function MethodologyPage() {
               },
               {
                 title: 'Cultural context decays',
-                desc: 'Jokes referencing specific 90s or 00s cultural moments may score lower on "cultural footprint" than they should, since the model\'s resonance signals are present-weighted.',
+                desc: 'Jokes referencing specific 90s or 00s cultural moments may land lower with the model than they did with their audience, since its sense of what a room would laugh at is present-weighted.',
+              },
+              {
+                title: 'Does it reward famous lines?',
+                desc: 'The model has read about these shows, so it might score a line high because it is famous. We tested it on 99 pairs: a famous line and a deep cut from the same show that production scored the same, each rescored alone with and without the show and character names. Removing the names cost famous lines and deep cuts the same (difference −0.01 points, ±0.24), so names aren\'t propping up famous lines. Scored alone, famous lines beat their equal-scored deep cuts by 0.61 (±0.30), a bit more for the third the model recognized as famous (+0.89) than for the rest (+0.47); the intervals overlap. Read it as: no sign the production scores inflate famous lines, and a possible small fame effect when a line is judged in isolation. Data: /data/fame-test.json.',
+              },
+              {
+                title: 'The rubric has a taste',
+                desc: 'Earned versus cheap is a judgment, not a measurement: gross-out, shock and broad slapstick that are cheap on purpose lose points for doing what they meant to. Character integration favors ensemble sitcoms over sketch shows, where characters last one scene. Economy favors one-liners over slow builds. And jokes are scored against the rest of their own episode, which squeezes an episode where everything works. These are choices we made; they favor some kinds of comedy over others.',
               },
               {
                 title: 'JPM uses estimated runtime',
@@ -580,18 +589,18 @@ export default async function MethodologyPage() {
                 { '@type': 'Question', name: 'What is jokes per minute (JPM)?', acceptedAnswer: { '@type': 'Answer', text: 'Jokes per minute (JPM) is the number of distinct, separately identifiable jokes a show lands per minute of runtime. The Humor Index counts gradeable jokes — not every comedic line or laugh-track beat — so the figure is lower than informal counts but consistent across every show.' } },
                 { '@type': 'Question', name: 'What is the Humor Index?', acceptedAnswer: { '@type': 'Answer', text: 'The Humor Index is a 0–100 score combining four signals: peak joke density, craft (writing quality), impact (audience resonance), and weighted jokes per minute. Every joke in an episode is scored by AI, then aggregated to episode, season, and show level.' } },
                 { '@type': 'Question', name: 'What is comedy WAR (Wins Above Replacement)?', acceptedAnswer: { '@type': 'Answer', text: 'WAR adapts baseball’s Wins Above Replacement to comedy: a character’s joke count multiplied by how much their shrunk average quality exceeds a replacement-level baseline (the 25th-percentile bench character). It rewards both volume and quality, so high-output stars rank above one-line scene-stealers.' } },
-                { '@type': 'Question', name: 'What do craft and impact mean?', acceptedAnswer: { '@type': 'Answer', text: 'Craft is the writing quality of a joke across five sub-dimensions (originality, structure, character integration, economy, earned-vs-cheap). Impact is audience resonance — quotability, rewatch value, cultural footprint, and callback payoff. Both are scored 1–10 per joke.' } },
+                { '@type': 'Question', name: 'What do craft and impact mean?', acceptedAnswer: { '@type': 'Answer', text: 'Craft is the writing quality of a joke across five sub-dimensions (originality, structure, character integration, economy, earned-vs-cheap). Impact is how hard the joke would land with a room of 100 comedy-savvy viewers; quotability and rewatch value are scored alongside. Both are scored 1 to 10 per joke.' } },
               ],
             }) }}
           />
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Glossary</p>
-          <h2 className="font-serif italic text-3xl text-brand-text-primary mb-4 leading-tight">Key Terms, Defined</h2>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">Key Terms, Defined</h2>
           <div className="space-y-3">
             {[
               { term: 'Jokes Per Minute (JPM)', def: 'The number of distinct, gradeable jokes per minute of runtime. We count separable jokes a viewer could point to — not every comedic line — so JPM is comparable across every show.' },
               { term: 'Humor Index', def: 'A 0–100 composite of peak joke density, craft, impact, and weighted JPM. Every joke is scored, then rolled up to episode, season, and show level.' },
               { term: 'Craft', def: 'The writing quality of a joke, scored 1–10 across originality, structure, character integration, economy, and earned-vs-cheap.' },
-              { term: 'Impact', def: 'Audience resonance of a joke (1–10): quotability, rewatch value, cultural footprint, and callback payoff.' },
+              { term: 'Impact', def: 'How hard a joke lands (1 to 10): the reaction a room of 100 comedy-savvy viewers would give it. Quotability and rewatch value are scored alongside.' },
               { term: 'WAR (Wins Above Replacement)', def: 'A character’s joke count × how far their shrunk average quality exceeds a replacement-level baseline. Rewards both volume and per-joke quality.' },
               { term: 'Replacement level', def: 'The quality of a 25th-percentile "bench" character. WAR measures value above this floor, so merely showing up doesn’t accrue value.' },
             ].map((g) => (

@@ -115,7 +115,7 @@ export default function GagBracket({ gags }: { gags: BracketGag[] }) {
         return (
           <section key={r}>
             <div className="mb-3 flex flex-wrap items-baseline gap-x-3">
-              <h2 className="font-serif italic text-2xl text-brand-text-primary">{ROUND_NAMES[r]}</h2>
+              <h2 className="font-serif text-2xl text-brand-text-primary">{ROUND_NAMES[r]}</h2>
               <span className={`text-xs ${r === open ? 'text-brand-gold' : 'text-brand-text-muted'}`}>{status(r)}</span>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">

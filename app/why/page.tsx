@@ -8,14 +8,14 @@ import { allRunningGags } from '@/lib/runningGags';
 export const dynamic = 'force-static';
 
 export const metadata = {
-  title: 'The Box Score for Comedy — Why The Humor Index Exists',
+  title: 'The Box Score for Comedy: Why The Humor Index Exists',
   description:
     'Every argument about which comedy is funnier runs on taste, nostalgia and fan votes. Baseball settled its arguments by counting. The Humor Index counts every joke and grades each one on the same rubric.',
   alternates: { canonical: `${SITE_URL}/why/` },
 };
 
 function H({ children }: { children: React.ReactNode }) {
-  return <h2 className="font-serif italic text-2xl sm:text-3xl text-brand-text-primary mt-14 mb-4">{children}</h2>;
+  return <h2 className="font-serif text-2xl sm:text-3xl text-brand-text-primary mt-14 mb-4">{children}</h2>;
 }
 function P({ children }: { children: React.ReactNode }) {
   return <p className="text-brand-text-secondary leading-relaxed mb-4">{children}</p>;

@@ -92,7 +92,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
           <span className="text-sm text-brand-text-secondary font-medium">
-            THE HUMOR INDEX — comedy analytics, not corporate sponsorship
+            THE HUMOR INDEX: comedy analytics, not corporate sponsorship
           </span>
           <span className="text-xs text-brand-text-muted">
             Episode ratings courtesy of <a href="https://www.imdb.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-text-secondary transition-colors underline">IMDb</a>

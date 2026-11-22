@@ -9,7 +9,7 @@ export const metadata = {
     canonical: `${SITE_URL}/faq/`,
   },
   openGraph: {
-    title: 'FAQ — The Humor Index',
+    title: 'FAQ',
     description: 'Frequently asked questions about The Humor Index: how it works, what AI we use, and why your favorite show scored the way it did.',
     images: ['/og-image.png'],
   },
@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: 'What does "Impact" measure?',
-    a: `Impact estimates the audience reaction to each joke — how hard it lands. It factors in quotability (will people repeat this line?), rewatch bonus (is it funnier the second time?), and cultural footprint. Impact is no longer adjusted by show format (see the laugh-track question above).`,
+    a: `Impact estimates how hard each joke lands. The model rates the reaction a room of 100 comedy-savvy viewers would give; quotability (will people repeat this line?) and a rewatch flag (is it funnier the second time?) are scored alongside it. Impact is no longer adjusted by show format (see the laugh-track question above).`,
   },
   {
     q: 'Why do some shows show 0.0 scores?',

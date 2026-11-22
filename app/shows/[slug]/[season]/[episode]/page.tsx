@@ -87,13 +87,13 @@ export async function generateMetadata({
       ? `"${topJoke.text.slice(0, 110)}${topJoke.text.length > 110 ? '…' : ''}" The best quotes from ${showName} ${epLabel}, all ${detail.total_jokes} jokes ranked. Humor Index ${scoreNum}.`
       : `The best quotes from ${showName} "${detail.title}" ${epLabel}, all ${detail.total_jokes} jokes ranked by craft and impact. Humor Index ${scoreNum} (${tier.label}).`,
     openGraph: {
-      title: `${showName} "${detail.title}" — ${tier.label} (${formatIndex(detail.humor_index)})`,
+      title: `${showName} "${detail.title}": ${tier.label} (${formatIndex(detail.humor_index)})`,
       description: `${detail.total_jokes} jokes scored. Craft ${detail.avg_craft.toFixed(1)} · Impact ${detail.avg_impact.toFixed(1)} · JPM ${detail.jpm}.`,
       images: [`/api/og/episode?${ogParams.toString()}`],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${showName} "${detail.title}" — ${tier.label}`,
+      title: `${showName} "${detail.title}": ${tier.label}`,
       description: `Humor Index ${formatIndex(detail.humor_index)}. ${detail.total_jokes} jokes scored.`,
       images: [`/api/og/episode?${ogParams.toString()}`],
     },
@@ -341,7 +341,7 @@ export default async function EpisodePage({
             episodeLabel={`S${seasonNum}E${String(episodeNum).padStart(2, '0')}`}
           />
           <SocialShare
-            title={`${show.name} "${detail.title}" — Humor Index: ${formatIndex(detail.humor_index)}`}
+            title={`${show.name} "${detail.title}": Humor Index: ${formatIndex(detail.humor_index)}`}
             text={`"${detail.title}" scored ${formatIndex(detail.humor_index)} on The Humor Index. ${detail.total_jokes} jokes analyzed.`}
             url={`/shows/${params.slug}/${params.season}/${params.episode}`}
           />

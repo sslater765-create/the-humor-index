@@ -8,7 +8,7 @@ import { SITE_URL } from '@/lib/site';
 export const dynamic = 'force-static';
 
 export const metadata = {
-  title: 'Compare Sitcom Characters Head-to-Head — The Humor Index',
+  title: 'Compare Sitcom Characters Head-to-Head',
   description:
     "Pick any two sitcom characters and see how they stack up on jokes, craft, impact, WAR, and per-episode output. Michael Scott vs. George Costanza vs. Chandler Bing — settled by data.",
   alternates: {

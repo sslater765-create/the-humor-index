@@ -6,13 +6,13 @@ import { getMovies, movieAsShow, getMovieDna } from '@/lib/movies';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata = {
-  title: 'Compare Shows and Movies: Which Is Funnier? | The Humor Index',
+  title: 'Compare Shows and Movies: Which Is Funnier?',
   description: 'Head-to-head comparisons of sitcoms and comedy movies: Humor Index, jokes per minute, craft, impact and comedy DNA.',
   alternates: {
     canonical: `${SITE_URL}/compare/`,
   },
   openGraph: {
-    title: 'Compare Shows and Movies | The Humor Index',
+    title: 'Compare Shows and Movies',
     description: 'Head-to-head comparisons of sitcoms and comedy movies.',
     images: ['/og-image.png'],
   },
@@ -69,7 +69,7 @@ export default async function ComparePage() {
         {/* Static matchup grid for SEO + direct navigation */}
         <section className="mt-20 pt-12 border-t border-brand-border">
           <p className="text-xs uppercase tracking-[0.25em] text-brand-text-muted mb-3">The Tale of the Tape</p>
-          <h2 className="font-serif italic text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-4 max-w-3xl">
+          <h2 className="font-serif text-3xl sm:text-4xl text-brand-text-primary leading-tight mb-4 max-w-3xl">
             Every head-to-head on the index.
           </h2>
           <p className="text-base text-brand-text-secondary mb-8 max-w-2xl leading-relaxed">

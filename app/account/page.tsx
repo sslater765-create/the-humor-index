@@ -2,7 +2,7 @@ import { pageMeta } from '@/lib/seo';
 import AccountSettings from '@/components/auth/AccountSettings';
 
 export const metadata = pageMeta({
-  title: 'Account — The Humor Index',
+  title: 'Account',
   description: 'Manage your Humor Index account.',
   path: '/account',
 });

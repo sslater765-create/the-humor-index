@@ -43,7 +43,7 @@ export default function FanFavoritesPanel({ slug, name }: { slug: string; name: 
   if (rows.length === 0) return null;
   const missing = rows.filter((r) => !r.found).length;
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+    <section id="fan-favorites" className="scroll-mt-20 max-w-6xl mx-auto px-4 sm:px-6 py-10">
       <h2 className="text-xl sm:text-2xl font-semibold text-brand-text-primary">Fan favorites vs the Index</h2>
       <p className="text-sm text-brand-text-secondary mt-1 mb-4">
         The {name} lines people quote, and where the scorer ranked them among all {rows[0].of.toLocaleString()} jokes.

@@ -25,7 +25,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { archetype: string } }): Promise<Metadata> {
   const a = archetypeBySlug(params.archetype);
   if (!a) return { title: 'Comedy Archetype' };
-  const title = `${a.name} — Comedy Archetype`;
+  const title = `${a.name}: Comedy Archetype`;
   const desc = `${a.name}: ${a.tag} ${a.blurb} Find out if it's your comedy type.`;
   const og = '/api/og?title=' + encodeURIComponent(a.name) + '&subtitle=' + encodeURIComponent(a.tag);
   return {

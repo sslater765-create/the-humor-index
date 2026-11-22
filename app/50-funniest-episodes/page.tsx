@@ -89,7 +89,7 @@ export default async function FunniestEpisodesPage() {
     itemListElement: top.map((r, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      name: `${r.show} — ${r.title} (S${r.season}E${r.episode})`,
+      name: `${r.show}: ${r.title} (S${r.season}E${r.episode})`,
       url: `${SITE_URL}/shows/${r.slug}/${r.season}/${r.episode}`,
     })),
   };

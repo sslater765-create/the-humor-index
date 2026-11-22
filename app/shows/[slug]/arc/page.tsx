@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const show = await getShow(params.slug);
   if (!show) return {};
   return {
-    title: `${show.name} Seasons Ranked — Which Is the Best Season?`,
+    title: `${show.name} Seasons Ranked: Which Is the Best Season?`,
     description: `Which is the best season of ${show.name}? We ranked all ${show.total_seasons} seasons by Humor Index and tracked exactly when the show peaked and declined. See the season-by-season data.`,
     alternates: {
       canonical: `${SITE_URL}/shows/${params.slug}/arc/`,

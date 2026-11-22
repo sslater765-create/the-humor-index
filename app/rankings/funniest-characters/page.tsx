@@ -105,7 +105,7 @@ export default async function FunniestCharactersPage() {
                 .map((c, i) => ({
                   '@type': 'ListItem',
                   position: i + 1,
-                  name: `${c.name} — ${c.showName}`,
+                  name: `${c.name}: ${c.showName}`,
                   url: `${SITE_URL}${characterHref(c.showSlug, c.name)}`,
                 })),
             }),

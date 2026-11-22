@@ -3,13 +3,13 @@ import { SITE_URL } from '@/lib/site';
 import { getAllShows } from '@/lib/data';
 
 export const metadata = {
-  title: 'Request a Show — Vote for the Next Analysis',
+  title: 'Request a Show: Vote for the Next Analysis',
   description: 'Vote for which sitcom The Humor Index should analyze next. The most-requested shows get scored first.',
   alternates: {
     canonical: `${SITE_URL}/request/`,
   },
   openGraph: {
-    title: 'Request a Show — Vote for the Next Analysis',
+    title: 'Request a Show: Vote for the Next Analysis',
     description: 'Vote for which sitcom The Humor Index should analyze next. The most-requested shows get scored first.',
     images: ['/og-image.png'],
   },
@@ -30,7 +30,7 @@ export default async function RequestPage() {
             What should we analyze next?
           </h1>
           <p className="text-base sm:text-lg text-brand-text-secondary max-w-2xl leading-relaxed">
-            Every show on the index started as a vote. Cast yours below — the most-requested sitcoms get scored first.
+            Cast your vote below: the most-requested sitcoms get scored first.
             One show takes <span className="text-brand-text-primary">several hours</span> of analysis, three AI passes,
             thousands of jokes. Choose wisely.
           </p>
