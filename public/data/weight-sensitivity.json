@@ -1,0 +1,302 @@
+{
+ "schemes": {
+  "current": "Current formula",
+  "craft": "Craft-heavy",
+  "impact": "Impact-heavy",
+  "density": "Density-heavy",
+  "equal": "Equal weights",
+  "no_density": "Quality only (no density)",
+  "no_memorable": "No memorability bonus"
+ },
+ "weights": {
+  "current": {
+   "label": "Current formula",
+   "peak": 0.15,
+   "craft": 0.4,
+   "impact": 0.35,
+   "jpm": 0.1,
+   "mem": 1
+  },
+  "craft": {
+   "label": "Craft-heavy",
+   "peak": 0.1,
+   "craft": 0.55,
+   "impact": 0.3,
+   "jpm": 0.05,
+   "mem": 1
+  },
+  "impact": {
+   "label": "Impact-heavy",
+   "peak": 0.1,
+   "craft": 0.3,
+   "impact": 0.55,
+   "jpm": 0.05,
+   "mem": 1
+  },
+  "density": {
+   "label": "Density-heavy",
+   "peak": 0.25,
+   "craft": 0.3,
+   "impact": 0.25,
+   "jpm": 0.2,
+   "mem": 1
+  },
+  "equal": {
+   "label": "Equal weights",
+   "peak": 0.25,
+   "craft": 0.25,
+   "impact": 0.25,
+   "jpm": 0.25,
+   "mem": 1
+  },
+  "no_density": {
+   "label": "Quality only (no density)",
+   "peak": 0,
+   "craft": 0.53,
+   "impact": 0.47,
+   "jpm": 0,
+   "mem": 1
+  },
+  "no_memorable": {
+   "label": "No memorability bonus",
+   "peak": 0.15,
+   "craft": 0.4,
+   "impact": 0.35,
+   "jpm": 0.1,
+   "mem": 0
+  }
+ },
+ "shows": {
+  "30-rock": {
+   "name": "30 Rock",
+   "site": 97.5,
+   "current": 97.5,
+   "craft": 98.1,
+   "impact": 98.1,
+   "density": 95.8,
+   "equal": 94.9,
+   "no_density": 98.3,
+   "no_memorable": 91.6
+  },
+  "fleabag": {
+   "name": "Fleabag",
+   "site": 95.6,
+   "current": 95.6,
+   "craft": 97.0,
+   "impact": 96.9,
+   "density": 92.9,
+   "equal": 91.6,
+   "no_density": 98.2,
+   "no_memorable": 89.8
+  },
+  "veep": {
+   "name": "Veep",
+   "site": 95.1,
+   "current": 95.1,
+   "craft": 96.6,
+   "impact": 96.8,
+   "density": 91.9,
+   "equal": 90.2,
+   "no_density": 98.1,
+   "no_memorable": 89.2
+  },
+  "arrested-development": {
+   "name": "Arrested Development",
+   "site": 94.9,
+   "current": 94.9,
+   "craft": 96.5,
+   "impact": 96.2,
+   "density": 92.0,
+   "equal": 90.8,
+   "no_density": 97.9,
+   "no_memorable": 89.1
+  },
+  "chappelles-show": {
+   "name": "Chappelle's Show",
+   "site": 94.5,
+   "current": 94.5,
+   "craft": 95.9,
+   "impact": 96.9,
+   "density": 91.2,
+   "equal": 90.0,
+   "no_density": 98.1,
+   "no_memorable": 88.9
+  },
+  "seinfeld": {
+   "name": "Seinfeld",
+   "site": 94.4,
+   "current": 94.4,
+   "craft": 95.1,
+   "impact": 95.2,
+   "density": 92.9,
+   "equal": 92.5,
+   "no_density": 96.8,
+   "no_memorable": 88.8
+  },
+  "flight-of-the-conchords": {
+   "name": "Flight of the Conchords",
+   "site": 92.0,
+   "current": 92.0,
+   "craft": 94.2,
+   "impact": 94.2,
+   "density": 87.6,
+   "equal": 85.6,
+   "no_density": 96.6,
+   "no_memorable": 86.5
+  },
+  "parks-and-recreation": {
+   "name": "Parks and Recreation",
+   "site": 91.9,
+   "current": 91.9,
+   "craft": 93.6,
+   "impact": 93.5,
+   "density": 88.2,
+   "equal": 87.0,
+   "no_density": 95.9,
+   "no_memorable": 86.1
+  },
+  "schitts-creek": {
+   "name": "Schitt's Creek",
+   "site": 87.6,
+   "current": 87.6,
+   "craft": 89.9,
+   "impact": 89.6,
+   "density": 83.2,
+   "equal": 82.1,
+   "no_density": 93.1,
+   "no_memorable": 82.1
+  },
+  "broad-city": {
+   "name": "Broad City",
+   "site": 86.9,
+   "current": 86.9,
+   "craft": 88.9,
+   "impact": 88.9,
+   "density": 82.9,
+   "equal": 82.2,
+   "no_density": 92.1,
+   "no_memorable": 81.4
+  },
+  "the-larry-sanders-show": {
+   "name": "The Larry Sanders Show",
+   "site": 86.8,
+   "current": 86.8,
+   "craft": 89.5,
+   "impact": 89.4,
+   "density": 81.2,
+   "equal": 79.6,
+   "no_density": 93.4,
+   "no_memorable": 81.1
+  },
+  "the-office": {
+   "name": "The Office",
+   "site": 88.0,
+   "current": 88.0,
+   "craft": 90.2,
+   "impact": 90.2,
+   "density": 83.8,
+   "equal": 82.6,
+   "no_density": 93.6,
+   "no_memorable": 82.4
+  },
+  "curb-your-enthusiasm": {
+   "name": "Curb Your Enthusiasm",
+   "site": 81.5,
+   "current": 81.5,
+   "craft": 86.0,
+   "impact": 86.1,
+   "density": 72.6,
+   "equal": 69.6,
+   "no_density": 91.8,
+   "no_memorable": 76.1
+  },
+  "freaks-and-geeks": {
+   "name": "Freaks and Geeks",
+   "site": 80.0,
+   "current": 80.0,
+   "craft": 84.1,
+   "impact": 84.0,
+   "density": 71.9,
+   "equal": 69.6,
+   "no_density": 90.0,
+   "no_memorable": 74.6
+  },
+  "its-always-sunny": {
+   "name": "It's Always Sunny in Philadelphia",
+   "site": 87.5,
+   "current": 87.5,
+   "craft": 90.0,
+   "impact": 90.4,
+   "density": 82.0,
+   "equal": 80.2,
+   "no_density": 93.8,
+   "no_memorable": 82.0
+  },
+  "the-simpsons": {
+   "name": "The Simpsons",
+   "site": 79.0,
+   "current": 79.0,
+   "craft": 82.5,
+   "impact": 81.9,
+   "density": 72.6,
+   "equal": 71.6,
+   "no_density": 87.9,
+   "no_memorable": 73.6
+  },
+  "community": {
+   "name": "Community",
+   "site": 91.9,
+   "current": 91.9,
+   "craft": 93.0,
+   "impact": 92.9,
+   "density": 89.6,
+   "equal": 89.0,
+   "no_density": 94.8,
+   "no_memorable": 86.2
+  },
+  "futurama": {
+   "name": "Futurama",
+   "site": 77.8,
+   "current": 77.8,
+   "craft": 80.9,
+   "impact": 80.2,
+   "density": 71.9,
+   "equal": 71.5,
+   "no_density": 86.2,
+   "no_memorable": 72.6
+  },
+  "taxi": {
+   "name": "Taxi",
+   "site": 77.4,
+   "current": 77.4,
+   "craft": 81.9,
+   "impact": 81.4,
+   "density": 68.5,
+   "equal": 66.2,
+   "no_density": 88.4,
+   "no_memorable": 72.1
+  },
+  "the-fresh-prince-of-bel-air": {
+   "name": "The Fresh Prince of Bel-Air",
+   "site": 76.0,
+   "current": 76.0,
+   "craft": 79.9,
+   "impact": 79.9,
+   "density": 68.2,
+   "equal": 66.9,
+   "no_density": 86.4,
+   "no_memorable": 70.9
+  },
+  "friends": {
+   "name": "Friends",
+   "site": 87.1,
+   "current": 87.1,
+   "craft": 88.6,
+   "impact": 89.0,
+   "density": 83.9,
+   "equal": 83.6,
+   "no_density": 91.8,
+   "no_memorable": 81.8
+  }
+ }
+}

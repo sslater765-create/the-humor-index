@@ -8,6 +8,20 @@ const DONE_KEY = 'humor_index_study_done';
 const RATER_KEY = 'humor_index_study_rater';
 const MIN_PER_JOKE = 3;
 const MIN_JOKES = 50;
+const PANEL_TARGET = 40;
+
+// Panel mode: /study?panel=<id>&PROLIFIC_PID=<pid> (or &pid=). Ratings go to
+// the panel's own tally, the live results stay hidden so they can't anchor a
+// paid rater, and the completion code appears after PANEL_TARGET ratings.
+function readPanel(): { panel: string; pid: string } | null {
+  try {
+    const q = new URLSearchParams(window.location.search);
+    const panel = q.get('panel') || '';
+    const pid = q.get('PROLIFIC_PID') || q.get('pid') || '';
+    if (/^[a-z0-9-]{2,24}$/.test(panel) && /^[A-Za-z0-9_-]{6,64}$/.test(pid)) return { panel, pid };
+  } catch { /* no window */ }
+  return null;
+}
 
 function pearson(xs: number[], ys: number[]): number | null {
   const n = xs.length;
@@ -36,8 +50,18 @@ export default function StudyGame({ jokes }: { jokes: StudyJoke[] }) {
   const [rater, setRater] = useState('');
   const [last, setLast] = useState<{ joke: StudyJoke; rating: number } | null>(null);
   const [results, setResults] = useState<{ jokes: Record<string, [number, number]>; raters: number } | null>(null);
+  const [panel, setPanel] = useState<{ panel: string; pid: string } | null>(null);
+  const [code, setCode] = useState<string | null>(null);
+  const [panelCount, setPanelCount] = useState(0);
 
   useEffect(() => {
+    const pm = readPanel();
+    if (pm) {
+      setPanel(pm);
+      const url = `/api/study?panel=${encodeURIComponent(pm.panel)}&pid=${encodeURIComponent(pm.pid)}`;
+      fetch(url).then((x) => x.json()).then((res) => { setResults(res); setPanelCount(res?.count ?? 0); if (res?.code) setCode(res.code); pick([], res?.jokes); }).catch(() => pick([]));
+      return;
+    }
     let d: number[] = [];
     try { d = JSON.parse(localStorage.getItem(DONE_KEY) || '[]'); } catch { /* none */ }
     let r = '';
@@ -70,8 +94,20 @@ export default function StudyGame({ jokes }: { jokes: StudyJoke[] }) {
     const next = done.concat(current.id);
     setLast({ joke: current, rating: n });
     setDone(next);
-    try { localStorage.setItem(DONE_KEY, JSON.stringify(next)); } catch { /* ignore */ }
-    void fetch('/api/study', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: current.id, rating: n, rater }) });
+    if (panel) {
+      const body = JSON.stringify({ id: current.id, rating: n, panel: panel.panel, pid: panel.pid });
+      const c = panelCount + 1;
+      setPanelCount(c);
+      void fetch('/api/study', { method: 'POST', headers: { 'content-type': 'application/json' }, body }).then(() => {
+        if (c >= PANEL_TARGET && !code) {
+          fetch(`/api/study?panel=${encodeURIComponent(panel.panel)}&pid=${encodeURIComponent(panel.pid)}`)
+            .then((x) => x.json()).then((res) => { if (res?.code) setCode(res.code); setPanelCount(res?.count ?? c); }).catch(() => {});
+        }
+      });
+    } else {
+      try { localStorage.setItem(DONE_KEY, JSON.stringify(next)); } catch { /* ignore */ }
+      void fetch('/api/study', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: current.id, rating: n, rater }) });
+    }
     // Count this rating locally so the next pick moves on from it.
     const id = String(current.id);
     const prev = results?.jokes?.[id] ?? [0, 0];
@@ -104,6 +140,24 @@ export default function StudyGame({ jokes }: { jokes: StudyJoke[] }) {
 
   return (
     <div>
+      {panel && (
+        <div className="mb-5 rounded-xl border border-brand-gold/40 bg-brand-card p-4 text-sm text-brand-text-secondary">
+          {code ? (
+            <p>
+              Done, thank you. Your completion code is <span className="font-mono text-brand-gold text-base">{code}</span>.{' '}
+              <a href={`https://app.prolific.com/submissions/complete?cc=${encodeURIComponent(code)}`} className="text-brand-gold hover:underline">Return to Prolific →</a>
+              {' '}You can keep rating if you like; it isn’t required.
+            </p>
+          ) : (
+            <>
+              <div className="mb-2 h-2 w-full overflow-hidden rounded-full bg-brand-border/60" role="progressbar" aria-valuemin={0} aria-valuemax={PANEL_TARGET} aria-valuenow={Math.min(panelCount, PANEL_TARGET)}>
+                <div className="h-2 rounded-full bg-brand-gold" style={{ width: `${(100 * Math.min(panelCount, PANEL_TARGET)) / PANEL_TARGET}%` }} />
+              </div>
+              <p>{Math.min(panelCount, PANEL_TARGET)} of {PANEL_TARGET} rated. Rate each line by your own sense of humor; there are no right answers. Your completion code appears at {PANEL_TARGET}.</p>
+            </>
+          )}
+        </div>
+      )}
       {current ? (
         <div className="rounded-2xl border border-brand-border bg-brand-card p-5 sm:p-6">
           <p className="text-xs text-brand-text-muted">Joke {done.length + 1} · show and character revealed after you rate</p>
@@ -137,9 +191,9 @@ export default function StudyGame({ jokes }: { jokes: StudyJoke[] }) {
           Last one (you gave it {last.rating}): <span className="text-brand-text-secondary">{last.joke.who}</span>, {last.joke.show} S{last.joke.se}E{last.joke.ep}{last.joke.et ? ` “${last.joke.et}”` : ''}.
         </p>
       )}
-      <p className="mt-2 text-sm text-brand-text-muted">You’ve rated {done.length} of {jokes.length}.</p>
+      {!panel && <p className="mt-2 text-sm text-brand-text-muted">You’ve rated {done.length} of {jokes.length}.</p>}
 
-      <section className="mt-12 rounded-xl border border-brand-border bg-brand-card p-5 text-sm text-brand-text-secondary leading-relaxed">
+      {!panel && <section className="mt-12 rounded-xl border border-brand-border bg-brand-card p-5 text-sm text-brand-text-secondary leading-relaxed">
         <p className="text-brand-text-primary font-medium mb-2">Results so far</p>
         {!summary ? (
           <p>Loading…</p>
@@ -164,7 +218,7 @@ export default function StudyGame({ jokes }: { jokes: StudyJoke[] }) {
         <p className="mt-2 text-xs text-brand-text-muted">
           Live numbers, not yet a finished study. The method and the final result will be on the <Link href="/methodology/#model-card" className="text-brand-gold hover:underline">methodology page</Link>.
         </p>
-      </section>
+      </section>}
     </div>
   );
 }

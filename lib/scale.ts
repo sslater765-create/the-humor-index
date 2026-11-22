@@ -57,3 +57,16 @@ export function estimateText(legacyScore: number): string {
   const e = estimateCurrent(legacyScore);
   return `${e.low.toFixed(1)} to ${e.high.toFixed(1)}`;
 }
+
+/**
+ * Earlier-model shows as adjusted estimates for the leaderboard: the published
+ * score plus the mean gain of the three rescored shows (a model "house
+ * effect"), with the range of those gains. Not ranked and not tiered: three
+ * rescores can't pin a show's gain down well enough to rank it.
+ */
+export function adjustedEstimates<T extends { slug: string; humor_index: number }>(shows: T[]): Array<T & { adjusted: { from: number; low: number; high: number } }> {
+  return awaitingRescore(shows).map(s => {
+    const e = estimateCurrent(s.humor_index);
+    return { ...s, humor_index: Math.round(e.mid * 10) / 10, adjusted: { from: s.humor_index, low: Math.round(e.low * 10) / 10, high: Math.round(e.high * 10) / 10 } };
+  });
+}

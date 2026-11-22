@@ -64,7 +64,9 @@ function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: n
       className="group grid grid-cols-[2.25rem_1fr_auto] sm:grid-cols-[2.75rem_minmax(0,1fr)_7rem_repeat(4,4.5rem)] items-center gap-x-3 sm:gap-x-4 py-3.5 sm:py-3 border-b border-brand-border/50 hover:bg-brand-surface transition-colors"
     >
       <div>
-        {pending ? (
+        {show.adjusted ? (
+          <span className="font-mono text-sm text-brand-text-muted pl-2" title="Adjusted estimate, not ranked">≈</span>
+        ) : pending ? (
           <span className="font-mono text-xs text-brand-text-muted pl-2">{'–'}</span>
         ) : (
           <RankBadge rank={rank} />
@@ -123,6 +125,11 @@ function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: n
           </span>
         )}
         {!pending && sortKey === 'humor_index' && <Whisker show={show} lo={lo} hi={hi} />}
+        {show.adjusted && (
+          <span className="mt-1 block font-mono text-[11px] text-brand-text-muted" title={`Scored ${formatIndex(show.adjusted.from)} on the earlier model; shows moved to the current model gained 8 to 14 points.`}>
+            adjusted · {show.adjusted.low.toFixed(1)}–{show.adjusted.high.toFixed(1)}
+          </span>
+        )}
       </div>
       {COLS.map(c => (
         <div
@@ -136,7 +143,7 @@ function Row({ show, rank, sortKey, lo = 0, hi = 0 }: { show: ShowScore; rank: n
   );
 }
 
-export default function LeaderboardClient({ shows: tvShows, movies = [], pending: tvPending = [], quickPool = [] }: { shows: ShowScore[]; movies?: ShowScore[]; pending?: ShowScore[]; quickPool?: QuizJoke[] }) {
+export default function LeaderboardClient({ shows: tvShows, movies = [], pending: tvPending = [], adjusted = [], quickPool = [] }: { shows: ShowScore[]; movies?: ShowScore[]; pending?: ShowScore[]; adjusted?: ShowScore[]; quickPool?: QuizJoke[] }) {
   const [sortKey, setSortKey] = useState<SortKey>('humor_index');
   // TV and movies are separate boards on separate scales: the switch flips
   // between them, it never mixes them into one list.
@@ -245,19 +252,26 @@ export default function LeaderboardClient({ shows: tvShows, movies = [], pending
           // ties from chaining all the way down the board.
           const { tierOf, sizes: tierSize } = sortKey === 'humor_index' ? boardTiers(sorted) : { tierOf: new Map<string, number>(), sizes: [] as number[] };
           let lastTier = 0;
-          return sorted.map((show, i) => {
+          // Earlier-model shows sit at their adjusted estimate on the TV Index view:
+          // greyed, "≈" for a rank, outside the tiers and the numbered ranks.
+          const display = sortKey === 'humor_index' && !isMovies && adjusted.length
+            ? [...sorted, ...adjusted].sort((a, b) => b.humor_index - a.humor_index)
+            : sorted;
+          return display.map((show, i) => {
+          if (show.adjusted) return <Row key={show.slug} show={show} rank={null} sortKey={sortKey} lo={scaleLo} hi={scaleHi} />;
           // Shared rank for equal displayed values: Parks and Community at
           // 91.9 are both 8th, not 8th and 9th by accident of sort order.
           const key: MetricKey = sortKey === 'match' || sortKey === 'peak_22' ? 'humor_index' : sortKey;
           const shown = (s: ShowScore) => Math.round((sortKey === 'peak_22' ? (s.peak_22 ?? s.humor_index) : s[key]) * 10);
           const rank = sortKey === 'match' && personal ? i + 1 : 1 + sorted.filter(o => shown(o) > shown(show)).length;
+          void i;
           const t = tierOf.get(show.slug) ?? 0;
           const header = t > 0 && t !== lastTier;
           if (t > 0) lastTier = t;
           return (
             <Fragment key={show.slug}>
               {header && (
-                <div className={`flex items-baseline gap-2 pb-1 ${i > 0 ? 'pt-5' : 'pt-1'}`}>
+                <div className={`flex items-baseline gap-2 pb-1 ${display.indexOf(show) > 0 ? 'pt-5' : 'pt-1'}`}>
                   <span className="font-mono text-[11px] uppercase tracking-widest text-brand-gold">{tierName(t)}</span>
                   <span className="text-[11px] text-brand-text-muted">
                     {tierSize[t - 1] > 1 ? `${tierSize[t - 1]} ${isMovies ? 'films' : 'shows'}, statistically tied` : 'alone'}
@@ -307,7 +321,14 @@ export default function LeaderboardClient({ shows: tvShows, movies = [], pending
         </p>
       )}
 
-      {sortedPending.length > 0 && (
+      {sortKey === 'humor_index' && !isMovies && adjusted.length > 0 && (
+        <p className="mt-2 text-xs text-brand-text-muted leading-relaxed">
+          Rows marked ≈ ({adjusted.map(s => s.name.replace(/^The /, '')).join(', ')}) were scored on our earlier model. Their number is the old score plus the average gain of the three shows we moved to the current model (8 to 14 points), with that range shown underneath. They sit where the estimate puts them but take no rank and no tier.{' '}
+          <Link href="/methodology#house-effect" className="text-brand-gold hover:underline">The adjustment →</Link>
+        </p>
+      )}
+
+      {sortedPending.length > 0 && !(sortKey === 'humor_index' && adjusted.length > 0) && (
         // Folded by default: six unranked rows used to take a full screen of the homepage.
         <details className="group mt-8 border-t border-brand-border pt-4">
           <summary className="list-none cursor-pointer select-none flex flex-wrap items-baseline justify-between gap-2">

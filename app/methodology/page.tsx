@@ -101,6 +101,60 @@ export default async function MethodologyPage() {
           </div>
         </section>
 
+        <section id="point-worth">
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">The scale</p>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">What a point is worth</h2>
+          <div className="space-y-3 text-sm text-brand-text-secondary leading-relaxed">
+            <p>
+              Each joke is graded on a 0 to 10 rubric. An episode’s raw score blends those grades with joke density, and the display scale
+              maps a raw 6.5 (an average comedy episode) to 75, with 10 Index points for every 0.8 raw points. So one Index point is
+              0.08 on the rubric: the jokes in an episode, on average, grading a twelfth of a point better.
+            </p>
+            <p>
+              Read the board with that in mind. The 17.5 points between 30 Rock and Freaks and Geeks are about 1.4 rubric points per joke,
+              a large gap. A two-point gap between neighbors is about a sixth of a rubric point, inside most shows’ 95% intervals, which
+              is why neighbors usually share a tier. Above 98 the scale bends toward 100 without reaching it, so episode scores near the
+              top are compressed; no show score is that high.
+            </p>
+          </div>
+        </section>
+
+        <section id="weights">
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Robustness</p>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">How much do the weights matter?</h2>
+          <div className="space-y-3 text-sm text-brand-text-secondary leading-relaxed">
+            <p>
+              The formula’s weights (craft 40%, impact 35%, peak density 15%, jokes per minute 10%, plus a memorability bonus) are a
+              choice. We recomputed every show under six other choices: craft-heavy, impact-heavy, density-heavy, equal weights,
+              quality only with no density, and no memorability bonus.
+            </p>
+            <p>
+              30 Rock is first under all seven. The top six stay the top six, though their order moves (Seinfeld runs from second
+              under equal weights to sixth). Friends moves the most, from 10th to 15th of 16: it gains when density counts more and
+              loses when it counts less. Freaks and Geeks is last under every scheme. The weights move shows within a few places; they
+              don’t decide who is good. 
+              <Link href="/blog/how-much-do-the-weights-matter" className="text-brand-gold hover:underline">The full table →</Link>
+            </p>
+          </div>
+        </section>
+
+        <section id="house-effect">
+          <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Model changes</p>
+          <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">The earlier-model adjustment</h2>
+          <div className="space-y-3 text-sm text-brand-text-secondary leading-relaxed">
+            <p>
+              Five shows (Curb Your Enthusiasm, The Simpsons, Futurama, Taxi and The Fresh Prince of Bel-Air) were scored on our earlier
+              model. Moving a show to the current model has raised its score every time: Friends by 13.9, Sunny by 8.3, Community by 14.0.
+              Like a pollster’s house effect, that is a property of the instrument, not of the shows.
+            </p>
+            <p>
+              On the leaderboard these five appear at their published score plus the average gain (12.1 points), marked ≈, with the
+              range from the smallest to the largest gain underneath. They sit where that estimate puts them but take no rank and join no
+              tier: three rescores are too few to know a given show’s gain, and the range is 5.7 points wide.
+            </p>
+          </div>
+        </section>
+
         <section id="running-gags">
           <p className="text-[11px] uppercase tracking-[0.25em] text-brand-gold mb-3">Running gags</p>
           <h2 className="font-serif text-3xl text-brand-text-primary mb-4 leading-tight">Scoring the bits a show keeps coming back to</h2>

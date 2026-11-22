@@ -134,6 +134,9 @@ export default function Footer() {
           <Link href="/data" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Data
           </Link>
+          <Link href="/insider" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
+            Insider
+          </Link>
           <Link href="/request" className="text-xs text-brand-text-muted hover:text-brand-text-secondary transition-colors">
             Request
           </Link>

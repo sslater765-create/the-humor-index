@@ -34,6 +34,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: url('/rankings/best-seasons'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.6 },
     { url: url('/rankings/most-rewatchable'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.6 },
     { url: url('/study'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.5 },
+    { url: url('/insider'), lastModified: SITE_REFRESHED, changeFrequency: 'monthly', priority: 0.4 },
     { url: url('/people'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.7 },
     { url: url('/changelog'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.5 },
     { url: url('/rankings/best-jokes'), lastModified: SITE_REFRESHED, changeFrequency: 'weekly', priority: 0.8 },

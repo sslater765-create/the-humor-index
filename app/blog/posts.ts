@@ -5,6 +5,91 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'how-much-do-the-weights-matter': {
+    title: "How Much Do the Weights Matter?",
+    description: "The Humor Index formula weights craft, impact and density. We reran the board under six other weightings. 30 Rock is first in every one; Friends moves the most.",
+    date: '2026-11-22',
+    category: 'Analysis',
+    content: `
+Every ranking with a formula invites the same question: change the weights and does the answer change? Ours weights craft at 40%, impact at 35%, peak density at 15% and jokes per minute at 10%, and adds a bonus for memorable lines. Those numbers are a judgment call, so we tested how much the board depends on them.
+
+## The test
+
+We kept every joke score as it is and recomputed every episode, season and show under six other weightings:
+
+- **Craft-heavy:** craft 55%, impact 30%, density 10%, pace 5%.
+- **Impact-heavy:** impact 55%, craft 30%, density 10%, pace 5%.
+- **Density-heavy:** density 25%, craft 30%, impact 25%, pace 20%.
+- **Equal:** 25% each.
+- **No density:** craft and impact only, in their current ratio.
+- **No bonus:** the current weights without the memorability bonus.
+
+The season and show steps (consistency, best season against mean season) stay the same. Under the current weights the recomputation reproduces the published board exactly.
+
+## The ranks
+
+| Show | Index | Current | Craft-heavy | Impact-heavy | Density-heavy | Equal | No density | No bonus | Range |
+|---|---|---|---|---|---|---|---|---|---|
+| 30 Rock | 97.5 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| Fleabag | 95.6 | 2 | 2 | 2 | 2 | 3 | 2 | 2 | 2–3 |
+| Veep | 95.1 | 3 | 3 | 4 | 5 | 5 | 3 | 3 | 3–5 |
+| Arrested Development | 94.9 | 4 | 4 | 5 | 4 | 4 | 5 | 4 | 4–5 |
+| Chappelle's Show | 94.5 | 5 | 5 | 3 | 6 | 6 | 4 | 5 | 3–6 |
+| Seinfeld | 94.4 | 6 | 6 | 6 | 3 | 2 | 6 | 6 | 2–6 |
+| Flight of the Conchords | 92.0 | 7 | 7 | 7 | 9 | 9 | 7 | 7 | 7–9 |
+| Parks and Recreation | 91.9 | 8 | 8 | 8 | 8 | 8 | 8 | 9 | 8–9 |
+| Community | 91.9 | 9 | 9 | 9 | 7 | 7 | 9 | 8 | 7–9 |
+| The Office | 88.0 | 10 | 10 | 11 | 11 | 11 | 11 | 10 | 10–11 |
+| Schitt's Creek | 87.6 | 11 | 12 | 12 | 12 | 13 | 13 | 11 | 11–13 |
+| It's Always Sunny in Philadelphia | 87.5 | 12 | 11 | 10 | 14 | 14 | 10 | 12 | 10–14 |
+| Friends | 87.1 | 13 | 15 | 14 | 10 | 10 | 15 | 13 | 10–15 |
+| Broad City | 86.9 | 14 | 14 | 15 | 13 | 12 | 14 | 14 | 12–15 |
+| The Larry Sanders Show | 86.8 | 15 | 13 | 13 | 15 | 15 | 12 | 15 | 12–15 |
+| Freaks and Geeks | 80.0 | 16 | 16 | 16 | 16 | 16 | 16 | 16 | 16 |
+
+## What moves and what doesn't
+
+**30 Rock is first under every scheme.** Its lead doesn't depend on how you weigh craft against density.
+
+**The top six are the top six.** Fleabag, Veep, Arrested Development, Chappelle's Show and Seinfeld trade places, and Seinfeld moves the most among them: second under equal weights, sixth under most others. Seinfeld is a density show; it gains whenever pace counts more.
+
+**Friends is the swing show.** It runs from 10th to 15th. Friends packs a lot of jokes into an episode and the jokes are, by the rubric, plainer; weigh density up and it climbs past The Office, weigh it out and it falls behind Broad City and Larry Sanders.
+
+**Freaks and Geeks is last under every scheme**, which is what you would expect from a show that is a comedy-drama.
+
+The weights move a show a few places. They don't decide which shows are good, and they don't decide the tiers at the top. That's the answer we hoped for and not one we could have assumed. The full numbers, including each show's score under each scheme, are on the [data page](/data).
+`,
+  },
+  'monty-python-check': {
+    title: "Is Monty Python Only #1 Because It's Monty Python?",
+    description: "Holy Grail tops the movie board with room to spare. We rescored its best jokes with the title and names hidden. The names aren't the reason.",
+    date: '2026-11-22',
+    category: 'Analysis',
+    content: `
+Monty Python and the Holy Grail sits alone at the top of the movie board, in a tier of its own. It is also one of the most quoted comedies ever made, which is exactly the case where an AI scorer might be grading the reputation and not the jokes. So we checked.
+
+## The test
+
+We drew 40 Holy Grail jokes at random and 40 control jokes: 10 each from Zoolander, The Big Lebowski, This Is Spinal Tap and Office Space, the films closest to it on the board. Every joke was scored again on its own, twice, with the production rubric:
+
+- **Named:** the film's title and the characters' names included.
+- **Blind:** no title, the context given only as "a comedy film," and every character name replaced with a letter.
+
+If the model were rewarding the film's fame, hiding the title and the names should hurt the Holy Grail more than the controls.
+
+## What we found
+
+Hiding the names cost both sets about the same. The Holy Grail jokes fell 1.17 points (from 8.11 to 6.95); the controls fell 1.22 (from 7.41 to 6.19). The difference is -0.06 points, give or take 0.43: no sign that the title or the names prop up the Holy Grail.
+
+Blind, the Holy Grail jokes still beat the controls by 0.76 points.
+
+## What it doesn't rule out
+
+Hiding a name doesn't hide a line. "'Tis but a scratch" is recognizable without the word Arthur, and the model has read about this film. The test shows the label isn't doing the work; it can't show the model has forgotten the words. Our [famous-lines test](/blog/does-the-index-reward-famous-lines) found that lines the model recognizes do score a little higher on their own, and part of that is that they are well built.
+
+So the honest summary is this: the Holy Grail leads because its jokes grade higher, with or without its name on them. Whether some of that is the model having met these jokes before, we can't fully separate. The per-joke results are on the [data page](/data).
+`,
+  },
   'does-the-index-reward-famous-lines': {
     title: "Does the Index Reward Famous Lines? We Checked.",
     description: "The AI that scores every joke has read about these shows. We tested whether it scores a line higher because it's famous. The names don't matter; the lines themselves still do a little better than they should.",

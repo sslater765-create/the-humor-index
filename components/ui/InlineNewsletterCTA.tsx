@@ -15,7 +15,7 @@ export default function InlineNewsletterCTA({ heading = 'Get weekly comedy ranki
       const resp = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, source }),
       });
       if (resp.ok) {
         setSubscribed(true);

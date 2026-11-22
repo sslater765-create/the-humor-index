@@ -25,6 +25,8 @@ const FILES = [
   { path: '/data/running-gags.json', name: 'running-gags.json', desc: 'Every running gag per show with its stat line: GP, J, Avg, Hit%, LAR, trend, first appearance and best hit.' },
   { path: '/data/signature-lines.json', name: 'signature-lines.json', desc: 'Fan-favorite lines per show and where the scorer ranked each one, including the ones it missed.' },
   { path: '/data/fame-test.json', name: 'fame-test.json', desc: 'The fame test: 99 famous lines and equal-scored deep cuts, each rescored alone with and without show and character names.' },
+  { path: '/data/weight-sensitivity.json', name: 'weight-sensitivity.json', desc: 'Every show recomputed under seven weightings of the formula (current, craft-heavy, impact-heavy, density-heavy, equal, no density, no bonus).' },
+  { path: '/data/mp-fame-check.json', name: 'mp-fame-check.json', desc: 'The Holy Grail check: 40 Holy Grail jokes and 40 controls, each rescored with and without the title and character names.' },
   { path: '/data/reliability-3run.json', name: 'reliability-3run.json', desc: 'Run-to-run reliability of the scorer from the stored three runs per episode: ICC by show and pooled.' },
 ];
 

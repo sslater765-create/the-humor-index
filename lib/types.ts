@@ -45,6 +45,8 @@ export interface ShowScore {
   peak_22?: number;
   /** Episodes with a score, for marking short runs. */
   scored_episodes?: number;
+  /** Earlier-model show shown at an adjusted estimate: its published score and the likely range on the current model. */
+  adjusted?: { from: number; low: number; high: number };
   best_season: number;
   avg_jpm: number;
   avg_craft: number;

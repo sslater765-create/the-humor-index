@@ -11,7 +11,7 @@ import HeroLoop from '@/components/HeroLoop';
 import MovieSpotlight from '@/components/movies/MovieSpotlight';
 import { getMovies, getMovieBoard } from '@/lib/movies';
 import { SITE_URL } from '@/lib/site';
-import { rankable, awaitingRescore } from '@/lib/scale';
+import { rankable, awaitingRescore, adjustedEstimates } from '@/lib/scale';
 
 export const dynamic = 'force-static';
 
@@ -137,7 +137,7 @@ export default async function HomePage() {
                 Full rankings →
               </Link>
             </div>
-            <LeaderboardClient shows={await withIntervals(rankable(shows))} movies={await getMovieBoard()} pending={awaitingRescore(shows)} quickPool={quickPool} />
+            <LeaderboardClient shows={await withIntervals(rankable(shows))} movies={await getMovieBoard()} pending={awaitingRescore(shows)} adjusted={adjustedEstimates(shows)} quickPool={quickPool} />
             <div className="mt-6 pt-5 border-t border-brand-border flex flex-wrap items-center gap-x-6 gap-y-2">
               <Link href="/shows" className="text-xs uppercase tracking-widest text-brand-gold hover:underline">
                 Browse all {analyzedShows.length} shows →

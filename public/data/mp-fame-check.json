@@ -1,0 +1,584 @@
+{
+ "grail": {
+  "n": 40,
+  "named": 8.111,
+  "blind": 6.947,
+  "stored": 8.174,
+  "drop": 1.165,
+  "drop_se": 0.157
+ },
+ "control": {
+  "n": 40,
+  "named": 7.413,
+  "blind": 6.189,
+  "stored": 7.431,
+  "drop": 1.224,
+  "drop_se": 0.152
+ },
+ "extra_drop": -0.059,
+ "extra_drop_ci95": 0.428,
+ "grail_jokes": [
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "Fair one, behold your servant, Sir Lancelot of Camelot. I have come to take.... I'm terribly sorry. / You got my note! / I got a note.",
+   "stored": 8.22,
+   "named": 8.5,
+   "blind": 7.69
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'Ni,' 'Peng,' and 'Neee Wom'!",
+   "stored": 8.25,
+   "named": 8.65,
+   "blind": 6.5
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'Burn her anyway!' \u2014 immediately following 'I got better.'",
+   "stored": 8.4,
+   "named": 9.33,
+   "blind": 8.825
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "Excuse me, could somebody give me a push, please?",
+   "stored": 8.34,
+   "named": 6.912,
+   "blind": 4.662
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'Anarcho-syndicalism is a way of preserving freedom. Dennis, forget about freedom. Don't drop that mud.'",
+   "stored": 6.97,
+   "named": 8.837,
+   "blind": 6.562
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "A path! A path!",
+   "stored": 8.53,
+   "named": 7.6,
+   "blind": 6.213
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "And I feel sure that the merger.... The union between the Princess and the brave but dangerous Sir Lancelot of Camelot--",
+   "stored": 7.91,
+   "named": 7.225,
+   "blind": 4.9
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'Oh, yes! An African swallow, maybe. Not a European swallow. That's my point.'",
+   "stored": 7.61,
+   "named": 7.75,
+   "blind": 7.5
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'I can't take him like that. It's against regulations.' / 'I don't want to go on the cart.'",
+   "stored": 8.09,
+   "named": 8.5,
+   "blind": 7.775
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "\"And, if you think you got a nasty taunting this time, you ain't heard nothing yet, dirty English knights!\"",
+   "stored": 7.55,
+   "named": 6.713,
+   "blind": 5.675
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "The Three-Headed Knight argues with itself about whether to kill Robin \u2014 'I have to kill you.' 'Shall I?' 'I don't think so.' 'What do I think?' 'Kill him.' 'Le",
+   "stored": 7.81,
+   "named": 7.25,
+   "blind": 5.6
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "The counting instruction: 'Three shalt be the number thou shalt count, and the number of the counting shalt be three. Four shalt thou not count, neither count t",
+   "stored": 9.37,
+   "named": 9.175,
+   "blind": 8.473
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "Guard launches into an elaborate ornithological lecture about swallow migration patterns as a possible explanation for how a coconut reached Mercia.",
+   "stored": 8.32,
+   "named": 8.922,
+   "blind": 8.188
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'Tis but a scratch.' \u2014 after Arthur cuts off the Black Knight's arm.",
+   "stored": 9.1,
+   "named": 9.435,
+   "blind": 9.08
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "The 'doctors' are introduced \u2014 'They have a basic medical training.' / 'Come, come, you must try to rest. Dr. Piglet! Dr. Winston! Practice your art.'",
+   "stored": 7.38,
+   "named": 5.375,
+   "blind": 4.725
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'Oh, anyway, on to Scene 24, which is a smashing scene, with some lovely acting, in which Arthur discovers a vital clue. There aren't any swallows, but I think ",
+   "stored": 7.28,
+   "named": 7.248,
+   "blind": 5.713
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "Knights of the Round Table collectively and painfully stumbling over themselves trying to explain they're looking for the Holy Grail",
+   "stored": 7.01,
+   "named": 6.748,
+   "blind": 5.688
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'Get on with it!' \u2014 a third-party voice cuts off the narrator's swallow digression",
+   "stored": 7.27,
+   "named": 8.1,
+   "blind": 7.425
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'Yes, a bit. She has got a wart.'",
+   "stored": 7.58,
+   "named": 8.21,
+   "blind": 6.575
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "Old crone! Is there anywhere in this town where we could buy a shrubbery?",
+   "stored": 7.72,
+   "named": 8.578,
+   "blind": 7.412
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "Cut to: 'Run away!' \u2014 the plan has presumably failed again before we even see it",
+   "stored": 7.78,
+   "named": 8.515,
+   "blind": 8.337
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'On second thoughts, let's not go to Camelot. It is a silly place.'",
+   "stored": 8.52,
+   "named": 8.725,
+   "blind": 8.73
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'He's buggered off!' / 'So he has! He's scarpered.' \u2014 Robin has escaped while the Knight was arguing",
+   "stored": 8.55,
+   "named": 6.95,
+   "blind": 5.35
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "You're not going into a song while I'm here!",
+   "stored": 8.21,
+   "named": 8.125,
+   "blind": 5.0
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'So, logically... If she... weighs the same as a duck... she's made of wood. And, therefore... A witch!'",
+   "stored": 9.22,
+   "named": 9.038,
+   "blind": 8.322
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "No, it is far from this place. / Stop saying the word! / The word we cannot hear! / Stop it! / He said 'it' again! / That's it! / I've said 'it.' I've said 'it.",
+   "stored": 8.72,
+   "named": 7.982,
+   "blind": 6.425
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "In the frozen land of Nador... they were forced to eat Robin's minstrels. / And there was much rejoicing.",
+   "stored": 8.49,
+   "named": 8.575,
+   "blind": 8.5
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "One, two, five! \u2014 Three, sir! \u2014 Three!",
+   "stored": 9.57,
+   "named": 8.575,
+   "blind": 8.162
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "One day, lad, all this will be yours. / What, the curtains?",
+   "stored": 8.27,
+   "named": 8.63,
+   "blind": 8.225
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'Oh, shit!'",
+   "stored": 7.73,
+   "named": 7.675,
+   "blind": 3.025
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'Explain again how sheep's bladders may be employed to prevent earthquakes'",
+   "stored": 7.95,
+   "named": 7.763,
+   "blind": 6.088
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'Is there someone else up there we could talk to?' / 'No. Now go away, or I shall taunt you a second time.'",
+   "stored": 8.79,
+   "named": 8.913,
+   "blind": 8.525
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'If I went around saying I was an emperor because some moistened bint had lobbed a scimitar at me, they'd put me away!'",
+   "stored": 9.46,
+   "named": 9.012,
+   "blind": 8.998
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "'You're lucky you're not next to him.' 'What do you mean?' 'You snore.' 'I don't.' 'You've got bad breath.' 'Only because you don't brush my teeth.'",
+   "stored": 8.77,
+   "named": 7.938,
+   "blind": 6.897
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "\"Go on, Bors, chop its head off. Right. Silly little bleeder. One rabbit stew coming right up.\"",
+   "stored": 8.07,
+   "named": 9.025,
+   "blind": 7.812
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "\"He must have died while carving it.\" / \"Look, if he was dying, he wouldn't bother to carve 'Aaargh.' He'd just say it.\"",
+   "stored": 8.09,
+   "named": 8.15,
+   "blind": 8.297
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "\"The ferocity of the French taunting took him completely by surprise.\"",
+   "stored": 7.38,
+   "named": 7.725,
+   "blind": 5.088
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "Unfortunately, one of them, my son Herbert, has just fallen to his death. But I don't want to think I've lost a son, so much as... gained a daughter.",
+   "stored": 8.5,
+   "named": 7.412,
+   "blind": 6.787
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "\"No, 'Aaargh.' At the back of the throat. No, in surprise and alarm!\" \"You mean a sort of 'Ah!'\" \"Yes, that's right.\"",
+   "stored": 7.1,
+   "named": 7.412,
+   "blind": 5.075
+  },
+  {
+   "film": "Monty Python and the Holy Grail",
+   "text": "\"I don't know that!\" [Bridgekeeper flung into gorge]",
+   "stored": 9.07,
+   "named": 9.253,
+   "blind": 9.04
+  }
+ ],
+ "control_jokes": [
+  {
+   "film": "Zoolander",
+   "text": "Okay, what's a while? Like, eight days? More? Try a couple years. / Oh, snap! / How do you live? How do you live? / Seriously. Do you service yourself ten times",
+   "stored": 7.55,
+   "named": 6.502,
+   "blind": 5.738
+  },
+  {
+   "film": "Zoolander",
+   "text": "\"I think I'm getting the black lung, Pop. It's not very well ventilated down there.\" \u2014 after one day in the mines. \"For Christ's sake, Derek, you've been down t",
+   "stored": 7.65,
+   "named": 7.362,
+   "blind": 7.475
+  },
+  {
+   "film": "Zoolander",
+   "text": "Derek deflects the assassination dart with 'Magnum' \u2014 his ultimate look stops the dart mid-air",
+   "stored": 8.12,
+   "named": 8.025,
+   "blind": 8.287
+  },
+  {
+   "film": "Zoolander",
+   "text": "Derek's disguise plan \u2014 'They won't be looking for... Not us' \u2014 presented as a stroke of genius",
+   "stored": 6.77,
+   "named": 7.088,
+   "blind": 4.388
+  },
+  {
+   "film": "Zoolander",
+   "text": "Your work in the winter '95 International Male catalogue made me want to be a model.",
+   "stored": 8.41,
+   "named": 7.325,
+   "blind": 6.55
+  },
+  {
+   "film": "Zoolander",
+   "text": "During the hypnotic induction, the hypnotist plays a song. Derek: \"I like this song.\" Handler: \"Of course you do.\"",
+   "stored": 7.53,
+   "named": 6.975,
+   "blind": 5.363
+  },
+  {
+   "film": "Zoolander",
+   "text": "It's when you throw up after every meal.",
+   "stored": 7.23,
+   "named": 6.037,
+   "blind": 3.625
+  },
+  {
+   "film": "Zoolander",
+   "text": "Maury alone, coaxing his bladder: \"Give me a little pee-pee. Come on, a couple of drops.\"",
+   "stored": 7.12,
+   "named": 6.688,
+   "blind": 6.062
+  },
+  {
+   "film": "Zoolander",
+   "text": "Male models are genetically constructed to become assassins. They're in peak physical condition. They can gain entry to the most secure places in the world. And",
+   "stored": 8.75,
+   "named": 8.66,
+   "blind": 8.15
+  },
+  {
+   "film": "Zoolander",
+   "text": "\"Did my pin get in the way of your ass? Do me a favour and lose five pounds immediately, or get out of my building like now!\"",
+   "stored": 6.31,
+   "named": 5.5,
+   "blind": 4.7
+  },
+  {
+   "film": "The Big Lebowski",
+   "text": "Jackie Treehorn's thugs approach the Dude: 'Pin your diapers on. Jackie Treehorn wants to see you. Jackie Treehorn knows which Lebowski you are. Jackie Treehorn",
+   "stored": 6.45,
+   "named": 7.022,
+   "blind": 5.412
+  },
+  {
+   "film": "The Big Lebowski",
+   "text": "'New shit has come to light. And, shit, man... She kidnapped herself.'",
+   "stored": 7.57,
+   "named": 8.418,
+   "blind": 8.137
+  },
+  {
+   "film": "The Big Lebowski",
+   "text": "Brandt can't watch, or he has to pay 100.",
+   "stored": 8.31,
+   "named": 8.305,
+   "blind": 6.175
+  },
+  {
+   "film": "The Big Lebowski",
+   "text": "Dude, I... I finally got... the venue I wanted. I'm performing my dance quintet, you know, my cycle, at Crane Jackson's Fountain Street Theater on Tuesday night",
+   "stored": 5.85,
+   "named": 7.127,
+   "blind": 5.35
+  },
+  {
+   "film": "The Big Lebowski",
+   "text": "The Dude claims to have been 'one of the authors of the Port Huron Statement \u2014 the original Port Huron Statement. Not the compromised second draft.'",
+   "stored": 8.46,
+   "named": 8.697,
+   "blind": 7.987
+  },
+  {
+   "film": "The Big Lebowski",
+   "text": "Maude describing Uli: 'He's a musician. Used to have a group, Autobahn. They released one album in the late 70s. Their music is sort of a... technopop.' \u2014 deliv",
+   "stored": 7.38,
+   "named": 7.882,
+   "blind": 8.162
+  },
+  {
+   "film": "The Big Lebowski",
+   "text": "The Dude, explaining his investigative process to Maude: 'You know, this is a very complicated case, Maude. Lotta ins, lotta outs. You know, fortunately, I'm ad",
+   "stored": 6.62,
+   "named": 8.038,
+   "blind": 8.575
+  },
+  {
+   "film": "The Big Lebowski",
+   "text": "Dude: 'If you can't go by car, how do you get around on Shammos?'",
+   "stored": 6.86,
+   "named": 5.112,
+   "blind": 4.688
+  },
+  {
+   "film": "The Big Lebowski",
+   "text": "Walter's full Shomer Shabbos declaration: 'I don't work, I don't drive a car, I don't handle money, I don't turn on the oven, and I sure as shit don't fucking r",
+   "stored": 8.63,
+   "named": 9.037,
+   "blind": 8.85
+  },
+  {
+   "film": "The Big Lebowski",
+   "text": "At the funeral home, the mortician produces a coffee can: 'We have the urn. I assume this is credit card.'",
+   "stored": 7.14,
+   "named": 8.087,
+   "blind": 5.388
+  },
+  {
+   "film": "This Is Spinal Tap",
+   "text": "'Watch the language. You're in the presence of the King. Oh. Sorry.'",
+   "stored": 7.25,
+   "named": 7.37,
+   "blind": 5.047
+  },
+  {
+   "film": "This Is Spinal Tap",
+   "text": "Well, personally, I like to think about sex and drugs and rock'n'roll. That's my life.",
+   "stored": 6.88,
+   "named": 5.9,
+   "blind": 5.763
+  },
+  {
+   "film": "This Is Spinal Tap",
+   "text": "Who wants to be a 45-year-old rock'n'roller farting around in front of people less than half their age, cranking out some mediocre head-banging bullshit we've f",
+   "stored": 7.86,
+   "named": 8.48,
+   "blind": 6.188
+  },
+  {
+   "film": "This Is Spinal Tap",
+   "text": "Oh. It's the zipper. Sets off the machine. [Jacket clearly doesn't come off easily or is comically elaborate]",
+   "stored": 5.85,
+   "named": 5.15,
+   "blind": 3.892
+  },
+  {
+   "film": "This Is Spinal Tap",
+   "text": "Ian's euphemism for the band's declining venues: 'Their appeal is becoming more selective.'",
+   "stored": 8.24,
+   "named": 7.912,
+   "blind": 5.45
+  },
+  {
+   "film": "This Is Spinal Tap",
+   "text": "And then we move on to this. Look! Look! Who's in here? No one. Then in here, there's a little guy. / It's a complete catastrophe!",
+   "stored": 7.88,
+   "named": 8.335,
+   "blind": 5.748
+  },
+  {
+   "film": "This Is Spinal Tap",
+   "text": "It's my job to do what I'm asked to do by the creative element of this band.",
+   "stored": 6.8,
+   "named": 7.248,
+   "blind": 6.9
+  },
+  {
+   "film": "This Is Spinal Tap",
+   "text": "Oh! 'Girlfriend', is it? I don't know what you're doing managing the band!",
+   "stored": 6.46,
+   "named": 6.887,
+   "blind": 5.513
+  },
+  {
+   "film": "This Is Spinal Tap",
+   "text": "Ian, you put a greased, naked woman on all fours with a dog collar around her neck and a leash, and a man's arm extended out up to here holding onto the leash a",
+   "stored": 7.7,
+   "named": 8.15,
+   "blind": 6.338
+  },
+  {
+   "film": "This Is Spinal Tap",
+   "text": "This is my exact inner structure done in a T-shirt. Exactly medically accurate, see? / So, if we were to take all your flesh and blood... / This is what you'd s",
+   "stored": 7.46,
+   "named": 8.158,
+   "blind": 5.688
+  },
+  {
+   "film": "Office Space",
+   "text": "Geto Boys 'Damn It Feels Good to Be a Gangsta' plays over Peter casually greeting Dom in the hallway \u2014 the ultra-hard gangsta anthem underscores the mundane off",
+   "stored": 8.4,
+   "named": 8.5,
+   "blind": 6.188
+  },
+  {
+   "film": "Office Space",
+   "text": "Rob the lawyer: 'Conjugal visits? Not that I know of. Minimum-security prison is no picnic... The trick is kick someone's ass the first day, or become someone's",
+   "stored": 7.78,
+   "named": 7.688,
+   "blind": 6.162
+  },
+  {
+   "film": "Office Space",
+   "text": "Cut to Peter contentedly lounging at home, phone ringing \u2014 Lumbergh has left multiple answering machine messages about Peter not showing up",
+   "stored": 7.83,
+   "named": 7.77,
+   "blind": 5.65
+  },
+  {
+   "film": "Office Space",
+   "text": "Bob Porter struggles to pronounce 'Nagheenanajar,' trails off into 'Naga... gonna work here anymore, anyway' \u2014 accidentally naming the layoff policy",
+   "stored": 7.77,
+   "named": 8.625,
+   "blind": 6.487
+  },
+  {
+   "film": "Office Space",
+   "text": "Peter's excuse for not asking out the waitress: 'I'm just another asshole customer. You can't just walk up to a waitress and ask her out.'",
+   "stored": 5.72,
+   "named": 6.075,
+   "blind": 5.005
+  },
+  {
+   "film": "Office Space",
+   "text": "Tom's life advice to Peter: 'Maybe I didn't whine as much... But I bet I hated my job even more than you, and I'd been doing it for over thirty years.' Then: 'J",
+   "stored": 7.9,
+   "named": 7.785,
+   "blind": 7.098
+  },
+  {
+   "film": "Office Space",
+   "text": "Bob Slydell: 'Ah, there you are. We were just talking about you. You must be Peter Gibbons.' Peter: 'Uh-huh. Terrific.'",
+   "stored": 6.65,
+   "named": 8.2,
+   "blind": 6.275
+  },
+  {
+   "film": "Office Space",
+   "text": "Milton, alone after Lumbergh leaves: 'I could set the building on fire.'",
+   "stored": 9.16,
+   "named": 8.4,
+   "blind": 7.688
+  },
+  {
+   "film": "Office Space",
+   "text": "Bobs tell Lumbergh: 'The problem isn't with Peter. It's that you haven't challenged him enough to get him really motivated.'",
+   "stored": 7.78,
+   "named": 5.95,
+   "blind": 5.725
+  },
+  {
+   "film": "Office Space",
+   "text": "Peter: 'Damn it, Lawrence, can't you just pretend like we can't hear each other through the wall?'",
+   "stored": 7.14,
+   "named": 6.037,
+   "blind": 5.7
+  }
+ ]
+}
