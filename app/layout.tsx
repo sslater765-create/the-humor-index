@@ -1,3 +1,4 @@
+import AdLoader from '@/components/ads/AdLoader';
 import type { Metadata } from 'next';
 import './globals.css';
 import Nav from '@/components/layout/Nav';
@@ -83,7 +84,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en">
       <head>
-        {process.env.NEXT_PUBLIC_ADSENSE_ID && (
+        {/* While ads are off, the plain tag stays so AdSense can verify the site.
+            Once NEXT_PUBLIC_ADS_ON=1, AdLoader loads it only after a person interacts. */}
+        {process.env.NEXT_PUBLIC_ADSENSE_ID && process.env.NEXT_PUBLIC_ADS_ON !== '1' && (
           <script
             async
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_ID}`}
@@ -92,6 +95,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         )}
       </head>
       <body className={`${inter.variable} ${jetbrainsMono.variable} bg-brand-dark text-brand-text-primary min-h-screen flex flex-col font-sans`}>
+        {process.env.NEXT_PUBLIC_ADSENSE_ID && process.env.NEXT_PUBLIC_ADS_ON === '1' && <AdLoader client={process.env.NEXT_PUBLIC_ADSENSE_ID} />}
         <Nav />
         <script
           type="application/ld+json"

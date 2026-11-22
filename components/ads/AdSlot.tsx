@@ -42,13 +42,17 @@ export default function AdSlot({ placement, className = '' }: { placement: AdPla
 
   useEffect(() => {
     if (!PUBLISHER_ID || !slot || pushed.current) return;
-    pushed.current = true;
-    try {
-      const w = window as unknown as { adsbygoogle?: unknown[] };
-      (w.adsbygoogle = w.adsbygoogle || []).push({});
-    } catch {
-      /* script blocked or not loaded yet */
-    }
+    const w = window as unknown as { adsbygoogle?: unknown[]; __hiAdsReady?: boolean };
+    // AdLoader fetches the script after the first human interaction; ask for
+    // an ad only then, so bots that never interact never get one.
+    const fill = () => {
+      if (pushed.current) return;
+      pushed.current = true;
+      try { (w.adsbygoogle = w.adsbygoogle || []).push({}); } catch { /* script blocked */ }
+    };
+    if (w.__hiAdsReady) { fill(); return; }
+    window.addEventListener('hi-ads-ready', fill, { once: true });
+    return () => window.removeEventListener('hi-ads-ready', fill);
   }, [slot]);
 
   if (!PUBLISHER_ID || !slot) return null;

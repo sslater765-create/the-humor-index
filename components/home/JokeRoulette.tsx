@@ -15,7 +15,7 @@ function dayIndex(n: number) {
   return (k * 7919) % n;
 }
 
-export default function JokeRoulette({ pool }: { pool: RouletteJoke[] }) {
+export default function JokeRoulette({ pool, firstLabel = 'Today’s funniest line' }: { pool: RouletteJoke[]; firstLabel?: string }) {
   const order = useMemo(() => {
     const idx = pool.map((_, i) => i);
     // Deterministic shuffle so server and client agree on the first pick.
@@ -39,7 +39,7 @@ export default function JokeRoulette({ pool }: { pool: RouletteJoke[] }) {
     setSpun(s => s + 1);
     trackEvent('joke_roulette_spin', { n: spun + 1 });
   };
-  const label = spun === 0 ? 'Today’s funniest line' : `Line ${spun + 1} of ${pool.length}`;
+  const label = spun === 0 ? firstLabel : `Line ${spun + 1} of ${pool.length}`;
 
   return (
     <div className="relative overflow-hidden rounded-2xl border border-brand-gold/30 bg-gradient-to-br from-brand-card via-brand-card to-brand-gold/[0.06] px-5 sm:px-10 py-7 sm:py-9">

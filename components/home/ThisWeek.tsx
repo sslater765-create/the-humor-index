@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { POSTS } from '@/app/blog/posts';
 import { BRACKET_FIELD } from '@/lib/bracket';
 import BracketCallout from './BracketCallout';
+import HolidayCallout from './HolidayCallout';
 
 /**
  * The week at the Index: the bracket round that's open, the newest column, and
@@ -35,6 +36,7 @@ export default function ThisWeek() {
         <h2 className="text-[11px] uppercase tracking-[0.25em] text-brand-gold">This week at the Index</h2>
         <p className="text-xs text-brand-text-muted">Sam Slater, editor</p>
       </div>
+      <HolidayCallout />
       <div className="grid gap-4 lg:grid-cols-3">
         <BracketCallout top={top} bottom={bottom} />
         {latest && (

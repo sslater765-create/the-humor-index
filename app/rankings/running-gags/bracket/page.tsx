@@ -8,6 +8,8 @@ import fs from 'fs';
 import path from 'path';
 import GagBracket, { type BracketGag } from '@/components/rankings/GagBracket';
 import { BRACKET_FIELD } from '@/lib/bracket';
+import InlineNewsletterCTA from '@/components/ui/InlineNewsletterCTA';
+import Link from 'next/link';
 
 export const dynamic = 'force-static';
 
@@ -47,6 +49,12 @@ export default async function BracketPage() {
       />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
         <GagBracket gags={best} />
+        <InlineNewsletterCTA source="bracket" heading="Get each round’s results by email" sub="Upsets, crowd splits and the next matchups, every Monday until the champion is crowned on December 20. Free, no spam." />
+        <p className="text-sm text-brand-text-muted">
+          While you wait: <Link href="/rankings/best-jokes/" className="text-brand-gold hover:underline">the 100 funniest lines on the Index</Link> ·{' '}
+          <Link href="/rankings/most-rewatchable/" className="text-brand-gold hover:underline">the most rewatchable episodes</Link> ·{' '}
+          <Link href="/draft/" className="text-brand-gold hover:underline">draft a sitcom ensemble</Link>
+        </p>
         <p className="mt-10 text-xs text-brand-text-muted">Seeds from the running-gag data of {meta.generated || 'November 2026'}. The field is an editor’s pick, one gag per show; the seeds are the stat’s. Voting closes Sundays at 8 PM Eastern. A tied matchup goes to the higher seed.</p>
       </div>
     </div>

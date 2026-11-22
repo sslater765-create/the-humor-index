@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'Which AI model scores the jokes?',
-    a: `Anthropic's Claude Sonnet 4.6. Each episode (or 22-minute movie reel) is scored three times and the results are averaged. Shows scored on an earlier model are kept off the ranking until they are rescored, because scores from different models aren't comparable.`,
+    a: `Anthropic's Claude Sonnet 4.6. Each episode (or 22-minute movie reel) is scored three times and the results are averaged. Shows scored on an earlier model are kept off the ranking, because scores from different models aren't comparable; we aren't rescoring older shows for now.`,
   },
   {
     q: 'Can AI actually understand comedy?',
@@ -62,7 +62,7 @@ const faqs = [
   },
   {
     q: 'What is the 0-100 score scale?',
-    a: `Raw scores are on a 0–10 scale internally. We convert them to a 0–100 display scale where 75 is an average comedy episode. Above 98 the scale bends toward 100 without reaching it, so no two top episodes tie at a perfect score. The scale depends on the scoring model: when we moved to a newer model, scores rose 8 to 15 points, which is why shows scored on the earlier model are listed separately until they are rescored. Treat differences of about a point as ties.`,
+    a: `Raw scores are on a 0–10 scale internally. We convert them to a 0–100 display scale where 75 is an average comedy episode. Above 98 the scale bends toward 100 without reaching it, so no two top episodes tie at a perfect score. The scale depends on the scoring model: when we moved to a newer model, scores rose 8 to 15 points, which is why shows scored on the earlier model are listed separately. Treat differences of about a point as ties.`,
   },
   {
     q: 'Do you analyze every episode of every show?',

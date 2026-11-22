@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { trackNewsletterSignup } from '@/lib/analytics';
 
-export default function InlineNewsletterCTA() {
+export default function InlineNewsletterCTA({ heading = 'Get weekly comedy rankings', sub = 'Join comedy fans getting new analyses, score drops, and the funniest moments each week. Free, no spam.', source = 'inline' }: { heading?: string; sub?: string; source?: string } = {}) {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -20,7 +20,7 @@ export default function InlineNewsletterCTA() {
       if (resp.ok) {
         setSubscribed(true);
         setEmail('');
-        trackNewsletterSignup('inline');
+        trackNewsletterSignup(source);
       }
     } catch {
       // Silently fail
@@ -42,10 +42,10 @@ export default function InlineNewsletterCTA() {
       <div className="flex flex-col sm:flex-row sm:items-center gap-4">
         <div className="flex-1">
           <p className="text-base font-medium text-brand-text-primary">
-            Get weekly comedy rankings
+            {heading}
           </p>
           <p className="text-sm text-brand-text-muted mt-0.5">
-            Join comedy fans getting new analyses, score drops, and the funniest moments each week. Free, no spam.
+            {sub}
           </p>
         </div>
         <form onSubmit={handleSubscribe} className="flex gap-2 sm:min-w-[280px]">

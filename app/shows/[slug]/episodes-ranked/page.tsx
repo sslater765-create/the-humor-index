@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     count = (await getEpisodes(params.slug)).length;
   } catch { /* none */ }
   return {
-    title: `All ${count} ${show.name} Episodes, Ranked Best to Worst`,
-    description: `Every ${show.name} episode ranked from funniest to worst by the Humor Index — joke density, craft, and impact scored across all ${count} episodes. See the best ${show.name} episodes and the ones to skip.`,
+    title: `The Funniest ${show.name} Episodes: All ${count}, Ranked Best to Worst`,
+    description: `Every ${show.name} episode ranked from funniest to worst by the Humor Index: joke density, craft, and impact scored across all ${count} episodes. See the best ${show.name} episodes and the ones to skip.`,
     alternates: {
       canonical: `${SITE_URL}/shows/${params.slug}/episodes-ranked/`,
     },

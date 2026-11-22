@@ -174,9 +174,8 @@ export default function HolidayRanking({ holiday, path, episodes, intro, sibling
           <section className="mt-12">
             <h2 className="text-lg text-brand-text-primary font-medium">More {holiday} episodes, ranked within their own show</h2>
             <p className="mt-2 mb-5 text-sm text-brand-text-muted leading-relaxed max-w-2xl">
-              These shows are scored on our earlier model and get a place in the ranking above once they are
-              rescored. Until then, each episode is placed against the rest of its own series, which the change of
-              model does not affect.{' '}
+              These shows were scored on our earlier model, so their numbers can’t sit in the ranking above. Each
+              episode is placed against the rest of its own series instead, which the change of model does not affect.{' '}
               <Link href="/methodology" className="text-brand-gold hover:underline">How we score →</Link>
             </p>
             <ul className="space-y-3">

@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   if (!show) return {};
   const { quotes, totalJokes } = await getShowQuotes(params.slug, LIMIT);
   const top = quotes[0];
-  const title = `The ${quotes.length} Funniest ${show.name} Quotes, Ranked`;
+  const title = `${show.name} Quotes: The ${quotes.length} Funniest Lines, Ranked`;
   const description = `The funniest ${show.name} quotes and jokes, picked from ${totalJokes.toLocaleString()} scored jokes${top ? `. #1 is from "${top.episodeTitle}"` : ''}. Every line ranked on craft and impact, with why it lands.`;
   const ogImg = `/api/og?title=${encodeURIComponent(`Funniest ${show.name} Quotes`)}&score=${quotes.length}&subtitle=${encodeURIComponent(`Ranked from ${totalJokes.toLocaleString()} scored jokes`)}`;
   return {

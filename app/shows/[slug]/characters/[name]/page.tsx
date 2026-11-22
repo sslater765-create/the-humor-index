@@ -9,6 +9,7 @@ import { JOKE_TYPE_LABELS } from '@/lib/scoring';
 import { charImageSrc } from '@/lib/charImage';
 import ScoreCard from '@/components/ui/ScoreCard';
 import { SITE_URL } from '@/lib/site';
+import { characterHref } from '@/lib/characterPages';
 
 export const dynamic = 'force-static';
 
@@ -108,6 +109,13 @@ export default async function CharacterPage({
 
   const { character, jokes } = await getCharacterJokes(params.slug, characterName);
   if (!character) notFound();
+
+  // Other main characters from the same show: the next page for a visitor who
+  // arrived from a search for one character's name.
+  const castmates = (await getCharacters(params.slug))
+    .filter(c => c.name !== character.name && (c.total_jokes ?? 0) >= 20 && (c.episodes_appeared ?? 0) >= 3)
+    .sort((a, b) => (b.total_jokes ?? 0) - (a.total_jokes ?? 0))
+    .slice(0, 8);
 
   const topJokes = [...jokes].sort((a, b) => {
     const aScore = (a.joke.craft_total as number) + (a.joke.impact_score as number);
@@ -474,6 +482,20 @@ export default async function CharacterPage({
             ))}
           </div>
         </section>
+
+        {castmates.length > 0 && (
+          <section className="mt-10 border-t border-brand-border pt-6">
+            <h2 className="text-xs uppercase tracking-widest text-brand-text-muted mb-3">More {show.name} characters</h2>
+            <div className="flex flex-wrap gap-2">
+              {castmates.map(c => (
+                <Link key={c.name} href={characterHref(params.slug, c.name) ?? `/shows/${params.slug}/characters/${encodeURIComponent(c.name)}/`}
+                  className="rounded-full border border-brand-border bg-brand-card px-3 py-1.5 text-sm text-brand-text-secondary hover:border-brand-gold/50 hover:text-brand-gold transition-colors">
+                  {c.name}
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         <p className="mt-10 border-t border-brand-border pt-6 text-sm text-brand-text-muted leading-relaxed">
           See where {character.name}&rsquo;s best lines land among the{' '}

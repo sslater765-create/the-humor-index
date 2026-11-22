@@ -8,7 +8,8 @@ import { crossoversForShow } from '@/lib/crossover';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getShow, getSeasons, getEpisodes, getCharacters, getRecommendations, getAllShows, getComedyDna, getShowDnaJokes } from '@/lib/data';
+import { getShow, getSeasons, getEpisodes, getCharacters, getRecommendations, getAllShows, getComedyDna, getShowDnaJokes, getJokeRoulette } from '@/lib/data';
+import JokeRoulette from '@/components/home/JokeRoulette';
 import ShowDnaPanel from '@/components/comedy-dna/ShowDnaPanel';
 import AdSlot from '@/components/ads/AdSlot';
 import { formatIndex, byHumorIndexDesc } from '@/lib/scoring';
@@ -156,6 +157,7 @@ export default async function ShowPage({ params }: { params: { slug: string } })
   const showRank = scoredRankList.findIndex(s => s.slug === show.slug) + 1;
   const pendingRescore = isAwaitingRescore(show.slug);
   const scoredShowCount = scoredRankList.length;
+  const roulette = await getJokeRoulette();
   const board = await withIntervals(scoredRankList);
   const { tierOf } = boardTiers(board);
   const tierNo = tierOf.get(show.slug) ?? 0;
@@ -339,6 +341,16 @@ export default async function ShowPage({ params }: { params: { slug: string } })
           </p>
         )}
       </div>
+
+      {/* One more: a line at a time from this show, the cheapest next pageview there is. */}
+      {(() => {
+        const pool = roulette.filter(j => j.slug === show.slug);
+        return pool.length >= 5 ? (
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
+            <JokeRoulette pool={pool} firstLabel={`A great ${show.name} line`} />
+          </div>
+        ) : null;
+      })()}
 
       {/* Comedy DNA: this show's match for the visitor, or a one-tap face-off to get one */}
       {dnaJokes.show.length >= 3 && (

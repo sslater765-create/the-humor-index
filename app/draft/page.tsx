@@ -3,6 +3,7 @@ import { SITE_URL } from '@/lib/site';
 import { getAllShows, getCharacters } from '@/lib/data';
 import { rankable } from '@/lib/scale';
 import EnsembleDraft, { type DraftPlayer } from '@/components/draft/EnsembleDraft';
+import Link from 'next/link';
 
 export const dynamic = 'force-static';
 
@@ -38,6 +39,11 @@ export default async function DraftPage() {
       />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
         <EnsembleDraft pool={board} />
+        <p className="mt-10 text-sm text-brand-text-muted">
+          Scouting report: <Link href="/rankings/funniest-characters/" className="text-brand-gold hover:underline">the funniest characters</Link> ·{' '}
+          <Link href="/rankings/least-funny-characters/" className="text-brand-gold hover:underline">the least funny</Link> ·{' '}
+          <Link href="/rankings/running-gags/bracket/" className="text-brand-gold hover:underline">vote in the running gag bracket</Link>
+        </p>
       </div>
     </div>
   );
