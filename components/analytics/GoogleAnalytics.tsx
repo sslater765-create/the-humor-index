@@ -14,13 +14,17 @@ export default function GoogleAnalytics() {
       />
       <Script id="ga-init" strategy="afterInteractive">
         {`
+          // Automated browsers (navigator.webdriver, HeadlessChrome) get no gtag,
+          // so crawler page views and events never reach GA.
+          if (!navigator.webdriver && !/HeadlessChrome|PhantomJS|Puppeteer|Playwright/i.test(navigator.userAgent)) {
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          window.gtag = function(){window.dataLayer.push(arguments);};
           gtag('js', new Date());
           gtag('config', '${GA_ID}', {
             anonymize_ip: true,
             page_path: window.location.pathname,
           });
+          }
         `}
       </Script>
     </>

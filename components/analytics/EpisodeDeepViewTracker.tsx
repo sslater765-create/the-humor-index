@@ -6,6 +6,10 @@ import { trackEpisodeViewDeep } from '@/lib/analytics';
  * Fires `episode_view_deep` once when the user has scrolled past 75% of the
  * page on an episode detail page. Dropped inside the server-rendered episode
  * page so the tracking is opt-in and silent if GA isn't loaded.
+ *
+ * Only a real scroll counts. It used to also check on mount, which let headless
+ * crawlers with tall viewports fire this key event without scrolling (about
+ * 2,300 fake key events Oct 26 to Nov 22, 2026).
  */
 export default function EpisodeDeepViewTracker({
   show,
@@ -30,8 +34,6 @@ export default function EpisodeDeepViewTracker({
       }
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
-    // Also check on mount in case the page is short
-    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, [show, season, episode]);
 
