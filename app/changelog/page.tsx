@@ -12,6 +12,7 @@ export const metadata = {
 
 // Newest first. Add a line whenever a published score moves.
 const LOG: Array<{ date: string; what: string; detail: string; link?: string }> = [
+  { date: '2026-11-27', what: 'Five more movies', detail: 'The Naked Gun, Shaun of the Dead, Young Frankenstein, What We Do in the Shadows and Happy Gilmore are scored, 30 films in all. Young Frankenstein enters at No. 8; Happy Gilmore is last.', link: '/blog/five-more-movies-naked-gun-shaun-young-frankenstein/' },
   { date: '2026-11-22', what: 'Earlier-model shows on the board, adjusted', detail: 'Curb, The Simpsons, Futurama, Taxi and Fresh Prince appear on the TV leaderboard at their old score plus the average rescore gain (12.1 points), marked ≈ with the 8.3 to 14.0 range. They take no rank and no tier.', link: '/methodology#house-effect' },
   { date: '2026-11-22', what: 'Weight sensitivity', detail: 'Every show recomputed under six other weightings of the formula. 30 Rock is first in all seven; Friends moves the most (10th to 15th). No published score changed.', link: '/blog/how-much-do-the-weights-matter/' },
   { date: '2026-11-22', what: 'The Holy Grail check', detail: 'Forty Holy Grail jokes and forty controls rescored with the title and names hidden. Both fell by the same amount; the Holy Grail still leads blind.', link: '/blog/monty-python-check/' },

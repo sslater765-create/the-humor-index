@@ -5,6 +5,59 @@ export const POSTS: Record<string, {
   category: string;
   content: string;
 }> = {
+  'five-more-movies-naked-gun-shaun-young-frankenstein': {
+    title: "Five More Movies: The Naked Gun Edges Airplane!, Shaun Beats Hot Fuzz, Happy Gilmore Comes Last",
+    description: "We scored every joke in The Naked Gun, Shaun of the Dead, Young Frankenstein, What We Do in the Shadows and Happy Gilmore. Two settle old arguments, one lands in the top ten, and one finishes 30th of 30.",
+    date: '2026-11-27',
+    category: 'Analysis',
+    content: `
+The movie board is now 30 films. The five new ones were picked to fill gaps: a rival for Airplane!, a second Edgar Wright film, the first Mel Brooks, the first Adam Sandler, and a mockumentary from the last decade. Here is where they landed.
+
+| Rank | Film | Index | Jokes | Per minute | Tier |
+|---|---|---|---|---|---|
+| 8 | [Young Frankenstein](/movies/young-frankenstein/) (1974) | 92.2 | 166 | 1.57 | The Second Floor |
+| 10 | [Shaun of the Dead](/movies/shaun-of-the-dead/) (2004) | 90.9 | 260 | 2.77 | The Second Floor |
+| 13 | [What We Do in the Shadows](/movies/what-we-do-in-the-shadows/) (2014) | 89.9 | 280 | 3.28 | The Rotation |
+| 14 | [The Naked Gun](/movies/the-naked-gun/) (1988) | 89.6 | 154 | 1.88 | The Rotation |
+| 30 | [Happy Gilmore](/movies/happy-gilmore/) (1996) | 80.1 | 225 | 2.56 | The Waiver Wire |
+
+## The Naked Gun vs. Airplane!
+
+Same writing team, same deadpan, same Leslie Nielsen. The Naked Gun scores 89.6 and [Airplane!](/movies/airplane/) 88.1. IMDb has it the other way, 7.7 to 7.6.
+
+The gap comes from volume and craft, not from the big laughs. The two films average the same impact per joke (7.47 against 7.46), and each has exactly one joke that scored a perfect 10 for impact: "Surely you can't be serious" for Airplane!, "Goodyear?" "No, the worst" for The Naked Gun. But The Naked Gun fits 154 jokes into 82 minutes and Airplane! fits 127 into 87, and The Naked Gun's are built a little better (craft 7.47 against 7.35).
+
+A point and a half is not a decisive margin. Both films sit in the same tier, which means their intervals overlap: call it The Naked Gun by a nose. The funniest five minutes in the film are its last ones, the baseball game, which is mostly sight gags. The scorer only reads dialogue, so if anything that stretch is undercounted.
+
+## Shaun of the Dead vs. Hot Fuzz
+
+This one isn't close. Shaun of the Dead scores 90.9; [Hot Fuzz](/movies/hot-fuzz/) scores 85.4. Their intervals don't touch, and they sit two tiers apart. IMDb rates them identically, 7.8 each.
+
+Pace doesn't explain it. The two films run at almost the same rate (2.77 and 2.74 jokes a minute). The difference is in the jokes themselves: Shaun's average 7.56 for craft and 7.33 for impact, Hot Fuzz's 7.28 and 7.08. Hot Fuzz also runs 16 minutes longer. Shaun's second reel, from the record-throwing argument through the plan ("Take car. Go to Mum's. Kill Phil. Sorry.") to Philip's last words in the car, scores 98.1 on its own, the best single reel of the five new films.
+
+## Young Frankenstein: slow and very good
+
+Young Frankenstein is the oldest film on the board and the second slowest: 1.57 jokes a minute, ahead of only Airplane!. It ranks 8th anyway, because almost nothing in it is filler. Its jokes average 7.61 for craft (third of 30, behind the Holy Grail and The Big Lebowski) and 7.60 for impact (second, behind only the Holy Grail).
+
+Its top joke is the one you would guess: "Abby someone." "Abby who?" "Abby... Normal." The film starts strong (its first reel scores 97.0) and its best five minutes come late, around the 90-minute mark.
+
+## What We Do in the Shadows: the fastest film we've scored
+
+What We Do in the Shadows has the highest joke rate on the board, 3.28 a minute, just ahead of Step Brothers at 3.27. It is a mockumentary, so the obvious comparison is [This Is Spinal Tap](/movies/this-is-spinal-tap/), and Spinal Tap stays ahead, 92.8 to 89.9. Shadows has more jokes; Spinal Tap's land harder.
+
+Its best stretch is minutes 30 to 35: 27 jokes in five minutes. The top joke is Deacon's advice about sandwiches, which we won't print here. "Just leave me to do my dark bidding on the internet" is 10th of 280.
+
+## Happy Gilmore: 30th of 30
+
+Happy Gilmore scores 80.1, last on the board, a tenth of a point behind [Elf](/movies/elf/). It is last for craft and last for impact. It isn't short of jokes (2.56 a minute, mid-table); they just grade lower.
+
+It does have one of the eight jokes on the whole movie board that scored a perfect 10 for impact: "The price is wrong, b*tch," and the beating that follows. Shooter McGavin's breakfast line is second. Last place on this board is still a comedy people quote 30 years later; it is the bottom of 30 well-loved films, not a bad movie.
+
+## How films are scored
+
+Every film is split into reels of about 22 minutes, and each reel is scored like a sitcom episode: every joke graded for craft and impact by three independent runs, then combined. Tiers group films whose intervals overlap the tier leader's. The [movie board](/movies/) has the full ranking, every joke and each film's Laugh Map.
+`,
+  },
   'how-much-do-the-weights-matter': {
     title: "How Much Do the Weights Matter?",
     description: "The Humor Index formula weights craft, impact and density. We reran the board under six other weightings. 30 Rock is first in every one; Friends moves the most.",
